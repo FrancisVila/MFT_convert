@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-searchable="True" data-mc-toc-path="Managing transfers and partners|Transfer concepts" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="This topic describes how to  specify a working directory to use other than the default (runtime)&#160;directory  for file transfer flows." /><title>Working directory</title>
+        <link rel="shortcut icon" href="../Resources/Images/favicon.ico" />
+        <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1>Working directory</h1>
+            <p>This section describes how to  specify a working directory to use other than the default (runtime)&#160;directory  for file transfer flows. </p>
+            <p>Information is presented by platform:</p>
+            <ul>
+                <li>Using a working directory in UNIX or Windows<ul><li>Conventions and recommendations</li><li>Configuration examples</li></ul></li>
+            </ul>
+            <ul>
+                <li>Using a working directory in IBM i or z/OS<ul><li>Conventions and recommendations</li><li>Configuration examples</li></ul></li>
+            </ul>
+            <p>When you define a working directory for a given transfer flow, all files related to this transfer flow - meaning sent, received, or temporary files - must be part of the working directory tree. Additionally, scripts that are related to the file transfer flow are executed within the defined working directory (as this is the current working directory).</p>
+            <p>To assign a working directory for the CFTRECV, CFTSEND, SEND, and RECV&#160;objects, you use the WORKINGDIR parameter. </p>
+            <p>The WORKINGDIR parameter value can be an absolute or a relative path. If it is set as a relative path, the working directory is relative to the runtime directory. <br />The WORKINGDIR value can include the symbolic variable &amp;HOME to allow different users to work with files placed in their home directories by a generic CFTRECV, CFTSEND, SEND, or RECV. </p>
+            <h2>Limitations</h2>
+            <ul>
+                <li>On the z/OS and IBM i platforms, the temporary files do not reside in the working directory, and script execution does not occur there as described above.</li>
+                <li>IBM I and z/OS can only use an absolute path as the WORKINGDIR parameter. </li>
+            </ul>
+            <h2>Using a working directory in UNIX or Windows</h2>
+            <h3>Conventions and recommendations</h3>
+            <p>Note the following conventions and recommendations:</p>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">All working files - sent, received, and temporary files - must be part of the working directory tree. Transfer CFT does not access files that are outside of the defined working directory tree.</li>
+            </ul>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">The maximum size for a complete file name is 512 characters. This value includes the total length of the workingdir added to any relative values.</li>
+            </ul>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">The workingdir has no impact on either the &amp;PATH or &amp;FPATH symbolic variables. Transfer CFT uses only the FNAME contents to fill those variables.</li>
+            </ul>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">The processing script's path (PREEXEC, EXEC, EXECE, ACKEXEC) if relative, is relative to the default directory (the runtime directory).</li>
+            </ul>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">Processing scripts are executed inside the workingdir.</li>
+            </ul>
+            <h3>Examples on UNIX or Windows</h3>
+            <p>This section provides the following examples along with a brief description:</p>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;"><a href="#Workingd">Workingdir using a relative fname</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd2">Workingdir and directory tree control</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd3">Workingdir using the &amp;HOME symbolic variable (example 1)</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd4">Workingdir using the &amp;HOME symbolic variable (example 2)</a>
+                </li>
+            </ul>
+            <h4><a name="Workingd"></a>Workingdir using a relative fname</h4>
+            <p>This example uses a relative fname to send a file that is not in the default directory (the Transfer CFT runtime directory). The example command sends the file /home/user01/a.txt, which on reception is /home/user02/b.txt.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV id = IDF1, fname = b.txt, WORKINGDIR=/home/user02</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND id = IDF1, WORKINGDIR = /home/user01</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application that is running under the user01 system account sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf=IDF1, part=PART1,fname=a.txt</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd2"></a>Workingdir and directory tree control</h4>
+            <p>In this example, the application that is running under the user01 system account tries to send a file that is outside the working directory tree. The transfer goes into error.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV id = IDF2,fname = b.txt,&#160;WORKINGDIR = /home/user02</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND id = IDF2, WORKINGDIR = /home/user01/pub</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application that is running under the user01 system account tries to send the home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf=IDF2, part=PART1, fname=home/user01/priv/a.txt </p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd3"></a>Workingdir using the &amp;HOME symbolic variable (example 1)</h4>
+            <p>In this example, the file to send is located in user01's home directory. The file is received in user02's home directory, and retains its original file name. </p>
+            <p>At the end of the transfer, the Transfer CFT server executes a reply.cmd script located in &lt;CFTDIRRUNTIME&gt;/exec/reply.cmd. Here, the current working directory of the executed script is the user02's home directory.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV id = IDF3, fname = &amp;FROOT,&#160;exec = exec/reply.cmd, <br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; WORKINGDIR = &amp;HOME,&#160;userid = &amp;ruser</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;&#160;id = IDF3,&#160;&#160;WORKINGDIR = &amp;HOME</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application that is running under the user01 system account sends the 'file_to_send' file to the remote partner PART1 using the transfer flow IDF3.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>SEND idf = IDF3, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd4"></a>Workingdir using the &amp;HOME symbolic variable (example 2)</h4>
+            <p>This example is similar to the previous one, except for the location of the script on the server side.</p>
+            <p>The file to send is in user01's home directory. The file is received in user02's home directory. In this configuration, the received file retains the original file name. At the end of the transfer, the Transfer CFT server executes the reply.cmd script located in /home/user02/exec/reply.cmd. The current working directory of the executed script is the user02 home directory.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV fname = &amp;FROOT, exec = &amp;HOME/exec/reply.cmd,&#160;WORKINGDIR = &amp;HOME, userid = &amp;ruser</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND id = IDF4,&#160;WORKINGDIR = &amp;HOME</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application that is running under the user01 system account sends the ‘file_to_send’ file to the remote partner PART1 using the transfer flow IDF4.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p>
+                    </td>
+                </tr>
+            </table>
+            <h2>Using working directory in IBM&#160;i and z/OS</h2>
+            <p>In IBM i and z/OS environments, the working directory feature lets you specify either the native file system or a&#160;UNIX&#160;file system directory to use for file transfer flows. When you define a working directory for a given transfer flow, the files related to this transfer flow, either sent or received files, are part of the working directory.</p>
+            <p>Three scenarios are possible on these platforms: </p>
+            <ul>
+                <li>UNIX file system<br /><ul><li>If a WORKINGDIR Unix file system  is defined, it should be either fully qualified (‘/home/user01’ for example) or include the symbolic variable &amp;HOME (z/OS) or ?HOME (IBM i). <br /></li><li>For example, if the working directory parameter  equals  &amp;HOME or ?HOME, the working directory is the home directory for the user ID on z/OS or on IBM i.</li></ul></li>
+                <li>Data set on z/OS<br />WORKINGDIR z/OS data set the syntax is as follows: <br /><ul><li>If the segment name ends with a period, for example ‘USER01.PROD.’, then the workingdir refers simply to the data set.<br /></li><li>If the segment name does not end with a final period, for example ‘USER01.PROD.FILE’, then the workingdir refers to a partitioned data set. <br /></li><li>We advise you to include the symbolic variable &amp;USERID in the working directory. For example, if the working directory parameter is  ‘&amp;USERID.’, the working directory is the user ID followed by a period.</li></ul></li>
+                <li>Database on IBM&#160;i<br /> WORKINGDIR IBM i syntax is as follows:<ul><li>If there is a slash character (/) in the working directory, it refers to a member of a database file. For example WORKINGDIR= PROD/NEWFILE, FNAME=MEMBER creates PROD/NEWFILE(MEMBER). </li><li>Otherwise, if there is no slash, it refers to a database file.  For example WORKINGDIR= PROD, FNAME=FILE creates PROD/FILE.<br /></li></ul></li>
+            </ul>
+            <h3>Conventions and recommendations</h3>
+            <p>Note the following Transfer CFT z/OS or IBM i conventions and recommendations:</p>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;">Transfer CFT does not authorize sending or receiving Unix file system files that are outside of the designated working directory tree.</li>
+                <li style="list-style-type: disc;">The maximum size for a complete Unix file name is 512 characters, 44 characters for a z/OS data set name, and 33 characters for a IBM i database file. This value includes the total length of the working directory added to any relative values.</li>
+                <li>The  &amp;PATH or &amp;FPATH symbolic variables will contain the WORKINGDIR value. </li>
+                <li>You can only refer to processing scripts that are on native file systems.</li>
+            </ul>
+            <h2>Examples on IBM i and z/OS</h2>
+            <h3>HFS&#160;examples </h3>
+            <ul>
+                <li><a href="#Workingd7">Workingdir using a HFS relative fname</a>
+                </li>
+                <li><a href="#Workingd8">Workingdir and HFS directory tree control</a>
+                </li>
+                <li><a href="#Workingd9">Workingdir using the HFS &amp;HOME symbolic variable</a>
+                </li>
+            </ul>
+            <h4><a name="Workingd7"></a>Workingdir using a HFS relative fname</h4>
+            <p>The example command sends the file <code>/home/user01/a.txt</code>, which on reception is <code>/home/user02/b.txt</code>.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF1,&#160;fname = “b.txt”, WORKINGDIR = “/home/user02”</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF1,&#160;WORKINGDIR = “/home/user01”</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF1, part = PART1, fname = “a.txt”</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd8"></a>Workingdir and HFS directory tree control</h4>
+            <p>In this example, the application tries to send a file that is outside the working directory tree. The transfer goes into error.</p>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND id = IDF2, WORKINGDIR = “/home/user01/pub”</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application tries to send the /home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF2, part = PART1,fname = “/home/user01/priv/a.txt” </p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd9"></a>Workingdir using the &amp;HOME symbolic variable</h4>
+            <p>In this example, the file to send is located in user01's HFS home directory. The file is received in user02's HFS home directory, and retains its original file name. </p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF3,&#160;fname = “&amp;FROOT”, WORKINGDIR = “&amp;HOME”,&#160;userid = &amp;RUSER</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF3,&#160;WORKINGDIR = “&amp;HOME”</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application that is running under the user01 system account sends the file 'a.txt' file to the remote partner PART1 using the transfer flow IDF3.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF3, part = PART1, fname = “a.txt”, RUSER = "user02"</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Data set examples on z/OS</h3>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;"><a href="#Workingd10">Workingdir using a data set file name</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd11">Workingdir using a data set file name and the &amp;USERID symbolic variable</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd12">Workingdir using a partitioned data set file name</a>
+                </li>
+            </ul>
+            <h4><a name="Workingd10"></a>Workingdir using a data set file name</h4>
+            <p>The example command sends the file USER01.SND.FTEST, which on reception is USER01.RCV.FTEST.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF4,&#160;fname = FTEST, WORKINGDIR = USER01.RCV.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF4,&#160;WORKINGDIR = USER01.SND.</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application sends the file to the remote partner PART1 using the transfer flow IDF4.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = FTEST</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd11"></a>Workingdir using a data set file name and the &amp;USERID symbolic variable</h4>
+            <p>In this example, the user USER01 sends the file USER01.SND.FTEST, which on reception is USER02.RCV.FTEST.</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF5,&#160;fname = FTEST, WORKINGDIR = &amp;USERID.RCV., userid = &amp;RUSER</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF5,&#160;WORKINGDIR = &amp;USERID.SND. </p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The user USER01 sends the file to the remote partner PART1 using the transfer flow IDF5.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF5, part = PART1, fname = FTEST,  RUSER = USER02</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd12"></a>Workingdir using a partitioned data set file name</h4>
+            <p>The example command sends the file USER01.SND.LIB(TEST), which on reception is USER01.RCV.LIB(TEST).</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF6,&#160;fname = &amp;FROOT, WORKINGDIR = USER01.RCV.LIB</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF6,&#160;WORKINGDIR = USER01.SND.LIB</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application sends the file to the remote partner PART1 using the transfer flow IDF6.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF6, part = PART1, fname = TEST</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Database (*MBR&#160;and *FILE)&#160;examples on IBM&#160;i</h3>
+            <ul style="list-style-type: disc;margin-left: 36pt;">
+                <li style="list-style-type: disc;"><a href="#Workingd13">Workingdir using a *MBR file name</a>
+                </li>
+                <li style="list-style-type: disc;"><a href="#Workingd14">Workingdir using a *FILE file name</a>
+                </li>
+            </ul>
+            <h4><a name="Workingd13"></a>Workingdir using a *MBR file name</h4>
+            <p>The example command sends the file CFTPROD/SND(FTEST), which on reception is CFTPROD2/RCV(FTEST).</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF7,&#160;fname = FTEST, WORKINGDIR = CFTPROD2/RCV</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF7,&#160;WORKINGDIR = CFTPROD/SND</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application sends the file to the remote partner PART1 using the transfer flow IDF7.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF7, part = PART1, fname = FTEST</p>
+                    </td>
+                </tr>
+            </table>
+            <h4><a name="Workingd14"></a>Workingdir using a *FILE file name</h4>
+            <p>The example command sends the file CFTPROD/UTIN(FTEST), which on reception is CFTPROD2/UTIN(FTEST).</p>
+            <p>Server:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTRECV&#160;id = IDF8,&#160;fname = UTIN(FTEST), WORKINGDIR = CFTPROD2</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Client:</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>CFTSEND&#160;id = IDF8,&#160;WORKINGDIR = CFTPROD</p>
+                    </td>
+                </tr>
+            </table>
+            <p>User01:</p>
+            <p>The application sends the file to the remote partner PART1 using the transfer flow IDF8.</p>
+            <table style="mc-table-style: url('../Resources/TableStyles/code_window.css');margin-right: auto;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&gt; CFTUTIL send idf = IDF8, part = PART1, fname = UTIN(FTEST)</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

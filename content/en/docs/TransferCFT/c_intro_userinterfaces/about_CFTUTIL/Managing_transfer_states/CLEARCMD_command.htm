@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Troubleshooting|Troubleshoot the server|Troubleshoot the Transfer CFT runtime" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>CLEARCMD command</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/SynchTableStyle_noshade.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="kanchor78"></a><a name="Deleting_a_transfer_request"></a>
+                <MadCap:conditionalText data-mc-conditions="axway_conditions.ScreenOnly">CLEARCMD - </MadCap:conditionalText>Delete a command in the COM file</h1>
+            <p>This page describes the <a name="CLEARCMD_command"></a>CLEARCMD. Use this 
+ command  to delete a transfer request from the communication file. A log message is generated to trace who has cleared which command.</p>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">You must include either the COMMAND&#160;or JOBNAME&#160;parameter when using this command.</td>
+                </tr>
+            </table>
+            <table style="width: 90%;border-left-style: Outset;border-top-style: Outset;border-right-style: Outset;border-bottom-style: Outset;border-left-width: 1px;border-right-width: 1px;border-top-width: 1px;border-bottom-width: 1px;border-left-color: #c0c0c0;border-right-color: #c0c0c0;border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');margin-left: 0;margin-right: auto;" width="90%" class="TableStyle-SynchTableStyle_interop" cellspacing="0">
+                <col style="width: 20.241%;" class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters</th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>COMMAND </p>
+                        </td>
+                        <td style="padding-right: 10px;padding-left: 10px;border-top-style: Inset;border-right-style: Inset;border-bottom-style: Inset;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-right-color: #808080;border-right-width: 1px;border-bottom-color: #808080;border-bottom-width: 1px;" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Request keyword.</p>
+                        </td>
+                    </tr>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td colspan="1" rowspan="1" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>INDEX </p>
+                        </td>
+                        <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-top-style: Inset;border-right-style: Inset;border-bottom-style: Inset;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-right-color: #808080;border-right-width: 1px;border-bottom-color: #808080;border-bottom-width: 1px;" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Request number as displayed by the LISTCOM command. </p>
+                            <p>For example:</p>
+                            <ul>
+                                <li><span class="code">INDEX=*</span> Selects all record numbers.</li>
+                                <li><span class="code">INDEX=12345</span> Selects the record number 12345 in the COM&#160;file.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">JOBNAME</td>
+                        <td style="padding-right: 10px;padding-left: 10px;border-top-style: Inset;border-right-style: Inset;border-bottom-style: Inset;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-right-color: #808080;border-right-width: 1px;border-bottom-color: #808080;border-bottom-width: 1px;" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Jobname   (string 15), which you can combine with wildcard characters.</p>
+                            <p>For example:</p>
+                            <ul>
+                                <li class="code">JOBNAME=12345</li>
+                                <li class="code">JOBNAME=123*</li>
+                                <li class="code">JOBNAME=12?45</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td colspan="1" rowspan="1" class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2">
+                            <p>USERID</p>
+                        </td>
+                        <td colspan="1" rowspan="1" style="padding-right: 10px;padding-left: 10px;border-top-style: Inset;border-right-style: Inset;border-bottom-style: Inset;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-right-color: #808080;border-right-width: 1px;border-bottom-color: #808080;border-bottom-width: 1px;" class="TableStyle-SynchTableStyle_interop-BodyA-Column1-Body2">
+                            <p>Identifier of the request owner.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Delete a single command</h3>
+            <p>To use CLEARCMD&#160;to delete a single command, the USERID, INDEX, and COMMAND  parameters are mandatory.</p>
+            <p><strong>Example</strong>
+            </p>
+            <p>Begin by running the LISTCOM command.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p><b>cftutil listcom</b>
+                            </p>
+                            <p>RECORDS</p>
+                            <p>RECORD N      1            ACTIVE  : YES</p>
+                            <p>COMMAND-TYPE : SEND        USERID  : AXWAY\Manager</p>
+                            <p>GROUPID :</p>
+                            <p>JOBNAME : 17944</p>
+                            <p>COMMAND :</p>
+                            <p>part=bclpm,idf=un,fname=cc,mintime=+1</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Enter the CLEARCMD command.</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p><strong>cftutil clearcmd userid=AXWAY\Manager,command=send,index=1</strong>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Repeat the LISTCOM command, and the example below displays &#160;the results (note the record is now set to CLEARED).</p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/code_window.css');width: 90%;" cellspacing="0" class="TableStyle-code_window">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p><b>cftutil listcom</b>
+                        </p>
+                        <p>RECORD N 1 ACTIVE : CLEARED</p>
+                        <p>COMMAND-TYPE : SEND USERID : AXWAY\Manager</p>
+                        <p>GROUPID :</p>
+                        <p>JOBNAME : 17944</p>
+                        <p>COMMAND :</p>
+                        <p>On 20200203 at 161221 UserId=AXWAY\Administrator, JobName=20144 ran the command 'CLEARCMD UserId=AXWAY\Manager, Index=1, Command=SEND'. This clears the command: UserId=AXWAY\Manager, JobName=17944, Command=SEND PART='NEWYORK'</p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Delete a group of commands</h3>
+            <p>To delete a group of commands use the following syntax.</p>
+            <p>To delete all commands=cmd for this userid:</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>INDEX=*,COMMAND= cmd,USERID=userid </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To delete all commands for this jobname and this userid:</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>INDEX=*,JOBNAME= job,USERID=userid </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To delete all commands=cmd for this jobname and this userid:</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>INDEX=*,JOBNAME= job,COMMAND=cmd ,USERID=userid</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Example</strong>
+            </p>
+            <p>To delete all RECV&#160;commands that have the JOBNAME&#160;9168 for the Axway/Manager account user begin by executing the LISTCOM command.</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p><b>cftutil listcom</b>
+                            </p>
+                            <p>RECORD N      3            ACTIVE  : YES</p>
+                            <p>COMMAND-TYPE : RECV        USERID  : AXWAY\Manager</p>
+                            <p>GROUPID :</p>
+                            <p>JOBNAME : 9168</p>
+                            <p>COMMAND :</p>
+                            <p>part=loop,idf=*</p>
+                            <p>RECORD N      4            ACTIVE  : YES</p>
+                            <p>COMMAND-TYPE : RECV        USERID  : AXWAY\Manager</p>
+                            <p>GROUPID :</p>
+                            <p>JOBNAME : 9168</p>
+                            <p>COMMAND :</p>
+                            <p>part=pesit1,idf=*</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Enter the CLEARCMD&#160;command.</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p><strong>cftutil clearcmd userid=AXWAY\Manager,command=recv,index=*,jobname=9168</strong>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Run LISTCOM; the selected records now display as CLEARED.</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p><b>cftutil listcom</b>
+                            </p>
+                            <p>RECORD N      3            ACTIVE  : CLEARED</p>
+                            <p>COMMAND-TYPE : RECV        USERID  : AXWAY\Manager</p>
+                            <p>GROUPID :</p>
+                            <p>JOBNAME : 9168</p>
+                            <p>COMMAND :</p>
+                            <p>On 20200203 at 161221 UserId=AXWAY\Manager, JobName=20144 ran the command 'CLEARCMD UserId=AXWAY\Manager, Index=*, JobName=9168, Command=RECV'. This clears the command: UserId=AXWAY\Manager, JobName=9168, Command=RECV part=loop,idf=*</p>
+                            <p>RECORD N 4 ACTIVE : CLEARED</p>
+                            <p>COMMAND-TYPE : RECV USERID : AXWAY\Manager</p>
+                            <p>GROUPID :</p>
+                            <p>JOBNAME : 9168</p>
+                            <p>COMMAND :</p>
+                            <p>On 20200203 at 161221 UserId=AXWAY\Manager, JobName=20144 ran the command 'CLEARCMD UserId=AXWAY\Manager, Index=*, JobName=9168, Command=RECV'. This clears the command: UserId=AXWAY\Manager, JobName=9168, Command=RECV part=pesit1,idf=*</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Syntax error</h3>
+            <p>The following is a list of error and information messages that display.</p>
+            <p><strong>Error 1</strong>
+            </p>
+            <p class="code">CFTU26E CLEARCMD _ Error (Index value not authorized_ Bad command)</p>
+            <p class="code">CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4*,command=recv)</p>
+            <p>&#160;</p>
+            <p><strong>Error 2</strong>
+            </p>
+            <p class="code">CFTU26E CLEARCMD _ Error (COMMAND Keyword missing)</p>
+            <p class="code">CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=4,jobname=1234)</p>
+            <p class="code">&#160;</p>
+            <p><strong>Error 3</strong>
+            </p>
+            <p class="code">CFTU26E CLEARCMD _ Error (COMMAND or JOBNAME Keyword missing)</p>
+            <p class="code">CFTU00I CLEARCMD _ Failed (userid=AXWAY\Manager,index=*)</p>
+        </div>
+    </body>
+</html>

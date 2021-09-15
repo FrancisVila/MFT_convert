@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Installation (allOS)|Installation and operation IBM i|Prerequisites" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Apply a&#160;license key</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1 style="page-break-before: always;">Apply a&#160;license key</h1>
+            <p>You need to apply a valid license key to Transfer CFT&#160;in the following situations:</p>
+            <ul>
+                <li>You perform an initial Transfer CFT installation.</li>
+                <li>A hardware upgrade changes the CPU ID (CPU serial number).</li>
+                <li>After a year passes, to replace an expired license key.</li>
+                <li>To ramp up a Transfer CFT&#160;Disaster Recovery instance (for example, on a DR&#160;LPAR&#160;for z/OS systems).</li>
+                <li>If you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x. </li>
+            </ul>
+            <h2>Key management</h2>
+            <h3>Obtain a license key</h3>
+            <ol>
+                <li value="1">For a new installation, install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</li>
+                <li value="2">After completing the installation, or for an existing installation, use the command <strong class="code">cftutil about</strong> to retrieve your system information. For details see the examples below.</li>
+                <li value="3">Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.<ul><li>For a US key, contact:  <strong><code>fulfillment@us.axway.com</code></strong></li><li>For an EMEA or APAC key, contact: <strong><code>product.key@axway.com</code></strong></li></ul></li>
+                <li value="4">Provide the hostname  where Transfer CFT is to be installed or updated.</li>
+                <li value="5">Provide the list of characters in the  CPU ID. </li>
+            </ol>
+            <h3>Apply a license key</h3>
+            <p>Apply the license key(s) that you received from the Axway Fulfillment team as follows:</p>
+            <ul>
+                <li>Navigate to the CFTPROD  library, and edit the 'KEY' file.</li>
+                <li>Edit the CFTPROD/KEY(KEY) member by entering (writing in) your key.</li>
+            </ul>
+            <p class="bold_in_para">Examples</p>
+            <p>Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.</p>
+            <table class="TableStyle-code_window" style="mc-table-style: url('../../Resources/TableStyles/code_window.css');" cellspacing="0">
+                <col style="width: 431pt;" class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="p_1_1_1">CFTUTIL PARAM(ABOUT) </p>
+                        <p class="p_1_1_1"> Host information :</p>
+                        <p class="p_1_1_1"> * model = 525 * </p>
+                        <p class="p_1_1_2"><span class="PageNumber">cpuid</span> = 10A16B2</p>
+                    </td>
+                </tr>
+            </table>
+            <p>In this example, you would provide the CPU ID <span class="spanboldinpara">10A16B2</span>.</p>
+            <p>Use the display system value command to get the serial number, known as QSRLNBR: </p>
+            <table class="TableStyle-code_window" style="mc-table-style: url('../../Resources/TableStyles/code_window.css');" cellspacing="0">
+                <col style="width: 431pt;" class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="b_1">DSPSYSVAL SYSVAL(QSRLNBR)</p>
+                        <p class="p_1_1_1">System value . . . . . : QSRLNBR</p>
+                        <p class="p_1_1_1">Description . . . . . : System serial number</p>
+                        <p class="p_1_1_2"><span class="PageNumber">Serial number . . . . </span>: 06890AP</p>
+                    </td>
+                </tr>
+            </table>
+            <p>In this example, you would provide the CPU ID<span class="code"> 06890AP</span>.</p>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">Your&#160;values will differ from those shown in the examples.</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

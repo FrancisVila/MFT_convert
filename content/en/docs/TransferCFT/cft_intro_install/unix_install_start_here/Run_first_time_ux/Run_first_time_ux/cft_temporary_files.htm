@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../../" data-mc-toc-path="Installation (allOS)|Installation and operation UNIX|Unix operations|Running Transfer CFT for the first time" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Transfer CFT temporary files</title>
+        <link rel="shortcut icon" href="../../../Resources/Images/favicon.ico" />
+        <link href="../../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="CFT_temporary_files"></a>Transfer CFT 
+ temporary files</h1>
+            <p>Depending on the processing involved, Transfer CFT creates various temporary 
+ files in the <i>/tmp</i> directory. This topic describes temporary files, 
+ how to delete them, and provides an example.</p>
+            <h2>Temporary files</h2>
+            <h3>Transfer CFT temporary files</h3>
+            <p>There are four types of temporary files corresponding to different types 
+ of actions:</p>
+            <ul>
+                <li><i style="font-style: italic;">/tmp/cftlo*</i> 
+ files are produced during the log switching procedure</li>
+                <li><i style="font-style: italic;">/tmp/cftcn*</i> 
+ files are produced when the accounting feature is enabled</li>
+                <li><i style="font-style: italic;">/tmp/cftsu*</i> 
+ files are produced when end of transfer procedures are run</li>
+                <li><i style="font-style: italic;">/tmp/cftsu*.err</i> 
+ files correspond to the results of commands in the <i>cftsu*</i> files</li>
+            </ul>
+            <h3>Deleting temporary files</h3>
+            <p>Transfer CFT cannot delete temporary files automatically. It does not 
+ know exactly when the end of the user script is reached.</p>
+            <p>To avoid saturating the <span class="code">/tmp</span> directory, you should end any shell 
+ procedure with the rm $0 command.</p>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">
+ If this command is omitted, the <span class="code">/tmp</span> partition rapidly becomes 
+ full and the end of transfer procedures fails.</td>
+                </tr>
+            </table>
+            <p>This command deletes the procedure that runs it and is applicable to 
+ <i>cftlo*, cftfcn</i>* and <i>cftsu</i>* files.</p>
+            <p>Additionally, the <i>cftsu*.err</i> files associated with <i>cftsu*</i> 
+ files should be deleted. However, to avoid losing any errors that may 
+ be logged in this file, it is best to check that the file is empty before 
+ deleting it.</p>
+            <p>For example, enter:</p>
+            <table style="width: 90%;mc-table-style: url('../../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p class="code" style="font-weight: normal;">if test -s $0.err<br />then<br />echo $0.err contains data to be consulted<br />else<br />rm $0.err<br />fi</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>TMPDIR environment variable</h3>
+            <p>You can use the environment variable <span class="code">TMPDIR=&lt;path&gt; </span>to define a temporary directory in Unix and POSIX. If you define TMPDIR, the temporary file goes in this directory. If you do not define TMPDIR, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> uses the default directory (/tmp). </p>
+            <p style="font-weight: bold;">Example</p>
+            <table style="width: 90%;mc-table-style: url('../../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">export TMPDIR=/home/Desktop/tmpdir/</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">You must restart Transfer CFT if you change the <span class="code">TMPDIR </span>value.</td>
+                </tr>
+            </table>
+            <h3>Sample procedure</h3>
+            <p>The contents of the <span class="code">recvm.cmd</span> file stored in <span class="code">&lt;installdir&gt;/runtime/conf/</span> are 
+ shown below. The <span class="code">recvm.cmd</span> file is a sample procedure executed 
+ after receiving a message.</p>
+            <p>This procedure must first be declared in the CFTPARM section of your 
+ configuration file, in the EXECRM field, so that it can be executed.</p>
+            <p style="font-weight: bold;">Example</p>
+            <table style="mc-table-style: url('../../../Resources/TableStyles/code_window.css');width: 90%;" cellspacing="0" class="TableStyle-code_window">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                        <p>&#160;&#160;&#160;&#160; EXECRM = '/home/transfer/cft/&lt;installdir&gt;/runtime/conf//recvm.cmd'</p>
+                        <p>The contents of the recv.cmd file are as follows:</p>
+                        <p>echo "MESSAGE RECEIVED"&#160;&#160;&#160;&#160; /* display 
+ of the message received */</p>
+                        <p>echo "** &amp;msg **" &#160;&#160;&#160;&#160; /* by CFT using 
+ the &amp;msg symbolic */</p>
+                        <p>&#160;&#160;&#160;&#160; /* variable that contains the */</p>
+                        <p>&#160;&#160;&#160;&#160; /* message text */</p>
+                        <p>&#160; </p>
+                        <p>rm $0 &#160;&#160;&#160;&#160; /* deleting the /tmp/cftsu* */</p>
+                        <p>&#160;&#160;&#160;&#160; /* temporary file */<br /><br />if test -s $0.err<br />then<br />echo $0.err contains data to be consulted<br />else<br />rm $0.err<br />fi</p>
+                        <h3>&#160;</h3>
+                    </td>
+                </tr>
+            </table>
+            <h3>Transfer CFT identification</h3>
+            <p>Some clients package Transfer CFT/UNIX to meet the special requirements 
+ of their company. This specific package can apply to both the product 
+ in its ready-to-install state, as delivered by Axway, and the product 
+ specifically preconfigured for the company.</p>
+            <p>To make it easier to identify this type of product, a specific directory 
+ is available on the delivery medium and product following installation. 
+ This directory is called <i>.info (</i>the dot must be included before 
+ the name).</p>
+            <p>This <i>.info</i> directory is located:</p>
+            <ul>
+                <li><i style="font-style: italic;">For 
+ the installable product</i>, on the same level as the other product files 
+ to install</li>
+                <li><i style="font-style: italic;">For 
+ the installed product</i>, in the subdirectory in which Transfer CFT/V2/UNIX 
+ was generated, in the examples provided in this guide, this is the <i>cft</i> 
+ directory</li>
+            </ul>
+            <p>This directory comprises a series of subdirectories ending with an empty 
+ file. These various levels provide the information below in the following 
+ order:</p>
+            <ul>
+                <li>Transfer CFT release, 
+ cft240 for example</li>
+                <li>Product generation 
+ date, 20060307 for example</li>
+                <li>Operating system, 
+ AIX for example</li>
+                <li>Operating system 
+ release, for example, for AIX: 43</li>
+                <li>If necessary, the 
+ hardware manufacturer, for example, for AIX: IBM</li>
+            </ul>
+            <p>Taking the examples above, the complete directory structure is as follows:</p>
+            <p class="code">&#160;&#160;&#160;&#160; .info/cft240/20060307/AIX/43/IBM</p>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">This directory and the information it contains are also used by Transfer 
+ CFT. As some utilities are very similar from one product release to another, 
+ the release information is retrieved to fine-tune the way in which the 
+ utilities behave.</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

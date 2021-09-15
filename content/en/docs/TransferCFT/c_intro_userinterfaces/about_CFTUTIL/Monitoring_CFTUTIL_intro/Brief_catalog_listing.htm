@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="User interfaces |CFTUTIL interface|Monitoring activities" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>LISTCAT - Brief/Full catalog listings</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/SynchTableStyle_noshade.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="Brief_catalog_listing"></a>LISTCAT - Brief/Full catalog listings</h1>
+            <h2><a name="Displayed_catalog_information"></a>Displayed catalog information</h2>
+            <p>In the following examples, each field displayed is identified by a number 
+ which makes reference to the associated comment. The display differs according 
+ to the CONTENT and NPART selection parameters.</p>
+            <p>The following is indicated at the end of the display of the characteristics 
+ of the selected catalog entries:</p>
+            <ul>
+                <li>The number of entries 
+ whose characteristics are displayed (n)</li>
+                <li>The total number 
+ of entries recorded in the catalog at the time the LISTCAT command is 
+ processed (p)</li>
+                <li>The number of catalog 
+ entries still free (q) and the percentage of space still free (r%)</li>
+            </ul>
+            <p>This information is displayed in the following form:</p>
+            <ul>
+                <li>n records selected</li>
+                <li>p records in catalog 
+ file</li>
+                <li>q records free 
+ (r%)</li>
+            </ul>
+            <h2>Parameter descriptions</h2>
+            <h3><a name="Full_Catalog_listing"></a>LISTCAT CONTENT = FULL&#160;</h3>
+            <p>In this 
+ example, the LISTCAT parameter content 
+ is defined as full. Each field displayed is identified by a number 
+ which references the associated comment. The display differs according 
+ to the CONTENT and NPART parameters. </p>
+            <p>See also   <a href="LISTCAT_command.htm">Listing catalog contents</a>.</p>
+            <p>For DIAGI and DIAGP refer to: <a href="../../Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here.htm">Codes, 
+ Diagnostics and Messages</a> .</p>
+            <p class="bold_in_para">Example </p>
+            <p><b style="font-weight: bold;">LISTCAT CONTENT = FULL</b>
+            </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>CFTU20I</p>
+                            <p>CFTU20I CFT Windows</p>
+                            <p>CFTU20I Version 3.1.2 20140428</p>
+                            <p>CFTU20I (C) Copyright AXWAY 1989-2014</p>
+                            <p>CFTU20I ====&gt; Starting Session on 20/03/2015 Time is 11:30:25</p>
+                            <p>CFTU20I Parameters file    :C:\Axway\Transfer_CFT\runtime\data\cftparm</p>
+                            <p>CFTU20I Partners file      :C:\Axway\Transfer_CFT\runtime\data\cftpart</p>
+                            <p>CFTU20I Catalog file       :C:\Axway\Transfer_CFT\runtime\data\cftcata</p>
+                            <p>CFTU20I</p>
+                            <p>0 record(s) selected</p>
+                            <p>10000 record(s) in Catalog file</p>
+                            <p>10000 record(s) free (100%)</p>
+                            <p>CFTU00I LISTCAT  _ Correct ()</p>
+                            <p>CFTU20I Number of Command(s) 1</p>
+                            <p>CFTU20I Number of error(s)   0</p>
+                            <p>CFTU20I Ending   Session on 20/03/2015 Time is 11:30:26</p>
+                            <p>CFTU20I Session active for  0:00:00</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>LISTCAT CONTENT = BRIEF, NPART = {identifier | mask}</h3>
+            <p><b style="font-weight: bold;">LISTCAT CONTENT = BRIEF, NPART = {<i>identifier</i> 
+ | <i>mask</i>}</b>
+            </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" width="90%" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr valign="top" class="TableStyle-code_window-Body-Body1">
+                    <td style="border-left-width: 1px;border-left-color: #000000;border-left-style: Solid;border-top-style: Solid;border-top-color: #000000;border-top-width: 1px;border-right-width: 1px;border-right-color: #000000;border-right-style: Solid;border-bottom-style: Solid;border-bottom-color: #000000;border-bottom-width: 1px;padding-right: 10px;padding-left: 10px;" class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="Tabletitle">1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7</p>
+                        <p>Date = DD-MM-YYYY, Time = hh:mm</p>
+                        <p>Partner DTSA File Transfer Diags Parm</p>
+                        <p>Network Name) Id. Id. &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;CFT 
+ Prot.</p>
+                        <p>xxxxxxxxxxxxx xxxx xxxxxx xxxxxx &#160;&#160;&#160;&#160;xxx 
+ &#160;xxxxxx 
+ &#160;xxxxxxxxxxxx</p>
+                        <p>xxxxxxxxxx &#160;&#160;xxxx 
+ &#160;&#160;xxxxxx 
+ &#160;&#160;xxxxxx 
+ &#160;&#160;&#160;&#160;&#160;&#160;xxx 
+ &#160;xxxxxx 
+ &#160;&#160;xxxxxxx</p>
+                        <p>xxxxxxxxx &#160;&#160;xxxx 
+ &#160;&#160;xxxxxx 
+ &#160;&#160;xxxxxx 
+ &#160;&#160;&#160;&#160;&#160;xxx 
+ &#160;xxxxx &#160;&#160;xxxxxxxxxxx</p>
+                    </td>
+                </tr>
+            </table>
+            <p>The following table contains the comments associated with the various 
+ headings contained in this example.</p>
+            <p><b style="font-weight: bold;">LISTCAT CONTENT - BRIEF, NPART - Headings 
+ comments</b>
+            </p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');width: 90%;" class="TableStyle-SynchTableStyle_interop" cellspacing="0">
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading </th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>1&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Partner network identifier.<br />The partner network name corresponds to the NRPART parameter of the CFTPART 
+ command and has a length of 16 characters only.&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>2&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer state<br />The characters DTSA mean:</p>
+                        <ul>
+                            <li class="BulletDisksTable">Direction 
+ = S/R&#160;(Send/Receive)</li>
+                            <li class="BulletDisksTable">Type 
+ =&#160;F/M/R&#160;(File/Message/Reply)</li>
+                            <li class="BulletDisksTable">State&#160;=&#160;D/C/H/K/T/X&#160;(Disp/Current/Hold/Keep/Terminated/eXecuted)</li>
+                            <li class="BulletDisksTable">Ack&#160;=&#160;A&#160;(Acknowledge)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>3&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>File identifier (IDF) for a file transfer or message identifier 
+ (IDM)&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>4&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer identifier. Transfer identifier assigned by the 
+ Transfer CFT&#160;(IDT)&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>5&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer CFT internal diagnostic code<br />For a transfer with an error, this field is defined with the Transfer CFT 
+ internal diagnostic code (DIAGI) relative to this error<br />For a correctly terminated transfer, this field is set to zero (1)&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>6&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Protocol diagnostic code<br />If the entry concerned is not a generic entry:</p>
+                        <ul>
+                            <li class="BulletDisksTable">for a 
+ transfer with an error, this field is defined with the protocol diagnostic 
+ code (DIAGP) relative to this error (2)</li>
+                            <li class="BulletDisksTable">for a 
+ correctly terminated transfer, this field indicates the compression factor 
+ obtained which is documented as follows:</li>
+                            <li>
+                                <ul>
+                                    <li class="BulletDisksTable2">CP 
+ NONE:&#160;transfer correctly terminated with no "on line"&#160;compression 
+ requested</li>
+                                    <li class="BulletDisksTable2">CP 
+ xx%:&#160;transfer terminated correctly with a compression factor of&#160;xx%</li>
+                                </ul>
+                            </li>
+                            <li class="BulletDisksTable">for a 
+ delayed transfer, this field is defined with:</li>
+                            <li>
+                                <ul>
+                                    <li class="BulletDisksTable2">hh:mm:ss: 
+ if sent the same day</li>
+                                    <li class="BulletDisksTable2">dd/mm/yy: 
+ if sent the following days</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>&#160;</p>
+                        <p>If the entry concerned is a generic entry, this field is 
+ defined with one of the following values:</p>
+                        <ul>
+                            <li class="BulletDisksTable">RECV 
+ ALL:&#160;generic entry for a global reception request for all the files&#160;with 
+ a given IDF</li>
+                            <li class="BulletDisksTable">RECV 
+ MSK:&#160;generic entry for a global reception request for IDFs with&#160;"wildcards"</li>
+                            <li class="BulletDisksTable">MIN CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in minutes</li>
+                            <li class="BulletDisksTable">DAY CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in days</li>
+                            <li class="BulletDisksTable">MON CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in months</li>
+                            <li class="BulletDisksTable">DIFFUS:&#160;generic 
+ entry for a broadcasting</li>
+                            <li class="BulletDisksTable">COLLECT:&#160;generic 
+ entry for a collection</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p>7&#160;</p>
+                    </td>
+                    <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>PARM field<br />This field is 24 characters long and may be truncated as required&#160;</p>
+                    </td>
+                </tr>
+            </table>
+            <p><b style="font-weight: bold;">(1) (2)</b>: Refer to  
+ <i style="font-style: normal;"><a href="../../Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here.htm">Codes 
+ Diagnostics and Messages</a></i>. </p>
+            <h3>For LISTCAT CONTENT = BRIEF, PART = {identifier | mask}</h3>
+            <p>The NPART parameter is not defined.</p>
+            <p><b style="font-weight: bold;">LISTCAT CONTENT = BRIEF, PART = {<i>identifier</i> 
+ | <i>mask</i>}</b>
+            </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" width="90%" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr valign="top" class="TableStyle-code_window-Body-Body1">
+                    <td rowspan="1" colspan="1" style="border-left-width: 1px;border-left-color: #000000;border-left-style: Solid;border-top-style: Solid;border-top-color: #000000;border-top-width: 1px;border-right-width: 1px;border-right-color: #000000;border-right-style: Solid;border-bottom-style: Solid;border-bottom-color: #000000;border-bottom-width: 1px;padding-right: 10px;padding-left: 10px;" class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="Tabletitle">1 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;3 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;4 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;5 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;9</p>
+                        <p class="Tabletitle">Date = DD-MM-YYYY, Time = hh:mm</p>
+                        <p class="Tabletitle">Partner DTSA &#160;&#160;&#160;&#160;File 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Transfer 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Records 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Diag 
+ &#160;&#160;Diag 
+ Applic.</p>
+                        <p class="Tabletitle">Ident 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Ident 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Transmit 
+ &#160;&#160;&#160;&#160;Total 
+ &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Protocol 
+ &#160;&#160;Ident</p>
+                        <p class="Tabletitle">xxxxxxx &#160;&#160;xxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;nnnnnnnn 
+ nnnnnnnn &#160;&#160;nnn 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx</p>
+                        <p>xxxxxxxx &#160;&#160;xxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;nnnnnnnn 
+ nnnnnnnn &#160;&#160;nnn 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx</p>
+                        <p>xxxxxxx &#160;&#160;xxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;nnnnnnnn 
+ nnnnnnnn &#160;&#160;nnn 
+ &#160;&#160;xxxxxxxx 
+ &#160;&#160;xxxxxxxx</p>
+                    </td>
+                </tr>
+            </table>
+            <p>The following table contains the comments associated with the various 
+ headings contained in this figure.</p>
+            <table style="width: 90%;border-left-style: Outset;border-left-width: 1px;border-right-style: Outset;border-right-width: 1px;border-top-style: Outset;border-top-width: 1px;border-bottom-style: Outset;border-bottom-width: 1px;border-left-color: #c0c0c0;border-right-color: #c0c0c0;border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-spacing: 1px;border-spacing: 1px;mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');" cellspacing="0" width="90%" class="TableStyle-SynchTableStyle_interop">
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading </th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">1&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the partner described in the commands CFTPART 
+ (corresponding to the ID parameter) or CFTDEST (one of the PART in the 
+ broadcasting list)&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">2&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer state description<br />The DTSA characters mean:</p>
+                        <ul>
+                            <li class="BulletDisksTable"><b style="font-weight: bold;">D</b>irection&#160;=&#160;S/R&#160;&#160;&#160;&#160; 
+ (Send/Receive)</li>
+                            <li class="BulletDisksTable"><b style="font-weight: bold;">T</b>ype 
+ = F/M/R&#160;&#160;&#160;&#160; (File/Message/Reply)</li>
+                            <li class="BulletDisksTable"><b style="font-weight: bold;">S</b>tate 
+ =&#160;D/C/H/K/T/X&#160;&#160;&#160;&#160; Disp/Current/Hold/Keep/Terminated/eXecuted)</li>
+                            <li class="BulletDisksTable"><b style="font-weight: bold;">A</b>ck 
+ = A&#160;&#160;&#160;&#160; (Acknowledge)</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">3&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>File identifier (IDF) for a file transfer or message identifier 
+ (IDM).&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">4&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer identifier (IDT)&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">5&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>If the transfer involves:</p>
+                        <ul>
+                            <li class="BulletDisksTable">a file:&#160;number 
+ of records to be sent</li>
+                            <li class="BulletDisksTable">a message:&#160;message 
+ text truncated to 21 characters</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">6&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>If the transfer involves:</p>
+                        <ul>
+                            <li class="BulletDisksTable">a file: 
+ number of records sent</li>
+                            <li class="BulletDisksTable">a message: 
+ remainder of the message text truncated to 21 characters</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">7&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer CFT internal diagnostic code<br />For a transfer with an error, this field is defined with the Transfer CFT 
+ internal diagnostic code (DIAGI) relative to this error<br />For a correctly completed transfer, this field is set to zero <b>(1)</b>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">8&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Protocol diagnostic code<br />If the entry concerned is not a generic entry:</p>
+                        <ul>
+                            <li class="BulletDisksTable">for a 
+ transfer with an error, this field is defined with the protocol diagnostic 
+ code (DIAGP) relevant to this error <b>(2)</b></li>
+                            <li class="BulletDisksTable">for a 
+ correctly completed transfer, this field indicates the obtained compression 
+ factor which is documented with the following format:<ul><li class="BulletDisksTable">CP 
+ NONE:&#160;transfer terminated correctly with no "on line"&#160;compression 
+ requested</li><li>CP 
+ xx%: transfer terminated correctly with a compression&#160;factor of xx%</li></ul></li>
+                            <li class="BulletDisksTable">for a 
+ delayed transfer, this field is defined with:</li>
+                            <li style="list-style: none;">
+                                <ul>
+                                    <li class="BulletDisksTable2">hh:mm:ss: 
+ if sent the same day</li>
+                                    <li class="BulletDisksTable2">dd/mm/yy: 
+ if sent the following days</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>If the entry concerned is a generic entry, this field is 
+ defined with one of the following values:</p>
+                        <ul>
+                            <li class="BulletDisksTable">RECV 
+ ALL:&#160;generic entry for a global receive request for all the files&#160;with 
+ a given IDF</li>
+                            <li class="BulletDisksTable">RECV 
+ MSK:&#160;generic entry for a global receive request for IDFs with&#160;"wildcards"</li>
+                            <li class="BulletDisksTable">MIN CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in minutes</li>
+                            <li class="BulletDisksTable">DAY CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in days</li>
+                            <li class="BulletDisksTable">MON CYC:&#160;generic 
+ entry for cyclic transfers, period expressed in months</li>
+                            <li class="BulletDisksTable">DIFFUS:&#160;generic 
+ entry for a broadcasting</li>
+                            <li class="BulletDisksTable">COLLECT:&#160;generic 
+ entry for a collection</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td style="width: 13%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="13%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p style="text-align: center;font-weight: bold;" align="center">9&#160;</p>
+                    </td>
+                    <td style="width: 87%;padding-left: 1px;padding-top: 1px;padding-right: 1px;padding-bottom: 1px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" valign="top" width="87%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the application (IDA) associated with this 
+ transfer&#160;</p>
+                    </td>
+                </tr>
+            </table>
+            <p>&#160;<b>(1) (2)</b>: See   <i style="font-style: normal;"><a href="../../Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here.htm">Codes 
+ Diagnostics and Messages</a></i>. </p>
+        </div>
+    </body>
+</html>

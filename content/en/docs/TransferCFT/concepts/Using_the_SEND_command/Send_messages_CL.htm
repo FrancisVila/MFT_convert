@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Managing transfers and partners|Using the SEND command" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Sending messages SEND</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/SynchTableStyle.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="Sending_messages"></a>Send 
+ a message</h1>
+            <p>You can use the SEND&#160;MESSAGE&#160;command to send a message to a designated partner, for example small amounts of content that are not considered sensitive content.</p>
+            <ul>
+                <li>The message length in the PeSIT protocol has a maximum value of 4096 bytes</li>
+                <li>The message can be extracted from the Catalog file, and redirected to a specified file (fout parameter), using the DISPLAY command:</li>
+            </ul>
+            <p><strong>Example</strong>
+            </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');margin-left: 0;margin-right: auto;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">CFTUTIL SEND part=PART, idm=MSG, type=message, msg=’hello’<p>CFTUTIL DISPLAY content=msg, fout=msgfile, direct=recv, idt=IDT</p></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>Result</strong>
+            </p>
+            <p>The&#160;resulting msgfile will contain the message 'hello'.</p>
+            <table class="AutoNumber_p_note" style="width: 100%; margin-left: 0;" cellspacing="0" cellpadding="0">
+                <col style="width: 25px;" />
+                <col style="width: 45px;" />
+                <col style="width: auto;" />
+                <tr>
+                    <td valign="top" />
+                    <td class="AutoNumber_p_note" valign="top"><span><b>Note</b></span>
+                    </td>
+                    <td class="AutoNumber_p_note" valign="top" data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;">The <span class="code">&lt;TransferCFTinstallation&gt;\runtime\conf</span> folder contains the <span class="code">dspcnf.xml</span> file, a DISPLAY command template, which includes a specific filter <span class="code">templatel id='msg'</span> that enables message extraction.</td>
+                </tr>
+            </table>
+            <h3>Sending messages</h3>
+            <div class="indentTable">
+                <table style="mc-table-style: url('../../Resources/TableStyles/SynchTableStyle.css');margin-left: 0;margin-right: auto;caption-side: top;width: 100%;" class="TableStyle-test_SynchTableStyle" cellspacing="0">
+                    <col class="Column-Column1" />
+                    <col class="Column-Column1" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">
+                                <p>Parameters</p>
+                            </th>
+                            <th class="HeadD-Column1-Header1">
+                                <p>Description</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr valign="top" class="Body-Body1">
+                            <td width="25.296%" class="BodyE-Column1-Body1">
+                                <p><a href="../../CFTUTIL/Parameter_index/ida.htm">IDA</a>&#160;</p>
+                            </td>
+                            <td width="74.704%" class="BodyD-Column1-Body1">
+                                <p>Local transfer identifier assigned by the user or user application. 
+ </p>
+                            </td>
+                        </tr>
+                        <tr valign="top" class="Body-Body2">
+                            <td colspan="1" rowspan="1" width="25.296%" class="BodyE-Column1-Body2">
+                                <p><a href="../../CFTUTIL/Parameter_index/idm.htm">IDM</a>&#160;</p>
+                            </td>
+                            <td colspan="1" rowspan="1" width="74.704%" class="BodyD-Column1-Body2">
+                                <p>Message identifier.</p>
+                            </td>
+                        </tr>
+                        <tr valign="top" class="Body-Body1">
+                            <td colspan="1" rowspan="1" width="25.296%" class="BodyE-Column1-Body1">
+                                <p><a href="../../CFTUTIL/Parameter_index/part.htm">PART</a>&#160;</p>
+                            </td>
+                            <td colspan="1" rowspan="1" width="74.704%" class="BodyD-Column1-Body1">
+                                <p>Transfer partner identifier.</p>
+                            </td>
+                        </tr>
+                        <tr valign="top" class="Body-Body2">
+                            <td colspan="1" rowspan="1" width="25.296%" class="BodyE-Column1-Body2">
+                                <p><a href="../../CFTUTIL/Parameter_index/type.htm">TYPE</a>&#160;= 
+ MESSAGE</p>
+                            </td>
+                            <td colspan="1" rowspan="1" width="74.704%" class="BodyD-Column1-Body2">
+                                <p>Characterizes a message send request.</p>
+                            </td>
+                        </tr>
+                        <tr valign="top" class="Body-Body1">
+                            <td colspan="1" rowspan="1" width="25.296%" class="BodyB-Column1-Body1">
+                                <p>OPTIONAL PARAMETERS 
+ for  <a href="SEND_command_basics.htm">SEND</a></p>
+                            </td>
+                            <td colspan="1" rowspan="1" width="74.704%" class="BodyA-Column1-Body1">
+                                <p>The optional common parameters form the SEND&#160;subset, used for sending a message (but not applicable to files).</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h4>Example</h4>
+            <p>A message using the identifier ANDREW.</p>
+            <div class="indentTable">
+                <div align="left">
+                    <table style="float: alignleft;width: 90%;border-left-color: #c0c0c0;border-left-width: 1px;border-left-style: Ridge;border-top-color: #c0c0c0;border-top-width: 1px;border-top-style: Ridge;border-right-color: #c0c0c0;border-right-width: 1px;border-right-style: Ridge;border-bottom-color: #c0c0c0;border-bottom-width: 1px;border-bottom-style: Ridge;mc-table-style: url('../../Resources/TableStyles/code_window.css');margin-left: 0;margin-right: auto;caption-side: top;" width="90%" class="TableStyle-code_window" cellspacing="0">
+                        <col style="width: 30.188%;" class="TableStyle-code_window-Column-Column1" />
+                        <tr class="TableStyle-code_window-Body-Body1">
+                            <td style="width: 12%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="12%" class="TableStyle-code_window-BodyE-Column1-Body1" colspan="3">
+                                <p class="code">SEND</p>
+                                <p class="code">IDM = ANDREW,</p>
+                                <p class="code">MSG =&#160;‘ANDREW: call PETER ’,</p>
+                            </td>
+                        </tr>
+                        <tr class="TableStyle-code_window-Body-Body1">
+                            <td style="width: 12%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="12%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                                <p class="code">PART = HQ,</p>
+                                <p class="code">TYPE = MESSAGE,</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

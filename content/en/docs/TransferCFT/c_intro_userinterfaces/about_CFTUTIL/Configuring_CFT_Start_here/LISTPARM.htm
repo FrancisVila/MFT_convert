@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="User interfaces |CFTUTIL interface|Object configuration" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>LISTPARM command</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/SynchTableStyle_noshade.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="kanchor79"></a><a name="Title"></a><a name="LISTPARM___Listing_CFT_parameters"></a>Listing parameters - LISTPARM 
+</h1>
+            <p>This page describes the LISTPARM command. You can use this command 
+ to query Transfer CFT parameters.</p>
+            <p style="font-weight: bold;">Command syntax: <a href="../../Command_summary.htm#LISTPARM">LISTPARM</a></p>
+            <p>Use this command to query Transfer CFT parameters. The TYPE parameter selects the object type.</p>
+            <p>In the absence of a previous CONFIG TYPE = OUTPUT command, 
+ the execution report is written on the standard CFTUTIL program output.</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');" class="TableStyle-SynchTableStyle_interop" cellspacing="0">
+                <col style="width: 25.97%;" class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <col style="width: 52.108%;" class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters</th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p><a href="../Parameter_index/id.htm">ID</a>&#160;</p>
+                        </td>
+                        <td style="width: 52.108%;padding-right: 10px;padding-left: 10px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" width="52.108%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Identifier of the Transfer CFT command selected using the 
+ TYPE parameter.</p>
+                            <p>Used to limit the query to this identifier.</p>
+                        </td>
+                    </tr>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td colspan="1" rowspan="1" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p><a href="../Parameter_index/part.htm">PART</a>&#160;</p>
+                            <p>For TYPE = IDF</p>
+                        </td>
+                        <td colspan="1" rowspan="1" style="width: 52.108%;padding-right: 10px;padding-left: 10px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" width="52.108%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Partner identifier.</p>
+                            <p>Used to limit the search to the IDFs defined in the CFTIDF 
+ objects, relative to this partner.</p>
+                        </td>
+                    </tr>
+                    <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td colspan="1" rowspan="1" class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2">
+                            <p><a href="../Parameter_index/type.htm">TYPE</a>
+                            </p>
+                        </td>
+                        <td colspan="1" rowspan="1" style="width: 52.108%;padding-right: 10px;padding-left: 10px;border-left-color: #808080;border-left-width: 1px;border-left-style: Inset;border-top-color: #808080;border-top-width: 1px;border-top-style: Inset;border-right-color: #808080;border-right-width: 1px;border-right-style: Inset;border-bottom-color: #808080;border-bottom-width: 1px;border-bottom-style: Inset;" width="52.108%" class="TableStyle-SynchTableStyle_interop-BodyA-Column1-Body2">
+                            <p>Defines the type of object to be selected.</p>
+                            <p>TYPE can take the predefined values indicated in the <a href="#Type_table">Type table</a>.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-weight: bold;">Example </p>
+            <table style="mc-table-style: url('../../Resources/TableStyles/code_window.css');width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td rowspan="1" colspan="1" class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="code">LISTPARM &#160;&#160;&#160;&#160;&#160;&#160;TYPE 
+ = ALL</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Displays all the parameters contained in the PARAMETER file.</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td rowspan="1" colspan="1" class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="code">LISTPARM &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;TYPE 
+ = SEND</p>
+                    </td>
+                </tr>
+            </table>
+            <p>Displays the parameters of all the CFTSEND objects configured.</p>
+            <h4><a name="Type_table"></a>Type table</h4>
+            <p>TYPE can take the predefined values indicated in the table below.</p>
+            <table style="width: 90%;border-left-style: Outset;border-left-width: 1px;border-right-style: Outset;border-right-width: 1px;border-top-style: Outset;border-top-width: 1px;border-bottom-style: Outset;border-bottom-width: 1px;border-left-color: #c0c0c0;border-right-color: #c0c0c0;border-top-color: #c0c0c0;border-bottom-color: #c0c0c0;border-spacing: 1px;border-spacing: 1px;mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');" cellspacing="0" width="90%" class="TableStyle-SynchTableStyle_interop">
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" style="width: 217px;" />
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter</th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>ACCNT&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query statistical file parameters.<br />These parameters are submitted when CFTACCNT objects are entered.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>ALL&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query all the parameters indicated in the PARAMETER 
+ file&#160;.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>AUTH&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query file authorization lists.<br />These lists are customized by the CFTAUTH objects.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>CAT&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query catalog parameters.<br />These parameters are submitted when CFTCAT objects are entered.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>COM&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query communication media parameters.<br />These parameters are submitted when CFTCOM objects are entered&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>IDF&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query file "network" identifiers.<br />Identifiers are customized by the CFTIDF objects.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>LOG&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query log file parameters.<br />These parameters are submitted when CFTLOG objects are entered.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>NET&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query network characteristic parameters.<br />These parameters are submitted when CFTNET objects are entered and differ 
+ according to the type of network configured.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>PARM&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query general parameters.<br />These parameters are submitted when CFTPARM objects are entered.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>PROT&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query protocol parameters.<br />These parameters are submitted when CFTPROT objects are entered and differ 
+ according to the protocol configured.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>RECV&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query the parameters of the files to be received.<br />These parameters are submitted when CFTRECV objects are entered.&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                            <p>SEND&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                            <p>Used to query the parameters of the files to be sent.<br />These parameters are submitted when CFTSEND objects are entered.</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                        <td class="TableStyle-SynchTableStyle_interop-BodyB-Column1-Body2">
+                            <p>XLATE&#160;</p>
+                        </td>
+                        <td class="TableStyle-SynchTableStyle_interop-BodyA-Column1-Body2">
+                            <p>Used to query translation tables.<br />Translation tables are customized by the CFTXLATE objects.&#160;</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

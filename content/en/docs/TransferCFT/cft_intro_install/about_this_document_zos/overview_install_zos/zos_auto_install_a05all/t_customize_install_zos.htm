@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Installation (allOS)|Installation and operation z/OS|Installation|Standand installation (A05ALL )" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Customize the z/OS installation</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1 style="page-break-before: always;"><a name="top"></a>Customize the z/OS installation</h1>
+            <p>Each target environment corresponds to a Transfer CFT. This topic describes the specific Transfer CFT customization. Transfer CFT customization is application dependent, as opposed to the target environment, which is system dependent.</p>
+            <h2>JCL CFTENV (include member)</h2>
+            <p>This member is customized during installation phase. It contains a list of JCL SET commands concerning the current instance, CFTENV must be included when PCFTUTIL and PCFTUTL procedures are used.</p>
+            <p>For z/OS 2.1, you can export JCL variables:</p>
+            <p class="description">Export Global</p>
+            <p class="description">Uncomment <span class="code">//*     EXPORT SYMLIST=* in CFTENV</span> member</p>
+            <p class="description">Or</p>
+            <p class="description">Before INCLUDE MEMBER=CFTENV add directives</p>
+            <p class="descriptioncode">//     EXPORT SYSMLIST=*</p>
+            <p class="descriptioncode">//     INCLUDE MEMBER=CFTENV</p>
+            <p>Example:</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+                            <blockquote>
+                                <p>//     EXPORT SYSMLIST=*</p>
+                                <p>//     INCLUDE MEMBER=CFTENV</p>
+                                <p>//CFTSND   EXEC PCFTUTIL,PARM='',QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
+                                <p>//CFTPARM   DD  DUMMY    to optimize</p>
+                                <p>//CFTIN     DD  *,SYMBOLS=(CNVTSYS,SUBSLOG)</p>
+                                <p>SEND PART=PARIS,IDF=BIN,</p>
+                                <p>FNAME=&amp;CFTENV..FTEST,</p>
+                                <p>IDA=’&amp;SYSNAME-&amp;ZOSLVL-&amp;SYSCLONE’</p>
+                                <p>/*</p>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>JCL CFTINC (include member)</h2>
+            <p>You can use the CFTINC member in an INCLUDE statement to reference a list of Transfer CFT file allocation statements.</p>
+            <p>Example:</p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB</p>
+                            <p>//      &#160;INCLUDE MEMBER=CFTENV</p>
+                            <p>//STREX  EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'</p>
+                            <p>//STEPLIB DD DISP=SHR,DSN=&amp;CFTLOAD</p>
+                            <p>//SYSPROC  DD  DISP=SHR,</p>
+                            <p>//         &#160;DSN=MY.SYSPROC</p>
+                            <p>//SYSTSPRT DD  SYSOUT=&amp;OUT</p>
+                            <p>//SYSTSIN  DD  DUMMY</p>
+                            <p>// &#160;&#160;    SET QUAL=&amp;CFTENV</p>
+                            <p>//&#160;      &#160;&#160;<span class="bold_in_para">INCLUDE MEMBER=CFTINC</span></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>PCFTUTIL / PCFTUTL procedures</h2>
+            <p>It is recommended that you use only procedures to access the Transfer CFT utilities.</p>
+            <p>We provide two procedure examples:</p>
+            <ul>
+                <li>PCFTUTIL: All Transfer CFT files are allocated, except for the PKI database and LOG.</li>
+                <li>PCFTUTL: Same procedure that PCFTUTIL, but CATALOG, COM, PART, PARM file are not allocated.</li>
+            </ul>
+            <p>These procedures are customized during installation phase. </p>
+            <p>To run a CFTUTIL executable (default), for example: </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+                            <p>//      &#160;&#160;INCLUDE MEMBER=CFTENV</p>
+                            <p>//ABOUT    EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',</p>
+                            <p>// &#160;        QUAL=&amp;CFTENV</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>To run another CFTUTIL executable, for example CFTPKI: </p>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/code_window.css');" class="TableStyle-code_window" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tbody>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td class="TableStyle-code_window-BodyA-Column1-Body1">
+                            <p>//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+                            <p>//      &#160;INCLUDE MEMBER=CFTENV</p>
+                            <p>//LISPKI   EXEC PCFTUTL,PG=CFTPKI,PARM='',</p>
+                            <p>//         &#160;QUAL=&amp;CFTENV</p>
+                            <p>//MYPKI    DD  DISP=SHR,DSN=&amp;CFTENV..PKIFILE</p>
+                            <p>//CFTIN    DD  *</p>
+                            <p>LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL</p>
+                            <p>/*</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Recommendations to ease application migration</h3>
+            <p>This section describes the migration of applications using Transfer CFT utilities.</p>
+            <p>It is recommended as far as possible not to point directly to the product libraries and work through procedures.</p>
+            <p>To do this, copy the following members into a specific PROCLIB:</p>
+            <ul>
+                <li>CFTENV</li>
+                <li>CFTINC</li>
+                <li>PCFTUTIL</li>
+                <li>PCFTUTL</li>
+            </ul>
+            <p>When changing the Transfer CFT version, you should get the new version of these members. A rollback is done by copying the backups of these members. This also applies to the end-of-transfer procedures.</p>
+            <h2><a name="JOB&#160;H80EXEC"></a>Miscellaneous JCL templates</h2>
+            <p>The target.EXEC library contains an example of Transfer CFT procedures: </p>
+            <ul>
+                <li>EXECSF: End of file send procedure</li>
+                <li>EXECRF: End of file reception procedure</li>
+                <li>SWIACC: Procedure submitted when SWITCHING the Transfer CFT accounting file</li>
+                <li>SWILOG: Procedure submitted when switching the Transfer CFT log file</li>
+                <li>EXECCRON: Procedure submitted by a CFTCRON command</li>
+                <li>COPXLOG: Sample of JCL submitted by Transfer CFT Navigator (with dynamic parameter)</li>
+                <li>COPEXT: Sample of JCL submitted by Transfer CFT Navigator to extract Transfer CFT parameter in a file</li>
+                <li>CFTHEART: HEARTBEAT JCL for SENTINEL dashboards</li>
+                <li>SNTLEXEC: End of file reception procedure including SENTINEL</li>
+                <li>TFCIPH: Transfer CFT Preprocessing script for TrustedFile</li>
+                <li>TFDCIPH: Transfer CFT End of transfer script for TrustedFile</li>
+                <li>TFDELFIL: Transfer CFT Send exec script for TrustedFile</li>
+                <li>CA7POST:          Indicates to CA7 that the creation of a data set has completed</li>
+                <li>COPYFILR and COPYFILS: templates that use the COPYFILE&#160;command</li>
+                <li>CRONSTAR: Sample of the JCL that is submitted at Transfer CFT STARTUP</li>
+                <li>CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown</li>
+                <li>EXECIDF: End of file reception procedure sample with conditional steps </li>
+                <li>EXECIFD2: The value of the IDF is checked among a list of values ​​by a REXX that sets a return code</li>
+                <li>EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see <a href="#Syntax" class="MCXref xref">Syntax for )SEL and )ENDSEL </a></li>
+            </ul>
+            <p>These procedures are customized during the A00CUSTO phase.</p>
+            <h3><a name="Syntax"></a>Syntax for )SEL and )ENDSEL </h3>
+            <h4>)SEL argument1 op argument2</h4>
+            <p>At least one space is mandatory between the arguments and operator.</p>
+            <p>The test is systematically performed on the length of the first argument, enabling generic arguments to be compared if necessary.</p>
+            <p>The maximum number of nested )SELs is 32, where:</p>
+            <ul>
+                <li>argument = constant, variable in the &amp;xxx format</li>
+                <li>op = condition operator</li>
+            </ul>
+            <blockquote>
+                <p>=  EQU or EQ: equal to</p>
+            </blockquote>
+            <blockquote>
+                <p>&gt; or GT: greater than</p>
+                <p>&lt; or LT: less than</p>
+                <p>&gt;= or GTE: greater than or equal to</p>
+                <p>&lt;= or LTE: less than or equal to</p>
+                <p>&lt;&gt; or != or |= or NEQ: different from</p>
+            </blockquote>
+            <p><span class="bold_in_para">Examples</span>
+            </p>
+            <p>)SEL &amp;P1 = SITE1: includes the following cards if parameter 1 is equal to SITE1</p>
+            <p>)SEL AG = &amp;P1: includes the following cards if parameter 1 starts with AG</p>
+            <p>)SEL AG &lt;&gt; &amp;P2: includes the following cards if parameter 2 does not start with AG</p>
+            <h4>)ENDSEL</h4>
+            <p>The )ENDSEL card does not contain any arguments.</p>
+            <p>The appropriate number of )ENDSELs required to terminate all active )ENDSELs are automatically added at the end of the JCL.</p>
+            <h2>Update the unified configuration file CFT$SET</h2>
+            <p>The JCL CFT$SET, located in the target.INSTALL library, updates the unified configuration file and creates a Transfer CFT parameters sample (..SAMPLE(CFTPARM)) from a template (..SAMPLE(ZCFTPARM)).</p>
+            <p>The parameters in this JCL were customized during the (A00CUSTO) process, while customizing the CFTENV file (JCL variables).</p>
+            <p>List of updated variables:</p>
+            <ul>
+                <li>cft.runtime_dir</li>
+                <li>cft.full_hostname</li>
+                <li>cft.state_compat</li>
+                <li>cft.listcat_compat</li>
+                <li>cft.instance_id</li>
+                <li>cft.instance_group</li>
+                <li>samples.pesitany_sap.value</li>
+                <li>samples.pesitssl_sap.value</li>
+                <li>samples.coms_port.value</li>
+            </ul>
+            <p>You can run the JCL  multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.</p>
+            <h2><a name="D40INIT"></a>Format Transfer CFT work files<span>&#160;<a name="kanchor44"></a>D40INIT</span></h2>
+            <p>  The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB,  adapt the following points to the requirements of the operating service:</p>
+            <ul>
+                <li>File names (if the default values in the samples are not usable)<ul><li>By default file names are defined in JCL INCLUDE=CFTENV</li></ul></li>
+            </ul>
+            <ul>
+                <li>The values of the parameters RECNB and FSPACE</li>
+            </ul>
+            <p>The following data is required to use the basic Transfer CFT installation customization parameters. These work files are:</p>
+            <ul>
+                <li>CFTPARM: VSAM KSDS file, Transfer CFT parameters descriptions</li>
+            </ul>
+            <ul>
+                <li>CFTPART: VSAM KSDS file, Transfer CFT partners description</li>
+            </ul>
+            <ul>
+                <li>CFTCAT: VSAM ESDS file, Transfer CFT catalog</li>
+            </ul>
+            <ul>
+                <li>CFTLOG1: Sequential file used as the log file by Transfer CFT</li>
+            </ul>
+            <ul>
+                <li>CFTLOG2: Sequential file used by Transfer CFT as the alternate log file</li>
+            </ul>
+            <ul>
+                <li>CFTACNT1: Sequential file used as the account file by Transfer CFT</li>
+            </ul>
+            <ul>
+                <li>CFTACNT2:&#160; Sequential file used by Transfer CFT as the alternate account file</li>
+            </ul>
+            <ul>
+                <li>CFTCOM: VSAM ESDS file used by Transfer CFT as a buffer for the Transfer CFT commands submitted by CFTUTIL, a BATCH program, a TSO user, the Transfer CFT Copilot, or the Transfer CFT&#160;UI </li>
+            </ul>
+            <h2><a name="JOB E50PARM CFTPARM"></a>CFTPARM configuration update<span>&#160;<a name="kanchor45"></a>E50PARM</span></h2>
+            <p>The JCL E50PARM, located in the target.INSTALL library, updates the Transfer CFT configuration PARAM and PART files (PARM step).</p>
+            <p>To activate the SFTP&#160;parameters:</p>
+            <ol>
+                <li value="1">
+                    <ul>
+                        <li>In the CFTPARM MEMBER,&#160;uncomment the <code>/*   sftp,sftpcli, */</code> line.</li>
+                    </ul>
+                </li>
+                <li value="2">
+                    <ul>
+                        <li>Uncomment the following: <ul><li class="code">//* DD DISP=SHR,</li><li class="code">//* DSN=<u>&amp;QUAL</u>..SAMPLE(CFTSFTP)</li></ul></li>
+                    </ul>
+                </li>
+            </ol>
+            <table class="TableStyle-code_window" style="mc-table-style: url('../../Resources/TableStyles/code_window.css');width: 90%;" cellspacing="0">
+                <col class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>E50PARM</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>//PARM EXEC PCFTUTIL,</p>
+                        <p>// PARM='',</p>
+                        <p>// QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
+                        <p>//CFTIN DD DISP=SHR,</p>
+                        <p>// DSN=&amp;QUAL..SAMPLE(CFTPARM)</p>
+                        <p>//* &#160;&#160;&#160;&#160;DD DISP=SHR,</p>
+                        <p>//* DSN=&amp;QUAL..SAMPLE(CFTSFTP)</p>
+                    </td>
+                </tr>
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p>The underlined parameters  are substituted during the submit phase.</p>
+                    </td>
+                </tr>
+            </table>
+            <ol data-mc-continue="true">
+                <li value="3">Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.</li>
+            </ol>
+        </div>
+    </body>
+</html>

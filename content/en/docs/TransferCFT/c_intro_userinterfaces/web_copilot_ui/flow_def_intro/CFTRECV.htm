@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="User interfaces |CFTUTIL interface|Object configuration" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-medium="non-print">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Default CFTRECV command</title>
+        <link rel="shortcut icon" href="../../Resources/Images/favicon.ico" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+        <link href="../../Resources/Stylesheets/axway.css" rel="stylesheet" type="text/css" />
+        <link href="../../Resources/TableStyles/SynchTableStyle_noshade.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <link href="../../Resources/TableStyles/code_window.css" rel="stylesheet" data-mc-stylesheet-type="table" />
+        <script src="../../../Resources/Scripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="../../../Resources/Scripts/purify.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js" type="text/javascript" defer="defer">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer">
+        </script>
+    </head>
+    <body>
+        <div role="main" id="mc-main-content">
+            <h1><a name="kanchor17"></a><a name="Default_RECV_examples"></a>CFTRECV 
+ - Receive templates</h1>
+            <p>This topic describes the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
+ receive template. You can use the CFTRECV&#160;object to:</p>
+            <ul>
+                <li>Give the default 
+ name and local physical characteristics of the file to receive </li>
+                <li>Define the default 
+ actions to perform locally during and after the transfer (translation, 
+ compression, call to a user EXIT, an end-of-transfer procedure...)</li>
+                <li>Authorize the default 
+ time slot and default user associated with the transfers</li>
+            </ul>
+            <p style="color: #800000;font-weight: bold;text-decoration: underline;">Related 
+ topics</p>
+            <ul>
+                <li>Command syntax 
+ <a href="../../Command_summary.htm#CFTRECV">CFTRECV</a></li>
+            </ul>
+            <table style="width: 90%;mc-table-style: url('../../Resources/TableStyles/SynchTableStyle_noshade.css');" class="TableStyle-SynchTableStyle_interop" cellspacing="0">
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <col class="TableStyle-SynchTableStyle_interop-Column-Column1" />
+                <thead>
+                    <tr class="TableStyle-SynchTableStyle_interop-Head-Header1">
+                        <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter</th>
+                        <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description</th>
+                    </tr>
+                </thead>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/comment.htm">COMMENT</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Local alphanumeric comment associated 
+ with receive transfers.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/cycdate.htm">CYCDATE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Upper final date for activating the first 
+ transfer of a cycle.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/cyctime.htm">CYCTIME</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Upper limit time for activating the first 
+ transfer of a cycle.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/delete.htm">DELETE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Automatic deletion of the catalog entries 
+ in the "X" phase (done) for the corresponding IDF.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/exit.htm">EXIT</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the CFTEXIT command associated 
+ with this transfer.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/faction.htm">FACTION</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Action on the file for a receive transfer.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fblksize.htm">FBLKSIZE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>This parameter (in bytes) controls the 
+ "blocking factor" of the receiver file records: according to 
+ the system, it defines the disk block size and/or the file input/output 
+ buffer size.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/fcharset.htm">FCHARSET</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Defines the local file  encoding.</td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fcheck.htm">FCHECK</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Checks record length attributes.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fcode.htm#fcode_CFTSEND">FCODE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Code of the receiver file data (local 
+ data code).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fdisp.htm#fdisp_CFTRECV">FDISP</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Presence check indicator of the receiver 
+ file used to determine the action of the Transfer CFT monitor.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fkeylen.htm">FKEYLEN</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Key length of an indexed file.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fkeypos.htm#fkeypos">FKEYPOS</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Key position relative to 0 in the record 
+ of an indexed file.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/flowname.htm">FLOWNAME</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">The local flow descriptor.</td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/flrec.htm#flrecl">FLRECL</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>File record length in bytes.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fname.htm#fname%20CFTSEND__CFTRECV__CFTISEND">FNAME</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Name of the physical receiver file (filename 
+ or complete pathname) of the directory.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/force.htm">FORCE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Determines the priority with which the 
+ parameters set in CFTRECV are taken into account relative to the parameters 
+ set in an associated RECV command.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/forg.htm">FORG</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Organization of the file to be sent.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/frecfm.htm">FRECFM</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Record format of the receiver file.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/fspace.htm">FSPACE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Size of the receiver file, in K-bytes 
+ (1 K-byte = 1024 bytes).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/ftype.htm#ftype">FTYPE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Type of the receiver file.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/groupid.htm">GROUPID</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Information completing the USERID of the 
+ CFTRECV command.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/id.htm#id_CFTSEND">ID</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Local model file identifier (IDF).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/maction.htm">MACTION</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Action on the files transferred by COPY 
+ at the time of creation.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/maxdate.htm">MAXDATE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer validity final date.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/maxtime.htm">MAXTIME</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer validity limit time for the final 
+ date (MAXDATE).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/mindate.htm">MINDATE</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Minimum transfer validity date.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/mintime.htm">MINTIME</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer initial validity time, from the 
+ first day (MINDATE).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/ncharset.htm">NCHARSET</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Defines the destination file encoding that is used on a file 
+ to encode or decode network  data.</td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/ncode.htm">NCODE</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">The network data code when receiving transfers. <i>Available only when using SFTP.</i></td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/ncomp.htm">NCOMP</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Compression of on-line data requested 
+ by the receiver.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/netband.htm">NETBAND</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Select the outgoing port range.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/notify.htm">NOTIFY</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Defines the destination of the messages 
+ associated with the send transfer selected from the log file messages, 
+ by the value of the OPERMSG parameter.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/opermsg.htm">OPERMSG</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Defines the categories of transfer information 
+ messages intended for the operator (all the messages also being written 
+ in the log file).</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/pri.htm">PRI</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Receive request selection priority.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/ruser.htm">RUSER</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the file receiver user.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/sourceappl.htm">SOURCEAPPL</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">The identifier of the local file sender application.         </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/state.htm">STATE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Defines the transfer request state.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/suser.htm">SUSER</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the file sender user.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2"><a href="../Parameter_index/targetappl.htm">TARGETAPPL</a>
+                    </td>
+                    <td width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Identifier of the local 
+ file receiver application. 
+</td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/tcycle.htm">TCYCLE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Transfer cycle period unit. </p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/trk.htm">TRK</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Specification of how much detail Transfer 
+ CFT provides Sentinel about transfers. Transfer CFT sends detail about 
+ the transfers in the form of tracked instances.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/userid.htm#userid_CFTRECV">USERID</a>
+                        </p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the transfer owner.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/wfname.htm">WFNAME</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Name of the temporary file used during 
+ the transfer.</p>
+                    </td>
+                </tr>
+                <tr valign="top" class="TableStyle-SynchTableStyle_interop-Body-Body2">
+                    <td colspan="1" rowspan="1" width="19.982%" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">
+                        <p><a href="../Parameter_index/xlate.htm">XLATE</a>&#160;</p>
+                    </td>
+                    <td colspan="1" rowspan="1" width="80.018%" class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">
+                        <p>Identifier of the translation table used 
+ for the receive transfers.</p>
+                    </td>
+                </tr>
+            </table>
+            <h4>Examples</h4>
+            <p>This section displays examples for a default receive template.</p>
+            <p style="font-weight: bold;">Example 1</p>
+            <p style="font-weight: bold;font-family: 'Courier New', monospace;">CFTRECV</p>
+            <div align="left">
+                <table style="float: alignleft;left: 0px;top: 46px;height: 318px;caption-side: top;mc-table-style: url('../../Resources/TableStyles/code_window.css');margin-left: 0;margin-right: auto;width: 90%;" height="318" class="TableStyle-code_window" cellspacing="0">
+                    <col style="width: 40.792%;" class="TableStyle-code_window-Column-Column1" />
+                    <col style="width: 59.208%;" class="TableStyle-code_window-Column-Column1" />
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td style="width: 40.792%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="40.792%" class="TableStyle-code_window-BodyE-Column1-Body1">
+                            <p class="code">MODE =&#160;REPLACE,</p>
+                        </td>
+                        <td style="width: 59.208%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="59.208%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                            <p class="code">&#160;</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td style="width: 40.792%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="40.792%" class="TableStyle-code_window-BodyE-Column1-Body1">
+                            <p class="code">ID = SRCFILES,</p>
+                        </td>
+                        <td style="width: 59.208%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="59.208%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                            <p class="code">/* IDF for source files */</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td colspan="1" rowspan="1" style="width: 40.792%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="40.792%" class="TableStyle-code_window-BodyE-Column1-Body1">
+                            <p class="code">FDISP = BOTH</p>
+                        </td>
+                        <td colspan="1" rowspan="1" style="width: 59.208%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="59.208%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                            <p class="code">/* already exists or not */</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td style="width: 40.792%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="40.792%" class="TableStyle-code_window-BodyE-Column1-Body1">
+                            <p class="code">FACTION&#160;= ERASE,</p>
+                        </td>
+                        <td style="width: 59.208%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="59.208%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                            <p class="code">/* if exists erase */</p>
+                        </td>
+                    </tr>
+                    <tr class="TableStyle-code_window-Body-Body1">
+                        <td style="width: 40.792%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="40.792%" class="TableStyle-code_window-BodyE-Column1-Body1">
+                            <p class="code">XLATE&#160;= ETOA</p>
+                        </td>
+                        <td style="width: 59.208%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="59.208%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                            <p class="code">/* with this table &#160;*/</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p>The set of parameters corresponding to this command is used, during 
+ a data receive transfer, if the explicit value of the transfer IDF is 
+ "SRCFILES".<br />The monitor thereby has default values for receiver file management. The 
+ FNAME parameter is not defined. The monitor can consequently only operate 
+ if a RECV command specifying FNAME has been entered (Transfer CFT is requester), 
+ or if the partner (Transfer CFT is server) has specified the receiver 
+ file name (open mode for receive transfers).</p>
+            <p style="font-weight: bold;">Example 2</p>
+            <p style="font-weight: bold;font-family: 'Courier New', monospace;">CFTRECV</p>
+            <table style="float: alignleft;left: 0px;top: 560px;mc-table-style: url('../../Resources/TableStyles/code_window.css');caption-side: top;width: 90%;" class="TableStyle-code_window" cellspacing="0">
+                <col style="width: 38.168%;" class="TableStyle-code_window-Column-Column1" />
+                <tr class="TableStyle-code_window-Body-Body1">
+                    <td style="width: 38.168%;padding-right: 10px;padding-left: 10px;border-left-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;" width="38.168%" class="TableStyle-code_window-BodyD-Column1-Body1">
+                        <p class="code">MODE =&#160;REPLACE,</p>
+                        <p class="code">ID = IDFDEF, /* default IDF */</p>
+                        <p class="code">FDISP&#160;= BOTH, /* already exists or not */</p>
+                        <p class="code">FACTION&#160;= DELETE, /* if exists - delete */</p>
+                        <p class="code">FNAME&#160;= &amp;IDT /* file as per IDT value */</p>
+                    </td>
+                </tr>
+            </table>
+            <p>This command corresponds to the data receive transfer case where the 
+ identifier (IDF) has no explicit description (CFTRECV object). This is 
+ the default receiver model file. The CFTPARM object must specify: CFTPARM 
+ DEFAULT = IDFDEF, ... Transfer CFT then creates a file whose name contains 
+ the unique transfer identifier.</p>
+            <p><b style="font-weight: bold;">IBM i: </b>This command corresponds 
+ to the general database file receive transfer case.</p>
+        </div>
+    </body>
+</html>
