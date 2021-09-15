@@ -1,11 +1,17 @@
 # About this repo
 
-This is a trial for publishing SecureTransport docs with markdown, and also other MFT products.
+This is a trial for publishing SecureTransport docs with markdown, and also other MFT products. It is branched off the Axway-Open-Docs initiative.
 
-To try out this repo, clone it with the command:
-` git clone https://github.com/FrancisVila/MFT_convert --recursive
+1. To try out this repo locally on your computer, clone it with the command:
 
-It is branched off the Axway-Open-Docs initiative.
+     `git clone https://github.com/FrancisVila/MFT_convert --recursive
+
+1. Then go to the `MFT_convert/` folder and launch, 
+
+     `hugo server
+
+1. You will see an error message(s) about compiling scss, and other dependencies; the message gives info on how to install thos
+
 
 ## Contribute
 
