@@ -24,7 +24,14 @@ With Advanced Routing, the configuration for outbound transfers is part of the R
 
 In the cases with e.g. Site Mailbox and Basic Application, the Subscription holds the configuration for the outbound transfers, so when SecureTransport receives a MDN, it can relate to the proper subscription and validate the MDN. With Advanced Routing, however, when a file is sent to partner via AS2 in a Route, and the MDN is returned by the partner, SecureTransport is unable to locate the Subscription the MDN belongs to and throws an error:
 
-    org.openas2.partner.PartnershipNotFoundException: AS2 site <AS2-sitename> is not used for sending in any subscription.
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>org.openas2.partner.PartnershipNotFoundException: AS2 site &lt;AS2-sitename&gt; is not used for sending in any subscription.         </td>
+      </tr>
+   </tbody>
+</table>
 
 This is a direct consequence of the design of the Advanced Routing. However, this behavior can be fixed using special scenarios in which you can combine AR with other applications to achieve AS2 transfers when asynchronous MDN receipts are required.
 

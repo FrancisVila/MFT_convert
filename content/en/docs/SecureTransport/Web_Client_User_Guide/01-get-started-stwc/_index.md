@@ -2,7 +2,7 @@
     "title": "Get started with ST Web Client",
     "linkTitle": "Get started with ST Web Client",
     "weight": "40"
-}The ST Web Client provides basic in-browser secure file transfer and email client capabilities to end users. Basically put, the file transfer processes in ST Web Client involve some or all of the following actions:
+}The ST Web Client is provides basic in-browser secure file transfer and email client capabilities to end users. Basically put, the file transfer processes in ST Web Client involve some or all of the following actions:
 
 -   upload files to selected folders
 -   share these folders with selected users

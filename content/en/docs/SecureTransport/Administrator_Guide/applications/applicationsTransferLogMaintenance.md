@@ -103,15 +103,16 @@ To export logs from an embedded database or an external Microsoft SQL Server da
 
     4.  Create a file:
 
-    5.  ALTER DATABASE databaseuser
-                 ADD FILE
-                 (NAME = N'ST_FILETRACKING_ARCHIVE_databaseuser',
-                 FILENAME = N'<EXPORT_DIR>\ST_FILETRACKING_ARCHIVE_databaseuser.ndf',
-                 SIZE = 10MB,
-                 MAXSIZE = 100MB,
-                 FILEGROWTH = 1MB)
-                 TO FILEGROUP [ST_FILETRACKING_ARCHIVE]
-            GO
+    5.  <table cellspacing="0">   <col/>   <tbody>      <tr>         <td><pre>ALTER DATABASE databaseuser
+     ADD FILE
+     (NAME = N'ST_FILETRACKING_ARCHIVE_databaseuser',
+     FILENAME = N'&lt;EXPORT_DIR&gt;\ST_FILETRACKING_ARCHIVE_databaseuser.ndf',
+     SIZE = 10MB,
+     MAXSIZE = 100MB,
+     FILEGROWTH = 1MB)
+     TO FILEGROUP [ST_FILETRACKING_ARCHIVE]
+GO
+</pre>         </td>      </tr>   </tbody></table>
 
     6.  Grant all permissions on the `<EXPORT_DIR>` directory created in step "a" to the database user.
 

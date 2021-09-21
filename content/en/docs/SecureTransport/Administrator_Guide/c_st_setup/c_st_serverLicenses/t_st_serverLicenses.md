@@ -2,7 +2,7 @@
     "title": "Update SecureTransport licenses",
     "linkTitle": "Update SecureTransport licenses",
     "weight": "230"
-}To obtain the text files that contains the server licenses, contact Axway Global Support. For contact information, see [Get more help](get_more_help0.htm).
+}To obtain the text files that contains the server licenses, contact Axway Global Support. For contact information, see [*Get more help* on page 1](get_more_help.htm).
 
 1.  Select **Setup > Server License**.  
     The *Server License* page is displayed.

@@ -18,7 +18,25 @@ On Unix platforms, use the following procedure to create a new instance of ST We
 4.  In the new STWC instance folder, create a file with .sh extension (for example, *change\_ric.sh*) and paste the following script in it:  
     
 
-        #!/bin/bash  # new deploy folder nameDEPLOY_FOLDER=stwc1DEPLOY_FOLDER_ORIG=ric  DEPLOY_PATH_ORIG=html/skin/$DEPLOY_FOLDER_ORIGDEPLOY_PATH=html/skin/$DEPLOY_FOLDER  find ./C -maxdepth 2 -name "*.*" | xargs sed -i -r "s|$DEPLOY_PATH_ORIG|$DEPLOY_PATH|g"
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>#!/bin/bash </p>
+            <p> </p>
+            <p># new deploy folder name</p>
+            <p>DEPLOY_FOLDER=stwc1</p>
+            <p>DEPLOY_FOLDER_ORIG=ric </p>
+            <p> </p>
+            <p>DEPLOY_PATH_ORIG=html/skin/$DEPLOY_FOLDER_ORIG</p>
+            <p>DEPLOY_PATH=html/skin/$DEPLOY_FOLDER </p>
+            <p> </p>
+            <p>find ./C -maxdepth 2 -name "*.*" | xargs sed -i -r "s|$DEPLOY_PATH_ORIG|$DEPLOY_PATH|g"</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 5.  <table cellpadding="0" cellspacing="0">
    <col/>
@@ -39,7 +57,16 @@ On Unix platforms, use the following procedure to create a new instance of ST We
 8.  Run the script you created in the previous steps using the following command:  
     
 
-         ./change_ric.sh
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p> ./change_ric.sh</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 9.  Exit the console.
 

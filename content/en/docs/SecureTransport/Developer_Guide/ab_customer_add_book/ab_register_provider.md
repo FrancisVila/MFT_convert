@@ -6,8 +6,16 @@
 
 Example:
 
-    com.axway.st.plugins.abcustomsource.sdk.file.provider.
-    AddressBookFileProvider
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">com.axway.st.plugins.abcustomsource.sdk.file.provider.
+AddressBookFileProvider</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Once the provider is properly packaged, it must be placed inside the `<FILEDRIVEHOME>/lib/jars` folder. On Transaction Manager startup, the provider class will be dynamically loaded and the new Address Book will be registered into the SecureTransport system.
 

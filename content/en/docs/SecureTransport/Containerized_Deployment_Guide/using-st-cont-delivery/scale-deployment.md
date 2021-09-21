@@ -68,7 +68,14 @@ Use the Streaming deployment diagram for that same
 
 Kubernetes can scale up (or down) one or more instances of a node with a single command:
 
-    kubectl scale statefulset <your-statefulset> -n <your-namespace> --replicas=<total-desired-number-of-nodes>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>kubectl scale statefulset &lt;your-statefulset&gt; -n &lt;your-namespace&gt; --replicas=&lt;total-desired-number-of-nodes&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 In order to scale up a SecureTransport Server node fill in your configured EC StatefulSet. Similarly, with SecureTransportEdge node, use the Edge StatefulSet.
 
@@ -85,7 +92,14 @@ Executing the command will tell Kubernetes to scale-up nodes one by one. The new
 
 SecureTransport Servers and Edges can be scaled based on average CPU load using the Kubernetes Horizontal pod autoscaler. In order to enable the autoscaler the following command should be executed.
 
-    kubectl autoscale statefulset <statefulset> -n <st-namespace> --cpu-percent=70 --min=2 --max=10
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>kubectl autoscale statefulset &lt;statefulset&gt; -n &lt;st-namespace&gt; --cpu-percent=70 --min=2 --max=10         </td>
+      </tr>
+   </tbody>
+</table>
 
 Where `--cpu-percent` is a value of average CPU load on all of the nodes, `--min` is the minimum required number of pods, `--max` is the maximum number of pods to deployed.
 
@@ -93,7 +107,14 @@ Depending of the hardware used you can adjust the above values as per your needs
 
 In order to stop the autoscaling the following command should be executed.
 
-    kubectl delete hpa <statefulset> -n <st-namespace>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>kubectl delete hpa &lt;statefulset&gt; -n &lt;st-namespace&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 It is recommended to deploy the HPA (Horizontal Pod Autoscaler) after the desired minimum nodes are deployed, as during startup SecureTransport services use large amount of processing power and iniitially the StatefulSet can be scaled incorrectly.
 

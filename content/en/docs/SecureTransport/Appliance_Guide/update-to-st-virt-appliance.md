@@ -31,7 +31,14 @@ SecureTransport 5.5 Appliance is based on SLES 12 SP5, and SecureTransport 5.4 i
 3.  Enter the following command to install the update:  
     
 
-         ./platform-upgrade.sh
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td> <code>./platform-upgrade.sh</code>         </td>
+      </tr>
+   </tbody>
+</table>
 
 When the upgrade completes, the installer will reboot the OS automatically unless you press **q** to exit the installer before rebooting the OS.
 
@@ -41,7 +48,15 @@ The platform upgrade log, called *platformupgrade.log*, is in the platform upgra
 
 There is an option to skip the SecureTransport update, and upgrade only the operating system of the appliance. To do this, enter the following command:
 
--   ./platform-upgrade.sh --dontupgradeproduct
+-   <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>./platform-upgrade.sh --dontupgradeproduct</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 You will receive an out of compliance message. After the OS upgrade completes, the SecureTransport Edge upgrade will not start automatically. It must be performed manually. Note that when only the OS is upgraded, the `systemd` units in `/usr/lib/systemd/system` remains and should be removed in order to be able to upgrade SecureTransport to 5.5.
 

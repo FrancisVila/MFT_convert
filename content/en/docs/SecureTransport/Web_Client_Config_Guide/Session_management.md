@@ -6,15 +6,23 @@
 
 To enable the download polling:
 
-    {
-       ...
-       "sessionManagement": {
-          downloadServerPolling": {
-           "enabled": true
-          }
-       }
-       ...
-    }                       
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+   ...
+   "sessionManagement": {
+      downloadServerPolling": {
+	   "enabled": true
+      }
+   }
+   ...
+}						</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

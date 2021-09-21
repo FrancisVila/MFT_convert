@@ -69,8 +69,8 @@ The Axway Global Support team provides worldwide 24 x 7 support for customers wi
 
 Еmail us at <support@axway.com> or visit [support.axway.com](https://support.axway.com).
 
-To learn more about Axway's technologies, check out the offer of free on-line courses on [Axway University.](https://university.axway.com/learn)
+To learn more about Axway's technologies, check out the offer of free on-line courses on [Axway University](https://university.axway.com/learn).
 
 Axway also organizes instructor-led classes. For more information, visit [Training and certification](https://www.axway.com/en/services/training-certification).
 
-Document version: Friday, September 10, 2021
+Document version: Tuesday, September 21, 2021

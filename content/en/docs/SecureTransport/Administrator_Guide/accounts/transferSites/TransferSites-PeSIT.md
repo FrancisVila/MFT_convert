@@ -4,8 +4,6 @@
     "weight": "260"
 }The *Add Transfer Site* page for PeSIT sites presents several sets of options.
 
-![Add Transfer Site - PeSIT transfer protocol](TransferSite1_PeSIT_default.png)
-
 Unlike transfer sites for other transfer protocols, a PeSIT transfer site is also used for transfers initiated by the external PeSIT partner (considered client-initiated by SecureTransport). Only the **Site Name** is required in that case to define the partnership, so a PeSIT transfer site needs only a **Site Name** if it is not used for transfers initiated by the SecureTransport server on which it is defined.
 
 For a PeSIT transfer site, the **Site Name** designates the destination for an incoming routed transfer. For more information, see [Set a PeSIT default transfer site for routing](#select).
@@ -117,8 +115,6 @@ The following table describes the general options for a PeSIT transfer site.
 ## <span id="Advanced"></span>Advanced Settings for PeSIT Transfer sites
 
 Scroll down to the bottom of the screen and click the **Show Advanced Settings** to expand the screen with additional options.
-
-![](TransferSite1_PeSIT_default.png)
 
 **Note:** Pre-Connection Settings fields have length validation. It is **not** applied by the User Interface (front end validation) when the value is **Expression Language**. In such situations it is the responsibility of the administrator to provide a valid expression and value.
 
@@ -374,8 +370,6 @@ or
 
 Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current PeSIT Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
 
-![](TransferSite1_PeSIT_default.png)
-
  
 
 <table cellpadding="0" cellspacing="0">
@@ -410,8 +404,6 @@ When SecureTransport routes a transferred file to a final PeSIT destination, Sec
 4.  Select the check box next to the name of the PeSIT transfer site you want to make the default.
 5.  Click **Set PeSIT Default**.  
     The default is indicated in the transfer site list.
-
-![Transfer Sites - PeSIT](TransferSite1_PeSIT_default.png)
 
 **Related topics:**
 

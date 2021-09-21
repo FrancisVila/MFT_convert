@@ -4,26 +4,34 @@
     "weight": "200"
 }Use the `"passwordManagement"` section to override few restrictions for password management options on the sign-in screen.
 
-    {
-        "features": {
-            ...
-            "passwordManagement": {
-                "enabled": false
-            }
-        },
-        ...
-        "passwordManagement": {
-            "forgotPasswordButton": {
-                "visible": true,
-                "customUrl": ""
-            },
-            "changePassword": {
-                "visible": true,
-                "customUrl": ""
-            }
-        },
-        ...
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{
+    "features": {
+        ...
+        "passwordManagement": {
+            "enabled": false
+        }
+    },
+    ...
+    "passwordManagement": {
+        "forgotPasswordButton": {
+            "visible": true,
+            "customUrl": ""
+        },
+        "changePassword": {
+            "visible": true,
+            "customUrl": ""
+        }
+    },
+    ...
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The Password management customization options include:
 

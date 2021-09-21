@@ -22,7 +22,7 @@ The internal CA can be used to generate server or client certificates. It provid
 -   Generating an account certificate. For detail, see [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates).
 -   Signing imported SSH Keys. For detail, see [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates).
 
-The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact Axway Global Support for more information. For contact information, see [Get more help](get_more_help0.htm).
+The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact Axway Global Support for more information. For contact information, see [Get more help](get_more_help.htm).
 
 In addition to issuing certificates signed by internal CA, SecureTransport supports a few management operations for the internal CA. These operations include:
 

@@ -39,44 +39,86 @@ This procedure uses the following placeholders:
 1.  Make the SecureTransport installation directory the current working directory using the following command.  
     
 
-        cd <FILEDRIVEHOME>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>cd &lt;FILEDRIVEHOME&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 2.  Generate a key using the following command.  
     
 
-        jre/bin/keytool -genkey -keyalg RSA -keysize <key_size> \
-            -keystore <keystore_path> -storetype nCipher.sworld \
-            -providername nCipherKM \
-            -providerclass com.ncipher.provider.km.nCipherKM \
-            -alias <alias> -storepass <keystore_passphrase>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>jre/bin/keytool -genkey -keyalg RSA -keysize &lt;key_size&gt; \<br>    -keystore <code>&lt;keystore_path&gt;</code> -storetype nCipher.sworld \<br>    -providername nCipherKM \<br>    -providerclass com.ncipher.provider.km.nCipherKM \<br/>    -alias &lt;alias&gt; -storepass &lt;keystore_passphrase&gt;</br></br></br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 3.  Generate a certificate signing request (CSR) using the following command.  
     
 
-        jre/bin/keytool -certreq -keystore <keystore_path> \
-            -storetype nCipher.sworld -providername nCipherKM \
-            -providerclass com.ncipher.provider.km.nCipherKM \
-            -alias <alias> -file <CSR_file> -storepass <keystore_passphrase>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>jre/bin/keytool -certreq -keystore &lt;keystore_path&gt; \<br>    -storetype nCipher.sworld -providername nCipherKM \<br/>    -providerclass com.ncipher.provider.km.nCipherKM \<br/>    -alias &lt;alias&gt; -file &lt;CSR_file&gt; -storepass &lt;keystore_passphrase&gt;</br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 4.  Sign certificate and create the PEM-format certificate file using the following command.  
     
 
-        bin/openssl x509 -req -in <CSR_file> -days <validity> \
-            -CA lib/certs/db/ca-crt.pem -CAkey lib/certs/db/ca-key.pem \
-            -CAserial lib/certs/db/serial -out <cert_file>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>bin/openssl x509 -req -in &lt;CSR_file&gt; -days &lt;validity&gt; \<br>    -CA lib/certs/db/ca-crt.pem -CAkey lib/certs/db/ca-key.pem \<br/>    -CAserial lib/certs/db/serial -out &lt;cert_file&gt;</br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 5.  Append the public part of the internal CA to the certificate file using the following command. This is required so that SecureTransport can build the certificate chain.  
     
 
-        cat lib/certs/db/ca-crt.pem >> <cert_file>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>cat lib/certs/db/ca-crt.pem &gt;&gt; &lt;cert_file&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 6.  Import the signed certificate into the HSM device using the following command.  
     
 
-        jre/bin/keytool -importcert -keystore <keystore_path> \
-            -storetype nCipher.sworld -providername nCipherKM \
-            -providerclass com.ncipher.provider.km.nCipherKM 
-            -storepass <keystore_passphrase> -alias <alias> -file <cert_file>
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>jre/bin/keytool -importcert -keystore <code>&lt;keystore_path&gt;</code> \<br>    -storetype nCipher.sworld -providername nCipherKM \<br>    -providerclass com.ncipher.provider.km.nCipherKM <br/>    -storepass &lt;keystore_passphrase&gt; -alias &lt;alias&gt; -file &lt;cert_file&gt;</br></br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## <span id="Use"></span>Use an HSM certificate for FTPS or HTTPS
 

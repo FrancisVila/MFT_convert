@@ -24,11 +24,25 @@ This way, the SITE META input could be used for defining routing rules for serve
 
 The command accepts arguments in the format of key-value pairs. Everything beyond the META will be considered as a command argument. The format follows the pattern:
 
-    SITE META <key>=<value>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>SITE META &lt;key&gt;=&lt;value&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 The commands supports multiple arguments as well:
 
-    SITE META <key1>=<value1>;<key2>=<value2>;<key3>=<value3>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>SITE META &lt;key1&gt;=&lt;value1&gt;;&lt;key2&gt;=&lt;value2&gt;;&lt;key3&gt;=&lt;value3&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 Supplying same key names with different values will result in overwriting the previous values with the latest one.
 
@@ -48,7 +62,14 @@ When a file is uploaded using a common session, the commands arguments are store
 
 The command supports entering keys with empty values:
 
-    SITE META <key1>=;<key2>=;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>SITE META &lt;key1&gt;=;&lt;key2&gt;=;         </td>
+      </tr>
+   </tbody>
+</table>
 
 This will result in deleting existing flow attributes with the same key name (if any) for already existing files. For new files these attributes are discarded and will not be persisted.
 
@@ -70,11 +91,25 @@ FTP meta information can be evaluated and used to define basic transfer flows fo
 
 Within the Routing steps, metadata that comes from the SITE META command, along with any other file flow attributes can be evaluated using:
 
-    ${flow.attributes['userVars.<key>']}
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>${flow.attributes['userVars.&lt;key&gt;']}         </td>
+      </tr>
+   </tbody>
+</table>
 
 When using transfer sites and subscriptions, the file flow attributes (both SITE META and subscription), the expression is:
 
-    ${stenv['DXAGENT_FLOW_USERVARS.<KEY-in-upper-case>']}
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>${stenv['DXAGENT_FLOW_USERVARS.&lt;KEY-in-upper-case&gt;']}         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## <span id="Subscrip"></span>Subscription flow attributes and FTP related attributes
 

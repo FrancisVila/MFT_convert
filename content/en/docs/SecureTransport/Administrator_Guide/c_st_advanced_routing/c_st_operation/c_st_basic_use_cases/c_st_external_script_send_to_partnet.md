@@ -62,71 +62,43 @@ Compress incoming files by leveraging an external script and publish the result 
 
 ## <span id="Script"></span>Script example
 
-    #!/bin/sh 
-
-    SEVENZIP="<path to '7z' executable>"
-
-
-
-    if [ "X${ST_ACCOUNT_HOME}" = "X" ]; then
-
-            echo "ST_ACCOUNT_HOME environment variable not set, aborting."
-
-            exit 1
-
-    fi
-
-
-    # Dump the environment in the account home folder
-
-    env > ${ST_ACCOUNT_HOME}/dumpenv.${$}
-
-
-    if [ ! -x $SEVENZIP ]; then
-
-            echo "\"$SEVENZIP\" does not exist or is not an executable, aborting."
-
-            exit 2
-
-    fi
-
-
-    # Go to the sandbox folder
-
-    cd $SANDBOX_FOLDER
-
-
-    # Keep track of the files that will be archived to delete them later
-
-    FILELIST=`ls`
-
-
-    $SEVENZIP a $1 *
-
-    exitcode=$?
-
-
-    if [ $exitcode -ne 0  ]; then
-
-            echo "Failed to compress files \"$FILELIST\", aborting."
-
-            exit $exitcode
-
-    fi
-
-
-    # Delete the archived files
-
-    for file in $FILELIST ;
-
-    do
-
-    rm -f $file;
-
-    done
-
-                        
-                        
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>#!/bin/sh <br><br/>SEVENZIP="&lt;path to '7z' executable&gt;"
+
+<br/><br/>if [ "X${ST_ACCOUNT_HOME}" = "X" ]; then
+<br/>        echo "ST_ACCOUNT_HOME environment variable not set, aborting."
+<br/>        exit 1
+<br/>fi
+<br/><br/># Dump the environment in the account home folder
+<br/>env &gt; ${ST_ACCOUNT_HOME}/dumpenv.${$}
+<br/><br/>if [ ! -x $SEVENZIP ]; then
+<br/>        echo "\"$SEVENZIP\" does not exist or is not an executable, aborting."
+<br/>        exit 2
+<br/>fi
+<br/><br/># Go to the sandbox folder
+<br/>cd $SANDBOX_FOLDER
+<br/><br/># Keep track of the files that will be archived to delete them later
+<br/>FILELIST=`ls`
+<br/><br/>$SEVENZIP a $1 *
+<br/>exitcode=$?
+<br/><br/>if [ $exitcode -ne 0  ]; then
+<br/>        echo "Failed to compress files \"$FILELIST\", aborting."
+<br/>        exit $exitcode
+<br/>fi
+<br/><br/># Delete the archived files
+<br/>for file in $FILELIST ;
+<br/>do
+<br/>rm -f $file;
+<br/>done
+
+					
+					</br>         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## <span id="Flow"></span>Flow of events
 

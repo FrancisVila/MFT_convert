@@ -115,15 +115,44 @@
 
 Liveness and readiness checks are implemented for monitoring the status and health of the SecureTransport services in Kubernetes. The scripts are executed by Kubernetes on configurable schedule setup in `st-server-kubernetes.yml` and `st-edge-kubernetes.yml`.
 
-*Readiness probe example*
-
-    readinessProbe:exec:command:- /home/stuser/Axway/SecureTransport/bin/readiness_check.shinitialDelaySeconds: 10periodSeconds: 20
+<table cellspacing="0">
+<caption><i>Readiness probe example</i>
+</caption>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>readinessProbe:</p>
+            <p>exec:</p>
+            <p>command:</p>
+            <p>- /home/stuser/Axway/SecureTransport/bin/readiness_check.sh</p>
+            <p>initialDelaySeconds: 10</p>
+            <p>periodSeconds: 20</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  
 
-*Liveness probe example*
-
-    livenessProbe:exec:command:- /home/stuser/Axway/SecureTransport/bin/liveness_check.shinitialDelaySeconds: 300failureThreshold: 1periodSeconds: 15
+<table cellspacing="0">
+<caption><i>Liveness probe example</i>
+</caption>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>livenessProbe:</p>
+            <p>exec:</p>
+            <p>command:</p>
+            <p>- /home/stuser/Axway/SecureTransport/bin/liveness_check.sh</p>
+            <p>initialDelaySeconds: 300</p>
+            <p>failureThreshold: 1</p>
+            <p>periodSeconds: 15</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

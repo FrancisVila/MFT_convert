@@ -7,19 +7,15 @@
 1.  In the `stwebclient.config.json` file, specify the preferred format in the `i18n` section:  
     
 
-        {
-
-          ...
-
-          "i18n": {
-
-            "dateFormat": "MMMM Do YYYY, h:mm:ss a"
-
-          }
-
-          ...
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">  "i18n": {</pre><pre xml:space="preserve">    "dateFormat": "MMMM Do YYYY, h:mm:ss a"</pre><pre xml:space="preserve">  }</pre><pre xml:space="preserve">  ...</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 2.  Refresh the ST Web Client.
 

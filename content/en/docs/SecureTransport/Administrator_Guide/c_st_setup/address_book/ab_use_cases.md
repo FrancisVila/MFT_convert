@@ -88,12 +88,14 @@ The end-user REST API is able to identify Address Book entries by their IDs. Whe
 
 **Create message draft:**
 
-     POST/api/v1.4/mailbox/messagesPOST DATA:to=petya@sofia-pso.tumbleweed.com&cc=<group_entry_id>&bcc=<user_entry_id>&subject=from+api&message=sample+message&security=ANONYMOUS_LINK&question=+What+is+the+name+of+your+best+friend+from+childhood%3F+&answer=&expiration=86400RESPONSE:http://10.232.3.211:8080/api/v1.4/mailbox/messages200 OK
-    Headers
-    Response body{
-     "info": "Draft was successfully created",
-     "messageId": "6a5467d4a084445687b1cdc0cd11f3a3"
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td> <pre>            <p><strong>POST</strong><code>/api/v1.4/mailbox/messages</code></p>            <p>POST DATA:</p>            <p><code>to=petya@sofia-pso.tumbleweed.com&amp;cc=&lt;group_entry_id&gt;&amp;bcc=&lt;user_entry_id&gt;&amp;subject=from+api&amp;message=sample+message&amp;security=ANONYMOUS_LINK&amp;question=+What+is+the+name+of+your+best+friend+from+childhood%3F+&amp;answer=&amp;expiration=86400</code></p>            <p>RESPONSE:</p>            <p>http://10.232.3.211:8080/api/v1.4/mailbox/messages</p>            <p>200 OK<br/>Headers<br/>Response body</p>            <p>{<br/> "info": "Draft was successfully created",<br/> "messageId": "6a5467d4a084445687b1cdc0cd11f3a3"<br/>}</p></pre>         </td>
+      </tr>
+   </tbody>
+</table>
 
 Consider the following use case:
 
@@ -134,15 +136,15 @@ When sharing a folder through REST API collaborators can be user entry IDs, grou
 
 Example request for sharing folder (`sharedFolder`) with an Address Book user entry:
 
-    PUT/api/v1.4/shares/sharedFolderDATA:‘{
-     "users": [
-      "<user_entry_id>"
-     ],
-     "shareRights": 7,
-    "notifications": 1,
-    "ownerNotifications": 1,
-    "showCollaboratorsToAll": true
-    }’
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>            <p><strong>PUT</strong><code>/api/v1.4/shares/sharedFolder</code></p>            <p>DATA:</p>            <p>‘{<br/> "users": [<br/>  "&lt;user_entry_id&gt;"<br/> ],<br/> "shareRights": 7,<br/>"notifications": 1,<br/>"ownerNotifications": 1,<br/>"showCollaboratorsToAll": true<br/>}’</p></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

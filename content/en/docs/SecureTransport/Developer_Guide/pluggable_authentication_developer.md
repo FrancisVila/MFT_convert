@@ -70,17 +70,26 @@ To support any of the above authentication methods, a plug-in must implement at 
 
 Create a class that implements the *BasicAuthenticator* interface. It must have a public default constructor and implement the authenticate method, declared in the interface.
 
-    public class BasicAuthenticatorImpl implements BasicAuthenticator {
-
-    public BasicAuthenticatorImpl() {
-            }
-
-    @Override
-    public AuthenticationResult authenticate(
-        BasicAuthenticationRequest authRequest) {
-
-            }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">public class BasicAuthenticatorImpl implements BasicAuthenticator {
+
+public BasicAuthenticatorImpl() {
+        }
+
+@Override
+public AuthenticationResult authenticate(
+	BasicAuthenticationRequest authRequest) {
+
+        }
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 An object of this class will be instantiated and its authenticate method will be called by SecureTransport, every time a user tries to log in with a username and a password. The *authenticate* method’s body is the authentication logic.
 
@@ -108,16 +117,25 @@ An object of this class will be instantiated and its authenticate method will be
 
 Create a class that implements the *CertificateAuthenticator* interface. It must have a public default constructor and implement the authenticate method, declared in the interface.
 
-    public class CertificateAuthenticatorImpl implements CertificateAuthenticator {
-
-    public CertificateAuthenticatorImpl() {
-            }
-
-    @Override
-    public AuthenticationResult authenticate(
-        CertificateAuthenticationRequest authRequest) {
-            }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">public class CertificateAuthenticatorImpl implements CertificateAuthenticator {
+
+public CertificateAuthenticatorImpl() {
+        }
+
+@Override
+public AuthenticationResult authenticate(
+	CertificateAuthenticationRequest authRequest) {
+        }
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 An object of this class will be instantiated and its authenticate method will be called by SecureTransport every time a user tries to log in using a certificate. The authenticate method executes the custom authentication logic.
 
@@ -154,16 +172,17 @@ Optionally you can provide a class that will be notified by SecureTransport that
 
 Create a class that implements the *UserReleaseListener* interface which must contain a public default constructor and a release method.
 
-    public class UserReleaseListenerImpl implements UserRealeaseListener {
-
-    public UserReleaseListenerImpl() {
-            }
-
-    @Override
-    public void release(UserData userData) {
-
-            }
-    }
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Same authenticator classes will be used for Basic Authentication, Certificate authentication and Dual-authentication.         </td>
+      </tr>
+</table>
 
 An object of this class will be instantiated an its release method will be called each time a user, that has been authenticated by the plug-in
 
@@ -181,16 +200,24 @@ To implement a custom plug-in configuration, you must create a class that implem
 -   Each Authentication call – the values are read from the Server configuration and the objects fields are set using the class setters. The object is then injected in the authenticator class
 -   User release call – identical to the authentication call
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td><pre xml:space="preserve">public class UserReleaseListenerImpl implements UserRealeaseListener {
+
+public UserReleaseListenerImpl() {
+        }
+
+@Override
+public void release(UserData userData) {
+
+        }
+}
+</pre>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Same authenticator classes will be used for Basic Authentication, Certificate authentication and Dual-authentication.         </td>
       </tr>
+   </tbody>
 </table>
 
 An additional @*Description* annotation can be provided to every field’s getter or setter, describing what the configuration is used for. The description will appear on the SecureTransport Server configuration admin page.
@@ -199,7 +226,17 @@ You can find a sample implementation of a Custom Authentication plug-in configur
 
 An object of this class could be injected in each Authenticator class and User Listener class using the following statement:
 
-    @Injectprivate PluginConfigurationBean mConfiguration;
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Currently the only supported field types are: String, Integer, Boolean.         </td>
+      </tr>
+</table>
 
 The plugin-authentication-services library also provides an annotation @*Encrypted*. It indicates that a configuration value must be stored encrypted in SecureTransport Server configuration. Put the annotation to one of the field’s accessors.
 
@@ -207,16 +244,33 @@ The plugin-authentication-services library also provides an annotation @*Encrypt
 
 To use the logging service, provided by SecureTransport Plug-in Authentication Services library, inject it in your Authenticator or `UserListener` class using the following statement:
 
-    @Injectprivate LoggingService mLogger;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p>private PluginConfigurationBean mConfiguration;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The *LoggingService* interface declares functionality for logging messages and exceptions with a different log level – ERROR, WARN, INFO, DEBUG, etc.
 
 Examples:
 
-    mLogger.info(String.format("User '%s' authenticated successfully.", username));
-    mLogger.warn(String.format("Authentication of user '%s' failed - wrong password.", username));
-    mLogger.warn("Problem while parsing client certificate!", e); 
-    mLogger.debug("Start custom authentication process...");
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p>private LoggingService mLogger;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The logging level can be controlled by logger in `tm-log4j.xml` and `admin-log4j.xml`.
 
@@ -224,7 +278,19 @@ The logging level can be controlled by logger in `tm-log4j.xml` and `admin-log4j
 
 SecureTransport provides a service for certificate parsing and validation against its keystore. The service is called `CertificateService `and can be injected in the plug-in’s Authenticators and `UserReleaseListener` using the following code:
 
-    @Injectprivate CertificateService mCertificateService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>mLogger.info(String.format("User '%s' authenticated successfully.", username));
+mLogger.warn(String.format("Authentication of user '%s' failed - wrong password.", username));
+mLogger.warn("Problem while parsing client certificate!", e); 
+mLogger.debug("Start custom authentication process...");
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 It declares the following methods:
 
@@ -247,8 +313,17 @@ SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `
 
 The service interface is called `com.axway.st.plugins.authentication.services.SSLContextService` and can be injected in the plug-in’s Authenticators and `UserReleaseListener` class, using the following code:
 
-    @Inject
-    private SSLContextService sslContextService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p>private CertificateService mCertificateService;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The service methods are:
 
@@ -265,9 +340,17 @@ You can use expression evaluator service to evaluate and validate the expression
 
 To use the expression evaluator service, declare а variable with `@Inject` annotation to the interface of the expression evaluator service provided in the API:
 
-    @Inject
-
-    private ExpressionEvaluatorService mExpressionEvaluatorService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>@Inject
+private SSLContextService sslContextService;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 This service is identical to the Expression Evaluator service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
@@ -279,16 +362,14 @@ You can find sample BasicAuthentication, CertificateAuthentication, and UserRele
 -   `CertificateAuthenticatorImpl.java` contains a sample implementation of implements CertificateAuthenticator that extracts the username from a X509 certificate’s subject using the provided by SecureTransport`CertificateService`. It recognizes user names starting with an ‘s’ or an ‘f’. It denies access to the ‘f’ users and returns different `UserData` objects based on the protocol.
 -   `UserReleaseListenerImpl.java` contains a sample implementation of UserRealeaseListener. Objects of this class execute some release logic and log a success message in the SecureTransport Server log. They also verify that the *userData* has been created by the plug-in.
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td><pre xml:space="preserve">@Inject</pre><pre xml:space="preserve">private ExpressionEvaluatorService mExpressionEvaluatorService;</pre>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Currently the only supported field types are: String, Integer, Boolean.         </td>
       </tr>
+   </tbody>
 </table>
 
 ## Create a plug-in metadata file
@@ -382,21 +463,17 @@ Each Authentication SPI is versioned. Тhe initial SPI release is version 1.0. E
 
 To declare what SPI version is used in the Authentication implementation, place the `Plugin-Info.yaml` file inside the `Meta-Inf` directory. This file contains the plug-in information, similar to the `MANIFEST.MF` file in Authentication SPI version 1.0. The description schema used in the yaml file is:
 
-    '<SPI version>':
-
-      <property>: <value>
-
-      <property>: <value>
-
-      ...................
-
-    '<SPI version>':
-
-      <property>: <value>
-
-      <property>: <value>
-
-      ...................
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When you are deploying your Plug-in Authentication implementation, you should only include third party dependencies, used by your implementation. You must not add APIs provided run-time by SecureTransport. This includes the <span>SecureTransport</span> Pluggable Authentication SPI, Plug-in Services API and JSR-330 (javax.inject) API.         </td>
+      </tr>
+</table>
 
 The convention for the indentation used is two spaces for each block.
 
@@ -414,22 +491,26 @@ All previous Authentication SPI versions must be compatible with the latest Secu
 
 In order to enable logging when using the Logger service, edit the `com.axway.st.plugins` loggers in the `tm-log4j.xml` or `admin-log4j.xml` file. For example, with pluggable authentication:
 
-    <logger name="com.axway.st.plugins.authentication" additivity="false">      
-
-        <level value="info" />
-
-        <appender-ref ref="ServerLog" />
-
-    </logger>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>'&lt;SPI version&gt;':</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  ...................</pre><pre>'&lt;SPI version&gt;':</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  ...................</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 For fine-tuning debug logging, add the plug-in name in conjunction with the `com.axway.st.plugins` logger.
 
 In this case, use `com.axway.st.plugins.authentication.<plugin_name>` as shown on the example:
 
-    <logger name="com.axway.st.plugins.authentication.authentication-plugin" additivity="false">      
-
-       <level value="debug" />
-
-       <appender-ref ref="ServerLog" />
-
-    </logger>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">&lt;logger name="com.axway.st.plugins.authentication" additivity="false"&gt;      </pre><pre xml:space="preserve">	&lt;level value="info" /&gt;</pre><pre xml:space="preserve">	&lt;appender-ref ref="ServerLog" /&gt;</pre><pre>&lt;/logger&gt;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

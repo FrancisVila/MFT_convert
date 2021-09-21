@@ -26,7 +26,7 @@ change, you must change the corresponding settings in the Administration Tool.
     -   **Use Custom JDBC URL** – Unchecked by default. When checked, you can specify a custom connection string for SecureTransport to use to connect to a Microsoft SQL Server database. In the URL, specify the host, port, database name, user name and password or use the available placeholders. You can include additional connection properties to define specific behavior, for example, a connection via SSL. If the custom JDBC URL connects to your database using SSL, make sure the **Use secure connection** checkbox is selected.  
         The exact syntax of a JDBC URL is specified by your DBMS.  
 
-            #Example To specify an encrypted connection to mirror SQL instances by using a username and password:jdbc:sqlserver://${host}:${port};databaseName=${databaseName};user=${user};password=${password};encrypt=${encrypt};trustStore=${trustStorePath};trustStorePassword=${trustStorePassword};hostNameInCertificate=${hostNameInCertificate};failoverPartner=${failoverHost};
+        <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>#Example</p>            <p> To specify an encrypted connection to mirror SQL instances by using a username and password:</p>            <p>jdbc:sqlserver://${host}:${port};databaseName=${databaseName};user=${user};password=${password};encrypt=${encrypt};trustStore=${trustStorePath};trustStorePassword=${trustStorePassword};hostNameInCertificate=${hostNameInCertificate};failoverPartner=${failoverHost};</p>         </td>      </tr>   </tbody></table>
 
         The option to specify a custom JDBC URL is also exposed as a REST API resource.
 4.  Click **Test Connection**.  

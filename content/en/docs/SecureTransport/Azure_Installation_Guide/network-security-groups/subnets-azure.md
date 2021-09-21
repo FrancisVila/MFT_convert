@@ -8,7 +8,7 @@ Learn more about [Subnets](https://docs.microsoft.com/en-us/azure/virtual-networ
 
 In the following example, the VNet has a single subnet.
 
-![](create-subnet2.PNG)
+![](create-subnet.PNG)
 
 ## Create subnets
 
@@ -35,6 +35,6 @@ Create three subnets (two private and one public) as follows:
 5.  Click **OK** to add your subnet.
 6.  Repeat the steps for the additional subnets you wish to create.
 
-![](create-subnet2.PNG)
+![](create-subnet.PNG)
 
  

@@ -27,7 +27,7 @@ To upgrade directly to SecureTransport 5.5, you must have SecureTransport 5.4 wi
 
 There is currently one method for upgrading to SecureTransport 5.5 from an earlier version:
 
--   Apply an upgrade pack – When you apply the upgrade pack, the upgrade logic auto-detects and configures settings and prepares the upgraded installation for use without any additional configuration. This includes the upgrading of clustered implementations. For upgrade instructions using an upgrade pack, refer to [Upgrade procedures](../upgrade_overview).
+-   Apply an upgrade pack – When you apply the upgrade pack, the upgrade logic auto-detects and configures settings and prepares the upgraded installation for use without any additional configuration. This includes the upgrading of clustered implementations. For upgrade instructions using an upgrade pack, refer to [Upgrade procedures](../upgrade_overview1).
 
 See [Upgrade paths and incompatibilities](incompatibilities) to learn about incompatibilities between earlier versions of SecureTransport and this version.
 

@@ -31,14 +31,14 @@ On a secondary server, the time of the last manual synchronization is reported. 
 
 Cluster status is also stored in the `cluster_state` file. It contains information about which cluster node is the primary server, which are secondary servers, which servers are online, and which are offline. For example:
 
-    <ClusterGroup name="STCluster">
-       <Member hostname="test01.your.cluster" state="online" 
-          status="primary"/>
-       <Member hostname="test02.your.cluster" state="online" 
-          status="secondary"/>
-       <Member hostname="test03.your.cluster" state="offline" 
-          status="secondary"/>
-    </ClusterGroup>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>&lt;ClusterGroup name="STCluster"&gt;<br/>   &lt;Member hostname="test01.your.cluster" state="online" <br/>      status="primary"/&gt;<br/>   &lt;Member hostname="test02.your.cluster" state="online" <br/>      status="secondary"/&gt;<br/>   &lt;Member hostname="test03.your.cluster" state="offline" <br/>      status="secondary"/&gt;<br/>&lt;/ClusterGroup&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 By default, the `cluster_state` file is located in `<FILEDRIVEHOME>/var/tmp/cluster_state`. You can change the location and file name by editing the following server configuration parameters:
 

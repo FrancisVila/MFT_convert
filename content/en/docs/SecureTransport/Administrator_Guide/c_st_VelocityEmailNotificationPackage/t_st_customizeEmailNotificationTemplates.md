@@ -16,42 +16,23 @@ There are seven prerequisite fields that must be set in the XHTML email notifica
 
 The following code example shows an XHTML file with the prerequisites set:
 
-    <?xml version="1.0" encoding="windows-1252"?>
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-       "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><!-- #set( $subject = "ST was unable to deliver a file to
-       $DXAGENT_SITE_ATTR_HOST") -->
-    <!-- #set( $mailfrom = "admin@example.com") -->
-    <!-- #set( $mailto = $DXAGENT_ACCOUNT_EMAIL) -->
-    <!-- #set( $mailserver = "mail.example.com") -->
-    <!-- #set( $mailserverport = "25") -->
-    <!-- #set( $smtpUser = "user") -->
-    <!-- #set( $smtpPassword = "password") --><html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-       <meta http-equiv="Content-Type" content="text/html;
-          charset=windows-1252" />
-    </head><body>
-       <table border="0" bgcolor="#C0C0C0" width="100%">
-          <tr id="areatop">
-             <td >Axway</td>
-             <td >SecureTransport</td>
-          </tr>
-          <tr id="areatopmain">
-             <td colspan="2" align="center">
-                File Delivery Failure
-             </td>
-          </tr>
-          <tr id="areabody" bgcolor="white">
-             <td colspan="2">
-                Delivery of the file <b>$DXAGENT_TARGET</b> to the host
-                <b>$DXAGENT_SITE_ATTR_HOST</b> failed after
-                <b>$DXAGENT_PERSISTED_EVENT_RETRY_COUNT</b> attempts.
-                <p>Inspect the File Tracking Page in the ST Administration Tool
-                for more information on the reason for the failure.</p>
-             </td>
-          </tr>
-       </table>
-    </body>
-    </html>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>&lt;?xml version="1.0" encoding="windows-1252"?&gt;<br/>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"<br/>   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code>
+</p>
+            <p><code>&lt;!-- #set( $subject = "ST was unable to deliver a file to<br/>   $DXAGENT_SITE_ATTR_HOST") --&gt;<br/>&lt;!-- #set( $mailfrom = "admin@example.com") --&gt;<br/>&lt;!-- #set( $mailto = $DXAGENT_ACCOUNT_EMAIL) --&gt;<br/>&lt;!-- #set( $mailserver = "mail.example.com") --&gt;<br/>&lt;!-- #set( $<code>mailserverport</code> = "25") --&gt;<br/>&lt;!-- #set( $<code>smtpUser</code> = "user") --&gt;<br/>&lt;!-- #set( $<code>smtpPassword</code> = "password") --&gt;</code>
+</p>
+            <p><code>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;<br/>&lt;head&gt;<br/>   &lt;meta http-equiv="Content-Type" content="text/html;<br/>      charset=windows-1252" /&gt;<br/>&lt;/head&gt;</code>
+</p>
+            <p><code>&lt;body&gt;<br/>   &lt;table border="0" bgcolor="#C0C0C0" width="100%"&gt;<br/>      &lt;tr id="areatop"&gt;<br/>         &lt;td &gt;Axway&lt;/td&gt;<br/>         &lt;td &gt;SecureTransport&lt;/td&gt;<br/>      &lt;/tr&gt;<br/>      &lt;tr id="areatopmain"&gt;<br/>         &lt;td colspan="2" align="center"&gt;<br/>            File Delivery Failure<br/>         &lt;/td&gt;<br/>      &lt;/tr&gt;<br/>      &lt;tr id="areabody" bgcolor="white"&gt;<br/>         &lt;td colspan="2"&gt;<br/>            Delivery of the file &lt;b&gt;$DXAGENT_TARGET&lt;/b&gt; to the host<br/>            &lt;b&gt;$DXAGENT_SITE_ATTR_HOST&lt;/b&gt; failed after<br/>            &lt;b&gt;$DXAGENT_PERSISTED_EVENT_RETRY_COUNT&lt;/b&gt; attempts.<br/>            &lt;p&gt;Inspect the File Tracking Page in the ST Administration Tool<br/>            for more information on the reason for the failure.&lt;/p&gt;<br/>         &lt;/td&gt;<br/>      &lt;/tr&gt;<br/>   &lt;/table&gt;<br/>&lt;/body&gt;<br/>&lt;/html&gt;</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

@@ -16,26 +16,31 @@
       </tr>
 </table>
 
-    #Daemon configuration options should be specified in the following format:
-    #   [configuration_option_name]=[configuration_option_value]
-    # Example:
-    #   Ssh.Fips.enable=true
-    Ssh.Fips.enable=true
-    Ssh.Key.Alias=admind
-    Ssh.Sftp.enable=true
-    Ssh.Scp.enable=true
-
 ## Add start scripts global configuration
 
 The *start scripts configuration* will be placed in `STStartScriptsConfig` which is located in `FILEDRIVEHOME/conf` by default. Path to the file containing start scripts properties will be configured with the operating system environment variable `ST_START_SCRIPTS_CONF_PATH` (e.g `/tmp/STStartScriptsConfig`).
 
 Server start script example:
 
-    # Start scripts configuration should be specified here in the following format:
-    # [PROTOCOL_NAME]_[OPTION_NAME]=[value]
-    # SSH_JAVA_MEM_MIN=256M
-    # SSH_JAVA_OPTS="${SSH_JAVA_OPTS} -Dcom.sun.management.jmxremote.port=2997 
-    -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+<p xml:space="preserve"># Start scripts configuration should be specified here in the following format:
+</p>
+<p xml:space="preserve"># [PROTOCOL_NAME]_[OPTION_NAME]=[value]
+</p>
+<p xml:space="preserve"># SSH_JAVA_MEM_MIN=256M
+</p>
+<p xml:space="preserve"># SSH_JAVA_OPTS="${SSH_JAVA_OPTS} -Dcom.sun.management.jmxremote.port=2997 
+</p>
+<p xml:space="preserve">-Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -55,7 +60,20 @@ Additionally, few more options, available in the `start_tm_console` are configur
 
 The following sample script shows these options with example values:
 
-    disableHeapDumpOnOutOfMemoryError=truegenerate_heap_dump=trueGC_LOGGING=trueNumberOfGCLogFiles=30GCLogFileSize=5000K
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+<p xml:space="preserve">disableHeapDumpOnOutOfMemoryError=true</p>
+<p xml:space="preserve">generate_heap_dump=true</p>
+<p xml:space="preserve">GC_LOGGING=true</p>
+<p xml:space="preserve">NumberOfGCLogFiles=30</p>
+<p xml:space="preserve">GCLogFileSize=5000K</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Import Certificates
 

@@ -26,45 +26,32 @@ Complete the following steps to restore your SecureTransport installation from a
 
 4.  Run `regedit.exe` to start the Windows registry, and delete the following registry entries:
 
-        HKEY_LOCAL_MACHINE\SOFTWARE\Axway Software
-        HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\
-            Uninstall\Axway_Installer_4.10.7 SecureTransport1
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>HKEY_LOCAL_MACHINE\SOFTWARE\Axway Software<br/>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\<br/>    Uninstall\Axway_Installer_4.10.7 SecureTransport1         </td>      </tr>   </tbody></table>
 
 5.  Restore the registry entries that you backed up. To import a registry entry into the Windows registry, double-click the name of the respective `.reg` files you saved when you backed up your installation.
 
 6.  Make sure the file `cygwin1.dll` is included in your PATH environment variable. For example:
 
-        C:\Axway\SecureTransport\cygwin\bin
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>C:\Axway\SecureTransport\cygwin\bin         </td>      </tr>   </tbody></table>
 
 7.  Make sure the folder `STServer\bin` is included in your PATH environment variable. For example:
 
-        C:\Axway\SecureTransport\STServer\bin
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>C:\Axway\SecureTransport\STServer\bin         </td>      </tr>   </tbody></table>
 
 8.  Install the SecureTransport services:
     -   To install the services on a SecureTransport Server installation, navigate to the folder `STServer\bin`, located in the SecureTransport installation folder, and double-click the following files:
 
-            install_ftpd_service.com
-            install_httpd_service.com
-            install_sshd_service.com
-            install_tm_service.com
-            install_admin_service.com
-            install_as2d_service.com
-            install_pesitd_service.com
+        <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>install_ftpd_service.com<br/>install_httpd_service.com<br/>install_sshd_service.com<br/>install_tm_service.com<br/>install_admin_service.com<br/>install_as2d_service.com<br/>install_pesitd_service.com</p>         </td>      </tr>   </tbody></table>
 
     -   To install SecureTransport services on a SecureTransport Edge installation, navigate to the folder `STServer\bin`, located in the SecureTransport installation folder, and double-click the following files:
 
-            install_ftpd_service.com
-            install_httpd_service.com
-            install_sshd_service.com
-            install_admin_service.com
-            install_as2d_service.com
+        <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>install_ftpd_service.com<br/>install_httpd_service.com<br/>install_sshd_service.com<br/>install_admin_service.com<br/>install_as2d_service.com         </td>      </tr>   </tbody></table>
 
 9.  Install Cygwin `cron`:
     1.  Navigate to the `cygwin\bin` folder in the SecureTransport installation folder and double-click the `cygwin.bat` file to start the Cygwin shell.
 
     2.  In the Cygwin shell, execute the following command:
 
-            cygrunsrv -I cygwin_cron -d \"Cygwin cron\" -p /usr/sbin/cron \
-                -a -D -f \"Cygwin Cron\"
+        <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>cygrunsrv -I cygwin_cron -d \"Cygwin cron\" -p /usr/sbin/cron \<br/>    -a -D -f \"Cygwin Cron\"         </td>      </tr>   </tbody></table>
 
 10. Reboot your system and start all SecureTransport services. For more information, refer to the <span cshid="admin" data-version="5.3.5">*SecureTransport Administrator's Guide*</span>.

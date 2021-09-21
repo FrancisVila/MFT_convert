@@ -17,4 +17,4 @@
 2.  Mount the CIFS share following the example:  
     Enter the following command to run the Axway Installer:
 
-        mount -t cifs -o username=<Administrator>,password=<password>,file_mode=0777,dir_mode=0777,mfsymlinks //<IP_address>/Shared/<user>/<home_folder>
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td><pre><code>mount -t cifs -o username=&lt;Administrator&gt;,password=&lt;password&gt;,file_mode=0777,dir_mode=0777,mfsymlinks //&lt;IP_address&gt;/Shared/&lt;user&gt;/&lt;home_folder&gt;</code></pre>         </td>      </tr>   </tbody></table>

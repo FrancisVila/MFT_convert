@@ -4,20 +4,25 @@
     "weight": "160"
 }The following suggested configuration allows the SecureTransport administrator to specify the number of daemon threads used by the invocation service in the invocation-scheme configuration in `conf/hibernate-cache-config.xml`:
 
-      <!--
-        The DefaultInvocationService is used by the com.tumbleweed.st.server.api.cluster.InvocationManager
-         -->
-        <invocation-scheme>
-
-            <scheme-name>invocation-service</scheme-name>
-
-            <service-name>DefaultInvocationService</service-name>
-
-            <thread-count>0</thread-count>
-
-            <autostart>true</autostart>
-
-&lt;/invocation-scheme>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>  &lt;!--
+    The DefaultInvocationService is used by the com.tumbleweed.st.server.api.cluster.InvocationManager
+     --&gt;
+    </p><pre>&lt;invocation-scheme&gt;
+</pre><pre>        &lt;scheme-name&gt;invocation-service&lt;/scheme-name&gt;
+</pre><pre>        &lt;service-name&gt;DefaultInvocationService&lt;/service-name&gt;
+</pre><pre>        &lt;thread-count&gt;0&lt;/thread-count&gt;
+</pre><pre>        &lt;autostart&gt;true&lt;/autostart&gt;
+</pre>
+            <p>  &lt;/invocation-scheme&gt; </p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

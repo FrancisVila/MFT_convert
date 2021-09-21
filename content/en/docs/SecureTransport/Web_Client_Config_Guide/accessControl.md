@@ -6,26 +6,34 @@
 
 All options are of type Boolean with default value `true` (no restrictions).
 
-    {
-        ...
-        "accessControl": {
-            "fileOperations": {
-                "createFolder": {
-                    "enabled": true
-                },
-                "moveFile": {
-                    "enabled": true
-                },
-                "renameFileOrFolder": {
-                    "enabled": true
-                },
-                "deleteFileOrFolder": {
-                    "enabled": true
-                }
-            }
-        },
-        ...
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{
+    ...
+    "accessControl": {
+        "fileOperations": {
+            "createFolder": {
+                "enabled": true
+            },
+            "moveFile": {
+                "enabled": true
+            },
+            "renameFileOrFolder": {
+                "enabled": true
+            },
+            "deleteFileOrFolder": {
+                "enabled": true
+            }
+        }
+    },
+    ...
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

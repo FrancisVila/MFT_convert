@@ -6,37 +6,15 @@
 
 The following code snippet shows the upload defaults:
 
-    {
-
-      ...
-
-      "transferQueue": {
-
-        "failedLastXHours": 24, 
-
-        "transferOptions": {
-
-     "uploadChunkSize": 104857600,
-
-       "readChunkSize": 262144, 
-
-       "maxRetryCount": 3,
-
-     "maxChunkRetryCount": 3, 
-
-       "timeoutBeforeRetry": 10000, 
-
-       "maxSimultaneousJob": 3 
-
-      },
-
-      "transferHistoryLimit": 100 
-
-     },
-
-      ...
-
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">  "transferQueue": {</pre><pre xml:space="preserve">    "failedLastXHours": 24, </pre><pre xml:space="preserve">    "transferOptions": {</pre><pre xml:space="preserve">	"uploadChunkSize": 104857600,</pre><pre xml:space="preserve">	"readChunkSize": 262144, </pre><pre xml:space="preserve">	"maxRetryCount": 3,</pre><pre xml:space="preserve">	"maxChunkRetryCount": 3, </pre><pre xml:space="preserve">	"timeoutBeforeRetry": 10000, </pre><pre xml:space="preserve">	"maxSimultaneousJob": 3 </pre><pre xml:space="preserve">  },</pre><pre xml:space="preserve">  "transferHistoryLimit": 100 </pre><pre xml:space="preserve"> },</pre><pre xml:space="preserve">  ...</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To override a default setting, in the custom configuration file, add a `"transferQueue"` section and set a different value.
 

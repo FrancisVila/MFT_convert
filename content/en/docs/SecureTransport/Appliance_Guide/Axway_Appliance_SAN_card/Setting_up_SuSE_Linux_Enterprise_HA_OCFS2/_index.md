@@ -21,11 +21,34 @@ Depending on the number of your fiber cards and number of LUNs exported on SAN, 
 
 Run the following command:
 
-    multipath -ll
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>multipath -ll</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 If there is no output or not every block device representing SAN is listed, initialize each block device as:
 
-    node115:~ # multipath /dev/sdbcreate: 360014056e1d398a52894c8e99d7de877 undef LIO-ORG,IBLOCKsize=2.0G features='0' hwhandler='1 alua' wp=undef`-+- policy='service-time 0' prio=50 status=undef  `- 3:0:0:0 sdb 8:16 undef ready running
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>node115:~ # multipath /dev/sdb</p>
+            <p>create: 360014056e1d398a52894c8e99d7de877 undef LIO-ORG,IBLOCK</p>
+            <p>size=2.0G features='0' hwhandler='1 alua' wp=undef</p>
+            <p>`-+- policy='service-time 0' prio=50 status=undef</p>
+            <p>  `- 3:0:0:0 sdb 8:16 undef ready running</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 A device named `dm-name-360014056e1d398a52894c8e99d7de877` should now appear in `/dev/disk/by-id`.
 
@@ -71,8 +94,15 @@ Add records for every node in `/etc/hosts` file.
 
 Edit, or create if not present `/root/.ssh/config`. Add port 10022 as a default SSH port on Axway Appliance. For example, if there are two nodes:
 
-    Host st-appliance1 st-appliance2
-    Port 10022
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>Host st-appliance1 st-appliance2</code><code><br/>Port 10022</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  
 

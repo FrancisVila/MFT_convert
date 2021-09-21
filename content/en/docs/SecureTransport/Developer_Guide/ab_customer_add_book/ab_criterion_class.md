@@ -20,98 +20,105 @@ In the sample code, the `AddressBookFileCriteria` class extends the system base 
 
 The `AddressBookFileCriteria` class defines a new method which handles the filtering:
 
-    package com.axway.st.plugins.abcustomsource.sdk.file.criterion;
-
-    import java.util.ArrayList;
-    import java.util.Collection;
-    import java.util.Collections;
-    import java.util.LinkedList;
-    import java.util.List;
-    import java.util.ListIterator;
-
-    import com.axway.st.plugins.absource.AddressBookEntry;
-
-    /**
-     * Address Book File Criteria.
-     *
-     */
-    public class AddressBookFileCriteria extends MyAddressBookCriteriaBean {
-
-        /**
-         *
-         */
-        private static final long serialVersionUID = -9087309532695089048L;
-
-        /**
-         * Apply the search criterion.
-         *
-         * @param entries the input entries
-         * @param start the offset
-         * @param count the max size
-         * @return filtered and ordered set of address book entries
-         */
-        public List<AddressBookEntry> applyCriterion(Collection<AddressBookEntry> entries, int start, int count){
-            List<AddressBookEntry> resultSet = new ArrayList<>();
-            for(AddressBookEntry entry : entries){
-                if(getDisplayName() != null){
-                    if(!getDisplayName().equals(entry.getDisplayName())){
-                        continue;
-                    }
-                }
-
-                if(getEmail() != null){
-                    if(!getEmail().equals(entry.getEmail())){
-                        continue;
-                    }
-                }
-
-                if(getId() != null){
-                    if(!getId().getUniqueId().equals(entry.getEntryId().getUniqueId())){
-                        continue;
-                    }
-                }
-
-                if(getParentGroup() != null){
-                    if(!getParentGroup().equals(entry.getParentGroup())){
-                        continue;
-                    }
-                }
-
-                if(getSearchFor() != null){
-                    if(!entry.getParentGroup().toLowerCase().
-                            contains(getSearchFor().toLowerCase())
-                        && !entry.getDisplayName().toLowerCase().
-                            contains(getSearchFor().toLowerCase())
-                        && !entry.getEmail().toLowerCase().
-
-                            contains(getSearchFor().toLowerCase())){
-                        continue;
-                    }
-                }
-
-                if (getType() != null) {
-                    if (getType() == AddressBookEntry.Type.Group) {
-                        continue;
-                    }
-                }
-
-                resultSet.add(entry);
-            }
-
-            Collections.sort(resultSet, new MyAddressBookContactComparator(getOrder()));
-
-            List<AddressBookEntry> paginatedView = new LinkedList<>();
-            if (start > resultSet.size() - 1) {
-                return paginatedView;
-            }
-            ListIterator<AddressBookEntry> iterator = resultSet.listIterator(start);
-            while (iterator.hasNext()) {
-                AddressBookEntry entry = iterator.next();
-                paginatedView.add(entry);
-                if (paginatedView.size() == count) {
-                    break;
-                }
-            }
-            return paginatedView;
-        }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">package com.axway.st.plugins.abcustomsource.sdk.file.criterion;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+
+import com.axway.st.plugins.absource.AddressBookEntry;
+
+/**
+ * Address Book File Criteria.
+ *
+ */
+public class AddressBookFileCriteria extends MyAddressBookCriteriaBean {
+
+    /**
+     *
+     */
+    private static final long serialVersionUID = -9087309532695089048L;
+
+    /**
+     * Apply the search criterion.
+     *
+     * @param entries the input entries
+     * @param start the offset
+     * @param count the max size
+     * @return filtered and ordered set of address book entries
+     */
+    public List&lt;AddressBookEntry&gt; applyCriterion(Collection&lt;AddressBookEntry&gt; entries, int start, int count){
+        List&lt;AddressBookEntry&gt; resultSet = new ArrayList&lt;&gt;();
+        for(AddressBookEntry entry : entries){
+            if(getDisplayName() != null){
+                if(!getDisplayName().equals(entry.getDisplayName())){
+                    continue;
+                }
+            }
+
+            if(getEmail() != null){
+                if(!getEmail().equals(entry.getEmail())){
+                    continue;
+                }
+            }
+
+            if(getId() != null){
+                if(!getId().getUniqueId().equals(entry.getEntryId().getUniqueId())){
+                    continue;
+                }
+            }
+
+            if(getParentGroup() != null){
+                if(!getParentGroup().equals(entry.getParentGroup())){
+                    continue;
+                }
+            }
+
+            if(getSearchFor() != null){
+                if(!entry.getParentGroup().toLowerCase().
+                        contains(getSearchFor().toLowerCase())
+                    &amp;&amp; !entry.getDisplayName().toLowerCase().
+                        contains(getSearchFor().toLowerCase())
+                    &amp;&amp; !entry.getEmail().toLowerCase().</pre><pre xml:space="preserve">                        contains(getSearchFor().toLowerCase())){
+                    continue;
+                }
+            }
+
+            if (getType() != null) {
+                if (getType() == AddressBookEntry.Type.Group) {
+                    continue;
+                }
+            }
+
+            resultSet.add(entry);
+        }
+
+        Collections.sort(resultSet, new MyAddressBookContactComparator(getOrder()));
+
+        List&lt;AddressBookEntry&gt; paginatedView = new LinkedList&lt;&gt;();
+        if (start &gt; resultSet.size() - 1) {
+            return paginatedView;
+        }
+        ListIterator&lt;AddressBookEntry&gt; iterator = resultSet.listIterator(start);
+        while (iterator.hasNext()) {
+            AddressBookEntry entry = iterator.next();
+            paginatedView.add(entry);
+            if (paginatedView.size() == count) {
+                break;
+            }
+        }
+        return paginatedView;
+    }
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

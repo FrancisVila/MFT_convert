@@ -12,11 +12,19 @@ This behavior is controlled by two configuration options:
 
 The default values are listed below.
 
-    {
-      ...
-         "mailbox": {
-            "sendPollingInterval": 500,
-         "sendPollingRetries": 10
-          }
-      ...
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+  ...
+     "mailbox": {
+        "sendPollingInterval": 500,
+	 "sendPollingRetries": 10
+      }
+  ...
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

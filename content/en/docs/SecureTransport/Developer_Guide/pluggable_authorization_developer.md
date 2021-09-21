@@ -96,21 +96,17 @@ Each Authorization SPI is versioned. Тhe initial SPI release is version 1.0. Ev
 
 To declare what SPI version is used in the Authorization implementation, place the `Plugin-Info.yaml` file inside the `Meta-Inf` directory. This file contains the plug-in information, similar to the `MANIFEST.MF` file in Authorization SPI version 1.0. The description schema used in the yaml file is:
 
-    '<SPI version>':
-
-      <property>: <value>
-
-      <property>: <value>
-
-      ...................
-
-    '<SPI version>':
-
-      <property>: <value>
-
-      <property>: <value>
-
-      ...................
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> When you are deploying your Plug-in Authorization implementation, you must only include third party dependencies, used by your implementation. You must not add APIs provided run-time by <span>SecureTransport</span>. This includes the <span>SecureTransport</span> Pluggable Authorization SPI, Plug-in Services API and JSR-330 (<code>javax.inject</code>) API.         </td>
+      </tr>
+</table>
 
 The convention for the indentation used is two spaces for each block.
 
@@ -158,16 +154,14 @@ All methods accept a `DataEnvironment` as a parameter and must return `Authoriza
     -   `AUTHORIZATION_DENY` – in case of unsuccessful authorization
 -   Message: Human - readable information about the executed authorization operation
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td><pre>'&lt;SPI version&gt;':</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  ...................</pre><pre>'&lt;SPI version&gt;':</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  &lt;property&gt;: &lt;value&gt;</pre><pre xml:space="preserve">  ...................</pre>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> When you are deploying your Plug-in Authorization implementation, you must only include third party dependencies, used by your implementation. You must not add APIs provided run-time by <span>SecureTransport</span>. This includes the <span>SecureTransport</span> Pluggable Authorization SPI, Plug-in Services API and JSR-330 (<code>javax.inject</code>) API.         </td>
       </tr>
+   </tbody>
 </table>
 
 Put your authorization logic inside and return appropriate result for the methods you want to implement.
@@ -258,7 +252,17 @@ Below you can find information on how often the authorization plug-in is called 
 
 SecureTransport provides a service for certificate parsing and validation against its keystore. The service is called `CertificateService `and can be injected in the plug-in’s `CustomAuthorizer` and `CustomFileFilter` using the following code:
 
-    @Injectprivate CertificateService mCertificateService;
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> These results may vary depending on the client being used.         </td>
+      </tr>
+</table>
 
 It declares the following methods:
 
@@ -277,8 +281,17 @@ SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `
 
 The service interface is called `com.axway.st.plugins.authorization.services.SslContextService` and can be injected in the plug-in’s `CustomAuthorizer` and `CustomFileFilter` class, using the following code:
 
-    @Inject
-    private SsLContextService sslContextService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p>private CertificateService mCertificateService;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The service methods are:
 
@@ -295,9 +308,17 @@ You can use expression evaluator service to evaluate and validate the expression
 
 To use the expression evaluator service, declare а variable with `@Inject` annotation to the interface of the expression evaluator service provided in the API:
 
-    @Inject
-
-    private ExpressionEvaluatorService mExpressionEvaluatorService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>@Inject
+private SsLContextService sslContextService;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 This service is identical to the Expression Evaluator service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
@@ -305,22 +326,26 @@ This service is identical to the Expression Evaluator service exposed for Custom
 
 In order to enable logging when using the Logger service, edit the `com.axway.st.plugins` loggers in the `tm-log4j.xml` file. For example, with pluggable authorization:
 
-    <logger name="com.axway.st.plugins.authorization" additivity="false">
-
-        <level value="info" />
-
-        <appender-ref ref="ServerLog" /> 
-
-    </logger>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Inject</pre><pre xml:space="preserve">private ExpressionEvaluatorService mExpressionEvaluatorService;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 For fine-tuning debug logging, add the plug-in name in conjunction with the `com.axway.st.plugins` logger.
 
 In this case, use `com.axway.st.plugins.authorization.<plugin_name>` as shown on the example:
 
-    <logger name="com.axway.st.plugins.authorization.authorization-plugin" additivity="false">
-
-       <level value="debug" />
-
-       <appender-ref ref="ServerLog" />
-
-    </logger>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>&lt;logger name="com.axway.st.plugins.authorization" additivity="false"&gt;</pre><pre xml:space="preserve">	&lt;level value="info" /&gt;</pre><pre xml:space="preserve">	&lt;appender-ref ref="ServerLog" /&gt; </pre><pre xml:space="preserve">&lt;/logger&gt;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

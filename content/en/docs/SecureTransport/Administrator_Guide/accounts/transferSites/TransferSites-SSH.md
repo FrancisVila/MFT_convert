@@ -18,10 +18,6 @@ By default, a server-initiated transfer using SSH and a pattern with a wildcard 
 
 ## Site settings for SSH Transfer sites
 
-The following image presents a snippet of the *Site Settings* pane for a SSH protocol transfer site:
-
-![SSH - Site Settings](TS-SSH-AdvancedSSL.jpg)
-
 The following table describes the site settings options for a SSH protocol transfer site.
 
 <table cellspacing="0">

@@ -13,7 +13,27 @@ Before you configure the machine where SecureTransport runs (or will be installe
 -   On the database server, verify that the following parameters in the *sqlnet.ora* file are set:   
     
 
-        SQLNET.KERBEROS5_KEYTAB = /etc/krb5.keytabSQLNET.AUTHENTICATION_SERVICES= (BEQ, KERBEROS5)SQLNET.KERBEROS5_CLOCKSKEW = 6000SQLNET.KERBEROS5_CONF = /etc/krb5.confSQLNET.KERBEROS5_CONF_MIT = trueSQLNET.AUTHENTICATION_KERBEROS5_SERVICE = oracle
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>SQLNET.KERBEROS5_KEYTAB = /etc/krb5.keytab</code>
+</p>
+            <p><code>SQLNET.AUTHENTICATION_SERVICES= (BEQ, KERBEROS5)</code>
+</p>
+            <p><code>SQLNET.KERBEROS5_CLOCKSKEW = 6000</code>
+</p>
+            <p><code>SQLNET.KERBEROS5_CONF = /etc/krb5.conf</code>
+</p>
+            <p><code>SQLNET.KERBEROS5_CONF_MIT = true</code>
+</p>
+            <p><code>SQLNET.AUTHENTICATION_KERBEROS5_SERVICE = oracle</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 -   You have a running Key Distribution Center (KDC), such as Windows Active Directory, and realm setup
 

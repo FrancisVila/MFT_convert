@@ -17,6 +17,16 @@ The following changes are added to the SecureTransport 5.5 Adminstration Tool on
    </thead>
    <tbody>
       <tr data-mc-conditions="">
+         <td>5.5 September 2021 Update         </td>
+         <td>
+            <ul>
+               <li>
+            <p><a href="../overview5/r_st_axway_and_third-party_software_support">Axway and third-party software support</a> topic updated</p>
+               </li>
+            </ul>
+         </td>
+      </tr>
+      <tr data-mc-conditions="">
          <td>5.5 August 2021 Update         </td>
          <td>
             <ul>

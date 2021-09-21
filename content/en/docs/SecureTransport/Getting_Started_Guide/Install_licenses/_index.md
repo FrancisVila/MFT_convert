@@ -8,7 +8,7 @@ The *core server license* specifies the number of accounts allowed and the numbe
 
 The FTP and HTTP protocols are included in the core license. For other features, contact your local account executive or supplier.
 
-Contact Axway Global Support to obtain text files containing the core server license and the features license for your authorized features. For contact information, see [Get more help](get_more_help2.htm).
+Contact Axway Global Support to obtain text files containing the core server license and the features license for your authorized features. For contact information, see [*Get more help* on page 1](get_more_help.htm).
 
 <table cellpadding="0" cellspacing="0">
    <col/>

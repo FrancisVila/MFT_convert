@@ -66,16 +66,34 @@ With more than two criteria: `(|(criteria1)(criteria2)(criteria3)(criteria n))`
 
 Rename the *user* attribute to *username*:
 
-    <Mappings>
-        <RenameMapping source="user" target="username"/>
-    </Mappings>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>&lt;Mappings&gt;
+    &lt;RenameMapping source="user" target="username"/&gt;
+&lt;/Mappings&gt;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Add two attributes when the name attribute from the Identity Provider is set to Bob:
 
-    <Mappings>
-        <FilterMapping>
-            <Filter>(name=Bob)</Filter>
-            <OutputAttribute name="role">SPRole</OutputAttribute>
-            <OutputAttribute name="user">Bob</OutputAttribute>
-        </FilterMapping>
-    </Mappings>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>&lt;Mappings&gt;
+    &lt;FilterMapping&gt;
+        &lt;Filter&gt;(name=Bob)&lt;/Filter&gt;
+        &lt;OutputAttribute name="role"&gt;SPRole&lt;/OutputAttribute&gt;
+        &lt;OutputAttribute name="user"&gt;Bob&lt;/OutputAttribute&gt;
+    &lt;/FilterMapping&gt;
+&lt;/Mappings&gt;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

@@ -10,11 +10,42 @@ In this example, the configuration file is the TM log: `<FILEDRIVEHOME>/conf/tm
 
 Change:
 
-    <DailyRollingFileAppender name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd">  <PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/></DailyRollingFileAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;DailyRollingFileAppender name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd"&gt;</p>
+            <p>  &lt;PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/&gt;</p>
+            <p>&lt;/DailyRollingFileAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To:
 
-    <RollingFile name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" filePattern="FILEDRIVEHOME/var/db/hist/logs/%d{yyyy-MM-dd}.tm.log">  <PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/>  <DefaultRolloverStrategy max="5">    <Delete basePath="FILEDRIVEHOME/var/db/hist/logs/" maxDepth="2">      <IfFileName glob="*.tm.log" />      <IfLastModified age="5d" />    </Delete>  </DefaultRolloverStrategy>  <Policies>    <TimeBasedTriggeringPolicy />  </Policies></RollingFile>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;RollingFile name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" filePattern="FILEDRIVEHOME/var/db/hist/logs/%d{yyyy-MM-dd}.tm.log"&gt;</p>
+            <p>  &lt;PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/&gt;</p>
+            <p>  &lt;DefaultRolloverStrategy max="5"&gt;</p>
+            <p>    &lt;Delete basePath="FILEDRIVEHOME/var/db/hist/logs/" maxDepth="2"&gt;</p>
+            <p>      &lt;IfFileName glob="*.tm.log" /&gt;</p>
+            <p>      &lt;IfLastModified age="5d" /&gt;</p>
+            <p>    &lt;/Delete&gt;</p>
+            <p>  &lt;/DefaultRolloverStrategy&gt;</p>
+            <p>  &lt;Policies&gt;</p>
+            <p>    &lt;TimeBasedTriggeringPolicy /&gt;</p>
+            <p>  &lt;/Policies&gt;</p>
+            <p>&lt;/RollingFile&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  
 
@@ -28,7 +59,7 @@ You can use any of the log4j file appenders.
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For another way to manage log file rotation, see <a href="../../../applications/applicationslogentrymaintenance" xrefformat="{paratext}">Log Entry Maintenance application</a>.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For another way to manage log file rotation, see <a href="../../../applications/applicationslogentrymaintenance">Log Entry Maintenance application</a>.         </td>
       </tr>
 </table>
 
@@ -38,7 +69,21 @@ In some cases when the log messages are directed to a flat file, the rotation of
 
 In this case, you might consider attaching the rotating log to an asynchronous appender which is explicitly defined as not-blocking. To achieve this, use the following sample:
 
-    <Async name="ServerLog" bufferSize="20000" blocking="false" includeLocation="false">  <AppenderRef ref="DailyAppender"/></Async><DailyRollingFileAppender name="DailyAppender" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd">  <PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/></DailyRollingFileAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;Async name="ServerLog" bufferSize="20000" blocking="false" includeLocation="false"&gt;</p>
+            <p>  &lt;AppenderRef ref="DailyAppender"/&gt;</p>
+            <p>&lt;/Async&gt;</p>
+            <p>&lt;DailyRollingFileAppender name="DailyAppender" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd"&gt;</p>
+            <p>  &lt;PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/&gt;</p>
+            <p>&lt;/DailyRollingFileAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

@@ -29,15 +29,24 @@ After the command is successfully executed, the `keytab` file is generated in th
 
 ## Create a Kerberos configuration file
 
-    com.sun.security.jgss.krb5.accept {
-        com.sun.security.auth.module.Krb5LoginModule required
-        principal="<HTTP/FQDN@REALM>"
-        keyTab="ABSOLUTE_PATH_TO_KEYTAB_FILE"  
-        useKeyTab=true
-        storeKey=true
-        isInitiator=false
-        doNotPrompt=true;
-    };
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre><span>com.sun.security.jgss.krb5.accept {
+    com.sun.security.auth.module.Krb5LoginModule required
+    principal="&lt;HTTP/FQDN@REALM&gt;"
+    keyTab="ABSOLUTE_PATH_TO_KEYTAB_FILE"  
+    useKeyTab=true
+    storeKey=true
+    isInitiator=false
+    doNotPrompt=true;
+};
+</span></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -63,9 +72,18 @@ In order to use Kerberos as IdP for end-users you need to edit and upload the `s
 
 Verify that it contains Kerberos Identity Provider. Example:
 
-    <KerberosIdentityProvider 
-    entityId="kerberos" configurationUrl="C:/Axway/SecureTransport/STServer/conf/sso/krb5Login.conf">
-    </KerberosIdentityProvider>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>&lt;KerberosIdentityProvider 
+entityId="kerberos" configurationUrl="C:/Axway/SecureTransport/STServer/conf/sso/krb5Login.conf"&gt;
+&lt;/KerberosIdentityProvider&gt;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 `configurationUrl` - The absolute path to the `krb5Login.conf` file location after the SSO configuration files are uploaded to SecureTransport. If SecureTransport is installed on the C drive of your Windows machine, the path would be the same as the one in the example.
 

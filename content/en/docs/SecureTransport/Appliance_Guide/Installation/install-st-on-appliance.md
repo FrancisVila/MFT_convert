@@ -19,7 +19,7 @@ This procedure is an example of the interaction when SecureTransport Server is n
 
       
     
-    For *embedded database* installation, see [Install SecureTransport to use the embedded database](../../../installation_guide/install_overview/installing_on_unix_based_platforms/installing_securetransport_embedded_db_unix). For *external database* installation, see [Install SecureTransport Server in an Enterprise Cluster or to use an external database](../../../installation_guide/install_overview/installing_on_unix_based_platforms/installing_securetransport_server_external_db_unix).  
+    For *embedded database* installation, see [Install SecureTransport to use the embedded database](../../../installation_guide/install_overview2/installing_on_unix_based_platforms/installing_securetransport_embedded_db_unix). For *external database* installation, see [Install SecureTransport Server in an Enterprise Cluster or to use an external database](../../../installation_guide/install_overview2/installing_on_unix_based_platforms/installing_securetransport_server_external_db_unix).  
 5.  Follow the prompts. Provide all the required information and confirm installation.
 
 The installer displays a progress indicator. It can take several minutes to install SecureTransport. When the installation is complete, the SecureTransport Configuration menu is once again displayed.

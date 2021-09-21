@@ -77,6 +77,15 @@ The following table includes the descriptions and specifics of each output param
 
 A valid return line would look like this:
 
-    rw-rr--r-- 1 100 1001 1024 Aug 19 08:46 samplelog.txt
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>rw-rr--r-- 1 100 1001 1024 Aug 19 08:46 samplelog.txt</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  

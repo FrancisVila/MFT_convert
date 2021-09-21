@@ -30,19 +30,15 @@
 4.  Edit `stwebclient.config.json` to tell ST Web Client to load the plug-in:  
     
 
-        {
-
-          "branding": {
-
-            "layoutInject": {
-
-              "my-layout": ["login", "list"]
-
-            }
-
-          }
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  "branding": {</pre><pre xml:space="preserve">    "layoutInject": {</pre><pre xml:space="preserve">      "my-layout": ["login", "list"]</pre><pre xml:space="preserve">    }</pre><pre xml:space="preserve">  }</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
       
      The values on the right are the target HTML template names without the extension. In this case, the plug-in is applied to the login and the main application pages.   

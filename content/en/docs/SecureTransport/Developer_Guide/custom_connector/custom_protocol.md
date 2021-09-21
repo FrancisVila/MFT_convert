@@ -11,9 +11,17 @@
 
 The Connection interface version 1.1 adds the following methods:
 
-    List<String> getProtocolCommands();
-    String getAdditionalInfo(); 
-    FlowAttributesData getFlowAttributesData();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">List&lt;String&gt; getProtocolCommands();
+String getAdditionalInfo(); 
+FlowAttributesData getFlowAttributesData();</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The Connection interface is extended by `com.axway.st.plugins.site.CustomSite` abstract class which is also part of Pluggable Transfer Site SPI. Its main purpose is to hold a UIBean instance containing connection parameters as key-value pairs saved into the database as custom transfer site properties. The parameters are loaded from the database by SecureTransport and populated in the UIBean instance inside the specific `CustomSite` implementation when starting server-initiated transfers.
 
@@ -22,23 +30,48 @@ The following steps should be followed to create the custom protocol connector:
 1.  Define a class that extends the `com.axway.st.plugins.site.CustomSite`:  
     
 
-        import com.axway.st.plugins.site.CustomSite
-        public class FTPSite extends CustomSite {
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">import com.axway.st.plugins.site.CustomSite
+public class FTPSite extends CustomSite {
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 2.  Define the UIBean instance that will hold the connector parameters:  
     
 
-        /** The UIBean implementation. */
-        private FtpBean mFtpBean = new FtpBean();
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">/** The UIBean implementation. */
+private FtpBean mFtpBean = new FtpBean();</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 3.  Define the default constructor for `FTPSite` class which should set the instantiated `FtpBean` as the UIBean instance in the `CustomSite` parent class.   
     When SecureTransport starts the transfer, it will populate the connection properties into UIBean instance defined in the `CustomSite` class:  
     
 
-        public FTPSite() {
-              setUIBean(mFtpBean);
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">public FTPSite() {
+      setUIBean(mFtpBean);
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <span id="SPI1.5"></span>In addition there is a way to report the download information. This information consist of two attributes: *remote download folder* and *remote download pattern* via the following annotations, that are part of site SPI: `RemoteDownloadFolder `and `RemoteDownloadPattern`.
 
@@ -111,51 +144,67 @@ So, in the `putFile` method implementation inside the `FTPSite` class, you shoul
 
 First, you should use the `connect()` method to connect to the FTP server:
 
-    /** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
-    private AbstractFTPConnector mFtpConnection;
-
-    /** Connects to a FTP server.
-     *
-     * @throws IOException on error
-     */
-    public String connect() throws IOException {
-        mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
-        mFtpConnection.setCertificateService(mCertificateService);
-        mFtpConnection.setProxyService(mProxyService);
-        return mFtpConnection.connect();
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">/** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
+private AbstractFTPConnector mFtpConnection;
+
+/** Connects to a FTP server.
+ *
+ * @throws IOException on error
+ */
+public String connect() throws IOException {
+    mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
+    mFtpConnection.setCertificateService(mCertificateService);
+    mFtpConnection.setProxyService(mProxyService);
+    return mFtpConnection.connect();
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Then use it in the `putFile()` method to upload the file:
 
-    @Override
-    public void putFile(SourceFile file) throws IOException {
-
-        String resolvedHost = "127.0.0.1";
-        if (mFtpConnection == null) {
-            resolvedHost = connect();
-        }
-
-        RemotePartner descriptor = new RemotePartner(resolvedHost, 
-        mFtpBean.getPartnerUploadFolder(),
-                mFtpBean.isFtps(), getSentFileAs());
-
-        mFtpConnection.upload(file.getInputStream(descriptor), 
-        descriptor.getRemoteHost(), file.getName());
-    }
-    /**
-     * Gets the "Send File As" value or
-     * return empty string if "Send File As" option is not enabled.
-     *
-     * @return "Send File As" value or, if no value is found it returns 
-       empty string
-     */
-    private String getSentFileAs() {
-        String resultFileAs = "";
-        if (mFtpBean.isSendFileAsEnabled()) {
-            resultFileAs = mFtpBean.getSendFileAs();
-            }
-        return resultFileAs;
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+public void putFile(SourceFile file) throws IOException {
+
+    String resolvedHost = "127.0.0.1";
+    if (mFtpConnection == null) {
+        resolvedHost = connect();
+    }
+
+    RemotePartner descriptor = new RemotePartner(resolvedHost, 
+    mFtpBean.getPartnerUploadFolder(),
+            mFtpBean.isFtps(), getSentFileAs());
+
+    mFtpConnection.upload(file.getInputStream(descriptor), 
+    descriptor.getRemoteHost(), file.getName());
+}
+/**
+ * Gets the "Send File As" value or
+ * return empty string if "Send File As" option is not enabled.
+ *
+ * @return "Send File As" value or, if no value is found it returns 
+   empty string
+ */
+private String getSentFileAs() {
+    String resultFileAs = "";
+    if (mFtpBean.isSendFileAsEnabled()) {
+        resultFileAs = mFtpBean.getSendFileAs();
+        }
+    return resultFileAs;
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 #### List() method
 
@@ -178,19 +227,27 @@ In the `list()` method implementation you must first connect to the remote partn
 
 First, you should use the `connect()` method to connect to the FTP server:
 
-    /** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
-    private AbstractFTPConnector mFtpConnection;
-
-    /** Connects to a FTP server.
-     *
-     * @throws IOException on error
-     */
-    public String connect() throws IOException {
-        mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
-        mFtpConnection.setCertificateService(mCertificateService);
-        mFtpConnection.setProxyService(mProxyService);
-        return mFtpConnection.connect();
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">/** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
+private AbstractFTPConnector mFtpConnection;
+
+/** Connects to a FTP server.
+ *
+ * @throws IOException on error
+ */
+public String connect() throws IOException {
+    mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
+    mFtpConnection.setCertificateService(mCertificateService);
+    mFtpConnection.setProxyService(mProxyService);
+    return mFtpConnection.connect();
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Then use it to list the files from the remote partner that match the specified criteria (remote folder and file name pattern) defined in the `FtpBean` instance.
 
@@ -206,22 +263,30 @@ Then use it to list the files from the remote partner that match the specified c
       </tr>
 </table>
 
-    @Override
-    public List<FileItem> list() throws IOException {
-        if (mFtpConnection == null) {
-            connect();
-        }
-
-        List<String> names = mFtpConnection.listFiles(mFtpBean.getPartnerDownloadFolder(),
-                mFtpBean.getPartnerDownloadPattern());
-        List<FileItem> result = new ArrayList<FileItem>();
-        if (names != null && names.size() > 0) {
-            for (String name : names) {
-                result.add(new FileItem(name));
-            }
-        }
-        return result;
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+public List&lt;FileItem&gt; list() throws IOException {
+    if (mFtpConnection == null) {
+        connect();
+    }
+
+    List&lt;String&gt; names = mFtpConnection.listFiles(mFtpBean.getPartnerDownloadFolder(),
+            mFtpBean.getPartnerDownloadPattern());
+    List&lt;FileItem&gt; result = new ArrayList&lt;FileItem&gt;();
+    if (names != null &amp;&amp; names.size() &gt; 0) {
+        for (String name : names) {
+            result.add(new FileItem(name));
+        }
+    }
+    return result;
+}<br/></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Note that in the example above, the file will be saved locally with the same name as the name of the remote file when pulled.
 
@@ -246,19 +311,27 @@ So, in the `getFile` method implementation inside the `FTPSite` class, you shoul
 
 First, you should use the `connect()` method to connect to the FTP server:
 
-    /** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
-    private AbstractFTPConnector mFtpConnection;
-
-    /** Connects to a FTP server.
-     *
-     * @throws IOException on error
-     */
-    public String connect() throws IOException {
-        mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
-        mFtpConnection.setCertificateService(mCertificateService);
-        mFtpConnection.setProxyService(mProxyService);
-        return mFtpConnection.connect();
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">/** The FTP client implementation. Allows connecting/disconnecting/transferring files. */
+private AbstractFTPConnector mFtpConnection;
+
+/** Connects to a FTP server.
+ *
+ * @throws IOException on error
+ */
+public String connect() throws IOException {
+    mFtpConnection = new FTPConnectorBuilder().build(mFtpBean);
+    mFtpConnection.setCertificateService(mCertificateService);
+    mFtpConnection.setProxyService(mProxyService);
+    return mFtpConnection.connect();
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Then use it in the `getFile()` method to download the file.
 
@@ -274,19 +347,27 @@ Then use it in the `getFile()` method to download the file.
       </tr>
 </table>
 
-    @Override
-    public void getFile(DestinationFile file) throws IOException {
-        String resolvedHost = "127.0.0.1";
-        if (mFtpConnection == null) {
-            resolvedHost = connect();
-        }
-        mFtpConnection
-            .download(
-                file.getOutputStream(
-                        new RemotePartner(resolvedHost, 
-               mFtpBean.getPartnerDownloadFolder(), mFtpBean.isFtps())),
-                mFtpBean.getPartnerDownloadFolder(), file.getName());
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+public void getFile(DestinationFile file) throws IOException {
+    String resolvedHost = "127.0.0.1";
+    if (mFtpConnection == null) {
+        resolvedHost = connect();
+    }
+    mFtpConnection
+        .download(
+            file.getOutputStream(
+                    new RemotePartner(resolvedHost, 
+           mFtpBean.getPartnerDownloadFolder(), mFtpBean.isFtps())),
+            mFtpBean.getPartnerDownloadFolder(), file.getName());
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 #### public void finalizeExecution() throws IOException; method
 
@@ -310,13 +391,21 @@ In this method you should release any occupied resource, for instance disconnect
       </tr>
 </table>
 
-    @Override
-    public void finalizeExecution() throws IOException {
-        if (mFtpConnection != null) {
-            mFtpConnection.disconnect();
-            mFtpConnection = null;
-        }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+public void finalizeExecution() throws IOException {
+    if (mFtpConnection != null) {
+        mFtpConnection.disconnect();
+        mFtpConnection = null;
+    }
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Connection interface implementation version 1.1
 
@@ -340,11 +429,18 @@ SecureTransport logs the protocol commands as normal protocol commands for the c
       </tr>
 </table>
 
-    @Override
-
-    public List<String> getProtocolCommands() {
-        return mCommandLoggingService.getProtocolCommands();
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override</pre><pre xml:space="preserve">public List&lt;String&gt; getProtocolCommands() {
+    return mCommandLoggingService.getProtocolCommands();
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 #### public String getAdditionalInfo(); method
 
@@ -362,10 +458,19 @@ You can use this method to log any additional information about the transfer. Th
       </tr>
 </table>
 
-    @Override
-    public String getAdditionalInfo() {
-        return mAdditionalInfoLogService.getAdditionalInfo();
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+public String getAdditionalInfo() {
+    return mAdditionalInfoLogService.getAdditionalInfo();
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 #### public FlowAttributesData getFlowAttributesData(); method
 
@@ -392,14 +497,20 @@ This object variable is meant to identify the remote impersonated entity. Could 
 
 This utility is meant to construct RemotePartner objects using any set of RemotePartner properties. Typical usage:
 
-    RemotePartner remotePartner = new RemotePartner.Builder()
-
-         .host("192.168.10.2")
-         .port(21)
-         .container("user2")
-         .folder("/download")
-         .secureConnection(true)
-         .build();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">RemotePartner remotePartner = new RemotePartner.Builder()</pre><pre xml:space="preserve">     .host("192.168.10.2")
+     .port(21)
+     .container("user2")
+     .folder("/download")
+     .secureConnection(true)
+     .build();</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 #### void CustomSite#notifyPTAExecuted(PTAInfo); utility method
 
@@ -416,12 +527,21 @@ Objects of type `PTAInfo `describe an executed post-transmission actions. The ob
 
 Typical usage:
 
-    notifyPTAExecuted(
-       new PTAInfo(
-           "MOVE",
-           PTACompletionStatus.SUCCESS,
-           "/download/success/file.txt",
-           "File 'file.txt' has been successfully moved to '/download/success/'."));
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">notifyPTAExecuted(
+   new PTAInfo(
+       "MOVE",
+       PTACompletionStatus.SUCCESS,
+       "/download/success/file.txt",
+       "File 'file.txt' has been successfully moved to '/download/success/'."));
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### <span id="Connection_Interface_1.4"></span>Connection interface implementation version 1.4
 
@@ -486,8 +606,16 @@ The SecureTransport Pluggable Transfer Site SPI also exposes services from Secur
 
 To use the certificate service, declare a variable with `@Inject` annotation (`javax.inject.Inject`) to the interface of the certificate service provided in the API:
 
-    @Inject
-    private CertificateService certificateService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Inject
+<strong>private</strong> CertificateService certificateService;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The certificate service provides capabilities for:
 
@@ -505,8 +633,16 @@ The certificate service provides capabilities for:
 
 To use the proxy service, declare a variable with `@Inject` annotation to the interface of the proxy service provided in the API:
 
-    @Inject
-    private ProxyService proxyService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Inject
+<strong>private</strong> ProxyService proxyService;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The proxy service provides capabilities for:
 
@@ -520,7 +656,17 @@ The `getProxy` method of the proxy service will return a "`null`" object, if the
 
 To use the SSL context service, declare a variable with `@Inject` annotation (`javax.inject.Inject`) to the interface of the certificate service provided in the API:
 
-    @Injectprivate SSLContextService sslContextService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p><strong>private</strong> SSLContextService sslContextService;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The SSL context service provides capabilities for:
 
@@ -547,8 +693,17 @@ For more information about the third-party libraries logging, see [Third-party l
 
 To use the additional information logging service, declare a variable with an `@Inject` annotation to the interface of the additional information logging service provided in the API:
 
-    @Inject
-    private AdditionalInfoLoggingService mAdditionalInfoLogService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Inject
+<strong>private</strong> AdditionalInfoLoggingService mAdditionalInfoLogService;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The additional information logging service capabilities are:
 
@@ -561,8 +716,18 @@ You can add additional information by calling the `append `method with the infor
 
 The service provides protocol commands logging capabilities in SecureTransport.To use the command logging service, declare а variable with `@Inject` annotation to the interface of the command logging service provided in the API:
 
-        @Inject
-        private CommandLoggingService  mCommandLoggingService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>    @Inject
+    <strong>private</strong> CommandLoggingService  mCommandLoggingService;
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The basic capabilities of this service are:
 
@@ -577,8 +742,17 @@ You can use the `append `method to log a single protocol command. You can call t
 
 This serves a container for flow attributes. This container can be used for reading/writing flow attributes for the current transferred file. To use the flow attributes container, declare a variable with `@Inject` annotation to the interface of the flow attributes data service provided in the API:
 
-    @Inject
-        public FlowAttributesData  mFlowAttributesData;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject
+    <strong>public</strong> FlowAttributesData  mFlowAttributesData;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The `FlowAttributesData` object has the following capabilities:
 
@@ -593,8 +767,18 @@ Sets the flow attributes for the current transferred file. If the attribute alre
 
 You can use expression evaluator service to evaluate and validate the expressions used in site connection implementation. To use the expression evaluator service, declare а variable with `@Inject` annotation to the interface of the expression evaluator service provided in the API:
 
-    @Inject
-        private ExpressionEvaluatorService mExpressionEvaluatorService;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject
+    </p>
+            <p><strong>private</strong> <code>ExpressionEvaluatorService</code> <code>mExpressionEvaluatorService;</code></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The expression evaluator service has the following capabilities:
 
@@ -662,9 +846,15 @@ The transfer attributes contain properties, submitted through the REST API when 
 
 To use the transfer attributes container, declare a variable with `@Inject` annotation to the interface of the transfer attributes data service provided in the API:
 
-    @Inject
-
-    public TransferAttributesData mTransferAttributesData;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>@Inject
+<br/><strong>public</strong> TransferAttributesData mTransferAttributesData;         </td>
+      </tr>
+   </tbody>
+</table>
 
 The `TransferAttributesData` object has the following capabilities:
 
@@ -696,7 +886,17 @@ The account attributes contain the following properties:
 
 To use the account attributes container, declare a variable with `@Inject` annotation to the interface of the account attributes data service provided in the API:
 
-    @Injectpublic AccountAttributesData mAccountAttributesData;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject</p>
+            <p><strong>public</strong> AccountAttributesData mAccountAttributesData;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The `AccountAttributesData` object has the following capabilities:
 
@@ -711,8 +911,19 @@ Available with Pluggable Transfer Site SPI version 1.8, this service allows data
 
 To use the storage service implementation, declare a variable with `@Inject` annotation to the interface of the transfer attributes data service provided in the API:
 
-    @Inject
-        private StorageService storageService ;
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>@Inject
+    </p>
+            <p><strong>private</strong><code> StorageService storageService </code><code>;</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The storage service allows you to create `StorageEntry` objects to be stored and retrieved using the service. It offers the following properties:
 

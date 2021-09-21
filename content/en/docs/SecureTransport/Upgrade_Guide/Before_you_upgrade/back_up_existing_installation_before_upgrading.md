@@ -45,7 +45,10 @@ You can use the following procedure as a way to perform your backup on Windows S
 4.  Back up files of the existing SecureTransport installation and installation information by copying the contents of the following directories, preserving the subdirectory structure, to a ZIP file or some other backup. Name the backup archive `SecureTransport.zip`.  
     
 
-        C:\Axway\SecureTransport
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>HKEY_LOCAL_MACHINE\SOFTWARE\Axway Software</p>            <p>
+									HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Axway_Installer_4.8.0 SecureTransport01
+						</p>            <p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\cygwin_cron
+									</p>            <p>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\AxwaySecureTransport*</p>         </td>      </tr>   </tbody></table>
 
 5.  Back up the Axway home directory. Name the backup archive `Axway Installer.zip`.
 

@@ -24,11 +24,35 @@ The field separator character in the xferlog file is by default a " " (space). T
 
 For example:
 
-    XferLogAppender name="XferLogAppender fileName="FILEDRIVEHOME/var/logs/xferlog" append="true">      <XferLogLayout dateFormat="yyyy-MM-dd HH:mm:ss,SSS"/></XferLogAppender>
-     
-    <XferLogAppender name="XferLogAppender" fileName="FILEDRIVEHOME/var/logs/xferlog" append="true">     <XferLogLayout delimiter=" ; " dateFormat="yyyy-MM-dd HH:mm:ss,SSS"/></XferLogAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+<p xml:space="preserve">XferLogAppender name="XferLogAppender fileName="FILEDRIVEHOME/var/logs/xferlog" append="true"&gt;</p>
+<p xml:space="preserve">      &lt;XferLogLayout dateFormat="yyyy-MM-dd HH:mm:ss,SSS"/&gt;</p>
+<p xml:space="preserve">&lt;/XferLogAppender&gt;
+</p>
+<p xml:space="preserve"> </p>
+<p xml:space="preserve">
+&lt;XferLogAppender name="XferLogAppender" fileName="FILEDRIVEHOME/var/logs/xferlog" append="true"&gt;</p>
+<p xml:space="preserve">     &lt;XferLogLayout delimiter=" ; " dateFormat="yyyy-MM-dd HH:mm:ss,SSS"/&gt;</p>
+            <p>&lt;/XferLogAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
-    <current_time> <transfer_time> <remote_host> <file_size> <file_name> <transfer_mode> <transfer_security> <direction> <access_mode> <user_name> <server_name> 0 *
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>&lt;current_time&gt; &lt;transfer_time&gt; &lt;remote_host&gt; &lt;file_size&gt; &lt;file_name&gt; &lt;transfer_mode&gt; &lt;transfer_security&gt; &lt;direction&gt; &lt;access_mode&gt; &lt;user_name&gt; &lt;server_name&gt; 0 *
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The fields are defined in the following:
 
@@ -140,8 +164,6 @@ The fields are defined in the following:
 
 The following is an example of a typical log entry:
 
-    Wed Jan 11 10:55:13 2006 3 10.191.2.33 5873 /drives/c/home/Virtual/vuser/avatar.jpg b s i r vuser http 0 *
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -154,11 +176,30 @@ The following is an example of a typical log entry:
       </tr>
 </table>
 
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>Wed Jan 11 10:55:13 2006 3 10.191.2.33 5873 /drives/c/home/Virtual/vuser/avatar.jpg b s i r vuser http 0 *         </td>
+      </tr>
+   </tbody>
+</table>
+
 **tools.log** – This log4j-format log file records warnings and error from internal SecureTransport components. The format and content of this file is controlled by the `<FILEDRIVEHOME>/conf/tools-log4j.xml` file.
 
 For example, importing accounts using command-line tool might produce the following message:
 
-    2010-11-16 00:56:14,505 PST WARN [main] com.tumbleweed.st.server.appframework.sql.SessionFactoryManagerImpl - Component type '' is unknown. Using TOOLS configuration.
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">On Windows, it is not possible to modify existing cron jobs or to use cron to run any jobs other than those SecureTransport jobs documented in these topics. Instead, use the Windows Task Scheduler.         </td>
+      </tr>
+</table>
 
 **Related topics:**
 

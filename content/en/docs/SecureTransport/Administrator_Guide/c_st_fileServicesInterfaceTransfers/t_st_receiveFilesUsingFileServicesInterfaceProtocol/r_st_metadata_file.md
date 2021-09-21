@@ -124,30 +124,17 @@
 
 The following is an example of a metadata file:
 
-    <?xml version="1.0" encoding="UTF-8"?>
-    <Transfer>
-       <SourceFileLocation>/opt/shared/incoming/report-20110704
-          </SourceFileLocation>
-       <CycleId>2162164</CycleId>
-       <Protocol>T3Direct</Protocol>
-       <Mode>I</Mode>
-       <Recipients>
-          <Recipient>
-             <Name>acctng</Name>
-             <Path>/incoming/reports</Path>
-          </Recipient> 
-             <Recipient>
-             <Name>audit</Name>
-          <Path>/incoming/check</Path>
-          </Recipient>
-       </Recipients>
-       <Parameters>
-          <Parameter>
-             <Key>status</Key>
-             <Value>complete</Value>
-          </Parameter>
-       </Parameters>
-    </Transfer>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;<br/>&lt;Transfer&gt;<br/>   &lt;SourceFileLocation&gt;/opt/shared/incoming/report-20110704<br/>      &lt;/SourceFileLocation&gt;<br/>   &lt;CycleId&gt;2162164&lt;/CycleId&gt;<br/>   &lt;Protocol&gt;T3Direct&lt;/Protocol&gt;<br/>   &lt;Mode&gt;I&lt;/Mode&gt;<br/>   &lt;Recipients&gt;<br/>      &lt;Recipient&gt;<br/>         &lt;Name&gt;acctng&lt;/Name&gt;<br/>         &lt;Path&gt;/incoming/reports&lt;/Path&gt;<br/>      &lt;/Recipient&gt; <br/>         &lt;Recipient&gt;<br/>         &lt;Name&gt;audit&lt;/Name&gt;<br/>      &lt;Path&gt;/incoming/check&lt;/Path&gt;<br/>      &lt;/Recipient&gt;<br/>   &lt;/Recipients&gt;<br/>   &lt;Parameters&gt;<br/>      &lt;Parameter&gt;<br/>         &lt;Key&gt;status&lt;/Key&gt;<br/>         &lt;Value&gt;complete&lt;/Value&gt;<br/>      &lt;/Parameter&gt;<br/>   &lt;/Parameters&gt;<br/>&lt;/Transfer&gt;</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Related topic:**
 

@@ -45,4 +45,4 @@ During the installation, you need the following information:
 
 **Related topics:**
 
--   [Install SecureTransport](../../../install_overview)
+-   [Install SecureTransport](../../../install_overview2)

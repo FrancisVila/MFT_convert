@@ -119,7 +119,14 @@ The following endpoints are exposed for the end user REST API:
 
 Address Book entry schema:
 
-    AddressBookEntry {/n    id: addressBookSourceId:addressBookEntryId,/n    displayName,/n    mail,/n    parentGroup,/n    type,/n    customAttr1,/n    customAttr2,/n    customAttr3/n}
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>AddressBookEntry {<br>    id: addressBookSourceId:addressBookEntryId,<br>    displayName,<br>    mail,<br>    parentGroup,<br>    type,<br>    customAttr1,<br>    customAttr2,<br>    customAttr3<br>}</br></br></br></br></br></br></br></br></br>         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Note:**
 

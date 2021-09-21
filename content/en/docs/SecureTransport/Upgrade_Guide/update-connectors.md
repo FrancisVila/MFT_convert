@@ -24,6 +24,18 @@ To update a connector, follow the procedure, where &lt;FILEDRIVEHOME> is the Sec
     -   for MS SharePoint
 4.  Restart SecureTransport to load the new configuration.  
     
-        <FILEDRIVEHOME>/bin/stop_all<FILEDRIVEHOME>/bin/start_all
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>rm -rf &lt;FILEDRIVEHOME&gt;/plugins/transferSites/axway-site-s3</code>
+</p>
+            <p><code>rm -f FILEDRIVEHOME&gt;/plugins/transferSites/axway-site-s3.jar</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  

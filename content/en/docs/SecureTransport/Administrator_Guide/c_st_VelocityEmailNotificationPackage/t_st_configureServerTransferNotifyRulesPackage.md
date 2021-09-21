@@ -15,16 +15,29 @@ If the SecureTransport administrator needs a way to handle all cases like wrong 
 4.  Using an external XML editor, modify the `FTPTransfer` rule package to include the following:  
     
 
-        IF ( ( EventType <equal> Server Transfer - Pull OR EventType <equal> Server Transfer - Push ) AND DXAGENT_SITE_PROTOCOL <equal> ftp ) THEN { 
-         id=1 streaming(none) 
-         In-process> com.tumbleweed.st.server.ftp.agent.FtpTransferAgent ( Impersonation="true" )
-         id=2 executeafter(1) streaming(none)
-         In-process> com.tumbleweed.st.server.tm.agents.RetryAgent ( Impersonation="true", dontretry="0 1 2 4 5", internalretry="6" )
-        id=3 executeafter(2) streaming(none)
-         In-process> com.tumbleweed.st.server.tm.agents.Continue ( continue="2 3 4 5" )
-         id=4 executeafter(3) streaming(none) 
-         In-process> com.tumbleweed.st.server.mailer.agent.EmailNotification ( messagetemplate:-PushDeliveryFailure.xhtml, mailserver=<mailserver>, mailfrom=<sender_email>, mailto=<recipient_email> ) 
-         } 
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>IF ( ( EventType &lt;equal&gt; Server Transfer - Pull OR EventType &lt;equal&gt; Server Transfer - Push ) AND DXAGENT_SITE_PROTOCOL &lt;equal&gt; ftp ) THEN { 
+ id=1 streaming(none) 
+ </p>
+            <p>In-process&gt; com.tumbleweed.st.server.ftp.agent.FtpTransferAgent ( Impersonation="true" )
+ id=2 executeafter(1) streaming(none)
+ </p>
+            <p>In-process&gt; com.tumbleweed.st.server.tm.agents.RetryAgent ( Impersonation="true", dontretry="0 1 2 4 5", internalretry="6" )
+id=3 executeafter(2) streaming(none)
+ </p>
+            <p>In-process&gt; com.tumbleweed.st.server.tm.agents.Continue ( continue="2 3 4 5" )
+ id=4 executeafter(3) streaming(none) 
+ </p>
+            <p>In-process&gt; com.tumbleweed.st.server.mailer.agent.EmailNotification ( messagetemplate:-PushDeliveryFailure.xhtml, mailserver=&lt;mailserver&gt;, mailfrom=&lt;sender_email&gt;, mailto=&lt;recipient_email&gt; ) 
+ } </p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 5.  Save the modified `FTPTransfer` rule package.
 

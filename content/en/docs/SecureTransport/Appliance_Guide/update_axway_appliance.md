@@ -4,25 +4,29 @@
     "weight": "130"
 }To install security updates on SecureTransport 5.5 Virtual Appliance, run the following command:
 
-    zypper up
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre><code>zypper up</code></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The first time you install a security update, you will be prompted to accept the Axway GPG key:
 
 New repository or package signing key received:
 
-    Repository: appliance-platform-updates
-
-    Key Name: Axway SecureTransport Appliance <BU.426.ST.Appliance@axway.com>
-
-    Key Fingerprint: 2F4811E2 87CEED53 F951BF78 B006F0E8 9DBDD9E8
-
-    Key Created: Thu 18 Apr 2019 11:46:05 AM EEST
-
-    Key Expires:(does not expire)
-
-    Subkey: 2C76DDE85142DCC3 2019-04-18 [expires: 2021-04-17]
-
-    Rpm Name: gpg-pubkey-9dbdd9e8-5cb8394d
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>Repository: appliance-platform-updates</pre><pre>Key Name: Axway SecureTransport Appliance &lt;BU.426.ST.Appliance@axway.com&gt;</pre><pre>Key Fingerprint: 2F4811E2 87CEED53 F951BF78 B006F0E8 9DBDD9E8</pre><pre>Key Created: Thu 18 Apr 2019 11:46:05 AM EEST</pre><pre>Key Expires:(does not expire)</pre><pre>Subkey: 2C76DDE85142DCC3 2019-04-18 [expires: 2021-04-17]</pre><pre>Rpm Name: gpg-pubkey-9dbdd9e8-5cb8394d</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 You must accept the key to receive the updates.
 

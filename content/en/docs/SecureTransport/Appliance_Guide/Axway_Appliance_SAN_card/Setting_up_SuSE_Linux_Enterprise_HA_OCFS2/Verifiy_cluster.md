@@ -6,33 +6,16 @@
 
 `#crm configure show`
 
-    primitive dlm ocf:pacemaker:controld \
-        op monitor interval="60" timeout="60"
-    primitive o2cb ocf:ocfs2:o2cb \
-        op monitor interval="60" timeout="60"
-    primitive ocfs2-1 ocf:heartbeat:Filesystem \
-        params device="/dev/disk/by-id/dm-name-<per environment>_part2" directory="/mnt/ocfs2" fstype="ocfs2" options="acl" \
-        op monitor interval="20" timeout="40"
-    primitive stonith-sbd stonith:external/sbd \
-        params sbd_device="/dev/disk/by-id/dm-name-<per environment>_part1" \
-        meta target-role="Started" \
-        op monitor interval="20" timeout="20" start-delay="20"
-    group base-group dlm o2cb ocfs2-1
-    clone base-clone base-group \
-        meta interleave="true"
-    property $id="cib-bootstrap-options" \
-        stonith-enabled="true" \
-        no-quorum-policy="ignore" \
-        placement-strategy="balanced" \
-        dc-version="1.1.9-2db99f1" \
-        cluster-infrastructure="classic openais (with plugin)" \
-        expected-quorum-votes="2"
-    rsc_defaults $id="rsc-options" \
-        resource-stickiness="1" \
-        migration-threshold="3"
-    op_defaults $id="op-options" \
-        timeout="600" \
-        record-pending="true"
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>primitive dlm ocf:pacemaker:controld \<br/>    op monitor interval="60" timeout="60"<br/>primitive o2cb ocf:ocfs2:o2cb \<br/>    op monitor interval="60" timeout="60"<br/>primitive ocfs2-1 ocf:heartbeat:Filesystem \<br/>    params device="/dev/disk/by-id/dm-name-&lt;per environment&gt;_part2" directory="/mnt/ocfs2" fstype="ocfs2" options="acl" \<br/>    op monitor interval="20" timeout="40"<br/>primitive stonith-sbd stonith:external/sbd \<br/>    params sbd_device="/dev/disk/by-id/dm-name-&lt;per environment&gt;_part1" \<br/>    meta target-role="Started" \<br/>    op monitor interval="20" timeout="20" start-delay="20"<br/>group base-group dlm o2cb ocfs2-1<br/>clone base-clone base-group \<br/>    meta interleave="true"<br/>property $id="cib-bootstrap-options" \<br/>    stonith-enabled="true" \<br/>    no-quorum-policy="ignore" \<br/>    placement-strategy="balanced" \<br/>    dc-version="1.1.9-2db99f1" \<br/>    cluster-infrastructure="classic openais (with plugin)" \<br/>    expected-quorum-votes="2"<br/>rsc_defaults $id="rsc-options" \<br/>    resource-stickiness="1" \<br/>    migration-threshold="3"<br/>op_defaults $id="op-options" \<br/>    timeout="600" \<br/>    record-pending="true"<br/></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 For each node, there should be a `stonith external/sbd` resource created.
 

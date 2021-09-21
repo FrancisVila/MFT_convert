@@ -8,12 +8,20 @@ To setup a message, follow the steps described in the *Configure HTTP server mes
 
 To disable MOTD, even if it is enabled from the SecureTransport server, edit the `stwebclient.config.json` file and add the following:
 
-    {
-    "features": {
-      ....
-         "messageOfTheDay": {
-            "enabled": false
-         }
-      ....
-     }
-    }                       
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+"features": {
+  ....
+     "messageOfTheDay": {
+        "enabled": false
+     }
+  ....
+ }
+}						</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

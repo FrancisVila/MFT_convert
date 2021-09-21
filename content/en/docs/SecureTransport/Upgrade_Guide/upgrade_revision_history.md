@@ -20,7 +20,7 @@ The following changes are added to the SecureTransport 5.5 Upgrade Guide:
    <tbody>
       <tr data-mc-conditions="">
          <td>5.5 April 2021 Update         </td>
-         <td><a href="../upgrade_overview/upgrade-steps-db">Upgrade steps for Oracle databases</a> added         </td>
+         <td><a href="../upgrade_overview1/upgrade-steps-db">Upgrade steps for Oracle databases</a> added         </td>
       </tr>
       <tr data-mc-conditions="">
          <td>5.5 March 2021 Update         </td>

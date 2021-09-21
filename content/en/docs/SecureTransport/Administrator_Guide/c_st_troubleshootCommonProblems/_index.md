@@ -2,7 +2,7 @@
     "title": "Troubleshoot common problems",
     "linkTitle": "Troubleshoot common problems",
     "weight": "210"
-}The following topics discuss the most common issues that can occur when using SecureTransport. If you are still having issues after following the procedures in this topic, contact Axway Global Support for further assistance. For more information, see [Get more help](get_more_help0.htm#top).
+}The following topics discuss the most common issues that can occur when using SecureTransport. If you are still having issues after following the procedures in this topic, contact Axway Global Support for further assistance. For more information, see [*Get more help* on page 1](get_more_help.htm#top).
 
 -   [Communication problems](t_st_communicationproblems)
 -   [Servers do not start](t_st_servicesdonotstart)

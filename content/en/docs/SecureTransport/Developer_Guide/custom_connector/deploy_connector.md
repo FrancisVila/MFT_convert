@@ -62,7 +62,7 @@
         The META-INF/Plugin-Info.yaml must be created with the same properties as described above.  
         Example:
 
-    -   Custom-Protocol: myProtocolSPI-Version: '1.0':Custom-Site: com.axway.st.plugins.site.MyProtocol_1_0Protocol-Label: My Sample Transfer Site (1.0)Custom-UI: html/mySite-1-0.htmlClass-Path: MySite/lib/lib1.jar MySite/lib/lib2.jar MySite/lib_1_0/lib3_1_0.jar'1.1':Custom-Site: com.axway.st.plugins.site.MyProtocol_1_1Protocol-Label: My Sample Transfer Site (1.1)Custom-UI: html/mySite-1-1.htmlClass-Path: MySite/lib/lib1.jar MySite/lib/lib2.jar MySite/lib_1_1/lib3_1_1.jar
+    -   <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>Custom-Protocol: myProtocol</p>            <p>SPI-Version: '1.0':</p>            <p>Custom-Site: com.axway.st.plugins.site.MyProtocol_1_0</p>            <p>Protocol-Label: My Sample Transfer Site (1.0)</p>            <p>Custom-UI: html/mySite-1-0.html</p>            <p>Class-Path: MySite/lib/lib1.jar MySite/lib/lib2.jar MySite/lib_1_0/lib3_1_0.jar</p>            <p>'1.1':</p>            <p>Custom-Site: com.axway.st.plugins.site.MyProtocol_1_1</p>            <p>Protocol-Label: My Sample Transfer Site (1.1)</p>            <p>Custom-UI: html/mySite-1-1.html</p>            <p>Class-Path: MySite/lib/lib1.jar MySite/lib/lib2.jar MySite/lib_1_1/lib3_1_1.jar</p>         </td>      </tr>   </tbody></table>
 
 2.  Deploy Custom Connector into SecureTransport.
 
@@ -88,19 +88,6 @@ The Custom Connector jar file should be placed in the `${FILEDRIVE_HOME}/plugins
 
 Let's assume you have already implemented the simple FTP Custom Connector with a third party dependencies to external library named `sftp.jar`. Then the `MANIFEST.MF` file should look like this:
 
-    Custom-Protocol: myftp
-    Protocol-Label: FTP(S) Sample Transfer Site
-    Custom-UI: ftpSampleSite.html
-    Custom-Site: com.axway.st.plugins.site.sdk.ftp.FTPSite
-    Class-Path: myftp/lib/sftp.jar
-
-Аdd your Custom Connector implementation jar to the `${FILEDRIVE_HOME}/plugins/transferSites/` directory and the `sftp.jar` file to the `${FILEDRIVE_HOME}/plugins/transferSites/lib/myftp/lib/` directory inside the SecureTransport installation directory. The final directory structure should look like this:
-
-    ${FILEDRIVE_HOME}/plugins/transferSites/myftp.jar
-    ${FILEDRIVE_HOME}/plugins/transferSites/myftp/lib/sftp.jar
-
-After your custom connector jar file, including the third party libraries, is placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory, the SecureTransport Administration Service should be restarted in order to load and register your Custom Connector implementation as a SecureTransport Transfer Site.
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -113,6 +100,35 @@ After your custom connector jar file, including the third party libraries, is pl
       </tr>
 </table>
 
+Аdd your Custom Connector implementation jar to the `${FILEDRIVE_HOME}/plugins/transferSites/` directory and the `sftp.jar` file to the `${FILEDRIVE_HOME}/plugins/transferSites/lib/myftp/lib/` directory inside the SecureTransport installation directory. The final directory structure should look like this:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">Custom-Protocol: myftp
+Protocol-Label: FTP(S) Sample Transfer Site
+Custom-UI: ftpSampleSite.html
+Custom-Site: com.axway.st.plugins.site.sdk.ftp.FTPSite
+Class-Path: myftp/lib/sftp.jar</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+After your custom connector jar file, including the third party libraries, is placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory, the SecureTransport Administration Service should be restarted in order to load and register your Custom Connector implementation as a SecureTransport Transfer Site.
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">${FILEDRIVE_HOME}/plugins/transferSites/myftp.jar
+${FILEDRIVE_HOME}/plugins/transferSites/myftp/lib/sftp.jar<br/></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 For more details about implementing a Custom Connector, review the examples included in SecureTransport Software Development Kit.
 
 ## Third-party libraries logging
@@ -121,11 +137,17 @@ To enable the logging, produced by third-party libraries, add a logger for a spe
 
 For example:
 
-    <logger name="com.amazonaws" additivity="false">    <level value="debug" />
-
-        <appender-ref ref="ServerLog" />
-
-&lt;/logger>
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When you are deploying your Custom Connector implementation, you should only include third party dependencies used by your implementation. You should not add APIs provided run-time by <span>SecureTransport</span>. This includes the <span>SecureTransport</span> Pluggable Transfer Site SPI, Bean Validation API, and JSR-330 (<code>javax.inject</code>) API.         </td>
+      </tr>
+</table>
 
  
 

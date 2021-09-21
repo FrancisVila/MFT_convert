@@ -6,8 +6,6 @@
 
 The *Add Transfer Site* page for HTTP(S) sites presents several sets of options.
 
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
-
 ## Server settings for HTTP(S) Transfer sites
 
 The following table describes the general options for a HTTP(S) transfer site.
@@ -82,8 +80,6 @@ The following table describes the general options for a HTTP(S) transfer site.
 
 ## <span id="Transfer"></span>Transfer settings for HTTP(S) Transfer sites
 
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -97,8 +93,6 @@ The following table describes the general options for a HTTP(S) transfer site.
 </table>
 
 ## <span id="Site"></span>Site login credentials for HTTP(S) Transfer sites
-
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
 
 <table cellspacing="0">
    <col/>
@@ -174,8 +168,6 @@ The following table describes the general options for a HTTP(S) transfer site.
 
 ## <span id="Post"></span>Post transmission Send options for HTTP(S) Transfer sites
 
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
-
 <table cellspacing="0">
    <col/>
    <col/>
@@ -215,8 +207,6 @@ The following table describes the general options for a HTTP(S) transfer site.
 
 ## <span id="Post2"></span>Post transmission Receive options for HTTP(S) Transfer sites
 
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
-
 The Receive options subtab allows you to define post transmission actions on file receive success and failure. Click **Receive Options** to view these settings.
 
 <table cellspacing="0">
@@ -249,8 +239,6 @@ The Receive options subtab allows you to define post transmission actions on fil
 </table>
 
 ## <span id="Advanced"></span>Advanced SSL settings for SSH Transfer sites
-
-![Add Transfer Site - HTTP(S) transfer protocol](Account_TransferSite_HTTPS-SSH.jpg)
 
 Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current HTTP(S) Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
 

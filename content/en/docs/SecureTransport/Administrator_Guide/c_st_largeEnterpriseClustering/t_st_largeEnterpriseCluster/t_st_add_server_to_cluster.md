@@ -6,9 +6,14 @@
 
 To use IPv6 addresses for communication between servers in an Enterprise Cluster (EC), you must edit the `<FILEDRIVEHOME>/conf/tangosol-coherence-override.xml` file on each server and set the value of the `<address>` element to the IPv6 address of the network interface used for cluster communications. The first lines of the `<cluster-config>` element must be:
 
-    <cluster-config>
-        <unicast-listener>
-                  <address>IPv6-address</address>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>&lt;cluster-config&gt;<br/>    &lt;unicast-listener&gt;<br/>              &lt;address&gt;<em>IPv6-address</em>&lt;/address&gt;         </td>
+      </tr>
+   </tbody>
+</table>
 
 1.  Make sure that the Administration Tool service and the Transaction Manager server are not running on the SecureTransport Server that you are adding to the cluster.
 

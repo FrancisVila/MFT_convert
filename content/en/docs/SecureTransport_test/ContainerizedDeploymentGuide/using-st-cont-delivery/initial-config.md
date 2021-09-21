@@ -104,7 +104,23 @@ Plugins can be enabled in docker easily be mounting the `FDH/plugins` directory 
 
 Example which can be applied in the SecureTransport Server Kubernetes configuration file:
 
-    volumes:- name: plugins-volumenfs:server: <NFS-server>path: <absolute-path-to-plugins-directory>volumeMounts:- name: plugins-volumemountPath: /home/stuser/Axway/SecureTransport/plugins
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>volumes:</p>
+            <p>- name: plugins-volume</p>
+            <p>nfs:</p>
+            <p>server: &lt;NFS-server&gt;</p>
+            <p>path: &lt;absolute-path-to-plugins-directory&gt;</p>
+            <p>volumeMounts:</p>
+            <p>- name: plugins-volume</p>
+            <p>mountPath: /home/stuser/Axway/SecureTransport/plugins</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -120,7 +136,18 @@ Example which can be applied in the SecureTransport Server Kubernetes configurat
 
 Note that mounting directory will override the contents of the plugins directory present in the SecureTransport image. Please back up the files using the following command and place them in the persistent storage directory which will be mounted.
 
-    mkdir /tmp/plugins_folderchmod 770 /tmp/plugins_folderdocker run --rm --entrypoint '' -v /tmp/plugins_folder/:/tmp/plugins_folder securetransport-server:5.5 /bin/bash -c 'cp -R $ST_HOME/plugins /tmp/plugins_folder'
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>mkdir /tmp/plugins_folder</p>
+            <p>chmod 770 /tmp/plugins_folder</p>
+            <p>docker run --rm --entrypoint '' -v /tmp/plugins_folder/:/tmp/plugins_folder securetransport-server:5.5 /bin/bash -c 'cp -R $ST_HOME/plugins /tmp/plugins_folder'</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Supported SecureTransport environment variables in containers
 

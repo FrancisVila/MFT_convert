@@ -4,7 +4,7 @@
     "weight": "30"
 }<span id="toplink"></span>
 
-Document version: 10 September 2021
+Document version: 21 September 2021
 
 SecureTransport 5.5 is a General Availability release. This document applies to: Axway SecureTransport Server 5.5, Axway SecureTransport Edge 5.5, and Axway SecureTransport Web Client 5.5 for all supported platforms, databases, and cluster types.
 

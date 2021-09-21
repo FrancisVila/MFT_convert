@@ -28,31 +28,54 @@ Before installing SecureTransport, ensure the `ARG_MAX` setting is correct. It m
 
 1.  Check the ARG\_MAX setting by typing the following:
 
-        getconf ARG_MAX
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>getconf ARG_MAX         </td>      </tr>   </tbody></table>
 
 2.  If the value is less than 1048576, run the following command as the root user:
 
-        chdev -l sys0 -a ncargs=256
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>chdev -l sys0 -a ncargs=256         </td>      </tr>   </tbody></table>
 
 ### Change maximum bundle size
 
 For Enterprise Clustering, use the following commands to change the maximum bundle size:
 
-    /usr/sbin/no -p -o udp_recvspace=4194304
-    /usr/sbin/no -p -o udp_sendspace=65536
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>/usr/sbin/no -p -o udp_recvspace=4194304<br/>/usr/sbin/no -p -o udp_sendspace=65536         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Allow larger socket buffers
 
 For Enterprise Clustering, SecureTransport Server requires larger socket buffers than the default. Use the following commands to allow larger socket buffers:
 
-    /usr/sbin/no -p -o rfc1323=1
-    /usr/sbin/no -p -o sb_max=4194304
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>/usr/sbin/no -p -o rfc1323=1<br>/usr/sbin/no -p -o sb_max=4194304</br></code>
+<br/>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Check and set locale
 
 Use the following command to check the locale:
 
-    locale
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>locale         </td>
+      </tr>
+   </tbody>
+</table>
 
 If the output does not include `LC_CTYPE=en_US.UTF-8`, change the locale to `EN_US.UTF-8` using the Manage Language Environment menu in SMIT. Be sure that EN\_US.UTF-8 locale is installed on your system
 
@@ -79,23 +102,54 @@ In addition, the installation of SecureTransport with an embedded MariaDB or MyS
 
 For Enterprise Clustering, SecureTransport Server requires larger socket buffers than the default. Add the following lines to the `/etc/sysctl.conf` file to allow larger socket buffers:
 
-    net.core.rmem_max=2096304
-    net.core.wmem_max=2096304
-    net.ipv4.tcp_moderate_rcvbuf=1
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Pеrl modules can be removed after a successful installation.          </td>
+      </tr>
+</table>
 
 Then run the following command to apply the settings immediately:
 
-    sysctl -p
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>net.core.rmem_max=2096304<br/>net.core.wmem_max=2096304<br/>net.ipv4.tcp_moderate_rcvbuf=1</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### <span id="Increase"></span>Increase the maximum number of file descriptors
 
 SecureTransport requires more than the default number of file descriptors. Add the following line to the `/etc/sysctl.conf` file:
 
-    fs.file-max = 65536
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>sysctl -p</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Then run the following command to apply the settings immediately:
 
-    sysctl -p
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>fs.file-max = 65536         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## <span id="SLES req"></span>SLES requirements
 

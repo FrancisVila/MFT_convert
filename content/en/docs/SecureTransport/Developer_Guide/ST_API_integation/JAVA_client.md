@@ -95,17 +95,25 @@ To import the API Gateway certificate:
 
 Trusting the API Manager host can be done by providing a custom host verification:
 
-    final DefaultApi api = new DefaultApi();
-    final ApiClient apiClient = api.getApiClient();
-    // allow only the API Gateway host
-    apiClient.getHttpClient().setHostnameVerifier(new HostnameVerifier()
-    {
-        @Override
-        public boolean verify(String hostname, SSLSession session) {
-            // check if hostname is the IP of API Gateway
-            return "10.232.3.104".equals(hostname);
-        }
-    });
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">final DefaultApi api = new DefaultApi();
+final ApiClient apiClient = api.getApiClient();
+// allow only the API Gateway host
+apiClient.getHttpClient().setHostnameVerifier(new HostnameVerifier()
+{
+    @Override
+    public boolean verify(String hostname, SSLSession session) {
+        // check if hostname is the IP of API Gateway
+        return "10.232.3.104".equals(hostname);
+    }
+});</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Authentication
 
@@ -119,10 +127,18 @@ Authentication is completed by the SecureTransport Server , but API Gateway does
 3.  Credentials must be also provided using instructions similar to the following:  
     
 
-        final DefaultApi api = new DefaultApi();
-        final ApiClient apiClient = api.getApiClient();
-        apiClient.setUsername(“admin”);
-        apiClient.setPassword(“admin”);
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">final DefaultApi api = new DefaultApi();
+final ApiClient apiClient = api.getApiClient();
+apiClient.setUsername(“admin”);
+apiClient.setPassword(“admin”);</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>

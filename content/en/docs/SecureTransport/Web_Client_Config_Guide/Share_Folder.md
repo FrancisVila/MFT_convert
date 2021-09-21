@@ -8,14 +8,22 @@
 
 Folder sharing can be disabled from the ST Web Client using the `shareAction` parameter. To do so, add the following section in the custom [configuration file](../config_files):
 
-    {
-       "features": {
-       ...
-        "shareAction": {
-        "enabled": false
-        }
-       ...
-    }                           
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+   "features": {
+   ...
+	"shareAction": {
+	"enabled": false
+	}
+   ...
+}							</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Set the default folder sharing options
 
@@ -29,19 +37,27 @@ As an administrator, you can customize the default setting of the drop-down and 
 
 The following code snippet shows their default values in the ST Web Client configuration file; the defaults are applied when a folder is shared for the first time. For already shared folders, the *Share* dialog opens with the existing sharing settings pre-selected.
 
-    { 
-    "shareAction": {                    
-        "default": {
-        "access": {
-           "shareRights": "download",
-           "showCollaboratorsToAll": false
-        },
-        "notifications": {
-           "collaborators": false,
-           "owner": false
-        }
-      }
-    }                   
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{ 
+"shareAction": {					
+    "default": {
+	"access": {
+	   "shareRights": "download",
+	   "showCollaboratorsToAll": false
+	},
+	"notifications": {
+	   "collaborators": false,
+	   "owner": false
+	}
+  }
+}					</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To change a default setting, in the custom configuration file, add a "shareAction" section and change the value of the corresponding key.
 

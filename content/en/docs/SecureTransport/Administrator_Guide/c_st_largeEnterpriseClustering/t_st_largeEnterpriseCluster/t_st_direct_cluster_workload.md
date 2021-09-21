@@ -53,24 +53,17 @@ If you configure a SecureTransport Server to process PGP tasks, you must make ot
 5.  Find the following text:  
     
 
-        <!-- Uncomment the following if you want to enable the 
-             PGP Event type distribution -->
-        <!--
-        <operator name="or" />
-           <expression>
-              <item>
-                 <attribute>EventType</attribute>
-                 <comparator name="equal" />
-                 <value>Transformation</value>
-              </item>
-              <operator name="and" />
-              <item>
-                 <attribute>DXAGENT_TRANSFORMATION_TYPE</attribute>
-                 <comparator name="equal" />
-                 <value>PGP</value>
-              </item>
-           </expression>
-        -->
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><code>&lt;!-- Uncomment the following if you want to enable the <br>     PGP Event type distribution --&gt;<br>&lt;!--<br>&lt;operator name="or" /&gt;<br/>   &lt;expression&gt;<br/>      &lt;item&gt;<br/>         &lt;attribute&gt;EventType&lt;/attribute&gt;<br/>         &lt;comparator name="equal" /&gt;<br/>         &lt;value&gt;Transformation&lt;/value&gt;<br/>      &lt;/item&gt;<br/>      &lt;operator name="and" /&gt;<br/>      &lt;item&gt;<br/>         &lt;attribute&gt;DXAGENT_TRANSFORMATION_TYPE&lt;/attribute&gt;<br/>         &lt;comparator name="equal" /&gt;<br/>         &lt;value&gt;PGP&lt;/value&gt;<br/>      &lt;/item&gt;<br/>   &lt;/expression&gt;<br/>--&gt;</br></br></br></code>
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 6.  Delete the following comment lines from that text:  
     `<!--`

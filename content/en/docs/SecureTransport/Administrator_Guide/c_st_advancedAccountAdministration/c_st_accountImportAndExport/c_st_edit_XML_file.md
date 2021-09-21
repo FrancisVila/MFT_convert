@@ -98,37 +98,16 @@
 -   When adding an account, include the following elements in a new `completeAccount` element. Do not include the `id` attribute.  
     
 
-                <account authByEmail="false" unlicensed="false" 
-            isUnlicensedAllowedToReply="true" disabled="false" >
-            <name>partner1</name>
-            <type>user</type>
-            <usrid>1001</usrid>
-            <grpid>1003</grpid>
-            <homeFolder>/home/users/partner1</homeFolder>
-            <homeFolderAccessLevel>PUBLIC</homeFolderAccessLevel>
-            <email>partner1@example.com</email>
-            <phone>800-555-0199</phone>
-            <htmlTemplateFolderPath>/html/skin/ric</htmlTemplate
-        FolderPath>
-            <notes>Include ad hoc file transfer functions.</notes>
-            <deliveryMethod>CUSTOM</deliveryMethod>
-            <enrollmentTypes>CHALLENGED_LINK</enrollmentTypes>
-            <implicitEnrollmentType>EXISTING_ACCOUNT</implicitEnrollmentType>
-            <customAttributes>
-                <customProperties>
-                    <entry key="encryptMode">unspecified</entry>
-                    <entry key="routingMode">reject</entry>
-                    <entry key="transferType">E</entry>
-                    <entry key="transfersWebServiceAllowed">false</entry>
-                </customProperties>
-                <localCertificates>
-                </localCertificates>
-                <partnerCertificates>
-                </partnerCertificates>
-                <userCertificates>
-                </userCertificates>
-            </customAttributes>
-        </account> 
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>        &lt;account authByEmail="false" unlicensed="false" <br>    isUnlicensedAllowedToReply="true" disabled="false" &gt;<br>    &lt;name&gt;partner1&lt;/name&gt;<br/>    &lt;type&gt;user&lt;/type&gt;<br/>    &lt;usrid&gt;1001&lt;/usrid&gt;<br/>    &lt;grpid&gt;1003&lt;/grpid&gt;<br/>    &lt;homeFolder&gt;/home/users/partner1&lt;/homeFolder&gt;<br/>    &lt;homeFolderAccessLevel&gt;PUBLIC&lt;/homeFolderAccessLevel&gt;<br/>    &lt;email&gt;partner1@example.com&lt;/email&gt;<br/>    &lt;phone&gt;800-555-0199&lt;/phone&gt;<br/>    &lt;htmlTemplateFolderPath&gt;/html/skin/ric&lt;/htmlTemplate<br/>FolderPath&gt;<br/>    &lt;notes&gt;Include ad hoc file transfer functions.&lt;/notes&gt;<br/>    &lt;deliveryMethod&gt;CUSTOM&lt;/deliveryMethod&gt;<br/>    &lt;enrollmentTypes&gt;CHALLENGED_LINK&lt;/enrollmentTypes&gt;<br/>    &lt;implicitEnrollmentType&gt;EXISTING_ACCOUNT&lt;/implicitEnrollmentType&gt;<br/>    &lt;customAttributes&gt;<br/>        &lt;customProperties&gt;<br/>            &lt;entry key="encryptMode"&gt;unspecified&lt;/entry&gt;<br/>            &lt;entry key="routingMode"&gt;reject&lt;/entry&gt;<br/>            &lt;entry key="transferType"&gt;E&lt;/entry&gt;<br/>            &lt;entry key="transfersWebServiceAllowed"&gt;false&lt;/entry&gt;<br/>        &lt;/customProperties&gt;<br/>        &lt;localCertificates&gt;<br/>        &lt;/localCertificates&gt;<br/>        &lt;partnerCertificates&gt;<br/>        &lt;/partnerCertificates&gt;<br/>        &lt;userCertificates&gt;<br/>        &lt;/userCertificates&gt;<br/>    &lt;/customAttributes&gt;<br/>&lt;/account&gt; </br></br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
       
     The elements correspond to the fields in the account *Settings* pane:  

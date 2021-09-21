@@ -32,7 +32,7 @@
 
 **Related topics:**
 
--   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator2)
+-   [*Advanced Routing delegated administrator* on page 1](../../../c_st_advancedaccountadministration/c_st_delegatedadministration/t_st_create_delegated_administrator)
 -   [Create user accounts](../t_st_create_user_accounts)
 -   [Manage Route Package Templates](../t_st_manage_route_package_templates)
 -   [Manage Routes](../t_st_manage_routes)

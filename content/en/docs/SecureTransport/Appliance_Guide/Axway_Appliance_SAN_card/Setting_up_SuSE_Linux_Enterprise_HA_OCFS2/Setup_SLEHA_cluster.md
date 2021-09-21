@@ -25,17 +25,13 @@
     When all cluster resources are started correctly, **crm\_mon** does not show any errors.  
     
 
-        Last updated: Tue Aug 5 22:15:32 2015
-        Last change: Tue Aug 5 22:13:22 2015 by hacluster via crmd on <hostname>
-        Stack: classic openais (within plugin)
-        Current DC: <hostname> - partition with quorum
-        Version: 1.1.9-2db99f1
-        2 Node configured, 2 expected votes
-        7 Resources configured
-
-
-        Online: [ <hostname> <hostname> ]
-
-        sonith-sbd    (sonith:external/sbd): Started <hostname>
-          Clone Set: base-clone [base-group]
-            Started: [ <hostname> <hostname> ]
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>Last updated: Tue Aug 5 22:15:32 2015<br>Last change: Tue Aug 5 22:13:22 2015 by hacluster via crmd on &lt;hostname&gt;<br>Stack: classic openais (within plugin)<br>Current DC: &lt;hostname&gt; - partition with quorum<br>Version: 1.1.9-2db99f1<br>2 Node configured, 2 expected votes<br>7 Resources configured<br/><br/><br/>Online: [ &lt;hostname&gt; &lt;hostname&gt; ]<br/><br/>sonith-sbd    (sonith:external/sbd): Started &lt;hostname&gt;<br/>  Clone Set: base-clone [base-group]<br/>    Started: [ &lt;hostname&gt; &lt;hostname&gt; ]</br></br></br></br></br></br></p>
+         </td>
+      </tr>
+   </tbody>
+</table>

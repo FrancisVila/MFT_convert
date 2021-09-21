@@ -351,14 +351,15 @@ SecureTransport is expected to work properly with any PGP keys which have been g
 
 ## File Systems for User Files
 
+-   Amazon EFS
+-   CIFS
+-   GFS 2
+-   GlusterFS
+-   IBM Spectrum Scale (GPFS) 5.x
 -   NFS 3.0 - RFC 1813
 -   NFS 4.0 - RFC 7530
--   OCFS 2
 -   NTFS
--   IBM Spectrum Scale (GPFS) 5.x
--   GlusterFS
--   GFS 2
--   Amazon EFS
+-   OCFS 2
 
 ## Compatibility with Axway Products
 

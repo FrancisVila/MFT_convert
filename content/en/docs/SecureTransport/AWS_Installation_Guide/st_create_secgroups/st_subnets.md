@@ -8,7 +8,7 @@ Learn more about [VPCs and Subnets](https://docs.aws.amazon.com/AmazonVPC/latest
 
 In the following example, the VPC on the left has a single CIDR block (10.0.0.0/16) and two subnets.
 
-![](create-subnet.PNG)
+![](create-subnet3.PNG)
 
 ## Create subnets
 
@@ -34,4 +34,4 @@ Two private and one public subnets per availability zone.
         -   172.31.4.0/24 - Private3
         -   172.31.5.0/24 - Private4
 5.  Repeat the steps for the rest subnets.  
-    ![](create-subnet.PNG)  
+    ![](create-subnet3.PNG)  

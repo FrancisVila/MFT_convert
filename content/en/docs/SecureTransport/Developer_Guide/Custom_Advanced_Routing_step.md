@@ -26,18 +26,27 @@ The artifacts required for compilation are:
 
 ## Structure of the JAR file containing the Advanced Routing step
 
-    JAR ROOT
-        com/axway/st/server/route/core/component/customstep/
-            CustomStepArchiveBean.class
-            CustomArchiveStepProducer.class
-            
-        messages/AdvancedRoutingMessages.xml
-        html/customArchiveStep.html
-            
-        META-INF/
-            MANIFEST.MF
-            services/
-                com/axway/st/server/route/step/metadata/CustomArchiveStep.xml
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">JAR ROOT
+	com/axway/st/server/route/core/component/customstep/
+		CustomStepArchiveBean.class
+		CustomArchiveStepProducer.class
+        
+	messages/AdvancedRoutingMessages.xml
+	html/customArchiveStep.html
+        
+	META-INF/
+		MANIFEST.MF
+		services/
+			com/axway/st/server/route/step/metadata/CustomArchiveStep.xml
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Configuration resources
 
@@ -45,16 +54,25 @@ The artifacts required for compilation are:
 
 The file `/META-INF/services/com/axway/st/server/route/step/metadata/CustomArchiveStep.xml` has the following format:
 
-    <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-        <routeStepMetadata>
-            <stepType>CustomArchiveStep</stepType>
-            <stepCategory>Transformation</stepCategory>
-            <stepDisplayName>Custom Archive Step</stepDisplayName>
-            <endpointSchema>st.customarchivestep</endpointSchema>
-            <uiPagePath>customStep.html</uiPagePath>
-            <stepPropertyBean>com.axway.st.server.route.core.component.customstep.CustomArchiveStepBean</stepPropertyBean>
-            <stepProducer>com.axway.st.server.route.core.component.customstep.CustomArchiveStepProducer</stepProducer>
-        </routeStepMetadata>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+	&lt;routeStepMetadata&gt;
+		&lt;stepType&gt;CustomArchiveStep&lt;/stepType&gt;
+		&lt;stepCategory&gt;Transformation&lt;/stepCategory&gt;
+		&lt;stepDisplayName&gt;Custom Archive Step&lt;/stepDisplayName&gt;
+		&lt;endpointSchema&gt;st.customarchivestep&lt;/endpointSchema&gt;
+		&lt;uiPagePath&gt;customStep.html&lt;/uiPagePath&gt;
+		&lt;stepPropertyBean&gt;com.axway.st.server.route.core.component.customstep.CustomArchiveStepBean&lt;/stepPropertyBean&gt;
+		&lt;stepProducer&gt;com.axway.st.server.route.core.component.customstep.CustomArchiveStepProducer&lt;/stepProducer&gt;
+	&lt;/routeStepMetadata&gt;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Where:
 
@@ -73,28 +91,44 @@ The file `/messages/AdvancedRoutingMessages.xml` contains custom messages which 
 
 The format is:
 
-    <?xml version="1.0" encoding="UTF-8"?>
-        <messages>
-            ...
-            <message>
-                <id>SCCS0000</id>
-                <code>ARCS0000</code>
-                <text>General error while executing CustomStep step.</text>
-                <description>General error while executing CustomStep step.</description>
-            </message>
-            <message>
-                <id>SCCS0001</id>
-                <code>ARCS0001</code>
-                <text>Custom message with %s placeholders.</text>
-                <description>Custom message for Custom Step.</description>
-            </message>
-            ...
-        </messages>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+    &lt;messages&gt;
+        ...
+        &lt;message&gt;
+            &lt;id&gt;SCCS0000&lt;/id&gt;
+            &lt;code&gt;ARCS0000&lt;/code&gt;
+            &lt;text&gt;General error while executing CustomStep step.&lt;/text&gt;
+            &lt;description&gt;General error while executing CustomStep step.&lt;/description&gt;
+        &lt;/message&gt;
+        &lt;message&gt;
+            &lt;id&gt;SCCS0001&lt;/id&gt;
+            &lt;code&gt;ARCS0001&lt;/code&gt;
+            &lt;text&gt;Custom message with %s placeholders.&lt;/text&gt;
+            &lt;description&gt;Custom message for Custom Step.&lt;/description&gt;
+        &lt;/message&gt;
+        ...
+    &lt;/messages&gt;
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The `ID` must be unique. The format used for the new `ID`s is as follows:
 
-                            SCCS0000
-                        
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><code>SCCS0000</code></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Where:
 
@@ -108,26 +142,43 @@ The custom steps can use the defined messages in the `/messages/AdvancedRoutingM
 
 Example:
 
-    import org.slf4j.Logger;
-    import org.slf4j.LoggerFactory;
-    import com.axway.st.plugins.improvedrouting.logger.ImmutableMsg;
-    import com.axway.st.plugins.improvedrouting.logger.MessagesHolder;
-    import com.axway.st.plugins.improvedrouting.logger.MessagesFactory;
-
-    // ...
-
-    Logger sLogger = LoggerFactory.getLogger(SomeClass.class);
-    MessagesHolder messagesFactory = MessagesFactory.getInstance();
-
-    // Status code as defined in AdvancedRoutingMessages.xml
-    sLogger.error(messagesFactory.getMessage("SCCS0001")
-            .getFormatedMsg("parameter to replace placeholder"));
-
-    sLogger.error(messagesFactory.getMessage("SCCS0000").getText());
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import com.axway.st.plugins.improvedrouting.logger.ImmutableMsg;
+import com.axway.st.plugins.improvedrouting.logger.MessagesHolder;
+import com.axway.st.plugins.improvedrouting.logger.MessagesFactory;
+
+// ...
+
+Logger sLogger = LoggerFactory.getLogger(SomeClass.class);
+MessagesHolder messagesFactory = MessagesFactory.getInstance();
+
+// Status code as defined in AdvancedRoutingMessages.xml
+sLogger.error(messagesFactory.getMessage("SCCS0001")
+        .getFormatedMsg("parameter to replace placeholder"));
+
+sLogger.error(messagesFactory.getMessage("SCCS0000").getText());
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The log messages will be displayed in the SecureTransport server log with the following format.
 
-    <code> [user performing the action] [route being executed]: log message
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">&lt;code&gt; [user performing the action] [route being executed]: log message</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Available services for Custom Advanced step implemention
 
@@ -163,10 +214,15 @@ Plug-ins can auto-register global configuration options. This can be achieved by
 
 #### Example MANIFEST.MF file content:
 
-                            Plugin-Configuration-Class: com.axway.st.server.route.core.component.customstep.CustomStepConfigurationBean
-                        
-
-                            Plugin-Label: custom-step
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><code>Plugin-Configuration-Class: com.axway.st.server.route.core.component.customstep.CustomStepConfigurationBean</code></pre><pre xml:space="preserve"><code>Plugin-Label</code>: <code>custom-step</code></pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -182,63 +238,28 @@ Plug-ins can auto-register global configuration options. This can be achieved by
 
 #### Example CustomStepConfigurationBean:
 
-    package com.axway.st.server.route.core.component.customstep;
-
-    import com.axway.st.plugins.improvedrouting.spi.Description;
-    import com.axway.st.plugins.improvedrouting.spi.PluginConfigurationBase;
-
-    /**
-    Sample configuration.
-    */
-    public class CustomArchiveStepConfigurationBean implements PluginConfigurationBase 
-
-    {
-
-        private String successMessage;
-
-      private String failureMessage;
-
-      public CustomArchiveStepConfigurationBean() {
-    }
-
-       @Override
-
-       public void initDefault() {
-
-         successMessage = "STEP SUCCEEDED.";
-
-         failureMessage = "STEP FAILED.";
-
-        }
-
-        @Description(value = "Message, that will be logged in Server Log in case of successful step execution.")
-
-        public String getSuccessMessage() {
-
-         return successMessage;
-
-      }
-
-        public void setSuccessMessage(String successMessage) {
-
-          this.successMessage = successMessage;
-
-       }
-
-       @Description(value = "Message, that will be logged in Server Log in case of unsuccessful step execution.")
-
-      public String getFailureMessage() {
-
-         return failureMessage;
-
-      }
-
-       public void setFailureMessage(String failureMessage) {
-
-          this.failureMessage = failureMessage;
-
-       }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">package com.axway.st.server.route.core.component.customstep;
+
+import com.axway.st.plugins.improvedrouting.spi.Description;
+import com.axway.st.plugins.improvedrouting.spi.PluginConfigurationBase;
+
+/**
+Sample configuration.
+*/
+public class CustomArchiveStepConfigurationBean implements PluginConfigurationBase </pre><pre xml:space="preserve">{</pre><pre xml:space="preserve">	private String successMessage;</pre><pre xml:space="preserve">	private String failureMessage;</pre><pre xml:space="preserve">	public CustomArchiveStepConfigurationBean() {
+}</pre><pre xml:space="preserve">	@Override</pre><pre xml:space="preserve">	public void initDefault() {</pre><pre xml:space="preserve">	    successMessage = "STEP SUCCEEDED.";</pre><pre xml:space="preserve">	    failureMessage = "STEP FAILED.";</pre><pre xml:space="preserve">	}
+
+	@Description(value = "Message, that will be logged in Server Log in case of successful step execution.")</pre><pre xml:space="preserve">	public String getSuccessMessage() {</pre><pre xml:space="preserve">	    return successMessage;</pre><pre xml:space="preserve">	}</pre><pre xml:space="preserve">
+	public void setSuccessMessage(String successMessage) {</pre><pre xml:space="preserve">	    this.successMessage = successMessage;</pre><pre xml:space="preserve">	}</pre><pre xml:space="preserve">	@Description(value = "Message, that will be logged in Server Log in case of unsuccessful step execution.")</pre><pre xml:space="preserve">	public String getFailureMessage() {</pre><pre xml:space="preserve">	    return failureMessage;</pre><pre xml:space="preserve">	}</pre><pre xml:space="preserve">	public void setFailureMessage(String failureMessage) {</pre><pre xml:space="preserve">	    this.failureMessage = failureMessage;</pre><pre xml:space="preserve">	}
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The code and `MANIFEST.MF` file described above will create two configuration options - `successMessage `and `failureMessage`. Both will have default values but will be editable from the **Server Configuration** menu. The configuration option will be named following the model: "`Plugins.AdvancedRouting`" + JAR name + option name.
 
@@ -248,9 +269,17 @@ All advanced routing steps are capable of evaluating the exit status of the prev
 
 Example:
 
-    if (condition) {
-        throw new CustomStepExitStatusException("Custom step failure message", "CustomFailureStatusExample");
-     }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">if (condition) {
+    throw new CustomStepExitStatusException("Custom step failure message", "CustomFailureStatusExample");
+ }</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Using the SecureTransport SSLContext service
 
@@ -258,7 +287,16 @@ SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `
 
 The service interface is called `com.axway.st.plugins.improvedrouting.environment.SSLContextService` and can be used in the process method of the custom advanced routing step using the following code:
 
-    SSLContextService sslContextService = producerSettings.getSSLContextService();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">SSLContextService sslContextService = producerSettings.getSSLContextService();
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The service methods are:
 
@@ -273,7 +311,14 @@ These methods have the same behavior as those from the Custom connectors’ `SSL
 
 SecureTransport provides a service for certificate parsing and validation against its keystore. The service is called `com.axway.st.plugins.improvedrouting.environment.CertificateService` and can be used in the process method of the custom advanced routing step using the following code:
 
-    CertificateService certificateService = producerSettings.getCertificateService();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>CertificateService certificateService = producerSettings.getCertificateService();         </td>
+      </tr>
+   </tbody>
+</table>
 
 This service is identical to the Certificate service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
@@ -292,7 +337,14 @@ It declares the following methods:
 
 SecureTransport provides a service for logging messages and exceptions with a different log level. The service interface is called `com.axway.st.plugins.improvedrouting.services.LoggingService` and can be used in the process method of the custom advanced routing step using the following code:
 
-    LoggingService loggingService = producerSettings.getLoggingService();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>LoggingService loggingService = producerSettings.getLoggingService();         </td>
+      </tr>
+   </tbody>
+</table>
 
 The *LoggingService* interface declares functionality for logging messages and exceptions with a different log level – ERROR, WARN, INFO, DEBUG, etc.
 
@@ -300,11 +352,15 @@ This service is identical to the Logging service exposed for Custom connectors, 
 
 Examples:
 
-    loggingService.debug("Start custom AR step processing...");
-
-    loggingService.info("Environments: " + producerSettings.toString());
-
-    loggingService.error("Error during Custom AR processing", e);
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>loggingService.debug("Start custom AR step processing...");</pre><pre>loggingService.info("Environments: " + producerSettings.toString());</pre><pre>loggingService.error("Error during Custom AR processing", e);</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The logging level can be controlled by logger in `tm-log4j.xml` and `admin-log4j.xml`.
 
@@ -314,24 +370,54 @@ SecureTransport provides a service for evaluating and validating expressions use
 
 The service interface is called `com.axway.st.plugins.improvedrouting.services.ExpressionEvaluatorService` and can be used in the process method of the custom advanced routing step using the following code:
 
-    ExpressionEvaluatorService loggingService = producerSettings.getExpressionEvaluatorService();
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>ExpressionEvaluatorService loggingService = producerSettings.getExpressionEvaluatorService();         </td>
+      </tr>
+   </tbody>
+</table>
 
 This service is identical to the Expression Evaluator service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
 Examples:
 
-    Map<String, Object> expressionContext = new HashMap<>();
-
-     expressionContext.put(AccountEnvService.ENVIRONMENT_KEY, producerSettings.getAccountEnvService());expressionContext.put(LdapEnvService.ENVIRONMENT_KEY, producerSettings.getLdapEnvService());
-    expressionContext.put(FlowEnvService.ENVIRONMENT_KEY, producerSettings.getFlowEnvService());
-    expressionContext.put(HttpEnvService.ENVIRONMENT_KEY, producerSettings.getHttpEnvService());  expressionContext.put(SessionEnvService.ENVIRONMENT_KEY, producerSettings.getSessionEnvService());
-    expressionContext.put(TransferEnvService.ENVIRONMENT_KEY, producerSettings.getTransferEnvService());
-    expressionContext.put(StfsEnvService.ENVIRONMENT_KEY, producerSettings.getStfsEnvService());
-    expressionContext.put(SsoEnvService.ENVIRONMENT_KEY, producerSettings.getSsoEnvService());
-    expressionContext.put(PluginEnvService.ENVIRONMENT_KEY, producerSettings.getPluginEnvService());
-    expressionContext.put(RoutingEnvService.ENVIRONMENT_KEY, producerSettings.getRoutingEnvService()); 
-
-    mExpressionEvaluatorService.loadExpressionService(expressionContext);
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>Map&lt;String, Object&gt; expressionContext = new HashMap&lt;&gt;();
+
+</p>
+            <p> </p>
+            <p>expressionContext.put(AccountEnvService.ENVIRONMENT_KEY, producerSettings.getAccountEnvService());</p>
+            <p>expressionContext.put(LdapEnvService.ENVIRONMENT_KEY, producerSettings.getLdapEnvService());
+</p>
+            <p>expressionContext.put(FlowEnvService.ENVIRONMENT_KEY, producerSettings.getFlowEnvService());
+</p>
+            <p>expressionContext.put(HttpEnvService.ENVIRONMENT_KEY, producerSettings.getHttpEnvService()); </p>
+            <p> expressionContext.put(SessionEnvService.ENVIRONMENT_KEY, producerSettings.getSessionEnvService());
+</p>
+            <p>expressionContext.put(TransferEnvService.ENVIRONMENT_KEY, producerSettings.getTransferEnvService());
+</p>
+            <p>expressionContext.put(StfsEnvService.ENVIRONMENT_KEY, producerSettings.getStfsEnvService());
+</p>
+            <p>expressionContext.put(SsoEnvService.ENVIRONMENT_KEY, producerSettings.getSsoEnvService());
+</p>
+            <p>expressionContext.put(PluginEnvService.ENVIRONMENT_KEY, producerSettings.getPluginEnvService());
+</p>
+            <p>expressionContext.put(RoutingEnvService.ENVIRONMENT_KEY, producerSettings.getRoutingEnvService());</p>
+            <p> </p>
+            <p>
+
+mExpressionEvaluatorService.loadExpressionService(expressionContext);
+</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -361,24 +447,31 @@ The classes of the custom steps are loaded with custom classloader which inherit
 
 Creating the step using the SecureTransport Routes and Steps REST API:
 
-    curl -i -X POST -A "SecureTransport\HttpClient" -H "Content-Type: application/json" -H "Accept: application/json" -H "Referer: https://<SecureTransport Host>:<SecureTransport AdminUi Port>" -u<admin name>:<admin password>; -k -d "{
-        {   "type" : "CustomStep",
-            "status" : "ENABLED",
-            "fileFilterExpressionType" : "TEXT_FILES",
-            "fileFilterExpression": "*",
-            "firstCustomProperty" : "value1",
-            "secondCustomProperty" : "value2"
-        }
-
-    }" https://<SecureTransport Host>:<SecureTransport AdminUi Port>/api/v1.2/routes/<simple route id>/steps
-
-        HTTP/1.1 201 Created
-        {
-          "id" : "8a6883dc41ff98b60142041b4467006e",
-          "link" : "https://10.232.3.92:444/api/v1.2/routes/8a6883dc41ff98b601420413b61f0068/steps/8a6883dc41ff98b60142041b4467006e",
-          "status" : "success",
-          "message" : "A new route step with id = 8a6883dc41ff98b60142041b4467006e is created."
-        }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">curl -i -X POST -A "SecureTransport\HttpClient" -H "Content-Type: application/json" -H "Accept: application/json" -H "Referer: https://&lt;SecureTransport Host&gt;:&lt;SecureTransport AdminUi Port&gt;" -u&lt;admin name&gt;:&lt;admin password&gt;; -k -d "{
+    {   "type" : "CustomStep",
+        "status" : "ENABLED",
+        "fileFilterExpressionType" : "TEXT_FILES",
+        "fileFilterExpression": "*",
+        "firstCustomProperty" : "value1",
+        "secondCustomProperty" : "value2"
+    }</pre><pre xml:space="preserve">}" https://&lt;SecureTransport Host&gt;:&lt;SecureTransport AdminUi Port&gt;/api/v1.2/routes/&lt;simple route id&gt;/steps
+
+    HTTP/1.1 201 Created
+    {
+      "id" : "8a6883dc41ff98b60142041b4467006e",
+      "link" : "https://10.232.3.92:444/api/v1.2/routes/8a6883dc41ff98b601420413b61f0068/steps/8a6883dc41ff98b60142041b4467006e",
+      "status" : "success",
+      "message" : "A new route step with id = 8a6883dc41ff98b60142041b4467006e is created."
+    }
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## UI page for custom route step
 
@@ -386,21 +479,38 @@ This section of the document explains how to plug the custom developed AdvancedR
 
 After the deployment of the JAR, you can verify the step is plugged in SecureTransport using the REST API:
 
-    https://<host>:<port>/api/v1.4/routeStepsMetadata
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>https://&lt;host&gt;:&lt;port&gt;/api/v1.4/routeStepsMetadata</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Result:
 
-    [ ...
-            {
-              "stepType" : "CustomArchiveStep",
-              "stepCategory" : "Transformation",
-              "stepDisplayName" : "Custom Archive Step",
-              "endpointSchema" : "st.customarchivestep",
-              "uiPagePath" : "customStep.html",
-              "stepPropertyBean" : "com.axway.st.server.route.core.component.customstep.CustomArchiveStepBean",
-              "stepProducer" : "com.axway.st.server.route.core.component.customstep.CustomArchiveStepProducer"
-            }
-        ... ]
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">[ ...
+        {
+          "stepType" : "CustomArchiveStep",
+          "stepCategory" : "Transformation",
+          "stepDisplayName" : "Custom Archive Step",
+          "endpointSchema" : "st.customarchivestep",
+          "uiPagePath" : "customStep.html",
+          "stepPropertyBean" : "com.axway.st.server.route.core.component.customstep.CustomArchiveStepBean",
+          "stepProducer" : "com.axway.st.server.route.core.component.customstep.CustomArchiveStepProducer"
+        }
+    ... ]
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The `uiPagePath` is the page you have developed for the custom Advanced Routing step.
 
@@ -412,120 +522,126 @@ The step is displayed in the SecureTransport Administration Tool and you can ver
 
 #### Example HTML excerpt
 
-    <style id="antiClickjack">body{display:none !important;}</style>
-    <script type="text/javascript">
-      if (self === top) {
-        var antiClickjack = document.getElementById("antiClickjack");
-        antiClickjack.parentNode.removeChild(antiClickjack);
-      } else {
-        top.location = self.location;
-      }
-
-      components.register(new CustomComponent());
-
-      function CustomComponent() {
-        components.register(new FileFilterActionsTemplate
-          ("#fileFilterActionsContainer"));
-        components.register(new StepFailureActionsTemplate
-          ("#stepFailureActionsContainer"));
-
-        function fill(currentRouteStep) {
-          $('#attr-name').val(currentRouteStep.attrKey);
-          $('#attr-value').val(currentRouteStep.attrValue);
-        }
-
-        function collect(collectionBean) {
-          var attrKey = $.trim($('#attr-name').val());
-          collectionBean.attrKey = attrKey;
-          var attrValue = $.trim($('#attr-value').val());
-          collectionBean.attrValue = attrValue;
-        }
-
-        var instance = new ComponentInterface();
-        instance.fill = fill;
-        instance.collect = collect;
-
-        return Object.seal(instance);
-      }
-    </script>
-
-    <div id="step-errors" ></div>
-
-    <form  method="post">
-      <div >
-         <div id="fileFilterActionsContainer"></div>
-         <div ></div>
-
-         <div id="stepFailureActionsContainer"></div>
-         <div  ></div>
-
-         <fieldset>
-             <legend>Add new flow attribute</legend>
-             <table>
-                <tr>
-                    <td ></td>
-                    <td >
-                        <label>Flow attribute Name:</label>
-                    </td>
-                    <td >
-                        <input type="text" id="attr-name" value="userVars.zipFileName"  />
-                    </td>
-                    <td >
-                        <div >
-                            <a data-content-id="help-box-custom-step-key" title="Open contextual help"  tabIndex="-1" href="#">?</a>
-                            <div >
-                               <div >
-                                   <span ></span><a  href="#">x</a>
-                               </div>
-                               <div ></div>
-                            </div>
-                               <div  id="help-box-custom-step-key">
-                                  <p>The name of the flow attribute to be created. Once the step has set its value, this name can later be used as a key elsewhere in the Advanced Routing steps. </p>
-                                  <p>If the value remains and the key is used as an archive name in the Compress step, the name will be the first 10 characters of the transferred file's content. </p>
-                               </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td ></td>
-                    <td >
-                        <label>Flow attribute Value:</label>
-                    </td>
-                    <td >
-                        <input type="text" id="attr-value" value="&#36;{getFileContent(routing.routeSourceFile, '0', '10', 'UTF-8')}"   />
-                    </td>
-                    <td >
-                        <div >
-                            <a data-content-id="help-box-custom-step-value" title="Open contextual help"  tabIndex="-1" href="#">?</a>
-                            <div >
-                               <div >
-                                       <span ></span><a  href="#">x</a>
-                               </div>
-                               <div ></div>
-                            </div>
-                               <div  id="help-box-custom-step-value">
-                                   <p>The value of the specified key. Currently it is the first 10 characters of the content of the file being transferred.</p>
-                                   <p>The value can be any hardcoded string or an expression.</p>
-                               </div>
-                        </div>
-                    </td>
-                </tr>
-             </table>
-         </fieldset>
-         
-
-    <div  ></div>
-
-            <!-- Route legend begin. -->
-            <div >
-                <p>
-                    <em >*</em><span>Indicates required field</span>
-                </p>
-                <p >Enter value or expression</p>
-            </div>
-            <!-- Route legend end. -->
-        </div>
-    </form>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">
+&lt;style id="antiClickjack"&gt;body{display:none !important;}&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
+  if (self === top) {
+    var antiClickjack = document.getElementById("antiClickjack");
+    antiClickjack.parentNode.removeChild(antiClickjack);
+  } else {
+    top.location = self.location;
+  }
+
+  components.register(new CustomComponent());
+
+  function CustomComponent() {
+    components.register(new FileFilterActionsTemplate
+      ("#fileFilterActionsContainer"));
+    components.register(new StepFailureActionsTemplate
+      ("#stepFailureActionsContainer"));
+
+    function fill(currentRouteStep) {
+      $('#attr-name').val(currentRouteStep.attrKey);
+      $('#attr-value').val(currentRouteStep.attrValue);
+    }
+
+    function collect(collectionBean) {
+      var attrKey = $.trim($('#attr-name').val());
+      collectionBean.attrKey = attrKey;
+      var attrValue = $.trim($('#attr-value').val());
+      collectionBean.attrValue = attrValue;
+    }
+
+    var instance = new ComponentInterface();
+    instance.fill = fill;
+    instance.collect = collect;
+
+    return Object.seal(instance);
+  }
+&lt;/script&gt;</pre><pre xml:space="preserve">
+&lt;div id="step-errors" &gt;&lt;/div&gt;
+
+&lt;form  method="post"&gt;
+  &lt;div &gt;
+     &lt;div id="fileFilterActionsContainer"&gt;&lt;/div&gt;
+     &lt;div &gt;&lt;/div&gt;
+
+     &lt;div id="stepFailureActionsContainer"&gt;&lt;/div&gt;
+     &lt;div  &gt;&lt;/div&gt;
+
+     &lt;fieldset&gt;
+         &lt;legend&gt;Add new flow attribute&lt;/legend&gt;
+         &lt;table&gt;
+            &lt;tr&gt;
+                &lt;td &gt;&lt;/td&gt;
+                &lt;td &gt;
+                    &lt;label&gt;Flow attribute Name:&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td &gt;
+                    &lt;input type="text" id="attr-name" value="userVars.zipFileName"  /&gt;
+                &lt;/td&gt;
+                &lt;td &gt;
+                    &lt;div &gt;
+                        &lt;a data-content-id="help-box-custom-step-key" title="Open contextual help"  tabIndex="-1" href="#"&gt;?&lt;/a&gt;
+                        &lt;div &gt;
+                           &lt;div &gt;
+                               &lt;span &gt;&lt;/span&gt;&lt;a  href="#"&gt;x&lt;/a&gt;
+                           &lt;/div&gt;
+                           &lt;div &gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                           &lt;div  id="help-box-custom-step-key"&gt;
+                              &lt;p&gt;The name of the flow attribute to be created. Once the step has set its value, this name can later be used as a key elsewhere in the Advanced Routing steps. &lt;/p&gt;
+                              &lt;p&gt;If the value remains and the key is used as an archive name in the Compress step, the name will be the first 10 characters of the transferred file's content. &lt;/p&gt;
+                           &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td &gt;&lt;/td&gt;
+                &lt;td &gt;
+                    &lt;label&gt;Flow attribute Value:&lt;/label&gt;
+                &lt;/td&gt;
+                &lt;td &gt;
+                    &lt;input type="text" id="attr-value" value="&amp;#36;{getFileContent(routing.routeSourceFile, '0', '10', 'UTF-8')}"   /&gt;
+                &lt;/td&gt;
+                &lt;td &gt;
+                    &lt;div &gt;
+                        &lt;a data-content-id="help-box-custom-step-value" title="Open contextual help"  tabIndex="-1" href="#"&gt;?&lt;/a&gt;
+                        &lt;div &gt;
+                           &lt;div &gt;
+                                   &lt;span &gt;&lt;/span&gt;&lt;a  href="#"&gt;x&lt;/a&gt;
+                           &lt;/div&gt;
+                           &lt;div &gt;&lt;/div&gt;
+                        &lt;/div&gt;
+                           &lt;div  id="help-box-custom-step-value"&gt;
+                               &lt;p&gt;The value of the specified key. Currently it is the first 10 characters of the content of the file being transferred.&lt;/p&gt;
+                               &lt;p&gt;The value can be any hardcoded string or an expression.&lt;/p&gt;
+                           &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/td&gt;
+            &lt;/tr&gt;
+         &lt;/table&gt;
+     &lt;/fieldset&gt;
+     </pre><pre xml:space="preserve">&lt;div  &gt;&lt;/div&gt;
+
+        &lt;!-- Route legend begin. --&gt;
+        &lt;div &gt;
+            &lt;p&gt;
+                &lt;em &gt;*&lt;/em&gt;&lt;span&gt;Indicates required field&lt;/span&gt;
+            &lt;/p&gt;
+            &lt;p &gt;Enter value or expression&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;!-- Route legend end. --&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To use a Component in the UI, you must only call `components.register(new CustomComponent())`. This adds the component to a registry that is used to control the flow of operations for all components and the step itself.
 

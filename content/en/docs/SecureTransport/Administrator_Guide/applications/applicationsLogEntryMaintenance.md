@@ -78,15 +78,24 @@ To configure the application to export the Server log records before deletion, u
     3.  Create a file:  
         
 
-            ALTER DATABASE databaseuser
-                 ADD FILE
-                 (NAME = N'ST_SERVERLOG _ARCHIVE_databaseuser',
-                 FILENAME = N'<EXPORT_DIR>\ST_SERVERLOG_ARCHIVE_databaseuser.ndf',
-                 SIZE = 10MB,
-                 MAXSIZE = 100MB,
-                 FILEGROWTH = 1MB)
-                 TO FILEGROUP [ST_SERVERLOG_ARCHIVE]
-            GO
+        <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>ALTER DATABASE databaseuser
+     ADD FILE
+     (NAME = N'ST_SERVERLOG _ARCHIVE_databaseuser',
+     FILENAME = N'&lt;EXPORT_DIR&gt;\ST_SERVERLOG_ARCHIVE_databaseuser.ndf',
+     SIZE = 10MB,
+     MAXSIZE = 100MB,
+     FILEGROWTH = 1MB)
+     TO FILEGROUP [ST_SERVERLOG_ARCHIVE]
+GO
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
     4.  Grant all permissions on the `<EXPORT_DIR>` directory created in step "a" to the database user.
 

@@ -10,11 +10,19 @@ Other disabled features include the File sharing action, Transfer queue, navigat
 
 To enable Lite mode, add the following key to the custom `stwebclient.config.json` configuration file.
 
-    {
-     ...
-     "liteMode": {
-        "enabled": true
-     }     
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+ ...
+ "liteMode": {
+    "enabled": true
+ }     </pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
  
 

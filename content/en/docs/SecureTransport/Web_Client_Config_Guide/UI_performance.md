@@ -4,25 +4,15 @@
     "weight": "140"
 }The following code snippet shows the ST Web Client UI performance defaults:
 
-    {
-
-      ...
-
-      "uiPerformance": {
-
-        "refreshThrottleTime": 1000,
-
-         "addressBook": {
-
-        "minimumBatchSize": 100
-
-        }
-
-      }
-
-      ...
-
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">  "uiPerformance": {</pre><pre xml:space="preserve">    "refreshThrottleTime": 1000,</pre><pre xml:space="preserve">     "addressBook": {</pre><pre xml:space="preserve">	"minimumBatchSize": 100</pre><pre xml:space="preserve">    }</pre><pre xml:space="preserve">  }</pre><pre xml:space="preserve">  ...</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To change the UI performance default setting, in the custom configuration file, add a `"uiPerformance"` section and overwrite the desired property.
 

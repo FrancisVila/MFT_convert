@@ -104,7 +104,7 @@ The following table provides information on the macro strings that are supported
          <td>FDX_DIRECTORY_LIST         </td>
          <td>
             <p>For every file or directory present in the current directory, <span>SecureTransport</span> adds the following line:</p>
-            <p><code>PrintFileURL<br>("<em>FileURL</em>", "<em>FileName</em>", "<em>isDir</em>", "<em>size</em>", "<em>date</em>", "<em>icon</em>")</br></code>
+            <p><code>PrintFileURL<br/>("<em>FileURL</em>", "<em>FileName</em>", "<em>isDir</em>", "<em>size</em>", "<em>date</em>", "<em>icon</em>")</code>
 </p>
          </td>
          <td>
@@ -235,14 +235,6 @@ To remove the display of server information in the SecureTransport browser clien
 
 Modify the function `PrintServerInfo` to return `0` as shown in the following code:
 
-    function PrintServerInfo(name, ver, build, host) {
-        return 0;
-    }
-
-### Customize the browser client login
-
-You can customize the type of login page the browser displays for browser client users. Change the values of the parameters described in the following table in the *Server Configuration* page. After you change any of these parameters, bounce the server.
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -255,15 +247,52 @@ You can customize the type of login page the browser displays for browser client
       </tr>
 </table>
 
+### Customize the browser client login
+
+You can customize the type of login page the browser displays for browser client users. Change the values of the parameters described in the following table in the *Server Configuration* page. After you change any of these parameters, bounce the server.
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>function PrintServerInfo(name, ver, build, host) {<br/>    return 0;<br/>}</code>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
 ### Remove the server information displayed on the login screen
 
 To remove the display of server information in the SecureTransport browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
 
 Modify the function `PrintServerInfo` to return `0` as shown in the following code:
 
-    function PrintServerInfo(name, ver, build, host) {
-        return 0;
-    }
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Use</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Http.FdxAuthReply         </td>
+         <td>
+            <p>Controls what type of login the server displays to browser client users. Valid values are:</p>
+            <p><code>BA</code> – The server displays a basic authentication window for the user to type their name and password.</p>
+            <p><code>HTML</code> – The server displays an HTML page for the user to type their name and password.</p>
+            <p><code>ERR</code> – This is used for special cases, for example where cookies are used for authentication. When ERR is set, an authentication request does not occur. To get an authentication request, enable auth, and config agents.</p>
+            <p><code>PREAUTH</code> – Enable auth and config agents. If authorization fails, the server displays an HTML page for the user to type their name and password.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Http.FdxAuthAliases         </td>
+         <td>This parameter controls whether items in the <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/icons/</code> and <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/html/</code> directories are authenticated. Set it to <code>OFF</code> to display custom icons on the login page.         </td>
+      </tr>
+   </tbody>
+</table>
 
 ### Control the display of server information
 
@@ -292,27 +321,10 @@ Possible values:
 
 <table cellspacing="0">
    <col/>
-   <col/>
-   <thead>
-      <tr>
-         <th>Parameter</th>
-         <th>Use</th>
-      </tr>
-   </thead>
    <tbody>
       <tr>
-         <td>Http.FdxAuthReply         </td>
-         <td>
-            <p>Controls what type of login the server displays to browser client users. Valid values are:</p>
-            <p><code>BA</code> – The server displays a basic authentication window for the user to type their name and password.</p>
-            <p><code>HTML</code> – The server displays an HTML page for the user to type their name and password.</p>
-            <p><code>ERR</code> – This is used for special cases, for example where cookies are used for authentication. When ERR is set, an authentication request does not occur. To get an authentication request, enable auth, and config agents.</p>
-            <p><code>PREAUTH</code> – Enable auth and config agents. If authorization fails, the server displays an HTML page for the user to type their name and password.</p>
+         <td><code>function PrintServerInfo(name, ver, build, host) {<br/>    return 0;<br/>}</code>
          </td>
-      </tr>
-      <tr>
-         <td>Http.FdxAuthAliases         </td>
-         <td>This parameter controls whether items in the <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/icons/</code> and <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/html/</code> directories are authenticated. Set it to <code>OFF</code> to display custom icons on the login page.         </td>
       </tr>
    </tbody>
 </table>

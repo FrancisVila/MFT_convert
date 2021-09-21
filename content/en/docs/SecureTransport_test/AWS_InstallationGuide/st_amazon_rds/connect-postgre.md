@@ -41,37 +41,76 @@ Connect to a PostgreSQL DB instance using pgAdmin
 
 ## Create tables and set ownership of the PostgreSQL Database
 
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+      </tr>
+   </tbody>
+</table>
+
 1.  Create "user/login":  
     
 
-        CREATE ROLE user/login WITH   LOGIN   NOSUPERUSER   NOCREATEDB   NOCREATEROLE   INHERIT   NOREPLICATION   CONNECTION LIMIT -1   PASSWORD 'xxxxxx';
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CREATE ROLE user/login WITH</p>
+            <p>   LOGIN</p>
+            <p>   NOSUPERUSER</p>
+            <p>   NOCREATEDB</p>
+            <p>   NOCREATEROLE</p>
+            <p>   INHERIT</p>
+            <p>   NOREPLICATION</p>
+            <p>   CONNECTION LIMIT -1</p>
+            <p>   PASSWORD 'xxxxxx';</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 2.  Grant privileges to user:  
     
 
-        GRANT "user/login" TO postgres;
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>GRANT "user/login" TO postgres;         </td>
+      </tr>
+   </tbody>
+</table>
 
 3.  Create tablespaces the following tablespaces:
 
     -   st\_data
 
-    <!-- -->
-
-        CREATE TABLESPACE st_dataOWNER postgresGRANT CREATE ON TABLESPACE st_data TO ‘user/login’;
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>CREATE TABLESPACE st_data            <p>OWNER postgres</p>            <p>GRANT CREATE ON TABLESPACE st_data TO ‘user/login’;</p>         </td>      </tr>   </tbody></table>
 
     -   st\_filetracking
 
-    <!-- -->
-
-        CREATE TABLESPACE st_filetrackingOWNER postgresGRANT CREATE ON TABLESPACE st_filetracking TO ‘user/login’;
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>CREATE TABLESPACE st_filetracking</p>            <p>OWNER postgres</p>            <p>GRANT CREATE ON TABLESPACE st_filetracking TO ‘user/login’;</p>         </td>      </tr>   </tbody></table>
 
     -   st\_serverlog
 
-    <!-- -->
-
-        CREATE TABLESPACE st_serverlogOWNER postgresGRANT CREATE ON TABLESPACE st_serverlog TO ‘user/login’;
+    <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>CREATE TABLESPACE st_serverlog</p>            <p>OWNER postgres</p>            <p>GRANT CREATE ON TABLESPACE st_serverlog TO ‘user/login’;</p>         </td>      </tr>   </tbody></table>
 
 4.  create database  
     
 
-        CREATE DATABASE 'dbname'   WITH   OWNER = 'user/login'   ENCODING = 'UTF8'   CONNECTION LIMIT = -1;
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CREATE DATABASE 'dbname'</p>
+            <p>   WITH</p>
+            <p>   OWNER = 'user/login'</p>
+            <p>   ENCODING = 'UTF8'</p>
+            <p>   CONNECTION LIMIT = -1;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>

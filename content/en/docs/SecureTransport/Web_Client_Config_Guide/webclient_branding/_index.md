@@ -17,7 +17,16 @@ On a separate machine than the ST Server, install NodeJS from the official websi
 
 Then install the less compiler (version 3.9.0), postcss-cli (version 5.0.1), autoprefixer (version 9.4.5), clean-css (version 4.2.1), and postcss-clean (version 1.1.0):
 
-    npm install -g less@3.9.0 postcss-cli@5.0.1 autoprefixer@9.4.5 clean-css@4.2.1 postcss-clean@1.1.0
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>npm install -g less@3.9.0 postcss-cli@5.0.1 autoprefixer@9.4.5 clean-css@4.2.1 postcss-clean@1.1.0</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -71,7 +80,30 @@ The `favicon.ico` file must be added again after these operations.
 
 1.  Copy the branding assets archive` C/assets/branding/branding_assets.zip` on the system where you installed NodeJS and unzip it. After unzipping, it should have the following directory structure:  
     
-        assets_508.less_a5.less_book.less_branding.less_download.less_fonts.less_header.less_icons.less_media-queries.less_mixins.less_reset.less_spinner.lessprogress.lesswap.less
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>assets</p>
+            <p>_508.less</p>
+            <p>_a5.less</p>
+            <p>_book.less</p>
+            <p>_branding.less</p>
+            <p>_download.less</p>
+            <p>_fonts.less</p>
+            <p>_header.less</p>
+            <p>_icons.less</p>
+            <p>_media-queries.less</p>
+            <p>_mixins.less</p>
+            <p>_reset.less</p>
+            <p>_spinner.less</p>
+            <p>progress.less</p>
+            <p>wap.less</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 2.  To change the color theme, follow the steps bellow. If you want to change an existing style or create a new one, go to step 3.  
     2.1 Open `_branding.less` in a text editor. The color theme is defined by a set of variables:  
     -   `toolbarBgImage` - \[null | path\]
@@ -99,35 +131,15 @@ The `favicon.ico` file must be added again after these operations.
     Example: removing the background image  
       
     
-        /* the original style definition in wap.less at line 3104 */
-
-        body.Login {
-
-          color: contrast(@baseColor);
-
-          background-color: @baseColor;
-
-          background-image: url(textures/login_background_1920x1080.jpg);
-
-          background-position: center center;
-
-          background-size: cover;
-
-          background-attachment: fixed;
-
-        }
-
-         
-
-        /the modified style definition in * custom.less */
-
-        body.Login {
-
-          /* Set background-image to 'none' */
-
-          background-image: none;
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>/* the original style definition in wap.less at line 3104 */</pre><pre>body.Login {</pre><pre xml:space="preserve">  color: contrast(@baseColor);</pre><pre xml:space="preserve">  background-color: @baseColor;</pre><pre xml:space="preserve">  background-image: url(textures/login_background_1920x1080.jpg);</pre><pre xml:space="preserve">  background-position: center center;</pre><pre xml:space="preserve">  background-size: cover;</pre><pre xml:space="preserve">  background-attachment: fixed;</pre><pre>}</pre><pre> </pre><pre>/the modified style definition in * custom.less */</pre><pre>body.Login {</pre><pre xml:space="preserve">  /* Set background-image to 'none' */</pre><pre xml:space="preserve">  background-image: none;</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
       
     3.3 Copy `custom.less` next to the other branding artifacts (`wap.less, progress.less`, etc. ) to the unzipped folder.

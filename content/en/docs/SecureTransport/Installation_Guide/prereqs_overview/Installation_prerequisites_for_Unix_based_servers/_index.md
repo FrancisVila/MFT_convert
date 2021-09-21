@@ -17,8 +17,8 @@
 
     3.  Add the following content to the `override.conf` file:
 
-    4.  [Service]
-            TasksMax=8192
+    4.  <table cellspacing="0">   <col/>   <tbody>      <tr>         <td>            <p>[Service]
+</p>            <p>TasksMax=8192</p>         </td>      </tr>   </tbody></table>
 
     5.  Repeat these steps for the `securetransport_db` service, as well as every protocol service in use.
 
@@ -96,7 +96,17 @@ To set system resource limits on RHEL:
 
 1.  Modify the file `/etc/security/limits.conf`. Use the following setting to allow more than 1 GB of memory:
 
-        <username> hard memlock 1048576
+    <table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure the resources allowed include at least 8 GB of memory.         </td>
+      </tr>
+</table>
 
 2.  Reboot the computer.
 

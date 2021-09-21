@@ -20,27 +20,15 @@ To add the Bulgarian language:
 3.  Edit the `stwebclient.config.json` file and specify the additional language in the `i18n` section:  
     
 
-        {
-
-          ...
-
-          "i18n": {
-
-            "additionalLocales": [{
-
-              "id": "bg",
-
-              "nameEng": "Bulgarian",
-
-              "name": "Български"
-
-            }]
-
-          }
-
-          ...
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">  "i18n": {</pre><pre xml:space="preserve">    "additionalLocales": [{</pre><pre xml:space="preserve">      "id": "bg",</pre><pre xml:space="preserve">      "nameEng": "Bulgarian",</pre><pre xml:space="preserve">      "name": "Български"</pre><pre xml:space="preserve">    }]</pre><pre xml:space="preserve">  }</pre><pre xml:space="preserve">  ...</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 4.  Refresh the ST Web Client and open the *Preferences* pane. The new language should be present in the *Language* drop-down menu.
 
@@ -55,31 +43,27 @@ To change the Welcome label to "Hello Mate:"
 2.  Using the same structure as the English translation (`C/locales/en/translation.json`) file, add the labels that need changed:  
     
 
-        {
-
-        "header": {
-
-          "user_welcome": "Hello mate, "
-
-          }
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre>"header": {</pre><pre xml:space="preserve">  "user_welcome": "Hello mate, "</pre><pre xml:space="preserve">  }</pre><pre>}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 3.  Edit the `stwebclient.config.json` file and specify the override for the English language in the `i18n` section:  
     
 
-        {
-
-          ...
-
-          "i18n": {
-
-            "overridenLocales": ["en"]
-
-          }
-
-          ...
-
-        }
+    <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">  "i18n": {</pre><pre xml:space="preserve">    "overridenLocales": ["en"]</pre><pre xml:space="preserve">  }</pre><pre xml:space="preserve">  ...</pre><pre xml:space="preserve">}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 4.  Refresh the ST Web Client. The overridden label should be displayed.

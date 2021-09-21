@@ -6,7 +6,7 @@
 
 Business units can be created prior to configuring the Route Package Template. For configuration information, refer to [Manage business units](t_st_businessunits.htm)
 
-Optionally, an Advanced Routing administrator can be created. For configuration information, refer to [Advanced Routing delegated administrator](../c_st_configuration/t_st_create_delegated_administrator2) and to [Advanced Routing delegated administrator](../c_st_configuration/t_st_create_delegated_administrator2).
+Optionally, an Advanced Routing administrator can be created. For configuration information, refer to [Advanced Routing delegated administrator](../../c_st_advancedaccountadministration/c_st_delegatedadministration/t_st_create_delegated_administrator) and to [Advanced Routing delegated administrator](../../c_st_advancedaccountadministration/c_st_delegatedadministration/t_st_create_delegated_administrator).
 
 The Advanced Routing feature should be configured in the following order:
 
@@ -18,7 +18,7 @@ The Advanced Routing feature should be configured in the following order:
 
 ## Create Advanced Routing administrator
 
-In order to setup an administrator dedicated to managing the Advanced Routing application and Route Package Templates it is necessary to create an Advanced Routing administrator with file tracking, accounts, applications, mail templates, and routes privileges. For instructions on creating an Advanced Routing administrator, refer to [Advanced Routing delegated administrator](../c_st_configuration/t_st_create_delegated_administrator2).
+In order to setup an administrator dedicated to managing the Advanced Routing application and Route Package Templates it is necessary to create an Advanced Routing administrator with file tracking, accounts, applications, mail templates, and routes privileges. For instructions on creating an Advanced Routing administrator, refer to [Advanced Routing delegated administrator](../../c_st_advancedaccountadministration/c_st_delegatedadministration/t_st_create_delegated_administrator).
 
 ## Create user accounts
 

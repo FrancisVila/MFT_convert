@@ -15,13 +15,16 @@ When you write a custom script, you can use the following defined environment va
 
 The following example `<FILEDRIVEHOME>/bin/custom_collect_support_information` script illustrates writing a file to the support directory.
 
-    # Collect user files
-    #
-    USER_HOME="/home/users"
-    USERS="partner2 partner7"
-
-    echo "=== Saving user files ==="
-    tar -cf "${SUPPORT_DIR}/users_${HOST}.tar" -C "${USER_HOME}" "${USERS}"
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p># Collect user files<br/>#<br/>USER_HOME="/home/users"<br/>USERS="partner2 partner7"<br/><br/>echo "=== Saving user files ==="<br/>tar -cf "${SUPPORT_DIR}/users_${HOST}.tar" -C "${USER_HOME}" "${USERS}"</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Related topics:**
 

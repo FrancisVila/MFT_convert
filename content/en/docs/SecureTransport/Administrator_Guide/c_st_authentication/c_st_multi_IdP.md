@@ -79,10 +79,19 @@ To configure Identity provider resolution for administrators, open the `sso-admi
 
 **Query parameter resolution example:**
 
-                                <QueryParameter name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-    </QueryParameter>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><span>&lt;QueryParameter name="idp_id"&gt;
+    &lt;Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" /&gt;
+    &lt;Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" /&gt;
+&lt;/QueryParameter&gt;</span>
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -104,7 +113,7 @@ To configure Identity provider resolution for administrators, open the `sso-admi
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.Admin.SSO.localIdpId</code> to be able to configure the selection of <span>SecureTransport</span> as local authentication provider and SSO Identity Provider. For more information on how to use SecureTransport as Identity provider, refer to <a href="../c_st_identity_provider" xrefformat="{paratext}">SecureTransport as an Identity Provider</a>.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.Admin.SSO.localIdpId</code> to be able to configure the selection of <span>SecureTransport</span> as local authentication provider and SSO Identity Provider. For more information on how to use SecureTransport as Identity provider, refer to <a href="../c_st_identity_provider">SecureTransport as an Identity Provider</a>.         </td>
       </tr>
 </table>
 
@@ -118,10 +127,19 @@ SecureTransport will choose the Identity Provider with an e`ntityId=’https://s
 
 **Header resolution example:**
 
-                                <Header name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-    </Header>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><span>&lt;Header name="idp_id"&gt;
+    &lt;Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" /&gt;
+    &lt;Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" /&gt;
+&lt;/Header&gt;</span>
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -143,7 +161,7 @@ SecureTransport will choose the Identity Provider with an e`ntityId=’https://s
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.Admin.SSO.localIdpId</code> in order to be able to configure selection of SecureTransport as local authentication provider and SSO Identity Provider. For more information on how to use SecureTransport as Identity Provider, refer to <a href="../c_st_identity_provider" xrefformat="{paratext}">SecureTransport as an Identity Provider</a>.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.Admin.SSO.localIdpId</code> in order to be able to configure selection of SecureTransport as local authentication provider and SSO Identity Provider. For more information on how to use SecureTransport as Identity Provider, refer to <a href="../c_st_identity_provider">SecureTransport as an Identity Provider</a>.         </td>
       </tr>
 </table>
 
@@ -161,11 +179,20 @@ To configure Identity provider resolution for end-users, open the `sso-enduser.x
 
 **Query parameter resolution example:**
 
-                                <QueryParameter name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-        <Mapping value="kerbIdP" entityId="kerberos" />
-    </QueryParameter>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><span>&lt;QueryParameter name="idp_id"&gt;
+    &lt;Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" /&gt;
+    &lt;Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" /&gt;
+    &lt;Mapping value="kerbIdP" entityId="kerberos" /&gt;
+&lt;/QueryParameter&gt;</span>
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -187,7 +214,7 @@ To configure Identity provider resolution for end-users, open the `sso-enduser.x
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.EndUser.SSO.localIdpId</code> to be able to configure selection of <span>SecureTransport</span> as local authentication provider and SSO Identity Provider. For more information on how to use <span>SecureTransport</span> as Identity provider, refer to <a href="../c_st_identity_provider" xrefformat="{paratext}">SecureTransport as an Identity Provider</a>.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.EndUser.SSO.localIdpId</code> to be able to configure selection of <span>SecureTransport</span> as local authentication provider and SSO Identity Provider. For more information on how to use <span>SecureTransport</span> as Identity provider, refer to <a href="../c_st_identity_provider">SecureTransport as an Identity Provider</a>.         </td>
       </tr>
 </table>
 
@@ -201,11 +228,20 @@ SecureTransport will choose the Identity provider with an `entityId=’https://s
 
 **Header resolution example:**
 
-                                <Header name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-        <Mapping value="kerbIdP" entityId="kerberos" />
-    </Header>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"><span>&lt;Header name="idp_id"&gt;
+    &lt;Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" /&gt;
+    &lt;Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" /&gt;
+    &lt;Mapping value="kerbIdP" entityId="kerberos" /&gt;
+&lt;/Header&gt;</span>
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -227,7 +263,7 @@ SecureTransport will choose the Identity provider with an `entityId=’https://s
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.EndUser.SSO.localIdpId</code> in order to be able to configure selection of <span>SecureTransport</span> as a local authentication provider and SSO Identity Provider. For more information on how to use <span>SecureTransport</span> as Identity Provider, refer to <a href="../c_st_identity_provider" xrefformat="{paratext}">SecureTransport as an Identity Provider</a>.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Ensure that the name of the query parameter/header is different than <span>SecureTransport</span> configuration option <code>LoginSettings.EndUser.SSO.localIdpId</code> in order to be able to configure selection of <span>SecureTransport</span> as a local authentication provider and SSO Identity Provider. For more information on how to use <span>SecureTransport</span> as Identity Provider, refer to <a href="../c_st_identity_provider">SecureTransport as an Identity Provider</a>.         </td>
       </tr>
 </table>
 

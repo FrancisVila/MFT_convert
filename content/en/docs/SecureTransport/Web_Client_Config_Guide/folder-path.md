@@ -10,19 +10,27 @@ The URL format of the links to resources in ST Web Client is determined by the `
 
 The following code snippet shows the default ST Web Client configuration file. With this configuration, ST Web Client uses URL paths.
 
-    {
-    "features": {
-       "clientRouter": {
-          "enabled": true
-        }
-       },
-    ....
-    "clientRouter": {
-       "folderPathUrl": {
-          "forceQueryStringParameter": false
-          }
-       }
-    }                           
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+"features": {
+   "clientRouter": {
+      "enabled": true
+	}
+   },
+....
+"clientRouter": {
+   "folderPathUrl": {
+      "forceQueryStringParameter": false
+      }
+   }
+}							</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To adjust the directory paths, edit the custom configuration file to add those two sections and change the parameters' values as needed.
 

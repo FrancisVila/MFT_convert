@@ -6,7 +6,7 @@
 
 The following topics provide how-to instructions for configuring Advanced Routing:
 
--   [Advanced Routing delegated administrator](t_st_create_delegated_administrator2) - Provides how-to instructions for creating an Advanced Routing delegated administrator.
+-   [*Advanced Routing delegated administrator* on page 1](../../c_st_advancedaccountadministration/c_st_delegatedadministration/t_st_create_delegated_administrator) - Provides how-to instructions for creating an Advanced Routing delegated administrator.
 -   [Create user accounts](t_st_create_user_accounts) - Provides how-to instructions for creating user accounts.
 -   [Create Advanced Routing application](t_st_create_advanced_routing_application) - Provides how-to instructions for creating Advanced Routing application.
 -   [Manage Route Package Templates](t_st_manage_route_package_templates) - Provides how-to instructions for managing Route Package Templates.

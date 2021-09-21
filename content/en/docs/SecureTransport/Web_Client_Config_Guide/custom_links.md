@@ -8,16 +8,24 @@
 
 To enable Custom Links, in the custom configuration file, add the `userMenuCustomLinks` property and set its value to `true`.
 
-    {
-       "features": {
-       ...
-          "userMenuCustomLinks": {
-             "enabled": true
-          },
-       ...
-       },
-       ...
-    }                       
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+   "features": {
+   ...
+      "userMenuCustomLinks": {
+         "enabled": true
+      },
+   ...
+   },
+   ...
+}						</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Custom links without i18n translations
 
@@ -25,21 +33,29 @@ Add the feature section to the custom configuration file. Set `insertSeparator` 
 
 A sample configuration with two links and no separator:
 
-    {
-       ...
-       "userMenuCustomLinks": {
-          "insertSeparator": false,
-          "items": [{
-             "label": "Google search",
-             "url": "http://google.com"
-          }, {
-             "label": "Company policy",
-             "url": "https://mycompany.com/policy",
-             "useSameWindow": true
-          }]
-       }
-       ...
-    }                   
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{
+   ...
+   "userMenuCustomLinks": {
+      "insertSeparator": false,
+      "items": [{
+         "label": "Google search",
+         "url": "http://google.com"
+      }, {
+         "label": "Company policy",
+         "url": "https://mycompany.com/policy",
+         "useSameWindow": true
+      }]
+   }
+   ...
+}					</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 ## Custom links with i18n
 
@@ -67,35 +83,31 @@ To enable translations via i18n module, follow the steps:
 
 The final configuration should look like this:
 
-    {
-       "features": {
-          "userMenuCustomLinks": {
-             "enabled": true
-         },
-       },
-         "userMenuCustomLinks": {
-            "i18n": {
-              "enabled": true,
-              "sectionName": "custom_links"
-         }, 
-       "items": [{
-          "label": "link1",
-          "url": "http://google.com"
-       }, {
-       "label": "link2",
-       "url": "https://mycompany.com/policy",
-       "useSameWindow": true
-       }]
-       "
-    },i18n": {
-         "additionalLocales": [{
-            "id": "bg",
-         "nameEng": "Bulgarian",
-         "name": "български" 
-          }],
-         "overridenLocales": ["en"]
-       },
-       ...
-    }                       
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>{
+  ...
+  "userMenuCustomLinks": {
+    "i18n": {
+      "enabled": true,
+      "sectionName": "custom_links"
+    },
+    "items": [{
+      "label": "link1",
+      "url": "http://google.com"
+    }, {
+      "label": "link2",
+      "url": "https://mycompany.com/policy"
+    }]
+  }
+  ...
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 If all settings are correct, the links' names should be properly displayed for the selected locale.

@@ -8,14 +8,22 @@
 
 Modify the `stwebclient.config.json` configuration file to add `displayAccountId` property and set `enabled` to `false`.
 
-1.  { 
-        "features": {
-           "displayAccountId" : {
-            "enabled": false  
-           },
-         }
-         ....
-        }
+1.  <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">{ 
+"features": {
+   "displayAccountId" : {
+	"enabled": false  
+   },
+ }
+ ....
+}</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Then, refresh the browser to apply the changes.
 
@@ -31,11 +39,19 @@ It takes the following values ordered from highest to lowest precedence:
 
 As **Email Contact** is an optional field, if it is not filled-in, then the next-highest precedence value will be taken. For example, for the following code snippet where the value is set to `emailContact`:
 
-1.   "displayAccountId": {
-           "preferredAttribute": "emailContact" 
-         } 
-         ....
-        }                               
+1.  <table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve"> "displayAccountId": {
+   "preferredAttribute": "emailContact" 
+ } 
+ ....
+}								</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The result would be: If an email address is filled-in in the **Email Contact** field in the account settings, it will be displayed in the **Welcome** menu. If the filed is blank, then the login name of the account will be displayed.
 

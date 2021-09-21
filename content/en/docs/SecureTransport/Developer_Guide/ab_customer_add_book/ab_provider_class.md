@@ -20,291 +20,329 @@ The `AddressBookProvider` interface must be implemented in order to create a new
 
 The structure of the `addressbook.txt` file is:
 
-    name,email,parentGroup,organization
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre>name,email,parentGroup,organization</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Example `addressbook.txt` file format and content:
 
-    John Doe,jdoe@company.com,R&D Team,organization=Company
-    Jane Smith,jsmith@company.com,Tactical Team,organization=Company
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">John Doe,jdoe@company.com,R&amp;D Team,organization=Company
+Jane Smith,jsmith@company.com,Tactical Team,organization=Company</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The following code illustrates a custom file provider implementation, which reads its entries from a local file:
 
-    package com.axway.st.plugins.abcustomsource.sdk.file.provider;
-
-    import com.axway.st.plugins.absource.AddressBookCriteria;
-    import com.axway.st.plugins.absource.AddressBookEntry;
-    import com.axway.st.plugins.absource.AddressBookEntry.EntryId;
-    import com.axway.st.plugins.absource.AddressBookEntryIterator;
-    import com.axway.st.plugins.absource.AddressBookGlobalConstraintException;
-    import com.axway.st.plugins.absource.AddressBookPermissionException;
-    import com.axway.st.plugins.absource.AddressBookProvider;
-    import com.axway.st.plugins.absource.AddressBookProviderConfiguration;
-    import com.axway.st.plugins.absource.Subject;
-
-    import com.axway.st.plugins.abcustomsource.sdk.file.configuration.AddressBookFile
-    ProviderConfiguration;
-    import com.axway.st.plugins.abcustomsource.sdk.file.criterion.AddressBookFileCriteria;
-    import com.axway.st.plugins.abcustomsource.sdk.file.criterion.MyAddressBookEntryBean;
-
-    /**
-     * Address Book File Provider.
-     *
-     */
-    public class AddressBookFileProvider implements AddressBookProvider {
-
-        /**
-         * The address book provider configuration instance.
-         */
-        private static AddressBookProviderConfiguration sConfiguration;
-
-        /**
-         * The address book name.
-         */
-        private String mName;
-
-        /**
-         * Holds all address book entries.
-         */
-        private Collection<AddressBookEntry> mEntries;
-
-        /**
-         * The index of the display name when parsing the AB file.
-         */
-        private static final int DISPLAY_NAME = 0;
-
-        /**
-         * The index of the parent group when parsing the AB file.
-         */
-        private static final int PARENT_GROUP = 2;
-
-        /**
-         * The index of the custom properties when parsing the AB file.
-         */
-        private static final int CUSTOM_PROPS = 3;
-
-        /**
-         * The index of the email when parsing the AB file.
-         */
-        private static final int EMAIL = 1;
-
-        /**
-         * The file name of the address book.
-         */
-        private static final String ADDRESS_BOOK = "addressbook.txt";
-
-        static {
-            sConfiguration = new AddressBookFileProviderConfiguration();
-        }
-        /**
-         * Default constructor which loads the address book.
-         * The mName must have a different value for custom address book.
-         */
-        public AddressBookFileProvider() {
-            super();
-            mName = "File Address Book";
-            mEntries = new ArrayList<>();
-            loadAddressBook();
-        }
-
-        @Override
-        public String getAddressBookName() {
-            return mName;
-        }
-
-        /**
-         * Read all address book contacts from a file and preserve them into a collection.
-         */
-
-        private void loadAddressBook(){
-            String home = System.getProperty("FILEDRIVEHOME");
-            File addressBook = new File(home, ADDRESS_BOOK);
-
-            BufferedReader input = null;
-            try {
-                input = new BufferedReader(new FileReader(addressBook));
-                String line = input.readLine();
-                int linNum = 1;
-                while(line != null){
-                    String []contact = line.split(",");
-                    MyAddressBookEntryBean entry = new MyAddressBookEntryBean();
-                    entry.setDisplayName(contact[DISPLAY_NAME].trim());
-                    entry.setEmail(contact[EMAIL].trim());
-                    entry.setId(newEntryId(Integer.toString(linNum)));
-                    entry.setType(AddressBookEntry.Type.User);
-                    entry.setParentGroup(contact[PARENT_GROUP].trim());
-
-                    HashMap<String, String> customProperties = new HashMap<>();
-                    String propStr = contact[CUSTOM_PROPS];
-                    if(propStr != null && propStr.trim().length() > 0){
-                        String [] properties = propStr.split(";");
-                        for(String propEntry : properties){
-                            String key = propEntry.split("=")[0];
-                            String value = propEntry.split("=")[1];
-                            customProperties.put(key, value);
-                        }
-                        entry.setCustomProperties(customProperties);
-                    }
-                    mEntries.add(entry);
-                    line = input.readLine();
-                    linNum++;
-                }
-            } catch (IOException e) {
-                // TODO Handle exception
-            } finally {
-                if(input != null){
-                    try {
-                        input.close();
-                    } catch (IOException e) {
-                    }
-                }
-            }
-        }
-
-        @Override
-        public List<AddressBookEntry> getAddressBookEntries(Subject subject, Integer first, Integer count) {
-            TreeMap<String, AddressBookEntry> sortedByDisplayName = new TreeMap<>();
-            for(AddressBookEntry entry : mEntries){
-                sortedByDisplayName.put(entry.getDisplayName(), entry);
-            }
-
-            int counter = 0;
-            int added = 0;
-            ArrayList<AddressBookEntry> paginatedView = new ArrayList<>();
-            for(Map.Entry<String, AddressBookEntry> entry : sortedByDisplayName.entrySet()){
-                if(added > 0 && added < count){
-                    paginatedView.add(entry.getValue());
-                    added++;
-                }
-
-                if(counter == first){
-                    paginatedView.add(entry.getValue());
-                    added++;
-                }
-
-                counter ++;
-            }
-            return paginatedView;
-        }
-
-        @Override
-        public List<AddressBookEntry> getAddressBookEntries(Subject subject, AddressBookCriteria criteria,
-                Integer first, Integer count) {
-            if(criteria instanceof AddressBookFileCriteria){
-                AddressBookFileCriteria c = (AddressBookFileCriteria)criteria;
-
-                return c.applyCriterion(mEntries, first, count);
-            }
-
-            return null;
-        }
-
-        @Override
-        public AddressBookEntry getAddressBookEntry(Subject subject, EntryId entryId)
-                throws AddressBookPermissionException {
-            for (AddressBookEntry entry : mEntries) {
-                if (entry.getEntryId().getUniqueId().equals(entryId.getUniqueId())) {
-                    return entry;
-                }
-            }
-            return null;
-        }
-
-        @Override
-        public AddressBookEntry createAddressBookEntry(Subject subject, AddressBookEntry entry)
-                throws AddressBookGlobalConstraintException, AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
-
-        @Override
-        public AddressBookEntry updateAddressBookEntry(Subject subject, AddressBookEntry entry)
-                throws AddressBookGlobalConstraintException, AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
-
-        @Override
-        public void deleteAddressBookEntry(Subject subject, EntryId entryId)
-                throws AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
-
-        @Override
-        public AddressBookEntry newAddressBookEntry() {
-            return new MyAddressBookEntryBean();
-        }
-
-        @Override
-        public AddressBookCriteria newAddressBookCriteria() {
-            return new AddressBookFileCriteria();
-        }
-
-        @Override
-        public AddressBookProviderConfiguration getConfiguration() {
-            return sConfiguration;
-        }
-
-        @Override
-        public List<AddressBookEntry> getAddressBookEntries(Subject subject, List<EntryId> entryIdList)
-                throws AddressBookPermissionException {
-            List<AddressBookEntry> entries = new ArrayList<AddressBookEntry>();
-            for (AddressBookEntry entry : mEntries) {
-                for (EntryId id : entryIdList) {
-                    String uniqueId = entry.getEntryId().getUniqueId();
-                    String searchId = id.getUniqueId();
-                    if (uniqueId.equals(searchId)) {
-                        entries.add(entry);
-                    }
-                }       
-            }
-            return entries;
-        }
-
-        @Override
-        public AddressBookEntryIterator getAllEntries(Subject subject, AddressBookCriteria criteria) {
-            List<AddressBookEntry> entries = getAddressBookEntries(subject, criteria, 0, Integer.MAX_VALUE);
-            return new MyAddressBookEntryIteratorImpl(entries);
-        }
-
-        @Override
-        public EntryId newEntryId(String id) {
-            return new MyAddressBookEntryBean.Id(id);
-        }
-
-        @Override
-        public boolean isSingleton() {
-            return false;
-        }
-    }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">package com.axway.st.plugins.abcustomsource.sdk.file.provider;
+
+import com.axway.st.plugins.absource.AddressBookCriteria;
+import com.axway.st.plugins.absource.AddressBookEntry;
+import com.axway.st.plugins.absource.AddressBookEntry.EntryId;
+import com.axway.st.plugins.absource.AddressBookEntryIterator;
+import com.axway.st.plugins.absource.AddressBookGlobalConstraintException;
+import com.axway.st.plugins.absource.AddressBookPermissionException;
+import com.axway.st.plugins.absource.AddressBookProvider;
+import com.axway.st.plugins.absource.AddressBookProviderConfiguration;
+import com.axway.st.plugins.absource.Subject;
+
+import com.axway.st.plugins.abcustomsource.sdk.file.configuration.AddressBookFile<br/>ProviderConfiguration;
+import com.axway.st.plugins.abcustomsource.sdk.file.criterion.AddressBookFileCriteria;
+import com.axway.st.plugins.abcustomsource.sdk.file.criterion.MyAddressBookEntryBean;
+
+/**
+ * Address Book File Provider.
+ *
+ */
+public class AddressBookFileProvider implements AddressBookProvider {
+
+    /**
+     * The address book provider configuration instance.
+     */
+    private static AddressBookProviderConfiguration sConfiguration;
+
+    /**
+     * The address book name.
+     */
+    private String mName;
+
+    /**
+     * Holds all address book entries.
+     */
+    private Collection&lt;AddressBookEntry&gt; mEntries;
+
+    /**
+     * The index of the display name when parsing the AB file.
+     */
+    private static final int DISPLAY_NAME = 0;
+
+    /**
+     * The index of the parent group when parsing the AB file.
+     */
+    private static final int PARENT_GROUP = 2;
+
+    /**
+     * The index of the custom properties when parsing the AB file.
+     */
+    private static final int CUSTOM_PROPS = 3;
+
+    /**
+     * The index of the email when parsing the AB file.
+     */
+    private static final int EMAIL = 1;
+
+    /**
+     * The file name of the address book.
+     */
+    private static final String ADDRESS_BOOK = "addressbook.txt";
+
+    static {
+        sConfiguration = new AddressBookFileProviderConfiguration();
+    }
+    /**
+     * Default constructor which loads the address book.
+     * The mName must have a different value for custom address book.
+     */
+    public AddressBookFileProvider() {
+        super();
+        mName = "File Address Book";
+        mEntries = new ArrayList&lt;&gt;();
+        loadAddressBook();
+    }
+
+    @Override
+    public String getAddressBookName() {
+        return mName;
+    }
+
+    /**
+     * Read all address book contacts from a file and preserve them into a collection.
+     */</pre><pre xml:space="preserve">    private void loadAddressBook(){
+        String home = System.getProperty("FILEDRIVEHOME");
+        File addressBook = new File(home, ADDRESS_BOOK);
+
+        BufferedReader input = null;
+        try {
+            input = new BufferedReader(new FileReader(addressBook));
+            String line = input.readLine();
+            int linNum = 1;
+            while(line != null){
+                String []contact = line.split(",");
+                MyAddressBookEntryBean entry = new MyAddressBookEntryBean();
+                entry.setDisplayName(contact[DISPLAY_NAME].trim());
+                entry.setEmail(contact[EMAIL].trim());
+                entry.setId(newEntryId(Integer.toString(linNum)));
+                entry.setType(AddressBookEntry.Type.User);
+                entry.setParentGroup(contact[PARENT_GROUP].trim());
+
+                HashMap&lt;String, String&gt; customProperties = new HashMap&lt;&gt;();
+                String propStr = contact[CUSTOM_PROPS];
+                if(propStr != null &amp;&amp; propStr.trim().length() &gt; 0){
+                    String [] properties = propStr.split(";");
+                    for(String propEntry : properties){
+                        String key = propEntry.split("=")[0];
+                        String value = propEntry.split("=")[1];
+                        customProperties.put(key, value);
+                    }
+                    entry.setCustomProperties(customProperties);
+                }
+                mEntries.add(entry);
+                line = input.readLine();
+                linNum++;
+            }
+        } catch (IOException e) {
+            // TODO Handle exception
+        } finally {
+            if(input != null){
+                try {
+                    input.close();
+                } catch (IOException e) {
+                }
+            }
+        }
+    }
+
+    @Override
+    public List&lt;AddressBookEntry&gt; getAddressBookEntries(Subject subject, Integer first, Integer count) {
+        TreeMap&lt;String, AddressBookEntry&gt; sortedByDisplayName = new TreeMap&lt;&gt;();
+        for(AddressBookEntry entry : mEntries){
+            sortedByDisplayName.put(entry.getDisplayName(), entry);
+        }
+
+        int counter = 0;
+        int added = 0;
+        ArrayList&lt;AddressBookEntry&gt; paginatedView = new ArrayList&lt;&gt;();
+        for(Map.Entry&lt;String, AddressBookEntry&gt; entry : sortedByDisplayName.entrySet()){
+            if(added &gt; 0 &amp;&amp; added &lt; count){
+                paginatedView.add(entry.getValue());
+                added++;
+            }
+
+            if(counter == first){
+                paginatedView.add(entry.getValue());
+                added++;
+            }
+
+            counter ++;
+        }
+        return paginatedView;
+    }
+
+    @Override
+    public List&lt;AddressBookEntry&gt; getAddressBookEntries(Subject subject, AddressBookCriteria criteria,
+            Integer first, Integer count) {
+        if(criteria instanceof AddressBookFileCriteria){
+            AddressBookFileCriteria c = (AddressBookFileCriteria)criteria;</pre><pre xml:space="preserve">            return c.applyCriterion(mEntries, first, count);
+        }
+
+        return null;
+    }
+
+    @Override
+    public AddressBookEntry getAddressBookEntry(Subject subject, EntryId entryId)
+            throws AddressBookPermissionException {
+        for (AddressBookEntry entry : mEntries) {
+            if (entry.getEntryId().getUniqueId().equals(entryId.getUniqueId())) {
+                return entry;
+            }
+        }
+        return null;
+    }
+
+    @Override
+    public AddressBookEntry createAddressBookEntry(Subject subject, AddressBookEntry entry)
+            throws AddressBookGlobalConstraintException, AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+
+    @Override
+    public AddressBookEntry updateAddressBookEntry(Subject subject, AddressBookEntry entry)
+            throws AddressBookGlobalConstraintException, AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+
+    @Override
+    public void deleteAddressBookEntry(Subject subject, EntryId entryId)
+            throws AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+
+    @Override
+    public AddressBookEntry newAddressBookEntry() {
+        return new MyAddressBookEntryBean();
+    }
+
+    @Override
+    public AddressBookCriteria newAddressBookCriteria() {
+        return new AddressBookFileCriteria();
+    }
+
+    @Override
+    public AddressBookProviderConfiguration getConfiguration() {
+        return sConfiguration;
+    }
+
+    @Override
+    public List&lt;AddressBookEntry&gt; getAddressBookEntries(Subject subject, List&lt;EntryId&gt; entryIdList)
+            throws AddressBookPermissionException {
+        List&lt;AddressBookEntry&gt; entries = new ArrayList&lt;AddressBookEntry&gt;();
+        for (AddressBookEntry entry : mEntries) {
+            for (EntryId id : entryIdList) {
+                String uniqueId = entry.getEntryId().getUniqueId();
+                String searchId = id.getUniqueId();
+                if (uniqueId.equals(searchId)) {
+                    entries.add(entry);
+                }
+            }       
+        }
+        return entries;
+    }
+
+    @Override
+    public AddressBookEntryIterator getAllEntries(Subject subject, AddressBookCriteria criteria) {
+        List&lt;AddressBookEntry&gt; entries = getAddressBookEntries(subject, criteria, 0, Integer.MAX_VALUE);
+        return new MyAddressBookEntryIteratorImpl(entries);
+    }
+
+    @Override
+    public EntryId newEntryId(String id) {
+        return new MyAddressBookEntryBean.Id(id);
+    }
+
+    @Override
+    public boolean isSingleton() {
+        return false;
+    }
+}
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 If an Address Book provider cannot support create, update, and delete operations over its data store it will throw an appropriate exception when an unsupported operation is requested.
 
-    @Override
-        public AddressBookEntry createAddressBookEntry(Subject subject, AddressBookEntry entry)
-                throws AddressBookConstraintException, AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
-
-    @Override
-        public AddressBookEntry updateAddressBookEntry(Subject subject, AddressBookEntry entry)
-                throws AddressBookConstraintException, AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
-
-    @Override
-        public void deleteAddressBookEntry(Subject subject, Id entryId)
-                throws AddressBookPermissionException {
-            throw new AddressBookPermissionException("Operation not allowed.");
-        }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+    public AddressBookEntry createAddressBookEntry(Subject subject, AddressBookEntry entry)
+            throws AddressBookConstraintException, AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+
+@Override
+    public AddressBookEntry updateAddressBookEntry(Subject subject, AddressBookEntry entry)
+            throws AddressBookConstraintException, AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+
+@Override
+    public void deleteAddressBookEntry(Subject subject, Id entryId)
+            throws AddressBookPermissionException {
+        throw new AddressBookPermissionException("Operation not allowed.");
+    }
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 Once defined the provider implementation must return a new instance of its criteria object.
 
-    @Override
-        public AddressBookCriteria newAddressBookCriteria() {
-            return new AddressBookFileCriteria();
-        }
-    @Override
-        public Configuration getConfiguration() {
-            return sConfiguration;
-        }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+    public AddressBookCriteria newAddressBookCriteria() {
+        return new AddressBookFileCriteria();
+    }
+@Override
+    public Configuration getConfiguration() {
+        return sConfiguration;
+    }
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 The provider class must also return an instance with its configuration. The configuration object stores the default parent group name and adds a built-in parent group entry if SecureTransport needs it.
 
@@ -314,7 +352,16 @@ Address Book group entries must be generated with unique names. Duplicate group 
 
 If the Address Book provider implementation requires the creation of a single instance, it must return true as a result of a `isSingleton` method call:
 
-    @Override
-        public boolean isSingleton() {
-            return true;
-        }
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><pre xml:space="preserve">@Override
+    public boolean isSingleton() {
+        return true;
+    }
+</pre>
+         </td>
+      </tr>
+   </tbody>
+</table>

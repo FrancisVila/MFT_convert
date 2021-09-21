@@ -22,17 +22,42 @@ To direct the log messages being stored in the database to a file, modify the `S
 
 Change:
 
-    <STDBAppender name="ServerLog" locationInfo="true" maxLoggingEventQueueSize="10000" fallbackLogger="ServerLogFallback" databaseStatusCheckupDelay="60" databaseCheckupTimeout="30" idAreaBegin="-210000000000" idAreaEnd="-110000000000" driverClass="org.mysql.jdbc.Driver" initialPoolSize="30" (for AIX) driverClass="org.mariadb.jdbc.Driver" initialPoolSize="30" (for OS other than AIX) maxPoolSize="100" minPoolSize="30" acquireIncrement="7" maxStatements="4000">       <Filters>
-             <STLog4JNDCFilter componentName="TM" onMatch="NEUTRAL" onMismatch="DENY"/>      </Filters>
-    </STDBAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;STDBAppender name="ServerLog" locationInfo="true" maxLoggingEventQueueSize="10000" fallbackLogger="ServerLogFallback" databaseStatusCheckupDelay="60" databaseCheckupTimeout="30" idAreaBegin="-210000000000" idAreaEnd="-110000000000" driverClass="org.mysql.jdbc.Driver" initialPoolSize="30" (for AIX) driverClass="org.mariadb.jdbc.Driver" initialPoolSize="30" (for OS other than AIX) </p>
+            <p>maxPoolSize="100" minPoolSize="30" acquireIncrement="7" maxStatements="4000"&gt; </p>
+<p xml:space="preserve">      &lt;Filters&gt;
+</p>
+<p xml:space="preserve">         &lt;STLog4JNDCFilter componentName="TM" onMatch="NEUTRAL" onMismatch="DENY"/&gt;</p>
+<p xml:space="preserve">      &lt;/Filters&gt;</p>
+<p xml:space="preserve">
+&lt;/STDBAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Note** The `dataSource` settings are different for each configuration file.
 
 To:
 
-    <DailyRollingFileAppender name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd">
-          <PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/>
-    </DailyRollingFileAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>
+&lt;DailyRollingFileAppender name="ServerLog" fileName="FILEDRIVEHOME/var/logs/tm.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/" datePattern="'.'yyyy-MM-dd"&gt;
+</p>
+            <p>      &lt;PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/&gt;
+&lt;/DailyRollingFileAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Note** If the Server log messages are stored in a file (and it is using the DailyRollingFileAppender), rotation will be handled by the log4j files.
 
@@ -40,14 +65,39 @@ For example, if the File option is set to /foo/bar.log and the DatePattern set t
 
 In the `admin-log4j.xml` file there is an additional appender called `AuditLogAppender`. Change appender from:
 
-    <STDBAppender name="AuditLogAppender" locationInfo="true" maxLoggingEventQueueSize="10000" fallbackLogger="ServerLogFallback" databaseStatusCheckupDelay="60" databaseCheckupTimeout="30" idAreaBegin="-40000000000" idAreaEnd="-30000000000" driverClass="org.mysql.jdbc.Driver" initialPoolSize="5" (for AIX) driverClass="org.mariadb.jdbc.Driver" initialPoolSize="5" (for OS other than AIX) maxPoolSize="25" minPoolSize="5" acquireIncrement="5" maxStatements="4000"      <Filters>         <STLog4JNDCFilter componentName="AUDIT" onMatch="NEUTRAL" onMismatch="DENY"/>      </Filters>
-    </STDBAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;STDBAppender name="AuditLogAppender" locationInfo="true" maxLoggingEventQueueSize="10000" fallbackLogger="ServerLogFallback" databaseStatusCheckupDelay="60" databaseCheckupTimeout="30" idAreaBegin="-40000000000" idAreaEnd="-30000000000" driverClass="org.mysql.jdbc.Driver" initialPoolSize="5" (for AIX) driverClass="org.mariadb.jdbc.Driver" initialPoolSize="5" (for OS other than AIX) </p>
+            <p>maxPoolSize="25" minPoolSize="5" acquireIncrement="5" maxStatements="4000"</p>
+<p xml:space="preserve">      &lt;Filters&gt;</p>
+<p xml:space="preserve">         &lt;STLog4JNDCFilter componentName="AUDIT" onMatch="NEUTRAL" onMismatch="DENY"/&gt;</p>
+<p xml:space="preserve">      &lt;/Filters&gt;
+</p>
+<p xml:space="preserve">&lt;/STDBAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 To:
 
-    <DailyRollingFileAppender name="AuditLogAppender" fileName="FILEDRIVEHOME/var/logs/admin/audit-menu.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/admin" datePattern="'.'yyyy-MM-dd">
-          <PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/>
-    </DailyRollingFileAppender>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;DailyRollingFileAppender name="AuditLogAppender" fileName="FILEDRIVEHOME/var/logs/admin/audit-menu.log" append="true" rotateDirectory="FILEDRIVEHOME/var/db/hist/logs/admin" datePattern="'.'yyyy-MM-dd"&gt;
+</p>
+<p xml:space="preserve">      &lt;PatternLayout pattern="%d{ISO8601} [%t] %p %c %equals{%x}{[]}{} - %m%n%ex"/&gt;
+</p>
+            <p>&lt;/DailyRollingFileAppender&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Related topics:**
 

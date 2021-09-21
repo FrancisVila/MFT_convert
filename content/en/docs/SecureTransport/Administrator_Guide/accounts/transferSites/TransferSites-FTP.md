@@ -4,8 +4,6 @@
     "weight": "230"
 }The *Add Transfer Site* page for FTP(S) sites presents several sets of options.
 
-![Add Transfer Site - FTP(S) transfer protocol](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
-
 ## <span id="General"></span>General FTP Site settings
 
 The following table describes the general options for a FTP(S) transfer site.
@@ -103,8 +101,6 @@ The following table describes the general options for a FTP(S) transfer site.
 
 The *Transfer Settings* options allow you to define various transfer settings with your current transfer site.
 
-![](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -120,8 +116,6 @@ The *Transfer Settings* options allow you to define various transfer settings wi
 ## <span id="Site"></span>Site Login Credentials for FTP Transfer sites
 
 The Site Login Credentials options allow you to define credentials and / or add a certificate for login to the FTP(S) server.
-
-![](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
 
 <table cellspacing="0">
    <col/>
@@ -197,8 +191,6 @@ The Site Login Credentials options allow you to define credentials and / or add 
 
 The Send Options subtab allows you to define post transmission actions on file send success and failure.
 
-![](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -226,8 +218,6 @@ The Send Options subtab allows you to define post transmission actions on file s
 ## <span id="Post2"></span>Post Transmission Receive Options for FTP Transfer sites
 
 The Receive options subtab allows you to define post transmission actions on file receive success and failure. Click **Receive Options** to view these settings.
-
-![](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
 
 <table cellspacing="0">
    <col/>
@@ -302,8 +292,6 @@ The Receive options subtab allows you to define post transmission actions on fil
 ## <span id="Advanced"></span>Advanced SSL Settings for FTP Transfer sites
 
 Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current FTP(S) Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
-
-![](TS-HTTP-AS2-FTP-PeST-AdvancedSSL.jpg)
 
 <table cellpadding="0" cellspacing="0">
    <col/>

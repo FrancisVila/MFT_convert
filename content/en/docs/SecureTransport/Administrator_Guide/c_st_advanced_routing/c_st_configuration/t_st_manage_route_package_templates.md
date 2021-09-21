@@ -18,7 +18,7 @@ The following topics provide how-to instructions for managing Route Package Temp
 
 **Related topics:**
 
--   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator2)
+-   [Advanced Routing delegated administrator](t_st_create_delegated_administrator4.htm)
 -   [Create user accounts](../t_st_create_user_accounts)
 -   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
 -   [Manage Routes](../t_st_manage_routes)

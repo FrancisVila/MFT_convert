@@ -189,10 +189,16 @@ It is not clear to which value this expression is going to be evaluated.
 
 The following example from the default email template uses a variable to select a row of a table that includes information from another variable.
 
-    <tr >
-       <th>To</th>
-       <td >$PKG_DELIVERY_TO</td>
-    </tr>
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>&lt;tr &gt;<br/>   &lt;th&gt;To&lt;/th&gt;<br/>   &lt;td &gt;$PKG_DELIVERY_TO&lt;/td&gt;<br/>&lt;/tr&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
 
 **Related topics:**
 
