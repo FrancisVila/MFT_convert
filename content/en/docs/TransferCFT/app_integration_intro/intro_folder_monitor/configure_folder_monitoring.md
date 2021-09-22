@@ -163,7 +163,7 @@ Parameter descriptions
          <td>
             <p>Absolute path name of the top level directory to scan.</p>
             <p>This directory must exist before restarting Transfer CFT.</p>
-            <p>*See <a href="#*char_note">NOTE</a>.</p>
+            <p>*See <a href="#char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
@@ -179,7 +179,7 @@ Parameter descriptions
                <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
             </ul>
             <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>*See <a href="#*char_note">NOTE</a>.</p>
+            <p>*See <a href="#char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
