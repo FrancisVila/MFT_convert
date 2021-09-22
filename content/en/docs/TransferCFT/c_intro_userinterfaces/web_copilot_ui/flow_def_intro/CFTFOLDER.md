@@ -2,8 +2,10 @@
     "title": "Folder monitoring - CFTFOLDER",
     "linkTitle": "Folder monitoring - CFTFOLDER",
     "weight": "270"
-}This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
-
+}This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
+
+
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -14,16 +16,26 @@
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.         </td>
       </tr>
-</table>
-
-## CFTFOLDER object
-
-The following table describes the parameters you can use to define the CFTFOLDER object. Additionally the table lists the UCONF equivalent for users who have opted for a polling type of folder monitoring.
-
-### Folder monitoring parameters
-
-Use the following CFTFOLDER parameters to configure folder monitoring for each directory as needed.
-
+</table>
+
+
+
+## CFTFOLDER object
+
+
+
+The following table describes the parameters you can use to define the CFTFOLDER object. Additionally the table lists the UCONF equivalent for users who have opted for a polling type of folder monitoring.
+
+
+
+### Folder monitoring parameters
+
+
+
+Use the following CFTFOLDER parameters to configure folder monitoring for each directory as needed.
+
+
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -87,7 +99,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
          <td>
             <p>Absolute path name of the top level directory to scan.</p>
             <p>This directory must exist before restarting Transfer CFT.</p>
-            <p>*See <a href="#*char_note">NOTE</a>.</p>
+            <p>*See <a href="#char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
@@ -103,7 +115,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
             </ul>
             <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>*See <a href="#*char_note">NOTE</a>.</p>
+            <p>*See <a href="#char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
@@ -317,8 +329,10 @@ The second one, when present, defines the separator after the timestamp.
          </td>
       </tr>
    </tbody>
-</table>
-
+</table>
+
+
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -329,14 +343,25 @@ The second one, when present, defines the separator after the timestamp.
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> NO = NOACTIVE.         </td>
       </tr>
-</table>
-
--   UNIX /
--   For Windows \\ / : \* ? " &lt; > |
-
-Related topics
-
--   [Introduction to folder monitoring](../../../../app_integration_intro/intro_folder_monitor)
--   [Deprecated folder monitoring (UCONF)](../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf)
--   [Migrate to CFTFOLDER folder monitoring](../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder)
--   [Create inclusion and exclusion filters](../../../../app_integration_intro/intro_folder_monitor/folder_customize)
+</table>
+
+
+
+-   UNIX /
+
+-   For Windows \\ / : \* ? " &lt; > |
+
+
+
+Related topics
+
+
+
+-   [Introduction to folder monitoring](../../../../app_integration_intro/intro_folder_monitor)
+
+-   [Deprecated folder monitoring (UCONF)](../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf)
+
+-   [Migrate to CFTFOLDER folder monitoring](../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder)
+
+-   [Create inclusion and exclusion filters](../../../../app_integration_intro/intro_folder_monitor/folder_customize)
+
