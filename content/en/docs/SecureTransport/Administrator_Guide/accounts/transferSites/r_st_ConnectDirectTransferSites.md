@@ -137,7 +137,17 @@ The following table describes the Connect:Direct protocol options for a transfer
                <li value="4">In the transfer site configuration, select the <b>Use Certificate</b> checkbox and specify the <b>Certificate Alias</b> used for connecting to the Connect:Direct server. You can either select  the private certificate you generated at <i>Step 2</i> from the drop down or import a certificate.               </li>
 </ol>
             <p>When certificate authentication is enabled, the connection uses the default TLS 1.2 protocol and compatible ciphers. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">After reverting the SecureTransport October 2020 Update, the Connect:Direct certificate-based authentication feature will not work, although the certificate placeholder remains visible on the transfer site definition page for sites created using a site template.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -177,7 +187,7 @@ The following table describes the Connect:Direct protocol options for a transfer
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">After reverting the SecureTransport October 2020 Update, the Connect:Direct certificate-based authentication feature will not work, although the certificate placeholder remains visible on the transfer site definition page for sites created using a site template.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The <strong>Send Script</strong> and <strong>Receive Script</strong> accept regular expressions. For more information on writing Connect:Direct scripts, refer to the Connect:Direct documentation.         </td>
       </tr>
 </table>
 

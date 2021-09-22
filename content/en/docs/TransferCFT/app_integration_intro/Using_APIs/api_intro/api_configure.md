@@ -87,7 +87,17 @@ The supported authentication methods are:
          <td>system         </td>
          <td>
             <p>The user/password is  checked against the operating system. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
+      </tr>
+</table></p>
             <p><b>Unix </b>
 </p>
             <p>You must use <span>cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to  <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix">Using system users - UNIX</a> for details.</p>
@@ -102,7 +112,17 @@ The supported authentication methods are:
                <li>Create a group "group1": <span>net localgroup group1 /add</span>               </li>
                <li>Add user "user1" to group "group1": <span>net localgroup group1 user1 /add</span>               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -142,30 +162,116 @@ The supported authentication methods are:
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
-      </tr>
-</table>
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
-      </tr>
-</table>
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">1. If copilot.restapi.authentication_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = system.         </td>
       </tr>
+</table>
+
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">2.  If copilot.restapi.authentication_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = xbfadm.          </td>
+      </tr>
+</table>
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Type</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>copilot.restapi.enable         </td>
+         <td>bool         </td>
+         <td>No         </td>
+         <td>
+            <p>Enable/disable the REST API service:</p>
+            <ul>
+               <li>Yes: enable               </li>
+               <li>No: disable               </li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.serverport         </td>
+         <td>int         </td>
+         <td>1768         </td>
+         <td>
+            <p>REST API server port.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.authentication_method         </td>
+         <td>string         </td>
+         <td>
+            <p>system (Windows)</p>
+            <p>xfbadm (UNIX)</p>
+         </td>
+         <td>
+            <p>Defines authentication method.</p>
+            <p> </p>
+            <p>See also, <a href="../../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr utilitiy.</a></p>
+         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.nb_workers 	         </td>
+         <td>int         </td>
+         <td>4         </td>
+         <td>Number of activated workers that process the REST API requests.         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.maxclient          </td>
+         <td>int         </td>
+         <td>256         </td>
+         <td>Number of client connections handled per REST worker.         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.coms_id          </td>
+         <td>string         </td>
+         <td>coms         </td>
+         <td>
+            <p>The TCPIP CFTCOM object identifier used by the REST API server to communicate with the Transfer CFT server.</p>
+            <p>Leave empty to use
+the COM file instead.
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td>copilot.restapi.catalog.retry_delay         </td>
+         <td>int         </td>
+         <td>5         </td>
+         <td>
+            <ul>
+               <li>The delay between retries
+in seconds. The Copilot server checks the request status  in catalog every retry_delay seconds.                </li>
+               <li>The delay between retries
+in seconds. The Copilot server checks the request status  in catalog every retry_delay seconds.                </li>
+            </ul>
+         </td>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+      </tr>
+      <tr>
+         <td>copilot.restapi.catalog.retry_timeout         </td>
+         <td>int         </td>
+         <td>30         </td>
+         <td>
+            <p>The default value of the <a href="../api_commands">apiTimeout</a> parameter as defined in the request URL.</p>
+            <p>Available exclusively for POST requests.</p>
+         </td>
+      </tr>
+   </tbody>
 </table>

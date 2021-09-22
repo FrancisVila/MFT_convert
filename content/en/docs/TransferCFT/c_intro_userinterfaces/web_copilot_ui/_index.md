@@ -111,7 +111,17 @@ The supported authentication methods are:
          <td>system         </td>
          <td>
             <p>The user/password is  checked against the operating system. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
+      </tr>
+</table></p>
             <p><b>Unix </b>
 </p>
             <p>You must use <span>cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to  <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix">Using system users - UNIX</a> for details.</p>
@@ -126,7 +136,17 @@ The supported authentication methods are:
                <li>Create a group "group1": <span>net localgroup group1 /add</span>               </li>
                <li>Add user "user1" to group "group1": <span>net localgroup group1 user1 /add</span>               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -166,7 +186,7 @@ The supported authentication methods are:
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">1. If copilot.restapi.authentication_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = system.         </td>
       </tr>
 </table>
 
@@ -178,7 +198,7 @@ The supported authentication methods are:
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">2.  If copilot.restapi.authentication_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = xbfadm.          </td>
       </tr>
 </table>
 
@@ -217,7 +237,7 @@ You can use the following UCONF parameters to manage this option:
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">1. If copilot.restapi.authentication_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = system.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In a multi-host environment, an attacker may have up to the <span>copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.         </td>
       </tr>
 </table>
 
@@ -248,7 +268,7 @@ Keyboard shortcuts provide a way to navigate the user interface from the keyboar
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">2.  If copilot.restapi.authentication_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = xbfadm.          </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Keyboard shortcuts on Firefox are largely nonfunctional.         </td>
       </tr>
 </table>
 

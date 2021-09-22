@@ -1177,7 +1177,17 @@ same values         </td>
          <td>N/A         </td>
          <td colspan="3">
 <p colspan="3">Size of the transferred file. This size is expressed in bytes.   </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
+      </tr>
+</table></p>
          </td>
          <td>FCARS         </td>
          <td>  file_size         </td>
@@ -1189,32 +1199,7 @@ same values         </td>
          <td>N/A         </td>
          <td colspan="3">
 <p colspan="3" rowspan="2">Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.   </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-         <td>NCARS         </td>
-         <td>x_bytes         </td>
-         <td>MLHABYTE         </td>
-      </tr>
-   </tbody>
-</table>
-
-### Transfer structure and content
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
-      </tr>
-</table>
-
-### Other attributes
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -1224,9 +1209,16 @@ same values         </td>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
       </tr>
+</table></p>
+         </td>
+         <td>NCARS         </td>
+         <td>x_bytes         </td>
+         <td>MLHABYTE         </td>
+      </tr>
+   </tbody>
 </table>
 
-## XFBLog tracked object
+### Transfer structure and content
 
 <table cellspacing="0">
    <col/>
@@ -1304,7 +1296,17 @@ same values         </td>
          <td>N/A         </td>
          <td colspan="3">
 <p colspan="3">Number of record in the file. This size is expressed in bytes.   </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
+      </tr>
+</table></p>
          </td>
          <td>FREC         </td>
          <td>rec_count         </td>
@@ -1390,6 +1392,355 @@ same values         </td>
          <td>From FBLKSIZE (Catalog)         </td>
          <td>block_size         </td>
          <td>N/A         </td>
+      </tr>
+   </tbody>
+</table>
+
+### Other attributes
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Sentinel attribute</th>
+         <th>Data type</th>
+         <th>Length</th>
+         <th>Description</th>
+         <th>Transfer CFT</th>
+         <th>InterPEL Core</th>
+         <th>InterPEL MVS</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>IsRelay         </td>
+         <td>String         </td>
+         <td>1         </td>
+         <td>
+            <p>If transfer event comes from a relay site: </p>
+            <ul>
+               <li>1: Yes                </li>
+               <li>0: No               </li>
+            </ul>
+         </td>
+         <td>IsRelay         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr>
+         <td>NodeId         </td>
+         <td>Integer         </td>
+         <td>          </td>
+         <td>Identifier of the node that executes the transfer.         </td>
+         <td>NodeID         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr>
+         <td>ParentCycleid         </td>
+         <td>String         </td>
+         <td>250         </td>
+         <td>The identifier of the event which is the parent of the current event.         </td>
+         <td>ParentCycleid         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr>
+         <td>CycleId         </td>
+         <td>String         </td>
+         <td>250         </td>
+         <td>CycleId         </td>
+         <td>From TRKR (Catalog) symbolic variable &amp;XFRCYCID          </td>
+         <td>this_cycle_id (not stored)         </td>
+         <td>MLHTKCID         </td>
+      </tr>
+      <tr>
+         <td>InternalCycleId         </td>
+         <td>String         </td>
+         <td>155         </td>
+         <td>CycleID before hash.         </td>
+         <td>Not stored         </td>
+         <td>this_extended_cycle_id (not stored)         </td>
+         <td>Not stored         </td>
+      </tr>
+      <tr>
+         <td>State         </td>
+         <td>String         </td>
+         <td>20         </td>
+         <td>Transfer state.         </td>
+         <td>
+            <p>From: STATE,PHASE,</p>
+            <p>PHASESTEP,STATED,</p>
+            <p>DIRECT,DIAGI,FLAF</p>
+            <p> (Catalog): 
+</p>
+            <p>"CONSUMED", "SENDING", </p>
+            <p>"SENT"
+"RECEIVING", </p>
+            <p>"RECEIVED",
+"TO_EXECUTE", </p>
+            <p>"CANCELED",
+"DELETED", </p>
+            <p>"SUSPENDED"
+</p>
+            <p>"INTERRUPTED", "CREATED",</p>
+            <p>"TO_ROUTE","ACKED", "ENDED_TO_ACK",
+</p>
+            <p>"AVAILABLE", "ROUTED","NACKED",</p>
+            <p>"ENDED_TO-NACK",</p>
+            <p>"PRE_PROC",</p>
+            <p>"PRE_PROC_ABORT",</p>
+            <p>"POST_PROC",</p>
+            <p>"POST_PROC_ABORT",</p>
+            <p>"POST_PROC-ACK",</p>
+            <p>"POST_PROC_ACK_ABORT",</p>
+            <p>"ACK_EXPECTED",</p>
+            <p>"COMPLETED",</p>
+            <p>"DELETED"
+
+
+
+
+</p>
+         </td>
+         <td>
+            <p>From          state,
+            direction,
+                  mode,
+user_processed,
+      route_state:</p>
+            <p>
+"CONSUMED", </p>
+            <p>"SENDING", </p>
+            <p>"SENT"
+</p>
+            <p>"RECEIVING", </p>
+            <p>"RECEIVED",
+</p>
+            <p>"TO_EXECUTE", </p>
+            <p>"CANCELED",
+</p>
+            <p>"DELETED", </p>
+            <p>"SUSPENDED"
+</p>
+            <p>"INTERRUPTED", </p>
+            <p>"CREATED",
+</p>
+            <p>"TO_ROUTE", </p>
+            <p>"TO_SIGN",
+</p>
+            <p>"ACKED", </p>
+            <p>"ENDED_TO_ACK",
+</p>
+            <p>"AVAILABLE", </p>
+            <p>"ROUTED", </p>
+            <p>"ROUTE_FAILED"</p>
+         </td>
+         <td>MLHSTATU         </td>
+      </tr>
+      <tr>
+         <td>ReturnCode         </td>
+         <td>String         </td>
+         <td>20         </td>
+         <td>Last transfer diagnostic.         </td>
+         <td>From DIAGI and DIAGP (Catalog)         </td>
+         <td>last_end_diag         </td>
+         <td>MLHPDTSE + MLHPDCSE         </td>
+      </tr>
+      <tr>
+         <td>UserState         </td>
+         <td>String         </td>
+         <td>20         </td>
+         <td>Transfer user state.         </td>
+         <td>From APPSTATE (Catalog)          </td>
+         <td>user_state         </td>
+         <td>N/A         </td>
+      </tr>
+   </tbody>
+</table>
+
+## XFBLog tracked object
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Sentinel attribute</th>
+         <th>Data type</th>
+         <th>Length</th>
+         <th>Description</th>
+         <th>Transfer CFT</th>
+         <th>InterPEL Core</th>
+         <th>InterPEL MVS</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Monitor         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+         <td>Monitor         </td>
+         <td>"XFB"         </td>
+         <td>See "Monitor" in Transfer object         </td>
+         <td>PEL         </td>
+      </tr>
+      <tr>
+         <td>Product         </td>
+         <td>String         </td>
+         <td>10         </td>
+         <td>Product         </td>
+         <td>"CFT"         </td>
+         <td>See "Machine" in Transfer object         </td>
+         <td>PELIMVS         </td>
+      </tr>
+      <tr>
+         <td>ProductName         </td>
+         <td>String         </td>
+         <td>50         </td>
+         <td>Product identifier         </td>
+         <td>N/A         </td>
+         <td>"XFBLog"         </td>
+         <td>INTERPELMVS         </td>
+      </tr>
+      <tr>
+         <td>ApplicationName         </td>
+         <td>String         </td>
+         <td>40         </td>
+         <td>Application name         </td>
+         <td>PART from CFTPARM         </td>
+         <td>local_site_alias         </td>
+         <td>PELPARMS ID= or LOCNAME=         </td>
+      </tr>
+      <tr>
+         <td>ReturnMessage         </td>
+         <td>String         </td>
+         <td>512         </td>
+         <td>N/A         </td>
+         <td>From Log text         </td>
+         <td>From Log text         </td>
+         <td>From Log text         </td>
+      </tr>
+      <tr>
+         <td>EventDate         </td>
+         <td>Date         </td>
+         <td>N/A         </td>
+         <td>Creation date         </td>
+         <td>From log timestamp: date         </td>
+         <td>From log timestamp: date         </td>
+         <td>From log timestamp dd:mm:yyyy         </td>
+      </tr>
+      <tr>
+         <td>EventTime         </td>
+         <td>Time         </td>
+         <td>N/A         </td>
+         <td>Creation time         </td>
+         <td>From log timestamp: time         </td>
+         <td>From log timestamp: time         </td>
+         <td>From log timestamp hh:mm:ss         </td>
+      </tr>
+      <tr>
+         <td>RecDate         </td>
+         <td>Date         </td>
+         <td>N/A         </td>
+         <td>Record date         </td>
+         <td>From log timestamp: date         </td>
+         <td>From log timestamp: date         </td>
+         <td>From log timestamp dd:mm:yyyy         </td>
+      </tr>
+      <tr>
+         <td>RecTime         </td>
+         <td>Time         </td>
+         <td>N/A         </td>
+         <td>Record time         </td>
+         <td>From log timestamp: time         </td>
+         <td>From log timestamp: time         </td>
+         <td>From log timestamp hh:mm:ss         </td>
+      </tr>
+      <tr>
+         <td>IdentMsg         </td>
+         <td>String         </td>
+         <td>10         </td>
+         <td>Log message identifier         </td>
+         <td>From Log text (header)         </td>
+         <td>From Log Ident         </td>
+         <td>From Log Ident         </td>
+      </tr>
+      <tr>
+         <td>IsEnd         </td>
+         <td>Integer         </td>
+         <td>N/A         </td>
+         <td>End of message. (multi-messages)         </td>
+         <td>N/A         </td>
+         <td>1         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr>
+         <td>SeverityClass         </td>
+         <td>String         </td>
+         <td>10         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+         <td>
+            <p>From log message severity:
+</p>
+            <p>"I" &gt; "IG"
+</p>
+            <p>"W" &gt; "AV"
+</p>
+            <p>"E" &gt; "EC"</p>
+         </td>
+         <td>
+            <p>From log message severity:
+</p>
+            <p>"I" &gt; "IG"
+</p>
+            <p>"W" &gt; "AV"
+</p>
+            <p>"E" &gt; "EC"</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Severity         </td>
+         <td>Integer         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+         <td>N/A         </td>
+         <td>
+            <p>From log message severity:
+</p>
+            <p>"I" &gt; 1</p>
+            <p>
+"W" &gt; 2
+</p>
+            <p>"E" &gt; 3</p>
+         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr>
+         <td>IsAlert         </td>
+         <td>Integer         </td>
+         <td>N/A         </td>
+         <td>Log message is an alert         </td>
+         <td>From log message severity: E,F &gt; "1"         </td>
+         <td>
+            <p>From log message severity:
+</p>
+            <p>"W", </p>
+            <p>"E" &gt; "1"</p>
+         </td>
+         <td>From  Alert indication         </td>
       </tr>
    </tbody>
 </table>

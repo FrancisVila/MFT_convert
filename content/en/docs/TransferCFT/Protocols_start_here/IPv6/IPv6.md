@@ -172,7 +172,17 @@ Enable IPv6
       </tr>
       <tr>
          <td colspan="2">
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">It is recommended that you do<b> not</b> set<span> ipv6.disable_listen</span> to <span>No</span>, and <span>ipv6.disable_connect</span> to <span>Yes</span>.          </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>

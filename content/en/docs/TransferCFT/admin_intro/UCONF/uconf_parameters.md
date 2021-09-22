@@ -947,7 +947,17 @@ Use the following parameters to define Transfer CFT probes.
          <td>
             <p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand. </p>
             <p>The value 0 disables the automatic expansion feature.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Tip  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -963,20 +973,6 @@ Use the following parameters to define Transfer CFT probes.
 See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_catalog).
 
 ## Parallel transfers
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Tip  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-</table>
-
-## Retrieve subdirectories
 
 <table cellspacing="0">
    <col/>
@@ -995,7 +991,7 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
    </tbody>
 </table>
 
-## Synchronous connections
+## Retrieve subdirectories
 
 <table cellspacing="0">
    <col/>
@@ -1014,11 +1010,7 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
    </tbody>
 </table>
 
-## Purge
-
-### Startup configuration
-
-PURGE when starting Transfer CFT is now configurable, with the following options:
+## Synchronous connections
 
 <table cellspacing="0">
    <col/>
@@ -1037,9 +1029,11 @@ PURGE when starting Transfer CFT is now configurable, with the following options
    </tbody>
 </table>
 
-### Dynamically purge catalog
+## Purge
 
-These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.
+### Startup configuration
+
+PURGE when starting Transfer CFT is now configurable, with the following options:
 
 <table cellspacing="0">
    <col/>
@@ -1074,9 +1068,9 @@ These parameters modify the amount of time to keep transfers in catalog before p
       </tr>
 </table>
 
-See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Transfer states and [LISTCAT.](../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/brief_catalog_listing)
+### Dynamically purge catalog
 
-## Customizable network sessions
+These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.
 
 <table cellspacing="0">
    <col/>
@@ -1123,12 +1117,9 @@ See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Trans
    </tbody>
 </table>
 
-## <span id="Transfer"></span>Transfer requests
+See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Transfer states and [LISTCAT.](../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/brief_catalog_listing)
 
-This parameter lets you use the SEND or RECV command without requiring an [IDF](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf). This means that if you do not define a transfer file identifier, a default value (CFTPART IDF) is used. Exceptions:
-
--   For a SEND command the IDFDEF is used if  available, before searching for the CFTPART value.
--   For a RECV command with an asterisk "\*" the sender provides the IDF.
+## Customizable network sessions
 
 <table cellspacing="0">
    <col/>
@@ -1153,7 +1144,12 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
    </tbody>
 </table>
 
-## <span id="Statisti"></span>Accounting records
+## <span id="Transfer"></span>Transfer requests
+
+This parameter lets you use the SEND or RECV command without requiring an [IDF](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf). This means that if you do not define a transfer file identifier, a default value (CFTPART IDF) is used. Exceptions:
+
+-   For a SEND command the IDFDEF is used if  available, before searching for the CFTPART value.
+-   For a RECV command with an asterisk "\*" the sender provides the IDF.
 
 <table cellspacing="0">
    <col/>
@@ -1181,7 +1177,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
    </tbody>
 </table>
 
-## <span id="Compatib"></span>Compatibility
+## <span id="Statisti"></span>Accounting records
 
 <table cellspacing="0">
    <col/>
@@ -1210,9 +1206,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
    </tbody>
 </table>
 
-## <span id="Deactivate_idf"></span>Deactivate the default IDF
-
-You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
+## <span id="Compatib"></span>Compatibility
 
 <table cellspacing="0">
    <col/>
@@ -1247,6 +1241,39 @@ You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV 
                <li>No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.               </li>
             </ul>
             <p><span>Note</span>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Deactivate_idf"></span>Deactivate the default IDF
+
+You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Type </th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>cft.default_idf.enable         </td>
+         <td>Yes          </td>
+         <td>
+            <p>Bool</p>
+            <p>Yes / No</p>
+         </td>
+         <td>
+            <p>Enable the default IDF to use when the transfer request IDF is not explicitly defined by a CFTRECV or CFTSEND command.</p>
+            <p>DIAGI=434</p>
          </td>
       </tr>
    </tbody>

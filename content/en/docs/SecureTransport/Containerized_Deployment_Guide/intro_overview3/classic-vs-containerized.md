@@ -169,7 +169,17 @@ This table provides explanations on functionality differences in containerized d
          </td>
          <td>
             <p>The SecureTransport Edges containerized deployment requires a shared external database. In this deployment the system configuration changes are stored in the external database and are visible by all Edges in the Kubernetes StatefulSet.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">All system configuration changes require container restart.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

@@ -112,7 +112,17 @@ Central Governance or Flow Manager sends the updated configuration to Transfer C
          <td>am.passport.cg.organization         </td>
          <td>
             <p>Org </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You must restart both <span>Transfer CFT</span> and Copilot following a change to this parameter.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -213,7 +223,17 @@ Central Governance or Flow Manager sends the updated configuration to Transfer C
          <td>pki.type         </td>
          <td>
             <p>cft</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Except when using a SAF-based PKI Transfer CFT, in which case system is the value.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

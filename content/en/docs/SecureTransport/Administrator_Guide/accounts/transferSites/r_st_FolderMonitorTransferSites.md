@@ -132,7 +132,17 @@ The following table describes the upload settings Folder Monitor protocol option
          <td>Upload Folder         </td>
          <td>
             <p>The folder from which files to be transferred to the remote host are taken. You cannot enter spaces-only values in this field.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Making the Upload Folder the same as the Download folder may lead to an infinite loop condition when the Transfer Site is used.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

@@ -38,4 +38,4 @@ To learn more about Axway's technologies, check out the offer of free on-line co
 
 Axway also organizes instructor-led classes. For more information, visit [Training and certification](https://www.axway.com/en/services/training-certification).
 
-Document version: Tuesday, September 21, 2021 3:13 PM
+Document version: Tuesday, September 21, 2021 3:22 PM

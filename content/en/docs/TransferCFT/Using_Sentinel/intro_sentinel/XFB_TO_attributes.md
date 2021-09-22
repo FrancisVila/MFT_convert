@@ -1486,7 +1486,17 @@ The product that sends the events is identified with the following:
          </td>
          <td>
             <p>Size of the transferred file. This size is expressed in bytes.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
+      </tr>
+</table></p>
          </td>
          <td>
             <p>FSPACE</p>
@@ -1504,7 +1514,17 @@ The product that sends the events is identified with the following:
          </td>
          <td>
             <p>Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
+      </tr>
+</table></p>
          </td>
          <td>
             <p>NCAR</p>
@@ -1515,21 +1535,111 @@ The product that sends the events is identified with the following:
 
 ## The structure and content of transfers
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
    <col/>
    <col/>
+   <col/>
+   <col/>
+   <thead>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
+         <th>
+            <p>Sentinel</p>
+            <p>attribute</p>
+</th>
+         <th>
+            <p>Data type</p>
+</th>
+         <th>
+            <p>Length</p>
+</th>
+         <th>
+            <p>Description</p>
+</th>
+         <th>
+            <p>Name in</p>
+            <p><span>Transfer CFT</span>
+</p>
+</th>
       </tr>
-</table>
-
-## Other attribute
-
-<table cellpadding="0" cellspacing="0">
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <p>CommandType</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>1</p>
+         </td>
+         <td>
+            <ul>
+               <li>F: File transfer               </li>
+               <li>M: Message transfer               </li>
+               <li>A: Message reply               </li>
+               <li>N: Message nack               </li>
+            </ul>
+         </td>
+         <td>
+            <p>TYPE</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>FileOrganization</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>25</p>
+         </td>
+         <td>
+            <ul>
+               <li>org_sequential: The transferred data is not indexed.                </li>
+               <li>indexed: The transferred data is indexed.                </li>
+               <li>direct: The transferred data is assigned relative access.               </li>
+            </ul>
+         </td>
+         <td>
+            <p>FORG</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>FileType</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>60</p>
+         </td>
+         <td>
+            <ul>
+               <li>B: The transferred file is a binary file.                 </li>
+               <li>J, T, O, X: The transferred file is a text file.                 </li>
+            </ul>
+         </td>
+         <td>
+            <p>FTYPE</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>RecordNumber</p>
+         </td>
+         <td>
+            <p>Integer</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+         <td>
+            <p>Number of record in the file. This size is expressed in bytes.</p>
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -1539,4 +1649,161 @@ The product that sends the events is identified with the following:
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
       </tr>
+</table></p>
+         </td>
+         <td>
+            <p>FREC</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>RecordFormat</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>64</p>
+         </td>
+         <td>
+            <ul>
+               <li>F: fixed - The transferred data contains fixed-length records.                </li>
+               <li>V: variable - The transferred data contains variable-length records.                </li>
+               <li>U: undefined - The structure of the transferred data is unknown.               </li>
+            </ul>
+         </td>
+         <td>
+            <p>FRECFM</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>RecordSize</p>
+         </td>
+         <td>
+            <p>Integer</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+         <td>
+            <ul>
+               <li>If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.               </li>
+               <li>If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes.                </li>
+            </ul>
+         </td>
+         <td>
+            <p>FLRECL</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Transcoding</p>
+         </td>
+         <td>
+            <p>Integer</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+         <td>
+            <p>Character code of the transferred data:</p>
+            <ul>
+               <li>A: ASCII                </li>
+               <li>B: Binary                </li>
+               <li>E: EBCDIC                </li>
+            </ul>
+         </td>
+         <td>
+            <p>FCODE</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>TranslationTableId</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>25</p>
+         </td>
+         <td>
+            <p>Name of the local translation table use during the transfer (if any).</p>
+         </td>
+         <td>
+            <p>XLATE</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## Other attribute
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>
+            <p>Sentinel</p>
+            <p>attribute</p>
+</th>
+         <th>
+            <p>Data type</p>
+</th>
+         <th>
+            <p>Length</p>
+</th>
+         <th>
+            <p>Description</p>
+</th>
+         <th>
+            <p>Name in</p>
+            <p><span>Transfer CFT</span>
+</p>
+</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <p>IsRelay</p>
+         </td>
+         <td>
+            <p>String</p>
+         </td>
+         <td>
+            <p>1</p>
+         </td>
+         <td>
+            <p>If transfer event comes from a relay site:</p>
+            <ul>
+               <li>1: Yes               </li>
+               <li>0: No               </li>
+            </ul>
+         </td>
+         <td>
+            <p>IsRelay </p>
+         </td>
+      </tr>
+      <tr>
+         <td>NodeId	         </td>
+         <td>Integer	 	         </td>
+         <td>          </td>
+         <td>Identifier of the node that executes the transfer	         </td>
+         <td>NodeID         </td>
+      </tr>
+      <tr>
+         <td>ParentCycleid         </td>
+         <td>String         </td>
+         <td>250         </td>
+         <td>The identifier of the event which is the parent of the
+current event         </td>
+         <td>ParentCycleid         </td>
+      </tr>
+   </tbody>
 </table>

@@ -96,7 +96,17 @@ You can opt to control the file-access permissions and the batch execution envir
                <li value="6">Close and re-open the Windows session to take into account the modifications.               </li>
 </ol>
             <p>Additionally, the user who wants to log on the  <span>Transfer CFT</span> UI server must exist both in the Windows system and PassPort AM. The Windows system performs the user authentication, and PassPort AM checks the other rights.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">The PassPort user name is case-sensitive.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>
@@ -112,9 +122,9 @@ The Windows user who is going to start the Transfer CFT server requires read/wri
    <col/>
       <tr>
          <td valign="top">         </td>
-         <td valign="top"><span><b>Note  </b></span>
+         <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">The PassPort user name is case-sensitive.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If you are using either <span>Central Governance</span> or <span>Flow Manager</span>, the user name must exist in PassPort AM and have rights to manage  <span>Transfer CFT</span>. Remember that the PassPort user name is case-sensitive.         </td>
       </tr>
 </table>
 
@@ -173,7 +183,7 @@ If PassPort AM is active (am.type=PassPort in UCONF), the user must exist both i
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If you are using either <span>Central Governance</span> or <span>Flow Manager</span>, the user name must exist in PassPort AM and have rights to manage  <span>Transfer CFT</span>. Remember that the PassPort user name is case-sensitive.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The PassPort user name is case-sensitive.         </td>
       </tr>
 </table>
 

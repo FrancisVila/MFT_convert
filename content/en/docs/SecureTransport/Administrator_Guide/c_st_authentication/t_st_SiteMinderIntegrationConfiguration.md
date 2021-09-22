@@ -64,7 +64,17 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
          <td>Administrator Password         </td>
          <td>
             <p>If a password is required, select Use Password and enter it in the field provided.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Exported configuration from <span>SecureTransport</span> 4.x.y systems does not include the SiteMinder administrator password.         </td>
+      </tr>
+</table></p>
          </td>
          <td>Optional         </td>
       </tr>
@@ -123,7 +133,17 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
          <td>
             <p>After the File Storage Root Path is removed, but prior to SiteMinder authorization, this entry is prefixed to the absolute URI. For example, if the absolute URI is <code>/mnt/ab/user1</code>, the File Storage Root Path is <code>/mnt/ab</code>, and the SiteMinder Path Prefix is <code>/root</code>; then <code>/root/user1</code> is sent to SiteMinder for authorization. If this box is left blank, no prefix is applied to the URI prior to authorization.</p>
             <p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When SiteMinder is enabled, all <span>SecureTransport</span> users must have GET access to the path specified in the SiteMinder Path Prefix to successfully log in. If this setting is left blank, then users must have GET access to /. The SiteMinder administrator must set up the SiteMinder Policy Server accordingly.         </td>
+      </tr>
+</table></p>
 </p>
          </td>
          <td>Optional         </td>
@@ -146,7 +166,17 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
          <td>Default Local User ID         </td>
          <td>
             <p>The numeric user ID (UID) of a user that has full read/write access to the directory specified as the File Storage Root Path and its subdirectories. This default is used only if a UID is not supplied by SiteMinder.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">On Windows, type the name of the respective virtual user. Windows does not support UIDs.         </td>
+      </tr>
+</table></p>
          </td>
          <td>Required         </td>
       </tr>
@@ -179,8 +209,28 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
                <li>On Windows, the folder should not use shared storage.               </li>
                <li>On Linux, the permissions of the folder must be set to “777” on all nodes in the cluster.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When changing <code>Home Folder Attribute</code>, the Transaction Manager should be restarted in order for the changes to be applied.          </td>
+      </tr>
+</table></p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If <code>Home Folder Attribute</code>, <code>Group ID Attribute</code> and <code>User ID Attribute</code> are left blank, and the attributes therefore not defined,  the default Home Folder, Local User ID, and Local Group ID are used.         </td>
+      </tr>
+</table></p>
          </td>
          <td>Optional         </td>
       </tr>
@@ -198,16 +248,62 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
 3.  Click **Update SiteMinder Settings**.  
     To use one or two more SiteMinder servers for failover, specify server configuration parameters that correspond to the fields described above. The names of the parameters for the second server start with `Siteminder.PolicyServers.Second.PolicyServer`. The names for the third server start with `Siteminder.PolicyServers.Third.PolicyServer`. The final parts of the names are given in the following table:
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
    <col/>
-   <col/>
+   <thead>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Exported configuration from <span>SecureTransport</span> 4.x.y systems does not include the SiteMinder administrator password.         </td>
+         <th>Field</th>
+         <th>Sever configuration parameter</th>
       </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Enable SiteMinder Module         </td>
+         <td><code>enable</code>
+         </td>
+      </tr>
+      <tr>
+         <td>IP Address         </td>
+         <td><code>host</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Administrator Username         </td>
+         <td><code>adminUsername</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Administrator Password         </td>
+         <td><code>adminPassword</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Authorization Port         </td>
+         <td><code>authorizationPort</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Authentication Port         </td>
+         <td><code>authenticationPort</code>
+         </td>
+      </tr>
+      <tr>
+         <td>LDAP User Directory         </td>
+         <td><code>ldapUserDirectory</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Maximum Connections         </td>
+         <td><code>maxConnections</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Connection Timeout         </td>
+         <td><code>timeout</code>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table cellpadding="0" cellspacing="0">
@@ -218,7 +314,7 @@ Before using SecureTransport with SiteMinder, you must configure the SiteMinder 
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When SiteMinder is enabled, all <span>SecureTransport</span> users must have GET access to the path specified in the SiteMinder Path Prefix to successfully log in. If this setting is left blank, then users must have GET access to /. The SiteMinder administrator must set up the SiteMinder Policy Server accordingly.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If more than one SiteMinder server is configured in a server that is upgraded from <span>SecureTransport</span> 4.x.y or in configuration that is imported from a <span>SecureTransport</span> 4.x.y server, set the <code>Siteminder.PolicyServers.Second.PolicyServer.enable</code> and the <code>Siteminder.PolicyServers.Third.PolicyServer.enable</code> system configuration parameters to <code>true</code> as required.         </td>
       </tr>
 </table>
 

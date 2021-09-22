@@ -229,18 +229,7 @@ The following table describes the list settings for defining a Generic HTTP tran
                <li><strong>form-urlencoded</strong> - When selected the body will be transmitted as <code>application/x-www-form-urlencoded</code>.               </li>
                <li><strong>raw</strong> – When selected the body can be any text.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>This field is displayed when <strong>Enable list</strong> is checked and <strong>POST</strong> is the selected Method.</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-### <span id="File"></span>File download settings for Generic HTTP(S) Transfer sites
-
-The following table describes the file download settings for defining a Generic HTTP transfer site.
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -250,11 +239,16 @@ The following table describes the file download settings for defining a Generic 
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When the selected body content type is <strong>form-data</strong> or <strong>form-urlencoded</strong> the body should be formed of key-value pairs on separate lines. Example:<br><code>param1=value1</code><br><code>param2=value2</code></br></br>         </td>
       </tr>
+</table></p>
+            <p>This field is displayed when <strong>Enable list</strong> is checked and <strong>POST</strong> is the selected Method.</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
-### <span id="Receive"></span>Receive actions for Generic HTTP(S) Transfer sites
+### <span id="File"></span>File download settings for Generic HTTP(S) Transfer sites
 
-The following table describes the receive actions for defining a Generic HTTP transfer site.
+The following table describes the file download settings for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -324,17 +318,7 @@ The following table describes the receive actions for defining a Generic HTTP tr
                <li><code>	${env['ts_relative_path']}</code> - The relative path of the file that will be downloaded.               </li>
                <li><code>	${env['ts_target']}</code> - The file name of the file that will be downloaded.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-### <span id="Upload2"></span>Upload settings for Generic HTTP(S) Transfer sites
-
-The following table describes the upload settings for defining a Generic HTTP transfer site.
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -344,11 +328,15 @@ The following table describes the upload settings for defining a Generic HTTP tr
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When the selected body content type is <strong>form-data</strong> or <strong>form-urlencoded</strong> the body should be formed of key-value pairs on separate lines. Example:<br><code>param1=value1</code><br><code>param2=value2</code></br></br>         </td>
       </tr>
+</table></p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
-### <span id="Send"></span>Send actions for Generic HTTP(S) Transfer sites
+### <span id="Receive"></span>Receive actions for Generic HTTP(S) Transfer sites
 
-The following table describes the send actions for defining a Generic HTTP transfer site.
+The following table describes the receive actions for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -393,9 +381,9 @@ The following table describes the send actions for defining a Generic HTTP trans
    </tbody>
 </table>
 
-### <span id="Login"></span>Login settings for Generic HTTP(S) Transfer sites
+### <span id="Upload2"></span>Upload settings for Generic HTTP(S) Transfer sites
 
-The following table describes the login settings for defining a Generic HTTP transfer site.
+The following table describes the upload settings for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -466,22 +454,7 @@ ${env['ts_target']}</code> - The file name of the file that will be uploaded.   
 
                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>Example of how to use the environment variables in the body:</p>
-            <p><code>filename=${env['ts_target']}</code>
-</p>
-            <p><code>${env['ts_file_form_parameter_name']}=myDoc</code>
-</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-### <span id="Advanced"></span>Advanced settings for Generic HTTP(S) Transfer sites
-
-The following table describes the advanced settings for defining a Generic HTTP transfer site.
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -493,11 +466,20 @@ The following table describes the advanced settings for defining a Generic HTTP 
 <br><code>param1=value1</code><br><code>param2=value2
 </code></br></br>         </td>
       </tr>
+</table></p>
+            <p>Example of how to use the environment variables in the body:</p>
+            <p><code>filename=${env['ts_target']}</code>
+</p>
+            <p><code>${env['ts_file_form_parameter_name']}=myDoc</code>
+</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
-## <span id="List"></span>Sample configuration — List files and download
+### <span id="Send"></span>Send actions for Generic HTTP(S) Transfer sites
 
-Sample configuration for a Generic HTTP transfer site to list specific files on an Apache HTTP server and download them:
+The following table describes the send actions for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -536,9 +518,9 @@ Sample configuration for a Generic HTTP transfer site to list specific files on 
    </tbody>
 </table>
 
-## <span id="Download"></span>Sample configuration — Download file
+### <span id="Login"></span>Login settings for Generic HTTP(S) Transfer sites
 
-Configuration for a Generic HTTP transfer site to download a file from an Apache HTTP server:
+The following table describes the login settings for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -643,7 +625,17 @@ Configuration for a Generic HTTP transfer site to download a file from an Apache
                <li><strong>form-urlencoded</strong> – When selected the body will be transmitted as <code>application/x-www-form-urlencoded</code>.               </li>
                <li><strong>raw</strong> – When selected the body can be any text.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When the selected body content type is <strong>form-data</strong> or <strong>form-urlencoded</strong> the body should be formed as key-value pairs on separate lines.<br>Example:<br><code>param1=value1</code><br><code>param2=value2</code></br></br></br>         </td>
+      </tr>
+</table></p>
             <p>Example of how to use the environment variables in the body:</p>
             <p><code>user=${env['ts_form_auth_username']}</code>
 </p>
@@ -655,25 +647,9 @@ Configuration for a Generic HTTP transfer site to download a file from an Apache
    </tbody>
 </table>
 
-## <span id="Upload"></span>Sample configuration — Upload file
+### <span id="Advanced"></span>Advanced settings for Generic HTTP(S) Transfer sites
 
-Configuration for a Generic HTTP transfer site to upload a file to an Apache HTTP server:
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When the selected body content type is <strong>form-data</strong> or <strong>form-urlencoded</strong> the body should be formed as key-value pairs on separate lines.<br>Example:<br><code>param1=value1</code><br><code>param2=value2</code></br></br></br>         </td>
-      </tr>
-</table>
-
-## <span id="Push"></span>Sample configuration — Push file to SecureTransport user using Form Authentication
-
-Configuration for a Generic HTTP transfer site to push file to a SecureTransport user using form authentication:
+The following table describes the advanced settings for defining a Generic HTTP transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -753,23 +729,9 @@ Configuration for a Generic HTTP transfer site to push file to a SecureTransport
    </tbody>
 </table>
 
-## <span id="Supporte"></span>Supported expression language
+## <span id="List"></span>Sample configuration — List files and download
 
-This topic outlines the limited expression language supported by Generic HTTP transfer sites.
-
-### Predefined variables
-
-The predefined variable that is supported:
-
--   `${timestamp}`
-
-### Predefined functions
-
-The predefined functions that are supported:
-
--   Functions related to a date. For example: `${date("yyyyMMdd")}`
--   Functions related to a Random ID. For example: `${random()}`
--   Functions related to a String representation. For example: `${concat('str', 'ing')}`
+Sample configuration for a Generic HTTP transfer site to list specific files on an Apache HTTP server and download them:
 
 <table cellspacing="0">
    <col/>
@@ -1017,6 +979,772 @@ The predefined functions that are supported:
          <td>Not selected         </td>
       </tr>
    </tbody>
+</table>
+
+## <span id="Download"></span>Sample configuration — Download file
+
+Configuration for a Generic HTTP transfer site to download a file from an Apache HTTP server:
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Selection or entry</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>General Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td> Site Name         </td>
+         <td><code>GHTTP_download</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Site Type         </td>
+         <td>Unspecified         </td>
+      </tr>
+      <tr>
+         <td>Access Level         </td>
+         <td>Private         </td>
+      </tr>
+      <tr>
+         <td>Transfer Protocol         </td>
+         <td>Generic-HTTP(S)         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Server Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using hostname (IP address) and port number         </td>
+         <td>Selected         </td>
+      </tr>
+      <tr>
+         <td>Host         </td>
+         <td><code>10.232.14.182</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Port         </td>
+         <td><code>443</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using URL         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Address         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Network Zone         </td>
+         <td>
+            <p>none</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Transfer Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Use HTTPS         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Verify certificate for this Site         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Enable FIPS Transfer Mode         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>List</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>List settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Enable list         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>File download</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>File download settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td> URL path         </td>
+         <td>
+            <p><code>/download.txt</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>GET         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>No headers</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Receive actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Receive File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Upload</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Upload settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>
+            <p>PUT</p>
+         </td>
+      </tr>
+      <tr>
+         <td> Headers         </td>
+         <td>
+            <p>No headers</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Send actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Send File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Authentication</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Login Settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Client Certificate         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Certificate         </td>
+         <td>(Select Key) - No key selected         </td>
+      </tr>
+      <tr>
+         <td>Basic authentication settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>User name         </td>
+         <td><code>acc</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Use Password         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td> Password         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+      <tr>
+         <td>Form authentication         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Advanced settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Show Advanced Settings         </td>
+         <td>Not selected         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Upload"></span>Sample configuration — Upload file
+
+Configuration for a Generic HTTP transfer site to upload a file to an Apache HTTP server:
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Selection or entry</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>General Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Site Name         </td>
+         <td><code>GHTTP_upload</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Site Type         </td>
+         <td>Unspecified         </td>
+      </tr>
+      <tr>
+         <td>Access Level         </td>
+         <td>Private         </td>
+      </tr>
+      <tr>
+         <td>Transfer Protocol         </td>
+         <td>Generic-HTTP(S)         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Server Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using hostname (IP address) and port number         </td>
+         <td>Selected         </td>
+      </tr>
+      <tr>
+         <td>Host         </td>
+         <td><code>10.232.14.182</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Port         </td>
+         <td><code>443</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using URL         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Address         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Network Zone         </td>
+         <td>
+            <p>None</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Transfer Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Use HTTPS         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Verify certificate for this Site         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Enable FIPS Transfer Mode         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>List</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>List settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Enable list         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>File download</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>File download settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>GET         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>No headers</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Receive actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Receive File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Upload</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Upload settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p><code>/upload.php</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>
+            <p>POST</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>Header = <code>header1</code></p>
+            <p>Value = <code>value1</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>Body         </td>
+         <td>
+            <p>Select <strong>form-data</strong>.</p>
+            <p><code>${env['ts_file_form_parameter_name']}=filename</code>
+</p>
+            <p><code>filename=${env['ts_target']}</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Send actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Send File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Authentication</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Login Settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Client Certificate         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Certificate         </td>
+         <td>(Select Key) - No key selected         </td>
+      </tr>
+      <tr>
+         <td>Basic authentication settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>User name         </td>
+         <td><code>acc</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Use Password         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Password         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+      <tr>
+         <td>Form authentication         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Advanced settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Show Advanced Settings         </td>
+         <td>Not selected         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Push"></span>Sample configuration — Push file to SecureTransport user using Form Authentication
+
+Configuration for a Generic HTTP transfer site to push file to a SecureTransport user using form authentication:
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>General Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Site Name         </td>
+         <td><code>GHTTP_form</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Site Type         </td>
+         <td>Unspecified         </td>
+      </tr>
+      <tr>
+         <td>Access Level         </td>
+         <td>Private         </td>
+      </tr>
+      <tr>
+         <td>Transfer Protocol         </td>
+         <td>Generic-HTTP(S)         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Server Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using hostname (IP address) and port number         </td>
+         <td>Selected         </td>
+      </tr>
+      <tr>
+         <td>Host         </td>
+         <td><code>10.232.15.114</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Port         </td>
+         <td><code>443</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Specify partner using URL         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Address         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Network Zone         </td>
+         <td>
+            <p>none</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Transfer Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Use HTTPS         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Verify certificate for this Site         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td>Enable FIPS Transfer Mode         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>List</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>List settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Enable list         </td>
+         <td>Not selected         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>File download</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>File download settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p>—</p>
+         </td>
+      </tr>
+      <tr>
+         <td> Method         </td>
+         <td>GET         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>No headers</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Receive actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Receive File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Upload</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Upload settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p><code>/api/v1.4/files?transferMode=BINARY</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>
+            <p>POST</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>Header=<code>Referer</code></p>
+            <p>Value=<code>123</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>Body         </td>
+         <td>
+            <p>Select <strong>form-data</strong>.</p>
+            <p><code>${env['ts_file_form_parameter_name']}=filename</code>
+</p>
+            <p><code>filename=${env['ts_target']}</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Send actions</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Send File As         </td>
+         <td>
+            <p>Not selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Authentication</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Login Settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Client Certificate         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>Certificate         </td>
+         <td>(Select Key) - No key selected         </td>
+      </tr>
+      <tr>
+         <td>Basic authentication settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>User name         </td>
+         <td><code>user1</code>
+         </td>
+      </tr>
+      <tr>
+         <td>Use Password         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Password         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+      <tr>
+         <td>Form authentication         </td>
+         <td>
+            <p>Selected</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Form authentication settings         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>URL path         </td>
+         <td>
+            <p><code>/template/login</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Method         </td>
+         <td>
+            <p>POST</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Headers         </td>
+         <td>
+            <p>Header=<code>User-Agent</code></p>
+            <p>Value=<code>Mozilla/5.0</code></p>
+         </td>
+      </tr>
+      <tr>
+         <td>Body         </td>
+         <td>
+            <p>Select <strong>form-urlencoded</strong>.</p>
+            <p><code>switch=Log In</code>
+</p>
+            <p><code>user=${env['ts_form_auth_username']}</code>
+</p>
+            <p><code>password=${env['ts_form_auth_password']}</code>
+</p>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2"><strong>Advanced settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Show Advanced Settings         </td>
+         <td>Not selected         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Supporte"></span>Supported expression language
+
+This topic outlines the limited expression language supported by Generic HTTP transfer sites.
+
+### Predefined variables
+
+The predefined variable that is supported:
+
+-   `${timestamp}`
+
+### Predefined functions
+
+The predefined functions that are supported:
+
+-   Functions related to a date. For example: `${date("yyyyMMdd")}`
+-   Functions related to a Random ID. For example: `${random()}`
+-   Functions related to a String representation. For example: `${concat('str', 'ing')}`
+
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Expression variables and functions related to file name and the <span>SecureTransport</span> environment are not supported.         </td>
+      </tr>
 </table>
 
 ### Added expression variables

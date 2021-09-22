@@ -162,7 +162,50 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
    <col/>
       <tr valign="top">
          <td rowspan="3" width="20%">
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
+         </td>
+      </tr>
+      <tr>
+         <td>Information          </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
          <td width="80%">
             <p><a name="CFTX10I"></a>CFTX10I Warning : security file commands were modified</p>

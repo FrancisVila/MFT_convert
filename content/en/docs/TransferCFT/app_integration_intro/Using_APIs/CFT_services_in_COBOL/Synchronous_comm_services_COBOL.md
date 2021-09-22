@@ -59,15 +59,7 @@ This topic describes Transfer CFT synchronous communication services.
             </ul>
             <p>The GETXINFO action returns an error if the communication 
  medium is not synchronous.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-## <span id="Call Syntax"></span>Call syntax
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -79,6 +71,25 @@ This topic describes Transfer CFT synchronous communication services.
  reference of the transfer is a character string of variable length. In 
  the PESIT protocol, it contains 'pi13.pi3.pi4.pi11.pi12.pi61.pi62'.         </td>
       </tr>
+</table></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Call Syntax"></span>Call syntax
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>CALL     "CFTU"     
+ USING     &lt;verb&gt;       &lt;param&gt;     
+ &lt;rc&gt;<br/>CALL     "CFTC"     
+ USING     &lt;verb&gt;       &lt;param&gt;     
+ &lt;rc&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -95,21 +106,6 @@ Where:
     return code
 
 The available &lt;verbs> are listed in the following table.
-
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>CALL     "CFTU"     
- USING     &lt;verb&gt;       &lt;param&gt;     
- &lt;rc&gt;<br/>CALL     "CFTC"     
- USING     &lt;verb&gt;       &lt;param&gt;     
- &lt;rc&gt;         </td>
-      </tr>
-   </tbody>
-</table>
-
-The available &lt;param> are listed in the following table.
 
 <table cellspacing="0">
    <col/>
@@ -142,7 +138,7 @@ The available &lt;param> are listed in the following table.
       </tr>
 </table>
 
-## Return codes
+The available &lt;param> are listed in the following table.
 
 <table bgcolor="#FFFFFF" cellspacing="0">
    <col/>
@@ -192,8 +188,7 @@ The available &lt;param> are listed in the following table.
       </tr>
 </table>
 
-The available &lt;verbs> are
-listed in the following table.
+## Return codes
 
 <table bgcolor="#FFFFFF" cellspacing="0">
    <col/>
@@ -268,7 +263,7 @@ listed in the following table.
    </tbody>
 </table>
 
-The available &lt;param> are
+The available &lt;verbs> are
 listed in the following table.
 
 <table cellspacing="0">
@@ -310,6 +305,72 @@ listed in the following table.
          <td colspan="1" rowspan="1" valign="top" width="59.586%">
             <p>Recovering information about a transfer made from a synchronous 
  request</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+The available &lt;param> are
+listed in the following table.
+
+<table bgcolor="#FFFFFF" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>
+            <p>&lt;verb&gt;</p>
+</th>
+         <th>
+            <p>&lt;param&gt;</p>
+</th>
+         <th>
+            <p>Explanation</p>
+</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="1" rowspan="1" valign="top" width="20.005%">
+            <p>F-COM</p>
+         </td>
+         <td colspan="1" rowspan="1" valign="top" width="18.644%">
+            <p>D-COM</p>
+         </td>
+         <td colspan="1" rowspan="1" valign="top" width="61.351%">
+            <p>The COM command parameter structure is as follows: &lt;medium 
+ type&gt; = &lt;Medium name&gt;</p>
+            <p>The medium type consists in an uppercase letter:</p>
+            <ul>
+               <li>'F' for 
+ file               </li>
+               <li>'T' for the TCP/IP synchronous medium               </li>
+               <li>'C' for 
+ the configuration file (ConfigFileName)               </li>
+            </ul>
+            <p>The medium name is the:</p>
+            <ul>
+               <li>Filename, 
+ if the medium type is 'F'               </li>
+               <li>Name 
+ of the communication channel, if the medium type is 'T'               </li>
+               <li>Name 
+ of the configuration file containing the medium of communication characteristics, 
+ if the medium type is C.                </li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td colspan="1" rowspan="1" valign="top" width="20.005%">
+            <p>F-GETINXFO</p>
+         </td>
+         <td colspan="1" rowspan="1" valign="top" width="18.644%">
+            <p>Z-XINF</p>
+         </td>
+         <td colspan="1" rowspan="1" valign="top" width="61.351%">
+            <p>Information about a transfer in the format described in 
+ the <span>OAPIINF</span> file.</p>
          </td>
       </tr>
    </tbody>

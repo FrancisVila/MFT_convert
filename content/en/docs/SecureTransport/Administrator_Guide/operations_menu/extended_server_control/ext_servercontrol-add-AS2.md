@@ -49,7 +49,18 @@ The following table presents all parameters and expected values associated with 
          <td>Enable AS2 (non-SSL)         </td>
          <td>
             <p>Select to enable  insecure AS2 transfers with your current AS2 server. By selecting this option, the <b>non-SSL Port</b> and <b>non-SSL Host</b> options become editable. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><span>To enable AS2 without SSL, you must create an SSL encryption entry for a user class with SSL encryption optional. See </span><a href="../../../c_st_accesscontrol/c_st_sslaccess_new/t_st_sslaccess_new">Manage SSL access</a>.
+                                     </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -157,8 +168,7 @@ A new modal box with the AS2 settings pops up. Add your changes and click **Save
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><span>To enable AS2 without SSL, you must create an SSL encryption entry for a user class with SSL encryption optional. See </span><a href="../../../c_st_accesscontrol/c_st_sslaccess_new/t_st_sslaccess_new">Manage SSL access</a>.
-                                     </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You cannot delete or change the name of the "AS2 Default" server from the <span>SecureTransport</span> Administration Tool.         </td>
       </tr>
 </table>
 

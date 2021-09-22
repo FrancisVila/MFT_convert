@@ -864,7 +864,17 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
             <p>                  USS directory for Secure Relay Master Agent         
                        (/xsr is automatically added).                
                    </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Read only, you can share the directory  with other Transfer CFTs.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -910,22 +920,6 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 </table>
 
 #### SAML
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Read only, you can share the directory  with other Transfer CFTs.         </td>
-      </tr>
-</table>
-
-#### File prefixes
-
-You can customize specific prefixes for the following Transfer CFT files.
 
 <table cellspacing="0">
    <col/>
@@ -1006,6 +1000,10 @@ This certificate is stored in the internal PKI database.
    </tbody>
 </table>
 
+#### File prefixes
+
+You can customize specific prefixes for the following Transfer CFT files.
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -1066,16 +1064,6 @@ This certificate is stored in the internal PKI database.
    </tbody>
 </table>
 
-## <span id="Selectin"></span>Configure the SGINSTAL using UCONF or A12OPTSP
-
-As of Transfer CFT 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
-
-If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
-
-Syntax
-
-See the table below for possible keywords and values.
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -1089,7 +1077,15 @@ See the table below for possible keywords and values.
       </tr>
 </table>
 
-Example
+## <span id="Selectin"></span>Configure the SGINSTAL using UCONF or A12OPTSP
+
+As of Transfer CFT 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
+
+If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
+
+Syntax
+
+See the table below for possible keywords and values.
 
 <table cellspacing="0">
    <col/>
@@ -1100,7 +1096,7 @@ Example
    </tbody>
 </table>
 
-For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters in the A12OPTSP member.
+Example
 
 <table cellspacing="0">
    <col/>
@@ -1110,6 +1106,8 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
       </tr>
    </tbody>
 </table>
+
+For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters in the A12OPTSP member.
 
 <table cellspacing="0">
    <col/>
@@ -1141,7 +1139,17 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
             <ul>
                <li>NO: Transfer CFT does not register with ARM.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value 'ARM=NO'.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1151,7 +1159,17 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
          <td>
             <p>Maximum value used to calculate the BLKSIZE for files created by Transfer CFT, when this information is absent. </p>
             <p>You may reduce the default value by 32 if you want to create DF/SMS managed EXTENDED or LARGE format data sets.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value 'BLKSIZE=27998'.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1242,8 +1260,28 @@ MONITOR: the USERID associated with the monitor is always used.
             <ul>
                <li>YES: If a file to be sent is migrated, the HSM recall is performed asynchronously, and the transfer is delayed until HSM completes the request. Transfer CFT will always wait for the HSM recall of received files.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> If a Transfer CFT EXEC procedure is HSM migrated, it is not executed. An error message indicating this is displayed in the Transfer CFT LOG: CFTS02E migrated.         </td>
+      </tr>
+</table></p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value ‘HSMASYNC=YES’.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1296,12 +1334,32 @@ SAF checking applies only if Transfer CFT is running APF authorized.
                <li> NO (default) = Do not allow others to write to PDSE in sharing mode.                </li>
                <li>YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">On a shared SYSPLEX you must customize the following z/OS system parameter, either:         </td>
+      </tr>
+</table></p>
             <ul>
                <li>NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or               </li>
                <li>EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value ‘PDSESHARING=YES’.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1347,8 +1405,28 @@ SAF checking applies only if Transfer CFT is running APF authorized.
 </p>
             <p>NO: The catalog is cached in a dataspace, but the dataspace is not shared.</p>
             <p>INACT: The catalog is not cached, and no dataspace is created.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When the Transfer CFT is an APF-authorized program (Authorized Program Facility),  specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.         </td>
+      </tr>
+</table></p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value ‘SHARECAT=YES’.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1389,7 +1467,17 @@ SAF checking applies only if Transfer CFT is running APF authorized.
             <ul>
                <li>512: User exit calls               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1409,7 +1497,19 @@ SAF checking applies only if Transfer CFT is running APF authorized.
 
 .                </li>
                <li>3: Does not generate a line at the end of the JCL.               </li>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If the last line of JCL is not a JCL CARD, no statistic line is generated.
+
+         </td>
+      </tr>
+</table></p>
             </ul>
          </td>
       </tr>
@@ -1435,7 +1535,17 @@ SAF checking applies only if Transfer CFT is running APF authorized.
             <ul>
                <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value ‘TAPE=OUTPUT’.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1450,7 +1560,17 @@ SAF checking applies only if Transfer CFT is running APF authorized.
             <ul>
                <li>NO: Input files are read without changes from CFTUTIL.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value ‘TSOEDIT=YES’.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1467,8 +1587,6 @@ SAF checking applies only if Transfer CFT is running APF authorized.
    </tbody>
 </table>
 
-When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -1477,8 +1595,33 @@ When you start Transfer CFT, all parameters are printed in the transfer CFT LOG,
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value 'ARM=NO'.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">*MCSOPT, SDSFOPT, EMCSOPT: A user id is added only to CFTUTIL commands. The z/OS PAUSE command is interpreted as a CFTUTIL SHUT FAST=YES command. Transfer CFT diagnosis commands are not associated with a used id, for example MODIFY cft or ECHO.         </td>
       </tr>
+</table>
+
+When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CFTI18I+Installation options (macro SGINSTAL)               
+</p>
+            <p>CFTI18I+   Macro date - 05/29/17 15.45  (MM/DD/YY hh.mm) (c)
+</p>
+            <p>CFTI18I+   SHARECAT=NO                                      
+CFTI18I+   TAPE=UPDATE                                      
+CFTI18I+   BLKSIZE=27998                                    
+</p>
+            <p>CFTI18I+   BLKPDS=200                                       
+CFTI18I+   HSMASYNC=YES </p>
+            <p>CFTI18I+   ALLPRIM=100,ALLSEC=10,VOLNUM=20,ALLONE=100,ALLNEX=100
+</p>
+            <p>CFTI18I+   …</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
 When Transfer CFT starts, the CFTI18I message and DATE macro display in one of four formats:
@@ -1498,16 +1641,26 @@ When Transfer CFT starts, the CFTI18I message and DATE macro display in one of 
 
 To generate parameters from the SGINSTAL executable as UCONF variables:
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td>
+            <p>//* <b>STEP 1 : GENERATE</b></p>
+            <p>//CFTSGIGN EXEC PGM=CFTSGIGN</p>
+            <p>//STEPLIB   DD  DISP=SHR,DSN=&amp;CFTLOAD     (LIBRARY contains SGINSTAL)</p>
+            <p>//UCONFGEN  DD  UNIT=SYSDA,DISP=(NEW,PASS),</p>
+            <p>//          DCB=(RECFM=VB,LRECL=256,BLKSIZE=2560),</p>
+            <p>//          SPACE=(TRK,(1)),</p>
+            <p>//          DSN=&amp;&amp;TMP</p>
+            <p>//* <b>STEP 2 : UPDATE UCONF</b></p>
+            <p>//UCONF    EXEC PCFTUTL,PARM=''</p>
+            <p>//CFTIN     DD  DISP=(OLD,DELETE),</p>
+            <p>//          DSN=&amp;&amp;TMP</p>
+            <p>Delivered JCL INSTALL(MIGRSGI) extract.</p>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The delivered sample uses the value 'BLKSIZE=27998'.         </td>
       </tr>
+   </tbody>
 </table>
 
 Related topics

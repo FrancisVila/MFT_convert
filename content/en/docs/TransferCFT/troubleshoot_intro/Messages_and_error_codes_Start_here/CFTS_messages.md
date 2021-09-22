@@ -380,23 +380,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
             <p>Following a synchronous message queue time-out, the communication 
  task aborted.</p>
             <p>The str1 and str2 values are:</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-      <tr valign="top">
-         <td width="20%">
-            <p>Action</p>
-         </td>
-         <td width="80%">
-            <p>Contact 
- Axway Support.</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table border="1" cellspacing="0" width="90%">
+            <p><table border="1" cellspacing="0" width="90%">
    <col/>
    <col/>
       <tr valign="top">
@@ -477,6 +461,18 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
          <td colspan="1" rowspan="1" width="50%">
             <p>continue</p>
+         </td>
+      </tr>
+</table></p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td width="20%">
+            <p>Action</p>
+         </td>
+         <td width="80%">
+            <p>Contact 
+ Axway Support.</p>
          </td>
       </tr>
 </table>
@@ -1385,6 +1381,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table border="1" cellspacing="0" width="90%">
    <col/>
    <col/>
@@ -1432,8 +1430,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
-[ ](../cfti_messages)
-
 <table border="1" cellspacing="0" width="90%">
    <col/>
    <col/>
@@ -1461,7 +1457,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
- 
+[ ](../cfti_messages)
 
 <table border="1" cellspacing="0">
    <col/>
@@ -1575,18 +1571,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
          <td width="80%">
             <p>An error occurred in the FORMAT=V23/V24 (V23 default) parameter of CFTFILE  TYPE=ACCNT. When using the V23 format, the saved description (for ACCOUNT  files) is the same as in previous versions. However when using the V24  format, the length for saving is 2048, and  the saved description takes into  account the new longer field lengths.<br/></p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-<div>
-            <p>The message is  either:<br/>   CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT      </p>
-            <p>   CFTS40F CFTACCNT FORMAT=V23 not available for CFT.ACCNT  <br/>Followed by the message: CFTI17F Init error _ Account file .CFT.ACCNT</p>
-</div>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -1595,6 +1580,13 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td valign="top"><span><b>Note  </b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">The FORMAT parameter for the  CFTACCNT command must be the same setting as for<br/> CFTFILE TYPE=ACCNT. If not,  a message displays in the LOG and <span>Transfer CFT</span> does<br/>not start.          </td>
+      </tr>
+</table></p>
+<div>
+            <p>The message is  either:<br/>   CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT      </p>
+            <p>   CFTS40F CFTACCNT FORMAT=V23 not available for CFT.ACCNT  <br/>Followed by the message: CFTI17F Init error _ Account file .CFT.ACCNT</p>
+</div>
+         </td>
       </tr>
 </table>
 
@@ -2022,6 +2014,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -2074,8 +2068,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td width="80%">Contact the support team if necessary.         </td>
       </tr>
 </table>
-
- 
 
 <table cellspacing="0">
    <col/>
@@ -2143,6 +2135,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -2189,8 +2183,6 @@ Secure Relay Master agent is stopped.</p>
          <td width="80%">Secure relay information message : &amp;str= Router agent &amp;n is enabled but has no host or ports.         </td>
       </tr>
 </table>
-
- 
 
 <table cellspacing="0">
    <col/>
@@ -2339,6 +2331,69 @@ When the critical fill threshold is reached, a message is recorded in the Transf
 <p width="80%">This alert stops when the fill level drops below the TLVCLEAR level.
 </p>
 <p width="80%">When the alert stops, the message is recorded in the Transfer CFT log and a batch, the CFTCOM TLVCEXEC parameter, is submitted.</p>
+         </td>
+      </tr>
+</table>
+
+ 
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+      <tr valign="top">
+         <td width="20%">
+            <p>V23 format</p>
+            <p>V24 format</p>Information         </td>
+         <td width="80%">
+            <p><a name="CFTS73I"></a>CFTS73I Command file Alert exec &amp;fname executed </p>
+            <p>CFTS73I Command file Alert exec &amp;fname executed</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td width="20%">Explanation         </td>
+         <td width="80%">
+            <p>The &amp;FNAME procedure for a catalog alert was executed. </p>
+            <ul>
+               <li>If the critical fill threshold is reached, the CFTS71W message is recorded in the Transfer CFT log.                </li>
+               <li>If the alert ceases, the CFTS72W message is recorded in the Transfer CFT log.                </li>
+            </ul>
+            <p>Either way a batch is submitted, as by the CFTCOM TLVCEXEC parameter.</p>
+         </td>
+      </tr>
+</table>
+
+ 
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+      <tr valign="top">
+         <td width="20%">
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Error</p>
+         </td>
+         <td width="80%">
+            <p><a name="CFTS74E"></a>CFTS74E Command file Alert exec &amp;fname &amp;str"</p>
+            <p>CFTS74E  Command file Alert exec &amp;fname &amp;str"</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td width="20%">Explanation         </td>
+         <td width="80%">
+            <p>The &amp;FNAME procedure for a command file alert was not found or failed on access, producing this error. </p>
+            <ul>
+               <li>If the critical fill threshold is reached, the CFTS71W message is recorded in the Transfer CFT log.               </li>
+            </ul>
+            <ul>
+               <li>If the alert ceases, the CFTS72W message is recorded in the Transfer CFT log.               </li>
+            </ul>
+            <p>In either case, the batch defined by the CFTCOM TLVCEXEC parameter is not executed.</p>
+            <p>Where:</p>
+            <ul>
+               <li>&amp;str = "not found", or               </li>
+               <li>&amp;str = "failed"               </li>
+            </ul>
          </td>
       </tr>
 </table>

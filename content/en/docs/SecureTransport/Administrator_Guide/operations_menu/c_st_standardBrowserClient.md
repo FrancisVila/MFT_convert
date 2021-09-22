@@ -219,7 +219,17 @@ You can customize the type of login page the browser displays for browser client
             <p><code>HTML</code> – The server displays an HTML page for the user to type their name and password.</p>
             <p><code>ERR</code> – This is used for special cases, for example where cookies are used for authentication. When ERR is set, an authentication request does not occur. To get an authentication request, enable auth, and config agents.</p>
             <p><code>PREAUTH</code> – Enable auth and config agents. If authorization fails, the server displays an HTML page for the user to type their name and password.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When <code>PREAUTH</code> is set for <code>Http.FdxAuthReply</code>, <span>SecureTransport</span> uses <code>*nobody</code> as an internal constant value indicating that no user is authenticated with  internal agents. If a user with the  name <i>*nobody</i> already exists on the operating system, this may cause a conflict that prevents that user from logging in.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -235,22 +245,6 @@ To remove the display of server information in the SecureTransport browser clien
 
 Modify the function `PrintServerInfo` to return `0` as shown in the following code:
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When <code>PREAUTH</code> is set for <code>Http.FdxAuthReply</code>, <span>SecureTransport</span> uses <code>*nobody</code> as an internal constant value indicating that no user is authenticated with  internal agents. If a user with the  name <i>*nobody</i> already exists on the operating system, this may cause a conflict that prevents that user from logging in.         </td>
-      </tr>
-</table>
-
-### Customize the browser client login
-
-You can customize the type of login page the browser displays for browser client users. Change the values of the parameters described in the following table in the *Server Configuration* page. After you change any of these parameters, bounce the server.
-
 <table cellspacing="0">
    <col/>
    <tbody>
@@ -261,11 +255,9 @@ You can customize the type of login page the browser displays for browser client
    </tbody>
 </table>
 
-### Remove the server information displayed on the login screen
+### Customize the browser client login
 
-To remove the display of server information in the SecureTransport browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
-
-Modify the function `PrintServerInfo` to return `0` as shown in the following code:
+You can customize the type of login page the browser displays for browser client users. Change the values of the parameters described in the following table in the *Server Configuration* page. After you change any of these parameters, bounce the server.
 
 <table cellspacing="0">
    <col/>
@@ -290,6 +282,22 @@ Modify the function `PrintServerInfo` to return `0` as shown in the following co
       <tr>
          <td>Http.FdxAuthAliases         </td>
          <td>This parameter controls whether items in the <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/icons/</code> and <code>&lt;FILEDRIVEHOME&gt;/share/ftdocs/html/</code> directories are authenticated. Set it to <code>OFF</code> to display custom icons on the login page.         </td>
+      </tr>
+   </tbody>
+</table>
+
+### Remove the server information displayed on the login screen
+
+To remove the display of server information in the SecureTransport browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
+
+Modify the function `PrintServerInfo` to return `0` as shown in the following code:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td><code>function PrintServerInfo(name, ver, build, host) {<br/>    return 0;<br/>}</code>
+         </td>
       </tr>
    </tbody>
 </table>
@@ -319,12 +327,14 @@ Possible values:
 -   `true`- The request cashing is enabled.
 -   `false`- The Cache-Control directive is set to n`o-cache, no-store` on all static and non-static requests.
 
-<table cellspacing="0">
+<table cellpadding="0" cellspacing="0">
    <col/>
-   <tbody>
+   <col/>
+   <col/>
       <tr>
-         <td><code>function PrintServerInfo(name, ver, build, host) {<br/>    return 0;<br/>}</code>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
          </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> When requests are not being cached, performance degradation may occur.         </td>
       </tr>
-   </tbody>
 </table>

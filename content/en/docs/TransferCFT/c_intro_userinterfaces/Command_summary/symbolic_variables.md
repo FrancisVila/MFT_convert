@@ -1556,7 +1556,18 @@ Symbolic variables can be used:
                <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE               </li>
                <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a>               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You cannot use the variables designated by asterisk (*) in procedures 
+ associated with the EXEC* parameters relative to message transfers.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -1636,17 +1647,13 @@ Symbolic variables can be used:
 A file name can consist of the day’s date and the partner’s name:  the
 description command for the PAY file in reception.
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You cannot use the variables designated by asterisk (*) in procedures 
- associated with the EXEC* parameters relative to message transfers.         </td>
+         <td>RECV IDF = PAY, FNAME = PAY&amp;4PART.&amp;FDAY         </td>
       </tr>
+   </tbody>
 </table>
 
 When a file of this type is received from the ALPHSITE partner on July
@@ -1656,7 +1663,7 @@ When a file of this type is received from the ALPHSITE partner on July
    <col/>
    <tbody>
       <tr>
-         <td>RECV IDF = PAY, FNAME = PAY&amp;4PART.&amp;FDAY         </td>
+         <td>RECV PART = ALPHSITE, IDF = PAY         </td>
       </tr>
    </tbody>
 </table>
@@ -1682,7 +1689,7 @@ UNIX
    <col/>
    <tbody>
       <tr>
-         <td>RECV PART = ALPHSITE, IDF = PAY         </td>
+         <td>uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\$\(|;|&amp;|\|"         </td>
       </tr>
    </tbody>
 </table>
@@ -1696,7 +1703,7 @@ Windows
    <col/>
    <tbody>
       <tr>
-         <td>uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\$\(|;|&amp;|\|"         </td>
+         <td>uconfset id=cft.server.processing_scripts_variables_blacklist , value="&amp;"         </td>
       </tr>
    </tbody>
 </table>
@@ -1721,9 +1728,112 @@ and certificates used.
 
 <table cellspacing="0">
    <col/>
-   <tbody>
+   <col/>
+   <thead>
       <tr>
-         <td>uconfset id=cft.server.processing_scripts_variables_blacklist , value="&amp;"         </td>
+         <th>Symbolic variable</th>
+         <th>Description</th>
       </tr>
-   </tbody>
+   </thead>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSL </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Indicates whether security was implemented (1 = 
+ yes, 0 = no) for the session in which the transfer was performed. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLMODE </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Direction of the SSL session in which the transfer was 
+ performed.</p>
+            <p>C signifies client and 
+ S signifies server. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLAUTH </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Authentication mode of the SSL session in which the transfer 
+ was performed.</p>
+            <ul>
+               <li>S 
+ signifies that only the server was authenticated.               </li>
+               <li>B 
+ signifies that the client and server were authenticated.               </li>
+               <li>A 
+ signifies that the anonymous mode  has 
+ been implemented.                </li>
+            </ul>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLCIPH </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Suite negotiated for the SSL session.</p>
+            <p>This suite is set to one of the values from the suites 
+ supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47). </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLPROF </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Identifier of the CFTSSL command used to negotiate the 
+ session parameters. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLPARM </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Value of the PARM parameter in the CFTSSL command used 
+ to negotiate the session parameters. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLRMCA </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Certificate identifier of the authority that signed the 
+ certificate presented by the remote partner. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLRMCN </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Remote user certificate CN field. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLUSER </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Identifier of the user certificate used locally for authentication 
+ by the remote partner. </p>
+         </td>
+      </tr>
+      <tr valign="middle">
+         <td valign="top" width="26%">
+            <p>&amp;SSLCFNAM </p>
+         </td>
+         <td valign="top" width="74%">
+            <p>Physical name of the file in which the certificate chain 
+ presented by the remote partner was recorded. This is the same as the CFTSSL CERFNAME parameter value.</p>
+         </td>
+      </tr>
 </table>

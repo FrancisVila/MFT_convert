@@ -85,7 +85,7 @@ When you are working in Central Governance, you create *applications* that repre
          </td>
       </tr>
       <tr>
-         <td colspan="4">             <p>Notice the association between the application <span>Name </span>and the<span> Transfer CFT</span> instance identifier. You will need the Transfer CFT identifier, for example <span>CFTlptxumcft4-01</span> in the example below, to use in your transfer commands.</p>            <p>Your <b>Name</b> list should look like this:</p>            <p><img alt="Application list in Central Governance showing 3 example applications to use in flows" src="mapArrow.png"/></p>            <p> </p>            <p>&amp;&amp;&amp; ïïï ùùù</p>         </td>
+         <td colspan="4">             <p>Notice the association between the application <span>Name </span>and the<span> Transfer CFT</span> instance identifier. You will need the Transfer CFT identifier, for example <span>CFTlptxumcft4-01</span> in the example below, to use in your transfer commands.</p>            <p>Your <b>Name</b> list should look like this:</p>            <p><img alt="Application list in Central Governance showing 3 example applications to use in flows" src="mapArrow.png"/></p>            <p> </p>            <p><table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Tip  </b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">The <span>Transfer CFT</span> field in <span>Central Governance</span> maps to the <span>Transfer CFT</span> PART parameter.         </td>      </tr></table></p>         </td>
       </tr>
    </tbody>
 </table>
@@ -97,14 +97,6 @@ Let's begin by creating a simple flow, and then exchange a file. In this example
 ![Simplified diagram of a Source Transfer CFT sending a file to a Target](mapArrow.png)
 
  
-
-<table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Tip  </b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">The <span>Transfer CFT</span> field in <span>Central Governance</span> maps to the <span>Transfer CFT</span> PART parameter.         </td>      </tr></table>
-
-### <span id="Send_multiple_files_to_application"></span>Create a flow that sends multiple files to an application
-
-This flow sends multiple files to a defined application. So a Store\_66 application might create several files and set them to an available state, and the MainOffice application can then retrieve these when ready, for example at a scheduled time.
-
-![Simplified diagram of a Source Transfer CFT sending a multiple files to a Target](mapArrow.png)
 
 <table cellspacing="0">
    <col/>
@@ -154,7 +146,17 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
          <td>
             <p>In <span>Transfer CFT</span>,  run the following command: <br/>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report</p>
             <p>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Tip  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">The flow Identifier field is equivalent to the <span>Transfer CFT</span> IDF parameter.         </td>
+      </tr>
+</table></p>
          </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img alt="" src="mapArrow.png"/></a>
          </td>
@@ -169,37 +171,11 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
    </tbody>
 </table>
 
-### <span id="Create_implicit_mode_flow"></span>Create an implicit mode flow
+### <span id="Send_multiple_files_to_application"></span>Create a flow that sends multiple files to an application
 
-You can use the transfer mode to make a file whose content is frequently changing available to applications. The file is always available, and applications can retrieve it as many time as necessary.
+This flow sends multiple files to a defined application. So a Store\_66 application might create several files and set them to an available state, and the MainOffice application can then retrieve these when ready, for example at a scheduled time.
 
-![Simplified diagram of a Target Transfer CFT requesting a file from the Source](mapArrow.png)
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Tip  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">The flow Identifier field is equivalent to the <span>Transfer CFT</span> IDF parameter.         </td>
-      </tr>
-</table>
-
-### <span id="Broadcast_and_collect_using_cg"></span>Perform broadcast and collect operations
-
-Broadcast and collect modes allow you to send files to multiple partners and receiving files from multiple partners using a single command request for each.
-
-#### Broadcasting
-
-You can use broadcasting to send a file to an entire group of partners in one command, avoiding the task of sending the selected file individually to each of the partners in a flow.
-
-The name of the broadcast list is itself a virtual partner, which contains a list of partners in your flow. This list of partners can be explicit, or it can reference a file that contains the list of partners.
-
-Additionally, you can define what occurs if a partner is unknown, how the scripts are applied to the broadcast list, and so on. [More information](../../concepts/transfer_command_overview/broadcast_collect)...
-
-![Simplified diagram of a Source Transfer CFT sending a file to multiple Targets](mapArrow.png)
+![Simplified diagram of a Source Transfer CFT sending a multiple files to a Target](mapArrow.png)
 
 <table cellspacing="0">
    <col/>
@@ -270,13 +246,11 @@ Additionally, you can define what occurs if a partner is unknown, how the script
    </tbody>
 </table>
 
-#### Collecting
+### <span id="Create_implicit_mode_flow"></span>Create an implicit mode flow
 
-Collecting files is the inverse of using a broadcast list. In the collect transfer mode you can receive a dedicated file from multiple partners (P*n*). This allows the receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
+You can use the transfer mode to make a file whose content is frequently changing available to applications. The file is always available, and applications can retrieve it as many time as necessary.
 
-![Simplified diagram of a Target Transfer CFT receiving files from multiple sources](mapArrow.png)
-
- 
+![Simplified diagram of a Target Transfer CFT requesting a file from the Source](mapArrow.png)
 
 <table cellspacing="0">
    <col/>
@@ -332,6 +306,161 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
       </tr>
       <tr>
          <td>5         </td>
+         <td>Monitor the flow.          </td>
+         <td>In <span>Central Governance</span>, check the status of the file exchange.         </td>
+         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+### <span id="Broadcast_and_collect_using_cg"></span>Perform broadcast and collect operations
+
+Broadcast and collect modes allow you to send files to multiple partners and receiving files from multiple partners using a single command request for each.
+
+#### Broadcasting
+
+You can use broadcasting to send a file to an entire group of partners in one command, avoiding the task of sending the selected file individually to each of the partners in a flow.
+
+The name of the broadcast list is itself a virtual partner, which contains a list of partners in your flow. This list of partners can be explicit, or it can reference a file that contains the list of partners.
+
+Additionally, you can define what occurs if a partner is unknown, how the scripts are applied to the broadcast list, and so on. [More information](../../concepts/transfer_command_overview/broadcast_collect)...
+
+![Simplified diagram of a Source Transfer CFT sending a file to multiple Targets](mapArrow.png)
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th> </th>
+         <th>Task</th>
+         <th>Description</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>1         </td>
+         <td>
+            <p>Create a flow. <br/></p>
+         </td>
+         <td>
+            <p>In <span>Central Governance</span> define a flow called <span>flow04</span>. In this flow the  MainOffice is the Source with the two stores as the Targets.  </p>
+         </td>
+         <td><a href="intro_cg_task_catalog/t_defineflow_broadcast"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>2         </td>
+         <td>Enable broadcasting mode.         </td>
+         <td>In the Source Transfer properties, enable Broadcast list.         </td>
+         <td><a href="intro_cg_task_catalog/t_defineflow_broadcast"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>3         </td>
+         <td>          </td>
+         <td>For this example, copy a file SALES_report to transfer in the Store_66 <span>Transfer CFT</span> runtime\pub folder.         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>4         </td>
+         <td>
+            <p>Deploy the flow.</p>
+         </td>
+         <td>In <span>Central Governance</span> you can save and deploy at a later date, or both save and deploy now.         </td>
+         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>5         </td>
+         <td>Run the SEND command.         </td>
+         <td>
+            <p>In <span>Transfer CFT</span>,  run the following command: </p>
+            <p><span>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</span>
+</p>
+         </td>
+         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>6         </td>
+         <td>Monitor the flow.          </td>
+         <td>In <span>Central Governance</span>, check the status of the file exchange.         </td>
+         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+#### Collecting
+
+Collecting files is the inverse of using a broadcast list. In the collect transfer mode you can receive a dedicated file from multiple partners (P*n*). This allows the receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
+
+![Simplified diagram of a Target Transfer CFT receiving files from multiple sources](mapArrow.png)
+
+ 
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th> </th>
+         <th>Task</th>
+         <th>Description</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>1         </td>
+         <td>
+            <p>Create a flow. <br/></p>
+         </td>
+         <td>
+            <p>In <span>Central Governance</span> create a flow called <span>flow05 </span>and define the Source as MainOffice and the stores as the Target. <br/><span>Note</span>: You cannot define the Protocol until you have defined both the Source and Target. </p>
+         </td>
+         <td><a href="intro_cg_task_catalog/t_define_simpleflow"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>2         </td>
+         <td>Enable collect mode.         </td>
+         <td>In the Collect_flow definition, modify to Target pulls file.         </td>
+         <td><a href="intro_cg_task_catalog/t_defineflow_collect"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>3         </td>
+         <td>Define the path to the Target file for each store.          </td>
+         <td>In the Target (each store) select File properties. In Path field, enter the path to the file to send.         </td>
+         <td><a href="intro_cg_task_catalog/t_collect_target_properties"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>4         </td>
+         <td>
+            <p>Deploy the flow.</p>
+         </td>
+         <td>In <span>Central Governance</span> you can save and deploy later, or save and deploy.         </td>
+         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>5         </td>
+         <td>Run the RECV command.         </td>
+         <td>In <span>Transfer CFT</span>,  run the following command: <span><br/>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</span>         </td>
+         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img alt="" src="mapArrow.png"/></a>
+         </td>
+      </tr>
+      <tr>
+         <td>6         </td>
          <td>Monitor the flow.          </td>
          <td>In <span>Central Governance</span>, check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img alt="" src="mapArrow.png"/></a>

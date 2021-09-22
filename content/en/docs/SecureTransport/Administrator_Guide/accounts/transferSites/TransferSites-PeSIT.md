@@ -46,7 +46,17 @@ The following table describes the general options for a PeSIT transfer site.
                <li>To delete an alternative server endpoint, select the corresponding check-box on the same row and click <b>Delete</b>.               </li>
                <li>To reorder the list of alternative endpoints, click <b>Reorder</b>. A new option (upward and downward arrow) appears next to each entry. You must hover with the mouse pointer over this newly appeared option and the mouse pointer will assume the "move" shape: a four-directional arrow pointer. This indicates which alternative endpoint is in focus. You can now drag &amp; drop it up and down to the order number you want it at. Perform this action with other alternative endpoints until the list is ordered according to your needs. When you are done, click <b>Save Order</b> to keep the newly changed order.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
+      </tr>
+</table></p>
             <ul>
                <li><code>AllHostsOnEachRetry</code> – with this policy <span>SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span>SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.               </li>
                <li><code>OneHostOnEachRetry</code> –   with this policy <span>SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span>SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span>SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.                </li>
@@ -117,18 +127,6 @@ The following table describes the general options for a PeSIT transfer site.
 Scroll down to the bottom of the screen and click the **Show Advanced Settings** to expand the screen with additional options.
 
 **Note:** Pre-Connection Settings fields have length validation. It is **not** applied by the User Interface (front end validation) when the value is **Expression Language**. In such situations it is the responsibility of the administrator to provide a valid expression and value.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
-      </tr>
-</table>
 
 <table cellspacing="0">
    <col/>
@@ -295,7 +293,17 @@ Scroll down to the bottom of the screen and click the **Show Advanced Settings**
 <b>START_NEW</b>
 or 
 <b>PRESERVE</b>. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The  Store and Forward mode selected here can be overwritten from the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner">Send To Partner</a> step settings.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -303,7 +311,17 @@ or
          <td>
             <ul>
                <li>In case of <span>SecureTransport</span> initiating a new<a name="Pesit_Store&amp;Forward_PI61"></a> Store and Forward transfer, this property specifies the originator (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes">PI61</a>) of the transfer.                </li>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The originator specified in the PeSIT transfer site can be overwritten from  the Advanced Routing Send To Partner step setting <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner">Originator</a>.<br/>         </td>
+      </tr>
+</table></p>
                <li>In case no value is specified in both this filed and the Advanced Routing Send To Partner step setting <b>Originator</b>, PI61 is blank.               </li>
                <li>When the PRESERVE store and forward mode is selected, this field is disabled as PI preserves the PI61 value.                </li>
             </ul>
@@ -314,7 +332,17 @@ or
          <td>
             <ul>
                <li>In case of <span>SecureTransport</span> initiating a new <a name="Pesit_Store&amp;Forward_PI62"></a> Store and Forward transfer, this property specifies the final destination (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes">PI62</a>) of the transfer.                </li>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The final destination specified in the PeSIT transfer site can be overwritten from  the Advanced Routing Send To Partner step setting <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner">Final Destination</a>.         </td>
+      </tr>
+</table></p>
                <li>In case no value is specified in both this field and the Advanced Routing Send To Partner step setting <b>Final Destination</b>, PI62 is blank.               </li>
                <li>When the PRESERVE store and forward mode is selected, this field is disabled as PI preserves the PI62 value.               </li>
             </ul>
@@ -366,12 +394,6 @@ or
    </tbody>
 </table>
 
-## <span id="Advanced2"></span>Advanced SSL Settings for PeSIT Transfer sites
-
-Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current PeSIT Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
-
- 
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -380,8 +402,45 @@ Advanced SSL settings allow you to define Cipher suites and SSL protocols with 
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The  Store and Forward mode selected here can be overwritten from the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner">Send To Partner</a> step settings.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The options displayed below <b>pTCP connection retry count</b> are described <a href="#transferset">here</a>.         </td>
       </tr>
+</table>
+
+## <span id="Advanced2"></span>Advanced SSL Settings for PeSIT Transfer sites
+
+Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current PeSIT Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
+
+ 
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>Show Advanced SSL Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Cipher suites         </td>
+         <td>
+            <p>The set of cipher suites available with the current PeSIT transfer site for secure SIT connection. By default this set is populated with the cipher suites as defined in the <code>Pesit.SIT.Ciphers</code> configuration option.</p>
+            <p>To reset to default values, click the button next to the tooltip.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Enabled SSL protocols         </td>
+         <td>
+            <p>The available SSL protocols for secure SIT connection with the current PeSIT transfer sites. By default this list is populated with the SSL protocols as defined in the <code>Pesit.SIT.EnabledProtocols</code> configuration option.</p>
+            <p>To reset to default values, click the button next to the tooltip.</p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
 The following section provides how-to instructions for selecting a default PeSIT transfer site for routing:

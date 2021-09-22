@@ -59,7 +59,19 @@ This topic describes Transfer CFT synchronous communication services.
             </ul>
             <p>The GETXINFO action returns an error if the communication 
  medium is not synchronous.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The public 
+ reference of the transfer is a character string of variable length. In 
+ the PESIT protocol, it contains 'pi13.pi3.pi4.pi11.pi12.pi61.pi62'.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>

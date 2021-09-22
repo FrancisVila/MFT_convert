@@ -56,7 +56,17 @@
          </td>
          <td>
             <p>Updates repository encryption by decrypting files encrypted in a previous version of <span>SecureTransport</span> and encrypting them for the current version. Can also change the cipher algorithm and certificate <span>SecureTransport</span> uses to encrypt files and decrypt files and folders. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">On Windows systems, the repconv tool cannot process files with special characters in their names (such as Japanese, Chinese, or Cyrillic characters).         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -204,7 +214,17 @@
          <td colspan="2">
 <p colspan="2"><b>Status scripts</b>
 </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In order for the status scripts to work, you need to have the admin server up an running.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -308,7 +328,7 @@
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">On Windows systems, the repconv tool cannot process files with special characters in their names (such as Japanese, Chinese, or Cyrillic characters).         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><span>SecureTransport</span> includes several utilities that are used internally. All the utility files are stored in the <code>&lt;FILEDRIVEHOME&gt;/bin</code> or <code>&lt;FILEDRIVEHOME&gt;/bin/utils</code> directory.         </td>
       </tr>
 </table>
 
@@ -320,6 +340,6 @@
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In order for the status scripts to work, you need to have the admin server up an running.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In case of low disk space do not start servers.         </td>
       </tr>
 </table>

@@ -12,14 +12,7 @@ In this section you create three applications in Central Governance to represent
 
 Select **Products** on the top toolbar to open the **Product List** page.
 
-![](application_list_complete.png "title")
-![aaa](application_list_complete.png "title")
-![](./application_list_complete.png "title")
-![aaa](./application_list_complete.png "title")
-![]("./application_list_complete.png" "title")
-![aaa]("./application_list_complete.png" "title")
-![]("./application_list_complete.png" )
-![aaa]("./application_list_complete.png")
+![](application_list_complete.png)
 
 Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
 

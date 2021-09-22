@@ -106,7 +106,17 @@ Set the following UCONF parameters.
          <td>-         </td>
          <td>
             <p>Set the am.type=saml</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If you set SAML as the access management type, <span>am.type=saml</span>, you must use bearer authentication with REST API.         </td>
+      </tr>
+</table></p>
          </td>
          <td>saml         </td>
       </tr>

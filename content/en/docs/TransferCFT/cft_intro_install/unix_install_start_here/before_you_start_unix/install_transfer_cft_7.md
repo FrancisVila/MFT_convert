@@ -102,7 +102,7 @@ Use the following command to install Transfer CFT in silent mode.
       <tr>
          <td>Installation Directory         </td>
          <td>Specify the directory where you want to install Transfer 
-CFT. This is the directory where the Transfer CFT product files  are installed.             <p>&amp;&amp;&amp; ïïï ùùù</p>         </td>
+CFT. This is the directory where the Transfer CFT product files  are installed.             <p><table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Note</b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Directory paths cannot contain spaces.         </td>      </tr></table></p>         </td>
       </tr>
       <tr>
          <td>Configuration filename         </td>

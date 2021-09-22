@@ -258,7 +258,26 @@ Some of the options are initially hidden. The following table provides detailed 
             </ul>
             <p>Some examples of Attributes are:</p>
             <p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Attribute</th>
+         <th>Value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>userVars.1         </td>
+         <td>internalEmail@axway.com         </td>
+      </tr>
+      <tr>
+         <td>userVars.2         </td>
+         <td>ReportsMonitor         </td>
+      </tr>
+   </tbody>
+</table></p>
 </p>
             <p>To access attributes, see the following examples:</p>
             <p><code>${account.attributes['userVars.1']}</code>

@@ -2,10 +2,8 @@
     "title": "Folder monitoring - CFTFOLDER",
     "linkTitle": "Folder monitoring - CFTFOLDER",
     "weight": "270"
-}This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
-
-
-
+}This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -16,26 +14,16 @@
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.         </td>
       </tr>
-</table>
-
-
-
-## CFTFOLDER object
-
-
-
-The following table describes the parameters you can use to define the CFTFOLDER object. Additionally the table lists the UCONF equivalent for users who have opted for a polling type of folder monitoring.
-
-
-
-### Folder monitoring parameters
-
-
-
-Use the following CFTFOLDER parameters to configure folder monitoring for each directory as needed.
-
-
-
+</table>
+
+## CFTFOLDER object
+
+The following table describes the parameters you can use to define the CFTFOLDER object. Additionally the table lists the UCONF equivalent for users who have opted for a polling type of folder monitoring.
+
+### Folder monitoring parameters
+
+Use the following CFTFOLDER parameters to configure folder monitoring for each directory as needed.
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -87,7 +75,17 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
          <td>Active         </td>
          <td>
             <p>Enables a scan of the folder.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> NO = NOACTIVE.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -99,7 +97,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
          <td>
             <p>Absolute path name of the top level directory to scan.</p>
             <p>This directory must exist before restarting Transfer CFT.</p>
-            <p>*See <a href="#char_note">NOTE</a>.</p>
+            <p>*See <a href="#*char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
@@ -114,8 +112,18 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.               </li>
                <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>*See <a href="#char_note">NOTE</a>.</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Caution  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">   Never delete any .met files.         </td>
+      </tr>
+</table></p>
+            <p>*See <a href="#*char_note">NOTE</a>.</p>
          </td>
       </tr>
       <tr>
@@ -140,8 +148,28 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>MOVE: Files are moved to the work_dir prior to being submitted.                </li>
                <li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.         </td>
+      </tr>
+</table></p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.         </td>
+      </tr>
+</table></p>
             <p>Please see the <a href="../../../../app_integration_intro/intro_folder_monitor">Limitations</a> for multi-host system recommendations.</p>
          </td>
       </tr>
@@ -178,7 +206,17 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>"(0)":  The name of the first directory sub-level is used.               </li>
                <li>"(1)": The name of the second directory sub-level is used.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In the <a href="##example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -194,7 +232,17 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>"(0)": The name of the first directory sub-level is used.               </li>
                <li>"(1)": The name of the second directory sub-level is used.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In the <a href="##example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -250,7 +298,17 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
                <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.                </li>
                <li>No: Files are not resubmitted, regardless of changes.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The file is resubmitted after <i>any</i> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -276,7 +334,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
          <td>Enum          </td>
          <td>TIMESTAMP          </td>
          <td>
-            <p>This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</p>For example, using timestamp_separators=".":            <ul>               <li>myfile     is renamed myfile.20131025               </li>               <li> myfile.txt is renamed myfile.20131025.txt               </li>            </ul>            <p>&amp;&amp;&amp; ïïï ùùù</p>         </td>
+            <p>This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</p>For example, using timestamp_separators=".":            <ul>               <li>myfile     is renamed myfile.20131025               </li>               <li> myfile.txt is renamed myfile.20131025.txt               </li>            </ul>            <p><table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Note</b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Unset the default value and use " " to MOVE without adding a timestamp.         </td>      </tr></table></p>         </td>
       </tr>
       <tr>
          <td>RENAMESEPARATOR         </td>
@@ -329,10 +387,8 @@ The second one, when present, defines the separator after the timestamp.
          </td>
       </tr>
    </tbody>
-</table>
-
-
-
+</table>
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -341,27 +397,16 @@ The second one, when present, defines the separator after the timestamp.
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> NO = NOACTIVE.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><a name="*char_note"></a>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
       </tr>
-</table>
-
-
-
--   UNIX /
-
--   For Windows \\ / : \* ? " &lt; > |
-
-
-
-Related topics
-
-
-
--   [Introduction to folder monitoring](../../../../app_integration_intro/intro_folder_monitor)
-
--   [Deprecated folder monitoring (UCONF)](../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf)
-
--   [Migrate to CFTFOLDER folder monitoring](../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder)
-
--   [Create inclusion and exclusion filters](../../../../app_integration_intro/intro_folder_monitor/folder_customize)
-
+</table>
+
+-   UNIX /
+-   For Windows \\ / : \* ? " &lt; > |
+
+Related topics
+
+-   [Introduction to folder monitoring](../../../../app_integration_intro/intro_folder_monitor)
+-   [Deprecated folder monitoring (UCONF)](../../../../app_integration_intro/intro_folder_monitor/folder_monitor_uconf)
+-   [Migrate to CFTFOLDER folder monitoring](../../../../app_integration_intro/intro_folder_monitor/migrate_uconf_cftfolder)
+-   [Create inclusion and exclusion filters](../../../../app_integration_intro/intro_folder_monitor/folder_customize)

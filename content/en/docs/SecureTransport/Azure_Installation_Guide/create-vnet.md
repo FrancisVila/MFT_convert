@@ -15,7 +15,17 @@
                <li value="3">Under the "Featured" section, choose <strong>Virtual Network</strong>.<br/>               </li>
                <li value="4">Fill in the settings and click <strong>Create</strong>.               </li>
 </ol>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The image provides an example Address space. You can configure the Address space according to your needs.         </td>
+      </tr>
+</table></p>
          </td>
          <td>
 <img src="create-VNet.PNG"/>

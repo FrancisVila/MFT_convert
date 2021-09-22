@@ -139,7 +139,17 @@ Parameter descriptions
                <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.               </li>
                <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Caution  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">   Never delete any .met files.         </td>
+      </tr>
+</table></p>
             <p>*See NOTE.</p>
          </td>
       </tr>
@@ -296,7 +306,17 @@ Parameter descriptions
                <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.                </li>
                <li>No: Files are not resubmitted, regardless of changes.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The file is resubmitted after <i>any</i> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -383,9 +403,9 @@ The second one, when present, defines the separator after the timestamp.
    <col/>
       <tr>
          <td valign="top">         </td>
-         <td valign="top"><span><b>Caution  </b></span>
+         <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">   Never delete any .met files.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
       </tr>
 </table>
 
@@ -427,38 +447,6 @@ To deactivate compatibility checks of a folder’s new configuration, unset the 
 
 If the folder's logical name is **A**, execute the following command prior to the reconfiguration (or start) command:
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The file is resubmitted after <i>any</i> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
-      </tr>
-</table>
-
-When you then reconfigure (or start) Transfer CFT, the **A** folder is not checked.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
-      </tr>
-</table>
-
-## <span id="Director"></span>Directory configuration examples
-
-This section presents an example that consists of configuring 3 directories for monitoring, each having a different set of configuration parameter values. In this example, the three different directories are called A, B, and C.
-
-Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
-
 <table cellspacing="0">
    <col/>
    <tbody>
@@ -470,7 +458,7 @@ Note that the configuration parameter folder\_monitoring must contain a list wit
    </tbody>
 </table>
 
-For this example, you would execute the following command:
+When you then reconfigure (or start) Transfer CFT, the **A** folder is not checked.
 
 <table cellspacing="0">
    <col/>
@@ -483,6 +471,12 @@ For this example, you would execute the following command:
    </tbody>
 </table>
 
+## <span id="Director"></span>Directory configuration examples
+
+This section presents an example that consists of configuring 3 directories for monitoring, each having a different set of configuration parameter values. In this example, the three different directories are called A, B, and C.
+
+Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -492,6 +486,33 @@ For this example, you would execute the following command:
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In all of the examples in this topic, you must enter CFTUTIL in upper case.         </td>
+      </tr>
+</table>
+
+For this example, you would execute the following command:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CFTUTIL uconfset id=folder_monitoring.enable , value='Yes'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'</p>
+            <p>*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
       </tr>
 </table>
 
@@ -509,9 +530,19 @@ The following commands create the configuration defined for directory A.
    <tbody>
       <tr>
          <td>
-            <p>CFTUTIL uconfset id=folder_monitoring.enable , value='Yes'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'</p>
-            <p>*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.</p>
+            <p>#</p>
+            <p># Create all of the needed directories (UNIX platform example)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_a</p>
+            <p>mkdir /home/CFT/fm/dir_a/scan</p>
+            <p>mkdir /home/CFT/fm/dir_a/work</p>
+            <p>#</p>
+            <p># Define  the needed Transfer CFT configuration parameters leaving all others set to their default value.</p>
+            <p>#</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.scan_dir , value='/home/CFT/fm/dir_a/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.work_dir , value='/home/CFT/fm/dir_a/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.part , value='NEWYORK'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.idf , value='IDFA'</p>
          </td>
       </tr>
    </tbody>
@@ -527,16 +558,34 @@ For the second directory, directory B, we want to:
 
 The following commands create the required directory B configuration.
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td>
+            <p>#</p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_b</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan</p>
+            <p>mkdir /home/CFT/fm/dir_b/work</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/london</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
+            <p>#</p>
+            <p># Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.</p>
+            <p>#</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.scan_dir , value='/home/CFT/fm/dir_b/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.work_dir , value='/home/CFT/fm/dir_b/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.part , value='(0)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='*.txt'</p>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
       </tr>
+   </tbody>
 </table>
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example /home/CFT/fm/dir\_b/newyork for the partner named newyork.
@@ -561,18 +610,29 @@ The following commands create the described directory C configuration.
       <tr>
          <td>
             <p>#</p>
-            <p># Create all of the needed directories (UNIX platform example)</p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
             <p>#</p>
-            <p>mkdir /home/CFT/fm/dir_a</p>
-            <p>mkdir /home/CFT/fm/dir_a/scan</p>
-            <p>mkdir /home/CFT/fm/dir_a/work</p>
+            <p>mkdir /home/CFT/fm/dir_c</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan</p>
+            <p>mkdir /home/CFT/fm/dir_c/work</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf1</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf2</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf3</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfa</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfb</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfc</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfd</p>
             <p>#</p>
-            <p># Define  the needed Transfer CFT configuration parameters leaving all others set to their default value.</p>
+            <p># Define all necessary Transfer CFT configuration parameters leaving others set to their default value.</p>
             <p>#</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.scan_dir , value='/home/CFT/fm/dir_a/scan'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.work_dir , value='/home/CFT/fm/dir_a/work'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.part , value='NEWYORK'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.idf , value='IDFA'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_idle_delay , value='0'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.idf , value='(1)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.part , value='(0)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.scan_dir , value='/home/CFT/fm/dir_c/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.work_dir , value='/home/CFT/fm/dir_c/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.interval , value='10'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_count , value='4'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_exclude_filter , value='*.tmp'</p>
          </td>
       </tr>
    </tbody>
@@ -602,28 +662,7 @@ Set the following UCONF parameters as shown below. When you set this option for 
    <col/>
    <tbody>
       <tr>
-         <td>
-            <p>#</p>
-            <p># Create all needed directories (example for UNIX platforms)</p>
-            <p>#</p>
-            <p>mkdir /home/CFT/fm/dir_b</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan</p>
-            <p>mkdir /home/CFT/fm/dir_b/work</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/london</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
-            <p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
-            <p>#</p>
-            <p># Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.</p>
-            <p>#</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.scan_dir , value='/home/CFT/fm/dir_b/scan'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.work_dir , value='/home/CFT/fm/dir_b/work'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.part , value='(0)'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'</p>
-            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='*.txt'</p>
-         </td>
+         <td>CFTUTIL uconfset id=folder_monitoring.folders.MyFolder.use_file_system_events, value=YES         </td>
       </tr>
    </tbody>
 </table>

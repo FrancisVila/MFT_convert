@@ -204,7 +204,18 @@ topics
             <p>Daily purge time chosen by the user.</p>
             <p>The user can program an automatic, cyclic catalog purge. 
  The default purge time is midnight.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic 
+ purging is performed (at a selected time or at midnight).         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -227,17 +238,22 @@ topics
 
 Example
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
    <col/>
-   <col/>
-   <col/>
+   <tbody>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <td>
+            <p>CFTCAT ID = IDCAT,</p>
+            <p>FNAME = filename,</p>
+            <p>RH = 7,</p>
+            <p>RT  = 3,</p>
+            <p>RX = 3,</p>
+            <p>SH = 7,</p>
+            <p>ST = 3,</p>
+            <p>SX = 3</p>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic 
- purging is performed (at a selected time or at midnight).         </td>
       </tr>
+   </tbody>
 </table>
 
 -   Non-terminated send requests (SH state) and interrupted receive

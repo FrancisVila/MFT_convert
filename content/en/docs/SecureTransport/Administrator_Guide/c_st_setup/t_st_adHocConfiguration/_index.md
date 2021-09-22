@@ -104,7 +104,17 @@
          <td>Disable package delivery notification         </td>
          <td>
             <p><span>SecureTransport</span> does not  send out package delivery notifications when this option is selected. If you select this option, you must manage any package delivery notifications externally using REST API from your email system. By default, this option is not selected.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Package delivery notifications can also be disabled by the end user. If you do not select this option, the end user can disable package delivery notifications. If you select this option, the end user cannot override your selection and package delivery notifications will be disabled even if they are enabled by the end user.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>

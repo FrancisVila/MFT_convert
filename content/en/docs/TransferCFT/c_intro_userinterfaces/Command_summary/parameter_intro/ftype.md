@@ -490,7 +490,18 @@ The following table lists the different types of files that can be used accordin
 </p>
             <p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.
 </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">This transfer mode is not available for native side transfers.
+         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>
@@ -504,8 +515,7 @@ The following table lists the different types of files that can be used accordin
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">This transfer mode is not available for native side transfers.
-         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">FTYPE values are OS specific. Refer to the <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf">Transfer CFT IBM i Installation and Operations Guide</a> for more information.         </td>
       </tr>
 </table>
 
@@ -513,15 +523,88 @@ The following table lists the different types of files that can be used accordin
 
 For Unix files, use the values in the Unix [table](#unix_ftype) above. For native HP NonStop files, the values are as follows.
 
-<table cellpadding="0" cellspacing="0">
+<table border="1" cellspacing="0">
    <col/>
    <col/>
    <col/>
+   <thead>
       <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+         <th>FTYPE</th>
+         <th>FCODE</th>
+         <th>Type of sent file </th>
+      </tr>
+   </thead>
+      <tr>
+         <td>
+            <p>‘ ‘ </p>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">FTYPE values are OS specific. Refer to the <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf">Transfer CFT IBM i Installation and Operations Guide</a> for more information.         </td>
+         <td>
+            <p>BINARY </p>
+         </td>
+         <td>Binary         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>B </p>
+         </td>
+         <td>
+            <p>BINARY </p>
+         </td>
+         <td>Binary         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>V </p>
+         </td>
+         <td>
+            <p>BINARY </p>
+         </td>
+         <td>Binary file emulating locally a variable file format         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>T </p>
+         </td>
+         <td>
+            <p>ASCII </p>
+         </td>
+         <td>Text file with LF or CRLF as end-of-line separator         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>O </p>
+         </td>
+         <td>
+            <p>ASCII </p>
+         </td>
+         <td>Text file with CRLF as end-of-line separator         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>X </p>
+         </td>
+         <td>
+            <p>ASCII </p>
+         </td>
+         <td>Text file with LF as end-of-line separator         </td>
+      </tr>
+      <tr data-mc-conditions="">
+         <td>J          </td>
+         <td>ASCII          </td>
+         <td>
+            <p>Text file with LF or CRLF as end-of-line separator</p>
+            <p>FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records  that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.</p>
+         </td>
+      </tr>
+      <tr data-mc-conditions="">
+         <td>E         </td>
+         <td>ASCII         </td>
+         <td>Edit native files.         </td>
+      </tr>
+      <tr data-mc-conditions="">
+         <td>N         </td>
+         <td>BINARY          </td>
+         <td>Non-edit native file (force the detection of native files rather than OSS ones).         </td>
       </tr>
 </table>
 

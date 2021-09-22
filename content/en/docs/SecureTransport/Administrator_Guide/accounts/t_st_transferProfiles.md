@@ -93,7 +93,17 @@ Use the following procedure to create a transfer profile.
          <td>Strip padding symbols         </td>
          <td>
             <p>When <strong>Strip padding symbols</strong> is selected, the padding characters will be removed. This is the default behavior. When <strong>Strip padding symbols</strong> is not selected, the padding characters will not be removed.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">This is only applicable for incoming transfers when FIXED record format is set by the remote site. Padding symbols are added by the sending site. <span>SecureTransport</span> recognizes <strong>null</strong> when working in BINARY mode, <strong>space</strong> when in ASCII mode, and <strong>@</strong> when in EBCDIC or EBCDIC NATIVE modes.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

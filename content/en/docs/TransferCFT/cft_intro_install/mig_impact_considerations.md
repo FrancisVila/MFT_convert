@@ -172,7 +172,17 @@
             <p>A  BUFSIZE or FBUFSIZE value greater than 32 kiB may lead to Transfer CFT failing to exchange messages between CFTTPRO and CFTTFIL.
 If you have set a value higher than 32 kiB, please decrease it to 32768.
 </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">As of 3.6 SP3, 3.8 SP1, and 3.9, the internal value limit is 32768.          </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -195,7 +205,17 @@ If you have set a value higher than 32 kiB, please decrease it to 32768.
          <td>3.4 and higher         </td>
          <td>
             <p>Removed the PKIPASSW parameter from PKI commands (still available for CFTPARM).</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In earlier versions of <span>Transfer CFT</span>, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF <span>crypto.key_fname</span> parameter.         </td>
+      </tr>
+</table></p>
             <p><span>Impact</span>
 </p>
             <p>If you are using PKIEXT to export  keys during a manual migration, you must use the  same PKIPASSW  (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw">PKIPASSW</a>.</p>
@@ -214,7 +234,369 @@ If you have set a value higher than 32 kiB, please decrease it to 32768.
          <td>3.4 and higher         </td>
          <td>
             <p>Updated default values of the following parameters to optimize and standardize among platforms.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table border="0" cellpadding="0" cellspacing="0" xmlns="http://www.w3.org/TR/REC-html40">
+         <col xmlns=""/>
+         <col xmlns=""/>
+         <col xmlns=""/>
+         <col xmlns=""/>
+<thead xmlns="">
+      <tr>
+         <th>Object </th>
+         <th>Parameter </th>
+         <th>Old default</th>
+         <th>New default</th>
+      </tr>
+   </thead>
+<tbody xmlns="">
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td rowspan="7">
+            <p><b>CFTPARM</b>
+</p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>
+         </td>
+         <td>
+            <p>MAXTRANS</p>
+         </td>
+         <td>
+            <p>128 (Win), 256
+ (os400, unix, vms), 990 (z/OS)</p>
+         </td>
+         <td>
+            <p>256</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>MAXTASK</p>
+         </td>
+         <td>
+            <p>1 (Win), 16
+ (os400, unix, vms), 400 (z/OS)</p>
+         </td>
+         <td>
+            <p>8</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>TRANTASK</p>
+         </td>
+         <td>
+            <p>14 (z/OS), 16
+ (os400, unix, vms), 128 (win)</p>
+         </td>
+         <td>
+            <p>3</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>WAITTASK</p>
+         </td>
+         <td>
+            <p>1441</p>
+         </td>
+         <td>
+            <p>10</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>SSLMTASK</p>
+         </td>
+         <td>
+            <p>1 (Win), 16
+ (os400, unix, vms), 64 (z/OS)</p>
+         </td>
+         <td>
+            <p>8</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>SSLTTASK</p>
+         </td>
+         <td>
+            <p>14 (z/OS), 16
+ (os400, unix, vms), 128 (win)</p>
+         </td>
+         <td>
+            <p>3</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>SSLWTASK</p>
+         </td>
+         <td>
+            <p>1441</p>
+         </td>
+         <td>
+            <p>10</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td rowspan="2">
+            <p>CFTNET</p>
+            <p> </p>
+         </td>
+         <td>
+            <p>type</p>
+         </td>
+         <td>
+            <p>x25</p>
+         </td>
+         <td>
+            <p>TCP</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>maxcnx</p>
+         </td>
+         <td>
+            <p>32</p>
+         </td>
+         <td>
+            <p>384</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td rowspan="16">
+            <p>CFTPROT type=PeSIT prof=ANY</p>
+         </td>
+         <td>
+            <p>concat</p>
+         </td>
+         <td>
+            <p>no</p>
+         </td>
+         <td>
+            <p>yes</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>multart</p>
+         </td>
+         <td>
+            <p>no</p>
+         </td>
+         <td>
+            <p>yes</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>segment</p>
+         </td>
+         <td>
+            <p>no</p>
+         </td>
+         <td>
+            <p>yes</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>rpacing</p>
+         </td>
+         <td>
+            <p>36</p>
+         </td>
+         <td>
+            <p>32767</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>spacing</p>
+         </td>
+         <td>
+            <p>36</p>
+         </td>
+         <td>
+            <p>32767</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>rrusize</p>
+         </td>
+         <td>
+            <p>4056</p>
+         </td>
+         <td>
+            <p>32750</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>srusize</p>
+         </td>
+         <td>
+            <p>4056</p>
+         </td>
+         <td>
+            <p>32750</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>disctc</p>
+         </td>
+         <td>
+            <p>90</p>
+         </td>
+         <td>
+            <p>60</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>disctd</p>
+         </td>
+         <td>
+            <p>120</p>
+         </td>
+         <td>
+            <p>10</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>disctr</p>
+         </td>
+         <td>
+            <p>45</p>
+         </td>
+         <td>
+            <p>45</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>discts</p>
+         </td>
+         <td>
+            <p>165</p>
+         </td>
+         <td>
+            <p>60</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>rchkw</p>
+         </td>
+         <td>
+            <p>2</p>
+         </td>
+         <td>
+            <p>3</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>schkw</p>
+         </td>
+         <td>
+            <p>2</p>
+         </td>
+         <td>
+            <p>3</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>rcomp</p>
+         </td>
+         <td>
+            <p>10</p>
+         </td>
+         <td>
+            <p>0</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>scomp</p>
+         </td>
+         <td>
+            <p>10</p>
+         </td>
+         <td>
+            <p>0</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>sserv         </td>
+         <td>PESIT
+         </td>
+         <td>GSIT         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td xmlns=""><b>CFTPROT type=ODETTE</b>
+         </td>
+         <td>tcp         </td>
+         <td>CFT         </td>
+         <td>OFTP         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td rowspan="4">
+            <p><b>CFTTCP</b>
+</p>
+         </td>
+         <td>
+            <p>retryw</p>
+         </td>
+         <td>
+            <p>7</p>
+         </td>
+         <td>
+            <p>1</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>retryn</p>
+         </td>
+         <td>
+            <p>6</p>
+         </td>
+         <td>
+            <p>4</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>retrym</p>
+         </td>
+         <td>
+            <p>12</p>
+         </td>
+         <td>
+            <p>12</p>
+         </td>
+      </tr>
+      <tr xmlns="http://www.w3.org/TR/REC-html40">
+         <td>
+            <p>cnxinout</p>
+         </td>
+         <td>
+            <p>2</p>
+         </td>
+         <td>
+            <p>4</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
             <p><b>Impact </b>
 </p>
             <p>Check the use in your flows and modify according.</p>
@@ -310,7 +692,17 @@ You must update the ROOTCID parameter.</p>
             <p><span>Impact</span>
 </p>
             <p>This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

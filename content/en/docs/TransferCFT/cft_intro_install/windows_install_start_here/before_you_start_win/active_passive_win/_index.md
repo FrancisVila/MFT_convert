@@ -110,7 +110,19 @@ Create as many copies of the initialize.properties file as you have hosts in the
          <td>
             <p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.
 </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> The load
+balancer is used to connect to the Transfer CFT Copilot server.
+          </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>

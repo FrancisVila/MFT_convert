@@ -51,7 +51,17 @@ The following table describes the site settings options for a SSH protocol tran
                <li>To delete an alternative server endpoint, select the corresponding check-box on the same row and click <b>Delete</b>.               </li>
                <li>To reorder the list of alternative endpoints, click <b>Reorder</b>. A new option (upward and downward arrow) appears next to each entry. You must hover with the mouse pointer over this newly appeared option and the mouse pointer will assume the "move" shape: a four-directional arrow pointer. This indicates which alternative endpoint is in focus. You can now drag &amp; drop it up and down to the order number you want it at. Perform this action with other alternative endpoints until the list is ordered according to your needs. When you are done, click <b>Save Order</b> to keep the newly changed order.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
+      </tr>
+</table></p>
             <ul>
                <li><code>AllHostsOnEachRetry</code> – with this policy <span>SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span>SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.               </li>
                <li><code>OneHostOnEachRetry</code> –   with this policy <span>SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span>SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span>SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.                </li>
@@ -138,26 +148,6 @@ The following table describes the site settings options for a SSH protocol tran
 
 The following table describes the transfer settings options for a SSH protocol transfer site.
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
-      </tr>
-</table>
-
-## <span id="Site2"></span>Site login credentials for SSH Transfer sites
-
-*Site Login Credentials* pane for a SHH protocol transfer site:
-
-![SSH - Site Login Credentials](TS-SSH-AdvancedSSL.jpg)
-
-The following table describes the site login credentials options for a SSH protocol transfer site.
-
 <table cellspacing="0">
    <col/>
    <col/>
@@ -186,7 +176,17 @@ The following table describes the site login credentials options for a SSH prot
          <td>
             <p>The value against which you want to verify the fingerprint from the remote server.</p>
             <p>If the partner SSH server has both DSA and RSA keys configured, the fingerprint that <span>SecureTransport</span> must verify for a server-initiated transfer depends on FIPS transfer mode. With FIPS transfer mode enabled, enter the fingerprint for the DSA key. With FIPS transfer mode disabled, enter the fingerprint for the RSA key.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The fingerprint value must start with a formatted hashing algorithm name in the following format: <code>&lt;hashing_algorithm&gt;:&lt;certificate_ssh_fingerprint_hash&gt;</code>         </td>
+      </tr>
+</table></p>
             <p>Examples:</p>
             <ul>
                <li><code>MD5:2d:d2:3d:32:d2:24:f2:2s:1a:2s:1a:23:af:e1:4s:3f</code>
@@ -215,31 +215,13 @@ The following table describes the site login credentials options for a SSH prot
    </tbody>
 </table>
 
-## <span id="Network"></span>Network settings for SSH Transfer sites
+## <span id="Site2"></span>Site login credentials for SSH Transfer sites
 
-*Network Settings* pane for a SHH protocol transfer site:
+*Site Login Credentials* pane for a SHH protocol transfer site:
 
-![SSH - Network Settings](TS-SSH-AdvancedSSL.jpg)
+![SSH - Site Login Credentials](TS-SSH-AdvancedSSL.jpg)
 
-The following table describes the network settings options for a SSH protocol transfer site.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The fingerprint value must start with a formatted hashing algorithm name in the following format: <code>&lt;hashing_algorithm&gt;:&lt;certificate_ssh_fingerprint_hash&gt;</code>         </td>
-      </tr>
-</table>
-
-## <span id="Test"></span>Test SSH Connection
-
-After you have filled in all the required settings, you can check if the connection between the transfer site and the remote partner is configured correctly. The test is performed based on the input on the transfer site page. The functionality is available for saved and non-saved transfer sites.
-
-To initiate a test connection, click the **Test Connection** button located in the top-right corner of the configuration pane. Using the transfer site settings currently specified on the page, SecureTransport will try to connect to the remote partner and display the result.
+The following table describes the site login credentials options for a SSH protocol transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -278,24 +260,13 @@ Switching the toggle provides the ability to use Expression Language for evaluat
    </tbody>
 </table>
 
-The *Result test connection* pane contains the following information:
+## <span id="Network"></span>Network settings for SSH Transfer sites
 
--   `Connection status` – `success` or `failed`.
--   `Fingerprint verification status` – `success`, `failed` or `not verified`.
-    -   `success` – the fingerprint verification during the test connection is successful.
-    -   `failed` – the fingerprint verification during the test connection failed.
-    -   `not verified` – the fingerprint verification is skipped during the test connection.
--   `Fingerprint` – the fingerprint used in the test connection.
--   `Cipher suite` – the name of the cipher suite used in the test connection.
--   `HMAC` – hash-based message authentication codes used in the test connection.
--   `Key exchange algorithms` – the KEX used in the test connection.
--   `Public key` – the public key used in the test connection.
--   `Send Buffer size` – the size of the send buffer in bytes `(SO_SNDBUF)` used in the test connection.
--   `Receive Buffer size` – the size of the receive buffer in byte `(SO_RCVBUF)` used in the test connection.
--   `Authentication status` – either `success `or `failed`.
--   `SSH key alias` – the SSH key alias used in the test connection.
--   `Session ID` – the Session ID associated with the test connection, represented as a link to the filtered Server Log entries.
--   `Error details` – in the event of an error, displays detailed information on why the test connection failed.
+*Network Settings* pane for a SHH protocol transfer site:
+
+![SSH - Network Settings](TS-SSH-AdvancedSSL.jpg)
+
+The following table describes the network settings options for a SSH protocol transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -340,13 +311,11 @@ The *Result test connection* pane contains the following information:
    </tbody>
 </table>
 
-## <span id="Post"></span>Post transmission Send options for SSH Transfer sites
+## <span id="Test"></span>Test SSH Connection
 
-*Post Transmission Settings - Send Options* pane for a SHH protocol transfer site:
+After you have filled in all the required settings, you can check if the connection between the transfer site and the remote partner is configured correctly. The test is performed based on the input on the transfer site page. The functionality is available for saved and non-saved transfer sites.
 
-![SSH - Post Transmission Settings - Send Options](TS-SSH-AdvancedSSL.jpg)
-
-The following table describes the post transmission send settings options for a SSH protocol transfer site.
+To initiate a test connection, click the **Test Connection** button located in the top-right corner of the configuration pane. Using the transfer site settings currently specified on the page, SecureTransport will try to connect to the remote partner and display the result.
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -360,6 +329,25 @@ The following table describes the post transmission send settings options for a 
       </tr>
 </table>
 
+The *Result test connection* pane contains the following information:
+
+-   `Connection status` – `success` or `failed`.
+-   `Fingerprint verification status` – `success`, `failed` or `not verified`.
+    -   `success` – the fingerprint verification during the test connection is successful.
+    -   `failed` – the fingerprint verification during the test connection failed.
+    -   `not verified` – the fingerprint verification is skipped during the test connection.
+-   `Fingerprint` – the fingerprint used in the test connection.
+-   `Cipher suite` – the name of the cipher suite used in the test connection.
+-   `HMAC` – hash-based message authentication codes used in the test connection.
+-   `Key exchange algorithms` – the KEX used in the test connection.
+-   `Public key` – the public key used in the test connection.
+-   `Send Buffer size` – the size of the send buffer in bytes `(SO_SNDBUF)` used in the test connection.
+-   `Receive Buffer size` – the size of the receive buffer in byte `(SO_RCVBUF)` used in the test connection.
+-   `Authentication status` – either `success `or `failed`.
+-   `SSH key alias` – the SSH key alias used in the test connection.
+-   `Session ID` – the Session ID associated with the test connection, represented as a link to the filtered Server Log entries.
+-   `Error details` – in the event of an error, displays detailed information on why the test connection failed.
+
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -372,13 +360,13 @@ The following table describes the post transmission send settings options for a 
       </tr>
 </table>
 
-## <span id="Post2"></span>Post transmission Receive options for SSH Transfer sites
+## <span id="Post"></span>Post transmission Send options for SSH Transfer sites
 
-*Post Transmission Settings - Receive Options* pane for a SHH protocol transfer site:
+*Post Transmission Settings - Send Options* pane for a SHH protocol transfer site:
 
-![](TS-SSH-AdvancedSSL.jpg)
+![SSH - Post Transmission Settings - Send Options](TS-SSH-AdvancedSSL.jpg)
 
-The following table describes the post transmission receive settings options for a SSH protocol transfer site.
+The following table describes the post transmission send settings options for a SSH protocol transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -435,13 +423,13 @@ The following table describes the post transmission receive settings options for
       </tr>
 </table>
 
-## <span id="Advanced"></span>Advanced SSH Settings for SSH Transfer sites
+## <span id="Post2"></span>Post transmission Receive options for SSH Transfer sites
 
-Scroll down to the bottom of the screen and select **Show Advanced SSH Settings** to expand the pane with additional options.
+*Post Transmission Settings - Receive Options* pane for a SHH protocol transfer site:
 
 ![](TS-SSH-AdvancedSSL.jpg)
 
-The following table describes the Advanced SSH Settings for a SSH protocol transfer site.
+The following table describes the post transmission receive settings options for a SSH protocol transfer site.
 
 <table cellspacing="0">
    <col/>
@@ -474,6 +462,70 @@ The following table describes the Advanced SSH Settings for a SSH protocol tran
       <tr>
          <td> Allow Overwrite Existing File         </td>
          <td>When enabled and the rename operation fails because the target file exists, <span>SecureTransport</span> will delete the target file and repeat the rename operation.
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">To preserve the original file name when using the <strong>Move File To</strong> option, use the <code>${stenv.target}</code> or <code>${stenv['target']}</code> expression.         </td>
+      </tr>
+</table>
+
+## <span id="Advanced"></span>Advanced SSH Settings for SSH Transfer sites
+
+Scroll down to the bottom of the screen and select **Show Advanced SSH Settings** to expand the pane with additional options.
+
+![](TS-SSH-AdvancedSSL.jpg)
+
+The following table describes the Advanced SSH Settings for a SSH protocol transfer site.
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>Show Advanced SSH Settings</strong> - select this check-box to expand the pane with available options.         </td>
+      </tr>
+      <tr>
+         <td>Cipher suites         </td>
+         <td>
+            <p>The set of cipher suites  for secure SIT connection with the current SSH transfer site. By default this set is populated with the cipher suites as defined in the <code>Ssh.SIT.Ciphers</code> configuration option.</p>
+            <p>To reset to default values, click the button next to the tooltip.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Allowed macs         </td>
+         <td>
+            <p>The set of allowed HMAC algorithms with the current SSH transfer site for secure SIT connection, presented in a comma-separated list.</p>
+            <p>By default this list is populated with the supported MAC algorithms as defined in the <code>Ssh.SIT.AllowedMacs</code> configuration option.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Key exchange algorithms         </td>
+         <td>
+            <p>The set of allowed key exchange algorithms with the current SSH transfer site for secure SIT connection, presented in a comma-separated list.</p>
+            <p>By default this list is populated with the supported key exchange algorithms as defined in the <code>Ssh.SIT.KeyExchangeAlgorithms</code> configuration option.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Public keys         </td>
+         <td>
+            <p>The set of allowed public key algorithms with the current SSH transfer site for secure SIT connection, presented in a comma-separated list.</p>
+            <p>By default this list is populated with the supported public exchange algorithms as defined in the <code>Ssh.SIT.PublicKeys</code> configuration option.</p>
          </td>
       </tr>
    </tbody>

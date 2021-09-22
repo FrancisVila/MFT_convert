@@ -71,15 +71,7 @@
                <li>ENABLE_NODE                </li>
                <li>DISABLE_NODE                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-## Deprecated commands
-
-<table cellpadding="0" cellspacing="0" xmlns="">
+            <p><table cellpadding="0" cellspacing="0" xmlns="">
    <col/>
    <col/>
    <col/>
@@ -90,11 +82,13 @@
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">CFTMN is the equivalent of <span>cft script</span> for UNIX or
  Windows.         </td>
       </tr>
+</table></p>
+         </td>
+      </tr>
+   </tbody>
 </table>
 
-**Example 1**
-
-Send a member:
+## Deprecated commands
 
 <table border="1" cellpadding="0" cellspacing="0" xmlns="http://www.w3.org/TR/REC-html40">
          <col xmlns=""/>
@@ -186,6 +180,19 @@ Send a member:
    </tbody>
 </table>
 
+**Example 1**
+
+Send a member:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>CFTUTIL send PART=&lt;PART&gt;, IDF=&lt;IDF&gt;, FNAME=&amp;LIB/&amp;FILE(&amp;MBR)         </td>
+      </tr>
+   </tbody>
+</table>
+
 **Example 2**
 
 Send a spool file:
@@ -194,7 +201,7 @@ Send a spool file:
    <col/>
    <tbody>
       <tr>
-         <td>CFTUTIL send PART=&lt;PART&gt;, IDF=&lt;IDF&gt;, FNAME=&amp;LIB/&amp;FILE(&amp;MBR)         </td>
+         <td>CFTUTIL send PART=&lt;PART&gt;, IDF=&lt;IDF&gt;, FNAME=&amp;FILE/&amp;SPLNBR/&amp;WORK/&amp;JOBNBR         </td>
       </tr>
    </tbody>
 </table>

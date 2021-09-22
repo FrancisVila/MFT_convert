@@ -41,7 +41,17 @@ To enable the auto-expand option, with Transfer CFT running:
          <td>
             <p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand. </p>
             <p>The value 0 disables the automatic expansion feature.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Tip  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -72,24 +82,6 @@ The example is based on the following settings:
 
 When you reach the TLVWRATE (level=80%), the following messages are sent to the log:
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Tip  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-</table>
-
-The new fill rate is now 80/120 = 66.66%, well below TLVCLEAR, so the alerts stops at next update (the send command in this example).
-
-The message CFTC30W Catalog Alert cleared : level=67% ID=CAT0 indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
-
-The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140), and the log displays:
-
 <table cellspacing="0">
    <col/>
       <tr>
@@ -104,7 +96,11 @@ The catalog continues to fill until it reaches 80%. Expanding 20% more would res
       </tr>
 </table>
 
-The next time the catalog limit is reached, it can no longer expand and the log displays:
+The new fill rate is now 80/120 = 66.66%, well below TLVCLEAR, so the alerts stops at next update (the send command in this example).
+
+The message CFTC30W Catalog Alert cleared : level=67% ID=CAT0 indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+
+The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140), and the log displays:
 
 <table cellspacing="0">
    <col/>
@@ -117,6 +113,19 @@ The next time the catalog limit is reached, it can no longer expand and the log 
             <p> 12/10/17 18:06:57  CFTR12I SEND Treated for USER adaumer  &lt;IDTU=A000002P PART=PARIS IDF=TXT&gt;</p>
             <p> 12/10/17 18:06:57  CFTS20I Communication file row number deleted: 00000269                                </p>
             <p> 12/10/17 18:06:57  CFTC30W Catalog Alert cleared : level=69% ID=CAT0</p>
+         </td>
+      </tr>
+</table>
+
+The next time the catalog limit is reached, it can no longer expand and the log displays:
+
+<table cellspacing="0">
+   <col/>
+      <tr>
+         <td>
+            <p> 12/10/19 15:53:21  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0</p>
+            <p> 12/10/19 15:53:21  CFTC13E Catalog resize (140 --&gt; 210) reached max before expansion</p>
+            <p> 12/10/19 15:53:21  CFTC08I Purge Treated : no record found to delete.</p>
          </td>
       </tr>
 </table>

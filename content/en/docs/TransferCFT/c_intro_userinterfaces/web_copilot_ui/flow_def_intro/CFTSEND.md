@@ -33,7 +33,17 @@ topics
          </td>
          <td>
             <p>The archived source file name  after transfer completion if FACTION=ARCHIVE. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The <span>fname </span>and <span>archivefname </span>must be on the same volume (all platforms).         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -482,7 +492,17 @@ topics
          <td colspan="1" rowspan="1">
             <p>Name of the file that contains the list of files selected 
  for sending.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -573,49 +593,6 @@ be defined in the send transfer request (SEND command or CFTAPI call)
 rather than in the CFTSEND object. Click on the links in the following
 table for examples and details.
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The <span>fname </span>and <span>archivefname </span>must be on the same volume (all platforms).         </td>
-      </tr>
-</table>
-
-## <span id="Example"></span>Examples
-
-This section provides examples on how to define the CFTSEND template.
-
-### <span id="Implicit_send_example"></span>Implicit send
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.         </td>
-      </tr>
-</table>
-
-Only used if:
-
--   The value of the
-    transfer IDF is SNDIMPL
--   Transfer CFT responds
-    to a send request from the partner, where Transfer CFT is the sender server
--   There is no SEND
-    request for this IDF pending in the catalog
--   An implicit send
-    mechanism is involved where IMPL = YES
-
-### Default description of the model file
-
 <table cellspacing="0">
    <col/>
    <col/>
@@ -671,9 +648,11 @@ Only used if:
    </tbody>
 </table>
 
-Corresponds to a send transfer when the SEND command specifies an IDF
-not described by a CFTSEND object. This is the default description of
-the model file to be sent. The CFTPARM object must specify:
+## <span id="Example"></span>Examples
+
+This section provides examples on how to define the CFTSEND template.
+
+### <span id="Implicit_send_example"></span>Implicit send
 
 <table cellspacing="0">
    <col/>
@@ -689,10 +668,18 @@ the model file to be sent. The CFTPARM object must specify:
       </tr>
 </table>
 
-The SEND command specifies the name of the file to be sent, the FNAME
-parameter.
+Only used if:
 
-### Cyclic send
+-   The value of the
+    transfer IDF is SNDIMPL
+-   Transfer CFT responds
+    to a send request from the partner, where Transfer CFT is the sender server
+-   There is no SEND
+    request for this IDF pending in the catalog
+-   An implicit send
+    mechanism is involved where IMPL = YES
+
+### Default description of the model file
 
 <table cellspacing="0">
    <col/>
@@ -703,6 +690,46 @@ parameter.
             <p>ID = IDFDEF,  /* default IDF */</p>
             <p>IMPL = NO,</p>
             <p>FCODE = ASCII /* EBCDIC data in file */</p>
+         </td>
+      </tr>
+</table>
+
+Corresponds to a send transfer when the SEND command specifies an IDF
+not described by a CFTSEND object. This is the default description of
+the model file to be sent. The CFTPARM object must specify:
+
+<table cellspacing="0">
+   <col/>
+      <tr>
+         <td>
+            <p>CFTPARM DEFAULT = IDFDEF, ...</p>
+         </td>
+      </tr>
+</table>
+
+The SEND command specifies the name of the file to be sent, the FNAME
+parameter.
+
+### Cyclic send
+
+<table cellspacing="0">
+   <col/>
+      <tr>
+         <td colspan="2">
+            <p>CFTSEND</p>
+            <p>MODE = CREATE,</p>
+            <p> ID = STAT,                   /* File identifier */</p>
+            <p> FLRECL = 128, /* of max length 128 bytes */</p>
+            <p> FACTION = DELETE /* Delete after send */</p>
+            <p> FCODE = ASCII, /* File coding */</p>
+            <p> MINDATE = 19920703, /* From 03/07/92 */</p>
+            <p> MINTIME = 1000, /* at 10:00 (Monday) */</p>
+            <p> MAXDATE = 19921231, /* Until 31/12/92 */</p>
+            <p> MAXTIME = 2000, /* at 20:00 */</p>
+            <p> CYCLE = 7 /* Every week */</p>
+            <p> TCYCLE = DAY, /* CYCTIME takes the value 1000 */</p>
+            <p>  CYCDATE = 19920705, /* Activate possible */ /* first 3 days of */ /* week, before */ /* Wednesday 10:00 */</p>
+            <p> PARM = ’Day statistic’ /* Associated parameter.for.*/ /*PeSIT CFT profile */</p>
          </td>
       </tr>
 </table>

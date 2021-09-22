@@ -415,14 +415,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
          <td width="80%">
             <p>The command is ignored.  </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -432,6 +425,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">This message 
  is followed by the CFTX01W message.         </td>
+      </tr>
+</table></p>
+         </td>
       </tr>
 </table>
 
@@ -579,7 +575,17 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
          <td width="80%">
 <p width="80%">Set the uconf parameter <span>cft.cftcat.enable_deprecated_blknum=Yes</span> to enable BLKNUM.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Regardless of the  <code>cft.cftcat.enable_deprecated_blknum</code> parameter setting, BLKNUM  is disabled in a multi-node configuration (<code>uconf:cft.multi_node.enable=Yes</code>), and this message is displayed.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr valign="top">
@@ -594,14 +600,62 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
  
 
-<table cellpadding="0" cellspacing="0">
+<table border="1" cellspacing="0">
    <col/>
    <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
+      <tr valign="top">
+         <td width="20%">
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">Regardless of the  <code>cft.cftcat.enable_deprecated_blknum</code> parameter setting, BLKNUM  is disabled in a multi-node configuration (<code>uconf:cft.multi_node.enable=Yes</code>), and this message is displayed.         </td>
+         <td width="80%">
+            <p><a name="CFTC29W"></a>CFTC29W 
+ Catalog Alert fill threshold reached: level=&amp;level , id=CAT0</p>
+            <p>CFTC29W Catalog Alert fill threshold reached: level=&amp;level ID=&amp;id</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td width="20%">
+            <p>Explanation</p>
+         </td>
+         <td width="80%">
+            <p>&amp;level  of the catalog space has been used. &amp;level  is the amount 
+ set by the CFTCAT TLVWARN parameter. </p>
+            <p>When the critical fill threshold is reached, a message 
+ is recorded in the <span>Transfer CFT</span> log. </p>
+            <p>A batch in response to the alert, the CFTCAT TLVWEXEC parameter, 
+ is submitted.</p>
+         </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr valign="top">
+         <td width="20%">
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>
+         </td>
+         <td width="80%">
+            <p><a name="CFTC30W"></a>CFTC30W Catalog 
+ Alert cleared: level=&amp;level, id=CAT0</p>
+            <p>CFTC30W Catalog Alert cleared : level=&amp;level ID=&amp;id</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td width="20%">
+            <p>Explanation</p>
+         </td>
+         <td width="80%">
+            <p>This alert stops when the fill level drops below the TLVCLEAR 
+ level.</p>
+            <p>When the alert stops, the message is recorded in the Transfer 
+ CFT log, and a batch, the CFTCAT TLVCEXEC parameter, is submitted.</p>
+         </td>
       </tr>
 </table>

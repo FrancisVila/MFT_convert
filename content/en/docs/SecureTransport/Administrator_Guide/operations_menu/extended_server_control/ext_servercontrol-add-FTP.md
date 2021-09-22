@@ -41,7 +41,17 @@ The following table presents all parameters and expected values associated with 
          <td>Enable FTPS         </td>
          <td>
             <p>Select to enable FTPS transfers.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Caution  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">When uploading files to <span>SecureTransport</span> Server via FTPS, the FTP client is required to indicate that the transfer is complete by sending a <code>close_notify</code> message. If a <code>close_notify</code> message is not sent by the client, the file transfer will fail.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -150,9 +160,9 @@ A new modal box with the FTP settings pops up. Add your changes and click **Save
    <col/>
       <tr>
          <td valign="top">         </td>
-         <td valign="top"><span><b>Caution  </b></span>
+         <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">When uploading files to <span>SecureTransport</span> Server via FTPS, the FTP client is required to indicate that the transfer is complete by sending a <code>close_notify</code> message. If a <code>close_notify</code> message is not sent by the client, the file transfer will fail.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You cannot delete or change the name of the "Ftp Default" server from the <span>SecureTransport</span> Administration Tool.         </td>
       </tr>
 </table>
 

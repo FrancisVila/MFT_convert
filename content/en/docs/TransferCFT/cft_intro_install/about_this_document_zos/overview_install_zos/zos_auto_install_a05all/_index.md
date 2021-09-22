@@ -139,7 +139,7 @@ The A05ALL JCL automatically runs the following members.
       </tr>
       <tr>
          <td>20         </td>
-         <td>If snenable = yes:            <p>         Sentinel parameters are activated (TCP configuration). </p>            <p>&amp;&amp;&amp; ïïï ùùù</p>         </td>
+         <td>If snenable = yes:            <p>         Sentinel parameters are activated (TCP configuration). </p>            <p><table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Note</b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">This JCL does not create Sentinel tracker logstream.         </td>      </tr></table></p>         </td>
          <td>SN05CONF         </td>
       </tr>
       <tr>

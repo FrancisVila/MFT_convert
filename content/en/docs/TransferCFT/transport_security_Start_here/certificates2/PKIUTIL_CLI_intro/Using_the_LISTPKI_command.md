@@ -103,7 +103,17 @@ that you set in the command parameters. Additionally, you can use the default mo
          </td>
          <td colspan="1" rowspan="1">
             <p>The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><span>Transfer CFT</span> 3.7 and higher uses the <code> dspcnf.xml</code> model fileby default. To have the display format from a previous version, use FMODEL=NONE.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr valign="top">
@@ -128,20 +138,6 @@ that you set in the command parameters. Additionally, you can use the default mo
 
 The following information is displayed for the CONTENT parameter BRIEF
 value:
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><span>Transfer CFT</span> 3.7 and higher uses the <code> dspcnf.xml</code> model fileby default. To have the display format from a previous version, use FMODEL=NONE.         </td>
-      </tr>
-</table>
-
-### <span id="CONTENT_BRIEF_Display"></span>CONTENT=BRIEF display (former format, or no model)
 
 <table cellspacing="0">
    <col/>
@@ -209,43 +205,7 @@ A   4096</span>
    </tbody>
 </table>
 
-Id
-
-Identifier assigned to the certificate when it was imported into the
-database.
-
-Root
-
-Identifier of the root certificate authority.
-
-Miscellaneous
-
-Miscellaneous certificate information (the letter only displays in when using the old format or no model):
-
--   T: Type of Certificate: R for
-    Root (Root Authority), I for Intermediate (Intermediate Authority),
-    U for User
--   S: Certificate state: A for
-    active or I for inactive
--   C: x denotes if the certificate
-    is in the database
--   K: x denotes if the private
-    key associated with the certificate exists
--   E: Certificate expired (!) or otherwise
-
-Exp. Date
-
-Expiry date of the certificate.
-
-Delivered to
-
-CN (Common name) attribute of the certificate user DN field.
-
-Delivered by
-
-CN (Common name) attribute of the certificate signer DN field.
-
-### <span id="CONTENT_FULL_Display"></span>CONTENT=FULL display (default display)
+### <span id="CONTENT_BRIEF_Display"></span>CONTENT=BRIEF display (former format, or no model)
 
 <table cellspacing="0">
    <col/>
@@ -324,7 +284,43 @@ A   4096</span>
    </tbody>
 </table>
 
-### CONTENT=FULL display (former format, or no model)
+Id
+
+Identifier assigned to the certificate when it was imported into the
+database.
+
+Root
+
+Identifier of the root certificate authority.
+
+Miscellaneous
+
+Miscellaneous certificate information (the letter only displays in when using the old format or no model):
+
+-   T: Type of Certificate: R for
+    Root (Root Authority), I for Intermediate (Intermediate Authority),
+    U for User
+-   S: Certificate state: A for
+    active or I for inactive
+-   C: x denotes if the certificate
+    is in the database
+-   K: x denotes if the private
+    key associated with the certificate exists
+-   E: Certificate expired (!) or otherwise
+
+Exp. Date
+
+Expiry date of the certificate.
+
+Delivered to
+
+CN (Common name) attribute of the certificate user DN field.
+
+Delivered by
+
+CN (Common name) attribute of the certificate signer DN field.
+
+### <span id="CONTENT_FULL_Display"></span>CONTENT=FULL display (default display)
 
 <table cellspacing="0">
    <col/>
@@ -415,61 +411,7 @@ Authentication'</span>
    </tbody>
 </table>
 
-Certificate id
-
-Identifier assigned to the certificate when it was imported into the
-database.
-
-Certificate Type
-
-Identifier of the root certificate authority.
-
-Root id
-
-Identifier of the root certificate authority.
-
-Signer id
-
-Identifier of the certificate signer (issuer).
-
-State
-
-State of the certificate in the database (active or inactive).
-
-Serial Number
-
-Serial number of the certificate.
-
-Delivered to
-
-CN (Common name) attribute of the certificate user DN field.
-
-Delivered by
-
-CN (Common name) attribute of the certificate signer DN field.
-
-Expired before and after
-
-Period of validity of the certificate (start and end date )
-
-Comment
-
-Value assigned to the COMMENT parameter when the certificate was imported
-into the database.
-
-Owner DN
-
-Value of the certificate user DN field.
-
-Signer DN
-
-Value of the certificate signer DN field.
-
-### <span id="INUM"></span>
-
-### <span id="FMODEL d"></span>Filter using FMODEL example
-
-You can use the FMODEL parameter to display only certain types of certificates; for example below we want to display the certificates that have the ACT state:
+### CONTENT=FULL display (former format, or no model)
 
 <table cellspacing="0">
    <col/>
@@ -597,13 +539,88 @@ TLS Web Server Authentication, TLS Web Client Authentication</span>
    </tbody>
 </table>
 
-Resulting in:
+Certificate id
+
+Identifier assigned to the certificate when it was imported into the
+database.
+
+Certificate Type
+
+Identifier of the root certificate authority.
+
+Root id
+
+Identifier of the root certificate authority.
+
+Signer id
+
+Identifier of the certificate signer (issuer).
+
+State
+
+State of the certificate in the database (active or inactive).
+
+Serial Number
+
+Serial number of the certificate.
+
+Delivered to
+
+CN (Common name) attribute of the certificate user DN field.
+
+Delivered by
+
+CN (Common name) attribute of the certificate signer DN field.
+
+Expired before and after
+
+Period of validity of the certificate (start and end date )
+
+Comment
+
+Value assigned to the COMMENT parameter when the certificate was imported
+into the database.
+
+Owner DN
+
+Value of the certificate user DN field.
+
+Signer DN
+
+Value of the certificate signer DN field.
+
+### <span id="INUM"></span>
+
+### <span id="FMODEL d"></span>Filter using FMODEL example
+
+You can use the FMODEL parameter to display only certain types of certificates; for example below we want to display the certificates that have the ACT state:
 
 <table cellspacing="0">
    <col/>
    <tbody>
       <tr>
          <td>PKIUTIL LISTPKI CONTENT=BRIEF, STATE=ACT         </td>
+      </tr>
+   </tbody>
+</table>
+
+Resulting in:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>Id.              Root         Type    State Exp.Date       K   Delivered to Delivered by</p>
+            <p>EXPIRED      EXPIRED  ROOT   ACT     01/09/2015 !      4k_ca        4k_ca</p>
+            <p>EXPIRED    EXPIRED   USER    ACT    01/09/2030 ? x 4k_user      4k_ca</p>
+            <p>ROOT            ROOT         ROOT   ACT    22/07/2029       2k_root      2k_root</p>
+            <p>INTER1      ROOT         INTER  ACT    22/07/2029       2k_l1_ca     2k_root</p>
+            <p>?       USER2  ROOT        USER   ACT    22/07/2029   x  2k_l3_user1  2k_l2_ca</p>
+            <p>USER1     ROOT         USER    ACT    22/07/2029   x  2k_l2_user1  2k_l1_ca</p>
+            <p>USER0       ROOT         USER    ACT    22/07/2029   x  2k_l1_user1  2k_root</p>
+            <p>&gt;      7 Certificates selected</p>
+         </td>
       </tr>
    </tbody>
 </table>

@@ -39,7 +39,17 @@ The following table describes the general options for a FTP(S) transfer site.
                <li>To delete an alternative server endpoint, select the corresponding check-box on the same row and click <b>Delete</b>.               </li>
                <li>To reorder the list of alternative endpoints, click <b>Reorder</b>. A new option (upward and downward arrow) appears next to each entry. You must hover with the mouse pointer over this newly appeared option and the mouse pointer will assume the "move" shape: a four-directional arrow pointer. This indicates which alternative endpoint is in focus. You can now drag &amp; drop it up and down to the order number you want it at. Perform this action with other alternative endpoints until the list is ordered according to your needs. When you are done, click <b>Save Order</b> to keep the newly changed order.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
+      </tr>
+</table></p>
             <ul>
                <li><code>AllHostsOnEachRetry</code> – with this policy <span>SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span>SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.               </li>
                <li><code>OneHostOnEachRetry</code> –   with this policy <span>SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span>SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span>SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.                </li>
@@ -101,22 +111,6 @@ The following table describes the general options for a FTP(S) transfer site.
 
 The *Transfer Settings* options allow you to define various transfer settings with your current transfer site.
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"> Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to <b>Operations &gt; Server Configuration</b> and set the policy type using either of the following values:         </td>
-      </tr>
-</table>
-
-## <span id="Site"></span>Site Login Credentials for FTP Transfer sites
-
-The Site Login Credentials options allow you to define credentials and / or add a certificate for login to the FTP(S) server.
-
 <table cellspacing="0">
    <col/>
    <col/>
@@ -146,7 +140,17 @@ The Site Login Credentials options allow you to define credentials and / or add 
     </p>
             <p><strong>STOR </strong>- select to use the <em>STOR</em> command for server-initiated transfers.</p>
             <p><strong>APPE </strong>- select to use the <em>APPE</em> command for server-initiated transfers.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p> Upload command is reported to Axway Sentinel and displayed in the Protocol Parameter attribute.          </td>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><strong>STOR </strong>is the default command for FTP server-initiated transfers.          </td>
+      </tr>
+</table></p> Upload command is reported to Axway Sentinel and displayed in the Protocol Parameter attribute.          </td>
       </tr>
       <tr>
          <td>Transcode any line terminators in ASCII mode
@@ -169,7 +173,17 @@ The Site Login Credentials options allow you to define credentials and / or add 
          <td>TLS Shutdown on CCC         </td>
          <td>
             <p>Perform a TLS shutdown upon receiving a Clear Command Channel subcommand. This option is displayed when <strong>Clear Command Channel</strong> is selected.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When closing a TLS connection, such as when issuing a CCC command, each party is required to send a <code>close_notify</code> before closing the connection. This is mandated by RFC 2246. If both the client and server do not acknowledge that the TLS connection is ending they may be susceptible to a TLS truncation attack. From a security standpoint, Axway recommends that both TLS shutdowns be checked when configuring the transfer site CCC option. When performing FTP transfers to a remote <span>SecureTransport</span> Server, you must configure <code>Ftp.CCC.TlsShutdownInitiator</code> for the server. As a result the client sends <em>Close notify</em> and the server responds with <em>Close notify</em>, the server-initiated transfer is successful, and the partners are not susceptible to a TLS truncation attack.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -187,37 +201,9 @@ The Site Login Credentials options allow you to define credentials and / or add 
    </tbody>
 </table>
 
-## <span id="Post"></span>Post Transmission Send Options for FTP Transfer sites
+## <span id="Site"></span>Site Login Credentials for FTP Transfer sites
 
-The Send Options subtab allows you to define post transmission actions on file send success and failure.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><strong>STOR </strong>is the default command for FTP server-initiated transfers.          </td>
-      </tr>
-</table>
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">When closing a TLS connection, such as when issuing a CCC command, each party is required to send a <code>close_notify</code> before closing the connection. This is mandated by RFC 2246. If both the client and server do not acknowledge that the TLS connection is ending they may be susceptible to a TLS truncation attack. From a security standpoint, Axway recommends that both TLS shutdowns be checked when configuring the transfer site CCC option. When performing FTP transfers to a remote <span>SecureTransport</span> Server, you must configure <code>Ftp.CCC.TlsShutdownInitiator</code> for the server. As a result the client sends <em>Close notify</em> and the server responds with <em>Close notify</em>, the server-initiated transfer is successful, and the partners are not susceptible to a TLS truncation attack.         </td>
-      </tr>
-</table>
-
-## <span id="Post2"></span>Post Transmission Receive Options for FTP Transfer sites
-
-The Receive options subtab allows you to define post transmission actions on file receive success and failure. Click **Receive Options** to view these settings.
+The Site Login Credentials options allow you to define credentials and / or add a certificate for login to the FTP(S) server.
 
 <table cellspacing="0">
    <col/>
@@ -256,6 +242,10 @@ The Receive options subtab allows you to define post transmission actions on fil
    </tbody>
 </table>
 
+## <span id="Post"></span>Post Transmission Send Options for FTP Transfer sites
+
+The Send Options subtab allows you to define post transmission actions on file send success and failure.
+
 <table cellspacing="0">
    <col/>
    <col/>
@@ -289,10 +279,6 @@ The Receive options subtab allows you to define post transmission actions on fil
    </tbody>
 </table>
 
-## <span id="Advanced"></span>Advanced SSL Settings for FTP Transfer sites
-
-Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current FTP(S) Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
-
 <table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
@@ -305,9 +291,9 @@ Advanced SSL settings allow you to define Cipher suites and SSL protocols with 
       </tr>
 </table>
 
-## <span id="Supporte"></span>Supported Active / Passive FTP(S) connections
+## <span id="Post2"></span>Post Transmission Receive Options for FTP Transfer sites
 
-This table describes the supported Active/Passive FTP(S) connection modes for client/server-initiated transfers over FTP(S).
+The Receive options subtab allows you to define post transmission actions on file receive success and failure. Click **Receive Options** to view these settings.
 
 <table cellspacing="0">
    <col/>
@@ -334,6 +320,87 @@ This table describes the supported Active/Passive FTP(S) connection modes for c
       <tr>
          <td>On Success         </td>
          <td>Select one of the three choices: <strong>No Action</strong>, Delete Source File, or <strong>Move File To</strong>. Selecting <strong>No Action</strong> causes the file to stay in the original location. If another file with the same name is transferred to this location, the original file is overwritten. Selecting Delete Source File removes the file from the original location. Selecting <strong>Move File To</strong> requires you to specify a directory in the location where you are transferring the files from and to provide an expression used to rename the file.         </td>
+      </tr>
+   </tbody>
+</table>
+
+<table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">To preserve the original file name when using the <strong>Move File To</strong> option, use the <code>${stenv.target}</code> or <code>${stenv['target']}</code> expressions.         </td>
+      </tr>
+</table>
+
+## <span id="Advanced"></span>Advanced SSL Settings for FTP Transfer sites
+
+Advanced SSL settings allow you to define Cipher suites and SSL protocols with your current FTP(S) Transfer Site. Select **Show Advanced SSL Settings** to expand the pane with available options.
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Field</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td colspan="2"><strong>Show Advanced SSL Settings</strong>
+         </td>
+      </tr>
+      <tr>
+         <td>Cipher suites         </td>
+         <td>
+            <p>The set of cipher suites available with the current FTP(S) transfer site for secure SIT connection. By default this set is populated with the cipher suites as defined in the <code>Ftps.SIT.Ciphers</code> configuration option.</p>
+            <p>To reset to default values, click the button next to the tooltip.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Enabled SSL protocols         </td>
+         <td>
+            <p>The available SSL protocols for secure SIT connection with the current FTP(S) transfer site. By default this option uses the SSL protocols as defined in the <code>Ftps.SIT.EnabledProtocols</code> configuration option.</p>
+            <p>To reset to default values, click the button next to the tooltip.</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Supporte"></span>Supported Active / Passive FTP(S) connections
+
+This table describes the supported Active/Passive FTP(S) connection modes for client/server-initiated transfers over FTP(S).
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>FTP Exchange type</th>
+         <th>Active FTP mode supported</th>
+         <th>Passive FTP mode supported</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Client initiated via Edges         </td>
+         <td>Yes         </td>
+         <td>Yes         </td>
+      </tr>
+      <tr>
+         <td>Server initiated via Edges         </td>
+         <td>No         </td>
+         <td>Yes         </td>
+      </tr>
+      <tr>
+         <td>Server initiated - no Edges/direct connection         </td>
+         <td>Yes         </td>
+         <td>Yes         </td>
       </tr>
    </tbody>
 </table>

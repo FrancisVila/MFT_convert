@@ -59,7 +59,19 @@ This topic describes Transfer CFT synchronous communication services.
             </ul>
             <p>The GETXINFO action returns an error if the communication 
  medium is not synchronous.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The public 
+ reference of the transfer is a character string of variable length. In 
+ the PESIT protocol, it contains 'pi13.pi3.pi4.pi11.pi12.pi61.pi62'.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
    </tbody>
@@ -85,22 +97,6 @@ Where:
     return code
 
 The available &lt;verbs> are listed in the following table.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The public 
- reference of the transfer is a character string of variable length. In 
- the PESIT protocol, it contains 'pi13.pi3.pi4.pi11.pi12.pi61.pi62'.         </td>
-      </tr>
-</table>
-
-The available &lt;param> are listed in the following table.
 
 <table cellspacing="0">
    <col/>
@@ -136,17 +132,7 @@ The available &lt;param> are listed in the following table.
    </tbody>
 </table>
 
-## Step procedure
-
-Use the COM command to define the synchronous medium.
-
-1.  Open the synchronous communication.
-2.  Write the command. This is not specific to synchronous mediums.
-3.  Retrieve information using the GETXINFO service.
-
-To view the synchronous communication template containing details and an example, see tcftsyn.
-
-## Return codes
+The available &lt;param> are listed in the following table.
 
 <table cellspacing="0">
    <col/>
@@ -208,6 +194,34 @@ To view the synchronous communication template containing details and an example
          <td colspan="1" rowspan="1">
             <p>Information about a transfer in the format described in 
  the cftapi.h file. </p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## Step procedure
+
+Use the COM command to define the synchronous medium.
+
+1.  Open the synchronous communication.
+2.  Write the command. This is not specific to synchronous mediums.
+3.  Retrieve information using the GETXINFO service.
+
+To view the synchronous communication template containing details and an example, see tcftsyn.
+
+## Return codes
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>cftau ("COM",C=&lt;configuration file&gt;);</p>
+            <p>configuration file is a text file that contains the following lines :</p>
+            <p># TCP/IP COMMUNICATION</p>
+            <p>TYPE    = TCP</p>
+            <p>NAME    = xhttp://localhost:&lt;COM Synchron port value&gt;</p>
+            <p>TIMEOUT = &lt;timeout to reach&gt;</p>
          </td>
       </tr>
    </tbody>

@@ -58,7 +58,18 @@ The CFTSSH object parameters for a server definition (DIRECT = SERVER).
  in order of preference, for the purpose of determining the suite to be 
  negotiated.</p>
             <p><span>Transfer CFT</span> supports  the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">
+<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr valign="top">
@@ -127,23 +138,6 @@ The CFTSSH object parameters for a server definition (DIRECT = SERVER).
 
 The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">
-<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
-      </tr>
-</table>
-
-Example 1
-
-This example demonstrates an SSH default profile that has no client key authentication (CLIPUBKEY is not defined). The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The SRVPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
-
 <table cellspacing="0">
    <col/>
    <col/>
@@ -182,7 +176,18 @@ This example demonstrates an SSH default profile that has no client key authenti
  in order of preference, for the purpose of determining the suite to be 
  negotiated.</p>
             <p><span>Transfer CFT</span> supports  the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">
+<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr valign="top">
@@ -244,30 +249,9 @@ This example demonstrates an SSH default profile that has no client key authenti
    </tbody>
 </table>
 
-Example 2
+Example 1
 
-The next example demonstrates an SSH default profile that uses client key authentication (CLIPUBKEY is defined). The client public key is referenced by the CLIPUBKEY parameter (SSH\_PUB\_KEY). The CLIPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
-
-Example 3
-
-The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The value is also a key identifier that corresponds to a key stored in the local PKI database.
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">
-<br/>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
-      </tr>
-</table>
-
-Example 4
-
-This example demonstrates an SSH default profile with no server key authentication (SRVPUBKEY is not defined), but where there is no client key authentication (CLIPRIVKEY is not defined).
+This example demonstrates an SSH default profile that has no client key authentication (CLIPUBKEY is not defined). The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The SRVPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
 <table cellspacing="0">
    <col/>
@@ -284,9 +268,13 @@ This example demonstrates an SSH default profile with no server key authenticati
    </tbody>
 </table>
 
-Example 5
+Example 2
 
-This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined), but where there is no client key authentication (CLIPRIVKEY is not defined). The server public key is referenced by the SRVPUBKEY parameter (SSH\_PUB\_KEY in the example). The SRVPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
+The next example demonstrates an SSH default profile that uses client key authentication (CLIPUBKEY is defined). The client public key is referenced by the CLIPUBKEY parameter (SSH\_PUB\_KEY). The CLIPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
+
+Example 3
+
+The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The value is also a key identifier that corresponds to a key stored in the local PKI database.
 
 <table cellspacing="0">
    <col/>
@@ -298,6 +286,41 @@ This example demonstrates an SSH default profile with server key authentication 
             <p>  SRVPRIVKEY     = 'SSH_PRIV_KEY',</p>
             <p>  CLIPUBKEY      = 'SSH_PUB_KEY',</p>
             <p>  MODE        = 'REPLACE'</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+Example 4
+
+This example demonstrates an SSH default profile with no server key authentication (SRVPUBKEY is not defined), but where there is no client key authentication (CLIPRIVKEY is not defined).
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CFTSSH        ID          = 'SSH_DEFAULT',</p>
+            <p> DIRECT      = 'CLIENT',</p>
+            <p>  MODE        = 'REPLACE'</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+Example 5
+
+This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined), but where there is no client key authentication (CLIPRIVKEY is not defined). The server public key is referenced by the SRVPUBKEY parameter (SSH\_PUB\_KEY in the example). The SRVPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CFTSSH        ID          = 'SSH_DEFAULT',</p>
+            <p>  DIRECT      = 'CLIENT',</p>
+            <p>  SRVPUBKEY     = 'SSH_PUB_KEY',</p>
+            <p>  MODE        = 'REPLACE'</p>
          </td>
       </tr>
    </tbody>
@@ -316,8 +339,10 @@ This example demonstrates an SSH default profile with server key authentication 
       <tr>
          <td>
             <p>CFTSSH        ID          = 'SSH_DEFAULT',</p>
-            <p> DIRECT      = 'CLIENT',</p>
-            <p>  MODE        = 'REPLACE'</p>
+            <p> DIRECT      = 'CLIENT',</p>
+            <p> SRVPUBKEY     = 'SSH_PUB_KEY',</p>
+            <p> CLIPRIVKEY    = 'SSH_PRIV_KEY',</p>
+            <p> MODE        = 'REPLACE'</p>
          </td>
       </tr>
    </tbody>

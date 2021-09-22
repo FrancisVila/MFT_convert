@@ -318,7 +318,17 @@ Parameter mapping and descriptions
                <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.               </li>
                <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Caution  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">   Never delete any .met files.         </td>
+      </tr>
+</table></p>
             <p>*See NOTE.</p>
          </td>
       </tr>
@@ -498,7 +508,17 @@ Parameter mapping and descriptions
                <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.                </li>
                <li>No: Files are not resubmitted, regardless of changes.               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The file is resubmitted after <i>any</i> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -606,9 +626,9 @@ The second one, when present, defines the separator after the timestamp.
    <col/>
       <tr>
          <td valign="top">         </td>
-         <td valign="top"><span><b>Caution  </b></span>
+         <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" valign="top">   Never delete any .met files.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
       </tr>
 </table>
 

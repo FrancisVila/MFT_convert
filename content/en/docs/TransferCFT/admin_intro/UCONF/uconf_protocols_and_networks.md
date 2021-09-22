@@ -35,17 +35,7 @@ Transfer CFT provides support for both IPV4 and IPV6.
       </tr>
       <tr>
          <td colspan="2">
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
-### Advanced IPv6
-
-Refer to the [UCONF parameters](../uconf_directory) table ipv6.set\_ai\_xxx.
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -55,4 +45,64 @@ Refer to the [UCONF parameters](../uconf_directory) table ipv6.set\_ai\_xxx.
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">It is recommended that you do <b>not</b> set<span> ipv6.disable_listen</span> to <span>No</span>, and <span>ipv6.disable_connect</span> to <span>Yes</span>.           </td>
       </tr>
+</table></p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+### Advanced IPv6
+
+Refer to the [UCONF parameters](../uconf_directory) table ipv6.set\_ai\_xxx.
+
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>
+            <p>cft.ipv6.set_ai_numerichost</p>
+         </td>
+         <td>Yes         </td>
+         <td>
+            <ul>
+               <li><span>Yes</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.               </li>
+               <li><span>No</span>: Use DNS requests for all hostnames, including numeric.               </li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>cft.ipv6.set_ai_numericserv         </td>
+         <td>Yes         </td>
+         <td>
+            <ul>
+               <li><span>Yes</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo  from performing an unnecessary service name translation.               </li>
+               <li><span>No</span>:                </li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>cft.ipv6.use_ipv4_legacy_resolver         </td>
+         <td>No         </td>
+         <td>
+            <ul>
+               <li><span>Yes</span>: Use legacy IPv4 only host and 
+  service names resolution API, namely gethostbyname() and getservbyname().
+  This detects if the performance issue involves new
+  IPv6 specific material as configuration items, new system API implementation,
+  etc.
+               </li>
+               <li><span>No</span>: Use IPv6 functionality.                </li>
+            </ul>
+         </td>
+      </tr>
+   </tbody>
 </table>

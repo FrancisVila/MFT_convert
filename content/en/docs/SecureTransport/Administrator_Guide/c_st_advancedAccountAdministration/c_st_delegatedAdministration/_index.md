@@ -84,19 +84,39 @@ When you create a delegated administrator, you can either assign **Read Only** o
          <td>Manage Route Package Templates         </td>
          <td>
             <p>Allows the administrator to create, modify, and delete route package templates.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In order these privileges to take effect, the appropriate administrative role should be updated to allow access to the Routes Menu.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
          <td>Manage 'External Script' Step         </td>
          <td>
             <p>Allows the administrator to create, modify, and delete any <strong>External Script</strong> steps in a route belonging to route package or route package template.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In order for these privileges to take effect, the appropriate administrative role should be updated to allow access to the Routes Menu.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
          <td>Manage 'Run as root external scripts'         </td>
-         <td>Allows the administrator to modify the <strong>Run as root administrator</strong> External Script property.            <p>&amp;&amp;&amp; ïïï ùùù</p>         </td>
+         <td>Allows the administrator to modify the <strong>Run as root administrator</strong> External Script property.            <p><table cellpadding="0" cellspacing="0">   <col/>   <col/>   <col/>      <tr>         <td valign="top">         </td>         <td valign="top"><span><b>Note</b></span>         </td>         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">In order for these privileges to take effect, the administrator should have privilege to manage External Script step.         </td>      </tr></table></p>         </td>
       </tr>
       <tr>
          <td>Manage Login Restriction Policies         </td>

@@ -2069,10 +2069,62 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
    <col/>
       <tr>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p> </p>
+            <p>V24 format</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p> </p>
+            <p>V23 format</p>
+            <p> </p>
+            <p>V24 format</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p> </p>
+            <p>Warning</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p><a name="CFTT47W"></a>
+</p>
+            <p>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil</p>
+            <p>CFTT47W _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLID=&amp;id DIRECT=CLIENT&gt;</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks</p>
+            <p>CFTT47W _ No SSL security profile for additional checks &lt;PART=&amp;part SSLID=&amp;id DIRECT=SERVER&gt;</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -2091,70 +2143,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
             <p>Check the configuration and add the missing profile. </p>
          </td>
       </tr>
-</table>
-
- 
-
-<table>
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-      <tr>
-         <td>
-            <p> </p>
-            <p>Warning</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
- 
-
-<table>
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>V23 format</p>
-            <p> </p>
-            <p>V24 format</p>
-         </td>
-      </tr>
-      <tr>
-         <td>
-            <p> </p>
-            <p>V23 format</p>
-            <p> </p>
-            <p>V24 format</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
-
- 
-
-<table>
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p><a name="CFTT47W"></a>
-</p>
-            <p>CFTT47W PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLid=&amp;id DIRECT=CLIENT _ Cannot find SSL security profil</p>
-            <p>CFTT47W _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot SSLID=&amp;id DIRECT=CLIENT&gt;</p>
-         </td>
-      </tr>
-      <tr>
-         <td>
-            <p>CFTT47W PART=&amp;part SSLid=&amp;id DIRECT=SERVER _ No SSL security profile for additional checks</p>
-            <p>CFTT47W _ No SSL security profile for additional checks &lt;PART=&amp;part SSLID=&amp;id DIRECT=SERVER&gt;</p>
-         </td>
-      </tr>
-   </tbody>
 </table>
 
  
@@ -2449,14 +2437,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td>
             <p>The transfer has been started either by the requester (&amp;str 
  = requester) or by the server (&amp;str = server).</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -2465,6 +2446,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">IDS refers to the session identifier.         </td>
+      </tr>
+</table></p>
+         </td>
       </tr>
 </table>
 
@@ -2492,14 +2476,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td>
             <p>The transfer has been completed either by the requester (&amp;str 
  = requester) or by the server (&amp;str = server).</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -2508,6 +2485,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">IDS refers to the session identifier.         </td>
+      </tr>
+</table></p>
+         </td>
       </tr>
 </table>
 
@@ -2734,6 +2714,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table border="1" cellspacing="0">
    <col/>
    <col/>
@@ -2767,6 +2749,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td>Check the PROT value in the SEND or RECV transfer.         </td>
       </tr>
 </table>
+
+ 
 
 <table border="1" cellspacing="0">
    <col/>
@@ -2916,8 +2900,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
- 
-
 <table border="1" cellspacing="0">
    <col/>
    <col/>
@@ -3008,6 +2990,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table border="1" cellspacing="0">
    <col/>
    <col/>
@@ -3076,8 +3060,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
       </tr>
 </table>
-
- 
 
 <table border="1" cellspacing="0">
    <col/>
@@ -3213,8 +3195,6 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          </td>
       </tr>
 </table>
-
- 
 
 <table border="1" cellspacing="0">
    <col/>
@@ -3691,6 +3671,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
 </table>
 
+ 
+
 <table border="1" cellspacing="0">
    <col/>
    <col/>
@@ -3939,6 +3921,117 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  were detected. This occurs via a negative acknowledgments sent in a PeSIT Hors SIT 
  message, where IDS is the reference for the session context.</p>
          </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>Information          </td>
+         <td>
+            <p><a name="CFTT94I"></a>CFTT94I PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str </p>
+            <p>CFTT94I &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt FCHARSET=&amp;str NCHARSET=&amp;str&gt;</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Explanation         </td>
+         <td>This information message relates to the extended transcoding used for this transfer.         </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>Error         </td>
+         <td>
+            <p><a name="CFTT95E"></a>CFTT95E Incorrect user or password   &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idtf DIAGI=&amp;diagi&gt; </p>
+            <p>CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt DIAGI=&amp;diagi&gt;                </p>
+         </td>
+      </tr>
+      <tr>
+         <td>Explanation         </td>
+         <td>Cannot connect to the SFTP server because the user name or password is incorrect.
+         </td>
+      </tr>
+      <tr>
+         <td>Action         </td>
+         <td>Correct the user name or password.         </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>Information          </td>
+         <td>
+            <p><a name="CFTT96I"></a>   CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt; </p>
+            <p>CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt;                </p>
+         </td>
+      </tr>
+      <tr>
+         <td>Explanation         </td>
+         <td>The requester (&amp;str = requester) or the server (&amp;str = server) has restarted the transfer.
+&amp;pos is the file position during restart.
+         </td>
+      </tr>
+</table>
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Error</p>
+         </td>
+         <td>
+            <p><a name="CFTT97E"></a>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands",</p>
+            <p>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands</p>
+            <p><![CDATA[ ]]></p>
+         </td>
+      </tr>
+      <tr>
+         <td>Explanation         </td>
+         <td><![CDATA[
+]]>         </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Error</p>
+         </td>
+         <td>
+            <p><a name="CFTT98W"></a>CFTT98W PART=%-8.8s IDF=%-8.8s IDT=%.8s Rename ignored because WFNAME equals FNAME,</p>
+            <p>CFTT98W Rename ignored because WFNAME equals FNAME &lt;IDTU=%.8s PART=%s IDF=%s IDT=%.8s&gt;</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Explanation         </td>
+         <td>The configuration has the same <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname">WFNAME</a> as the RECV FNAME and so the renaming is ignored.          </td>
       </tr>
 </table>
 

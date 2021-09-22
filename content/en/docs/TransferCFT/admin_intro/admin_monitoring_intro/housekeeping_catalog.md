@@ -51,7 +51,17 @@ To enable the auto-expand option, with Transfer CFT running:
          <td>
             <p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand. </p>
             <p>The value 0 disables the automatic expansion feature.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Tip  </b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -84,20 +94,6 @@ The example is based on the following settings:
 
 When you reach the TLVWARN (level=80%), the following messages are sent to the log:
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Tip  </b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" valign="top">We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-</table>
-
-The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the alerts stop at the next update.
-
 <table cellspacing="0">
    <col/>
       <tr>
@@ -111,9 +107,7 @@ The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the ale
       </tr>
 </table>
 
-The message CFTC30W Catalog Alert cleared : **level=67%** indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
-
-The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
+The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the alerts stop at the next update.
 
 <table cellspacing="0">
    <col/>
@@ -124,7 +118,9 @@ The catalog continues to fill until it reaches 80%. Expanding 20% more would res
       </tr>
 </table>
 
-The next time the catalog limit is reached, it can no longer expand. Here, the log displays 210, which is the theoretical number computed by the auto-expand feature, but in reality it is an error (CFTC13E):
+The message CFTC30W Catalog Alert cleared : **level=67%** indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+
+The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
 
 <table cellspacing="0">
    <col/>
@@ -141,17 +137,7 @@ The next time the catalog limit is reached, it can no longer expand. Here, the l
       </tr>
 </table>
 
-#### Auto-expand option on z/OS
-
-If you are using the cft.cftcat.auto\_expand parameter in a z/OS environment, refer to the SHARECAT parameter in the *Installation and Operation Guide* for OS specific details.
-
-### Catalog purge policies
-
-#### Purge using the CFTCAT command
-
-The local file transfer internal datafile rules include standard purge rules that you can modify using the catalog command CFTCAT.
-
-There are 6 parameters that manage the purge, depending on the transfer status and direction. For each of the following you can set the number, in days, for the purge to occur. In our example, the purge is set for 10 days.
+The next time the catalog limit is reached, it can no longer expand. Here, the log displays 210, which is the theoretical number computed by the auto-expand feature, but in reality it is an error (CFTC13E):
 
 <table cellspacing="0">
    <col/>
@@ -164,15 +150,17 @@ There are 6 parameters that manage the purge, depending on the transfer status a
       </tr>
 </table>
 
-The first letter indicates the transfer direction (S for SEND or R for receive ).
+#### Auto-expand option on z/OS
 
-The second letter refers to the state (CFTSTATE).
+If you are using the cft.cftcat.auto\_expand parameter in a z/OS environment, refer to the SHARECAT parameter in the *Installation and Operation Guide* for OS specific details.
 
-**Normal mode**
+### Catalog purge policies
 
--   \(H\) Transfer phase and hold phasestep, or Transfer phase and kill phasestep
--   \(T\) Ack phase and all phasesteps
--   \(X\) Done phase and Done phasestep
+#### Purge using the CFTCAT command
+
+The local file transfer internal datafile rules include standard purge rules that you can modify using the catalog command CFTCAT.
+
+There are 6 parameters that manage the purge, depending on the transfer status and direction. For each of the following you can set the number, in days, for the purge to occur. In our example, the purge is set for 10 days.
 
 <table cellspacing="0">
    <col/>
@@ -208,17 +196,15 @@ The second letter refers to the state (CFTSTATE).
    </tbody>
 </table>
 
-**Compatibility mode**
+The first letter indicates the transfer direction (S for SEND or R for receive ).
 
--   \(H\) Hold, keep, or preprocessing status
--   \(T\) Completed status
--   \(X\) Executed status
+The second letter refers to the state (CFTSTATE).
 
-#### Purge using UCONF settings
+**Normal mode**
 
-You can use the unified configuration to perform the same sort of purges as with the CFTCAT command, except that UCONF offers a more granular scheduling, i.e. hours, minutes, or seconds.
-
-For example, set the following where the sx represents 10 days (where a day equals a 24 hour interval) for an executed SEND transfer:
+-   \(H\) Transfer phase and hold phasestep, or Transfer phase and kill phasestep
+-   \(T\) Ack phase and all phasesteps
+-   \(X\) Done phase and Done phasestep
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -232,6 +218,18 @@ For example, set the following where the sx represents 10 days (where a day equa
       </tr>
 </table>
 
+**Compatibility mode**
+
+-   \(H\) Hold, keep, or preprocessing status
+-   \(T\) Completed status
+-   \(X\) Executed status
+
+#### Purge using UCONF settings
+
+You can use the unified configuration to perform the same sort of purges as with the CFTCAT command, except that UCONF offers a more granular scheduling, i.e. hours, minutes, or seconds.
+
+For example, set the following where the sx represents 10 days (where a day equals a 24 hour interval) for an executed SEND transfer:
+
 <table cellspacing="0">
    <col/>
    <tbody>
@@ -242,8 +240,6 @@ For example, set the following where the sx represents 10 days (where a day equa
       </tr>
    </tbody>
 </table>
-
-To schedule a periodic purge every 30 minutes:
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -257,13 +253,24 @@ To schedule a periodic purge every 30 minutes:
       </tr>
 </table>
 
-To apply the dynamic configuration parameters change:
+To schedule a periodic purge every 30 minutes:
 
 <table cellspacing="0">
    <col/>
    <tbody>
       <tr>
          <td>CFTUTIL uconfset id=cft.purge.periodicity,value=30M         </td>
+      </tr>
+   </tbody>
+</table>
+
+To apply the dynamic configuration parameters change:
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>CFTUTIL reconfig type=UCONF         </td>
       </tr>
    </tbody>
 </table>
@@ -278,7 +285,10 @@ When defining CFTSEND or CFTRECV templates you can set a parameter to purge th
    <col/>
    <tbody>
       <tr>
-         <td>CFTUTIL reconfig type=UCONF         </td>
+         <td>
+            <p>CFTSEND       DELETE=YES
+             </p>
+         </td>
       </tr>
    </tbody>
 </table>
@@ -292,7 +302,7 @@ Delete all file transfer records in keep status (K) due to a file creation error
    <tbody>
       <tr>
          <td>
-            <p>CFTSEND       DELETE=YES
+            <p>CFTRECV       RKERROR=YES
              </p>
          </td>
       </tr>
@@ -319,7 +329,7 @@ For example, delete all executed transfers from the catalog.
    <tbody>
       <tr>
          <td>
-            <p>CFTRECV       RKERROR=YES
+            <p>DELETE      STATE=X
              </p>
          </td>
       </tr>
@@ -336,10 +346,7 @@ You can set filters to reduce the number of messages (more than a 50% reduction)
    <col/>
    <tbody>
       <tr>
-         <td>
-            <p>DELETE      STATE=X
-             </p>
-         </td>
+         <td>UCONFSET id=sentinel.xfb.transfer,value=SUMMARY         </td>
       </tr>
    </tbody>
 </table>
@@ -354,7 +361,7 @@ However, Transfer CFT processes use a standard output file &lt;runtime/run>/cft.
    <col/>
    <tbody>
       <tr>
-         <td>UCONFSET id=sentinel.xfb.transfer,value=SUMMARY         </td>
+         <td>UCONFSET id=cft.output.backup_count,value=n         </td>
       </tr>
    </tbody>
 </table>
@@ -367,7 +374,7 @@ There are multiple ways to clear out completed transfer files. Let's begin with 
    <col/>
    <tbody>
       <tr>
-         <td>UCONFSET id=cft.output.backup_count,value=n         </td>
+         <td>CFTSEND ID=CLEANUP,FNAME=&lt;FILENAME&gt;,FACTION=DELETE         </td>
       </tr>
    </tbody>
 </table>
@@ -383,16 +390,19 @@ For example, to remove both the file and the record when sending a file.
    <col/>
    <tbody>
       <tr>
-         <td>CFTSEND ID=CLEANUP,FNAME=&lt;FILENAME&gt;,FACTION=DELETE         </td>
+         <td>CFTSEND ID=CLEANUP,FNAME=&lt;FILENAME&gt;,DELETE=YES,FDELETE=CDKHTX         </td>
       </tr>
    </tbody>
 </table>
 
-<table cellspacing="0">
+<table cellpadding="0" cellspacing="0">
    <col/>
-   <tbody>
+   <col/>
+   <col/>
       <tr>
-         <td>CFTSEND ID=CLEANUP,FNAME=&lt;FILENAME&gt;,DELETE=YES,FDELETE=CDKHTX         </td>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">The DELETE/FDELETE options are also valid for a CFTRECV, but note that setting FDELETE=CDKHTX deletes the file regardless of the state at the end of the transfer.         </td>
       </tr>
-   </tbody>
 </table>

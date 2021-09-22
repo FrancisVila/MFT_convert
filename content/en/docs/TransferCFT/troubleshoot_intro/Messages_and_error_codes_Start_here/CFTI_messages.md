@@ -1608,15 +1608,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
                <li> Enter the key directly.               </li>
                <li>Enter the key(s) in the indirection file.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>See the  <i>Apply a license key</i> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -1625,6 +1617,10 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">When working in multi-node you must have one key per node and host.         </td>
+      </tr>
+</table></p>
+            <p>See the  <i>Apply a license key</i> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>
+         </td>
       </tr>
 </table>
 
@@ -1669,15 +1665,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
                <li> Enter the key directly.               </li>
                <li>Enter the key(s) in the indirection file.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
-            <p>See the  <i>Apply a license key</i> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>
-         </td>
-      </tr>
-</table>
-
- 
-
-<table cellpadding="0" cellspacing="0">
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -1686,6 +1674,10 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">When working in multi-node you must have one key per node and host.         </td>
+      </tr>
+</table></p>
+            <p>See the  <i>Apply a license key</i> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>
+         </td>
       </tr>
 </table>
 
@@ -1731,8 +1723,82 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
                <li> Enter the key directly.               </li>
                <li>Enter the key(s) in the indirection file.                </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" valign="top">When working in multi-node you must have one key per node and host.         </td>
+      </tr>
+</table></p>
             <p>See the  <i>Apply a license key</i> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>
+         </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning  </p>
+         </td>
+         <td>
+            <p>CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion </p>
+            <p>CFTI18W Version mismatch between Transfer CFT &amp;CFTVersion and the UCONF dictionary &amp;UCONFVersion</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>Explanation</p>
+         </td>
+         <td>
+            <p>The UCONF dictionary was created with a different Transfer CFT version than the product, probably due to a non-standard installation.</p>
+         </td>
+      </tr>
+      <tr>
+         <td>Consequence	         </td>
+         <td>There is a risk of failure.         </td>
+      </tr>
+      <tr>
+         <td>Action         </td>
+         <td>Perform a standard installation to reinstall the product.          </td>
+      </tr>
+</table>
+
+ 
+
+<table border="1" cellspacing="0">
+   <col/>
+   <col/>
+      <tr valign="top">
+         <td>
+            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Error
+  </p>
+         </td>
+         <td width="80%">
+            <p><a name="CFTS39E"></a>
+</p>
+            <p>CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx </p>
+            <p>CFTI40E OMVS SEGMENT NOT DEFINED for user=xxxxxx</p>
+         </td>
+      </tr>
+      <tr valign="top">
+         <td>
+            <p>Explanation</p>
+         </td>
+         <td width="80%">
+            <p><font color="#000000" face="Arial" size="2"><font color="#000000">Reserved for z/OS systems.</font></font>
+</p>
          </td>
       </tr>
 </table>

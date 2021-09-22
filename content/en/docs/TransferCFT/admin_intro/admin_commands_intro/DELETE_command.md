@@ -147,14 +147,58 @@ of 20 transfers every 5 seconds.
          <td colspan="3" rowspan="1">
             <p>Example 1</p>
 <div>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellspacing="0">
+   <col/>
+      <tr>
+         <td colspan="1" rowspan="1">
+            <p>DELETE        PART = SIE??</p>
+         </td>
+      </tr>
+</table></p>
 </div>
             <p>This command deletes all transfers, IDT = * by default, in the send 
  and receive directions, DIRECT = BOTH by default, for the partners whose 
  identifier begins with "SIE" and contains 5 characters in all.</p>
             <p>Example 2</p>
 <div>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td>
+            <p>DELETE</p>
+         </td>
+         <td>
+            <p>PART = HQ,</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p> </p>
+         </td>
+         <td>
+            <p>DIRECT = SEND,</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p> </p>
+         </td>
+         <td>
+            <p>IDF = ACCNT</p>
+         </td>
+         <td>
+            <p> </p>
+         </td>
+      </tr>
+</table></p>
 </div>
             <p>This command deletes all transfers, IDT = * by default, in the send 
  direction (DIRECT = SEND) of the model file ACCNT to the partner HQ.</p>

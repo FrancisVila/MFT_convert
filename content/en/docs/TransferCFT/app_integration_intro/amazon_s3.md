@@ -63,7 +63,17 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
          <td>
             <p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span>/etc/ssl/certs/ca-certificates.crt</span>) or to a directory containing the CA certificates  (for example, <span>/etc/ssl/certs/</span>), which are stored individually with their filenames in a hash format. </p>
             <p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span>cacert </span>and <span>capath </span>options.</p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You can set this parameter on UNIX systems, however it is not applicable on Windows.         </td>
+      </tr>
+</table></p>
             <p>If  the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>
          </td>
       </tr>
@@ -196,22 +206,6 @@ If you did not define a storageaccount value in the CFTSEND/CFTRECV objects, whe
 
 You can enter your access key pair information in this file using the following format:
 
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">You can set this parameter on UNIX systems, however it is not applicable on Windows.         </td>
-      </tr>
-</table>
-
-## Creating send and receive definitions
-
-You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions for S3 storage:
-
 <table cellspacing="0">
    <col/>
    <tbody>
@@ -225,7 +219,9 @@ You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intr
    </tbody>
 </table>
 
-You can use the following example as a basis for configuring a CFTSEND and CFTRECV:
+## Creating send and receive definitions
+
+You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions for S3 storage:
 
 <table cellspacing="0">
    <col/>
@@ -279,13 +275,7 @@ You can use the following example as a basis for configuring a CFTSEND and CFTRE
    </tbody>
 </table>
 
-## <span id="Using"></span>Using AWS EC2 instance profiles to access S3 storage
-
-To enhance the use of Transfer CFT in large AWS deployments, you can use an IAM role to manage access for applications that run on an EC2 instance. To implement, you need an IAM role that allows access to S3 defined in an IAM instance profile, which is then associated with the EC2 instance. For example, Transfer CFT could be hosted on an EC2 instance that inherits its permissions from the associated instance profile to access the S3 bucket.
-
-No configuration is required on Transfer CFT, you can simply point the CFTSEND or CFTRECV WORKINGDIR field to the desired S3 endpoint and leave the STORAGEACCOUNT definition empty.
-
-Example
+You can use the following example as a basis for configuring a CFTSEND and CFTRECV:
 
 <table cellspacing="0">
    <col/>
@@ -301,6 +291,29 @@ Example
             <p> fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
             <p>workingdir = s3://https://s3.eu-west-1.amazonaws.com/my-cft-test,</p>
             <p> storageaccount=account2</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+## <span id="Using"></span>Using AWS EC2 instance profiles to access S3 storage
+
+To enhance the use of Transfer CFT in large AWS deployments, you can use an IAM role to manage access for applications that run on an EC2 instance. To implement, you need an IAM role that allows access to S3 defined in an IAM instance profile, which is then associated with the EC2 instance. For example, Transfer CFT could be hosted on an EC2 instance that inherits its permissions from the associated instance profile to access the S3 bucket.
+
+No configuration is required on Transfer CFT, you can simply point the CFTSEND or CFTRECV WORKINGDIR field to the desired S3 endpoint and leave the STORAGEACCOUNT definition empty.
+
+Example
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>
+            <p>CFTRECV id = S3_WRITE_EC2,</p>
+            <p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
+            <p>workingdir = s3://my-cft-test.eu-west-1</p>
+</p>
          </td>
       </tr>
    </tbody>
@@ -343,11 +356,11 @@ In UCONF, set the S3 credentials for the receiving Transfer CFT:
    <tbody>
       <tr>
          <td>
-            <p>
-            <p>CFTRECV id = S3_WRITE_EC2,</p>
-            <p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
-            <p>workingdir = s3://my-cft-test.eu-west-1</p>
+            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'
 </p>
+            <p>uconfset id=aws.credentials.ceph_user.access_key_id,     value=&lt;key_id&gt;
+</p>
+            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>
          </td>
       </tr>
    </tbody>
@@ -360,11 +373,8 @@ Configure the CFTRECV object to write to the S3 storage:
    <tbody>
       <tr>
          <td>
-            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'
-</p>
-            <p>uconfset id=aws.credentials.ceph_user.access_key_id,     value=&lt;key_id&gt;
-</p>
-            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>
+            <p>CFTRECV id=CEPH_WRITE, fname=pub/&amp;IDF.&amp;IDTU.RCV, workingdir=s3://http://radosgw_address.net:7480/my_bucket, storageaccount=&lt;ceph_user&gt;<![CDATA[
+]]></p>
          </td>
       </tr>
    </tbody>
@@ -385,8 +395,11 @@ Configure the UCONF credentials for the Ceph Object Storage if you have not alr
    <tbody>
       <tr>
          <td>
-            <p>CFTRECV id=CEPH_WRITE, fname=pub/&amp;IDF.&amp;IDTU.RCV, workingdir=s3://http://radosgw_address.net:7480/my_bucket, storageaccount=&lt;ceph_user&gt;<![CDATA[
-]]></p>
+            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'
+</p>
+            <p>uconfset id=aws.credentials.ceph_user.access_key_id,    value=&lt;key_id&gt;
+</p>
+            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>
          </td>
       </tr>
    </tbody>
@@ -398,13 +411,7 @@ Create the CFTSEND template, and send a file that is stored on S3 to a Transfer 
    <col/>
    <tbody>
       <tr>
-         <td>
-            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'
-</p>
-            <p>uconfset id=aws.credentials.ceph_user.access_key_id,    value=&lt;key_id&gt;
-</p>
-            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>
-         </td>
+         <td>CFTSEND id=ceph_send, workingdir=s3://http://radosgw_address.net:7480/&lt;my_bucket&gt;, storageaccount=&lt;ceph_user&gt;            <p>send part=paris,idf=ceph_send,fname=pub/FTEST</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -419,7 +426,10 @@ After sending a file to the partner, you can check the log for transfer details.
    <col/>
    <tbody>
       <tr>
-         <td>CFTSEND id=ceph_send, workingdir=s3://http://radosgw_address.net:7480/&lt;my_bucket&gt;, storageaccount=&lt;ceph_user&gt;            <p>send part=paris,idf=ceph_send,fname=pub/FTEST</p>         </td>
+         <td>
+            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-s3'
+</p>
+         </td>
       </tr>
    </tbody>
 </table>
@@ -431,8 +441,9 @@ When using sse-kms, you must additionally enter your key identifier:
    <tbody>
       <tr>
          <td>
-            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-s3'
+            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-kms'
 </p>
+            <p>uconfset id=aws.credentials.h&lt;storageaccount&gt;.encryption_key_id, value=&lt;key_id&gt;</p>
          </td>
       </tr>
    </tbody>
@@ -447,9 +458,8 @@ You can set the Access Control List (ACL) policy for files that you upload to AW
    <tbody>
       <tr>
          <td>
-            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-kms'
+            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.acl, value='&lt;ACL policy&gt;'
 </p>
-            <p>uconfset id=aws.credentials.h&lt;storageaccount&gt;.encryption_key_id, value=&lt;key_id&gt;</p>
          </td>
       </tr>
    </tbody>
@@ -502,10 +512,7 @@ To list objects in a bucket on Amazon S3:
    <col/>
    <tbody>
       <tr>
-         <td>
-            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.acl, value='&lt;ACL policy&gt;'
-</p>
-         </td>
+         <td>ping s3-&lt;region&gt;.amazonaws.com         </td>
       </tr>
    </tbody>
 </table>
@@ -516,7 +523,7 @@ To list objects in a Ceph storage:
    <col/>
    <tbody>
       <tr>
-         <td>ping s3-&lt;region&gt;.amazonaws.com         </td>
+         <td>ping  s3-eu-west-1.amazonaws.com         </td>
       </tr>
    </tbody>
 </table>
@@ -527,7 +534,9 @@ To create a bucket:
    <col/>
    <tbody>
       <tr>
-         <td>ping  s3-eu-west-1.amazonaws.com         </td>
+         <td>
+            <p>aws --region eu-west-1 s3api list-objects --bucket my-cft-test</p>
+         </td>
       </tr>
    </tbody>
 </table>

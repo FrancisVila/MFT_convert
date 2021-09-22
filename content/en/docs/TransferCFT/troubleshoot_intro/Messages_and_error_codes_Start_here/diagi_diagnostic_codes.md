@@ -233,7 +233,17 @@ The following table makes references to DIAGP. For details, please see the [DIAG
             <p> </p>
          </td>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>H status - ABORT, EXECE in requester mode</p>
+            <p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -242,7 +252,14 @@ The following table makes references to DIAGP. For details, please see the [DIAG
  file cannot be allocated (FDISP=OLD case)</p>
          </td>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>H status - ABORT, EXECE<br/>The file is deleted.             <p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -254,7 +271,17 @@ The following table makes references to DIAGP. For details, please see the [DIAG
  the receive file is created (FDISP = DELETE case)</p>
          </td>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>H status - ABORT, EXECE in requester mode</p>
+            <p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -263,7 +290,17 @@ The following table makes references to DIAGP. For details, please see the [DIAG
  deleting the sent file, if a deletion has been requested (FACTION = DELETE)</p>
          </td>
          <td>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>H status - ABORT, EXECE in requester mode</p>
+            <p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>
+         </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -636,7 +673,26 @@ The following table makes references to DIAGP. For details, please see the [DIAG
             <p> </p>
          </td>
          <td colspan="1" rowspan="1">
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>D status - RESTART</p>
+            <p>Check that the file is not locked by another process.</p>
+         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>
+            <p>H status - ABORT, EXECE</p>
+            <p>Check that the file is not locked by another process.</p>
+         </td>
+         <td>          </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -644,7 +700,26 @@ The following table makes references to DIAGP. For details, please see the [DIAG
             <p>2. FILE - The receive file is locked</p>
          </td>
          <td colspan="1" rowspan="1">
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table>
+   <col/>
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>D status - RESTART</p>
+            <p>Check that the file is not locked by another process.</p>
+         </td>
+         <td>          </td>
+      </tr>
+      <tr>
+         <td>
+            <p>H status - ABORT, EXECE</p>
+            <p>Check that the file is not locked by another process.</p>
+         </td>
+         <td>          </td>
+      </tr>
+   </tbody>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -2175,13 +2250,250 @@ and compare it to the host value in the CFTTCP object; the check is done on the 
 
 ## <span id="SSL"></span>SSL alert errors
 
-<table>
+<table cellspacing="0">
    <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>
+            <p>Code</p>
+</th>
+         <th>
+            <p>Description</p>
+</th>
+      </tr>
+   </thead>
    <tbody>
       <tr>
          <td>
-            <p>H status - ABORT, EXECE in requester mode</p>
-            <p>If there is a DIAGP for this, it is system specific. For these errors, check the DIAGC or the log for more information.</p>
+            <p>0</p>
+         </td>
+         <td>
+            <p>Close notify</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>10</p>
+         </td>
+         <td>
+            <p>Unexpected message</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>20</p>
+         </td>
+         <td>
+            <p>Bad record MAC</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>21</p>
+         </td>
+         <td>
+            <p>Decryption failed</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>22</p>
+         </td>
+         <td>
+            <p>Record overflow</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>30</p>
+         </td>
+         <td>
+            <p>Decompression failure</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>40</p>
+         </td>
+         <td>
+            <p>Handshake failure</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>41</p>
+         </td>
+         <td>
+            <p>No certificate</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>42</p>
+         </td>
+         <td>
+            <p>Bad certificate</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>43</p>
+         </td>
+         <td>
+            <p>Unsupported certificate</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>44</p>
+         </td>
+         <td>
+            <p>Certificate revoked</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>45</p>
+         </td>
+         <td>
+            <p>Certificate expired</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>46</p>
+         </td>
+         <td>
+            <p>Certificate unknown</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>47</p>
+         </td>
+         <td>
+            <p>Illegal parameter</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>48</p>
+         </td>
+         <td>
+            <p>Unknown CA (<a href="http://en.wikipedia.org/wiki/Certificate_authority">Certificate authority</a>)</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>49</p>
+         </td>
+         <td>
+            <p>Access denied</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>50</p>
+         </td>
+         <td>
+            <p>Decode error</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>51</p>
+         </td>
+         <td>
+            <p>Decrypt error</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>60</p>
+         </td>
+         <td>
+            <p>Export restriction</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>70</p>
+         </td>
+         <td>
+            <p>Protocol version</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>71</p>
+         </td>
+         <td>
+            <p>Insufficient security</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>80</p>
+         </td>
+         <td>
+            <p>Internal error</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>90</p>
+         </td>
+         <td>
+            <p>User canceled</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>100</p>
+         </td>
+         <td>
+            <p>No renegotiation</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>110</p>
+         </td>
+         <td>
+            <p>Unsupported extension</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>111</p>
+         </td>
+         <td>
+            <p>Certificate unobtainable</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>112</p>
+         </td>
+         <td>
+            <p>Certificate unobtainable</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>113</p>
+         </td>
+         <td>
+            <p>Bad certificate status response</p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>114</p>
+         </td>
+         <td>
+            <p>Bad certificate hash value</p>
          </td>
       </tr>
    </tbody>

@@ -295,7 +295,17 @@ LISTCAT CONTENT = COMMUT
                <li>Ack     
  =     A     (Acknowledge)               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If  the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see <a href="../../../../concepts/phase_and_phasestep/processing_compatability">Backward compatibility</a>.         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -336,7 +346,42 @@ LISTCAT CONTENT = COMMUT
 
 LISTCAT CONTENT = EXTEND 
 
-<table cellpadding="0" cellspacing="0">
+<table cellspacing="0">
+   <col/>
+   <col/>
+   <thead>
+      <tr>
+         <th>Heading</th>
+         <th>Meaning</th>
+      </tr>
+   </thead>
+      <tr>
+         <td>
+            <p>1 </p>
+         </td>
+         <td>
+            <p>Local partner identifier described in the CFTPART (ID) 
+ or CFTDEST command (one of the PARTS of the broadcasting list) </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>2 </p>
+         </td>
+         <td>
+            <p>Transfer state<br/>The DTSA characters mean:</p>
+            <ul>
+               <li>Direction 
+      =     S/R     
+ (Send/Receive)               </li>
+               <li>Type     
+ =     F/M/R     (File/Message/Reply)               </li>
+               <li>State     
+ =     D/C/H/K/T/X     (Disp/Current/Hold/Keep/Terminated/eXecuted)               </li>
+               <li>Ack     
+ =     A     (Acknowledge)               </li>
+            </ul>
+            <p><table cellpadding="0" cellspacing="0">
    <col/>
    <col/>
    <col/>
@@ -345,5 +390,82 @@ LISTCAT CONTENT = EXTEND 
          <td valign="top"><span><b>Note</b></span>
          </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">If  the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see <a href="../../../../concepts/phase_and_phasestep/processing_compatability">Backward compatibility</a>.         </td>
+      </tr>
+</table></p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>3 </p>
+         </td>
+         <td>
+            <p>File identifier (IDF) </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>4 </p>
+         </td>
+         <td>
+            <p>Transfer identifier (IDT) </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>5 </p>
+         </td>
+         <td>
+            <p>Identifier of the application associated to the transfer 
+ (IDA) </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>6 </p>
+         </td>
+         <td>
+            <p>Requester ("R") or server ("S") mode </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>7 </p>
+         </td>
+         <td>
+            <p>Client security mode ("C") or server ("S") 
+ mode </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>8 </p>
+         </td>
+         <td>
+            <p>Exits used<br/>The characters FAT represent:</p>
+            <ul>
+               <li>F: file exit ("x" if present)               </li>
+               <li>A: directory 
+ exit ("x" if present)               </li>
+               <li>T: end 
+ of transfer exit ("x" if present)               </li>
+            </ul>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>9 </p>
+         </td>
+         <td>
+            <p>Use of an end of transfer procedure ("x" if 
+ present) </p>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p>10 </p>
+         </td>
+         <td>
+            <p>Transfer CFT internal diagnostic (DIAGI) </p>
+         </td>
       </tr>
 </table>

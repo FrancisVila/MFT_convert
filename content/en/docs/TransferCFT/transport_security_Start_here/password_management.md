@@ -222,7 +222,17 @@ The supported authentication methods are:
          <td>system         </td>
          <td>
             <p>The user/password is  checked against the operating system. </p>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
+      </tr>
+</table></p>
             <p><b>Unix </b>
 </p>
             <p>You must use <span>cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to  <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix">Using system users - UNIX</a> for details.</p>
@@ -237,7 +247,17 @@ The supported authentication methods are:
                <li>Create a group "group1": <span>net localgroup group1 /add</span>               </li>
                <li>Add user "user1" to group "group1": <span>net localgroup group1 user1 /add</span>               </li>
             </ul>
-            <p>&amp;&amp;&amp; ïïï ùùù</p>
+            <p><table cellpadding="0" cellspacing="0">
+   <col/>
+   <col/>
+   <col/>
+      <tr>
+         <td valign="top">         </td>
+         <td valign="top"><span><b>Note</b></span>
+         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
+      </tr>
+</table></p>
          </td>
       </tr>
       <tr>
@@ -277,39 +297,9 @@ The supported authentication methods are:
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">We strongly recommend that you set <span>copilot.misc.createprocessasuser=</span><span>yes </span>when using the system option.         </td>
-      </tr>
-</table>
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">For a user belonging to a domain, use: <span>domain\user1</span> instead of <span>user1</span>         </td>
-      </tr>
-</table>
-
-### Sending a file to the server
-
-#### Server: static configuration
-
-<table cellpadding="0" cellspacing="0">
-   <col/>
-   <col/>
-   <col/>
-      <tr>
-         <td valign="top">         </td>
-         <td valign="top"><span><b>Note</b></span>
-         </td>
          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top">1. If copilot.restapi.authentication_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = system.         </td>
       </tr>
 </table>
-
-#### Client: user command
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -323,9 +313,7 @@ The supported authentication methods are:
       </tr>
 </table>
 
-In this case, username01/password01 is compared with what is defined in uconf: cft.server.authentication\_method.
-
-### Receiving a file from the server
+### Sending a file to the server
 
 #### Server: static configuration
 
@@ -350,6 +338,39 @@ In this case, username01/password01 is compared with what is defined in uconf: c
    <tbody>
       <tr>
          <td>SEND part=server, idf= idf01, ruser=username01, rpasswd=password01         </td>
+      </tr>
+   </tbody>
+</table>
+
+In this case, username01/password01 is compared with what is defined in uconf: cft.server.authentication\_method.
+
+### Receiving a file from the server
+
+#### Server: static configuration
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>
+            <p>CFTSEND</p>
+            <p>id=idf01,</p>
+            <p>imply=yes,</p>
+            <p>fname=file01,</p>
+            <p>spasswd=_AUTH_</p>
+            <p>uconfset id=cft.server.authentication_method, value=system</p>
+         </td>
+      </tr>
+   </tbody>
+</table>
+
+#### Client: user command
+
+<table cellspacing="0">
+   <col/>
+   <tbody>
+      <tr>
+         <td>RECV part=server, idf= idf01, suser=username01, spasswd=password01         </td>
       </tr>
    </tbody>
 </table>
