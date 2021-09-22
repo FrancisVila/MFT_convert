@@ -4926,7 +4926,7 @@ Syntax
 
 
 
-Note: <span id="*OP"></span>You can configure Transfer
+Note: <span id="OP"></span>You can configure Transfer
 
 CFT to accept or reject SSL connections based on logical operators used
 
