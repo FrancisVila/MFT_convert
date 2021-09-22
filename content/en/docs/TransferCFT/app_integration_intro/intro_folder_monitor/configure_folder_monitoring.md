@@ -644,7 +644,7 @@ Prior to deleting a folder object, check that it is inactive. You can execute IN
          <td valign="top">         </td>
          <td valign="top"><span><b>Note</b></span>
          </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><a name="*char_note"></a>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" valign="top"><a name="char_note"></a>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
       </tr>
 </table>
 
