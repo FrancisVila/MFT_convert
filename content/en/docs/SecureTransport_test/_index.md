@@ -58,4 +58,4 @@ The ST Web Client is a browser-based interface providing basic secure file trans
 -   [Get started with ST Web Client](01-get-started-stwc.htm)
 -   [Customization overview](overview1.htm)
 
-Document version: Tuesday, September 21, 2021
+Document version: Friday, September 10, 2021

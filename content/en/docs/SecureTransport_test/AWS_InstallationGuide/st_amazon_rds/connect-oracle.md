@@ -27,50 +27,13 @@ For further reference, see [Connecting to Oracle DB](https://docs.aws.amazon.com
 
 Use the following script:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>CREATE SMALLFILE TABLESPACE "ST_DATA"</p>
-            <p>DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000M</p>
-            <p>LOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;</p>
-            <p>CREATE SMALLFILE TABLESPACE "ST_FILETRACKING"</p>
-            <p>DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000M</p>
-            <p>LOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;</p>
-            <p>CREATE SMALLFILE TABLESPACE "ST_SERVERLOG"</p>
-            <p>DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000M</p>
-            <p>LOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;</p>
-            <p>CREATE USER ST IDENTIFIED BY ST;</p>
-            <p>   grant connect to ST;</p>
-            <p>   grant create operator to ST;</p>
-            <p>   grant create procedure to ST;</p>
-            <p>   grant create sequence to ST;</p>
-            <p>   grant create session to ST;</p>
-            <p>   grant create table to ST;</p>
-            <p>   alter user ST quota unlimited on ST_DATA;</p>
-            <p>   alter user ST quota unlimited on ST_FILETRACKING;</p>
-            <p>   alter user ST quota unlimited on ST_SERVERLOG;</p>
-            <p>   alter user ST quota unlimited on USERS;</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    CREATE SMALLFILE TABLESPACE "ST_DATA"DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000MLOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;CREATE SMALLFILE TABLESPACE "ST_FILETRACKING"DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000MLOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;CREATE SMALLFILE TABLESPACE "ST_SERVERLOG"DATAFILE SIZE 5000M AUTOEXTEND ON NEXT 12K MAXSIZE 8000MLOGGING EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;CREATE USER ST IDENTIFIED BY ST;   grant connect to ST;   grant create operator to ST;   grant create procedure to ST;   grant create sequence to ST;   grant create session to ST;   grant create table to ST;   alter user ST quota unlimited on ST_DATA;   alter user ST quota unlimited on ST_FILETRACKING;   alter user ST quota unlimited on ST_SERVERLOG;   alter user ST quota unlimited on USERS;
 
 ## Obtain the Oracle DB certificate and a Distinguished Name
 
 Execute the following command from one of your RHEL Instances which have access to the database:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>openssl s_client -connect &lt;host&gt;:&lt;ssl_port&gt;</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    openssl s_client -connect <host>:<ssl_port>
 
 where `<host>` is the Endpoint.
 
@@ -82,28 +45,13 @@ To create a new directory, you can use the Amazon RDS procedure `dsadmin.rdsadmi
 
 The following example creates a new directory named `ST_DMPDIR`:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>exec rdsadmin.rdsadmin_util.create_directory(p_directory_name =&gt; 'ST_DMPDIR');         </td>
-      </tr>
-   </tbody>
-</table>
+    exec rdsadmin.rdsadmin_util.create_directory(p_directory_name => 'ST_DMPDIR');
 
 You can list the directories by querying `DBA_DIRECTORIES`. The system chooses the actual host pathname automatically. The following example gets the directory path for the directory named `ST_DMPDIR`:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>select DIRECTORY_PATH 
-from DBA_DIRECTORIES 
-where DIRECTORY_NAME='ST_DMPDIR';
-         </td>
-      </tr>
-   </tbody>
-</table>
+    select DIRECTORY_PATH 
+    from DBA_DIRECTORIES 
+    where DIRECTORY_NAME='ST_DMPDIR';
 
 The master user for the DB instance has read and write privileges in the new directory, and can grant access to other users. You will need to grant read and write privileges to your SecureTransport user.
 
@@ -115,15 +63,7 @@ You can use the Amazon RDS procedure `rdsadmin.rds_file_util.listdir` to list th
 
 The following example lists the files in the directory named `ST_DMPDIR`:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>select * from table
- (rdsadmin.rds_file_util.listdir(p_directory =&gt; 'ST_DMPDIR'));
-         </td>
-      </tr>
-   </tbody>
-</table>
+    select * from table
+     (rdsadmin.rds_file_util.listdir(p_directory => 'ST_DMPDIR'));
 
 Learn more about [Creating directories in RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.Misc.html#Appendix.Oracle.CommonDBATasks.NewDirectories) in the AWS documentation.

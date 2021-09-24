@@ -10,17 +10,7 @@ Download the respective Edge and Server image files from [Axway Support Portal](
 
 Upload the files to each of the Kubernetes Nodes host machines. Enter the following commands to load the images:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ docker load -i SecureTransport_5.5_DockerImage_edge_linux-x86-64_&lt;build number&gt;.tar.gz</p>
-            <p>$ docker load -i SecureTransport_5.5_DockerImage_server_linux-x86-64_&lt;build number&gt;.tar.gz</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ docker load -i SecureTransport_5.5_DockerImage_edge_linux-x86-64_<build number>.tar.gz$ docker load -i SecureTransport_5.5_DockerImage_server_linux-x86-64_<build number>.tar.gz
 
 ## Licenses
 
@@ -56,19 +46,7 @@ The Kubernetes DNS (Kube-DNS) plays big part of the Edge scaling process as it d
 
 You can check the current Kube-DNS TTL by executing the following command several times:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>docker run --rm gcr.io/kubernetes-e2e-test-images/dnsutils:1.3 /bin/sh - c "dig +nocmd +noall +answer +ttlid @10.96.0.10 A &lt;headless service name&gt;.&lt;namespace&gt;.svc.cluster.local"</p>
-            <p>nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.32.0.35</p>
-            <p>nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.40.0.15</p>
-            <p>nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.43.0.12</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    docker run --rm gcr.io/kubernetes-e2e-test-images/dnsutils:1.3 /bin/sh - c "dig +nocmd +noall +answer +ttlid @10.96.0.10 A <headless service name>.<namespace>.svc.cluster.local"nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.32.0.35nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.40.0.15nz1-svc.securetransport.svc.cluster.local. 5 IN A 10.43.0.12
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -92,102 +70,31 @@ In a containerized environment these limits are best configured globally, for al
 
 Before making any changes, verify the current values by executing the following command:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ docker run --rm --entrypoint '' &lt;st_server_or_edge_image_tag&gt;  /bin/bash -c 'ulimit -n -u'</p>
-            <p>open files (-n) 65536</p>
-            <p>max user processes (-u) 65536</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ docker run --rm --entrypoint '' <st_server_or_edge_image_tag>  /bin/bash -c 'ulimit -n -u'open files (-n) 65536max user processes (-u) 65536
 
 If needed update the `/etc/docker/daemon.json` file and restart the Docker Engine on each of the Kubernetes cluster nodes.
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>{</p>
-            <p>  "default-ulimits": {</p>
-            <p>  "nofile": {</p>
-            <p>    "Name": "nofile",</p>
-            <p>    "Hard": 65536,</p>
-            <p>    "Soft": 65536</p>
-            <p>    },</p>
-            <p>  "nproc": {</p>
-            <p>    "Name": "nproc",</p>
-            <p>    "Hard": 65536,</p>
-            <p>    "Soft": 65536</p>
-            <p>  }</p>
-            <p>},....</p>
-            <p>}</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    {  "default-ulimits": {  "nofile": {    "Name": "nofile",    "Hard": 65536,    "Soft": 65536    },  "nproc": {    "Name": "nproc",    "Hard": 65536,    "Soft": 65536  }},....}
 
 ### Increase the maximum number of file descriptors
 
 SecureTransport requires more than the default number of file descriptors. Add the following line to the `/etc/sysctl.conf` (or `/etc/sysctl.d/99-sysctl.conf`) file on each Kubernetes Node:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>fs.file-max = 65536</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    fs.file-max = 65536
 
 Then run the following command to immediately apply the settings:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ sysctl -p</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ sysctl -p
 
 ### Configure larger socket buffers
 
 For Enterprise Clustering, SecureTransport Server requires larger socket buffers than the default. Add the following lines to the `/etc/sysctl.conf` (or `/etc/sysctl.d/99-sysctl.conf`) file on each Kubernetes Node:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>net.core.rmem_max=2096304</p>
-            <p>net.core.wmem_max=2096304</p>
-            <p>net.ipv4.tcp_moderate_rcvbuf=1</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    net.core.rmem_max=2096304net.core.wmem_max=2096304net.ipv4.tcp_moderate_rcvbuf=1
 
 Then run the following command to immediately apply the settings:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ sysctl -p</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ sysctl -p
 
 ### Synchronize the time
 
@@ -201,23 +108,7 @@ In a classic SecureTransport deployment, the secret file is generated during ins
 
 In order to generate a secret file, you need to use a command that is embedded in the SecureTransport Docker images.
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ mkdir /tmp/secret_folder</p>
-            <p>$ chmod 770 /tmp/secret_folder</p>
-            <p>$ touch /tmp/secret_folder/pass - Insert the database password in the file</p>
-            <p>$ docker run --rm --entrypoint '' -v /tmp/secret_folder/:/tmp/secret_folder &lt;st-image&gt; /bin/bash -c '$ST_HOME/bin/createTaehFile /tmp/secret_folder ; cp /tmp/secret_folder/taeh $ST_HOME/bin/taeh ; $ST_HOME/bin/utils/aesenc "$(&lt; /tmp/secret_folder/pass)" &gt; /tmp/secret_folder/encpass' ; rm -f /tmp/secret_folder/pass</p>
-            <p>$ ls -l /tmp/secret_folder/</p>
-            <p>total 8</p>
-            <p>-rw-r--r-- 1 1001 root   33 May 12 15:10 encpass</p>
-            <p>-rw------- 1 1001 root 1024 May 12 15:10 taeh</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ mkdir /tmp/secret_folder$ chmod 770 /tmp/secret_folder$ touch /tmp/secret_folder/pass - Insert the database password in the file$ docker run --rm --entrypoint '' -v /tmp/secret_folder/:/tmp/secret_folder <st-image> /bin/bash -c '$ST_HOME/bin/createTaehFile /tmp/secret_folder ; cp /tmp/secret_folder/taeh $ST_HOME/bin/taeh ; $ST_HOME/bin/utils/aesenc "$(< /tmp/secret_folder/pass)" > /tmp/secret_folder/encpass' ; rm -f /tmp/secret_folder/pass$ ls -l /tmp/secret_folder/total 8-rw-r--r-- 1 1001 root   33 May 12 15:10 encpass-rw------- 1 1001 root 1024 May 12 15:10 taeh
 
 This must be executed both for SecureTransport Servers and Edges using their respective images.
 
@@ -276,44 +167,11 @@ The external database configuration must be supplied to the container in a file 
 
 *Plain connection*
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>db.type= &lt; Database Type: oracle, mssql, postgresql or internaldb &gt;</p>
-            <p>db.host= &lt; The FQDN or IP address of the Database system or cluster &gt;</p>
-            <p>db.port= &lt; The number of the port used to access the server or cluster &gt;</p>
-            <p>db.user= &lt; The name of the user authorized to create the SecureTransport schema and populate it &gt;</p>
-            <p>db.password= &lt; The password for the user &gt;</p>
-            <p>db.name= &lt; Service Name (Oracle) or Database Name (MSSQL/PostgreSQL/MariaDB) &gt;</p>
-            <p>db.use.secure.connection=false &lt; Whether to use secure connection or not; the default if not specified is 'false' &gt;</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    db.type= < Database Type: oracle, mssql, postgresql or internaldb >db.host= < The FQDN or IP address of the Database system or cluster >db.port= < The number of the port used to access the server or cluster >db.user= < The name of the user authorized to create the SecureTransport schema and populate it >db.password= < The password for the user >db.name= < Service Name (Oracle) or Database Name (MSSQL/PostgreSQL/MariaDB) >db.use.secure.connection=false < Whether to use secure connection or not; the default if not specified is 'false' >
 
 *Secure connection*
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>db.type= &lt; Database Type: oracle, mssql, postgresql or internaldb &gt;</p>
-            <p>db.host= &lt; The FQDN or IP address of the Database system or cluster &gt;</p>
-            <p>db.port= &lt; The number of the port used to access the server or cluster &gt;</p>
-            <p>db.user= &lt; The name of the user authorized to create the SecureTransport schema and populate it &gt;</p>
-            <p>db.password= &lt; The password for the user &gt;</p>
-            <p>db.name= &lt; Service Name (Oracle) or Database Name (MSSQL/PostgreSQL/MariaDB) &gt;</p>
-            <p>db.use.secure.connection=true &lt; Whether to use secure connection or not; when not specified, it is 'false' by default &gt;</p>
-            <p>db.certificate.name= &lt; Server certificate DN value. If provided, the value will be matched against the certificate provided by the database server: for Oracle - DN of the certificate; for MSSQL - Server name; for MariaDB - Certificate name; Not applicable for PostgreSQL &gt;</p>
-            <p>db.certificate.filename= &lt; PEM or DER file, containing the trusted certificates needed to establish a chain of trust &gt;</p>
-            <p>db.oracle.tls.version= &lt; Specifies the TLS version used during the connection. Possible values: 1(default) and 1.2. Required only with Oracle databases. &gt;</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    db.type= < Database Type: oracle, mssql, postgresql or internaldb >db.host= < The FQDN or IP address of the Database system or cluster >db.port= < The number of the port used to access the server or cluster >db.user= < The name of the user authorized to create the SecureTransport schema and populate it >db.password= < The password for the user >db.name= < Service Name (Oracle) or Database Name (MSSQL/PostgreSQL/MariaDB) >db.use.secure.connection=true < Whether to use secure connection or not; when not specified, it is 'false' by default >db.certificate.name= < Server certificate DN value. If provided, the value will be matched against the certificate provided by the database server: for Oracle - DN of the certificate; for MSSQL - Server name; for MariaDB - Certificate name; Not applicable for PostgreSQL >db.certificate.filename= < PEM or DER file, containing the trusted certificates needed to establish a chain of trust >db.oracle.tls.version= < Specifies the TLS version used during the connection. Possible values: 1(default) and 1.2. Required only with Oracle databases. >
 
 ## Container resource configuration guidelines
 
@@ -342,26 +200,7 @@ If you have 4 CPUs, by default 8 streaming connections will be opened per protoc
 
 `STStartScriptsConfig` *example*
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p># Start scripts configuration should be specified here in the following format:</p>
-            <p># PROTOCOL_NAME]_[OPTION_NAME]=[value]</p>
-            <p># SSH_JAVA_MEM_MIN=256M</p>
-            <p># SSH_JAVA_OPTS="${SSH_JAVA_OPTS} -Dcom.sun.management.jmxremote.port=2997</p>
-            <p>-Dcom.sun.management.jmxremote.authenticate=false -</p>
-            <p>Dcom.sun.management.jmxremote.ssl=false"</p>
-            <p>TM_JAVA_MEM_MIN=512M</p>
-            <p>TM_JAVA_MEM_MAX=512M</p>
-            <p>TM_JAVA_OPTS="${TM_JAVA_OPTS} -DStreaming.numberOfConnections=10"</p>
-            <p>ADMIN_JAVA_MEM_MIN=512M</p>
-            <p>ADMIN_JAVA_MEM_MAX=512M</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    # Start scripts configuration should be specified here in the following format:# PROTOCOL_NAME]_[OPTION_NAME]=[value]# SSH_JAVA_MEM_MIN=256M# SSH_JAVA_OPTS="${SSH_JAVA_OPTS} -Dcom.sun.management.jmxremote.port=2997-Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"TM_JAVA_MEM_MIN=512MTM_JAVA_MEM_MAX=512MTM_JAVA_OPTS="${TM_JAVA_OPTS} -DStreaming.numberOfConnections=10"ADMIN_JAVA_MEM_MIN=512MADMIN_JAVA_MEM_MAX=512M
 
 <table cellpadding="0" cellspacing="0">
    <col/>
@@ -379,20 +218,7 @@ If you have 4 CPUs, by default 8 streaming connections will be opened per protoc
 
 Additionally, few more options, available in the `start_tm_console` are configurable through the `STStartScriptsConfig` file. The following sample script shows these options with example values:
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>disableHeapDumpOnOutOfMemoryError=true</p>
-            <p>generate_heap_dump=true</p>
-            <p>GC_LOGGING=true</p>
-            <p>NumberOfGCLogFiles=30</p>
-            <p>GCLogFileSize=5000K</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    disableHeapDumpOnOutOfMemoryError=truegenerate_heap_dump=trueGC_LOGGING=trueNumberOfGCLogFiles=30GCLogFileSize=5000K
 
 ## <span id="PerfTuning"></span>Performance tuning
 
@@ -421,20 +247,7 @@ The process is summarized in the following steps:
 
 Before modifying the files you must obtain them from the Docker image using the following command (applicable for SecureTransport Servers only)
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>$ mkdir /tmp/secret_folder</p>
-            <p>$ chmod 777 /tmp/secret_folder</p>
-            <p>$ docker run --rm --entrypoint '' -v /tmp/secret_folder/:/tmp/secret_folder &lt;st-server-image&gt; /bin/bash -c 'cp $ST_HOME/conf/hibernate-cache-config.xml /tmp/secret_folder ; </p>
-            <p>cp $ST_HOME/conf/scheduler.properties /tmp/secret_folder ; </p>
-            <p>cp $ST_HOME/conf/coherence-cache-config-tm.xml /tmp/secret_folder'</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    $ mkdir /tmp/secret_folder$ chmod 777 /tmp/secret_folder$ docker run --rm --entrypoint '' -v /tmp/secret_folder/:/tmp/secret_folder <st-server-image> /bin/bash -c 'cp $ST_HOME/conf/hibernate-cache-config.xml /tmp/secret_folder ; cp $ST_HOME/conf/scheduler.properties /tmp/secret_folder ; cp $ST_HOME/conf/coherence-cache-config-tm.xml /tmp/secret_folder'
 
 The `hibernate-cache-config.xml`, `scheduler.properties`, `coherence-cache-config-tm.xml` are replaced on container start overwriting the default files, if they are present in the `**ST_CONTAINER_CONFIG_PATH**` mounted secret volume.
 
@@ -444,24 +257,7 @@ The options in `database_configuration_components.xm` are supplied in key-value 
 
 `database_configuration_components.xml` *example*
 
-<table cellspacing="0">
-   <col/>
-   <tbody>
-      <tr>
-         <td>
-            <p>&lt;Components&gt;</p>
-            <p>  &lt;Component name="TransactionManager"&gt;</p>
-            <p>    &lt;Option name="hibernate.c3p0.max_size" value="32" /&gt;</p>
-            <p>    &lt;Option name="hibernate.c3p0.min_size" value="5" /&gt;</p>
-            <p>  &lt;/Component&gt;</p>
-            <p>  &lt;Component name="HTTPD"&gt;</p>
-            <p>    &lt;Option name="hibernate.show_sql" value="false" /&gt;</p>
-            <p>  &lt;/Component&gt;</p>
-            <p>&lt;/Components&gt;</p>
-         </td>
-      </tr>
-   </tbody>
-</table>
+    <Components>  <Component name="TransactionManager">    <Option name="hibernate.c3p0.max_size" value="32" />    <Option name="hibernate.c3p0.min_size" value="5" />  </Component>  <Component name="HTTPD">    <Option name="hibernate.show_sql" value="false" />  </Component></Components>
 
 Valid components are: `"Database", "Admin", "AS2", "SSHD", "FTPD", "HTTPD", "Tools", "Installer", "Pesit", "TransactionManager", "TransferLog", "ServerLog"`.
 
