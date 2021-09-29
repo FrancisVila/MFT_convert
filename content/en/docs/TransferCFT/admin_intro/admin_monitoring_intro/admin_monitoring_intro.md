@@ -2,17 +2,8 @@
     "title": "Manage monitoring",
     "linkTitle": "Manage monitoring",
     "weight": "270"
-}# <span id="top"></span>Manage monitoring
-
-
-
-This section provides information and recommendations for administrative monitoring activities in <span>Transfer CFT</span> and includes:
-
-
-
--   [Housekeeping for log files](../GUI/Conf/housekeeping_logs.htm)
-
--   [Housekeeping for the Transfer CFT catalog](housekeeping_catalog.htm)
-
--   [Housekeeping for statistical files](../CFTUTIL/Monitoring/Switching_files_manually.htm)
-
+}This section provides information and recommendations for administrative monitoring activities in Transfer CFT and includes:
+
+-   [Housekeeping for log files](../housekeeping_logs)
+-   [Housekeeping for the Transfer CFT catalog](../housekeeping_catalog)
+-   [Housekeeping for statistical files](../../admin_commands_intro/switching_files_manually)
