@@ -82,4 +82,4 @@ The ‘&’ character here replaces the char\_symb character specific
 to each operating system (refer to the Transfer CFT *Operations Guide*
 corresponding to your OS).
 
-[Return to Command index](../../)
+[Return to Command index](../)

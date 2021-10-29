@@ -1,15 +1,13 @@
 {
-    "title": "Switching procedure",
+    "title": "Switching  procedure",
     "linkTitle": "Switching procedure",
     "weight": "260"
-}# <span id="Switching_procedures"></span>Switching procedure
-
--   [About
-    the switching procedure](#about_the_switching_procedure)
+}-   [About
+    the switching procedure](#About_the_switching_procedure)
 -   [Switching
-    log files](#switching_log_procedure)
+    log files](#Switching_log_procedure)
 -   [Switching
-    accounting files](#switching_accounting_files)
+    accounting files](#Switching_accounting_files)
 
 ## <span id="About_the_switching_procedure"></span>About the switching procedure
 
@@ -22,7 +20,7 @@ Transfer CFT maintains activity traces in primary and alternate files:
     concerning successful transfers is stored in two accounting files, to
     which the CFTACNT and CFTACNTA environment variables point respectively
 
-The switching principle is described in [Housekeeping for logs](../../../../../admin_intro/admin_monitoring_intro/housekeeping_logs).
+The switching principle is described in [Housekeeping for logs](../../../GUI/Conf/housekeeping_logs.htm).
 
 Switching between the primary and alternate files is configured by the
 operator when Transfer CFT is configured. It requires the following definitions:
@@ -40,25 +38,25 @@ The SWITCH and EXEC commands must be added as follows:
     the following declaration is used in the CFTLOG section:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTLOG
+   <tbody>
+      <tr class="odd">
+         <td>CFTLOG
 ID = log0,<br />
 FNAME = '_CFTLOG', /* Log file      */<br />
 AFNAME = '_CFTLOGA', /* Alternate log file      */<br />
 SWITCH = 2359, /* Switching time      */<br />
-EXEC = 'switch.cmd' /* Switching procedure      */</td>
-</tr>
-</tbody>
+EXEC = 'switch.cmd' /* Switching procedure      */         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   To switch accounting
     files, the following declaration is used in the CFTACNT section:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTACCNT
+   <tbody>
+      <tr class="odd">
+         <td>CFTACCNT
 ID = acct0,<br />
 FNAME = '_CFTACNT',
 /* Accounting file      */<br />
@@ -67,20 +65,20 @@ AFNAME = '_CFTACNTA',
 SWITCH = 2359,
 /* Switching time      */<br />
 Exec = 'switch.cmd',/*
-Switching procedure     */</td>
-</tr>
-</tbody>
+Switching procedure     */         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After the switching procedure has completed, the old files used must
-be purged so that they can be reused by Transfer CFT for the next switch.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After the switching procedure has completed, the old files used must
+be purged so that they can be reused by Transfer CFT for the next switch.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **If this is not done, Transfer CFT will
@@ -111,18 +109,18 @@ This procedure is an example. It does not, for example, take into account
 the various error conditions. Its contents are as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>#!/bin/sh<br />
+   <tbody>
+      <tr class="odd">
+         <td>#!/bin/sh<br />
 #<br />
 # Sample LOG file switching procedure<br />
 #<br />
 filename=`cft2unix &amp;flog`<br />
 mv ${filename} ${filename}_sav<br />
 CFTUTIL CFTFILE type=log,fname=$filename<br />
-rm $0</td>
-</tr>
-</tbody>
+rm $0         </td>
+      </tr>
+   </tbody>
 </table>
 
 The effects of each line in the procedure are as follows:
@@ -186,9 +184,9 @@ configuration provided.
 #### Example: switching accounting files
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>#!/bin/sh<br />
+   <tbody>
+      <tr class="odd">
+         <td><span>#!/bin/sh<br />
 #<br />
 # Sample accounting file switching procedure<br />
 #<br />
@@ -196,9 +194,9 @@ filename=`cft2unix &amp;FACCNT`<br />
 mv ${filename} ${filename}_sav<br />
 CFTUTIL CFTFILE TYPE=ACCNT, FNAME=$filename<br />
 rm $0<br />
- </span></td>
-</tr>
-</tbody>
+ </span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This procedure is an example intended to illustrate the concept. It

@@ -1,5 +1,5 @@
 {
-    "title": "Reference: access management mapping",
+    "title": "Access management  reference information ",
     "linkTitle": "Reference: access management mapping",
     "weight": "220"
 }This section describes how to configure access management when not using Central Governance.
@@ -12,74 +12,74 @@ CFT used the following Access Management setup. This information is provided as 
 ### Access Management without PassPort AM
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>        Appl
+   <tbody>
+      <tr class="odd">
+         <td>            <p>        Appl
 (ID)</p>
-<p>            (control:
+            <p>            (control:
 end,halt,keep,start,submit)</p>
-<p>            (create:
+            <p>            (create:
 send,recv)</p>
-<p>            (delete:
+            <p>            (delete:
 delete_catalog)</p>
-<p>            (read:
+            <p>            (read:
 view_catalog)</p>
-<p>            (modify:
+            <p>            (modify:
 resume)</p>
-<p>    Command:</p>
-<p>          Shut</p>
-<p>             create</p>
-<p>          Switch_log,</p>
-<p>             create</p>
-<p>          Switch_accnt,</p>
-<p>             create</p>
-<p>          Act,</p>
-<p>             create</p>
-<p>          Inact,</p>
-<p>              create</p>
-<p>          Mquery,</p>
-<p>              create</p>
-<p>          Turn,</p>
-<p>              create</p>
-<p>    File</p>
-<p>          File
+            <p>    Command:</p>
+            <p>          Shut</p>
+            <p>             create</p>
+            <p>          Switch_log,</p>
+            <p>             create</p>
+            <p>          Switch_accnt,</p>
+            <p>             create</p>
+            <p>          Act,</p>
+            <p>             create</p>
+            <p>          Inact,</p>
+            <p>              create</p>
+            <p>          Mquery,</p>
+            <p>              create</p>
+            <p>          Turn,</p>
+            <p>              create</p>
+            <p>    File</p>
+            <p>          File
 (FNAME)</p>
-<p>               (read)</p>
-<p>               (delete)</p>
-<p>    Message:</p>
-<p>           Message
+            <p>               (read)</p>
+            <p>               (delete)</p>
+            <p>    Message:</p>
+            <p>           Message
 (IDM,PART,SPART,RPART,MODE)</p>
-<p>                create</p>
-<p>    Operator:</p>
-<p>            ALL_PART
+            <p>                create</p>
+            <p>    Operator:</p>
+            <p>            ALL_PART
 (fname)</p>
-<p>                    create,delete,read,modify</p>
-<p>            ALL_CAT
+            <p>                    create,delete,read,modify</p>
+            <p>            ALL_CAT
 (fname)</p>
-<p>                    control(see
+            <p>                    control(see
 appl), delete, read, modify (resume)</p>
-<p>            ALL_COM
+            <p>            ALL_COM
 (fname)</p>
-<p>                    create,
+            <p>                    create,
 read, delete</p>
-<p>    Parameter:</p>
-<p>             CFT
+            <p>    Parameter:</p>
+            <p>             CFT
 obj (ID)</p>
-<p>                    create,delete,read,modify</p>
-<p>    Partner:</p>
-<p>             CFT
+            <p>                    create,delete,read,modify</p>
+            <p>    Partner:</p>
+            <p>             CFT
 obj (ID)</p>
-<p>                    create,delete,read,modify
+            <p>                    create,delete,read,modify
      </p>
-<p>    Transfer:</p>
-<p>             Transfer
+            <p>    Transfer:</p>
+            <p>             Transfer
 (IDF,PART,SPART,RPART,IPART,MODE,FNAME)</p>
-<p>                    create</p>
-<p>             Commut
+            <p>                    create</p>
+            <p>             Commut
 (PART,IPART)</p>
-<p>                    create</p></td>
-</tr>
-</tbody>
+            <p>                    create</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## About resources and actions

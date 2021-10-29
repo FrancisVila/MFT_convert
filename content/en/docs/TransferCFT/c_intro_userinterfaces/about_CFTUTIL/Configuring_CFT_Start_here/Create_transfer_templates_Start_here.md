@@ -1,10 +1,8 @@
 {
-    "title": "Ongoing CFTRECV",
+    "title": "Creating  transfer templates",
     "linkTitle": "Ongoing CFTRECV",
     "weight": "450"
-}# <span id="Creating_transfer_templates__Start_here"></span>Creating transfer templates
-
-## <span id="About_the_Ongoing_CFTRECV_object"></span>About the ongoing CFTRECV object
+}## <span id="About_the_Ongoing_CFTRECV_object"></span>About the ongoing CFTRECV object
 
 Use the CFTRECV object to:
 
@@ -22,7 +20,7 @@ Related
 topics
 
 -   Command syntax
-    [CFTRECV](../../../command_summary)
+    [CFTRECV](../../command_summary)
 -   Object concepts
     Default receive templates
 

@@ -1,19 +1,17 @@
 {
-    "title": "File management functions",
+    "title": "File  management functions",
     "linkTitle": "File management functions",
     "weight": "290"
-}# <span id="File_management_functions"></span>File management functions
-
+}-   [Managing
+    file flushes](#Managing_file_flushes)
 -   [Managing
-    file flushes](#managing_file_flushes)
--   [Managing
-    access conflicts to CFT working files](#managing_access_conflicts_to_cft_working_files)
+    access conflicts to CFT working files](#Managing_access_conflicts_to_CFT_working_files)
 -   [Recognizing
-    file types](#recognizing_file_types)
+    file types](#Recognizing_file_types)
 -   [Sending
-    a group of files](#sending_a_group_of_files)
+    a group of files](#Sending_a_group_of_files)
 -   [Disabling
-    the homogeneous mode](#disabling_the_homogeneous_mode)
+    the homogeneous mode](#Disabling_the_homogeneous_mode)
 
 ## <span id="About_file_management_functions"></span>About file management functions
 
@@ -29,7 +27,7 @@ During the transfer, Transfer CFT implements two types of flushes:
     points are received.
 -   Flushes
     on the Transfer CFT catalog when synchronization points are received.
-    See also the CFTCAT [UPDAT](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/updat) parameter.
+    See also the CFTCAT [UPDAT](../../CFTUTIL/Parameter_index/updat.htm) parameter.
      
 
 These flush operations tend to secure transfers against risks
@@ -201,36 +199,36 @@ the CFTSUFX file.
 Letters defining a file type
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Letter </p></th>
-<th><p>Type of file </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="11%"><p>B </p></td>
-<td data-valign="top" width="89%"><p>Binary file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="11%"><p>O </p></td>
-<td data-valign="top" width="89%"><p>Text file     (Windows text
-files) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="11%"><p>V </p></td>
-<td data-valign="top" width="89%"><p>Variable file     (in the Transfer
-CFT sense) </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="11%"><p>T </p></td>
-<td data-valign="top" width="89%"><p>Text file     (native) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="11%"><p>X </p></td>
-<td data-valign="top" width="89%"><p>Text file     (UNIX) </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Letter </p></th>
+         <th>            <p>Type of file </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="11%">            <p>B </p>         </td>
+         <td data-valign="top" width="89%">            <p>Binary file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="11%">            <p>O </p>         </td>
+         <td data-valign="top" width="89%">            <p>Text file     (Windows text
+files) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="11%">            <p>V </p>         </td>
+         <td data-valign="top" width="89%">            <p>Variable file     (in the Transfer
+CFT sense) </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="11%">            <p>T </p>         </td>
+         <td data-valign="top" width="89%">            <p>Text file     (native) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="11%">            <p>X </p>         </td>
+         <td data-valign="top" width="89%">            <p>Text file     (UNIX) </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example of the content of the CFTSUFX file:
@@ -263,9 +261,9 @@ This section describes how to create a command to send a group
 of files. To better understand this section, refer to the following general group file information:
 
 -   [Sending
-    a group of files](../../../../../concepts/using_the_send_command/send_group_of_files_cl)
--   The [FNAME](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
-    and [WFNAME](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname) parameters
+    a group of files](../../Transfers/Subm_transfers/Send_group_of_files_CL.htm)
+-   The [FNAME](../../CFTUTIL/Parameter_index/fname.htm)
+    and [WFNAME](../../CFTUTIL/Parameter_index/wfname.htm) parameters
     in the CFTSEND and CFTRECV commands
 
 A group file send request takes place implicitly when the value of the FNAME parameter
@@ -403,13 +401,13 @@ WFNAME = &idtu.rcv,
 .
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">WFNAME must contain an extension (&amp; idtu.rcv in this example) otherwise the ZIP or UNZIP utilities add .zip to the file name. Certain operations in CFTSVG01.bat CFTRST01.BAT cannot be performed then, and return the message "unknown or empty file".</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">WFNAME must contain an extension (&amp; idtu.rcv in this example) otherwise the ZIP or UNZIP utilities add .zip to the file name. Certain operations in CFTSVG01.bat CFTRST01.BAT cannot be performed then, and return the message "unknown or empty file".         </td>
+      </tr>
+   </tbody>
 </table>
 
 To use the above function between two different but standardized
@@ -423,4 +421,4 @@ transferring groups of files in mixed mode.
 
 ## <span id="Disabling_the_homogeneous_mode"></span>Disabling the homogeneous mode
 
-Use the unified configuration parameter [uconf:cft.server.force\_heterogeneous\_mode](../../../../../admin_intro/uconf/uconf_heterogeneous_mode) to enable forced heterogeneous mode exchanges, and disable homogeneous mode.
+Use the unified configuration parameter [uconf:cft.server.force\_heterogeneous\_mode](../../uconf/uconf_heterogeneous_mode.htm) to enable forced heterogeneous mode exchanges, and disable homogeneous mode.

@@ -1,10 +1,8 @@
 {
-    "title": "Build APIs and exits",
+    "title": "About  APIs and exits - IBM i",
     "linkTitle": "Build APIs and exits",
     "weight": "260"
-}# <span id="Building_CFT_API_applications"></span>About APIs and exits - IBM i
-
-This section introduces the two application families that can be developed using
+}This section introduces the two application families that can be developed using
 two interfaces and the development kit contents for building APIs.
 
 -   Applications communicating
@@ -31,30 +29,30 @@ The development kit used to integrate the Transfer CFT APIs is divided
 into several directories that include the CFTPGM library, which contains all library modules necessary for APIs and exits. These library modules are required to use the corresponding function:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Module (in C language)</th>
-<th>Required to use Transfer CFT...</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>libapisrv1.srvpgm and librdrovrf.srvpgm</td>
-<td>APIs</td>
-</tr>
-<tr class="even">
-<td>libcftexa.srvpgm</td>
-<td>Directory EXITs</td>
-</tr>
-<tr class="odd">
-<td>libcftexf.srvpgm</td>
-<td>File EXITs</td>
-</tr>
-<tr class="even">
-<td>libcftexe.srvpgm</td>
-<td>End-of-transfer EXITs</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Module (in C language)</th>
+         <th>Required to use Transfer CFT...</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>libapisrv1.srvpgm and librdrovrf.srvpgm         </td>
+         <td>APIs         </td>
+      </tr>
+      <tr class="even">
+         <td>libcftexa.srvpgm         </td>
+         <td>Directory EXITs         </td>
+      </tr>
+      <tr class="odd">
+         <td>libcftexf.srvpgm         </td>
+         <td>File EXITs         </td>
+      </tr>
+      <tr class="even">
+         <td>libcftexe.srvpgm         </td>
+         <td>End-of-transfer EXITs         </td>
+      </tr>
+   </tbody>
 </table>
 
 To generate a user application based on the Transfer CFT APIs and use

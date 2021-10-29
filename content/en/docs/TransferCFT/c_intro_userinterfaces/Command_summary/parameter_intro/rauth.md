@@ -18,4 +18,4 @@ this ID is not authorized for that partner.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -13,12 +13,12 @@ By default there is an code that displays when you use the EXIT command to quit
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt;CFTUTIL EXIT EXITCODE=3</p>
-<p> </p>
-<p>EXIT EXITCODE=3</p>
-<p>CFTU00I EXIT _ Correct (EXITCODE=3)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt;CFTUTIL EXIT EXITCODE=3</p>
+            <p> </p>
+            <p>EXIT EXITCODE=3</p>
+            <p>CFTU00I EXIT _ Correct (EXITCODE=3)</p>         </td>
+      </tr>
+   </tbody>
 </table>

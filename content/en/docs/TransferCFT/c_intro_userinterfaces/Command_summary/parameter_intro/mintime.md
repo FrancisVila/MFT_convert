@@ -34,4 +34,4 @@ must be less than 23 h 30.
 MINTIME must not be equal to MAXTIME unless MAXDATE is defined and is
 not the current date.
 
-[Return to Command index](../../)
+[Return to Command index](../)

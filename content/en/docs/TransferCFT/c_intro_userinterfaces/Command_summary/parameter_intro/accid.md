@@ -21,4 +21,4 @@ Accounting system file identifier records.
 The default value is 128. The data is
 written in SMF. The Transfer CFT program must have write access.
 
-[Return to Command index](../../)
+[Return to Command index](../)

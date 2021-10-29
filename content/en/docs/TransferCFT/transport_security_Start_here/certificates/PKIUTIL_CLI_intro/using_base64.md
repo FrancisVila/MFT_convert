@@ -1,5 +1,5 @@
 {
-    "title": "Using base64",
+    "title": "Using Base64 or PEM data ",
     "linkTitle": "Using base64",
     "weight": "320"
 }The Transfer CFT PKICER command can use Base64 or PEM data instead of a file in order to, for example, send a certificate and key by REST API.
@@ -15,30 +15,30 @@ When exporting data from the PKI database, you can extract the data in Base64 in
 For instance, with the following base:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Certificates:</p>
-<p>Id.   Root  iNum  T S C K E          Exp.Date   Delivered to    Delivered by</p>
-<p>------------ ------------ ---- - - - - - ---------- ------------- ------------</p>
-<p>INTER  ROOT        I A x                                22/07/2029   2k_l1_ca       2k_root</p>
-<p>ROOT    ROOT      R A x                  22/07/2029   2k_root        2k_root</p>
-<p>USER   ROOT        U A x x                             22/07/2029   2k_l1_user1    2k_root</p>
-<p>Keys:</p>
-<p>Id.                             S K Bits</p>
-<p>-------------------------------- - - ----</p>
-<p>PRIV                            A x 2048</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Certificates:</p>
+            <p>Id.   Root  iNum  T S C K E          Exp.Date   Delivered to    Delivered by</p>
+            <p>------------ ------------ ---- - - - - - ---------- ------------- ------------</p>
+            <p>INTER  ROOT        I A x                                22/07/2029   2k_l1_ca       2k_root</p>
+            <p>ROOT    ROOT      R A x                  22/07/2029   2k_root        2k_root</p>
+            <p>USER   ROOT        U A x x                             22/07/2029   2k_l1_user1    2k_root</p>
+            <p>Keys:</p>
+            <p>Id.                             S K Bits</p>
+            <p>-------------------------------- - - ----</p>
+            <p>PRIV                            A x 2048</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 By default, PKIEXT uses INAME/IKNAME to create the PKICER/PKIKEY objects:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>PKIUTIL PKIEXT FOUT=FOO.cmd</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>PKIUTIL PKIEXT FOUT=FOO.cmd</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This exports a `FOO.cmd` file, where additional files are created containing the following data:
@@ -53,9 +53,9 @@ This exports a `FOO.cmd` file, where additional files are created containing the
 By contrast, the Base64 option uses the IDATA/IKDATA parameters to extract a single `BAR.cmd` file instead of files.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>PKIUTIL PKIEXT FOUT=BAR.cmd, BASE64=YES</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>PKIUTIL PKIEXT FOUT=BAR.cmd, BASE64=YES</p>         </td>
+      </tr>
+   </tbody>
 </table>

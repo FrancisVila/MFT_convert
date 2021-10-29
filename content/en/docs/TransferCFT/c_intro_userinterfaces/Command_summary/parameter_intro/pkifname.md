@@ -5,13 +5,13 @@
 }### <span id="pkifname"></span>pkifname
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span> 3.5, deprecated the use of referencing a certificate using the format (PKIFNAME=TXT://certificate).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span> 3.5, deprecated the use of referencing a certificate using the format (PKIFNAME=TXT://certificate).         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### CFTPARM
@@ -38,4 +38,4 @@ can be used.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

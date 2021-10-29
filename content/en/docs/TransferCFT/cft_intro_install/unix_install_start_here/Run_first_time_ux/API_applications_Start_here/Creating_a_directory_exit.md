@@ -1,12 +1,10 @@
 {
-    "title": "Creating a directory exit",
+    "title": "Creating  a directory exit",
     "linkTitle": "Creating a directory exit",
     "weight": "250"
-}# <span id="Creating_a_directory_exit"></span>Creating a directory exit
-
-The following example was designed from a modified version of the cft-tcp.conf configuration example, located in &lt;installdir>/runtime/conf. For this example, you should have customized
-at least one of these files, using the instructions in [Running Transfer
-CFT for the first time.](running_cft_for_the_first_time_unix.htm)
+}The following example was designed from a modified version of the cft-tcp.conf configuration example, located in &lt;installdir>/runtime/conf. For this example, you should have customized
+at least one of these files, using the instructions in Running Transfer
+CFT for the first time.
 
 ## Prerequisites
 
@@ -20,18 +18,18 @@ type of network used.
     the *cftprot* command. The following lines are displayed:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftprot
+   <tbody>
+      <tr class="odd">
+         <td>cftprot
 id      = PeSITCFT,<br />
 type      = PESIT,<br />
 prof      = CFT,<br />
 ...<br />
 /*** exita      = EXIT_A, ** See Operations Guide **/<br />
 <br />
-mode      = replace</td>
-</tr>
-</tbody>
+mode      = replace         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Delete the comments (delimited
@@ -41,51 +39,51 @@ When the operation is complete, you should obtain
 the following *cftprot* command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftprot id      = PeSITCFT,<br />
+   <tbody>
+      <tr class="odd">
+         <td>cftprot id      = PeSITCFT,<br />
 type<span>      = PESIT,</span><br />
 <span>prof</span>      = CFT,<br />
 ...<br />
 exita= EXIT_A,<br />
-mode      = replace</td>
-</tr>
-</tbody>
+mode      = replace         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Locate the *cftexit* command,
     commented as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXIT ID      = EXIT_A,<br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXIT ID      = EXIT_A,<br />
 <br />
 PARM = EXAPARM1,<br />
 LANGUAGE = C,<br />
 PROG = 'CFTEXITA',<br />
 TYPE = ACCESS,<br />
 <br />
-MODE = REPLACE ***/</td>
-</tr>
-</tbody>
+MODE = REPLACE ***/         </td>
+      </tr>
+   </tbody>
 </table>
 
 You must remove the comments to obtain the following
 command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXIT ID     
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXIT ID     
 = EXIT_A,<br />
 PARM      = EXAPARM1,<br />
 LANGUAGE      = C,<br />
 PROG      = 'CFTEXITA',<br />
 TYPE      = ACCESS,<br />
-MODE      = REPLACE</td>
-</tr>
-</tbody>
+MODE      = REPLACE         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Locate the communication properties

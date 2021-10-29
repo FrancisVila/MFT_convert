@@ -27,6 +27,6 @@ IMINTIME = IMAXTIME should be specified.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

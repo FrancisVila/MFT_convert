@@ -20,4 +20,4 @@ Optional parameter. Indicates the format for the communication area.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

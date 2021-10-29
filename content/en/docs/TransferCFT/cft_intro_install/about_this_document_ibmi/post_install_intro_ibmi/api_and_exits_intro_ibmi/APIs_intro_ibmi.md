@@ -1,18 +1,18 @@
 {
-    "title": "Using APIs",
+    "title": "Using Application programming interfaces (API)",
     "linkTitle": "Using APIs",
     "weight": "280"
 }<table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Only ILE (Integrated Language Environment) is supported.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Only ILE (Integrated Language Environment) is supported.         </td>
+      </tr>
+   </tbody>
 </table>
 
-You perform Transfer CFT service calls differently depending on the programming language that you use (C, COBOL, or RPG). For more information, refer to the programming topics in [About APIs](../../../../about_this_document_zos/using_apis)
+You perform Transfer CFT service calls differently depending on the programming language that you use (C, COBOL, or RPG). For more information, refer to the programming topics in [About APIs](../../../../app_integration_intro/using_apis)
 
 The Transfer CFT service called (CFTI, CFTU or CFTC) executes the request, either with or without analyzing command syntax, and then initializes the response zone.
 
@@ -46,13 +46,13 @@ COBOL/ILE Programming samples
 All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not directly modify them as this library is proprietary to Axway, and updating the product may modify these samples. Therefore, we recommend that you copy the samples you need into CFTPROD/UTIN and configure them according to your production requirements.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The product installation copies and configures some samples.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The product installation copies and configures some samples.         </td>
+      </tr>
+   </tbody>
 </table>
 
 RPG/ILE programming examples

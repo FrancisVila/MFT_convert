@@ -10,4 +10,4 @@
 
 Name of the input file to be copied.
 
-[Return to Command index](../../)
+[Return to Command index](../)

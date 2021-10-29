@@ -17,4 +17,4 @@ data, either:
 -   C:
     If necessary, the data fields are padded with binary zeros
 
-[Return to Command index](../../)
+[Return to Command index](../)

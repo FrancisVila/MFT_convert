@@ -38,15 +38,15 @@ If it is a local user (a user that was created on the local machine) then the &l
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Local user: user1</p>
-<p>.\user1</p>
-<p>&lt;hostname&gt;\user1</p>
-<p>Network user: user2</p>
-<p>&lt;domain_name&gt;\user2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Local user: user1</p>
+            <p>.\user1</p>
+            <p>&lt;hostname&gt;\user1</p>
+            <p>Network user: user2</p>
+            <p>&lt;domain_name&gt;\user2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Install a standard update
@@ -58,11 +58,11 @@ Stop Transfer CFT prior to installing a service pack or patch.
 Use the following command to update Transfer CFT in silent mode:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>C:\axway\Transfer_CFT_<span>3.9</span>_&lt;Install\SP\Patch&gt;_&lt;OS&gt;_&lt;BN&gt;.exe --mode unattended --installdir &lt;installation_directory&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>C:\axway\Transfer_CFT_<span>3.9</span>_&lt;Install\SP\Patch&gt;_&lt;OS&gt;_&lt;BN&gt;.exe --mode unattended --installdir &lt;installation_directory&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Uninstall an update
@@ -74,11 +74,11 @@ To uninstall install the previous patch or service pack. For example, to remove 
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>C:\axway\Transfer_CFT_<span>3.9</span>_SP1_&lt;OS&gt;_&lt;BN&gt;.exe --mode unattended</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>C:\axway\Transfer_CFT_<span>3.9</span>_SP1_&lt;OS&gt;_&lt;BN&gt;.exe --mode unattended</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To verify, from the Transfer CFT &lt;runtime\_dir> run the about command.
@@ -88,19 +88,19 @@ To verify, from the Transfer CFT &lt;runtime\_dir> run the about command.
 This section describes the procedure to apply a patch or service pack on a multi-node architecture based on *N* hosts. You update a Transfer CFT multi-node architecture with multi-hosts using the same procedure as for a patch or service pack, one host at a time.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> clusters can still run while performing an update.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> clusters can still run while performing an update.         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Connect to the first host.
 2.  Stop all nodes running on this host by running the command: copstop  
     Copilot services are stopped, and local nodes are automatically re-started on the other hosts.
 3.  Check that the nodes are re-started by using the command: CFTUTIL listnode
-4.  Install the patch or the service pack as usual using Transfer CFT installer as described in [Install a standard update](#install).
+4.  Install the patch or the service pack as usual using Transfer CFT installer as described in [Install a standard update](#Install).
 5.  Start Copilot services.
 6.  Connect to the next host and repeat the procedure starting as of Step 2 (above).

@@ -1,7 +1,7 @@
 {
-    "title": "Access Management exit",
-    "linkTitle": "Access Management exit",
-    "weight": "350"
+    "title": "About access management exits",
+    "linkTitle": "About Access Management exits",
+    "weight": "370"
 }This section describes how to configure access management when not using Central Governance.
 
 Transfer CFT offers an access management exit in the form of a dynamic library. This library implements a set of mandatory functions described in the $CFTINSTALLDIR/inc/exam.h file.
@@ -17,8 +17,8 @@ Functions include:
 
 To help you get started, an Access Management exit sample is delivered in: $CFTDIRRUNTIME/src/exit/cftexamsmp1.c
 
-For more information, see [Delivered Access Management exit samples](../../../internal_a_m_start_here/am_exits/am_samples).
+For more information, see [Delivered Access Management exit samples](am_samples).
 
 Related topics
 
-[UCONf parameters](../../../admin_intro/uconf/uconf_parameters)
+[UCONf parameters](../../admin_intro/uconf/uconf_parameters)

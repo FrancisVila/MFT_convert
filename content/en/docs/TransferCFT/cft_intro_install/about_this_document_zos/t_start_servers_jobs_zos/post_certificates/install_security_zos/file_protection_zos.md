@@ -2,7 +2,7 @@
     "title": "File protection",
     "linkTitle": "File protection",
     "weight": "340"
-}The section [Transfer CFT z/OS files](../file_lists_zos) provides a list of files used by Transfer CFT and, depending on the user group, indicates access rights. The default file access rights must be UACC(NONE). Privileges, which are based on user type, are detailed in the following sections:
+}The section [Transfer CFT z/OS files](file_lists_zos) provides a list of files used by Transfer CFT and, depending on the user group, indicates access rights. The default file access rights must be UACC(NONE). Privileges, which are based on user type, are detailed in the following sections:
 
 -   Program libraries
 -   Security files

@@ -1,5 +1,5 @@
 {
-    "title": "Java  ",
+    "title": "Java",
     "linkTitle": "Java  ",
     "weight": "170"
 }## Secure Relay prerequisites
@@ -19,19 +19,19 @@ To identify if your current system has JZOS available:
 
 1.  Check the system dataset "SYS1.SIEALNKE" for a member JVMLDMxx where xx is the version and release of the Java you are using, for example:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>JVMLDM80 for V8.0.6.10 31-bit SDK</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>JVMLDM80 for V8.0.6.10 31-bit SDK</p>         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Check in the system PROCLIBs for a member JVMPRCxx where xx is the version and release of the Java you are using, for example:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>JVMPRC80 for V8.0.6.10 31-bit SDK</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>JVMPRC80 for V8.0.6.10 31-bit SDK</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 If these modules are present, then JZOS is available. If it is not available:
@@ -40,13 +40,13 @@ If these modules are present, then JZOS is available. If it is not available:
 2.  Choose, download, and install the appropriate JZOS Batch Launcher and Toolkit Installation (we use the JZOS Batch Launcher and Toolkit function for 31-bit Java 8.0.6.10 SDK in our examples).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">IBM introduced a specialty processor for running Java applications called the zSeries Application Assist Processor, also known as zAAP. This type of processor is an optional feature in the System z9 hardware.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">IBM introduced a specialty processor for running Java applications called the zSeries Application Assist Processor, also known as zAAP. This type of processor is an optional feature in the System z9 hardware.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Once installed and enabled, zAPP allows the customer to benefit from an expansion of the system’s CPU capacity at a relatively low cost, if the workload that is run is based on Java.

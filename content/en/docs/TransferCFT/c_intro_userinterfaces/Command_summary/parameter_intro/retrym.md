@@ -25,17 +25,17 @@ When specifying multiple hosts in CFTTCP and PROTs/SAPs in CFTPART, Transfer CFT
 For example, if RETRYN is set to 1 and there are two defined hosts and two PROTs/SAPs as shown here:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTTCP ...
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTTCP ...
 HOST = ( 'IP1',
 'IP2'),</p>
-<p>CFTPART ... PROT = ( 'PROT1',
+            <p>CFTPART ... PROT = ( 'PROT1',
 'PROT2),</p>
-<p>           SAP = ( 'SAP1',
-'SAP2'),</p></td>
-</tr>
-</tbody>
+            <p>           SAP = ( 'SAP1',
+'SAP2'),</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The retry order is as follows:
@@ -51,6 +51,6 @@ The retry order is as follows:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

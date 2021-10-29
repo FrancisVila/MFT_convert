@@ -1,5 +1,5 @@
 {
-    "title": "Manually enable Central Governance",
+    "title": "Manually enable Central Governance ",
     "linkTitle": "Manually enable Central Governance",
     "weight": "230"
 }This section describes how to manually modify the Transfer CFT configuration to enable Central Governance connectivity in command line.
@@ -15,11 +15,11 @@
       
     Use the format:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTUTIL uconfset id=cft.instance_id, value=&lt;cft_id&gt;</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTUTIL uconfset id=cft.instance_id, value=&lt;cft_id&gt;</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ## Procedure
@@ -42,21 +42,21 @@ Use the Central Governance installation values for the following UCONF settings.
 Use the format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL uconfset id=cg.host, value=&lt;host_value&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL uconfset id=cg.host, value=&lt;host_value&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Enable Central Governance
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL uconfset id=cg.enable, value=yes</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL uconfset id=cg.enable, value=yes</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Register

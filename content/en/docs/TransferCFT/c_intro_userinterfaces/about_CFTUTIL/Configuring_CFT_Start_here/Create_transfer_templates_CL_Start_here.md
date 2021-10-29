@@ -1,10 +1,8 @@
 {
-    "title": "Ongoing CFTSEND",
+    "title": "Ongoing  CFTSEND",
     "linkTitle": "Ongoing CFTSEND",
     "weight": "470"
-}# <span id="Transfer_templates_command_line"></span>Ongoing CFTSEND
-
-## <span id="About_the_ongoing_CFTSEND_object"></span>About the ongoing CFTSEND object
+}## <span id="About_the_ongoing_CFTSEND_object"></span>About the ongoing CFTSEND object
 
 Use the CFTSEND object to specify:
 
@@ -32,4 +30,4 @@ Related
 topics
 
 -   Command syntax
-    [CFTSEND](../../../command_summary)
+    [CFTSEND](../../command_summary)

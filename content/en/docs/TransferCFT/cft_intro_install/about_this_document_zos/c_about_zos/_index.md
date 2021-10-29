@@ -1,5 +1,5 @@
 {
-    "title": "Prerequisites",
+    "title": "z/OS: Installation and Operation",
     "linkTitle": "Prerequisites",
     "weight": "130"
 }## Preface
@@ -30,32 +30,32 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 -   \\adrdssu 
 -   \\xmit
 
-**<span id="kanchor15"></span>Installation directory contents**
+**<span id="kanchor14"></span>Installation directory contents**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin</p></td>
-<td><p>Product</p></td>
-</tr>
-<tr class="even">
-<td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt</p></td>
-<td><p>JCL that creates the distribution environment</p></td>
-</tr>
-<tr class="odd">
-<td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt</p></td>
-<td><p>JCL that creates the instance environment</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>File</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin</p>         </td>
+         <td>            <p>Product</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt</p>         </td>
+         <td>            <p>JCL that creates the distribution environment</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt</p>         </td>
+         <td>            <p>JCL that creates the instance environment</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-## <span id="kanchor16"></span>Transfer CFT z/OS components
+## <span id="kanchor15"></span>Transfer CFT z/OS components
 
 The Transfer CFT z/OS components include:
 
@@ -82,61 +82,61 @@ The Transfer CFT z/OS components include:
 ## <span id="Special"></span>Special characters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th> </th>
-<th>Description</th>
-<th>Windows</th>
-<th>Unix</th>
-<th>z/OS</th>
-<th>IBM i</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>char_file</td>
-<td><p>Logical name prefix</p></td>
-<td>$</td>
-<td>_</td>
-<td>$</td>
-<td>+</td>
-</tr>
-<tr class="even">
-<td>char_mask</td>
-<td>Wildcard character</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
-</tr>
-<tr class="odd">
-<td>char_unit</td>
-<td>Separator character (volume)</td>
-<td>%</td>
-<td>\01</td>
-<td>%</td>
-<td>;</td>
-</tr>
-<tr class="even">
-<td>char_symb</td>
-<td>Symbolic variable prefix</td>
-<td>&amp;</td>
-<td>&amp;</td>
-<td>&amp;</td>
-<td>?</td>
-</tr>
-<tr class="odd">
-<td>file_symb</td>
-<td>Character introducing a file name passed to CFTUTIL as a parameter</td>
-<td>#</td>
-<td>@</td>
-<td>#</td>
-<td>#</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th> </th>
+         <th>Description</th>
+         <th>Windows</th>
+         <th>Unix</th>
+         <th>z/OS</th>
+         <th>IBM i</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>char_file         </td>
+         <td>            <p>Logical name prefix</p>         </td>
+         <td>$         </td>
+         <td>_         </td>
+         <td>$         </td>
+         <td>+         </td>
+      </tr>
+      <tr class="even">
+         <td>char_mask         </td>
+         <td>Wildcard character         </td>
+         <td>?         </td>
+         <td>?         </td>
+         <td>?         </td>
+         <td>?         </td>
+      </tr>
+      <tr class="odd">
+         <td>char_unit         </td>
+         <td>Separator character (volume)         </td>
+         <td>%         </td>
+         <td>\01         </td>
+         <td>%         </td>
+         <td>;         </td>
+      </tr>
+      <tr class="even">
+         <td>char_symb         </td>
+         <td>Symbolic variable prefix         </td>
+         <td>&amp;         </td>
+         <td>&amp;         </td>
+         <td>&amp;         </td>
+         <td>?         </td>
+      </tr>
+      <tr class="odd">
+         <td>file_symb         </td>
+         <td>Character introducing a file name passed to CFTUTIL as a parameter         </td>
+         <td>#         </td>
+         <td>@         </td>
+         <td>#         </td>
+         <td>#         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
 -   [Prerequisites](r_prerequistes_zos)
--   [Installing Transfer CFT z/OS](c_install_overview_zos.htm)
+-   Installing Transfer CFT z/OS

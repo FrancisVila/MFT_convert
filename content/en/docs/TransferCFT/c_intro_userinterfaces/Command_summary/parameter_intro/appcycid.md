@@ -13,4 +13,4 @@ Identifier.
 Processing cycle identifier - set of tracked instances that concern
 a single transfer.
 
-[Return to Command index](../../)
+[Return to Command index](../)

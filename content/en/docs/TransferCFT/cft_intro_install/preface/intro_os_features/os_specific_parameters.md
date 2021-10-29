@@ -1,5 +1,5 @@
 {
-    "title": "OS specific parameters",
+    "title": "Operating system specific parameters",
     "linkTitle": "OS specific parameters",
     "weight": "250"
 }## Platform specific characters
@@ -7,285 +7,285 @@
 Transfer CFT Guardian specific values
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Notation</p></th>
-<th><p>Object</p></th>
-<th><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>char_file</p></td>
-<td><p>Prefix for logical names</p></td>
-<td><p>=</p></td>
-</tr>
-<tr class="even">
-<td><p>char_mask</p></td>
-<td><p>Wildcard character</p></td>
-<td><p>?</p></td>
-</tr>
-<tr class="odd">
-<td><p>char_symb</p></td>
-<td><p>Prefix for symbolic variables</p></td>
-<td><p>^</p></td>
-</tr>
-<tr class="even">
-<td><p>file_symb</p></td>
-<td><p>Prefix for a file name passed to CFTUTIL as a parameter</p></td>
-<td><p>@</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Notation</p></th>
+         <th>            <p>Object</p></th>
+         <th>            <p>Value</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>char_file</p>         </td>
+         <td>            <p>Prefix for logical names</p>         </td>
+         <td>            <p>=</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>char_mask</p>         </td>
+         <td>            <p>Wildcard character</p>         </td>
+         <td>            <p>?</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>char_symb</p>         </td>
+         <td>            <p>Prefix for symbolic variables</p>         </td>
+         <td>            <p>^</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>file_symb</p>         </td>
+         <td>            <p>Prefix for a file name passed to CFTUTIL as a parameter</p>         </td>
+         <td>            <p>@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 File properties automatically retrieved for send operations
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Notation</p></th>
-<th><p>Object</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>FSPACE</p></td>
-<td><p>YES</p></td>
-</tr>
-<tr class="even">
-<td><p>FLRECL</p></td>
-<td><p>YES</p></td>
-</tr>
-<tr class="odd">
-<td><p>FBLKSIZE</p></td>
-<td><p>YES</p></td>
-</tr>
-<tr class="even">
-<td><p>FRECFM</p></td>
-<td><p>YES</p></td>
-</tr>
-<tr class="odd">
-<td><p>FTYPE</p></td>
-<td><p>YES</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Notation</p></th>
+         <th>            <p>Object</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FSPACE</p>         </td>
+         <td>            <p>YES</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>FLRECL</p>         </td>
+         <td>            <p>YES</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>FBLKSIZE</p>         </td>
+         <td>            <p>YES</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>FRECFM</p>         </td>
+         <td>            <p>YES</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>FTYPE</p>         </td>
+         <td>            <p>YES</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 FTYPE values and associated implicit FCODE default values for send operations
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>FTYPE</p></th>
-<th><p>FCODE</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>' '</p></td>
-<td><p>BINARY</p></td>
-</tr>
-<tr class="even">
-<td><p>E</p></td>
-<td><p>ASCII</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>FTYPE</p></th>
+         <th>            <p>FCODE</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>' '</p>         </td>
+         <td>            <p>BINARY</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>E</p>         </td>
+         <td>            <p>ASCII</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 FTYPE, FRECFM, and FORG combinations for send operations
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
+   <thead>
+      <tr class="header">
 <th rowspan="2"> 
-<p>Guardian<br />
+            <p>Guardian<br />
 type</p></th>
 <th rowspan="2"> 
-<p>Guardian<br />
+            <p>Guardian<br />
 code</p></th>
 <th rowspan="2"> 
-<p>File type</p></th>
+            <p>File type</p></th>
 <th colspan="3">Implicit value for...</th>
-</tr>
-<tr class="odd">
-<th><p>FTYPE<br />
+      </tr>
+      <tr class="odd">
+         <th>            <p>FTYPE<br />
 </p></th>
-<th><p>FRECFM<br />
+         <th>            <p>FRECFM<br />
 </p></th>
-<th>FORG</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>U</p></td>
-<td><p># 101</p></td>
-<td><p>Binary stream</p></td>
-<td><p>' '</p></td>
-<td><p>U</p></td>
-<td>SEQ</td>
-</tr>
-<tr class="even">
-<td><p>U</p></td>
-<td><p>= 101</p></td>
-<td><p>Edit file</p></td>
-<td><p>E</p></td>
-<td><p>U</p></td>
-<td>SEQ</td>
-</tr>
-<tr class="odd">
-<td><p>E</p></td>
-<td><p># 1</p></td>
-<td><p>Fixed sequential</p></td>
-<td><p>' '</p></td>
-<td><p>F</p></td>
-<td>SEQ</td>
-</tr>
-<tr class="even">
-<td><p>E</p></td>
-<td><p>= 1</p></td>
-<td><p>Sequential, variable emulation</p></td>
-<td><p>' '</p></td>
-<td><p>V</p></td>
-<td>SEQ</td>
-</tr>
-<tr class="odd">
-<td><p>R</p></td>
-<td><p> </p></td>
-<td><p>Direct fixed</p></td>
-<td><p>' '</p></td>
-<td><p>F [1]</p></td>
-<td>DIR</td>
-</tr>
-<tr class="even">
-<td><p>K</p></td>
-<td><p> </p></td>
-<td><p>Fixed indexed sequential</p></td>
-<td><p>' '</p></td>
-<td><p>F [1]</p></td>
-<td>IDX</td>
-</tr>
-</tbody>
+         <th>FORG</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>U</p>         </td>
+         <td>            <p># 101</p>         </td>
+         <td>            <p>Binary stream</p>         </td>
+         <td>            <p>' '</p>         </td>
+         <td>            <p>U</p>         </td>
+         <td>SEQ         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>U</p>         </td>
+         <td>            <p>= 101</p>         </td>
+         <td>            <p>Edit file</p>         </td>
+         <td>            <p>E</p>         </td>
+         <td>            <p>U</p>         </td>
+         <td>SEQ         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>E</p>         </td>
+         <td>            <p># 1</p>         </td>
+         <td>            <p>Fixed sequential</p>         </td>
+         <td>            <p>' '</p>         </td>
+         <td>            <p>F</p>         </td>
+         <td>SEQ         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>E</p>         </td>
+         <td>            <p>= 1</p>         </td>
+         <td>            <p>Sequential, variable emulation</p>         </td>
+         <td>            <p>' '</p>         </td>
+         <td>            <p>V</p>         </td>
+         <td>SEQ         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>R</p>         </td>
+         <td>            <p> </p>         </td>
+         <td>            <p>Direct fixed</p>         </td>
+         <td>            <p>' '</p>         </td>
+         <td>            <p>F [1]</p>         </td>
+         <td>DIR         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>K</p>         </td>
+         <td>            <p> </p>         </td>
+         <td>            <p>Fixed indexed sequential</p>         </td>
+         <td>            <p>' '</p>         </td>
+         <td>            <p>F [1]</p>         </td>
+         <td>IDX         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Empty cells indicate that the information is not significant.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Empty cells indicate that the information is not significant.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>[1]</span> You can also send variable length record files by setting FRECFM = V.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>[1]</span> You can also send variable length record files by setting FRECFM = V.         </td>
+      </tr>
+   </tbody>
 </table>
 
 FTYPE, FRECFM, and FORG values for receive operations
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>FTYPE</p></th>
-<th><p>FRECFM</p></th>
-<th>FORG</th>
-<th><p>File Type</p></th>
-<th><p>Guardian Type</p></th>
-<th><p>Guardian Code</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p> </p></td>
-<td><p>U</p></td>
-<td> </td>
-<td><p>Binary stream</p></td>
-<td><p>U</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>E</p></td>
-<td><p> </p></td>
-<td> </td>
-<td><p>Edit file</p></td>
-<td><p>U</p></td>
-<td><p>101</p></td>
-</tr>
-<tr class="odd">
-<td><p> </p></td>
-<td><p>F</p></td>
-<td>SEQ</td>
-<td><p>Fixed sequential</p></td>
-<td><p>E</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p> </p></td>
-<td><p>V</p></td>
-<td> </td>
-<td><p>Sequential, variable emulation</p></td>
-<td><p>E</p></td>
-<td><p>1</p></td>
-</tr>
-<tr class="odd">
-<td> </td>
-<td>F</td>
-<td>DIR[2]</td>
-<td>Direct fixed</td>
-<td>R</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td> </td>
-<td>V</td>
-<td>DIR [2]</td>
-<td>Direct fixed, variable emulation</td>
-<td>R</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td> </td>
-<td>F</td>
-<td>IDX [2]</td>
-<td>Fixed indexed sequential</td>
-<td>K</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td> </td>
-<td>V</td>
-<td>IDX [2]</td>
-<td>Indexed sequential, variable emulation</td>
-<td>K</td>
-<td>1</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>FTYPE</p></th>
+         <th>            <p>FRECFM</p></th>
+         <th>FORG</th>
+         <th>            <p>File Type</p></th>
+         <th>            <p>Guardian Type</p></th>
+         <th>            <p>Guardian Code</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p> </p>         </td>
+         <td>            <p>U</p>         </td>
+         <td>          </td>
+         <td>            <p>Binary stream</p>         </td>
+         <td>            <p>U</p>         </td>
+         <td>            <p>0</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>E</p>         </td>
+         <td>            <p> </p>         </td>
+         <td>          </td>
+         <td>            <p>Edit file</p>         </td>
+         <td>            <p>U</p>         </td>
+         <td>            <p>101</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p> </p>         </td>
+         <td>            <p>F</p>         </td>
+         <td>SEQ         </td>
+         <td>            <p>Fixed sequential</p>         </td>
+         <td>            <p>E</p>         </td>
+         <td>            <p>0</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p> </p>         </td>
+         <td>            <p>V</p>         </td>
+         <td>          </td>
+         <td>            <p>Sequential, variable emulation</p>         </td>
+         <td>            <p>E</p>         </td>
+         <td>            <p>1</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>          </td>
+         <td>F         </td>
+         <td>DIR[2]         </td>
+         <td>Direct fixed         </td>
+         <td>R         </td>
+         <td>0         </td>
+      </tr>
+      <tr class="even">
+         <td>          </td>
+         <td>V         </td>
+         <td>DIR [2]         </td>
+         <td>Direct fixed, variable emulation         </td>
+         <td>R         </td>
+         <td>1         </td>
+      </tr>
+      <tr class="odd">
+         <td>          </td>
+         <td>F         </td>
+         <td>IDX [2]         </td>
+         <td>Fixed indexed sequential         </td>
+         <td>K         </td>
+         <td>0         </td>
+      </tr>
+      <tr class="even">
+         <td>          </td>
+         <td>V         </td>
+         <td>IDX [2]         </td>
+         <td>Indexed sequential, variable emulation         </td>
+         <td>K         </td>
+         <td>1         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Empty cells indicate that the information is not significant.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Empty cells indicate that the information is not significant.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>[2]</span> Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>[2]</span> Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Platform specific parameters and values
@@ -327,11 +327,11 @@ If specified, this parameter forces the BUFFERED attribute for the Guardian file
 The received file is created with a BUFFERED attribute set.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.         </td>
+      </tr>
+   </tbody>
 </table>

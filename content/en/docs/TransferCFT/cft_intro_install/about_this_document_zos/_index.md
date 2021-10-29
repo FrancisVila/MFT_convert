@@ -1,5 +1,5 @@
 {
-    "title": "Installation and operation z/OS",
+    "title": "z/OS: Installation and Operation",
     "linkTitle": "Installation and operation z/OS",
     "weight": "110"
 }This documentation provides information to aide you in installing, updating, upgrading, or migrating Transfer CFT.
@@ -45,4 +45,4 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 
 ## Support services
 
-The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email [support@axway.com](#) or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

@@ -67,6 +67,6 @@ The user ID for the user that starts Copilot and Transfer CFT has a 7-characters
 
 Related topics
 
--   [About Transfer CFT z/OS](..//transfercft/cft_intro_install/about_this_document_zos/c_about_zos)
--   [Installation overview](c_install_overview_zos.htm)
--   [About the installation environment](../r_envi_file_size_format)
+-   [About Transfer CFT z/OS](transfercft/cft_intro_install/about_this_document_zos/c_about_zos)
+-   Installation overview
+-   [About the installation environment](r_envi_file_size_format)

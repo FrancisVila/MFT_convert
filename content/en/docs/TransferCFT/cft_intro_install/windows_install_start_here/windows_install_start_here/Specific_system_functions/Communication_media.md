@@ -1,17 +1,15 @@
 {
-    "title": "Communication media",
+    "title": "Communication  media",
     "linkTitle": "Communication media",
     "weight": "280"
-}# <span id="Communication_media"></span>Communication media
-
--   [About
-    the communication media](#about_the_communication_media)
+}-   [About
+    the communication media](#About_the_communication_media)
 -   [Defining
-    the CFT user name](#defining_the_cft_user_name)
+    the CFT user name](#Defining_the_CFT_user_name)
 -   [Adjusting
-    the time and changing the date](#adjusting_the_time_and_changing_the_date)
+    the time and changing the date](#Adjusting_the_time_and_changing_the_date)
 -   [CFTUTIL
-    shutdown timeout](#cftutil_shutdown_timeout)
+    shutdown timeout](#CFTUTIL_shutdown_timeout)
 
 ### <span id="About_the_communication_media"></span>About the communication media
 
@@ -83,13 +81,13 @@ SET CFTEXITTIME=120
 This example causes CFTUTIL to wait a maximum of 120 seconds before disappearing.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This environment variable
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This environment variable
 can be used by all types of Transfer CFT interface: CFTUTIL, Copilot and
-the Transfer CFT API application.</td>
-</tr>
-</tbody>
+the Transfer CFT API application.         </td>
+      </tr>
+   </tbody>
 </table>

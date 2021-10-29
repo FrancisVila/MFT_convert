@@ -1,17 +1,15 @@
 {
-    "title": "Implicit transfer modes",
+    "title": "Implicit  transfer modes",
     "linkTitle": "Implicit transfer modes",
     "weight": "240"
-}# <span id="Implicit_transfer_modes"></span>Implicit transfer modes
-
-## <span id="Read_transfer_and_implicit_send_mode"></span>Read transfer and implicit send mode
+}## <span id="Read_transfer_and_implicit_send_mode"></span>Read transfer and implicit send mode
 
 There are two types of read transfer implicit send modes:
 
 -   [closed
-    mode](#read_transfer_implicit_send_closed_mode)
+    mode](#Read_transfer_implicit_send_closed_mode)
 -   [open
-    mode](#read_transfer_implicit_send_open_mode)
+    mode](#Read_transfer_implicit_send_open_mode)
 
 ### <span id="Read_transfer_implicit_send_closed_mode"></span>Read transfer implicit send closed mode
 
@@ -49,7 +47,7 @@ The figures below indicate these possibilities.
 **Receiver/requester transfer in implicit
 send mode: closed mode - explicit file names**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="738" height="286" />
+<img src="/Images/TransferCFT/Rec_tx_implicit_send_closed_explicit_file.gif" width="738" height="286" />
 
 In the figure above, the name assigned (FNAME = X), at the requester
 end and the name of the file to be sent at the server end (FNAME = Y)
@@ -58,7 +56,7 @@ are explicit.
 **Receiver/requester transfer in implicit
 send mode: closed mode - symbolic variable at the requester end**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="738" height="286" />
+<img src="/Images/TransferCFT/Rec_tx_implicit_send_closed_symbolic_variable_at_req.gif" width="738" height="286" />
 
 In the above figure, the name assigned at the requester end is defined
 using the symbolic variable &IDT which provides the possibility of
@@ -68,7 +66,7 @@ in PeSIT protocol, for example).
 **Receiver/requester transfer in implicit
 send mode: closed mode - symbolic variable at the server end**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="726" height="314" />
+<img src="/Images/TransferCFT/rec_req_tx_implicit_send_closed_symbolic_var_at_server.gif" width="726" height="314" />
 
 In the above figure, the name of the file to be sent at the server end
 is defined using the symbolic variable &PART which provides the possibility
@@ -112,22 +110,22 @@ The value of this parameter may be explicit or locally defined using symbolic
 variables (see the previous paragraph).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a requester defines FNAME=&amp;NFNAME and the server has not defined
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a requester defines FNAME=&amp;NFNAME and the server has not defined
 NFNAME, or vice-versa, the transfer fails and is interrupted. If the server/sender
 defines NFNAME and the file name is preceded with "*", the requester/receiver
-can use the name of its choice as the FNAME.</td>
-</tr>
-</tbody>
+can use the name of its choice as the FNAME.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Receiver/requester transfer in implicit
 send mode: open mode - at the requester end**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="752" height="295" />
+<img src="/Images/TransferCFT/rec_req_tx_implicit_send_open_at_req.gif" width="752" height="295" />
 
 *To implement
 the open mode at the server end:*
@@ -149,20 +147,20 @@ parameter may be explicit or locally defined using symbolic variables
 (see previous paragraph).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a requester defines NFNAME and the server has not defined FNAME
-= &amp;NFNAME, or vice-versa, the transfer fails and is interrupted.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a requester defines NFNAME and the server has not defined FNAME
+= &amp;NFNAME, or vice-versa, the transfer fails and is interrupted.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Receiver/requester transfer in implicit
 send mode: open mode at the server end**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="720" height="295" />
+<img src="/Images/TransferCFT/rec_req_tx_implicit_send_open_at_server.gif" width="720" height="295" />
 
  
 
@@ -180,4 +178,4 @@ This possibility is represented in the following diagram.
 **Receiver/requester transfer in implicit
 send mode: open mode at the requester and server end**
 
-<img src="rec_req_tx_implicit_send-open_at_req_and_server.gif" width="720" height="295" />
+<img src="/Images/TransferCFT/rec_req_tx_implicit_send-open_at_req_and_server.gif" width="720" height="295" />

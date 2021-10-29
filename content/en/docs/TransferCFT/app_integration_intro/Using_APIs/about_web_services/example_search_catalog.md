@@ -125,13 +125,13 @@ Executing the this request when Copilot is running but Transfer CFT is not runni
 &lt;/soap:Envelope>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To retrieve the Phase, Phasestep and  Appstate statuses you can set the CAT_CONTENT value to FULL. However, setting the catalog to FULL returns a large number of lines in the catalog.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To retrieve the Phase, Phasestep and  Appstate statuses you can set the CAT_CONTENT value to FULL. However, setting the catalog to FULL returns a large number of lines in the catalog.         </td>
+      </tr>
+   </tbody>
 </table>
 
 > &lt;CAT\_PHASE>X&lt;/CAT\_PHASE>
@@ -174,4 +174,4 @@ The exact message text may vary depending on the selected COM media type (File o
 
 Related topics
 
-[Get started with Web services](../get_started_web_services)
+[Get started with Web services](get_started_web_services)

@@ -22,4 +22,4 @@ are received. SCHKW=0 means that synchronization points are not acknowledged.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

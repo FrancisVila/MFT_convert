@@ -4,9 +4,9 @@
     "weight": "260"
 }This section provides recommendations and examples based on:
 
--   [Client mode outgoing transfers](#client)
--   [Server mode incoming transfers](#server)
--   [Impact on scheduling (reschedule a transfer)](#impact)
+-   [Client mode outgoing transfers](#Client)
+-   [Server mode incoming transfers](#Server)
+-   [Impact on scheduling (reschedule a transfer)](#Impact)
 
 ## <span id="Client"></span>Client mode
 
@@ -21,18 +21,18 @@ If your MAXCNX is lower than MAXTRANS and you have more transfers than MAXCNX, a
 Transfers having a MAXCNX DIAG are rescheduled in WSCAN minutes (CFTCAT object). In WSCAN minutes, if the session is active, the transfer is not activated. In this case, the transfer waits another WSCAN minutes until the session is inactive, at which point it is activated. The session still remains active during DISCTD or DISCTS (on the remote partner) seconds after a transfer is completed.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Partner    DTSAPP  File                Diags</p>
-<p>-------- ------ -------- --------</p>
-<p>DESTSUN SFH TH TEST2 F1517083 0 0 0 DIFFUS</p>
-<p>SUN35-1 SFT XX TEST2 F1517084 14 14 0 CP NONE</p>
-<p>SUN35-2 SFT XX TEST2 F1517085 14 14 0 CP NONE</p>
-<p>SUN35-3 SFT XX TEST2 F1517090 14 14 0 CP NONE</p>
-<p>SUN35-4 SFT XX TEST2 F1517091 14 14 0 CP NONE</p>
-<p><strong>SUN35-5 SFD TD TEST2 F1517092 0 0 416 MAXCNX</strong></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Partner    DTSAPP  File                Diags</p>
+            <p>-------- ------ -------- --------</p>
+            <p>DESTSUN SFH TH TEST2 F1517083 0 0 0 DIFFUS</p>
+            <p>SUN35-1 SFT XX TEST2 F1517084 14 14 0 CP NONE</p>
+            <p>SUN35-2 SFT XX TEST2 F1517085 14 14 0 CP NONE</p>
+            <p>SUN35-3 SFT XX TEST2 F1517090 14 14 0 CP NONE</p>
+            <p>SUN35-4 SFT XX TEST2 F1517091 14 14 0 CP NONE</p>
+            <p><strong>SUN35-5 SFD TD TEST2 F1517092 0 0 416 MAXCNX</strong></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Session"></span>Session persistence
@@ -44,13 +44,13 @@ This section describes the effect of setting either a high or especially low val
 You may want to use a low DISCTD value when you have a lot of partners and you reach or exceed the MAXTRANS number of transfers. For example, if there is a central hub diffusing to a large distribution list, this allows a session to close so that you can quickly establish a new session for another partner.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top"> Setting DISCTD to 0 (zero) creates an infinite timeout, and does not indicate zero seconds.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top"> Setting DISCTD to 0 (zero) creates an infinite timeout, and does not indicate zero seconds.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Setting to a higher value
@@ -86,13 +86,13 @@ In a situation where all sessions are active, and no additional sessions are ava
 -   In this particular scenario where all sessions are active, setting DISTCS to a high value negatively impacts performance due to the effect on latency
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top"> Setting DISCTD to 0 (zero) creates an infinite timeout (and does not indicate zero seconds).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top"> Setting DISCTD to 0 (zero) creates an infinite timeout (and does not indicate zero seconds).         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Setting to a higher value
@@ -116,53 +116,53 @@ In addition to simply looking at the maximum number of sessions, connections, an
 The following table shows the impact on scheduling once Transfer CFT reaches a file transfer parameter limit.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Reached limit for the ...</th>
-<th>DIAGI - DIAGP</th>
-<th>Reschedules...</th>
-<th>Conditions to be executed..</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Local MAXTRANS</td>
-<td>0</td>
-<td>Immediately after a transfer is completed</td>
-<td>A transfer slot is available on the local site</td>
-</tr>
-<tr class="even">
-<td>Remote MAXTRANS</td>
-<td>916-RCO 201</td>
-<td>In WSCAN minutes(CFTCAT)</td>
-<td>When a session is available on the remote site</td>
-</tr>
-<tr class="odd">
-<td>Local MAXCNX</td>
-<td>416-MAXCNX</td>
-<td>In WSCAN minutes (CFTCAT)</td>
-<td>When a session is available on the local site</td>
-</tr>
-<tr class="even">
-<td>Remote MAXCNX</td>
-<td>302-R 0 2F2</td>
-<td>In RETRYW minutes (CFTTCP)</td>
-<td>When a session is available on the remote site</td>
-</tr>
-<tr class="odd">
-<td><p>Local CNXINOUT or CNXOUT</p></td>
-<td>418-MAXCV</td>
-<td>Immediately after a transfer with the partner is completed</td>
-<td>When a transfer slot for this partner is available locally</td>
-</tr>
-<tr class="even">
-<td><p>Remote CNXIN</p>
-<p>or CNXINOUT</p></td>
-<td>916-RCO 309</td>
-<td>Immediately after a transfer with the partner is completed</td>
-<td>When a transfer slot for this partner is available on the remote site</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Reached limit for the ...</th>
+         <th>DIAGI - DIAGP</th>
+         <th>Reschedules...</th>
+         <th>Conditions to be executed..</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>Local MAXTRANS         </td>
+         <td>0         </td>
+         <td>Immediately after a transfer is completed         </td>
+         <td>A transfer slot is available on the local site         </td>
+      </tr>
+      <tr class="even">
+         <td>Remote MAXTRANS         </td>
+         <td>916-RCO 201         </td>
+         <td>In WSCAN minutes(CFTCAT)         </td>
+         <td>When a session is available on the remote site         </td>
+      </tr>
+      <tr class="odd">
+         <td>Local MAXCNX         </td>
+         <td>416-MAXCNX         </td>
+         <td>In WSCAN minutes (CFTCAT)         </td>
+         <td>When a session is available on the local site         </td>
+      </tr>
+      <tr class="even">
+         <td>Remote MAXCNX         </td>
+         <td>302-R 0 2F2         </td>
+         <td>In RETRYW minutes (CFTTCP)         </td>
+         <td>When a session is available on the remote site         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Local CNXINOUT or CNXOUT</p>         </td>
+         <td>418-MAXCV         </td>
+         <td>Immediately after a transfer with the partner is completed         </td>
+         <td>When a transfer slot for this partner is available locally         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Remote CNXIN</p>
+            <p>or CNXINOUT</p>         </td>
+         <td>916-RCO 309         </td>
+         <td>Immediately after a transfer with the partner is completed         </td>
+         <td>When a transfer slot for this partner is available on the remote site         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Scheduling issues
@@ -174,13 +174,13 @@ In some cases you may find that your Transfer CFT instance is not configured us
 Transfers are only scheduled after WSCAN minutes, so this value can negatively affect either a remote MAXTRANS or a local MAXCNX.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The default value is 5, and should in almost all cases be modified. We recommend that you modify the value to 1. Not changing the value could lead to latency issues for either remote MAXTRANS local MAXCNX. See table above.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The default value is 5, and should in almost all cases be modified. We recommend that you modify the value to 1. Not changing the value could lead to latency issues for either remote MAXTRANS local MAXCNX. See table above.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### DISCTS/DISCTD value is set to zero
@@ -196,13 +196,13 @@ A potential issue when set to too high of a value is that incoming/outgoing sess
 If RETRYW minutes are set to a high value, this has an impact on when the remote MAXCNX is reached. This can affect performance as transfers are rejected and then rescheduled in RETRYW minutes (for example, the default value is 7 minutes).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A good rule of thumb is to set this value to 1.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A good rule of thumb is to set this value to 1.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Negative impact on transfer times
@@ -217,5 +217,5 @@ In most setups we recommend that you modify the CNXOUT default setting. Keeping 
 
 Related topics
 
--   [About parallel transfers](..//transfercft/concepts/about_parallel_transfers)
--   [FAQ and troubleshooting](../faq)
+-   [About parallel transfers](about_parallel_transfers.htm)
+-   [FAQ and troubleshooting](FAQ.htm)

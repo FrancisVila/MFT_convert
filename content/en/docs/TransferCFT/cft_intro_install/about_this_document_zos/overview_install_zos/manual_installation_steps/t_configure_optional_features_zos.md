@@ -1,10 +1,10 @@
 {
-    "title": "Configure optional features",
+    "title": "Configure optional  features",
     "linkTitle": "Configure optional features",
     "weight": "250"
-}## <span id="Create a Transfer CFT PKI file D43PKI"></span>Create a Transfer CFT PKI file <span id="kanchor36"></span>D43PKI
+}## <span id="Create a Transfer CFT PKI file D43PKI"></span>Create a Transfer CFT PKI file <span id="kanchor32"></span>D43PKI
 
-The <span id="kanchor37"></span>PKI file contains all information necessary to use the SSL component:
+The <span id="kanchor33"></span>PKI file contains all information necessary to use the SSL component:
 
 -   Certification authorities
 -   Certificates
@@ -20,36 +20,36 @@ It is important to follow these guidelines:
 -   Take all appropriate security measures to guarantee the confidentiality of the security data.
 -   The usage of data ciphering is subject to legal restrictions that vary from country to country.
 
-## <span id="Connect with PassPort D44PASS"></span>Connect with <span id="kanchor38"></span>PassPort <span id="kanchor39"></span>D44PASS
+## <span id="Connect with PassPort D44PASS"></span>Connect with <span id="kanchor34"></span>PassPort <span id="kanchor35"></span>D44PASS
 
 Certificate management can be centralized using Axway PassPort. The certificates are obtained via a server. The D44PASS job enables you to take into account the connection parameters declared in the customization file A03PARM during installation.
 
 **Modifiable parameters**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Variables</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>pkitype</p></td>
-<td><p>Values: {passport , cft, system}</p>
-<p>[passport]: to manage certificates using PassPort</p>
-<p>[cft]:   to use the Transfer CFT PKI file (default value)</p>
-<p>[system]: PKI 'system' used</p></td>
-</tr>
-<tr class="even">
-<td><p>pasaddr</p></td>
-<td><p>PassPort Server address</p></td>
-</tr>
-<tr class="odd">
-<td><p>pasport</p></td>
-<td><p>PassPort Server port</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Variables</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>pkitype</p>         </td>
+         <td>            <p>Values: {passport , cft, system}</p>
+            <p>[passport]: to manage certificates using PassPort</p>
+            <p>[cft]:   to use the Transfer CFT PKI file (default value)</p>
+            <p>[system]: PKI 'system' used</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>pasaddr</p>         </td>
+         <td>            <p>PassPort Server address</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>pasport</p>         </td>
+         <td>            <p>PassPort Server port</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="_Toc236186612"></span>Use a SAF based PKI 
@@ -80,13 +80,13 @@ To enable the Transfer CFT PKI system, access the CONFIG file. The job responsib
 A sample named RACDCERT is delivered in the cftv2.INSTALL library. This RACDCERT show how to create a RING named XFBCFT, and to add test certificates: AXWMFTCA and AXWMFTUS. Additionally, the sample adds RACF authorizations for the Transfer CFT userid.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT no longer delivers sample certificates.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT no longer delivers sample certificates.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For information on SAF compatible security products, such as ACF/2 or TOP-SECRET, refer to the product-supplied documentation.
@@ -106,27 +106,27 @@ SAF certificate management is based on:
 Both the RING and OWNER are passed to the system from the PARM field or ROOTCID/USERCID fields of the CFTSSL definitions. Code CFTSSL using one of the two following methods:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL         ID= …,</p>
-<p>ROOTCID = 'certificate authority_1’,</p>
-<p>USERCID = 'Local user certificate’,</p>
-<p>PARM=’RING=ring_name,OWNER=userid’</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL         ID= …,</p>
+            <p>ROOTCID = 'certificate authority_1’,</p>
+            <p>USERCID = 'Local user certificate’,</p>
+            <p>PARM=’RING=ring_name,OWNER=userid’</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 or
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL ID= ...,</p>
-<p>ROOTCID = '(certificate authority_1@userid_1@ring_name_1 ,</p>
-<p>certificate authority_2@userid_2@ring_name_2)',</p>
-<p>USERCID = 'Local user certificate@userid@ring_name',</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL ID= ...,</p>
+            <p>ROOTCID = '(certificate authority_1@userid_1@ring_name_1 ,</p>
+            <p>certificate authority_2@userid_2@ring_name_2)',</p>
+            <p>USERCID = 'Local user certificate@userid@ring_name',</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 By default the delimiter between the id, the owner, and the ring name is '@' (x’7C’), but you can define a different delimiter using the PARM field of CFTSSL card.
@@ -134,11 +134,11 @@ By default the delimiter between the id, the owner, and the ring name is '@' (x�
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>PARM='DLM=$'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>PARM='DLM=$'         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Variables description**
@@ -162,11 +162,11 @@ The SAF definitions are described in the IBM documentation SA22-7691 Security Se
 
 Transfer CFT will perform the DATAGETFIRST/DATAGETNEXT and the CHECKSTATUS operations.
 
-## <span id="Communication server C32XMEM"></span><span id="kanchor40"></span>Communication server C32XMEM
+## <span id="Communication server C32XMEM"></span><span id="kanchor36"></span>Communication server C32XMEM
 
 The communication between the APPLICATION and Transfer CFT is done through a media file, CFTCOM, or a TCPIP interface. On a mainframe an additional media is available, as described in Using a communication server.
 
 Related topics
 
--   [Migrating Transfer CFT z/OS](t_migrate_cft_files.htm)
--   [Installing a patch](../../../upgrade_prereqs_zos/c_update_zos/t_install_patch_zos)
+-   Migrating Transfer CFT z/OS
+-   [Installing a patch](../../upgrade_prereqs_zos/c_update_zos/t_install_patch_zos)

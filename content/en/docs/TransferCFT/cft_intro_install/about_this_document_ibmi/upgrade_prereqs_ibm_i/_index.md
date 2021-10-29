@@ -1,5 +1,5 @@
 {
-    "title": "Update, upgrade, or migrate",
+    "title": "Update, upgrade, or migrate ",
     "linkTitle": "Update, upgrade, or migrate",
     "weight": "190"
 }This section describes how to update, upgrade, or migrate to Transfer CFT 3.9.
@@ -28,13 +28,13 @@ This mode has the following advantages:
 -   You can choose to use either of the versions, if needed, in case of an issue with one of the installations.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Configuration and data, such as the catalog, are in two separate locations and data are not shared.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Configuration and data, such as the catalog, are in two separate locations and data are not shared.         </td>
+      </tr>
+   </tbody>
 </table>
 
 This mode has the following restriction:
@@ -69,13 +69,13 @@ This mode has the following advantages:
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Prior to upgrading with a service pack
@@ -92,13 +92,13 @@ The CFTPROD library contains your personal data and should not be cleared. Data 
 -   Internal Access Management files
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The libraries CFTPGM.O and CFTPROD.O enable a synchronized and rapid Transfer CFT restart if required.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The libraries CFTPGM.O and CFTPROD.O enable a synchronized and rapid Transfer CFT restart if required.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Upgrade and migration tips and tricks

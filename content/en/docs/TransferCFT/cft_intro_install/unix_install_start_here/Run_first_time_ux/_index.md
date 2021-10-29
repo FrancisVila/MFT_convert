@@ -1,17 +1,17 @@
 {
-    "title": "Unix operations",
-    "linkTitle": "Unix operations",
-    "weight": "160"
+    "title": "Running Transfer CFT for the first time UNIX",
+    "linkTitle": "Running Transfer CFT for the first time",
+    "weight": "180"
 }The elements and tasks required to
 start Transfer CFT for the first time include:
 
--   [Set the environment](#set)
+-   [Set the environment](#Set)
 -   [Start and stopping Transfer
-    CFT](#configuring_cft_)
-    -   [Start using a command](#start)
+    CFT](#Configuring_CFT_)
+    -   [Start using a command](#Start)
     -   [Shut
-        down using a command](#shut)
-    -   [Start or stop via a user interface](#start2)
+        down using a command](#Shut)
+    -   [Start or stop via a user interface](#Start2)
 
 ## <span id="Set"></span>Set the environment
 
@@ -26,32 +26,32 @@ After installing Transfer CFT
 -   Use cftinit &lt;configuration\_file> > and/or cftupdate to interpret the parameter and
     partner files.  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>cftinit conf/cft-tcp.conf</p>
-    <p>cftupdate conf/cft-tcp-part.conf</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>cftinit conf/cft-tcp.conf</p>
+                <p>cftupdate conf/cft-tcp-part.conf</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
       
     or  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf         </td>
+          </tr>
+       </tbody>
     </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">These commands generate an initial configuration by <span>creating </span>the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be <strong>lost</strong>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">These commands generate an initial configuration by <span>creating </span>the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be <strong>lost</strong>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Sample file details
@@ -70,44 +70,44 @@ Delivered partners are:
 The following table lists the commands according to Transfer CFT version.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Version 2.7.1 and higher</th>
-<th>Version 2.7.0 and lower</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>cft start</td>
-<td>cftstart</td>
-</tr>
-<tr class="even">
-<td>cft stop</td>
-<td>cftstop</td>
-</tr>
-<tr class="odd">
-<td>cft status</td>
-<td>cftstatus</td>
-</tr>
-<tr class="even">
-<td>cft force-stop</td>
-<td>cftstop -kill</td>
-</tr>
-<tr class="odd">
-<td>cft force-stop –kill</td>
-<td>cftstop -forcedkill</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Version 2.7.1 and higher</th>
+         <th>Version 2.7.0 and lower</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>cft start         </td>
+         <td>cftstart         </td>
+      </tr>
+      <tr class="even">
+         <td>cft stop         </td>
+         <td>cftstop         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft status         </td>
+         <td>cftstatus         </td>
+      </tr>
+      <tr class="even">
+         <td>cft force-stop         </td>
+         <td>cftstop -kill         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft force-stop –kill         </td>
+         <td>cftstop -forcedkill         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <span>cftstart </span>and <span>cftstop </span>commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <span>cftstart </span>and <span>cftstop </span>commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Configuring_CFT_"></span>Start up

@@ -13,4 +13,4 @@
 The partner file name that is created by CFTFILE when TYPE=PART, and
 is used with the CFTPARM.
 
-[Return to Command index](../../)
+[Return to Command index](../)

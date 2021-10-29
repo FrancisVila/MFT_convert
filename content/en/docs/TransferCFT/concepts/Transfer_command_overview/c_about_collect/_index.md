@@ -1,7 +1,7 @@
 {
-    "title": "File transfers",
-    "linkTitle": "File transfers",
-    "weight": "320"
+    "title": "About broadcast and collecting",
+    "linkTitle": "About broadcast and collecting",
+    "weight": "340"
 }Files from several partners can be collected
 through a single RECV command, making reference to a list of partners
 associated with this collection; this list is defined in the CFTDEST command.
@@ -12,7 +12,7 @@ to be established to perform a collection.
 Define a list
 of partners
 
-**<img src="Define_list_of_partner_RECV.gif" width="724" height="325" />**
+**<img src="/Images/TransferCFT/Define_list_of_partner_RECV.gif" width="724" height="325" />**
 
 ## <span id="Broadcasting_lists"></span>Broadcast and collection lists
 
@@ -38,14 +38,14 @@ Transfer CFT creates the following items in the catalog:
     partner in the list
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The number of entries is not cross-checked against
-the number of partners in the list.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The number of entries is not cross-checked against
+the number of partners in the list.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Definition_of_a_partner_list"></span>Partner list definitions

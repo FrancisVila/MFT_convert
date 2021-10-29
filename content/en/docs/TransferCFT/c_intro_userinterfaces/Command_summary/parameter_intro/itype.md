@@ -9,7 +9,7 @@
 ITYPE = { '  '
 | character}
 
-[PKICER](../../../../transport_security_start_here/certificates/pkiutil_cli_intro/using_the_pkicer_command) of the PKIUTIL utility, the input file type, which is operating
+[PKICER](../../../transport_security_start_here/certificates/pkiutil_cli_intro/using_the_pkicer_command) of the PKIUTIL utility, the input file type, which is operating
 system dependant.
 
 Certificate types are:
@@ -20,4 +20,4 @@ Certificate types are:
 -   Root: Root authority certificate
 -   Inter: Intermediate authority certificate
 
-[Return to Command index](../../)
+[Return to Command index](../)

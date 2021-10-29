@@ -20,11 +20,11 @@ Alternatively, you can use the display command to list information about all ins
 -   When you run this command without parameters, the command lists all installed products and versions, and all applied service packs.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>./display.sh</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>./display.sh</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Use the name parameter, - n, to display the installation history of a single product.

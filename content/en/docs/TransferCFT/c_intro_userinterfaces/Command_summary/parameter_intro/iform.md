@@ -10,4 +10,4 @@
 
 Format for the certificate to be imported. Used in PKIUTIL tool.
 
-[Return to Command index](../../)
+[Return to Command index](../)

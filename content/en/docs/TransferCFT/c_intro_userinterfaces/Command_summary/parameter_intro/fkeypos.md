@@ -30,4 +30,4 @@ Transfer CFT sends this information, transported by the protocol in the
 PI 39, but does not use it. The indexed file is transferred in the form
 of sequential records.
 
-[Return to Command index](../../)
+[Return to Command index](../)

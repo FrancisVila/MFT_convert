@@ -1,5 +1,5 @@
 {
-    "title": "About data models and partners ",
+    "title": "Data models and partners",
     "linkTitle": "About data models and partners ",
     "weight": "170"
 }The purpose of Transfer CFT is to exchange and
@@ -27,13 +27,13 @@ to a remote file transfer controller.
 When you define a partner you require two sets of information to create a minimal configuration, the partner and the network definitions - the CFTPART and CFTxxx objects - respectively.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For the <span>Transfer CFT</span> network definition, the typical usage is CFTTCP.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For the <span>Transfer CFT</span> network definition, the typical usage is CFTTCP.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Partner definition
@@ -61,13 +61,13 @@ You can use the CFTPART command to create, modify, or delete a partner. Within t
 -   You also need to refer to a protocol definition, the CFTPROT object in your local environment, which you and the partner have agreed upon
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">Think of the N<strong>S</strong>PART partner as having an "S" for self, and N<strong>R</strong>PART having an "R" for the remote partner.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">Think of the N<strong>S</strong>PART partner as having an "S" for self, and N<strong>R</strong>PART having an "R" for the remote partner.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For your network connection, CFTTCP, you should define the:
@@ -127,13 +127,13 @@ Transfer CFT provides models for sending and receiving data:
 From there you can use SEND and RECV commands to perform file and message transfers, using default settings or new object definitions.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Transfer CFT to application communication

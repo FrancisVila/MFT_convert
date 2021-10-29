@@ -42,8 +42,8 @@ and switch fields, log files are automatically switched:
 -   Depending
     on the number of records in the file
 
-See also [Housekeeping for log files](../../../../admin_intro/admin_monitoring_intro/housekeeping_logs).
+See also [Housekeeping for log files](../../../admin_intro/admin_monitoring_intro/housekeeping_logs).
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

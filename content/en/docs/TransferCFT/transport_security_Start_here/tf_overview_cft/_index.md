@@ -1,17 +1,17 @@
 {
-    "title": "Using TrustedFile for file encryption",
+    "title": "About Trusted File for file encryption",
     "linkTitle": "Using TrustedFile for file encryption",
     "weight": "220"
 }## Encryption concepts
 
 This topic describes how to implement Axway Trusted File encoding. Transfer CFT in conjunction with TrustedFile enables you to send encrypted files in S/MIME, CMS, and OpenPGP format, for increased security for data exchanges. To initiate this additional security, Transfer CFT delivers a set of samples and certificates to implement TrustedFile in your environment. To get started using TrustedFile with Transfer CFT, read the following sections:
 
--   [Before you start](#before)
--   [About the Transfer CFT configuration file](#transfer)
--   [Defining the unified configuration parameters](#defining)
--   [Command example (to encode/decode a file)](#command)
+-   [Before you start](#Before)
+-   [About the Transfer CFT configuration file](#Transfer)
+-   [Defining the unified configuration parameters](#Defining)
+-   [Command example (to encode/decode a file)](#Command)
 
-The topic [Delivered files and certificates](tf_delivered_files_certficates) describes the scripts, conversion tables, files and samples delivered with Transfer CFT. And for more information on TrustedFile functionality, please refer to the [TrustedFile Reference Guide](trustedfile_3.6.x_referenceguide_allos_en.pdf) .
+The topic [Delivered files and certificates](tf_delivered_files_certficates.htm) describes the scripts, conversion tables, files and samples delivered with Transfer CFT. And for more information on TrustedFile functionality, please refer to the [TrustedFile Reference Guide](../pdf_library/TrustedFile_3.6.x_ReferenceGuide_allOS_en.pdf) .
 
 #### Limitations
 
@@ -33,108 +33,108 @@ The Transfer CFT sample configuration file runtime/conf/cft-tf-smp.conf includes
 Sending
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftsend id = trusted_file,<br />
+   <tbody>
+      <tr class="odd">
+         <td>cftsend id = trusted_file,<br />
 ftype = B,<br />
 fcode = BINARY,<br />
 fname = pub/FTEST,<br />
 EXEC = $CFTDIREXEC/tf/tf_delfile.cmd,<br />
 PREEXEC = $CFTDIREXEC/tf/tf_cipher.cmd,<br />
-mode = replace</td>
-</tr>
-</tbody>
+mode = replace         </td>
+      </tr>
+   </tbody>
 </table>
 
 Receiving
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftrecv id = trusted_file,<br />
+   <tbody>
+      <tr class="odd">
+         <td>cftrecv id = trusted_file,<br />
 ftype = B,<br />
 fcode = BINARY,<br />
 fname = $CFTDIRPUB/TF_&amp;part_&amp;idtu,<br />
 EXEC = $CFTDIREXEC/tf/tf_decipher.cmd,<br />
 faction = delete ,<br />
 fdisp = both,
-mode = replace</td>
-</tr>
-</tbody>
+mode = replace         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Defining"></span>Defining the unified configuration parameters
 
-The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable TrustedFile functioning. For information on uconf, see [About the Unified Configuration](../../admin_intro/uconf).
+The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable TrustedFile functioning. For information on uconf, see [About the Unified Configuration](../uconf/UCONF.htm).
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter (uconf)</th>
-<th>Default values</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>tf.proofslocation</td>
-<td>&lt;HOME&gt;/Axway/Transfer_CFT/runtime/data/tf</td>
-<td>References the absolute path to the directory that the product uses to generate proofs</td>
-</tr>
-<tr class="even">
-<td>tf.proofsenabled</td>
-<td>yes</td>
-<td>Indicates whether proofs are enabled or not. This field takes the value yes or no (yes by default). If the value is set to no, the generation of proofs is deactivated</td>
-</tr>
-<tr class="odd">
-<td>tf.messageslocation</td>
-<td>&lt;HOME&gt;/Axway/Transfer_CFT/home/distrib/tf/english</td>
-<td>Transfer CFT runtime directory</td>
-</tr>
-<tr class="even">
-<td>tf.entitieslocation</td>
-<td>$HOME/Axway/Transfer_CFT/runtime/conf/tf/entities.xml</td>
-<td><p>Indicates the TrustedFile configuration path.</p>
-<p>If the <span>tf.entitieslocationtype</span> is:</p>
-<ul>
-<li>Local: Points locally to the entities.xml file by default</li>
-<li>Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:<br />
+   <thead>
+      <tr class="header">
+         <th>Parameter (uconf)</th>
+         <th>Default values</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>tf.proofslocation         </td>
+         <td>&lt;HOME&gt;/Axway/Transfer_CFT/runtime/data/tf         </td>
+         <td>References the absolute path to the directory that the product uses to generate proofs         </td>
+      </tr>
+      <tr class="even">
+         <td>tf.proofsenabled         </td>
+         <td>yes         </td>
+         <td>Indicates whether proofs are enabled or not. This field takes the value yes or no (yes by default). If the value is set to no, the generation of proofs is deactivated         </td>
+      </tr>
+      <tr class="odd">
+         <td>tf.messageslocation         </td>
+         <td>&lt;HOME&gt;/Axway/Transfer_CFT/home/distrib/tf/english         </td>
+         <td>Transfer CFT runtime directory         </td>
+      </tr>
+      <tr class="even">
+         <td>tf.entitieslocation         </td>
+         <td>$HOME/Axway/Transfer_CFT/runtime/conf/tf/entities.xml         </td>
+         <td>            <p>Indicates the TrustedFile configuration path.</p>
+            <p>If the <span>tf.entitieslocationtype</span> is:</p>
+            <ul>
+               <li>Local: Points locally to the entities.xml file by default               </li>
+               <li>Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:<br />
 &lt;xppServer host="<span>pki.passport.hostname</span>"&gt;, &lt;xp3Protocol port="<span>pki.passport.port</span>"&gt;<br />
-<span>Example</span>: <span>&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</span></li>
-</ul>
-<p>See <a href="../../admin_intro/uconf/uconf_pki">Unified Configuration: PKI PassPort PS</a>.</p></td>
-</tr>
-<tr class="odd">
-<td>tf.entitieslocationtype</td>
-<td>local</td>
-<td><p>Defines the type of TrustedFile configuration.
+<span>Example</span>: <span>&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</span>               </li>
+            </ul>
+            <p>See <a href="../uconf/uconf_pki.htm">Unified Configuration: PKI PassPort PS</a>.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>tf.entitieslocationtype         </td>
+         <td>local         </td>
+         <td>            <p>Defines the type of TrustedFile configuration.
 The configuration path is defined in <span>tf.entitieslocation</span>.</p>
-<ul>
-<li>Local: Indicates that Trusted File is configured in standalone mode (locally)</li>
-<li>Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>tf.defaultlocalcharset</td>
-<td>ISO-8859-1</td>
-<td>Default character set for the platform</td>
-</tr>
-<tr class="odd">
-<td>tf.transcodingtablelocation</td>
-<td>&lt;HOME&gt;/Axway/Transfer_CFT/runtime/conf/tf/transcoding.tbl</td>
-<td>Absolute path to the character set conversion reference table</td>
-</tr>
-<tr class="even">
-<td>tf.overwritemode</td>
-<td>enable</td>
-<td>Defines how Axway TrustedFile behaves when it must open an existing plain file, acknowledgement or envelope in write mode. If this element is set to the value yes or enable, Axway TrustedFile overwrites the existing output files. Otherwise, it does not open the files and interrupts the current operation with an error message. Its default value is enable</td>
-</tr>
-<tr class="odd">
-<td>tf.enablepasswordcipher</td>
-<td>yes</td>
-<td>Indicates that entities passphrases, either in the entities definition file (entities.xml) or in the operation description file, are stored in a ciphered format.</td>
-</tr>
-</tbody>
+            <ul>
+               <li>Local: Indicates that Trusted File is configured in standalone mode (locally)               </li>
+               <li>Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>tf.defaultlocalcharset         </td>
+         <td>ISO-8859-1         </td>
+         <td>Default character set for the platform         </td>
+      </tr>
+      <tr class="odd">
+         <td>tf.transcodingtablelocation         </td>
+         <td>&lt;HOME&gt;/Axway/Transfer_CFT/runtime/conf/tf/transcoding.tbl         </td>
+         <td>Absolute path to the character set conversion reference table         </td>
+      </tr>
+      <tr class="even">
+         <td>tf.overwritemode         </td>
+         <td>enable         </td>
+         <td>Defines how Axway TrustedFile behaves when it must open an existing plain file, acknowledgement or envelope in write mode. If this element is set to the value yes or enable, Axway TrustedFile overwrites the existing output files. Otherwise, it does not open the files and interrupts the current operation with an error message. Its default value is enable         </td>
+      </tr>
+      <tr class="odd">
+         <td>tf.enablepasswordcipher         </td>
+         <td>yes         </td>
+         <td>Indicates that entities passphrases, either in the entities definition file (entities.xml) or in the operation description file, are stored in a ciphered format.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Command"></span>Command example
@@ -147,11 +147,11 @@ Example
 To encode/decode messages using PGP, use the format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL send part=loop,idf=trusted_file, SAPPL=pgp</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL send part=loop,idf=trusted_file, SAPPL=pgp         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Not supported
@@ -164,6 +164,6 @@ When using TrustedFile with Transfer CFT, some TrustedFile functionalities are n
 
 Related topics
 
--   [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
--   [Delivered files and certificates](tf_delivered_files_certficates)
--   [How to generate a certificate for TrustedFile](tf_generate_cert)
+-   [SAPPL](../CFTUTIL/Parameter_index/sappl.htm)
+-   [Delivered files and certificates](tf_delivered_files_certficates.htm)
+-   [How to generate a certificate for TrustedFile](tf_generate_cert.htm)

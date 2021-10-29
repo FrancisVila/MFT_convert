@@ -13,4 +13,4 @@ The execpolicy defines the node policy for executing a job when working with mul
 -   Instance: one of the Transfer CFT nodes is responsible for performing the job
 -   Allnode: every node does the job
 
-[Return to Command index](../../)
+[Return to Command index](../)

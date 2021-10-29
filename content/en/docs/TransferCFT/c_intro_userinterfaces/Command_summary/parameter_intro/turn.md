@@ -15,4 +15,4 @@ Method of data exchange.
 
 This value is negotiated with the value specified in the Transfer CFT within the DMZ.
 
-[Return to Command index](../../)
+[Return to Command index](../)

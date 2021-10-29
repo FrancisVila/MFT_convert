@@ -15,7 +15,7 @@ The identifier value must correspond to the ID parameter of a
 CFTPART object.
 
 This parameter is involved in the file [store
-and forward](../../../../concepts/transfer_command_overview/store_and_forward_mode_routing) or backup mechanism.
+and forward](../../../concepts/transfer_command_overview/store_and_forward_mode_routing) or backup mechanism.
 
 #### SEND
 
@@ -23,4 +23,4 @@ and forward](../../../../concepts/transfer_command_overview/store_and_forward_mo
 
 Intermediate partner local identifier.
 
-[Return to Command index](../../)
+[Return to Command index](../)

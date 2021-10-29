@@ -1,10 +1,8 @@
 {
-    "title": "Declaring additional users",
+    "title": "Declaring  additional users",
     "linkTitle": "Declaring additional users",
     "weight": "230"
-}# <span id="Declaring_additional_users"></span>Declaring additional users
-
-If Transfer CFT is to be run by users other than the holder of the account
+}If Transfer CFT is to be run by users other than the holder of the account
 from which Transfer CFT was installed, these users must be added to the environment.
 
 In all subsequent definitions, it is assumed that Transfer CFT is installed,
@@ -68,119 +66,119 @@ variable*).
 to the Files**
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p><strong>Environment variable</strong> </p></th>
-<th><p><strong>Default definition</strong>
+   <thead>
+      <tr class="header">
+         <th>            <p><strong>Environment variable</strong> </p></th>
+         <th>            <p><strong>Default definition</strong>
  </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTDIRINSTALL</td>
-<td data-valign="top">Top of the Transfer CFT installation directory structure</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDIRRUNTIME</td>
-<td data-valign="top">Runtime directory</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTUCONF</td>
-<td data-valign="top">UCONF file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDIRDAT</td>
-<td data-valign="top">Data directory</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTDIRINS</td>
-<td data-valign="top">Conf directory</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDIRLOG</td>
-<td data-valign="top">Log directory</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTDIRPUB</td>
-<td data-valign="top">Pub directory</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDIRSEC</td>
-<td data-valign="top">Security directory</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTDIREXEC</td>
-<td data-valign="top">Exec directory</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTPKIDIR</td>
-<td data-valign="top">Directory containing the security information</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTPKIDIR</td>
-<td data-valign="top">Exit directory</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDIRAPI</td>
-<td data-valign="top">Api directory</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTHICNF</td>
-<td data-valign="top">Security system initialization file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTDSPCNF</td>
-<td data-valign="top">Display configuration file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTKEY</td>
-<td data-valign="top">License key file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTACNT</td>
-<td data-valign="top">Accounting file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTACNTA</td>
-<td data-valign="top">Alternate accounting file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTCATA</td>
-<td data-valign="top">Catalog file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTTCOM</td>
-<td data-valign="top">Communication file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTLOG</td>
-<td data-valign="top">Log file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTLOGA</td>
-<td data-valign="top">Alternate log file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTPARM</td>
-<td data-valign="top">Parameter file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTPART</td>
-<td data-valign="top">Partner file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTPKU</td>
-<td data-valign="top">PKI file</td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top">CFTHINI</td>
-<td data-valign="top">Security system implementation file</td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top">CFTHPARM</td>
-<td data-valign="top">Security system implementation parameter file</td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTDIRINSTALL         </td>
+         <td data-valign="top">Top of the Transfer CFT installation directory structure         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDIRRUNTIME         </td>
+         <td data-valign="top">Runtime directory         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTUCONF         </td>
+         <td data-valign="top">UCONF file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDIRDAT         </td>
+         <td data-valign="top">Data directory         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTDIRINS         </td>
+         <td data-valign="top">Conf directory         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDIRLOG         </td>
+         <td data-valign="top">Log directory         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTDIRPUB         </td>
+         <td data-valign="top">Pub directory         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDIRSEC         </td>
+         <td data-valign="top">Security directory         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTDIREXEC         </td>
+         <td data-valign="top">Exec directory         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTPKIDIR         </td>
+         <td data-valign="top">Directory containing the security information         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTPKIDIR         </td>
+         <td data-valign="top">Exit directory         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDIRAPI         </td>
+         <td data-valign="top">Api directory         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTHICNF         </td>
+         <td data-valign="top">Security system initialization file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTDSPCNF         </td>
+         <td data-valign="top">Display configuration file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTKEY         </td>
+         <td data-valign="top">License key file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTACNT         </td>
+         <td data-valign="top">Accounting file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTACNTA         </td>
+         <td data-valign="top">Alternate accounting file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTCATA         </td>
+         <td data-valign="top">Catalog file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTTCOM         </td>
+         <td data-valign="top">Communication file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTLOG         </td>
+         <td data-valign="top">Log file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTLOGA         </td>
+         <td data-valign="top">Alternate log file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTPARM         </td>
+         <td data-valign="top">Parameter file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTPART         </td>
+         <td data-valign="top">Partner file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTPKU         </td>
+         <td data-valign="top">PKI file         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top">CFTHINI         </td>
+         <td data-valign="top">Security system implementation file         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top">CFTHPARM         </td>
+         <td data-valign="top">Security system implementation parameter file         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Setting the environment variables

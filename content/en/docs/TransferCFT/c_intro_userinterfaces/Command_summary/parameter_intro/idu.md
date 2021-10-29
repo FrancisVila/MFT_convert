@@ -42,7 +42,7 @@ associated with the file received.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  
 

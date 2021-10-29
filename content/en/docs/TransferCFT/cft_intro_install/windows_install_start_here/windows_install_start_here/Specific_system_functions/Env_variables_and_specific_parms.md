@@ -1,10 +1,8 @@
 {
-    "title": "Environment variables",
+    "title": "Environment  variables in Windows",
     "linkTitle": "Environment variables",
     "weight": "250"
-}# <span id="Environment_variables_in_Windows"></span>Environment variables in Windows
-
-This topic describes the environment
+}This topic describes the environment
 variables and the specific parameters used in Transfer CFT Windows. The ‘\*’ character indicates that all networks are concerned.
 
 -   Terms annotated with (ve) are symbolic variables.
@@ -30,7 +28,7 @@ Variables
 -   CFTNOFLUSH    (ve)
 -   CFTPARM    (ve)
 -   CFTPART    (ve)
--   CFTSFMCPY    (ve) *(Deprecated. Use [uconf:cft.server.force\_heterogeneous\_mode.](../../../../../admin_intro/uconf/uconf_heterogeneous_mode))*
+-   CFTSFMCPY    (ve) *(Deprecated. Use [uconf:cft.server.force\_heterogeneous\_mode.](../../../../admin_intro/uconf/uconf_heterogeneous_mode))*
 -   CFTSRVNP
 -   CFTSRVTO
 -   CFTSRVTS

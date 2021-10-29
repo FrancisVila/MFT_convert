@@ -19,4 +19,4 @@ be added to the routing entry of the subsystem on which Transfer CFT/OS.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

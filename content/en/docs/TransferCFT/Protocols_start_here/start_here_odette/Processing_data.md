@@ -1,20 +1,18 @@
 {
-    "title": "Processing data",
+    "title": "Processing  data",
     "linkTitle": "Processing data",
     "weight": "180"
-}# <span id="Processing_data"></span>Processing data
-
-This topic describes compression functions in Transfer CFT when using
+}This topic describes compression functions in Transfer CFT when using
 the OFTP (ODETTE) protocol.
 
 -   [Negotiating
-    compression](#negotiating_compression)
+    compression](#Negotiating_compression)
 -   [Change
-    direction](#change_direction)
+    direction](#Change_Direction)
 -   [End-to-end
-    messages](#end_to_end_messages)
+    messages](#End_to_end_messages)
 -   [Online
-    translation](#online_translation)
+    translation](#Online_Translation)
 
 ## <span id="Negotiating_compression"></span>Negotiating compression
 
@@ -23,14 +21,14 @@ sending the Start File Session IDentification
 FPDU.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
-this compression option negotiation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
+this compression option negotiation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 This only involves a COMPRESSION OPTION. This means that while the partners
@@ -40,7 +38,7 @@ This Compression Option is negotiated as indicated in the figure below.
 
 Compression option negotiation
 
-<img src="Image1755.gif" width="523" height="435" alt="Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)" />
+<img src="/Images/TransferCFT/Image1692.gif" width="523" height="435" alt="Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)" />
 
 ### <span id="Formatting"></span>Formatting
 
@@ -70,13 +68,13 @@ If it does, Transfer CFT deletes these characters.
 
 Structure of the data exchange buffer
 
-<img src="Image1755.gif" width="613" height="246" alt="View of structure including the initial Byte, header, and sub-record" />
+<img src="/Images/TransferCFT/Image1693.gif" width="613" height="246" alt="View of structure including the initial Byte, header, and sub-record" />
 
  
 
 HEADER structure
 
-<img src="Image1755.gif" width="528" height="331" alt="Header structure defining bits 0 through 7, which is the last bit of the record" />
+<img src="/Images/TransferCFT/Image1694.gif" width="528" height="331" alt="Header structure defining bits 0 through 7, which is the last bit of the record" />
 
 ### <span id="Compression"></span>Compression
 
@@ -90,7 +88,7 @@ follows the HEADER.
 
 SUBRECORD example
 
-<img src="Image1755.gif" width="492" height="139" />
+<img src="/Images/TransferCFT/Image1755.gif" width="492" height="139" />
 
 The character ‘44’ (&lt;=> ‘D’ character) is repeated 13 times in
 succession in the record.
@@ -185,15 +183,15 @@ EERP parameter value:
     the file).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Check the consistency of the end-to-end parameter value settings.
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Check the consistency of the end-to-end parameter value settings.
 If a sender has a different version from a receiver, it will not be possible
-to acknowledge the transfer.</td>
-</tr>
-</tbody>
+to acknowledge the transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
 In addition, the exchanges of EERP messages are not checked by the negotiation
@@ -204,7 +202,7 @@ of the SENS transfer parameter (SRIN/SROUT).
 The sending of the EERP is activated by passing a Transfer CFT MESSAGE
 send command. However, the message passed is of a particular type in that
 it is a REPLY type message. See also [Sending
-replies.](../../../concepts/using_the_send_command/sending_replies)
+replies.](../../../Transfers/Subm_transfers/Sending_replies.htm)
 
 EERP TRANSMISSION example:
 

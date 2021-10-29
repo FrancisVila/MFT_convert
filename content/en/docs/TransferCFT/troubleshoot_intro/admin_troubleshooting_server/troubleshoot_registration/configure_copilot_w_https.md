@@ -1,5 +1,5 @@
 {
-    "title": "Install a certificate on the server",
+    "title": "Configuring Copilot with HTTPS",
     "linkTitle": "Install a certificate on the server",
     "weight": "320"
 }The certificates used by the Transfer CFT Copilot server to authenticate itself are defined in UCONF using the parameters described in the following tables.
@@ -11,35 +11,35 @@ The examples provided in this section use sample certificates that are supplied 
 This example uses a single PKCS#12 certificate.
 
 <table data-align="left" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Parameter</p></th>
-<th><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>copilot.ssl.SslCertFile</p>
-<p> </p></td>
-<td><p>conf/pki/MFT_Demonstration_User_Certificate.p12</p></td>
-</tr>
-<tr class="even">
-<td><p>copilot.ssl.SslCertPassword</p>
-<p> </p></td>
-<td><p>Certificate password (“user” for the sample above)</p>
-<p> </p></td>
-</tr>
-<tr class="odd">
-<td><p>copilot.ssl.SslKeyFile</p>
-<p> </p></td>
-<td><p>Not used</p></td>
-</tr>
-<tr class="even">
-<td><p>copilot.ssl.SslKeyPassword</p>
-<p> </p></td>
-<td><p>Not used</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Parameter</p></th>
+         <th>            <p>Value</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>copilot.ssl.SslCertFile</p>
+            <p> </p>         </td>
+         <td>            <p>conf/pki/MFT_Demonstration_User_Certificate.p12</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>copilot.ssl.SslCertPassword</p>
+            <p> </p>         </td>
+         <td>            <p>Certificate password (“user” for the sample above)</p>
+            <p> </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>copilot.ssl.SslKeyFile</p>
+            <p> </p>         </td>
+         <td>            <p>Not used</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>copilot.ssl.SslKeyPassword</p>
+            <p> </p>         </td>
+         <td>            <p>Not used</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example 2**
@@ -47,35 +47,35 @@ This example uses a single PKCS#12 certificate.
 This example uses a DER certificate with the private key in a separate DER file.
 
 <table data-align="center" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Parameter</p></th>
-<th><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>copilot.ssl.SslCertFile</p>
-<p> </p></td>
-<td><p>conf/pki /MFT_Demonstration_User_Certificate.der</p>
-<p> </p></td>
-</tr>
-<tr class="even">
-<td><p>copilot.ssl.SslCertPassword</p>
-<p> </p></td>
-<td><p>Not used</p></td>
-</tr>
-<tr class="odd">
-<td><p>copilot.ssl.SslKeyFile</p>
-<p> </p></td>
-<td><p>conf/pki /MFT_Demonstration_User_Certificatek.der</p></td>
-</tr>
-<tr class="even">
-<td><p>copilot.ssl.SslKeyPassword</p>
-<p> </p></td>
-<td><p>Key file password (no password with sample file above)</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Parameter</p></th>
+         <th>            <p>Value</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>copilot.ssl.SslCertFile</p>
+            <p> </p>         </td>
+         <td>            <p>conf/pki /MFT_Demonstration_User_Certificate.der</p>
+            <p> </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>copilot.ssl.SslCertPassword</p>
+            <p> </p>         </td>
+         <td>            <p>Not used</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>copilot.ssl.SslKeyFile</p>
+            <p> </p>         </td>
+         <td>            <p>conf/pki /MFT_Demonstration_User_Certificatek.der</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>copilot.ssl.SslKeyPassword</p>
+            <p> </p>         </td>
+         <td>            <p>Key file password (no password with sample file above)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Additional https parameters
@@ -83,45 +83,45 @@ This example uses a DER certificate with the private key in a separate DER file.
 There are two additional UCONF parameters to use for https connections:
 
 <table data-align="center" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Parameter</p></th>
-<th><p>Value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>copilot.http.onlyssl</p></td>
-<td><ul>
-<li>No: Default value.</li>
-<li>Yes: Restricts access to the Copilot server to HTTPS secured connections only.</li>
-</ul>
-<p> </p></td>
-</tr>
-<tr class="even">
-<td><p>copilot.ssl.SslCipherSuites</p>
-<p> </p></td>
-<td><p>A comma separated list of cipher suites accepted by the Copilot server.</p>
-<ul>
-<li>“47, 10, 9, 2”: Default value.</li>
-</ul>
-<p> </p>
-<p>List of supported cipher suites:</p>
-<ul>
-<li>1 = RSA_WITH_NULL_MD5</li>
-<li>2 = RSA_WITH_NULL_SHA</li>
-<li>4 = RSA_WITH_RC4_MD5</li>
-<li>5 = RSA_WITH_RC4_SHA</li>
-<li>9 = RSA_WITH_DES_CBC_SHA1</li>
-<li>10 = RSA_WITH_3DES_EDE_CBC_SHA</li>
-<li>47 = RSA_WITH_AES_128_CBC_SHA</li>
-<li>53 = RSA_WITH_AES_256_CBC_SHA</li>
-<li>59 = RSA_WITH_NULL_SHA256</li>
-<li><span>60 = RSA_WITH_AES_128_CBC_SHA</span><span>2</span><span>56</span></li>
-<li><span>61 = RSA_WITH_AES_256_CBC_SHA</span><span>2</span><span>56</span></li>
-</ul></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Parameter</p></th>
+         <th>            <p>Value</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>copilot.http.onlyssl</p>         </td>
+         <td>            <ul>
+               <li>No: Default value.               </li>
+               <li>Yes: Restricts access to the Copilot server to HTTPS secured connections only.               </li>
+            </ul>
+            <p> </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>copilot.ssl.SslCipherSuites</p>
+            <p> </p>         </td>
+         <td>            <p>A comma separated list of cipher suites accepted by the Copilot server.</p>
+            <ul>
+               <li>“47, 10, 9, 2”: Default value.               </li>
+            </ul>
+            <p> </p>
+            <p>List of supported cipher suites:</p>
+            <ul>
+               <li>1 = RSA_WITH_NULL_MD5               </li>
+               <li>2 = RSA_WITH_NULL_SHA               </li>
+               <li>4 = RSA_WITH_RC4_MD5               </li>
+               <li>5 = RSA_WITH_RC4_SHA               </li>
+               <li>9 = RSA_WITH_DES_CBC_SHA1               </li>
+               <li>10 = RSA_WITH_3DES_EDE_CBC_SHA               </li>
+               <li>47 = RSA_WITH_AES_128_CBC_SHA               </li>
+               <li>53 = RSA_WITH_AES_256_CBC_SHA               </li>
+               <li>59 = RSA_WITH_NULL_SHA256               </li>
+               <li><span>60 = RSA_WITH_AES_128_CBC_SHA</span><span>2</span><span>56</span>               </li>
+               <li><span>61 = RSA_WITH_AES_256_CBC_SHA</span><span>2</span><span>56</span>               </li>
+            </ul>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Installing a certificate on the client side
@@ -161,15 +161,15 @@ The Java keystore is a file located at &lt;installation directory>/jre/lib/secur
 Use the keytool command as follows to import the Axway\_MFT\_Demonstration\_Root\_Certificate.der certificate into the Java keystore:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>keytool –importcert</p>
-<p>   -trustcacerts</p>
-<p>   -alias AXWMFTCA</p>
-<p>   -file Axway_MFT_Demonstration_Root_Certificate.der</p>
-<p>   -storepass changeit-keystore &lt;keystore&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>keytool –importcert</p>
+            <p>   -trustcacerts</p>
+            <p>   -alias AXWMFTCA</p>
+            <p>   -file Axway_MFT_Demonstration_Root_Certificate.der</p>
+            <p>   -storepass changeit-keystore &lt;keystore&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Specify the keystore to use on the client side by customizing html files
@@ -184,25 +184,25 @@ These files contain a parameter SSL\_KEYSTORE, which are modifiable. The default
 The following table shows used keystore depending on the SSL\_KEYSTORE value and operating system.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>SSL_KEYSTORE value</p></th>
-<th><p>Windows</p></th>
-<th><p>Linux</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>“Windows”</p></td>
-<td><p>Windows keystore</p></td>
-<td><p>Java keystore</p></td>
-</tr>
-<tr class="even">
-<td><p>“” (empty string)</p></td>
-<td><p>Java keystore</p></td>
-<td><p>Java keystore</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>SSL_KEYSTORE value</p></th>
+         <th>            <p>Windows</p></th>
+         <th>            <p>Linux</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>“Windows”</p>         </td>
+         <td>            <p>Windows keystore</p>         </td>
+         <td>            <p>Java keystore</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>“” (empty string)</p>         </td>
+         <td>            <p>Java keystore</p>         </td>
+         <td>            <p>Java keystore</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Connect to Copilot through an SSL connection

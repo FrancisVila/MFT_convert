@@ -1,10 +1,8 @@
 {
-    "title": "Dynamic partner in server mode",
+    "title": "Dynamic  partner in server mode",
     "linkTitle": "Dynamic partner in server mode",
     "weight": "390"
-}# <span id="Dynamic_partner_in_server_mode"></span>Dynamic partner in server mode
-
-In server mode, standard Transfer CFT operations consist of accepting
+}In server mode, standard Transfer CFT operations consist of accepting
 a transfer request only if the partner is pre-defined in the parameter
 settings. This topic describes a mode where Transfer CFT can accept a
 connection from a partner that is not already defined. This type of partner
@@ -30,15 +28,15 @@ This feature can be used by all protocols, but is not compatible with
 the routing and switching mechanism.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For security reasons, the
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For security reasons, the
 DYNAM = mechanism is rarely used
-without also executing additional checks in a directory EXIT task.</td>
-</tr>
-</tbody>
+without also executing additional checks in a directory EXIT task.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Parameter settings
@@ -97,16 +95,16 @@ be used for several partners.
 The parameters IMINTIME and IMAXTIME are also checked.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Apart
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Apart
 from checking the resource class, the above checks can be made (or remade)
 in the directory type EXIT task, if the latter is defined in the protocol
-description (EXIT parameter of the CFTPROT command).</td>
-</tr>
-</tbody>
+description (EXIT parameter of the CFTPROT command).         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Putting a file at disposal on hold
@@ -115,11 +113,11 @@ A file is put at disposal, which means on hold, for a partner by a transfer
 request of the type:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND PART = part, IDF = idf, STATE = HOLD</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND PART = part, IDF = idf, STATE = HOLD         </td>
+      </tr>
+   </tbody>
 </table>
 
 Or an equivalent request via CFTAPI ...

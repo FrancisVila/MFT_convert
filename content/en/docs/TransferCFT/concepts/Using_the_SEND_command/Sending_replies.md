@@ -1,5 +1,5 @@
 {
-    "title": "Sending a REPLY",
+    "title": "Use the SEND acknowledgement commands  ",
     "linkTitle": "Sending a REPLY",
     "weight": "230"
 }## <span id="About_the_SEND_REPLY_Command"></span>
@@ -35,82 +35,82 @@ If the initial sender does not support this function, as for example in earlier 
 negative acknowledgement and the Transfer CFT log file displays:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftutil send<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftutil send<br />
 type=nack,<br />
 part=&amp;part,<br />
 idm=nack,<br />
 msg=recu,<br />
-idt=&amp;idt</p></td>
-</tr>
-</tbody>
+idt=&amp;idt</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>Description</th>
+   <thead>
+      <tr class="header">
+         <th>Description</th>
 <th colspan="2">Use this command to initiates the sending of a message
 of a particular type. This message is a reply to a previous transfer from
 the partner.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td rowspan="8" width="19.982%"><p>Parameters</p></td>
-<td colspan="2"><p>FOR OPTIONAL
-PARAMETERS COMMON TO SEND: see the <a href="../../../c_intro_userinterfaces/command_summary">SEND</a>
-command.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/exec">EXEC</a></p></td>
-<td width="59.777%"><p>Filename.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/ida">IDA</a> </p></td>
-<td width="59.777%"><p>Local transfer identifier assigned by the user or user
-application. The maximum length is 64 characters.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idm">IDM</a> </p></td>
-<td width="59.777%"><p>Message identifier. The value of this identifier is unrestricted.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/idu">IDT</a> </p></td>
-<td width="59.777%"><p>Identifier of the original transfer acknowledged by this
-message.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/msg">MSG</a></p></td>
-<td width="59.777%"><p>Message</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a> </strong></p></td>
-<td width="59.777%"><p>Transfer partner identifier.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/pri">PRI</a></p></td>
-<td width="59.777%"><p>Request selection priority.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="19.982%"><p> </p></td>
-<td><p><strong><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> =
-REPLY</strong></p></td>
-<td width="59.777%"><p>Characterizes a reply send transfer.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td colspan="3" width="100%"></td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td rowspan="8" width="19.982%">            <p>Parameters</p>         </td>
+         <td colspan="2">            <p>FOR OPTIONAL
+PARAMETERS COMMON TO SEND: see the <a href="../../c_intro_userinterfaces/command_summary">SEND</a>
+command.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/exec.htm">EXEC</a></p>         </td>
+         <td width="59.777%">            <p>Filename.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/ida.htm">IDA</a> </p>         </td>
+         <td width="59.777%">            <p>Local transfer identifier assigned by the user or user
+application. The maximum length is 64 characters.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/idm.htm">IDM</a> </p>         </td>
+         <td width="59.777%">            <p>Message identifier. The value of this identifier is unrestricted.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/idu.htm">IDT</a> </p>         </td>
+         <td width="59.777%">            <p>Identifier of the original transfer acknowledged by this
+message.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/msg.htm">MSG</a></p>         </td>
+         <td width="59.777%">            <p>Message</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p><strong><a href="../../CFTUTIL/Parameter_index/part.htm">PART</a> </strong></p>         </td>
+         <td width="59.777%">            <p>Transfer partner identifier.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/pri.htm">PRI</a></p>         </td>
+         <td width="59.777%">            <p>Request selection priority.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="19.982%">            <p> </p>         </td>
+         <td>            <p><strong><a href="../../CFTUTIL/Parameter_index/type.htm">TYPE</a> =
+REPLY</strong></p>         </td>
+         <td width="59.777%">            <p>Characterizes a reply send transfer.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td colspan="3" width="100%">         </td>
+      </tr>
+   </tbody>
 </table>

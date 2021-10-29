@@ -36,6 +36,6 @@ In receiver mode, the Transfer CFT accepts
 the FPDUs of segmented records regardless of the local value of the SEGMENT
 parameter.
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

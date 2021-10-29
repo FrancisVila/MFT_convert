@@ -12,4 +12,4 @@ Defines the data compression in the receiver's logical file.
 
 -   0: no compression
 
-[Return to Command index](../../)
+[Return to Command index](../)

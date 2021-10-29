@@ -26,4 +26,4 @@ There are two ways to specify the password:
     where the password is specified in the myfile file; the first file
     record must contain the password in plain format.
 
-[Return to Command index](../../)
+[Return to Command index](../)

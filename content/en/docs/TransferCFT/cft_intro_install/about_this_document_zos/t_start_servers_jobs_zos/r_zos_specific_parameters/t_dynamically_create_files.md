@@ -90,13 +90,13 @@ WFNAME=‘AN.MVS.DSNAME,keword1=value1,keyword2=value2’
 FNAME=‘AN.MVS.DSNAME,keword1=value1,keyword2=value2’
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Keywords are separated with comma, and must be enclosed in quotes.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Keywords are separated with comma, and must be enclosed in quotes.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Supported keywords and values include:
@@ -110,13 +110,13 @@ Supported keywords and values include:
 -   EXPDT=yyyyddd *or* yyddd
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Concerning expiration dates:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Concerning expiration dates:         </td>
+      </tr>
+   </tbody>
 </table>
 
 > -   Expiration dates of 1999365 and 1999366 are considered “never-scratch”.  
@@ -137,13 +137,13 @@ To force the creation of the received file in the EAV section of a volume:
 CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.&PART.&IDTU’
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The ATTSUSER field is presently not managed by Central Governance.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The ATTSUSER field is presently not managed by Central Governance.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example 2
@@ -154,6 +154,6 @@ To create a large (greater than 215,000 records) Transfer CFT catalog:
 
 Related topics
 
--   [Coding Transfer CFT file names](../file_access_and_coding)
--   [Working with files](../t_delete_and_rename_files_zos)
--   [HFS hierarchical files](../c_hfs_hierarchical_files_zos)
+-   [Coding Transfer CFT file names](file_access_and_coding)
+-   [Working with files](t_delete_and_rename_files_zos)
+-   [HFS hierarchical files](c_hfs_hierarchical_files_zos)

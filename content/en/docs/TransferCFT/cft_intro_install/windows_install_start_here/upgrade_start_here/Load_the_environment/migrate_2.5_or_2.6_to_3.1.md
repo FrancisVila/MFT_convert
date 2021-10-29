@@ -1,8 +1,8 @@
 {
-    "title": "Migrate from Transfer CFT\u00a02.5 or 2.6.x",
-    "linkTitle": "Migrate from Transfer CFT\u00a02.5 or 2.6.x",
+    "title": "Migrate from Transfer CFT 2.5 or 2.6 to 3.9",
+    "linkTitle": "Migrate from Transfer CFT 2.5 or 2.6.x",
     "weight": "250"
-}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version 3.9. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../../../../unix_install_start_here/upgrade_start_here/load_the_environment). Additionally, you must have installed your new Transfer CFT 3.9 and applied the most recent service pack.
+}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version 3.9. Before starting this migration procedure, review the prerequisites and information on [loading the environment](transfercft/cft_intro_install/windows_install_start_here/upgrade_start_here/load_the_environment). Additionally, you must have installed your new Transfer CFT 3.9 and applied the most recent service pack.
 
 ## Migrate the configuration
 
@@ -10,18 +10,18 @@
 
 Migrate PARM, PART, IDF and other static configuration objects.
 
-1.  Load the former Transfer CFT (2.5 or 2.6) environment. See the [Migration prerequisites](../../../../unix_install_start_here/upgrade_start_here/load_the_environment) for details.
+1.  Load the former Transfer CFT (2.5 or 2.6) environment. See the [Migration prerequisites](transfercft/cft_intro_install/windows_install_start_here/upgrade_start_here/load_the_environment) for details.
 
 <!-- -->
 
 1.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p><span>CFTUTIL CFTEXT type=all, fout=cft-extract.conf</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><span>CFTUTIL CFTEXT type=all, fout=cft-extract.conf</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT 3.9 installation.
@@ -37,11 +37,11 @@ Migrate PARM, PART, IDF and other static configuration objects.
     Enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftinit cft-extract.conf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftinit cft-extract.conf         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Migrating UCONF parameters
@@ -67,11 +67,11 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1.  For each parameter you select, add a line to the new script file in the format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>UCONFSET id=&lt;parameter_id&gt;, value=&lt;value&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>UCONFSET id=&lt;parameter_id&gt;, value=&lt;value&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Load the new Transfer CFT 3.9 environment.
@@ -81,11 +81,11 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1.  Import the selected UCONF parameters using the script file and the CFTUTIL command. Replace the &lt;script\_filename> with the new script file path:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>CFTUTIL &lt;prefix_character&gt;&lt;script_filename&gt;</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>CFTUTIL &lt;prefix_character&gt;&lt;script_filename&gt;</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
@@ -139,11 +139,11 @@ Example
 1.  Export the catalog using the command CFTMI240.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=&lt;catalog_2.5_filename&gt;, ofname=catalog_output.xml</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=&lt;catalog_2.5_filename&gt;, ofname=catalog_output.xml         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Load the new Transfer CFT 3.9 environment.
@@ -158,11 +158,11 @@ Example
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=&lt;catalog_filename_new_installation&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=&lt;catalog_filename_new_installation&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Migrating the communication media files
@@ -174,11 +174,11 @@ Example
 1.  Export the communication media file using command CFTMI240:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=&lt;com_2.5_filename&gt;, ofname=com_output.xml</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=&lt;com_2.5_filename&gt;, ofname=com_output.xml</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Load the new Transfer CFT 3.9 environment.
@@ -196,9 +196,9 @@ Example
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=&lt;com_filename_new_installation&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=&lt;com_filename_new_installation&gt;         </td>
+      </tr>
+   </tbody>
 </table>

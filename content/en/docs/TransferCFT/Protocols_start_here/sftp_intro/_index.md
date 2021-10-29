@@ -1,23 +1,23 @@
 {
-    "title": "SFTP protocol",
+    "title": "Using SFTP ",
     "linkTitle": "SFTP protocol",
     "weight": "120"
-}T**he supported operating systems are listed in the** [Platform features](../../datasheet) **table.**
+}T**he supported operating systems are listed in the** [Platform features](../datasheet) **table.**
 
 The SSH File Transfer Protocol (SFTP) is a protocol that transfers files over an encrypted SSH channel. Transfer CFT supports the SFTP versions 3, 4, 5 and 6 for both client and server functionality.
 
 The following sections describe the Transfer CFT SFTP feature:
 
--   [Supported operations](#supporte)
--   [Supported Transfer CFT features](#supporte2)
--   [Use cases](#use)
--   [Configuration template](#configur)
--   [Limitations](#limitati)
+-   [Supported operations](#Supporte)
+-   [Supported Transfer CFT features](#Supporte2)
+-   [Use cases](#Use)
+-   [Configuration template](#Configur)
+-   [Limitations](#Limitati)
 -   Transcoding
 -   Protocol, partner, and flow definition
--   [PKI formats and use](pki_keys_use.htm)
--   [SFTP examples](cftssh_example)
--   [Troubleshoot SFTP](sftp_troubleshoot)
+-   PKI formats and use
+-   [SFTP examples](cftssh_example.htm)
+-   [Troubleshoot SFTP](sftp_troubleshoot.htm)
 
 ## <span id="Supporte"></span>Supported operations
 
@@ -56,13 +56,13 @@ Use case 1: Connecting networks
 
 Transfer CFT can integrate with non-PeSIT based file transfer networks, as a server as well as a client.
 
-> ![](sftp_arch2.jpg)
+> ![](/Images/TransferCFT/sftp_arch1.jpg)
 
 Use case 2: Application to application file transfers
 
 Alternatively, you can implement Transfer CFT with SFTP in application to application flow scenarios. Transfer CFT can transfer files between applications using PeSIT or SFTP, as either a client or a server.
 
-> ![](sftp_arch2.jpg)
+> ![](/Images/TransferCFT/sftp_arch2.jpg)
 
 ## <span id="Configur"></span>Configuration template
 
@@ -82,11 +82,11 @@ Transfer CFT supports the use of Amazon S3 for SFTP file transfers. Configure a
 To add a workingdir sub-folder, use the format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Limitati"></span>Limitations

@@ -1,6 +1,6 @@
 {
-    "title": "Solaris:\u00a0Customize the kernel",
-    "linkTitle": "Solaris:\u00a0Customize the kernel",
+    "title": "Solaris: Customize the kernel",
+    "linkTitle": "Solaris: Customize the kernel",
     "weight": "230"
 }This topic describes how to customize Solaris for Transfer CFT.
 
@@ -16,26 +16,26 @@ Transfer CFT makes extensive use of System V IPC services and file access servic
 While most of the corresponding parameter default values are suitable for normal Transfer CFT functioning, three of these parameter values must have at least the following minimum values:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Resource control</th>
-<th><span>Transfer CFT</span> minimum value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>project.max-shm-memory</td>
-<td>33554432</td>
-</tr>
-<tr class="even">
-<td>process.max-msg-messages</td>
-<td>8192</td>
-</tr>
-<tr class="odd">
-<td>process.max-file-descriptor</td>
-<td>1024</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Resource control</th>
+         <th><span>Transfer CFT</span> minimum value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>project.max-shm-memory         </td>
+         <td>33554432         </td>
+      </tr>
+      <tr class="even">
+         <td>process.max-msg-messages         </td>
+         <td>8192         </td>
+      </tr>
+      <tr class="odd">
+         <td>process.max-file-descriptor         </td>
+         <td>1024         </td>
+      </tr>
+   </tbody>
 </table>
 
 This means that you must modify the corresponding resource controls to meet the requirements of the project associated with the user account that Transfer CFT will run under.
@@ -55,11 +55,11 @@ For the following command examples, we use "cft\_project" as the name of the pro
 The following command sets this value to 32 MB:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>projmod -s -K "project.max-shm-memory=(privileed,33554432,deny) cft_project</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>projmod -s -K "project.max-shm-memory=(privileed,33554432,deny) cft_project         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Change the maximum number of messages
@@ -67,11 +67,11 @@ The following command sets this value to 32 MB:
 The following command sets this value to 8192:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>projmod -s -K "process.max-msg-messages=(privileged,8192, deny) cft_project</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>projmod -s -K "process.max-msg-messages=(privileged,8192, deny) cft_project         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Change the maximum number of open files per process
@@ -79,9 +79,9 @@ The following command sets this value to 8192:
 The following command assigns a value of 1024 to this parameter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>projmod -s -K "process.max-file-descriptor(privileged,1024, deny) cft_project</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>projmod -s -K "process.max-file-descriptor(privileged,1024, deny) cft_project         </td>
+      </tr>
+   </tbody>
 </table>

@@ -14,4 +14,4 @@ This parameter is used to associate a file name with a partner. During
 a send or receive operation (CFTSEND or SEND, CFTRECV or RECV), this value
 is concatenated with the name specified in the FNAME parameter.
 
-[Return to Command index](../../)
+[Return to Command index](../)

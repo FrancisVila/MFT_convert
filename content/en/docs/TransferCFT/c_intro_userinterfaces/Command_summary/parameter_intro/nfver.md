@@ -62,4 +62,4 @@ the default value is 0.
 It is consequently recommended to define one send command (CFTSEND)
 for each type of file to be processed (normal or with versions).
 
-[Return to Command index](../../)
+[Return to Command index](../)

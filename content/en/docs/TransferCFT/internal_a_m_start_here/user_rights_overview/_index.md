@@ -1,7 +1,7 @@
 {
-    "title": "Manage user rights",
-    "linkTitle": "Manage user rights",
-    "weight": "190"
+    "title": "About Transfer CFT system users ",
+    "linkTitle": "About system users ",
+    "weight": "210"
 }There are two basic types of rights needed to enable Transfer CFT flows: the rights required to perform activities, such as starting or configuring Transfer CFT, and the rights that apply to files themselves.
 
 This topic describes the parameters used to manage:
@@ -13,7 +13,7 @@ When using Central Governance, you can create users and assign them roles and pr
 
 The [User rights and privileges use cases](user_rights_security_scenarios) section provides common user rights use cases, and describes parameter combinations that let you achieve your desired level of security. These scenarios feature users with example privileges that are granted in Central Governance, your actual user rights might vary.
 
-This topic begins with a brief review of key user control parameters, followed by a [User rights use case](user_rights_use_case.htm), step instructions, and then best practices in [Recommendations and troubleshooting](user_rights_tips).
+This topic begins with a brief review of key user control parameters, followed by a User rights use case, step instructions, and then best practices in [Recommendations and troubleshooting](user_rights_tips).
 
 ## Procedure overview
 

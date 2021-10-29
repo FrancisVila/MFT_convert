@@ -1,15 +1,15 @@
 {
-    "title": "Wait for catalog value to reach a state - SWAITCAT",
+    "title": "Wait for the catalog value to reach a state - SWAITCAT",
     "linkTitle": "Wait for catalog value to reach a state - SWAITCAT",
     "weight": "280"
 }The SWAITCAT command enables a client to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
-Command syntax: [SWAITCAT](../../../c_intro_userinterfaces/command_summary)
+Command syntax: [SWAITCAT](../../c_intro_userinterfaces/command_summary)
 
-Task examples: [SWAITCAT tasks](../../../c_intro_userinterfaces/about_cftutil/managing_transfer_states/sync_transfer_request_tasks)
+Task examples: [SWAITCAT tasks](sync_transfer_request_tasks)
 
-Alternatively, you can use the parameters [WSTATES](wstates.htm) and [WTIMEOUT](wtimeout.htm) to replace SWAITCAT functionality.
+Alternatively, you can use the parameters WSTATES and WTIMEOUT to replace SWAITCAT functionality.
 
 ## Command features
 
@@ -45,11 +45,11 @@ command specific errors are:
 
 ### Parameters
 
--   [SELECT](../../../c_intro_userinterfaces/command_summary/parameter_intro/select)
--   [STATES](../../../c_intro_userinterfaces/command_summary/parameter_intro/states)
--   [PHASES](../../../c_intro_userinterfaces/command_summary/parameter_intro/phases)
--   [PHASESTEPS](../../../c_intro_userinterfaces/command_summary/parameter_intro/phasesteps)
--   [TIMEOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/timeout)
+-   [SELECT](../../c_intro_userinterfaces/command_summary/parameter_intro/select)
+-   [STATES](../../c_intro_userinterfaces/command_summary/parameter_intro/states)
+-   [PHASES](../../c_intro_userinterfaces/command_summary/parameter_intro/phases)
+-   [PHASESTEPS](../../c_intro_userinterfaces/command_summary/parameter_intro/phasesteps)
+-   [TIMEOUT](../../c_intro_userinterfaces/command_summary/parameter_intro/timeout)
 
 ### Select
 
@@ -57,11 +57,11 @@ Use this parameter allows you to filter on a particular transfer so that you can
 mandatory argument for which the value must be enclosed in double quotes.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SWAITCAT select="EXPRESSION"</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SWAITCAT select="EXPRESSION"         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Expression**
@@ -131,7 +131,7 @@ The Phasesteps parameter is a string that can be composed of D, H, C, K, X, E an
 -   \(C\) Processing/Current: The Phase processing is being executed.
 -   \(R\) Retry: Retries renaming the file using the FACTION retryrename value.
 -   \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
--   \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../managing_exits/about_the_end_of_transfer_type_exit).
+-   \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../managing_exits/about_the_end_of_transfer_type_exit).
 
 ### States
 
@@ -164,19 +164,19 @@ one year (365\*24\*3600 s).
 This example selects the first transfer that has the following IDTU.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SWAITCAT select='IDTU=="A00000A"'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SWAITCAT select='IDTU=="A00000A"'         </td>
+      </tr>
+   </tbody>
 </table>
 
 The following example filters on transfers having the D state, but completes as soon as the first transfer reaches the TX state (even though there may be more transfers in the D state).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SWAITCAT select='state=="D"',states=TX</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SWAITCAT select='state=="D"',states=TX         </td>
+      </tr>
+   </tbody>
 </table>

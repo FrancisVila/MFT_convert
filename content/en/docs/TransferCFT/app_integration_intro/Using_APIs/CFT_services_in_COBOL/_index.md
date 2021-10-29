@@ -1,7 +1,7 @@
 {
-    "title": "Using services in COBOL",
-    "linkTitle": "Using services in COBOL",
-    "weight": "330"
+    "title": "About Transfer CFT services in COBOL",
+    "linkTitle": "About services in COBOL",
+    "weight": "350"
 }This book begins with this topic
 which provides information about using the Transfer CFT services in COBOL.
 
@@ -19,13 +19,13 @@ interfaces.
 ## <span id="Call Syntax"></span>Call syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CALL <span>CFTx</span> USING &lt;verb&gt;
+   <tbody>
+      <tr class="odd">
+         <td>CALL <span>CFTx</span> USING &lt;verb&gt;
 &lt;blk&gt;
-&lt;param&gt; &lt;rc&gt;</td>
-</tr>
-</tbody>
+&lt;param&gt; &lt;rc&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -59,15 +59,15 @@ The return codes are returned by the programming interfaces in the form
 of mnemonics.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is strongly recommended that you test the return codes of services
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is strongly recommended that you test the return codes of services
 provided by the <span>Transfer CFT</span> programming interfaces through mnemonics,
-the corresponding values being able to <em>change without notice</em>.</td>
-</tr>
-</tbody>
+the corresponding values being able to <em>change without notice</em>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The return codes are listed in the cftapi.cop

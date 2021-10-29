@@ -9,4 +9,4 @@
 
  
 
-&lt;&lt; [My first transfer flow](../../)
+&lt;&lt; [My first transfer flow](../)

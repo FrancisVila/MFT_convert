@@ -1,8 +1,8 @@
 {
-    "title": "Example send file request",
+    "title": "Example send file transfer request",
     "linkTitle": "Example send file request",
     "weight": "340"
-}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can retrieve transfer processing information in the Transfer CFT catalog using a [Web services catalog search request](../example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
+}This section describes how to execute a SEND transfer request using Web services. After submitting a request you can retrieve transfer processing information in the Transfer CFT catalog using a [Web services catalog search request](example_search_catalog). Responses to SEND requests may differ depending on the type of COM media file that you are using (File or TCP).
 
 ## XFER\_CMD\_SEND\_FILE request
 
@@ -40,7 +40,7 @@ This example request uses only the minimal number of options needed to submit th
 
 ## Successful response
 
-In the following successful response, you can see that the IDTU value CAT\_IDTU is returned. While the IDTU value CAT\_IDTU indicates that the request is correctly delivered to Transfer CFT, you do not know the transfer status. To obtain the transfer status, see the section describing how to use the [XFER\_CAT\_SELECT](../example_search_catalog) function to view the catalog.
+In the following successful response, you can see that the IDTU value CAT\_IDTU is returned. While the IDTU value CAT\_IDTU indicates that the request is correctly delivered to Transfer CFT, you do not know the transfer status. To obtain the transfer status, see the section describing how to use the [XFER\_CAT\_SELECT](example_search_catalog) function to view the catalog.
 
 &lt;soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 
@@ -61,13 +61,13 @@ In the following successful response, you can see that the IDTU value CAT\_IDTU 
 &lt;/soap:Envelope>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The values displayed are example values and yours results may differ.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The values displayed are example values and yours results may differ.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Unsuccessful response
@@ -101,13 +101,13 @@ If Transfer CFT is not started and you are using TCP, an error message is displ
 &lt;/soap:Envelope>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The return code here is 7, while a successful request would return the value 3.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The return code here is 7, while a successful request would return the value 3.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Using the File media type
@@ -136,4 +136,4 @@ If Copilot is down you get a "connection refused" type of error, regardless of w
 
 Related topics
 
-[Get started with Web services](../get_started_web_services)
+[Get started with Web services](get_started_web_services)

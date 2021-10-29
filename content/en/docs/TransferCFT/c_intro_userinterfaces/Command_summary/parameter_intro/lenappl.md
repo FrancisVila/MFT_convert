@@ -10,8 +10,8 @@
 | n}\]    {1...32}
 
 Length to be taken into account when comparing the file/message identifier
-(IDF or IDM) with the identifier of a CFTAPPL command. See [Assigning
-an Owner to a transfer](transfer_owner_cftappl.htm) in CFTAPPL for more
+(IDF or IDM) with the identifier of a CFTAPPL command. See Assigning
+an Owner to a transfer in CFTAPPL for more
 information.
 
 Enter the identifier length to to be used when comparing the file/message
@@ -23,4 +23,4 @@ with a CFTAPPL object identifier:
 -   any
     value from 1 to 32
 
-[Return to Command index](../../)
+[Return to Command index](../)

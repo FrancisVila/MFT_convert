@@ -28,6 +28,6 @@ The modules concerned are:
 
 Related topics
 
-[About the operator interface commands](../../../t_start_servers_jobs_zos/t_system_environment_zos/r_about_operator_interface_commands)
+[About the operator interface commands](../../t_start_servers_jobs_zos/t_system_environment_zos/r_about_operator_interface_commands)
 
-[Diagnostic commands](../../../t_start_servers_jobs_zos/t_system_environment_zos/c_diagnostic_commands)
+[Diagnostic commands](#)

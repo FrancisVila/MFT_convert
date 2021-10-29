@@ -1,17 +1,17 @@
 {
-    "title": "Using system users",
+    "title": "Using system users - UNIX",
     "linkTitle": "Using system users",
     "weight": "250"
 }This section describes two optional UNIX-specific tasks that you can perform to enable system user authentication and file system rights, and which are not mutually exclusive.
 
--   [Enable the file user rights (USERCTRL)](#manually)
-    -   [Transfer CFT starts the CFTSU process](#automati2)
-    -   [User starts the CFTSUD process](#manually2)
--   [Using system users - UNIX](#enable)
+-   [Enable the file user rights (USERCTRL)](#Manually)
+    -   [Transfer CFT starts the CFTSU process](#Automati2)
+    -   [User starts the CFTSUD process](#Manually2)
+-   [Using system users - UNIX](#Enable)
 
 ## <span id="Manually"></span>Enable the file user rights (USERCTRL)
 
-To enable file system rights in Unix, configure one of the following two scenarios to execute using the either the CFTSU or the CFTSUD process. See also, [USERCTRL](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl). Reminder, on UNIX due to case sensitivity CFTSU is not the same as the cftsu file, which is dedicated to the Transfer CFT Copilot server.
+To enable file system rights in Unix, configure one of the following two scenarios to execute using the either the CFTSU or the CFTSUD process. See also, [USERCTRL](../CFTUTIL/Parameter_index/userctrl.htm). Reminder, on UNIX due to case sensitivity CFTSU is not the same as the cftsu file, which is dedicated to the Transfer CFT Copilot server.
 
 ### <span id="Automati2"></span>Transfer CFT starts the CFTSU process 
 
@@ -26,11 +26,11 @@ Perform the following steps so that when Transfer CFT starts the CFTSU process i
     Ensure that the destination directory is outside of the $`CFTDIRINSTALL `directory to allow automatic updating when you apply a Transfer CFT service pack or update.
 6.  Set the UCONF cft.unix.cftsu.fname parameter to the directory used above, for example /opt/cft/CFTSU.  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>CFTUTIL uconfset id=cft.unix.cftsu.fname,value=/opt/cft/CFTSU</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>CFTUTIL uconfset id=cft.unix.cftsu.fname,value=/opt/cft/CFTSU         </td>
+          </tr>
+       </tbody>
     </table>
 7.  Execute the commands:  
     chown root:root /opt/cft/CFTSU  
@@ -43,13 +43,13 @@ Perform the following steps so that when Transfer CFT starts the CFTSU process i
     The` cftsu_setup` is a necessary step as it is required if at a later date you want to update or upgrade.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After starting Transfer CFT, with a user other than root, the message <span>CFTI34I PID=13653 /opt/cft/CFTSU Task started successfully (MQID=None) </span>confirms that the CFTSU steps above were successful.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After starting Transfer CFT, with a user other than root, the message <span>CFTI34I PID=13653 /opt/cft/CFTSU Task started successfully (MQID=None) </span>confirms that the CFTSU steps above were successful.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### CFTSU procedures for updates and upgrades
@@ -109,13 +109,13 @@ There are two ways to enable the system user authentication:
 -   For the deprecated Transfer CFT UI (Copilot): set `copilot.misc.createprocessasuser=yes`
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Note that the <code>copilot.misc.createprocessasuser</code> parameter is set to <code>NO </code>for Unix systems by default.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Note that the <code>copilot.misc.createprocessasuser</code> parameter is set to <code>NO </code>for Unix systems by default.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Proceed as follows:
@@ -138,11 +138,11 @@ Proceed as follows:
     The cftsu\_setup is a necessary step to perform once, as it is required if at a later date you want to update or upgrade.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Once you perform the following procedure once, there is no need to repeat these steps when applying a Transfer CFT update (they are done automatically).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Once you perform the following procedure once, there is no need to repeat these steps when applying a Transfer CFT update (they are done automatically).         </td>
+      </tr>
+   </tbody>
 </table>

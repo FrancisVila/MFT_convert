@@ -1,21 +1,19 @@
 {
-    "title": "Server transfer",
+    "title": "Server  transfer",
     "linkTitle": "Server transfer",
     "weight": "220"
-}# <span id="Server_transfer"></span>Server transfer
-
-This topic describes the steps involved in a server transfer. These
+}This topic describes the steps involved in a server transfer. These
 steps include:
 
 -   [Receiving
-    an incoming call](#receiving_an_incoming_call)
+    an incoming call](#Receiving_an_incoming_call)
 -   [Exchanging
-    protocol information](#exchanging_protocol_information)
+    protocol information](#Exchanging_protocol_information)
 -   [Creating
-    or releasing the file](#creating_or_releasing_the_file)
+    or releasing the file](#Creating_or_releasing_the_file)
 -   [Transferring
-    data](#transferring_data)
--   [Disconnecting](#disconnecting)
+    data](#Transferring_data)
+-   [Disconnecting](#Disconnecting)
 
 ### <span id="Receiving_an_incoming_call"></span>Receiving an incoming call
 
@@ -35,7 +33,7 @@ to parameter limitations, the network connection is closed.
 The messages exchanged during this phase are part of the reciprocal
 partner recognition (authorization checks: passwords, time slots, etc.).
 The messages also help in negotiating protocol parameters. The data exchanged
-during this phase differs according to the protocol. See also [Protocols.](../../../protocols_start_here)
+during this phase differs according to the protocol. See also [Protocols.](../../Prots/Protocols_start_here.htm)
 
 Transfer CFT may refuse the transfer if:
 

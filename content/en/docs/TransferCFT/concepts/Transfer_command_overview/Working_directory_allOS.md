@@ -56,10 +56,10 @@ Note the following conventions and recommendations:
 
 This section provides the following examples along with a brief description:
 
--   [Workingdir using a relative fname](#workingd)
--   [Workingdir and directory tree control](#workingd2)
--   [Workingdir using the &HOME symbolic variable (example 1)](#workingd3)
--   [Workingdir using the &HOME symbolic variable (example 2)](#workingd4)
+-   [Workingdir using a relative fname](#Workingd)
+-   [Workingdir and directory tree control](#Workingd2)
+-   [Workingdir using the &HOME symbolic variable (example 1)](#Workingd3)
+-   [Workingdir using the &HOME symbolic variable (example 2)](#Workingd4)
 
 #### <span id="Workingd"></span>Workingdir using a relative fname
 
@@ -68,21 +68,21 @@ This example uses a relative fname to send a file that is not in the default dir
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF1, fname = b.txt, WORKINGDIR=/home/user02</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF1, fname = b.txt, WORKINGDIR=/home/user02</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF1, WORKINGDIR = /home/user01</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF1, WORKINGDIR = /home/user01</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -90,11 +90,11 @@ User01:
 The application that is running under the user01 system account sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf=IDF1, part=PART1,fname=a.txt</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf=IDF1, part=PART1,fname=a.txt</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd2"></span>Workingdir and directory tree control
@@ -104,21 +104,21 @@ In this example, the application that is running under the user01 system account
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF2,fname = b.txt, WORKINGDIR = /home/user02</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF2,fname = b.txt, WORKINGDIR = /home/user02</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF2, WORKINGDIR = /home/user01/pub</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF2, WORKINGDIR = /home/user01/pub</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -126,11 +126,11 @@ User01:
 The application that is running under the user01 system account tries to send the home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf=IDF2, part=PART1, fname=home/user01/priv/a.txt</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf=IDF2, part=PART1, fname=home/user01/priv/a.txt</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd3"></span>Workingdir using the &HOME symbolic variable (example 1)
@@ -142,25 +142,25 @@ At the end of the transfer, the Transfer CFT server executes a reply.cmd script 
 Server:
 
 <table data-cellspacing="0">
-<colgroup>
-<col style="width: 100%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF3, fname = &amp;FROOT, exec = exec/reply.cmd,<br />
-        WORKINGDIR = &amp;HOME, userid = &amp;ruser</p></td>
-</tr>
-</tbody>
+   <colgroup>      
+         <col style="width: 100%" />
+   </colgroup>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF3, fname = &amp;FROOT, exec = exec/reply.cmd,<br />
+        WORKINGDIR = &amp;HOME, userid = &amp;ruser</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND  id = IDF3,  WORKINGDIR = &amp;HOME</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND  id = IDF3,  WORKINGDIR = &amp;HOME</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -168,11 +168,11 @@ User01:
 The application that is running under the user01 system account sends the 'file\_to\_send' file to the remote partner PART1 using the transfer flow IDF3.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND idf = IDF3, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND idf = IDF3, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd4"></span>Workingdir using the &HOME symbolic variable (example 2)
@@ -184,21 +184,21 @@ The file to send is in user01's home directory. The file is received in user02's
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV fname = &amp;FROOT, exec = &amp;HOME/exec/reply.cmd, WORKINGDIR = &amp;HOME, userid = &amp;ruser</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV fname = &amp;FROOT, exec = &amp;HOME/exec/reply.cmd, WORKINGDIR = &amp;HOME, userid = &amp;ruser</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF4, WORKINGDIR = &amp;HOME</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF4, WORKINGDIR = &amp;HOME</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -206,11 +206,11 @@ User01:
 The application that is running under the user01 system account sends the ‘file\_to\_send’ file to the remote partner PART1 using the transfer flow IDF4.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = 'file_to_send', RUSER='"user02"'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Using working directory in IBM i and z/OS
@@ -245,9 +245,9 @@ Note the following Transfer CFT z/OS or IBM i conventions and recommendations:
 
 ### HFS examples
 
--   [Workingdir using a HFS relative fname](#workingd7)
--   [Workingdir and HFS directory tree control](#workingd8)
--   [Workingdir using the HFS &HOME symbolic variable](#workingd9)
+-   [Workingdir using a HFS relative fname](#Workingd7)
+-   [Workingdir and HFS directory tree control](#Workingd8)
+-   [Workingdir using the HFS &HOME symbolic variable](#Workingd9)
 
 #### <span id="Workingd7"></span>Workingdir using a HFS relative fname
 
@@ -256,21 +256,21 @@ The example command sends the file `/home/user01/a.txt`, which on reception is `
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF1, fname = “b.txt”, WORKINGDIR = “/home/user02”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF1, fname = “b.txt”, WORKINGDIR = “/home/user02”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF1, WORKINGDIR = “/home/user01”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF1, WORKINGDIR = “/home/user01”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -278,11 +278,11 @@ User01:
 The application sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF1, part = PART1, fname = “a.txt”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF1, part = PART1, fname = “a.txt”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd8"></span>Workingdir and HFS directory tree control
@@ -292,11 +292,11 @@ In this example, the application tries to send a file that is outside the workin
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF2, WORKINGDIR = “/home/user01/pub”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF2, WORKINGDIR = “/home/user01/pub”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -304,11 +304,11 @@ User01:
 The application tries to send the /home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF2, part = PART1,fname = “/home/user01/priv/a.txt”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF2, part = PART1,fname = “/home/user01/priv/a.txt”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd9"></span>Workingdir using the &HOME symbolic variable
@@ -318,21 +318,21 @@ In this example, the file to send is located in user01's HFS home directory. The
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF3, fname = “&amp;FROOT”, WORKINGDIR = “&amp;HOME”, userid = &amp;RUSER</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF3, fname = “&amp;FROOT”, WORKINGDIR = “&amp;HOME”, userid = &amp;RUSER</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF3, WORKINGDIR = “&amp;HOME”</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF3, WORKINGDIR = “&amp;HOME”</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -340,18 +340,18 @@ User01:
 The application that is running under the user01 system account sends the file 'a.txt' file to the remote partner PART1 using the transfer flow IDF3.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF3, part = PART1, fname = “a.txt”, RUSER = "user02"</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF3, part = PART1, fname = “a.txt”, RUSER = "user02"</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Data set examples on z/OS
 
--   [Workingdir using a data set file name](#workingd10)
--   [Workingdir using a data set file name and the &USERID symbolic variable](#workingd11)
--   [Workingdir using a partitioned data set file name](#workingd12)
+-   [Workingdir using a data set file name](#Workingd10)
+-   [Workingdir using a data set file name and the &USERID symbolic variable](#Workingd11)
+-   [Workingdir using a partitioned data set file name](#Workingd12)
 
 #### <span id="Workingd10"></span>Workingdir using a data set file name
 
@@ -360,21 +360,21 @@ The example command sends the file USER01.SND.FTEST, which on reception is USER0
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF4, fname = FTEST, WORKINGDIR = USER01.RCV.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF4, fname = FTEST, WORKINGDIR = USER01.RCV.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF4, WORKINGDIR = USER01.SND.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF4, WORKINGDIR = USER01.SND.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -382,11 +382,11 @@ User01:
 The application sends the file to the remote partner PART1 using the transfer flow IDF4.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = FTEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF4, part = PART1, fname = FTEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd11"></span>Workingdir using a data set file name and the &USERID symbolic variable
@@ -396,21 +396,21 @@ In this example, the user USER01 sends the file USER01.SND.FTEST, which on recep
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF5, fname = FTEST, WORKINGDIR = &amp;USERID.RCV., userid = &amp;RUSER</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF5, fname = FTEST, WORKINGDIR = &amp;USERID.RCV., userid = &amp;RUSER</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF5, WORKINGDIR = &amp;USERID.SND.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF5, WORKINGDIR = &amp;USERID.SND.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -418,11 +418,11 @@ User01:
 The user USER01 sends the file to the remote partner PART1 using the transfer flow IDF5.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF5, part = PART1, fname = FTEST, RUSER = USER02</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF5, part = PART1, fname = FTEST, RUSER = USER02</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd12"></span>Workingdir using a partitioned data set file name
@@ -432,21 +432,21 @@ The example command sends the file USER01.SND.LIB(TEST), which on reception is U
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF6, fname = &amp;FROOT, WORKINGDIR = USER01.RCV.LIB</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF6, fname = &amp;FROOT, WORKINGDIR = USER01.RCV.LIB</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF6, WORKINGDIR = USER01.SND.LIB</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF6, WORKINGDIR = USER01.SND.LIB</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -454,17 +454,17 @@ User01:
 The application sends the file to the remote partner PART1 using the transfer flow IDF6.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF6, part = PART1, fname = TEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF6, part = PART1, fname = TEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Database (\*MBR and \*FILE) examples on IBM i
 
--   [Workingdir using a \*MBR file name](#workingd13)
--   [Workingdir using a \*FILE file name](#workingd14)
+-   [Workingdir using a \*MBR file name](#Workingd13)
+-   [Workingdir using a \*FILE file name](#Workingd14)
 
 #### <span id="Workingd13"></span>Workingdir using a \*MBR file name
 
@@ -473,21 +473,21 @@ The example command sends the file CFTPROD/SND(FTEST), which on reception is CFT
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF7, fname = FTEST, WORKINGDIR = CFTPROD2/RCV</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF7, fname = FTEST, WORKINGDIR = CFTPROD2/RCV</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF7, WORKINGDIR = CFTPROD/SND</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF7, WORKINGDIR = CFTPROD/SND</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -495,11 +495,11 @@ User01:
 The application sends the file to the remote partner PART1 using the transfer flow IDF7.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF7, part = PART1, fname = FTEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF7, part = PART1, fname = FTEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Workingd14"></span>Workingdir using a \*FILE file name
@@ -509,21 +509,21 @@ The example command sends the file CFTPROD/UTIN(FTEST), which on reception is CF
 Server:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = IDF8, fname = UTIN(FTEST), WORKINGDIR = CFTPROD2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = IDF8, fname = UTIN(FTEST), WORKINGDIR = CFTPROD2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Client:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = IDF8, WORKINGDIR = CFTPROD</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = IDF8, WORKINGDIR = CFTPROD</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 User01:
@@ -531,9 +531,9 @@ User01:
 The application sends the file to the remote partner PART1 using the transfer flow IDF8.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&gt; CFTUTIL send idf = IDF8, part = PART1, fname = UTIN(FTEST)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&gt; CFTUTIL send idf = IDF8, part = PART1, fname = UTIN(FTEST)</p>         </td>
+      </tr>
+   </tbody>
 </table>

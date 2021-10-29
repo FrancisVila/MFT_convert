@@ -1,10 +1,8 @@
 {
-    "title": "Specific network functions",
+    "title": "Specific  network functions",
     "linkTitle": "Specific network functions",
     "weight": "260"
-}# <span id="Specific_network_functions"></span>Specific network functions
-
-This topic presents the TCP network supported by Transfer CFT Windows,
+}This topic presents the TCP network supported by Transfer CFT Windows,
 and how to define the network parameters.
 
 ## <span id="Supported_networks"></span>Supported networks
@@ -36,7 +34,7 @@ where:
         A TCP/IP network process parameter
     -   &lt;parameter>: An element containing the value of one of the specific parameters indicated
         in this documentation. For more information see [Environment
-        Variables](../../specific_system_functions/env_variables_and_specific_parms)
+        Variables](../specific_system_functions/env_variables_and_specific_parms)
     -   value: An element that takes on a value belonging to the parameter stated
         in field and according to the documentation
 

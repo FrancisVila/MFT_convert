@@ -1,10 +1,8 @@
 {
-    "title": "Configuring OFTP",
+    "title": "Configuring  OFTP (ODETTE)",
     "linkTitle": "Configuring OFTP",
     "weight": "160"
-}# <span id="About_the_Odette_Configuration"></span><span id="Configuring_Odette"></span>Configuring OFTP (ODETTE)
-
-This topic describes the objects
+}This topic describes the objects
 that you must configure to use the OFTP protocol, before submitting a file transfer. The following list describes
 each of the Transfer CFT objects. Each of these objects topics indicates
 the parameters that you must set to complete the Transfer CFT OFTP configuration.
@@ -78,11 +76,11 @@ the local CREDIT value to the CREDIT value negotiated during the connection
 phase.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In accordance with the operation
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In accordance with the operation
 of the Transfer CFT transfer monitor, a transfer in process is acknowledged
 by determining synchronization points. These points acknowledge the data
 which have just been transferred. With the Odette protocol, the synchronization
@@ -90,9 +88,9 @@ points are taken each time a CREDIT is received or sent. All the data
 sent are consequently acknowledged when the requester receives a CREDIT.
 Conversely, the previously received data are acknowledged when the Server
 sends a CREDIT. The CREDIT value ranges from 1 to 999. The recommended
-value is *CREDIT = 4 .</td>
-</tr>
-</tbody>
+value is *CREDIT = 4 .         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Two_way_exchanges"></span>Two-way exchanges
@@ -120,37 +118,37 @@ proposed by site A, and SRIN is the transfer direction determined by site
 B.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>If...</p></th>
-<th><p>Then the final values are...</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td><p>SROUT = BOTH and SRIN = SENDER</p></td>
-<td width="50%"><p>SROUT = RECEIVER and SRIN = SENDER</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p>SROUT = BOTH and SRIN = RECEIVER</p></td>
-<td width="50%"><p>SROUT = SENDER and SRIN = RECEIVER</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p>SRIN = BOTH and SROUT = SENDER</p></td>
-<td width="50%"><p>SROUT = SENDER and SRIN = RECEIVER</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p>SRIN = BOTH and SROUT = RECEIVER</p></td>
-<td width="50%"><p>SROUT = RECEIVER and SRIN = SENDER</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p>SRIN  = BOTH and SROUT = BOTH</p></td>
-<td width="50%"><p>SROUT = BOTH and SRIN = BOTH</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>If...</p></th>
+         <th>            <p>Then the final values are...</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td>            <p>SROUT = BOTH and SRIN = SENDER</p>         </td>
+         <td width="50%">            <p>SROUT = RECEIVER and SRIN = SENDER</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p>SROUT = BOTH and SRIN = RECEIVER</p>         </td>
+         <td width="50%">            <p>SROUT = SENDER and SRIN = RECEIVER</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p>SRIN = BOTH and SROUT = SENDER</p>         </td>
+         <td width="50%">            <p>SROUT = SENDER and SRIN = RECEIVER</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p>SRIN = BOTH and SROUT = RECEIVER</p>         </td>
+         <td width="50%">            <p>SROUT = RECEIVER and SRIN = SENDER</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p>SRIN  = BOTH and SROUT = BOTH</p>         </td>
+         <td width="50%">            <p>SROUT = BOTH and SRIN = BOTH</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-The [SRIN](../../../c_intro_userinterfaces/command_summary/parameter_intro/srin) parameter,
+The [SRIN](../../c_intro_userinterfaces/command_summary/parameter_intro/srin) parameter,
 present in the Start Session IDentification, serves as a basis for negotiation
 for the FPDU SSID RESPONSE.
 
@@ -161,8 +159,8 @@ The SROUT parameter is present in the connection FPDU SSID.
 To set the maximum size of the NSDU, Network
 Service Data
 Unit, for transmission and reception
-set the [SRUSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/srusize)
-and [RRUSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/rrusize).
+set the [SRUSIZE](../../c_intro_userinterfaces/command_summary/parameter_intro/srusize)
+and [RRUSIZE](../../c_intro_userinterfaces/command_summary/parameter_intro/rrusize).
 
 These parameters are negotiated with the partner during the connection
 phase. Transfer CFT selects the smallest value as the maximum size for

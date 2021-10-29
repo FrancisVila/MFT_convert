@@ -1,10 +1,8 @@
 {
-    "title": "Connection process checks",
+    "title": "Connection  process checks",
     "linkTitle": "Connection process checks",
     "weight": "270"
-}# <span id="Connection_process_checks"></span><span id="Performing_checks_on_connection"></span>Connection process checks
-
-This topic describes the Transfer CFT mechanism for performing checks
+}This topic describes the Transfer CFT mechanism for performing checks
 on connection.
 
 ## Explicit parameter setting
@@ -15,12 +13,12 @@ character ID as its scope is limited to the local Transfer CFT. For example:
 IDPARM0, ID\_LOCAL, ID\_A.
 
 The example below indicates the values of the parameters, defined in
-[Partner naming](../partner_naming_conventions), in the parameter setting and catalog to allow parties
+[Partner naming](partner_naming_conventions), in the parameter setting and catalog to allow parties
 to mutually recognize each other.
 
 ## Recognition mechanism for explicit parameter setting
 
-<img src="PART_not_defined_in_CFTPARM.jpg" width="733" height="312" />
+<img src="/Images/TransferCFT/Recongnition_explicit_parameter_setting.gif" width="733" height="312" />
 
 To send a file with a defined IDF ID\_EM to partner B, corresponding
 command is:
@@ -52,7 +50,7 @@ indicated in the figure below.
 
 ## Recognition mechanism: NSPART parameter of CFTPART not defined
 
-![](PART_not_defined_in_CFTPARM.jpg)
+![](/Images/TransferCFT/NSPART_undefined_CFTPART.gif)
 
 If the NPART parameter of CFTPARM is not defined, the corresponding
 default value is that of the PART parameter of this CFTPARM object. The
@@ -63,7 +61,7 @@ the previous example is then as follows:
 
 #### Recognition mechanism: PART parameter of CFTPARM not defined
 
-![](PART_not_defined_in_CFTPARM.jpg)
+![](/Images/TransferCFT/PART_not_defined_in_CFTPARM.jpg)
 
 #### Using a dynamic partner in server mode
 

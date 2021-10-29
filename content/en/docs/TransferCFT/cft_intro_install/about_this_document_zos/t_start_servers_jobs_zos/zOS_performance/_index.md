@@ -1,7 +1,7 @@
 {
-    "title": "Optimize performance",
-    "linkTitle": "Optimize performance",
-    "weight": "270"
+    "title": "Transfer CFT z/OS performance",
+    "linkTitle": "Transfer CFT z/OS performance",
+    "weight": "290"
 }This section introduces performance issues to consider when using Transfer CFT in a z/OS environment.
 
 ## <span id="Memory usage"></span>Memory usage
@@ -137,13 +137,13 @@ This section describes the specific parameters to use Transfer CFT with VIPA. Yo
 #### Dynamic VIPA
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The LOWPORT parameter is deprecated.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The LOWPORT parameter is deprecated.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Transfer CFT is fully compatible with dynamic VIPA. There are two methods available to use dynamic VIPA with Transfer CFT:
@@ -161,13 +161,13 @@ Transfer CFT is compatible with source VIPA. To enable, configure this feature i
 -   When SRCPORTS=(‘1 - 65535’), both Source and Dynamic VIPA are enabled.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For ascending compatibility with Transfer CFT parameters, LOWPORT=0 (or 1) is still supported in the CFTNET and will automatically set the SRCPORTS with the correct value, but only if it is not already set in the macro!</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For ascending compatibility with Transfer CFT parameters, LOWPORT=0 (or 1) is still supported in the CFTNET and will automatically set the SRCPORTS with the correct value, but only if it is not already set in the macro!         </td>
+      </tr>
+   </tbody>
 </table>
 
 A source CFTNET as below:
@@ -191,13 +191,13 @@ SRCPORTS = (0 - 65535),
 ...
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To avoid TCP/IP source port conflict with Sentinel, see the Sentinel Configuration instructions.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To avoid TCP/IP source port conflict with Sentinel, see the Sentinel Configuration instructions.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### TCP/IP stack affinity

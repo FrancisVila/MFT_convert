@@ -1,5 +1,5 @@
 {
-    "title": "CFTW messages",
+    "title": " Transfer CFT messages: CFTW",
     "linkTitle": "CFTW messages",
     "weight": "400"
 }This topic lists the CFTWxx and CFTXxx messages and provides the type, a description, consequence, and corrective actions when applicable.
@@ -21,178 +21,178 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW01W"></span>CFTW01W PART=&amp;part
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW01W"></span>CFTW01W PART=&amp;part
 IDF=&amp;idf IDT=&amp;idt Temporary
 file &amp;file deleted</p>
-<p>CFTW01W File &amp;fname deleted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The &amp;file temporary file was deleted at the end of
+            <p>CFTW01W File &amp;fname deleted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &gt;</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The &amp;file temporary file was deleted at the end of
 the transfer. The name of this file is declared in the WFNAME parameter
-of the CFTSEND and CFTRECV commands.</p></td>
-</tr>
-</tbody>
+of the CFTSEND and CFTRECV commands.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW02W"></span>CFTW02W CFTSEND &amp;idsend override SEND parameters</p>
-<p>CFTW02W CFTSEND &amp;id override SEND parameters</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The parameters of the SEND command are overridden by the parameters
-in the associated CFTSEND command.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW02W"></span>CFTW02W CFTSEND &amp;idsend override SEND parameters</p>
+            <p>CFTW02W CFTSEND &amp;id override SEND parameters</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The parameters of the SEND command are overridden by the parameters
+in the associated CFTSEND command.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW03W"></span>CFTW03W _ Send command: Unauthorized usage of IDF =
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW03W"></span>CFTW03W _ Send command: Unauthorized usage of IDF =
 &amp;idf</p>
-<p>CFTW03W _ Send Command : Unauthorized usage on IDF = &amp;id</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The &amp;idf IDF is not authorized for the SEND command. Check your software key restrictions.</p></td>
-</tr>
-</tbody>
+            <p>CFTW03W _ Send Command : Unauthorized usage on IDF = &amp;id</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The &amp;idf IDF is not authorized for the SEND command. Check your software key restrictions.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW04W"></span>CFTW04W _ Recv command: Unauthorized usage on IDF =
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW04W"></span>CFTW04W _ Recv command: Unauthorized usage on IDF =
 &amp;idf</p>
-<p>CFTW04W _ Recv Command : Unauthorized usage on IDF = &amp;id</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The &amp;idf IDF is not authorized for the RECV command. See
-the restrictions concerning the value of your software key.</p></td>
-</tr>
-</tbody>
+            <p>CFTW04W _ Recv Command : Unauthorized usage on IDF = &amp;id</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The &amp;idf IDF is not authorized for the RECV command. See
+the restrictions concerning the value of your software key.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW05W"></span>CFTW05W PART=&amp;part IDF = &amp;idf Temporary file
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW05W"></span>CFTW05W PART=&amp;part IDF = &amp;idf Temporary file
 unknown, WFNAME not defined in SEND</p>
-<p>CFTW05W PART=&amp;part IDF=&amp;idf Temporary file unknown, WFNAME not defined in SEND</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The WFNAME was not set in the CFTSEND command when preparing
+            <p>CFTW05W PART=&amp;part IDF=&amp;idf Temporary file unknown, WFNAME not defined in SEND</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The WFNAME was not set in the CFTSEND command when preparing
 a transfer requiring additional processing
-and sending a group of files.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>Action</p></td>
-<td width="80%"><p>Modify the parameter settings using a different IDF for this
-type of transfer.</p></td>
-</tr>
-</tbody>
+and sending a group of files.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>Action</p>         </td>
+         <td width="80%">            <p>Modify the parameter settings using a different IDF for this
+type of transfer.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW07W"></span>CFTW07W PART=&amp;part IDF = &amp;idf _ SELFNAME not
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW07W"></span>CFTW07W PART=&amp;part IDF = &amp;idf _ SELFNAME not
 authorized for COPY</p>
-<p>CFTW07W PART=&amp;par IDF=&amp;idf _ SELFNAME not authorized for COPY\n</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>You cannot use a selection file when implementing additional
-processing prior to a transfer (IEBCOPY with MVS for example).</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>Consequence</p></td>
-<td width="80%"><p>The transfer is not triggered.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Action</p></td>
-<td width="80%"><p>Do not use a selection file; you can, however, specify a generic
-file name (FNAME= #FIL1*, FNAME= #TFILM*).</p></td>
-</tr>
-</tbody>
+            <p>CFTW07W PART=&amp;par IDF=&amp;idf _ SELFNAME not authorized for COPY\n</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>You cannot use a selection file when implementing additional
+processing prior to a transfer (IEBCOPY with MVS for example).</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>Consequence</p>         </td>
+         <td width="80%">            <p>The transfer is not triggered.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Action</p>         </td>
+         <td width="80%">            <p>Do not use a selection file; you can, however, specify a generic
+file name (FNAME= #FIL1*, FNAME= #TFILM*).</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p></td>
-<td width="80%"><p><span id="CFTW08W"></span>CFTW08W CFTRECV &amp;idrecv override RECV parameters</p>
-<p>CFTW08W CFTRECV &amp;id override RECV parameters</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>The RECV command parameters are overridden by the parameters
-set in the associated CFTRECV command.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p>V24 format</p>
+            <p>Warning</p>         </td>
+         <td width="80%">            <p><span id="CFTW08W"></span>CFTW08W CFTRECV &amp;idrecv override RECV parameters</p>
+            <p>CFTW08W CFTRECV &amp;id override RECV parameters</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>The RECV command parameters are overridden by the parameters
+set in the associated CFTRECV command.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="20%"><p>V23 format</p>
-<p> </p>
-<p>V24 format</p>
-<p> </p>
-<p>Information</p></td>
-<td width="80%"><p><span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate</p>
-<p>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate</p>
-<p>CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;</p>
-<p>CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20%"><p>Explanation</p></td>
-<td width="80%"><p>Indicates the ID of the CFTSEND or CFTRECV that was actually
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="20%">            <p>V23 format</p>
+            <p> </p>
+            <p>V24 format</p>
+            <p> </p>
+            <p>Information</p>         </td>
+         <td width="80%">            <p><span id="CFTW09I"></span>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTSEND &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate</p>
+            <p>CFTW09I PART=&amp;part IDF=&amp;idf IDT=&amp;idt CFTRECV &amp;idf NIDF=&amp;nidf XLATE=&amp;xlate</p>
+            <p>CFTW09I CFTSEND &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;</p>
+            <p>CFTW09I CFTRECV &amp;idf &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt NIDF=&amp;nidf XLATE=&amp;xlate&gt;</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20%">            <p>Explanation</p>         </td>
+         <td width="80%">            <p>Indicates the ID of the CFTSEND or CFTRECV that was actually
 used.</p>
-<p><span>Example</span></p>
-<p>CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt;</p></td>
-</tr>
-</tbody>
+            <p><span>Example</span></p>
+            <p>CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>

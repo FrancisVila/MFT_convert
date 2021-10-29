@@ -14,4 +14,4 @@ Default value: default name of the Parameter file defined
 for CFTUTIL for the system concerned. Refer to the Transfer CFT *Operations
 Guide* that corresponds with your OS.
 
-[Return to Command index](../../)
+[Return to Command index](../)

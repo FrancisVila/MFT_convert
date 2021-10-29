@@ -14,4 +14,4 @@ Use to display logs that happened on or before this date. Use the format: YYMMDD
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

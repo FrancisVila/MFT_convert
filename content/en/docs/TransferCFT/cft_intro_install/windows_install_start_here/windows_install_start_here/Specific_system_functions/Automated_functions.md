@@ -2,14 +2,12 @@
     "title": "Automated functions",
     "linkTitle": "Automated functions",
     "weight": "300"
-}# <span id="Automated_CFT_functions"></span>Automated functions
-
-This topic describes how to use a batch procedure in Transfer CFT Windows.
+}This topic describes how to use a batch procedure in Transfer CFT Windows.
 
 -   [Updating
-    batch procedures launched by Transfer CFT](#updating%20batch%20procedures%20launched%20by%20transfer%20cft)
+    batch procedures launched by Transfer CFT](#Updating%20batch%20procedures%20launched%20by%20Transfer%20CFT)
 -   [Using
-    symbolic variables in batch files started by Transfer CFT](#using_symbolic_variables_in_the_batch_files_started_by_cft)
+    symbolic variables in batch files started by Transfer CFT](#Using_symbolic_variables_in_the_batch_files_started_by_CFT)
 
 <span id="About_automated_CFT_functions"></span>
 

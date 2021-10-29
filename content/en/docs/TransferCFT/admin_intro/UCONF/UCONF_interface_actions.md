@@ -1,5 +1,5 @@
 {
-    "title": "Using the UI to set UCONF values",
+    "title": "Working with the unified configuration in the UI",
     "linkTitle": "Using the UI to set UCONF values",
     "weight": "270"
 }In order to merge functioning for all platforms, Transfer CFT features
@@ -25,7 +25,7 @@ To modify a UCONF value using the graphical user interface:
     can view the current value, modify this value, or return to the default
     value for this file. For a complete listing of the value in previous versions
     of Transfer CFT and the default value, refer to [UCONF
-    settings](..//transfercft/admin_intro/uconf).
+    settings](transfercft/admin_intro/uconf).
 5.  Click Ok
     to confirm and close the window.
 

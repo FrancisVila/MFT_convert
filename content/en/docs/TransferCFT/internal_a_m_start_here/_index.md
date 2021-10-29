@@ -1,5 +1,5 @@
 {
-    "title": "Access management",
+    "title": "Access management ",
     "linkTitle": "Access management",
     "weight": "130"
 }This section describes how to configure access management when not using Central Governance.
@@ -12,4 +12,4 @@ You can implement access management in Transfer CFT by setting the AM type to o
 -   [Flow Manager](fm_access_management): uses Flow Manager
 -   [Internal](uconf_internal_am): uses predefined roles
 -   [PassPort](about_passport_am): uses PassPort AM predefined roles and customizable  roles and privileges
--   [Exit](am_exits): uses your own program
+-   [Exit](app_integration_intro/managing_exits/am_exits): uses your own program

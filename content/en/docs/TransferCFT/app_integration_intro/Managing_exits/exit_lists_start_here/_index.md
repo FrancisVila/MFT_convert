@@ -1,10 +1,8 @@
 {
-    "title": "Exit list",
-    "linkTitle": "Exit list",
-    "weight": "300"
-}# <span id="Exit_lists__Start_here"></span><span id="Exit_list_concepts"></span><span id="Using_the_Exit_List"></span>About exit lists
-
-An exit list is an optional component supplied with certain Transfer
+    "title": "About exit  lists",
+    "linkTitle": "About exit lists",
+    "weight": "320"
+}An exit list is an optional component supplied with certain Transfer
 CFT products. The Exit list is a file exit designed to allow remote partners to consult
 the Transfer CFT server's catalog. The Transfer CFT
 Exit list is an EXIT used for consulting the catalog.
@@ -13,7 +11,7 @@ The Exit list is not supplied with all Transfer CFT products. In addition,
 the form in which EXIT is delivered, as object, executable or other code,
 depends on the specific product configuration.
 
-![](exit_list.png)
+![](/Images/TransferCFT/exit_list.png)
 
 The following section explains the high-level steps when using an exit
 list.
@@ -30,38 +28,38 @@ No specific parameter setting.
 Server sender site
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTSEND  ID
+   <tbody>
+      <tr class="odd">
+         <td>CFTSEND  ID
 = IDFexit,<br />
 IMPL = YES,<br />
-EXIT = IDExitList</td>
-</tr>
-</tbody>
+EXIT = IDExitList         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXIT  ID
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXIT  ID
 = IDExitList,<br />
 LANGUAGE = C,<br />
 PARM = FileName,<br />
 RESERV = 16384,<br />
-PROG = FileExe</td>
-</tr>
-</tbody>
+PROG = FileExe         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend that you use the value 16384 for the RESERV
-and not modify this parameter value.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend that you use the value 16384 for the RESERV
+and not modify this parameter value.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Prepare_the_selection_criteria_file"></span>2. Prepare the selection criteria file
@@ -96,14 +94,14 @@ identifier that is associated with the Exit list as the IDF.
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL
-<p>RECV     PART
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL
+            <p>RECV     PART
 = &amp;part,<br />
-IDF = IDFexit</p></td>
-</tr>
-</tbody>
+IDF = IDFexit</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The server:

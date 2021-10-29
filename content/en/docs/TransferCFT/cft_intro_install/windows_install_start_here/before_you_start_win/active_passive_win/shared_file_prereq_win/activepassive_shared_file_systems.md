@@ -7,13 +7,13 @@
 Active/passive mode requires a shared file system. Two typical shared file system implementations are NAS (network attached storage) and SAN (storage area network). This section describes GPFS, NFSv4, AWS EFS, and SMB/CIFS.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span>, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span>, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Using GPFS
@@ -24,11 +24,11 @@ GPFS, General Parallel File System, is the shared file system of choice for Tran
 
 The recommendations in this section apply to a Transfer CFT an active/passive architecture based on an NFS shared file system. As NFSv3 cannot detect host failures, we recommend that you use NFSv4.
 
--   [Required NFS mount options](#required)
--   [Mount options summary](#mount) 
--   [Synchronous / asynchronous option impact](#impact)
--   [Tuning NFSv4 locking for node failover](#tuning)
--   [Troubleshoot an NFS lock daemon issue](#troubles)
+-   [Required NFS mount options](#Required)
+-   [Mount options summary](#Mount) 
+-   [Synchronous / asynchronous option impact](#Impact)
+-   [Tuning NFSv4 locking for node failover](#Tuning)
+-   [Troubleshoot an NFS lock daemon issue](#Troubles)
 
 ### <span id="Required"></span>Required NFS mount options
 
@@ -58,42 +58,42 @@ NFS implements a weak data consistency called "Close To Open consistency" or cto
 The following table summarizes the recommended NFS mount options. Note that depending on the OS platform, only one of the three locking options should be available.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Recommended option</th>
-<th>Not recommended</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>vers=4 (or nfsvers=4)</td>
-<td>not specified or value &lt;= 4</td>
-</tr>
-<tr class="even">
-<td>hard (default)</td>
-<td>"soft" specified</td>
-</tr>
-<tr class="odd">
-<td>nointr (not the default)</td>
-<td>"intr" specified</td>
-</tr>
-<tr class="even">
-<td>llock not specified</td>
-<td>"llock" specified</td>
-</tr>
-<tr class="odd">
-<td>lock (default)</td>
-<td>"nolock" specified</td>
-</tr>
-<tr class="even">
-<td>local_lock=none (default)</td>
-<td>any other value specified</td>
-</tr>
-<tr class="odd">
-<td>cto (default)</td>
-<td>"nocto" specified</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Recommended option</th>
+         <th>Not recommended</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>vers=4 (or nfsvers=4)         </td>
+         <td>not specified or value &lt;= 4         </td>
+      </tr>
+      <tr class="even">
+         <td>hard (default)         </td>
+         <td>"soft" specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>nointr (not the default)         </td>
+         <td>"intr" specified         </td>
+      </tr>
+      <tr class="even">
+         <td>llock not specified         </td>
+         <td>"llock" specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>lock (default)         </td>
+         <td>"nolock" specified         </td>
+      </tr>
+      <tr class="even">
+         <td>local_lock=none (default)         </td>
+         <td>any other value specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>cto (default)         </td>
+         <td>"nocto" specified         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Synchronous versus asynchronous option
@@ -133,58 +133,58 @@ This possible data corruption is not detectable at the time of occurrence, becau
 Enables replies to requests only after the changes have been committed to stable storage.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information on these options, refer to <em>NFS mount and export options</em> in the UNIX man pages (for example, <a href="http://man7.org/linux/man-pages/man5/nfs.5.html">here</a>).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information on these options, refer to <em>NFS mount and export options</em> in the UNIX man pages (for example, <a href="http://man7.org/linux/man-pages/man5/nfs.5.html">here</a>).         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Impact"></span>Synchronous / asynchronous option impact
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Client</th>
-<th>Server</th>
-<th>Internal data</th>
-<th>Transferable data</th>
-<th>Performance</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sync</td>
-<td>Sync</td>
-<td>1</td>
-<td>1</td>
-<td>Low</td>
-</tr>
-<tr class="even">
-<td>Sync</td>
-<td>Async</td>
-<td>2 (secure the NFS server)</td>
-<td>2 (secure the NFS server)</td>
-<td>Medium</td>
-</tr>
-<tr class="odd">
-<td>Async</td>
-<td>Sync</td>
-<td>1 (if cft.server.catalog.<br />
-sync.enable=Yes)</td>
-<td>1 (when using sync points)</td>
-<td>Medium - high</td>
-</tr>
-<tr class="even">
-<td>Async</td>
-<td>Async</td>
-<td>3</td>
-<td>3</td>
-<td>High</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Client</th>
+         <th>Server</th>
+         <th>Internal data</th>
+         <th>Transferable data</th>
+         <th>Performance</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>Sync         </td>
+         <td>Sync         </td>
+         <td>1         </td>
+         <td>1         </td>
+         <td>Low         </td>
+      </tr>
+      <tr class="even">
+         <td>Sync         </td>
+         <td>Async         </td>
+         <td>2 (secure the NFS server)         </td>
+         <td>2 (secure the NFS server)         </td>
+         <td>Medium         </td>
+      </tr>
+      <tr class="odd">
+         <td>Async         </td>
+         <td>Sync         </td>
+         <td>1 (if cft.server.catalog.<br />
+sync.enable=Yes)         </td>
+         <td>1 (when using sync points)         </td>
+         <td>Medium - high         </td>
+      </tr>
+      <tr class="even">
+         <td>Async         </td>
+         <td>Async         </td>
+         <td>3         </td>
+         <td>3         </td>
+         <td>High         </td>
+      </tr>
+   </tbody>
 </table>
 
 Legend:
@@ -221,7 +221,7 @@ The recommendations in this section apply to a Transfer CFT multi-node, multi-h
 
 When using AWS EFS, you cannot set the server options; only the client is configurable.
 
-This system is based on NFSv4. For more information on NFSv4, please see [Using NFS](#using) .
+This system is based on NFSv4. For more information on NFSv4, please see [Using NFS](#Using) .
 
 This shared file system has features that impact performance, as compared to a traditional NFS:
 
@@ -239,11 +239,11 @@ It is recommended that you use SMB version 2 or higher with Transfer CFT.
 CIFS, Common Internet File System, is an out-dated SMB protocol variant.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Samba suite usage is not recommended with Transfer CFT.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Samba suite usage is not recommended with Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>

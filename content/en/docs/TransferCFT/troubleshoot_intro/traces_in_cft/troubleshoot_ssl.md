@@ -1,5 +1,5 @@
 {
-    "title": "Troubleshoot SSL and TLS ",
+    "title": "Recovery and trace analysis",
     "linkTitle": "Troubleshoot SSL and TLS ",
     "weight": "330"
 }This section describes how to collect trace information to help with troubleshooting.

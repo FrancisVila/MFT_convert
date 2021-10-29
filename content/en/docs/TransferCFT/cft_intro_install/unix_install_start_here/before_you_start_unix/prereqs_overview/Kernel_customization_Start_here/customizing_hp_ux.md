@@ -1,6 +1,6 @@
 {
-    "title": "HP-UX:\u00a0Customize the kernel",
-    "linkTitle": "HP-UX:\u00a0Customize the kernel",
+    "title": "HP-UX: Customize the kernel",
+    "linkTitle": "HP-UX: Customize the kernel",
     "weight": "210"
 }This topic provides information on customizing the HP-UX kernel, and how to:
 

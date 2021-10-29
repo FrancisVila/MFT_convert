@@ -47,4 +47,4 @@ Example:
 if TCYCLE = MIN and CYCLE = 60, the default value of CYCTIME is MINTIME
 + 1 hour.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Sending files",
+    "title": "SEND - Send files",
     "linkTitle": "Sending files",
     "weight": "200"
 }The SEND command initiates a send transfer. You can use it to send files, messages, or replies (acknowledgments). You can define the characteristics in the SEND command itself, or in a Central Unified Flow Management flow definition in a template command. Additionally you can use the SEND command for a single partner or a list of partners.

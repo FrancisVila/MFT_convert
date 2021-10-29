@@ -6,7 +6,7 @@
 
 [Collecting information](collecting_information) - Describes the messages and error code types and formats, as well as initial steps and checks to perform when a problem arises.
 
-[Support and support tools](../cft_intro_install/unix_install_start_here/troubleshoot_registration/support_tools) - Describes the how to collect information needed if you are contacting Axway Support for assistance.
+[Support and support tools](support_tools) - Describes the how to collect information needed if you are contacting Axway Support for assistance.
 
 [Troubleshooting the server](admin_troubleshooting_server) - Provides information and tips for troubleshooting the installation, updates, registration and well as best practices for maintaining or troubleshooting the runtime environment.
 

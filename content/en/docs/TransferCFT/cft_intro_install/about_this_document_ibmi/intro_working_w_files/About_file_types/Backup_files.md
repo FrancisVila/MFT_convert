@@ -1,5 +1,5 @@
 {
-    "title": "Backup files",
+    "title": "Backup files ",
     "linkTitle": "Backup files",
     "weight": "230"
 }The records in this type of file (SAVF) have a specific format. They contain backed-up sequencing and parity data controlled byTransfer CFT IBM i. SAVF files can generally only be used on Transfer CFT IBM i systems. Consequently, backup files are predominantly transferred between two Transfer CFT IBM i partners.

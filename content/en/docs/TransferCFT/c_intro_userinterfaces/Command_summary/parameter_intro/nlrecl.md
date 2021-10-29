@@ -33,4 +33,4 @@ to the value of NLRECL:
 ODETTE: For the ODETTE protocol, refer to the Transfer CFT Protocol
 topics for more information on this parameter.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -20,17 +20,17 @@ Reconfigure the host address as follows:
 2.  Identify the host with the incorrect host address.
 3.  Remove the host using the command:
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>cft remove_host -hostname &lt;hostname&gt;</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>cft remove_host -hostname &lt;hostname&gt;         </td>
+          </tr>
+       </tbody>
     </table>
 4.  Add the host with the correct host address:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>cft add_host -hostname &lt;hostname&gt; -host &lt;host_address&gt;</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>cft add_host -hostname &lt;hostname&gt; -host &lt;host_address&gt;         </td>
+          </tr>
+       </tbody>
     </table>

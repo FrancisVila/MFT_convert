@@ -38,42 +38,42 @@ The output spool files (QPRINT) contain:
 CFT ACCNT, accounting, the file designated by the CFTACCNT configuration command \[A\]FNAME parameter, is used to store information on all terminated transfers.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file and data management systems display a system code (40000000 &lt; SC &lt; 5FFFFFFF) if an error is detected on transferred files. An associated error label, when it is not stored in any of the ways described above, can be retrieved from a file containing all CFT file management system error codes and labels:<br />
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file and data management systems display a system code (40000000 &lt; SC &lt; 5FFFFFFF) if an error is detected on transferred files. An associated error label, when it is not stored in any of the ways described above, can be retrieved from a file containing all CFT file management system error codes and labels:<br />
 DSPPFM FILE (CFTPGM/FMDM3ERR).<br />
-The hexadecimal value of the error code must be used in the search profile.</td>
-</tr>
-</tbody>
+The hexadecimal value of the error code must be used in the search profile.         </td>
+      </tr>
+   </tbody>
 </table>
 
 In the line-sharing mode, unlike the exclusive mode, Transfer CFT checks the status of the line without implementing it. If the line is not operational, a message is displayed:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>From.....:   CFT           06/12/17   15:56:04
-<p><br />
+   <tbody>
+      <tr class="odd">
+         <td>From.....:   CFT           06/12/17   15:56:04
+            <p><br />
 CF1LX021   : This line is out of order.<br />
-</p></td>
-</tr>
-</tbody>
+</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 After it has been implemented manually:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CF1LX021 line implemented.
-<p><br />
+   <tbody>
+      <tr class="odd">
+         <td>CF1LX021 line implemented.
+            <p><br />
 From.....:   CFT           06/12/17   15:56:04<br />
 CF1LX021   : Now this line is operational.<br />
-</p></td>
-</tr>
-</tbody>
+</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 All messages stored in the log are described in the Transfer CFT 3.9 User's Guide sub-book Messages and Codes. There are a few exceptions when messages are not stored in the log, for example messages that are self-explanatory and OS related.

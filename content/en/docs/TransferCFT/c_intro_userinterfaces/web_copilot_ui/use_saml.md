@@ -34,7 +34,7 @@ A user agent is usually a web browser. The person who uses the browser can be re
 To configure and use SAML SSO with Transfer CFT, you must:
 
 -   Have a third-party IdP, such as Keycloak, installed and running.
--   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](roles-smp.conf), or navigate locally in your Transfer CFT installation to:
+-   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](#), or navigate locally in your Transfer CFT installation to:
     -   distrib/template/conf/roles-smp.conf
     -   runtime/conf/roles-smp.conf
 -   If you use Transfer CFT with Flow Manager, you must manually set the uconf parameter am.type=saml on each Transfer CFT after registering.
@@ -46,7 +46,7 @@ This section describes the UCONF parameter settings required for SAML implement
 
 ## Set up SAML 
 
-Configure the Transfer CFT REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](../../../app_integration_intro/using_apis/api_intro/api_configure).
+Configure the Transfer CFT REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](../../app_integration_intro/using_apis/api_intro/api_configure).
 
 Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
 PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
@@ -54,60 +54,60 @@ PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
 Set the following UCONF parameters.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>UCONF value</th>
-<th>Default</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>am.saml.client_id</td>
-<td>$(cft.instance_id)</td>
-<td>SAML request issuer. This should match the IdP configuration.</td>
-<td>ITEM-AX12345_tcrieux</td>
-</tr>
-<tr class="even">
-<td>am.saml.idp.sign_on_service</td>
-<td>-</td>
-<td><p>SAML endpoint for AuthnRequest (HTTP-Redirect binding) requests.</p></td>
-<td><p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
-<p>For example: am.saml.idp.sign_on = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p></td>
-</tr>
-<tr class="odd">
-<td>am.saml.idp.logout_service</td>
-<td>$(am.saml.idp.sign_on_service)</td>
-<td><p>Endpoint for SAML LogoutRequest (HTTP-Redirect binding) requests.</p></td>
-<td><p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
-<p>For example: am.saml.idp.logout_service = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p></td>
-</tr>
-<tr class="even">
-<td>am.saml.idp.cert_id</td>
-<td>-</td>
-<td>Certificate ID (stored in the internal PKI base), which is used to verify the SAML IdP server's signatures.</td>
-<td>idp</td>
-</tr>
-<tr class="odd">
-<td>am.type</td>
-<td>-</td>
-<td><p>Set the am.type=saml</p>
+   <thead>
+      <tr class="header">
+         <th>UCONF value</th>
+         <th>Default</th>
+         <th>Description</th>
+         <th>Example</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>am.saml.client_id         </td>
+         <td>$(cft.instance_id)         </td>
+         <td>SAML request issuer. This should match the IdP configuration.         </td>
+         <td>ITEM-AX12345_tcrieux         </td>
+      </tr>
+      <tr class="even">
+         <td>am.saml.idp.sign_on_service         </td>
+         <td>-         </td>
+         <td>            <p>SAML endpoint for AuthnRequest (HTTP-Redirect binding) requests.</p>         </td>
+         <td>            <p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
+            <p>For example: am.saml.idp.sign_on = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.saml.idp.logout_service         </td>
+         <td>$(am.saml.idp.sign_on_service)         </td>
+         <td>            <p>Endpoint for SAML LogoutRequest (HTTP-Redirect binding) requests.</p>         </td>
+         <td>            <p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
+            <p>For example: am.saml.idp.logout_service = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>am.saml.idp.cert_id         </td>
+         <td>-         </td>
+         <td>Certificate ID (stored in the internal PKI base), which is used to verify the SAML IdP server's signatures.         </td>
+         <td>idp         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.type         </td>
+         <td>-         </td>
+         <td>            <p>Set the am.type=saml</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you set SAML as the access management type, <span>am.type=saml</span>, you must use bearer authentication with REST API.</td>
-</tr>
-</tbody>
-</table></td>
-<td>saml</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you set SAML as the access management type, <span>am.type=saml</span>, you must use bearer authentication with REST API.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+         <td>saml         </td>
+      </tr>
+   </tbody>
 </table>
 
-Define the roles that you require for your Transfer CFT users. To view the CFTROLES sample, click [here](roles-smp.conf), and edit using your favorite text editor.
+Define the roles that you require for your Transfer CFT users. To view the CFTROLES sample, click [here](#), and edit using your favorite text editor.
 
 Start the Copilot server.
 
@@ -137,7 +137,7 @@ If, as a Transfer CFT administrator or super user, you revoke the rights of a us
 
 Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but Central Governance or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
 
-You can see the [Change the private key length](../../../governance_services_intro/cg_postregister) section for details.
+You can see the [Change the private key length](../../governance_services_intro/cg_postregister) section for details.
 
 If you change the private key, you must repeat the steps 6 - 8 as described [above](#step6).
 

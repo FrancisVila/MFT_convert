@@ -29,4 +29,4 @@ Filters according to the UCONF setting. For example, use USER to filter for val
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

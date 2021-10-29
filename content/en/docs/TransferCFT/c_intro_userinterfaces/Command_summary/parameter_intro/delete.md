@@ -26,4 +26,4 @@ Select one of the following:
 -   YES:
     (automatic deletion)
 
-[Return to Command index](../../)
+[Return to Command index](../)

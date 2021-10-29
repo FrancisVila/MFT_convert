@@ -1,10 +1,8 @@
 {
-    "title": "Build API applications and exits",
-    "linkTitle": "Build API applications and exits",
-    "weight": "200"
-}# <span id="Building_CFT_API_applications"></span>About API applications
-
-This book describes one of two Transfer CFT programming interfaces,
+    "title": "About  API applications",
+    "linkTitle": "About API applications",
+    "weight": "220"
+}This book describes one of two Transfer CFT programming interfaces,
 the API applications. This interface enables Transfer CFT to work in conjunction
 with external applications.
 
@@ -27,35 +25,35 @@ This book is comprised of the following topics which describe how to
 create an API application.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td width="29.021%"><p><a href="creating_an_api_application">Creating an API
-application</a></p></td>
-<td width="70.979%"><p>Describes the procedure to create an API application in
-<span>Transfer CFT</span> UNIX.</p></td>
-</tr>
-<tr class="even">
-<td width="29.021%"><p><a href="creating_an_exit_file">Creating an exit file</a></p></td>
-<td width="70.979%"><p>Describes how to create an exit file for <span>Transfer CFT</span> UNIX.</p></td>
-</tr>
-<tr class="odd">
-<td width="29.021%"><p><a href="creating_a_directory_exit">Creating a directory
-exit</a></p></td>
-<td width="70.979%"><p>Describes how to create a directory exit in <span>Transfer CFT</span>
-UNIX.</p></td>
-</tr>
-<tr class="even">
-<td width="29.021%"><p>Creating an accounting
-exit</p></td>
-<td width="70.979%"><p>Describes how to create an accounting exit in UNIX.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Topic</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td width="29.021%">            <p><a href="creating_an_api_application">Creating an API
+application</a></p>         </td>
+         <td width="70.979%">            <p>Describes the procedure to create an API application in
+<span>Transfer CFT</span> UNIX.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="29.021%">            <p><a href="creating_an_exit_file">Creating an exit file</a></p>         </td>
+         <td width="70.979%">            <p>Describes how to create an exit file for <span>Transfer CFT</span> UNIX.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td width="29.021%">            <p><a href="creating_a_directory_exit">Creating a directory
+exit</a></p>         </td>
+         <td width="70.979%">            <p>Describes how to create a directory exit in <span>Transfer CFT</span>
+UNIX.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="29.021%">            <p>Creating an accounting
+exit</p>         </td>
+         <td width="70.979%">            <p>Describes how to create an accounting exit in UNIX.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Development_kit_contents"></span>Development kit contents

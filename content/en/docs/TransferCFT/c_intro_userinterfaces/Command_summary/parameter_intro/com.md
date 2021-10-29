@@ -13,4 +13,4 @@ media description commands (CFTCOM).
 
 The maximum number of identifiers supported is 4.
 
-[Return to Command index](../../)
+[Return to Command index](../)

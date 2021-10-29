@@ -1,5 +1,5 @@
 {
-    "title": "Installation and operation HP NonStop",
+    "title": "HP NonStop: Installation and Operation",
     "linkTitle": "Installation and operation HP NonStop",
     "weight": "130"
 }## Preface
@@ -47,15 +47,15 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 -   AMPLIFY Supported Platforms Guide
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This document makes references to HP Nonstop documents, such as the <em>EMS Manuel</em>. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This document makes references to HP Nonstop documents, such as the <em>EMS Manuel</em>. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Support services
 
-The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit Axway Support at [https://support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email [support@axway.com](#) or, for your local support telephone number, visit Axway Support at [https://support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

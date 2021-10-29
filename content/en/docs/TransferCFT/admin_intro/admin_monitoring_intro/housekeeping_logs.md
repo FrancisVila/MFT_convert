@@ -1,5 +1,5 @@
 {
-    "title": "Housekeeping for log files ",
+    "title": " Housekeeping for log files",
     "linkTitle": "Housekeeping for log files ",
     "weight": "290"
 }Transfer CFT logs all events, log messages, in a dedicated log file. While this information helps in detecting problems, it is important to note that the size of the Transfer CFT log files continually increases if no precautions are taken.
@@ -40,13 +40,13 @@ You can manage the switch procedure using various methods that include, but not 
 -   Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by Transfer CFT.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Use the SWITCH command
@@ -54,11 +54,11 @@ You can manage the switch procedure using various methods that include, but not 
 To manually execute the log procedure, use the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SWITCH TYPE=LOG</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SWITCH TYPE=LOG         </td>
+      </tr>
+   </tbody>
 </table>
 
 A file can automatically be switched to another file by means of one of 4 events:
@@ -71,13 +71,13 @@ A file can automatically be switched to another file by means of one of 4 events
 -   Transfer CFT is
     shut down via the SHUT command  
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Note</strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter <code>cft.cftlog.switch_on_stop=YES</code> (the default value is NO).</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Note</strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter <code>cft.cftlog.switch_on_stop=YES</code> (the default value is NO).         </td>
+          </tr>
+       </tbody>
     </table>
 -   Transfer CFT is
     activated
@@ -91,11 +91,11 @@ For each transfer, there are multiple messages generated. You can significantly 
 When Transfer CFT sends log messages to Sentinel or Central Governance, you can filter by the level of severity according to its type: warning, error, or fatal error. For example, to send only FATAL errors you could set the following value:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>UCONFSET id=sentinel.xfb.log,value=F</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>UCONFSET id=sentinel.xfb.log,value=F         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Creating an exclusion log filter
@@ -113,16 +113,16 @@ Transfer CFT can filter log messages according to predefined filters to exclude 
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL UCONFSET ID =cft.server.log.exclude_filters,<br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL UCONFSET ID =cft.server.log.exclude_filters,<br />
 VALUE =cron_heartbeat<br />
 CFTUTIL UCONFSET ID =cft.server.log.exclude_filters.cron_heartbeat.pattern,<br />
 VALUE =CFTS37*ID=HEARTBEAT*<br />
 CFTUTIL UCONFSET ID =cft.server.log.exclude_filters.cron_heartbeat.comment,<br />
-VALUE ="Excludes from the log all cronjob messages concerning the ID HEARTBEAT"</td>
-</tr>
-</tbody>
+VALUE ="Excludes from the log all cronjob messages concerning the ID HEARTBEAT"         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create a daily log file rotation
@@ -134,23 +134,23 @@ This section describes how to create daily, rolling log files that are not impac
 If you need to check the current switch hour for the log, using CFTUTIL enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>mquery name=command</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>mquery name=command         </td>
+      </tr>
+   </tbody>
 </table>
 
 Then enter the listlog command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>listlog</p>
-<p>...</p>
-<p>CFTI24I *** DATE=DD/MM/YYYY TIME= 00:00:00.00 SWITCH LOG</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>listlog</p>
+            <p>...</p>
+            <p>CFTI24I *** DATE=DD/MM/YYYY TIME= 00:00:00.00 SWITCH LOG</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Configure the log file switch
@@ -159,13 +159,13 @@ Then enter the listlog command:
 2.  Using CFTUTIL, set the following uconf values:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>uconfset id=cft.cftlog.switch_on_start,value=No
-<p>uconfset id=cft.cftlog.backup_count, value=6</p>
-<p>uconfset id=cft.cftlog.switch_on_stop, value=No</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>uconfset id=cft.cftlog.switch_on_start,value=No
+            <p>uconfset id=cft.cftlog.backup_count, value=6</p>
+            <p>uconfset id=cft.cftlog.switch_on_stop, value=No</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This results in the switch being executed automatically every night at midnight, giving you a single daily log file (unless you execute another switch command), where:

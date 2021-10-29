@@ -8,7 +8,7 @@ operating system.
 
 You can modify the file names and the method to activate CFTUTIL to
 work on other operating systems. See [About CFTUTIL: Transfer
-CFT utility](../../../c_intro_userinterfaces/about_cftutil).
+CFT utility](../../c_intro_userinterfaces/about_cftutil).
 
 #### <span id="Submitting_an_END_command"></span>Submitting an END command
 
@@ -24,9 +24,9 @@ If the IDF of the file sent is PAY and if EXECSF = SF&IDF.CMD, the
 name of the file associated with this procedure is:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SFPAY.CMD.REM<br />
+   <tbody>
+      <tr class="odd">
+         <td>SFPAY.CMD.REM<br />
 REM<br />
 REM<br />
 --------------------------------------------------------<br />
@@ -42,9 +42,9 @@ REM PART &amp;PART PARTNER NAME<br />
 REM IDT &amp;IDT TRANSFER IDENTIFIER<br />
 REM<br />
 REM ---------------------------------------------------<br />
-CFTUTIL END PART=&amp;PART,IDT=&amp;IDT</td>
-</tr>
-</tbody>
+CFTUTIL END PART=&amp;PART,IDT=&amp;IDT         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Submitting_an_end_of_receive_procedure"></span>Submitting an end of receive procedure
@@ -62,9 +62,9 @@ If EXECRF = RF&IDF.CMD, the name of the file associated with this
 procedure is: RFPAY.CMD.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>REM<br />
+   <tbody>
+      <tr class="odd">
+         <td>REM<br />
 REM<br />
 --------------------------------------------------------<br />
 REM<br />
@@ -83,9 +83,9 @@ REM FNAME &amp;FNAME NAME OF FILE RECEIVED<br />
 REM<br />
 REM<br />
 REM ----------------------------------------------------<br />
-MYPROG &amp;PART &amp;IDF &amp;IDT &amp;EDATE &amp;ETIME &amp;FNAME</td>
-</tr>
-</tbody>
+MYPROG &amp;PART &amp;IDF &amp;IDT &amp;EDATE &amp;ETIME &amp;FNAME         </td>
+      </tr>
+   </tbody>
 </table>
 
 If the transfer came from the SITEA partner, with a transfer IDT of
@@ -93,15 +93,15 @@ A0112102, and if the execution of this procedure is interrupted before
 being completed, the user can re-activate it by the following command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL SUBMIT<br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL SUBMIT<br />
      PART     =    
 SITEA,<br />
      IDT     =    
-A0112102</td>
-</tr>
-</tbody>
+A0112102         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Sending_a_response_message"></span>Sending a response message
@@ -125,9 +125,9 @@ If EXECRF = RM&IDF.CMD, the name of the file associated with this
 procedure is: RMPAY.CMD.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>REM<br />
+   <tbody>
+      <tr class="odd">
+         <td>REM<br />
 REM<br />
 ------------------------------------------------------<br />
 REM<br />
@@ -144,7 +144,7 @@ REM IDT &amp;IDT TRANSFER IDENTIFIER<br />
 REM<br />
 REM ---------------------------------------------------<br />
 CFTUTIL SEND TYPE=REPLY, PART=&amp;PART, IDM=MES1, IDT=&amp;idt,<br />
-MSG=’File PAY received’</td>
-</tr>
-</tbody>
+MSG=’File PAY received’         </td>
+      </tr>
+   </tbody>
 </table>

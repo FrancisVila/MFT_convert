@@ -21,4 +21,4 @@ Type of shutdown:
 -   KILL: Immediate Transfer CFT shutdown occurs
     but without updating the transfer states.
 
-[Return to Command index](../../)
+[Return to Command index](../)

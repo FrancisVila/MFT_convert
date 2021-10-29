@@ -24,4 +24,4 @@ not found. Options are:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

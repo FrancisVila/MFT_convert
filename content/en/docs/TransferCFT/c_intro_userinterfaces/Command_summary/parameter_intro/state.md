@@ -72,4 +72,4 @@ If activated, it can be used by Transfer CFT. Options are:
 -   To activate CFTCRON, set the state=ACTIVE.
 -   Use NOACTIVE to disable use of CFTCRON.
 
-[Return to Command index](../../)
+[Return to Command index](../)

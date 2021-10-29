@@ -1,5 +1,5 @@
 {
-    "title": "Conversion tables",
+    "title": "Conversion tables ",
     "linkTitle": "Conversion tables",
     "weight": "210"
 }This section describes how to use a conversion table in Transfer CFT Transfer CFT IBM i in the following sections:
@@ -49,37 +49,37 @@ The CFTPROD/tabaseb.x binary file is created: it constitutes the conversion tabl
 The following is a full Transfer CFT Transfer CFT IBM i configuration sample for a Windows system, which is a typical and frequent scenario.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Transfer CFT IBM i configuration</p>
-<p>CFTXLATE MODE=REPLACE,</p>
-<p>         ID=TABASEB,</p>
-<p>         DIRECT=RECV,</p>
-<p>         FNAME=CFTPROD/TABASEB.X</p>
-<p>CFTXLATE MODE=REPLACE,</p>
-<p>         ID=TABEBAS,</p>
-<p>         DIRECT=SEND,</p>
-<p>         FNAME=CFTPROD/TABEBAS.X</p>
-<p> </p>
-<p>CFTSEND MODE=REPLACE, ID=……..,</p>
-<p>         XLATE=TABEBAS,</p>
-<p>          …………………….</p>
-<p> </p>
-<p>CFTRECV MODE=REPLACE, ID=………,</p>
-<p>         XLATE=TABASEB,</p>
-<p>          …………………….</p>
-<p> </p>
-<p> </p>
-<p>Transfer CFT WIN/NT configuration</p>
-<p>============</p>
-<p> </p>
-<p>cftrecv  id       = …………,</p>
-<p>        fcode    = binary,  /* to avoid needing conversion */</p>
-<p>         …………………</p>
-<p> </p>
-<p>cftsend  id       = …………,</p>
-<p>        fcode    = binary,  /* to avoid needing conversion */</p>
-<p>         ………………….</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Transfer CFT IBM i configuration</p>
+            <p>CFTXLATE MODE=REPLACE,</p>
+            <p>         ID=TABASEB,</p>
+            <p>         DIRECT=RECV,</p>
+            <p>         FNAME=CFTPROD/TABASEB.X</p>
+            <p>CFTXLATE MODE=REPLACE,</p>
+            <p>         ID=TABEBAS,</p>
+            <p>         DIRECT=SEND,</p>
+            <p>         FNAME=CFTPROD/TABEBAS.X</p>
+            <p> </p>
+            <p>CFTSEND MODE=REPLACE, ID=……..,</p>
+            <p>         XLATE=TABEBAS,</p>
+            <p>          …………………….</p>
+            <p> </p>
+            <p>CFTRECV MODE=REPLACE, ID=………,</p>
+            <p>         XLATE=TABASEB,</p>
+            <p>          …………………….</p>
+            <p> </p>
+            <p> </p>
+            <p>Transfer CFT WIN/NT configuration</p>
+            <p>============</p>
+            <p> </p>
+            <p>cftrecv  id       = …………,</p>
+            <p>        fcode    = binary,  /* to avoid needing conversion */</p>
+            <p>         …………………</p>
+            <p> </p>
+            <p>cftsend  id       = …………,</p>
+            <p>        fcode    = binary,  /* to avoid needing conversion */</p>
+            <p>         ………………….</p>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -1,14 +1,12 @@
 {
-    "title": "CFTNET - Network resources",
+    "title": "CFTNET  - Network resources",
     "linkTitle": "CFTNET - Network resources",
     "weight": "400"
-}# <span id="kanchor73"></span><span id="Defining_network_resources__command_line___Start_here"></span>CFTNET - Network resources
-
-<span id="About_the_Generic_CFTNET_command"></span>You can use the CFTNET
+}<span id="About_the_Generic_CFTNET_command"></span>You can use the CFTNET
 command to define a network access resource. The available CFTNET network
 is:
 
--   [TCI/IP](#defining_tcp_ip__command_line_)
+-   [TCI/IP](#Defining_TCP_IP__command_line_)
 
 The example below is not an actual Transfer CFT command. It lists the
 parameters which are common to all the network access methods.
@@ -20,43 +18,43 @@ Related
 topics
 
 -   Command syntax
-    [CFTNET](../../../command_summary)
+    [CFTNET](../../command_summary)
 -   Object concepts
     [Network resources
-    concepts](../../../../admin_intro/admin_config_commands/network_resource_concepts)
+    concepts](../../GUI/Concepts/Network_resource_concepts.htm)
 
 #### Command parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/call">CALL</a></p></td>
-<td><p>Call direction possible through this network resource.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p></td>
-<td><p>Logical class for the physical link.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/id">ID</a></p></td>
-<td><p>Network resource identifier.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX </a></p></td>
-<td><p>Maximum number of simultaneous connections that Transfer
-CFT will accept to establish on this network resource.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p></td>
-<td><p>Defines the type of network resource.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/call.htm">CALL</a></p>         </td>
+         <td>            <p>Call direction possible through this network resource.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/class.htm">CLASS</a></p>         </td>
+         <td>            <p>Logical class for the physical link.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/id.htm">ID</a></p>         </td>
+         <td>            <p>Network resource identifier.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/maxcnx.htm">MAXCNX </a></p>         </td>
+         <td>            <p>Maximum number of simultaneous connections that Transfer
+CFT will accept to establish on this network resource.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/type.htm">TYPE</a> </p>         </td>
+         <td>            <p>Defines the type of network resource.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Defining_TCP_IP__command_line_"></span>Defining TCP/IP
@@ -76,60 +74,60 @@ Defining network resources topic.
 #### TYPE =  TCP
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th> </th>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td rowspan="4"><p>Parameters</p></td>
-<td><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p></td>
-<td><p>Class associated with this network resource.</p>
-<p>This concept is used to group resources of the same type,
-so that they can be used indifferently to establish connections with partners.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/host">HOST</a> </p></td>
-<td><p>IP address of the local resource.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a></p></td>
-<td><p>The maximum number of simultaneous connections
-that Transfer CFT accepts to establish on a given network resource.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/call">CALL</a></p></td>
-<td><p>Call direction possible through this network
-resource.</p></td>
-</tr>
-<tr class="odd">
-<td colspan="3"><p> </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th> </th>
+         <th>Parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td rowspan="4">            <p>Parameters</p>         </td>
+         <td>            <p><a href="../Parameter_index/class.htm">CLASS</a></p>         </td>
+         <td>            <p>Class associated with this network resource.</p>
+            <p>This concept is used to group resources of the same type,
+so that they can be used indifferently to establish connections with partners.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/host.htm">HOST</a> </p>         </td>
+         <td>            <p>IP address of the local resource.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/maxcnx.htm">MAXCNX</a></p>         </td>
+         <td>            <p>The maximum number of simultaneous connections
+that Transfer CFT accepts to establish on a given network resource.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/call.htm">CALL</a></p>         </td>
+         <td>            <p>Call direction possible through this network
+resource.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td colspan="3">            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET     MODE   =    
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET     MODE   =    
 CREATE,</p>
-<p>     ID          =    
+            <p>     ID          =    
 TCP00,</p>
-<p>     TYPE         =    
+            <p>     TYPE         =    
 TCP,</p>
-<p>     HOST        =    
+            <p>     HOST        =    
 localhost,</p>
-<p>     MAXCNX     =    
+            <p>     MAXCNX     =    
 6,</p>
-<p>     CALL       =    
-INOUT</p></td>
-</tr>
-</tbody>
+            <p>     CALL       =    
+INOUT</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Defines a resource on the "LOCALHOST" node, which corresponds
@@ -171,58 +169,58 @@ Use this command to access to a telecommunications network
 via another network.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/class">CLASS</a></p></td>
-<td><p>Class associated with this network resource.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/id">ID</a></p></td>
-<td><p>Identifier of the network accessed via a proxy.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> =
-TCP</p></td>
-<td><p>The type of network accessed via a proxy.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="inet.htm">INET</a></p></td>
-<td><p>Identifier of the CFTNET command defining access to the
-first network.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/protocol">PROTOCOL</a> </p></td>
-<td><p>The proxy dialog protocol. Transfer CFT supports SOCKS4 and SOCKS5.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/host">HOST</a> </p></td>
-<td><p>Addresses of the proxies in the first network, with up to four
-proxies in the same first network.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/port">PORT</a> </p></td>
-<td><p>Listening port of the proxy/proxies in the first network.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../../../command_summary/parameter_intro/maxcnx">MAXCNX</a></p></td>
-<td><p>Maximum number of concurrent connections that Transfer
-CFT will establish with the proxy/proxies.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../../../command_summary/parameter_intro/user">USER</a></p></td>
-<td><p>User name transmitted in the connection request addressed
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/class.htm">CLASS</a></p>         </td>
+         <td>            <p>Class associated with this network resource.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/id.htm">ID</a></p>         </td>
+         <td>            <p>Identifier of the network accessed via a proxy.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/type.htm">TYPE</a> =
+TCP</p>         </td>
+         <td>            <p>The type of network accessed via a proxy.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>INET</p>         </td>
+         <td>            <p>Identifier of the CFTNET command defining access to the
+first network.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/protocol.htm">PROTOCOL</a> </p>         </td>
+         <td>            <p>The proxy dialog protocol. Transfer CFT supports SOCKS4 and SOCKS5.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/host.htm">HOST</a> </p>         </td>
+         <td>            <p>Addresses of the proxies in the first network, with up to four
+proxies in the same first network.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/port.htm">PORT</a> </p>         </td>
+         <td>            <p>Listening port of the proxy/proxies in the first network.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="../Parameter_index/maxcnx.htm">MAXCNX</a></p>         </td>
+         <td>            <p>Maximum number of concurrent connections that Transfer
+CFT will establish with the proxy/proxies.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="../Parameter_index/user.htm">USER</a></p>         </td>
+         <td>            <p>User name transmitted in the connection request addressed
 to the proxy.</p>
-<p>This parameter is case-sensitive. By default, it is set
-to the value of the user name in which Transfer CFT is being run.</p></td>
-</tr>
-</tbody>
+            <p>This parameter is case-sensitive. By default, it is set
+to the value of the user name in which Transfer CFT is being run.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 For an example and proxy details, see [Transfers via
-a Proxy and SOCKS protocol](../../../../protocols_start_here/ipv6/use_proxy_and_socks_protocol).
+a Proxy and SOCKS protocol](../../Prots/internet/use_Proxy_and_SOCKS_protocol.htm).

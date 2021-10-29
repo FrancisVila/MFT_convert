@@ -1,47 +1,45 @@
 {
-    "title": "PURGE - Purge the catalog",
+    "title": "PURGE  - Purging the catalog",
     "linkTitle": "PURGE - Purge the catalog",
     "weight": "330"
-}# <span id="kanchor21"></span><span id="PURGE"></span><span id="About_the_PURGE_Command"></span>PURGE - Purging the catalog
-
-This topic describes how to delete records which have exceeded the retention
+}This topic describes how to delete records which have exceeded the retention
 time in the catalog. Transfer CFT provides the following purge options:
 
--   [Startup configuration purge](#startup)
--   [Periodic purge](#periodic)
--   [Dynamic catalog purge](#dynamic)
--   [Compatibility](#compatib)
+-   [Startup configuration purge](#Startup)
+-   [Periodic purge](#Periodic)
+-   [Dynamic catalog purge](#Dynamic)
+-   [Compatibility](#Compatib)
 
 Syntax
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Description</th>
+   <thead>
+      <tr class="header">
+         <th>Description</th>
 <th colspan="2">Use this command to deletes records which have exceeded
 the retention time indicated in the Transfer CFT parameter setting. You
 can set the purge time to meet your requirements and Transfer CFT
 activity.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Parameters</p></td>
-<td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a></p></td>
-<td><p>Purge time selected by the user.</p>
-<p>You can
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Parameters</p>         </td>
+         <td>            <p><a href="../Parameter_index/timep.htm">TIMEP</a></p>         </td>
+         <td>            <p>Purge time selected by the user.</p>
+            <p>You can
 deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a
 loss of performance, or overflow.</p>
-<p>If the next purge is part of a cycle, see the CFTCAT TIMEP
+            <p>If the next purge is part of a cycle, see the CFTCAT TIMEP
 parameter, the entire cycle is deleted, and not just the next occurrence
-of this cycle.</p></td>
-</tr>
-</tbody>
+of this cycle.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Startup"></span>Start-up configuration purge
 
-You can configure a catalog purge to occur on Transfer CFT start up. The following [unified configuration](../../uconf/uconf_parameters) options are available:
+You can configure a catalog purge to occur on Transfer CFT start up. The following [unified configuration](../../uconf/uconf_parameters.htm) options are available:
 
 -   Purge before starting transfers uconf
 -   Start purging when Transfer CFT is running in the background
@@ -49,62 +47,62 @@ You can configure a catalog purge to occur on Transfer CFT start up. The followi
 
 ## <span id="Periodic"></span>Periodic purge
 
-You can use the [unified configuration](../../uconf/uconf_parameters) parameter cft.purge.periodicity to schedule periodic catalog purges. To define this parameter enter an integer, optionally followed by the letter D, H, or M, to indicate day, hour, or minute, respectively. If you enter zero as the value, the default, there is no periodic purge.
+You can use the [unified configuration](../../uconf/uconf_parameters.htm) parameter cft.purge.periodicity to schedule periodic catalog purges. To define this parameter enter an integer, optionally followed by the letter D, H, or M, to indicate day, hour, or minute, respectively. If you enter zero as the value, the default, there is no periodic purge.
 
 When scheduling periodic purges, be sure to consider the amount of time that you want to keep transfers. This is especially important for transfers that are in the HOLD state, as they have not yet been executed. Set the parameters cft.purge.sh and cft.purge.rh to values that guarantee that these transfer are not purged before they are completed regardless of purge scheduling.
 
 Examples
 
-The examples provide as a basis for scheduling catalog purges, where the time  is from the start of the transfer. See the section [Compatibility](#compatib) for information on how to use the former purge scheduling (exclusively by days).
+The examples provide as a basis for scheduling catalog purges, where the time  is from the start of the transfer. See the section [Compatibility](#Compatib) for information on how to use the former purge scheduling (exclusively by days).
 
 To disable the periodic purge:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=0</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=0         </td>
+      </tr>
+   </tbody>
 </table>
 
 To set a purge period of one day:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=1</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=1         </td>
+      </tr>
+   </tbody>
 </table>
 
 To set a purge period of 2 days:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=2D</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=2D         </td>
+      </tr>
+   </tbody>
 </table>
 
 To set a purge period of 3 hours:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=3H</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=3H         </td>
+      </tr>
+   </tbody>
 </table>
 
 To set a purge period of 120 minutes:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=120M</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=120M         </td>
+      </tr>
+   </tbody>
 </table>
 
 To define a periodic purge every 30 minutes, where transfers in Hold are kept for two days, configure as follows.
@@ -112,50 +110,50 @@ To define a periodic purge every 30 minutes, where transfers in Hold are kept fo
 -   To keep X and T states transfers for 30 minutes:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.rx,value=30M<br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.rx,value=30M<br />
 CFTUTIL uconfset id=cft.purge.sx,value=30M<br />
 CFTUTIL uconfset id=cft.purge.rt,value=30M<br />
-CFTUTIL uconfset id=cft.purge.st,value=30M</td>
-</tr>
-</tbody>
+CFTUTIL uconfset id=cft.purge.st,value=30M         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   To keep H state transfers for 2 days:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.rh,value=2D<br />
-CFTUTIL uconfset id=cft.purge.sh,value=2D</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.rh,value=2D<br />
+CFTUTIL uconfset id=cft.purge.sh,value=2D         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   To schedule a periodic purge every 30 minutes:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=cft.purge.periodicity,value=30M</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=cft.purge.periodicity,value=30M         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   To apply the dynamic configuration parameters change:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL reconfig type=UCONF</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL reconfig type=UCONF         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Dynamic"></span>Dynamic catalog purge
 
-You can use the [unified configuration](../../uconf/uconf_parameters) parameters to modify the amount of time to keep transfers in catalog before purging without modifying the CFTCAT object.
+You can use the [unified configuration](../../uconf/uconf_parameters.htm) parameters to modify the amount of time to keep transfers in catalog before purging without modifying the CFTCAT object.
 
 For each of the following, enter an integer value for the amount of time. If you enter the default value of -1, the CFTCAT configuration value is used.
 
@@ -183,4 +181,4 @@ Example
 
 For a transfer created at 10:30 on Monday February 13, for example, if the retention period is '1D', or '24H', or '1440M', it cannot be purged before 10:30 on February 14.
 
-See also [CFTCAT - Catalog attributes.](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcat)
+See also [CFTCAT - Catalog attributes.](../Conf/CFTCAT.htm)

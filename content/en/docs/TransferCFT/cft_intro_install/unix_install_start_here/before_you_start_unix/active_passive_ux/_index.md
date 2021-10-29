@@ -1,28 +1,28 @@
 {
-    "title": "Active/passive installation",
+    "title": "Active/passive installation - Unix",
     "linkTitle": "Active/passive installation",
     "weight": "180"
-}This section describes how to install an active/passive architecture, as described in [About Multi-node architecture.](../../../../about_multinode)
+}This section describes how to install an active/passive architecture, as described in [About Multi-node architecture.](../../../about_multinode)
 
 ## Prerequisites
 
 Transfer CFT in multi-host architecture requires:
 
 -   A shared file system
--   You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See [Shared file system prerequisites](../../../windows_install_start_here/before_you_start_win/n_active_active/shared_file_prereq_win) for details.
+-   You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See [Shared file system prerequisites](../../windows_install_start_here/before_you_start_win/active_passive_win/shared_file_prereq_win) for details.
 
 ### License keys
 
 Transfer CFT in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../../../windows_install_start_here/before_you_start_win/n_active_active/shared_file_prereq_win">Shared file system prerequisites</a> for details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../../windows_install_start_here/before_you_start_win/active_passive_win/shared_file_prereq_win">Shared file system prerequisites</a> for details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can use a single key for a multi-node installation, as either:
@@ -34,47 +34,47 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the Transfer CFT install package, as described in [Install Transfer CFT](../).
+Download and unzip the Transfer CFT install package, as described in [Install Transfer CFT](transfercft/cft_intro_install/unix_install_start_here/before_you_start_unix).
 
 ### Customize
 
 Create as many copies of the initialize.properties file as you have hosts in the installation. Customize the *n* initialize.properties file with the following parameters.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFT_Full_Hostname</td>
-<td><p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.</p>
-<p>When you re installing a cluster, there are two ways to define this parameter:</p>
-<ul>
-<li><p>If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)</p></li>
-<li>Set the FQDN for each machine in the cluster, that is, for each host installation</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Runtimedir</td>
-<td>The runtime directory must be in a shared directory.</td>
-</tr>
-<tr class="odd">
-<td>LoadBalancer_Host</td>
-<td><p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.</p>
+   <tbody>
+      <tr class="odd">
+         <td>CFT_Full_Hostname         </td>
+         <td>            <p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.</p>
+            <p>When you re installing a cluster, there are two ways to define this parameter:</p>
+            <ul>
+               <li>            <p>If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)</p>               </li>
+               <li>Set the FQDN for each machine in the cluster, that is, for each host installation               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>Runtimedir         </td>
+         <td>The runtime directory must be in a shared directory.         </td>
+      </tr>
+      <tr class="odd">
+         <td>LoadBalancer_Host         </td>
+         <td>            <p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The load
-balancer is used to connect to the Transfer CFT Copilot server.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td>LoadBalancer_Port</td>
-<td>Specify the load balancer port, which is redirected to the
-Central Governance dedicated port of the Transfer CFT UI Server.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The load
+balancer is used to connect to the Transfer CFT Copilot server.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>LoadBalancer_Port         </td>
+         <td>Specify the load balancer port, which is redirected to the
+Central Governance dedicated port of the Transfer CFT UI Server.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Install

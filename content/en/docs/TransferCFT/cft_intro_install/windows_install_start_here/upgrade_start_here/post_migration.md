@@ -7,13 +7,13 @@
 If you performed an install and auto import or a manual migration, you must manually import compiled objects and exec scripts from the old configuration. There are no Transfer CFT commands to import these compiled objects and exec scripts, and they are not included in the auto import process.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After completing an upgrade or a migration procedure, you must update to the most recent SP.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">After completing an upgrade or a migration procedure, you must update to the most recent SP.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Compiled objects: APIs and Exits

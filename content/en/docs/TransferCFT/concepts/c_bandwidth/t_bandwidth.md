@@ -2,7 +2,7 @@
     "title": "Managing bandwidth sessions",
     "linkTitle": "Managing bandwidth sessions",
     "weight": "240"
-}This topic describes bandwidth session concepts. For parameter details, see the topic [About bandwidth control](..//transfercft/concepts/c_bandwidth).
+}This topic describes bandwidth session concepts. For parameter details, see the topic [About bandwidth control](transfercft/concepts/c_bandwidth).
 
 In Transfer CFT, bandwidth control can occur at the following levels:
 
@@ -22,7 +22,7 @@ Every session, as shown here, is linked to a partner. Partner are linked to a ne
 -   p = partner
 -   s = session
 
-![](image.png)
+![](/Images/TransferCFT/image.png)
 
 Within a class (netband, partner, session), the bandwidth is shared evenly, and is proportionate to its relative rate. This ensures fairness between sessions for a partner, between partners in a netband, and between netbands in a netband. The following rules apply:
 
@@ -34,5 +34,5 @@ Within a class (netband, partner, session), the bandwidth is shared evenly, and 
 
 Related topics
 
--   [About bandwidth control](..//transfercft/concepts/c_bandwidth)
--   [Bandwidth use cases](../r_use_cases_bandwidth)
+-   [About bandwidth control](transfercft/concepts/c_bandwidth)
+-   [Bandwidth use cases](r_use_cases_bandwidth)

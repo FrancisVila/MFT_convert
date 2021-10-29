@@ -9,12 +9,12 @@
 \_FMSUB Function starts the execution of a batch file without waiting for the end of the execution of it.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_FMSUB PARM = (FILENAME)</p>
-<p>RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_FMSUB PARM = (FILENAME)</p>
+            <p>RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -27,11 +27,11 @@
 #### Examples
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR NAME = FILE_CMD, SIZE = 13, INIT = CONFIG.CMD</p>
-<p>LONG NAME = RSC</p>
-<p>_FMSUB PARM = (%FILE_CMD%), RC = LRC</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR NAME = FILE_CMD, SIZE = 13, INIT = CONFIG.CMD</p>
+            <p>LONG NAME = RSC</p>
+            <p>_FMSUB PARM = (%FILE_CMD%), RC = LRC</p>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -17,7 +17,7 @@ The possible values are:
     are printed out including STAT
 -   BRIEF: The following
     messages do not appear in the LOG (these are messages of the "system
-    information" category - see the CFTLOG [OPERMSG](../opermsg) parameter):  
+    information" category - see the CFTLOG [OPERMSG](opermsg) parameter):  
     CFTR12I &cmd Treated  
     CFTC07I PART=&part IDF=&idf IDT=&idt State=&state Deleted
 -   Requester mode:  
@@ -87,21 +87,21 @@ information of a catalog entry.
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LISTCOM CONTENT =FULL</p>
-<p> </p>
-<p>CFTU00I LISTCOM _ Correct (content=full)</p>
-<p>CFTU00I SEND _ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)</p>
-<p>CFTU20I Communication file row number used: 00001137 on 20191212 Time 09331119</p>
-<p>CFTU00I RETURN _ Correct (CODE=0)</p>
-<p> </p>
-<p>1 record(s) selected</p>
-<p>0 record(s) cleared</p>
-<p>1500 record(s) in Com file</p>
-<p>1499 record(s) free (99%)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LISTCOM CONTENT =FULL</p>
+            <p> </p>
+            <p>CFTU00I LISTCOM _ Correct (content=full)</p>
+            <p>CFTU00I SEND _ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)</p>
+            <p>CFTU20I Communication file row number used: 00001137 on 20191212 Time 09331119</p>
+            <p>CFTU00I RETURN _ Correct (CODE=0)</p>
+            <p> </p>
+            <p>1 record(s) selected</p>
+            <p>0 record(s) cleared</p>
+            <p>1500 record(s) in Com file</p>
+            <p>1499 record(s) free (99%)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### LISTPARM, LISTPART
@@ -158,4 +158,4 @@ Indicates the amount of information to display. Here, the options are listed in 
 -   FULL: Displays values, descriptions, and most other parameter details
 -   DEBUG: Most exhaustive level of information (including some internal flags/information)
 
-[Return to Command index](../../)
+[Return to Command index](../)

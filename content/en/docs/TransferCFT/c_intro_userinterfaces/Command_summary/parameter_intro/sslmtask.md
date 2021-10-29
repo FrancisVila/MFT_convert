@@ -16,4 +16,4 @@ Transfer CFT.
 -   64:
     is the maximum for all operating systems
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Troubleshoot RTO 240 or 740",
+    "title": "Troubleshoot 240 or 740 RTO",
     "linkTitle": "Troubleshoot RTO 240 or 740",
     "weight": "490"
 }Issue: An error occurs with a 240 or 740 RTO
@@ -26,11 +26,11 @@ Various routers may be traversed when going from the local host to the remote ho
 You can use the ping command to find the appropriate MTU size. For example, on Windows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>ping &lt;remote address&gt; -l 1472 -f</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>ping &lt;remote address&gt; -l 1472 -f         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -66,11 +66,11 @@ These issues can also cause the timer to expire and induce the 240 RTO. You can 
 Execute cft\_support collect, and if necessary force a dump on a specific task in order to collect information. For example, on Unix:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>kill -3 &lt;process id&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>kill -3 &lt;process id&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 The solution may be a mix of system tuning and Transfer CFT configuration tuning.

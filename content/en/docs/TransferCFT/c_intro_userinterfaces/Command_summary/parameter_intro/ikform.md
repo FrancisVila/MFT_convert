@@ -11,4 +11,4 @@
 Used in PKIUTIL tool. Format for the private
 key to be imported.
 
-[Return to Command index](../../)
+[Return to Command index](../)

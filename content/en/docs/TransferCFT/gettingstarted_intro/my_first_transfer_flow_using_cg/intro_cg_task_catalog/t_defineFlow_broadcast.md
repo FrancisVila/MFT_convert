@@ -1,5 +1,5 @@
 {
-    "title": "Create a broadcast flow",
+    "title": "Create a broadcast flow ",
     "linkTitle": "Create a broadcast flow",
     "weight": "370"
 }Click Flows on the top toolbar to open the Flows Monitoring page.
@@ -18,16 +18,16 @@
 3.  In the Broadcast list section, select Enable (Yes).
 4.  Enter a name in the Name field, calling the broadcast **MainOffice\_news**.
 
-![](broadcast_list.png)
+![](/Images/TransferCFT/broadcast_list.png)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">You can refer to the Transfer CFT to <span>Central Governance</span> parameter mapping <a href="../r_flow_target">Flow definition: Target</a> and <a href="../r_flow_source">Flow definition: Source</a> to further customize your flow.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">You can refer to the Transfer CFT to <span>Central Governance</span> parameter mapping <a href="r_flow_target">Flow definition: Target</a> and <a href="r_flow_source">Flow definition: Source</a> to further customize your flow.         </td>
+      </tr>
+   </tbody>
 </table>
 
-&lt;&lt; [My first transfer flow](../../)
+&lt;&lt; [My first transfer flow](../)

@@ -43,15 +43,15 @@ the file record concept: actual size of the input file records.
 For the systems below not handling this concept:
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="26%"><p><strong>UNIX, Windows</strong></p></td>
-<td width="74%"><p>512 for text files (ITYPE = T, X or O).<br />
-4096 for binary or variables files (ITYPE = {B | V}).</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p><strong>UNIX, Windows</strong></p>         </td>
+         <td width="74%">            <p>512 for text files (ITYPE = T, X or O).<br />
+4096 for binary or variables files (ITYPE = {B | V}).</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

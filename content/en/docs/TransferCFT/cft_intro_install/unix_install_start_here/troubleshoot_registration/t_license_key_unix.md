@@ -1,6 +1,6 @@
 {
-    "title": "Apply a\u00a0license key",
-    "linkTitle": "Apply a\u00a0license key",
+    "title": "Apply a license key",
+    "linkTitle": "Apply a license key",
     "weight": "190"
 }You need to apply a valid license key to Transfer CFT in the following situations:
 
@@ -13,15 +13,15 @@
 1.  Install Transfer CFT. You can install Transfer CFT without a license key, and enter the key later.
 2.  After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Note</strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">Use the ABOUT command to display
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Note</strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">Use the ABOUT command to display
     the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
-    on which Transfer CFT is installed.</td>
-    </tr>
-    </tbody>
+    on which Transfer CFT is installed.         </td>
+          </tr>
+       </tbody>
     </table>
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: fulfillment@us.axway.com
@@ -65,19 +65,19 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Host information :</p>
-<p>* model = 4C</p>
-<p>* hostname = rs58</p>
-<p>* cpuid = F8C721F8C721F8C7</p>
-<p>* sysname = AIX</p>
-<p>* machine = 00F8C7214C00</p>
-<p>* version = 7</p>
-<p>* release = 1</p>
-<p>* distrib = unknown</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Host information :</p>
+            <p>* model = 4C</p>
+            <p>* hostname = rs58</p>
+            <p>* cpuid = F8C721F8C721F8C7</p>
+            <p>* sysname = AIX</p>
+            <p>* machine = 00F8C7214C00</p>
+            <p>* version = 7</p>
+            <p>* release = 1</p>
+            <p>* distrib = unknown</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In this example, the CPU ID is F8C721F8C721F8C7. Your information, including the cpuid, will differ from the example.

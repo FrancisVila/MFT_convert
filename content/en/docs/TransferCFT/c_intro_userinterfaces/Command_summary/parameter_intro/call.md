@@ -15,4 +15,4 @@ Call direction possible through this network resource. Select from:
 -   IN
 -   OUT
 
-[Return to Command index](../../)
+[Return to Command index](../)

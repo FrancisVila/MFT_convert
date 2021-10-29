@@ -1,20 +1,20 @@
 {
-    "title": "Post-installation",
+    "title": "Start and stop the server JOBs",
     "linkTitle": "Post-installation",
     "weight": "170"
 }This section presents JCL examples that you can use to create the JOBs necessary to run Transfer CFT. All of the JCLs are located in the **target.INSTALL** library.
 
--   [Starting Transfer CFT JOB CFTMAIN](#starting%20the%20cftmain%20example)
--   [Transfer CFT user interface server commands](#transfer%20cft%20user%20interface%20server)
+-   [Starting Transfer CFT JOB CFTMAIN](#Starting%20the%20CFTMAIN%20example)
+-   [Transfer CFT user interface server commands](#Transfer%20CFT%20user%20interface%20server)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you installed <span>Transfer CFT</span> along with <span>Central Governance</span>, the uconf <span>copilot.misc.cftstart.enable</span> is automatically set to <span>Yes</span>. This allows <span>Central Governance</span> to control stopping and starting your <span>Transfer CFT</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you installed <span>Transfer CFT</span> along with <span>Central Governance</span>, the uconf <span>copilot.misc.cftstart.enable</span> is automatically set to <span>Yes</span>. This allows <span>Central Governance</span> to control stopping and starting your <span>Transfer CFT</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Starting the CFTMAIN example"></span>Start Transfer CFT 
@@ -26,13 +26,13 @@ You can perform Transfer CFT commands using the CFTUTIL utility, the Transfer CF
 Start the CFTMAIN JCL in the target.INSTALL library.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTMAIN must be APF authorized to start if the UCONF <span>cft.mvs.monitor.check_apf </span>variable is set to <span>Yes</span>. Otherwise, the Transfer CFT log displays <span>CFTI01F CFT error CFT is not APF-authorized</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTMAIN must be APF authorized to start if the UCONF <span>cft.mvs.monitor.check_apf </span>variable is set to <span>Yes</span>. Otherwise, the Transfer CFT log displays <span>CFTI01F CFT error CFT is not APF-authorized</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Stop Transfer CFT 
@@ -42,11 +42,11 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 **Normal stop**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/F &lt;Jobname&gt;,SHUT FAST=NO <em>or</em> SHUT FAST=YES</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/F &lt;Jobname&gt;,SHUT FAST=NO <em>or</em> SHUT FAST=YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Quick stop**
@@ -54,31 +54,31 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 Enter the operator command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/P &lt;<span>Transfer CFT</span> Jobname&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/P &lt;<span>Transfer CFT</span> Jobname&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 \- or -
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/F &lt;<span>Transfer CFT</span> Jobname&gt;,SHUT FAST=YES</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/F &lt;<span>Transfer CFT</span> Jobname&gt;,SHUT FAST=YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Force** Transfer CFT **shut down**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/F &lt;<span>Transfer CFT</span> Jobname&gt;,SHUT FAST=KILL</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/F &lt;<span>Transfer CFT</span> Jobname&gt;,SHUT FAST=KILL         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Restart
@@ -86,11 +86,11 @@ Enter the operator command:
 The following command restarts Transfer CFT outside of a customized JCL. Enter the operator command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/F Jobname,SHUT RESTART=YES</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/F Jobname,SHUT RESTART=YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Status
@@ -108,25 +108,25 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 When the copilot.misc.CreateProcessAsUser variable is set, STEPLIB or JOBLIB can be non-APF. Only a Central Governance/PassPort user can sign on to Copilot user interface.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the ‘cft.mvs.copilot.check_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the ‘cft.mvs.copilot.check_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.         </td>
+      </tr>
+   </tbody>
 </table>
 
 LOG message: +CFTI42E Copilot must be APF-authorized.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTCOPL must be APF authorized to start if the UCONF <span>cft.mvs.copilot.check_apf </span>variable is set to <span>Yes</span>. Otherwise, the Transfer CFT log displays <span>CFTI42E Copilot must be APF-authorized</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTCOPL must be APF authorized to start if the UCONF <span>cft.mvs.copilot.check_apf </span>variable is set to <span>Yes</span>. Otherwise, the Transfer CFT log displays <span>CFTI42E Copilot must be APF-authorized</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Stopping user interface (Copilot) server

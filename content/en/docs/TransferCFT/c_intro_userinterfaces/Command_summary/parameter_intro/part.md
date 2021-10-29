@@ -65,13 +65,13 @@ This identifier designates:
 
 -   either a partner described by the command:
     <table data-cellspacing="0" width="90%">
-    <tbody>
-    <tr class="odd">
-    <td width="12%"><p>CFTPART</p></td>
-    <td width="49.131%"><p>ID = &lt;PART parameter value&gt;, ...</p></td>
-    <td width="35.224%"><p> </p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td width="12%">            <p>CFTPART</p>         </td>
+             <td width="49.131%">            <p>ID = &lt;PART parameter value&gt;, ...</p>         </td>
+             <td width="35.224%">            <p> </p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 <!-- -->
@@ -79,18 +79,18 @@ This identifier designates:
 -   or a list of partners described by
     the command:
     <table data-cellspacing="0" width="90%">
-    <tbody>
-    <tr class="odd">
-    <td width="12%"><p>CFTDEST</p></td>
-    <td width="55.61%"><p>ID = &lt;PART parameter value&gt;,</p></td>
-    <td width="28.746%"><p> </p></td>
-    </tr>
-    <tr class="even">
-    <td width="12%"><p> </p></td>
-    <td width="55.61%"><p>PART = (<em>identifier, identifier . . .</em>)</p></td>
-    <td width="28.746%"><p> </p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td width="12%">            <p>CFTDEST</p>         </td>
+             <td width="55.61%">            <p>ID = &lt;PART parameter value&gt;,</p>         </td>
+             <td width="28.746%">            <p> </p>         </td>
+          </tr>
+          <tr class="even">
+             <td width="12%">            <p> </p>         </td>
+             <td width="55.61%">            <p>PART = (<em>identifier, identifier . . .</em>)</p>         </td>
+             <td width="28.746%">            <p> </p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 #### CFTIDF
@@ -150,4 +150,4 @@ The associated value of this parameter can be:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

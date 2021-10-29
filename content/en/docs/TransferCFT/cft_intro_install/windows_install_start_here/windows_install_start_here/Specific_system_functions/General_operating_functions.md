@@ -1,13 +1,11 @@
 {
-    "title": "General operating functions",
+    "title": "General  operating functions",
     "linkTitle": "General operating functions",
     "weight": "270"
-}# <span id="General_operating_functions"></span>General operating functions
-
--   [Logical
-    file names](#logical_file_names)
+}-   [Logical
+    file names](#Logical_file_names)
 -   [Using
-    a definition file](#using%20a%20definition%20file)
+    a definition file](#Using%20a%20definition%20file)
 
 ## <span id="Logical_file_names"></span>Logical file names
 
@@ -49,73 +47,73 @@ The following table lists the logical names of files, and
 defines the role.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Working file </p></th>
-<th><p>Logical name </p></th>
-<th><p>Comment </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Parameter </p></td>
-<td data-valign="top" width="26%"><p>CFTPARM </p></td>
-<td data-valign="top" width="46%"><p>Parameter file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="28%"><p>Partner </p></td>
-<td data-valign="top" width="26%"><p>CFTPART </p></td>
-<td data-valign="top" width="46%"><p>Partner file </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Catalogue </p></td>
-<td data-valign="top" width="26%"><p>CFTCATA </p></td>
-<td data-valign="top" width="46%"><p>Catalogue file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="28%"><p>Communication </p></td>
-<td data-valign="top" width="26%"><p>CFTCOM </p></td>
-<td data-valign="top" width="46%"><p>Communication file </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Log </p></td>
-<td data-valign="top" width="26%"><p>CFTLOG</p></td>
-<td data-valign="top" width="46%"><p>Log file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="28%"><p>Log </p></td>
-<td data-valign="top" width="26%"><p>CFTALOG</p></td>
-<td data-valign="top" width="46%"><p>Alternate log file </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Account </p></td>
-<td data-valign="top" width="26%"><p>CFTACCN </p></td>
-<td data-valign="top" width="46%"><p>Statistics file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="28%"><p>Account </p></td>
-<td data-valign="top" width="26%"><p>CFTAACCN </p></td>
-<td data-valign="top" width="46%"><p>Alternate statistics file </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Suffixes (1) </p></td>
-<td data-valign="top" width="26%"><p>CFTSUFX </p></td>
-<td data-valign="top" width="46%"><p>Suffixes file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="28%"><p>Parameter </p></td>
-<td data-valign="top" width="26%"><p>SEC.INI </p></td>
-<td data-valign="top" width="46%"><p>System enabling file </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="28%"><p>Logical names </p></td>
-<td data-valign="top" width="26%"><p>CFTNMLOG </p></td>
-<td data-valign="top" width="46%"><p>Redefinition files </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Working file </p></th>
+         <th>            <p>Logical name </p></th>
+         <th>            <p>Comment </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Parameter </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTPARM </p>         </td>
+         <td data-valign="top" width="46%">            <p>Parameter file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Partner </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTPART </p>         </td>
+         <td data-valign="top" width="46%">            <p>Partner file </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Catalogue </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTCATA </p>         </td>
+         <td data-valign="top" width="46%">            <p>Catalogue file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Communication </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTCOM </p>         </td>
+         <td data-valign="top" width="46%">            <p>Communication file </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Log </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTLOG</p>         </td>
+         <td data-valign="top" width="46%">            <p>Log file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Log </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTALOG</p>         </td>
+         <td data-valign="top" width="46%">            <p>Alternate log file </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Account </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTACCN </p>         </td>
+         <td data-valign="top" width="46%">            <p>Statistics file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Account </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTAACCN </p>         </td>
+         <td data-valign="top" width="46%">            <p>Alternate statistics file </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Suffixes (1) </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTSUFX </p>         </td>
+         <td data-valign="top" width="46%">            <p>Suffixes file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Parameter </p>         </td>
+         <td data-valign="top" width="26%">            <p>SEC.INI </p>         </td>
+         <td data-valign="top" width="46%">            <p>System enabling file </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="28%">            <p>Logical names </p>         </td>
+         <td data-valign="top" width="26%">            <p>CFTNMLOG </p>         </td>
+         <td data-valign="top" width="46%">            <p>Redefinition files </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-(1): see [Recognizing file types](../file_management_functions)
+(1): see [Recognizing file types](File_management_functions.htm)
 
 By default of definition for these logical names, the physical names
 correspond to the logical names.
@@ -159,16 +157,16 @@ parameter and partner file names, except in the case where Transfer CFT
 is operating in Client/Server with a UNIX Transfer CFT.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The CFTFILE command in CFTUTIL does not take into account any
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The CFTFILE command in CFTUTIL does not take into account any
 environment variables set and corresponding to the Transfer CFT logical
 file names. You can overcome this problem in a batch file by using
-certain operating system functions.</td>
-</tr>
-</tbody>
+certain operating system functions.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example

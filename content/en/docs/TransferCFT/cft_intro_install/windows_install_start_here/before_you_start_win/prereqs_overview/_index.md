@@ -1,5 +1,5 @@
 {
-    "title": "1. Prerequisites",
+    "title": "Prerequisites",
     "linkTitle": "1. Prerequisites",
     "weight": "140"
 }Axway products are delivered electronically from Sphere, the Axway support website. A welcome letter notifies you that your products are ready for download.
@@ -12,13 +12,13 @@ To install you will perform the following tasks:
 4.  Install products.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> 3.7 is available as a 64-bit installation. If you are using and existing 32-bit <span>Transfer CFT</span>, you can use the Transfer CFT 3.7 install kit to move from the existing version to Transfer CFT 3.7 64-bit.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> 3.7 is available as a 64-bit installation. If you are using and existing 32-bit <span>Transfer CFT</span>, you can use the Transfer CFT 3.7 install kit to move from the existing version to Transfer CFT 3.7 64-bit.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## License keys
@@ -27,7 +27,7 @@ Before installing or upgrading, make sure you have obtained a license for Transf
 
 For information on applying a license key post installation, or if you have a problem with your license key, refer to the appropriate Troubleshooting topic.
 
--   [Windows: Applying a license key](../../troubleshoot_registration/license_key_win)
+-   [Windows: Applying a license key](../windows_install_start_here/windows_install_start_here/license_key_win)
      
 
 ### Multi-node license keys
@@ -35,13 +35,13 @@ For information on applying a license key post installation, or if you have a pr
 Transfer CFT in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../n_active_active/shared_file_prereq_win">Shared file system prerequisites</a> for details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="active_passive_win/shared_file_prereq_win">Shared file system prerequisites</a> for details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can use a single key for a multi-node installation, as either:

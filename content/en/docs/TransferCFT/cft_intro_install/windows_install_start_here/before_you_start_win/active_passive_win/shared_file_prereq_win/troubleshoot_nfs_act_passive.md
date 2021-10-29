@@ -1,5 +1,5 @@
 {
-    "title": "Troubleshoot NFS option",
+    "title": "Troubleshoot active passive file systems",
     "linkTitle": "Troubleshoot NFS option",
     "weight": "240"
 }Problem

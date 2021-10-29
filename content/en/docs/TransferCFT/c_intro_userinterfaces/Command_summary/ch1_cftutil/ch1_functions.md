@@ -8,12 +8,12 @@
 -   Two invariable identifier parameters: PARM and RC. The PARM parameter specifies the function call, and RC provides an execution report.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&lt;id_func&gt; PARM = ([&lt;value&gt;,] * &lt;value&gt;), RC = &lt;value&gt;</p>
-<p>The expression in square brackets is repeated.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&lt;id_func&gt; PARM = ([&lt;value&gt;,] * &lt;value&gt;), RC = &lt;value&gt;</p>
+            <p>The expression in square brackets is repeated.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The report must be the name of a variable of the type long integer.
@@ -25,11 +25,11 @@ The report must be the name of a variable of the type long integer.
 The PRINT function displays a string to standard output, or to a file if the output is redirected by the CAPTURE command.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>PRINT MSG = CHAIN​​,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>PRINT MSG = CHAIN​​,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -39,12 +39,12 @@ The PRINT function displays a string to standard output, or to a file if the out
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = CHAINE, size = 16, init = 'ABCDEF'</p>
-<p>  PRINT MSG = 'displays the string %CHAINE2%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = CHAINE, size = 16, init = 'ABCDEF'</p>
+            <p>  PRINT MSG = 'displays the string %CHAINE2%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Using general functions
@@ -64,11 +64,11 @@ General functions include:
 The \_RAND function generates a random number between a lower limit and an upper limit.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_RAND PARM = (VAR, Valmin, ValMax)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_RAND PARM = (VAR, Valmin, ValMax)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -80,13 +80,13 @@ The \_RAND function generates a random number between a lower limit and an upper
 #### Examples
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LONG name = DRAW</p>
-<p>_RAND parm = (DRAW, 1, 49)</p>
-<p>_PRINT msg = 'The drawing for the first number for the LOTTERY is %DRAW%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LONG name = DRAW</p>
+            <p>_RAND parm = (DRAW, 1, 49)</p>
+            <p>_PRINT msg = 'The drawing for the first number for the LOTTERY is %DRAW%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_MEMSET
@@ -96,11 +96,11 @@ The \_RAND function generates a random number between a lower limit and an upper
 The \_MEMSET function fills a string with a character.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_MEMSET PARM = (VAR, CODE, LG)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_MEMSET PARM = (VAR, CODE, LG)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -114,12 +114,12 @@ Enter the parameter value in upper case.
 #### Examples
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = BUFFER , size=16</p>
-<p>_MEMSET parm = (BUFFER, 32,16)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = BUFFER , size=16</p>
+            <p>_MEMSET parm = (BUFFER, 32,16)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_MEMCPY
@@ -129,11 +129,11 @@ Enter the parameter value in upper case.
 The \_MEMCPY function copies a string to a source destination string.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_MEMCPY PARM = (VAR, STR, LG)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_MEMCPY PARM = (VAR, STR, LG)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -147,13 +147,13 @@ Enter the parameter value in upper case.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = BUFFER , size=16</p>
-<p>CHAR name = STR , size=16, init = 'Line of 16 CAR'</p>
-<p>_MEMCPY parm = (BUFFER, STR,16)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = BUFFER , size=16</p>
+            <p>CHAR name = STR , size=16, init = 'Line of 16 CAR'</p>
+            <p>_MEMCPY parm = (BUFFER, STR,16)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_STRCPY
@@ -163,12 +163,12 @@ Enter the parameter value in upper case.
 The \_Strcpy function copies a string to a CHAR variable.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_STRCPY NAME = VAR,</p>
-<p>STR = CHAIN,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_STRCPY NAME = VAR,</p>
+            <p>STR = CHAIN,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -179,13 +179,13 @@ The \_Strcpy function copies a string to a CHAR variable.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = STRING1, size = 16</p>
-<p>CHAR name = STRING2, size = 16, init = 'ABCDEF'</p>
-<p>_STRCPY name = STRING1, STR = %STRING2%</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = STRING1, size = 16</p>
+            <p>CHAR name = STRING2, size = 16, init = 'ABCDEF'</p>
+            <p>_STRCPY name = STRING1, STR = %STRING2%</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_STRCMP
@@ -195,13 +195,13 @@ The \_Strcpy function copies a string to a CHAR variable.
 The \_STRCMP function compares two strings.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_STRCMP NAME = VAR1,</p>
-<p>STR = VAR2,</p>
-<p>RC = CMP</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_STRCMP NAME = VAR1,</p>
+            <p>STR = VAR2,</p>
+            <p>RC = CMP</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -213,14 +213,14 @@ The \_STRCMP function compares two strings.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = STRING1, size = 16, init = 'CDEFGH'</p>
-<p>CHAR name = STRING2, size = 16, init = 'ABCDEF'</p>
-<p>LONG name = CMP</p>
-<p>_STRCMP name = STRING1, STR = STRING2, RC = CMP</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = STRING1, size = 16, init = 'CDEFGH'</p>
+            <p>CHAR name = STRING2, size = 16, init = 'ABCDEF'</p>
+            <p>LONG name = CMP</p>
+            <p>_STRCMP name = STRING1, STR = STRING2, RC = CMP</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 At the end of this test, variable CMP is 1.

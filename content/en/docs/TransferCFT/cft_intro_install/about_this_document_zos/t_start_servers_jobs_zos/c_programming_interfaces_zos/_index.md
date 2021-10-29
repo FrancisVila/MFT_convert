@@ -1,12 +1,12 @@
 {
-    "title": "Build APIs and exits",
+    "title": "Programming interfaces",
     "linkTitle": "Build APIs and exits",
     "weight": "250"
 }This section describes the Transfer CFT batch programming interfaces for Transfer CFT.
 
 ## Transfer CFT APIs in a z/OS environment
 
-Transfer CFT APIs are described in the sub-book [Using APIs](../../using_apis). This programming interface can be accessed in the Assembler, COBOL and C programming languages.
+Transfer CFT APIs are described in the sub-book [Using APIs](../../../app_integration_intro/using_apis). This programming interface can be accessed in the Assembler, COBOL and C programming languages.
 
 Transfer CFT APIs use the DLL mode exclusively, with samples located in the following libraries:
 
@@ -84,13 +84,13 @@ Etc.
 In this case cftu, cfti, and cftc are defined as pointer functions (see OCFTAPD2).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the pointers are not initialized by OAPIFC an abend 0C1 occurs.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the pointers are not initialized by OAPIFC an abend 0C1 occurs.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   Delivered samples:  
@@ -150,143 +150,143 @@ The compile, link-edit, and run JCLs for these samples can be found in the CFTV2
 **Main delivered samples**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Language</th>
-<th><p>Source file</p>
-<p>cftv2.SAMPLE*</p></th>
-<th><p>Copy,</p>
-<p>Macro,</p>
-<p>Include used</p></th>
-<th>API</th>
-<th>LINK EDIT command files (DLL) distlib.CNTL</th>
-<th>Load module</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td rowspan="7"><p> </p>
+   <thead>
+      <tr class="header">
+         <th>Language</th>
+         <th>            <p>Source file</p>
+            <p>cftv2.SAMPLE*</p></th>
+         <th>            <p>Copy,</p>
+            <p>Macro,</p>
+            <p>Include used</p></th>
+         <th>API</th>
+         <th>LINK EDIT command files (DLL) distlib.CNTL</th>
+         <th>Load module</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td rowspan="7">            <p> </p>
 COBOL NODYNAM
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p></td>
-<td><p>OAPIC</p></td>
-<td><p>OPAICST</p></td>
-<td><p>CFTC</p></td>
-<td><p>LINRDACO</p></td>
-<td><p>OPAIC</p></td>
-</tr>
-<tr class="even">
-<td><p>OAPII</p></td>
-<td><p>OAPIUST or OAPI24</p></td>
-<td><p>CFTI</p></td>
-<td><p>LINRDAIO</p></td>
-<td><p>OAPII</p></td>
-</tr>
-<tr class="odd">
-<td><p>OAPIW</p></td>
-<td><p>OAPIUST or OAPI24</p></td>
-<td><p>CFTI</p>
-<p>CFTU</p></td>
-<td><p>LINRDAWO</p></td>
-<td><p>OAPIW</p></td>
-</tr>
-<tr class="even">
-<td><p>OAPIX</p></td>
-<td><p>OAPI24 + OAPICX4 or</p>
-<p>OAPIUST + AOPICX</p></td>
-<td><p>cftaix</p></td>
-<td><p>LINRDAXO</p></td>
-<td><p>OAPIX</p></td>
-</tr>
-<tr class="odd">
-<td><p>OAPI2A</p></td>
-<td><p>OCFTAPI2</p></td>
-<td><p>API 2</p></td>
-<td><p>LINRDA2O</p></td>
-<td><p>OAPI2A</p></td>
-</tr>
-<tr class="even">
-<td><p>OAPI2B</p></td>
-<td><p>OCFTAPI2</p></td>
-<td><p>API 2</p></td>
-<td><p>LINRDA3O</p></td>
-<td><p>OAPI2B</p></td>
-</tr>
-<tr class="odd">
-<td>OAPISYN</td>
-<td>OAPICST
+            <p> </p>
+            <p> </p>
+            <p> </p>
+            <p> </p>         </td>
+         <td>            <p>OAPIC</p>         </td>
+         <td>            <p>OPAICST</p>         </td>
+         <td>            <p>CFTC</p>         </td>
+         <td>            <p>LINRDACO</p>         </td>
+         <td>            <p>OPAIC</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>OAPII</p>         </td>
+         <td>            <p>OAPIUST or OAPI24</p>         </td>
+         <td>            <p>CFTI</p>         </td>
+         <td>            <p>LINRDAIO</p>         </td>
+         <td>            <p>OAPII</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>OAPIW</p>         </td>
+         <td>            <p>OAPIUST or OAPI24</p>         </td>
+         <td>            <p>CFTI</p>
+            <p>CFTU</p>         </td>
+         <td>            <p>LINRDAWO</p>         </td>
+         <td>            <p>OAPIW</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>OAPIX</p>         </td>
+         <td>            <p>OAPI24 + OAPICX4 or</p>
+            <p>OAPIUST + AOPICX</p>         </td>
+         <td>            <p>cftaix</p>         </td>
+         <td>            <p>LINRDAXO</p>         </td>
+         <td>            <p>OAPIX</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>OAPI2A</p>         </td>
+         <td>            <p>OCFTAPI2</p>         </td>
+         <td>            <p>API 2</p>         </td>
+         <td>            <p>LINRDA2O</p>         </td>
+         <td>            <p>OAPI2A</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>OAPI2B</p>         </td>
+         <td>            <p>OCFTAPI2</p>         </td>
+         <td>            <p>API 2</p>         </td>
+         <td>            <p>LINRDA3O</p>         </td>
+         <td>            <p>OAPI2B</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>OAPISYN         </td>
+         <td>OAPICST
 OAPIINF
-OAPIMSG</td>
-<td>cftau
+OAPIMSG         </td>
+         <td>cftau
 or
-CFTU</td>
-<td>LINRDAYO</td>
-<td>OAPISYN</td>
-</tr>
-<tr class="even">
-<td rowspan="6"><p><strong>C</strong></p>
-<p> </p></td>
-<td><p>CAPIC</p></td>
-<td><p>CAPIUST</p></td>
-<td><p>cftai</p>
-<p>cftau</p>
-<p>cftac</p></td>
-<td><p>LINRDACC</p></td>
-<td><p>CAPIC</p></td>
-</tr>
-<tr class="odd">
-<td><p>CAPIW</p></td>
-<td><p>CAPIUST</p></td>
-<td><p>cftai</p>
-<p>cftau</p></td>
-<td><p>LINRDAWC</p></td>
-<td><p>CAPIW</p></td>
-</tr>
-<tr class="even">
-<td><p>CAPIX</p></td>
-<td><p>CAPIUST</p></td>
-<td><p>cftaix</p></td>
-<td><p>LINRDAXC</p></td>
-<td><p>CAPIX</p></td>
-</tr>
-<tr class="odd">
-<td><p>CAPII</p></td>
-<td><p>CAPIUST</p></td>
-<td><p>cfti</p></td>
-<td><p>LINRDAIC</p></td>
-<td><p>CAPII</p></td>
-</tr>
-<tr class="even">
-<td><p>CAPI2A</p></td>
-<td><p>CAPI2UST</p></td>
-<td><p>API 2</p></td>
-<td><p>LINRDA2C</p></td>
-<td><p>CAPI2A</p></td>
-</tr>
-<tr class="odd">
-<td><p>CAPI2B</p></td>
-<td><p>CAPI2UST</p></td>
-<td><p>API 2</p></td>
-<td><p>LINRDA3C</p></td>
-<td><p>CAPI2B</p></td>
-</tr>
-<tr class="even">
-<td>ASM</td>
-<td><p>AAPIDLL</p></td>
-<td><p>-</p></td>
-<td><p>cftai</p></td>
-<td><p>LINKALE</p></td>
-<td><p>AAPIDLL</p></td>
-</tr>
-<tr class="odd">
-<td> </td>
-<td>AXPIDLL</td>
-<td> </td>
-<td>cftaix</td>
-<td>LINKALEX</td>
-<td>AXPIDLL</td>
-</tr>
-</tbody>
+CFTU         </td>
+         <td>LINRDAYO         </td>
+         <td>OAPISYN         </td>
+      </tr>
+      <tr class="even">
+         <td rowspan="6">            <p><strong>C</strong></p>
+            <p> </p>         </td>
+         <td>            <p>CAPIC</p>         </td>
+         <td>            <p>CAPIUST</p>         </td>
+         <td>            <p>cftai</p>
+            <p>cftau</p>
+            <p>cftac</p>         </td>
+         <td>            <p>LINRDACC</p>         </td>
+         <td>            <p>CAPIC</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CAPIW</p>         </td>
+         <td>            <p>CAPIUST</p>         </td>
+         <td>            <p>cftai</p>
+            <p>cftau</p>         </td>
+         <td>            <p>LINRDAWC</p>         </td>
+         <td>            <p>CAPIW</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CAPIX</p>         </td>
+         <td>            <p>CAPIUST</p>         </td>
+         <td>            <p>cftaix</p>         </td>
+         <td>            <p>LINRDAXC</p>         </td>
+         <td>            <p>CAPIX</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CAPII</p>         </td>
+         <td>            <p>CAPIUST</p>         </td>
+         <td>            <p>cfti</p>         </td>
+         <td>            <p>LINRDAIC</p>         </td>
+         <td>            <p>CAPII</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CAPI2A</p>         </td>
+         <td>            <p>CAPI2UST</p>         </td>
+         <td>            <p>API 2</p>         </td>
+         <td>            <p>LINRDA2C</p>         </td>
+         <td>            <p>CAPI2A</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CAPI2B</p>         </td>
+         <td>            <p>CAPI2UST</p>         </td>
+         <td>            <p>API 2</p>         </td>
+         <td>            <p>LINRDA3C</p>         </td>
+         <td>            <p>CAPI2B</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ASM         </td>
+         <td>            <p>AAPIDLL</p>         </td>
+         <td>            <p>-</p>         </td>
+         <td>            <p>cftai</p>         </td>
+         <td>            <p>LINKALE</p>         </td>
+         <td>            <p>AAPIDLL</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>          </td>
+         <td>AXPIDLL         </td>
+         <td>          </td>
+         <td>cftaix         </td>
+         <td>LINKALEX         </td>
+         <td>AXPIDLL         </td>
+      </tr>
+   </tbody>
 </table>

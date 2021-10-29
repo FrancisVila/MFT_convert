@@ -42,6 +42,6 @@ If the partner has a specific security profile for the server mode, after the pa
 -   Client certificate DN check (CFTSSL command DNUSER parameter)
 -   DN check of the authority that issued the client certificate (CFTSSL command DNISSUER parameter)
 
-If a specific SSL profile exists (CFTSSL direct=SERVER), then there are additional checks such as for the DNUSER or DNISSUER. However, if the SSL profile does not exist, the warning message [CFTT47W](../../../../troubleshoot_intro/messages_and_error_codes_start_here/cftt_messages) displays.
+If a specific SSL profile exists (CFTSSL direct=SERVER), then there are additional checks such as for the DNUSER or DNISSUER. However, if the SSL profile does not exist, the warning message [CFTT47W](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftt_messages) displays.
 
-[Return to Command index](../../)
+[Return to Command index](../../Command_summary.htm)

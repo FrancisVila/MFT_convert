@@ -41,6 +41,6 @@ The command CFTXLATE ID = &lt;defaut> is optional; if it is
 not included, the monitor internal translation tables are used (see their
 description in the appendix).
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

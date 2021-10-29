@@ -1,10 +1,8 @@
 {
-    "title": "Installation and operation Windows",
-    "linkTitle": "Installation and operation Windows",
-    "weight": "100"
-}# Windows: Installation and operation
-
-## <span id="Specifications_and_Prerequisites_for_CFT_Windows"></span>Transfer CFT Windows specific operations
+    "title": "Windows: Installation and operation",
+    "linkTitle": "Before you start",
+    "weight": "200"
+}## <span id="Specifications_and_Prerequisites_for_CFT_Windows"></span>Transfer CFT Windows specific operations
 
 This section introduces prerequisite information as well as installation and information on operating Transfer CFT in Windows.
 
@@ -31,8 +29,8 @@ the networks used. The TCP/IP network is supported.
 
 Standalone installation
 
-![](install_multi.png)
+![](/Images/TransferCFT/install01_(2).png)
 
 Multi-node installation
 
-![](install_multi.png)
+![](/Images/TransferCFT/install_multi.png)

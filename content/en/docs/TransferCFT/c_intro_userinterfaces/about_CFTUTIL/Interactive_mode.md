@@ -1,10 +1,8 @@
 {
-    "title": "Using interactive mode",
+    "title": "Use  interactive mode ",
     "linkTitle": "Using interactive mode",
     "weight": "150"
-}# <span id="Using_interactive_mode"></span>Use interactive mode
-
-CFTUTIL can be used in an interactive mode, which consists of several
+}CFTUTIL can be used in an interactive mode, which consists of several
 operating modes that use the same CFTUTIL operations regardless of the operating system.
 
 ## <span id="Data_entry_in_command_line"></span>Data entry in command line
@@ -21,22 +19,22 @@ In this syntax:
     to your OS
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>OS</p></th>
-<th><p> file_symb</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="50%"><p>Windows</p></td>
-<td width="50%"><p>#</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>UNIX</p></td>
-<td width="50%"><p> @</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>OS</p></th>
+         <th>            <p> file_symb</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="50%">            <p>Windows</p>         </td>
+         <td width="50%">            <p>#</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>UNIX</p>         </td>
+         <td width="50%">            <p> @</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   file\_in is a file
@@ -75,4 +73,4 @@ CFTUTIL> CONFIG TYPE=OUTPUT, FNAME=file\_out...> CONFIG
 TYPE=INPUT, FNAME=file\_in
 
 See the [CONFIG
-command](../../../admin_intro/admin_config_commands/communication_media_concepts).
+command](../../admin_intro/admin_config_commands/communication_media_concepts).

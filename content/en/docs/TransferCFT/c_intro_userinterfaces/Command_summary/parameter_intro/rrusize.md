@@ -14,4 +14,4 @@ Maximum size of NSDUs (Network Service Data Units) being received.
 This parameter is not negotiated, and usually takes the default value of 32750.
 
 [Return
-to Command index](../../)
+to Command index](../)

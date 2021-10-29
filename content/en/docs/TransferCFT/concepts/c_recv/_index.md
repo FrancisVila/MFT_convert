@@ -1,17 +1,17 @@
 {
-    "title": "Using the RECV command",
-    "linkTitle": "Using the RECV command",
-    "weight": "190"
+    "title": "RECV - Receive files",
+    "linkTitle": "Receiving files",
+    "weight": "210"
 }This command is used to request the reception of files from a designated partner.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using the PeSIT protocol, you cannot create a request for messages or replies.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using the PeSIT protocol, you cannot create a request for messages or replies.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The RECV command is executed at the level of a receiver/requester (requester because it initiated the connection). The partner is therefore the sender/server.

@@ -1,12 +1,10 @@
 {
-    "title": "CFTACCNT - Recording mode for statistical data ",
+    "title": "Recording  mode for statistical data",
     "linkTitle": "CFTACCNT - Recording mode for statistical data ",
     "weight": "250"
-}# <span id="Recording_mode_for_statistical_data"></span>Recording mode for statistical data
-
-The CFTACCNT object defines the recording mode for statistical data
+}The CFTACCNT object defines the recording mode for statistical data
 of correctly terminated transfers. See also the parameter list
-[CFTACCNT.](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftaccnt)
+[CFTACCNT.](../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftaccnt)
 
 ## <span id="About_the_CFTACCNT_object"></span>About the CFTACCNT object
 
@@ -49,204 +47,204 @@ Two recording modes can be used, depending on the system:
     mode is only available on z/OS (MVS) systems.
 
 For more information on the TYPE parameter in the statistical recording
-mode, see [Recording mode TYPE](#recordin). For each terminated transfer, Transfer CFT records the information
+mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, Transfer CFT records the information
 contained in the following table.
 
 CFTACCNT list of headings
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Heading</th>
-<th><p>Offset</p>
-<p>V24</p></th>
-<th><p>Offset</p>
-<p>V23</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Transfer mode (server or requester) </p></td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr class="even">
-<td><p>Transfer direction </p></td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr class="odd">
-<td><p>Transfer type (File, Message or Reply message)  </p></td>
-<td>2</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td><p>Immediate partner identifier (PART) </p></td>
-<td>3</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td><p>Sender identifier (SPART) </p></td>
-<td>68</td>
-<td>12</td>
-</tr>
-<tr class="even">
-<td><p>Receiver identifier (RPART) </p></td>
-<td>133</td>
-<td>21</td>
-</tr>
-<tr class="odd">
-<td><p>Identifier of the sending user application (SUSER) </p></td>
-<td>198</td>
-<td>30</td>
-</tr>
-<tr class="even">
-<td><p>Identifier of the receiving user application (RUSER) </p></td>
-<td>231</td>
-<td>46</td>
-</tr>
-<tr class="odd">
-<td><p>Model file identifier (IDF) </p></td>
-<td>264</td>
-<td>62</td>
-</tr>
-<tr class="even">
-<td><p>Local application identifier (IDA) </p></td>
-<td>297</td>
-<td>71</td>
-</tr>
-<tr class="odd">
-<td><p>Transfer identifier (IDT) </p></td>
-<td>330</td>
-<td>80</td>
-</tr>
-<tr class="even">
-<td><p>Number of records sent </p></td>
-<td>339</td>
-<td>89</td>
-</tr>
-<tr class="odd">
-<td><p>Number of characters in the file (FBYTE)</p></td>
-<td>350</td>
-<td>100</td>
-</tr>
-<tr class="even">
-<td><p>Number of characters sent over the line (NBYTE)</p></td>
-<td>361</td>
-<td>111</td>
-</tr>
-<tr class="odd">
-<td><p>Date and time of command entry in the catalog </p></td>
-<td>372</td>
-<td>122</td>
-</tr>
-<tr class="even">
-<td><p>Date and time of start of transfer </p></td>
-<td>390</td>
-<td>140</td>
-</tr>
-<tr class="odd">
-<td><p>Date and time of end of transfer </p></td>
-<td>408</td>
-<td>158</td>
-</tr>
-<tr class="even">
-<td><p>Transfer duration (in seconds) </p></td>
-<td>426</td>
-<td>176</td>
-</tr>
-<tr class="odd">
-<td><p>Broadcasting list indicator </p></td>
-<td>433</td>
-<td>183</td>
-</tr>
-<tr class="even">
-<td><p>Application protocol identifier </p></td>
-<td>434</td>
-<td>184</td>
-</tr>
-<tr class="odd">
-<td><p>Transfer owner identifier (USERID) </p></td>
-<td>467</td>
-<td>193</td>
-</tr>
-<tr class="even">
-<td><p>Group identifier (GROUPID) </p></td>
-<td>500</td>
-<td>209</td>
-</tr>
-<tr class="odd">
-<td><p>On line data compression rate </p></td>
-<td>533</td>
-<td>225</td>
-</tr>
-<tr class="even">
-<td><p>File record maximum size (FLRECL) </p></td>
-<td>536</td>
-<td>228</td>
-</tr>
-<tr class="odd">
-<td><p>File (FRECFM) </p></td>
-<td>542</td>
-<td>234</td>
-</tr>
-<tr class="even">
-<td><p>Protocol compression code (NCOMP) </p></td>
-<td>543</td>
-<td>235</td>
-</tr>
-<tr class="odd">
-<td><p>Name of the file sent (FNAME) </p></td>
-<td>546</td>
-<td>238</td>
-</tr>
-<tr class="even">
-<td><p><span>Transfer CFT</span> private parameter (PARM) </p></td>
-<td>1059</td>
-<td>303</td>
-</tr>
-<tr class="odd">
-<td><p>Sender application identifier (SAPPL) </p></td>
-<td>1572</td>
-<td>384</td>
-</tr>
-<tr class="even">
-<td><p>Receiver application identifier (RAPPL) </p></td>
-<td>1621</td>
-<td>433</td>
-</tr>
-<tr class="odd">
-<td><p>Partner group (GROUP) </p></td>
-<td>1670</td>
-<td>482 (*)</td>
-</tr>
-<tr class="even">
-<td>Number of characters in the file (FBYTE_EXTENDED)</td>
-<td>1703</td>
-<td> </td>
-</tr>
-<tr class="odd">
-<td>Number of characters sent over the line (NBYTE_EXTENDED)</td>
-<td>1719</td>
-<td> </td>
-</tr>
-<tr class="even">
-<td>Logic file network identifier (NIDF)</td>
-<td>1735</td>
-<td> </td>
-</tr>
-<tr class="odd">
-<td>Unused</td>
-<td>1768</td>
-<td> </td>
-</tr>
-<tr class="even">
-<td><p>Total</p></td>
-<td>2048</td>
-<td><p>491</p>
-<p>z/OS: 482</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Heading</th>
+         <th>            <p>Offset</p>
+            <p>V24</p></th>
+         <th>            <p>Offset</p>
+            <p>V23</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Transfer mode (server or requester) </p>         </td>
+         <td>0         </td>
+         <td>0         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Transfer direction </p>         </td>
+         <td>1         </td>
+         <td>1         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Transfer type (File, Message or Reply message)  </p>         </td>
+         <td>2         </td>
+         <td>2         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Immediate partner identifier (PART) </p>         </td>
+         <td>3         </td>
+         <td>3         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Sender identifier (SPART) </p>         </td>
+         <td>68         </td>
+         <td>12         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Receiver identifier (RPART) </p>         </td>
+         <td>133         </td>
+         <td>21         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Identifier of the sending user application (SUSER) </p>         </td>
+         <td>198         </td>
+         <td>30         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Identifier of the receiving user application (RUSER) </p>         </td>
+         <td>231         </td>
+         <td>46         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Model file identifier (IDF) </p>         </td>
+         <td>264         </td>
+         <td>62         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Local application identifier (IDA) </p>         </td>
+         <td>297         </td>
+         <td>71         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Transfer identifier (IDT) </p>         </td>
+         <td>330         </td>
+         <td>80         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Number of records sent </p>         </td>
+         <td>339         </td>
+         <td>89         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Number of characters in the file (FBYTE)</p>         </td>
+         <td>350         </td>
+         <td>100         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Number of characters sent over the line (NBYTE)</p>         </td>
+         <td>361         </td>
+         <td>111         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Date and time of command entry in the catalog </p>         </td>
+         <td>372         </td>
+         <td>122         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Date and time of start of transfer </p>         </td>
+         <td>390         </td>
+         <td>140         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Date and time of end of transfer </p>         </td>
+         <td>408         </td>
+         <td>158         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Transfer duration (in seconds) </p>         </td>
+         <td>426         </td>
+         <td>176         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Broadcasting list indicator </p>         </td>
+         <td>433         </td>
+         <td>183         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Application protocol identifier </p>         </td>
+         <td>434         </td>
+         <td>184         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Transfer owner identifier (USERID) </p>         </td>
+         <td>467         </td>
+         <td>193         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Group identifier (GROUPID) </p>         </td>
+         <td>500         </td>
+         <td>209         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>On line data compression rate </p>         </td>
+         <td>533         </td>
+         <td>225         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>File record maximum size (FLRECL) </p>         </td>
+         <td>536         </td>
+         <td>228         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>File (FRECFM) </p>         </td>
+         <td>542         </td>
+         <td>234         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Protocol compression code (NCOMP) </p>         </td>
+         <td>543         </td>
+         <td>235         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Name of the file sent (FNAME) </p>         </td>
+         <td>546         </td>
+         <td>238         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><span>Transfer CFT</span> private parameter (PARM) </p>         </td>
+         <td>1059         </td>
+         <td>303         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Sender application identifier (SAPPL) </p>         </td>
+         <td>1572         </td>
+         <td>384         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Receiver application identifier (RAPPL) </p>         </td>
+         <td>1621         </td>
+         <td>433         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Partner group (GROUP) </p>         </td>
+         <td>1670         </td>
+         <td>482 (*)         </td>
+      </tr>
+      <tr class="even">
+         <td>Number of characters in the file (FBYTE_EXTENDED)         </td>
+         <td>1703         </td>
+         <td>          </td>
+      </tr>
+      <tr class="odd">
+         <td>Number of characters sent over the line (NBYTE_EXTENDED)         </td>
+         <td>1719         </td>
+         <td>          </td>
+      </tr>
+      <tr class="even">
+         <td>Logic file network identifier (NIDF)         </td>
+         <td>1735         </td>
+         <td>          </td>
+      </tr>
+      <tr class="odd">
+         <td>Unused         </td>
+         <td>1768         </td>
+         <td>          </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Total</p>         </td>
+         <td>2048         </td>
+         <td>            <p>491</p>
+            <p>z/OS: 482</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 (\*) z/OS: For format V23 the partner group is not included in account structure. The total length is 482.
@@ -303,60 +301,60 @@ The CFTACCNT command references
 the Transfer CFT application via the utility.
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>Protocol</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td width="26%"><p>z/OS (MVS)</p></td>
-<td width="74%"><p>The ACCID parameter identifying the <span>Transfer CFT</span> application
-must be defined.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Protocol</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p>z/OS (MVS)</p>         </td>
+         <td width="74%">            <p>The ACCID parameter identifying the <span>Transfer CFT</span> application
+must be defined.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Syntax
 
 CFTACCNT TYPE = FILE
 
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
+[TYPE](../../CFTUTIL/Parameter_index/type.htm)
 = FILE
 
-[FNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
+[FNAME](../../CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-[ID](../../../c_intro_userinterfaces/command_summary/parameter_intro/id)
+[ID](../../CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [AFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/afname)
+\[ [AFNAME](../../CFTUTIL/Parameter_index/afname.htm)
 = filename \]
 
-\[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
+\[ [COMMENT](../../CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
+\[ [EXEC](../../CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
+\[ [LANGUAGE](../../CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MAXREC](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxrec)
+\[ [MAXREC](../../CFTUTIL/Parameter_index/maxrec.htm)
 = { 0
 | n } \]
 
-\[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
+\[ [MODE](../../CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [SWITCH](../../../c_intro_userinterfaces/command_summary/parameter_intro/switch)
+\[ [SWITCH](../../CFTUTIL/Parameter_index/switch.htm)
 = { 00000000
 | time } \]
 
-\[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
+\[ [FORMAT](../../CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24} \]
 
@@ -364,26 +362,26 @@ CFTACCNT TYPE = FILE
 
 CFTACCNT TYPE = SYST
 
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
+[TYPE](../../CFTUTIL/Parameter_index/type.htm)
 = SYST
 
-[ACCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/accid)
+[ACCID](../../CFTUTIL/Parameter_index/accid.htm)
 = n
 
-[ID](../../../c_intro_userinterfaces/command_summary/parameter_intro/id)
+[ID](../../CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
+\[ [COMMENT](../../CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
+\[ [FORMAT](../../CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24} \]
 
-\[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
+\[ [LANGUAGE](../../CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
+\[ [MODE](../../CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]

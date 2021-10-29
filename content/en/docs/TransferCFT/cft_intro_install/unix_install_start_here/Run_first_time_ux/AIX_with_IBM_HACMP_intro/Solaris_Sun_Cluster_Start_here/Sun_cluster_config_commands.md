@@ -1,10 +1,8 @@
 {
-    "title": "SCSWITCH and SCSTAT commands",
+    "title": "  Sun cluster service configuration commands",
     "linkTitle": "SCSWITCH and SCSTAT commands",
     "weight": "300"
-}# <span id="CFT_Sun_cluster_service_configuration_commands"></span> Sun cluster service configuration commands
-
-Sun Cluster services are managed and monitored using the following
+}Sun Cluster services are managed and monitored using the following
 service configuration commands:
 
 -   scswitch for startup,

@@ -29,4 +29,4 @@ EXIT:
 -   IDA is the local
     application identifier
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,10 +1,8 @@
 {
-    "title": "Creating a directory exit",
+    "title": "Creating  a directory exit - IBM i",
     "linkTitle": "Creating a directory exit",
     "weight": "300"
-}# <span id="Creating_a_directory_exit"></span>Creating a directory exit - IBM i
-
-This page describes a delivered sample that is designed to create an example directory exit. You can use the TCPPARAM configuration sample that is located in CFTPROD/UTIN.
+}This page describes a delivered sample that is designed to create an example directory exit. You can use the TCPPARAM configuration sample that is located in CFTPROD/UTIN.
 
 Before you start
 

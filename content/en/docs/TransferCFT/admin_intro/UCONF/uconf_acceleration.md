@@ -1,5 +1,5 @@
 {
-    "title": "Transfer acceleration ",
+    "title": "UCONF: Transfer acceleration",
     "linkTitle": "Transfer acceleration ",
     "weight": "340"
 }To enable acceleration set the uconf values as recommended in this section.
@@ -30,38 +30,38 @@ You can globally enable or disable the acceleration function in the Transfer CFT
 #### Parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>acceleration.enable</td>
-<td>Activate/deactivate the acceleration option.</td>
-</tr>
-<tr class="even">
-<td>acceleration.udt</td>
-<td>UDT default peer definition.</td>
-</tr>
-<tr class="odd">
-<td>acceleration.ptcp</td>
-<td>pTCP default peer definition.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>acceleration.enable         </td>
+         <td>Activate/deactivate the acceleration option.         </td>
+      </tr>
+      <tr class="even">
+         <td>acceleration.udt         </td>
+         <td>UDT default peer definition.         </td>
+      </tr>
+      <tr class="odd">
+         <td>acceleration.ptcp         </td>
+         <td>pTCP default peer definition.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Example in CFTUTIL
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes</span><br />
+   <tbody>
+      <tr class="odd">
+         <td><span>CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes</span><br />
 <span>CFTUTIL UCONFSET ID=acceleration.udt ,    VALUE=NET1</span><br />
-<span>CFTUTIL UCONFSET ID=acceleration.ptcp ,   VALUE=NET0 NET_TEST</span></td>
-</tr>
-</tbody>
+<span>CFTUTIL UCONFSET ID=acceleration.ptcp ,   VALUE=NET0 NET_TEST</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
@@ -71,38 +71,38 @@ Network resources that are scheduled to use acceleration functionality should ha
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET ID=NET0,CLASS=4,...</p>
-<p>CFTNET ID=NET1,CLASS=5,...</p>
-<p> </p>
-<p>CFTPROT ID=PESITANY,TYPE=PESIT,NET=NET1,SAP=1761,...</p>
-<p>CFTPROT ID=PESITSSL,TYPE=PESIT,NET=NET0,SAP=1762,SSL=SSLSERVER,...</p>
-<p> </p>
-<p>CFTPART ID=PART1,PROT=PESITANY,sap=part1_remote_sap...</p>
-<p>CFTTCP ID=PART1,host=@part1,CLASS=5,...</p>
-<p> </p>
-<p>CFTPART ID=PART0,PROT=PESITSSL,sap=part0_remote_sap...</p>
-<p>CFTTCP ID=PART0,host=@part0,CLASS=4,...</p>
-<p> </p>
-<p>CFTPART ID=PART2,PROT=PESITANY,sap=part2_remote_sap...</p>
-<p>CFTTCP ID=PART2,host=@part2,CLASS=1,...</p>
-<p> </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET ID=NET0,CLASS=4,...</p>
+            <p>CFTNET ID=NET1,CLASS=5,...</p>
+            <p> </p>
+            <p>CFTPROT ID=PESITANY,TYPE=PESIT,NET=NET1,SAP=1761,...</p>
+            <p>CFTPROT ID=PESITSSL,TYPE=PESIT,NET=NET0,SAP=1762,SSL=SSLSERVER,...</p>
+            <p> </p>
+            <p>CFTPART ID=PART1,PROT=PESITANY,sap=part1_remote_sap...</p>
+            <p>CFTTCP ID=PART1,host=@part1,CLASS=5,...</p>
+            <p> </p>
+            <p>CFTPART ID=PART0,PROT=PESITSSL,sap=part0_remote_sap...</p>
+            <p>CFTTCP ID=PART0,host=@part0,CLASS=4,...</p>
+            <p> </p>
+            <p>CFTPART ID=PART2,PROT=PESITANY,sap=part2_remote_sap...</p>
+            <p>CFTTCP ID=PART2,host=@part2,CLASS=1,...</p>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Results**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL SEND PART=PART1,IDF=T1 will execute a transfer using "PESIT ANY" protocol and UDT network protocol</p>
-<p>CFTUTIL SEND PART=PART0,IDF=T2 will execute a transfer using "PESIT ANY" protocol with SSL and PTCP network protocol</p>
-<p>CFTUTIL SEND PART=PART2,IDF=T3 will fail with the following message : "CFTT11E PART=PART2 PROT=PESITANY</p>
-<p>CLASS=5 _ CFTTCP not found"</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL SEND PART=PART1,IDF=T1 will execute a transfer using "PESIT ANY" protocol and UDT network protocol</p>
+            <p>CFTUTIL SEND PART=PART0,IDF=T2 will execute a transfer using "PESIT ANY" protocol with SSL and PTCP network protocol</p>
+            <p>CFTUTIL SEND PART=PART2,IDF=T3 will fail with the following message : "CFTT11E PART=PART2 PROT=PESITANY</p>
+            <p>CLASS=5 _ CFTTCP not found"</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Advanced configuration parameters
@@ -111,20 +111,20 @@ Additional attribute parameters are available for advanced users. The default va
 
 #### UDT parameters
 
-Refer to the [UCONF parameters](../uconf_directory) table acceleration.udt.&lt;logicalID>.
+Refer to the [UCONF parameters](uconf_directory) table acceleration.udt.&lt;logicalID>.
 
 #### pTCP parameters
 
-Refer to the [UCONF parameters](../uconf_directory) table acceleration.ptcp.&lt;logicalID>.
+Refer to the [UCONF parameters](uconf_directory) table acceleration.ptcp.&lt;logicalID>.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> versions that use the newer pTCP protocol cannot perform pTCP exchanges with <span>Transfer CFT</span>s using the earlier pTCP version. See <a href="../uconf_protocols_and_networks">Protocols and networks</a> for more information.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> versions that use the newer pTCP protocol cannot perform pTCP exchanges with <span>Transfer CFT</span>s using the earlier pTCP version. See <a href="uconf_protocols_and_networks">Protocols and networks</a> for more information.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="uconf_ptcp"></span>pTCP protocol versions
@@ -136,9 +136,9 @@ Transfer CFT 3.0.1 SP2 and higher, and Transfer CFT 2.7.1 SP6, support a more 
 
 Note that the new pTCP support is not compatible with the previously used version of pTCP. This means that Transfer CFT 3.0.1 SP2 and higher, and Transfer CFT 2.7.1 SP6, cannot exchange files with earlier versions of Transfer CFT using the pTCP protocol.
 
-For more information on supported platforms and transfer acceleration, refer to [Platform-specific functionality](platform_specific_functionality.htm).
+For more information on supported platforms and transfer acceleration, refer to Platform-specific functionality.
 
 Related topics
 
--   [About the unified configuration](..//transfercft/admin_intro/uconf)
--   [Unified configuration (CFTUTIL)](../uconf_w_cftutil)
+-   [About the unified configuration](transfercft/admin_intro/uconf)
+-   [Unified configuration (CFTUTIL)](uconf_w_cftutil)

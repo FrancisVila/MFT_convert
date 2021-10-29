@@ -1,10 +1,8 @@
 {
-    "title": "Store and forward modes",
+    "title": "Store  and forward concepts",
     "linkTitle": "Store and forward modes",
     "weight": "290"
-}# <span id="Store"></span>Store and forward concepts
-
-The store and forward mode enables you to route files from one computer
+}The store and forward mode enables you to route files from one computer
 to another via one or more intermediate relays (computers or communication sites). For example, when sending a file from computer A to computer C, where A and C are either not directly connected or have a connection problem, the file is routed via computer B.
 
 In the same way, a file to be sent to clients that are dependent on
@@ -12,23 +10,23 @@ the final receiver may transmit via intermediate systems and be sent on. This tr
 another.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using access management, you must define the CFTAPPL with the ID=COMMUT.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using access management, you must define the CFTAPPL with the ID=COMMUT.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The following illustration features 3 Transfer CFTs, where the protocol may be the same or different between relay points:
@@ -39,7 +37,7 @@ The following illustration features 3 Transfer CFTs, where the protocol may be t
 
 **Routing a transfer via a relay**
 
-![](temp_commut_part.png)
+![](/Images/TransferCFT/temp_store.png)
 
 ## Restrictions
 
@@ -63,9 +61,9 @@ For these protocols, the objects transferred can be files or messages,
 in write mode only, for sender requester mode.
 
 These protocols manage the acknowledgement messages following
-the reception of a file. See the SEND TYPE = [REPLY](../../using_the_send_command/sending_replies) command. The PeSIT
+the reception of a file. See the SEND TYPE = [REPLY](../using_the_send_command/sending_replies) command. The PeSIT
 profile protocol also manages the sending of messages.
-See the SEND TYPE = [MESSAGE](../../using_the_send_command/send_messages_cl) command.
+See the SEND TYPE = [MESSAGE](../using_the_send_command/send_messages_cl) command.
 
 ## Using store and forward with Flow Manager
 
@@ -86,38 +84,38 @@ Depending on the value of this parameter, the processing performed by
 the Transfer CFT on the store and forward site is as follows:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>COMMUT value</th>
-<th>File is sent to partner</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>YES</td>
-<td>Yes, immediately</td>
-<td>The a file is immediately sent to the intended partner. Default value.</td>
-</tr>
-<tr class="even">
-<td>NO</td>
-<td>No, no file forwarding</td>
-<td>The file transfer is refused because the partner is not able to perform the store
-and forward.</td>
-</tr>
-<tr class="odd">
-<td>SERVER</td>
-<td>Yes, after processing</td>
-<td>Sending the file occurs at the initiative
-of the store and forward site. This mode is also known as <a href="#van_server_store_and_forward_processing">Store and forward with a VAN
-server</a>.</td>
-</tr>
-<tr class="even">
-<td>PART</td>
-<td>Yes, immediately</td>
-<td>This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>COMMUT value</th>
+         <th>File is sent to partner</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>YES         </td>
+         <td>Yes, immediately         </td>
+         <td>The a file is immediately sent to the intended partner. Default value.         </td>
+      </tr>
+      <tr class="even">
+         <td>NO         </td>
+         <td>No, no file forwarding         </td>
+         <td>The file transfer is refused because the partner is not able to perform the store
+and forward.         </td>
+      </tr>
+      <tr class="odd">
+         <td>SERVER         </td>
+         <td>Yes, after processing         </td>
+         <td>Sending the file occurs at the initiative
+of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN
+server</a>.         </td>
+      </tr>
+      <tr class="even">
+         <td>PART         </td>
+         <td>Yes, immediately         </td>
+         <td>This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.         </td>
+      </tr>
+   </tbody>
 </table>
 
 There are two ways for the sender to initiate a store and forward transfer:
@@ -182,11 +180,11 @@ The following actions apply to the final recipient site:
 
 On completion of transfer,
 or in the event of error, Transfer CFT offers the possibility of executing
-procedures. You can use the typical [symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables) for these types of procedures.
+procedures. You can use the typical [symbolic variables](../../CFTUTIL/Parameter_index/symbolic_variables.htm) for these types of procedures.
 
 Processing possibilities in the store and forward mode
 
-![](temp_commut_part.png)
+![](/Images/TransferCFT/s_and_f_processing.PNG)
 
 ### Forced store and forward processing with COMMUT=PART
 
@@ -197,19 +195,19 @@ You can use the use this option to force a store and forward on an intermediate 
 On the store and forward site there is a partner definition to receive the incoming connection and a second partner establishes the connection with the following site (also the intermediate or the final site). The link between the partner receiving the connection and the sending partner is established via the following parameter settings:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART ID=IDRECEPT, COMMUT=PART, IPART=IDEMET,...</p>
-<p>CFTPART ID=IDEMET,...</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART ID=IDRECEPT, COMMUT=PART, IPART=IDEMET,...</p>
+            <p>CFTPART ID=IDEMET,...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The initial site establishes the connection with the immediate store and forward site (CFTPART ID=IDNAT, NSPART=NINTNAT, NRPART=NNAT, and so on). The immediate store and forward site receives the connection from the initial site and forces the store and forward (COMMUT=PART) to the indicated partner (IPART=IDDEP).
 
 This process repeats as many times as needed until reaching the final site.
 
-![](temp_commut_part.png)
+![](/Images/TransferCFT/temp_commut_part.png)
 
 The REPLY command can be sent when the end-of-transfer procedure is executed (EXECRF). An acknowledgement message can be transferred also via all the intermediate sites until it reaches the initial partner (IPART).
 
@@ -228,7 +226,7 @@ end of transfer procedure, after the associated processing and checks.
 The file is forwarded using the SEND
 command (coupled with a CFTSEND command). The SPART parameter of the SEND
 command sets the value of the sender NSPART parameter to the value of
-the INITIAL sender of the file (refer to the [SEND](file_management.htm) command).
+the INITIAL sender of the file (refer to the SEND command).
 
 Instead of returning the file, the store and forward site (VAN server) can make
 the file available to the final receiver (SEND command ... , STATE = HOLD).
@@ -251,13 +249,13 @@ must be indicated as a partner in the RECV command:
 The difference lies in the type of protocols.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Store"></span>Broadcasting on a store and forward site
@@ -268,7 +266,7 @@ To broadcast a file from a store and forward site:
 
 -   The initial sender must define a virtual partner with an ID that corresponds to the CFTDEST ID command managed on the store and forward site. Set the CFTPART's OMINTIME and OMAXTIME to zero to force routing to the intermediate partner (IPART). The SEND PART=ID, ... command sends the file to broadcast.
 -   You must have a CFTDEST command with the ID set to the network name of the broadcasting list indicated by the initial partner (SEND PART=ID).
--   You can use FOR=COMMUT as described in the [FOR](../../../c_intro_userinterfaces/command_summary/parameter_intro/for) parameter.
+-   You can use FOR=COMMUT as described in the [FOR](../../CFTUTIL/Parameter_index/for.htm) parameter.
 -   The final receivers know the initial file sender and the store and forward partner (relay).
 -   The CFTPART connections must comply with network nodes.
 
@@ -281,13 +279,13 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).         </td>
+      </tr>
+   </tbody>
 </table>
 
 On the final receiver site: the CFT monitor receives the same application parameters as those indicated for a simple transfer in “store and forward” mode. The store and forward site does not affect the transfer mode (open or closed).
@@ -305,63 +303,63 @@ This example shows a broadcast store and forward from the initiator A to relay B
 On the initiating site A, define:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl</p>
-<p>cftpart id=b,nspart=a,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host=@B</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl</p>
+            <p>cftpart id=b,nspart=a,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host=@B</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Set up the intermediate partner B as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=a,nspart=b,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=a,host=@A</p>
-<p> </p>
-<p>cftpart id=c,nspart=b,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=c,host=@C</p>
-<p> </p>
-<p>cftpart id=d,nspart=b,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=d,host=@D</p>
-<p> </p>
-<p>cftdest id=cd,part=(c,d),for=commut</p>
-<p> </p>
-<p>cftappl id=commut,userid=&amp;userid,groupid=&amp;groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=a,nspart=b,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=a,host=@A</p>
+            <p> </p>
+            <p>cftpart id=c,nspart=b,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=c,host=@C</p>
+            <p> </p>
+            <p>cftpart id=d,nspart=b,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=d,host=@D</p>
+            <p> </p>
+            <p>cftdest id=cd,part=(c,d),for=commut</p>
+            <p> </p>
+            <p>cftappl id=commut,userid=&amp;userid,groupid=&amp;groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Execute the following partner C definition:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=b,nspart=c,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host= @B</p>
-<p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
-<p> </p>
-<p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=b,nspart=c,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host= @B</p>
+            <p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
+            <p> </p>
+            <p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Execute the following partner D definition:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=b,nspart=d,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host=@B</p>
-<p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
-<p> </p>
-<p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>
-<p> </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=b,nspart=d,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host=@B</p>
+            <p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
+            <p> </p>
+            <p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Testing the use case
@@ -369,11 +367,11 @@ Testing the use case
 From the initiator site A, execute:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>send part=cd,idf=broadcast,fname=pub/FTEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>send part=cd,idf=broadcast,fname=pub/FTEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Broadcast list acknowledgements

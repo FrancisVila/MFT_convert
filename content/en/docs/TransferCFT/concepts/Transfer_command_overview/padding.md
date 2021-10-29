@@ -1,12 +1,12 @@
 {
-    "title": "Padding records for text files",
+    "title": "Pad records for text files",
     "linkTitle": "Padding records for text files",
     "weight": "350"
 }You can define the pad/unpad character for fixed and variable formats at both the file and network level in the SEND, CFTSEND, CFTRECV and RECV commands when TYPE = FILE.
 
 ## <span id="Format"></span>Format options
 
-Use the [FRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/frecfm) and [NRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm) parameters to set the record format.
+Use the [FRECFM](../../c_intro_userinterfaces/command_summary/parameter_intro/frecfm) and [NRECFM](../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm) parameters to set the record format.
 
 ### Fixed format
 
@@ -37,13 +37,13 @@ This parameter defines the padding character at the network level.
 -   Variable format: Defines the character used to unpad the record. If NPAD is not set, the record is unchanged.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In addition to printable characters, you can also enter a non-printable character for NPAD or FPAD using the hexadecimal syntax: 0xHH. For example: <span>0xFC, 0xab, 0x00</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In addition to printable characters, you can also enter a non-printable character for NPAD or FPAD using the hexadecimal syntax: 0xHH. For example: <span>0xFC, 0xab, 0x00</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Usage
@@ -55,39 +55,39 @@ After the input or output file in each example a representation depicts the file
 In the SEND profile (CFTSEND object) specify:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>fcode=ASCII</p>
-<p>frecfm=V</p>
-<p>nrecfm=F</p>
-<p>nlrecl=&lt;desired_record_size&gt;</p>
-<p>npad=@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>fcode=ASCII</p>
+            <p>frecfm=V</p>
+            <p>nrecfm=F</p>
+            <p>nlrecl=&lt;desired_record_size&gt;</p>
+            <p>npad=@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Input file**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway</p>
-<p>Transfer CFT</p>
-<p>v<span>3.9</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway</p>
+            <p>Transfer CFT</p>
+            <p>v<span>3.9</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 File sent over the network, when nlrecl=20:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway@@@@@@@@@@@@@@@</p>
-<p>Transfer CFT@@@@@@@@</p>
-<p>v3.0.1@@@@@@@@@@@@@@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway@@@@@@@@@@@@@@@</p>
+            <p>Transfer CFT@@@@@@@@</p>
+            <p>v3.0.1@@@@@@@@@@@@@@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Example of unpadding a fixed format file on the sender side
@@ -97,25 +97,25 @@ In SEND profile (CFTSEND object) specify:
 Input file when flrecl=20:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway@@@@@@@@@@@@@@@</p>
-<p>Transfer CFT@@@@@@@@</p>
-<p>v<span>3.9</span>@@@@@@@@@@@@@@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway@@@@@@@@@@@@@@@</p>
+            <p>Transfer CFT@@@@@@@@</p>
+            <p>v<span>3.9</span>@@@@@@@@@@@@@@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 File sent over the network:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway</p>
-<p>Transfer CFT</p>
-<p>v<span>3.9</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway</p>
+            <p>Transfer CFT</p>
+            <p>v<span>3.9</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Example of padding a variable format file on the receiver side
@@ -123,38 +123,38 @@ File sent over the network:
 In the RECV profile (CFTRECV object) specify:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>fcode=ASCII</p>
-<p>frecfm=F</p>
-<p>flrecl=&lt;desired_record_size&gt;</p>
-<p>fpad=@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>fcode=ASCII</p>
+            <p>frecfm=F</p>
+            <p>flrecl=&lt;desired_record_size&gt;</p>
+            <p>fpad=@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 File received from the network:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway</p>
-<p>Transfer CFT</p>
-<p>v<span>3.9</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway</p>
+            <p>Transfer CFT</p>
+            <p>v<span>3.9</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Output file**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway@@@@@@@@@@@@@@@</p>
-<p>Transfer CFT@@@@@@@@</p>
-<p>v<span>3.9</span>@@@@@@@@@@@@@@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway@@@@@@@@@@@@@@@</p>
+            <p>Transfer CFT@@@@@@@@</p>
+            <p>v<span>3.9</span>@@@@@@@@@@@@@@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Example of unpadding a fixed format file on the receiver side
@@ -170,23 +170,23 @@ fpad=@
 File received from the network
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway@@@@@@@@@@@@@@@</p>
-<p>Transfer CFT@@@@@@@@</p>
-<p>v<span>3.9</span>@@@@@@@@@@@@@@</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway@@@@@@@@@@@@@@@</p>
+            <p>Transfer CFT@@@@@@@@</p>
+            <p>v<span>3.9</span>@@@@@@@@@@@@@@</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Output file
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Axway</p>
-<p>Transfer CFT</p>
-v<span>3.9</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Axway</p>
+            <p>Transfer CFT</p>
+v<span>3.9</span>         </td>
+      </tr>
+   </tbody>
 </table>

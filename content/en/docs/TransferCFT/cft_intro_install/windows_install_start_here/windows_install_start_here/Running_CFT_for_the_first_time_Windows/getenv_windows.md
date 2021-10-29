@@ -1,5 +1,5 @@
 {
-    "title": "Define additional environment variables",
+    "title": "Define additional environment variables ",
     "linkTitle": "Define additional environment variables",
     "weight": "270"
 }When loading the Transfer CFT profile, files that are stored in the `profile.d` directory are also executed, and all defined environment variables are then available in the current environment. This enables you to use these variables in the Transfer CFT configuration or processing scripts.
@@ -10,13 +10,13 @@ When loading the profile, the files that are loaded depend on if you are using B
 -   profile.ps1: only .ps1 files are loaded
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">When executing <span>cft </span>commands such as CFTUTIL or PKIUTIL in PowerShell, you must remove all spaces surrounding the comma (,). For example, instead of the command <span>CFTUTIL send part=paris<span> ,</span> idf=test</span> enter <span>CFTUTIL send part=paris<span>,</span>idf=test.</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">When executing <span>cft </span>commands such as CFTUTIL or PKIUTIL in PowerShell, you must remove all spaces surrounding the comma (,). For example, instead of the command <span>CFTUTIL send part=paris<span> ,</span> idf=test</span> enter <span>CFTUTIL send part=paris<span>,</span>idf=test.</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## How to define additional Transfer CFT environment variables
@@ -26,4 +26,4 @@ When loading the profile, the files that are loaded depend on if you are using B
     set MYVARIABLE02=TheVariableValue02
 2.  Execute the profile command.
 
-See also, [Windows-specific system functions](../../specific_system_functions).
+See also, [Windows-specific system functions](../specific_system_functions).

@@ -4,20 +4,20 @@
     "weight": "230"
 }This section provides a description of how to use Transfer CFT UCONF values to manage folder monitoring. This method is no longer recommended; you should use the CFTFOLDER object method.
 
--   [Configure folder monitoring using UCONF](#configur)
--   [How Transfer CFT handles monitored files](#how2)
--   [Modify and apply configuration changes](#modifying_existing_configuration)
--   [Directory configuration examples](#director)
--   [File-system event monitoring](#file-sys)
+-   [Configure folder monitoring using UCONF](#Configur)
+-   [How Transfer CFT handles monitored files](#How2)
+-   [Modify and apply configuration changes](#Modifying_existing_configuration)
+-   [Directory configuration examples](#Director)
+-   [File-system event monitoring](#File-sys)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="migrate_uconf_cftfolder.htm">Migrate to CFTFOLDER folder monitoring</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Configur"></span>Configure folder monitoring using UCONF
@@ -55,262 +55,262 @@ For each monitored directory you must provide a unique name to identify the set 
 
 ### <span id="Monitori"></span>Folder monitoring parameters
 
-Use the following UCONF parameters to configure folder monitoring for each directory as needed. See the section [UCONF](../../../admin_intro/uconf) if you are not familiar with unified configuration settings.
+Use the following UCONF parameters to configure folder monitoring for each directory as needed. See the section [UCONF](../../uconf/UCONF.htm) if you are not familiar with unified configuration settings.
 
 Parameter descriptions
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>UCONF parameter</th>
-<th>Type</th>
-<th><p>Default</p></th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>folder_monitoring.enable</td>
-<td>Boolean</td>
-<td>No</td>
-<td><ul>
-<li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable <span>Transfer CFT</span> folder monitoring.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>folder_monitoring.folders</td>
-<td>node</td>
-<td>None</td>
-<td><p>Add the logical folders to monitor (list of logical identifiers).</p>
-<p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
+   <thead>
+      <tr class="header">
+         <th>UCONF parameter</th>
+         <th>Type</th>
+         <th>            <p>Default</p></th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>folder_monitoring.enable         </td>
+         <td>Boolean         </td>
+         <td>No         </td>
+         <td>            <ul>
+               <li>No: No folder monitoring occurs.               </li>
+               <li>Yes: Enable <span>Transfer CFT</span> folder monitoring.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>folder_monitoring.folders         </td>
+         <td>node         </td>
+         <td>None         </td>
+         <td>            <p>Add the logical folders to monitor (list of logical identifiers).</p>
+            <p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
 If you have more than one Folder to monitor, use a space between each logical value.</p>
-<p>See the <strong>Comment***</strong> below this table for additional information.</p></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.enable</p></td>
-<td>Boolean</td>
-<td>Yes</td>
-<td><p>Enables a scan of the folder, where NO deactivates folder monitoring.</p></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.scan_dir</p></td>
-<td>string</td>
-<td>None</td>
-<td><p>Absolute path name of the top level directory to scan.</p>
-<p>This directory must exist before restarting CFT.</p>
-<p>*See NOTE.</p></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.work_dir</p></td>
-<td>string</td>
-<td>None</td>
-<td><p>Absolute path name of the top level directory available for file state information.</p>
-<ul>
-<li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
-<li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
-</ul>
+            <p>See the <strong>Comment***</strong> below this table for additional information.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.enable</p>         </td>
+         <td>Boolean         </td>
+         <td>Yes         </td>
+         <td>            <p>Enables a scan of the folder, where NO deactivates folder monitoring.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.scan_dir</p>         </td>
+         <td>string         </td>
+         <td>None         </td>
+         <td>            <p>Absolute path name of the top level directory to scan.</p>
+            <p>This directory must exist before restarting CFT.</p>
+            <p>*See NOTE.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.work_dir</p>         </td>
+         <td>string         </td>
+         <td>None         </td>
+         <td>            <p>Absolute path name of the top level directory available for file state information.</p>
+            <ul>
+               <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.               </li>
+               <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">  Never delete any .met files.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">  Never delete any .met files.         </td>
+      </tr>
+   </tbody>
 </table>
-<p>*See NOTE.</p></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.enable_subdir</p></td>
-<td>Boolean</td>
-<td>Yes</td>
-<td><p>Values:</p>
-<ul>
-<li>Yes: The entire scan_dir sub-directory tree is monitored.</li>
-<li>No: No scan is performed.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.method</p></td>
-<td>enum</td>
-<td>MOVE</td>
-<td><p>Values:</p>
-<ul>
-<li>MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.</li>
-<li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>
-</ul>
-<p>See also <a href="..//transfercft/app_integration_intro/intro_folder_monitor">Configuring file tracking options (MOVE option)</a>.</p></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_idle_delay</p></td>
-<td>integer</td>
-<td>5</td>
-<td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.</td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.idf</p></td>
-<td>string</td>
-<td>""</td>
-<td><p>The IDF name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.part</p></td>
-<td>string</td>
-<td>""</td>
-<td><p>The PART name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.interval</p></td>
-<td>int</td>
-<td>60</td>
-<td>The interval between two scans of the directory files in seconds.</td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_count</p></td>
-<td>int</td>
-<td>-1</td>
-<td><p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_size_min</p></td>
-<td>int</td>
-<td>-1</td>
-<td>Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.</td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_size_max</p></td>
-<td>int</td>
-<td>-1</td>
-<td>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.</td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_include_filter</p></td>
-<td>string</td>
-<td>""</td>
-<td>If this parameter is defined, only files whose names match this pattern are monitored.</td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_exclude_filter</p></td>
-<td>string</td>
-<td>""</td>
-<td>If this parameter is defined, files whose names match this pattern are not monitored.</td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.resubmit_changed_file</p></td>
-<td>Boolean</td>
-<td>Yes</td>
-<td><p>This parameter has no effect when the configured method is MOVE.</p>
-<p>When the method parameter value is set to FILE:</p>
-<ul>
-<li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
-<li>No: Files are not resubmitted, regardless of changes.</li>
-</ul>
+            <p>*See NOTE.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.enable_subdir</p>         </td>
+         <td>Boolean         </td>
+         <td>Yes         </td>
+         <td>            <p>Values:</p>
+            <ul>
+               <li>Yes: The entire scan_dir sub-directory tree is monitored.               </li>
+               <li>No: No scan is performed.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.method</p>         </td>
+         <td>enum         </td>
+         <td>MOVE         </td>
+         <td>            <p>Values:</p>
+            <ul>
+               <li>MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.               </li>
+               <li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.               </li>
+            </ul>
+            <p>See also <a href="transfercft/app_integration_intro/intro_folder_monitor">Configuring file tracking options (MOVE option)</a>.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_idle_delay</p>         </td>
+         <td>integer         </td>
+         <td>5         </td>
+         <td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.idf</p>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>            <p>The IDF name to use in the SEND command. Use one of the following:</p>
+            <ul>
+               <li>A fixed name.               </li>
+               <li>"(0)": The name of the first directory sub-level is used.               </li>
+               <li>"(1)": The name of the second directory sub-level is used.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.part</p>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>            <p>The PART name to use in the SEND command. Use one of the following:</p>
+            <ul>
+               <li>A fixed name.               </li>
+               <li>"(0)": The name of the first directory sub-level is used.               </li>
+               <li>"(1)": The name of the second directory sub-level is used.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.interval</p>         </td>
+         <td>int         </td>
+         <td>60         </td>
+         <td>The interval between two scans of the directory files in seconds.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_count</p>         </td>
+         <td>int         </td>
+         <td>-1         </td>
+         <td>            <p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_size_min</p>         </td>
+         <td>int         </td>
+         <td>-1         </td>
+         <td>Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_size_max</p>         </td>
+         <td>int         </td>
+         <td>-1         </td>
+         <td>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_include_filter</p>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>If this parameter is defined, only files whose names match this pattern are monitored.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.file_exclude_filter</p>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>If this parameter is defined, files whose names match this pattern are not monitored.         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.resubmit_changed_file</p>         </td>
+         <td>Boolean         </td>
+         <td>Yes         </td>
+         <td>            <p>This parameter has no effect when the configured method is MOVE.</p>
+            <p>When the method parameter value is set to FILE:</p>
+            <ul>
+               <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.               </li>
+               <li>No: Files are not resubmitted, regardless of changes.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.filter_type</p></td>
-<td>enum</td>
-<td>WILDMAT</td>
-<td><p>Defines the pattern matching algorithm to use for file name filtering.
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.filter_type</p>         </td>
+         <td>enum         </td>
+         <td>WILDMAT         </td>
+         <td>            <p>Defines the pattern matching algorithm to use for file name filtering.
 Values:</p>
-<ul>
-<li>STRJCMP: The Transfer CFT pattern matching algorithm.</li>
-<li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong></li>
-</ul>
-<p>See <a href="../folder_customize">Create inclusion and exclusion filters</a> for details.</p></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.renaming_method</p></td>
-<td>Enum</td>
-<td>TIMESTAMP</td>
-<td><p>This parameter applies only to the MOVE method.</p>
-<ul>
-<li>NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.</li>
-<li>TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li>
-</ul>
+            <ul>
+               <li>STRJCMP: The Transfer CFT pattern matching algorithm.               </li>
+               <li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong>               </li>
+            </ul>
+            <p>See <a href="folder_customize">Create inclusion and exclusion filters</a> for details.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.renaming_method</p>         </td>
+         <td>Enum         </td>
+         <td>TIMESTAMP         </td>
+         <td>            <p>This parameter applies only to the MOVE method.</p>
+            <ul>
+               <li>NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.               </li>
+               <li>TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.               </li>
+            </ul>
 For example, using timestamp_separators=".":
-<ul>
-<li>myfile is renamed myfile.20131025</li>
-<li>myfile.txt is renamed myfile.20131025.txt</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.renaming_separators</p></td>
-<td>string</td>
-<td> </td>
-<td><p>This parameter only applies to the MOVE method.
+            <ul>
+               <li>myfile is renamed myfile.20131025               </li>
+               <li>myfile.txt is renamed myfile.20131025.txt               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.renaming_separators</p>         </td>
+         <td>string         </td>
+         <td>          </td>
+         <td>            <p>This parameter only applies to the MOVE method.
 It must contain at most 2 characters from among the following:</p>
-<p>.[]()i_-</p>
-<p>The first character defines the separator before the timestamp.
+            <p>.[]()i_-</p>
+            <p>The first character defines the separator before the timestamp.
 The second one, when present, defines the separator after the timestamp.</p>
-<p>For example, using timestamp_separators "[]":
+            <p>For example, using timestamp_separators "[]":
 - myfile is renamed myfile.[20131025]
-- myfile.txt is renamed myfile.[20131025].txt</p></td>
-</tr>
-<tr class="odd">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.control</p></td>
-<td>string</td>
-<td> </td>
-<td>Metadata used to control user changes.</td>
-</tr>
-<tr class="even">
-<td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.</p>
-<p>use_file_system_events</p>
-<p><a href="#file-sys">More information</a></p></td>
-<td>Boolean</td>
-<td>No</td>
-<td>Set to YES to enable the file system events monitoring service to detect newly available files.</td>
-</tr>
-</tbody>
+- myfile.txt is renamed myfile.[20131025].txt</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.control</p>         </td>
+         <td>string         </td>
+         <td>          </td>
+         <td>Metadata used to control user changes.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>folder_monitoring.folders.</p>
+            <p>&lt;logical_name&gt;.</p>
+            <p>use_file_system_events</p>
+            <p><a href="#File-sys">More information</a></p>         </td>
+         <td>Boolean         </td>
+         <td>No         </td>
+         <td>Set to YES to enable the file system events monitoring service to detect newly available files.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   UNIX /
@@ -352,21 +352,21 @@ To deactivate compatibility checks of a folder’s new configuration, unset the 
 If the folder's logical name is **A**, execute the following command prior to the reconfiguration (or start) command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL UCONFUNSET id = folder_monitoring.folders.<strong>A</strong>.control</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL UCONFUNSET id = folder_monitoring.folders.<strong>A</strong>.control</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 When you then reconfigure (or start) Transfer CFT, the **A** folder is not checked.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUCONF RECONFIG type=folder</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUCONF RECONFIG type=folder</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Director"></span>Directory configuration examples
@@ -376,35 +376,35 @@ This section presents an example that consists of configuring 3 directories for 
 Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In all of the examples in this topic, you must enter CFTUTIL in upper case.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In all of the examples in this topic, you must enter CFTUTIL in upper case.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For this example, you would execute the following command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL uconfset id=folder_monitoring.enable , value='Yes'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'</p>
-<p>*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL uconfset id=folder_monitoring.enable , value='Yes'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'</p>
+            <p>*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Directory A requirements
@@ -417,23 +417,23 @@ The first directory presents the simplest possible configuration, leaving most p
 The following commands create the configuration defined for directory A.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#</p>
-<p># Create all of the needed directories (UNIX platform example)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_a</p>
-<p>mkdir /home/CFT/fm/dir_a/scan</p>
-<p>mkdir /home/CFT/fm/dir_a/work</p>
-<p>#</p>
-<p># Define the needed Transfer CFT configuration parameters leaving all others set to their default value.</p>
-<p>#</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.A.scan_dir , value='/home/CFT/fm/dir_a/scan'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.A.work_dir , value='/home/CFT/fm/dir_a/work'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.A.part , value='NEWYORK'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.A.idf , value='IDFA'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#</p>
+            <p># Create all of the needed directories (UNIX platform example)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_a</p>
+            <p>mkdir /home/CFT/fm/dir_a/scan</p>
+            <p>mkdir /home/CFT/fm/dir_a/work</p>
+            <p>#</p>
+            <p># Define the needed Transfer CFT configuration parameters leaving all others set to their default value.</p>
+            <p>#</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.scan_dir , value='/home/CFT/fm/dir_a/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.work_dir , value='/home/CFT/fm/dir_a/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.part , value='NEWYORK'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.A.idf , value='IDFA'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Directory B requirements
@@ -447,30 +447,30 @@ For the second directory, directory B, we want to:
 The following commands create the required directory B configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#</p>
-<p># Create all needed directories (example for UNIX platforms)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_b</p>
-<p>mkdir /home/CFT/fm/dir_b/scan</p>
-<p>mkdir /home/CFT/fm/dir_b/work</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/london</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
-<p>#</p>
-<p># Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.</p>
-<p>#</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.B.scan_dir , value='/home/CFT/fm/dir_b/scan'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.B.work_dir , value='/home/CFT/fm/dir_b/work'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.B.part , value='(0)'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='*.txt'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#</p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_b</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan</p>
+            <p>mkdir /home/CFT/fm/dir_b/work</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/london</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
+            <p>#</p>
+            <p># Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.</p>
+            <p>#</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.scan_dir , value='/home/CFT/fm/dir_b/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.work_dir , value='/home/CFT/fm/dir_b/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.part , value='(0)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='*.txt'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example /home/CFT/fm/dir\_b/newyork for the partner named newyork.
@@ -490,34 +490,34 @@ For the third directory, directory C, we want to:
 The following commands create the described directory C configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#</p>
-<p># Create all needed directories (example for UNIX platforms)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_c</p>
-<p>mkdir /home/CFT/fm/dir_c/scan</p>
-<p>mkdir /home/CFT/fm/dir_c/work</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf1</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf2</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf3</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfa</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfb</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfc</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfd</p>
-<p>#</p>
-<p># Define all necessary Transfer CFT configuration parameters leaving others set to their default value.</p>
-<p>#</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_idle_delay , value='0'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.idf , value='(1)'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.part , value='(0)'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.scan_dir , value='/home/CFT/fm/dir_c/scan'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.work_dir , value='/home/CFT/fm/dir_c/work'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.interval , value='10'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_count , value='4'</p>
-<p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_exclude_filter , value='*.tmp'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#</p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_c</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan</p>
+            <p>mkdir /home/CFT/fm/dir_c/work</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf1</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf2</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf3</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfa</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfb</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfc</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfd</p>
+            <p>#</p>
+            <p># Define all necessary Transfer CFT configuration parameters leaving others set to their default value.</p>
+            <p>#</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_idle_delay , value='0'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.idf , value='(1)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.part , value='(0)'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.scan_dir , value='/home/CFT/fm/dir_c/scan'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.work_dir , value='/home/CFT/fm/dir_c/work'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.interval , value='10'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_count , value='4'</p>
+            <p>CFTUTIL uconfset id=folder_monitoring.folders.C.file_exclude_filter , value='*.tmp'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner newyork and idf idf1.
@@ -526,7 +526,7 @@ The files to be sent must be moved to the directory that corresponds to the dest
 
 From the Transfer CFT UI, select the Unified Configuration icon. From the Unified configuration dialog box, select folder\_monitoring. To display all possible parameters, first create at least one folder (folder\_monitoring.folders) for Transfer CFT to monitor, and click **Apply**.
 
-For more information on setting unified configuration parameters, refer to [Using UCONF in CFTUTIL](../../../admin_intro/uconf/uconf_w_cftutil) or [About the unified configuration](../../../admin_intro/uconf) topics.
+For more information on setting unified configuration parameters, refer to [Using UCONF in CFTUTIL](../../uconf/uconf_w_cftutil.htm) or [About the unified configuration](../../uconf/UCONF.htm) topics.
 
 ## <span id="File-sys"></span>File-system event monitoring
 
@@ -534,18 +534,18 @@ This feature enables you to use file-system events monitoring to detect newly av
 
 Available on Linux/Windows only
 
-See [Supported OS for file-system event monitoring](..//transfercft/app_integration_intro/intro_folder_monitor).
+See [Supported OS for file-system event monitoring](transfercft/app_integration_intro/intro_folder_monitor).
 
 ### Configure file-system event monitoring
 
 Set the following UCONF parameters as shown below. When you set this option for a specific folder, Transfer CFT immediately treats any events that occur in this folder's SCAN directory.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL uconfset id=folder_monitoring.folders.MyFolder.use_file_system_events, value=YES</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL uconfset id=folder_monitoring.folders.MyFolder.use_file_system_events, value=YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Attention
@@ -559,7 +559,7 @@ We recommended that you only use file-system event monitoring when immediate att
 
 Related topics
 
--   [Introduction to folder monitoring](..//transfercft/app_integration_intro/intro_folder_monitor)
--   [Folder monitoring CFTFOLDER](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder)
--   [Migrate to CFTFOLDER folder monitoring](../migrate_uconf_cftfolder)
--   [Create inclusion and exclusion filters](../folder_customize)
+-   [Introduction to folder monitoring](intro_folder_monitor.htm)
+-   [Folder monitoring CFTFOLDER](../../CFTUTIL/Conf/CFTFOLDER.htm)
+-   [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder.htm)
+-   [Create inclusion and exclusion filters](folder_customize.htm)

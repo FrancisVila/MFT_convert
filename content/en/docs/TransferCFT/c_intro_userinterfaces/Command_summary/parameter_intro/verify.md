@@ -50,7 +50,7 @@ This example demonstrates the use of the client NONE value.
 
 CFTSSL type=client, verify=none and CFTSSL type=server, verify=none
 
-![](verify1.png)
+![](/Images/TransferCFT/verify2.png)
 
 Example 2
 
@@ -58,7 +58,7 @@ This example demonstrates the use of the client ENFORCED value.
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
 
-![](verify1.png)
+![](/Images/TransferCFT/verify1.png)
 
  
 
@@ -68,4 +68,4 @@ This example demonstrates a different use of the ENFORCED value. When acting as 
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE
 
-[Return to Command index](../../)
+[Return to Command index](../)

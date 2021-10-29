@@ -21,6 +21,6 @@ IDM.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

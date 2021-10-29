@@ -17,15 +17,15 @@ Filters the LISTCAT or DISPLAY output.
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL listcat part = paris, Serialized = Yes</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL listcat part = paris, Serialized = Yes</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This example displays all serialized transfer records where the PART\[ner\] is PARIS.
 
-See also, [Serial](../serial) and [Transfer serialization](../../../../app_integration_intro/transfer_serialization).
+See also, [Serial](serial) and [Transfer serialization](../../../app_integration_intro/transfer_serialization).
 
-[Return to Command index](../../)
+[Return to Command index](../)

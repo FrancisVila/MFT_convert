@@ -1,5 +1,5 @@
 {
-    "title": "Enable Sentinel and Event Router ",
+    "title": "Enable Sentinel and Event Router",
     "linkTitle": "Enable Sentinel and Event Router ",
     "weight": "260"
 }Enabling the Axway Sentinel option for Transfer CFT is generally comprised of the following steps, which you must execute in the order listed:
@@ -24,13 +24,13 @@
 -   Restart Transfer CFT
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Universal Agent installation is necessary only for end-to-end application monitoring.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Universal Agent installation is necessary only for end-to-end application monitoring.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Procedure
@@ -53,13 +53,13 @@ You can set the Sentinel parameters in the unified configuration. If the Sentine
 For a description of the general parameters refer to the Event Router information in the *Sentinel* documentation.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the communication mode between Transfer CFT and the Event Router is an XCF type, and the TRKSVC is equal to 0, then you must define the Transfer CFT executable library as APF authorized.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the communication mode between Transfer CFT and the Event Router is an XCF type, and the TRKSVC is equal to 0, then you must define the Transfer CFT executable library as APF authorized.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Activate the unified configuration file parameters SN05CONF"></span>Activate the unified configuration file parameters SN05CONF
@@ -71,33 +71,33 @@ Trktname parameter
 -   Using a buffer file is strongly encouraged, but not mandatory. If you prefer to not use a buffer file, modify the command UCONFSET as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>UCONFSET ID=sentinel.TRKTNAME,VALUE=</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>UCONFSET ID=sentinel.TRKTNAME,VALUE=         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   The following message displays in the log when you restart Transfer CFT:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1         </td>
+      </tr>
+   </tbody>
 </table>
 
 To connect to the Event Router via XFC, manually modify the commands file to activate the appropriate communication mode and comment commands:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/* UCONFSET ID=sentinel.TRKIPADDR,
-<p>         VALUE=sntladdr                  </p>
-<p>     UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp*/</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/* UCONFSET ID=sentinel.TRKIPADDR,
+            <p>         VALUE=sntladdr                  </p>
+            <p>     UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp*/</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Create_a_LOGGER_type_padding_file (optional)"></span>Create a LOGGER type padding file (optional)
@@ -109,16 +109,16 @@ The new LOGGER file is a DASD-ONLY type file. Use the JCL SN10CLGR, via the IBM 
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>DEFINE LOGSTREAM NAME(sntlgstr)</p>
-<p>DASDONLY(YES)</p>
-<p>LOWOFFLOAD(0)</p>
-<p>LS_SIZE(180)</p>
-<p>STG_SIZE(0)</p>
-<p>MAXBUFSIZE(64000)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>DEFINE LOGSTREAM NAME(sntlgstr)</p>
+            <p>DASDONLY(YES)</p>
+            <p>LOWOFFLOAD(0)</p>
+            <p>LS_SIZE(180)</p>
+            <p>STG_SIZE(0)</p>
+            <p>MAXBUFSIZE(64000)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The keywords that are displayed in bold should be substituted by the JCL A00CUSTO. For more information refer to the IBM documentation on *Setting up a Sysplex*.
@@ -130,32 +130,32 @@ To create an overflow file (LOGGER) that is available for all SYSPLEX partition
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>The following is an example of a structure definition:</p>
-<p>STRUCTURE NAME(&amp;userstr)</p>
-<p>SIZE(6000)</p>
-<p>INITSIZE(1200)</p>
-<p>REBUILDPERCENT(30)</p>
-<p>PRELIST(FACIL02,FACIL01)</p>
-<p> </p>
-<p>The following is an example of a logstream definition:</p>
-<p>DEFINE LOGSTREAM NAME(&amp;LGRID)</p>
-<p>STRUCTNAME(&amp;userstr)</p>
-<p>&amp;Userstr is the structure name</p>
-<p>&amp;LGRID is the logger file name</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>The following is an example of a structure definition:</p>
+            <p>STRUCTURE NAME(&amp;userstr)</p>
+            <p>SIZE(6000)</p>
+            <p>INITSIZE(1200)</p>
+            <p>REBUILDPERCENT(30)</p>
+            <p>PRELIST(FACIL02,FACIL01)</p>
+            <p> </p>
+            <p>The following is an example of a logstream definition:</p>
+            <p>DEFINE LOGSTREAM NAME(&amp;LGRID)</p>
+            <p>STRUCTNAME(&amp;userstr)</p>
+            <p>&amp;Userstr is the structure name</p>
+            <p>&amp;LGRID is the logger file name</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must be a system administrator to perform these operations.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must be a system administrator to perform these operations.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Overflow file definition"></span>Overflow file definition
@@ -166,34 +166,34 @@ The following table describes the overflow file definition for the Logger file, 
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th> </th>
-<th>Event Router</th>
-<th>TRKUTIL</th>
-<th>Transfer CFT 2.7 and later</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-mc-conditions="">
-<th>Configuration file</th>
-<td>USEPARIN</td>
-<td>TRKCONF</td>
-<td>UCONF</td>
-</tr>
-<tr class="even" data-mc-conditions="">
+   <thead>
+      <tr class="header">
+         <th> </th>
+         <th>Event Router</th>
+         <th>TRKUTIL</th>
+         <th>Transfer CFT 2.7 and later</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-mc-conditions="">
+         <th>Configuration file</th>
+         <td>USEPARIN         </td>
+         <td>TRKCONF         </td>
+         <td>UCONF         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
 <th rowspan="2">Logger file</th>
-<td><p>(AGENT)</p>
-<p>api_file=</p></td>
-<td>TRKTNAME=</td>
-<td>UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td> </td>
-<td>TRKSHAREDFILE=YES</td>
-<td>UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES</td>
-</tr>
-</tbody>
+         <td>            <p>(AGENT)</p>
+            <p>api_file=</p>         </td>
+         <td>TRKTNAME=         </td>
+         <td>UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>          </td>
+         <td>TRKSHAREDFILE=YES         </td>
+         <td>UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 ###  <span id="Communication with the Event Router"></span>Communication with the Event Router
@@ -204,39 +204,39 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th> </th>
-<th>Event Router</th>
-<th>TRKUTIL</th>
-<th>Transfer CFT 2.6.x</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-mc-conditions="">
-<td>Configuration file</td>
-<td>USEPARIN</td>
-<td>TRKCONF</td>
-<td>UCONF</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>SVC</td>
-<td><p>(SYSTEM)</p>
-<p>svc_nb=nnn</p></td>
-<td>TRKSVC=nnn</td>
-<td>UCONFSET ID=sentinel.TRKSVC,VALUE=nnn</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td rowspan="2">XCF definition</td>
-<td rowspan="2">(AGENT)queue=</td>
-<td>TRKQUEUE=</td>
-<td>UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>TRKTYPE=XCF</td>
-<td>UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th> </th>
+         <th>Event Router</th>
+         <th>TRKUTIL</th>
+         <th>Transfer CFT 2.6.x</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-mc-conditions="">
+         <td>Configuration file         </td>
+         <td>USEPARIN         </td>
+         <td>TRKCONF         </td>
+         <td>UCONF         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>SVC         </td>
+         <td>            <p>(SYSTEM)</p>
+            <p>svc_nb=nnn</p>         </td>
+         <td>TRKSVC=nnn         </td>
+         <td>UCONFSET ID=sentinel.TRKSVC,VALUE=nnn         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td rowspan="2">XCF definition         </td>
+         <td rowspan="2">(AGENT)queue=         </td>
+         <td>TRKQUEUE=         </td>
+         <td>UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>TRKTYPE=XCF         </td>
+         <td>UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Modify the Transfer CFT start-up procedure"></span>Modify the Transfer CFT start-up procedure
@@ -281,7 +281,7 @@ The following JCLs are available as end-to-end monitoring examples:
 
 -   SNTLEXEC: The end of transfer procedure, associating an acknowledgement via the CFTUTIL utility and the ‘COMPUTEIDENT’, ‘SENDEVENT’, and ‘SENDCYCLE’ TRKUTIL command. This is available in the EXEC library.
 
-## <span id="Heartbeats zOS"></span>Implement Heartbeat functionality<span id="kanchor50"></span>
+## <span id="Heartbeats zOS"></span>Implement Heartbeat functionality<span id="kanchor46"></span>
 
 The CFTHEART JCL sets the unified configuration heartbeat values as follows:
 

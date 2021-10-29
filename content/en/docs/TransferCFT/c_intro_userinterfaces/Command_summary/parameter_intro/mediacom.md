@@ -21,6 +21,6 @@ The possible values are:
     communications medium is defined in the file that is declared in the
     FNAME parameter  
 
-See [Set the default CFTUTIL file names (CONFIG)](../../../about_cftutil/redefining_cftutil_data_media) for examples of using MEDIACOM.
+See [Set the default CFTUTIL file names (CONFIG)](../../about_cftutil/redefining_cftutil_data_media) for examples of using MEDIACOM.
 
-[Return to Command index](../../)
+[Return to Command index](../)

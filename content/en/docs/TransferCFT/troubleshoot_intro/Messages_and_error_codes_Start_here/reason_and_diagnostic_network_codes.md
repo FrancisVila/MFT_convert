@@ -1,10 +1,8 @@
 {
-    "title": "Reason and diagnostic network codes",
+    "title": "Reason  and diagnostic network codes",
     "linkTitle": "Reason and diagnostic network codes",
     "weight": "520"
-}# <span id="Reason_and_diagnostic_network_codes"></span>Reason and diagnostic network codes
-
-<span id="Reason_codes"></span>Reason codes: REASON codes provide a general explanation of the error detected, or
+}<span id="Reason_codes"></span>Reason codes: REASON codes provide a general explanation of the error detected, or
 the refusal.
 
 <span id="Diagnostic_codes"></span>Diagnostic codes: DIAGNOSTIC (diag) codes provide a detailed explanation of the source
@@ -22,49 +20,49 @@ The codes are expressed in hexadecimal.
 TCP/IP Reason codes
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="21.869%"><p>00</p></td>
-<td width="78.131%"><p>Connection request rejected by the network or break caused
-by the remote partner</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="21.869%"><p>01</p></td>
-<td width="78.131%"><p>Time-out for a connection request. The called party is
-probably not connected to the network.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="21.869%"><p>02</p></td>
-<td width="78.131%"><p>Insufficient resources (other than memory)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="21.869%"><p>03</p></td>
-<td width="78.131%"><p>Insufficient memory</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="21.869%"><p>04</p></td>
-<td width="78.131%"><p>The network access point reference passed to the connection
-is not valid</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="21.869%"><p>08</p></td>
-<td width="78.131%"><p>Invalid parameter in TCP request sent</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="21.869%"><p>09</p></td>
-<td width="78.131%"><p>Other cause of rejection</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="21.869%"><p>43</p></td>
-<td width="78.131%"><p>Invalid local or remote address</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Code</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="21.869%">            <p>00</p>         </td>
+         <td width="78.131%">            <p>Connection request rejected by the network or break caused
+by the remote partner</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="21.869%">            <p>01</p>         </td>
+         <td width="78.131%">            <p>Time-out for a connection request. The called party is
+probably not connected to the network.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="21.869%">            <p>02</p>         </td>
+         <td width="78.131%">            <p>Insufficient resources (other than memory)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="21.869%">            <p>03</p>         </td>
+         <td width="78.131%">            <p>Insufficient memory</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="21.869%">            <p>04</p>         </td>
+         <td width="78.131%">            <p>The network access point reference passed to the connection
+is not valid</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="21.869%">            <p>08</p>         </td>
+         <td width="78.131%">            <p>Invalid parameter in TCP request sent</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="21.869%">            <p>09</p>         </td>
+         <td width="78.131%">            <p>Other cause of rejection</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="21.869%">            <p>43</p>         </td>
+         <td width="78.131%">            <p>Invalid local or remote address</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="DIAGN___TCP_IIP_Diagnostic_Codes"></span>TCP/IP diagnostic codes

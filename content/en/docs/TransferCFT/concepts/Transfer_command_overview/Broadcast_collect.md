@@ -5,21 +5,21 @@
 }This section describes the following two types of transfer functions, which you can perform in
 requester mode:
 
--   [Broadcast](#broadcasting_mode):
+-   [Broadcast](#Broadcasting_mode):
     Send one or more files or messages to several partners by activating a
     SEND command
--   [Collect](#collecting):
+-   [Collect](#Collecting):
     Receive one or more files or messages from several partners by activating
     a single RECV command
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using these features with <span>Central Governance</span>, you must enable broadcasting for the flow. For more information, refer to the <em>Central Governance</em> documentation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using these features with <span>Central Governance</span>, you must enable broadcasting for the flow. For more information, refer to the <em>Central Governance</em> documentation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Broadcasting_mode"></span>Broadcasting mode
@@ -35,7 +35,7 @@ on the basis of a generic example.
 
 #### Define a broadcasting list
 
-<img src="parameter_setting_of_a_collect_from_the_three_different_partners.gif" width="724" height="325" />
+<img src="/Images/TransferCFT/Implement_broadcasting.gif" width="724" height="325" />
 
 The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
@@ -43,22 +43,22 @@ This limits the number of identifiers.
 
 This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in Central Governance, or CFTPART objects if defined in Transfer CFT.
 
-![](parameter_setting_of_a_collect_from_the_three_different_partners.gif)
+![](/Images/TransferCFT/temp_broadcast.png)
 
 Another method involves defining these identifiers in a file (using an fname). The number
 of identifiers is then not limited. When using this method, if you change the runtime or import the configuration to a new environment you must remember to copy this file to the new runtime. The name of this file is defined in
 the FNAME parameter of CFTDEST.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>     CFTDEST     ID    
+   <tbody>
+      <tr class="odd">
+         <td>            <p>     CFTDEST     ID    
 =     &lt;<em>identifier</em>&gt;,<br />
           FNAME    
 =     &lt;<em>file</em>&gt;,<br />
-          ...</p></td>
-</tr>
-</tbody>
+          ...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 These two methods are mutually exclusive. The PART parameter cannot
@@ -82,14 +82,14 @@ all the transfers are correctly completed (DIFFUS entry changes to the
 T or X state, depending on the compat mode).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the CFTDEST command includes the EXEC=PART parameter, the end of
-send procedure is executed on completion of each transfer.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the CFTDEST command includes the EXEC=PART parameter, the end of
+send procedure is executed on completion of each transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The post processing procedure in the case of an error is executed for each transfer in the same
@@ -133,7 +133,7 @@ three different partners.
 Parameter setting to broadcast to several
 partners
 
-![](parameter_setting_of_a_collect_from_the_three_different_partners.gif)
+![](/Images/TransferCFT/parameter_setting_to_broadcast_to_three_different_partners.gif)
 
 ## <span id="Broadcasting_and_store_and_forward"></span>Broadcasting and store and forward
 
@@ -141,34 +141,34 @@ You can use the store and forward mechanism for each transfer to a partner
 that is defined in a broadcasting list. You can also use the SEND command to broadcast from a store and forward
 site. The mechanisms and the associated parameter setting are described in
 [Store
-and forward mode relay](../store_and_forward_mode_routing).
+and forward mode relay](Store_and_forward_mode_routing.htm).
 
 ### Define a relay for a broadcast list
 
 You can use the following commands as an example to configure a transfer flow from Partner A to a distribution list C*n*, via the intermediate site B.
 
-![](parameter_setting_of_a_collect_from_the_three_different_partners.gif)
+![](/Images/TransferCFT/temp_broadcast_store_forward.png)
 
 **Step 1**
 
 1.  Partner A sends the list of partners (C1, C2, ...Cn) that you want to broadcast to Partner B:
 
 2.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-mc-conditions="governance.CG_out">SEND PART=ID_B, FNAME=LIST_B,IDF=LIST,...</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-mc-conditions="governance.CG_out">SEND PART=ID_B, FNAME=LIST_B,IDF=LIST,...         </td>
+          </tr>
+       </tbody>
     </table>
 
 3.  Partner B receives this list with the command:
 
 4.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-mc-conditions="governance.CG_out">CFTRECV ID=LIST,..., FNAME=LIST</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-mc-conditions="governance.CG_out">CFTRECV ID=LIST,..., FNAME=LIST         </td>
+          </tr>
+       </tbody>
     </table>
 
 **Step 2**
@@ -176,31 +176,31 @@ You can use the following commands as an example to configure a transfer flow fr
 1.  Partner A sends the file to broadcast to a virtual Partner C:
 
 2.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-mc-conditions="governance.CG_out">SEND PART=ID_C, FNAME=FILE_TO_BROADCAST,...</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-mc-conditions="governance.CG_out">SEND PART=ID_C, FNAME=FILE_TO_BROADCAST,...         </td>
+          </tr>
+       </tbody>
     </table>
 
 3.  On Partner A perform the following command to reach Partner C virtually via Partner B:
 
 4.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-mc-conditions="governance.CG_out">CFTPART ID=ID_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID_B</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-mc-conditions="governance.CG_out">CFTPART ID=ID_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID_B         </td>
+          </tr>
+       </tbody>
     </table>
 
     1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
 
 5.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-mc-conditions="governance.CG_out">CFTDEST ID=C, FNAME=LIST, FOR=COMMUT</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-mc-conditions="governance.CG_out">CFTDEST ID=C, FNAME=LIST, FOR=COMMUT         </td>
+          </tr>
+       </tbody>
     </table>
 
     This results in the FILE\_TO\_BROADCAST being sent to all of the partners in the C list of partners.
@@ -220,11 +220,11 @@ partner files from a list of partners, CFTDEST object.
 The collecting mechanism correspondences are displayed in the following command.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-mc-conditions="governance.CG_out">RECV PART=GROUP, IDF=IDF1,...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-mc-conditions="governance.CG_out">RECV PART=GROUP, IDF=IDF1,...         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Define a collecting partner list
@@ -238,7 +238,7 @@ The list of partners can be described in one of two ways:
     parameter.
 
 These two methods are mutually exclusive. The PART parameter cannot
-be used simultaneously with the [FNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
+be used simultaneously with the [FNAME](../../CFTUTIL/Parameter_index/fname.htm)
 parameter.
 
 This RECV command generates N+1 transfer entries in the catalog if there
@@ -252,7 +252,7 @@ transfers are correctly completed.
 
 When all transfers are completed, the end of transfer procedure is executed on the generic transfer.
 
-There are three possible actions when transfers complete depending on the [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) parameter setting, DEST, PART, CHILDREN.
+There are three possible actions when transfers complete depending on the [EXEC](../../CFTUTIL/Parameter_index/exec.htm) parameter setting, DEST, PART, CHILDREN.
 
 The error procedure is executed for each transfer in the same
 way as for normal transfers.
@@ -262,7 +262,7 @@ case when a single command is used to collect all available files from
 all partners in the list.
 
 For each partner, the mechanism used is RECV IDF=\*, FILE=ALL. See the paragraphs relating to the use of the RECV command
-for [ODETTE](../../../protocols_start_here/start_here_odette/receiving_transfers) and [PeSIT](../../../protocols_start_here/about_pesit/defining_cftrecv_in_pesit) in the [Protocol](../../../protocols_start_here) sections.
+for [ODETTE](../../Prots/General/OFTP/Receiving_transfers.htm) and [PeSIT](../../Prots/General/PeSIT_new/Defining_CFTRECV_in_PeSIT.htm) in the [Protocol](../../Prots/Protocols_start_here.htm) sections.
 
 The EXEC parameter of the CFTDEST command is ignored. The end of transfer procedure is only executed when all the transfers
 are correctly completed (COLLECT entry changes to the T or **X**
@@ -279,4 +279,4 @@ three different partners.
 **Parameter setting to collect from three
 partners**
 
-<img src="parameter_setting_of_a_collect_from_the_three_different_partners.gif" width="776" height="522" />
+<img src="/Images/TransferCFT/parameter_setting_of_a_collect_from_the_three_different_partners.gif" width="776" height="522" />

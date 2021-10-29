@@ -1,11 +1,9 @@
 {
-    "title": "Transfer steps",
+    "title": "Requester and server modes",
     "linkTitle": "Transfer steps",
     "weight": "200"
-}# Requester and server modes
-
-Transfer CFT mechanisms differ depending on if the Transfer CFT is operating in
-requester mode or server mode, as mentioned in the [Introduction](../../../cft_intro_install/preface/introduction). This section describes the transfer steps
+}Transfer CFT mechanisms differ depending on if the Transfer CFT is operating in
+requester mode or server mode, as mentioned in the Introduction. This section describes the transfer steps
 in relation to each mode.
 
 -   In
@@ -59,10 +57,10 @@ Steps include:
 
 Example: Sending in requester mode
 
-![](temp_session3.png)
+![](/Images/TransferCFT/temp_session1.png)
 
  
 
 Example: Receiving in requester mode
 
-![](temp_session3.png)
+![](/Images/TransferCFT/temp_session3.png)

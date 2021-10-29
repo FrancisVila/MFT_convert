@@ -1,12 +1,12 @@
 {
-    "title": "Issues when starting",
+    "title": "Issues when starting Transfer CFT",
     "linkTitle": "Issues when starting",
     "weight": "310"
 }## Cannot start Transfer CFT
 
 ### Bind failed
 
-The following error messages display if two CFTNETs point to the same [CLASS](../../../../c_intro_userinterfaces/command_summary/parameter_intro/class) value.
+The following error messages display if two CFTNETs point to the same [CLASS](../../../c_intro_userinterfaces/command_summary/parameter_intro/class) value.
 
 CFTN05E bind() failed: EDC8115I Address already in use.
 
@@ -20,7 +20,7 @@ You must use the same CFTNET CLASS value in the CFTTCP object so the expected so
 
 ### Register request failure
 
-The following error messages display if two CFTPROTs point to the same [SAP](../../../../c_intro_userinterfaces/command_summary/parameter_intro/sap) value
+The following error messages display if two CFTPROTs point to the same [SAP](../../../c_intro_userinterfaces/command_summary/parameter_intro/sap) value
 
 CFTI22F CFTPROT=PESITSSL Register request failure CS=
 

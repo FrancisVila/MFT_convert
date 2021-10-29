@@ -1,5 +1,5 @@
 {
-    "title": "System configuration and output",
+    "title": "System configuration and output ",
     "linkTitle": "System configuration and output",
     "weight": "210"
 }## About the output file

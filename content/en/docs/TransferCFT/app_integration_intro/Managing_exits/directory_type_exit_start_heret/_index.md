@@ -1,10 +1,8 @@
 {
-    "title": "Directory exit",
-    "linkTitle": "Directory exit",
-    "weight": "320"
-}# <span id="Directory_type_EXIT"></span>About Directory exits
-
-## What is a directory exit?
+    "title": "About Directory  exits ",
+    "linkTitle": "About directory exits",
+    "weight": "340"
+}## What is a directory exit?
 
 You can use the directory exit
 task to modify the parameters used to establish an exit connection with

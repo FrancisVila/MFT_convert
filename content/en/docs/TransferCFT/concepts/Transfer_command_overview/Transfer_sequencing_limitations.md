@@ -1,10 +1,8 @@
 {
-    "title": "Partner call  limitations",
+    "title": "Partner  call limitations",
     "linkTitle": "Partner call  limitations",
     "weight": "260"
-}# <span id="Partner_call_limitations"></span>Partner call limitations
-
-This topic describes the limitations on partner connections.
+}This topic describes the limitations on partner connections.
 
 ### Number of connections
 

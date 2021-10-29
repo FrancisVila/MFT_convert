@@ -1,5 +1,5 @@
 {
-    "title": "CONFIG - Set default file names",
+    "title": "Set the default CFTUTIL file names (CONFIG)",
     "linkTitle": "CONFIG - Set default file names",
     "weight": "220"
 }The <span id="CONFIG_command"></span>CONFIG command redefines the data media
@@ -7,7 +7,7 @@ that the CFTUTIL utility uses. A medium refers to any data medium or local
 communication means.
 
 See [Defining
-the communication media](../../../admin_intro/admin_config_commands/communication_media_concepts).
+the communication media](../../admin_intro/admin_config_commands/communication_media_concepts).
 
 When activated, CFTUTIL uses the default data media such as master files,
 log files, communication with the Transfer CFT, as defined in Transfer
@@ -73,53 +73,53 @@ since the file is analyzed at each new transfer request.
 You use the CONFIG command to change the Transfer CFT
 communication medium (MEDIACOM parameter). The media that can be used for a given system and the default communication
 medium associated with this system. [Communication
-media](../../../admin_intro/admin_config_commands/communication_media_concepts)
+media](../../admin_intro/admin_config_commands/communication_media_concepts)
 
-**Command syntax**: [CONFIG](../../command_summary)
+**Command syntax**: [CONFIG](../command_summary)
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="19.982%"><p>Description</p></td>
-<td colspan="2" width="80.018%"><p>Use this command to redefine the data media with which
-the CFTUTIL utility operates.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td rowspan="4" width="19.982%"><p>Parameters</p></td>
-<td width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
-<p> </p></td>
-<td width="59.777%"><p>For
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="19.982%">            <p>Description</p>         </td>
+         <td colspan="2" width="80.018%">            <p>Use this command to redefine the data media with which
+the CFTUTIL utility operates.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td rowspan="4" width="19.982%">            <p>Parameters</p>         </td>
+         <td width="20.241%">            <p><a href="Parameter_index/fname.htm">FNAME</a></p>
+            <p> </p>         </td>
+         <td width="59.777%">            <p>For
 TYPE = {CAT | INPUT | OUTPUT | PARM | PART }</p>
-<p>Name of the file associated with the medium type accessed
+            <p>Name of the file associated with the medium type accessed
 by CFTUTIL.</p>
-<p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="20.241%"><p><a href="../../command_summary/parameter_intro/fname">FNAME</a></p>
-<p> </p></td>
-<td width="59.777%"><p>For TYPE = COM</p>
-<p>There must be a correspondence with the CFTCOM NAME
+            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="20.241%">            <p><a href="Parameter_index/fname.htm">FNAME</a></p>
+            <p> </p>         </td>
+         <td width="59.777%">            <p>For TYPE = COM</p>
+            <p>There must be a correspondence with the CFTCOM NAME
 parameter  that
 defines the communication medium as seen from Transfer CFT.</p>
-<p>For a communication medium supported by TCP/IP (MEDIACOM=TCPIP)
+            <p>For a communication medium supported by TCP/IP (MEDIACOM=TCPIP)
 this is either:</p>
-<ul>
-<li>A host
-name (string) using the format: "protocol://machine:port", or</li>
-<li>A configuration
-file (filename)</li>
-</ul></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="20.241%"><p><a href="../../command_summary/parameter_intro/mediacom">MEDIACOM</a> </p></td>
-<td width="59.777%"><p>Defines the communication medium type if this medium is
-relevant to the system.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="20.241%"><p><a href="../../command_summary/parameter_intro/type">TYPE</a> </p></td>
-<td width="59.777%"><p>Defines the medium concerned.</p></td>
-</tr>
-</tbody>
+            <ul>
+               <li>A host
+name (string) using the format: "protocol://machine:port", or               </li>
+               <li>A configuration
+file (filename)               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="20.241%">            <p><a href="Parameter_index/mediacom.htm">MEDIACOM</a> </p>         </td>
+         <td width="59.777%">            <p>Defines the communication medium type if this medium is
+relevant to the system.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="20.241%">            <p><a href="../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
+         <td width="59.777%">            <p>Defines the medium concerned.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Examples
@@ -131,12 +131,12 @@ querying the LISTPARM or LISTPART commands, for example) to the file with
 the generic &lt;filename>.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CONFIG       TYPE = OUTPUT,</p>
-<p>FNAME = &lt;filename&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CONFIG       TYPE = OUTPUT,</p>
+            <p>FNAME = &lt;filename&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example 2: define filename
@@ -145,13 +145,13 @@ Use this command to define the file with the generic
 &lt;filename> as the Transfer CFT communication medium.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CONFIG      TYPE = COM,</p>
-<p>MEDIACOM = FILE</p>
-<p>FNAME = &lt;filename&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CONFIG      TYPE = COM,</p>
+            <p>MEDIACOM = FILE</p>
+            <p>FNAME = &lt;filename&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example 3: MEDIACOM=FILE
@@ -161,23 +161,23 @@ Use to select a specific communication file.
 If the Transfer CFT configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....</p>
-<p>CFTCOM ID=COM1,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom1,...</p>
-<p>CFTCOM ID=COM2,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2,...</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....</p>
+            <p>CFTCOM ID=COM1,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom1,...</p>
+            <p>CFTCOM ID=COM2,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2,...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To select the second communication file in a CFTUTIL session, enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example 4: MEDIACOM=TCPIP
@@ -187,21 +187,21 @@ Use to select a TCPIP communication media.
 If the Transfer CFT configuration file refers to a communication file and a TCPIP communication media:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPARM ID=IDPARM0, ..., COM=(COM,COMS),....</p>
-<p>CFTCOM ID=COM1,TYPE=FILE,FNAME=_CFTCOM,...</p>
-<p>CFTCOM ID=COMS,TYPE=TCPIP,PROTOCOL=XHTTP,HOST=localhost,PORT=1763...</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPARM ID=IDPARM0, ..., COM=(COM,COMS),....</p>
+            <p>CFTCOM ID=COM1,TYPE=FILE,FNAME=_CFTCOM,...</p>
+            <p>CFTCOM ID=COMS,TYPE=TCPIP,PROTOCOL=XHTTP,HOST=localhost,PORT=1763...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To select the TCPIP communication media in a CFTUTIL session, enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CONFIG TYPE=COM,MEDIACOM=TCPIP,FNAME=XHTTP://localhost:1763</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CONFIG TYPE=COM,MEDIACOM=TCPIP,FNAME=XHTTP://localhost:1763</p>         </td>
+      </tr>
+   </tbody>
 </table>

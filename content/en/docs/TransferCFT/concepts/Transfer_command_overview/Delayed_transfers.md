@@ -1,10 +1,8 @@
 {
-    "title": "Transfer scheduling",
+    "title": "Transfer  scheduling",
     "linkTitle": "Transfer scheduling",
     "weight": "270"
-}# <span id="Transfer_sequencing"></span>Transfer scheduling
-
-This topic describes transfer requests and transfer scheduling.
+}This topic describes transfer requests and transfer scheduling.
 
 ## Transfer requests
 
@@ -187,21 +185,21 @@ The values of these parameters can be defined either:
 ### Example 1
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXDATE=+10</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXDATE=+10</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The request is valid for up to 10 days, beginning at the time of the catalog entry.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXTIME=+30</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXTIME=+30</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The request is valid today, for half an hour, beginning at the time of the catalog entry.
@@ -212,14 +210,14 @@ than the value of MINDATE.
 ### Example 2
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>MINDATE = 20151224<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>MINDATE = 20151224<br />
 MINTIME = 1800<br />
 MAXDATE = 20160101<br />
-MAXTIME = 0900</p></td>
-</tr>
-</tbody>
+MAXTIME = 0900</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The transfer can be activated between December 24, 2015 at 6 pm and January
@@ -235,14 +233,14 @@ than the value of MAXTIME.
 ### Example 3
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>MINDATE = 20151224<br />
+   <tbody>
+      <tr class="odd">
+         <td>MINDATE = 20151224<br />
 MINTIME = 0900<br />
 MAXDATE = 20151224<br />
-MAXTIME = 1800</td>
-</tr>
-</tbody>
+MAXTIME = 1800         </td>
+      </tr>
+   </tbody>
 </table>
 
 The transfer can be activated on December 24, 2015 between 9 am and 6 pm.
@@ -254,26 +252,26 @@ the first day. It is not necessary to define the MAXDATE value, as Transfer CFT 
 ### Example 4
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>MINDATE = 20151224<br />
+   <tbody>
+      <tr class="odd">
+         <td>MINDATE = 20151224<br />
 MINTIME = 2200<br />
 MAXDATE = 20151225<br />
-MAXTIME = 0500</td>
-</tr>
-</tbody>
+MAXTIME = 0500         </td>
+      </tr>
+   </tbody>
 </table>
 
 is equivalent to:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>MINDATE = 20151224<br />
+   <tbody>
+      <tr class="odd">
+         <td>MINDATE = 20151224<br />
 MINTIME = 2200<br />
-MAXTIME = 0500</td>
-</tr>
-</tbody>
+MAXTIME = 0500         </td>
+      </tr>
+   </tbody>
 </table>
 
 The transfer can be activated between December 24, 2015 at 10 pm and December
@@ -297,23 +295,23 @@ of:
 ### Example 5
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>MINTIME = 2200<br />
-MAXTIME = 2300 (MAXDATE and MINDATE not defined)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>MINTIME = 2200<br />
+MAXTIME = 2300 (MAXDATE and MINDATE not defined)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The transfer can be activated today between 10 pm and 11 pm.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>MINTIME = 2200<br />
-MAXTIME = 0500 (MAXDATE and MINDATE not defined)</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>MINTIME = 2200<br />
+MAXTIME = 0500 (MAXDATE and MINDATE not defined)         </td>
+      </tr>
+   </tbody>
 </table>
 
 The transfer can be activated between today at 10 pm and tomorrow at 5

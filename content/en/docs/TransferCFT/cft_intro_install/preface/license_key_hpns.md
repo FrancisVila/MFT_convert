@@ -11,15 +11,15 @@
 
 1.  After completing the installation, or for an existing installation, use the command cftutil about to retrieve your system information.
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Note</strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Use the ABOUT command to display
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Note</strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Use the ABOUT command to display
     the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
-    on which Transfer CFT is installed.</td>
-    </tr>
-    </tbody>
+    on which Transfer CFT is installed.         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: fulfillment@us.axway.com
@@ -34,13 +34,13 @@ To apply the license key, enter the Transfer CFT key in the indirection file, wh
 -   On start up the first valid key is used.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See the <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/CFTUTIL/Parameter_index/key.htm">KEY</a> parameter for an example and details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See the <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/CFTUTIL/Parameter_index/key.htm">KEY</a> parameter for an example and details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## About command
@@ -48,19 +48,19 @@ To apply the license key, enter the Transfer CFT key in the indirection file, wh
 Use the CFTUTIL utility to execute the about command to find the CPU ID and general system information as demonstrated in this example.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>Host information :</p>
-<p>* model =</p>
-<p>* hostname = Cgnac1</p>
-<p>* cpuid = XXXXXXXXXXX</p>
-<p>* sysname = NONSTOP_KERNEL</p>
-<p>* machine = NSX-D</p>
-<p>* version = 02</p>
-<p>* release = L18</p>
-<p>* distrib = unknown</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Host information :</p>
+            <p>* model =</p>
+            <p>* hostname = Cgnac1</p>
+            <p>* cpuid = XXXXXXXXXXX</p>
+            <p>* sysname = NONSTOP_KERNEL</p>
+            <p>* machine = NSX-D</p>
+            <p>* version = 02</p>
+            <p>* release = L18</p>
+            <p>* distrib = unknown</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The CPUID is fixed, and as demonstrated in this example is typically XXXXXXXXXXX.

@@ -11,7 +11,7 @@ Serialization of transfer requests is based on a combination of the request's ID
 Additional serialization rules:
 
 -   Un-serialized transfers do not have an impact on serialized transfers.
--   Serialization takes priority over the [MINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)/[MINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/mintime) parameters.
+-   Serialization takes priority over the [MINDATE](../c_intro_userinterfaces/command_summary/parameter_intro/mindate)/[MINTIME](../c_intro_userinterfaces/command_summary/parameter_intro/mintime) parameters.
 -   A failed transfer blocks following transfers.
 -   Deleting a transfer in the catalog triggers the next waiting transfer in the list.
 
@@ -21,7 +21,7 @@ Serialization is supported in REQUESTER mode for send and receive operations exc
 
 ### Procedure
 
-Use the [serial](../../c_intro_userinterfaces/command_summary/parameter_intro/serial) parameter based on the following examples.
+Use the [serial](../c_intro_userinterfaces/command_summary/parameter_intro/serial) parameter based on the following examples.
 
 **Example 1**
 
@@ -30,26 +30,26 @@ This example demonstrates 3 waiting transfer requests, which execute sequentiall
 The DONE (X) phase is reached when the post-processing has completed, or once the transfer is finished if no post-processing exists.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=A</p>
-<p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=B</p>
-<p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=C</p>
-<p> </p>
-<p><strong>Results</strong></p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
-<p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=B</p>
-<p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=PARIS IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=PARIS IDF=BIN</p>
-<p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=A</p>
+            <p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=B</p>
+            <p>SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=C</p>
+            <p> </p>
+            <p><strong>Results</strong></p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=B</p>
+            <p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTR12I END Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example 2**
@@ -57,37 +57,37 @@ The DONE (X) phase is reached when the post-processing has completed, or once t
 In this example, a serialized transfer can start as soon as the post-processing of the preceding transfer begins, as opposed to waiting for it to complete as in Example 1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=A</p>
-<p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=B</p>
-<p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=C</p>
-<p> </p>
-<p><strong>Results</strong></p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=BIN</p>
-<p>CFTR12I END [for transfer A] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=B</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=PARIS IDF=BIN</p>
-<p>CFTR12I END [for transfer B] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=PARIS IDF=BIN</p>
-<p> </p>
-<p>CFTR12I END [for transfer C] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=A</p>
+            <p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=B</p>
+            <p>SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=C</p>
+            <p> </p>
+            <p><strong>Results</strong></p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=PARIS IDF=BIN</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTR12I END [for transfer A] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=PARIS IDF=B</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=PARIS IDF=BIN</p>
+            <p>CFTR12I END [for transfer B] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=PARIS IDF=BIN</p>
+            <p> </p>
+            <p>CFTR12I END [for transfer C] Treated for USER &lt;my user&gt; &lt;PART=PARIS IDF=BIN &gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **<span id="Example_3"></span>Example 3**
@@ -98,26 +98,26 @@ In this example, serialized transfers between a Transfer CFT and a remote PeSIT 
 -   The DONE (X) phase is reached once transfer A is acknowledged.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=A, ACKSTATE=REQUIRE</p>
-<p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=B, ACKSTATE=REQUIRE</p>
-<p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=C, ACKSTATE=REQUIRE</p>
-<p> </p>
-<p><strong>Results</strong></p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=RS43 IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=RS43 IDF=BIN</p>
-<p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer A&gt; PART=RS43 IDM=BIN</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=RS43 IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=RS43 IDF=B</p>
-<p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer B&gt; PART=RS43 IDM=BIN</p>
-<p> </p>
-<p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=RS43 IDF=BIN</p>
-<p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=RS43 IDF=BIN</p>
-<p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer C&gt; PART=RS43 IDM=BIN</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=A, ACKSTATE=REQUIRE</p>
+            <p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=B, ACKSTATE=REQUIRE</p>
+            <p>SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=C, ACKSTATE=REQUIRE</p>
+            <p> </p>
+            <p><strong>Results</strong></p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer A&gt; PART=RS43 IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer A&gt; PART=RS43 IDF=BIN</p>
+            <p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer A&gt; PART=RS43 IDM=BIN</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer B&gt; PART=RS43 IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU=&lt;transfer B&gt; PART=RS43 IDF=B</p>
+            <p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer B&gt; PART=RS43 IDM=BIN</p>
+            <p> </p>
+            <p>CFTT57I Requester transfer started &lt;IDTU=&lt;transfer C&gt; PART=RS43 IDF=BIN</p>
+            <p>CFTT58I Requester transfer ended &lt;IDTU= &lt;transfer C&gt; PART=RS43 IDF=BIN</p>
+            <p>CFTT59I Server reply transferred &lt;IDT=&lt;IDT transfer C&gt; PART=RS43 IDM=BIN</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Using serialization in multi-node architecture

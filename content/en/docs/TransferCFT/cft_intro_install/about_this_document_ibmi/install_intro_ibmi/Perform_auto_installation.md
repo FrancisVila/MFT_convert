@@ -12,11 +12,11 @@
 2.  Start Copilot.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>COPSTART</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>COPSTART         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Check that the Transfer CFT instance appears in Central Governance.

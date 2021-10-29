@@ -1,7 +1,7 @@
 {
-    "title": "Object configuration",
-    "linkTitle": "Object configuration",
-    "weight": "270"
+    "title": "About CFTUTIL configuration operations",
+    "linkTitle": "About CFTUTIL configuration operations",
+    "weight": "290"
 }This topic
 gives an overview of the Transfer CFT configuration and object conventions.
 
@@ -44,15 +44,15 @@ For more information on CFTUTIL, refer to Using the CFTUTIL interface:
 Start here.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The format that you use to enter commands in CFTUTIL is operating
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The format that you use to enter commands in CFTUTIL is operating
 system dependent. For more information, refer to the Operations Manual
-that corresponds to your operating system.</td>
-</tr>
-</tbody>
+that corresponds to your operating system.         </td>
+      </tr>
+   </tbody>
 </table>
 
  

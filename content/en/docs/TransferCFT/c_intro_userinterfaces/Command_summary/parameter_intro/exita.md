@@ -16,4 +16,4 @@ ID parameter.
 
 The identifier may contain the &NPART symbolic variable.
 
-[Return to Command index](../../)
+[Return to Command index](../)

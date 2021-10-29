@@ -1,19 +1,17 @@
 {
-    "title": "User interface options",
+    "title": "User  interface options",
     "linkTitle": "User interface options",
     "weight": "160"
-}# <span id="User_interfaces__Start_here"></span>User interface options
-
-Select the appropriate user interface according to tasks you want to perform.
+}Select the appropriate user interface according to tasks you want to perform.
 
 ### Configuration, monitoring, and flow management
 
 #### Central Governance
 
-Flow Manager and Central Governance are Axway user interfaces that provides a complete set of services to govern Transfer CFT. For more information, see [Governance services](../c_cg_concepts).
+Flow Manager and Central Governance are Axway user interfaces that provides a complete set of services to govern Transfer CFT. For more information, see [Governance services](c_cg_concepts).
 
--   For details on creating your first Transfer CFT flows using Central Governance, see [Getting started](../../gettingstarted_intro).
--   For details on integrating Central Governance with Transfer CFT, see [Integration overview](../../governance_services_intro/governance_overview).
+-   For details on creating your first Transfer CFT flows using Central Governance, see [Getting started](../gettingstarted_intro).
+-   For details on integrating Central Governance with Transfer CFT, see [Integration overview](../governance_services_intro/governance_overview).
 -   Refer to the OS specific installation guide for instructions on how to activate Central Governance connectivity and register your Transfer CFT.
 
 ### Runtime activities
@@ -28,7 +26,7 @@ The CFTUTIL interface provides a batch or interactive line-mode interface
 to execute Transfer CFT operating commands.
 
 The CFTUTIL commands that are described in this documentation are collectively listed
-in the topic [Command index](../../c_intro_userinterfaces/command_summary). You can use this as a quick reference
+in the topic [Command index](../c_intro_userinterfaces/command_summary). You can use this as a quick reference
 to find command syntax and parameters.
 
 #### <span id="Web_services_interface"></span>

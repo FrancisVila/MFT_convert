@@ -10,8 +10,8 @@
 
 Compresses the output file data.
 
-The value 0 means that there is no compression. See also *[Compression](../compression).*
+The value 0 means that there is no compression. See also *[Compression](compression).*
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

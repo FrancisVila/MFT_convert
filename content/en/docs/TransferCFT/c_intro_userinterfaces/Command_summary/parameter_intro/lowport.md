@@ -25,4 +25,4 @@ Defines the lower limit for the range of outgoing ports (value included).
 
 \[LOWPORT = {5000 | n}\]
 
-[Return to Command index](../../)
+[Return to Command index](../)

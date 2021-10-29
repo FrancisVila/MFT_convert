@@ -1,10 +1,8 @@
 {
-    "title": "Default send templates CFTSEND",
+    "title": "Creating  a SEND template",
     "linkTitle": "Default send templates CFTSEND",
     "weight": "190"
-}# <span id="Creating_the_default_SEND_template__Start_here"></span>Creating a SEND template
-
-This topic describes the
+}This topic describes the
 CFTSEND template object, used to specify the default values for:
 
 -   The name and local
@@ -29,10 +27,10 @@ Related
 topics
 
 -   Command syntax
-    [CFTSEND](../../../c_intro_userinterfaces/command_summary)
+    [CFTSEND](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
     [CFTSEND - Default
-    SEND](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftsend)
+    SEND](../../CFTUTIL/Conf/CFTSEND.htm)
 
 ## <span id="CFTSEND_parameter_details"></span>CFTSEND parameter details
 
@@ -219,4 +217,4 @@ identifier ID = FI, the default characteristics indicated in the CFTSEND
 ID = &lt;*default*&gt; command, are used to supplement the ones indicated
 in the SEND command, as required.
 
-![](send_a_file.GIF)
+![](/Images/TransferCFT/send_a_file.GIF)

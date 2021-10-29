@@ -17,4 +17,4 @@ of the alternate log file. Do not use logical names.
 
 Name of the alternate statistical file.
 
-[Return to Command index](../../)
+[Return to Command index](../)

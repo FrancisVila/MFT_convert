@@ -1,5 +1,5 @@
 {
-    "title": "Installation and operation IBM i",
+    "title": "IBM i: Installation and Operation",
     "linkTitle": "Installation and operation IBM i",
     "weight": "120"
 }This documentation provides information to aide you in installing, updating, upgrading, or migrating Transfer CFT.
@@ -49,4 +49,4 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 
 ## Support services
 
-The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The Axway Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email [support@axway.com](#) or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

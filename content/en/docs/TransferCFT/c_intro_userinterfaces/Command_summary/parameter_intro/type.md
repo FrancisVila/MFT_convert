@@ -125,33 +125,33 @@ TYPE ={ALL | DEST | PART | TCP}
 #### <span id="Type_table1"></span>Type table
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td data-bgcolor="#C0C0C0" data-valign="top"><p>Value </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="85%"><p>Meaning </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top"><p>ALL </p></td>
-<td data-valign="top" width="85%"><p>Used to query the general and network characteristics of
+   <tbody>
+      <tr class="odd">
+         <td data-bgcolor="#C0C0C0" data-valign="top">            <p>Value </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="85%">            <p>Meaning </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top">            <p>ALL </p>         </td>
+         <td data-valign="top" width="85%">            <p>Used to query the general and network characteristics of
 partners<br />
-Parameters of the PARTNER file</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top"><p>DEST </p></td>
-<td data-valign="top" width="85%"><p>Used to query the parameters configured in the CFTDEST
-command: concern the broadcasting lists </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top"><p>PART </p></td>
-<td data-valign="top" width="85%"><p>Used to query the parameters configured in the CFTPART
-command: description of the general data relative to partners </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top"><p>TCP</p></td>
-<td data-valign="top" width="85%"><p>Used to query the parameters configured in the CFTTCP command:
-TCP/IP network parameters associated with each partner supporting TCP/IP </p></td>
-</tr>
-</tbody>
+Parameters of the PARTNER file</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top">            <p>DEST </p>         </td>
+         <td data-valign="top" width="85%">            <p>Used to query the parameters configured in the CFTDEST
+command: concern the broadcasting lists </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top">            <p>PART </p>         </td>
+         <td data-valign="top" width="85%">            <p>Used to query the parameters configured in the CFTPART
+command: description of the general data relative to partners </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top">            <p>TCP</p>         </td>
+         <td data-valign="top" width="85%">            <p>Used to query the parameters configured in the CFTTCP command:
+TCP/IP network parameters associated with each partner supporting TCP/IP </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="type_CONFIG"></span>CONFIG
@@ -162,36 +162,36 @@ TYPE = {CAT | COM | INPUT | OUTPUT
 Defines the medium concerned.
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td data-bgcolor="#C0C0C0" data-valign="top" width="14%"><p>Value </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="62.746%"><p>Medium concerned </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="14%"><p>CAT </p></td>
-<td data-valign="top" width="62.746%"><p>Catalog file </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="14%"><p>COM </p></td>
-<td data-valign="top" width="62.746%"><p>Communication medium </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="14%"><p>INPUT </p></td>
-<td data-valign="top" width="62.746%"><p>Command input file </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="14%"><p>OUTPUT </p></td>
-<td data-valign="top" width="62.746%"><p>Report output file </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="14%"><p>PARM </p></td>
-<td data-valign="top" width="62.746%"><p>Parameter file </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="14%"><p>PART </p></td>
-<td data-valign="top" width="62.746%"><p>Partner file </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="14%">            <p>Value </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="62.746%">            <p>Medium concerned </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="14%">            <p>CAT </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Catalog file </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="14%">            <p>COM </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Communication medium </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="14%">            <p>INPUT </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Command input file </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="14%">            <p>OUTPUT </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Report output file </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="14%">            <p>PARM </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Parameter file </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="14%">            <p>PART </p>         </td>
+         <td data-valign="top" width="62.746%">            <p>Partner file </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="type_SWITCH"></span>SWITCH
@@ -212,106 +212,106 @@ Defines the switch action for CFTLOG or CFTACCNT. File types are:
     The SWITCH command stops statistics from being written on the current
     statistical file, switches the writing to the alternate statistical file,
     and then executes the procedure specified in the EXEC
-    parameter of the [CFTACCNT](../../../web_copilot_ui/conf_intro/cftaccnt) object.
+    parameter of the [CFTACCNT](../../about_cftutil/configuring_cft_start_here/cftaccnt) object.
 
 #### CFTEXT
 
 \[TYPE = {[see Type
-table below](#type_table) }\]
+table below](#Type_table) }\]
 
 Defines the parameters to extract.
 
 #### <span id="Type_table"></span>Type table
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td data-bgcolor="#C0C0C0" data-valign="top" width="15%"><p>Value </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="50%"><p>Meaning </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="35%"><p>Command</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>ALL </p></td>
-<td data-valign="top" width="50%"><p>All the parameter types of the CFTPARM and CFTPART files </p></td>
-<td data-valign="top" width="35%"><p> </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>ACCNT </p></td>
-<td data-valign="top" width="50%"><p>Description of the statistical files </p></td>
-<td data-valign="top" width="35%"><p>CFTACCNT </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>AUTH </p></td>
-<td data-valign="top" width="50%"><p>List of authorized files </p></td>
-<td data-valign="top" width="35%"><p>CFTAUTH </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>CAT </p></td>
-<td data-valign="top" width="50%"><p>Catalog definition </p></td>
-<td data-valign="top" width="35%"><p>CFTCAT </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>COM </p></td>
-<td data-valign="top" width="50%"><p>Description of <span>Transfer CFT</span> communication methods
- </p></td>
-<td data-valign="top" width="35%"><p>CFTCOM </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>IDF </p></td>
-<td data-valign="top" width="50%"><p>File "network" identifier </p></td>
-<td data-valign="top" width="35%"><p>CFTIDF </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>LOG </p></td>
-<td data-valign="top" width="50%"><p>Log file description </p></td>
-<td data-valign="top" width="35%"><p>CFTLOG </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>NET </p></td>
-<td data-valign="top" width="50%"><p>Network description </p></td>
-<td data-valign="top" width="35%"><p>CFTNET </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>PARM </p></td>
-<td data-valign="top" width="50%"><p>General parameters </p></td>
-<td data-valign="top" width="35%"><p>CFTPARM </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>PART </p></td>
-<td data-valign="top" width="50%"><p>Partner definition  </p></td>
-<td data-valign="top" width="35%"><p>CFTPART and <span>Transfer CFT</span> network </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>PROT </p></td>
-<td data-valign="top" width="50%"><p>Protocol definition </p></td>
-<td data-valign="top" width="35%"><p>CFTPROT </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>RECV </p></td>
-<td data-valign="top" width="50%"><p>Description of the files to be received </p></td>
-<td data-valign="top" width="35%"><p>CFTRECV </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>SEND </p></td>
-<td data-valign="top" width="50%"><p>Description of the files to be sent </p></td>
-<td data-valign="top" width="35%"><p>CFTSEND </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>XLATE </p></td>
-<td data-valign="top" width="50%"><p>Translation table definition </p></td>
-<td data-valign="top" width="35%"><p>CFTXLATE </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p>TCP </p></td>
-<td data-valign="top" width="50%"><p>TCP/IP partner definition </p></td>
-<td data-valign="top" width="35%"><p>CFTTCP </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%">UCONF</td>
-<td data-valign="top" width="50%">Unified configuration</td>
-<td data-valign="top" width="35%">CFTEXT</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="15%">            <p>Value </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="50%">            <p>Meaning </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="35%">            <p>Command</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>ALL </p>         </td>
+         <td data-valign="top" width="50%">            <p>All the parameter types of the CFTPARM and CFTPART files </p>         </td>
+         <td data-valign="top" width="35%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>ACCNT </p>         </td>
+         <td data-valign="top" width="50%">            <p>Description of the statistical files </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTACCNT </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>AUTH </p>         </td>
+         <td data-valign="top" width="50%">            <p>List of authorized files </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTAUTH </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>CAT </p>         </td>
+         <td data-valign="top" width="50%">            <p>Catalog definition </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTCAT </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>COM </p>         </td>
+         <td data-valign="top" width="50%">            <p>Description of <span>Transfer CFT</span> communication methods
+ </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTCOM </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>IDF </p>         </td>
+         <td data-valign="top" width="50%">            <p>File "network" identifier </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTIDF </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>LOG </p>         </td>
+         <td data-valign="top" width="50%">            <p>Log file description </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTLOG </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>NET </p>         </td>
+         <td data-valign="top" width="50%">            <p>Network description </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTNET </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>PARM </p>         </td>
+         <td data-valign="top" width="50%">            <p>General parameters </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTPARM </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>PART </p>         </td>
+         <td data-valign="top" width="50%">            <p>Partner definition  </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTPART and <span>Transfer CFT</span> network </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>PROT </p>         </td>
+         <td data-valign="top" width="50%">            <p>Protocol definition </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTPROT </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>RECV </p>         </td>
+         <td data-valign="top" width="50%">            <p>Description of the files to be received </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTRECV </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>SEND </p>         </td>
+         <td data-valign="top" width="50%">            <p>Description of the files to be sent </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTSEND </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>XLATE </p>         </td>
+         <td data-valign="top" width="50%">            <p>Translation table definition </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTXLATE </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p>TCP </p>         </td>
+         <td data-valign="top" width="50%">            <p>TCP/IP partner definition </p>         </td>
+         <td data-valign="top" width="35%">            <p>CFTTCP </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">UCONF         </td>
+         <td data-valign="top" width="50%">Unified configuration         </td>
+         <td data-valign="top" width="35%">CFTEXT         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="type_LISTPARM"></span>LISTPARM
@@ -328,98 +328,98 @@ TYPE can take the predefined values indicated in the Type table below.
 #### Type table
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td data-bgcolor="#C0C0C0" data-valign="top" width="19%"><p>Value </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="81%"><p>Definition </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>ACCNT </p></td>
-<td data-valign="top" width="81%"><p>Used to query statistical file parameters<br />
-These parameters are submitted when CFTACCNT commands are entered </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>ALL </p></td>
-<td data-valign="top" width="81%"><p>Used to query all the parameters indicated in the PARAMETER
-file </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>AUTH </p></td>
-<td data-valign="top" width="81%"><p>Used to query file authorization lists<br />
-These lists are customized by the CFTAUTH commands </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>CAT </p></td>
-<td data-valign="top" width="81%"><p>Used to query catalog parameters<br />
-These parameters are submitted when CFTCAT commands are entered </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>COM </p></td>
-<td data-valign="top" width="81%"><p>Used to query communication media parameters<br />
-These parameters are submitted when CFTCOM commands are entered </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>IDF </p></td>
-<td data-valign="top" width="81%"><p>Used to query file "network" identifiers<br />
-Identifiers are customized by the CFTIDF commands </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>LOG </p></td>
-<td data-valign="top" width="81%"><p>Used to query log file parameters<br />
-These parameters are submitted when CFTLOG commands are entered </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>NET </p></td>
-<td data-valign="top" width="81%"><p>Used to query network characteristic parameters<br />
+   <tbody>
+      <tr class="odd">
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="19%">            <p>Value </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="81%">            <p>Definition </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>ACCNT </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query statistical file parameters<br />
+These parameters are submitted when CFTACCNT commands are entered </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>ALL </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query all the parameters indicated in the PARAMETER
+file </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>AUTH </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query file authorization lists<br />
+These lists are customized by the CFTAUTH commands </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>CAT </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query catalog parameters<br />
+These parameters are submitted when CFTCAT commands are entered </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>COM </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query communication media parameters<br />
+These parameters are submitted when CFTCOM commands are entered </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>IDF </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query file "network" identifiers<br />
+Identifiers are customized by the CFTIDF commands </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>LOG </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query log file parameters<br />
+These parameters are submitted when CFTLOG commands are entered </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>NET </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query network characteristic parameters<br />
 These parameters are submitted when CFTNET commands are entered and differ
-according to the type of network configured </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>PARM </p></td>
-<td data-valign="top" width="81%"><p>Used to query general parameters<br />
-These parameters are submitted when CFTPARM commands are entered </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>PROT </p></td>
-<td data-valign="top" width="81%"><p>Used to query protocol parameters<br />
+according to the type of network configured </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>PARM </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query general parameters<br />
+These parameters are submitted when CFTPARM commands are entered </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>PROT </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query protocol parameters<br />
 These parameters are submitted when CFTPROT commands are entered and differ
-according to the protocol configured </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>RECV </p></td>
-<td data-valign="top" width="81%"><p>Used to query the parameters of the files to be received<br />
-These parameters are submitted when CFTRECV commands are entered </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>SEND </p></td>
-<td data-valign="top" width="81%"><p>Used to query the parameters of the files to be sent<br />
-These parameters are submitted when CFTSEND commands are entered </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>XLATE </p></td>
-<td data-valign="top" width="81%"><p>Used to query translation tables<br />
-Translation tables are customized by the CFTXLATE object</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>CFTFILE</p></td>
-<td data-valign="top" width="81%"><p>Used to create, empty, or delete <span>Transfer CFT</span> files</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>LISTCAT</p></td>
-<td data-valign="top" width="81%"><p>Used to query the information associated with the selected
-transfers, recorded in the <span>Transfer CFT</span> catalog</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>DISPLAY</p></td>
-<td data-valign="top" width="81%"><p>Used to query the information as with the LISTCAT command.
+according to the protocol configured </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>RECV </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query the parameters of the files to be received<br />
+These parameters are submitted when CFTRECV commands are entered </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>SEND </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query the parameters of the files to be sent<br />
+These parameters are submitted when CFTSEND commands are entered </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>XLATE </p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query translation tables<br />
+Translation tables are customized by the CFTXLATE object</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>CFTFILE</p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to create, empty, or delete <span>Transfer CFT</span> files</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>LISTCAT</p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query the information associated with the selected
+transfers, recorded in the <span>Transfer CFT</span> catalog</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>DISPLAY</p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to query the information as with the LISTCAT command.
 It uses an external XML file that lists and describes customized models.
-These models are used to format the output</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>ABOUT</p></td>
-<td data-valign="top" width="81%"><p>Used to display the <span>Transfer CFT</span> computer characteristics</p></td>
-</tr>
-</tbody>
+These models are used to format the output</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>ABOUT</p>         </td>
+         <td data-valign="top" width="81%">            <p>Used to display the <span>Transfer CFT</span> computer characteristics</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### RECONFIG
@@ -441,4 +441,4 @@ Enter a name for the object.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../../Command_summary.htm)

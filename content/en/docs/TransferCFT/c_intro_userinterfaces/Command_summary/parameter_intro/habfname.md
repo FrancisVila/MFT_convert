@@ -16,4 +16,4 @@ file.  
 For the system security to be activated, this parameter must be defined
 for the parameter, partner and catalog files.
 
-[Return to Command index](../../)
+[Return to Command index](../)

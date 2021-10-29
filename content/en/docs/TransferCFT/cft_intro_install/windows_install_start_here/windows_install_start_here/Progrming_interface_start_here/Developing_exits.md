@@ -1,10 +1,8 @@
 {
-    "title": "Developing exits",
+    "title": "Developing  exits",
     "linkTitle": "Developing exits",
     "weight": "290"
-}# <span id="Developing_exits"></span>Developing exits
-
-This topic describes using exits
+}This topic describes using exits
 in Transfer CFT Windows. Every Transfer CFT is supplied
 with a toolkit that enables you to develop your own EXITs
 in C. This topic provides additional information
@@ -26,7 +24,7 @@ You are strongly advised to do the following before starting the development
 work itself:
 
 1.  Read the general section relating to
-    the [developing exits](../../../../../app_integration_intro/managing_exits).
+    the [developing exits](../../../../app_integration_intro/managing_exits).
 2.  Read this section.
 3.  Familiarize yourself with the sample sources in `runtime\src\exit`.
 4.  Reconstruct the executable
@@ -56,7 +54,7 @@ This section describes:
     CFT parameters so that it will take account of the different types of
     exits
 
-The Transfer CFT *[Exit list guide](#developing_exits)* provides a
+The Transfer CFT *[Exit list guide](#Developing_exits)* provides a
 description of a special EXIT file that is already developed
 and supplied with Transfer CFT.
 

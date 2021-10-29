@@ -16,4 +16,4 @@ bytes (1024 characters).
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

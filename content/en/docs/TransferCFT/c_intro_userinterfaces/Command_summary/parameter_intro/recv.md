@@ -13,6 +13,6 @@ for this resource. In general, the default value should not be changed.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

@@ -4,4 +4,4 @@
     "weight": "190"
 }You can start, stop, or restart all or some Transfer CFT nodes from this page.
 
-![](administration.png)
+![](/Images/TransferCFT/administration.png)

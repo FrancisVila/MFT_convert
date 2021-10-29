@@ -17,7 +17,7 @@ sent.
 To transfer a record longer than SRUSIZE - 6, the segmentation operation
 is implemented.
 
-Refer to the Transfer CFT *[*Protocols sections*](../../../../protocols_start_here)*
+Refer to the Transfer CFT *[*Protocols sections*](../../../protocols_start_here)*
 to learn more about optimizing these values.
 
-[Return to Command index](../../)
+[Return to Command index](../)

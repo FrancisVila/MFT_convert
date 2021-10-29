@@ -1,10 +1,8 @@
 {
-    "title": "Extract file data",
+    "title": "CFTEXT  - Extract file data ",
     "linkTitle": "Extract file data",
     "weight": "360"
-}# <span id="kanchor82"></span><span id="CFTEXT___Extracting_data"></span> CFTEXT - Extract file data
-
-You can use the <span id="About_the_CFTEXT_Command"></span>CFTEXT
+}You can use the <span id="About_the_CFTEXT_Command"></span>CFTEXT
 object to extract Parameter and Partner file data. CFTEXT generates, as output, a configuration command text used to reconstitute
 the data of these files.
 
@@ -25,89 +23,89 @@ output or else redefine the output medium via the command CONFIG TYPE
 
 All parameter values are in UPPER CASE letters.
 
-Command syntax: [CFTEXT](../../../../c_intro_userinterfaces/command_summary)
+Command syntax: [CFTEXT](../../../c_intro_userinterfaces/command_summary)
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td colspan="2"><p>Use this command to extract all or part of the data from
-the parameter and partner files.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> </p></td>
-<td width="49.916%"><p>Identifier of the parameter to be extracted.</p>
-<p>The value of this identifier is the value of the ID of
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td colspan="2">            <p>Use this command to extract all or part of the data from
+the parameter and partner files.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/id.htm">ID</a> </p>         </td>
+         <td width="49.916%">            <p>Identifier of the parameter to be extracted.</p>
+            <p>The value of this identifier is the value of the ID of
 the command CFTxxxx corresponding to the TYPE parameter; this allows the
 extraction to be limited:</p>
-<ul>
-<li>To an
-explicitly indicated value (identifier)</li>
-<li>Or to
+            <ul>
+               <li>To an
+explicitly indicated value (identifier)               </li>
+               <li>Or to
 a group of values designated through the use of a mask using "wildcard"
-characters</li>
-</ul>
-<p>When this parameter is not defined, all the occurrences
-of the parameter type (defined by TYPE) are extracted.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/content">CONTENT</a></td>
-<td width="49.916%"><p>Level of content included in output:</p>
-<ul>
-<li>BRIEF = Empty or default value parameters are omitted</li>
-<li>FULL = All parameters are included</li>
-</ul></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fout">FOUT</a> </p></td>
-<td width="49.916%"><p>Name of the file to which the command’s standard output
+characters               </li>
+            </ul>
+            <p>When this parameter is not defined, all the occurrences
+of the parameter type (defined by TYPE) are extracted.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td><a href="../../CFTUTIL/Parameter_index/content.htm">CONTENT</a>         </td>
+         <td width="49.916%">            <p>Level of content included in output:</p>
+            <ul>
+               <li>BRIEF = Empty or default value parameters are omitted               </li>
+               <li>FULL = All parameters are included               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/fout.htm">FOUT</a> </p>         </td>
+         <td width="49.916%">            <p>Name of the file to which the command’s standard output
 will be redirected.</p>
-<p>This generated file can then be interpreted directly by
+            <p>This generated file can then be interpreted directly by
 CFTUTIL.</p>
-<p>When this parameter is not filled, all occurrences of the
-type parameter (defined in the TYPE parameter) are extracted.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fparm">FPARM</a></p>
-<p>{see the comment |
+            <p>When this parameter is not filled, all occurrences of the
+type parameter (defined in the TYPE parameter) are extracted.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/fparm.htm">FPARM</a></p>
+            <p>{see the comment |
 filename} </p>
-<p>Except for TYPE = PART</p></td>
-<td width="49.916%"><p>Name of the Parameter input file.</p>
-<p>Default value: default name of the Parameter file defined
+            <p>Except for TYPE = PART</p>         </td>
+         <td width="49.916%">            <p>Name of the Parameter input file.</p>
+            <p>Default value: default name of the Parameter file defined
 for CFTUTIL for the system concerned. Refer to the Transfer CFT <em>Operations
-Guide</em> that corresponds with your OS.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fpart">FPART</a> </p>
-<p>{see the
+Guide</em> that corresponds with your OS.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/fpart.htm">FPART</a> </p>
+            <p>{see the
 comment | filename}]</p>
-<p>For TYPE = {ALL | PART}</p></td>
-<td width="49.916%"><p>Name of the Partner input file.</p>
-<p>Default value: default
+            <p>For TYPE = {ALL | PART}</p>         </td>
+         <td width="49.916%">            <p>Name of the Partner input file.</p>
+            <p>Default value: default
 name of the Partner file defined for CFTUTIL for the system concerned.
 Refer to the Transfer CFT <span>Operations Guide</span> that corresponds with
-your OS.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> </p></td>
-<td width="49.916%"><p>This parameter defines the parameter type to be extracted.</p></td>
-</tr>
-</tbody>
+your OS.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p><a href="../../CFTUTIL/Parameter_index/type.htm">TYPE</a> </p>         </td>
+         <td width="49.916%">            <p>This parameter defines the parameter type to be extracted.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example 1
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="12%"><p>CFTEXT</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td width="12%">            <p>CFTEXT</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Extraction of all data from the CFTPARM parameter and CFTPART
@@ -116,16 +114,16 @@ partner files.
 Example 2
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXT     TYPE    
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXT     TYPE    
 =     SEND,<br />
      ID     =    
 FACT,<br />
      FPARM     =    
-mycftparm</td>
-</tr>
-</tbody>
+mycftparm         </td>
+      </tr>
+   </tbody>
 </table>
 
 Extraction of data concerning the model file to be sent
@@ -134,13 +132,13 @@ Extraction of data concerning the model file to be sent
 Example 3
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td colspan="3" width="12%"><p>CFTEXT</p>
-<p>TYPE = RECV,</p>
-<p>ID = FACT*</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td colspan="3" width="12%">            <p>CFTEXT</p>
+            <p>TYPE = RECV,</p>
+            <p>ID = FACT*</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Extraction of the data concerning the model files to be
@@ -152,13 +150,13 @@ your OS.
 Example 4
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td colspan="2" width="12%"><p>CFTEXT</p>
-<p>TYPE = PART,</p>
-<p>ID = MAGA*</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td colspan="2" width="12%">            <p>CFTEXT</p>
+            <p>TYPE = PART,</p>
+            <p>ID = MAGA*</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Extraction of the partner data corresponding to the CFTPART
@@ -172,9 +170,9 @@ Transfer
 CFT application definition:
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="12%"><p>CFTEXT TYPE = APPL,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td width="12%">            <p>CFTEXT TYPE = APPL,</p>         </td>
+      </tr>
+   </tbody>
 </table>

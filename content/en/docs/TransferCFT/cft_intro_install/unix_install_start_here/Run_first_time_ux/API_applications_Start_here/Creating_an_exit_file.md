@@ -1,13 +1,11 @@
 {
-    "title": "Creating an exit file",
+    "title": "Creating  an exit file",
     "linkTitle": "Creating an exit file",
     "weight": "240"
-}# <span id="Creating_an_exit_file"></span>Creating an exit file
-
-The example described in this topic was designed to operate using the cft-tcp.conf configuration example located in &lt;installdir>/runtime/conf.
+}The example described in this topic was designed to operate using the cft-tcp.conf configuration example located in &lt;installdir>/runtime/conf.
 For this example, you should have already customized the
-file using the instructions in [*Running Transfer
-CFT for the First Time*](running_cft_for_the_first_time_unix.htm).
+file using the instructions in *Running Transfer
+CFT for the First Time*.
 
 ## Application components
 

@@ -1,8 +1,8 @@
 {
-    "title": "Configure the Transfer CFT SFTP server",
+    "title": "Configure Transfer CFT as an SFTP server",
     "linkTitle": "Configure the Transfer CFT SFTP server",
     "weight": "160"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}T**he supported operating systems are listed in the** [Platform features](../../datasheet) **table.**
 
 This section describes how to set up Transfer CFT to use as a server with the SFTP protocol.
 
@@ -28,32 +28,32 @@ The following parameters are used for SFTP protocol:
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT id = SFTP,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT id = SFTP,</p>
 <blockquote>
-<p>TYPE = 'SFTP',</p>
-<p>SSH = 'SSH_DEFAULT',</p>
-<p>SAP = '1763',</p>
-<p>NET = NET0,</p>
+            <p>TYPE = 'SFTP',</p>
+            <p>SSH = 'SSH_DEFAULT',</p>
+            <p>SAP = '1763',</p>
+            <p>NET = NET0,</p>
 </blockquote>
-<p>    ...</p></td>
-</tr>
-</tbody>
+            <p>    ...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Add the server key in the PKI database (PKIKEYGEN or PKIKEY)
 
-You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see [Generate and manage keys](../new_pki_keys_use).
+You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see [Generate and manage keys](new_pki_keys_use).
 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>PKIKEYGEN id=MY_KEY, keylen=2048</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>PKIKEYGEN id=MY_KEY, keylen=2048</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Define the SSH server profile (CFTSSH)
@@ -68,16 +68,16 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSH id = SSH_DEFAULT,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSH id = SSH_DEFAULT,</p>
 <blockquote>
-<p>DIRECT = SERVER,</p>
-<p>SRVPRIVKEY = MY_KEY,</p>
-<p>...</p>
-</blockquote></td>
-</tr>
-</tbody>
+            <p>DIRECT = SERVER,</p>
+            <p>SRVPRIVKEY = MY_KEY,</p>
+            <p>...</p>
+</blockquote>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Define a partner (CFTPART) for a flow
@@ -88,18 +88,18 @@ A CFTPART object represents an application, with one SFTP user per application 
 -   PROT: Refers to the SFTP protocol
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The following sections detail authentication for the partner in flows.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The following sections detail authentication for the partner in flows.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Set the type of authentication
 
-Select the appropriate type of authentication to use from the options listed in this section. For more information, please see [SSH concepts](../sftp_keys_concepts)
+Select the appropriate type of authentication to use from the options listed in this section. For more information, please see [SSH concepts](sftp_keys_concepts)
 (SFTP).
 
 ### <span id="Password"></span>Password authentication
@@ -113,36 +113,36 @@ There are two ways for you to configure how the server will check the client pas
 -   Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in uconf:cft.server.authentication\_method is used.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you do not define NRPASSW, there is no password authentication.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you do not define NRPASSW, there is no password authentication.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = USER1,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = USER1,</p>
 <blockquote>
-<p>prot = SFTP,</p>
-<p>nrpart = "user1",</p>
-<p>nrpassw = "TheUser1Password", ...</p>
+            <p>prot = SFTP,</p>
+            <p>nrpart = "user1",</p>
+            <p>nrpassw = "TheUser1Password", ...</p>
 </blockquote>
-<p>CFTTCP id = USER1,</p>
+            <p>CFTTCP id = USER1,</p>
 <blockquote>
-<p>host = 127.0.0.1,
+            <p>host = 127.0.0.1,
 ...</p>
-</blockquote></td>
-</tr>
-</tbody>
+</blockquote>         </td>
+      </tr>
+   </tbody>
 </table>
 
 When using password authentication
 
--       ![Client Login arrow to NRPART, Ciient Password arrow to server NRPASSW](sftp_server_double.png)
+-       ![Client Login arrow to NRPART, Ciient Password arrow to server NRPASSW](/Images/TransferCFT/sftp_server.png)
 
 ### <span id="Key"></span>Key authentication
 
@@ -158,77 +158,77 @@ Which CLIPUBKEY is used for the SSH profile is determined as follows:
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = USER2,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = USER2,</p>
 <blockquote>
-<p>ssh = SSH_USER2,</p>
-<p>prot = SFTP,</p>
-<p>nrpart = "user2", ...</p>
+            <p>ssh = SSH_USER2,</p>
+            <p>prot = SFTP,</p>
+            <p>nrpart = "user2", ...</p>
 </blockquote>
-<p> </p>
-<p>CFTTCP id = USER2,</p>
-<p>host = 127.0.0.1, ...</p>
-<p> </p>
-<p>CFTSSH id = SSH_USER2,</p>
+            <p> </p>
+            <p>CFTTCP id = USER2,</p>
+            <p>host = 127.0.0.1, ...</p>
+            <p> </p>
+            <p>CFTSSH id = SSH_USER2,</p>
 <blockquote>
-<p>direct = SERVER,</p>
-<p>clipubkey = USER2, ...</p>
-</blockquote></td>
-</tr>
-</tbody>
+            <p>direct = SERVER,</p>
+            <p>clipubkey = USER2, ...</p>
+</blockquote>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not forget that you must import the client's public key in the server's database as shown below:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not forget that you must import the client's public key in the server's database as shown below:         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>PKIUTIL pkikey id='USER2', ikname='user2.pub', ikform='ssh'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>PKIUTIL pkikey id='USER2', ikname='user2.pub', ikform='ssh'         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Password and key authentication
 
 When using **password and key** authentication:
 
--   NRPASSW: Use one of the password authentication methods to configure how the server will check the client password, as described [here](#password)
--   CLIPUBKEY: To configure how the server will check the client key, as described [here](#key)
+-   NRPASSW: Use one of the password authentication methods to configure how the server will check the client password, as described [here](#Password)
+-   CLIPUBKEY: To configure how the server will check the client key, as described [here](#Key)
 
 <!-- -->
 
 -   <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTPART id = USER3,</p>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTPART id = USER3,</p>
     <blockquote>
-    <p>ssh = USER3,</p>
-    <p>prot = SFTP,</p>
-    <p>nrpart = "user3",</p>
-    <p>nrpassw = "TheUser3Password",...</p>
+                <p>ssh = USER3,</p>
+                <p>prot = SFTP,</p>
+                <p>nrpart = "user3",</p>
+                <p>nrpassw = "TheUser3Password",...</p>
     </blockquote>
-    <p> </p>
-    <p>CFTTCP id = USER3,</p>
+                <p> </p>
+                <p>CFTTCP id = USER3,</p>
     <blockquote>
-    <p>host = 127.0.0.1, ...</p>
+                <p>host = 127.0.0.1, ...</p>
     </blockquote>
-    <p> </p>
-    <p>CFTSSH id = USER3,</p>
+                <p> </p>
+                <p>CFTSSH id = USER3,</p>
     <blockquote>
-    <p>direct = SERVER,</p>
-    <p>clipubkey = USER3, ...</p>
-    </blockquote></td>
-    </tr>
-    </tbody>
+                <p>direct = SERVER,</p>
+                <p>clipubkey = USER3, ...</p>
+    </blockquote>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ### Define a default flow model for a partner (IDF)
@@ -236,21 +236,21 @@ When using **password and key** authentication:
 This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In Transfer CFT, this is the CFTPART default IDF.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPART id=partner,IDF=&lt;default_model_for_this_partner&gt;,…</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPART id=partner,IDF=&lt;default_model_for_this_partner&gt;,…         </td>
+      </tr>
+   </tbody>
 </table>
 
 If the remote path is absolute (root directory), Transfer CFT uses the root directory as the IDF. In this example, flow01 corresponds to the IDF for this partner.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>put LocalFile01.txt /flow01/RemoteFile01.txt</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>put LocalFile01.txt /flow01/RemoteFile01.txt         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Define the authorization list for a partner (CFTAUTH)
@@ -258,62 +258,62 @@ If the remote path is absolute (root directory), Transfer CFT uses the root dire
 In the CFTAUTH command, the IDF parameter designates a list
 of authorized IDFs for send/receive transfers with a defined partner. You can use these parameters to limit the visibility for a given user, when in server mode, to a logical representation of available flows. The SAUTH/RAUTH in the partner definition refers back to the CFTAUTH ID.
 
-For more information, see [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
+For more information, see [CFTAUTH](../../CFTUTIL/Conf/CFTAUTH.htm).
 
 In the following example, defining a CFTAUTH creates visibility for **flow01** and **flow02** for the user2 client.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART ID=user2, IDF=(flow02), NRPART="user2", SAUTH=AUTH2, RAUTH=AUTH2...</p>
-<p>CFTAUTH ID=auth2, IDF=(flow01,flow02)</p>
-<p> </p>
-<p>CFTSEND IDF=flow01, IMPL=YES, workingdir=flow1_space, fname=&amp;nfname</p>
-<p> </p>
-<p>CFTSEND IDF=flow02, IMPL=YES, workingdir=flow2_space, fname=&amp;nfname</p>
-<p>CFTRECV IDF=flow02, workingdir=user2_space, fname=&amp;nfname</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART ID=user2, IDF=(flow02), NRPART="user2", SAUTH=AUTH2, RAUTH=AUTH2...</p>
+            <p>CFTAUTH ID=auth2, IDF=(flow01,flow02)</p>
+            <p> </p>
+            <p>CFTSEND IDF=flow01, IMPL=YES, workingdir=flow1_space, fname=&amp;nfname</p>
+            <p> </p>
+            <p>CFTSEND IDF=flow02, IMPL=YES, workingdir=flow2_space, fname=&amp;nfname</p>
+            <p>CFTRECV IDF=flow02, workingdir=user2_space, fname=&amp;nfname</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The view for a third-party software client would resemble the following (where the flow identifier displays, but not the physical folder name). Note that in this example, the `workingdir `is relative to the runtime directory.
 
-> ![](sftp_server_double.png)
+> ![](/Images/TransferCFT/sftp_view_client.png)
 
 If you enter an \* (asterisk),
 all model files (IDFs) can be used. If the provided IDF is not in one of the two lists, the connection is rejected and the Transfer CFT client returns a DIAGI 411.
 
-See the examples in [SFTP use case examples](../cftssh_example).
+See the examples in [SFTP use case examples](cftssh_example).
 
 If the provided IDF does not belong to either the SAUTH or RAUTH list, on the server side, the connection is rejected and the Transfer CFT client returns a DIAGI 413.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For a <span>put </span>command on the client side, the IDF must be defined in the RAUTH on the server side. For a <span>get </span>command, the IDF must be defined in the SAUTH on the server side.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For a <span>put </span>command on the client side, the IDF must be defined in the RAUTH on the server side. For a <span>get </span>command, the IDF must be defined in the SAUTH on the server side.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Server mode password authentication using restricted flow models
 
-![](sftp_server_double.png)
+![](/Images/TransferCFT/sftp_cft.jpg)
 
 Server mode key and password authentication using restricted flow models
 
-![](sftp_server_double.png)
+![](/Images/TransferCFT/sftp_server_double.png)
 
 ### Creating send and receive templates (CFTSEND/CFTRECV)
 
@@ -338,15 +338,15 @@ Example
 In this example, user1 can perform a get or put command using the space (WORKINGDIR) defined for user1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART ID=user1, IDF=flow01, NRPART="user1",...</p>
-<p> </p>
-<p>CFTSEND IDF=flow01, IMPL=YES, workingdir=user1_space, fname=&amp;nfname</p>
-<p> </p>
-<p>CFTRECV IDF=flow01, workingdir=user1_space, fname=&amp;nfname</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART ID=user1, IDF=flow01, NRPART="user1",...</p>
+            <p> </p>
+            <p>CFTSEND IDF=flow01, IMPL=YES, workingdir=user1_space, fname=&amp;nfname</p>
+            <p> </p>
+            <p>CFTRECV IDF=flow01, workingdir=user1_space, fname=&amp;nfname</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Transcod"></span>Transcoding parameters
@@ -357,8 +357,8 @@ You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where t
 -   A transfer restart is forbidden if the FCHARSET/NCHARSET conversion is done at the server level.
 -   The NCODE parameter is available in CFTRECV as with CFTSEND.
 
-See also, [Transcoding concepts](..//transfercft/protocols_start_here/sftp_intro).
+See also, [Transcoding concepts](transfercft/protocols_start_here/sftp_intro).
 
 Related topics
 
-[CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)
+[CFTSSH - Security profile](../../CFTUTIL/Conf/CFTSSH.htm)

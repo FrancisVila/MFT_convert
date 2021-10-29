@@ -10,4 +10,4 @@ Maximum length of 512.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

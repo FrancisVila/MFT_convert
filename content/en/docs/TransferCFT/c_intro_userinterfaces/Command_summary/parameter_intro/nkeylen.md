@@ -18,4 +18,4 @@ of sequential records.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

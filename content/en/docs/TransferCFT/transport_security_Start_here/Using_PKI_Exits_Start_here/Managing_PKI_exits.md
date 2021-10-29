@@ -1,29 +1,27 @@
 {
-    "title": "Managing PKI exits",
+    "title": "Managing  PKI exits",
     "linkTitle": "Managing PKI exits",
     "weight": "240"
-}# <span id="Step_Properties"></span>Managing PKI exits
-
-This topic describes the steps involved in a PKI exit, as well as how
+}This topic describes the steps involved in a PKI exit, as well as how
 PKI exits work in Transfer CFT transport security. PKI processes and concepts
 include:
 
 -   [PKI
-    exit fields](#pki_exit_fields)
+    exit fields](#PKI_exit_fields)
 -   [Creating
-    an SSL task](#creating_an_ssl_task)
+    an SSL task](#Creating_an_SSL_task)
 -   [Terminating
-    an SSL task](#terminating_an_ssl_task)
+    an SSL task](#Terminating_an_SSL_task)
 -   [Opening
-    an SSL task](#opening_an_ssl_task)
+    an SSL task](#Opening_an_SSL_task)
 -   [Sending
-    a CA list](#getting_a_ca_list_to_be_sent)
+    a CA list](#Getting_a_CA_list_to_be_sent)
     -   [Getting
-        a certificate to be sent](#getting_a_certificate_to_be_sent)
+        a certificate to be sent](#Getting_a_certificate_to_be_sent)
     -   [Checking
-        a received certificate](#checking_a_received_certificate)
+        a received certificate](#Checking_a_received_certificate)
 -   [Encrypting with the private
-    key](#encrypting_with_the_private_key)
+    key](#Encrypting_with_the_private_key)
 
 An exit is a point in a software program at
 which a user-developed program can take control of program processes.
@@ -99,7 +97,7 @@ cftpkie function must respect when building the list.
 
 CA list format
 
-<img src="Image1879.gif" width="469" height="352" alt="Format of the certificate showing the corresponding byte for each element" />
+<img src="/Images/TransferCFT/Image1876.gif" width="469" height="352" alt="Format of the certificate showing the corresponding byte for each element" />
 
 The only type of certificate supported by Transfer CFT to date is RSA.
 The first two bytes must therefore be set to 1 (list length = 1) and 1
@@ -120,7 +118,7 @@ must respect when building the certificate.
 
 Format of a certificate chain to be sent
 
-<img src="Image1879.gif" width="471" height="353" alt="View of bytes for DER encoding" />
+<img src="/Images/TransferCFT/Image1877.gif" width="471" height="353" alt="View of bytes for DER encoding" />
 
 ### <span id="Checking_a_received_certificate"></span>Checking a received certificate
 
@@ -138,16 +136,16 @@ Examples of the main error codes are shown below and are followed by
 the decimal value in parenthesis:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>handshake_failure(40)          bad_certificate(42)          unsupported_certificate(43)<br />
+   <tbody>
+      <tr class="odd">
+         <td>handshake_failure(40)          bad_certificate(42)          unsupported_certificate(43)<br />
 certificate_revoked(44)          certificate_expired(45)          certificate_unknown(46)<br />
 illegal_parameter     (47)          unknown_ca(48)          access_denied(49)<br />
 decode_error(50)              
 decrypt_error(51)          export_restriction(60)<br />
-insufficient_security(71)          internal_error(80)          user_canceled(90)</td>
-</tr>
-</tbody>
+insufficient_security(71)          internal_error(80)          user_canceled(90)         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Encrypting_with_the_private_key"></span>Encrypting with the private key
@@ -215,7 +213,7 @@ The following figure reviews the PKI exit phases for the server mode.
 
 PKI Exit Phases in Server Mode
 
-<img src="Image1879.gif" width="477" height="358" alt="SSL task execution beginning with a handshake" />
+<img src="/Images/TransferCFT/Image1878.gif" width="477" height="358" alt="SSL task execution beginning with a handshake" />
 
 The GetCAList and CheckCertificate phases only exist if
 the client must be authenticated.
@@ -227,7 +225,7 @@ The following figure reviews the PKI exit phases for the client mode.
 
 PKI exit phases in client mode
 
-<img src="Image1879.gif" width="472" height="354" alt="SSL Task execution from handshake to the end of the SSL task" />
+<img src="/Images/TransferCFT/Image1879.gif" width="472" height="354" alt="SSL Task execution from handshake to the end of the SSL task" />
 
 The GetCertificate phase only exists if the client must be authenticated.
 The server determines whether the client must be authenticated. If the

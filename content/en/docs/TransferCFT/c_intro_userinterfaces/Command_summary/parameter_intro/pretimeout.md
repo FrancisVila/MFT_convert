@@ -1,6 +1,6 @@
 {
-    "title": "to be deleted",
-    "linkTitle": "to be deleted",
+    "title": "Title undetermined",
+    "linkTitle": "Title undetermined",
     "weight": "2710"
 }### pretimeout
 
@@ -10,4 +10,4 @@
 
 Timeout for switching the phase step to K if no END is received during preprocessing.
 
-[Return to Command index](../../)
+[Return to Command index](../)

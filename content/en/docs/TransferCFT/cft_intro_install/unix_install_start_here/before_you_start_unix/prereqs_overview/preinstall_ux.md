@@ -1,5 +1,5 @@
 {
-    "title": "Unix-specific prerequisies",
+    "title": "UNIX specific requirements",
     "linkTitle": "Unix-specific prerequisies",
     "weight": "160"
 }UNIX users are required to have Korn Shell (ksh) installed on all UNIX machines.

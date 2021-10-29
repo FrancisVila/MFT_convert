@@ -25,4 +25,4 @@ is used for the outgoing call.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

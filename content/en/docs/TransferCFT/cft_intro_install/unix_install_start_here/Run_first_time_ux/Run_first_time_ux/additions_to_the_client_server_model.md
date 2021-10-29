@@ -1,10 +1,8 @@
 {
-    "title": "Client and server variable additions",
+    "title": "Client/server  variable additions",
     "linkTitle": "Client and server variable additions",
     "weight": "290"
-}# <span id="Client_server_additions"></span>Client/server variable additions
-
-To allow recent clients to dialog with older servers, several additions
+}To allow recent clients to dialog with older servers, several additions
 have been made to the environment for Transfer CFT releases on UNIX systems.
 This topic describes the additional
 environmental variables for the Client/server model.

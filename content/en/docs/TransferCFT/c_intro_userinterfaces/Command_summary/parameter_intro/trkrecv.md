@@ -9,7 +9,7 @@
 **\[TRKRECV = {** **UNDEFINED
 |** **ALL | NO | SUMMARY }\]**
 
-Specifications concerning transfers via CFTRECV for which the [trk](../trk)
+Specifications concerning transfers via CFTRECV for which the [trk](trk)
 value is not defined.
 
 Select one of the following options:
@@ -25,4 +25,4 @@ Select one of the following options:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

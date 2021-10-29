@@ -1,24 +1,22 @@
 {
-    "title": "Requester transfer",
+    "title": "Requester  transfer",
     "linkTitle": "Requester transfer",
     "weight": "210"
-}# <span id="Requester_transfer"></span>Requester transfer
-
-A requester transfer involves the following steps:
+}A requester transfer involves the following steps:
 
 -   [Registering
-    the request](#registering_the_request)
+    the request](#Registering_the_request)
 -   [Activating
-    the transfer](#activating_a_transfer)
+    the transfer](#Activating_a_transfer)
 -   [Connecting
-    to the network](#connecting_to_the_network)
+    to the network](#Connecting_to_the_network)
 -   [Exchanging
-    protocol information](#exchanging_protocol_information)
+    protocol information](#Exchanging_protocol_information)
 -   [Creating
-    the file](#creating_the_file)
+    the file](#Creating_the_file)
 -   [Transferring
-    data](#transferring_data)
--   [Disconnecting](#disconnecting)
+    data](#Transferring_data)
+-   [Disconnecting](#Disconnecting)
 
 ### <span id="Registering_the_request"></span>Registering the request
 
@@ -101,7 +99,7 @@ or K state.
 
 In general, Transfer CFT uses a SAP sent at the time the network
 connection is made, to inform the partner of the dialog protocol. For
-more information see the [SAP](../../../c_intro_userinterfaces/command_summary/parameter_intro/sap)
+more information see the [SAP](../../CFTUTIL/Parameter_index/sap.htm)
 parameter of the CFTPART object.
 
 ### <span id="Exchanging_protocol_information"></span>Exchanging protocol information
@@ -124,7 +122,7 @@ transfer may fail, in particular if:
 
 In these cases, the catalog entry changes to the H or K state, according
 to the severity of the error. The data exchanged during this phase differs
-according to the protocol. See [Protocols.](../../../protocols_start_here)
+according to the protocol. See [Protocols.](../../Prots/Protocols_start_here.htm)
 
 ### <span id="Creating_the_file"></span>Creating the file
 
@@ -178,4 +176,4 @@ is cut after the expiration of the associated hold time-out. According
 to the protocol, the monitor parameter setting allows a network session
 to be held open to permit several transfers to be made in sequence. Network
 disconnection is at the initiative of the requesting Transfer CFT or the server
-Transfer CFT. See the [DISCTD](../../../c_intro_userinterfaces/command_summary/parameter_intro/disctd) and [DISCTS](../../../c_intro_userinterfaces/command_summary/parameter_intro/discts) parameters of the CFTPROT command.
+Transfer CFT. See the [DISCTD](../../CFTUTIL/Parameter_index/disctd.htm) and [DISCTS](../../CFTUTIL/Parameter_index/discts.htm) parameters of the CFTPROT command.

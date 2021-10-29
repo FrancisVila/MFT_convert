@@ -12,4 +12,4 @@ This parameter is obsolete for this command.
 
 Trace level.
 
-[Return to Command index](../../)
+[Return to Command index](../)

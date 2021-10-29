@@ -10,4 +10,4 @@
 
 Define the timeout to reach. This is the maximum time in seconds to wait.
 
-[Return to Command index](../../)
+[Return to Command index](../)

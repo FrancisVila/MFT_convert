@@ -1,10 +1,8 @@
 {
-    "title": "Using the communication area",
+    "title": "Using  the communication area ",
     "linkTitle": "Using the communication area",
     "weight": "380"
-}# <span id="Title"></span><span id="Using_the_communication_area__End_of_transfer_exit"></span>Using the communication area
-
-<span id="Communication_area_structure__End_of_transfer_exit"></span>This topic describes basic rules for the communication area for an end-of-transfer
+}<span id="Communication_area_structure__End_of_transfer_exit"></span>This topic describes basic rules for the communication area for an end-of-transfer
 type exit.
 
 The interface provides the values used by the communication structure
@@ -34,28 +32,28 @@ to use the following communication structure exitdU between the interface
 and the user program:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>typedef union {<br />
+   <tbody>
+      <tr class="odd">
+         <td>typedef union {<br />
      EXEusC exeC;<br />
      EXEusO exeO;<br />
-} EXEdU, *EXEdUp;</td>
-</tr>
-</tbody>
+} EXEdU, *EXEdUp;         </td>
+      </tr>
+   </tbody>
 </table>
 
 To create an exit using the V2.4 format exitdnT communication
 structure between the interface and the user program is defined below:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>typedef union {<br />
+   <tbody>
+      <tr class="odd">
+         <td>typedef union {<br />
      EXEusC exeC;<br />
      EXEusO exeO;<br />
-} EXEdnU, *EXEdnUp;</td>
-</tr>
-</tbody>
+} EXEdnU, *EXEdnUp;         </td>
+      </tr>
+   </tbody>
 </table>
 
 The choice of structure depends on the programming language used:

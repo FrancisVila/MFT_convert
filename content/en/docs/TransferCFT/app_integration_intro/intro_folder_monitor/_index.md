@@ -1,19 +1,19 @@
 {
-    "title": "Folder monitoring",
+    "title": "Introduction to folder monitoring ",
     "linkTitle": "Folder monitoring",
     "weight": "170"
 }This section describes how to set up folder monitoring for Transfer CFT directories. Transfer CFT supports two general types of folder monitoring:
 
 -   **File-system event monitoring**: Transfer CFT immediately detects newly available files in a defined set of directories and identifies them as transfer candidates. *Linux/Windows only  
-    ![](temp_folder4.png)  
+    ![](/Images/TransferCFT/temp_folder3.png)  
     *
 
 <!-- -->
 
 -   <span id="scheduled_folder"></span>**Scheduled folder monitoring**: Transfer CFT periodically checks the status of files that are in a defined set of directories to see if there are transfer candidates.  
-    ![](temp_folder4.png)
+    ![](/Images/TransferCFT/temp_folder4.png)
 
-A set of [configurable](#configur) options allow you to define which files are monitored and the condition that can trigger an automatic SEND command for these files.
+A set of [configurable](#Configur) options allow you to define which files are monitored and the condition that can trigger an automatic SEND command for these files.
 
 ## <span id="About"></span>How folder monitoring works
 
@@ -34,19 +34,19 @@ To track scan\_dir files that have been submitted, Transfer CFT can either:
 -   Move these files to the work\_dir (by renaming) prior to submitting them. This is called the MOVE method in Transfer CFT.
 -   Leave these files in place and create another file with the same name, which contains metadata, in the work\_dir prior to submitting the transfer. This is called the FILE method in Transfer CFT.
 
-See [Configuring file tracking options](#configur2).
+See [Configuring file tracking options](#Configur2).
 
 **SEND parameters**
 
-In addition to the file path, the [IDF](../../c_intro_userinterfaces/command_summary/parameter_intro/idf) and [PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part) name parameters are supplied in the SEND command. You can set these as fixed parameter values, or extract them from the first or second sub-directory names. Transfer CFT then automatically creates the corresponding sub-directories in the work\_dir directory tree, as needed.
+In addition to the file path, the [IDF](../../CFTUTIL/Parameter_index/idf.htm) and [PART](../../CFTUTIL/Parameter_index/part.htm) name parameters are supplied in the SEND command. You can set these as fixed parameter values, or extract them from the first or second sub-directory names. Transfer CFT then automatically creates the corresponding sub-directories in the work\_dir directory tree, as needed.
 
 ## <span id="Prerequisites_foldermonitoring"></span>Prerequisites and best practices
 
 This section lists the prerequisites and best practices for folder monitoring. Before configuring folder monitoring, read the following:
 
 -   All of the folder monitoring parameters are dynamic.
--   The system user management feature ([USERCTRL](../../internal_a_m_start_here/user_rights_overview)) is not supported for Folder Monitoring configurations.
--   There are 2 options (FILE and MOVE methods); the MOVE method is recommended as explained [below](#configur2).
+-   The system user management feature ([USERCTRL](../rights/user_rights_overview.htm)) is not supported for Folder Monitoring configurations.
+-   There are 2 options (FILE and MOVE methods); the MOVE method is recommended as explained [below](#Configur2).
 -   Do not define a scan\_directory that is the same as the work\_directory.
 -   Do not define a work\_directory as a subdirectory of a scan\_directory.
 -   When using the FILE method, do not delete the .met files that are automatically created in the working directory.
@@ -60,7 +60,7 @@ The operating system services for *file-system event monitoring* functionality o
 
 ### <span id="Limitati"></span>Limitations
 
--   Directory scanning does not allow transferring a file whose name contains a wildcard character, for example the asterisk character (\*) on UNIX-like platforms. Files containing wildcard characters in their file names are not be processed; they remain in the scanning directory, and an error message displays in the log. For a list of wildcard characters per platform, see [Platform-specific characters and functions](platform_specific_characters_and_functions.htm).
+-   Directory scanning does not allow transferring a file whose name contains a wildcard character, for example the asterisk character (\*) on UNIX-like platforms. Files containing wildcard characters in their file names are not be processed; they remain in the scanning directory, and an error message displays in the log. For a list of wildcard characters per platform, see Platform-specific characters and functions.
 -   In an z/OS environment you can only use folder monitoring on UNIX file systems.
 -   The WILDMAT parameter is available on Unix/Windows/IBM i systems.
 -   When using the UCONF mode to enable folder monitoring, there is a limit to the number of folders due to the maximum length of the folder\_monitoring.folders parameter being 512.
@@ -74,11 +74,11 @@ This section describes the key parameters that can alter the folder monitoring b
 
 ### Recommendations
 
-There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder).
+There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder.htm).
 
 ### Transfer CFT file monitoring scheduling
 
-Two parameters define the timing for files that are managed by Transfer CFT folder monitoring. See the [parameter definition](../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder) table for details.
+Two parameters define the timing for files that are managed by Transfer CFT folder monitoring. See the [parameter definition](../../CFTUTIL/Conf/CFTFOLDER.htm) table for details.
 
 -   File idle delay: This defines the period in which the file becomes a candidate for submission if the state of a file has not changed within this delay (FILEIDLEDELAY).
 -   Interval: The interval between two scans of the directory files in seconds (INTERVAL).
@@ -95,11 +95,11 @@ If the METHOD parameter is set to MOVE:
 2.  A command is submitted internally that uses the following pattern:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL SEND=&lt;part&gt;, IDF=&lt;idf&gt;, FNAME=&lt;pathname&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL SEND=&lt;part&gt;, IDF=&lt;idf&gt;, FNAME=&lt;pathname&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -116,11 +116,11 @@ The following example demonstrates how the PART name is used for the first direc
 -   Moved file: /dir\_c/work/newyork/idf1/my\_file.20131025.txt
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/work/newyork/idf1/my_file.20131025.txt</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/work/newyork/idf1/my_file.20131025.txt         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### FILE option
@@ -131,13 +131,13 @@ Submitting the SEND command occurs as follows:
 
 1.  A new file with the same name as the original file, but suffixed with .met, is created in the directory work\_dir in the same relative position as the original file. Metadata generated by Transfer CFT are written to this .met file.
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Caution  </strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Do NOT delete the .met files as they are internal Transfer CFT files. In order to delete the .met files, you must delete the associated files in the SCAN directory (Transfer CFT must be running).</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Do NOT delete the .met files as they are internal Transfer CFT files. In order to delete the .met files, you must delete the associated files in the SCAN directory (Transfer CFT must be running).         </td>
+          </tr>
+       </tbody>
     </table>
 2.  The same CFTUTIL command as is used in the MOVE method is submitted internally, but with an fname corresponding to the original file in the scan\_dir.
 
@@ -149,11 +149,11 @@ This example uses the partner name in the first directory sub-level, and the IDF
 -   Metadata file: /dir\_c/work/newyork/idf1/my\_file.txt.met
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/scan/newyork/idf1/my_file.txt</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/scan/newyork/idf1/my_file.txt         </td>
+      </tr>
+   </tbody>
 </table>
 
 Although both methods provide the same level of functionality, the MOVE method (renaming file) is recommended whenever file renaming prior to its submission is acceptable.
@@ -167,7 +167,7 @@ The FILE  method has some drawbacks that the MOVE method does not, especially r
 
 Related topics
 
--   [Folder monitoring CFTFOLDER](../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder)
--   [Deprecated folder monitoring (UCONF)](folder_monitor_uconf)
--   [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder)
--   [Create inclusion and exclusion filters](folder_customize)
+-   [Folder monitoring CFTFOLDER](../../CFTUTIL/Conf/CFTFOLDER.htm)
+-   [Deprecated folder monitoring (UCONF)](folder_monitor_uconf.htm)
+-   [Migrate to CFTFOLDER folder monitoring](migrate_uconf_cftfolder.htm)
+-   [Create inclusion and exclusion filters](folder_customize.htm)

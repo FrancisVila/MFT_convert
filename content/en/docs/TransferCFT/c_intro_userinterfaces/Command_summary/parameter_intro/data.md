@@ -10,4 +10,4 @@
 
 User data in the call packet.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -18,16 +18,16 @@ alert generates 2 actions:·
 -   Sends a message
     to the LOG
 -   Executes
-    a batch to react to the alert, the [TLVWEXEC](../tlvcexec)
+    a batch to react to the alert, the [TLVWEXEC](tlvcexec)
     parameter
 
 Once an alert has been issued, steps are
 repeated when an action on catalog or communication media is done, but
-do not occur more than every [TLVWRATE](../tlvwrate)
-seconds. The alert ends when the fill level drops below the [TLVCLEAR](../tlvclear) level.
+do not occur more than every [TLVWRATE](tlvwrate)
+seconds. The alert ends when the fill level drops below the [TLVCLEAR](tlvclear) level.
 
 The catalog or communication media usage limit before issuing an alert is expressed as a percentage, for example the value 80 indicates 80%.
-When this limit is reached, the [TLVWEXEC](../tlvwexec)
+When this limit is reached, the [TLVWEXEC](tlvwexec)
 is executed.
 
 -   CFTCAT: Default 80

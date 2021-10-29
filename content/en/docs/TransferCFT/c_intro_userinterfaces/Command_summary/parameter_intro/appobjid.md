@@ -20,4 +20,4 @@ The possible values of this parameter include:
 -   XFB.Log This
     tracked object describes the contents of Transfer CFT log files
 
-[Return to Command index](../../)
+[Return to Command index](../)

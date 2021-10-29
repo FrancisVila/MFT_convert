@@ -1,10 +1,8 @@
 {
-    "title": "Defining TCP/IP parameters",
+    "title": "Defining TCP/IP parameters  ",
     "linkTitle": "Defining TCP/IP parameters",
     "weight": "250"
-}# <span id="Setting_parameters_in_TCP_IP"></span>Defining TCP/IP parameters
-
-This topic describes the parameter settings for Transfer CFT when using
+}This topic describes the parameter settings for Transfer CFT when using
 TCP/IP.
 
 ## <span id="Specific_parameter_settings_for_TCP_IP"></span>Specific parameter settings for TCP/IP
@@ -140,13 +138,13 @@ Each section has the format:
     : the password of the user connecting to the RAS server
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   The link

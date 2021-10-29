@@ -10,4 +10,4 @@
 
 Indicates the storage field of the NSPART (for CFTPART).
 
-[Return to Command index](../../)
+[Return to Command index](../)

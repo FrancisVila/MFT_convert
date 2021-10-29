@@ -1,5 +1,5 @@
 {
-    "title": "Configuring an AM exit",
+    "title": "Configuring an Access Management exit",
     "linkTitle": "Configuring an AM exit",
     "weight": "380"
 }This section describes how to configure access management when not using Central Governance.
@@ -13,65 +13,65 @@ Double-click in a Unified Configuration window field to begin editing parameters
 Configure the AM exit using the parameters in the following table.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Access Management exit parameters</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>am.exit.libpath</td>
-<td> </td>
-<td>The absolute path of the dynamic library.</td>
-</tr>
-<tr class="even">
-<td>am.exit.check_login</td>
-<td>Yes/No</td>
-<td>Indicate if the login must be checked through the AM exit.</td>
-</tr>
-<tr class="odd">
-<td>am.exit.check_permissions</td>
-<td>Yes/No</td>
-<td>Indicate if permissions must be checked though the AM exit.</td>
-</tr>
-<tr class="even">
-<td>am.exit.custom.tracelevel.value</td>
-<td>Default: 1</td>
-<td><p>Trace level where:</p>
-<ul>
-<li>1=ERR</li>
-<li>2=WRN</li>
-<li>3=INF</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>am.exit.custom.rbac_fname.value</td>
-<td> </td>
-<td>Path to the RBAC flat file used by the Access Management exit sample.</td>
-</tr>
-<tr class="even">
-<td>am.exit.custom.ldap_host.value</td>
-<td> </td>
-<td>LDAP server hostname/IP address that is used by the Access Management exit sample.</td>
-</tr>
-<tr class="odd">
-<td>am.exit.custom.ldap_port.value</td>
-<td> </td>
-<td>LDAP server port that is used by the Access Management exit sample.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Access Management exit parameters</th>
+         <th>Value</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>am.exit.libpath         </td>
+         <td>          </td>
+         <td>The absolute path of the dynamic library.         </td>
+      </tr>
+      <tr class="even">
+         <td>am.exit.check_login         </td>
+         <td>Yes/No         </td>
+         <td>Indicate if the login must be checked through the AM exit.         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.exit.check_permissions         </td>
+         <td>Yes/No         </td>
+         <td>Indicate if permissions must be checked though the AM exit.         </td>
+      </tr>
+      <tr class="even">
+         <td>am.exit.custom.tracelevel.value         </td>
+         <td>Default: 1         </td>
+         <td>            <p>Trace level where:</p>
+            <ul>
+               <li>1=ERR               </li>
+               <li>2=WRN               </li>
+               <li>3=INF               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.exit.custom.rbac_fname.value         </td>
+         <td>          </td>
+         <td>Path to the RBAC flat file used by the Access Management exit sample.         </td>
+      </tr>
+      <tr class="even">
+         <td>am.exit.custom.ldap_host.value         </td>
+         <td>          </td>
+         <td>LDAP server hostname/IP address that is used by the Access Management exit sample.         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.exit.custom.ldap_port.value         </td>
+         <td>          </td>
+         <td>LDAP server port that is used by the Access Management exit sample.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the AM exit is enabled these conditions apply:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the AM exit is enabled these conditions apply:         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   uconf:am.exit.check\_login=No: the native authentication procedure is still performed
@@ -105,4 +105,4 @@ This section presents parameters that you may need to set if you are creating an
 
 Related topics
 
-[About Access Management exits](../../../../internal_a_m_start_here/am_exits)
+[About Access Management exits](transfercft/app_integration_intro/managing_exits/am_exits)

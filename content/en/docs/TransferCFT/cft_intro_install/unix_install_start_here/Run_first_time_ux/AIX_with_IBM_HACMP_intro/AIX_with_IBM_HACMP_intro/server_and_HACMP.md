@@ -1,10 +1,8 @@
 {
-    "title": "Transfer CFT server and HACMP",
+    "title": "Transfer CFT  server and HACMP",
     "linkTitle": "Transfer CFT server and HACMP",
     "weight": "260"
-}# <span id="CFT_server_and_HACMP"></span>Transfer CFT server and HACMP
-
-## <span id="HACMP_monitoring_commands"></span>HACMP monitoring commands
+}## <span id="HACMP_monitoring_commands"></span>HACMP monitoring commands
 
 ### Clstat
 

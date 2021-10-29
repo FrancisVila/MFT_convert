@@ -27,4 +27,4 @@ Enter one of the following values:
     tab)
 -   a value from 0 to 65535
 
-[Return to Command index](../../)
+[Return to Command index](../)

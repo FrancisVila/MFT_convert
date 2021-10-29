@@ -19,26 +19,26 @@ Use to display catalog transfers that happened on or after this start date and t
 -   Relative values are: -1, -1M, -1H, -1D
 -   Absolute values are: YYYYMMDDhhmmss with a maximum of 14 characters
 
-You can use this parameter in combination with [datetimemax](../datetimemax).
+You can use this parameter in combination with [datetimemax](datetimemax).
 
 Relative example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL display datetimemin=-3H</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL display datetimemin=-3H         </td>
+      </tr>
+   </tbody>
 </table>
 
 Absolute example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL listcat datetimemin=2021030420</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL listcat datetimemin=2021030420         </td>
+      </tr>
+   </tbody>
 </table>
 
-[Return to Command index](../../)
+[Return to Command index](../)

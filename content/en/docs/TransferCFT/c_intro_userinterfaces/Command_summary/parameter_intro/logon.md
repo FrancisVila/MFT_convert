@@ -16,4 +16,4 @@ Use of the pre-connection phase. Available only in requester mode.
 -   No: This phase is not used. No message
     is sent.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -37,30 +37,30 @@ To create exits with Assembler, access the following files:
  
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Main exported EPA</th>
-<th>DLL name</th>
-<th>CFTEXIT PROG=value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>calllexig0</td>
-<td>CFTDXG0</td>
-<td>CFTEXIG0</td>
-</tr>
-<tr class="even">
-<td>callexig1</td>
-<td>CFTDXG1</td>
-<td>CFTEXIG1</td>
-</tr>
-<tr class="odd">
-<td>And up to callexig9</td>
-<td>And up to CFTDXG9</td>
-<td>up to CFTEXIG9</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Main exported EPA</th>
+         <th>DLL name</th>
+         <th>CFTEXIT PROG=value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>calllexig0         </td>
+         <td>CFTDXG0         </td>
+         <td>CFTEXIG0         </td>
+      </tr>
+      <tr class="even">
+         <td>callexig1         </td>
+         <td>CFTDXG1         </td>
+         <td>CFTEXIG1         </td>
+      </tr>
+      <tr class="odd">
+         <td>And up to callexig9         </td>
+         <td>And up to CFTDXG9         </td>
+         <td>up to CFTEXIG9         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   Exits must be linked with CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED options.
@@ -69,22 +69,22 @@ To create exits with Assembler, access the following files:
 `*  CFT/MVS file EXIT - DLL versionSETOPT  PARM(CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED)* Customer codeINCLUDE   USER(AEXFDLL) ** the exit* Import EXIT support codeIMPORT    CODE,CFTDMAI,'exfrun1'MODE       AMODE(31)MODE       RMODE(ANY)NAME       CFTDXG5(R)`
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>AEX*DLL</p></td>
-<td><p>Sample program in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.</p></td>
-</tr>
-<tr class="even">
-<td><p>AEX*UST</p></td>
-<td><p>Macro containing the DSECTs of the exchange areas with the Transfer CFT.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>File</th>
+         <th>Definition</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>AEX*DLL</p>         </td>
+         <td>            <p>Sample program in Assembler. This sample provides the 3 steps needed in a Transfer CFT exit.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>AEX*UST</p>         </td>
+         <td>            <p>Macro containing the DSECTs of the exchange areas with the Transfer CFT.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create exits in C
@@ -110,30 +110,30 @@ To create exits with C, access the following files:
     -   Transfer CFT modules for various Transfer CFT exits. The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Main exported EPA</th>
-<th>DLL name</th>
-<th>CFTEXIT PROG=value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>calllexig0</td>
-<td>CFTDXG0</td>
-<td>CFTEXIG0</td>
-</tr>
-<tr class="even">
-<td>callexig1</td>
-<td>CFTDXG1</td>
-<td>CFTEXIG1</td>
-</tr>
-<tr class="odd">
-<td>And up to callexig9</td>
-<td>And up to CFTDXG9</td>
-<td>Up to CFTEXIG9</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Main exported EPA</th>
+         <th>DLL name</th>
+         <th>CFTEXIT PROG=value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>calllexig0         </td>
+         <td>CFTDXG0         </td>
+         <td>CFTEXIG0         </td>
+      </tr>
+      <tr class="even">
+         <td>callexig1         </td>
+         <td>CFTDXG1         </td>
+         <td>CFTEXIG1         </td>
+      </tr>
+      <tr class="odd">
+         <td>And up to callexig9         </td>
+         <td>And up to CFTDXG9         </td>
+         <td>Up to CFTEXIG9         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   Exits must be linked with CALL, REUS=RENT, DYNAM=DLL, CASE=MIXED options.
@@ -150,22 +150,22 @@ To create exits with C, access the following files:
 **`NAME CFTDXG5(R)`**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CEX*DLL</td>
-<td>Sample program in C. This sample provides the 3 steps needed in a Transfer CFT exit.</td>
-</tr>
-<tr class="even">
-<td>*XEUS</td>
-<td>The header containing the structure of the exchange areas with the Transfer CFT.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>File</th>
+         <th>Definition</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>CEX*DLL         </td>
+         <td>Sample program in C. This sample provides the 3 steps needed in a Transfer CFT exit.         </td>
+      </tr>
+      <tr class="even">
+         <td>*XEUS         </td>
+         <td>The header containing the structure of the exchange areas with the Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create exits in COBOL
@@ -202,30 +202,30 @@ To create exits with Cobol, access the following files:
     -   Transfer CFT modules for various Transfer CFT exits. The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Main exported EPA</th>
-<th>DLL name</th>
-<th>CFTEXIT PROG=value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>calllexig0</td>
-<td>CFTDXG0</td>
-<td>CFTEXIG0</td>
-</tr>
-<tr class="even">
-<td>callexig1</td>
-<td>CFTDXG1</td>
-<td>CFTEXIG1</td>
-</tr>
-<tr class="odd">
-<td>And up to callexig9</td>
-<td>And up to CFTDXG9</td>
-<td>Up to CFTEXIG9</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Main exported EPA</th>
+         <th>DLL name</th>
+         <th>CFTEXIT PROG=value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>calllexig0         </td>
+         <td>CFTDXG0         </td>
+         <td>CFTEXIG0         </td>
+      </tr>
+      <tr class="even">
+         <td>callexig1         </td>
+         <td>CFTDXG1         </td>
+         <td>CFTEXIG1         </td>
+      </tr>
+      <tr class="odd">
+         <td>And up to callexig9         </td>
+         <td>And up to CFTDXG9         </td>
+         <td>Up to CFTEXIG9         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   Exits must be linked with CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED options.
@@ -234,26 +234,26 @@ To create exits with Cobol, access the following files:
 `* CFT/zos exit TYPE=FILE- DLL versionSETOPT PARM(CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED)* Customer codeINCLUDE USER(OEXFDLL) ** the exit* Import EXIT support codeIMPORT CODE,CFTDMAI,'exfrun1'MODE AMODE(31)MODE RMODE(ANY)NAME CFTDXG5(R)`
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>OEX*DLL</td>
-<td>Sample program in C. This sample provides the 3 steps needed in a Transfer CFT exit.</td>
-</tr>
-<tr class="even">
-<td>OEX*UST</td>
-<td>Copy book containing the structure of the exchange areas with the Transfer CFT (format V23).</td>
-</tr>
-<tr class="odd">
-<td>OEX*240</td>
-<td>Copy book containing the structure of the exchange areas with the Transfer CFT (format V24).</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>File</th>
+         <th>Definition</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>OEX*DLL         </td>
+         <td>Sample program in C. This sample provides the 3 steps needed in a Transfer CFT exit.         </td>
+      </tr>
+      <tr class="even">
+         <td>OEX*UST         </td>
+         <td>Copy book containing the structure of the exchange areas with the Transfer CFT (format V23).         </td>
+      </tr>
+      <tr class="odd">
+         <td>OEX*240         </td>
+         <td>Copy book containing the structure of the exchange areas with the Transfer CFT (format V24).         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Call APIs in exits
@@ -265,138 +265,138 @@ Calls to a Transfer CFT synchronous API are only supported in DLL.
 **Exit examples summary for COBOL**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Source file</p>
-<p>cftv2.</p>
-<p>SAMPLEx</p></th>
-<th><p>Jcl compilation</p>
-<p>cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>Command file</p>
-<p>for link-edit</p>
-<p>distlib.CNTL</p></th>
-<th><p>Jcl for link-edit cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>DLL name</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>OEXADLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG6</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG6</p></td>
-</tr>
-<tr class="even">
-<td><p>OEXEDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG7</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG7</p></td>
-</tr>
-<tr class="odd">
-<td><p>OEXFDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG8</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG8</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Source file</p>
+            <p>cftv2.</p>
+            <p>SAMPLEx</p></th>
+         <th>            <p>Jcl compilation</p>
+            <p>cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>Command file</p>
+            <p>for link-edit</p>
+            <p>distlib.CNTL</p></th>
+         <th>            <p>Jcl for link-edit cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>DLL name</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>OEXADLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG6</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG6</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>OEXEDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG7</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG7</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>OEXFDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG8</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG8</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Exit examples summary for C language**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Source file</p>
-<p>cftv2.</p>
-<p>SAMPLEx</p></th>
-<th><p>Jcl compilation</p>
-<p>cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>Command file</p>
-<p>for link-edit</p>
-<p>distlib.CNTL</p></th>
-<th><p>Jcl for link-edit cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>DLL name</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>CEXADLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG0</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG0</p></td>
-</tr>
-<tr class="even">
-<td><p>CEXEDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG1</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG1</p></td>
-</tr>
-<tr class="odd">
-<td><p>CEXFDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG2</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG2</p></td>
-</tr>
-<tr class="even">
-<td>CEXBDLL</td>
-<td>I91APICP</td>
-<td>LINRDXG9</td>
-<td>LINKEXLE</td>
-<td>CFTDXG9</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Source file</p>
+            <p>cftv2.</p>
+            <p>SAMPLEx</p></th>
+         <th>            <p>Jcl compilation</p>
+            <p>cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>Command file</p>
+            <p>for link-edit</p>
+            <p>distlib.CNTL</p></th>
+         <th>            <p>Jcl for link-edit cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>DLL name</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CEXADLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG0</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG0</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CEXEDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG1</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG1</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CEXFDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG2</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG2</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>CEXBDLL         </td>
+         <td>I91APICP         </td>
+         <td>LINRDXG9         </td>
+         <td>LINKEXLE         </td>
+         <td>CFTDXG9         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Exit examples summary for Assembler**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Source file</p>
-<p>cftv2.</p>
-<p>SAMPLEx</p></th>
-<th><p>Jcl compilation</p>
-<p>cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>Command file</p>
-<p>for link-edit</p>
-<p>distlib.CNTL</p></th>
-<th><p>Jcl for link-edit cftv2.</p>
-<p>INSTALL</p></th>
-<th><p>DLL name</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>AEXADLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG4</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG4</p></td>
-</tr>
-<tr class="even">
-<td><p>AEXEDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG3</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG3</p></td>
-</tr>
-<tr class="odd">
-<td><p>AEXFDLL</p></td>
-<td><p>I91APICP</p></td>
-<td><p>LINRDXG5</p></td>
-<td><p>LINKEXLE</p></td>
-<td><p>CFTDXG5</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Source file</p>
+            <p>cftv2.</p>
+            <p>SAMPLEx</p></th>
+         <th>            <p>Jcl compilation</p>
+            <p>cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>Command file</p>
+            <p>for link-edit</p>
+            <p>distlib.CNTL</p></th>
+         <th>            <p>Jcl for link-edit cftv2.</p>
+            <p>INSTALL</p></th>
+         <th>            <p>DLL name</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>AEXADLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG4</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG4</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>AEXEDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG3</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG3</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>AEXFDLL</p>         </td>
+         <td>            <p>I91APICP</p>         </td>
+         <td>            <p>LINRDXG5</p>         </td>
+         <td>            <p>LINKEXLE</p>         </td>
+         <td>            <p>CFTDXG5</p>         </td>
+      </tr>
+   </tbody>
 </table>

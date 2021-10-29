@@ -60,7 +60,7 @@ command).
 
 #### <span id="Card__parameter__"></span>Card (parameter):
 
-See [Command](#command__parameter__) (parameter).
+See [Command](#Command__parameter__) (parameter).
 
 #### <span id="Catalog_"></span>Catalog:
 
@@ -73,7 +73,7 @@ Record corresponding to a transfer in the catalog file.
 
 #### <span id="Catalog_identifier_"></span>Catalog identifier:
 
-See [IDTU](#idtu__catalog_identifier__) (catalog identifier).
+See [IDTU](#IDTU__catalog_identifier__) (catalog identifier).
 
 #### <span id="Catalog_sharing_"></span>Catalog sharing:
 
@@ -97,7 +97,7 @@ completed transfers.
 
 #### <span id="CFTAPI"></span>CFTAPI:
 
-See [CFT API](#cft_api_).
+See [CFT API](#CFT_API_).
 
 #### <span id="CFTAUTH"></span>CFTAUTH:
 
@@ -115,7 +115,7 @@ Command used to set transfer catalog management parameters.
 
 Command used to set parameters controlling communications between user
 programs and the Transfer CFT. See also [Communication
-medium](#communication_medium_).
+medium](#Communication_medium_).
 
 #### <span id="CFTDEST"></span>CFTDEST:
 
@@ -183,7 +183,7 @@ Coding or encryption technique whereby information is protected against
 illicit read operations.
 
 The information can only be read or processed by entities in possession
-of the ciphering "key". See also [Cryptography](#cryptography).
+of the ciphering "key". See also [Cryptography](#Cryptography).
 
 #### <span id="Closed_mode_"></span>Closed mode:
 
@@ -268,13 +268,13 @@ There are two main systems:
 
 -   Shared-key or symmetric
     systems for which the ciphering and deciphering keys are the same; see
-    [DES](#des__ibm_data_encryption_standard__) (IBM Data Encryption
+    [DES](#DES__IBM_Data_Encryption_Standard__) (IBM Data Encryption
      Standard)
 
 <!-- -->
 
 -   Dual-key or asymmetric
-    systems for which the ciphering and deciphering keys are different; see [RSA](#rsa__rivest_shamir_adelman__) (Rivest Shamir Adelman)
+    systems for which the ciphering and deciphering keys are different; see [RSA](#RSA__Rivest_Shamir_Adelman__) (Rivest Shamir Adelman)
 
 #### <span id="Cycle"></span>Cycle:
 
@@ -302,7 +302,7 @@ or intentionally modified or deleted.
 
 #### <span id="DES__IBM_Data_Encryption_Standard__"></span>DES (IBM Data Encryption Standard):
 
-Cipher algorithm based on a symmetrical key. See also [Cryptography](#cryptography).
+Cipher algorithm based on a symmetrical key. See also [Cryptography](#Cryptography).
 
 #### <span id="Direct_transfer_"></span>Direct transfer:
 
@@ -327,7 +327,7 @@ partner (defined in CFTPART).
 Odette protocol service used to generate an end-to-end acknowledgement
 for the transfer at application level. In Transfer CFT, this acknowledgement
 takes the form of a reply-type message (see [Reply
-message](#reply_message_)).
+message](#Reply_message_)).
 
 #### <span id="End_of_transfer_exit_"></span>End of transfer exit:
 
@@ -363,19 +363,19 @@ Exit used to take control at various stages of a file transfer.
 
 #### <span id="File_identifier_"></span>File identifier:
 
-See [IDF](#idf).
+See [IDF](#IDF).
 
 #### <span id="File_transfer_protocol_or_application_protocol_"></span>File transfer protocol or application protocol:
 
 Set of rules governing dialog and exchange management between two standard
 Transfer CFTs. These standards are based on a network access mode defined in CFTPROT. See
-[PeSIT](#pesit__protocole_d_echanges_pour_un_syst_me_interbancaire_de_t_l___compensation__).
+[PeSIT](#PeSIT__Protocole_d_Echanges_pour_un_Syst_me_Interbancaire_de_T_l___compensation__).
 
 #### <span id="FPDU__File_Protocol_Data_Unit__"></span><span id="FPDU"></span>FPDU (File Protocol Data Unit):
 
 Data unit for the PeSIT protocol. Protocol-level message supporting
 dialog between two PeSIT "protocol layer" entities. It includes
-a fixed and a variable part. See also [PI](#pi__parameter_identifier__)
+a fixed and a variable part. See also [PI](#PI__Parameter_Identifier__)
 (Parameter Identifier).
 
 ##### H
@@ -396,7 +396,7 @@ then either accepted or refused.
 
 #### <span id="IDF"></span>IDF:
 
-Model file identifier. See also [Model file](#model_file_).
+Model file identifier. See also [Model file](#Model_file_).
 
 #### <span id="IDT"></span>IDT:
 
@@ -427,7 +427,7 @@ on a host.
 
 #### <span id="List_of_model_file_identifiers_"></span>List of model file identifiers:
 
-See [Authorized identifiers](#authorized_identifiers_).
+See [Authorized identifiers](#Authorized_identifiers_).
 
 #### <span id="Log_file_"></span>Log file:  
 
@@ -472,7 +472,7 @@ Entity via which connections can be established (defined in CFTNET).
 #### <span id="NSDU"></span><span id="NSDU__Network_Service_Data_Unit__"></span>NSDU (Network Service Data Unit):
 
 Data unit for the network service in the PeSIT protocol. It is made
-up of the data exchanged between two users and can contain several [FPDUs](#fpdu__file_protocol_data_unit__). See also rrusize
+up of the data exchanged between two users and can contain several [FPDUs](#FPDU__File_Protocol_Data_Unit__). See also rrusize
 and srusize.
 
 ##### O
@@ -489,7 +489,7 @@ OFTP and ODETTE are sometimes used interchangeably.
 
 #### <span id="OFTP__Odette_File_Transfer_Protocol__"></span>OFTP (Odette File Transfer Protocol):
 
-See [ODETTE](#odette).
+See [ODETTE](#ODETTE).
 
 #### <span id="Open_mode_"></span>Open mode:
 
@@ -520,7 +520,7 @@ Number identifying the parameter type carried in a PeSIT FPDU.
 
 #### <span id="Programming_interface_"></span>Programming interface:
 
-Set of rules defining how a service is used by an application. See [CFT API](#cft_api_) .
+Set of rules defining how a service is used by an application. See [CFT API](#CFT_API_) .
 
 ##### R
 
@@ -576,24 +576,24 @@ incident that did not cause the transfer to abort (ODETTE and PeSIT).
 
 #### <span id="Routing"></span>Routing:
 
-See [Store and forward mode](#store_and_forward_mode_) and
-[Store and forward mechanism](#store_and_forward_mechanism_).
+See [Store and forward mode](#Store_and_forward_mode_) and
+[Store and forward mechanism](#Store_and_forward_mechanism_).
 
 #### <span id="RSA__Rivest_Shamir_Adelman__"></span>RSA (Rivest Shamir Adelman):
 
-Cryptographic algorithm based on asymmetric keys. See also [Cryptography](#cryptography).
+Cryptographic algorithm based on asymmetric keys. See also [Cryptography](#Cryptography).
 
 ##### S
 
 #### <span id="Secondary"></span>Secondary file:
 
-File used when switching log or accounting files. See [Switching.](#switching_)
+File used when switching log or accounting files. See [Switching.](#Switching_)
 
 #### <span id="Secured_mode_"></span>Secured mode:
 
 Means whereby data can be ciphered or sealed using DES- or RSA-type
-algorithms. See [Ciphering](#ciphering), [DES](#des__ibm_data_encryption_standard__)
-(IBM Data Entrcyption Standard) and [RSA](#rsa__rivest_shamir_adelman__)
+algorithms. See [Ciphering](#Ciphering), [DES](#DES__IBM_Data_Encryption_Standard__)
+(IBM Data Entrcyption Standard) and [RSA](#RSA__Rivest_Shamir_Adelman__)
 (Rivest Shamir Adelman).
 
 #### <span id="SECUTIL"></span>SECUTIL:
@@ -613,13 +613,13 @@ in the associated CFTSEND command.
 
 #### <span id="SEND__implicit__"></span>SEND (implicit):
 
-See [Implicit send](#implicit_send_) and [Availability
-for the partner](#availability_for_the_partner_).
+See [Implicit send](#Implicit_send_) and [Availability
+for the partner](#Availability_for_the_partner_).
 
 #### <span id="Send_on_hold_"></span>Send on hold:
 
 Explicit provision of a file to be sent to a partner. See also [Availability
-for the partner](#availability_for_the_partner_).
+for the partner](#Availability_for_the_partner_).
 
 #### <span id="Sending_of_a_group_of_files_"></span>Sending of a group of files:
 
@@ -667,12 +667,12 @@ next adjacent partner.
 Transfer CFT feature whereby files can be routed via one or more intermediary
 Transfer CFT sites, called store and forward sites. This feature is only
 available from a requester/sender (write-mode transfer). See [Store
-and forward mechanism](#store_and_forward_mechanism_).
+and forward mechanism](#Store_and_forward_mechanism_).
 
 #### <span id="Store_and_forward_site_"></span>Store and forward site:
 
-See [Store and forward mode](#store_and_forward_mode_) and
-[Store and forward mechanism](#store_and_forward_mechanism_).
+See [Store and forward mode](#Store_and_forward_mode_) and
+[Store and forward mechanism](#Store_and_forward_mechanism_).
 
 #### <span id="Switching_"></span>Switching:
 
@@ -713,7 +713,7 @@ is the SENDER and the other the RECEIVER.
 
 #### <span id="Transfer_identifier_"></span>Transfer identifier:
 
-See [IDT](#idt).
+See [IDT](#IDT).
 
 #### <span id="Transfer_owner"></span>Transfer owner:
 
@@ -735,7 +735,7 @@ or manually.
 
 Process whereby transfers are executed in line with their priority,
 the number of concurrent transfers allowed and the timeslot or period
-(cycle) defined. See also [Cycle](#cycle) and [Timeslot](#timeslot_).
+(cycle) defined. See also [Cycle](#Cycle) and [Timeslot](#Timeslot_).
 
 #### <span id="Transfer_state_"></span><span id="transfer_states"></span>Transfer state:
 

@@ -1,15 +1,13 @@
 {
-    "title": "Transfer procedure",
+    "title": "Transfer  procedure ",
     "linkTitle": "Transfer procedure",
     "weight": "220"
-}# <span id="Transfer_Procedure"></span>Transfer procedure
+}This topic describes the following PeSIT transfer procedure processes and concepts:
 
-This topic describes the following PeSIT transfer procedure processes and concepts:
-
--   [Establishing a connection](#establishing_a_connection)
--   [Transfer concatenation](#transfer_concatenation)
--   [Transfer identifiers](#transfer_identifier)
--   [Transfer retries](#transfer_retries)
+-   [Establishing a connection](#Establishing_a_connection)
+-   [Transfer concatenation](#Transfer_Concatenation)
+-   [Transfer identifiers](#Transfer_Identifier)
+-   [Transfer retries](#Transfer_Retries)
 
 For a detailed example of the transfer settings for a server and requester site, see the Example of transfer parameters (PeSIT) topic.
 
@@ -42,7 +40,7 @@ the requester receives a RCONNECT FPDU, with the protocol diagnostic 301.
 
 For further information concerning the interpretation of error messages
 or diagnostics from transfer incidents or problems, refer to [Messages
-and error codes](../../../troubleshoot_intro/messages_and_error_codes_start_here).
+and error codes](../../../Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here.htm).
 
 ## <span id="Transfer_Concatenation"></span>Transfer concatenation
 
@@ -61,7 +59,7 @@ being degraded by the systematic establishing of a protocol connection.
 
 #### Time-out role
 
-<img src="Two_way_protocol_connection.gif" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
+<img src="/Images/TransferCFT/Timeout_role3.gif" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
 
 #### PeSIT E
 
@@ -80,11 +78,11 @@ for which it was initially server.
 
 #### One-way protocol connection
 
-<img src="Two_way_protocol_connection.gif" width="714" height="439" alt="One way protocol session connection between requester and server" />
+<img src="/Images/TransferCFT/One_way_protocol_connection.gif" width="714" height="439" alt="One way protocol session connection between requester and server" />
 
 #### Two-way protocol connection
 
-<img src="Two_way_protocol_connection.gif" width="722" height="372" alt="Two way protocol session connection between requester and server" />
+<img src="/Images/TransferCFT/Two_way_protocol_connection.gif" width="722" height="372" alt="Two way protocol session connection between requester and server" />
 
 ## <span id="Transfer_Identifier"></span>Transfer identifiers
 
@@ -192,4 +190,4 @@ request:
     a value of 214 (negotiation failure at retry point).
 
 For protocol fields PI 11,
-12 and 13 details refer to [PeSIT PI codes](../pesit_pi_codes).
+12 and 13 details refer to [PeSIT PI codes](PeSIT_PI_codes.htm).

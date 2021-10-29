@@ -11,7 +11,7 @@
 
 The default value that specifies how much detail Transfer CFT should
 provide Sentinel concerning transfers with a partner who does
-not have a defined [trk](../trk) value.
+not have a defined [trk](trk) value.
 
 Select one of the following options:
 
@@ -25,4 +25,4 @@ Select one of the following options:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

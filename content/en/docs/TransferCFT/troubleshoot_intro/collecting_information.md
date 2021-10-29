@@ -14,14 +14,14 @@ catalog file. From the Central Governance main menu, select **Flow** &gt; **Moni
 
 All Transfer CFT error messages and diagnostics are listed in the section
 [Messages
-and error codes](../messages_and_error_codes_start_here). If an error occurs in Transfer CFT that you cannot
+and error codes](messages_and_error_codes_start_here). If an error occurs in Transfer CFT that you cannot
 correct using the diagnostic information provided there, see
 **Performing checks** below.
 
 As you go through the questions in **Performing checks**, note your responses. If you need to submit
 a Support request this information can help you to save time.
 
-[Documentation](#finding_os_specific_relevant_information) lists related documentation that you may want to consult.
+[Documentation](#Finding_OS_specific_relevant_information) lists related documentation that you may want to consult.
 
 ## Performing checks
 
@@ -29,70 +29,70 @@ To better help you resolve an incident, you can print and use
 the following table. It can serve as a guideline for gathering information, which can help you if you need to file an incident report.
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>Step</th>
-<th>Your remarks</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td colspan="2">1. Identify the symptoms</td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Did the system crash?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="50%"><p>Is the error message due to a transfer request, a transfer
-in server mode, or other?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Is Transfer CFT functioning abnormally?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="50%"><p>Is the symptom persistent?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Can you reproduce the symptom?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td colspan="2" width="50%"><p>2. Locate the problem</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Which component and function are concerned?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="50%"><p>Can you identify the source of the problem?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Can you bypass the problem?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td colspan="2" width="50%"><p>3. Find the cause</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Has your system or Transfer CFT recently been re-configured?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="50%"><p>Have you installed a new component, either hardware or
-software?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="50%"><p>Has the problem only recently occurred, or has it existed
-for some time?</p></td>
-<td width="50%"><p> </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Step</th>
+         <th>Your remarks</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td colspan="2">1. Identify the symptoms         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Did the system crash?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="50%">            <p>Is the error message due to a transfer request, a transfer
+in server mode, or other?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Is Transfer CFT functioning abnormally?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="50%">            <p>Is the symptom persistent?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Can you reproduce the symptom?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td colspan="2" width="50%">            <p>2. Locate the problem</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Which component and function are concerned?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="50%">            <p>Can you identify the source of the problem?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Can you bypass the problem?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td colspan="2" width="50%">            <p>3. Find the cause</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Has your system or Transfer CFT recently been re-configured?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="50%">            <p>Have you installed a new component, either hardware or
+software?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="50%">            <p>Has the problem only recently occurred, or has it existed
+for some time?</p>         </td>
+         <td width="50%">            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Finding_OS_specific_relevant_information"></span>Documentation

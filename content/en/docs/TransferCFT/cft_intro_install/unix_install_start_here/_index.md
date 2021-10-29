@@ -1,10 +1,8 @@
 {
-    "title": "Installation and operation UNIX",
+    "title": "UNIX: Installation and operation",
     "linkTitle": "Installation and operation UNIX",
     "weight": "90"
-}# <span id="UNIX_operations__Start_here"></span> UNIX: Installation and operation
-
-This section introduces prerequisite information as well as installation and information on operating Transfer CFT in UNIX.
+}This section introduces prerequisite information as well as installation and information on operating Transfer CFT in UNIX.
 
 The information in this section
 may be supplemented, corrected, or even contradicted by the
@@ -22,14 +20,14 @@ the networks used. The TCP/IP network is supported.
 The installation section describes prerequisites and how to install, migrate, update and uninstalTransfer CFT.
 
 -   [Prerequisites](before_you_start_unix/prereqs_overview)
--   [Start the installation](before_you_start_unix/install_transfer_cft_1)
+-   [Start the installation](windows_install_start_here/before_you_start_win/install_transfer_cft_1)
 
 ## UNIX operations
 
 -   [Transfer CFT
     UNIX utilities](run_first_time_ux/use_cft_utilities)
--   [Running
-    Transfer CFT for the first time](running_cft_for_the_first_time_unix.htm)
+-   Running
+    Transfer CFT for the first time
 -   [Building
     Transfer CFT API applications](run_first_time_ux/api_applications_start_here)
 -   [Activating
@@ -47,33 +45,33 @@ When installing a cluster for high availability, after enabling the cluster opti
     Sun cluster](run_first_time_ux/aix_with_ibm_hacmp_intro/solaris_sun_cluster_start_here)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The term
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The term
 <span>Transfer CFT</span> is used to designate the Transfer
-CFT software package on UNIX platforms.</td>
-</tr>
-</tbody>
+CFT software package on UNIX platforms.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT supports all POSIX file systems.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT supports all POSIX file systems.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Installation schematic overview
 
 Standalone installation
 
-![](install_multi.png)
+![](/Images/TransferCFT/install01_(2).png)
 
 Multi-node installation
 
-![](install_multi.png)
+![](/Images/TransferCFT/install_multi.png)

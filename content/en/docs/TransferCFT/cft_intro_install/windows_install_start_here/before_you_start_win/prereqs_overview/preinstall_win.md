@@ -1,5 +1,5 @@
 {
-    "title": "Windows-specific prerequisites",
+    "title": "Windows-specific prerequisites ",
     "linkTitle": "Windows-specific prerequisites",
     "weight": "170"
 }The following are tasks to perform or issues to address before installing Transfer CFT.
@@ -46,13 +46,13 @@ For Windows versions prior to the versions listed above, perform the following s
 2.  From the tree, select Local Policies **&gt;** User Rights Assignment **&gt;** Log on as a service.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">On some systems the path may be <span>Start </span><strong>&gt;</strong><span> Control Panel </span><strong>&gt;</strong><span> System and Security &gt; Administrative Tools</span> <strong>&gt;</strong><span> Local Security Policy</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">On some systems the path may be <span>Start </span><strong>&gt;</strong><span> Control Panel </span><strong>&gt;</strong><span> System and Security &gt; Administrative Tools</span> <strong>&gt;</strong><span> Local Security Policy</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Set administration rights if UAC is enabled
@@ -79,12 +79,12 @@ There are certain Windows-specific tasks you must perform to enable system user 
 
 The following sections describe how to:
 
--   [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
--   [Define rights before logging on the Copilot server](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
--   [Define rights before starting](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
--   [Define a domain user](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
--   [Define folder rights](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
--   [Define system user access](../../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
+-   [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before logging on the Copilot server](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before starting](../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
+-   [Define a domain user](../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
+-   [Define folder rights](../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
+-   [Define system user access](../../windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
 
 ## Run as administrator
 
@@ -97,7 +97,7 @@ Note the following prerequisites and limitations when installing Transfer CFT in
 -   If you install Transfer CFT in service mode, to launch the service on a specific account you must grant that user service rights to log in.  
     To grant this right, navigate to **Administrative Tools > Local Security Policy > Local Management > Local Policies**, and select **User Rights Assignment**. Then grant the user **Logon as a Service**.
 -   If you install Transfer CFTin service mode but want to launch the service on a Local System Account, be aware that you cannot start Transfer CFT from the Copilot UI.
--   See also, [Shared file system prerequisites](../../n_active_active/shared_file_prereq_win).
+-   See also, [Shared file system prerequisites](../prerequisites_win/shared_file_prereq_win.htm).
 
 ## Using a mapped drive
 

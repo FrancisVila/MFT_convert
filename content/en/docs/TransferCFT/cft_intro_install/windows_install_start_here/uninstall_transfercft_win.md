@@ -1,5 +1,5 @@
 {
-    "title": "Uninstall",
+    "title": "Uninstall ",
     "linkTitle": "Uninstall",
     "weight": "160"
 }This page describes how to uninstall Transfer CFT. When you uninstall a Transfer CFT, you lose the complete Transfer CFT
@@ -35,11 +35,11 @@ Some products support an installation in service mode with a user other than the
 If the domain field is not shown in the products service configuration dialog, then it must be introduced in the username field, using this format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>&lt;domain&gt;\&lt;username&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>&lt;domain&gt;\&lt;username&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 If it is a local user (a user that was created on the local machine) then the &lt;domain> field can be . or the &lt;hostname>.

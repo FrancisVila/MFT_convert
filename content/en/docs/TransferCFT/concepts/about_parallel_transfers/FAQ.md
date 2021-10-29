@@ -15,13 +15,13 @@ In general, you should base your MAXTRANS on the transfer peak in your daily act
 **Answer**: On a UNIX or Windows system, with an unlimited license, the maximum number of possible simultaneous connections between the 2 Transfer CFTs is 1000.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">More simultaneous sessions to a partner does not necessary give you the fastest transfer performance.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">More simultaneous sessions to a partner does not necessary give you the fastest transfer performance.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Q: Why doesn't the number of active simultaneous transfers match my license key maximum?
@@ -29,11 +29,11 @@ In general, you should base your MAXTRANS on the transfer peak in your daily act
 The Transfer CFT log shows 1000 transfers are authorized, but there are only a few hundred active:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTI18I On 1000 authorized simultaneous transfer(s), 256 is(are) active</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTI18I On 1000 authorized simultaneous transfer(s), 256 is(are) active         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Answer** **1**: The "authorized simultaneous transfers" value comes from the license key, while the number of active transfers comes from the parameter MAXTRANS.

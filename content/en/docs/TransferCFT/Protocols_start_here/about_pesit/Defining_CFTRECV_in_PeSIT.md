@@ -1,10 +1,8 @@
 {
-    "title": "Defining CFTRECV in PeSIT",
+    "title": "Defining CFTRECV in PeSIT ",
     "linkTitle": "Defining CFTRECV in PeSIT",
     "weight": "210"
-}# <span id="CFTRECV_parameters"></span>Defining CFTRECV in PeSIT 
-
-The CFTRECV object contains the parameters controlling the reception
+}The CFTRECV object contains the parameters controlling the reception
 of data and the storage of the data received. This
 topic describes the CFTRECV object parameters needed when using
 the PeSIT xxternal protocol.
@@ -75,7 +73,7 @@ in the catalog. Until the completion of the request, this entry keeps
 the state K and the reason 'RECV ALL'.
 
 When a file has been received in full, the end of transfer procedure
-that is defined in the [EXECRF](../../../c_intro_userinterfaces/command_summary/parameter_intro/execrf)
+that is defined in the [EXECRF](../../c_intro_userinterfaces/command_summary/parameter_intro/execrf)
 parameter is executed.
 
 -   \[STATE=K\], \[DIAGI=660\]
@@ -107,56 +105,56 @@ The table below summarizes the parameter values authorized as a function
 of the various functional levels negotiated for the protocol.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
+   <thead>
+      <tr class="header">
 <th colspan="3">Functional negotiated v</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="25%"><p>CFTRECV parameter </p></td>
-<td data-valign="top" width="17%"><p>PeSIT E  </p></td>
-<td data-valign="top" width="24%"><p>PeSIT E</p>
-<p>+</p>
-<p>Transfer CFT extensions </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="25%"><p>Generic IDF </p></td>
-<td data-valign="top" width="17%"><p>X </p></td>
-<td data-valign="top" width="24%"><p>X </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="25%"><p>NFNAME, NFVER<br />
-(reception in open mode) </p></td>
-<td data-valign="top" width="17%"><p>- </p></td>
-<td data-valign="top" width="24%"><p>X </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="25%"><p>NIDF </p></td>
-<td data-valign="top" width="17%"><p>string14 </p></td>
-<td data-valign="top" width="24%"><p>string32</p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="25%"><p>RAPPL </p></td>
-<td data-valign="top" width="17%"><p>string8 </p></td>
-<td data-valign="top" width="24%"><p>string48 </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="25%"><p>RUSER </p></td>
-<td data-valign="top" width="17%"><p>string8 </p></td>
-<td data-valign="top" width="24%"><p>string28 </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="25%"><p>SAPPL </p></td>
-<td data-valign="top" width="17%"><p>string8 </p></td>
-<td data-valign="top" width="24%"><p>string48 </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="25%"><p>SUSER </p></td>
-<td data-valign="top" width="17%"><p>string8 </p></td>
-<td data-valign="top" width="24%"><p>string28 </p></td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>CFTRECV parameter </p>         </td>
+         <td data-valign="top" width="17%">            <p>PeSIT E  </p>         </td>
+         <td data-valign="top" width="24%">            <p>PeSIT E</p>
+            <p>+</p>
+            <p>Transfer CFT extensions </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>Generic IDF </p>         </td>
+         <td data-valign="top" width="17%">            <p>X </p>         </td>
+         <td data-valign="top" width="24%">            <p>X </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>NFNAME, NFVER<br />
+(reception in open mode) </p>         </td>
+         <td data-valign="top" width="17%">            <p>- </p>         </td>
+         <td data-valign="top" width="24%">            <p>X </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>NIDF </p>         </td>
+         <td data-valign="top" width="17%">            <p>string14 </p>         </td>
+         <td data-valign="top" width="24%">            <p>string32</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>RAPPL </p>         </td>
+         <td data-valign="top" width="17%">            <p>string8 </p>         </td>
+         <td data-valign="top" width="24%">            <p>string48 </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>RUSER </p>         </td>
+         <td data-valign="top" width="17%">            <p>string8 </p>         </td>
+         <td data-valign="top" width="24%">            <p>string28 </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>SAPPL </p>         </td>
+         <td data-valign="top" width="17%">            <p>string8 </p>         </td>
+         <td data-valign="top" width="24%">            <p>string48 </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="25%">            <p>SUSER </p>         </td>
+         <td data-valign="top" width="17%">            <p>string8 </p>         </td>
+         <td data-valign="top" width="24%">            <p>string28 </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 -    X:  supported

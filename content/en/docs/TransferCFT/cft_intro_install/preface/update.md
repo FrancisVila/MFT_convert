@@ -1,12 +1,12 @@
 {
-    "title": "Update",
+    "title": "Update Transfer CFT ",
     "linkTitle": "Update",
     "weight": "210"
 }This section describes how to update your Transfer CFT HP NonStop by applying a service pack.
 
 The procedure consists of installing a service pack over an existing Transfer CFT installation of the same version. The update procedure uses the same format as for an installation.
 
-If you are not familiar with the installation procedure, you may want to first read [Install Transfer CFT](../installation) .
+If you are not familiar with the installation procedure, you may want to first read [Install Transfer CFT](installation) .
 
 ## Procedure
 
@@ -22,13 +22,13 @@ If you are not familiar with the installation procedure, you may want to first r
     The following example demonstrates a Transfer CFT 3.9 SP4 installation over an existing product installed in /home/cftuser/CFT33x.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 When you install a service pack, the contents of the home directory are updated, but the runtime directory remains untouched. This is so that your customizations, such as APIs, are not overwritten.

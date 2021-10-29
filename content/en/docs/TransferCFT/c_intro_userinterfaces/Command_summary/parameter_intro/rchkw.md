@@ -18,4 +18,4 @@ authorized by the receiver and negotiated during connection phase.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

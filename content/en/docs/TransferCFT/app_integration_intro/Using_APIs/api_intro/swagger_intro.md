@@ -16,16 +16,16 @@ Bearer authorization
 
 Copy your token from the Transfer CFT UI My Access Tokens page into the Value field and click Authorize. Click **Authorize**.
 
-![](authorization_swagger.png)
+![](/Images/TransferCFT/authorization_swagger.png)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See Generate an access token.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See Generate an access token.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Try it out option

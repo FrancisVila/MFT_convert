@@ -1,10 +1,8 @@
 {
-    "title": "Transfer owner assignment - CFTAPPL",
+    "title": "Assigning  a transfer owner",
     "linkTitle": "Transfer owner assignment - CFTAPPL",
     "weight": "240"
-}# <span id="kanchor65"></span><span id="Assigning_a_transfer_owner_CFTAPPL"></span>Assigning a transfer owner
-
-This section describes how to configure access management when not using Central Governance.
+}This section describes how to configure access management when not using Central Governance.
 
 For a specified transfer and file or message identifier, Transfer CFT
 assigns the USERID identifier defined in the corresponding CFTAPPL command.
@@ -13,7 +11,7 @@ request sender.
 
 If the security system is active, at least one default CFTAPPL command
 must exist for each transfer direction. The identifier used by this command
-is the default value defined in the general parameters. [\[CFTPARM\]](../../../../admin_intro/admin_config_commands/cftparm_general_parameters)
+is the default value defined in the general parameters. [\[CFTPARM\]](../../../admin_intro/admin_config_commands/cftparm_general_parameters)
 
 Identifiers with the same prefixes can be grouped together in a single
 CFTAPPL command.
@@ -37,9 +35,9 @@ must exist, irrespective of the LENAPPL value defined in CFTPARM.
 ### <span id="CFTAPPL_syntax"></span>CFTAPPL syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTAPPL    <br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTAPPL    <br />
      [MODE       =    
 {CREATE | DELETE | REPLACE},]<br />
      ID          =    
@@ -49,9 +47,9 @@ identifier,<br />
      [GROUPID    =    
 identifier,]<br />
      [DIRECT     =    
-{BOTH | RECV | SEND}]</td>
-</tr>
-</tbody>
+{BOTH | RECV | SEND}]         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Parameters
@@ -197,7 +195,7 @@ contains the USER3 userid:
 
 #### Requester/Sender with CFTAPPL
 
-<img src="server_sender_CFTAPPL.gif" width="527" height="133" />
+<img src="/Images/TransferCFT/requester_sender_CFTAPPL.gif" width="527" height="133" />
 
 #### Using the default CFTAPPL command
 
@@ -219,7 +217,7 @@ contains the USER3 userid:
 
 Requester/Sender with the Default CFTAPPL
 
-<img src="server_sender_CFTAPPL.gif" width="533" height="133" />
+<img src="/Images/TransferCFT/sender_rec_CFTAPPL_default.gif" width="533" height="133" />
 
 ### <span id="Server_sender_configuration"></span>Server/sender configuration
 
@@ -243,7 +241,7 @@ contains the USER3 userid:
 
 Requester/sender with CFTAPPL
 
-<img src="server_sender_CFTAPPL.gif" width="527" height="133" />
+<img src="/Images/TransferCFT/req_sender_with_CFTAPPL.gif" width="527" height="133" />
 
 #### Using the Default CFTAPPL Command
 
@@ -261,7 +259,7 @@ same IDF contains the USER3 userid. USER3 is the owner of the transfer.
 Server/sender with the default CFTAPPL
 SEND
 
-<img src="server_sender_CFTAPPL.gif" width="472" height="130" />
+<img src="/Images/TransferCFT/server_sender_CFTAPPL.gif" width="472" height="130" />
 
 The same processing takes place when the IMPL=YES option is set.
 

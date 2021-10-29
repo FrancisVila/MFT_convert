@@ -5,13 +5,13 @@
 }After adding a Windows service in command line, the default system user is the user that started the service. To define a specific user, you must edit the service properties in the Services page.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you plan to integrate Transfer CFT with <span>Central Governance</span> and also plan to use Service mode, please refer to the additional instructions in <a href="../post_install_transfercft">Service mode set up when using Central Governance</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you plan to integrate Transfer CFT with <span>Central Governance</span> and also plan to use Service mode, please refer to the additional instructions in <a href="post_install_transfercft">Service mode set up when using Central Governance</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Windows only
@@ -49,14 +49,14 @@ Using CFTUTIL activate the services for both Transfer CFT and Copilot with the 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=cft.nt.service_name, value=CFT36</p>
-<p>uconfset id=cft.nt.service_mode, value=yes</p>
-<p>uconfset id=copilot.nt.service_name, value=CFT_Copilot36</p>
-<p>uconfset id=copilot.nt.service_mode, value=yes</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=cft.nt.service_name, value=CFT36</p>
+            <p>uconfset id=cft.nt.service_mode, value=yes</p>
+            <p>uconfset id=copilot.nt.service_name, value=CFT_Copilot36</p>
+            <p>uconfset id=copilot.nt.service_mode, value=yes</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Service"></span>

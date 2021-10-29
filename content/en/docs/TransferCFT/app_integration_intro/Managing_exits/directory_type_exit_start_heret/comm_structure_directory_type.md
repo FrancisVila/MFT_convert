@@ -1,10 +1,8 @@
 {
-    "title": "Communication structure",
+    "title": "Communication structure - directory type",
     "linkTitle": "Communication structure",
     "weight": "360"
-}# <span id="Communication_structure_directory"></span>Communication structure - directory type
-
-This topic describes the structure for the communication area in a directory
+}This topic describes the structure for the communication area in a directory
 exit for C language as well as COBOL.
 
 ## <span id="Structure_in_C_Language"></span>Structure in C

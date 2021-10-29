@@ -6,6 +6,6 @@
 2.  Select File properties.
 3.  Select Multiple files.
 
-![](multiple_files.png)
+![](/Images/TransferCFT/multiple_files.png)
 
 In our example, you make the files SALES\_report, DAILY\_news, and INVENTORY available for an exchange.

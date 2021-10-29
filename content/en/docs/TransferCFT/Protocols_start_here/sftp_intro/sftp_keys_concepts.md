@@ -1,8 +1,8 @@
 {
-    "title": "SSH\u00a0concepts",
-    "linkTitle": "SSH\u00a0concepts",
+    "title": "SSH concepts",
+    "linkTitle": "SSH concepts",
     "weight": "150"
-}T**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**
+}T**he supported operating systems are listed in the** [Platform features](../../datasheet) **table.**
 
 The SSH protocol is an encrypted protocol that uses a client-server model to authenticate two parties and encrypt the data between them.
 
@@ -15,16 +15,16 @@ An SSH session is established in two steps:
 -   Agree on and establish encryption to protect future communication.
 -   Authenticate the user and determine if access to the server should be granted.
 
-If you are already familiar with SSH concepts are ready for details on configuring the CFTSSH object, please see [CFTSSH - Security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh).
+If you are already familiar with SSH concepts are ready for details on configuring the CFTSSH object, please see [CFTSSH - Security profile](../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are ready to generate a key pair, you can go directly to <a href="../new_pki_keys_use">Use PKIKEYGEN to generate and import a key pair</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are ready to generate a key pair, you can go directly to <a href="new_pki_keys_use">Use PKIKEYGEN to generate and import a key pair</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Negotiating a secured session
@@ -41,7 +41,7 @@ Once the secured communication is established, the client must be authenticated.
 
 ## Define the CFTSSH object
 
-Use the CFTSSH command to describe a Transfer CFT security profile. The CFTSSH definition contains the SSH parameter connection for SFTP either in server or client mode. See [CFTSSH - security profile](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh) for details.
+Use the CFTSSH command to describe a Transfer CFT security profile. The CFTSSH definition contains the SSH parameter connection for SFTP either in server or client mode. See [CFTSSH - security profile](../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh) for details.
 
 ## Transcoding in SFTP
 

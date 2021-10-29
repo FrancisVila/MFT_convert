@@ -12,4 +12,4 @@ The parameter is the PassPort entity password for a user's certificate (the pass
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

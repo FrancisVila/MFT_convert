@@ -57,13 +57,13 @@ The active/passive architecture requires a shared file system.
 The Transfer CFT multi-node architecture is based on hosts, nodes, a shared file system and a load balancer. Regardless of the number of servers hosting the nodes from outside the cluster, all of the nodes are viewed as a single Transfer CFT instance.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This section, and the multi-node sections that follow, are based on an active/active installation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This section, and the multi-node sections that follow, are based on an active/active installation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The multi-node setup comprises:
@@ -76,11 +76,11 @@ The multi-node setup comprises:
 
 Normal functioning
 
-![](api_multinode.png)
+![](/Images/TransferCFT/normal_multinode.png)
 
 If Host A goes down, then Host B takes over Node 1
 
-![](api_multinode.png)
+![](/Images/TransferCFT/host_down.png)
 
 ## Runtime files
 
@@ -103,13 +103,13 @@ The following internal datafiles are node specific, and the filename is flagged 
 -   Account file (cftaccnt00, cftaccnt01,...) located in &lt;cft\_runtime\_dir>/accnt
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Transfer CFT is sensitive to the shared file system's performance, as transfer requests perform concurrent access to the database (COM, catalog, parameters). We recommend a high-performance shared file system, a solid-state drive (SSD), a dedicated network link between the clients and the file system server, and low latency &lt; 2ms.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Transfer CFT is sensitive to the shared file system's performance, as transfer requests perform concurrent access to the database (COM, catalog, parameters). We recommend a high-performance shared file system, a solid-state drive (SSD), a dedicated network link between the clients and the file system server, and low latency &lt; 2ms.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Failover recovery
@@ -163,38 +163,38 @@ There are two types of requests, which may be handled differently depending on t
 
 #### Client transfer request
 
-![](api_multinode.png)
+![](/Images/TransferCFT/client_multinode_new.png)
 
 ## How remote request dispatching works
 
 All remote requests are going through a load balancer, server transfers, SOAP web-service requests, REST API requests, UI requests (Copilot applet application).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For z/OS platforms, refer to VIPA load balancing in the <em>Transfer CFT z/OS Installation and Operation Guide</em>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For z/OS platforms, refer to VIPA load balancing in the <em>Transfer CFT z/OS Installation and Operation Guide</em>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Server transfer dispatching
 
-![](api_multinode.png)
+![](/Images/TransferCFT/server_multi.png)
 
 #### Web API request dispatching
 
-![](api_multinode.png)
+![](/Images/TransferCFT/api_multinode.png)
 
 ## Troubleshooting multi-node issues
 
-For information on troubleshooting multi-node issues, please refer to [Troubleshoot multi-node](../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode).
+For information on troubleshooting multi-node issues, please refer to [Troubleshoot multi-node](troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_multinode).
 
 Related topics
 
 -   [Multi-node commands](multi_node_commands)
--   [Managing multi-node](set_up_multinode.htm)
--   [Unified configuration parameters](../cft_intro_install/about_this_document_zos/c_multinode_zos/multi_node_parameters)
--   [Configure multi-node simultaneous transfers](../concepts/about_parallel_transfers/multi_node_simultaneous_transfers)
--   [Using a shared file system](../cft_intro_install/unix_install_start_here/before_you_start_unix/n_active_active/shared_file_prereq_ux/activeactive_shared_file_systems)
+-   Managing multi-node
+-   [Unified configuration parameters](multi_node_parameters)
+-   [Configure multi-node simultaneous transfers](concepts/about_parallel_transfers/multi_node_simultaneous_transfers)
+-   [Using a shared file system](activeactive_shared_file_systems)

@@ -7,7 +7,7 @@
 -   To use web services to submit a high number of transfer requests.
 -   To trace exchanges using the transfer requests' IDT and IDTU.
 
-When using Web services with Transfer CFT, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to [About synchronous communication](../../../synch_comm_tcpip_intro) for information on configuring the client.
+When using Web services with Transfer CFT, select the type media communication type, either COM FILE or COM TCP, to use for transfer requests (SEND/RECV), or administration services (such as HALT). If you are using Web services with TCP as the selected COM media type, refer to [About synchronous communication](../../synch_comm_tcpip_intro) for information on configuring the client.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ You can access a full list of available operations at: &lt;Transfer\_CFT\_instal
 
 ## Select communication media
 
-Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tcpip_intro), the service is the same; the only difference in comportment is the performance and error management (including transfer tracking).
+Regardless of the mode you select, COM FILE or [COM TCP](../../synch_comm_tcpip_intro), the service is the same; the only difference in comportment is the performance and error management (including transfer tracking).
 
 ### COM FILE
 
@@ -30,13 +30,13 @@ Regardless of the mode you select, COM FILE or [COM TCP](../../../synch_comm_tc
 -   Cons: The performance response time per request is at the very least copilot.cft.timerwaitcftcata seconds, where the maximum time could be copilot.cft.timerwaitcftcata multiplied by the `copilot.cft.nbwaitcftcata` value.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If Transfer CFT is not started the transfer requests accumulate in the communication file. However the communication file size is limited. If the com file is full, requests fail leading to an error <span>&lt;RETURN_MESSAGE&gt;ERROR : mediacom is full (-411/0). CSCcom()&lt;/RETURN_MESSAGE&gt;</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If Transfer CFT is not started the transfer requests accumulate in the communication file. However the communication file size is limited. If the com file is full, requests fail leading to an error <span>&lt;RETURN_MESSAGE&gt;ERROR : mediacom is full (-411/0). CSCcom()&lt;/RETURN_MESSAGE&gt;</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### COM TCP
@@ -61,13 +61,13 @@ When using either COM FILE or COM TCP, the copilot.misc.maxnbprocess defines 
 Any requests that exceed the limit cause a network error with either a " connection refused" or "connection closed by remote" type of error.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In multi-node/multi-host on a Transfer CFT Copilot server, the maximum number of parallel requests is <span>copilot.misc.maxnbprocess</span> multiplied by n (where n is the number of hosts).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In multi-node/multi-host on a Transfer CFT Copilot server, the maximum number of parallel requests is <span>copilot.misc.maxnbprocess</span> multiplied by n (where n is the number of hosts).         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create a request
@@ -83,78 +83,78 @@ The following procedure is based on using the SoapUI tool. The exact steps may v
     -   XFER\_CAT\_SELECT to monitor a transfer request
 4.  Enter the Copilot server URL in the request window: &lt;host>:&lt;copilot server port>
 5.  Modify the request as needed. See also:
-    -   [Perform a send file request](../example_send_request)
-    -   [Perform a catalog search request](../example_search_catalog)
+    -   [Perform a send file request](example_send_request)
+    -   [Perform a catalog search request](example_search_catalog)
 6.  Submit the request.
-7.  Check the result. See [successful or unsuccessful responses.](../example_send_request)
+7.  Check the result. See [successful or unsuccessful responses.](example_send_request)
 
 ## Return codes
 
 When using Web services the return codes are as follows:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Description</th>
-<th><p>XTS </p>
-<p>mapping</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>RCVA_RESPONSE_NOK_VALUE_ERROR</td>
-<td>Value error</td>
-<td>10</td>
-</tr>
-<tr class="even">
-<td>RCVA_RESPONSE_NOK_NOT_FOUND</td>
-<td>Not found</td>
-<td>11</td>
-</tr>
-<tr class="odd">
-<td>RCVA_PASSPORT_ERROR</td>
-<td>Passport AM interrogation error</td>
-<td>12</td>
-</tr>
-<tr class="even">
-<td>RCVA_RESPONSE_OK</td>
-<td>Ok</td>
-<td>3</td>
-</tr>
-<tr class="odd">
-<td>RCVA_RESPONSE_OK_POSTED</td>
-<td>Inquiry filed</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>RCVA_RESPONSE_OK_EXECUTED</td>
-<td>Inquiry executed</td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td>RCVA_RESPONSE_NOK</td>
-<td>Error</td>
-<td>6</td>
-</tr>
-<tr class="even">
-<td>RCVA_RESPONSE_NOK_IO_ERROR</td>
-<td>Error when opening, writing, reading, or closing</td>
-<td>7</td>
-</tr>
-<tr class="odd">
-<td>RCVA_RESPONSE_NOK_MEMORY_ERROR</td>
-<td>Memory error</td>
-<td>8</td>
-</tr>
-<tr class="even">
-<td>RCVA_RESPONSE_NOK_PARAMETER_ERROR</td>
-<td>Parameter error</td>
-<td>9</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Name</th>
+         <th>Description</th>
+         <th>            <p>XTS </p>
+            <p>mapping</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>RCVA_RESPONSE_NOK_VALUE_ERROR         </td>
+         <td>Value error         </td>
+         <td>10         </td>
+      </tr>
+      <tr class="even">
+         <td>RCVA_RESPONSE_NOK_NOT_FOUND         </td>
+         <td>Not found         </td>
+         <td>11         </td>
+      </tr>
+      <tr class="odd">
+         <td>RCVA_PASSPORT_ERROR         </td>
+         <td>Passport AM interrogation error         </td>
+         <td>12         </td>
+      </tr>
+      <tr class="even">
+         <td>RCVA_RESPONSE_OK         </td>
+         <td>Ok         </td>
+         <td>3         </td>
+      </tr>
+      <tr class="odd">
+         <td>RCVA_RESPONSE_OK_POSTED         </td>
+         <td>Inquiry filed         </td>
+         <td>4         </td>
+      </tr>
+      <tr class="even">
+         <td>RCVA_RESPONSE_OK_EXECUTED         </td>
+         <td>Inquiry executed         </td>
+         <td>5         </td>
+      </tr>
+      <tr class="odd">
+         <td>RCVA_RESPONSE_NOK         </td>
+         <td>Error         </td>
+         <td>6         </td>
+      </tr>
+      <tr class="even">
+         <td>RCVA_RESPONSE_NOK_IO_ERROR         </td>
+         <td>Error when opening, writing, reading, or closing         </td>
+         <td>7         </td>
+      </tr>
+      <tr class="odd">
+         <td>RCVA_RESPONSE_NOK_MEMORY_ERROR         </td>
+         <td>Memory error         </td>
+         <td>8         </td>
+      </tr>
+      <tr class="even">
+         <td>RCVA_RESPONSE_NOK_PARAMETER_ERROR         </td>
+         <td>Parameter error         </td>
+         <td>9         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
-[About Web services](../../../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services)
+[About Web services](transfercft/app_integration_intro/using_apis/about_web_services)

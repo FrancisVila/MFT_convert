@@ -27,4 +27,4 @@ initial value.
 
 Activate the SSL cache.
 
-[Return to Command index](../../)
+[Return to Command index](../)

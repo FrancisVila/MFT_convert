@@ -100,4 +100,4 @@ The use of FLRECL is optional:
     -   4096 for binary files (FTYPE=B)
     -   4096 for stream text files (FTYPE=J)
 
-[Return to Command index](../../)
+[Return to Command index](../)

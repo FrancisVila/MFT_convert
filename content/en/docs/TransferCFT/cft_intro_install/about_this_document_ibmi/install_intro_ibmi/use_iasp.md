@@ -1,5 +1,5 @@
 {
-    "title": "Use an IASP (optionally)",
+    "title": "Use an independent ASP (optionally)",
     "linkTitle": "Use an IASP (optionally)",
     "weight": "210"
 }## About independent ASPs (IASP)
@@ -14,27 +14,27 @@ You can use the following commands to manage IASP:
 
 -   To start or stop an IASP, use the command:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>WRKDEVD</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>WRKDEVD         </td>
+          </tr>
+       </tbody>
     </table>
 -   To activate an environment, use the command:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>SETASPGRP (ex: ‘SETASPGRP ASPGRP(IASP1)’)</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>SETASPGRP (ex: ‘SETASPGRP ASPGRP(IASP1)’)</p>         </td>
+          </tr>
+       </tbody>
     </table>
 -   To disable an environment, use the command:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>SETASPGRP ASPGRP(*NONE)</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>SETASPGRP ASPGRP(*NONE)</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ## Use an IASP in a Transfer CFT environment

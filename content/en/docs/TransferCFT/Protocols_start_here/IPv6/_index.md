@@ -1,7 +1,7 @@
 {
-    "title": "Networks",
-    "linkTitle": "Networks",
-    "weight": "150"
+    "title": "Implementing IPv6",
+    "linkTitle": "Use IPv6 (UCONF) ",
+    "weight": "170"
 }The code in Transfer CFT that manages Internet addresses and name resolution is based on the POSIX Protocol Independent API, namely the getaddrinfo() service and related functions.
 
 The use of the POSIX API by application software preserves IPv4 addressing support and allows transparent support for IPv6 addressing at the software level, provided the OS supports this and is configured for IPv6.
@@ -12,28 +12,28 @@ Enabling IPv6 support for applications may have adverse effects on the behavior 
 
 ### <span id="Unified configuration settings"></span>Unified configuration settings
 
-To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to NO using either the CFTUTIL uconfset command or the UI [Unified configuration](../../admin_intro/uconf) option.
+To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to NO using either the CFTUTIL uconfset command or the UI [Unified configuration](../admin_intro/uconf) option.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ipv6.disable_connect</td>
-<td><u>YES</u> | NO</td>
-<td><p>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.</p></td>
-</tr>
-<tr class="even">
-<td>ipv6.disable_listen</td>
-<td><u>YES</u> | NO</td>
-<td>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Value</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>ipv6.disable_connect         </td>
+         <td><u>YES</u> | NO         </td>
+         <td>            <p>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ipv6.disable_listen         </td>
+         <td><u>YES</u> | NO         </td>
+         <td>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can also configure IPv6 addresses instead of names in the Transfer CFT configuration files. As the configuration options only apply to hostname resolution, Transfer CFT will use the IPv6 addresses, regardless of the IPv6 option settings.
@@ -46,13 +46,13 @@ When a name resolution request returns a list of several entries, Transfer CFT t
 
 When ipv6.disable\_listen is set to No, the hostname used by Transfer CFT to listen for incoming connections can refer to an IPv4 address, an IPv6 address, or  a list of addresses of any type. If the name resolution request returns a list with several results, Transfer CFT listens only to the first entry in the list.
 
-When the resolution list contains both IPv4 and IPv6 entries, the first entry generally refers to an IPv6 address, although all operating systems are not guaranteed to respond this way. When Transfer CFT listens on an IPv6 address of a network interface, it may or may not also receive IPv4 incoming connections targeting this interface. See [Hybrid dual-stack implementation](#hybrid%20dual-stack%20implementation).
+When the resolution list contains both IPv4 and IPv6 entries, the first entry generally refers to an IPv6 address, although all operating systems are not guaranteed to respond this way. When Transfer CFT listens on an IPv6 address of a network interface, it may or may not also receive IPv4 incoming connections targeting this interface. See [Hybrid dual-stack implementation](#Hybrid%20dual-stack%20implementation).
 
 While you can configure the two IPv6 UCONF parameters independently, it is recommended that you **not** set ipv6.disable\_listen to No, and ipv6.disable\_connect to Yes.
 
 ### <span id="host attributes in CFTNET"></span>Setting the host attributes in CFTNET
 
-Independently of the configuration that applies to all TCP related services in Transfer CFT, two new names can be used for the CFTNET [host](../../c_intro_userinterfaces/command_summary/parameter_intro/host) attribute. These host names, IN6ADDR\_ANY and IN4ADDR\_ANY can be used in the place of INADDR\_ANY. These names indicate the listening point for all protocols for the defined CFTNET as:
+Independently of the configuration that applies to all TCP related services in Transfer CFT, two new names can be used for the CFTNET [host](../../CFTUTIL/Parameter_index/host.htm) attribute. These host names, IN6ADDR\_ANY and IN4ADDR\_ANY can be used in the place of INADDR\_ANY. These names indicate the listening point for all protocols for the defined CFTNET as:
 
 -   IN6ADDR\_ANY: listens for any IPv6 address
 -   IN4ADDR\_ANY: listens for any IPV4 address
@@ -84,42 +84,42 @@ If IPv6 is not properly configured, performance may be affected. Use the followi
 Tuning parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>cft.ipv6.set_ai_numerichost</p></td>
-<td>Yes</td>
-<td><ul>
-<li><span>Yes</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.</li>
-<li><span>No</span>: Use DNS requests for all hostnames, including numeric.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>cft.ipv6.set_ai_numericserv</td>
-<td>Yes</td>
-<td><ul>
-<li><span>Yes</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.</li>
-<li><span>No</span>: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>cft.ipv6.use_ipv4_legacy_resolver</td>
-<td>No</td>
-<td><ul>
-<li><span>Yes</span>: Use legacy IPv4 only with the host and
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cft.ipv6.set_ai_numerichost</p>         </td>
+         <td>Yes         </td>
+         <td>            <ul>
+               <li><span>Yes</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.               </li>
+               <li><span>No</span>: Use DNS requests for all hostnames, including numeric.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.ipv6.set_ai_numericserv         </td>
+         <td>Yes         </td>
+         <td>            <ul>
+               <li><span>Yes</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.               </li>
+               <li><span>No</span>: The getaddrinfo system API will perform a service name translation even if unnecessary.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.ipv6.use_ipv4_legacy_resolver         </td>
+         <td>No         </td>
+         <td>            <ul>
+               <li><span>Yes</span>: Use legacy IPv4 only with the host and
 service names resolution APIs, gethostbyname() and getservbyname().
 This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation,
-etc.</li>
-<li><span>No</span>: Use IPv6 functionality.</li>
-</ul></td>
-</tr>
-</tbody>
+etc.               </li>
+               <li><span>No</span>: Use IPv6 functionality.               </li>
+            </ul>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### IPv6 support
@@ -129,34 +129,34 @@ Transfer CFT provides support for both IPV4 and IPV6.
 Enable IPv6
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ipv6.disable_connect</p></td>
-<td><p><strong>No</strong> indicates that an address or a name used by <span>Transfer CFT</span> to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
-</tr>
-<tr class="even">
-<td>ipv6.disable_listen</td>
-<td><p><strong>No</strong> indicates that an address or name used by <span>Transfer CFT</span> to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
-<p>When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
-</tr>
-<tr class="odd">
-<td colspan="2"><table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is recommended that you do <strong>not</strong> set<span> ipv6.disable_listen</span> to <span>No</span>, and <span>ipv6.disable_connect</span> to <span>Yes</span>.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>ipv6.disable_connect</p>         </td>
+         <td>            <p><strong>No</strong> indicates that an address or a name used by <span>Transfer CFT</span> to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ipv6.disable_listen         </td>
+         <td>            <p><strong>No</strong> indicates that an address or name used by <span>Transfer CFT</span> to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
+            <p>When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td colspan="2"><table data-cellpadding="0" data-cellspacing="0">
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is recommended that you do <strong>not</strong> set<span> ipv6.disable_listen</span> to <span>No</span>, and <span>ipv6.disable_connect</span> to <span>Yes</span>.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Reference materials"></span>Reference materials
@@ -168,6 +168,6 @@ Transfer CFT 3.9 code changes are based on the following documentation:
 
 Related topics
 
--   [Command guide (CFTNET)](../../c_intro_userinterfaces/command_summary)
--   [Unified configuration (CFTUTIL)](../../admin_intro/uconf/uconf_w_cftutil)
--   [Unified configuration (GUI)](../../admin_intro/uconf/uconf_interface_actions)
+-   [Command guide (CFTNET)](../../Command_summary.htm)
+-   [Unified configuration (CFTUTIL)](../../uconf/uconf_w_cftutil.htm)
+-   [Unified configuration (GUI)](../../GUI/UCONF_interface_actions.htm)

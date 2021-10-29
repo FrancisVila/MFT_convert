@@ -17,55 +17,55 @@ Three read commands are available and described in this section:
 The BEGSELCA command defines the selection criteria for transfers. The FTEMOIN field sets the name of a file to be used as a control to compare the transferred file with the control file. The compared file is opened with the same file attributes as those found in the catalog.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>BEGSELCA IDA = STR,</p>
-<p>DIRECT = STR,</p>
-<p>IDF = STR,</p>
-<p>PART = STR,</p>
-<p>STATE = STR,</p>
-<p>IDF = STR,</p>
-<p>NIDF = STR,</p>
-<p>MSG = STR,</p>
-<p>SUSER = STR,</p>
-<p>RUSER = STR,</p>
-<p>SAPPL = STR,</p>
-<p>SPART = STR,</p>
-<p>RAPPL = STR,</p>
-<p>RPART</p>
-<p>PARM = STR,</p>
-<p>STATED = STR,</p>
-<p>FRECFM = STR,</p>
-<p>NRECFM = STR,</p>
-<p>FNAME = STR,</p>
-<p>NFNAME = STR,</p>
-<p>DIAGI = STR,</p>
-<p>DIAGP = STR,</p>
-<p>FLRECL = STR,</p>
-<p>NLRECL = STR,</p>
-<p>FBLKSIZE = STR,</p>
-<p>NBLKSIZE = STR,</p>
-<p>USERID = STR,</p>
-<p>JOBNAME = STR,</p>
-<p>PROT = STR</p>
-<p>PRI = STR,</p>
-<p>NCOMP = STR,</p>
-<p>FSPACE = STR,</p>
-<p>NSPACE = STR,</p>
-<p>NCODE = STR,</p>
-<p>FCODE = STR,</p>
-<p>FREC = STR,</p>
-<p>NREC = STR,</p>
-<p>FCAR = STR,</p>
-<p>NCAR = STR,</p>
-<p>ECAR = STR,</p>
-<p>FTIME = STR,</p>
-<p>FDATE = STR,</p>
-<p>FRECFM = STR</p>
-<p>NRECFM = STR</p>
-<p>FTEMOIN = STR</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>BEGSELCA IDA = STR,</p>
+            <p>DIRECT = STR,</p>
+            <p>IDF = STR,</p>
+            <p>PART = STR,</p>
+            <p>STATE = STR,</p>
+            <p>IDF = STR,</p>
+            <p>NIDF = STR,</p>
+            <p>MSG = STR,</p>
+            <p>SUSER = STR,</p>
+            <p>RUSER = STR,</p>
+            <p>SAPPL = STR,</p>
+            <p>SPART = STR,</p>
+            <p>RAPPL = STR,</p>
+            <p>RPART</p>
+            <p>PARM = STR,</p>
+            <p>STATED = STR,</p>
+            <p>FRECFM = STR,</p>
+            <p>NRECFM = STR,</p>
+            <p>FNAME = STR,</p>
+            <p>NFNAME = STR,</p>
+            <p>DIAGI = STR,</p>
+            <p>DIAGP = STR,</p>
+            <p>FLRECL = STR,</p>
+            <p>NLRECL = STR,</p>
+            <p>FBLKSIZE = STR,</p>
+            <p>NBLKSIZE = STR,</p>
+            <p>USERID = STR,</p>
+            <p>JOBNAME = STR,</p>
+            <p>PROT = STR</p>
+            <p>PRI = STR,</p>
+            <p>NCOMP = STR,</p>
+            <p>FSPACE = STR,</p>
+            <p>NSPACE = STR,</p>
+            <p>NCODE = STR,</p>
+            <p>FCODE = STR,</p>
+            <p>FREC = STR,</p>
+            <p>NREC = STR,</p>
+            <p>FCAR = STR,</p>
+            <p>NCAR = STR,</p>
+            <p>ECAR = STR,</p>
+            <p>FTIME = STR,</p>
+            <p>FDATE = STR,</p>
+            <p>FRECFM = STR</p>
+            <p>NRECFM = STR</p>
+            <p>FTEMOIN = STR</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -135,39 +135,39 @@ The ENDSELCA function finishes the selection reading. This command is imperative
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LONG NAME = VAR, INIT = 0</p>
-<p>LONG NAME = CMP, INIT = 0</p>
-<p>CHAR NAME = STRNIL , SIZE = 10, INIT = NIL</p>
-<p>CHAR NAME = PART , SIZE = 10</p>
-<p>/* set the variable _ECHO to 0 to exclude messages related to WHILE and IF */</p>
-<p>/* to customize the display. */</p>
-<p>_MOV NAME=_ECHO,VALUE=0</p>
-<p>BEGSELCA DIRECT=SEND,DIAGI=406</p>
-<p>PRINT MSG='Partner DTSA File Transfer Diags Appli. '</p>
-<p>PRINT MSG=' Id. Id. CFT Protocol Id. '</p>
-<p>PRINT MSG='-------- ---- -------- -------- --- -------- --------'</p>
-<p>WHILE NAME = VAR, VALUE = 0, TYPE = EQU</p>
-<p>GETCAT</p>
-<p>Deleted: 1.3.</p>
-<p>Deleted: 1.3.1.</p>
-<p>Deleted: 1.3.</p>
-<p>Deleted: 1.3.1.</p>
-<p>Deleted:</p>
-<p>13</p>
-<p>_STRCPY NAME=PART, STR=%_CAT_PART%</p>
-<p>_STRCMP NAME=PART, STR=STRNIL ,RC=CMP</p>
-<p>IF NAME=CMP, VALUE=0, TYPE=EQU</p>
-<p>BRKWHILE</p>
-<p>ENDIF</p>
-<p>PRINT MSG='%[-8.8]_CAT_PART% %_CAT_DIRECT%%_CAT_TYP%%_CAT_STATE% %[-</p>
-<p>8.8]_CAT_IDF% %_CAT_IDT% %_CAT_DIAGI% %_CAT_DIAGP% %_CAT_IDA%'</p>
-<p>ENDWHILE</p>
-<p>ENDSELCA</p>
-<p>EXIT</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LONG NAME = VAR, INIT = 0</p>
+            <p>LONG NAME = CMP, INIT = 0</p>
+            <p>CHAR NAME = STRNIL , SIZE = 10, INIT = NIL</p>
+            <p>CHAR NAME = PART , SIZE = 10</p>
+            <p>/* set the variable _ECHO to 0 to exclude messages related to WHILE and IF */</p>
+            <p>/* to customize the display. */</p>
+            <p>_MOV NAME=_ECHO,VALUE=0</p>
+            <p>BEGSELCA DIRECT=SEND,DIAGI=406</p>
+            <p>PRINT MSG='Partner DTSA File Transfer Diags Appli. '</p>
+            <p>PRINT MSG=' Id. Id. CFT Protocol Id. '</p>
+            <p>PRINT MSG='-------- ---- -------- -------- --- -------- --------'</p>
+            <p>WHILE NAME = VAR, VALUE = 0, TYPE = EQU</p>
+            <p>GETCAT</p>
+            <p>Deleted: 1.3.</p>
+            <p>Deleted: 1.3.1.</p>
+            <p>Deleted: 1.3.</p>
+            <p>Deleted: 1.3.1.</p>
+            <p>Deleted:</p>
+            <p>13</p>
+            <p>_STRCPY NAME=PART, STR=%_CAT_PART%</p>
+            <p>_STRCMP NAME=PART, STR=STRNIL ,RC=CMP</p>
+            <p>IF NAME=CMP, VALUE=0, TYPE=EQU</p>
+            <p>BRKWHILE</p>
+            <p>ENDIF</p>
+            <p>PRINT MSG='%[-8.8]_CAT_PART% %_CAT_DIRECT%%_CAT_TYP%%_CAT_STATE% %[-</p>
+            <p>8.8]_CAT_IDF% %_CAT_IDT% %_CAT_DIAGI% %_CAT_DIAGP% %_CAT_IDA%'</p>
+            <p>ENDWHILE</p>
+            <p>ENDSELCA</p>
+            <p>EXIT</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### MQUERY
@@ -177,13 +177,13 @@ The ENDSELCA function finishes the selection reading. This command is imperative
 The MQUERY command displays the current log content, the catalog and cache for the Transfer CFT.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>MQUERY OBJECT = STR,</p>
-<p>      CONTENT = STR,</p>
-<p>      NAME = STR,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>MQUERY OBJECT = STR,</p>
+            <p>      CONTENT = STR,</p>
+            <p>      NAME = STR,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -199,28 +199,28 @@ The MQUERY command displays the current log content, the catalog and cache for 
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>MQUERY NAME=CAT,CONTENT=FULL</p>
-<p>CFTI24I =========================== TRANSFERS ==================================</p>
-<p>CFTI24I pri minTime minDate reqTime reqDate cat_blk part</p>
-<p>CFTI24I ======================================================================</p>
-<p>CFTI24I Transfers_Non_Ready : 3</p>
-<p>CFTI24I 128 11:52:27 TODAY 11:50:27 TODAY 180 LOOP</p>
-<p>CFTI24I 128 12:15:50 TODAY 11:50:50 TODAY 182 LOOP</p>
-<p>CFTI24I 128 12:40:41 TODAY 11:50:41 TODAY 181 LOOP</p>
-<p>CFTI24I Transfers_Ready : 0 ( 0 Partners )</p>
-<p>CFTI24I Transfers_Time__Locked : 0 ( 0 Partners )</p>
-<p>CFTI24I Transfers_State_Locked : 0 ( 0 Partners )</p>
-<p>CFTI24I ======================== PARTNERS =====================================</p>
-<p>CFTI24I name count state locked diag diagp minTime minDate</p>
-<p>CFTI24I ======================================================================</p>
-<p>CFTI24I Partners : 1</p>
-<p>CFTI24I LOOP 3 NRDY 0 0</p>
-<p>CFTI24I Partners_Ready : 0</p>
-<p>CFTI24I Partners_Time__Locked : 0</p>
-<p>CFTI24I Partners_State_Locked : 0</p>
-<p>MQUERY Treated for USER userid</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>MQUERY NAME=CAT,CONTENT=FULL</p>
+            <p>CFTI24I =========================== TRANSFERS ==================================</p>
+            <p>CFTI24I pri minTime minDate reqTime reqDate cat_blk part</p>
+            <p>CFTI24I ======================================================================</p>
+            <p>CFTI24I Transfers_Non_Ready : 3</p>
+            <p>CFTI24I 128 11:52:27 TODAY 11:50:27 TODAY 180 LOOP</p>
+            <p>CFTI24I 128 12:15:50 TODAY 11:50:50 TODAY 182 LOOP</p>
+            <p>CFTI24I 128 12:40:41 TODAY 11:50:41 TODAY 181 LOOP</p>
+            <p>CFTI24I Transfers_Ready : 0 ( 0 Partners )</p>
+            <p>CFTI24I Transfers_Time__Locked : 0 ( 0 Partners )</p>
+            <p>CFTI24I Transfers_State_Locked : 0 ( 0 Partners )</p>
+            <p>CFTI24I ======================== PARTNERS =====================================</p>
+            <p>CFTI24I name count state locked diag diagp minTime minDate</p>
+            <p>CFTI24I ======================================================================</p>
+            <p>CFTI24I Partners : 1</p>
+            <p>CFTI24I LOOP 3 NRDY 0 0</p>
+            <p>CFTI24I Partners_Ready : 0</p>
+            <p>CFTI24I Partners_Time__Locked : 0</p>
+            <p>CFTI24I Partners_State_Locked : 0</p>
+            <p>MQUERY Treated for USER userid</p>         </td>
+      </tr>
+   </tbody>
 </table>

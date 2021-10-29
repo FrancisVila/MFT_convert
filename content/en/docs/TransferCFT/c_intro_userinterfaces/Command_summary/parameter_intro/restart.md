@@ -25,6 +25,6 @@ Option to manage the restart.
 -   Yes: Perform a restart
 -   No: No restart following shut down
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

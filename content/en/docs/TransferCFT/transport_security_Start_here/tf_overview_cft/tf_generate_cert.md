@@ -1,5 +1,5 @@
 {
-    "title": "Generate a certificate",
+    "title": "How to generate a certificate for Trusted File",
     "linkTitle": "Generate a certificate",
     "weight": "250"
 }## How to generate a certificate with XCA
@@ -10,7 +10,7 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 
     -   Enter a password to protect the database that contains your certificate.
 
-    ![Certificate and key management screen shot](cert_tab.png)
+    ![Certificate and key management screen shot](/Images/TransferCFT/XCA_db_tab.png)
 
 2.  Select the Certificates tab.
     -   Select: New Certificate
@@ -45,7 +45,7 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 
     -   Inform: "Subject alternative Name"
 
-    ![Create certificate screen with selected Extension tab](cert_tab.png)
+    ![Create certificate screen with selected Extension tab](/Images/TransferCFT/XCA_tab.png)
 
 6.  In the Key Usage tab:
     -   In "Key Usage", select :
@@ -93,21 +93,21 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 To create a self signed certificate:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out XPP_Sample_User1.pem -keyout MyKey.key</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out XPP_Sample_User1.pem -keyout MyKey.key</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Export the certificate in PKCS12 format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>openssl pkcs12 -export -out XPP_Sample_User1.p12 -inkey MyKey.key -in XPP_Sample_User1.pem</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>openssl pkcs12 -export -out XPP_Sample_User1.p12 -inkey MyKey.key -in XPP_Sample_User1.pem</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Use the CFTTF utility to generate your passphrase
@@ -129,32 +129,32 @@ OUTPUT: m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if XPP\_Sample\_User1.pem is in the /home/cft/runtime/conf/tf/certs/pub folder, then:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&lt;pkiEntity id="user1_pub"&gt;</p>
-<p>&lt;certificate&gt;</p>
-<p>&lt;format&gt;PEM&lt;/format&gt;</p>
-<p>&lt;location&gt;/home/cft/runtime/conf/tf/certs/priv/XPP_Sample_User1.p12&lt;/location&gt;</p>
-<p>&lt;/certificate&gt;</p>
-<p>&lt;/pkiEntity&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&lt;pkiEntity id="user1_pub"&gt;</p>
+            <p>&lt;certificate&gt;</p>
+            <p>&lt;format&gt;PEM&lt;/format&gt;</p>
+            <p>&lt;location&gt;/home/cft/runtime/conf/tf/certs/priv/XPP_Sample_User1.p12&lt;/location&gt;</p>
+            <p>&lt;/certificate&gt;</p>
+            <p>&lt;/pkiEntity&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if XPP\_Sample\_User1.p12 is in the /home/cft/runtime/conf/tf/certs/priv folder and the password=Axway, then:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&lt;pkiEntity id="user1_priv"&gt;</p>
-<p>&lt;certificate&gt;</p>
-<p>&lt;format&gt;PKCS#12&lt;/format&gt;</p>
-<p>&lt;location&gt;/home/cft/runtime/conf/tf/certs/privXPP_Sample_User1.p12&lt;/location&gt;</p>
-<p>&lt;passPhrase&gt;m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=&lt;/passPhrase&gt;</p>
-<p>&lt;/certificate&gt;</p>
-<p>&lt;/pkiEntity&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&lt;pkiEntity id="user1_priv"&gt;</p>
+            <p>&lt;certificate&gt;</p>
+            <p>&lt;format&gt;PKCS#12&lt;/format&gt;</p>
+            <p>&lt;location&gt;/home/cft/runtime/conf/tf/certs/privXPP_Sample_User1.p12&lt;/location&gt;</p>
+            <p>&lt;passPhrase&gt;m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=&lt;/passPhrase&gt;</p>
+            <p>&lt;/certificate&gt;</p>
+            <p>&lt;/pkiEntity&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Update your Trusted File encoding/decoding procedures
@@ -166,14 +166,14 @@ In the examples on this page, we changed the public and private keys for the use
 As the private key `user1_priv` is referenced in` enfile_cms.xms` file , you must change the passphrase in the &lt;signature> section as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&lt;signature requested="yes"&gt;</p>
-<p>&lt;signer&gt;</p>
-<p>&lt;signatureAlgorithm&gt;sha1WithRsaEncryption&lt;/signatureAlgorithm&gt;</p>
-<p>&lt;pkiEntity id="user1_priv" password="m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE="&gt;&lt;/pkiEntity&gt;</p>
-<p>&lt;/signer&gt;</p>
-<p>&lt;/signature&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&lt;signature requested="yes"&gt;</p>
+            <p>&lt;signer&gt;</p>
+            <p>&lt;signatureAlgorithm&gt;sha1WithRsaEncryption&lt;/signatureAlgorithm&gt;</p>
+            <p>&lt;pkiEntity id="user1_priv" password="m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE="&gt;&lt;/pkiEntity&gt;</p>
+            <p>&lt;/signer&gt;</p>
+            <p>&lt;/signature&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>

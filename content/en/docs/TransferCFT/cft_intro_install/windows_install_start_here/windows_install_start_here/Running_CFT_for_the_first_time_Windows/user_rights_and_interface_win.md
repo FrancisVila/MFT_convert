@@ -1,15 +1,15 @@
 {
-    "title": "Defining user rights ",
+    "title": "Defining user rights Windows",
     "linkTitle": "Defining user rights ",
     "weight": "240"
 }Before you can start Transfer CFT from the Transfer CFT Copilot server, the Copilot server must be started. Additionally you will need rights to log on to this server. The overall process requires that you:
 
--   [Define rights before starting the Transfer CFT UI server (Copilot)](#define%20rights%20before%20starting%20the%20cft%c2%a0navigator%20server)
--   [Define rights before logging on the Transfer CFT UI server (Copilot)](#define%20rights%20before%20logging%20on%20the%20cft%c2%a0navigator%20server)
--   [Define rights before starting Transfer CFT](#define_rights_before_starting_transfer_cft)
--   [Define a domain user](#define%20domain%20user)
--   [Define folder rights](#define)
--   [Define system user access](#define2)
+-   [Define rights before starting the Transfer CFT UI server (Copilot)](#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before logging on the Transfer CFT UI server (Copilot)](#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before starting Transfer CFT](#Define_rights_before_starting_Transfer_CFT)
+-   [Define a domain user](#Define%20domain%20user)
+-   [Define folder rights](#Define)
+-   [Define system user access](#Define2)
 
 To start the Transfer CFT Copilot server you must give each Windows user read/write rights for the Transfer CFT installation folder.
 
@@ -22,77 +22,77 @@ You can opt to control the file-access permissions and the batch execution envir
 -   yes: Any user who logs on the Transfer CFT UI server will have their processes identified as their own.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>copilot.misc.createprocessasuser</th>
-<th><p>PassPort AM</p>
-<p>status</p></th>
-<th>Rights to define</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p> </p>
-<p>no</p></td>
-<td>Not activated</td>
-<td>No need to set rights. All Windows users can log on to the <span>Transfer CFT</span> UI server.</td>
-</tr>
-<tr class="even">
-<td><p>no</p></td>
-<td>Activated</td>
-<td><p>If PassPort AM is activated, you must use a PassPort AM user to log on. Check if the AM user has the rights to manage <span>Transfer CFT</span>.</p></td>
-</tr>
-<tr class="odd">
-<td>yes</td>
-<td>Not activated</td>
-<td><p><span id="Define user rights in Windows"></span>The Windows user who is going to log on the <span>Transfer CFT</span> UI server, must have read and write rights for <span>Transfer CFT</span> install folder.</p>
-<p>Some user rights must be assigned to the user who launched the <span>Transfer CFT</span> UI server to permit other Windows users to log on. This is true except if it is the local system account when working in the service mode. The user rights to assign are:</p>
-<ul>
-<li>Adjust memory quotas for a process</li>
-<li>Impersonate a client after authentication (only on Windows 2008)</li>
-<li>Replace a process level token</li>
-<li>Create a token object</li>
-</ul>
-<p>To define user rights:</p>
+   <thead>
+      <tr class="header">
+         <th>copilot.misc.createprocessasuser</th>
+         <th>            <p>PassPort AM</p>
+            <p>status</p></th>
+         <th>Rights to define</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p> </p>
+            <p>no</p>         </td>
+         <td>Not activated         </td>
+         <td>No need to set rights. All Windows users can log on to the <span>Transfer CFT</span> UI server.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>no</p>         </td>
+         <td>Activated         </td>
+         <td>            <p>If PassPort AM is activated, you must use a PassPort AM user to log on. Check if the AM user has the rights to manage <span>Transfer CFT</span>.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>yes         </td>
+         <td>Not activated         </td>
+         <td>            <p><span id="Define user rights in Windows"></span>The Windows user who is going to log on the <span>Transfer CFT</span> UI server, must have read and write rights for <span>Transfer CFT</span> install folder.</p>
+            <p>Some user rights must be assigned to the user who launched the <span>Transfer CFT</span> UI server to permit other Windows users to log on. This is true except if it is the local system account when working in the service mode. The user rights to assign are:</p>
+            <ul>
+               <li>Adjust memory quotas for a process               </li>
+               <li>Impersonate a client after authentication (only on Windows 2008)               </li>
+               <li>Replace a process level token               </li>
+               <li>Create a token object               </li>
+            </ul>
+            <p>To define user rights:</p>
 <ol>
-<li>In a dos command window, enter <span>lusrmgr.msc</span> to open the system users list. Check available users.</li>
-<li>In a dos command window, enter <span>secpol.msc</span> to open the Local Security Policy window.</li>
-<li>Select <span>Security Settings &gt; Local Policies &gt; User Rights Assignment</span>.</li>
-<li>Double-click the required right.</li>
-<li>Click <span>Add user or group</span> and define.</li>
-<li>Close and re-open the Windows session to take into account the modifications.</li>
-</ol></td>
-</tr>
-<tr class="even">
-<td>yes</td>
-<td>Activated</td>
-<td><p>Some user rights must be assigned to the user who starts the <span>Transfer CFT</span> UI server to allow other Windows users to log on, unless it is the local system account working in service mode. The user rights are:</p>
-<ul>
-<li>Adjust memory quotas for a process</li>
-<li>Impersonate a client after authentication (only on Windows 2008)</li>
-<li>Replace a process level token</li>
-<li>Create a token object</li>
-</ul>
+               <li>In a dos command window, enter <span>lusrmgr.msc</span> to open the system users list. Check available users.               </li>
+               <li>In a dos command window, enter <span>secpol.msc</span> to open the Local Security Policy window.               </li>
+               <li>Select <span>Security Settings &gt; Local Policies &gt; User Rights Assignment</span>.               </li>
+               <li>Double-click the required right.               </li>
+               <li>Click <span>Add user or group</span> and define.               </li>
+               <li>Close and re-open the Windows session to take into account the modifications.               </li>
+</ol>         </td>
+      </tr>
+      <tr class="even">
+         <td>yes         </td>
+         <td>Activated         </td>
+         <td>            <p>Some user rights must be assigned to the user who starts the <span>Transfer CFT</span> UI server to allow other Windows users to log on, unless it is the local system account working in service mode. The user rights are:</p>
+            <ul>
+               <li>Adjust memory quotas for a process               </li>
+               <li>Impersonate a client after authentication (only on Windows 2008)               </li>
+               <li>Replace a process level token               </li>
+               <li>Create a token object               </li>
+            </ul>
 <ol>
-<li>In a dos command window, type <span>lusrmgr.msc</span> to open the system users list. Check available users.</li>
-<li>In a dos command window, type <span>secpol.msc</span> to open the Local Security Policy window.</li>
-<li>Select <span>Security Settings &gt; Local Policies &gt; User Rights Assignment</span>.</li>
-<li>Double-click the required right.</li>
-<li>Click Add user or group and define.</li>
-<li>Close and re-open the Windows session to take into account the modifications.</li>
+               <li>In a dos command window, type <span>lusrmgr.msc</span> to open the system users list. Check available users.               </li>
+               <li>In a dos command window, type <span>secpol.msc</span> to open the Local Security Policy window.               </li>
+               <li>Select <span>Security Settings &gt; Local Policies &gt; User Rights Assignment</span>.               </li>
+               <li>Double-click the required right.               </li>
+               <li>Click Add user or group and define.               </li>
+               <li>Close and re-open the Windows session to take into account the modifications.               </li>
 </ol>
-<p>Additionally, the user who wants to log on the <span>Transfer CFT</span> UI server must exist both in the Windows system and PassPort AM. The Windows system performs the user authentication, and PassPort AM checks the other rights.</p>
+            <p>Additionally, the user who wants to log on the <span>Transfer CFT</span> UI server must exist both in the Windows system and PassPort AM. The Windows system performs the user authentication, and PassPort AM checks the other rights.</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Define_rights_before_starting_Transfer_CFT"></span>Define folder rights before starting Transfer CFT
@@ -100,13 +100,13 @@ You can opt to control the file-access permissions and the batch execution envir
 The Windows user who is going to start the Transfer CFT server requires read/write rights on the Transfer CFT installation folder and read/write/modify rights on the runtime folder.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using either <span>Central Governance</span> or <span>Flow Manager</span>, the user name must exist in PassPort AM and have rights to manage <span>Transfer CFT</span>. Remember that the PassPort user name is case-sensitive.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you are using either <span>Central Governance</span> or <span>Flow Manager</span>, the user name must exist in PassPort AM and have rights to manage <span>Transfer CFT</span>. Remember that the PassPort user name is case-sensitive.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Define domain user"></span>Define domain user
@@ -157,13 +157,13 @@ PassPort AM is activated
 If PassPort AM is active (am.type=PassPort in UCONF), the user must exist both in the Windows system users list and PassPort AM users list. The Windows system user performs the authentication, and PassPort AM performs the other rights checks.
 
 > <table data-cellpadding="0" data-cellspacing="0">
-> <tbody>
-> <tr class="odd">
-> <td data-valign="top"></td>
-> <td data-valign="top"><span><strong>Note</strong></span></td>
-> <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.</td>
-> </tr>
-> </tbody>
+>    <tbody>
+>       <tr class="odd">
+>          <td data-valign="top">         </td>
+>          <td data-valign="top"><span><strong>Note</strong></span>         </td>
+>          <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.         </td>
+>       </tr>
+>    </tbody>
 > </table>
 
 ### System user deactivated with PassPort AM management
@@ -171,20 +171,20 @@ If PassPort AM is active (am.type=PassPort in UCONF), the user must exist both i
 If copilot.misc.createprocessasuser=no in UCONF, all system users have the right to log on.
 
 -   PassPort AM is activated
--   If PassPort AM is active (am.type=PassPort in [UCONF](../../../../../admin_intro/uconf/uconf_parameters)), you must be a defined PassPort AM user to log on.
+-   If PassPort AM is active (am.type=PassPort in [UCONF](../uconf/uconf_parameters.htm)), you must be a defined PassPort AM user to log on.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PassPort user name is case-sensitive.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
-[About PassPort AM](../../../../../internal_a_m_start_here/about_passport_am)
+[About PassPort AM](../internal_access_mgt/About_PassPort_am.htm)
 
-[UCONF parameters](../../../../../admin_intro/uconf/uconf_parameters)
+[UCONF parameters](../uconf/uconf_parameters.htm)

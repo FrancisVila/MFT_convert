@@ -24,11 +24,11 @@ To stop a server, use the Transfer CFT-specific SRVEND service, or use the STOP 
 Both the API01 and API02 samples include the SRVEND service. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>API02 $xxAP1 SRVEND</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>API02 $xxAP1 SRVEND         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Messages exchanges

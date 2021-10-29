@@ -18,7 +18,7 @@ Consequently
 -   Due to reason 3, there can be intervals of time where sessions with no active transfer exists. Let's call such sessions "idle" sessions. This sometimes leads to a number of sessions greater than the number of transfers.
 -   Due to reason 4, it is advisable to use sessions for more that a single transfer when possible. To enable this sort of reuse, sessions are not terminated immediately after a transfer ends but instead after a configurable delay. These idle sessions can then be reused for subsequent transfers. This can lead to a number of established sessions that is significantly larger than the number of active transfers when the number of idle sessions is high.
 
-When the network resource depletion prevention (NRDP) feature is enabled ([below](#how)), Transfer CFT detects the situations where existing idle sessions may prevent new transfers that require new sessions from being started. In such situations, as a precaution Transfer CFT gently closes these idle sessions in order to allow the new transfers to be started quickly.
+When the network resource depletion prevention (NRDP) feature is enabled ([below](#How)), Transfer CFT detects the situations where existing idle sessions may prevent new transfers that require new sessions from being started. In such situations, as a precaution Transfer CFT gently closes these idle sessions in order to allow the new transfers to be started quickly.
 
 This feature is only effective when you frequently reach the number of simultaneous connections (MAXCNX) while the actual number of transfers is less than the MAXTRANS. In this case, CFTN09E log messages can flood the log and the Transfer CFT behavior may be adversely affected.
 
@@ -31,34 +31,34 @@ And the corresponding catalog entry  would include the DIAGI=416 and DIAGP=MAXC
 ## <span id="How"></span>How to configure
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>UCONF value</th>
-<th>Type</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>cft.server.nrdp.enable</td>
-<td>boolean</td>
-<td>No</td>
-<td>Enable the prevention of network resource depletion.</td>
-</tr>
-<tr class="even">
-<td>cft.server.nrdp.conn_retry_delay_min</td>
-<td>int</td>
-<td>1</td>
-<td>Connection retry delay minimum in seconds when a network resource depletion is detected.</td>
-</tr>
-<tr class="odd">
-<td><p>cft.server.nrdp.conn_retry_delay_max</p></td>
-<td>int</td>
-<td>5</td>
-<td>Connection retry delay maximum in seconds when a network resource depletion is detected.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>UCONF value</th>
+         <th>Type</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>cft.server.nrdp.enable         </td>
+         <td>boolean         </td>
+         <td>No         </td>
+         <td>Enable the prevention of network resource depletion.         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.nrdp.conn_retry_delay_min         </td>
+         <td>int         </td>
+         <td>1         </td>
+         <td>Connection retry delay minimum in seconds when a network resource depletion is detected.         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>cft.server.nrdp.conn_retry_delay_max</p>         </td>
+         <td>int         </td>
+         <td>5         </td>
+         <td>Connection retry delay maximum in seconds when a network resource depletion is detected.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Parameter usage
@@ -70,7 +70,7 @@ The NRDP feature only applies to the TCP/IP network, and requires the configurat
 
 ### Log messages
 
-The [related messages](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftn_messages) only display in the log when the cft.server.nrdp\_enable=yes.
+The [related messages](../Troubleshooting/Messages_and_Codes/CFTN_messages.htm) only display in the log when the cft.server.nrdp\_enable=yes.
 
 -   CFTN05I Network resource depletion prevention enabled for class %d
 -   CFTN06I No network class suitable for resource depletion prevention activation

@@ -13,4 +13,4 @@ Number of days after which the catalog entries of terminated send transfers
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Rollback a service pack or patch (non-SMP/E)",
+    "title": "Roll back a service pack or patch",
     "linkTitle": "Rollback a service pack or patch (non-SMP/E)",
     "weight": "260"
 }The following procedure enables you to rollback after applying a SP or patch to its previous state. This is useful in the case of an incident during the application of a PTF, or when testing the patch validation.
@@ -31,11 +31,11 @@ Before submitting the JOB configure the following JCL in automatic mode:
 -   Submit the JCL.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This operation is displayed in the distlib.LOG file.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This operation is displayed in the distlib.LOG file.         </td>
+      </tr>
+   </tbody>
 </table>

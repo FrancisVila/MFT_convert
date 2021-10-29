@@ -29,4 +29,4 @@ configuration, so that Transfer CFT can access the private keys.
 
 **Solution**: Use the correct encoding and put the PKIPASSW in a file, for example, the ASCII string "password" on an EBCDIC system. Then point the CFTPARM PKIPASSW to this file, for example PKIPASSW=#|@/path/to/pkipass\_file. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
 
-[Return to Command index](../../)
+[Return to Command index](../)

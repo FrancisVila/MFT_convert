@@ -28,4 +28,4 @@ This area is not used by the Transfer CFT interface. You can use it
 to save the information that you consider necessary for the processing
 relative to your program.
 
-[Return to Command index](../../)
+[Return to Command index](../)

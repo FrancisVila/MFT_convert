@@ -16,4 +16,4 @@ Displays help information:
 -   MODELS: Output all the models available
     in the current model file
 
-[Return to Command index](../../)
+[Return to Command index](../)

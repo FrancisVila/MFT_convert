@@ -26,4 +26,4 @@ Example
 MINDATE = +2 means that the transfer initial validity date is 2 days
 after the date the command is taken into account.
 
-[Return to Command index](../../)
+[Return to Command index](../)

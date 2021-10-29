@@ -50,80 +50,80 @@ involved:
     type does not exist
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>OS </p></th>
-<th><p>Monitor submitter </p></th>
-<th><p>Operator console </p></th>
-<th><p>Any user </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>MVS (z/OS)</p></td>
-<td data-valign="top" width="24%"><p>NO </p></td>
-<td data-valign="top" width="22%"><p>YES </p></td>
-<td data-valign="top" width="35%"><p>YES </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>OS400 (IBM i)</p></td>
-<td data-valign="top" width="24%"><p>YES </p></td>
-<td data-valign="top" width="22%"><p>YES </p></td>
-<td data-valign="top" width="35%"><p>YES </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>UNIX </p></td>
-<td data-valign="top" width="24%"><p>YES </p></td>
-<td data-valign="top" width="22%"><p>YES </p></td>
-<td data-valign="top" width="35%"><p>YES </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="19%"><p>VMS </p></td>
-<td data-valign="top" width="24%"><p>NO </p></td>
-<td data-valign="top" width="22%"><p>YES </p></td>
-<td data-valign="top" width="35%"><p>YES </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="19%"><p>Windows</p></td>
-<td data-valign="top" width="24%"><p>YES </p></td>
-<td data-valign="top" width="22%"><p>NO </p></td>
-<td data-valign="top" width="35%"><p>NO </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>OS </p></th>
+         <th>            <p>Monitor submitter </p></th>
+         <th>            <p>Operator console </p></th>
+         <th>            <p>Any user </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>MVS (z/OS)</p>         </td>
+         <td data-valign="top" width="24%">            <p>NO </p>         </td>
+         <td data-valign="top" width="22%">            <p>YES </p>         </td>
+         <td data-valign="top" width="35%">            <p>YES </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>OS400 (IBM i)</p>         </td>
+         <td data-valign="top" width="24%">            <p>YES </p>         </td>
+         <td data-valign="top" width="22%">            <p>YES </p>         </td>
+         <td data-valign="top" width="35%">            <p>YES </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>UNIX </p>         </td>
+         <td data-valign="top" width="24%">            <p>YES </p>         </td>
+         <td data-valign="top" width="22%">            <p>YES </p>         </td>
+         <td data-valign="top" width="35%">            <p>YES </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="19%">            <p>VMS </p>         </td>
+         <td data-valign="top" width="24%">            <p>NO </p>         </td>
+         <td data-valign="top" width="22%">            <p>YES </p>         </td>
+         <td data-valign="top" width="35%">            <p>YES </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="19%">            <p>Windows</p>         </td>
+         <td data-valign="top" width="24%">            <p>YES </p>         </td>
+         <td data-valign="top" width="22%">            <p>NO </p>         </td>
+         <td data-valign="top" width="35%">            <p>NO </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The following table indicates, for each system, the default values of
 the NOTIFY parameter supported. The value ‘ ’ corresponds to 7 blank characters.
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>OS </p></th>
-<th><p>Default values for NOTIFY </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="17%"><p>MVS (z/OS)</p></td>
-<td data-valign="top" width="83%"><p>OP </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="17%"><p>OS400 </p></td>
-<td data-valign="top" width="83%"><p>‘ ’ </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="17%"><p>UNIX </p></td>
-<td data-valign="top" width="83%"><p>‘ ’ </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="17%"><p>VMS </p></td>
-<td data-valign="top" width="83%"><p>OP </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="17%"><p>Windows</p></td>
-<td data-valign="top" width="83%"><p>‘ ’ </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>OS </p></th>
+         <th>            <p>Default values for NOTIFY </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="17%">            <p>MVS (z/OS)</p>         </td>
+         <td data-valign="top" width="83%">            <p>OP </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="17%">            <p>OS400 </p>         </td>
+         <td data-valign="top" width="83%">            <p>‘ ’ </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="17%">            <p>UNIX </p>         </td>
+         <td data-valign="top" width="83%">            <p>‘ ’ </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="17%">            <p>VMS </p>         </td>
+         <td data-valign="top" width="83%">            <p>OP </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="17%">            <p>Windows</p>         </td>
+         <td data-valign="top" width="83%">            <p>‘ ’ </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In the operator console, the possible choices are indicated in
@@ -132,68 +132,68 @@ only these two characters (OP) are interpreted; the following characters
 are not significant.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Operator console
+   <thead>
+      <tr class="header">
+         <th>            <p>Operator console
 OS</p></th>
-<th><p>Characters interpreted </p></th>
-<th><p>Messages sent to...</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="21%"><p>MVS (z/OS)</p></td>
-<td data-valign="top" width="21%"><p>OP </p></td>
-<td data-valign="top" width="58%"><p>Operator console(s) </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="21%"><p>OS400 </p></td>
-<td data-valign="top" width="21%"><p>OP </p></td>
-<td data-valign="top" width="58%"><p>QSYSOPR "message-queue"  </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="21%"><p>UNIX </p></td>
-<td data-valign="top" width="21%"><p>OP </p></td>
-<td data-valign="top" width="58%"><p>Operator console </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="21%"><p>VMS </p></td>
-<td data-valign="top" width="21%"><p>Opxxxxxx </p></td>
-<td data-valign="top" width="58%"><p>System console and output peripheral system LOG file identified
+         <th>            <p>Characters interpreted </p></th>
+         <th>            <p>Messages sent to...</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="21%">            <p>MVS (z/OS)</p>         </td>
+         <td data-valign="top" width="21%">            <p>OP </p>         </td>
+         <td data-valign="top" width="58%">            <p>Operator console(s) </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="21%">            <p>OS400 </p>         </td>
+         <td data-valign="top" width="21%">            <p>OP </p>         </td>
+         <td data-valign="top" width="58%">            <p>QSYSOPR "message-queue"  </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="21%">            <p>UNIX </p>         </td>
+         <td data-valign="top" width="21%">            <p>OP </p>         </td>
+         <td data-valign="top" width="58%">            <p>Operator console </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="21%">            <p>VMS </p>         </td>
+         <td data-valign="top" width="21%">            <p>Opxxxxxx </p>         </td>
+         <td data-valign="top" width="58%">            <p>System console and output peripheral system LOG file identified
 by the "xxxxxx" link present in the current monitor execution
-directory </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="21%"><p>Windows</p></td>
-<td data-valign="top" width="21%"><p>Not applicable </p></td>
-<td data-valign="top" width="58%"><p> </p></td>
-</tr>
-</tbody>
+directory </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="21%">            <p>Windows</p>         </td>
+         <td data-valign="top" width="21%">            <p>Not applicable </p>         </td>
+         <td data-valign="top" width="58%">            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 For the user:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>User OS</th>
-<th>Messages are...</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td width="26%"><p>MVS (z/OS)</p></td>
-<td width="74%"><p>Sent by SEND to the specified
+   <thead>
+      <tr class="header">
+         <th>User OS</th>
+         <th>Messages are...</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p>MVS (z/OS)</p>         </td>
+         <td width="74%">            <p>Sent by SEND to the specified
 TSO USERID; in this case, the <span>Transfer CFT</span> program
-must be authorized (APF).</p></td>
-</tr>
-<tr class="even">
-<td width="26%"><p>VMS</p></td>
-<td width="74%"><p>Sent to the "VMS User " designated
+must be authorized (APF).</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="26%">            <p>VMS</p>         </td>
+         <td width="74%">            <p>Sent to the "VMS User " designated
 by its VMS name. In this case, the <span>Transfer CFT</span> task
-must have the OPER privilege.</p></td>
-</tr>
-</tbody>
+must have the OPER privilege.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-[Return to Command index](../../)
+[Return to Command index](../)

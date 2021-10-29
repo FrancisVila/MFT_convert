@@ -21,4 +21,4 @@ When receiving a group of files, action for the files as they are deconcatenated
     -   Windows and z/OS: Only replace files if they are newer than the existing file
     -   IBM i: Not available
 
-[Return to Command index](../../)
+[Return to Command index](../)

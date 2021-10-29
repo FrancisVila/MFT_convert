@@ -9,28 +9,28 @@ You require the following environments in order to install and deploy Transfer C
 -   Distribution environment
 -   Transfer CFT run-time instance environment
 
-For a detailed description of these environments, see [Non-SMP/E: Create the distribution environment](../../overview_install_zos/distribution_environment_installation) .
+For a detailed description of these environments, see [Non-SMP/E: Create the distribution environment](../overview_install_zos/distribution_environment_installation) .
 
 Deployment overview
 
 The following sections describe how to:
 
--   [Create a master copy](#create) (1)
--   [Distribute the master copy](#distribu) (2)
--   [Restore the master copy](#restore) (3)
--   [Install the instance](#install) (4)
+-   [Create a master copy](#Create) (1)
+-   [Distribute the master copy](#Distribu) (2)
+-   [Restore the master copy](#Restore) (3)
+-   [Install the instance](#Install) (4)
 
-![](temp_deploy_sp_zos.png)
+![](/Images/TransferCFT/temp_zos_deploy.png)
 
  
 
 Deploy a patch or service pack
 
--   [Generate a patch or service pack](#generate) (1)
--   [Transfer the generated patch or service pack](#transfer) (2)
--   [Apply the patch or service pack](#apply) (3)
+-   [Generate a patch or service pack](#Generate) (1)
+-   [Transfer the generated patch or service pack](#Transfer) (2)
+-   [Apply the patch or service pack](#Apply) (3)
 
-![](temp_deploy_sp_zos.png)
+![](/Images/TransferCFT/temp_deploy_sp_zos.png)
 
 ## Overview
 
@@ -71,13 +71,13 @@ Use the A33GSND JCL to transfer the following elements via FTP:
 -   The components necessary to restore the master copy
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Customize variables before submitting the JCL.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Customize variables before submitting the JCL.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   Common variables:
@@ -115,13 +115,13 @@ This creates an instance.
 This completes the specific part of the Transfer CFT installation. Remaining tasks in include the APF, creating the STC in PROCLIB, etc.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">ZFS file creation is not taken into account in this process.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">ZFS file creation is not taken into account in this process.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Generate"></span>Generate a patch or service pack
@@ -167,24 +167,24 @@ This creates a remote UPLIB library.
 ## <span id="Apply"></span>Apply the patch or service pack
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Customize the A33IPTF JCL delivered in the UPLIB library, and transferred by A33GSND:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>Set JCLLIB using the instance prefix qualifiers.</p>
-    <p>Set the variable ID: Patch ID.</p>
-    <p>Set the variable PUPLIB in accordance with A33GSND.</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>Set JCLLIB using the instance prefix qualifiers.</p>
+                <p>Set the variable ID: Patch ID.</p>
+                <p>Set the variable PUPLIB in accordance with A33GSND.</p>         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Submit the JCL.
 

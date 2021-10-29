@@ -18,16 +18,16 @@ In the Flow List page click Add flow and perform the following steps:
 
 Result
 
-![](new_flow_cg_w_store.png)
+![](/Images/TransferCFT/new_flow_cg_w_store.png)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">Existing <span>Transfer CFT</span> users may want to refer to the Transfer CFT to <span>Central Governance</span> parameter mapping in the sections see <a href="../r_flow_target">Flow definition: Target</a> and <a href="../r_flow_source">Flow definition: Source</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">Existing <span>Transfer CFT</span> users may want to refer to the Transfer CFT to <span>Central Governance</span> parameter mapping in the sections see <a href="r_flow_target">Flow definition: Target</a> and <a href="r_flow_source">Flow definition: Source</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
-&lt;&lt; [My first transfer flow](../../)
+&lt;&lt; [My first transfer flow](../)

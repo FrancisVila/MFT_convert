@@ -1,10 +1,8 @@
 {
-    "title": "Partner network and protocol connections",
+    "title": "Partner  network and protocol connections",
     "linkTitle": "Partner network and protocol connections",
     "weight": "250"
-}# <span id="Partner_network_and_protocol_connections"></span>Partner network and protocol connections
-
-A SEND or RECV command first results in opening a session with the partner
+}A SEND or RECV command first results in opening a session with the partner
 server. Transfer CFT provides the possibility of defining several partner
 access paths: logical paths for protocols and physical paths for network
 access methods (network addresses, intermediate partners).
@@ -29,7 +27,7 @@ are shown in the figure below.
 
 ### Partner connection mechanisms
 
-![](Schematic_overview.png)
+![](/Images/TransferCFT/Partner_connection_establishing_mechanisms.png)
 
 On the server, the same links have parameters set with the
 CFTPART object corresponding to the characteristics of the requester partner.
@@ -120,7 +118,7 @@ in TCP
 This figure illustrates TCP example of the protocol recognition
 principle (SAP).
 
-![](Schematic_overview.png)
+![](/Images/TransferCFT/Protocol_recognition_SAP.png)
 
 In this example:
 
@@ -137,4 +135,4 @@ The figure below provides a schematic overview of the:
 
 Schematic overview
 
-![](Schematic_overview.png)
+![](/Images/TransferCFT/Schematic_overview.png)

@@ -1,5 +1,5 @@
 {
-    "title": "Store and forward restrictions",
+    "title": "Using store and forward ",
     "linkTitle": "Store and forward restrictions",
     "weight": "180"
 }PeSIT makes it possible to route files from one computer
@@ -90,74 +90,74 @@ FPDU related PI codes and the corresponding
 Transfer CFT values
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>PI</th>
-<th>Description</th>
-<th>Transfer
+   <thead>
+      <tr class="header">
+         <th>PI</th>
+         <th>Description</th>
+         <th>Transfer
 CFT value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>3 </p></td>
-<td data-valign="top" width="35%"><p>Sending application’s name<br />
-Sending user’s name </p></td>
-<td data-valign="top" width="60%"><p>PI 4 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="6%"><p>4 </p></td>
-<td data-valign="top" width="35%"><p>Receiver application name<br />
-Receiver user name </p></td>
-<td data-valign="top" width="60%"><p>PI 4 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>11 </p></td>
-<td data-valign="top" width="35%"><p>File type </p></td>
-<td data-valign="top" width="60%"><p>PI 11 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="6%"><p>12 </p></td>
-<td data-valign="top" width="35%"><p>File name </p></td>
-<td data-valign="top" width="60%"><p>PI 12 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>13 </p></td>
-<td data-valign="top" width="35%"><p>Transfer ident. </p></td>
-<td data-valign="top" width="60%"><p>PI 13 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="6%"><p>14 </p></td>
-<td data-valign="top" width="35%"><p>Requested attributes </p></td>
-<td data-valign="top" width="60%"><p>(not set) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>16 </p></td>
-<td data-valign="top" width="35%"><p>Data code </p></td>
-<td data-valign="top" width="60%"><p>(not set) </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="6%"><p>51 </p></td>
-<td data-valign="top" width="35%"><p>Creation date<br />
-Creation time </p></td>
-<td data-valign="top" width="60%"><p>PI 51 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>61 </p></td>
-<td data-valign="top" width="35%"><p>Initial sender</p></td>
-<td data-valign="top" width="60%"><p>PI 62 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="6%"><p>62 </p></td>
-<td data-valign="top" width="35%"><p>Final receiver</p></td>
-<td data-valign="top" width="60%"><p>PI 61 of the acknowledged file creation request </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="6%"><p>91 </p></td>
-<td data-valign="top" width="35%"><p>Message </p></td>
-<td data-valign="top" width="60%"><p>MSG parameter of the SEND command </p></td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>3 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Sending application’s name<br />
+Sending user’s name </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 4 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>4 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Receiver application name<br />
+Receiver user name </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 4 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>11 </p>         </td>
+         <td data-valign="top" width="35%">            <p>File type </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 11 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>12 </p>         </td>
+         <td data-valign="top" width="35%">            <p>File name </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 12 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>13 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Transfer ident. </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 13 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>14 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Requested attributes </p>         </td>
+         <td data-valign="top" width="60%">            <p>(not set) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>16 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Data code </p>         </td>
+         <td data-valign="top" width="60%">            <p>(not set) </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>51 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Creation date<br />
+Creation time </p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 51 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>61 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Initial sender</p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 62 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>62 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Final receiver</p>         </td>
+         <td data-valign="top" width="60%">            <p>PI 61 of the acknowledged file creation request </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="6%">            <p>91 </p>         </td>
+         <td data-valign="top" width="35%">            <p>Message </p>         </td>
+         <td data-valign="top" width="60%">            <p>MSG parameter of the SEND command </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  

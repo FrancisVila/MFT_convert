@@ -1,5 +1,5 @@
 {
-    "title": "Implement DMZ using Secure Relay",
+    "title": "About Secure Relay",
     "linkTitle": "Implement DMZ using Secure Relay",
     "weight": "230"
 }This section describes the Axway Secure Relay integration with Transfer CFT. Secure Relay provides Transfer CFT with two main data security features. First, it enables a firewall-friendly access to Transfer CFT via the Secure Relay Master Agent (MA) and the Secure Relay Router Agent (RA). The second feature is SSL termination. This allows for secure SSL access to Transfer CFT without Transfer CFT needing to perform SSL or PKI access procedures. You can use Secure Relay with Transfer CFT over any supported Transfer CFT protocol, for example PeSIT, OFTP, SFTP, and so on.
@@ -13,13 +13,13 @@ The following additional topics describe how to configure Transfer CFT to use Se
 -   [Troubleshoot Secure Relay](sr_troubleshooting)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Secure Relay was formerly called XSR, and some documentation may still use this reference.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Secure Relay was formerly called XSR, and some documentation may still use this reference.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Overview
@@ -30,7 +30,7 @@ The following diagram illustrates how Transfer CFT and Secure Relay interact wit
 
 Network to DMZ overview
 
-![View of link between Transfer CFT and the Master Agent in the private network, with the Router Agent in the DMZ](sr_add_node.png)
+![View of link between Transfer CFT and the Master Agent in the private network, with the Router Agent in the DMZ](/Images/TransferCFT/sr_new4.png)
 
 Legend
 
@@ -46,9 +46,9 @@ Secure Relay is not aware of data sent to, or received from, Transfer CFT and re
 
 You can install Transfer CFT in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the following diagram (SSL is not used in this example). See [Secure Relay with a multi-node architecture](cft_sr_conf_multinode) for details on setting up multiple Router Agents.
 
-![](sr_add_node.png)
+![](/Images/TransferCFT/sec_relay_multi_RA.png)
 
-![](sr_add_node.png)
+![](/Images/TransferCFT/sr_add_node.png)
 
 ## Prerequisites
 

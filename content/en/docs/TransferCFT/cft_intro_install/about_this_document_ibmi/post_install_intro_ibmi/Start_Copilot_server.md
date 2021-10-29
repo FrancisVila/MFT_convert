@@ -1,12 +1,12 @@
 {
-    "title": "Start and stop the Transfer CFT UI (Copilot) server",
+    "title": "Start and stop the Copilot server",
     "linkTitle": "Start and stop the Transfer CFT UI (Copilot) server",
     "weight": "190"
 }When am.type=passport or am.type=cg, the user that connects to the Transfer CFT Copilot server must be defined in the system as well as in PassPort/Central Governance.
 
 ## Start the Copilot server
 
-This section describes how to start the Transfer CFT Copilot server via either a menu or command. For more information on calling menus, see [Transfer CFT menu usage](..//transfercft/cft_intro_install/about_this_document_ibmi/post_install_intro_ibmi).
+This section describes how to start the Transfer CFT Copilot server via either a menu or command. For more information on calling menus, see [Transfer CFT menu usage](transfercft/cft_intro_install/about_this_document_ibmi/post_install_intro_ibmi).
 
 Menu
 

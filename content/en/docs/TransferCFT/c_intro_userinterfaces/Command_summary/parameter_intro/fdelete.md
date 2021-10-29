@@ -16,4 +16,4 @@ FDELETE indicates the transfer statuses that can be deleted:
 -   “\*”all statuses: The file is always deleted with the catalog record transfer.
 -   “CDKHTX”: Any combination of these states is possible. The file is deleted along with the catalog record if the transfer belongs to the state defined in this field.
 
-[Return to Command index](../../)
+[Return to Command index](../)

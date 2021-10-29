@@ -1,5 +1,5 @@
 {
-    "title": "Using CFTUTIL to set UCONF values",
+    "title": "Setting unified configuration  values",
     "linkTitle": "Using CFTUTIL to set UCONF values",
     "weight": "280"
 }From a command line window, you can use the CFTUTIL utility to view
@@ -81,7 +81,7 @@ id=copilot.\*,content=FULL
 
 Example 4
 
-Use the [content](../../../c_intro_userinterfaces/command_summary/parameter_intro/content) parameter to define output properties:
+Use the [content](../../c_intro_userinterfaces/command_summary/parameter_intro/content) parameter to define output properties:
 
 LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS
 
@@ -93,6 +93,6 @@ Where:
 
 Example 5
 
-To output the content into a file use with the [FOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/fout) parameter:
+To output the content into a file use with the [FOUT](../../c_intro_userinterfaces/command_summary/parameter_intro/fout) parameter:
 
 CFTUTIL LISTUCONF FOUT=fname

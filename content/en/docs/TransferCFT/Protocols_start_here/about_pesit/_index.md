@@ -1,5 +1,5 @@
 {
-    "title": "PeSIT protocol",
+    "title": "About the PeSIT protocol",
     "linkTitle": "PeSIT protocol",
     "weight": "130"
 }## What is PeSIT?
@@ -17,23 +17,23 @@ In this PeSIT protocol sub-book we'll first review PeSIT features, then discuss
 PeSIT features available for Transfer CFT include:
 
 -   [File
-    transmission](#file)
+    transmission](#File)
 -   [File
-    reception](#file2)
--   [Setting synchronization points during a transfer](#setting)
--   [Restarting interrupted transfers](#restarti)
+    reception](#File2)
+-   [Setting synchronization points during a transfer](#Setting)
+-   [Restarting interrupted transfers](#Restarti)
 -   [Dynamic
-    synchronization during a transfer](#dynamic)
+    synchronization during a transfer](#Dynamic)
 -   [Temporary
-    suspension of a transfer](#temporar)
+    suspension of a transfer](#Temporar)
 -   [Data
-    compression](#data)
+    compression](#Data)
 -   [Generic
-    file selection](#generic)
+    file selection](#Generic)
 -   [Two-way
-    transfers over the same logical connection](#two-way)
--   [Acknowledgment/negative acknowledgment messages](#end-to-e)
--   [Relay store-and-forward mode](#store-an)
+    transfers over the same logical connection](#Two-way)
+-   [Acknowledgment/negative acknowledgment messages](#End-to-e)
+-   [Relay store-and-forward mode](#Store-an)
 
 ### <span id="File"></span>File transmission
 

@@ -1,16 +1,14 @@
 {
-    "title": "CFTCOM - Communication media ",
+    "title": "Communication  media ",
     "linkTitle": "CFTCOM - Communication media ",
     "weight": "270"
-}# <span id="kanchor8"></span><span id="Defining_the_communication_media__Start_here"></span>Communication media
-
-Related
+}Related
 topics
 
 -   Command syntax
-    [CFTCOM](../../../c_intro_userinterfaces/command_summary)
+    [CFTCOM](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTCOM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcom)
+    [CFTCOM](../../CFTUTIL/Conf/CFTCOM.htm)
 
 ## <span id="About"></span>About the communication media CFTCOM
 
@@ -93,15 +91,15 @@ A communication file can be created by the CFTFILE command.
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND<br />
 PART = PART1<br />
 IDF = TEST1</p>
-<p> </p>
-<p>Then...</p>
-<p>LISTCAT<br />
-IDT = %_CAT_IDT%</p></td>
-</tr>
-</tbody>
+            <p> </p>
+            <p>Then...</p>
+            <p>LISTCAT<br />
+IDT = %_CAT_IDT%</p>         </td>
+      </tr>
+   </tbody>
 </table>

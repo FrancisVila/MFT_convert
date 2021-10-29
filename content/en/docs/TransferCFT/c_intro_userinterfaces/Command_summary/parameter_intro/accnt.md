@@ -11,4 +11,4 @@
 Identifier of the description command of the statistical data record
 of the transfers (CFTACCNT).
 
-[Return to Command index](../../)
+[Return to Command index](../)

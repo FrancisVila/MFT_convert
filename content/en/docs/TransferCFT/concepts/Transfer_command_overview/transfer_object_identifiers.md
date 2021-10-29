@@ -1,12 +1,10 @@
 {
-    "title": "Transfer object identifiers",
+    "title": "Transfer  identifiers",
     "linkTitle": "Transfer object identifiers",
     "weight": "230"
-}# <span id="Transfer_object_identifiers"></span>Transfer identifiers
-
-Transfer CFT enables the transferring sequential files, or files seen
+}Transfer CFT enables the transferring sequential files, or files seen
 as such. These files can be accessed through one of the operating system
-access methods . See [File locations: Model and physical files](../../creating_transfers_start_here/model_and_physical_file_concepts).
+access methods . See [File locations: Model and physical files](../creating_transfers_start_here/model_and_physical_file_concepts).
 
 When a transfer occurs, it is labeled with an identifier. There are
 four types of identifiers that can correspond with a transfer, as described
@@ -69,7 +67,7 @@ is guaranteed between two Transfer CFTs sharing the same catalog.
 
 #### Catalog status according to transfer state
 
-For each of the following states there are certain actions that you can perform, as described in [Processing commands: general usage](../../about_transfer_processing/proc_commands).
+For each of the following states there are certain actions that you can perform, as described in [Processing commands: general usage](../about_transfer_processing/proc_commands).
 
 -   D - Available
 -   C - In process
@@ -78,4 +76,4 @@ For each of the following states there are certain actions that you can perform,
 -   T - Terminated
 -   X - Executed
 
-For more information, see [Transfer states](../delayed_transfers).
+For more information, see [Transfer states](delayed_transfers).

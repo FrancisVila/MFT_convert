@@ -23,6 +23,6 @@ The following types are possible:
     the IPART parameter is not the final receiver.
 
 See   [Store
-and forward concepts.](../../../../concepts/transfer_command_overview/store_and_forward_mode_routing)
+and forward concepts.](../../../concepts/transfer_command_overview/store_and_forward_mode_routing)
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Migrate/upgrade considerations",
+    "title": "Migrate and upgrade considerations",
     "linkTitle": "Migrate/upgrade considerations",
     "weight": "200"
 }This section summarizes the migration and upgrade procedures for each type of object and provides related recommendations.
@@ -7,52 +7,52 @@
 **Transfer CFT file IDs**
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>File ID</th>
-<th>Migrate or upgrade procedures</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PARM</td>
-<td>MIGRPARM</td>
-</tr>
-<tr class="even">
-<td>PART</td>
-<td>MIGRPART</td>
-</tr>
-<tr class="odd">
-<td>CATALOG</td>
-<td>MIGRCAT</td>
-</tr>
-<tr class="even">
-<td>COM</td>
-<td>MIGRCOM</td>
-</tr>
-<tr class="odd">
-<td>LOG</td>
-<td>No migration step; you must create the file if you migrated.</td>
-</tr>
-<tr class="even">
-<td>ACCNT</td>
-<td><p>No migration step; you must create the file if you migrated.</p>
-<p>For format=V24, some field lengths were modified, but the total size of record remains the same.</p></td>
-</tr>
-<tr class="odd">
-<td>UCONF, unified configuration file</td>
-<td>MIGRUCNF.</td>
-</tr>
-<tr class="even">
-<td>PKI file</td>
-<td>As of Transfer CFT 3.4, MIGRPKI was split into 2 procedures, MIGRPKI1 and MIGRPKI2.</td>
-</tr>
-<tr class="odd">
-<td>Exits/API</td>
-<td>The use of DLL mode is mandatory (otherwise you must rework the Exits and API).
-In any case, you must compile and link the exits and API.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>File ID</th>
+         <th>Migrate or upgrade procedures</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>PARM         </td>
+         <td>MIGRPARM         </td>
+      </tr>
+      <tr class="even">
+         <td>PART         </td>
+         <td>MIGRPART         </td>
+      </tr>
+      <tr class="odd">
+         <td>CATALOG         </td>
+         <td>MIGRCAT         </td>
+      </tr>
+      <tr class="even">
+         <td>COM         </td>
+         <td>MIGRCOM         </td>
+      </tr>
+      <tr class="odd">
+         <td>LOG         </td>
+         <td>No migration step; you must create the file if you migrated.         </td>
+      </tr>
+      <tr class="even">
+         <td>ACCNT         </td>
+         <td>            <p>No migration step; you must create the file if you migrated.</p>
+            <p>For format=V24, some field lengths were modified, but the total size of record remains the same.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>UCONF, unified configuration file         </td>
+         <td>MIGRUCNF.         </td>
+      </tr>
+      <tr class="even">
+         <td>PKI file         </td>
+         <td>As of Transfer CFT 3.4, MIGRPKI was split into 2 procedures, MIGRPKI1 and MIGRPKI2.         </td>
+      </tr>
+      <tr class="odd">
+         <td>Exits/API         </td>
+         <td>The use of DLL mode is mandatory (otherwise you must rework the Exits and API).
+In any case, you must compile and link the exits and API.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Recommendations**

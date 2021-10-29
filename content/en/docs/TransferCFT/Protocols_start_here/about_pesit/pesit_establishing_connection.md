@@ -1,5 +1,5 @@
 {
-    "title": "Establishing a connection",
+    "title": "Transfer concatenation ",
     "linkTitle": "Establishing a connection",
     "weight": "230"
 }The figure below shows a concatenation of one-way send transfers. If
@@ -17,7 +17,7 @@ being degraded by the systematic establishing of a protocol connection.
 
 Time-out role
 
-<img src="Two_way_protocol_connection.gif" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
+<img src="/Images/TransferCFT/Timeout_role3.gif" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
 
 #### PeSIT CFT/CFT
 
@@ -36,8 +36,8 @@ for which it was initially server.
 
 One-way protocol connection
 
-<img src="Two_way_protocol_connection.gif" width="714" height="439" alt="One way protocol session connection between requester and server" />
+<img src="/Images/TransferCFT/One_way_protocol_connection.gif" width="714" height="439" alt="One way protocol session connection between requester and server" />
 
 Two-way protocol connection
 
-<img src="Two_way_protocol_connection.gif" width="722" height="372" alt="Two way protocol session connection between requester and server" />
+<img src="/Images/TransferCFT/Two_way_protocol_connection.gif" width="722" height="372" alt="Two way protocol session connection between requester and server" />

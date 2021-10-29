@@ -12,7 +12,7 @@ Refer to the Central Governance 1.1.3 User Guide for more information on registr
 
 Registration exchange overview (the same for either Central Governance or Flow Manager)
 
-![Copilot submits registration and Central Governance sends certificates by way of response.](cft_registration.png)
+![Copilot submits registration and Central Governance sends certificates by way of response.](/Images/TransferCFT/cft_registration.png)
 
 ## <span id="Step"></span>Step overview
 
@@ -21,13 +21,13 @@ This section describes the general steps that occurs during the registration pro
 Starting Copilot after installation begins the connection and registration process with Central Governance or Flow Manager.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT requires the Central Governance or <span>Flow Manager</span> shared secret to register. See the Central Governance or <span>Flow Manager</span> documentation for details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT requires the Central Governance or <span>Flow Manager</span> shared secret to register. See the Central Governance or <span>Flow Manager</span> documentation for details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 1\. Copilot connects to Central Governance or Flow Manager and submits its registration.
@@ -37,13 +37,13 @@ Starting Copilot after installation begins the connection and registration proce
     -   Two Certificate Signing Requests (CSRs) for Central Governance to process.
 
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Note</strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Note</strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.         </td>
+          </tr>
+       </tbody>
     </table>
 
 2\. Central Governance or Flow Manager sends the SSL certificates to Transfer CFT.
@@ -104,148 +104,148 @@ The client and server security profiles must be mutually authenticated. However,
 Central Governance or Flow Manager sends the updated configuration to Transfer CFT. The following are the Transfer CFT parameters updated in this process. However, you can overwrite certain default values by assigning an existing policy at registration. Please see, below for details.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>am.passport.cg.organization</td>
-<td><p>Org</p>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>am.passport.cg.organization         </td>
+         <td>            <p>Org</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must restart both <span>Transfer CFT</span> and Copilot following a change to this parameter.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td>am.passport.domain</td>
-<td><p>CG</p></td>
-</tr>
-<tr class="odd">
-<td>am.passport.hostname</td>
-<td>&lt;<span>Central Governance</span> host name &gt;</td>
-</tr>
-<tr class="even">
-<td>am.passport.instance_id</td>
-<td>$(cft.instance_group).$(cft.instance_id)</td>
-</tr>
-<tr class="odd">
-<td>am.passport.port</td>
-<td>6666</td>
-</tr>
-<tr class="even">
-<td>am.passport.use_ssl</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>am.passport.userctrl.check_permissions_on_transfer_execution</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>am.type</td>
-<td>passport</td>
-</tr>
-<tr class="odd">
-<td>cft.purge.rt</td>
-<td>10D</td>
-</tr>
-<tr class="even">
-<td>cft.purge.rx</td>
-<td>10D</td>
-</tr>
-<tr class="odd">
-<td>cft.purge.st</td>
-<td>10D</td>
-</tr>
-<tr class="even">
-<td>cft.purge.sx</td>
-<td>10D</td>
-</tr>
-<tr class="odd">
-<td>cft.server.bandwitdth.cos</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>cft.server.bandwitdth.cos.0.max_rate_in</td>
-<td>-1</td>
-</tr>
-<tr class="odd">
-<td>cft.server.bandwitdth.cos.0.max_rate_out</td>
-<td>-1</td>
-</tr>
-<tr class="even">
-<td>cft.server.bandwitdth.cos.1.weight_in</td>
-<td>80</td>
-</tr>
-<tr class="odd">
-<td>cft.server.bandwitdth.cos.1.weight_out</td>
-<td>80</td>
-</tr>
-<tr class="even">
-<td>cft.server.bandwitdth.cos.2.weight_in</td>
-<td>15</td>
-</tr>
-<tr class="odd">
-<td>cft.server.bandwitdth.cos.2.weight_out</td>
-<td>15</td>
-</tr>
-<tr class="even">
-<td>cft.server.bandwitdth.cos.3.weight_in</td>
-<td>5</td>
-</tr>
-<tr class="odd">
-<td>cft.server.bandwitdth.cos.3.weight_out</td>
-<td>5</td>
-</tr>
-<tr class="even">
-<td>cft.server.bandwitdth.enable</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>cg.mutual_auth_port</td>
-<td>&lt;secured communications port&gt;</td>
-</tr>
-<tr class="even">
-<td>copilot.misc.createprocessasuser</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>pki.type</td>
-<td><p>cft</p>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must restart both <span>Transfer CFT</span> and Copilot following a change to this parameter.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>am.passport.domain         </td>
+         <td>            <p>CG</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.passport.hostname         </td>
+         <td>&lt;<span>Central Governance</span> host name &gt;         </td>
+      </tr>
+      <tr class="even">
+         <td>am.passport.instance_id         </td>
+         <td>$(cft.instance_group).$(cft.instance_id)         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.passport.port         </td>
+         <td>6666         </td>
+      </tr>
+      <tr class="even">
+         <td>am.passport.use_ssl         </td>
+         <td>Yes         </td>
+      </tr>
+      <tr class="odd">
+         <td>am.passport.userctrl.check_permissions_on_transfer_execution         </td>
+         <td>No         </td>
+      </tr>
+      <tr class="even">
+         <td>am.type         </td>
+         <td>passport         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.purge.rt         </td>
+         <td>10D         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.purge.rx         </td>
+         <td>10D         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.purge.st         </td>
+         <td>10D         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.purge.sx         </td>
+         <td>10D         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.server.bandwitdth.cos         </td>
+         <td>4         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.bandwitdth.cos.0.max_rate_in         </td>
+         <td>-1         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.server.bandwitdth.cos.0.max_rate_out         </td>
+         <td>-1         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.bandwitdth.cos.1.weight_in         </td>
+         <td>80         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.server.bandwitdth.cos.1.weight_out         </td>
+         <td>80         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.bandwitdth.cos.2.weight_in         </td>
+         <td>15         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.server.bandwitdth.cos.2.weight_out         </td>
+         <td>15         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.bandwitdth.cos.3.weight_in         </td>
+         <td>5         </td>
+      </tr>
+      <tr class="odd">
+         <td>cft.server.bandwitdth.cos.3.weight_out         </td>
+         <td>5         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.bandwitdth.enable         </td>
+         <td>No         </td>
+      </tr>
+      <tr class="odd">
+         <td>cg.mutual_auth_port         </td>
+         <td>&lt;secured communications port&gt;         </td>
+      </tr>
+      <tr class="even">
+         <td>copilot.misc.createprocessasuser         </td>
+         <td>No         </td>
+      </tr>
+      <tr class="odd">
+         <td>pki.type         </td>
+         <td>            <p>cft</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Except when using a SAF-based PKI Transfer CFT, in which case system is the value.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td>sentinel.trkipaddr</td>
-<td>&lt;Sentinel – Front-end host &gt;</td>
-</tr>
-<tr class="odd">
-<td>sentinel.trkipport</td>
-<td>&lt;Sentinel - Font-end port&gt;</td>
-</tr>
-<tr class="even">
-<td>sentinel.xfb.enable</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>sentinel.xfb.use_ssl</td>
-<td>Yes</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Except when using a SAF-based PKI Transfer CFT, in which case system is the value.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>sentinel.trkipaddr         </td>
+         <td>&lt;Sentinel – Front-end host &gt;         </td>
+      </tr>
+      <tr class="odd">
+         <td>sentinel.trkipport         </td>
+         <td>&lt;Sentinel - Font-end port&gt;         </td>
+      </tr>
+      <tr class="even">
+         <td>sentinel.xfb.enable         </td>
+         <td>Yes         </td>
+      </tr>
+      <tr class="odd">
+         <td>sentinel.xfb.use_ssl         </td>
+         <td>Yes         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Transfer CFT instance id

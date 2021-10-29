@@ -13,10 +13,10 @@ Enter the name of a working directory for a given flow. The directory name is a 
 -   Relative (to the runtime)
 -   Absolute
 
-This parameter can also use the keyword &HOME. For details, see [&HOME](../home).
+This parameter can also use the keyword &HOME. For details, see [&HOME](home).
 
  
 
-See also [Working directory](../../../../concepts/transfer_command_overview/working_directory_allos).
+See also [Working directory](../../../concepts/transfer_command_overview/working_directory_allos).
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,7 +1,7 @@
 {
     "title": "Managing transfers and partners",
-    "linkTitle": "Managing transfers and partners",
-    "weight": "110"
+    "linkTitle": "Start here",
+    "weight": "130"
 }## Transfer concepts
 
 This section describes transfers, and how to create and
@@ -44,46 +44,46 @@ Transfer CFT uses two commands for transfer requests:
 -   SEND: sends a file or message to a partner
 -   RECV: requests the reception of files from a partner
 
-Additionally, there are basic [transfer control commands](../c_intro_userinterfaces/web_copilot_ui/operations/managing_transfer_states) that you can use to manage a transfer.
+Additionally, there are basic [transfer control commands](c_intro_userinterfaces/about_cftutil/managing_transfer_states) that you can use to manage a transfer.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="../admin_intro/admin_commands_intro/delete_command">DELETE</a></p></td>
-<td><p>Deletes a catalog entry </p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a></p></td>
-<td><p>Stops a transfer and sets it to the HOLD state </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a></p></td>
-<td><p>Stops a transfer and sets it to the KEEP state </p></td>
-</tr>
-<tr class="even">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a></p></td>
-<td><p>Reactivates a transfer </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a></p></td>
-<td>Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.</td>
-</tr>
-<tr class="even">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a></p></td>
-<td><p>Declares the processing subsequent to the transfer terminated </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../c_intro_userinterfaces/about_cftutil/managing_transfer_states/resume_command">RESUME</a></p></td>
-<td><p>Retrieves, in the server mode, a blocked send request having
-the hold status</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Command</th>
+         <th>Action</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><a href="admin_intro/admin_commands_intro/delete_command">DELETE</a></p>         </td>
+         <td>            <p>Deletes a catalog entry </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/halt_command">HALT</a></p>         </td>
+         <td>            <p>Stops a transfer and sets it to the HOLD state </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/keep_command">KEEP</a></p>         </td>
+         <td>            <p>Stops a transfer and sets it to the KEEP state </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/start_command">START</a></p>         </td>
+         <td>            <p>Reactivates a transfer </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/submit_command">SUBMIT</a></p>         </td>
+         <td>Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/end_command">END</a></p>         </td>
+         <td>            <p>Declares the processing subsequent to the transfer terminated </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="c_intro_userinterfaces/about_cftutil/managing_transfer_states/resume_command">RESUME</a></p>         </td>
+         <td>            <p>Retrieves, in the server mode, a blocked send request having
+the hold status</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Transfer_owners"></span>Identifiers
@@ -120,7 +120,7 @@ by the Transfer CFT as a specific transfer. A message transfer does not make ref
 
  
 
-![](temp_request.png)
+![](/Images/TransferCFT/temp_type_data.png)
 
 ## Transfer records
 
@@ -139,13 +139,13 @@ entry, includes information such as the:
 -   Transfer status
 -   Troubleshooting diagnostics
 
-For more information, see the [list catalog contents](../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command) topic.
+For more information, see the [list catalog contents](c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command) topic.
 
 ### Example command to send a file
 
 In this example the partner is PARIS, and the file to send is called REPORT1.
 
-![](temp_request.png)
+![](/Images/TransferCFT/temp_request.png)
 
 ### Transfer identifiers
 

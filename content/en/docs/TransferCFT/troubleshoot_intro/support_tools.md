@@ -1,5 +1,5 @@
 {
-    "title": "Support tools / contact Support",
+    "title": "Support tools /contact Support",
     "linkTitle": "Support tools / contact Support",
     "weight": "230"
 }This section describes the tools available to help you collect information and contact support if you are unable to troubleshoot an error or issue.
@@ -36,18 +36,18 @@ To submit a Support request, you can do the following:
 The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called cft-support-&lt;date>(.tar.gz|.zip).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using the cft_support tool on other Operating Systems, refer to the OS-specific guide for the correct syntax.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using the cft_support tool on other Operating Systems, refer to the OS-specific guide for the correct syntax.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Using Copilot
 
-From the Copilot UI, click the ![Debug command icon](debug_alt.gif)debug icon. The report is saved in the Transfer CFT runtime directory, after which you are prompted to download the report to your desktop.
+From the Copilot UI, click the ![Debug command icon](/Images/TransferCFT/debug_alt.gif)debug icon. The report is saved in the Transfer CFT runtime directory, after which you are prompted to download the report to your desktop.
 
 ### Using command line
 
@@ -56,7 +56,7 @@ In command line, enter: cft\_support collect \[options\]
 Options:
 
 -   --help: Display this help and exit.
--   --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter CFTUTIL HELP CMD=LISTCAT, to view available parameters.
+-   --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../CFTUTIL/Monitoring/LISTCAT_command.htm), or enter CFTUTIL HELP CMD=LISTCAT, to view available parameters.
 -   --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides --cat-filter.
 -   --no-core-analysis-gdb: Do not use gdb to analyze the cores. *Unix only*
 -   --no-core-analysis-dbx: Do not use dbx to analyze the cores. *Unix only*
@@ -66,31 +66,31 @@ Examples
 Only collect information for a given transfer:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>cft_support collect --cat-filter="IDTU=A0000001"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>cft_support collect --cat-filter="IDTU=A0000001"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Collect information for all transfers in error for a given partner:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Collect transfer information related to a given IDF for all transfers in a brief LISTCAT, and only those transfers in error in a debug LISTCAT:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### IBM i
@@ -107,13 +107,13 @@ Example
 CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTSUPPORT is currently not supported with an independent ASP (IASP).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">CFTSUPPORT is currently not supported with an independent ASP (IASP).         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### z/OS
@@ -123,13 +123,13 @@ Run the JCL XSUPPORA. You can transfer the resulting file to a Windows system, 
 ### <span id="Activating_CFT_traces"></span>Activating Transfer CFT traces when a problem occurs during the transfer
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">ATM traces are available only when using Transfer CFT <span>Local Administration</span>. However Central Governance managed Transfer CFT is the recommended version.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">ATM traces are available only when using Transfer CFT <span>Local Administration</span>. However Central Governance managed Transfer CFT is the recommended version.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Transfer CFT traces are managed by the Advanced
@@ -139,4 +139,4 @@ information, and retrieve previously saved Transfer CFT information.
 
 You may need to initiate tracing in order to assist Transfer CFT Support
 service if an error occurs. The Transfer CFT Support service can analyze
-the traces to better help you resolve the issue. See [How to use ATM traces](../traces_in_cft)
+the traces to better help you resolve the issue. See [How to use ATM traces](Trace_mechanism/traces_in_cft.htm)

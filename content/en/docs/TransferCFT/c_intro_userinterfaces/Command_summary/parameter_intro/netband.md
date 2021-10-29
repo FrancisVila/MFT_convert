@@ -27,6 +27,6 @@ If NETBAND = 3, the third value is used as the outgoing port range.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

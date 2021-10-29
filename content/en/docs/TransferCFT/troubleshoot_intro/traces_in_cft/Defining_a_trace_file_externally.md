@@ -1,51 +1,51 @@
 {
-    "title": "Use an external trace (CFTTRC utility)",
+    "title": "Use  the CFTTRACE utility for traces",
     "linkTitle": "Use an external trace (CFTTRC utility)",
     "weight": "310"
 }<span id="Using_the_start_trace_command"></span>The CFTTRACE utility parameter setting commands, grouped by function, are presented in the
 following table.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Action</th>
-<th>Command</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top"><p>Define the trace file or files:</p>
-<ul>
-<li>Before
-Transfer CFT starts </li>
-<li>During
-Transfer CFT operations </li>
-</ul></td>
-<td data-valign="top" width="24%"><p> </p>
-<ul>
-<li>TRCFILE</li>
-<li>SETTRC</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td data-valign="top"><p>Start information collection:</p>
-<ul>
-<li>Transfer
-CFT start</li>
-<li>During
-Transfer CFT operations </li>
-</ul></td>
-<td data-valign="top" width="24%"><p>STARTTRC</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top"><p>Stop information collection </p></td>
-<td data-valign="top" width="24%"><p>STOPTRC </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top"><p>Close files and shut down the process </p></td>
-<td data-valign="top" width="24%"><p>SETTRC </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Action</th>
+         <th>Command</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">            <p>Define the trace file or files:</p>
+            <ul>
+               <li>Before
+Transfer CFT starts                </li>
+               <li>During
+Transfer CFT operations                </li>
+            </ul>         </td>
+         <td data-valign="top" width="24%">            <p> </p>
+            <ul>
+               <li>TRCFILE               </li>
+               <li>SETTRC               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top">            <p>Start information collection:</p>
+            <ul>
+               <li>Transfer
+CFT start               </li>
+               <li>During
+Transfer CFT operations                </li>
+            </ul>         </td>
+         <td data-valign="top" width="24%">            <p>STARTTRC</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top">            <p>Stop information collection </p>         </td>
+         <td data-valign="top" width="24%">            <p>STOPTRC </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top">            <p>Close files and shut down the process </p>         </td>
+         <td data-valign="top" width="24%">            <p>SETTRC </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Trace_command_overview"></span>Command overview
@@ -56,41 +56,41 @@ be used for the various trace processes.
 ### Define trace files
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Trace file definition</p></th>
-<th>Command</th>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="23%"><p>Before starting<br />
-Transfer CFT </p></td>
-<td data-valign="top" width="16%"><p>CFTPARM </p></td>
-<td data-valign="top" width="21%"><p>TRACE=identifier </p></td>
-<td data-valign="top" width="39%"><p>CFTTRACE command identifier </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="23%"><p> </p></td>
-<td data-valign="top" width="16%"><p>CFTTRACE </p></td>
-<td data-valign="top" width="21%"><p> </p></td>
-<td data-valign="top" width="39%"><p> </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="23%"><p> </p></td>
-<td data-valign="top" width="16%"><p>or TRCFILE (1) </p></td>
-<td data-valign="top" width="21%"><p>TYPE=TRACE </p></td>
-<td data-valign="top" width="39%"><p>The defined file is a trace file </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="23%"><p>During Transfer CFT operations </p></td>
-<td data-valign="top" width="16%"><p>SETTRC </p></td>
-<td data-valign="top" width="21%"><p>MODE=CREATE or MODIFY </p></td>
-<td data-valign="top" width="39%"><p> </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Trace file definition</p></th>
+         <th>Command</th>
+         <th>Parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="23%">            <p>Before starting<br />
+Transfer CFT </p>         </td>
+         <td data-valign="top" width="16%">            <p>CFTPARM </p>         </td>
+         <td data-valign="top" width="21%">            <p>TRACE=identifier </p>         </td>
+         <td data-valign="top" width="39%">            <p>CFTTRACE command identifier </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="23%">            <p> </p>         </td>
+         <td data-valign="top" width="16%">            <p>CFTTRACE </p>         </td>
+         <td data-valign="top" width="21%">            <p> </p>         </td>
+         <td data-valign="top" width="39%">            <p> </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="23%">            <p> </p>         </td>
+         <td data-valign="top" width="16%">            <p>or TRCFILE (1) </p>         </td>
+         <td data-valign="top" width="21%">            <p>TYPE=TRACE </p>         </td>
+         <td data-valign="top" width="39%">            <p>The defined file is a trace file </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="23%">            <p>During Transfer CFT operations </p>         </td>
+         <td data-valign="top" width="16%">            <p>SETTRC </p>         </td>
+         <td data-valign="top" width="21%">            <p>MODE=CREATE or MODIFY </p>         </td>
+         <td data-valign="top" width="39%">            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 (1): TRCFILE is used in environments
@@ -99,42 +99,42 @@ that do not allow dynamic file definition.
 ### Start collecting information
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Starting information collection</th>
-<th>Command used to define the
+   <thead>
+      <tr class="header">
+         <th>Starting information collection</th>
+         <th>Command used to define the
 file</th>
-<th>Parameter</th>
-<th>Command to enter</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="28%"><p>When starting up Transfer CFT </p></td>
-<td data-valign="top" width="22%"><p>CFTTRACE </p></td>
-<td data-valign="top" width="22%"><p>START=CFT</p></td>
-<td data-valign="top" width="28%"><p> </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="28%"><p> </p></td>
-<td data-valign="top" width="22%"><p>TRCFILE (1) </p></td>
-<td data-valign="top" width="22%"><p>START=CFT </p></td>
-<td data-valign="top" width="28%"><p>CFTTRACE </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="28%"><p>During Transfer CFT<br />
-operations </p></td>
-<td data-valign="top" width="22%"><p>CFTTRACE </p></td>
-<td data-valign="top" width="22%"><p>START=DELAYED </p></td>
-<td data-valign="top" width="28%"><p>STARTTRC </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="28%"><p> </p></td>
-<td data-valign="top" width="22%"><p>SETTRC </p></td>
-<td data-valign="top" width="22%"><p> </p></td>
-<td data-valign="top" width="28%"><p>STARTTRC </p></td>
-</tr>
-</tbody>
+         <th>Parameter</th>
+         <th>Command to enter</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="28%">            <p>When starting up Transfer CFT </p>         </td>
+         <td data-valign="top" width="22%">            <p>CFTTRACE </p>         </td>
+         <td data-valign="top" width="22%">            <p>START=CFT</p>         </td>
+         <td data-valign="top" width="28%">            <p> </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="28%">            <p> </p>         </td>
+         <td data-valign="top" width="22%">            <p>TRCFILE (1) </p>         </td>
+         <td data-valign="top" width="22%">            <p>START=CFT </p>         </td>
+         <td data-valign="top" width="28%">            <p>CFTTRACE </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="28%">            <p>During Transfer CFT<br />
+operations </p>         </td>
+         <td data-valign="top" width="22%">            <p>CFTTRACE </p>         </td>
+         <td data-valign="top" width="22%">            <p>START=DELAYED </p>         </td>
+         <td data-valign="top" width="28%">            <p>STARTTRC </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="28%">            <p> </p>         </td>
+         <td data-valign="top" width="22%">            <p>SETTRC </p>         </td>
+         <td data-valign="top" width="22%">            <p> </p>         </td>
+         <td data-valign="top" width="28%">            <p>STARTTRC </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 (1): TRCFILE is used in environments
@@ -143,37 +143,37 @@ that do not allow dynamic file definition.
 ### Stop collecting - close the file and shutdown the process
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Action</th>
-<th>Define the file with</th>
-<th>Enter the command</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="29%"><p>Stop information collection </p></td>
-<td data-valign="top" width="34%"><p>CFTTRACE </p></td>
-<td data-valign="top" width="38%"><p>STOPTRC</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="29%"><p> </p></td>
-<td data-valign="top" width="34%"><p>SETTR </p></td>
-<td data-valign="top" width="38%"><p>STOPTRC </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="29%"><p>Stop collection, close the files and shutdown the process </p></td>
-<td data-valign="top" width="34%"><p>CFTTRACE </p></td>
-<td data-valign="top" width="38%"><p>STOPTRC<br />
+   <thead>
+      <tr class="header">
+         <th>Action</th>
+         <th>Define the file with</th>
+         <th>Enter the command</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="29%">            <p>Stop information collection </p>         </td>
+         <td data-valign="top" width="34%">            <p>CFTTRACE </p>         </td>
+         <td data-valign="top" width="38%">            <p>STOPTRC</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="29%">            <p> </p>         </td>
+         <td data-valign="top" width="34%">            <p>SETTR </p>         </td>
+         <td data-valign="top" width="38%">            <p>STOPTRC </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="29%">            <p>Stop collection, close the files and shutdown the process </p>         </td>
+         <td data-valign="top" width="34%">            <p>CFTTRACE </p>         </td>
+         <td data-valign="top" width="38%">            <p>STOPTRC<br />
 and<br />
-SETTRC MODE=DELETE</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="29%"><p> </p></td>
-<td data-valign="top" width="34%"><p>SETTRC </p></td>
-<td data-valign="top" width="38%"><p>SETTRC MODE=DELETE </p></td>
-</tr>
-</tbody>
+SETTRC MODE=DELETE</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="29%">            <p> </p>         </td>
+         <td data-valign="top" width="34%">            <p>SETTRC </p>         </td>
+         <td data-valign="top" width="38%">            <p>SETTRC MODE=DELETE </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="About"></span>Using the STARTTRC command

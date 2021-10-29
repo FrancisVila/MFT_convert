@@ -39,21 +39,21 @@ For more information about curl, please visit [https://curl.haxx.se](https://cur
 To retrieve a set of transfers execute an HTTP GET request on the /cft/api/v1/transfers resource. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To retrieve a transfer execute an HTTP GET request on the /cft/api/v1/transfers/&lt;IDTU> resource. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers<span>/&lt;IDTU&gt;</span>"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X GET "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers<span>/&lt;IDTU&gt;</span>"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### POST creates a new transfer
@@ -61,11 +61,11 @@ To retrieve a transfer execute an HTTP GET request on the /cft/api/v1/transfer
 To create a send file transfer request execute an HTTP POST request on the /cft/api/v1/transfers/files/outgoings resource. You must specify the PART and IDF in the URL, however you can add optional parameters in the HTTP body. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/files/outgoings?part=&lt;PART&gt;&amp;IDF=&lt;IDF&gt;"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/files/outgoings?part=&lt;PART&gt;&amp;IDF=&lt;IDF&gt;"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Manage the REST API timeout
@@ -75,11 +75,11 @@ In the URL request, you can use the apiTimeout parameter to set the timeout for 
 For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/files/outgoings?part=&lt;PART&gt;&amp;IDF=&lt;IDF&gt;&amp;apiTimeout=20"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X POST "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/files/outgoings?part=&lt;PART&gt;&amp;IDF=&lt;IDF&gt;&amp;apiTimeout=20"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 When set to:
@@ -94,11 +94,11 @@ When set to:
 To perform an action on an existing transfer, such as restarting a transfer, execute an HTTP PUT request. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X PUT "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/&lt;IDTU&gt;/start"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X PUT "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/&lt;IDTU&gt;/start"</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### DELETE removes a transfer
@@ -108,9 +108,9 @@ To delete a transfer, execute the HTTP DELETE request on the /cft/api/v1/trans
 For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X DELETE "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/&lt;IDTU&gt;"</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span>curl -k -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6" -X DELETE "https://&lt;copilot_host&gt;:&lt;uconf:copilot.restapi.serverport&gt;/cft/api/v1/transfers/&lt;IDTU&gt;"</span>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -1,10 +1,8 @@
 {
-    "title": "Solaris Sun cluster",
-    "linkTitle": "Solaris Sun cluster",
-    "weight": "240"
-}# <span id="CFT_Solaris_Sun_Cluster_Support__Start_here"></span>About Solaris Sun cluster
-
-This sub-book describes the Transfer CFT installation and configuration
+    "title": "About Solaris  Sun cluster ",
+    "linkTitle": "About Solaris Sun cluster",
+    "weight": "260"
+}This sub-book describes the Transfer CFT installation and configuration
 with a Solaris Sun cluster. This topic
 describes the prerequisites and reference materials for installing a Solaris
 Sun cluster.

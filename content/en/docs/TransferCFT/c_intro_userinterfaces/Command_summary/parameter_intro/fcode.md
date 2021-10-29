@@ -10,34 +10,34 @@ The sent file data code. The following table indicates for each OS the
 default value supported.
 
 <table data-border="1" data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>OS</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="27%"><p>z/OS (MVS)</p></td>
-<td data-valign="top" width="73%"><p>EBCDIC </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="27%"><p>IBM i (OS400)</p></td>
-<td data-valign="top" width="73%"><p>EBCDIC </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="27%"><p>UNIX </p></td>
-<td data-valign="top" width="73%"><p>ASCII </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="27%"><p>VMS </p></td>
-<td data-valign="top" width="73%"><p>ASCII </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="27%"><p>Windows</p></td>
-<td data-valign="top" width="73%"><p>ASCII </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>OS</th>
+         <th>Default</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="27%">            <p>z/OS (MVS)</p>         </td>
+         <td data-valign="top" width="73%">            <p>EBCDIC </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="27%">            <p>IBM i (OS400)</p>         </td>
+         <td data-valign="top" width="73%">            <p>EBCDIC </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="27%">            <p>UNIX </p>         </td>
+         <td data-valign="top" width="73%">            <p>ASCII </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="27%">            <p>VMS </p>         </td>
+         <td data-valign="top" width="73%">            <p>ASCII </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="27%">            <p>Windows</p>         </td>
+         <td data-valign="top" width="73%">            <p>ASCII </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="fcode_CFTRECV"></span>CFTRECV, RECV
@@ -113,4 +113,4 @@ For the effect of FCODE on the translation performed during the send
 transfer: see the explanations given at the level of the NCODE parameter
 of the present command.
 
-[Return to Command index](../../)
+[Return to Command index](../)

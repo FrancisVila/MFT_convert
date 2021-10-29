@@ -14,4 +14,4 @@ Internal diagnostic code. Use the following values to define the diagi catalog t
 -   DIAGI=ERROR: select transfers that have a DIAGI other than 0
 -   DIAGI=\*: select all transfers (default value)
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,10 +1,8 @@
 {
-    "title": "Directory exit examples",
+    "title": "Directory  exit examples",
     "linkTitle": "Directory exit examples",
     "weight": "400"
-}# <span id="Title"></span>Directory exit examples
-
-## <span id="Parameter_Settings"></span>Parameter settings
+}## <span id="Parameter_Settings"></span>Parameter settings
 
 With these Transfer CFT parameter settings, a directory exit task, name
 of the executable module: CFTEXIA, is activated each time Transfer CFT

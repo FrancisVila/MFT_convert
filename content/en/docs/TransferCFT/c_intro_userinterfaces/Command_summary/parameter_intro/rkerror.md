@@ -21,4 +21,4 @@ command takes precedence.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

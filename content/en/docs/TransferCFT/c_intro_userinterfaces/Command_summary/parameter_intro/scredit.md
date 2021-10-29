@@ -22,4 +22,4 @@ be sent by the server.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

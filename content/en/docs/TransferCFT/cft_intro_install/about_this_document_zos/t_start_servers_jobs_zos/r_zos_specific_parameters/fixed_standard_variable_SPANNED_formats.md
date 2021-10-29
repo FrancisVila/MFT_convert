@@ -34,4 +34,4 @@ To avoid an ABEND 737-48 when receiving a file in multi-volumes compressed SMS d
 
 Related topics
 
-[Transfer CFT z/OS general performance concepts](../../zos_performance)
+[Transfer CFT z/OS general performance concepts](../zos_performance)

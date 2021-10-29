@@ -16,4 +16,4 @@ may contain the &PART symbolic variable.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

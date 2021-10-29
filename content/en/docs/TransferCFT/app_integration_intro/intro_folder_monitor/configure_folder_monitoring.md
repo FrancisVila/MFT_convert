@@ -5,13 +5,13 @@
 }This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Folder monitoring set up
@@ -42,7 +42,7 @@
     <!-- -->
 
     -   Define other Folder Monitoring parameters
-4.  Optionally, to specify file-system event monitoring you additionally must set this in [CFTFOLDER object.](#enable)
+4.  Optionally, to specify file-system event monitoring you additionally must set this in [CFTFOLDER object.](#Enable)
 
 ## <span id="CFTFOLDE"></span>CFTFOLDER object
 
@@ -55,312 +55,312 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 Parameter descriptions
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><span id="Paramete"></span>Parameter</th>
-<th>Type</th>
-<th><p>Default  </p></th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>same as in UCONF</p>
-<p>&lt;folder_monitoring.enable&gt;</p></td>
-<td>Boolean</td>
-<td>No</td>
-<td><ul>
-<li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable <span>Transfer CFT</span> folder monitoring.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>ID</p>
-<p><em><em>Mandatory</em></em></p></td>
-<td>node</td>
-<td>None</td>
-<td><p>Add the logical folders to monitor (list of logical identifiers).</p>
-<p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
-If you have more than one Folder to monitor, use a space between each logical value.</p></td>
-</tr>
-<tr class="odd">
-<td>STATE</td>
-<td>Boolean</td>
-<td>Active</td>
-<td><p>Enables a scan of the folder.</p>
+   <thead>
+      <tr class="header">
+         <th><span id="Paramete"></span>Parameter</th>
+         <th>Type</th>
+         <th>            <p>Default  </p></th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>same as in UCONF</p>
+            <p>&lt;folder_monitoring.enable&gt;</p>         </td>
+         <td>Boolean         </td>
+         <td>No         </td>
+         <td>            <ul>
+               <li>No: No folder monitoring occurs.               </li>
+               <li>Yes: Enable <span>Transfer CFT</span> folder monitoring.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>ID</p>
+            <p><em><em>Mandatory</em></em></p>         </td>
+         <td>node         </td>
+         <td>None         </td>
+         <td>            <p>Add the logical folders to monitor (list of logical identifiers).</p>
+            <p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
+If you have more than one Folder to monitor, use a space between each logical value.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>STATE         </td>
+         <td>Boolean         </td>
+         <td>Active         </td>
+         <td>            <p>Enables a scan of the folder.</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">NO = NOACTIVE.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td><p>SCANDIR</p>
-<em>Mandatory</em></td>
-<td>string</td>
-<td>None</td>
-<td><p>Absolute path name of the top level directory to scan.</p>
-<p>This directory must exist before restarting Transfer CFT.</p>
-<p>*See <a href="#char_note">NOTE</a>.</p></td>
-</tr>
-<tr class="odd">
-<td><p>WORKDIR</p>
-<em>Mandatory</em></td>
-<td>string</td>
-<td>None</td>
-<td><p>Absolute path name of the top level directory available for file state information.</p>
-<ul>
-<li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
-<li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
-</ul>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">NO = NOACTIVE.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>SCANDIR</p>
+<em>Mandatory</em>         </td>
+         <td>string         </td>
+         <td>None         </td>
+         <td>            <p>Absolute path name of the top level directory to scan.</p>
+            <p>This directory must exist before restarting Transfer CFT.</p>
+            <p>*See <a href="#char_note">NOTE</a>.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>WORKDIR</p>
+<em>Mandatory</em>         </td>
+         <td>string         </td>
+         <td>None         </td>
+         <td>            <p>Absolute path name of the top level directory available for file state information.</p>
+            <ul>
+               <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.               </li>
+               <li>If you are using the FILE method, the .met files are stored in the work_dir.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">  Never delete any .met files.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">  Never delete any .met files.         </td>
+      </tr>
+   </tbody>
 </table>
-<p>*See <a href="#char_note">NOTE</a>.</p></td>
-</tr>
-<tr class="even">
-<td>ENABLESUBDIR</td>
-<td>Boolean</td>
-<td>Yes</td>
-<td><p>Values:</p>
-<ul>
-<li>Yes: The entire scan_dir sub-directory tree is monitored.</li>
-<li>No: No scan is performed.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><span id="METHOD"></span>METHOD</td>
-<td>enum</td>
-<td>MOVE</td>
-<td><p>Values:</p>
-<ul>
-<li>MOVE: Files are moved to the work_dir prior to being submitted.</li>
-<li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>
-</ul>
+            <p>*See <a href="#char_note">NOTE</a>.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ENABLESUBDIR         </td>
+         <td>Boolean         </td>
+         <td>Yes         </td>
+         <td>            <p>Values:</p>
+            <ul>
+               <li>Yes: The entire scan_dir sub-directory tree is monitored.               </li>
+               <li>No: No scan is performed.               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td><span id="METHOD"></span>METHOD         </td>
+         <td>enum         </td>
+         <td>MOVE         </td>
+         <td>            <p>Values:</p>
+            <ul>
+               <li>MOVE: Files are moved to the work_dir prior to being submitted.               </li>
+               <li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.         </td>
+      </tr>
+   </tbody>
 </table>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.         </td>
+      </tr>
+   </tbody>
 </table>
-<p>Please see the <a href="..//transfercft/app_integration_intro/intro_folder_monitor">Limitations</a> for multi-host system recommendations.</p></td>
-</tr>
-<tr class="even">
-<td>ARCHIVEDIR</td>
-<td>String</td>
-<td> </td>
-<td>Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.</td>
-</tr>
-<tr class="odd">
-<td>FILEIDLEDELAY</td>
-<td>integer</td>
-<td>5</td>
-<td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.</td>
-</tr>
-<tr class="even">
-<td>GROUPID</td>
-<td>String</td>
-<td> </td>
-<td>Complementary information for the USERID. Maximum length 32 characters.</td>
-</tr>
-<tr class="odd">
-<td><p>IDF</p>
-<p><em>Mandatory</em></p></td>
-<td>string</td>
-<td>""</td>
-<td><p>The IDF name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>
+            <p>Please see the <a href="transfercft/app_integration_intro/intro_folder_monitor">Limitations</a> for multi-host system recommendations.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ARCHIVEDIR         </td>
+         <td>String         </td>
+         <td>          </td>
+         <td>Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.         </td>
+      </tr>
+      <tr class="odd">
+         <td>FILEIDLEDELAY         </td>
+         <td>integer         </td>
+         <td>5         </td>
+         <td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.         </td>
+      </tr>
+      <tr class="even">
+         <td>GROUPID         </td>
+         <td>String         </td>
+         <td>          </td>
+         <td>Complementary information for the USERID. Maximum length 32 characters.         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>IDF</p>
+            <p><em>Mandatory</em></p>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>            <p>The IDF name to use in the SEND command. Use one of the following:</p>
+            <ul>
+               <li>A fixed name.               </li>
+               <li>"(0)": The name of the first directory sub-level is used.               </li>
+               <li>"(1)": The name of the second directory sub-level is used.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the <a href="#example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td><p>PART</p>
-<em>Mandatory</em></td>
-<td>string</td>
-<td>""</td>
-<td><p>The PART name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the <a href="#example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>PART</p>
+<em>Mandatory</em>         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>            <p>The PART name to use in the SEND command. Use one of the following:</p>
+            <ul>
+               <li>A fixed name.               </li>
+               <li>"(0)": The name of the first directory sub-level is used.               </li>
+               <li>"(1)": The name of the second directory sub-level is used.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the <a href="#example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="odd">
-<td>INTERVAL</td>
-<td>int</td>
-<td>60</td>
-<td>The interval between two scans of the directory files in seconds.</td>
-</tr>
-<tr class="even">
-<td>FILECOUNT</td>
-<td>int</td>
-<td>0</td>
-<td><p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p></td>
-</tr>
-<tr class="odd">
-<td>FILESIZEMIN</td>
-<td>int</td>
-<td>0</td>
-<td><p>Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.</p></td>
-</tr>
-<tr class="even">
-<td>FILESIZEMAX</td>
-<td>int</td>
-<td>0</td>
-<td><p>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.</p></td>
-</tr>
-<tr class="odd">
-<td>INCLUDEFILTER</td>
-<td>string</td>
-<td>""</td>
-<td>If this parameter is defined, only files whose names match this pattern are monitored.</td>
-</tr>
-<tr class="even">
-<td>EXCLUDEFILTER</td>
-<td>string</td>
-<td>""</td>
-<td>If this parameter is defined, files whose names match this pattern are not monitored.</td>
-</tr>
-<tr class="odd">
-<td>RESUBMITCHANGED</td>
-<td>Boolean</td>
-<td>Yes</td>
-<td><p>This parameter has no effect when the configured method is MOVE.</p>
-<p>When the method parameter value is set to FILE:</p>
-<ul>
-<li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
-<li>No: Files are not resubmitted, regardless of changes.</li>
-</ul>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the <a href="#example_for_description">Directory C example</a><span>/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="odd">
+         <td>INTERVAL         </td>
+         <td>int         </td>
+         <td>60         </td>
+         <td>The interval between two scans of the directory files in seconds.         </td>
+      </tr>
+      <tr class="even">
+         <td>FILECOUNT         </td>
+         <td>int         </td>
+         <td>0         </td>
+         <td>            <p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>FILESIZEMIN         </td>
+         <td>int         </td>
+         <td>0         </td>
+         <td>            <p>Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>FILESIZEMAX         </td>
+         <td>int         </td>
+         <td>0         </td>
+         <td>            <p>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>INCLUDEFILTER         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>If this parameter is defined, only files whose names match this pattern are monitored.         </td>
+      </tr>
+      <tr class="even">
+         <td>EXCLUDEFILTER         </td>
+         <td>string         </td>
+         <td>""         </td>
+         <td>If this parameter is defined, files whose names match this pattern are not monitored.         </td>
+      </tr>
+      <tr class="odd">
+         <td>RESUBMITCHANGED         </td>
+         <td>Boolean         </td>
+         <td>Yes         </td>
+         <td>            <p>This parameter has no effect when the configured method is MOVE.</p>
+            <p>When the method parameter value is set to FILE:</p>
+            <ul>
+               <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.               </li>
+               <li>No: Files are not resubmitted, regardless of changes.               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td>FILTERTYPE</td>
-<td>enum</td>
-<td>WILDMAT</td>
-<td><p>Defines the pattern matching algorithm to use for file name filtering.</p>
-<p>Values:</p>
-<ul>
-<li>STRJCMP: The Transfer CFT pattern matching algorithm.</li>
-<li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong></li>
-<li>EREGEX:  Extended regular expression syntax.</li>
-</ul>
-<p>See <a href="../folder_customize">Create inclusion and exclusion filters</a> for details.</p></td>
-</tr>
-<tr class="odd">
-<td>RENAMEMETHOD</td>
-<td>Enum</td>
-<td>TIMESTAMP</td>
-<td><p>This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</p>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>FILTERTYPE         </td>
+         <td>enum         </td>
+         <td>WILDMAT         </td>
+         <td>            <p>Defines the pattern matching algorithm to use for file name filtering.</p>
+            <p>Values:</p>
+            <ul>
+               <li>STRJCMP: The Transfer CFT pattern matching algorithm.               </li>
+               <li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong>               </li>
+               <li>EREGEX:  Extended regular expression syntax.               </li>
+            </ul>
+            <p>See <a href="folder_customize">Create inclusion and exclusion filters</a> for details.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>RENAMEMETHOD         </td>
+         <td>Enum         </td>
+         <td>TIMESTAMP         </td>
+         <td>            <p>This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</p>
 For example, using timestamp_separators=".":
-<ul>
-<li>myfile is renamed myfile.20131025</li>
-<li>myfile.txt is renamed myfile.20131025.txt</li>
-</ul>
+            <ul>
+               <li>myfile is renamed myfile.20131025               </li>
+               <li>myfile.txt is renamed myfile.20131025.txt               </li>
+            </ul>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Unset the default value and use " " to MOVE without adding a timestamp.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-<tr class="even">
-<td>RENAMESEPARATOR</td>
-<td>string</td>
-<td><p>"."</p></td>
-<td><p>This parameter only applies to the MOVE method.</p>
-<p>You can use no more than two characters from among the following:</p>
-<p>.[]()_-</p>
-<p>The first character defines the separator before the timestamp.
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Unset the default value and use " " to MOVE without adding a timestamp.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+      <tr class="even">
+         <td>RENAMESEPARATOR         </td>
+         <td>string         </td>
+         <td>            <p>"."</p>         </td>
+         <td>            <p>This parameter only applies to the MOVE method.</p>
+            <p>You can use no more than two characters from among the following:</p>
+            <p>.[]()_-</p>
+            <p>The first character defines the separator before the timestamp.
 The second one, when present, defines the separator after the timestamp.</p>
-<p>For example, using timestamp_separators "[]":
+            <p>For example, using timestamp_separators "[]":
 - myfile is renamed myfile.[20131025]
-- myfile.txt is renamed myfile.[20131025].txt</p></td>
-</tr>
-<tr class="odd">
-<td>N/A in this version</td>
-<td>string</td>
-<td> </td>
-<td>Metadata used to control user changes.</td>
-</tr>
-<tr class="even">
-<td><p>USEFSEVENTS</p>
-<p> </p>
-<p><a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder">More information</a></p></td>
-<td>Boolean</td>
-<td>No</td>
-<td>Set to YES to enable the file system events monitoring service to detect newly available files.</td>
-</tr>
-<tr class="odd">
-<td><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a></td>
-<td>String</td>
-<td></td>
-<td><p><em>Available on UNIX and</em> <span>Windows</span> <em></em></p>
-<p>Identifier for a user who can scan a folder. See the section, <a href="#folder2">Folder monitoring using USERCTRL</a>.</p></td>
-</tr>
-</tbody>
+- myfile.txt is renamed myfile.[20131025].txt</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>N/A in this version         </td>
+         <td>string         </td>
+         <td>          </td>
+         <td>Metadata used to control user changes.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>USEFSEVENTS</p>
+            <p> </p>
+            <p><a href="../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder">More information</a></p>         </td>
+         <td>Boolean         </td>
+         <td>No         </td>
+         <td>Set to YES to enable the file system events monitoring service to detect newly available files.         </td>
+      </tr>
+      <tr class="odd">
+         <td><a href="../../CFTUTIL/Parameter_index/userid.htm">USERID</a>         </td>
+         <td>String         </td>
+         <td>         </td>
+         <td>            <p><em>Available on UNIX and</em> <span>Windows</span> <em></em></p>
+            <p>Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span id="char_note"></span>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span id="char_note"></span>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   UNIX /
@@ -394,11 +394,11 @@ Example
 The following command reloads the FM40 configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>ACT ID=FM40, type=FOLDER</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>ACT ID=FM40, type=FOLDER         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Enable"></span>Enable the file-system event monitoring
@@ -407,16 +407,16 @@ This feature enables you to use file-system events monitoring to detect newly av
 
 Available on Linux/Windows only
 
-See [Supported OS for file-system event monitoring](..//transfercft/app_integration_intro/intro_folder_monitor).
+See [Supported OS for file-system event monitoring](transfercft/app_integration_intro/intro_folder_monitor).
 
 To enable file-system event monitoring modify as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTFOLDER ID=&lt;myfolderobject&gt;, USEFSEVENTS=YES, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTFOLDER ID=&lt;myfolderobject&gt;, USEFSEVENTS=YES, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Attention
@@ -433,41 +433,41 @@ We recommended that you only use file-system event monitoring when immediate att
 To turn the file-system event monitoring off for a given folder object, use the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>INACT TYPE=FOLDER,ID=&lt;myfolderobject&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>INACT TYPE=FOLDER,ID=&lt;myfolderobject&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 To turn on the file-system event monitoring for a given folder object, use the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>ACT TYPE=FOLDER,ID=&lt;myfolderobject&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>ACT TYPE=FOLDER,ID=&lt;myfolderobject&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 To view all of the CFTFOLDER objects, use the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>LISTPARM TYPE=FOLDER</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>LISTPARM TYPE=FOLDER         </td>
+      </tr>
+   </tbody>
 </table>
 
 To extract the folder objects, use the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXT TYPE=FOLDER</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXT TYPE=FOLDER         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Remove or change a folder
@@ -481,22 +481,22 @@ If Transfer CFT is running and you create or change a folder or multiple folders
 Prior to deleting a folder object, check that it is inactive. You can execute INACT on this folder if unsure.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>INACT TYPE=FOLDER, ID=&lt;myfolder&gt;</p>
-<p>CFTFOLDER ID=&lt;myfolder&gt;, MODE=DELETE</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>INACT TYPE=FOLDER, ID=&lt;myfolder&gt;</p>
+            <p>CFTFOLDER ID=&lt;myfolder&gt;, MODE=DELETE</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you delete an active folder object while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you delete an active folder object while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Directory configuration examples
@@ -504,13 +504,13 @@ Prior to deleting a folder object, check that it is inactive. You can execute IN
 This section presents an example that consists of configuring 3 directories for monitoring, each having a different set of configuration parameter values. In this example, the three different directories are called A, B, and C.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Directory A requirements
@@ -523,18 +523,18 @@ The first directory presents the simplest possible configuration, leaving most p
 The following commands create the configuration defined for directory A.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#</p>
-<p># Create all of the needed directories (UNIX platform example)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_a</p>
-<p>mkdir /home/CFT/fm/dir_a/scan</p>
-<p>mkdir /home/CFT/fm/dir_a/work</p>
-<p>#</p>
-<p>CFTUTIL CFTFOLDER ID=A, SCANDIR='/home/CFT/fm/dir_a/scan', WORKDIR='/home/CFT/fm/dir_a/work', PART='NEWYORK', IDF='IDFA'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#</p>
+            <p># Create all of the needed directories (UNIX platform example)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_a</p>
+            <p>mkdir /home/CFT/fm/dir_a/scan</p>
+            <p>mkdir /home/CFT/fm/dir_a/work</p>
+            <p>#</p>
+            <p>CFTUTIL CFTFOLDER ID=A, SCANDIR='/home/CFT/fm/dir_a/scan', WORKDIR='/home/CFT/fm/dir_a/work', PART='NEWYORK', IDF='IDFA'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Directory B requirements
@@ -548,24 +548,24 @@ For the second directory, directory B, we want to:
 The following commands create the required directory B configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#</p>
-<p># Create all needed directories (example for UNIX platforms)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_b</p>
-<p>mkdir /home/CFT/fm/dir_b/scan</p>
-<p>mkdir /home/CFT/fm/dir_b/work</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/london</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
-<p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
-<p>#</p>
-<p>CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir_b/scan', WORKDIR='/home/CFT/fm/dir_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='*.txt'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#</p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_b</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan</p>
+            <p>mkdir /home/CFT/fm/dir_b/work</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/newyork</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/berlin</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/london</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/rome</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/brussels</p>
+            <p>mkdir /home/CFT/fm/dir_b/scan/paris</p>
+            <p>#</p>
+            <p>CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir_b/scan', WORKDIR='/home/CFT/fm/dir_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='*.txt'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example /home/CFT/fm/dir\_b/newyork for the partner named newyork.
@@ -585,26 +585,26 @@ For directory C we want to:
 The following commands create the described directory C configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>#<span id="#example_for_description"></span></p>
-<p># Create all needed directories (example for UNIX platforms)</p>
-<p>#</p>
-<p>mkdir /home/CFT/fm/dir_c</p>
-<p>mkdir /home/CFT/fm/dir_c/scan</p>
-<p>mkdir /home/CFT/fm/dir_c/work</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf1</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf2</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf3</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfa</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfb</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfc</p>
-<p>mkdir /home/CFT/fm/dir_c/scan/paris/idfd</p>
-<p>#</p>
-<p>CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir_c/scan',</p>
-<p>WORKDIR='/home/CFT/fm/dir_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='*.tmp'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>#<span id="#example_for_description"></span></p>
+            <p># Create all needed directories (example for UNIX platforms)</p>
+            <p>#</p>
+            <p>mkdir /home/CFT/fm/dir_c</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan</p>
+            <p>mkdir /home/CFT/fm/dir_c/work</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf1</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf2</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/newyork/idf3</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfa</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfb</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfc</p>
+            <p>mkdir /home/CFT/fm/dir_c/scan/paris/idfd</p>
+            <p>#</p>
+            <p>CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir_c/scan',</p>
+            <p>WORKDIR='/home/CFT/fm/dir_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='*.tmp'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner newyork and idf idf1.
@@ -616,50 +616,50 @@ You can customize the transfer related metadata, such as the IDA, PARM, SUSER, e
 For example, you have a file named A0001.appli1.cft.XXX in the scan1 folder, and you have the following two objects in your configuration:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTFOLDER id=folder1,scandir=scan1,idf=idf1,par=part1,...
-<p>CFTSEND id=idf1,ida=&amp;%.1froot,sappl="&amp;%.2froot",suser="&amp;%.3froot",...</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTFOLDER id=folder1,scandir=scan1,idf=idf1,par=part1,...
+            <p>CFTSEND id=idf1,ida=&amp;%.1froot,sappl="&amp;%.2froot",suser="&amp;%.3froot",...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Consequently, Transfer CFT automatically creates a request based on the above syntax:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND part=part1,idf=idf1,ida=A0001,sappl="appli1",suser="cft"</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND part=part1,idf=idf1,ida=A0001,sappl="appli1",suser="cft"         </td>
+      </tr>
+   </tbody>
 </table>
 
--   For more information on how to effectively use separators with symbolic variables, please see [Separate fields in symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables)
--   For more information on the various symbolic variables to use in CFTSEND with CFTFOLDER, see [List of symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables)
+-   For more information on how to effectively use separators with symbolic variables, please see [Separate fields in symbolic variables.](../../c_intro_userinterfaces/command_summary/symbolic_variables)
+-   For more information on the various symbolic variables to use in CFTSEND with CFTFOLDER, see [List of symbolic variables.](../../c_intro_userinterfaces/command_summary/symbolic_variables)
 
 ## Archiving with folder monitoring
 
 Archiving is a way to store files after they have been moved from the scanned folder to the receiving folder.
 
 1.  A file is deposited in the folder to be scanned.  
-    ![](folder7.png)
+    ![](/Images/TransferCFT/folder5.png)
 2.  Depending on the folder monitoring method you have enabled, the file is picked up and moved to the working directory.  
-    ![](folder7.png)
+    ![](/Images/TransferCFT/folder6.png)
 3.  The file transfer and any related processing occur and the file is then moved to the storage folder.  
-    ![](folder7.png)
+    ![](/Images/TransferCFT/folder7.png)
 
 ### Use case scenario
 
 The following example describes how to scan a folder, send any new file, and then store a backup of the file. Additionally, the scenario provides instructions on how to then rename the transferred file as it is stored in the backup folder.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you create a new transfer with the same name as a previous file, it overwrites the existing file in the archive folder.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you create a new transfer with the same name as a previous file, it overwrites the existing file in the archive folder.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Prerequisites
@@ -680,21 +680,21 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 1.  Create the CFTFOLDER object.  
 
 2.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>cftfolder id=app1, PART=paris, idf=myfile, scandir=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchiveFolder,method=move,interval=1,fileidledelay=0</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>cftfolder id=app1, PART=paris, idf=myfile, scandir=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchiveFolder,method=move,interval=1,fileidledelay=0</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 3.  Activate the new CFTFOLDER object:  
 
 4.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>ACT type=folder, id=app1</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>ACT type=folder, id=app1</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 5.  Start Transfer CFT: cft start
@@ -705,11 +705,11 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 8.  Check in the log for a message similar to the following:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchivedFolder\MyFile.txt &lt;IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185&gt;</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchivedFolder\MyFile.txt &lt;IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185&gt;</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ### Archive and rename in the archive folder
@@ -717,31 +717,31 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 1.  Create the CFTFOLDER object.  
 
 2.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>cftfolder id=app1, PART=paris, idf=MyFile, SCANDIR=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchivedFolder,method=move,interval=1,fileidledelay=0</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>cftfolder id=app1, PART=paris, idf=MyFile, SCANDIR=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchivedFolder,method=move,interval=1,fileidledelay=0</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 3.  Create a SEND model using `archivefname`. In this example the transfer's IDTU is appended on the filename:
 
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTSEND id=MYFILE, archivefname=&amp;FROOT&amp;(-.)FSUF_&amp;IDTU, faction=ARCHIVE</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTSEND id=MYFILE, archivefname=&amp;FROOT&amp;(-.)FSUF_&amp;IDTU, faction=ARCHIVE</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 4.  Activate the new CFTFOLDER object:  
 
 5.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>ACT type=folder, id=app1</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>ACT type=folder, id=app1</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 6.  Start Transfer CFT: cft start
@@ -752,61 +752,61 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 9.  Check in the log for a message similar to the following:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchiveFolder\MyFile.txt_A000000F &lt;IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185&gt;</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchiveFolder\MyFile.txt_A000000F &lt;IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185&gt;</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ### <span id="Folder2"></span>Folder monitoring using USERCTRL
 
-The following example demonstrates how to use the [USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl) parameter to define access control for another user. See the sections on user rights in [Using system users - UNIX](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix) or [How to enable system users - Windows](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows) for details.
+The following example demonstrates how to use the [USERCTRL](../../CFTUTIL/Parameter_index/userctrl.htm) parameter to define access control for another user. See the sections on user rights in [Using system users - UNIX](../../UNIX/t_adding_system_user_unix.htm) or [How to enable system users - Windows](../../Windows/add_system_user_windows.htm) for details.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">USEFSEVENTS=YES is not supported on UNIX systems in this use case.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">USEFSEVENTS=YES is not supported on UNIX systems in this use case.         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Enable USERCTRL in the CFTPARM command:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>CFTPARM ID=IDPARM0,…,USERCTRL=YES</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>CFTPARM ID=IDPARM0,…,USERCTRL=YES         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Start Transfer CFT with `usercft `as the user.
 3.  User1 creates the /home/user1/scandir\_app1 and `/home/user1/workdir` folders:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>mkdir /home/user1/scandir_app1<br />
-    mkdir /home/user1/workdir</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>mkdir /home/user1/scandir_app1<br />
+    mkdir /home/user1/workdir         </td>
+          </tr>
+       </tbody>
     </table>
 4.  `App1 `writes files to this specific scandir folder, e.g. `/home/user1/scandir_app1`, which belongs to user1. Notice that the usercft user does not have access to`  scandir_app1`.
 5.  From CFTUTIL, create a CFTFOLDER:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>cftfolder id=app1, PART=paris, idf=app1, SCANDIR=/home/user1/scandir_app1 ,userid=user1, workdir=/home/user1/workdir, method=move, interval=10,fileidledelay=0</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>cftfolder id=app1, PART=paris, idf=app1, SCANDIR=/home/user1/scandir_app1 ,userid=user1, workdir=/home/user1/workdir, method=move, interval=10,fileidledelay=0         </td>
+          </tr>
+       </tbody>
     </table>
 6.  Activate the CFTFOLDER object:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>act type=folder,id=app1</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>act type=folder,id=app1         </td>
+          </tr>
+       </tbody>
     </table>
 7.  Create a file called Myfile.txt, and copy it to the `/home/user1/scandir_app1` folder.
 
@@ -815,10 +815,10 @@ Results
 The  transfer is executed on the behalf of user1. Notice that there is a message indicating that the folder is activated on behalf of the specified user.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTR20I folder "/home/user1/scandir_app1" registered as nickname &lt;APP1&gt;
-CFTR20I on behalf of "user1" user</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTR20I folder "/home/user1/scandir_app1" registered as nickname &lt;APP1&gt;
+CFTR20I on behalf of "user1" user         </td>
+      </tr>
+   </tbody>
 </table>

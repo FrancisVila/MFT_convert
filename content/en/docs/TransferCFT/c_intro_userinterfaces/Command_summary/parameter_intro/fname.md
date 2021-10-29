@@ -100,7 +100,7 @@ To build this file, the following rules must be followed:
 
 File example:
 
-![Example file names for distribution list](fname_dest_ex.png)
+![Example file names for distribution list](/Images/TransferCFT/fname_dest_ex.png)
 
 Transfer CFT does not check the transfer requester access rights for this file.
 
@@ -147,26 +147,26 @@ You can define the filename either in the:
     object (recommended)
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>To receive...</p></th>
-<th><p>Enter...</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td width="34.612%"><p>a file</p></td>
-<td width="65.388%"><p>a complete physical file name</p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td width="34.612%"><p>a version of a file</p></td>
-<td width="65.388%"><p>a file name with a root and a version number</p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td width="34.612%"><p>a group of concatenated files</p></td>
-<td width="65.388%"><p>a directory name</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>To receive...</p></th>
+         <th>            <p>Enter...</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td width="34.612%">            <p>a file</p>         </td>
+         <td width="65.388%">            <p>a complete physical file name</p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td width="34.612%">            <p>a version of a file</p>         </td>
+         <td width="65.388%">            <p>a file name with a root and a version number</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td width="34.612%">            <p>a group of concatenated files</p>         </td>
+         <td width="65.388%">            <p>a directory name</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 *When using the complete
@@ -176,7 +176,7 @@ The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in fname parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf [char\_directory](platform_specific_characters_and_functions.htm) for more information.
+Normally, the folder referenced in fname parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf char\_directory for more information.
 
 **Example**
 
@@ -214,14 +214,14 @@ to each operating system. Refer to the Transfer CFT *Operations Guide*
 corresponding to your OS.
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="26%"><p><strong>PeSIT E CFT/CFT</strong></p></td>
-<td width="74%"><p>The &amp;FUNIT, &amp;FUNITC, &amp;FPATH, &amp;FROOT and
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p><strong>PeSIT E CFT/CFT</strong></p>         </td>
+         <td width="74%">            <p>The &amp;FUNIT, &amp;FUNITC, &amp;FPATH, &amp;FROOT and
 &amp;FSUF variables are used so that the FNAME parameter gives the
-full "path" pointing to the file to be written.</p></td>
-</tr>
-</tbody>
+full "path" pointing to the file to be written.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Specific case using &NFNAME symbolic
@@ -248,31 +248,31 @@ of the transfer. The temporary file is then renamed with the name defined
 by FNAME.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When
 a temporary file is used, the WFNAME parameter, there may be restrictions
 related to the operating system. On IBM systems, for example,
-the type of unit must not appear in the name of the FNAME file.</td>
-</tr>
-</tbody>
+the type of unit must not appear in the name of the FNAME file.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="26%"><p><strong>PeSIT E CFT/CFT profile</strong></p></td>
-<td width="74%"><p>Receiving a group of copied/concatenated files. This
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p><strong>PeSIT E CFT/CFT profile</strong></p>         </td>
+         <td width="74%">            <p>Receiving a group of copied/concatenated files. This
 name must correspond to a directory name if a copy/concatenation
 operation is performed when the files are sent (transfer of a group
 of files between systems of the same type).</p>
-<p>The data received is stored in the temporary file specified
+            <p>The data received is stored in the temporary file specified
 in the WFNAME  parameter. The files are then deconcatenated in the
-directory specified by FNAME.</p></td>
-</tr>
-</tbody>
+directory specified by FNAME.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="fname CFTSEND__CFTRECV__CFTISEND"></span>CFTSEND, SEND
@@ -282,13 +282,13 @@ directory specified by FNAME.</p></td>
 512}
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>here the &lt;file-symb&gt; character is specific to each system (for example # on Windows and @ on UNIX environments).</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>here the &lt;file-symb&gt; character is specific to each system (for example # on Windows and @ on UNIX environments).</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Name of the local file, directory, indirection file, selection mask
@@ -304,61 +304,61 @@ The following examples use a UNIX syntax, modify accordingly for your environmen
 FNAME=filename where the FNAME is expressed as an absolute name:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME= '/home/cft/runtime/pub/FTEST'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME= '/home/cft/runtime/pub/FTEST'         </td>
+      </tr>
+   </tbody>
 </table>
 
 FNAME = filename where the FNAME is expressed in relative name from runtime folder:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME = 'pub/FTEST'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME = 'pub/FTEST'         </td>
+      </tr>
+   </tbody>
 </table>
 
 FNAME=dirname which transfers a file that contains the list of all files in the dirname folder (pub in this example), but not the actual files:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME= '/home/cft/runtime/pub' or FNAME= 'pub'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME= '/home/cft/runtime/pub' or FNAME= 'pub'         </td>
+      </tr>
+   </tbody>
 </table>
 
 FNAME=&lt;file-symb>filename which transfers all the files referenced in the list file:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME= '@/home/cft/runtime/pub/list'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME= '@/home/cft/runtime/pub/list'         </td>
+      </tr>
+   </tbody>
 </table>
 
 FNAME=&lt;file-symb>mask  which transfers all the files that correspond to the mask criteria:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME= '@/home/cft/runtime/pub/F*'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME= '@/home/cft/runtime/pub/F*'         </td>
+      </tr>
+   </tbody>
 </table>
 
 FNAME=&lt;file-symb>dirname which transfers all the files in dirname folder:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME= '@/home/cft/runtime/pub'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME= '@/home/cft/runtime/pub'         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="fname_CFTLOG"></span>CFTLOG
@@ -398,4 +398,4 @@ specific to the system.
 
 Name of the Access Management cache file.
 
-[Return to Command index](../../)
+[Return to Command index](../)

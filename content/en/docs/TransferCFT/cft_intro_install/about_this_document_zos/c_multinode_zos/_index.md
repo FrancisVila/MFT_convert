@@ -5,7 +5,7 @@
 }This topic describes the Transfer CFT multi-node feature, which provides you with horizontal scalability and high availability for failovers. See the [Active/active<span aria-hidden="true"> You configure two or more Transfer CFTs, up to four nodes, each having an independent workload. These nodes will then run as individual nodes until a fail over occurs.
 When a fail over occurs, one of the other nodes takes over from the failed node. This secondary node offers services to new and existing transfer requests and tasks, until the original node resumes activity.
 When the failed node restarts, a manual intervention required in Transfer CFT, it resumes its connections from the secondary or replacement node.
-To summarize, when a fail over occurs the external Transfer CFT is oblivious to any change. The requests are directed to the sysplex distributor, which resubmits any uncommitted transactions to the replacement node. During fail back, the connection returns to the original node.</span>](javascript:void(0)) description for conceptual information.
+To summarize, when a fail over occurs the external Transfer CFT is oblivious to any change. The requests are directed to the sysplex distributor, which resubmits any uncommitted transactions to the replacement node. During fail back, the connection returns to the original node.</span>](#) description for conceptual information.
 
 Multi-node benefits for Transfer CFT include:
 
@@ -46,7 +46,7 @@ In a z/OS environment, the multi-node architecture uses SYSPLEX components that 
 
 **High level architectural overview**
 
-![](zos_SysplexDistributor.png)
+![](/Images/TransferCFT/temp_lpar_cluster.png)
 
 **What is a host?**
 
@@ -71,7 +71,7 @@ The shared file system for Transfer CFT z/OS is a DASD (direct-access storage de
 
 **Incoming flow from external Transfer CFT partner**
 
-![](zos_SysplexDistributor.png)
+![](/Images/TransferCFT/zos_SysplexDistributor.png)
 
 Legend
 
@@ -92,13 +92,13 @@ The node manager monitors all nodes that are part of the Transfer CFT multi-node
 Typically, when a node is not running correctly, the node manager tries to start it locally.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Copilot can be registered to ARM (A12OPTS ARM=YES), but the Transfer CFTs cannot. If a host fails, the ARM will not restart that host's Copilot on another host.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Copilot can be registered to ARM (A12OPTS ARM=YES), but the Transfer CFTs cannot. If a host fails, the ARM will not restart that host's Copilot on another host.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### PORT statement (connection dispatcher)
@@ -141,13 +141,13 @@ The following databases are node specific, and the filename is flagged by the no
 -   Account file (..ACCNT1.N00, ..ACCNT2.N00, ..ACCNT1.N01, ..ACCNT2.N01 ,...)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using multi-node architecture, the allocated space in the catalog file is 10% greater than when working in a standalone Transfer CFT.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using multi-node architecture, the allocated space in the catalog file is 10% greater than when working in a standalone Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Recovery

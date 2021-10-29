@@ -1,5 +1,5 @@
 {
-    "title": "Client authentication ",
+    "title": "Client authentication",
     "linkTitle": "Client authentication ",
     "weight": "320"
 }Transfer CFT REST API supports *HTTP Basic* and *HTTP Bearer* as the authentication method. Confidentiality is ensured by the use of an HTTPS connection.
@@ -19,23 +19,23 @@ To use this type of authentication you must specify the HTTP Authorization head
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6-B3zrHYjhAqX5UUYht2zkd5-iSBbdyUYuVpSTMhA"</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Bearer eyJhbGnMQdLK6lwYPwy6-B3zrHYjhAqX5UUYht2zkd5-iSBbdyUYuVpSTMhA"         </td>
+      </tr>
+   </tbody>
 </table>
 
 To use the bearer method, you require an access token as described below.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">REST API usage requires bearer authentication if SAML is enabled, <span>am.type=saml</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">REST API usage requires bearer authentication if SAML is enabled, <span>am.type=saml</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Generate an access token
@@ -46,7 +46,7 @@ In the Transfer CFT UI:
 2.  Select **My Access Tokens** in the drop-down menu.  
     The **My Access Token** page displays.
 3.  Click **Generate Token**.  
-    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![](copy_icon.png)copy icon to easily copy the entire token.
+    The Action, User, Creation date, and Token fields display. In the **Token** field, click the ![](/Images/TransferCFT/copy_icon.png)copy icon to easily copy the entire token.
 
 ## Basic authentication
 
@@ -57,11 +57,11 @@ To use this type of authentication you must specify the HTTP Authorization head
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Basic Z3Vlc3Q6Z3Vlc3QK"</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>curl -X GET "https://localhost:1768/cft/api/v1/transfers" -H "accept: application/json" -H "Authorization: Basic Z3Vlc3Q6Z3Vlc3QK"         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Limit the number of failed login attempts
@@ -76,13 +76,13 @@ You can use the following UCONF parameters to manage this option:
 -   `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In a multi-host environment, an attacker may have up to the <span>copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In a multi-host environment, an attacker may have up to the <span>copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.         </td>
+      </tr>
+   </tbody>
 </table>
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.

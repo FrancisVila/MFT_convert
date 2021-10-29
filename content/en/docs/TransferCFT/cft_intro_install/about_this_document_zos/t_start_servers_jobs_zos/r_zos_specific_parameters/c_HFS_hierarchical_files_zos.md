@@ -2,9 +2,9 @@
     "title": "HFS hierarchical files",
     "linkTitle": "HFS hierarchical files",
     "weight": "310"
-}The [HFS<span aria-hidden="true"> Hierarchical File System </span>](javascript:void(0)) data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
+}The [HFS<span aria-hidden="true"> Hierarchical File System </span>](#) data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
 
-HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the [USS<span aria-hidden="true"> UNIX System Services</span>](javascript:void(0)), such as the management and access interface.
+HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the [USS<span aria-hidden="true"> UNIX System Services</span>](#), such as the management and access interface.
 
 Transfer CFT only accepts the complete name from the root directory. All file name components are separated by the ‘/’ character. The complete name is limited to 248 characters.
 
@@ -34,21 +34,21 @@ or
 To enable recursive processing for a group of files, use the following syntax \*\* (two asterisks). To select all files in all of the folders, for example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME =/home/qualcft/**</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME =/home/qualcft/**         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A single asterisk * only selects the file in the immediate folder.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A single asterisk * only selects the file in the immediate folder.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### HFS file characteristics
@@ -116,11 +116,11 @@ Changing the name of an HFS file can only be carried out in the same directory. 
 For each HFS file access error, Transfer CFT z/OS displays the CFTHF01E message in the SYSLOG.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><code>CFHF01E:BPX1mod ,RSN=05F1006C,RC=ENOENT (129)No such file or directory </code></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><code>CFHF01E:BPX1mod ,RSN=05F1006C,RC=ENOENT (129)No such file or directory </code>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -137,4 +137,4 @@ Refer to the IBM brochure *UNIX System Services Messages & Codes*.
 
 Related topics
 
--   [File access and coding](../file_access_and_coding)
+-   [File access and coding](file_access_and_coding)

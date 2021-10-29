@@ -15,4 +15,4 @@ Sub-address common to the SU (Sub-Units) referenced by this CFTNET.
 
 Mandatory
 
-[Return to Command index](../../)
+[Return to Command index](../)

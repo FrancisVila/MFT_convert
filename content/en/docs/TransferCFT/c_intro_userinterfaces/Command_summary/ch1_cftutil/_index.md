@@ -1,5 +1,5 @@
 {
-    "title": "Batch programming",
+    "title": "Batch programming language ",
     "linkTitle": "Batch programming",
     "weight": "200"
 }## Elements
@@ -18,11 +18,11 @@ An internal command or application consists of the following:
 The general command syntax is:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>&lt;list_of_arguments&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>&lt;list_of_arguments&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 An argument consists of the following elements:
@@ -33,33 +33,33 @@ An argument consists of the following elements:
 The syntax of an argument is:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>&lt;id&gt; = &lt;value&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>&lt;id&gt; = &lt;value&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 Separate two arguments by a, (comma). The command syntax becomes:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>[&lt;id&gt; = &lt;value&gt;,] *&lt;id&gt; = &lt;value&gt;</p>
-<p>The expression in brackets is repeated.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>[&lt;id&gt; = &lt;value&gt;,] *&lt;id&gt; = &lt;value&gt;</p>
+            <p>The expression in brackets is repeated.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The syntax for a parameter value results from the parameter type. A parameter can accept more than one value at a time. Set the multiple values in brackets and separate the values by a , (comma).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>&lt;id&gt; = ([&lt;value&gt;,] * &lt;value&gt;)</p>
-<p>The expression in brackets is repeated.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>&lt;id&gt; = ([&lt;value&gt;,] * &lt;value&gt;)</p>
+            <p>The expression in brackets is repeated.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Parameter type
@@ -82,12 +82,12 @@ Demarcation is required when the value should contain blanks or commas. A charac
 -   /xhh h is a hexadecimal character. For example, in ASCII, the character A (code 65) is written /x41.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>id = 'VALUE WITH BLANKS'</p>
-<p>id = 'V/x41LUE WITH BL/101NKS'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>id = 'VALUE WITH BLANKS'</p>
+            <p>id = 'V/x41LUE WITH BL/101NKS'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 These two expressions are equivalent.
@@ -95,11 +95,11 @@ These two expressions are equivalent.
 To enter the characters ' (apostrophe) or / (slash), precede these with the / character. This results respectively in / 'and / /.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>id = 'J /' APOSTROPHE '</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>id = 'J /' APOSTROPHE '</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Hexadecimal
@@ -107,11 +107,11 @@ To enter the characters ' (apostrophe) or / (slash), precede these with the / ch
 A value may consist of any character hexadecimal (0-9, A-F, a-f).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>id = 0123456789ABCDEFabcdef</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>id = 0123456789ABCDEFabcdef         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Numeric
@@ -119,11 +119,11 @@ A value may consist of any character hexadecimal (0-9, A-F, a-f).
 A value may consist of any numeric character (0-9).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>id = 0123456789</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>id = 0123456789         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Binary
@@ -131,11 +131,11 @@ A value may consist of any numeric character (0-9).
 A value may consist of any binary character (0-1).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>id = 0110010100</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>id = 0110010100         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Select
@@ -143,11 +143,11 @@ A value may consist of any binary character (0-1).
 The value must belong to a predefined list such as, a parameter whose possible values ​​are 'YES' or 'NO'.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>id = YES</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>id = YES         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Analyzing the source text

@@ -1,10 +1,8 @@
 {
-    "title": "Trace functions",
+    "title": "Trace  functions in CFT Windows",
     "linkTitle": "Trace functions",
     "weight": "310"
-}# <span id="Trace_functions_in_CFT_Windows"></span>Trace functions in CFT Windows
-
-This topic introduces trace functions in Transfer CFT Windows. Trace
+}This topic introduces trace functions in Transfer CFT Windows. Trace
 functions are processes that concern the system and network sections of
 Transfer CFT. These functions do not concern the application traces implemented
 in common by all the existing Transfer CFT products and described in the
@@ -21,30 +19,30 @@ Depending on the origin of the problem it has detected, these traces
 are recorded in one of the following files:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Name of the Trace file </p></th>
-<th><p>Source of the problem </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="43%"><p>CFTSYSP.TRC </p></td>
-<td data-valign="top" width="57%"><p>Intermediate system section </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="43%"><p>CFTSYSS.TRC </p></td>
-<td data-valign="top" width="57%"><p>Specific Windows system section </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="43%"><p>CFTNET.TRC </p></td>
-<td data-valign="top" width="57%"><p>Network section </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="43%"><p>TCPCLI.TRC and TCPSRV.TRC </p></td>
-<td data-valign="top" width="57%"><p>TCP/IP network section </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Name of the Trace file </p></th>
+         <th>            <p>Source of the problem </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="43%">            <p>CFTSYSP.TRC </p>         </td>
+         <td data-valign="top" width="57%">            <p>Intermediate system section </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="43%">            <p>CFTSYSS.TRC </p>         </td>
+         <td data-valign="top" width="57%">            <p>Specific Windows system section </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="43%">            <p>CFTNET.TRC </p>         </td>
+         <td data-valign="top" width="57%">            <p>Network section </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="43%">            <p>TCPCLI.TRC and TCPSRV.TRC </p>         </td>
+         <td data-valign="top" width="57%">            <p>TCP/IP network section </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 By default Transfer CFT automatically generates these trace files in the folder:`runtime\run folder`
@@ -88,4 +86,4 @@ Network Functions
 
 ### Network traces
 
-Refer to [Specific Network Functions](../../running_cft_for_the_first_time_windows/specific_network_functions).
+Refer to [Specific Network Functions](../running_cft_for_the_first_time_windows/specific_network_functions).

@@ -2,11 +2,11 @@
     "title": "Tracking and monitoring services",
     "linkTitle": "Tracking and monitoring services",
     "weight": "140"
-}Transfer CFT offers transfer tracking, auditing (for configuration changes), and monitoring features that provide end-to-end transfer visibility, where additionally you can link transfers with your applications. See [Using Sentinel](../../using_sentinel).
+}Transfer CFT offers transfer tracking, auditing (for configuration changes), and monitoring features that provide end-to-end transfer visibility, where additionally you can link transfers with your applications. See [Using Sentinel](../using_sentinel).
 
-Additionally, you may implement Edge Agent reporting, as described in [Usage tracking](../../reporting).
+Additionally, you may implement Edge Agent reporting, as described in [Usage tracking](../reporting).
 
-When using governance services, Central Governance provides visibility services for Transfer CFT flows and statuses. See [About Governance services](../../governance_services_intro/governance_overview).
+When using governance services, Central Governance provides visibility services for Transfer CFT flows and statuses. See [About Governance services](../governance_services_intro/governance_overview).
 
 Central Governance provides:
 

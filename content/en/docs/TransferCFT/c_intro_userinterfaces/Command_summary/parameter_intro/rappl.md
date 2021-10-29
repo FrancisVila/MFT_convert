@@ -38,4 +38,4 @@ field.
 
 In PeSIT E between two Transfer CFTs, the value of the SUSER parameter is transported in the PI 99, while the value defined in the PI 03 is truncated to 8 characters.
 
-[Return to Command index](../../)
+[Return to Command index](../)

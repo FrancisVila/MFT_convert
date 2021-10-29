@@ -1,61 +1,59 @@
 {
-    "title": "Exit list error messages",
+    "title": "Exit  list error messages",
     "linkTitle": "Exit list error messages",
     "weight": "350"
-}# <span id="Exit_list_error_messages"></span>Exit list error messages
-
-The error messages stored in the Transfer CFT log
+}The error messages stored in the Transfer CFT log
 have the following syntax:
 
 CFTT60I PART= &part IDF=
 &idf IDT= &idt, &messageLog
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>DiagP<br />
+   <thead>
+      <tr class="header">
+         <th>            <p>DiagP<br />
 Catalog </p></th>
-<th><p>&amp;messageLog </p></th>
-<th><p>Comment </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>- - - </p></td>
-<td><p>Exit List V2.4.0 </p></td>
-<td><p>Indicates the start of execution of the exit-list program </p></td>
-</tr>
-<tr class="even">
-<td><p>EXL RESV </p></td>
-<td><p>Err_parameter RESERV </p></td>
-<td><p>Error in RESERV parameter of CFTEXIT command</p>
-<p>RESERV = 16384 is correct </p></td>
-</tr>
-<tr class="odd">
-<td><p>EXL FILE </p></td>
-<td><p>Err_open criteria file </p></td>
-<td><p>Selection criteria file opening error </p></td>
-</tr>
-<tr class="even">
-<td><p>EXL CATA </p></td>
-<td><p>Err_open catalog file </p></td>
-<td><p>Catalog opening error </p></td>
-</tr>
-<tr class="odd">
-<td><p>EXL LECT </p></td>
-<td><p>Err_read catalog file </p></td>
-<td><p>Catalog read error </p></td>
-</tr>
-<tr class="even">
-<td><p>EXL SYST </p></td>
-<td><p>Err_system </p></td>
-<td><p>Local system error, cause unknown, generally a problem
-of memory allocation </p></td>
-</tr>
-</tbody>
+         <th>            <p>&amp;messageLog </p></th>
+         <th>            <p>Comment </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>- - - </p>         </td>
+         <td>            <p>Exit List V2.4.0 </p>         </td>
+         <td>            <p>Indicates the start of execution of the exit-list program </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>EXL RESV </p>         </td>
+         <td>            <p>Err_parameter RESERV </p>         </td>
+         <td>            <p>Error in RESERV parameter of CFTEXIT command</p>
+            <p>RESERV = 16384 is correct </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>EXL FILE </p>         </td>
+         <td>            <p>Err_open criteria file </p>         </td>
+         <td>            <p>Selection criteria file opening error </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>EXL CATA </p>         </td>
+         <td>            <p>Err_open catalog file </p>         </td>
+         <td>            <p>Catalog opening error </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>EXL LECT </p>         </td>
+         <td>            <p>Err_read catalog file </p>         </td>
+         <td>            <p>Catalog read error </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>EXL SYST </p>         </td>
+         <td>            <p>Err_system </p>         </td>
+         <td>            <p>Local system error, cause unknown, generally a problem
+of memory allocation </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
 -   [Messages
-    and error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here)
+    and error codes](../../../troubleshoot_intro/messages_and_error_codes_start_here)

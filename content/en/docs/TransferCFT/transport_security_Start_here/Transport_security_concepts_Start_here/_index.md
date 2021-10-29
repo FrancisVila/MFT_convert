@@ -1,10 +1,8 @@
 {
-    "title": "Transport security concepts",
+    "title": "Transport security concepts:  Start here",
     "linkTitle": "Transport security concepts",
     "weight": "160"
-}# <span id="Transport_security_concepts__Start_here"></span><span id="About_Transport_Security_Concepts"></span>Transport security concepts: Start here
-
-This sub-book presents and defines transfer security concepts that are referred
+}This sub-book presents and defines transfer security concepts that are referred
 to further in this document, as well as how these security items work. It is comprised of the following topics:
 
 -   [Extended
@@ -14,17 +12,17 @@ to further in this document, as well as how these security items work. It is com
 
 File transfer security is based on the following three principles, as described in this topic:
 
--   [Privacy](#privacy)
--   [Integrity](#integrity)
--   [Authentication](#authentication)
+-   [Privacy](#Privacy)
+-   [Integrity](#Integrity)
+-   [Authentication](#Authentication)
 
 These three forms of security are independent and must be combined to
 get a high level of security.
 
 Additionally, the following two security related subjects are described:
 
--   [Signature](#signature)
--   [Log](#log)
+-   [Signature](#Signature)
+-   [Log](#Log)
 
 ### <span id="Privacy"></span>Privacy
 
@@ -45,7 +43,7 @@ cannot be clearly transmitted to others.
 
 Symmetrical encryption
 
-<img src="temp_integrity_and_auth.png" width="482" height="114" alt="View of symetrical key " />
+<img src="/Images/TransferCFT/encrypt_key.gif" width="482" height="114" alt="View of symetrical key " />
 
 #### Asymmetrical encryption
 
@@ -65,7 +63,7 @@ than a symmetric encryption mechanism.
 
 Asymmetrical encryption
 
-<img src="temp_integrity_and_auth.png" width="492" height="94" alt="View of public and private key encryption" />
+<img src="/Images/TransferCFT/image004.gif" width="492" height="94" alt="View of public and private key encryption" />
 
 ### <span id="Integrity"></span>Integrity
 
@@ -87,7 +85,7 @@ or MD5.
 
 Hash function
 
-![](temp_integrity_and_auth.png)
+![](/Images/TransferCFT/image005.gif)
 
 ### <span id="Authentication"></span>Authentication
 
@@ -106,7 +104,7 @@ to get the public key, such as a certificate, you are sent a random encrypted
 message. If you can decrypt the message, your identity is verified because
 you own the unique private key associated with the public key.
 
-Proof request![](temp_integrity_and_auth.png)
+Proof request![](/Images/TransferCFT/image006.gif)
 
 When you use TLS and SSL protocols, the client encrypts the symmetrical
 key with the server’s public key. If the server can decrypt the key, the
@@ -127,7 +125,7 @@ to encrypt the digest.
 
 Integrity and authentication
 
-![](temp_integrity_and_auth.png)
+![](/Images/TransferCFT/temp_integrity_and_auth.png)
 
 ### <span id="Log"></span>Log
 

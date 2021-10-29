@@ -1,5 +1,5 @@
 {
-    "title": "Install Transfer CFT ",
+    "title": "Install Transfer CFT",
     "linkTitle": "Install Transfer CFT ",
     "weight": "110"
 }## Before you start
@@ -13,53 +13,53 @@ If you want to enable Central Governance during installation, please check that 
 This table presents a high-level overview of the installation process. By default, the Transfer CFT installation uses a delivered configuration file called initialize.properties that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th> </th>
-<th>Step</th>
-<th>Details</th>
-<th>More info</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>Complete prerequisites</td>
-<td>Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.</td>
-<td><a href="prereqs_overview">Prerequisites</a></td>
-</tr>
-<tr class="even">
-<td>2</td>
-<td>Download and unzip</td>
-<td>Download the installation package from the support site and unzip.</td>
-<td><a href="#download">Install Transfer CFT</a></td>
-</tr>
-<tr class="odd">
-<td>3</td>
-<td>Customize the properties file</td>
-<td><p>Some installation parameters are mandatory to run Transfer CFT.</p>
-<p>You can customize the <span>initialize.properties</span> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p></td>
-<td><a href="new_install_ux">Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a></td>
-</tr>
-<tr class="even">
-<td> </td>
-<td>Run chmod</td>
-<td>Make the file executable.</td>
-<td><a href="install_transfer_cft_1">Make the file executable</a></td>
-</tr>
-<tr class="odd">
-<td>4</td>
-<td>Start the installation</td>
-<td>Select the installation mode and run using either the default configuration file or your customized file.</td>
-<td><a href="install_transfer_cft_1">Start the installation</a></td>
-</tr>
-<tr class="even">
-<td>*</td>
-<td>Optional customization</td>
-<td>If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.</td>
-<td> </td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th> </th>
+         <th>Step</th>
+         <th>Details</th>
+         <th>More info</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>1         </td>
+         <td>Complete prerequisites         </td>
+         <td>Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.         </td>
+         <td><a href="prereqs_overview">Prerequisites</a>         </td>
+      </tr>
+      <tr class="even">
+         <td>2         </td>
+         <td>Download and unzip         </td>
+         <td>Download the installation package from the support site and unzip.         </td>
+         <td><a href="#Download">Install Transfer CFT</a>         </td>
+      </tr>
+      <tr class="odd">
+         <td>3         </td>
+         <td>Customize the properties file         </td>
+         <td>            <p>Some installation parameters are mandatory to run Transfer CFT.</p>
+            <p>You can customize the <span>initialize.properties</span> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p>         </td>
+         <td><a href="installation_unix/new_install_ux.htm">Customize the initialize.properties file</a> <a href="installation_win/properties_file_win.htm"></a>         </td>
+      </tr>
+      <tr class="even">
+         <td>          </td>
+         <td>Run chmod         </td>
+         <td>Make the file executable.         </td>
+         <td><a href="install_transfer_cft_1">Make the file executable</a>         </td>
+      </tr>
+      <tr class="odd">
+         <td>4         </td>
+         <td>Start the installation         </td>
+         <td>Select the installation mode and run using either the default configuration file or your customized file.         </td>
+         <td><a href="installation_unix/install_transfer_cft_1.htm">Start the installation</a>         </td>
+      </tr>
+      <tr class="even">
+         <td>*         </td>
+         <td>Optional customization         </td>
+         <td>If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.         </td>
+         <td>          </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Installation restrictions for multi-node
@@ -86,11 +86,11 @@ You can perform the following installation functions:
 
 ### Check the "noexec" mount option before installing
 
-Before running the InstallBuilder, ensure that the /tmp directory and the user's homedir do not have the "noexec" option on that mount point. See [Troubleshooting the installation](../troubleshoot_registration) for workarounds.
+Before running the InstallBuilder, ensure that the /tmp directory and the user's homedir do not have the "noexec" option on that mount point. See [Troubleshooting the installation](../administration/troubleshooting_admin/troubleshoot_registration.htm) for workarounds.
 
 ### Installation configuration file
 
-The Transfer CFT installation is based on a delivered configuration file called initialize.properties that provides as series of default values to simplify installation. As described in [Customize the initialize.properties file](new_install_ux), you can make a copy of this file and customize it prior to running the installation procedure.
+The Transfer CFT installation is based on a delivered configuration file called initialize.properties that provides as series of default values to simplify installation. As described in [Customize the initialize.properties file](installation_unix/new_install_ux.htm), you can make a copy of this file and customize it prior to running the installation procedure.
 
 ### Installation modes
 
@@ -119,13 +119,13 @@ You can use the following command to repair the runtime if there was an issue du
 To install Transfer CFT using symbolic links, you must use the silent mode, option '--mode unattended', and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the <span>Transfer CFT</span> home installation directory, to which the symbolic link points, prior to retrying the installation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the <span>Transfer CFT</span> home installation directory, to which the symbolic link points, prior to retrying the installation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Get help

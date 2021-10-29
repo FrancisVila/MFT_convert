@@ -7,18 +7,18 @@
 The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Member Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>$C10RECV</td>
-<td><p>UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Member Name</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>$C10RECV         </td>
+         <td>            <p>UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Create a new USS subdirectory to receive the maintenance package. The name and path are defined in the $C10RECV JCL (FROMNTS is the new package subdirectory, and SMPNTS DD PATH designates the path prefix).
@@ -35,18 +35,18 @@ The SMPCNTL data set contains the following model job for the SMP/E PTFs mainten
 Submit the job described in the table below.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Member Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>$C30PAPP</td>
-<td>Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Member Name</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>$C30PAPP         </td>
+         <td>Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.         </td>
+      </tr>
+   </tbody>
 </table>
 
 If the $C30PAPP return code is a zero or a 4, edit $C30PAPP, remove the CHECK command, and resubmit the job.
@@ -64,22 +64,22 @@ These messages are normal; you can ignore them.
 The following table lists additional sample jobs.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Member Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>$C30PREM</td>
-<td>Performs a RESTORE (to remove) for the PTF elements from the target zone.</td>
-</tr>
-<tr class="even">
-<td>$C60PACC</td>
-<td>Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Member Name</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>$C30PREM         </td>
+         <td>Performs a RESTORE (to remove) for the PTF elements from the target zone.         </td>
+      </tr>
+      <tr class="even">
+         <td>$C60PACC         </td>
+         <td>Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Update the Transfer CFT instance with the maintenance identifier
@@ -89,24 +89,24 @@ Edit the sample jobs listed in the table below, modifying as necessary.
 The Transfer CFT instance data set INSTALL contains the following model jobs for Transfer CFT SMP/E maintenance.  
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Member Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>A13SMPE</p></td>
-<td><p>Applies maintenance to the Transfer CFT product instance.</p></td>
-</tr>
-<tr class="even">
-<td><p>A13UCOP</p></td>
-<td><p>Applies maintenance to Copilot.</p></td>
-</tr>
-<tr class="odd">
-<td><p>A13UXSR</p></td>
-<td><p>Applies maintenance to the Secure Relay Master Agent.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Member Name</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>A13SMPE</p>         </td>
+         <td>            <p>Applies maintenance to the Transfer CFT product instance.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>A13UCOP</p>         </td>
+         <td>            <p>Applies maintenance to Copilot.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>A13UXSR</p>         </td>
+         <td>            <p>Applies maintenance to the Secure Relay Master Agent.</p>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -11,7 +11,7 @@ The communication between the Master Agent (MA) and Transfer CFT occurs over a p
 
 End-to-end SSL compared with SSL termination
 
-![](sr_schema.png)
+![](/Images/TransferCFT/sr_schema.png)
 
 This page describes how to create and configure the following Transfer CFT objects to enable SSL exchanges using Secure Relay:
 
@@ -37,20 +37,20 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET id = NETSRSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET id = NETSRSSL,</p>
 <div>
-<p>type = TCP,</p>
-<p>call = INOUT,</p>
-<p>class = 2,</p>
-<p>host = &lt;network_interface_used_by_Router_Agent&gt;,</p>
-<p>protocol = SR,</p>
-<p>recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/</p>
-<p>sslterm = NO</p>
-</div></td>
-</tr>
-</tbody>
+            <p>type = TCP,</p>
+            <p>call = INOUT,</p>
+            <p>class = 2,</p>
+            <p>host = &lt;network_interface_used_by_Router_Agent&gt;,</p>
+            <p>protocol = SR,</p>
+            <p>recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/</p>
+            <p>sslterm = NO</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create a CFTPROT object
@@ -66,17 +66,17 @@ Example
 This example uses a CFTNET object called NETSRSSL.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT id = PESITSSL,</p>
 <div>
-<p>net = NETSRSSL,</p>
-<p>sap = 1762,</p>
-<p>ssl = PESITSSL,</p>
-<p>prof = ANY</p>
-</div></td>
-</tr>
-</tbody>
+            <p>net = NETSRSSL,</p>
+            <p>sap = 1762,</p>
+            <p>ssl = PESITSSL,</p>
+            <p>prof = ANY</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create a CFTSSL object
@@ -91,38 +91,38 @@ Example
 Here the CFTSSL object is used for incoming connections (direct=server).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL id = PESITSSL,</p>
 <div>
-<p>version = TLSV1COMP,</p>
-<p>direct = SERVER,</p>
-<p>verify = NONE,</p>
-<p>usercid = AXWMFTUSER,</p>
-<p>rootcid = AXWMFTCA,</p>
-<p>ciphlist = (47),</p>
-<p>passw = &lt;user_cid_password&gt;
+            <p>version = TLSV1COMP,</p>
+            <p>direct = SERVER,</p>
+            <p>verify = NONE,</p>
+            <p>usercid = AXWMFTUSER,</p>
+            <p>rootcid = AXWMFTCA,</p>
+            <p>ciphlist = (47),</p>
+            <p>passw = &lt;user_cid_password&gt;
 <strong>NOTE</strong>: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.</p>
 </div>
-<p> </p></td>
-</tr>
-</tbody>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Here the CFTSSL object is used for incoming connections (direct=client).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL id = PESITSSL,</p>
 <div>
-<p>version = TLSV1COMP,</p>
-<p>direct = CLIENT,</p>
-<p>rootcid = AXWMFTCA,</p>
-<p>ciphlist = (47)</p>
-</div></td>
-</tr>
-</tbody>
+            <p>version = TLSV1COMP,</p>
+            <p>direct = CLIENT,</p>
+            <p>rootcid = AXWMFTCA,</p>
+            <p>ciphlist = (47)</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create CFTPART and CFTTCP objects
@@ -138,19 +138,19 @@ Example
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = PARIS_SSL,</p>
-<p>prot = PESITSSL,</p>
-<p>sap = &lt;remote_partner_sap&gt;,</p>
-<p>nspart = NPARIS_SSL,</p>
-<p>nrpart = NPHOENIX_SSL</p>
-<p> </p>
-<p>CFTTCP id = PARIS_SSL,</p>
-<p>class = 2, /* the same class as the one used in the CFTNET */</p>
-<p>host = &lt;remote_partner_host_address&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = PARIS_SSL,</p>
+            <p>prot = PESITSSL,</p>
+            <p>sap = &lt;remote_partner_sap&gt;,</p>
+            <p>nspart = NPARIS_SSL,</p>
+            <p>nrpart = NPHOENIX_SSL</p>
+            <p> </p>
+            <p>CFTTCP id = PARIS_SSL,</p>
+            <p>class = 2, /* the same class as the one used in the CFTNET */</p>
+            <p>host = &lt;remote_partner_host_address&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### How to enable Secure Relay FIPS mode
@@ -180,20 +180,20 @@ This is an example of the CFTPART and CFTTCP objects configuration, using PESITS
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET id = NETSRSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET id = NETSRSSL,</p>
 <div>
-<p>type = TCP,</p>
-<p>call = INOUT,</p>
-<p>class = 2,</p>
-<p>host = &lt;network_interface_used_by_Router_Agent&gt;,</p>
-<p>protocol = SR,</p>
-<p>recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/</p>
-<p>sslterm = YES</p>
-</div></td>
-</tr>
-</tbody>
+            <p>type = TCP,</p>
+            <p>call = INOUT,</p>
+            <p>class = 2,</p>
+            <p>host = &lt;network_interface_used_by_Router_Agent&gt;,</p>
+            <p>protocol = SR,</p>
+            <p>recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/</p>
+            <p>sslterm = YES</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create a CFTPROT object
@@ -209,17 +209,17 @@ Example
 This example uses a CFTNET object called NETSRSSL.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT id = PESITSSL,</p>
 <div>
-<p>net = NETSRSSL,</p>
-<p>sap = 1762,</p>
-<p>ssl = PESITSSL,</p>
-<p>prof = ANY</p>
-</div></td>
-</tr>
-</tbody>
+            <p>net = NETSRSSL,</p>
+            <p>sap = 1762,</p>
+            <p>ssl = PESITSSL,</p>
+            <p>prof = ANY</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create a CFTSSL object
@@ -234,38 +234,38 @@ Example
 Here the CFTSSL object is used for incoming connections (direct=server).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL id = PESITSSL,</p>
 <div>
-<p>version = TLSV1COMP,</p>
-<p>direct = SERVER,</p>
-<p>verify = NONE,</p>
-<p>usercid = AXWMFTUSER,</p>
-<p>rootcid = AXWMFTCA,</p>
-<p>ciphlist = (47),</p>
-<p>passw = &lt;user_cid_password&gt;
+            <p>version = TLSV1COMP,</p>
+            <p>direct = SERVER,</p>
+            <p>verify = NONE,</p>
+            <p>usercid = AXWMFTUSER,</p>
+            <p>rootcid = AXWMFTCA,</p>
+            <p>ciphlist = (47),</p>
+            <p>passw = &lt;user_cid_password&gt;
 <strong>NOTE</strong>: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.</p>
 </div>
-<p> </p></td>
-</tr>
-</tbody>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Here the CFTSSL object is used for incoming connections (direct=client).
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSSL id = PESITSSL,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSSL id = PESITSSL,</p>
 <div>
-<p>version = TLSV1COMP,</p>
-<p>direct = CLIENT,</p>
-<p>rootcid = AXWMFTCA,</p>
-<p>ciphlist = (47)</p>
-</div></td>
-</tr>
-</tbody>
+            <p>version = TLSV1COMP,</p>
+            <p>direct = CLIENT,</p>
+            <p>rootcid = AXWMFTCA,</p>
+            <p>ciphlist = (47)</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create CFTPART and CFTTCP objects
@@ -281,17 +281,17 @@ Example
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = PARIS_SSL,</p>
-<p>prot = PESITSSL,</p>
-<p>sap = &lt;remote_partner_sap&gt;,</p>
-<p>nspart = NPARIS_SSL,</p>
-<p>nrpart = NPHOENIX_SSL</p>
-<p> </p>
-<p>CFTTCP id = PARIS_SSL,</p>
-<p>class = 2, /* the same class as the one used in the CFTNET */</p>
-<p>host = &lt;remote_partner_host_address&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = PARIS_SSL,</p>
+            <p>prot = PESITSSL,</p>
+            <p>sap = &lt;remote_partner_sap&gt;,</p>
+            <p>nspart = NPARIS_SSL,</p>
+            <p>nrpart = NPHOENIX_SSL</p>
+            <p> </p>
+            <p>CFTTCP id = PARIS_SSL,</p>
+            <p>class = 2, /* the same class as the one used in the CFTNET */</p>
+            <p>host = &lt;remote_partner_host_address&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>

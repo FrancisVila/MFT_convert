@@ -1,18 +1,16 @@
 {
-    "title": "Suffix management",
+    "title": "Suffix  management",
     "linkTitle": "Suffix management",
     "weight": "270"
-}# <span id="Suffix"></span>Suffix management
-
-By default, during file send or receive operations, Transfer CFT uses
-the file type, [FTYPE](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype),
+}By default, during file send or receive operations, Transfer CFT uses
+the file type, [FTYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype),
 to determine the action to be taken. However, Transfer CFT also features a mechanism called suffix management
 which enables Transfer CFT to determine the type
 of file processed from the file name. This topic describes:
 
--   [Defining suffixes](#defining)
-    -   [Enabling suffix management](#enabling)
--   [Separating file name extensions](#separati)
+-   [Defining suffixes](#Defining)
+    -   [Enabling suffix management](#Enabling)
+-   [Separating file name extensions](#Separati)
 
 ## <span id="Defining"></span>Defining suffixes
 
@@ -31,7 +29,7 @@ Where:
 
 -   The length of the
     suffix is less than or equal to eight characters
--   [FTYPE](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype)
+-   [FTYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype)
     is one of the file types recognized by Transfer CFT
 
 Furthermore, the lines making up the *suffixes.def* file must comply
@@ -95,4 +93,4 @@ To enable the option to separate the file name and extension in Unix, set the fo
 
 cft.unix.parse\_file\_name\_suffix=yes
 
-For more information on unified configuration parameters, see [UCONF: Unix-specific parameters](../uconf_unix).
+For more information on unified configuration parameters, see [UCONF: Unix-specific parameters](../../../uconf/uconf_unix.htm).

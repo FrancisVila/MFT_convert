@@ -1,10 +1,8 @@
 {
-    "title": "Transfer CFT communication systems",
+    "title": " Transfer CFT  communication systems",
     "linkTitle": "Transfer CFT communication systems",
     "weight": "220"
-}# <span id="CFT_Communication_systems"></span> Transfer CFT communication systems
-
-This topic presents basic information
+}This topic presents basic information
 about the hardware devices and the software for each of the communications
 systems. Direct contact
 with the distributor ensures that you have an exhaustive and accurate
@@ -32,7 +30,7 @@ On Windows, EICON products used for validation were:
     -   Eicon WAN Adapters
 
 Refer to the operations to perform prior to your first
-start-up with an EICON card, in [Running CFT for the first time](../../running_cft_for_the_first_time_windows).
+start-up with an EICON card, in [Running CFT for the first time](../running_cft_for_the_first_time_windows).
 
 CAPI option
 
@@ -48,7 +46,7 @@ The products used for validation are:
     driver
 
 Refer to the operations to perform prior to your first
-start-up with ISDN-CAPI cards, in [Running CFT for the first time](../../running_cft_for_the_first_time_windows).
+start-up with ISDN-CAPI cards, in [Running CFT for the first time](../running_cft_for_the_first_time_windows).
 
 ### <span id="TCP_IP_network"></span>TCP/IP network
 
@@ -59,4 +57,4 @@ When it operates in TCP/IP, Transfer CFT can use any type of link that
 can be implemented via the WINSOCK interface.
 
 Refer to the operations to perform prior to your first
-start-up in TCP/IP, in [Running CFT for the first time](../../running_cft_for_the_first_time_windows).
+start-up in TCP/IP, in [Running CFT for the first time](../running_cft_for_the_first_time_windows).

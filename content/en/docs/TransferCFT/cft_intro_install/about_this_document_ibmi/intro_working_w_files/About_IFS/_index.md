@@ -1,5 +1,5 @@
 {
-    "title": "Using IFS hierachial files",
+    "title": "Using IFS hierachial files ",
     "linkTitle": "Using IFS hierachial files",
     "weight": "200"
 }This topic describes the Integrated File System, IFS, functions available in Transfer CFT Transfer CFT IBM i.
@@ -8,9 +8,9 @@ It includes:
 
 -   [Configure send mode (IFS)](send_files_ifs)
 -   [Configure receive mode (IFS)](receive_files_ifs)
--   [Copyfile (IFS)](ifs_copyfile.htm)
+-   Copyfile (IFS)
 
-See also [IFS access error codes.](../../os400_support_tool/ifs_access_errors)
+See also [IFS access error codes.](../os400_support_tool/ifs_access_errors)
 
 ## IFS overview
 

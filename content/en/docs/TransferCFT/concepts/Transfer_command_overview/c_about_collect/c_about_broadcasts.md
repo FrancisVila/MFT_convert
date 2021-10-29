@@ -1,5 +1,5 @@
 {
-    "title": "Broadcasting processes ",
+    "title": "Broadcasting concepts",
     "linkTitle": "Broadcasting processes ",
     "weight": "360"
 }### <span id="Broadcasting_through_a_store_and_forward_site"></span>Broadcasting using a store and forward site
@@ -14,7 +14,7 @@ to be established.
 **Defining a list
 of partners**
 
-<img src="Broadcast_ack_mechanism.gif" width="724" height="325" />
+<img src="/Images/TransferCFT/Define_list_of_partner_SEND.gif" width="724" height="325" />
 
 The broadcasting list can be described in a file. In this case, the
 name of this file is indicated in CFTDEST, FNAME parameter. The corresponding
@@ -29,7 +29,7 @@ by direct connection.
 **Broadcasting through
 a store and forward site**
 
-<img src="Broadcast_ack_mechanism.gif" width="773" height="958" />
+<img src="/Images/TransferCFT/Broadcast_thr_store_and_forward.gif" width="773" height="958" />
 
 ### <span id="Broadcasting_notations"></span>Broadcasting notations
 
@@ -52,7 +52,7 @@ are then required and sufficient:
     the network name of the broadcasting list indicated by the initial partner
     (SEND PART=ID\_CD)
 -   the CFTDEST object
-    must comply with the syntax imposed by Transfer CFT ([FOR](../../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
+    must comply with the syntax imposed by Transfer CFT ([FOR](../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
     parameter).
 -   the final receivers
     C and D know the initial sender of the file (CFTPART ID=ID\_A,...) and
@@ -64,7 +64,7 @@ are then required and sufficient:
 **Broadcasting activated on a store and
 forward site**
 
-![](Broadcast_ack_mechanism.gif)
+![](/Images/TransferCFT/Broadcast_activated_on_store_and_forward.gif)
 
 ### <span id="Broadcasting_processes"></span>Broadcasting processes
 
@@ -106,7 +106,7 @@ sites:* end of transfer or error procedures may be initiated during
 a transfer.
 
 The usual symbolic variables for these types of procedures may be used.
-See *[Symbolic variables](../../../../c_intro_userinterfaces/command_summary/symbolic_variables)*.
+See *[Symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables)*.
 
 ### <span id="Broadcasting_list_acknowledgement_"></span>Broadcasting list acknowledgements
 
@@ -141,4 +141,4 @@ message.
 
 **Broadcasting list acknowledgement mechanism**
 
-<img src="Broadcast_ack_mechanism.gif" width="852" height="840" />
+<img src="/Images/TransferCFT/Broadcast_ack_mechanism.gif" width="852" height="840" />

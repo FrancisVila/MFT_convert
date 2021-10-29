@@ -1,26 +1,26 @@
 {
-    "title": "Using system users ",
+    "title": "How to enable system users - Windows",
     "linkTitle": "Using system users ",
     "weight": "250"
 }This section describes two optional Windows-specific tasks that you can perform to enable system user authentication and file system rights, and which are not mutually exclusive.
 
--   [Enable the file user rights (USERCTRL)](#enable3)
--   [How to enable system users - Windows](#enable)
+-   [Enable the file user rights (USERCTRL)](#Enable3)
+-   [How to enable system users - Windows](#Enable)
 
 You can only use the **user authentication for Copilot** when implementing the deprecated Java based Copilot UI or Web Services. This sort of authentication does not apply to the current Transfer CFT UI or to REST API usage.
 
 ## <span id="Enable3"></span>Enable the file user rights (USERCTRL)
 
-When implementing file user rights with [USERCTRL](../../../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl), you must run Transfer CFT as a service or start Transfer CFT with administrator privileges.
+When implementing file user rights with [USERCTRL](../CFTUTIL/Parameter_index/userctrl.htm), you must run Transfer CFT as a service or start Transfer CFT with administrator privileges.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">When USERCTRL=YES, access to UNC or mapped file drives (as opposed to local files) are performed by the user who started Transfer CFT and not the owner of the transfer.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">When USERCTRL=YES, access to UNC or mapped file drives (as opposed to local files) are performed by the user who started Transfer CFT and not the owner of the transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The Windows user who is going to perform transfers must have read and write rights for the files to be transferred.
@@ -51,13 +51,13 @@ There are two ways to enable the system user authentication:
 -   For the deprecated Transfer CFT UI (Copilot): set `copilot.misc.createprocessasuser=yes`
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Note that the <code>copilot.misc.createprocessasuser</code> parameter is set to <code>Yes </code>for Windows systems by default.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Note that the <code>copilot.misc.createprocessasuser</code> parameter is set to <code>Yes </code>for Windows systems by default.         </td>
+      </tr>
+   </tbody>
 </table>
 
 When enabling user authentication for Copilot, you must run the Transfer Copilot server as a service. The following information applies except if you are using the local system account when working in service mode.
@@ -83,11 +83,11 @@ The user rights to assign are:
 Additionally, the user who wants to log on the Transfer CFT UI server must exist both in the Windows system and Central Governance (or PassPort AM). The Windows system performs the user authentication, and Central Governance (or PassPort AM) checks the other rights.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If using <span>Central Governance</span>, the user name is case-sensitive.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If using <span>Central Governance</span>, the user name is case-sensitive.         </td>
+      </tr>
+   </tbody>
 </table>

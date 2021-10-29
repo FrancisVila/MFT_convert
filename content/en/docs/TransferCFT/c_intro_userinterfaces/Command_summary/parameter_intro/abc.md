@@ -12,4 +12,4 @@
 The resource identified to the access method. The default value is defined
 by the ID value for the CFTNET object.
 
-[Return to Command index](../../)
+[Return to Command index](../)

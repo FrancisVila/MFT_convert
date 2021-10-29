@@ -12,4 +12,4 @@ Maximum number of sessions for outgoing connections.
 
 The value should be less than or equal to the MAXCNX and MAXTRANS values.
 
-[Return to Command index](../../)
+[Return to Command index](../)

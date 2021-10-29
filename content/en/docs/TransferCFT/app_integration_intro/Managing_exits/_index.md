@@ -1,21 +1,21 @@
 {
-    "title": "Managing exits",
-    "linkTitle": "Managing exits",
-    "weight": "270"
+    "title": "Exit task concepts",
+    "linkTitle": "Exit task concepts",
+    "weight": "290"
 }This section begins with this topic
 which provides the information about:
 
 -   [Exit
-    task concepts](#exit_task_concepts)
+    task concepts](#Exit_task_concepts)
 -   [Exit
-    task architecture](#exit_task_architecture)
+    task architecture](#Exit_task_architecture)
 
 A CFTEXIT object describes
 the environment and activation of an exit
 task. Each CFTEXIT object has an associated exit task. You can activate an exit task using:
 
 -   [Command
-    line operations](../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftexit) for the CFTEXIT object
+    line operations](../../CFTUTIL/Conf/CFTEXIT.htm) for the CFTEXIT object
 
 ### <span id="About_the_CFTEXIT_object"></span>About the CFTEXIT object
 
@@ -68,15 +68,15 @@ Exit tasks are not mutually exclusive. Several types of exit tasks may
 be initiated for a given transfer request.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For
-information on transport security exits, see <a href="../../transport_security_start_here/configuring_transport_security_start_here">Configuring
-Transport Security</a>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For
+information on transport security exits, see <a href="../../Security/Transport/Configuring_transport_security_Start_here.htm">Configuring
+Transport Security</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Exit list
@@ -93,7 +93,7 @@ The exit list is a file exit task that was written by Axway. It enables the foll
 Transfer CFT can activate one or more EXIT tasks, such as calls, scheduling, and so on, which
 are fully managed by the Transfer CFT.
 
-![Displays Transfer CFT relationship to multiple Exits](cft_exits_2.png)
+![Displays Transfer CFT relationship to multiple Exits](/Images/TransferCFT/cft_exits_1.png)
 
 An EXIT task is generally activated, or loaded into memory,
 as soon as Transfer CFT is started with the Directory EXIT
@@ -129,4 +129,4 @@ of a user program with two functions.
 
 Communication structure
 
-![Simplified view of a user program communicating with functions](cft_exits_2.png)
+![Simplified view of a user program communicating with functions](/Images/TransferCFT/cft_exits_2.png)

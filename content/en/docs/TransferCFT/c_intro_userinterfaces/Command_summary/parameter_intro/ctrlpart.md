@@ -20,4 +20,4 @@ CFTT15E NPART=&part \_ Not found
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

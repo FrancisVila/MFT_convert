@@ -1,10 +1,8 @@
 {
-    "title": "Command guide and parameters",
-    "linkTitle": "Command guide and parameters",
-    "weight": "130"
-}# <span id="Command_index"></span>Transfer CFT command guide and syntax <span id="MAPID_command_guide"></span>
-
-This topic provides a useful list of Transfer CFT commands,
+    "title": "Transfer CFT command guide and syntax ",
+    "linkTitle": "Command guide",
+    "weight": "150"
+}This topic provides a useful list of Transfer CFT commands,
 syntax, and parameters. For a more detailed description of the Transfer
 CFT commands, refer to the link displayed below each command
 syntax.
@@ -14,22 +12,22 @@ summary. Each
 command is presented with possible parameters and default values.
 
 See also, [Syntax
-conventions and symbolic variables.](#syntax_conventions)
+conventions and symbolic variables.](#Syntax_conventions)
 
 #### <span id="ABOUT"></span>ABOUT: Displays product/host information
 
 Syntax
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { ALL
 | HOST | CFT } \]
 
-\[ [KEY](parameter_intro/key) = { <u>FIRST</u> | ALL } \]
+\[ [KEY](CFTUTIL/Parameter_index/key.htm) = { <u>FIRST</u> | ALL } \]
 
-[ABOUT details](../about_cftutil/about_command)
+[ABOUT details](CFTUTIL/Admin/about_command.htm)
 
 #### <span id="ACT"></span>ACT: Reactivates a partner
 
@@ -37,16 +35,16 @@ Syntax
 
 ID = identifier
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { PART
 | TRK | CRON | FOLDER } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { BOTH
 | REQUESTER|
 SERVER } \]
 
-[ACT details](../about_cftutil/reactivate_an_object_cl)
+[ACT details](Transfers/Partners/Reactivate_an_object_CL.htm)
 
 #### <span id="CFTACCNT"></span>CFTACCNT: Defines transfer accounting records
 
@@ -54,41 +52,41 @@ Syntax
 
 CFTACCNT TYPE = FILE
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = FILE
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [AFNAME](parameter_intro/afname)
+\[ [AFNAME](CFTUTIL/Parameter_index/afname.htm)
 = filename \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [LANGUAGE](parameter_intro/language)
+\[ [LANGUAGE](CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MAXREC](parameter_intro/maxrec)
+\[ [MAXREC](CFTUTIL/Parameter_index/maxrec.htm)
 = { 0
 | n } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [SWITCH](parameter_intro/switch)
+\[ [SWITCH](CFTUTIL/Parameter_index/switch.htm)
 = { 00000000
 | time } \]
 
-\[ [FORMAT](parameter_intro/format)
+\[ [FORMAT](CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24} \]
 
@@ -96,34 +94,34 @@ CFTACCNT TYPE = FILE
 
 CFTACCNT TYPE = SYST
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = SYST
 
-[ACCID](parameter_intro/accid)
+[ACCID](CFTUTIL/Parameter_index/accid.htm)
 = n
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FORMAT](parameter_intro/format)
+\[ [FORMAT](CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24} \]
 
-\[ [LANGUAGE](parameter_intro/language)
+\[ [LANGUAGE](CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-[CFTACCNT details](../web_copilot_ui/conf_intro/cftaccnt)
+[CFTACCNT details](CFTUTIL/Conf/CFTACCNT.htm)
 
 [Transfer
-accounting records](../../admin_intro/admin_config_commands/cftaccnt_concepts)
+accounting records](GUI/Concepts/CFTACCNT_concepts.htm)
 
 #### <span id="CFTAPPL"></span>CFTAPPL: Defines a transfer owner
 
@@ -132,48 +130,48 @@ Syntax
 CFTAPPL
 MODE = REPLACE
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[USERID](parameter_intro/userid)
+[USERID](CFTUTIL/Parameter_index/userid.htm)
 = string
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [GROUPID](parameter_intro/groupid)
+\[ [GROUPID](CFTUTIL/Parameter_index/groupid.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
 CFTAPPL MODE = DELETE
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[USERID](parameter_intro/userid)
+[USERID](CFTUTIL/Parameter_index/userid.htm)
 = string
 
-[DIRECT](parameter_intro/direct)
+[DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 |  SEND
 | RECV }
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [GROUPID](parameter_intro/groupid)
+\[ [GROUPID](CFTUTIL/Parameter_index/groupid.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-[CFTAPPL details](../web_copilot_ui/flow_def_intro/cftappl)
+[CFTAPPL details](CFTUTIL/Conf/CFTAPPL.htm)
 
-[Assign a transfer owner](transfer_owner_cftappl.htm)
+Assign a transfer owner
 
 #### CFTAUTH: Defines an Authorized Flow Definition list
 
@@ -181,12 +179,12 @@ Syntax
 
 FNAME = filename
 
-[ID](parameter_intro/id) = identifier
+[ID](CFTUTIL/Parameter_index/id.htm) = identifier
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
@@ -198,12 +196,12 @@ Or
 
 IDF = (identifier | mask, identifier | mask, …)
 
-[ID](parameter_intro/id) = identifier
+[ID](CFTUTIL/Parameter_index/id.htm) = identifier
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
@@ -213,77 +211,77 @@ IDF = (identifier | mask, identifier | mask, …)
 
 Syntax
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier  
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [RH](parameter_intro/rh)
+\[ [RH](CFTUTIL/Parameter_index/rh.htm)
 = { 10
 | n }  \]
 
-\[ [RKERROR](parameter_intro/rkerror)
+\[ [RKERROR](CFTUTIL/Parameter_index/rkerror.htm)
 = { KEEP
 | DELETE } \]
 
-\[ [RT](parameter_intro/rt)
+\[ [RT](CFTUTIL/Parameter_index/rt.htm)
 = { 10
 | n } \]
 
-\[ [RX](parameter_intro/rx)
+\[ [RX](CFTUTIL/Parameter_index/rx.htm)
 = { 10
 | n } \]
 
-\[ [SH](parameter_intro/sh)
+\[ [SH](CFTUTIL/Parameter_index/sh.htm)
 = { 10
 | n } \]
 
-\[ [ST](parameter_intro/st)
+\[ [ST](CFTUTIL/Parameter_index/st.htm)
 = { 10
 | n } \]
 
-\[ [SX](parameter_intro/sx)
+\[ [SX](CFTUTIL/Parameter_index/sx.htm)
 = { 10
 | n } \]
 
-\[ [TIMEP](parameter_intro/timep)
+\[ [TIMEP](CFTUTIL/Parameter_index/timep.htm)
 = { 23595999
 | HHMMSSCC } \]
 
-\[ [TLVCEXEC](parameter_intro/tlvcexec)
+\[ [TLVCEXEC](CFTUTIL/Parameter_index/tlvcexec.htm)
 = { n } \]
 
-\[ [TLVCLEAR](parameter_intro/tlvclear)
+\[ [TLVCLEAR](CFTUTIL/Parameter_index/tlvclear.htm)
 = { <u>TLVWARN-10</u> | n } \]
 
-\[ [TLVWEXEC](parameter_intro/tlvwexec)
+\[ [TLVWEXEC](CFTUTIL/Parameter_index/tlvwexec.htm)
 = { n } \]
 
-\[ [TLVWRATE](parameter_intro/tlvwrate)
+\[ [TLVWRATE](CFTUTIL/Parameter_index/tlvwrate.htm)
 = { 60 | n } \]
 
-\[ [TLVWARN](parameter_intro/tlvwarn)
+\[ [TLVWARN](CFTUTIL/Parameter_index/tlvwarn.htm)
 = { 80 | n } \]
 
-\[ [UPDAT](parameter_intro/updat)
+\[ [UPDAT](CFTUTIL/Parameter_index/updat.htm)
 = { 256
 | n } \]
 
-\[ [WSCAN](parameter_intro/wscan)
+\[ [WSCAN](CFTUTIL/Parameter_index/wscan.htm)
 = { 5
 | n } \]
 
-[CFTCAT details](../web_copilot_ui/conf_intro/cftcat)
+[CFTCAT details](CFTUTIL/Conf/CFTCAT.htm)
 
-[Catalog attributes](../../admin_intro/admin_config_commands/catalog_parameter_concepts)
+[Catalog attributes](GUI/Concepts/Catalog_parameter_concepts.htm)
 
 #### <span id="CFTCOM"></span>CFTCOM: Defines parameters related to the communication between applications and Transfer CFT
 
@@ -291,38 +289,38 @@ Syntax
 
 #### CFTCOM TYPE = FILE
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = FILE
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NAME](parameter_intro/name)
+[NAME](CFTUTIL/Parameter_index/name.htm)
 = filename  
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 =  string
 \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE | CREATE | DELETE } \]
 
-\[ [TLVCEXEC](parameter_intro/tlvcexec)
+\[ [TLVCEXEC](CFTUTIL/Parameter_index/tlvcexec.htm)
 = { n } \]
 
-\[ [TLVCLEAR](parameter_intro/tlvclear)
+\[ [TLVCLEAR](CFTUTIL/Parameter_index/tlvclear.htm)
 = { <u>TLVWARN-20</u> | n } \]
 
-\[ [TLVWEXEC](parameter_intro/tlvwexec)
+\[ [TLVWEXEC](CFTUTIL/Parameter_index/tlvwexec.htm)
 = { n } \]
 
-\[ [TLVWRATE](parameter_intro/tlvwrate)
+\[ [TLVWRATE](CFTUTIL/Parameter_index/tlvwrate.htm)
 = { 60 | n } \]
 
-\[ [TLVWARN](parameter_intro/tlvwarn)
+\[ [TLVWARN](CFTUTIL/Parameter_index/tlvwarn.htm)
 = { 70 | n } \]
 
-\[ [WSCAN](parameter_intro/wscan)
+\[ [WSCAN](CFTUTIL/Parameter_index/wscan.htm)
 = { 60
 | n } \]
 
@@ -330,33 +328,33 @@ Syntax
 
 #### CFTCOM TYPE = TCPIP
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = string
 
-[PORT](parameter_intro/port)
+[PORT](CFTUTIL/Parameter_index/port.htm)
 = number
 
-[PROTOCOL](parameter_intro/protocol)
+[PROTOCOL](CFTUTIL/Parameter_index/protocol.htm)
 = { XHTTP }
 
-\[ [ADDRLIST](parameter_intro/addrlist)
+\[ [ADDRLIST](CFTUTIL/Parameter_index/addrlist.htm)
 = ( string, string, ...) \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 =  string
 \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
- [CFTCOM](../web_copilot_ui/conf_intro/cftcom)
+ [CFTCOM](CFTUTIL/Conf/CFTCOM.htm)
 
 [Communication
-media](../../admin_intro/admin_config_commands/communication_media_concepts)
+media](GUI/Concepts/Communication_media_concepts.htm)
 
 #### CFTCRON<span id="CFTCRON"></span>: Define Transfer CFT cron jobs
 
@@ -364,37 +362,37 @@ Syntax
 
 ID = identifier
 
-[CRONTAB](parameter_intro/crontab)
+[CRONTAB](CFTUTIL/Parameter_index/crontab.htm)
 = string
 
-[EXEC](parameter_intro/exec)
+[EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename
 
-[EXECPOLICY](parameter_intro/execpolicy) = \[ <u>INSTANCE</u> |ALLNODES \]
+[EXECPOLICY](CFTUTIL/Parameter_index/execpolicy.htm) = \[ <u>INSTANCE</u> |ALLNODES \]
 
-[TIME](parameter_intro/time)
+[TIME](CFTUTIL/Parameter_index/time.htm)
 = { string | @shutdown | @startup } \[FOR
 DETAILS: [CFTCRON
-time syntax](../web_copilot_ui/flow_def_intro/cftcron)\]
+time syntax](about_cftutil/configuring_cft_start_here/cftcron)\]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state) = { <u>ACTIVE</u> | NOACTIVE } \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = { <u>ACTIVE</u> | NOACTIVE } \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { EXEC
 | CFTUTIL } \]
 
-\[ [USERID](parameter_intro/userid)
+\[ [USERID](CFTUTIL/Parameter_index/userid.htm)
 = { CFT
 server "userid"
 | string } \]
 
-[Define script execution](../web_copilot_ui/flow_def_intro/cftcron)
+[Define script execution](CFTUTIL/Conf/CFTCRON.htm)
 
 #### <span id="CFTDEST"></span>CFTDEST: Definition of a list of partners 
 
@@ -404,10 +402,10 @@ CFTDEST FNAME
 
 ID = identifier
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = { DEST
 | PART | CHILDREN} \]
 
@@ -417,19 +415,19 @@ ID = identifier
 \[ EXECPRE = { DEST
 | PART | CHILDREN} \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FOR](parameter_intro/for)
+\[ [FOR](CFTUTIL/Parameter_index/for.htm)
 = { BOTH
 | COMMUT |
 LOCAL } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NOPART](parameter_intro/nopart)
+\[ [NOPART](CFTUTIL/Parameter_index/nopart.htm)
 = { ABORT
 | CONTINUE | IGNORE } \]
 
@@ -439,33 +437,33 @@ CFTDEST PART
 
 ID = identifier
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = (identifier, identifier, ...)
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = { DEST
 | PART } \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FOR](parameter_intro/for)
+\[ [FOR](CFTUTIL/Parameter_index/for.htm)
 = { BOTH
 | COMMUT |
 LOCAL } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NOPART](parameter_intro/nopart)
+\[ [NOPART](CFTUTIL/Parameter_index/nopart.htm)
 = { ABORT
 | CONTINUE | IGNORE } \]
 
-[CFTDEST details](../web_copilot_ui/flow_def_intro/cftdest)
+[CFTDEST details](CFTUTIL/Conf/CFTDEST.htm)
 
-[Broadcast
-list](partner_diffusion_list_concepts.htm)
+Broadcast
+list
 
 #### <span id="CFTEXIT"></span>CFTEXIT: Activate an exit task 
 
@@ -473,39 +471,39 @@ Syntax
 
 #### CFTEXIT TYPE = FILE
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = FILE
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FORMAT](parameter_intro/format)
+\[ [FORMAT](CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24 } \]
 
-\[ [LANGUAGE](parameter_intro/language)
+\[ [LANGUAGE](CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PROG](parameter_intro/prog)
+\[ [PROG](CFTUTIL/Parameter_index/prog.htm)
 = { CFTEXIT
 | string } \]
 
-\[ [RESERV](parameter_intro/reserv)
+\[ [RESERV](CFTUTIL/Parameter_index/reserv.htm)
 = { 16384
 | n } \]
 
-\[ [WAITTASK](parameter_intro/waittask)
+\[ [WAITTASK](CFTUTIL/Parameter_index/waittask.htm)
 = { 1441
 | n } \]
 
@@ -513,98 +511,98 @@ Syntax
 
 #### CFTEXIT TYPE = { FILE | ACCESS | EXEC | BOT}
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = { FILE | ACCESS | EXEC | BOT }
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [FORMAT](parameter_intro/format)
+\[ [FORMAT](CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24 } \]
 
-\[ [LANGUAGE](parameter_intro/language)
+\[ [LANGUAGE](CFTUTIL/Parameter_index/language.htm)
 = { COBOL
 | C } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PROG](parameter_intro/prog)
+\[ [PROG](CFTUTIL/Parameter_index/prog.htm)
 = { CFTEXIT
 | string } \]
 
-\[ [RESERV](parameter_intro/reserv)
+\[ [RESERV](CFTUTIL/Parameter_index/reserv.htm)
 = { 1024
 | n } \]
 
-\[ [WAITTASK](parameter_intro/waittask)
+\[ [WAITTASK](CFTUTIL/Parameter_index/waittask.htm)
 = { 1441
 | n } \]
 
  CFTEXIT details
 
 [Exit
-tasks](../../app_integration_intro/managing_exits)
+tasks](Prog/Exits/Managing_exits.htm)
 
 #### <span id="CFTEXT"></span>CFTEXT: Extract data from the parameter and partner files 
 
 Syntax
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { ALL
 | ACCNT | APPL | AUTH | CAT | COM | CRON | DEST | EXIT | IDF | LOG
 | NET | PARM | PART | PROT | RECV | SEND | SSL | TCP | XLATE } \]
 
-\[ [CONTENT](parameter_intro/content) = { <u>FULL</u> | BRIEF } \]
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm) = { <u>FULL</u> | BRIEF } \]
 
-\[ [FOUT](parameter_intro/fout)
+\[ [FOUT](CFTUTIL/Parameter_index/fout.htm)
 = filename \]
 
-\[ [FPARM](parameter_intro/fparm)
+\[ [FPARM](CFTUTIL/Parameter_index/fparm.htm)
 = filename \]
 
-\[ [FPART](parameter_intro/fpart)
+\[ [FPART](CFTUTIL/Parameter_index/fpart.htm)
 = filename \]
 
-\[ [ID](parameter_intro/id)
+\[ [ID](CFTUTIL/Parameter_index/id.htm)
 = { \*
 | identifier | mask } \]
 
 [Export
-configuration](../about_cftutil/configuring_cft_start_here/cftext_command)
+configuration](Transfers/Partners/CFTEXT_command.htm)
 
 #### <span id="CFTFILE"></span>CFTFILE: Create or delete Transfer CFT files
 
 Syntax
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = { PARM | PART }
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename  
 
-\[ [HABFNAME](parameter_intro/habfname)
+\[ [HABFNAME](CFTUTIL/Parameter_index/habfname.htm)
 = filename \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = { 0
 |n } \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = n \]
 
-\[ [FSPACEX](parameter_intro/fspacex)
+\[ [FSPACEX](CFTUTIL/Parameter_index/fspacex.htm)
 = n \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { CREATE
 | REPLACE | DELETE } \]
 
@@ -612,80 +610,80 @@ Syntax
 
 #### CFTFILE { CAT | COM }
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = {  CAT
 | COM }
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-\[ [RECNB](parameter_intro/recnb)
+\[ [RECNB](CFTUTIL/Parameter_index/recnb.htm)
 = n \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = { 0
 |n } \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = { 0
 | n } \]
 
-\[ [FSPACEX](parameter_intro/fspacex)
+\[ [FSPACEX](CFTUTIL/Parameter_index/fspacex.htm)
 =  { 0
 | n } \]
 
-\[ [HABFNAME](parameter_intro/habfname)
+\[ [HABFNAME](CFTUTIL/Parameter_index/habfname.htm)
 = filename \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { CREATE
 | REPLACE | DELETE } \]
 
-\[ [NODE](node.htm) = { 0
+\[ NODE = { 0
 | n } \] available for TYPE=CAT
 
  
 
 #### CFTFILE { ACCNT | LOG }
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = { ACCNT | LOG }
 
-[FNAME](parameter_intro/fname)
+[FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = 0
 | n \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = 0
 |n \]
 
-\[ [FSPACEX](parameter_intro/fspacex)
+\[ [FSPACEX](CFTUTIL/Parameter_index/fspacex.htm)
 = 0
 |n \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { CREATE
 | REPLACE | DELETE } \]
 
-[Manually create internal datafile files](../../admin_intro/admin_commands_intro/cftfile)
+[Manually create internal datafile files](CFTUTIL/Conf/CFTFILE.htm)
 
 #### CFTFOLDER
 
-See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional parameter details.
+See [CFTFOLDER](CFTUTIL/Conf/CFTFOLDER.htm) for additional parameter details.
 
-[IDF](parameter_intro/idf) = string
+[IDF](CFTUTIL/Parameter_index/idf.htm) = string
 
-[PART](parameter_intro/part) = string
+[PART](CFTUTIL/Parameter_index/part.htm) = string
 
-[SCANDIR](../web_copilot_ui/flow_def_intro/cftfolder)
+[SCANDIR](web_copilot_ui/flow_def_intro/cftfolder)
 = string
 
-[WORKDIR](../web_copilot_ui/flow_def_intro/cftfolder) = string
+[WORKDIR](web_copilot_ui/flow_def_intro/cftfolder) = string
 
-\[ [ARCHIVEDIR](archivedir.htm) = string \]
+\[ ARCHIVEDIR = string \]
 
 \[ ENABLESUBDIR = { <u>YES</u> | NO } \]
 
@@ -725,78 +723,78 @@ See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional para
 
 Syntax
 
-[NIDF](parameter_intro/nidf)
+[NIDF](CFTUTIL/Parameter_index/nidf.htm)
 = string
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = { RECV
 | SEND }
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
- [CFTIDF details](../web_copilot_ui/flow_def_intro/cftidf)
+ [CFTIDF details](CFTUTIL/Conf/CFTIDF.htm)
 
 [File
-template/virtual file association](../../concepts/cft_configuration_concepts_start_here/network_file_identifier_concepts)
+template/virtual file association](GUI/Concepts/Network_file_identifier_concepts.htm)
 
 #### <span id="CFTLOG"></span>CFTLOG FNAME = filename: Log file management parameters 
 
 Syntax
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [AFNAME](parameter_intro/afname)
+\[ [AFNAME](CFTUTIL/Parameter_index/afname.htm)
 = filename \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { FULL
 | BRIEF } \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [FORMAT](parameter_intro/format)
+\[ [FORMAT](CFTUTIL/Parameter_index/format.htm)
 = { V23
 | 23 | V24 | 24 } \]
 
-\[ [LENGTH](parameter_intro/length)
+\[ [LENGTH](CFTUTIL/Parameter_index/length.htm)
 = { 160
 | n } \]
 
-\[ [MAXREC](parameter_intro/maxrec)
+\[ [MAXREC](CFTUTIL/Parameter_index/maxrec.htm)
 = { 0
 | n } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NOTIFY](parameter_intro/notify)
+\[ [NOTIFY](CFTUTIL/Parameter_index/notify.htm)
 = identifier \]
 
-\[ [OPERMSG](parameter_intro/opermsg)
+\[ [OPERMSG](CFTUTIL/Parameter_index/opermsg.htm)
 = n \]
 
-\[ [SWITCH](parameter_intro/switch)
+\[ [SWITCH](CFTUTIL/Parameter_index/switch.htm)
 = { 00000000
 | time } \]
 
-[CFTLOG details](log_parameter_concepts.htm)
+CFTLOG details
 
-[Transfer
-Log file](log_parameter_concepts.htm)
+Transfer
+Log file
 
 #### <span id="CFTNET"></span>CFTNET: Local network resources
 
@@ -804,83 +802,83 @@ Syntax
 
 #### CFTNET TYPE = TCP
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = { string | INADDR\_ANY }
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = { identifier | \*identifier }
 
-\[ [CALL](parameter_intro/call)
+\[ [CALL](CFTUTIL/Parameter_index/call.htm)
 = { INOUT
 | IN | OUT } \]
 
-\[ [CLASS](parameter_intro/class)
+\[ [CLASS](CFTUTIL/Parameter_index/class.htm)
 = { 1 | n } \]
 
-\[ [MAXCNX](parameter_intro/maxcnx)
+\[ [MAXCNX](CFTUTIL/Parameter_index/maxcnx.htm)
 = { 384
 | n } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [SRCHOST](parameter_intro/srchost)=
+\[ [SRCHOST](CFTUTIL/Parameter_index/srchost.htm)=
 { hostname1 | n} \]
 
-\[ [SRCPORTS](parameter_intro/srcports)= { string } \]
+\[ [SRCPORTS](CFTUTIL/Parameter_index/srcports.htm)= { string } \]
 
  
 
 #### CFTNET TYPE = SR
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = { string | INADDR\_ANY }
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = { identifier | \*identifier }
 
 \[ RECALLHOST = { string } \]
 
-\[ [PORT](parameter_intro/port) = {0 ...65535 } \]
+\[ [PORT](CFTUTIL/Parameter_index/port.htm) = {0 ...65535 } \]
 
-\[ [SRCHOST](parameter_intro/srchost) = { string } \]
+\[ [SRCHOST](CFTUTIL/Parameter_index/srchost.htm) = { string } \]
 
 \[ SSLTERM { YES | <u>NO</u> } \]
 
 #### PROTOCOL = GENERIC
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = string
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[INET](inet.htm)
+INET
 = identifier
 
-[PORT](parameter_intro/port)
+[PORT](CFTUTIL/Parameter_index/port.htm)
 =  n
 
-\[ [CALL](parameter_intro/call)
+\[ [CALL](CFTUTIL/Parameter_index/call.htm)
 = { INOUT
 | IN | OUT } \]
 
-\[ [CLASS](parameter_intro/class)
+\[ [CLASS](CFTUTIL/Parameter_index/class.htm)
 = { 1 | n } \]
 
-\[ [MAXCNX](parameter_intro/maxcnx)
+\[ [MAXCNX](CFTUTIL/Parameter_index/maxcnx.htm)
 = { 384
 | n } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [SRCHOST](parameter_intro/srchost)=
+\[ [SRCHOST](CFTUTIL/Parameter_index/srchost.htm)=
 { hostname1 | n} \]
 
  
@@ -889,309 +887,309 @@ Syntax
 
 #### PROTOCOL = SOCKS4, SOCKS5
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = string  
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[INET](inet.htm)
+INET
 = identifier
 
-[PORT](parameter_intro/port)
+[PORT](CFTUTIL/Parameter_index/port.htm)
 =  n
 
-\[ [CALL](parameter_intro/call)
+\[ [CALL](CFTUTIL/Parameter_index/call.htm)
 = { INOUT
 | IN | OUT } \]
 
-\[ [CLASS](parameter_intro/class)
+\[ [CLASS](CFTUTIL/Parameter_index/class.htm)
 = { 1 | n } \]
 
-\[ [MAXCNX](parameter_intro/maxcnx)
+\[ [MAXCNX](CFTUTIL/Parameter_index/maxcnx.htm)
 = { 32
 | n } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [SRCHOST](parameter_intro/srchost)=
+\[ [SRCHOST](CFTUTIL/Parameter_index/srchost.htm)=
 { hostname1 | n} \]
 
-\[ [USER](parameter_intro/user)
+\[ [USER](CFTUTIL/Parameter_index/user.htm)
 = string \]
 
- [CFTNET details](../web_copilot_ui/conf_intro/cftnet)
+ [CFTNET details](CFTUTIL/Conf/CFTNET.htm)
 
 [Network
-resources](../../admin_intro/admin_config_commands/network_resource_concepts)
+resources](GUI/Concepts/Network_resource_concepts.htm)
 
-[About proxies and SOCKS](../../protocols_start_here/ipv6/use_proxy_and_socks_protocol)
+[About proxies and SOCKS](Prots/internet/use_Proxy_and_SOCKS_protocol.htm)
 
 #### <span id="CFTPARM"></span>CFTPARM: General Transfer CFT environment parameters
 
 Syntax
 
-[CAT](parameter_intro/cat)
+[CAT](CFTUTIL/Parameter_index/cat.htm)
 = identifier
 
-[COM](parameter_intro/com)
+[COM](CFTUTIL/Parameter_index/com.htm)
 = ( identifier ,  identifier
 , ...)
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[KEY](parameter_intro/key)
+[KEY](CFTUTIL/Parameter_index/key.htm)
 = {string | #filename }
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = ( identifier ,  identifier
 ,...)
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier  
 
-[PARTFNAM](parameter_intro/partfnam)
+[PARTFNAM](CFTUTIL/Parameter_index/partfnam.htm)
 = filename  
 
-[PROT](parameter_intro/prot)
+[PROT](CFTUTIL/Parameter_index/prot.htm)
 = ( identifier ,  identifier
 , ...)
 
-\[ [ACCNT](parameter_intro/accnt)
+\[ [ACCNT](CFTUTIL/Parameter_index/accnt.htm)
 = identifier  \]
 
-\[ [BUFSIZE](parameter_intro/bufsize)
+\[ [BUFSIZE](CFTUTIL/Parameter_index/bufsize.htm)
 =  { 4096
 | n } \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CRONTABS](parameter_intro/crontab)
+\[ [CRONTABS](CFTUTIL/Parameter_index/crontab.htm)
 = (crontab, crontab, …) \]
 
-\[ [DEFAULT](parameter_intro/default)
+\[ [DEFAULT](CFTUTIL/Parameter_index/default.htm)
 = { DEFAUT
 | identifier } \]
 
-\[ [EXECRE](parameter_intro/execre)
+\[ [EXECRE](CFTUTIL/Parameter_index/execre.htm)
 = filename \]
 
-\[ [EXECRF](parameter_intro/execrf)
+\[ [EXECRF](CFTUTIL/Parameter_index/execrf.htm)
 = filename \]
 
-\[ [EXECRM](parameter_intro/execrm)
+\[ [EXECRM](CFTUTIL/Parameter_index/execrm.htm)
 = filename \]
 
-\[ [EXECSE](parameter_intro/execse)
+\[ [EXECSE](CFTUTIL/Parameter_index/execse.htm)
 = filename \]
 
-\[ [EXECSF](parameter_intro/execsf)
+\[ [EXECSF](CFTUTIL/Parameter_index/execsf.htm)
 = filename \]
 
-\[ [EXECSFA](parameter_intro/execsfa)
+\[ [EXECSFA](CFTUTIL/Parameter_index/execsfa.htm)
 = filename \]
 
-\[ [EXECSM](parameter_intro/execsm)
+\[ [EXECSM](CFTUTIL/Parameter_index/execsm.htm)
 = filename  \]
 
-\[ [EXECSMA](parameter_intro/execsma)
+\[ [EXECSMA](CFTUTIL/Parameter_index/execsma.htm)
 = filename \]
 
-\[ [EXITBOT](exitbot.htm)
+\[ EXITBOT
 = identifier  \]
 
-\[ [EXITEOT](parameter_intro/exiteot)
+\[ [EXITEOT](CFTUTIL/Parameter_index/exiteot.htm)
 = identifier  \]
 
-\[ [FBUFSIZE](parameter_intro/fbufsize)
+\[ [FBUFSIZE](CFTUTIL/Parameter_index/fbufsize.htm)
 = { 0
 |65535 } \]
 
-\[ [LENAPPL](parameter_intro/lenappl)
+\[ [LENAPPL](CFTUTIL/Parameter_index/lenappl.htm)
 = { 32
 | 1 } \]
 
-\[ [LOG](parameter_intro/log)
+\[ [LOG](CFTUTIL/Parameter_index/log.htm)
 = identifier  \]
 
-\[ [MAXTASK](parameter_intro/maxtask)
+\[ [MAXTASK](CFTUTIL/Parameter_index/maxtask.htm)
 = { 8
 | n }  \]
 
-\[ [MAXTRANS](parameter_intro/maxtrans)
+\[ [MAXTRANS](CFTUTIL/Parameter_index/maxtrans.htm)
 =  { 256
 | 1 } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE }  \]
 
-\[ [NPART](parameter_intro/npart)
+\[ [NPART](CFTUTIL/Parameter_index/npart.htm)
 = string \]
 
-\[ [PKIPASSW](parameter_intro/pkipassw)
+\[ [PKIPASSW](CFTUTIL/Parameter_index/pkipassw.htm)
 = { PKIPASSW | string } \]
 
-\[ [RCVALLER](parameter_intro/rcvaller)
+\[ [RCVALLER](CFTUTIL/Parameter_index/rcvaller.htm)
 = { STOP
 | CONTINUE } \]
 
-\[ [SECFNAME](parameter_intro/secfname)
+\[ [SECFNAME](CFTUTIL/Parameter_index/secfname.htm)
 = filename \]
 
-\[ [SSLMTASK](parameter_intro/sslmtask)
+\[ [SSLMTASK](CFTUTIL/Parameter_index/sslmtask.htm)
 = { 8
 | n } \]
 
-\[ [SSLTTASK](parameter_intro/sslttask)
+\[ [SSLTTASK](CFTUTIL/Parameter_index/sslttask.htm)
 =  {3
 | n } \]
 
-\[ [SSLWTASK](parameter_intro/sslwtask)
+\[ [SSLWTASK](CFTUTIL/Parameter_index/sslwtask.htm)
 = { 10
 |n } \]
 
-\[ [SSLWRESP](parameter_intro/sslwresp)
+\[ [SSLWRESP](CFTUTIL/Parameter_index/sslwresp.htm)
 = { 60
 | n } \]
 
-\[ [TRACE](parameter_intro/trace)
+\[ [TRACE](CFTUTIL/Parameter_index/trace.htm)
 = string \]
 
-\[ [TRANTASK](parameter_intro/trantask)
+\[ [TRANTASK](CFTUTIL/Parameter_index/trantask.htm)
 = { 3
 | n } \]
 
-\[ [TRKPART](parameter_intro/trkpart)
+\[ [TRKPART](CFTUTIL/Parameter_index/trkpart.htm)
 =  { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [TRKRECV](parameter_intro/trkrecv)
+\[ [TRKRECV](CFTUTIL/Parameter_index/trkrecv.htm)
 =  { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [TRKSEND](parameter_intro/trksend)
+\[ [TRKSEND](CFTUTIL/Parameter_index/trksend.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [USERCTRL](parameter_intro/userctrl)
+\[ [USERCTRL](CFTUTIL/Parameter_index/userctrl.htm)
 = { NO
 | YES } \]
 
-\[ [WAITRESP](parameter_intro/waitresp)
+\[ [WAITRESP](CFTUTIL/Parameter_index/waitresp.htm)
 = { 60
 | n } \]
 
-\[ [WAITTASK](parameter_intro/waittask)
+\[ [WAITTASK](CFTUTIL/Parameter_index/waittask.htm)
 = { 10
 | n } \]
 
-[CFTPARM details](../web_copilot_ui/conf_intro/cftparm)
+[CFTPARM details](CFTUTIL/Conf/CFTPARM.htm)
 
 [Transfer CFT general
-parameters](../../admin_intro/admin_config_commands/cftparm_general_parameters)
+parameters](GUI/Concepts/CFTPARM_General_parameters.htm)
 
 #### <span id="CFTPART"></span>CFTPART ID = identifier: Partner definition parameters  
 
 Syntax
 
-[PROT](parameter_intro/prot)
+[PROT](CFTUTIL/Parameter_index/prot.htm)
 = { (identifier | mask , identifier | mask , .... ) }
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string  \]
 
-\[ [COMMUT](parameter_intro/commut)
+\[ [COMMUT](CFTUTIL/Parameter_index/commut.htm)
 = { YES
 | NO | SERVER }   \]
 
-\[ [CTRLPART](parameter_intro/ctrlpart)
+\[ [CTRLPART](CFTUTIL/Parameter_index/ctrlpart.htm)
 = { IGNORE
 | ALL | RPART | SPART } \]
 
-\[ [FPREFIX](parameter_intro/fprefix)
+\[ [FPREFIX](CFTUTIL/Parameter_index/fprefix.htm)
 = string \]
 
-\[ [GROUP](parameter_intro/group)
+\[ [GROUP](CFTUTIL/Parameter_index/group.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier  \]
 
-\[ [IMAXTIME](parameter_intro/imaxtime)
+\[ [IMAXTIME](CFTUTIL/Parameter_index/imaxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [IMINTIME](imintime.htm)
+\[ IMINTIME
 = { 0
 | time } \]
 
-\[ [IPART](parameter_intro/ipart)
+\[ [IPART](CFTUTIL/Parameter_index/ipart.htm)
 = identifier \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NACK](parameter_intro/nack) = { YES | <u>NO</u> | ANY } \]
+\[ [NACK](CFTUTIL/NACK.htm) = { YES | <u>NO</u> | ANY } \]
 
-\[ [NRPART](parameter_intro/nrpart)
+\[ [NRPART](CFTUTIL/Parameter_index/nrpart.htm)
 = string \]
 
-\[ [NRPASSW](parameter_intro/nrpassw) = string  \]
+\[ [NRPASSW](CFTUTIL/Parameter_index/nrpassw.htm) = string  \]
 
-\[ [NSPART](parameter_intro/nspart)
+\[ [NSPART](CFTUTIL/Parameter_index/nspart.htm)
 = string  \]
 
-\[ [NSPASSW](parameter_intro/nspassw)
+\[ [NSPASSW](CFTUTIL/Parameter_index/nspassw.htm)
 = string  \]
 
-\[ [OMAXTIME](parameter_intro/omaxtime)
+\[ [OMAXTIME](CFTUTIL/Parameter_index/omaxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [OMINTIME](parameter_intro/omintime)
+\[ [OMINTIME](CFTUTIL/Parameter_index/omintime.htm)
 = { 0
 | time } \]
 
-\[ [RAUTH](parameter_intro/rauth)
+\[ [RAUTH](CFTUTIL/Parameter_index/rauth.htm)
 = { \*
 | identifier } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = (string, string, …) \]
 
-\[ [SAUTH](parameter_intro/sauth)
+\[ [SAUTH](CFTUTIL/Parameter_index/sauth.htm)
 = { \*
 | identifier } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = {ACTIVEBOTH
 | ACTIVEREQ | ACTIVESERV | NOACTIVE } \]
 
-\[ [SYST](parameter_intro/syst)
+\[ [SYST](CFTUTIL/Parameter_index/syst.htm)
 = { ‘
 ‘ | GCOS7 | GCOS8 | GUARD | MVS | OS400 |
 UNIX | VM | VMS | VSE | WINNT | BS2000 } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [XLATE](parameter_intro/xlate)
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm)
 = identifier \]
 
-[CFTPART details](defining_partners_concepts.htm)
+CFTPART details
 
-[Partner
-attribute concepts](defining_partners_concepts.htm)
+Partner
+attribute concepts
 
 #### <span id="CFTPROT"></span>CFTPROT: Transfer protocol
 
@@ -1199,94 +1197,94 @@ Syntax
 
 CFTPROT TYPE = ODETTE
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 = { 20
 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 65
 | n } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier  \]
 
-\[ [EERP](parameter_intro/eerp)
+\[ [EERP](CFTUTIL/Parameter_index/EERP.htm)
 = { 91
 | 86 } \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/ida)
+\[ [IDF](CFTUTIL/Parameter_index/ida.htm)
 = string  \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [PAD](parameter_intro/pad)
+\[ [PAD](CFTUTIL/Parameter_index/pad.htm)
 = { NO
 | YES } \] &lt;Deprecated in Transfer CFT 3.5>
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 =  { 0
 | 15 } \]
 
-\[ [RCREDIT](parameter_intro/rcredit)
+\[ [RCREDIT](CFTUTIL/Parameter_index/rcredit.htm)
 = { 4
 | n } \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { YES
 | NO } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = { 2048
 | n } \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260
 | n } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 = { 0 | <u>1</u> |15 } \]
 
-\[ [SCREDIT](parameter_intro/scredit)
+\[ [SCREDIT](CFTUTIL/Parameter_index/scredit.htm)
 = { 4
 | n } \]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SRUSIZE](parameter_intro/srusize)
+\[ [SRUSIZE](CFTUTIL/Parameter_index/srusize.htm)
 = { 2048 | n } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
-\[ [TCP](parameter_intro/tcp)
+\[ [TCP](CFTUTIL/Parameter_index/tcp.htm)
 = { CFT
 | <u>OFTP</u>} \]
 
@@ -1294,1312 +1292,1312 @@ CFTPROT TYPE = ODETTE
 
 CFTPROT TYPE = PESIT
 
-[PROF](parameter_intro/prof)
+[PROF](CFTUTIL/Parameter_index/prof.htm)
 = ANY
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier  
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier
 
-\[ [CONCAT](parameter_intro/concat)
+\[ [CONCAT](CFTUTIL/Parameter_index/concat.htm)
 = { NO
 | <u>YES</u> } \]
 
-\[ [DISCTC](parameter_intro/disctc)
+\[ [DISCTC](CFTUTIL/Parameter_index/disctc.htm)
 = { 60
 | n } \]
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 = { 10
 | n } \]
 
-\[ [DISCTR](parameter_intro/disctr)
+\[ [DISCTR](CFTUTIL/Parameter_index/disctr.htm)
 = { 45
 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 60
 |n } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier \]
 
-\[ [HIDE99](parameter_intro/hide99)
+\[ [HIDE99](CFTUTIL/Parameter_index/hide99.htm)
 = { NO
 | YES } \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string \]
 
-\[ [LOGON](parameter_intro/logon)
+\[ [LOGON](CFTUTIL/Parameter_index/logon.htm)
 = { YES
 | NO } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [MULTART](parameter_intro/multart)
+\[ [MULTART](CFTUTIL/Parameter_index/multart.htm)
 = { NO
 | <u>YES</u> } \]
 
-\[ [NACK](parameter_intro/nack) = { YES | <u>NO</u> | ANY} \]
+\[ [NACK](CFTUTIL/NACK.htm) = { YES | <u>NO</u> | ANY} \]
 
-\[ [PAD](parameter_intro/pad)
+\[ [PAD](CFTUTIL/Parameter_index/pad.htm)
 = { NO
 | YES } \] &lt;Deprecated in Transfer CFT 3.5>
 
-\[ [RCHKW](parameter_intro/rchkw)
+\[ [RCHKW](CFTUTIL/Parameter_index/rchkw.htm)
 = { 3
 | n } \]
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 = { <u>0</u>
 | 15 } \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { NO
 | YES } \]
 
-\[ [RPACING](parameter_intro/rpacing)
+\[ [RPACING](CFTUTIL/Parameter_index/rpacing.htm)
 = { 32767
 | n } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = { 32750
 |n } \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260
 | n } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCHKW](parameter_intro/schkw)
+\[ [SCHKW](CFTUTIL/Parameter_index/schkw.htm)
 = { 3
 | n } \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 = { <u>0</u> | 15} \]
 
-\[ [SEGMENT](parameter_intro/segment)
+\[ [SEGMENT](CFTUTIL/Parameter_index/segment.htm)
 = { NO
 | <u>YES</u> } \]
 
-\[ [SPACING](parameter_intro/spacing)
+\[ [SPACING](CFTUTIL/Parameter_index/spacing.htm)
 = { 32767
 | n } \]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SRUSIZE](parameter_intro/srusize)
+\[ [SRUSIZE](CFTUTIL/Parameter_index/srusize.htm)
 = { 32750
 | n } \]
 
-\[ [SSERV](parameter_intro/sserv)
+\[ [SSERV](CFTUTIL/Parameter_index/sserv.htm)
 = { GSIT
 | string } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
  
 
 CFTPROT TYPE = PESIT  
 
-[PROF](parameter_intro/prof)
+[PROF](CFTUTIL/Parameter_index/prof.htm)
 = CFT
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier
 
-\[ [CONCAT](parameter_intro/concat)
+\[ [CONCAT](CFTUTIL/Parameter_index/concat.htm)
 = { NO
 | YES } \]
 
-\[ [DISCTC](parameter_intro/disctc)
+\[ [DISCTC](CFTUTIL/Parameter_index/disctc.htm)
 = { 90
 | n }  \]
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 =  { 20
 | n } \]
 
-\[ [DISCTR](parameter_intro/disctr)
+\[ [DISCTR](CFTUTIL/Parameter_index/disctr.htm)
 = { 45
 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 65
 | n } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier  \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier  \]
 
-\[ [HIDE99](parameter_intro/hide99)
+\[ [HIDE99](CFTUTIL/Parameter_index/hide99.htm)
 = { NO
 |YES } \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [MULTART](parameter_intro/multart)
+\[ [MULTART](CFTUTIL/Parameter_index/multart.htm)
 = { NO
 | YES } \]
 
-\[ [PAD](parameter_intro/pad)
+\[ [PAD](CFTUTIL/Parameter_index/pad.htm)
 = { NO
 | YES } \] &lt;Deprecated in Transfer CFT 3.5>
 
-\[ [RCHKW](parameter_intro/rchkw)
+\[ [RCHKW](CFTUTIL/Parameter_index/rchkw.htm)
 = { 2
 | n }  \]
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 = { 0 |15} \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { NO
 | YES } \]
 
-\[ [RPACING](parameter_intro/rpacing)
+\[ [RPACING](CFTUTIL/Parameter_index/rpacing.htm)
 = { 36
 | n } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = { 4056
 | n } \]
 
-\[ [RSERV](rserv.htm)
+\[ RSERV
 = string \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260
 | n }  \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCHKW](parameter_intro/schkw)
+\[ [SCHKW](CFTUTIL/Parameter_index/schkw.htm)
 = { 2
 | n } \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 = { 0| 15
 } \]
 
-\[ [SEGMENT](parameter_intro/segment)
+\[ [SEGMENT](CFTUTIL/Parameter_index/segment.htm)
 = { NO
 | YES } \]
 
-\[ [SPACING](parameter_intro/spacing)
+\[ [SPACING](CFTUTIL/Parameter_index/spacing.htm)
 = { 36
 | n } \]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SRUSIZE](parameter_intro/srusize)
+\[ [SRUSIZE](CFTUTIL/Parameter_index/srusize.htm)
 = { 4056
 |n } \]
 
-\[ [SSERV](parameter_intro/sserv)
+\[ [SSERV](CFTUTIL/Parameter_index/sserv.htm)
 = { CFTPSITX | string } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
  
 
 CFTPROT TYPE = PESIT
 
-[PROF](parameter_intro/prof)
+[PROF](CFTUTIL/Parameter_index/prof.htm)
 = EXTERN
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier
 
-\[ [CONCAT](parameter_intro/concat)
+\[ [CONCAT](CFTUTIL/Parameter_index/concat.htm)
 = { NO
 | YES } \]
 
-\[ [DISCTC](parameter_intro/disctc)
+\[ [DISCTC](CFTUTIL/Parameter_index/disctc.htm)
 = { 90
 | n } \]
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 =  { 120
 | n } \]
 
-\[ [DISCTR](parameter_intro/disctr)
+\[ [DISCTR](CFTUTIL/Parameter_index/disctr.htm)
 = { 45
 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 165
 | n } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier  \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier   \]
 
-\[ [HIDE99](parameter_intro/hide99)
+\[ [HIDE99](CFTUTIL/Parameter_index/hide99.htm)
 = { NO
 |YES } \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string  \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [LOGON](parameter_intro/logon)
+\[ [LOGON](CFTUTIL/Parameter_index/logon.htm)
 = { YES
 | NO } \]
 
-\[ [MULTART](parameter_intro/multart)
+\[ [MULTART](CFTUTIL/Parameter_index/multart.htm)
 = { NO
 | YES } \]
 
-\[ [NACK](parameter_intro/nack) = { YES | <u>NO</u> | ANY } \]
+\[ [NACK](CFTUTIL/NACK.htm) = { YES | <u>NO</u> | ANY } \]
 
-\[ [RCHKW](parameter_intro/rchkw)
+\[ [RCHKW](CFTUTIL/Parameter_index/rchkw.htm)
 = { 2
 | n } \]
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 =  { 0 | 10
 |15 } \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { YES | NO } \]
 
-\[ [RPACING](parameter_intro/rpacing)
+\[ [RPACING](CFTUTIL/Parameter_index/rpacing.htm)
 = { 36 | n } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = { 4056 | n } \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260
 | n } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCHKW](parameter_intro/schkw)
+\[ [SCHKW](CFTUTIL/Parameter_index/schkw.htm)
 = { 2
 | n } \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 =  { 0 | 10
 | 15} \]
 
-\[ [SEGMENT](parameter_intro/segment)
+\[ [SEGMENT](CFTUTIL/Parameter_index/segment.htm)
 = { NO | YES } \]
 
-\[ [SPACING](parameter_intro/spacing)
+\[ [SPACING](CFTUTIL/Parameter_index/spacing.htm)
 = { 36 | n } \]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SRUSIZE](parameter_intro/srusize)
+\[ [SRUSIZE](CFTUTIL/Parameter_index/srusize.htm)
 = { 4056 | n } \]
 
-\[ [SSERV](parameter_intro/sserv)
+\[ [SSERV](CFTUTIL/Parameter_index/sserv.htm)
 = { PESIT
 | string } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
  
 
 CFTPROT TYPE = PESIT
 
-[PROF](parameter_intro/prof)
+[PROF](CFTUTIL/Parameter_index/prof.htm)
 = SIT
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier  
 
-\[ [CONCAT](parameter_intro/concat)
+\[ [CONCAT](CFTUTIL/Parameter_index/concat.htm)
 = { NO
 | YES } \]
 
-\[ [DISCTC](parameter_intro/disctc)
+\[ [DISCTC](CFTUTIL/Parameter_index/disctc.htm)
 = { 90
 | n } \]
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 = { 240 | n } \]
 
-\[ [DISCTR](parameter_intro/disctr)
+\[ [DISCTR](CFTUTIL/Parameter_index/disctr.htm)
 = { 45 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 285 | n } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/ida)
+\[ [IDF](CFTUTIL/Parameter_index/ida.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [MULTART](parameter_intro/multart)
+\[ [MULTART](CFTUTIL/Parameter_index/multart.htm)
 =  { NO
 | YES } \]
 
-\[ [RCHKW](parameter_intro/rchkw)
+\[ [RCHKW](CFTUTIL/Parameter_index/rchkw.htm)
 = { 2
 | n } \]
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 =  { 0 |
 15 } \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { NO
 | string } \]
 
-\[ [RPACING](parameter_intro/rpacing)
+\[ [RPACING](CFTUTIL/Parameter_index/rpacing.htm)
 = { 36
 | n } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = { 4050 | n } \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260 | n } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCHKW](parameter_intro/schkw)
+\[ [SCHKW](CFTUTIL/Parameter_index/schkw.htm)
 = { 2 | n } \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 = { 0 | 15 } \]
 
-\[ [SEGMENT](parameter_intro/segment)
+\[ [SEGMENT](CFTUTIL/Parameter_index/segment.htm)
 = { NO | YES } \]
 
-\[ [SPACING](parameter_intro/spacing)
+\[ [SPACING](CFTUTIL/Parameter_index/spacing.htm)
 = { 36
 | n } \]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SRUSIZE](parameter_intro/srusize)
+\[ [SRUSIZE](CFTUTIL/Parameter_index/srusize.htm)
 = { 4050 | n } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
  
 
 CFTPROT TYPE = PESIT
 
-[PROF](parameter_intro/prof)
+[PROF](CFTUTIL/Parameter_index/prof.htm)
 = DMZ  
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-[NET](parameter_intro/net)
+[NET](CFTUTIL/Parameter_index/net.htm)
 = identifier
 
-\[ [CONCAT](parameter_intro/concat)
+\[ [CONCAT](CFTUTIL/Parameter_index/concat.htm)
 = { NO
 | YES } \]
 
-\[ [CTO](parameter_intro/cto)
+\[ [CTO](CFTUTIL/Parameter_index/cto.htm)
 = { 1
 | n } \]
 
-\[ [CYCLE](parameter_intro/cycle)
+\[ [CYCLE](CFTUTIL/Parameter_index/cycle.htm)
 = { 10
 | n } \]
 
-\[ [DISCTC](parameter_intro/disctc)
+\[ [DISCTC](CFTUTIL/Parameter_index/disctc.htm)
 = { 90
 | n } \]
 
-\[ [DISCTD](parameter_intro/disctd)
+\[ [DISCTD](CFTUTIL/Parameter_index/disctd.htm)
 = { 120
 | n } \]
 
-\[ [DISCTR](parameter_intro/disctr)
+\[ [DISCTR](CFTUTIL/Parameter_index/disctr.htm)
 = { 45
 | n } \]
 
-\[ [DISCTS](parameter_intro/discts)
+\[ [DISCTS](CFTUTIL/Parameter_index/discts.htm)
 = { 65
 | n  } \]
 
-\[ [DYNAM](parameter_intro/dynam)
+\[ [DYNAM](CFTUTIL/Parameter_index/dynam.htm)
 = identifier \]
 
-\[ [EXITA](parameter_intro/exita)
+\[ [EXITA](CFTUTIL/Parameter_index/exita.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string \]
 
-\[ [LOGON](parameter_intro/logon)
+\[ [LOGON](CFTUTIL/Parameter_index/logon.htm)
 = { YES
 | NO } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [MULTART](parameter_intro/multart)
+\[ [MULTART](CFTUTIL/Parameter_index/multart.htm)
 = { NO
 | YES } \]
 
-\[ [PAD](parameter_intro/pad)
+\[ [PAD](CFTUTIL/Parameter_index/pad.htm)
 = { NO
 | YES } \] &lt;Deprecated in Transfer CFT 3.5>
 
-\[ [PART](parameter_intro/part)
+\[ [PART](CFTUTIL/Parameter_index/part.htm)
 = ( identifier, identifier, …) \]
 
-\[ [RCHKW](parameter_intro/rchkw)
+\[ [RCHKW](CFTUTIL/Parameter_index/rchkw.htm)
 = { 2
 | n } \]
 
-\[ [RCOMP](parameter_intro/rcomp)
+\[ [RCOMP](CFTUTIL/Parameter_index/rcomp.htm)
 = { 0 | 10
 | 15 } \]
 
-\[ [RESTART](parameter_intro/restart)
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm)
 = { 5
 | n  } \]
 
-\[ [RESYNC](parameter_intro/resync)
+\[ [RESYNC](CFTUTIL/Parameter_index/resync.htm)
 = { NO
 | YES } \]
 
-\[ [REVERSE](parameter_intro/reverse)
+\[ [REVERSE](CFTUTIL/Parameter_index/reverse.htm)
 = { NO
 | YES } \]
 
-\[ [RPACING](parameter_intro/rpacing)
+\[ [RPACING](CFTUTIL/Parameter_index/rpacing.htm)
 = { 36
 | n } \]
 
-\[ [RRUSIZE](parameter_intro/rrusize)
+\[ [RRUSIZE](CFTUTIL/Parameter_index/rrusize.htm)
 = n \]
 
-\[ [RTO](parameter_intro/rto)
+\[ [RTO](CFTUTIL/Parameter_index/rto.htm)
 = { 260
 | n } \]
 
-\[ [SAP](parameter_intro/sap)
+\[ [SAP](CFTUTIL/Parameter_index/sap.htm)
 = string \]
 
-\[ [SCHKW](parameter_intro/schkw)
+\[ [SCHKW](CFTUTIL/Parameter_index/schkw.htm)
 = { 2
 | n } \]
 
-\[ [SCOMP](parameter_intro/scomp)
+\[ [SCOMP](CFTUTIL/Parameter_index/scomp.htm)
 = { 0 | 10
 | 15 } \]
 
-\[ [SEGMENT](parameter_intro/segment)
+\[ [SEGMENT](CFTUTIL/Parameter_index/segment.htm)
 = { NO
 | YES } \]
 
-\[ [SPACING](parameter_intro/spacing)
+\[ [SPACING](CFTUTIL/Parameter_index/spacing.htm)
 = { 36
 | n }\]
 
-\[ [SRIN](parameter_intro/srin)
+\[ [SRIN](CFTUTIL/Parameter_index/srin.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SROUT](parameter_intro/srout)
+\[ [SROUT](CFTUTIL/Parameter_index/srout.htm)
 = { BOTH
 | NONE | RECEIVER | SENDER } \]
 
-\[ [SSERV](parameter_intro/sserv)
+\[ [SSERV](CFTUTIL/Parameter_index/sserv.htm)
 = { PESIT
 | string } \]
 
-\[ [SSL](parameter_intro/ssl)
+\[ [SSL](CFTUTIL/Parameter_index/ssl.htm)
 = identifier \]
 
-\[ [TURN](parameter_intro/turn)
+\[ TURN
 = { FILE
 | MESSAGE } \]
 
  
 
-[CFTPROT details](../../admin_intro/admin_config_commands/transfer_protocol_concepts)
+[CFTPROT details](GUI/Conf/Transfer_protocol_concepts.htm)
 
 [File
-Transfer Protocol](../../admin_intro/admin_config_commands/transfer_protocol_concepts)
+Transfer Protocol](GUI/Conf/Transfer_protocol_concepts.htm)
 
 #### <span id="CFTRECV"></span>CFTRECV ID= identifier: Description of model file receiving parameters
 
 Syntax
 
-\[ [ACKEXEC](parameter_intro/ackexec) = filename\]
+\[ [ACKEXEC](CFTUTIL/Parameter_index/ackexec.htm) = filename\]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = { 0
 | date } \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = { 0
 | time } \]
 
-\[ [DELETE](parameter_intro/delete)
+\[ [DELETE](CFTUTIL/Parameter_index/delete.htm)
 = { NO
 | YES } \]
 
-\[ [DIRNB](parameter_intro/dirnb)
+\[ [DIRNB](CFTUTIL/Parameter_index/dirnb.htm)
 = { 0
 | n } \]
 
-\[ [DUPLICATE](parameter_intro/duplicat) = { string 512 } \]
+\[ [DUPLICATE](CFTUTIL/Parameter_index/duplicat.htm) = { string 512 } \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [EXECRALL](execrall.htm) = { <u>all</u> | parent| children} \]
+\[ EXECRALL = { <u>all</u> | parent| children} \]
 
-\[ [EXIT](parameter_intro/exit)
+\[ [EXIT](CFTUTIL/Parameter_index/exit.htm)
 = identifier  \]
 
-\[ [FACC](parameter_intro/facc)
+\[ [FACC](CFTUTIL/Parameter_index/facc.htm)
 = { ‘
 ‘ | character } \]
 
-\[ [FACTION](parameter_intro/faction)
+\[ [FACTION](CFTUTIL/Parameter_index/faction.htm)
 = { ‘
 ‘ | DELETE | ERASE | RENAME | VERIFY } \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = { 0
 | n } \]
 
-\[ [FCHECK](parameter_intro/fcheck)
+\[ [FCHECK](CFTUTIL/Parameter_index/fcheck.htm)
 = { NO
 | YES } \]
 
-\[ [FCODE](parameter_intro/fcode)
+\[ [FCODE](CFTUTIL/Parameter_index/fcode.htm)
 = { ‘
 ‘ |BINARY | EBCDIC | ASCII } \]
 
 \[ FDB
 = filename \]
 
-\[ [FDELETE](parameter_intro/fdelete) = <u>" "</u> |\* | C |D | K | H | T | X\]
+\[ [FDELETE](CFTUTIL/Parameter_index/fdelete.htm) = <u>" "</u> |\* | C |D | K | H | T | X\]
 
-\[ [FDISP](parameter_intro/fdisp)
+\[ [FDISP](CFTUTIL/Parameter_index/fdisp.htm)
 = { BOTH
 | NEW | OLD } \]
 
-\[ [FILENOTFOUND](filenotfound.htm) = { <u>ABORT</u> | IGNORE } \]
+\[ FILENOTFOUND = { <u>ABORT</u> | IGNORE } \]
 
-\[ [FKEYLEN](parameter_intro/fkeylen)
+\[ [FKEYLEN](CFTUTIL/Parameter_index/fkeylen.htm)
 = { 0
 | n } \]
 
-\[ [FKEYPOS](parameter_intro/fkeypos)
+\[ [FKEYPOS](CFTUTIL/Parameter_index/fkeypos.htm)
 = { 0
 | n } \]
 
-\[ [FLOWNAME](parameter_intro/flowname) = string \]
+\[ [FLOWNAME](CFTUTIL/Parameter_index/flowname.htm) = string \]
 
-\[ [FLRECL](parameter_intro/flrec)
+\[ [FLRECL](CFTUTIL/Parameter_index/flrec.htm)
 =  { 0
 | n  } \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { NO
 | YES }  \]
 
-\[ [FORG](parameter_intro/forg)
+\[ [FORG](CFTUTIL/Parameter_index/forg.htm)
 = { SEQ
 | DIRECT | INDEXED | PART } \]
 
-\[ [FPAD](parameter_intro/fpad) = { <u>' '</u> | character } \]
+\[ [FPAD](CFTUTIL/Parameter_index/fpad.htm) = { <u>' '</u> | character } \]
 
-\[ [FRECFM](parameter_intro/frecfm)
+\[ [FRECFM](CFTUTIL/Parameter_index/frecfm.htm)
 = { ‘
 ‘ |F | V | U } \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 =  { 0
 | n } \]
 
-\[ [FTYPE](parameter_intro/ftype)
+\[ [FTYPE](CFTUTIL/Parameter_index/ftype.htm)
 =  { ‘
 ‘ | character } \]
 
-\[ [GROUPID](parameter_intro/groupid)
+\[ [GROUPID](CFTUTIL/Parameter_index/groupid.htm)
 = string \]
 
-\[ [MACTION](parameter_intro/maction)
+\[ [MACTION](CFTUTIL/Parameter_index/maction.htm)
 =  { '
 ' | REPLACE } \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 =  { 99991231
 | date } \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **{<u>0</u>...32767} \]
+\[ MAXDURATION = ** **{<u>0</u>...32767} \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { 10000101
 | date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NCOMP](parameter_intro/ncomp)
+\[ [NCOMP](CFTUTIL/Parameter_index/ncomp.htm)
 = { 0 | 15
 } \]
 
-\[ [NETBAND](parameter_intro/netband) = { 1...16} \]
+\[ [NETBAND](CFTUTIL/Parameter_index/netband.htm) = { 1...16} \]
 
-\[ [NOTIFY](parameter_intro/notify)
+\[ [NOTIFY](CFTUTIL/Parameter_index/notify.htm)
 = string \]
 
-\[ [NPAD](parameter_intro/npad) = { <u>' '</u> | character } \]
+\[ [NPAD](CFTUTIL/Parameter_index/npad.htm) = { <u>' '</u> | character } \]
 
-\[ [NCODE](parameter_intro/ncode)
+\[ [NCODE](CFTUTIL/Parameter_index/ncode.htm)
 = { ‘
 ‘ |ASCII | BINARY | EBCDIC } \] \*available only when the protocol is SFTP
 
-\[ [OPERMSG](parameter_intro/opermsg)
+\[ [OPERMSG](CFTUTIL/Parameter_index/opermsg.htm)
 = { 0
 | 255 } \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = { 128 | n } \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RKERROR](parameter_intro/rkerror)
+\[ [RKERROR](CFTUTIL/Parameter_index/rkerror.htm)
 = { ' ' | DELETE | KEEP } \]
 
-\[ [RPASSWD](parameter_intro/rpassw) = string \]
+\[ [RPASSWD](CFTUTIL/Parameter_index/rpassw.htm) = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SERIAL](parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
+\[ [SERIAL](CFTUTIL/Parameter_index/serial.htm) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [SOURCEAPPL](parameter_intro/sourceappl) = string \]
+\[ [SOURCEAPPL](CFTUTIL/Parameter_index/sourceappl.htm) = string \]
 
-\[ [SPASSWD](parameter_intro/spasswd) = string \]
+\[ [SPASSWD](CFTUTIL/Parameter_index/spasswd.htm) = string \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { DISP | HOLD | KEEP } \]
 
-\[ [STORAGEACCOUNT](parameter_intro/storageaccount) = string \]
+\[ [STORAGEACCOUNT](CFTUTIL/Parameter_index/storageaccount.htm) = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TARGETAPPL](parameter_intro/targetappl) = string \]
+\[ [TARGETAPPL](CFTUTIL/Parameter_index/targetappl.htm) = string \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 =  { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [USERID](parameter_intro/userid)
+\[ [USERID](CFTUTIL/Parameter_index/userid.htm)
 = { CFT server"userid" | string } \]
 
-\[ [WFNAME](parameter_intro/wfname)
+\[ [WFNAME](CFTUTIL/Parameter_index/wfname.htm)
 = filename \]
 
-\[ [WORKINGDIR](parameter_intro/workingdir) = string \]
+\[ [WORKINGDIR](CFTUTIL/Parameter_index/workingdir.htm) = string \]
 
-\[ [XLATE](parameter_intro/xlate)
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm)
 = identifier \]
 
- [CFTRECV details](../web_copilot_ui/flow_def_intro/cftrecv)
+ [CFTRECV details](CFTUTIL/Conf/CFTRECV.htm)
 
 #### <span id="CFTSEND"></span>CFTSEND ID= identifier: Description of model file sending parameters
 
 Syntax
 
-\[ [ACKEXEC](parameter_intro/ackexec) = filename\]
+\[ [ACKEXEC](CFTUTIL/Parameter_index/ackexec.htm) = filename\]
 
-\[ [ARCHIVEFNAME](archivefname.htm) = string \]
+\[ ARCHIVEFNAME = string \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = { 0
 | date } \]
 
-\[ [CYCLE](parameter_intro/cycle)
+\[ [CYCLE](CFTUTIL/Parameter_index/cycle.htm)
 = { 0
 | n } \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = { 0
 | time } \]
 
-\[ [DELETE](parameter_intro/delete)
+\[ [DELETE](CFTUTIL/Parameter_index/delete.htm)
 = { NO
 | YES } \]
 
-\[ [DUPLICATE](parameter_intro/duplicat) = { string 512 } \]
+\[ [DUPLICATE](CFTUTIL/Parameter_index/duplicat.htm) = { string 512 } \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [EXECSUB](parameter_intro/execsub)
+\[ [EXECSUB](CFTUTIL/Parameter_index/execsub.htm)
 = { LIST
 | FILE | SUBF } \]
 
-\[ [EXECSUBA](parameter_intro/execsuba) = {LIST | FILE | <u>SUBF</u> } \]
+\[ [EXECSUBA](CFTUTIL/Parameter_index/execsuba.htm) = {LIST | FILE | <u>SUBF</u> } \]
 
-\[ [EXECSUBPRE](parameter_intro/execsubpre) = { LIST
+\[ [EXECSUBPRE](CFTUTIL/Parameter_index/execsubpre.htm) = { LIST
 | FILE | SUBF } \]
 
-\[ [EXIT](parameter_intro/exit)
+\[ [EXIT](CFTUTIL/Parameter_index/exit.htm)
 =  identifier
 \]
 
-\[ [FACC](parameter_intro/facc)
+\[ [FACC](CFTUTIL/Parameter_index/facc.htm)
 = { ‘
 ‘ | character } \]
 
-\[ [FACTION](parameter_intro/faction)
+\[ [FACTION](CFTUTIL/Parameter_index/faction.htm)
 = { NONE
 | DELETE | ERASE | ARCHIVE } \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = { 0
 | n } \]
 
-\[ [FCODE](parameter_intro/fcode)
+\[ [FCODE](CFTUTIL/Parameter_index/fcode.htm)
 = { ‘
 ‘ |ASCII | BINARY | EBCDIC } \]
 
 \[ FDB
 = filename \]
 
-\[ [FDELETE](parameter_intro/fdelete) = <u>" "</u> |\* | C |D | K | H | T | X\]
+\[ [FDELETE](CFTUTIL/Parameter_index/fdelete.htm) = <u>" "</u> |\* | C |D | K | H | T | X\]
 
-\[ [FDISP](parameter_intro/fdisp)
+\[ [FDISP](CFTUTIL/Parameter_index/fdisp.htm)
 = { SHR
 | OLD | CHECK } \]
 
-\[ [FILENOTFOUND](filenotfound.htm) = { <u>ABORT</u> | IGNORE } \]
+\[ FILENOTFOUND = { <u>ABORT</u> | IGNORE } \]
 
-\[ [FILTER](parameter_intro/filter) = string \]
+\[ [FILTER](CFTUTIL/Parameter_index/filter.htm) = string \]
 
-\[ [FILTERTYPE](parameter_intro/filtertype) = string \]
+\[ [FILTERTYPE](CFTUTIL/Parameter_index/filtertype.htm) = string \]
 
-\[ [FKEYLEN](parameter_intro/fkeylen)
+\[ [FKEYLEN](CFTUTIL/Parameter_index/fkeylen.htm)
 = { 0
 | n } \]
 
-\[ [FKEYPOS](parameter_intro/fkeypos)
+\[ [FKEYPOS](CFTUTIL/Parameter_index/fkeypos.htm)
 = { 0
 | n } \]
 
-\[ [FLOWNAME](parameter_intro/flowname) = string \]
+\[ [FLOWNAME](CFTUTIL/Parameter_index/flowname.htm) = string \]
 
-\[ [FLRECL](parameter_intro/flrec)
+\[ [FLRECL](CFTUTIL/Parameter_index/flrec.htm)
 = { 0
 | n } \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](CFTUTIL/Parameter_index/fname.htm)
  = { filename
 | mask | dirname | #filename | #mask | #dirname } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { NO
 | YES } \]
 
-\[ [FORG](parameter_intro/forg)
+\[ [FORG](CFTUTIL/Parameter_index/forg.htm)
 = { SEQ
 | DIRECT | INDEXED | PART } \]
 
-\[ [FPAD](parameter_intro/fpad) = { <u>' '</u> | character } \]
+\[ [FPAD](CFTUTIL/Parameter_index/fpad.htm) = { <u>' '</u> | character } \]
 
-\[ [FRECFM](parameter_intro/frecfm)
+\[ [FRECFM](CFTUTIL/Parameter_index/frecfm.htm)
 = { ‘
 ‘ | F | U | V } \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = { 0
 | n } \]
 
-\[ [FTYPE](parameter_intro/ftype)
+\[ [FTYPE](CFTUTIL/Parameter_index/ftype.htm)
 = { ‘
 ‘ | character } \]
 
-\[ [GROUPID](parameter_intro/groupid)
+\[ [GROUPID](CFTUTIL/Parameter_index/groupid.htm)
 = string \]
 
-\[ [IDA](parameter_intro/ida) = string \]
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm) = string \]
 
-\[ [IMPL](parameter_intro/impl)
+\[ [IMPL](CFTUTIL/Parameter_index/impl.htm)
 = { NO
 | YES } \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 =  { 99991231
 | date } \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **{<u>0</u>...32767} \]
+\[ MAXDURATION = ** **{<u>0</u>...32767} \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { 10000101|
 date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NBLKSIZE](parameter_intro/nblksize)
+\[ [NBLKSIZE](CFTUTIL/Parameter_index/nblksize.htm)
 = { 0
 | n } \]
 
-\[ [NCODE](parameter_intro/ncode)
+\[ [NCODE](CFTUTIL/Parameter_index/ncode.htm)
 = { ‘
 ‘ |ASCII | BINARY | EBCDIC } \]
 
-\[ [NCOMP](parameter_intro/ncomp)
+\[ [NCOMP](CFTUTIL/Parameter_index/ncomp.htm)
 =  { 0 |
 15
 } \]
 
-\[ [NETBAND](parameter_intro/netband)
+\[ [NETBAND](CFTUTIL/Parameter_index/netband.htm)
 = { 1...16} \]
 
-\[ [NFNAME](parameter_intro/nfname)
+\[ [NFNAME](CFTUTIL/Parameter_index/nfname.htm)
 =  { filename
 | \*filename } \]
 
-\[ [NKEYLEN](parameter_intro/nkeylen)
+\[ [NKEYLEN](CFTUTIL/Parameter_index/nkeylen.htm)
 = { 0
 | n } \]
 
-\[ [NKEYPOS](parameter_intro/nkeypos)
+\[ [NKEYPOS](CFTUTIL/Parameter_index/nkeypos.htm)
 = { 0|
 n } \]
 
-\[ [NLRECL](parameter_intro/nlrecl)
+\[ [NLRECL](CFTUTIL/Parameter_index/nlrecl.htm)
 =  { 0
 | n } \]
 
-\[ [NOTIFY](parameter_intro/notify)
+\[ [NOTIFY](CFTUTIL/Parameter_index/notify.htm)
 = string  \]
 
-\[ [NPAD](parameter_intro/npad) = { <u>' '</u> | character } \]
+\[ [NPAD](CFTUTIL/Parameter_index/npad.htm) = { <u>' '</u> | character } \]
 
-\[ [NRECFM](parameter_intro/nrecfm)
+\[ [NRECFM](CFTUTIL/Parameter_index/nrecfm.htm)
 = { ‘
 ‘ | F | U | V } \]
 
-\[ [NSPACE](parameter_intro/nspace)
+\[ [NSPACE](CFTUTIL/Parameter_index/nspace.htm)
 =  { 0
 | n } \]
 
-\[ [NTYPE](parameter_intro/ntype)
+\[ [NTYPE](CFTUTIL/Parameter_index/ntype.htm)
 = character \]
 
-\[ [OPERMSG](parameter_intro/opermsg)
+\[ [OPERMSG](CFTUTIL/Parameter_index/opermsg.htm)
 = { 0
 | 255 } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string  \]
 
-\[ [PREEXEC](parameter_intro/preexec) = filename \]
+\[ [PREEXEC](CFTUTIL/Parameter_index/preexec.htm) = filename \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = { 128
 | n } \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RPASSWD](parameter_intro/rpassw) = string \]
+\[ [RPASSWD](CFTUTIL/Parameter_index/rpassw.htm) = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SELFNAME](parameter_intro/selfname)
+\[ [SELFNAME](CFTUTIL/Parameter_index/selfname.htm)
 = filename \]
 
-\[ [SERIAL](parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
+\[ [SERIAL](CFTUTIL/Parameter_index/serial.htm) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [SPART](parameter_intro/spart)
+\[ [SPART](CFTUTIL/Parameter_index/spart.htm)
 = string \]
 
-\[ [SPASSWD](parameter_intro/spasswd) = string \]
+\[ [SPASSWD](CFTUTIL/Parameter_index/spasswd.htm) = string \]
 
-\[ [SOURCEAPPL](parameter_intro/sourceappl) = string \]
+\[ [SOURCEAPPL](CFTUTIL/Parameter_index/sourceappl.htm) = string \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [STORAGEACCOUNT](parameter_intro/storageaccount) = string \]
+\[ [STORAGEACCOUNT](CFTUTIL/Parameter_index/storageaccount.htm) = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [](parameter_intro/targetappl)[TARGETAPPL](parameter_intro/targetappl) = string \]
+\[ [](CFTUTIL/Parameter_index/targetappl.htm)[TARGETAPPL](CFTUTIL/Parameter_index/targetappl.htm) = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 =  { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [USERID](parameter_intro/userid)
+\[ [USERID](CFTUTIL/Parameter_index/userid.htm)
 = { CFT
 server "userid" | string } \]
 
-\[ [WFNAME](parameter_intro/wfname)
+\[ [WFNAME](CFTUTIL/Parameter_index/wfname.htm)
 = filename \]
 
-\[ [WORKINGDIR](parameter_intro/workingdir) = string \]
+\[ [WORKINGDIR](CFTUTIL/Parameter_index/workingdir.htm) = string \]
 
-\[ [XLATE](parameter_intro/xlate)
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm)
 = identifier \]
 
-[CFTSEND details](../web_copilot_ui/flow_def_intro/cftsend)
+[CFTSEND details](CFTUTIL/Conf/CFTSEND.htm)
 
 [Send
-file template](../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
+file template](GUI/Concepts/Default_SEND_template_concepts.htm)
 
 #### <span id="CFTSSL"></span>CFTSSL ID = identifier: Security files
 
 Syntax
 
-[CIPHLIST](parameter_intro/ciphlist)
+[CIPHLIST](CFTUTIL/Parameter_index/ciphlist.htm)
 = ( number, number, …)
 
-[DIRECT](parameter_intro/direct)
+[DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { CLIENT
 | SERVER }
 
-\[ [CACHE](parameter_intro/cache)
+\[ [CACHE](CFTUTIL/Parameter_index/cache.htm)
 = { NO
 | YES } \]
 
-\[ [CERFNAME](cerfname.htm)
+\[ CERFNAME
 = string \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [DEPTH](depth.htm)
+\[ DEPTH
 = { 10
 | n } \]
 
-\[ [DNISSUER](parameter_intro/dnissuer)
+\[ [DNISSUER](CFTUTIL/Parameter_index/dnissuer.htm)
 = ( string, string, …) \]
 
-\[ [DNUSER](parameter_intro/dnuser)
-= { ( string, string, …) | ( string, OP ([see Note](#*op)), string ) } \]
+\[ [DNUSER](CFTUTIL/Parameter_index/dnuser.htm)
+= { ( string, string, …) | ( string, OP ([see Note](#*OP)), string ) } \]
 
-\[ [INTERCID](parameter_intro/intercid)
+\[ [INTERCID](CFTUTIL/Parameter_index/intercid.htm)
 = string \]
 
-\[ [KEYEXT](parameter_intro/keyext) = { VERIFY | NONE } \]
+\[ [KEYEXT](CFTUTIL/Parameter_index/keyext.htm) = { VERIFY | NONE } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PASSW](parameter_intro/passw) = string \]
+\[ [PASSW](CFTUTIL/Parameter_index/passw.htm) = string \]
 
-\[ [ROOTCID](parameter_intro/rootcid)
+\[ [ROOTCID](CFTUTIL/Parameter_index/rootcid.htm)
 = ( string, string, …) \]
 
-\[ [TRACE](parameter_intro/trace)
+\[ [TRACE](CFTUTIL/Parameter_index/trace.htm)
 = { 0
 | n } \]
 
-\[ [USERCID](parameter_intro/usercid)
+\[ [USERCID](CFTUTIL/Parameter_index/usercid.htm)
 = string \]
 
-\[ [VERIFY](parameter_intro/verify)
+\[ [VERIFY](CFTUTIL/Parameter_index/verify.htm)
 = { NONE| REQUIRED
 | OPTIONAL } \] *\*When DIRECT=SERVER*
 
-\[ [VERIFY](parameter_intro/verify)
+\[ [VERIFY](CFTUTIL/Parameter_index/verify.htm)
 = { <u>NONE</u>| REQUIRED
 | ENFORCED | OPTIONAL } \] *\*When DIRECT=CLIENT *
 
-\[ [VERSION](parameter_intro/version)
+\[ [VERSION](CFTUTIL/Parameter_index/version.htm)
 = { <u>TLSV1</u>  | SSLV3 | TLSV1 | SSLV3COMP | TLSV1COMP} \]
 
-Note: <span id="*OP"></span>You can configure Transfer
+Note: <span id="OP"></span>You can configure Transfer
 CFT to accept or reject SSL connections based on logical operators used
-within the DN of the certificate. For details refer to [dnuser](parameter_intro/dnuser)
+within the DN of the certificate. For details refer to [dnuser](CFTUTIL/Parameter_index/dnuser.htm)
 parameter details.
 
-[CFTSSL details](../../transport_security_start_here/configuring_transport_security_start_here/transport_security_cftssl)
+[CFTSSL details](Security/Transport/Transport_security_CFTSSL.htm)
 
-[SSL/TLS security concepts](../../transport_security_start_here)
+[SSL/TLS security concepts](Security/Transport/transport_security_Start_here.htm)
 
 #### <span id="CFTTCP"></span>CFTTCP: Network parameters of a TCP/IP partner
 
 Syntax
 
-[HOST](parameter_intro/host)
+[HOST](CFTUTIL/Parameter_index/host.htm)
 = string
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier
 
-\[ [CLASS](parameter_intro/class)
+\[ [CLASS](CFTUTIL/Parameter_index/class.htm)
 = { 1
 | n } \]
 
-\[ [CNXIN](parameter_intro/cnxin)
+\[ [CNXIN](CFTUTIL/Parameter_index/cnxin.htm)
 = { 2
 | n } \]
 
-\[ [CNXINOUT](parameter_intro/cnxinout)
+\[ [CNXINOUT](CFTUTIL/Parameter_index/cnxinout.htm)
 = { 4
 | n } \]
 
-\[ [CNXOUT](parameter_intro/cnxout)
+\[ [CNXOUT](CFTUTIL/Parameter_index/cnxout.htm)
 = { 2
 | n } \]
 
-\[ [IMAXTIME](parameter_intro/imaxtime)
+\[ [IMAXTIME](CFTUTIL/Parameter_index/imaxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [IMINTIME](imintime.htm)
+\[ IMINTIME
 = { 0
 | time } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [OMAXTIME](parameter_intro/omaxtime)
+\[ [OMAXTIME](CFTUTIL/Parameter_index/omaxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [OMINTIME](parameter_intro/omintime)
+\[ [OMINTIME](CFTUTIL/Parameter_index/omintime.htm)
 = { 0
 | time } \]
 
-\[ [RETRYM](parameter_intro/retrym)
+\[ [RETRYM](CFTUTIL/Parameter_index/retrym.htm)
 = { 12
 | n } \]
 
-\[ [RETRYN](parameter_intro/retryn)
+\[ [RETRYN](CFTUTIL/Parameter_index/retryn.htm)
 = { 4
 | n } \]
 
-\[ [RETRYW](parameter_intro/retryw)
+\[ [RETRYW](CFTUTIL/Parameter_index/retryw.htm)
 = { 1
 | n } \]
 
-\[ [VERIFY](parameter_intro/verify)
+\[ [VERIFY](CFTUTIL/Parameter_index/verify.htm)
 = { 0
 | n } \]
 
 [TCP
-attributes for a partner](../../admin_intro/admin_config_commands/network_resource_concepts)
+attributes for a partner](GUI/Concepts/Network_resource_concepts.htm)
 
 #### <span id="CFTUIPREF"></span>CFTUIPREF MODE=mode
 
 MODE= { CREATE | <u>REPLACE</u> | DELETE }
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier  
 
-[TYPE](parameter_intro/type) = string
+[TYPE](CFTUTIL/Parameter_index/type.htm) = string
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { ACTIVE
 | FULL } \]
 
-\[ [ORIGIN](parameter_intro/origin) \] = string \]
+\[ [ORIGIN](CFTUTIL/Parameter_index/origin.htm) \] = string \]
 
 #### <span id="CFTXLATE"></span>CFTXLATE FNAME = filename: Define conversion tables
 
 Syntax
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = identifier  
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FCODE](parameter_intro/fcode)
+\[ [FCODE](CFTUTIL/Parameter_index/fcode.htm)
 = { '
 ' | ASCII | EBCDIC } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE } \]
 
-\[ [NCODE](parameter_intro/ncode)
+\[ [NCODE](CFTUTIL/Parameter_index/ncode.htm)
 = { '
 ' | ASCII | EBCDIC } \]
 
-\[ [ORIGIN](parameter_intro/origin) \] = string \]
+\[ [ORIGIN](CFTUTIL/Parameter_index/origin.htm) \] = string \]
 
-\[ [TABLE](table.htm) \] = string \]
+\[ TABLE \] = string \]
 
 [Conversion
-tables](../../concepts/cft_configuration_concepts_start_here/translation_table_concepts)
+tables](GUI/Concepts/Translation_table_concepts.htm)
 
 #### <span id="CLEARCMD"></span>CLEARCMD COMMAND = string: Delete a transfer request
 
 Syntax
 
-[USERID](parameter_intro/userid)
+[USERID](CFTUTIL/Parameter_index/userid.htm)
 = string
 
-[INDEX](parameter_intro/index2)
+[INDEX](CFTUTIL/Parameter_index/index2.htm)
 = number
 
-[CLEARCMD details](../about_cftutil/managing_transfer_states/clearcmd_command)
+[CLEARCMD details](Transfers/Transfer_states/CLEARCMD_command.htm)
 
 #### <span id="CONFIG"></span>CONFIG: Designate the communication medium and the files accessed by CFTUTIL
 
@@ -2607,7 +2605,7 @@ Syntax
 
 CONFIG TYPE = { CAT | INPUT | OUTPUT | PARM | PART }
 
-[FNAME](parameter_intro/fname) = filename
+[FNAME](CFTUTIL/Parameter_index/fname.htm) = filename
 
  
 
@@ -2615,7 +2613,7 @@ CONFIG TYPE = COM
 
 MEDIACOM = FILE
 
-[FNAME](parameter_intro/fname) = filename
+[FNAME](CFTUTIL/Parameter_index/fname.htm) = filename
 
  
 
@@ -2625,379 +2623,379 @@ TYPE = COM
 MEDIACOM
 = TCPIP
 
-[FNAME](parameter_intro/fname)= string
+[FNAME](CFTUTIL/Parameter_index/fname.htm)= string
 
-\[ [HIGHPORT](parameter_intro/highport)
+\[ [HIGHPORT](CFTUTIL/Parameter_index/highport.htm)
 =  { 65535
 | n } \]
 
-\[ [LOWPORT](parameter_intro/lowport)
+\[ [LOWPORT](CFTUTIL/Parameter_index/lowport.htm)
 = { 5000
 | n } \]
 
-\[ [PASSWORD](password.htm) = string } \]
+\[ PASSWORD = string } \]
 
 \[ PROXY
 = string \]
 
-\[ [ROOTCERT](parameter_intro/rootcert)
+\[ [ROOTCERT](CFTUTIL/Parameter_index/rootcert.htm)
 = string \]
 
-\[ [TIMEOUT](parameter_intro/timeout)
+\[ [TIMEOUT](CFTUTIL/Parameter_index/timeout.htm)
 = 60
 | n \]
 
-[Setting default CFTUTIL file names](../about_cftutil/redefining_cftutil_data_media)
+[Setting default CFTUTIL file names](CFTUTIL/Redefining_CFTUTIL_data_media.htm)
 
 #### <span id="COPYFILE"></span>COPYFILE IFNAME = filename: Copy files with an off-line compression or decompression option
 
 Syntax
 
-[OFNAME](parameter_intro/ofname)
+[OFNAME](CFTUTIL/Parameter_index/ofname.htm)
 = filename
 
-\[ [CREATE](parameter_intro/create)
+\[ [CREATE](CFTUTIL/Parameter_index/create.htm)
 = { ‘
 ‘ | YES | NO } \]
 
-\[ [IBLKSIZE](parameter_intro/iblksize)
+\[ [IBLKSIZE](CFTUTIL/Parameter_index/iblksize.htm)
 = { 0
 | n } \]
 
-\[ [ICHARSET](icharset.htm) = string \]
+\[ ICHARSET = string \]
 
-\[ [ICODE](parameter_intro/icode)
+\[ [ICODE](CFTUTIL/Parameter_index/icode.htm)
 = { ASCII | EBCDIC } \]
 
-\[ [ICOMP](parameter_intro/icomp)
+\[ [ICOMP](CFTUTIL/Parameter_index/icomp.htm)
 = { 0
 | 15 } \]
 
-\[ [ICT](parameter_intro/ict)
+\[ [ICT](CFTUTIL/Parameter_index/ict.htm)
 =  { H
 | C } \]
 
-\[ [ILRECL](parameter_intro/ilrecl)
+\[ [ILRECL](CFTUTIL/Parameter_index/ilrecl.htm)
 = { 0
 | n } \]
 
-\[ [IRECFM](parameter_intro/irecfm)
+\[ [IRECFM](CFTUTIL/Parameter_index/irecfm.htm)
 = { F | V | U } \]
 
-\[ [ITYPE](parameter_intro/itype)
+\[ [ITYPE](CFTUTIL/Parameter_index/itype.htm)
 = { ‘ ‘ | character } \]
 
-\[ [OBLKSIZE](parameter_intro/oblksize)
+\[ [OBLKSIZE](CFTUTIL/Parameter_index/oblksize.htm)
 = { 0 |n  }
 \]
 
-\[ [OCHARSET](ocharset.htm) = string \]
+\[ OCHARSET = string \]
 
-\[ [OCODE](parameter_intro/ocode)
+\[ [OCODE](CFTUTIL/Parameter_index/ocode.htm)
 = { ASCII | EBCDIC } \]
 
-\[ [OCOMP](parameter_intro/ocomp)
+\[ [OCOMP](CFTUTIL/Parameter_index/ocomp.htm)
 = { 0
 | 15 } \]
 
-\[ [OCT](parameter_intro/oct)
+\[ [OCT](CFTUTIL/Parameter_index/oct.htm)
 = { H | C } \]
 
-\[ [OLRECL](parameter_intro/olrecl)
+\[ [OLRECL](CFTUTIL/Parameter_index/olrecl.htm)
 = { 0
 |n } \]
 
-\[ [ORECFM](parameter_intro/orecfm)
+\[ [ORECFM](CFTUTIL/Parameter_index/orecfm.htm)
 = { IRECFM
 value | F | V| U } \]
 
-\[ [OSPACE](parameter_intro/ospace)
+\[ [OSPACE](CFTUTIL/Parameter_index/ospace.htm)
 = { 0
 | n } \]
 
-\[ [OTYPE](parameter_intro/otype)
+\[ [OTYPE](CFTUTIL/Parameter_index/otype.htm)
 = { ‘
 ‘ | character } \]
 
-\[ [XLATE](parameter_intro/xlate) = string \]
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm) = string \]
 
-[Copying files off-line](../../admin_intro/admin_commands_intro/copyfile_command)
+[Copying files off-line](CFTUTIL/Admin/COPYFILE_command.htm)
 
 #### <span id="DELETE"></span>DELETE PART = { identifier | mask }: Delete a catalog entry
 
 Syntax
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 =  { YES
 | NO
 } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier  \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { \*
 | C | D | H | K | T | X } \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
-[Deleting catalog entries](../../admin_intro/admin_commands_intro/delete_command)
+[Deleting catalog entries](Transfers/Transfer_states/DELETE_command.htm)
 
 #### <span id="DISPLAY"></span>DISPLAY \[ CONTENT = { listcat | identifier }\]: Display a model-formatted catalog
 
 Syntax
 
-\[ [DATETIMEMAX](parameter_intro/datetimemax) = { 0 | <u>991231235959</u> } \]
+\[ [DATETIMEMAX](CFTUTIL/Parameter_index/datetimemax.htm) = { 0 | <u>991231235959</u> } \]
 
-\[ [DATETIMEMIN](parameter_intro/datetimemin) = { <u>0</u> | 991231235959 } \]
+\[ [DATETIMEMIN](CFTUTIL/Parameter_index/datetimemin.htm) = { <u>0</u> | 991231235959 } \]
 
-\[ [DIAGI](parameter_intro/diagi) = { <u>\*</u> | 0 | ERROR } \]
+\[ [DIAGI](CFTUTIL/Parameter_index/diagi.htm) = { <u>\*</u> | 0 | ERROR } \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [EMPTY](parameter_intro/empty)
+\[ [EMPTY](CFTUTIL/Parameter_index/empty.htm)
 = { ANY
 | string } \]
 
-\[ [FILE](parameter_intro/file)
+\[ [FILE](CFTUTIL/Parameter_index/file.htm)
 = filename \]
 
-\[ [FMODEL](parameter_intro/fmodel)
+\[ [FMODEL](CFTUTIL/Parameter_index/fmodel.htm)
 =  string
 \]
 
-\[ [FOUT](parameter_intro/fout) = string \]
+\[ [FOUT](CFTUTIL/Parameter_index/fout.htm) = string \]
 
-\[ [HELP](parameter_intro/help)
+\[ [HELP](CFTUTIL/Parameter_index/help.htm)
 = { NONE
 | FIELDS | MODELS | COMMAND } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 =  string
 \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = string \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { ANY
 | COLUMN | LINE } \]
 
-\[ [NA](parameter_intro/na)
+\[ [NA](CFTUTIL/Parameter_index/na.htm)
 = { ANY
 | string } \]
 
-\[ [NIDT](nidt.htm) 
+\[ NIDT 
 = { string of 8 digits } \]
 
-\[ [NPART](parameter_intro/npart)
+\[ [NPART](CFTUTIL/Parameter_index/npart.htm)
 = string \]
 
-\[ [PART](parameter_intro/part)
+\[ [PART](CFTUTIL/Parameter_index/part.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SORTBY](parameter_intro/sortby)
+\[ [SORTBY](CFTUTIL/Parameter_index/sortby.htm)
 = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { \*
 | character } \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { \*
 | FILE | MESSAGE | REPLY | ALL } \]
 
-[Catalog output display model](../about_cftutil/monitoring_cftutil_intro/display_command)
+[Catalog output display model](CFTUTIL/Monitoring/DISPLAY_command.htm)
 
 #### <span id="END"></span>END PART = { identifier | mask }: Change transfer to X state
 
 Syntax
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [APPSTATE](appstate.htm)
+\[ APPSTATE
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [RPASSWD](parameter_intro/rpassw)
+\[ [RPASSWD](CFTUTIL/Parameter_index/rpassw.htm)
 = string \]
 
-\[ [SPASSWD](parameter_intro/spasswd)
+\[ [SPASSWD](CFTUTIL/Parameter_index/spasswd.htm)
 = string \]
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [DIAGC](diagc.htm) = string \]
+\[ DIAGC = string \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { NO
 | YES } \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](CFTUTIL/Parameter_index/fname.htm)
 = string \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [ISTATE](istate.htm) = { YES | <u>NO</u> } \]
+\[ ISTATE = { YES | <u>NO</u> } \]
 
-\[ [ISTATE](istate.htm)
+\[ ISTATE
 = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [NFNAME](parameter_intro/nfname)
+\[ [NFNAME](CFTUTIL/Parameter_index/nfname.htm)
 = string \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [PRI](parameter_intro/pri) Number { 0 - <u>256</u> } \]
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm) Number { 0 - <u>256</u> } \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
-\[ [SIGFNAME](parameter_intro/sigfname)
+\[ [SIGFNAME](CFTUTIL/Parameter_index/sigfname.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = string \]
 
-[END details](../about_cftutil/managing_transfer_states/end_command)
+[END details](Transfers/Transfer_states/END_command.htm)
 
 #### <span id="HALT"></span>HALT PART = { identifier | mask }: Suspend a transfer
 
 Syntax
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [DIAGC](diagc.htm) = string \]
+\[ DIAGC = string \]
 
-\[ [DIAGP](parameter_intro/diagp) = string \]
+\[ [DIAGP](CFTUTIL/Parameter_index/diagp.htm) = string \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { YES | NO
 } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier  \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier  \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string  \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
-[Halting a transfer](../about_cftutil/managing_transfer_states/halt_command)
+[Halting a transfer](Transfers/Transfer_states/HALT_command.htm)
 
 #### HELP
 
@@ -3013,187 +3011,187 @@ Syntax
 
 Syntax
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { BOTH
 | REQUESTER| SERVER } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { NO
 | YES } \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = PART
 | TRK | CRON | FOLDER \]
 
-[INACT details](../about_cftutil/reactivate_an_object_cl/inact_command)
+[INACT details](Transfers/Partners/INACT_command.htm)
 
 #### <span id="KEEP"></span>KEEP PART = { identifier | mask }: Abort a transfer
 
 Syntax
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = 0
 | n \]
 
-\[ [DIAGC](diagc.htm) = string \]
+\[ DIAGC = string \]
 
-\[ [DIAGP](parameter_intro/diagp) = string \]
+\[ [DIAGP](CFTUTIL/Parameter_index/diagp.htm) = string \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { YES
 | NO } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier  \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string  \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
- [Suspend transfers](../about_cftutil/managing_transfer_states/keep_command)
+ [Suspend transfers](Transfers/Transfer_states/KEEP_command.htm)
 
 #### <span id="KSTATE"></span>KSTATE IDF = identifier: Change a transfer state
 
 Syntax
 
-[IDTU](parameter_intro/idtu)
+[IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = local transfer counter identifier
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = partner identifier
 
-[KSTATE details](../about_cftutil/managing_transfer_states/kstate_command)
+[KSTATE details](Transfers/Transfer_states/KSTATE_command.htm)
 
 #### <span id="LISTCAT"></span>LISTCAT TYPE = { ALL | \* | FILE | MESSAGE | REPLY }: List catalog entries
 
 Syntax
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { BRIEF
 | FULL | DEBUG | EXTEND | COMMUT | STAT | BLKNUM } \]
 
-\[ [DATETIMEMAX](parameter_intro/datetimemax) = { 0 | <u>991231235959</u> } \]
+\[ [DATETIMEMAX](CFTUTIL/Parameter_index/datetimemax.htm) = { 0 | <u>991231235959</u> } \]
 
-\[ [DATETIMEMIN](parameter_intro/datetimemin) = { <u>0</u> | 991231235959 } \]
+\[ [DATETIMEMIN](CFTUTIL/Parameter_index/datetimemin.htm) = { <u>0</u> | 991231235959 } \]
 
-\[ [DIAGI](parameter_intro/diagi) = { <u>\*</u> | 0 | ERROR } \]
+\[ [DIAGI](CFTUTIL/Parameter_index/diagi.htm) = { <u>\*</u> | 0 | ERROR } \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FILE](parameter_intro/file)
+\[ [FILE](CFTUTIL/Parameter_index/file.htm)
 = filename \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = { \*
 | identifier } \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = { \*
 | identifier } \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string  \]
 
-\[ [NIDT](nidt.htm) 
+\[ NIDT 
 = { string of 8 digits } \]
 
-\[ [NPART](parameter_intro/npart)
+\[ [NPART](CFTUTIL/Parameter_index/npart.htm)
 = { identifier | mask } \]
 
-\[ [PART](parameter_intro/part)
+\[ [PART](CFTUTIL/Parameter_index/part.htm)
 = { \*
 | identifier | mask } \]
 
-\[ [SORTBY](parameter_intro/sortby)
+\[ [SORTBY](CFTUTIL/Parameter_index/sortby.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { \*
 | string } \]
 
- [LISTCAT details](../about_cftutil/monitoring_cftutil_intro/listcat_command)
+ [LISTCAT details](CFTUTIL/Monitoring/LISTCAT_command.htm)
 
 #### <span id="LISTCOM"></span>LISTCOM: Display contents of a communication media
 
 Syntax
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { ACTIVE
 | FULL } \]
 
-\[ [FILE](parameter_intro/file)
+\[ [FILE](CFTUTIL/Parameter_index/file.htm)
 = filename \]
 
-\[ [FIRST](first.htm)
+\[ FIRST
 = { 0
 | n } \]
 
-\[ [LAST](last.htm)
+\[ LAST
 = { 0
 | max. number of records } \]
 
-\[ [VERIFY](parameter_intro/verify)
+\[ [VERIFY](CFTUTIL/Parameter_index/verify.htm)
 = { NO
 | YES } \]
 
- [LISTCOM details](../about_cftutil/monitoring_cftutil_intro/listcom_command) 
+ [LISTCOM details](CFTUTIL/Monitoring/LISTCOM_command.htm) 
 
 #### <span id="LISTLOG"></span>LISTLOG: Display and filter log content including merged nodes in cluster mode
 
 Syntax
 
-\[ [LOGLEVEL](loglevel.htm) = { F | E | W | <u>I</u> } \]
+\[ LOGLEVEL = { F | E | W | <u>I</u> } \]
 
-\[ [LINES](lines.htm) = { -10000 | <u>-20</u> | 10000 } \]
+\[ LINES = { -10000 | <u>-20</u> | 10000 } \]
 
-\[ [DATEMAX](parameter_intro/datemin_datemax) = { 0 | <u>991231</u> } \]
+\[ [DATEMAX](CFTUTIL/Parameter_index/datemin_datemax.htm) = { 0 | <u>991231</u> } \]
 
-\[ [DATEMIN](parameter_intro/datemin_datemax) = { <u>0</u> | 991231 } \]
+\[ [DATEMIN](CFTUTIL/Parameter_index/datemin_datemax.htm) = { <u>0</u> | 991231 } \]
 
-\[ [DATETIMEMAX](parameter_intro/datetimemax) = { 0 | <u>99123123595999</u> } \]
+\[ [DATETIMEMAX](CFTUTIL/Parameter_index/datetimemax.htm) = { 0 | <u>99123123595999</u> } \]
 
-\[ [DATETIMEMIN](parameter_intro/datetimemin) { <u>0</u> | 99123123595999 } \]
+\[ [DATETIMEMIN](CFTUTIL/Parameter_index/datetimemin.htm) { <u>0</u> | 99123123595999 } \]
 
-\[ [TIMEMIN](timemin_timemax.htm) = { <u>0</u>| 23595999 } \]
+\[ TIMEMIN = { <u>0</u>| 23595999 } \]
 
-\[ [TIMEMAX](timemin_timemax.htm) = { 0 | <u>23595999</u> } \]
+\[ TIMEMAX = { 0 | <u>23595999</u> } \]
 
-\[ [PATTERN](pattern.htm) = string \]
+\[ PATTERN = string \]
 
-\[ [DISPLAYNODEID](displaynodeid.htm) = { <u>YES</u> | NO } \]
+\[ DISPLAYNODEID = { <u>YES</u> | NO } \]
 
 \[ NODE = string \]
 
@@ -3203,47 +3201,47 @@ Syntax
 
 No parameters
 
-[Multi-node commands](../../about_multinode/multi_node_commands)
+[Multi-node commands](multi_node/multi_node_commands.htm)
 
 #### <span id="LISTPARM"></span>LISTPARM: Display Transfer CFT partner details
 
 Syntax
 
-\[ [ID](parameter_intro/id)
+\[ [ID](CFTUTIL/Parameter_index/id.htm)
 = { \*
 | identifier } \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { FULL
 | BRIEF } \]
 
-\[ [PART](parameter_intro/part)
+\[ [PART](CFTUTIL/Parameter_index/part.htm)
 = identifier  \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { ACCNT | ALL
 | APPL | AUTH | CAT | COM | CRON | EXIT | IDF | LOG | NET | PARM | PROT
 | RECV | SEND | SSL | XLATE } \]
 
-[LISTPARM details](../about_cftutil/configuring_cft_start_here/listparm)
+[LISTPARM details](CFTUTIL/Monitoring/LISTPARM.htm)
 
 #### <span id="LISTPART"></span>LISTPART: Display partners
 
 Syntax
 
-\[ [ID](parameter_intro/id)
+\[ [ID](CFTUTIL/Parameter_index/id.htm)
 = { \*
 |identifier } \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { FULL
 | BRIEF } \]
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { ALL
 | DEST | PART | TCP | } \]
 
-[LISTPART details](../about_cftutil/configuring_cft_start_here/listpart_command)
+[LISTPART details](Transfers/Partners/LISTPART_command.htm)
 
 #### <span id="MQUERY"></span>MQUERY : Query one or more Transfer CFT components
 
@@ -3251,15 +3249,15 @@ Syntax
 
 OBJECT = CACHE
 
-\[ [OBJECT](parameter_intro/object)
+\[ [OBJECT](CFTUTIL/Parameter_index/object.htm)
 = { CACHE
 | SYSTEM | STATS | PROBE } \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { BRIEF
 | FULL | STAT } \]
 
-\[ [NAME](parameter_intro/name)
+\[ [NAME](CFTUTIL/Parameter_index/name.htm)
 = { CAT
 | COMMAND | CRON | DMZ | STAT } \]
 
@@ -3267,652 +3265,652 @@ OBJECT = CACHE
 
 OBJECT = SYSTEM
 
-\[ [OBJECT](parameter_intro/object)
+\[ [OBJECT](CFTUTIL/Parameter_index/object.htm)
 = { CACHE
 | SYSTEM | STATS | PROBE } \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { BRIEF
 | FULL | STAT } \]
 
-\[ [NAME](parameter_intro/name)
+\[ [NAME](CFTUTIL/Parameter_index/name.htm)
 = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN } \]
 
  
 
 OBJECT = STATS or PROBE
 
-\[ [OBJECT](parameter_intro/object)
+\[ [OBJECT](CFTUTIL/Parameter_index/object.htm)
 = { CACHE
 | SYSTEM | STATS | PROBE } \]
 
-\[ [CONTENT](parameter_intro/content)
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm)
 = { XMLBRIEF
 | XMLFULL | RAW } \]
 
-\[ [NAME](parameter_intro/name)
+\[ [NAME](CFTUTIL/Parameter_index/name.htm)
 = { CAT
 | COMMAND | CRON | DMZ | STAT } \]
 
- [MQUERY details](../../admin_intro/admin_commands_intro/querying_a_component_)
+ [MQUERY details](CFTUTIL/Querying_a_component_.htm)
 
 #### <span id="PURGE"></span>PURGE: Delete records from the catalog 
 
 Syntax
 
-\[ [TIMEP](parameter_intro/timep)
+\[ [TIMEP](CFTUTIL/Parameter_index/timep.htm)
 = { 23595999
 | time } \]
 
-[PURGE details](../../admin_intro/admin_commands_intro/purge_catalog)
+[PURGE details](CFTUTIL/Monitoring/Purge_catalog.htm)
 
 #### <span id="RECONFIG"></span>RECONFIG: Reload
 
 Syntax
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { CRON | UCONF | CAT | FOLDER | PARMCACHE | AM
 } \]
 
- [Manage configuration updates](../../admin_intro/admin_commands_intro/reconfig)
+ [Manage configuration updates](CFTUTIL/Monitoring/RECONFIG.htm)
 
 #### <span id="RECV"></span>RECV IDF = { identifier | mask }: Request to receive transfer
 
 Syntax
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier   
 
-\[ [ACKEXEC](parameter_intro/ackexec) = filename\]
+\[ [ACKEXEC](CFTUTIL/Parameter_index/ackexec.htm) = filename\]
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string  \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 =  date
  \]
 
-\[ [CYCLE](parameter_intro/cycle)
+\[ [CYCLE](CFTUTIL/Parameter_index/cycle.htm)
 =  { 0
 | n } \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = time \]
 
-\[ [DACTION](parameter_intro/daction) = { <u>ERROR</u> | RESUME } \]
+\[ [DACTION](CFTUTIL/Parameter_index/daction.htm) = { <u>ERROR</u> | RESUME } \]
 
-\[ [DIRNB](parameter_intro/dirnb)
+\[ [DIRNB](CFTUTIL/Parameter_index/dirnb.htm)
 = n \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [EXECRALL](execrall.htm) = { <u>all</u> | parent| children} \]
+\[ EXECRALL = { <u>all</u> | parent| children} \]
 
-\[ [EXIT](parameter_intro/exit)
+\[ [EXIT](CFTUTIL/Parameter_index/exit.htm)
 = identifier  \]
 
-\[ [FACC](parameter_intro/facc)
+\[ [FACC](CFTUTIL/Parameter_index/facc.htm)
 = { ‘
 ‘ | character }  \]
 
-\[ [FACTION](parameter_intro/faction)
+\[ [FACTION](CFTUTIL/Parameter_index/faction.htm)
 = { ‘
 ‘ | DELETE | ERASE | RENAME | VERIFY } \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = n \]
 
-\[ [FCODE](parameter_intro/fcode)
+\[ [FCODE](CFTUTIL/Parameter_index/fcode.htm)
 = { BINARY | EBCDIC | ASCII } \]
 
-\[ [FCOMP](parameter_intro/fcomp)
+\[ [FCOMP](CFTUTIL/Parameter_index/fcomp.htm)
 = { 0
 | 15 } \]
 
-\[ [FDATE](parameter_intro/fdate)
+\[ [FDATE](CFTUTIL/Parameter_index/fdate.htm)
 = { 0
 | date } \]
 
 \[ FDB
 = filename \]
 
-\[ [FDISP](parameter_intro/fdisp)
+\[ [FDISP](CFTUTIL/Parameter_index/fdisp.htm)
 = { BOTH
 | NEW | OLD }  \]
 
-\[ [FILE](parameter_intro/file)
+\[ [FILE](CFTUTIL/Parameter_index/file.htm)
 = { FIRST
 | ALL }  \]
 
-\[ [FKEYLEN](parameter_intro/fkeylen)
+\[ [FKEYLEN](CFTUTIL/Parameter_index/fkeylen.htm)
 = { 0
 | n }  \]
 
-\[ [FKEYPOS](parameter_intro/fkeypos)
+\[ [FKEYPOS](CFTUTIL/Parameter_index/fkeypos.htm)
 = { 0
 | n }   \]
 
-\[ [FLRECL](parameter_intro/flrec)
+\[ [FLRECL](CFTUTIL/Parameter_index/flrec.htm)
 = n \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](CFTUTIL/Parameter_index/fname.htm)
 = filename \]
 
-\[ [FORG](parameter_intro/forg)
+\[ [FORG](CFTUTIL/Parameter_index/forg.htm)
 = { SEQ
 | DIRECT | INDEXED | PART } \]
 
-\[ [FPAD](parameter_intro/fpad) = { <u>' '</u> | character } \]
+\[ [FPAD](CFTUTIL/Parameter_index/fpad.htm) = { <u>' '</u> | character } \]
 
-\[ [FRECFM](parameter_intro/frecfm)
+\[ [FRECFM](CFTUTIL/Parameter_index/frecfm.htm)
 = { ‘
 ‘ | F | V | U }  \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = n \]
 
-\[ [FTIME](parameter_intro/ftime)
+\[ [FTIME](CFTUTIL/Parameter_index/ftime.htm)
 = { 0 | time } \]
 
-\[ [FTYPE](parameter_intro/ftype)
+\[ [FTYPE](CFTUTIL/Parameter_index/ftype.htm)
 =  { ‘
 ‘ | character } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [MACTION](parameter_intro/maction)
+\[ [MACTION](CFTUTIL/Parameter_index/maction.htm)
 = { '
 ' | REPLACE }  \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 =  { 99991231
 | date } \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **{<u>0</u>...32767} \]
+\[ MAXDURATION = ** **{<u>0</u>...32767} \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time }  \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { current system date | date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [MODE](parameter_intro/mode)
+\[ [MODE](CFTUTIL/Parameter_index/mode.htm)
 = { REPLACE
 | CREATE | DELETE }  \]
 
-\[ [NCOMP](parameter_intro/ncomp)
+\[ [NCOMP](CFTUTIL/Parameter_index/ncomp.htm)
 = { 0
 | 15 } \]
 
-\[ [NETBAND](parameter_intro/netband) = { 1...16} \]
+\[ [NETBAND](CFTUTIL/Parameter_index/netband.htm) = { 1...16} \]
 
-\[ [NFNAME](parameter_intro/nfname)
+\[ [NFNAME](CFTUTIL/Parameter_index/nfname.htm)
 = filename \]
 
-\[ [NFVER](parameter_intro/nfver)
+\[ [NFVER](CFTUTIL/Parameter_index/nfver.htm)
 =  { 0
 | 255 } \]
 
-\[ [NIDF](parameter_intro/nidf)
+\[ [NIDF](CFTUTIL/Parameter_index/nidf.htm)
 = string \]
 
-\[ [NPAD](parameter_intro/npad) = { <u>' '</u> | character } \]
+\[ [NPAD](CFTUTIL/Parameter_index/npad.htm) = { <u>' '</u> | character } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = { 128
 | n } \]
 
-\[ [PROT](parameter_intro/prot) = identifier \]
+\[ [PROT](CFTUTIL/Parameter_index/prot.htm) = identifier \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SERIAL](parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
+\[ [SERIAL](CFTUTIL/Parameter_index/serial.htm) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH }  \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [WFNAME](parameter_intro/wfname)
+\[ [WFNAME](CFTUTIL/Parameter_index/wfname.htm)
 = filename \]
 
-\[ [WORKINGDIR](parameter_intro/workingdir) = string \]
+\[ [WORKINGDIR](CFTUTIL/Parameter_index/workingdir.htm) = string \]
 
-\[ [WSTATES](wstates.htm) = { string } \]
+\[ WSTATES = { string } \]
 
-\[ [WTIMEOUT](wtimeout.htm) = { integer } \]
+\[ WTIMEOUT = { integer } \]
 
-\[ [XLATE](parameter_intro/xlate)
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm)
 = identifier \]
 
-[Receiving files](../../concepts/c_recv)
+[Receiving files](Transfers/Recv_transfers/c_recv.htm)
 
 #### <span id="RESUME"></span>RESUME: Retrieves, in server mode, a blocked send request
 
 Syntax
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = string
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { SEND |RECV | BOTH
 } \]
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = { NO
 | YES } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = string \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = string \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = string \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
-[RESUME details](../about_cftutil/managing_transfer_states/resume_command)
+[RESUME details](Transfers/Subm_transfers/RESUME_command.htm)
 
  
 
 #### <span id="SEND"></span>SEND: Request to send transfer
 
-[<img src="transparent.gif" width="16" height="11" alt="Closed" />Syntax](javascript:void(0))
+[<img src="/Images/TransferCFT/transparent.gif" width="16" height="11" alt="Closed" />Syntax](javascript:void(0))
 
-[TYPE](parameter_intro/type)
+[TYPE](CFTUTIL/Parameter_index/type.htm)
 = FILE
 
-[IDF](parameter_intro/idf)
+[IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier  
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier
 
-\[ [ACKEXEC](parameter_intro/ackexec) = filename\]
+\[ [ACKEXEC](CFTUTIL/Parameter_index/ackexec.htm) = filename\]
 
-\[ [ACKMINDATE](ackmindate.htm) = date \]
+\[ ACKMINDATE = date \]
 
-\[ [ACKMINTIME](ackmintime.htm) = time \]
+\[ ACKMINTIME = time \]
 
-\[ [ACKSTATE](ackstate.htm) = { REQUIRE | IGNORE } \]
+\[ ACKSTATE = { REQUIRE | IGNORE } \]
 
-\[ [ACKTIMEOUT](acktimeout.htm) = { 0 | n }
+\[ ACKTIMEOUT = { 0 | n }
 \]
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [ARCHIVEFNAME](archivefname.htm) = string \]
+\[ ARCHIVEFNAME = string \]
 
-\[ [COMMENT](parameter_intro/comment)
+\[ [COMMENT](CFTUTIL/Parameter_index/comment.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = date \]
 
-\[ [CYCLE](parameter_intro/cycle)
+\[ [CYCLE](CFTUTIL/Parameter_index/cycle.htm)
 = { 0
 | n }  \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = time \]
 
-\[ [DACTION](parameter_intro/daction) = { <u>ERROR</u> | RESUME } \]
+\[ [DACTION](CFTUTIL/Parameter_index/daction.htm) = { <u>ERROR</u> | RESUME } \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [EXECSUB](parameter_intro/execsub)
+\[ [EXECSUB](CFTUTIL/Parameter_index/execsub.htm)
 = { LIST
 | FILE | SUBF } \]
 
-\[ [EXECSUBA](parameter_intro/execsuba) = {LIST | FILE | <u>SUBF</u> }\]
+\[ [EXECSUBA](CFTUTIL/Parameter_index/execsuba.htm) = {LIST | FILE | <u>SUBF</u> }\]
 
-\[ [EXIT](parameter_intro/exit)
+\[ [EXIT](CFTUTIL/Parameter_index/exit.htm)
 = identifier  \]
 
-\[ [FACC](parameter_intro/facc)
+\[ [FACC](CFTUTIL/Parameter_index/facc.htm)
 = { ‘ ‘ | character } \]
 
-\[ [FACTION](parameter_intro/faction)
+\[ [FACTION](CFTUTIL/Parameter_index/faction.htm)
 = { NONE
 | DELETE | ERASE | ARCHIVE } \]
 
-\[ [FBLKSIZE](parameter_intro/fblksize)
+\[ [FBLKSIZE](CFTUTIL/Parameter_index/fblksize.htm)
 = n \]
 
-\[ [FCODE](parameter_intro/fcode)
+\[ [FCODE](CFTUTIL/Parameter_index/fcode.htm)
 = { ASCII | BINARY | EBCDIC } \]
 
-\[ [FDATE](parameter_intro/fdate)
+\[ [FDATE](CFTUTIL/Parameter_index/fdate.htm)
 = date \]
 
 \[ FDB
 = filename \]
 
-\[ [FDISP](parameter_intro/fdisp)
+\[ [FDISP](CFTUTIL/Parameter_index/fdisp.htm)
 = { SHR
 | OLD | CHECK } \]
 
-\[ [FILTER](parameter_intro/filter) = string \]
+\[ [FILTER](CFTUTIL/Parameter_index/filter.htm) = string \]
 
-\[ [FILTERTYPE](parameter_intro/filtertype) = string \]
+\[ [FILTERTYPE](CFTUTIL/Parameter_index/filtertype.htm) = string \]
 
-\[ [FKEYLEN](parameter_intro/fkeylen)
+\[ [FKEYLEN](CFTUTIL/Parameter_index/fkeylen.htm)
 = { 0
 | n } \]
 
-\[ [FKEYPOS](parameter_intro/fkeypos)
+\[ [FKEYPOS](CFTUTIL/Parameter_index/fkeypos.htm)
 = { 0
 | n } \]
 
-\[ [FLRECL](parameter_intro/flrec)
+\[ [FLRECL](CFTUTIL/Parameter_index/flrec.htm)
 = n \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](CFTUTIL/Parameter_index/fname.htm)
  = { filename
 | mask | dirname | #filename | #mask | #dirname } \]
 
-\[ [FNAMEABS](fnameabs.htm)
+\[ FNAMEABS
 = { YES | NO }  \]
 
-\[ [FORG](parameter_intro/forg)
+\[ [FORG](CFTUTIL/Parameter_index/forg.htm)
 = { SEQ
 | DIRECT | INDEXED } \]
 
-\[ [FPAD](parameter_intro/fpad) = { <u>' '</u> | character } \]
+\[ [FPAD](CFTUTIL/Parameter_index/fpad.htm) = { <u>' '</u> | character } \]
 
-\[ [FRECFM](parameter_intro/frecfm)
+\[ [FRECFM](CFTUTIL/Parameter_index/frecfm.htm)
 = { ‘ ‘ | F | U | V }  \]
 
-\[ [FSPACE](parameter_intro/fspace)
+\[ [FSPACE](CFTUTIL/Parameter_index/fspace.htm)
 = n \]
 
-\[ [FTIME](parameter_intro/ftime)
+\[ [FTIME](CFTUTIL/Parameter_index/ftime.htm)
 = time  \]
 
-\[ [FTYPE](parameter_intro/ftype)
+\[ [FTYPE](CFTUTIL/Parameter_index/ftype.htm)
 =  { ‘ ‘
 | character } \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [IPART](parameter_intro/ipart)
+\[ [IPART](CFTUTIL/Parameter_index/ipart.htm)
 = identifier \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 = { 99991231
 | date } \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { current
 system date | date } \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **<u>0</u>...32767} \]
+\[ MAXDURATION = ** **<u>0</u>...32767} \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [NBLKSIZE](parameter_intro/nblksize)
+\[ [NBLKSIZE](CFTUTIL/Parameter_index/nblksize.htm)
 = n \]
 
-\[ [NCODE](parameter_intro/ncode)
+\[ [NCODE](CFTUTIL/Parameter_index/ncode.htm)
 = { ASCII | BINARY | EBCDIC } \]
 
-\[ [NCOMP](parameter_intro/ncomp)
+\[ [NCOMP](CFTUTIL/Parameter_index/ncomp.htm)
 = { 0 | 15 } \]
 
-\[ [NETBAND](parameter_intro/netband)
+\[ [NETBAND](CFTUTIL/Parameter_index/netband.htm)
 = { 1...16} \]
 
-\[ [NFNAME](parameter_intro/nfname)
+\[ [NFNAME](CFTUTIL/Parameter_index/nfname.htm)
 = filename \]
 
-\[ [NIDF](parameter_intro/nidf)
+\[ [NIDF](CFTUTIL/Parameter_index/nidf.htm)
 = string \]
 
-\[ [NKEYLEN](parameter_intro/nkeylen)
+\[ [NKEYLEN](CFTUTIL/Parameter_index/nkeylen.htm)
 = { 0
 | n } \]
 
-\[ [NKEYPOS](parameter_intro/nkeypos)
+\[ [NKEYPOS](CFTUTIL/Parameter_index/nkeypos.htm)
 = { 0
 | n }\]
 
-\[ [NLRECL](parameter_intro/nlrecl)
+\[ [NLRECL](CFTUTIL/Parameter_index/nlrecl.htm)
 = n  \]
 
-\[ [NPAD](parameter_intro/npad) = { <u>' '</u> | character } \]
+\[ [NPAD](CFTUTIL/Parameter_index/npad.htm) = { <u>' '</u> | character } \]
 
-\[ [NRECFM](parameter_intro/nrecfm)
+\[ [NRECFM](CFTUTIL/Parameter_index/nrecfm.htm)
 = { ‘
 ‘ | F | U | V } \]
 
-\[ [NSPACE](parameter_intro/nspace)
+\[ [NSPACE](CFTUTIL/Parameter_index/nspace.htm)
 = { FSPACE
 value | n } \]
 
-\[ [NTYPE](parameter_intro/ntype)
+\[ [NTYPE](CFTUTIL/Parameter_index/ntype.htm)
 = { ' ' | character } \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](CFTUTIL/Parameter_index/parm.htm)
 = string \]
 
-\[ [PRESTATE](parameter_intro/prestate) = { ' ' | character } \]
+\[ [PRESTATE](CFTUTIL/Parameter_index/prestate.htm) = { ' ' | character } \]
 
-\[ [PREMINDATE](parameter_intro/premindate) = date \]
+\[ [PREMINDATE](CFTUTIL/Parameter_index/premindate.htm) = date \]
 
-\[ [PREMINTIME](parameter_intro/premintime) = time \]
+\[ [PREMINTIME](CFTUTIL/Parameter_index/premintime.htm) = time \]
 
-\[ [PRETIMEOUT](parameter_intro/pretimeout) = { 0 | n } \]
+\[ [PRETIMEOUT](CFTUTIL/Parameter_index/pretimeout.htm) = { 0 | n } \]
 
-\[ [POSTMINDATE](parameter_intro/postmindate) = date \]
+\[ [POSTMINDATE](CFTUTIL/Parameter_index/postmindate.htm) = date \]
 
-\[ [POSTMINTIME](parameter_intro/postmintime) = time \]
+\[ [POSTMINTIME](CFTUTIL/Parameter_index/postmintime.htm) = time \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = { 128
 | n } \]
 
-\[ [PROT](parameter_intro/prot) = identifier \]
+\[ [PROT](CFTUTIL/Parameter_index/prot.htm) = identifier \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SELFNAME](parameter_intro/selfname)
+\[ [SELFNAME](CFTUTIL/Parameter_index/selfname.htm)
  = filename
 \]
 
-\[ [SERIAL](parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
+\[ [SERIAL](CFTUTIL/Parameter_index/serial.htm) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [SPART](parameter_intro/spart)
+\[ [SPART](CFTUTIL/Parameter_index/spart.htm)
 = identifier \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [WORKINGDIR](parameter_intro/workingdir) = string \]
+\[ [WORKINGDIR](CFTUTIL/Parameter_index/workingdir.htm) = string \]
 
-\[ [WPHASES](wphases.htm) = { string } \]
+\[ WPHASES = { string } \]
 
-\[ [WPHASESTEPS](wphasesteps.htm) = { string } \]
+\[ WPHASESTEPS = { string } \]
 
-\[ [WSTATES](wstates.htm) = { string } \]
+\[ WSTATES = { string } \]
 
-\[ [WTIMEOUT](wtimeout.htm) = { integer } \]
+\[ WTIMEOUT = { integer } \]
 
-\[ [XLATE](parameter_intro/xlate)
+\[ [XLATE](CFTUTIL/Parameter_index/xlate.htm)
 = identifier \]
 
  
 
 SEND TYPE = MESSAGE  
 
-[IDM](parameter_intro/idm)
+[IDM](CFTUTIL/Parameter_index/idm.htm)
 = identifier  
 
-[MSG](parameter_intro/msg)
+[MSG](CFTUTIL/Parameter_index/msg.htm)
 = string   
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = date \]
 
-\[ [CYCLE](parameter_intro/cycle)
+\[ [CYCLE](CFTUTIL/Parameter_index/cycle.htm)
 = { 0
 | n } \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = time \]
 
-\[ [DACTION](parameter_intro/daction) = { ERROR | RESUME} \]
+\[ [DACTION](CFTUTIL/Parameter_index/daction.htm) = { ERROR | RESUME} \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [IPART](parameter_intro/ipart)
+\[ [IPART](CFTUTIL/Parameter_index/ipart.htm)
 = identifier \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 = { 99991231
 | date  }
 \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time }  \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { current
 system date | date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = pri  \]
 
-\[ [PROT](parameter_intro/prot) = identifier \]
+\[ [PROT](CFTUTIL/Parameter_index/prot.htm) = identifier \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SPART](parameter_intro/spart)
+\[ [SPART](CFTUTIL/Parameter_index/spart.htm)
 = identifier \]
 
-\[ [STATE](parameter_intro/state)
+\[ [STATE](CFTUTIL/Parameter_index/state.htm)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
@@ -3920,75 +3918,75 @@ system date | date } \]
 
 SEND TYPE = REPLY
 
-[IDM](parameter_intro/idm)
+[IDM](CFTUTIL/Parameter_index/idm.htm)
 = identifier
 
-[IDT](parameter_intro/idu)
+[IDT](CFTUTIL/Parameter_index/idu.htm)
 = transid  
 
-[MSG](parameter_intro/msg)
+[MSG](CFTUTIL/Parameter_index/msg.htm)
 = string   
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = date \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = time \]
 
-\[ [EXEC](parameter_intro/exec) = filename \]
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm) = filename \]
 
-\[ [IDA](parameter_intro/ida) = identifier \]
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm) = identifier \]
 
-\[ [IPART](parameter_intro/ipart)
+\[ [IPART](CFTUTIL/Parameter_index/ipart.htm)
 = string \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 =  { 99991231
 | date } \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { current
 system date | date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = pri \]
 
-\[ [PROT](parameter_intro/prot) = identifier \]
+\[ [PROT](CFTUTIL/Parameter_index/prot.htm) = identifier \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
@@ -3996,266 +3994,266 @@ system date | date } \]
 
 SEND TYPE = NACK
 
-[IDM](parameter_intro/idm)
+[IDM](CFTUTIL/Parameter_index/idm.htm)
 = identifier
 
-[IDT](parameter_intro/idu)
+[IDT](CFTUTIL/Parameter_index/idu.htm)
 = transid  
 
-[MSG](parameter_intro/msg)
+[MSG](CFTUTIL/Parameter_index/msg.htm)
 = string   
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = identifier
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](CFTUTIL/Parameter_index/appcycid.htm)
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](CFTUTIL/Parameter_index/appobjid.htm)
 = string \]
 
-\[ [CYCDATE](parameter_intro/cycdate)
+\[ [CYCDATE](CFTUTIL/Parameter_index/cycdate.htm)
 = date \]
 
-\[ [CYCTIME](parameter_intro/cyctime)
+\[ [CYCTIME](CFTUTIL/Parameter_index/cyctime.htm)
 = time \]
 
-\[ [EXEC](parameter_intro/exec) = filename \]
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm) = filename \]
 
-\[ [IDA](parameter_intro/ida) = identifier \]
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm) = identifier \]
 
-\[ [IPART](parameter_intro/ipart)
+\[ [IPART](CFTUTIL/Parameter_index/ipart.htm)
 = string \]
 
-\[ [MAXDATE](parameter_intro/maxdate)
+\[ [MAXDATE](CFTUTIL/Parameter_index/maxdate.htm)
 =  { 99991231
 | date } \]
 
-\[ [MAXTIME](parameter_intro/maxtime)
+\[ [MAXTIME](CFTUTIL/Parameter_index/maxtime.htm)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](parameter_intro/mindate)
+\[ [MINDATE](CFTUTIL/Parameter_index/mindate.htm)
 = { current
 system date | date } \]
 
-\[ [MINTIME](parameter_intro/mintime)
+\[ [MINTIME](CFTUTIL/Parameter_index/mintime.htm)
 = { 0
 | time } \]
 
-\[ [PRI](parameter_intro/pri)
+\[ [PRI](CFTUTIL/Parameter_index/pri.htm)
 = pri \]
 
-\[ [PROT](parameter_intro/prot) = identifier \]
+\[ [PROT](CFTUTIL/Parameter_index/prot.htm) = identifier \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](CFTUTIL/Parameter_index/rappl.htm)
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](CFTUTIL/Parameter_index/ruser.htm)
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](CFTUTIL/Parameter_index/sappl.htm)
 = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](CFTUTIL/Parameter_index/suser.htm)
 = string \]
 
-\[ [TCYCLE](parameter_intro/tcycle)
+\[ [TCYCLE](CFTUTIL/Parameter_index/tcycle.htm)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](parameter_intro/trk)
+\[ [TRK](CFTUTIL/Parameter_index/trk.htm)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-[Sending files](../../concepts/using_the_send_command/send_command_basics)
+[Sending files](Transfers/Subm_transfers/SEND_command_basics.htm)
 
 #### <span id="SHUT"></span>SHUT: Shut down Transfer CFT 
 
 Syntax
 
-\[ [FAST](parameter_intro/fast)
+\[ [FAST](CFTUTIL/Parameter_index/fast.htm)
 = { NO
 | YES | KILL } \]
 
-\[ [RESTART](parameter_intro/restart) = { YES | NO } \]
+\[ [RESTART](CFTUTIL/Parameter_index/restart.htm) = { YES | NO } \]
 
-[Manage the Transfer CFT server: stop the server](../../admin_intro/start_stop_cft)
+[Manage the Transfer CFT server: stop the server](../admin_intro/start_stop_cft)
 
 #### <span id="START"></span>START: Restart transfer
 
 Syntax
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = { identifier | mask }   
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [FORCE](parameter_intro/force)
+\[ [FORCE](CFTUTIL/Parameter_index/force.htm)
 = YES | NO
 \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \*
 | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **{<u>0</u>...32767} \]
+\[ MAXDURATION = ** **{<u>0</u>...32767} \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-\[ [SCOPE](parameter_intro/scope) = string \]
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm) = string \]
 
-[Restart transfers](../about_cftutil/managing_transfer_states/start_command)
+[Restart transfers](Transfers/Transfer_states/START_command.htm)
 
 #### <span id="SUBMIT"></span>SUBMIT: Submit end-of-transfer procedure
 
 Syntax
 
-[PART](parameter_intro/part)
+[PART](CFTUTIL/Parameter_index/part.htm)
 = { identifier | mask }  
 
-\[ [APPSTATE](appstate.htm) =
+\[ APPSTATE =
 string \]
 
-\[ [BLKNUM](parameter_intro/blknum)
+\[ [BLKNUM](CFTUTIL/Parameter_index/blknum.htm)
 = { 0
 | n } \]
 
-\[ [DIRECT](parameter_intro/direct)
+\[ [DIRECT](CFTUTIL/Parameter_index/direct.htm)
 = { BOTH
 | RECV | SEND } \]
 
-\[ [EXEC](parameter_intro/exec)
+\[ [EXEC](CFTUTIL/Parameter_index/exec.htm)
 = filename \]
 
-\[ [IDA](parameter_intro/ida)
+\[ [IDA](CFTUTIL/Parameter_index/ida.htm)
 = identifier \]
 
-\[ [IDF](parameter_intro/idf)
+\[ [IDF](CFTUTIL/Parameter_index/idf.htm)
 = identifier \]
 
-\[ [IDT](parameter_intro/idu)
+\[ [IDT](CFTUTIL/Parameter_index/idu.htm)
 = { \* | transid } \]
 
-\[ [IDTU](parameter_intro/idtu)
+\[ [IDTU](CFTUTIL/Parameter_index/idtu.htm)
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](CFTUTIL/Parameter_index/state.htm) = string \]
 
-\[ [KDATE](kdate.htm)
+\[ KDATE
 = { 0
 | n } \]
 
-\[ [KTIME](ktime.htm)
+\[ KTIME
 = { 0
 | n } \]
 
-\[ [PHASE](phase.htm) = string \]
+\[ PHASE = string \]
 
-\[ [PHASESTEP](phasestep.htm) = string \]
+\[ PHASESTEP = string \]
 
-[SUBMIT details](../about_cftutil/managing_transfer_states/submit_command)
+[SUBMIT details](Transfers/Transfer_states/SUBMIT_command.htm)
 
 #### <span id="SWAITCAT"></span>SWAITCAT: Wait for a transfer state update
 
 Syntax
 
-[SELECT](parameter_intro/select)
+[SELECT](CFTUTIL/Parameter_index/select.htm)
 = expression
 
-\[ [PHASES](parameter_intro/phases)  = string \]
+\[ [PHASES](CFTUTIL/Parameter_index/phases.htm)  = string \]
 
-\[ [PHASESTEPS](parameter_intro/phasesteps) = string \]
+\[ [PHASESTEPS](CFTUTIL/Parameter_index/phasesteps.htm) = string \]
 
-\[ [STATED](stated.htm) = string \]
+\[ STATED = string \]
 
-\[ [STATES](parameter_intro/states)
+\[ [STATES](CFTUTIL/Parameter_index/states.htm)
 = string \]
 
-\[ [TIMEOUT](parameter_intro/timeout)
+\[ [TIMEOUT](CFTUTIL/Parameter_index/timeout.htm)
 = integer \]
 
-[SWAITCAT concepts](../about_cftutil/managing_transfer_states/swaitcat_concepts) 
+[SWAITCAT concepts](CFTUTIL/Admin/SWAITCAT_concepts.htm) 
 
-[SWAITCAT examples](../about_cftutil/managing_transfer_states/sync_transfer_request_tasks)
+[SWAITCAT examples](CFTUTIL/Admin/Sync_transfer_request_tasks.htm)
 
 #### <span id="SWITCH"></span>SWITCH: Manually switch LOG or ACCNT files 
 
 Syntax
 
-\[ [TYPE](parameter_intro/type)
+\[ [TYPE](CFTUTIL/Parameter_index/type.htm)
 = { LOG | ACCNT } \]
 
-[SWITCH details](../../admin_intro/admin_commands_intro/switching_files_manually)
+[SWITCH details](CFTUTIL/Monitoring/Switching_files_manually.htm)
 
-[Toggle
-log or accounting file](switching_log_files.htm)
+Toggle
+log or accounting file
 
 #### <span id="UCONFSET"></span>UCONFSET: configuration utility
 
 Syntax
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = string  
 
-\[ [VALUE](parameter_intro/value)
+\[ [VALUE](CFTUTIL/Parameter_index/value.htm)
 = {string} \]
 
-[UCONF details](../../admin_intro/uconf/uconf_commands)
+[UCONF details](administration/admin_uconf/uconf_commands.htm)
 
 #### <span id="UCONFGET"></span>UCONFGET
 
 Syntax
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = string
 
-[UCONF details](../../admin_intro/uconf/uconf_commands)
+[UCONF details](administration/admin_uconf/uconf_commands.htm)
 
 #### <span id="LISTUCONF"></span>LISTUCONF
 
 Syntax
 
-[ID](parameter_intro/id)
+[ID](CFTUTIL/Parameter_index/id.htm)
 = string  
 
-\[ [CONTENT](parameter_intro/content) = BRIEF | FULL \]
+\[ [CONTENT](CFTUTIL/Parameter_index/content.htm) = BRIEF | FULL \]
 
-\[ [FOUT](parameter_intro/fout) = string \]
+\[ [FOUT](CFTUTIL/Parameter_index/fout.htm) = string \]
 
-\[ [SCOPE](parameter_intro/scope)
+\[ [SCOPE](CFTUTIL/Parameter_index/scope.htm)
 = { INSTANCE | SET | \* | ALL } \]  
 
-\[ [VALUE](parameter_intro/value) = string \]
+\[ [VALUE](CFTUTIL/Parameter_index/value.htm) = string \]
 
-[](../../admin_intro/uconf/uconf_commands)
+[](administration/admin_uconf/uconf_commands.htm)
 
 UCONF details
 
@@ -4263,28 +4261,28 @@ UCONF details
 
 Syntax
 
-\[ [DURING](parameter_intro/during)
+\[ [DURING](CFTUTIL/Parameter_index/during.htm)
 = { 0
 | n } \]    \*Time
 in seconds
 
-\[ [TIME](parameter_intro/time)
+\[ [TIME](CFTUTIL/Parameter_index/time.htm)
 = { 0
 | 23595999 } \]
 
-[Suspending CFTUTIL execution](../about_cftutil/wait_command)
+[Suspending CFTUTIL execution](CFTUTIL/WAIT_command.htm)
 
 #### <span id="WLOG"></span>WLOG: Request to write a message in the LOG file
 
 Syntax
 
-[MSG](parameter_intro/msg)
+[MSG](CFTUTIL/Parameter_index/msg.htm)
 = string
 
 SEVERITY =
 string
 
-[WLOG details](../../admin_intro/admin_commands_intro/wlog)
+[WLOG details](CFTUTIL/Monitoring/WLOG.htm)
 
 ### <span id="Syntax_conventions"></span>Syntax conventions
 
@@ -4310,7 +4308,7 @@ general conventions.
 -   , A comma separates
     a list of parameter values
 
-For more information, see [TYPOGRAPHICAL CONVENTIONS.](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)
+For more information, see [TYPOGRAPHICAL CONVENTIONS.](CFTUTIL/Parameter_index/typographical_conventions.htm)
 
 ### Symbolic variables
 
@@ -4328,7 +4326,7 @@ environment:
 
 For information on using symbolic variables in Transfer
 CFT, refer to the topic [Symbolic
-variables](symbolic_variables).
+variables](CFTUTIL/Parameter_index/symbolic_variables.htm).
 
 ### Filename usage
 
@@ -4378,7 +4376,7 @@ Note: Use the @ symbol in a UNIX environment in place
 of the # symbol.
 
 For more information on filename conventions, refer
-to [Filename conventions](filename_conventions).
+to [Filename conventions](CFTUTIL/Parameter_index/Filename_conventions.htm).
 
 ## <span id="About_UCONF"></span>Using UCONF
 
@@ -4422,5 +4420,5 @@ file. Do not modify this file.
 
 For example: cft.working\_dir = $(cft.runtime\_dir)
 
-The [UCONF](../../admin_intro/uconf) table lists the new UCONF
+The [UCONF](uconf/UCONF.htm) table lists the new UCONF
 identifiers, the default values, and the former file values.

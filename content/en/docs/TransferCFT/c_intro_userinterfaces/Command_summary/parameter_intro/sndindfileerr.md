@@ -16,6 +16,6 @@ Parameter values:
 -   ABORT: If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200, and no other child requests are created.
 
 See [Sending
-a group of files](../../../../concepts/using_the_send_command/send_group_of_files_cl)
+a group of files](../../../concepts/using_the_send_command/send_group_of_files_cl)
 
-[Return to Command index](../../)
+[Return to Command index](../)

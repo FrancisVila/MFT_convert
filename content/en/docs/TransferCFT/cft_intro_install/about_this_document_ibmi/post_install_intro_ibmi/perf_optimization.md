@@ -21,7 +21,7 @@ Update the subsystem values as follows:
     2.  Press **Enter** to confirm.
     3.  Press **F5** to update the screen display.
 
-![](ibmi_subsystems.png)
+![](/Images/TransferCFT/ibmi_subsystems.png)
 
 ## How to determine the **Max Act** values
 

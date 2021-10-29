@@ -1,5 +1,5 @@
 {
-    "title": "External access management  (RACF)",
+    "title": "Install with security",
     "linkTitle": "External access management  (RACF)",
     "weight": "280"
 }To protect its objects, Transfer CFT uses the SAF interface (System Authorization Facility) on z/OS platforms to address authorization requests to an ESM, such as RACF. Transfer CFT does not perform any checks itself, and accepts the ESM decision. Before implementing specific protection, you must protect any Transfer CFT objects that the operating system recognizes from a file, an operator command, or program protection mechanisms.
@@ -23,11 +23,11 @@ Level 2: corresponds to level 1 with an additional program-based control of acce
 When running under Central Governance, the access management is automatically set to am.type=passport. If you want to use external access management, RACF, you must manually modify this value after registering with Central Governance using the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL UCONFSET id=am.type, value=internal</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL UCONFSET id=am.type, value=internal         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Installation prerequisites
@@ -59,24 +59,24 @@ Once the H83SAFDA job is adapted, use this job to create groups and the Transfer
     After adapting the security system values in the A03PARM member, you must execute the A00CUSTO job again.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p><code>**************************************************************</code></p>
-<p><code>*   New parameters for RACF (or SAF enabled) control of Transfer CFT.</code></p>
-<p><code>*   These definitions are not used in the base installation.</code></p>
-<p><code>*   You must read the “Transfer CFT Installing z/OS Security” </code></p>
-<p><code>*   before changing the following values:</code></p>
-<p><code>**************************************************************</code></p>
-<p><code>  grpcft   'grpcft'               CFT administrator SAF group</code></p>
-<p><code>  grpmon   'grpmon'               CFT monitor SAF group</code></p>
-<p><code>  grpaprm  'grpaprm'              all parameter access SAF group</code></p>
-<p><code>  grpfprm  'grpfprm'              PARM and PART access SAF group</code></p>
-<p><code>  grpdesk  'grpdesk'              CFT help desk SAF group</code></p>
-<p><code>  grptrf   'grptrf'               CFT transfer SAF group</code></p>
-<p><code>  userdef  'userdef'              default CFTRECV userid</code></p>
-<p><code>  safcftcl 'safcftcl'             SAF class for CFT profiles     </code></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><code>**************************************************************</code></p>
+            <p><code>*   New parameters for RACF (or SAF enabled) control of Transfer CFT.</code></p>
+            <p><code>*   These definitions are not used in the base installation.</code></p>
+            <p><code>*   You must read the “Transfer CFT Installing z/OS Security” </code></p>
+            <p><code>*   before changing the following values:</code></p>
+            <p><code>**************************************************************</code></p>
+            <p><code>  grpcft   'grpcft'               CFT administrator SAF group</code></p>
+            <p><code>  grpmon   'grpmon'               CFT monitor SAF group</code></p>
+            <p><code>  grpaprm  'grpaprm'              all parameter access SAF group</code></p>
+            <p><code>  grpfprm  'grpfprm'              PARM and PART access SAF group</code></p>
+            <p><code>  grpdesk  'grpdesk'              CFT help desk SAF group</code></p>
+            <p><code>  grptrf   'grptrf'               CFT transfer SAF group</code></p>
+            <p><code>  userdef  'userdef'              default CFTRECV userid</code></p>
+            <p><code>  safcftcl 'safcftcl'             SAF class for CFT profiles     </code></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Security system installation procedure
@@ -86,65 +86,65 @@ When the general resource class (safcftcl) is applied by RACF, the authorized us
 #### Security system installation procedures
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Job</p></th>
-<th><p>Installation procedure</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>H84SAFDF</p></td>
-<td><p>Creates RACF general resource CFT profiles</p></td>
-</tr>
-<tr class="even">
-<td><p>H85SAFPR</p></td>
-<td><p>Executes RACF PERMIT commands</p></td>
-</tr>
-<tr class="odd">
-<td><p>H86SAFCR</p></td>
-<td><p>Creates the LOADMAIN library and SECINI file</p></td>
-</tr>
-<tr class="even">
-<td><p>H87SECEN</p></td>
-<td><p>Creates dictionaries, actions and objects</p></td>
-</tr>
-<tr class="odd">
-<td><p>H88INIT</p></td>
-<td><p>Creates CFT files with the security system enabled (replacing D40INIT)</p></td>
-</tr>
-<tr class="even">
-<td><p>H88PARM</p></td>
-<td><p>Edits the parameter file (adds CFTAPPL)</p></td>
-</tr>
-<tr class="odd">
-<td><p>H89SAFAS</p></td>
-<td><p>Creates CFT file protection profiles with PADS (upgrades from security level 1 to level 2)</p></td>
-</tr>
-<tr class="even">
-<td><p>H89SAFAU</p></td>
-<td><p>Sample allowing certain users to modify parameters and/or perform transfers</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Job</p></th>
+         <th>            <p>Installation procedure</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>H84SAFDF</p>         </td>
+         <td>            <p>Creates RACF general resource CFT profiles</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H85SAFPR</p>         </td>
+         <td>            <p>Executes RACF PERMIT commands</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>H86SAFCR</p>         </td>
+         <td>            <p>Creates the LOADMAIN library and SECINI file</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H87SECEN</p>         </td>
+         <td>            <p>Creates dictionaries, actions and objects</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>H88INIT</p>         </td>
+         <td>            <p>Creates CFT files with the security system enabled (replacing D40INIT)</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H88PARM</p>         </td>
+         <td>            <p>Edits the parameter file (adds CFTAPPL)</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>H89SAFAS</p>         </td>
+         <td>            <p>Creates CFT file protection profiles with PADS (upgrades from security level 1 to level 2)</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H89SAFAU</p>         </td>
+         <td>            <p>Sample allowing certain users to modify parameters and/or perform transfers</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Delete security definitions
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Job</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>H89SAFDD</p></td>
-<td><p>Used to delete the RACF definitions created by the H84SAFDF job.</p></td>
-</tr>
-<tr class="even">
-<td><p>H89SAFDS</p></td>
-<td><p>Used to delete the RACF definitions created by the H89SAFAS job.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Job</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>H89SAFDD</p>         </td>
+         <td>            <p>Used to delete the RACF definitions created by the H84SAFDF job.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H89SAFDS</p>         </td>
+         <td>            <p>Used to delete the RACF definitions created by the H89SAFAS job.</p>         </td>
+      </tr>
+   </tbody>
 </table>

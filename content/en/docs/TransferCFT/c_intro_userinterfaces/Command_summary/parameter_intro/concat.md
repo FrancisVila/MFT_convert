@@ -15,4 +15,4 @@ data entity (default = yes).
 -   In receiver mode, Transfer CFT accepts
     the concatenated FPDUs regardless of the value of this parameter
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -12,4 +12,4 @@ len}\]
 This field indicates the number of records
 field of the file to be sent.
 
-[Return to Command index](../../)
+[Return to Command index](../)

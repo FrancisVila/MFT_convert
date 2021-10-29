@@ -1,17 +1,17 @@
 {
-    "title": "REST API",
+    "title": " Transfer CFT REST API concepts",
     "linkTitle": "REST API",
     "weight": "290"
 }This section describes how to use REST API to automate access to Transfer CFT resources. Available resources include administration, configuring, transferring files, and viewing the log and catalog (create, modify, view and delete transfers).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The REST API server only accepts HTTPS connections.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The REST API server only accepts HTTPS connections.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Audience

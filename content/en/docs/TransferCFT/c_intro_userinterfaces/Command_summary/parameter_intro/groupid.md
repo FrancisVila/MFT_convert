@@ -19,4 +19,4 @@ The value to enter depends on the operating system.
 
 Identifier for a group of users.
 
-[Return to Command index](../../)
+[Return to Command index](../)

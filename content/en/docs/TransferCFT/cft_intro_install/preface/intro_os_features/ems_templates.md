@@ -9,13 +9,13 @@ In this chapter, event-message tokens and their values are represented in DDL. F
 For general information on how an application obtains event messages from a subsystem, refer to the EMS Manual.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Event messages format
@@ -25,36 +25,36 @@ Transfer CFT Guardian events were also available in the previous 2.3 version, wi
 All messages have the following tokens:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Token</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ZSPI-TKN-SSID</td>
-<td><p>The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual.</p></td>
-</tr>
-<tr class="even">
-<td>ZEMS-TKN-EVENTNUMBER</td>
-<td><p>The event number, as described in the EMS Manual. Its value is one of the values described in the table below.</p></td>
-</tr>
-<tr class="odd">
-<td>XCF2_TKN_SUBJ</td>
-<td><p>The message subject for which the values are described in the Event messages table below.</p></td>
-</tr>
-<tr class="even">
-<td>XCF2_TKN_MSG</td>
-<td><p>The message text.</p>
-<p>For details about Transfer CFT LOG messages, see the <span>Transfer CFT</span> <span>3.9</span>  <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.</p>
-<p>The accounting messages are binary coded data, and are described in the exacct.h header.</p></td>
-</tr>
-<tr class="odd">
-<td>ZEMS_TKN_EMPHASIS</td>
-<td>If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Token</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>ZSPI-TKN-SSID         </td>
+         <td>            <p>The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>ZEMS-TKN-EVENTNUMBER         </td>
+         <td>            <p>The event number, as described in the EMS Manual. Its value is one of the values described in the table below.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>XCF2_TKN_SUBJ         </td>
+         <td>            <p>The message subject for which the values are described in the Event messages table below.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>XCF2_TKN_MSG         </td>
+         <td>            <p>The message text.</p>
+            <p>For details about Transfer CFT LOG messages, see the <span>Transfer CFT</span> <span>3.9</span>  <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.</p>
+            <p>The accounting messages are binary coded data, and are described in the exacct.h header.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>ZEMS_TKN_EMPHASIS         </td>
+         <td>If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Event messages
@@ -62,40 +62,40 @@ Event messages
 The following table shows the relationship between the event, the subject, and the message type.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Event number</th>
-<th>EMS subject</th>
-<th>Event type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>4</td>
-<td>CFT INFO LOG</td>
-<td>Log information message</td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td>CFT WARN LOG</td>
-<td>Log warning message</td>
-</tr>
-<tr class="odd">
-<td>6</td>
-<td>CFT ERR LOG</td>
-<td>Log error message</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td>CFT FAIL LOG</td>
-<td>Log failure message</td>
-</tr>
-<tr class="odd">
-<td>8</td>
-<td>CFT ACCOUNT</td>
-<td>Account<span> message</span></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Event number</th>
+         <th>EMS subject</th>
+         <th>Event type</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>4         </td>
+         <td>CFT INFO LOG         </td>
+         <td>Log information message         </td>
+      </tr>
+      <tr class="even">
+         <td>5         </td>
+         <td>CFT WARN LOG         </td>
+         <td>Log warning message         </td>
+      </tr>
+      <tr class="odd">
+         <td>6         </td>
+         <td>CFT ERR LOG         </td>
+         <td>Log error message         </td>
+      </tr>
+      <tr class="even">
+         <td>7         </td>
+         <td>CFT FAIL LOG         </td>
+         <td>Log failure message         </td>
+      </tr>
+      <tr class="odd">
+         <td>8         </td>
+         <td>CFT ACCOUNT         </td>
+         <td>Account<span> message</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Activate event log messages
@@ -113,13 +113,13 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
     -   For example, Operating error messages=16, System error messages=32, Operating fatal error messages=64, System fatal error messages=128 giving a total of 240
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Refer to the Transfer CFT <span>3.9</span> <em>Users Guide</em>, available on the <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm">documentation portal</a>, for a description of the CFTLOG object parameters.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Refer to the Transfer CFT <span>3.9</span> <em>Users Guide</em>, available on the <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm">documentation portal</a>, for a description of the CFTLOG object parameters.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example**
@@ -127,18 +127,18 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 In the Transfer CFT configuration:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftlog id = log0,</p>
-<p>…</p>
-<p>fname= ' log/cftlog',</p>
-<p>afname= ' log/cftalog',</p>
-<p>notify= '$COL',</p>
-<p>opermsg= 240,</p>
-<p>….</p>
-<p> </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftlog id = log0,</p>
+            <p>…</p>
+            <p>fname= ' log/cftlog',</p>
+            <p>afname= ' log/cftalog',</p>
+            <p>notify= '$COL',</p>
+            <p>opermsg= 240,</p>
+            <p>….</p>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Activate event accounting messages
@@ -153,12 +153,12 @@ Once defined, you can activate and link the object to the CFTPARM as shown in th
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTACCNT ID=ACCNT1, TYPE=FILE, FNAME=$COL,...,MODE=REPLACE</p>
-<p>CFTPARM ID=IDPARM0,...,ACCNT=ACCNT1,MODE=REPLACE</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTACCNT ID=ACCNT1, TYPE=FILE, FNAME=$COL,...,MODE=REPLACE</p>
+            <p>CFTPARM ID=IDPARM0,...,ACCNT=ACCNT1,MODE=REPLACE</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Transfer CFT EMS

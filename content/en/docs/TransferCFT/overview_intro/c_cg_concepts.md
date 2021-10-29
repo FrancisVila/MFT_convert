@@ -16,16 +16,16 @@ Central Governance offers the following key features:
 
 The following diagram illustrates a simplified view of the Central Governance architecture.
 
-![High level view of Central Governance layer over a group of Transfer CFTs](2013_g_CG_architecture_draft1.png)
+![High level view of Central Governance layer over a group of Transfer CFTs](/Images/TransferCFT/2013_g_CG_architecture_draft1.png)
 
 You can deploy a single Central Governance instance with one computer per network. The system supports active/passive resiliency, and can bring another instance of Central Governance online if the primary fails.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Flow Manager offers services that are similar to <span>Central Governance</span>, but with the addition of predefined templates and API functionality in a container setting.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Flow Manager offers services that are similar to <span>Central Governance</span>, but with the addition of predefined templates and API functionality in a container setting.         </td>
+      </tr>
+   </tbody>
 </table>

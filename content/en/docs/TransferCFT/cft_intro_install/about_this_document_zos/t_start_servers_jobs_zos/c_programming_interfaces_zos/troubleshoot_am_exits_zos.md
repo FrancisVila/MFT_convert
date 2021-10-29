@@ -1,5 +1,5 @@
 {
-    "title": "Troubleshoot AM exits",
+    "title": "Troubleshoot and example definitions",
     "linkTitle": "Troubleshoot AM exits",
     "weight": "310"
 }## Common mistakes

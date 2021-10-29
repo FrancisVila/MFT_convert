@@ -1,10 +1,8 @@
 {
-    "title": "Filename conventions",
+    "title": "Filename  conventions",
     "linkTitle": "Filename conventions",
     "weight": "190"
-}# <span id="Filename_conventions"></span>Filename conventions
-
-This topic
+}This topic
 provides examples of filenames, and file naming conventions.
 
 ## Unauthorized characters
@@ -15,13 +13,13 @@ The following characters are system-restricted characters:
 -   Windows: /\\:\*?"&lt;&gt;
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You can use the <span>$</span> character on UNIX systems as an environment variable. To have a file created when the name includes one or more <span>$</span> characters (without resolving the environment variable), see the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <span>cft.unix.throw_error_on_envvar_not_found</span> variable.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You can use the <span>$</span> character on UNIX systems as an environment variable. To have a file created when the name includes one or more <span>$</span> characters (without resolving the environment variable), see the <a href="../../admin_intro/uconf/uconf_directory">UCONF</a> <span>cft.unix.throw_error_on_envvar_not_found</span> variable.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Naming the local file to be sent FNAME=filename
@@ -68,7 +66,7 @@ corresponds to your OS.
 
 ### Reconstitute a filename
 
-A filename can be composed of different elements, such as the unit, path, root, and suffix. When transferring a file between disparate systems, you can use symbolic variables to reconstruct the original filename at the receiving end. See [Symbolic variables](../symbolic_variables) for details.
+A filename can be composed of different elements, such as the unit, path, root, and suffix. When transferring a file between disparate systems, you can use symbolic variables to reconstruct the original filename at the receiving end. See [Symbolic variables](symbolic_variables) for details.
 
 ### Specific case of the &NFNAME symbolic variable (PeSIT CFT/CFT)
 
@@ -78,15 +76,15 @@ case, the physical filename proposed by the receiver requester partner
 can be taken into account at each transfer.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the file sent corresponds exactly to the one the partner
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When the file sent corresponds exactly to the one the partner
 requested (FNAME= &amp;NFNAME), this corresponds to the open operating
-mode.</td>
-</tr>
-</tbody>
+mode.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Sending of a file with versions (z/OS)
@@ -96,45 +94,45 @@ the relative name is converted into an absolute name in different stages
 as shown in the following table.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Version</th>
-<th>Parameter</th>
-<th>Conversion to an absolute name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-mc-conditions="">
-<td data-mc-conditions="" data-valign="top" width="15%"><p>CFTSEND </p></td>
-<td data-mc-conditions="" data-valign="top" width="31%"><p>0 or -n </p></td>
-<td data-mc-conditions="" data-valign="top" width="24%"><p>IMPL=YES </p></td>
-<td data-mc-conditions="" data-valign="top" width="30%"><p>at the start of the transfer </p></td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td data-mc-conditions="" data-valign="top" width="15%"><p> </p></td>
-<td data-mc-conditions="" data-valign="top" width="31%"><p> </p></td>
-<td data-mc-conditions="" data-valign="top" width="24%"><p>IMPL=NO </p></td>
-<td data-mc-conditions="" data-valign="top" width="30%"><p>when the request is placed in the catalog </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="15%"><p>SEND </p></td>
-<td data-valign="top" width="31%"><ul>
-<li>be 0
-or -n</li>
-<li>specific
-case of z/OS (MVS) (1)</li>
-</ul></td>
-<td data-valign="top" width="24%"><p>FNAMEABS=YES </p></td>
-<td data-valign="top" width="30%"><p>when the request is placed in the catalog </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="15%"><p> </p></td>
-<td data-valign="top" width="31%"><p> </p></td>
-<td data-valign="top" width="24%"><p>FNAMEABS=NO </p></td>
-<td data-valign="top" width="30%"><p>at the start of the transfer </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Command</th>
+         <th>Version</th>
+         <th>Parameter</th>
+         <th>Conversion to an absolute name</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-mc-conditions="">
+         <td data-mc-conditions="" data-valign="top" width="15%">            <p>CFTSEND </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="31%">            <p>0 or -n </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="24%">            <p>IMPL=YES </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="30%">            <p>at the start of the transfer </p>         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td data-mc-conditions="" data-valign="top" width="15%">            <p> </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="31%">            <p> </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="24%">            <p>IMPL=NO </p>         </td>
+         <td data-mc-conditions="" data-valign="top" width="30%">            <p>when the request is placed in the catalog </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="15%">            <p>SEND </p>         </td>
+         <td data-valign="top" width="31%">            <ul>
+               <li>be 0
+or -n               </li>
+               <li>specific
+case of z/OS (MVS) (1)               </li>
+            </ul>         </td>
+         <td data-valign="top" width="24%">            <p>FNAMEABS=YES </p>         </td>
+         <td data-valign="top" width="30%">            <p>when the request is placed in the catalog </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="15%">            <p> </p>         </td>
+         <td data-valign="top" width="31%">            <p> </p>         </td>
+         <td data-valign="top" width="24%">            <p>FNAMEABS=NO </p>         </td>
+         <td data-valign="top" width="30%">            <p>at the start of the transfer </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 \(1\) the version number may be 0 or
@@ -147,14 +145,14 @@ Example of a file with versions. The notation of the version of the file in the 
 the same as the last notation used in the JCL.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>//ST1 EXEC PGM=USER<br />
+   <tbody>
+      <tr class="odd">
+         <td>//ST1 EXEC PGM=USER<br />
 //DD1 DD DSN=FIL(-1)<br />
 //ST4 EXEC PGM=CFTUTIL<br />
-   SEND     FNAME=FIL(-1)</td>
-</tr>
-</tbody>
+   SEND     FNAME=FIL(-1)         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Filename__listing_a_directory"></span>Listing a directory: filename
@@ -165,11 +163,11 @@ provides an example of how to list a directory.
 Example of listing a directory
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME={dirname | mask}</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME={dirname | mask}         </td>
+      </tr>
+   </tbody>
 </table>
 
 The name specified can be a generic file name or a directory name. It
@@ -217,7 +215,7 @@ If the files are sent to a different type of site, a generic entry is
 created in the catalog, along with one transfer entry for each file selected.
 
 For more information, see [Broadcasting: Sending
-a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).
+a set of files with the same IDF in send mode](../../concepts/transfer_command_overview/broadcast_collect).
 
 ### <span id="Sending_a_group_of_specified_files__filename"></span>Sending a group of specified files: filename
 
@@ -226,11 +224,11 @@ section provides an example of sending a group of files, the names of which
 are listed in the specified file:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>FNAME=#filename</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>FNAME=#filename         </td>
+      </tr>
+   </tbody>
 </table>
 
 The specified name is the full name of a physical file, containing the
@@ -245,20 +243,20 @@ character specific to each system. In most environments, the ‘#’ symbol
 is used.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Refer to the table of <a href="platform_specific_characters_and_functions.htm">platform-specific characters</a> that corresponds to your operating system.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Refer to the table of platform-specific characters that corresponds to your operating system.         </td>
+      </tr>
+   </tbody>
 </table>
 
 A catalog entry is created for each file. Each file is transferred in
 the same way as any other file.
 
 For more information, see [Broadcasting: Sending
-a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).
+a set of files with the same IDF in send mode](../../concepts/transfer_command_overview/broadcast_collect).
 
 Additionally, when sending a group of files:
 

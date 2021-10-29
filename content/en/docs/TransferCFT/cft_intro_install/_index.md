@@ -1,5 +1,5 @@
 {
-    "title": "Installation (allOS)",
+    "title": "Transfer CFT: Install, update, upgrade or migrate",
     "linkTitle": "Installation (allOS)",
     "weight": "60"
 }The Transfer CFT installation and migration documentation provides instructions for installing, upgrading, migrating, and deploying your Transfer CFT, and includes the following information:

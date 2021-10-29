@@ -14,11 +14,11 @@
 1.  Define the CFTSSL PARM fields or ROOTCID/USERCID fields.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A SAF PKI implementation in <span>Transfer CFT</span> requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">A SAF PKI implementation in <span>Transfer CFT</span> requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.         </td>
+      </tr>
+   </tbody>
 </table>

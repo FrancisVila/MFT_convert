@@ -1,5 +1,5 @@
 {
-    "title": "Store and forward broadcasts",
+    "title": "Broadcasting on a store and forward site",
     "linkTitle": "Store and forward broadcasts",
     "weight": "300"
 }This section describes how to use a partner broadcasting list with store and forward.
@@ -8,7 +8,7 @@ To broadcast a file from a store and forward site:
 
 -   The initial sender must define a virtual partner with an ID that corresponds to the CFTDEST ID command managed on the store and forward site. Set the CFTPART's OMINTIME and OMAXTIME to zero to force routing to the intermediate partner (IPART). The SEND PART=ID, ... command sends the file to broadcast.
 -   You must have a CFTDEST command with the ID set to the network name of the broadcasting list indicated by the initial partner (SEND PART=ID).
--   You can use FOR=COMMUT as described in the [FOR](../../../c_intro_userinterfaces/command_summary/parameter_intro/for) parameter.
+-   You can use FOR=COMMUT as described in the [FOR](../../c_intro_userinterfaces/command_summary/parameter_intro/for) parameter.
 -   The final receivers know the initial file sender and the store and forward partner (relay).
 -   The CFTPART connections must comply with network nodes.
 
@@ -21,13 +21,13 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).         </td>
+      </tr>
+   </tbody>
 </table>
 
 On the final receiver site: the CFT monitor receives the same application parameters as those indicated for a simple transfer in “store and forward” mode. The store and forward site does not affect the transfer mode (open or closed).
@@ -45,63 +45,63 @@ This example shows a broadcast store and forward from the initiator A to relay B
 On the initiating site A, define:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl</p>
-<p>cftpart id=b,nspart=a,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host=@B</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl</p>
+            <p>cftpart id=b,nspart=a,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host=@B</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Set up the intermediate partner B as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=a,nspart=b,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=a,host=@A</p>
-<p> </p>
-<p>cftpart id=c,nspart=b,prot=pesitssl,sap=31762</p>
-<p>cfttcp id=c,host=@C</p>
-<p> </p>
-<p>cftpart id=d,nspart=b,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=d,host=@D</p>
-<p> </p>
-<p>cftdest id=cd,part=(c,d),for=commut</p>
-<p> </p>
-<p>cftappl id=commut,userid=&amp;userid,groupid=&amp;groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=a,nspart=b,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=a,host=@A</p>
+            <p> </p>
+            <p>cftpart id=c,nspart=b,prot=pesitssl,sap=31762</p>
+            <p>cfttcp id=c,host=@C</p>
+            <p> </p>
+            <p>cftpart id=d,nspart=b,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=d,host=@D</p>
+            <p> </p>
+            <p>cftdest id=cd,part=(c,d),for=commut</p>
+            <p> </p>
+            <p>cftappl id=commut,userid=&amp;userid,groupid=&amp;groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Execute the following partner C definition:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=b,nspart=c,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host= @B</p>
-<p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
-<p> </p>
-<p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=b,nspart=c,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host= @B</p>
+            <p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
+            <p> </p>
+            <p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Execute the following partner D definition:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>cftpart id=b,nspart=d,prot=pesitssl,sap=1762</p>
-<p>cfttcp id=b,host=@B</p>
-<p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
-<p> </p>
-<p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>
-<p> </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cftpart id=b,nspart=d,prot=pesitssl,sap=1762</p>
+            <p>cfttcp id=b,host=@B</p>
+            <p>cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete</p>
+            <p> </p>
+            <p>cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762</p>
+            <p> </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Testing the use case
@@ -109,11 +109,11 @@ Testing the use case
 From the initiator site A, execute:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>send part=cd,idf=broadcast,fname=pub/FTEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>send part=cd,idf=broadcast,fname=pub/FTEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Broadcast list acknowledgements

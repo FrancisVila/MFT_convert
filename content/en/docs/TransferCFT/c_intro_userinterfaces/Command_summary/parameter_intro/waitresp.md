@@ -26,4 +26,4 @@ written in the log and the Transfer CFT initialization stops.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

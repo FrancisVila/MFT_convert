@@ -1,10 +1,8 @@
 {
-    "title": "Model and physical file concepts",
+    "title": "Model and Physical file concepts",
     "linkTitle": "Model and physical file concepts",
     "weight": "250"
-}# <span id="Model_and_Physical_file_concepts"></span>Model and Physical file concepts
-
-This topic introduces the concepts of Model File Identifiers, IDF, and
+}This topic introduces the concepts of Model File Identifiers, IDF, and
 Physical Files.
 
 ### Types of transfers modes
@@ -53,7 +51,7 @@ following figure.
 
 **File transfer mode**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="491" height="484" />
+<img src="/Images/TransferCFT/File_transfer_mode.gif" width="491" height="484" />
 
 The processes described in this topic are only applicable for file transfers (sending
 or receiving).
@@ -132,12 +130,12 @@ type of transfer:
 **Implementing a sender/requester transfer
 (write) - Explicit parameter setting**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="796" height="158" />
+<img src="/Images/TransferCFT/Imp_send_rec_write_explicit.gif" width="796" height="158" />
 
 Implementing a sender/requester transfer
 (write) - Default parameter setting
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="796" height="150" />
+<img src="/Images/TransferCFT/Impl_send_rec_write_default.gif" width="796" height="150" />
 
 #### Implementing a Receiver/Requester Transfer
 
@@ -207,12 +205,12 @@ implemented at the server end.
 **Implementing
 a read transfer with locked for sending at the server end**
 
-![](Check_partner_authorizd_send_reqd_IDF.gif)
+![](/Images/TransferCFT/Read_transfer_locked_send_servr.gif)
 
 **Implementing
 a read transfer with implicit send at the server end**
 
-![](Check_partner_authorizd_send_reqd_IDF.gif)
+![](/Images/TransferCFT/Read_transfer_w_implicit_send_servr.gif)
 
 ### File locations
 
@@ -269,14 +267,14 @@ of a RECV command identified by an EXPLICIT IDF unlocks the FIRST transfer
 at the server end.  
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot use this option in implicit send mode, as the implicit send mode is defined using a parameter setting command with
-a unique identifier.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot use this option in implicit send mode, as the implicit send mode is defined using a parameter setting command with
+a unique identifier.         </td>
+      </tr>
+   </tbody>
 </table>
 
 To facilitate the use of the facility, the monitor provides the possibility
@@ -330,7 +328,7 @@ partner.
 **Example of receiving a set of files with
 the same IDF**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="846" height="377" />
+<img src="/Images/TransferCFT/receive_set_of_files_with_the_same_IDF.gif" width="846" height="377" />
 
 #### Sending a Set of Files with the Same IDF in Sender Mode
 
@@ -364,7 +362,7 @@ associated with the text file type on your system.
 
 **Example listing a remote directory**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="696" height="369" />
+<img src="/Images/TransferCFT/listing_remote_directory.gif" width="696" height="369" />
 
 ### Request to receive several model files
 
@@ -376,15 +374,15 @@ at the requester end:
     a character string and a wildcard character at the end of this string
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This wildcard character is specific to each system ; in the rest of
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This wildcard character is specific to each system ; in the rest of
 this manual it is generically designated by the character ‘*’. Such an
-IDF value is called a mask and is referred to as &lt;mask&gt;.</td>
-</tr>
-</tbody>
+IDF value is called a mask and is referred to as &lt;mask&gt;.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   *Selective
@@ -420,7 +418,7 @@ Y... , the first transfer pending.
 **Example of the first transfer pending
 unlocked by Transfer CFT**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="828" height="384" />
+<img src="/Images/TransferCFT/First_tx_pending_unlocked_by_CFT.gif" width="828" height="384" />
 
 #### Selective Reception
 
@@ -457,50 +455,50 @@ variables:
 **Example of selective reception using a
 generic IDF**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="837" height="378" />
+<img src="/Images/TransferCFT/select_reception_generic_IDF.gif" width="837" height="378" />
 
 #### Global Receptions
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="43%"><p><strong>ODETTE, PeSIT D CFT profile,
-PeSIT E</strong> </p></td>
-<td data-valign="top" width="57%"><p>Available only with the protocols mentioned above. </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="43%">            <p><strong>ODETTE, PeSIT D CFT profile,
+PeSIT E</strong> </p>         </td>
+         <td data-valign="top" width="57%">            <p>Available only with the protocols mentioned above. </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This mechanism allows the requester to receive all the files pending
 at the server end.
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="34%"><p><strong>ODETTE</strong> </p></td>
-<td data-valign="top" width="66%"><p>Only the following receive command is valid:<br />
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="34%">            <p><strong>ODETTE</strong> </p>         </td>
+         <td data-valign="top" width="66%">            <p>Only the following receive command is valid:<br />
 RECV IDF = *<br />
 Although sequencing is at the sender’s initiative, the receiver end catalog
 will contain a record corresponding to the global reception request and
 a record for each reception, in the same way as for the other protocols.
 This command provides the possibility to change direction and hence globally
-receive all the files pending at the remote partner end. </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="34%"><p><strong>PeSIT D CFT profile</strong> </p></td>
-<td data-valign="top" width="66%"><p>To activate a reception from a requester <span>Transfer CFT</span> to
+receive all the files pending at the remote partner end. </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="34%">            <p><strong>PeSIT D CFT profile</strong> </p>         </td>
+         <td data-valign="top" width="66%">            <p>To activate a reception from a requester <span>Transfer CFT</span> to
 a server monitor, only the following commands are valid:<br />
-RECV IDF = * and RECV IDF = *, FILE = ALL</p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="34%"><p><strong>PeSIT D CFT profile, PeSIT
-E</strong> </p></td>
-<td data-valign="top" width="66%"><p>Possible between two <span>Transfer CFT</span>s, using one of these
+RECV IDF = * and RECV IDF = *, FILE = ALL</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="34%">            <p><strong>PeSIT D CFT profile, PeSIT
+E</strong> </p>         </td>
+         <td data-valign="top" width="66%">            <p>Possible between two <span>Transfer CFT</span>s, using one of these
 two protocols.<br />
 Between two CFTs, this is a special case of selective reception, the command
-being RECV IDF = *, FILE = ALL </p></td>
-</tr>
-</tbody>
+being RECV IDF = *, FILE = ALL </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Protection of the model file identifier
@@ -515,7 +513,7 @@ following figure.
 
 **IDF sending protection**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="729" height="440" />
+<img src="/Images/TransferCFT/IDF_send_protection.gif" width="729" height="440" />
 
 Similarly, when a RECV command is activated, Transfer CFT checks that
 the sending partner is authorized to send the requested IDF.
@@ -526,7 +524,7 @@ indicated in the following figure.
 **Checking that a partner is authorized
 to send the requested IDF**
 
-<img src="Check_partner_authorizd_send_reqd_IDF.gif" width="729" height="440" />
+<img src="/Images/TransferCFT/Check_partner_authorizd_send_reqd_IDF.gif" width="729" height="440" />
 
  
 

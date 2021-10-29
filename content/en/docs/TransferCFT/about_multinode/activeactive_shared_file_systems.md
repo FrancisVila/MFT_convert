@@ -1,5 +1,5 @@
 {
-    "title": "Using a shared file system ",
+    "title": "Using a shared file system  ",
     "linkTitle": "Using a shared file system ",
     "weight": "220"
 }## <span id="Active_active_mode_shared_file_systems_..4"></span><span id="Active_active_mode_shared_file_systems"></span>Active/active mode shared file systems
@@ -7,13 +7,13 @@
 In a multi-node context, a shared file system allows multiple applications to access the same files at the same time. Two typical shared file system implementations are NAS (network attached storage) and SAN (storage area network). This section describes GPFS, NFSv4, AWS EFS, and SMB/CIFS as they pertain to Transfer CFT multi-node installations.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span>, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Transfer CFT</span>, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Using_GPFS_..5"></span><span id="Using_GPFS"></span>Using GPFS
@@ -31,12 +31,12 @@ The recommendations in this section apply to a Transfer CFT multi-node, multi-h
 
 To implement active/active Transfer CFT you must use NFSv4 for the Transfer CFT runtime directory, which contains internal data such as the catalog, log, communication file, etc. Other versions of NFS are not supported for the runtime directory. For file exchanges, you can use either NFSv4 or v3. NFSv3 is not described in this document.
 
--   [Required NFSv4 mount options](#required)
--   [Mount options summary](#mount) 
--   [Synchronous / asynchronous option impact](#impact)
--   [Tuning NFSv4 locking for node failover](#tuning)
--   [Perform a NAS failover](#perform)
--   [Troubleshoot an NFS lock daemon issue](#troubles)
+-   [Required NFSv4 mount options](#Required)
+-   [Mount options summary](#Mount) 
+-   [Synchronous / asynchronous option impact](#Impact)
+-   [Tuning NFSv4 locking for node failover](#Tuning)
+-   [Perform a NAS failover](#Perform)
+-   [Troubleshoot an NFS lock daemon issue](#Troubles)
 
 ### <span id="Define_NFS_as_the_shared_file_system_..8"></span><span id="Define_NFS_as_the_shared_file_system"></span>Define NFS as the shared file system
 
@@ -68,42 +68,42 @@ NFS implements a weak data consistency called "Close To Open consistency" or cto
 The following table summarizes the recommended NFSv4 mount options. Note that depending on the OS platform, only one of the three locking options should be available.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Correct option</th>
-<th>Incorrect option</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>vers=4 (or nfsvers=4)</td>
-<td>not specified or value &lt;= 4</td>
-</tr>
-<tr class="even">
-<td>hard (default)</td>
-<td>"soft" specified</td>
-</tr>
-<tr class="odd">
-<td>nointr (not the default)</td>
-<td>"intr" specified</td>
-</tr>
-<tr class="even">
-<td>llock not specified</td>
-<td>"llock" specified</td>
-</tr>
-<tr class="odd">
-<td>lock (default)</td>
-<td>"nolock" specified</td>
-</tr>
-<tr class="even">
-<td>local_lock=none (default)</td>
-<td>any other value specified</td>
-</tr>
-<tr class="odd">
-<td>cto (default)</td>
-<td>"nocto" specified</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Correct option</th>
+         <th>Incorrect option</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>vers=4 (or nfsvers=4)         </td>
+         <td>not specified or value &lt;= 4         </td>
+      </tr>
+      <tr class="even">
+         <td>hard (default)         </td>
+         <td>"soft" specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>nointr (not the default)         </td>
+         <td>"intr" specified         </td>
+      </tr>
+      <tr class="even">
+         <td>llock not specified         </td>
+         <td>"llock" specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>lock (default)         </td>
+         <td>"nolock" specified         </td>
+      </tr>
+      <tr class="even">
+         <td>local_lock=none (default)         </td>
+         <td>any other value specified         </td>
+      </tr>
+      <tr class="odd">
+         <td>cto (default)         </td>
+         <td>"nocto" specified         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Synchronous_versus_asynchronous_option_..15"></span><span id="Synchronous_versus_asynchronous_option"></span>Synchronous versus asynchronous option
@@ -143,58 +143,58 @@ This possible data corruption is not detectable at the time of occurrence, becau
 Enables replies to requests only after the changes have been committed to stable storage.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information on these options, refer to <em>NFS mount and export options</em> in the UNIX man pages (for example, <a href="http://man7.org/linux/man-pages/man5/nfs.5.html">here</a>).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information on these options, refer to <em>NFS mount and export options</em> in the UNIX man pages (for example, <a href="http://man7.org/linux/man-pages/man5/nfs.5.html">here</a>).         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Synchronous___asynchronous_option_impact_..22"></span><span id="Synchronous___asynchronous_option_impact"></span><span id="Impact"></span>Synchronous / asynchronous option impact
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Client</th>
-<th>Server</th>
-<th>Internal data</th>
-<th>Transferable data</th>
-<th>Performance</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Sync</td>
-<td>Sync</td>
-<td>1</td>
-<td>1</td>
-<td>Low</td>
-</tr>
-<tr class="even">
-<td>Sync</td>
-<td>Async</td>
-<td>2 (secure the NFS server)</td>
-<td>2 (secure the NFS server)</td>
-<td>Medium</td>
-</tr>
-<tr class="odd">
-<td>Async</td>
-<td>Sync</td>
-<td>1 (if cft.server.catalog.<br />
-sync.enable=Yes)</td>
-<td>1 (when using sync points)</td>
-<td>Medium - high</td>
-</tr>
-<tr class="even">
-<td>Async</td>
-<td>Async</td>
-<td>3</td>
-<td>3</td>
-<td>High</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Client</th>
+         <th>Server</th>
+         <th>Internal data</th>
+         <th>Transferable data</th>
+         <th>Performance</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>Sync         </td>
+         <td>Sync         </td>
+         <td>1         </td>
+         <td>1         </td>
+         <td>Low         </td>
+      </tr>
+      <tr class="even">
+         <td>Sync         </td>
+         <td>Async         </td>
+         <td>2 (secure the NFS server)         </td>
+         <td>2 (secure the NFS server)         </td>
+         <td>Medium         </td>
+      </tr>
+      <tr class="odd">
+         <td>Async         </td>
+         <td>Sync         </td>
+         <td>1 (if cft.server.catalog.<br />
+sync.enable=Yes)         </td>
+         <td>1 (when using sync points)         </td>
+         <td>Medium - high         </td>
+      </tr>
+      <tr class="even">
+         <td>Async         </td>
+         <td>Async         </td>
+         <td>3         </td>
+         <td>3         </td>
+         <td>High         </td>
+      </tr>
+   </tbody>
 </table>
 
 Legend:
@@ -210,18 +210,18 @@ Legend:
 The NFSv4 locking lease period affects the Transfer CFT delay required to detect node failovers. The default value for this parameter is typically 90 seconds. On systems where this parameter is tunable, configuring a shorter value can significantly reduce Transfer CFT node failovers.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You should configure the lease time together with the UCONF <span>copilot.node_manager.watchperiod</span> parameter, noting the restriction that NFS lease time &gt; 2 * <span>copilot.node_manager.watchperiod</span>.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You should configure the lease time together with the UCONF <span>copilot.node_manager.watchperiod</span> parameter, noting the restriction that NFS lease time &gt; 2 * <span>copilot.node_manager.watchperiod</span>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Perform_a_NAS failover_..24"></span><span id="Perform_a_NAS failover"></span><span id="Perform"></span>Perform a NAS failover
 
-When using NAS failover in a multihost-multinode architecture, you must stop the cluster prior to performing the failover. For information on starting and stopping a cluster, see [Multi-node commands and management](../multi_node_commands)
+When using NAS failover in a multihost-multinode architecture, you must stop the cluster prior to performing the failover. For information on starting and stopping a cluster, see [Multi-node commands and management](multi_node_commands.htm)
 
 1.  Stop the Transfer CFT cluster.
 2.  Perform the failover.
@@ -251,7 +251,7 @@ The recommendations in this section apply to a Transfer CFT multi-node, multi-h
 
 When using AWS EFS, you cannot set the server options; only the client is configurable.
 
-This system is based on NFSv4. For more information on NFSv4, please see [Using NFSv4](#using) .
+This system is based on NFSv4. For more information on NFSv4, please see [Using NFSv4](#Using) .
 
 This shared file system has features that impact performance, as compared to a traditional NFS:
 
@@ -269,11 +269,11 @@ It is recommended that you use SMB version 2 or higher with Transfer CFT.
 CIFS, Common Internet File System, is an out-dated SMB protocol variant.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Samba suite usage is not recommended with Transfer CFT.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Samba suite usage is not recommended with Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>

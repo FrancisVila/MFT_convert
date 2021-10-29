@@ -23,7 +23,7 @@ It is highly recommended that you either customize the RH, SH, RT, ST, etc. para
 
 When the catalog is full, the following error message is displayed: CFTC29W Catalog Alert fill threshold reached: level=100% ID=CAT0
 
-Please see the [Housekeeping for catalog and output files](../../../../admin_intro/admin_monitoring_intro/housekeeping_catalog) for best practices, or the [Troubleshoot the catalog](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_catalog) page for solutions if the catalog is full and Transfer CFT has stopped.
+Please see the [Housekeeping for catalog and output files](../../../admin_intro/admin_monitoring_intro/housekeeping_catalog) for best practices, or the [Troubleshoot the catalog](../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/troubleshoot_catalog) page for solutions if the catalog is full and Transfer CFT has stopped.
 
 #### RECONFIG
 
@@ -34,4 +34,4 @@ TYPE=CAT
 
 Number of records in the file. When TYPE = CAT, this value is mandatory.
 
-[Return to Command index](../../)
+[Return to Command index](../)

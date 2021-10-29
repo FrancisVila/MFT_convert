@@ -31,4 +31,4 @@ to the destination site, this SPART parameter is in fact used to set the
 NSPART parameter being sent, to the value of the INITIAL sender of the
 file.
 
-[Return to Command index](../../)
+[Return to Command index](../)

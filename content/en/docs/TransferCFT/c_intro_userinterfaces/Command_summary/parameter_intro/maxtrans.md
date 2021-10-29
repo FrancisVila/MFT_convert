@@ -17,4 +17,4 @@ the limit set by the software key.
 
 The UCONF cft.server.maxtrans parameter overrides MAXTRANS as long as it is not set to 0. If `cft.server.maxtrans `is set to 0, the MAXTRANS value is used.
 
-[Return to Command index](../../)
+[Return to Command index](../)

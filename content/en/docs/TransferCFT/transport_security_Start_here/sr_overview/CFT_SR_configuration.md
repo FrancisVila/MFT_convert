@@ -1,5 +1,5 @@
 {
-    "title": "Secure Relay with a standalone architecture",
+    "title": "SecureRelay with a standalone architecture",
     "linkTitle": "Secure Relay with a standalone architecture",
     "weight": "250"
 }This page describes how to configure Transfer CFT in a standalone architecture for use with Secure Relay.
@@ -34,29 +34,29 @@ After completing installation, configure the Router Agents in the Transfer CFT c
 Example of two Router Agent definitions
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>secure_relay.ra = 2</p>
-<p> </p>
-<p>secure_relay.ra.0.enable = yes</p>
-<p>secure_relay.ra.0.dmz = <span>DMZ0</span></p>
-<p>secure_relay.ra.0.host = <span>@hostF</span></p>
-<p>secure_relay.ra.0.admin_port = 6810</p>
-<p>secure_relay.ra.0.comm_port = 6811</p>
-<p>secure_relay.ra.0.nb_data_connections = 5</p>
-<p>secure_relay.ra.0.data_channel_ciphering = No</p>
-<p>secure_relay.ra.0.outcall_network_interface =</p>
-<p> </p>
-<p>secure_relay.ra.1.enable = Yes</p>
-<p>secure_relay.ra.1.dmz = <span>DMZ1</span></p>
-<p>secure_relay.ra.1.host = <span>@hostG</span></p>
-<p>secure_relay.ra.1.admin_port = 6810</p>
-<p>secure_relay.ra.1.comm_port = 6811</p>
-<p>secure_relay.ra.1.nb_data_connections = 5</p>
-<p>secure_relay.ra.1.data_channel_ciphering = No</p>
-<p>secure_relay.ra.1.outcall_network_interface =</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>secure_relay.ra = 2</p>
+            <p> </p>
+            <p>secure_relay.ra.0.enable = yes</p>
+            <p>secure_relay.ra.0.dmz = <span>DMZ0</span></p>
+            <p>secure_relay.ra.0.host = <span>@hostF</span></p>
+            <p>secure_relay.ra.0.admin_port = 6810</p>
+            <p>secure_relay.ra.0.comm_port = 6811</p>
+            <p>secure_relay.ra.0.nb_data_connections = 5</p>
+            <p>secure_relay.ra.0.data_channel_ciphering = No</p>
+            <p>secure_relay.ra.0.outcall_network_interface =</p>
+            <p> </p>
+            <p>secure_relay.ra.1.enable = Yes</p>
+            <p>secure_relay.ra.1.dmz = <span>DMZ1</span></p>
+            <p>secure_relay.ra.1.host = <span>@hostG</span></p>
+            <p>secure_relay.ra.1.admin_port = 6810</p>
+            <p>secure_relay.ra.1.comm_port = 6811</p>
+            <p>secure_relay.ra.1.nb_data_connections = 5</p>
+            <p>secure_relay.ra.1.data_channel_ciphering = No</p>
+            <p>secure_relay.ra.1.outcall_network_interface =</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Configure the Master Agent in Transfer CFT
@@ -73,21 +73,21 @@ In Transfer CFT from the CFTUTIL prompt, perform the following commands:
 
 1.  Enable Secure Relay:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=secure_relay.enable ,value=yes</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=secure_relay.enable ,value=yes         </td>
+          </tr>
+       </tbody>
     </table>
 
 2.  Set the full path to Java executable, for example:  
 
 3.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java         </td>
+          </tr>
+       </tbody>
     </table>
 
 ## Configure Transfer CFT objects
@@ -105,17 +105,17 @@ In Transfer CFT from the CFTUTIL prompt, perform the following commands:
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET ID = NETSR,</p>
-<p>PROTOCOL = SR,</p>
-<p>TYPE = TCP,</p>
-<p>CALL = INOUT,</p>
-<p>CLASS = 1,</p>
-<p>HOST = &lt;e.g. INADDR_ANY, network_interface_used_by_Router_Agent&gt;,</p>
-<p>RECALLHOST = 127.0.0.1, /*network_interface_used_by_Transfer_CFT*/</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET ID = NETSR,</p>
+            <p>PROTOCOL = SR,</p>
+            <p>TYPE = TCP,</p>
+            <p>CALL = INOUT,</p>
+            <p>CLASS = 1,</p>
+            <p>HOST = &lt;e.g. INADDR_ANY, network_interface_used_by_Router_Agent&gt;,</p>
+            <p>RECALLHOST = 127.0.0.1, /*network_interface_used_by_Transfer_CFT*/</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create a CFTPROT object
@@ -130,15 +130,15 @@ Example
 This example uses a CFTNET object called NETSR.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT id = PESITANY,</p>
-<p>net = NETSR,</p>
-<p>sap = 1761,</p>
-<p>Prot=PESIT,</p>
-<p>prof = ANY</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT id = PESITANY,</p>
+            <p>net = NETSR,</p>
+            <p>sap = 1761,</p>
+            <p>Prot=PESIT,</p>
+            <p>prof = ANY</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create CFTPART and CFTTCP objects
@@ -152,21 +152,21 @@ Example
 This is an example of the CFTPART and CFTTCP object configuration, using PESITANY.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = PARIS,</p>
-<p> prot = PESITANY,</p>
-<p> sap = &lt;remote_partner_sap&gt;,</p>
-<p> nspart = NPHOENIX,</p>
-<p>  nrpart = NPARIS,</p>
-<p>  mode = replace</p>
-<p> </p>
-<p>CFTTCP id = PARIS,</p>
-<p> class = 1, /* same class as the one used in the CFTNET */</p>
-<p> host = &lt;remote_partner_host_address&gt;,</p>
-<p> mode = replace</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = PARIS,</p>
+            <p> prot = PESITANY,</p>
+            <p> sap = &lt;remote_partner_sap&gt;,</p>
+            <p> nspart = NPHOENIX,</p>
+            <p>  nrpart = NPARIS,</p>
+            <p>  mode = replace</p>
+            <p> </p>
+            <p>CFTTCP id = PARIS,</p>
+            <p> class = 1, /* same class as the one used in the CFTNET */</p>
+            <p> host = &lt;remote_partner_host_address&gt;,</p>
+            <p> mode = replace</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Indicate a specific SecureRelay to use
@@ -174,9 +174,9 @@ This is an example of the CFTPART and CFTTCP object configuration, using PESITAN
 If you would like to use a specific SecureRelay with a given partner, set the following parameter in the CFTPART:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SRDMZ = &lt;UCONF secure_relay.ra.<em>n</em>.dmz value, where n is the number that corresponds to the SecureRelay to use&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SRDMZ = &lt;UCONF secure_relay.ra.<em>n</em>.dmz value, where n is the number that corresponds to the SecureRelay to use&gt;         </td>
+      </tr>
+   </tbody>
 </table>

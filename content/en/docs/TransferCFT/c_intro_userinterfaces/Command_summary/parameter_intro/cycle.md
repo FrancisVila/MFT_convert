@@ -8,11 +8,11 @@
 
 CYCLE = {0 | n}    {0..32767}
 
-Number of units (per [tcycle](../tcycle)) for the transfer cycle period.
+Number of units (per [tcycle](tcycle)) for the transfer cycle period.
 
 Use this field to define the transfer activation cycle. Enter the period
 of time to wait before activating the next transfer. This period can be
-expressed in minutes, days, or months as defined in the [tcycle](../tcycle) field.
+expressed in minutes, days, or months as defined in the [tcycle](tcycle) field.
 
 Enter one of the following values:
 
@@ -33,4 +33,4 @@ periodicity for creating a protocol session.
 
 \[CYCLE = {10 | n}\]   {1..32767}
 
-[Return to Command index](../../)
+[Return to Command index](../)

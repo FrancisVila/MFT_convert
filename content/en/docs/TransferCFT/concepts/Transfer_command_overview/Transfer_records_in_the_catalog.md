@@ -2,9 +2,7 @@
     "title": "Transfer records in the catalog",
     "linkTitle": "Transfer records in the catalog",
     "weight": "180"
-}# <span id="Transfer_records_in_the_catalog"></span>Transfer records in the catalog
-
-Transfer commands are used to initiate the sending or receiving of files,
+}Transfer commands are used to initiate the sending or receiving of files,
 or the sending of messages, with a partners. The
 records of these transfer commands specify the:
 

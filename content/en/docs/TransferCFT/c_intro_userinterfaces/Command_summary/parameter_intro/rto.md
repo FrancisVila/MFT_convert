@@ -19,6 +19,6 @@ If the value is 0, the wait timeout is infinite.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

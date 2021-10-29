@@ -2,9 +2,7 @@
     "title": "Defining CFTPROT in PeSIT",
     "linkTitle": "Defining CFTPROT in PeSIT",
     "weight": "190"
-}# <span id="Defining_CFTPROT"></span>Defining CFTPROT in PeSIT
-
-The CFTPROT object defines a file transfer protocol application. This topic describes the CFTPROT parameter
+}The CFTPROT object defines a file transfer protocol application. This topic describes the CFTPROT parameter
 setting object as it applies to the PeSIT protocol. It mainly defines
 the parameters negotiated with the remote partner at the time the protocol
 connection is established, the F.CONNECT service of the PeSIT protocol.
@@ -352,13 +350,13 @@ it is recommended that you leave the default LOGON value when the partners
 concerned do not all use Transfer CFT.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   When Transfer CFT
@@ -444,72 +442,72 @@ The table below summarizes the parameter values authorized according
 to the functional levels negotiated.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
+   <thead>
+      <tr class="header">
 <th colspan="3">Negotiated functional level </th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-bgcolor="#C0C0C0" data-valign="top" width="27%"><p> </p>
-<p>CFTPROT parameter </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="18%"><p>PeSIT E  </p></td>
-<td data-bgcolor="#C0C0C0" data-valign="top" width="-1%"><p>PeSIT E</p>
-<p>+</p>
-<p>CFT extensions </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="27%"><p>DISCTD </p></td>
-<td data-valign="top" width="18%"><p>0..3600<br />
-(dft: 120) </p></td>
-<td data-valign="top" width="-1%"><p>0..3600<br />
-(dft: 120) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="27%"><p>DISCTS </p></td>
-<td data-valign="top" width="18%"><p>0..3600<br />
-(dft: 165) </p></td>
-<td data-valign="top" width="-1%"><p>0..3600<br />
-(dft: 65) </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="27%"><p>LOGON </p></td>
-<td data-valign="top" width="18%"><p>YES, NO </p></td>
-<td data-valign="top" width="-1%"><p>YES, NO </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="27%"><p>PAD (<em>deprecated</em>)</p></td>
-<td data-valign="top" width="18%"><p>NO, YES </p></td>
-<td data-valign="top" width="-1%"><p>NO, YES </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="27%"><p>RCOMP </p></td>
-<td data-valign="top" width="18%"><p>0, 2, 8, 10<br />
-(dft: 10) </p></td>
-<td data-valign="top" width="-1%"><p>0..15<br />
-(dft: 15) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="27%"><p>REVERSE </p></td>
-<td data-valign="top" width="18%"><p>NO, YES </p></td>
-<td data-valign="top" width="-1%"><p>NO, YES </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="27%"><p>SCOMP </p></td>
-<td data-valign="top" width="18%"><p>0, 2, 8, 10<br />
-(dft: 10) </p></td>
-<td data-valign="top" width="-1%"><p>0..15<br />
-(dft: 15) </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="27%"><p>SEGMENT </p></td>
-<td data-valign="top" width="18%"><p>NO, YES </p></td>
-<td data-valign="top" width="-1%"><p>NO, YES </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="27%"><p>SSERV </p></td>
-<td data-valign="top" width="18%"><p>"PESIT " </p></td>
-<td data-valign="top" width="-1%"><p>"PESIT " </p></td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="27%">            <p> </p>
+            <p>CFTPROT parameter </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="18%">            <p>PeSIT E  </p>         </td>
+         <td data-bgcolor="#C0C0C0" data-valign="top" width="-1%">            <p>PeSIT E</p>
+            <p>+</p>
+            <p>CFT extensions </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>DISCTD </p>         </td>
+         <td data-valign="top" width="18%">            <p>0..3600<br />
+(dft: 120) </p>         </td>
+         <td data-valign="top" width="-1%">            <p>0..3600<br />
+(dft: 120) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>DISCTS </p>         </td>
+         <td data-valign="top" width="18%">            <p>0..3600<br />
+(dft: 165) </p>         </td>
+         <td data-valign="top" width="-1%">            <p>0..3600<br />
+(dft: 65) </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>LOGON </p>         </td>
+         <td data-valign="top" width="18%">            <p>YES, NO </p>         </td>
+         <td data-valign="top" width="-1%">            <p>YES, NO </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>PAD (<em>deprecated</em>)</p>         </td>
+         <td data-valign="top" width="18%">            <p>NO, YES </p>         </td>
+         <td data-valign="top" width="-1%">            <p>NO, YES </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>RCOMP </p>         </td>
+         <td data-valign="top" width="18%">            <p>0, 2, 8, 10<br />
+(dft: 10) </p>         </td>
+         <td data-valign="top" width="-1%">            <p>0..15<br />
+(dft: 15) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>REVERSE </p>         </td>
+         <td data-valign="top" width="18%">            <p>NO, YES </p>         </td>
+         <td data-valign="top" width="-1%">            <p>NO, YES </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>SCOMP </p>         </td>
+         <td data-valign="top" width="18%">            <p>0, 2, 8, 10<br />
+(dft: 10) </p>         </td>
+         <td data-valign="top" width="-1%">            <p>0..15<br />
+(dft: 15) </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>SEGMENT </p>         </td>
+         <td data-valign="top" width="18%">            <p>NO, YES </p>         </td>
+         <td data-valign="top" width="-1%">            <p>NO, YES </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="27%">            <p>SSERV </p>         </td>
+         <td data-valign="top" width="18%">            <p>"PESIT " </p>         </td>
+         <td data-valign="top" width="-1%">            <p>"PESIT " </p>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -5,14 +5,14 @@
 }After installing Transfer CFT, but before starting Transfer CFT and the Copilot server, you may need to perform the following tasks:
 
 -   [Perform an update](#updates)
--   [Create a basic configuration](#creating_a_basic_configuration)
+-   [Create a basic configuration](#Creating_a_basic_configuration)
 
 Otherwise you can go to:
 
--   [Start the Transfer CFT Copilot server](#start)
--   [Start Transfer CFT](#start2)
+-   [Start the Transfer CFT Copilot server](#Start)
+-   [Start Transfer CFT](#Start2)
 
-For information on user rights, refer to the topic [Defining user rights UNIX](../../unix_install_start_here/run_first_time_ux/run_first_time_ux/user_rights_and_interface_unix).
+For information on user rights, refer to the topic [Defining user rights UNIX](../../UNIX/user_rights_and_interface_unix.htm).
 
 ## Installed directories and files
 
@@ -27,7 +27,7 @@ During the installation, the Transfer CFT installer creates two files in the ins
 
 ## Standalone installations
 
-If you are not using Transfer CFT with Central Governance, you must provide a certificate in order to be able to use the Transfer CFT UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui) page for details.
+If you are not using Transfer CFT with Central Governance, you must provide a certificate in order to be able to use the Transfer CFT UI. See [Using the web-based browser UI](../../c_intro_userinterfaces/web_copilot_ui) page for details.
 
 ## <span id="updates"></span>Perform an update
 
@@ -54,11 +54,11 @@ To determine the Transfer CFT variable values list the values using
 the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL listuconf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL listuconf         </td>
+      </tr>
+   </tbody>
 </table>
 
 To change or update a value, start the Transfer CFT profile
@@ -69,12 +69,12 @@ documentation for details.
 For example, to change the user interface port:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL
-uconfset id=copilot.general.serverport,value=1766</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL
+uconfset id=copilot.general.serverport,value=1766         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Configuration
@@ -100,23 +100,23 @@ Start the Transfer CFT profile and, to create the Transfer CFT
 internal datafile and update the basic configuration, execute:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftinit
-cft-tcp.conf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftinit
+cft-tcp.conf         </td>
+      </tr>
+   </tbody>
 </table>
 
 To update the configuration at a later date, execute:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftupdate
-cft-tcp.conf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftupdate
+cft-tcp.conf         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### User interface configuration
@@ -124,12 +124,12 @@ cft-tcp.conf</td>
 To view the Copilot user interface configuration, execute:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL
-LISTUCONF id=copilot*</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL
+LISTUCONF id=copilot*         </td>
+      </tr>
+   </tbody>
 </table>
 
 To change this configuration, you update the hostname and listening
@@ -139,14 +139,14 @@ uconfset.
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL
 uconfset id=copilot.general.serverhost, value="127.0.0.1"
-<p>CFTUTIL
-uconfset id=copilot.general.serverport, value="7000"</p></td>
-</tr>
-</tbody>
+            <p>CFTUTIL
+uconfset id=copilot.general.serverport, value="7000"</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Configuration for Service Mode
@@ -155,7 +155,7 @@ This option is only available on Windows systems and must be selected during the
 
 ## <span id="Start"></span>Start the Transfer CFT Copilot server
 
-If you have implemented Central Governance, starting Copilot launches the registration process. For more information, see the topic [Registration overview](../../../governance_services_intro/cg_register_overview).
+If you have implemented Central Governance, starting Copilot launches the registration process. For more information, see the topic [Registration overview](../../central_governance/cg_register_overview.htm).
 
 **Windows**
 
@@ -167,14 +167,14 @@ If you have implemented Central Governance, starting Copilot launches the regist
 **UNIX**
 
 <table data-cellspacing="0" data-mc-conditions="Primary.unix_in">
-<tbody>
-<tr class="odd">
-<td><p>cd &lt;CFTDIRRUNTIME&gt;</p>
-<p>. . /profile</p>
-<p>copstart</p>
-<p>http://myHostName:1766</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cd &lt;CFTDIRRUNTIME&gt;</p>
+            <p>. . /profile</p>
+            <p>copstart</p>
+            <p>http://myHostName:1766</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Start2"></span>Start Transfer CFT
@@ -184,11 +184,11 @@ If you have implemented Central Governance, you can start and stop Transfer CFT 
 Enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><span> cft start</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><span> cft start</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Service"></span>Service mode set up when using Central Governance
@@ -199,7 +199,7 @@ Since you can start or restart a registered Transfer CFT from Central Governance
 -   Provide the rights to start the Transfer CFT Service as a non Local Admin user:
     -   Use a Sysinternals utility such as Process Explorer to change Windows service permissions. Run Process Explorer as administrator and locate the CFT service (CFTSRVLD.exe) process.
     -   Open the process properties and click the **Services** tab. Click the **Permissions** button and add the user or group in the opened window. Then select the permissions that you want to assign (Full Control) and click **OK** to save.
-    -   ![](services_rights.png)
+    -   ![](/Images/TransferCFT/services_rights.png)
 
 ## Register with Central Governance
 

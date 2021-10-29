@@ -1,10 +1,8 @@
 {
-    "title": "Security services ",
+    "title": "Security  services ",
     "linkTitle": "Security services ",
     "weight": "150"
-}# <span id="10__Security"></span><span id="Security_system_objectives"></span>Security services
-
-Transfer CFT offers different types of security services in order to secure communication, protect data, and control user access:
+}Transfer CFT offers different types of security services in order to secure communication, protect data, and control user access:
 
 -   Transport security
 -   Access management
@@ -24,17 +22,17 @@ Transfer CFT implements the cryptographic protocol TLS (Transport Layer Security
 Transport Security is ensured through a public key infrastructure (PKI), which you can managed either using Transfer CFT, PassPort PS or an external PKI.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Check the security options
-included in the license key before attempting to implement in your environment.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Check the security options
+included in the license key before attempting to implement in your environment.         </td>
+      </tr>
+   </tbody>
 </table>
 
-For more information on transport security, see the Transfer CFT [Security](../../transport_security_start_here) topics.
+For more information on transport security, see the Transfer CFT [Security](../transport_security_start_here) topics.
 
 ## Access management
 

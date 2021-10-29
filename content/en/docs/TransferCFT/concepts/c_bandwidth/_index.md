@@ -1,7 +1,7 @@
 {
-    "title": "Managing bandwidth",
-    "linkTitle": "Managing bandwidth",
-    "weight": "210"
+    "title": "Manage bandwidth control",
+    "linkTitle": "About bandwidth control",
+    "weight": "230"
 }The bandwidth control feature aides in controlling the network bandwidth used for incoming and outgoing data. This feature is based on the notion of class-of-service.
 
 Class-of-service defines a common set of parameters for all network session established under it, such as :
@@ -14,13 +14,13 @@ Class-of-service defines a common set of parameters for all network session esta
 All rates, either configured as rates or computed from weights, represent a number of Kbytes per second.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Central Governance</span> see the <strong>Bandwidth Allocation</strong> section on the product configuration page, and <strong>Bandwidth Allocation</strong> in the <strong>Transfer Properties</strong> of the flow definition, for supported bandwidth features and details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In <span>Central Governance</span> see the <strong>Bandwidth Allocation</strong> section on the product configuration page, and <strong>Bandwidth Allocation</strong> in the <strong>Transfer Properties</strong> of the flow definition, for supported bandwidth features and details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Parameters
@@ -39,117 +39,117 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
 ### Class-of-service parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_in</td>
-<td>unlimited</td>
-<td>This value is used to compute the nominal rate of incoming data for this class of service. **</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_out</td>
-<td>unlimited</td>
-<td>This value is used to compute the nominal rate of outgoing data for this class of service. **</td>
-</tr>
-<tr class="odd">
-<td colspan="3"><p>** Do not configure the parameters <span>weight_in</span> and <span>weight_out</span> for the class-of-service 0, as they cannot be used in this context. See <a href="#concepts">Concepts.</a></p></td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out</td>
-<td>unlimited</td>
-<td>Maximum rate of incoming data for that class-of-service</td>
-</tr>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out</td>
-<td>unlimited</td>
-<td>Maximum rate of outgoing data for that class-of-service</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_in</td>
-<td>unlimited</td>
-<td>Maximum rate of incoming data for sessions under that class-of-service</td>
-</tr>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_out</td>
-<td>unlimited</td>
-<td>Maximum rate of outgoing data for sessions under that class-of-service</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.parent</td>
-<td>0</td>
-<td>Parent class-of-service</td>
-</tr>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.comment</td>
-<td>“”</td>
-<td>User comment that describes the class-of-service</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos</td>
-<td>1</td>
-<td>Total number of class-of-services including the
-class number zero.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_in         </td>
+         <td>unlimited         </td>
+         <td>This value is used to compute the nominal rate of incoming data for this class of service. **         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.weight_out         </td>
+         <td>unlimited         </td>
+         <td>This value is used to compute the nominal rate of outgoing data for this class of service. **         </td>
+      </tr>
+      <tr class="odd">
+         <td colspan="3">            <p>** Do not configure the parameters <span>weight_in</span> and <span>weight_out</span> for the class-of-service 0, as they cannot be used in this context. See <a href="#Concepts">Concepts.</a></p>         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
+         <td>unlimited         </td>
+         <td>Maximum rate of incoming data for that class-of-service         </td>
+      </tr>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
+         <td>unlimited         </td>
+         <td>Maximum rate of outgoing data for that class-of-service         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_in         </td>
+         <td>unlimited         </td>
+         <td>Maximum rate of incoming data for sessions under that class-of-service         </td>
+      </tr>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.session_rate_out         </td>
+         <td>unlimited         </td>
+         <td>Maximum rate of outgoing data for sessions under that class-of-service         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.parent         </td>
+         <td>0         </td>
+         <td>Parent class-of-service         </td>
+      </tr>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.comment         </td>
+         <td>“”         </td>
+         <td>User comment that describes the class-of-service         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos         </td>
+         <td>1         </td>
+         <td>Total number of class-of-services including the
+class number zero.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Global parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.enable</td>
-<td>No</td>
-<td>Enable bandwidth control feature</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.cos_server_default</td>
-<td>0</td>
-<td>Set default class-of-service in server mode</td>
-</tr>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.cos_requester_default</td>
-<td>0</td>
-<td>Set default class-of-service in requester mode</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.enable         </td>
+         <td>No         </td>
+         <td>Enable bandwidth control feature         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.cos_server_default         </td>
+         <td>0         </td>
+         <td>Set default class-of-service in server mode         </td>
+      </tr>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.cos_requester_default         </td>
+         <td>0         </td>
+         <td>Set default class-of-service in requester mode         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Expert level global parameters
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>uconf:cft.server.bandwidth.delay</td>
-<td>1s</td>
-<td>Bandwidth control granularity (this value is expressed in microseconds, so for example 1s = 1000000 ms).</td>
-</tr>
-<tr class="even">
-<td>uconf:cft.server.bandwidth.smoothing_factor</td>
-<td>3</td>
-<td>The bandwidth smoothing parameter optimizes resources to flatten, or smooth, bandwidth usage. Values range from 1 to 10, where 1 is the smoothest and 10 may result in irregular bandwidth usage.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>uconf:cft.server.bandwidth.delay         </td>
+         <td>1s         </td>
+         <td>Bandwidth control granularity (this value is expressed in microseconds, so for example 1s = 1000000 ms).         </td>
+      </tr>
+      <tr class="even">
+         <td>uconf:cft.server.bandwidth.smoothing_factor         </td>
+         <td>3         </td>
+         <td>The bandwidth smoothing parameter optimizes resources to flatten, or smooth, bandwidth usage. Values range from 1 to 10, where 1 is the smoothest and 10 may result in irregular bandwidth usage.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Concepts"></span>Class-of-service concepts
@@ -217,5 +217,5 @@ When defining a class-of-service it is recommended that you configure as follows
 
 Related topics
 
--   [Managing bandwidth](t_bandwidth)
--   [Bandwidth control use cases](r_use_cases_bandwidth)
+-   [Managing bandwidth](t_bandwidth.htm)
+-   [Bandwidth control use cases](r_use_cases_bandwidth.htm)

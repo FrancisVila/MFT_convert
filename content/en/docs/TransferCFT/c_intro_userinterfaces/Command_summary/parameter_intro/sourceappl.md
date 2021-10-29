@@ -12,4 +12,4 @@ Parameter to define the  source application for a flow in Central Governance fo
 
 This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
 
-[Return to Command index](../../)
+[Return to Command index](../)

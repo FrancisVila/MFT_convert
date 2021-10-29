@@ -1,10 +1,8 @@
 {
-    "title": "Running CFTUTIL",
+    "title": "Running  CFTUTIL",
     "linkTitle": "Running CFTUTIL",
     "weight": "220"
-}# <span id="Running_CFTUTIL"></span>Running CFTUTIL
-
-CFTUTIL is a command line mode user interface used to create the Transfer CFT
+}CFTUTIL is a command line mode user interface used to create the Transfer CFT
 working environment manually and configure the product. It allows you
 to create or delete a parameter, partner, catalog, log and accounting files.
 
@@ -37,9 +35,9 @@ To exit CFTUTIL, enter the */end* command.
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>     <span>%
+   <tbody>
+      <tr class="odd">
+         <td>     <span>%
 CFTUTIL</span><br />
 CFT/V2/UAIX<br />
 Release <span>3.9</span><br />
@@ -48,9 +46,9 @@ CFT&gt; send<br />
 part=headoffice,idf=txt,fname=/home/lisa/report.txt<br />
 CFTU94I SEND part =HEADOFFICE,idf=TX _ Correct<br />
 CFT&gt; /end<br />
-%</td>
-</tr>
-</tbody>
+%         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Run-time parameters

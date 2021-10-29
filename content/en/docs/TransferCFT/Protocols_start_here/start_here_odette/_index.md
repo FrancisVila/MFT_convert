@@ -1,10 +1,8 @@
 {
-    "title": "OFTP protocol",
+    "title": "OFTP  (ODETTE): Start here",
     "linkTitle": "OFTP protocol",
     "weight": "140"
-}# <span id="Title"></span>OFTP (ODETTE): Start here
-
-This section describes how to configure the OFTP (ODETTE) protocol for
+}This section describes how to configure the OFTP (ODETTE) protocol for
 Transfer CFT. This topic begins
 with an overview of the OFTP file transfer protocol describing:
 
@@ -24,41 +22,41 @@ to configure them:
 -   Change direction (CD)
 
 <table data-border="1" data-cellspacing="0" data-wrapperparagraphselector="P">
-<thead>
-<tr class="header">
-<th>Topic</th>
-<th>Describes...</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="139px"><p><a href="configuring_odette">Configuring OFTP</a></p></td>
-<td data-valign="top" width="382px"><p>The Transfer CFT objects that you
-must configure to use the OFTP (ODETTE) protocol.</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="139px"><p><a href="cftpart_parameters">Configuring partners</a></p></td>
-<td data-valign="top" width="382px"><p>The Transfer CFT parameters
-that you must define for a partner when using the OFTP protocol.</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="139px"><p><a href="processing_data">Processing data</a></p></td>
-<td data-valign="top" width="382px"><p>The compression functions
-in Transfer CFT when using the OFTP (ODETTE) protocol.</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="139px"><p><a href="submitting_a_transfer_request">Submitting
-a transfer request</a></p></td>
-<td data-valign="top" width="382px"><p>The steps that enable
-you to submit a transfer request.</p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="139px"><p><a href="receiving_transfers">Receiving transfers</a></p></td>
-<td data-valign="top" width="382px"><p>How to configure the OFTP
+   <thead>
+      <tr class="header">
+         <th>Topic</th>
+         <th>Describes...</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="139px">            <p><a href="configuring_odette">Configuring OFTP</a></p>         </td>
+         <td data-valign="top" width="382px">            <p>The Transfer CFT objects that you
+must configure to use the OFTP (ODETTE) protocol.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="139px">            <p><a href="cftpart_parameters">Configuring partners</a></p>         </td>
+         <td data-valign="top" width="382px">            <p>The Transfer CFT parameters
+that you must define for a partner when using the OFTP protocol.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="139px">            <p><a href="processing_data">Processing data</a></p>         </td>
+         <td data-valign="top" width="382px">            <p>The compression functions
+in Transfer CFT when using the OFTP (ODETTE) protocol.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="139px">            <p><a href="submitting_a_transfer_request">Submitting
+a transfer request</a></p>         </td>
+         <td data-valign="top" width="382px">            <p>The steps that enable
+you to submit a transfer request.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="139px">            <p><a href="receiving_transfers">Receiving transfers</a></p>         </td>
+         <td data-valign="top" width="382px">            <p>How to configure the OFTP
 (ODETTE) environment you must define the transfer environment in the RECV
-object to receive a request.</p></td>
-</tr>
-</tbody>
+object to receive a request.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="About_OFTP"></span><span id="OFTP__ODETTE__features"></span>OFTP (ODETTE) features

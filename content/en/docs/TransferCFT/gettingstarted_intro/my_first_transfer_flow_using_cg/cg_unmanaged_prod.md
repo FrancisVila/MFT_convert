@@ -1,8 +1,8 @@
 {
-    "title": "Create a flow using an unmanaged product",
+    "title": "Create a Transfer CFT flow with an unmanaged product ",
     "linkTitle": "Create a flow using an unmanaged product",
     "weight": "170"
-}This page describes how to create a Transfer CFT flow in Central Governance using an unmanaged product and mutual authentication (SSL) for a secure transfer. You may want to become familiar with [PeSIT concepts](../../../protocols_start_here/about_pesit), parameters such as [NSPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nspart), [NRPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrpart), and [SAP](../../../c_intro_userinterfaces/command_summary/parameter_intro/sap), prior to starting the procedure, or refer to the [parameter overview](#configur) in this page.
+}This page describes how to create a Transfer CFT flow in Central Governance using an unmanaged product and mutual authentication (SSL) for a secure transfer. You may want to become familiar with [PeSIT concepts](../../protocols_start_here/about_pesit), parameters such as [NSPART](../../c_intro_userinterfaces/command_summary/parameter_intro/nspart), [NRPART](../../c_intro_userinterfaces/command_summary/parameter_intro/nrpart), and [SAP](../../c_intro_userinterfaces/command_summary/parameter_intro/sap), prior to starting the procedure, or refer to the [parameter overview](#Configur) in this page.
 
 ## You will need...
 
@@ -15,7 +15,7 @@
 
 The information in this configuration example corresponds to the text used in the fields in the following steps.
 
-![](flow03.png)
+![](/Images/TransferCFT/unmanged.png)
 
 ## Configure an unmanaged product in Central Governance
 
@@ -32,43 +32,43 @@ The information in this configuration example corresponds to the text used in th
 Parameter mapping
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Transfer CFT </th>
-<th>Unmanaged product configuration fields</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CFTTCP HOST</td>
-<td>Host in the unmanaged product configuration</td>
-</tr>
-<tr class="even">
-<td>CFTPART SYST</td>
-<td>Operating system</td>
-</tr>
-<tr class="odd">
-<td>CFTPART NRPART</td>
-<td>PeSIT Login</td>
-</tr>
-<tr class="even">
-<td>CFTPART NRPASSW</td>
-<td>PeSIT password</td>
-</tr>
-<tr class="odd">
-<td>CFTPART PROT</td>
-<td>Mutual authentication (indicates PeSIT SSL)</td>
-</tr>
-<tr class="even">
-<td>CFTPART SAP </td>
-<td>Port</td>
-</tr>
-<tr class="odd">
-<td><p>CFTSSL DIRECT=CLIENT</p>
-<p>ROOTCID corresponding to the ROOT certificate in the Transfer CFT PKI database</p></td>
-<td>Certificate</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Transfer CFT </th>
+         <th>Unmanaged product configuration fields</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>CFTTCP HOST         </td>
+         <td>Host in the unmanaged product configuration         </td>
+      </tr>
+      <tr class="even">
+         <td>CFTPART SYST         </td>
+         <td>Operating system         </td>
+      </tr>
+      <tr class="odd">
+         <td>CFTPART NRPART         </td>
+         <td>PeSIT Login         </td>
+      </tr>
+      <tr class="even">
+         <td>CFTPART NRPASSW         </td>
+         <td>PeSIT password         </td>
+      </tr>
+      <tr class="odd">
+         <td>CFTPART PROT         </td>
+         <td>Mutual authentication (indicates PeSIT SSL)         </td>
+      </tr>
+      <tr class="even">
+         <td>CFTPART SAP          </td>
+         <td>Port         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CFTSSL DIRECT=CLIENT</p>
+            <p>ROOTCID corresponding to the ROOT certificate in the Transfer CFT PKI database</p>         </td>
+         <td>Certificate         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create a communication profile on the source Transfer CFT
@@ -87,62 +87,62 @@ In this step you create a communication profile on the source Transfer CFT that 
 Parameter mapping
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Transfer CFT </th>
-<th>Communication profile for the Unmanaged product</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CFTPROT</td>
-<td>Protocol name</td>
-</tr>
-<tr class="even">
-<td>NSPART</td>
-<td>Login</td>
-</tr>
-<tr class="odd">
-<td>NSPASSW</td>
-<td>Password</td>
-</tr>
-<tr class="even">
-<td>N/A</td>
-<td>Client authentication</td>
-</tr>
-<tr class="odd">
-<td>N/A</td>
-<td>Upload</td>
-</tr>
-<tr class="even">
-<td><p>CFTSSL DIRECT=CLIENT</p>
-<p>USERCID</p></td>
-<td>Private certificate</td>
-</tr>
-<tr class="odd">
-<td>N/A</td>
-<td>Password (for P12)</td>
-</tr>
-<tr class="even">
-<td><p>CFTSSL DIRECT=CLIENT</p>
-<p>ID</p></td>
-<td>SSL security profile</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Transfer CFT </th>
+         <th>Communication profile for the Unmanaged product</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPROT         </td>
+         <td>Protocol name         </td>
+      </tr>
+      <tr class="even">
+         <td>NSPART         </td>
+         <td>Login         </td>
+      </tr>
+      <tr class="odd">
+         <td>NSPASSW         </td>
+         <td>Password         </td>
+      </tr>
+      <tr class="even">
+         <td>N/A         </td>
+         <td>Client authentication         </td>
+      </tr>
+      <tr class="odd">
+         <td>N/A         </td>
+         <td>Upload         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CFTSSL DIRECT=CLIENT</p>
+            <p>USERCID</p>         </td>
+         <td>Private certificate         </td>
+      </tr>
+      <tr class="odd">
+         <td>N/A         </td>
+         <td>Password (for P12)         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CFTSSL DIRECT=CLIENT</p>
+            <p>ID</p>         </td>
+         <td>SSL security profile         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Create a flow
 
 In the Central Governance toolbar, select **Flows** &gt; **Add flow**.
 
-![](flow03.png)
+![](/Images/TransferCFT/flow01.png)
 
 Make the following selections, using the default values for all other fields.
 
 1.  Enter a **Name** for your flow.
 2.  Select **Source**, then **Application**.  
     From the list, select Transfer CFT as the product type and select your Transfer CFT. Confirm by clicking **Add source**.  
-    ![](flow03.png)
+    ![](/Images/TransferCFT/flow03.png)
 3.  Select Protocol. In the Protocol page, select:
     -   PeSIT as the **Exchange protocol**.
     -   Enter a value for the Flow identifier. Record this identifier as a reference if you want to check the flow configuration on your Transfer CFT.
@@ -156,18 +156,18 @@ Make the following selections, using the default values for all other fields.
  
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Transfer CFT </th>
-<th>Flow field</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CFTSEND ID</td>
-<td>Flow identifier</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Transfer CFT </th>
+         <th>Flow field</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>CFTSEND ID         </td>
+         <td>Flow identifier         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Check the flow on Transfer CFT

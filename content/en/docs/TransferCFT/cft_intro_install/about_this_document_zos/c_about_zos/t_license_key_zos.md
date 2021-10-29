@@ -1,6 +1,6 @@
 {
-    "title": "Apply a\u00a0license key ",
-    "linkTitle": "Apply a\u00a0license key ",
+    "title": "Apply a license key ",
+    "linkTitle": "Apply a license key ",
     "weight": "200"
 }## Check your authorization
 
@@ -26,13 +26,13 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 -   If you are migrating from a version 2.x Transfer CFT to a version 3.x.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Obtain a license key
@@ -64,35 +64,35 @@ Additionally, the key must have the cluster option.
 Enter the license key in the following format.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPARM ID = IDPARM0 ,<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPARM ID = IDPARM0 ,<br />
 …<br />
 KEY = #%ENVCFT%.UPARM(PRODKEY),</p>
-<p><br />
-…</p></td>
-</tr>
-</tbody>
+            <p><br />
+…</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Access the &lt;TARGET>.INSTALL library, and run the JCL called **CFTABOUT**. Near the bottom of the CFTABOUT output, the **`cpuid `line is displayed.**  
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>* cpuid = 000000000ABC1234</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>* cpuid = 000000000ABC1234</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In this example, you would provide the CPU ID **000000000ABC1234**.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Your cpuid will differ from those shown in the examples.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Your cpuid will differ from those shown in the examples.         </td>
+      </tr>
+   </tbody>
 </table>

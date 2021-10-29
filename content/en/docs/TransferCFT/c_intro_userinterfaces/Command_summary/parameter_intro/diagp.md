@@ -6,4 +6,4 @@
 
 Protocol diagnostic code.
 
-[Return to Command index](../../)
+[Return to Command index](../)

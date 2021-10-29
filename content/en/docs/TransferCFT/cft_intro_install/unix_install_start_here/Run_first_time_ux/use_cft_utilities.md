@@ -7,15 +7,15 @@ CFT UNIX utilities located in the cft/&lt;installdir>/bin/
 sub-directory after completing installation.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this section, the term
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this section, the term
 <span>Transfer CFT</span> designates the Transfer
-CFT software package on UNIX platforms.</td>
-</tr>
-</tbody>
+CFT software package on UNIX platforms.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The utilities described here, do not replace the
@@ -27,51 +27,51 @@ to simplify common tasks performed with Transfer CFT.
 The following utilities are detailed in this page.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Utility  </p></th>
-<th><p>Definition  </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><a href="#cftinit">cftinit</a></td>
-<td>General Transfer CFT initialization utility.</td>
-</tr>
-<tr class="even">
-<td><a href="#cftutil">cftutil</a></td>
-<td>Simplified display of the standard CFTUTIL commands.</td>
-</tr>
-<tr class="odd">
-<td><a href="#cftupdate">cftupdate</a></td>
-<td>Management Utility updating the Transfer CFT configuration.</td>
-</tr>
-<tr class="even">
-<td><p><a href="#cftcatal">cftcatal</a>  </p></td>
-<td><p>Utility migrating and/or extending the <span>Transfer CFT</span> catalog
-file.  </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="#xfbadm">xfbadmgrp</a>  </p></td>
-<td><p>Group management utility (all users accessing the Transfer CFT Copilot server).  </p></td>
-</tr>
-<tr class="even">
-<td><p><a href="#xfbadmusr1">xfbadmusr</a>  </p></td>
-<td><p>Utility managing users accessing the Transfer CFT Copilot server.  </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="#xvi">xvi</a>  </p></td>
-<td><p>Utility processing the conversion tables.  </p></td>
-</tr>
-<tr class="even">
-<td><p><a href="#conversion_tables">atoe</a>  </p></td>
-<td><p>ISO 8859-1 ASCII to EBCDIC conversion table.  </p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="#conversion_tables">etoa</a>  </p></td>
-<td><p>EBCDIC to ISO 8859-1 ASCII conversion table.  </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Utility  </p></th>
+         <th>            <p>Definition  </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td><a href="#cftinit">cftinit</a>         </td>
+         <td>General Transfer CFT initialization utility.         </td>
+      </tr>
+      <tr class="even">
+         <td><a href="#cftutil">cftutil</a>         </td>
+         <td>Simplified display of the standard CFTUTIL commands.         </td>
+      </tr>
+      <tr class="odd">
+         <td><a href="#cftupdate">cftupdate</a>         </td>
+         <td>Management Utility updating the Transfer CFT configuration.         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="#cftcatal">cftcatal</a>  </p>         </td>
+         <td>            <p>Utility migrating and/or extending the <span>Transfer CFT</span> catalog
+file.  </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="#xfbadm">xfbadmgrp</a>  </p>         </td>
+         <td>            <p>Group management utility (all users accessing the Transfer CFT Copilot server).  </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="#xfbadmusr1">xfbadmusr</a>  </p>         </td>
+         <td>            <p>Utility managing users accessing the Transfer CFT Copilot server.  </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="#xvi">xvi</a>  </p>         </td>
+         <td>            <p>Utility processing the conversion tables.  </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="#Conversion_tables">atoe</a>  </p>         </td>
+         <td>            <p>ISO 8859-1 ASCII to EBCDIC conversion table.  </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="#Conversion_tables">etoa</a>  </p>         </td>
+         <td>            <p>EBCDIC to ISO 8859-1 ASCII conversion table.  </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="cftinit"></span>cftinit
@@ -101,13 +101,13 @@ the CFTPARM, CFTLOG cards, and so on).
 cftinit partners.cft the\_rest.cft
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   If no file name
@@ -125,13 +125,13 @@ The *cftupdate* utility is used to update the configuration.
 cftupdate &lt;filename> \[&lt;filename> ...\]
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   You can only update
@@ -153,14 +153,14 @@ cftutil &lt;command>
 **Use**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>% cftutil listcat type=z<br />
+   <tbody>
+      <tr class="odd">
+         <td>% cftutil listcat type=z<br />
 CFTU26E LISTCAT _ Error (TYPE Bad value for parameter)<br />
 cftutil code 115<br />
-%</td>
-</tr>
-</tbody>
+%         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="cftcatal"></span>cftcatal
@@ -277,31 +277,31 @@ or to work in batch mode:
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>xfbadmusr add -l user1 -p thepassword -u AUTO -g AUTO</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>xfbadmusr add -l user1 -p thepassword -u AUTO -g AUTO</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To check that the user1 is created, run:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>xfbadmusr print</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>xfbadmusr print</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The output should resemble the following:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>user1:$6$2clPU2CY..2clPU2$g0cm8rHz8X0Fvu1lz7TUVa2YfpPMkbs03wQWhd5f0IMEWDbCQHK9IumSObNF4voLEM/BlsSdNMlw1k01iPOdv0:106:106:::</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>user1:$6$2clPU2CY..2clPU2$g0cm8rHz8X0Fvu1lz7TUVa2YfpPMkbs03wQWhd5f0IMEWDbCQHK9IumSObNF4voLEM/BlsSdNMlw1k01iPOdv0:106:106:::</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="xvi"></span>xvi

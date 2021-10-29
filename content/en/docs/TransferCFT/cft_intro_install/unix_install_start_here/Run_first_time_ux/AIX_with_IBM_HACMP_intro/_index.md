@@ -1,10 +1,8 @@
 {
-    "title": "UNIX High Availability",
-    "linkTitle": "UNIX High Availability",
-    "weight": "210"
-}# <span id="Using_CFT_AIX_with_IBM_HACMP__Start_here"></span>About AIX and IBM HACMP
-
-This sub-book describes how to install Transfer CFT and configure using
+    "title": "About  AIX and IBM HACMP",
+    "linkTitle": "About AIX and IBM HACMP",
+    "weight": "250"
+}This sub-book describes how to install Transfer CFT and configure using
 AIX with IBM HACMP. This
 topic lists prerequisites and provides an overview of the
 system.

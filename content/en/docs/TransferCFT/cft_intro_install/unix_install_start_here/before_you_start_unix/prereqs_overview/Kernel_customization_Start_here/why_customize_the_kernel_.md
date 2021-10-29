@@ -1,20 +1,18 @@
 {
-    "title": "Why customize the kernel?",
+    "title": "Why  customize the kernel?",
     "linkTitle": "Why customize the kernel?",
     "weight": "200"
-}# <span id="Why_customize_the_kernel"></span>Why customize the kernel?
-
-This topic explains the advantages of customizing the kernel, and additionally
+}This topic explains the advantages of customizing the kernel, and additionally
 presents the following related subjects:
 
 -   [Global
-    memory segment](#global_memory_segment)
+    memory segment](#Global_memory_segment)
 -   [Message
-    queue depth](#message_queue_depth)
+    queue depth](#Message_queue_depth)
 -   [Memory
-    allocated to TCP](#memory_allocated_to_tcp)
+    allocated to TCP](#Memory_allocated_to_TCP)
 -   [Number
-    of files used by a process](#number_of_files_used_by_a_process)
+    of files used by a process](#Number_of_files_used_by_a_process)
 
 ### <span id="Global_memory_segment"></span>Global shared memory segment
 

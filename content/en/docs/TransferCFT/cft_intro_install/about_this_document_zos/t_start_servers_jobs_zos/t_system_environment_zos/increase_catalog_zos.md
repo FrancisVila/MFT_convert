@@ -22,38 +22,38 @@ For more general information on expanding the catalog, you can refer to the sect
 -   TMPSPACE 'CYL,(50,10)' is the size of the temporary file
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the Transfer CFT HABILITATION is activated:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the Transfer CFT HABILITATION is activated:         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   In the CFTFILE TYPE=CAT, MODE=CREATE command, add the HABFNAME parameter with the SECINI file (created by the JCL H86SAFCR).
 -   In the SISYN : CREATE.CFTIN, comment the sequence code (1), and uncomment the sequence code (3) as follows:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>//CREATE.CFTIN DD *,DLM='XX'</p>
-    <p>/* CREATE CATALOG */</p>
-    <p>/* (1) CATALOG (No Transfer CFT HABILITATION) */</p>
-    <p>/* CFTFILE MODE = CREATE,TYPE=CAT,</p>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>//CREATE.CFTIN DD *,DLM='XX'</p>
+                <p>/* CREATE CATALOG */</p>
+                <p>/* (1) CATALOG (No Transfer CFT HABILITATION) */</p>
+                <p>/* CFTFILE MODE = CREATE,TYPE=CAT,</p>
     <div>
-    <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
-    <p>RECNB = %_ARGV2% */</p>
+                <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
+                <p>RECNB = %_ARGV2% */</p>
     </div>
-    <p>/* or (3) CATALOG (when Transfer CFT HABILITATION is active) */</p>
-    <p>  CFTFILE MODE = CREATE,TYPE=CAT,</p>
+                <p>/* or (3) CATALOG (when Transfer CFT HABILITATION is active) */</p>
+                <p>  CFTFILE MODE = CREATE,TYPE=CAT,</p>
     <div>
-    <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
-    <p>HABFNAME = %_ARGV4%,</p>
-    <p>RECNB = %_ARGV2%</p>
+                <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
+                <p>HABFNAME = %_ARGV4%,</p>
+                <p>RECNB = %_ARGV2%</p>
     </div>
-    <p>XX</p></td>
-    </tr>
-    </tbody>
+                <p>XX</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 1.  Start the INSTALL(CFTCATAL).
@@ -72,25 +72,25 @@ If you are using a multi-node architecture, use this static mode procedure.
 -   In the SISYN : CREATE.CFTIN, comment the sequence code (1), and uncomment the sequence code (2) as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>//CREATE.CFTIN DD *,DLM='XX'</p>
-<p>/* CREATE CATALOG */</p>
-<p>/* (1) CATALOG (No Transfer CFT HABILITATION) */</p>
-<p>/* CFTFILE MODE = CREATE,TYPE=CAT,</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>//CREATE.CFTIN DD *,DLM='XX'</p>
+            <p>/* CREATE CATALOG */</p>
+            <p>/* (1) CATALOG (No Transfer CFT HABILITATION) */</p>
+            <p>/* CFTFILE MODE = CREATE,TYPE=CAT,</p>
 <div>
-<p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
-<p>RECNB = %_ARGV2% */</p>
+            <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
+            <p>RECNB = %_ARGV2% */</p>
 </div>
-<p>/* or (2) CATALOG MULTI-NODES (No Transfer CFT HABILITATION) */</p>
-<p>CFTFILE MODE = CREATE,TYPE=CAT,</p>
+            <p>/* or (2) CATALOG MULTI-NODES (No Transfer CFT HABILITATION) */</p>
+            <p>CFTFILE MODE = CREATE,TYPE=CAT,</p>
 <div>
-<p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
-<p>NODE = %_ARGV5%,</p>
-<p>RECNB = %_ARGV2%</p>
-</div></td>
-</tr>
-</tbody>
+            <p>FNAME = %_ARGV3%%%%_ARGV1%,</p>
+            <p>NODE = %_ARGV5%,</p>
+            <p>RECNB = %_ARGV2%</p>
+</div>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Submit this procedure as many times as there are nodes.

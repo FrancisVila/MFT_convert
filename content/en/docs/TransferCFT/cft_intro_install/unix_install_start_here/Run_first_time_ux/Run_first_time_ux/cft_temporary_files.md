@@ -1,10 +1,8 @@
 {
-    "title": "Transfer CFT temporary files",
+    "title": "Transfer CFT  temporary files",
     "linkTitle": "Transfer CFT temporary files",
     "weight": "280"
-}# <span id="CFT_temporary_files"></span>Transfer CFT temporary files
-
-Depending on the processing involved, Transfer CFT creates various temporary
+}Depending on the processing involved, Transfer CFT creates various temporary
 files in the */tmp* directory. This topic describes temporary files,
 how to delete them, and provides an example.
 
@@ -33,14 +31,14 @@ To avoid saturating the /tmp directory, you should end any shell
 procedure with the rm $0 command.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If this command is omitted, the <span>/tmp</span> partition rapidly becomes
-full and the end of transfer procedures fails.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If this command is omitted, the <span>/tmp</span> partition rapidly becomes
+full and the end of transfer procedures fails.         </td>
+      </tr>
+   </tbody>
 </table>
 
 This command deletes the procedure that runs it and is applicable to
@@ -54,16 +52,16 @@ deleting it.
 For example, enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>if test -s $0.err<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>if test -s $0.err<br />
 then<br />
 echo $0.err contains data to be consulted<br />
 else<br />
 rm $0.err<br />
-fi</p></td>
-</tr>
-</tbody>
+fi</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### TMPDIR environment variable
@@ -73,21 +71,21 @@ You can use the environment variable TMPDIR=&lt;path> to define a temporary dire
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>export TMPDIR=/home/Desktop/tmpdir/</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>export TMPDIR=/home/Desktop/tmpdir/         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must restart Transfer CFT if you change the <span>TMPDIR </span>value.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must restart Transfer CFT if you change the <span>TMPDIR </span>value.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Sample procedure
@@ -102,20 +100,20 @@ configuration file, in the EXECRM field, so that it can be executed.
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p> </p>
-<p>     EXECRM = '/home/transfer/cft/&lt;installdir&gt;/runtime/conf//recvm.cmd'</p>
-<p>The contents of the recv.cmd file are as follows:</p>
-<p>echo "MESSAGE RECEIVED"     /* display
+   <tbody>
+      <tr class="odd">
+         <td>            <p> </p>
+            <p>     EXECRM = '/home/transfer/cft/&lt;installdir&gt;/runtime/conf//recvm.cmd'</p>
+            <p>The contents of the recv.cmd file are as follows:</p>
+            <p>echo "MESSAGE RECEIVED"     /* display
 of the message received */</p>
-<p>echo "** &amp;msg **"      /* by CFT using
+            <p>echo "** &amp;msg **"      /* by CFT using
 the &amp;msg symbolic */</p>
-<p>     /* variable that contains the */</p>
-<p>     /* message text */</p>
-<p> </p>
-<p>rm $0      /* deleting the /tmp/cftsu* */</p>
-<p>     /* temporary file */<br />
+            <p>     /* variable that contains the */</p>
+            <p>     /* message text */</p>
+            <p> </p>
+            <p>rm $0      /* deleting the /tmp/cftsu* */</p>
+            <p>     /* temporary file */<br />
 <br />
 if test -s $0.err<br />
 then<br />
@@ -123,9 +121,9 @@ echo $0.err contains data to be consulted<br />
 else<br />
 rm $0.err<br />
 fi</p>
-<h3 id="section"> </h3></td>
-</tr>
-</tbody>
+<h3 id="section"> </h3>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Transfer CFT identification
@@ -170,14 +168,14 @@ Taking the examples above, the complete directory structure is as follows:
      .info/cft240/20060307/AIX/43/IBM
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This directory and the information it contains are also used by Transfer
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This directory and the information it contains are also used by Transfer
 CFT. As some utilities are very similar from one product release to another,
 the release information is retrieved to fine-tune the way in which the
-utilities behave.</td>
-</tr>
-</tbody>
+utilities behave.         </td>
+      </tr>
+   </tbody>
 </table>

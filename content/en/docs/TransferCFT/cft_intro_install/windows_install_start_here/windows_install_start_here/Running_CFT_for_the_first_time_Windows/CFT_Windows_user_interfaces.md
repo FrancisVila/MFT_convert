@@ -2,11 +2,9 @@
     "title": "Transfer CFT user interfaces",
     "linkTitle": "Transfer CFT user interfaces",
     "weight": "230"
-}# <span id="CFT_Windows_user_interfaces"></span>Transfer CFT user interfaces
+}Transfer CFT features the following user interfaces:
 
-Transfer CFT features the following user interfaces:
-
-[CFTUTIL](../../../../../c_intro_userinterfaces/about_cftutil) - a command
+[CFTUTIL](../../../../c_intro_userinterfaces/about_cftutil) - a command
 line utility that can be used after installation in the following modes:
 
 -   Command mode
@@ -49,7 +47,7 @@ For more information, refer to Transfer CFT  Administration.
 
 Related topics
 
--   [Define user rights](../user_rights_and_interface_win)
+-   [Define user rights](user_rights_and_interface_win)
 -   Starting/stopping
     Transfer CFT
 -   Starting/stopping the UI

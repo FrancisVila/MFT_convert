@@ -1,7 +1,7 @@
 {
-    "title": "About the system configuration ",
-    "linkTitle": "About the system configuration ",
-    "weight": "230"
+    "title": "System environment for z/OS",
+    "linkTitle": "System environment for z/OS",
+    "weight": "250"
 }This section presents system environment functions that are specific to Transfer CFT z/OS and provides information about:
 
 -   Creating files in z/OS
@@ -114,11 +114,11 @@ Transfer CFT constructs and submits JOBs from any type of file that can be read 
 If the last card in the JOB is a JCL card beginning with ‘/\*’ or ‘//’, Transfer CFT adds an additional comment card with the following format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><code>//* SUBMITTED BY:jjjjjjjj AT hh:mm:ss, USERID=uuuuuuuu ,CARDS= nnnnnnnn</code></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td><code>//* SUBMITTED BY:jjjjjjjj AT hh:mm:ss, USERID=uuuuuuuu ,CARDS= nnnnnnnn</code>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -138,13 +138,13 @@ Where:
 -   nnnnnnnn: Number of cards submitted
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The SUBOPT parameter in the SGINSTAL macro (A12OPTS member) may affect the automation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The SUBOPT parameter in the SGINSTAL macro (A12OPTS member) may affect the automation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Support for the SHUT RESTART=YES command

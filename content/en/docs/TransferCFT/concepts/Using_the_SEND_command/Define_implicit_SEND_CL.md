@@ -1,5 +1,5 @@
 {
-    "title": "Defining an implicit SEND",
+    "title": "Defining an implicit SEND ",
     "linkTitle": "Defining an implicit SEND",
     "weight": "220"
 }Files can be made available for a transfer request either implicitly
@@ -9,374 +9,374 @@ IMPL parameter is set to yes, which enables a file to be available for
 transfer without a specific request for that file.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="19.982%"><p>Description</p></td>
-<td colspan="2" width="80.018%"><p>Use this command to make a file available for transfer
-without it being explicitly requested.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td rowspan="2" width="19.982%"><p>Parameters</p></td>
-<td width="20.241%"><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/impl">IMPL</a> </p></td>
-<td width="59.777%"><p>The implicit send makes a file available. Select from:</p>
-<ul>
-<li>YES</li>
-<li>NO</li>
-</ul>
-<p>This parameter
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="19.982%">            <p>Description</p>         </td>
+         <td colspan="2" width="80.018%">            <p>Use this command to make a file available for transfer
+without it being explicitly requested.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td rowspan="2" width="19.982%">            <p>Parameters</p>         </td>
+         <td width="20.241%">            <p><a href="../../c_intro_userinterfaces/command_summary/parameter_intro/impl">IMPL</a> </p>         </td>
+         <td width="59.777%">            <p>The implicit send makes a file available. Select from:</p>
+            <ul>
+               <li>YES               </li>
+               <li>NO               </li>
+            </ul>
+            <p>This parameter
 must
 be set to NO for the default model
-file description.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td colspan="2" width="20.241%"><p>For other SEND parameters refer to <a href="../send_command_basics">Sending
-files</a>.</p></td>
-</tr>
-</tbody>
+file description.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td colspan="2" width="20.241%">            <p>For other SEND parameters refer to <a href="send_command_basics">Sending
+files</a>.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 For SEND command details refer to the following syntax:
 
-[<img src="transparent.gif" width="16" height="11" alt="Closed" />Syntax](javascript:void(0))
+[<img src="/Images/TransferCFT/transparent.gif" width="16" height="11" alt="Closed" />Syntax](#)
 
-[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
+[TYPE](../../c_intro_userinterfaces/command_summary/parameter_intro/type)
 = FILE
 
-[IDF](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf)
+[IDF](../../c_intro_userinterfaces/command_summary/parameter_intro/idf)
 = identifier  
 
-[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part)
+[PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part)
 = identifier
 
-\[ [ACKEXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/ackexec) = filename\]
+\[ [ACKEXEC](../../c_intro_userinterfaces/command_summary/parameter_intro/ackexec) = filename\]
 
-\[ [ACKMINDATE](ackmindate.htm) = date \]
+\[ ACKMINDATE = date \]
 
-\[ [ACKMINTIME](ackmintime.htm) = time \]
+\[ ACKMINTIME = time \]
 
-\[ [ACKSTATE](ackstate.htm) = { REQUIRE | IGNORE } \]
+\[ ACKSTATE = { REQUIRE | IGNORE } \]
 
-\[ [ACKTIMEOUT](acktimeout.htm) = { 0 | n }
+\[ ACKTIMEOUT = { 0 | n }
 \]
 
-\[ [APPCYCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
+\[ [APPCYCID](../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
 = string \]
 
-\[ [APPOBJID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
+\[ [APPOBJID](../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
 = string \]
 
-\[ [ARCHIVEFNAME](archivefname.htm) = string \]
+\[ ARCHIVEFNAME = string \]
 
-\[ [COMMENT](../../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
+\[ [COMMENT](../../c_intro_userinterfaces/command_summary/parameter_intro/comment)
 = string \]
 
-\[ [CYCDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
+\[ [CYCDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
 = date \]
 
-\[ [CYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
+\[ [CYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
 = { 0
 | n }  \]
 
-\[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
+\[ [CYCTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
 = time \]
 
-\[ [DACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/daction) = { <u>ERROR</u> | RESUME } \]
+\[ [DACTION](../../c_intro_userinterfaces/command_summary/parameter_intro/daction) = { <u>ERROR</u> | RESUME } \]
 
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
+\[ [EXEC](../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
 = filename \]
 
-\[ [EXECSUB](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsub)
+\[ [EXECSUB](../../c_intro_userinterfaces/command_summary/parameter_intro/execsub)
 = { LIST
 | FILE | SUBF } \]
 
-\[ [EXECSUBA](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsuba) = {LIST | FILE | <u>SUBF</u> }\]
+\[ [EXECSUBA](../../c_intro_userinterfaces/command_summary/parameter_intro/execsuba) = {LIST | FILE | <u>SUBF</u> }\]
 
-\[ [EXIT](../../../c_intro_userinterfaces/command_summary/parameter_intro/exit)
+\[ [EXIT](../../c_intro_userinterfaces/command_summary/parameter_intro/exit)
 = identifier  \]
 
-\[ [FACC](../../../c_intro_userinterfaces/command_summary/parameter_intro/facc)
+\[ [FACC](../../c_intro_userinterfaces/command_summary/parameter_intro/facc)
 = { ‘ ‘ | character } \]
 
-\[ [FACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)
+\[ [FACTION](../../c_intro_userinterfaces/command_summary/parameter_intro/faction)
 = { NONE
 | DELETE | ERASE | ARCHIVE } \]
 
-\[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
+\[ [FBLKSIZE](../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
 = n \]
 
-\[ [FCODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fcode)
+\[ [FCODE](../../c_intro_userinterfaces/command_summary/parameter_intro/fcode)
 = { ASCII | BINARY | EBCDIC } \]
 
-\[ [FDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fdate)
+\[ [FDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/fdate)
 = date \]
 
 \[ FDB
 = filename \]
 
-\[ [FDISP](../../../c_intro_userinterfaces/command_summary/parameter_intro/fdisp)
+\[ [FDISP](../../c_intro_userinterfaces/command_summary/parameter_intro/fdisp)
 = { SHR
 | OLD | CHECK } \]
 
-\[ [FILTER](../../../c_intro_userinterfaces/command_summary/parameter_intro/filter) = string \]
+\[ [FILTER](../../c_intro_userinterfaces/command_summary/parameter_intro/filter) = string \]
 
-\[ [FILTERTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/filtertype) = string \]
+\[ [FILTERTYPE](../../c_intro_userinterfaces/command_summary/parameter_intro/filtertype) = string \]
 
-\[ [FKEYLEN](../../../c_intro_userinterfaces/command_summary/parameter_intro/fkeylen)
+\[ [FKEYLEN](../../c_intro_userinterfaces/command_summary/parameter_intro/fkeylen)
 = { 0
 | n } \]
 
-\[ [FKEYPOS](../../../c_intro_userinterfaces/command_summary/parameter_intro/fkeypos)
+\[ [FKEYPOS](../../c_intro_userinterfaces/command_summary/parameter_intro/fkeypos)
 = { 0
 | n } \]
 
-\[ [FLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/flrec)
+\[ [FLRECL](../../c_intro_userinterfaces/command_summary/parameter_intro/flrec)
 = n \]
 
-\[ [FNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
+\[ [FNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/fname)
  = { filename
 | mask | dirname | #filename | #mask | #dirname } \]
 
-\[ [FNAMEABS](fnameabs.htm)
+\[ FNAMEABS
 = { YES | NO }  \]
 
-\[ [FORG](../../../c_intro_userinterfaces/command_summary/parameter_intro/forg)
+\[ [FORG](../../c_intro_userinterfaces/command_summary/parameter_intro/forg)
 = { SEQ
 | DIRECT | INDEXED } \]
 
-\[ [FPAD](../../../c_intro_userinterfaces/command_summary/parameter_intro/fpad) = { <u>' '</u> | character } \]
+\[ [FPAD](../../c_intro_userinterfaces/command_summary/parameter_intro/fpad) = { <u>' '</u> | character } \]
 
-\[ [FRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/frecfm)
+\[ [FRECFM](../../c_intro_userinterfaces/command_summary/parameter_intro/frecfm)
 = { ‘ ‘ | F | U | V }  \]
 
-\[ [FSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
+\[ [FSPACE](../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
 = n \]
 
-\[ [FTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/ftime)
+\[ [FTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/ftime)
 = time  \]
 
-\[ [FTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype)
+\[ [FTYPE](../../c_intro_userinterfaces/command_summary/parameter_intro/ftype)
 =  { ‘ ‘
 | character } \]
 
-\[ [IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida)
+\[ [IDA](../../c_intro_userinterfaces/command_summary/parameter_intro/ida)
 = identifier \]
 
-\[ [IPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
+\[ [IPART](../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
 = identifier \]
 
-\[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
+\[ [MAXDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
 = { 99991231
 | date } \]
 
-\[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
+\[ [MAXTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
+\[ [MINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
 = { current
 system date | date } \]
 
-\[ [MAXDURATION](maxduration.htm) = ** **<u>0</u>...32767} \]
+\[ MAXDURATION = ** **<u>0</u>...32767} \]
 
-\[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
+\[ [MINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
 = { 0
 | time } \]
 
-\[ [NBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/nblksize)
+\[ [NBLKSIZE](../../c_intro_userinterfaces/command_summary/parameter_intro/nblksize)
 = n \]
 
-\[ [NCODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ncode)
+\[ [NCODE](../../c_intro_userinterfaces/command_summary/parameter_intro/ncode)
 = { ASCII | BINARY | EBCDIC } \]
 
-\[ [NCOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/ncomp)
+\[ [NCOMP](../../c_intro_userinterfaces/command_summary/parameter_intro/ncomp)
 = { 0 | 15 } \]
 
-\[ [NETBAND](../../../c_intro_userinterfaces/command_summary/parameter_intro/netband)
+\[ [NETBAND](../../c_intro_userinterfaces/command_summary/parameter_intro/netband)
 = { 1...16} \]
 
-\[ [NFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/nfname)
+\[ [NFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/nfname)
 = filename \]
 
-\[ [NIDF](../../../c_intro_userinterfaces/command_summary/parameter_intro/nidf)
+\[ [NIDF](../../c_intro_userinterfaces/command_summary/parameter_intro/nidf)
 = string \]
 
-\[ [NKEYLEN](../../../c_intro_userinterfaces/command_summary/parameter_intro/nkeylen)
+\[ [NKEYLEN](../../c_intro_userinterfaces/command_summary/parameter_intro/nkeylen)
 = { 0
 | n } \]
 
-\[ [NKEYPOS](../../../c_intro_userinterfaces/command_summary/parameter_intro/nkeypos)
+\[ [NKEYPOS](../../c_intro_userinterfaces/command_summary/parameter_intro/nkeypos)
 = { 0
 | n }\]
 
-\[ [NLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/nlrecl)
+\[ [NLRECL](../../c_intro_userinterfaces/command_summary/parameter_intro/nlrecl)
 = n  \]
 
-\[ [NPAD](../../../c_intro_userinterfaces/command_summary/parameter_intro/npad) = { <u>' '</u> | character } \]
+\[ [NPAD](../../c_intro_userinterfaces/command_summary/parameter_intro/npad) = { <u>' '</u> | character } \]
 
-\[ [NRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm)
+\[ [NRECFM](../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm)
 = { ‘
 ‘ | F | U | V } \]
 
-\[ [NSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/nspace)
+\[ [NSPACE](../../c_intro_userinterfaces/command_summary/parameter_intro/nspace)
 = { FSPACE
 value | n } \]
 
-\[ [NTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ntype)
+\[ [NTYPE](../../c_intro_userinterfaces/command_summary/parameter_intro/ntype)
 = { ' ' | character } \]
 
-\[ [PARM](../../../c_intro_userinterfaces/command_summary/parameter_intro/parm)
+\[ [PARM](../../c_intro_userinterfaces/command_summary/parameter_intro/parm)
 = string \]
 
-\[ [PRESTATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/prestate) = { ' ' | character } \]
+\[ [PRESTATE](../../c_intro_userinterfaces/command_summary/parameter_intro/prestate) = { ' ' | character } \]
 
-\[ [PREMINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/premindate) = date \]
+\[ [PREMINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/premindate) = date \]
 
-\[ [PREMINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/premintime) = time \]
+\[ [PREMINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/premintime) = time \]
 
-\[ [PRETIMEOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/pretimeout) = { 0 | n } \]
+\[ [PRETIMEOUT](../../c_intro_userinterfaces/command_summary/parameter_intro/pretimeout) = { 0 | n } \]
 
-\[ [POSTMINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/postmindate) = date \]
+\[ [POSTMINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/postmindate) = date \]
 
-\[ [POSTMINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/postmintime) = time \]
+\[ [POSTMINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/postmintime) = time \]
 
-\[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
+\[ [PRI](../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
 = { 128
 | n } \]
 
-\[ [PROT](../../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
+\[ [PROT](../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
 
-\[ [RAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
+\[ [RAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
 = string \]
 
-\[ [RUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
+\[ [RUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
 = string \]
 
-\[ [SAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
+\[ [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 = string \]
 
-\[ [SELFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/selfname)
+\[ [SELFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/selfname)
  = filename
 \]
 
-\[ [SERIAL](../../../c_intro_userinterfaces/command_summary/parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
+\[ [SERIAL](../../c_intro_userinterfaces/command_summary/parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [SPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/spart)
+\[ [SPART](../../c_intro_userinterfaces/command_summary/parameter_intro/spart)
 = identifier \]
 
-\[ [STATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/state)
+\[ [STATE](../../c_intro_userinterfaces/command_summary/parameter_intro/state)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
+\[ [SUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
-\[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
+\[ [TCYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
+\[ [TRK](../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
-\[ [WORKINGDIR](../../../c_intro_userinterfaces/command_summary/parameter_intro/workingdir) = string \]
+\[ [WORKINGDIR](../../c_intro_userinterfaces/command_summary/parameter_intro/workingdir) = string \]
 
-\[ [WPHASES](wphases.htm) = { string } \]
+\[ WPHASES = { string } \]
 
-\[ [WPHASESTEPS](wphasesteps.htm) = { string } \]
+\[ WPHASESTEPS = { string } \]
 
-\[ [WSTATES](wstates.htm) = { string } \]
+\[ WSTATES = { string } \]
 
-\[ [WTIMEOUT](wtimeout.htm) = { integer } \]
+\[ WTIMEOUT = { integer } \]
 
-\[ [XLATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate)
+\[ [XLATE](../../c_intro_userinterfaces/command_summary/parameter_intro/xlate)
 = identifier \]
 
  
 
 SEND TYPE = MESSAGE  
 
-[IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
+[IDM](../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
 = identifier  
 
-[MSG](../../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
+[MSG](../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
 = string   
 
-[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part)
+[PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part)
 = identifier
 
-\[ [APPCYCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
+\[ [APPCYCID](../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
 = string \]
 
-\[ [APPOBJID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
+\[ [APPOBJID](../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
 = string \]
 
-\[ [CYCDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
+\[ [CYCDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
 = date \]
 
-\[ [CYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
+\[ [CYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
 = { 0
 | n } \]
 
-\[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
+\[ [CYCTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
 = time \]
 
-\[ [DACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/daction) = { ERROR | RESUME} \]
+\[ [DACTION](../../c_intro_userinterfaces/command_summary/parameter_intro/daction) = { ERROR | RESUME} \]
 
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
+\[ [EXEC](../../c_intro_userinterfaces/command_summary/parameter_intro/exec)
 = filename \]
 
-\[ [IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida)
+\[ [IDA](../../c_intro_userinterfaces/command_summary/parameter_intro/ida)
 = identifier \]
 
-\[ [IPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
+\[ [IPART](../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
 = identifier \]
 
-\[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
+\[ [MAXDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
 = { 99991231
 | date  }
 \]
 
-\[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
+\[ [MAXTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
 = { 23595999
 | time }  \]
 
-\[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
+\[ [MINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
 = { current
 system date | date } \]
 
-\[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
+\[ [MINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
 = { 0
 | time } \]
 
-\[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
+\[ [PRI](../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
 = pri  \]
 
-\[ [PROT](../../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
+\[ [PROT](../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
 
-\[ [RAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
+\[ [RAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
 = string \]
 
-\[ [RUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
+\[ [RUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
 = string \]
 
-\[ [SAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
+\[ [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 = string \]
 
-\[ [SPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/spart)
+\[ [SPART](../../c_intro_userinterfaces/command_summary/parameter_intro/spart)
 = identifier \]
 
-\[ [STATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/state)
+\[ [STATE](../../c_intro_userinterfaces/command_summary/parameter_intro/state)
 = { DISP
 | HOLD | KEEP } \]
 
-\[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
+\[ [SUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
-\[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
+\[ [TCYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
+\[ [TRK](../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
@@ -384,75 +384,75 @@ system date | date } \]
 
 SEND TYPE = REPLY
 
-[IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
+[IDM](../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
 = identifier
 
-[IDT](../../../c_intro_userinterfaces/command_summary/parameter_intro/idu)
+[IDT](../../c_intro_userinterfaces/command_summary/parameter_intro/idu)
 = transid  
 
-[MSG](../../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
+[MSG](../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
 = string   
 
-[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part)
+[PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part)
 = identifier
 
-\[ [APPCYCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
+\[ [APPCYCID](../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
 = string \]
 
-\[ [APPOBJID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
+\[ [APPOBJID](../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
 = string \]
 
-\[ [CYCDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
+\[ [CYCDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
 = date \]
 
-\[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
+\[ [CYCTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
 = time \]
 
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) = filename \]
+\[ [EXEC](../../c_intro_userinterfaces/command_summary/parameter_intro/exec) = filename \]
 
-\[ [IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida) = identifier \]
+\[ [IDA](../../c_intro_userinterfaces/command_summary/parameter_intro/ida) = identifier \]
 
-\[ [IPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
+\[ [IPART](../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
 = string \]
 
-\[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
+\[ [MAXDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
 =  { 99991231
 | date } \]
 
-\[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
+\[ [MAXTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
+\[ [MINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
 = { current
 system date | date } \]
 
-\[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
+\[ [MINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
 = { 0
 | time } \]
 
-\[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
+\[ [PRI](../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
 = pri \]
 
-\[ [PROT](../../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
+\[ [PROT](../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
 
-\[ [RAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
+\[ [RAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
 = string \]
 
-\[ [RUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
+\[ [RUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
 = string \]
 
-\[ [SAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
+\[ [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 = string \]
 
-\[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
+\[ [SUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
-\[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
+\[ [TCYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
+\[ [TRK](../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]
 
@@ -460,74 +460,74 @@ system date | date } \]
 
 SEND TYPE = NACK
 
-[IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
+[IDM](../../c_intro_userinterfaces/command_summary/parameter_intro/idm)
 = identifier
 
-[IDT](../../../c_intro_userinterfaces/command_summary/parameter_intro/idu)
+[IDT](../../c_intro_userinterfaces/command_summary/parameter_intro/idu)
 = transid  
 
-[MSG](../../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
+[MSG](../../c_intro_userinterfaces/command_summary/parameter_intro/msg)
 = string   
 
-[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part)
+[PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part)
 = identifier
 
-\[ [APPCYCID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
+\[ [APPCYCID](../../c_intro_userinterfaces/command_summary/parameter_intro/appcycid)
 = string \]
 
-\[ [APPOBJID](../../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
+\[ [APPOBJID](../../c_intro_userinterfaces/command_summary/parameter_intro/appobjid)
 = string \]
 
-\[ [CYCDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
+\[ [CYCDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/cycdate)
 = date \]
 
-\[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
+\[ [CYCTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
 = time \]
 
-\[ [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) = filename \]
+\[ [EXEC](../../c_intro_userinterfaces/command_summary/parameter_intro/exec) = filename \]
 
-\[ [IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida) = identifier \]
+\[ [IDA](../../c_intro_userinterfaces/command_summary/parameter_intro/ida) = identifier \]
 
-\[ [IPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
+\[ [IPART](../../c_intro_userinterfaces/command_summary/parameter_intro/ipart)
 = string \]
 
-\[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
+\[ [MAXDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
 =  { 99991231
 | date } \]
 
-\[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
+\[ [MAXTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
 = { 23595999
 | time } \]
 
-\[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
+\[ [MINDATE](../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
 = { current
 system date | date } \]
 
-\[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
+\[ [MINTIME](../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
 = { 0
 | time } \]
 
-\[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
+\[ [PRI](../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
 = pri \]
 
-\[ [PROT](../../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
+\[ [PROT](../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
 
-\[ [RAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
+\[ [RAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/rappl)
 = string \]
 
-\[ [RUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
+\[ [RUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/ruser)
 = string \]
 
-\[ [SAPPL](../../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
+\[ [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 = string \]
 
-\[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
+\[ [SUSER](../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
-\[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
+\[ [TCYCLE](../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
 = { DAY
 | MIN | MONTH } \]
 
-\[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
+\[ [TRK](../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
 = { UNDEFINED
 | ALL | SUMMARY | NO } \]

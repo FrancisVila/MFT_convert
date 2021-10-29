@@ -1,25 +1,23 @@
 {
-    "title": "CFTPARM - General parameters definition ",
+    "title": "General  parameters definition",
     "linkTitle": "CFTPARM - General parameters definition ",
     "weight": "300"
-}# <span id="kanchor76"></span><span id="General_parameters__Start_here"></span>General parameters definition
-
-This topic describes how to define the general Transfer CFT parameter, which corresponds to the CFTPARM object
+}This topic describes how to define the general Transfer CFT parameter, which corresponds to the CFTPARM object
 in the command line operations.
 
 [What
-is the CFTPARM object?](#what_is_the_cftparm_object_) 
+is the CFTPARM object?](#What_is_the_CFTPARM_object_) 
 
 [How
-does the CFTPARM object work?](#how_does_the_cftparm_object_work_)
+does the CFTPARM object work?](#How_does_the_CFTPARM_object_work_)
 
 Related
 topics
 
 -   Command syntax
-    [CFTPARM](../../../c_intro_userinterfaces/command_summary)
+    [CFTPARM](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTPARM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm)
+    [CFTPARM](../../CFTUTIL/Conf/CFTPARM.htm)
 
 ## <span id="What_is_the_CFTPARM_object_"></span>What is the CFTPARM object?
 
@@ -64,7 +62,7 @@ These parameters are defined at the time Transfer CFT is started and
 cannot be modified dynamically.
 
 The *[End
-of transfer procedures](../../../concepts/about_transfer_processing/procedure_examples)* section provides a complete description
+of transfer procedures](../../Transfers/Trans_concepts/procedure_examples.htm)* section provides a complete description
 of the use of End-of-transfer procedures EXECSE, EXECSF parameters, and
 so on.
 
@@ -92,4 +90,4 @@ Relationships also exist between the value of the NET parameter of the
 CFTPARM object and the values of the NET parameter of the CFTPROT object
 and ID parameter of the CFTNET object. These relationships are described
 in the *[Defining
-network resources and protocol](../network_resource_concepts)*.
+network resources and protocol](Network_resource_concepts.htm)*.

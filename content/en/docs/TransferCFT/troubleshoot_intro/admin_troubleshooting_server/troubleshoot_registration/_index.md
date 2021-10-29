@@ -1,7 +1,7 @@
 {
-    "title": "Installation and registration",
-    "linkTitle": "Installation and registration",
-    "weight": "290"
+    "title": "Troubleshoot  installation and registration",
+    "linkTitle": "Troubleshoot installation and registration",
+    "weight": "310"
 }This section lists some possible post-installation issues along with corresponding corrective actions when applicable. If corrective actions do not remedy the issue, check the **Support tools** section for more information, or contact support at [support.axway.com](https://support.axway.com/).
 
 ## Transfer CFT installation
@@ -19,14 +19,14 @@ Workarounds include:
 -   Create a temporary /home directory on an unprotected disk:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>sudo mkdir /instcft</p>
-<p>sudo chown &lt;user&gt;:&lt;user&gt; /instcft</p>
-<p>export HOME=/instcft (unprotected disk)</p>
-<p>./Transfer_CFT_3.7_Install_linux-x86-64_BN13015241.run --mode unattended</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>sudo mkdir /instcft</p>
+            <p>sudo chown &lt;user&gt;:&lt;user&gt; /instcft</p>
+            <p>export HOME=/instcft (unprotected disk)</p>
+            <p>./Transfer_CFT_3.7_Install_linux-x86-64_BN13015241.run --mode unattended</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Central Governance
@@ -42,13 +42,13 @@ If Copilot starts, but the Transfer CFT either does not display in the Central 
 -   Verify the shared secret for Central Governance used in the Transfer CFT configuration.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See the Central Governance documentation for additional information and details.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See the Central Governance documentation for additional information and details.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Cannot register Transfer CFT with Central Governance (error: (1103))
@@ -68,14 +68,14 @@ This is a Certificate Signing Request / CSR failure because the Transfer CFT tru
 You can use the CFTUTIL CHECK command to validate the coherence of parameters, partners, and the Transfer CFT PKI database.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CHECK CONTENT=BRIEF|FULL, FOUT=FileName</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CHECK CONTENT=BRIEF|FULL, FOUT=FileName         </td>
+      </tr>
+   </tbody>
 </table>
 
-See also, [Use the check command](../../../c_intro_userinterfaces/about_cftutil/check_command).
+See also, [Use the check command](../../c_intro_userinterfaces/about_cftutil/check_command).
 
 ### Registration or Copilot connection issue
 

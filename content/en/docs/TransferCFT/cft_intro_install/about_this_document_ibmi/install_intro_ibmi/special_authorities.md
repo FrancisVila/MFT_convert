@@ -1,5 +1,5 @@
 {
-    "title": "Enable system user control (USERCTRL)",
+    "title": "Enable system user control (USERCTRL) ",
     "linkTitle": "Enable system user control (USERCTRL)",
     "weight": "220"
 }The system user control (USERCTRL) feature allows Transfer CFT to read and write files and execute processing procedures on behalf a user other than the one who operates Transfer CFT.

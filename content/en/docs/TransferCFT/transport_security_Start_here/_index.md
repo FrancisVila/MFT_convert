@@ -1,7 +1,7 @@
 {
     "title": "Security ",
-    "linkTitle": "Security ",
-    "weight": "120"
+    "linkTitle": "About security",
+    "weight": "140"
 }Transfer CFT provides a set of objects that you can use to manage your
 transfer security requirements.
 
@@ -20,49 +20,49 @@ security operations, and comprises a set of sub-sections that describe how to co
 and manage the Transfer CFT security objects as well as use additional Axway products to offer security features.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Topics/sections</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><a href="transport_security_concepts_start_here">Transport
-security concepts</a></p></td>
-<td><p>Describes transfer security concepts that are referred
-to further in this document, as well as how these security functions work.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="configuring_transport_security_start_here">Configuring
-transport security</a></p></td>
-<td><p>Explains how to use line commands to configure the Transfer
-CFT to manage the SSL and TLS protocols.</p></td>
-</tr>
-<tr class="odd">
-<td><p><a href="../c_intro_userinterfaces/command_summary/parameter_intro/certificates">Managing
-certificates</a></p></td>
-<td><p>Explains how to use either the UI or line commands to
-manage security certificates.</p></td>
-</tr>
-<tr class="even">
-<td><p><a href="using_pki_exits_start_here">Using
-PKI exits</a></p></td>
-<td><p>Describes the rules for implementing a PKI exit.</p></td>
-</tr>
-<tr class="odd">
-<td><a href="passport_ps_connection.htm">Using PassPort PS</a></td>
-<td>Describes the parameters used for Transfer CFT to PassPort PS server connectivity, and how to optionally implement SSL, or a clear connection, for increased security.</td>
-</tr>
-<tr class="even">
-<td><a href="tf_overview_cft">Using Trusted File for encoding</a></td>
-<td>Describes how to implement Axway Trusted File encoding.</td>
-</tr>
-<tr class="odd">
-<td><a href="sr_overview">Using SecureRelay</a></td>
-<td>Describes the Axway Secure Relay integration with Transfer CFT.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Topics/sections</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><a href="transport_security_concepts_start_here">Transport
+security concepts</a></p>         </td>
+         <td>            <p>Describes transfer security concepts that are referred
+to further in this document, as well as how these security functions work.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="configuring_transport_security_start_here">Configuring
+transport security</a></p>         </td>
+         <td>            <p>Explains how to use line commands to configure the Transfer
+CFT to manage the SSL and TLS protocols.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><a href="certificates">Managing
+certificates</a></p>         </td>
+         <td>            <p>Explains how to use either the UI or line commands to
+manage security certificates.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><a href="using_pki_exits_start_here">Using
+PKI exits</a></p>         </td>
+         <td>            <p>Describes the rules for implementing a PKI exit.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>Using PassPort PS         </td>
+         <td>Describes the parameters used for Transfer CFT to PassPort PS server connectivity, and how to optionally implement SSL, or a clear connection, for increased security.         </td>
+      </tr>
+      <tr class="even">
+         <td><a href="../../TrustedFile/tf_overview_cft.htm">Using Trusted File for encoding</a>         </td>
+         <td>Describes how to implement Axway Trusted File encoding.         </td>
+      </tr>
+      <tr class="odd">
+         <td><a href="../../secure_relay/sr_overview.htm">Using SecureRelay</a>         </td>
+         <td>Describes the Axway Secure Relay integration with Transfer CFT.         </td>
+      </tr>
+   </tbody>
 </table>
 
  

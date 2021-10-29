@@ -15,6 +15,6 @@
 
 For these exercises repeat the steps and create 3 applications, MainOffice, Store\_66, and Store\_89.
 
-![](create_application_w_cg.png)
+![](/Images/TransferCFT/create_application_w_cg.png)
 
-&lt;&lt; [My first transfer flow](../../)
+&lt;&lt; [My first transfer flow](../)

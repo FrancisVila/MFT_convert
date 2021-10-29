@@ -26,4 +26,4 @@ This text may include spaces. It must be included between single quotes
 
 Information message to be written in the log file.
 
-[Return to Command index](../../)
+[Return to Command index](../)

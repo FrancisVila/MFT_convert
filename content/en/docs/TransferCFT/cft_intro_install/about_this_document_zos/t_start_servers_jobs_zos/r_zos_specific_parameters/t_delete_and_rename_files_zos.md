@@ -3,13 +3,13 @@
     "linkTitle": "Work with files",
     "weight": "300"
 }<table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## About files
@@ -67,5 +67,5 @@ The CFTFILES ENQs do not need to be broadcast to all systems in the GRS RING.
 
 Related topics
 
--   [File access and coding](../file_access_and_coding)
--   [HFS hierarchical files](../c_hfs_hierarchical_files_zos)
+-   [File access and coding](file_access_and_coding)
+-   [HFS hierarchical files](c_hfs_hierarchical_files_zos)

@@ -8,25 +8,25 @@
 -   Transfer CFT for HP NonStop x86, which runs specifically on HP NonStop for Intel x86 processors.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT for HP NonStop, globally stands for both versions of this product.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT for HP NonStop, globally stands for both versions of this product.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The NonStop OS basically consists of a Guardian layer, which is a lower level of the operating system, and an OSS layer that rests on top of Guardian and implements a Unix-like interface for the underlying Guardian layer. This document may contain references to Guardian, NonStop, or OSS, all of which refer to the same overall HP NonStop platform.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To accommodate changing product versions, the convention &lt;version&gt; is used in place of the actual product version in examples and lists. You should replace this with the actual value. Using the same logic, you can replace &lt;os&gt;, &lt;arch&gt;, and &lt;xx&gt; with your target platform details. For example, <span>Transfer_CFT_&lt;version&gt;_&lt;os&gt;-&lt;arch&gt;-&lt;xx&gt;</span> becomes Transfer_CFT_3.2.x_hp_nonstop_oss-ia64-32 when referring to Transfer CFT V3.2.x for HP NonStop OSS-IA64-32bits.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To accommodate changing product versions, the convention &lt;version&gt; is used in place of the actual product version in examples and lists. You should replace this with the actual value. Using the same logic, you can replace &lt;os&gt;, &lt;arch&gt;, and &lt;xx&gt; with your target platform details. For example, <span>Transfer_CFT_&lt;version&gt;_&lt;os&gt;-&lt;arch&gt;-&lt;xx&gt;</span> becomes Transfer_CFT_3.2.x_hp_nonstop_oss-ia64-32 when referring to Transfer CFT V3.2.x for HP NonStop OSS-IA64-32bits.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Delivered components
@@ -49,11 +49,11 @@ The following disk space calculations are the minimum requirements for a test en
 Transfer CFT needs to access a random device for its security operations. Since HP NonStop OSS is not equipped with such a device, your system administrator should activate this daemon under SUPER.SUPER user. The start command resembles the following:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>/usr/coreutils/sbin/prngd -c /usr/local/etc/prngd/prngd.conf /etc/egd-pool</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>/usr/coreutils/sbin/prngd -c /usr/local/etc/prngd/prngd.conf /etc/egd-pool         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Additional requirements
@@ -62,13 +62,13 @@ Transfer CFT needs to access a random device for its security operations. Since 
 -   Transfer CFT for HP NonStop x86 is built on an L-series TNS/X x86 machine. The operating system Release Version Update (RVU) used is L15.08.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Even though it may be possible to run Transfer CFT for HP NonStop on an older RVU, we recommend that you run the product on a more recent RVU (or similar to the following) to ensure that the product stability and performance is not impaired by an old-system component. More information is available in the <em>HP Release Version Update Compendium</em> manuals.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Even though it may be possible to run Transfer CFT for HP NonStop on an older RVU, we recommend that you run the product on a more recent RVU (or similar to the following) to ensure that the product stability and performance is not impaired by an old-system component. More information is available in the <em>HP Release Version Update Compendium</em> manuals.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   The Open System Services (OSS) subsystem should be installed.

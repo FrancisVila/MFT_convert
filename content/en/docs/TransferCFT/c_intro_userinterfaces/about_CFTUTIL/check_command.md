@@ -7,11 +7,11 @@
 The syntax is:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName         </td>
+      </tr>
+   </tbody>
 </table>
 
 The CHECK CONTENT=BRIEF (default) command verifies that:

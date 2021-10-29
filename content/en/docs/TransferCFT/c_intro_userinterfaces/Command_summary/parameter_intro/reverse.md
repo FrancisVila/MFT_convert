@@ -13,4 +13,4 @@ one after the other. Applicable only in requester mode.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

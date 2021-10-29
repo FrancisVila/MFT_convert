@@ -22,33 +22,33 @@ This defines
 3 outgoing port ranges:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SRCPORTS=(6000-6009,6010-6019,6020-6030)</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SRCPORTS=(6000-6009,6010-6019,6020-6030)         </td>
+      </tr>
+   </tbody>
 </table>
 
 Operating system port selection:
   
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SRCPORTS= ()</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SRCPORTS= ()         </td>
+      </tr>
+   </tbody>
 </table>
 
 1 port range
 is still possible
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SRCPORTS=(6000-6030)</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SRCPORTS=(6000-6030)         </td>
+      </tr>
+   </tbody>
 </table>
 
-[Return to Command index](../../)
+[Return to Command index](../)

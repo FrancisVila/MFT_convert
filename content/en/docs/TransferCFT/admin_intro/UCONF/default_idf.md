@@ -1,5 +1,5 @@
 {
-    "title": "Deactivating the default IDF",
+    "title": "Deactivate the default IDF ",
     "linkTitle": "Deactivating the default IDF",
     "weight": "370"
 }You can deactivate the usage of the default IDF defined in CFTPARM that is used when the IDF in SEND or RECV commands does not exist. In this case, transfers that use nonexistent IDFs will end in error.

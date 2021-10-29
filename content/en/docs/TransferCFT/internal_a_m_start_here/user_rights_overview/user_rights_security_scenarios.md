@@ -9,11 +9,11 @@ For more information on roles and privileges in Central Governance, refer to the
 In this section:
 
 -   User scenario with no security applied
--   [User types](#user): Describes the actions that example users can perform
--   [Use case 1](#security): Security controlled by Central Governance roles
--   [Use case 2](#security2): Security controlled by USERCTRL and file rights
--   [Use case 3](#security3): Security controlled by copilot.misc.createprocessasuser
--   [Define additional user rights security option](#define)
+-   [User types](#User): Describes the actions that example users can perform
+-   [Use case 1](#Security): Security controlled by Central Governance roles
+-   [Use case 2](#Security2): Security controlled by USERCTRL and file rights
+-   [Use case 3](#Security3): Security controlled by copilot.misc.createprocessasuser
+-   [Define additional user rights security option](#Define)
 
 ## <span id="Use"></span>Use case with no security applied
 
@@ -26,60 +26,60 @@ This section presents example user types, and describes the actions that they ca
 These scenarios are based on a single Transfer CFT, **Machine1** in our examples, that is managed by Central Governance.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>User type</th>
-<th>CG role(s)</th>
-<th>Machine1 user</th>
-<th>File access</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Monitoring Assistant</p></td>
-<td><p>Help Desk</p>
-<p>for Transfer CFT</p></td>
-<td>Not defined</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>Operator</td>
-<td>IT Manager for CG</td>
-<td>Defined</td>
-<td><p>All permissions on runtime files, but does not have access to other user's working directories</p></td>
-</tr>
-<tr class="odd">
-<td>Partner Manager</td>
-<td>CG Admin</td>
-<td>Not defined</td>
-<td>No privileges on the physical files</td>
-</tr>
-<tr class="even">
-<td>Flow Manager</td>
-<td><p>Middleware</p>
-<p>Manager for CG, and Application for Transfer CFT</p></td>
-<td>Defined</td>
-<td>Rights on Machine1, and his own working directory</td>
-</tr>
-<tr class="odd">
-<td>Superuser</td>
-<td>N/A</td>
-<td>Defined</td>
-<td>Rights on all runtime files on Machine1, but no rights on user's working directories</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>User type</th>
+         <th>CG role(s)</th>
+         <th>Machine1 user</th>
+         <th>File access</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Monitoring Assistant</p>         </td>
+         <td>            <p>Help Desk</p>
+            <p>for Transfer CFT</p>         </td>
+         <td>Not defined         </td>
+         <td>N/A         </td>
+      </tr>
+      <tr class="even">
+         <td>Operator         </td>
+         <td>IT Manager for CG         </td>
+         <td>Defined         </td>
+         <td>            <p>All permissions on runtime files, but does not have access to other user's working directories</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>Partner Manager         </td>
+         <td>CG Admin         </td>
+         <td>Not defined         </td>
+         <td>No privileges on the physical files         </td>
+      </tr>
+      <tr class="even">
+         <td>Flow Manager         </td>
+         <td>            <p>Middleware</p>
+            <p>Manager for CG, and Application for Transfer CFT</p>         </td>
+         <td>Defined         </td>
+         <td>Rights on Machine1, and his own working directory         </td>
+      </tr>
+      <tr class="odd">
+         <td>Superuser         </td>
+         <td>N/A         </td>
+         <td>Defined         </td>
+         <td>Rights on all runtime files on Machine1, but no rights on user's working directories         </td>
+      </tr>
+   </tbody>
 </table>
 
 Remember that these are examples and your system users, assigned roles, and file rights will vary.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When referring to user's working directories, in these use cases the working directories are located outside of the runtime directory.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When referring to user's working directories, in these use cases the working directories are located outside of the runtime directory.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Security"></span>Security controlled by Central Governance roles
@@ -87,13 +87,13 @@ Remember that these are examples and your system users, assigned roles, and file
 In this security scenario, the central governance roles are the exclusive defining security system (i.e. the parameters USERCTRL and copilot.misc are set to NO, the default settings).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">The transfer owner in this scenario is the user that started <span>Transfer CFT</span>. All actions are done by the user that started the <span>Copilot</span> server, pending rights given by the Central Governance roles. This applies to all of the registered <span>Central Governance</span> users. The superuser however can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">The transfer owner in this scenario is the user that started <span>Transfer CFT</span>. All actions are done by the user that started the <span>Copilot</span> server, pending rights given by the Central Governance roles. This applies to all of the registered <span>Central Governance</span> users. The superuser however can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Monitoring Assistant
@@ -145,13 +145,13 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 The following scenario consists of a single Transfer CFT with the USERCTRL parameter set to **yes**.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Reminder, when copilot.misc.createprocessasuser=no, the user may be known by <span>Central Governance</span>, though not necessarily known by Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Reminder, when copilot.misc.createprocessasuser=no, the user may be known by <span>Central Governance</span>, though not necessarily known by Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.         </td>
+      </tr>
+   </tbody>
 </table>
 
 USERCTRL is set to YES and file rights are assigned to each specific type of user. Rights depend on user/role type (limitation).
@@ -201,13 +201,13 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 -   Start/stop Transfer CFT: YES, but only via CFTUTIL
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When copilot.misc.createprocessasuser=no, the user may be known on <span>Central Governance</span>, but not necessarily known on Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When copilot.misc.createprocessasuser=no, the user may be known on <span>Central Governance</span>, but not necessarily known on Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Security3"></span>Security controlled by copilot.misc.createprocessasuser
@@ -270,5 +270,5 @@ This example describes how to add an additional user rights security restriction
 
 Related topics
 
--   [About system users](..//transfercft/internal_a_m_start_here/user_rights_overview)
--   [Recommendations and troubleshooting](../user_rights_tips)
+-   [About system users](user_rights_overview.htm)
+-   [Recommendations and troubleshooting](user_rights_tips.htm)

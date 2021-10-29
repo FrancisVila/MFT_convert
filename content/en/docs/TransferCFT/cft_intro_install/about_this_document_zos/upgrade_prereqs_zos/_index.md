@@ -1,21 +1,21 @@
 {
-    "title": "Update, upgrade, or migrate ",
+    "title": "Update, upgrade, or migrate",
     "linkTitle": "Update, upgrade, or migrate ",
     "weight": "180"
 }## Before you start
 
 This section describes how to upgrade or migrate to Transfer CFT 3.9. Additionally, it describes the two methods for updating Transfer CFT z/OS and provides links to detailed information.
 
-See the section [System requirements](../c_about_zos/r_prerequistes_zos) for details on system prerequisites.
+See the section [System requirements](c_about_zos/r_prerequistes_zos) for details on system prerequisites.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You should not modify the CSD files (library XMLLIB: members CSDCFT and CSDCG) or the UCONF dictionary (library UPARM: member DEFAULT), as these items are updated in the instance (runtime) during the following procedures.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You should not modify the CSD files (library XMLLIB: members CSDCFT and CSDCG) or the UCONF dictionary (library UPARM: member DEFAULT), as these items are updated in the instance (runtime) during the following procedures.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Update procedure
@@ -43,11 +43,11 @@ This procedure involves a change in product version and the replacement of binar
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require as many keys as instances of <span>Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
+      </tr>
+   </tbody>
 </table>

@@ -25,15 +25,15 @@ The second version (1991) specifies that:
     protocol field corresponds to the EERP receiver (i.e. the file sender)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must check the consistency of the customized values from one
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must check the consistency of the customized values from one
 end to another. Indeed, if the sender and receiver have different versions,
-it is not possible to acknowledge the transfer.</td>
-</tr>
-</tbody>
+it is not possible to acknowledge the transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
-[Return to Command index](../../)
+[Return to Command index](../)

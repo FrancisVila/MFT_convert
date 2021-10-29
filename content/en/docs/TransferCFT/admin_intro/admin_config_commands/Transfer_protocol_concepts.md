@@ -1,10 +1,8 @@
 {
-    "title": "CFTPROT - Transfer protocol ",
+    "title": "Transfer  protocol ",
     "linkTitle": "CFTPROT - Transfer protocol ",
     "weight": "310"
-}# <span id="Defining_the_transfer_protocol__Start_here"></span>Transfer protocol
-
-For computers to transfer files, a set of transfer rules must
+}For computers to transfer files, a set of transfer rules must
 be established. The CFTPROT object sets up these transfer rules, or file
 transfer protocols. Transfer protocols include:
 
@@ -15,11 +13,11 @@ Related
 topics
 
 -   Command syntax
-    [CFTPROT](../../../c_intro_userinterfaces/command_summary)
+    [CFTPROT](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTPROT](../../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftprot_command_line)
+    [CFTPROT](../../Security/Transport/CFTPROT_command_line.htm)
 -   [Proxy
-    and SOCKS protocol](../../../protocols_start_here/ipv6/use_proxy_and_socks_protocol)
+    and SOCKS protocol](../../Prots/internet/use_Proxy_and_SOCKS_protocol.htm)
 
 ## <span id="About_the_CFTPROT_Transfer_Protocol"></span>What is the CFTPROT object?
 
@@ -77,22 +75,22 @@ the following:
 -   The parameter allowing
     the association of a protocol to a security profile, or SSL, as described
     in [Transport
-    Security](../../../transport_security_start_here/configuring_transport_security_start_here)
+    Security](../../Security/Transport/Configuring_transport_security_Start_here.htm)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In general, the
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In general, the
 parameters beginning with an <em>S</em> control the send transfers operation, and
 those beginning with an <em>R</em> control the receive transfers operation. This does
 not necessarily apply when transfers in different directions are performed
-in sequence during the same connection.</td>
-</tr>
-</tbody>
+in sequence during the same connection.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
-[Transfers via a proxy and SOCKS protocol](../../../protocols_start_here/ipv6/use_proxy_and_socks_protocol)
+[Transfers via a proxy and SOCKS protocol](../../Prots/internet/use_Proxy_and_SOCKS_protocol.htm)

@@ -17,6 +17,6 @@ This parameter has a maximum length of 64 characters.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

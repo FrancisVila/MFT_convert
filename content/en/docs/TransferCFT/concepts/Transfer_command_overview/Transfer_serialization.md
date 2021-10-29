@@ -4,7 +4,7 @@
     "weight": "250"
 }## Requester mode
 
-If the number of outgoing connections ([CNXOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/cnxout))
+If the number of outgoing connections ([CNXOUT](../../c_intro_userinterfaces/command_summary/parameter_intro/cnxout))
 is 1 for a partner, then all transfers with the same level of priority
 are activated in order of their submitted request.
 

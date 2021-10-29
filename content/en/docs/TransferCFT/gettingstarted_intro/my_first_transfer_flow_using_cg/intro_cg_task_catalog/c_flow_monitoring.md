@@ -76,4 +76,4 @@ Finds all flows in error today.
 
 Click the name of the search to execute it. There are no conditions to specify. The search filters by today's date.
 
-&lt;&lt; [My first transfer flow](../../)
+&lt;&lt; [My first transfer flow](../)

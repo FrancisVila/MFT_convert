@@ -28,4 +28,4 @@ CTO = {1|n} {1….32767}
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

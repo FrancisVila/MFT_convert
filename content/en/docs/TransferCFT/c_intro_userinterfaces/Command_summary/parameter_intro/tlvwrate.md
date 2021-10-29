@@ -17,7 +17,7 @@ alert generates 2 actions:
 -   Sends a message
     to the LOG
 -   Executes
-    a batch to react to the alert, the [TLVWEXEC](../tlvcexec)
+    a batch to react to the alert, the [TLVWEXEC](tlvcexec)
     parameter
 
 This value is in seconds, where:
@@ -26,4 +26,4 @@ This value is in seconds, where:
 -   0 means that only
     the first alert is issued
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,12 +1,12 @@
 {
-    "title": "How to use autocomplete",
+    "title": "Time-saving shortcuts",
     "linkTitle": "How to use autocomplete",
     "weight": "180"
 }Transfer CFT offers several commands and options that enable you to work more quickly and efficiently. The following sections describe:
 
--   [Using autocompletion](#using)
--   [Using the check command](#using2)
--   [Using the previous/next shortcut](#previous)
+-   [Using autocompletion](#Using)
+-   [Using the check command](#Using2)
+-   [Using the previous/next shortcut](#Previous)
 
 ## <span id="Using"></span>Using bash autocompletion
 
@@ -14,28 +14,28 @@
 
 To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for CFTUTIL, PKIUTIL, and the cft commands. This feature intuitively provides commands and available parameters along with a brief description. Additionally, for certain parameters Bash autocompletion proposes a list of possible parameter values, either static or dynamic, depending on the parameter.
 
--   [Keyboard shortcuts](#special)
-    -   [Use the Bash autocompletion keys](#auto-com)
-    -   [UCONF parameter specifics](#uconf%c2%a0pa)
+-   [Keyboard shortcuts](#Special)
+    -   [Use the Bash autocompletion keys](#Auto-com)
+    -   [UCONF parameter specifics](#UCONF%C2%A0pa)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: <code>CFTUTIL SEND</code></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: <code>CFTUTIL SEND</code>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Special"></span>Keyboard shortcuts
@@ -43,83 +43,83 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
 The CFTUTIL utility uses the following keys as shortcuts when entering a command.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Key</p></th>
-<th><p>Action</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Left Arrow</p></td>
-<td><p>Move the cursor one character to the left.</p></td>
-</tr>
-<tr class="even">
-<td><p>Right Arrow</p></td>
-<td><p>Move the cursor one character to the right.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Ctrl + Left Arrow</p></td>
-<td><p>Move the cursor one word to the left.</p></td>
-</tr>
-<tr class="even">
-<td><p>Ctrl + Right Arrow</p></td>
-<td><p>Move the cursor one word to the right.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Home</p></td>
-<td><p>Move the cursor to the first character of the command.</p></td>
-</tr>
-<tr class="even">
-<td><p>End</p></td>
-<td><p>Move the cursor after the last character of the command.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Del</p></td>
-<td><p>Remove the character at the cursor position.</p></td>
-</tr>
-<tr class="even">
-<td><p>Backspace</p></td>
-<td><p>Remove the character before the cursor.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Insert</p></td>
-<td><p>Switch between insertion and replace mode.</p></td>
-</tr>
-<tr class="even">
-<td><p>Escape</p></td>
-<td><p>Erase the command (Windows only).</p></td>
-</tr>
-<tr class="odd">
-<td><p>Enter</p></td>
-<td><p>Submit the command.</p></td>
-</tr>
-<tr class="even">
-<td><p>Ctrl + C</p></td>
-<td><p>CFTUTIL hard exit (not recommended).</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Key</p></th>
+         <th>            <p>Action</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>Left Arrow</p>         </td>
+         <td>            <p>Move the cursor one character to the left.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Right Arrow</p>         </td>
+         <td>            <p>Move the cursor one character to the right.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Ctrl + Left Arrow</p>         </td>
+         <td>            <p>Move the cursor one word to the left.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Ctrl + Right Arrow</p>         </td>
+         <td>            <p>Move the cursor one word to the right.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Home</p>         </td>
+         <td>            <p>Move the cursor to the first character of the command.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>End</p>         </td>
+         <td>            <p>Move the cursor after the last character of the command.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Del</p>         </td>
+         <td>            <p>Remove the character at the cursor position.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Backspace</p>         </td>
+         <td>            <p>Remove the character before the cursor.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Insert</p>         </td>
+         <td>            <p>Switch between insertion and replace mode.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Escape</p>         </td>
+         <td>            <p>Erase the command (Windows only).</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>Enter</p>         </td>
+         <td>            <p>Submit the command.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>Ctrl + C</p>         </td>
+         <td>            <p>CFTUTIL hard exit (not recommended).</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Auto-com"></span>Use the Bash autocompletion keys
 
 You can use the **Tab** and **Shift + Tab** keys to display and scroll through available commands, parameters, and values. If you are not familiar with available commands, begin by pressing **Tab** at the CFTUTIL prompt; the first command, SEND, displays along with a brief description.
 
-![](Auto%20completion%20in%20CFTUTIL_4.png)
+![](/Images/TransferCFT/Auto_completion_in_CFTUTIL.png)
 
 -   Press **Tab** again to display the next available command, RECV. The command list displays commands in order of importance and typical usage. Continue to press **Tab** until the command that you want displays. To reverse the order, use **Shift** + **Tab**.
 
-![](Auto%20completion%20in%20CFTUTIL_4.png)
+![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_1.png)
 
 -   Once you have selected a command press **Space** to validate the selection.
 -   Next, press **Tab** to display the first parameter for that command. Use the same method as for the command - **Tab**, **Shift** + **Tab** , or the initial characters.
 -   If the parameter description is prefaced by an asterisk (\*), the parameter is mandatory. After selecting the parameter, type the equal sign (=) to continue.
 
-![](Auto%20completion%20in%20CFTUTIL_4.png)
+![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_2.png)
 
 -   Once you have selected a parameter value type a comma (,) to valid your choice and go to the next parameter. If there are no additional parameters, press Enter to execute the command.
 
-![](Auto%20completion%20in%20CFTUTIL_4.png)
+![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_3.png)
 
 ### <span id="UCONF pa"></span>UCONF parameter specifics
 
@@ -128,7 +128,7 @@ To display UCONF parameters, from ID= the autocomplete works by completing categ
 -   For example, cft.multi\_node.cftcom.dispatcher\_policy is comprised of 4 categories (cft, multi\_node, cftcom, and dispatcher\_policy).
 -   Once the ID is complete, a space is appended to the parameter name to indicate the end of the parameter.
 
-![](Auto%20completion%20in%20CFTUTIL_4.png)
+![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_4.png)
 
 ## <span id="Using2"></span>Using the check command
 
@@ -137,11 +137,11 @@ The CFTUTIL CHECK command validates the coherence of parameters, partners, and t
 The syntax is:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName         </td>
+      </tr>
+   </tbody>
 </table>
 
 The CHECK CONTENT=BRIEF (default) command verifies that:
@@ -184,33 +184,33 @@ To retrieve a command you know, begin by typing the first characters of the comm
 Use the following uconf parameters to manage the command-history settings.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Parameter</p></th>
-<th><p>Default value</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>cft.readline.history_size</p></td>
-<td><p>500</p></td>
-<td><p>Maximum number of commands that you can store.</p></td>
-</tr>
-<tr class="even">
-<td><p>cft.readline.enable</p></td>
-<td><p>Yes</p></td>
-<td><p>Save and retrieve the commands from disk.</p></td>
-</tr>
-<tr class="odd">
-<td><p>cft.readline.history_fname</p></td>
-<td><ul>
-<li>Win: %APPDATA%\cft\CftutilHistory.txt</li>
-<li>Unix: $(HOME)/.cft_history</li>
-</ul></td>
-<td><p>Name of the file containing the command history.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Parameter</p></th>
+         <th>            <p>Default value</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>cft.readline.history_size</p>         </td>
+         <td>            <p>500</p>         </td>
+         <td>            <p>Maximum number of commands that you can store.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>cft.readline.enable</p>         </td>
+         <td>            <p>Yes</p>         </td>
+         <td>            <p>Save and retrieve the commands from disk.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>cft.readline.history_fname</p>         </td>
+         <td>            <ul>
+               <li>Win: %APPDATA%\cft\CftutilHistory.txt               </li>
+               <li>Unix: $(HOME)/.cft_history               </li>
+            </ul>         </td>
+         <td>            <p>Name of the file containing the command history.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Modify"></span>Modify the command list

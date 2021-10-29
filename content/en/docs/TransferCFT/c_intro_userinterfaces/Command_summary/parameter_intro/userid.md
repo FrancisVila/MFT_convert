@@ -29,15 +29,15 @@ This field can include one or more of the following symbolic variables:
     and PeSIT E protocols)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a SEND or RECV command is used for the transfer, the identifier
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If a SEND or RECV command is used for the transfer, the identifier
 of the transfer owner is the system "userid" of the user having
-activated the command.</td>
-</tr>
-</tbody>
+activated the command.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Windows
@@ -64,22 +64,22 @@ The CRONJOB is executed by the user who started Transfer CFT; you can use the &U
 **USERID = {*string 32*
 }**
 
-Identifier for a user who can scan a folder. See the section, [Folder monitoring using USERCTRL](../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring).
+Identifier for a user who can scan a folder. See the section, [Folder monitoring using USERCTRL](../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring).
 
 If the USERID is set and the Transfer CFT USERCTRL=YES in the CFTPARM object, the folder monitoring is done on behalf another user.
 
 Maximum length 32 characters.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Using a different user (USERID) is not available on Linux if the event mode is enabled (USEFSEVENTS=YES).         </td>
+      </tr>
+   </tbody>
 </table>
 
-When implementing file user rights with USERCTRL on Windows systems, you must run Transfer CFT as a service. Please see [How to enable system users - Windows](../../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows) for more information.
+When implementing file user rights with USERCTRL on Windows systems, you must run Transfer CFT as a service. Please see [How to enable system users - Windows](../../Windows/add_system_user_windows.htm) for more information.
 
-[Return to Command index](../../)
+[Return to Command index](../../Command_summary.htm)

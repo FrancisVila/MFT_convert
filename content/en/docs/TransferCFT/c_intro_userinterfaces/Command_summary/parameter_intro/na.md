@@ -14,4 +14,4 @@ A Non Applicable value is a value that does not mean anything for the concerned 
 
 The default string 'ANY' means that the NA is specified in the model. The default NA used will be '#' if not defined in the model either.
 
-[Return to Command index](../../)
+[Return to Command index](../)

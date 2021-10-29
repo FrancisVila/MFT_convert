@@ -1,7 +1,7 @@
 {
-    "title": "Troubleshoot the Transfer CFT runtime",
-    "linkTitle": "Troubleshoot the Transfer CFT runtime",
-    "weight": "280"
+    "title": "Check the runtime",
+    "linkTitle": "Check the runtime",
+    "weight": "300"
 }Runtime issues can include the following for the server, Copilot, CFTUTIL and other system services:
 
 -   Abend
@@ -14,73 +14,73 @@
 ## Common causes
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Issue</th>
+   <thead>
+      <tr class="header">
+         <th>Issue</th>
 <th colspan="5">Typical causes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td> </td>
-<td><p>Hard disk bottleneck</p></td>
-<td><p>Catalog</p>
-<p>full</p></td>
-<td><p>Network</p>
-<p>bottleneck</p></td>
-<td><p>Memory or processor bottleneck*</p></td>
-<td><p>Corrupt</p>
-<p>file or DB **</p></td>
-</tr>
-<tr class="even">
-<td>Performance</td>
-<td>Disk check</td>
-<td> </td>
-<td>Network checks</td>
-<td>Check application</td>
-<td> </td>
-</tr>
-<tr class="odd">
-<td>Start issue</td>
-<td>Disk check</td>
-<td>Catalog check</td>
-<td>Network checks</td>
-<td>timeout</td>
-<td>Check <span>Transfer CFT</span> files</td>
-</tr>
-<tr class="even">
-<td>Unexpected stop</td>
-<td>Disk check</td>
-<td>Catalog check</td>
-<td>Network checks</td>
-<td> </td>
-<td>Check <span>Transfer CFT</span> files</td>
-</tr>
-<tr class="odd">
-<td>Transfer freeze or infinite looping</td>
-<td>Disk check</td>
-<td> </td>
-<td>Network checks</td>
-<td>Check application</td>
-<td>Check <span>Transfer CFT</span> files</td>
-</tr>
-<tr class="even">
-<td>SP and updates</td>
-<td>Disk check</td>
-<td> </td>
-<td> </td>
-<td> </td>
-<td> </td>
-</tr>
-<tr class="odd">
-<td>Crash</td>
-<td>Disk check</td>
-<td> </td>
-<td>Network checks</td>
-<td> </td>
-<td>Check <span>Transfer CFT</span> files</td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>          </td>
+         <td>            <p>Hard disk bottleneck</p>         </td>
+         <td>            <p>Catalog</p>
+            <p>full</p>         </td>
+         <td>            <p>Network</p>
+            <p>bottleneck</p>         </td>
+         <td>            <p>Memory or processor bottleneck*</p>         </td>
+         <td>            <p>Corrupt</p>
+            <p>file or DB **</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>Performance         </td>
+         <td>Disk check         </td>
+         <td>          </td>
+         <td>Network checks         </td>
+         <td>Check application         </td>
+         <td>          </td>
+      </tr>
+      <tr class="odd">
+         <td>Start issue         </td>
+         <td>Disk check         </td>
+         <td>Catalog check         </td>
+         <td>Network checks         </td>
+         <td>timeout         </td>
+         <td>Check <span>Transfer CFT</span> files         </td>
+      </tr>
+      <tr class="even">
+         <td>Unexpected stop         </td>
+         <td>Disk check         </td>
+         <td>Catalog check         </td>
+         <td>Network checks         </td>
+         <td>          </td>
+         <td>Check <span>Transfer CFT</span> files         </td>
+      </tr>
+      <tr class="odd">
+         <td>Transfer freeze or infinite looping         </td>
+         <td>Disk check         </td>
+         <td>          </td>
+         <td>Network checks         </td>
+         <td>Check application         </td>
+         <td>Check <span>Transfer CFT</span> files         </td>
+      </tr>
+      <tr class="even">
+         <td>SP and updates         </td>
+         <td>Disk check         </td>
+         <td>          </td>
+         <td>          </td>
+         <td>          </td>
+         <td>          </td>
+      </tr>
+      <tr class="odd">
+         <td>Crash         </td>
+         <td>Disk check         </td>
+         <td>          </td>
+         <td>Network checks         </td>
+         <td>          </td>
+         <td>Check <span>Transfer CFT</span> files         </td>
+      </tr>
+   </tbody>
 </table>
 
 \* Axway or third party software.
@@ -102,7 +102,7 @@
 
 When the catalog is full stops and you cannot restart it without a correction action to reduce the size of the catalog. Note that this does not necessarily mean that the disk is full.
 
--   See the [Catalog housekeeping](../../../admin_intro/admin_monitoring_intro/housekeeping_catalog) section
+-   See the [Catalog housekeeping](../../admin_intro/admin_monitoring_intro/housekeeping_catalog) section
 -   Backup your catalog and export the existing catalog
 
 ### Export the full catalog

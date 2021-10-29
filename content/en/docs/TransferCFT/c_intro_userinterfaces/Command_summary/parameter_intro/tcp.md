@@ -15,8 +15,8 @@ Processing method used for protocol messages:
 
 This value applies in both initiator and responder mode.
 
-See also, [Configuring Odette](../../../../protocols_start_here/start_here_odette/configuring_odette).
+See also, [Configuring Odette](../../../protocols_start_here/start_here_odette/configuring_odette).
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

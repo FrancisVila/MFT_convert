@@ -10,4 +10,4 @@
 
 Time in seconds for which CFTUTIL is deactivated.
 
-[Return to Command index](../../)
+[Return to Command index](../)

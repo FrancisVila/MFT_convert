@@ -1,10 +1,8 @@
 {
-    "title": "Creating authorizations lists CFTAUTH",
+    "title": "Create  an authorized/unauthorized identifiers list",
     "linkTitle": "Creating authorizations lists CFTAUTH",
     "weight": "160"
-}# <span id="Creating_Authorization_lists__Start_here"></span>Create an authorized/unauthorized identifiers list<span id="About_the_CFTAUTH_object"></span>
-
-The CFTAUTH object can represent either a list of authorized or a list of unauthorized file identifiers for a partner.
+}The CFTAUTH object can represent either a list of authorized or a list of unauthorized file identifiers for a partner.
 
 ## List of authorized identifiers
 
@@ -25,7 +23,7 @@ The following can be associated with each partner:
 -   Receive list: The identifier of the receive list is defined by the value of the RAUTH
     parameter of CFTPART.
 
-For an example and command parameter details, see [Authorized flow definitions - CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
+For an example and command parameter details, see [Authorized flow definitions - CFTAUTH](../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftauth).
 
 ## List of unauthorized identifiers
 
@@ -36,18 +34,18 @@ Example list of unauthorized IDFs
 With CFTAUTH ID = NOTSIBM1 in the CFTPART definition, and SAUTH = NOTSIBM1, then the APLI1 and APLI2 IDFs are not transferred to the IBM1 partner. When the CFTAUTH ID is prefixed by `NOT`, note that all other IDFs that are not included in the IDF list are consequently authorized.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART    ID = IBM1,</p>
-<p>SAUTH = <span>NOT</span>SIBM1</p>
-<p>CFTPART     ID = BULGC8,</p>
-<p>RAUTH = RBULGC8</p>
-<p>CFTAUTH     ID = <span>NOT</span>SIBM1,</p>
-<p>IDF = (APLI1,APLI2)</p>
-<p>CFTAUTH      ID = RBULGC8,</p>
-<p>IDF = fil21</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART    ID = IBM1,</p>
+            <p>SAUTH = <span>NOT</span>SIBM1</p>
+            <p>CFTPART     ID = BULGC8,</p>
+            <p>RAUTH = RBULGC8</p>
+            <p>CFTAUTH     ID = <span>NOT</span>SIBM1,</p>
+            <p>IDF = (APLI1,APLI2)</p>
+            <p>CFTAUTH      ID = RBULGC8,</p>
+            <p>IDF = fil21</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The log then displays the following message: CFTT25E IDF not authorized &lt;PART =% s IDF =% s>

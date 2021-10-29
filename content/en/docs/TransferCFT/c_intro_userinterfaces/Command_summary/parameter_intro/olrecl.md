@@ -44,19 +44,19 @@ If the output file:
         the file record concept: actual size of the output file records
     -   For the systems below not handling this concept:  
         <table data-cellspacing="0" width="90%">
-        <tbody>
-        <tr class="odd" data-valign="middle">
-        <td width="26%"><p><strong>Windows</strong> </p></td>
-        <td width="74%"><p>512.</p></td>
-        </tr>
-        <tr class="even" data-valign="middle">
-        <td width="26%"><p><strong>UNIX</strong></p></td>
-        <td width="74%"><p>512 for text files (OTYPE=T, X or O).<br />
-        4096 for binary or variable files (OTYPE={B | V}).</p></td>
-        </tr>
-        </tbody>
+           <tbody>
+              <tr class="odd" data-valign="middle">
+                 <td width="26%">            <p><strong>Windows</strong> </p>         </td>
+                 <td width="74%">            <p>512.</p>         </td>
+              </tr>
+              <tr class="even" data-valign="middle">
+                 <td width="26%">            <p><strong>UNIX</strong></p>         </td>
+                 <td width="74%">            <p>512 for text files (OTYPE=T, X or O).<br />
+        4096 for binary or variable files (OTYPE={B | V}).</p>         </td>
+              </tr>
+           </tbody>
         </table>
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,21 +1,21 @@
 {
-    "title": "Upgrade",
+    "title": "Upgrade ",
     "linkTitle": "Upgrade",
     "weight": "220"
 }This section describes how to upgrade to 3.9 and higher (from versions 3.1.3, 3.2.x, 3.3.x, 3.4, 3.5).
 
 Transfer CFT delivers procedures that can help you upgrade instances. The following sections describe how to:
 
-1.  [Create a master copy](#create)
-2.  [Distribute the master copy](#distribu)
-3.  [Restore the master copy](#restore)
-4.  [Copy the JCLs to upgrade](#copy)
-5.  [Upgrade the target instance (product environment)](#upgrade)
-6.  [Upgrade](#migrate)
+1.  [Create a master copy](#Create)
+2.  [Distribute the master copy](#Distribu)
+3.  [Restore the master copy](#Restore)
+4.  [Copy the JCLs to upgrade](#Copy)
+5.  [Upgrade the target instance (product environment)](#Upgrade)
+6.  [Upgrade](#Migrate)
 
 Upgrade schema
 
-![](temp_zos_upgrade.png)
+![](/Images/TransferCFT/temp_zos_upgrade.png)
 
 ## Prerequisites
 
@@ -166,23 +166,23 @@ Customize MIGR$SET:
 7.  Submit MIGRUCNF (\* for upgrades from 3.3.2 to 3.6, 3.7, or 3.8).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each node.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each node.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The JCL MIGRUCNF was fixed in 3.6 SP3.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The JCL MIGRUCNF was fixed in 3.6 SP3.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Customize the step PMIGR2 JCL MIGRCAT
@@ -199,33 +199,33 @@ Upgrade the STC CFT and Copilot if needed.
 If the instance is independent from the distribution environment, customize the DISTLIB, DISTPRF and DISTLVL variables in INSTALL(CFTENV):
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>// SET DISTLIB=&amp;CFTENV</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>// SET DISTLIB=&amp;CFTENV</p>
 // SET DISTPRF= -&gt; &amp;CFTENV without the last qualifier<br />
 // SET DISTLVL= -&gt; last qualifier of &amp;CFTENV
-<p>For example if CFTENV=XX.YY.ZZ</p>
+            <p>For example if CFTENV=XX.YY.ZZ</p>
 // SET DISTLIB=&amp;CFTENV or XX.YY.ZZ<br />
 // SET DISTPRF=XX.YY<br />
-// SET DISTLVL=ZZ</td>
-</tr>
-</tbody>
+// SET DISTLVL=ZZ         </td>
+      </tr>
+   </tbody>
 </table>
 
 For example, if CFTENV=XX.YY.ZZ:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>// SET DISTLIB=&amp;CFTENV</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>// SET DISTLIB=&amp;CFTENV</p>
 // SET DISTPRF= -&gt; &amp;CFTENV without the last qualifier<br />
 // SET DISTLVL= -&gt; last qualifier of &amp;CFTENV
-<p>For example if CFTENV=XX.YY.ZZ</p>
+            <p>For example if CFTENV=XX.YY.ZZ</p>
 // SET DISTLIB=&amp;CFTENV or XX.YY.ZZ<br />
 // SET DISTPRF=XX.YY<br />
-// SET DISTLVL=ZZ</td>
-</tr>
-</tbody>
+// SET DISTLVL=ZZ         </td>
+      </tr>
+   </tbody>
 </table>
 
 If the instance is linked to a distribution environment, set the DISTLIB, DISTPRF, DISTLVL variables to it.

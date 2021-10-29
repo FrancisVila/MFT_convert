@@ -27,4 +27,4 @@ point for a subsequent restart in the event a transfer is interrupted.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -11,7 +11,7 @@ This chapter describes how to operate Transfer CFT, and is comprised of the foll
 -   [Source files interpretation](operating_cft/interpret_source_member)
 -   [Start/stop the UI server](start_copilot_server)
 -   [Run Transfer CFT](operating_cft/running_transfer_cft) jobs:
-    -   [Query Transfer CFT messages](querying_transfer_cft_messages.htm)
+    -   Query Transfer CFT messages
     -   [Start Transfer CFT](operating_cft/start_cft)
     -   [Submit a transfer command](submit_transfer_command)
 -   [Transfer CFT shutdown](operating_cft/shut_cft)
@@ -68,13 +68,13 @@ See the installation if you encounter problems with starting Transfer CFT.
 The act of installing Transfer CFT creates a library that contains product binaries and templates. Do no store any personal files in this library, or modify existing files in this library, as both are erased during updates.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">By default, this library is called CFTPGM.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">By default, this library is called CFTPGM.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Register with Central Governance

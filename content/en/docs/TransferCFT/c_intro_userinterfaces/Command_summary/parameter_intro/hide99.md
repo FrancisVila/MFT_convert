@@ -19,4 +19,4 @@ using the ANY profile (PROFIL=ANY/CFT).
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -20,4 +20,4 @@ value of OCOMP must be compatible with the compression type.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

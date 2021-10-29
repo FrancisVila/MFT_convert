@@ -14,13 +14,13 @@
 Use the examples supplied in distribution libraries as a basis for your migration. Each example provides recommendations for compilation and link-edits, as well as adequate settings for CFTEXIT. The body of the exit should not be affected; the updates concern the encapsulation of the entire exit's Prologue and Epilogue (especially in assembler).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For API/Batch C and COBOL recompilation, the correct link-edit options (DLL,…) may be sufficient to migrate APIs. For assembler, see the recommendations in the following section.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For API/Batch C and COBOL recompilation, the correct link-edit options (DLL,…) may be sufficient to migrate APIs. For assembler, see the recommendations in the following section.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Migrate the Assembler API exit

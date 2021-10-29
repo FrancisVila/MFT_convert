@@ -1,11 +1,9 @@
 {
-    "title": "Establishing model file identifiers",
+    "title": "Establishing  model file identifiers",
     "linkTitle": "Establishing model file identifiers",
     "weight": "260"
-}# <span id="Model_file_identifiers"></span>Establishing model file identifiers
-
-The mechanisms described in [Model file and physical file
-concepts](../model_and_physical_file_concepts) assume an equality between the local IDF and the
+}The mechanisms described in [Model file and physical file
+concepts](model_and_physical_file_concepts) assume an equality between the local IDF and the
 IDF agreed upon between the partners.
 
 If for some reason the partners are not able to agree
@@ -29,7 +27,7 @@ in the figure below.
 
 **Mechanism principle**
 
-<img src="UNDEF_predefined_value.gif" width="680" height="442" />
+<img src="/Images/TransferCFT/Mechanism_principle.gif" width="680" height="442" />
 
  
 
@@ -61,7 +59,7 @@ by IDF, is the one defined in this parameter.
 
 **NIDF in the SEND command**
 
-<img src="UNDEF_predefined_value.gif" width="609" height="142" />
+<img src="/Images/TransferCFT/NIDF_SEND.gif" width="609" height="142" />
 
 If there is a CFTIDF command associated with the partner, the NIDF value
 that is sent on transferring the model file identified by LOCALD is the
@@ -69,7 +67,7 @@ one defined in the NIDF parameter of this CFTIDF command.
 
 **CFTIDF corresponding to the local IDF**
 
-<img src="UNDEF_predefined_value.gif" width="647" height="267" />
+<img src="/Images/TransferCFT/CFTIDF_corrspnd_local_IDF.gif" width="647" height="267" />
 
 The value of the NIDF parameter of the SEND command takes precedence
 over the value of the NIDF parameter of the CFTIDF command, as shown in
@@ -78,7 +76,7 @@ the following figure.
 **Precedence of the SEND NIDF over
 the CFTIDF command NIDF parameter**
 
-<img src="UNDEF_predefined_value.gif" width="640" height="227" />
+<img src="/Images/TransferCFT/NIDF_SEND_NIDF_CFTIDF.gif" width="640" height="227" />
 
 If there is no CFTIDF command or NIDF parameter in the SEND command,
 the value of NIDF sent is the one defined by the local IDF identifier
@@ -87,7 +85,7 @@ file identifier (IDF)/physical file (FNAME)*.
 
 **Default NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="683" height="174" />
+<img src="/Images/TransferCFT/Default_NIDF.gif" width="683" height="174" />
 
 ## <span id="Receiver_server"></span>Receiver server
 
@@ -100,7 +98,7 @@ of this CFTIDF command.
 **CFTIDF command with the same NIDF as the
 one received**
 
-<img src="UNDEF_predefined_value.gif" width="713" height="202" />
+<img src="/Images/TransferCFT/CFTIDF_with_same_NIDF_as_received.gif" width="713" height="202" />
 
 If there is no associated CFTIDF, Transfer CFT checks if the IDF parameter
 has been set in the CFTPROT command for the reception protocol used. If
@@ -108,7 +106,7 @@ so, the local IDF is equal to the value of this IDF parameter.
 
 You can define the value of the IDF parameter of CFTPROT using the substring
 mechanism applied to the [symbolic
-variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables) &NIDF that is used to recover
+variables](../../c_intro_userinterfaces/command_summary/symbolic_variables) &NIDF that is used to recover
 the value of the NIDF received.
 
 The value of the IDF parameter of CFTPROT may also be defined with an
@@ -117,7 +115,7 @@ explicit value.
 **Local IDF assigned using the CFTPROT IDF
 for a received NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="694" height="393" />
+<img src="/Images/TransferCFT/LoIDF_assgnd_IDF_PROT_NIDF_recd.gif" width="694" height="393" />
 
 If Transfer CFT does not find a CFTIDF command having the same NIDF
 value as the one defined by the NIDF received, nor an IDF parameter in
@@ -131,12 +129,12 @@ of CFTPARM.
 
 Before using the default CFTRECV value, Transfer CFT checks if the IDF
 is defined in the CFTPART command. For more information see [IDF
-CFTPART](../../../c_intro_userinterfaces/command_summary/parameter_intro/idf).
+CFTPART](../../c_intro_userinterfaces/command_summary/parameter_intro/idf).
 
 **Local IDF assigned by default for a received
 NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="689" height="431" />
+<img src="/Images/TransferCFT/LoIDFassgnd_by_default_for_NIDFrec.gif" width="689" height="431" />
 
 ## <span id="Receiver_requester"></span>Receiver requester
 
@@ -149,7 +147,7 @@ by IDF is the one defined in this parameter.
 
 **NIDF in RECV**
 
-<img src="UNDEF_predefined_value.gif" width="683" height="163" />
+<img src="/Images/TransferCFT/NIDF_in_RECV.gif" width="683" height="163" />
 
 If there is a CFTIDF command associated with the partner (server called
 in the SERV example), the NIDF value that is sent on the request to receive
@@ -158,7 +156,7 @@ command NIDF.
 
 **CFTIDF command**
 
-<img src="UNDEF_predefined_value.gif" width="708" height="217" />
+<img src="/Images/TransferCFT/CFTIDF_command.gif" width="708" height="217" />
 
 The value of the NIDF parameter of the RECV command takes precedence
 over the CFTIDF command NIDF.
@@ -166,7 +164,7 @@ over the CFTIDF command NIDF.
 **Precedence of the NIDF parameter of the
 RECV command over CFTIDF**
 
-<img src="UNDEF_predefined_value.gif" width="708" height="237" />
+<img src="/Images/TransferCFT/NIDF_RECV_CFTIDF.gif" width="708" height="237" />
 
 If there is no CFTIDF command or NIDF parameter in the RECV command,
 the value of the NIDF sent is the one defined by the IDF local identifier
@@ -175,7 +173,7 @@ file identifier (IDF)/physical file (FNAME)*.
 
 **Default NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="683" height="174" />
+<img src="/Images/TransferCFT/Default_NIDF.gif" width="683" height="174" />
 
 ## <span id="Sender_server"></span>Sender server
 
@@ -190,7 +188,7 @@ command.
 **Locked SEND command with NIDF parameter
 equal to the NIDF received**
 
-<img src="UNDEF_predefined_value.gif" width="685" height="182" />
+<img src="/Images/TransferCFT/Lock_SEND_NIDF_equal_NIDF_rec.gif" width="685" height="182" />
 
 If no such locked SEND command is found, Transfer CFT checks to see
 if there is a CFTIDF command associated with the partner that made the
@@ -211,7 +209,7 @@ the requested NIDF is available for sending.
 **CFTIDF command associated with the received
 NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="694" height="495" />
+<img src="/Images/TransferCFT/CFTIDF_assoc_NIDF_recvd.gif" width="694" height="495" />
 
 If a locked SEND command is found with an NIDF parameter having the
 same value as the one received, a CFTIDF command having the same NIDF
@@ -240,7 +238,7 @@ with the requested NIDF is available for sending.
 **Local IDF assigned using the CFTPROT IDF
 for a received NIDF**
 
-<img src="UNDEF_predefined_value.gif" width="694" height="448" />
+<img src="/Images/TransferCFT/LoIDFassgndCFTPROT_IDF_for_NIDFrec.gif" width="694" height="448" />
 
 ## <span id="Receiver_Requester_in_selective_receive_mode"></span>Receiver/Requester in selective-receive mode
 
@@ -276,7 +274,7 @@ indicated in the following example.
 to the received NIDF received -  server
 end has unlocked transfers**
 
-<img src="UNDEF_predefined_value.gif" width="761" height="633" />
+<img src="/Images/TransferCFT/CFTIDF_NIDF_equal_NIDF_rec_serverunlocked.gif" width="761" height="633" />
 
 If there is no CFTIDF command, Transfer CFT checks to see if, for the
 protocol used for the reception request, the IDF parameter has been set
@@ -288,7 +286,7 @@ mechanism applied to the symbolic variable &NIDF which is used to
 recover the value of the NIDF received.
 
 See also [Symbolic
-variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
+variables](../../c_intro_userinterfaces/command_summary/symbolic_variables).
 
 The value of the CFTPROT IDF parameter may also be defined with an explicit
 value.
@@ -299,7 +297,7 @@ extracted from the 11th character onwards of the NIDF string received.
 
 **Local IDF defined by the CFTPROT IDF**
 
-<img src="UNDEF_predefined_value.gif" width="771" height="337" />
+<img src="/Images/TransferCFT/LoIDF_by_PROT_IDF.gif" width="771" height="337" />
 
 If there is neither a CFTIDF command nor an IDF parameter defined in
 CFTPROT, the local IDF takes the NIDF value.
@@ -307,4 +305,4 @@ CFTPROT, the local IDF takes the NIDF value.
 Local IDF defined by default for the received
 NIDF
 
-<img src="UNDEF_predefined_value.gif" width="771" height="337" />
+<img src="/Images/TransferCFT/UNDEF_predefined_value.gif" width="771" height="337" />

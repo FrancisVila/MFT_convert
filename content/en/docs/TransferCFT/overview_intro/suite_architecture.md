@@ -15,15 +15,15 @@ Transfer CFT can interact with a variety of Axway products
 you to better supervise, track, and analyze your transfer operations.
 Additional products include, but are not limited to, the following:
 
--   [API portal](#apiportal), [API Gateway](#apigtw), [API Manager](#apimanager)
--   [Central Governance](#central_governance)
--   Communication gateways: [Gateway, Secure Transport](#gateway)
--   [SecureRelay](#securerelay)
--   [TrustedFile](#trustedfile)
+-   [API portal](#APIportal), [API Gateway](#APIgtw), [API Manager](#APImanager)
+-   [Central Governance](#Central_Governance)
+-   Communication gateways: [Gateway, Secure Transport](#Gateway)
+-   [SecureRelay](#SecureRelay)
+-   [TrustedFile](#TrustedFile)
 
 Example Axway AMPLIFY MFT implementation
 
-![](tbus_products.png)
+![](/Images/TransferCFT/tbus_products.png)
 
 #### <span id="APIgtw"></span>API Gateway
 

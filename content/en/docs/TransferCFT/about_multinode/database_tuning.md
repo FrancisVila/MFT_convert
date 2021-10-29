@@ -28,6 +28,6 @@ If you set the cache size to a value that is lower than the space needed to stor
 
 ## <span id="Clear"></span>Clear the database cache
 
-You can use the command RECONFIG [type](../../c_intro_userinterfaces/command_summary/parameter_intro/type)=PARMCACHE to clear the cache while Transfer CFT is running. After the commands executes, all modifications applied to dynamic objects are taken into account without restarting Transfer CFT.
+You can use the command RECONFIG [type](../c_intro_userinterfaces/command_summary/parameter_intro/type)=PARMCACHE to clear the cache while Transfer CFT is running. After the commands executes, all modifications applied to dynamic objects are taken into account without restarting Transfer CFT.
 
-For more information on the RECONFIG command, see [Manage configuration updates - RECONFIG](../../admin_intro/admin_commands_intro/reconfig).
+For more information on the RECONFIG command, see [Manage configuration updates - RECONFIG](../admin_intro/admin_commands_intro/reconfig).

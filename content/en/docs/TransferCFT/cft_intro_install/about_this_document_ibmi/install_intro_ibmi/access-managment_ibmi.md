@@ -11,15 +11,15 @@ With system access management, you define the mapping between predefined roles a
 For system access management, you must create different Groups to associate with your users, creating a Groups in the same way as you do a user.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CRTUSRPRF USRPRF(ADMIN) TEXT('CFT admin group') SPCAUT(*JOBCTL *SPLCTL *ALLOBJ)</p>
-<p>CRTUSRPRF USRPRF(APPLI) TEXT('CFT application group') SPCAUT(*NONE)</p>
-<p>CRTUSRPRF USRPRF(DESIGNER) TEXT('CFT designer group') SPCAUT(*NONE)</p>
-<p>CRTUSRPRF USRPRF(HELPDESK) TEXT('CFT helpdesk group') SPCAUT(*NONE)</p>
-<p>CRTUSRPRF USRPRF(PARTMANAG) TEXT('CFT partnermanager group') SPCAUT(*NONE)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CRTUSRPRF USRPRF(ADMIN) TEXT('CFT admin group') SPCAUT(*JOBCTL *SPLCTL *ALLOBJ)</p>
+            <p>CRTUSRPRF USRPRF(APPLI) TEXT('CFT application group') SPCAUT(*NONE)</p>
+            <p>CRTUSRPRF USRPRF(DESIGNER) TEXT('CFT designer group') SPCAUT(*NONE)</p>
+            <p>CRTUSRPRF USRPRF(HELPDESK) TEXT('CFT helpdesk group') SPCAUT(*NONE)</p>
+            <p>CRTUSRPRF USRPRF(PARTMANAG) TEXT('CFT partnermanager group') SPCAUT(*NONE)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can then associate your users with the various groups you created.
@@ -29,25 +29,25 @@ Example
 To grant CFTUSER1 access to transfers and the configuration, associate this user with the previously created HELPDESK group using the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHGUSRPRF USRPRF(CFTUSER1) GRPPRF(HELPDESK)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHGUSRPRF USRPRF(CFTUSER1) GRPPRF(HELPDESK)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can now activate the access management in Transfer CFT according to your different groups:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>UCONFSET id=am.type ,value = internal</p>
-<p>UCONFSET id=am.internal.group_database ,value = system</p>
-<p>UCONFSET id=am.internal.role.admin ,value = ADMIN</p>
-<p>UCONFSET id=am.internal.role.application ,value = APPLI</p>
-<p>UCONFSET id=am.internal.role.designer ,value = DESIGNER</p>
-<p>UCONFSET id=am.internal.role.helpdesk ,value = HELPDESK</p>
-<p>UCONFSET id=am.internal.role.partnermanager ,value = PARTMANAG</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>UCONFSET id=am.type ,value = internal</p>
+            <p>UCONFSET id=am.internal.group_database ,value = system</p>
+            <p>UCONFSET id=am.internal.role.admin ,value = ADMIN</p>
+            <p>UCONFSET id=am.internal.role.application ,value = APPLI</p>
+            <p>UCONFSET id=am.internal.role.designer ,value = DESIGNER</p>
+            <p>UCONFSET id=am.internal.role.helpdesk ,value = HELPDESK</p>
+            <p>UCONFSET id=am.internal.role.partnermanager ,value = PARTMANAG</p>         </td>
+      </tr>
+   </tbody>
 </table>

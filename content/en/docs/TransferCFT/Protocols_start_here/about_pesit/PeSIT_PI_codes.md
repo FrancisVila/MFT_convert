@@ -1,5 +1,5 @@
 {
-    "title": "PeSIT PI codes",
+    "title": "PeSIT PI code descriptions ",
     "linkTitle": "PeSIT PI codes",
     "weight": "160"
 }This topic provides a description for each of the PeSIT parameter identifiers, PI,
@@ -7,13 +7,13 @@ codes used with Transfer CFT.
 
 ## About PeSIT PI codes
 
-During the file transfer phase, as seen in [How PeSIT works](pesit_file_transfer_phases.htm), messages called FPDU (File
+During the file transfer phase, as seen in How PeSIT works, messages called FPDU (File
 transfer Protocol Data
 Units) are exchanged between partners. Each FPDU comprises a
 header (six bytes) that specifies the type of data transferred. The body of the FPDUs comprises a series of parameter identifiers (PI) used to specify
 and negotiate all the transfer elements.
 
-![](temp_PI_format.png)
+![](/Images/TransferCFT/temp_fpdu.png)
 
 Each parameter PI has an assigned a number and value per the PeSIT protocol
 specifications. These PI codes are used for the session negotiation between partners.
@@ -24,7 +24,7 @@ Identifier).
 
 Parameter identifiers (PI) in the message body negotiate the session
 
-![](temp_PI_format.png)
+![](/Images/TransferCFT/temp_PI_format.png)
 
 For more information on the PeSIT protocol, refer to
 documentation published by the GSIT (Groupement pour un Système Interbancaire
@@ -39,7 +39,7 @@ This field indicates the implementation of transmission error detection.
 ### <span id="PI_02"></span>PI 02 PeSIT diagnostic code
 
 Refer to *[Protocol
-diagnostic codes.](../../../troubleshoot_intro/messages_and_error_codes_start_here/general_protocol_diagnostics)*
+diagnostic codes.](../../troubleshoot_intro/messages_and_error_codes_start_here/general_protocol_diagnostics)*
 
 ### <span id="PI_03__Requester_identification_PeSIT_E"></span>PI 03 Requester identification 
 
@@ -212,23 +212,23 @@ of the PeSIT protocol and defines it using the TYPE parameter of
 the transfer command:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>TYPE parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td width="50%"><p>SEND TYPE = MESSAGE,...</p></td>
-<td width="50%"><p>Outgoing message</p></td>
-</tr>
-<tr class="even">
-<td width="50%"><p>SEND TYPE = REPLY,...</p></td>
-<td width="50%"><p> PI 11 of the file for which the message conveys the
-acknowledgement</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>TYPE parameter</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td width="50%">            <p>SEND TYPE = MESSAGE,...</p>         </td>
+         <td width="50%">            <p>Outgoing message</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="50%">            <p>SEND TYPE = REPLY,...</p>         </td>
+         <td width="50%">            <p> PI 11 of the file for which the message conveys the
+acknowledgement</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  Transfer
@@ -404,31 +404,31 @@ a connection type depending on the SROUT parameter of the CFTPROT
 command:
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th>SPROUT value</th>
-<th>Access level</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td width="50%"><p>SROUT = SEND </p></td>
-<td width="50%"><p>Write access</p></td>
-</tr>
-<tr class="even">
-<td width="50%"><p>SROUT = RECV </p></td>
-<td width="50%"><p>Read access</p></td>
-</tr>
-<tr class="odd">
-<td width="50%"><p>SROUT = BOTH </p></td>
-<td width="50%"><p>Mixed access</p></td>
-</tr>
-<tr class="even">
-<td width="50%"><p>SROUT = NONE </p></td>
-<td width="50%"><p>Transfer CFT refuses to perform the transfer. This value
-has no protocol reality, since no connection request is sent</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>SPROUT value</th>
+         <th>Access level</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td width="50%">            <p>SROUT = SEND </p>         </td>
+         <td width="50%">            <p>Write access</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="50%">            <p>SROUT = RECV </p>         </td>
+         <td width="50%">            <p>Read access</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td width="50%">            <p>SROUT = BOTH </p>         </td>
+         <td width="50%">            <p>Mixed access</p>         </td>
+      </tr>
+      <tr class="even">
+         <td width="50%">            <p>SROUT = NONE </p>         </td>
+         <td width="50%">            <p>Transfer CFT refuses to perform the transfer. This value
+has no protocol reality, since no connection request is sent</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In server mode, Transfer CFT only

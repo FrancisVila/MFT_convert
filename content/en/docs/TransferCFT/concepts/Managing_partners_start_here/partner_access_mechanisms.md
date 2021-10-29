@@ -1,10 +1,8 @@
 {
-    "title": "Partner access mechanisms",
+    "title": "Partner  access mechanisms ",
     "linkTitle": "Partner access mechanisms",
     "weight": "240"
-}# <span id="About_Direct_or_Indirect_partner_access_transfers"></span><span id="Partner_access_mechanisms"></span>Partner access mechanisms
-
-A SEND/RECV transfer command can perform one or more transfers with:
+}A SEND/RECV transfer command can perform one or more transfers with:
 
 A single partner
 via a direct connection

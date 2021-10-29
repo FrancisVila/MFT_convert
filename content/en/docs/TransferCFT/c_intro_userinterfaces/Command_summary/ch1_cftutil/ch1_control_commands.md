@@ -17,17 +17,17 @@ Any commands between the IF and ENDIF commands are executed if the condition of 
 An IF statement can only perform numerical tests. You can combine two tests using a logical AND or OR.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>IF NAME = VAR1,</p>
-<p>   VALUE = VALUE1,</p>
-<p>   TYPE = COND1</p>
-<p>   OPER = OPERATOR,</p>
-<p>   ONAME = VAR2,</p>
-<p>   OVALUE = VALUE2,</p>
-<p>   OTYPE = COND2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>IF NAME = VAR1,</p>
+            <p>   VALUE = VALUE1,</p>
+            <p>   TYPE = COND1</p>
+            <p>   OPER = OPERATOR,</p>
+            <p>   ONAME = VAR2,</p>
+            <p>   OVALUE = VALUE2,</p>
+            <p>   OTYPE = COND2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -57,33 +57,33 @@ An IF statement can only perform numerical tests. You can combine two tests usin
 Using an IF statement for a single numeric test.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LONG name = COUNTER, INIT = 0</p>
-<p>     IF name = COUNTER, VALUE = 10, type = LES</p>
-<p>      PRINT msg = '%I%'</p>
-<p>     ENDIF</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LONG name = COUNTER, INIT = 0</p>
+            <p>     IF name = COUNTER, VALUE = 10, type = LES</p>
+            <p>      PRINT msg = '%I%'</p>
+            <p>     ENDIF</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Using IF with an AND condition between two numeric tests.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LONG name = I, INIT = 4</p>
-<p>    IF name = I,VALUE=5,type=LEQ,OPER=AND,ONAME=I,OVALUE=4,OTYPE=GEQ</p>
-<p>     PRINT msg = 'I included between 4 et 5'</p>
-<p>    ENDIF</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LONG name = I, INIT = 4</p>
+            <p>    IF name = I,VALUE=5,type=LEQ,OPER=AND,ONAME=I,OVALUE=4,OTYPE=GEQ</p>
+            <p>     PRINT msg = 'I included between 4 et 5'</p>
+            <p>    ENDIF</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-mc-conditions="axway_conditions.NotPublish"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-mc-conditions="axway_conditions.NotPublish">          </td>
+      </tr>
+   </tbody>
 </table>

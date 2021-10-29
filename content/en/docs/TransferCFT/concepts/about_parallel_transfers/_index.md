@@ -1,28 +1,28 @@
 {
     "title": "Configure simultaneous transfers",
-    "linkTitle": "Configure simultaneous transfers",
-    "weight": "230"
+    "linkTitle": "Configuring simultaneous transfers",
+    "weight": "250"
 }The maximum number of simultaneous transfers in Transfer CFT is managed by a combination of global parameters, partner settings, and the license key.
 
 The objective of this section is to help you understand the global and partner parameters, and provide configuration recommendations in order to assist you in optimizing your file transfer volume.
 
 Contents include:
 
--   [Global](#global) and [partner](#partner) settings as they relate to the Transfer CFT configuration (this page)
--   [Client and server recommendations](maxtrans_use_cases) that demonstrate settings for a high volume of transfers
--   [Connection / maximum transfer](connection_maxtrans_troubleshoot) scenarios with output
--   [Session related scenarios](session_troubleshooting) with output
--   [Multi-node recommendations](multi_node_simultaneous_transfers)
--   [FAQ and troubleshooting](faq)
+-   [Global](#Global) and [partner](#Partner) settings as they relate to the Transfer CFT configuration (this page)
+-   [Client and server recommendations](maxtrans_use_cases.htm) that demonstrate settings for a high volume of transfers
+-   [Connection / maximum transfer](connection_maxtrans_troubleshoot.htm) scenarios with output
+-   [Session related scenarios](session_troubleshooting.htm) with output
+-   [Multi-node recommendations](../multi_node_simultaneous_transfers.htm)
+-   [FAQ and troubleshooting](FAQ.htm)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Global"></span>Global settings
@@ -44,12 +44,12 @@ The MAXCNX parameter determines the maximum number of connections for a network 
 If there are two CFTNET objects defined as follows, the maximum number of simultaneous connections for this Transfer CFT instance is 30, 10 connections for NET0 and 20 for NET1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTNET id=NET0, maxcnx=10
-<p>CFTNET id=NET1, maxcnx=20</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTNET id=NET0, maxcnx=10
+            <p>CFTNET id=NET1, maxcnx=20</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Session
@@ -61,13 +61,13 @@ An established session is either active or inactive. An active session means tha
 You can also set the maximum number of simultaneous sessions using the UCONF parameter `cft.server.max_session`. The default value is 0  and the maximum number of supported simultaneous transfer is 2000 (2 x 1000).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend using the default value for cft.server.max_session.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend using the default value for cft.server.max_session.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### DISCTD/DISCTS
@@ -79,31 +79,31 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 **Client configuration**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPROT id=PESIT, DISCTS=8, DISCTD=<span>8</span></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPROT id=PESIT, DISCTS=8, DISCTD=<span>8</span>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Server configuration**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPROT id=PESIT, DISCTS=<span>10</span>, DISCTD=7</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPROT id=PESIT, DISCTS=<span>10</span>, DISCTD=7         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend setting these values to 60 seconds or less.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">We recommend setting these values to 60 seconds or less.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Transfer execution
@@ -119,11 +119,11 @@ The MAXTRANS parameter defines the maximum number of simultaneous transfers. Th
 **CFTPARM object**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPARM ID=IDPARM0,MAXTRANS=n, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPARM ID=IDPARM0,MAXTRANS=n, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 In general, you should base your MAXTRANS on the transfer peak in your daily activity.
@@ -140,21 +140,21 @@ Your license key is another factor that affects the maximum value that you can u
 Use the CFTUTIL ABOUT command to check for the maximum number of allowed transfers as determined by your key. The value "64" is the authorized limit in the following example.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL about</p>
-<p>Key information :</p>
-<p>* idparm = IDPARM0</p>
-<p>* key = XXXX</p>
-<p>*</p>
-<p>* type = DATE</p>
-<p>* expire = 2015/11/14</p>
-<p>* sysname = linux-x86-64</p>
-<p>* Nb Transfers = <span>64</span></p>
-<p>* Nb CPU = 4</p>
-<p>* Nb Partners = Max</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL about</p>
+            <p>Key information :</p>
+            <p>* idparm = IDPARM0</p>
+            <p>* key = XXXX</p>
+            <p>*</p>
+            <p>* type = DATE</p>
+            <p>* expire = 2015/11/14</p>
+            <p>* sysname = linux-x86-64</p>
+            <p>* Nb Transfers = <span>64</span></p>
+            <p>* Nb CPU = 4</p>
+            <p>* Nb Partners = Max</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To view the number of active transfers in Transfer CFT, check this message which displays when starting Transfer CFT:
@@ -167,40 +167,40 @@ To increase the license key limit contact your Axway sales representative, or vi
 
 **CFTPARM object**
 
-This parameter controls the number of CFTTFIL processes that can run. Since more processes use more machine memory, remember when increasing MAXTASK to take available resources into account. See also [MAXTASK values.](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtask)
+This parameter controls the number of CFTTFIL processes that can run. Since more processes use more machine memory, remember when increasing MAXTASK to take available resources into account. See also [MAXTASK values.](../../CFTUTIL/Parameter_index/maxtask.htm)
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPARM ID=IDPARM0,MAXTASK=n, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPARM ID=IDPARM0,MAXTASK=n, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### TRANTASK
 
 **CFTPARM object**
 
-This parameter defines the number of transfers managed per task, and operates similar to load balancing between tasks. See also [TRANTASK values.](../../c_intro_userinterfaces/command_summary/parameter_intro/trantask)
+This parameter defines the number of transfers managed per task, and operates similar to load balancing between tasks. See also [TRANTASK values.](../../CFTUTIL/Parameter_index/trantask.htm)
 
 The MAXTASK value multiplied by the TRANTASK value should be less than or equal to MAXTRANS.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTPARM ID=IDPARM0,TRANTASK=n, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTPARM ID=IDPARM0,TRANTASK=n, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 ##### Example
@@ -208,13 +208,13 @@ The MAXTASK value multiplied by the TRANTASK value should be less than or equal 
 The following parameter values can create a maximum of 2 file access tasks. Transfers 1 through 4 are assigned to the first task, and the next transfer triggers a new file access task that handles transfers 5-8 (as there are four transfers for each task). Any additional transfers are balanced between the two existing tasks. (This means that all new concurrent transfers are put on hold until resources become available.)
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>MAXTRANS = 14,
-<p>MAXTASK = 2,<br />
-TRANTASK = 4,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>MAXTRANS = 14,
+            <p>MAXTASK = 2,<br />
+TRANTASK = 4,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### WSCAN scheduling parameter
@@ -224,13 +224,13 @@ TRANTASK = 4,</p></td>
 This parameter defines the frequency, in minutes, with which Transfer CFT scans the catalog file when restarting a transfer. That is, WSCAN reschedules transfers that have a remote MAXTRANS or local MAXCNX diagnostic. The default value is 5, but we recommend setting this value to 1.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The WSCAN scheduling retries continues indefinitely until the transfer can be executed.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The WSCAN scheduling retries continues indefinitely until the transfer can be executed.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Partner"></span>Partner settings
@@ -250,11 +250,11 @@ This parameter defines the maximum number of sessions for incoming connections.
 The value should be less than or equal to the MAXCNX and MAXTRANS values.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXIN=n, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXIN=n, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### CNXOUT
@@ -264,11 +264,11 @@ The value should be less than or equal to the MAXCNX and MAXTRANS values.
 This parameter defines the maximum number of sessions for outgoing connections.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXOUT=n, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXOUT=n, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### CNXINOUT
@@ -278,11 +278,11 @@ This parameter defines the maximum number of sessions for outgoing connections.
 This refers to the maximum number of communication sessions (less than or equal to the MAXCNX and MAXTRANS values). This is the total number of both incoming and outgoing sessions. In the following example the number of sessions that you can open at the same time is 4; it is not the sum of CNXIN and CNXOUT but rather an additional limitation.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXIN=2, CNXOUT=3, CNXINOUT=4, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTTCP ID =&lt;partner1_id&gt;, HOST=&lt;partner1_URL&gt;, CNXIN=2, CNXOUT=3, CNXINOUT=4, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Recommendations
@@ -290,26 +290,26 @@ This refers to the maximum number of communication sessions (less than or equal 
 When using a stand alone Transfer CFT to another stand alone Transfer CFT (or other PeSIT application), the recommendations for a heavily loaded configuration should remain symmetrical.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Stand alone</th>
-<th>Stand alone</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>CNXOUT=(Partner's CNXIN)</p></td>
-<td>CNXIN = (Partner’s CNXOUT)</td>
-</tr>
-<tr class="even">
-<td><p>CNXIN=(Partner’s CNXOUT)</p></td>
-<td>CNXOUT=(Partner’s CNXIN)</td>
-</tr>
-<tr class="odd">
-<td><p>CNXINOUT=CNXIN+CNXOUT</p></td>
-<td>CNXINOUT=CNXIN+CNXOUT</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Stand alone</th>
+         <th>Stand alone</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CNXOUT=(Partner's CNXIN)</p>         </td>
+         <td>CNXIN = (Partner’s CNXOUT)         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CNXIN=(Partner’s CNXOUT)</p>         </td>
+         <td>CNXOUT=(Partner’s CNXIN)         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CNXINOUT=CNXIN+CNXOUT</p>         </td>
+         <td>CNXINOUT=CNXIN+CNXOUT         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### RETRYW scheduling parameter
@@ -319,13 +319,13 @@ When using a stand alone Transfer CFT to another stand alone Transfer CFT (or ot
 This parameter defines the retry period following a network interruption. This is one of 3 parameters that control the retry policy for rescheduling following a network connection interruption. The RETRYW value is an approximate time in order to avoid all blocked transfers being rescheduled at the same time overloading the system.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The RETRYW scheduling retries is limited by the RETRYM number.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The RETRYW scheduling retries is limited by the RETRYM number.         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### RETRYM
@@ -345,5 +345,5 @@ specified retrym.
 
 Related topics
 
--   [Client and server recommendations](maxtrans_use_cases)
--   [Scenarios and outputs](session_troubleshooting)
+-   [Client and server recommendations](maxtrans_use_cases.htm)
+-   [Scenarios and outputs](session_troubleshooting.htm)

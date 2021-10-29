@@ -28,4 +28,4 @@ LISTUCONF CONTENT=EXTRACT, [FOUT](#)=out extracts the UCONF (unified configurati
 Defines the file where the
 command output is sent.
 
-[Return to Command index](../../)
+[Return to Command index](../../Command_summary.htm)

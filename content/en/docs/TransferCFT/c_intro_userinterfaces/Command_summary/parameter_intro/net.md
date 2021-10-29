@@ -24,4 +24,4 @@ monitor. For additional information, see the definition of the CFTNET
 command, and refer to the Transfer CFT Operations
 Guide that corresponds to your OS.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -30,4 +30,4 @@ Range of values:
 
 If the BUFSIZE is lower than the RRUSIZE or SRUSIZE parameter values, Transfer CFT uses the RRUSIZE or SRUSIZE value rendering BUFSIZE redundant.
 
-[Return to Command index](../../)
+[Return to Command index](../)

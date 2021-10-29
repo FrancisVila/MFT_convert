@@ -1,5 +1,5 @@
 {
-    "title": "Manage SSL and TLS versions",
+    "title": "Managing SSL and TLS versions",
     "linkTitle": "Manage SSL and TLS versions",
     "weight": "190"
 }This section describes how to manage the SSL and TLS versions, and enable compatibility mode if needed. Additionally, it provides details on TLS use with Transfer CFT.
@@ -34,13 +34,13 @@ DIRECT=SERVER
 In server mode, the header length is automatically detected for all SSL versions (SSLV3, TLSV1, SSLV3COMP, TLSV1COMP).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is recommended that you set the server to use TLSV1COMP.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">It is recommended that you set the server to use TLSV1COMP.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Enable TLS 1.1 and 1.2
@@ -70,38 +70,38 @@ It is important to note that the Transfer CFT SSL/TLS implementation allows a fa
 You can use these UCONF parameters to define the minimum SSL/TLS protocol version (setting these parameters to tls\_1.0, for example, disables SSL 3.0 connections):
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Description</th>
-<th>Type</th>
-<th>Possible values</th>
-<th>Default value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ssl.version_min</td>
-<td>Minimum SSL version allowed by the access management connector and the Transfer CFT PKI connector (PassPort PS).</td>
-<td>enum</td>
-<td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2</td>
-<td>tls_1.0</td>
-</tr>
-<tr class="even">
-<td><p>cft.ssl.version_min</p></td>
-<td><p>Minimum SSL version allowed by the Transfer CFT server. Note that if default value for this parameter is not set, it uses the ssl.version_min value.</p></td>
-<td><p>enum</p></td>
-<td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2</td>
-<td>$(ssl.version_min)</td>
-</tr>
-<tr class="odd">
-<td><p>copilot.ssl.version_min</p></td>
-<td><p>Minimum SSL version allowed by the Transfer CFT Copilot server. Note that if default value for this parameter is not set, it uses the ssl.version_min value.</p></td>
-<td>enum</td>
-<td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2</td>
-<td>$(ssl.version_min)</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Description</th>
+         <th>Type</th>
+         <th>Possible values</th>
+         <th>Default value</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>ssl.version_min         </td>
+         <td>Minimum SSL version allowed by the access management connector and the Transfer CFT PKI connector (PassPort PS).         </td>
+         <td>enum         </td>
+         <td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2         </td>
+         <td>tls_1.0         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>cft.ssl.version_min</p>         </td>
+         <td>            <p>Minimum SSL version allowed by the Transfer CFT server. Note that if default value for this parameter is not set, it uses the ssl.version_min value.</p>         </td>
+         <td>            <p>enum</p>         </td>
+         <td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2         </td>
+         <td>$(ssl.version_min)         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>copilot.ssl.version_min</p>         </td>
+         <td>            <p>Minimum SSL version allowed by the Transfer CFT Copilot server. Note that if default value for this parameter is not set, it uses the ssl.version_min value.</p>         </td>
+         <td>enum         </td>
+         <td>ssl_3.0, tls_1.0, tls_1.1, tls_1.2         </td>
+         <td>$(ssl.version_min)         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Related information

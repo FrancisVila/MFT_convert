@@ -16,4 +16,4 @@ VTAM
 On the HOST this parameter is expressed in decimal in the VTAM definition
 of the corresponding LU.
 
-[Return to Command index](../../)
+[Return to Command index](../)

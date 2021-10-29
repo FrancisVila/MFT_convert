@@ -23,22 +23,22 @@ indicated in the table below.
 Default values are:
 
 <table data-border="1" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Protocol </p></th>
-<th><p>Default value</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="33%"><p>PeSIT ANY profile</p></td>
-<td data-valign="top" width="67%"><p>10 </p></td>
-</tr>
-<tr class="even" data-mc-conditions="" data-valign="middle">
-<td data-valign="top" width="33%"><p>ODETTE </p></td>
-<td data-valign="top" width="67%"><p>20 </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Protocol </p></th>
+         <th>            <p>Default value</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="33%">            <p>PeSIT ANY profile</p>         </td>
+         <td data-valign="top" width="67%">            <p>10 </p>         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="" data-valign="middle">
+         <td data-valign="top" width="33%">            <p>ODETTE </p>         </td>
+         <td data-valign="top" width="67%">            <p>20 </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-[Return to Command index](../../)
+[Return to Command index](../)

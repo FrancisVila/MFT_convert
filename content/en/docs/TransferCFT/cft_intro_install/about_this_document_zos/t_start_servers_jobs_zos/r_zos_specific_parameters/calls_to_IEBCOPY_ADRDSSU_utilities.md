@@ -1,5 +1,5 @@
 {
-    "title": "Calls to z/OS utilities IEBCOPY and ADRDSSU",
+    "title": "Calls to z/OS utilities from Transfer CFT",
     "linkTitle": "Calls to z/OS utilities IEBCOPY and ADRDSSU",
     "weight": "320"
 }The Z/OS utility call function enables you to transfer files that are not directly readable by Transfer CFT. The IEBCOPY and ADRDSSU utilities are supported. The following sections describe this operating mode.
@@ -144,34 +144,34 @@ Where:
 #### Rules for interpreting DSNGEN
 
 <table data-border="1" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Model</th>
-<th>Interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>DSNGEN_</p></td>
-<td><p>DSN</p></td>
-</tr>
-<tr class="even">
-<td><p>DSNGEN__</p></td>
-<td><p>DSN*</p></td>
-</tr>
-<tr class="odd">
-<td><p>DSNGEN._</p></td>
-<td><p>DSN.*</p></td>
-</tr>
-<tr class="even">
-<td><p>DSNGEN_._</p></td>
-<td><p>DSN*.*</p></td>
-</tr>
-<tr class="odd">
-<td><p>DSNGEN_.__</p></td>
-<td><p>DSN*.**</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Model</th>
+         <th>Interpretation</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>DSNGEN_</p>         </td>
+         <td>            <p>DSN</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>DSNGEN__</p>         </td>
+         <td>            <p>DSN*</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>DSNGEN._</p>         </td>
+         <td>            <p>DSN.*</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>DSNGEN_._</p>         </td>
+         <td>            <p>DSN*.*</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>DSNGEN_.__</p>         </td>
+         <td>            <p>DSN*.**</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example of sending 1 file**
@@ -269,13 +269,13 @@ The ADRDSSU command also uses the parameter:
 The combination RENAMEU+REPLACEU will always replace existing files.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   The created files are identical to the initial file.
@@ -327,25 +327,25 @@ Transfer CFT z/OS calls a single external utility at a given time. Memory use is
 **Memory use**
 
 <table data-border="1" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Utility</th>
-<th>24 bit memory</th>
-<th>31 bit memory</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>IEBCOPY</p></td>
-<td><p>1024K</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>ADRDSSU</p></td>
-<td><p>2048K</p></td>
-<td><p>8192K</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Utility</th>
+         <th>24 bit memory</th>
+         <th>31 bit memory</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>IEBCOPY</p>         </td>
+         <td>            <p>1024K</p>         </td>
+         <td>            <p>0</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>ADRDSSU</p>         </td>
+         <td>            <p>2048K</p>         </td>
+         <td>            <p>8192K</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The CFTPROT RTO=seconds parameter must contain a value expressed in seconds that is large enough to allow the complete operation by the utility on the receiving side.
@@ -354,4 +354,4 @@ For ADRDSSU and RACF, the TOLERATE (ENQFAILURE) parameter requires READ access t
 
 Related topics
 
-[Transfer CFT z/OS general performance concepts](../../zos_performance)
+[Transfer CFT z/OS general performance concepts](../zos_performance)

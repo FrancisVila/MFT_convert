@@ -17,10 +17,10 @@ During processing, the phasesteps can be:
 -   \(C\) Processing/Current: When the processing of the Phase is executing.
 -   \(K\) Keep: When the processing of the Phase is stopped.
 -   <u>(X</u>) Done: This phase step only exists in the Done Phase, once all previous phases are complete.
--   \(E\) Exit EOT: This phase step only exists in the Post-processing phase, to signal an [end-of-transfer exit](../../../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
+-   \(E\) Exit EOT: This phase step only exists in the Post-processing phase, to signal an [end-of-transfer exit](../../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
 
 Example
 
 swaitcat select='(IDTU=="%\_CAT\_IDTU%")',timeout=30,phases=y,phasesteps=ch
 
-[Return to Command index](../../)
+[Return to Command index](../)

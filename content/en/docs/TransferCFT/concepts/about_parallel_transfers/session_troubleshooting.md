@@ -4,14 +4,14 @@
     "weight": "280"
 }This section provides transfer examples that demonstrate parameter dependencies and typical log outputs, including errors, which you may encounter when using similar values. The goal is to understand the effect of parameter combinations, and be able to adapt settings to your particular needs.
 
--   [Example: cft.server.max\_session is less than MAXCNX](#example:)
--   [Example: cft.server.max\_session is greater than MAXCNX](#example:2)
+-   [Example: cft.server.max\_session is less than MAXCNX](#Example:)
+-   [Example: cft.server.max\_session is greater than MAXCNX](#Example:2)
 
-See the [Frequently asked questions](../faq) for common questions and answers on parameter usage, license keys, and so on.
+See the [Frequently asked questions](FAQ.htm) for common questions and answers on parameter usage, license keys, and so on.
 
 ## Remote (partner) diagnostic codes
 
-When troubleshooting, remember that if the [DIAG](../../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes) is greater than 500, it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 962, for example, the issue is a remote problem corresponding to DIAG 462 (no data sent on network).
+When troubleshooting, remember that if the [DIAG](../../Troubleshooting/Messages_and_Codes/diagi_diagnostic_codes.htm) is greater than 500, it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 962, for example, the issue is a remote problem corresponding to DIAG 462 (no data sent on network).
 
 ## Examples
 
@@ -33,11 +33,11 @@ For example, if cft.server.max\_session = 3, then MAXCNX is limited to 3 on the 
 **Requester output**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTT75E connect reject &lt;IDTU=A00000FT PART=SUN35-5 IDF=T1 IDT=D2918351 416 MAXTRANS&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTT75E connect reject &lt;IDTU=A00000FT PART=SUN35-5 IDF=T1 IDT=D2918351 416 MAXTRANS&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Server output**
@@ -51,21 +51,21 @@ When p (cft.server.max\_session = 3 for example) is less than MAXCNX on the serv
 **Server output**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTH66E Incoming calls (1) rejected, ERROR=sessions (ctx) in use &gt;= max_sessions (3|3), PROTOCOL=?</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTH66E Incoming calls (1) rejected, ERROR=sessions (ctx) in use &gt;= max_sessions (3|3), PROTOCOL=?</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Requester output**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTT75E connect reject &lt;IDTU=A000006O PART=WINZZ-5 IDF=T2 IDT=D2918471 302 R 0 2f2&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTT75E connect reject &lt;IDTU=A000006O PART=WINZZ-5 IDF=T2 IDT=D2918471 302 R 0 2f2&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Example:2"></span>Example: cft.server.max\_session is greater than MAXCNX
@@ -79,11 +79,11 @@ When cft.server.max\_session is greater than MAXCNX on the requester side the de
 **Requester output**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTH09E Network connect request local error &lt;PART=SUN35-4 NCR=416 NCS=MAXCNX NET=TCP&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTH09E Network connect request local error &lt;PART=SUN35-4 NCR=416 NCS=MAXCNX NET=TCP&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Server output**
@@ -103,15 +103,15 @@ There is no message / output on server side.
 **Requester output**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTH11E Error Opening session &lt;PART=WINZZ-4 EV=VNRELI ST=CN0022&gt;</p>
-<p>CFTT75E connect reject &lt;IDTU=A0000074 PART=WINZZ-4 IDF=T4 IDT=D2919014 302 R 0 2f2&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTH11E Error Opening session &lt;PART=WINZZ-4 EV=VNRELI ST=CN0022&gt;</p>
+            <p>CFTT75E connect reject &lt;IDTU=A0000074 PART=WINZZ-4 IDF=T4 IDT=D2919014 302 R 0 2f2&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
--   [About parallel transfers](..//transfercft/concepts/about_parallel_transfers)
--   [FAQ and troubleshooting](../faq)
+-   [About parallel transfers](about_parallel_transfers.htm)
+-   [FAQ and troubleshooting](FAQ.htm)

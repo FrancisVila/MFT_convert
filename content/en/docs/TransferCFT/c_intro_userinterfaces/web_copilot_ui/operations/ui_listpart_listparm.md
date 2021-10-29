@@ -11,4 +11,4 @@ To view the log of transfers:
 
 You can filter the results by time, severity, and number of records to display. Click refresh after selecting a filter.
 
-![](ui_logs.png)
+![](/Images/TransferCFT/ui_logs.png)

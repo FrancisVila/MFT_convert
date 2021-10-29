@@ -15,20 +15,20 @@ The QUERY command checks the catalog for the first record that matches the indic
 #### Syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>QUERY IDA = STR,</p>
-<p>      DIRECT = STR,</p>
-<p>      IDF = STR,</p>
-<p>      IDT = STR,</p>
-<p>      PART = STR,</p>
-<p>      STATE = STR,</p>
-<p>      NIDF = STR,</p>
-<p>      NAME = VAR,</p>
-<p>      FIELD = CHAMP</p>
-<p>      TYPE = STR,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>QUERY IDA = STR,</p>
+            <p>      DIRECT = STR,</p>
+            <p>      IDF = STR,</p>
+            <p>      IDT = STR,</p>
+            <p>      PART = STR,</p>
+            <p>      STATE = STR,</p>
+            <p>      NIDF = STR,</p>
+            <p>      NAME = VAR,</p>
+            <p>      FIELD = CHAMP</p>
+            <p>      TYPE = STR,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -47,13 +47,13 @@ The QUERY command checks the catalog for the first record that matches the indic
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR NAME = IDT, SIZE=12</p>
-<p>QUERY PART = PSITC001, DIRECT = RECV,</p>
-<p>NAME=IDT,FIELD=IDT</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR NAME = IDT, SIZE=12</p>
+            <p>QUERY PART = PSITC001, DIRECT = RECV,</p>
+            <p>NAME=IDT,FIELD=IDT</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### WAITCAT
@@ -65,27 +65,27 @@ You can specify a maximum wait time as well as a scanning range for the catalog.
 #### Syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>WAITCAT IDA = STR,</p>
-<p>        DIRECT = STR,</p>
-<p>        IDF = STR,</p>
-<p>        IDT = STR,</p>
-<p>        PART = STR,</p>
-<p>        STATE = STR,</p>
-<p>        NIDF = STR,</p>
-<p>        TYPE = STR,</p>
-<p>        MAXTIME = STR,</p>
-<p>        SCANTIME = NNN,</p>
-<p>        DURING = NNN,</p>
-<p>        NBCHKPT = NNN,</p>
-<p>        DIAGP = STR,</p>
-<p>        DIAGI = STR</p>
-<p>       IDTU = STR</p>
-<p>       PHASE = STR</p>
-<p>       PHASESTEP = STR</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>WAITCAT IDA = STR,</p>
+            <p>        DIRECT = STR,</p>
+            <p>        IDF = STR,</p>
+            <p>        IDT = STR,</p>
+            <p>        PART = STR,</p>
+            <p>        STATE = STR,</p>
+            <p>        NIDF = STR,</p>
+            <p>        TYPE = STR,</p>
+            <p>        MAXTIME = STR,</p>
+            <p>        SCANTIME = NNN,</p>
+            <p>        DURING = NNN,</p>
+            <p>        NBCHKPT = NNN,</p>
+            <p>        DIAGP = STR,</p>
+            <p>        DIAGI = STR</p>
+            <p>       IDTU = STR</p>
+            <p>       PHASE = STR</p>
+            <p>       PHASESTEP = STR</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -111,13 +111,13 @@ You can specify a maximum wait time as well as a scanning range for the catalog.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>WAITCAT PART = PSITC001, DIRECT = RECV, DURING = 30,</p>
-<p>SCANTIME = 1</p>
-<p>PRINT MSG='The return code for WAIT is : %_CMDRET%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>WAITCAT PART = PSITC001, DIRECT = RECV, DURING = 30,</p>
+            <p>SCANTIME = 1</p>
+            <p>PRINT MSG='The return code for WAIT is : %_CMDRET%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### TEST
@@ -129,61 +129,61 @@ The TEST command searches in the catalog records for criteria that matches the c
 The return code is stored in the predefined variable \_CMDRET.FTEMOIN field sets the name of a file to be used as a control to compare the transferred file. The control file is opened with the same file attributes that were defined in the catalog for the transferred file.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>TEST IDA = STR,</p>
-<p>    DIRECT = STR,</p>
-<p>     IDF = STR,</p>
-<p>     PART = STR,</p>
-<p>     STATE = STR,</p>
-<p>     IDF = STR,</p>
-<p>     NIDF = STR,</p>
-<p>     MSG = STR,</p>
-<p>     SUSER = STR,</p>
-<p>     RUSER = STR,</p>
-<p>     SAPPL = STR,</p>
-<p>     SPART = STR,</p>
-<p>     RAPPL = STR,</p>
-<p>     RPART = STR,</p>
-<p>     PARM = STR,</p>
-<p>     STATED = STR,</p>
-<p>     FRECFM = STR,</p>
-<p>     NRECFM = STR,</p>
-<p>     FNAME = STR,</p>
-<p>     NFNAME = STR,</p>
-<p>     DIAGI = STR,</p>
-<p>     DIAGP = STR,</p>
-<p>     FLRECL = STR,</p>
-<p>     NLRECL = STR,</p>
-<p>    FBLKSIZE = STR,</p>
-<p>    NBLKSIZE = STR,</p>
-<p>    USERID = STR,</p>
-<p>            JOBNAME = STR,</p>
-<p>            PROT = STR,</p>
-<p>  PRI = STR,</p>
-<p>            NCOMP = STR,</p>
-<p>           FSPACE = STR,</p>
-<p>   NSPACE = STR,</p>
-<p>   NCODE = STR,</p>
-<p>          FCODE = STR,</p>
-<p>          FREC = STR,</p>
-<p>   NREC = STR,</p>
-<p>   FCAR = STR,</p>
-<p>          NCAR = STR,</p>
-<p>          ECAR = STR,</p>
-<p>   FTIME = STR,</p>
-<p>   FDATE = STR,</p>
-<p>          FRECFM = STR,</p>
-<p>   FRECFM = STR,</p>
-<p>          FTEMOIN = STR</p>
-<p>   FTIME = STR</p>
-<p>   FDATE = STR</p>
-<p>   APPSTATE = STR</p>
-<p>   PHASE = STR</p>
-<p>   PHASESTEP = STR</p>
-<p>   PIDTU = STR</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>TEST IDA = STR,</p>
+            <p>    DIRECT = STR,</p>
+            <p>     IDF = STR,</p>
+            <p>     PART = STR,</p>
+            <p>     STATE = STR,</p>
+            <p>     IDF = STR,</p>
+            <p>     NIDF = STR,</p>
+            <p>     MSG = STR,</p>
+            <p>     SUSER = STR,</p>
+            <p>     RUSER = STR,</p>
+            <p>     SAPPL = STR,</p>
+            <p>     SPART = STR,</p>
+            <p>     RAPPL = STR,</p>
+            <p>     RPART = STR,</p>
+            <p>     PARM = STR,</p>
+            <p>     STATED = STR,</p>
+            <p>     FRECFM = STR,</p>
+            <p>     NRECFM = STR,</p>
+            <p>     FNAME = STR,</p>
+            <p>     NFNAME = STR,</p>
+            <p>     DIAGI = STR,</p>
+            <p>     DIAGP = STR,</p>
+            <p>     FLRECL = STR,</p>
+            <p>     NLRECL = STR,</p>
+            <p>    FBLKSIZE = STR,</p>
+            <p>    NBLKSIZE = STR,</p>
+            <p>    USERID = STR,</p>
+            <p>            JOBNAME = STR,</p>
+            <p>            PROT = STR,</p>
+            <p>  PRI = STR,</p>
+            <p>            NCOMP = STR,</p>
+            <p>           FSPACE = STR,</p>
+            <p>   NSPACE = STR,</p>
+            <p>   NCODE = STR,</p>
+            <p>          FCODE = STR,</p>
+            <p>          FREC = STR,</p>
+            <p>   NREC = STR,</p>
+            <p>   FCAR = STR,</p>
+            <p>          NCAR = STR,</p>
+            <p>          ECAR = STR,</p>
+            <p>   FTIME = STR,</p>
+            <p>   FDATE = STR,</p>
+            <p>          FRECFM = STR,</p>
+            <p>   FRECFM = STR,</p>
+            <p>          FTEMOIN = STR</p>
+            <p>   FTIME = STR</p>
+            <p>   FDATE = STR</p>
+            <p>   APPSTATE = STR</p>
+            <p>   PHASE = STR</p>
+            <p>   PHASESTEP = STR</p>
+            <p>   PIDTU = STR</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -241,10 +241,10 @@ The return code is stored in the predefined variable \_CMDRET.FTEMOIN field sets
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>TEST PART = PSITC001, DIRECT = RECV,</p>
-<p>PRINT MSG='The test return code is: %_CMDRET%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>TEST PART = PSITC001, DIRECT = RECV,</p>
+            <p>PRINT MSG='The test return code is: %_CMDRET%'</p>         </td>
+      </tr>
+   </tbody>
 </table>

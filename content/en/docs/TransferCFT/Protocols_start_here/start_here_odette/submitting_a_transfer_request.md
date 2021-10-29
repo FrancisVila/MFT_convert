@@ -1,10 +1,8 @@
 {
-    "title": "Submitting a transfer request",
+    "title": "Submitting  a transfer request",
     "linkTitle": "Submitting a transfer request",
     "weight": "190"
-}# <span id="Title"></span>Submitting a transfer request
-
-After configuring the OFTP (ODETTE) environment, as described in [Configuring OFTP](../configuring_odette), you must
+}After configuring the OFTP (ODETTE) environment, as described in [Configuring OFTP](configuring_odette), you must
 define the transfer environment in the following objects:
 
 -   CFTSEND
@@ -12,15 +10,15 @@ define the transfer environment in the following objects:
 
 This topic describes the steps that enable you to
 submit a transfer request. The [next
-topic](../receiving_transfers) describes the procedure that enables you to receive. The parameters
+topic](receiving_transfers) describes the procedure that enables you to receive. The parameters
 for the CFTSEND object in ODETTE are defined in the following sections:
 
 -   [Data
-    code](#data_code)
+    code](#Data_code)
 -   [Setting
-    the type parameter](#setting_the_type_parameter)
+    the type parameter](#Setting_the_type_parameter)
 -   [Setting
-    the file format](#setting_the_file_format)
+    the file format](#Setting_the_file_format)
 
 ## <span id="About_CFTSEND_in_Odette"></span>About CFTSEND
 
@@ -48,7 +46,7 @@ Translation is carried out during transmission, if you set:
 There is no translation if FCODE = BINARY.
 
 The default value of FCODE, which is determined dynamically for each
-transfer, depends on the file type, [FTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ftype),
+transfer, depends on the file type, [FTYPE](../../../CFTUTIL/Parameter_index/ftype.htm),
 sent. The automatic detection of FTYPE by the sender, as the case may
 be, partly takes the place of automatic detection of FCODE.
 
@@ -79,13 +77,13 @@ Set the RECFM parameter to:
     undefined format
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not set the NTYPE parameter.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Do not set the NTYPE parameter.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For fixed and variable formats, set the NLRECL parameter to indicate

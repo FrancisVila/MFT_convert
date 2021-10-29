@@ -1,7 +1,7 @@
 {
-    "title": "Using APIs",
-    "linkTitle": "Using APIs",
-    "weight": "260"
+    "title": "About APIs ",
+    "linkTitle": "About APIs",
+    "weight": "280"
 }Application Programming Interfaces, or APIs, are a set of functions
 that use a service. The service is followed by an application program.
 
@@ -10,8 +10,8 @@ of the service. Applications can address requests to Transfer CFT via
 service call functions:
 
 -   [REST API](api_intro)
--   [Web services](../../cft_intro_install/about_this_document_ibmi/using_apis/about_web_services)
--   [Using JPI](../../cft_intro_install/about_this_document_ibmi/using_apis/java_api)
+-   [Web services](about_web_services)
+-   [Using JPI](java_api)
 -   Transfer
     services
 -   Synchronous
@@ -36,6 +36,6 @@ for COBOL.
 
 -   Visual Basic APIs are available on PCs
     only. See [Windows
-    operations](../../cft_intro_install/windows_install_start_here).
--   The security APIs are not covered in this section. See [Managing
-    security](security_overview.htm).
+    operations](../cft_intro_install/windows_install_start_here).
+-   The security APIs are not covered in this section. See Managing
+    security.

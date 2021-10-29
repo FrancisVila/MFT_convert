@@ -1,10 +1,8 @@
 {
-    "title": "Sun cluster service configuration",
+    "title": "Sun  cluster service configuration",
     "linkTitle": "Sun cluster service configuration",
     "weight": "290"
-}# <span id="Sun_cluster_service_configuration"></span>Sun cluster service configuration
-
-This topic describes the Transfer CFT Sun cluster service configuration parameters and resource controls. To integrate Transfer CFT with Sun cluster, use the SCRGADM command to
+}This topic describes the Transfer CFT Sun cluster service configuration parameters and resource controls. To integrate Transfer CFT with Sun cluster, use the SCRGADM command to
 record and remove resources.
 
 ## About the scrgadm command
@@ -12,9 +10,9 @@ record and remove resources.
 Enter the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>scrgadm -p[v[v]] [-t &lt;Resource_Type_name&gt;]
+   <tbody>
+      <tr class="odd">
+         <td>            <p>scrgadm -p[v[v]] [-t &lt;Resource_Type_name&gt;]
 \<br />
 [-g &lt;Resource_Group_name&gt;] \<br />
 [-j &lt;Resource_name&gt;]<br />
@@ -46,9 +44,9 @@ scrgadm -a -S -g &lt;SharedAddress_RG_Name&gt;
 -l hostname[,hostname,...] [-n nafo@node[,nafo@node,...]]
 \<br />
 [-X aux_node[,aux_node,...]] [-y &lt;property&gt;
-[-y &lt;property&gt;]]</p></td>
-</tr>
-</tbody>
+[-y &lt;property&gt;]]</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="CFT_resources_group"></span>Transfer CFT resources group
@@ -64,22 +62,22 @@ cluster.
 View the command line description
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>Command</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-a</p></td>
-<td width="69.219%"><p>resource addition (add)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-g CFT-rg</p></td>
-<td width="69.219%"><p>resources group name</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Command</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-a</p>         </td>
+         <td width="69.219%">            <p>resource addition (add)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-g CFT-rg</p>         </td>
+         <td width="69.219%">            <p>resources group name</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="CFT_resources"></span>Transfer CFT resources
@@ -87,10 +85,10 @@ View the command line description
 There are three resources for the CFT-rg group:
 
 -   [Virtual
-    IP](#virtual_ip)
+    IP](#Virtual_IP)
 -   [Shared
-    file system](#shared_file_system)
--   [GDS](#generic_data_service_cft):
+    file system](#Shared_file_system)
+-   [GDS](#Generic_data_service_CFT):
     the Transfer CFT start, stop, and test scripts
 
 #### <span id="Virtual_IP"></span>Virtual IP
@@ -118,39 +116,39 @@ scrgadm
 View the command line description
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>Command</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td><p>-a</p></td>
-<td><p>resource addition (add)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p>–L</p></td>
-<td><p>logical name resource type</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p>-g CFT-rg</p></td>
-<td><p>resources group name</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p>-j cft-ip</p></td>
-<td><p>resource name</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td><p>–l cft-ip</p></td>
-<td><p>logical name (as defined in /etc/hosts
-in our test)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td><p>-n nafo0@1,nafo0@2</p></td>
-<td><p>use of nafo interfaces 1 and 2</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Command</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td>            <p>-a</p>         </td>
+         <td>            <p>resource addition (add)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p>–L</p>         </td>
+         <td>            <p>logical name resource type</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p>-g CFT-rg</p>         </td>
+         <td>            <p>resources group name</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p>-j cft-ip</p>         </td>
+         <td>            <p>resource name</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td>            <p>–l cft-ip</p>         </td>
+         <td>            <p>logical name (as defined in /etc/hosts
+in our test)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td>            <p>-n nafo0@1,nafo0@2</p>         </td>
+         <td>            <p>use of nafo interfaces 1 and 2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Shared_file_system"></span>Shared file system
@@ -164,34 +162,34 @@ scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\
 View the command line description
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>Command</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-a</p></td>
-<td width="69.219%"><p>resource addition (add)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-g CFT-rg</p></td>
-<td width="69.219%"><p>resources group name</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-t SUNW.HAStoragePlus</p></td>
-<td width="69.219%"><p>GDS resource type</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-j cft-disk</p></td>
-<td width="69.219%"><p>resource name</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-x FilesystemMountpoints=/global/cft</p></td>
-<td width="69.219%"><p>mount point</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Command</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-a</p>         </td>
+         <td width="69.219%">            <p>resource addition (add)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-g CFT-rg</p>         </td>
+         <td width="69.219%">            <p>resources group name</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-t SUNW.HAStoragePlus</p>         </td>
+         <td width="69.219%">            <p>GDS resource type</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-j cft-disk</p>         </td>
+         <td width="69.219%">            <p>resource name</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-x FilesystemMountpoints=/global/cft</p>         </td>
+         <td width="69.219%">            <p>mount point</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Generic_data_service_CFT"></span>Generic data service CFT
@@ -199,69 +197,69 @@ View the command line description
 The following is the declaration of the GDS for Transfer CFT:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \<br />
+   <tbody>
+      <tr class="odd">
+         <td>scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \<br />
 –x Start_command=/global/cft/cftstartFailover \<br />
 –x Stop_command=/global/cft/cftstopFailover \<br />
 –x Probe_command=/global/cft/cftprobeFailover \<br />
 –y Port_list="1765/tcp,1766/tcp,1767/tcp" \<br />
-–y Resource_dependencies=cft-ip,cft-disk</td>
-</tr>
-</tbody>
+–y Resource_dependencies=cft-ip,cft-disk         </td>
+      </tr>
+   </tbody>
 </table>
 
 View the command line description
 
 <table data-cellspacing="0" width="90%">
-<thead>
-<tr class="header">
-<th><p>Command</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-a</p></td>
-<td width="69.219%"><p>resource addition (add)</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-g CFT-rg</p></td>
-<td width="69.219%"><p>resources group name</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-t SUNW.gds</p></td>
-<td width="69.219%"><p>GDS resource type</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-j cft-gds</p></td>
-<td width="69.219%"><p>resource name</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-x Start_command= /global/cft/cftstartFailover</p></td>
-<td width="69.219%"><p>command definition for startup</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>-x Stop_command= /global/cft/cftstopFailover</p></td>
-<td width="69.219%"><p>command definition for stop</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>-x Probe_command= /global/cft/cftprobeFailover</p></td>
-<td width="69.219%"><p>command definition for probe</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="30.781%"><p>–y Port_list=1765/tcp</p></td>
-<td width="69.219%"><p>verification of the listening ports of Transfer CFT in
-TCP (parameters of the Transfer CFT cftprot cards)</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="30.781%"><p>–y Resource_dependencies= cft-ip,cft-disk</p></td>
-<td width="69.219%"><p>You can activate GDX on a node only if the cft-ip and cft-disk
+   <thead>
+      <tr class="header">
+         <th>            <p>Command</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-a</p>         </td>
+         <td width="69.219%">            <p>resource addition (add)</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-g CFT-rg</p>         </td>
+         <td width="69.219%">            <p>resources group name</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-t SUNW.gds</p>         </td>
+         <td width="69.219%">            <p>GDS resource type</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-j cft-gds</p>         </td>
+         <td width="69.219%">            <p>resource name</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-x Start_command= /global/cft/cftstartFailover</p>         </td>
+         <td width="69.219%">            <p>command definition for startup</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>-x Stop_command= /global/cft/cftstopFailover</p>         </td>
+         <td width="69.219%">            <p>command definition for stop</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>-x Probe_command= /global/cft/cftprobeFailover</p>         </td>
+         <td width="69.219%">            <p>command definition for probe</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="30.781%">            <p>–y Port_list=1765/tcp</p>         </td>
+         <td width="69.219%">            <p>verification of the listening ports of Transfer CFT in
+TCP (parameters of the Transfer CFT cftprot cards)</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="30.781%">            <p>–y Resource_dependencies= cft-ip,cft-disk</p>         </td>
+         <td width="69.219%">            <p>You can activate GDX on a node only if the cft-ip and cft-disk
 resources are online. In the event of problems with one of these two resources,
 Sun Custer attempts to restart the faulty resource, or to switch over
-to another node</p></td>
-</tr>
-</tbody>
+to another node</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The default parameters are adequate for the test

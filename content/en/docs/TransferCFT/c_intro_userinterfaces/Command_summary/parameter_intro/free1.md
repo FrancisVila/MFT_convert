@@ -18,4 +18,4 @@ not processed by Transfer CFT. The length of this string must
 not exceed the length indicated in the len
 field.
 
-[Return to Command index](../../)
+[Return to Command index](../)

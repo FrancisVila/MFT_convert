@@ -7,13 +7,13 @@
 To notify the end of the processing to Transfer CFT, the preprocessing script must perform an END command with istate=no.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.         </td>
+      </tr>
+   </tbody>
 </table>
 
 As the preprocessing phase did not exist in versions prior to Transfer CFT 3.0, during this phase the former state has the adapted state and is always set to A.
@@ -46,11 +46,11 @@ The following preprocessing actions occur according to the status of the prestat
     -   IMPL=YES
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
+      </tr>
+   </tbody>
 </table>

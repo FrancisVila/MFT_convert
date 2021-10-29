@@ -20,4 +20,4 @@ to the host address in the same position.
 
 **PORT = number**
 
-[Return to Command index](../../)
+[Return to Command index](../)

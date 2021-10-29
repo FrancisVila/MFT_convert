@@ -1,10 +1,8 @@
 {
-    "title": "Defining CFTSEND in PeSIT",
+    "title": "Defining CFTSEND in PeSIT ",
     "linkTitle": "Defining CFTSEND in PeSIT",
     "weight": "200"
-}# <span id="Defining_CFTSEND_in_PeSIT"></span>Defining CFTSEND in PeSIT 
-
-The CFTSEND object contains the parameters controlling the access to
+}The CFTSEND object contains the parameters controlling the access to
 the data to be sent and the execution of the send process.
 
 When the transfer is initiated by a local SEND object explicitly containing
@@ -17,17 +15,17 @@ This topic presents the CFTSEND
 object parameters that are affected by the PeSIT protocol. These parameters
 are:
 
--   The partner [identification parameters](#identification_parameters)
+-   The partner [identification parameters](#Identification_parameters)
 -   The [data
-    processing parameters](#data_processing_parameters)
+    processing parameters](#Data_processing_parameters)
 -   The [file
-    network characteristics](#file_network_characteristics)
+    network characteristics](#File_network_characteristics)
 -   A free parameter
-    for the [Transfer CFT user](#user_parameter)
+    for the [Transfer CFT user](#User_parameter)
 -   [An
-    execution control parameter](#execution_control_parameter)
+    execution control parameter](#Execution_control_parameter)
 -   [Parameter
-    values for negotiated functional levels](#parameter_values_for_negotiated_functional_levels)
+    values for negotiated functional levels](#Parameter_values_for_negotiated_functional_levels)
 
 ### <span id="Identification_parameters"></span>Identification parameters
 
@@ -55,14 +53,14 @@ CFTSEND IMPL = YES. The request is however ignored if the parameters set
 in the command are different from those sent by the receiver partner.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the requester/receiver does
-not set any parameters, it uses the corresponding value sent by the server/sender.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the requester/receiver does
+not set any parameters, it uses the corresponding value sent by the server/sender.         </td>
+      </tr>
+   </tbody>
 </table>
 
 If the partner is a server/receiver,
@@ -164,118 +162,118 @@ The table below summarizes the parameter values authorized according
 to the functional levels negotiated for the protocol.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>CFTSEND or SEND parameter </p></th>
-<th><p>PeSIT E  </p></th>
-<th><p>PeSIT E</p>
-<p>+</p>
-<p>Transfer CFT extensions </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>FDATE/FTIME </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>NBLKSIZE </p></td>
-<td><p>- </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="odd">
-<td><p>NCODE </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>NCOMP </p></td>
-<td><p>0, 2, 8, 10<br />
-(dft: 10) </p></td>
-<td><p>0..15<br />
-(dft: 15) </p></td>
-</tr>
-<tr class="odd">
-<td><p>NFNAME (transmission in open mode) </p></td>
-<td><p>X (3) </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>NIDF</p></td>
-<td><p>string14 </p></td>
-<td><p>string28 </p></td>
-</tr>
-<tr class="odd">
-<td><p>NLRECL </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>NKEYLEN </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="odd">
-<td><p>NKEYPOS </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>NORG</p></td>
-<td><p>X  </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="odd">
-<td><p>NRECFM </p></td>
-<td><p>F, V </p></td>
-<td><p>F, V, U </p></td>
-</tr>
-<tr class="even">
-<td><p>NSPACE </p></td>
-<td><p>X </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="odd">
-<td><p>NTYPE </p></td>
-<td><p>- </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="even">
-<td><p>PARM</p></td>
-<td><p>- </p></td>
-<td><p>X </p></td>
-</tr>
-<tr class="odd">
-<td><p>PRI  </p></td>
-<td><p>low &lt; 128<br />
+   <thead>
+      <tr class="header">
+         <th>            <p>CFTSEND or SEND parameter </p></th>
+         <th>            <p>PeSIT E  </p></th>
+         <th>            <p>PeSIT E</p>
+            <p>+</p>
+            <p>Transfer CFT extensions </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FDATE/FTIME </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NBLKSIZE </p>         </td>
+         <td>            <p>- </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NCODE </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NCOMP </p>         </td>
+         <td>            <p>0, 2, 8, 10<br />
+(dft: 10) </p>         </td>
+         <td>            <p>0..15<br />
+(dft: 15) </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NFNAME (transmission in open mode) </p>         </td>
+         <td>            <p>X (3) </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NIDF</p>         </td>
+         <td>            <p>string14 </p>         </td>
+         <td>            <p>string28 </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NLRECL </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NKEYLEN </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NKEYPOS </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NORG</p>         </td>
+         <td>            <p>X  </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NRECFM </p>         </td>
+         <td>            <p>F, V </p>         </td>
+         <td>            <p>F, V, U </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>NSPACE </p>         </td>
+         <td>            <p>X </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>NTYPE </p>         </td>
+         <td>            <p>- </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>PARM</p>         </td>
+         <td>            <p>- </p>         </td>
+         <td>            <p>X </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>PRI  </p>         </td>
+         <td>            <p>low &lt; 128<br />
 average = 128<br />
-high &gt; 128 </p></td>
-<td><p>low &lt; 128<br />
+high &gt; 128 </p>         </td>
+         <td>            <p>low &lt; 128<br />
 average = 128<br />
-high &gt; 128 </p></td>
-</tr>
-<tr class="even">
-<td><p>RAPPL </p></td>
-<td><p>string8 </p></td>
-<td><p>string48 </p></td>
-</tr>
-<tr class="odd">
-<td><p>RUSER </p></td>
-<td><p>string8 </p></td>
-<td><p>string32</p></td>
-</tr>
-<tr class="even">
-<td><p>SAPPL</p></td>
-<td><p>string8 </p></td>
-<td><p>string48 </p></td>
-</tr>
-<tr class="odd">
-<td><p>SUSER </p></td>
-<td><p>string8 </p></td>
-<td><p>string32</p></td>
-</tr>
-</tbody>
+high &gt; 128 </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>RAPPL </p>         </td>
+         <td>            <p>string8 </p>         </td>
+         <td>            <p>string48 </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>RUSER </p>         </td>
+         <td>            <p>string8 </p>         </td>
+         <td>            <p>string32</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>SAPPL</p>         </td>
+         <td>            <p>string8 </p>         </td>
+         <td>            <p>string48 </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>SUSER </p>         </td>
+         <td>            <p>string8 </p>         </td>
+         <td>            <p>string32</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   X:  parameter

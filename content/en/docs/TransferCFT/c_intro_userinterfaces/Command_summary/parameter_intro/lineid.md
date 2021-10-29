@@ -19,4 +19,4 @@ The table below indicates, for each operating system that uses the parameter,
 the maximum number of characters to be defined and the meaning of the
 parameter.
 
-[Return to Command index](../../)
+[Return to Command index](../)

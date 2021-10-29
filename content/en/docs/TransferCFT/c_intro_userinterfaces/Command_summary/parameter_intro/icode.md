@@ -10,4 +10,4 @@
 
 COPYFILE parameter that codes the input file data.
 
-[Return to Command index](../../)
+[Return to Command index](../)

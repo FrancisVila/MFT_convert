@@ -4,7 +4,7 @@
     "weight": "150"
 }This section provides information on using the following services and features in Transfer CFT:
 
-[About the CFTUTIL interface](../c_intro_userinterfaces/about_cftutil) - Describes the CFTUTIL command line utility used in Transfer CFT.
+[About the CFTUTIL interface](c_intro_userinterfaces/about_cftutil) - Describes the CFTUTIL command line utility used in Transfer CFT.
 
 [Folder monitoring](intro_folder_monitor/folder_monitor_uconf) - Describes how to set up folder monitoring for Transfer CFT directories. When activated in Transfer CFT, folder monitoring periodically checks the status of files contained in a defined set of directories to see if there are transfer candidates.
 
@@ -12,7 +12,7 @@
 
 [Using synchronous communication](synch_comm_tcpip_intro) - Synchronous communication provides a real-time response when sending data from a client to the Transfer CFT server. This response indicates that the client command was acknowledged by Transfer CFT and is listed in the catalog.
 
-[Using APIs](../cft_intro_install/about_this_document_zos/using_apis) - Application Programming Interfaces are a set of functions
+[Using APIs](using_apis) - Application Programming Interfaces are a set of functions
 that create application services.
 Each of these services is described in the following sections:
 
@@ -31,13 +31,13 @@ Each of these services is described in the following sections:
 task concepts, exit
 task architecture, types of exits and how to implement.
 
-[Force heterogeneous mode for a group of files](../admin_intro/uconf/uconf_heterogeneous_mode) - Describes how to disable the default settings in case you want to ensure that groups of files are transferred using only the heterogeneous mode.
+[Force heterogeneous mode for a group of files](admin_intro/uconf/uconf_heterogeneous_mode) - Describes how to disable the default settings in case you want to ensure that groups of files are transferred using only the heterogeneous mode.
 
-[Script execution scheduling](../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftcron) - Describes the CRONJOB feature, which allows Transfer CFT to execute jobs at predetermined
+[Script execution scheduling](c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftcron) - Describes the CRONJOB feature, which allows Transfer CFT to execute jobs at predetermined
 dates and times. These jobs can perform functions such as periodically
 scan one or more directories and issue a SEND command.
 
 Defining maximum simultaneous transfers - Describes how to optimize the number of parallel transfers, the number of transfer sessions, and how parameter dependencies affect transfer rates.
 
-[Command Guide](../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions) - This section provides a comprehensive listing of Transfer CFT commands,
+[Command Guide](c_intro_userinterfaces/command_summary/typographical_conventions) - This section provides a comprehensive listing of Transfer CFT commands,
 typographical conventions, command syntax and parameters.

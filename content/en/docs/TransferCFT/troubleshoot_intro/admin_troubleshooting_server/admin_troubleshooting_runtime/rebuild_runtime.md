@@ -26,11 +26,11 @@ Where:
 In a UNIX environment, regenerate the uconf settings as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftruntime --uconf /home/Transfer_CFT/home /home/Transfer_CFT/runtime</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftruntime --uconf /home/Transfer_CFT/home /home/Transfer_CFT/runtime         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Windows syntax**
@@ -50,13 +50,13 @@ Usage:
 -   -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">You must use double quotes when indicating a path that contains spaces.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">You must use double quotes when indicating a path that contains spaces.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example 1**
@@ -64,11 +64,11 @@ Usage:
 In a Windows environment, create a new runtime called runtime2:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftruntime c:\AxwayCFT38\Transfer_CFT\home c:\AxwayCFT36\Transfer_CFT\runtime2</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftruntime c:\AxwayCFT38\Transfer_CFT\home c:\AxwayCFT36\Transfer_CFT\runtime2         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example 2**
@@ -76,9 +76,9 @@ In a Windows environment, create a new runtime called runtime2:
 In a Windows environment, regenerate the cftuconf.dat uconf settings as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>cftruntime c:\AxwayCFT38\Transfer_CFT\home c:\AxwayCFT36\Transfer_CFT\runtime –uconf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>cftruntime c:\AxwayCFT38\Transfer_CFT\home c:\AxwayCFT36\Transfer_CFT\runtime –uconf         </td>
+      </tr>
+   </tbody>
 </table>

@@ -1,12 +1,10 @@
 {
-    "title": "Creating an API application",
+    "title": "Creating  an API application",
     "linkTitle": "Creating an API application",
     "weight": "230"
-}# <span id="Creating_an_API_application"></span>Creating an API application
-
-The example provided below was designed for the cft-tcp.conf configuration example located in *&lt;installdir>/runtime/conf/*. For
-this example, you should have already customized this file using the method described in [*Running
-Transfer CFT for the first time*](running_cft_for_the_first_time_unix.htm).
+}The example provided below was designed for the cft-tcp.conf configuration example located in *&lt;installdir>/runtime/conf/*. For
+this example, you should have already customized this file using the method described in *Running
+Transfer CFT for the first time*.
 
 ## Application components
 

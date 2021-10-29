@@ -92,19 +92,19 @@ The first 32 bytes (SGTRACE=512) or the whole parameter field (SGTRACE=544) subm
 Example of a Transfer CFT diagnosis:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p><code>SGAB00E: Jobname Stepname SITMOS   Date Time Version</code></p>
-<p><code>ABEND = 84sssuuu ,   PSW =xxxxxxxx xxxxxxxx ,  EPA  =xxxxxxxx</code></p>
-<p><code>SGAB01E: REG 0-7 =xxxxxxxx .......</code></p>
-<p><code>SGAB02E: REG 8-15=xxxxxxxx ......</code></p>
-<p><code>SGAB03E:   SGNUC =xxxxxxxx , TRACE =xxxxxxxx ...</code></p>
-<p><code>SGAB08E: INSTRUCTIONS :    xxxxxxxx:-6           xxxxxxx</code></p>
-<p><code>SGAB08E: ** USER EXIT ABEND DETECTED ** L=l EPA= x NAME=Mod</code></p>
-<p><code>SGAB30E: xxxxxxxx CFTEXInn TCB:  Tcbaddr SGNUC: xxx EPA : Epa</code></p>
-<p><code>SGAB09E: TASK-AC =CFTEXInn , KCB =xx , PRV =xx ,SGSAVE =xxSAVE = Saveaddr MODULE = EXITASK  date Version  EPA= xx RET= xx</code></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><code>SGAB00E: Jobname Stepname SITMOS   Date Time Version</code></p>
+            <p><code>ABEND = 84sssuuu ,   PSW =xxxxxxxx xxxxxxxx ,  EPA  =xxxxxxxx</code></p>
+            <p><code>SGAB01E: REG 0-7 =xxxxxxxx .......</code></p>
+            <p><code>SGAB02E: REG 8-15=xxxxxxxx ......</code></p>
+            <p><code>SGAB03E:   SGNUC =xxxxxxxx , TRACE =xxxxxxxx ...</code></p>
+            <p><code>SGAB08E: INSTRUCTIONS :    xxxxxxxx:-6           xxxxxxx</code></p>
+            <p><code>SGAB08E: ** USER EXIT ABEND DETECTED ** L=l EPA= x NAME=Mod</code></p>
+            <p><code>SGAB30E: xxxxxxxx CFTEXInn TCB:  Tcbaddr SGNUC: xxx EPA : Epa</code></p>
+            <p><code>SGAB09E: TASK-AC =CFTEXInn , KCB =xx , PRV =xx ,SGSAVE =xxSAVE = Saveaddr MODULE = EXITASK  date Version  EPA= xx RET= xx</code></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Additionally, the following are valid for the example:

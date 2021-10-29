@@ -1,5 +1,5 @@
 {
-    "title": "Setting protocol parameters",
+    "title": "Setting up the TCP/IP layer ",
     "linkTitle": "Setting protocol parameters",
     "weight": "230"
 }Before starting Transfer CFT with TCP/IP for the first time, you must setup your TCP/IP.

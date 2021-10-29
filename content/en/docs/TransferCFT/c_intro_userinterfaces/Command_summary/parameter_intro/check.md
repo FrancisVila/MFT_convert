@@ -11,4 +11,4 @@
 
 For PKIUTIL the certificate check during an import.
 
-[Return to Command index](../../)
+[Return to Command index](../)

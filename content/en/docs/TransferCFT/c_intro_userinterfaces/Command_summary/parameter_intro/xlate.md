@@ -11,6 +11,6 @@
 CFTXLATE object identifier that defines the translation table used
 for the transfers or the copyfile.
 
-See also: :*[Translation](../../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts)\]*
+See also: :*[Translation](../../../concepts/cft_configuration_concepts_start_here/translation_table_concepts)\]*
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,19 +1,17 @@
 {
-    "title": "Using PKI exits",
-    "linkTitle": "Using PKI exits",
-    "weight": "210"
-}# <span id="Using_PKI_exits__Start_here"></span>Using PKI exits: Start here
-
-This book describes the rules for implementing the PKI exit. This book
+    "title": "Using  PKI exits: Start here",
+    "linkTitle": "Start here",
+    "weight": "230"
+}This book describes the rules for implementing the PKI exit. This book
 begins with this topic which describes
 the following PKI exit concepts:
 
 -   [Using
-    PKI exits](#using_pki_exits__start_here)
--   [Activating](#activating)
--   [Processing](#processing)
+    PKI exits](#Using_PKI_exits__Start_here)
+-   [Activating](#Activating)
+-   [Processing](#Processing)
 -   [Defining
-    a PKI exit](#defining_a_pki_exit)
+    a PKI exit](#Defining_a_PKI_exit)
 
 ## <span id="Using_PKI_exits"></span>PKI exit overview
 
@@ -90,12 +88,12 @@ You can define only one user function, cftpkie, for Transfer
 CFT, with the syntax as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>int
-cftpkie(struct pkicom *zpki)</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>int
+cftpkie(struct pkicom *zpki)         </td>
+      </tr>
+   </tbody>
 </table>
 
 The pkicom structure is used to exchange data between Transfer CFT and

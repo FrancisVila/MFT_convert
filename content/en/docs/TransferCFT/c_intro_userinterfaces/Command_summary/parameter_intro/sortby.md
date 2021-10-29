@@ -36,6 +36,6 @@ CFTUTIL DISPLAY SORTBY=(-DATEK,-TIMEK)
 
 Sorts the LISTCAT command information in an alphabetical/alphanumberic order, where the maximum length is 32, and the number of entries is limited to 10.
 
-Records are immediately available after a catalog item is deleted, which may affect the order of the IDTU in the catalog. To view the catalog by IDTU, please see the [LISTCAT SORTBY](../../../about_cftutil/monitoring_cftutil_intro/listcat_command) example.
+Records are immediately available after a catalog item is deleted, which may affect the order of the IDTU in the catalog. To view the catalog by IDTU, please see the [LISTCAT SORTBY](../../about_cftutil/monitoring_cftutil_intro/listcat_command) example.
 
-[Return to Command index](../../)
+[Return to Command index](../../Command_summary.htm)

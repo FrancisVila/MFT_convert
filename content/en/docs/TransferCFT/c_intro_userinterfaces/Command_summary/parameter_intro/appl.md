@@ -10,4 +10,4 @@ All Transfer CFT application definitions.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

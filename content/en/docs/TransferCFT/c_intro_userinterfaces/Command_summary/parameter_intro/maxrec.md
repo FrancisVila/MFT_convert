@@ -25,4 +25,4 @@ log file.
 -   If MAXREC=0 (default), no automatic switching occurs relative to the
     number of records in the file.
 
-[Return to Command index](../../)
+[Return to Command index](../)

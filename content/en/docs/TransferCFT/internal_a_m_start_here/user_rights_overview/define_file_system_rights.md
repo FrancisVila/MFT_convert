@@ -1,5 +1,5 @@
 {
-    "title": "2. Define file permission",
+    "title": "2. Define file permissions",
     "linkTitle": "2. Define file permission",
     "weight": "230"
 }This section describes how to define read and write rights. The following points indicate when or why you may want to set these file permissions:
@@ -23,10 +23,10 @@ You must give each additional Transfer CFT user read and write rights as follows
 
 ## z/OS tasks
 
-See the section on [RACF PERMIT](../../../cft_intro_install/about_this_document_zos/t_start_servers_jobs_zos/t_system_environment_zos/t_set__up_racf_security) (TSS, etc.) in the Transfer CFT z/OS *Installation and Operations Guide.*
+See the section on [RACF PERMIT](../../zOS/operator_interface_commands/t_set_%20up_RACF_security.htm#RACF%C2%A0pas) (TSS, etc.) in the Transfer CFT z/OS *Installation and Operations Guide.*
 
 Related topics
 
--   [About system users](..//transfercft/internal_a_m_start_here/user_rights_overview)
--   [User rights use case scenarios](../user_rights_security_scenarios)
--   [Recommendations and troubleshooting](../user_rights_tips)
+-   [About system users](user_rights_overview.htm)
+-   [User rights use case scenarios](user_rights_security_scenarios.htm)
+-   [Recommendations and troubleshooting](user_rights_tips.htm)

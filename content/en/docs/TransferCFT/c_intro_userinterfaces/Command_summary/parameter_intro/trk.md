@@ -46,4 +46,4 @@ instances. The possible values of this parameter include:
 -   UNDEFINED: The
     tracking options are defined in the TRK parameter of the CFTPART command
 
-[Return to Command index](../../)
+[Return to Command index](../)

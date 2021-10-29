@@ -10,4 +10,4 @@
 
 Hayes modem initialization string for incoming connections (server mode).
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -10,4 +10,4 @@
 
 Maximum length of 32 characters, which are not case-sensitive.
 
-[Return to Command index](../../)
+[Return to Command index](../)

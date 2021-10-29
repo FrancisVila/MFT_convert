@@ -1,10 +1,8 @@
 {
-    "title": "Configuring partners",
+    "title": "Configuring  partners",
     "linkTitle": "Configuring partners",
     "weight": "170"
-}# <span id="Configuring_partners"></span>Configuring partners
-
-Transfer CFT OFTP (ODETTE) partners are the sending and receiving installations.
+}Transfer CFT OFTP (ODETTE) partners are the sending and receiving installations.
 
 The NSPART and NRPART parameters are used to describe these partners.
 The required syntax for these parameters is as follows:

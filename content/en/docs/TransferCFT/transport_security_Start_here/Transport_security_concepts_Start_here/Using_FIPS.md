@@ -53,13 +53,13 @@ This issue occurs because the private key is encrypted using triple DES (by defa
 > In OpenSSL use the pkcs12 -descert option to encrypt the PKCS12 certificate to triple DES (RC2-40). For example:
 >
 > <table data-cellspacing="0">
-> <tbody>
-> <tr class="odd">
-> <td>pkcs12-export -in &lt;your server cert&gt;.pem -inkey &lt;your server key&gt;.pem -out mycert.p12 -descert</td>
-> </tr>
-> </tbody>
+>    <tbody>
+>       <tr class="odd">
+>          <td>pkcs12-export -in &lt;your server cert&gt;.pem -inkey &lt;your server key&gt;.pem -out mycert.p12 -descert         </td>
+>       </tr>
+>    </tbody>
 > </table>
 
 Related topics
 
--   [About UCONF (the unified configuration tool)](../../../admin_intro/uconf)
+-   [About UCONF (the unified configuration tool)](../../admin_intro/uconf)

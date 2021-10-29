@@ -1,26 +1,26 @@
 {
-    "title": "Default receive template CFTRECV",
+    "title": "Receive template ",
     "linkTitle": "Default receive template CFTRECV",
     "weight": "180"
 }This topic describes general file reception concepts and the
 CFTRECV template.
 
 [Receive
-file parameter summary](#receive_file_parameter_summary) 
+file parameter summary](#Receive_file_parameter_summary) 
 
 [Receiving
-a file](#receiving_a_file)
+a file](#Receiving_a_File)
 
 [About
-the default CFTRECV object](#about_the_default_cftrecv_object)
+the default CFTRECV object](#About_the_default_CFTRECV_object)
 
 Related
 topics
 
 -   Command syntax
-    [CFTRECV](../../../c_intro_userinterfaces/command_summary)
+    [CFTRECV](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTRECV](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv)
+    [CFTRECV](../../CFTUTIL/Conf/CFTRECV.htm)
 
 ## <span id="Receive_file_parameter_summary"></span>Receive file parameter summary
 
@@ -82,39 +82,39 @@ For a given transfer, these protocol values are the DEFAULT values of
 the corresponding Fxxxxx parameters:
 
 <table data-cellspacing="0" data-hspace="9" data-vspace="9">
-<tbody>
-<tr class="odd">
-<td data-valign="top" width="26%"><p>PeSIT E CFT/CFT</p>
-<p>PeSIT D CFT profile </p></td>
-<td data-valign="top" width="74%"><p>In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top" width="26%">            <p>PeSIT E CFT/CFT</p>
+            <p>PeSIT D CFT profile </p>         </td>
+         <td data-valign="top" width="74%">            <p>In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer
 between 2 <span>Transfer CFT</span>s), the default values taken by the FSPACE,
 FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the
 partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM
 parameters). For open mode operation, the FNAME parameter can also inherit
-the value of the partner NFNAME parameter. </p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="26%"><p>PeSIT E </p></td>
-<td data-valign="top" width="74%"><p>In PeSIT E, the default values taken by the FKEYLEN and
+the value of the partner NFNAME parameter. </p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="26%">            <p>PeSIT E </p>         </td>
+         <td data-valign="top" width="74%">            <p>In PeSIT E, the default values taken by the FKEYLEN and
 FKEYPOS parameters are the values sent by the partner (see the NKEYLEN
-and NKEYPOS parameters of the CFTSEND object). </p></td>
-</tr>
-<tr class="odd">
-<td data-valign="top" width="26%"><p>PeSIT SIT profile </p></td>
-<td data-valign="top" width="74%"><p>In PeSIT SIT profile, the "file size", "record
+and NKEYPOS parameters of the CFTSEND object). </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td data-valign="top" width="26%">            <p>PeSIT SIT profile </p>         </td>
+         <td data-valign="top" width="74%">            <p>In PeSIT SIT profile, the "file size", "record
 format" and "record length" information items sent by the
 protocol are taken as the default values of the FSPACE, FRECFM, FLRECL
-parameters.</p></td>
-</tr>
-<tr class="even">
-<td data-valign="top" width="26%"><p>ODETTE </p></td>
-<td data-valign="top" width="74%"><p>In the ODETTE protocol, the default values of the FRECFM,
-FLRECL and FSPACE parameters are deduced from the ODETTE parameters received</p></td>
-</tr>
-</tbody>
+parameters.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td data-valign="top" width="26%">            <p>ODETTE </p>         </td>
+         <td data-valign="top" width="74%">            <p>In the ODETTE protocol, the default values of the FRECFM,
+FLRECL and FSPACE parameters are deduced from the ODETTE parameters received</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-<span id="new_link_receive_templates"></span>For more information, see the [Protocol](../../../protocols_start_here) topics.
+<span id="new_link_receive_templates"></span>For more information, see the [Protocol](../../Prots/Protocols_start_here.htm) topics.
 
 ## <span id="Receiving_a_File"></span>Receiving a file
 
@@ -131,7 +131,7 @@ required.
 Correspondence
 between the RECV file command and Transfer CFT parameter setting
 
-<img src="Correspondence_between_RECV_and_parameter.gif" width="729" height="440" />
+<img src="/Images/TransferCFT/Correspondence_between_RECV_and_parameter.gif" width="729" height="440" />
 
 ## <span id="About_the_default_CFTRECV_object"></span>About the CFTRECV template object
 

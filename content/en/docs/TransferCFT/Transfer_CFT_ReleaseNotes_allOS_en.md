@@ -1,15 +1,15 @@
 {
-    "title": "Release Notes",
+    "title": "Axway AMPLIFY Transfer CFT 3.8 Release Notes",
     "linkTitle": "Release Notes",
     "weight": "30"
-}-   [New features and enhancements](#new)
--   [Platform features](#platform)
--   [Limitations](#limitations)
--   [Prerequisites](#prerequisites)
--   [Deprecated features](#deprecat)
--   [Discontinued support](#not%20supported)
--   [Documentation](#documentation)
--   [Support services](#support)
+}-   [New features and enhancements](#New)
+-   [Platform features](#Platform)
+-   [Limitations](#Limitations)
+-   [Prerequisites](#Prerequisites)
+-   [Deprecated features](#Deprecat)
+-   [Discontinued support](#Not%20supported)
+-   [Documentation](#Documentation)
+-   [Support services](#Support)
 
 ## <span id="New"></span>New features and enhancements
 
@@ -32,249 +32,249 @@ This section lists new features and product enhancements added since the last ma
 The table below lists the available Transfer CFT 3.8 features according to the version and operating system where they were introduced.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header" data-mc-conditions="">
+   <thead>
+      <tr class="header" data-mc-conditions="">
 <th rowspan="2">Function</th>
 <th colspan="5">  OS</th>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<th>Windows</th>
-<th>UNIX</th>
-<th>z/OS</th>
-<th>IBM i</th>
-<th>HP NS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-mc-conditions="">
-<td>Google Cloud storage</td>
-<td>-</td>
-<td>3.8</td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Flow Manager</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Flow Manager SaaS</td>
-<td>3.6</td>
-<td>3.6</td>
-<td>3.6</td>
-<td>3.6</td>
-<td>3.6</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td><p>Using tracking with</p>
-<p>Edge Agent</p></td>
-<td>3.5</td>
-<td>3.5</td>
-<td>3.5</td>
-<td>3.5</td>
-<td>3.5</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>SAML</td>
-<td>3.5</td>
-<td>3.5</td>
-<td>3.6</td>
-<td>3.6 SP1</td>
-<td>3.5</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>REST API </td>
-<td>3.2.4</td>
-<td>3.2.4</td>
-<td>3.2.4</td>
-<td>3.2.4</td>
-<td>3.2.4</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>New browser-based user interface</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-<td>3.3.2</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Central Governance management</td>
-<td>3.1.3</td>
-<td>3.1.3</td>
-<td>3.1.3</td>
-<td>3.1.3</td>
-<td>3.2.4</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Folder monitoring</td>
-<td>3.1.2</td>
-<td>3.1.2</td>
-<td>3.1.3<sup>4</sup></td>
-<td>3.1.3<sup>4</sup></td>
-<td>3.2.4</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Secure Relay</td>
-<td>3.1.2</td>
-<td>3.1.2</td>
-<td>3.1.3</td>
-<td>3.1.3</td>
-<td>-</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Multi-node architecture</td>
-<td>3.0.1</td>
-<td>3.0.1<sup>1</sup></td>
-<td>3.0.1</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>TrustedFile (PGP S-MIME CMS)</td>
-<td>3.0.1<sup>3</sup></td>
-<td>3.0.1<sup>1</sup></td>
-<td>3.0.1</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>PassPort AM</td>
-<td>2.7.1</td>
-<td>2.7.1<sup>1</sup></td>
-<td>3.0.1</td>
-<td>3.0.1</td>
-<td>3.2.4</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>SFTP</td>
-<td>3.4</td>
-<td>3.4 <sup>5</sup></td>
-<td>3.5 <sup>6</sup></td>
-<td>-</td>
-<td>3.6<sup>6</sup></td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>IPv6</td>
-<td>2.7.1</td>
-<td>2.7.1<sup>1</sup></td>
-<td>2.7.1</td>
-<td>2.7.1</td>
-<td>3.3.2</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>pTCP</td>
-<td>2.7.1</td>
-<td>2.7.1<sup>1</sup></td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>UDT (excluding multi-node)</td>
-<td>2.7.1</td>
-<td>2.7.1<sup>2</sup></td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>SOCKS</td>
-<td>2.7.1</td>
-<td>2.7.1</td>
-<td>3.0.1</td>
-<td>2.7.1</td>
-<td>3.3.2</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Heartbeat functionality</td>
-<td>2.7.1</td>
-<td>2.7.1</td>
-<td>2.7.1</td>
-<td>2.7.1</td>
-<td>3.2.4</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Bandwidth control</td>
-<td>3.0.1</td>
-<td>3.0.1</td>
-<td>3.0.1</td>
-<td>3.0.1</td>
-<td>3.3.2</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>System users (USERCTRL)</td>
-<td>2.7.0</td>
-<td>2.6.2</td>
-<td>3.2.2</td>
-<td>3.1.3</td>
-<td>-</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td colspan="6"><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
-<p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
-<p><sup>3</sup>Enabled for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
-<p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
-<p><sup>5</sup>Available on AIX, HPUX ia64, Linux, Solaris, Windows</p>
-<p><sup>6</sup>For UNIX type files only</p></td>
-</tr>
-</tbody>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <th>Windows</th>
+         <th>UNIX</th>
+         <th>z/OS</th>
+         <th>IBM i</th>
+         <th>HP NS</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-mc-conditions="">
+         <td>Google Cloud storage         </td>
+         <td>-         </td>
+         <td>3.8         </td>
+         <td>-         </td>
+         <td>-         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Flow Manager         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Flow Manager SaaS         </td>
+         <td>3.6         </td>
+         <td>3.6         </td>
+         <td>3.6         </td>
+         <td>3.6         </td>
+         <td>3.6         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>            <p>Using tracking with</p>
+            <p>Edge Agent</p>         </td>
+         <td>3.5         </td>
+         <td>3.5         </td>
+         <td>3.5         </td>
+         <td>3.5         </td>
+         <td>3.5         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>SAML         </td>
+         <td>3.5         </td>
+         <td>3.5         </td>
+         <td>3.6         </td>
+         <td>3.6 SP1         </td>
+         <td>3.5         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>REST API          </td>
+         <td>3.2.4         </td>
+         <td>3.2.4         </td>
+         <td>3.2.4         </td>
+         <td>3.2.4         </td>
+         <td>3.2.4         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>New browser-based user interface         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+         <td>3.3.2         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Central Governance management         </td>
+         <td>3.1.3         </td>
+         <td>3.1.3         </td>
+         <td>3.1.3         </td>
+         <td>3.1.3         </td>
+         <td>3.2.4         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Folder monitoring         </td>
+         <td>3.1.2         </td>
+         <td>3.1.2         </td>
+         <td>3.1.3<sup>4</sup>         </td>
+         <td>3.1.3<sup>4</sup>         </td>
+         <td>3.2.4         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Secure Relay         </td>
+         <td>3.1.2         </td>
+         <td>3.1.2         </td>
+         <td>3.1.3         </td>
+         <td>3.1.3         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Multi-node architecture         </td>
+         <td>3.0.1         </td>
+         <td>3.0.1<sup>1</sup>         </td>
+         <td>3.0.1         </td>
+         <td>-         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>TrustedFile (PGP S-MIME CMS)         </td>
+         <td>3.0.1<sup>3</sup>         </td>
+         <td>3.0.1<sup>1</sup>         </td>
+         <td>3.0.1         </td>
+         <td>-         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>PassPort AM         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1<sup>1</sup>         </td>
+         <td>3.0.1         </td>
+         <td>3.0.1         </td>
+         <td>3.2.4         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>SFTP         </td>
+         <td>3.4         </td>
+         <td>3.4 <sup>5</sup>         </td>
+         <td>3.5 <sup>6</sup>         </td>
+         <td>-         </td>
+         <td>3.6<sup>6</sup>         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>IPv6         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1<sup>1</sup>         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1         </td>
+         <td>3.3.2         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>pTCP         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1<sup>1</sup>         </td>
+         <td>-         </td>
+         <td>-         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>UDT (excluding multi-node)         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1<sup>2</sup>         </td>
+         <td>-         </td>
+         <td>-         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>SOCKS         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1         </td>
+         <td>3.0.1         </td>
+         <td>2.7.1         </td>
+         <td>3.3.2         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Heartbeat functionality         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1         </td>
+         <td>2.7.1         </td>
+         <td>3.2.4         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Bandwidth control         </td>
+         <td>3.0.1         </td>
+         <td>3.0.1         </td>
+         <td>3.0.1         </td>
+         <td>3.0.1         </td>
+         <td>3.3.2         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>System users (USERCTRL)         </td>
+         <td>2.7.0         </td>
+         <td>2.6.2         </td>
+         <td>3.2.2         </td>
+         <td>3.1.3         </td>
+         <td>-         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td colspan="6">            <p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
+            <p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
+            <p><sup>3</sup>Enabled for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
+            <p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
+            <p><sup>5</sup>Available on AIX, HPUX ia64, Linux, Solaris, Windows</p>
+            <p><sup>6</sup>For UNIX type files only</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="User"></span>User interface comparison
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Functionality</th>
-<th><p>Central Governance<br />
+   <thead>
+      <tr class="header">
+         <th>Functionality</th>
+         <th>            <p>Central Governance<br />
 <span> or Flow Manager </span></p></th>
-<th><p>Transfer CFT user interface<br />
+         <th>            <p>Transfer CFT user interface<br />
 </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-mc-conditions="">
-<td><p>Administration</p></td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Configuration</td>
-<td>X*</td>
-<td>X</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Monitor transfers</td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Manage transfers</td>
-<td>-</td>
-<td>X</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>Monitor the log</td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr class="even" data-mc-conditions="">
-<td>Manage certificates</td>
-<td>X</td>
-<td>X</td>
-</tr>
-<tr class="odd" data-mc-conditions="">
-<td>End-to-end monitoring</td>
-<td>X</td>
-<td>-</td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-mc-conditions="">
+         <td>            <p>Administration</p>         </td>
+         <td>X         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Configuration         </td>
+         <td>X*         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Monitor transfers         </td>
+         <td>X         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Manage transfers         </td>
+         <td>-         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>Monitor the log         </td>
+         <td>X         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="even" data-mc-conditions="">
+         <td>Manage certificates         </td>
+         <td>X         </td>
+         <td>X         </td>
+      </tr>
+      <tr class="odd" data-mc-conditions="">
+         <td>End-to-end monitoring         </td>
+         <td>X         </td>
+         <td>-         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Administration**: Start, stop, and restart Transfer CFT.
@@ -298,45 +298,45 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Operating system</th>
-<th>Tested and supported</th>
-<th>Not supported</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AIX</td>
-<td>GPFS (recommended), NFSv4</td>
-<td>NFSv3, CXFS, VeritasSF</td>
-</tr>
-<tr class="even">
-<td>HP-UX</td>
-<td>NFSv4</td>
-<td>NFSv3, CXFS, VeritasSF</td>
-</tr>
-<tr class="odd">
-<td>Linux-x86</td>
-<td>GPFS (recommended), NFSv4, GFS2, AWS EFS</td>
-<td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF</td>
-</tr>
-<tr class="even">
-<td>Solaris</td>
-<td>NFSv4</td>
-<td>NFSv3, CXFS, QFS, VeritasSF</td>
-</tr>
-<tr class="odd">
-<td>Windows-x86</td>
-<td>SMB/CIFS, GPFS</td>
-<td>CXFS, NFS</td>
-</tr>
-<tr class="even">
-<td>z/OS</td>
-<td>Sharing DASD across Sysplex</td>
-<td> </td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Operating system</th>
+         <th>Tested and supported</th>
+         <th>Not supported</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>AIX         </td>
+         <td>GPFS (recommended), NFSv4         </td>
+         <td>NFSv3, CXFS, VeritasSF         </td>
+      </tr>
+      <tr class="even">
+         <td>HP-UX         </td>
+         <td>NFSv4         </td>
+         <td>NFSv3, CXFS, VeritasSF         </td>
+      </tr>
+      <tr class="odd">
+         <td>Linux-x86         </td>
+         <td>GPFS (recommended), NFSv4, GFS2, AWS EFS         </td>
+         <td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF         </td>
+      </tr>
+      <tr class="even">
+         <td>Solaris         </td>
+         <td>NFSv4         </td>
+         <td>NFSv3, CXFS, QFS, VeritasSF         </td>
+      </tr>
+      <tr class="odd">
+         <td>Windows-x86         </td>
+         <td>SMB/CIFS, GPFS         </td>
+         <td>CXFS, NFS         </td>
+      </tr>
+      <tr class="even">
+         <td>z/OS         </td>
+         <td>Sharing DASD across Sysplex         </td>
+         <td>          </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Limitations"></span>Limitations
@@ -357,13 +357,13 @@ The following non-exhaustive table lists shared file systems that have been test
 Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the redistribution package is already installed on your Windows system, there is no need to reinstall.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the redistribution package is already installed on your Windows system, there is no need to reinstall.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Secure Relay

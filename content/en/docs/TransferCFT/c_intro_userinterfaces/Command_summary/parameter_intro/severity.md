@@ -4,7 +4,7 @@
     "weight": "3190"
 }### <span id="severity"></span>severity
 
-[WLOG](../../)
+[WLOG](../)
 
 Sets the SEVERITY parameter in the WLOG command to:
 

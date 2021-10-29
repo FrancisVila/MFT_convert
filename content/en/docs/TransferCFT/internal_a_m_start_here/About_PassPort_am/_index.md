@@ -1,5 +1,5 @@
 {
-    "title": "PassPort type access management",
+    "title": "About PassPort AM",
     "linkTitle": "PassPort type access management",
     "weight": "170"
 }This section describes how to configure access management when not using Central Governance.
@@ -37,7 +37,7 @@ parameters described in [Configuring PassPort AM](configure_passport_am). You ca
 -   CFTUTIL: CFTUTIL
     UCONFSET id=, value=
 -   Transfer CFT user interface:
-    the [Unified Configuration](../../admin_intro/uconf/uconf_interface_actions) window
+    the [Unified Configuration](../admin_intro/uconf/uconf_interface_actions) window
 
 ### <span id="CSD file"></span>CSD file
 

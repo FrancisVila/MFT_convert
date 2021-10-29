@@ -26,4 +26,4 @@ mode, or closes the network connection in server mode.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

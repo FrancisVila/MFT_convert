@@ -27,7 +27,7 @@ As a transfer exchange system, Transfer CFT provides reliable and secure interna
 
 High-level view of Transfer CFT in an enterprise architecture
 
-![View of Transfer CFT in A2A operations within a corporate network](2013_g_TransferCFT_Corporate_Network_new.png)
+![View of Transfer CFT in A2A operations within a corporate network](/Images/TransferCFT/2013_g_TransferCFT_Corporate_Network_new.png)
 
 ## Services and features
 

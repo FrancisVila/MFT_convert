@@ -10,4 +10,4 @@ Enter a string. Possible values are T, X, Y, Z, N and A states (you may have a c
 
 The default is "TX".
 
-[Return to Command index](../../)
+[Return to Command index](../)

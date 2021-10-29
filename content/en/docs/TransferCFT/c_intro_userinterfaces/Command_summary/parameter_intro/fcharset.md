@@ -18,15 +18,15 @@ Defines the local file encoding.
 To translate a local text file before sending it, for example from UTF-8 to UTF-16, using Transfer CFT mapping:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL SEND PART = NEWYORK,</p>
-<p>IDF = TEST_UTF-8,</p>
-<p>FCHARSET = CFT_UTF-8,</p>
-<p>NCHARSET = CFT_UTF-16,</p>
-<p>FTYPE = T</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL SEND PART = NEWYORK,</p>
+            <p>IDF = TEST_UTF-8,</p>
+            <p>FCHARSET = CFT_UTF-8,</p>
+            <p>NCHARSET = CFT_UTF-16,</p>
+            <p>FTYPE = T</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Example 2**
@@ -34,17 +34,17 @@ To translate a local text file before sending it, for example from UTF-8 to UTF-
 To translate a local text file before sending it, for example from UTF-8 to UTF-16:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL SEND PART = NEWYORK,</p>
-<p>IDF = TEST_UTF-8_2,</p>
-<p>FCHARSET = UTF-8,</p>
-<p>NCHARSET = UTF-16,</p>
-<p>FTYPE = T</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL SEND PART = NEWYORK,</p>
+            <p>IDF = TEST_UTF-8_2,</p>
+            <p>FCHARSET = UTF-8,</p>
+            <p>NCHARSET = UTF-16,</p>
+            <p>FTYPE = T</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
-See also [ncharset](../ncharset) and *[Using character sets for transcoding](../../../../concepts/transfer_command_overview/use_extended_character_sets).*
+See also [ncharset](ncharset) and *[Using character sets for transcoding](../../../concepts/transfer_command_overview/use_extended_character_sets).*
 
-[Return to Command index](../../)
+[Return to Command index](../)

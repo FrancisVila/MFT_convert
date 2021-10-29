@@ -15,48 +15,48 @@ To enable the renaming option for a given flow (CFTRECV) set FACTION to RETRYRE
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTRECV ID=SPOOLOUT, WFNAME=pub/&amp;IDTU.TMP,
+   <tbody>
+      <tr class="odd">
+         <td>CFTRECV ID=SPOOLOUT, WFNAME=pub/&amp;IDTU.TMP,
 FNAME=pub/MYFILE,
-FACTION=RETRYRENAME</td>
-</tr>
-</tbody>
+FACTION=RETRYRENAME         </td>
+      </tr>
+   </tbody>
 </table>
 
 Use the following uconf parameters to customize the retry mechanism.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Default</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>cft.server.transfer.rrename.retry_delay</td>
-<td>60 seconds</td>
-<td>1-65535</td>
-<td><p>Delay in seconds between two retries for renaming.</p>
-<p>If the file is not successfully renamed after the first retry_delay, the time is compounded so that the next retry occurs at the retry time added to the number of tries multiplied by the retry value.</p>
-<p>The time of the next retry = D + D * (R-1)</p>
-<p>Where:</p>
-<ul>
-<li>D is the retry_delay</li>
-<li>R is the number of retries</li>
-</ul>
-<p>For example, if the file is not renamed after 60 seconds (default value), the next retry occurs in 120 seconds, and the following one in 180 seconds, etc.</p></td>
-</tr>
-<tr class="even">
-<td>cft.server.transfer.rrename.max_retries</td>
-<td>10</td>
-<td>1-65535</td>
-<td>Maximum number of retries.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Default</th>
+         <th>Value</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>cft.server.transfer.rrename.retry_delay         </td>
+         <td>60 seconds         </td>
+         <td>1-65535         </td>
+         <td>            <p>Delay in seconds between two retries for renaming.</p>
+            <p>If the file is not successfully renamed after the first retry_delay, the time is compounded so that the next retry occurs at the retry time added to the number of tries multiplied by the retry value.</p>
+            <p>The time of the next retry = D + D * (R-1)</p>
+            <p>Where:</p>
+            <ul>
+               <li>D is the retry_delay               </li>
+               <li>R is the number of retries               </li>
+            </ul>
+            <p>For example, if the file is not renamed after 60 seconds (default value), the next retry occurs in 120 seconds, and the following one in 180 seconds, etc.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>cft.server.transfer.rrename.max_retries         </td>
+         <td>10         </td>
+         <td>1-65535         </td>
+         <td>Maximum number of retries.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Monitoring
@@ -65,7 +65,7 @@ Log
 
 Following a successful renaming, CFTF33I is displayed.
 
-Once the maximum number of retries is reached, the transfer moves to the YK state, and displays a DIAGI=156, DIAGP=RETRYRENAME, a DIAGC=RETRYRENAME MAX RETRIES REACHED or = `RETRYRENAME WFNAME NOT FOUND`, and the log messages [CFTF32E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages) and [CFTF34E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages).
+Once the maximum number of retries is reached, the transfer moves to the YK state, and displays a DIAGI=156, DIAGP=RETRYRENAME, a DIAGC=RETRYRENAME MAX RETRIES REACHED or = `RETRYRENAME WFNAME NOT FOUND`, and the log messages [CFTF32E](../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages) and [CFTF34E](../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages).
 
 Catalog
 
@@ -75,7 +75,7 @@ Information in the catalog displays the number of retries performed.
 
 The retry and rename (R) option falls between the (T) and (Y) phase.
 
-![](temp_retry_rename.png)
+![](/Images/TransferCFT/temp_retry_rename.png)
 
 ## Queuing
 
@@ -105,22 +105,22 @@ This example combines the use of the serialization with the rename/retry mechani
 Create a sender side model:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTSEND id=DailyReports, serial=X, ackstate=require</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTSEND id=DailyReports, serial=X, ackstate=require         </td>
+      </tr>
+   </tbody>
 </table>
 
 Create a receiver side model:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTRECV id=DailyReport, faction=retryrename, wfname=pub/&amp;idtu.tmp, fname=pub/MyReport, exec=exec/
-myreport.cmd</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTRECV id=DailyReport, faction=retryrename, wfname=pub/&amp;idtu.tmp, fname=pub/MyReport, exec=exec/
+myreport.cmd         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Define post-processing
@@ -128,26 +128,26 @@ myreport.cmd</td>
 Post-processing should include an acknowledgement so that the next queued transfer request is triggered. Additionally, your post-processing script can include, for example, a message to indicate that the file has been received and renamed, and is ready to be consumed by the target application.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>end part=&amp;part,idt=&amp;idt,istate=yes,diagc='READY TO CONSUME'</p>
-<p>send part=&amp;part,idm=ACK,idt=&amp;idt,type=reply,msg='&amp;fname ready to consume by target application'</p>
-<p>...[at this point the file is consumed by the target application]...</p>
-<p>end part=&amp;part,idt=&amp;idt,istate=no,diagc='FILE CONSUMED'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>end part=&amp;part,idt=&amp;idt,istate=yes,diagc='READY TO CONSUME'</p>
+            <p>send part=&amp;part,idm=ACK,idt=&amp;idt,type=reply,msg='&amp;fname ready to consume by target application'</p>
+            <p>...[at this point the file is consumed by the target application]...</p>
+            <p>end part=&amp;part,idt=&amp;idt,istate=no,diagc='FILE CONSUMED'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Enter command to send files
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>send part=paris, idf=dailyreport, ida=report1</p>
-<p>send part=paris, idf=dailyreport, ida=report2</p>
-<p>send part=paris, idf=dailyreport, ida=report3</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>send part=paris, idf=dailyreport, ida=report1</p>
+            <p>send part=paris, idf=dailyreport, ida=report2</p>
+            <p>send part=paris, idf=dailyreport, ida=report3</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Check output files
@@ -155,45 +155,45 @@ Post-processing should include an acknowledgement so that the next queued transf
 Sender side
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>17/01/26 18:01:43.31 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT&gt;</p>
-<p>17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002D PART=PARIS IDF=DAILYREPORT&gt;</p>
-<p>17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002E PART=PARIS IDF=DAILYREPORT&gt;</p>
-<p>17/01/26 18:01:43.43 CFTT57I Requester transfer started &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014 &gt;</p>
-<p>17/01/26 18:01:43.43 CFTT58I Requester transfer ended &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014&gt;</p>
-<p>17/01/26 18:01:44.38 CFTT59I Server reply transferred &lt;IDTU=00000000 PART=PARIS IDM=DAILYREPORT IDT=A2618014&gt;</p>
-<p>17/01/26 18:01:44.40 CFTT57I Requester transfer started &lt;IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 &gt;</p>
-<p>... (etc. for each transfer)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>17/01/26 18:01:43.31 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT&gt;</p>
+            <p>17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002D PART=PARIS IDF=DAILYREPORT&gt;</p>
+            <p>17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \dupont &lt;IDTU=A000002E PART=PARIS IDF=DAILYREPORT&gt;</p>
+            <p>17/01/26 18:01:43.43 CFTT57I Requester transfer started &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014 &gt;</p>
+            <p>17/01/26 18:01:43.43 CFTT58I Requester transfer ended &lt;IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014&gt;</p>
+            <p>17/01/26 18:01:44.38 CFTT59I Server reply transferred &lt;IDTU=00000000 PART=PARIS IDM=DAILYREPORT IDT=A2618014&gt;</p>
+            <p>17/01/26 18:01:44.40 CFTT57I Requester transfer started &lt;IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 &gt;</p>
+            <p>... (etc. for each transfer)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Receiver side
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>17/01/26 18:01:43.43 CFTT57I Server transfer started &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 &gt;</p>
-<p>17/01/26 18:01:43.43 CFTT58I Server transfer ended &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014&gt;</p>
-<p>17/01/26 18:01:43.43 CFTT88I+&lt;IDTU=A000002C WORKINGDIR= WFNAME=pub/FTEST NBC=7104&gt;</p>
-<p>17/01/27 18:01:43.43 CFTF33I Rename to FNAME=pub/myreport done &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT= A2618014&gt;</p>
-<p>17/01/26 18:01:43.45 CFTS03I _ exec/myreport.cmd executed &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014&gt; (0.013008 sec)</p>
-<p>17/01/26 18:01:44.37 CFTR12I END Treated for USER \dupont : DIAGC value was "" and is now "READY TO CONSUME"</p>
-<p>17/01/26 18:01:44.38 CFTH60I reply transferred &lt;PART=NEWYORK IDS=00005 IDM=DAILYREPORT NIDT=2618014&gt;</p>
-<p>17/01/26 18:01:44.40 CFTT57I Server transfer started &lt;IDTU=A000002H PART=NEWYORK IDF=DAILYREPORT IDT=A2618015 &gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>17/01/26 18:01:43.43 CFTT57I Server transfer started &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 &gt;</p>
+            <p>17/01/26 18:01:43.43 CFTT58I Server transfer ended &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014&gt;</p>
+            <p>17/01/26 18:01:43.43 CFTT88I+&lt;IDTU=A000002C WORKINGDIR= WFNAME=pub/FTEST NBC=7104&gt;</p>
+            <p>17/01/27 18:01:43.43 CFTF33I Rename to FNAME=pub/myreport done &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT= A2618014&gt;</p>
+            <p>17/01/26 18:01:43.45 CFTS03I _ exec/myreport.cmd executed &lt;IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014&gt; (0.013008 sec)</p>
+            <p>17/01/26 18:01:44.37 CFTR12I END Treated for USER \dupont : DIAGC value was "" and is now "READY TO CONSUME"</p>
+            <p>17/01/26 18:01:44.38 CFTH60I reply transferred &lt;PART=NEWYORK IDS=00005 IDM=DAILYREPORT NIDT=2618014&gt;</p>
+            <p>17/01/26 18:01:44.40 CFTT57I Server transfer started &lt;IDTU=A000002H PART=NEWYORK IDF=DAILYREPORT IDT=A2618015 &gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Troubleshooting
 
 Error and information messages include the following:
 
--   [CFTF32E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages): PART=&part IDF=&idf IDT=&idt \_ Maximum number of rename retries reached
--   [CFTF34E](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages): PART=&part IDF=&idf IDT=&idt \_ WFNAME=&wfname not found
--   [CFTF35W](../../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages) PART=&part IDF=&idf IDT=&idt Rename to FNAME=&fname failed, will be retried at &datetime
+-   [CFTF32E](../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages): PART=&part IDF=&idf IDT=&idt \_ Maximum number of rename retries reached
+-   [CFTF34E](../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages): PART=&part IDF=&idf IDT=&idt \_ WFNAME=&wfname not found
+-   [CFTF35W](../troubleshoot_intro/messages_and_error_codes_start_here/cftf_messages) PART=&part IDF=&idf IDT=&idt Rename to FNAME=&fname failed, will be retried at &datetime
 
 Diagnostic code values related to RETRYRENAME include:
 
--   [diagi=156](../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes) / diagc=RETRYRENAME
+-   [diagi=156](../Troubleshooting/Messages_and_Codes/diagi_diagnostic_codes.htm) / diagc=RETRYRENAME

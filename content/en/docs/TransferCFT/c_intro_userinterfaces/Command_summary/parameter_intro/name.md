@@ -32,4 +32,4 @@ NAME = {filename
 
 This is the communication filename.
 
-[Return to Command index](../../)
+[Return to Command index](../)

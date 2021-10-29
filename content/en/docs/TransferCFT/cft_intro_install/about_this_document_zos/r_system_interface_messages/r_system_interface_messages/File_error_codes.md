@@ -305,13 +305,13 @@ The "IKJnnnnnI" and "IGDnnnnnI" error messages returned by DYNALLOC (under SMS) 
 -   IGD17273I ALLOCATION HAS FAILED FOR ALL VOLUMES SELECTED FOR DATA SET
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The ‘nnnn’ hexadecimal value converted to decimal gives the SMS IGD message number. For example, the X’4379’ value corresponds to the IGD172731 message.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The ‘nnnn’ hexadecimal value converted to decimal gives the SMS IGD message number. For example, the X’4379’ value corresponds to the IGD172731 message.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Diagnostics for file errors

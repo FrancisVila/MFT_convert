@@ -13,4 +13,4 @@ Initiator mode only
 
 Hayes modem initialization string for outgoing connections.
 
-[Return to Command index](../../)
+[Return to Command index](../)

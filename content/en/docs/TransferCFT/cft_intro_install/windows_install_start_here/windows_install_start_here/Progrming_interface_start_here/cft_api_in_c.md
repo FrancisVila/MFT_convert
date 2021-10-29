@@ -1,10 +1,8 @@
 {
-    "title": "Building API in C",
+    "title": "Building  an API in C",
     "linkTitle": "Building API in C",
     "weight": "280"
-}# <span id="Building_API_in_C"></span>Building an API in C
-
-This section explains how to build Transfer CFT API samples in C. You can also refer to the Transfer CFT *User Guide [About APIs](../../../../about_this_document_zos/using_apis) topics* for information such as links to sample files.
+}This section explains how to build Transfer CFT API samples in C. You can also refer to the Transfer CFT *User Guide [About APIs](../../../../app_integration_intro/using_apis) topics* for information such as links to sample files.
 
 The API samples and the makefile used to build them are located in your Transfer CFT &lt;installdir>\\runtime\\src\\capi directory.
 
@@ -38,13 +36,13 @@ The nmake command generates the following as either 32-bit or 64-bit executable 
 -   utisyn.exe
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The capi.makfile contains a variable called LIB_BUFFEROVERFLOWU whose value may be set to bufferoverflowU.lib, or left empty depending on the compiler version. You may have to manually change this variable if it is incompatible with your compiler. Normally this variable is empty in 64-bit environments.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The capi.makfile contains a variable called LIB_BUFFEROVERFLOWU whose value may be set to bufferoverflowU.lib, or left empty depending on the compiler version. You may have to manually change this variable if it is incompatible with your compiler. Normally this variable is empty in 64-bit environments.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Remove generated files
@@ -52,9 +50,9 @@ The nmake command generates the following as either 32-bit or 64-bit executable 
 To remove all of the generated .obj and .exe files, enter the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>nmake /f capi.mak clean</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>nmake /f capi.mak clean         </td>
+      </tr>
+   </tbody>
 </table>

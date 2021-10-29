@@ -19,4 +19,4 @@ a directory type EXIT.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

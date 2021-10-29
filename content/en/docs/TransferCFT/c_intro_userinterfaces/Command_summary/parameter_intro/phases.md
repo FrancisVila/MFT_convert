@@ -21,9 +21,9 @@ Possible values:
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>swaitcat select='(IDTU=="%_CAT_IDTU%")',timeout=30,phases=y,phasesteps=ch</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>swaitcat select='(IDTU=="%_CAT_IDTU%")',timeout=30,phases=y,phasesteps=ch         </td>
+      </tr>
+   </tbody>
 </table>

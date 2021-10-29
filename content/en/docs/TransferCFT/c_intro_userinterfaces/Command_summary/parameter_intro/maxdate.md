@@ -67,4 +67,4 @@ Example
 MAXDATE = +4 means that the transfer validity final date is 4 days after
 the date the command is taken into account.
 
-[Return to Command index](../../)
+[Return to Command index](../)

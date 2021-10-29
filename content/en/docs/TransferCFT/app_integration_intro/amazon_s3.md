@@ -1,5 +1,5 @@
 {
-    "title": "Amazon S3/Ceph cloud storage",
+    "title": "Amazon S3/Ceph cloud storage ",
     "linkTitle": "Amazon S3/Ceph cloud storage",
     "weight": "180"
 }You can use Transfer CFT with [Amazon S3](https://aws.amazon.com/s3/) cloud storage to store and retrieve large numbers of files to better manage enterprise big data.
@@ -13,7 +13,7 @@ Transfer CFT implements Amazon S3 services using the AWS SDK for C++ (Amazon We
 -   The following parameter settings are ignored: WFNAME, FACTION=ERASE or RENAME (S3 creates its own version of the file)
 -   You cannot access a file on S3 storage from the Transfer CFT Copilot UI.
 -   Groups of files are not supported.
--   When writing a file to S3 storage, the size limit is approximately PACING KiB x 10,000, where PACING is the partner-negotiated value of the RPACING and SPACING parameters (see the [About file size](#about) section below).
+-   When writing a file to S3 storage, the size limit is approximately PACING KiB x 10,000, where PACING is the partner-negotiated value of the RPACING and SPACING parameters (see the [About file size](#About) section below).
 -   Transfer CFT Windows presently only supports HTTP proxies (not HTTPS proxies).
 
 ## Setup procedure
@@ -21,18 +21,18 @@ Transfer CFT implements Amazon S3 services using the AWS SDK for C++ (Amazon We
 1.  For SSL connections to S3 storage, libCURL requires a path to the CA certificates bundle to authenticate the peer. Set this path in the UCONF ssl.certificates.ca\_cert\_bundle parameter.
 2.  Access keys are used for the AWS credentials, so each user accessing S3 services must have an account allowing access to S3 services. Define the users and access key information in UCONF. For example:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>CFTUTIL uconfset id=aws.credentials, value=<strong>"</strong><span>account1 account2</span><strong>"</strong></p>
-    <p>CFTUTIL uconfset id=aws.credentials.account1.access_key_id, value=<strong>"20_characters_string"</strong></p>
-    <p>CFTUTIL uconfset id=aws.credentials.account1.secret_access_key, value=<strong>"40_characters_string"</strong></p>
-    <p>CFTUTIL uconfset id=aws.credentials.account2.access_key_id, value=<strong>"20_characters_string"</strong></p>
-    <p>CFTUTIL uconfset id=aws.credentials.account2.secret_access_key, value=<strong>"40_characters_string"</strong></p>
-    <p> </p>
-    <p>To check, enter:</p>
-    <p>CFTUTIL listuconf id=aws.credentials*</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>CFTUTIL uconfset id=aws.credentials, value=<strong>"</strong><span>account1 account2</span><strong>"</strong></p>
+                <p>CFTUTIL uconfset id=aws.credentials.account1.access_key_id, value=<strong>"20_characters_string"</strong></p>
+                <p>CFTUTIL uconfset id=aws.credentials.account1.secret_access_key, value=<strong>"40_characters_string"</strong></p>
+                <p>CFTUTIL uconfset id=aws.credentials.account2.access_key_id, value=<strong>"20_characters_string"</strong></p>
+                <p>CFTUTIL uconfset id=aws.credentials.account2.secret_access_key, value=<strong>"40_characters_string"</strong></p>
+                <p> </p>
+                <p>To check, enter:</p>
+                <p>CFTUTIL listuconf id=aws.credentials*</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 ## Parameter descriptions
@@ -40,126 +40,126 @@ Transfer CFT implements Amazon S3 services using the AWS SDK for C++ (Amazon We
 The following table describes Transfer CFT's Amazon S3-related parameters.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>ssl.certificates.ca_cert_bundle</td>
-<td>string</td>
-<td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span>/etc/ssl/certs/ca-certificates.crt</span>) or to a directory containing the CA certificates (for example, <span>/etc/ssl/certs/</span>), which are stored individually with their filenames in a hash format.</p>
-<p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span>cacert </span>and <span>capath </span>options.</p>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>ssl.certificates.ca_cert_bundle         </td>
+         <td>string         </td>
+         <td>            <p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span>/etc/ssl/certs/ca-certificates.crt</span>) or to a directory containing the CA certificates (for example, <span>/etc/ssl/certs/</span>), which are stored individually with their filenames in a hash format.</p>
+            <p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span>cacert </span>and <span>capath </span>options.</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You can set this parameter on UNIX systems, however it is not applicable on Windows.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You can set this parameter on UNIX systems, however it is not applicable on Windows.         </td>
+      </tr>
+   </tbody>
 </table>
-<p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p></td>
-</tr>
-<tr class="even">
-<td colspan="3"><p><strong>Credentials</strong></p>
-<p>Credential parameters identify who is making a request and whether access is allowed.</p></td>
-</tr>
-<tr class="odd">
-<td>aws.credentials</td>
-<td>node</td>
-<td>List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.</td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.access_key_id</td>
-<td>string</td>
-<td><p>Access key ID, a 20-character, alphanumeric sequence.</p></td>
-</tr>
-<tr class="odd">
-<td>aws.credentials.&lt;storageaccount&gt;.secret_access_key</td>
-<td>passwd</td>
-<td><p>Secret access key, a 40-character sequence.</p></td>
-</tr>
-<tr class="even">
-<td colspan="3"><strong>Region</strong></td>
-</tr>
-<tr class="odd">
-<td>aws.credentials.&lt;storageaccount&gt;.region</td>
-<td>string</td>
-<td><p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
-<p>When using the endpoint format for WORKINGDIR, you can use this parameter to set the AWS Signature Version 4 region to something other than the default (us-east-1).</p></td>
-</tr>
-<tr class="even">
-<td colspan="3"><p><strong>Server-side encryption</strong></p>
-<p>Server-side encryption type with Amazon S3.</p></td>
-</tr>
-<tr class="odd">
-<td>aws.credentials.&lt;storageaccount&gt;.encryption_type</td>
-<td>string</td>
-<td><p>Type of server-side encryption to use:</p>
-<ul>
-<li>None: No encryption on Amazon S3 objects</li>
-<li>sse-s3: Server-side encryption with AES 256</li>
-<li>sse-kms: Server-side encryption with Key Management Service</li>
-</ul>
-<p>See the <a href="#globally_encrypt">example</a> for details on encrypting files.</p></td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.encryption_key_id</td>
-<td>string</td>
-<td><p>Key identifier for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p></td>
-</tr>
-<tr class="odd">
-<td colspan="3"><p><strong>Access Control List</strong></p>
-<p>The ACL policy to apply to files when uploading a file to AWS. Please refer to the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl">AWS documentation</a> for details.</p></td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.acl</td>
-<td>string</td>
-<td><p>Type of ACL policy to apply to files when uploading a file to AWS:</p>
-<ul>
-<li>private</li>
-<li>public-read</li>
-<li>public-read-write</li>
-<li>aws-exec-read</li>
-<li>authenticated-read</li>
-<li>bucket-owner-read</li>
-<li>bucket-owner-full-control</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td colspan="3"><p><strong>Proxy parameters</strong></p>
-<p>Connect to AWS S3 through an HTTP proxy for file uploads/downloads.</p></td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.proxy_scheme</td>
-<td>string</td>
-<td>Proxy scheme to use (HTTP or HTTPS).</td>
-</tr>
-<tr class="odd">
-<td>aws.credentials.&lt;storageaccount&gt;.proxy_host</td>
-<td>string</td>
-<td>Proxy IP address or FQDN.</td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.proxy_port</td>
-<td>string</td>
-<td>Proxy port.</td>
-</tr>
-<tr class="odd">
-<td>aws.credentials.&lt;storageaccount&gt;.proxy_username</td>
-<td>string</td>
-<td>Proxy user name.</td>
-</tr>
-<tr class="even">
-<td>aws.credentials.&lt;storageaccount&gt;.proxy_password</td>
-<td>password</td>
-<td>Proxy password.</td>
-</tr>
-</tbody>
+            <p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>         </td>
+      </tr>
+      <tr class="even">
+         <td colspan="3">            <p><strong>Credentials</strong></p>
+            <p>Credential parameters identify who is making a request and whether access is allowed.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials         </td>
+         <td>node         </td>
+         <td>List of <a href="#storageaccount">STORAGEACCOUNT</a> values where each STORAGEACCOUNT consists of an access key pair.         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.access_key_id         </td>
+         <td>string         </td>
+         <td>            <p>Access key ID, a 20-character, alphanumeric sequence.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials.&lt;storageaccount&gt;.secret_access_key         </td>
+         <td>passwd         </td>
+         <td>            <p>Secret access key, a 40-character sequence.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td colspan="3"><strong>Region</strong>         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials.&lt;storageaccount&gt;.region         </td>
+         <td>string         </td>
+         <td>            <p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
+            <p>When using the endpoint format for WORKINGDIR, you can use this parameter to set the AWS Signature Version 4 region to something other than the default (us-east-1).</p>         </td>
+      </tr>
+      <tr class="even">
+         <td colspan="3">            <p><strong>Server-side encryption</strong></p>
+            <p>Server-side encryption type with Amazon S3.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials.&lt;storageaccount&gt;.encryption_type         </td>
+         <td>string         </td>
+         <td>            <p>Type of server-side encryption to use:</p>
+            <ul>
+               <li>None: No encryption on Amazon S3 objects               </li>
+               <li>sse-s3: Server-side encryption with AES 256               </li>
+               <li>sse-kms: Server-side encryption with Key Management Service               </li>
+            </ul>
+            <p>See the <a href="#globally_encrypt">example</a> for details on encrypting files.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.encryption_key_id         </td>
+         <td>string         </td>
+         <td>            <p>Key identifier for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td colspan="3">            <p><strong>Access Control List</strong></p>
+            <p>The ACL policy to apply to files when uploading a file to AWS. Please refer to the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/acl-overview.html#canned-acl">AWS documentation</a> for details.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.acl         </td>
+         <td>string         </td>
+         <td>            <p>Type of ACL policy to apply to files when uploading a file to AWS:</p>
+            <ul>
+               <li>private               </li>
+               <li>public-read               </li>
+               <li>public-read-write               </li>
+               <li>aws-exec-read               </li>
+               <li>authenticated-read               </li>
+               <li>bucket-owner-read               </li>
+               <li>bucket-owner-full-control               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td colspan="3">            <p><strong>Proxy parameters</strong></p>
+            <p>Connect to AWS S3 through an HTTP proxy for file uploads/downloads.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.proxy_scheme         </td>
+         <td>string         </td>
+         <td>Proxy scheme to use (HTTP or HTTPS).         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials.&lt;storageaccount&gt;.proxy_host         </td>
+         <td>string         </td>
+         <td>Proxy IP address or FQDN.         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.proxy_port         </td>
+         <td>string         </td>
+         <td>Proxy port.         </td>
+      </tr>
+      <tr class="odd">
+         <td>aws.credentials.&lt;storageaccount&gt;.proxy_username         </td>
+         <td>string         </td>
+         <td>Proxy user name.         </td>
+      </tr>
+      <tr class="even">
+         <td>aws.credentials.&lt;storageaccount&gt;.proxy_password         </td>
+         <td>password         </td>
+         <td>Proxy password.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <span id="Default_key_access_pair"></span>Default access key pair behavior
@@ -169,80 +169,80 @@ If you did not define a storageaccount value in the CFTSEND/CFTRECV objects, whe
 You can enter your access key pair information in this file using the following format:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>[default]</p>
-<p>access_key_id = YOUR_KEY</p>
-<p>secret_access_key = YOUR_SECRET</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>[default]</p>
+            <p>access_key_id = YOUR_KEY</p>
+            <p>secret_access_key = YOUR_SECRET</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Creating send and receive definitions
 
-You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions for S3 storage:
+You must include the following parameters in your [CFTSEND/CFTRECV](../Command_summary.htm) definitions for S3 storage:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter<span id="storageaccount"></span></th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>fname</td>
-<td>string (key)</td>
-<td>The fname field corresponds to the S3 services key.</td>
-</tr>
-<tr class="even">
-<td>workingdir</td>
-<td>string</td>
-<td><p>There are two supported formats. For either, the workingdir field must start with <span>s3://</span> and be followed by the designated items in the order listed:</p>
-<ul>
-<li><code>s3://bucket.region</code><br />
+   <thead>
+      <tr class="header">
+         <th>Parameter<span id="storageaccount"></span></th>
+         <th>Type</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>fname         </td>
+         <td>string (key)         </td>
+         <td>The fname field corresponds to the S3 services key.         </td>
+      </tr>
+      <tr class="even">
+         <td>workingdir         </td>
+         <td>string         </td>
+         <td>            <p>There are two supported formats. For either, the workingdir field must start with <span>s3://</span> and be followed by the designated items in the order listed:</p>
+            <ul>
+               <li><code>s3://bucket.region</code><br />
 
-<ul>
-<li>the bucket name</li>
-<li>a period (.)</li>
-<li>the region</li>
-</ul></li>
-<li><code>s3://http[s]://endpoint[:port]/bucket</code><br />
+            <ul>
+               <li>the bucket name               </li>
+               <li>a period (.)               </li>
+               <li>the region               </li>
+            </ul>               </li>
+               <li><code>s3://http[s]://endpoint[:port]/bucket</code><br />
 
-<ul>
-<li>http:// or https:// for secure communication</li>
-<li>the endpoint, which can be an IP address or the server's hostname</li>
-<li>a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)</li>
-<li>a slash (/)</li>
-<li>the bucket name</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>storageaccount</td>
-<td>string</td>
-<td>Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.</td>
-</tr>
-</tbody>
+            <ul>
+               <li>http:// or https:// for secure communication               </li>
+               <li>the endpoint, which can be an IP address or the server's hostname               </li>
+               <li>a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)               </li>
+               <li>a slash (/)               </li>
+               <li>the bucket name               </li>
+            </ul>               </li>
+            </ul>         </td>
+      </tr>
+      <tr class="odd">
+         <td>storageaccount         </td>
+         <td>string         </td>
+         <td>Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../CFTUTIL/Parameter_index/storageaccount.htm">storageaccount</a>.         </td>
+      </tr>
+   </tbody>
 </table>
 
 You can use the following example as a basis for configuring a CFTSEND and CFTRECV:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSEND id = S3_READ,</p>
-<p>fname = pub/FTEST,</p>
-<p>workingdir = s3://my-cft-test.eu-west-1,</p>
-<p>storageaccount=account1</p>
-<p> </p>
-<p>CFTRECV id = S3_WRITE,</p>
-<p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
-<p>workingdir = s3://https://s3.eu-west-1.amazonaws.com/my-cft-test,</p>
-<p>storageaccount=account2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSEND id = S3_READ,</p>
+            <p>fname = pub/FTEST,</p>
+            <p>workingdir = s3://my-cft-test.eu-west-1,</p>
+            <p>storageaccount=account1</p>
+            <p> </p>
+            <p>CFTRECV id = S3_WRITE,</p>
+            <p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
+            <p>workingdir = s3://https://s3.eu-west-1.amazonaws.com/my-cft-test,</p>
+            <p>storageaccount=account2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Using"></span>Using AWS EC2 instance profiles to access S3 storage
@@ -254,13 +254,13 @@ No configuration is required on Transfer CFT, you can simply point the CFTSEND o
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id = S3_WRITE_EC2,</p>
-<p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
-<p>workingdir = s3://my-cft-test.eu-west-1</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id = S3_WRITE_EC2,</p>
+            <p>fname = pub/&amp;IDF.&amp;IDTU.RCV,</p>
+            <p>workingdir = s3://my-cft-test.eu-west-1</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Transfer CFT supports mixing an IAM role from an IAM instance profile with multiple IAM users who have their own access keys.
@@ -291,28 +291,28 @@ In this section, *S3* may refer to either Amazon S3 storage or the Ceph Storage 
 
 In this use case, Transfer CFT  receives a file from a partner over the PeSIT or SFTP protocol, and stores it on either Amazon S3 or Ceph.
 
-![](S3_read_file.png)
+![](/Images/TransferCFT/S3_write_file.png)
 
 In UCONF, set the S3 credentials for the receiving Transfer CFT:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'</p>
-<p>uconfset id=aws.credentials.ceph_user.access_key_id, value=&lt;key_id&gt;</p>
-<p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'</p>
+            <p>uconfset id=aws.credentials.ceph_user.access_key_id, value=&lt;key_id&gt;</p>
+            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Configure the CFTRECV object to write to the S3 storage:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTRECV id=CEPH_WRITE, fname=pub/&amp;IDF.&amp;IDTU.RCV, workingdir=s3://http://radosgw_address.net:7480/my_bucket, storageaccount=&lt;ceph_user&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTRECV id=CEPH_WRITE, fname=pub/&amp;IDF.&amp;IDTU.RCV, workingdir=s3://http://radosgw_address.net:7480/my_bucket, storageaccount=&lt;ceph_user&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 After the partner sends a file, you can check the log for transfer details.
@@ -321,29 +321,29 @@ After the partner sends a file, you can check the log for transfer details.
 
 In this use case, Transfer CFT reads a file from S3 and sends it over PeSIT or SFTP to a partner.
 
-![](S3_read_file.png)
+![](/Images/TransferCFT/S3_read_file.png)
 
 Configure the UCONF credentials for the Ceph Object Storage if you have not already done so:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'</p>
-<p>uconfset id=aws.credentials.ceph_user.access_key_id, value=&lt;key_id&gt;</p>
-<p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=aws.credentials, value='&lt;ceph_user&gt;'</p>
+            <p>uconfset id=aws.credentials.ceph_user.access_key_id, value=&lt;key_id&gt;</p>
+            <p>uconfset id=aws.credentials.ceph_user.secret_access_key, value=&lt;access_key&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Create the CFTSEND template, and send a file that is stored on S3 to a Transfer CFT partner.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTSEND id=ceph_send, workingdir=s3://http://radosgw_address.net:7480/&lt;my_bucket&gt;, storageaccount=&lt;ceph_user&gt;
-<p>send part=paris,idf=ceph_send,fname=pub/FTEST</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTSEND id=ceph_send, workingdir=s3://http://radosgw_address.net:7480/&lt;my_bucket&gt;, storageaccount=&lt;ceph_user&gt;
+            <p>send part=paris,idf=ceph_send,fname=pub/FTEST</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 After sending a file to the partner, you can check the log for transfer details.
@@ -353,22 +353,22 @@ After sending a file to the partner, you can check the log for transfer details.
 <span id="globally_encrypt"></span>You can activate file encryption when uploading files using either the sse-s3 or sse-kms encryption type. Use CFTUTIL and the uconfset command as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-s3'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-s3'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 When using sse-kms, you must additionally enter your key identifier:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-kms'</p>
-<p>uconfset id=aws.credentials.h&lt;storageaccount&gt;.encryption_key_id, value=&lt;key_id&gt;</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.encryption_type, value='sse-kms'</p>
+            <p>uconfset id=aws.credentials.h&lt;storageaccount&gt;.encryption_key_id, value=&lt;key_id&gt;</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Set the ACL policy
@@ -376,11 +376,11 @@ When using sse-kms, you must additionally enter your key identifier:
 You can set the Access Control List (ACL) policy for files that you upload to AWS S3 as follows:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>uconfset id=aws.credentials.&lt;storageaccount&gt;.acl, value='&lt;ACL policy&gt;'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>uconfset id=aws.credentials.&lt;storageaccount&gt;.acl, value='&lt;ACL policy&gt;'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Limitation details
@@ -427,29 +427,29 @@ To help resolve errors, you can use the AWS CLI tool to verify that the system c
 To list objects in a bucket on Amazon S3:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>aws --region eu-west-1 s3api list-objects --bucket my-cft-test</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>aws --region eu-west-1 s3api list-objects --bucket my-cft-test</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To list objects in a Ceph storage:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>aws --endpoint-url http://radosgw_address.net:7480 s3api list-objects --bucket my_bucket</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>aws --endpoint-url http://radosgw_address.net:7480 s3api list-objects --bucket my_bucket</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To create a bucket:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>aws --endpoint-url http://radosgw_address.net:7480 s3api create-bucket --bucket my_bucket</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>aws --endpoint-url http://radosgw_address.net:7480 s3api create-bucket --bucket my_bucket</p>         </td>
+      </tr>
+   </tbody>
 </table>

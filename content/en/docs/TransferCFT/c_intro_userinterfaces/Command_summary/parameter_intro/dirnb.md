@@ -12,4 +12,4 @@
 
 Number of directory blocks used to create a directory.
 
-[Return to Command index](../../)
+[Return to Command index](../)

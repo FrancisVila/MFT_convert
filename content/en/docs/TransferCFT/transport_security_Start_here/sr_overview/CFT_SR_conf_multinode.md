@@ -1,8 +1,8 @@
 {
-    "title": "Secure Relay with a multi-node architecture",
+    "title": " Secure Relay with a multi-node architecture",
     "linkTitle": "Secure Relay with a multi-node architecture",
     "weight": "260"
-}You can install Transfer CFT in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#examples) section of this page.
+}You can install Transfer CFT in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
 
 This page describes how to configure Transfer CFT in a multi-node architecture to use Secure Relays:
 
@@ -41,29 +41,29 @@ After completing installation, configure the Router Agents in the Transfer CFT c
 Example of two Router Agent definitions
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>secure_relay.ra = 2</p>
-<p> </p>
-<p>secure_relay.ra.0.enable = yes</p>
-<p>secure_relay.ra.0.dmz = <span>DMZ0</span></p>
-<p>secure_relay.ra.0.host = <span>@hostF</span></p>
-<p>secure_relay.ra.0.admin_port = 6810</p>
-<p>secure_relay.ra.0.comm_port = 6811</p>
-<p>secure_relay.ra.0.nb_data_connections = 5</p>
-<p>secure_relay.ra.0.data_channel_ciphering = No</p>
-<p>secure_relay.ra.0.outcall_network_interface =</p>
-<p> </p>
-<p>secure_relay.ra.1.enable = Yes</p>
-<p>secure_relay.ra.1.dmz = <span>DMZ1</span></p>
-<p>secure_relay.ra.1.host = <span>@hostG</span></p>
-<p>secure_relay.ra.1.admin_port = 6810</p>
-<p>secure_relay.ra.1.comm_port = 6811</p>
-<p>secure_relay.ra.1.nb_data_connections = 5</p>
-<p>secure_relay.ra.1.data_channel_ciphering = No</p>
-<p>secure_relay.ra.1.outcall_network_interface =</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>secure_relay.ra = 2</p>
+            <p> </p>
+            <p>secure_relay.ra.0.enable = yes</p>
+            <p>secure_relay.ra.0.dmz = <span>DMZ0</span></p>
+            <p>secure_relay.ra.0.host = <span>@hostF</span></p>
+            <p>secure_relay.ra.0.admin_port = 6810</p>
+            <p>secure_relay.ra.0.comm_port = 6811</p>
+            <p>secure_relay.ra.0.nb_data_connections = 5</p>
+            <p>secure_relay.ra.0.data_channel_ciphering = No</p>
+            <p>secure_relay.ra.0.outcall_network_interface =</p>
+            <p> </p>
+            <p>secure_relay.ra.1.enable = Yes</p>
+            <p>secure_relay.ra.1.dmz = <span>DMZ1</span></p>
+            <p>secure_relay.ra.1.host = <span>@hostG</span></p>
+            <p>secure_relay.ra.1.admin_port = 6810</p>
+            <p>secure_relay.ra.1.comm_port = 6811</p>
+            <p>secure_relay.ra.1.nb_data_connections = 5</p>
+            <p>secure_relay.ra.1.data_channel_ciphering = No</p>
+            <p>secure_relay.ra.1.outcall_network_interface =</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Configure the Master Agent in Transfer CFT
@@ -80,21 +80,21 @@ In Transfer CFT from the CFTUTIL prompt, perform the following commands:
 
 1.  Enable Secure Relay:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=secure_relay.enable ,value=yes</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=secure_relay.enable ,value=yes         </td>
+          </tr>
+       </tbody>
     </table>
 
 2.  Set the full path to Java executable, for example:  
 
 3.  <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java         </td>
+          </tr>
+       </tbody>
     </table>
 
 ## Set the listening ports
@@ -103,11 +103,11 @@ If you need to set listening ports, for example if you are using a firewall, pro
 
 1.  To define the Transfer CFT internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>UCONFSET id=cft.multi_node.listen_port_range,value='33000-33100'</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>UCONFSET id=cft.multi_node.listen_port_range,value='33000-33100'</p>         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
 
@@ -116,12 +116,12 @@ Example
 For example, if you set the SAP=1761 when you have 4 nodes, Secure Relay opens the ports 1761, 1762, 1763 and 1764.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT ID=PROT0,SAP=1761,...</p>
-<p>CFTPROT ID=PROT1,SAP=1764,...</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT ID=PROT0,SAP=1761,...</p>
+            <p>CFTPROT ID=PROT1,SAP=1764,...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In the scenario above if 4 nodes are configured in Transfer CFT multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
@@ -156,24 +156,24 @@ Example
 As no connection dispatcher is used with Secure Relay, the SAP configured in the CFTPROT for SecureRelay is also incremented by the node number.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET ID = NETSR,</p>
-<p>TYPE = TCP,</p>
-<p>CALL = INOUT,</p>
-<p>CALL = 'INOUT',</p>
-<p>MAXCNX = '1000',</p>
-<p>ORIGIN = 'CFTUTIL',</p>
-<p>CLASS = '2',</p>
-<p>HOST = 'INADDR_ANY',</p>
-<p>SRCPORTS = ( '5000-65535'),</p>
-<p>PORT = '0',</p>
-<p>PROTOCOL = 'SR',</p>
-<p>RECALLHOST = '127.0.0.1',</p>
-<p>SSLTERM = 'NO',</p>
-<p>MODE = 'REPLACE'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET ID = NETSR,</p>
+            <p>TYPE = TCP,</p>
+            <p>CALL = INOUT,</p>
+            <p>CALL = 'INOUT',</p>
+            <p>MAXCNX = '1000',</p>
+            <p>ORIGIN = 'CFTUTIL',</p>
+            <p>CLASS = '2',</p>
+            <p>HOST = 'INADDR_ANY',</p>
+            <p>SRCPORTS = ( '5000-65535'),</p>
+            <p>PORT = '0',</p>
+            <p>PROTOCOL = 'SR',</p>
+            <p>RECALLHOST = '127.0.0.1',</p>
+            <p>SSLTERM = 'NO',</p>
+            <p>MODE = 'REPLACE'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create a CFTPROT object
@@ -189,17 +189,17 @@ Example
 This example uses a CFTNET object called NETXSR, and PROTXSR is bound to port 1861 for node 0, and port 1862 for node 1.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPROT ID = 'PROTXSR'</p>
-<p>NET = 'NETXSR',</p>
-<p>SAP = '1861', &lt;Transfer CFT increments this for each node, be sure to check for port conflicts&gt;</p>
-<p>SRIN = 'BOTH',</p>
-<p>SROUT = 'BOTH',</p>
-<p>TYPE = 'PESIT',</p>
-<p>....</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPROT ID = 'PROTXSR'</p>
+            <p>NET = 'NETXSR',</p>
+            <p>SAP = '1861', &lt;Transfer CFT increments this for each node, be sure to check for port conflicts&gt;</p>
+            <p>SRIN = 'BOTH',</p>
+            <p>SROUT = 'BOTH',</p>
+            <p>TYPE = 'PESIT',</p>
+            <p>....</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Create CFTPART and CFTTCP objects
@@ -213,21 +213,21 @@ Example
 This is an example of the CFTPART and CFTTCP object configuration.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPART id = PARIS,</p>
-<p> prot = PROTXSR,</p>
-<p> sap = &lt;remote_partner_sap&gt;,</p>
-<p> nspart = NPARIS,</p>
-<p>  nrpart = NPHOENIX,</p>
-<p>  mode = replace</p>
-<p> </p>
-<p>CFTTCP id = PARIS,</p>
-<p> class = 2, /* this must match and be the same class as the one used in the CFTNET (SecureRelay)*/</p>
-<p> host = &lt;remote_partner_host_address&gt;,</p>
-<p> mode = replace</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPART id = PARIS,</p>
+            <p> prot = PROTXSR,</p>
+            <p> sap = &lt;remote_partner_sap&gt;,</p>
+            <p> nspart = NPARIS,</p>
+            <p>  nrpart = NPHOENIX,</p>
+            <p>  mode = replace</p>
+            <p> </p>
+            <p>CFTTCP id = PARIS,</p>
+            <p> class = 2, /* this must match and be the same class as the one used in the CFTNET (SecureRelay)*/</p>
+            <p> host = &lt;remote_partner_host_address&gt;,</p>
+            <p> mode = replace</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Indicate a specific SecureRelay to use
@@ -235,11 +235,11 @@ This is an example of the CFTPART and CFTTCP object configuration.
 If you would like to use a specific SecureRelay with a given partner, set the following parameter in the CFTPART:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SRDMZ = &lt;UCONF secure_relay.ra.<em>n</em>.dmz value, where n is the number that corresponds to the SecureRelay to use&gt;</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SRDMZ = &lt;UCONF secure_relay.ra.<em>n</em>.dmz value, where n is the number that corresponds to the SecureRelay to use&gt;         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Configure the load balancer
@@ -255,6 +255,6 @@ listen cft LB:1555
 
 The following diagrams are examples of high availability with multiple Router Agents.
 
-![](sr_add_node.png)
+![](/Images/TransferCFT/sec_relay_multi_RA.png)
 
-![](sr_add_node.png)
+![](/Images/TransferCFT/sr_add_node.png)

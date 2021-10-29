@@ -59,45 +59,45 @@ Transfer CFT is deployed on the operating systems and browsers listed in this in
 ## File systems for multi-node
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Operating system</th>
-<th>Supported</th>
-<th>Unsupported</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>AIX</td>
-<td>GPFS, NFSv4*</td>
-<td>NFSv3, CXFS, VeritasSF</td>
-</tr>
-<tr class="even">
-<td>HP-UX</td>
-<td>NFSv4*</td>
-<td>NFSv3, CXFS, VeritasSF</td>
-</tr>
-<tr class="odd">
-<td>Linux-x86</td>
-<td>GPFS, NFSv4*</td>
-<td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF</td>
-</tr>
-<tr class="even">
-<td>Solaris</td>
-<td>NFSv4*</td>
-<td>NFSv3, CXFS, QFS, VeritasSF</td>
-</tr>
-<tr class="odd">
-<td>Windows-x86</td>
-<td>SMB/CIFS, GPFS</td>
-<td>CXFS, NFS</td>
-</tr>
-<tr class="even">
-<td>z/OS</td>
-<td>Sharing DASD across Sysplex</td>
-<td> </td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Operating system</th>
+         <th>Supported</th>
+         <th>Unsupported</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>AIX         </td>
+         <td>GPFS, NFSv4*         </td>
+         <td>NFSv3, CXFS, VeritasSF         </td>
+      </tr>
+      <tr class="even">
+         <td>HP-UX         </td>
+         <td>NFSv4*         </td>
+         <td>NFSv3, CXFS, VeritasSF         </td>
+      </tr>
+      <tr class="odd">
+         <td>Linux-x86         </td>
+         <td>GPFS, NFSv4*         </td>
+         <td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF         </td>
+      </tr>
+      <tr class="even">
+         <td>Solaris         </td>
+         <td>NFSv4*         </td>
+         <td>NFSv3, CXFS, QFS, VeritasSF         </td>
+      </tr>
+      <tr class="odd">
+         <td>Windows-x86         </td>
+         <td>SMB/CIFS, GPFS         </td>
+         <td>CXFS, NFS         </td>
+      </tr>
+      <tr class="even">
+         <td>z/OS         </td>
+         <td>Sharing DASD across Sysplex         </td>
+         <td>          </td>
+      </tr>
+   </tbody>
 </table>
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
@@ -118,78 +118,78 @@ If you are implementing either TrustedFile or Secure Relay with Transfer CFT, en
 The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for Transfer CFT. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Component</th>
-<th><p>Port</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>PeSIT</td>
-<td>1761</td>
-</tr>
-<tr class="even">
-<td>SSL</td>
-<td>1762</td>
-</tr>
-<tr class="odd">
-<td>SFTP</td>
-<td>1763</td>
-</tr>
-<tr class="even">
-<td>COMS</td>
-<td>1765</td>
-</tr>
-<tr class="odd">
-<td>Copilot</td>
-<td>1766</td>
-</tr>
-<tr class="even">
-<td>Transfer CFT UI (Copilot) server for <span>Central Governance</span></td>
-<td>1767</td>
-</tr>
-<tr class="odd">
-<td>REST API</td>
-<td>1768</td>
-</tr>
-<tr class="even">
-<td><span>Central Governance</span></td>
-<td>12553</td>
-</tr>
-<tr class="odd">
-<td><span>Central Governance</span> SSL</td>
-<td>12554</td>
-</tr>
-<tr class="even">
-<td><p><span>Secure Relay</span> MA</p>
-<p>ma.comm_port</p></td>
-<td><p> </p>
-<p>6801</p></td>
-</tr>
-<tr class="odd">
-<td><p><span>Secure Relay</span> RA</p>
-<ul>
-<li>ra.comm_port</li>
-<li>ra.admin_port</li>
-</ul></td>
-<td><p> </p>
-<ul>
-<li>6811</li>
-<li>6810</li>
-</ul></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Component</th>
+         <th>            <p>Port</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>PeSIT         </td>
+         <td>1761         </td>
+      </tr>
+      <tr class="even">
+         <td>SSL         </td>
+         <td>1762         </td>
+      </tr>
+      <tr class="odd">
+         <td>SFTP         </td>
+         <td>1763         </td>
+      </tr>
+      <tr class="even">
+         <td>COMS         </td>
+         <td>1765         </td>
+      </tr>
+      <tr class="odd">
+         <td>Copilot         </td>
+         <td>1766         </td>
+      </tr>
+      <tr class="even">
+         <td>Transfer CFT UI (Copilot) server for <span>Central Governance</span>         </td>
+         <td>1767         </td>
+      </tr>
+      <tr class="odd">
+         <td>REST API         </td>
+         <td>1768         </td>
+      </tr>
+      <tr class="even">
+         <td><span>Central Governance</span>         </td>
+         <td>12553         </td>
+      </tr>
+      <tr class="odd">
+         <td><span>Central Governance</span> SSL         </td>
+         <td>12554         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p><span>Secure Relay</span> MA</p>
+            <p>ma.comm_port</p>         </td>
+         <td>            <p> </p>
+            <p>6801</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p><span>Secure Relay</span> RA</p>
+            <ul>
+               <li>ra.comm_port               </li>
+               <li>ra.admin_port               </li>
+            </ul>         </td>
+         <td>            <p> </p>
+            <ul>
+               <li>6811               </li>
+               <li>6810               </li>
+            </ul>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Third party licenses

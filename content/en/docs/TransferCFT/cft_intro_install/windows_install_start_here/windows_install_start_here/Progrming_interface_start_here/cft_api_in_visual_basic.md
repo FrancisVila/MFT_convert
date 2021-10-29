@@ -1,16 +1,14 @@
 {
-    "title": "Building API in Visual Basic",
+    "title": "Building  API in Visual Basic",
     "linkTitle": "Building API in Visual Basic",
     "weight": "270"
-}# <span id="Building_API_in_Visual_Basic"></span>Building API in Visual Basic
-
-The Transfer CFT API toolkit contains a dynamic library, which enables
+}The Transfer CFT API toolkit contains a dynamic library, which enables
 users to develop a Transfer CFT API application, that was itself developed
 in Visual Basic. This library and the sample supplied have been validated
 for Visual Basic version 4.0 and higher.
 
 The Transfer CFT APIs enable you to implement the facilities
-described in [About API](../../../../about_this_document_zos/using_apis).
+described in [About API](../../../../app_integration_intro/using_apis).
 
 -   Cftai:
     catalog consultation
@@ -21,7 +19,7 @@ described in [About API](../../../../about_this_document_zos/using_apis).
 
 The Transfer CFT API Visual Basic call structures and return
 codes are the same as for the equivalent functions for the Transfer CFT
-API functions in C. For more information, refer to [Using Transfer CFT services in C](../../../../about_this_document_ibmi/using_apis/using_cft_services_in_c).
+API functions in C. For more information, refer to [Using Transfer CFT services in C](../../../../app_integration_intro/using_apis/using_cft_services_in_c).
 
 ### Visual Basic toolkit
 

@@ -13,7 +13,7 @@ The following best practices may help you avoid or correct user rights issues. D
 -   Changing the domain may affect your ability to log in on the Transfer CFT client.
 -   If you modify the createprocessasuser parameter setting, you must restart Copilot for the parameter change to be taken into account.
 -   The am.passport.superuser can perform any superuser activity. From Central Governance there is no check on the superuser; this user has all access regardless of the Central Governance roles and privileges.
--   When USERCTRL is set to YES and if the [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid) parameter is not set, then the file transfer owner (when receiving) or file reader (when sending) is the user that started Transfer CFT.
+-   When USERCTRL is set to YES and if the [USERID](../../c_intro_userinterfaces/command_summary/parameter_intro/userid) parameter is not set, then the file transfer owner (when receiving) or file reader (when sending) is the user that started Transfer CFT.
 
 ## Troubleshooting user rights issues
 
@@ -48,7 +48,7 @@ While the superuser has all privileges and is granted to all possible actions on
 
 **Transfer CFT client hangs**
 
-The Transfer CFT client has been launched at least one time from the root/system admin userid, making the root/system admin the owner of the persistent cache (in data directory). See [am.passport.persistency.fname](../../../admin_intro/uconf/uconf_directory).
+The Transfer CFT client has been launched at least one time from the root/system admin userid, making the root/system admin the owner of the persistent cache (in data directory). See [am.passport.persistency.fname](../../admin_intro/uconf/uconf_directory).
 
 Therefore, even when the Transfer CFT client is launched with the Transfer CFT user (a user with appropriate privileges) this user cannot update the persistent cache and causes Transfer CFT to query Central Governance (PassPort AM) each time it needs to try to update the local cache.
 
@@ -58,19 +58,19 @@ To fix the issue, delete the persistent cache files (CFTAM and CFTAM.idx) and re
 
 For more information, see the following platform specific guides for the appropriate OS:
 
--   UNIX - [Running Transfer CFT for the first time UNIX](running_cft_for_the_first_time_unix.htm)
-    -   [Defining user rights](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/user_rights_and_interface_unix)
-    -   [Declaring additional users](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/declaring_additional_users)
-    -   [UNIX system users](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix)
-    -   [License keys and authorizations](../../../cft_intro_install/unix_install_start_here/before_you_start_unix/prereqs_overview)
--   Windows - [Running Transfer CFT for the first time Windows](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows)
-    -   [Windows user rights](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
-    -   [Windows system users](../../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows)
-    -   [License keys and authorizations](../../../cft_intro_install/unix_install_start_here/before_you_start_unix/prereqs_overview)
+-   UNIX - Running Transfer CFT for the first time UNIX
+    -   [Defining user rights](../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/user_rights_and_interface_unix)
+    -   [Declaring additional users](../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/declaring_additional_users)
+    -   [UNIX system users](../../cft_intro_install/unix_install_start_here/run_first_time_ux/run_first_time_ux/t_adding_system_user_unix)
+    -   [License keys and authorizations](../../cft_intro_install/unix_install_start_here/before_you_start_unix/prereqs_overview)
+-   Windows - [Running Transfer CFT for the first time Windows](../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows)
+    -   [Windows user rights](../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/user_rights_and_interface_win)
+    -   [Windows system users](../../cft_intro_install/windows_install_start_here/windows_install_start_here/running_cft_for_the_first_time_windows/add_system_user_windows)
+    -   [License keys and authorizations](../../cft_intro_install/windows_install_start_here/before_you_start_win/prereqs_overview)
 -   z/OS - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf)
 -   IBM i - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf)
 
 Related topics
 
--   [About system users](..//transfercft/internal_a_m_start_here/user_rights_overview)
--   [User rights use case scenarios](../user_rights_security_scenarios)
+-   [About system users](transfercft/internal_a_m_start_here/user_rights_overview)
+-   [User rights use case scenarios](user_rights_security_scenarios)

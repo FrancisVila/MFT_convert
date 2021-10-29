@@ -23,4 +23,4 @@ applied. Default is No.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

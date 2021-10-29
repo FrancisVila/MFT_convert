@@ -1,25 +1,25 @@
 {
-    "title": "Building APIs and exits",
-    "linkTitle": "Building APIs and exits",
-    "weight": "240"
+    "title": "About Windows Application Programming Interfaces (API)",
+    "linkTitle": "About Application Programming Interfaces",
+    "weight": "260"
 }This section describes the application build features of the Transfer CFT
 Windows Application Programming Interfaces, and introduces concepts
 including:
 
 -   [Product
-    tool kit](#product_toolkit)
+    tool kit](#Product_toolkit)
 -   [Before
-    developing your first CFT API application](#before_developing_your_first_cft_api_application)
+    developing your first CFT API application](#Before_developing_your_first_CFT_API_application)
 -   [Design
-    constraints](#design_constraints)
+    constraints](#Design_constraints)
 -   [Coding
-    constraints](#coding_constraints)
+    constraints](#Coding_constraints)
 -   [Compilation
-    constraints](#compilation_constraints)
+    constraints](#Compilation_constraints)
 -   [Linking
-    constraints](#linking_constraints)
+    constraints](#Linking_constraints)
 -   [Execution
-    constraints](#execution_constraints)
+    constraints](#Execution_constraints)
 
 After installation, the` runtime\src` directory contains the API sources developed in C, Visual Basic, or DELPHI (capi, delphi, vb subfolders).
 
@@ -36,7 +36,7 @@ C++ 4.1, Delphi 2 or Visual Basic 5.0.
 Before beginning to write Transfer CFT API applications, you should:
 
 1.  Read this topic and the topics in [Using
-    APIs,.](../../../about_this_document_zos/using_apis)
+    APIs,.](../../Prog/API/Using_APIs.htm)
 2.  Familiarize yourself with the
     sample source files.
     -   C: ..\\CFT\\API\\C\\SRC\\APISAMPL.C 

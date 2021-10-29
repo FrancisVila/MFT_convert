@@ -52,14 +52,14 @@ This parameter can be used for "store and forward" purposes
 (CFTRECV ID = COMMUT command).
 
 <table width="90%">
-<tbody>
-<tr class="odd">
-<td width="50%"><p>MVS, VMS</p></td>
-<td width="50%"><p>This parameter is mandatory if the receiver file is a version
+   <tbody>
+      <tr class="odd">
+         <td width="50%">            <p>MVS, VMS</p>         </td>
+         <td width="50%">            <p>This parameter is mandatory if the receiver file is a version
 file (in particular for operation in the open mode and when the sender
-sends an NFNAME corresponding to a GDG name).</p></td>
-</tr>
-</tbody>
+sends an NFNAME corresponding to a GDG name).</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This parameter is mandatory when a copy/concatenation operation is performed
@@ -126,4 +126,4 @@ unique.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

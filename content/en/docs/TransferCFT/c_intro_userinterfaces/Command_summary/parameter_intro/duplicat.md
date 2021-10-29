@@ -10,7 +10,7 @@ CFTSEND, CFTRECV
 
 This customizable parameter is used in detecting duplicate transfers. If you are performing a file transfer in and the file already exists, DUPLICAT recognizes the repeated pattern for a transfer. If this happens, the new transfer is rejected with a K status and DIAG = 432, DIAGP = DUPLICAT.
 
-In *requester* mode, if the transfer is sent using synchronous API, the [DACTION](../daction) parameter is taken into account.
+In *requester* mode, if the transfer is sent using synchronous API, the [DACTION](daction) parameter is taken into account.
 
 This field may contain a list of symbolic variables separated by a period ".". Possible variables include:
 
@@ -31,4 +31,4 @@ Example
 
 DUPLICAT= &PART.&IDF.&IDA.&SAPPL
 
-[Return to Command index](../../)
+[Return to Command index](../)

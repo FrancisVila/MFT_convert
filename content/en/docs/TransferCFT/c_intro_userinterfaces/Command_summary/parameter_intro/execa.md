@@ -16,4 +16,4 @@ When a transfer is terminated, an acknowledgement procedure is submitted. The sy
 -   CHILDREN: only the children execute the script
 -   PART: any transfer execute the script
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Configure send mode (IFS)",
+    "title": "Configure send mode on IFS",
     "linkTitle": "Configure send mode (IFS)",
     "weight": "220"
 }## File types
@@ -7,54 +7,54 @@
 The following table lists the different types of files that can be used according to the type of data to be sent when using IFS.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <strong>FRECFM</strong> possibilities for all FTYPE are: <strong>‘V’</strong>, <strong>‘F’</strong>, and <strong>‘ ’</strong> .</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <strong>FRECFM</strong> possibilities for all FTYPE are: <strong>‘V’</strong>, <strong>‘F’</strong>, and <strong>‘ ’</strong> .         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>FTYPE</th>
-<th>Type of sent file</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>‘S’</td>
-<td>Text</td>
-</tr>
-<tr class="even">
-<td>‘D’ , ‘ ’</td>
-<td>Text</td>
-</tr>
-<tr class="odd">
-<td>‘E’</td>
-<td>Text</td>
-</tr>
-<tr class="even">
-<td>‘Z’</td>
-<td>Binary</td>
-</tr>
-<tr class="odd">
-<td>‘J’</td>
-<td><p>Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.</p>
-<p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.</p>
+   <thead>
+      <tr class="header">
+         <th>FTYPE</th>
+         <th>Type of sent file</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>‘S’         </td>
+         <td>Text         </td>
+      </tr>
+      <tr class="even">
+         <td>‘D’ , ‘ ’         </td>
+         <td>Text         </td>
+      </tr>
+      <tr class="odd">
+         <td>‘E’         </td>
+         <td>Text         </td>
+      </tr>
+      <tr class="even">
+         <td>‘Z’         </td>
+         <td>Binary         </td>
+      </tr>
+      <tr class="odd">
+         <td>‘J’         </td>
+         <td>            <p>Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.</p>
+            <p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.</p>
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This transfer mode is not available for native side transfers.</td>
-</tr>
-</tbody>
-</table></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">This transfer mode is not available for native side transfers.         </td>
+      </tr>
+   </tbody>
+</table>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Key

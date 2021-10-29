@@ -16,7 +16,7 @@ Priority works as follows:
 1.  Among the transfer requests in the catalog waiting for a resource (MAXTRANS, MAXCNX, partner sessions (CNXOUT)), Transfer CFT selects the transfer requests that have the highest priority.
 2.  Transfer CFT then activates the oldest from among these requests.
 
-See [mintime](../mintime) for transfer timing details.
+See [mintime](#) for transfer timing details.
 
 -   128
     (default value)
@@ -24,4 +24,4 @@ See [mintime](../mintime) for transfer timing details.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

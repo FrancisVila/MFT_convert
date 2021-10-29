@@ -1,14 +1,14 @@
 {
-    "title": "CFTCAT - Catalog attributes ",
+    "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "260"
 }Related
 topics
 
 -   Command syntax
-    [CFTCAT](../../../c_intro_userinterfaces/command_summary)
+    [CFTCAT](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTCAT](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcat)
+    [CFTCAT](../../CFTUTIL/Conf/CFTCAT.htm)
 
 ### <span id="About_the_CFTCAT_object"></span>About the CFTCAT object
 
@@ -33,7 +33,7 @@ associated CFTCAT.
 ### Catalog levels
 
 Catalog levels enable Transfer CFT to issue alerts
-when a critical fill threshold, the [TLVWARN](../../../c_intro_userinterfaces/command_summary/parameter_intro/tlvwarn)
+when a critical fill threshold, the [TLVWARN](../../CFTUTIL/Parameter_index/tlvwarn.htm)
 parameter Threshold Limit Value Warning, for the catalog file is reached.
 This alert triggers:
 

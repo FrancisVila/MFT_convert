@@ -1,29 +1,27 @@
 {
-    "title": "CFTCOM - Communication media",
+    "title": "Communication media - CFTCOM  ",
     "linkTitle": "CFTCOM - Communication media",
     "weight": "330"
-}# <span id="CFTCOM___communication_types"></span>Communication media - CFTCOM
-
-This topic describes the CFTCOM object and parameters. You can use this
+}This topic describes the CFTCOM object and parameters. You can use this
 command to define the communication media used by Transfer CFT.
 
 Related
 topics
 
 -   Command syntax
-    [CFTCOM](../../../command_summary)
+    [CFTCOM](../../command_summary)
 -   Object concepts
     [About the
-    communication media](../../../../admin_intro/admin_config_commands/communication_media_concepts)
+    communication media](../../GUI/Concepts/Communication_media_concepts.htm)
 
 For a description of the object and CFTCOM concepts, go to [CFTCOM
-communication media concepts](../../../../admin_intro/admin_config_commands/communication_media_concepts).
+communication media concepts](../../GUI/Concepts/Communication_media_concepts.htm).
 
 As described in the [CFTCOM
-concepts: Start here](../../../../admin_intro/admin_config_commands/communication_media_concepts), you can set the communication medium to:
+concepts: Start here](../../GUI/Concepts/Communication_media_concepts.htm), you can set the communication medium to:
 
--   [File](#type=file)
--   [TCP/IP](#type=tcpip)
+-   [File](#TYPE=FILE)
+-   [TCP/IP](#TYPE=TCPIP)
 
 First define the TYPE, and then define the corresponding communication media parameters.
 
@@ -92,44 +90,44 @@ This table describes the parameters to define the CFTCOM object when the communi
 type is TCPIP.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/addrlist">ADDRLIST</a></p></td>
-<td width="74.947%"><p>This field defines a list of authorized addresses that you can use to
-connect to the communication media.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/host">HOST</a></p></td>
-<td width="74.947%"><p>Networking IP address of the local resource.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p></td>
-<td width="74.947%"><p>Identifier of the CFTCOM object.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/mode">MODE</a></p></td>
-<td width="74.947%"><p>Action to do in the parameter or partner base. This parameter
-applies to all commands that affect CFT bases.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/port">PORT</a></p></td>
-<td width="74.947%"><p>Listening port of the network.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/protocol">PROTOCOL</a></p></td>
-<td width="74.947%"><p>Defines the remote TCP network resource</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/type">TYPE</a></p></td>
-<td width="74.947%"><p>Transfer CFT communication means.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/addrlist.htm">ADDRLIST</a></p>         </td>
+         <td width="74.947%">            <p>This field defines a list of authorized addresses that you can use to
+connect to the communication media.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/host.htm">HOST</a></p>         </td>
+         <td width="74.947%">            <p>Networking IP address of the local resource.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/id.htm">ID</a> </p>         </td>
+         <td width="74.947%">            <p>Identifier of the CFTCOM object.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/mode.htm">MODE</a></p>         </td>
+         <td width="74.947%">            <p>Action to do in the parameter or partner base. This parameter
+applies to all commands that affect CFT bases.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/port.htm">PORT</a></p>         </td>
+         <td width="74.947%">            <p>Listening port of the network.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/protocol.htm">PROTOCOL</a></p>         </td>
+         <td width="74.947%">            <p>Defines the remote TCP network resource</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/type.htm">TYPE</a></p>         </td>
+         <td width="74.947%">            <p>Transfer CFT communication means.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Defining_CFTCOM_FILE"></span>CFTCOM FILE
@@ -138,53 +136,53 @@ This table describes the parameters to define the CFTCOM object when the communi
 type is FILE.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p></td>
-<td width="74.947%"><p>Identifier of the CFTCOM command.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/mode">MODE</a></p></td>
-<td width="74.947%"><p>Action to do in the parameter or partner base. This parameter
-applies to all commands that affect Transfer CFT bases.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a></td>
-<td width="74.947%">Batch to execute when the alert ends.</td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a></td>
-<td width="74.947%"><p>Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a></td>
-<td width="74.947%"><p>Command file usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.</p>
-<p>Once this limit is reached, the CFTCOM/TLVWEXEC is executed.</p></td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a></td>
-<td width="74.947%">Batch to execute when CFTCOM/TLVWARN is reached.</td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a></td>
-<td width="74.947%">The minimum amount of time, in seconds, to wait before resending an alert.</td>
-</tr>
-<tr class="even" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p></td>
-<td width="74.947%"><p>Transfer CFT communication means.</p></td>
-</tr>
-<tr class="odd" data-valign="top">
-<td width="25.053%"><p><a href="../../../command_summary/parameter_intro/wscan">WSCAN</a></p></td>
-<td width="74.947%"><p>The frequency, in seconds, with which the Transfer CFT scans
-the communication file.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/id.htm">ID</a> </p>         </td>
+         <td width="74.947%">            <p>Identifier of the CFTCOM command.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/mode.htm">MODE</a></p>         </td>
+         <td width="74.947%">            <p>Action to do in the parameter or partner base. This parameter
+applies to all commands that affect Transfer CFT bases.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%"><a href="../Parameter_index/tlvcexec.htm">TLVCEXEC</a>         </td>
+         <td width="74.947%">Batch to execute when the alert ends.         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%"><a href="../Parameter_index/tlvclear.htm">TLVCLEAR</a>         </td>
+         <td width="74.947%">            <p>Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%"><a href="../Parameter_index/tlvwarn.htm">TLVWARN</a>         </td>
+         <td width="74.947%">            <p>Command file usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.</p>
+            <p>Once this limit is reached, the CFTCOM/TLVWEXEC is executed.</p>         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%"><a href="../Parameter_index/tlvwexec.htm">TLVWEXEC</a>         </td>
+         <td width="74.947%">Batch to execute when CFTCOM/TLVWARN is reached.         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%"><a href="../Parameter_index/tlvwrate.htm">TLVWRATE</a>         </td>
+         <td width="74.947%">The minimum amount of time, in seconds, to wait before resending an alert.         </td>
+      </tr>
+      <tr class="even" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/type.htm">TYPE</a> </p>         </td>
+         <td width="74.947%">            <p>Transfer CFT communication means.</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="top">
+         <td width="25.053%">            <p><a href="../Parameter_index/wscan.htm">WSCAN</a></p>         </td>
+         <td width="74.947%">            <p>The frequency, in seconds, with which the Transfer CFT scans
+the communication file.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
@@ -192,14 +190,14 @@ Example
 TYPE=FILE
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTCOM ID = IDCOM,</p>
-<p>TYPE = FILE</p>
-<p>NAME = &lt;filename&gt;,</p>
-<p>WSCAN = 120</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTCOM ID = IDCOM,</p>
+            <p>TYPE = FILE</p>
+            <p>NAME = &lt;filename&gt;,</p>
+            <p>WSCAN = 120</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Communication media characteristics
@@ -226,15 +224,15 @@ TYPE=FILE
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SEND<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SEND<br />
 PART = PART1<br />
 IDF = TEST1</p>
-<p> </p>
-<p>Then...</p>
-<p>LISTCAT<br />
-IDT = %_CAT_IDT%</p></td>
-</tr>
-</tbody>
+            <p> </p>
+            <p>Then...</p>
+            <p>LISTCAT<br />
+IDT = %_CAT_IDT%</p>         </td>
+      </tr>
+   </tbody>
 </table>

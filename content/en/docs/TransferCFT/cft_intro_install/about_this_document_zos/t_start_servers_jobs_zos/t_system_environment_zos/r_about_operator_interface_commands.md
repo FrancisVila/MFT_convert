@@ -1,5 +1,5 @@
 {
-    "title": "About operator interface commands",
+    "title": " About operator interface commands",
     "linkTitle": "About operator interface commands",
     "weight": "260"
 }This section describes how to set up the diagnosis commands, which enable you to perform a search of errors that can occur in Transfer CFT.
@@ -31,6 +31,6 @@ The Transfer CFT operator interface for z/OS supplies the following responses:
 
 Related topics
 
-[Diagnostic commands](../c_diagnostic_commands)
+[Diagnostic commands](#)
 
-[The ? command](c_the_questionmark_commands_zos.htm)
+The ? command

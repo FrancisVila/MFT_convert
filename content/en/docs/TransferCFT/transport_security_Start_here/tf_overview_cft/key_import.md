@@ -23,11 +23,11 @@ When you import a private keyring file containing ElGamal subkey(s), you must pr
 
 1.  Use CFTUTIL to set the full path to Java executable:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Enter the import command:
 
@@ -37,42 +37,42 @@ When you import a private keyring file containing ElGamal subkey(s), you must pr
 There are several options you can add to the command line:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Options</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>-h or -help</td>
-<td>Displays the help with all available options.</td>
-</tr>
-<tr class="even">
-<td>-dn</td>
-<td>Subject DN of the generated certificate. If this option is not provided, the default subject DN is CN=PGP.</td>
-</tr>
-<tr class="odd">
-<td>-out</td>
-<td><p>Output path of the generated certificate or PKCS#12 file. If this option is not provided, the file is stored in the current directory. It must contain the tailing file separator („\‟ on Windows and „/‟ on UNIX).</p></td>
-</tr>
-<tr class="even">
-<td>-passwd</td>
-<td>Private key PassPhrase of the secret Keyring located in the input file.</td>
-</tr>
-<tr class="odd">
-<td>-newpasswd</td>
-<td>Private key PassPhrase of the generated PKCS#12 file. This option is mandatory for imported secret Keyrings.</td>
-</tr>
-<tr class="even">
-<td>-pkcs12</td>
-<td>PKCS#12 file used to sign the new generated certificate.</td>
-</tr>
-<tr class="odd">
-<td>-passPkcs12</td>
-<td>Passphrase of the PKCS#12 file used to sign the new generated certificate.</td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Options</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>-h or -help         </td>
+         <td>Displays the help with all available options.         </td>
+      </tr>
+      <tr class="even">
+         <td>-dn         </td>
+         <td>Subject DN of the generated certificate. If this option is not provided, the default subject DN is CN=PGP.         </td>
+      </tr>
+      <tr class="odd">
+         <td>-out         </td>
+         <td>            <p>Output path of the generated certificate or PKCS#12 file. If this option is not provided, the file is stored in the current directory. It must contain the tailing file separator („\‟ on Windows and „/‟ on UNIX).</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>-passwd         </td>
+         <td>Private key PassPhrase of the secret Keyring located in the input file.         </td>
+      </tr>
+      <tr class="odd">
+         <td>-newpasswd         </td>
+         <td>Private key PassPhrase of the generated PKCS#12 file. This option is mandatory for imported secret Keyrings.         </td>
+      </tr>
+      <tr class="even">
+         <td>-pkcs12         </td>
+         <td>PKCS#12 file used to sign the new generated certificate.         </td>
+      </tr>
+      <tr class="odd">
+         <td>-passPkcs12         </td>
+         <td>Passphrase of the PKCS#12 file used to sign the new generated certificate.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Example commands
@@ -105,38 +105,38 @@ TrustedFile exports keys and certificates with the
 following file names.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Key/certificate standard</th>
-<th>Exported file name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td><p>PGP Public Keyring</p></td>
-<td><p><span>useridpacket</span>_pub.asc</p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td><p>PGP Secret Keyring and Public Keyring</p></td>
-<td><p><span>useridpacket</span>_sec.asc
-and <span>useridpacket</span>_pub.asc</p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td><p>X.509 Certificate</p></td>
-<td><p><span>certificate alias.</span><span>der</span></p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Key/certificate standard</th>
+         <th>Exported file name</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td>            <p>PGP Public Keyring</p>         </td>
+         <td>            <p><span>useridpacket</span>_pub.asc</p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td>            <p>PGP Secret Keyring and Public Keyring</p>         </td>
+         <td>            <p><span>useridpacket</span>_sec.asc
+and <span>useridpacket</span>_pub.asc</p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td>            <p>X.509 Certificate</p>         </td>
+         <td>            <p><span>certificate alias.</span><span>der</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Export procedure
 
 1.  Use CFTUTIL to set the full path to Java executable:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>UCONFSET id=cft.jre.java_binary_path ,value=/bin/java         </td>
+          </tr>
+       </tbody>
     </table>
 2.  Enter the import command:
 
@@ -146,64 +146,64 @@ and <span>useridpacket</span>_pub.asc</p></td>
 There are several options you can add to the command line:
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Option</p></th>
-<th><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>-help | -h</p></td>
-<td><p>Displays the help.</p></td>
-</tr>
-<tr class="even">
-<td><p>-out</p></td>
-<td><p>Output path (with the trailing path separator). If this option is not provided, the file is stored in the current directory.</p></td>
-</tr>
-<tr class="odd">
-<td><p>-passSecRing</p></td>
-<td><p>PassPhrase of the generated secret Keyring.</p></td>
-</tr>
-<tr class="even">
-<td><p>-userIdPacket</p></td>
-<td><p>User ID packet of the generated secret Keyring and public Keyring.</p></td>
-</tr>
-<tr class="odd">
-<td><p>-passPkcs12</p></td>
-<td><p>PassPhrase of the PKCS#12 file to be converted.</p></td>
-</tr>
-<tr class="even">
-<td><p>-secRing</p></td>
-<td><p>With the argument "no", the secret Keyring will not generate.</p>
-<p>Do</p>
-<p>not use this option or use an alternative argument.</p></td>
-</tr>
-<tr class="odd">
-<td><p>-pubRing</p></td>
-<td><p>With the argument "no", the public Keyring will not generate. Do not use this option or use an alternative argument.</p></td>
-</tr>
-<tr class="even">
-<td><p>-masterPkcs12</p></td>
-<td><p>(only for ElGamal) PKCS#12 file used to sign the new generated certificate.</p></td>
-</tr>
-<tr class="odd">
-<td><p>-masterPassPkcs12</p></td>
-<td><p>(only for ElGamal) Passphrase of the PKCS#12 file used to sign the new generated certificate.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Option</p></th>
+         <th>            <p>Description</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>-help | -h</p>         </td>
+         <td>            <p>Displays the help.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>-out</p>         </td>
+         <td>            <p>Output path (with the trailing path separator). If this option is not provided, the file is stored in the current directory.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>-passSecRing</p>         </td>
+         <td>            <p>PassPhrase of the generated secret Keyring.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>-userIdPacket</p>         </td>
+         <td>            <p>User ID packet of the generated secret Keyring and public Keyring.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>-passPkcs12</p>         </td>
+         <td>            <p>PassPhrase of the PKCS#12 file to be converted.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>-secRing</p>         </td>
+         <td>            <p>With the argument "no", the secret Keyring will not generate.</p>
+            <p>Do</p>
+            <p>not use this option or use an alternative argument.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>-pubRing</p>         </td>
+         <td>            <p>With the argument "no", the public Keyring will not generate. Do not use this option or use an alternative argument.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>-masterPkcs12</p>         </td>
+         <td>            <p>(only for ElGamal) PKCS#12 file used to sign the new generated certificate.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>-masterPassPkcs12</p>         </td>
+         <td>            <p>(only for ElGamal) Passphrase of the PKCS#12 file used to sign the new generated certificate.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The following options are required:<code> -userIdPacket</code> and <code>-passSecRing</code><span>.</span> By default (without <code>-secRing </code>or <code>-pubRing</code> options), the feature exports Public Keyring <span>and </span>Secret Keyring.<br />
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The following options are required:<code> -userIdPacket</code> and <code>-passSecRing</code><span>.</span> By default (without <code>-secRing </code>or <code>-pubRing</code> options), the feature exports Public Keyring <span>and </span>Secret Keyring.<br />
 If you do not need to export the Secret Keyring, add<span> - secRing no</span> to the command line.<br />
-If you do not need to export the Public Keyring, add <span>- pubRing no</span> to the command line.</td>
-</tr>
-</tbody>
+If you do not need to export the Public Keyring, add <span>- pubRing no</span> to the command line.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Example commands

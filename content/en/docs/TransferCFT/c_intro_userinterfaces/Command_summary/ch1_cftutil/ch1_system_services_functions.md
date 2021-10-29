@@ -24,12 +24,12 @@
 The \_DATE function returns the current system date.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_Date PARM = VDATE,</p>
-<p>      RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_Date PARM = VDATE,</p>
+            <p>      RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -46,15 +46,15 @@ A positive value of the runtime code expresses the number of days since the begi
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name=DATE,size=8</p>
-<p>LONG name=RCL</p>
-<p>_Date parm=DATE=,rc=RCL</p>
-<p>PRINT msg='Today's date is %DATE%'</p>
-<p>PRINT msg='The number of days is: %RCL%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name=DATE,size=8</p>
+            <p>LONG name=RCL</p>
+            <p>_Date parm=DATE=,rc=RCL</p>
+            <p>PRINT msg='Today's date is %DATE%'</p>
+            <p>PRINT msg='The number of days is: %RCL%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_Time
@@ -64,12 +64,12 @@ A positive value of the runtime code expresses the number of days since the begi
 The \_Time function returns the current system time.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_Time PARM = VTIME,</p>
-<p>      RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_Time PARM = VTIME,</p>
+            <p>      RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -86,15 +86,15 @@ A positive value of the runtime code expresses the number of hundredths of secon
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = TIME, size = 8</p>
-<p>LONG name = RCL</p>
-<p>_time Parm = TIME = rc = RCL</p>
-<p>PRINT msg = 'The current time is% TIME%'</p>
-<p>PRINT msg = 'Number of hundredths elapsed:%% RCL</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = TIME, size = 8</p>
+            <p>LONG name = RCL</p>
+            <p>_time Parm = TIME = rc = RCL</p>
+            <p>PRINT msg = 'The current time is% TIME%'</p>
+            <p>PRINT msg = 'Number of hundredths elapsed:%% RCL</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_DatTim
@@ -104,12 +104,12 @@ A positive value of the runtime code expresses the number of hundredths of secon
 The \_DatTim function returns the current system date and current.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_DatTim PARM = VDATTIM,</p>
-<p>        RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_DatTim PARM = VDATTIM,</p>
+            <p>        RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -126,14 +126,14 @@ A zero value indicates that the runtime code execution \_DatTim function correct
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = DATETIME, size = 16</p>
-<p>LONG name = RCL</p>
-<p>_DatTim parm = DATETIME, rc = RCL</p>
-<p>PRINT msg = 'The current time is %DATETIME[8]%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = DATETIME, size = 16</p>
+            <p>LONG name = RCL</p>
+            <p>_DatTim parm = DATETIME, rc = RCL</p>
+            <p>PRINT msg = 'The current time is %DATETIME[8]%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_DtSplit
@@ -143,13 +143,13 @@ A zero value indicates that the runtime code execution \_DatTim function correct
 The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and hour chain.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>. _DtSplit DATIME = date_time,</p>
-<p>           DATE = date,</p>
-<p>           TIME = time</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>. _DtSplit DATIME = date_time,</p>
+            <p>           DATE = date,</p>
+            <p>           TIME = time</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -161,16 +161,16 @@ The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and 
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = DTSTART, size = 16</p>
-<p>CHAR name = DATE_START, size = 8</p>
-<p>CHAR name = TIME_START,size = 8</p>
-<p>_DTSPLIT DATIME = DTSTART, DATE = DATE_START, TIME = TIME_START</p>
-<p>PRINT msg = 'The date is %DATE_START%'</p>
-<p>PRINT msg = 'The time is %TIME_START%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = DTSTART, size = 16</p>
+            <p>CHAR name = DATE_START, size = 8</p>
+            <p>CHAR name = TIME_START,size = 8</p>
+            <p>_DTSPLIT DATIME = DTSTART, DATE = DATE_START, TIME = TIME_START</p>
+            <p>PRINT msg = 'The date is %DATE_START%'</p>
+            <p>PRINT msg = 'The time is %TIME_START%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_DtMerge
@@ -180,13 +180,13 @@ The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and 
 The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chain and an hour chain.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_DtMerge DATIME = date_time,</p>
-<p>           DATE = date,</p>
-<p>           TIME = time</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_DtMerge DATIME = date_time,</p>
+            <p>           DATE = date,</p>
+            <p>           TIME = time</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -198,15 +198,15 @@ The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chai
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = DTDEBUT, size = 16</p>
-<p>CHAR name = DATE, size = 8, init = 19930101</p>
-<p>CHAR name = HOUR,size = 8, init = 12000000</p>
-<p>_DTMERGE DATIME = DTDEBUT, DATE = DATE_DEBUT, HOUR = HOUR_START</p>
-<p>PRINT msg = 'The date is %DTDEBUT%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = DTDEBUT, size = 16</p>
+            <p>CHAR name = DATE, size = 8, init = 19930101</p>
+            <p>CHAR name = HOUR,size = 8, init = 12000000</p>
+            <p>_DTMERGE DATIME = DTDEBUT, DATE = DATE_DEBUT, HOUR = HOUR_START</p>
+            <p>PRINT msg = 'The date is %DTDEBUT%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_DtAdd
@@ -216,13 +216,13 @@ The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chai
 The \_DtAdd function calculates a new date-time string by adding a date-time number one second.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_DtAdd FROMDT = date_time_src,</p>
-<p>TODT = date_time_dest,</p>
-<p>SEC = second</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_DtAdd FROMDT = date_time_src,</p>
+            <p>TODT = date_time_dest,</p>
+            <p>SEC = second</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -234,16 +234,16 @@ The \_DtAdd function calculates a new date-time string by adding a date-time num
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = DT_DEBUT, size = 16</p>
-<p>LONG name = DUREE</p>
-<p>CHAR name = DT_FIN, size = 16</p>
-<p>_DTADD FROMDT = DT_DEBUT, TODT = DT_FIN,SEC = DUREE</p>
-<p>PRINT msg = 'La date-heure de début est %DT_DEBUT%'</p>
-<p>PRINT msg = 'La date-heure de fin est %DT_FIN%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = DT_DEBUT, size = 16</p>
+            <p>LONG name = DUREE</p>
+            <p>CHAR name = DT_FIN, size = 16</p>
+            <p>_DTADD FROMDT = DT_DEBUT, TODT = DT_FIN,SEC = DUREE</p>
+            <p>PRINT msg = 'La date-heure de début est %DT_DEBUT%'</p>
+            <p>PRINT msg = 'La date-heure de fin est %DT_FIN%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_DtDiff
@@ -253,13 +253,13 @@ The \_DtAdd function calculates a new date-time string by adding a date-time num
 The \_DtDiff function calculates the difference in hundredths of a second between two date/times.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_DtDiff FROMDT = date_time1,</p>
-<p>TODT = date_time2,</p>
-<p>SEC = hundredth_of_seconds</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_DtDiff FROMDT = date_time1,</p>
+            <p>TODT = date_time2,</p>
+            <p>SEC = hundredth_of_seconds</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -271,15 +271,15 @@ The \_DtDiff function calculates the difference in hundredths of a second betwee
 #### Examples
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = DT_START, size = 16</p>
-<p>CHAR name = DT_END, size = 16</p>
-<p>LONG name = DURATION</p>
-<p>_DTDIFF FROMDT = DT_END, TODT = DT_START, SEC = DURATION</p>
-<p>PRINT msg = 'The length of the session is %duration% seconds'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = DT_START, size = 16</p>
+            <p>CHAR name = DT_END, size = 16</p>
+            <p>LONG name = DURATION</p>
+            <p>_DTDIFF FROMDT = DT_END, TODT = DT_START, SEC = DURATION</p>
+            <p>PRINT msg = 'The length of the session is %duration% seconds'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_User
@@ -289,22 +289,22 @@ The \_DtDiff function calculates the difference in hundredths of a second betwee
 The \_user function returns the name of current user.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PARM parameter must be entered in upper case.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PARM parameter must be entered in upper case.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>PARM = _user VUSER,</p>
-<p>RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>PARM = _user VUSER,</p>
+            <p>RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -319,14 +319,14 @@ A value of zero means the runtime code execution \_user function correctly. A ne
 #### Examples
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name=USERNAME,size=16</p>
-<p>LONG name=RCL</p>
-<p>_User parm=USERNAME,rc=RCL</p>
-<p>PRINT msg='The current user is %USERNAME%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name=USERNAME,size=16</p>
+            <p>LONG name=RCL</p>
+            <p>_User parm=USERNAME,rc=RCL</p>
+            <p>PRINT msg='The current user is %USERNAME%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_Job
@@ -336,22 +336,22 @@ A value of zero means the runtime code execution \_user function correctly. A ne
 The \_Job function returns the name of the current process with the operating system.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PARM parameter must be entered in upper case.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The PARM parameter must be entered in upper case.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_Job PARM = VJOB,</p>
-<p>RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_Job PARM = VJOB,</p>
+            <p>RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -366,14 +366,14 @@ A value of zero means the runtime code execution \_Job function correctly. A neg
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR JOBNAME,size=16</p>
-<p>LONG name=RCL</p>
-<p>_Job parm=JOBNAME=,rc=RCL</p>
-<p>PRINT msg='Processus courant %JOBNAME%'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR JOBNAME,size=16</p>
+            <p>LONG name=RCL</p>
+            <p>_Job parm=JOBNAME=,rc=RCL</p>
+            <p>PRINT msg='Processus courant %JOBNAME%'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Function \_SmSleep
@@ -383,12 +383,12 @@ A value of zero means the runtime code execution \_Job function correctly. A neg
 The \_SmSleep function puts the current process in standby.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>_DatTim PARM = vsleep,</p>
-<p>RC = lrc</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>_DatTim PARM = vsleep,</p>
+            <p>RC = lrc</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Values
@@ -405,11 +405,11 @@ A zero value indicates that the runtime code execution \_SmSleep functions corre
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>LONG name=LSLEEP,INIT=200</p>
-<p>LONG name=RCL</p>
-<p>_SmSleep parm=%LSLEEP%,rc=RCL /* Standby 2 seconds */</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>LONG name=LSLEEP,INIT=200</p>
+            <p>LONG name=RCL</p>
+            <p>_SmSleep parm=%LSLEEP%,rc=RCL /* Standby 2 seconds */</p>         </td>
+      </tr>
+   </tbody>
 </table>

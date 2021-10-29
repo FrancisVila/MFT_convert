@@ -1,19 +1,17 @@
 {
-    "title": "CFTNET - Network resources ",
+    "title": " Network  resources ",
     "linkTitle": "CFTNET - Network resources ",
     "weight": "290"
-}# <span id="Defining_network_resources__Start_here"></span> Network resources
-
-The
+}The
 Network resources object corresponds to the CFTNET object in the command line operations.
 
 Related
 topics
 
 -   Command syntax
-    [CFTNET](../../../c_intro_userinterfaces/command_summary)
+    [CFTNET](../../c_intro_userinterfaces/command_summary)
 -   Parameter list
-    [CFTNET](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet)
+    [CFTNET](../../CFTUTIL/Conf/CFTNET.htm)
 
 ## <span id="What_is_a_local_network_resource_"></span>What is a local network resource?
 

@@ -12,4 +12,4 @@
 The wait timeout for a response to the protocol connection request
 (FPDU connect). Enter a value between 0 and 3600 (default = 60).
 
-[Return to Command index](../../)
+[Return to Command index](../)

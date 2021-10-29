@@ -35,4 +35,4 @@ Rejected transfer on the sender:
     mismatch” is set (sender side)
 -   The transfer is canceled (state H)
 
-[Return to Command index](../../)
+[Return to Command index](../)

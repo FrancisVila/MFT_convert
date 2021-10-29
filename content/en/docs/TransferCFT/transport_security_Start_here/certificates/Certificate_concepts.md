@@ -2,16 +2,14 @@
     "title": "Certificate concepts",
     "linkTitle": "Certificate concepts",
     "weight": "200"
-}# <span id="Certificate_concepts"></span>Certificate concepts
-
-This topic describes the following certificate principles:
+}This topic describes the following certificate principles:
 
 -   [Establishing
-    a trust relationship](#establishing_a_trust_relationship)
+    a trust relationship](#Establishing_a_trust_relationship)
 -   [CA
-    hierarchy](#ca_hierarchy)
+    hierarchy](#CA_hierarchy)
 -   [Certificate
-    syntax and formats](#certificate_syntax_and_formats)
+    syntax and formats](#Certificate_syntax_and_formats)
 
 ## <span id="Establishing_a_trust_relationship"></span>Establishing a trust relationship
 
@@ -48,7 +46,7 @@ CAs as shown in the following figure.
 
 CA hierarchy
 
-<img src="certificate1.gif" width="676" height="434" alt="Relationship between the Root CA and related certificates, such as Asia and Europe" />
+<img src="/Images/TransferCFT/certificates3.gif" width="676" height="434" alt="Relationship between the Root CA and related certificates, such as Asia and Europe" />
 
 In this model, the root CA is at the top of the hierarchy. The root
 CA certificate is a self-signed
@@ -81,7 +79,7 @@ root of the hierarchy. A certificate chain is formed that way:
 
 Certificate chains
 
-<img src="certificate1.gif" width="676" height="253" alt="View of Trusted Root CA with some related certificates being Untrusted certificates" />
+<img src="/Images/TransferCFT/certificates2.gif" width="676" height="253" alt="View of Trusted Root CA with some related certificates being Untrusted certificates" />
 
 In the above figure, the Engineering CA certificate contains the DN
 of the CA (European CA), that issued that certificate. European CA's DN
@@ -119,7 +117,7 @@ The following figure presents an example of this process.
 
 Verifying a certificate chain
 
-<img src="certificate1.gif" width="609" height="350" alt="Validity checks on Untrusted Authorities, where Root CA is a Trusted Authority" />
+<img src="/Images/TransferCFT/certificate1.gif" width="609" height="350" alt="Validity checks on Untrusted Authorities, where Root CA is a Trusted Authority" />
 
  
 

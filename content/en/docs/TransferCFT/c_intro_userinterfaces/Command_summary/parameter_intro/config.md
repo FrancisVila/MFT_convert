@@ -20,4 +20,4 @@ file take precedence over the command parameter setting.
 
 Only applicable when TYPE = ASY
 
-[Return to Command index](../../)
+[Return to Command index](../)

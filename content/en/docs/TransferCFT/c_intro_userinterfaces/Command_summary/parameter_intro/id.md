@@ -54,35 +54,35 @@ The value of the identifier corresponds with the identifier in the related
 commands listed below.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>EXIT type</th>
-<th>Command</th>
-<th>Parameter</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Directory</td>
-<td><p>CFTPROT</p></td>
-<td><p>EXITA </p></td>
-</tr>
-<tr class="even">
-<td> </td>
-<td><p> </p></td>
-<td><p>EXIT </p></td>
-</tr>
-<tr class="odd">
-<td>File </td>
-<td><p>CFTSEND, SEND, CFTRECV, RECV </p></td>
-<td><p>EXIT </p></td>
-</tr>
-<tr class="even">
-<td>End of transfer</td>
-<td><p>CFTPARM </p></td>
-<td><p>EXITEOT </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>EXIT type</th>
+         <th>Command</th>
+         <th>Parameter</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>Directory         </td>
+         <td>            <p>CFTPROT</p>         </td>
+         <td>            <p>EXITA </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>          </td>
+         <td>            <p> </p>         </td>
+         <td>            <p>EXIT </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>File          </td>
+         <td>            <p>CFTSEND, SEND, CFTRECV, RECV </p>         </td>
+         <td>            <p>EXIT </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>End of transfer         </td>
+         <td>            <p>CFTPARM </p>         </td>
+         <td>            <p>EXITEOT </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="id_CFTPARM"></span>CFTPARM
@@ -149,15 +149,15 @@ the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
 
 <table data-cellspacing="0" width="90%">
-<tbody>
-<tr class="odd">
-<td width="26%"><p><strong>PeSIT SIT profile</strong></p></td>
-<td width="74%"><p>For
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p><strong>PeSIT SIT profile</strong></p>         </td>
+         <td width="74%">            <p>For
 the PeSIT SIT profile, the model file identifier is subjected to the format
-constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols:
-PeSIT</a>.</p></td>
-</tr>
-</tbody>
+constraint (Fnnnnn). See <a href="../../../protocols_start_here/about_pesit">Protocols:
+PeSIT</a>.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="id_CFTSEND"></span>CFTSEND
@@ -169,14 +169,14 @@ Local
 identifier of the model file (IDF) to be sent.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td width="26%"><p>PeSIT SIT profile</p></td>
-<td width="74%"><p>In the PeSIT protocol with the SIT profile, the model file
-identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols:
-PeSIT</a>.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td width="26%">            <p>PeSIT SIT profile</p>         </td>
+         <td width="74%">            <p>In the PeSIT protocol with the SIT profile, the model file
+identifier is subject to the format constraint (Fnnnnn). See <a href="../../../protocols_start_here/about_pesit">Protocols:
+PeSIT</a>.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### <span id="Network_id"></span>Network id
@@ -205,4 +205,4 @@ Selects the user, or users, for which you want to obtain access rights.
 
 Identifier for the user interface preferences.
 
-[Return to Command index](../../)
+[Return to Command index](../)

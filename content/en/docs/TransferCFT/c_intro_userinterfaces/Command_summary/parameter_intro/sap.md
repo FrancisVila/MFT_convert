@@ -23,36 +23,36 @@ protocol is only available in requester mode.
 #### CFTPROT SAP - Parameter values
 
 <table data-border="1" data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Access method</th>
-<th colspan="2"><p>Size in characters </p></th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="14%"><p>TCP/IP </p></td>
-<td colspan="2" data-valign="top"><p>1 to 15<br />
- </p></td>
-<td data-valign="top"><p>Number of the local monitoring port on which the Transfer CFT
+   <thead>
+      <tr class="header">
+         <th>Access method</th>
+<th colspan="2">            <p>Size in characters </p></th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="14%">            <p>TCP/IP </p>         </td>
+         <td colspan="2" data-valign="top">            <p>1 to 15<br />
+ </p>         </td>
+         <td data-valign="top">            <p>Number of the local monitoring port on which the Transfer CFT
 can be called, expressed in the form of the:</p>
-<ul>
-<li>real number used
-by TCP/IP:</li>
-<li>authorized
-numbers: between 1025 and 65535</li>
-<li>recommended
-numbers: 1761, 1762, 1763, 1764, 1765, 1766, 1767, 1768 <strong>(1)</strong></li>
-<li>logical name
+            <ul>
+               <li>real number used
+by TCP/IP:               </li>
+               <li>authorized
+numbers: between 1025 and 65535               </li>
+               <li>recommended
+numbers: 1761, 1762, 1763, 1764, 1765, 1766, 1767, 1768 <strong>(1)</strong>               </li>
+               <li>logical name
 associated with the number used by TCP/IP and configured in the SERVICES
 file (if this file exists)<br />
 <br />
 recommended logical names: cft-0, cft-1, cft-2, cft-3, cft-4, cft-5,
-cft-6, cft-7 <strong>(1)</strong></li>
-</ul></td>
-</tr>
-</tbody>
+cft-6, cft-7 <strong>(1)</strong>               </li>
+            </ul>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **(1):** these logical port numbers and
@@ -89,40 +89,40 @@ system, as applicable, as specified in the table below.
 CFTPART SAP - Parameter values
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Access method </p></th>
-<th><p>Size in characters</p>
-<p>(alphanumeric)</p></th>
-<th><p>Definition and comments </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="14%"><p>TCP/IP </p></td>
-<td data-valign="top" width="17%"><p>1 to 15<br />
- </p></td>
-<td data-valign="top" width="69%"><p>Number of the port on which the monitor partner is listening.<br />
+   <thead>
+      <tr class="header">
+         <th>            <p>Access method </p></th>
+         <th>            <p>Size in characters</p>
+            <p>(alphanumeric)</p></th>
+         <th>            <p>Definition and comments </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="14%">            <p>TCP/IP </p>         </td>
+         <td data-valign="top" width="17%">            <p>1 to 15<br />
+ </p>         </td>
+         <td data-valign="top" width="69%">            <p>Number of the port on which the monitor partner is listening.<br />
 The value of this number can be:</p>
-<ul>
-<li>a number
+            <ul>
+               <li>a number
 in clear corresponding to the real number used by the remote partner at
 the protocol level of the TCP/IP protocol<br />
 Authorized numbers: between 1025 and 65535 (not including limit values)<br />
 Recommended numbers: between: 1761, 1762, 1763, 1764, 1765, 1766, 1767,
-1768 (1)</li>
-<li>the logical
+1768 (1)               </li>
+               <li>the logical
 name associated with the number used by TCP/IP and configured in the SERVICES
 file, if this file exists<br />
 Recommend logical names: cft-0, cft-1, cft-2, cft-3, cft-4,<br />
-cft-5, cft-6, cft-7 (1)</li>
-</ul>
-<p>If the local and remote partner parameter setting commands (CFTPART
+cft-5, cft-6, cft-7 (1)               </li>
+            </ul>
+            <p>If the local and remote partner parameter setting commands (CFTPART
 and CFTPROT respectively) use the logical name of the port defined in
 the "SERVICES" database, the consistency of the two bases must
-be ensured </p></td>
-</tr>
-</tbody>
+be ensured </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 **(1)** These logical port numbers and
@@ -131,4 +131,4 @@ Numbers Authority).
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

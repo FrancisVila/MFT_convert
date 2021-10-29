@@ -10,6 +10,6 @@
 
 Compresses the input file data.
 
-The value 0 means that there is no compression. See also [ict (type of input file data compression)](../ict).
+The value 0 means that there is no compression. See also [ict (type of input file data compression)](ict).
 
-[Return to Command index](../../)
+[Return to Command index](../)

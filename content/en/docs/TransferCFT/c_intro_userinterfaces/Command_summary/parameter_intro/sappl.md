@@ -48,6 +48,6 @@ field.
 
 In PeSIT E between two Transfer CFTs, the value of this SUSER parameter is transported in the PI 99, the value defined in the PI 03 being truncated to 8 characters.
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

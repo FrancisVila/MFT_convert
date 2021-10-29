@@ -1,5 +1,5 @@
 {
-    "title": "Manage multi-node",
+    "title": "Manage multi-node  ",
     "linkTitle": "Manage multi-node",
     "weight": "250"
 }This section describes how to set up and manage your multi-node environment.
@@ -35,13 +35,13 @@ Execute the following command to add a new node: **`add_node (JCL MNANODE)`**
 The node 2 is created. The cluster is composed of three nodes: node 0, node 1 and node 2. All associated files associated with node 2 are initialized and its node state is set to DISABLED.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When adding a node, you must add the corresponding new license for that node in a license-key file <strong><code>..UPARM(PRODKEY)</code> by default.</strong></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When adding a node, you must add the corresponding new license for that node in a license-key file <strong><code>..UPARM(PRODKEY)</code> by default.</strong>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Enable a node
@@ -55,13 +55,13 @@ The node 2 can be started using the command:**` start -n 2 (JCL MNSTART)`**
 ## Remove a node from the Transfer CFT cluster
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Only the last node can be removed.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Only the last node can be removed.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Disable the last node

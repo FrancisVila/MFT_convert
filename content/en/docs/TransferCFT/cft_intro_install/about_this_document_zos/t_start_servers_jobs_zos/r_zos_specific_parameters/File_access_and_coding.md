@@ -1,17 +1,17 @@
 {
-    "title": "Code filenames",
+    "title": "Code Transfer CFT filenames",
     "linkTitle": "Code filenames",
     "weight": "280"
 }Working with files and coding
 
 This section describes file properties and how to code Transfer CFT filenames.
 
--   [File access overview](#file%20access%20overview)
--   [About coding filenames](#coding%20file%20names%20zos)
--   [Filename forms](#filename)
--   [Code filenames with DDNAME ](#coding%20filenames%20with%20ddname)
--   [Coding PDS filenames](#coding%20pds%20filenames)
--   [Code GDG filenames](#coding%20gdg%20filenames)
+-   [File access overview](#File%20access%20overview)
+-   [About coding filenames](#Coding%20file%20names%20zOS)
+-   [Filename forms](#Filename)
+-   [Code filenames with DDNAME ](#Coding%20filenames%20with%20DDNAME)
+-   [Coding PDS filenames](#Coding%20PDS%20filenames)
+-   [Code GDG filenames](#Coding%20GDG%20filenames)
 
 ## <span id="File access overview"></span>File access overview
 
@@ -43,11 +43,11 @@ Transfer CFT z/OS cannot transfer the following files:
 Transfer CFT z/OS uses the following coding to handle files:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>FNAME=VOLUME%UNIT%NAME1.NAME2.NAMEX</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FNAME=VOLUME%UNIT%NAME1.NAME2.NAMEX</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -90,25 +90,25 @@ Where:
 **Example**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTVOL%%FILENAME</p>
-<p>%3390%FILENAME</p>
-<p>%%FILENAME</p>
-<p>FILENAME</p>
-<p>/path/file.extension</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTVOL%%FILENAME</p>
+            <p>%3390%FILENAME</p>
+            <p>%%FILENAME</p>
+            <p>FILENAME</p>
+            <p>/path/file.extension</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Filename"></span>Filename forms
@@ -124,41 +124,41 @@ Example 
 A DSNAME or a string to request that a file be sent:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND FNAME=‘CFT.SEND.FILE’</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND FNAME=‘CFT.SEND.FILE’         </td>
+      </tr>
+   </tbody>
 </table>
 
 Search the catalog for the file:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND FNAME=‘CFTRES%3480%CFT.SEND.FILE’</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND FNAME=‘CFTRES%3480%CFT.SEND.FILE’         </td>
+      </tr>
+   </tbody>
 </table>
 
 Look for the file on the volume CFTRES, unit 3480:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND FNAME=‘%3480%CFT.SEND.FILE’</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND FNAME=‘%3480%CFT.SEND.FILE’         </td>
+      </tr>
+   </tbody>
 </table>
 
 Look for the file in the catalog (unit type imposed):
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND FNAME=‘CFTRES%%CFT.SEND.FILE’</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND FNAME=‘CFTRES%%CFT.SEND.FILE’         </td>
+      </tr>
+   </tbody>
 </table>
 
 Look for the file on the disk CFTRES:
@@ -170,11 +170,11 @@ Example
 PDS member name to request sending of a member with the file searched for in the catalog:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>SEND FNAME=‘CFT.SEND.FILE(MEMBER)’</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>SEND FNAME=‘CFT.SEND.FILE(MEMBER)’         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
@@ -182,31 +182,31 @@ Example
 A logical name to select a PARTNERS file:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTPARM PARTFNAM=$CFTPART</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTPARM PARTFNAM=$CFTPART</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 This file is indicated in the JCL that starts Transfer CFT, by:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>//CFTPART DD DISP=SHR,DSN=... ,</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>//CFTPART DD DISP=SHR,DSN=... ,</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Or under TSO:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>ALLOC FI(CFTPART) SHR DA(’...’) .</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>ALLOC FI(CFTPART) SHR DA(’...’) .</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Transfer CFT and the associated utilities set aside the use of “DD names” beginning with ‘FIL’ for dynamic allocations.
@@ -224,28 +224,28 @@ The following values allow you to:
 -   &lt;DATACLA: specify a value for DATA CLASS
 -   \*MGTCLAS: specify a value for MANAGEMENT CLASS
 
-An alternate way to specify full-length DF/SMS parameters is described in [DF/SMS large file support](../t_dynamically_create_files).
+An alternate way to specify full-length DF/SMS parameters is described in [DF/SMS large file support](t_dynamically_create_files.htm).
 
 ## <span id="Coding filenames with DDNAME"></span>Code filenames with DDNAME 
 
 Transfer CFT z/OS uses the following coding to refer to a DDNAME declared in the JCL:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>FNAME=$DDNAME</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FNAME=$DDNAME</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>FNAME=$CFTCAT</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FNAME=$CFTCAT</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Coding PDS filenames"></span>Coding PDS filenames
@@ -263,13 +263,13 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 -   For the entire PDS, by setting FNAME=#DSNAME or #DSNAME(\*)
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The second syntax is recommended as it is the syntax to use for heterogeneous transfers.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The second syntax is recommended as it is the syntax to use for heterogeneous transfers.         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   For a selected subset of members, using the ’\*’ character to replace a character string or ’?’ to replace one character and by setting FNAME=#DSNAME(ME?BER\*)
@@ -277,11 +277,11 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 A PDS file is coded as:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>FNAME=NAME1.NAMEX(MEMBER)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FNAME=NAME1.NAMEX(MEMBER)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Delivered template:
@@ -293,23 +293,23 @@ Delivered template:
 A GDG filename is coded as:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>FNAME=NAME1.NAMEX(0)</p>
-<p>FNAME=NAME1.NAMEX(-n)</p>
-<p>FNAME=NAME1.NAMEX(+n)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>FNAME=NAME1.NAMEX(0)</p>
+            <p>FNAME=NAME1.NAMEX(-n)</p>
+            <p>FNAME=NAME1.NAMEX(+n)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Delivered templates:
@@ -319,6 +319,6 @@ Delivered templates:
 
 Related topics
 
--   [Delete rename and share files](../t_delete_and_rename_files_zos)
--   [Dynamically create files](../t_dynamically_create_files)
--   [HFS hierarchical files](../c_hfs_hierarchical_files_zos)
+-   [Delete rename and share files](t_delete_and_rename_files_zos.htm)
+-   [Dynamically create files](t_dynamically_create_files.htm)
+-   [HFS hierarchical files](c_HFS_hierarchical_files_zos.htm)

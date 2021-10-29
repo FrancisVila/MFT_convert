@@ -16,4 +16,4 @@ When a transfer is terminated, a preprocessing procedure is submitted. The symbo
 -   CHILDREN: only the children execute the script
 -   PART: any transfer execute the script
 
-[Return to Command index](../../)
+[Return to Command index](../)

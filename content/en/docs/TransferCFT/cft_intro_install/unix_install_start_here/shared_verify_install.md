@@ -4,7 +4,7 @@
     "weight": "120"
 }## Verify your installation
 
-You can check the installation log in the &lt;installation directory>/install.log file. See the installation [troubleshooting section](../troubleshoot_registration) if you encounter problems with starting Transfer CFT or registering with Central Governance.
+You can check the installation log in the &lt;installation directory>/install.log file. See the installation [troubleshooting section](../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_registration) if you encounter problems with starting Transfer CFT or registering with Central Governance.
 
 ### Installed directories
 
@@ -19,7 +19,7 @@ During the installation, the Transfer CFT installer creates two files in the ins
 
 ## Standalone installations
 
-If you are not using Transfer CFT with Central Governance, you must provide a certificate in order to be able to use the Transfer CFT UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui) page for details.
+If you are not using Transfer CFT with Central Governance, you must provide a certificate in order to be able to use the Transfer CFT UI. See [Using the web-based browser UI](../../c_intro_userinterfaces/web_copilot_ui) page for details.
 
 ## Register with Central Governance
 
@@ -30,21 +30,21 @@ Begin your registration with Central Governance by starting the Copilot server,
 To set the environment variables from the runtime directory prompt enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>../profile</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>../profile         </td>
+      </tr>
+   </tbody>
 </table>
 
 To start the Copilot server, run the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>copstart</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>copstart         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Verify"></span>Verify the Transfer CFT registration with Central Governance
@@ -78,13 +78,13 @@ The log page is displayed where you can:
 -   Filter the entries, saving filters for future use.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For details on starting, stopping and viewing the Transfer CFT refer to the <strong>Central Governance</strong> <strong>User Guide.</strong></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For details on starting, stopping and viewing the Transfer CFT refer to the <strong>Central Governance</strong> <strong>User Guide.</strong>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Register with Central Governance

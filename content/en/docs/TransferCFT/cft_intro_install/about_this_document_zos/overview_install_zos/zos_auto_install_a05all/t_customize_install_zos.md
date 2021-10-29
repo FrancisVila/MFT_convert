@@ -25,22 +25,22 @@ Before INCLUDE MEMBER=CFTENV add directives
 Example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
 <blockquote>
-<p>// EXPORT SYSMLIST=*</p>
-<p>// INCLUDE MEMBER=CFTENV</p>
-<p>//CFTSND EXEC PCFTUTIL,PARM='',QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
-<p>//CFTPARM DD DUMMY to optimize</p>
-<p>//CFTIN DD *,SYMBOLS=(CNVTSYS,SUBSLOG)</p>
-<p>SEND PART=PARIS,IDF=BIN,</p>
-<p>FNAME=&amp;CFTENV..FTEST,</p>
-<p>IDA=’&amp;SYSNAME-&amp;ZOSLVL-&amp;SYSCLONE’</p>
-<p>/*</p>
-</blockquote></td>
-</tr>
-</tbody>
+            <p>// EXPORT SYSMLIST=*</p>
+            <p>// INCLUDE MEMBER=CFTENV</p>
+            <p>//CFTSND EXEC PCFTUTIL,PARM='',QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
+            <p>//CFTPARM DD DUMMY to optimize</p>
+            <p>//CFTIN DD *,SYMBOLS=(CNVTSYS,SUBSLOG)</p>
+            <p>SEND PART=PARIS,IDF=BIN,</p>
+            <p>FNAME=&amp;CFTENV..FTEST,</p>
+            <p>IDA=’&amp;SYSNAME-&amp;ZOSLVL-&amp;SYSCLONE’</p>
+            <p>/*</p>
+</blockquote>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## JCL CFTINC (include member)
@@ -50,20 +50,20 @@ You can use the CFTINC member in an INCLUDE statement to reference a list of Tra
 Example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB</p>
-<p>//  INCLUDE MEMBER=CFTENV</p>
-<p>//STREX EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'</p>
-<p>//STEPLIB DD DISP=SHR,DSN=&amp;CFTLOAD</p>
-<p>//SYSPROC DD DISP=SHR,</p>
-<p>//  DSN=MY.SYSPROC</p>
-<p>//SYSTSPRT DD SYSOUT=&amp;OUT</p>
-<p>//SYSTSIN DD DUMMY</p>
-<p>//    SET QUAL=&amp;CFTENV</p>
-<p>//    <span>INCLUDE MEMBER=CFTINC</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB</p>
+            <p>//  INCLUDE MEMBER=CFTENV</p>
+            <p>//STREX EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'</p>
+            <p>//STEPLIB DD DISP=SHR,DSN=&amp;CFTLOAD</p>
+            <p>//SYSPROC DD DISP=SHR,</p>
+            <p>//  DSN=MY.SYSPROC</p>
+            <p>//SYSTSPRT DD SYSOUT=&amp;OUT</p>
+            <p>//SYSTSIN DD DUMMY</p>
+            <p>//    SET QUAL=&amp;CFTENV</p>
+            <p>//    <span>INCLUDE MEMBER=CFTINC</span></p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## PCFTUTIL / PCFTUTL procedures
@@ -80,31 +80,31 @@ These procedures are customized during installation phase.
 To run a CFTUTIL executable (default), for example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
-<p>//   INCLUDE MEMBER=CFTENV</p>
-<p>//ABOUT EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',</p>
-<p>//   QUAL=&amp;CFTENV</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+            <p>//   INCLUDE MEMBER=CFTENV</p>
+            <p>//ABOUT EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',</p>
+            <p>//   QUAL=&amp;CFTENV</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 To run another CFTUTIL executable, for example CFTPKI:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
-<p>//  INCLUDE MEMBER=CFTENV</p>
-<p>//LISPKI EXEC PCFTUTL,PG=CFTPKI,PARM='',</p>
-<p>//  QUAL=&amp;CFTENV</p>
-<p>//MYPKI DD DISP=SHR,DSN=&amp;CFTENV..PKIFILE</p>
-<p>//CFTIN DD *</p>
-<p>LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL</p>
-<p>/*</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)</p>
+            <p>//  INCLUDE MEMBER=CFTENV</p>
+            <p>//LISPKI EXEC PCFTUTL,PG=CFTPKI,PARM='',</p>
+            <p>//  QUAL=&amp;CFTENV</p>
+            <p>//MYPKI DD DISP=SHR,DSN=&amp;CFTENV..PKIFILE</p>
+            <p>//CFTIN DD *</p>
+            <p>LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL</p>
+            <p>/*</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Recommendations to ease application migration
@@ -144,7 +144,7 @@ The target.EXEC library contains an example of Transfer CFT procedures:
 -   CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown
 -   EXECIDF: End of file reception procedure sample with conditional steps
 -   EXECIFD2: The value of the IDF is checked among a list of values ​​by a REXX that sets a return code
--   EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see [Syntax for )SEL and )ENDSEL](#syntax)
+-   EXECIDF3: The JCL is conditional and uses the )SEL and )ENDSEL syntax - see [Syntax for )SEL and )ENDSEL](#Syntax)
 
 These procedures are customized during the A00CUSTO phase.
 
@@ -207,7 +207,7 @@ List of updated variables:
 
 You can run the JCL multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.
 
-## <span id="D40INIT"></span>Format Transfer CFT work files <span id="kanchor44"></span>D40INIT
+## <span id="D40INIT"></span>Format Transfer CFT work files <span id="kanchor40"></span>D40INIT
 
 The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB, adapt the following points to the requirements of the operating service:
 
@@ -250,7 +250,7 @@ The following data is required to use the basic Transfer CFT installation custom
 
 -   CFTCOM: VSAM ESDS file used by Transfer CFT as a buffer for the Transfer CFT commands submitted by CFTUTIL, a BATCH program, a TSO user, the Transfer CFT Copilot, or the Transfer CFT UI
 
-## <span id="JOB E50PARM CFTPARM"></span>CFTPARM configuration update <span id="kanchor45"></span>E50PARM
+## <span id="JOB E50PARM CFTPARM"></span>CFTPARM configuration update <span id="kanchor41"></span>E50PARM
 
 The JCL E50PARM, located in the target.INSTALL library, updates the Transfer CFT configuration PARAM and PART files (PARM step).
 
@@ -263,23 +263,23 @@ To activate the SFTP parameters:
         -   //\* DSN=<u>&QUAL</u>..SAMPLE(CFTSFTP)
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>E50PARM</p></td>
-</tr>
-<tr class="even">
-<td><p>//PARM EXEC PCFTUTIL,</p>
-<p>// PARM='',</p>
-<p>// QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
-<p>//CFTIN DD DISP=SHR,</p>
-<p>// DSN=&amp;QUAL..SAMPLE(CFTPARM)</p>
-<p>//*     DD DISP=SHR,</p>
-<p>//* DSN=&amp;QUAL..SAMPLE(CFTSFTP)</p></td>
-</tr>
-<tr class="odd">
-<td><p>The underlined parameters are substituted during the submit phase.</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>E50PARM</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>//PARM EXEC PCFTUTIL,</p>
+            <p>// PARM='',</p>
+            <p>// QUAL=&amp;CFTENV,OUT=&amp;OUT</p>
+            <p>//CFTIN DD DISP=SHR,</p>
+            <p>// DSN=&amp;QUAL..SAMPLE(CFTPARM)</p>
+            <p>//*     DD DISP=SHR,</p>
+            <p>//* DSN=&amp;QUAL..SAMPLE(CFTSFTP)</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>The underlined parameters are substituted during the submit phase.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.

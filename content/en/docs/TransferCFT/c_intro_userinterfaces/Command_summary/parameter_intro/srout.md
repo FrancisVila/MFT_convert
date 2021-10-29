@@ -22,4 +22,4 @@ this protocol on the Transfer CFT:
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

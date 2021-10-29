@@ -1,5 +1,5 @@
 {
-    "title": "Tracking a copied file",
+    "title": "Tracking a copied file ",
     "linkTitle": "Tracking a copied file",
     "weight": "210"
 }This topic describes how you can copy a file to a different location without actually sending the file, yet still have the standard Transfer CFT tracking. This option allows you to copy a file, with visibility in either Transfer CFT or Central Governance, without using network resources.
@@ -11,41 +11,41 @@ This functionality is comprised of a delivered configuration and sample script f
 **Unix**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL @conf/cft-copyfile.conf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL @conf/cft-copyfile.conf         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Windows**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL #conf\cft-copyfile.conf</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL #conf\cft-copyfile.conf         </td>
+      </tr>
+   </tbody>
 </table>
 
 **z/OS**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>JCL ..INSTALL(CFTCOPYF)</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>JCL ..INSTALL(CFTCOPYF)         </td>
+      </tr>
+   </tbody>
 </table>
 
 **IBM i**
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL PARAM('#CFTPROD/CPYFILE(CPYFCONF)')</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL PARAM('#CFTPROD/CPYFILE(CPYFCONF)')         </td>
+      </tr>
+   </tbody>
 </table>
 
 The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters, in the CFTTCP and CFTPART definitions respectively, to use two different Transfer CFT instances.
@@ -55,11 +55,11 @@ The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, a
 Enter the following command to set up a send request to the COPY\_DST partner:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL send part=COPY_DST, nfname='destination_file_name', parm='source_file_name'</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL send part=COPY_DST, nfname='destination_file_name', parm='source_file_name'         </td>
+      </tr>
+   </tbody>
 </table>
 
 Where:
@@ -70,23 +70,23 @@ Where:
 This creates an empty file that is transferred from COPY\_SRC to COPY\_DST. The empty file is then used to create the catalog record.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">On a z/OS platform, use the following syntax and prefix the <code>nfname </code>with an asterisk ‘*’.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">On a z/OS platform, use the following syntax and prefix the <code>nfname </code>with an asterisk ‘*’.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>send part = 'COPY_DST',</p>
-<p>   parm = 'my.env.FTEST',</p>
-<p>   nfname = '*my.env.FTEST.&amp;IDT'</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>send part = 'COPY_DST',</p>
+            <p>   parm = 'my.env.FTEST',</p>
+            <p>   nfname = '*my.env.FTEST.&amp;IDT'</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## How it works
@@ -114,13 +114,13 @@ The same concepts apply for all OS, but there is a different syntax depending on
 When you view the transfer record for a copied file, either in the catalog or in Central Governance, only certain transfer details display. For the actual copied file, only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using this functionality, the resulting catalog entry does not display the correct file size.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using this functionality, the resulting catalog entry does not display the correct file size.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### OS specifics

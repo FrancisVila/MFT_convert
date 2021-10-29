@@ -11,6 +11,6 @@
 
 File creation time (HHMMSSCC).
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

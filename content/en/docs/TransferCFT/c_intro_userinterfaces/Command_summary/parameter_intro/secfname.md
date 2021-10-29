@@ -12,4 +12,4 @@ Filename. Name of the Transfer CFT internal security file.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

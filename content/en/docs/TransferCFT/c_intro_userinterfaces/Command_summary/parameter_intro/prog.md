@@ -28,4 +28,4 @@ name to assign a sequential number (for example: CFTEXA01).
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

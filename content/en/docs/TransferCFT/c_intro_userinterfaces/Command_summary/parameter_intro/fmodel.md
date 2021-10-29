@@ -13,6 +13,6 @@
 
 Complete name or logical name of the XML model file. The parameter default value is fixed.
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

@@ -1,10 +1,8 @@
 {
-    "title": "Management utilities",
+    "title": "Management  utilities",
     "linkTitle": "Management utilities",
     "weight": "280"
-}# <span id="Management_utilities"></span>Management utilities
-
-This topic describes the following management utilities:
+}This topic describes the following management utilities:
 
 -   [cftinit](#cftinit)
 -   [cft start](#cftstart)
@@ -40,13 +38,13 @@ the CFTPARM, CFTLOG cards, and so on).
 cftinit partners.cft the\_rest.cft
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   If no file name
@@ -73,9 +71,9 @@ to start up and displays an information message with the process identifier
 (PID) of the CFTMAIN process.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>% cft start<br />
+   <tbody>
+      <tr class="odd">
+         <td>% cft start<br />
 Starting CFT with IDPARM "IDPARM0"<br />
 Starting CFTMAIN ... started<br />
 Starting CFTTCOM .... started<br />
@@ -83,9 +81,9 @@ Starting CFTTPRO ... started<br />
 Starting CFTLOG ... started<br />
 CFT started correctly.<br />
 CFTMAIN process ID is 23564.<br />
-%</td>
-</tr>
-</tbody>
+%         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="cftstop"></span>cft stop
@@ -104,9 +102,9 @@ CFT by sending the SHUT FAST=YEScommand. It then waits until the
 various Transfer CFT processes are stopped.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>% cft stop<br />
+   <tbody>
+      <tr class="odd">
+         <td>% cft stop<br />
 Waiting for CFTLOG .... stopped<br />
 Waiting for CFTTCPS ... stopped<br />
 Waiting for CFTTPRO ... stopped<br />
@@ -114,9 +112,9 @@ Waiting for CFTTCOM ... stopped<br />
 Waiting for CFTTFIL ... stopped<br />
 Waiting for CFTMAIN ....stopped<br />
 CFT stopped correctly.<br />
-%</td>
-</tr>
-</tbody>
+%         </td>
+      </tr>
+   </tbody>
 </table>
 
 If *cft stop* detects abnormal behavior during the shutdown phase,
@@ -141,16 +139,16 @@ is displayed before continuing with the housekeeping procedure, to inform
 you about the possible consequences of the next command.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>% cft stop<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>% cft stop<br />
 Invalid state of CFT.<br />
 Use<span>Cft force-stop</span> to force shutdown of <span>Transfer CFT</span><br />
 % cft stop -kill</p>
-<p>Stopping Transfer CFT...</p>
-<p>Transfer CFT stopped correctly.</p></td>
-</tr>
-</tbody>
+            <p>Stopping Transfer CFT...</p>
+            <p>Transfer CFT stopped correctly.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="cftupdate"></span>cftupdate
@@ -162,13 +160,13 @@ The cftupdate utility is used to update the configuration.
 cftupdate &lt;filename> \[&lt;filename> ...\]
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"> </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">          </td>
+      </tr>
+   </tbody>
 </table>
 
 -   You can only update

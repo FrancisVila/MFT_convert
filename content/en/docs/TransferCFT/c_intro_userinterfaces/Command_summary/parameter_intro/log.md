@@ -16,4 +16,4 @@ messages to the monitor's standard output.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

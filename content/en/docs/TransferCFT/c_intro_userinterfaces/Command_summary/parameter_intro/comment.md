@@ -50,4 +50,4 @@ enter up to 160 alphanumeric characters. The content of this field:
 **\[COMMENT =
 *string80 characters*\]**
 
-[Return to Command index](../../)
+[Return to Command index](../)

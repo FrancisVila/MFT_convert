@@ -51,4 +51,4 @@ CFT, during the connection phase. At the remote site, this value
 corresponds to the NSPART parameter of the CFTPART object used in the
 transfer.
 
-[Return to Command index](../../)
+[Return to Command index](../)

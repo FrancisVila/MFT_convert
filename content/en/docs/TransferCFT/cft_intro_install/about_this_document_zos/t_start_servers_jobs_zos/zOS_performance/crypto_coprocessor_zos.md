@@ -38,95 +38,95 @@ The following SSL crypto devices and related crypto algorithms are available for
 This table lists, for each possible SSL-protocol cryptographic function and Pki.type used, whether a crypto device used.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>TLS protocol exchange</th>
-<th>Cryptographic function</th>
-<th>Pki.type</th>
-<th>z9 - z10</th>
-<th>z196</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Handshake phase</td>
-<td>RSA</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>CEX2</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>CEX3</p></td>
-</tr>
-<tr class="even">
-<td>Record Level SYM encryption</td>
-<td>DES, 3DES</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-</tr>
-<tr class="odd">
-<td>Record Level SYM encryption</td>
-<td>AES</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-</tr>
-<tr class="even">
-<td>Record Level SYM encryption</td>
-<td>RC4</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>Software</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>Software</p></td>
-</tr>
-<tr class="odd">
-<td>Record Level hashing</td>
-<td>SHA, SHA-256</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-<td><p>CPACF</p>
-<p>CPACF</p>
-<p>CPACF</p></td>
-</tr>
-<tr class="even">
-<td>Record Level hashing</td>
-<td>MD5</td>
-<td><p>CFT</p>
-<p>PASSPORT</p>
-<p>SYSTEM</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>Software</p></td>
-<td><p>Software</p>
-<p>Software</p>
-<p>Software</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>TLS protocol exchange</th>
+         <th>Cryptographic function</th>
+         <th>Pki.type</th>
+         <th>z9 - z10</th>
+         <th>z196</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>Handshake phase         </td>
+         <td>RSA         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>CEX2</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>CEX3</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>Record Level SYM encryption         </td>
+         <td>DES, 3DES         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>Record Level SYM encryption         </td>
+         <td>AES         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>Record Level SYM encryption         </td>
+         <td>RC4         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>Software</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>Software</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>Record Level hashing         </td>
+         <td>SHA, SHA-256         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+         <td>            <p>CPACF</p>
+            <p>CPACF</p>
+            <p>CPACF</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>Record Level hashing         </td>
+         <td>MD5         </td>
+         <td>            <p>CFT</p>
+            <p>PASSPORT</p>
+            <p>SYSTEM</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>Software</p>         </td>
+         <td>            <p>Software</p>
+            <p>Software</p>
+            <p>Software</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Crypto configuration information
@@ -134,22 +134,22 @@ This table lists, for each possible SSL-protocol cryptographic function and Pki.
 When Transfer CFT is started, depending on the system configuration, the Transfer CFT log contains the following information:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTI18I+Crypto configuration</p>
-<p>CFTI18I+ CPACF Cryptographic assist is set.</p>
-<p>CFTI18I+ The following CP Assist for Cryptographic Function (CPACF)</p>
-<p>CFTI18I+ operations are supported by OpenSSL s390 engine:</p>
-<p>CFTI18I+ SHA-1: No</p>
-<p>CFTI18I+ SHA-256: Yes</p>
-<p>CFTI18I+ SHA-384: Yes</p>
-<p>CFTI18I+ SHA-512: Yes</p>
-<p>CFTI18I+ DES CBC: Yes</p>
-<p>CFTI18I+ TDES CBC: Yes</p>
-<p>CFTI18I+ AES-128 CBC: Yes</p>
-<p>CFTI18I+ AES-256 CBC: Yes</p>
-<p>CFTI18I+ AES-128 GCM: No</p>
-<p>CFTI18I+ AES-256 GCM: No</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTI18I+Crypto configuration</p>
+            <p>CFTI18I+ CPACF Cryptographic assist is set.</p>
+            <p>CFTI18I+ The following CP Assist for Cryptographic Function (CPACF)</p>
+            <p>CFTI18I+ operations are supported by OpenSSL s390 engine:</p>
+            <p>CFTI18I+ SHA-1: No</p>
+            <p>CFTI18I+ SHA-256: Yes</p>
+            <p>CFTI18I+ SHA-384: Yes</p>
+            <p>CFTI18I+ SHA-512: Yes</p>
+            <p>CFTI18I+ DES CBC: Yes</p>
+            <p>CFTI18I+ TDES CBC: Yes</p>
+            <p>CFTI18I+ AES-128 CBC: Yes</p>
+            <p>CFTI18I+ AES-256 CBC: Yes</p>
+            <p>CFTI18I+ AES-128 GCM: No</p>
+            <p>CFTI18I+ AES-256 GCM: No</p>         </td>
+      </tr>
+   </tbody>
 </table>

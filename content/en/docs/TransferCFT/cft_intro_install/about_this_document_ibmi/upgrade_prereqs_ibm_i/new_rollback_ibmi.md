@@ -2,26 +2,26 @@
     "title": "Roll back an upgrade",
     "linkTitle": "Roll back an upgrade",
     "weight": "240"
-}In the event that after upgrading a version you need to revert back to the previous version, you can perform the steps in this section using either the [automatic](#automati) procedure or the [manual](#manually) roll back and restore catalog procedure.
+}In the event that after upgrading a version you need to revert back to the previous version, you can perform the steps in this section using either the [automatic](#Automati) procedure or the [manual](#Manually) roll back and restore catalog procedure.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you executed transfers in <span>Transfer CFT</span> the new version that use parameters or metadata not available in the previous version, when you rollback the new metadata is lost.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If you executed transfers in <span>Transfer CFT</span> the new version that use parameters or metadata not available in the previous version, when you rollback the new metadata is lost.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">CFTPGM is the standard name for the program library, and CFTPROD is the standard name for the library where the configuration files are usually located.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">CFTPGM is the standard name for the program library, and CFTPROD is the standard name for the library where the configuration files are usually located.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Before you start
@@ -32,22 +32,22 @@ Before beginning the rollback procedure:
 -   Stop the Transfer CFT server and the Transfer CFT Copilot (UI) server. Enter:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTSTOP</p>
-<p>COPSTOP</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTSTOP</p>
+            <p>COPSTOP</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Optionally, you can use the display command to check the version or product details prior to upgrading.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL about</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL about         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Automati"></span>Automatically roll back
@@ -61,45 +61,45 @@ Start the rollback process by uploading the Transfer CFT installation package in
 3.  Create a SAVF file: `CRTSAVF FILE(CFTTMP/CFT37)`
 4.  Upload the installation package to the SAVF in binary mode using FTP:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>binary</p>
-    <p>cd CFTTMP</p>
-    <p>put Transfer_CFT_os400.bin CFT37</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>binary</p>
+                <p>cd CFTTMP</p>
+                <p>put Transfer_CFT_os400.bin CFT37</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 <!-- -->
 
 1.  Restore the SAVF file in the temporary library:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>RSTLIB SAVLIB(CFTPG) DEV(*SAVF) SAVF(CFTTMP/CFT37) OPTION(*NEW) RSTLIB(CFTTMP)</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>RSTLIB SAVLIB(CFTPG) DEV(*SAVF) SAVF(CFTTMP/CFT37) OPTION(*NEW) RSTLIB(CFTTMP)         </td>
+          </tr>
+       </tbody>
     </table>
 
 <!-- -->
 
 1.  After restoring the SAVF, you must add the library name in the first position of the library list for the user profile. Execute the command:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td><p>ADDLIBLE LIB(CFTTMP) POSITION(*FIRST)</p></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>            <p>ADDLIBLE LIB(CFTTMP) POSITION(*FIRST)</p>         </td>
+          </tr>
+       </tbody>
     </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The user performing the upgrade requires the same rights as for a regular installation or update (*JOBCTL, *SPLCTL, and *ALLOBJ).</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The user performing the upgrade requires the same rights as for a regular installation or update (*JOBCTL, *SPLCTL, and *ALLOBJ).         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Call the UPGRADE command for your Transfer CFT. Applying an UPGRADE of a version older than the version of your Transfer CFT rolls it back to this older version, but keeps your configuration.
@@ -107,17 +107,17 @@ Start the rollback process by uploading the Transfer CFT installation package in
 In rollback mode, the UPGRADE command prompt resembles the following screen:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>UPGRADE CFT (UPGRADE)</p>
-<p>Extract lib for the CFT  . . . . CFTEXTLIB      __________</p>
-<p>CFT Program Library  . . . . . . CFTPGM         __________</p>
-<p>CFT Production Library . . . . . CFTPROD        __________</p>
-<p>Are you rolling back? . . . . . .ROLLBACK       '1'   </p>
-<p>Lib of the SAVF  . . . . . . . . LIBSAVF        '*LIBL'  </p>
-<p>SAVF of the version to apply . . SAVF           CFT37X      </p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>UPGRADE CFT (UPGRADE)</p>
+            <p>Extract lib for the CFT  . . . . CFTEXTLIB      __________</p>
+            <p>CFT Program Library  . . . . . . CFTPGM         __________</p>
+            <p>CFT Production Library . . . . . CFTPROD        __________</p>
+            <p>Are you rolling back? . . . . . .ROLLBACK       '1'   </p>
+            <p>Lib of the SAVF  . . . . . . . . LIBSAVF        '*LIBL'  </p>
+            <p>SAVF of the version to apply . . SAVF           CFT37X      </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 The following fields are mandatory; you should complete as per your system details:
@@ -130,50 +130,50 @@ The following fields are mandatory; you should complete as per your system detai
 -   SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">When performing a rollback, the default value of the SAVF field MUST match the version you want to roll back to. Please determine the name of the SAVF corresponding to the version you want to roll back to, as shown below:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">When performing a rollback, the default value of the SAVF field MUST match the version you want to roll back to. Please determine the name of the SAVF corresponding to the version you want to roll back to, as shown below:         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Transfer CFT version</p></th>
-<th><p>SAVF name</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>3.1.3</p></td>
-<td><p>CFT31X</p></td>
-</tr>
-<tr class="even">
-<td><p>3.2.4</p></td>
-<td><p>CFT32X</p></td>
-</tr>
-<tr class="odd">
-<td><p>3.3.2</p></td>
-<td><p>CFT33X</p></td>
-</tr>
-<tr class="even">
-<td><p>3.6</p></td>
-<td><p>CFT36X</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Transfer CFT version</p></th>
+         <th>            <p>SAVF name</p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>3.1.3</p>         </td>
+         <td>            <p>CFT31X</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>3.2.4</p>         </td>
+         <td>            <p>CFT32X</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>3.3.2</p>         </td>
+         <td>            <p>CFT33X</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>3.6</p>         </td>
+         <td>            <p>CFT36X</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">The UPGRADE command is available as of Transfer CFT 3.7.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">The UPGRADE command is available as of Transfer CFT 3.7.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Roll back to a version that predates the UPGRADE command
@@ -182,27 +182,27 @@ The UPGRADE command was not available in Transfer CFT 3.6 and lower; however you
 
 To roll back to version 3.6 or lower:
 
-1.  Follow the [Upload instructions](#upload) to upload the rollback version SAVF to a temporary library, for example CFTTMP.
+1.  Follow the [Upload instructions](#Upload) to upload the rollback version SAVF to a temporary library, for example CFTTMP.
 2.  Restore the SAVF in CFTTMP.
-3.  Repeat the [Upload instructions](#upload) to upload the most recent Transfer CFT version SAVF to a second temporary library, for example CFTTMP2.
+3.  Repeat the [Upload instructions](#Upload) to upload the most recent Transfer CFT version SAVF to a second temporary library, for example CFTTMP2.
 4.  Add the CFTTMP2 temporary library in the first position of your library list.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>ADDLIBLE LIB(CFTTMP2) POSITION(*FIRST)</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>ADDLIBLE LIB(CFTTMP2) POSITION(*FIRST)</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Call the UPGRADE command, and then press F4 to fill the fields. Remember to enable the rollback mode by changing the ROLLBACK value. The command to execute, again for example for version 3.6, should resemble the following:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>UPGRADE CFTEXTLIB(CFTEXTLIB) CFTPGM(CFTPGM) CFTPROD(CFTPROD) ROLLBACK('1') LIBSAVF(CFTTMP) SAVF(CFT36X)  </td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>UPGRADE CFTEXTLIB(CFTEXTLIB) CFTPGM(CFTPGM) CFTPROD(CFTPROD) ROLLBACK('1') LIBSAVF(CFTTMP) SAVF(CFT36X)           </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Manually"></span>Manually roll back

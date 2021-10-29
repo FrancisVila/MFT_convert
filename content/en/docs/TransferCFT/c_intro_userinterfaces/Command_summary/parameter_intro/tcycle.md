@@ -17,4 +17,4 @@ Transfer cycle period unit. This unit can be:
 -   MONTH:
     month
 
-[Return to Command index](../../)
+[Return to Command index](../)

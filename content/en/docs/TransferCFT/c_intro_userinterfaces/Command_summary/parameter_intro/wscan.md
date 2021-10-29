@@ -29,4 +29,4 @@ Behavior specifics
 
 Technically, the next retry is triggered **wscan** minutes after the previous try. However, sometimes you may have a Transfer CFT log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.
 
-[Return to Command index](../../)
+[Return to Command index](../)

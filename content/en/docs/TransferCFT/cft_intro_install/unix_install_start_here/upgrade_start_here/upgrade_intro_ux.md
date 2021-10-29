@@ -1,8 +1,8 @@
 {
-    "title": "Upgrade Transfer CFT",
+    "title": "Upgrade  Transfer CFT ",
     "linkTitle": "Upgrade Transfer CFT",
     "weight": "170"
-}This section explains how to upgrade an existing Transfer CFT from 3.1.3 or higher to Transfer CFT 3.9. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade. For details on upgrading a multi-node installation, see [Upgrade a Transfer CFT multi-node installation](../upgrade_multinode_ux).
+}This section explains how to upgrade an existing Transfer CFT from 3.1.3 or higher to Transfer CFT 3.9. It begins by detailing the prerequisites for a standalone (non multi-node) upgrade. For details on upgrading a multi-node installation, see [Upgrade a Transfer CFT multi-node installation](upgrade_multinode_ux).
 
 ## About upgrades
 
@@ -11,13 +11,13 @@ As of Transfer CFT 3.4 there is no separate upgrade package, you use the install
 All passwords stored in the UCONF dictionary, or in the Transfer CFT databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See also <a href="install_silent_mode.htm">silent mode</a> for details on using the silent installation method.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See also silent mode for details on using the silent installation method.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Before"></span>Before you start
@@ -36,7 +36,7 @@ Before beginning the upgrade procedure, you should:
 
 During an upgrade, if the CFTCOM file path is greater than 64 characters the COM file is not migrated, and you must migrate it manually.
 
-When upgrading from Transfer CFT 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in [Migration or upgrade impact and considerations](../../../mig_impact_considerations)
+When upgrading from Transfer CFT 3.1.3 to 3.3.2 or higher, check that the PKIPASSW length value in the CFT 3.1.3 version (source) is not greater than 8 characters. If it is, truncate the password as described in [Migration or upgrade impact and considerations](../../migration/mig_impact_considerations.htm)
 
 ## Use Central Governance to upgrade Transfer CFT
 
@@ -73,13 +73,13 @@ You can set these using command line or the configuration file. The values passe
 ## Upgrade Transfer CFT 3.1.3, 3.2.x, or 3.3.2 to 3.9
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Remember to update the product key between versions.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Remember to update the product key between versions.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Step 1: Upgrade to the latest Transfer CFT 3.1.3, 3.2.x, or 3.3.2 Service Pack**
@@ -95,42 +95,42 @@ Run the Axway Installer in update mode.
     Example: Transfer\_CFT\_3.1.3\_SP3\_aix-power-64\_BN8712000.zip
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Step 2: Upgrade to Transfer CFT 3.9
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.         </td>
+      </tr>
+   </tbody>
 </table>
 
 1.  Uncompress the Transfer CFT installation kit.
 2.  From the Transfer CFT installation kit, enter:  
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>./Transfer_CFT_<span>3.9</span>_Install_&lt;OS&gt;_&lt;BN&gt;.run [&lt;options&gt;]</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>./Transfer_CFT_<span>3.9</span>_Install_&lt;OS&gt;_&lt;BN&gt;.run [&lt;options&gt;]         </td>
+          </tr>
+       </tbody>
     </table>
 3.  Accept the license and the appropriate installation mode (for example, single installation).
 4.  When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
 
 Available options
 
-The following available options are described in detail in [Upgrade options](#upgrade):
+The following available options are described in detail in [Upgrade options](#Upgrade):
 
 -   --architecture &lt;architecture>
 -   --runtimedir &lt;runtimedir> (only available when architecture = additional\_hosts)
@@ -155,9 +155,9 @@ Once you complete an upgrade from 3.7 or lower, you must execute the profile bef
 To check the Transfer CFT version, as well as the license key and system information, enter the command:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p><span>CFTUTIL ABOUT</span></p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><span>CFTUTIL ABOUT</span></p>         </td>
+      </tr>
+   </tbody>
 </table>

@@ -11,4 +11,4 @@
 Identifier
 of the command describing catalog file management, CFTCAT.
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,10 +1,8 @@
 {
-    "title": "Configuring the environment",
+    "title": "Configure  the environment",
     "linkTitle": "Configuring the environment",
     "weight": "350"
-}# <span id="Title"></span><span id="Configuring_the_environment___File_exit"></span>Configure the environment
-
-This topic describes how to configure the environment for a file
+}This topic describes how to configure the environment for a file
 type exit. Before you submit an exit, you must customize the following
 Transfer CFT objects:
 
@@ -20,14 +18,14 @@ Transfer CFT objects:
 #### Syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTSEND/CFRECV  <br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTSEND/CFRECV  <br />
 ID = <em>identifier</em>,<br />
 EXIT = <em>identifier</em>,<br />
-...</td>
-</tr>
-</tbody>
+...         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -49,9 +47,9 @@ et &PART.
 #### Syntax
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTEXIT <br />
+   <tbody>
+      <tr class="odd">
+         <td>CFTEXIT <br />
 ID = identifier,<br />
 TYPE = FILE,<br />
 [FORMAT = { V23
@@ -61,13 +59,13 @@ TYPE = FILE,<br />
 [PARM = string,]<br />
 [PROG = {CFTEXIT | string},]<br />
 [RESERV = {8192 | n},]<br />
-[WAITTASK = {1441 | n}]</td>
-</tr>
-</tbody>
+[WAITTASK = {1441 | n}]         </td>
+      </tr>
+   </tbody>
 </table>
 
 Related topics
 
--   [CFTSEND](../../../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
--   [CFTRECV](../../../../concepts/cft_configuration_concepts_start_here/default_receive_template_concepts)
--   [CFTEXIT](../../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftexit)
+-   [CFTSEND](../../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
+-   [CFTRECV](../../../concepts/cft_configuration_concepts_start_here/default_receive_template_concepts)
+-   [CFTEXIT](../../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftexit)

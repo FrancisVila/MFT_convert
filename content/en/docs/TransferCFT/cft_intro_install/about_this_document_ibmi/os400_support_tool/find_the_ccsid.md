@@ -1,5 +1,5 @@
 {
-    "title": "Determine or change the CCSID ",
+    "title": "Determine or change the CCSID",
     "linkTitle": "Determine or change the CCSID ",
     "weight": "250"
 }A coded character set identifier (CCSID) is a value that allows you to define a specific page code for your IBM i system. This value can be defined in your system, user profile, or subsystem. The value 65535 is an IBM i specific value that enables automatic resolution by the system.
@@ -18,6 +18,6 @@ If you want to know the CCSID used in your current environment or if you want to
 
 The screen displays the coded character set identifier. In the following example, you can see the values to apply in production are CHGUSRPRF USRPRF(CFT) LANGID(EN\_US) CCSID(37).
 
-![](temp_ccsid.png)
+![](/Images/TransferCFT/temp_ccsid.png)
 
  

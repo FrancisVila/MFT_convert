@@ -1,17 +1,15 @@
 {
-    "title": "Types of broadcasts",
+    "title": "Types of broadcasts ",
     "linkTitle": "Types of broadcasts",
     "weight": "350"
-}# <span id="Broadcasting_examples"></span>Types of broadcasts
-
-## **<span id="Simple_broadcasting"></span>Simple broadcasting**
+}## **<span id="Simple_broadcasting"></span>Simple broadcasting**
 
 Site A wants to control the broadcasting of a file in its possession,
 but through an intermediate site B.
 
 **Example of a simple broadcast**
 
-<img src="composite_broadcast.gif" width="457" height="306" />
+<img src="/Images/TransferCFT/simple_broadcast.gif" width="457" height="306" />
 
  
 
@@ -51,7 +49,7 @@ sites). Each production site designates a different broadcasting list.
 
 **Example of a customized broadcast**
 
-<img src="composite_broadcast.gif" width="476" height="627" />
+<img src="/Images/TransferCFT/customized_broadcast.gif" width="476" height="627" />
 
  
 
@@ -78,7 +76,7 @@ several distributing sites.
 
 **Example of a composite broadcast**
 
-<img src="composite_broadcast.gif" width="540" height="797" />
+<img src="/Images/TransferCFT/composite_broadcast.gif" width="540" height="797" />
 
  
 

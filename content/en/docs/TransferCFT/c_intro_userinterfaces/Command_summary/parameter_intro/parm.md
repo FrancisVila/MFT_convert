@@ -40,4 +40,4 @@ It is also passed to the end of transfer, directory or file exits.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

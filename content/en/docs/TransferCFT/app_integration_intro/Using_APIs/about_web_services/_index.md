@@ -1,7 +1,7 @@
 {
-    "title": "Using Web services",
-    "linkTitle": "Using Web services",
-    "weight": "300"
+    "title": "About Web services",
+    "linkTitle": "About web services",
+    "weight": "320"
 }This documentation describes the Transfer CFT Web services interface option, and provides instructions for getting started with Web services, executing a SEND file transfer request, and retrieving the request details from the catalog.
 
 Web services provide a way for applications to use software services over networks such as the Internet. Client applications use the Web Services Description Language (WSDL) to do this and exchange data using XML.
@@ -25,7 +25,7 @@ contact your Axway sales representative.
 
 ## About the WSDL file
 
-To use Web services with Transfer CFT, you need a [WSDL<span aria-hidden="true"> Web Services Description Language</span>](javascript:void(0)) file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
+To use Web services with Transfer CFT, you need a [WSDL<span aria-hidden="true"> Web Services Description Language</span>](#) file. Your installed Transfer CFT product comes with a WSDL file that describes the operations, operation attributes, requests and response structure. You can access the WSDL file from your local installation at:
 
 -   On UNIX/Windows: &lt;cft\_installation\_directory>/distrib/copilot/wsdl/copilotcft.wsdl
 -   On z/OS: &lt;copilot. http.httprootdir>/wsdl/copilotcft.wsdl
@@ -49,13 +49,13 @@ You can find SOAP samples and documentation at:
 -   SOAP request samples:&lt;cft\_installation\_directory>/distrib/copilot/wsdl/sample
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For UNIX/Windows systems, for other platforms refer to the platform specific paths.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For UNIX/Windows systems, for other platforms refer to the platform specific paths.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## General restrictions
@@ -111,13 +111,13 @@ You can use the following UCONF parameters to manage this option:
 -   `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In a multi-host environment, an attacker may have up to the <span>copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In a multi-host environment, an attacker may have up to the <span>copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.         </td>
+      </tr>
+   </tbody>
 </table>
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.

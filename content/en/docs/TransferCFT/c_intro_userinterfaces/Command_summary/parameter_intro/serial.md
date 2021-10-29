@@ -8,7 +8,7 @@
 
 \[SERIAL ={ <u>' '</u> | Y | X } \]
 
-When sending files sequentially, this value is the processing phase that a serialized transfer must reach before Transfer CFT begins executing the next transfer. For details on processing phases, see [About phase and phasestep](../../../../concepts/phase_and_phasestep).
+When sending files sequentially, this value is the processing phase that a serialized transfer must reach before Transfer CFT begins executing the next transfer. For details on processing phases, see [About phase and phasestep](../../../concepts/phase_and_phasestep).
 
 Use this parameter to define file transfer serialization in flows, where:
 
@@ -16,6 +16,6 @@ Use this parameter to define file transfer serialization in flows, where:
 -   Y: Post-processing
 -   X: Done
 
-See also, [Transfer serialization](../../../../app_integration_intro/transfer_serialization).
+See also, [Transfer serialization](../../../app_integration_intro/transfer_serialization).
 
-[Return to Command index](../../)
+[Return to Command index](../)

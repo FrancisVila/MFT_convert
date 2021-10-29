@@ -57,4 +57,4 @@ Enter an identifier of up to 32 characters.
 
 This parameter allows you to chose one of the protocols defined for the partner (CFTPART) when using the SEND or RECV command. If the PROT parameter is not among the protocols defined in the partner's protocols list (CFTPART), the transfer is rejected and an error message displays. For any attempts by the transfer to reconnect, the retry is only for this same protocol - meaning that it does not retry for other protocols. The transfer is rejected when the maximum number of retries is reached.
 
-[Return to Command index](../../)
+[Return to Command index](../)

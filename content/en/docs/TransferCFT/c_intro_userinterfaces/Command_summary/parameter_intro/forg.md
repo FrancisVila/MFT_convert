@@ -26,4 +26,4 @@ as FTYPE, FKEYLEN, FKEYPOS and FORG may be required.
 For further information, refer to the Transfer CFT *"Operations
 Guide"* corresponding to your OS.
 
-[Return to Command index](../../)
+[Return to Command index](../)

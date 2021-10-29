@@ -1,5 +1,5 @@
 {
-    "title": "Partner naming conventions",
+    "title": "Partner naming conventions ",
     "linkTitle": "Partner naming conventions",
     "weight": "260"
 }The parameter setting relative to partners makes a distinction between
@@ -16,32 +16,32 @@ by the protocols used. The parameters describing these names are described in th
 Partner network names
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Object</th>
-<th>Network name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="18%"><p>NSPART </p></td>
-<td data-valign="top" width="18%"><p>CFTPART </p></td>
-<td data-valign="top" width="65%"><p>Name of the local Transfer CFT with regard to the remote partner
-described by this command </p></td>
-</tr>
-<tr class="even" data-valign="middle">
-<td data-valign="top" width="18%"><p>NRPART </p></td>
-<td data-valign="top" width="18%"><p>CFTPART </p></td>
-<td data-valign="top" width="65%"><p>Name of the remote partner Transfer CFT </p></td>
-</tr>
-<tr class="odd" data-valign="middle">
-<td data-valign="top" width="18%"><p>NPART </p></td>
-<td data-valign="top" width="18%"><p>CFTPARM </p></td>
-<td data-valign="top" width="65%"><p>Default name of the local Transfer CFT with regard
-to the partners (default value of the NSPART parameter) </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameter</th>
+         <th>Object</th>
+         <th>Network name</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="18%">            <p>NSPART </p>         </td>
+         <td data-valign="top" width="18%">            <p>CFTPART </p>         </td>
+         <td data-valign="top" width="65%">            <p>Name of the local Transfer CFT with regard to the remote partner
+described by this command </p>         </td>
+      </tr>
+      <tr class="even" data-valign="middle">
+         <td data-valign="top" width="18%">            <p>NRPART </p>         </td>
+         <td data-valign="top" width="18%">            <p>CFTPART </p>         </td>
+         <td data-valign="top" width="65%">            <p>Name of the remote partner Transfer CFT </p>         </td>
+      </tr>
+      <tr class="odd" data-valign="middle">
+         <td data-valign="top" width="18%">            <p>NPART </p>         </td>
+         <td data-valign="top" width="18%">            <p>CFTPARM </p>         </td>
+         <td data-valign="top" width="65%">            <p>Default name of the local Transfer CFT with regard
+to the partners (default value of the NSPART parameter) </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Local_names"></span>Local names
@@ -54,64 +54,64 @@ the table below:
 Partner local names
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Parameter </p></th>
-<th><p>Location </p></th>
-<th><p>Local name </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>ID </p></td>
-<td><p>CFTPART </p></td>
-<td><p>Uniquely identifies the partner and supplies the default
-value of the NRPART parameter </p></td>
-</tr>
-<tr class="even">
-<td><p>IPART<br />
-parameter setting at requester end </p></td>
-<td><p>CFTPART </p></td>
-<td><p>The local name identifying an intermediate partner
-(if using store and forward) </p></td>
-</tr>
-<tr class="odd">
-<td><p>IPART<br />
-during transfer </p></td>
-<td><p>CFT CATALOG </p></td>
-<td><ul>
-<li>If there is no store and forward: remote partner identifier<br />
-</li>
-<li>If there is store and forward: store and forward
-site identifier (immediate party) </li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>PART </p></td>
-<td><p>CFTPARM </p></td>
-<td><p>Identifies the local Transfer CFT</p></td>
-</tr>
-<tr class="odd">
-<td><p>PART </p></td>
-<td><p>CFT CATALOG </p></td>
-<td><ul>
-<li>If there is no store and forward: remote partner identifier<br />
-</li>
-<li>If there is store and forward (see the paragraphs below): store and forward
-site identifier (immediate party). </li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>SPART </p></td>
-<td><p>CFT CATALOG </p></td>
-<td><p>Designates the initial sending partner </p></td>
-</tr>
-<tr class="odd">
-<td><p>RPART </p></td>
-<td><p>CFT CATALOG </p></td>
-<td><p>Designates the final receiving partner </p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>            <p>Parameter </p></th>
+         <th>            <p>Location </p></th>
+         <th>            <p>Local name </p></th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>ID </p>         </td>
+         <td>            <p>CFTPART </p>         </td>
+         <td>            <p>Uniquely identifies the partner and supplies the default
+value of the NRPART parameter </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>IPART<br />
+parameter setting at requester end </p>         </td>
+         <td>            <p>CFTPART </p>         </td>
+         <td>            <p>The local name identifying an intermediate partner
+(if using store and forward) </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>IPART<br />
+during transfer </p>         </td>
+         <td>            <p>CFT CATALOG </p>         </td>
+         <td>            <ul>
+               <li>If there is no store and forward: remote partner identifier<br />
+               </li>
+               <li>If there is store and forward: store and forward
+site identifier (immediate party)                </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>PART </p>         </td>
+         <td>            <p>CFTPARM </p>         </td>
+         <td>            <p>Identifies the local Transfer CFT</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>PART </p>         </td>
+         <td>            <p>CFT CATALOG </p>         </td>
+         <td>            <ul>
+               <li>If there is no store and forward: remote partner identifier<br />
+               </li>
+               <li>If there is store and forward (see the paragraphs below): store and forward
+site identifier (immediate party).                </li>
+            </ul>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>SPART </p>         </td>
+         <td>            <p>CFT CATALOG </p>         </td>
+         <td>            <p>Designates the initial sending partner </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>RPART </p>         </td>
+         <td>            <p>CFT CATALOG </p>         </td>
+         <td>            <p>Designates the final receiving partner </p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Using_reciprocal_recognition"></span>Using reciprocal recognition
@@ -126,7 +126,7 @@ Reciprocal recognition mechanism
 The recognition mechanism is displayed
 in the diagram below.
 
-<img src="Checks_performed_on_connecting.gif" width="721" height="155" />
+<img src="/Images/TransferCFT/reciprocal_recognition.gif" width="721" height="155" />
 
 *On  the server*, Transfer CFT
 also provides the possibility of checking whether the requester
@@ -136,7 +136,7 @@ the password indicated in the NRPASSW parameter on the server.
 
 The checks performed on connection are indicated in the following diagram.
 
-<img src="Checks_performed_on_connecting.gif" width="721" height="155" />
+<img src="/Images/TransferCFT/Checks_performed_on_connecting.gif" width="721" height="155" />
 
 That is, a CFTPART parameter is set for each
 partner to be communicated with, where different NRPART parameters correspond

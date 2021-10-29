@@ -34,14 +34,14 @@ Examples
 Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTUTIL PARAM(ABOUT)</p>
-<p>Host information :</p>
-<p>* model = 525 *</p>
-<p><span>cpuid</span> = 10A16B2</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTUTIL PARAM(ABOUT)</p>
+            <p>Host information :</p>
+            <p>* model = 525 *</p>
+            <p><span>cpuid</span> = 10A16B2</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In this example, you would provide the CPU ID 10A16B2.
@@ -49,24 +49,24 @@ In this example, you would provide the CPU ID 10A16B2.
 Use the display system value command to get the serial number, known as QSRLNBR:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>DSPSYSVAL SYSVAL(QSRLNBR)</p>
-<p>System value . . . . . : QSRLNBR</p>
-<p>Description . . . . . : System serial number</p>
-<p><span>Serial number . . . . </span>: 06890AP</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>DSPSYSVAL SYSVAL(QSRLNBR)</p>
+            <p>System value . . . . . : QSRLNBR</p>
+            <p>Description . . . . . : System serial number</p>
+            <p><span>Serial number . . . . </span>: 06890AP</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 In this example, you would provide the CPU ID 06890AP.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Your values will differ from those shown in the examples.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">Your values will differ from those shown in the examples.         </td>
+      </tr>
+   </tbody>
 </table>

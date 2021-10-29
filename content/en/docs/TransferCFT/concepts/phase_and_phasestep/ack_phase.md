@@ -7,13 +7,13 @@
 To notify the end of the processing to Transfer CFT, the acknowledgment processing script must perform a END command with istate=no.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Caution  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">The transfer request remains in phase=Z and phasestep=C until Transfer CFT receives the END command related to this transfer request</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Caution  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Caution  &lt;/b&gt;" data-valign="top">The transfer request remains in phase=Z and phasestep=C until Transfer CFT receives the END command related to this transfer request         </td>
+      </tr>
+   </tbody>
 </table>
 
  
@@ -37,13 +37,13 @@ There are two possibilities for ackstate:
 
 -   Ignore:
     <table data-cellpadding="0" data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td data-valign="top"></td>
-    <td data-valign="top"><span><strong>Note</strong></span></td>
-    <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To configure <a href="../processing_compatability">backward compatibility</a> ack behavior, set the unified configuration to: <span>uconf:cft.state_compat=Yes</span></td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td data-valign="top">         </td>
+             <td data-valign="top"><span><strong>Note</strong></span>         </td>
+             <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To configure <a href="processing_compatability">backward compatibility</a> ack behavior, set the unified configuration to: <span>uconf:cft.state_compat=Yes</span>         </td>
+          </tr>
+       </tbody>
     </table>
 
 -   Not backward compatible:  
@@ -54,11 +54,11 @@ There are two possibilities for ackstate:
     We launch the ackexec/execsfa/execsma, if applicable, as soon as the Acknowledgement is received regardless of the current Phase. Consequently,this Acknowledgement phase is not seen. After the end of the previous step (post-processing if applicable, or transfer), it moves directly to the next Done phase.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">See <a href="../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
+      </tr>
+   </tbody>
 </table>

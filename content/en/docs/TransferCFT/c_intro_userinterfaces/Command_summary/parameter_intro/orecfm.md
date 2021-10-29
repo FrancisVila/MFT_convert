@@ -24,21 +24,21 @@ not 0), the value of the ORECFM parameter is forced
 to V.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>OS</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd" data-valign="middle">
-<td width="26%"><p>UNIX</p></td>
-<td width="74%"><p>The value "U" is kept for compatibility with previous
-versions. It has the same meaning as ORECFM=V.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>OS</th>
+         <th>Details</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd" data-valign="middle">
+         <td width="26%">            <p>UNIX</p>         </td>
+         <td width="74%">            <p>The value "U" is kept for compatibility with previous
+versions. It has the same meaning as ORECFM=V.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

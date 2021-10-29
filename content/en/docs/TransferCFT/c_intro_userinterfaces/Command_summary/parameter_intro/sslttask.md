@@ -22,4 +22,4 @@ The following values are supported:
 -   1
     to 1000 for Windows
 
-[Return to Command index](../../)
+[Return to Command index](../)

@@ -1,5 +1,5 @@
 {
-    "title": "Submit the JCL install(XSUPPORA)",
+    "title": "Submit the JCL ",
     "linkTitle": "Submit the JCL install(XSUPPORA)",
     "weight": "200"
 }The JCL XSUPPORA extracts information about the current instance for Axway Support, a very useful JCL. This JCL must be able to run for all Transfer CFT instances (Test, PREPROD, PROD).
@@ -53,14 +53,14 @@ Index:
 You can customize some list or extraction options before running this JOB. For example:
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>SET OLISTCAT='BRIEF' LISTCAT content OPTION</p>
-<p>SET OLISTCAT=’DEBUG,IDTU=A0000001’ for a specific transfer</p>
-<p>SET OLISTCOM='ACTIVE' LISTCOM content OPTION</p>
-<p>SET OCFTEXT='BRIEF' CFTEXT content OPTION</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>SET OLISTCAT='BRIEF' LISTCAT content OPTION</p>
+            <p>SET OLISTCAT=’DEBUG,IDTU=A0000001’ for a specific transfer</p>
+            <p>SET OLISTCOM='ACTIVE' LISTCOM content OPTION</p>
+            <p>SET OCFTEXT='BRIEF' CFTEXT content OPTION</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Axway support may request additional information, such as:

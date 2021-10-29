@@ -11,4 +11,4 @@
 
 Request number as displayed by the LISTCOM command. Possible values include all record numbers or record *i*.
 
-[Return to Command index](../../)
+[Return to Command index](../)

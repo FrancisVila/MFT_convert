@@ -8,4 +8,4 @@
 
 Name of the communication controller.
 
-[Return to Command index](../../)
+[Return to Command index](../)

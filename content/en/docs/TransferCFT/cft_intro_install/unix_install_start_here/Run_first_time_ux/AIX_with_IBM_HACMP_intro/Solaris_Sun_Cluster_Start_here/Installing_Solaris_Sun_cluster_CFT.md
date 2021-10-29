@@ -1,10 +1,8 @@
 {
-    "title": "Installing the Sun Cluster ",
+    "title": "Installing  the Sun Cluster ",
     "linkTitle": "Installing the Sun Cluster ",
     "weight": "280"
-}# <span id="Installing_Solaris_Sun_cluster_CFT"></span>Installing the Sun Cluster
-
-This topic describes the steps involved in installing the Sun Cluster
+}This topic describes the steps involved in installing the Sun Cluster
 with Transfer CFT.
 
 ## Pre-installation

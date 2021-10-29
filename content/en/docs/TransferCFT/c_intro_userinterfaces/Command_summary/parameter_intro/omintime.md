@@ -28,4 +28,4 @@ the authorized time slot for calls coming for a partner.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

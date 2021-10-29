@@ -1,10 +1,8 @@
 {
-    "title": "Creating the transfer environment",
+    "title": "Creating  the transfer environment",
     "linkTitle": "Creating the transfer environment",
     "weight": "220"
-}# <span id="Creating_the_transfer_environment__Start_here"></span>Creating the transfer environment
-
-## Model file parameters
+}## Model file parameters
 
 CFTSEND objects include parameters controlling the access to the data
 to be sent and the send transfer process.
@@ -32,16 +30,16 @@ commands with the same ID are required:
     IMPL = YES
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <em>default</em> CFTSEND object for its part applies to all the other
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The <em>default</em> CFTSEND object for its part applies to all the other
 model files in the case of an explicit SEND: it is taken into account
 whenever the SEND IDF does not correspond to a CFTSEND command containing
-IMPL = NO.</td>
-</tr>
-</tbody>
+IMPL = NO.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For clarity, it is recommended to group all CFTSEND commands in a parameter
@@ -92,7 +90,7 @@ The CFTSEND command is used to specify, for each IDF model file:
 -   If FORCE =
     YES, the parameters of the CFTSEND object take precedence over the parameters
     of the SEND command. For details on what parameters take precedence refer
-    to the [FORCE](../../../c_intro_userinterfaces/command_summary/parameter_intro/force) parameter
+    to the [FORCE](../../c_intro_userinterfaces/command_summary/parameter_intro/force) parameter
     in the command index
 -   The actions to
     be performed locally:

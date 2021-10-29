@@ -8,9 +8,9 @@ directory, end of transfer, and file exits in server mode:
 Exit structure
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>char cMode;      /* Client/Server */<br />
+   <tbody>
+      <tr class="odd">
+         <td>char cMode;      /* Client/Server */<br />
 char cAuthPolicy;      /* Server/Both */<br />
 char bCipher;      /* Cipher suite */<br />
 char sParm[64+1];      /* Free parameter from CFTSSL
@@ -25,7 +25,7 @@ DER certificate */<br />
 char sProf[8+1] ;      /* SSL profile ID. */<br />
 char sRemoteSerial[64+1];      /* Serial number */<br />
 char zExitFree[64];      /* Free area for external
-PKI */</td>
-</tr>
-</tbody>
+PKI */         </td>
+      </tr>
+   </tbody>
 </table>

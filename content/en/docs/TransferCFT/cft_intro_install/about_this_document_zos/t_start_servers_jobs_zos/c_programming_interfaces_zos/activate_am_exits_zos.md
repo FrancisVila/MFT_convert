@@ -1,5 +1,5 @@
 {
-    "title": "Activate AM exits",
+    "title": "AM exits",
     "linkTitle": "Activate AM exits",
     "weight": "300"
 }## <span id="Activat"></span> Activating a platform-generic exit

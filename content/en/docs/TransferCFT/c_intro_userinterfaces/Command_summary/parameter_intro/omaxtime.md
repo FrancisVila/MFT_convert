@@ -25,4 +25,4 @@ slot for calls coming to the partner.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

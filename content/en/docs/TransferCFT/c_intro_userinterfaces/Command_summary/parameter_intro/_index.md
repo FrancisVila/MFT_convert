@@ -1,10 +1,8 @@
 {
-    "title": "Parameter index",
-    "linkTitle": "Parameter index",
-    "weight": "210"
-}# <span id="CFT_parameter_index"></span>Transfer CFT parameter index
-
-All Transfer CFT parameters are listed in alphabetical order. Some parameters have different possible values depending on the object. Parameter
+    "title": "Transfer CFT  parameter index",
+    "linkTitle": "Parameters and naming conventions",
+    "weight": "230"
+}All Transfer CFT parameters are listed in alphabetical order. Some parameters have different possible values depending on the object. Parameter
 definitions and values are listed by object name when this applies to
 a parameter.
 
@@ -42,4 +40,4 @@ CFT object fields:
 -   Time:
     2 to 8-digit string in the HHMMSSSS
 
-[Return to Command index](../)
+[Return to Command index](transfercft/c_intro_userinterfaces/command_summary)

@@ -1,5 +1,5 @@
 {
-    "title": "Troubleshoot installation and upgrades",
+    "title": "Troubleshooting installations and upgrades",
     "linkTitle": "Troubleshoot installation and upgrades",
     "weight": "190"
 }This page describes how to locate the various Transfer CFT installation logs when troubleshooting, and the files you made want to have ready if you need to contact Axway Support.

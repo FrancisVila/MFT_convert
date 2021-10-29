@@ -29,30 +29,30 @@ The ddname is AOBYPASS and the format of the DD card is: //AOBYPASS DD DUMMY
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>//* ---------------------------------------------------</p>
-<p>//* Turning off Fault Analyzer with a JCL switch (IDIOFF)</p>
-<p>//* and/or other debuging products.</p>
-<p>//* uncomment the following statement(s).</p>
-<p>//* ---------------------------------------------------</p>
-<p>//*IDIOFF DD DUMMY IBM FAULT ANALYZER OFF</p>
-<p>//*</p>
-<p>//*ABNLIGNR DD DUMMY ABEND-AID OFF</p>
-<p>//*ESPYIBM DD DUMMY EYE-SPY OFF</p>
-<p>//*CAOESTOP DD DUMMY CA-OPT II &amp; CA-SYMDUMP OFF</p>
-<p>//*DMBENAN DD DUMMY TURN OFF DUMPMASTER</p>
-<p>//*PSPOFF DD DUMMY TURN OFF SOFTWORKS PERFORMANCE ESSENTIAL</p>
-<p>//*</p>
-<p>//* ---------------------------------------------------</p>
-<p>//* Turn off PDSMAN</p>
-<p>//* uncomment the following statement.</p>
-<p>//* ---------------------------------------------------</p>
-<p>//*FCOPYOFF DD DUMMY</p>
-<p>//*</p>
-<p>//*PROIGN DD DUMMY To bypass Stop-X37</p>
-<p>//*AOBYPASS DD DUMMY To bypass Tivoli Allocation Optimizer</p>
-<p>//*</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>//* ---------------------------------------------------</p>
+            <p>//* Turning off Fault Analyzer with a JCL switch (IDIOFF)</p>
+            <p>//* and/or other debuging products.</p>
+            <p>//* uncomment the following statement(s).</p>
+            <p>//* ---------------------------------------------------</p>
+            <p>//*IDIOFF DD DUMMY IBM FAULT ANALYZER OFF</p>
+            <p>//*</p>
+            <p>//*ABNLIGNR DD DUMMY ABEND-AID OFF</p>
+            <p>//*ESPYIBM DD DUMMY EYE-SPY OFF</p>
+            <p>//*CAOESTOP DD DUMMY CA-OPT II &amp; CA-SYMDUMP OFF</p>
+            <p>//*DMBENAN DD DUMMY TURN OFF DUMPMASTER</p>
+            <p>//*PSPOFF DD DUMMY TURN OFF SOFTWORKS PERFORMANCE ESSENTIAL</p>
+            <p>//*</p>
+            <p>//* ---------------------------------------------------</p>
+            <p>//* Turn off PDSMAN</p>
+            <p>//* uncomment the following statement.</p>
+            <p>//* ---------------------------------------------------</p>
+            <p>//*FCOPYOFF DD DUMMY</p>
+            <p>//*</p>
+            <p>//*PROIGN DD DUMMY To bypass Stop-X37</p>
+            <p>//*AOBYPASS DD DUMMY To bypass Tivoli Allocation Optimizer</p>
+            <p>//*</p>         </td>
+      </tr>
+   </tbody>
 </table>

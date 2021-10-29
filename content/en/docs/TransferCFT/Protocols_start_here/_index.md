@@ -23,11 +23,11 @@ section introduces Transfer CFT transfer processor concepts. Before beginning yo
 CFT concepts, mechanisms, parameters and protocol concepts.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using Central Governance or Flow Manager with <span>Transfer CFT</span>, the CFTPROT, CFTSEND CFTRECV objects are managed by the governance service. This means that some parameters described in this section are not applicable or should not be edited.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When using Central Governance or Flow Manager with <span>Transfer CFT</span>, the CFTPROT, CFTSEND CFTRECV objects are managed by the governance service. This means that some parameters described in this section are not applicable or should not be edited.         </td>
+      </tr>
+   </tbody>
 </table>

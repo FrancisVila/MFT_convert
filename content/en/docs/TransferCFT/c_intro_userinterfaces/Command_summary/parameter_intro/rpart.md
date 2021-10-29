@@ -10,4 +10,4 @@ Receiver identifier. Enter a maximum of 8 characters.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

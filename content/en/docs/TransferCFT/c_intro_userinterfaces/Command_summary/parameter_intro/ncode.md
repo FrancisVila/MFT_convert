@@ -61,7 +61,7 @@ The following values explicitly or implicitly determine the action:
 
 Regardless of the FTYPE, when using SFTP, the end-of-line in the received file is Text type (CRLF on Windows, and LF on Unix).
 
-For further information, refer to *[Protocols](../../../../protocols_start_here)*.
+For further information, refer to *[Protocols](../../../protocols_start_here)*.
 
 #### CFTRECV
 
@@ -97,4 +97,4 @@ About translation during a transfer:
     by CFTXLATE will be used. For the sender, the translation is done from
     FCODE to NCODE, and for the receiver from NCODE to FCODE.
 
-[Return to Command index](../../)
+[Return to Command index](../)

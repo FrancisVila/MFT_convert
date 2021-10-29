@@ -22,4 +22,4 @@ You can enter:
 
 *TCI/IP only*
 
-[Return to Command index](../../)
+[Return to Command index](../)

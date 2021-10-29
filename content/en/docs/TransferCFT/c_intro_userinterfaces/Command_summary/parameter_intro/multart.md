@@ -18,4 +18,4 @@ An option to group several records of the files sent in one FPDU.
 -   NO: One FPDU contains
     only one record. Only applicable in sender mode.
 
-[Return to Command index](../../)
+[Return to Command index](../)

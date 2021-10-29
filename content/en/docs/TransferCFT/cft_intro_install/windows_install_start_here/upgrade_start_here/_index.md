@@ -1,5 +1,5 @@
 {
-    "title": "Update, upgrade or migrate ",
+    "title": "Update, upgrade, or migrate",
     "linkTitle": "Update, upgrade or migrate ",
     "weight": "150"
 }This section is designed to assist administrators or users who are tasked with updating Transfer CFT, or upgrading or migrating from an existing Transfer CFT version to Transfer CFT 3.9.
@@ -8,11 +8,11 @@
 
 ### About updates
 
-An update brings Transfer CFT up-to-date with a patch or service pack offering fixes and minor enhancements. For example, you can update a Transfer CFT 3.1.3 SP3 to Transfer CFT 3.1.3 SP8. See [Updating Transfer CFT](../../unix_install_start_here/upgrade_start_here/update_cft_unix).
+An update brings Transfer CFT up-to-date with a patch or service pack offering fixes and minor enhancements. For example, you can update a Transfer CFT 3.1.3 SP3 to Transfer CFT 3.1.3 SP8. See [Updating Transfer CFT](../unix_install_start_here/upgrade_start_here/update_cft_unix).
 
 ### About upgrades
 
-An upgrade is the process of updating to a newer, enhanced version of the software. For example, you can upgrade Transfer CFT 3.1.3 to Transfer CFT 3.9. See [Upgrading Transfer CFT](../../unix_install_start_here/upgrade_start_here/upgrade_intro_ux).
+An upgrade is the process of updating to a newer, enhanced version of the software. For example, you can upgrade Transfer CFT 3.1.3 to Transfer CFT 3.9. See [Upgrading Transfer CFT](../unix_install_start_here/upgrade_start_here/upgrade_intro_ux).
 
 As of Transfer CFT 3.4, Axway simplifies the upgrade procedure by allowing you to use the installation package to upgrade from a previous version.
 
@@ -23,13 +23,13 @@ Upgrading, as compared to migration, has the following advantages:
 -   Scripts and APIs remain intact and only require a recompilation for the APIs
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot perform an upgrade on versions older than version 3.1.3.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot perform an upgrade on versions older than version 3.1.3.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Transfer CFT 3.8 and higher
@@ -41,13 +41,13 @@ After performing a Transfer CFT upgrade, you must execute the profile before pe
 A migration means that an initial Transfer CFT is installed in a directory that is not removed or overwritten by the procedure.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When migrating from a previous version of <span>Transfer CFT</span>, be sure to check the <span>Release Notes</span> for new as well as deprecated features and supported platforms for that release.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When migrating from a previous version of <span>Transfer CFT</span>, be sure to check the <span>Release Notes</span> for new as well as deprecated features and supported platforms for that release.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT 3.9 is as follows:
@@ -62,18 +62,18 @@ If you intend to implement Central Governance, please refer to the Transfer CFT 
 
 ## Update or upgrade using Central Governance
 
-Central Governance simplifies the management of Transfer CFT and provides identity and access management, certificate security services, monitoring, alerting, and web dashboard services. If you are using Transfer CFT 3.9 with Central Governance, you can use the information in [Activate Central Unified Flow Management connectivity](../../../governance_services_intro/register_cg) to configure and register with Central Governance.
+Central Governance simplifies the management of Transfer CFT and provides identity and access management, certificate security services, monitoring, alerting, and web dashboard services. If you are using Transfer CFT 3.9 with Central Governance, you can use the information in [Activate Central Unified Flow Management connectivity](../../governance_services_intro/register_cg) to configure and register with Central Governance.
 
 Central governance allows you to update to the latest Transfer CFT Service Pack or patch, or use the installation package to upgrade Transfer CFT (as of Transfer CFT 3.2.4) to a new Transfer CFT version. However, you cannot migrate Transfer CFT using Central Governance.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot perform an upgrade from <span>Central Governance</span> on the following platforms: z/OS or IBM i.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You cannot perform an upgrade from <span>Central Governance</span> on the following platforms: z/OS or IBM i.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## Prerequisites

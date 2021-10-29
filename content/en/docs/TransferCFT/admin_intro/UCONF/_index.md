@@ -1,7 +1,7 @@
 {
-    "title": "Set UCONF parameters",
-    "linkTitle": "Set UCONF parameters",
-    "weight": "230"
+    "title": "About the unified configuration tool (UCONF)",
+    "linkTitle": "About the unified configuration",
+    "weight": "250"
 }Configurable Transfer CFT parameters fall into two basic categories, definable objects or UCONF values. For some Transfer CFT parameters, you can use either method to define parameter values.
 
 When using Central Governance to manage Transfer CFT, some parameter values are specific to UCONF and modifiable only through the Central Governance interface or using the UCONF utility as described in this section.
@@ -56,13 +56,13 @@ The [UCONF parameters topic](uconf_directory) contains a complete listing of al
 -   OBSOLETE: No longer used.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the <span>reconfig </span>command and no restart is required.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note  &lt;/b&gt;" data-valign="top">By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the <span>reconfig </span>command and no restart is required.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### UCONF data

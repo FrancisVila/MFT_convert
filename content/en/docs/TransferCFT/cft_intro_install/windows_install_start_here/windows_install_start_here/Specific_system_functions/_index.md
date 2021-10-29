@@ -1,7 +1,7 @@
 {
-    "title": "Specific system functions",
-    "linkTitle": "Specific system functions",
-    "weight": "220"
+    "title": "Windows-specific system functions",
+    "linkTitle": "Windows-specific system functions",
+    "weight": "240"
 }This section describes specific system functions when using Transfer CFT
 in Windows. It begins with this topic, which introduces the use of environmental
 variables.
@@ -40,12 +40,12 @@ For example, the CFTNODEL setting would be:
 `SET CFTNODEL=YES`
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information, see <a href="env_variables_and_specific_parms">Environment
-variables and specific parameters.</a></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">For more information, see <a href="../Env_variables_and_specific_parms.htm">Environment
+variables and specific parameters.</a>         </td>
+      </tr>
+   </tbody>
 </table>

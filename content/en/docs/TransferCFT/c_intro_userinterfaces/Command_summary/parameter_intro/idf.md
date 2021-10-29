@@ -99,7 +99,7 @@ The value of this parameter may be:
 -   obtained from one
     or more "substrings" of the symbolic variable &NIDF (corresponding
     to the NIDF received), the character string must not be more than 64 characters
-    long. See the definition of a "substring" of a [symbolic variable](../../symbolic_variables).
+    long. See the definition of a "substring" of a [symbolic variable](../symbolic_variables).
 
 Example:
 
@@ -123,7 +123,7 @@ File identifier.
 
 If an identifier is not specified, the CFTPART IDF is used.
 
-If the idf is specified, but does not exist, the idf is forced to IDFDEF, you can disable this functionality. See [cft.default\_idf.enable](../../../../admin_intro/uconf/uconf_parameters).
+If the idf is specified, but does not exist, the idf is forced to IDFDEF, you can disable this functionality. See [cft.default\_idf.enable](../../../admin_intro/uconf/uconf_parameters).
 
 #### <span id="IDF_send_recv"></span>RECV
 
@@ -133,10 +133,10 @@ File identifier.
 
 If an identifier is not specified, the CFTPART IDF is used.
 
-If the idf is specified, but does not exist, the idf is forced to IDFDEF, you can disable this functionality. See [cft.default\_idf.enable](../../../../admin_intro/uconf/uconf_parameters).
+If the idf is specified, but does not exist, the idf is forced to IDFDEF, you can disable this functionality. See [cft.default\_idf.enable](../../../admin_intro/uconf/uconf_parameters).
 
 #### CFTNET
 
 **\[IDF = *string32*\]**
 
-[Return to Command index](../../)
+[Return to Command index](../)

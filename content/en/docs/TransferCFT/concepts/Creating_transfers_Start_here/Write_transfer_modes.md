@@ -1,17 +1,15 @@
 {
-    "title": "Write transfer modes",
+    "title": "Write  transfer modes",
     "linkTitle": "Write transfer modes",
     "weight": "230"
-}# <span id="Write_transfer_modes"></span>Write transfer modes
-
-There are two transfer modes which are described in this topic. The
+}There are two transfer modes which are described in this topic. The
 topic presents two transfer modes, which are comprised of the following
 sections:
 
 -   Write transfer
     mode
 -   [Read
-    transfer and locked-for-sending mode](#read_transfer_and_locked_for_sending_mode)
+    transfer and locked-for-sending mode](#Read_transfer_and_locked_for_sending_mode)
 
 ## <span id="Write_transfer_mode"></span>Write transfer mode
 
@@ -42,7 +40,7 @@ The figures below indicate these possibilities.
 **Sender/requester transfer: closed mode
 - explicit name at the server end**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="733" height="288" />
+<img src="/Images/TransferCFT/Send_req_tx_closed_explicit_name_server.gif" width="733" height="288" />
 
  
 
@@ -52,7 +50,7 @@ is explicit.
 **Sender/requester transfer: closed mode
 - symbolic variables at the server end**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="700" height="389" />
+<img src="/Images/TransferCFT/Send_req_tx_closed_symbolic_var_server.gif" width="700" height="389" />
 
 In the second figure (transfer in PeSIT E protocol for example), the
 name assigned at the server end is defined using the following symbolic
@@ -85,30 +83,30 @@ To implement this mode:
 
 This symbolic variable is replaced by the file name sent by the sender/requester.
 For the definition of symbolic variables, see [Symbolic
-variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
+variables](../../CFTUTIL/Parameter_index/symbolic_variables.htm).
 
 The physical location of the file to be sent by the sender/requester
 is defined by the FNAME parameter of the SEND transfer command or by default
 by the parameter of the CFTSEND parameter setting command.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the sender/requester defines NFNAME and the server/receiver has
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the sender/requester defines NFNAME and the server/receiver has
 not defined FNAME = &amp;NFNAME (or vice-versa), the transfer fails and
 is interrupted. If the requester/sender defines NFNAME and the file name
 is preceded with "*", the server/receiver can use the name of
 its choice as the FNAME. The following figure summarizes the implementation
-in open mode for a sender/requester transfer.</td>
-</tr>
-</tbody>
+in open mode for a sender/requester transfer.         </td>
+      </tr>
+   </tbody>
 </table>
 
 **Sender/requester transfer: open mode**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="701" height="263" />
+<img src="/Images/TransferCFT/Send_transfer_req_open_mode.gif" width="701" height="263" />
 
 ## <span id="Read_transfer_and_locked_for_sending_mode"></span>Read transfer and locked-for-sending mode
 
@@ -138,7 +136,7 @@ of the CFTRECV parameter setting command).
 The name assigned at the requester end
 may be set explicitly or determined using the symbolic variables defined
 on reception. For the definition of symbolic variables, see [Symbolic
-variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
+variables](../../CFTUTIL/Parameter_index/symbolic_variables.htm).
 
 For the server, the name of the file to be sent cannot be defined using
 a symbolic variable. In Locked for sending
@@ -150,7 +148,7 @@ The following figures indicate these possibilities.
 **Receiver/requester transfer in locked
 for sending mode: closed mode - explicit name at the requester end**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="744" height="263" />
+<img src="/Images/TransferCFT/Rec_req_tx__lock_for_send_closd_explicit_req_end.gif" width="744" height="263" />
 
 In the figure above, the name assigned (FNAME = X) at the requester
 end is explicit.
@@ -158,7 +156,7 @@ end is explicit.
 **Receiver/requester transfer in locked
 for sending mode: closed mode symbolic variable at the requester end**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="744" height="276" />
+<img src="/Images/TransferCFT/Rec_req_tx_lock_send_closed_symbolic_var_on_requester.gif" width="744" height="276" />
 
 In the figure above, the name assigned at the requester end is defined
 using the symbolic variable &IDT which provides the possibility of
@@ -187,23 +185,23 @@ To implement this mode:
     of the FNAME parameter of the RECV command (or by default the parameter
     of the CFTRECV parameter setting command) must be equal to the symbolic
     variable &NFNAME. This symbolic variable is replaced by the file name
-    sent by the sender/server. For the definition of symbolic variables, see [Symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
+    sent by the sender/server. For the definition of symbolic variables, see [Symbolic variables](../../CFTUTIL/Parameter_index/symbolic_variables.htm).
 
 The physical location of the file to be sent by the sender/server is
 defined by the FNAME parameter of the SEND transfer command (or by default
 by the parameter of the CFTSEND parameter setting command).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In locked for sending mode, the name FNAME of the file to be sent
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In locked for sending mode, the name FNAME of the file to be sent
 must be known as soon as SEND is submitted. The receiver/requester is
 consequently not able to impose the physical location of the file to be
-sent by the server. The open mode at the sender/server end is not possible.</td>
-</tr>
-</tbody>
+sent by the server. The open mode at the sender/server end is not possible.         </td>
+      </tr>
+   </tbody>
 </table>
 
 For the same reason, the file name sent at the server end cannot be
@@ -225,4 +223,4 @@ transfer.
 **Receiver/requester transfer in locked
 for sending mode: open mode**
 
-<img src="Rec_req_tx_locked_for_send_open.gif" width="738" height="286" />
+<img src="/Images/TransferCFT/Rec_req_tx_locked_for_send_open.gif" width="738" height="286" />

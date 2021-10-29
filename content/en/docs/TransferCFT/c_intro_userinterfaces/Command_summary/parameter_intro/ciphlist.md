@@ -24,6 +24,6 @@ Client
 
 This list is submitted to the server which then makes its selection, depending on the client's preference.
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

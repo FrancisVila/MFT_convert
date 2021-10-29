@@ -1,18 +1,16 @@
 {
-    "title": "Store and forward relays",
+    "title": "Store  and forward ",
     "linkTitle": "Store and forward relays",
     "weight": "370"
-}# <span id="Store_and_Forward_concepts"></span>Store and forward
+}Store and forward, or transfer routing, allows you to define and automate file transfer using an intermediate site. This page describes using store-and-forward services either in a Central Governance context or using a standalone Transfer CFT.
 
-Store and forward, or transfer routing, allows you to define and automate file transfer using an intermediate site. This page describes using store-and-forward services either in a Central Governance context or using a standalone Transfer CFT.
-
--   [Store and forward with Central Governance](#store)
--   [Store and forward standalone Transfer CFT](#store2)
+-   [Store and forward with Central Governance](#Store)
+-   [Store and forward standalone Transfer CFT](#Store2)
     -   [Intentional
-        store and forward](#intentional_store_and_forward)
-    -   [Intentional VAN store and forward](#intentional_van_store_and_forward)
+        store and forward](#Intentional_Store_and_Forward)
+    -   [Intentional VAN store and forward](#Intentional_VAN_store_and_forward)
     -   [Forced
-        store and forward](#forced_store_and_forward)
+        store and forward](#Forced_Store_and_Forward)
 
 ## <span id="Store"></span>Store and forward with Central Governance
 
@@ -27,32 +25,32 @@ To implement a relay in conjunction with Central Governance:
     -   The file to be transferred, for example `report`.
 
     <table data-cellspacing="0">
-    <tbody>
-    <tr class="odd">
-    <td>cftutil send part=target_application, idf=test_relay, fname=report</td>
-    </tr>
-    </tbody>
+       <tbody>
+          <tr class="odd">
+             <td>cftutil send part=target_application, idf=test_relay, fname=report         </td>
+          </tr>
+       </tbody>
     </table>
 3.  Optionally you can configure target post-processing to automatically send a reply.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Tip  </strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">You can use the script delivered with <span>Transfer CFT</span> in the <span>runtime/exec directory/BIN_re.cmd</span> as a basis for your ACK reply from the target application.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Tip  </strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Tip  &lt;/b&gt;" data-valign="top">You can use the script delivered with <span>Transfer CFT</span> in the <span>runtime/exec directory/BIN_re.cmd</span> as a basis for your ACK reply from the target application.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When viewing the final transfer in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">When viewing the final transfer in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.         </td>
+      </tr>
+   </tbody>
 </table>
 
 ## <span id="Store2"></span>Store and forward with standalone Transfer CFT
@@ -87,35 +85,35 @@ Configure the following for the final receiver (Site C):
 -   Define both the initiator and the relay CFTPART partner definitions.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To enable acknowledgments from the receiver C to the sender A, in the receiver (C) configuration you must set the sender (A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and define the relay (B) as the IPART.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To enable acknowledgments from the receiver C to the sender A, in the receiver (C) configuration you must set the sender (A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and define the relay (B) as the IPART.         </td>
+      </tr>
+   </tbody>
 </table>
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the initial sender A is not
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">If the initial sender A is not
 required to establish any direct physical connection with the final receiver
 C, then the command CFTTCP ID=ID_C has no impact. Similarly, there is no need to set CFTTCP ID=ID_A
-for the final receiver C.</td>
-</tr>
-</tbody>
+for the final receiver C.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Intentional store and forward
 
-<img src="Forced_Store_and_forward.gif" width="769" height="631" />
+<img src="/Images/TransferCFT/Intentional_store_and_forward.gif" width="769" height="631" />
 
 ### <span id="Intentional_VAN_store_and_forward"></span>Intentional VAN store and forward
 
-Use the same conditions as indicated in the [Intentional STORE and FORWARD](#intentional_store_and_forward)
+Use the same conditions as indicated in the [Intentional STORE and FORWARD](#Intentional_Store_and_Forward)
 to establish the routing. For the store and forward site to be in VAN mode, you must additionally complete the store
 and forward parameters as follows: CFTPART ID=ID\_A,COMMUT=SERVER,...
 
@@ -150,18 +148,18 @@ Configure the following for the final receiver (Site C):
 -   Define both the initiator and the relay CFTPART partner definitions.
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.         </td>
+      </tr>
+   </tbody>
 </table>
 
 Intentional VAN store and forward
 
-<img src="Forced_Store_and_forward.gif" width="660" height="645" />
+<img src="/Images/TransferCFT/Intentional_VAN_store_and_forward.gif" width="660" height="645" />
 
 ### <span id="Forced_Store_and_Forward"></span>Forced store and forward
 
@@ -201,13 +199,13 @@ Configure the final receiver
 -   Define the CFTPART partner definition for the second relay (Intermediate Site 2).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To enable acknowledgments from the receiver to the sender, add the IPART for each CFTPART definition in each relay. For example:</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">To enable acknowledgments from the receiver to the sender, add the IPART for each CFTPART definition in each relay. For example:         </td>
+      </tr>
+   </tbody>
 </table>
 
 -   For the Intermediate Site 2 in the CFTPART ID=IDGWAY, set the IPART=IDDEP1, which refers to the Intermediate Site 1.
@@ -218,26 +216,26 @@ Store and forward SEND command
 In the SEND command you must specify the final network partner (the NSPART of the final partner) as well as the ID of the first intermediate partner.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>CFTUTIL SEND PART=NFINAL, IPART=IDNAT, ...</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>CFTUTIL SEND PART=NFINAL, IPART=IDNAT, ...         </td>
+      </tr>
+   </tbody>
 </table>
 
 Forced store and forward
 
-<img src="Forced_Store_and_forward.gif" width="1183" height="1018" />
+<img src="/Images/TransferCFT/Forced_Store_and_forward.gif" width="1183" height="1018" />
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The REPLY command may be sent when the end of transfer procedure is
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The REPLY command may be sent when the end of transfer procedure is
 executed (EXECRF). The acknowledgement message is then transferred in the same way, via
 all the intermediate sites until it reaches the initial site (IPART =
-…).</td>
-</tr>
-</tbody>
+…).         </td>
+      </tr>
+   </tbody>
 </table>

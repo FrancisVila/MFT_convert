@@ -1,10 +1,8 @@
 {
-    "title": "Transfers via proxy and SOCKS",
+    "title": "Use  a proxy with SOCKS protocol",
     "linkTitle": "Transfers via proxy and SOCKS",
     "weight": "340"
-}# <span id="Transfers_via_a_Proxy_and_SOCKS_protocol"></span>Use a proxy with SOCKS protocol
-
-A proxy is a program
+}A proxy is a program
 that acts as an intermediary between a client and server. It is often
 used to interconnect two networks via a single point.
 
@@ -15,21 +13,21 @@ or without SSL.
 
 This topic describes how to use a proxy and SOCKS, and includes:
 
--   [SOCKS protocol architecture](#connection)
-    -   [About the connection](#connection)
--   [Using a proxy with Transfer CFT](#application_in_cft)
-    -   [Configuring a connection](#configuration)
+-   [SOCKS protocol architecture](#Connection)
+    -   [About the connection](#Connection)
+-   [Using a proxy with Transfer CFT](#Application_in_CFT)
+    -   [Configuring a connection](#Configuration)
     -   [Error
-        codes](#error_codes)
+        codes](#Error_codes)
     -   SOCKS references
--   [Setting up a proxy for Copilot](#setting)
+-   [Setting up a proxy for Copilot](#Setting)
 
 ## <span id="SOCKS"></span>SOCKS protocol architecture
 
 Transfer CFT supports versions 4 and 5 of the SOCKS protocol. A brief
 explanation of the SOCKS protocol is provided in this topic.
 
-![Proxy server is between the client and server where client initiates the Connect Request to proxy](copilot_connection_box.png)
+![Proxy server is between the client and server where client initiates the Connect Request to proxy](/Images/TransferCFT/proxy2_new.png)
 
 ### <span id="Connection"></span>About the connection
 
@@ -70,13 +68,13 @@ for the CFTNET command (describing an access via a proxy for a
 protocol).
 
 <table data-cellpadding="0" data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td data-valign="top"></td>
-<td data-valign="top"><span><strong>Note</strong></span></td>
-<td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> only accepts outgoing calls.</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td data-valign="top">         </td>
+         <td data-valign="top"><span><strong>Note</strong></span>         </td>
+         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top"><span>Transfer CFT</span> only accepts outgoing calls.         </td>
+      </tr>
+   </tbody>
 </table>
 
 The protocols (CFTPROT) and the networks (CFTNET)
@@ -84,7 +82,7 @@ must be declared in the CFTPARM command to be applied by Transfer CFT.
 
 #### File transfers via a proxy
 
-![Placement of proxy between Transfer CFT in Intranet and client in Internet](copilot_connection_box.png)
+![Placement of proxy between Transfer CFT in Intranet and client in Internet](/Images/TransferCFT/proxy_new.png)
 
 ### <span id="Error_codes"></span>Error codes
 
@@ -109,101 +107,101 @@ Transfer CFT puts the transfer on hold (K status). The operator must manually re
 The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The only difference between the parameters used for SOCKS 4 and 5 is the PASSWORD parameter.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th>Parameters</th>
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>ID</strong></p></td>
-<td>STRING max_length=32</td>
-<td><p>Network resource identifier.</p></td>
-</tr>
-<tr class="even">
-<td><p>CALL</p></td>
-<td>STRING max_length=0</td>
-<td><p>Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')</p></td>
-</tr>
-<tr class="odd">
-<td><p>CLASS</p></td>
-<td>Number &lt;1&gt; min=0 max=64</td>
-<td><p>Logical class for the physical link.</p></td>
-</tr>
-<tr class="even">
-<td><p>MAXCNX </p></td>
-<td>Number &lt;32&gt; min=1 max=2000</td>
-<td><p>Maximum number of simultaneous connections that Transfer
-CFT accepts to establish on this network resource.</p></td>
-</tr>
-<tr class="odd">
-<td><p>TYPE </p></td>
-<td>TCP</td>
-<td><p>Defines the type of network resource.</p></td>
-</tr>
-<tr class="even">
-<td>BUFLEN</td>
-<td>Number &lt;0&gt; min=32 max=32766</td>
-<td>Size of buffers.</td>
-</tr>
-<tr class="odd">
-<td>COMMENT</td>
-<td>STRING max_length=80</td>
-<td>Free comment.</td>
-</tr>
-<tr class="even">
-<td>ORIGIN</td>
-<td>STRING max_length=0</td>
-<td>Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.</td>
-</tr>
-<tr class="odd">
-<td><strong>INET</strong></td>
-<td>STRING max_length=32</td>
-<td>Identifier of the CFTNET command defining access to the first network</td>
-</tr>
-<tr class="even">
-<td><strong>HOST</strong></td>
-<td>String max_length=64</td>
-<td>Resource address</td>
-</tr>
-<tr class="odd">
-<td><strong>PORT</strong></td>
-<td>Number &lt;0&gt; min=1 max=65535</td>
-<td>Listening port of the proxy/proxies in the first network</td>
-</tr>
-<tr class="even">
-<td>USER</td>
-<td>String max_length=32</td>
-<td>User name transmitted in the connection request addressed to the proxy</td>
-</tr>
-<tr class="odd">
-<td>PASSWORD</td>
-<td>String max_length=32</td>
-<td><p><em>SOCKS 5 only</em></p>
-<p>User password transmitted in the connection request addressed to the proxy.</p></td>
-</tr>
-</tbody>
+   <thead>
+      <tr class="header">
+         <th>Parameters</th>
+         <th>Value</th>
+         <th>Description</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p><strong>ID</strong></p>         </td>
+         <td>STRING max_length=32         </td>
+         <td>            <p>Network resource identifier.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>CALL</p>         </td>
+         <td>STRING max_length=0         </td>
+         <td>            <p>Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>CLASS</p>         </td>
+         <td>Number &lt;1&gt; min=0 max=64         </td>
+         <td>            <p>Logical class for the physical link.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>MAXCNX </p>         </td>
+         <td>Number &lt;32&gt; min=1 max=2000         </td>
+         <td>            <p>Maximum number of simultaneous connections that Transfer
+CFT accepts to establish on this network resource.</p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>TYPE </p>         </td>
+         <td>TCP         </td>
+         <td>            <p>Defines the type of network resource.</p>         </td>
+      </tr>
+      <tr class="even">
+         <td>BUFLEN         </td>
+         <td>Number &lt;0&gt; min=32 max=32766         </td>
+         <td>Size of buffers.         </td>
+      </tr>
+      <tr class="odd">
+         <td>COMMENT         </td>
+         <td>STRING max_length=80         </td>
+         <td>Free comment.         </td>
+      </tr>
+      <tr class="even">
+         <td>ORIGIN         </td>
+         <td>STRING max_length=0         </td>
+         <td>Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.         </td>
+      </tr>
+      <tr class="odd">
+         <td><strong>INET</strong>         </td>
+         <td>STRING max_length=32         </td>
+         <td>Identifier of the CFTNET command defining access to the first network         </td>
+      </tr>
+      <tr class="even">
+         <td><strong>HOST</strong>         </td>
+         <td>String max_length=64         </td>
+         <td>Resource address         </td>
+      </tr>
+      <tr class="odd">
+         <td><strong>PORT</strong>         </td>
+         <td>Number &lt;0&gt; min=1 max=65535         </td>
+         <td>Listening port of the proxy/proxies in the first network         </td>
+      </tr>
+      <tr class="even">
+         <td>USER         </td>
+         <td>String max_length=32         </td>
+         <td>User name transmitted in the connection request addressed to the proxy         </td>
+      </tr>
+      <tr class="odd">
+         <td>PASSWORD         </td>
+         <td>String max_length=32         </td>
+         <td>            <p><em>SOCKS 5 only</em></p>
+            <p>User password transmitted in the connection request addressed to the proxy.</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET ID = 'NET0',<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET ID = 'NET0',<br />
 TYPE = 'TCP',<br />
 </p>
-<p>....<br />
+            <p>....<br />
 PROTOCOL = 'SOCKS5',<br />
 USER = 'john',<br />
 PASSWORD = 'foo'<br />
 </p>
-<p>CFTPROT ID = 'PESITANY_SOCKS5',<br />
-...</p></td>
-</tr>
-</tbody>
+            <p>CFTPROT ID = 'PESITANY_SOCKS5',<br />
+...</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="Configuration"></span>Configuring a connection
@@ -219,16 +217,16 @@ To configure an outgoing connection through a proxy, user must define the follow
 Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CFTNET ID = 'NET0',<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CFTNET ID = 'NET0',<br />
 TYPE = 'TCP',<br />
 CALL = 'INOUT',<br />
 MAXCNX = '128',<br />
 CLASS = '1',<br />
 HOST = 'localhost'<br />
 </p>
-<p>CFTNET ID = 'NSOCKS5',<br />
+            <p>CFTNET ID = 'NSOCKS5',<br />
 TYPE = 'TCP',<br />
 CALL = 'INOUT',<br />
 MAXCNX = '32',<br />
@@ -240,14 +238,14 @@ PROTOCOL = 'SOCKS5',<br />
 USER = 'john',<br />
 PASSWORD = 'foo'<br />
 </p>
-<p>CFTPROT ID = 'PESITANY_SOCKS5',<br />
+            <p>CFTPROT ID = 'PESITANY_SOCKS5',<br />
 NET = 'NSOCKS5'<br />
 </p>
-<p>CFTPART ID = 'PARIS_NSOCKS5',</p>
-<p>CFTTCP ID = 'PARIS_ NSOCKS5',<br />
-CLASS = '2',</p></td>
-</tr>
-</tbody>
+            <p>CFTPART ID = 'PARIS_NSOCKS5',</p>
+            <p>CFTTCP ID = 'PARIS_ NSOCKS5',<br />
+CLASS = '2',</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### SOCKS references
@@ -270,9 +268,9 @@ To remove proxy and revert to the standard log in, simply remove the proxy addre
 
 Connect to a product dialog box
 
-![Copilot Connect to a product login screen ](copilot_connection_box.png)
+![Copilot Connect to a product login screen ](/Images/TransferCFT/copilot_connection_box.png)
 
 Related topics
 
 -   Network resources - CFTNET (UI)
--   [CFTNET (CFTUTIL)](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftnet)
+-   [CFTNET (CFTUTIL)](../../CFTUTIL/Conf/CFTNET.htm)

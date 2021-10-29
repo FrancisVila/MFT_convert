@@ -1,16 +1,14 @@
 {
-    "title": "Configuring the environment",
+    "title": "Configuring  the environment",
     "linkTitle": "Configuring the environment",
     "weight": "370"
-}# <span id="Configuring_the_environment___directory_exit"></span>Configuring the environment
-
-This topic describes how to configure the environment for a directory
+}This topic describes how to configure the environment for a directory
 type exit. Before you submit a directory type EXIT, you must customize
 the following Transfer CFT objects:
 
--   [CFTPROT](#defining_the_cftprot_object)
+-   [CFTPROT](#Defining_the_CFTPROT_object)
     defines both the application protocol type and profile
--   [CFTEXIT](#defining_the_cftexit_object)
+-   [CFTEXIT](#Defining_the_CFTEXIT_object)
     describes the EXIT environment and how this EXIT is activated
 
 Each CFTEXIT object corresponds to an EXIT task. The number of EXIT
@@ -37,12 +35,12 @@ ID = identifier,
 
 ### Parameters
 
-**[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
+**[ID](../../../CFTUTIL/Parameter_index/id.htm) =
 identifier**
 
 Protocol identifier.
 
-**\[[EXITA](../../../../c_intro_userinterfaces/command_summary/parameter_intro/exita) =
+**\[[EXITA](../../../CFTUTIL/Parameter_index/exita.htm) =
 identifier\]     **
 
 Directory EXIT identifier.
@@ -55,12 +53,12 @@ The directory type EXIT identifier can include the symbolic variable
 &NPART:(EXITA = (&NPART, ...) where NPART designates the remote
 partner network name.
 
-**[DYNAM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/dynam)  =
+**[DYNAM](../../../CFTUTIL/Parameter_index/dynam.htm)  =
 identifier**
 
 Identifier of the dynamic partner in server mode.
 
-The value of this identifier corresponds to that of the model [CFTPART](../../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart)
+The value of this identifier corresponds to that of the model [CFTPART](../../../CFTUTIL/Conf/CFTPART.htm)
 object ID parameter.
 
 ## <span id="Defining_the_CFTEXIT_object"></span>Defining the CFTEXIT object
@@ -80,7 +78,7 @@ TYPE = ACCESS,
 
 ### Parameters
 
-**[ID](../../../../c_intro_userinterfaces/command_summary/parameter_intro/id) =
+**[ID](../../../CFTUTIL/Parameter_index/id.htm) =
 identifier**
 
 Command identifier.
@@ -88,7 +86,7 @@ Command identifier.
 The value of this identifier corresponds to the identifier defined in
 the EXITA parameter of the related CFTPROT object.
 
-\[[FORMAT](../../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
+\[[FORMAT](../../../CFTUTIL/Parameter_index/format.htm)
 = V23 | V24 \]
 
 Optional parameter. Indicates the format
@@ -97,7 +95,7 @@ for the communication area.
 -   V23 (Default value)
 -   V24
 
-**\[[LANGUAGE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
+**\[[LANGUAGE](../../../CFTUTIL/Parameter_index/language.htm)
 = {COBOL | C}\]**
 
 Language in which the user program is written.
@@ -108,12 +106,12 @@ Transfer CFT uses this attribute to exchange data with the program using
 the EXIT via the structure best suited to the language in which it is
 implemented.
 
-**\[[PARM](../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm) =
+**\[[PARM](../../../CFTUTIL/Parameter_index/parm.htm) =
 string64\]**
 
 Free user field.
 
-**\[[PROG](../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog)  =
+**\[[PROG](../../../CFTUTIL/Parameter_index/prog.htm)  =
 {CFTEXIT | string512}\]**
 
 Name of the executable module associated with the EXIT task.
@@ -122,7 +120,7 @@ This module is built from the interface provided with Transfer CFT linked
 to the program written by the user. In order to facilitate identification
 of the associated module, it is advised to name it CFTEXIA.
 
-\[[RESERV](../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv)  =
+\[[RESERV](../../../CFTUTIL/Parameter_index/reserv.htm)  =
 {<u>1024</u> | n}\]     {0 ...1024}    
 
 Size of the working area reserved for the user.
@@ -132,7 +130,7 @@ to save data required for the processing of the program that you have
 written. This area is de-allocated when the Transfer CFT interface de-selects
 the file.
 
-**[TYPE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =
+**[TYPE](../../../CFTUTIL/Parameter_index/type.htm) =
 ACCESS**
 
 EXIT type.

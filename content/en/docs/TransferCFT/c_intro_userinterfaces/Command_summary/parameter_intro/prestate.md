@@ -1,6 +1,6 @@
 {
-    "title": "to be deleted",
-    "linkTitle": "to be deleted",
+    "title": "Title undetermined",
+    "linkTitle": "Title undetermined",
     "weight": "2700"
 }### prestate
 
@@ -10,4 +10,4 @@
 
 The transfer phase step as it enters the A phase.
 
-[Return to Command index](../../)
+[Return to Command index](../)

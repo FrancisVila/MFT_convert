@@ -23,4 +23,4 @@ Option include:
 -   LOCAL:
     On a local Transfer CFT to send (broadcast) or receive (collect) a file  
 
-[Return to Command index](../../)
+[Return to Command index](../)

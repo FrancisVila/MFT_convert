@@ -14,4 +14,4 @@ The value 0 indicates that there is no synchronization point.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)

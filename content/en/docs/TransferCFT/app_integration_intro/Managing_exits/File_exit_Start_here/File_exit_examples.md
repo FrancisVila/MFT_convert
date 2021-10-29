@@ -1,116 +1,114 @@
 {
-    "title": "File exit examples",
+    "title": "File  exit examples",
     "linkTitle": "File exit examples",
     "weight": "370"
-}# File exit examples
-
-This topic provides examples of file exits and the parameter values
+}This topic provides examples of file exits and the parameter values
 for these exits.
 
 ### File type exit parameter settings
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>/*--------------------------------------------------------*/<br />
+   <tbody>
+      <tr class="odd">
+         <td>            <p>/*--------------------------------------------------------*/<br />
 /* PARAMETER settings for a FILE TYPE EXIT TASK */<br />
 /*--------------------------------------------------------*/<br />
 <br />
 /cftsend     id
       =
 exf1     ,</p>
-<p>              fcode
+            <p>              fcode
    =
 BINARY,</p>
-<p>                      exit
+            <p>                      exit
     =
 exfic    ,</p>
-<p>                      mode
+            <p>                      mode
     =
 replace</p>
-<p>          cftrecv
+            <p>          cftrecv
     id
       =
 exf1     ,</p>
-<p>                      fname
+            <p>                      fname
    =
 '&amp;idtu.rcv',</p>
-<p>                      faction
+            <p>                      faction
  = delete,</p>
-<p>                      fcode
+            <p>                      fcode
    =
 binary,</p>
-<p>                      mode
+            <p>                      mode
     =
 replace</p>
-<p>          cftsend
+            <p>          cftsend
     id
       =
 exf2     ,</p>
-<p>                      fcode
+            <p>                      fcode
    =
 BINARY,</p>
-<p>                      flrecl
+            <p>                      flrecl
   =
 80 ,</p>
-<p>                      nlrecl
+            <p>                      nlrecl
   =
 80,</p>
-<p>                      frecfm
+            <p>                      frecfm
   =
 V,</p>
-<p>                      ftype
+            <p>                      ftype
    =
 T,</p>
-<p>                      exit
+            <p>                      exit
     =
 exfic    ,</p>
-<p>                      mode
+            <p>                      mode
     =
 replace</p>
-<p>          cftrecv
+            <p>          cftrecv
     id
       =
 exf2     ,</p>
-<p>                      fname
+            <p>                      fname
    =
 '&amp;idtu.rcv',</p>
-<p>                      faction
+            <p>                      faction
  = delete,</p>
-<p>                      flrecl
+            <p>                      flrecl
   =
 80 ,</p>
-<p>                      frecfm
+            <p>                      frecfm
   =
 V,</p>
-<p>                      ftype
+            <p>                      ftype
    =
 T,</p>
-<p>                      mode
+            <p>                      mode
     =
 replace</p>
-<p>          cftexit
+            <p>          cftexit
     id
       =
 exfic,</p>
-<p>                      reserv
+            <p>                      reserv
   =
 8192  ,</p>
-<p>                      prog
+            <p>                      prog
     =
 cftexit  ,</p>
-<p>                      language
+            <p>                      language
 = c,</p>
-<p>                      format
+            <p>                      format
   =
 v24,</p>
-<p>                      waittask
+            <p>                      waittask
 = 5,</p>
-<p>                      mode
+            <p>                      mode
     =
-replace</p></td>
-</tr>
-</tbody>
+replace</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### <span id="User_program"></span>User program

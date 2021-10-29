@@ -1,7 +1,7 @@
 {
-    "title": "End-of-transfer exit",
-    "linkTitle": "End-of-transfer exit",
-    "weight": "340"
+    "title": "About end-of-transfer exits",
+    "linkTitle": "About end-of-transfer exits",
+    "weight": "360"
 }The exit interface provides
 the user program with a structure containing information relating to the
 transfer. This book describes the end-of-transfer exit. It begins with this topic, which explains the
@@ -38,37 +38,37 @@ The following
 table shows the transfer possible changes of state.
 
 <table data-cellspacing="0">
-<thead>
-<tr class="header">
-<th><p>Change of state </p></th>
-<th><p>End of transfer procedure
+   <thead>
+      <tr class="header">
+         <th>            <p>Change of state </p></th>
+         <th>            <p>End of transfer procedure
 submitted </p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>H to K </p></td>
-<td><p>Abnormal end of transfer procedure </p></td>
-</tr>
-<tr class="even">
-<td><p>K to H </p></td>
-<td><p>Abnormal end of transfer procedure </p></td>
-</tr>
-<tr class="odd">
-<td><p>T to X </p></td>
-<td><p>No call </p></td>
-</tr>
-<tr class="even">
-<td><p>H to D </p></td>
-<td><p>No call </p></td>
-</tr>
-<tr class="odd">
-<td><p>K to D </p></td>
-<td><p>No call </p></td>
-</tr>
-<tr class="even">
-<td><p>T to T </p></td>
-<td><p>Normal end of transfer procedure </p></td>
-</tr>
-</tbody>
+      </tr>
+   </thead>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>H to K </p>         </td>
+         <td>            <p>Abnormal end of transfer procedure </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>K to H </p>         </td>
+         <td>            <p>Abnormal end of transfer procedure </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>T to X </p>         </td>
+         <td>            <p>No call </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>H to D </p>         </td>
+         <td>            <p>No call </p>         </td>
+      </tr>
+      <tr class="odd">
+         <td>            <p>K to D </p>         </td>
+         <td>            <p>No call </p>         </td>
+      </tr>
+      <tr class="even">
+         <td>            <p>T to T </p>         </td>
+         <td>            <p>Normal end of transfer procedure </p>         </td>
+      </tr>
+   </tbody>
 </table>

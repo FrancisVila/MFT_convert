@@ -10,6 +10,6 @@ Enter a string.
 
  
 
-[Return to Command index](../../)
+[Return to Command index](../)
 
  

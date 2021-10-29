@@ -14,13 +14,13 @@
 CAPTURE command to redirect the screen output to a file.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CAPTURE FNAME = NAME,</p>
-<p>        FACTION = ACTION</p>
-<p>        MASK = NNN</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CAPTURE FNAME = NAME,</p>
+            <p>        FACTION = ACTION</p>
+            <p>        MASK = NNN</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -36,12 +36,12 @@ CAPTURE command to redirect the screen output to a file.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>CHAR name = TRACEFILE, size = 13, init = TRACE</p>
-<p>CAPTURE FNAME = %TRACFILE%, FACTION=APPEND, MASK=128</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>CHAR name = TRACEFILE, size = 13, init = TRACE</p>
+            <p>CAPTURE FNAME = %TRACFILE%, FACTION=APPEND, MASK=128</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 ### Dump
@@ -51,22 +51,22 @@ CAPTURE command to redirect the screen output to a file.
 The DUMP command displays the contents of a file or a variable.
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td><p>DUMP NAME = name,</p>
-<p>     FNAME = fname</p>
-<p>     TYPE = t,</p>
-<p>           LRECL = n,</p>
-<p>     RECFM = V/F/U,</p>
-<p>     ORG = SEQ/IND/PAR/DIR,</p>
-<p>     ACC = a,</p>
-<p>     KEYLEN = n,</p>
-<p>     KEYPOS = n,</p>
-<p>     SRECNUM = n,</p>
-<p>     ERECNUM = n,</p>
-<p>     MODE = HEXA/TEXT/OCTAL</p></td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>            <p>DUMP NAME = name,</p>
+            <p>     FNAME = fname</p>
+            <p>     TYPE = t,</p>
+            <p>           LRECL = n,</p>
+            <p>     RECFM = V/F/U,</p>
+            <p>     ORG = SEQ/IND/PAR/DIR,</p>
+            <p>     ACC = a,</p>
+            <p>     KEYLEN = n,</p>
+            <p>     KEYPOS = n,</p>
+            <p>     SRECNUM = n,</p>
+            <p>     ERECNUM = n,</p>
+            <p>     MODE = HEXA/TEXT/OCTAL</p>         </td>
+      </tr>
+   </tbody>
 </table>
 
 #### Parameters
@@ -91,9 +91,9 @@ ICMCIA value for the name parameter will display the ​​ICM work area.
 #### Example
 
 <table data-cellspacing="0">
-<tbody>
-<tr class="odd">
-<td>DUMP FNAME = test</td>
-</tr>
-</tbody>
+   <tbody>
+      <tr class="odd">
+         <td>DUMP FNAME = test         </td>
+      </tr>
+   </tbody>
 </table>
