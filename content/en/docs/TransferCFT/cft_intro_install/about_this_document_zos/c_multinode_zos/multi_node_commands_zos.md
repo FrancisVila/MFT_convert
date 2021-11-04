@@ -2,342 +2,328 @@
     "title": "Multi-node commands",
     "linkTitle": "Multi-node commands",
     "weight": "230"
-}This topic describes how to manage Transfer CFT nodes, and related actions such as restarting a stopped node, or rebalancing after a fail over.
-
-## cftinit
-
-The `cftinit` command initializes Transfer CFT internal datafiles. If nothing is specified, then all internal datafiles are initialized, both common and specific
-
-#### Options
-
--c|-common only common internal datafiles are initialized (PARM, PART, main COM)
-
--n|-node only node specific internal datafiles are initialized (CATALOG, COM, LOG)
-
-**Usage**
-
-<table data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td>EXEC PCFTUTL,PG=CFT,PARM=’CFTINIT &amp;CFTENV..SAMPLE(CFTPARM)’         </td>
-      </tr>
-   </tbody>
-</table>
-
-Common internal datafiles are initialized using provided configuration files.
-
-<table data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td>CFTINIT –N 2         </td>
-      </tr>
-   </tbody>
-</table>
-
-Specific internal datafiles for node 2 are initialized (CATALOG.N02,COM.N02,LOG1.N02,LOG2.N02C).
-
-`JCL`
-
-`..INSTALL(MNINIT)`
-
-## cftcopl
-
-The executable `CFTCOPL` starts the Copilot (Node Manager and UI server).
-
-**Syntax**
-
-EXEC PGM=CFTCOPL
-
-**JCL**
-
-..INSTALL(MNRMNG)
-
-The files such as COM, CATALOG, or LOG are not assigned in the JCL.
-
-## copstop
-
-The executable `COPSTOP` stops the Copilot (Node Manager and UI server). When stopping a Copilot on a host, all nodes running on this host are stopped and re-started on the other hosts in the cluster.
-
-**Syntax**
-
-copstop
-
-**Usage**
-
-COPSTOP
-
-**JCL**
-
-..INSTALL(COPSTOP)
-
-## start
-
-The `start `command starts one or all nodes. If no node is specified, all nodes are started.
-
-<table data-cellpadding="0" data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td data-valign="top">         </td>
-         <td data-valign="top"><span><strong>Note</strong></span>         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must first start the node manager.         </td>
-      </tr>
-   </tbody>
-</table>
-
-**Syntax**
-
-start \[options\]
-
-#### Options
-
-The -n|-node &lt;node\_id> starts the node &lt;node\_id>.
-
-**Usage**
-
-EXEC PCFTUTL,PG=CFT,PARM=’start’
-
-All nodes are started by the node managers.
-
-EXEC PCFTUTL,PG=CFT,PARM=’start –n 0’
-
-Node 0 is started by a node manager.
-
-**JCL**
-
-..INSTALL(MNSTART)
-
-## stop
-
-The `stop` command stops one or all nodes. If no node is specified, all nodes are stopped.
-
-**Syntax**
-
-stop \[options\]
-
-#### Options
-
-The -n|-node &lt;node\_id> stops the node &lt;node\_id>.
-
-**Usage**
-
-EXEC PCFTUTL,PG=CFT,PARM=’stop’
-
-Stops all nodes.
-
-EXEC PCFTUTL,PG=CFT,PARM=’stop –n 0’
-
-Stops node 0.
-
-**JCL**
-
-..INSTALL(MNSTOP)
-
-## restart
-
-The` restart` command restarts one or all nodes. If no node is specified all nodes are restarted.
-
-<table data-cellpadding="0" data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td data-valign="top">         </td>
-         <td data-valign="top"><span><strong>Note</strong></span>         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">You must first start the node manager.         </td>
-      </tr>
-   </tbody>
-</table>
-
-**Syntax**
-
-restart \[options\]
-
-**Options**
-
-The `-n|-node <node_id>` re-starts the node &lt;node\_id>.
-
-The `-ln|-local_node` re-starts all nodes hosted locally that are running on the host from where the command is performed.
-
-**Usage**
-
-EXEC PCFTUTL,PG=CFT,PARM=’restart’
-
-All nodes are re-started by the node managers.
-
-EXEC PCFTUTL,PG=CFT,PARM=’restart –n 0’
-
-Node 0 is re-started by a node manager.
-
-EXEC PCFTUTL,PG=CFT,PARM=’restart –ln’
-
-All nodes hosted locally are re-started by the node manager.
-
-**JCL**
-
-..INSTALL(MNRESTAR)
-
-## add\_host
-
-The `add_host` command adds a new host entry in the configuration. The following UCONF parameters are set:
-
--   cft.multi\_node.hostnames
--   cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
-
-**Syntax**
-
-add\_host –hostname &lt;hostname> –host &lt;host\_address>
-
-**Usage**
-
-EXEC PCFTUTL,PG=CFT,PARM=’add\_host –hostname srv0 –host srv0.domain.int’
-
-**JCL**
-
-..INSTALL(MNAHOST)
-
-## add\_node
-
-The `add_node` command adds a new node to the Transfer CFT cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1). The internal datafiles associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
-
-**Syntax**
-
-add\_node
-
-**Usage**
-
-EXEC PCFTUTL,PG=CFT,PARM=’add\_node’
-
-**JCL**
-
-..INSTALL(MNANODE)
-
-## remove\_node
-
-The cft remove\_node command removes the node identified by the higher node id in the Transfer CFT cluster. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state).
-
-The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
-
-**Syntax**
-
-remove\_node –n &lt;the\_higher\_node\_id>
-
-**Usage**
-
-EXEC PCFTUTIL,PG=CFT,PARM=’remove\_node –n 3’
-
-**JCL**
-
-..INSTALL(MNREMOVE)
-
-## enable\_node
-
-The `enable_node` command enables the specified node. The node state is set from DISABLED to ENABLED\_STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
-
-**Syntax**
-
-enable\_node -n -&lt;node\_id>
-
-**Usage**
-
-EXEC PCFTUTIL,PG=CFT,PARM=’enable\_node -n -&lt;node\_id>’
-
-**JCL**
-
-..INSTALL(MNENABLE)
-
-## disable\_node
-
-The `disable_node` command disables the specified node. The parameter uconf:cft.multi\_node.nodes.&lt;node\_id>.disabling is set to Yes.
-
--   The node unregisters its listening points from the connection dispatcher so that it does not received incoming requests.
--   Outgoing requests coming from APIs are no longer dispatched to this node.
--   Once the catalog related to the node is empty, the node state is set to DISABLED and the node stops.
-
-**Syntax**
-
-disable\_node -n -&lt;node\_id>
-
-**Usage**
-
-EXEC PCFTUTIL,PG=CFT,PARM=’disable\_node -n -&lt;node\_id>’
-
-**JCL**
-
-..INSTALL(MNDISABL)
-
-## cftping
-
-The `cftping `command checks the status of one or all enabled nodes. By default the cftping checks status of all nodes.
-
-Return values:
-
--   0: all enabled nodes are stopped
--   1: all enabled nodes are running
--   2: not all enabled nodes are running
-
-**Syntax**
-
-cftping \[options\]
-
-**Options**
-
--n|-node &lt;node\_id> checks the status of the node &lt;node\_id>
-
--v verbose mode
-
--p shows PID (Process IDs) of all CFTMAIN processes
-
--h shows the help
-
-**JCL**
-
-..INSTALL(MNPING)
-
-## listlog
-
-Use the CFTUTIL `listlog `command to display the log content, which can be defined according to certain criteria, such as date or node. Additionally, you can filter the log according to multiple criteria, or view a log that is merged for several nodes in cluster mode.
-
-## display/listcat
-
-Use the CFTUTIL `display `or CFTUTIL `listcat `to show catalog transfer records. In multi-node, these commands aggregate all catalog internal datafiles to show catalog transfer records as a unique catalog.
-
-<table data-cellpadding="0" data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td data-valign="top">         </td>
-         <td data-valign="top"><span><strong>Note</strong></span>         </td>
-         <td data-mc-autonum="&lt;b&gt;Note&lt;/b&gt;" data-valign="top">The first character in the IDTU corresponds to the node number.         </td>
-      </tr>
-   </tbody>
-</table>
-
-## listnode
-
-The CFTUTIL **`listnode `**displays the status of the Transfer CFT cluster, including information about hosts and nodes that are part of the Transfer CFT multi-node architecture.
-
-**JCL**
-
-..INSTALL(MNLNODE)
-
-**Example**
-
-In this example four nodes are running on four different hosts.
-
-<table data-cellspacing="0">
-   <tbody>
-      <tr class="odd">
-         <td>            <p>--------------------------------------------------------------<br />
-Host z-zos111b 10.128.60.15 Copilot RUNNING (SOP700ZN J07928)<br />
---------------------------------------------------------------</p>
-            <p>   Node id  Node state     CFT state CFT      JOB   Disabling</p>
-            <p>   ------- --------------- ------------ --------------- -----</p>
-            <p>   Node 01 ENABLED_STARTED  RUNNING  SOP700T3 J07936 No</p>
-            <p>   Node 02 ENABLED_STARTED   RUNNING SOP700T4 J07938 No</p>
-            <p>--------------------------------------------------------------<br />
-Host z-zos19 10.128.60.12 Copilot RUNNING (SOP700ZN J09205)<br />
----------------------------------------------------------------</p>
-            <p>   Node id   Node state    CFT state CFT     JOB   Disabling</p>
-            <p>   ------- --------------- ------------ --------------- -------</p>
-            <p>   Node 00 ENABLED_STARTED  RUNNING SOP700T3 J09211 No</p>
-            <p>   Node 03 ENABLED_STARTED RUNNING SOP700T4 J09214 No</p>         </td>
-      </tr>
-   </tbody>
-</table>
+}This topic describes how to manage Transfer CFT nodes, and related actions such as restarting a stopped node, or rebalancing after a fail over.
+
+## cftinit
+
+The `cftinit` command initializes Transfer CFT internal datafiles. If nothing is specified, then all internal datafiles are initialized, both common and specific
+
+#### Options
+
+-c|-common only common internal datafiles are initialized (PARM, PART, main COM)
+
+-n|-node only node specific internal datafiles are initialized (CATALOG, COM, LOG)
+
+**Usage**
+
+
+    EXEC PCFTUTL,PG=CFT,PARM=’CFTINIT &CFTENV..SAMPLE(CFTPARM)’
+
+Common internal datafiles are initialized using provided configuration files.
+
+
+    CFTINIT –N 2
+
+Specific internal datafiles for node 2 are initialized (CATALOG.N02,COM.N02,LOG1.N02,LOG2.N02C).
+
+`JCL`
+
+`..INSTALL(MNINIT)`
+
+## cftcopl
+
+The executable `CFTCOPL` starts the Copilot (Node Manager and UI server).
+
+**Syntax**
+
+EXEC PGM=CFTCOPL
+
+**JCL**
+
+..INSTALL(MNRMNG)
+
+The files such as COM, CATALOG, or LOG are not assigned in the JCL.
+
+## copstop
+
+The executable `COPSTOP` stops the Copilot (Node Manager and UI server). When stopping a Copilot on a host, all nodes running on this host are stopped and re-started on the other hosts in the cluster.
+
+**Syntax**
+
+copstop
+
+**Usage**
+
+COPSTOP
+
+**JCL**
+
+..INSTALL(COPSTOP)
+
+## start
+
+The `start `command starts one or all nodes. If no node is specified, all nodes are started.
+
+<table>
+   <tbody>
+      <tr>
+         <td>         </td>
+         <td><span><strong>Note</strong></span>         </td>
+         <td>You must first start the node manager.         </td>
+      </tr>
+   </tbody>
+</table>
+
+**Syntax**
+
+start \[options\]
+
+#### Options
+
+The -n|-node &lt;node\_id> starts the node &lt;node\_id>.
+
+**Usage**
+
+EXEC PCFTUTL,PG=CFT,PARM=’start’
+
+All nodes are started by the node managers.
+
+EXEC PCFTUTL,PG=CFT,PARM=’start –n 0’
+
+Node 0 is started by a node manager.
+
+**JCL**
+
+..INSTALL(MNSTART)
+
+## stop
+
+The `stop` command stops one or all nodes. If no node is specified, all nodes are stopped.
+
+**Syntax**
+
+stop \[options\]
+
+#### Options
+
+The -n|-node &lt;node\_id> stops the node &lt;node\_id>.
+
+**Usage**
+
+EXEC PCFTUTL,PG=CFT,PARM=’stop’
+
+Stops all nodes.
+
+EXEC PCFTUTL,PG=CFT,PARM=’stop –n 0’
+
+Stops node 0.
+
+**JCL**
+
+..INSTALL(MNSTOP)
+
+## restart
+
+The` restart` command restarts one or all nodes. If no node is specified all nodes are restarted.
+
+<table>
+   <tbody>
+      <tr>
+         <td>         </td>
+         <td><span><strong>Note</strong></span>         </td>
+         <td>You must first start the node manager.         </td>
+      </tr>
+   </tbody>
+</table>
+
+**Syntax**
+
+restart \[options\]
+
+**Options**
+
+The `-n|-node <node_id>` re-starts the node &lt;node\_id>.
+
+The `-ln|-local_node` re-starts all nodes hosted locally that are running on the host from where the command is performed.
+
+**Usage**
+
+EXEC PCFTUTL,PG=CFT,PARM=’restart’
+
+All nodes are re-started by the node managers.
+
+EXEC PCFTUTL,PG=CFT,PARM=’restart –n 0’
+
+Node 0 is re-started by a node manager.
+
+EXEC PCFTUTL,PG=CFT,PARM=’restart –ln’
+
+All nodes hosted locally are re-started by the node manager.
+
+**JCL**
+
+..INSTALL(MNRESTAR)
+
+## add\_host
+
+The `add_host` command adds a new host entry in the configuration. The following UCONF parameters are set:
+
+-   cft.multi\_node.hostnames
+-   cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
+
+**Syntax**
+
+add\_host –hostname &lt;hostname> –host &lt;host\_address>
+
+**Usage**
+
+EXEC PCFTUTL,PG=CFT,PARM=’add\_host –hostname srv0 –host srv0.domain.int’
+
+**JCL**
+
+..INSTALL(MNAHOST)
+
+## add\_node
+
+The `add_node` command adds a new node to the Transfer CFT cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1). The internal datafiles associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
+
+**Syntax**
+
+add\_node
+
+**Usage**
+
+EXEC PCFTUTL,PG=CFT,PARM=’add\_node’
+
+**JCL**
+
+..INSTALL(MNANODE)
+
+## remove\_node
+
+The cft remove\_node command removes the node identified by the higher node id in the Transfer CFT cluster. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state).
+
+The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
+
+**Syntax**
+
+remove\_node –n &lt;the\_higher\_node\_id>
+
+**Usage**
+
+EXEC PCFTUTIL,PG=CFT,PARM=’remove\_node –n 3’
+
+**JCL**
+
+..INSTALL(MNREMOVE)
+
+## enable\_node
+
+The `enable_node` command enables the specified node. The node state is set from DISABLED to ENABLED\_STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate).
+
+**Syntax**
+
+enable\_node -n -&lt;node\_id>
+
+**Usage**
+
+EXEC PCFTUTIL,PG=CFT,PARM=’enable\_node -n -&lt;node\_id>’
+
+**JCL**
+
+..INSTALL(MNENABLE)
+
+## disable\_node
+
+The `disable_node` command disables the specified node. The parameter uconf:cft.multi\_node.nodes.&lt;node\_id>.disabling is set to Yes.
+
+-   The node unregisters its listening points from the connection dispatcher so that it does not received incoming requests.
+-   Outgoing requests coming from APIs are no longer dispatched to this node.
+-   Once the catalog related to the node is empty, the node state is set to DISABLED and the node stops.
+
+**Syntax**
+
+disable\_node -n -&lt;node\_id>
+
+**Usage**
+
+EXEC PCFTUTIL,PG=CFT,PARM=’disable\_node -n -&lt;node\_id>’
+
+**JCL**
+
+..INSTALL(MNDISABL)
+
+## cftping
+
+The `cftping `command checks the status of one or all enabled nodes. By default the cftping checks status of all nodes.
+
+Return values:
+
+-   0: all enabled nodes are stopped
+-   1: all enabled nodes are running
+-   2: not all enabled nodes are running
+
+**Syntax**
+
+cftping \[options\]
+
+**Options**
+
+-n|-node &lt;node\_id> checks the status of the node &lt;node\_id>
+
+-v verbose mode
+
+-p shows PID (Process IDs) of all CFTMAIN processes
+
+-h shows the help
+
+**JCL**
+
+..INSTALL(MNPING)
+
+## listlog
+
+Use the CFTUTIL `listlog `command to display the log content, which can be defined according to certain criteria, such as date or node. Additionally, you can filter the log according to multiple criteria, or view a log that is merged for several nodes in cluster mode.
+
+## display/listcat
+
+Use the CFTUTIL `display `or CFTUTIL `listcat `to show catalog transfer records. In multi-node, these commands aggregate all catalog internal datafiles to show catalog transfer records as a unique catalog.
+
+<table>
+   <tbody>
+      <tr>
+         <td>         </td>
+         <td><span><strong>Note</strong></span>         </td>
+         <td>The first character in the IDTU corresponds to the node number.         </td>
+      </tr>
+   </tbody>
+</table>
+
+## listnode
+
+The CFTUTIL **`listnode `**displays the status of the Transfer CFT cluster, including information about hosts and nodes that are part of the Transfer CFT multi-node architecture.
+
+**JCL**
+
+..INSTALL(MNLNODE)
+
+**Example**
+
+In this example four nodes are running on four different hosts.
+
+
+
+    --------------------------------------------------------------
+    Host z-zos111b       10.128.60.15                 Copilot RUNNING    (SOP700ZN J07928)
+    --------------------------------------------------------------
+       Node id    Node state            CFT state      CFT      JOB           Disabling
+       -------   ---------------   ------------   --------------- -----
+       Node 01   ENABLED_STARTED    RUNNING         SOP700T3 J07936 No
+       Node 02   ENABLED_STARTED    RUNNING        SOP700T4 J07938 No
+    --------------------------------------------------------------
+    Host z-zos19         10.128.60.12                 Copilot RUNNING      (SOP700ZN J09205)
+    ---------------------------------------------------------------
+       Node id    Node state           CFT state      CFT     JOB           Disabling
+       -------   ---------------   ------------   --------------- -------
+       Node 00   ENABLED_STARTED    RUNNING        SOP700T3 J09211 No
+       Node 03   ENABLED_STARTED   RUNNING        SOP700T4 J09214 No

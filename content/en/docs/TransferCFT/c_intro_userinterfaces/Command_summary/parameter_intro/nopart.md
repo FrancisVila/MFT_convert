@@ -1,27 +1,29 @@
 {
     "title": "nopart",
     "linkTitle": "nopart",
-    "weight": "2290"
-}### <span id="nopart"></span>nopart
-
-#### CFTDEST
-
-\[NOPART = {abort
-| continue | ignore }\]
-
-Do not complete this field if you
-completed the fname field.
-
-Define the actions to perform when a partner in the partner list is
-not found. Options are:
-
--   abort
-    (default)
--   continue:
-    to display an information message and continue processing
--   ignore:
-    continue processing with no information message
-
- 
-
-[Return to Command index](../)
+    "weight": "2260"
+}<span id="nopart"></span>
+
+### <span class="mc-variable System.Title variable">nopart</span>
+
+#### CFTDEST
+
+\[NOPART = {<span style="text-decoration: underline;">abort</span>
+| continue | ignore }\]
+
+<span style="font-weight: normal;">Do not complete this field if you
+completed the fname field.</span>
+
+Define the actions to perform when a partner in the partner list is
+not found. Options are:
+
+-   <span style="font-weight: bold;">abort</span>
+    (default)
+-   <span style="font-weight: bold;">continue</span>:
+    to display an information message and continue processing
+-   <span style="font-weight: bold;">ignore</span>:
+    continue processing with no information message
+
+ 
+
+[Return to Command index](../../)

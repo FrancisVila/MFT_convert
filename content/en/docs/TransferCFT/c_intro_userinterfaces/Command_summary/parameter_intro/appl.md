@@ -1,13 +1,15 @@
 {
     "title": "appl",
     "linkTitle": "appl",
-    "weight": "320"
-}## <span id="appl"></span>appl
-
-#### CFTEXT
-
-All Transfer CFT application definitions.
-
- 
-
-[Return to Command index](../)
+    "weight": "290"
+}<span id="appl"></span>
+
+## appl
+
+#### CFTEXT
+
+All <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> application definitions.
+
+ 
+
+[Return to Command index](../../)

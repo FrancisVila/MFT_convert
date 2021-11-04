@@ -1,15 +1,15 @@
 {
     "title": "sourceappl",
     "linkTitle": "sourceappl",
-    "weight": "3250"
-}### sourceappl
-
-#### CFTSEND, CFTRECV
-
-\[ sourceappl= { string 1...100 }\]
-
-Parameter to define the  source application for a flow in Central Governance for monitoring purposes. The source system is the system that initiates a flow.
-
-This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
-
-[Return to Command index](../)
+    "weight": "3220"
+}### sourceappl
+
+#### CFTSEND, CFTRECV
+
+\[ sourceappl= { string 1...100 }\]
+
+Parameter to define the  source application for a flow in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for monitoring purposes. The source system is the system that initiates a flow.
+
+This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
+
+[Return to Command index](../../)

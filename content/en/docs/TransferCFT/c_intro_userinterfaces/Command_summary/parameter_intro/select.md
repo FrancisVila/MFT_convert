@@ -1,11 +1,13 @@
 {
     "title": "select",
     "linkTitle": "select",
-    "weight": "3150"
-}### <span id="select"></span>select
-
-#### SWAITCAT
-
-Enter an expression.
-
-[Return to Command index](../)
+    "weight": "3120"
+}<span id="select"></span>
+
+### <span class="mc-variable System.Title variable">select</span>
+
+#### SWAITCAT
+
+Enter an expression.
+
+[Return to Command index](../../)

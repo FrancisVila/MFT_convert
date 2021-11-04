@@ -2,8 +2,8 @@
     "title": "Task catalog",
     "linkTitle": "Task catalog",
     "weight": "210"
-}This task catalog provides additional details for procedures referenced or used in the Getting Started steps, diagrams, and overview.
-
-For more information on Transfer CFT CFTUTIL commands, syntax, and usage, see [About the CFTUTIL interface](../../c_intro_userinterfaces/about_cftutil).
-
-For more information on how to get started using Central Governance, refer to the Central Governance User Guide.
+}This task catalog provides additional details for procedures referenced or used in the Getting Started steps, diagrams, and overview.
+
+For more information on Transfer CFT CFTUTIL commands, syntax, and usage, see [About the CFTUTIL interface](../../../c_intro_userinterfaces/about_cftutil).
+
+For more information on how to get started using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, refer to the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>.
