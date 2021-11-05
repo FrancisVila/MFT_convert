@@ -26,7 +26,7 @@ Gateway includes the Secure Relay components. These components enable you to sec
 
 Secure Relay is a secure, multi-protocol, front-end component that prevents external Internet partners from directly accessing Gateway for file exchanges.
 
-For a general description of the role of Secure Relay in Gateway, refer to [Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment).
+For a general description of the role of Secure Relay in Gateway, refer to [Overview: DMZ deployment](../../../../gateway_userguide/ov_gateway/ov_dmz_deployment).
 
 <span id="Global_architecture"></span>
 
@@ -151,8 +151,8 @@ In the case of FTP, both implicit and explicit termination are now supported by 
 
 To activate this feature:
 
--   Set up the TLS profile to use in Secure Relay when [configuring your listening ports](../../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_sap_parameters) in the Gateway configuration menu, and
--   Select <span style="font-weight: bold;">Transport security in SecureRelay for outgoing connection</span> in the [Remote Site object (Net security tab)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab)
+-   Set up the TLS profile to use in Secure Relay when [configuring your listening ports](../../../../gateway_userguide/configuration_start_here/config_protocols_about/config_sap_parameters) in the Gateway configuration menu, and
+-   Select <span style="font-weight: bold;">Transport security in SecureRelay for outgoing connection</span> in the [Remote Site object (Net security tab)](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab)
 
 Delegating the TLS termination to the Secure Relay component may have an impact on the performance of the solution.
 
@@ -240,8 +240,8 @@ Public key algorithms:
 
 To activate this feature:
 
--   Set up the SSH profile to use in Secure Relay when [configuring your listening ports](../../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_sap_parameters) in the Gateway configuration menu, and
--   Select <span style="font-weight: bold;">Transport security in SecureRelay for outgoing connection</span> in the [Remote Site object (SFTP tab)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab)
+-   Set up the SSH profile to use in Secure Relay when [configuring your listening ports](../../../../gateway_userguide/configuration_start_here/config_protocols_about/config_sap_parameters) in the Gateway configuration menu, and
+-   Select <span style="font-weight: bold;">Transport security in SecureRelay for outgoing connection</span> in the [Remote Site object (SFTP tab)](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab)
 
 <span style="font-weight: bold;">Warning:</span> The selected SSH profile must provide PassPort entities to properly set up Secure Relay RA termination. Using the Gateway internal security server (SECS) is not supported.
 
@@ -275,12 +275,12 @@ You can set up multiple instances of Secure Relay RA (eight maximum) running sim
 
 You can not set up more than one Secure Relay RA per machine: the Secure Relay Master Agent sends the same configuration to every Secure Relay RA, so that every instance of Secure Relay RA listens on every TCP port you configured for Gateway’s protocol connectors.
 
-To configure Secure Relay RAs, refer to [Configuration: Connectivity parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay).
+To configure Secure Relay RAs, refer to [Configuration: Connectivity parameters](../../../../gateway_userguide/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay).
 
 For outbound transfers you can select the Secure Relay Router Agents to use for each partner. You make the selection in the Remote Site:
 
--   On the **Network address** tab, use the [**Allowed Router Agents**](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab#allowed_RAs) parameter, or
--   With online commands, use the <span class="code">peladm update\_site</span> command and the <span class="code" style="font-weight: bold;">[-xsr\_allowed\_ra\_list (-xsr\_arl)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_local_sites_cli/sites_parameter_list#_xsr_arl)</span> parameter.
+-   On the **Network address** tab, use the [**Allowed Router Agents**](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab#allowed_RAs) parameter, or
+-   With online commands, use the <span class="code">peladm update\_site</span> command and the <span class="code" style="font-weight: bold;">[-xsr\_allowed\_ra\_list (-xsr\_arl)](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_local_sites_cli/sites_parameter_list#_xsr_arl)</span> parameter.
 
 ### Logging in the DMZ
 
@@ -290,13 +290,13 @@ For security reasons, this feature is disabled by default (the logs can contain 
 
 Related topics
 
-[Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment)
+[Overview: DMZ deployment](../../../../gateway_userguide/ov_gateway/ov_dmz_deployment)
 
 [Working with Secure Relay](../working_with_secure_relay)
 
-[About configuring Gateway](../../../../gateway_userguide_(primary)/configuration_start_here)
+[About configuring Gateway](../../../../gateway_userguide/configuration_start_here)
 
-[Configuration: Connectivity parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
+[Configuration: Connectivity parameters](../../../../gateway_userguide/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
 
  
 

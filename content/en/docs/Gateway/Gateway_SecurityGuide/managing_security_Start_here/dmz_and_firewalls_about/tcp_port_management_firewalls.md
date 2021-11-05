@@ -29,7 +29,7 @@ Define multiple listening ports as follows:
 
 If the Gateway host machine is connected to multiple TCP/IP networks, and is assigned more than one IP address, it may need to listen on multiple TCP/IP addresses (that correspond to a list of port numbers).
 
-Gateway enables you to define the list of ports to use for a given TCP/IP address. When you define a Remote Site, you can attribute a main address and three alternative addresses in the <span style="font-weight: bold;">[Network address](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab)</span> tab.
+Gateway enables you to define the list of ports to use for a given TCP/IP address. When you define a Remote Site, you can attribute a main address and three alternative addresses in the <span style="font-weight: bold;">[Network address](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab)</span> tab.
 
 <span id="Assigning_TCP_origin_ports"></span>
 
@@ -77,9 +77,9 @@ Origin port assignment does not override FTP protocol specifications. Data conne
 
 Related topics
 
-[Working with Remote Sites](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites)
+[Working with Remote Sites](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites)
 
-[Working with Remote Sites (command line)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_local_sites_cli/managing_remote_sites_cli)
+[Working with Remote Sites (command line)](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_local_sites_cli/managing_remote_sites_cli)
 
  
 

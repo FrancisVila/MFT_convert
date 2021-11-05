@@ -299,7 +299,7 @@ Maximum: 512 alphanumeric characters.</p>         </td>
 
 ### SSH Profile: PassPort PS tab
 
-Enter values in the fields of the <span style="font-weight: bold;">PassPort PS</span> tab if you are using PassPort security functions for connections with partners defined in [PassPort PS](../../../../../gateway_userguide_(primary)/connectors_about/passport_pm_connector/passport_ps_connector).
+Enter values in the fields of the <span style="font-weight: bold;">PassPort PS</span> tab if you are using PassPort security functions for connections with partners defined in [PassPort PS](../../../../../gateway_userguide/connectors_about/passport_pm_connector/passport_ps_connector).
 
 <table>
          
@@ -366,7 +366,7 @@ Related topics
 
 [Managing SSH Security Profiles (command line)](../managing_ssh_security_profiles_cli)
 
-[SSH user exits](../../../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
+[SSH user exits](../../../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
 
  
 

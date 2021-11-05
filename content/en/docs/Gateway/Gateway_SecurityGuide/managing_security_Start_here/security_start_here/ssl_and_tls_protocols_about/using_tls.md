@@ -16,13 +16,13 @@
 
 ## Installing TLS
 
-To install TLS, select at least one TLS-enabled file transfer protocol when [configuring protocols](../../../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_protocols).
+To install TLS, select at least one TLS-enabled file transfer protocol when [configuring protocols](../../../../../gateway_userguide/configuration_start_here/config_protocols_about/config_protocols).
 
 <span id="Configuring_CGate_objects_for_TLS_use"></span>
 
 ## Configuring CGate objects for TLS
 
-CGate (Connection Gate) objects are identification filters used internally in server mode at the protocol connection level. CGates determine whether a client has the right to connect to Gateway and exchange files with it or not. CGates can also determine if transport security must be implemented. Set the following parameters in the [CGate Security tab](../../../../../gateway_userguide_(primary)/managing_partners_start_here/cgates_start_here/working_with_cgates_and_cgategroups_(gui)#CGate_Security).
+CGate (Connection Gate) objects are identification filters used internally in server mode at the protocol connection level. CGates determine whether a client has the right to connect to Gateway and exchange files with it or not. CGates can also determine if transport security must be implemented. Set the following parameters in the [CGate Security tab](../../../../../gateway_userguide/managing_partners_start_here/cgates_start_here/working_with_cgates_and_cgategroups_(gui)#CGate_Security).
 
 <table>
          
@@ -70,7 +70,7 @@ To use TLS, you must configure the Remote Site to use a TLS network security typ
 -   An outgoing Security Profile that is used to secure connections towards that Site
 -   An incoming Security Profile that is used (if present) to check security of connections from that Site
 
-The three TLS-specific parameters to set in the [Remote Site Net security tab](../../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab) are:
+The three TLS-specific parameters to set in the [Remote Site Net security tab](../../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab) are:
 
 -   <span style="font-weight: bold;">Network security option</span> (<span class="code">network\_security\_option</span> or<span class="code"> -nsopt</span>): set to TLS
 -   <span style="font-weight: bold;">Security Profile for outgoing connection</span> (<span class="code">tls\_sprof\_out</span>): secures the outgoing connection
@@ -91,7 +91,7 @@ These parameters correspond to the last negotiated security parameters and are u
 
 To set up the TLS secured loop transfers:
 
-1.  Enable the TLS option when [configuring protocols](../../../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_protocols).
+1.  Enable the TLS option when [configuring protocols](../../../../../gateway_userguide/configuration_start_here/config_protocols_about/config_protocols).
 
 2.  Start Gateway and create basic loop configuration.
 

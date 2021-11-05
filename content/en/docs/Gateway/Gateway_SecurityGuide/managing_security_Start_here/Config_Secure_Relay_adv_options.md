@@ -100,7 +100,7 @@ The port to use for listening to login requests when protocol login in DMZ is en
 <ul>
 <li><strong>IP filtering in Secure Relay enable IP filtering in SecureRelay based on</strong>:<br />
 Select this option to enable IP filtering in <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>.
-This is a global setting which applies for all <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agents and all service access points. The IP filtering can be disabled individually per service access point (Sap) – [<a href="../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_sap_parameters">Configuring protocols</a>: <a href="../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_sap_parameters">SAP parameters</a>]. The following filtering methods are available:
+This is a global setting which applies for all <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agents and all service access points. The IP filtering can be disabled individually per service access point (Sap) – [<a href="../../../gateway_userguide/configuration_start_here/config_protocols_about/config_sap_parameters">Configuring protocols</a>: <a href="../../../gateway_userguide/configuration_start_here/config_protocols_about/config_sap_parameters">SAP parameters</a>]. The following filtering methods are available:
 <ul>
 <li><em>White list</em>: Select this option and provide the location (absolute path) and file name of the static white list that <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> will use to filter the incoming connections.<sup>*</sup></li>
 <li><em>Black list</em>: Select this option and provide the location (absolute path) and file name of the static black list that <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> will use to filter the incoming connections.<sup>* **<br />
@@ -158,7 +158,7 @@ A sample for Connection Limiter is available in the <code>run_time/xsr/samples/<
 
 Related topics
 
-[Configuration: Connectivity parameters](../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
+[Configuration: Connectivity parameters](../../../gateway_userguide/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
 
 Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
 

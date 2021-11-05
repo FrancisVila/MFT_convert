@@ -518,7 +518,7 @@ Related topics
 
 [SSH authentication](../ssh_authentication)
 
-[SSH user exits](../../../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
+[SSH user exits](../../../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
 
  
 

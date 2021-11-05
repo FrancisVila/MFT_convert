@@ -61,7 +61,7 @@ Configure and activate Secure Relay in the Gateway configuration menu:
 
 1.  In the left pane of the Gateway GUI, right-click the Gateway server that you want to configure and select <span style="font-weight: bold;">Configure</span>.
 2.  Select <span style="font-weight: bold;">Connectivity > SecureRelay</span>.
-3.  Complete the [Secure Relay configuration parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay) according to your network requirements.
+3.  Complete the [Secure Relay configuration parameters](../../../../gateway_userguide/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay) according to your network requirements.
 4.  Click <span style="font-weight: bold;">Activate</span> to enable Secure Relay.
 5.  Click <span style="font-weight: bold;">OK</span>.
 
@@ -140,9 +140,9 @@ Related topics
 
 [About Secure Relay](../secure_relay_about)
 
-[Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment)
+[Overview: DMZ deployment](../../../../gateway_userguide/ov_gateway/ov_dmz_deployment)
 
-[Configuration: Connectivity parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
+[Configuration: Connectivity parameters](../../../../gateway_userguide/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay)
 
 [Configuration: Secure Relay advanced options](../../config_secure_relay_adv_options)
 

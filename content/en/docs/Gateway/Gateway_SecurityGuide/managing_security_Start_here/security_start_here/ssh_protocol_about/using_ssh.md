@@ -241,7 +241,7 @@ Related topics
 
 [Managing SSH Security Profiles (command line)](../managing_ssh_security_profiles_cli)
 
-[SSH user exits](../../../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
+[SSH user exits](../../../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
 
  
 

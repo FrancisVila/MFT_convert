@@ -18,7 +18,7 @@ To enable password authentication set the authentication feature to yes, and spe
 Available authentication methods are:
 
 -   Operating System: value=system
-    -   The user/password is checked against the Operating System values. For Unix environments, you must enable <span class="code">cftsu </span>as described in <a href="##Enable2" class="MCXref xref">How to use system user authentication for the user interfaces</a>
+    -   The user/password is checked against the Operating System values. For Unix environments, you must enable <span class="code">cftsu </span>as described in <a href="#Enable2" class="MCXref xref">How to use system user authentication for the user interfaces</a>
 -   Access Management: value=am
     -   The user/password is checked by the configured access management system (either PassPort AM, or the AM exit)
 -   Transfer CFT UI User Access Base (UNIX and HP NonStop only): value=xfbadm

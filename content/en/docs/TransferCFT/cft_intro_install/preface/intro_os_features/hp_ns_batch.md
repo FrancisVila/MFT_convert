@@ -107,7 +107,7 @@ The following unified configuration parameters are specific to HP Nonstop.
          <td>         </td>
          <td><p>The default working directory for the TACL and NETBATCH scripts.</p>
 <p>The parameter is set with the default value of “<span class="code">&lt;</span><span class="code" data-xmlns="http://www.w3.org/TR/REC-html40">subvolume</span><span class="code">&gt;UD</span>”
-(see <a href="##Guardian" class="MCXref xref">Guardian files</a>) during the Guardian
+(see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian
 files installation.</p>         </td>
       </tr>
       <tr>

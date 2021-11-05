@@ -17,7 +17,7 @@ Axway offers two solutions for deploying Gateway in DMZ architectures:
 
 Related topics
 
-[Overview: DMZ deployment](../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment)
+[Overview: DMZ deployment](../../../gateway_userguide/ov_gateway/ov_dmz_deployment)
 
 [About Secure Relay](secure_relay_about)
 

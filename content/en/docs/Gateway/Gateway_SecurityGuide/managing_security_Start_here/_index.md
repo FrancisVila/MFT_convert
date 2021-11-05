@@ -47,7 +47,7 @@ For information about Security Management in Gateway, refer to:
 </ul>         </td>
       </tr>
       <tr>
-         <td><a href="../../gateway_userguide_(primary)/log_messages_about/data_integrity" class="MCXref xref">Payload integrity</a>         </td>
+         <td><a href="../../gateway_userguide/log_messages_about/data_integrity" class="MCXref xref">Payload integrity</a>         </td>
          <td><ul>
 <li>Ensure payload integrity by attaching signatures to all received files, then using that additional information when the file is routed to a third party</li>
 </ul>         </td>

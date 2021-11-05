@@ -157,7 +157,7 @@ User Access control is only effective if users access Gateway via the GUI or via
 To set up User Access control:
 
 1.  In the configuration menu, enable the <span style="font-weight: bold;">User access control</span> option and set the <span style="font-weight: bold;">Default user name</span> to an appropriate value.  
-    Refer to [Configuration: Gateway parameters: Gateway > Connection control](../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#olh_gateway_connection_control).  
+    Refer to [Configuration: Gateway parameters: Gateway > Connection control](../../../../gateway_userguide/configuration_start_here/config_gateway_paras#olh_gateway_connection_control).  
     If you do not enable this option, access control and exit routines are not activated.
 2.  The first time you start Gateway, and before you define any users, the installation program creates a default user named ADMIN, with the password ADMIN. By default, this user is the product administrator. The ExitLoginParam() in the supplied sample codes uses this entry by default.
 3.  Using either the GUI or the <span class="code" style="font-weight: bold;">peladm</span> command, set up your user and access rights profile database. It is recommended that you create an additional administrator besides the default ADMIN. You should also change the default ADMIN password.
@@ -202,9 +202,9 @@ Related topics
 
 [About Access Control Management](../)
 
-[Configuration: Gateway parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras)
+[Configuration: Gateway parameters](../../../../gateway_userguide/configuration_start_here/config_gateway_paras)
 
-[Internal user exits](../../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_internal)
+[Internal user exits](../../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_internal)
 
  
 

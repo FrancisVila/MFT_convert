@@ -77,7 +77,7 @@ The client receives a public key (or a certificate) from the server.
 
 The verification is performed with the Authentication Control.
 
-Set the following parameters in the [Remote Site SFTP tab](../../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab) that represents the server:
+Set the following parameters in the [Remote Site SFTP tab](../../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab) that represents the server:
 
 -   Public key alias
 -   Public key group
@@ -214,7 +214,7 @@ Gateway performs the verification using the Authentication Control structure fro
 
 <span style="font-weight: bold;">Note:</span> Authentication Control is also available in the SSH Profile selected on connection, but not recommended since it is not partner-specific in most implementations. The SSH Profile only supplies the fields that are not completed in the Site.
 
-Set the following parameters in the [Remote Site SFTP tab](../../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab) representing the client:
+Set the following parameters in the [Remote Site SFTP tab](../../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_sftp_tab) representing the client:
 
 -   <span style="font-weight: bold;">Username to check</span> (<span class="code">-check\_login\_ident</span>)
 -   <span style="font-weight: bold;">Password to check</span> (<span class="code">-check\_login\_password</span>)
@@ -283,7 +283,7 @@ Related topics
 
 [Managing SSH Security Profiles (command line)](../managing_ssh_security_profiles_cli)
 
-[SSH user exits](../../../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
+[SSH user exits](../../../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_external/user_exits_ssh)
 
  
 

@@ -111,7 +111,7 @@ Gateway retrieves and merges the CGateGroup hierarchy for the selected CGate, to
 
 #### External processing: Using the Protocol Connection Exit
 
-Gateway provides the user exit <span class="code">ExitRcProtoConn</span> that enables you to configure remote identification from a database or an LDAP directory. This exit overrides the default CGate identification mechanism described above. To activate Protocol Connection Exit scheduling as a replacement for the default identification process, set the <span style="font-weight: bold;">[Connection control method](../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#connection_control_method)</span> parameter in the configuration menu.
+Gateway provides the user exit <span class="code">ExitRcProtoConn</span> that enables you to configure remote identification from a database or an LDAP directory. This exit overrides the default CGate identification mechanism described above. To activate Protocol Connection Exit scheduling as a replacement for the default identification process, set the <span style="font-weight: bold;">[Connection control method](../../../gateway_userguide/configuration_start_here/config_gateway_paras#connection_control_method)</span> parameter in the configuration menu.
 
 <span id="Transport_level_security"></span>
 
@@ -318,13 +318,13 @@ Gateway is fully compatible with SOCKS4, FTP and HTTP proxies.
 
 You can further enhance the isolation and security of your enterprise network by deploying Gateway in a DMZ architecture.
 
-[Next topic](../../../gateway_userguide_(primary)/ov_gateway/ov_monitoring_gateway)
+[Next topic](../../../gateway_userguide/ov_gateway/ov_monitoring_gateway)
 
 Related topics
 
-[About CGates and CGateGroups](../../../gateway_userguide_(primary)/managing_partners_start_here/cgates_start_here)
+[About CGates and CGateGroups](../../../gateway_userguide/managing_partners_start_here/cgates_start_here)
 
-[Internal user exits](../../../gateway_userguide_(primary)/customizing_gw_about/user_exits_about/user_exits_internal)
+[Internal user exits](../../../gateway_userguide/customizing_gw_about/user_exits_about/user_exits_internal)
 
 [Managing TLS](../../managing_security_start_here/security_start_here/ssl_and_tls_protocols_about/managing_tls)
 
@@ -338,13 +338,13 @@ Related topics
 
 [Certificates and keys](../../managing_security_start_here/security_start_here/certificates_and_keys_start_here)
 
-[About Virtual File Directories](../../../gateway_userguide_(primary)/transfers_start_here/virtual_file_directory_start_here)
+[About Virtual File Directories](../../../gateway_userguide/transfers_start_here/virtual_file_directory_start_here)
 
 [About Access Control Management](../../managing_security_start_here/access_control_about)
 
-[About Proxy objects](../../../gateway_userguide_(primary)/managing_partners_start_here/proxies_about)
+[About Proxy objects](../../../gateway_userguide/managing_partners_start_here/proxies_about)
 
-[Overview: DMZ deployment](../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment)
+[Overview: DMZ deployment](../../../gateway_userguide/ov_gateway/ov_dmz_deployment)
 
  
 

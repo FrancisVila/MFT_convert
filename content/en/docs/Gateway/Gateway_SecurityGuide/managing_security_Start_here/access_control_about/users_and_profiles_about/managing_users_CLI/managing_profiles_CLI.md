@@ -561,7 +561,7 @@ Related topics
 
 [About Access Control Management](../../../)
 
-[Configuration: Gateway parameters](../../../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras)
+[Configuration: Gateway parameters](../../../../../../gateway_userguide/configuration_start_here/config_gateway_paras)
 
  
 

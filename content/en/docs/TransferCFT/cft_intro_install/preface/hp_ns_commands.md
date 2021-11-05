@@ -10,7 +10,7 @@ Transfer CFT offers a set of commands which can be used interactively or within 
 
 ### Prerequisites
 
-Prior to executing Transfer CFT commands, you must install them. If you have not already done so, perform the task as described in <a href="##Install" class="MCXref xref">Install the Guardian specific files</a>.
+Prior to executing Transfer CFT commands, you must install them. If you have not already done so, perform the task as described in <a href="#Install" class="MCXref xref">Install the Guardian specific files</a>.
 
 You cannot use Transfer CFT Guardian 2.3.2 CFTUTIL commands with Transfer CFT <span class="mc-variable Primary.Transfer_CFT version_long variable">3.9</span>.
 

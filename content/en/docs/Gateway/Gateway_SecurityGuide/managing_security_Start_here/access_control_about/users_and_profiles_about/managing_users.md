@@ -111,7 +111,7 @@ Maximum: 15 characters.</p>         </td>
 
 #### Note:
 
-Define overall User Access Control in the Gateway configuration menu ([Gateway &gt; Connection control](../../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#olh_gateway_connection_control)).
+Define overall User Access Control in the Gateway configuration menu ([Gateway &gt; Connection control](../../../../../gateway_userguide/configuration_start_here/config_gateway_paras#olh_gateway_connection_control)).
 
 If you want to use script or batch functions, you must define environment variables for the following:
 
@@ -238,7 +238,7 @@ Related topics
 
 [About Access Control Management](../../)
 
-[Configuration: Gateway parameters](../../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras)
+[Configuration: Gateway parameters](../../../../../gateway_userguide/configuration_start_here/config_gateway_paras)
 
  
 

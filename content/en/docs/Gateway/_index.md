@@ -1,6 +1,6 @@
 {
-    "title": "Gateway 6.17 Upgrade Guide",
-    "linkTitle": "  ",
+    "title": "Gateway 6.17 documentation",
+    "linkTitle": "Gateway documentation",
     "weight": "20"
 }<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> (formerly XFB Gateway) is an Axway product in the Managed File Transfer category, that serves as a communication gateway. It provides a secure front end for handling data exchange between partners that are connected via public networks such as the Internet.
 

@@ -97,7 +97,7 @@ The two protocols are separate and technically different, but are exclusively us
 
 The configuration of an SFTP/SSH link requires the configuration of several compatible objects in Gateway:
 
--   [Remote Site](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites)
+-   [Remote Site](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites)
 -   [Network Profile (netprof) object](../network_profiles_start_here/network_profiles_(gui))
 -   [SSH Profile (sshprof) object](ssh_security_profiles__gui_)
 

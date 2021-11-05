@@ -235,7 +235,7 @@ HTTP security must be set to <em>implicit</em> on both the client and server pro
 
 ### TLS Profile: PassPort PS tab
 
-Enter values in the fields of the <span style="font-weight: bold;">PassPort PS</span> tab if you are using PassPort security functions for connections with partners defined in [PassPort PS](../../../../../gateway_userguide_(primary)/connectors_about/passport_pm_connector/passport_ps_connector).
+Enter values in the fields of the <span style="font-weight: bold;">PassPort PS</span> tab if you are using PassPort security functions for connections with partners defined in [PassPort PS](../../../../../gateway_userguide/connectors_about/passport_pm_connector/passport_ps_connector).
 
 <table>
          

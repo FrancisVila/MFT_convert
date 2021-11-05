@@ -375,7 +375,7 @@ in seconds. The Transfer CFT Copilot server checks the request status in catalog
          <td>copilot.restapi.catalog.retry_timeout         </td>
          <td>int         </td>
          <td>30         </td>
-         <td><p>The default value of the <a href="##Manage">apiTimeout</a> parameter as defined in the request URL.</p>
+         <td><p>The default value of the <a href="#Manage">apiTimeout</a> parameter as defined in the request URL.</p>
 <p>Available exclusively for POST requests.</p>         </td>
       </tr>
    </tbody>

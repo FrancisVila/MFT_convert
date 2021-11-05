@@ -27,8 +27,8 @@ Use this field to define the file access control. You can use the UserCtrl param
    </tbody>
 </table>
 
--   For details in UNIX, please see <a href="##Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
--   For details in Windows, please see <a href="##Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
+-   For details in UNIX, please see <a href="#Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
+-   For details in Windows, please see <a href="#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
 
  
 

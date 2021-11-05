@@ -18,7 +18,7 @@
 
 To provide secure links between your corporate network applications and file-exchange partners located on the Internet, you can deploy Gateways in a DMZ protected architecture.
 
-For an overview of Gateway DMZ solutions, refer to [Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment).
+For an overview of Gateway DMZ solutions, refer to [Overview: DMZ deployment](../../../../gateway_userguide/ov_gateway/ov_dmz_deployment).
 
 You have the option of deploying paired Gateways in a secure DMZ bridge configuration. Alternatively, you can use the [<span class="mc-variable axway_variables.Company_Name variable">Axway</span> <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>](../secure_relay_about) option for DMZ configurations.
 
@@ -43,9 +43,9 @@ When you create a DMZ by deploying paired Gateways, you configure the Gateways t
 
 A <span style="font-style: italic;">private</span> Gateway contains definitions that enable the applications situated in your corporate network to act as servers and/or clients for exchanges with Internet partners.
 
-You control the identity of intranet applications that connect to the private Gateway via [Remote Site objects](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here).
+You control the identity of intranet applications that connect to the private Gateway via [Remote Site objects](../../../../gateway_userguide/managing_partners_start_here/sites_start_here).
 
-You control the protocol-level connections to the private Gateway via [CGate objects](../../../../gateway_userguide_(primary)/managing_partners_start_here/cgates_start_here).
+You control the protocol-level connections to the private Gateway via [CGate objects](../../../../gateway_userguide/managing_partners_start_here/cgates_start_here).
 
 On your private Gateway you decrypt incoming files. You can scan decrypted files for viruses before forwarding files to the target destination on your corporate intranet.
 
@@ -177,7 +177,7 @@ If a file sending partner application situated on the Internet is an FTP or HTTP
 
 #### Protecting data on the public Gateway
 
-To protect the data on your public Gateway from malicious intrusions, you must [activate encryption of the temporary files](../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#olh_gateway_database_protection) stored on the public Gateway and all Gateway internal files (administration and Mailbox files).
+To protect the data on your public Gateway from malicious intrusions, you must [activate encryption of the temporary files](../../../../gateway_userguide/configuration_start_here/config_gateway_paras#olh_gateway_database_protection) stored on the public Gateway and all Gateway internal files (administration and Mailbox files).
 
 ### Virus scanning and file storage
 
@@ -204,11 +204,11 @@ In this case the name of each file must be unique. You can use a symbolic variab
 
 ### Reliability management
 
-Use the time slot defined by the application for exchanges to trigger retry processes. You can set maximum retry limits and time delays between each retry in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
+Use the time slot defined by the application for exchanges to trigger retry processes. You can set maximum retry limits and time delays between each retry in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
 
-You can use synchronization points during the transfers to optimize the flow control on network and minimize the data to re-transfer in case of failure. Set synchronization in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
+You can use synchronization points during the transfers to optimize the flow control on network and minimize the data to re-transfer in case of failure. Set synchronization in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
 
-In addition to the transfer level control, you can activate an application control level using acknowledgment messages. Set acknowledgment options in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
+In addition to the transfer level control, you can activate an application control level using acknowledgment messages. Set acknowledgment options in the Remote Site object <span style="font-weight: bold;">[PeSIT](../../../../gateway_userguide/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_pesit_tab)</span> tab.
 
 When you activate this feature, public Gateway generates a message containing the process status (correct/incorrect), and sends the message back to the transfer originating application.
 
@@ -448,7 +448,7 @@ The following examples compare the results of the two types of tracing, for two 
 
 Related topics
 
-[Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment)
+[Overview: DMZ deployment](../../../../gateway_userguide/ov_gateway/ov_dmz_deployment)
 
 [About Secure Relay](../secure_relay_about)
 
