@@ -8,7 +8,7 @@ Unlicensed users can log in to <span class="mc-variable axway_variables.Componen
 
 If the ad hoc human-to-human file transfer specifies enrollment as an unlicensed user or the System to Human transfer site specifies a security level of `Enroll User - Unlicensed`, the recipient becomes an unlicensed user on enrollment.
 
-Create account templates for unlicensed users. Configure the account template that applies to unlicensed users in the business unit or in the **Default enrollment account template** field on the *AdHoc Setting* page. See <a href="../../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates#top" class="MCXref xref">Manage account templates</a>, <a href="##Create" class="MCXref xref">Create or edit a business unit</a>, and <a href="../../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>.
+Create account templates for unlicensed users. Configure the account template that applies to unlicensed users in the business unit or in the **Default enrollment account template** field on the *AdHoc Setting* page. See <a href="../../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates#top" class="MCXref xref">Manage account templates</a>, <a href="#Create" class="MCXref xref">Create or edit a business unit</a>, and <a href="../../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>.
 
 You can also create an unlicensed user account from the *Unlicensed User Accounts* page.
 

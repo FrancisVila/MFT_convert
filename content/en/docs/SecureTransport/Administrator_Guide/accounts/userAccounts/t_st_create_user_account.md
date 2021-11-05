@@ -244,7 +244,7 @@ For a custom delivery method, select one or more of the allowed enrollment types
 </ul></li>
 <li>This account setting overrides the business unit or global Address Book Policy setting for collaboration.</li>
 </ol>
-<p>For additional Address Book account level configuration information, see <a href="##Address2" class="MCXref xref">Address Book account level configuration</a>.</p>         </td>
+<p>For additional Address Book account level configuration information, see <a href="#Address2" class="MCXref xref">Address Book account level configuration</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Bandwidth Limits Policy</strong>

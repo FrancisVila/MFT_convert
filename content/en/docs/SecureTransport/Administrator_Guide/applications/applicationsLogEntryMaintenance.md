@@ -32,7 +32,7 @@ Use the following procedure to create a Log Entry Maintenance application:
 
 7.  (Optional) Configure the export of the Server log entries before deletion. The procedure differs depending on the database you use. For complete instructions, see <a href="#Configur" class="MCXref xref">Configure the Server log records export before deletion</a>
 
-8.  (Optional) In the *Schedule* pane, click **Configure** to <a href="##ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+8.  (Optional) In the *Schedule* pane, click **Configure** to <a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
 
 9.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
 

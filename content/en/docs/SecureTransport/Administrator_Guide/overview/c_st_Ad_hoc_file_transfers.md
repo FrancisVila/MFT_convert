@@ -33,7 +33,7 @@ For information about configuring ad hoc file transfers, see the following topic
 -   <a href="../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>
 -   <a href="../../accounts/useraccounts/t_st_create_user_account#Unlicens" class="MCXref xref">Create a user account</a>
 -   <a href="../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates#Create" class="MCXref xref">Create a site template</a>
--   <a href="##Create" class="MCXref xref">Create or edit a business unit</a>
+-   <a href="#Create" class="MCXref xref">Create or edit a business unit</a>
 
 For information about configuring H2S file transfers, see <a href="../../accounts/c_st_subscriptions/t_st_subscriptions#Human" class="MCXref xref">Human to System type application</a>.
 

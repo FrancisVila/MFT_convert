@@ -8,7 +8,7 @@ To view server licenses:
 
 1.  Open the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and select **Setup > Server License**.
 2.  Verify that the license is installed and not expired by checking the **Core Server License** for the FTP and HTTP servers, user accounts, and ad hoc users and the **Features License** for AS2, SSH, and Connect:Direct protocols and the SiteMinder feature.
-3.  If your license has passed the expiration date, contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support to renew it. For details, see <a href="##top" class="MCXref xref">Get more help</a>.
+3.  If your license has passed the expiration date, contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support to renew it. For details, see <a href="#top" class="MCXref xref">Get more help</a>.
 
 For each license type, the validity period is given in the **Valid from** and **Valid to** fields. Check the following items if your license is valid.
 

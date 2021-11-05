@@ -79,7 +79,7 @@ The email certificate notification will be sent to the specified account(s) onc
 
 -   Use **Email Templatе** to select the template for user certificate expiration emails, and specify the notification recipients.
 
-(Optional) In the *Schedule* pane, click **Configure** to<a href="##ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+(Optional) In the *Schedule* pane, click **Configure** to<a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
 
 (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
 

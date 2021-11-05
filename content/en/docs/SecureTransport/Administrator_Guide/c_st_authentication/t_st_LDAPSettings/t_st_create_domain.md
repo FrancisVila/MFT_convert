@@ -91,7 +91,7 @@
 
 13. Click **Save.**
 
-For information on the Address Book LDAP source, refer to <a href="##LDAP" class="MCXref xref">LDAP source</a>.
+For information on the Address Book LDAP source, refer to <a href="#LDAP" class="MCXref xref">LDAP source</a>.
 
 **Related topics:**
 

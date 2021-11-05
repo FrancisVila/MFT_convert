@@ -184,7 +184,7 @@ In the *File Archiving Settings* pane:
     -   When **unchecked**, accounts that use the Address Book policy defined on the business unit level will be allowed to send email packages and share folders only with users that exist in the defined Address Book.
 3.  This business unit setting overrides the global Address Book policy setting for collaboration. This setting can be overridden on the account level if **Allow modifying of the 'Allow Address Book Collaboration' setting** is checked.
 4.  Select **Allow modifying of the Collaboration setting** to enable modifying the **Allow Address Book collaboration** setting at the account level.
-5.  Select Allow Address Book source settings to enable modifying of the Allow Address Book Policy modification at the account level. See <a href="##Address3" class="MCXref xref">Address Book business unit level configuration</a>.
+5.  Select Allow Address Book source settings to enable modifying of the Allow Address Book Policy modification at the account level. See <a href="#Address3" class="MCXref xref">Address Book business unit level configuration</a>.
 
 In the *Login Restriction Policy* pane:
 

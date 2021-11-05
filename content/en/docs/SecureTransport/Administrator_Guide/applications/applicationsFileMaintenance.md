@@ -71,7 +71,7 @@ Use the following procedure to create a File Maintenance application.
     2.  Select **To account email** to send a list of the deleted files to the account email. The notification is sent once per day, even if the application is configured to run several times a day. This setting can be overridden at a business unit level only.
     3.  Select **To (comma-separated list of emails)** to add a list of email addresses to which the notification to be sent. A notification is sent upon each execution of the application and contains all the files deleted files per account. This option is not available at the account level.
 
-9.  (Optional) In the *Schedule* pane, click **Configure** to<a href="##ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+9.  (Optional) In the *Schedule* pane, click **Configure** to<a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
 
 10. (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
 

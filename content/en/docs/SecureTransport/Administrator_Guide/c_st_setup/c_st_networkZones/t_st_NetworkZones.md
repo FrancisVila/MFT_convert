@@ -118,7 +118,7 @@ When you define an AS2, FTP(S), HTTP(S), PeSIT, or SSH transfer site, you can se
 
 ## Set a default network zone
 
-Business units can specify a network zone that defines the public URL for users in that business unit. For details, see <a href="##Create" class="MCXref xref">Create or edit a business unit</a>. AS2, FTP(S), HTTP(S), PeSIT, and SSH transfer sites can specify a network zone that defines the proxy for that site. For details, see <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>. In all cases, you can select **Default** in the business unit or transfer site.
+Business units can specify a network zone that defines the public URL for users in that business unit. For details, see <a href="#Create" class="MCXref xref">Create or edit a business unit</a>. AS2, FTP(S), HTTP(S), PeSIT, and SSH transfer sites can specify a network zone that defines the proxy for that site. For details, see <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>. In all cases, you can select **Default** in the business unit or transfer site.
 
 The default network zone defines the public URL for users in business units where you selected **Default** and for users who are not in a business unit. The default network zone also defines the proxy for transfer sites where you selected **Default**. If a transfer site selects the default network zone and no default is defined, transfers from that site fail.
 

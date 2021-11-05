@@ -151,7 +151,7 @@ Transport         </th>
          <td><p><span id="Pesit_Store&amp;Forward_PI62"></span>For PeSIT transfers, corresponds to PeSIT PI62 or PI4.</p>
 <ul>
 <li>If PI62 is not present, PI4 is used in both Sentinel and PeSIT.</li>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI62 value corresponds either to the <a href="##Pesit_Store&amp;Forward_PI62">Final Destination</a> property of the PeSIT transfer site or to the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Final_Destination">Final Destination</a> property of the Send To Partner step. If both properties are left blank, PI62 is not populated.</li>
+<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI62 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI62">Final Destination</a> property of the PeSIT transfer site or to the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Final_Destination">Final Destination</a> property of the Send To Partner step. If both properties are left blank, PI62 is not populated.</li>
 <li>In the PRESERVE store and forward mode, PI preserves the PI62 value.</li>
 </ul>
 <p>For non-PeSIT transfers, the value of this attribute is the ReceiverId. In case the ReceiverId value is not present, the value of the FinalReceiverId is the <code>ip:port</code> of the Remote Partner or the hostname.</p>         </td>
@@ -165,7 +165,7 @@ Transport         </th>
          <td><p>All</p>         </td>
          <td><p>For PeSIT transfers, corresponds to PeSIT PI61.</p>
 <ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI61 value corresponds either to the <a href="##Pesit_Store&amp;Forward_PI61">Originator</a> property, <span id="Pesit_Store&amp;Forward_PI61"></span>specified in the PeSIT transfer site settings, or the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Originator">Originator</a> property in the Send To Partner step settings. If both properties are left blank, PI61 is not populated.</li>
+<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI61 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI61">Originator</a> property, <span id="Pesit_Store&amp;Forward_PI61"></span>specified in the PeSIT transfer site settings, or the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Originator">Originator</a> property in the Send To Partner step settings. If both properties are left blank, PI61 is not populated.</li>
 <li>In the PRESERVE store and forward mode, PI preserves the PI61 value.</li>
 </ul>
 <p>For non-PeSIT transfers, the value of this attribute is the login name of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> account which received/sent the file from a Remote Partner. If login name is not present, the value is SenderID or UserID.</p>         </td>

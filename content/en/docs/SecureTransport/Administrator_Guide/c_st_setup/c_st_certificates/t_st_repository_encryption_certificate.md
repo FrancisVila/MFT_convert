@@ -25,7 +25,7 @@
 
 5.  Create a user class named `EncryptClass`. Files transferred by users in this class are encrypted. See <a href="../../../c_st_accesscontrol/c_st_userclasses/t_st_userclasses#Add" class="MCXref xref">Add a user class</a>.
 
-6.  Restart the TM Server. See <a href="##Start" class="MCXref xref">Start and stop servers</a>.
+6.  Restart the TM Server. See <a href="#Start" class="MCXref xref">Start and stop servers</a>.
 
 > **Note:**
 >

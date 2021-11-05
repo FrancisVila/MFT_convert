@@ -27,7 +27,7 @@ Cluster status is displayed in the Administration Tool.
 
 For each Server in the cluster, the page lists its status (online or offline), its type (primary or secondary), and its host name or IP address. Online status means the server is running and communicating with the cluster. Offline status means the server has been stopped, has failed, or cannot communicate with the cluster.
 
-The **Bounce**, **Bounce All**, and **Synchronize All** buttons do not appear on secondary servers. To bounce a secondary server locally, see <a href="##Reload" class="MCXref xref">Reload server configuration</a>.
+The **Bounce**, **Bounce All**, and **Synchronize All** buttons do not appear on secondary servers. To bounce a secondary server locally, see <a href="#Reload" class="MCXref xref">Reload server configuration</a>.
 
 On a secondary server, the time of the last manual synchronization is reported. The timestamp is also reported in the `cluster_last_sync_timestamp` file located in the `<FILEDRIVEHOME>/var/tmp/cluster_last_sync_timestamp` directory.
 

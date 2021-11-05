@@ -2,7 +2,7 @@
     "title": "Troubleshoot common problems",
     "linkTitle": "Troubleshoot common problems",
     "weight": "200"
-}The following topics discuss the most common issues that can occur when using <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. If you are still having issues after following the procedures in this topic, contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support for further assistance. For more information, see <a href="##top" class="MCXref xref">Get more help</a>.
+}The following topics discuss the most common issues that can occur when using <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. If you are still having issues after following the procedures in this topic, contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support for further assistance. For more information, see <a href="#top" class="MCXref xref">Get more help</a>.
 
 -   <a href="t_st_communicationproblems" class="MCXref xref">Communication problems</a>
 -   <a href="t_st_servicesdonotstart" class="MCXref xref">Servers do not start</a>

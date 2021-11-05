@@ -2,7 +2,7 @@
     "title": "Define Address Book settings for a domain",
     "linkTitle": "Define Address Book settings for a domain",
     "weight": "370"
-}For information on LDAP Address Book sources, refer to <a href="##LDAP" class="MCXref xref">LDAP source</a>.
+}For information on LDAP Address Book sources, refer to <a href="#LDAP" class="MCXref xref">LDAP source</a>.
 
 > **Note:**
 >

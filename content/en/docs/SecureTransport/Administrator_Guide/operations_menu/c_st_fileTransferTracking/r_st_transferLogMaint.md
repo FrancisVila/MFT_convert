@@ -6,7 +6,7 @@
 
 A Transfer Log Maintenance type application has the following features:
 
--   User-definable schedule for transfer log daily backup and export or both. For more information, see <a href="##ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+-   User-definable schedule for transfer log daily backup and export or both. For more information, see <a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
 -   Application-specific parameters regarding the processing of transfer log entries include:
     -   Expiration period for log entries until export and deletion or both
     -   A condition to export the entries before deleting them or not

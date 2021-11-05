@@ -103,7 +103,7 @@ This procedure uses the following placeholders:
     -   Set `Http.Hsm.enabled` to `true` to enable HSM for the HTTP Server
 3.  Create a local certificate with the same alias as the HSM certificate you created, for example, `ftpd` or `httpd`. See <a href="../t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not use this certificate, but you must have a certificate with the correct alias to reference the HSM certificate.
 4.  Set the SSL key aliases for the protocol servers. See <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-ftp" class="MCXref xref">Manage the FTP server</a> and <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-http" class="MCXref xref">Manage the HTTP server</a>.
-5.  Restart the protocol servers. See <a href="##Start" class="MCXref xref">Start and stop servers</a>.
+5.  Restart the protocol servers. See <a href="#Start" class="MCXref xref">Start and stop servers</a>.
 
  
 

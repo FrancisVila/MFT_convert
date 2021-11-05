@@ -6,4 +6,4 @@
 
 While <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> is expected to function properly in a virtual environment, there may be performance implications which can invalidate typical sizing and recommendations for <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span>.
 
-A virtual environment must provide the minimum required virtual hardware. For details, see <a href="##beforeinstallst_3365039947_1090353" class="MCXref xref">Minimum UNIX hardware requirements</a>.
+A virtual environment must provide the minimum required virtual hardware. For details, see <a href="#beforeinstallst_3365039947_1090353" class="MCXref xref">Minimum UNIX hardware requirements</a>.
