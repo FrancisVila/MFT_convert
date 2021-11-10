@@ -110,7 +110,7 @@ During the installation, do not close any console windows that are opened.
     -   **Secret File Path**– The path to the `taeh` secret file you copied to this system. If blank, the installer creates a new secret file.
     -   If you are installing the first server in an Enterprise Cluster, you can specify a secret file or have the installer create one. Before you install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on the other cluster nodes, you must copy the secret file to those systems.
     -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. For more information, see <a href="../../../prereqs_overview/secret_file#beforeinstallst_3365039947_1107715" class="MCXref xref">Secret file</a>.
-    -   **ClusterAuto-Register IP/FQDN** – To automatically register a node in an Enterprise Cluster, specify it by its IP address or FQDN. Otherwise, leave the field empty. You can add a SecureTransport Server to the cluster at a later stage using the Administration Tool. For more information, see <a href="#" class="MCXref xref">Add a server to a cluster</a>.
+    -   **ClusterAuto-Register IP/FQDN** – To automatically register a node in an Enterprise Cluster, specify it by its IP address or FQDN. Otherwise, leave the field empty. You can add a SecureTransport Server to the cluster at a later stage using the Administration Tool. For more information, see <a href="/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/large_enterprise_clustering/t_st_add_server_to_cluster.htm" class="MCXref xref">Add a server to a cluster</a>.
 
       
     Click **Next** to continue.

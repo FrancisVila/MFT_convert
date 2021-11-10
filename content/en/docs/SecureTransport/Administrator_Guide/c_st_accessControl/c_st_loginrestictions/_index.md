@@ -21,7 +21,7 @@ Refer to the following topics to manage user accounts, account templates, and bu
 
 -   To manage user accounts, refer to <a href="../../accounts/useraccounts" class="MCXref xref">User accounts</a>
 -   To manage account templates, refer to <a href="../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates" class="MCXref xref">Manage account templates</a>.
--   To manger business units, refer to <a href="#" class="MCXref xref">Manage business units</a>.
+-   To manger business units, refer to <a href="" class="MCXref xref">Manage business units</a>.
 
 Refer to the following topics to manage login restrictions and create login restriction policies:
 

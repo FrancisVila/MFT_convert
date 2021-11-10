@@ -4,7 +4,7 @@
     "weight": "30"
 }**Revision history**
 
-The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable axway_variables.Document_type variable">Adminstration Tool online help</span>.
+The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable axway_variables.Document_type variable">SecureTransport documentation</span>.
 
 <table>
    <thead>

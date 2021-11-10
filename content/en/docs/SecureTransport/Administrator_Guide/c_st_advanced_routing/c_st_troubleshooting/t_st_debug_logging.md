@@ -7,4 +7,4 @@
 **Related topics:**
 
 -   <a href="../t_st_general_troubleshooting_steps" class="MCXref xref">General troubleshooting steps</a>
--   <a href="#" class="MCXref xref">Log into a file</a>
+-   <a href="" class="MCXref xref">Log into a file</a>

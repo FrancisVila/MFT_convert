@@ -53,7 +53,7 @@ Use the following steps to import the CA certificate from the <span class="mc-va
 
 The following topics provide how-to instructions for importing and exporting <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server and Edge CAs:
 
--   <a href="#" class="MCXref xref">Export the SecureTransport Server CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
--   <a href="#" class="MCXref xref">Import the SecureTransport Server CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
--   <a href="#" class="MCXref xref">Export the SecureTransport Edge CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.
--   <a href="#" class="MCXref xref">Import the SecureTransport Edge CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.
+-   <a href="" class="MCXref xref">Export the SecureTransport Server CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
+-   <a href="" class="MCXref xref">Import the SecureTransport Server CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
+-   <a href="" class="MCXref xref">Export the SecureTransport Edge CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.
+-   <a href="" class="MCXref xref">Import the SecureTransport Edge CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.

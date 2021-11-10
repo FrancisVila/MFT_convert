@@ -65,10 +65,8 @@ The following table describes the general options for a FTP(S) transfer site.
       <tr>
          <td>Download Folder         </td>
          <td><p>The folder on the remote server from which the file is transferred.</p>
-<p>To use the expression language to append dates:</p>
-<p>The download folder will be evaluated using the current date when the transfer site is being executed. For example <code>folder_20210130</code>.</p>
-<p>Example:</p>
-<p><code>folder_${date("yyyyMMdd")}</code></p>         </td>
+<p>To use the an EL expression to append dates:<code>folder_${date("yyyyMMdd")}</code></p>
+<p>The download folder will be evaluated using the current date when the transfer site is being executed. For example <code>folder_20210130</code>.</p>         </td>
       </tr>
       <tr>
          <td>Download Pattern         </td>
@@ -114,13 +112,9 @@ The *Transfer Settings* options allow you to define various transfer settings wi
       <tr>
          <td>Upload command         </td>
          <td><p>Define the FTP command to be used in requests when server-initiated transfers are executed:</p>
-<p><strong>STOR</strong> - select to use the <em>STOR</em> command for server-initiated transfers.</p>
+<p><strong>STOR</strong> (default) - select to use the <em>STOR</em> command for server-initiated transfers. Saves Data and Replaces an Existing File</p>
 <p><strong>APPE</strong> - select to use the <em>APPE</em> command for server-initiated transfers.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>STOR is the default command for FTP server-initiated transfers.</p>
-</blockquote>
- Upload command is reported to Axway Sentinel and displayed in the Protocol Parameter attribute.         </td>
+ The upload command is reported to Axway Sentinel and displayed in the Protocol Parameter attribute.         </td>
       </tr>
       <tr>
          <td>Transcode any line terminators in ASCII mode         </td>
@@ -150,7 +144,7 @@ The *Transfer Settings* options allow you to define various transfer settings wi
       <tr>
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict FTPS to use only FIPS 140-2 Level 1 certified cryptographic libraries. This option is displayed when <strong>Use FTPS</strong> is selected.</p>
-<p>When you enable FIPS transfer mode, the panel expands with an additional field that lets you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>Ftps.FIPS.SIT.Ciphers</code> configuration option.</p>
+<p>When you enable FIPS transfer mode, the panel expands with an additional field where you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>Ftps.FIPS.SIT.Ciphers</code> configuration option.</p>
 <p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
       </tr>
       <tr>
@@ -191,9 +185,9 @@ The Site Login Credentials options allow you to define credentials and / or add 
       </tr>
       <tr>
          <td>Certificate         </td>
-         <td><p>A private certificate for SecureTransport to use to log in to the FTP server. You can select a certificate or import a certificate. This field is displayed when <strong>Use FTPS</strong> is selected.</p>
+         <td><p>A private certificate for SecureTransport to use to log in to the FTP server. You can select or import a certificate. This field is displayed when <strong>Use FTPS</strong> is selected.</p>
 <p>When <strong>Use Expression Language</strong> is enabled, you can set the certificate dynamically by choosing the scope (account or server level) and providing a valid expression that will be evaluated to the name of an available certificate.</p>
-<p>By default, the usage of expired X509 certificates is allowed for SIT transfers. To forbid it, set the <code>SIT.allowExpiredCertificates </code>to false</p>         </td>
+<p>By default, the usage of expired X509 certificates is allowed for SIT transfers. To forbid it, set the <code>SIT.allowExpiredCertificates </code>to <code>false</code>.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -202,7 +196,7 @@ The Site Login Credentials options allow you to define credentials and / or add 
 
 ## Post Transmission Send Options for FTP Transfer sites
 
-The Send Options subtab allows you to define post transmission actions on file send success and failure.
+The **Send Options** subtab allows you to define post transmission actions on file send success and failure.
 
 <table>
    <thead>

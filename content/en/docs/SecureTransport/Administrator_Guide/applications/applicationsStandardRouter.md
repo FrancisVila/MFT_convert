@@ -71,7 +71,7 @@ See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow 
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Manage applications</a>
+-   <a href="" class="MCXref xref">Manage applications</a>
 -   <a href="../applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
 -   <a href="../applicationsauditlogmaintenance" class="MCXref xref">Audit Log Maintenance application</a>
 -   <a href="../applicationssentinellinkdatamaintenance" class="MCXref xref">Axway Sentinel Link Data Maintenance application</a>

@@ -115,5 +115,5 @@ The *<span class="mc-variable axway_variables.Company_Name variable">Axway</span
 -   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
 -   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
 -   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="#" class="MCXref xref">Axway Sentinel dashboards</a>
+-   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
 -   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>

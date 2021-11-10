@@ -127,5 +127,5 @@ See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow 
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Manage applications</a>
+-   <a href="" class="MCXref xref">Manage applications</a>
 -   <a href="../" class="MCXref xref">Applications</a>

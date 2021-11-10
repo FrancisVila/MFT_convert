@@ -127,7 +127,7 @@ Apart from Account and account templates, you can set additional attributes on t
 
 -   <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>
 -   <a href="../../../accounts/t_st_transferprofiles" class="MCXref xref">Transfer profiles</a>
--   <a href="#" class="MCXref xref">Manage business units</a>
+-   <a href="" class="MCXref xref">Manage business units</a>
 -   <a href="../../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates" class="MCXref xref">Manage site templates</a>
 -   <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
 -   <a href="../../../c_st_accesscontrol/c_st_loginrestictions/t_st_manloginrestictions" class="MCXref xref">Manage Login Restriction Policies</a>
@@ -142,7 +142,7 @@ You cannot use these in email templates and they are not available for use in EL
 
 #### Additional attributes of certificates
 
-With certificates, there is no UI in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool to create, edit or delete attributes. You can only set to use these with the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> admin REST API. See the [Swagger REST API documentation](##http://apidocs.axway.com/swagger-ui-st/admin-20/) for reference. While generally referring to certificates, these attributes are available for:
+With certificates, there is no UI in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool to create, edit or delete attributes. You can only set to use these with the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> admin REST API. See the [Swagger REST API documentation](#http://apidocs.axway.com/swagger-ui-st/admin-20/) for reference. While generally referring to certificates, these attributes are available for:
 
 -   <a href="../../c_st_certificates/c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
 -   <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates" class="MCXref xref">Manage login certificates</a>
@@ -198,7 +198,7 @@ The following example from the default email template uses a variable to select 
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Add, delete, upload or download a mail template</a>
--   <a href="#" class="MCXref xref">Download a mail template</a>
--   <a href="#" class="MCXref xref">Upload an updated mail template</a>
--   <a href="#" class="MCXref xref">Delete mail templates</a>
+-   <a href="" class="MCXref xref">Add, delete, upload or download a mail template</a>
+-   <a href="" class="MCXref xref">Download a mail template</a>
+-   <a href="" class="MCXref xref">Upload an updated mail template</a>
+-   <a href="" class="MCXref xref">Delete mail templates</a>

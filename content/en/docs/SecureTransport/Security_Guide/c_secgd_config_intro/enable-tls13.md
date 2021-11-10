@@ -16,7 +16,7 @@ To enable TLSv1.3 in <span class="mc-variable axway_variables.Component_Short_Na
 -   `Pesit.Listeners.Ssl.enabledProtocols, Pesit.SIT.enabledProtocols`
 -   `Streaming.EnabledProtocols`
 
-Add TLSv1.3 cipher suites to the following configuration options. See the list of supported cipher suits [here](#).
+Add TLSv1.3 cipher suites to the following configuration options. See the list of supported cipher suits [here]().
 
 -   `Admin.EnabledCipherSuites`
 -   `As2.FIPS.SIT.Ciphers, As2.Listeners.Ssl.enabledCipherSuites, As2.SIT.Ciphers`

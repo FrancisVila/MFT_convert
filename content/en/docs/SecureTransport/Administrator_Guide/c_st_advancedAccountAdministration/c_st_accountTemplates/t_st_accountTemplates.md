@@ -87,7 +87,7 @@ Use the following procedure to add an account template.
     This field determines the file maintenance policy.
 
     -   When **Default** is selected, then the following apply:
-        1.  If the account is assigned to a business unit, it will inherit <a href="#" class="MCXref xref">Manage business units</a>.
+        1.  If the account is assigned to a business unit, it will inherit <a href="" class="MCXref xref">Manage business units</a>.
         2.  Otherwise, the <a href="../../../applications/applicationsfilemaintenance" class="MCXref xref">File Maintenance application</a> applies.
     -   When **Custom** is selected, the panel expands with a *Custom settings* pane that allows you to modify the global <a href="../../../applications/applicationsfilemaintenance#Configur" class="MCXref xref">File Maintenance application</a>. The customized policy applies to the accounts assigned to this account template only.
     -   When **Disabled** is selected, file maintenance will be disabled for this account.

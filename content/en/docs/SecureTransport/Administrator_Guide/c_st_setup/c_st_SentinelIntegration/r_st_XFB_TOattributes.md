@@ -1115,6 +1115,6 @@ The Session ID could be used to query the server log for a particular session.  
 -   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
 -   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
 -   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="#" class="MCXref xref">Axway Sentinel dashboards</a>
+-   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
 -   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
 -   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>

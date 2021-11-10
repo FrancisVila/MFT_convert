@@ -23,5 +23,5 @@ A compressed file, containing both PGP encrypted and clean files, is uploaded. R
 -   <a href="../c_st_inherited_versus_specific" class="MCXref xref">Inherited settings versus Specific settings</a>
 -   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
 -   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="#" class="MCXref xref">Transformed file as the input to the next step</a>
+-   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>
 -   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>

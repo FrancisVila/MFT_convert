@@ -12,7 +12,7 @@
 "weight": "290"
 }The Edge to Back End server communication utilizes Network Zones that allows one or multiple Edge servers to be grouped in a "zone" that all inbound and outbound communications will go through. The existence of several zones provides the opportunity to have multiple peripheral networks (for example, one for intranet and one for internet traffic). Additionally, the communications are entirely outbound from Back End perspective. That means that no inbound ports in the firewall placed in between the Edge and Back End need to be opened for communication between the Edge and Back End.
 To configure streaming communications between the Edge and Back End server, take the following steps:
-1. Exchange the Internal CA certificates of the Edge(s) and the Back End(s). To exchange CA certificates of a Back End and Edge, the CA certificate of the Back End should be exported and imported on the Edge and the CA certificate of the Edge should be exported and imported on the Back End. For additional information, refer to <a href="#" class="MCXref xref">Manage trusted CAs</a>.
+1. Exchange the Internal CA certificates of the Edge(s) and the Back End(s). To exchange CA certificates of a Back End and Edge, the CA certificate of the Back End should be exported and imported on the Edge and the CA certificate of the Edge should be exported and imported on the Back End. For additional information, refer to <a href="" class="MCXref xref">Manage trusted CAs</a>.
 1. On the Back End, select \\\*\\\*Setup &gt; Certificates\\\*\\\*.
 2. Click the \\\*\\\*Trusted CAs\\\*\\\* tab.
 3. Navigate to the page that lists the certificate labeled \\\*ca\\\*.

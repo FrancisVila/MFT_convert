@@ -20,7 +20,7 @@ The following changes are added to the <span class="mc-variable suite_variables.
          <td>5.5 September 2021 Update         </td>
          <td><ul>
 <li><p><a href="../c_secgd_config_intro/enable-tls13" class="MCXref xref">Enable TLSv1.3 protocol support in SecureTransport</a> topic added</p></li>
-<li><p><a href="#" class="MCXref xref">Ciphers and cipher suites</a> updated with TLSv1.3 cipher suites</p></li>
+<li><p><a href="" class="MCXref xref">Ciphers and cipher suites</a> updated with TLSv1.3 cipher suites</p></li>
 </ul>         </td>
       </tr>
       <tr>
@@ -34,13 +34,13 @@ The following changes are added to the <span class="mc-variable suite_variables.
       <tr>
          <td>5.5 October 2020 Update         </td>
          <td><ul>
-<li><a href="#" class="MCXref xref">Ciphers and cipher suites</a> updated</li>
+<li><a href="" class="MCXref xref">Ciphers and cipher suites</a> updated</li>
 <li><a href="../c_secgd_config_intro/c_secgd_config_secbydefault" class="MCXref xref">Secure by default configuration</a> updated</li>
 </ul>         </td>
       </tr>
       <tr>
          <td>5.5 June 2020 Update         </td>
-         <td><p>New <a href="#">ciphers and algorithms</a> for SSH Communication added</p>         </td>
+         <td><p>New <a href="">ciphers and algorithms</a> for SSH Communication added</p>         </td>
       </tr>
    </tbody>
 </table>

@@ -10,7 +10,7 @@
 
 **Related topic:**
 
--   <a href="#" class="MCXref xref">Streaming deployment</a>
+-   <a href="" class="MCXref xref">Streaming deployment</a>
 
 ## Specify ports for internal TM server communications
 
@@ -107,7 +107,7 @@ When you define an AS2, FTP(S), HTTP(S), PeSIT, or SSH transfer site, you can se
 6.  Under *Proxy*, select **Enable Proxy**.
 7.  Select the proxies, **SOCKS5** or **HTTP**, to configure in the node.
 8.  For each selected proxy:
-    1.  Enter the **Port**. The proxy server must listen for connections on this port. For the SOCKS5 proxy on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, configure the port for the proxy server on the *Server Control* page. See <a href="#" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>. If you use a third-party proxy server, refer to its documentation to configure the port.
+    1.  Enter the **Port**. The proxy server must listen for connections on this port. For the SOCKS5 proxy on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, configure the port for the proxy server on the *Server Control* page. See <a href="" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>. If you use a third-party proxy server, refer to its documentation to configure the port.
     2.  (Optional) If required by the proxy server, enter a **Username** and, if also required, select **User Password** and enter a **Password**. The SOCKS5 proxy on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge does not use this authentication.
 9.  For a new node, add the address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers that run the SOCKS5 proxies or the addresses of the other proxy servers. If you selected **SOCKS5**, you must use IPv4 addresses. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server selects the servers at these address sequentially (round-robin) when it uses this node for server-initialed transfer.
 10. If DNS is not available on this <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, select **Use the Edge DNS configuration** to resolve transfer site host names and FQDNs using the DNS on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge so that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can route transfers correctly.

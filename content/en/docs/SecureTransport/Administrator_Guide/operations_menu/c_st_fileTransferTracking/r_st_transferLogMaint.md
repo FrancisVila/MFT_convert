@@ -19,7 +19,7 @@ For more information, see <a href="../../../applications/applicationstransferlog
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Resubmit status</a>
+-   <a href="" class="MCXref xref">Resubmit status</a>
 -   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
 -   <a href="../t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a>
 -   <a href="../t_st_filetransfers" class="MCXref xref">Manage file transfers</a>

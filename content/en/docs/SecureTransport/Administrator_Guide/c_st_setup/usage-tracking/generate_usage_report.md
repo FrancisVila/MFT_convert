@@ -358,6 +358,6 @@ For example, to generate a report for May, the start date should be 1 May, the e
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Disable automatic snapshot updates</a>
--   <a href="#" class="MCXref xref">Server usage snapshot by user class</a>
--   <a href="#" class="MCXref xref">Server usage details</a>
+-   <a href="" class="MCXref xref">Disable automatic snapshot updates</a>
+-   <a href="" class="MCXref xref">Server usage snapshot by user class</a>
+-   <a href="" class="MCXref xref">Server usage details</a>

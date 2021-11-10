@@ -4,7 +4,7 @@
     "weight": "180"
 }This topic provides the configuration order for the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> feature. It also provides a brief overview of each configuration item.
 
-Business units can be created prior to configuring the Route Package Template. For configuration information, refer to <a href="#" class="MCXref xref">Manage business units</a>
+Business units can be created prior to configuring the Route Package Template. For configuration information, refer to <a href="" class="MCXref xref">Manage business units</a>
 
 Optionally, an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator can be created. For configuration information, refer to <a href="../c_st_configuration/t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a> and to <a href="../c_st_configuration/t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a>.
 

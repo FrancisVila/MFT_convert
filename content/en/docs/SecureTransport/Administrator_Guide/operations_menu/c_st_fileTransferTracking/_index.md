@@ -41,7 +41,7 @@ In the listed cases, no **Resubmit** button is displayed. However, resubmit is n
 
 The following topics provide additional information on viewing and managing file transfer activity:
 
--   <a href="#" class="MCXref xref">Resubmit status</a> - Describes the resubmit status.
+-   <a href="" class="MCXref xref">Resubmit status</a> - Describes the resubmit status.
 -   <a href="r_st_transfer_status" class="MCXref xref">Transfer status</a> - Describes the transfer status.
 -   <a href="t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a> - Describes viewing and searching file transfer information.
 -   <a href="t_st_filetransfers" class="MCXref xref">Manage file transfers</a> - Describes managing file transfers and provides how-to instructions for restarting and canceling file transfers.

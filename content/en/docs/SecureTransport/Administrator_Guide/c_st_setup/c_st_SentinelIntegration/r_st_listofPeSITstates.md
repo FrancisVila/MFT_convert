@@ -238,6 +238,6 @@ This corresponds to SIT Push in <span class="mc-variable axway_variables.Compone
 -   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
 -   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
 -   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="#" class="MCXref xref">Axway Sentinel dashboards</a>
+-   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
 -   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
 -   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>

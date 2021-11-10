@@ -26,5 +26,5 @@ On a <span class="mc-variable axway_variables.Component_Short_Name variable">Sec
 
 The following topics describe the streaming deployment and describe managing the Transaction Manager (TM), protocol, and proxy server communication:
 
--   <a href="#" class="MCXref xref">Streaming deployment</a> - Describes <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> streaming deployment.
+-   <a href="" class="MCXref xref">Streaming deployment</a> - Describes <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> streaming deployment.
 -   <a href="t_st_networkzones" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a> - Describes managing the Transaction Manager (TM), protocol, and proxy server communication and provides how-to instructions for configuring the Transaction Manager (TM), protocol, and proxy server communication.

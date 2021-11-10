@@ -159,7 +159,7 @@ Use the following procedure to view detailed status information about an advance
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Resubmit status</a>
+-   <a href="" class="MCXref xref">Resubmit status</a>
 -   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
 -   <a href="../t_st_filetransfers" class="MCXref xref">Manage file transfers</a>
 -   <a href="../r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a>

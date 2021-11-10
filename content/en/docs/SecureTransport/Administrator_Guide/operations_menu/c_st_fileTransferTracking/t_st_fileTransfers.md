@@ -11,7 +11,7 @@ The following topics provide how-to instructions for restarting and canceling a 
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Resubmit status</a>
+-   <a href="" class="MCXref xref">Resubmit status</a>
 -   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
 -   <a href="../t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a>
 -   <a href="../r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a>

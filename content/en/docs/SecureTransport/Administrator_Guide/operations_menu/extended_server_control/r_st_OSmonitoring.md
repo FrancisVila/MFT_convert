@@ -13,14 +13,14 @@ The following topics describe the file transfer and admin processes:
 
 **Related topics:**
 
--   <a href="#" class="MCXref xref">Manage server operations</a>
--   <a href="#" class="MCXref xref">Manage the FTP server</a>
--   <a href="#" class="MCXref xref">Manage the HTTP server</a>
--   <a href="#" class="MCXref xref">Manage the AS2 server</a>
--   <a href="#" class="MCXref xref">Manage the SSH server</a>
--   <a href="#" class="MCXref xref">Manage the PeSIT server</a>
--   <a href="#" class="MCXref xref">Manage the Transaction Manager server</a>
--   <a href="#" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>
+-   <a href="" class="MCXref xref">Manage server operations</a>
+-   <a href="" class="MCXref xref">Manage the FTP server</a>
+-   <a href="" class="MCXref xref">Manage the HTTP server</a>
+-   <a href="" class="MCXref xref">Manage the AS2 server</a>
+-   <a href="" class="MCXref xref">Manage the SSH server</a>
+-   <a href="" class="MCXref xref">Manage the PeSIT server</a>
+-   <a href="" class="MCXref xref">Manage the Transaction Manager server</a>
+-   <a href="" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>
 -   <a href="../t_st_monitorserver" class="MCXref xref">Monitor server</a>
 
 <span id="File"></span>

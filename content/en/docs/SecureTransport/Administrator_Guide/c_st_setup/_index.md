@@ -26,7 +26,7 @@
 -   <a href="c_st_file_archiving" class="MCXref xref">File archiving</a>
 -   <a href="c_st_networkzones" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>
 -   <a href="t_st_stream_edge_backend" class="MCXref xref">Configure SecureTransport Back End to Edge streaming communication</a>
--   <a href="#" class="MCXref xref">Address Book</a>
+-   <a href="" class="MCXref xref">Address Book</a>
 
 ## Log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool
 

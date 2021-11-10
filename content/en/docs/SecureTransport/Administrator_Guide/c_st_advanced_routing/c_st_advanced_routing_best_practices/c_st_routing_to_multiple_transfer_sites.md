@@ -24,4 +24,4 @@ A file is uploaded. Route 1 is triggered. The file is sent to all transfer sites
 -   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
 -   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
 -   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="#" class="MCXref xref">Transformed file as the input to the next step</a>
+-   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>

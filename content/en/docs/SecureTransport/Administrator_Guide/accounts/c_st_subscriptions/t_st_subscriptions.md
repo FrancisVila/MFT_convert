@@ -28,7 +28,7 @@ Before creating a subscription for an account, you must create at least one appl
 
 **Prerequisites**
 
--   Create an application. For details, see <a href="#" class="MCXref xref">Manage applications</a>.
+-   Create an application. For details, see <a href="" class="MCXref xref">Manage applications</a>.
 -   If the account is to have server-initiated transfers associated with it, you must create at least one transfer site for the account. For details, see <a href="../../transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Transfer sites</a>.
 
 **Workflow**
@@ -131,8 +131,8 @@ In the *General Settings* pane:
         > Caution  Expressions, used in attribute values, cannot evaluate a subscription attribute, i.e., ${subscription....}. This is because the subscription attribute is bound to the subscription itself and is not transferred with the file to a new subscription.
 
           
-        Flow attributes can be accessed using the following expression: `${flow.attributes[‘userVars.ATTRIBUTE_NAME’]}.` Note that flow attributes can be used for expression evaluation in Advanced Routing only when the application operates with files.  
-        Subscription attributes can be accessed using the following expression: `${subscription.attributes['userVars.ATTRIBUTE_NAME'].` Subscription attributes can be used for expression evaluation in all Advanced Routing fields.  
+        Flow attributes can be accessed using the following expression: `${flow.attributes['userVars.ATTRIBUTE_NAME']}.` Note that flow attributes can be used for expression evaluation in Advanced Routing only when the application operates with files.  
+        Subscription attributes can be accessed using the following expression: `${subscription.attributes['userVars.ATTRIBUTE_NAME']}.` Subscription attributes can be used for expression evaluation in all Advanced Routing fields.  
         Examples of Attributes:
 
         <table>
@@ -271,7 +271,7 @@ Use a subscription to a Human to System type application to specify email addres
 
 ## Scheduled downloads and tasks
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> scheduler feature allows you to schedule file downloads and tasks initiated by the server. You can schedule jobs in two ways, either per [subscription](#Set) or per [application](##ConfigureMaintSchedule). You can access the scheduler page by creating or editing any application or subscription with a transfer site that supports scheduled transfers. Only file downloads can be scheduled. REST API endpoints are also available for configuring scheduled tasks for applications and subscriptions.
+The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> scheduler feature allows you to schedule file downloads and tasks initiated by the server. You can schedule jobs in two ways, either per [subscription](#Set) or per [application](#ConfigureMaintSchedule). You can access the scheduler page by creating or editing any application or subscription with a transfer site that supports scheduled transfers. Only file downloads can be scheduled. REST API endpoints are also available for configuring scheduled tasks for applications and subscriptions.
 
 When you create a scheduled transfer, for example, when creating a subscription connecting an account to an application where you are transferring files from a remote site or an internal system, you can set the following configuration options:
 
@@ -298,13 +298,15 @@ When you subscribe a specific account to an application, depending on the transf
 1.  Click **Accounts > User Accounts** and click the account you want to subscribe.
 2.  Click **Subscriptions > Subscribe to &lt;application\_name>**.  
     The *Subscription to &lt;application name>* page is displayed.
-3.  To set the schedule conditions, click **Configure.**  
+3.  In the *For Files Received from this Account or its Partners* pane, select the **Automatically retrieve files from:** check box and choose the transfer site from which the files to be downloaded from the drop down.  
+    The **Schedule** pane is displayed.
+4.  To set the schedule conditions, click **Configure.**  
     The *Configure Schedule* dialog box is displayed.
-4.  In the *Configure Schedule* dialog box, specify the desired conditions for the scheduled server‑initiated download.  
+5.  In the *Configure Schedule* dialog box, specify the desired conditions for the scheduled server‑initiated download.  
     If the schedule is set on a recurring basis, the **Recurrence** options dynamically change with respect to the recurrence condition: **Hourly**, **Daily**, **Weekly**, **Monthly**, **Yearly**, or **CRON expression**. You can add multiple cron expressions, each on a new line.  
     To schedule an immediate recurrent task, select **Schedule events on a recurring basis** and then select **Start now** in the *Length of Recurrence* pane. The task will begin on the next minute.
-5.  Choose whether the task should be performed if it falls on a day specified as a holiday in the [Holiday Schedule](../../../c_st_setup/t_st_holidayschedule). Note that the Holiday Schedule functionality does not allow for executing a scheduled task on the next working day if the specified date happens to be a holiday – when this occurs, the tasks are not executed.
-6.  Click **OK** when finished setting the schedule.
+6.  Choose whether the task should be performed if it falls on a day specified as a holiday in the [Holiday Schedule](../../../c_st_setup/t_st_holidayschedule). Note that the Holiday Schedule functionality does not allow for executing a scheduled task on the next working day if the specified date happens to be a holiday – when this occurs, the tasks are not executed.
+7.  Click **OK** when finished setting the schedule.
 
 <span id="Retrieve"></span>
 

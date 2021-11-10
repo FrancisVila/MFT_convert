@@ -24,7 +24,7 @@ The following changes are added to the <span class="mc-variable suite_variables.
          <td>5.5 October 2020 Update         </td>
          <td><ul>
 <li><a href="../installation/install-st-on-appliance" class="MCXref xref">Install SecureTransport on the appliance</a> updated</li>
-<li>Updated instructions on how to <a href="#" class="MCXref xref">Setup SLEHA with OCFS2 using multicast on the first node</a></li>
+<li>Updated instructions on how to <a href="" class="MCXref xref">Setup SLEHA with OCFS2 using multicast on the first node</a></li>
 <li><a href="../axway_appliance_san_card/setting_up_suse_linux_enterprise_ha_ocfs2" class="MCXref xref">Configure a SUSE Linux Enterprise High Availability cluster with OCFS2</a> updated</li>
 <li><a href="../axway_appliance_san_card/setting_up_suse_linux_enterprise_ha_ocfs2/f_remove_node" class="MCXref xref">Remove a node from a SLEHA cluster</a> updated</li>
 <li><a href="../axway_appliance_san_card/setting_up_suse_linux_enterprise_ha_ocfs2/verifiy_cluster" class="MCXref xref">Verify cluster configuration</a> updated</li>

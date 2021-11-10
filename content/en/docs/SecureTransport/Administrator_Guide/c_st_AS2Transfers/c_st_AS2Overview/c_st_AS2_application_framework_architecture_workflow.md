@@ -39,4 +39,4 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Secu
 >
 > AS2 site does not support server-initiated inbound transfers (server pull).
 
-For details, see <a href="#" class="MCXref xref">Manage applications</a>.
+For details, see <a href="" class="MCXref xref">Manage applications</a>.

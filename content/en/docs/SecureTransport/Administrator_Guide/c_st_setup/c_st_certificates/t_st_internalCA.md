@@ -14,7 +14,7 @@ The internal CA can be used to generate server or client certificates. It provid
 -   Generating an account certificate. For detail, see <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701" class="MCXref xref">Manage login certificates</a>.
 -   Signing imported SSH Keys. For detail, see <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates#Import" class="MCXref xref">Manage login certificates</a>.
 
-The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support for more information. For contact information, see <a href="#" class="MCXref xref">Get more help</a>.
+The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support for more information. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
 
 In addition to issuing certificates signed by internal CA, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports a few management operations for the internal CA. These operations include:
 

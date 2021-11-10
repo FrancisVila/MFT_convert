@@ -19,7 +19,7 @@ To ensure zero downtime, the following prerequisites must be met:
     -   both must have the same system configurations and account schemas configured
 -   The Load balancer balances traffic between the edges (<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> nodes on Cluster 1) by hostname, resolved by internal DNS server (or hosts file on the Load Balancer host)
 -   File storages on both clusters must be in constant sync and file contents must be identical and present at both clusters
--   The database replication requires that databases on both clusters contain a special set of tables. The following list of database tables contains the one that **must not be** synced.
+-   The database replication requires that databases on both clusters contain a special set of tables. The following tables **must not be** synced:
     -   `AUDITLOG`
     -   `CLUSTERNODE`
     -   `DMZ_EDGE`

@@ -4,7 +4,7 @@
     "weight": "30"
 }**Revision history**
 
-The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable axway_variables.Document_type variable">Adminstration Tool online help</span>.
+The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable axway_variables.Document_type variable">SecureTransport documentation</span>.
 
 <table>
    <thead>
@@ -14,6 +14,19 @@ The following changes are added to the <span class="mc-variable suite_variables.
       </tr>
    </thead>
    <tbody>
+      <tr>
+         <td>5.5 November 2021 Update         </td>
+         <td><ul>
+<li><p>New topic added: <a href="../c_st_troubleshootcommonproblems/stfs-retries" class="MCXref xref">Troubleshooting I/O problems</a></p></li>
+<li><p><a href="../accounts/c_st_subscriptions/t_st_subscriptions" class="MCXref xref">Manage subscriptions</a> updated with new option</p></li>
+<li><p>The example expression to access a subscription attribute in the following topics is corrected:</p>
+<ul>
+<li><p><a href="../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a></p></li>
+<li><p><a href="../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates" class="MCXref xref">Manage account templates</a></p></li>
+<li><p><a href="../accounts/c_st_subscriptions/t_st_subscriptions" class="MCXref xref">Manage subscriptions</a></p></li>
+</ul></li>
+</ul>         </td>
+      </tr>
       <tr>
          <td>5.5 October 2021 Update         </td>
          <td><ul>
@@ -80,7 +93,7 @@ The following changes are added to the <span class="mc-variable suite_variables.
 <li><a href="../accounts/t_st_transferprofiles" class="MCXref xref">Transfer profiles</a></li>
 <li><a href="../accounts/transfersites" class="MCXref xref">Transfer sites</a></li>
 <li><a href="../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates" class="MCXref xref">Manage site templates</a></li>
-<li><a href="#" class="MCXref xref">Manage business units</a></li>
+<li><a href="" class="MCXref xref">Manage business units</a></li>
 <li><a href="../c_st_accesscontrol/c_st_loginrestictions/t_st_manloginrestictionpolicies" class="MCXref xref">Create Login Restriction Policy entries</a></li>
 <li><a href="../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a></li>
 <li>all application types under <a href="../applications" class="MCXref xref">Applications</a></li>

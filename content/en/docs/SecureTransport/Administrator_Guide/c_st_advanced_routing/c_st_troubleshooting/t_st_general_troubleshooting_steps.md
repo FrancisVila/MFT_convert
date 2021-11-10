@@ -13,4 +13,4 @@
 **Related topics:**
 
 -   <a href="../t_st_debug_logging" class="MCXref xref">Debug logging</a>
--   <a href="#" class="MCXref xref">Log into a file</a>
+-   <a href="" class="MCXref xref">Log into a file</a>

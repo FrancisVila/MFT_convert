@@ -27,5 +27,5 @@ A clear text file is uploaded. Route 1 is triggered. The PGP Decryption transfor
 -   <a href="../c_st_inherited_versus_specific" class="MCXref xref">Inherited settings versus Specific settings</a>
 -   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
 -   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="#" class="MCXref xref">Transformed file as the input to the next step</a>
+-   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>
 -   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>

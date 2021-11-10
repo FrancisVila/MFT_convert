@@ -31,7 +31,7 @@ To set up an active/passive cluster, see <a href="../../c_st_managestandardclust
 11. Import the certificate on each secondary server. For instructions, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#Import" class="MCXref xref">Import a local certificate</a>.
 12. On the primary and all secondary servers, configure encryption for cluster communications. On the *Server Configuration* page, change the value of the `Cluster.Crypto.Alias` server configuration parameter to the alias of the certificate.
 13. On the primary server and all secondary servers, activate the cluster. On the *Server Configuration* page, change the value of the `Cluster.mode` parameter to `active`.
-14. Start the TM server on the primary server and wait until it promotes itself as a primary server. Start the TM server on all other servers in the cluster. For instructions, see <a href="#" class="MCXref xref">Manage server operations</a>.
+14. Start the TM server on the primary server and wait until it promotes itself as a primary server. Start the TM server on all other servers in the cluster. For instructions, see <a href="" class="MCXref xref">Manage server operations</a>.
 15. Synchronize the secondary servers manually from the Administration Tool of the primary server. For instructions, see <a href="../../c_st_managestandardcluster/c_st_standard_cluster_synchronization#Requirem" class="MCXref xref">Requirements for synchronization</a>.
 
 During cluster operation, most configuration changes are synchronized dynamically. For more information, see <a href="../../c_st_standardclustermodel/c_st_active-active_active-passive_clustering#Synchron" class="MCXref xref">Synchronization</a>.

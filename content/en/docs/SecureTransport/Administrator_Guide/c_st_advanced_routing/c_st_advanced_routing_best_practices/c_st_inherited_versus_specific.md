@@ -27,5 +27,5 @@ The Inherited Settings have a higher priority than the Specific Settings.
 -   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
 -   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
 -   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="#" class="MCXref xref">Transformed file as the input to the next step</a>
+-   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>
 -   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>
