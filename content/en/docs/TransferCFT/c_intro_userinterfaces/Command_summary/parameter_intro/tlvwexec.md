@@ -22,15 +22,9 @@ alert generates 2 actions:
 -   Executes a batch
     to react to the alert (when CFTCAT/[TLVWARN](../tlvwarn) is reached)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with<span class="code"> 'cmd:'</span>. For example, <span class="code">&lt;EXEC&gt;='<strong>cmd:</strong>myscript.sh &amp;PART &amp;IDT &amp;IDTU'</span>. See <a href="../../../../concepts/about_transfer_processing/proc_commands#Directly">Directly processing a program or script</a> for details, examples, restrictions, and support.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 #### CFTCOM FILE
 
@@ -48,15 +42,9 @@ alert generates 2 actions:
 -   Executes a batch
     to react to the alert (when CFTCOM/[TLVWARN](../tlvwarn) is reached)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To use direct script execution instead of the template script processing, preface the &lt;EXEC&gt;value with<span class="code"> 'cmd:'</span>. For example, <span class="code">&lt;EXEC&gt;='<strong>cmd:</strong>myscript.sh &amp;PART &amp;IDT &amp;IDTU'</span>. See <a href="../../../../concepts/about_transfer_processing/proc_commands#Directly">Directly processing a program or script</a> for details, examples, restrictions, and support.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To use direct script execution instead of the template script processing, preface the &lt;EXEC>value with 'cmd:'. For example, &lt;EXEC>='cmd:myscript.sh &PART &IDT &IDTU'. See Directly processing a program or script for details, examples, restrictions, and support.
 
 For CFTCOM, the symbolic variables that you can use in the batch are restricted to: &SYSDATE, &SYSTIME, &CFTEVENT, &SYSDAY, &CFTNAME, &RUNTIMEDIR.
 

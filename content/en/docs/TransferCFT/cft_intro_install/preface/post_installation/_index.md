@@ -4,15 +4,9 @@
     "weight": "180"
 }This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> [<span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The information in the Unix <a href="../../unix_install_start_here/run_first_time_ux/use_cft_utilities" class="MCXref xref">Management utilities</a> page applies equally to the Unix-like interface used in HP NonStop.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The information in the Unix Management utilities page applies equally to the Unix-like interface used in HP NonStop.
 
 ## Verify the installation
 

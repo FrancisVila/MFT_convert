@@ -27,17 +27,11 @@ by default, in association with the definition of the protocol used CFTPROT.
 This feature can be used by all protocols, but is not compatible with
 the routing and switching mechanism.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For security reasons, the
-DYNAM = mechanism is rarely used
-without also executing additional checks in a directory EXIT task.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For security reasons, the
+> DYNAM = mechanism is rarely used
+> without also executing additional checks in a directory EXIT task.
 
 ### Parameter settings
 
@@ -94,18 +88,12 @@ be used for several partners.
 
 The parameters IMINTIME and IMAXTIME are also checked.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Apart
-from checking the resource class, the above checks can be made (or remade)
-in the directory type EXIT task, if the latter is defined in the protocol
-description (EXIT parameter of the CFTPROT command).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Apart
+> from checking the resource class, the above checks can be made (or remade)
+> in the directory type EXIT task, if the latter is defined in the protocol
+> description (EXIT parameter of the CFTPROT command).
 
 ## Putting a file at disposal on hold
 

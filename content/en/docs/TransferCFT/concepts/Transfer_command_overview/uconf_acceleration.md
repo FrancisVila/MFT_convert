@@ -30,10 +30,10 @@ You can globally enable or disable the acceleration function in the <span class=
 #### Parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -120,15 +120,9 @@ Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) tab
 
 Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table <span class="code">acceleration.ptcp.&lt;logicalID></span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> versions that use the newer pTCP protocol cannot perform pTCP exchanges with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s using the earlier pTCP version. See <a href="../../../admin_intro/uconf/uconf_protocols_and_networks">Protocols and networks</a> for more information.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT versions that use the newer pTCP protocol cannot perform pTCP exchanges with Transfer CFTs using the earlier pTCP version. See Protocols and networks for more information.
 
 <span id="uconf_ptcp"></span>
 

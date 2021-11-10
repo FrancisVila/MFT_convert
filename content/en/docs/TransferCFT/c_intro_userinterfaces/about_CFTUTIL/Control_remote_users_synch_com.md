@@ -32,11 +32,11 @@ See Related topics below for links to more information on these access managemen
 1.  Define the unified configuration settings so that you enable authentication yes, and select the method.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameters         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">Default         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

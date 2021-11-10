@@ -4,24 +4,18 @@
     "weight": "160"
 }You can use the implicit transfer mode to make a file whose content is frequently changing available to other applications. In this case the file is always available, and applications can retrieve it as many time as necessary.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Implicit Mode implies that the Target is requester, and as such it is the Target that pulls the file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Implicit Mode implies that the Target is requester, and as such it is the Target that pulls the file.
 
 <img src="/Images/TransferCFT/Implicit_mode_cft_w_cg.png" class="maxWidth" alt="Simplified diagram of a Target Transfer CFT requesting a file from the Source" />
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>  Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th style="text-align: center;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

@@ -11,10 +11,10 @@ PeSIT DIAGP.
 <span class="autonumber"></span>Event Codes for all protocols
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Code</p>         </th>
-<th><p>Meaning </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Code</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Meaning </p>         </th>
       </tr>
    </thead>
    <tbody>

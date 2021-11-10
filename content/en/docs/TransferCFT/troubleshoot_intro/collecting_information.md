@@ -35,10 +35,10 @@ the following table. It can serve as a guideline for gathering information, whic
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Step         </th>
-<th>Your remarks         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Step         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Your remarks         </th>
       </tr>
    </thead>
    <tbody>

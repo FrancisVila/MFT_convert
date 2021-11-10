@@ -6,15 +6,9 @@
 
 This section describes how to create a reusable and distributable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> package to simplify and ease the task of installing and configuring <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s on multiple servers of the same architecture.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.
 
 ## Create a deployment package for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>s used with Central Governance
 
@@ -52,15 +46,9 @@ Perform the following steps:
 
 -   See the example and options described in the INSTALL section and customize to suit your business needs. Details on <a href="../install_intro_ibmi/perform_auto_installation" class="MCXref xref">Silent installation</a>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.
 
 1.  Use Central Governance to deploy and configure your Transfer CFTs as needed.
 
@@ -71,15 +59,9 @@ In this procedure, you must first create a SAVF file that contains all of your n
 -   Static configuration, such as protocols (CFTPROT), networks (CFTNET), UCONF parameters, and so on
 -   Partners (CFTPART, CFTTCP)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you create partners to export, DO NOT use the NSPART parameter in the CFTPART definition. The target Transfer CFT instead uses the CFTPARM PART/NPART values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you create partners to export, DO NOT use the NSPART parameter in the CFTPART definition. The target Transfer CFT instead uses the CFTPARM PART/NPART values.
 
 -   Flows (CFTSEND and CFTRECV)
 -   SSL certificates
@@ -142,25 +124,13 @@ On the other machines, where you want to deploy <span class="mc-variable suite_v
 
         INSTALL
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When you run INSTALL without parameters, you run the default installation with the CFTPGM and CFTPROD libraries.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When you run INSTALL without parameters, you run the default installation with the CFTPGM and CFTPROD libraries.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>As of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.3.2, you can define the user for the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> As of Transfer CFT 3.3.2, you can define the user for the Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
 
 1.  Restore the Transfer CFT configuration save file, for example:  
 

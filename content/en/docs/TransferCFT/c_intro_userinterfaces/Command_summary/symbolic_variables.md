@@ -34,10 +34,10 @@ The symbolic variable syntax is as follows:
     by the character(s):
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Character         </th>
-<th>Indicates...         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Indicates...         </th>
       </tr>
    </thead>
    <tbody>
@@ -207,20 +207,14 @@ remarks are valid:
 
 This allows identifiers of length less than p to be selected, for example.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>&amp;.VAR is substituted as &amp;VAR. The &lt;char_symb&gt; concatenated
-with a point is substituted as &lt;char_symb&gt;. The rule applies even
-if VAR is not an identifier known to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. For example, for the
-formats &amp;.VAR (&amp;0.VAR, &amp;0.0VAR or &amp;.0VAR), the value substituted
-is not the effective value of the identifier ‘VAR’ but the literal string
-&amp;VAR.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> &.VAR is substituted as &VAR. The &lt;char\_symb> concatenated
+> with a point is substituted as &lt;char\_symb>. The rule applies even
+> if VAR is not an identifier known to Transfer CFT. For example, for the
+> formats &.VAR (&0.VAR, &0.0VAR or &.0VAR), the value substituted
+> is not the effective value of the identifier ‘VAR’ but the literal string
+> &VAR.
 
 #### Example of possible formats
 
@@ -286,15 +280,9 @@ Given the syntax FNAME=&(-PREF)(+SUF)(=DUMMY)PARM,
 -   If &PARM is empty, FNAME gets the value DUMMY
 -   If &PARM is not empty, FNAME gets the value PREF&PARMSUFF
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To add a closing parenthesis within the str_prefix, str_suffix and str_alternate, it must be preceded by the character ‘&amp;’:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To add a closing parenthesis within the str\_prefix, str\_suffix and str\_alternate, it must be preceded by the character ‘&’:
 
 -   Given the syntax FNAME=&(+(1234&))PARM
     -   If &PARM is not empty, FNAME gets the value &PARM(1234)
@@ -316,32 +304,26 @@ the syntax &VAR. The substituted value, corresponding to the effective
 value of the identifier ‘VAR’ (truncated of the blank characters on the
 right), is also indicated.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The other syntax shown above may also be used, for each of the identifiers
-listed.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The other syntax shown above may also be used, for each of the identifiers
+> listed.
 
 <span class="autonumber"></span>List of symbolic variables
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Domain         </th>
-<th>Symbolic variable         </th>
-<th>Maximum length         </th>
-<th>Corresponding substituted
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Domain         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbolic variable         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Maximum length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Corresponding substituted
 value         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th>PARTNERS          </th>
+<th rowspan="8" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%">PARTNERS          </th>
          <td><p>&amp;PART </p>         </td>
          <td>32         </td>
          <td><p>Partner name (ID of CFTPART) </p>         </td>
@@ -385,7 +367,7 @@ local <span class="mc-variable axway_variables.Component_Short_Name variable">Tr
 remote partner identifies itself to the local <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span></p>         </td>
       </tr>
       <tr>
-<th><p>USER </p>         </th>
+<th rowspan="7" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>USER </p>         </th>
          <td><p>&amp;SUSER </p>         </td>
          <td>32         </td>
          <td><p>Sending user name </p>         </td>
@@ -422,7 +404,7 @@ In listcat content=debug this is attribute is MSG         </td>
          <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> job name, can be used in exec and cronjob procedures         </td>
       </tr>
       <tr>
-<th><p>APPLICATIONS </p>         </th>
+<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>APPLICATIONS </p>         </th>
          <td><p>&amp;SAPPL</p>         </td>
          <td><p> </p>
 <p>8</p>
@@ -456,7 +438,7 @@ PeSIT E
          <td><p>PI99 contents (PeSIT E) </p>         </td>
       </tr>
       <tr>
-<th><p>TRANSFER </p>         </th>
+<th rowspan="22" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>TRANSFER </p>         </th>
          <td><p>&amp;IDT</p>         </td>
          <td>8         </td>
          <td><p>Transfer identifier </p>         </td>
@@ -576,7 +558,7 @@ REPLY, or NACK</p>
 <p>Requester mode = ‘R’ transfer</p>         </td>
       </tr>
       <tr>
-<th><p>FILE</p>         </th>
+<th rowspan="33" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>FILE</p>         </th>
          <td><p>&amp;IDF </p>         </td>
          <td>32         </td>
          <td><p>Model file identifier (logical name)  </p>         </td>
@@ -748,7 +730,7 @@ site </p>         </td>
          <td><p>Suffix associated with file name of the sending file</p>         </td>
       </tr>
       <tr>
-<th><p>MESSAGES</p>         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>MESSAGES</p>         </th>
          <td><p>&amp;IDM</p>         </td>
          <td>32         </td>
          <td><p>Message identifier </p>         </td>
@@ -763,7 +745,7 @@ site </p>         </td>
 <p>PeSIT E</p>         </td>
       </tr>
       <tr>
-<th><p>DATE and TIME associated with a FILE </p>         </th>
+<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a FILE </p>         </th>
          <td><p>&amp;FDATE </p>         </td>
          <td>8         </td>
          <td><p>Date associated with the file </p>         </td>
@@ -789,7 +771,7 @@ site </p>         </td>
          <td><p>Day associated with the file </p>         </td>
       </tr>
       <tr>
-<th><p>DATE and TIME associated with a CATALOG </p>         </th>
+<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a CATALOG </p>         </th>
          <td><p>&amp;CDATE </p>         </td>
          <td>8         </td>
          <td><p>Catalog entry date </p>         </td>
@@ -815,7 +797,7 @@ site </p>         </td>
          <td><p>Catalog entry day </p>         </td>
       </tr>
       <tr>
-<th><p>DATE and TIME associated with a TRANSFER </p>         </th>
+<th rowspan="11" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a TRANSFER </p>         </th>
          <td><p>&amp;BDATE </p>         </td>
          <td>8         </td>
          <td><p>Transfer start date </p>
@@ -875,7 +857,7 @@ site </p>         </td>
          <td><p>Transmission duration in seconds (TIMES attribute in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog)</p>         </td>
       </tr>
       <tr>
-<th>CONTROL OUTPUT          </th>
+<th rowspan="3" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%">CONTROL OUTPUT          </th>
          <td><p>&amp;FLOG </p>         </td>
          <td>512         </td>
          <td><p>Name of last log file used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> </p>         </td>
@@ -891,7 +873,7 @@ site </p>         </td>
          <td><p>Name of catalog used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </td>
       </tr>
       <tr>
-<th><p>TRACKING</p>         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>TRACKING</p>         </th>
          <td><p>&amp;XFRCYCID </p>         </td>
          <td>250         </td>
          <td><p>Processing cycle identifier (set of tracked instances that
@@ -903,7 +885,7 @@ concern a single transfer) </p>         </td>
          <td><p>Tracked object name </p>         </td>
       </tr>
       <tr>
-<th><p>SSL (1) </p>         </th>
+<th rowspan="9" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>SSL (1) </p>         </th>
          <td><p>&amp;SSL</p>         </td>
          <td>1         </td>
          <td><p>Indicates if the session the transfer was carried out on
@@ -956,7 +938,7 @@ presented by the remote partner was recorded </p>
 <p>This is the same as the CFTSSL CERFNAME parameter value</p>         </td>
       </tr>
       <tr>
-<th><p>SYSTEM </p>         </th>
+<th rowspan="4" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>SYSTEM </p>         </th>
          <td><p>&amp;SYSDATE </p>         </td>
          <td>8         </td>
          <td><p>System date </p>         </td>
@@ -978,7 +960,7 @@ date </p>         </td>
          <td><p>Day of the week (Sunday = 0, 6 = Saturday)</p>         </td>
       </tr>
       <tr>
-<th><p>CAT/ ACCOUNT </p>
+<th rowspan="9" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>CAT/ ACCOUNT </p>
 <p>ENVIRONMENT</p>         </th>
          <td><p>&amp;CFTNAME</p>         </td>
          <td>32         </td>
@@ -1032,15 +1014,9 @@ refer to [Managing Transport Security](../../../transport_security_start_here).
 
 (2): EXEC in SEND, EXECSF, EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The symbolic variable formats concerning dates and times are:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The symbolic variable formats concerning dates and times are:
 
 -   Time: HHMMSSCC
      
@@ -1076,10 +1052,10 @@ Symbolic variables can be used:
     operations defined by the user in the procedures associated with the transfers
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Symbolic variables         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Symbolic variables         </th>
       </tr>
    </thead>
    <tbody>
@@ -1150,16 +1126,11 @@ security symbolic variables</a>)</li>
 <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li>
 <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot use the variables designated by asterisk (*) in procedures
-associated with the EXEC* parameters relative to message transfers.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>You cannot use the variables designated by asterisk (*) in procedures
+associated with the EXEC* parameters relative to message transfers.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>EXEC for CFTACCNT or CFTLOG         </td>
@@ -1290,10 +1261,10 @@ so, the session parameters such as the authentication mode, suite negotiated
 and certificates used.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Symbolic variable         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbolic variable         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

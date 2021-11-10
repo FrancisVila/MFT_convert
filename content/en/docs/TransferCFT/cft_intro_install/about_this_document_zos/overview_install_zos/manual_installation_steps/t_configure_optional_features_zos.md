@@ -31,10 +31,10 @@ Certificate management can be centralized using Axway PassPort. The certificates
 **Modifiable parameters**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variables</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Variables</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -85,15 +85,9 @@ To enable the Transfer CFT PKI system, access the CONFIG file. The job responsib
 
 A sample named RACDCERT is delivered in the cftv2.INSTALL library. This RACDCERT show how to create a RING named XFBCFT, and to add test certificates: AXWMFTCA and AXWMFTUS. Additionally, the sample adds RACF authorizations for the Transfer CFT userid.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT no longer delivers sample certificates.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT no longer delivers sample certificates.
 
 For information on SAF compatible security products, such as ACF/2 or TOP-SECRET, refer to the product-supplied documentation.
 

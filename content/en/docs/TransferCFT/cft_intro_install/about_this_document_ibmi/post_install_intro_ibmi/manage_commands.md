@@ -7,10 +7,10 @@
 ## Standard commands
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Command</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -46,16 +46,11 @@ the following action(s) to manage your product:</p>
 <li>ENABLE_NODE</li>
 <li>DISABLE_NODE</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>CFTMN is the equivalent of <span class="code">cft script</span> for UNIX or
-Windows.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>CFTMN is the equivalent of cft script for UNIX or
+Windows.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
@@ -63,10 +58,10 @@ Windows.         </td>
 ## Deprecated commands
 
 <table>
-<th>
+<thead data-xmlns="">
       <tr>
-<th>Replace this command...         </th>
-<th>With the new command...         </th>
+<th class="HeadE-Column1-Header1">Replace this command...         </th>
+<th class="HeadD-Column1-Header1">With the new command...         </th>
       </tr>
    </thead>
 <tbody data-xmlns="">

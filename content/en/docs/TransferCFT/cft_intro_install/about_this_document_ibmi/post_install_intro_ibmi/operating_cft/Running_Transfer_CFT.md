@@ -6,15 +6,9 @@
 
 Operations that recreate files prior to the start-up are only required in specific restart conditions, such as after changing the configuration.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you recreate the COM file, any transfer requests deposited since Transfer CFT was last run are lost. If you recreate a CAT file, information required to restart any interrupted transfers may be lost.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you recreate the COM file, any transfer requests deposited since Transfer CFT was last run are lost. If you recreate a CAT file, information required to restart any interrupted transfers may be lost.
 
 Transfer CFT jobs are submitted in the following order:
 

@@ -6,17 +6,11 @@
 CFT UNIX utilities located in the <span class="code">cft/&lt;installdir>/bin/</span>
 sub-directory after completing installation.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In this section, the term
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> designates the Transfer
-CFT software package on UNIX platforms.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In this section, the term
+> Transfer CFT designates the Transfer
+> CFT software package on UNIX platforms.
 
 The utilities described here, do not replace the
 basic commands described elsewhere in this document. Their purpose is
@@ -27,10 +21,10 @@ to simplify common tasks performed with <span class="mc-variable axway_variables
 The following utilities are detailed in this page.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Utility  </p>         </th>
-<th><p>Definition  </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Utility  </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Definition  </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -102,15 +96,9 @@ the CFTPARM, CFTLOG cards, and so on).
 
 cftinit partners.cft the\_rest.cft
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   If no file name
     is passed as a parameter, the program requests one or more file names.
@@ -128,15 +116,9 @@ The *cftupdate* utility is used to update the configuration.
 
 cftupdate &lt;filename> \[&lt;filename> ...\]
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   You can only update
     the CFTPART, CFTxxx (for the networks), CFTSEND cards, and so on

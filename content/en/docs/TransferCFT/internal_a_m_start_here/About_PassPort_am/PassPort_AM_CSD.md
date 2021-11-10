@@ -13,10 +13,10 @@ After installing Transfer CFT, access the CSD file at:
 Available <span id="CSD description"></span>CSD actions and resources
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Type of information         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type of information         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

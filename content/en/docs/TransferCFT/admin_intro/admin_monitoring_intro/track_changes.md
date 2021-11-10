@@ -9,27 +9,15 @@ server. The configuration change can be:
 -   Creating or deleting
     a CFTFILE object (PARM, PART, CAT, LOG…)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The configuration change tracking feature described in this section is not available when using Central Governance or Flow Manager as Transfer CFT configuration changes are tracked by those products. Consequently, you cannot set the parameters described in this section using either of these products.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The configuration change tracking feature described in this section is not available when using Central Governance or Flow Manager as Transfer CFT configuration changes are tracked by those products. Consequently, you cannot set the parameters described in this section using either of these products.
 
 ## Procedure
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To enable the configuration change audit, set the Sentinel parameter value to <span class="code">uconf:sentinel.xfb.audit=yes</span> in the <a href="../../uconf">unified configuration</a> (UCONF).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To enable the configuration change audit, set the Sentinel parameter value to uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
 
 **Example**
 
@@ -57,10 +45,10 @@ containing:
 #### Ident attribute details
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CFTA0nX         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTA0nX         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -110,10 +98,10 @@ file         </td>
 #### Return message attribute details
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Attribute         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

@@ -6,12 +6,6 @@
 
 This is the final phase and phase step on the flow.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

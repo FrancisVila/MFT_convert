@@ -20,14 +20,9 @@
 
 ![](/Images/TransferCFT/broadcast_list.png)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>You can refer to the Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> parameter mapping <a href="../r_flow_target">Flow definition: Target</a> and <a href="../r_flow_source">Flow definition: Source</a> to further customize your flow.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 
 <span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

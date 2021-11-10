@@ -14,14 +14,8 @@ Size of CFTTFIL buffer used for interprocess communication, where the default va
 
 It is recommended that you not modify this value unless instructed to do so by an Axway representative.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The FBUFSIZE range is 0 to 8180 in OpenVMS environments.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The FBUFSIZE range is 0 to 8180 in OpenVMS environments.
 
 [Return to Command index](../../)

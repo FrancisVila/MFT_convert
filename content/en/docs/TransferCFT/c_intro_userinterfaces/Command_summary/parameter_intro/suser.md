@@ -42,15 +42,9 @@ parameter.</p>         </td>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can use the RUSER and SUSER fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See <a href="../ruser">RUSER</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can use the RUSER and SUSER fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See RUSER.
 
 See PeSIT extension PI codes for information on PI codes.
 

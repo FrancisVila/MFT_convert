@@ -68,10 +68,10 @@ If the receiver file type is not defined, <span class="mc-variable axway_variabl
 contained in the table below, according to the receiving system.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Receiving system         </th>
-<th>FTYPE default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Receiving system         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">FTYPE default         </th>
       </tr>
    </thead>
    <tbody>
@@ -94,19 +94,13 @@ If the FRECFM and FLRECL parameters are not defined or imposed , data
 are saved, by default, in a file of variable format , with a maximum record
 length of 2048 bytes.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To avoid protocol-related
-problems, a Transfer CFT user subscribing to Atlas400 must request the
-&lt;CR&gt;/&lt;LF&gt; insert option from their Transpac sales branch.
-When the &lt;CR&gt;/&lt;LF&gt; delimiter is missing, a delimiter must
-be inserted every 2046 characters by the OFTP gateway.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To avoid protocol-related
+> problems, a Transfer CFT user subscribing to Atlas400 must request the
+> &lt;CR>/&lt;LF> insert option from their Transpac sales branch.
+> When the &lt;CR>/&lt;LF> delimiter is missing, a delimiter must
+> be inserted every 2046 characters by the OFTP gateway.
 
 <span id="Defining_the_receiving_file_format"></span>
 

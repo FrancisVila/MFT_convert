@@ -6,35 +6,23 @@
 
 The maximum number of CAs that you can enter for the ROOTCID parameter of the CFTSSL command is 10. To overcome this limitation, use the PKIENTITY object to create a list of up to 100 certificate authority IDs. You can then enter up to ten PKIENTITY objects in the CFTSSL ROOTCID parameter, to enable a maximum of 1000 certificate authorities IDs in the PKI database.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can directly update PKIENTITY content in the PKI internal datafile without modifying Transfer CFT parameter settings.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can directly update PKIENTITY content in the PKI internal datafile without modifying Transfer CFT parameter settings.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Some command line  parameters are not available in the user interface.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Some command line  parameters are not available in the user interface.
 
 ## Define a certificate list
 
 To define a certificate list, use the PKIENTITY parameters:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -58,14 +46,8 @@ To define a certificate list, use the PKIENTITY parameters:
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See the <a href="../../../../transport_security_start_here/certificates/pkiutil_cli_intro/using_the_pkicer_command">PKICER</a> command for more information on certificate parameters and settings.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See the PKICER command for more information on certificate parameters and settings.
 
 **Caution**  The PKIENTITY command neither checks nor manages the existing certificates in the internal PKI internal datafile when creating a new certificates list.

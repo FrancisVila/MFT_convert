@@ -10,15 +10,9 @@ Some parameters already have values that are set at the product customization le
 
 The COPA020 JCL must be submitted in order to take into account the configuration parameters and integrate them in the unified configuration file (UCONF). A pre-configured example is provided in the library target.UPARM(COPCFG).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see Transfer CFT file migration).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see Transfer CFT file migration).
 
 Related topics
 

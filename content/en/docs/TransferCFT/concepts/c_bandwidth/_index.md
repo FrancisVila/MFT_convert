@@ -13,15 +13,9 @@ Class-of-service defines a common set of parameters for all network session esta
 
 All rates, either configured as rates or computed from weights, represent a number of Kbytes per second.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> see the <strong>Bandwidth Allocation</strong> section on the product configuration page, and <strong>Bandwidth Allocation</strong> in the <strong>Transfer Properties</strong> of the flow definition, for supported bandwidth features and details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In Central Governance see the Bandwidth Allocation section on the product configuration page, and Bandwidth Allocation in the Transfer Properties of the flow definition, for supported bandwidth features and details.
 
 ## Parameters
 
@@ -39,11 +33,11 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
 ### Class-of-service parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -102,11 +96,11 @@ class number zero.         </td>
 ### Global parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -131,11 +125,11 @@ class number zero.         </td>
 ### Expert level global parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

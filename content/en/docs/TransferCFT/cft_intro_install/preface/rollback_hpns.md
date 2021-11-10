@@ -6,7 +6,7 @@
 
 ## Roll back to a previous version
 
-You can rollback an upgrade if needed the same as if you [Uninstall a service pack](##Uninstal). However, rolling back an upgrade takes Transfer CFT back to the previous version before the upgrade, so all transfers and configuration modifications that were performed since the upgrade are lost.
+You can rollback an upgrade if needed the same as if you [Uninstall a service pack](#Uninstal). However, rolling back an upgrade takes Transfer CFT back to the previous version before the upgrade, so all transfers and configuration modifications that were performed since the upgrade are lost.
 
 ## Roll back and restore catalog
 
@@ -23,7 +23,7 @@ To perform a version downgrade, you must have already upgraded from Transfer CFT
 
         CFTMI migr type=cat,direct=fromcat,ifname=$CFTCATA,ofname=cftcat_36
 
-2.  Uninstall the Transfer CFT 3.6. Please see <a href="#" class="MCXref xref">Uninstall</a> Transfer CFT for details.
+2.  Uninstall the Transfer CFT 3.6. Please see <a href="" class="MCXref xref">Uninstall</a> Transfer CFT for details.
 
 3.  Create a Transfer CFT catalog file. See [Manually create internal data files](../../../admin_intro/admin_commands_intro/cftfile) for details. For example:  
 

@@ -11,15 +11,9 @@ To install you will perform the following tasks:
 3.  Download product.
 4.  Install products.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.7 is available as a 64-bit installation. If you are using and existing 32-bit <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, you can use the Transfer CFT 3.7 install kit to move from the existing version to Transfer CFT 3.7 64-bit.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT 3.7 is available as a 64-bit installation. If you are using and existing 32-bit Transfer CFT, you can use the Transfer CFT 3.7 install kit to move from the existing version to Transfer CFT 3.7 64-bit.
 
 ## License keys
 
@@ -27,22 +21,16 @@ Before installing or upgrading, make sure you have obtained a license for <span 
 
 For information on applying a license key post installation, or if you have a problem with your license key, refer to the appropriate Troubleshooting topic.
 
--   <span style="font-weight: normal;">[Windows: Applying a license key](#)</span>
+-   <span style="font-weight: normal;">[Windows: Applying a license key]()</span>
      
 
 ### Multi-node license keys
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 

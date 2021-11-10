@@ -29,18 +29,12 @@ commands with the same ID are required:
 -   The other containing
     IMPL = YES
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <em>default</em> CFTSEND object for its part applies to all the other
-model files in the case of an explicit SEND: it is taken into account
-whenever the SEND IDF does not correspond to a CFTSEND command containing
-IMPL = NO.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The default CFTSEND object for its part applies to all the other
+> model files in the case of an explicit SEND: it is taken into account
+> whenever the SEND IDF does not correspond to a CFTSEND command containing
+> IMPL = NO.
 
 For clarity, it is recommended to group all CFTSEND commands in a parameter
 setting source file, placing the default CFTSEND object in the first or

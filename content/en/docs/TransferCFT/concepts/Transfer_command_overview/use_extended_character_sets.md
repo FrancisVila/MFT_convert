@@ -26,15 +26,9 @@ The UCONF cft.cft\_charsets parameter defines the Transfer CFT character sets m
 
 For example, if you define an NCHARSET as CFT\_ISO8859-1, the parameter is translated as 'iso88591' for HPUX OSes, as '00819' for IBM i, and as 'ISO8859-1' for all other platforms. We strongly recommend that you use this option.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On versions of OS/400 prior to Transfer CFT 3.1.3, use the charset number only without the CFT_ prefix.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On versions of OS/400 prior to Transfer CFT 3.1.3, use the charset number only without the CFT\_ prefix.
 
 ### Using the //IGNORE functionality
 
@@ -119,11 +113,11 @@ When using multibyte encoding for fixed or limited record size files, please pay
 The following table shows the CHARSET mapping. Brackets in the UNIX/Windows column indicate platform exceptions.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CFT_ charset         </th>
-<th>UNIX/Windows         </th>
-<th>IBM i         </th>
+<th class="HeadE-Column1-Header1">CFT_ charset         </th>
+<th class="HeadE-Column1-Header1">UNIX/Windows         </th>
+<th class="HeadD-Column1-Header1">IBM i         </th>
       </tr>
    </thead>
    <tbody>

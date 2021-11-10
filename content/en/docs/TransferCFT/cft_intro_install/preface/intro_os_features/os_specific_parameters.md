@@ -7,11 +7,11 @@
 <span class="autonumber"></span><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> Guardian specific values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Notation</p>         </th>
-<th><p>Object</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Notation</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Object</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -41,10 +41,10 @@
 <span class="autonumber"></span>File properties automatically retrieved for send operations
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Notation</p>         </th>
-<th><p>Object</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Notation</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Object</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -74,10 +74,10 @@
 <span class="autonumber"></span>FTYPE values and associated implicit FCODE default values for send operations
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FTYPE</p>         </th>
-<th><p>FCODE</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>FCODE</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -95,24 +95,24 @@
 <span class="autonumber"></span>FTYPE, FRECFM, and FORG combinations for send operations
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th> 
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
 <p>Guardian<br />
 type</p>         </th>
-<th> 
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
 <p>Guardian<br />
 code</p>         </th>
-<th> 
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
 <p>File type</p>         </th>
-<th>Implicit value for...         </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Implicit value for...         </th>
       </tr>
       <tr>
-<th><p>FTYPE<br />
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE<br />
 </p>         </th>
-<th><p>FRECFM<br />
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM<br />
 </p>         </th>
-<th>FORG         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">FORG         </th>
       </tr>
    </thead>
    <tbody>
@@ -167,37 +167,25 @@ code</p>         </th>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Empty cells indicate that the information is not significant.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Empty cells indicate that the information is not significant.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span style="vertical-align: super;">[1]</span> You can also send variable length record files by setting FRECFM = V.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \[1\] You can also send variable length record files by setting FRECFM = V.
 
 <span class="autonumber"></span>FTYPE, FRECFM, and FORG values for receive operations
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FTYPE</p>         </th>
-<th><p>FRECFM</p>         </th>
-<th>FORG         </th>
-<th><p>File Type</p>         </th>
-<th><p>Guardian Type</p>         </th>
-<th><p>Guardian Code</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FORG         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Guardian Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Guardian Code</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -268,25 +256,13 @@ code</p>         </th>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Empty cells indicate that the information is not significant.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Empty cells indicate that the information is not significant.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span style="vertical-align: super;">[2]</span> Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \[2\] Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
 
 ## Platform specific parameters and values
 
@@ -326,12 +302,6 @@ If specified, this parameter forces the BUFFERED attribute for the Guardian file
 
 The received file is created with a BUFFERED attribute set.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If a received file has the BUFFERED option, the file write cache is flushed while the PeSIT synchronization points are set. This means that there is no data loss (the file is not altered) if the file transfer is restarted. This applies whether BUFFERED is set on Transfer CFT or by an explicit file creation operation.

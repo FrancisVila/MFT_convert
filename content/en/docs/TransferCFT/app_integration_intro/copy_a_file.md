@@ -44,15 +44,9 @@ Where:
 
 This creates an empty file that is transferred from COPY\_SRC to COPY\_DST. The empty file is then used to create the catalog record.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On a z/OS platform, use the following syntax and prefix the <code>nfname </code>with an asterisk ‘*’.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On a z/OS platform, use the following syntax and prefix the nfname with an asterisk ‘\*’.
 
 
 
@@ -87,15 +81,9 @@ The same concepts apply for all OS, but there is a different syntax depending on
 
 When you view the transfer record for a copied file, either in the catalog or in <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, only certain transfer details display. For the actual copied file, only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using this functionality, the resulting catalog entry does not display the correct file size.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using this functionality, the resulting catalog entry does not display the correct file size.
 
 ### OS specifics
 

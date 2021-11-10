@@ -6,15 +6,10 @@
 
 To notify the end of the processing to Transfer CFT, the preprocessing script must perform an END command with istate=no.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> The transfer request remains in phase=A and phasestep=C until Transfer CFT receives the END command related to this transfer request.
 
 As the preprocessing phase did not exist in versions prior to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 3.0, during this phase the former state has the adapted state and is always set to A.
 
@@ -45,12 +40,6 @@ The following preprocessing actions occur according to the status of the prestat
 -   Preprocessing then send on receive
     -   IMPL=YES
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

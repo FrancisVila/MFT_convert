@@ -12,10 +12,10 @@ The sent file data code. The following table indicates for each OS the
 default value supported.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Default         </th>
+<th class="HeadE-Column1-Header1">OS         </th>
+<th class="HeadD-Column1-Header1">Default         </th>
       </tr>
    </thead>
    <tbody>

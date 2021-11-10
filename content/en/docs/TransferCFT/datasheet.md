@@ -61,11 +61,11 @@
 ## File systems for multi-node
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Operating system         </th>
-<th>Supported         </th>
-<th>Unsupported         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unsupported         </th>
       </tr>
    </thead>
    <tbody>
@@ -120,10 +120,10 @@ If you are implementing either <span class="mc-variable suite_variables.TrustedF
 The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Component         </th>
-<th><p>Port</p>         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Component         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Port</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -184,15 +184,9 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
 
 ## Third party licenses
 

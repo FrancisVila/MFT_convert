@@ -63,13 +63,13 @@ The suites supported by Transfer CFT are described in the following
 table:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Suite </p>         </th>
-<th><p>Order used</p>         </th>
-<th><p>Authentication </p>         </th>
-<th><p>Confidentiality </p>         </th>
-<th><p>Integrity </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Suite </p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Order used</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Authentication </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Confidentiality </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Integrity </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -188,25 +188,13 @@ table:
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>** These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
 
 Transfer CFT only processes X.509 certificates with an RSA signature.
 Authentication can be one-way or mutual. It is one-way if only the server,

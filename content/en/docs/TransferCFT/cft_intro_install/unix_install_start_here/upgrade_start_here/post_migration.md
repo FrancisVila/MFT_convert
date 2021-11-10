@@ -6,15 +6,9 @@
 
 If you performed an install and auto import or a manual migration, you must manually import compiled objects and exec scripts from the old configuration. There are no <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands to import these compiled objects and exec scripts, and they are not included in the auto import process.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>After completing an upgrade or a migration procedure, you must update to the most recent SP.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> After completing an upgrade or a migration procedure, you must update to the most recent SP.
 
 ### Compiled objects: APIs and Exits
 

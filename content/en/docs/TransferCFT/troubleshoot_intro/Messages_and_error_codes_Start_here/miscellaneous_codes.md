@@ -11,10 +11,10 @@
 This code specifies a build error in the received PeSIT FPDU. It forms the "PDU iNN"-type protocol diagnostic code.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Error code         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -132,10 +132,10 @@ indicate the source of the failure. This code forms the DIAGP protocol diagnosti
 code. Values are expressed in hexadecimal.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Error code         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -347,10 +347,10 @@ This code forms the "XXX HHHH"-type DIAGP protocol diagnostic
 code. Values are expressed in mnemonic form.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Error code         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Error code         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -419,10 +419,10 @@ protocol diagnostic code in the PeSIT protocol; it represents the XXX
 part. Values are expressed in mnemonic form.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>FPDU         </th>
+<th class="HeadE-Column1-Header1">Code         </th>
+<th class="HeadD-Column1-Header1">FPDU         </th>
       </tr>
    </thead>
    <tbody>

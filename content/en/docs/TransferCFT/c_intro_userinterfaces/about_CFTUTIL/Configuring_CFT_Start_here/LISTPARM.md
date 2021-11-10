@@ -17,10 +17,10 @@ the execution report is written on the standard CFTUTIL program output.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -66,10 +66,10 @@ Displays the parameters of all the CFTSEND objects configured.
 TYPE can take the predefined values indicated in the table below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

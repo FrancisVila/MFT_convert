@@ -25,10 +25,10 @@ In this syntax:
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>OS</p>         </th>
-<th><p> file_symb</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>OS</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p> file_symb</p>         </th>
       </tr>
    </thead>
    <tbody>

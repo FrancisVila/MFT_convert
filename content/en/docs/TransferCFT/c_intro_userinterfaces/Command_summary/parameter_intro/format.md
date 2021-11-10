@@ -58,12 +58,12 @@ Displays using the same format as in <span class="mc-variable header_footer_vari
 ##### Format 2
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Type</p>         </th>
-<th><p>V24 length</p>         </th>
-<th><p>V23 length</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V24 length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V23 length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

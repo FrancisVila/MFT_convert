@@ -43,16 +43,10 @@ Server sender site
     RESERV = 16384,
     PROG = FileExe
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>We recommend that you use the value 16384 for the RESERV
-and not modify this parameter value.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> We recommend that you use the value 16384 for the RESERV
+> and not modify this parameter value.
 
 <span id="Prepare_the_selection_criteria_file"></span>
 

@@ -43,15 +43,9 @@ If Copilot starts, but the Transfer CFT either does not display in the <span cl
 -   In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> check **Administration > Services** to ensure that Central Governance is correctly started.
 -   Verify the shared secret for Central Governance used in the Transfer CFT configuration.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See the Central Governance documentation for additional information and details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See the Central Governance documentation for additional information and details.
 
 ### Cannot register <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> (error: (1103))
 

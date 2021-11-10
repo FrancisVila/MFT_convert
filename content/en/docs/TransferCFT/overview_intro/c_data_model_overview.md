@@ -28,15 +28,9 @@ to a remote file transfer controller.
 
 When you define a partner you require two sets of information to create a minimal configuration, the partner and the network definitions - the CFTPART and CFTxxx objects - respectively.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> network definition, the typical usage is CFTTCP.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For the Transfer CFT network definition, the typical usage is CFTTCP.
 
 #### Partner definition
 
@@ -64,15 +58,10 @@ You can use the CFTPART command to create, modify, or delete a partner. Within t
 -   NSPART: The local partner - your local name, which must match the remote partner's NRPART
 -   You also need to refer to a protocol definition, the CFTPROT object in your local environment, which you and the partner have agreed upon
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>Think of the N<strong>S</strong>PART partner as having an "S" for self, and N<strong>R</strong>PART having an "R" for the remote partner.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Think of the NSPART partner as having an "S" for self, and NRPART having an "R" for the remote partner.
 
 For your network connection, CFTTCP, you should define the:
 
@@ -130,15 +119,10 @@ information if necessary.
 
 From there you can use SEND and RECV commands to perform file and message transfers, using default settings or new object definitions.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Transfer CFT delivers configuration samples with each installation that allow you to begin performing transfers with a minimum of information. Refer to the dedicated sections in this User's Guide for information on the more complex parameter settings for your flows.
 
 ### <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to application communication
 

@@ -24,10 +24,10 @@ Beyond the prerequisites listed above, the installation instructions for each co
 Depending on which method you plan to use, follow the corresponding link to the appropriate installation instructions.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Element</p>         </th>
-<th><p>Instructions</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Element</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Instructions</p>         </th>
       </tr>
    </thead>
    <tbody>

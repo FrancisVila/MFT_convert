@@ -60,10 +60,10 @@ Use the parameter mapping between trkapi and UCONF, as listed in the following t
 <span class="autonumber"></span>Parameter mapping between the trkapi.cfg file and UCONF
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter in trkapi.cfg</p>         </th>
-<th><p>Parameter names in UCONF</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Parameter in trkapi.cfg</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Parameter names in UCONF</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -161,10 +161,10 @@ Use the parameters mapping between copconf and UCONF as listed in the following 
 <span class="autonumber"></span>Parameter mapping between copconf file and UCONF
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter in copconf.ini</p>         </th>
-<th><p>Parameter name in UCONF</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Parameter in copconf.ini</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Parameter name in UCONF</p>         </th>
       </tr>
    </thead>
    <tbody>

@@ -18,25 +18,19 @@ Parameters to regulate level of monitoring messages
 
 The parameter definitions are taken into account in the order listed below. For example, the transfer request definition takes precedence over the partner definition.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> to manage Transfer CFT, you can only use TRK at the flow level, which corresponds to transfer models, but not for partners and general parameters.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using Central Governance to manage Transfer CFT, you can only use TRK at the flow level, which corresponds to transfer models, but not for partners and general parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Definition         </th>
-<th>NO         </th>
-<th>ALL         </th>
-<th>SUMMARY         </th>
-<th>ERROR         </th>
-<th>UNDEFINED         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Definition         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">NO         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ALL         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">SUMMARY         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ERROR         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UNDEFINED         </th>
       </tr>
    </thead>
    <tbody>

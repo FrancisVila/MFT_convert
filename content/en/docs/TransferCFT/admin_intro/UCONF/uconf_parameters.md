@@ -25,10 +25,10 @@ and grouped into the following categories:
 ## Identifier parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UCONF         </th>
-<th>Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default         </th>
       </tr>
    </thead>
    <tbody>
@@ -53,11 +53,11 @@ and grouped into the following categories:
 ## Instance parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Former value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
       </tr>
    </thead>
    <tbody>
@@ -131,12 +131,12 @@ and grouped into the following categories:
 The following table lists the UCONF identifiers, default values, and former Windows and UNIX file values.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Windows         </th>
-<th>UNIX         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UNIX         </th>
       </tr>
    </thead>
    <tbody>
@@ -250,11 +250,11 @@ The following table lists the UCONF identifiers, default values, and former Wind
 ## Work environment parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -278,11 +278,11 @@ The following table lists the UCONF identifiers, default values, and former Wind
 Values for ID where the type is Common.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Former value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
       </tr>
    </thead>
    <tbody>
@@ -400,11 +400,11 @@ Win:$CFTLOG(cft.ini) / Unix: _CFTLOG</p>         </td>
 ## Trace parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Former value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
       </tr>
    </thead>
    <tbody>
@@ -439,10 +439,10 @@ Win:$CFTLOG(cft.ini) / Unix: _CFTLOG</p>         </td>
 Use the following parameters to define <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> probes.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -462,10 +462,10 @@ Use the following parameters to define <span class="mc-variable axway_variables.
 ## Add a character set: transcoding
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -501,11 +501,11 @@ Use the following parameters to define <span class="mc-variable axway_variables.
 ## Start log and catalog parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -540,11 +540,11 @@ Use the following parameters to define <span class="mc-variable axway_variables.
 ## Automatically expand the catalog
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -553,15 +553,11 @@ Use the following parameters to define <span class="mc-variable axway_variables.
          <td>0         </td>
          <td><p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand.</p>
 <p>The value 0 disables the automatic expansion feature.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Tip  
+We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>cft.cftcat.auto_expand_max_size         </td>
@@ -576,10 +572,10 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 ## Parallel transfers
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -593,10 +589,10 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 ## Retrieve subdirectories
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -610,10 +606,10 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 ## Synchronous connections
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -631,11 +627,11 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 PURGE when starting <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is now configurable, with the following options:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -667,11 +663,11 @@ PURGE when starting <span class="mc-variable axway_variables.Component_Short_Nam
 These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -713,11 +709,11 @@ See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Trans
 ## Customizable network sessions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -740,11 +736,11 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 -   For a RECV command with an asterisk "\*" the sender provides the IDF.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -765,11 +761,11 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 ## Accounting records
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -791,11 +787,11 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 ## Compatibility
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Default value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -828,12 +824,12 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Type         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

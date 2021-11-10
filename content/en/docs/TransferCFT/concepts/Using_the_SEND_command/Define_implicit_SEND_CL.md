@@ -37,7 +37,7 @@ files</a>.</p>         </td>
 
 For SEND command details refer to the following syntax:
 
-<span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img src="/Images/TransferCFT/transparent.gif" class="MCDropDown_Image_Icon" width="16" height="11" alt="Closed" />Syntax</a></span>
+<span class="MCDropDownHead dropDownHead"><img src="/Images/TransferCFT/transparent.gif" class="MCDropDown_Image_Icon" width="16" height="11" alt="Closed" />Syntax</span>
 
 [TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
 = FILE

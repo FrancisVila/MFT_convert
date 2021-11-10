@@ -4,27 +4,15 @@
     "weight": "270"
 }CFTUTIL is the primary utility for Transfer CFT. This section details some functionally related specifically to z/OS. The CFTUTIL utility is called through two procedures: PCFTUTIL and PCFTUTL.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There have been updates to this utility in versions 3.2.4 and 3.2.4 SP1.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There have been updates to this utility in versions 3.2.4 and 3.2.4 SP1.
 
 ## CFTIN: Concatenate regular sequential data sets and in-stream data sets
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>MY.FB80.PARM -&gt; RECFM=FB , LRECL=80         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> MY.FB80.PARM -> RECFM=FB , LRECL=80
 
 ### Regular data set defined first
 

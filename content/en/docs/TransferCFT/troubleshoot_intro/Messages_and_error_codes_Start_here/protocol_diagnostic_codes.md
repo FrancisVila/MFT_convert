@@ -88,11 +88,11 @@ has been received with an unknown space reservation unit (PI 41).
 iNN" format values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>XXX         </th>
-<th>FPDU         </th>
-<th>Definition         </th>
+<th class="HeadE-Column1-Header1">XXX         </th>
+<th class="HeadE-Column1-Header1">FPDU         </th>
+<th class="HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -217,10 +217,10 @@ support in the event of unexplained transfer difficulties.
 protocol events
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Vxxxxxxx         </th>
-<th>Definition         </th>
+<th class="HeadE-Column1-Header1">Vxxxxxxx         </th>
+<th class="HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -255,11 +255,11 @@ VLOGRP) </p>         </td>
 <span class="autonumber"></span>Error code descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Error Code         </th>
-<th>FPDU         </th>
-<th>Meaning         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error Code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FPDU         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>
@@ -730,13 +730,13 @@ VLOGRP) </p>         </td>
 ### PeSIT reason code
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>PeSIT reason code         </th>
-<th>Description         </th>
-<th><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PeSIT reason code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal
 diagnostic         </th>
-<th>Service item concerned         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Service item concerned         </th>
       </tr>
    </thead>
    <tbody>
@@ -1148,10 +1148,10 @@ to which the <span class="mc-variable axway_variables.Component_Short_Name varia
     code. Values are expressed in decimal.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Error code         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

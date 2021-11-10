@@ -10,15 +10,9 @@ To create new systems users:
     For example, create the system users Flow Manager, Partner Manager, and Monitoring Assistant.
 2.  Define the user rights for actions on files (USERCTRL) for these same new users for the local system where Transfer CFT is installed.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Superusers have all rights on <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> (you can check the uconf <a href="../../../admin_intro/uconf/uconf_directory">am.passport.superuser</a> parameter, providing a list of superusers). It is important to remember that in UNIX/Windows, the user that installs <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> is the superuser. This means that even if you restrict a user's roles in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, if that user is the superuser it can still perform all actions on files. Additionally, if you define a system user during installation, that user is automatically added to the <code>am.superuser</code> list of users.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Superusers have all rights on Transfer CFT (you can check the uconf am.passport.superuser parameter, providing a list of superusers). It is important to remember that in UNIX/Windows, the user that installs Transfer CFT is the superuser. This means that even if you restrict a user's roles in Central Governance, if that user is the superuser it can still perform all actions on files. Additionally, if you define a system user during installation, that user is automatically added to the am.superuser list of users.
 
 For users that have not yet implemented <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, either create user permissions in Passport, or continue on to Step 2.
 
@@ -27,12 +21,12 @@ For users that have not yet implemented <span class="mc-variable suite_variables
 The following parameters are now managed in <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. This table maps the existing <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> defaults and values.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG field         </th>
-<th>CG values         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG field         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

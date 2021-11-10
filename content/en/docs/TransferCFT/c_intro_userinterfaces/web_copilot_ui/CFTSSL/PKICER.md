@@ -16,15 +16,9 @@
 Users with several certificates signed by different authorities
 can import all their certificates with the same identifier.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Some command line  parameters are not available in the user interface.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Some command line  parameters are not available in the user interface.
 
 ## Parameters
 

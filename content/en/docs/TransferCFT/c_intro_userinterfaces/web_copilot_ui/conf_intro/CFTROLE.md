@@ -13,11 +13,11 @@ You can assign users to one or more roles. Typically, users with multiple roles 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>

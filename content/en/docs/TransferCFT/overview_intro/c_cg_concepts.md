@@ -20,12 +20,6 @@ The following diagram illustrates a simplified view of the <span class="mc-varia
 
 You can deploy a single Central Governance instance with one computer per network. The system supports active/passive resiliency, and can bring another instance of Central Governance online if the primary fails.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Flow Manager offers services that are similar to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, but with the addition of predefined templates and API functionality in a container setting.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Flow Manager offers services that are similar to Central Governance, but with the addition of predefined templates and API functionality in a container setting.

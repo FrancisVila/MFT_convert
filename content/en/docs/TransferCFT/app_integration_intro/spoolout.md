@@ -22,12 +22,12 @@ To enable the renaming option for a given flow (CFTRECV) set FACTION to RETRYRE
 Use the following uconf parameters to customize the retry mechanism.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

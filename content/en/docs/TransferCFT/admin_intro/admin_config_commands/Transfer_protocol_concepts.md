@@ -79,19 +79,13 @@ the following:
     in [Transport
     Security](../../../transport_security_start_here/configuring_transport_security_start_here)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In general, the
-parameters beginning with an <em>S</em> control the send transfers operation, and
-those beginning with an <em>R</em> control the receive transfers operation. This does
-not necessarily apply when transfers in different directions are performed
-in sequence during the same connection.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In general, the
+> parameters beginning with an S control the send transfers operation, and
+> those beginning with an R control the receive transfers operation. This does
+> not necessarily apply when transfers in different directions are performed
+> in sequence during the same connection.
 
 Related topics
 

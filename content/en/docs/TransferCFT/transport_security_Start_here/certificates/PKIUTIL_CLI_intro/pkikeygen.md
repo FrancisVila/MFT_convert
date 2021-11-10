@@ -5,11 +5,11 @@
 }The PKIUTIL command PKIKEYGEN can generate a new RSA key pair (PKIKEY) and inserts it in the Transfer CFT PKI database, which you can use when implementing [SFTP](../../../../protocols_start_here/sftp_intro).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Values         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Values         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

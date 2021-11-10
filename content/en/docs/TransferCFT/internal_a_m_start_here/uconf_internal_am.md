@@ -29,11 +29,11 @@ uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfb
 Use the parameters and descriptions in the <span class="bold_in_para">AM Parameters</span> table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>AM Parameters         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">AM Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -127,10 +127,10 @@ uconfset id=am.type,value=internal
 To use the feature you will need to map the list of groups in the database to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Means the user in this group will have the role...         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Means the user in this group will have the role...         </th>
       </tr>
    </thead>
    <tbody>
@@ -161,15 +161,9 @@ To use the feature you will need to map the list of groups in the database to th
 
 In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> user interface or a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to Internal AM use cases for role-based use case scenarios.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> is managing your <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>s, you should manage CFTROLE and CFTPRIVILEGE locally for each <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When Central Governance is managing your Transfer CFTs, you should manage CFTROLE and CFTPRIVILEGE locally for each Transfer CFT.
 
 ### Using the configuration file
 

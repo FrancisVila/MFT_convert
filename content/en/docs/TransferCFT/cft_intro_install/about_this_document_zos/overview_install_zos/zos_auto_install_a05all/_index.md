@@ -9,11 +9,11 @@
 The A05ALL JCL automatically runs the following members.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Step         </th>
-<th>Description         </th>
-<th>Member         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Step         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Member         </th>
       </tr>
    </thead>
    <tbody>
@@ -119,15 +119,10 @@ The A05ALL JCL automatically runs the following members.
          <td>20         </td>
          <td>If snenable = yes:
 <p>Sentinel parameters are activated (TCP configuration).</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This JCL does not create Sentinel tracker logstream.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>This JCL does not create Sentinel tracker logstream.</p>
+</blockquote>         </td>
          <td>SN05CONF         </td>
       </tr>
       <tr>

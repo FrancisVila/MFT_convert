@@ -84,15 +84,9 @@ To use a proxy server for your <span class="mc-variable axway_variables.Componen
     uconfset id=cg.proxy.out.login, value= <proxy_login>
     uconfset id=cg.proxy.out.password, value= <proxy_login_password>  
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT can use the Flow Manager Agent as the outgoing HTTP proxy when connecting to the Flow Manager SaaS.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT can use the Flow Manager Agent as the outgoing HTTP proxy when connecting to the Flow Manager SaaS.
 
 #### Import the root certificate for the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> certificate
 
@@ -117,15 +111,9 @@ Set the shared secret that the Flow Manager administrator generated and provided
 
      uconfset id=cg.shared_secret, value=<Shared_Secret>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the shared secret is incorrect, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> may be rejected with a 403 HTTP code. If this happens, the <span class="code">cg.enable </span>mode becomes disabled on your Transfer CFT to avoid sending repeat requests to Flow Manager.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the shared secret is incorrect, Transfer CFT may be rejected with a 403 HTTP code. If this happens, the cg.enable mode becomes disabled on your Transfer CFT to avoid sending repeat requests to Flow Manager.
 
 #### Optionally define the configuration policy for registration
 

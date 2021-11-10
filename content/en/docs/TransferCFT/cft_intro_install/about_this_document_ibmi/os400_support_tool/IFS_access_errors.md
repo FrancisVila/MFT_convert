@@ -3,10 +3,10 @@
     "linkTitle": "IFS access error codes: DIAGP",
     "weight": "240"
 }<table>
-   <th>
+   <thead>
       <tr>
-<th>Error code         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Error code         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

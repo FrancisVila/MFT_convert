@@ -14,10 +14,10 @@ For any selected set of transfers, transfers are processed in batches
 of 20 transfers every 5 seconds.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Use this command to delete one or more catalog entries.         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Use this command to delete one or more catalog entries.         </th>
       </tr>
    </thead>
    <tbody>

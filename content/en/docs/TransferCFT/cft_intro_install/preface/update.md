@@ -21,15 +21,9 @@ If you are not familiar with the installation procedure, you may want to first r
 -   Example  
     The following example demonstrates a Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> SP4 installation over an existing product installed in <span class="code">/home/cftuser/CFT33x</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 When you install a service pack, the contents of the home directory are updated, but the runtime directory remains untouched. This is so that your customizations, such as APIs, are not overwritten.
 

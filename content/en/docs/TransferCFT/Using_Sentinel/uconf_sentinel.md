@@ -4,7 +4,7 @@
     "weight": "240"
 }This section describes how to configure the Sentinel monitoring agent, which is part of Transfer CFT, using the following groups of UCONF parameters:
 
--   sentinel.trkxxxxx: These parameters correspond to the trkxxxxx parameter described in the [Sentinel Universal Agent User Guide](#) .
+-   sentinel.trkxxxxx: These parameters correspond to the trkxxxxx parameter described in the [Sentinel Universal Agent User Guide]() .
 -   sentinel.xfb.xxxx: These parameters indicate how the Sentinel monitoring agent is used in Transfer CFT.
 -   Additional uconf values are related to the communication between the Sentinel monitoring agent and Sentinel
     -   ssl.ciphersuites
@@ -26,26 +26,20 @@ Use the following uconf parameters to configure the name and size of the overflo
     -   If <span class="code">sentinel.xfb.shut</span> is set to any value other than 0, Transfer CFT stops.
     -   If <span class="code">sentinel.xfb.shut</span> is set to 0, Transfer CFT continues to run.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">sentinel.trktmaxmsg </span>parameter is <em>obsolete</em>.<span class="code"> Sentinel.xfb.buffer_size</span> defines the maximum number of messages in the <span class="code">sentinel.trktname</span> overflow file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The sentinel.trktmaxmsg parameter is obsolete. Sentinel.xfb.buffer\_size defines the maximum number of messages in the sentinel.trktname overflow file.
 
 ## Sentinel configuration parameters
 
 The following table lists the Sentinel parameters in the unified configuration and the corresponding former Sentinel parameter.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Unified configuration parameter         </th>
-<th>Default value         </th>
-<th><p>Former Sentinel parameter name</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Former Sentinel parameter name</p>
 <p>trkapi.cfg</p>         </th>
       </tr>
    </thead>
@@ -68,15 +62,10 @@ The following table lists the Sentinel parameters in the unified configuration a
       <tr>
          <td><p>sentinel.xfb.log</p>         </td>
          <td><p>IEWF</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To disable, set to ' '.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>To disable, set to ' '.</p>
+</blockquote>         </td>
          <td><p>XFB.Log (trkapi.cfg)</p>         </td>
       </tr>
       <tr>
@@ -209,11 +198,11 @@ For more information on event messages, refer to the <span class="italic_in_para
 The following table lists the Heartbeat parameters that you can set in the unified configuration.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Unified configuration parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -244,11 +233,11 @@ The following table lists the Heartbeat parameters that you can set in the unifi
 The following table lists the parameters that you can set in the unified configuration.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Unified configuration parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

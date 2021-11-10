@@ -8,11 +8,11 @@
 <span class="autonumber"></span>PKIUTIL error codes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Contains         </th>
-<th>Meaning         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Contains         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>

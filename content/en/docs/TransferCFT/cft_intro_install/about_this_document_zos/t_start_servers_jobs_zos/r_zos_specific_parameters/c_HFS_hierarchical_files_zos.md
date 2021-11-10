@@ -2,9 +2,9 @@
     "title": "HFS hierarchical files",
     "linkTitle": "HFS hierarchical files",
     "weight": "310"
-}The <a href="#" class="MCTextPopup popup popupHead">HFS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Hierarchical File System </span></a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
+}The <a href="" class="MCTextPopup popup popupHead">HFS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Hierarchical File System </span></a> data architecture is consecutive and non-structured for records and blocks. The HFS files are installed in hierarchical disk spaces, and divided into directories and sub-directories according to UNIX conventions.
 
-HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="#" class="MCTextPopup popup popupHead">USS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>UNIX System Services</span></a>, such as the management and access interface.
+HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>UNIX System Services</span></a>, such as the management and access interface.
 
 Transfer CFT only accepts the complete name from the root directory. All file name components are separated by the ‘/’ character. The complete name is limited to 248 characters.
 
@@ -36,15 +36,9 @@ To enable recursive processing for a group of files, use the following syntax \*
 
     FNAME =/home/qualcft/**
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>A single asterisk * only selects the file in the immediate folder.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> A single asterisk \* only selects the file in the immediate folder.
 
 ### HFS file characteristics
 

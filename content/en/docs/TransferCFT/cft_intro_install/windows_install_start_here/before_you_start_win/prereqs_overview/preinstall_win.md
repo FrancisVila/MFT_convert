@@ -45,15 +45,9 @@ For Windows versions prior to the versions listed above, perform the following s
 1.  Navigate to<span class="spanboldinpara" style="font-weight: bold;"> Start </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> Control Panel </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> Administrative Tools</span> **&gt;**<span class="spanboldinpara" style="font-weight: bold;"> Local Security Policy</span>.
 2.  From the tree, select <span class="spanboldinpara" style="font-weight: bold;">Local Policies </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> User Rights Assignment </span>**&gt;**<span class="spanboldinpara" style="font-weight: bold;"> Log on as a service</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On some systems the path may be <span class="spanboldinpara" style="font-weight: bold;">Start </span><strong>&gt;</strong><span class="spanboldinpara" style="font-weight: bold;"> Control Panel </span><strong>&gt;</strong><span class="spanboldinpara" style="font-weight: bold;"> System and Security &gt; Administrative Tools</span> <strong>&gt;</strong><span class="spanboldinpara" style="font-weight: bold;"> Local Security Policy</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On some systems the path may be Start &gt; Control Panel &gt; System and Security &gt; Administrative Tools &gt; Local Security Policy.
 
 ### Set administration rights if UAC is enabled
 
@@ -83,10 +77,10 @@ The following sections describe how to:
 
 -   [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
 -   [Define rights before logging on the Copilot server](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
--   [Define rights before starting](##Define_rights_before_starting_Transfer_CFT)
--   [Define a domain user](##Define%20domain%20user)
--   [Define folder rights](##Define)
--   [Define system user access](##Define2)
+-   [Define rights before starting](#Define_rights_before_starting_Transfer_CFT)
+-   [Define a domain user](#Define%20domain%20user)
+-   [Define folder rights](#Define)
+-   [Define system user access](#Define2)
 
 ## Run as administrator
 

@@ -24,20 +24,20 @@ value of the secondary allocation of the file to be created is "no",
 the FSPACEX does not need to be defined.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><span id="FSPACEX_Table"></span>FSPACEX Table         </th>
+<th colspan="7" class="HeadD-Column1-Header1"><span id="FSPACEX_Table"></span>FSPACEX Table         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th><p>OS </p>         </th>
-<th><p>PARM </p>         </th>
-<th><p>PART </p>         </th>
-<th><p>CAT </p>         </th>
-<th><p>COM </p>         </th>
-<th><p>LOG </p>         </th>
-<th><p>ACCNT </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="17%"><p>OS </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="10%"><p>PARM </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="12%"><p>PART </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="14%"><p>CAT </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="14%"><p>COM </p>         </th>
+<th class="BodyE-Column1-Body1" data-valign="top" width="14%"><p>LOG </p>         </th>
+<th class="BodyD-Column1-Body1" data-valign="top" width="20%"><p>ACCNT </p>         </th>
       </tr>
 
       <tr>

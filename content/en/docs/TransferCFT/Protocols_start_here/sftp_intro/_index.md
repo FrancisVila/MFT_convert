@@ -74,7 +74,7 @@ Alternatively, you can implement Transfer CFT with SFTP in application to appli
 
 ## Configuration template
 
-<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> provides a basic SFTP configuration template. Click [here](#) to view the template.
+<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> provides a basic SFTP configuration template. Click [here]() to view the template.
 
 ## Restart a transfer
 

@@ -19,11 +19,11 @@ Enabling IPv6 support for applications may have adverse effects on the behavior 
 To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to <span class="bold_in_para">NO </span>using either the <span class="code">CFTUTIL uconfset</span> command or the UI [Unified configuration](../../admin_intro/uconf) option.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -96,11 +96,11 @@ If IPv6 is not properly configured, performance may be affected. Use the followi
 <span class="autonumber"></span>Tuning parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -141,10 +141,10 @@ etc.</li>
 <span class="autonumber"></span>Enable IPv6
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -158,15 +158,10 @@ etc.</li>
 <p>When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
-         <td><table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>It is recommended that you do <strong>not</strong> set<span class="code"> ipv6.disable_listen</span> to <span class="code">No</span>, and <span class="code">ipv6.disable_connect</span> to <span class="code">Yes</span>.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+         <td><blockquote>
+<p><strong>Note:</strong></p>
+<p>It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>

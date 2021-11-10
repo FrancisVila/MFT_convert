@@ -7,12 +7,12 @@
 ## Transfer properties
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CG values         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -101,12 +101,12 @@ Executed – The transfer was ended by an application or user.         </td>
 Indicates whether you are sending a single file or multiple files.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CG values         </th>
-<th>CFTUTIL‑parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL‑parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -129,11 +129,11 @@ Default value: pub\&amp;IDF.&amp;IDTU.&amp;FROOT.RCV         </td>
 ## File properties &gt; file type
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -158,12 +158,12 @@ Default value: pub\&amp;IDF.&amp;IDTU.&amp;FROOT.RCV         </td>
 ## Processing scripts &gt; post-processing
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CG values         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -208,12 +208,12 @@ Both – Executes the script both for the main request and for each source in th
 ## Processing scripts &gt; acknowledgment
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CG values         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -254,12 +254,12 @@ Both – Executes the script both for the main request and for each source in th
 ## Processing scripts &gt; error
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CG parameter         </th>
-<th>CG values         </th>
-<th>CFTUTIL parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

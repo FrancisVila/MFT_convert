@@ -55,12 +55,12 @@ contained in the following table.
 CFTACCNT list of headings
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading         </th>
-<th><p>Offset</p>
+<th class="HeadE-Column1-Header1">Heading         </th>
+<th class="HeadE-Column1-Header1"><p>Offset</p>
 <p>V24</p>         </th>
-<th><p>Offset</p>
+<th class="HeadD-Column1-Header1"><p>Offset</p>
 <p>V23</p>         </th>
       </tr>
    </thead>
@@ -313,10 +313,10 @@ the <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Protocol         </th>
-<th>Details         </th>
+<th class="HeadE-Column1-Header1">Protocol         </th>
+<th class="HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

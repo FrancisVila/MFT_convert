@@ -5,13 +5,13 @@
 }This section presents the **multi-node** parameters and their default values. The column <span class="bold_in_para">Modify </span>indicates a strong recommendation that you should not modify this value if <span class="bold_in_para">No </span>is indicated.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameters</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Values</p>         </th>
-<th>Modify         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameters</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Values</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Modify         </th>
       </tr>
    </thead>
    <tbody>
@@ -239,13 +239,13 @@ nodes.&lt;node_id&gt;.disabling</p>         </td>
 ## Connection dispatcher parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameters</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Values</p>         </th>
-<th>Modify         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameters</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Values</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Modify         </th>
       </tr>
    </thead>
    <tbody>
@@ -304,13 +304,13 @@ connection_dispatcher.nt.local_port</p>         </td>
 ### Node manager parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameters</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Values</p>         </th>
-<th>Modify         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameters</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Values</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Modify         </th>
       </tr>
    </thead>
    <tbody>

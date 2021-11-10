@@ -71,17 +71,11 @@ task:
 Exit tasks are not mutually exclusive. Several types of exit tasks may
 be initiated for a given transfer request.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For
-information on transport security exits, see <a href="../../transport_security_start_here/configuring_transport_security_start_here">Configuring
-Transport Security</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For
+> information on transport security exits, see Configuring
+> Transport Security.
 
 ### Exit list
 

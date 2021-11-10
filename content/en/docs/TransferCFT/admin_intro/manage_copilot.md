@@ -30,15 +30,9 @@ To kill all Copilot server processes, run:
 
     copstop -kill
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For details on starting in your specific operating system, refer to the corresponding Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> <em>Installation Guide</em>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For details on starting in your specific operating system, refer to the corresponding Transfer CFT 3.9 Installation Guide.
 
 <span id="Check__status"></span>
 
@@ -82,27 +76,15 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 
 When the <span class="code">copilot.misc.CreateProcessAsUser</span> variable is set, STEPLIB or JOBLIB can be non-APF. Only a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>/PassPort user can sign on to Copilot user interface.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When the ‘cft.mvs.copilot.check_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
 LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>CFTCOPL must be APF authorized to start if the UCONF <span class="code">cft.mvs.copilot.check_apf </span>variable is set to <span class="code">Yes</span>. Otherwise, the Transfer CFT log displays <span class="code">CFTI42E Copilot must be APF-authorized</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 #### Stop
 
@@ -147,11 +129,11 @@ The following table lists the UCONF identifiers
 and the default values for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI (Copilot) server.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">ID         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">Default         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -179,10 +161,10 @@ You can access customized file system directories via the <span class="mc-variab
 To add a new alias, access the Unified Configuration and configure the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">ID         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -206,11 +188,11 @@ To add a new alias, access the Unified Configuration and configure the following
 To view available drives from the <span class="bold_in_para">Edit a file</span> icon in the graphical user interface, define the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Options         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Options         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -235,10 +217,10 @@ To view available drives from the <span class="bold_in_para">Edit a file</span> 
 Use this parameter to define the keep-alive interval in seconds for a client session. By default, this occurs every 60 seconds.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
@@ -256,10 +238,10 @@ Use this parameter to define the keep-alive interval in seconds for a client ses
 Use this parameter to define the client timeout in minutes. By default, the timeout is 30 minutes.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
@@ -277,14 +259,14 @@ Use this parameter to define the client timeout in minutes. By default, the time
 
 #### Web services
 
-Use these parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services](#).
+Use these parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services]().
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Former value         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Former value         </th>
       </tr>
    </thead>
    <tbody>
@@ -303,15 +285,15 @@ Use these parameter to define the <span class="mc-variable axway_variables.Compo
 
 #### REST API server
 
-Use these parameter to configure the REST API server. See also [Transfer CFT REST API concepts](#).
+Use these parameter to configure the REST API server. See also [Transfer CFT REST API concepts]().
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Type         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Type         </th>
+<th class="HeadE-Column1-Header1">Default         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -425,11 +407,11 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 -   <span class="code">copilot.ssl.sslkeyfile= &lt;set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;not set></span>, then the format is PEM
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Supported format         </th>
-<th>Type         </th>
-<th>Extension         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported format         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Extension         </th>
       </tr>
    </thead>
    <tbody>
@@ -468,10 +450,10 @@ How to define a PKCS#12 certificate
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -499,10 +481,10 @@ How to define a DER or PEM certificate
 This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -530,10 +512,10 @@ This example uses a DER(or PEM) certificate with the private key in a separate D
 There are two additional UCONF parameters to use for HTTPS connections:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>

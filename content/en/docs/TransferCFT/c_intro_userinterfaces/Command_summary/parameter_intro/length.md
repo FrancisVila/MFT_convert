@@ -12,14 +12,8 @@
 
 Size of log file records. In general, this value should not be modified.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The default value for z/OS and IBM i environments is 256 (160 is for all other platforms).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The default value for z/OS and IBM i environments is 256 (160 is for all other platforms).
 
 [Return to Command index](../../)

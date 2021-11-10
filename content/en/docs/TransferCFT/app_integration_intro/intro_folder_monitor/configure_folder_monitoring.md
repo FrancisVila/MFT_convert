@@ -4,15 +4,9 @@
     "weight": "190"
 }This section provides a description of how to use Transfer CFT objects to manage folder monitoring.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 ## Folder monitoring set up
 
@@ -59,12 +53,12 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 Parameter descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><span id="Paramete"></span>Parameter         </th>
-<th>Type         </th>
-<th><p>Default  </p>         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><span id="Paramete"></span>Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default  </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -92,15 +86,10 @@ If you have more than one Folder to monitor, use a space between each logical va
          <td>Boolean         </td>
          <td>Active         </td>
          <td><p>Enables a scan of the folder.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>NO = NOACTIVE.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>NO = NOACTIVE.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>SCANDIR</p>
@@ -121,15 +110,11 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
 <li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>  Never delete any .met files.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Caution  
+  Never delete any .met files.</p>
+</blockquote>
 <p>*See <a href="#char_note">NOTE</a>.</p>         </td>
       </tr>
       <tr>
@@ -151,24 +136,14 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>MOVE: Files are moved to the work_dir prior to being submitted.</li>
 <li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.         </td>
-      </tr>
-   </tbody>
-</table>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.</p>
+</blockquote>
 <p>Please see the <a href="../#Limitati">Limitations</a> for multi-host system recommendations.</p>         </td>
       </tr>
       <tr>
@@ -200,15 +175,10 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>"(0)": The name of the first directory sub-level is used.</li>
 <li>"(1)": The name of the second directory sub-level is used.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In the <a href="#example_for_description">Directory C example</a><span class="code">/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>PART</p>
@@ -221,15 +191,10 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>"(0)": The name of the first directory sub-level is used.</li>
 <li>"(1)": The name of the second directory sub-level is used.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In the <a href="#example_for_description">Directory C example</a><span class="code">/home/CFT/fr/dir_c/scan/newyork/idf1, </span>the (0) represents newyork, and (1) represents idf1.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>INTERVAL         </td>
@@ -277,15 +242,10 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
 <li>No: Files are not resubmitted, regardless of changes.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>FILTERTYPE         </td>
@@ -310,15 +270,10 @@ For example, using timestamp_separators=".":
 <li>myfile is renamed myfile.20131025</li>
 <li>myfile.txt is renamed myfile.20131025.txt</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Unset the default value and use " " to MOVE without adding a timestamp.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Unset the default value and use " " to MOVE without adding a timestamp.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>RENAMESEPARATOR         </td>
@@ -357,15 +312,9 @@ The second one, when present, defines the separator after the timestamp.</p>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span id="char_note"></span>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
 -   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |
@@ -463,29 +412,17 @@ Prior to deleting a folder object, check that it is inactive. You can execute IN
     INACT TYPE=FOLDER, ID=<myfolder>
     CFTFOLDER ID=<myfolder>, MODE=DELETE
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you delete an active folder object while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you delete an active folder object while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.
 
 ## Directory configuration examples
 
 This section presents an example that consists of configuring 3 directories for monitoring, each having a different set of configuration parameter values. In this example, the three different directories are called A, B, and C.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
 
 ### Directory A requirements
 
@@ -605,15 +542,9 @@ Archiving is a way to store files after they have been moved from the scanned fo
 
 The following example describes how to scan a folder, send any new file, and then store a backup of the file. Additionally, the scenario provides instructions on how to then rename the transferred file as it is stored in the backup folder.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you create a new transfer with the same name as a previous file, it overwrites the existing file in the archive folder.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you create a new transfer with the same name as a previous file, it overwrites the existing file in the archive folder.
 
 ### Prerequisites
 
@@ -690,17 +621,11 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 ### Folder monitoring using USERCTRL
 
-The following example demonstrates how to use the [USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl) parameter to define access control for another user. See the sections on user rights in <a href="#" class="MCXref xref">Using system users - UNIX</a> or <a href="#" class="MCXref xref">How to enable system users - Windows</a> for details.
+The following example demonstrates how to use the [USERCTRL](../../../c_intro_userinterfaces/command_summary/parameter_intro/userctrl) parameter to define access control for another user. See the sections on user rights in <a href="" class="MCXref xref">Using system users - UNIX</a> or <a href="" class="MCXref xref">How to enable system users - Windows</a> for details.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>USEFSEVENTS=YES is not supported on UNIX systems in this use case.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> USEFSEVENTS=YES is not supported on UNIX systems in this use case.
 
 1.  Enable USERCTRL in the CFTPARM command:  
 

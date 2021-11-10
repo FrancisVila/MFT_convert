@@ -107,7 +107,7 @@ Transfer CFT is delivered with a platform specific tool to help you create an XL
 
 -   Mainframes - A JCL is provided to help with creating both local and remote tables. Refer to the CFTXLATE member in the installation library.
 
--   UNIX/Windows - Use the Axway delivered <a href="#" class="MCTextPopup popup popupHead">xvi utility<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Use this utility to update a conversion table.
+-   UNIX/Windows - Use the Axway delivered <a href="" class="MCTextPopup popup popupHead">xvi utility<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Use this utility to update a conversion table.
     </span></a> located in the <span class="code">home/bin</span> folder.
 
     xvi syntax
@@ -155,16 +155,10 @@ If DIRECT = SEND (or = BOTH), the file (FNAME) contains the description
 of the send translation table (FCODE to NCODE) and if DIRECT = RECV (or
 = BOTH), it contains the description of the receive table (NCODE to FCODE).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If FCODE or NCODE are BINARY no translation
-takes place.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If FCODE or NCODE are BINARY no translation
+> takes place.
 
 The identifier
 of these tables is the value of the DEFAULT parameter of the CFTPARM command.

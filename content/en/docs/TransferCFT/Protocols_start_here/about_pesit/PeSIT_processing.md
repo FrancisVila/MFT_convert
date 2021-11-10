@@ -12,11 +12,11 @@ defines the interaction between two PeSIT end users.
 Four types of service primitives implement this interaction:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Primitive         </th>
-<th>Notation         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Primitive         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Notation         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -52,20 +52,14 @@ a response and a confirmation to be complete.
 The following table illustrates the communication flows
 between Initiator and Responder during file transmission.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>A file exchange involves more than just sending a file's data. Control information also has to be conveyed before, during and after the data transfer. This extra information is contained in protocol messages called FPDU (File Protocol Data Unit).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> A file exchange involves more than just sending a file's data. Control information also has to be conveyed before, during and after the data transfer. This extra information is contained in protocol messages called FPDU (File Protocol Data Unit).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sending a file         </th>
+<th colspan="4" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Sending a file         </th>
       </tr>
    </thead>
    <tbody>
@@ -300,9 +294,9 @@ The following diagram illustrates the communication flows
 between Initiator and Responder during file reception.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Receiving a file         </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Receiving a file         </th>
       </tr>
    </thead>
    <tbody>
@@ -465,9 +459,9 @@ The following interaction illustrates the communication flows
 between Initiator and Responder during message transmission.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sending a message         </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Sending a message         </th>
       </tr>
    </thead>
    <tbody>

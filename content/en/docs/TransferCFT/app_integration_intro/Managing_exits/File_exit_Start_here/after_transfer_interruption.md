@@ -18,10 +18,10 @@ before handing back control to <span class="mc-variable axway_variables.Componen
 ### Fields to define
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -57,11 +57,11 @@ and end of transfer </li>
 ### Field values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Sender mode         </th>
-<th>Receiver mode         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th colspan="2" class="HeadE-Column1-Header1">Sender mode         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Receiver mode         </th>
       </tr>
    </thead>
    <tbody>

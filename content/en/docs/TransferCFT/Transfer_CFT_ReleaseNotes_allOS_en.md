@@ -36,17 +36,17 @@ This section lists new features and product enhancements added since the last ma
 The table below lists the available Transfer CFT 3.8 features according to the version and operating system where they were introduced.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Function         </th>
-<th>  OS         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Function         </th>
+<th colspan="5" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt">  OS         </th>
       </tr>
       <tr>
-<th>Windows         </th>
-<th>UNIX         </th>
-<th>z/OS         </th>
-<th>IBM i         </th>
-<th>HP NS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Windows         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">UNIX         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">z/OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">IBM i         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt">HP NS         </th>
       </tr>
    </thead>
    <tbody>
@@ -235,12 +235,12 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 #### User interface comparison
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Functionality         </th>
-<th><p>Central Governance<br />
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Functionality         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt"><p>Central Governance<br />
 <span style="font-size: 8pt;"> or Flow Manager </span></p>         </th>
-<th><p>Transfer CFT user interface<br />
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 8pt"><p>Transfer CFT user interface<br />
 </p>         </th>
       </tr>
    </thead>
@@ -304,11 +304,11 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Operating system         </th>
-<th>Tested and supported         </th>
-<th>Not supported         </th>
+<th class="HeadE-Column1-Header1">Operating system         </th>
+<th class="HeadE-Column1-Header1">Tested and supported         </th>
+<th class="HeadD-Column1-Header1">Not supported         </th>
       </tr>
    </thead>
    <tbody>
@@ -366,15 +366,9 @@ The following non-exhaustive table lists shared file systems that have been test
 
 Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the redistribution package is already installed on your Windows system, there is no need to reinstall.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the redistribution package is already installed on your Windows system, there is no need to reinstall.
 
 ### Secure Relay
 
@@ -507,6 +501,6 @@ For more information about Transfer CFT, refer to:
 ## Support services
 
 The Axway Global Support team provides worldwide 24 x 7 support for customers with active support agreements.  
-Email [support@axway.com](#) or visit Axway Sphere at [https://support.axway.com](https://support.axway.com/).
+Email <support@axway.com> or visit Axway Sphere at [https://support.axway.com](https://support.axway.com/).
 
 Copyright © 2021 Axway. All rights reserved.

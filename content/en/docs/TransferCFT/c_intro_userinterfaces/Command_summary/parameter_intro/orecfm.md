@@ -26,10 +26,10 @@ not 0), the value of the ORECFM parameter is forced
 to V.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Details         </th>
+<th class="HeadE-Column1-Header1">OS         </th>
+<th class="HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

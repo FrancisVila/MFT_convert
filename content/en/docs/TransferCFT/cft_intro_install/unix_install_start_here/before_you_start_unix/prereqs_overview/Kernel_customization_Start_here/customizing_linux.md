@@ -8,23 +8,17 @@
 
 The following table lists IPC tuning parameters to consider customizing and recommended values.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To aid in correctly calculating semaphores, remember that each <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> has two semaphores per instance.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To aid in correctly calculating semaphores, remember that each Transfer CFT has two semaphores per instance.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th><p>Recommended</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Recommended</p>
 <p>value</p>         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -94,12 +88,6 @@ The following table lists IPC tuning parameters to consider customizing and reco
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span id="note_linux"></span>**This value is based on the number of processes started by the Transfer CFT. This minimum is typically 7, but can be in excess of 40 depending on the values for maxtask, sslmtask, Sentinel if enabled, one task for each exit, etc.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*\*This value is based on the number of processes started by the Transfer CFT. This minimum is typically 7, but can be in excess of 40 depending on the values for maxtask, sslmtask, Sentinel if enabled, one task for each exit, etc.

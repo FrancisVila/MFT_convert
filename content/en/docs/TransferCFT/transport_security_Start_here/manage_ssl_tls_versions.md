@@ -33,15 +33,9 @@ DIRECT=SERVER
 
 In server mode, the header length is automatically detected for all SSL versions (SSLV3, TLSV1, SSLV3COMP, TLSV1COMP).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>It is recommended that you set the server to use TLSV1COMP.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> It is recommended that you set the server to use TLSV1COMP.
 
 ## Enable TLS 1.1 and 1.2
 
@@ -70,13 +64,13 @@ It is important to note that the Transfer CFT SSL/TLS implementation allows a fa
 You can use these UCONF parameters to define the minimum SSL/TLS protocol version (setting these parameters to tls\_1.0, for example, disables SSL 3.0 connections):
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
-<th>Type         </th>
-<th>Possible values         </th>
-<th>Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Possible values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default value         </th>
       </tr>
    </thead>
    <tbody>

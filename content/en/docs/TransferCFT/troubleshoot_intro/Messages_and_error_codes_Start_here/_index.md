@@ -11,10 +11,10 @@
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> messages provide information on the status of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. Messages have the general format and supporting information:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>The message severity is displayed</p>         </th>
-<th><p>CFTxxx: the actual message that is displayed on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<th class="HeadE-Column1-Header1"><p>The message severity is displayed</p>         </th>
+<th class="HeadD-Column1-Header1"><p>CFTxxx: the actual message that is displayed on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -76,10 +76,10 @@ Where:
 ### Message source
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Code         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -158,10 +158,10 @@ The sequence number is an index characterizing the message within a given class.
 The severity code is described in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Indicates         </th>
+<th class="HeadE-Column1-Header1">Code         </th>
+<th class="HeadD-Column1-Header1">Indicates         </th>
       </tr>
    </thead>
    <tbody>
@@ -189,10 +189,10 @@ The severity code is described in the following table.
 The table below lists the symbolic variables used in message text.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Code</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Code</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

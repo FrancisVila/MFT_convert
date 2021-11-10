@@ -20,10 +20,10 @@ security operations, and comprises a set of sub-sections that describe how to co
 and manage the Transfer CFT security objects as well as use additional <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products to offer security features.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Topics/sections         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Topics/sections         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

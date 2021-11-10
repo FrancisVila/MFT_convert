@@ -20,10 +20,10 @@
 While most of the corresponding parameter default values are suitable for normal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> functioning, three of these parameter values must have at least the following minimum values:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Resource control         </th>
-<th><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> minimum value         </th>
+<th class="HeadE-Column1-Header1">Resource control         </th>
+<th style="text-align: center;" class="HeadD-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> minimum value         </th>
       </tr>
    </thead>
    <tbody>

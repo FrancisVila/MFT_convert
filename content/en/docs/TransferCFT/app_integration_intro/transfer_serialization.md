@@ -74,15 +74,9 @@ In this example, a serialized transfer can start as soon as the post-processing 
      
      CFTR12I END [for transfer C] Treated for USER <my user> <PART=PARIS IDF=BIN  >
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> SEND requests are not serialized with RECV request. Send and receive procedures can have two different values for the SERIAL parameter.
 
 **<span id="Example_3"></span>Example 3**
 

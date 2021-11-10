@@ -30,15 +30,9 @@ Follow these steps to uninstall a service pack:
 
 1.  Press Enter. The patch or service pack is removed, and you are returned to the previous version.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>As with other Transfer CFT commands, ensure that your program library (CFTPGM) and production library are present in your EDTLIBL before calling the UNINSTALL command.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> As with other Transfer CFT commands, ensure that your program library (CFTPGM) and production library are present in your EDTLIBL before calling the UNINSTALL command.
 
 ## Uninstall a patch
 

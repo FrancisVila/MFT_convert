@@ -61,13 +61,13 @@ To fix the issue, delete the persistent cache files (CFTAM and CFTAM.idx) and re
 For more information, see the following platform specific guides for the appropriate OS:
 
 -   UNIX - Running Transfer CFT for the first time UNIX
-    -   [Defining user rights](#)
-    -   [Declaring additional users](#)
-    -   [UNIX system users](#)
+    -   [Defining user rights]()
+    -   [Declaring additional users]()
+    -   [UNIX system users]()
     -   [License keys and authorizations](../../../cft_intro_install/unix_install_start_here/before_you_start_unix/prereqs_overview)
--   <span class="mc-variable Primary.for_Windows variable">Windows</span> - [Running Transfer CFT for the first time Windows](#)
-    -   [Windows user rights](#)
-    -   [Windows system users](#)
+-   <span class="mc-variable Primary.for_Windows variable">Windows</span> - [Running Transfer CFT for the first time Windows]()
+    -   [Windows user rights]()
+    -   [Windows system users]()
     -   [License keys and authorizations](../../../cft_intro_install/windows_install_start_here/before_you_start_win/prereqs_overview)
 -   z/OS - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_mvs_en_PDF/resource/TransferCFT_InstallationGuide_mvs_en.pdf)
 -   IBM i - [Installation and Operation Guide](https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf)

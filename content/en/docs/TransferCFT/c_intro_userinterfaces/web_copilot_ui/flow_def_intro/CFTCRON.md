@@ -2,7 +2,7 @@
     "title": "Scheduling script execution - CFTCRON",
     "linkTitle": "Cron jobs - CFTCRON",
     "weight": "260"
-}The <a href="#" class="MCTextPopup popup popupHead">CRONJOB<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Job Scheduler</span></a> feature enables Transfer CFT to execute scripts at predetermined
+}The <a href="" class="MCTextPopup popup popupHead">CRONJOB<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Job Scheduler</span></a> feature enables Transfer CFT to execute scripts at predetermined
 dates and times. An example script, `cron-wlog.cmd`, is delivered in the installed product
 packaging ($CFTDIRRUNTIME/exec on Unix/Windows). You can adapt this example to suit your local requirements.
 
@@ -72,11 +72,11 @@ minutes, while an upper case M defines months.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Rule</p>         </th>
-<th><p>Syntax</p>         </th>
-<th><p>Alternate syntax</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Rule</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Syntax</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Alternate syntax</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -133,11 +133,11 @@ minutes, while an upper case M defines months.
 ### Time parameter descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Symbol         </th>
-<th>Description         </th>
-<th>Values         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbol         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Values         </th>
       </tr>
    </thead>
    <tbody>
@@ -181,10 +181,10 @@ minutes, while an upper case M defines months.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>If you use this syntax…</p>         </th>
-<th><p>The job is executed…</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>If you use this syntax…</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>The job is executed…</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -274,10 +274,10 @@ procedure. Define these using the EXEC parameter of the CFTCRON command.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Symbolic variable</p>         </th>
-<th><p>Corresponding substituted value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Symbolic variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Corresponding substituted value</p>         </th>
       </tr>
    </thead>
    <tbody>

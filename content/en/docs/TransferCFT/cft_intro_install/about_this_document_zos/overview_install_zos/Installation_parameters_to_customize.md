@@ -10,21 +10,15 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 ### Installed directories
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Do NOT customize the distribution environment.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Do NOT customize the distribution environment.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Variables         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Variables         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

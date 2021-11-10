@@ -12,18 +12,12 @@ indirection character, to trigger SEND operations that correspond to:
     -   In heterogeneous mode
     -   Using a file name filter
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If FNAME designates a generic name and the &lt;file_symb&gt;
-indirection character is omitted, SEND FNAME = FIL* for example, the SEND
-command triggers a single transfer, in which pseudo-records each of which corresponds
-to a file name are sent.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If FNAME designates a generic name and the &lt;file\_symb>
+> indirection character is omitted, SEND FNAME = FIL\* for example, the SEND
+> command triggers a single transfer, in which pseudo-records each of which corresponds
+> to a file name are sent.
 
 <span id="Sending_files_designated_by_an_indirection_file"></span>
 
@@ -59,15 +53,9 @@ UNIX
 
 The files file1, file2 and file3 will be sent.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot use a file name with an asterisk, for example fil*, as that denotes the beginning of a file not a directory.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot use a file name with an asterisk, for example fil\*, as that denotes the beginning of a file not a directory.
 
 If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
 ... command generates N+1 transfer entries in the catalog, as follows:
@@ -91,15 +79,9 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
     -   If one of the files in the group cannot be sent (for example an unknown file), the other transfers are not affected,
         but the generic entry for the group is not set to the **T** state (or **X** depending on the mode).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See also <a href="../../phase_and_phasestep/processing_compatability">COMPAT</a> mode, if using backward compatibility.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See also COMPAT mode, if using backward compatibility.
 
 For the receiver:
 
@@ -107,17 +89,11 @@ For the receiver:
 -   The name of each file can be specified using the
     &FPATH, &FROOT and &FSUF symbolic variables
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can specify a list of directories to be sent in the indirection
-file.
-However, do not mix files and directories in the same indirection file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can specify a list of directories to be sent in the indirection
+> file.
+> However, do not mix files and directories in the same indirection file.
 
 IBM i (OS/400)
 
@@ -177,11 +153,11 @@ Mandatory parameters for homogeneous sends include:
 -   SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when CFTPART command's SYST value is the same as the local operating system.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Platform         </th>
-<th>UNIX-like environment         </th>
-<th>Native         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Platform         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UNIX-like environment         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Native         </th>
       </tr>
    </thead>
    <tbody>
@@ -263,11 +239,11 @@ To force heterogeneous mode:
 Unix/Windows
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -286,15 +262,9 @@ Unix/Windows
 
 #### Sending to a remote site in homogeneous mode
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The following is valid when using the same system type <em>and</em> heterogeneous mode is not forced. When using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> remember that heterogeneous mode is the default setting.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The following is valid when using the same system type and heterogeneous mode is not forced. When using Central Governance remember that heterogeneous mode is the default setting.
 
 The files to be transferred are copied and concatenated in a work file
 that must be specified in the WFNAME parameter of the send command.
@@ -465,11 +435,11 @@ For example, a transfer between Unix platforms, the following filter would inclu
 A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Character         </th>
-<th>Description         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -493,11 +463,11 @@ EREGEX (extended regular expressions) is the use of special characters and strin
 In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Symbol         </th>
-<th>Indicates         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbol         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Indicates         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -559,15 +529,9 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to <a href="http://pubs.opengroup.org/onlinepubs/009696899/basedefs/xbd_chap09.html">Regular expressions</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
 <span id="SNDINDFILEERR"></span>
 
@@ -587,13 +551,13 @@ Catalog details
 Simplified catalog view when set to CONTINUE
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer type         </th>
-<th>IDTU         </th>
-<th>PIDTU         </th>
-<th>Phasestep         </th>
-<th>Diagi         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer type         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">IDTU         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PIDTU         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Phasestep         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Diagi         </th>
       </tr>
    </thead>
    <tbody>
@@ -631,13 +595,13 @@ Simplified catalog view when set to CONTINUE
 Simplified catalog view when set to ABORT
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer type         </th>
-<th>IDTU         </th>
-<th>PIDTU         </th>
-<th>Phasestep         </th>
-<th>Diagi         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer type         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">IDTU         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PIDTU         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Phasestep         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Diagi         </th>
       </tr>
    </thead>
    <tbody>

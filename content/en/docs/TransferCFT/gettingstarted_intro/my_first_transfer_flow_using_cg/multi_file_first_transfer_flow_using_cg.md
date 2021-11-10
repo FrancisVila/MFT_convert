@@ -7,12 +7,12 @@
 <img src="/Images/TransferCFT/TransferCFT_Multiple_send_w_CG.png" class="maxWidth" />
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th style="text-align: center;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Task         </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

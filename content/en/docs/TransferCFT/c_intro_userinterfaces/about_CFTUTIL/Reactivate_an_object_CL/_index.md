@@ -13,10 +13,10 @@ the ACT command to reactivate:
 Command guide: [ACT](../../command_summary#ACT)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

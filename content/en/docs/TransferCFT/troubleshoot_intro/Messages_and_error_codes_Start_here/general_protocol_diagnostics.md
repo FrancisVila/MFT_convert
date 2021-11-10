@@ -11,10 +11,10 @@ The following table defines the DIAGP formats.
 <span class="autonumber"></span>DIAGP Formats
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Format         </th>
-<th>Meaning         </th>
+<th class="HeadE-Column1-Header1">Format         </th>
+<th class="HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>
@@ -68,11 +68,11 @@ a single protocol.
 <span class="autonumber"></span>Specific codes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Protocol         </th>
-<th>Meaning         </th>
+<th class="HeadE-Column1-Header1">Code         </th>
+<th class="HeadE-Column1-Header1">Protocol         </th>
+<th class="HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>

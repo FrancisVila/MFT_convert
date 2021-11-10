@@ -20,25 +20,13 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
     -   <a href="#Auto-com" class="MCXref xref">Use the Bash autocompletion keys</a>
     -   [UCONF parameter specifics](#UCONF%C2%A0pa)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: <code>CFTUTIL SEND</code>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You require bash version 2.0.5 or higher.  Additionally, Bash must be loaded prior to loading the Transfer CFT profile.
 
 <span id="Special"></span>
 
@@ -47,10 +35,10 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
 The CFTUTIL utility uses the following keys as shortcuts when entering a command.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Key</p>         </th>
-<th><p>Action</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Key</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Action</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -195,11 +183,11 @@ To retrieve a command you know, begin by typing the first characters of the comm
 Use the following uconf parameters to manage the command-history settings.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

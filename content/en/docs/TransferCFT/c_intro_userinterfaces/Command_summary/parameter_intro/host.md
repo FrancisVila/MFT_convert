@@ -22,15 +22,9 @@ can be either:
 An address may either be expressed as an IP address (*nnn.nnn.nnn.nnn*
 numerical format) or a host name.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The host field can specify IPv4 or IPv6:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The host field can specify IPv4 or IPv6:
 
 > CFTNET TYPE = TCP
 

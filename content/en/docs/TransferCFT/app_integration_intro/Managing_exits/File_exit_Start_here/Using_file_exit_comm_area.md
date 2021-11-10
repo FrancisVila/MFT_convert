@@ -35,10 +35,10 @@ Each stage is explained in a table as follows:
 The symbols used are indicated in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Symbol         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Symbol         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -77,10 +77,10 @@ the stages at which you want to take control by defining the masc parameter.
 ### Fields to define
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -124,11 +124,11 @@ and end of transfer </li>
 ### Field values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Sender mode         </th>
-<th>Receiver mode         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th colspan="2" class="HeadE-Column1-Header1">Sender mode         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Receiver mode         </th>
       </tr>
    </thead>
    <tbody>
@@ -789,10 +789,10 @@ this stage.
 ### Fields to define
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Meaning         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>
@@ -820,11 +820,11 @@ and end of transfer </li>
 ### Field values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Sender mode         </th>
-<th>Receiver mode         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th colspan="2" class="HeadE-Column1-Header1">Sender mode         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Receiver mode         </th>
       </tr>
    </thead>
    <tbody>
@@ -1497,10 +1497,10 @@ stage.
 ### Fields to define
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -1528,11 +1528,11 @@ and end of transfer </li>
 ### Field values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Sender mode         </th>
-<th>Receiver mode         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th colspan="2" class="HeadE-Column1-Header1">Sender mode         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Receiver mode         </th>
       </tr>
    </thead>
    <tbody>
@@ -2214,10 +2214,10 @@ received, the user function can perform the following operations:
 ### Fields to define
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -2289,11 +2289,11 @@ transfer (ALLOC\_TYP). A zero value inhibits compression.
 ### Field values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Sender mode         </th>
-<th>Receiver mode         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th colspan="2" class="HeadE-Column1-Header1">Sender mode         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Receiver mode         </th>
       </tr>
    </thead>
    <tbody>

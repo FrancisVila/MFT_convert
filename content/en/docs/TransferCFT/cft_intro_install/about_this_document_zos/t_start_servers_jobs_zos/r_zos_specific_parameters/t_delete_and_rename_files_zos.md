@@ -2,15 +2,9 @@
     "title": "Work with files",
     "linkTitle": "Work with files",
     "weight": "300"
-}<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.         </td>
-      </tr>
-   </tbody>
-</table>
+}> **Note:**
+>
+> Do not use a dash "-" as a special character in z/OS (MVS) file names. This is an invalid system character.
 
 ## About files
 

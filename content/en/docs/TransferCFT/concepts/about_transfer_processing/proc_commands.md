@@ -9,15 +9,9 @@
 -   `Ackexec`: for acknowledge processing
 -   `Exece`: for transfer errors
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The exceptions to these rules are described in the following sections.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The exceptions to these rules are described in the following sections.
 
 ## Methods for executing processing scripts
 
@@ -103,15 +97,10 @@ If a command is incorrect and cannot be executed, the transfer remains in the ph
 -   The system does not support executing this type of file
 -   A loop exists in symbolic links encountered during resolution of the path or file argument
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>Refer to <span class="code">man execve</span> for an exhaustive list, since after a fork in the processes Transfer CFT does not retrieve the EXEC failure.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Refer to man execve for an exhaustive list, since after a fork in the processes Transfer CFT does not retrieve the EXEC failure.
 
 ## Schedule processing
 
@@ -121,28 +110,17 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 In some cases you may want to limit the number of scripts launched in parallel by <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> to reduce processing bottlenecks. To do so, set the UCONF <span class="code">cft.server.max\_processing\_scripts</span> parameter to a positive integer to enable and control the number of executed processes.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the<code> cft.server.max_processing_scripts</code> value is reached.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
 
     uconfset id=cft.server.max_processing_scripts, value=64
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This parameter does not apply to the execution of transfer error scripts.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> This parameter does not apply to the execution of transfer error scripts.
 
 ## Commands in scripts
 
@@ -224,12 +202,12 @@ You can change the maxduration for a transfer restart using the maxduration para
 ### SEND, CFTSEND
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -310,12 +288,12 @@ You can change the maxduration for a transfer restart using the maxduration para
 ### END
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -402,12 +380,12 @@ script is relaunched.         </td>
 ### KEEP
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -438,12 +416,12 @@ script is relaunched.         </td>
 ### HALT
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -474,12 +452,12 @@ script is relaunched.         </td>
 ### SUBMIT
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -506,12 +484,12 @@ processing script that will allow a SUBMIT to occur at the correct script step. 
 ### START
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

@@ -4,15 +4,9 @@
     "weight": "250"
 }This topic describes how to migrate Transfer CFT 3.0.1 or 3.1.2 to version <span class="mc-variable axway_variables.Component_Version variable">3.9</span>. It is divided in 2 sections, the first section describes migration for a single node architecture, and the second section multi-node architecture. Lastly there are instructions explaining what would be needed to migrate from single node architecture to multi node architecture.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When migrating from 3.0.1 to 3.3.x, you must install SP10 P6 on all Transfer CFTs 3.0.1 that inter-operate with any Transfer CFTs 3.3.x prior to migrating.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When migrating from 3.0.1 to 3.3.x, you must install SP10 P6 on all Transfer CFTs 3.0.1 that inter-operate with any Transfer CFTs 3.3.x prior to migrating.
 
 ## Single node architecture
 

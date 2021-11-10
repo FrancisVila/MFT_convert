@@ -5,25 +5,19 @@
 }This page describes the <span id="CLEARCMD_command"></span>CLEARCMD. Use this
 command to delete a transfer request from the communication file. A log message is generated to trace who has cleared which command.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must include either the COMMAND or JOBNAME parameter when using this command.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must include either the COMMAND or JOBNAME parameter when using this command.
 
 <table>
          
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

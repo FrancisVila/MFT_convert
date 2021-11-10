@@ -38,10 +38,10 @@ terminated by a null byte.
 Fields in cftaix queries
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

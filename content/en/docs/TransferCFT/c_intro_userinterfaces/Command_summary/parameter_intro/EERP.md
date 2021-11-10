@@ -26,16 +26,10 @@ The second version (1991) specifies that:
 -   the DESTINATOR
     protocol field corresponds to the EERP receiver (i.e. the file sender)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must check the consistency of the customized values from one
-end to another. Indeed, if the sender and receiver have different versions,
-it is not possible to acknowledge the transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must check the consistency of the customized values from one
+> end to another. Indeed, if the sender and receiver have different versions,
+> it is not possible to acknowledge the transfer.
 
 [Return to Command index](../../)

@@ -314,16 +314,11 @@ command on the catalog.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The command is ignored.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This message
-is followed by the CFTX01W message.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>This message
+is followed by the CFTX01W message.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
@@ -429,15 +424,10 @@ is followed by the CFTX01W message.         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Set the uconf parameter <span class="code">cft.cftcat.enable_deprecated_blknum=Yes</span> to enable BLKNUM.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Regardless of the <code>cft.cftcat.enable_deprecated_blknum</code> parameter setting, BLKNUM is disabled in a multi-node configuration (<code>uconf:cft.multi_node.enable=Yes</code>), and this message is displayed.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>

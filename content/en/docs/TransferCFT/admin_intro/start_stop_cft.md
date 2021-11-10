@@ -31,15 +31,9 @@ When opening a new session to manage your <span class="mc-variable axway_variabl
     -   [Start/stop](#Start/st)
     -   [Check status](#Perform)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The commands listed in this section apply generally to all supported platforms for this version, except for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS. For more information, please refer to the OS-specific <span class="mc-variable axway_variables.Installation_guide variable">Installation Guide</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The commands listed in this section apply generally to all supported platforms for this version, except for Transfer CFT z/OS. For more information, please refer to the OS-specific Installation Guide.
 
 ### Autocomplete command
 

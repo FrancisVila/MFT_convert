@@ -7,10 +7,10 @@
 The Transfer CFT software has a SYSMOD FMID (Function Module ID) that identifies the software and its release number. For example, FMID TCF0300 identifies the Transfer CFT 3.3.2 release.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FMID</p>         </th>
-<th><p>Format</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FMID</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Format</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -29,10 +29,10 @@ The Transfer CFT software has a SYSMOD FMID (Function Module ID) that identifie
 3.  Enter the following parameters in the console. Upon completion you require an FTP client.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Question</p>         </th>
-<th><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Question</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -75,10 +75,10 @@ The user ID you use must have read access to the SAF facility class resources GI
 
 1.  Edit the sample jobs in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ&, and the optional device &UNIT& and volume &VOLUME&.  
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Member Name</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -98,10 +98,10 @@ The user ID you use must have read access to the SAF facility class resources GI
 
 1.  Edit the sample job listed in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ&.  
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Member name</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -114,11 +114,11 @@ The user ID you use must have read access to the SAF facility class resources GI
 2.  Submit the job.  
     The following data sets (approximately 300 cylinders) are created and suffixed by their corresponding FMID identifier (TCF0nnn) and RELFILEs number (Fn).  
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>File Number</p>         </th>
-    <th><p>Data Set Suffix</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Number</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data Set Suffix</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -204,10 +204,10 @@ The user ID you use must have read access to the SAF facility class resources GI
 
 1.  Edit the sample jobs that are listed in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ& and the optional device &UNIT& and volume &VOLUME&.  
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Member name</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -227,11 +227,11 @@ The user ID you use must have read access to the SAF facility class resources GI
     The $C20ALLT job creates, and the $C30FAPP job updates, the following data sets (approximately 300 cylinders).  
 
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Data Set Suffix</p>         </th>
-    <th><p>File Type</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data Set Suffix</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Type</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -318,10 +318,10 @@ The user ID you use must have read access to the SAF facility class resources GI
     Edit the sample job listed below, modifying as necessary: supply a valid JOB JCL card statement, choose and modify the dataset qualifier &HLQ& of the SMP/E target libraries, and select the appropriate Transfer CFT instance qualifier &CFT& and Transfer CFT instance device &UNIT& and volume &VOLUME&.
 
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Member Name</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>
@@ -334,25 +334,19 @@ The user ID you use must have read access to the SAF facility class resources GI
 
     Submit the job.
 
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>The Transfer CFT dataset files, the instance customization, and build steps are described in the COMMON INSTALLATION chapter.         </td>
-          </tr>
-       </tbody>
-    </table>
+    > **Note:**
+    >
+    > The Transfer CFT dataset files, the instance customization, and build steps are described in the COMMON INSTALLATION chapter.
 
     ### Additional SMP/E sample jobs
 
     The following table lists additional sample jobs.
 
     <table>
-       <th>
+       <thead>
           <tr>
-    <th><p>Member Name</p>         </th>
-    <th><p>Description</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
+    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
           </tr>
        </thead>
        <tbody>

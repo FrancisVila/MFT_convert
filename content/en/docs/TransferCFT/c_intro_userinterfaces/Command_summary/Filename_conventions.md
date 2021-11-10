@@ -12,15 +12,9 @@ The following characters are system-restricted characters:
 -   UNIX: /\*? $()
 -   Windows: /\\:\*?"&lt;&gt;
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can use the <span class="code">$</span> character on UNIX systems as an environment variable. To have a file created when the name includes one or more <span class="code">$</span> characters (without resolving the environment variable), see the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <span class="code">cft.unix.throw_error_on_envvar_not_found</span> variable.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can use the $ character on UNIX systems as an environment variable. To have a file created when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
 
 ## Naming the local file to be sent FNAME=filename
 
@@ -75,17 +69,11 @@ and the send transfer is implicit, that is when CFTSEND IMPL=YES. In this
 case, the physical filename proposed by the receiver requester partner
 can be taken into account at each transfer.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When the file sent corresponds exactly to the one the partner
-requested (FNAME= &amp;NFNAME), this corresponds to the open operating
-mode.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When the file sent corresponds exactly to the one the partner
+> requested (FNAME= &NFNAME), this corresponds to the open operating
+> mode.
 
 ### Sending of a file with versions (z/OS)
 
@@ -94,12 +82,12 @@ the relative name is converted into an absolute name in different stages
 as shown in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Version         </th>
-<th>Parameter         </th>
-<th>Conversion to an absolute name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Version         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Conversion to an absolute name         </th>
       </tr>
    </thead>
    <tbody>
@@ -233,15 +221,9 @@ The name of the indirection file is preceded by the &lt;file-symb>
 character specific to each system. In most environments, the ‘#’ symbol
 is used.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Refer to the table of platform-specific characters that corresponds to your operating system.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Refer to the table of platform-specific characters that corresponds to your operating system.
 
 A catalog entry is created for each file. Each file is transferred in
 the same way as any other file.

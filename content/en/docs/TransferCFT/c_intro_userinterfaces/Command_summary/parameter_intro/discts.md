@@ -26,10 +26,10 @@ in the following table.
 Default values are:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Protocol          </th>
-<th>Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Protocol          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default value         </th>
       </tr>
    </thead>
    <tbody>

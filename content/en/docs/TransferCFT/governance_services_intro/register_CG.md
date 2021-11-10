@@ -60,15 +60,9 @@ Unset the UCONF parameters:
     uconfunset id=sentinel.xfb.enable
     uconfset id=pki.type, value=cft
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.
 
 #### Define UCONF parameters used for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> instance identification
 

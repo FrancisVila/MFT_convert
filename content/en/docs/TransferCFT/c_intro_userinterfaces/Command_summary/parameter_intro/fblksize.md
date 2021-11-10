@@ -23,9 +23,9 @@ value of the block size of the file to be created is "no" in the following table
 FBLKSIZE parameter does not need to be defined.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FBLKSIZE         </th>
+<th colspan="7" class="HeadD-Column1-Header1">FBLKSIZE         </th>
       </tr>
    </thead>
    <tbody>
@@ -86,10 +86,10 @@ the receiver file records: according to the system, it defines the disk
 block size and/or the file input/output buffer size.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>System         </th>
-<th>FBLKSIZE used         </th>
+<th class="HeadE-Column1-Header1">System         </th>
+<th class="HeadD-Column1-Header1">FBLKSIZE used         </th>
       </tr>
    </thead>
    <tbody>
@@ -153,10 +153,10 @@ able to locate the value for the file to be sent. This real value is then
 taken into account when activating the transfer.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>System </p>         </th>
-<th><p>FBLKSIZE used </p>         </th>
+<th class="HeadE-Column1-Header1"><p>System </p>         </th>
+<th class="HeadD-Column1-Header1"><p>FBLKSIZE used </p>         </th>
       </tr>
    </thead>
    <tbody>

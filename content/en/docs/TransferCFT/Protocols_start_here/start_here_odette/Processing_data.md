@@ -22,16 +22,10 @@ The COMPRESSION option is negotiated during the connection phase, on
 sending the Start File Session IDentification
 FPDU.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
-this compression option negotiation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The SCOMP and RCOMP parameters of CFTPROT are used as a basis for
+> this compression option negotiation.
 
 This only involves a COMPRESSION OPTION. This means that while the partners
 have the possibility of COMPRESSING files, it is not a MANDATORY REQUIREMENT.
@@ -194,17 +188,11 @@ EERP parameter value:
     protocol field corresponds to the EERP receiver (i.e. to the sender of
     the file).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Check the consistency of the end-to-end parameter value settings.
-If a sender has a different version from a receiver, it will not be possible
-to acknowledge the transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Check the consistency of the end-to-end parameter value settings.
+> If a sender has a different version from a receiver, it will not be possible
+> to acknowledge the transfer.
 
 In addition, the exchanges of EERP messages are not checked by the negotiation
 of the SENS transfer parameter (SRIN/SROUT).

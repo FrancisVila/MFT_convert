@@ -23,15 +23,9 @@ the 2.4.x syntax.
     Where the remote certificate DN must contain string1 Op NOT(string2), and
     Op is a  OR/OU binary operator or AND/ET binary operator.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The different attributes of the dnuser or dnissuer string
-are separated by the '/' character.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The different attributes of the dnuser or dnissuer string
+> are separated by the '/' character.
 
 [Return to Command index](../../)

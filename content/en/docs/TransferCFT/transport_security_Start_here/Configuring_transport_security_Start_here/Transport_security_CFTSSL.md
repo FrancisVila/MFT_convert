@@ -30,15 +30,9 @@ profile. The DIRECT parameter indicates the mode to which the security
 profile applies: DIRECT=CLIENT for client mode or DIRECT=SERVER for server
 mode.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The Transfer CFT CFTSSL object in client mode is a dynamic object. However, when set to server mode this object is static (you must restart Transfer CFT for the value to be taken into account).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The Transfer CFT CFTSSL object in client mode is a dynamic object. However, when set to server mode this object is static (you must restart Transfer CFT for the value to be taken into account).
 
 ### Client mode SSL
 
@@ -134,13 +128,13 @@ algorithm</li>
 selection, depending on the client's preference.</p>
 <p><span class="autonumber"><span></span></span><span id="Supported_suites"></span>Supported suites</p>
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Suite </p>         </th>
-<th><p>Order used</p>         </th>
-<th><p>Authentication </p>         </th>
-<th><p>Confidentiality </p>         </th>
-<th><p>Integrity </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Suite </p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Order used</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Authentication </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Confidentiality </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Integrity </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -258,24 +252,14 @@ selection, depending on the client's preference.</p>
       </tr>
    </tbody>
 </table>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.         </td>
-      </tr>
-   </tbody>
-</table>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>** These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>** These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[DEPTH = {10 | num}]</p>         </td>
@@ -356,15 +340,10 @@ identifier, ...)]</p>         </td>
 <p>In client mode, this list is used to check the server
 certificate. Only certificates signed by one of the authorities in the
 ROOTCID parameter are accepted.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To use more than 10 identifiers, you can refer to the <a href="../../certificates/pkiutil_cli_intro/pkientity">PKIENTITY</a> information.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>To use more than 10 identifiers, you can refer to the PKIENTITY information.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>[TRACE = number ]         </td>
@@ -551,15 +530,10 @@ certificate can be chosen for authentication by the client</li>
 client must be authenticated, the list of authority DNs supported by the
 server is supplied</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To use more than 10 identifiers, refer to the <a href="../../certificates/pkiutil_cli_intro/pkientity">PKIENTITY</a> information.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>To use more than 10 identifiers, refer to the PKIENTITY information.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>[TRACE = number ]         </td>
@@ -573,17 +547,12 @@ for authentication by the client.</p>
 <p>If the server
 requires client authentication, it provides the client with the list of
 authority DNs supported during the SSL protocol negotiation phase.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This parameter
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>This parameter
 is ignored when the CFTSSL command is used for additional controls in
-the server mode (CFTSSL command indicated by a CFTPART command).         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+the server mode (CFTSSL command indicated by a CFTPART command).</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>VERIFY = {REQUIRED
@@ -591,20 +560,15 @@ the server mode (CFTSSL command indicated by a CFTPART command).         </td>
          <td><p>Sets the authentication mode requirement.</p>
 <p>The VERIFY and USERCID parameters set the security profile
 authentication mode.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>With the SSL
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>With the SSL
 protocol, the server determines whether the client must be authenticated.
 If the server wants the client to be authenticated, then the server must
 first be authenticated by the client. Due to the algorithms supported
 by Transfer CFT (refer to the CIPHLIST parameter), the server must currently
-be authenticated by an X.509 certificate.         </td>
-      </tr>
-   </tbody>
-</table>
+be authenticated by an X.509 certificate.</p>
+</blockquote>
 <p>The following list describes the possible cases for a security
 profile in server mode (the USERCID parameter is mandatory for
 a server CFTSSL command).</p>

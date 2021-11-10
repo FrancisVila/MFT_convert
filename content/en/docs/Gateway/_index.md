@@ -21,18 +21,18 @@ To find available documents for most Axway products and versions:
 
 Here's the full list of the <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> documentation set (including this guide):
 
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [User guide](#) [](#)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [User guide](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) [](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm)  
     The main guide for <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>. As the users of this software mostly have an administrator profile, this guide serves as an Administration guide
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Release Notes](#)
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Installation Guide](#)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Installation Guide](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm)  
     Provides information about installation and prerequisites
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Configuration Guide (UNIX)](#)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Configuration Guide (UNIX)](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm)  
     Provides information specific to different variants of the UNIX Operating System
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Upgrade guide](#) (this guide)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Upgrade guide](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) (this guide)  
     This guide helps to perform the migration between towards <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> <span class="mc-variable axway_variables.Component_long_version variable">6.17.3</span>
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Security guide](#) (requires login)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Security guide](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm) (requires login)  
     This guide provides instructions and recommendations to help you strengthen the security of Axway Gateway. To protect your data from possible hackers, access to this guide requires an Axway login.
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Interoperability Guide](#) [](#)  
+-   <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> [Interoperability Guide](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) [](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm)  
     Provides information relevant to interoperability with other products, such as <span class="mc-variable suite_variables.ComposerName variable">Composer</span>,<span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span>, <span class="mc-variable suite_variables.IntegratorName variable">Integrator</span>
 
 ### Documentation of other related products
@@ -58,10 +58,10 @@ The <span class="mc-variable axway_variables.Company_Name variable">Axway</span>
 
 Email <support@axway.com> or visit <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
-Document version: <span class="mc-variable axway_variables.Release_Date variable">4 November 2021</span>
+Document version: <span class="mc-variable axway_variables.Release_Date variable">9 November 2021</span>
 
  
 
 Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
 
--   [Installation](#) -- [User](#) -- [Unix Configuration](#) -- [Upgrade](#) -- [Interoperability](#) -- [Security](#), requires login -- [Release Notes](#)
+-   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

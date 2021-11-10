@@ -6,21 +6,15 @@
 
 The following table lists the different types of files that can be used according to the type of data to be sent when using IFS.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <strong>FRECFM</strong> possibilities for all FTYPE are: <strong>‘V’</strong>, <strong>‘F’</strong>, and <strong>‘ ’</strong> .         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>Type of sent file         </th>
+<th class="HeadE-Column1-Header1">FTYPE         </th>
+<th class="HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -44,15 +38,10 @@ The following table lists the different types of files that can be used accordin
          <td>‘J’         </td>
          <td><p>Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.</p>
 <p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This transfer mode is not available for native side transfers.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>This transfer mode is not available for native side transfers.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>

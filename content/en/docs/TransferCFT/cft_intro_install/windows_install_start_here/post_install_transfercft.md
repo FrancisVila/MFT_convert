@@ -12,7 +12,7 @@ Otherwise you can go to:
 -   <a href="#Start" class="MCXref xref">Start the Transfer CFT Copilot server</a>
 -   <a href="#Start2" class="MCXref xref">Start Transfer CFT</a>
 
-For information on user rights, refer to the topic [Defining user rights UNIX](#).
+For information on user rights, refer to the topic [Defining user rights UNIX]().
 
 ## Installed directories and files
 

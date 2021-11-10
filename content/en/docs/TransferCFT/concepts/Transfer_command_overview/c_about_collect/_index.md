@@ -41,16 +41,10 @@ in a list cannot itself be a broadcasting list.
 -   An entry for each
     partner in the list
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The number of entries is not cross-checked against
-the number of partners in the list.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The number of entries is not cross-checked against
+> the number of partners in the list.
 
 <span id="Definition_of_a_partner_list"></span>
 

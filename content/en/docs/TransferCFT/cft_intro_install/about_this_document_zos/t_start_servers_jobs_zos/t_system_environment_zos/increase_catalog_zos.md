@@ -21,15 +21,9 @@ For more general information on expanding the catalog, you can refer to the sect
 -   RECNB is the new CATALOG size in number of records
 -   TMPSPACE 'CYL,(50,10)' is the size of the temporary file
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the Transfer CFT HABILITATION is activated:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the Transfer CFT HABILITATION is activated:
 
 -   In the CFTFILE TYPE=CAT, MODE=CREATE command, add the HABFNAME parameter with the SECINI file (created by the JCL H86SAFCR).
 

@@ -45,11 +45,11 @@ The password is temporarily stored in the '<span class="code">pswfname</span>' f
 ### Environment customization
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -161,26 +161,20 @@ The password is temporarily stored in the '<span class="code">pswfname</span>' f
 
 <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   A <span class="code">..USER.LOAD</span> load is created during the installation.
 -   If the Transfer CFT LOAD is an APF, the USER load must also be an APF.
 -   Set <span class="code">cftuload '&&TARGET".LOAD"'</span> to manage only one LOAD.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -212,11 +206,11 @@ or $cftload         </td>
 #### Transfer CFT parameters customization
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -299,11 +293,11 @@ or $cftload         </td>
 #### Transfer CFT <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server customization
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -349,11 +343,11 @@ or $cftload         </td>
 #### Transfer CFT Heartbeat for Sentinel Dashboards
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -374,11 +368,11 @@ or $cftload         </td>
 #### Certificates management
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -428,11 +422,11 @@ or $cftload         </td>
 #### Sentinel installation customization
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -471,14 +465,14 @@ or $cftload         </td>
 
 #### Parameters for RACF (or SAF enabled) control of Transfer CFT
 
-Use these parameters only with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS security setup described in [Setting up RACF Security](#).
+Use these parameters only with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS security setup described in [Setting up RACF Security]().
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -530,11 +524,11 @@ Use these parameters only with the <span class="mc-variable axway_variables.Comp
 If you modify the following values, you must un-comment them in the JCL \* CFT$SET corresponding steps CUSTOM3 and resubmit CFT$SET.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -626,11 +620,11 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 #### <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -665,11 +659,11 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 #### <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -683,15 +677,10 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
          <td>'/home/AXWAY/CFT32X/inst'         </td>
          <td><p>USS directory for Secure Relay Master Agent
 (/xsr is automatically added).</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Read only, you can share the directory with other Transfer CFTs.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Read only, you can share the directory with other Transfer CFTs.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>srmarun         </td>
@@ -734,12 +723,12 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 #### SAML
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -799,11 +788,11 @@ This certificate is stored in the internal PKI database.         </td>
 You can customize specific prefixes for the following Transfer CFT files.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Keyword         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Keyword         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -855,15 +844,9 @@ You can customize specific prefixes for the following Transfer CFT files.
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span style="vertical-align: super;">(1) The UCONF and UCONFRUN files are created at the same time as the instance environment, so you must manually re-create when a specific prefix is used (recfm= VB, lrecl=2048).</span>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \(1\) The UCONF and UCONFRUN files are created at the same time as the instance environment, so you must manually re-create when a specific prefix is used (recfm= VB, lrecl=2048).
 
 <span id="Selectin"></span>
 
@@ -888,10 +871,10 @@ Example
 For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters in the A12OPTSP member.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters that can be used as the &lt;keyword&gt;=&lt;value&gt;         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters that can be used as the &lt;keyword&gt;=&lt;value&gt;         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -909,29 +892,19 @@ Transfer CFT uses an element named Xidparm, where idparm is the startup paramete
 <ul>
 <li>NO: Transfer CFT does not register with ARM.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value 'ARM=NO'.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value 'ARM=NO'.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[BLKSIZE = {27920 | n}] {4100…32760}</p>         </td>
          <td><p>Maximum value used to calculate the BLKSIZE for files created by Transfer CFT, when this information is absent.</p>
 <p>You may reduce the default value by 32 if you want to create DF/SMS managed EXTENDED or LARGE format data sets.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value 'BLKSIZE=27998'.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value 'BLKSIZE=27998'.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>[ALLPRIM = {100 | n}]{1…255}         </td>
@@ -993,24 +966,14 @@ DSNTYPE via DF/SMS customization.         </td>
 <ul>
 <li>YES: If a file to be sent is migrated, the HSM recall is performed asynchronously, and the transfer is delayed until HSM completes the request. Transfer CFT will always wait for the HSM recall of received files. </li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If a Transfer CFT EXEC procedure is HSM migrated, it is not executed. An error message indicating this is displayed in the Transfer CFT LOG: CFTS02E migrated.         </td>
-      </tr>
-   </tbody>
-</table>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value ‘HSMASYNC=YES’.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If a Transfer CFT EXEC procedure is HSM migrated, it is not executed. An error message indicating this is displayed in the Transfer CFT LOG: CFTS02E migrated.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value ‘HSMASYNC=YES’.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[MAXAB  = {15 | n}]{1…255}</p>         </td>
@@ -1042,28 +1005,18 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 <li>NO (default) = Do not allow others to write to PDSE in sharing mode.</li>
 <li>YES = Allow simultaneous writing to a PDSE file type. Other intervening applications must also use the shared mode option though for sharing to occur.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On a shared SYSPLEX you must customize the following z/OS system parameter, either:         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>On a shared SYSPLEX you must customize the following z/OS system parameter, either:</p>
+</blockquote>
 <ul>
 <li>NORMAL: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING, or</li>
 <li>EXTENDED: SYSn.PARMLIB member IGDSMSxx to specify PDSESHARING</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value ‘PDSESHARING=YES’.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value ‘PDSESHARING=YES’.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[ROUTCDE = {Value of the ROUTCODE CODE field of the WTO | n}]</p>         </td>
@@ -1094,24 +1047,14 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 </ul>
 <p>NO: The catalog is cached in a dataspace, but the dataspace is not shared.</p>
 <p>INACT: The catalog is not cached, and no dataspace is created.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.         </td>
-      </tr>
-   </tbody>
-</table>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value ‘SHARECAT=YES’.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When the Transfer CFT is an APF-authorized program (Authorized Program Facility), specify if the catalog dataspace cache is available to be read by other Transfer CFT applications.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value ‘SHARECAT=YES’.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[SGTRACE = {0 | n}] {1…65535}</p>         </td>
@@ -1148,15 +1091,10 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 <ul>
 <li>512: User exit calls</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When you use the SGTRACE options with the Transfer CFT interface under VTAM, the non-encrypted passwords are listed in the trace records.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>[SUBOPT = { 0 | 1 | 3 } ]         </td>
@@ -1187,15 +1125,10 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 <ul>
 <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value ‘TAPE=OUTPUT’.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value ‘TAPE=OUTPUT’.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>[TSOEDIT = { <u>NO</u> | YES}]</p>         </td>
@@ -1206,15 +1139,10 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 <ul>
 <li>NO: Input files are read without changes from CFTUTIL.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The delivered sample uses the value ‘TSOEDIT=YES’.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The delivered sample uses the value ‘TSOEDIT=YES’.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>[VSAMSUFS = { <u>SHORT</u> | LONG }]         </td>
@@ -1227,15 +1155,9 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>*MCSOPT, SDSFOPT, EMCSOPT: A user id is added only to CFTUTIL commands. The z/OS PAUSE command is interpreted as a CFTUTIL SHUT FAST=YES command. Transfer CFT diagnosis commands are not associated with a used id, for example MODIFY cft or ECHO.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*MCSOPT, SDSFOPT, EMCSOPT: A user id is added only to CFTUTIL commands. The z/OS PAUSE command is interpreted as a CFTUTIL SHUT FAST=YES command. Transfer CFT diagnosis commands are not associated with a used id, for example MODIFY cft or ECHO.
 
 When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:
 

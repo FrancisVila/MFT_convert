@@ -19,10 +19,10 @@ The codes are expressed in decimal form.
 <span class="autonumber"></span>RECOV - General Network Error Recovery Codes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Meaning         </th>
+<th class="HeadE-Column1-Header1">Code         </th>
+<th class="HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>

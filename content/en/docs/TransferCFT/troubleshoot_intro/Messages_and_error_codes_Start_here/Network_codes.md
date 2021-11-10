@@ -28,11 +28,11 @@ In this case, refer to the manufacturer's documentation for the meaning
 of this code.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Hexadecimal Code         </th>
-<th>Decimal Code         </th>
-<th>Meaning         </th>
+<th class="HeadE-Column1-Header1">Hexadecimal Code         </th>
+<th class="HeadE-Column1-Header1">Decimal Code         </th>
+<th class="HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>

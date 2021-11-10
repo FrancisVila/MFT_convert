@@ -6,15 +6,9 @@
 
 The following table lists the different types of files that can be used according to the type of data to be sent.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Bold  values indicate a recommended combination. For example, when <strong>FTYPE=D</strong> and <strong>FRECFM=V</strong> then <strong>RCDLEN-5</strong> is the recommended PF-DTA with variable data.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then RCDLEN-5 is the recommended PF-DTA with variable data.
 
 <table>
    <tbody>
@@ -133,11 +127,11 @@ Default FTYPE or FRECFM value
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to <span class="code">undefined</span>, meaning that the transfer in emission takes the value of both the file type and the member content.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FTYPE</p>         </th>
-<th><p>FRECFM</p>         </th>
-<th><p>Supported files and data organizations (if applicable).</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Supported files and data organizations (if applicable).</p>         </th>
       </tr>
    </thead>
    <tbody>

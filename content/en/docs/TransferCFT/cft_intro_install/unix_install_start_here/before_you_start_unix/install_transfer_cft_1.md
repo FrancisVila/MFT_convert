@@ -29,21 +29,15 @@ Use the following command to install Transfer CFT in silent mode.
 
     ./Transfer_CFT_3.7_<Install>_<OS>_<BN>.run --mode unattended --conf-file initialize.properties
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot install <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> if you have a profile already loaded.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot install Transfer CFT if you have a profile already loaded.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Screen         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Screen         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -77,15 +71,10 @@ Use the following command to install Transfer CFT in silent mode.
          <td>Installation Directory         </td>
          <td>Specify the directory where you want to install Transfer
 CFT. This is the directory where the Transfer CFT product files are installed.
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Directory paths cannot contain spaces.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Directory paths cannot contain spaces.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>Configuration filename         </td>

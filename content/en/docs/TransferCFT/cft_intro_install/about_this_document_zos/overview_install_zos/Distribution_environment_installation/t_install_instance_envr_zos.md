@@ -6,15 +6,9 @@
 
 If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [<span class="span_6">Customize the instance environment</span>](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You require an installed Distribution environment before you can install the instance environment. See <a href="../">Distribution environment installation</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You require an installed Distribution environment before you can install the instance environment. See Distribution environment installation.
 
 Prerequisites
 

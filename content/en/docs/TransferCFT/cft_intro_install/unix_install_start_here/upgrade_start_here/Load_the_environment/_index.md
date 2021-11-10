@@ -14,15 +14,9 @@ Before starting the migration, we highly recommend that you review the features 
 
 Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the redistribution package is already installed on your Windows system, there is no need to reinstall.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the redistribution package is already installed on your Windows system, there is no need to reinstall.
 
 ## Install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span>
 

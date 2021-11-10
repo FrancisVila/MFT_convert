@@ -169,10 +169,10 @@ You can define the filename either in the:
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>To receive...</p>         </th>
-<th><p>Enter...</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>To receive...</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Enter...</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -267,18 +267,12 @@ The relative filename is converted into an absolute filename on completion
 of the transfer. The temporary file is then renamed with the name defined
 by FNAME.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When
-a temporary file is used, the WFNAME parameter, there may be restrictions
-related to the operating system. On IBM systems, for example,
-the type of unit must not appear in the name of the FNAME file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When
+> a temporary file is used, the WFNAME parameter, there may be restrictions
+> related to the operating system. On IBM systems, for example,
+> the type of unit must not appear in the name of the FNAME file.
 
 
 
@@ -301,15 +295,9 @@ the type of unit must not appear in the name of the FNAME file.         </td>
 &lt;file-symb>filename | &lt;file-symb>mask | &lt;file-symb>dirname}\]    {string
 512}
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span style="font-weight: normal;">here the &lt;file-symb&gt; character is specific to each system (for example # on Windows and @ on UNIX environments).</span>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> here the &lt;file-symb> character is specific to each system (for example # on Windows and @ on UNIX environments).
 
 Name of the local file, directory, indirection file, selection mask
 or selection directory to be sent. The maximum length of a filename value-type

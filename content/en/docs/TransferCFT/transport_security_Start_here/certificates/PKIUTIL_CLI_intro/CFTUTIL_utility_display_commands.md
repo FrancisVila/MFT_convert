@@ -42,10 +42,10 @@ The following table contains comments on the new sections.
 Section definitions for LISTCAT CONTENT=FULL
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Section         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Section         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

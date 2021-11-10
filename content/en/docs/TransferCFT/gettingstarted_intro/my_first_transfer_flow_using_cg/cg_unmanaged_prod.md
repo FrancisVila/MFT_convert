@@ -32,10 +32,10 @@ The information in this configuration example corresponds to the text used in th
 <span class="autonumber"></span>Parameter mapping
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer CFT          </th>
-<th>Unmanaged product configuration fields         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unmanaged product configuration fields         </th>
       </tr>
    </thead>
    <tbody>
@@ -87,10 +87,10 @@ In this step you create a communication profile on the source <span class="mc-va
 <span class="autonumber"></span>Parameter mapping
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer CFT          </th>
-<th>Communication profile for the Unmanaged product         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Communication profile for the Unmanaged product         </th>
       </tr>
    </thead>
    <tbody>
@@ -156,10 +156,10 @@ Make the following selections, using the default values for all other fields.
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer CFT          </th>
-<th>Flow field         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Flow field         </th>
       </tr>
    </thead>
    <tbody>

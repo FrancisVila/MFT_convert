@@ -4,15 +4,9 @@
     "weight": "140"
 }After adding a Windows service in command line, the default system user is the user that started the service. To define a specific user, you must edit the service properties in the Services page.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you plan to integrate Transfer CFT with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> and also plan to use Service mode, please refer to the additional instructions in <a href="../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you plan to integrate Transfer CFT with Central Governance and also plan to use Service mode, please refer to the additional instructions in Service mode set up when using Central Governance.
 
 Windows only
 

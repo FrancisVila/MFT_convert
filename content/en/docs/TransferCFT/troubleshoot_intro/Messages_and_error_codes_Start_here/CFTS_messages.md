@@ -1082,17 +1082,10 @@ current file (no switch executed): Files full</li>
          <td><p>Explanation</p>         </td>
          <td><p>An error occurred in the FORMAT=V23/V24 (V23 default) parameter of CFTFILE TYPE=ACCNT. When using the V23 format, the saved description (for ACCOUNT files) is the same as in previous versions. However when using the V24 format, the length for saving is 2048, and  the saved description takes into account the new longer field lengths.<br />
 </p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note  </strong></span>         </td>
-         <td>The FORMAT parameter for the CFTACCNT command must be the same setting as for<br />
-CFTFILE TYPE=ACCNT. If not, a message displays in the LOG and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does<br />
-not start.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The FORMAT parameter for the CFTACCNT command must be the same setting as for CFTFILE TYPE=ACCNT. If not, a message displays in the LOG and Transfer CFT doesnot start.</p>
+</blockquote>
 <div>
 <p>The message is either:<br />
    CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT    </p>

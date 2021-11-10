@@ -37,90 +37,98 @@ FNAME, the name of the file
 to be deleted, and TYPE, the
 type of the file to be deleted.
 
-OS
-
-Description
-
-IBM i
-
-The CFTFILE command is incorporated in Transfer CFT IBM i
+<table>
+   <thead>
+      <tr>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><p>IBM i</p>         </td>
+         <td><p>The CFTFILE command is incorporated in Transfer CFT IBM i
 Manager. It can, however, be activated directly in the log file switching
-procedures. See the example supplied in the B\_EXECLOG member.
+procedures. See the example supplied in the B_EXECLOG member.</p>         </td>
+      </tr>
+   </tbody>
+</table>
 
 You can use the \[CFTCATAL\](../../../cft\_intro\_install/unix\_install\_start\_here/run\_first\_time\_ux/use\_cft\_utilities) utility to resize the catalog. In a multi-node environment, this action resizes all nodes.
 Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 = DELETE) Transfer CFT files.
 
-Parameter
-
-Description
-
-[FBLKSIZE](#)
-
-[see table](#)
-
-Defines the block size of the file to be created (in bytes).
-
-Depends on the TYPE/OS
-
-[FNAME](#) 
-
-Name of the file the command applies to.
-
-[FSPACE](#)
-
-[see
-table](#)
-
-Primary allocation of the file to be created, expressed
-in K bytes (1024).
-
-Depends on the TYPE/OS
-
-[FSPACEX](#)
-
-[see table](#)
-
-Secondary allocation of the file to be created, expressed
-in K bytes (1024).
-
- 
-
-[HABFNAME](#)
-
-Name of the security system initialization file.
-
-LOCK
-
-[TYPE](#)
-= COM
-
-Name of the lock file created in parallel with the communication
-file and used to manage file access conflicts.
-
-[MODE](#)
-
-Action requested on the file.
-
-NODE
-
-Node identifier.
-
-Available when TYPE=CAT
-
-[RECNB](#) 
-
-TYPE = {COM | CAT}
-
-Number of records in the file.
-
-[TYPE](#) =
-{ACCNT | CAT | COM | LOG | PARM (PARMA) | PART}
-
-Type of file concerned by the command.
-
-When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME
-parameter for security.
+<table>
+         
+         
+         
+   
+   <thead>
+      <tr>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td><p><a href="">FBLKSIZE</a></p>
+<p><a href="">see table</a></p>         </td>
+         <td><p>Defines the block size of the file to be created (in bytes).</p>
+<p>Depends on the TYPE/OS</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">FNAME</a> </p>         </td>
+         <td><p>Name of the file the command applies to.</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">FSPACE</a></p>
+<p><a href="">see
+table</a></p>         </td>
+         <td><p>Primary allocation of the file to be created, expressed
+in K bytes (1024).</p>
+<p>Depends on the TYPE/OS</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">FSPACEX</a></p>
+<p><a href="">see table</a></p>         </td>
+         <td><p>Secondary allocation of the file to be created, expressed
+in K bytes (1024).</p>
+<p> </p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">HABFNAME</a></p>         </td>
+         <td><p>Name of the security system initialization file.</p>         </td>
+      </tr>
+      <tr>
+         <td><p>LOCK</p>
+<p><a href="">TYPE</a>
+= COM</p>         </td>
+         <td><p>Name of the lock file created in parallel with the communication
+file and used to manage file access conflicts.</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">MODE</a></p>         </td>
+         <td><p>Action requested on the file.</p>         </td>
+      </tr>
+      <tr>
+         <td><p>NODE</p>         </td>
+         <td><p>Node identifier.</p>
+<p>Available when TYPE=CAT</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">RECNB</a> </p>
+<p>TYPE = {COM | CAT}</p>         </td>
+         <td><p>Number of records in the file.</p>         </td>
+      </tr>
+      <tr>
+         <td><p><a href="">TYPE</a> =
+{ACCNT | CAT | COM | LOG | PARM (PARMA) | PART}</p>         </td>
+         <td><p>Type of file concerned by the command.</p>
+<p>When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME
+parameter for security.</p>         </td>
+      </tr>
+   </tbody>
+</table>
 
 \*\*Syntax\*\*
 #### CFTFILE { PARM | PARAM | PART }

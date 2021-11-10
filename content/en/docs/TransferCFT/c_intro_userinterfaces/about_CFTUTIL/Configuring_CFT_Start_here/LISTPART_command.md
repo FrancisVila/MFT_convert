@@ -18,10 +18,10 @@ program.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Parameters</p>         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameters</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

@@ -19,11 +19,11 @@ defined by the algebraic sum of the values indicated in the following
 table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Value         </th>
-<th>Message category         </th>
-<th>Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Message category         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type         </th>
       </tr>
    </thead>
    <tbody>
@@ -80,10 +80,10 @@ The following table indicates, for each system, the default values of
 the OPERMSG parameter.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>OS </p>         </th>
-<th><p>Default value for OPERMSG </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>OS </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value for OPERMSG </p>         </th>
       </tr>
    </thead>
    <tbody>

@@ -4,16 +4,10 @@
     "weight": "200"
 }The Transfer CFT session management in a multi-node architecture differs from a standalone implementation. This section describes parameters you can use to customize a multi-node environment, and offers some recommendations.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The diag 916 and 418 errors relate to these settings. See <a href="../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes" class="MCXref xref">DIAGI - Diagnostic
-codes</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The diag 916 and 418 errors relate to these settings. See DIAGI - Diagnostic
+> codes.
 
 ## Global settings
 
@@ -37,15 +31,9 @@ In the following example, the formulas calculate optimal values to help you avoi
 
 You can reverse the formula for the remote Transfer CFT.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This calculation takes into consideration that a single node may have to handle all of the incoming connections from the partner.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> This calculation takes into consideration that a single node may have to handle all of the incoming connections from the partner.
 
 Related topics
 

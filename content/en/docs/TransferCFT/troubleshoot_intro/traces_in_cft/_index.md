@@ -4,21 +4,15 @@
     "weight": "260"
 }This section describes ATM traces and how to implement them.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>ATM traces are only available when using the <span class="mc-variable Primary.Legacy variable">Local Administration</span> version of Transfer CFT. We recommend using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> to manage <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> ATM traces are only available when using the Local Administration version of Transfer CFT. We recommend using Central Governance to manage Transfer CFT.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Topic         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Topic         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

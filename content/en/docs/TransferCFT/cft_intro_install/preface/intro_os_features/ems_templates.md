@@ -8,15 +8,9 @@ In this chapter, event-message tokens and their values are represented in DDL. F
 
 For general information on how an application obtains event messages from a subsystem, refer to the EMS Manual.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
 ## Event messages format
 
@@ -25,10 +19,10 @@ For general information on how an application obtains event messages from a subs
 All messages have the following tokens:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Token         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Token         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -62,11 +56,11 @@ All messages have the following tokens:
 The following table shows the relationship between the event, the subject, and the message type.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Event number         </th>
-<th>EMS subject         </th>
-<th>Event type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event number         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">EMS subject         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Event type         </th>
       </tr>
    </thead>
    <tbody>
@@ -112,15 +106,9 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
     -   This number is the sum of the values that correspond to the types of messages you want to filter
     -   For example, Operating error messages=16, System error messages=32, Operating fatal error messages=64, System fatal error messages=128 giving a total of 240
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Refer to the Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> <em>Users Guide</em>, available on the <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm">documentation portal</a>, for a description of the CFTLOG object parameters.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Refer to the Transfer CFT 3.9 Users Guide, available on the documentation portal, for a description of the CFTLOG object parameters.
 
 **Example**
 

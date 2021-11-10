@@ -49,15 +49,9 @@ Specific internal data files for node 2 are initialized (cftcata02, cftcom02, cf
 
 ## Start and stop the cluster
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The 'cft force-stop' command is not supported in multi-node installations.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The 'cft force-stop' command is not supported in multi-node installations.
 
 ### Start a node manager
 
@@ -106,15 +100,9 @@ For each host, run the command: <span class="code">copstop</span>
 
 The cft start command starts one or all nodes. If no node is specified, all nodes are started.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Node managers must be started first.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Node managers must be started first.
 
 Syntax
 
@@ -174,15 +162,9 @@ Stops node 0.
 
 The cft restart command re-stars one or all nodes. If no node is specified all nodes are re-started.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Node managers must be started first.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Node managers must be started first.
 
 Syntax
 
@@ -345,15 +327,9 @@ Please refer to the OS-appropriate installation guide  for installation program
 
 For specifics on adding a host on z/OS platforms, please see <a href="../../cft_intro_install/about_this_document_zos/c_multinode_zos/t_vipa_multinode_zos" class="MCXref xref">Customize the VIPA and execute commands</a>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">cft add_host</span> command automatically sets the following UCONF parameters:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The cft add\_host command automatically sets the following UCONF parameters:
 
 -   cft.multi\_node.hostnames
 -   cft.multi\_node.hostnames.&lt;hostname>.host = &lt;host\_address>
@@ -443,15 +419,9 @@ Usage
 
 ### Remove a node
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can only remove the last node.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can only remove the last node.
 
 #### cft remove\_node
 
@@ -459,15 +429,9 @@ The cft remove\_node command removes the node identified by the highest node id 
 
 The node number is decremented (uconf: cft.multi\_node.nodes = N-1), and any internal data files associated with the node are removed.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>After removing a node, you must restart Transfer CFT.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> After removing a node, you must restart Transfer CFT.
 
 Syntax
 

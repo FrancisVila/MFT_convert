@@ -30,12 +30,12 @@ This section presents example user types, and describes the actions that they ca
 These scenarios are based on a single <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>, **Machine1** in our examples, that is managed by <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>User type         </th>
-<th>CG role(s)         </th>
-<th>Machine1 user         </th>
-<th>File access         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">User type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG role(s)         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Machine1 user         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File access         </th>
       </tr>
    </thead>
    <tbody>
@@ -76,15 +76,9 @@ These scenarios are based on a single <span class="mc-variable header_footer_var
 
 Remember that these are examples and your system users, assigned roles, and file rights will vary.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When referring to user's working directories, in these use cases the working directories are located outside of the runtime directory.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When referring to user's working directories, in these use cases the working directories are located outside of the runtime directory.
 
 <span id="Security"></span>
 
@@ -92,15 +86,10 @@ Remember that these are examples and your system users, assigned roles, and file
 
 In this security scenario, the central governance roles are the exclusive defining security system (i.e. the parameters USERCTRL and copilot.misc are set to NO, the default settings).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>The transfer owner in this scenario is the user that started <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>. All actions are done by the user that started the <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server, pending rights given by the Central Governance roles. This applies to all of the registered <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> users. The superuser however can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> The transfer owner in this scenario is the user that started Transfer CFT. All actions are done by the user that started the Copilot server, pending rights given by the Central Governance roles. This applies to all of the registered Central Governance users. The superuser however can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.
 
 #### Monitoring Assistant
 
@@ -152,15 +141,9 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 
 The following scenario consists of a single <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> with the USERCTRL parameter set to **yes**.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Reminder, when copilot.misc.createprocessasuser=no, the user may be known by <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, though not necessarily known by Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Reminder, when copilot.misc.createprocessasuser=no, the user may be known by Central Governance, though not necessarily known by Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.
 
 USERCTRL is set to YES and file rights are assigned to each specific type of user. Rights depend on user/role type (limitation).
 
@@ -208,15 +191,9 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 -   Modify configuration: YES
 -   Start/stop Transfer CFT: YES, but only via CFTUTIL
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When copilot.misc.createprocessasuser=no, the user may be known on <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, but not necessarily known on Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When copilot.misc.createprocessasuser=no, the user may be known on Central Governance, but not necessarily known on Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.
 
 <span id="Security3"></span>
 

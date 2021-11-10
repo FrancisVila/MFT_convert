@@ -6,10 +6,10 @@
 following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Action         </th>
-<th>Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Action         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Command         </th>
       </tr>
    </thead>
    <tbody>
@@ -58,12 +58,12 @@ be used for the various trace processes.
 ### Define trace files
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Trace file definition</p>         </th>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Trace file definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -101,13 +101,13 @@ that do not allow dynamic file definition.
 ### Start collecting information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Starting information collection         </th>
-<th>Command used to define the
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Starting information collection         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command used to define the
 file         </th>
-<th>Parameter         </th>
-<th>Command to enter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Command to enter         </th>
       </tr>
    </thead>
    <tbody>
@@ -145,11 +145,11 @@ that do not allow dynamic file definition.
 ### Stop collecting - close the file and shutdown the process
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Action         </th>
-<th>Define the file with         </th>
-<th>Enter the command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Action         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Define the file with         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Enter the command         </th>
       </tr>
    </thead>
    <tbody>

@@ -28,10 +28,10 @@ The following tables list all the fields of the communication structure.
 ### General information fields
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -75,10 +75,10 @@ The following tables list all the fields of the communication structure.
 ### Local file information fields
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -176,10 +176,10 @@ The following tables list all the fields of the communication structure.
 ### Network file information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -211,10 +211,10 @@ The following tables list all the fields of the communication structure.
 ### Transfer information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -422,10 +422,10 @@ identifier</p>         </td>
 ### Information input/returned by the user
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -455,10 +455,10 @@ states.</a></p>         </td>
 ### Information returned by the user
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -490,10 +490,10 @@ function and other information.</p>         </td>
 ### Additional information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>

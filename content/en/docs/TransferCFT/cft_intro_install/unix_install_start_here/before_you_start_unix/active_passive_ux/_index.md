@@ -15,15 +15,9 @@ Transfer CFT in multi-host architecture requires:
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../../windows_install_start_here/before_you_start_win/n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 
@@ -58,16 +52,11 @@ Create as many copies of the initialize.properties file as you have hosts in the
       <tr>
          <td>LoadBalancer_Host         </td>
          <td><p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The load
-balancer is used to connect to the Transfer CFT Copilot server.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The load
+balancer is used to connect to the Transfer CFT Copilot server.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>LoadBalancer_Port         </td>

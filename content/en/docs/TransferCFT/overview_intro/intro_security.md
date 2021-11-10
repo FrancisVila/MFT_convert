@@ -23,16 +23,10 @@ Transfer CFT implements the cryptographic protocol TLS (Transport Layer Security
 
 Transport Security is ensured through a public key infrastructure (PKI), which you can managed either using Transfer CFT, PassPort PS or an external PKI.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Check the security options
-included in the license key before attempting to implement in your environment.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Check the security options
+> included in the license key before attempting to implement in your environment.
 
 For more information on transport security, see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> [Security](../../transport_security_start_here) topics.
 

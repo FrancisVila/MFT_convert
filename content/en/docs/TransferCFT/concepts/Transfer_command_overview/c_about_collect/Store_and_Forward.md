@@ -34,25 +34,14 @@ To implement a relay in conjunction with <span class="mc-variable Primary.CG or_
 
 3.  Optionally you can configure target post-processing to automatically send a reply.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>You can use the script delivered with <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> in the <span>runtime/exec directory/BIN_re.cmd</span> as a basis for your ACK reply from the target application.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> You can use the script delivered with Transfer CFT in the runtime/exec directory/BIN\_re.cmd as a basis for your ACK reply from the target application.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When viewing the final transfer in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When viewing the final transfer in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.
 
 <span id="Store2"></span>
 
@@ -89,28 +78,16 @@ Configure the following for the final receiver (Site C):
 
 -   Define both the initiator and the relay CFTPART partner definitions.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To enable acknowledgments from the receiver C to the sender A, in the receiver (C) configuration you must set the sender (A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and define the relay (B) as the IPART.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To enable acknowledgments from the receiver C to the sender A, in the receiver (C) configuration you must set the sender (A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and define the relay (B) as the IPART.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the initial sender A is not
-required to establish any direct physical connection with the final receiver
-C, then the command CFTTCP ID=ID_C has no impact. Similarly, there is no need to set CFTTCP ID=ID_A
-for the final receiver C.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the initial sender A is not
+> required to establish any direct physical connection with the final receiver
+> C, then the command CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
+> for the final receiver C.
 
 <span class="autonumber"></span>Intentional store and forward
 
@@ -154,15 +131,9 @@ Configure the following for the final receiver (Site C):
 
 -   Define both the initiator and the relay CFTPART partner definitions.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In the example, the receiver (C) configuration defines the sender (Site A) CFTPART with OMINTIME and OMAXTIME parameters equal to zero, and defines the relay (Site B) as the IPART, which enables acknowledgments from the receiver C to the sender A.
 
 <span class="autonumber"></span>Intentional VAN store and forward
 
@@ -207,15 +178,9 @@ Configure the final receiver
 
 -   Define the CFTPART partner definition for the second relay (Intermediate Site 2).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To enable acknowledgments from the receiver to the sender, add the IPART for each CFTPART definition in each relay. For example:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To enable acknowledgments from the receiver to the sender, add the IPART for each CFTPART definition in each relay. For example:
 
 -   For the Intermediate Site 2 in the CFTPART ID=IDGWAY, set the IPART=IDDEP1, which refers to the Intermediate Site 1.
 -   For the Intermediate Site 1 in the CFTPART ID=IDDEP, set the IPART=IDNAT1, which refers to the sender site.
@@ -231,15 +196,9 @@ In the SEND command you must specify the final network partner (the NSPART of 
 
 <img src="/Images/TransferCFT/Forced_Store_and_forward.gif" width="1183" height="1018" />
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The REPLY command may be sent when the end of transfer procedure is
-executed (EXECRF). The acknowledgement message is then transferred in the same way, via
-all the intermediate sites until it reaches the initial site (IPART =
-…).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The REPLY command may be sent when the end of transfer procedure is
+> executed (EXECRF). The acknowledgement message is then transferred in the same way, via
+> all the intermediate sites until it reaches the initial site (IPART =
+> …).

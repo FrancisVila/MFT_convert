@@ -7,17 +7,17 @@
 The table below shows a generic transfer A0000001, in the phase <span class="bold_in_para">A</span> along with its children A0000002 through A000000n.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>A</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
 <p>Pre-processing</p>         </th>
-<th><p>T</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
 <p>Transfer</p>         </th>
-<th><p>Y</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
 <p>Post-processing</p>         </th>
-<th><p>Z</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
 <p>Ack-processing</p>         </th>
-<th><p>X</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
 <p>Done</p>         </th>
       </tr>
    </thead>
@@ -70,17 +70,17 @@ The table below shows a generic transfer A0000001, in the phase <span class="bol
 The child transfers begin to pass through the preprocessing, transfer, and post-processing phases.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>A</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
 <p>Pre-processing</p>         </th>
-<th><p>T</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
 <p>Transfer</p>         </th>
-<th><p>Y</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
 <p>Post-processing</p>         </th>
-<th><p>Z</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
 <p>Ack-processing</p>         </th>
-<th><p>X</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
 <p>Done</p>         </th>
       </tr>
    </thead>
@@ -133,17 +133,17 @@ The child transfers begin to pass through the preprocessing, transfer, and post-
 The generic transfer, however, must wait for its last child transfer to move to the next phase and then immediately follows its phases.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>A</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
 <p>Pre-processing</p>         </th>
-<th><p>T</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
 <p>Transfer</p>         </th>
-<th><p>Y</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
 <p>Post-processing</p>         </th>
-<th><p>Z</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
 <p>Ack-processing</p>         </th>
-<th><p>X</p>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
 <p>Done</p>         </th>
       </tr>
    </thead>

@@ -28,10 +28,10 @@ cftmifm migrate | purge
 Options
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Option         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Option         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -67,15 +67,7 @@ To create the migrated folders in Transfer CFT configuration, you must interpre
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
 
 -   You must enter each option or argument separately.
 -   The fname is ignored when using the purge command, or when using the (-s) simulation option.
@@ -196,16 +188,16 @@ A prerequisite to performing a rollback is that you must have made a backup of t
 Parameter mapping and descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>UCONF         </th>
-<th>Type         </th>
-<th><p>Default</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>
 <p>UCONF</p>         </th>
-<th><p>Default  </p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default  </p>
 <p>CFTFOLDER</p>         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -264,15 +256,11 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
 <li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>  Never delete any .met files.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Caution  
+  Never delete any .met files.</p>
+</blockquote>
 <p>*See NOTE.</p>         </td>
       </tr>
       <tr>
@@ -406,15 +394,10 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
 <li>No: Files are not resubmitted, regardless of changes.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>FILTERTYPE         </td>
@@ -497,15 +480,9 @@ The second one, when present, defines the separator after the timestamp.</p>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
 -   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |

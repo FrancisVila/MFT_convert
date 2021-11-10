@@ -39,10 +39,10 @@ to be deleted, and TYPE, the
 type of the file to be deleted.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -61,10 +61,10 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 = DELETE) Transfer CFT files.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

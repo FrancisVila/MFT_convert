@@ -20,15 +20,9 @@ In this example you configure two hosts. If your implementation has fewer or mor
 
 Edit the MNINIT JCL located in the INSTALL Library as described in the following steps.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You only perform steps 4 and 8 if you are setting up a multi host multi-node configuration (not for a mono host, multi-node configuration).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You only perform steps 4 and 8 if you are setting up a multi host multi-node configuration (not for a mono host, multi-node configuration).
 
 <table>
          
@@ -36,11 +30,11 @@ Edit the MNINIT JCL located in the INSTALL Library as described in the following
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Step         </th>
-<th>Task         </th>
-<th>Command or details                                                </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1" style="font-weight: bold; font-style: normal">Step         </th>
+<th class="HeadE-Column1-Header1" style="font-weight: bold; font-style: normal">Task         </th>
+<th style="text-align: center;" class="HeadD-Column1-Header1" style="font-weight: bold; font-style: normal">Command or details                                                </th>
       </tr>
    </thead>
    <tbody>
@@ -96,15 +90,9 @@ Edit the MNINIT JCL located in the INSTALL Library as described in the following
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>JCL variables to customize as described in the table above:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> JCL variables to customize as described in the table above:
 
 -   EXTPARM: Transfer CFT configuration file
 -   COPVIPA: VIPA address for Copilot

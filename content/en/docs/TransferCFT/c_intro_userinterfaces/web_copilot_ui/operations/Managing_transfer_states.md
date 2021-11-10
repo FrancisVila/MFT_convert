@@ -23,11 +23,11 @@ To view the transfers log:
 Available actions to include in the Transfers page include:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UI         </th>
-<th>Parameter details         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">UI         </th>
+<th class="HeadE-Column1-Header1">Parameter details         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -43,7 +43,7 @@ Available actions to include in the Transfers page include:
       </tr>
       <tr>
          <td>Restart         </td>
-         <td><p><a href="#">Restarting
+         <td><p><a href="">Restarting
 transfers</a></p>         </td>
          <td><p>Restart transfers in the H or K state in the catalog</p>         </td>
       </tr>
@@ -55,35 +55,35 @@ catalog entries</a></p>         </td>
       </tr>
       <tr>
          <td>          </td>
-         <td><p><a href="#">Suspending
+         <td><p><a href="">Suspending
 transfers</a></p>         </td>
          <td><p>Suspend one or all of the send and/or receive transfers
 with selected partners</p>         </td>
       </tr>
       <tr>
          <td>          </td>
-         <td><p><a href="#">Submitting
+         <td><p><a href="">Submitting
 an end-of-tranfser</a></p>         </td>
          <td><p>Submit an end-of-transfer procedure for each selected
 transfer</p>         </td>
       </tr>
       <tr>
          <td>Halt         </td>
-         <td><p><a href="#">Halting
+         <td><p><a href="">Halting
 a transfer</a></p>         </td>
          <td><p>Suspend one or all the send and/or receive transfers,
 with the partners selected</p>         </td>
       </tr>
       <tr>
          <td>End         </td>
-         <td><p><a href="#">Declaring
+         <td><p><a href="">Declaring
 executed transfers</a></p>         </td>
          <td><p>Declare that all the operations related to the end-of-transfer,
 send and receive, have been executed correctly</p>         </td>
       </tr>
       <tr>
          <td>          </td>
-         <td><p><a href="#">Retrieving
+         <td><p><a href="">Retrieving
 a blocked request</a></p>         </td>
          <td><p>Retrieves, in server mode, a blocked send request that
 has the <em>hold</em> status, if the diagnostic codes are not null</p>         </td>
@@ -140,15 +140,9 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 -   Add or remove the filters you want to display in your page layout.
 -   Click **Save as** and name the layout.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>These page customizations are defined in the CFTUIPREF object.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> These page customizations are defined in the CFTUIPREF object.
 
 ## Troubleshooting transfer filters
 

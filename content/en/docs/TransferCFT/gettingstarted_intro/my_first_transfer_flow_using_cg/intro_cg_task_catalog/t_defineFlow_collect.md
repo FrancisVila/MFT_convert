@@ -4,15 +4,9 @@
     "weight": "350"
 }Click <span class="bold_in_para">Flows </span>on the top toolbar to open the<span class="bold_in_para"> Flows Monitoring </span>page.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot modify the Protocol until you have defined both the Source and Target.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot modify the Protocol until you have defined both the Source and Target.
 
 In the <span class="bold_in_para">Flow List</span> page click <span class="bold_in_para">Add flow</span> and perform the following steps:
 
@@ -23,14 +17,9 @@ In the <span class="bold_in_para">Flow List</span> page click <span class="bold_
     The source is the owner of the data being transferred. The target is the receiver of the exchange.
 3.  Save the flow, or save and deploy the flow.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>You can refer to the Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> parameter mapping <a href="../r_flow_target">Flow definition: Target</a> and <a href="../r_flow_source">Flow definition: Source</a> to further customize your flow.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 
 <span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

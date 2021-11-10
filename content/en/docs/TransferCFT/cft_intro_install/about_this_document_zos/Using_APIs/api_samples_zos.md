@@ -15,11 +15,11 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
 ## Assembler language
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Template         </th>
-<th>Function         </th>
-<th><p>Services</p>         </th>
+<th class="HeadE-Column1-Header1">Template         </th>
+<th class="HeadE-Column1-Header1">Function         </th>
+<th class="HeadD-Column1-Header1"><p>Services</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -41,12 +41,12 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
 ## C language
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Template         </th>
-<th>Function         </th>
-<th><p>Services</p>         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Template         </th>
+<th class="HeadE-Column1-Header1">Function         </th>
+<th class="HeadE-Column1-Header1"><p>Services</p>         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -120,12 +120,12 @@ Synchronous Communication media (multiple send commands are possible).         <
 ## COBOL language
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Template         </th>
-<th>Function         </th>
-<th><p>Services</p>         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Template         </th>
+<th class="HeadE-Column1-Header1">Function         </th>
+<th class="HeadE-Column1-Header1"><p>Services</p>         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -258,11 +258,11 @@ the synchronous communication media, where multiple SEND commands are possible. 
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Template         </th>
-<th>Function         </th>
-<th><p>Services</p>         </th>
+<th class="HeadE-Column1-Header1">Template         </th>
+<th class="HeadE-Column1-Header1">Function         </th>
+<th class="HeadD-Column1-Header1"><p>Services</p>         </th>
       </tr>
    </thead>
    <tbody>

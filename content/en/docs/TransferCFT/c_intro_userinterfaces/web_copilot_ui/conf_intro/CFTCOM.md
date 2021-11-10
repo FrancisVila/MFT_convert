@@ -96,10 +96,10 @@ This table describes the parameters to define the CFTCOM object when the communi
 type is TCPIP.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -144,10 +144,10 @@ This table describes the parameters to define the CFTCOM object when the communi
 type is FILE.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

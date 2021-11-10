@@ -41,15 +41,10 @@ After installing <span class="mc-variable axway_variables.Component_Short_Name v
 
         cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>These commands generate an initial configuration by <span class="bold_in_para">creating </span>the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be <strong>lost</strong>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> These commands generate an initial configuration by creating the configuration files. Any previous configurations, and any data in the communication file, catalog, or log files will be lost.
 
 Sample file details
 
@@ -67,10 +62,10 @@ Delivered partners are:
 The following table lists the commands according to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> version.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Version 2.7.1 and higher         </th>
-<th>Version 2.7.0 and lower         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Version 2.7.1 and higher         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Version 2.7.0 and lower         </th>
       </tr>
    </thead>
    <tbody>
@@ -97,15 +92,9 @@ The following table lists the commands according to <span class="mc-variable axw
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">cftstart </span>and <span class="code">cftstop </span>commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The cftstart and cftstop commands, from version 2.7.0 and earlier, are redirected to the standardized commands for continued compatibility.
 
 <span id="Configuring_CFT_"></span>
 

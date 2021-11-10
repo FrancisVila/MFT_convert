@@ -8,15 +8,9 @@ This section describes how to upgrade or migrate to Transfer CFT <span class="mc
 
 See the section <a href="../c_about_zos/r_prerequistes_zos" class="MCXref xref">System requirements</a> for details on system prerequisites.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You should not modify the CSD files (library XMLLIB: members CSDCFT and CSDCG) or the UCONF dictionary (library UPARM: member DEFAULT), as these items are updated in the instance (runtime) during the following procedures.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You should not modify the CSD files (library XMLLIB: members CSDCFT and CSDCG) or the UCONF dictionary (library UPARM: member DEFAULT), as these items are updated in the instance (runtime) during the following procedures.
 
 ## Update procedure
 
@@ -44,12 +38,6 @@ This procedure involves a change in product version and the replacement of binar
 -   You require a new license key if you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You require as many keys as instances of <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You require as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.

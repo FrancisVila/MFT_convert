@@ -13,11 +13,11 @@ Double-click in a <span class="italic_in_para">Unified Configuration</span> wind
 Configure the AM exit using the parameters in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Access Management exit parameters         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Access Management exit parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -64,15 +64,9 @@ Configure the AM exit using the parameters in the following table.
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When the AM exit is enabled these conditions apply:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When the AM exit is enabled these conditions apply:
 
 -   uconf:am.exit.check\_login=No: the native authentication procedure is still performed
 -   uconf:am.exit.check\_permissions=No: all privileges are granted for the current user

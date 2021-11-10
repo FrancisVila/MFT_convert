@@ -93,10 +93,10 @@ signature section as described below.
 #### Certificate file description
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Certificate field </p>         </th>
-<th><p>Description </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Certificate field </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description </p>         </th>
       </tr>
    </thead>
    <tbody>

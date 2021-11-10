@@ -18,15 +18,9 @@ From <span class="mc-variable suite_variables.Central_GovernanceName variable">C
 
 Certificate and key renewal can refer to business and/or governance certificates. The request is initiated by the Copilot.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The Transfer CFT must be registered.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The Transfer CFT must be registered.
 
 ### Automatic certificate renewal
 
@@ -40,15 +34,9 @@ If uconf <span class="code">cg.renewal\_period </span>is set to 60 days, the ren
 
 To force a certificate renewal, execute the following commands. To force an immediate renewal, use a date that occurred in the past.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The datetime used for the renewal is in UTC and not local time.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The datetime used for the renewal is in UTC and not local time.
 
 #### Set the following parameter to renew the governance certificate
 
@@ -70,15 +58,10 @@ Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 
 
 You can configure the key length for either a governance or business certificate from the default value of 2048 to 4096 either when you install <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, or post-installation if you have a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> that is already registered with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>If you modify the key length of the governance certificate and you use access tokens, please refer to the <a href="../../c_intro_userinterfaces/web_copilot_ui/cftssl/access_token">Access Token</a> and <a href="#">Bearer authentication</a> sections for details before proceeding.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> If you modify the key length of the governance certificate and you use access tokens, please refer to the Access Token and Bearer authentication sections for details before proceeding.
 
 1.  Modify the UCONF parameters:  
 
@@ -104,12 +87,6 @@ You can configure the key length for either a governance or business certificate
 
 Central Governance can apply updates, including service packs, patches, and version upgrades, remotely to registered Transfer CFTs. Download the update package from the [Axway support website](https://support.axway.com/), and upload it to Central Governance. Please refer to [Manage product updates](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/updates/t_update_crud.htm) for details.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Available on Unix and Windows, though this service is not available for multi-node.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Available on Unix and Windows, though this service is not available for multi-node.

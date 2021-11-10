@@ -40,10 +40,10 @@ The following
 table shows the transfer possible changes of state.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Change of state </p>         </th>
-<th><p>End of transfer procedure
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Change of state </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>End of transfer procedure
 submitted </p>         </th>
       </tr>
    </thead>

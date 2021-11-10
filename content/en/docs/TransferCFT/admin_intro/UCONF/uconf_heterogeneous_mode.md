@@ -14,11 +14,11 @@ To force heterogeneous mode:
 Unix/Windows
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -38,5 +38,5 @@ Unix/Windows
 Related topics
 
 -   [Sending a group of files](../../../concepts/using_the_send_command/send_group_of_files_cl)
--   [Environmental variables](#)
--   [File management functions (Windows)](#)
+-   [Environmental variables]()
+-   [File management functions (Windows)]()

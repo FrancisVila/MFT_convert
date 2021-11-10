@@ -73,15 +73,9 @@ Additionally, at least one file transfer protocol (CFTPROT command) must be decl
 for the CFTNET command (describing an access via a proxy for a
 protocol).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> only accepts outgoing calls.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT only accepts outgoing calls.
 
 The protocols (CFTPROT) and the networks (CFTNET)
 must be declared in the CFTPARM command to be applied by Transfer CFT.
@@ -115,11 +109,11 @@ Transfer CFT puts the transfer on hold (K status). The operator must manually re
 The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The only difference between the parameters used for SOCKS 4 and 5 is the PASSWORD parameter.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

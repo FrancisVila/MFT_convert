@@ -6,22 +6,16 @@
 
 The UCONF <span class="code">copilot.restapi.api\_token\_validity</span> parameter sets the access token's expiration period. By default, the value is set to 0, which disables expiration. You can modify this parameter if you want access tokens to have a specific expiration period. The<span class="code"> token\_validity</span> parameter applies to tokens at the time they are created. Tokens that exist prior to modifying this value retain the expiration date that was set at the time they were created.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you modify the UCONF <span class="code">copilot.restapi.api_token_validity</span> parameter, you must restart Copilot for the change to be taken into account.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you modify the UCONF copilot.restapi.api\_token\_validity parameter, you must restart Copilot for the change to be taken into account.
 
 Related information includes:
 
--   Using access tokens with REST APIs, see [Using the Swagger UI](#)
+-   Using access tokens with REST APIs, see [Using the Swagger UI]()
 -   Token keys and renewal, please see <a href="../../use_saml" class="MCXref xref">SSO using SAML</a>
 -   [Changing the key length](../../../../governance_services_intro/register_cg#manually_activate_cg) for a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> certificate
--   [Bearer authentication](#)
+-   [Bearer authentication]()
 
 ## Create a token
 
@@ -64,12 +58,6 @@ If you change the private key, you must:
 2.  From the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> user interface, regenerate the API tokens.
 3.  Update each REST API client application with the new API token.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you are reregistering Transfer CFT with either <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, you must revoke and recreate all the tokens from this <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you are reregistering Transfer CFT with either Central Governance or Flow Manager, you must revoke and recreate all the tokens from this Transfer CFT.

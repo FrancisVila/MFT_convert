@@ -11,7 +11,7 @@ This topic describes how to implement Axway Trusted File encoding. <span class="
 -   [Defining the unified configuration parameters](#Defining)
 -   [Command example (to encode/decode a file)](#Command)
 
-The topic [Delivered files and certificates](tf_delivered_files_certficates) describes the scripts, conversion tables, files and samples delivered with Transfer CFT. And for more information on TrustedFile functionality, please refer to the [TrustedFile Reference Guide](#) .
+The topic [Delivered files and certificates](tf_delivered_files_certficates) describes the scripts, conversion tables, files and samples delivered with Transfer CFT. And for more information on TrustedFile functionality, please refer to the [TrustedFile Reference Guide]() .
 
 #### Limitations
 
@@ -74,11 +74,11 @@ mode = replace         </td>
 The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> functioning. For information on uconf, see [About the Unified Configuration](../../admin_intro/uconf).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter (uconf)         </th>
-<th>Default values         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter (uconf)         </th>
+<th class="HeadE-Column1-Header1">Default values         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

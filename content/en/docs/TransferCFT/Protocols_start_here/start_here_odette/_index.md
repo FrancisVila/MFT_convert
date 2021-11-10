@@ -22,10 +22,10 @@ to configure them:
 -   Change direction (CD)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Topic         </th>
-<th>Describes...         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Topic         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Describes...         </th>
       </tr>
    </thead>
    <tbody>

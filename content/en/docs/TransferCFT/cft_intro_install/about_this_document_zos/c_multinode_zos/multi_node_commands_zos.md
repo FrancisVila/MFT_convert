@@ -64,15 +64,9 @@ COPSTOP
 
 The `start `command starts one or all nodes. If no node is specified, all nodes are started.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must first start the node manager.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must first start the node manager.
 
 **Syntax**
 
@@ -126,15 +120,9 @@ Stops node 0.
 
 The` restart` command restarts one or all nodes. If no node is specified all nodes are restarted.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must first start the node manager.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must first start the node manager.
 
 **Syntax**
 
@@ -289,15 +277,9 @@ Use the CFTUTIL `listlog `command to display the log content, which can be defi
 
 Use the CFTUTIL `display `or CFTUTIL `listcat `to show catalog transfer records. In multi-node, these commands aggregate all catalog internal datafiles to show catalog transfer records as a unique catalog.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The first character in the IDTU corresponds to the node number.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The first character in the IDTU corresponds to the node number.
 
 ## listnode
 

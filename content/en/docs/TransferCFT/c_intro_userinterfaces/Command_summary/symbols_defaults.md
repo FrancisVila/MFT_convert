@@ -14,13 +14,13 @@ CFT that are specific to each operating system and comprises:
 ## Specific symbols
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Windows         </th>
-<th>Unix         </th>
-<th>z/OS         </th>
-<th>IBM i         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unix         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">z/OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">IBM i         </th>
       </tr>
    </thead>
    <tbody>
@@ -101,14 +101,14 @@ CFT that are specific to each operating system and comprises:
 ## Default files used by CFTUTIL
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>File</p>         </th>
-<th><p>Default</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>
 <p>Windows</p>         </th>
-<th><p>Unix</p>         </th>
-<th><p>z/OS</p>         </th>
-<th><p>IBM i</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Unix</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>z/OS</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>IBM i</p>         </th>
       </tr>
    </thead>
    <tbody>

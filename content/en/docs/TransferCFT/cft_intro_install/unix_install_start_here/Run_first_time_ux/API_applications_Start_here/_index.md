@@ -25,10 +25,10 @@ This book is comprised of the following topics which describe how to
 create an API application.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Topic         </th>
-<th>Details         </th>
+<th class="HeadE-Column1-Header1">Topic         </th>
+<th class="HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

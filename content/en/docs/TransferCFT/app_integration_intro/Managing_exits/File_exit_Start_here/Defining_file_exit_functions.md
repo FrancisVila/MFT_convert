@@ -67,10 +67,10 @@ Restrictions
 The following table lists all the parameters of the initialization function.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -159,10 +159,10 @@ Where EXF is defined as:
 The following table describes the parameters involved in the user functions.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>          </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th class="HeadD-Column1-Header1">          </th>
       </tr>
    </thead>
    <tbody>
@@ -257,10 +257,10 @@ The following table describes the interface files.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>File</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>File</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>

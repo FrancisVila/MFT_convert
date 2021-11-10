@@ -6,15 +6,10 @@
 
 To notify the end of the processing to Transfer CFT, the acknowledgment processing script must perform a END command with istate=no.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>The transfer request remains in phase=Z and phasestep=C until Transfer CFT receives the END command related to this transfer request         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> The transfer request remains in phase=Z and phasestep=C until Transfer CFT receives the END command related to this transfer request
 
  
 
@@ -36,15 +31,10 @@ There are two possibilities for ackstate:
 <!-- -->
 
 -   Ignore:
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>To configure <a href="../processing_compatability">backward compatibility</a> ack behavior, set the unified configuration to: <span class="code">uconf:cft.state_compat=Yes</span>         </td>
-          </tr>
-       </tbody>
-    </table>
+
+    > **Note:**
+    >
+    > To configure backward compatibility ack behavior, set the unified configuration to: uconf:cft.state\_compat=Yes
 
 -   Not backward compatible:  
     If an Acknowledgement is received during the post-processing, it waits until the end of the post-processing to move to the Acknowledgement phase (Z) and launch the ackexec/execsfa/execsma with phasestep (C) if applicable. When that finishes, it moves to the Done phase.  
@@ -53,12 +43,6 @@ There are two possibilities for ackstate:
 -   Backward compatible:  
     We launch the ackexec/execsfa/execsma, if applicable, as soon as the Acknowledgement is received regardless of the current Phase. Consequently,this Acknowledgement phase is not seen. After the end of the previous step (post-processing if applicable, or transfer), it moves directly to the next Done phase.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

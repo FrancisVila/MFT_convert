@@ -95,20 +95,14 @@ The physical location of the file to be sent by the sender/requester
 is defined by the FNAME parameter of the SEND transfer command or by default
 by the parameter of the CFTSEND parameter setting command.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the sender/requester defines NFNAME and the server/receiver has
-not defined FNAME = &amp;NFNAME (or vice-versa), the transfer fails and
-is interrupted. If the requester/sender defines NFNAME and the file name
-is preceded with "*", the server/receiver can use the name of
-its choice as the FNAME. The following figure summarizes the implementation
-in open mode for a sender/requester transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the sender/requester defines NFNAME and the server/receiver has
+> not defined FNAME = &NFNAME (or vice-versa), the transfer fails and
+> is interrupted. If the requester/sender defines NFNAME and the file name
+> is preceded with "\*", the server/receiver can use the name of
+> its choice as the FNAME. The following figure summarizes the implementation
+> in open mode for a sender/requester transfer.
 
 **Sender/requester transfer: open mode**
 
@@ -203,18 +197,12 @@ The physical location of the file to be sent by the sender/server is
 defined by the FNAME parameter of the SEND transfer command (or by default
 by the parameter of the CFTSEND parameter setting command).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In locked for sending mode, the name FNAME of the file to be sent
-must be known as soon as SEND is submitted. The receiver/requester is
-consequently not able to impose the physical location of the file to be
-sent by the server. The open mode at the sender/server end is not possible.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In locked for sending mode, the name FNAME of the file to be sent
+> must be known as soon as SEND is submitted. The receiver/requester is
+> consequently not able to impose the physical location of the file to be
+> sent by the server. The open mode at the sender/server end is not possible.
 
 For the same reason, the file name sent at the server end cannot be
 locally determined using a symbolic variable.

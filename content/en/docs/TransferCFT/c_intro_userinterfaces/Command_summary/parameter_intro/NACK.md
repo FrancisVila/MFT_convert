@@ -27,14 +27,8 @@ To enable the use of NACK when connecting to products other than <span class="mc
 
 However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: <span class="code"> CFTH13E FPDU Remote reject &lt;PART=STREFSSL DIAGI=909 DIAGP=RCO 301></span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When performing file transfers between two <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>s, negative acknowledgments are sent regardless of the NACK setting.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When performing file transfers between two Transfer CFTs, negative acknowledgments are sent regardless of the NACK setting.
 
 [Return to Command index](../../)

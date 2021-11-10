@@ -18,17 +18,11 @@ to all commands that affect <span class="mc-variable axway_variables.Component_S
 -   CREATE
 -   DELETE
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span style="font-weight: normal;">Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
-CFTLOG, CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
-CFTTCP, CFTTRACE, CFTXLATE.</span>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
+> CFTLOG, CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
+> CFTTCP, CFTTRACE, CFTXLATE.
 
 #### DISPLAY
 
@@ -62,17 +56,11 @@ Mode to be reactivated:
 
 You can use the shortcuts B, R, and S in place of the keywords.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The MODE parameter is absolute. If you run ACT MODE=SERVER followed by
-ACT MODE=REQUESTER, the partner is not reactivated in both modes,
-only in REQUESTER mode (corresponding to the most recent command).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The MODE parameter is absolute. If you run ACT MODE=SERVER followed by
+> ACT MODE=REQUESTER, the partner is not reactivated in both modes,
+> only in REQUESTER mode (corresponding to the most recent command).
 
 The CFTPART command’s STATE parameter is set to:
 

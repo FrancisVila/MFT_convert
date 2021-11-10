@@ -34,15 +34,9 @@ Execute the following command to add a new node: **`add_node (JCL MNANODE)`**
 
 The node 2 is created. The cluster is composed of three nodes: node 0, node 1 and node 2. All associated files associated with node 2 are initialized and its node state is set to DISABLED.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When adding a node, you must add the corresponding new license for that node in a license-key file <strong><code>..UPARM(PRODKEY)</code> by default.</strong>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When adding a node, you must add the corresponding new license for that node in a license-key file ..UPARM(PRODKEY) by default.
 
 ### Enable a node
 
@@ -54,15 +48,9 @@ The node 2 can be started using the command:**` start -n 2 (JCL MNSTART)`**
 
 ## Remove a node from the Transfer CFT cluster
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Only the last node can be removed.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Only the last node can be removed.
 
 ### Disable the last node
 

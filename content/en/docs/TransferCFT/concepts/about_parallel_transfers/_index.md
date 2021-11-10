@@ -15,15 +15,9 @@ Contents include:
 -   [Multi-node recommendations](multi_node_simultaneous_transfers)
 -   [FAQ and troubleshooting](faq)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Some parameters benefit from further tuning if using a multi node architecture. See also Multi-node partner configuration.
 
 <span id="Global"></span>
 
@@ -56,15 +50,9 @@ An established session is either active or inactive. An active session means tha
 
 You can also set the maximum number of simultaneous sessions using the UCONF parameter `cft.server.max_session`. The default value is 0  and the maximum number of supported simultaneous transfer is 2000 (2 x 1000).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>We recommend using the default value for cft.server.max_session.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> We recommend using the default value for cft.server.max\_session.
 
 #### DISCTD/DISCTS
 
@@ -82,15 +70,9 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 
     CFTPROT id=PESIT, DISCTS=10, DISCTD=7
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>We recommend setting these values to 60 seconds or less.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> We recommend setting these values to 60 seconds or less.
 
 ### Transfer execution
 
@@ -151,15 +133,9 @@ This parameter controls the number of CFTTFIL processes that can run. Since more
 
     CFTPARM ID=IDPARM0,MAXTASK=n, ...
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There is a one to one relationship between a transfer and its task. That is, the task cannot be shared, so it is recommended to set the MAXTASK to less than or equal to MAXTRANS.
 
 #### TRANTASK
 
@@ -186,15 +162,9 @@ The following parameter values can create a maximum of 2 file access tasks. Tran
 
 This parameter defines the frequency, in minutes, with which Transfer CFT scans the catalog file when restarting a transfer. That is, WSCAN reschedules transfers that have a remote MAXTRANS or local MAXCNX diagnostic. The default value is 5, but we recommend setting this value to 1.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The WSCAN scheduling retries continues indefinitely until the transfer can be executed.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The WSCAN scheduling retries continues indefinitely until the transfer can be executed.
 
 <span id="Partner"></span>
 
@@ -240,10 +210,10 @@ This refers to the maximum number of communication sessions (less than or equal 
 When using a stand alone Transfer CFT to another stand alone Transfer CFT (or other PeSIT application), the recommendations for a heavily loaded configuration should remain symmetrical.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Stand alone         </th>
-<th>Stand alone         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Stand alone         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Stand alone         </th>
       </tr>
    </thead>
    <tbody>
@@ -268,15 +238,9 @@ When using a stand alone Transfer CFT to another stand alone Transfer CFT (or ot
 
 This parameter defines the retry period following a network interruption. This is one of 3 parameters that control the retry policy for rescheduling following a network connection interruption. The RETRYW value is an approximate time in order to avoid all blocked transfers being rescheduled at the same time overloading the system.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The RETRYW scheduling retries is limited by the RETRYM number.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The RETRYW scheduling retries is limited by the RETRYM number.
 
 #### RETRYM
 

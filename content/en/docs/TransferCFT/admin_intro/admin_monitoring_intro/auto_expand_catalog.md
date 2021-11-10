@@ -24,11 +24,11 @@ To enable the auto-expand option, with <span class="mc-variable axway_variables.
     -   If <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped when setting uconf values, you do not need to execute the <span class="code">reconfig </span>command.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -37,15 +37,11 @@ To enable the auto-expand option, with <span class="mc-variable axway_variables.
          <td>0         </td>
          <td><p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand.</p>
 <p>The value 0 disables the automatic expansion feature.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Tip  
+We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>cft.cftcat.auto_expand_max_size         </td>

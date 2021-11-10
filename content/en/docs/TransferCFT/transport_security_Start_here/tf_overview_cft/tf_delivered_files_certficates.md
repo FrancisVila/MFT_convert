@@ -29,10 +29,10 @@ Conventions for Transfer CFT with Trusted File content includes:
 <span class="autonumber"></span>Unix scripts
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Script         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Script         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -54,10 +54,10 @@ Conventions for Transfer CFT with Trusted File content includes:
 <span class="autonumber"></span>Windows scripts
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Script         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Script         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -112,10 +112,10 @@ The following files refer to “user1” and “user2”, which are used in the 
 <span class="autonumber"></span>Sample file descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -151,10 +151,10 @@ The following files refer to “user1” and “user2”, which are used in the 
 The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Certificate         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Certificate         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -204,10 +204,10 @@ Refer to the <span class="italic_in_para" style="font-style: italic;">Trusted Fi
 The <span class="bold_in_para"> </span>`<CFTDIRRUNTIME>/conf/tf/transcoding.tbl`<span class="bold_in_para"> </span>file contains all available transcoding tables.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Table         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Table         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

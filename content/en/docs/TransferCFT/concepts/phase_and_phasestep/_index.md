@@ -40,23 +40,17 @@ The <span class="bold_in_para">phasestep</span> refers to the details that can o
 
 ![](/Images/TransferCFT/temp_phase_steps.png)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The CFTSTATE in the Transfer CFT catalog corresponds to the transfer state in diagrams and tables.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The CFTSTATE in the Transfer CFT catalog corresponds to the transfer state in diagrams and tables.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Phase         </th>
-<th>Phasestep         </th>
-<th><span id="State"></span>State         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Phase         </th>
+<th class="HeadE-Column1-Header1">Phasestep         </th>
+<th class="HeadE-Column1-Header1"><span id="State"></span>State         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -183,12 +177,6 @@ For continued compatibility and to help in transitioning, clients may still use 
 
 This guide provides the following usage example for implementation: [Adding a zip script.](../about_transfer_processing/preprocess_use_case2)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

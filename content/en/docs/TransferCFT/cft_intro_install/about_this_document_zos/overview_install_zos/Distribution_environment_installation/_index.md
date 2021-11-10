@@ -31,15 +31,9 @@ To define an alias, adapt the parameters in bold to suit your environment. Enter
 -   An FTP client that permits the transfer of files to the z/OS host
 -   Download the ESD file from <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>ISO files were deprecated in version 3.0.1.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> ISO files were deprecated in version 3.0.1.
 
 To install the Transfer CFT z/OS product, you need approximately:
 
@@ -149,11 +143,11 @@ Silent mode enables you to perform an installation or configuration in a non-int
 Before you start the silent installation you must update the silent\_install.conf installation file located in the install directory.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Value         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -285,15 +279,9 @@ To customize the JCL, apply a `change all` command on the following parameters:
 
 -   storclass: SMS Storage class, used to override the default value. If used, the statement marked as a comment must be activated
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The distribution files are restored with 5 qualifiers (ADRDSSU). You can modify 4 of these qualifiers, for example AXWAY.XFB.CFT332.CF030000, using the ADRDSSU parameter, step ADRD020 in J1IDISTA, but the fifth qualifier is hard coded.
 
 <span id="kanchor57"></span>
 

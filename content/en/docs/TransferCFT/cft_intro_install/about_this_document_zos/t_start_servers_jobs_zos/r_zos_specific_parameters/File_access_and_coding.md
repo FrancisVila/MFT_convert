@@ -93,15 +93,9 @@ Where:
     FILENAME
     /path/file.extension
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.
 
 <span id="Filename"></span>
 
@@ -200,15 +194,9 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 
 -   For the entire PDS, by setting FNAME=#DSNAME or #DSNAME(\*)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The second syntax is recommended as it is the syntax to use for heterogeneous transfers.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The second syntax is recommended as it is the syntax to use for heterogeneous transfers.
 
 -   For a selected subset of members, using the ’\*’ character to replace a character string or ’?’ to replace one character and by setting FNAME=#DSNAME(ME?BER\*)
 
@@ -233,15 +221,9 @@ A GDG filename is coded as:
     FNAME=NAME1.NAMEX(+n)
                 
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT z/OS does not allow the concatenation of all versions of a GDG file.
 
 Delivered templates:
 

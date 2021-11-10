@@ -85,23 +85,17 @@ transfer data again is granted at the next application connection request
 the local CREDIT value to the CREDIT value negotiated during the connection
 phase.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In accordance with the operation
-of the Transfer CFT transfer monitor, a transfer in process is acknowledged
-by determining synchronization points. These points acknowledge the data
-which have just been transferred. With the Odette protocol, the synchronization
-points are taken each time a CREDIT is received or sent. All the data
-sent are consequently acknowledged when the requester receives a CREDIT.
-Conversely, the previously received data are acknowledged when the Server
-sends a CREDIT. The CREDIT value ranges from 1 to 999. The recommended
-value is *CREDIT = 4 .         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In accordance with the operation
+> of the Transfer CFT transfer monitor, a transfer in process is acknowledged
+> by determining synchronization points. These points acknowledge the data
+> which have just been transferred. With the Odette protocol, the synchronization
+> points are taken each time a CREDIT is received or sent. All the data
+> sent are consequently acknowledged when the requester receives a CREDIT.
+> Conversely, the previously received data are acknowledged when the Server
+> sends a CREDIT. The CREDIT value ranges from 1 to 999. The recommended
+> value is \*CREDIT = 4 .
 
 <span id="Two_way_exchanges"></span>
 
@@ -130,10 +124,10 @@ proposed by site A, and SRIN is the transfer direction determined by site
 B.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>If...</p>         </th>
-<th><p>Then the final values are...</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>If...</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Then the final values are...</p>         </th>
       </tr>
    </thead>
    <tbody>

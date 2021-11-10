@@ -19,10 +19,10 @@ topics
 Use this command to define network parameter settings.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -296,19 +296,13 @@ In PeSIT, the user can specify parameters controlling the:
 -   compression algorithms
 -   CRC calculation
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In certain environments,
-the mechanisms for repositioning in the transferred files are not operational
-with all the files supported: after a transfer interruption, transfers
-then begin again from the start of files (see the Transfer CFT Operations
-Guide specific to your OS).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In certain environments,
+> the mechanisms for repositioning in the transferred files are not operational
+> with all the files supported: after a transfer interruption, transfers
+> then begin again from the start of files (see the Transfer CFT Operations
+> Guide specific to your OS).
 
 The four PeSIT variants supported correspond to the four values of the
 PROF parameter (CFT, SIT, EXTERN, ANY). Some parameters are only meaningful

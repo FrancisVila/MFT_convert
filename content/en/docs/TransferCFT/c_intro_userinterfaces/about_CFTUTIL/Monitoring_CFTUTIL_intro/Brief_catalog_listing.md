@@ -108,10 +108,10 @@ headings contained in this example.
 comments**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -266,10 +266,10 @@ The following table contains the comments associated with the various
 headings contained in this figure.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

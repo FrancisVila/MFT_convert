@@ -62,12 +62,12 @@ In the following example the synchronous communication return code is 82, while 
 For the return codes 70 through 79, the error occurred in the SEND or RECV transfer command, and the transfer was not executed.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>RC         </th>
-<th>Error         </th>
-<th>Description         </th>
-<th>Action         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">RC         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Action         </th>
       </tr>
    </thead>
    <tbody>
@@ -136,15 +136,15 @@ For the return codes 70 through 79, the error occurred in the SEND or RECV trans
 
 ## SWAITCAT related errors
 
-For the return codes 80 through 87, the error is related to the SWAITCAT command. Refer to the SWAITCAT [Concepts](#) or [Examples](../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks) sections for more information.
+For the return codes 80 through 87, the error is related to the SWAITCAT command. Refer to the SWAITCAT [Concepts]() or [Examples](../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks) sections for more information.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>RC         </th>
-<th>Error         </th>
-<th>Description         </th>
-<th>Action         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">RC         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Action         </th>
       </tr>
    </thead>
    <tbody>

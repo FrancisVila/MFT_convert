@@ -64,9 +64,9 @@ parameter does not need to be defined when the default value of the primary
 allocation of the file to be created is "no".
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><span id="FSPACE_Table"></span>FSPACE         </th>
+<th colspan="7" class="HeadD-Column1-Header1"><span id="FSPACE_Table"></span>FSPACE         </th>
       </tr>
    </thead>
    <tbody>

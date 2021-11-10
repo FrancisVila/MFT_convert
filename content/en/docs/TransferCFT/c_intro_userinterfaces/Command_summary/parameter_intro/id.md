@@ -66,11 +66,11 @@ The value of the identifier corresponds with the identifier in the related
 commands listed below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>EXIT type         </th>
-<th>Command         </th>
-<th>Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">EXIT type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Parameter         </th>
       </tr>
    </thead>
    <tbody>

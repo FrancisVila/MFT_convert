@@ -13,9 +13,9 @@ Select from:
 5.  Multi-node commands (only available if multi-node is enabled)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><h2 id="transfer-cft-3.2.x-and-higher"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.x and higher</h2>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfer-cft-3.2.x-and-higher"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.x and higher</h2>         </th>
       </tr>
    </thead>
    <tbody>

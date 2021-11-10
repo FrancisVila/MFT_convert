@@ -37,12 +37,12 @@ Displays using the same format as in <span class="mc-variable header_footer_vari
 -   Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Type         </th>
-<th>V24 length         </th>
-<th>V23 length         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">V24 length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">V23 length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -174,12 +174,12 @@ Format 2
 The fields are as described in the following table, where the field size depends on the format version (V23 or V24).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Type</p>         </th>
-<th><p>V24 length</p>         </th>
-<th><p>V23 length</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V24 length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V23 length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

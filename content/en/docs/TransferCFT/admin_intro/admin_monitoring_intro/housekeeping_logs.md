@@ -39,15 +39,9 @@ You can manage the switch procedure using various methods that include, but not 
 
 -   Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> At least one of the two files (either the log or alternate log file) must be empty prior to starting Transfer CFT.
 
 #### Use the SWITCH command
 
@@ -60,20 +54,18 @@ A file can automatically be switched to another file by means of one of 4 events
 
 -   a daily schedule
     set by the SWITCH parameter
+
 -   the number of records
     written in the current log file exceeds the limit set by the MAXREC parameter
     or, depending on the OS, the file is full
+
 -   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
     shut down via the SHUT command  
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter <code>cft.cftlog.switch_on_stop=YES</code> (the default value is NO).         </td>
-          </tr>
-       </tbody>
-    </table>
+
+    > **Note:**
+    >
+    > To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter cft.cftlog.switch\_on\_stop=YES (the default value is NO).
+
 -   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
     activated
 

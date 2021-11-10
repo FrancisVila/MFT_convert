@@ -46,12 +46,6 @@ You do not usually need to switch users to perform a resource release. To activa
     -   A send is performed by the user TEST
     -   The transfer procedure is submitted by TEST
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Setting the UCONF cft.server.exec_as_user variable to ‘NO’ also directly effects the transfer procedure.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Setting the UCONF cft.server.exec\_as\_user variable to ‘NO’ also directly effects the transfer procedure.

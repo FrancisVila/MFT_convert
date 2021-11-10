@@ -14,10 +14,10 @@ CFT parameters that are specific to UNIX concerning the characteristics of a tra
 #### Characteristics of files automatically detected on transmission
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Automatically detected on transmission         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Automatically detected on transmission         </th>
       </tr>
    </thead>
    <tbody>
@@ -47,11 +47,11 @@ CFT parameters that are specific to UNIX concerning the characteristics of a tra
 #### FTYPE values and FCODE values implicitly associated during transmission
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FCODE         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FCODE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -97,24 +97,18 @@ CFT parameters that are specific to UNIX concerning the characteristics of a tra
 
 FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>FTYPE J is available in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 3.0.1 SP7 (UNIX and Windows) and higher.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> FTYPE J is available in Transfer CFT Transfer CFT 3.0.1 SP7 (UNIX and Windows) and higher.
 
 #### FTYPE and FRECFM values on receipt
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FRECFM         </th>
-<th>Type of received file         </th>
+<th class="HeadE-Column1-Header1">FTYPE         </th>
+<th class="HeadE-Column1-Header1">FRECFM         </th>
+<th class="HeadD-Column1-Header1">Type of received file         </th>
       </tr>
    </thead>
    <tbody>

@@ -37,11 +37,11 @@ To create exits with Assembler, access the following files:
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Main exported EPA         </th>
-<th>DLL name         </th>
-<th>CFTEXIT PROG=value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Main exported EPA         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DLL name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">CFTEXIT PROG=value         </th>
       </tr>
    </thead>
    <tbody>
@@ -69,10 +69,10 @@ To create exits with Assembler, access the following files:
 `*  CFT/MVS file EXIT - DLL versionSETOPT  PARM(CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED)* Customer codeINCLUDE   USER(AEXFDLL) ** the exit* Import EXIT support codeIMPORT    CODE,CFTDMAI,'exfrun1'MODE       AMODE(31)MODE       RMODE(ANY)NAME       CFTDXG5(R)`
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Definition         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -110,11 +110,11 @@ To create exits with C, access the following files:
     -   Transfer CFT modules for various Transfer CFT exits. The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Main exported EPA         </th>
-<th>DLL name         </th>
-<th>CFTEXIT PROG=value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Main exported EPA         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DLL name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">CFTEXIT PROG=value         </th>
       </tr>
    </thead>
    <tbody>
@@ -150,10 +150,10 @@ To create exits with C, access the following files:
 **`NAME CFTDXG5(R)`**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Definition         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -202,11 +202,11 @@ To create exits with Cobol, access the following files:
     -   Transfer CFT modules for various Transfer CFT exits. The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Main exported EPA         </th>
-<th>DLL name         </th>
-<th>CFTEXIT PROG=value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Main exported EPA         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DLL name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">CFTEXIT PROG=value         </th>
       </tr>
    </thead>
    <tbody>
@@ -234,10 +234,10 @@ To create exits with Cobol, access the following files:
 `* CFT/zos exit TYPE=FILE- DLL versionSETOPT PARM(CALL,REUS=RENT,DYNAM=DLL,CASE=MIXED)* Customer codeINCLUDE USER(OEXFDLL) ** the exit* Import EXIT support codeIMPORT CODE,CFTDMAI,'exfrun1'MODE AMODE(31)MODE RMODE(ANY)NAME CFTDXG5(R)`
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Definition         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -265,20 +265,20 @@ Calls to a Transfer CFT synchronous API are only supported in DLL.
 **Exit examples summary for COBOL**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Source file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Source file</p>
 <p>cftv2.</p>
 <p>SAMPLEx</p>         </th>
-<th><p>Jcl compilation</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl compilation</p>
 <p>cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>Command file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Command file</p>
 <p>for link-edit</p>
 <p>distlib.CNTL</p>         </th>
-<th><p>Jcl for link-edit cftv2.</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl for link-edit cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>DLL name</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>DLL name</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -309,20 +309,20 @@ Calls to a Transfer CFT synchronous API are only supported in DLL.
 **Exit examples summary for C language**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Source file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Source file</p>
 <p>cftv2.</p>
 <p>SAMPLEx</p>         </th>
-<th><p>Jcl compilation</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl compilation</p>
 <p>cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>Command file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Command file</p>
 <p>for link-edit</p>
 <p>distlib.CNTL</p>         </th>
-<th><p>Jcl for link-edit cftv2.</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl for link-edit cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>DLL name</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>DLL name</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -360,20 +360,20 @@ Calls to a Transfer CFT synchronous API are only supported in DLL.
 **Exit examples summary for Assembler**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Source file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Source file</p>
 <p>cftv2.</p>
 <p>SAMPLEx</p>         </th>
-<th><p>Jcl compilation</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl compilation</p>
 <p>cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>Command file</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Command file</p>
 <p>for link-edit</p>
 <p>distlib.CNTL</p>         </th>
-<th><p>Jcl for link-edit cftv2.</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>Jcl for link-edit cftv2.</p>
 <p>INSTALL</p>         </th>
-<th><p>DLL name</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt; font-weight: bold"><p>DLL name</p>         </th>
       </tr>
    </thead>
    <tbody>

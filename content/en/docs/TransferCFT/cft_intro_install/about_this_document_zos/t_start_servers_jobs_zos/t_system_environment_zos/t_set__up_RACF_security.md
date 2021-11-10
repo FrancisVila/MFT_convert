@@ -68,15 +68,9 @@ The JAVA interface connects to the Transfer CFT Copilot server. It is identified
 
 In either of these cases, you can enter any value in the PASSWORD field to connect. You then have privileges for the JOB you are connected to.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS accepts passwords in lower case using RACF or Top-Secret.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT z/OS accepts passwords in lower case using RACF or Top-Secret.
 
 <span id="RACF pas"></span>
 

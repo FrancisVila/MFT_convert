@@ -3,13 +3,13 @@
     "linkTitle": "Parameter equivalents in Central Governance",
     "weight": "300"
 }<table>
-   <th>
+   <thead>
       <tr>
-<th>CG field         </th>
-<th>CG values         </th>
-<th><p>CFTUTIL </p>
+<th class="HeadE-Column1-Header1">CG field         </th>
+<th class="HeadE-Column1-Header1">CG values         </th>
+<th class="HeadE-Column1-Header1"><p>CFTUTIL </p>
 <p>parameter</p>         </th>
-<th>Description         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

@@ -97,10 +97,10 @@ Limitation
 When using ICHARSET and OCHARSET, all file types are supported except Binary (B) and Variable (V).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -235,10 +235,10 @@ These two parameters may be classified into 5 sub-categories, as shown
 in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter category         </th>
-<th>Parameter concerned         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter category         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Parameter concerned         </th>
       </tr>
    </thead>
    <tbody>
@@ -298,10 +298,10 @@ The utility prints out execution statistics.
 The following table indicates the heading contents.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading number         </th>
-<th>Contents         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading number         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Contents         </th>
       </tr>
    </thead>
    <tbody>

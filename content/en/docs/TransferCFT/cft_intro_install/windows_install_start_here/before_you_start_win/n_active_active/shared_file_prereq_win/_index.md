@@ -16,10 +16,10 @@ The following table lists the file systems that are supported and tested with Tr
 <span id="Supported_fs_win"></span>Supported file systems
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Operating system         </th>
-<th>File system         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File system         </th>
       </tr>
    </thead>
    <tbody>
@@ -61,11 +61,11 @@ You can use any POSIX compliant shared file system for both Transfer CFT data fi
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Operating system         </th>
-<th>Supported         </th>
-<th>Unsupported         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unsupported         </th>
       </tr>
    </thead>
    <tbody>

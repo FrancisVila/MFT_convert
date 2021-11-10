@@ -12,15 +12,9 @@ requester mode:
     Receive one or more files or messages from several partners by activating
     a single RECV command
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using these features with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, you must enable broadcasting for the flow. For more information, refer to the <em>Central Governance</em> documentation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using these features with Central Governance, you must enable broadcasting for the flow. For more information, refer to the Central Governance documentation.
 
 <span id="Broadcasting_mode"></span>
 
@@ -79,16 +73,10 @@ The associated post processing procedure is only executed when
 all the transfers are correctly completed (DIFFUS entry changes to the
 T or X state, depending on the compat mode).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the CFTDEST command includes the EXEC=PART parameter, the end of
-send procedure is executed on completion of each transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the CFTDEST command includes the EXEC=PART parameter, the end of
+> send procedure is executed on completion of each transfer.
 
 The post processing procedure in the case of an error is executed for each transfer in the same
 way as for normal transfers.

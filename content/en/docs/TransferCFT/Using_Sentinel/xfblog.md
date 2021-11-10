@@ -12,12 +12,12 @@ events and errors that occur on Transfer CFT. This topic describes the XFBLog at
 The XFBLog includes the following attributes.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Attribute         </th>
-<th>Description         </th>
-<th>Type         </th>
-<th>Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Length         </th>
       </tr>
    </thead>
    <tbody>

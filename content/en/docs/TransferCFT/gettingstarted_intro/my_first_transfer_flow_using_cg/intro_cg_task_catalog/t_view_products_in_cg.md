@@ -11,11 +11,11 @@ Example
 Copy or note the host name or IP address for each of the three Transfer CFTs that you will use in these exercises.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer CFT          </th>
-<th>Host name         </th>
-<th>Application name         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Host name         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Application name         </th>
       </tr>
    </thead>
    <tbody>

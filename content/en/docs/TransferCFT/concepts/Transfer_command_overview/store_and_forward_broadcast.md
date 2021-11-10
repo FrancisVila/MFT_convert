@@ -20,15 +20,10 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).
 
 On the final receiver site: the CFT monitor receives the same application parameters as those indicated for a simple transfer in “store and forward” mode. The store and forward site does not affect the transfer mode (open or closed).
 

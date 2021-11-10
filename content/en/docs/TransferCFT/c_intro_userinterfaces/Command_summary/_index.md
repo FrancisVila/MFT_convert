@@ -3002,7 +3002,7 @@ Syntax
 
 \[ [STATE](parameter_intro/state) = string \]
 
-[END details](#)
+[END details]()
 
 <span id="HALT"></span>
 
@@ -3055,7 +3055,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[Halting a transfer](#)
+[Halting a transfer]()
 
 #### HELP
 
@@ -3139,7 +3139,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-<span style="font-weight: bold;"> </span>[Suspend transfers](#)
+<span style="font-weight: bold;"> </span>[Suspend transfers]()
 
 <span id="KSTATE"></span>
 
@@ -3651,7 +3651,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[RESUME details](#)
+[RESUME details]()
 
 <span style="font-weight: normal;"> </span>
 
@@ -3659,7 +3659,7 @@ Syntax
 
 #### SEND: Request to send transfer
 
-<span class="MCDropDownHead dropDownHead"><a href="#" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img src="/Images/TransferCFT/transparent.gif" class="MCDropDown_Image_Icon" width="16" height="11" alt="Closed" />Syntax</a></span>
+<span class="MCDropDownHead dropDownHead"><img src="/Images/TransferCFT/transparent.gif" class="MCDropDown_Image_Icon" width="16" height="11" alt="Closed" />Syntax</span>
 
 [TYPE](parameter_intro/type)
 = FILE
@@ -4222,7 +4222,7 @@ Syntax
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-[Restart transfers](#)
+[Restart transfers]()
 
 <span id="SUBMIT"></span>
 
@@ -4273,7 +4273,7 @@ string \]
 
 \[ PHASESTEP = string \]
 
-[SUBMIT details](#)
+[SUBMIT details]()
 
 <span id="SWAITCAT"></span>
 
@@ -4296,7 +4296,7 @@ Syntax
 \[ [TIMEOUT](parameter_intro/timeout)
 = integer \]
 
-[SWAITCAT concepts](#) 
+[SWAITCAT concepts]() 
 
 [SWAITCAT examples](../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks)
 

@@ -12,15 +12,9 @@ When installing a Transfer CFT multi-node architecture in Windows, the user perf
 -   Be the same user for all machines.
 -   Have all rights (create/modify/delete) to the shared disk on all machines when <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> is installed in a multi-host architecture.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See <a href="shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must configure the system prior to the multi-node installation, and the shared disk should be ready when you start the Transfer CFT Copilot server. See Shared file system prerequisites for details.
 
 ## Overview
 
@@ -36,15 +30,9 @@ A cluster installation of Transfer CFT with multi-node (HA):
     -   One or several hosts are active.
     -   All Transfer CFT runtime environments (Transfer CFT nodes) are running.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT binaries can be patched on each host one after the other without stopping the Transfer CFT instance (all of the Transfer CFT nodes).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT binaries can be patched on each host one after the other without stopping the Transfer CFT instance (all of the Transfer CFT nodes).
 
 Shared directory
 
@@ -52,15 +40,9 @@ This is the path and name of the directory where you want to create a shared dir
 
 *Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format<span class="code"> \\\\server\\sharename.</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT supports all POSIX file systems.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT supports all POSIX file systems.
 
 Installation directory
 
@@ -72,15 +54,9 @@ The path and name of the local directory where you want to install the first clu
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 

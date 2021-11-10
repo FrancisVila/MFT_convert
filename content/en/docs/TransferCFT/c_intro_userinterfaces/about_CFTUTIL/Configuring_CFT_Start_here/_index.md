@@ -45,16 +45,10 @@ the commands interpreted by CFTUTIL.
 For more information on CFTUTIL, refer to Using the CFTUTIL interface:
 Start here.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The format that you use to enter commands in CFTUTIL is operating
-system dependent. For more information, refer to the Operations Manual
-that corresponds to your operating system.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The format that you use to enter commands in CFTUTIL is operating
+> system dependent. For more information, refer to the Operations Manual
+> that corresponds to your operating system.
 
  

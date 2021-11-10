@@ -9,25 +9,13 @@ In the same way, a file to be sent to clients that are dependent on
 the final receiver may transmit via intermediate systems and be sent on. This transfer is accomplished using the same protocol from one end to
 another.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you are using access management, you must define the CFTAPPL with the ID=COMMUT.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 
 The following illustration features 3 Transfer CFTs, where the protocol may be the same or different between relay points:
 
@@ -84,11 +72,11 @@ Depending on the value of this parameter, the processing performed by
 the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> on the store and forward site is as follows:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>COMMUT value         </th>
-<th>File is sent to partner         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">COMMUT value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File is sent to partner         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -248,15 +236,9 @@ must be indicated as a partner in the RECV command:
 
 The difference lies in the type of protocols.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> entries and that these entries are linked. In the example above, there would be two entries for the single "report" transfer.
 
 <span id="Store"></span>
 
@@ -280,15 +262,10 @@ If the transferred data code (NCODE) differs from the store and forward site's d
 
 When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &amp;DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> Unlike a simple transfer in store and forward mode, the file created on the intermediate site is not deleted. This deletion may be handled by the end of transfer procedure, since the &DIAGP variable is used to determine whether the transfer is a broadcast (DIAGP = DIFFUS).
 
 On the final receiver site: the CFT monitor receives the same application parameters as those indicated for a simple transfer in “store and forward” mode. The store and forward site does not affect the transfer mode (open or closed).
 

@@ -18,10 +18,10 @@ Syntax
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

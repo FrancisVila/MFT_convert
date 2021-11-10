@@ -10,10 +10,10 @@ these Requests. All of these Requests retrieve Tracked Instances
 from XFBTransfer.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Request         </th>
-<th>Retrieves...         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Request         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Retrieves...         </th>
       </tr>
    </thead>
    <tbody>

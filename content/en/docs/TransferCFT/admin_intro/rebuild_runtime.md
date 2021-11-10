@@ -46,15 +46,9 @@ Usage:
 -   -uconf: Regenerates the uconf file.
 -   -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must use double quotes when indicating a path that contains spaces.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must use double quotes when indicating a path that contains spaces.
 
 **Example 1**
 

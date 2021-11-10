@@ -22,15 +22,9 @@ and CYCDATE/CYCTIME parameters, where:
     a transfer in a cycle, where the value is recalculated for each new cycle.
 -   CYCTIME: End time for activating a transfer in a cycle, where the value is recalculated for each new cycle.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).
 
 The start time/date and cycle duration
 values are expressed in the following equation:
@@ -65,10 +59,10 @@ the time the catalog is queried (LISTCAT CONTENT=BRIEF).
 **Generic entry values**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Diagp value </p>         </th>
-<th><p>Cycle </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Diagp value </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Cycle </p>         </th>
       </tr>
    </thead>
    <tbody>

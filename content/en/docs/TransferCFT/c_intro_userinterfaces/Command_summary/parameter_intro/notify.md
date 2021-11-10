@@ -52,12 +52,12 @@ involved:
     type does not exist
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>OS </p>         </th>
-<th><p>Monitor submitter </p>         </th>
-<th><p>Operator console </p>         </th>
-<th><p>Any user </p>         </th>
+<th class="HeadE-Column1-Header1"><p>OS </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Monitor submitter </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Operator console </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Any user </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -98,10 +98,10 @@ The following table indicates, for each system, the default values of
 the NOTIFY parameter supported. The value ‘ ’ corresponds to 7 blank characters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>OS </p>         </th>
-<th><p>Default values for NOTIFY </p>         </th>
+<th class="HeadE-Column1-Header1"><p>OS </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Default values for NOTIFY </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -134,12 +134,12 @@ only these two characters (OP) are interpreted; the following characters
 are not significant.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Operator console
+<th class="HeadE-Column1-Header1"><p>Operator console
 OS</p>         </th>
-<th><p>Characters interpreted </p>         </th>
-<th><p>Messages sent to...</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Characters interpreted </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Messages sent to...</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -176,10 +176,10 @@ directory </p>         </td>
 For the user:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>User OS         </th>
-<th>Messages are...         </th>
+<th class="HeadE-Column1-Header1">User OS         </th>
+<th class="HeadD-Column1-Header1">Messages are...         </th>
       </tr>
    </thead>
    <tbody>

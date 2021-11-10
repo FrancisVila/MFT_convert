@@ -63,15 +63,9 @@ LISTPKI example
 
 List of certificate authorities, where the total length of all identifiers cannot exceed 256 characters for CFTSSL. This list references a maximum of 10 identifiers in the local certificate database.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To use more than 10 identifiers, you can refer to the <a href="../../../../transport_security_start_here/certificates/pkiutil_cli_intro/pkientity">PKIENTITY</a> information.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To use more than 10 identifiers, you can refer to the PKIENTITY information.
 
 In client mode, this list is used to check the server
 certificate. Only certificates signed by one of the authorities in the

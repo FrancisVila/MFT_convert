@@ -18,10 +18,10 @@ A zero value corresponds to no compression (default).
 Default values are:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Protocol         </th>
-<th>Default value         </th>
+<th class="HeadE-Column1-Header1">Protocol         </th>
+<th class="HeadD-Column1-Header1">Default value         </th>
       </tr>
    </thead>
    <tbody>

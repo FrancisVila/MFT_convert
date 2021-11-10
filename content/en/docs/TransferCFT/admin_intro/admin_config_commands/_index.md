@@ -5,10 +5,10 @@
 }The topics in this section describe how to use command line operations to administer Transfer CFT configuration options, and is comprised of the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Description         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -102,11 +102,11 @@ although <span class="mc-variable axway_variables.Component_Short_Name variable"
 media by type of object and parameter
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Object         </th>
-<th>Parameter         </th>
-<th>File type described         </th>
+<th class="HeadE-Column1-Header1">Object         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">File type described         </th>
       </tr>
    </thead>
    <tbody>
@@ -199,11 +199,11 @@ it accesses, as presented in the table:
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>CONFIG command</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>CONFIG command</p>
 <p>TYPE parameter</p>         </th>
-<th>File type described         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File type described         </th>
       </tr>
    </thead>
    <tbody>
@@ -273,12 +273,12 @@ language applications.
 #### **Media names by service in COBOL language interface**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Service         </th>
-<th>Command         </th>
-<th>Parameter         </th>
-<th><strong>File type described</strong>         </th>
+<th class="HeadE-Column1-Header1">Service         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1"><strong>File type described</strong>         </th>
       </tr>
    </thead>
    <tbody>
@@ -300,12 +300,12 @@ language applications.
 #### **Media names by service in C language interface**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Service         </th>
-<th>Command         </th>
-<th>Parameter         </th>
-<th>File type described         </th>
+<th class="HeadE-Column1-Header1">Service         </th>
+<th class="HeadE-Column1-Header1">Command         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">File type described         </th>
       </tr>
    </thead>
    <tbody>
@@ -359,10 +359,10 @@ of this component. The table below indicates, for each field, the file
 type described:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>File type described         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">File type described         </th>
       </tr>
    </thead>
    <tbody>

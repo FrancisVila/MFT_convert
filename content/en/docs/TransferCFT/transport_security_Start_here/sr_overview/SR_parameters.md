@@ -13,12 +13,12 @@ The MA and RA parameters are described in the following separate tables, and are
 Parameters that appear in Master agent configuration file are in bold.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -140,12 +140,12 @@ In the Secure Relay parameters table below:
 -   For an array, use the notation format<span class="bold_in_para"> secure\_relay.ra.N.parameter</span>, where <span class="italic_in_para">N </span>is between <span class="italic_in_para">0</span> and <span class="italic_in_para">number of routers – 1</span>.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>

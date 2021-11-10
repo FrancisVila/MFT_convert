@@ -60,7 +60,7 @@ The characters following the initial " == " either set certain information for t
 Regardless of if the procedure is OSS or native, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> creates a temporary file with the following locations and naming conventions:
 
 -   OSS: The same as on <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> Unix: /tmp/CFTxxxx  
--   Native: On the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> default [subvolume](##subvolumeUD): CTMPnnnn
+-   Native: On the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> default [subvolume](#subvolumeUD): CTMPnnnn
 
 2> filenames $DATA14.CFT32BUD.\*
 
@@ -94,11 +94,11 @@ The started procedure MUST delete the temporary files, regardless of the environ
 The following unified configuration parameters are specific to HP Nonstop.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

@@ -25,11 +25,11 @@ protocol is only available in requester mode.
 #### CFTPROT SAP - Parameter values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Access method         </th>
-<th><p>Size in characters </p>         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Access method         </th>
+<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Size in characters </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -91,12 +91,12 @@ system, as applicable, as specified in the table below.
 CFTPART SAP - Parameter values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Access method </p>         </th>
-<th><p>Size in characters</p>
+<th class="HeadE-Column1-Header1"><p>Access method </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Size in characters</p>
 <p>(alphanumeric)</p>         </th>
-<th><p>Definition and comments </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Definition and comments </p>         </th>
       </tr>
    </thead>
    <tbody>

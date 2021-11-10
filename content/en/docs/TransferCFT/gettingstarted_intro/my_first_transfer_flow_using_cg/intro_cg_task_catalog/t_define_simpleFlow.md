@@ -6,15 +6,9 @@
 
 The following outlines tasks for defining a flow. Optional steps, such as defining source and target properties, have default values in the user interface and are not described in this introductory section.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot modify the Protocol until you have defined both the Source and Target.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot modify the Protocol until you have defined both the Source and Target.
 
 In the <span class="bold_in_para">Flow List</span> page click <span class="bold_in_para">Add flow</span> and perform the following steps:
 
@@ -26,14 +20,9 @@ In the <span class="bold_in_para">Flow List</span> page click <span class="bold_
 4.  Optionally, select Protocol and define.
 5.  Save the flow, or save and deploy the flow.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>You can refer to the Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> parameter mapping <a href="../r_flow_target">Flow definition: Target</a> and <a href="../r_flow_source">Flow definition: Source</a> to further customize your flow.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> You can refer to the Transfer CFT to Central Governance parameter mapping Flow definition: Target and Flow definition: Source to further customize your flow.
 
 <span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

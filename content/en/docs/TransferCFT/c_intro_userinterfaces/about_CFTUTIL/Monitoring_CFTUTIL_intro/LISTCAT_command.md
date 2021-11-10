@@ -46,10 +46,10 @@ For the definition of the states of a transfer,
 refer to [Transfer control commands](../../../../concepts/transfer_command_overview/transfer_control_commands).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -187,10 +187,10 @@ Displays the records by IDTU. This can be useful because the catalog's compact b
 LISTCAT CONTENT = COMMUT
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading         </th>
-<th>Meaning         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>
@@ -213,15 +213,10 @@ The DTSA characters represent:</p>
 <li>Ack    
 =     A     (Acknowledge)</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see <a href="../../../../concepts/phase_and_phasestep/processing_compatability">Backward compatibility</a>.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>3 </p>         </td>
@@ -247,10 +242,10 @@ The DTSA characters represent:</p>
 LISTCAT CONTENT = EXTEND 
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Heading         </th>
-<th>Meaning         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
       </tr>
    </thead>
    <tbody>
@@ -274,15 +269,10 @@ The DTSA characters mean:</p>
 <li>Ack    
 =     A     (Acknowledge)</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see <a href="../../../../concepts/phase_and_phasestep/processing_compatability">Backward compatibility</a>.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>3 </p>         </td>

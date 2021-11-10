@@ -13,12 +13,6 @@ During this phase, the phase step is the same as the former state:
 
 As soon as the transfer is successfully finished, it passes to the next phase - post processing, acknowledgement, or done.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

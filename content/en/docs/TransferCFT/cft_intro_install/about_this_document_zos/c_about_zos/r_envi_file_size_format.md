@@ -15,11 +15,11 @@ The tables in this section provide information about the files and allocation re
 ## Distribution environment file formats and requirements
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Info         </th>
-<th>Allocation in cylinders         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Info         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Allocation in cylinders         </th>
       </tr>
    </thead>
    <tbody>
@@ -175,11 +175,11 @@ DSNTYPE=LIBRARY         </td>
 The following allocations are required per <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p><strong>File</strong></p>         </th>
-<th><p><strong>Environment</strong></p>         </th>
-<th><p><strong>Allocation</strong></p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p><strong>File</strong></p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p><strong>Environment</strong></p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p><strong>Allocation</strong></p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -336,15 +336,9 @@ PS – VB - 255         </td>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   The *Instance environment* list above does not include files that Transfer CFT creates in its implementation, such as CATALOG, PARM, PART, COM, PKIFILE, LOG, ACCOUNT etc.
 -   The persistent cache file for PassPort AM (CFTAM, VSAM KSDS) is created when the UCONF AM.type=passport variable is set to <span class="bold_in_para">Yes</span>.

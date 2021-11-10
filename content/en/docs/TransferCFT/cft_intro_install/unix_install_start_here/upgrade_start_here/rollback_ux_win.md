@@ -9,15 +9,9 @@
 -   Download the installation package you want to downgrade to, noting that you can only downgrade to a version from which you have previously upgraded. For example, if you upgraded from version 3.4 directly to 3.8, you can only downgrade to version 3.4 and not to an intermediary version 3.6.
 -   You must have already upgraded from <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.4 or higher to <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Release_Number variable">3.9</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On Unix systems, do not set the profile prior to upgrading. If you are in a session and the profile is set, exit the bash session before running the upgrade.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On Unix systems, do not set the profile prior to upgrading. If you are in a session and the profile is set, exit the bash session before running the upgrade.
 
 ## Procedure
 

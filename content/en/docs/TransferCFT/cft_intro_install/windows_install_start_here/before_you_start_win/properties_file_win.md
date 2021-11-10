@@ -6,15 +6,9 @@
 
 Customize the <span class="code">initialize.properties </span> file. Use the table below to help you with parameter settings; note that the <span class="code">CryptoKey\_Password</span> is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you are installing Transfer CFT but have another Transfer CFT profile loaded, you cannot have environment variables in the initialize.properties file for the new installation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you are installing Transfer CFT but have another Transfer CFT profile loaded, you cannot have environment variables in the initialize.properties file for the new installation.
 
 Example
 
@@ -24,33 +18,21 @@ CryptoKey\_Password = "Aedft#439"
 
 If you do not enclose this value in "", the string is interpreted as: <span class="code">CryptoKey\_Password = Aedft</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Some parameters can be calculated during the installation (flagged by <span class="code">@automatic</span>); you can leave these fields blank.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Some parameters can be calculated during the installation (flagged by @automatic); you can leave these fields blank.
+
+> **Note:**
+>
+> Parameters that have default values are flagged by @default.
 
 <table>
-   <tbody>
+   <thead>
       <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Parameters that have default values are flagged by <span class="code">@default</span>.         </td>
-      </tr>
-   </tbody>
-</table>
-
-<table>
-   <th>
-      <tr>
-<th>Parameter         </th>
-<th>Automatic or default         </th>
-<th>Description         </th>
-<th>UCONF          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Automatic or default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UCONF          </th>
       </tr>
    </thead>
    <tbody>
@@ -480,28 +462,16 @@ CFTUI_ServicePassword         </td>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>*This host address defines:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*This host address defines:
 
 -   unconf:sentinel.trkproductipaddr: the host address that identifies this host
 -   the host address used to connect this Transfer CFT Copilot server
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In contrast with previous versions of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> on Windows platforms, the Start menu option is automatically created and desktop icons are no longer an option.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In contrast with previous versions of Transfer CFT on Windows platforms, the Start menu option is automatically created and desktop icons are no longer an option.
 
 ## Password management
 

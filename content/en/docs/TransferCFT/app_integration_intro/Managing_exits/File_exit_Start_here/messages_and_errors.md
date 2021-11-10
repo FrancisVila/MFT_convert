@@ -12,10 +12,10 @@ You can also generate your own messages and error messages via the fields
 indicated in the table below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Field         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

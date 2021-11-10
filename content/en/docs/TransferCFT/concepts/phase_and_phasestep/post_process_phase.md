@@ -8,15 +8,10 @@ During the post processing phase if the parameter EXITEOT is set, the End-Of-Tra
 
 To notify the end of the processing to Transfer CFT, the post processing script must perform an END command with istate=no.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>The transfer request remains in phase=Y and phasestep=C until Transfer CFT receives the END command related to this transfer request.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> The transfer request remains in phase=Y and phasestep=C until Transfer CFT receives the END command related to this transfer request.
 
 During this phase, the phase step can be:
 
@@ -28,12 +23,6 @@ During this phase, the phase step can be:
 
 If neither an EOT exit or other exec was specified, the transfer passes to the acknowledgment phase or the done phase.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../../about_transfer_processing/proc_commands">Processing commands: general usage</a> for a description of the processing command parameters and values.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Processing commands: general usage for a description of the processing command parameters and values.

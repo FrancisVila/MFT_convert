@@ -144,18 +144,9 @@ RDEFINE safcftcl APPL.TEXT  UACC(NONE) OWNER(GRPCFT)
 
 PERMIT APPL.TEXT CLASS(safcftcl) ID(Usrtso1) ACCESS(CONTROL)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>As end-of-transfer commands are submitted from the transfer owner account (Usrtso2), these procedures cannot execute certain commands (DELETE, START, KEEP, and so on) unless the USRTSO2 user corresponds to a RACF profile type:<br />
-PERMIT APPL.TEXT CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)<br />
-or<br />
-PERMIT ALL_CAT.** CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> As end-of-transfer commands are submitted from the transfer owner account (Usrtso2), these procedures cannot execute certain commands (DELETE, START, KEEP, and so on) unless the USRTSO2 user corresponds to a RACF profile type:PERMIT APPL.TEXT CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)orPERMIT ALL\_CAT.\*\* CLASS(safcftcl) ID(usrtso2) ACCESS(CONTROL)
 
 <span id="Controll5"></span>
 
@@ -244,12 +235,6 @@ The BANK partner Transfer CFT (if authorized) receives the response if the Usrts
     PERMIT MESSAGE.TEXT.R.BANK CLASS(safcftcl) –
     ID(Usrtso3) ACCESS(CONTROL)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Objects whose VALUE parameter contains the &amp;FNAME variable generate a resource name that takes into account the physical file name. RACF profiles must anticipate the differing cases, in particular PDS or GDG members.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Objects whose VALUE parameter contains the &FNAME variable generate a resource name that takes into account the physical file name. RACF profiles must anticipate the differing cases, in particular PDS or GDG members.

@@ -20,35 +20,18 @@ File sharing option:
 -   CHECK:
     If the file is modified during a transfer, the transfer is aborted.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The value "OLD" is deprecated and no longer available for SEND/CFTSEND.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The value "OLD" is deprecated and no longer available for SEND/CFTSEND.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The CHECK feature is disabled on z/OS platforms (no action occurs when FDISP=CHECK).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>When FDISP is set to CHECK, Transfer CFT performs an FSTAT for each record, which has a significant negative impact on performance.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> When FDISP is set to CHECK, Transfer CFT performs an FSTAT for each record, which has a significant negative impact on performance.
 
 #### CFTRECV, RECV
 
@@ -70,22 +53,16 @@ action of the <span class="mc-variable axway_variables.Component_Short_Name vari
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There no impact on FDISP when used in combination with RENAME or RETRYRENAME.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CFTRECV, FDISP         </th>
-<th>CFTRECV, FACTION         </th>
-<th>Comments         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FDISP         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FACTION         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Comments         </th>
       </tr>
    </thead>
    <tbody>

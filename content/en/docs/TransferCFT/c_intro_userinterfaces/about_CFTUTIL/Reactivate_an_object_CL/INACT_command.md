@@ -11,24 +11,18 @@ This page describes the INACT command and its parameters. You can use the INACT 
 -   CRON object (CFTCRON)
 -   Folder object (CFTFOLDER)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This command cannot be applied to partners whose definition was provided
-or modified by a directory EXIT.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> This command cannot be applied to partners whose definition was provided
+> or modified by a directory EXIT.
 
 Command guide: [INACT](../../../command_summary#INACT)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

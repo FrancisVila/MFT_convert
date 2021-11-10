@@ -67,15 +67,9 @@ The log page is displayed where you can:
 -   Sort the entries by newest or oldest.
 -   Filter the entries, saving filters for future use.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For details on starting, stopping and viewing the Transfer CFT refer to the <strong>Central Governance</strong> <strong>User Guide.</strong>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For details on starting, stopping and viewing the Transfer CFT refer to the Central Governance User Guide.
 
 ## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
 

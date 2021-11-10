@@ -38,11 +38,11 @@ There are two ways to supply parameters for a command:
 The commands associated with the transfers are listed in the table below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Type</p>         </th>
-<th><p>Command</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -61,23 +61,23 @@ The commands associated with the transfers are listed in the table below.
          <td><p>Delete catalog entries </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">HALT</a></p>         </td>
+         <td><p><a href="">HALT</a></p>         </td>
          <td><p>Stop transfers </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">KEEP</a></p>         </td>
+         <td><p><a href="">KEEP</a></p>         </td>
          <td><p>Suspend transfers </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">START</a></p>         </td>
+         <td><p><a href="">START</a></p>         </td>
          <td><p>Restart transfers </p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">SUBMIT</a></p>         </td>
+         <td><p><a href="">SUBMIT</a></p>         </td>
          <td><p>Submit an end-of-transfer procedure</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">END</a></p>         </td>
+         <td><p><a href="">END</a></p>         </td>
          <td><p>Declare that flow is finished</p>         </td>
       </tr>
    </tbody>

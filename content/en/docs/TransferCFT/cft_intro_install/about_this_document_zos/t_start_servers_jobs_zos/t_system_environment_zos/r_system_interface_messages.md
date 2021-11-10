@@ -10,15 +10,9 @@
 
 -   Or the corresponding SGTRACE trace is active
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Certain OS specific messages that are auto-documented, CFDMnnx, CARMnnx, CCFTnnx, CFRNnnx, CFCAnnx, and CFTInnx, may not be detailed in this document. These messages are considered self-explanatory.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Certain OS specific messages that are auto-documented, CFDMnnx, CARMnnx, CCFTnnx, CFRNnnx, CFCAnnx, and CFTInnx, may not be detailed in this document. These messages are considered self-explanatory.
 
 ## System interface message definitions
 
@@ -41,10 +35,10 @@ The messages have the following format:
 Transfer CFT z/OS system interface messages
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Message</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Message</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -70,10 +64,10 @@ Transfer CFT z/OS system interface messages
 **Transfer CFT z/OS messages**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Message</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Message</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>

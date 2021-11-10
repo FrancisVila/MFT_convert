@@ -84,15 +84,9 @@ Set the RECFM parameter to:
 -   U for a file in
     undefined format
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Do not set the NTYPE parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Do not set the NTYPE parameter.
 
 For fixed and variable formats, set the NLRECL parameter to indicate
 the maximum length of records, excluding delimiters if any.

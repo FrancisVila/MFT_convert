@@ -60,10 +60,10 @@ cluster.
 View the command line description
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Command</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -118,10 +118,10 @@ scrgadm
 View the command line description
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Command</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -166,10 +166,10 @@ scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\
 View the command line description
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Command</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -213,10 +213,10 @@ The following is the declaration of the GDS for Transfer CFT:
 View the command line description
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Command</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

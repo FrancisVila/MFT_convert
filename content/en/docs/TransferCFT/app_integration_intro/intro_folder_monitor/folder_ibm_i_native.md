@@ -26,15 +26,9 @@ To monitor the creation of native files in a library:
 1.  Define the scanned library using the scanning directory parameter (<span class="code">SCANDIR</span>).
 2.  Create a working library to take the place of the working directory, and define (<span class="code">WORKDIR</span>).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Both libraries must exist, and you cannot mix libraries and IFS directories.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Both libraries must exist, and you cannot mix libraries and IFS directories.
 
 Example
 

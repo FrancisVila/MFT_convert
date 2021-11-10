@@ -31,10 +31,10 @@ The development kit used to integrate the <span class="mc-variable axway_variabl
 into several directories that include the CFTPGM library, which contains all library modules necessary for APIs and exits. These library modules are required to use the corresponding function:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Module (in C language)         </th>
-<th>Required to use Transfer CFT...         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Module (in C language)         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Required to use Transfer CFT...         </th>
       </tr>
    </thead>
    <tbody>

@@ -23,15 +23,9 @@
 
 -   Restart Transfer CFT
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Universal Agent installation is necessary only for end-to-end application monitoring.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Universal Agent installation is necessary only for end-to-end application monitoring.
 
 ## Procedure
 
@@ -56,15 +50,9 @@ You can set the Sentinel parameters in the unified configuration. If the Sentine
 
 For a description of the general parameters refer to the Event Router information in the *Sentinel* documentation.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the communication mode between Transfer CFT and the Event Router is an XCF type, and the TRKSVC is equal to 0, then you must define the Transfer CFT executable library as APF authorized.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the communication mode between Transfer CFT and the Event Router is an XCF type, and the TRKSVC is equal to 0, then you must define the Transfer CFT executable library as APF authorized.
 
 <span id="Activate the unified configuration file parameters SN05CONF"></span>
 
@@ -135,15 +123,9 @@ To create an overflow file (LOGGER) that is available for all SYSPLEX partition
     &Userstr is the structure name
     &LGRID is the logger file name
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must be a system administrator to perform these operations.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must be a system administrator to perform these operations.
 
 <span id="Overflow file definition"></span>
 
@@ -155,23 +137,23 @@ The following table describes the overflow file definition for the Logger file, 
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Event Router         </th>
-<th>TRKUTIL         </th>
-<th>Transfer CFT 2.7 and later         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th class="HeadE-Column1-Header1">Event Router         </th>
+<th class="HeadE-Column1-Header1">TRKUTIL         </th>
+<th class="HeadD-Column1-Header1">Transfer CFT 2.7 and later         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th>Configuration file         </th>
+<th class="BodyE-Column1-Body1">Configuration file         </th>
          <td>USEPARIN         </td>
          <td>TRKCONF         </td>
          <td>UCONF         </td>
       </tr>
       <tr>
-<th>Logger file         </th>
+<th rowspan="2" class="BodyE-Column1-Body2">Logger file         </th>
          <td><p>(AGENT)</p>
 <p>api_file=</p>         </td>
          <td>TRKTNAME=         </td>
@@ -195,12 +177,12 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Event Router         </th>
-<th>TRKUTIL         </th>
-<th>Transfer CFT 2.6.x         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th class="HeadE-Column1-Header1">Event Router         </th>
+<th class="HeadE-Column1-Header1">TRKUTIL         </th>
+<th class="HeadD-Column1-Header1">Transfer CFT 2.6.x         </th>
       </tr>
    </thead>
    <tbody>

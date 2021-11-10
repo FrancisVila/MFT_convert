@@ -148,15 +148,9 @@ This section describes the specific parameters to use Transfer CFT with VIPA. Yo
 
 #### Dynamic VIPA
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The LOWPORT parameter is deprecated.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The LOWPORT parameter is deprecated.
 
 Transfer CFT is fully compatible with dynamic VIPA. There are two methods available to use dynamic VIPA with Transfer CFT:
 
@@ -172,15 +166,9 @@ Transfer CFT is compatible with source VIPA. To enable, configure this feature i
 -   When SRCPORTS=(‘0 - 65535’), only Source VIPA is enabled.
 -   When SRCPORTS=(‘1 - 65535’), both Source and Dynamic VIPA are enabled.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For ascending compatibility with Transfer CFT parameters, LOWPORT=0 (or 1) is still supported in the CFTNET and will automatically set the SRCPORTS with the correct value, but only if it is not already set in the macro!         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For ascending compatibility with Transfer CFT parameters, LOWPORT=0 (or 1) is still supported in the CFTNET and will automatically set the SRCPORTS with the correct value, but only if it is not already set in the macro!
 
 A source CFTNET as below:
 
@@ -202,15 +190,9 @@ SRCPORTS = (0 - 65535),
 
 ...
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To avoid TCP/IP source port conflict with Sentinel, see the Sentinel Configuration instructions.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To avoid TCP/IP source port conflict with Sentinel, see the Sentinel Configuration instructions.
 
 ### TCP/IP stack affinity
 

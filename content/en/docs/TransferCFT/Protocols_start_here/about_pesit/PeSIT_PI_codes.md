@@ -228,10 +228,10 @@ of the PeSIT protocol and defines it using the TYPE parameter of
 the transfer command:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>TYPE parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TYPE parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -444,10 +444,10 @@ a connection type depending on the SROUT parameter of the CFTPROT
 command:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>SPROUT value         </th>
-<th>Access level         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">SPROUT value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Access level         </th>
       </tr>
    </thead>
    <tbody>

@@ -18,21 +18,15 @@ After installing Transfer CFT, you must customize this Transfer CFT from a stan
 
 The process consists of customizing the z/OS specific programs and members, checking the Transfer CFT configuration, and then executing the customized programs.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To execute the multi-node customization you require administrator rights.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To execute the multi-node customization you require administrator rights.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Step         </th>
-<th>Task         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1" style="font-weight: bold; font-style: italic">Step         </th>
+<th style="text-align: left;" class="HeadD-Column1-Header1" style="font-weight: bold; font-style: italic">Task         </th>
       </tr>
    </thead>
    <tbody>
@@ -62,12 +56,6 @@ The process consists of customizing the z/OS specific programs and members, chec
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.

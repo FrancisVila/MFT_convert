@@ -81,15 +81,9 @@ FMODEL
 
 The path to the file containing the models. If no model is found, the default format, which is the same as for the DISPLAY command, is used.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.7 and higher uses the <code> dspcnf.xml</code> model fileby default. To have the display format from a previous version, use FMODEL=NONE.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT 3.7 and higher uses the dspcnf.xml model fileby default. To have the display format from a previous version, use FMODEL=NONE.
 
 ROOTCID
 

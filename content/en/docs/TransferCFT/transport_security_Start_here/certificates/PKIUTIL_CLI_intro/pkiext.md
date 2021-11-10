@@ -119,12 +119,6 @@ You can use PKIEXT to export keys from the local database. To perform an extract
 
 <span class="autonumber">**Solution**: </span>Use the correct encoding and put the PKIPASSW in a file, for example, the ASCII string "<span class="code">password</span>" on an EBCDIC system. Then point the CFTPARM PKIPASSW to this file, for example<span class="code"> PKIPASSW=#|@/path/to/pkipass\_file</span>. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In earlier versions of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, the PKIPASSW parameter was used for encryption in multiple PKI commands. This functionality is now replaced by the UCONF <span class="code">crypto.key_fname</span> parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in multiple PKI commands. This functionality is now replaced by the UCONF crypto.key\_fname parameter.

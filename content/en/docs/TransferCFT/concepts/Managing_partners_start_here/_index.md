@@ -6,10 +6,10 @@
 CFT partner capabilities in the following topics:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Topic</p>         </th>
-<th><p>Describes...</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Topic</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Describes...</p>         </th>
       </tr>
    </thead>
    <tbody>

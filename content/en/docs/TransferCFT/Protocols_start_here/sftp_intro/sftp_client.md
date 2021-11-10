@@ -80,15 +80,9 @@ A CFTPART object represents an application, with one SFTP user per application 
 -   HOST:The remote SFPT server host
 -   PROT: Refers to the SFTP protocol
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The following sections describe the type of partner authentication.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The following sections describe the type of partner authentication.
 
 ## Set the type of authentication
 
@@ -106,15 +100,9 @@ Use  one of the following methods to configure the client password:
 
 -   Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in <span class="code">uconf:cft.server.authentication\_method </span>is used.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you do not define NSPASSW, <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> does not send a password to the server.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you do not define NSPASSW, Transfer CFT does not send a password to the server.
 
 
 

@@ -8,27 +8,21 @@ If you are installing <span class="mc-variable axway_variables.Component_Long_Na
 
 If you want to enable <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> during installation, please check that your license includes <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> documentation.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In this section, replace &lt;OS&gt; with your operating system and &lt;BN&gt; with the build number, for example, <span class="code">Transfer_CFT_3.7_Install_win-x86-64_BN12548232.exe</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In this section, replace &lt;OS> with your operating system and &lt;BN> with the build number, for example, Transfer\_CFT\_3.7\_Install\_win-x86-64\_BN12548232.exe.
 
 ### Installation overview
 
 This table presents a high-level overview of the installation process. By default, the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation uses a delivered configuration file called <span class="code">initialize.properties</span> that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Step         </th>
-<th>Details         </th>
-<th>More info         </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Step         </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Details         </th>
+<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">More info         </th>
       </tr>
    </thead>
    <tbody>
@@ -121,15 +115,9 @@ If you want to use symbolic links, the link path must use a slash delimiter as s
 
 To install Transfer CFT using symbolic links, you must use the silent mode, <span class="code">option '--mode unattended'</span>, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> home installation directory, to which the symbolic link points, prior to retrying the installation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Run as administrator
 

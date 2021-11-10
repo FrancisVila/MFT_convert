@@ -6,15 +6,9 @@
 
 ### pkifname
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.5, deprecated the use of referencing a certificate using the format (PKIFNAME=TXT://certificate).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In Transfer CFT 3.5, deprecated the use of referencing a certificate using the format (PKIFNAME=TXT://certificate).
 
 #### CFTPARM
 

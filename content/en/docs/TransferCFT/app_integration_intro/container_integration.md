@@ -64,12 +64,12 @@ The application and <span class="mc-variable suite_variables.TransferCFTName var
 ####  Architecture versus file storage summary
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Architecture</p>         </th>
-<th><p>Local volume</p>         </th>
-<th><p>Shared volume</p>         </th>
-<th><p>Cloud storage</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Architecture</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Local volume</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Shared volume</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Cloud storage</p>         </th>
       </tr>
    </thead>
    <tbody>

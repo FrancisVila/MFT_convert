@@ -17,15 +17,9 @@ Run the UNINSTAL JCL, which:
 2.  Removes sub-USS directories, Copilot, and Secure Relay.
 3.  Removes the distribution environment.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must manually modify the JCL, by default the distribution environment is not removed (see lines 000018, 000081, and 000082 in the example).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You must manually modify the JCL, by default the distribution environment is not removed (see lines 000018, 000081, and 000082 in the example).
 
 <span class="autonumber"></span>Example
 

@@ -5,12 +5,12 @@
 }Using the default certificates that are supplied with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is strongly discouraged in a production environment. You should use your own certificates to enhance security.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Type         </th>
-<th>Location         </th>
-<th>Certificate         </th>
-<th>Expires         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Location         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Certificate         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt">Expires         </th>
       </tr>
    </thead>
    <tbody>

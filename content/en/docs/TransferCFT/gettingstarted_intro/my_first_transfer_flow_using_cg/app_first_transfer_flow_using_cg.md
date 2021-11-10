@@ -17,11 +17,11 @@ Select **Products** on the top toolbar to open the **Product List** page.
 Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Transfer CFT          </th>
-<th>Host         </th>
-<th>Application name         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Transfer CFT          </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Host         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 8pt">Application name         </th>
       </tr>
    </thead>
    <tbody>

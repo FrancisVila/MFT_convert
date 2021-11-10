@@ -17,15 +17,10 @@ Use this field to define the file access control. You can use the UserCtrl param
     <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> checks the user access rights on the file to be transferred.
 -   NO: No check is performed.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td><em>Windows only</em> - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO, you cannot access files on a local or remote disk under another account.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> Windows only - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO, you cannot access files on a local or remote disk under another account.
 
 -   For details in UNIX, please see <a href="#Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
 -   For details in Windows, please see <a href="#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>

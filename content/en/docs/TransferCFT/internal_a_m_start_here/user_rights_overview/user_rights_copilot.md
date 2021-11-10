@@ -8,25 +8,19 @@ When using <span class="mc-variable suite_variables.Central_GovernanceName varia
 
 By default this parameter is set to NO and user authentication is controlled by <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>. Setting this to YES allows system user authentication via a client, such as web services, if there were a Central Governance failure. This setup requires that users be known on both the system and on <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, meaning an LDAP directory.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Configuration changes should be managed by <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Configuration changes should be managed by Central Governance.
 
 When using standalone <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
 
 When set to YES, user authentication is controlled by the system where Transfer CFT is installed and the Transfer CFT Copilot server starts a process under the connected user. Note that the default value is platform specific. When set to NO, actions made on the configuration are done with the user that **started** the Transfer CFT Copilot server.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default         </th>
       </tr>
    </thead>
    <tbody>
@@ -53,15 +47,9 @@ When set to YES, user authentication is controlled by the system where Transfer 
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> you must set appropriate user privileges. Otherwise, a user with extensive <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> privileges could modify the Transfer CFT configuration by connecting via the client, <em>even</em> if this user has restricted access to the runtime environment.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Using Central Governance you must set appropriate user privileges. Otherwise, a user with extensive Central Governance privileges could modify the Transfer CFT configuration by connecting via the client, even if this user has restricted access to the runtime environment.
 
 When createprocessasuser is set to YES, you must perform the OS specific tasks as described in the appropriate Installation Guide.
 

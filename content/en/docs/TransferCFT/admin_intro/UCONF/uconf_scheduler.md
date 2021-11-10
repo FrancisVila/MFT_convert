@@ -11,10 +11,10 @@ Steps overview
 3.  Configure the remaining parameters as described in the following table to define the new alias.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameters         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -75,15 +75,9 @@ This example defines a schedule where the value of cft.purge.sx can be changed d
 
         CFTUTIL reconfig type=UCONF
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   The same configuration value can be scheduled several times in a day.
 -   Scheduled periods for the same value can be contiguous, but they should not overlap.

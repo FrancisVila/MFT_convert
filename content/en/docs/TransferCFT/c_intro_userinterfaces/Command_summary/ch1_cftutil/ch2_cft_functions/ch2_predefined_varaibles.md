@@ -10,10 +10,10 @@ Each variable begins with the underscore character \_. For example, to display t
     PRINT MSG='Transfer IDTU value: %_CAT_IDTU%'
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Variable         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Variable         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

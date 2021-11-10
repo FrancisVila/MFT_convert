@@ -9,10 +9,10 @@ To assist Axway Customer Support, the CFTSUPPORT command collects useful informa
 Collected information for the Transfer CFT <span class="mc-variable Primary.For_OS400 variable">Transfer CFT IBM i</span> platform includes these different CFTPROD/SUPOUT file members:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Comment         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Comment         </th>
       </tr>
    </thead>
    <tbody>
@@ -115,30 +115,18 @@ Collected information for the Transfer CFT <span class="mc-variable Primary.For_
 
 The CFTSUPPORT command executes the CFTSUPPORT program, which retrieves information about the Transfer CFT and stores it in a tar file.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>CFTSUPPORT is currently not supported with an independent ASP (IASP).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> CFTSUPPORT is currently not supported with an independent ASP (IASP).
 
 You can use Transfer CFT IBM i command line to execute the command:
 
 1.  Enter the CFTSUPPORT command and press PF4.
 2.  Enter the IFS path where the CFTSUPPORT.tar file should be created. If the IFS path does not exist it will be created.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Alternatively, from the CFT menu select <strong>3. Administration commands</strong> then <strong>2. Submit CFT support request</strong>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Alternatively, from the CFT menu select 3. Administration commands then 2. Submit CFT support request.
 
 If the generated CFTSUPPORT.tar is too large, you can compress it prior to sending it to Axway support.
 

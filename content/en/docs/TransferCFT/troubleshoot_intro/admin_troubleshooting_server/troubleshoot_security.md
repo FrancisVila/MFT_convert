@@ -39,15 +39,10 @@ No diagnostic displays in catalog, but in the log a message similar to the follo
 
 When using mutual authentication, the client does not have a certificate to provide to the remote SSL server . For example, the client has no user certificate corresponding to one of the CAs provided by the server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>Analyze the situation on the partner side and correct depending on the server.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Analyze the situation on the partner side and correct depending on the server.
 
 ### No shared cipher
 
@@ -75,15 +70,10 @@ This error may be related to the mode of insertion of client certificate, which 
     CFTH11E Error Opening session <PART=SEID EV=VVTIMO ST=SUP01>
     CFTT75E connect reject <IDTU=A00002EN PART=SEID IDF=D_615M IDT=J0615002 260 TLSDOWN>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>A conversion of the certificate format is required.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> A conversion of the certificate format is required.
 
 #### No private key
 
@@ -99,15 +89,10 @@ This failure occurs during the handshake phase, and is related to using a user c
     Requester CFTT56I file closed <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423>
     Requester CFTT54I file deselected <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>Insert the user certificate’s private key in the PKI based.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Insert the user certificate’s private key in the PKI based.
 
 ## General errors
 

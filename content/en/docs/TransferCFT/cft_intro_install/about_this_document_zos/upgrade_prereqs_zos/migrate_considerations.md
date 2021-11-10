@@ -7,10 +7,10 @@
 **Transfer CFT file IDs**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File ID         </th>
-<th>Migrate or upgrade procedures         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Migrate or upgrade procedures         </th>
       </tr>
    </thead>
    <tbody>

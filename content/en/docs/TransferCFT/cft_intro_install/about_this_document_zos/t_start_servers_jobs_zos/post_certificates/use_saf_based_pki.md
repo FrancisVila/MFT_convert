@@ -13,12 +13,6 @@
 
 1.  Define the CFTSSL PARM fields or ROOTCID/USERCID fields.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>A SAF PKI implementation in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> A SAF PKI implementation in Transfer CFT requires that the ‘ring-specific profile checking' (RDATALIB class) be activated.

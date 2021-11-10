@@ -7,13 +7,13 @@
 ## Single node deployment
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Usage         </th>
-<th>Process         </th>
-<th>Configurable         </th>
-<th>Configuration Parameter         </th>
-<th>Network Interface         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Usage         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Process         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configurable         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configuration Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Network Interface         </th>
       </tr>
    </thead>
    <tbody>
@@ -93,13 +93,13 @@
 ## Multi-node deployment
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Usage         </th>
-<th>Process         </th>
-<th>Configurable         </th>
-<th>Configuration Parameter         </th>
-<th>Network Interface         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Usage         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Process         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configurable         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configuration Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Network Interface         </th>
       </tr>
    </thead>
    <tbody>

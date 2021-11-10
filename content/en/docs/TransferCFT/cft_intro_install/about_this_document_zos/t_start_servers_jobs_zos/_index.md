@@ -7,15 +7,9 @@
 -   [Starting Transfer CFT JOB CFTMAIN](#Starting%20the%20CFTMAIN%20example)
 -   [Transfer CFT user interface server commands](#Transfer%20CFT%20user%20interface%20server)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you installed <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> along with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, the uconf <span class="code">copilot.misc.cftstart.enable</span> is automatically set to <span class="code">Yes</span>. This allows <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> to control stopping and starting your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you installed Transfer CFT along with Central Governance, the uconf copilot.misc.cftstart.enable is automatically set to Yes. This allows Central Governance to control stopping and starting your Transfer CFT.
 
 <span id="Starting the CFTMAIN example"></span>
 
@@ -27,15 +21,9 @@ You can perform Transfer CFT commands using the CFTUTIL utility, the <span class
 
 Start the CFTMAIN JCL in the target.INSTALL library.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>CFTMAIN must be APF authorized to start if the UCONF <span class="code">cft.mvs.monitor.check_apf </span>variable is set to <span class="code">Yes</span>. Otherwise, the Transfer CFT log displays <span class="code">CFTI01F CFT error CFT is not APF-authorized</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> CFTMAIN must be APF authorized to start if the UCONF cft.mvs.monitor.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI01F CFT error CFT is not APF-authorized.
 
 ## Stop Transfer CFT 
 
@@ -86,27 +74,15 @@ COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot ser
 
 When the <span class="code">copilot.misc.CreateProcessAsUser</span> variable is set, STEPLIB or JOBLIB can be non-APF. Only a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>/PassPort user can sign on to Copilot user interface.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When the ‘cft.mvs.copilot.check_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
 LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>CFTCOPL must be APF authorized to start if the UCONF <span class="code">cft.mvs.copilot.check_apf </span>variable is set to <span class="code">Yes</span>. Otherwise, the Transfer CFT log displays <span class="code">CFTI42E Copilot must be APF-authorized</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 ### Stopping user interface (Copilot) server
 

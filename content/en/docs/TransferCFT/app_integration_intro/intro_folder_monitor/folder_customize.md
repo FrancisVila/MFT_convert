@@ -15,11 +15,11 @@ The filter\_type parameter value indicates how the comparison of file names agai
 A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Character         </th>
-<th>Description         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -45,11 +45,11 @@ A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the ques
 The WILDMAT pattern-matching filter offers more operations than the STRJCMP filter\_type. The WILDMAT filter characters are interpreted as follows, where x and y are used to indicate any character:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Character         </th>
-<th>Description         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -106,11 +106,11 @@ EREGEX (extended regular expressions) is the use of special characters and strin
 In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Symbol         </th>
-<th>Indicates         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbol         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Indicates         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -172,15 +172,9 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to <a href="http://pubs.opengroup.org/onlinepubs/009696899/basedefs/xbd_chap09.html">Regular expressions</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> EREGEX refers to POSIX Extended Regular Expression. There are multiple tutorials available online to aid in creating search patterns; for additional information on expression syntax please refer to Regular expressions.
 
 ## Use case
 

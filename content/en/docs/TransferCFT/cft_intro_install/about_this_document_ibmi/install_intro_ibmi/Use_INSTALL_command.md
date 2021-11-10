@@ -12,15 +12,9 @@ After uploading the Transfer CFT IBM i CFT33XL file to the target location, in t
 
 ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)     
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The Transfer CFT program library and Transfer CFT production library are created if they do not exist prior to performing this procedure.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The Transfer CFT program library and Transfer CFT production library are created if they do not exist prior to performing this procedure.
 
 During the installation you are prompted to configure your installation, for example:
 
@@ -60,15 +54,9 @@ And lastly, you can configure:
 
 Enter the INSTALL command and press <span class="span_16">PF4</span> to display the Transfer CFT IBM i installation screen.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Pressing ENTER at this stage performs an install using the default values. You can override any default value, as needed.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Pressing ENTER at this stage performs an install using the default values. You can override any default value, as needed.
 
 
 
@@ -76,22 +64,10 @@ Enter the INSTALL command and press <span class="span_16">PF4</span> to display 
      
     Install on an independent ASP. . . . . . . '2' 1:Yes / 2:No
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To perform a silent installation, use the <strong>CFT Update</strong> menu as shown in <a href="../perform_auto_installation">Perform_auto_installation.htm</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To perform a silent installation, use the CFT Update menu as shown in Perform\_auto\_installation.htm.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The encryption password to enter for an installation contains special characters. To avoid an issue during installation, please ensure that the encoding of your terminal/keyboard is configured with CCSID 37.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The encryption password to enter for an installation contains special characters. To avoid an issue during installation, please ensure that the encoding of your terminal/keyboard is configured with CCSID 37.

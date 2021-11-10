@@ -46,16 +46,10 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 -   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="mc-variable Primary.Transfer_CFT version_long variable">3.9</span> Release Notes
 -   <span class="mc-variable axway_variables.Platform_or_Suite_Long_Name variable">AMPLIFY</span> Supported Platforms Guide
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This document makes references to HP Nonstop documents, such as the <em>EMS Manuel</em>. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> This document makes references to HP Nonstop documents, such as the EMS Manuel. For any HP documentation referenced in this guide, you should check for the most recent version on the HP Support Center.
 
 ## Support services
 
-The <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email [support@axway.com](#) or, for your local support telephone number, visit <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.
+The <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.

@@ -5,10 +5,10 @@
 }## Diagi=302 
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Event</p>         </th>
-<th><p>Consequence</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Event</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Consequence</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -33,10 +33,10 @@ The network link can break  during the connection phase or the transfer phase. 
  Most issues come from an unreachable address or port. To solve or avoid these issues:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Check the issue and solutions</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Check the issue and solutions</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -118,11 +118,11 @@ HOST value (CFTNET object).yes (the default value)</li>
 ## Diagi=26x
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Code</p>         </th>
-<th><p>Event</p>         </th>
-<th><p>Consequence</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Code</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Event</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Consequence</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -147,10 +147,10 @@ In Transfer CFT, the SSL/TLS protocol is configured through:</p></li>
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>SSL objects</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>SSL objects</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -215,11 +215,11 @@ Information and data are exchanged during these phases. If an error occurs, a 23
 To find the cause of the error, it is highly recommended that you use the CFTATM traces with protocol trace on the server and on the client.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Code</p>         </th>
-<th><p>Event</p>         </th>
-<th><p>Consequence</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Code</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Event</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Consequence</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -244,11 +244,11 @@ H status - ABORT, EXECE</p>         </td>
 The 230 diagnostic codes may have different diagnostic protocols formats, for example:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Diagnostic codes</p>         </th>
-<th><p>Event</p>         </th>
-<th><p>Solution</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Diagnostic codes</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Event</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Solution</p>         </th>
       </tr>
    </thead>
    <tbody>

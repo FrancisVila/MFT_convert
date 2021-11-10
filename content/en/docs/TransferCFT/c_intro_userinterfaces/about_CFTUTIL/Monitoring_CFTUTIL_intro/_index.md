@@ -58,7 +58,7 @@ in the command.</p>         </td>
 non-ciphered text, even if these records are ciphered.</p>         </td>
       </tr>
       <tr>
-         <td><p><a href="#">SWAITCAT
+         <td><p><a href="">SWAITCAT
 - Wait before processing</a></p>         </td>
          <td><p>The SWAITCAT command enables a client (CFTUTIL/CAPI/...)
 to wait until a given transfer reaches a particular predefined state before

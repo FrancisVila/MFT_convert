@@ -18,11 +18,11 @@
 Transfer CFT delivers a sample source written in C language called <span class="code">exacct.c</span> as well as a compilation procedure, which is system dependent:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>System         </th>
-<th>File location         </th>
-<th>Build command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">System         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File location         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Build command         </th>
       </tr>
    </thead>
    <tbody>

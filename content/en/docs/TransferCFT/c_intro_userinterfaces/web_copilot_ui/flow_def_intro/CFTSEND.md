@@ -15,10 +15,10 @@ topics
     send templates](../../../../concepts/cft_configuration_concepts_start_here/default_send_template_concepts)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -29,15 +29,10 @@ topics
       <tr>
          <td>ARCHIVEFNAME         </td>
          <td><p>The archived source file name after transfer completion if FACTION=ARCHIVE.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">fname </span>and <span class="code">archivefname </span>must be on the same volume (all platforms).         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The fname and archivefname must be on the same volume (all platforms).</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p><a href="../../../command_summary/parameter_intro/comment">COMMENT</a></p>         </td>
@@ -277,15 +272,10 @@ the log file.</p>         </td>
          <td><p><a href="../../../command_summary/parameter_intro/selfname">SELFNAME</a> </p>         </td>
          <td><p>Name of the file that contains the list of files selected
 for sending.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When using SELFNAME and FACTION=DELETE, the FNAME must be a directory and not a MASK. For example, #dir is deleted, whereas #dir/* is ignored.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><a href="../../../command_summary/parameter_intro/sourceappl">SOURCEAPPL</a>         </td>
@@ -345,10 +335,10 @@ rather than in the CFTSEND object. Click on the links in the following
 table for examples and details.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Format </p>         </th>
-<th><p>Processing </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Format </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Processing </p>         </th>
       </tr>
    </thead>
    <tbody>

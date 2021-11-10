@@ -23,10 +23,10 @@ The following table indicates the maximum value supported for each system, where
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Operating system </p>         </th>
-<th><p>Maximum value </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Operating system </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Maximum value </p>         </th>
       </tr>
    </thead>
    <tbody>

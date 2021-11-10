@@ -7,10 +7,10 @@
 ### Enable IPv6
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -24,15 +24,10 @@
 <p>When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
-         <td><table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>It is recommended that you do <strong>not</strong> set<span class="code"> ipv6.disable_listen</span> to <span class="code">No</span>, and <span class="code">ipv6.disable_connect</span> to <span class="code">Yes</span>.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+         <td><blockquote>
+<p><strong>Note:</strong></p>
+<p>It is recommended that you do not set ipv6.disable_listen to No, and ipv6.disable_connect to Yes.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
@@ -42,11 +37,11 @@
 Refer to the [UCONF parameters](../uconf_directory) table <span class="code">ipv6.set\_ai\_xxx</span>.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">Default         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

@@ -4,25 +4,14 @@
     "weight": "240"
 }In the event that after upgrading a version you need to revert back to the previous version, you can perform the steps in this section using either the [automatic](#Automati) procedure or the [manual](#Manually) roll back and restore catalog procedure.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you executed transfers in <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> the new version that use parameters or metadata not available in the previous version, when you rollback the new metadata is lost.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you executed transfers in Transfer CFT the new version that use parameters or metadata not available in the previous version, when you rollback the new metadata is lost.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>CFTPGM is the standard name for the program library, and CFTPROD is the standard name for the library where the configuration files are usually located.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> CFTPGM is the standard name for the program library, and CFTPROD is the standard name for the library where the configuration files are usually located.
 
 ## Before you start
 
@@ -80,15 +69,9 @@ Start the rollback process by uploading the Transfer CFT installation package in
 
         ADDLIBLE LIB(CFTTMP) POSITION(*FIRST)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The user performing the upgrade requires the same rights as for a regular installation or update (*JOBCTL, *SPLCTL, and *ALLOBJ).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
 
 1.  Call the UPGRADE command for your <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>. Applying an UPGRADE of a version older than the version of your <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> rolls it back to this older version, but keeps your configuration.
 
@@ -113,21 +96,16 @@ The following fields are mandatory; you should complete as per your system detai
     ‘2’: Indicates that you are NOT rolling back to a previous <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> version (NO).
 -   SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>When performing a rollback, the default value of the SAVF field MUST match the version you want to roll back to. Please determine the name of the SAVF corresponding to the version you want to roll back to, as shown below:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> When performing a rollback, the default value of the SAVF field MUST match the version you want to roll back to. Please determine the name of the SAVF corresponding to the version you want to roll back to, as shown below:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Transfer CFT version</p>         </th>
-<th><p>SAVF name</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Transfer CFT version</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>SAVF name</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -150,15 +128,10 @@ The following fields are mandatory; you should complete as per your system detai
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>The UPGRADE command is available as of Transfer CFT 3.7.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> The UPGRADE command is available as of Transfer CFT 3.7.
 
 ## Roll back to a version that predates the UPGRADE command
 

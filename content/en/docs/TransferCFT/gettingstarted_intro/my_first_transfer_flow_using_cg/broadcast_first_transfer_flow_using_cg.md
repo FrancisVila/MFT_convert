@@ -15,11 +15,11 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <img src="/Images/TransferCFT/Broadcast_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a file to multiple Targets" />
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>  Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th style="text-align: left;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -91,11 +91,11 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>  Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th style="text-align: center;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
+<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

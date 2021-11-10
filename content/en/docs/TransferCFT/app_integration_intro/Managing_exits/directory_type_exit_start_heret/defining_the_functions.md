@@ -61,10 +61,10 @@ The following table lists all the parameters of the
 initialization function.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -161,10 +161,10 @@ typedef long (\*EXA)(char\*,char\*);
 ## User Function
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -218,10 +218,10 @@ long usrfct (     char
 Interface files are listed in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">File         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

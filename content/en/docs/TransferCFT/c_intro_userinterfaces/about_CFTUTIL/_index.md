@@ -33,15 +33,9 @@ are described the next topic, *[Typographical
 conventions](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions).* These conventions specify the syntax used in the
 description of Transfer CFT commands.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When logging on the interface, the username is limited to 32 characters.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When logging on the interface, the username is limited to 32 characters.
 
 <span id="Using_interactive_mode"></span>
 
@@ -77,10 +71,10 @@ In this syntax:
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>OS</p>         </th>
-<th><p> file_symb</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>OS</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p> file_symb</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -191,15 +185,9 @@ CFTUTIL can be used in three different modes:
 
     > CFTUTIL [to start CFTUTIL]> /END [to quit CFTUTIL]
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In all modes you can use the command <span class="code">EXIT </span>to quit CFTUTIL.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In all modes you can use the command EXIT to quit CFTUTIL.
 
 ## Use the help command
 

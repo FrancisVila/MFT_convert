@@ -34,7 +34,7 @@ A user agent is usually a web browser. The person who uses the browser can be re
 To configure and use SAML SSO with <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, you must:
 
 -   Have a third-party IdP, such as Keycloak, installed and running.
--   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](#), or navigate locally in your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation to:
+-   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](), or navigate locally in your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation to:
     -   distrib/template/conf/roles-smp.conf
     -   runtime/conf/roles-smp.conf
 -   If you use <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with Flow Manager, you must manually set the uconf parameter am.type=saml on each <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> after registering.
@@ -46,7 +46,7 @@ This section describes the UCONF parameter settings required for SAML implement
 
 ## Set up SAML 
 
-Configure the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server](#).
+Configure the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server]().
 
 Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
 PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
@@ -54,12 +54,12 @@ PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
 Set the following UCONF parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UCONF value         </th>
-<th>Default         </th>
-<th>Description         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -93,21 +93,16 @@ Set the following UCONF parameters.
          <td>am.type         </td>
          <td>-         </td>
          <td><p>Set the am.type=saml</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you set SAML as the access management type, <span class="code">am.type=saml</span>, you must use bearer authentication with REST API.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If you set SAML as the access management type, am.type=saml, you must use bearer authentication with REST API.</p>
+</blockquote>         </td>
          <td>saml         </td>
       </tr>
    </tbody>
 </table>
 
-Define the roles that you require for your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> users. To view the CFTROLES sample, click [here](#), and edit using your favorite text editor.
+Define the roles that you require for your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> users. To view the CFTROLES sample, click [here](), and edit using your favorite text editor.
 
 Start the Copilot server.
 

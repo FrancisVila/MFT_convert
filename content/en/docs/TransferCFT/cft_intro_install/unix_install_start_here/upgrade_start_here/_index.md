@@ -22,15 +22,9 @@ Upgrading, as compared to migration, has the following advantages:
 -   You can perform this automatically using the Installer, and you can revert to previous state if needed
 -   Scripts and APIs remain intact and only require a recompilation for the APIs
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot perform an upgrade on versions older than version 3.1.3.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot perform an upgrade on versions older than version 3.1.3.
 
 Transfer CFT 3.8 and higher
 
@@ -40,15 +34,9 @@ After performing a Transfer CFT upgrade, you must execute the <span class="code
 
 A migration means that an initial <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is installed in a directory that is not removed or overwritten by the procedure.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When migrating from a previous version of <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, be sure to check the <span class="mc-variable suite_variables.DocTypeRelNotes variable">Release Notes</span> for new as well as deprecated features and supported platforms for that release.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When migrating from a previous version of Transfer CFT, be sure to check the Release Notes for new as well as deprecated features and supported platforms for that release.
 
 The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> is as follows:
 
@@ -66,15 +54,9 @@ Central Governance simplifies the management of Transfer CFT and provides identi
 
 Central governance allows you to update to the latest Transfer CFT Service Pack or patch, or use the installation package to upgrade <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> (as of <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.4) to a new <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> version. However, you cannot migrate Transfer CFT using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot perform an upgrade from <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> on the following platforms: z/OS or IBM i.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot perform an upgrade from Central Governance on the following platforms: z/OS or IBM i.
 
 ## Prerequisites
 

@@ -5,14 +5,14 @@
 }## Roles
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -43,14 +43,14 @@
 ## Senders and receivers
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -126,14 +126,14 @@
 The product that sends the events is identified with the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -165,14 +165,14 @@ The product that sends the events is identified with the following:
 ## Transfer users
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -236,14 +236,14 @@ The product that sends the events is identified with the following:
 ## Transfer identification
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -358,14 +358,14 @@ The product that sends the events is identified with the following:
 ## Transfer validity periods
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p>product</p>         </th>
       </tr>
    </thead>
@@ -404,14 +404,14 @@ The product that sends the events is identified with the following:
 ## Transfer dates and times
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -551,14 +551,14 @@ The product that sends the events is identified with the following:
 ## Transfer protocols
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -610,14 +610,14 @@ The product that sends the events is identified with the following:
 ## Transfer options
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -695,14 +695,14 @@ The product that sends the events is identified with the following:
 ## Transfer size
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -712,15 +712,10 @@ The product that sends the events is identified with the following:
          <td><p>Integer</p>         </td>
          <td><p>-</p>         </td>
          <td><p>Size of the transferred file. This size is expressed in bytes.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.</p>
+</blockquote>         </td>
          <td><p>FSPACE</p>         </td>
       </tr>
       <tr>
@@ -728,15 +723,10 @@ The product that sends the events is identified with the following:
          <td><p>Integer</p>         </td>
          <td><p>-</p>         </td>
          <td><p>Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote>         </td>
          <td><p>NCAR</p>         </td>
       </tr>
    </tbody>
@@ -745,14 +735,14 @@ The product that sends the events is identified with the following:
 ## The structure and content of transfers
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -795,15 +785,10 @@ The product that sends the events is identified with the following:
          <td><p>Integer</p>         </td>
          <td><p> </p>         </td>
          <td><p>Number of record in the file. This size is expressed in bytes.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote>         </td>
          <td><p>FREC</p>         </td>
       </tr>
       <tr>
@@ -852,14 +837,14 @@ The product that sends the events is identified with the following:
 ## Other attribute
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>

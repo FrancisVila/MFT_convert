@@ -13,10 +13,10 @@ To customize the hosts in your setup and submit the customization, perform the t
 "How to" instructions for configuring LPAR options and submitting the VARY OBEYFILE commands are provided in the sections following this table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Step         </th>
-<th>Task         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-weight: bold; font-style: italic">Step         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-weight: bold; font-style: italic">Task         </th>
       </tr>
    </thead>
    <tbody>
@@ -126,15 +126,9 @@ This means that in the example configuration, the cluster will work with the mac
 
 For each listening port configuration (for the SYSPLEX distributor incoming calls), you can have one dvipa address for Copilot, where there is one Copilot for each host.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There is no PORT statement for Copilot. An external Copilot passes via the SYSPLEX distributor directly to the host Copilot. There is one Copilot per host, regardless of the number of Transfer CFT nodes on the host.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There is no PORT statement for Copilot. An external Copilot passes via the SYSPLEX distributor directly to the host Copilot. There is one Copilot per host, regardless of the number of Transfer CFT nodes on the host.
 
 Two command samples contain the VIPAdistribute Statement, which concerns the SYSPLEX distributor. There is also a command also for Copilot.
 

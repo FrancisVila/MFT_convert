@@ -18,23 +18,23 @@
 This table lists the main parameters that you must define in order to communicate with an Event via TCP, and uses TRKTYPE=TCP as the default value.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Event Router         </th>
-<th>TRKUTIL         </th>
-<th>Transfer CFT         </th>
+<th class="HeadE-Column1-Header1">          </th>
+<th class="HeadE-Column1-Header1">Event Router         </th>
+<th class="HeadE-Column1-Header1">TRKUTIL         </th>
+<th class="HeadD-Column1-Header1">Transfer CFT         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th>Configuration file         </th>
+<th class="BodyE-Column1-Body1">Configuration file         </th>
          <td>USEPARIN         </td>
          <td>TRKCONF         </td>
          <td>UCONF         </td>
       </tr>
       <tr>
-<th>TCP definition         </th>
+<th rowspan="3" class="BodyE-Column1-Body2">TCP definition         </th>
          <td><p>(AGENT)</p>
 <p>queue=”NOQ”</p>         </td>
          <td>TRKTYPE=TCP         </td>
@@ -63,11 +63,11 @@ This table lists the main parameters that you must define in order to communicat
 The table below lists the UCONF values that are used in Transfer CFT to define Sentinel interoperability. You can set these UCONF values using either the Copilot UI or command line.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Unified configuration parameter         </th>
-<th>Default value         </th>
-<th><p>Former Sentinel parameter name</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Former Sentinel parameter name</p>
 <p>trkapi.cfg</p>         </th>
       </tr>
    </thead>
@@ -222,12 +222,12 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>ER         </th>
-<th>TRKUTIL         </th>
-<th>Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ER         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TRKUTIL         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Transfer CFT         </th>
       </tr>
    </thead>
    <tbody>
@@ -269,23 +269,23 @@ The following table describes the overflow file definition for the Logger file. 
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Event Router         </th>
-<th>TRKUTIL         </th>
-<th>Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event Router         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TRKUTIL         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Transfer CFT         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th>Configuration file         </th>
+<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Configuration file         </th>
          <td>USEPARIN         </td>
          <td>TRKCONF         </td>
          <td>UCONF         </td>
       </tr>
       <tr>
-<th>Logger file         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Logger file         </th>
          <td><p>(AGENT)</p>
 <p>api_file=</p>         </td>
          <td>TRKTNAME=         </td>

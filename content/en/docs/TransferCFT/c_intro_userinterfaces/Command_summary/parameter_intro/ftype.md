@@ -14,24 +14,18 @@
 
 The file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the <strong>newline</strong> character (EOL character) can be the CRLF (x0Dx0A) or LF (x0A) on Windows, or LF (x0A) on UNIX systems.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be the CRLF (x0Dx0A) or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
 
 UNIX<span id="UNIX_ftype"></span>
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FCODE         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FCODE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -80,11 +74,11 @@ See also, [UNIX &gt; Transferable files](../../../../cft_intro_install/unix_inst
 Windows
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FTYPE </p>         </th>
-<th><p>FCODE </p>         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FCODE </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -136,18 +130,18 @@ considered an EOF character)         </td>
 
 \*Supports ASCII file handling (X'1A') (SEND/RECV FTYPE=F).
 
-See also, [Windows &gt; Transferable files](#).
+See also, [Windows &gt; Transferable files]().
 
 z/OS
 
 Implicit indicates that the FTYPE is automatically detected by the OS.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FCODE         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FCODE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -197,11 +191,11 @@ Implicit indicates that the FTYPE is automatically detected by the OS.
 <span class="autonumber"></span>HFS file characteristics
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FCODE         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FCODE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>
@@ -225,15 +219,9 @@ Implicit indicates that the FTYPE is automatically detected by the OS.
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>FTYPE values are OS specific. Refer to the Transfer CFT z/OS documentation for more information.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> FTYPE values are OS specific. Refer to the Transfer CFT z/OS documentation for more information.
 
 IBM i (OS400)
 
@@ -241,22 +229,16 @@ Native files
 
 The following table lists the different types of files that can be used according to the type of data to transfer.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Bold values indicate a recommended combination. For example, <strong>FTYPE=D</strong> and <strong>FRECFM=V</strong>, are the recommended settings for PF-DTA files with variable data.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Bold values indicate a recommended combination. For example, FTYPE=D and FRECFM=V, are the recommended settings for PF-DTA files with variable data.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>FTYPE</p>         </th>
-<th><p>FRECFM</p>         </th>
-<th><p>Supported files and data organizations (if applicable).</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Supported files and data organizations (if applicable).</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -302,11 +284,11 @@ Default FTYPE or FRECFM value
 The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to <span class="code">undefined</span>, meaning that the transfer in emission takes the value of both the file type and the member content..
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p> </p>         </th>
-<th><p>Default FTYPE</p>         </th>
-<th><p>Default FRECFM</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p> </p>         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default FTYPE</p>         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default FRECFM</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -340,11 +322,11 @@ IFS files
 The following table lists the different types of files that can be used according to the type of data to transfer when using IFS.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FRECFM         </th>
-<th>Type of file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FRECFM         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of file         </th>
       </tr>
    </thead>
    <tbody>
@@ -373,39 +355,28 @@ The following table lists the different types of files that can be used accordin
          <td>‘V’, ‘F’, ‘ ’         </td>
          <td><p>Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.</p>
 <p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>This transfer mode is not available for native side transfers.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>This transfer mode is not available for native side transfers.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>FTYPE values are OS specific. Refer to the <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_os400_en_PDF/resource/TransferCFT_InstallationGuide_os400_en.pdf">Transfer CFT IBM i Installation and Operations Guide</a> for more information.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> FTYPE values are OS specific. Refer to the Transfer CFT IBM i Installation and Operations Guide for more information.
 
 **HP NonStop**
 
 For Unix files, use the values in the Unix [table](#UNIX_ftype) above. For native HP NonStop files, the values are as follows.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FCODE         </th>
-<th>Type of sent file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FCODE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type of sent file         </th>
       </tr>
    </thead>
    <tbody>

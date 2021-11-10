@@ -39,15 +39,9 @@ Action on the file after a send transfer:
 **\[FACTION = {<span style="text-decoration: underline;">VERIFY</span>
 | DELETE | ERASE | RENAME | RETRYRENAME }\]**
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The RENAME option is only available on Unix platforms.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The RENAME option is only available on Unix platforms.
 
 Action on a file before a receive transfer except when using RENAME or RETRYRENAME, which are post transfer actions.
 
@@ -69,22 +63,16 @@ Requirements when using RENAME or RETRYRENAME:
 
 The following table shows the combined effect of the FDISP and FACTION parameters when used in a RECV command.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There no impact on FDISP when used in combination with RENAME or RETRYRENAME.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CFTRECV, FDISP         </th>
-<th>CFTRECV, FACTION         </th>
-<th>Comments         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FDISP         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FACTION         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Comments         </th>
       </tr>
    </thead>
    <tbody>
@@ -127,10 +115,10 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 </table>
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

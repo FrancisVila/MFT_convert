@@ -23,10 +23,10 @@ If the partner is:
 ### Partner information fields
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field </p>         </th>
-<th><p>Explanation </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -208,10 +208,10 @@ except the general information fields or the ptype and ntype fields.
 Field descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field </p>         </th>
-<th><p>Explanation </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -263,10 +263,10 @@ and protocol connections will not be able to be established<br />
 The maximum length taken into account for the remote partner address depends
 on the network type.</p>
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Network type</p>         </th>
-<th><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Network type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Length</p>         </th>
       </tr>
    </thead>
    <tbody>

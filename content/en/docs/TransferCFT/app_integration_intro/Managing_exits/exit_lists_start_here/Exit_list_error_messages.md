@@ -9,12 +9,12 @@ CFTT60I PART= &part IDF=
 &idf IDT= &idt, &messageLog
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>DiagP<br />
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>DiagP<br />
 Catalog </p>         </th>
-<th><p>&amp;messageLog </p>         </th>
-<th><p>Comment </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>&amp;messageLog </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment </p>         </th>
       </tr>
    </thead>
    <tbody>

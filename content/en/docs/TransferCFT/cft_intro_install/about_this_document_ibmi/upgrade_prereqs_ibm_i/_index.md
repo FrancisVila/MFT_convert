@@ -27,15 +27,9 @@ This mode has the following advantages:
 -   The new installation occurs in a new location, and the existing configuration in the existing Transfer CFT environment is not affected.
 -   You can choose to use either of the versions, if needed, in case of an issue with one of the installations.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Configuration and data, such as the catalog, are in two separate locations and data are not shared.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Configuration and data, such as the catalog, are in two separate locations and data are not shared.
 
 This mode has the following restriction:
 
@@ -68,15 +62,9 @@ This mode has the following advantages:
 -   You require a new license key if you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You require as many keys as instances of <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You require as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
 ## Prior to upgrading with a service pack
 
@@ -91,15 +79,9 @@ The CFTPROD library contains your personal data and should not be cleared. Data 
 -   Scripts, procedures, files used by the Transfer CFT Enabler OS/400 Connector
 -   Internal Access Management files
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The libraries CFTPGM.O and CFTPROD.O enable a synchronized and rapid Transfer CFT restart if required.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The libraries CFTPGM.O and CFTPROD.O enable a synchronized and rapid Transfer CFT restart if required.
 
 ## Upgrade and migration tips and tricks
 

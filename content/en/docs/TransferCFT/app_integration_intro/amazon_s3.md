@@ -38,11 +38,11 @@
 The following table describes Transfer CFT's Amazon S3-related parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Type         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -51,15 +51,10 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
          <td>string         </td>
          <td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span class="code">/etc/ssl/certs/ca-certificates.crt</span>) or to a directory containing the CA certificates (for example, <span class="code">/etc/ssl/certs/</span>), which are stored individually with their filenames in a hash format.</p>
 <p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span class="code">cacert </span>and <span class="code">capath </span>options.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can set this parameter on UNIX systems, however it is not applicable on Windows.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>You can set this parameter on UNIX systems, however it is not applicable on Windows.</p>
+</blockquote>
 <p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>         </td>
       </tr>
       <tr>
@@ -177,11 +172,11 @@ You can enter your access key pair information in this file using the following 
 You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions for S3 storage:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter<span id="storageaccount"></span>         </th>
-<th>Type         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter<span id="storageaccount"></span>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

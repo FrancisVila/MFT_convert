@@ -38,13 +38,13 @@ The following SSL crypto devices and related crypto algorithms are available for
 This table lists, for each possible SSL-protocol cryptographic function and Pki.type used, whether a crypto device used.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>TLS protocol exchange         </th>
-<th>Cryptographic function         </th>
-<th>Pki.type         </th>
-<th>z9 - z10         </th>
-<th>z196         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TLS protocol exchange         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Cryptographic function         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Pki.type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">z9 - z10         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">z196         </th>
       </tr>
    </thead>
    <tbody>

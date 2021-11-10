@@ -10,15 +10,9 @@
 -   [Directory configuration examples](#Director)
 -   [File-system event monitoring](#File-sys)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in <a href="../migrate_uconf_cftfolder">Migrate to CFTFOLDER folder monitoring</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There are two ways to implement Transfer CFT folder monitoring, either using UCONF or Transfer CFT objects. We recommend the CFTFOLDER method of configuring folder monitoring. Users that presently are using UCONF to manage folder monitoring can migrate to a CFTFOLDER configuration as described in Migrate to CFTFOLDER folder monitoring.
 
 <span id="Configur"></span>
 
@@ -64,12 +58,12 @@ Use the following UCONF parameters to configure folder monitoring for each dire
 Parameter descriptions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UCONF parameter         </th>
-<th>Type         </th>
-<th><p>Default</p>         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -117,15 +111,11 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
 <li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>  Never delete any .met files.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Caution  
+  Never delete any .met files.</p>
+</blockquote>
 <p>*See NOTE.</p>         </td>
       </tr>
       <tr>
@@ -235,15 +225,10 @@ If you have more than one Folder to monitor, use a space between each logical va
 <li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
 <li>No: Files are not resubmitted, regardless of changes.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The file is resubmitted after <em>any</em> change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p>folder_monitoring.folders.</p>
@@ -307,15 +292,9 @@ The second one, when present, defines the separator after the timestamp.</p>
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
 -   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
 -   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |
@@ -377,15 +356,9 @@ This section presents an example that consists of configuring 3 directories for 
 
 Note that the configuration parameter folder\_monitoring must contain a list with these directory names, separated by blanks. Additionally, you must enable the folder monitoring functionality.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In all of the examples in this topic, you must enter CFTUTIL in upper case.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In all of the examples in this topic, you must enter CFTUTIL in upper case.
 
 For this example, you would execute the following command:
 
@@ -395,15 +368,9 @@ For this example, you would execute the following command:
     CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'
     *Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
 
 #### Directory A requirements
 

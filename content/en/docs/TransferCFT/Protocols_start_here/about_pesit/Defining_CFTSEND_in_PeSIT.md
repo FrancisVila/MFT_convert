@@ -54,16 +54,10 @@ on hold, SEND TYPE = HOLD, and then by default based on an implicit send,
 CFTSEND IMPL = YES. The request is however ignored if the parameters set
 in the command are different from those sent by the receiver partner.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the requester/receiver does
-not set any parameters, it uses the corresponding value sent by the server/sender.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the requester/receiver does
+> not set any parameters, it uses the corresponding value sent by the server/sender.
 
 If the partner is a server/receiver,
 the parameters sent override those set in the associated receive command.
@@ -174,11 +168,11 @@ The table below summarizes the parameter values authorized according
 to the functional levels negotiated for the protocol.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>CFTSEND or SEND parameter </p>         </th>
-<th><p>PeSIT E  </p>         </th>
-<th><p>PeSIT E</p>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>CFTSEND or SEND parameter </p>         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PeSIT E  </p>         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>PeSIT E</p>
 <p>+</p>
 <p>Transfer CFT extensions </p>         </th>
       </tr>

@@ -244,15 +244,9 @@ The \_DtDiff function calculates the difference in hundredths of a second betwee
 
 The \_user function returns the name of current user.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The PARM parameter must be entered in upper case.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The PARM parameter must be entered in upper case.
 
 
 
@@ -286,15 +280,9 @@ A value of zero means the runtime code execution \_user function correctly. A ne
 
 The \_Job function returns the name of the current process with the operating system.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The PARM parameter must be entered in upper case.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The PARM parameter must be entered in upper case.
 
 
 

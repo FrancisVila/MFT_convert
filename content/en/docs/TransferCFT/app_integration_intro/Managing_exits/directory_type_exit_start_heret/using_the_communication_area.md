@@ -17,10 +17,10 @@ of the calling partner.
 ### Partner information fields
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field </p>         </th>
-<th><p>Explanation </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation </p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -112,10 +112,10 @@ in the following System information field table.
 ### System information fields
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field </p>         </th>
-<th><p>Explanation </p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field </p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation </p>         </th>
       </tr>
    </thead>
    <tbody>

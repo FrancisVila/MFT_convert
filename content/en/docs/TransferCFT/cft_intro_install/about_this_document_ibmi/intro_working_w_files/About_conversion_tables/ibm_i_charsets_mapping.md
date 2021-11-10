@@ -9,10 +9,10 @@
 The following table shows the mapping for the IBM i (OS/400) platform when using the NCHARSET and FCHARSET parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>CFT_ charset         </th>
-<th>IBM i         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFT_ charset         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">IBM i         </th>
       </tr>
    </thead>
    <tbody>

@@ -12,10 +12,10 @@ Once you install the product, the following subdirectories are available:
 -   Install: Contains the Transfer CFT product and the configuration file for silent installation.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File Name         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File Name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -51,15 +51,9 @@ Once you install the product, the following subdirectories are available:
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The act of installing Transfer CFT creates a distribution environment that contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The act of installing Transfer CFT creates a distribution environment that contains product binaries and templates. Do no store any personal files in this environment, or modify existing files in this environment, as they are erased during updates.
 
 -   EULA.html: License agreement (html format)
 -   EULA.txt: License agreement (text format)

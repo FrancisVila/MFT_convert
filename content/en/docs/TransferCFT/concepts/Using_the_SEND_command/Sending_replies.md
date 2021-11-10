@@ -56,10 +56,10 @@ negative acknowledgement and the Transfer CFT log file displays:
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Use this command to initiates the sending of a message
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Use this command to initiates the sending of a message
 of a particular type. This message is a reply to a previous transfer from
 the partner.         </th>
       </tr>

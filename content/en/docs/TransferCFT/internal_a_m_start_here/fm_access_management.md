@@ -13,15 +13,9 @@ If you have opted to use the <span class="mc-variable suite_variables.FlowManage
 3.  If the login is successful, <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> returns the list of roles for the user.
 4.  The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>All role and permission definitions are stored in CFTPARM.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> All role and permission definitions are stored in CFTPARM.
 
 However, if you are an <span class="code">am.superuser</span> user, <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation, this user is automatically added to the UCONF <span class="code">am.superuser</span> parameter's list.
 
@@ -50,11 +44,11 @@ You can assign users to one or more roles. Typically, users with multiple roles 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -102,11 +96,11 @@ Example of CFTROLE in a configuration file:
 Privileges give users authorization to access and perform actions in the user interface. Examples of actions include CREATE, DELETE, VIEW, EDIT (use \* to assign all actions).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -182,11 +176,11 @@ Comparison operators include:
 The following table is an exhaustive list of all properties for all resources. These properties are available regardless of the action to be checked. However, if a resource has no properties, setting a condition for it has no impact.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Resource</p>         </th>
-<th><p>Actions</p>         </th>
-<th><p>Properties</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Resource</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Actions</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Properties</p>         </th>
       </tr>
    </thead>
    <tbody>

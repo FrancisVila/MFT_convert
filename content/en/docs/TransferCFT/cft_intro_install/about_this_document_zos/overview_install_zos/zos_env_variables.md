@@ -4,15 +4,9 @@
     "weight": "190"
 }You must define the environment variables in the <span class="code">..UPARM (CNFENV)</span> file with the DDname <span class="code">STDENV</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The ENVAR runtime option is: <span class="code">envar("_CEE_ENVFILE_S=DD:STDENV"</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The ENVAR runtime option is: envar("\_CEE\_ENVFILE\_S=DD:STDENV".
 
 This file must contain the following definition: <span class="code">CFTUCONF=dd:UCONF </span>(initialized when creating the instance - do not change this value).
 

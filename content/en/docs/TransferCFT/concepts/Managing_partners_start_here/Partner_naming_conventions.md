@@ -18,11 +18,11 @@ by the protocols used. The parameters describing these names are described in th
 Partner network names
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Object         </th>
-<th>Network name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Object         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Network name         </th>
       </tr>
    </thead>
    <tbody>
@@ -58,11 +58,11 @@ the table below:
 Partner local names
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter </p>         </th>
-<th><p>Location </p>         </th>
-<th><p>Local name </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Location </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Local name </p>         </th>
       </tr>
    </thead>
    <tbody>

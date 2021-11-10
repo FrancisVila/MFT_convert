@@ -24,10 +24,10 @@ The codes are expressed in hexadecimal.
 TCP/IP Reason codes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Code         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

@@ -5,14 +5,14 @@
 }The Transfer CFT z/OS file types are listed and defined below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Definition         </th>
-<th>Note         </th>
-<th>Grpaprm         </th>
-<th>Grpdesk         </th>
-<th>Grptrf         </th>
+<th class="HeadE-Column1-Header1">File         </th>
+<th class="HeadE-Column1-Header1">Definition         </th>
+<th class="HeadE-Column1-Header1">Note         </th>
+<th class="HeadE-Column1-Header1">Grpaprm         </th>
+<th class="HeadE-Column1-Header1">Grpdesk         </th>
+<th class="HeadD-Column1-Header1">Grptrf         </th>
       </tr>
    </thead>
    <tbody>

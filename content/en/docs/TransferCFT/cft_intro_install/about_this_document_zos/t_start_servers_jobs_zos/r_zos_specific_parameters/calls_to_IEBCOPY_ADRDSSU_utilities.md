@@ -144,10 +144,10 @@ Where:
 #### Rules for interpreting DSNGEN
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Model         </th>
-<th>Interpretation         </th>
+<th class="HeadE-Column1-Header1">Model         </th>
+<th class="HeadD-Column1-Header1">Interpretation         </th>
       </tr>
    </thead>
    <tbody>
@@ -268,15 +268,9 @@ The ADRDSSU command also uses the parameter:
 
 The combination RENAMEU+REPLACEU will always replace existing files.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   The created files are identical to the initial file.
 
@@ -327,11 +321,11 @@ Transfer CFT z/OS calls a single external utility at a given time. Memory use is
 **Memory use**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Utility         </th>
-<th>24 bit memory         </th>
-<th>31 bit memory         </th>
+<th class="HeadE-Column1-Header1">Utility         </th>
+<th class="HeadE-Column1-Header1">24 bit memory         </th>
+<th class="HeadD-Column1-Header1">31 bit memory         </th>
       </tr>
    </thead>
    <tbody>

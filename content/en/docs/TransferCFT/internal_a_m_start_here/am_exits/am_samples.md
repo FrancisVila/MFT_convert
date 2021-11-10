@@ -11,18 +11,18 @@ Axway delivers an Access Management exit sample, examsmp1.c, in the <span class=
 The delivered sample provides two services, authentication and permissions checking.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sample         </th>
-<th>Authentication         </th>
-<th>Permissions checking         </th>
+<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" style="background-color: #dcdcdc">Sample         </th>
+<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" style="background-color: #dcdcdc">Authentication         </th>
+<th class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="background-color: #dcdcdc">Permissions checking         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td>examsmp1.c         </td>
          <td>System authentication (<span class="italic_in_para">Windows only</span>)         </td>
-         <td>Flat file based on flat <a href="#" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> model         </td>
+         <td>Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> model         </td>
       </tr>
    </tbody>
 </table>
@@ -42,7 +42,7 @@ The output is a library located at <span class="code">&lt;CFTDIRRUNTIME>/lib/lib
 
 ## Flat file based on flat RBAC 
 
-To check users rights, Axway delivers a sample flat file based on flat <a href="#" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> (Role Based Access Control) located in: <span class="code">&lt;CFTDIRRUNTME>/conf/exam.csv</span>. This file contains a set of permission and user assignments.
+To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> (Role Based Access Control) located in: <span class="code">&lt;CFTDIRRUNTME>/conf/exam.csv</span>. This file contains a set of permission and user assignments.
 
 ![Simplied diagram of relationship between users, roles and permissions](/Images/TransferCFT/am_exits_rbac.GIF)
 
@@ -54,10 +54,10 @@ The following line shows how to add a permission to a role:
 Where:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Field         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -119,10 +119,10 @@ The following line shows how to add a user to a role:
 <span class="code">&lt;cmd\_type> &lt;role> &lt;users></span>
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Field         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Field         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -157,10 +157,10 @@ You can find some roles defined in &lt;CFTDIRRUNTIME>/conf/exam.csv.
 Predefined roles
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Role         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Role         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

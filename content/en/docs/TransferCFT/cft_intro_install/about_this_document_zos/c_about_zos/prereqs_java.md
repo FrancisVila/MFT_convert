@@ -34,14 +34,8 @@ If these modules are present, then JZOS is available. If it is not available:
 1.  Go to the IBM JZOS Java Launcher and Toolkit overview page.
 2.  Choose, download, and install the appropriate JZOS Batch Launcher and Toolkit Installation (we use the JZOS Batch Launcher and Toolkit function for 31-bit Java 8.0.6.10 SDK in our examples).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>IBM introduced a specialty processor for running Java applications called the zSeries Application Assist Processor, also known as zAAP. This type of processor is an optional feature in the System z9 hardware.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> IBM introduced a specialty processor for running Java applications called the zSeries Application Assist Processor, also known as zAAP. This type of processor is an optional feature in the System z9 hardware.
 
 Once installed and enabled, zAPP allows the customer to benefit from an expansion of the system’s CPU capacity at a relatively low cost, if the workload that is run is based on Java.

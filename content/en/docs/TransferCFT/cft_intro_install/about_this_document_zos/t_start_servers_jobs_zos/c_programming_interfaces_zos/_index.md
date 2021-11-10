@@ -83,15 +83,9 @@ Etc.
 
 In this case cftu, cfti, and cftc are defined as pointer functions (see OCFTAPD2).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If the pointers are not initialized by OAPIFC an abend 0C1 occurs.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If the pointers are not initialized by OAPIFC an abend 0C1 occurs.
 
 -   Delivered samples:  
     OAPIWS, OAPIIS, OAPICS, OPAIXS, OAPI2AS, OAPI2BS
@@ -150,17 +144,17 @@ The compile, link-edit, and run JCLs for these samples can be found in the CFTV2
 **Main delivered samples**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Language         </th>
-<th><p>Source file</p>
+<th class="HeadE-Column1-Header1">Language         </th>
+<th class="HeadE-Column1-Header1"><p>Source file</p>
 <p>cftv2.SAMPLE*</p>         </th>
-<th><p>Copy,</p>
+<th class="HeadE-Column1-Header1"><p>Copy,</p>
 <p>Macro,</p>
 <p>Include used</p>         </th>
-<th>API         </th>
-<th>LINK EDIT command files (DLL) distlib.CNTL         </th>
-<th>Load module         </th>
+<th class="HeadE-Column1-Header1">API         </th>
+<th class="HeadE-Column1-Header1">LINK EDIT command files (DLL) distlib.CNTL         </th>
+<th class="HeadD-Column1-Header1">Load module         </th>
       </tr>
    </thead>
    <tbody>

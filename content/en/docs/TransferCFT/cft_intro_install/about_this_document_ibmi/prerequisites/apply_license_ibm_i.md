@@ -51,12 +51,6 @@ Use the display system value command to get the serial number, known as QSRLNBR:
 
 In this example, you would provide the CPU ID<span class="code"> 06890AP</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Your values will differ from those shown in the examples.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Your values will differ from those shown in the examples.

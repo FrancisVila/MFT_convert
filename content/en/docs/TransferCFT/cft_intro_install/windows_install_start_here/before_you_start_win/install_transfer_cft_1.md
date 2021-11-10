@@ -14,21 +14,15 @@ Use the following command to install Transfer CFT in silent mode.
 
     ./Transfer_CFT_3.7_<Install>_<OS>_<BN>.exe --mode unattended --conf-file initialize.properties
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot install <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> if you have a profile already loaded.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot install Transfer CFT if you have a profile already loaded.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Screen         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Screen         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

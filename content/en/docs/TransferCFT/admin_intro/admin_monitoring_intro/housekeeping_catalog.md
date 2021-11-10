@@ -34,11 +34,11 @@ To enable the auto-expand option, with <span class="mc-variable axway_variables.
     -   If <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: normal;">Transfer CFT</span> is stopped when setting uconf values, you do not need to execute the reconfig command.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -47,15 +47,11 @@ To enable the auto-expand option, with <span class="mc-variable axway_variables.
          <td>0         </td>
          <td><p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand.</p>
 <p>The value 0 disables the automatic expansion feature.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Tip  
+We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>cft.cftcat.auto_expand_max_size         </td>
@@ -164,15 +160,9 @@ The second letter refers to the state (CFTSTATE).
 -   \(T\) Ack phase and all phasesteps
 -   \(X\) Done phase and Done phasestep
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state to (X).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state to (X).
 
 **Compatibility mode**
 
@@ -190,15 +180,9 @@ For example, set the following where the sx represents 10 days (where a day equa
 
     UCONFSET id=cft.purge.sx, value=10D
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The amount of time is entered in days (x or xD), in hours (xH) or in minutes (xM). If set to -1, the CFTCAT value is used.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The amount of time is entered in days (x or xD), in hours (xH) or in minutes (xM). If set to -1, the CFTCAT value is used.
 
 To schedule a periodic purge every 30 minutes:
 
@@ -285,12 +269,6 @@ For example, to remove both the file and the record when sending a file.
 
     CFTSEND ID=CLEANUP,FNAME=<FILENAME>,DELETE=YES,FDELETE=CDKHTX
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The DELETE/FDELETE options are also valid for a CFTRECV, but note that setting FDELETE=CDKHTX deletes the file regardless of the state at the end of the transfer.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The DELETE/FDELETE options are also valid for a CFTRECV, but note that setting FDELETE=CDKHTX deletes the file regardless of the state at the end of the transfer.

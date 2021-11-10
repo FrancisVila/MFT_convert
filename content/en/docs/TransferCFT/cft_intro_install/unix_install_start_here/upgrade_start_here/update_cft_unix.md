@@ -60,15 +60,9 @@ To verify, from the Transfer CFT &lt;runtime\_dir> run the <span class="code">a
 
 This section describes the procedure to apply a patch or service pack on a multi-node architecture based on *N* hosts. You update a Transfer CFT multi-node architecture with multi-hosts using the same procedure as for a patch or service pack, one host at a time.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td><span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> clusters can still run while performing an update.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT clusters can still run while performing an update.
 
 1.  Connect to the first host.
 2.  Stop all nodes running on this host by running the command: <span class="code">copstop</span>  

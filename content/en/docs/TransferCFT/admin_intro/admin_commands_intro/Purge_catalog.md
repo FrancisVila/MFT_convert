@@ -13,10 +13,10 @@ time in the catalog. Transfer CFT provides the following purge options:
 Syntax
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Use this command to deletes records which have exceeded
+<th class="HeadE-Column1-Header1">Description         </th>
+<th colspan="2" class="HeadD-Column1-Header1">Use this command to deletes records which have exceeded
 the retention time indicated in the Transfer CFT parameter setting. You
 can set the purge time to meet your requirements and Transfer CFT
 activity.         </th>

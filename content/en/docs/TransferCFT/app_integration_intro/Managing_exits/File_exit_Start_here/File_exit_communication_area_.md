@@ -9,10 +9,10 @@
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>

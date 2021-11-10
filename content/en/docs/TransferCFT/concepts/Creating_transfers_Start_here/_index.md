@@ -12,10 +12,10 @@ This book is comprised of the following topics and sub-books.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Topic         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Topic         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

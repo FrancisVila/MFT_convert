@@ -7,10 +7,10 @@
 The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Member Name         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -35,10 +35,10 @@ The SMPCNTL data set contains the following model job for the SMP/E PTFs mainten
 Submit the job described in the table below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Member Name         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -64,10 +64,10 @@ These messages are normal; you can ignore them.
 The following table lists additional sample jobs.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Member Name         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -89,10 +89,10 @@ Edit the sample jobs listed in the table below, modifying as necessary.
 The Transfer CFT instance data set INSTALL contains the following model jobs for Transfer CFT SMP/E maintenance.  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Member Name         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

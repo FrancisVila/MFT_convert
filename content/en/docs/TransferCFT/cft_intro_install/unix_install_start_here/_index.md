@@ -33,7 +33,7 @@ The installation section describes prerequisites and how to install, migrate, up
 -   [Building
     <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> API applications](run_first_time_ux/api_applications_start_here)
 -   [Activating
-    security](#)
+    security]()
 -   [Specific
     configurations](run_first_time_ux/aix_with_ibm_hacmp_intro/specific_configurations_intro)
 
@@ -46,27 +46,15 @@ When installing a cluster for high availability, after enabling the cluster opti
 -   [Solaris
     Sun cluster](run_first_time_ux/aix_with_ibm_hacmp_intro/solaris_sun_cluster_start_here)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The term
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is used to designate the Transfer
-CFT software package on UNIX platforms.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The term
+> Transfer CFT is used to designate the Transfer
+> CFT software package on UNIX platforms.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT supports all POSIX file systems.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT supports all POSIX file systems.
 
 ## Installation schematic overview
 

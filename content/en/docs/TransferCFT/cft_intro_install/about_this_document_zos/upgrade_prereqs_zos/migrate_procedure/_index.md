@@ -19,10 +19,10 @@ The following table lists and describes the MIGR\* members used in a Transfer CF
 <span class="autonumber"></span>Migration Job Control Language (JCL) Statements
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Member name</p>         </th>
-<th><p>Purpose</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Purpose</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -98,11 +98,11 @@ This section describes how to migrate the various configuration elements in a no
 The following variables can be set in MIGR$SET file or/and in the PMIGR2 parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variable</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -154,11 +154,11 @@ Submit the procedure ..INSTALL(MIGRPARM)
 The following variables can be set in MIGR$SET file or/and in the PMIGR2 parameters.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variable</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -203,11 +203,11 @@ Submit the procedure ..INSTALL(MIGRPART)
 1.  Migrate the PKI file (MIGRPKIx).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variable</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -261,11 +261,11 @@ With the list of UCONF parameters to migrate. For example:
 You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 parameters:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variable</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -317,11 +317,11 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 You can set the following variables in the MIGR$SET file or/and in the PMIGR2 parameters:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Variable</p>         </th>
-<th><p>Default value</p>         </th>
-<th><p>Definition</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>

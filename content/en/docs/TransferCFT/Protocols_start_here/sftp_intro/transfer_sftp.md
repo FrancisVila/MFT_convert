@@ -28,7 +28,7 @@ Generate the server's public/private key pair using the <span class="code">pkike
 
 ### 2. Interpret the predefined SFTP template
 
-From the runtime directory, interpret the <span class="code">cft-sftp.conf</span> template (click [here](#) to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
+From the runtime directory, interpret the <span class="code">cft-sftp.conf</span> template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
 
 
     cftinit conf/cft-sftp.conf
@@ -42,18 +42,17 @@ This example uses the most basic type of authentication. However, the <span clas
 Start Filezilla and enter the following connection details:
 
 -   Host: sftp://&lt;host address of the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> server>
+
 -   Port: 1763 (if you used the SAP from the template)
+
 -   Username: user1
+
 -   Password: TheUser1Password  
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Tip  </strong></span>         </td>
-             <td>The username and password are case sensitive.         </td>
-          </tr>
-       </tbody>
-    </table>
+
+    > **Note:**
+    >
+    > Tip  
+    > The username and password are case sensitive.
 
 Click **Quickconnect** to connect.
 

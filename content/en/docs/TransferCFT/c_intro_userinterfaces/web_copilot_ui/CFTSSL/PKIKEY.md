@@ -4,15 +4,9 @@
     "weight": "220"
 }This page describes how to manage keys via the user interface.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Some command line  parameters are not available in the user interface.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Some command line  parameters are not available in the user interface.
 
 ## About keys in <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
 
@@ -21,10 +15,10 @@ A private key is comprised of both a private and public key component. You can u
 The PKIKEY command is similar to the PKICER command. Parameters include:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -71,15 +65,9 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See the <a href="../../../../transport_security_start_here/certificates/pkiutil_cli_intro/pkikeygen">PKIKEYGEN</a> command for details on how to generate and use your own keys.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See the PKIKEYGEN command for details on how to generate and use your own keys.
 
 ### Restrictions
 

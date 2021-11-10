@@ -21,15 +21,9 @@ Defines the number of keys that display.
 
 The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user key. You can enter a string of up to 80 characters, which is comprised of the indirection character and file name (file containing the key).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You do not directly set the key with this parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You do not directly set the key with this parameter.
 
 Enter the name of the indirection file (preceded by the &lt;file-symb> character specific to each system) that contains the set of keys associated with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. The post-installation default values are:
 

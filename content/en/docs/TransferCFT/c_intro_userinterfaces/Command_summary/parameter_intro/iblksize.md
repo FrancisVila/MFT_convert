@@ -20,10 +20,10 @@ The table indicates  if the iblksize parameter
 is used.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>OS </p>         </th>
-<th><p>IBLKSIZE </p>         </th>
+<th class="HeadE-Column1-Header1"><p>OS </p>         </th>
+<th class="HeadD-Column1-Header1"><p>IBLKSIZE </p>         </th>
       </tr>
    </thead>
    <tbody>

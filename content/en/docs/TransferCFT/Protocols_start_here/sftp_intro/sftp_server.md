@@ -74,15 +74,9 @@ A CFTPART object represents an application, with one SFTP user per application 
 -   NRPART: Corresponds to the client login. You cannot have 2 partners with the same NRPART value.
 -   PROT: Refers to the SFTP protocol
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The following sections detail authentication for the partner in flows.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The following sections detail authentication for the partner in flows.
 
 ## Set the type of authentication
 
@@ -101,15 +95,9 @@ There are two ways for you to configure how the server will check the client pas
 
 -   Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in <span class="code">uconf:cft.server.authentication\_method </span>is used.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you do not define NRPASSW, there is no password authentication.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you do not define NRPASSW, there is no password authentication.
 
 
 
@@ -174,15 +162,9 @@ This example illustrates a specific SSH profile (SSH\_USER2 below).
             
     clipubkey  = USER2,         ...
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Do not forget that you must import the client's public key in the server's database as shown below:         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Do not forget that you must import the client's public key in the server's database as shown below:
 
 
     PKIUTIL pkikey id='USER2', ikname='user2.pub', ikform='ssh'
@@ -266,25 +248,13 @@ See the examples in [SFTP use case examples](../cftssh_example#top).
 
 If the provided IDF does not belong to either the SAUTH or RAUTH list, on the server side, the connection is rejected and the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> client returns a DIAGI 413.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For a <span class="code">put </span>command on the client side, the IDF must be defined in the RAUTH on the server side. For a <span class="code">get </span>command, the IDF must be defined in the SAUTH on the server side.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For a put command on the client side, the IDF must be defined in the RAUTH on the server side. For a get command, the IDF must be defined in the SAUTH on the server side.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you are using both the SAUTH and RAUTH parameters, then you must use the same value for the SAUTH (sending files) and RAUTH (receiving files) for a given CFTPART definition. This means that the client will see only the directories that are authorized by these parameters.
 
 Server mode password authentication using restricted flow models
 

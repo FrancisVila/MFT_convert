@@ -29,15 +29,9 @@ Perform the following steps on the Edge Agent for MFT implementations that use 
 4.  Upload the `MFT.json` file from the package to the <span class="code">&lt;Edge\_Agent\_install\_dir>/conf/agent/report</span> directory.
 5.  Restart the Edge Agent. Refer to the [AMPLIFY Usage Metering and Reporting Guide](https://docs.axway.com/bundle/subusage_en).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The MFT.json file name is the <span class="code">configurationName</span> that you use when querying the Edge Agent.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The MFT.json file name is the configurationName that you use when querying the Edge Agent.
 
 ## Configure Transfer CFT
 
@@ -76,15 +70,9 @@ Set the following uconf parameters to the Edge Agent values:
 
 When you are using the Event Router to send both usage tracking to the Edge Agent and monitoring to Sentinel, you must customize the Event Router. In the following configuration steps, <span class="code">XFBTransfer </span>and `CycleLink `are sent to both the Edge Agent and Sentinel. However, <span class="code">XFBCFTInfo </span>and `STXFBINFO `are only sent to the Edge Agent.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The default target is called <span style="font-family: &#39;Courier New&#39;;">SENTINEL</span> in the steps below.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The default target is called SENTINEL in the steps below.
 
 1.  Access the <span class="code">&lt;install\_dir>/SentinelEventRouter/conf </span>directory.
 2.  Edit the <span class="code">target.xml</span> file to route the usage information to Sentinel and the Edge Agent (<span class="code">EDGEAGENT</span>).
@@ -139,12 +127,6 @@ Example
        </Route>
     </TrkEventRouterCfg>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Do not modify the <span class="code">[PRODUCTIPADDR]</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Do not modify the \[PRODUCTIPADDR\].

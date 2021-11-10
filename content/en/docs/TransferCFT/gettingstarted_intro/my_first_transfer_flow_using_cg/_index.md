@@ -12,15 +12,10 @@
 -   [Create an implicit mode flow](implicit_first_transfer_flow_using_cg)
 -   [Perform broadcast and collect operations](broadcast_first_transfer_flow_using_cg)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>Existing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> users may want to refer to the Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> parameter mapping.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Tip  
+> Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping.
 
 ## What you will need
 
@@ -52,12 +47,12 @@ Use the **Details** arrows ![](/Images/TransferCFT/mapArrow.png) to get more inf
 When you are working in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, you create *applications* that represent your exchange partners. In these exercises we create three applications in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -80,15 +75,10 @@ When you are working in <span class="mc-variable Primary.CG or_UM variable">Cent
 <p>Your <strong>Name</strong> list should look like this:</p>
 <p><img src="/Images/TransferCFT/application_list_complete.png" class="maxWidth" alt="Application list in Central Governance showing 3 example applications to use in flows" /></p>
 <p> </p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>The <span class="bold_in_para">Transfer CFT</span> field in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> maps to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> PART parameter.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Tip  The Transfer CFT field in Central Governance maps to the Transfer CFT PART parameter.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
@@ -104,12 +94,12 @@ Let's begin by creating a simple flow, and then exchange a file. In this example
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -140,15 +130,11 @@ Note: You cannot modify the Protocol until you have defined both the Source and 
          <td><p>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command:<br />
 CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report</p>
 <p>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Tip  </strong></span>         </td>
-         <td>The flow Identifier field is equivalent to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> IDF parameter.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Tip  
+The flow Identifier field is equivalent to the Transfer CFT IDF parameter.</p>
+</blockquote>         </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
@@ -169,12 +155,12 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
 <img src="/Images/TransferCFT/multiple_send_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a multiple files to a Target" />
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -231,12 +217,12 @@ You can use the transfer mode to make a file whose content is frequently changin
 <img src="/Images/TransferCFT/CFT_w_CG_Implicit_mode.png" class="maxWidth" alt="Simplified diagram of a Target Transfer CFT requesting a file from the Source" />
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -297,12 +283,12 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 ![Simplified diagram of a Source Transfer CFT sending a file to multiple Targets](/Images/TransferCFT/TransferCFT_Broadcast_w_CG.png)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -356,12 +342,12 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Task         </th>
-<th>Description         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

@@ -16,14 +16,8 @@ of files selected for sending, where all of the files must be contained in the s
 
     send part=newyork,idf=test,selfname=selfname.txt,fname=#myfolder
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using FACTION=DELETE with SELFNAME, the FNAME must be a directory (not a mask).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using FACTION=DELETE with SELFNAME, the FNAME must be a directory (not a mask).
 
 [Return to Command index](../../)

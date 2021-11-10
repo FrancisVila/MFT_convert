@@ -12,14 +12,8 @@
 
 Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>There is no INUM assigned to a user or root certificate.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> There is no INUM assigned to a user or root certificate.
 
 [Return to Command index](../../)

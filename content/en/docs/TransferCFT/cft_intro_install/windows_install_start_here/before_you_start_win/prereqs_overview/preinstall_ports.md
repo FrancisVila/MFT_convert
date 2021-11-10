@@ -9,10 +9,10 @@ You may need to modify the default port numbers, depending on your configuration
 The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Component         </th>
-<th><p>Port</p>         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Component         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Port</p>         </th>
       </tr>
    </thead>
    <tbody>

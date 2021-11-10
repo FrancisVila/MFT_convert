@@ -9,9 +9,9 @@ Each of these services is described in one of the following sections, which prov
 of the service. Applications can address requests to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> via
 service call functions:
 
--   [REST API](#)
--   [Web services](#)
--   [Using JPI](#)
+-   [REST API]()
+-   [Web services]()
+-   [Using JPI]()
 -   Transfer
     services
 -   Synchronous

@@ -13,12 +13,12 @@ If you want to enable <span class="mc-variable suite_variables.Central_Governanc
 This table presents a high-level overview of the installation process. By default, the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation uses a delivered configuration file called <span class="code">initialize.properties</span> that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Step         </th>
-<th>Details         </th>
-<th>More info         </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Step         </th>
+<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Details         </th>
+<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">More info         </th>
       </tr>
    </thead>
    <tbody>
@@ -118,15 +118,9 @@ You can use the following command to repair the runtime if there was an issue du
 
 To install Transfer CFT using symbolic links, you must use the silent mode, <span class="code">option '--mode unattended'</span>, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> home installation directory, to which the symbolic link points, prior to retrying the installation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Get help
 

@@ -16,15 +16,9 @@
 
 All passwords stored in the UCONF dictionary, or in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key as described in [Generate an encryption](#Generate).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The encryption key is mandatory to use the embedded <a href="../sr_overview">SecureRelay.</a>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The encryption key is mandatory to use the embedded SecureRelay.
 
 ## cftcrypt command
 
@@ -54,15 +48,9 @@ Renewkey options:
 -   oldpass: Old password.
 -   tmpfname: Temporary file where the Transfer CFT configuration is stored.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(*#$!?+-@).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
 
 Use the following command to generate an encryption key using the provided password. This creates the <span class="code">--keyfname</span> and <span class="code">--saltfname</span> files, and references them in UCONF.
 
@@ -73,10 +61,10 @@ Use the following command to generate an encryption key using the provided passw
 Encryption parameters in UCONF
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -131,12 +119,6 @@ It is highly recommended that you generate an encryption key when you upgrade a 
 
 5.  Import the configuration.  
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On z/OS platforms, use the JCL CFTGNKEY to generate the key.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On z/OS platforms, use the JCL CFTGNKEY to generate the key.

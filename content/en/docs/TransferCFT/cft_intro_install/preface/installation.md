@@ -4,15 +4,9 @@
     "weight": "160"
 }This section describes the steps to perform a Transfer CFT HP NonStop installation, as well as the automatic steps that occur when you run the installation procedure.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To accommodate changing product versions, the convention &lt;version&gt; may be used in place of the actual product version in examples and lists. You should replace &lt;placeholders&gt;, or example values used for demonstrative purposes, with your actual values and target platform details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> To accommodate changing product versions, the convention &lt;version> may be used in place of the actual product version in examples and lists. You should replace &lt;placeholders>, or example values used for demonstrative purposes, with your actual values and target platform details.
 
 ## Upload the Transfer CFT archive
 
@@ -43,15 +37,9 @@ Depending on your installation, the screen message may differ slightly from the 
 
 In the example, Transfer CFT package is unzipped in the <span class="code">Transfer\_CFT\_OtherUnixes\_V3.8</span> directory.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Be certain to read the end-user license agreement.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Be certain to read the end-user license agreement.
 
 ## Add execution rights
 
@@ -67,7 +55,7 @@ Enter:
 
 Execute the <span class="code">install </span>command to start the Transfer CFT installation procedure, replacing <span class="code">&lt;installation\_directory></span> with the directory where you want to install Transfer CFT.
 
-For a new installation, this directory should be empty or nonexistent. However, the installation directory can point to an existing installation in order to upgrade it. For more information on performing an upgrade, refer to <a href="#" class="MCXref xref">Migrate or upgrade Transfer CFT</a>.
+For a new installation, this directory should be empty or nonexistent. However, the installation directory can point to an existing installation in order to upgrade it. For more information on performing an upgrade, refer to <a href="" class="MCXref xref">Migrate or upgrade Transfer CFT</a>.
 
 You can use the following additional parameters:
 
@@ -118,10 +106,10 @@ If you opted to install the Guardian files, several files are created in the Gua
 For example, <span class="code">/G/data14/cft38b</span> creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Subvolume         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Subvolume         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -133,7 +121,7 @@ For example, <span class="code">/G/data14/cft38b</span> creates files where the 
       <tr>
          <td>&lt;subvolume&gt;IF         </td>
          <td><p>Contains the EMS dictionary and DDL template files.</p>
-<p>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="#">Event messages</a>, which describes the DDL template.</p>         </td>
+<p>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.</p>         </td>
       </tr>
       <tr>
          <td>&lt;subvolume&gt;IX         </td>

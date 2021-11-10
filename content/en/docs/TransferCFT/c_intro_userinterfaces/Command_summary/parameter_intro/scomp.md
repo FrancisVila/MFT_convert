@@ -32,10 +32,10 @@ This compression is negotiated between the sender and the receiver.
 Default values are:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Protocol </p>         </th>
-<th><p>Default value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Protocol </p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value</p>         </th>
       </tr>
    </thead>
    <tbody>

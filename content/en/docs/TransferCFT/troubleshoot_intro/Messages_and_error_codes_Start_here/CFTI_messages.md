@@ -1160,15 +1160,10 @@ on which Transfer CFT is installed.</li>
 <li>Enter the key directly.</li>
 <li>Enter the key(s) in the indirection file.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When working in multi-node you must have one key per node and host.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When working in multi-node you must have one key per node and host.</p>
+</blockquote>
 <p>See the <em>Apply a license key</em> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>         </td>
       </tr>
    </tbody>
@@ -1209,15 +1204,10 @@ on which Transfer CFT is installed.</li>
 <li>Enter the key directly.</li>
 <li>Enter the key(s) in the indirection file.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When working in multi-node you must have one key per node and host.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When working in multi-node you must have one key per node and host.</p>
+</blockquote>
 <p>See the <em>Apply a license key</em> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>         </td>
       </tr>
    </tbody>
@@ -1259,15 +1249,10 @@ on which Transfer CFT is installed.</li>
 <li>Enter the key directly.</li>
 <li>Enter the key(s) in the indirection file.</li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When working in multi-node you must have one key per node and host.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>When working in multi-node you must have one key per node and host.</p>
+</blockquote>
 <p>See the <em>Apply a license key</em> section in the Transfer CFT Installation Guide that corresponds with your OS for details.</p>         </td>
       </tr>
    </tbody>

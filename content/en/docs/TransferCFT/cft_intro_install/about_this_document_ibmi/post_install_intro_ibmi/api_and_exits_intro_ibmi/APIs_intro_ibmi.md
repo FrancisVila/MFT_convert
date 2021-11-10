@@ -2,15 +2,9 @@
     "title": "Using Application programming interfaces (API)",
     "linkTitle": "Using APIs",
     "weight": "280"
-}<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Only ILE (Integrated Language Environment) is supported.         </td>
-      </tr>
-   </tbody>
-</table>
+}> **Note:**
+>
+> Only ILE (Integrated Language Environment) is supported.
 
 You perform Transfer CFT service calls differently depending on the programming language that you use (C, COBOL, or RPG). For more information, refer to the programming topics in <a href="../../../../about_this_document_zos/using_apis" class="MCXref xref">About APIs</a>
 
@@ -45,15 +39,9 @@ COBOL/ILE Programming samples
 
 All COBOL sample files are available in CFTPGM/CFTSRC. However, you should not directly modify them as this library is proprietary to Axway, and updating the product may modify these samples. Therefore, we recommend that you copy the samples you need into CFTPROD/UTIN and configure them according to your production requirements.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The product installation copies and configures some samples.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The product installation copies and configures some samples.
 
 RPG/ILE programming examples
 

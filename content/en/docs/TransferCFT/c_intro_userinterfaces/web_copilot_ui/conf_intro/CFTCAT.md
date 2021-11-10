@@ -35,10 +35,10 @@ topics
     [Catalog attributes](../../../../admin_intro/admin_config_commands/catalog_parameter_concepts)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -128,16 +128,11 @@ limit is reached, the CFTCAT/TLVWEXEC is executed.</p>         </td>
          <td><p>Daily purge time chosen by the user.</p>
 <p>The user can program an automatic, cyclic catalog purge.
 The default purge time is midnight.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic
-purging is performed (at a selected time or at midnight).         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic
+purging is performed (at a selected time or at midnight).</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td><p><a href="../../../command_summary/parameter_intro/updat">UPDAT</a> </p>         </td>

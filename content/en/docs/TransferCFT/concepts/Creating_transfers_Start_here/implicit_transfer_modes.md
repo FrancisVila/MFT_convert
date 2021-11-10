@@ -115,18 +115,12 @@ defined by the FNAME parameter of the CFTSEND parameter setting command.
 The value of this parameter may be explicit or locally defined using symbolic
 variables (see the previous paragraph).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If a requester defines FNAME=&amp;NFNAME and the server has not defined
-NFNAME, or vice-versa, the transfer fails and is interrupted. If the server/sender
-defines NFNAME and the file name is preceded with "*", the requester/receiver
-can use the name of its choice as the FNAME.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If a requester defines FNAME=&NFNAME and the server has not defined
+> NFNAME, or vice-versa, the transfer fails and is interrupted. If the server/sender
+> defines NFNAME and the file name is preceded with "\*", the requester/receiver
+> can use the name of its choice as the FNAME.
 
 **Receiver/requester transfer in implicit
 send mode: open mode - at the requester end**
@@ -152,16 +146,10 @@ parameter of the CFTRECV parameter setting command). The value of this
 parameter may be explicit or locally defined using symbolic variables
 (see previous paragraph).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If a requester defines NFNAME and the server has not defined FNAME
-= &amp;NFNAME, or vice-versa, the transfer fails and is interrupted.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If a requester defines NFNAME and the server has not defined FNAME
+> = &NFNAME, or vice-versa, the transfer fails and is interrupted.
 
 **Receiver/requester transfer in implicit
 send mode: open mode at the server end**

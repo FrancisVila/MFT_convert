@@ -92,10 +92,10 @@ When the general resource class (safcftcl) is applied by RACF, the authorized us
 #### Security system installation procedures
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Job</p>         </th>
-<th><p>Installation procedure</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Job</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Installation procedure</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -137,10 +137,10 @@ When the general resource class (safcftcl) is applied by RACF, the authorized us
 #### Delete security definitions
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Job</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Job</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

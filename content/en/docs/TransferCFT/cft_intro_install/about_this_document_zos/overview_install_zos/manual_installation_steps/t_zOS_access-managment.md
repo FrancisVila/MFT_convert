@@ -54,11 +54,11 @@ With the **SAF class** method of access management, you define the mapping betwe
 When the access management method is **SAF class**, each user role is associated with a security resource (RACF, TSS, ACF2). You can set the name of the resource in the corresponding UCONF variable using the user norms in the table below.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Example resource name         </th>
-<th>UCONF variable/role         </th>
-<th>Access to resource         </th>
+<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Example resource name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF variable/role         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Access to resource         </th>
       </tr>
    </thead>
    <tbody>
@@ -116,15 +116,9 @@ When the access management method is **SAF class**, each user role is associated
      
     NOTE: ACCESS must be set to READ.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The load libraries must be APF.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The load libraries must be APF.
 
 ### Using file as the internal access management
 

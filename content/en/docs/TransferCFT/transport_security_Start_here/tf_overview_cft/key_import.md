@@ -34,10 +34,10 @@ When you import a private keyring file containing ElGamal subkey(s), you must pr
 There are several options you can add to the command line:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Options         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Options         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -106,10 +106,10 @@ following file names.
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Key/certificate standard         </th>
-<th>Exported file name         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Key/certificate standard         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Exported file name         </th>
       </tr>
    </thead>
    <tbody>
@@ -144,10 +144,10 @@ and <span style="font-style: italic;">useridpacket</span>_pub.asc</p>         </
 There are several options you can add to the command line:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Option</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Option</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -192,17 +192,9 @@ There are several options you can add to the command line:
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The following options are required:<code> -userIdPacket</code> and <code>-passSecRing</code><span class="span_6">.</span> By default (without <code>-secRing </code>or <code>-pubRing</code> options), the feature exports Public Keyring <span class="span_6">and </span>Secret Keyring.<br />
-If you do not need to export the Secret Keyring, add<span class="code"> - secRing no</span> to the command line.<br />
-If you do not need to export the Public Keyring, add <span class="code">- pubRing no</span> to the command line.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The following options are required: -userIdPacket and -passSecRing. By default (without -secRing or -pubRing options), the feature exports Public Keyring and Secret Keyring.If you do not need to export the Secret Keyring, add - secRing no to the command line.If you do not need to export the Public Keyring, add - pubRing no to the command line.
 
 ### Example commands
 

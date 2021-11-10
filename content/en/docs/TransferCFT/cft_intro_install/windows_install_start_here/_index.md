@@ -8,9 +8,9 @@
 
 This section introduces prerequisite information as well as installation and information on operating Transfer CFT in Windows.
 
--   [Operating the product](#)
+-   [Operating the product]()
 -   [Specific system
-    functions](#)
+    functions]()
 -   Programming
     interfaces
 -   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>

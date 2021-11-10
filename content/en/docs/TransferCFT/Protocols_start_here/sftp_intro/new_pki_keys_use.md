@@ -37,15 +37,9 @@ You can import the following formats in the PKI database:
 -   SSH2 format, beginning with “BEGIN SSH2 PUBLIC KEY”
 -   ssh-rsa format, beginning with “ssh-rsa”
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using the ssh-keygen tool, keys are usually generated in encrypted PEM format, which you can import using the PKIKEY command.
 
 Restrictions
 
@@ -60,10 +54,10 @@ A private key is comprised of both a private and public key component. You can u
 The PKIKEY command is similar to the PKICER command. Parameters include:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -136,16 +130,9 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 -----END RSA PRIVATE KEY---------
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>. To use this key, convert it to PKCS#8 using the command:<br />
-<code>openssl pkcs8 -topk8 -v2 aes128 -in &lt;key&gt; -out &lt;key.pk8&gt;</code>         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format
 

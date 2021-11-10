@@ -21,10 +21,10 @@ for incoming calls.
 <span id="sserv_parameter_details"></span>Sserv parameter details
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>PeSIT profile         </th>
-<th>Details         </th>
+<th class="HeadE-Column1-Header1">PeSIT profile         </th>
+<th class="HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>

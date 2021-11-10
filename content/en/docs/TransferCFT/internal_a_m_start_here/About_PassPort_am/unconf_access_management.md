@@ -6,22 +6,16 @@
 
 When enabled, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> retrieves all permissions from the PassPort AM server and stores this information in the cache. This allows <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to continue to operate using the stored information if the PassPort AM server is non-operational.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The user/password login are not stored in the cache. This means that if the PassPort server is down, you cannot connect to Copilot, Transfer CFT REST APIs, or the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> UI.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The user/password login are not stored in the cache. This means that if the PassPort server is down, you cannot connect to Copilot, Transfer CFT REST APIs, or the Transfer CFT UI.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameters         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -63,26 +57,14 @@ When Transfer CFT or Copilot is configured to use PassPort AM , it periodically 
 3.  Check that CFTSXPAM is enabled, <span class="code">am.passport.persistency.cftsxpam.enable = yes</span>.
 4.  Execute the command: <span class="code">CFTSXPAM</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>On z/OS platforms the offline version of the CFTSXPAM process is called CFTUXPAM.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> On z/OS platforms the offline version of the CFTSXPAM process is called CFTUXPAM.
 
 #### Recommendation
 
 When using LDAP in PassPort or <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for access management, it is highly recommended that you run the CFTSXPAM process offline prior to starting Transfer CFT, or the Transfer CFT Copilot server, if the persistent cache does not exist. Neglecting to do so could result in a significant delay in the first login.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you need to troubleshoot the cache, you can see the information in <a href="../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/extract_am_cache" class="MCXref xref">Extract the Access Management Cache</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you need to troubleshoot the cache, you can see the information in Extract the Access Management Cache.

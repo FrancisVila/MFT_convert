@@ -4,25 +4,19 @@
     "weight": "200"
 }Use the CFTSSH command to describe a security profile.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for server or client mode.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for server or client mode.
 
 ## Server
 
 The CFTSSH object parameters for a server definition (DIRECT = SERVER).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -47,16 +41,10 @@ algorithm</li>
 in order of preference, for the purpose of determining the suite to be
 negotiated.</p>
 <p><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note  </strong></span>         </td>
-         <td><br />
-If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>CLIPUBKEY         </td>
@@ -110,10 +98,10 @@ are required.</p>         </td>
 The CFTSSH object parameters for a client definition (DIRECT = CLIENT).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -138,16 +126,10 @@ algorithm</li>
 in order of preference, for the purpose of determining the suite to be
 negotiated.</p>
 <p><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note  </strong></span>         </td>
-         <td><br />
-If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>CLIPRIVKEY         </td>

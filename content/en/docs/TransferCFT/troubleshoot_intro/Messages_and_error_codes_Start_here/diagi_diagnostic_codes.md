@@ -95,20 +95,14 @@ the transaction:
     path to reach the partner: another IP address, another protocol or a
     backup partner.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Protocol switching also means
-communication system (network) switching. The switching mechanism does
-not provide for use of other network resources (CFTNET commands associated
-via the CLASS) for a given protocol (CFTPROT command). Problems associated
-with network resources are masked by the common network access method
-which manages them.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Protocol switching also means
+> communication system (network) switching. The switching mechanism does
+> not provide for use of other network resources (CFTNET commands associated
+> via the CLASS) for a given protocol (CFTPROT command). Problems associated
+> with network resources are masked by the common network access method
+> which manages them.
 
 In the case of an H or K status the transfer is aborted, the error procedure can be executed:
 
@@ -130,11 +124,11 @@ table
 The following table makes references to DIAGP. For details, please see the [DIAGP section.](../general_protocol_diagnostics)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>DIAGI Code         </th>
-<th>Event         </th>
-<th>Consequence         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DIAGI Code         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Consequence         </th>
       </tr>
    </thead>
    <tbody>
@@ -1409,10 +1403,10 @@ end (PeSIT LOGON): password expired</p>         </td>
 ## SSL alert errors
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Code</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Code</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

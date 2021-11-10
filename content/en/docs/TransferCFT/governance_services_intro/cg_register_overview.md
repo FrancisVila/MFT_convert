@@ -22,31 +22,20 @@ This section describes the general steps that occurs during the registration pro
 
 Starting Copilot after installation begins the connection and registration process with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT requires the Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> shared secret to register. See the Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> documentation for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT requires the Central Governance or Flow Manager shared secret to register. See the Central Governance or Flow Manager documentation for details.
 
 1\. Copilot connects to Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> and submits its registration.
 
 -   Copilot sends a registration request through a simple authenticated SSL connection and submits its registration. Copilot authenticates the Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> server using the CA certificate pointing by the uconf:cg.ca\_cert\_id parameter. The registration request contains:
+
     -   Information about the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> instance, including its instance name, host, port and version.
     -   Two Certificate Signing Requests (CSRs) for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> to process.
 
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.         </td>
-          </tr>
-       </tbody>
-    </table>
+    > **Note:**
+    >
+    > If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.
 
 2\. <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> sends the SSL certificates to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
 
@@ -106,25 +95,20 @@ The client and server security profiles must be mutually authenticated. However,
 <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> sends the updated configuration to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. The following are the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameters updated in this process. However, you can overwrite certain default values by assigning an existing policy at registration. Please see, below for details.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td>am.passport.cg.organization         </td>
          <td><p>Org</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You must restart both <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> and Copilot following a change to this parameter.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>You must restart both Transfer CFT and Copilot following a change to this parameter.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>am.passport.domain         </td>
@@ -221,15 +205,10 @@ The client and server security profiles must be mutually authenticated. However,
       <tr>
          <td>pki.type         </td>
          <td><p>cft</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Except when using a SAF-based PKI Transfer CFT, in which case system is the value.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>Except when using a SAF-based PKI Transfer CFT, in which case system is the value.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>sentinel.trkipaddr         </td>

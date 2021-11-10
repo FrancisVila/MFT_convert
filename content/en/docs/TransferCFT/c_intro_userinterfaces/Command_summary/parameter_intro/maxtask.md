@@ -16,21 +16,15 @@ Enter the number of authorized file access tasks (default = 8). This refers to t
 The following table indicates the maximum number supported for each
 system.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When MAXTASK is set to one, a high TRANTASK value is useless.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When MAXTASK is set to one, a high TRANTASK value is useless.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>OS         </th>
-<th>Maximum number supported         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Maximum number supported         </th>
       </tr>
    </thead>
    <tbody>

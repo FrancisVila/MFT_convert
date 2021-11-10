@@ -40,12 +40,6 @@ Results
 
 The script replaces <span class="code"> \_user\_</span> in the <span class="bold_in_para">Hello </span>file with the PARTNER name, and then compress this modified file. At the end of the preprocessing , the tar file is sent to the partner. The partner can set an exec for this idf, <span class="code">test </span>in our example, that will untar the received file.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Notification is done by the <span class="code">CFTUTIL end istate=no</span>, where no is the default istate value.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Notification is done by the CFTUTIL end istate=no, where no is the default istate value.

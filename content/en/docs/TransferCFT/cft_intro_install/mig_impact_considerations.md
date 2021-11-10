@@ -5,12 +5,12 @@
 }You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Key element</p>         </th>
-<th>Originating versions         </th>
-<th>Updated versions         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Key element</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Originating versions         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Updated versions         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -127,15 +127,10 @@
          <td><p>3.4, 3.6 SP2 and lower, 3.7 and 3.8</p>         </td>
          <td><p>A BUFSIZE or FBUFSIZE value greater than 32 kiB may lead to Transfer CFT failing to exchange messages between CFTTPRO and CFTTFIL.
 If you have set a value higher than 32 kiB, please decrease it to 32768.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>As of 3.6 SP3, 3.8 SP1, and 3.9, the internal value limit is 32768.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>As of 3.6 SP3, 3.8 SP1, and 3.9, the internal value limit is 32768.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>PKIFNAME         </td>
@@ -156,15 +151,10 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td>3.3.2 or lower         </td>
          <td>3.4 and higher         </td>
          <td><p>Removed the PKIPASSW parameter from PKI commands (still available for CFTPARM).</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In earlier versions of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF <span class="code">crypto.key_fname</span> parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF crypto.key_fname parameter.</p>
+</blockquote>
 <p><span class="bold_in_para">Impact</span></p>
 <p>If you are using PKIEXT to export keys during a manual migration, you must use the same PKIPASSW (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw">PKIPASSW</a>.</p>
 <p>For information on exporting keys, please refer to <a href="../../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext">Using PKIEXT</a>.</p>         </td>
@@ -181,12 +171,12 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td>3.4 and higher         </td>
          <td><p>Updated default values of the following parameters to optimize and standardize among platforms.</p>
 <table>
-<th>
+<thead data-xmlns="">
       <tr>
-<th>Object         </th>
-<th>Parameter         </th>
-<th>Old default         </th>
-<th>New default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Object         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Old default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">New default         </th>
       </tr>
    </thead>
 <tbody data-xmlns="">
@@ -431,15 +421,10 @@ You must update the ROOTCID parameter.</p>         </td>
          <td><p>To comply with security standards, as of Transfer CFT version 3.2.2 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively.</p>
 <p><span class="bold_in_para">Impact</span></p>
 <p>This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>You do not have to remove ciphers 59, 60, 61 in the partner cipher list if you apply the Transfer CFT patch 3.0.1 SP11.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>Rotate the log         </td>

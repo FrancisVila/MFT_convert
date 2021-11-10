@@ -12,12 +12,12 @@ The default value (No) sets:
 ![](/Images/TransferCFT/temp_compat.png)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Phase         </th>
-<th>Phasestep         </th>
-<th>State         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Phase         </th>
+<th class="HeadE-Column1-Header1">Phasestep         </th>
+<th class="HeadE-Column1-Header1">State         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -137,11 +137,11 @@ The default value (No) sets:
 ## Compatibility parameters in unified configuration
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="HeadE-Column1-Header1">Parameter         </th>
+<th class="HeadE-Column1-Header1">Default value         </th>
+<th class="HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

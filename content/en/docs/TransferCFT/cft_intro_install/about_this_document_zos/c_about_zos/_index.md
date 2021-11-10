@@ -39,10 +39,10 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 **<span id="kanchor14"></span>Installation directory contents**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -92,14 +92,14 @@ The Transfer CFT z/OS components include:
 ## Special characters
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>          </th>
-<th>Description         </th>
-<th>Windows         </th>
-<th>Unix         </th>
-<th>z/OS         </th>
-<th>IBM i         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unix         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">z/OS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">IBM i         </th>
       </tr>
    </thead>
    <tbody>

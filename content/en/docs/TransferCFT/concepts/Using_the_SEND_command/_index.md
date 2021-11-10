@@ -28,15 +28,9 @@ In this example, the `store1 `partner values including the `dailysales `(IDF) a
     cftpart id=store1, idf=dailysales
     send part=store1
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in Central Governance.
 
 ### Override the model file default values
 
@@ -45,15 +39,9 @@ You can create your own model files to use with an existing partner. When specif
 
     send part=store1, idf=newmodel
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you enter the name of a model file identifier that does not exist, the partner's default model file is used. If no IDF is defined for the partner then BIN, the global model file default, is used.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you enter the name of a model file identifier that does not exist, the partner's default model file is used. If no IDF is defined for the partner then BIN, the global model file default, is used.
 
 ### Override the model file values
 
@@ -91,15 +79,9 @@ Use the appropriate indirection character (@ or #) to send all files that are l
 
     send part=store1, idf=newmodel, fname=@pub/sourcefiles/list
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The indirection character means that you are reading the file as if it contains file. Be careful that the file you are using contains a list of files.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The indirection character means that you are reading the file as if it contains file. Be careful that the file you are using contains a list of files.
 
 For more information, see <a href="send_group_of_files_cl#Sending_files_designated_by_an_indirection_file" class="MCXref xref">Use an indirection file</a>.
 
@@ -162,16 +144,10 @@ send open mode.
 
     send part=store1, idf=newmodel, nfname=remotefile
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you precede the NFNAME with an asterisk *, the receiver can choose
-to keep the current transmitted name (in open mode) or rename the file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you precede the NFNAME with an asterisk \*, the receiver can choose
+> to keep the current transmitted name (in open mode) or rename the file.
 
 <span id="Use3"></span>
 
@@ -242,15 +218,9 @@ Use the fname and wfname parameters to use this mode, also referred to as homoge
 
 See also [WFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/wfname).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Not managed by Central <span class="mc-variable suite_variables.Governance variable">Unified Flow Management</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Not managed by Central Unified Flow Management.
 
 <span id="Execute"></span>
 
@@ -276,15 +246,9 @@ error procedures](../about_transfer_processing/transfer_related_procedures) for 
 
     send part=store1, idf=model, exece=exec/errorexec.cmd
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can use the _NONE_ keyword in send and receive commands to disable the EXECSF, EXECRF, EXECSE, EXECRE and EXECSFA procedures that are defined in the general Transfer CFT environment parameter settings (CFTPARM).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can use the \_NONE\_ keyword in send and receive commands to disable the EXECSF, EXECRF, EXECSE, EXECRE and EXECSFA procedures that are defined in the general Transfer CFT environment parameter settings (CFTPARM).
 
 <span id="Use4"></span>
 

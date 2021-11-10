@@ -16,23 +16,17 @@
 
 The resulting msgfile will contain the message 'hello'.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">&lt;TransferCFTinstallation&gt;\runtime\conf</span> folder contains the <span class="code">dspcnf.xml</span> file, a DISPLAY command template, which includes a specific filter <span class="code">templatel id='msg'</span> that enables message extraction.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The &lt;TransferCFTinstallation>\\runtime\\conf folder contains the dspcnf.xml file, a DISPLAY command template, which includes a specific filter templatel id='msg' that enables message extraction.
 
 ### Sending messages
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameters</p>         </th>
-<th><p>Description</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Parameters</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

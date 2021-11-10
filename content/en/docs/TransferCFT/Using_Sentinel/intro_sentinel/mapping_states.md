@@ -18,19 +18,19 @@ For details on Sentinel states, see XFBTransfer Tracked Objects.
 In the following table, the state that is sent to Sentinel when the COMPAT parameter is set to NO, is displayed in the Sentinel state column. When COMPAT is set to YES, the state listed in the Compatible Sentinel state column is sent to Sentinel. For more information on the COMPAT settings, see [<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> backward compatibility](../../../concepts/phase_and_phasestep/processing_compatability).
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p> </p>         </th>
-<th><p>Phase</p>         </th>
-<th><p>Phasestep</p>         </th>
-<th><p>Transfer CFT State</p>         </th>
-<th><p>Transfer CFT Compatible State (uconf:</p>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p> </p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Phase</p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Phasestep</p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Transfer CFT State</p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Transfer CFT Compatible State (uconf:</p>
 <p>cft.state_compat=Yes)</p>         </th>
-<th><p>Diagi</p>         </th>
-<th><p>Acked</p>         </th>
-<th><p>Sentinel</p>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Diagi</p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Acked</p>         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Sentinel</p>
 <p>State</p>         </th>
-<th><p>Compatible Sentinel State (uconf:</p>
+<th style="text-align: center;" class="HeadD-Column1-Header1"><p>Compatible Sentinel State (uconf:</p>
 <p>cft.state_compat=Yes)</p>         </th>
       </tr>
    </thead>

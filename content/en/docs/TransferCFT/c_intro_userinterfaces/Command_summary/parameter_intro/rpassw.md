@@ -24,14 +24,8 @@ Example
 
 <span class="code">/home/&USERID/cft\_passw</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you begin a password with an indirection character (Unix @, Windows #), it is considered a reference to a file and not part of the password.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you begin a password with an indirection character (Unix @, Windows #), it is considered a reference to a file and not part of the password.
 
 [Return to Command index](../../)

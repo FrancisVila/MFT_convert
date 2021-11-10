@@ -13,10 +13,10 @@ You can access customized file system directories via the <span class="mc-variab
 To add a new alias, access the Unified Configuration uconf and configure the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>ID         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -38,10 +38,10 @@ To add a new alias, access the Unified Configuration uconf and configure the fol
 Security for Cop**i**lot GUI
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -57,11 +57,11 @@ View available drives
 To view available drives from the <span class="bold_in_para">Edit a file</span> icon in the graphical user interface, define the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Options         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Options         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -86,10 +86,10 @@ Client keep-alive
 Use this parameter to define the keep-alive interval in seconds for a client session. By default this occurs every 60 seconds.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
@@ -107,10 +107,10 @@ Client timeout
 Use this parameter to define the client timeout in minutes. The default value is 30 minutes.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
@@ -125,14 +125,14 @@ Use this parameter to define the client timeout in minutes. The default value is
 
 Web services
 
-Use this parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services](#).
+Use this parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services]().
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Value         </th>
-<th>Former value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
       </tr>
    </thead>
    <tbody>
@@ -170,11 +170,11 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 -   <span class="code">copilot.ssl.sslkeyfile= &lt;set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;not set></span>, then the format is PEM
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Supported format         </th>
-<th>Type         </th>
-<th>Extension         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported format         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Extension         </th>
       </tr>
    </thead>
    <tbody>
@@ -213,10 +213,10 @@ How to define a PKCS#12 certificate
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -244,10 +244,10 @@ How to define a DER or PEM certificate
 This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -275,10 +275,10 @@ This example uses a DER(or PEM) certificate with the private key in a separate D
 There are two additional UCONF parameters to use for HTTPS connections:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Value</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
       </tr>
    </thead>
    <tbody>

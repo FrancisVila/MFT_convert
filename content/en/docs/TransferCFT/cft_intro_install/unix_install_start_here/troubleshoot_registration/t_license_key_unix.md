@@ -11,21 +11,19 @@
 ## Obtain a license key
 
 1.  Install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. You can install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> without a license key, and enter the key later.
+
 2.  After completing the installation, or for an existing installation, use the command <span class="code" style="font-weight: bold;">cftutil about</span> to retrieve your system information.
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>Use the ABOUT command to display
-    the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
-    on which Transfer CFT is installed.         </td>
-          </tr>
-       </tbody>
-    </table>
+
+    > **Note:**
+    >
+    > Use the ABOUT command to display
+    > the Transfer CFT product, host, and key information. This command displays the characteristics of the platform
+    > on which Transfer CFT is installed.
+
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: <span class="code">fulfillment@us.axway.com</span>
     -   For an EMEA or APAC key, contact: <span class="code">product.key@axway.com</span>
+
 4.  Provide the hostname and system information for the installed or updated Transfer CFT.
 
 ## Apply a license key

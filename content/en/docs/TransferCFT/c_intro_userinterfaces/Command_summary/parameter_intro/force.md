@@ -64,11 +64,11 @@ Parameters Default value Processing (FORCE = YES)
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Parameter</p>         </th>
-<th><p>Default</p>         </th>
-<th><p>Processing when FORCE = YES</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Parameter</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Default</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Processing when FORCE = YES</p>         </th>
       </tr>
    </thead>
    <tbody>

@@ -13,27 +13,23 @@ Before setting user rights, you must define special rights for the account on wh
 The following conventions apply to the table below describing permissions to act on files:
 
 -   Transfer CFT user: This is the account that started Transfer CFT.
+
 -   USERID, and optionally GROUPID : This is the account that owns the transfer.
+
     -   Requester mode (SEND, RECV commands) is the account that executes the command.
     -   Server mode (Send and Receive templates) represents the value specified in USERID parameter.
 
-    <table>
-       <tbody>
-          <tr>
-             <td>         </td>
-             <td><span><strong>Note</strong></span>         </td>
-             <td>When referring to USERID, the same rules apply when using the optional GROUPID parameter.         </td>
-          </tr>
-       </tbody>
-    </table>
+    > **Note:**
+    >
+    > When referring to USERID, the same rules apply when using the optional GROUPID parameter.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Operating</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Operating</p>
 <p>System</p>         </th>
-<th><p>USERCTRL</p>         </th>
-<th><p>Description</p>         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>USERCTRL</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -75,30 +71,18 @@ Use the following OS-specific information to customize users.
 
 This feature allows system users to execute end-of-transfer procedures themselves. On the sender side, the system user who initiates the SEND is used to execute the end-of-transfer procedure by default. On receiver side, the USERID is specified in the corresponding CFTRECV object.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>When referring to USERID, the same rules apply when using the optional GROUPID parameter.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> When referring to USERID, the same rules apply when using the optional GROUPID parameter.
 
 To enable this feature:
 
 1.  Set <span class="code">cft.server.exec\_as\_user</span> to <span class="code">Yes</span>. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
 2.  Define the CFTRECV <span class="bold_in_para">USERID </span>option.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Additionally, you can use substitution variables to set the USERID for CFTSEND and CFTRECV objects (&amp;RUSER, &amp;SUSER, &amp;RAPPL,&amp;SAPPL, and so on).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Additionally, you can use substitution variables to set the USERID for CFTSEND and CFTRECV objects (&RUSER, &SUSER, &RAPPL,&SAPPL, and so on).
 
 Related topics
 

@@ -12,15 +12,9 @@ As of <span class="mc-variable axway_variables.Component_Long_Name variable">Tra
 
 Before beginning the upgrade procedure, download the Transfer CFT installation kit available at [support.axway.com](https://support.axway.com/).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Remember that <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> clusters must be fully stopped while performing an upgrade.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Remember that Transfer CFT clusters must be fully stopped while performing an upgrade.
 
 ## Limitation
 

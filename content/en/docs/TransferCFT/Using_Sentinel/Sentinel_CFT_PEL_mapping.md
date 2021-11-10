@@ -4,31 +4,25 @@
     "weight": "260"
 }The following tables list parameter correspondence between Transfer CFT, Sentinel, and InterPEL. You find this mapping using in migrating from InterPEL to Transfer CFT.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The fields prefixed with "MLH" are fields that are specific to the PeSIT Hors SIT protocol, which are contained in the recording transfer from the Mailbox and are accessible by the Assembly Exits.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The fields prefixed with "MLH" are fields that are specific to the PeSIT Hors SIT protocol, which are contained in the recording transfer from the Mailbox and are accessible by the Assembly Exits.
 
 ## XFBTransfer tracked object
 
 ### Roles
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -61,15 +55,15 @@ Responder "S"</p>         </td>
 ### Senders and receivers
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -168,15 +162,15 @@ Responder "S"</p>         </td>
 The product that sends the events is identified with the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -242,15 +236,15 @@ The product that sends the events is identified with the following:
 ### Transfer users
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -327,15 +321,15 @@ The product that sends the events is identified with the following:
 ### Transfer identification
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -514,15 +508,15 @@ The product that sends the events is identified with the following:
 ### Transfer validity periods
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -568,15 +562,15 @@ The product that sends the events is identified with the following:
 ### Transfer dates and times
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Name in         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Name in         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -750,15 +744,15 @@ The Sender and the Receiver record each transfer only once.         </td>
 ### Transfer protocols
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -831,15 +825,15 @@ same values         </td>
 ### Transfer options
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -949,15 +943,15 @@ same values         </td>
 ## Transfer size
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel attribute         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th><p>Transfer CFT</p>         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Transfer CFT</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -966,15 +960,10 @@ same values         </td>
          <td>Integer         </td>
          <td>N/A         </td>
          <td><p>Size of the transferred file. This size is expressed in bytes.  </p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, an estimation of size is given at the beginning of the transfer. This value is updated upon completion of the transfer with the real value.</p>
+</blockquote>         </td>
          <td>FCARS         </td>
          <td>  file_size         </td>
          <td>  MLHNBYTE         </td>
@@ -984,15 +973,10 @@ same values         </td>
          <td>Integer         </td>
          <td>N/A         </td>
          <td><p>Number of bytes transferred, after decompression, to transfer the file. This size is expressed in bytes.  </p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote>         </td>
          <td>NCARS         </td>
          <td>x_bytes         </td>
          <td>MLHABYTE         </td>
@@ -1003,15 +987,15 @@ same values         </td>
 ### Transfer structure and content
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel attribute         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th><p>Transfer CFT</p>         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Transfer CFT</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -1059,15 +1043,10 @@ same values         </td>
          <td>Integer         </td>
          <td>N/A         </td>
          <td><p>Number of record in the file. This size is expressed in bytes.  </p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For PeSIT, this value sent is crosschecked by both the sender and receiver.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For PeSIT, this value sent is crosschecked by both the sender and receiver.</p>
+</blockquote>         </td>
          <td>FREC         </td>
          <td>rec_count         </td>
          <td>MLHNBRER         </td>
@@ -1141,15 +1120,15 @@ same values         </td>
 ### Other attributes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel attribute         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>
@@ -1281,15 +1260,15 @@ route_state:</p>
 ## XFBLog tracked object
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Sentinel attribute         </th>
-<th>Data type         </th>
-<th>Length         </th>
-<th>Description         </th>
-<th>Transfer CFT         </th>
-<th>InterPEL Core         </th>
-<th>InterPEL MVS         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Sentinel attribute         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Data type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">InterPEL Core         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">InterPEL MVS         </th>
       </tr>
    </thead>
    <tbody>

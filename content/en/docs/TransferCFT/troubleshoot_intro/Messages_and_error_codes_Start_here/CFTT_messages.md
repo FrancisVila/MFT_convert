@@ -1715,15 +1715,10 @@ transfer started</p>
          <td><p>Explanation</p>         </td>
          <td><p>The transfer has been started either by the requester (&amp;str
 = requester) or by the server (&amp;str = server).</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>IDS refers to the session identifier.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>IDS refers to the session identifier.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>
@@ -1744,15 +1739,10 @@ transfer ended</p>
          <td><p>Explanation</p>         </td>
          <td><p>The transfer has been completed either by the requester (&amp;str
 = requester) or by the server (&amp;str = server).</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>IDS refers to the session identifier.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>IDS refers to the session identifier.</p>
+</blockquote>         </td>
       </tr>
    </tbody>
 </table>

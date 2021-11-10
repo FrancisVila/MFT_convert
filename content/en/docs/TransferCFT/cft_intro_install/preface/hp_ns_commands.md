@@ -108,10 +108,10 @@ You must define a TACL variable before running the command. This variable contai
 The following table gives the correspondences between the commands and the variables to use:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Command         </th>
-<th>Variable         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Variable         </th>
       </tr>
    </thead>
    <tbody>
@@ -185,11 +185,11 @@ To gather command details, Axway support may ask you to set the <span class="cod
 The <span class="code">CFTUTLX^TRACE^LEVEL</span> values are:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Value         </th>
-<th>Description         </th>
-<th>Temporary CFTUTLX files are deleted         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Temporary CFTUTLX files are deleted         </th>
       </tr>
    </thead>
    <tbody>

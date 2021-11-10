@@ -23,10 +23,10 @@ PassPort AM connector parameters
          
          
    
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -109,15 +109,9 @@ The default value is $(cft.install_dir)/extras/PassPort/csd_Transfer_CFT.xml.   
 
 1.  Set the access management type parameter to PassPort: <span style="font-family: 'Courier New'; font-size: 11pt;">am.type = passport</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The <span class="code">am.type </span>is the last parameter to set when activating PassPort AM and the first to unset when deactivating it.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The am.type is the last parameter to set when activating PassPort AM and the first to unset when deactivating it.
 
 1.  Restart the Transfer CFT and Copilot servers.
 
@@ -148,10 +142,10 @@ CFTUTIL UCONFSET ID=am.type, VALUE=passport
 ## Optional PassPort AM
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Definition         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Definition         </th>
       </tr>
    </thead>
    <tbody>
@@ -194,6 +188,6 @@ Related topics
 
 [PassPort AM CSD](../passport_am_csd)
 
-[Defining user rights Windows](#)
+[Defining user rights Windows]()
 
-[Defining user rights Unix](#)
+[Defining user rights Unix]()

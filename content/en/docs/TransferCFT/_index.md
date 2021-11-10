@@ -8,15 +8,9 @@ You can configure <span class="mc-variable suite_variables.TransferCFTName varia
 
 Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span> explains standalone options for users who have not yet activated <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or Flow Manager. Axway encourages <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> users to discover the benefits of centralized management.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Visit the <a href="../updates_and_revisions">Changelog</a> for details on new features in this version as well as previous versions.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Visit the Changelog for details on new features in this version as well as previous versions.
 
  
 
@@ -24,27 +18,27 @@ Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocType
    <tbody>
       <tr>
          <td><h2 id="for-new-users">For new users</h2>
-<p><a href="../overview_intro/about_transfer_cft">About <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></a></p>
-<p><a href="../overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a></p>
-<p><a href="../c_intro_userinterfaces/about_cftutil">Use command line</a></p>
-<p><a href="../admin_intro/start_stop_cft">Basic administrative tasks</a></p>
-<p><a href="../gettingstarted_intro/my_first_transfer_flow_using_cg" class="MCXref xref">My first transfer flow</a></p>
-<p><a href="../gettingstarted_intro/my_first_file_transfer" class="MCXref xref">My first file transfer (CL)</a></p>
-<p><a href="../gettingstarted_intro/my_first_transfer_flow_using_cg">CFTUTIL basics and help</a></p>
+<p><a href="overview_intro/about_transfer_cft">About <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></a></p>
+<p><a href="overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a></p>
+<p><a href="c_intro_userinterfaces/about_cftutil">Use command line</a></p>
+<p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
+<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" class="MCXref xref">My first transfer flow</a></p>
+<p><a href="gettingstarted_intro/my_first_file_transfer" class="MCXref xref">My first file transfer (CL)</a></p>
+<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg">CFTUTIL basics and help</a></p>
 <h2 id="for-existing-users">For existing users</h2>
-<p><a href="../app_integration_intro/intro_folder_monitor/configure_folder_monitoring">Configure folder monitoring</a></p>
-<p><a href="../about_multinode">Manage multi-node architecture</a></p>
-<p><a href="../cft_intro_install/about_this_document_zos/using_apis">Use API services</a></p>
+<p><a href="app_integration_intro/intro_folder_monitor/configure_folder_monitoring">Configure folder monitoring</a></p>
+<p><a href="about_multinode">Manage multi-node architecture</a></p>
+<p><a href="cft_intro_install/about_this_document_zos/using_apis">Use API services</a></p>
 <p>Check platform specifics</p>
-<p><a href="../admin_intro/uconf/uconf_directory">Set UCONF parameters</a></p>
+<p><a href="admin_intro/uconf/uconf_directory">Set UCONF parameters</a></p>
 <h2 id="migration-and-upgrades">Migration and upgrades</h2>
-<p><a href="../cft_intro_install/mig_impact_considerations">Impact and considerations</a></p>
+<p><a href="cft_intro_install/mig_impact_considerations">Impact and considerations</a></p>
 <h2 id="troubleshooting">Troubleshooting</h2>
-<p><a href="../troubleshoot_intro">Troubleshooting information</a></p>
-<p><a href="../troubleshoot_intro/messages_and_error_codes_start_here">Messages and error codes</a></p>
-<p><a href="../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes">Diagnostic codes</a></p>         </td>
+<p><a href="troubleshoot_intro">Troubleshooting information</a></p>
+<p><a href="troubleshoot_intro/messages_and_error_codes_start_here">Messages and error codes</a></p>
+<p><a href="troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes">Diagnostic codes</a></p>         </td>
          <td><h2 id="documentation">Documentation</h2>
-<p>Transfer CFT User Guide <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_PDF/resource/Transfer_CFT_UsersGuide_allOS_en.pdf">PDF</a> | <a href="#">Webhelp (Download)</a></p>
+<p>Transfer CFT User Guide <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_PDF/resource/Transfer_CFT_UsersGuide_allOS_en.pdf">PDF</a> | <a href="">Webhelp (Download)</a></p>
 <p>Release Notes <a href="https://docs.axway.com/bundle/TransferCFT_38_ReleaseNotes_allOS_en_HTML5/page/Content/release_notes/Transfer_CFT_ReleaseNotes_allOS_en.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_ReleaseNotes_allOS_en_PDF/resource/Transfer_CFT_ReleaseNotes_allOS_en.pdf">PDF</a></p>
 <p>Install Unix <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/UNIX/unix_install_start_here.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_unix_en_PDF/resource/TransferCFT_InstallationGuide_unix_en.pdf">PDF</a></p>
 <p>Install Windows <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Windows/Windows/windows_install_start_here.htm">HTML</a> | <a href="https://docs.axway.com/bundle/TransferCFT_38_InstallationGuide_windows_en_PDF/resource/TransferCFT_InstallationGuide_windows_en.pdf">PDF</a></p>
@@ -76,4 +70,4 @@ Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocType
    </tbody>
 </table>
 
-Document version: <span class="mc-variable System.LongDate variable">Wednesday, October 27, 2021</span>
+Document version: <span class="mc-variable System.LongDate variable">Wednesday, November 3, 2021</span>

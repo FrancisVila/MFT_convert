@@ -6,15 +6,10 @@
 
 The use of the default certificate supplied with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is strongly discouraged in a production environment. You should use your own certificates to enhance security.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>You must store certificates on the native side of the machine. Certificates located on the IFS partition are not supported.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> You must store certificates on the native side of the machine. Certificates located on the IFS partition are not supported.
 
 ## Create a PEM certificate for IBM i
 
@@ -56,15 +51,9 @@ For example:
     put USER.pem    USERPEM
     put USERK.pem    USERKPEM
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you have multiple certificates, repeat the process for each.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you have multiple certificates, repeat the process for each.
 
 ### Using binary certificates and keys
 

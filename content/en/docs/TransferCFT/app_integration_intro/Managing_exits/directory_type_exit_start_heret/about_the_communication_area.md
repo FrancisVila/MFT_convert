@@ -176,10 +176,10 @@ file identifier</p>         </td>
 ### Return codes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -256,10 +256,10 @@ CFT standard output.</p>         </td>
 ### Partner information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -437,10 +437,10 @@ SAP (Service Access Point)</p>         </td>
 ### Partner network information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -513,10 +513,10 @@ for the given network partner</p>         </td>
 ### Network dependent information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -598,10 +598,10 @@ to be checked in the caing partner address</p>         </td>
 ### Additional information
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Explanation</p>         </th>
+<th class="HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="HeadD-Column1-Header1"><p>Explanation</p>         </th>
       </tr>
    </thead>
    <tbody>

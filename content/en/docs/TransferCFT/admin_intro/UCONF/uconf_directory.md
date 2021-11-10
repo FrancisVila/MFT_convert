@@ -2,7 +2,7 @@
     "title": "UCONF parameters",
     "linkTitle": "UCONF parameters",
     "weight": "270"
-}You can download this page as a PDF [here](#).
+}You can download this page as a PDF [here]().
 
 Viewing the table
 
@@ -28,15 +28,10 @@ Parameter list
 
 The following table is an exhaustive list of the unified configuration (UCONF) values.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>Do not modify the UCONF dictionary located in the home directory unless specifically directed to do so by Axway.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> Do not modify the UCONF dictionary located in the home directory unless specifically directed to do so by Axway.
 
 **UCONF flags legend**
 
@@ -47,15 +42,9 @@ The following table is an exhaustive list of the unified configuration (UCONF) v
 -   EXPERIMENTAL: Unsupported feature.
 -   OBSOLETE: No longer used.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the <span class="code">reconfig </span>command and no restart is required.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> By default, all UCONF parameters are static and require a restart. Only parameters with the RECONFIG or IRECONFIG flags are dynamic; for these dynamic parameters only you can use the reconfig command and no restart is required.
 
 <table>
    <tbody>

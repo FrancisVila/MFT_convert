@@ -14,10 +14,10 @@
 ## Common causes
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Issue         </th>
-<th>Typical causes         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Issue         </th>
+<th colspan="5" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Typical causes         </th>
       </tr>
    </thead>
    <tbody>

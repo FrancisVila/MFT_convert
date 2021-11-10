@@ -18,15 +18,9 @@ Before performing a migration or upgrade procedure, you must:
 -   Set the Transfer CFT profile.
 -   Stop the existing version of Transfer CFT and the UI server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You can uninstall an upgrade if needed. However, doing so rolls back to the previous version before the upgrade, so all transfers and configuration modifications that were performed since the upgrade are lost.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You can uninstall an upgrade if needed. However, doing so rolls back to the previous version before the upgrade, so all transfers and configuration modifications that were performed since the upgrade are lost.
 
 <span id="Migrate"></span>
 
@@ -40,15 +34,9 @@ This section describes how to migrate the following elements:
 
 Before performing a migration be certain to review the section [Important information](#Importan).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You cannot migrate the Transfer CFT Guardian 2.3.2 catalog and communication files to Transfer CFT HP NonStop <span class="mc-variable Primary.Transfer_CFT version_long variable">3.9</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You cannot migrate the Transfer CFT Guardian 2.3.2 catalog and communication files to Transfer CFT HP NonStop 3.9.
 
 ### Partner and parameter files
 
@@ -158,7 +146,7 @@ Before performing an upgrade be certain to review the section [Important informa
 
 ### Overview
 
-You can perform an upgrade by installing Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="#" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory <span class="code">&lt;installation\_directory></span> should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
+You can perform an upgrade by installing Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> over an existing Transfer CFT 3.2.4 installation using the procedure described in <a href="" class="MCXref xref">Install Transfer CFT</a> . However, the installation directory <span class="code">&lt;installation\_directory></span> should point to the installation directory of the existing Transfer CFT 3.2.4 installation. You can then provide the same additional parameters.
 
 The installation procedure upgrades Transfer CFT, where the configuration of the existing installation is exported, and is automatically re-imported after the upgrade.
 
@@ -171,11 +159,11 @@ Extracted data
 The auto-import directory contains the following:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>File         </th>
-<th>Directory         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Directory         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

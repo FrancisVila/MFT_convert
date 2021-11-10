@@ -7,12 +7,12 @@
 <span class="autonumber"></span>Internal CycleID structure PeSIT
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Offset</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>PI</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Offset</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PI</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -90,12 +90,12 @@
 <span class="autonumber"></span>Internal CycleID structure SFTP
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Offset</p>         </th>
-<th><p>Length</p>         </th>
-<th>Value         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Offset</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

@@ -3,9 +3,9 @@
     "linkTitle": "Appendix B: Menu mapping",
     "weight": "220"
 }<table>
-   <th>
+   <thead>
       <tr>
-<th><span id="_Toc429559254"></span>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><span id="_Toc429559254"></span>
 <h2 id="transfer-cft-2.7.1"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 2.7.1</h2>         </th>
       </tr>
    </thead>
@@ -43,9 +43,9 @@
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><span id="_Toc429559255"></span>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><span id="_Toc429559255"></span>
 <h2 id="transfer-cft-3.0.1"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.0.1</h2>         </th>
       </tr>
    </thead>
@@ -80,9 +80,9 @@
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><h2 id="transfer-cft-3.1.3-sp4"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.1.3 SP4</h2>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfer-cft-3.1.3-sp4"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.1.3 SP4</h2>         </th>
       </tr>
    </thead>
    <tbody>
@@ -121,9 +121,9 @@
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><h2 id="transfer-cft-3.2.x-and-higher"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.x and higher</h2>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfer-cft-3.2.x-and-higher"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.x and higher</h2>         </th>
       </tr>
    </thead>
    <tbody>

@@ -109,9 +109,9 @@ The table below summarizes the parameter values authorized as a function
 of the various functional levels negotiated for the protocol.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Functional negotiated v         </th>
+<th colspan="3" class="HeadD-Column1-Header1">Functional negotiated v         </th>
       </tr>
    </thead>
    <tbody>

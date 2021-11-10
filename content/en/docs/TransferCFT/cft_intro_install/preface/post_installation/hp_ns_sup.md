@@ -53,11 +53,11 @@ More information and additional commands are described in the following sections
 The following table lists the UCONF parameters related to the NonStop option configuration. See the <a href="../../intro_os_features/hp_ns_batch#UCONF" class="MCXref xref">UCONF parameters</a> descriptions for more detailed information.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -151,15 +151,9 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
 
 -   KILL is only valid for the Transfer CFT and Transfer CFT Copilot servers.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The SHUT option only apply to the Transfer CFT sever.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> The SHUT option only apply to the Transfer CFT sever.
 
 -   CFTUTIL SHUT FAST=YES the equivalent is cftsup CFT SHUT FAST=YES
 

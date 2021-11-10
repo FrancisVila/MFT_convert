@@ -96,11 +96,11 @@ message FPDU.
 Transfer CFT values
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>PI         </th>
-<th>Description         </th>
-<th>Transfer
+<th class="HeadE-Column1-Header1">PI         </th>
+<th class="HeadE-Column1-Header1">Description         </th>
+<th class="HeadD-Column1-Header1">Transfer
 CFT value         </th>
       </tr>
    </thead>

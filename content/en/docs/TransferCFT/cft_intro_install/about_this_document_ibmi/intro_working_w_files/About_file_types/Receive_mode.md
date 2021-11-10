@@ -11,15 +11,15 @@ File type when the file does not exist
 The following table lists the different types of files that can be created on an IBM i system if the file to receive does not already exist:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FTYPE         </th>
-<th>FRECFM         </th>
-<th>Created file         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FRECFM         </th>
+<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Created file         </th>
       </tr>
       <tr>
-<th>Type         </th>
-<th>Max record length         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Max record length         </th>
       </tr>
    </thead>
    <tbody>
@@ -69,29 +69,23 @@ File type when the file already exists
 
 The following table describes the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Bold  values indicate a recommended combination. For example, when <strong>FTYPE=D</strong> and <strong>FRECFM=V</strong> then <strong><strong>FLRECL+5 / 5</strong></strong> is the recommended PF-SRC.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Bold  values indicate a recommended combination. For example, when FTYPE=D and FRECFM=V then FLRECL+5 / 5 is the recommended PF-SRC.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>  FTYPE         </th>
-<th>  FRECFM         </th>
-<th>Existing file         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">  FTYPE         </th>
+<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">  FRECFM         </th>
+<th style="text-align: center;" colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Existing file         </th>
       </tr>
       <tr>
-<th><p>PF-DTA</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PF-DTA</p>
 <p>Record length / member header</p>         </th>
-<th><p>PF-SRC</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PF-SRC</p>
 <p>Record length / member header</p>         </th>
-<th><p>Overwriting on a SAVF</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Overwriting on a SAVF</p>
 <p>with FACTION=ERASE</p>         </th>
       </tr>
    </thead>

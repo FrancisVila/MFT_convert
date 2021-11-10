@@ -25,15 +25,9 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 -   To ramp up a Transfer CFT Disaster Recovery instance (for example, on a DR LPAR for z/OS systems).
 -   If you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You require as many keys as instances of <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You require as many keys as instances of Transfer CFT running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
 ## Obtain a license key
 
@@ -81,12 +75,6 @@ Access the &lt;TARGET>.INSTALL library, and run the JCL called **CFTABOUT**. Nea
 
 In this example, you would provide the CPU ID **000000000ABC1234**.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Your cpuid will differ from those shown in the examples.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Your cpuid will differ from those shown in the examples.

@@ -365,15 +365,9 @@ As this mode does not comply with the PeSIT external to SIT standard,
 it is recommended that you leave the default LOGON value when the partners
 concerned do not all use Transfer CFT.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+>  
 
 -   When Transfer CFT
     is the server, it adapts dynamically to the mode required by the requester
@@ -462,9 +456,9 @@ The table below summarizes the parameter values authorized according
 to the functional levels negotiated.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Negotiated functional level          </th>
+<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Negotiated functional level          </th>
       </tr>
    </thead>
    <tbody>

@@ -54,15 +54,9 @@ The purpose of the My first file transfer section is to help you feel comfortabl
 
 In the following sections, we'll take a look at additional <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> transfer modes, as well as some useful configuration parameters. With Transfer CFT, the transfer initiator can be either the sender of the file or the receiver, as indicated in the examples below. Additionally, in these examples we will use the convention that the requester is the client, so the transfer description may read <span class="bold_in_para">Requester/Sender</span> if the client is supplying the file.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For more information on a command and a list of available parameters, enter <span class="code">CFTUTIL help cmd=&lt;name of command&gt;</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For more information on a command and a list of available parameters, enter CFTUTIL help cmd=&lt;name of command>.
 
 <span id="Perform2"></span>
 
@@ -75,10 +69,10 @@ Let's start by performing the same type of transfer as in the sample configurati
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Requester/Sender         </th>
-<th>Server/Receiver         </th>
+<th class="HeadE-Column1-Header1">Requester/Sender         </th>
+<th class="HeadD-Column1-Header1">Server/Receiver         </th>
       </tr>
    </thead>
    <tbody>
@@ -164,10 +158,10 @@ In explicit mode, an application makes a specific file available for a defined p
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Server/Sender         </th>
-<th>Requester/Receiver         </th>
+<th class="HeadE-Column1-Header1">Server/Sender         </th>
+<th class="HeadD-Column1-Header1">Requester/Receiver         </th>
       </tr>
    </thead>
    <tbody>
@@ -256,10 +250,10 @@ This transfer mode is the same as the previously described explicit mode but pro
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Server/Sender         </th>
-<th><p>Requester/Receiver</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Sender         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Requester/Receiver</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -350,10 +344,10 @@ The implicit transfer mode is often used to make a file whose content is frequen
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Server/Sender         </th>
-<th>Requester/Receiver         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Sender         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Requester/Receiver         </th>
       </tr>
    </thead>
    <tbody>
@@ -438,10 +432,10 @@ This mode is similar to the FTP put command. It allows you to define the file na
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Requester/Sender         </th>
-<th>Server/Receiver         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Requester/Sender         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Receiver         </th>
       </tr>
    </thead>
    <tbody>
@@ -529,10 +523,10 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Requester/Receiver</p>         </th>
-<th>Server/Sender         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Requester/Receiver</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Sender         </th>
       </tr>
    </thead>
    <tbody>
@@ -631,11 +625,11 @@ Additionally, you can define what occurs if a partner is unknown, how the script
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Requester/Sender         </th>
-<th>Server/Receiver – PHOENIX         </th>
-<th>Server/Receiver – NEWYORK         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Requester/Sender         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Receiver – PHOENIX         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Receiver – NEWYORK         </th>
       </tr>
    </thead>
    <tbody>
@@ -767,12 +761,12 @@ More information...
 ![In this example, the Receiver Paris site collects or receives a dedicated file from multiple partners](/Images/TransferCFT/2013_g_TransferCFT_Collect1.png)
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Client/Receiver         </th>
-<th><p>Server/Sender</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Client/Receiver         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Server/Sender</p>
 <p>PHOENIX</p>         </th>
-<th><p>Server/Sender</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Server/Sender</p>
 <p>NEW YORK</p>         </th>
       </tr>
    </thead>
@@ -905,15 +899,9 @@ View an example
      
     LISTCAT
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In these examples we created partners using the default MODE value, which is REPLACE. You can also use the MODE=CREATE, to create a new <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In these examples we created partners using the default MODE value, which is REPLACE. You can also use the MODE=CREATE, to create a new Transfer CFT partner.
 
 #### Additional information
 

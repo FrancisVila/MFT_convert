@@ -10,15 +10,9 @@ As of <span class="mc-variable axway_variables.Component_Long_Name variable">Tra
 
 All passwords stored in the UCONF dictionary, or in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> databases (for example, CFTPART, CFTPARM) are cyphered using the key generated at installation. If you are performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See also silent mode for details on using the silent installation method.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See also silent mode for details on using the silent installation method.
 
 <span id="Before"></span>
 
@@ -76,15 +70,9 @@ You can set these using command line or the configuration file. The values passe
 
 ## Upgrade Transfer CFT 3.1.3, 3.2.x, or 3.3.2 to <span class="mc-variable Primary.Transfer_CFT version_long variable">3.9</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Remember to update the product key between versions.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Remember to update the product key between versions.
 
 **Step 1: Upgrade to the latest Transfer CFT 3.1.3, 3.2.x, or 3.3.2 Service Pack**
 
@@ -98,27 +86,16 @@ Run the Axway Installer in update mode.
 
     Example: Transfer\_CFT\_3.1.3\_SP3\_aix-power-64\_BN8712000.zip
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In this step you are working with a zip file (not a jar as in earlier Installer versions). Do NOT unzip/uncompress the zip file.
 
 Step 2: Upgrade to Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Caution  </strong></span>         </td>
-         <td>This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Caution  
+> This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.
 
 1.  Uncompress the Transfer CFT installation kit.
 

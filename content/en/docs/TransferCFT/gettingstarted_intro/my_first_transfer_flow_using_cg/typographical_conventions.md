@@ -8,17 +8,11 @@ parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Use the <a href="../../../c_intro_userinterfaces/command_summary">Command
-index</a> to help locate a command, and the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Parameter
-index</a> for parameter details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Use the Command
+> index to help locate a command, and the Parameter
+> index for parameter details.
 
 <span id="Command_description"></span>
 
@@ -72,11 +66,11 @@ There are two types of parameters mandatory and optional:
 Each parameter description applies the following general syntax:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>PARAMETER = value(s)</p>         </th>
-<th><p>Information</p>         </th>
-<th><p>SPECIFIC</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PARAMETER = value(s)</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Information</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>SPECIFIC</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -129,11 +123,11 @@ The notation conventions generally used to describe parameter values
 are listed in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Notation         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Notation         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -186,11 +180,11 @@ The conventions used for generic-type values are listed in the following
 table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Notation         </th>
-<th>Example         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Notation         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
       </tr>
    </thead>
    <tbody>
@@ -293,15 +287,9 @@ The following conventions apply when using double quotes (hereafter referred to 
 -   Enclosing in quotes " " keeps case sensitivity for applicable parameters as listed in the **Note** below.
 -   Enclosing in a single quote ' ' keeps spaces in the value
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Parameters affected by the quote sensitivity include: FLOWNAME, RAPPL, RUSER, SAPPL, SOURCEAPPL, SUSER, TARGETAPPL, NRPASSW, NSPART, NSPASSW.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Parameters affected by the quote sensitivity include: FLOWNAME, RAPPL, RUSER, SAPPL, SOURCEAPPL, SUSER, TARGETAPPL, NRPASSW, NSPART, NSPASSW.
 
 Lastly, to use the quote character in a parameter string you have to repeat it, for example:
 
@@ -317,10 +305,10 @@ The conventions used for values concerning preset categories are listed
 in the following table.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Description         </th>
-<th>Notation         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Notation         </th>
       </tr>
    </thead>
    <tbody>
@@ -446,10 +434,10 @@ Specificity concerning the PeSIT protocol. A protocol dependent parameter may in
 protocol variants, indicated as follows:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Protocol         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Protocol         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -471,10 +459,10 @@ protocol variants, indicated as follows:
 The parameter setting commands are presented in the following format:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Syntax</p>         </th>
-<th><p>Command syntax listed here [see
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Syntax</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Command syntax listed here [see
 parameters below]</p>         </th>
       </tr>
    </thead>

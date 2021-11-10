@@ -9,11 +9,11 @@
 The following table lists the Sentinel parameters in the unified configuration and the corresponding former Sentinel parameter.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UCONF parameter         </th>
-<th>Default         </th>
-<th><p>Former Sentinel parameter</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Former Sentinel parameter</p>
 <p>TRKCNF</p>         </th>
       </tr>
    </thead>
@@ -186,11 +186,11 @@ The following table lists the Heartbeat parameters that you can set in the unifi
 Each Transfer CFT environment number n (from 1 to 5) has its own corresponding Heartbeat script. You should check the default names (such as in the production library, jobd, and Transfer CFT file) that are used in the script.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Unified configuration parameter         </th>
-<th>Default value         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

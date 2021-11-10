@@ -16,10 +16,10 @@ File characteristics that are found automatically for sending are listed in the 
 **File characteristics**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Parameter         </th>
-<th>Found automatically for sending         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Found automatically for sending         </th>
       </tr>
    </thead>
    <tbody>
@@ -49,11 +49,11 @@ File characteristics that are found automatically for sending are listed in the 
 **FTYPE and FRECFM combinations for sending**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Type of file to be sent         </th>
-<th>Implicit value of FTYPE         </th>
-<th>Implicit value of FRECFMz         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type of file to be sent         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Implicit value of FTYPE         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Implicit value of FRECFMz         </th>
       </tr>
    </thead>
    <tbody>
@@ -100,27 +100,21 @@ File characteristics that are found automatically for sending are listed in the 
    </tbody>
 </table>
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Variable SPANNED files can be routed through an intermediary Transfer CFT for the PeSIT protocol only (ANY profile). In this case, the file received on Transfer CFT z/OS is always in the ‘U’ format.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Variable SPANNED files can be routed through an intermediary Transfer CFT for the PeSIT protocol only (ANY profile). In this case, the file received on Transfer CFT z/OS is always in the ‘U’ format.
 
 The PDS files copied by IEBCOPY are also received in the ‘U’ format, which is compatible with IEBCOPY.
 
 **Receiving values for FORG, FTYPE and FRECFM**
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>FORG         </th>
-<th>FTYPE         </th>
-<th>FRECFM         </th>
-<th>  Type of receive file         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FORG         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
+<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FRECFM         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">  Type of receive file         </th>
       </tr>
    </thead>
    <tbody>

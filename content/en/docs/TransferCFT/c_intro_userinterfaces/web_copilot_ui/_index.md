@@ -70,11 +70,11 @@ The user that starts the Copilot server must have write permission for the Trans
 The supported authentication methods are:
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Authentication method         </th>
-<th>copilot.restapi.authentication_method         </th>
-<th>Details         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Authentication method         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">copilot.restapi.authentication_method         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -82,17 +82,12 @@ The supported authentication methods are:
          <td>Operating System         </td>
          <td>system         </td>
          <td><p>The user/password is checked against the operating system.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>We strongly recommend that you set <span class="code">copilot.misc.createprocessasuser=</span><span class="code" style="font-weight: bold;">yes </span>when using the system option.         </td>
-      </tr>
-   </tbody>
-</table>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.</p>
+</blockquote>
 <p><strong>Unix</strong></p>
-<p>You must use <span class="code">cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="#" class="MCXref xref">Using system users - UNIX</a> for details.</p>
+<p>You must use <span class="code">cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.</p>
 <ul>
 <li>Create a group "group1": <span style="font-family: &#39;Courier New&#39;;">groupadd group1</span></li>
 <li>Add user "user1" to group "group1": <span style="font-family: &#39;Courier New&#39;;">usermod -a -G group1 user1</span></li>
@@ -103,15 +98,10 @@ The supported authentication methods are:
 <li>Create a group "group1": <span style="font-family: &#39;Courier New&#39;;">net localgroup group1 /add</span></li>
 <li>Add user "user1" to group "group1": <span style="font-family: &#39;Courier New&#39;;">net localgroup group1 user1 /add</span></li>
 </ul>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For a user belonging to a domain, use: <span style="font-family: &#39;Courier New&#39;;">domain\user1</span> instead of <span style="font-family: &#39;Courier New&#39;;">user1</span>         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>For a user belonging to a domain, use: domain\user1 instead of user1</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>Access Management         </td>
@@ -137,25 +127,13 @@ The supported authentication methods are:
 <span class="autonumber"></span>
 <img src="/Images/TransferCFT/authentication_copilot_server.png" class="maxWidth" />
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>1. If copilot.restapi.authentication_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = system.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> 1\. If copilot.restapi.authentication\_method = system, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = system.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>2. If copilot.restapi.authentication_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group_database = xbfadm.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> 2\. If copilot.restapi.authentication\_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = xbfadm.
 
  
 
@@ -186,15 +164,9 @@ You can use the following UCONF parameters to manage this option:
 -   `copilot.general.login_failures_fname`: A file that stores data shared between Transfer CFT and Copilot.
 -   `copilot.general.max_login_failures`: An integer that sets the maximum number of login failures for a user (default is 3, and 0 disables this option).
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In a multi-host environment, an attacker may have up to the <span class="code">copilot.general.max_login_failures * &lt;number of host&gt;</span> tries before the user is locked if the file is not in a directory shared by all hosts.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In a multi-host environment, an attacker may have up to the copilot.general.max\_login\_failures \* &lt;number of host> tries before the user is locked if the file is not in a directory shared by all hosts.
 
 When the maximum number of login failures is reached, the user account is locked for 30 seconds.
 
@@ -217,15 +189,9 @@ Keyboard shortcuts provide a way to navigate the user interface from the keyboar
 -   From the **New** \[Transfer\] page, for example, press Enter to begin a new request.
 -   To navigate across the page using keyboard shortcuts, use Tab to move to the next field, or Shift + Tab to go back.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Keyboard shortcuts on Firefox are largely nonfunctional.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Keyboard shortcuts on Firefox are largely nonfunctional.
 
 ## Limitations
 

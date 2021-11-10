@@ -8,15 +8,9 @@
 
 In a multi-node context, a shared file system allows multiple applications to access the same files at the same time. Two typical shared file system implementations are NAS (network attached storage) and SAN (storage area network). This section describes GPFS, NFSv4, AWS EFS, and SMB/CIFS as they pertain to Transfer CFT multi-node installations.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>In <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> In Transfer CFT, you can use any Portable Operating System Interface (POSIX) compliant shared file system for transferable application files.
 
 <span id="Using_GPFS_..5"></span><span id="Using_GPFS"></span>
 
@@ -91,10 +85,10 @@ NFS implements a weak data consistency called "Close To Open consistency" or <sp
 The following table summarizes the recommended NFSv4 mount options. Note that depending on the OS platform, only one of the three locking options should be available.
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Correct option         </th>
-<th>Incorrect option         </th>
+<th class="HeadE-Column1-Header1">Correct option         </th>
+<th class="HeadD-Column1-Header1">Incorrect option         </th>
       </tr>
    </thead>
    <tbody>
@@ -179,28 +173,22 @@ This possible data corruption is not detectable at the time of occurrence, becau
 
 Enables replies to requests only after the changes have been committed to stable storage.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>For more information on these options, refer to <em>NFS mount and export options</em> in the UNIX man pages (for example, <a href="http://man7.org/linux/man-pages/man5/nfs.5.html" class="MCTopicPopup MCTopicPopupHotSpot a">here</a>).         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> For more information on these options, refer to NFS mount and export options in the UNIX man pages (for example, here).
 
 <span id="Synchronous___asynchronous_option_impact_..22"></span><span id="Synchronous___asynchronous_option_impact"></span><span id="Impact"></span>
 
 #### Synchronous / asynchronous option impact
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Client         </th>
-<th>Server         </th>
-<th>Internal data         </th>
-<th>Transferable data         </th>
-<th>Performance         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Client         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Internal data         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transferable data         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Performance         </th>
       </tr>
    </thead>
    <tbody>
@@ -250,15 +238,9 @@ Legend:
 
 The NFSv4 locking lease period affects the Transfer CFT delay required to detect node failovers. The default value for this parameter is typically 90 seconds. On systems where this parameter is tunable, configuring a shorter value can significantly reduce Transfer CFT node failovers.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>You should configure the lease time together with the UCONF <span class="code">copilot.node_manager.watchperiod</span> parameter, noting the restriction that NFS lease time &gt; 2 * <span class="code">copilot.node_manager.watchperiod</span>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> You should configure the lease time together with the UCONF copilot.node\_manager.watchperiod parameter, noting the restriction that NFS lease time &gt; 2 \* copilot.node\_manager.watchperiod.
 
 <span id="Perform_a_NAS failover_..24"></span><span id="Perform_a_NAS failover"></span><span id="Perform"></span>
 
@@ -319,12 +301,6 @@ It is recommended that you use SMB version 2 or higher with Transfer CFT.
 
 CIFS, Common Internet File System, is an out-dated SMB protocol variant.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Samba suite usage is not recommended with Transfer CFT.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Samba suite usage is not recommended with Transfer CFT.

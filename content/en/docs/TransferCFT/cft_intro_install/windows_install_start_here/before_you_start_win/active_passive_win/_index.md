@@ -4,15 +4,9 @@
     "weight": "180"
 }This section describes how to install an active/passive architecture, as described in [About Multi-node architecture.](../../../../about_multinode)
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>Transfer CFT supports all POSIX file systems. Active/passive shared disks must be POSIX compliant!         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> Transfer CFT supports all POSIX file systems. Active/passive shared disks must be POSIX compliant!
 
 A cluster installation of Transfer CFT without multi-node is an active/passive installation as described below:
 
@@ -27,15 +21,9 @@ A cluster installation of Transfer CFT without multi-node is an active/passive i
     -   Only one host is active
     -   Only one Transfer CFT runtime environment is running on the active host
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>After installing applications in active/passive mode, you must implement the <span class="bold_in_para" style="font-weight: bold;">cft start</span>, <span class="bold_in_para">cft stop</span>, and <span class="bold_in_para">cft status</span> scripts for the cluster.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> After installing applications in active/passive mode, you must implement the cft start, cft stop, and cft status scripts for the cluster.
 
 Shared Directory
 
@@ -53,15 +41,9 @@ The path and name of the local directory where you want to install the first clu
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>See <a href="../n_active_active/shared_file_prereq_win" class="MCXref xref">Shared file system prerequisites</a> for details.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> See Shared file system prerequisites for details.
 
 You can use a single key for a multi-node installation, as either:
 
@@ -96,16 +78,11 @@ Create as many copies of the initialize.properties file as you have hosts in the
       <tr>
          <td>LoadBalancer_Host         </td>
          <td><p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.</p>
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>The load
-balancer is used to connect to the Transfer CFT Copilot server.         </td>
-      </tr>
-   </tbody>
-</table>         </td>
+<blockquote>
+<p><strong>Note:</strong></p>
+<p>The load
+balancer is used to connect to the Transfer CFT Copilot server.</p>
+</blockquote>         </td>
       </tr>
       <tr>
          <td>LoadBalancer_Port         </td>

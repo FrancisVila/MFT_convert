@@ -33,12 +33,12 @@ And the corresponding catalog entry  would include the DIAGI=416 and DIAGP=MAXC
 ## How to configure
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>UCONF value         </th>
-<th>Type         </th>
-<th>Default         </th>
-<th>Description         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF value         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
       </tr>
    </thead>
    <tbody>

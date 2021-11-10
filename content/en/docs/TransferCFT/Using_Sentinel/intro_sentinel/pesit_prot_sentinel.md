@@ -14,14 +14,14 @@
 ## Monitoring errors
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -74,14 +74,14 @@
 ## Monitoring tracked-event messages
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -128,14 +128,14 @@
 ## Monitoring processing cycles
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Sentinel</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Sentinel</p>
 <p>attribute</p>         </th>
-<th><p>Data Type</p>         </th>
-<th><p>Length</p>         </th>
-<th><p>Description</p>         </th>
-<th><p>Name in</p>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
 <p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
       </tr>
    </thead>
@@ -182,14 +182,14 @@ In the XFBTransfer Tracked Object, the Attributes ‘Direction” and “IsServe
 Receiver/Server transfer states
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>State</p>         </th>
-<th><p>Compatible Sentinel State</p>         </th>
-<th><p>IsEnd</p>         </th>
-<th><p>IsAlert</p>         </th>
-<th><p>IsException</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Compatible Sentinel State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsEnd</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsAlert</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsException</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -303,14 +303,14 @@ Receiver/Server transfer states
 Sender/Server transfer states
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>State</p>         </th>
-<th><p>Compatible Sentinel State</p>         </th>
-<th><p>IsEnd</p>         </th>
-<th><p>IsAlert</p>         </th>
-<th><p>IsException</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Compatible Sentinel State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsEnd</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsAlert</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsException</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -416,14 +416,14 @@ Sender/Server transfer states
 Receiver/Requester transfer states
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>State</p>         </th>
-<th><p>Compatible Sentinel State</p>         </th>
-<th><p>IsEnd</p>         </th>
-<th><p>IsAlert</p>         </th>
-<th><p>IsException</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Compatible Sentinel State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsEnd</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsAlert</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsException</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -529,14 +529,14 @@ Receiver/Requester transfer states
 Sender/Requester transfer states
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>State</p>         </th>
-<th><p>Compatible Sentinel State</p>         </th>
-<th><p>IsEnd</p>         </th>
-<th><p>IsAlert</p>         </th>
-<th><p>IsException</p>         </th>
-<th><p>Description</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Compatible Sentinel State</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsEnd</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsAlert</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>IsException</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>

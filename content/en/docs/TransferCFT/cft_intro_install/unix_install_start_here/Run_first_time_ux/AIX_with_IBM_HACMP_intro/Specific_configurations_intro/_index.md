@@ -12,11 +12,11 @@ other operating systems:
 ## Specific values tables
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th>Notation         </th>
-<th>Object         </th>
-<th>Value         </th>
+<th class="HeadE-Column1-Header1">Notation         </th>
+<th class="HeadE-Column1-Header1">Object         </th>
+<th class="HeadD-Column1-Header1">Value         </th>
       </tr>
    </thead>
    <tbody>
@@ -58,10 +58,10 @@ form </p>         </td>
 ## Names of default files used by CFTUTIL
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p><strong>Objet</strong> </p>         </th>
-<th><p><span style="font-weight: bold;">Default name</span> </p>         </th>
+<th class="HeadE-Column1-Header1"><p><strong>Objet</strong> </p>         </th>
+<th class="HeadD-Column1-Header1"><p><span style="font-weight: bold;">Default name</span> </p>         </th>
       </tr>
    </thead>
    <tbody>

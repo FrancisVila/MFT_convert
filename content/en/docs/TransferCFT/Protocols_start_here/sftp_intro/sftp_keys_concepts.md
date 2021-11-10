@@ -17,15 +17,9 @@ An SSH session is established in two steps:
 
 If you are already familiar with SSH concepts are ready for details on configuring the CFTSSH object, please see <a href="../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh" class="MCXref xref">CFTSSH - Security profile</a>.
 
-<table>
-   <tbody>
-      <tr>
-         <td>         </td>
-         <td><span><strong>Note</strong></span>         </td>
-         <td>If you are ready to generate a key pair, you can go directly to <a href="../new_pki_keys_use">Use PKIKEYGEN to generate and import a key pair</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+> **Note:**
+>
+> If you are ready to generate a key pair, you can go directly to Use PKIKEYGEN to generate and import a key pair.
 
 ## Negotiating a secured session
 
