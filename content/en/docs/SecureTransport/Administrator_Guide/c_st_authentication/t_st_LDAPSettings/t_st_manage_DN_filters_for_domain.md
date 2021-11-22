@@ -2,7 +2,7 @@
     "title": "Manage DN filters for a domain",
     "linkTitle": "Manage DN filters for a domain",
     "weight": "350"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses DN filters to accept users with matching DNs. For details, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
+}{{< SecureTransport/componentshortname  >}} uses DN filters to accept users with matching DNs. For details, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
 
 **Related topics:**
 

@@ -2,7 +2,7 @@
     "title": "Define LDAP search criteria for a domain",
     "linkTitle": "Define LDAP search criteria for a domain",
     "weight": "320"
-}For information about how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the search criteria, see <a href="../../c_st_ldap_connections_binds_searches#LDAP2" class="MCXref xref">LDAP connections, binds, and searches</a>.
+}For information about how {{< SecureTransport/componentshortname  >}} uses the search criteria, see <a href="../../c_st_ldap_connections_binds_searches#LDAP2" class="MCXref xref">LDAP connections, binds, and searches</a>.
 
 > **Note:**
 >
@@ -55,7 +55,7 @@ Fill in the search criteria as described below:
 
 Once you are done, click **Save**.
 
-The **Alias Query** field is used to perform real user look-up by email address to filter (limit) the search. If the **Alias Query** filter is selected, the search is performed not only by email but by email OR the specified filter in the **Alias Query** field. The real user look-up also returns only PERSON entities and no other object classes. So, you do not have to add attribute (`objectClass=Person`) in the field because <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> inserts it in the filter. The value of the **Alias Query** field uses the search filter syntax described in *RFC 4515: Lightweight Directory Access Protocol (LDAP): String Representation of Search Filters (June 2006)*, (<http://www.rfc-editor.org/rfc/pdfrfc/rfc4515.txt.pdf>).
+The **Alias Query** field is used to perform real user look-up by email address to filter (limit) the search. If the **Alias Query** filter is selected, the search is performed not only by email but by email OR the specified filter in the **Alias Query** field. The real user look-up also returns only PERSON entities and no other object classes. So, you do not have to add attribute (`objectClass=Person`) in the field because {{< SecureTransport/componentshortname  >}} inserts it in the filter. The value of the **Alias Query** field uses the search filter syntax described in *RFC 4515: Lightweight Directory Access Protocol (LDAP): String Representation of Search Filters (June 2006)*, (<http://www.rfc-editor.org/rfc/pdfrfc/rfc4515.txt.pdf>).
 
 The basic syntax of a search filter is:
 
@@ -343,9 +343,9 @@ Use backslash (`\`) followed by two hexadecimal digits to specify any special ch
 
 ## Special values
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> enables to reference the following values by replacing them:
+{{< SecureTransport/componentshortname  >}} enables to reference the following values by replacing them:
 
-`%s` – Complete email address. ( <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> replaces `%s` in the value with the complete email address.)
+`%s` – Complete email address. ( {{< SecureTransport/componentshortname  >}} replaces `%s` in the value with the complete email address.)
 
 `%u` – User name. (SecureTransport replaces `%u` with the user name.)
 
@@ -371,11 +371,11 @@ Either the cn attribute is the user name or the mail attribute is the email addr
 2.  For two LDAP users a1 and b1, having the same settings, add new LDAP attributes:
     -   For user a1 add attribute: `mobile = a1@st1.lab.sofi.axway.int`
     -   For user b1 add attribute: `mail = b1@st1.lab.sofi.axway.int`
-3.  The users exist on same domain in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. So, create two new attributes in the *Attributes List* section on the *LDAP Domain Settings* page and map them to the LDAP attributes:  
+3.  The users exist on same domain in {{< SecureTransport/componentshortname >}}. So, create two new attributes in the *Attributes List* section on the *LDAP Domain Settings* page and map them to the LDAP attributes:  
     <table>
        <thead>
           <tr>
-    <th class="HeadE-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attribute name         </th>
+    <th class="HeadE-Column1-Header1">{{< SecureTransport/componentshortname  >}} attribute name         </th>
     <th class="HeadD-Column1-Header1">LDAP attribute name         </th>
           </tr>
        </thead>

@@ -33,7 +33,7 @@ If you need to restart any service (admin, protocol, etc.), it is recommended to
 ## Multiple Edge specifics
 
 -   It is recommended to have only one Server StatefulSet in the internal Kubernetes cluster, with multiple Edge StatefulSets (if needed) in the DMZ Kubernetes cluster.
--   Multiple Edges in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration are supported only when a separate zone is configured for each Edge. See section <a href="../using-st-cont-delivery/additional-network-zones" class="MCXref xref">Multiple network zones</a> for more info.
+-   Multiple Edges in the {{< SecureTransport/componentshortname >}} configuration are supported only when a separate zone is configured for each Edge. See section <a href="../using-st-cont-delivery/additional-network-zones" class="MCXref xref">Multiple network zones</a> for more info.
 -   Changes in configuration which is dynamically reloaded is not replicated if there is more than one Edge. See section <a href="../using-st-cont-delivery/initial-deployment" class="MCXref xref">Initial deployment</a> for more info.
 -   In multiple (more than one) Edge deployments, HTTP, FTP and SSH sessions established on the Edge side cannot be killed via the Server Usage monitor on the SecureTransport Server. The administrator can manipulate via the Server Usage monitor only the local sessions of each SecureTransport Edge.
 

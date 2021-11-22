@@ -10,7 +10,7 @@ SecureTransport can be integrated into a SiteMinder SSO environment and use Site
 >
 > Before configuring SiteMinder settings, be sure to read SiteMinder integration.
 
-Before using <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> with SiteMinder, you must configure the SiteMinder settings using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool.
+Before using {{< SecureTransport/componentshortname  >}} with SiteMinder, you must configure the SiteMinder settings using the {{< SecureTransport/componentshortname  >}} Administration Tool.
 
 > **Note:**
 >
@@ -69,7 +69,7 @@ Before using <span class="mc-variable axway_variables.Component_Short_Name varia
           </tr>
           <tr>
              <td>Agent Name         </td>
-             <td>The name for the SiteMinder agent that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> should use when connecting to the SiteMinder Policy Server.         </td>
+             <td>The name for the SiteMinder agent that {{< SecureTransport/componentshortname  >}} should use when connecting to the SiteMinder Policy Server.         </td>
              <td>Required         </td>
           </tr>
           <tr>
@@ -79,12 +79,12 @@ Before using <span class="mc-variable axway_variables.Component_Short_Name varia
           </tr>
           <tr>
              <td>Shared Secret         </td>
-             <td>The password for the SiteMinder agent that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to connect to the Policy Server.         </td>
+             <td>The password for the SiteMinder agent that {{< SecureTransport/componentshortname  >}} uses to connect to the Policy Server.         </td>
              <td>Required         </td>
           </tr>
           <tr>
              <td>Maximum Connections         </td>
-             <td>The maximum number of SiteMinder connections that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can have open simultaneously. This does not limit the number of users who can log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server using the Site Minder SSO portal.         </td>
+             <td>The maximum number of SiteMinder connections that {{< SecureTransport/componentshortname  >}} can have open simultaneously. This does not limit the number of users who can log in to the {{< SecureTransport/componentshortname  >}} Server using the Site Minder SSO portal.         </td>
              <td>Required         </td>
           </tr>
           <tr>
@@ -129,7 +129,7 @@ Before using <span class="mc-variable axway_variables.Component_Short_Name varia
           </tr>
           <tr>
              <td>Default Local Group ID         </td>
-             <td>The numeric group ID (GID) of a user that has full read/write access to the directory specified in the File Storage Root Path and its subdirectories. If no UID or GID are supplied by SiteMinder, these defaults are used for all file operations (including ownership of new files) performed by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> for users authenticated by SiteMinder.         </td>
+             <td>The numeric group ID (GID) of a user that has full read/write access to the directory specified in the File Storage Root Path and its subdirectories. If no UID or GID are supplied by SiteMinder, these defaults are used for all file operations (including ownership of new files) performed by {{< SecureTransport/componentshortname  >}} for users authenticated by SiteMinder.         </td>
              <td>Required         </td>
           </tr>
           <tr>

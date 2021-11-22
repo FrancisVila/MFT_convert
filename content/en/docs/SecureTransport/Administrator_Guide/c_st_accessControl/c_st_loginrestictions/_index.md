@@ -2,7 +2,7 @@
     "title": "Login restrictions",
     "linkTitle": "Login restrictions",
     "weight": "270"
-}Login restrictions define and restrict the rights of individuals to log in to <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Servers or <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edges through the configuration and use of login restriction policies. The configured login restriction policies are applicable to user accounts, account templates, and business units in a hierarchical inheritance and precedence order.
+}Login restrictions define and restrict the rights of individuals to log in to {{< SecureTransport/securetransportname  >}} Servers or {{< SecureTransport/securetransportname  >}} Edges through the configuration and use of login restriction policies. The configured login restriction policies are applicable to user accounts, account templates, and business units in a hierarchical inheritance and precedence order.
 
 The login restriction policy inheritance order is:
 
@@ -15,7 +15,7 @@ The login restriction policy precedence order is:
 1.  If a policy is defined on the account or account template Level, then it takes precedence over the policy assigned on the business unit level.
 2.  If no policy is defined on the account or account template Level, then the policy assigned on the business unit level takes precedence.
 
-A single user restriction policy can be selected and set as the default policy. The default policy is the suggested user restriction policy when creating a new business unit, account, or account template but it also applies to users that do not have a corresponding user account and do not match an account template. This enables login restrictions to be defined even for external users who do not have any account definition inside <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>.
+A single user restriction policy can be selected and set as the default policy. The default policy is the suggested user restriction policy when creating a new business unit, account, or account template but it also applies to users that do not have a corresponding user account and do not match an account template. This enables login restrictions to be defined even for external users who do not have any account definition inside {{< SecureTransport/securetransportname  >}}.
 
 Refer to the following topics to manage user accounts, account templates, and business units:
 

@@ -2,24 +2,24 @@
     "title": "Uninstall SecureTransport on UNIX-based systems",
     "linkTitle": "Uninstall SecureTransport on UNIX-based systems",
     "weight": "90"
-}This section explains how to uninstall <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> from the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> appliance or any of the supported UNIX-based platforms.
+}This section explains how to uninstall {{< SecureTransport/componentshortname  >}} from the {{< SecureTransport/companyname  >}} appliance or any of the supported UNIX-based platforms.
 
-The following error messages may occur and be placed in the `uninstall.log` during the uninstall of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+The following error messages may occur and be placed in the `uninstall.log` during the uninstall of {{< SecureTransport/componentshortname  >}}:
 
 -   `<Axway installer folder>/synInstall/scripts/utils.sh: line 743: [: -gt: unary operator expected`
 -   `<Axway installer folder>/synInstall/scripts/utils.sh: line 746: [: too many arguments`
 
 They are expected and will not cause an uninstall failure.
 
-If you are uninstalling from the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> appliance, you can use the Appliance Console Menu to proceed. Refer to the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Appliance Guide*.
+If you are uninstalling from the {{< SecureTransport/companyname  >}} appliance, you can use the Appliance Console Menu to proceed. Refer to the *{{< SecureTransport/componentshortname  >}} Appliance Guide*.
 
 > **Note:**
 >
 > In a cluster environment, stop all of the protocol servers and services on the node you want to uninstall and remove this node from the cluster before you uninstall it. For details refer to the SecureTransport Administrator's Guide.
 
-1.  Log in to the system as the user who installed and runs <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+1.  Log in to the system as the user who installed and runs {{< SecureTransport/componentshortname >}}.
 
-2.  Use the `<FILEDRIVEHOME>/bin/stop_all` command to stop all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services.
+2.  Use the `<FILEDRIVEHOME>/bin/stop_all` command to stop all {{< SecureTransport/componentshortname >}} services.
 
 3.  Navigate to the Axway Installer directory of your installation and run the uninstaller script by typing the following on the command line:
 
@@ -32,7 +32,7 @@ If you are uninstalling from the <span class="mc-variable axway_variables.Compan
     > If you want to run the uninstallation procedure in non-interactive mode, you should run ./uninstall.sh -a.
 
       
-    The <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer initializes and displays a welcome message and a prompt.
+    The {{< SecureTransport/companyname >}} Installer initializes and displays a welcome message and a prompt.
 
         Initialization in progress
                                         .......
@@ -77,7 +77,7 @@ If you are uninstalling from the <span class="mc-variable axway_variables.Compan
 
 6.  Type `y` and press Enter to continue.  
     The installer displays progress messages as it completes the uninstallation tasks.  
-    When the installer has uninstalled <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer, it displays:
+    When the installer has uninstalled {{< SecureTransport/componentshortname >}} and the {{< SecureTransport/companyname >}} Installer, it displays:
 
         Uninstallation successful
 
@@ -91,7 +91,7 @@ If you are uninstalling from the <span class="mc-variable axway_variables.Compan
                                     Uninstalled from <FILEDRIVEHOME>
         -------------------------------------------------------------------
 
-7.  If you were running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as a service, as described in <a href="../../install_overview/installing_on_unix_based_platforms/running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>:
+7.  If you were running {{< SecureTransport/componentshortname >}} as a service, as described in <a href="../../install_overview/installing_on_unix_based_platforms/running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>:
     -   On AIX:
         1.  Remove `/etc/rc.stransport.`
         2.  Edit `/etc/rc.tcpip` and delete the `[ -f /etc/rc.stransport ] && sh /etc/rc.stransport start` line.

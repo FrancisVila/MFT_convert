@@ -24,7 +24,7 @@ Use the following procedure to change a user account password.
 
 ## Expire a user account password
 
-When you expire the password of an account, the user is prompted to change the password on next login. The new password must follow the password policy you configured for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. For more information, see <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_passwordpolicy#SetupMenu_1217491348_1024545" class="MCXref xref">Password policy</a>.
+When you expire the password of an account, the user is prompted to change the password on next login. The new password must follow the password policy you configured for {{< SecureTransport/componentshortname  >}}. For more information, see <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_passwordpolicy#SetupMenu_1217491348_1024545" class="MCXref xref">Password policy</a>.
 
 > **Note:**
 >
@@ -38,11 +38,11 @@ When you expire the password of an account, the user is prompted to change the p
 
 ## Web password compatibility
 
-If a user created a password that contained the plus symbol (+) while running a web client in a previous version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, you must change the value of the `Http.Password.Compatability.Mode` server configuration parameter to `on` to allow passwords with the + symbol.
+If a user created a password that contained the plus symbol (+) while running a web client in a previous version of {{< SecureTransport/componentshortname  >}}, you must change the value of the `Http.Password.Compatability.Mode` server configuration parameter to `on` to allow passwords with the + symbol.
 
 When its value is set to `on`, this parameter allows users who previously changed their password to a string containing the plus character through a web client to log in and change their password. This option affects only the web clients. Once the password is changed, the user can log in using any client or protocol.
 
-If you have upgraded or performed a system import, and you did not already manually change the parameter, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sets the value set to `on` to allow legacy users with a + symbol in the password to log on without an error.
+If you have upgraded or performed a system import, and you did not already manually change the parameter, {{< SecureTransport/componentshortname  >}} sets the value set to `on` to allow legacy users with a + symbol in the password to log on without an error.
 
 **Related topics:**
 

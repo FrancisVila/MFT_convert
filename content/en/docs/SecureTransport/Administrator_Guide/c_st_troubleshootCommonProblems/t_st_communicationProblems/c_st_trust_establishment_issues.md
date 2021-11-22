@@ -2,11 +2,11 @@
     "title": "Trust establishment issues",
     "linkTitle": "Trust establishment issues",
     "weight": "250"
-}If the certificates are not configured correctly for both the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, trust might not be properly established between the two systems. Try the following procedures to verify your trust settings.
+}If the certificates are not configured correctly for both the {{< SecureTransport/componentshortname  >}} Server and the {{< SecureTransport/componentshortname  >}} Edge, trust might not be properly established between the two systems. Try the following procedures to verify your trust settings.
 
--   To establish trust between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, you need to exchange Trusted CA certificates. Exchanging certificates consists of:  
-    -   Saving the CA certificate for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to a file on a local system and importing the file to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool.
-    -   Saving the CA certificate for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge to a file on a local system and importing the file to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool.
+-   To establish trust between {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge, you need to exchange Trusted CA certificates. Exchanging certificates consists of:  
+    -   Saving the CA certificate for {{< SecureTransport/componentshortname >}} Server to a file on a local system and importing the file to the {{< SecureTransport/componentshortname >}} Edge using the {{< SecureTransport/componentshortname >}} Administration Tool.
+    -   Saving the CA certificate for {{< SecureTransport/componentshortname >}} Edge to a file on a local system and importing the file to the {{< SecureTransport/componentshortname >}} Server using the {{< SecureTransport/componentshortname >}} Administration Tool.
 
 To export or import a CA certificate, see <a href="../../../c_st_setup/c_st_certificates/t_st_trustedcas#top" class="MCXref xref">Manage trusted CAs</a>.
 
@@ -17,17 +17,17 @@ To export or import a CA certificate, see <a href="../../../c_st_setup/c_st_cert
 
 ## Common certificate errors
 
-If certificates are not correctly imported or the certificate has expired, you might see ERROR-level entries regarding SSL handshaking in the server log on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server such as:
+If certificates are not correctly imported or the certificate has expired, you might see ERROR-level entries regarding SSL handshaking in the server log on the {{< SecureTransport/componentshortname  >}} Server such as:
 
 `com.valicert.brules.eventmonitor - SSL handshake failed`
 
 Specific issues that can cause an error include:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate is not imported into Edge.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate is not imported into Server.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate is expired.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate is expired.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server certificate is expired.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge certificate is expired.
+-   {{< SecureTransport/componentshortname >}} Server CA certificate is not imported into Edge.
+-   {{< SecureTransport/componentshortname >}} Edge CA certificate is not imported into Server.
+-   {{< SecureTransport/componentshortname >}} Server CA certificate is expired.
+-   {{< SecureTransport/componentshortname >}} Edge CA certificate is expired.
+-   {{< SecureTransport/componentshortname >}} Server certificate is expired.
+-   {{< SecureTransport/componentshortname >}} Edge certificate is expired.
 
 Use **Setup &gt; Certificates** to view the certificates and monitor expiration dates on a regular basis.

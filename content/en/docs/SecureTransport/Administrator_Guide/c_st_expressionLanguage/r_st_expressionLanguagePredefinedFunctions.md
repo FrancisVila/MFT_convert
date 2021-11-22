@@ -2,7 +2,7 @@
     "title": "Predefined functions",
     "linkTitle": "Predefined functions",
     "weight": "300"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports the following predefined functions:
+}{{< SecureTransport/componentshortname  >}} supports the following predefined functions:
 
 <table>
    <thead>
@@ -72,8 +72,8 @@ The following table shows examples of the predefined functions:
       <tr>
          <td>DayOffset         </td>
          <td><code>${dayOffset('yymmdd', '-1')}</code>         </td>
-         <td><span class="code">${dayOffset('yyMMdd', '-5')}</span> - returns 10<sup>th</sup> if today is 15<sup>th</sup> of August
-formatted as per the specified format parameter - <span class="code">120810</span>.
+         <td><code>${dayOffset('yyMMdd', '-5')}</code> - returns 10<sup>th</sup> if today is 15<sup>th</sup> of August
+formatted as per the specified format parameter - <code>120810</code>.
 <p><code>${</code><code>dayOffset('yyMMdd</code><code>', '+7')}</code> - returns 22<sup>th</sup> if today is 15<sup>th</sup> of August
 formatted as per the specified format parameter - 120822.</p>
 <p><code>${dayOffset('ddMMyy', '+1') ge '090414'}</code></p>         </td>

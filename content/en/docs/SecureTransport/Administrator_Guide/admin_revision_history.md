@@ -4,12 +4,12 @@
     "weight": "30"
 }**Revision history**
 
-The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable axway_variables.Document_type variable">SecureTransport documentation</span>.
+The following changes are added to the {{< SecureTransport/securetransportname  >}} {{< SecureTransport/componentversion  >}} {{< SecureTransport/documenttype  >}}.
 
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> version         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">{{< SecureTransport/securetransportname  >}} version         </th>
 <th class="HeadD-Column1-Header1">Topics updated         </th>
       </tr>
    </thead>
@@ -152,7 +152,7 @@ with new trigger file options</li>
 <li>New database role requirement for exporting log records from a PostgreSQL database with the <a href="../applications/applicationslogentrymaintenance#Export" class="MCXref xref">Export from PostgreSQL database</a> and <a href="../applications/applicationstransferlogmaintenance#Export" class="MCXref xref">Export from PostgreSQL database</a> application</li>
 <li><code>tm_agent_error.log</code>
 in <a href="../c_st_serverlogs/r_st_logfilelist" class="MCXref xref">Log file list</a> updated</li>
-<li>"Configure security policies and HTTP response headers" topic moved to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.5 Security Guide</li>
+<li>"Configure security policies and HTTP response headers" topic moved to {{< SecureTransport/componentshortname  >}} 5.5 Security Guide</li>
 <li><a href="../c_st_serverlogs/r_st_logfiledetails/t_st_redirect_log4j_output_from_database" class="MCXref xref">Redirect log4j output from the database</a> topic
 updated with file rotation handling notes</li>
 <li><a href="../overview/r_st_axway_and_third-party_software_support" class="MCXref xref">Axway and third-party software support</a> topic updated with supported AS2 versions</li>

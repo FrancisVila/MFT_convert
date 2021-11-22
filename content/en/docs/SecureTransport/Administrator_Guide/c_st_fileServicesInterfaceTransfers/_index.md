@@ -2,7 +2,7 @@
     "title": "File services interface transfers",
     "linkTitle": "File services interface transfers",
     "weight": "180"
-}A developer can use the <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> file services interface feature to implement a protocol that can use a shared file system and a transferred metadata file.
+}A developer can use the {{< SecureTransport/componentlongname  >}} file services interface feature to implement a protocol that can use a shared file system and a transferred metadata file.
 
 The following topics describe file services interface transfers:
 

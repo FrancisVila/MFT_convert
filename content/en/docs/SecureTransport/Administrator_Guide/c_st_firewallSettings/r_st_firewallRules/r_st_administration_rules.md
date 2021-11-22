@@ -25,7 +25,7 @@ Server         </td>
          <td>444         </td>
          <td><img src="/Images/SecureTransport/LeftArrow_14x11.png" /><br />
 (inbound)         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Administration Tool         </td>
       </tr>
    </tbody>
 </table>

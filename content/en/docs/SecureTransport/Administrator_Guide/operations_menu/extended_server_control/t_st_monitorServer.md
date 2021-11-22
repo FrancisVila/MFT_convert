@@ -6,20 +6,20 @@
 
 -   <a href="#Use" class="MCXref xref">Monitor server</a>
 
-The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers are functional or not. If one or more monitored servers are not responding, the monitoring service automatically restarts them. There are few exceptions to this: monitord does not restart a server if the DB server is not running; or if the server is manually stopped by an administrator.
+The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the {{< SecureTransport/componentshortname  >}} servers are functional or not. If one or more monitored servers are not responding, the monitoring service automatically restarts them. There are few exceptions to this: monitord does not restart a server if the DB server is not running; or if the server is manually stopped by an administrator.
 
-Before version 5.5, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server was using cron for monitoring purposes. With <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> version 5.5 and later, the Monitor Server relies on `monitord` as a separate process that uses the Quartz Job Scheduling Library.
+Before version 5.5, {{< SecureTransport/componentshortname  >}} Server was using cron for monitoring purposes. With {{< SecureTransport/componentshortname  >}} version 5.5 and later, the Monitor Server relies on `monitord` as a separate process that uses the Quartz Job Scheduling Library.
 
-The Monitor Server and `monitord` monitoring service can run with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+The Monitor Server and `monitord` monitoring service can run with {{< SecureTransport/componentshortname  >}} Server or {{< SecureTransport/componentshortname  >}} Edge.
 
 ## Start Monitor servers and monitord service
 
-In order to make use of this functionality, you must have both the Monitor Server and <span class="code">monitord</span> service started and running.
+In order to make use of this functionality, you must have both the Monitor Server and `monitord` service started and running.
 
 -   To start the Monitor Server, go to **Operations > Server Control**, scroll down to **Monitor Server** and click **Start**.
--   To start the <span class="code">monitord</span> monitoring service, use the following script: `<FILEDRIVEHOME>/bin/start_monitord`.
+-   To start the `monitord` monitoring service, use the following script: `<FILEDRIVEHOME>/bin/start_monitord`.
 
-Monitoring is applicable to all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services. Whatever service you start, it attempts to start the <span class="code">monitord</span> service (unless it is already running).
+Monitoring is applicable to all {{< SecureTransport/componentshortname  >}} services. Whatever service you start, it attempts to start the `monitord` service (unless it is already running).
 
 > **Note:**
 >
@@ -51,7 +51,7 @@ The log file of the `monitord` service is stored at the following location – `
 
 When you make a change to any monitored service, you must stop and start the `monitord` service in order to reflect these changes.
 
-During an upgrade, all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> cronjobs along with their schedules will be migrated to the `monitord` configuration and then deleted from cron. All non-SecureTransport related cronjobs will be preserved. This goes for all operating systems you install and run SecureTransport on.
+During an upgrade, all {{< SecureTransport/componentshortname  >}} cronjobs along with their schedules will be migrated to the `monitord` configuration and then deleted from cron. All non-SecureTransport related cronjobs will be preserved. This goes for all operating systems you install and run SecureTransport on.
 
 > **Note:**
 >

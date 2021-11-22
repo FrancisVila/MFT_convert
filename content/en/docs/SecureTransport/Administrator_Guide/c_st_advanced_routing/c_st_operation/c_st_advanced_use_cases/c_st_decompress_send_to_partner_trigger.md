@@ -20,8 +20,8 @@ Decompress incoming archives, send the result files to two remote transfer sites
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create an <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create an {{< SecureTransport/componentshortname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Create remote transfer sites which are used as routing destinations (for example, **Partner 1 (FTP)** and **Partner 2 (HTTP)**).
     For remote transfer site creation details, refer to <a href="../../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>.
 
@@ -29,7 +29,7 @@ Decompress incoming archives, send the result files to two remote transfer sites
 
 ## Steps to configure the flow:
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  (Optional) Configure the rest of the settings.
     3.  Click **Add** when done.
@@ -71,8 +71,8 @@ Decompress incoming archives, send the result files to two remote transfer sites
 
 ## Flow of events
 
-1.  An archive file is uploaded to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder. The archive contains two files named `text1.txt` and `text2.txt`.
-2.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application is triggered and the archive is processed by the route.
+1.  An archive file is uploaded to the {{< SecureTransport/advancedrouting >}} subscription folder. The archive contains two files named `text1.txt` and `text2.txt`.
+2.  The {{< SecureTransport/advancedrouting >}} application is triggered and the archive is processed by the route.
 3.  The archive is decompressed – `text1.txt` and `text2.txt` are the resulting files.
 4.  The files are routed to the selected transfer sites (**Partner 1 (FTP)** and **Partner 2 (HTTP)**).
 5.  A trigger file is generated with name `<current timestamp>.trigger` (for example, `1334851799648.trigger`) with contents:

@@ -2,9 +2,9 @@
     "title": "Launch instances for SecureTransport components",
     "linkTitle": "Launch instances for SecureTransport components",
     "weight": "90"
-}This chapter outlines the procedures for launching your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and Edge instances, as well as your shared storage. Remember to distribute instances equally across your Enterprise clusters.
+}This chapter outlines the procedures for launching your {{< SecureTransport/componentshortname  >}} Server and Edge instances, as well as your shared storage. Remember to distribute instances equally across your Enterprise clusters.
 
-## Launch <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge instances
+## Launch {{< SecureTransport/componentshortname  >}} Edge instances
 
 Follow the steps for launching RHEL Instance with the following specifics:
 
@@ -14,9 +14,9 @@ Follow the steps for launching RHEL Instance with the following specifics:
 4.  Choose the public subnet in your VNet.
 5.  Configure Instance **Settings** -> **Public IP address:**
 6.  Configure Instance **Settings** -> **Network security group**.
-7.  Assign both <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edges to the previously created <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Network security group as described in *Network Security Groups* .
+7.  Assign both {{< SecureTransport/componentshortname >}} Edges to the previously created {{< SecureTransport/componentshortname >}} Edge Network security group as described in *Network Security Groups* .
 
-## Launch <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server instances
+## Launch {{< SecureTransport/componentshortname  >}} Server instances
 
 Follow the steps for launching RHEL Instance with the following specifics:
 

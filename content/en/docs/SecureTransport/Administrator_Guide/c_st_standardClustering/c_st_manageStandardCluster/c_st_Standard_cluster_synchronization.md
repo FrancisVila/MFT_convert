@@ -8,7 +8,7 @@ When needed, you must propagate configuration data from the primary server to se
 
 You must perform manual synchronization after you:
 
--   Upgrade <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+-   Upgrade {{< SecureTransport/componentshortname >}}
 -   Restart the whole cluster
 -   Restore a failed primary server
 -   Restart the Administration Tool server on a secondary server, if you made changes using the Administration Tool on the primary server while it was down
@@ -46,13 +46,13 @@ The following topics describe the synchronization requirements and what informat
 
 Dynamic and manual cluster synchronization requires the following:
 
--   The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrator account names must be the same on all servers.
+-   The {{< SecureTransport/componentshortname >}} administrator account names must be the same on all servers.
 -   When certificate authentication is enabled for the administrator accounts, Cluster.DynamicSync.adminName and Cluster.DynamicSync.keyAlias configuration options must be set on all nodes manually.
--   The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation path must be the same on all servers.
+-   The {{< SecureTransport/componentshortname >}} installation path must be the same on all servers.
 -   The `taeh` file must be the same on all servers.
 -   The certificate for encrypting cluster communications specified in the `Cluster.Crypto.Alias` server configuration parameter must be the same on all servers.
 -   The internal CAs on all nodes must be trusted by all other nodes. Optionally, you can import the same internal CA on all nodes.
--   All the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server certificates must be issued by a common CA.
+-   All the {{< SecureTransport/componentshortname >}} server certificates must be issued by a common CA.
 -   Each server must be hosted on a different computer or virtual machine.
 -   All the servers in an active/active cluster must be in the same LAN.
 -   The two servers in an active/passive cluster with cluster mode `passive_legacy` can be in different locations, but they must be in the same low latency network.
@@ -77,7 +77,7 @@ The files listed in `sync.excl` are not copied from the primary to the secondary
 ## Synchronize the cluster from the primary server
 
 Use the Administration Tool on the
-primary server to synchronize the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers in a Standard Cluster.
+primary server to synchronize the {{< SecureTransport/componentshortname  >}} servers in a Standard Cluster.
 
 > **Note:**
 >

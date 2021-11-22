@@ -9,7 +9,7 @@
 -   PGP
 -   Account templates
 
-For a complete listing of the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> Expression Language (EL) functions and variables, refer to <a href="../../c_st_advanced_routing/r_st_custom_el_functions_variables" class="MCXref xref">Custom Expression Language functions and variables</a>.
+For a complete listing of the {{< SecureTransport/advancedrouting  >}} Expression Language (EL) functions and variables, refer to <a href="../../c_st_advanced_routing/r_st_custom_el_functions_variables" class="MCXref xref">Custom Expression Language functions and variables</a>.
 
 ## Expression variables and examples
 
@@ -50,7 +50,7 @@ The following table provides the variable names and values that are used in the 
 >
 > The variable DXAGENT\_TRANSFORMATION\_INPUT is only available from within a PGP transformation agent. Expressions using this variable do not evaluate correctly in other cases. In the example using this variable, assume that the original file name before encryption is original\_12.txt.
 
-The following table shows additional examples of the different expressions available for use in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+The following table shows additional examples of the different expressions available for use in {{< SecureTransport/componentshortname  >}}:
 
 <table>
    <thead>

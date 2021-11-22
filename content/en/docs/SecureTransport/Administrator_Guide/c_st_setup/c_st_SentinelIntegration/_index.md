@@ -2,13 +2,13 @@
     "title": "Integrate Axway Sentinel",
     "linkTitle": "Integrate Axway Sentinel",
     "weight": "160"
-}<span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel is a Business Activity Monitoring (BAM) product that collects, aggregates, correlates, and reports events from <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and other products, applications, and systems throughout your infrastructure. Sentinel is a separate product that you can buy from <span class="mc-variable axway_variables.Company_Name variable">Axway</span> or an authorized partner. Once you license and configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send file transfer and processing events to Sentinel, data is collected and displayed on a dashboard.
+}{{< SecureTransport/companyname  >}} Sentinel is a Business Activity Monitoring (BAM) product that collects, aggregates, correlates, and reports events from {{< SecureTransport/componentshortname  >}} and other products, applications, and systems throughout your infrastructure. Sentinel is a separate product that you can buy from {{< SecureTransport/companyname  >}} or an authorized partner. Once you license and configure {{< SecureTransport/componentshortname  >}} to send file transfer and processing events to Sentinel, data is collected and displayed on a dashboard.
 
 > **Note:**
 >
 > When a SecureTransport Enterprise Cluster (EC) is configured to direct PGP encryption and decryption tasks to one server, Sentinel reporting for a transfer with a PGP task is not accurate because Sentinel cannot combine the processes of the transfer.
 
-The following topics provide additional for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel integration:
+The following topics provide additional for the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/companyname  >}} Sentinel integration:
 
 -   <a href="r_st_sentineleventstates" class="MCXref xref">Event states</a>
 -   <a href="r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>

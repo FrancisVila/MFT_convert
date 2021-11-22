@@ -2,7 +2,7 @@
     "title": "LDAP user type ranges",
     "linkTitle": "LDAP user type ranges",
     "weight": "310"
-}On UNIX-based systems, you can define entries in the *User Type Ranges* page that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to set the user type for an LDAP user when the user type is not set by the other actions listed in <a href="../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>. You specify a range of values for the user ID (UID) and the user type for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to assign to users with values in that range. Every LDAP user on a UNIX-based system has a user ID. See <a href="../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a> for the actions that set the user ID.
+}On UNIX-based systems, you can define entries in the *User Type Ranges* page that {{< SecureTransport/componentshortname  >}} uses to set the user type for an LDAP user when the user type is not set by the other actions listed in <a href="../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>. You specify a range of values for the user ID (UID) and the user type for {{< SecureTransport/componentshortname  >}} to assign to users with values in that range. Every LDAP user on a UNIX-based system has a user ID. See <a href="../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a> for the actions that set the user ID.
 
 The following topics provide how-to instructions for managing LDAP user type ranges:
 

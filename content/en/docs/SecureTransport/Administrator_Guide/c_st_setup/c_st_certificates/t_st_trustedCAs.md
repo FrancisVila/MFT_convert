@@ -40,7 +40,7 @@ Use the following procedure to export a trusted CA certificate.
 
 ## Import a trusted CA certificate
 
-A X509 certificate can be imported as a trusted CA in the form of a X509 DER or PEM encoded file. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> checks the certificate fingerprint before importing. If a certificate with the same fingerprint already exists on the server, the new certificate won't be imported and a failure message will be logged in the Server Log.  
+A X509 certificate can be imported as a trusted CA in the form of a X509 DER or PEM encoded file. {{< SecureTransport/componentshortname  >}} checks the certificate fingerprint before importing. If a certificate with the same fingerprint already exists on the server, the new certificate won't be imported and a failure message will be logged in the Server Log.  
 
 > **Note:**
 >

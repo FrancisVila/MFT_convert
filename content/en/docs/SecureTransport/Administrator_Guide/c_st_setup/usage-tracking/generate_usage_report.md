@@ -2,7 +2,7 @@
     "title": "Usage and Deployment information",
     "linkTitle": "Usage and Deployment information",
     "weight": "220"
-}You can manually generate a usage report that provides an overview of the daily usage of <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-weight: normal;">SecureTransport</span>. This option is applicable to environments with SecureTransport only (without Transfer CFT or other MFT products).
+}You can manually generate a usage report that provides an overview of the daily usage of {{< SecureTransport/componentshortname  >}}. This option is applicable to environments with SecureTransport only (without Transfer CFT or other MFT products).
 
 The report provides daily usage metrics and totals for a selected period or date range:
 
@@ -10,7 +10,7 @@ The report provides daily usage metrics and totals for a selected period or date
 -   number of unique transfers based on [coreID](../../../operations_menu/c_st_filetransfertracking/t_st_viewfiletransferinfo#CoreID)
 -   number of successful inbound and outbound file transfers
 
-Along with these daily metrics, the report contains information regarding your current <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> setup.
+Along with these daily metrics, the report contains information regarding your current {{< SecureTransport/securetransportname  >}} setup.
 
 The report is in JSON format and is available as a REST API resource.
 
@@ -77,7 +77,7 @@ The generated JSON report contains the following parameters:
 <em>(string)</em></li>
 </ul></li>
 </ul>         </td>
-         <td>Name of the MFT product, e.g., <span class="mc-variable suite_variables.SecureTransportName variable" style="font-style: italic;">SecureTransport</span>         </td>
+         <td>Name of the MFT product, e.g., {{< SecureTransport/securetransportname  >}}         </td>
       </tr>
       <tr>
          <td><ul>
@@ -86,7 +86,7 @@ The generated JSON report contains the following parameters:
 <em>(object)</em></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Collection of daily metrics related to the product. With <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> it contains the active users and information about the file transfers performed within the day.<br />
+         <td><p>Collection of daily metrics related to the product. With {{< SecureTransport/securetransportname  >}} it contains the active users and information about the file transfers performed within the day.<br />
 </p>         </td>
       </tr>
       <tr>
@@ -120,7 +120,7 @@ The generated JSON report contains the following parameters:
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Number of successful inbound file transfers (with state RECEIVED) for the day. Internal routing (within <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>) via Advanced Router and Standard Router is excluded.</p>         </td>
+         <td><p>Number of successful inbound file transfers (with state RECEIVED) for the day. Internal routing (within {{< SecureTransport/componentshortname  >}}) via Advanced Router and Standard Router is excluded.</p>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -131,7 +131,7 @@ The generated JSON report contains the following parameters:
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Number of successful outbound file transfers (with state SENT) for the day. Internal routing (within <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>) via Advanced Router and Standard Router is excluded.</p>         </td>
+         <td><p>Number of successful outbound file transfers (with state SENT) for the day. Internal routing (within {{< SecureTransport/componentshortname  >}}) via Advanced Router and Standard Router is excluded.</p>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -185,14 +185,14 @@ The generated JSON report contains the following parameters:
 <li><strong>productName</strong><br />
 <em>(string)</em></li>
 </ul>         </td>
-         <td>Name of the MFT product, e.g, <span class="mc-variable suite_variables.SecureTransportName variable" style="font-style: italic;">SecureTransport</span>         </td>
+         <td>Name of the MFT product, e.g, {{< SecureTransport/securetransportname  >}}         </td>
       </tr>
       <tr>
          <td><ul>
 <li><strong>productVersion</strong><br />
 <em>(string)</em></li>
 </ul>         </td>
-         <td>Base product version, e.g., <em>5.5</em> (the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> version)         </td>
+         <td>Base product version, e.g., <em>5.5</em> (the {{< SecureTransport/securetransportname  >}} version)         </td>
       </tr>
       <tr>
          <td><ul>
@@ -329,7 +329,7 @@ For example, to generate a report for May, the start date should be 1 May, the e
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Number of successful inbound file transfers (with state RECEIVED) for the reporting period. Internal routing (within <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>) via Advanced Router and Standard Router is excluded.</p>         </td>
+         <td><p>Number of successful inbound file transfers (with state RECEIVED) for the reporting period. Internal routing (within {{< SecureTransport/componentshortname  >}}) via Advanced Router and Standard Router is excluded.</p>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -340,7 +340,7 @@ For example, to generate a report for May, the start date should be 1 May, the e
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Number of successful outbound file transfers (with state SENT) for the reporting period. Internal routing (within <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>) via Advanced Router and Standard Router is excluded.</p>         </td>
+         <td><p>Number of successful outbound file transfers (with state SENT) for the reporting period. Internal routing (within {{< SecureTransport/componentshortname  >}}) via Advanced Router and Standard Router is excluded.</p>         </td>
       </tr>
       <tr>
          <td><ul>

@@ -6,7 +6,7 @@
 
 -   To support unicode characters in filenames and directories, the database should use AL32UTF8 encoding.
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can connect to an external Oracle database over a plain or secure connection.
+-   {{< SecureTransport/componentshortname >}} can connect to an external Oracle database over a plain or secure connection.
     Starting with SecureTransport 5.5-20201029, the external database server’s certificates that contain `keyUsage` extensions MUST also have the `digitalSignature` indicator enabled. This affects both secure and non-secure connections.
 
 -   The Oracle database can use, but does not require, the Real Application Clusters (RAC) option.
@@ -15,7 +15,7 @@
 
 -   Settings and parameters as follows:
     -   Redo log groups: 3
-    -   Redo log file size: 500 MB (For more about redo log file use, see *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable suite_variables.DocTypeCapacityPlanningGuide variable">Capacity Planning Guide</span>*)
+    -   Redo log file size: 500 MB (For more about redo log file use, see *{{< SecureTransport/componentshortname >}} {{< SecureTransport/componentversion >}} {{< SecureTransport/doctypecapacityplanningguide >}}*)
     -   Gather optimizer statistics: Weekly or with any 10 percent change in the record count.
     -   `DB_CACHE_SIZE`: 1 GB or larger. You should set this as high as possible to improve performance.
     -   `OPEN_CURSORS`: at least 1000
@@ -40,7 +40,7 @@
 
       
     Set `AUTOEXTEND ON` for all tablespaces and datafiles.  
-    See *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> <span class="mc-variable suite_variables.DocTypeCapacityPlanningGuide variable">Capacity Planning Guide</span>* for information you can use to set initial sizes for the tablespaces. Give the user unlimited quota on all tablespaces.
+    See *{{< SecureTransport/componentshortname >}} {{< SecureTransport/componentversion >}} {{< SecureTransport/doctypecapacityplanningguide >}}* for information you can use to set initial sizes for the tablespaces. Give the user unlimited quota on all tablespaces.
 
 -   The database must have a user defined who have been granted the following system privileges:  
     -   `CREATE OPERATOR`

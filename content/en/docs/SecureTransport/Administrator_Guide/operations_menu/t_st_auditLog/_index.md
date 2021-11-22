@@ -2,16 +2,16 @@
     "title": "Audit log",
     "linkTitle": "Audit log",
     "weight": "120"
-}Use the *Audit Log* page to view, compare, and export log entries that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> records when any change is made to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration. The audit log entries record:
+}Use the *Audit Log* page to view, compare, and export log entries that {{< SecureTransport/componentshortname  >}} records when any change is made to the {{< SecureTransport/componentshortname  >}} configuration. The audit log entries record:
 
 -   Changes made using the Administration Tool
 -   Changes made using the administration REST API
 -   Changes due to user actions, such as new user enrollment and password change
--   Changes that result from a change on another <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server in a cluster or on another synchronized <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge
+-   Changes that result from a change on another {{< SecureTransport/componentshortname >}} Server in a cluster or on another synchronized {{< SecureTransport/componentshortname >}} Edge
 -   Changes to configuration objects, such as accounts, business units, and network zones
 -   Changes to server configuration parameters, whether they are made on the *Server Configuration* page or on other Administration Tool pages
 
-In an active/active Standard Cluster (SC), <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> forwards audit log updates from the secondary servers to the primary server, so the audit log on the secondary servers includes local changes only and the audit log on the primary server includes changes to all servers in the cluster.
+In an active/active Standard Cluster (SC), {{< SecureTransport/componentshortname  >}} forwards audit log updates from the secondary servers to the primary server, so the audit log on the secondary servers includes local changes only and the audit log on the primary server includes changes to all servers in the cluster.
 
 Many Administration Tool pages include a **Last Modified** link that you can use to display in the audit log the entry that records the last change for that page. From the audit log, you can compare that entry with the last one to see what changes were made or with any previous entry for that object or parameter.
 
@@ -39,16 +39,16 @@ Each line in the log display includes the following information:
     -   `NetworkZone`
     -   `PasswordVault`
     -   `Route`
-    -   `ServerConfigurationParameter` – for changes that are not represented internally as objects by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+    -   `ServerConfigurationParameter` – for changes that are not represented internally as objects by {{< SecureTransport/componentshortname >}}
     -   `SiteTemplate`
     -   `UserClass`
 -   Object ID - A unique identifier for the object changed. For most configuration objects, the object ID is an internal ID.  
-    For server configuration parameters, the object ID includes the server configuration parameter name, a node ID, and a profile ID. In a cluster, the node ID (`mNode`) identifies the server where a local server configuration parameters is changed. Otherwise, the value is `UNSPECIFIED`. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> does not implement the feature that uses the profile ID (`mProfile`), so the value is always `Default`.
+    For server configuration parameters, the object ID includes the server configuration parameter name, a node ID, and a profile ID. In a cluster, the node ID (`mNode`) identifies the server where a local server configuration parameters is changed. Otherwise, the value is `UNSPECIFIED`. {{< SecureTransport/componentshortname >}} {{< SecureTransport/componentversion >}} does not implement the feature that uses the profile ID (`mProfile`), so the value is always `Default`.
 -   Object Name - The name of the object changed.
 -   Operation - The type of operation that changed the object. The value can be `Create`, `Delete`, `Overwrite`, or `Update`.  
     When you add a user class, it is added as the first user class as shown on the *User Classes* page. The audit log shows an update for each user classes, because adding a class changes the `Order` attribute for every class.
--   Comment - Additional information added by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> or the administrator who made the change.
--   All Audit Log actions are reported into the Server Log as audit information messages and administrators can configure the audit messages to be logged into the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> database or a flat file using standard `log4j` configurations. The audit information messages in the Server Log can be machine read and analyzed, while the messages on the *Audit Log* page require interaction to identify what property has changed. The audit messages in the Server Log can also be filtered by the AUDIT component filter. For additional Server Log information, refer to <a href="../t_st_serverlog" class="MCXref xref">Server log</a>.
+-   Comment - Additional information added by {{< SecureTransport/componentshortname >}} or the administrator who made the change.
+-   All Audit Log actions are reported into the Server Log as audit information messages and administrators can configure the audit messages to be logged into the {{< SecureTransport/securetransportname >}} database or a flat file using standard `log4j` configurations. The audit information messages in the Server Log can be machine read and analyzed, while the messages on the *Audit Log* page require interaction to identify what property has changed. The audit messages in the Server Log can also be filtered by the AUDIT component filter. For additional Server Log information, refer to <a href="../t_st_serverlog" class="MCXref xref">Server log</a>.
 
 The audit information messages are based on the `auditLogEntry` object data. The audit information messages are in the following format:
 
@@ -71,5 +71,5 @@ The following topics describe managing the audit logs:
 -   <a href="t_st_add_edit_audit_log_entry_comment" class="MCXref xref">Add or edit an audit log entry comment</a> - Provides how-to introductions on adding or editing an audit log entry comment.
 -   <a href="t_st_display_audit_log_entry_details" class="MCXref xref">Display audit log entry details</a> - Provides how-to instructions on displaying audit log entry details.
 -   <a href="t_st_compare_audit_log_entries" class="MCXref xref">Compare audit log entries</a> - Provides how-to instructions on comparing audit log entries.
--   <a href="t_st_link_to_audit_log" class="MCXref xref">Link to the audit log</a> - Describes the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool links to the audit log.
+-   <a href="t_st_link_to_audit_log" class="MCXref xref">Link to the audit log</a> - Describes the {{< SecureTransport/componentshortname >}} Administration Tool links to the audit log.
 -   <a href="c_st_audit_log_maintenance_application" class="MCXref xref">Audit Log Maintenance application</a> - Describes the Audit Log Maintenance application.

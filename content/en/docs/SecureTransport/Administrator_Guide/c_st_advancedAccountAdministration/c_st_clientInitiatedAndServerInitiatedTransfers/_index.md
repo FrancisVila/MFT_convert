@@ -2,14 +2,14 @@
     "title": "Client-initiated and server-initiated transfers",
     "linkTitle": "Client-initiated and server-initiated transfers",
     "weight": "240"
-}You can use <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to set up and execute server-initiated transfers. There are four types of transfers:
+}You can use {{< SecureTransport/componentshortname  >}} to set up and execute server-initiated transfers. There are four types of transfers:
 
--   **Client-initiated downloads** – A client application "pulls" a file from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
--   **Client-initiated uploads** – A client application "pushes" a file to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
--   **Server-initiated downloads** – The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server "pulls" a file from a remote server.
--   **Server-initiated uploads** – The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server "pushes" a file to a remote server.
+-   **Client-initiated downloads** – A client application "pulls" a file from the {{< SecureTransport/componentshortname >}} Server.
+-   **Client-initiated uploads** – A client application "pushes" a file to the {{< SecureTransport/componentshortname >}} Server.
+-   **Server-initiated downloads** – The {{< SecureTransport/componentshortname >}} Server "pulls" a file from a remote server.
+-   **Server-initiated uploads** – The {{< SecureTransport/componentshortname >}} Server "pushes" a file to a remote server.
 
-Client- and server-initiated transfers can be performed using any supported protocol. The protocol servers that handle client-initiated transfers run on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge in the perimeter network (DMZ). The protocol clients that perform the server-initiated transfers run on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server in the Transaction Manager server JVM and can connect out through a SOCKS5 Proxy on a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge or through an HTTP proxy to a remote system. This allows the protocol clients to have direct access to the file system.
+Client- and server-initiated transfers can be performed using any supported protocol. The protocol servers that handle client-initiated transfers run on the {{< SecureTransport/componentshortname  >}} Server or on the {{< SecureTransport/componentshortname  >}} Edge in the perimeter network (DMZ). The protocol clients that perform the server-initiated transfers run on the {{< SecureTransport/componentshortname  >}} Server in the Transaction Manager server JVM and can connect out through a SOCKS5 Proxy on a {{< SecureTransport/componentshortname  >}} Edge or through an HTTP proxy to a remote system. This allows the protocol clients to have direct access to the file system.
 
 > **Note:**
 >
@@ -23,10 +23,10 @@ Server-initiated transfers can be triggered by any of the following events, depe
 
 In addition to the protocols mentioned above, the Folder Monitor can be used for inbound and outbound file transfers.
 
--   For outbound transfers, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can copy the files to a specified folder.
--   For inbound transfers, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can monitor the folder for newly arrived files and use the event to trigger an application executing specific tasks.
+-   For outbound transfers, {{< SecureTransport/componentshortname >}} can copy the files to a specified folder.
+-   For inbound transfers, {{< SecureTransport/componentshortname >}} can monitor the folder for newly arrived files and use the event to trigger an application executing specific tasks.
 
-Any server-initiated transfer requires an account to be subscribed to an application based on one of the application types: Standard Router, Site Mailbox, Shared Folder, Basic Application, File Transfer via File Service Interface, Human to System, or <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span>. For detailed information about application types and applications, see <a href="../../applications" class="MCXref xref">Applications</a>.
+Any server-initiated transfer requires an account to be subscribed to an application based on one of the application types: Standard Router, Site Mailbox, Shared Folder, Basic Application, File Transfer via File Service Interface, Human to System, or {{< SecureTransport/advancedrouting  >}}. For detailed information about application types and applications, see <a href="../../applications" class="MCXref xref">Applications</a>.
 
 > **Note:**
 >

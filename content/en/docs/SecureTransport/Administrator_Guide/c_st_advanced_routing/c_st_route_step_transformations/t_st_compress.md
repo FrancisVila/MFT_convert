@@ -23,11 +23,11 @@ The Compress step processes files in the following manner:
    <thead>
       <tr>
 <th style="text-align: center;" class="HeadE-Column1-Header1">Process only result from preceding step<br />
-<span style="font-weight: normal;">checkbox status</span>         </th>
+         </th>
 <th style="text-align: center;" class="HeadE-Column1-Header1">Name filter<br />
-<span style="font-weight: normal;">option selected</span>         </th>
+         </th>
 <th class="HeadD-Column1-Header1">Input files<br />
-<span style="font-weight: normal;">result</span>         </th>
+         </th>
       </tr>
    </thead>
    <tbody>

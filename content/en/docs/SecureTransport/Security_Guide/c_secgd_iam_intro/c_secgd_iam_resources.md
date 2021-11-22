@@ -2,7 +2,7 @@
     "title": "Available resources and actions",
     "linkTitle": "Available resources and actions",
     "weight": "110"
-}The following is a list of available resources in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> for administrator accounts. Included for each object are associated actions and a description.
+}The following is a list of available resources in {{< SecureTransport/componentshortname  >}} for administrator accounts. Included for each object are associated actions and a description.
 
 <table>
    <thead>

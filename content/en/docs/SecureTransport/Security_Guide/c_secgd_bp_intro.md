@@ -15,7 +15,7 @@
 -   Make sure default authentication accounts are disabled or deleted; see <a href="#Default" class="MCXref xref">Default authentication account</a>.
 -   Always change default passwords after installation; see <a href="#Default2" class="MCXref xref">Default passwords</a>.
 -   Limit your remote connections; see <a href="#Remote" class="MCXref xref">Remote connections</a>.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports configurations for logging, audit, and alerting; see <a href="#Logging," class="MCXref xref">Logging, audit, and alerts rules</a>.
+-   {{< SecureTransport/componentshortname >}} supports configurations for logging, audit, and alerting; see <a href="#Logging," class="MCXref xref">Logging, audit, and alerts rules</a>.
 -   Protect your sensitive files and databases; see <a href="#Sensitiv" class="MCXref xref">Sensitive files and databases</a>.
 -   Use cryptographically strong protocols and ciphers; see <a href="#Use" class="MCXref xref">Use cryptographically strong protocols and ciphers</a>.
 -   Use basic authorization and Base64 encoding of username and password; see <a href="#Password2" class="MCXref xref">Password encoding and BASIC authentication</a>.
@@ -26,13 +26,13 @@
 
 ## Secure connections
 
-<span class="mc-variable axway_variables.Company_Name variable">Axway</span> deems it mandatory that all connections with external networks be secure and secure connections are recommended for internal connections. For example, connections between an SSO proxy and an application must always be TLS-secured with mutual authentication to avoid anyone connecting with the proxy header without any credentials.
+{{< SecureTransport/companyname  >}} deems it mandatory that all connections with external networks be secure and secure connections are recommended for internal connections. For example, connections between an SSO proxy and an application must always be TLS-secured with mutual authentication to avoid anyone connecting with the proxy header without any credentials.
 
 <span id="Sample"></span>
 
 ## Sample certificates
 
-<span class="mc-variable axway_variables.Company_Name variable">Axway</span> provides sample certificates with the product. These certificates should be used for test purposes only. As soon as the product goes live, or as soon as real data is managed by the product, you must use your own certificates. Using sample certificates is a security risk as all Axway customers have the same certificates with the same private keys.
+{{< SecureTransport/companyname  >}} provides sample certificates with the product. These certificates should be used for test purposes only. As soon as the product goes live, or as soon as real data is managed by the product, you must use your own certificates. Using sample certificates is a security risk as all Axway customers have the same certificates with the same private keys.
 
 The following sample certificates are delivered with the product. These certificates should be used only for test purposes and must be replaced with your own certificates as soon as possible. These certificates are self-signed. They expire within a month after installation.
 
@@ -125,14 +125,14 @@ You should limit your remote connections in the following ways:
 
 ## Logging, audit, and alerts rules
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports configurations for logging, audit, and alerting.
+{{< SecureTransport/componentshortname  >}} supports configurations for logging, audit, and alerting.
 
-1.  <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has its own mechanisms for logging, auditing, and alerting. They are represented by the following features:
-    -   Audit Log (**Operations > Audit Log**) - Provides the administrator with information about the configuration changes in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. The administrator is able to get information about the entities that changed the database, as well as information about the exact time the changes happened.
-    -   Server Log (**Operations > Server Log**) - Provides log messages from the following <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> components: the Transaction Manager (TM) and the processes that implement the FTP, HTTP, SSH (SCP and SFTP), AS2 , PeSIT, and SOCKS5 protocols, the Administration Tool interface (ADMIN), and auditing.
+1.  {{< SecureTransport/componentshortname >}} has its own mechanisms for logging, auditing, and alerting. They are represented by the following features:
+    -   Audit Log (**Operations > Audit Log**) - Provides the administrator with information about the configuration changes in {{< SecureTransport/componentshortname >}}. The administrator is able to get information about the entities that changed the database, as well as information about the exact time the changes happened.
+    -   Server Log (**Operations > Server Log**) - Provides log messages from the following {{< SecureTransport/componentshortname >}} components: the Transaction Manager (TM) and the processes that implement the FTP, HTTP, SSH (SCP and SFTP), AS2 , PeSIT, and SOCKS5 protocols, the Administration Tool interface (ADMIN), and auditing.
     -   File Tracking (**Operations > File Tracking**) - Provides log of the statuses and attributes for each transfer.
-    -   Email notifications (Refer to <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span> for additional information.)
-2.  <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> integrated with <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel - Once <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is configured to send file transfer and processing events to Sentinel, data is collected and displayed on a dashboard.
+    -   Email notifications (Refer to for additional information.)
+2.  {{< SecureTransport/componentshortname >}} integrated with {{< SecureTransport/companyname >}} Sentinel - Once {{< SecureTransport/componentshortname >}} is configured to send file transfer and processing events to Sentinel, data is collected and displayed on a dashboard.
 
 <span id="Sensitiv"></span>
 
@@ -166,12 +166,12 @@ BASIC authentication should not be enabled by default for API authentication; bu
 
 Advanced Routing External Script step provides the functionality to run a script from the underlying file system. From version 5.5 and above, the External Script routing step exposes a property in the form of а checkbox which adds extra functionality in the external script execution.
 
-By default, when running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as an operating system superuser ("root"), external scripts are executed with impersonating the user account which has triggered the routing step, thus limiting the set of commands and scripts which can be run due to the lack of permissions.
+By default, when running {{< SecureTransport/componentshortname  >}} as an operating system superuser ("root"), external scripts are executed with impersonating the user account which has triggered the routing step, thus limiting the set of commands and scripts which can be run due to the lack of permissions.
 
-When enabling the "Execute script as root administrator" checkbox, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will use the system superuser to run the specified script and will not impersonate the user account.
+When enabling the "Execute script as root administrator" checkbox, {{< SecureTransport/componentshortname  >}} will use the system superuser to run the specified script and will not impersonate the user account.
 
 > **Note:**
 >
 > SecureTransport administrators must be fully aware that running external scripts with operating system superuser permissions grants privileges to execute a full scope of commands which might harm the server irrevocably.
 
-<span class="mc-variable axway_variables.Company_Name variable">Axway</span> recommends running external scripts without root permissions.
+{{< SecureTransport/companyname  >}} recommends running external scripts without root permissions.

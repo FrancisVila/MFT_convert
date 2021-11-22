@@ -2,7 +2,7 @@
     "title": "Enable Single Sign-On (SSO) for end-users",
     "linkTitle": "Enable Single Sign-On (SSO) for end-users",
     "weight": "160"
-}The following steps are the general configuration steps to enable SSO functionality for end-users in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+}The following steps are the general configuration steps to enable SSO functionality for end-users in {{< SecureTransport/componentshortname  >}}.
 
 1.  Navigate to **Authentication > Login Settings**.
 2.  In *End-users login options* pane, select **Required** for *SSO*.
@@ -22,7 +22,7 @@ The following configuration steps describe the setup of the single Identity prov
 
 Before configuring SSO for end-users, ensure that all <a href="../c_st_sso_configuration#Configur" class="MCXref xref">SecureTransport Single Sign-On (SSO) configuration prerequisites</a> are met and the Identity provider is configured properly. For a full list of supported Identity providers, refer to <a href="../../overview/r_st_axway_and_third-party_software_support#Single" class="MCXref xref">Single Sign-On (SSO)</a>.
 
-In order to configure SSO functionality for end-users, you need to update the `sso-enduser.xml` file and remember that SSO authenticated users are only mapped to existing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> [user accounts](../../accounts/useraccounts/t_st_create_user_account) or [account templates](../../c_st_advancedaccountadministration/c_st_accounttemplates) with [user classes](../../c_st_accesscontrol/c_st_userclasses).
+In order to configure SSO functionality for end-users, you need to update the `sso-enduser.xml` file and remember that SSO authenticated users are only mapped to existing {{< SecureTransport/componentshortname  >}} [user accounts](../../accounts/useraccounts/t_st_create_user_account) or [account templates](../../c_st_advancedaccountadministration/c_st_accounttemplates) with [user classes](../../c_st_accesscontrol/c_st_userclasses).
 
 > **Note:**
 >
@@ -121,4 +121,4 @@ Configure SSO for end-users using Kerberos:
 
 ## Single Sign-On (SSO) account configuration
 
-For more information about how to configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> accounts with SSO, refer to <a href="../../accounts" class="MCXref xref">Manage Accounts</a> and <a href="../../c_st_advancedaccountadministration" class="MCXref xref">Advanced account administration</a>.
+For more information about how to configure {{< SecureTransport/componentshortname  >}} accounts with SSO, refer to <a href="../../accounts" class="MCXref xref">Manage Accounts</a> and <a href="../../c_st_advancedaccountadministration" class="MCXref xref">Advanced account administration</a>.

@@ -2,7 +2,7 @@
     "title": "Default user classes",
     "linkTitle": "Default user classes",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides the following default user classes:
+}{{< SecureTransport/componentshortname  >}} provides the following default user classes:
 
 -   **RealClass** – all users of type real, connecting from any host address (`*`)
 -   **VirtClass** – all users of type virtual, connecting from any host address (`*`)

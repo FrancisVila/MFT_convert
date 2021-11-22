@@ -48,7 +48,7 @@ When a Standard Router application is used, a file integrity check of receipts g
     9.  Define the settings for sending files to the service account. Choose one or more of the following options, and then click **OK** in the *Send Options* dialog box.
     10. **Encrypt File As** – Select this check box to require that files submitted are encrypted.
     11. **Send files directly to** &lt;transfer site> – Select this check box to send files directly to the transfer site you select from the drop-down list.
-    12. **Post Transmission Settings** – Select which action you want <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to take when the transfer fails or succeeds.
+    12. **Post Transmission Settings** – Select which action you want {{< SecureTransport/componentshortname >}} to take when the transfer fails or succeeds.
 
 7.  (Optional) Select the **Send files to Subscribers** check box to permit outgoing file transfers from the application to the subscribed parties. If you enable this option, continue specifying values for the parameters in the pane.
     1.  In the **Receive folder** field, type the name of the folder where outgoing transferred files are submitted to the subscriber. The receive folder is created as a sub-folder of the subscription folder.
@@ -57,7 +57,7 @@ When a Standard Router application is used, a file integrity check of receipts g
     4.  (Optional) Click **Receive Options** to display the *Receive Options* dialog box and configure the settings for receiving files from this service account. Choose one or more of the following options and enter the maximum number of parallel transfers, and then click **OK** in the *Receive Options* dialog box.
     5.  **Automatically retrieve files from** – Select this check box and select a transfer site from the drop-down list to automatically retrieve files from the transfer site when they arrive.
     6.  **Maximum number of parallel transfers** – Enter a number to limit the number parallel transfers. If you enter a value greater than zero, SecureTransport executes only the specified number of transfers in parallel. If the value is null or zero, the maximum number of parallel transfers is limited by system capacity.
-    7.  **Post Transmission Settings** – Select which action you want <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to take when the transfer has a temporary failure, a permanent failure, or succeeds.
+    7.  **Post Transmission Settings** – Select which action you want {{< SecureTransport/componentshortname >}} to take when the transfer has a temporary failure, a permanent failure, or succeeds.
     8.  **Decrypt PGP File As** – Select this check box to require that files are decrypted after the transfer is complete.
     9.  In the **Routing Settings** group, specify a pattern in the **ID Pattern** box to define the ID of the subscriber to whom files are routed. By default, the pattern is `<ID>_<FILENAME>` where, `<ID>` is a regular expression corresponding to the Subscriber ID specified when the subscription is created and `<FILENAME>` is the original name of the transferred file.
     10. The use of the placeholders, `<ID>` and `<FILENAME>,` in the new file name format is mandatory.

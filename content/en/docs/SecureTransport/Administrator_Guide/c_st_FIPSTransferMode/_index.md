@@ -2,7 +2,7 @@
     "title": "FIPS transfer mode",
     "linkTitle": "FIPS transfer mode",
     "weight": "210"
-}For client-initiated file transfers using the AS2 (SSL), FTPS, HTTPS, PeSIT (SSL, legacy SSL), or SSH (SFTP and SCP) protocols, you can restrict the <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> Server to use only FIPS certified cryptographic libraries. This requires the sender and the recipient (clients and partner servers) to use only approved algorithms, ciphers, and cipher suites and assures that the entire transfer is secure at FIPS 140-2 Level 1.
+}For client-initiated file transfers using the AS2 (SSL), FTPS, HTTPS, PeSIT (SSL, legacy SSL), or SSH (SFTP and SCP) protocols, you can restrict the {{< SecureTransport/componentlongname  >}} Server to use only FIPS certified cryptographic libraries. This requires the sender and the recipient (clients and partner servers) to use only approved algorithms, ciphers, and cipher suites and assures that the entire transfer is secure at FIPS 140-2 Level 1.
 
 For a complete list of supported ciphers and algorithms that be used in FIPS mode, see <a href="r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.
 
@@ -31,6 +31,6 @@ As an administrator, you can customize the list of allowed TLS cipher suites or 
 
     ## FIPS-certified cryptographic libraries
 
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span><span class="mc-variable axway_variables.Component_Version variable">5.5</span> uses the following cryptographic library in FIPS transfer mode:
+    {{< SecureTransport/componentshortname >}}{{< SecureTransport/componentversion >}} uses the following cryptographic library in FIPS transfer mode:
 
     -   BC-FJA (Bouncy Castle FIPS Java API) 1.0.2, FIPS 140-2 Certificate No. 3514

@@ -12,21 +12,21 @@ An account can have zero or more transfer sites. An account can subscribe to zer
 
 ## Common properties for all transfer sites
 
-A transfer site in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is defined with various properties. To avoid repetition, the *common properties* for all Transfer Sites are briefly described here. Properties which are custom to each Transfer Site are described in the dedicated for each available transfer site type (scroll to the bottom of this page).
+A transfer site in {{< SecureTransport/componentshortname  >}} is defined with various properties. To avoid repetition, the *common properties* for all Transfer Sites are briefly described here. Properties which are custom to each Transfer Site are described in the dedicated for each available transfer site type (scroll to the bottom of this page).
 
 -   **Site Name** – the name of the site. This name must be unique for the account.  
     You cannot enter spaces-only values in the Site Name field.
 
--   **Site Type** – indicates whether transfers are internal (within a single organization) or partner (between organizations). Reported to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel as `USERPARAMETER1` and displayed in the Sentinel event attributes.
+-   **Site Type** – indicates whether transfers are internal (within a single organization) or partner (between organizations). Reported to {{< SecureTransport/companyname >}} Sentinel as `USERPARAMETER1` and displayed in the Sentinel event attributes.
 
 -   **Access Level** - transfer site access level determines whether and which other accounts could reuse this transfer site in the Send To Partner step.
     -   **Private** – The access level is private. Only the current account is able to use this transfer site.
     -   **Business Unit** – Access to the transfer site is limited to the account's business unit. The current account and all accounts in the current account’s business unit can use this transfer site.
     -   **Public** – Access to the transfer site is public. All accounts are able use this transfer site.
 
--   **Maximum parallel transfers** – If you enter a value greater than zero, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> executes only the specified number of transfers in parallel. If the value is null or zero, the maximum number of parallel transfers is limited by system capacity.  
+-   **Maximum parallel transfers** – If you enter a value greater than zero, {{< SecureTransport/componentshortname >}} executes only the specified number of transfers in parallel. If the value is null or zero, the maximum number of parallel transfers is limited by system capacity.  
     The maximum number of parallel transfers limit is applied cluster wide. The limit for files transferred from the client will not be exceeded. Due to limitations in Standard Cluster communication mode, the parallel pulls limit can be exceeded when there are several connections. If you want to force the limit, then the `force.standard.cluster.sit.transfers.sync=true` system property should be added to the `start_tm_console`. Adding the property to the `start_tm_console` has a performance penalty due to increased cluster communication.  
-    Note that the `force.standard.cluster.sit.transfers.sync` value overrides the value of the `force.standart.cluster.sit.pulls.sync` property, used in previous <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> versions for the same purposes.  
+    Note that the `force.standard.cluster.sit.transfers.sync` value overrides the value of the `force.standart.cluster.sit.pulls.sync` property, used in previous {{< SecureTransport/componentshortname >}} versions for the same purposes.  
     You can configure **Maximum parallel transfers** with the following Transfer site protocols: AS2, FTP(S), HTTP(S), SSH, Generic-HTTP(S), SharePoint.  
 
     > **Note:**

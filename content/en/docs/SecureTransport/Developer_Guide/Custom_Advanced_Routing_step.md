@@ -2,9 +2,9 @@
     "title": "Custom Advanced Routing step",
     "linkTitle": "Custom Advanced Routing Step",
     "weight": "120"
-}This topic explains how to develop a custom Advanced Routing step and plug it into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+}This topic explains how to develop a custom Advanced Routing step and plug it into {{< SecureTransport/componentshortname  >}}.
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> provides a Custom Advanced Routing SPI, a set of Java interfaces and services that you can use to create, configure, and register a routing step. It is part of the SecureTransport Software Development Kit (SDK) which can be downloaded from <span class="mc-variable axway_variables.support_website variable">Axway Support</span> at [support.axway.com](http://support.axway.com/).
+{{< SecureTransport/securetransportname  >}} provides a Custom Advanced Routing SPI, a set of Java interfaces and services that you can use to create, configure, and register a routing step. It is part of the SecureTransport Software Development Kit (SDK) which can be downloaded from {{< SecureTransport/supportwebsite  >}} at [support.axway.com](http://support.axway.com/).
 
 To access the Advanced Routing SPI, unzip the SDK and open the `CustomRoutingStep\lib` folder. The `lib `folder contains the following library:
 
@@ -12,7 +12,7 @@ To access the Advanced Routing SPI, unzip the SDK and open the `CustomRoutingSte
 
 This JAR library holds the classes you need for implementation of Advanced Routing plug-ins. Install it in the local Maven repository following the instructions in the README file.
 
-A custom Advanced Routing step plug-in is deployed by dropping its JAR file into `${FILEDRIVEHOME}/plugins/routingSteps` directory. The latter is automatically created when you install or upgrade <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable">5.5</span>.
+A custom Advanced Routing step plug-in is deployed by dropping its JAR file into `${FILEDRIVEHOME}/plugins/routingSteps` directory. The latter is automatically created when you install or upgrade {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}}.
 
 The JAR file must contain all the information required for the custom step including its metadata.
 
@@ -221,7 +221,7 @@ Example:
         throw new CustomStepExitStatusException("Custom step failure message", "CustomFailureStatusExample");
      }
 
-### Using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SSLContext service
+### Using the {{< SecureTransport/componentshortname  >}} SSLContext service
 
 SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `javax.net.ssl.SSLSocketFactory` objects using its internal keystore. These objects can be used for setting up secure SSL connections to other applications. This service is identical to the *SSLContext service* exposed for *Custom connectors*, see <a href="../custom_connector/custom_protocol#exposed" class="MCXref xref">SecureTransport exposed services</a>.
 
@@ -241,7 +241,7 @@ These methods have the same behavior as those from the Custom connectors’ `SSL
 
 ### Using the SecureTransport Certificate service
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a service for certificate parsing and validation against its keystore. The service is called `com.axway.st.plugins.improvedrouting.environment.CertificateService` and can be used in the process method of the custom advanced routing step using the following code:
+{{< SecureTransport/componentshortname  >}} provides a service for certificate parsing and validation against its keystore. The service is called `com.axway.st.plugins.improvedrouting.environment.CertificateService` and can be used in the process method of the custom advanced routing step using the following code:
 
 
     CertificateService certificateService = producerSettings.getCertificateService();
@@ -250,18 +250,18 @@ This service is identical to the Certificate service exposed for Custom connecto
 
 It declares the following methods:
 
--   `CertificateStatus getCertificateStatus(X509Certificate certificate)` – validates the certificate against the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore; returns one of these enumeration values: `VALID, EXPIRED, NOT_YET_VALID, UNTRUSTED`.
--   `KeyPair getKeyPair(String certificateAlias)` – Retrieves public/private key pair from the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore using certificate alias.
--   `X509Certificate getCertificateByAlias(String certificateAlias)` – retrieves certificate from the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore using certificate alias.
+-   `CertificateStatus getCertificateStatus(X509Certificate certificate)` – validates the certificate against the {{< SecureTransport/securetransportname >}} keystore; returns one of these enumeration values: `VALID, EXPIRED, NOT_YET_VALID, UNTRUSTED`.
+-   `KeyPair getKeyPair(String certificateAlias)` – Retrieves public/private key pair from the {{< SecureTransport/securetransportname >}} keystore using certificate alias.
+-   `X509Certificate getCertificateByAlias(String certificateAlias)` – retrieves certificate from the {{< SecureTransport/securetransportname >}} keystore using certificate alias.
 -   `X509Certificate getCertificateById(String certificateId)` – retrieves certificate from the SecureTransport keystore using certificate’s unique identifier.
--   `X509Certificate getIssuer(X509Certificate certificate)` – retrieves certificate issuer from the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore for given certificate.
--   `List<X509Certificate> getCertificateChain(X509Certificate certificate)` – retrieves certificate chain list from the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore for given certificate. Can be empty, if certificate does not have a chain. The first element is the certificate itself, next element is its issuer and so on to the root certificate.
--   `Collection<X509Certificate> getCertificates(String subjectDN)` – retrieves certificate list from the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> keystore for given subject DN.
+-   `X509Certificate getIssuer(X509Certificate certificate)` – retrieves certificate issuer from the {{< SecureTransport/securetransportname >}} keystore for given certificate.
+-   `List<X509Certificate> getCertificateChain(X509Certificate certificate)` – retrieves certificate chain list from the {{< SecureTransport/securetransportname >}} keystore for given certificate. Can be empty, if certificate does not have a chain. The first element is the certificate itself, next element is its issuer and so on to the root certificate.
+-   `Collection<X509Certificate> getCertificates(String subjectDN)` – retrieves certificate list from the {{< SecureTransport/securetransportname >}} keystore for given subject DN.
 -   `Subject getCertificateSubject(X509Certificate certificate)` – extracts the domain name of the `certificate`’s subject into a bean of type `Subject`, that contains the following properties: `Common name, Country, Organization, Organization Unit, Locality, State`
 
 ### Using the SecureTransport Logging service
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> provides a service for logging messages and exceptions with a different log level. The service interface is called `com.axway.st.plugins.improvedrouting.services.LoggingService` and can be used in the process method of the custom advanced routing step using the following code:
+{{< SecureTransport/securetransportname  >}} provides a service for logging messages and exceptions with a different log level. The service interface is called `com.axway.st.plugins.improvedrouting.services.LoggingService` and can be used in the process method of the custom advanced routing step using the following code:
 
 
     LoggingService loggingService = producerSettings.getLoggingService();
@@ -281,7 +281,7 @@ The logging level can be controlled by logger in `tm-log4j.xml` and `admin-log4j
 
 ### Using the SecureTransport Expression Evaluator service
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> provides a service for evaluating and validating expressions used in the custom step implementation.
+{{< SecureTransport/securetransportname  >}} provides a service for evaluating and validating expressions used in the custom step implementation.
 
 The service interface is called `com.axway.st.plugins.improvedrouting.services.ExpressionEvaluatorService` and can be used in the process method of the custom advanced routing step using the following code:
 
@@ -324,11 +324,11 @@ Examples:
 
 ## Step deployment
 
-The step should be placed in the `SecureTransport/plugins/routingSteps` directory. In cluster environment the step should be present on all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> cluster nodes. Restart of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Admin UI and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> TransactionManager is required.
+The step should be placed in the `SecureTransport/plugins/routingSteps` directory. In cluster environment the step should be present on all {{< SecureTransport/componentshortname  >}} cluster nodes. Restart of the {{< SecureTransport/componentshortname  >}} Admin UI and the {{< SecureTransport/componentshortname  >}} TransactionManager is required.
 
 ## Step undeployment
 
-Before removing the step make sure it is not used in any existing SecureTransport routes. After that the step JAR can be deleted. Restart of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Admin UI and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> TransactionManager is required.
+Before removing the step make sure it is not used in any existing SecureTransport routes. After that the step JAR can be deleted. Restart of the {{< SecureTransport/componentshortname  >}} Admin UI and the {{< SecureTransport/componentshortname  >}} TransactionManager is required.
 
 ## Accessing third party libraries
 
@@ -358,9 +358,9 @@ Creating the step using the SecureTransport Routes and Steps REST API:
 
 ## UI page for custom route step
 
-This section of the document explains how to plug the custom developed AdvancedRouting step page into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>Admin UI.
+This section of the document explains how to plug the custom developed AdvancedRouting step page into {{< SecureTransport/componentshortname  >}}Admin UI.
 
-After the deployment of the JAR, you can verify the step is plugged in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> using the REST API:
+After the deployment of the JAR, you can verify the step is plugged in {{< SecureTransport/componentshortname  >}} using the REST API:
 
 
     https://<host>:<port>/api/v1.4/routeStepsMetadata
@@ -386,7 +386,7 @@ The `uiPagePath` is the page you have developed for the custom Advanced Routing 
 
 The user interface logic of the custom Advanced Routing step is added as JavaScript methods to a HTML file in the `/html` folder from the step JAR.
 
-The step is displayed in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and you can verify it by navigating to the **Routes** page.
+The step is displayed in the {{< SecureTransport/componentshortname  >}} Administration Tool and you can verify it by navigating to the **Routes** page.
 
 #### Example HTML excerpt
 

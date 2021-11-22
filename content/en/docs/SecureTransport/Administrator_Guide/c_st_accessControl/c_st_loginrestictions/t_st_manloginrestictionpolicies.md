@@ -92,7 +92,7 @@ Use the following instructions to add a policy rule to Login Restriction Policy.
     -   `*.example.com`; `example.*`
 
 5.  (Optional) Enter an **Expression** for the policy rule.  
-    Specify an expression using <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> expression language. Use the following named variable sets:
+    Specify an expression using {{< SecureTransport/securetransportname >}} expression language. Use the following named variable sets:
 
     -   `${sess['variable']}`
     -   `${env['variable']}, ${stenv['variable']}, or ${stenv.variable}`

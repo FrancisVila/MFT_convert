@@ -8,7 +8,7 @@ When you create a load balancer in a VNet, you can make it an internal load bala
 
 When you create your load balancer, you configure Frontend IP, Load Balancing rules, health probes, and register back-end instances. You configure a Load Balancing rule by specifying a protocol and a port for front-end (client to load balancer) connections, and a protocol and a port for back-end (load balancer to back-end instances) connections. You can configure multiple rules for your load balancer.
 
-Follow these steps to create a Basic Load Balancer redirecting requests to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge instances in Azure VNet:
+Follow these steps to create a Basic Load Balancer redirecting requests to {{< SecureTransport/componentshortname  >}} Edge instances in Azure VNet:
 
 1.  Log in to **Azure portal -> Create a resource**.
 2.  Under **Azure Marketplace** section select **Networking**.
@@ -71,6 +71,6 @@ After creating the Load Balancer, you must configure Health probes, Backend pool
 >
 > Check the FTP does not work through the firewall section in the SecureTransport 5.5 Administrator's guide if you want to configure FTP listeners.
 
-Now, your load balancer is ready to fetch requests and distribute them across your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge instances.
+Now, your load balancer is ready to fetch requests and distribute them across your {{< SecureTransport/componentshortname  >}} Edge instances.
 
 If you would like to use a friendly DNS name to access your load balancer, instead of the default DNS name automatically assigned to your load balancer, you can create a custom domain name.

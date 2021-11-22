@@ -41,11 +41,11 @@
     -   Applications
     -   Application Details
 
-If there has been no change to the object or objects since <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> was installed or upgraded to a version that includes the audit log, the link indicates `No tracked change`.
+If there has been no change to the object or objects since {{< SecureTransport/componentshortname  >}} was installed or upgraded to a version that includes the audit log, the link indicates `No tracked change`.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores configuration that you change on other pages of the Administration Tool in sever configuration parameters. Some pages save values that are not changed when you make a change, so the audit log might include entries for the corresponding server configuration parameters in addition to the ones for the fields you changed.
+{{< SecureTransport/componentshortname  >}} stores configuration that you change on other pages of the Administration Tool in sever configuration parameters. Some pages save values that are not changed when you make a change, so the audit log might include entries for the corresponding server configuration parameters in addition to the ones for the fields you changed.
 
-When you click a link on a page, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> opens the *Audit Log* page and displayed the entry for the update that the link represents.
+When you click a link on a page, {{< SecureTransport/componentshortname  >}} opens the *Audit Log* page and displayed the entry for the update that the link represents.
 
 **Related topics:**
 

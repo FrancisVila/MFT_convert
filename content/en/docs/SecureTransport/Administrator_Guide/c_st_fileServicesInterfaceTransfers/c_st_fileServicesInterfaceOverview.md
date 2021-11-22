@@ -2,7 +2,7 @@
     "title": "File services interface overview",
     "linkTitle": "File service interface overview",
     "weight": "200"
-}For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to receive a file using the file services interface, the external system must copy the file into the shared file system. The external system then sends the parameters for the transfer in the metadata file using another protocol.
+}For {{< SecureTransport/componentshortname  >}} to receive a file using the file services interface, the external system must copy the file into the shared file system. The external system then sends the parameters for the transfer in the metadata file using another protocol.
 
 To perform a file services interface transfer, the external server:
 
@@ -10,11 +10,11 @@ To perform a file services interface transfer, the external server:
 2.  Construct a metadata file that specifies the parameters of the transfer.
 3.  Upload the metadata file into the subscription folder of an application of type File Transfer via File Services Interface.
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server:
+The {{< SecureTransport/componentshortname  >}} Server:
 
 1.  Reads the specification of the transfer from the metadata file.
 2.  Copies the transferred file from the shared directory to the locations specified in the metadata file.
 3.  Deletes the metadata file.
 4.  Deletes the transferred file from the shared directory, if specified in the metadata file.
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends a file using the file services interface, it calls a connector process configured by the developer which pushes the file to the remote server.
+When {{< SecureTransport/componentshortname  >}} sends a file using the file services interface, it calls a connector process configured by the developer which pushes the file to the remote server.

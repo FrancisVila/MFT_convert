@@ -2,9 +2,9 @@
     "title": "System to Human transfer sites",
     "linkTitle": "System to Human transfer sites",
     "weight": "270"
-}You can use a System to Human transfer site to send files to email recipients. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends a notification email to the recipients from the email address specified in the **Email Contact** field of the user settings. If the email is not set, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not send the notification email and logs an error.
+}You can use a System to Human transfer site to send files to email recipients. {{< SecureTransport/componentshortname  >}} sends a notification email to the recipients from the email address specified in the **Email Contact** field of the user settings. If the email is not set, {{< SecureTransport/componentshortname  >}} does not send the notification email and logs an error.
 
-A recipient of a notification email retrieves the file based on the security level specified. In some cases, the recipient clicks a link in the notification email to retrieve the file. In other words, the recipient must log in to ST Web Client or one of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins and the user logs in to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to retrieve the files. The notification email is from the email address specified in the **Email Contact** field of the user settings. If the email is not set, the If the security level allows, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> enrolls the user, creating an account.
+A recipient of a notification email retrieves the file based on the security level specified. In some cases, the recipient clicks a link in the notification email to retrieve the file. In other words, the recipient must log in to ST Web Client or one of the {{< SecureTransport/companyname  >}} Email Plug-ins and the user logs in to {{< SecureTransport/componentshortname  >}} to retrieve the files. The notification email is from the email address specified in the **Email Contact** field of the user settings. If the email is not set, the If the security level allows, {{< SecureTransport/componentshortname  >}} enrolls the user, creating an account.
 
 You can use hardcoded values, expressions in the supported expression language, or a
 combination of both to complete the fields indicated by a vertical yellow bar. For more information about expressions, see <a href="../../../c_st_expressionlanguage" class="MCXref xref">Expression Language</a>.
@@ -25,9 +25,9 @@ The following table describes the System to Human options for a transfer site.
 <ul>
 <li><strong>Anonymous</strong> – The recipient clicks a link in the email and can retrieve the files.</li>
 <li><strong>Challenge</strong> – When the recipient clicks the link in the email to retrieve the files, the recipient must answer a secret question correctly.</li>
-<li><strong>Existing Account</strong> – The recipient must have a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> accounts.</li>
-<li><strong>Enroll Unlicensed</strong> – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> enrolls the recipient as an unlicensed user, if necessary.</li>
-<li><strong>Enroll Licensed</strong> – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> enrolls the recipients as licensed users, if necessary.</li>
+<li><strong>Existing Account</strong> – The recipient must have a {{< SecureTransport/componentshortname  >}} accounts.</li>
+<li><strong>Enroll Unlicensed</strong> – {{< SecureTransport/componentshortname  >}} enrolls the recipient as an unlicensed user, if necessary.</li>
+<li><strong>Enroll Licensed</strong> – {{< SecureTransport/componentshortname  >}} enrolls the recipients as licensed users, if necessary.</li>
 </ul>         </td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@ Re-enter Answer         </td>
       </tr>
       <tr>
          <td>Email Notification Template         </td>
-         <td>Select <code>Default</code> or an email template that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to compose the file transfer notification and status emails. You specify the email templates on the <em>Mail Template Repository</em> page. You specify the default email notification template on the <em>AdHoc Settings</em> page.         </td>
+         <td>Select <code>Default</code> or an email template that {{< SecureTransport/componentshortname  >}} uses to compose the file transfer notification and status emails. You specify the email templates on the <em>Mail Template Repository</em> page. You specify the default email notification template on the <em>AdHoc Settings</em> page.         </td>
       </tr>
       <tr>
          <td>Expiration Interval         </td>
@@ -71,7 +71,7 @@ Days, and Never.         </td>
       <tr>
          <td>Send File As         </td>
          <td><p>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name.</p>
-<p>For example, when a file arrives in a H2S file transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> renames the file by prepending a unique ID to the file name. If the file it routed to an H2S transfer site to forward it, the expression, <code>${stenv.target.replace('^.{66}', '')}</code>, removes the ID.</p>         </td>
+<p>For example, when a file arrives in a H2S file transfer, {{< SecureTransport/componentshortname  >}} renames the file by prepending a unique ID to the file name. If the file it routed to an H2S transfer site to forward it, the expression, <code>${stenv.target.replace('^.{66}', '')}</code>, removes the ID.</p>         </td>
       </tr>
    </tbody>
 </table>

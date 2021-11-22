@@ -2,7 +2,7 @@
     "title": "Security introduction",
     "linkTitle": "Security introduction",
     "weight": "40"
-}This guide provides instructions and recommendations to help you strengthen the security of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. Security descriptions include:
+}This guide provides instructions and recommendations to help you strengthen the security of {{< SecureTransport/componentshortname  >}}. Security descriptions include:
 
 -   How the product was developed in a secure way
 -   A list of main security features

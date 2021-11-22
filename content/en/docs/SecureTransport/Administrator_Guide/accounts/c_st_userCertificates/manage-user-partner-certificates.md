@@ -2,7 +2,7 @@
     "title": "Manage partner certificates ",
     "linkTitle": "Manage partner certificates",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses partner certificates as public certificates for encrypting PGP and AS2 data to the respective account and for verification of the signature of data from the account.
+}{{< SecureTransport/componentshortname  >}} uses partner certificates as public certificates for encrypting PGP and AS2 data to the respective account and for verification of the signature of data from the account.
 
 You can view, generate, import and delete partner certificates for the active account from the *Partner Certificates* tab page.
 
@@ -19,7 +19,7 @@ You can view, generate, import and delete partner certificates for the active ac
 
 ## Generate a partner certificate
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> generates X509 and SSH partner certificates.
+{{< SecureTransport/componentshortname  >}} generates X509 and SSH partner certificates.
 
 ### Generate an X509 partner certificate
 
@@ -55,7 +55,7 @@ Use the following procedure generate a PGP partner certificate.
 
 ## Import a partner certificate
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> imports X509 and PGP partner certificates.
+{{< SecureTransport/componentshortname  >}} imports X509 and PGP partner certificates.
 
 <span id="Import"></span>Use the following procedure to import a partner certificate.
 

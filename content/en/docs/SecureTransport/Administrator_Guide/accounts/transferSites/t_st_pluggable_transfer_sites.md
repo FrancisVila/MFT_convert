@@ -2,15 +2,15 @@
     "title": "Pluggable Transfer Sites",
     "linkTitle": "Pluggable transfer sites",
     "weight": "300"
-}Pluggable Transfer Sites (connectors) are custom plug-ins that can be deployed on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to allow sending and receiving files over various protocols.
+}Pluggable Transfer Sites (connectors) are custom plug-ins that can be deployed on the {{< SecureTransport/componentshortname  >}} Server to allow sending and receiving files over various protocols.
 
 Once deployed, the connector adds a new Transfer Site to the list of Transfer Sites available for the user accounts.
 
-A collection of Transfer Site plug-ins for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can be found in the [AMPLIFY Repository](https://repository.axway.com/).
+A collection of Transfer Site plug-ins for {{< SecureTransport/componentshortname  >}} can be found in the [AMPLIFY Repository](https://repository.axway.com/).
 
-Pluggable Transfer sites are deployed on all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server nodes, into the following folder `${FILEDRIVE_HOME}/plugins/transferSites`.
+Pluggable Transfer sites are deployed on all {{< SecureTransport/componentshortname  >}} Server nodes, into the following folder `${FILEDRIVE_HOME}/plugins/transferSites`.
 
-For more information on Pluggable Transfer sites, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Developer’s Guide.
+For more information on Pluggable Transfer sites, refer to the {{< SecureTransport/componentshortname  >}} Developer’s Guide.
 
 > **Note:**
 >

@@ -2,7 +2,7 @@
     "title": "Connect:Direct transfer sites",
     "linkTitle": "Connect:Direct transfer sites",
     "weight": "190"
-}The Connect:Direct transfer sites are not built into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. To be able to create and modify transfer sites that use the Connect:Direct protocol, you need to perform the following tasks:
+}The Connect:Direct transfer sites are not built into {{< SecureTransport/componentshortname  >}}. To be able to create and modify transfer sites that use the Connect:Direct protocol, you need to perform the following tasks:
 
 1.  Install CDJAI (Connect:Direct Application Interface for Java).
 2.  Enable file transfers via Connect:Direct.
@@ -11,12 +11,12 @@
 
 ### Install CDJAI
 
-The IBM Sterling Connect:Direct Application Interface for Java enables <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> to connect to Connect:Direct servers.
+The IBM Sterling Connect:Direct Application Interface for Java enables {{< SecureTransport/securetransportname  >}} to connect to Connect:Direct servers.
 
 To install it, you need the `CDJAI.jar` file, which is provided with the Connect:Direct Java API. Follow the steps:
 
-1.  Stop <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> by running `<FILEDRIVEHOME>/bin/stop_all`.
-2.  Copy the `CDJAI.jar` file to the `<FILEDRIVEHOME>/lib/jars/external` directory on the server running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+1.  Stop {{< SecureTransport/componentshortname >}} by running `<FILEDRIVEHOME>/bin/stop_all`.
+2.  Copy the `CDJAI.jar` file to the `<FILEDRIVEHOME>/lib/jars/external` directory on the server running {{< SecureTransport/componentshortname >}}.
 3.  Edit the
     `<FILEDRIVEHOME>/bin/start_tm_console` file to set the correct path to the `CDJAI.jar` file in the `CLASSPATH` parameter.
 4.  If you are using the embedded database, run `<FILEDRIVEHOME>/bin/start_db`.
@@ -41,7 +41,7 @@ Next, you need to enable the file transfers via Connect:Direct and set the serve
 
 2.  Search for the `ConnectDirectTransferAgent` parameters.
 
-3.  Set `ConnectDirectTransferAgent.transfersFolder` to the full path of the directory for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to use for the Connect:Direct transfers. The directory must be shared between the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and the Connect:Direct servers, and the path should be the same on both. Verify that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has full permissions for the directory.  
+3.  Set `ConnectDirectTransferAgent.transfersFolder` to the full path of the directory for the {{< SecureTransport/componentshortname >}} Server to use for the Connect:Direct transfers. The directory must be shared between the {{< SecureTransport/componentshortname >}} and the Connect:Direct servers, and the path should be the same on both. Verify that {{< SecureTransport/componentshortname >}} has full permissions for the directory.  
 
     > **Note:**
     >
@@ -49,9 +49,9 @@ Next, you need to enable the file transfers via Connect:Direct and set the serve
 
 4.  To manage purging of the Connect:Direct folder, use the `ConnectDirectTransferAgent.transfersFolder.purge` server configuration option. By default, it is set to **true**, which means that the folder used for the Connect:Direct transfers will be purged on Transaction Manager startup. When set to **false**, no purging is performed.
 
-5.  Set `ConnectDirectTransferAgent.commandTimeout` to the interval in seconds that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> waits before the transfer times out.
+5.  Set `ConnectDirectTransferAgent.commandTimeout` to the interval in seconds that {{< SecureTransport/componentshortname >}} waits before the transfer times out.
 
-6.  Start <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> by running `<FILEDRIVEHOME>/bin/start_all`.
+6.  Start {{< SecureTransport/componentshortname >}} by running `<FILEDRIVEHOME>/bin/start_all`.
 
 > **Note:**
 >
@@ -73,7 +73,7 @@ The following table describes the Connect:Direct protocol options for a transfer
    <tbody>
       <tr>
          <td>Transfer Mode         </td>
-         <td><p>Sets the file transfer mode. Valid values: ASCII, Binary, and Auto-detect. The default value is Auto-detect, meaning <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> automatically determines the proper transfer mode based on the file content type. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
+         <td><p>Sets the file transfer mode. Valid values: ASCII, Binary, and Auto-detect. The default value is Auto-detect, meaning {{< SecureTransport/componentshortname  >}} automatically determines the proper transfer mode based on the file content type. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Site Settings</strong>         </td>
@@ -101,12 +101,12 @@ If the local server uses a password, select <strong>Use Password</strong> and en
 </ul>
 <ul>
 <li>Certificate authentication<br />
-To configure a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> transfer site to connect to a Connect:Direct server by using a certificate:<br />
+To configure a {{< SecureTransport/componentshortname  >}} transfer site to connect to a Connect:Direct server by using a certificate:<br />
 </li>
 </ul>
 <ol>
-<li><p>Exchange the CA certificates between the SecureTransport and the Connect:Direct server: the trusted root certificate file of the Connect:Direct server should be exported, and imported as a trusted CA in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>; the trusted root certificate file of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server should be exported, and imported on the Connect:Direct server.</p></li>
-<li><p>Generate a local or a private <a href="../../../c_st_setup/c_st_certificates/r_st_certificate_types">certificate</a> in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> whose common name field matches the Connect:Direct local user that is going to be used to log in to the Connect:Direct server.</p></li>
+<li><p>Exchange the CA certificates between the SecureTransport and the Connect:Direct server: the trusted root certificate file of the Connect:Direct server should be exported, and imported as a trusted CA in {{< SecureTransport/componentshortname  >}}; the trusted root certificate file of the {{< SecureTransport/componentshortname  >}} server should be exported, and imported on the Connect:Direct server.</p></li>
+<li><p>Generate a local or a private <a href="../../../c_st_setup/c_st_certificates/r_st_certificate_types">certificate</a> in {{< SecureTransport/componentshortname  >}} whose common name field matches the Connect:Direct local user that is going to be used to log in to the Connect:Direct server.</p></li>
 <li>Import the certificate in the Connect:Direct server.</li>
 <li>In the transfer site configuration, select the <strong>Use Certificate</strong> checkbox and specify the <strong>Certificate Alias</strong> used for connecting to the Connect:Direct server. You can either select the private certificate you generated at <em>Step 2</em> from the drop down or import a certificate.</li>
 </ol>

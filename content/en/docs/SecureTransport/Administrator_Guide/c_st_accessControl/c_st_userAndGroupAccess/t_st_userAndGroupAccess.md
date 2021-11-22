@@ -2,10 +2,10 @@
     "title": "Manage user and group access",
     "linkTitle": "Manage user and group access",
     "weight": "280"
-}Use the *Denied Users* pane and the *Denied Groups* pane of the *Access Rules* page to add and remove user and groups that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prevents from connecting to the FTP and HTTP servers.
+}Use the *Denied Users* pane and the *Denied Groups* pane of the *Access Rules* page to add and remove user and groups that {{< SecureTransport/componentshortname  >}} prevents from connecting to the FTP and HTTP servers.
 
 Every group listed as a denied group must be defined at the
-operating system level so that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can determine the
+operating system level so that {{< SecureTransport/componentshortname  >}} can determine the
 group name from the GID in the user account.
 
 The following topics provide how-to instructions for managing user and group access:

@@ -11,7 +11,7 @@
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the Internet. Security is achieved by using digital certificates and encryption. The AS2 specification describes how to exchange business data securely and reliably using HTTP as an underlying transport. The data is packaged using standard MIME content types so you can use XML, EDI, binary data, and any other data describable in MIME. Message security (authentication, confidentiality) is implemented using S/MIME. Message reliability is enabled through the use of MDNs. Nonrepudiation and Nonrepudiation of Receipt are business and legal concepts that build upon the security and reliability components in AS2.
 
-If an AS2 license is available, enable the AS2 server. In cluster setup, specify the AS2 settings on both <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+If an AS2 license is available, enable the AS2 server. In cluster setup, specify the AS2 settings on both {{< SecureTransport/componentshortname  >}} Server and {{< SecureTransport/componentshortname  >}} Edge.
 
 <span id="Add"></span>
 
@@ -97,24 +97,24 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>Key Exchange Algorithms         </td>
-         <td>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.         </td>
+         <td>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.         </td>
       </tr>
       <tr>
          <td>Enabled SSL Protocols         </td>
          <td>Enter a comma-separated list of SSL protocol versions to be enabled.
 <p>Default value for newly created AS2 servers after updating to SecureTransport 5.5-20210930: <code>TLSv1.2, TLSv1.3</code>.</p>
 <p>Default value for existing AS2 servers: <code>TLSv1, TLSv1.1, TLSv1.2</code>.<br />
-For instructions on how to enable TLSv1.3 protocol support, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> <em>Security guide</em>.</p>         </td>
+For instructions on how to enable TLSv1.3 protocol support, refer to the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} <em>Security guide</em>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled Ciphers         </td>
          <td><p>Enter the cipher suites to be used with your AS2 server.</p>
-<p>For more information on Cipher suites, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <em></em> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> <em>Security guide</em>.</p>         </td>
+<p>For more information on Cipher suites, refer to the {{< SecureTransport/componentshortname  >}} <em></em> {{< SecureTransport/releasenumber  >}} <em>Security guide</em>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your AS2 server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default AS2 server, the list of allowed cipher suites in FIPS mode is determined by the <code>As2.FIPS.Listeners.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>

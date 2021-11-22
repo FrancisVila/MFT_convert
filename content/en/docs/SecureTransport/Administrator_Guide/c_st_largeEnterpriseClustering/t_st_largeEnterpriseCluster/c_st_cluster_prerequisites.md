@@ -4,9 +4,9 @@
     "weight": "130"
 }Before you deploy an Enterprise Cluster, you must have:
 
--   A features license that permits the number of clustered <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers (nodes) in your cluster.
--   A license for all the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers in your cluster.
--   An external Oracle, PostgreSQL, or Microsoft SQL Server database server or cluster that satisfies the requirements described in the <span class="redirect_st_inst" cshid="install" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Installation Guide*</span>.
+-   A features license that permits the number of clustered {{< SecureTransport/componentshortname >}} Servers (nodes) in your cluster.
+-   A license for all the {{< SecureTransport/componentshortname >}} Edge servers in your cluster.
+-   An external Oracle, PostgreSQL, or Microsoft SQL Server database server or cluster that satisfies the requirements described in the .
 -   A file system that all servers in the cluster can access (for example, using network-attached storage).
 -   The working network, including the firewall and load balancer systems required by your cluster deployment.
 -   The time settings (clocks) on all computers in the network synchronized.

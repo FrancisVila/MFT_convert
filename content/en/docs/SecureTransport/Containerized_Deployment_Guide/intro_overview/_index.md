@@ -53,6 +53,6 @@ The containerized version of SecureTransport Enterprise Cluster (EC) supports th
 
 In order to address the requirement for manual/automatic scalability of the containerized SecureTransport Edge, an external MariaDB database is required as well.
 
-For more information, see [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm#database) topic in the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> *Administrator guide*.
+For more information, see [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm#database) topic in the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} *Administrator guide*.
 
 *next topic:* <a href="classic-vs-containerized" class="MCXref xref">Containerized deployment specifics</a>

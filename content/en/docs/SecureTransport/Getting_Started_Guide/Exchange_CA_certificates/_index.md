@@ -2,11 +2,11 @@
     "title": "Exchange CA certificates",
     "linkTitle": "Exchange CA certificates",
     "weight": "110"
-}The Setup step 7 pertains only to a two-tier architecture, where both a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server are being configured.
+}The Setup step 7 pertains only to a two-tier architecture, where both a {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server are being configured.
 
-In a two-tier deployment, the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server authenticate each other through the use of certificates. These certificates have already been created and specified in previous steps. In this step, a trust relationship between the two servers must be set up. This setup involves exchanging certificates between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+In a two-tier deployment, the {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server authenticate each other through the use of certificates. These certificates have already been created and specified in previous steps. In this step, a trust relationship between the two servers must be set up. This setup involves exchanging certificates between {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server.
 
-To complete this step, you must be able to access both the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Administration Tool. Use a separate browser window to open each Administration Tool.
+To complete this step, you must be able to access both the {{< SecureTransport/componentshortname  >}} Server and {{< SecureTransport/componentshortname  >}} Edge Administration Tool. Use a separate browser window to open each Administration Tool.
 
 > **Note:**
 >
@@ -16,17 +16,17 @@ To complete this step, you must be able to access both the <span class="mc-varia
 
 ## Export the SecureTransport Server or Edge CA certificate
 
-Use the following steps to export the CA certificate from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or Edge.
+Use the following steps to export the CA certificate from the {{< SecureTransport/componentshortname  >}} Server or Edge.
 
 1.  Go to **Configure > 7-Exchange Certs**.
-2.  From the list of trusted CAs, click the alias that matches the CA certificate set up for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or Edge in **Configure > 2-Generate CA**.  
+2.  From the list of trusted CAs, click the alias that matches the CA certificate set up for the {{< SecureTransport/componentshortname >}} Server or Edge in **Configure > 2-Generate CA**.  
     The *View Certificate* dialog box is displayed.  
     <img src="/Images/SecureTransport/view_certificate.png" class="mediumWidth" alt="View Certificate - Exchange Certificates Export" />
 3.  Click **Export** in the *View Certificate* dialog box.
 4.  Save the file to a location in the local system.
 5.  Click **Close**.
 
-If necessary, you can import the CA certificate file to Edge (or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, where applicable).
+If necessary, you can import the CA certificate file to Edge (or {{< SecureTransport/componentshortname  >}} Server, where applicable).
 
 ## Import the SecureTransport Server or Edge CA certificate
 
@@ -36,7 +36,7 @@ A X509 certificate can be imported as a trusted CA in the form of a X509 DER or 
 >
 > SecureTransport protocol servers and services do not require restart after importing, overwriting, or deleting a trusted CA.
 
-Use the following steps to import the CA certificate from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge or vice versa.
+Use the following steps to import the CA certificate from the {{< SecureTransport/componentshortname  >}} Server to the {{< SecureTransport/componentshortname  >}} Edge or vice versa.
 
 1.  Go to **Configure > 7-Exchange Certs**.
 2.  Click **Import**. The *Import Certificate* dialog box is displayed.  
@@ -51,9 +51,9 @@ Use the following steps to import the CA certificate from the <span class="mc-va
 
  
 
-The following topics provide how-to instructions for importing and exporting <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server and Edge CAs:
+The following topics provide how-to instructions for importing and exporting {{< SecureTransport/securetransportname  >}} Server and Edge CAs:
 
--   <a href="" class="MCXref xref">Export the SecureTransport Server CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
--   <a href="" class="MCXref xref">Import the SecureTransport Server CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server CA certificate.
--   <a href="" class="MCXref xref">Export the SecureTransport Edge CA certificate</a> - Provides how-to instructions for exporting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.
--   <a href="" class="MCXref xref">Import the SecureTransport Edge CA certificate</a> - Provides how-to instructions for importing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge CA certificate.
+-   <a href="" class="MCXref xref">Export the SecureTransport Server CA certificate</a> - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Server CA certificate.
+-   <a href="" class="MCXref xref">Import the SecureTransport Server CA certificate</a> - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Server CA certificate.
+-   <a href="" class="MCXref xref">Export the SecureTransport Edge CA certificate</a> - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Edge CA certificate.
+-   <a href="" class="MCXref xref">Import the SecureTransport Edge CA certificate</a> - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Edge CA certificate.

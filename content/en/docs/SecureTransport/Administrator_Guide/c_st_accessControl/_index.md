@@ -2,13 +2,13 @@
     "title": "Access",
     "linkTitle": "Access menu",
     "weight": "140"
-}Use the <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> **Access** menu to configure how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> performs access control. Access control defines and restricts the rights of individuals to obtain data from, or place data onto, a storage device. Also, access control defines and restricts the rights of individuals to login. Access control changes are copied to all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers in your Enterprise Cluster (EC).
+}Use the {{< SecureTransport/componentlongname  >}} **Access** menu to configure how {{< SecureTransport/componentshortname  >}} performs access control. Access control defines and restricts the rights of individuals to obtain data from, or place data onto, a storage device. Also, access control defines and restricts the rights of individuals to login. Access control changes are copied to all {{< SecureTransport/componentshortname  >}} Servers in your Enterprise Cluster (EC).
 
 > **Note:**
 >
 > If your SecureTransport deployment includes SecureTransport Edge servers in a peripheral network (DMZ), you must configure all the settings under the Access menu that are applicable to SecureTransport Edge exactly the same on both SecureTransport Edge and SecureTransport Servers.
 
-The following topics describe the various methods to control access to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+The following topics describe the various methods to control access to {{< SecureTransport/componentshortname  >}}:
 
 -   <a href="c_st_userclasses" class="MCXref xref">User classes</a> - Describes user classes.
 -   <a href="c_st_sslaccess_new" class="MCXref xref">Secure Socket Layer access</a> - Describes Secure Socket Layer access.

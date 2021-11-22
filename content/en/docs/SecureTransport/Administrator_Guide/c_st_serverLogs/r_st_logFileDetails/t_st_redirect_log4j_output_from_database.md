@@ -4,13 +4,13 @@
     "weight": "340"
 }As listed in <a href="../r_st_log4j_files#AppServerLogs_558321163_1039127" class="MCXref xref">Log4j files</a>, some log output is directed to both the `xferlog` file and the database.
 
-If you set any log level to `debug` or `all`, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> produces many log messages which can overload the database. Do not log to the database for log level `debug` or `all`.
+If you set any log level to `debug` or `all`, {{< SecureTransport/componentshortname  >}} produces many log messages which can overload the database. Do not log to the database for log level `debug` or `all`.
 
 > **Note:**
 >
 > When server log messages are stored in the database, they are displayed in the Server Log page. When you store the log messages in a file, they are not displayed in the Server Log page.
 
-To direct the log messages being stored in the database to a file, modify the `ServerLog` appender for each relevant file. The example uses `FILEDRIVEHOME` instead of `<FILEDRIVEHOME>` to represent the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory to avoid confusion with the syntactic use of pointed brackets in XML. Replace the `<FILEDRIVEHOME>` with the actual installation path to the SecureTransport home folder in the XML configuration file.
+To direct the log messages being stored in the database to a file, modify the `ServerLog` appender for each relevant file. The example uses `FILEDRIVEHOME` instead of `<FILEDRIVEHOME>` to represent the {{< SecureTransport/componentshortname  >}} installation directory to avoid confusion with the syntactic use of pointed brackets in XML. Replace the `<FILEDRIVEHOME>` with the actual installation path to the SecureTransport home folder in the XML configuration file.
 
 Change:
 

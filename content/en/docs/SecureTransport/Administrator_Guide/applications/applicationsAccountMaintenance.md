@@ -2,7 +2,7 @@
     "title": "Account Maintenance application",
     "linkTitle": "Account Maintenance application",
     "weight": "170"
-}In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span>, you can define an Account Maintenance policy to automatically delete, disable, or purge accounts based on account inactivity or age. You can configure account maintenance schedule and emails notifications, as well as email alerts for password and certificate expiration.
+}In {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, you can define an Account Maintenance policy to automatically delete, disable, or purge accounts based on account inactivity or age. You can configure account maintenance schedule and emails notifications, as well as email alerts for password and certificate expiration.
 
 An Account maintenance policy can be set at three levels:
 

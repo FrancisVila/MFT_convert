@@ -8,7 +8,7 @@ Here are the basic steps:
 
 1.  Setup streaming. Refer to <a href="../../c_st_setup/t_st_stream_edge_backend" class="MCXref xref">Configure SecureTransport Back End to Edge streaming communication</a>.
 2.  On backend configure the SSO for end-user. Refer to <a href="../c_st_enable_sso_endusers#Enable2" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a>.
-3.  On the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edges navigate to **Authentication > Login Settings** and set **Required** for *SSO* for end-users.
+3.  On the {{< SecureTransport/componentshortname >}} Edges navigate to **Authentication > Login Settings** and set **Required** for *SSO* for end-users.
 
 > **Note:**
 >

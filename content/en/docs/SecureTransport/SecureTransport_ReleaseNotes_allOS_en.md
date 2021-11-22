@@ -4,7 +4,7 @@
     "weight": "30"
 }<span id="toplink"></span>
 
-Document version: <span class="mc-variable axway_variables.Release_Date variable">10 November 2021</span>
+Document version: {{< SecureTransport/releasedate  >}}
 
 SecureTransport 5.5 is a General Availability release. This document applies to: Axway SecureTransport Server 5.5, Axway SecureTransport Edge 5.5, and Axway SecureTransport Web Client 5.5 for all supported platforms, databases, and cluster types.
 
@@ -4950,7 +4950,7 @@ SecureTransport 5.5 provides the following documentation:
 -   *SecureTransport Developer's Guide* – This guide provides descriptions and usage instructions for implementing custom pluggable components in SecureTransport.
 -   *SecureTransport Getting Started Guide* – This guide explains the initial setup and configuration of SecureTransport using the SecureTransport Administrator setup interface.
 -   *SecureTransport Installation Guide* – This guide provides instructions how to install and set up SecureTransport.
--   <span class="redirect_st_security" cshid="sec" data-version="5.3.5">*SecureTransport Security Guide*</span> – This guide provides security information necessary for the secure operation of the SecureTransport product.
+-   – This guide provides security information necessary for the secure operation of the SecureTransport product.
 -   *ST Web Client Configuration Guide* – This guide describes how to configure and customize the ST Web Client user interface.
 -   *ST Web Client User Guide* – This guide describes how to use the ST Web Client.
 -   *SecureTransport on AWS Installation Guide* – This guide provides installation and setup information to deploy SecureTransport on AWS (Amazon Web Services).

@@ -2,15 +2,15 @@
     "title": "Create multiple instances with different configurations",
     "linkTitle": "Create multiple instances with different configurations",
     "weight": "100"
-}You can run multiple instances of the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> on one <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> server. This allows you to use the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> dynamic skin feature and set the available features and appearance of the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> per user account, account template, or business unit.
+}You can run multiple instances of the on one {{< SecureTransport/securetransportname  >}} server. This allows you to use the {{< SecureTransport/securetransportname  >}} dynamic skin feature and set the available features and appearance of the per user account, account template, or business unit.
 
-On Unix platforms, use the following procedure to create a new instance of <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> (STWC):
+On Unix platforms, use the following procedure to create a new instance of (STWC):
 
 1.  Go to `<FILEDREVEHOME>/share/ftdocs/html/skin/`.
 
 2.  Duplicate the `ric` folder. Choose a short and meaningful name for the duplicated folder, for example, *stwc1*.
 
-3.  Prepare the branding assets you need for the new skin following the instructions in the <a href="../webclient_branding" class="MCXref xref">Branding</a> section. The new <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> instance is styled and branded using the following files located in the folder created in Step 2.  
+3.  Prepare the branding assets you need for the new skin following the instructions in the <a href="../webclient_branding" class="MCXref xref">Branding</a> section. The new instance is styled and branded using the following files located in the folder created in Step 2.  
     -   `<stwc1>/C/assets/wap.css` - Controls the color theme and the style.
     -   `<stwc1>/custom/stwebclient.config.json` - Controls the logos, the text header displayed next to the logo and the disclaimer on the login page.
 
@@ -51,13 +51,13 @@ On Unix platforms, use the following procedure to create a new instance of <span
 
 12. Save the changes.  
     The newly created HTML template appears as an option in the HTML Template
-    drop-downs in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration tool.
+    drop-downs in the {{< SecureTransport/componentshortname >}} Administration tool.
 
 13. Go to `stwc1/C` folder and open one of the HTML templates, for example, `message.html`. Verify that all &lt;link> and &lt;script> elements contain the new path "`html/skin/stwc1/C/......`". We recommend that you perform a search for the old path "html/skin/ric" and make sure that it is not present in the `/stwc1/C/` directory.
 
 ## Set the HTML template for users and groups
 
-The HTML template that SecureTransport displays when the user logs in to the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> can configure it on the following levels:
+The HTML template that SecureTransport displays when the user logs in to the can configure it on the following levels:
 
 -   <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/accounts/t_st_create_user_account.htm" class="MCXref xref">user account</a>: **User Account Settings > HTML Template
     drop-down**

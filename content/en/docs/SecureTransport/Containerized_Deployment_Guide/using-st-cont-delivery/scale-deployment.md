@@ -67,14 +67,14 @@ Kubernetes can scale up (or down) one or more instances of a node with a single 
 
     kubectl scale statefulset <your-statefulset> -n <your-namespace> --replicas=<total-desired-number-of-nodes>
 
-In order to scale up a SecureTransport Server node fill in your configured EC StatefulSet. Similarly, with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>Edge node, use the Edge StatefulSet.
+In order to scale up a SecureTransport Server node fill in your configured EC StatefulSet. Similarly, with {{< SecureTransport/componentshortname  >}}Edge node, use the Edge StatefulSet.
 
 Fill in your namespace if you have it configured or remove the option if you don't have one. The `--replicas` value must equal the total number of nodes you wish to scale-up , it includes previously running instances. For example if you have a single running instance of a node and fill `--replicas=3` Kubernetes will scale-up two additional nodes. It can also scale-up nodes without having a running instance of that node.
 
 Executing the command will tell Kubernetes to scale-up nodes one by one. The new instances of EC nodes will be created as they become in ready state in a matter of seconds, but will be functional after their average time to start. The new instances of Edge nodes will be created one by one after each one of them is in ready state.
 
 -   It is recommended to have only one Server StatefulSet in the internal Kubernetes cluster, with multiple Edge StatefulSets (if needed) in the DMZ Kubernetes cluster.
--   Multiple Edges in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration are supported only when a separate zone is configured for each Edge. See section <a href="../additional-network-zones" class="MCXref xref">Multiple network zones</a> for further information.
+-   Multiple Edges in the {{< SecureTransport/componentshortname >}} configuration are supported only when a separate zone is configured for each Edge. See section <a href="../additional-network-zones" class="MCXref xref">Multiple network zones</a> for further information.
 -   Changes in configuration which is dynamically reloaded is not replicated if there more than one Edge. See section <a href="../initial-deployment" class="MCXref xref">Initial deployment</a> for further information.
 -   In multiple (more than one) Edge deployments, HTTP, FTP and SSH sessions established on the Edge side cannot be killed via the Server Usage monitor on the SecureTransport Server. The administrator can manipulate via the Server Usage monitor only the local sessions of each SecureTransport Edge.
 

@@ -4,12 +4,12 @@
     "weight": "200"
 }The Axway Sentinel Link Data Maintenance application removes all SentinelLinkData entries to files that do not exist anymore, based on a schedule you define.
 
-Use the following procedure to create an <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel Link Data Maintenance type application.
+Use the following procedure to create an {{< SecureTransport/companyname  >}} Sentinel Link Data Maintenance type application.
 
 1.  Select **Application** and click **Add New**.  
     The *New Application* page is displayed.
 
-2.  Select **<span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel Link Data Maintenance** from the mandatory **Application Type** list.
+2.  Select **{{< SecureTransport/companyname >}} Sentinel Link Data Maintenance** from the mandatory **Application Type** list.
 
 3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
 

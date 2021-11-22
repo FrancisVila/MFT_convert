@@ -4,7 +4,7 @@
     "weight": "80"
 }When you launch a virtual machine in a VNet, you can associate it with one network security group that you have created. If you do not specify a network security group when you launch an instance, all traffic to this instance is allowed.
 
-It is recommended that you create the network security groups you need for your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> infrastructure in Azure as a first stage before proceeding with rest of the setup. You need to group (assign) the instances and components into the following security groups:
+It is recommended that you create the network security groups you need for your {{< SecureTransport/componentshortname  >}} infrastructure in Azure as a first stage before proceeding with rest of the setup. You need to group (assign) the instances and components into the following security groups:
 
 -   SecureTransport Edge network security group
 -   SecureTransport Server network security group
@@ -12,7 +12,7 @@ It is recommended that you create the network security groups you need for your 
 -   External File System network security group
 -   Administration Host security group
 
-It is recommended to have all components prepared prior the launch process of the instances. In this way, during your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> setup, you will just select the network security group you need from the list. You can always create the Network Security Groups on a later stage but we suggest you adhere to the flow as described.
+It is recommended to have all components prepared prior the launch process of the instances. In this way, during your {{< SecureTransport/componentshortname  >}} setup, you will just select the network security group you need from the list. You can always create the Network Security Groups on a later stage but we suggest you adhere to the flow as described.
 
 To create a network security group in Azure VNet:
 
@@ -26,7 +26,7 @@ To create a network security group in Azure VNet:
 7.  Use **"Add"** to enable/disable access to/from your instances on specific ports/source.  
     <img src="/Images/SecureTransport/create-SG.PNG" class="mediumWidth" />  
 
-You must add the necessary inbound/outbound rules to the network security groups and the instances assigned to each group will have the required for the group level of connectivity and security. Please refer to the firewall specific information already provided in <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> *Administrator guide*.
+You must add the necessary inbound/outbound rules to the network security groups and the instances assigned to each group will have the required for the group level of connectivity and security. Please refer to the firewall specific information already provided in {{< SecureTransport/componentshortname  >}} *Administrator guide*.
 
 You must give unique **Name** and **Priority** to each rule. Please, keep in mind that rules are applied according to their priority. The lower the number, the higher the priority.
 

@@ -2,7 +2,7 @@
     "title": "Update configuration files",
     "linkTitle": "Update server configuration files",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores the following server configuration files in the database:
+}{{< SecureTransport/componentshortname  >}} stores the following server configuration files in the database:
 
 -   `brules.xml`
 -   `FileServicesInterfaceRegistry.xml`
@@ -11,7 +11,7 @@
 -   `ssl.csr.conf`
 -   SSO Configuration Files - The Single Sign-On (SSO) related configuration files. For more information, refer to <a href="../../../c_st_authentication/c_st_about_sso#SSO" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a>.
 
-You can use the *Server Configuration Files* page to make changes on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to the files listed, save the changes to the database, propagate the changes to all servers in a cluster (if applicable), and configure SSO for end-users and administrators. For information about how to configure the SSO functionality in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, see <a href="../../../c_st_authentication/c_st_about_sso#SSO" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a>.
+You can use the *Server Configuration Files* page to make changes on {{< SecureTransport/componentshortname  >}} Server to the files listed, save the changes to the database, propagate the changes to all servers in a cluster (if applicable), and configure SSO for end-users and administrators. For information about how to configure the SSO functionality in {{< SecureTransport/componentshortname  >}}, see <a href="../../../c_st_authentication/c_st_about_sso#SSO" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a>.
 
 1.  On the *Server Configuration* page, select **Configuration Files**.  
     The *Server Configuration Files* page is displayed.
@@ -22,8 +22,8 @@ You can use the *Server Configuration Files* page to make changes on <span class
 6.  Click **Upload**.
 7.  Restart the `admind` service in order to apply the configuration changes.
 
-In cluster deployment, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will upload the selected files to the respective Server and copy the files to all the other Servers. However, the Server nodes will load the updated configuration after a restart of the `admind` service on each.
-You can apply that same procedure to update configuration files across <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edges.
+In cluster deployment, {{< SecureTransport/componentshortname  >}} will upload the selected files to the respective Server and copy the files to all the other Servers. However, the Server nodes will load the updated configuration after a restart of the `admind` service on each.
+You can apply that same procedure to update configuration files across {{< SecureTransport/componentshortname  >}} Edges.
 
 **Notes:**
 

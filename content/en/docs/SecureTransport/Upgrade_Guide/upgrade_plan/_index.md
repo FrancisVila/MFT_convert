@@ -2,13 +2,13 @@
     "title": "Upgrade planning and preparation",
     "linkTitle": "Plan the upgrade",
     "weight": "40"
-}If you are responsible for upgrading an existing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span>, read this section to help you plan your upgrade activities.
+}If you are responsible for upgrading an existing {{< SecureTransport/componentshortname  >}} installation to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, read this section to help you plan your upgrade activities.
 
 ## Should I upgrade?
 
 Before you upgrade, determine if upgrading is appropriate for your environment and production requirements:
 
--   Review the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable suite_variables.DocTypeRelNotes variable">Release Notes</span> for:
+-   Review the {{< SecureTransport/componentshortname >}} {{< SecureTransport/doctyperelnotes >}} for:
     -   New features
     -   Fixed issues
     -   Known limitations
@@ -21,15 +21,15 @@ Before you upgrade, determine if upgrading is appropriate for your environment a
 
 ## Minimum version requirement
 
-To upgrade directly to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span>, you must have <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.4 with the latest patch installed. See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> for a complete list of supported upgrade paths.
+To upgrade directly to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, you must have {{< SecureTransport/componentshortname  >}} 5.4 with the latest patch installed. See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> for a complete list of supported upgrade paths.
 
 ## Upgrade methods
 
-There is currently one method for upgrading to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> from an earlier version:
+There is currently one method for upgrading to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} from an earlier version:
 
 -   Apply an upgrade pack – When you apply the upgrade pack, the upgrade logic auto-detects and configures settings and prepares the upgraded installation for use without any additional configuration. This includes the upgrading of clustered implementations. For upgrade instructions using an upgrade pack, refer to <a href="../upgrade_overview" class="MCXref xref">Upgrade procedures</a>.
 
-See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> to learn about incompatibilities between earlier versions of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and this version.
+See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> to learn about incompatibilities between earlier versions of {{< SecureTransport/componentshortname  >}} and this version.
 
 ## Product downtime considerations
 
@@ -53,4 +53,4 @@ A new license is not required when upgrading SecureTransport .
 
 ## Download the upgrade pack
 
-After reviewing <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a>, go to the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> [support site](https://support.axway.com/) and download the upgrade pack for your operating system.
+After reviewing <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a>, go to the {{< SecureTransport/companyname  >}} [support site](https://support.axway.com/) and download the upgrade pack for your operating system.

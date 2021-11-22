@@ -56,7 +56,7 @@ You can check the current Kube-DNS TTL by executing the following command severa
 
 ### Set Default Container Memory and Open Files limits
 
-As the SecureTransport processes inside the container run as a non-root user, it is important to make sure that the limits for "Max Open Files" and "Max User Processes" are both set to at least 65536. See the <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Prerequisites_for_non_root_installations.htm" class="MCXref xref">Prerequisites for non-root installations</a> in the *SecureTransport <span class="mc-variable axway_variables.Release_Number variable">5.5</span>. Installation guide* for more information.
+As the SecureTransport processes inside the container run as a non-root user, it is important to make sure that the limits for "Max Open Files" and "Max User Processes" are both set to at least 65536. See the <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Prerequisites_for_non_root_installations.htm" class="MCXref xref">Prerequisites for non-root installations</a> in the *SecureTransport {{< SecureTransport/releasenumber  >}}. Installation guide* for more information.
 
 In a containerized environment these limits are best configured globally, for all containers, in the Docker Engine configuration file (by default `/etc/docker/daemon.json`).
 
@@ -127,9 +127,9 @@ Make sure the time is synchronized across all Kubernetes nodes (ideally using NT
 
 The secret file (also called *taeh* file) contains randomly-generated data used by the SecureTransport system for encryption.
 
-In a classic <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment, the secret file is generated during installation and must be copied between servers before installing additional cluster nodes. When deploying the containerized version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> there is no formal "installation process" as the docker image is already built that's why the secret file must be generated upfront and supplied during deployment.
+In a classic {{< SecureTransport/componentshortname  >}} deployment, the secret file is generated during installation and must be copied between servers before installing additional cluster nodes. When deploying the containerized version of {{< SecureTransport/componentshortname  >}} there is no formal "installation process" as the docker image is already built that's why the secret file must be generated upfront and supplied during deployment.
 
-In order to generate a secret file, you need to use a command that is embedded in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Docker images.
+In order to generate a secret file, you need to use a command that is embedded in the {{< SecureTransport/componentshortname  >}} Docker images.
 
 
 
@@ -222,7 +222,7 @@ The external database configuration must be supplied to the container in a file 
 
 ## Container resource configuration guidelines
 
-The minimum requirements for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> running in container are: 4 CPUs and 8 GB of RAM. Depending on the services that run in the containers and their configuration, this requirement may vary.
+The minimum requirements for {{< SecureTransport/componentshortname  >}} running in container are: 4 CPUs and 8 GB of RAM. Depending on the services that run in the containers and their configuration, this requirement may vary.
 
 It is recommended to have one service running in a pod for more accurate scaling of the StatefulSets.
 

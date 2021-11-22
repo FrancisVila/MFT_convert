@@ -2,7 +2,7 @@
     "title": "Certificates to generate during initial setup",
     "linkTitle": "Certificates to generate during initial setup",
     "weight": "160"
-}For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server installations, generate an `admind` SSL server certificate for users connecting to the Administration Tool. This certificate may be signed by the internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> CA.
+}For {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server installations, generate an `admind` SSL server certificate for users connecting to the Administration Tool. This certificate may be signed by the internal {{< SecureTransport/componentshortname  >}} CA.
 
 > **Note:**
 >
@@ -12,7 +12,7 @@ To use repository encryption or MDN receipts, generate a repository encryption c
 
 To be able to enable FTPS, HTTPS, AS2 using SSL, SFTP, SCP, or PeSIT over a secured socket, generate the required certificates.
 
-When you set up FTPS, HTTPS, AS2 (SSL), SSH, PeSIT, or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge communication with the Transaction Manager on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, you select a key alias to specify the certificate to use to secure the communications. You created the alias when you generated the certificate. For a list of certificates commonly used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, refer to the <span class="redirect_st_gs" cshid="gs" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Getting Started Guide*</span>.
+When you set up FTPS, HTTPS, AS2 (SSL), SSH, PeSIT, or {{< SecureTransport/componentshortname  >}} Edge communication with the Transaction Manager on the {{< SecureTransport/componentshortname  >}} Server, you select a key alias to specify the certificate to use to secure the communications. You created the alias when you generated the certificate. For a list of certificates commonly used with {{< SecureTransport/componentshortname  >}}, refer to the .
 
 > **Note:**
 >

@@ -11,17 +11,17 @@
 
 3.  Download the file `SecureTransport_5.5_UP1-from-5.4_win-x86-64_<BuildNumber>.zip` and unzip it.  
     It contains two folders:  
-    -   *UpgradeStep1* contains an update file for <span class="mc-variable axway_variables.Company_Name variable">Axway</span><span class="mc-variable suite_variables.InstallerName variable">Installer</span>
-    -   *UpgradeStep2* contains an update file for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+    -   *UpgradeStep1* contains an update file for {{< SecureTransport/companyname >}}{{< SecureTransport/installername >}}
+    -   *UpgradeStep2* contains an update file for {{< SecureTransport/componentshortname >}}
 
-4.  Navigate to the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer directory from your existing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation and run the following command to update the installer:  
+4.  Navigate to the {{< SecureTransport/companyname >}} Installer directory from your existing {{< SecureTransport/componentshortname >}} installation and run the following command to update the installer:  
 
 
          update64.exe -i <full path to the update file in the UpgradeStep1 directory>
 
 5.  In the `<AxwayHome>` directory, delete the *update64.exe* file and rename "update64.exe.new" to "update64.exe".
 
-6.  Run the following command to install the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> update:  
+6.  Run the following command to install the {{< SecureTransport/securetransportname >}} update:  
 
 
          update64.exe -i <full path to the update file in the UpgradeStep2 directory>
@@ -32,13 +32,13 @@
         update64.exe -javaargument "-DskipDBProcedure=true" -i <full path to the upgrade file in the UpgradeStep2 directory>
 
       
-    When <span class="code">-javaargument "-DskipDBProcedure=true"</span> is used, the UPDATES\_DB\_LOG table is not populated. If the argument is skipped or used with a value different than `true`, the upgrade will fail.
+    When `-javaargument "-DskipDBProcedure=true"` is used, the UPDATES\_DB\_LOG table is not populated. If the argument is skipped or used with a value different than `true`, the upgrade will fail.
 
 After the installation completes, all services except for TM will be started automatically. You need to restart the TM and enable all custom TM rules manually.
 
-The <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer log file called install.log is located in `<AxwayHome>`.
+The {{< SecureTransport/companyname  >}} Installer log file called install.log is located in `<AxwayHome>`.
 
-After you upgrade <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, complete the required [post-upgrade tasks](../../../post-upgrade-tasks).
+After you upgrade {{< SecureTransport/componentshortname  >}}, complete the required [post-upgrade tasks](../../../post-upgrade-tasks).
 
 **Related topics:**
 

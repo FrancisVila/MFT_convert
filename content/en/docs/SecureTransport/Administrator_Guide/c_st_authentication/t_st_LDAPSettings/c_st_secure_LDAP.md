@@ -2,13 +2,13 @@
     "title": "Secure LDAP",
     "linkTitle": "Secure LDAP",
     "weight": "420"
-}For secure communication between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and an LDAP server to work correctly, a trust must be established between the two parties.
+}For secure communication between {{< SecureTransport/componentshortname  >}} and an LDAP server to work correctly, a trust must be established between the two parties.
 
-When **Verify Certificate Chain** is selected, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> must trust the CA certificates used to sign the LDAP servers' certificate for encrypted connections. You must add these certificates to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> trusted certificate store. For more information, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#Import" class="MCXref xref">Import a local certificate</a>.
+When **Verify Certificate Chain** is selected, {{< SecureTransport/componentshortname  >}} must trust the CA certificates used to sign the LDAP servers' certificate for encrypted connections. You must add these certificates to the {{< SecureTransport/componentshortname  >}} trusted certificate store. For more information, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#Import" class="MCXref xref">Import a local certificate</a>.
 
 SSL and TLS support have the following limitations based on the SSL protocol and TLS LDAP server implementation:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> cannot connect to the i-Planet Directory Server, v5.0 using TLS. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> fails to connect after a few minutes, displays an error message in the client , and makes an entry in its server log.
+-   {{< SecureTransport/componentshortname >}} cannot connect to the i-Planet Directory Server, v5.0 using TLS. {{< SecureTransport/componentshortname >}} fails to connect after a few minutes, displays an error message in the client , and makes an entry in its server log.
 -   The OpenLDAP server might incorrectly report an error when closing a TLS connection. The TLS connection closes properly even though the error is reported.
 
 **Related topics:**

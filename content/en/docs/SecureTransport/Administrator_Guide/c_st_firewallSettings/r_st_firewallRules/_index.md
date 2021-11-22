@@ -17,4 +17,4 @@ The following topics list the firewall rules:
 -   <a href="r_st_server_transfer_rules" class="MCXref xref">Server transfer rules</a> - Lists the firewall server transfer rules.
 -   <a href="r_st_standard_clustering_rules" class="MCXref xref">Standard Cluster rules</a> - Lists the firewall Standard cluster rules.
 -   <a href="r_st_large_enterprise_clustering_rules" class="MCXref xref">Enterprise Cluster rules</a> - Lists the firewall Enterprise Cluster rules.
--   <a href="r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a> - Lists the firewall protocol rules for outbound communication from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+-   <a href="r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a> - Lists the firewall protocol rules for outbound communication from the {{< SecureTransport/componentshortname >}} Edge.

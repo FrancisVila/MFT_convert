@@ -4,7 +4,7 @@
     "weight": "240"
 }Use the *Password Files* page to add, enable, disable, and delete password entries for real users.
 
-By default the *Password File List* contains a disabled entry for real users. On a UNIX-based system, you cannot delete this entry or add an entry. On Windows, you can delete the entry for real uses and add password vault entries. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores password vaults in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database.
+By default the *Password File List* contains a disabled entry for real users. On a UNIX-based system, you cannot delete this entry or add an entry. On Windows, you can delete the entry for real uses and add password vault entries. {{< SecureTransport/componentshortname  >}} stores password vaults in the {{< SecureTransport/componentshortname  >}} database.
 
 The following topics provide how-to instructions for managing password files and password vaults:
 
@@ -33,7 +33,7 @@ Use the following procedure to a password file entry.
     A new row is displayed in the table.
 3.  In the **Type** list, select `Real Users` or `Password Vault`.
 4.  If you selected `Password Vault`, in the **Location** column, enter a Windows file path for the password vault.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores the password vault entries in the database and uses the value of the **Location** field to identify the password vault. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not create a file for the password vault.
+    {{< SecureTransport/componentshortname >}} stores the password vault entries in the database and uses the value of the **Location** field to identify the password vault. {{< SecureTransport/componentshortname >}} does not create a file for the password vault.
 5.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the last column of the list.
 
 <span id="Enable"></span>
@@ -67,7 +67,7 @@ If you no longer want to keep the password file entry, you can delete it.
     The *Password Files* page is displayed.
 2.  Select the entries to delete.
 3.  Click **Delete**.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a confirmation dialog.
+    {{< SecureTransport/componentshortname >}} displays a confirmation dialog.
 4.  Click **OK** to delete the entries.
 
 <span id="Add"></span>
@@ -122,7 +122,7 @@ Use the following procedure to delete users from a password vault.
     The *Edit Password File* page is displayed.
 3.  Select the entries to delete.
 4.  Click **Delete**.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a confirmation dialog.
+    {{< SecureTransport/componentshortname >}} displays a confirmation dialog.
 5.  Click **OK** to delete the users.
 
 <span id="Purge"></span>
@@ -134,4 +134,4 @@ Use the following procedure to purge a password vault.
 1.  Select **Accounts > System**.  
     The *Password Files* page is displayed.
 2.  Click **Purge File** in the **File Action** column for the password vault entry.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> immediately deletes the password vault from the database and deletes the entry from the *Password Files* page.
+    {{< SecureTransport/componentshortname >}} immediately deletes the password vault from the database and deletes the entry from the *Password Files* page.

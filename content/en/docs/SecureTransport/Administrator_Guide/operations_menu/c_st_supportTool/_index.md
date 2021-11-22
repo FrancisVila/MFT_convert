@@ -2,7 +2,7 @@
     "title": "Support tool",
     "linkTitle": "Support tool",
     "weight": "140"
-}The <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> support tool collects information about <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and its host operating system and saves it in a support information file that you can send to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support to help them diagnose an issue.
+}The {{< SecureTransport/componentlongname  >}} support tool collects information about {{< SecureTransport/componentshortname  >}} and its host operating system and saves it in a support information file that you can send to {{< SecureTransport/companyname  >}} Global Support to help them diagnose an issue.
 
 You use the *Support Tool Configuration* page to specify the information that the support tool saves and where it saves the file. You run a command line utility to create the support information file. If needed, you can add other information to the file by editing a custom script.
 

@@ -2,7 +2,7 @@
     "title": "Overview",
     "linkTitle": "Azure overview",
     "weight": "60"
-}This document provides a detailed overview and detailed instructions to set up <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> in the Microsoft Azure Virtual Network (VNet).
+}This document provides a detailed overview and detailed instructions to set up {{< SecureTransport/componentshortname  >}} in the Microsoft Azure Virtual Network (VNet).
 
 The Microsoft Azure Virtual Network service enables Azure resources to securely communicate with each other in a virtual network. A virtual network is a logical isolation of the Azure cloud dedicated to your subscription. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables. You can connect virtual networks to other virtual networks, or to your on-premises network. The following diagram shows some of the capabilities of the Azure Virtual Network service:
 

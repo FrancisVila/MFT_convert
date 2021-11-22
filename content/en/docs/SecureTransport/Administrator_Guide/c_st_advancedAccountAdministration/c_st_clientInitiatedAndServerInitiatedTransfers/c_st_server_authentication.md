@@ -2,7 +2,7 @@
     "title": "Server authentication",
     "linkTitle": "Server authentication",
     "weight": "310"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides an option to turn on the target server authentication for server‑initiated transfers. This server‑wide option is turned on by default and can be turned off using the *Transfer Sites* pane for a user account. For details, see <a href="../../../accounts/transfersites/t_st_transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Manage transfer sites</a>.
+}{{< SecureTransport/componentshortname  >}} provides an option to turn on the target server authentication for server‑initiated transfers. This server‑wide option is turned on by default and can be turned off using the *Transfer Sites* pane for a user account. For details, see <a href="../../../accounts/transfersites/t_st_transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Manage transfer sites</a>.
 
 To manage the list of trusted certificates for server authentication, use the *Certificates* page, accessible from the **Setup** menu in the Administration Tool. For details, see <a href="../../../c_st_setup/c_st_certificates#SetupMenu_1217491348_1023232" class="MCXref xref">Certificates</a>.
 

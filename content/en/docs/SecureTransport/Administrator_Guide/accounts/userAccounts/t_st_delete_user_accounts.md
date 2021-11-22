@@ -6,7 +6,7 @@
 
 1.  Select **Accounts > User Accounts**. The *User Accounts* page is displayed.
 2.  Select the check box for the user account you want to delete. You can select multiple accounts.
-3.  Click **Delete**. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prompts you to confirm that you want to delete the account and informs you that any subscriptions for this account will be deleted.
+3.  Click **Delete**. {{< SecureTransport/componentshortname >}} prompts you to confirm that you want to delete the account and informs you that any subscriptions for this account will be deleted.
 4.  Click **OK** to remove the account.
 
 **Related topics:**

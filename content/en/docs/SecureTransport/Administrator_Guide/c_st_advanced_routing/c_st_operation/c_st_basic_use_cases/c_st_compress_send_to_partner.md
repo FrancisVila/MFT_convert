@@ -29,8 +29,8 @@ Compress multiple incoming files and route the archive to a remote transfer site
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create a {{< SecureTransport/securetransportname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Create a remote transfer site.
     For remote transfer site creation details, refer to <a href="../../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>.
 
@@ -38,7 +38,7 @@ Compress multiple incoming files and route the archive to a remote transfer site
 
 ## Steps to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  To await multiple files, configure a condition (for example, trigger file) on which to submit the files to the route.
     3.  (Optional) Configure the rest of the settings.
@@ -62,7 +62,7 @@ Compress multiple incoming files and route the archive to a remote transfer site
 
 ## Flow of events
 
-1.  Multiple files are uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
+1.  Multiple files are uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
 2.  The trigger file (file with `.trigger` extension) is uploaded to the subscription folder.
-3.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers the route.
+3.  The {{< SecureTransport/advancedrouting >}} application triggers the route.
 4.  The uploaded files are compressed into single zip archive and sent to the remote transfer site.

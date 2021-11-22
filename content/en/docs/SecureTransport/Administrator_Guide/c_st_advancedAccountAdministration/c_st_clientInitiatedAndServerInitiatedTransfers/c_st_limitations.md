@@ -2,10 +2,10 @@
     "title": "Limitations",
     "linkTitle": "Limitations",
     "weight": "320"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has the following limitations for server‑initiated transfers:
+}{{< SecureTransport/componentshortname  >}} has the following limitations for server‑initiated transfers:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server supports server-initiated transfers over HTTP only to remote sites running on another <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
--   Server-initiated transfers over FTPS from a streaming configuration with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge to remote sites support only passive connection mode.
+-   {{< SecureTransport/componentshortname >}} Server supports server-initiated transfers over HTTP only to remote sites running on another {{< SecureTransport/componentshortname >}} Server.
+-   Server-initiated transfers over FTPS from a streaming configuration with {{< SecureTransport/componentshortname >}} Edge to remote sites support only passive connection mode.
 -   When performing server-initiated uploads using the SSH protocol SecureTransport cannot always identify the remote operating system when the remote SSH server has version 3 or less.  
     For ASCII mode SSH transfers, if the remote SSH server supports the newline (newline@vandyke.com) extension, SecureTransport correctly converts the end-of-line characters of the file.  
     If the remote SSH server does not support the newline extension, SecureTransport can be configured to convert the end-of-line characters during server-initiated uploads based on the value of server configuration parameters. If the value of the `Ssh.EndOfLineConversion.enabled` server configuration parameter is true, SecureTransport uses the value of the `Ssh.EndOfLineConversion.type` server configuration parameter as the end-of-line sequence. Valid values are: `0x0A` (LF), `0x0D` (CR), and `0x0D0A` (CRLF). By default, the value of `Ssh.EndOfLineConversion.enabled` is `false` and the value of `Ssh.EndOfLineConversion.type` is `0x0D0A`.  

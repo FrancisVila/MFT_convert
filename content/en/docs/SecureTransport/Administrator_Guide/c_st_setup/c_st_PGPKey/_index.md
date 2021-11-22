@@ -2,9 +2,9 @@
     "title": "PGP key encryption and signing",
     "linkTitle": "PGP key encryption and signing",
     "weight": "80"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports PGP encryption. The system handles the generation and storing of PGP keys and the management of the stored keys. The PGP keys are managed from the Administration Tool.
+}{{< SecureTransport/componentshortname  >}} supports PGP encryption. The system handles the generation and storing of PGP keys and the management of the stored keys. The PGP keys are managed from the Administration Tool.
 
-PGP signature verification, encryption, and signing do not work properly when the PGP key has expired. However, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> continues to decrypt files successfully even when the PGP key has expired.
+PGP signature verification, encryption, and signing do not work properly when the PGP key has expired. However, {{< SecureTransport/componentshortname  >}} continues to decrypt files successfully even when the PGP key has expired.
 
 PGP encryption and signing only support ZIP, BZIP2, and ZLIB compression.
 

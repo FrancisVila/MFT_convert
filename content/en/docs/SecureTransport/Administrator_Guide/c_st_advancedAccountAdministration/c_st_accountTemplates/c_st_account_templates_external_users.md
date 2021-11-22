@@ -2,11 +2,11 @@
     "title": "Account templates and external users",
     "linkTitle": "Account templates and external users",
     "weight": "210"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> assigns external users to the account template using the following steps:
+}{{< SecureTransport/componentshortname  >}} assigns external users to the account template using the following steps:
 
 1.  Determine the User Class based on the already known values for the UID, GID, User Type, and IP address.
 2.  Compare the determined User Class with the defined User Class in all enabled external account templates. Since the User Class in the template can contain wildcards there might be more than one template that matches the User Class of the currently logged user. In this case, the templates are sorted alphabetically, and the first one is selected.
-3.  If the User Class matches the User Class of a template, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> tries to determine the new UID, GID, and Home Folder values as defined in the template. The templates can contain expressions in the supported expression language to dynamically select the UID, GID, or Home Folder. The result is one of the following:
+3.  If the User Class matches the User Class of a template, {{< SecureTransport/componentshortname >}} tries to determine the new UID, GID, and Home Folder values as defined in the template. The templates can contain expressions in the supported expression language to dynamically select the UID, GID, or Home Folder. The result is one of the following:
     -   If the system fails to determine even one of the required attributes (UID, GID, or Home Folder) from the template the user is *not* assigned to that template and the login fails.
     -   If the system manages to determine all of the required attributes, the currently logged external user is assigned to the selected template.
     -   If the User Class does not match any of the User Classes in the account template, the server treats the user as a regular external user.

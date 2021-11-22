@@ -26,7 +26,7 @@ The following table presents all parameters and expected values associated with 
    </thead>
    <tbody>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">General</span>         </td>
+         <td><em>General</em>         </td>
       </tr>
       <tr>
          <td>Server Name         </td>
@@ -69,7 +69,7 @@ from the drop-down list, for example,
          <td>Enabled Protocols         </td>
          <td><p>Enter a comma-separated list of SSL protocol versions.</p>
 <p>Default value for newly created FTPS servers after updating to SecureTransport 5.5-20210930: <code>TLSv1.2, TLSv1.3</code>.</p>
-<p>Default value for existing FTPS servers: <code>TLSv1, TLSv1.1, TLSv1.2</code>. For instructions on how to enable TLSv1.3 protocol support, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> <em>Security guide</em>.</p>
+<p>Default value for existing FTPS servers: <code>TLSv1, TLSv1.1, TLSv1.2</code>. For instructions on how to enable TLSv1.3 protocol support, refer to the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} <em>Security guide</em>.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>TLS v1.3 no longer supports DSA certificates. If a server is configured to use DSA certificates and TLS v1.3 is enabled on both the client and the server, the handshake fails.</p>
@@ -77,25 +77,25 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>Key Algorithm         </td>
-         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
+         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
       </tr>
       <tr>
          <td>SSL Protocol         </td>
-         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
+         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
       </tr>
       <tr>
          <td>SSL Trust Algorithm         </td>
-         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.         </td>
+         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.         </td>
       </tr>
       <tr>
          <td>Enabled Ciphers         </td>
          <td><p>Enter the cipher suites to be used with your FTPS server.</p>
-<p>For more information on cipher suites, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_54_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" class="MCXref xref" title="SecureTransport 5.4 Security guide"><span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> Security guide</a></em>.</p>         </td>
+<p>For more information on cipher suites, refer to the {{< SecureTransport/componentshortname  >}} <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_54_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" class="MCXref xref" title="SecureTransport 5.4 Security guide">{{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} Security guide</a></em>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your FTP server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default FTP server, the list of allowed cipher suites in FIPS mode is determined by the <code>Ftp.FIPS.Listeners.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>
@@ -109,11 +109,11 @@ from the drop-down list, for example,
 </ul>         </td>
       </tr>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">FTP Passive Mode</span>         </td>
+         <td><em>FTP Passive Mode</em>         </td>
       </tr>
       <tr>
          <td>Base Port         </td>
-         <td>Enter the passive mode base port (<code>0</code> by default: this means that <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will use a random port for FTP passive mode transfers).         </td>
+         <td>Enter the passive mode base port (<code>0</code> by default: this means that {{< SecureTransport/securetransportname  >}} will use a random port for FTP passive mode transfers).         </td>
       </tr>
       <tr>
          <td>Number of Ports         </td>

@@ -10,7 +10,7 @@ The supported authentication methods are:
 -   Form-Based – The client will send a request to a remote HTTP server to obtain an authentication cookie.
 -   Certificate – A HTTPS client certificate is used for mutual authentication. The client certificate can be used in combination with basic or form-based authentications.
 
-The Generic HTTP transfer site can be used with the Basic and <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> applications for push and pull server-initiated transfers.
+The Generic HTTP transfer site can be used with the Basic and {{< SecureTransport/advancedrouting  >}} applications for push and pull server-initiated transfers.
 
 The following sections describe the Generic HTTP transfer site configuration options, provide basic sample push and pull flow configurations for Generic HTTP transfer sites, and information on the limited expression language supported by Generic HTTP transfer sites:
 
@@ -94,7 +94,7 @@ The following table describes the server settings for defining a Generic HTTP tr
          <td><p>The network zone that defines the proxies to use for transfers through this site.</p>
 <ul>
 <li>Select <strong>none</strong> to connect directly to the remote HTTP server.</li>
-<li>Select <strong>any</strong> to allow <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to select the proxy connection using a network zone that enables an HTTP proxy.</li>
+<li>Select <strong>any</strong> to allow {{< SecureTransport/componentshortname  >}} to select the proxy connection using a network zone that enables an HTTP proxy.</li>
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
@@ -132,7 +132,7 @@ The following table describes the transfer settings for defining a Generic HTTP 
       <tr>
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict HTTPS to use only FIPS 140-2 Level 1 certified cryptographic libraries. This field is displayed when <strong>Use HTTPS</strong> is selected.</p>
-<p>The sender and the recipient must use the ciphers and ciphers suites listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689" class="MCXref xref">FIPS transfer mode</a>. If the sender and the recipient do not provide the required ciphers and ciphers suites <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not complete the transfer.</p>         </td>
+<p>The sender and the recipient must use the ciphers and ciphers suites listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689" class="MCXref xref">FIPS transfer mode</a>. If the sender and the recipient do not provide the required ciphers and ciphers suites {{< SecureTransport/componentshortname  >}} does not complete the transfer.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -176,7 +176,7 @@ Example:<br />
       </tr>
       <tr>
          <td>File expression         </td>
-         <td><p>The expression for the file names that will be applied on the response for the list request to extract the files list. A Java regular expression and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> expression language can be used to specify a pattern to match the files that need to be downloaded.</p>
+         <td><p>The expression for the file names that will be applied on the response for the list request to extract the files list. A Java regular expression and the {{< SecureTransport/componentshortname  >}} expression language can be used to specify a pattern to match the files that need to be downloaded.</p>
 <p>It is possible to use () parenthesis in the file expression and everything within the parenthesis will be considered the file name.</p>
 <p>Example:</p>
 <p>Filename= <code>(/something/folder/file\\d.txt)</code></p>
@@ -1191,7 +1191,7 @@ Configuration for a Generic HTTP transfer site to upload a file to an Apache HTT
 
 ## Sample configuration — Push file to SecureTransport user using Form Authentication
 
-Configuration for a Generic HTTP transfer site to push file to a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user using form authentication:
+Configuration for a Generic HTTP transfer site to push file to a {{< SecureTransport/securetransportname  >}} user using form authentication:
 
 <table>
    <thead>

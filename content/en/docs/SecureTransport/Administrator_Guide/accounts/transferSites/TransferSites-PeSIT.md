@@ -4,7 +4,7 @@
     "weight": "250"
 }The *Add Transfer Site* page for PeSIT sites presents several sets of options.
 
-Unlike transfer sites for other transfer protocols, a PeSIT transfer site is also used for transfers initiated by the external PeSIT partner (considered client-initiated by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>). Only the **Site Name** is required in that case to define the partnership, so a PeSIT transfer site needs only a **Site Name** if it is not used for transfers initiated by the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server on which it is defined.
+Unlike transfer sites for other transfer protocols, a PeSIT transfer site is also used for transfers initiated by the external PeSIT partner (considered client-initiated by {{< SecureTransport/componentshortname  >}}). Only the **Site Name** is required in that case to define the partnership, so a PeSIT transfer site needs only a **Site Name** if it is not used for transfers initiated by the {{< SecureTransport/componentshortname  >}} server on which it is defined.
 
 For a PeSIT transfer site, the **Site Name** designates the destination for an incoming routed transfer. For more information, see <a href="#Select" class="MCXref xref">Set a PeSIT default transfer site for routing</a>.
 
@@ -47,8 +47,8 @@ The following table describes the general options for a PeSIT transfer site.
 <p>Visibility of this option is controlled with the value set for the TransferSite.AlternativeAddresses.retryPolicy configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to Operations &gt; Server Configuration and set the policy type using either of the following values:</p>
 </blockquote>
 <ul>
-<li><code>AllHostsOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
-<li><code>OneHostOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>AllHostsOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>OneHostOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} tries to connect to the first endpoint in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, {{< SecureTransport/securetransportname  >}} will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
 <li><code>Disabled</code> (default) – this is the default value that keeps the table with endpoints entirely hidden from view.</li>
 </ul>         </td>
       </tr>
@@ -57,7 +57,7 @@ The following table describes the general options for a PeSIT transfer site.
          <td><p>The network zone that defines the proxies to use for transfers through this site.</p>
 <ul>
 <li>Select <strong>none</strong> to connect directly to the remote partner server.</li>
-<li>Select <strong>any</strong> to allow <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to select the proxy connection using a network zone that enables an SOCKS5 proxy.<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span></li>
+<li>Select <strong>any</strong> to allow {{< SecureTransport/componentshortname  >}} to select the proxy connection using a network zone that enables an SOCKS5 proxy.{{< SecureTransport/componentshortname  >}}</li>
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
@@ -75,7 +75,7 @@ The following table describes the general options for a PeSIT transfer site.
          <td>Verify partner's certificate         </td>
          <td><p>Verify the TLS/SSL certificate of the partner site.</p>
 <p>This field is displayed when the <strong>Use TLS/SSL</strong> option is selected.</p>
-<p>When selected, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> verifies whether the server certificate of the partner is chained to a trusted root using the algorithm specified in <code>AgentServers.Ssl.trustAlgorithm</code> server configuration parameter and the certificates imported in the Trusted CAs store.</p>         </td>
+<p>When selected, {{< SecureTransport/componentshortname  >}} verifies whether the server certificate of the partner is chained to a trusted root using the algorithm specified in <code>AgentServers.Ssl.trustAlgorithm</code> server configuration parameter and the certificates imported in the Trusted CAs store.</p>         </td>
       </tr>
       <tr>
          <td>Enable SSL Legacy Mode         </td>
@@ -121,19 +121,19 @@ Scroll down to the bottom of the screen and click the **Show Advanced Settings**
          <td><p>Select <strong>Show Advanced Settings</strong> for the following group of options to appear right below.</p>
 <p>PeSIT pre-connection settings allow you to map a <em>server ID</em> and <em>password</em> (Server Settings) to the corresponding client-side <em>partner ID</em> and <em>password</em> (Partner Settings).</p>
 <p>PeSIT pre-connection acts as a mechanism for additional verification prior to establishing a PeSIT connection.</p>
-<p>By default, the <strong>Use Pre-Connection</strong> checkbox is <u>not</u> selected. If you leave it this way, the following rules apply, depending on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> role in Pre-Connection phase: </p>
+<p>By default, the <strong>Use Pre-Connection</strong> checkbox is <u>not</u> selected. If you leave it this way, the following rules apply, depending on the {{< SecureTransport/componentshortname  >}} role in Pre-Connection phase: </p>
 <ul>
-<li><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as <em>Server</em> – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not validate the received Partner ID and Partner Password.</li>
+<li>{{< SecureTransport/componentshortname  >}} as <em>Server</em> – {{< SecureTransport/componentshortname  >}} does not validate the received Partner ID and Partner Password.</li>
 </ul>
 <ul>
-<li><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as <em>Client</em> – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends to the target PeSIT Server the Account name as a Partner ID and the Connection Partner Password (if specified) as Partner Password.</li>
+<li>{{< SecureTransport/componentshortname  >}} as <em>Client</em> – {{< SecureTransport/componentshortname  >}} sends to the target PeSIT Server the Account name as a Partner ID and the Connection Partner Password (if specified) as Partner Password.</li>
 </ul>
-<p>When you select the <strong>Use Pre-Connection</strong> checkbox you must add either Server or Partner Settings, or both. In all cases, the Id field is required and the Password field is optional. With the input of Server or Partner Settings, the following rules apply, depending on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> role in the Pre-Connection phase: </p>
+<p>When you select the <strong>Use Pre-Connection</strong> checkbox you must add either Server or Partner Settings, or both. In all cases, the Id field is required and the Password field is optional. With the input of Server or Partner Settings, the following rules apply, depending on the {{< SecureTransport/componentshortname  >}} role in the Pre-Connection phase: </p>
 <ul>
-<li><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as <em>Server</em> – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> validates the received Partner ID and Partner Password against the configured Server ID and Server Password.</li>
+<li>{{< SecureTransport/componentshortname  >}} as <em>Server</em> – {{< SecureTransport/componentshortname  >}} validates the received Partner ID and Partner Password against the configured Server ID and Server Password.</li>
 </ul>
 <ul>
-<li><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as <em>Client</em> – <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> sends the configured Partner ID and Partner Password to the target PeSIT Server.</li>
+<li>{{< SecureTransport/componentshortname  >}} as <em>Client</em> – {{< SecureTransport/securetransportname  >}} sends the configured Partner ID and Partner Password to the target PeSIT Server.</li>
 </ul>         </td>
       </tr>
       <tr>
@@ -186,8 +186,8 @@ Scroll down to the bottom of the screen and click the **Show Advanced Settings**
       </tr>
       <tr>
          <td><p>Compression</p>         </td>
-         <td><p>Enables horizontal online compression, vertical online compression, or both for transfers initiated by the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. If the partner PeSIT server does not support the selected compression, no compression is used for these transfers.</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> support all types of compression for transfers initiated by the partner PeSIT server.</p>         </td>
+         <td><p>Enables horizontal online compression, vertical online compression, or both for transfers initiated by the {{< SecureTransport/componentshortname  >}} Server. If the partner PeSIT server does not support the selected compression, no compression is used for these transfers.</p>
+<p>{{< SecureTransport/componentshortname  >}} support all types of compression for transfers initiated by the partner PeSIT server.</p>         </td>
       </tr>
       <tr>
          <td>Resync Allowed         </td>
@@ -216,12 +216,12 @@ Scroll down to the bottom of the screen and click the **Show Advanced Settings**
       </tr>
       <tr>
          <td>User Message Send         </td>
-         <td><p>A string sent as PI 99 when the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server initiates a file transfer to the partner PeSIT server. The field may contain expressions. The tool tip lists valid expressions. If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> received the file using PeSIT, it retained the values of all the PeSIT PI codes as metadata and the PeSIT expression language variables contain those values. See also <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>, especially <a href="../../../c_st_expressionlanguage/r_st_expressionlanguagepesitvariables#Appendix_Exp_Lang_Rules_3592148187_1021690" class="MCXref xref">PeSIT variables</a>.</p>
+         <td><p>A string sent as PI 99 when the {{< SecureTransport/componentshortname  >}} Server initiates a file transfer to the partner PeSIT server. The field may contain expressions. The tool tip lists valid expressions. If {{< SecureTransport/componentshortname  >}} received the file using PeSIT, it retained the values of all the PeSIT PI codes as metadata and the PeSIT expression language variables contain those values. See also <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>, especially <a href="../../../c_st_expressionlanguage/r_st_expressionlanguagepesitvariables#Appendix_Exp_Lang_Rules_3592148187_1021690" class="MCXref xref">PeSIT variables</a>.</p>
 <p>The string that results from the evaluation of the expression must be at most 512 characters long.</p>         </td>
       </tr>
       <tr>
          <td>User Message Receive         </td>
-         <td><p>A string included in messages sent when the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server initiates a file transfer from the partner PeSIT server. The field may contain expressions.</p>
+         <td><p>A string included in messages sent when the {{< SecureTransport/componentshortname  >}} Server initiates a file transfer from the partner PeSIT server. The field may contain expressions.</p>
 <p>The string that results from the evaluation of the expression must be at most 512 characters long.</p>         </td>
       </tr>
       <tr>
@@ -238,7 +238,7 @@ or
       <tr>
          <td>Originator         </td>
          <td><ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new<span id="Pesit_Store&amp;Forward_PI61"></span> Store and Forward transfer, this property specifies the originator (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes#Pesit_Store&amp;Forward_PI61">PI61</a>) of the transfer.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} initiating a new<span id="Pesit_Store&amp;Forward_PI61"></span> Store and Forward transfer, this property specifies the originator (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes#Pesit_Store&amp;Forward_PI61">PI61</a>) of the transfer.</li>
 <li>In case no value is specified in both this filed and the Advanced Routing Send To Partner step setting <strong>Originator</strong>, PI61 is blank.</li>
 <li>When the PRESERVE store and forward mode is selected, this field is disabled as PI preserves the PI61 value.</li>
 </ul>         </td>
@@ -246,7 +246,7 @@ or
       <tr>
          <td>Final Destination         </td>
          <td><ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new <span id="Pesit_Store&amp;Forward_PI62"></span> Store and Forward transfer, this property specifies the final destination (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes#Pesit_Store&amp;Forward_PI62">PI62</a>) of the transfer.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} initiating a new <span id="Pesit_Store&amp;Forward_PI62"></span> Store and Forward transfer, this property specifies the final destination (<a href="../../../c_st_setup/c_st_sentinelintegration/r_st_xfb_toattributes#Pesit_Store&amp;Forward_PI62">PI62</a>) of the transfer.</li>
 <li>In case no value is specified in both this field and the Advanced Routing Send To Partner step setting <strong>Final Destination</strong>, PI62 is blank.</li>
 <li>When the PRESERVE store and forward mode is selected, this field is disabled as PI preserves the PI62 value.</li>
 </ul>         </td>
@@ -275,13 +275,13 @@ or
       </tr>
       <tr>
          <td>pTCP connection retry count         </td>
-         <td><p>The number of attempts <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> makes for each TCP connection for pTCP.</p>
+         <td><p>The number of attempts {{< SecureTransport/componentshortname  >}} makes for each TCP connection for pTCP.</p>
 <p>When the value of the <strong>Host</strong> field is the address of load balancer for a remote PeSIT cluster, set this field to <em>connections</em> * (<em>nodes</em> - 1), where:</p>
 <ul>
 <li><em>connections</em> is the value of the <strong>Parallel TCP Connections</strong> field</li>
 <li><em>nodes</em> is the number of nodes in the remote PeSIT cluster</li>
 </ul>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> retries the connections until all connections are with the same PeSIT remote server.</p>
+<p>{{< SecureTransport/componentshortname  >}} retries the connections until all connections are with the same PeSIT remote server.</p>
 <p>It specifies the maximum times the SecureTransport will attempt to re-establish a connection with the remote server in case of "Unknown session" error.</p>
 <p>This is useful in cases where the remote partner is a PeSIT cluster, the address in the transfer site represents the load balancer in front of the PeSIT cluster and the individual nodes behind the Load Balancer are not accessible.</p>
 <p>In such an environment, all connections have to arrive on the same partner node.</p>
@@ -334,13 +334,13 @@ The following section provides how-to instructions for selecting a default PeSIT
 
 ## Set a PeSIT default transfer site for routing
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> implements PeSIT routing as an intermediate partner by sending a received file to a PeSIT transfer site specified as the destination of the PeSIT transfer.
+{{< SecureTransport/componentshortname  >}} implements PeSIT routing as an intermediate partner by sending a received file to a PeSIT transfer site specified as the destination of the PeSIT transfer.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> matches the specified destination to the names of the transfer sites for the account that receives the file. If a transfer site name matches, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> transfers the file to that site. No subscription is required. If no transfer site name matches and a default PeSIT transfer site is defined, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> transfers the file to that site.
+{{< SecureTransport/componentshortname  >}} matches the specified destination to the names of the transfer sites for the account that receives the file. If a transfer site name matches, {{< SecureTransport/componentshortname  >}} transfers the file to that site. No subscription is required. If no transfer site name matches and a default PeSIT transfer site is defined, {{< SecureTransport/componentshortname  >}} transfers the file to that site.
 
-If there is no default site, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> checks the **Routing Mode** value for the account. If it is **Reject**, the transfer is rejected before it starts. If it is **Accept**, the transfer is performed and the file is retained locally. If it is **Ignore**, a transfer that cannot be routed is ignored
+If there is no default site, {{< SecureTransport/componentshortname  >}} checks the **Routing Mode** value for the account. If it is **Reject**, the transfer is rejected before it starts. If it is **Accept**, the transfer is performed and the file is retained locally. If it is **Ignore**, a transfer that cannot be routed is ignored
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> routes a transferred file to a final PeSIT destination, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> includes PI 61 and PI 62.
+When {{< SecureTransport/componentshortname  >}} routes a transferred file to a final PeSIT destination, {{< SecureTransport/componentshortname  >}} includes PI 61 and PI 62.
 
 1.  Select **Accounts > User Accounts**. The *User Accounts* page is displayed.
 2.  Click the name of the account for which you want to set the default transfer site.

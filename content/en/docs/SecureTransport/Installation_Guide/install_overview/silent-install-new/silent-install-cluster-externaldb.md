@@ -2,7 +2,7 @@
     "title": "Example silent installation files: SecureTransport Server with Oracle database  on a Linux cluster",
     "linkTitle": "Example silent installation files: SecureTransport Server with Oracle database ",
     "weight": "140"
-}This topic shows examples of silent installation files for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server with an external Oracle database on a Linux cluster:
+}This topic shows examples of silent installation files for {{< SecureTransport/componentshortname  >}} Server with an external Oracle database on a Linux cluster:
 
 -   Axway Installer configuration file: `Install_Axway_Installer_V4.10.13.properties`
 -   SecureTransport silent installation configuration file: `Install_SecureTransport_V5.5.properties`

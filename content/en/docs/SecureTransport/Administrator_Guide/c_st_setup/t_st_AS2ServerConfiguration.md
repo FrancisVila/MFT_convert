@@ -35,6 +35,6 @@ Use the following procedure to configure AS2 transfer settings.
     To allow unlimited file sizes, enter 0 (zero).
 
 7.  Enter host names and port numbers for the HTTP and HTTPS protocols for the **Asynchronous Receipt Receiver**.  
-    Outgoing AS2 messages are sent by the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. If an asynchronous receipt is requested from a partner, the partner server tries to reach the AS2 port on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. In a two-layer architecture, asynchronous receipts should be delivered to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. In that case, host and port numbers in these fields should be set to AS2 server on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+    Outgoing AS2 messages are sent by the {{< SecureTransport/componentshortname >}} Server. If an asynchronous receipt is requested from a partner, the partner server tries to reach the AS2 port on the {{< SecureTransport/componentshortname >}} Server. In a two-layer architecture, asynchronous receipts should be delivered to {{< SecureTransport/componentshortname >}} Edge. In that case, host and port numbers in these fields should be set to AS2 server on {{< SecureTransport/componentshortname >}} Edge.
 
 8.  When you complete editing the settings, click **Update**.

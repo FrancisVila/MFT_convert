@@ -10,11 +10,11 @@
 
 ## Accounts overview
 
-An <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> *account* contains information about a user or an internal system that processes <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> file transfers. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports two kinds of accounts: *user* and *service*.
+An {{< SecureTransport/componentlongname  >}} *account* contains information about a user or an internal system that processes {{< SecureTransport/componentshortname  >}} file transfers. {{< SecureTransport/componentshortname  >}} supports two kinds of accounts: *user* and *service*.
 
 ## User accounts
 
-A *user account* is typically external to your enterprise. A user account consists of settings such as the account name, contact information, login information, *subscription* information (the *applications* this user account uses to process file transfers), *transfer site* information, and *certificate* information. User accounts connect to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> through subscriptions to one or more applications. For details, see <a href="useraccounts#AccountsMenu_2253641766_1100353" class="MCXref xref">User accounts</a>.
+A *user account* is typically external to your enterprise. A user account consists of settings such as the account name, contact information, login information, *subscription* information (the *applications* this user account uses to process file transfers), *transfer site* information, and *certificate* information. User accounts connect to {{< SecureTransport/componentshortname  >}} through subscriptions to one or more applications. For details, see <a href="useraccounts#AccountsMenu_2253641766_1100353" class="MCXref xref">User accounts</a>.
 
 ## Service accounts
 
@@ -24,7 +24,7 @@ A *service account* is typically used to represent processes on systems internal
 
 A subscription defines how files are submitted to and received from applications. For details, see <a href="c_st_subscriptions/t_st_subscriptions#AccountsMenu_2253641766_1247370" class="MCXref xref">Manage subscriptions</a>.
 
-A transfer site is a location such as a local folder or protocol server used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to pull data from or send data to during a transfer. For details, see <a href="transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Transfer sites</a>.
+A transfer site is a location such as a local folder or protocol server used by {{< SecureTransport/componentshortname  >}} to pull data from or send data to during a transfer. For details, see <a href="transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Transfer sites</a>.
 
 A certificate can be one of three types: login, partner, or private. Each certificate type can be used by the account for different purposes. For details, see <a href="c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701" class="MCXref xref">Manage login certificates</a>.
 

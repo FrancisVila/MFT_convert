@@ -158,7 +158,7 @@ The collision setting determines the course of action to take in the event of du
 
 #### Replace existing file
 
-With replace of existing file, there is a dedicated configuration option `AdvancedRouting.PublishToAccount.allowSelfOverwrite`. It allows (or disallows) the overwrite of files with the same name when source and destination is the same. Note that this option is available with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.5-20210527 Update and later.
+With replace of existing file, there is a dedicated configuration option `AdvancedRouting.PublishToAccount.allowSelfOverwrite`. It allows (or disallows) the overwrite of files with the same name when source and destination is the same. Note that this option is available with {{< SecureTransport/componentshortname  >}} 5.5-20210527 Update and later.
 
 #### Rename existing file
 

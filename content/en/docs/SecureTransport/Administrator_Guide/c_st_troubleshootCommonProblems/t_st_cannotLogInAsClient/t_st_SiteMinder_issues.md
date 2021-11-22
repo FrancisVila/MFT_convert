@@ -6,7 +6,7 @@
 
 To view the SiteMinder settings:
 
-1.  Open the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and select **Setup**.
+1.  Open the {{< SecureTransport/componentshortname >}} Administration Tool on the {{< SecureTransport/componentshortname >}} Server and select **Setup**.
 2.  Select **SiteMinder Settings**. Verify that the following settings are correct: IP Address, Authorization Port, Authentication Port, Accounting Port, Agent Name, Shared Secret, Maximum Connections, Connection Timeout, File Storage Root Path, Default Home Directory, Default Local User ID, and Default Local Group ID.
 
 **Related topics:**

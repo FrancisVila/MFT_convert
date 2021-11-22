@@ -4,7 +4,7 @@
     "weight": "130"
 }Before installation, you can set the `DATA_PUMP` system environment variable to either **false** or **true** depending upon if you want to *disable* or *enable* the data pump. By default, if data pump system environment variable is not set, the data pump will be enabled and export database functionality procedures will be deployed.
 
-Execute the following command to set the `DATA_PUMP` system environment variable to <span class="code">false</span>:
+Execute the following command to set the `DATA_PUMP` system environment variable to `false`:
 
 `export DATA_PUMP=false`
 

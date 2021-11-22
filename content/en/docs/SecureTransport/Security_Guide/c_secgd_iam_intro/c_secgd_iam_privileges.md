@@ -2,7 +2,7 @@
     "title": "Predefined privileges",
     "linkTitle": "Predefined privileges",
     "weight": "120"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides the following predefined privileges. For additional information on the predefined privileges, refer to the *Administrative roles* section in the *Advanced account administration* chapter of the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+}{{< SecureTransport/componentshortname  >}} provides the following predefined privileges. For additional information on the predefined privileges, refer to the *Administrative roles* section in the *Advanced account administration* chapter of the .
 
 <table>
    <thead>

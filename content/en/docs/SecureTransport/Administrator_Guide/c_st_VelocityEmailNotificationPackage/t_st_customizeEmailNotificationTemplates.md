@@ -2,7 +2,7 @@
     "title": "Customize the email notification templates",
     "linkTitle": "Customize the email notification templates",
     "weight": "330"
-}The templates are located in `<FILEDRIVEHOME>/conf/mailer-templates`. You can customize the email notification template with any text or HTML editor. An HTML editor is recommended because you can use it to preview the notification before deploying it in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+}The templates are located in `<FILEDRIVEHOME>/conf/mailer-templates`. You can customize the email notification template with any text or HTML editor. An HTML editor is recommended because you can use it to preview the notification before deploying it in {{< SecureTransport/componentshortname  >}}.
 
 There are seven prerequisite fields that must be set in the XHTML email notification template.
 

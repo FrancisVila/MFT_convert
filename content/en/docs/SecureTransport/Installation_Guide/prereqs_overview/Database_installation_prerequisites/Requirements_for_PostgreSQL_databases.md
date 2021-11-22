@@ -4,7 +4,7 @@
     "weight": "120"
 }For a complete list of supported PostgreSQL versions, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref"><em>Axway and third-party software support</em></a>.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can connect to an external PostgreSQL database over a plain or secure connection.
+{{< SecureTransport/componentshortname  >}} can connect to an external PostgreSQL database over a plain or secure connection.
 Starting with SecureTransport 5.5-20201029, the external database server’s certificates that contain `keyUsage` extensions MUST also have the `digitalSignature` indicator enabled. This affects both secure and non-secure connections.
 
 -   Server
@@ -25,9 +25,9 @@ Starting with SecureTransport 5.5-20201029, the external database server’s cer
     -   `st_serverlog` – server log tables
 
       
-    All three tablespaces should be created on fast disks (preferably SSDs) on location with enough free space to handle at least the predicted <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> workload multiplied by two.
+    All three tablespaces should be created on fast disks (preferably SSDs) on location with enough free space to handle at least the predicted {{< SecureTransport/componentshortname >}} workload multiplied by two.
 -   User/login/role requirements:  
-    <span id="role_requirements"></span>The role, which will be used for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, should be created with the `LOGIN` privilege.
+    <span id="role_requirements"></span>The role, which will be used for {{< SecureTransport/componentshortname >}}, should be created with the `LOGIN` privilege.
     The user/login/role must be granted `CREATE `privileges on the above three tablespaces.
 -   Database requirements:  
     -   Database should be created with (default) tablespace `st_data`.

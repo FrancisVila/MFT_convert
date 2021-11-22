@@ -2,7 +2,7 @@
     "title": "Standard browser client",
     "linkTitle": "Standard browser client",
     "weight": "160"
-}You can use a standard browser, such as Firefox or Microsoft Internet Explorer (IE) to connect to a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Using a browser allows easy access to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, but it does not offer all the features of <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Secure Client applications. For example, the browser client does not support the Automatic Restart function. Browsers connecting to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> must support JavaScript.
+}You can use a standard browser, such as Firefox or Microsoft Internet Explorer (IE) to connect to a {{< SecureTransport/componentshortname  >}} Server. Using a browser allows easy access to the {{< SecureTransport/componentshortname  >}} Server, but it does not offer all the features of {{< SecureTransport/companyname  >}} Secure Client applications. For example, the browser client does not support the Automatic Restart function. Browsers connecting to {{< SecureTransport/componentshortname  >}} must support JavaScript.
 
 No additional configuration is required on the server side for users to connect to the server with a standard browser. You can customize the interface if you prefer.
 
@@ -20,13 +20,13 @@ To create a custom browser client, copy the files for an existing browser HTML t
 
 ### Customize the browser client interface
 
-The pages for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> default browser client interface are created from HTML template pages. There are template pages for each locale supported by the server. The pages are located in the `<FILEDRIVEHOME>/share/ftdocs/html/<Locale>` directory, where `<Locale>` is the supported locale. The default pages are in the `C` (for English) directory.
+The pages for the {{< SecureTransport/componentshortname  >}} default browser client interface are created from HTML template pages. There are template pages for each locale supported by the server. The pages are located in the `<FILEDRIVEHOME>/share/ftdocs/html/<Locale>` directory, where `<Locale>` is the supported locale. The default pages are in the `C` (for English) directory.
 
 > **Note:**
 >
 > Additional template pages reside in &lt;FILEDRIVEHOME>/share/ftdocs/html/skin/jb9 and &lt;FILEDRIVEHOME>/share/ftdocs/html/skin/sm6. A &lt;Locale> subdirectory contains the HTML files for each additional template. For more information about setting the HTML template used for the browser client, see Select a default HTML template.
 
-The pages include embedded macro strings. A macro string is a special string in HTML which the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server understands and replaces with HTML or JavaScript code. A macro string is enclosed in angle brackets and two dashes and includes an exclamation point. For example:
+The pages include embedded macro strings. A macro string is a special string in HTML which the {{< SecureTransport/componentshortname  >}} Server understands and replaces with HTML or JavaScript code. A macro string is enclosed in angle brackets and two dashes and includes an exclamation point. For example:
 
 `<!--FDX_PARENT_DIR_FUNC-->`
 
@@ -54,7 +54,7 @@ The browser interface has template pages for the following functions:
 
 ### Macro strings
 
-The following table provides information on the macro strings that are supported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. Some macro strings are only supported in specific template pages, as indicated in the Description column.
+The following table provides information on the macro strings that are supported by {{< SecureTransport/componentshortname  >}}. Some macro strings are only supported in specific template pages, as indicated in the Description column.
 
 <table>
    <thead>
@@ -77,7 +77,7 @@ The following table provides information on the macro strings that are supported
       </tr>
       <tr>
          <td>FDX_DIRECTORY_LIST         </td>
-         <td><p>For every file or directory present in the current directory, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> adds the following line:</p>
+         <td><p>For every file or directory present in the current directory, {{< SecureTransport/componentshortname  >}} adds the following line:</p>
 <p><code>PrintFileURL("FileURL", "FileName", "isDir", "size", "date", "icon")</code></p>         </td>
          <td><p><em>FileURL</em> – the name of the file which can be used as the URL</p>
 <p><em>FileName</em> – the name of file</p>
@@ -183,7 +183,7 @@ You can customize the type of login page the browser displays for browser client
 
 ### Remove the server information displayed on the login screen
 
-To remove the display of server information in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
+To remove the display of server information in the {{< SecureTransport/componentshortname  >}} browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
 
 Modify the function `PrintServerInfo` to return `0` as shown in the following code:
 
@@ -221,7 +221,7 @@ You can customize the type of login page the browser displays for browser client
 
 ### Remove the server information displayed on the login screen
 
-To remove the display of server information in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
+To remove the display of server information in the {{< SecureTransport/componentshortname  >}} browser client, you must modify the `<FILEDRIVEHOME>/share/ftdocs/html/C/login.html` file.
 
 Modify the function `PrintServerInfo` to return `0` as shown in the following code:
 
@@ -246,9 +246,9 @@ Possible values:
 -   `OS`– The header field shows the operating system on which SecureTransport is running (with the result being, for example, `Server: Linux`)
 -   `None`– Depending on the Jetty version, the Server header is not displayed or its field is empty.
 
-### Configure Cache-Control for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration tool
+### Configure Cache-Control for {{< SecureTransport/componentshortname  >}} Administration tool
 
-You can define response caching policies for the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Administration tool via the `Admin.ControlCaching` server configuration option. Changing the option value requires Admin service restart to take effect.
+You can define response caching policies for the {{< SecureTransport/securetransportname  >}} Administration tool via the `Admin.ControlCaching` server configuration option. Changing the option value requires Admin service restart to take effect.
 
 Possible values:
 

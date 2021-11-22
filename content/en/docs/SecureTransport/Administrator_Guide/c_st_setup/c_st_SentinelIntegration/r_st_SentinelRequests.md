@@ -2,7 +2,7 @@
     "title": "Axway Sentinel requests",
     "linkTitle": "Axway Sentinel requests",
     "weight": "250"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides three requests you can use to display events and cycle links:
+}{{< SecureTransport/componentshortname  >}} provides three requests you can use to display events and cycle links:
 
 -   `CurrentAlerts` displays all `ST_VAS` and `XBFTransfer` alerts (events with `IsAlert=1`).
 -   `CurrentDayTransfersAndVAS` displays all `ST_VAS` and `XBFTransfer` events for the current day.

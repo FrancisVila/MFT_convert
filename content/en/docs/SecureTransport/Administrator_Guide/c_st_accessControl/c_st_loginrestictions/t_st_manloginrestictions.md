@@ -2,7 +2,7 @@
     "title": "Manage Login Restriction Policies",
     "linkTitle": "Manage Login Restriction Policies",
     "weight": "290"
-}Login restrictions limit access to <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Servers and <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edges through the evaluation of `ALLOW_THEN_DENY` and `DENY_THEN_ALLOW` Login Restriction Policies for end users. The following table describes the evaluation result for different types of Login Restriction Policies.
+}Login restrictions limit access to {{< SecureTransport/securetransportname  >}} Servers and {{< SecureTransport/securetransportname  >}} Edges through the evaluation of `ALLOW_THEN_DENY` and `DENY_THEN_ALLOW` Login Restriction Policies for end users. The following table describes the evaluation result for different types of Login Restriction Policies.
 
 <table>
    <thead>
@@ -37,7 +37,7 @@ Allow and Deny         </td>
    </tbody>
 </table>
 
-To access and manage the Login Restriction Policies, select **Access &gt; Login Restrictions** in the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Administration Tool. The *Login Restriction Policies for End Users* page will be displayed. Use the *Login Restriction Policies for End Users* page to create and maintain Login Restriction Policies.
+To access and manage the Login Restriction Policies, select **Access &gt; Login Restrictions** in the {{< SecureTransport/securetransportname  >}} Administration Tool. The *Login Restriction Policies for End Users* page will be displayed. Use the *Login Restriction Policies for End Users* page to create and maintain Login Restriction Policies.
 
 The following topics provide how-to instructions for managing Login Restriction Policies:
 

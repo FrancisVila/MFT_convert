@@ -2,12 +2,12 @@
     "title": "Repository encryption certificate",
     "linkTitle": "Repository encryption certificate",
     "weight": "110"
-}Repository encryption increases <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> security by avoiding storing unencrypted files. Repository encryption can be enabled on different levels (for example, per account). When you enable repository encryption, SecureTransport encrypts (according to the activated repository encryption level) each file that it pulls from a partner site or that a client pushes to it. When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> pushes a file to a partner site or a client pulls a file from it, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> decrypts the file. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> encrypts and decrypts each file dynamically in memory as it receives and sends it, so the files never exist unencrypted in the storage of the host system.
+}Repository encryption increases {{< SecureTransport/componentshortname  >}} security by avoiding storing unencrypted files. Repository encryption can be enabled on different levels (for example, per account). When you enable repository encryption, SecureTransport encrypts (according to the activated repository encryption level) each file that it pulls from a partner site or that a client pushes to it. When {{< SecureTransport/componentshortname  >}} pushes a file to a partner site or a client pulls a file from it, {{< SecureTransport/componentshortname  >}} decrypts the file. {{< SecureTransport/componentshortname  >}} encrypts and decrypts each file dynamically in memory as it receives and sends it, so the files never exist unencrypted in the storage of the host system.
 
 1.  Generate a self-issued local certificate or import a PKCS#12 file. See <a href="../t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a> and <a href="../t_st_localcertificatesandcsrs#Import" class="MCXref xref">Import a local certificate</a>.
 
-2.  Set the value of the `Stfs.Encryption.CertAlias` server configuration parameter to the alias of the certificate. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses this certificate to encrypt and decrypt files. See <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#top" class="MCXref xref">View and change server configuration parameters</a>.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prevents you from deleting the certificate referenced by `Stfs.Encryption.CertAlias`.  
+2.  Set the value of the `Stfs.Encryption.CertAlias` server configuration parameter to the alias of the certificate. {{< SecureTransport/componentshortname >}} uses this certificate to encrypt and decrypt files. See <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#top" class="MCXref xref">View and change server configuration parameters</a>.  
+    {{< SecureTransport/componentshortname >}} prevents you from deleting the certificate referenced by `Stfs.Encryption.CertAlias`.  
 
     > **Note:**
     >
@@ -21,7 +21,7 @@
       
     See <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#top" class="MCXref xref">View and change server configuration parameters</a>.
 
-4.  To configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to compute the MD5 checksum for an uploaded file dynamically as the file is uploaded, set the value of the `Stfs.Hash.HashOnUpload` server configuration parameter to `true`. When the value is `false`, the default value, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> computes the MD5 checksum after the file transfer is complete.
+4.  To configure {{< SecureTransport/componentshortname >}} to compute the MD5 checksum for an uploaded file dynamically as the file is uploaded, set the value of the `Stfs.Hash.HashOnUpload` server configuration parameter to `true`. When the value is `false`, the default value, {{< SecureTransport/componentshortname >}} computes the MD5 checksum after the file transfer is complete.
 
 5.  Create a user class named `EncryptClass`. Files transferred by users in this class are encrypted. See <a href="../../../c_st_accesscontrol/c_st_userclasses/t_st_userclasses#Add" class="MCXref xref">Add a user class</a>.
 

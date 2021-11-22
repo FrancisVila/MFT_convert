@@ -2,7 +2,7 @@
     "title": "Manage an Enterprise Cluster",
     "linkTitle": "Manage an Enterprise Cluster",
     "weight": "110"
-}As described in <a href="../../overview/c_st_deploy_models#Clusteri" class="MCXref xref">Cluster models</a>, an Enterprise Cluster is a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment that uses a collection of servers at a single site to provide the capacity to handle a very large file transfer workload. All <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server systems in the cluster share an external database and a file system. This topic describes how to set up and maintain an Enterprise Cluster (EC). These operations are available only on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+}As described in <a href="../../overview/c_st_deploy_models#Clusteri" class="MCXref xref">Cluster models</a>, an Enterprise Cluster is a {{< SecureTransport/componentshortname  >}} deployment that uses a collection of servers at a single site to provide the capacity to handle a very large file transfer workload. All {{< SecureTransport/componentshortname  >}} Server systems in the cluster share an external database and a file system. This topic describes how to set up and maintain an Enterprise Cluster (EC). These operations are available only on the {{< SecureTransport/componentshortname  >}} Server.
 
 The following topics provide the prerequisites and how-to instructions for managing an Enterprise Cluster:
 

@@ -2,7 +2,7 @@
     "title": "ICAP settings",
     "linkTitle": "ICAP settings",
     "weight": "250"
-}The Internet Content Adaptation Protocol (ICAP) settings allow the administrator to configure ICAP engines to be used as part of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> file transfer processes so that data loss prevention (DLP) is achieved and anti-virus (AV) scans are completed. <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> allows the administrator to use the ICAP connector to set up a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> server to scan (with external DLP engine) files and AdHoc messages when delivering them to the recipient folder or mailbox. ICAP server scan is executed when a file is going to be (therefore before it is) delivered.
+}The Internet Content Adaptation Protocol (ICAP) settings allow the administrator to configure ICAP engines to be used as part of the {{< SecureTransport/securetransportname  >}} file transfer processes so that data loss prevention (DLP) is achieved and anti-virus (AV) scans are completed. {{< SecureTransport/securetransportname  >}} allows the administrator to use the ICAP connector to set up a {{< SecureTransport/securetransportname  >}} server to scan (with external DLP engine) files and AdHoc messages when delivering them to the recipient folder or mailbox. ICAP server scan is executed when a file is going to be (therefore before it is) delivered.
 
 Prior to configuring ICAP scanning, verify that ICAPScan is enabled. For information on enabling ICAPScan, refer to <a href="../c_st_tm_settings/t_st_rulespackages#EnableRulesPackage" class="MCXref xref">Enable a rules package</a>.
 
@@ -57,9 +57,9 @@ Click **Add new ICAP server** to open the *ICAP Server Settings* page with multi
     -   Select **Enable FIPS Transfer Mode** to enable transfers to the ICAP server to be in accordance with the Federal Information Processing Standard (FIPS).  
         **Note**: Verify certificate and Enable FIPS Transfer Mode can be selected together or individually depending on the level of security needed for the ICAP server connection.
 -   Enter **Max file size** (MB).  
-    The default maximum file size is 10 MB. If the actual file size is larger than the maximum file size, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will send up to the maximum configured file size to the ICAP server.
+    The default maximum file size is 10 MB. If the actual file size is larger than the maximum file size, {{< SecureTransport/componentshortname >}} will send up to the maximum configured file size to the ICAP server.
 -   Enter **Preview Size** (KB).  
-    The default preview size is 10 KB. If the ICAP server requires more data, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will send it up to the maximum configured file size.
+    The default preview size is 10 KB. If the ICAP server requires more data, {{< SecureTransport/componentshortname >}} will send it up to the maximum configured file size.
     -   Select **Deny file transfer on connection error**.  
         If the **Deny file transfer on connection error** option is selected, file transfers will be denied on a connection error to the ICAP server
     -   Select **Enable e-mail notifications on ICAP error**.  
@@ -73,7 +73,7 @@ Click **Add new ICAP server** to open the *ICAP Server Settings* page with multi
 ### ICAP scan filtering settings
 
 Select **Scan Policy Expression** if you want to perform scanning only under specific circumstances.  
-When you select the **Scan Policy Expression** checkbox, the text box field allows you to use <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Expression Language. If both settings are disabled, scanning will always be performed. Sample usage - do not scan if the transfer is taking place over SSH protocol: `${session.protocol ne 'ssh'}`  
+When you select the **Scan Policy Expression** checkbox, the text box field allows you to use {{< SecureTransport/componentshortname  >}} Expression Language. If both settings are disabled, scanning will always be performed. Sample usage - do not scan if the transfer is taking place over SSH protocol: `${session.protocol ne 'ssh'}`  
 Refer to the <a href="icap_el_vars" class="MCXref xref">ICAP scan policy expression language</a> subtopic for the complete list of available expressions.
 
 Select **Perform scanning only if there is a partner recipient**.  
@@ -86,7 +86,7 @@ Select **Scan Without BU** to choose whether or not to enable ICAP scanning for 
 
 ### Custom ICAP header settings
 
-This allows you to specify any additional custom headers that must be passed to the ICAP server when making requests, along with their values. The **Header value** fields can either have a static value or a ST expression-based one. Expressions allow you to dynamically set a value, based on a specific context, by utilizing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> session or environment variables.  
+This allows you to specify any additional custom headers that must be passed to the ICAP server when making requests, along with their values. The **Header value** fields can either have a static value or a ST expression-based one. Expressions allow you to dynamically set a value, based on a specific context, by utilizing the {{< SecureTransport/componentshortname  >}} session or environment variables.  
 By default, there aren't any custom headers configured, but you can add any number of headers by selecting **Add custom headers mapping**.  
 If a header value is not present or can’t be resolved, the header will be added with an empty or null value, when sending the request.  
 Example:

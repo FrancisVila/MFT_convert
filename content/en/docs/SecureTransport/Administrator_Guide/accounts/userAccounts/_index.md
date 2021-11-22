@@ -35,7 +35,7 @@ Use the browse buttons at the top and bottom of the page.
 
 ## View account settings
 
-Use the *Settings* pane to view and modify account status and settings. When an account is defined for an external authenticated user, such as an LDAP or SiteMinder user, the external UID, GID, and home folder attributes are replaced with the values taken from the account information while the external user is logged into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+Use the *Settings* pane to view and modify account status and settings. When an account is defined for an external authenticated user, such as an LDAP or SiteMinder user, the external UID, GID, and home folder attributes are replaced with the values taken from the account information while the external user is logged into {{< SecureTransport/componentshortname  >}}.
 
 1.  Select **Accounts > User Accounts**. The *User Accounts* page is displayed.
 2.  Click the name of the account whose settings you want to view.  

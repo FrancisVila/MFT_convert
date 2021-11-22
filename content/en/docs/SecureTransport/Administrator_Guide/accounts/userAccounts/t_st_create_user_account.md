@@ -19,12 +19,12 @@ Some of the options are initially hidden. The following table provides detailed 
       <tr>
          <td><strong>Account Name</strong>*
 <p><em>text box</em></p>         </td>
-         <td><p>The name of the account must be unique for the system. If an account already exists with the name you specify, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prompts you to enter another name. This field is mandatory. Account Names cannot contain more than 80 characters. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
+         <td><p>The name of the account must be unique for the system. If an account already exists with the name you specify, {{< SecureTransport/componentshortname  >}} prompts you to enter another name. This field is mandatory. Account Names cannot contain more than 80 characters. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Email Contact</strong>
 <p><em>text box</em></p>         </td>
-         <td><p>When this email address is the recipient of an ad hoc file transfer email sent from ST Web Client or one of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> determines that this user is the recipient. If the user is allowed to log in by email, this is the value used in the <strong>User Name</strong> field of the login page.</p>
+         <td><p>When this email address is the recipient of an ad hoc file transfer email sent from ST Web Client or one of the {{< SecureTransport/companyname  >}} Email Plug-ins, {{< SecureTransport/componentshortname  >}} determines that this user is the recipient. If the user is allowed to log in by email, this is the value used in the <strong>User Name</strong> field of the login page.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>In order for login by email to function properly, all user accounts must be assigned unique email addresses. Also, the client password reset feature will not work if emails assigned to users accounts are not unique.</p>
@@ -41,7 +41,7 @@ Some of the options are initially hidden. The following table provides detailed 
 <p><em>drop-down list</em></p>         </td>
          <td>Use this parameter to differentiate between accounts that transfer files internally and those that transfer files between partners. Choose from the following:
 <ul>
-<li><strong>Unspecified</strong> – Default value. All accounts created using versions of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> that do not have this option have this value.</li>
+<li><strong>Unspecified</strong> – Default value. All accounts created using versions of {{< SecureTransport/componentshortname  >}} that do not have this option have this value.</li>
 <li><strong>Internal</strong> – Transfers for this account occur within a single organization.</li>
 <li><strong>Partner</strong> – Transfers for this account occur between organizations</li>
 </ul>         </td>
@@ -58,7 +58,7 @@ Some of the options are initially hidden. The following table provides detailed 
       <tr>
          <td><strong>HTML Template</strong>
 <p><em>drop-down list</em></p>         </td>
-         <td><p>Select the <strong>HTML Template</strong> that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays when the user logs in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> web client.</p>
+         <td><p>Select the <strong>HTML Template</strong> that {{< SecureTransport/componentshortname  >}} displays when the user logs in to the {{< SecureTransport/componentshortname  >}} web client.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>If you select the default HTML template, the SecureTransport Web Client uses the template that is specified on the Miscellaneous Options page.</p>
@@ -67,7 +67,7 @@ Some of the options are initially hidden. The following table provides detailed 
       <tr>
          <td><strong>Routing Mode</strong>
 <p><em>drop-down list</em></p>         </td>
-         <td>This field controls how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> behaves when it is the intermediate partner in a PeSIT transfer directed to this account and the transfer cannot be completed because no transfer site matches the routing destination and the account has no PeSIT default site.
+         <td>This field controls how {{< SecureTransport/componentshortname  >}} behaves when it is the intermediate partner in a PeSIT transfer directed to this account and the transfer cannot be completed because no transfer site matches the routing destination and the account has no PeSIT default site.
 <ul>
 <li><strong>Reject</strong> (default) – A PeSIT transfer that cannot be routed is rejected before it starts.</li>
 <li><strong>Accept</strong> – A PeSIT transfer that cannot be routed is performed and the file is retained locally.</li>
@@ -157,7 +157,7 @@ If the account is assigned to a business unit, it will inherit its policy. Other
          <td><p><strong>Change home to</strong></p>
 <em>text boxes</em>         </td>
          <td><p>You must assign a <strong>Current Home</strong> folder for your user.</p>
-<p>Enter a valid home folder in the <strong>Change Home To</strong> field for the account as an absolute path. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> validates the directory path you specify and prompts you for a new path if necessary. This field is mandatory. You cannot enter spaces-only values in this field.</p>
+<p>Enter a valid home folder in the <strong>Change Home To</strong> field for the account as an absolute path. {{< SecureTransport/componentshortname  >}} validates the directory path you specify and prompts you for a new path if necessary. This field is mandatory. You cannot enter spaces-only values in this field.</p>
 <p>Add a base folder path in the field to the left of the forward slash (<code>/</code>) and add the home folder in the field to the right of it. You can add multiple levels, such as <code>/home/dev3/test</code>, but the parent directories must be typed in the field to the left of the slash. Only the final child directory should be in the field to the right of the slash. When you select a business unit, a base folder for the business unit is automatically added. The base folder must be the business unit base folder. You cannot change the base folder for a user account if a business unit is selected unless the business unit has the option <strong>Allow Base Folder modifying</strong> selected.</p>
 <p>Although you can use the <code>/</code> when adding parent directories to a home folder, you cannot use the following characters in the home folder name: <code>* &lt; &gt; ? " / \ | :</code></p>
 <blockquote>
@@ -214,9 +214,9 @@ For a custom delivery method, select one or more of the allowed enrollment types
 <li><strong>Challenge</strong> – The ad hoc file recipient receives a link and must answer correctly a challenge question specified by the sender to retrieve the files. The recipient is not enrolled as a user. The ST Web Client option is <strong>Protect attachment link with security question</strong>.</li>
 <li><strong>Existing Account</strong> – Do not enroll ad hoc file recipients. Only existing users can receive files. The ST Web Client option is <strong>Send to existing users only</strong>.</li>
 <li><strong>Enroll Unlicensed</strong> – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes a restricted user who can only reply once to the email and retrieve the files. Other user attributes are defined by the enrollment template. The ST Web Client option is <strong>Allow recipients to enroll as restricted users (receive and reply to messages only)</strong>.</li>
-<li><strong>Enroll Licensed</strong> – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user with all the attributes specified in the default enrollment template. The ST Web Client option is <strong>Allow recipients to enroll as unrestricted users</strong></li>
+<li><strong>Enroll Licensed</strong> – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes a {{< SecureTransport/componentshortname  >}} user with all the attributes specified in the default enrollment template. The ST Web Client option is <strong>Allow recipients to enroll as unrestricted users</strong></li>
 </ul>
-<p>When the value of the <strong>Delivery Method</strong> field is not <strong>Default</strong>, the <strong>Implicit Enrollment Type</strong> value controls which option ST Web Client selects initially in the <em>User Access</em> window and which enrollment type is used by the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins. The choices depend on the enrollment types enabled by the <strong>Delivery Methods</strong> and <strong>Enrollment Types</strong> fields. <strong>Challenge</strong> is not an option because the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-in do not include the challenge question and answer function.</p></li>
+<p>When the value of the <strong>Delivery Method</strong> field is not <strong>Default</strong>, the <strong>Implicit Enrollment Type</strong> value controls which option ST Web Client selects initially in the <em>User Access</em> window and which enrollment type is used by the {{< SecureTransport/companyname  >}} Email Plug-ins. The choices depend on the enrollment types enabled by the <strong>Delivery Methods</strong> and <strong>Enrollment Types</strong> fields. <strong>Challenge</strong> is not an option because the {{< SecureTransport/companyname  >}} Email Plug-in do not include the challenge question and answer function.</p></li>
 </ul>         </td>
       </tr>
       <tr>
@@ -262,9 +262,9 @@ For a custom delivery method, select one or more of the allowed enrollment types
       <tr>
          <td><strong>Login Settings</strong>
 <p><em>check-box-controlled group of options</em></p>         </td>
-         <td>In the <em>Login Settings</em> area: select <strong>Allow this account to log in to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server</strong> to allow the new account to log in to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. This setting is enabled by default. Disabling the option restricts access of this account to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. If you enable this option, the following options are enabled.
+         <td>In the <em>Login Settings</em> area: select <strong>Allow this account to log in to {{< SecureTransport/componentshortname  >}} Server</strong> to allow the new account to log in to {{< SecureTransport/componentshortname  >}}. This setting is enabled by default. Disabling the option restricts access of this account to the {{< SecureTransport/componentshortname  >}} Server. If you enable this option, the following options are enabled.
 <ul>
-<li>Enter a <strong>Login Name</strong> for the account. This is the unique name with which the account is identified by the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Login names cannot contain the following characters: +, :, or [. Login Names cannot start with the following character: *.</li>
+<li>Enter a <strong>Login Name</strong> for the account. This is the unique name with which the account is identified by the {{< SecureTransport/componentshortname  >}} Server. Login names cannot contain the following characters: +, :, or [. Login Names cannot start with the following character: *.</li>
 <li>Select the <strong>Login Restriction Policy</strong>. The Login Restriction Policy defines rules for allow or deny login to users based on the client IP or host and other conditions. For additional information, see <a href="../../../c_st_accesscontrol/c_st_loginrestictions" class="MCXref xref">Login restrictions</a>.
 <ul>
 <li>If a Login Restriction Policy is selected as the global default policy, it will be the inherited default selection for the user account.</li>
@@ -281,8 +281,8 @@ For a custom delivery method, select one or more of the allowed enrollment types
 <p><strong>Note:</strong></p>
 <p>A user of one of the Axway Email Plug-ins must either have Allow this account to login by email selected or have the identical values in the Email Contact field and the Login Name field.</p>
 </blockquote></li>
-<li>Select <strong>Allow this account to submit transfers using the Transfers RESTful API</strong> to enable calls from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST file transfer API authenticated with the credentials from this account. When this option is selected, the account will be allowed to trigger server initiated transfers using the Transfers RESTful API resource and retrieve the tracking information for these transfers.</li>
-<li><p>Select <strong>Password is stored locally (not in external directory)</strong> to store the password locally in the system. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores the passwords of real, LDAP, SiteMinder, and SSO users in an external directory, and the passwords of virtual users are stored in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database.<br />
+<li>Select <strong>Allow this account to submit transfers using the Transfers RESTful API</strong> to enable calls from the {{< SecureTransport/componentshortname  >}} REST file transfer API authenticated with the credentials from this account. When this option is selected, the account will be allowed to trigger server initiated transfers using the Transfers RESTful API resource and retrieve the tracking information for these transfers.</li>
+<li><p>Select <strong>Password is stored locally (not in external directory)</strong> to store the password locally in the system. {{< SecureTransport/componentshortname  >}} stores the passwords of real, LDAP, SiteMinder, and SSO users in an external directory, and the passwords of virtual users are stored in the {{< SecureTransport/componentshortname  >}} database.<br />
 </p>
 <blockquote>
 <p><strong>Note:</strong></p>
@@ -376,7 +376,7 @@ Once you have saved the account settings, you can select the **Subscriptions**, 
 
 ## Spaces in required fields
 
-Some fields in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> require that you enter a value. When you enter a value in such a field, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> trims any leading or trailing spaces and then determines whether the field is empty. This means you cannot enter space-only values in required fields because those fields are treated as empty.
+Some fields in {{< SecureTransport/componentshortname  >}} require that you enter a value. When you enter a value in such a field, {{< SecureTransport/componentshortname  >}} trims any leading or trailing spaces and then determines whether the field is empty. This means you cannot enter space-only values in required fields because those fields are treated as empty.
 
 # Maker-Checker user creation
 

@@ -5,7 +5,7 @@
 }1.  Select **Application** and click **Add New**.  
     The *New Application* page is displayed.
 
-2.  Select <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> from the mandatory **Application Type** list.
+2.  Select {{< SecureTransport/advancedrouting >}} from the mandatory **Application Type** list.
 
 3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
 

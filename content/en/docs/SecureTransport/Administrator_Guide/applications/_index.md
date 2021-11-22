@@ -2,11 +2,11 @@
     "title": "Applications",
     "linkTitle": "Applications",
     "weight": "150"
-}This section introduces <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> applications and describes how to use the Applications menu features of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool.
+}This section introduces {{< SecureTransport/componentlongname  >}} applications and describes how to use the Applications menu features of the {{< SecureTransport/componentshortname  >}} Administration Tool.
 
 ## Application overview
 
-In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, *applications* are sets of workflow you can create to perform file processing, including the following:
+In {{< SecureTransport/componentshortname  >}}, *applications* are sets of workflow you can create to perform file processing, including the following:
 
 -   Transform data
 -   Schedule file transfers
@@ -16,14 +16,14 @@ In <span class="mc-variable axway_variables.Component_Short_Name variable">Secur
 
 An application is defined as an instance of a set of workflow called an *application type*. Once you have defined an application, you create a connection between an application and one or more *accounts*. Such a connection is defined through a *subscription*.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> ships with the following built-in application types:
+{{< SecureTransport/componentshortname  >}} ships with the following built-in application types:
 
 -   **[Account Maintenance](applicationsaccountmaintenance)** – Automatically deletes, disables, or purges accounts based on their inactivity or age. You can configure account maintenance schedule and emails notifications, as well as email alerts for password and certificate expiration.
 -   **[Advanced Routing](../c_st_advanced_routing)** – Provides options to create multiple automated flows for file transformations, routing and transfers between different participants, partner systems, and applications.
 -   **[Archive Maintenance](applicationsarchivemaintenance)** – Automatically deletes archived files based on a schedule you define.  
 -   **[Audit Log Maintenance](applicationsauditlogmaintenance)** – Automatically deletes Audit log records that are older than a specified number of days or months (6 months by default). You can schedule how often to run this application and configure it to optionally export these records prior to deletion.
--   **[<span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel Link Data Maintenance](applicationssentinellinkdatamaintenance)** – Removes all SentinelLinkData entries to files that do not exist anymore, based on a schedule you define.
--   **[<span class="mc-variable axway_variables.Company_Name variable" style="mc-tag-and-class: ;">Axway</span> Transfer CFT](applicationstransfercft)** – Enables <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Transfer CFT to push files to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+-   **[{{< SecureTransport/companyname >}} Sentinel Link Data Maintenance](applicationssentinellinkdatamaintenance)** – Removes all SentinelLinkData entries to files that do not exist anymore, based on a schedule you define.
+-   **[{{< SecureTransport/companyname >}} Transfer CFT](applicationstransfercft)** – Enables {{< SecureTransport/companyname >}} Transfer CFT to push files to {{< SecureTransport/componentshortname >}}.
 -   **[**Basic Application**](applicationsbasic)** – Processes server-initiated transfers and performs data transformations.  
 -   **[File Maintenance](applicationsfilemaintenance)** – Automatically deletes files from account home folders based on a specified retention or expiration period. You can schedule how often to run this application and configure it to optionally send notification before or/and after file deletion.
 -   **[File Transfer via File Services Interface](applicationstransferfileservicesinterface)** – Processes metadata files sent from another system for a protocol implemented using the file services interface.
@@ -75,7 +75,7 @@ Use the following procedure to delete an application.
 
 ## Configure a schedule for a maintenance application
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> allows you to schedule maintenance events that will be executed once at a specified time in the future or at periodic intervals. You can access the scheduler page by creating or editing any maintenance application.
+{{< SecureTransport/componentshortname  >}} allows you to schedule maintenance events that will be executed once at a specified time in the future or at periodic intervals. You can access the scheduler page by creating or editing any maintenance application.
 
 To schedule a maintenance event:
 
@@ -98,7 +98,7 @@ For information on scheduling file downloads, see <a href="../accounts/c_st_subs
 
 ## Create applications
 
-Every application in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> must be based on an application type. Currently, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports multiple application types. Learn how to create applications of each application type:
+Every application in {{< SecureTransport/componentshortname  >}} must be based on an application type. Currently, {{< SecureTransport/componentshortname  >}} supports multiple application types. Learn how to create applications of each application type:
 
 -   <a href="applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
 -   <a href="applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
@@ -118,4 +118,4 @@ Every application in <span class="mc-variable axway_variables.Component_Short_Na
 -   <a href="applicationsunlicensedacctsmaintenance" class="MCXref xref">Unlicensed Accounts Maintenance application</a>
 -   <a href="applicationsfilemaintenance" class="MCXref xref">File Maintenance application</a>
 
-For instructions on creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application, see <a href="../c_st_advanced_routing/c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+For instructions on creating an {{< SecureTransport/advancedrouting  >}} application, see <a href="../c_st_advanced_routing/c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.

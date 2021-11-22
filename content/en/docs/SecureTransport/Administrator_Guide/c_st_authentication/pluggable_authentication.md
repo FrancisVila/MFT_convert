@@ -2,7 +2,7 @@
     "title": "Pluggable authentication",
     "linkTitle": "Pluggable authentication",
     "weight": "230"
-}A custom authentication plug-in allows you to implement your own authentication logic and override the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> authentication mechanism. The custom authentication has priority over the rest authentication types except for the Single sign-on (SSO). Only one authentication plug-in can be enabled at a time.
+}A custom authentication plug-in allows you to implement your own authentication logic and override the {{< SecureTransport/securetransportname  >}} authentication mechanism. The custom authentication has priority over the rest authentication types except for the Single sign-on (SSO). Only one authentication plug-in can be enabled at a time.
 
 > **Note:**
 >
@@ -14,14 +14,14 @@ Pluggable Authentication features:
 -   Administrator authentication over HTTP only.
 -   Supports multiple authentication methods for administrators and end-users: basic authentication (user name/password), certificates, and dual authentication (both username/password and a certificate)
 -   The plug-in custom configuration is stored in the Server Configuration and can be [exported and imported](#Plug-in) with it.
--   [Error and messages](#Messages) from the plug-in are displayed in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server log.
+-   [Error and messages](#Messages) from the plug-in are displayed in {{< SecureTransport/componentshortname >}} Server log.
 
  
 
 The following conditions apply to Pluggable authentication:  
 
 -   The deployment of multiple authentication plug-ins is not supported.
--   To be authenticated by a plug-in, a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> account must be created with the “Password is stored locally” option disabled.
+-   To be authenticated by a plug-in, a {{< SecureTransport/securetransportname >}} account must be created with the “Password is stored locally” option disabled.
 -   On an Edge server, Pluggable authentication can be configured for administrators only.
 -   Log-in Restriction Policies work if an IP address is used, and may not work when a username is used for a policy (due to the fact that the plug-in may accept one username and return a completely different one).
 
@@ -39,7 +39,7 @@ In a cluster environment, the plug-in should be deployed on all nodes, and the A
 
 ## Plug-in registration
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> identifies the plug-in by the name of its JAR file. Plug-ins are discovered and registered at the Admin daemon start. Each authentication plug-in is added to two configuration registries in the *Server Configuration* page:
+{{< SecureTransport/componentshortname  >}} identifies the plug-in by the name of its JAR file. Plug-ins are discovered and registered at the Admin daemon start. Each authentication plug-in is added to two configuration registries in the *Server Configuration* page:
 
 -   `Plugins.Authentication.Admin.Registry`
 -   `Plugins.Authentication.EndUser.Registry`
@@ -54,11 +54,11 @@ If the plug-in has a custom configuration, its configurable options are added in
 
 ## Plug-in activation
 
-After being registered, the authentication plug-ins are added to the admin and the end-user registries in the Server Configuration, but they are disabled (have a hash symbol in front of their names). <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will not automatically activate a newly registered plug-in. To activate a plug-in, remove the # symbol from its name.
+After being registered, the authentication plug-ins are added to the admin and the end-user registries in the Server Configuration, but they are disabled (have a hash symbol in front of their names). {{< SecureTransport/componentshortname  >}} will not automatically activate a newly registered plug-in. To activate a plug-in, remove the # symbol from its name.
 
 Only one plug-in can be enabled per registry at a time. Otherwise, the authentication fails.
 
-If no plug-in is enabled, users are authenticated by using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> internal authentication logic.
+If no plug-in is enabled, users are authenticated by using the {{< SecureTransport/componentshortname  >}} internal authentication logic.
 
 > **Note:**
 >
@@ -73,7 +73,7 @@ To undeploy a plug-in:
 2\. Restart the Admin and TM daemons.  
 The plug-in name is then removed from the registries along with its configuration options.
 
-When you uninstall <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, the plug-ins JAR files are also removed.
+When you uninstall {{< SecureTransport/componentshortname  >}}, the plug-ins JAR files are also removed.
 
 To redeploy or update a plug-in:
 
@@ -123,7 +123,7 @@ On each login request, the following messages are displayed in the Server log:
 -   INFO: "`Authentication call to <plugin_name>.`"- notification of an authentication request sent to an enabled authentication plug-in.
 -   INFO: “`<plugin_name> successfully authenticated user <username>. Authentication result: SUCCESS, ‘<plugin_message>’”`- notification of a successful authentication by a plug-in
 -   INFO: “`<plugin_name> failed to authenticate user. Authentication result: FAILURE, ‘<plugin_message>`’”- notification of an unsuccessful authentication
--   INFO: “`<plugin_name> was unable to authenticate user. Authentication result: CONTINUE, ‘<plugin_message>’`”- the plug-in does not recognize the user and indicates that an <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> internal authentication must be executed.
+-   INFO: “`<plugin_name> was unable to authenticate user. Authentication result: CONTINUE, ‘<plugin_message>’`”- the plug-in does not recognize the user and indicates that an {{< SecureTransport/componentshortname >}} internal authentication must be executed.
 
 > **Note:**
 >
@@ -139,17 +139,17 @@ An end-user can log in to SecureTransport as a virtual account, account template
 
 1\. The user logs in - the user class is determined by the user’s properties (login name, GID, UID, Address or the custom expression).
 
-2\. <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> searches for an account with the same login name and an externally stored password in its database. If such account is found, the user is mapped.
+2\. {{< SecureTransport/securetransportname  >}} searches for an account with the same login name and an externally stored password in its database. If such account is found, the user is mapped.
 
-3\. If there is no virtual account with this login name, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> tries to map the user to an account template (based on the user class).
+3\. If there is no virtual account with this login name, {{< SecureTransport/componentshortname  >}} tries to map the user to an account template (based on the user class).
 
-4\. If there is no matching account template, the user logs in as an external user. To determine the user, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> uses the attributes returned by the plug-in. If the plug-in does not return those attributes, the authentication fails.  
+4\. If there is no matching account template, the user logs in as an external user. To determine the user, {{< SecureTransport/securetransportname  >}} uses the attributes returned by the plug-in. If the plug-in does not return those attributes, the authentication fails.  
 
 ### Admin only
 
 1.  If an admin account with that login name and an externally-stored password is not present, the authentication will fail.
 2.  For certificate or dual authentication, the respective checkboxes on the [Admin Settings](../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account#In) page must be enabled.
-3.  If the plug-in successfully authenticates an administrator but their account is locked or it is of a 'dbsetup' type, the authentication will fallback to the internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> logic.
+3.  If the plug-in successfully authenticates an administrator but their account is locked or it is of a 'dbsetup' type, the authentication will fallback to the internal {{< SecureTransport/componentshortname >}} logic.
 
 ## System attributes
 

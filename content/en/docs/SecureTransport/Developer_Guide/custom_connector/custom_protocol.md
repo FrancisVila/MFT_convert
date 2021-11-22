@@ -2,7 +2,7 @@
     "title": "Implement a custom protocol connector",
     "linkTitle": "Implement a custom protocol connector",
     "weight": "100"
-}The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Pluggable Transfer Site SPI provides the interface `com.axway.st.plugins.site.Connection` which should be implemented in order to transfer files to and from the partner.  
+}The {{< SecureTransport/componentshortname  >}} Pluggable Transfer Site SPI provides the interface `com.axway.st.plugins.site.Connection` which should be implemented in order to transfer files to and from the partner.  
 The Connection interface version 1.0 declares the following methods:
 
 -   `void getFile(DestinationFile file) throws IOException;`
@@ -17,7 +17,7 @@ The Connection interface version 1.1 adds the following methods:
     String getAdditionalInfo(); 
     FlowAttributesData getFlowAttributesData();
 
-The Connection interface is extended by `com.axway.st.plugins.site.CustomSite` abstract class which is also part of Pluggable Transfer Site SPI. Its main purpose is to hold a UIBean instance containing connection parameters as key-value pairs saved into the database as custom transfer site properties. The parameters are loaded from the database by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and populated in the UIBean instance inside the specific `CustomSite` implementation when starting server-initiated transfers.
+The Connection interface is extended by `com.axway.st.plugins.site.CustomSite` abstract class which is also part of Pluggable Transfer Site SPI. Its main purpose is to hold a UIBean instance containing connection parameters as key-value pairs saved into the database as custom transfer site properties. The parameters are loaded from the database by {{< SecureTransport/componentshortname  >}} and populated in the UIBean instance inside the specific `CustomSite` implementation when starting server-initiated transfers.
 
 The following steps should be followed to create the custom protocol connector:
 
@@ -35,7 +35,7 @@ The following steps should be followed to create the custom protocol connector:
         private FtpBean mFtpBean = new FtpBean();
 
 3.  Define the default constructor for `FTPSite` class which should set the instantiated `FtpBean` as the UIBean instance in the `CustomSite` parent class.  
-    When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> starts the transfer, it will populate the connection properties into UIBean instance defined in the `CustomSite` class:  
+    When {{< SecureTransport/componentshortname >}} starts the transfer, it will populate the connection properties into UIBean instance defined in the `CustomSite` class:  
 
 
         public FTPSite() {
@@ -64,9 +64,9 @@ The current SPI version is **1.8**.
 
 ### Connection interface implementation version 1.0
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> calls `putFile` (`SourceFile` file) method from the Connection interface when executing server-initiated push. The `SourceFile` instance will contain the `InputStream` to read the local file content that will be sent, the remote file name to write the content to, and the size of the local file (number of bytes the `InputStream` could read). Generally, the implementation of `putFile()` method should connect to the remote partner and write the content from the local file input stream to the remote file. The parameters for the connection can be retrieved from the already defined UIBean instance.
+{{< SecureTransport/componentshortname  >}} calls `putFile` (`SourceFile` file) method from the Connection interface when executing server-initiated push. The `SourceFile` instance will contain the `InputStream` to read the local file content that will be sent, the remote file name to write the content to, and the size of the local file (number of bytes the `InputStream` could read). Generally, the implementation of `putFile()` method should connect to the remote partner and write the content from the local file input stream to the remote file. The parameters for the connection can be retrieved from the already defined UIBean instance.
 
-When calling `getInputStream(RemotePartner descriptor)` from the `SourceFile` instance, you must pass a `com.axway.st.plugins.site.RemotePartner` instance as argument. This instance should hold the connection parameters which will be reported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> File Tracking. Currently, these parameters are the remote host, the remote folder to which the file will be pushed, the parameter that shows whether the remote connection is secure and the new remote file name which should be reported as Post Transmission Action if such is configured in transfer site. In SPI v1.3 two additional parameters were introduced – one for identifying the network connection port and one for identifying the remote impersonated entity.
+When calling `getInputStream(RemotePartner descriptor)` from the `SourceFile` instance, you must pass a `com.axway.st.plugins.site.RemotePartner` instance as argument. This instance should hold the connection parameters which will be reported by {{< SecureTransport/componentshortname  >}} File Tracking. Currently, these parameters are the remote host, the remote folder to which the file will be pushed, the parameter that shows whether the remote connection is secure and the new remote file name which should be reported as Post Transmission Action if such is configured in transfer site. In SPI v1.3 two additional parameters were introduced – one for identifying the network connection port and one for identifying the remote impersonated entity.
 
 Let's assume you have an `FTPConnector` interface and a simple FTP client implementation based on your interface which has the following methods:
 
@@ -137,7 +137,7 @@ Then use it in the `putFile()` method to upload the file:
 
 The `list()` method implementation from the Connection interface should return the list of files that are going to be downloaded from the remote partner". These files should be described using the `com.axway.st.plugins.site.FileItem` class. This class holds the remote file name that should be downloaded and the name which will be used to save the downloaded files.
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> starts the server-initiated pull transfer, the `list()` method from the Connection interface is always called before the file pull. The parameters for configuring file pull are `remoteDir` and `remotePattern` where the pattern could be a filename or expression. After the `list()` method returns the list of files that should be downloaded, described using the `FileItem` class, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> calls the `getFile()` method from Connection interface for every item in the list. In the `list()` method, you can implement a logic for listing files in a predefined remote directory only, or recursively listing all files in a specific directory. It is important to remember that the file names (and paths in case of recursive listing), returned by the `list()` method, should be relative to the predefined remote directory.
+When {{< SecureTransport/componentshortname  >}} starts the server-initiated pull transfer, the `list()` method from the Connection interface is always called before the file pull. The parameters for configuring file pull are `remoteDir` and `remotePattern` where the pattern could be a filename or expression. After the `list()` method returns the list of files that should be downloaded, described using the `FileItem` class, {{< SecureTransport/componentshortname  >}} calls the `getFile()` method from Connection interface for every item in the list. In the `list()` method, you can implement a logic for listing files in a predefined remote directory only, or recursively listing all files in a specific directory. It is important to remember that the file names (and paths in case of recursive listing), returned by the `list()` method, should be relative to the predefined remote directory.
 
 In the following example, the `FtpBean` and `FtpConnector` will be used to implement the `list()` method:
 
@@ -199,7 +199,7 @@ If you want to save the file with a different name, you can use the other constr
 
 #### getFile(DestinationFile file) method
 
-The next method that should be implemented is `getFile(DestinationFile file)`. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> calls the `getFile(DestinationFile file)` method from the Connection interface when executing a server-initiated pull. The `DestinationFile` instance will contain the `OutputStream` to write the remote file content to and the remote file name which will be pulled.  
+The next method that should be implemented is `getFile(DestinationFile file)`. {{< SecureTransport/componentshortname  >}} calls the `getFile(DestinationFile file)` method from the Connection interface when executing a server-initiated pull. The `DestinationFile` instance will contain the `OutputStream` to write the remote file content to and the remote file name which will be pulled.  
 Generally, the `getFile()` method should write the content of the remote file to the output stream held by the `DestinationFile` instance. When calling the `getOutputStream(RemotePartner descriptor);` from `DestinationFile` instance, you must pass the `com.axway.st.plugins.site.RemotePartner` instance as an argument. This instance should hold the connection parameters which will be reported by SecureTransport File Tracking. Currently, these parameters are the remote host, the remote folder from which the file will be downloaded, and the parameter that shows whether the remote connection is secure.
 
 Let's assume you have an `FTPConnector` interface and a simple FTP client implementation based on your interface which has the following methods:
@@ -256,7 +256,7 @@ The last method from Connection interface which you should implement is:
 
 -   `public void finalizeExecution() throws IOException;`
 
-This method is called by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> when finalizing the server-initiated transfer after executing the `list` method, `getFile` method, and `putFile` method regardless if they are completed successfully or not.
+This method is called by {{< SecureTransport/componentshortname  >}} when finalizing the server-initiated transfer after executing the `list` method, `getFile` method, and `putFile` method regardless if they are completed successfully or not.
 
 In this method you should release any occupied resource, for instance disconnecting the specific client from the remote partner.
 
@@ -281,7 +281,7 @@ Connection interface version 1.1 includes all functionality, introduced in versi
 
 This method is called by SecureTransport after the Server-initiated transfer (SIT) ends. The purpose of this method is to return the protocol commands logged (or captured) by the client during the transfer process. This method must be used along with `CommandLoggingService`, and more correctly method `getProtocolCommands()`.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> logs the protocol commands as normal protocol commands for the current transfer.
+{{< SecureTransport/componentshortname  >}} logs the protocol commands as normal protocol commands for the current transfer.
 
 > **Note:**
 >
@@ -311,7 +311,7 @@ You can use this method to log any additional information about the transfer. Th
 
 Gets the flow attributes for the current transferred file. This serves two purposes. First it is populated with existing flow attributes for the file being transferred by the server. Called second time when transfer is finished to persist the attributes stored in it.
 
-For more information about flow attributes, see the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's guide, *Mail template commands and variables* section &gt; *Flow attributes* subsection.
+For more information about flow attributes, see the {{< SecureTransport/componentshortname  >}} Administrator's guide, *Mail template commands and variables* section &gt; *Flow attributes* subsection.
 
 <span id="Connection_Interface_1.3"></span>
 
@@ -320,7 +320,7 @@ For more information about flow attributes, see the <span class="mc-variable axw
 Connection interface version 1.3 includes all functionality, introduced in version 1.1. It also provides:
 
 -   extended `RemotePartner `class with two additional properties and a builder utility
--   ability to notify <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> for executed post-transmission actions (PTAs) to report them in <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> File Tracking.
+-   ability to notify {{< SecureTransport/securetransportname >}} for executed post-transmission actions (PTAs) to report them in {{< SecureTransport/securetransportname >}} File Tracking.
 
 #### integer RemotePartner#remotePort; field
 
@@ -345,16 +345,16 @@ This utility is meant to construct RemotePartner objects using any set of Remote
 
 #### void CustomSite#notifyPTAExecuted(PTAInfo); utility method
 
-This method should be called by CustomSite implementations after a PTA is executed to report it in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> File Tracking. Post-transmission actions are usually executed after an actual transfer, so this method could be effectively called after calling `SourceFile#getInputStream(…)` or `DestinationFile#getOutputStream(…)` in case of upload or download respectfully.
+This method should be called by CustomSite implementations after a PTA is executed to report it in {{< SecureTransport/componentshortname  >}} File Tracking. Post-transmission actions are usually executed after an actual transfer, so this method could be effectively called after calling `SourceFile#getInputStream(…)` or `DestinationFile#getOutputStream(…)` in case of upload or download respectfully.
 
 #### class PTAInfo; bean
 
 Objects of type `PTAInfo `describe an executed post-transmission actions. The object fields are:
 
--   `String actionType` – the type of the executed operation; required; typical actions are: MOVE, DELETE, SHARE, etc.; types, longer than 20 chars, are being trimmed by <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>
+-   `String actionType` – the type of the executed operation; required; typical actions are: MOVE, DELETE, SHARE, etc.; types, longer than 20 chars, are being trimmed by {{< SecureTransport/securetransportname >}}
 -   `PTACompletionStatus completionStatus – SUCCESS/FAILURE;` required; indicates if the execution of the PTA succeeded or failed
 -   `String result` – the product of the executed action; typically, a file-name
--   `String comment` – human-readable information about the executed action; comments, longer than 1024 bytes are being trimmed by <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>
+-   `String comment` – human-readable information about the executed action; comments, longer than 1024 bytes are being trimmed by {{< SecureTransport/securetransportname >}}
 
 Typical usage:
 
@@ -372,29 +372,29 @@ Typical usage:
 
 Connection interface version 1.4 includes all the functionality, introduced in version 1.3. It also provides:
 
--   Extended proxy functionality, where <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can deny or blacklist proxies
+-   Extended proxy functionality, where {{< SecureTransport/componentshortname >}} can deny or blacklist proxies
 
 #### ProxyInfo getProxyInfo(); method
 
-This method is meant to hold and return the proxy instance (if any) used when performing Server-initiated transfers. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> needs it to be able to determine which proxy to deny or blacklist if transfers via this proxy are failing often in a predefined period of time. If a proxy is not used, this method can simply return null. The `ProxyInfo` object can be easily obtained using the [Proxy Service](#Proxy).
+This method is meant to hold and return the proxy instance (if any) used when performing Server-initiated transfers. {{< SecureTransport/componentshortname  >}} needs it to be able to determine which proxy to deny or blacklist if transfers via this proxy are failing often in a predefined period of time. If a proxy is not used, this method can simply return null. The `ProxyInfo` object can be easily obtained using the [Proxy Service](#Proxy).
 
-### <span style="background-color: #ffffff;">Connection interface implementation version 1.5</span>
+### 
 
-Connection interface version <span style="background-color: #ffffff;">1.5</span> includes all functionality, introduced in version 1.4. It also provides:
+Connection interface version includes all functionality, introduced in version 1.4. It also provides:
 
--   Two new annotations `@RemoteDownloadPattern` and `@RemoteDownloadFolder` to notify <span class="mc-variable suite_variables.SecureTransportEdgeName variable">SecureTransport Edge</span> that these are the download folder and pattern to be used in <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel.
+-   Two new annotations `@RemoteDownloadPattern` and `@RemoteDownloadFolder` to notify {{< SecureTransport/securetransportedgename >}} that these are the download folder and pattern to be used in {{< SecureTransport/companyname >}} Sentinel.
 
-### <span style="background-color: #ffffff;">Connection interface implementation version 1.6</span>
+### 
 
-Connection interface version <span style="background-color: #ffffff;">1.6</span> includes all functionality, introduced in version 1.5. It also provides:
+Connection interface version includes all functionality, introduced in version 1.5. It also provides:
 
 -   Two new services - `TransferAttributesData` and `AccountAttributesData` that can be used for reading transfer and account-related attributes for the currently transferred file.
 
 <span id="Connecti"></span>
 
-### <span style="background-color: #ffffff;">Connection interface implementation version 1.7</span>
+### 
 
-Connection interface version <span style="background-color: #ffffff;">1.7</span> includes all functionality, introduced in version 1.6. It also provides:
+Connection interface version includes all functionality, introduced in version 1.6. It also provides:
 
 -   `SSLContextService`, which constructs `SSLContext`, `SSLSocketFactory` objects, to be used when connecting over secure connection to a remote partner.
 
@@ -402,18 +402,18 @@ Connection interface version <span style="background-color: #ffffff;">1.7</span>
 
 ### Connection interface implementation version 1.8
 
-Connection interface version <span style="background-color: #ffffff;">1.8</span> includes all functionality, introduced in version 1.7. It also provides:
+Connection interface version includes all functionality, introduced in version 1.7. It also provides:
 
 -   `StorageService`, which allows data storing and retrievement during the execution of Transfer Site methods.
 
 ## Exception handling
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will only retry the transfer by default if some of the Connection interface methods throw an `IOException` instance if there are retry attempts remaining. The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Pluggable Transfer Site SPI provides a special exception named `TransferFailedException`, which is of type `java.io.IOException`. This exception indicates a transfer failure; if the error is permanent (for example, an authentication failure) and is not expect to be resolved on retry, an `isPermanentFailure` flag should be raised. Otherwise, it should be left set to false, (for example, on connection timeout or any other transient error), allowing the transfer to succeed on the next retry. Generally, any exception caused by configuration or miss configuration is an exception that should not be retried. If an error occurs while implementing your Custom Connector, a `TransferFailedException` instance should be thrown with the flag set to indicate if the exception is permanent or temporary. There are two available constructors for instantiating `com.axway.st.plugins.site.TransferFailedException`:
+{{< SecureTransport/componentshortname  >}} will only retry the transfer by default if some of the Connection interface methods throw an `IOException` instance if there are retry attempts remaining. The {{< SecureTransport/componentshortname  >}} Pluggable Transfer Site SPI provides a special exception named `TransferFailedException`, which is of type `java.io.IOException`. This exception indicates a transfer failure; if the error is permanent (for example, an authentication failure) and is not expect to be resolved on retry, an `isPermanentFailure` flag should be raised. Otherwise, it should be left set to false, (for example, on connection timeout or any other transient error), allowing the transfer to succeed on the next retry. Generally, any exception caused by configuration or miss configuration is an exception that should not be retried. If an error occurs while implementing your Custom Connector, a `TransferFailedException` instance should be thrown with the flag set to indicate if the exception is permanent or temporary. There are two available constructors for instantiating `com.axway.st.plugins.site.TransferFailedException`:
 
 -   `public TransferFailedException(String message, Throwable cause);`
 -   `public TransferFailedException(String message, Throwable cause,  boolean isPermanentFailure);`
 
-The first one will set the `isPermanetFailure` flag to false and will force the SecureTransport to retry the transfer if retry attempts are available. The number of retries and the interval between retries for a transient failure of transfer can be configured by a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrator. For more information about configuring retry parameters for server-initiated transfers, refer to the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*.
+The first one will set the `isPermanetFailure` flag to false and will force the SecureTransport to retry the transfer if retry attempts are available. The number of retries and the interval between retries for a transient failure of transfer can be configured by a {{< SecureTransport/componentshortname  >}} administrator. For more information about configuring retry parameters for server-initiated transfers, refer to the *{{< SecureTransport/componentshortname  >}} Administrator's Guide*.
 
 > **Note:**
 >
@@ -421,9 +421,9 @@ The first one will set the `isPermanetFailure` flag to false and will force the 
 
 <span id="exposed"></span>
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> exposed services
+## {{< SecureTransport/componentshortname  >}} exposed services
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Pluggable Transfer Site SPI also exposes services from <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server that can be consumed by the Custom Connector implementation. The implementation can `@Inject` the service interface in its extension of `CustomSite` class and then consume the service via provided interface.
+The {{< SecureTransport/componentshortname  >}} Pluggable Transfer Site SPI also exposes services from {{< SecureTransport/componentshortname  >}} Server that can be consumed by the Custom Connector implementation. The implementation can `@Inject` the service interface in its extension of `CustomSite` class and then consume the service via provided interface.
 
 ### Certificate Service
 
@@ -461,11 +461,11 @@ The proxy service provides capabilities for:
 -   `boolean isRemoteDnsResolutionEnabled(String zoneName) throws NoSuchZoneException;`
 -   `String getPublicURLPrefix(String zoneName) throws NoSuchZoneException`
 
-The `getProxy` method of the proxy service will return a "`null`" object, if there is no proxy with the specified type defined in the selected DMZ zone. The specific custom connector implementation decides whether to use this proxy for the transfer or not.The default <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> zone is **Private**.
+The `getProxy` method of the proxy service will return a "`null`" object, if there is no proxy with the specified type defined in the selected DMZ zone. The specific custom connector implementation decides whether to use this proxy for the transfer or not.The default {{< SecureTransport/componentshortname  >}} zone is **Private**.
 
 <span id="SSL"></span>
 
-### <span style="background-color: #ffffff;">SSL Context Service</span>
+### 
 
 To use the SSL context service, declare a variable with `@Inject` annotation (`javax.inject.Inject`) to the interface of the certificate service provided in the API:
 
@@ -483,7 +483,7 @@ The SSL context service provides capabilities for:
 
 ### Logging Service
 
-You can use this service to log messages on different levels in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Log.
+You can use this service to log messages on different levels in the {{< SecureTransport/componentshortname  >}} Server Log.
 
 The log levels are DEBUG, INFO, WARN, ERROR and FATAL.
 
@@ -491,7 +491,7 @@ Every level has two methods: one with a logged message only and another with a l
 
 For more information, see the documentation for the associated methods.
 
-The logged message appears in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Log. It starts with the following pattern `[TRANSFER_SITE]:[plugin_name OR protocol_name]`.
+The logged message appears in the {{< SecureTransport/componentshortname  >}} Server Log. It starts with the following pattern `[TRANSFER_SITE]:[plugin_name OR protocol_name]`.
 
 For more information about the third-party libraries logging, see <a href="" class="MCXref xref">Third-party libraries logging</a>.
 
@@ -516,7 +516,7 @@ You can add additional information by calling the `append `method with the infor
 
 ### Command Logging Service
 
-The service provides protocol commands logging capabilities in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.To use the command logging service, declare а variable with `@Inject` annotation to the interface of the command logging service provided in the API:
+The service provides protocol commands logging capabilities in {{< SecureTransport/componentshortname  >}}.To use the command logging service, declare а variable with `@Inject` annotation to the interface of the command logging service provided in the API:
 
 
 
@@ -528,7 +528,7 @@ The basic capabilities of this service are:
 -   `void append(String command);` - appends the command to the buffer of commands.
 -   `List<String>``getProtocolCommands();` - gets the protocol commands.
 
-You can use the `append `method to log a single protocol command. You can call the `append `method multiple times. The logged protocol commands will appear in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Transfer Log as an ordinary protocol command.
+You can use the `append `method to log a single protocol command. You can call the `append `method multiple times. The logged protocol commands will appear in {{< SecureTransport/componentshortname  >}} Transfer Log as an ordinary protocol command.
 
 ### Flow Attributes Data service
 
@@ -573,7 +573,7 @@ According to the JSR specification for Expression Language symbol '`\`' escapes 
 
 After evaluation symbols '\\' are returned. Expression escaping is not supported. If the expression is not valid an `InvalidExpressionException` will be thrown.
 
-If you want to load in expression evaluator the evaluation context, use the `loadExpressionService` method and pass the evaluation context. This context will be accessible using the following variable `${plugin['<key>']}` or `${plugin.<key>}`, where `<key>` is existing key from the provided evaluation context. If `<key>` is one word, use `${plugin.<key>}` . Otherwise, use `${plugin['<key>']}`.  
+If you want to load in expression evaluator the evaluation context, use the `loadExpressionService` method and pass the evaluation context. This context will be accessible using the following variable `${['<key>']}` or `${plugin.<key>}`, where `<key>` is existing key from the provided evaluation context. If `<key>` is one word, use `${plugin.<key>}` . Otherwise, use `${plugin['<key>']}`.  
 
 You can use a collection of already built-in functions in expression evaluator. For a full list with examples about the built-in functions, see <a href="" class="MCXref xref">Expression language support</a>.
 

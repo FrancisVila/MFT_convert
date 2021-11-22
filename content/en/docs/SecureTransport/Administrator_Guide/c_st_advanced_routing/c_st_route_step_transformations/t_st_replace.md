@@ -187,11 +187,11 @@ The source file encoding must be configured. Configuring the output file encodin
 
 ### Source file encoding
 
-Encoding of the file that will be transformed specified by the name of a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supported character set. The **Source file encoding:** field has an auto-complete function that lists matching <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supported character sets.
+Encoding of the file that will be transformed specified by the name of a {{< SecureTransport/componentshortname  >}} supported character set. The **Source file encoding:** field has an auto-complete function that lists matching {{< SecureTransport/componentshortname  >}} supported character sets.
 
 ### Output file encoding
 
-Encoding of the file that will be produced specified by the name of a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supported character set. The **Output file encoding:** field has an auto-complete function that lists matching <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supported character sets.
+Encoding of the file that will be produced specified by the name of a {{< SecureTransport/componentshortname  >}} supported character set. The **Output file encoding:** field has an auto-complete function that lists matching {{< SecureTransport/componentshortname  >}} supported character sets.
 
 <span id="Post"></span>
 

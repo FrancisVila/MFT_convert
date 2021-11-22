@@ -2,7 +2,7 @@
     "title": "TM server communication rules",
     "linkTitle": "TM server communication rules",
     "weight": "330"
-}Network zones define the server ports that the TM Servers running on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers in the secure network connect to on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers running in the peripheral network (DMZ). See <a href="../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>.
+}Network zones define the server ports that the TM Servers running on {{< SecureTransport/componentshortname  >}} Servers in the secure network connect to on the {{< SecureTransport/componentshortname  >}} Edge servers running in the peripheral network (DMZ). See <a href="../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>.
 
 <table>
    <thead>
@@ -108,7 +108,7 @@ bound)         </td>
    </tbody>
 </table>
 
-Do not define these rules in a deployment with no <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. Define only the rules for the protocols you are using.
+Do not define these rules in a deployment with no {{< SecureTransport/componentshortname  >}} Edge. Define only the rules for the protocols you are using.
 
 Note that in SecureTransport Edge deployment, port 20444 (used by the Administration Tool server) must always be open.
 

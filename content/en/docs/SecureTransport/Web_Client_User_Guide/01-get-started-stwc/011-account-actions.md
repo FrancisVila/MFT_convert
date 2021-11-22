@@ -7,7 +7,7 @@
 -   Set preferences
 -   Reset password
 -   Set a secret question-answer pair
--   Reset your <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> password
+-   Reset your password
 -   View Accessibility controls
 -   View product version
 -   Log out
@@ -18,7 +18,7 @@ Click on the downward arrow button to open the menu with account settings and th
 
 ## Set preferences
 
-The Preferences allow you to change the language of <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>, as well as the transfer mode: Binary (recommended) vs. ASCII text (in some cases required for XML, HTML, or TXT files).
+The Preferences allow you to change the language of , as well as the transfer mode: Binary (recommended) vs. ASCII text (in some cases required for XML, HTML, or TXT files).
 
 Click **Save** to apply your changes.
 
@@ -46,15 +46,15 @@ When you are done, click **Save** to apply your changes. Your ST Web Client ses
 
 ## Accessibility
 
-Click **Accessibility** to view the keyboard controls for navigation and usage within the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>.
+Click **Accessibility** to view the keyboard controls for navigation and usage within the .
 
 ## About: ST Web Client version
 
-Click **About** to view the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> version you are using.
+Click **About** to view the version you are using.
 
-## Log out from <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>
+## Log out from
 
-Click **Logout** to end your log-in session and leave <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>.
+Click **Logout** to end your log-in session and leave .
 
  
 

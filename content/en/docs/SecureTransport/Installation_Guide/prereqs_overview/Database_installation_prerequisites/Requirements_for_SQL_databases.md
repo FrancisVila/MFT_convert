@@ -6,7 +6,7 @@
 
 -   The Microsoft SQL Server collation must be defined as case insensitive (SQL\_Latin1\_General\_CP1\_CI\_AS).
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can connect to an external Microsoft SQL Server database over a plain or secure connection.
+-   {{< SecureTransport/componentshortname >}} can connect to an external Microsoft SQL Server database over a plain or secure connection.
     Starting with SecureTransport 5.5-20201029, the external database server’s certificates that contain `keyUsage` extensions MUST also have the `digitalSignature` indicator enabled. This affects both secure and non-secure connections.
 
 -   The database must have the `READ_COMMITED_SNAPSHOT` option set to ON  
@@ -28,13 +28,13 @@
     >
     > You cannot direct log data to separate Microsoft SQL Server databases.
 
--   Two new filegroups needs to be created: `ST_FILETRACKING_ARCHIVE` and `ST_SERVERLOG_ARCHIVE`. They are used only if <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses Microsoft SQL Server Enterprise Edition, and transfer and log entry maintenance applications are configured to export data.
+-   Two new filegroups needs to be created: `ST_FILETRACKING_ARCHIVE` and `ST_SERVERLOG_ARCHIVE`. They are used only if {{< SecureTransport/componentshortname >}} uses Microsoft SQL Server Enterprise Edition, and transfer and log entry maintenance applications are configured to export data.
     Also, the database user needs write permissions on the export directory.
     The database user should be granted Backup database and Backup log permissions. Backup log permission is only required only if the database is configured in Full recovery model.
 
 -   The default filegroup for the database user must be `ST_DATA`.
 
--   The database must have a user defined that is mapped to the login that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will use to access the database.
+-   The database must have a user defined that is mapped to the login that {{< SecureTransport/componentshortname >}} will use to access the database.
 
 -   The authentication mode for the user must be Microsoft SQL Server Authentication.
 

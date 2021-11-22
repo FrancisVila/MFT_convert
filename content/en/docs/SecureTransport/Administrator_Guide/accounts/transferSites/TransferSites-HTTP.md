@@ -2,7 +2,7 @@
     "title": "HTTP(S) transfer sites",
     "linkTitle": "HTTP(S) transfer sites",
     "weight": "240"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server provides support for guaranteed delivery and restart for transfers using the HTTP protocol when the remote server is a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+}{{< SecureTransport/componentshortname  >}} Server provides support for guaranteed delivery and restart for transfers using the HTTP protocol when the remote server is a {{< SecureTransport/componentshortname  >}} Server.
 
 The *Add Transfer Site* page for HTTP(S) sites presents several sets of options.
 
@@ -44,8 +44,8 @@ The following table describes the general options for a HTTP(S) transfer site.
 <p>Visibility of this option is controlled with the value set for the TransferSite.AlternativeAddresses.retryPolicy configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in IP address: Port number pairs or hostname) you define on this screen. But before you are able to do so, you must go to Operations &gt; Server Configuration and set the policy type using either of the following values:</p>
 </blockquote>
 <ul>
-<li><code>AllHostsOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
-<li><code>OneHostOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>AllHostsOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>OneHostOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} tries to connect to the first endpoint in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, {{< SecureTransport/securetransportname  >}} will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
 <li><code>Disabled</code> (default) – this is the default value that keeps the table with endpoints entirely hidden from view.</li>
 </ul>         </td>
       </tr>
@@ -59,7 +59,7 @@ The following table describes the general options for a HTTP(S) transfer site.
          <td><p>The network zone that defines the proxies to use for transfers through this site.</p>
 <ul>
 <li>Select <strong>none</strong> to connect directly to the remote HTTP server.</li>
-<li>Select <strong>any</strong> to allow <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to select the proxy connection using a network zone that enables an HTTP proxy.</li>
+<li>Select <strong>any</strong> to allow {{< SecureTransport/componentshortname  >}} to select the proxy connection using a network zone that enables an HTTP proxy.</li>
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
@@ -109,7 +109,7 @@ The following table describes the general options for a HTTP(S) transfer site.
       </tr>
       <tr>
          <td>Transfer Mode         </td>
-         <td><p>Specify whether data is transferred as ASCII or binary. You can also choose to have <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> automatically determine the correct transfer mode.</p>
+         <td><p>Specify whether data is transferred as ASCII or binary. You can also choose to have {{< SecureTransport/componentshortname  >}} automatically determine the correct transfer mode.</p>
 <p>For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
       </tr>
       <tr>
@@ -214,7 +214,7 @@ The Receive options subtab allows you to define post transmission actions on fil
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
       <tr>
          <td>On Failure         </td>

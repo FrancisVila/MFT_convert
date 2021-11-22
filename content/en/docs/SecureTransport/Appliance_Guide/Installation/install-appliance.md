@@ -2,7 +2,7 @@
     "title": "Install the appliance",
     "linkTitle": "Install the virtual appliance",
     "weight": "70"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> is available as a 64-bit virtual appliance running SLES in the following format:
+}{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} is available as a 64-bit virtual appliance running SLES in the following format:
 
 -   **Appliance iso image file** – *SecureTransport\_5.5\_Install\_ap-x86-64\_&lt;BuildNumber>.zip*
 

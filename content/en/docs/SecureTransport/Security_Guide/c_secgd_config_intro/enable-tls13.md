@@ -6,7 +6,7 @@
 
 ## Enable TLSv1.3
 
-To enable TLSv1.3 in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, add "TLSv1.3" to the following configuration options:
+To enable TLSv1.3 in {{< SecureTransport/componentshortname  >}}, add "TLSv1.3" to the following configuration options:
 
 -   `Admin.Ssl.protocol`
 -   `As2.SIT.EnabledProtocols`

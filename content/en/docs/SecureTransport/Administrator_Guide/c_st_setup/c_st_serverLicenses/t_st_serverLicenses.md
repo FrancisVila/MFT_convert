@@ -2,7 +2,7 @@
     "title": "Updating SecureTransport licenses",
     "linkTitle": "Update SecureTransport licenses",
     "weight": "220"
-}To obtain the text files that contains the server licenses, contact <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
+}To obtain the text files that contains the server licenses, contact {{< SecureTransport/companyname  >}} Global Support. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
 
 1.  Select **Setup > Server License**.  
     The *Server License* page is displayed.
@@ -12,8 +12,8 @@
 4.  Copy and paste the entire contents of the Features License into the **Update License** text area.
 5.  Click **Update License**.  
     The updated license information is displayed on the *Server License* page.
-6.  Restart all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers that are running.  
-    The licenses for your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server are updated.
+6.  Restart all {{< SecureTransport/componentshortname >}} servers that are running.  
+    The licenses for your {{< SecureTransport/componentshortname >}} Server are updated.
 
 **Related topics:**
 

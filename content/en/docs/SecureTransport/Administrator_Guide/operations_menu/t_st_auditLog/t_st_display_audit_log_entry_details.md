@@ -5,7 +5,7 @@
 }Use the following procedure to display the details of an audit log entry.
 
 -   From the menu in the **Time** column, select **Details**.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> opens an *Object Detail* window that lists all attributes of the object at the time of the audit log entry with the attribute values.
+    {{< SecureTransport/componentshortname >}} opens an *Object Detail* window that lists all attributes of the object at the time of the audit log entry with the attribute values.
 
 **Related topics:**
 

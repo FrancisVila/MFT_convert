@@ -2,7 +2,7 @@
     "title": "Audit Log Maintenance application",
     "linkTitle": "Audit Log Maintenance application",
     "weight": "210"
-}An application of the built-in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application type Audit Log Maintenance deletes old audit log entries periodically and can export them to a file. By default, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has an Audit Log Maintenance application that runs at midnight on the first day of each month and deletes audit log entries that are six months old after saving them in a file in the `<FILEDRIVEHOME>/var/db/hist/audit-log` directory
+}An application of the built-in {{< SecureTransport/componentshortname  >}} application type Audit Log Maintenance deletes old audit log entries periodically and can export them to a file. By default, {{< SecureTransport/componentshortname  >}} has an Audit Log Maintenance application that runs at midnight on the first day of each month and deletes audit log entries that are six months old after saving them in a file in the `<FILEDRIVEHOME>/var/db/hist/audit-log` directory
 
 For more information, see <a href="../../../applications/applicationsauditlogmaintenance#top" class="MCXref xref">Audit Log Maintenance application</a>.
 

@@ -7,7 +7,7 @@
 -   AS2 Asynchronous Receipts
 -   FTP Passive Mode
 -   SOCKS Proxy configuration
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> plugins
+-   {{< SecureTransport/componentshortname >}} plugins
 
 ## AS2 Asynchronous Receipts
 
@@ -111,7 +111,7 @@ Note that mounting directory will override the contents of the plugins directory
     chmod 770 /tmp/plugins_folder
     docker run --rm --entrypoint '' -v /tmp/plugins_folder/:/tmp/plugins_folder securetransport-server:5.5 /bin/bash -c 'cp -R $ST_HOME/plugins /tmp/plugins_folder'
 
-## Supported <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> environment variables in containers
+## Supported {{< SecureTransport/componentshortname  >}} environment variables in containers
 
 <table>
    <thead>

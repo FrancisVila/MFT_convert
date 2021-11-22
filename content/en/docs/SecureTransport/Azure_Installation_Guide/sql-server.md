@@ -12,7 +12,7 @@ You will need the following components:
 4.  Two Windows Datacenter VMs (each placed in a different Availability Zone).  
     1.  Follow the steps for launching a VM instance with the following specifics:
         1.  Select a supported Windows Server for image.
-        2.  Select an appropriate size - for example <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> with D4\_V3 Standard size for VM instance.
+        2.  Select an appropriate size - for example {{< SecureTransport/componentshortname >}} with D4\_V3 Standard size for VM instance.
         3.  Configure Instance **Settings**-> **Subnet**.
         4.  Choose the respective private subnet in your VNet.
         5.  Configure Instance **Settings** -> **Public IP address:**

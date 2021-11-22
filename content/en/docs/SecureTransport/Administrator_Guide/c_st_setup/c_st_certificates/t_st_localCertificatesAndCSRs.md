@@ -4,7 +4,7 @@
     "weight": "120"
 }Use the *Certificate Management* page to generate local, self-issued server certificates or to generate certificate signing requests. Generated certificates are assigned RSA or DSA keys.
 
-A certificate signing request is an unsigned copy of a certificate that you submit to a CA when requesting a signed certificate. Based on the information in the CSR, the CA creates a new signed certificate for your use. After receiving the signed certificate from the CA, you must import it into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. For details, see <a href="#Import2" class="MCXref xref">Import a new certificate for a pending certificate signing request</a>.
+A certificate signing request is an unsigned copy of a certificate that you submit to a CA when requesting a signed certificate. Based on the information in the CSR, the CA creates a new signed certificate for your use. After receiving the signed certificate from the CA, you must import it into {{< SecureTransport/componentshortname  >}}. For details, see <a href="#Import2" class="MCXref xref">Import a new certificate for a pending certificate signing request</a>.
 
 The following topics describe and provide how-to instructions managing local certificates and certificate signing requests:
 
@@ -42,7 +42,7 @@ Use the following procedure to generate a self-issued server certificate.
 4.  Select **Self-issued Certificate**.
 5.  Type the required information for the self-issued certificate, including the fields that are displayed below the **Certificate Signing Request** option.  
     The alias name should contain only lower case letters, digits, and hyphens (`-`). It must be at most 80 characters long. If the alias name you type is already assigned to another certificate, you are prompted to overwrite the existing certificate or cancel the operation.  
-    You can overwrite any existing certificate including the default <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> `admind` server certificate.
+    You can overwrite any existing certificate including the default {{< SecureTransport/componentshortname >}} `admind` server certificate.
 6.  Click **Generate**.
 
 > **Note:**
@@ -64,7 +64,7 @@ A certificate signing request (CSR) is a request to an external CA to sign a cer
 6.  Click **Generate**.  
     A message is displayed that explains how to download the CSR and send it to your CA.
 
-The CSR is displayed in the list of Pending Local Certificates where it remains until you delete it or import the signed certificate you receive from the CA. You cannot use the new CA-signed certificate until you import it into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The CSR is displayed in the list of Pending Local Certificates where it remains until you delete it or import the signed certificate you receive from the CA. You cannot use the new CA-signed certificate until you import it into {{< SecureTransport/componentshortname  >}}.
 
 <span id="Import2"></span>
 
@@ -181,7 +181,7 @@ Use the following procedure to delete a local certificate.
 4.  Click **Delete**.
 5.  Confirm the deletion.
 
-Do not delete the certificate with the `admind` alias which is implicitly assigned to the Administration Tool server. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prevents you from deleting a certificate that is in use, for example, a server certificate configured as the SSL key alias the AS2, FTP, HTTP, or SSH server or configured as the repository encryption certificate.
+Do not delete the certificate with the `admind` alias which is implicitly assigned to the Administration Tool server. {{< SecureTransport/componentshortname  >}} prevents you from deleting a certificate that is in use, for example, a server certificate configured as the SSL key alias the AS2, FTP, HTTP, or SSH server or configured as the repository encryption certificate.
 
  
 

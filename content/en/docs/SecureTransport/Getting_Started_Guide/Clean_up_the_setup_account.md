@@ -2,7 +2,7 @@
     "title": "Clean up the setup account",
     "linkTitle": "Clean up the setup account",
     "weight": "120"
-}The initial configuration of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is now complete. As a final step, clean up the Setup account either by removing it or by changing the password. You can use the default administrator account for additional configuration tasks.
+}The initial configuration of {{< SecureTransport/componentshortname  >}} is now complete. As a final step, clean up the Setup account either by removing it or by changing the password. You can use the default administrator account for additional configuration tasks.
 
 1.  Log out of the Administration Tool.
 2.  Log in using the default user name, `admin` and default password `admin`.
@@ -13,7 +13,7 @@
 
 For the best security, change the default password of the `account`, `admin`, and `application` administrator accounts.
 
-For more information on the ****Accounts &gt; Administrators** ** settings, refer to the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+For more information on the ****Accounts &gt; Administrators** ** settings, refer to the .
 
 > **Note:**
 >

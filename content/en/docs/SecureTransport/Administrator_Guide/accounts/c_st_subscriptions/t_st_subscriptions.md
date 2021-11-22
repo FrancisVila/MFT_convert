@@ -252,7 +252,7 @@ If you specify an AS2 transfer site in the **Automatically Retrieve Files From**
 
 ## Human to System type application
 
-Use a subscription to a Human to System type application to specify email addresses that represent destinations for files sent in emails from ST Web Client or from an email client using one of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins. When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> receives an email for one of these addresses, it process the files sent as you specify in the *Package Routing Rules* list in the subscription. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> applies all the rules that match the email.
+Use a subscription to a Human to System type application to specify email addresses that represent destinations for files sent in emails from ST Web Client or from an email client using one of the {{< SecureTransport/companyname  >}} Email Plug-ins. When {{< SecureTransport/componentshortname  >}} receives an email for one of these addresses, it process the files sent as you specify in the *Package Routing Rules* list in the subscription. {{< SecureTransport/componentshortname  >}} applies all the rules that match the email.
 
 > **Note:**
 >
@@ -271,7 +271,7 @@ Use a subscription to a Human to System type application to specify email addres
 
 ## Scheduled downloads and tasks
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> scheduler feature allows you to schedule file downloads and tasks initiated by the server. You can schedule jobs in two ways, either per [subscription](#Set) or per [application](#ConfigureMaintSchedule). You can access the scheduler page by creating or editing any application or subscription with a transfer site that supports scheduled transfers. Only file downloads can be scheduled. REST API endpoints are also available for configuring scheduled tasks for applications and subscriptions.
+The {{< SecureTransport/componentshortname  >}} scheduler feature allows you to schedule file downloads and tasks initiated by the server. You can schedule jobs in two ways, either per [subscription](#Set) or per [application](#ConfigureMaintSchedule). You can access the scheduler page by creating or editing any application or subscription with a transfer site that supports scheduled transfers. Only file downloads can be scheduled. REST API endpoints are also available for configuring scheduled tasks for applications and subscriptions.
 
 When you create a scheduled transfer, for example, when creating a subscription connecting an account to an application where you are transferring files from a remote site or an internal system, you can set the following configuration options:
 

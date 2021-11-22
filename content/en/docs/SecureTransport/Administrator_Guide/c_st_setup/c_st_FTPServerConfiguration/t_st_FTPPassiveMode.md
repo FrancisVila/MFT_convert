@@ -2,7 +2,7 @@
     "title": "Set up FTP passive mode",
     "linkTitle": "Set up FTP passive mode",
     "weight": "130"
-}If an FTP client is behind a firewall that does not permit <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to open a data port as required by active mode FTP, you use the passive mode options to configure the FTP server to accept passive mode FTP connections. You specify a passive mode base port and a number of ports that can be used for passive mode. Make sure the ports are accessible through the firewall. Do not use these ports for any other service.
+}If an FTP client is behind a firewall that does not permit {{< SecureTransport/componentshortname  >}} to open a data port as required by active mode FTP, you use the passive mode options to configure the FTP server to accept passive mode FTP connections. You specify a passive mode base port and a number of ports that can be used for passive mode. Make sure the ports are accessible through the firewall. Do not use these ports for any other service.
 
 The base port represents the number of the first port available for the FTP server to use for a passive mode data connection. The number of ports specifies how many open ports to allocate. For example, the base port is set to 10000 and the number of ports is set to 1024, the FTP server can use only the ports from 10000 to 11023 for passive mode data connections.
 
@@ -11,7 +11,7 @@ Specify ports for five times the expected number of concurrent connections based
 -   If the port range is too small or equal to the number of expected number of connections, a port to connect might not be available when needed. The operating system does not release a port immediately after a user disconnects, so the free port does not become available for another connection immediately. This can result in a failure when a new connection is attempted.
 -   When most of the ports are used up and a new connection is attempted, the server scans for the next available port. This is resource intensive and can affect the performance of the server. With a large pool of ports, finding next available port is quicker and is less likely to affect the performance.
 
-You can also set up passive address rules, which allow the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server to respond with the external address of the firewall instead of the internal address of the server when a FTP client issues the `PASV` (passive mode) command.
+You can also set up passive address rules, which allow the {{< SecureTransport/componentshortname  >}} server to respond with the external address of the firewall instead of the internal address of the server when a FTP client issues the `PASV` (passive mode) command.
 
 1.  Select **Setup > FTP Settings** to open the *FTP Settings* page.
 2.  Under *FTP Passive Mode*:  
@@ -51,7 +51,7 @@ The following sections provide how-to instructions for adding and editing a pass
 When clients open passive mode sessions though a load balancer, a client communicating on the server assigned port might create a new session which opens a port on a different system than the originally contacted one. You can prevent this issue by configuring the load balancers and servers.
 
 -   Set the load balancer to use "session sticky" mode. This ensures that the data-channel connection goes to the same system that serviced the control-channel connection.
--   Make sure to set a passive-mode address rule on all the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge gateways or servers to return the external IP address of the load balancer in the response to the PASV command instead of the internal address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+-   Make sure to set a passive-mode address rule on all the {{< SecureTransport/componentshortname >}} Edge gateways or servers to return the external IP address of the load balancer in the response to the PASV command instead of the internal address of the {{< SecureTransport/componentshortname >}} Edge.
 
  
 

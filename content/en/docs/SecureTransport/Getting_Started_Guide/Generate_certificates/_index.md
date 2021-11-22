@@ -2,7 +2,7 @@
     "title": "Generate certificates",
     "linkTitle": "Generate certificates",
     "weight": "80"
-}Step 4 requires you to generate the server certificates that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses.
+}Step 4 requires you to generate the server certificates that {{< SecureTransport/componentshortname  >}} uses.
 
 Select **Configure &gt; 4-Generate Certs** to generate local, self-issued server certificates. Generated certificates are assigned RSA keys.
 
@@ -12,15 +12,15 @@ Select **Configure &gt; 4-Generate Certs** to generate local, self-issued server
 >
 > When you log in to the Administration Tool using the admin account, you can access this page by selecting Setup &gt; Certificates &gt; Local Certificates. To import a certificate, refer to the SecureTransport Administrator's Guide.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can use certificates for multiple purposes. For example, the FTPD certificate is commonly used for securing FTPS connections. Separate certificates and aliases can be used for each protocol. The httpd certificate is commonly signed by a public CA so that external users, especially those using a web browser to access the system, will trust the certificate. The other certificates are either internal to the product or only used by the Administrators; they can be signed by the internal CA. A temporary admind certificate is generated as part of the installation process so you can log in for initial setup.
+{{< SecureTransport/componentshortname  >}} can use certificates for multiple purposes. For example, the FTPD certificate is commonly used for securing FTPS connections. Separate certificates and aliases can be used for each protocol. The httpd certificate is commonly signed by a public CA so that external users, especially those using a web browser to access the system, will trust the certificate. The other certificates are either internal to the product or only used by the Administrators; they can be signed by the internal CA. A temporary admind certificate is generated as part of the installation process so you can log in for initial setup.
 
-To use a certificate signed by an external CA, refer to the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span> for information about the Import function.
+To use a certificate signed by an external CA, refer to the for information about the Import function.
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> certificates
+## {{< SecureTransport/componentshortname  >}} certificates
 
-The following tables list the certificates commonly used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, although the default <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration only requires that the `admind` and `mdn` certificates use those aliases.
+The following tables list the certificates commonly used with {{< SecureTransport/componentshortname  >}}, although the default {{< SecureTransport/componentshortname  >}} configuration only requires that the `admind` and `mdn` certificates use those aliases.
 
-For a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server installation, generate the following certificates as needed:
+For a {{< SecureTransport/componentshortname  >}} Server installation, generate the following certificates as needed:
 
 <table>
    <thead>
@@ -44,11 +44,11 @@ For a <span class="mc-variable axway_variables.Component_Short_Name variable">Se
       </tr>
       <tr>
          <td><code>mdn</code>         </td>
-         <td>A certificate used to sign the MDN receipts. The MDN alias must be named <code>mdn</code>. This certificate is not required to run <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. The <code>mdn</code> alias is used by the AS2 protocol for sending receipts. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> also generates MDN receipts for transfers for other protocols, but retains them locally and does not send the receipts to the customer.         </td>
+         <td>A certificate used to sign the MDN receipts. The MDN alias must be named <code>mdn</code>. This certificate is not required to run {{< SecureTransport/componentshortname  >}} Server. The <code>mdn</code> alias is used by the AS2 protocol for sending receipts. {{< SecureTransport/componentshortname  >}} also generates MDN receipts for transfers for other protocols, but retains them locally and does not send the receipts to the customer.         </td>
       </tr>
       <tr>
          <td><code>repencrypt </code>(or other)         </td>
-         <td>A certificate used to encrypt and decrypt <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> repository data. For more information, refer to the <span class="redirect_st_ag" data-cshid="admin" data-version="5.3.5"><em><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide</em></span>.         </td>
+         <td>A certificate used to encrypt and decrypt {{< SecureTransport/componentshortname  >}} repository data. For more information, refer to the .         </td>
       </tr>
       <tr>
          <td><code>streaming</code>         </td>
@@ -57,7 +57,7 @@ For a <span class="mc-variable axway_variables.Component_Short_Name variable">Se
    </tbody>
 </table>
 
-For a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge installation, generate the following certificates:
+For a {{< SecureTransport/componentshortname  >}} Edge installation, generate the following certificates:
 
 <table>
    <thead>
@@ -86,9 +86,9 @@ For a <span class="mc-variable axway_variables.Component_Short_Name variable">Se
    </tbody>
 </table>
 
-These certificates can be signed by the internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> CA, generated in the previous setup step. For more information, see <a href="../generate_or_import_ca" class="MCXref xref">Generate or import a certificate authority</a>.
+These certificates can be signed by the internal {{< SecureTransport/componentshortname  >}} CA, generated in the previous setup step. For more information, see <a href="../generate_or_import_ca" class="MCXref xref">Generate or import a certificate authority</a>.
 
-The following procedure is used to generate a self-issued certificate. For information about generating a Certificate Signing Request (CSR), refer to the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+The following procedure is used to generate a self-issued certificate. For information about generating a Certificate Signing Request (CSR), refer to the .
 
 1.  Select **Configure > 4-Generate Certs**.
 2.  Click **Generate** to create a certificate.  
@@ -110,7 +110,7 @@ The following procedure is used to generate a self-issued certificate. For infor
     -   **Country** – the name of the country where the certificate is located.
 
       
-    If you want to create a Certificate Signing Request (CSR), refer to the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span> for more information.
+    If you want to create a Certificate Signing Request (CSR), refer to the for more information.
 6.  Click **Generate**.
     1.  If you are generating a certificate with the same alias as an existing certificate, confirm that you want to overwrite the existing one.
     2.  (Optional) Select **Save backup of private key to file** if you want to save a copy of the private key.

@@ -28,7 +28,7 @@ Use the following procedure to add a user class.
     The *User Classes* page is displayed.
 2.  Click **New User Class**. A new line is displayed in the *User Classes List*.
 3.  In the **Class Name** field, enter the name for the user class to create.  
-    If the name is not unique, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses only the first user class with that name in the *User Class List*.
+    If the name is not unique, {{< SecureTransport/componentshortname >}} uses only the first user class with that name in the *User Class List*.
 4.  In the **User Type** field, select the predefined user type for the user class.
 5.  In the **User Name** field, enter one of the following:
     -   The user name, such as the UNIX-based system login name, the Windows user name, virtual user name, LDAP user name, SiteMinder, or Single Sign-On (SSO) user name.
@@ -80,9 +80,9 @@ Use the following procedure to edit a user class.
 
 ## Reorder user classes
 
-If a user belongs to multiple classes, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> categorizes the user as belonging to the first matching class in the *User Classes List*.
+If a user belongs to multiple classes, {{< SecureTransport/componentshortname  >}} categorizes the user as belonging to the first matching class in the *User Classes List*.
 
-If two or more user classes have the same name, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes only the first of those classes in the *User Classes List*.
+If two or more user classes have the same name, {{< SecureTransport/componentshortname  >}} processes only the first of those classes in the *User Classes List*.
 
 1.  Select **Access > User Classes**.  
     The *User Classes* page is displayed.
@@ -150,4 +150,4 @@ The following table summarizes the user classes and describes their functions.
    </tbody>
 </table>
 
-Because the default RealClass and VirtClass include all users, all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> users are in one of the four classes.
+Because the default RealClass and VirtClass include all users, all {{< SecureTransport/componentshortname  >}} users are in one of the four classes.

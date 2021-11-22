@@ -2,7 +2,7 @@
     "title": "Modify the view configuration",
     "linkTitle": "Modify the view configuration",
     "weight": "110"
-}The <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> has two views:
+}The has two views:
 
 -   File view
 -   Mailbox view

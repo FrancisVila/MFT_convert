@@ -4,7 +4,7 @@
     "weight": "90"
 }Before executing the setup steps, log into the Setup Administrator account. The Setup Administrator account is used for the initial, one-time configuration of the system.
 
-There are seven steps involved in configuring <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> for initial use. Complete the steps in the order listed to prevent conflicts.
+There are seven steps involved in configuring {{< SecureTransport/componentshortname  >}} for initial use. Complete the steps in the order listed to prevent conflicts.
 
 1.  **Install Licenses** – Install the core and feature licenses. This is the only step you perform on the second and subsequent servers in an Enterprise Cluster.
 2.  **Keystore Password** – Replace the default keystore password with one you create.
@@ -14,5 +14,5 @@ There are seven steps involved in configuring <span class="mc-variable axway_var
     You can import server certificates. The certificates can be signed by any trusted authority.
 5.  **Database Settings** - Select the internal database port and configure the internal database password or setup an external database.
 6.  **Set Up Servers**– Set up the HTTP, FTP, SSH, AS2, and PeSIT protocol servers, the Transaction Manager (TM) server, and the Database server.  
-    The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server also supports a proxy (SOCKS) setup.
-7.  **Exchange Certificates** – Export and import CAs from <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers.
+    The {{< SecureTransport/componentshortname >}} Edge server also supports a proxy (SOCKS) setup.
+7.  **Exchange Certificates** – Export and import CAs from {{< SecureTransport/componentshortname >}} Servers and {{< SecureTransport/componentshortname >}} Edge servers.

@@ -43,16 +43,16 @@
           </tr>
           <tr>
              <td><p>Create and Select</p>         </td>
-             <td>For connections initiated by a remote PeSIT server, the time in seconds that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> waits for a PeSIT F.CREATE or a F.SELECT command before <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> closes the connection.         </td>
+             <td>For connections initiated by a remote PeSIT server, the time in seconds that {{< SecureTransport/componentshortname  >}} waits for a PeSIT F.CREATE or a F.SELECT command before {{< SecureTransport/componentshortname  >}} closes the connection.         </td>
           </tr>
           <tr>
              <td><p>Inactivity</p>         </td>
-             <td><p>For connections initiated by a remote PeSIT server, the time in seconds that a connection may be inactive before <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> closes it.</p>
+             <td><p>For connections initiated by a remote PeSIT server, the time in seconds that a connection may be inactive before {{< SecureTransport/componentshortname  >}} closes it.</p>
     <p> </p>         </td>
           </tr>
           <tr>
              <td><p>Connection Release</p>         </td>
-             <td>For connections initiated by a remote PeSIT server, the time in seconds that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> waits for a response to a PeSIT F.RELEASE command before <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> closes it.         </td>
+             <td>For connections initiated by a remote PeSIT server, the time in seconds that {{< SecureTransport/componentshortname  >}} waits for a response to a PeSIT F.RELEASE command before {{< SecureTransport/componentshortname  >}} closes it.         </td>
           </tr>
        </tbody>
     </table>

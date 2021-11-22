@@ -2,7 +2,7 @@
     "title": "IP address and host name syntax",
     "linkTitle": "IP address and host name syntax",
     "weight": "280"
-}In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, you can specify a host address in any of the following formats:
+}In {{< SecureTransport/componentshortname  >}}, you can specify a host address in any of the following formats:
 
 -   Exact IPv4 or IPv6 address
 -   Range of address using Classless Inter-Domain Routing (CIDR) notation

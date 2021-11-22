@@ -4,7 +4,7 @@
     "weight": "180"
 }Although transfers use the AS2 protocol function in a different way than the other supported protocols, you can subscribe accounts with AS2 transfer sites to applications. Among the standard applications, the Site Mailbox and Standard Router applications are appropriate for an AS2 transfer site.
 
-Unlike transfer sites for other transfer protocols, an AS2 transfer site is also used for transfers initiated by the remote AS2 site (considered client-initiated by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>). Only the fields marked with an asterisk (`*`) as required are needed to define the partnership to enable these transfers.
+Unlike transfer sites for other transfer protocols, an AS2 transfer site is also used for transfers initiated by the remote AS2 site (considered client-initiated by {{< SecureTransport/componentshortname  >}}). Only the fields marked with an asterisk (`*`) as required are needed to define the partnership to enable these transfers.
 
 For detailed information about AS2 transfers, see <a href="../../../c_st_as2transfers#AS2Transfers_2029586111_1037189" class="MCXref xref">AS2 transfers</a>.
 
@@ -19,11 +19,11 @@ The following table describes the AS2 protocol options for defining a transfer s
    </thead>
    <tbody>
       <tr>
-         <td><strong><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Settings</strong>         </td>
+         <td><strong>{{< SecureTransport/componentshortname  >}} Server Settings</strong>         </td>
       </tr>
       <tr>
-         <td>AS2 Name<span style="color: #ff0000;">*</span>         </td>
-         <td><p>The local partnership name, which the remote AS2 site uses to identify to this <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Each AS2 transfer site for a user must have a unique AS2 Name.</p>
+         <td>AS2 Name         </td>
+         <td><p>The local partnership name, which the remote AS2 site uses to identify to this {{< SecureTransport/componentshortname  >}} Server. Each AS2 transfer site for a user must have a unique AS2 Name.</p>
 <p>You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
@@ -42,8 +42,8 @@ The following table describes the AS2 protocol options for defining a transfer s
          <td><strong>Remote Site Settings</strong>         </td>
       </tr>
       <tr>
-         <td>AS2 Name<span style="color: #ff0000;">*</span>         </td>
-         <td>The remote partnership name, which the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server uses to identify to the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>AS2 Name         </td>
+         <td>The remote partnership name, which the {{< SecureTransport/componentshortname  >}} Server uses to identify to the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>URL         </td>
@@ -59,8 +59,8 @@ The following table describes the AS2 protocol options for defining a transfer s
 </ul>
 <p>Visibility of this option is controlled with the value set for the <code>TransferSite.AlternativeAddresses.retryPolicy</code> configuration option. It allows you to set a "retry policy" with a list of alternative endpoints (presented in URLs with AS2 transfer sites) you define on this screen. But before you are able to do so, you must go to <strong>Operations &gt; Server Configuration</strong> and set the policy type using either of the following values:</p>
 <ul>
-<li><code>AllHostsOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
-<li><code>OneHostOnEachRetry</code> – with this policy <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> tries to connect to the first endpoint in the list. If connection not successful, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>AllHostsOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} iterates through each endpoint, one by one, starting with the first in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying each endpoint one after another until the maximum number of retries is reached. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
+<li><code>OneHostOnEachRetry</code> – with this policy {{< SecureTransport/securetransportname  >}} tries to connect to the first endpoint in the list. If connection not successful, {{< SecureTransport/securetransportname  >}} will continue trying that endpoint until the maximum number of retries is reached; and then will move to the next one in the list. Following that same pattern, {{< SecureTransport/securetransportname  >}} will try each endpoint until success; or until end of list. You can set the maximum retry value by editing the <code>EventQueue.maxRetryCount</code> configuration option.</li>
 <li><code>Disabled</code> (default) – this is the default value that keeps the table with endpoints entirely hidden from view.</li>
 </ul>         </td>
       </tr>
@@ -69,7 +69,7 @@ The following table describes the AS2 protocol options for defining a transfer s
          <td><p>The network zone that defines the proxies to use for transfers through this site.</p>
 <ul>
 <li>Select <strong>none</strong> to connect directly to the partner AS2 server.</li>
-<li>Select <strong>any</strong> to allow <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to select the proxy connection using a network zone that enables an HTTP proxy.</li>
+<li>Select <strong>any</strong> to allow {{< SecureTransport/componentshortname  >}} to select the proxy connection using a network zone that enables an HTTP proxy.</li>
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
@@ -91,10 +91,10 @@ The following table describes the AS2 protocol options for defining a transfer s
       </tr>
       <tr>
          <td>Email         </td>
-         <td>The email address used to receive information from <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The email address used to receive information from {{< SecureTransport/componentshortname  >}} Server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
-         <td>  <span style="color: #ff0000;">*</span> Each AS2 transfer site must have a unique combination of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server AS2 Name and Remote Site AS2 Name.         </td>
+         <td>  Each AS2 transfer site must have a unique combination of {{< SecureTransport/componentshortname  >}} Server AS2 Name and Remote Site AS2 Name.         </td>
       </tr>
    </tbody>
 </table>
@@ -198,7 +198,7 @@ The following table describes the Receive Options for an AS2 transfer site.
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td><p>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variable <code>${stenv.rawsource}</code> which takes the value from the <code>original filename</code> in the AS2 message header. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variables.</p>         </td>
+         <td><p>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.rawsource}</code> which takes the value from the <code>original filename</code> in the AS2 message header. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.</p>         </td>
       </tr>
       <tr>
          <td>Require SSL Connection         </td>

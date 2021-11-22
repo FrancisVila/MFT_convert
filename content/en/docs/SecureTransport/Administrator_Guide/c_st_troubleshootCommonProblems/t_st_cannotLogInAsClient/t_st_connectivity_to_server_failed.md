@@ -2,7 +2,7 @@
     "title": "Connectivity to server failed",
     "linkTitle": "Connectivity to server failed",
     "weight": "270"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge must be able to communicate with each other properly. Make sure that the following settings are configured correctly.
+}{{< SecureTransport/componentshortname  >}} Server and {{< SecureTransport/componentshortname  >}} Edge must be able to communicate with each other properly. Make sure that the following settings are configured correctly.
 
 -   **DNS Settings** – For details, see <a href="../../t_st_performanceissues/t_st_dns_settings#Appendix_Troubleshooting_4259246568_1030231" class="MCXref xref">DNS settings</a>.
 -   **Firewall** – For details, see <a href="../../../c_st_firewallsettings#Appendix_Firewall_Settings_3020346255_1032350" class="MCXref xref">Firewall settings</a>.

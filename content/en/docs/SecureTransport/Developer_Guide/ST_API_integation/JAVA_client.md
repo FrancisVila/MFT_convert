@@ -33,9 +33,9 @@ There is a test in the `io.swagger.client.api` package that shows a general usag
 >
 > Missing libraries can be acquired by importing the code into a maven project.
 
-## Configuring the code for <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> API in API Gateway
+## Configuring the code for {{< SecureTransport/securetransportname  >}} API in API Gateway
 
-The API Gateway trust and authentication must be configured for the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> API in API Gateway.
+The API Gateway trust and authentication must be configured for the {{< SecureTransport/securetransportname  >}} API in API Gateway.
 
 ### API Gateway trust
 
@@ -84,7 +84,7 @@ Trusting the API Manager host can be done by providing a custom host verificati
 
 ### Authentication
 
-Authentication is completed by the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server , but API Gateway does not know what authentication method is being used and as a result the generated code assumes that there is no authentication. <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> REST API uses Basic HTTP authentication – username and password credentials. The Basic HTTP authentication has to be manually implemented in the code as follows:
+Authentication is completed by the {{< SecureTransport/securetransportname  >}} Server , but API Gateway does not know what authentication method is being used and as a result the generated code assumes that there is no authentication. {{< SecureTransport/securetransportname  >}} REST API uses Basic HTTP authentication – username and password credentials. The Basic HTTP authentication has to be manually implemented in the code as follows:
 
 1.  The `authentications` property in the `io.swagger.client.ApiClient` class has to contain the following mapping:  
     `"HTTPBasic" -> new HttpBasicAuth()`

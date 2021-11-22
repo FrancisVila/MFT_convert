@@ -2,9 +2,9 @@
     "title": "Cannot log in to SecureTransport Edge",
     "linkTitle": "Cannot log in to SecureTransport Edge",
     "weight": "310"
-}If you are unable to log in to a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, but you can log into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server directly, make sure that the Internal CA certificate matches the local certificates created for the protocol servers.
+}If you are unable to log in to a {{< SecureTransport/componentshortname  >}} Edge, but you can log into the {{< SecureTransport/componentshortname  >}} Server directly, make sure that the Internal CA certificate matches the local certificates created for the protocol servers.
 
-Also make sure that your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge have exchanged certificates as appropriate.
+Also make sure that your {{< SecureTransport/componentshortname  >}} Server and {{< SecureTransport/componentshortname  >}} Edge have exchanged certificates as appropriate.
 
 **Related topics:**
 

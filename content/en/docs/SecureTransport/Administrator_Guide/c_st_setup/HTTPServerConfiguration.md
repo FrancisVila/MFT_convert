@@ -2,7 +2,7 @@
     "title": "Configure HTTP server messages ",
     "linkTitle": "Configure HTTP server messages",
     "weight": "100"
-}Use the *HTTP Settings* page to enable and disable HTTP server messages and to configure the Message of the Day functionality. HTTP server messages are displayed to both licensed and unlicensed users after login using the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>. You can use these messages as notifications, for example, announce dates for planned maintenance. The message text is presented in a pop-up box with a **Do not show again** checkbox and an **OK** button.
+}Use the *HTTP Settings* page to enable and disable HTTP server messages and to configure the Message of the Day functionality. HTTP server messages are displayed to both licensed and unlicensed users after login using the . You can use these messages as notifications, for example, announce dates for planned maintenance. The message text is presented in a pop-up box with a **Do not show again** checkbox and an **OK** button.
 
 The Message of the Day pop-up behavior depends on the current selection of the **Do not show again** checkbox:
 

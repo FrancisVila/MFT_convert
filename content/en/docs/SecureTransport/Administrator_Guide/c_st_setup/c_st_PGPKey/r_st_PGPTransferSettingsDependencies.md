@@ -20,7 +20,7 @@
          <td>Signed only         </td>
          <td>ON         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption and verification.         </td>
          <td>Decryption fails, because the file is not encrypted, and therefore no verification is performed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -28,7 +28,7 @@
          <td>Encrypted only         </td>
          <td>ON         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption and verification.         </td>
          <td>Decryption is successful, but verification fails, because the file is not signed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -36,7 +36,7 @@
          <td>Signed and Encrypted         </td>
          <td>ON         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption and verification.         </td>
          <td>Decryption and verification are successful, and the signature is removed.         </td>
          <td>Successful         </td>
       </tr>
@@ -44,7 +44,7 @@
          <td>Plain text         </td>
          <td>ON         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption and verification.         </td>
          <td>Decryption fails because the file is not encrypted, and no verification is performed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -52,7 +52,7 @@
          <td>Signed only         </td>
          <td>ON         </td>
          <td>OFF         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption without verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption without verification.         </td>
          <td>Decryption fails because the file is not encrypted, and no verification is performed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -60,7 +60,7 @@
          <td>Encrypted only         </td>
          <td>ON         </td>
          <td>OFF         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption without verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption without verification.         </td>
          <td>Decryption is successful, and no verification is performed.         </td>
          <td>Successful         </td>
       </tr>
@@ -68,7 +68,7 @@
          <td>Signed and Encrypted         </td>
          <td>ON         </td>
          <td>OFF         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption without verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption without verification.         </td>
          <td>Decryption is successful, and no verification is performed, but the signature is removed.         </td>
          <td>Successful         </td>
       </tr>
@@ -76,7 +76,7 @@
          <td>Plain text         </td>
          <td>ON         </td>
          <td>OFF         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption without verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption without verification.         </td>
          <td>Decryption fails because the file is not encrypted, and no verification is performed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -84,7 +84,7 @@
          <td>Signed only         </td>
          <td>OFF         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts verification without decryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts verification without decryption.         </td>
          <td>No decryption is performed. Verification is successful and the signature is removed.         </td>
          <td>Successful         </td>
       </tr>
@@ -92,7 +92,7 @@
          <td>Encrypted only         </td>
          <td>OFF         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption (to get to the signature) and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption (to get to the signature) and verification.         </td>
          <td>Decryption is successful, but verification fails, because the file is not signed.         </td>
          <td>Unsuccessful         </td>
       </tr>
@@ -100,7 +100,7 @@
          <td>Signed and Encrypted         </td>
          <td>OFF         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts decryption (to get to the signature) and verification.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts decryption (to get to the signature) and verification.         </td>
          <td>Decryption and verification are successful.         </td>
          <td>Successful         </td>
       </tr>
@@ -108,7 +108,7 @@
          <td>Plain text         </td>
          <td>OFF         </td>
          <td>ON         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts verification without decryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} attempts verification without decryption.         </td>
          <td>No decryption is performed. Verification fails because the file is not signed.         </td>
          <td>Unsuccessful         </td>
       </tr>

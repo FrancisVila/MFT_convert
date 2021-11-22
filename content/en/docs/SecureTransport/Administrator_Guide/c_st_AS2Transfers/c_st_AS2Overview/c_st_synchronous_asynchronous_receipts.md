@@ -12,7 +12,7 @@ When an asynchronous AS2-MDN is requested by the sender of an AS2 message, the s
 
 <img src="/Images/SecureTransport/AS2_SyncAndAsyncReceipts.png" class="maxWidth" alt="AS2 receipt" />
 
-<span class="autonumber"></span>AS2 receipt
+AS2 receipt
 
 **Related topics:**
 

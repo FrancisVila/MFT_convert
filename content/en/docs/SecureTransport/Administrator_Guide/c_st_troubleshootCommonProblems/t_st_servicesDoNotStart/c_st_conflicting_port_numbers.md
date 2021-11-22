@@ -2,7 +2,7 @@
     "title": "Conflicting port numbers",
     "linkTitle": "Conflicting port numbers",
     "weight": "260"
-}Make sure the port number assigned to the server is not in use elsewhere, such as the operating system SSH server using port 22. To check the port, open the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and select **Operations &gt; Server Control**. Verify that the ports assigned to the FTP Server, the HTTP server, the AS2 Server, the SSH server, and the PeSIT Server are not in use by other servers.
+}Make sure the port number assigned to the server is not in use elsewhere, such as the operating system SSH server using port 22. To check the port, open the {{< SecureTransport/componentshortname  >}} Administration Tool and select **Operations &gt; Server Control**. Verify that the ports assigned to the FTP Server, the HTTP server, the AS2 Server, the SSH server, and the PeSIT Server are not in use by other servers.
 
 **Related topics:**
 

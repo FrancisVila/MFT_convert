@@ -2,7 +2,7 @@
     "title": "Active/active and active/passive clustering",
     "linkTitle": "Active/active and active/passive clustering",
     "weight": "110"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports two types of clustering: active/active and active/passive.
+}{{< SecureTransport/componentshortname  >}} supports two types of clustering: active/active and active/passive.
 
 The following topics describe the active/active and active/passive clusters and processes:
 
@@ -17,11 +17,11 @@ The following topics describe the active/active and active/passive clusters and 
 
 ## Active/active clusters
 
-In an active/active cluster, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> balances the server-originating load between the primary and the secondary servers. All servers in the cluster are active and provide processing capacity. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> automatically replicates all event information collected by the primary server to the secondary servers. If the primary server fails, the cluster automatically switches control to the secondary server. An active/active cluster requires a third-party load-balancer. To prevent performance degradation if the primary server fails in an active/active cluster, the servers should have identical hardware.
+In an active/active cluster, {{< SecureTransport/componentshortname  >}} balances the server-originating load between the primary and the secondary servers. All servers in the cluster are active and provide processing capacity. {{< SecureTransport/componentshortname  >}} automatically replicates all event information collected by the primary server to the secondary servers. If the primary server fails, the cluster automatically switches control to the secondary server. An active/active cluster requires a third-party load-balancer. To prevent performance degradation if the primary server fails in an active/active cluster, the servers should have identical hardware.
 
 The main advantages of an active/active cluster are:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> automatically balances the load between the different servers in the cluster.
+-   {{< SecureTransport/componentshortname >}} automatically balances the load between the different servers in the cluster.
 -   The secondary servers are active. This means that they can assume the load from a failed secondary server or take over from a failed primary server almost immediately.
 
 However, to prevent performance problems, you must carefully monitor the load on an active/active cluster. An active/active cluster can suffer performance degradation when one server fails unless the remaining servers can handle the total workload for the cluster.
@@ -32,7 +32,7 @@ For more information, see <a href="../../c_st_standardclusterconfiguration/t_st_
 
 ## Active/passive clusters
 
-An active/passive cluster consists of one active server and one passive standby server with a third-party load-balancer to determine when failover is required for passive legacy and to send the users to the correct node. For passive, the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will failover on its own. To prevent performance degradation if the primary server fails in an active/passive cluster, the servers should have identical hardware.
+An active/passive cluster consists of one active server and one passive standby server with a third-party load-balancer to determine when failover is required for passive legacy and to send the users to the correct node. For passive, the {{< SecureTransport/componentshortname  >}} will failover on its own. To prevent performance degradation if the primary server fails in an active/passive cluster, the servers should have identical hardware.
 
 In an active/passive cluster, the primary server handles the event queue and processes events. While the primary server is active, the standby server remains in a passive state and does not process events. Depending on the server mode (set in the `Cluster.mode` server configuration parameter), an active/passive cluster has different features and advantages.
 
@@ -63,17 +63,17 @@ For more information, see <a href="../../c_st_standardclusterconfiguration/t_st_
 
 ## Active/passive deployment
 
-The following diagram shows a simple active/passive deployment with `passive` cluster mode and one <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server. On failover, the load balancer in the secure network redirects the connections from the internal clients and servers to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server 2 and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge directs the connection from the partner clients and servers to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server 2. For a description of the connections, see <a href="" class="MCXref xref">Streaming deployment</a>.
+The following diagram shows a simple active/passive deployment with `passive` cluster mode and one {{< SecureTransport/componentshortname  >}} Edge server. On failover, the load balancer in the secure network redirects the connections from the internal clients and servers to {{< SecureTransport/componentshortname  >}} Server 2 and the {{< SecureTransport/componentshortname  >}} Edge directs the connection from the partner clients and servers to {{< SecureTransport/componentshortname  >}} Server 2. For a description of the connections, see <a href="" class="MCXref xref">Streaming deployment</a>.
 
 <img src="/Images/SecureTransport/STDeployment_ActivePassive.png" class="maxWidth" alt="Active/passive deployment" />
 
-<span class="autonumber"></span>Active/passive deployment
+Active/passive deployment
 
 The diagram does not show the shared file system where the user home directories are located.
 
-The diagram does not show any unproxied connections or connections through HTTP proxy servers from the primary active <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or the secondary passive <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to the partner servers. For an illustrations of such a connection and more detail about connections in a streaming deployment, see <a href="#Streamin" class="MCXref xref">Streaming deployment</a>.
+The diagram does not show any unproxied connections or connections through HTTP proxy servers from the primary active {{< SecureTransport/componentshortname  >}} Server or the secondary passive {{< SecureTransport/componentshortname  >}} Server to the partner servers. For an illustrations of such a connection and more detail about connections in a streaming deployment, see <a href="#Streamin" class="MCXref xref">Streaming deployment</a>.
 
-To handle your file transfer load or to provide redundancy in case of failure, you can deploy more than one <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers in the DMZ. Because <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see <a href="../../../c_st_edge_sync#Edge" class="MCXref xref">SecureTransport Edge synchronization</a>. For a deployment diagram showing multiple <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server, see <a href="../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_large_enterprise_cluster_deployment" class="MCXref xref">Enterprise Cluster deployment</a>.
+To handle your file transfer load or to provide redundancy in case of failure, you can deploy more than one {{< SecureTransport/componentshortname  >}} Edge servers in the DMZ. Because {{< SecureTransport/componentshortname  >}} Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see <a href="../../../c_st_edge_sync#Edge" class="MCXref xref">SecureTransport Edge synchronization</a>. For a deployment diagram showing multiple {{< SecureTransport/componentshortname  >}} Edge server, see <a href="../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_large_enterprise_cluster_deployment" class="MCXref xref">Enterprise Cluster deployment</a>.
 
 <span id="Primary"></span>
 
@@ -90,7 +90,7 @@ The primary server hosts the following:
 
 ## Failover
 
-When a server in an active/active cluster fails, two events occur. First, any internal load balancer for the cluster detects the server outage and fails over incoming requests to another server and all protocols servers on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers detect the server outage and begin sending incoming requests to the TM Servers on the other <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers. In this case, the original client sessions are terminated and the clients must reestablish the sessions. Second, items in the event queue are reassigned from the failed server to other servers in the cluster.
+When a server in an active/active cluster fails, two events occur. First, any internal load balancer for the cluster detects the server outage and fails over incoming requests to another server and all protocols servers on {{< SecureTransport/componentshortname  >}} Edge servers detect the server outage and begin sending incoming requests to the TM Servers on the other {{< SecureTransport/componentshortname  >}} Servers. In this case, the original client sessions are terminated and the clients must reestablish the sessions. Second, items in the event queue are reassigned from the failed server to other servers in the cluster.
 
 When the primary server fails, one of the secondary servers is promoted to primary and the cluster continues processing messages. The secondary server promoted to primary status is determined by the order in which the server names are listed in the `<FILEDRIVEHOME>/lib/admin/config/servers` configuration file. The server listed just below the primary server in the file is considered the new primary server. When the cluster is synchronized, the state of the servers listed in the file are examined. If the first server in the servers list is online, it is reassigned as the new primary.
 

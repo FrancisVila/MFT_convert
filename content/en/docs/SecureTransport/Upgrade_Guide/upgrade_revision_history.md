@@ -6,12 +6,12 @@
 
   
 
-The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> Upgrade Guide:
+The following changes are added to the {{< SecureTransport/securetransportname  >}} {{< SecureTransport/componentversion  >}} Upgrade Guide:
 
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> version         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">{{< SecureTransport/securetransportname  >}} version         </th>
 <th class="HeadD-Column1-Header1">Topics updated         </th>
       </tr>
    </thead>

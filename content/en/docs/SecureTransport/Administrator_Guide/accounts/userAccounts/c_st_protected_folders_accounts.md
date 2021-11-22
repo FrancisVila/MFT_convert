@@ -2,11 +2,11 @@
     "title": "Protected folders and accounts",
     "linkTitle": "Protected folders and accounts",
     "weight": "260"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> maintains a list of directories which you should not use for home folders for user or service accounts. This type of directory is called a *protected folder*. Protected folders are identified by a specific prefix in the path. The following table lists the prefixes used by default.
+}{{< SecureTransport/componentshortname  >}} maintains a list of directories which you should not use for home folders for user or service accounts. This type of directory is called a *protected folder*. Protected folders are identified by a specific prefix in the path. The following table lists the prefixes used by default.
 
-Virtual accounts can be purged using <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, provided these accounts are not in a protected folder.
+Virtual accounts can be purged using {{< SecureTransport/componentshortname  >}}, provided these accounts are not in a protected folder.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides the following precautions that are built-in to prevent accidental or malicious account deletion:
+{{< SecureTransport/componentshortname  >}} provides the following precautions that are built-in to prevent accidental or malicious account deletion:
 
 -   Paths are converted to equivalent paths without any "." or ".." directories.
 -   The user home folder cannot directly, or indirectly through a symbolic link, refer to any of the protected directories.
@@ -22,7 +22,7 @@ Virtual accounts can be purged using <span class="mc-variable axway_variables.Co
    </thead>
    <tbody>
       <tr>
-         <td>AIX, Linux, <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Appliance         </td>
+         <td>AIX, Linux, {{< SecureTransport/companyname  >}} Appliance         </td>
          <td><code>/audit /bin /boot /dev /etc /kernel /lib /lpp /mnt /modules /net /opt /platform /proc /root /sbin /stand /sys /tftp /usr /var /vol</code>         </td>
       </tr>
       <tr>

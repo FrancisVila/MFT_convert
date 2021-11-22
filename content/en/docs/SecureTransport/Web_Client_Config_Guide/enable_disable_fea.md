@@ -2,7 +2,7 @@
     "title": "Enable and disable features",
     "linkTitle": "Enable and disable features",
     "weight": "60"
-}The features key in the `default.config.json` configuration file defines all the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> features that can be enabled or disabled by overriding them in the custom `stwebclient.config.json` configuration file.
+}The features key in the `default.config.json` configuration file defines all the features that can be enabled or disabled by overriding them in the custom `stwebclient.config.json` configuration file.
 
 The `default.config.json` file contains the following features:
 

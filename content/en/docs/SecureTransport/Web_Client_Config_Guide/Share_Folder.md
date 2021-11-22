@@ -2,7 +2,7 @@
     "title": "Manage folder sharing",
     "linkTitle": "Manage folder sharing",
     "weight": "180"
-}*Share Folder* is a feature. Its availability for end-users is controlled by the `SharedFolders.AllowCollaboration` configuration option in the <span class="mc-variable suite_variables.AdminConsole variable">Administration</span> tool. When it is set to `true`, *Share Folder* is enabled. When set to false, *Share Folder* is disabled and the **Share** button is not visible.
+}*Share Folder* is a feature. Its availability for end-users is controlled by the `SharedFolders.AllowCollaboration` configuration option in the {{< SecureTransport/adminconsole  >}} tool. When it is set to `true`, *Share Folder* is enabled. When set to false, *Share Folder* is disabled and the **Share** button is not visible.
 
 ## Disable Folder sharing from ST Web Client
 

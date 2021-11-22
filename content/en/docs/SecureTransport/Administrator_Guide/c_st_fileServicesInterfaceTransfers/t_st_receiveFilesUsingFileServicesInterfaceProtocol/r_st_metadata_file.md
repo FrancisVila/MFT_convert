@@ -24,26 +24,26 @@
          <td><code>RemoteSharePath</code>         </td>
          <td>Path to the shared directory on the remote system         </td>
          <td>Full path name         </td>
-         <td>Optional. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.         </td>
+         <td>Optional. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.         </td>
       </tr>
       <tr>
          <td><code>LocalSharePath</code>         </td>
-         <td>Path to the shared directory on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> system         </td>
+         <td>Path to the shared directory on the {{< SecureTransport/componentshortname  >}} system         </td>
          <td>Full path name         </td>
          <td><p>Optional.</p>
-<p>Optional for transfers to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.</p>         </td>
+<p>Optional for transfers to {{< SecureTransport/componentshortname  >}}. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.</p>         </td>
       </tr>
       <tr>
          <td><code>CycleID</code>         </td>
          <td>Processing cycle identifier for the file transfer         </td>
          <td>Any valid cycle ID         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses this cycle ID in events reported to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} uses this cycle ID in events reported to {{< SecureTransport/companyname  >}} Sentinel.         </td>
       </tr>
       <tr>
          <td><code>Protocol</code>         </td>
          <td>Name of a file services interface protocol         </td>
          <td>Any protocol defined in the file services interface protocol registry         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays the corresponding display name in Protocol column of the <em>File Tracking</em> page and in events it sends to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} displays the corresponding display name in Protocol column of the <em>File Tracking</em> page and in events it sends to {{< SecureTransport/companyname  >}} Sentinel.         </td>
       </tr>
       <tr>
          <td><code>Mode</code>         </td>
@@ -65,13 +65,13 @@
       </tr>
       <tr>
          <td><code>Name</code>         </td>
-         <td>Login name of a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> account to receive the file         </td>
+         <td>Login name of a {{< SecureTransport/componentshortname  >}} account to receive the file         </td>
          <td>Any existing account login name         </td>
          <td>          </td>
       </tr>
       <tr>
          <td><code>Path</code>         </td>
-         <td>Path to the directory where <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> copies the file, relative to the account home folder         </td>
+         <td>Path to the directory where {{< SecureTransport/componentshortname  >}} copies the file, relative to the account home folder         </td>
          <td>Path to any directory in the home folder of the named account         </td>
          <td>Optional. The default is the home folder of the account.         </td>
       </tr>

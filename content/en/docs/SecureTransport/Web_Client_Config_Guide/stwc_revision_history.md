@@ -9,7 +9,7 @@ The following changes are added to the SecureTransport 5.5 Web Client Configurat
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> version         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">{{< SecureTransport/securetransportname  >}} version         </th>
 <th class="HeadD-Column1-Header1">Topics updated         </th>
       </tr>
    </thead>

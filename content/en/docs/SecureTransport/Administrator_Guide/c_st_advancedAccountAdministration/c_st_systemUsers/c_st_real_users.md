@@ -8,7 +8,7 @@
 
 Real users are the users defined at the operating-system level. Access rights to the server file system for real users are based on the underlying operating system file access rights. Real users can be defined locally on the server (for instance, on a UNIX-based platform in `/etc/passwd`, or on Windows as a computer-specific local user) or on a network resource (NIS for UNIX or on a domain controller for Windows).
 
-Set a home folder for each real user to ensure that the user is not logged into a randomly-selected directory when logging in to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+Set a home folder for each real user to ensure that the user is not logged into a randomly-selected directory when logging in to {{< SecureTransport/componentshortname  >}}.
 
 > **Note:**
 >
@@ -49,4 +49,4 @@ For more information on Windows users, refer to the Microsoft documentation.
 >
 > The specified real user needs to added in a password vault file. For more information, refer to Add a user to a password vault.
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is running on a Windows platform, the *Password Files* page provides an additional option to specify password vaults. A password vault stores user names and passwords of real users on Windows, is used to mimic virtual users on Windows, and is applicable only for Windows. See <a href="../t_st_passwordfiles#top" class="MCXref xref">Manage password files</a>
+When {{< SecureTransport/componentshortname  >}} is running on a Windows platform, the *Password Files* page provides an additional option to specify password vaults. A password vault stores user names and passwords of real users on Windows, is used to mimic virtual users on Windows, and is applicable only for Windows. See <a href="../t_st_passwordfiles#top" class="MCXref xref">Manage password files</a>

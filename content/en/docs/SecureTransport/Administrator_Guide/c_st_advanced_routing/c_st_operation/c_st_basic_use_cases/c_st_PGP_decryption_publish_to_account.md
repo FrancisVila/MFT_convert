@@ -29,15 +29,15 @@ PGP decrypt each incoming file and publish the files to the local account.
 ## Prerequisites
 
 -   Create a Route Package Template. For instructions on creating a Route Package Template, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For instructions on creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance, refer to .
--   Create an user account in <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>. For instructions on creating an user account, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For instructions on creating an {{< SecureTransport/advancedrouting >}} application instance, refer to .
+-   Create an user account in {{< SecureTransport/securetransportname >}}. For instructions on creating an user account, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Generate or import a private PGP key which is used for decryption. For instructions on generating or importing a private PGP key, refer to <a href="../../../../accounts/c_st_usercertificates/t_st_usercertificates#Generate2" class="MCXref xref">Manage login certificates</a>or <a href="../../../../accounts/c_st_usercertificates/t_st_usercertificates#Import3" class="MCXref xref">Manage login certificates</a>.
 
 <span id="Steps"></span>
 
 ## Steps to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  (Optional) configure the rest of the settings.
     3.  Click **Add** when done.
@@ -65,8 +65,8 @@ PGP decrypt each incoming file and publish the files to the local account.
 
 ## Flow of events
 
-1.  A PGP encrypted file is uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-2.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers the route.
+1.  A PGP encrypted file is uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
+2.  The {{< SecureTransport/advancedrouting >}} application triggers the route.
 3.  The uploaded file is decrypted and published to the specified folder.
 
 > **Note:**

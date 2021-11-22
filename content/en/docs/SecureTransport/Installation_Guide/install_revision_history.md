@@ -6,19 +6,19 @@
 
   
 
-The following changes are added to the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> Installation Guide:
+The following changes are added to the {{< SecureTransport/securetransportname  >}} {{< SecureTransport/componentversion  >}} Installation Guide:
 
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> version         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">{{< SecureTransport/securetransportname  >}} version         </th>
 <th class="HeadD-Column1-Header1">Topics updated         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td>5.5 November 2021 Update         </td>
-         <td><p>The Silent Installation section is edited to provide detailed instructions on how to silently install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and examples of silent installation files:</p>
+         <td><p>The Silent Installation section is edited to provide detailed instructions on how to silently install {{< SecureTransport/componentshortname  >}} and examples of silent installation files:</p>
 <ul>
 <li><p><a href="../install_overview/silent-install-new" class="MCXref xref">Silent installation of SecureTransport</a></p></li>
 <li><p><a href="../install_overview/silent-install-new/silent-install-properties" class="MCXref xref">Configurable properties for silent installation</a></p></li>
@@ -40,7 +40,7 @@ The following changes are added to the <span class="mc-variable suite_variables.
       </tr>
       <tr>
          <td>5.5 August 2021 Update         </td>
-         <td><p>The following topics have been updated to reflect the ability of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to generate certificates for secure connection to MariaDB database:</p>
+         <td><p>The following topics have been updated to reflect the ability of {{< SecureTransport/componentshortname  >}} to generate certificates for secure connection to MariaDB database:</p>
 <ul>
 <li><a href="../prereqs_overview/database_installation_prerequisites/requirements_mariadb" class="MCXref xref">Requirements for secure connection to MariaDB database</a></li>
 <li><a href="../install_overview/installing_on_unix_based_platforms/installing_securetransport_embedded_db_unix" class="MCXref xref">Install SecureTransport on Unix with the embedded database</a></li>

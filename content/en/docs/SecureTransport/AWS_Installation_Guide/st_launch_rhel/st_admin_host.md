@@ -4,7 +4,7 @@
     "weight": "110"
 }The Administration Host is an instance of a virtual machine you launch in one of the public subnets in your VPC. You can use this machine to perform the following activities:
 
--   Perform <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installations on launched instances.
+-   Perform {{< SecureTransport/componentshortname >}} installations on launched instances.
 -   Add configurations on your launched instances.
 -   Perform maintenance and administration tasks on your instances.
 

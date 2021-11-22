@@ -2,11 +2,11 @@
     "title": "SecureTransport Edge checklists",
     "linkTitle": "SecureTransport Edge checklists",
     "weight": "70"
-}This section provides the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge checklists for root and non-root installations.
+}This section provides the {{< SecureTransport/componentshortname  >}} Edge checklists for root and non-root installations.
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge root installation checklist
+## {{< SecureTransport/componentshortname  >}} Edge root installation checklist
 
-The following items are needed for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge root installation configuration:
+The following items are needed for the {{< SecureTransport/componentshortname  >}} Edge root installation configuration:
 
 <table>
    <thead>
@@ -17,19 +17,19 @@ The following items are needed for the <span class="mc-variable axway_variables.
    </thead>
    <tbody>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge IP address         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Edge IP address         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server IP address or host name         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Server IP address or host name         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Core server license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge         </td>
+         <td>Core server license for {{< SecureTransport/componentshortname  >}} Edge         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Server feature license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge         </td>
+         <td>Server feature license for {{< SecureTransport/componentshortname  >}} Edge         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -169,9 +169,9 @@ port         </td>
 >
 > If port 22 is the default port for the operating system SSH service on your platform, to avoid conflicts change the port or disable the operating system service or choose a different port for SecureTransport SSH service. The default operating system SSH port for Axway appliances is 10022.
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge non-root installation checklist
+## {{< SecureTransport/componentshortname  >}} Edge non-root installation checklist
 
-The following items are needed for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge non-root installation configuration:
+The following items are needed for the {{< SecureTransport/componentshortname  >}} Edge non-root installation configuration:
 
 <table>
    <thead>
@@ -182,19 +182,19 @@ The following items are needed for the <span class="mc-variable axway_variables.
    </thead>
    <tbody>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge IP address         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Edge IP address         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server IP address or host name         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Server IP address or host name         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Core server license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge         </td>
+         <td>Core server license for {{< SecureTransport/componentshortname  >}} Edge         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Server feature license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge         </td>
+         <td>Server feature license for {{< SecureTransport/componentshortname  >}} Edge         </td>
          <td>          </td>
       </tr>
       <tr>

@@ -2,11 +2,11 @@
     "title": "Subscribe to Advanced Routing application",
     "linkTitle": "Subscribe to Advanced Routing application",
     "weight": "270"
-}To use <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> features, you must subscribe a user account or account template to an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application.
+}To use {{< SecureTransport/advancedrouting  >}} features, you must subscribe a user account or account template to an {{< SecureTransport/advancedrouting  >}} application.
 
 **Prerequisites**
 
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application. For instructions on creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application, see <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application. For instructions on creating an {{< SecureTransport/advancedrouting >}} application, see <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
 -   Create at least one transfer site for the selected user account. For instructions on creating a transfer site, see
     <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>
 -   Assign at least one route to the selected user account. For instructions on assigning a Route Template Package, see <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>.
@@ -23,7 +23,7 @@
 ## Select a user account
 
 1.  Select **Accounts > User Accounts**. The *User Accounts* page is displayed.
-2.  Click on the name of the account that you want to subscribe to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application.  
+2.  Click on the name of the account that you want to subscribe to the {{< SecureTransport/advancedrouting >}} application.  
     The *User Account Settings* page is displayed with details for the selected account.
 3.  Click the **Subscriptions** tab for the selected account.
 4.  Click **Subscribe**.  
@@ -111,7 +111,7 @@ In the *For Files Received from this Account or its Partners* pane:
 
 4.  (Optional) Enter the **Maximum number of parallel transfers**. If you enter a value greater than zero, SecureTransport executes only the specified number of transfers in parallel. If the value is null or zero, the maximum number of parallel transfers is limited by system capacity.  
     The maximum number of parallel transfers limit is applied cluster wide. The limit for files transferred from the client will not be exceeded. Due to limitations in Standard Cluster communication mode, the parallel pulls limit can be exceeded when there are several connections. If you want to force the limit, then the `force.standart.cluster.sit.pulls.sync=true` system property should be added to the `start_tm_console`. Adding the property to the `start_tm_console` has a performance penalty due to increased cluster communication.  
-    Note that the `force.standart.cluster.sit.transfers.sync` value overrides the value of the `force.standart.cluster.sit.pulls.sync` property, used in previous <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> versions for the same purposes.  
+    Note that the `force.standart.cluster.sit.transfers.sync` value overrides the value of the `force.standart.cluster.sit.pulls.sync` property, used in previous {{< SecureTransport/componentshortname >}} versions for the same purposes.  
 
 5.  (Optional) Click the **Retrieve Files Now** button to immediately trigger a one time file
     pull.  
@@ -143,7 +143,7 @@ In the *For Files Received from this Account or its Partners* pane:
     When **Files read from trigger file content** is selected, the panel expands with three options which determine what happens with the AR processing if there is a missing file listed in the trigger file:  
     -   If **Fail** is selected, the AR processing will fail.
     -   If **Continue** is selected, the AR processing will continue for the existing files.
-    -   If **Retry** is selected, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will retry to execute the trigger file. You need to specify the number of times it should retry and the delay between each attempt in seconds.
+    -   If **Retry** is selected, {{< SecureTransport/componentshortname >}} will retry to execute the trigger file. You need to specify the number of times it should retry and the delay between each attempt in seconds.
 
       
     If **Files matching specific filename pattern** is selected, the files matching the defined filename pattern will be processed.  
@@ -189,11 +189,11 @@ In the *Post Client Download Actions* pane:
 1.  In the *On Success* pane, select the action to take place for each successful client download.  
     If **No Action** is selected, no actions take place on the downloaded files.  
     If **Route** is selected, the selected route will be triggered. By default, the route will be triggered without the files that are being downloaded. Select **Submit the transferred file(s) to the route for processing** to perform transformations on the files that are being downloaded inside the selected route.  
-    If **Delete** is selected, after a file is successfully downloaded by the client, it is deleted from the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
+    If **Delete** is selected, after a file is successfully downloaded by the client, it is deleted from the {{< SecureTransport/advancedrouting >}} subscription folder.
 2.  In the *On Failure* pane, select the action to take place for each failed client download.  
     If **No Action** is selected, no actions take place on the files that failed downloading.  
     If **Route** is selected, the selected route will be triggered. By default, the route will be triggered without the files that are being downloaded. Select **Submit the transferred file(s) to the route for processing** to perform transformations on the files that are being downloaded inside the selected route.  
-    If **Delete** is selected, after a file download by the client fails, the file is deleted from the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
+    If **Delete** is selected, after a file download by the client fails, the file is deleted from the {{< SecureTransport/advancedrouting >}} subscription folder.
 
 ### Select the post routing actions
 
@@ -216,7 +216,7 @@ In the *Post Routing Settings* pane:
 
 ## Complete the subscription
 
-To complete the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription, click **Add**.
+To complete the {{< SecureTransport/advancedrouting  >}} subscription, click **Add**.
 
 **Related topics:**
 

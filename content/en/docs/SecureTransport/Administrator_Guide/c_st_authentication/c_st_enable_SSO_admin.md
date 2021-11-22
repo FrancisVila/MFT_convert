@@ -12,7 +12,7 @@
 
 Before configuring SSO for administrators, refer to <a href="../c_st_sso_configuration#Configur" class="MCXref xref">SecureTransport Single Sign-On (SSO) configuration prerequisites</a>.
 
-In order to configure SSO functionality for administrators, you need to update the `sso-admin.xml` file and remember that SSO authenticated administrators are only mapped to existing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrator accounts. For additional information, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account" class="MCXref xref">Add an administrator account</a>.
+In order to configure SSO functionality for administrators, you need to update the `sso-admin.xml` file and remember that SSO authenticated administrators are only mapped to existing {{< SecureTransport/componentshortname  >}} administrator accounts. For additional information, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account" class="MCXref xref">Add an administrator account</a>.
 
 > **Note:**
 >
@@ -82,4 +82,4 @@ Configure SSO for administrators using SAML-based Identity Providers:
 
 ## Single Sign-On (SSO) administrators configuration
 
-For more information about how to setup the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> administrators to use SSO, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.
+For more information about how to setup the {{< SecureTransport/securetransportname  >}} administrators to use SSO, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.

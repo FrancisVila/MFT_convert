@@ -36,11 +36,11 @@ Add the following code at the end of the file:
        <appender-ref ref="AgentLog" />
     </logger>
 
-This configuration creates the log file named `stx-agent.log` in the `<FILEDRIVEHOME>/SecureTransport/var/logs/` directory when <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is restarted.
+This configuration creates the log file named `stx-agent.log` in the `<FILEDRIVEHOME>/SecureTransport/var/logs/` directory when {{< SecureTransport/componentshortname  >}} is restarted.
 
-## Restart <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+## Restart {{< SecureTransport/componentshortname  >}}
 
-Use the following procedure to restart <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+Use the following procedure to restart {{< SecureTransport/componentshortname  >}}.
 
 1.  Go to `<FILEDRIVEHOME>/bin` and execute `./stop_all`.
 2.  When the prompt returns, execute `./start_all`.

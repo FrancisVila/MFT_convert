@@ -58,11 +58,11 @@ The following variables contain information used in package delivery failure not
 
 ## Additional attributes
 
-You can add custom attributes to several *objects* in <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> (for example *user accounts*, or *business units*, or *applications*) added as *custom properties* in the format of *key:value* parameters. Additional attributes are available with the following objects: user accounts, service accounts, unlicensed users, account templates, transfer sites, transfer profiles, business units, site templates, route packages, route package templates, login restriction policies, applications and certificates.
+You can add custom attributes to several *objects* in {{< SecureTransport/securetransportname  >}} (for example *user accounts*, or *business units*, or *applications*) added as *custom properties* in the format of *key:value* parameters. Additional attributes are available with the following objects: user accounts, service accounts, unlicensed users, account templates, transfer sites, transfer profiles, business units, site templates, route packages, route package templates, login restriction policies, applications and certificates.
 
 Additional attributes can be classified to ones pertinent to *accounts* and *account templates*, and all the others. The biggest difference is that you can use Expression Language (EL) with attributes for *accounts* and *account templates*, whereas this option is not available with all the others.
 
-In the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool, all attributes are defined using the prefix `userVars` (user variables).
+In the {{< SecureTransport/componentshortname  >}} Administration Tool, all attributes are defined using the prefix `userVars` (user variables).
 
 ### Additional attributes for Accounts and Account templates
 
@@ -142,7 +142,7 @@ You cannot use these in email templates and they are not available for use in EL
 
 #### Additional attributes of certificates
 
-With certificates, there is no UI in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool to create, edit or delete attributes. You can only set to use these with the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> admin REST API. See the [Swagger REST API documentation](#http://apidocs.axway.com/swagger-ui-st/admin-20/) for reference. While generally referring to certificates, these attributes are available for:
+With certificates, there is no UI in the {{< SecureTransport/componentshortname  >}} Administration Tool to create, edit or delete attributes. You can only set to use these with the {{< SecureTransport/componentshortname  >}} admin REST API. See the [Swagger REST API documentation](#http://apidocs.axway.com/swagger-ui-st/admin-20/) for reference. While generally referring to certificates, these attributes are available for:
 
 -   <a href="../../c_st_certificates/c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
 -   <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates" class="MCXref xref">Manage login certificates</a>

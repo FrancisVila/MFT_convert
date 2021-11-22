@@ -2,13 +2,13 @@
     "title": "What information is synchronized",
     "linkTitle": "What information is synchronized",
     "weight": "130"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+}{{< SecureTransport/componentshortname  >}}
 Edge synchronization moves configuration data from the primary
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server to all the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge secondary servers only. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not support moving
+{{< SecureTransport/componentshortname  >}} Edge server to all the {{< SecureTransport/componentshortname  >}} Edge secondary servers only. {{< SecureTransport/componentshortname  >}} does not support moving
 data from secondary servers to the primary server or from
 the primary server to selected secondary servers.
 
-The following information is synchronized dynamically from the primary <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server to the secondary <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers when you change it on the
+The following information is synchronized dynamically from the primary {{< SecureTransport/componentshortname  >}} Edge server to the secondary {{< SecureTransport/componentshortname  >}} Edge servers when you change it on the
 primary server:
 
 -   All server configuration parameters that are not local to the server

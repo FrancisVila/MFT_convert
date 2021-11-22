@@ -2,7 +2,7 @@
     "title": "Command line utilities",
     "linkTitle": "Command line utilities",
     "weight": "220"
-}The <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> Server includes several utility files that allow users to manually perform functions like installing a license file, stopping a server, and starting a server. These files are scripts on UNIX and batch files (`.bat`) on Windows. The utility files are located in the `<FILEDRIVEHOME>/bin` directory.
+}The {{< SecureTransport/componentlongname  >}} Server includes several utility files that allow users to manually perform functions like installing a license file, stopping a server, and starting a server. These files are scripts on UNIX and batch files (`.bat`) on Windows. The utility files are located in the `<FILEDRIVEHOME>/bin` directory.
 
 <a href="r_st_utilityfiles#AppCommandLineUtilities_1050989234_1010168" class="MCXref xref">Utility files</a> provides a summary of the utilities and their functions.
 

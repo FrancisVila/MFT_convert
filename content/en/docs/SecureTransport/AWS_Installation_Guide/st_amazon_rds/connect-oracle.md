@@ -2,7 +2,7 @@
     "title": "Connect and configure Oracle DB ",
     "linkTitle": "Connect and configure Oracle DB ",
     "weight": "100"
-}Follow these instructions if you will be using Oracle DB with your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment. If you will be using PostgreSQL, see <a href="../connect-postgre" class="MCXref xref">Connect and configure PostgreSQL</a>.
+}Follow these instructions if you will be using Oracle DB with your {{< SecureTransport/componentshortname  >}} deployment. If you will be using PostgreSQL, see <a href="../connect-postgre" class="MCXref xref">Connect and configure PostgreSQL</a>.
 
 ## Connect to your Oracle database
 

@@ -11,7 +11,7 @@ Managing rules packages consists of:
 -   Editing Rules Packages
 -   Importing and Exporting Rules Packages
 
-To work with rules, you must login to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool as a system administrator with the appropriate privileges and access the **Admin UI &gt; Setup &gt; TM Settings** page.
+To work with rules, you must login to the {{< SecureTransport/componentshortname  >}} Administration Tool as a system administrator with the appropriate privileges and access the **Admin UI &gt; Setup &gt; TM Settings** page.
 
 > **Note:**
 >
@@ -83,7 +83,7 @@ Use the following procedure to import a rules package.
 
 Rules packages are a collection of rules applicable to a business process. To create rules, you must first define a rules package.
 
-You must create rules packages externally and import them into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. For a detailed explanation of each step in this procedure, refer to the following topics.
+You must create rules packages externally and import them into the {{< SecureTransport/componentshortname  >}} Administration Tool. For a detailed explanation of each step in this procedure, refer to the following topics.
 
 1.  Create a rules package.
 2.  Add the arguments that need to be passed to the rule.
@@ -94,7 +94,7 @@ You must create rules packages externally and import them into the <span class="
 5.  Add an action to rule.  
     Actions specify agents that are triggered depending on the result of a condition. A condition can trigger in-process agents or external agents.
 6.  Save the rules package.
-7.  Import the rules package into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool as described in the above subtopic.
+7.  Import the rules package into the {{< SecureTransport/componentshortname >}} Administration Tool as described in the above subtopic.
 
 ## Edit a rules package
 

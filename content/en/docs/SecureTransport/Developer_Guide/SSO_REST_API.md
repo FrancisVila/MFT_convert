@@ -41,81 +41,7 @@ The following operating system and tools were used in this example:
     The Service Provider will return a SAML Request:  
 
 
-        <?xml version="1.0" encoding="UTF-8"?>
-        <soap11:Envelope xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/">
-          <soap11:Header>
-            <paos:Request xmlns:paos="urn:liberty:paos:2003-08" 
-        responseConsumerURL="<The Response Consumer URL>" 
-        service="urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp" 
-        soap11:actor="http://schemas.xmlsoap.org/soap/actor/next" 
-        soap11:mustUnderstand="1"/>
-            <ecp:Request xmlns:ecp="urn:oasis:names:tc:SAML:2.0:profiles:SSO:ecp" 
-        soap11:actor="http://schemas.xmlsoap.org/soap/actor/next" 
-        soap11:mustUnderstand="1">
-              <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"><The 
-        SAML Issuer></saml2:Issuer>
-            </ecp:Request>
-          </soap11:Header>
-          <soap11:Body>
-            <saml2p:AuthnRequest xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" 
-        Destination="<IDP ENDPOINT>" ForceAuthn="false" 
-        ID="id-30735cecb29da6728ca33a52b3428846550069245d37a43d3cf562ef5e7f21df-
-        1491497240411-b5e88519-3536-4294-b06f-df7deeec376a" IsPassive="false" 
-        IssueInstant="2017-04-06T16:47:20.431Z" 
-        ProtocolBinding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Version="2.0">
-              <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"><The 
-        SAML Issuer></saml2:Issuer>
-              <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
-                <ds:SignedInfo>
-                  <ds:CanonicalizationMethod 
-        Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-                  <ds:SignatureMethod 
-        Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
-                  <ds:Reference URI="#id-30735cecb29da6728ca33a52b3428846550069245d37
-        a43d3cf562ef5e7f21df-1491497240411-b5e88519-3536-4294-b06f-df7deeec376a">
-                    <ds:Transforms>
-                      <ds:Transform 
-        Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
-                      <ds:Transform 
-        Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
-                    </ds:Transforms>
-                    <ds:DigestMethod 
-        Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
-                    <ds:DigestValue/>
-                  </ds:Reference>
-                </ds:SignedInfo>
-                <ds:SignatureValue/>
-                <ds:KeyInfo>
-                  <ds:X509Data>
-                    <ds:X509Certificate>
-        MIIDtzCCAp+gAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBmTELMAkGA1UEAwwCY2ExCzAJBgNVBAYT 
-        AmNhMQswCQYDVQQKDAJjYTELMAkGA1UECwwCY2ExCzAJBgNVBAcMAmNhMQswCQYDVQQIDAJjYTFJ 
-        MEcGA1UEBRNANTU1MDQxZTZlZTcyMjY5OTRiZTQyMTI4YTE2ZjM5NjIwYWQ2OWEwZTFlNWFlYjY4 
-        NDQ1M2ZmNThjZTEyZDhlZTAeFw0xNzA0MDYxMjM5MzJaFw0xODA0MDYxMjM5MzJaMFIxDzANBgNV 
-        BAMMBnNzb2tleTELMAkGA1UEBhMCY2ExCzAJBgNVBAoMAmNhMQswCQYDVQQLDAJjYTELMAkGA1UE 
-        BwwCY2ExCzAJBgNVBAgMAmNhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2PIui/zG 
-        t6l2xm2uqhjdvFkJK1yELUKXYXbLI+uAQglgNfCfGg2qEmk6lulCytKu8UYB+4M4mkMlshwkxTQQ 
-        EUB+o5TATQKNrc6cT7PahdISnDF9AeGqpCr9OgndeMTFgA7LNAGBJZT/v5LgvvGiPbN/N31t9uEw 
-        jyFNFB6Ywpu0+9pBPfWb4++dske9b+leXS6N/nm3cyLRvYhggScnKcr+OU1AxQLJetKTWy7lDZcr 
-        jEGZiEsZc2pm8M5fFc0bUbaPvHjbqB2qNg9+nAVI2i0gHkUwFyd2cHER7p0HR9WdPOou+970SNCb 
-        SEDtF/yQ9Pk4HuzdVIAvxHX1IV4fWQIDAQABo1AwTjAMBgNVHRMBAf8EAjAAMB0GA1UdDgQWBBSo 
-        Srl4IyBmi053EURE3cN6YBgjozAfBgNVHSMEGDAWgBQnL3mdt9LybLMJRC8nrMcYi8NPgjANBgkq 
-        hkiG9w0BAQsFAAOCAQEAfL+GLxrULu3Qv6zzg7TeRZyikClgGVeEFn3rpckDov2aFKexvQq9ArsR 
-        CCygSvkfFS2EwvXrp9Q1i6prxDQB/cZJtQFdHYfxFT4nWFlmo28oMFWETzJnpMtANA/kt5WVg6Cb 
-        fR0+QZbC5gQhR4F2Pr/61CSzstm25YRHOhkEylqnLnxiil7dpJfntAYOrWqxdrlrmiGS/287H02v 
-        CAJWZ2em3jtSA1963Mi/ByvZZ1ZYUNNnzMwFnfEYFKdmJ4uEeTNc8+K6mjXZRZcoIwiT15v2rVwB 
-        cRm+iSo6mJw+Ah+zUASX+30tNj/+v75Y8NADzW6iS7ilfdmD7IKz27eLag==
-                   </ds:X509Certificate>
-                  </ds:X509Data>
-                </ds:KeyInfo>
-              </ds:Signature>
-              <saml2:Conditions 
-        xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" 
-        NotBefore="2017-04-06T16:47:20.431Z" 
-        NotOnOrAfter="2017-04-06T16:48:20.431Z"/>
-            </saml2p:AuthnRequest>
-          </soap11:Body>
-        </soap11:Envelope>
+
 
       
     We can save the Request in a temp file (`tmp.samlrequest`) and pass it as a parameter for the **POST** Request to the `IDP_ENDPOINT`:
@@ -353,7 +279,7 @@ After the logout is performed, the session and session cookies are expired.
 >
 > For logout , SecureTransport uses Redirect Bindings, so in order for the logout to work:
 
--   Single Logout (SLO) needs to be configured with **Redirect** binding. In the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SSO configuration, the **Redirect** binding must be before the **POST** binding.
+-   Single Logout (SLO) needs to be configured with **Redirect** binding. In the {{< SecureTransport/componentshortname >}} SSO configuration, the **Redirect** binding must be before the **POST** binding.
 -   The *Force POST Binding* option must be disabled for Keycloak.
 
 ### Login recap

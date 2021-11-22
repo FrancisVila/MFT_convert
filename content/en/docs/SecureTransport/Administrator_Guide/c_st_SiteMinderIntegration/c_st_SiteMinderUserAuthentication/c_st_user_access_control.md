@@ -2,9 +2,9 @@
     "title": "User access control (authorization)",
     "linkTitle": "User access control (authorization)",
     "weight": "170"
-}Regardless of the type of client, access control is always performed by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, which uses SiteMinder rules to obtain the user’s read/write authority to a particular resource. The SSO portal cannot perform access control for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> resources.
+}Regardless of the type of client, access control is always performed by {{< SecureTransport/componentshortname  >}}, which uses SiteMinder rules to obtain the user’s read/write authority to a particular resource. The SSO portal cannot perform access control for {{< SecureTransport/componentshortname  >}} resources.
 
-After a user is authenticated, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends an authorization request to SiteMinder to determine whether the user has read/write access to the requested resource. If SiteMinder grants the appropriate access level, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> proceeds with the file operation.
+After a user is authenticated, {{< SecureTransport/componentshortname  >}} sends an authorization request to SiteMinder to determine whether the user has read/write access to the requested resource. If SiteMinder grants the appropriate access level, {{< SecureTransport/componentshortname  >}} proceeds with the file operation.
 
 > **Note:**
 >
@@ -24,26 +24,26 @@ The following topics describe the SiteMinder authorization rules and provide an 
 
 ## SiteMinder authorization rules
 
-Configure the SiteMinder authorization rules to accommodate <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> authorization requests. A <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> authorization request contains the following elements:
+Configure the SiteMinder authorization rules to accommodate {{< SecureTransport/componentshortname  >}} authorization requests. A {{< SecureTransport/componentshortname  >}} authorization request contains the following elements:
 
--   **Resource Path** – The absolute URI of the resource being accessed by the user. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> determines the actual file path and uses that file path as the URI. This URI can be modified (section removed or prefix added) based on the **File Storage Root Path** and **SiteMinder Path Prefix** in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SiteMinder settings. (For details, see <a href="../../t_st_sitemindersecuretransportconfiguration#SiteMinder_3654860350_1021080" class="MCXref xref">Configure SiteMinder settings in SecureTransport</a>.) For Windows systems, backslashes (\\) in the file path are replaced with forward slashes (/) before the file path is modified as described above.
+-   **Resource Path** – The absolute URI of the resource being accessed by the user. {{< SecureTransport/componentshortname >}} determines the actual file path and uses that file path as the URI. This URI can be modified (section removed or prefix added) based on the **File Storage Root Path** and **SiteMinder Path Prefix** in the {{< SecureTransport/componentshortname >}} SiteMinder settings. (For details, see <a href="../../t_st_sitemindersecuretransportconfiguration#SiteMinder_3654860350_1021080" class="MCXref xref">Configure SiteMinder settings in SecureTransport</a>.) For Windows systems, backslashes (\\) in the file path are replaced with forward slashes (/) before the file path is modified as described above.
 -   **Command** – Either `GET` or `PUT` depending on whether the user is requesting a read or write operation.
 
 <span id="Example"></span>
 
 ## Example authorization request
 
-The following example shows how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> would construct an authorization request to SiteMinder.
+The following example shows how {{< SecureTransport/componentshortname  >}} would construct an authorization request to SiteMinder.
 
 Assume a user requests a listing for the following resource:
 
 `/mnt/data/SecureTransport/MyDirectory`
 
-If the **File Storage Root Path** (in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SiteMinder settings) is configured as:
+If the **File Storage Root Path** (in the {{< SecureTransport/componentshortname  >}} SiteMinder settings) is configured as:
 
 `/mnt/data/SecureTransport`
 
-and the **SiteMinder Path Prefix** (in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SiteMinder settings) is configured as:
+and the **SiteMinder Path Prefix** (in the {{< SecureTransport/componentshortname  >}} SiteMinder settings) is configured as:
 
 `/ST`
 
@@ -51,4 +51,4 @@ the authorization request for this file operation would be:
 
 `GET /ST/MyDirectory/`
 
-In this example, SiteMinder authorization rule would be configured to allow or deny the `GET` command to access the `/ST/MyDirectory/` resource. When SiteMinder is enabled, all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> users must have `GET` access to the path specified in the **SiteMinder Path Prefix** to successfully log in. If the **SiteMinder Path Prefix** setting is left blank, then users must have `GET` access to the / directory. The SiteMinder Policy Server must be set accordingly.
+In this example, SiteMinder authorization rule would be configured to allow or deny the `GET` command to access the `/ST/MyDirectory/` resource. When SiteMinder is enabled, all {{< SecureTransport/componentshortname  >}} users must have `GET` access to the path specified in the **SiteMinder Path Prefix** to successfully log in. If the **SiteMinder Path Prefix** setting is left blank, then users must have `GET` access to the / directory. The SiteMinder Policy Server must be set accordingly.

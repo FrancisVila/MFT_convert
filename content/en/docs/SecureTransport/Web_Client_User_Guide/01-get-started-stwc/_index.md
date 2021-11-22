@@ -25,16 +25,16 @@ To be able to access ST Web Client, you will need:
     -   Mozilla Firefox - latest version
     -   Apple Safari - latest version
     -   Google Chrome - latest version
--   a URL supplied to you by your company for ST Web Client connection to respective <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> service. This URL is usually in the format: `https://st.example.com:443`
+-   a URL supplied to you by your company for ST Web Client connection to respective {{< SecureTransport/componentshortname >}} service. This URL is usually in the format: `https://st.example.com:443`
 -   either a sign-in credentials (user ID and password) to the ST Web Client, or a specially produced certificate for your user. The credentials and / or certificates are issued and supplied to you by your company.
 
-After you have everything prepared, you can go on and sign in to the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>
+After you have everything prepared, you can go on and sign in to the
 
 <span id="Sign"></span>
 
-## Sign in to <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>
+## Sign in to
 
-You can sign in to <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> via user account credentials or via a certificate.
+You can sign in to via user account credentials or via a certificate.
 
 ### Sign in using account credentials
 
@@ -42,7 +42,7 @@ You can sign in to <span class="mc-variable SecureTransport_Variables.st_web_cli
 >
 > This functionality does not apply to SSO users.
 
-To sign in to ST Web Client, open the login <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> Sign-in page using the link supplied to you and enter the *User ID* and *Password* credentials (also supplied to you) and click the **Sign in** button. Your ST Web Client session is started.
+To sign in to ST Web Client, open the login Sign-in page using the link supplied to you and enter the *User ID* and *Password* credentials (also supplied to you) and click the **Sign in** button. Your ST Web Client session is started.
 
 **Note**: Some features and screens depend on server settings and may not be available. For further information, contact your administrator.
 
@@ -58,12 +58,12 @@ There is also a combined sign-in process that uses both methods: credentials and
 
 ## Get to know ST Web Client
 
-On your first sign-in session you will see the simple user interface of the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>. It present two major pages, accessible via the corresponding tab buttons: *Your Files* and *Mailbox*.
+On your first sign-in session you will see the simple user interface of the . It present two major pages, accessible via the corresponding tab buttons: *Your Files* and *Mailbox*.
 
 -   Your files - provides the controls necessary to create, view and share folders, including the ones shared with you.
 -   Mailbox - provides a basic security-oriented email web client.
 
-Simply put, <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> is about sharing folders and exchanging emails with other users. To facilitate these processes, your organization can prepare an Address Book with all your collaboration contacts. It comes useful for quick selection of contacts for exchanging emails and sharing folders.
+Simply put, is about sharing folders and exchanging emails with other users. To facilitate these processes, your organization can prepare an Address Book with all your collaboration contacts. It comes useful for quick selection of contacts for exchanging emails and sharing folders.
 
 ### *Your files* page
 
@@ -93,10 +93,10 @@ You can toggle your view format on both pages (*Your Files* or *Mailbox*) from l
 
 ### Account preferences menu
 
-Access the Welcome menu via the respective button on the top left corner. The menu allows you to set account-related configurations (like your secret question) and <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> preferences as well as log out of the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>.
+Access the Welcome menu via the respective button on the top left corner. The menu allows you to set account-related configurations (like your secret question) and preferences as well as log out of the .
 
 **Related topics**
 
 -   For information on folder sharing and sending of files, see [Manage folders and files](../02-manage_files_and_folders).
--   For information on email handling and management in the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>, see [Manage Mailbox](../03-manage_mail).
+-   For information on email handling and management in the , see [Manage Mailbox](../03-manage_mail).
 -   next topic: [Set secret question and account preferences](011-account-actions)

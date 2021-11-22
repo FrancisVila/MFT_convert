@@ -2,12 +2,12 @@
     "title": "Install security updates",
     "linkTitle": "Install security updates",
     "weight": "130"
-}To install security updates on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable">5.5</span> Virtual Appliance, run the following command:
+}To install security updates on {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} Virtual Appliance, run the following command:
 
 
     zypper up
 
-The first time you install a security update, you will be prompted to accept the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> GPG key:
+The first time you install a security update, you will be prompted to accept the {{< SecureTransport/companyname  >}} GPG key:
 
 New repository or package signing key received:
 

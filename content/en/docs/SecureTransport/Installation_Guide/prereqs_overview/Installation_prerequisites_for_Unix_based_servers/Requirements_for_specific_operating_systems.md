@@ -8,7 +8,7 @@
 
 ## AIX requirements
 
-Complete the following tasks before installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on IBM AIX.
+Complete the following tasks before installing {{< SecureTransport/componentshortname  >}} on IBM AIX.
 
 ### Increase file size limit
 
@@ -26,9 +26,9 @@ By default, a JFS filesystem created on AIX has a limit of 2 GB. For best result
 
 ### Check and set ARG\_MAX
 
-Before installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, ensure the `ARG_MAX` setting is correct. It must be at least 9. For best results, use 256 or higher, up to 1024.
+Before installing {{< SecureTransport/componentshortname  >}}, ensure the `ARG_MAX` setting is correct. It must be at least 9. For best results, use 256 or higher, up to 1024.
 
-1.  Check the <span class="prog_codeph">ARG\_MAX</span> setting by typing the following:
+1.  Check the `ARG_MAX` setting by typing the following:
 
         getconf ARG_MAX
 
@@ -46,7 +46,7 @@ For Enterprise Clustering, use the following commands to change the maximum bund
 
 ### Allow larger socket buffers
 
-For Enterprise Clustering, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server requires larger socket buffers than the default. Use the following commands to allow larger socket buffers:
+For Enterprise Clustering, {{< SecureTransport/componentshortname  >}} Server requires larger socket buffers than the default. Use the following commands to allow larger socket buffers:
 
 
 
@@ -66,17 +66,17 @@ If the output does not include `LC_CTYPE=en_US.UTF-8`, change the locale to `EN_
 
 ## Oracle Linux / RHEL / CentOS requirements
 
-The following tasks must be completed before installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on Oracle Linux, Red Hat Enterprise Linux or CentOS.
+The following tasks must be completed before installing {{< SecureTransport/componentshortname  >}} on Oracle Linux, Red Hat Enterprise Linux or CentOS.
 
 ### Install dependencies
 
-To install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on Oracle, RHEL, or CentOS systems, you need to install the following packages:
+To install {{< SecureTransport/componentshortname  >}} on Oracle, RHEL, or CentOS systems, you need to install the following packages:
 
 -   32-bit `glibc.i686` library package (provides `ld-linux.so.2`)
 -   32-bit `zlib` library package
 -   64-bit `libaio` library package
 
-In addition, the installation of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> with an embedded MariaDB or MySQL database requires the following dependencies:
+In addition, the installation of {{< SecureTransport/componentshortname  >}} with an embedded MariaDB or MySQL database requires the following dependencies:
 
 -   64-bit Perl interpreter required for RHEL 7/8, Oracle Linux 7/8, and CentOS 7/8
 -   Perl `Data::Dumper` module required for RHEL 7/8, Oracle Linux 7/8, and CentOS 7/8
@@ -85,7 +85,7 @@ In addition, the installation of <span class="mc-variable axway_variables.Compon
 
 ### Allow larger socket buffers
 
-For Enterprise Clustering, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server requires larger socket buffers than the default. Add the following lines to the `/etc/sysctl.conf` file to allow larger socket buffers:
+For Enterprise Clustering, {{< SecureTransport/componentshortname  >}} Server requires larger socket buffers than the default. Add the following lines to the `/etc/sysctl.conf` file to allow larger socket buffers:
 
 
     net.core.rmem_max=2096304
@@ -101,7 +101,7 @@ Then run the following command to apply the settings immediately:
 
 ### Increase the maximum number of file descriptors
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> requires more than the default number of file descriptors. Add the following line to the `/etc/sysctl.conf` file:
+{{< SecureTransport/componentshortname  >}} requires more than the default number of file descriptors. Add the following line to the `/etc/sysctl.conf` file:
 
 
     fs.file-max = 65536
@@ -119,7 +119,7 @@ The following tasks must be completed before installing SecureTransport on SUSE 
 
 -   Perform a Minimal System SLES installation. Do not install the X Window System.
 -   Install the following packages:
-    -   unzip <span style="font-family: Verdana;">(to unpack the installation package)</span>
+    -   unzip
     -   numactl
     -   which
     -   glibc-32bit

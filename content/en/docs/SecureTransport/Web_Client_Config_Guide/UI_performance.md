@@ -2,7 +2,7 @@
     "title": " UI performance settings ",
     "linkTitle": "UI performance settings ",
     "weight": "140"
-}The following code snippet shows the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> UI performance defaults:
+}The following code snippet shows the UI performance defaults:
 
 
     {

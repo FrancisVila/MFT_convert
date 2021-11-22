@@ -2,7 +2,7 @@
     "title": "Advanced protocol server configuration",
     "linkTitle": "Advanced protocol server configuration",
     "weight": "150"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.5 and later allows you to configure protocol servers using configuration files. The underlying concept is to supply unified daemon configuration by adding a dedicated start scripts configuration per server daemon.
+}{{< SecureTransport/componentshortname  >}} 5.5 and later allows you to configure protocol servers using configuration files. The underlying concept is to supply unified daemon configuration by adding a dedicated start scripts configuration per server daemon.
 
 > **Note:**
 >

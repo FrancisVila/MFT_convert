@@ -112,9 +112,9 @@ Run the following command:
 
     Device /dev/disk/by-id/dm-name-360014056e1d398a52894c8e99d7de877-part1 is initialized.
 
--   Use `-4` option to specify the <span class="Emphasis">msgwait</span> timeout. In the example above, it is set to 180 seconds.
+-   Use `-4` option to specify the timeout. In the example above, it is set to 180 seconds.
 
--   Use `-1` option to specify the <span class="Emphasis">watchdog</span> timeout. In the example above, it is set to 90 seconds. The minimum allowed value for the emulated watchdog is 15 seconds.
+-   Use `-1` option to specify the timeout. In the example above, it is set to 90 seconds. The minimum allowed value for the emulated watchdog is 15 seconds.
 
 -   You may use the following formula for timeout configuration:  
 
@@ -487,7 +487,7 @@ Run the following command:
 
     mkfs.ocfs2 successful
 
-For more information about <span class="HTMLCode_1">mkfs.ocfs2</span> options, refer to man page. Also see <span class="HTMLCode_1">man tunefs.ocfs2</span>.
+For more information about options, refer to man page. Also see .
 
 <span id="Mount"></span>
 
@@ -497,23 +497,22 @@ For more information about <span class="HTMLCode_1">mkfs.ocfs2</span> options, r
 
 
 
-        primitive ocfs2-1 ocf:heartbeat:Filesystem \
+
 
          
 
-        params device="/dev/disk/by-id/dm-name-360014056e1d398a52894c8e99d7de877-part2" directory="/sanmount" \ fstype="ocfs2" options="acl" \
+         
 
          
 
-        op monitor interval="20" timeout="40" \
+
 
          
 
-        op start timeout="60" op stop timeout="60" \
+
 
          
 
-        meta target-role="Started"
 
       
     Where `/dev/disk/by-id/dm-name-360014056e1d398a52894c8e99d7de877-part2` is your OCFS2 partition and `/sanmount` is directory where it should be mounted

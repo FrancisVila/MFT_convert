@@ -2,26 +2,26 @@
     "title": "Set up a cluster",
     "linkTitle": "Set up a cluster",
     "weight": "140"
-}This is an overview of the steps required to create an Enterprise Cluster (EC). For the procedures to perform the server installation and initial configuration, refer to the <span class="redirect_st_inst" cshid="install" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Installation Guide*</span>.
+}This is an overview of the steps required to create an Enterprise Cluster (EC). For the procedures to perform the server installation and initial configuration, refer to the .
 
 > **Note:**
 >
 > If you use the ClusterAuto-Register IP/FQDN option during the installation of the SecureTransport Servers, the nodes of the cluster will be registered automatically. In this case, after completing step 4, you can directly proceed with step 9: you don't have to follow the steps 5 to 8.
 
 1.  Implement and test the network and computers for the cluster, including the shared database and shared file system.
-2.  Install the first <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.  
-    When you install the first <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, the installer creates the schema for the cluster in the shared database.
-3.  Install the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> licenses and perform the initial configuration for the first <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
-4.  Install the other <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers. Specify the same installation directory, specify usage of the existing database schema, and import the `taeh` file from the first Server.  
+2.  Install the first {{< SecureTransport/componentshortname >}} Server.  
+    When you install the first {{< SecureTransport/componentshortname >}} Server, the installer creates the schema for the cluster in the shared database.
+3.  Install the {{< SecureTransport/componentshortname >}} licenses and perform the initial configuration for the first {{< SecureTransport/componentshortname >}} Server.
+4.  Install the other {{< SecureTransport/componentshortname >}} Servers. Specify the same installation directory, specify usage of the existing database schema, and import the `taeh` file from the first Server.  
     **Note** The Admin service on the newly installed Server nodes starts after the installation; however it is not operational.  
-5.  Stop the Admin service on each newly-installed <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> node.
+5.  Stop the Admin service on each newly-installed {{< SecureTransport/componentshortname >}} node.
 6.  Stop all the protocol servers and services on all nodes except on the first SecureTransport Server. Make sure that only the Administration Tool service is running on that SecureTransport Server.
 7.  Log on to the Administration Tool on the running Server as the `admin` user, and add to the cluster each of the cluster nodes, including the one you are logged on to. For details, see <a href="../t_st_add_server_to_cluster#Large_Enterprise_Clustering_2746683174_1077923" class="MCXref xref">Add a server to a cluster</a>.  
     **Note** Do not restart any other SecureTransport Server until it is added to the cluster.  
 8.  Start the Admin service on the newly-installed Secure Transport servers.
 9.  Install the SecureTransport licenses for the newly-installed SecureTransport Servers.  
     Do not perform the other steps of the initial configuration because the configuration is copied to the other servers when they are added to the cluster.
-10. Restart all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers.
+10. Restart all {{< SecureTransport/componentshortname >}} Servers.
 
 The Enterprise Cluster is now operational with its basic initial configuration.
 
@@ -29,8 +29,8 @@ The Enterprise Cluster is now operational with its basic initial configuration.
 
 Communication across SecureTransport Server nodes in an Enterprise Cluster can be encrypted using TLS. The certificate with the `admind` alias is used for the encryption.  
 
--   On fresh installation of the November 2020 <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable">5.5</span> build or later, TLS encrypted communication across SecureTransport Server nodes is applied by default.
--   If SecureTransport is upgraded to the November 2020 <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable">5.5</span> build or later from any previous version (for example, 5.4 latest patch or 5.5 GA), the Server nodes communication is not encrypted by default.
+-   On fresh installation of the November 2020 {{< SecureTransport/componentshortname >}} {{< SecureTransport/releasenumber >}} build or later, TLS encrypted communication across SecureTransport Server nodes is applied by default.
+-   If SecureTransport is upgraded to the November 2020 {{< SecureTransport/componentshortname >}} {{< SecureTransport/releasenumber >}} build or later from any previous version (for example, 5.4 latest patch or 5.5 GA), the Server nodes communication is not encrypted by default.
 
 You can modify this behavior using the `Cluster.enable.SSL` server configuration option.  
 

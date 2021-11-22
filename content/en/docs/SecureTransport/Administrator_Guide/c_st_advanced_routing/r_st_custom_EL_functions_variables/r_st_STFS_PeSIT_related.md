@@ -124,7 +124,7 @@
       <tr>
          <td><p>DXAGENT_PESIT_PI_finalDestinationID</p>         </td>
          <td><p>${stfs.attributes.pesitPIEnvVariables['DXAGENT_PESIT_PI_finalDestinationID']}</p>
-<p>${stfs.attributes['pesitPIEnvVariables']['DXAGENT_PESIT_PI_finalD<span class="code">e</span>stinationID']}</p>         </td>
+<p>${stfs.attributes['pesitPIEnvVariables']['DXAGENT_PESIT_PI_finalD<code>e</code>stinationID']}</p>         </td>
          <td><p>Provides the final destination identification parameter in the message body.</p>
 <p><em>Example:</em></p>
 <code>${stfs.attributes.pesitPIEnvVariables['DXAGENT_PESIT_PI_finalDestinationID'] eq null}</code>         </td>

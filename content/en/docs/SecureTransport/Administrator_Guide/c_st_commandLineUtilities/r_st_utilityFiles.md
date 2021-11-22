@@ -2,7 +2,7 @@
     "title": "Utility files",
     "linkTitle": "Utility files",
     "weight": "250"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> includes the utility files listed in the following table:
+}{{< SecureTransport/componentshortname  >}} includes the utility files listed in the following table:
 
 <table>
    <thead>
@@ -14,11 +14,11 @@
    <tbody>
       <tr>
          <td><p>bounce</p>         </td>
-         <td>Bounces the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> protocol servers. If run on a primary server of a cluster, it will also bounce all the secondary servers.         </td>
+         <td>Bounces the {{< SecureTransport/componentshortname  >}} protocol servers. If run on a primary server of a cluster, it will also bounce all the secondary servers.         </td>
       </tr>
       <tr>
          <td><p>collect_support_information</p>         </td>
-         <td>Collects information for <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support as specified on the <em>Support Tool Configuration</em> page.         </td>
+         <td>Collects information for {{< SecureTransport/companyname  >}} Global Support as specified on the <em>Support Tool Configuration</em> page.         </td>
       </tr>
       <tr>
          <td><p>gencsr</p>         </td>
@@ -34,7 +34,7 @@
       </tr>
       <tr>
          <td><p>repconv</p>         </td>
-         <td><p>Updates repository encryption by decrypting files encrypted in a previous version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and encrypting them for the current version. Can also change the cipher algorithm and certificate <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to encrypt files and decrypt files and folders.</p>
+         <td><p>Updates repository encryption by decrypting files encrypted in a previous version of {{< SecureTransport/componentshortname  >}} and encrypting them for the current version. Can also change the cipher algorithm and certificate {{< SecureTransport/componentshortname  >}} uses to encrypt files and decrypt files and folders.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>On Windows systems, the repconv tool cannot process files with special characters in their names (such as Japanese, Chinese, or Cyrillic characters).</p>
@@ -53,7 +53,7 @@
       </tr>
       <tr>
          <td><p>start_all</p>         </td>
-         <td>Starts all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers.         </td>
+         <td>Starts all {{< SecureTransport/componentshortname  >}} servers.         </td>
       </tr>
       <tr>
          <td><p>start_as2d</p>         </td>
@@ -92,7 +92,7 @@
       </tr>
       <tr>
          <td><p>stop_all</p>         </td>
-         <td>Stops all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers.         </td>
+         <td>Stops all {{< SecureTransport/componentshortname  >}} servers.         </td>
       </tr>
       <tr>
          <td><p>stop_as2d</p>         </td>

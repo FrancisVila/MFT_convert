@@ -2,11 +2,11 @@
     "title": "SecureTransport Edge Security Group",
     "linkTitle": "SecureTransport Edge Security Group",
     "weight": "100"
-}Allow inbound traffic according to the *Firewall rules* section as described in the <span class="span_3"><span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable" style="font-style: italic;">5.5</span> *Administrator's Guide*</span>.
+}Allow inbound traffic according to the *Firewall rules* section as described in the .
 
 **Inbound traffic** - this setup refers to traffic from the load balancer to the Edge serves.
 
--   The **Destination** is a comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Private IPs.
+-   The **Destination** is a comma separated list of {{< SecureTransport/componentshortname >}} Edge Private IPs.
 
 > **Note:**
 >
@@ -126,8 +126,8 @@
 
 **Streaming** – refers to traffic from the ST servers to the Edge serves.
 
--   The **Destination** is a comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Private IP addresses.
--   The **Source** is comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Private IP addresses.
+-   The **Destination** is a comma separated list of {{< SecureTransport/componentshortname >}} Edge Private IP addresses.
+-   The **Source** is comma separated list of {{< SecureTransport/componentshortname >}} Server Private IP addresses.
 
 <table>
          
@@ -194,7 +194,7 @@
 
 **Internal communication** – refers to traffic between the Edge serves and traffic from the Administration host.
 
--   The **Destination** is a comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Private IP addresses.
+-   The **Destination** is a comma separated list of {{< SecureTransport/componentshortname >}} Edge Private IP addresses.
 
 <table>
          

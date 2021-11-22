@@ -2,7 +2,7 @@
     "title": "Skipped transformation",
     "linkTitle": "Skipped transformation",
     "weight": "270"
-}The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> routes are configured:
+}The {{< SecureTransport/advancedrouting  >}} routes are configured:
 
 -   Route 1:
     -   Transformation 1: PGP Decryption where **Require Encryption** is not selected

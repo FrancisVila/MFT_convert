@@ -2,7 +2,7 @@
     "title": "FTP and HTTP server suspend options",
     "linkTitle": "FTP and HTTP server suspend options",
     "weight": "280"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides following two options for suspending the FTP and HTTP servers:
+}{{< SecureTransport/componentshortname  >}} provides following two options for suspending the FTP and HTTP servers:
 
 -   Specify a schedule to suspend the server.
 -   Suspend the server immediately.
@@ -30,7 +30,7 @@ Use the server suspension options to schedule a specific time of day for the ser
 2.  Select a format for the time of suspension and type the time for its occurrence. The following time format options are available:
     -   **at (HHMM)** – Schedule suspension at exact specified time.
     -   When defining an exact time, type the time in the HHMM format (a 2-digit hour followed by 2-digit minutes, based on a 24-hour clock) with no spaces or separators.
-    -   If you set a scheduled time to start suspension before the current system time, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> schedules the suspension for the next day. For example, if the current time is 1400 and a HHMM suspension time of 1330 is specified, the server is scheduled to suspend at 1:30 pm. on the next day.
+    -   If you set a scheduled time to start suspension before the current system time, {{< SecureTransport/componentshortname >}} schedules the suspension for the next day. For example, if the current time is 1400 and a HHMM suspension time of 1330 is specified, the server is scheduled to suspend at 1:30 pm. on the next day.
     -   **in (minutes)** – Schedule suspension after the specified number of minutes.
     -   **in (hours)** – Schedule suspension after the specified number of hours
 3.  Type the time, in minutes, when the server must refuse new FTP or HTTP connections before suspension.

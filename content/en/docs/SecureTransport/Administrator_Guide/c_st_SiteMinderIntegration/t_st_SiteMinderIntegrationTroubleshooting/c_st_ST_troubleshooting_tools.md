@@ -2,9 +2,9 @@
     "title": "SecureTransport troubleshooting tools",
     "linkTitle": "SecureTransport troubleshooting tools",
     "weight": "210"
-}If problems still exist after troubleshooting with the SiteMinder tools, use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> log files to try to ascertain the problem.
+}If problems still exist after troubleshooting with the SiteMinder tools, use the {{< SecureTransport/componentshortname  >}} log files to try to ascertain the problem.
 
-To use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> log files effectively to troubleshoot the SiteMinder integration issues, consider the following recommendations:
+To use the {{< SecureTransport/componentshortname  >}} log files effectively to troubleshoot the SiteMinder integration issues, consider the following recommendations:
 
 -   Increase the log level of `com.tumbleweed.st.server.siteminder` log generator in `<FILEDRIVEHOME>/conf/tm-log4j.xml` to `debug`. Increase the log levels of other log generators in this file as well.
 -   Increase all the log levels in &lt;`FILEDRIVEHOME>/conf/tm-log4j.xml` from `warn` to `debug`.

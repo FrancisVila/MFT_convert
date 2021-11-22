@@ -18,7 +18,7 @@ You can use the Clock and Time Zone menu for clustered machines. The time server
 2.  In the Clock and Time Zone panel, select a region. If you select **Global**, the Time Zone panel displays all possible time zones. If you select a different region, the Time Zone panel displays only time zones for that region.
 3.  In the Time Zone panel, select your time zone. Use the tab key to navigate between panels.
 4.  (optional) Display the correct local time. Type **Alt+H** to set the appliance hardware clock to UTC (Coordinated Universal Time.)
-5.  In the Date and Time panel, you can select <span class="span_4" style="font-weight: bold;">Change</span> to manually manage the date and time or to synchronize the date and time with the NTP Server.
+5.  In the Date and Time panel, you can select to manually manage the date and time or to synchronize the date and time with the NTP Server.
 6.  From the Clock and Time Zone menu, select **OK**.
 
 <span id="_Toc331683667"></span>

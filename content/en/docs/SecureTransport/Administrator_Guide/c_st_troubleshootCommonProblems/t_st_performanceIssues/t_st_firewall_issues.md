@@ -4,9 +4,9 @@
     "weight": "340"
 }To eliminate any possible firewall settings that can affect performance, check the following:
 
--   Make sure the ports <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses are set correctly. If your firewall uses passive mode, make sure that you are using Clear Command Channel (CCC) or Firewall Friendly mode.
+-   Make sure the ports {{< SecureTransport/componentshortname >}} uses are set correctly. If your firewall uses passive mode, make sure that you are using Clear Command Channel (CCC) or Firewall Friendly mode.
 -   Verify that no other applications are experiencing problems with the firewall.
--   The Transaction Manager has a timeout value that allows connections to close before the firewall can close them. Make sure the timeout setting in `<FILEDRIVEHOME>/brules/conf/brules.xml` on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server is a lower value than the timeout setting for the firewall. Look for the following setting in the Event Monitor element in the file:  
+-   The Transaction Manager has a timeout value that allows connections to close before the firewall can close them. Make sure the timeout setting in `<FILEDRIVEHOME>/brules/conf/brules.xml` on the {{< SecureTransport/componentshortname >}} Server is a lower value than the timeout setting for the firewall. Look for the following setting in the Event Monitor element in the file:  
     `<!-- single simple value, timeout in seconds -->`  
     `<client timeout="900"/>`  
     Change the setting to be smaller than the value of the firewall timeout.

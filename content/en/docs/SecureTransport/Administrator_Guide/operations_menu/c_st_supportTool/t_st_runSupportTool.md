@@ -14,14 +14,14 @@ To write the support information file to a different directory from the one spec
 
 If the output directory does not exist, the support tool creates it.
 
-The support tool can run when the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database in not available, but it cannot collect the following information that is stored in the database:
+The support tool can run when the {{< SecureTransport/componentshortname  >}} database in not available, but it cannot collect the following information that is stored in the database:
 
 -   Server log
 -   File tracking
 -   Audit log
 -   Server configuration
 
-During execution, the support tool outputs status messages and a final message that path name of the support information file. You can use <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to push the file to another location.
+During execution, the support tool outputs status messages and a final message that path name of the support information file. You can use {{< SecureTransport/componentshortname  >}} to push the file to another location.
 
 > **Note:**
 >
@@ -34,15 +34,15 @@ During execution, the support tool outputs status messages and a final message t
 
 ## Run the support tool automatically when the TM runs out of memory
 
-You can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to run the support tool automatically when the Transaction Manager (TM) fails with an `OutOfMemoryError`. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> runs the support tool before it restarts the TM.
+You can configure {{< SecureTransport/componentshortname  >}} to run the support tool automatically when the Transaction Manager (TM) fails with an `OutOfMemoryError`. {{< SecureTransport/componentshortname  >}} runs the support tool before it restarts the TM.
 
 1.  Edit the `<FILEDRIVEHOME>/bin/crash_tm` file and comment out a line so that it is:  
     `# collect_crash_info="false"`
 2.  If **Collect TM heap dump** is selected on the *Support Tool Configuration* page, edit the `<FILEDRIVEHOME>/bin/start_tm_console` file and comment out a line so that it is:  
     `# disableHeapDumpOnOutOfMemoryError="true"`
-3.  Restart the Transaction Manager on all clustered <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers or all synchronized <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers using the `stop_tm` and `start_tm` commands in `<FILEDRIVEHOME>/bin`.
+3.  Restart the Transaction Manager on all clustered {{< SecureTransport/componentshortname >}} Servers or all synchronized {{< SecureTransport/componentshortname >}} Edge servers using the `stop_tm` and `start_tm` commands in `<FILEDRIVEHOME>/bin`.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> runs the support tool using the configuration from the *Support Tool Configuration* page.
+{{< SecureTransport/componentshortname  >}} runs the support tool using the configuration from the *Support Tool Configuration* page.
 
 > **Note:**
 >

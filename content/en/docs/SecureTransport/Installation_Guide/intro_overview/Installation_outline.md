@@ -2,9 +2,9 @@
     "title": "Installation outline",
     "linkTitle": "Installation outline",
     "weight": "70"
-}The following is a brief outline of the Windows <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation steps. For complete installation details and for appliance and UNIX installation steps, refer to <a href="../../install_overview" class="MCXref xref">Install SecureTransport</a> .
+}The following is a brief outline of the Windows {{< SecureTransport/componentshortname  >}} installation steps. For complete installation details and for appliance and UNIX installation steps, refer to <a href="../../install_overview" class="MCXref xref">Install SecureTransport</a> .
 
-1.  Download the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> software package file from [support.axway.com](https://support.axway.com/).
+1.  Download the {{< SecureTransport/componentshortname >}} software package file from [support.axway.com](https://support.axway.com/).
 
 2.  Copy the software package file into a temporary folder.
 
@@ -26,7 +26,7 @@
 
 9.  Select the module to install, **Server** or **Edge** and click **Next**.
 
-10. Accept the default or enter the **Installation Directory** of <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> and click **Next**.
+10. Accept the default or enter the **Installation Directory** of {{< SecureTransport/securetransportname >}} and click **Next**.
 
 11. Select the database to use.
 

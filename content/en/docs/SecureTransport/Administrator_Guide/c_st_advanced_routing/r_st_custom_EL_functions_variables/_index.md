@@ -2,7 +2,7 @@
     "title": "Custom Expression Language functions and variables",
     "linkTitle": "Custom Expression Language functions and variables",
     "weight": "240"
-}The following topics provide detailed lists of the custom Expression Language functions and variables that can be used within the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> file processing.
+}The following topics provide detailed lists of the custom Expression Language functions and variables that can be used within the {{< SecureTransport/advancedrouting  >}} file processing.
 
 -   <a href="r_st_session_related" class="MCXref xref">Session related EL for AR</a>
 -   <a href="r_st_predefined_el_functions" class="MCXref xref">Predefined EL functions for AR</a>

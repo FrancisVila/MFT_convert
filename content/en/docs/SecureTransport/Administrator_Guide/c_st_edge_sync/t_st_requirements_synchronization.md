@@ -5,8 +5,8 @@
 }Cluster synchronization requires the following:
 
 -   The `<FILEDRIVEHOME>/lib/admin/config/servers` configuration file is correct and
-    identical on all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers.
--   The `<FILEDRIVEHOME>/var/tmp/sentinel_primary` file exists on the primary <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+    identical on all {{< SecureTransport/componentshortname >}} Edge servers.
+-   The `<FILEDRIVEHOME>/var/tmp/sentinel_primary` file exists on the primary {{< SecureTransport/componentshortname >}}
     Edge only.
 -   A shared common secret file (named `taeh` file) is used on all servers.
 -   Each server is hosted on a different computer or VM.

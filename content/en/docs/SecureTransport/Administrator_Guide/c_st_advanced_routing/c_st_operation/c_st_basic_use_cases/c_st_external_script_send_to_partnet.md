@@ -29,10 +29,10 @@ Compress incoming files by leveraging an external script and publish the result 
 
 ## Prerequisites
 
--   Download and install 7zip on your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> machine.
+-   Download and install 7zip on your {{< SecureTransport/componentshortname >}} machine.
 -   Create a Route Package Template. For instructions on creating a Route Package Template, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For instructions on creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance, refer to .
--   Create a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user account. For instructions on creating an user account, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For instructions on creating an {{< SecureTransport/advancedrouting >}} application instance, refer to .
+-   Create a {{< SecureTransport/componentshortname >}} user account. For instructions on creating an user account, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 
 <span id="Step"></span>
 
@@ -41,8 +41,8 @@ Compress incoming files by leveraging an external script and publish the result 
 1.  Create a script with the following contents that uses 7zip to compress the incoming files.  
     1.  Modify the third line of the script and set the correct path to the *7z* executable.
     2.  Name the script `7zip-compress.sh`.
-    3.  Ensure the script is accessible by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. For this example, it needs to be deployed in the `/bin/agents` subfolder of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation folder.
-2.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+    3.  Ensure the script is accessible by {{< SecureTransport/componentshortname >}}. For this example, it needs to be deployed in the `/bin/agents` subfolder of the {{< SecureTransport/componentshortname >}} installation folder.
+2.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  To await multiple files, configure a condition (for example: trigger file) on which to submit the files to the route.
     3.  (Optional) Configure the rest of the settings.
@@ -113,9 +113,9 @@ Compress incoming files by leveraging an external script and publish the result 
 
 ## Flow of events
 
-1.  Multiple files are uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
+1.  Multiple files are uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
 2.  The trigger file (file with `.trigger` extension) is uploaded to the subscription folder.
-3.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers the route.
+3.  The {{< SecureTransport/advancedrouting >}} application triggers the route.
 4.  The uploaded files are compressed into a single 7zip archive and published to the subscription folder.
 
 > **Note:**

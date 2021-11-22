@@ -2,13 +2,13 @@
     "title": "Add and modify languages",
     "linkTitle": "Add and modify languages",
     "weight": "70"
-}The <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> is installed with some predefined languages. The translations for the predefined languages are located in the `C/locales` folder.
+}The is installed with some predefined languages. The translations for the predefined languages are located in the `C/locales` folder.
 
 Each translation has a language code folder which contains a JSON file with the translated labels. For example, the English translation is in the `C/locales/en/translation.json` file.
 
 ## Add a supported language
 
-The default translations that are part of <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> installation should not be altered. You cannot add new languages in the same location as the default ones. They must be added in the `custom` folder.
+The default translations that are part of installation should not be altered. You cannot add new languages in the same location as the default ones. They must be added in the `custom` folder.
 
 To add the Bulgarian language:
 
@@ -32,7 +32,7 @@ To add the Bulgarian language:
           ...
         }
 
-4.  Refresh the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> and open the *Preferences* pane. The new language should be present in the *Language* drop-down menu.
+4.  Refresh the and open the *Preferences* pane. The new language should be present in the *Language* drop-down menu.
 
 <span id="ModifyLanguage"></span>
 
@@ -64,4 +64,4 @@ To change the Welcome label to "Hello Mate:"
           ...
         }
 
-4.  Refresh the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>. The overridden label should be displayed.
+4.  Refresh the . The overridden label should be displayed.

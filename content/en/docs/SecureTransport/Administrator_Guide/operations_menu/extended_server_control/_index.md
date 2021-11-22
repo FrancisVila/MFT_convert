@@ -4,9 +4,9 @@
     "weight": "80"
 }**<a href="../" class="MCXref xref">Operations</a> &gt; Server Control**
 
-The *Server Control* page is the entry point for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrators on successful login. Here you view and manage all protocol servers, the TM server and the Monitor server of your system.
+The *Server Control* page is the entry point for {{< SecureTransport/componentshortname  >}} administrators on successful login. Here you view and manage all protocol servers, the TM server and the Monitor server of your system.
 
-Server control is available on both <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server and <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edge.
+Server control is available on both {{< SecureTransport/securetransportname  >}} Server and {{< SecureTransport/securetransportname  >}} Edge.
 
 In this topic you will learn about:
 
@@ -48,13 +48,13 @@ When you disable any of the component servers using the Administration Tool, the
 
 ## Server Control: Folder Monitor
 
-Folder Monitor is available only on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and is dependent on the value of the `FolderMonitor.enable` Server configuration option. Its dedicated pane allows you to see its *Status* and to *Start* the FM (when not running) or *Stop* the FM (when running).
+Folder Monitor is available only on {{< SecureTransport/componentshortname  >}} Server and is dependent on the value of the `FolderMonitor.enable` Server configuration option. Its dedicated pane allows you to see its *Status* and to *Start* the FM (when not running) or *Stop* the FM (when running).
 
 <span id="Server7"></span>
 
 ## Server Control: Scheduler
 
-Scheduler is available only on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and is dependent on the value of the `Scheduler.enable` Server configuration option.
+Scheduler is available only on {{< SecureTransport/componentshortname  >}} Server and is dependent on the value of the `Scheduler.enable` Server configuration option.
 Its dedicated pane allows you to see its *Status* and to *Start* theScheduler (when not running) or *Stop* the Scheduler (when running).
 
 > **Note:**
@@ -77,7 +77,7 @@ For more information, see <a href="../../c_st_setup/c_st_networkzones#SetupMenu_
 
 ## Server Control: Monitor server
 
-The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers are functional or not. Its dedicated pane allows you to see its *Status* and to *Start* the TM (when not running) or *Stop* the TM (when running).
+The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the {{< SecureTransport/componentshortname  >}} servers are functional or not. Its dedicated pane allows you to see its *Status* and to *Start* the TM (when not running) or *Stop* the TM (when running).
 
 For more information, see <a href="t_st_monitorserver" class="MCXref xref">Monitor server</a>.
 
@@ -85,7 +85,7 @@ For more information, see <a href="t_st_monitorserver" class="MCXref xref">Monit
 
 ## Server status indicators
 
-The table below lists the various status options available from the *Server Control* page and when <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays that status.
+The table below lists the various status options available from the *Server Control* page and when {{< SecureTransport/componentshortname  >}} displays that status.
 
 <table>
    <thead>
@@ -125,11 +125,11 @@ The table below lists the various status options available from the *Server Cont
 
 <span id="Server5"></span>
 
-## Server Control on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge
+## Server Control on {{< SecureTransport/componentshortname  >}} Edge
 
-On the *Server Control* page for a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, there is no *TM Server* pane because the Transaction Manager does not run on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, but you can configure the port for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge proxy server.
+On the *Server Control* page for a {{< SecureTransport/componentshortname  >}} Edge, there is no *TM Server* pane because the Transaction Manager does not run on the {{< SecureTransport/componentshortname  >}} Edge, but you can configure the port for the {{< SecureTransport/componentshortname  >}} Edge proxy server.
 
-On the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, specify the port for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> proxy server. The proxy port is used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to handle outgoing connections passed through a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. The default is port number 1080.
+On the {{< SecureTransport/componentshortname  >}} Edge, specify the port for the {{< SecureTransport/componentshortname  >}} proxy server. The proxy port is used by {{< SecureTransport/componentshortname  >}} Server to handle outgoing connections passed through a {{< SecureTransport/componentshortname  >}} Edge. The default is port number 1080.
 
 1.  On the *Server Control* page, under **Proxy Server**, enter a value in the **Proxy Port** field.
 2.  Click **Start**.

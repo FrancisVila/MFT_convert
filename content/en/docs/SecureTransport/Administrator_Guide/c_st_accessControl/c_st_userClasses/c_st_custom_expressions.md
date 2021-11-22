@@ -2,7 +2,7 @@
     "title": "Custom expressions",
     "linkTitle": "Custom expressions",
     "weight": "200"
-}You can use the **Custom expression** field to define a user class based on the values of any <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user attributes and LDAP attributes include custom attributes. This subsection describes the variables, constants and functions for user class-specific usage of Expression Language (EL).
+}You can use the **Custom expression** field to define a user class based on the values of any {{< SecureTransport/componentshortname  >}} user attributes and LDAP attributes include custom attributes. This subsection describes the variables, constants and functions for user class-specific usage of Expression Language (EL).
 
 ## User attributes in user class
 
@@ -13,12 +13,12 @@ The following user attributes are supported:
 -   `fdxHomeDir` – Home folder
 -   `fdxUserType` – User type
 -   `fdxShell` – User shell (UNIX-based systems only)
--   `fdxSysUser` – Name of a local or domain user of the Windows server whose credentials <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to access the Windows files in the session (Windows only)
--   Any custom <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user attribute defined in the LDAP domain. See <a href="../../../c_st_authentication/t_st_ldapsettings/t_st_define_attribute_mappings_for_domain#Define" class="MCXref xref">Define attribute mappings for a domain</a>.
+-   `fdxSysUser` – Name of a local or domain user of the Windows server whose credentials {{< SecureTransport/componentshortname >}} uses to access the Windows files in the session (Windows only)
+-   Any custom {{< SecureTransport/componentshortname >}} user attribute defined in the LDAP domain. See <a href="../../../c_st_authentication/t_st_ldapsettings/t_st_define_attribute_mappings_for_domain#Define" class="MCXref xref">Define attribute mappings for a domain</a>.
 
 ## LDAP specific attributes
 
-The following variables that represent values from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> LDAP domain that are supported:
+The following variables that represent values from the {{< SecureTransport/componentshortname  >}} LDAP domain that are supported:
 
 -   `LDAP_DOMAIN_ID` – Internal ID
 -   `LDAP_DOMAIN_NAME` – Value of the **Domain Name** field
@@ -27,7 +27,7 @@ The following variables that represent values from the <span class="mc-variable 
 
 ## SSO specific attributes
 
-The following variables that represent SSO values for <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> that are supported:
+The following variables that represent SSO values for {{< SecureTransport/securetransportname  >}} that are supported:
 
 -   `SSO.idpId` – Identity provider Identification.
 -   `SSO.email` – SSO user email.
@@ -43,7 +43,7 @@ The following variables that represent SSO values for <span class="mc-variable s
 
 ## Authenticated user specific attributes
 
-The following variables that represent values from an already authenticated user in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> are supported:
+The following variables that represent values from an already authenticated user in {{< SecureTransport/componentshortname  >}} are supported:
 
 -   `DXAGENT_USERGID` - GID of the user
 
@@ -74,7 +74,7 @@ The following variables that represent values from an already authenticated user
 
 ## Map a user based on Login type
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> allows you to map a user based on their login type:
+{{< SecureTransport/securetransportname  >}} allows you to map a user based on their login type:
 
 -   To map a real user, use `DXAGENT_USERLOGINTYPE="REAL"`
 -   To map a virtual user, use `DXAGENT_USERLOGINTYPE="VIRTUAL"`
@@ -103,7 +103,7 @@ The following functions are supported:
 
 ## Supported operators
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> evaluates the expression based on the following operator precedence from highest to lowest:
+{{< SecureTransport/componentshortname  >}} evaluates the expression based on the following operator precedence from highest to lowest:
 
 -   Logical unary `not`
 -   Arithmetic unary `+` and `-`
@@ -118,7 +118,7 @@ The following functions are supported:
 
 Use parentheses to group expressions and override the operator precedence.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> dynamically converts numeric expressions to long integers, single-precision real numbers, or double-precision real numbers when it is necessary to evaluate an operator. When an operator requires a logical value, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> converts any value of a type other than logical to `false`.
+{{< SecureTransport/componentshortname  >}} dynamically converts numeric expressions to long integers, single-precision real numbers, or double-precision real numbers when it is necessary to evaluate an operator. When an operator requires a logical value, {{< SecureTransport/componentshortname  >}} converts any value of a type other than logical to `false`.
 
 The `like` operator matches its string left operand against a string right operand that is a Java regular expression. The result is `true` if the regular expression matches all of the left operand. The backslash (`\`) is the escape character Java regular expressions, so, in a regular expression, use two backslashes (`\\`) to match a backslash. See the examples.
 

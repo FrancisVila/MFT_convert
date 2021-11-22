@@ -2,20 +2,20 @@
     "title": "Axway Transfer CFT application",
     "linkTitle": "Axway Transfer CFT application",
     "weight": "210"
-}The Axway Transfer CFT application enables <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Transfer CFT to push files to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+}The Axway Transfer CFT application enables {{< SecureTransport/companyname  >}} Transfer CFT to push files to {{< SecureTransport/componentshortname  >}}.
 
-You must enable the `AxwayTransferCFT` rules package in the Transaction Manager before you can use an <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Transfer CFT application. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
+You must enable the `AxwayTransferCFT` rules package in the Transaction Manager before you can use an {{< SecureTransport/companyname  >}} Transfer CFT application. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
 
 > **Note:**
 >
 > This application is not needed for Transfer CFT communication and is used only for legacy configurations.
 
-Use the following procedure to create an <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Transfer CFT application.
+Use the following procedure to create an {{< SecureTransport/companyname  >}} Transfer CFT application.
 
 1.  Select **Application** and click **Add New**.  
     The *New Application* page is displayed.
 
-2.  Select **<span class="mc-variable axway_variables.Company_Name variable">Axway</span> Transfer CFT** from the mandatory **Application Type** list.
+2.  Select **{{< SecureTransport/companyname >}} Transfer CFT** from the mandatory **Application Type** list.
 
 3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
 

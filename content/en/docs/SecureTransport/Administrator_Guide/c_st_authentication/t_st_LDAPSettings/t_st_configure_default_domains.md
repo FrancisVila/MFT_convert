@@ -2,7 +2,7 @@
     "title": "Configure default domains",
     "linkTitle": "Configure default domains",
     "weight": "400"
-}For information about how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the default domains, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
+}For information about how {{< SecureTransport/componentshortname  >}} uses the default domains, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
 
 1.  Select **Authentication > LDAP Domains**.  
     The *LDAP Domains* page is displayed.
@@ -11,7 +11,7 @@
 3.  Click **Toggle** in the Default column to add a domain to or remove a domain from the default domains.  
     The default domains are moved to the top of the Domains List and indicated in the Domain Name column.
 4.  If you specify two ore more default domains, up and down arrows are displayed in a column before the Domain Name column.
-5.  Using the arrows, you can drag the default domain rows in the Domains List to the order you want <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to search the domains.
+5.  Using the arrows, you can drag the default domain rows in the Domains List to the order you want {{< SecureTransport/componentshortname >}} to search the domains.
 6.  When the default domains are correct, click **Save Defaults**.  
     The Default column and arrow columns are removed.
 

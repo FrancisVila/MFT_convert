@@ -32,8 +32,8 @@ This table provides explanations on operations differences in *containerized* de
       </tr>
       <tr>
          <td><p>Graceful Services shutdown</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge support only</p>         </td>
-         <td><p>During scale down operations (manual/automatic) the enabled protocol services on the SecureTransport Edge are stopped gracefully. See <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/operations/graceful-shutdown.htm" class="MCXref xref">Graceful shutdown</a> in the <em>SecureTransport</em> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> <em>Administrator guide</em> for more information.</p>
+         <td><p>{{< SecureTransport/componentshortname  >}} Edge support only</p>         </td>
+         <td><p>During scale down operations (manual/automatic) the enabled protocol services on the SecureTransport Edge are stopped gracefully. See <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/operations/graceful-shutdown.htm" class="MCXref xref">Graceful shutdown</a> in the <em>SecureTransport</em> {{< SecureTransport/releasenumber  >}} <em>Administrator guide</em> for more information.</p>
 <p>Note that the configured graceful shutdown timeouts must be lower than the <code>"terminationGracePeriodSeconds"</code> specified in the Kubernetes StatefulSet manifest.</p>
 <p>The Protocol services and the Transaction manager are not stopped gracefully when scaling down the SecureTransport Server. This may cause client transfers to interrupt unexpectedly.</p>         </td>
       </tr>

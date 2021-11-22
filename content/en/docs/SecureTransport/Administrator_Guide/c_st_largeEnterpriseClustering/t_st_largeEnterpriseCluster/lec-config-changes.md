@@ -2,7 +2,7 @@
     "title": "Configuration optimizations in case of increased transfers load",
     "linkTitle": "Configuration optimizations in case of increased transfers load",
     "weight": "150"
-}The following suggested configuration allows the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> administrator to specify the number of daemon threads used by the invocation service in the invocation-scheme configuration in `conf/hibernate-cache-config.xml`:
+}The following suggested configuration allows the {{< SecureTransport/securetransportname  >}} administrator to specify the number of daemon threads used by the invocation service in the invocation-scheme configuration in `conf/hibernate-cache-config.xml`:
 
 
 

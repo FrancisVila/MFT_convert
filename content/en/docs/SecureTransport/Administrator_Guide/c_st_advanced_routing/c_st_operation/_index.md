@@ -2,7 +2,7 @@
     "title": "Operation",
     "linkTitle": "Operation",
     "weight": "220"
-}This topic describes basic and complex use cases. Use cases provide customer oriented examples of <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> configurations.
+}This topic describes basic and complex use cases. Use cases provide customer oriented examples of {{< SecureTransport/advancedrouting  >}} configurations.
 
 The following basic use cases are described:
 

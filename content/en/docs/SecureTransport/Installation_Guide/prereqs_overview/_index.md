@@ -2,13 +2,13 @@
     "title": "Prerequisites",
     "linkTitle": "Prerequisites",
     "weight": "50"
-}Before you proceed, review the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Release Notes* for any updates to this preinstallation information or the installation and setup procedures.
+}Before you proceed, review the *{{< SecureTransport/componentshortname  >}} Release Notes* for any updates to this preinstallation information or the installation and setup procedures.
 
 Review the following information before starting the installer.
 
 ## Installation directory
 
-You must install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on local disk storage. Installation on shared storage is not supported. (For more information, see the discussion in the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide* of troubleshooting performance issues due to installation on a network drive.) All nodes in an Enterprise Cluster and a Standard Cluster must use the same local installation directory path name. The name of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory cannot include the ~ character. For example, `/root/Axway/STServer` is valid, but `/root/Axway/ST~Server` is not valid.
+You must install {{< SecureTransport/componentshortname  >}} on local disk storage. Installation on shared storage is not supported. (For more information, see the discussion in the *{{< SecureTransport/componentshortname  >}} Administrator's Guide* of troubleshooting performance issues due to installation on a network drive.) All nodes in an Enterprise Cluster and a Standard Cluster must use the same local installation directory path name. The name of the {{< SecureTransport/componentshortname  >}} installation directory cannot include the ~ character. For example, `/root/Axway/STServer` is valid, but `/root/Axway/ST~Server` is not valid.
 
 > **Note:**
 >
@@ -20,7 +20,7 @@ You must install <span class="mc-variable axway_variables.Component_Short_Name v
 
 ## Services
 
-After all components have been installed, the Admin service is started and, for installations that use the embedded database, the Database service is started. These services are configured according to your responses to the questions the installer asks during the installation procedure. These services are started so an administrator can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> before starting any additional services.
+After all components have been installed, the Admin service is started and, for installations that use the embedded database, the Database service is started. These services are configured according to your responses to the questions the installer asks during the installation procedure. These services are started so an administrator can configure {{< SecureTransport/componentshortname  >}} before starting any additional services.
 
 ## Server certificates
 
@@ -42,18 +42,18 @@ During installation, a temporary self-issued CA is generated, and then a tempora
 
 ## Port numbers
 
- The installer suggests the port numbers listed below for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server ports:
+ The installer suggests the port numbers listed below for the {{< SecureTransport/componentshortname  >}} server ports:
 
 -   The embedded database port number – `33060`  
-    This port is used for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Standard Clustering installations, and for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server stand-alone installations that use the embedded database. You can change this port after installation using the Administration Tool.
+    This port is used for {{< SecureTransport/componentshortname >}} Edge, for {{< SecureTransport/componentshortname >}} Server Standard Clustering installations, and for {{< SecureTransport/componentshortname >}} Server stand-alone installations that use the embedded database. You can change this port after installation using the Administration Tool.
 -   Oracle database listener port number –`1521`  
-    This port is used for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Enterprise Cluster installations that use an external Oracle database. You can change this port after installation using the Administration Tool.
+    This port is used for {{< SecureTransport/componentshortname >}} Server Enterprise Cluster installations that use an external Oracle database. You can change this port after installation using the Administration Tool.
 -   PostgreSQL database listener port number –`5432`  
-    This port is used for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Enterprise Cluster installations that use an external PostgreSQL database. You can change this port after installation using the Administration Tool.
+    This port is used for {{< SecureTransport/componentshortname >}} Server Enterprise Cluster installations that use an external PostgreSQL database. You can change this port after installation using the Administration Tool.
 -   Microsoft SQL Server port number – `1433`  
-    This port is used for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server Enterprise Cluster installations that use an external Microsoft SQL Server database. You can change this port after installation using the Administration Tool.
+    This port is used for {{< SecureTransport/componentshortname >}} Server Enterprise Cluster installations that use an external Microsoft SQL Server database. You can change this port after installation using the Administration Tool.
 -   Admin port number – `444`  
-    This is the port that the web server for the Administration Tool listens to. You must specify the Admin port number in the URL when accessing the Administration Tool, using the form, `https://<hostname>:<Admin port>/`. If you are installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on a UNIX-based server to run as a non-root user, 8000 is added to port numbers that are below 1024, so the default Admin port number is 8444.
+    This is the port that the web server for the Administration Tool listens to. You must specify the Admin port number in the URL when accessing the Administration Tool, using the form, `https://<hostname>:<Admin port>/`. If you are installing {{< SecureTransport/componentshortname >}} on a UNIX-based server to run as a non-root user, 8000 is added to port numbers that are below 1024, so the default Admin port number is 8444.
 -   Tomcat JK port number – `8009`  
     This is the port that the Coyote JK Connector, the internal module of the admin server that handles the execution of servlets and JSP pages, listens to. It must be greater than 1024.
 -   Tomcat shutdown port number – `8005`  
@@ -65,11 +65,11 @@ During installation, a temporary self-issued CA is generated, and then a tempora
 
 ## Service packs and patches
 
-Check <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">support.axway.com</a> to determine if you need to apply any service packs or patch after you install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and before you configure it. You can download the service pack and patch files to the system where you will install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> before you start the installation and apply them at the end of the installation without leaving the installer.
+Check {{< SecureTransport/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">support.axway.com</a> to determine if you need to apply any service packs or patch after you install {{< SecureTransport/componentshortname  >}} and before you configure it. You can download the service pack and patch files to the system where you will install {{< SecureTransport/componentshortname  >}} before you start the installation and apply them at the end of the installation without leaving the installer.
 
 ## System requirements
 
-The following are the system requirements for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The following are the system requirements for {{< SecureTransport/componentshortname  >}}.
 
 -   Supported operating systems and versions. This also can include virtualization platforms.
 -   Supported databases types and versions.
@@ -80,10 +80,10 @@ The following are the system requirements for <span class="mc-variable axway_var
 
 **Related topics:**
 
-The following topics provide the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation prerequisites:
+The following topics provide the {{< SecureTransport/componentshortname  >}} installation prerequisites:
 
 -   <a href="virtualization_support" class="MCXref xref">Virtualization support</a>
--   <a href="secret_file" class="MCXref xref">Secret file</a> - prerequisites for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers and <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edges.
+-   <a href="secret_file" class="MCXref xref">Secret file</a> - prerequisites for {{< SecureTransport/componentshortname >}} Servers and {{< SecureTransport/securetransportname >}} Edges.
 -   <a href="database_installation_prerequisites" class="MCXref xref">Database requirements</a>
 -   <a href="installation_prerequisites_for_unix_based_servers" class="MCXref xref">General prerequisites for UNIX-based platforms</a>
 -   <a href="installation_prerequisites_for_windows" class="MCXref xref">Windows platforms</a>

@@ -26,7 +26,7 @@ The following table presents all parameters and expected values associated with 
    </thead>
    <tbody>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">General</span>         </td>
+         <td><em>General</em>         </td>
       </tr>
       <tr>
          <td>Server Name         </td>
@@ -47,7 +47,7 @@ The following table presents all parameters and expected values associated with 
       <tr>
          <td>Enable PeSIT over Secured Socket (legacy § comp)         </td>
          <td><p>Select to enable the automatic detection of the used SSL/TLS
-mode (Legacy or Comp) when <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> acts as a server. Information about the
+mode (Legacy or Comp) when {{< SecureTransport/securetransportname  >}} acts as a server. Information about the
 detected mode is logged in the server log under <strong>Level &gt; Debug</strong>.</p>
 <p>The PeSIT listener used for communication with partners in both TLS Comp and TLS Legacy modes is configured using the following server configuration parameters:</p>
 <ul>
@@ -87,7 +87,7 @@ detected mode is logged in the server log under <strong>Level &gt; Debug</strong
       </tr>
       <tr>
          <td>Key Exchange Algorithms         </td>
-         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
+         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
       </tr>
       <tr>
          <td>SSL Key Alias         </td>
@@ -98,31 +98,31 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>PeSIT SSL Protocol         </td>
-         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
+         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
       </tr>
       <tr>
          <td>Enabled SSL Protocols         </td>
          <td>Enter a comma-separated list of SSL protocol versions to be enabled.
 <p>Default value for newly created PeSIT servers after updating to SecureTransport 5.5-20210930: <code>TLSv1.2, TLSv1.3</code>.</p>
 <p>Default value for existing PeSIT servers: <code>TLSv1, TLSv1.1, TLSv1.2</code>.<br />
-For instructions on how to enable TLSv1.3 protocol support, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> <em>Security guide</em>.</p>         </td>
+For instructions on how to enable TLSv1.3 protocol support, refer to the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} <em>Security guide</em>.</p>         </td>
       </tr>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">Common SSL Settings</span>         </td>
+         <td><em>Common SSL Settings</em>         </td>
       </tr>
       <tr>
          <td>PeSIT Trust algorithms         </td>
-         <td><p>Enter the key trust algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
+         <td><p>Enter the key trust algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled Ciphers         </td>
          <td><p>Enter the cipher suites to be used with your PeSIT server.</p>
-<p>For more information on cipher suites, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_55_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" class="MCXref xref" title="SecureTransport 5.5 Security guide"><span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">5.5</span> Security guide</a></em>.</p>         </td>
+<p>For more information on cipher suites, refer to the {{< SecureTransport/componentshortname  >}} <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_55_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" class="MCXref xref" title="SecureTransport 5.5 Security guide">{{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} Security guide</a></em>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your PeSIT server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default PeSIT server, the list of allowed cipher suites in FIPS mode is determined by the <code>Pesit.FIPS.Listeners.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>
@@ -134,7 +134,7 @@ For instructions on how to enable TLSv1.3 protocol support, refer to the <span c
 <p><code>Optional</code> – the client can authenticate either using a certificate or a password</p>         </td>
       </tr>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">PeSIT over pTCP</span> <span style="font-weight: normal;">– to enable editing these options, you must select at least one of the <strong>Enable PeSIT over pTCP</strong> options listed above</span>         </td>
+         <td><em>PeSIT over pTCP</em>         </td>
       </tr>
       <tr>
          <td>Port         </td>
@@ -146,7 +146,7 @@ For instructions on how to enable TLSv1.3 protocol support, refer to the <span c
       </tr>
       <tr>
          <td>Key Exchange Algorithms         </td>
-         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
+         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
       </tr>
       <tr>
          <td>SSL Key Alias         </td>
@@ -157,14 +157,14 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>SSL Protocol         </td>
-         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
+         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
       </tr>
       <tr>
          <td>Trust Algorithms         </td>
-         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.         </td>
+         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.         </td>
       </tr>
       <tr>
-         <td><span style="font-weight: normal; font-style: italic;">PeSIT over Secured Socket (legacy)</span><span style="font-weight: normal;">,</span> <span style="font-weight: normal; font-style: italic;">PeSIT over Secured Socket (legacy &amp; comp)</span> - <span style="font-weight: normal;"> to enable editing these options, you must select the corresponding option listed above</span>         </td>
+         <td><em>PeSIT over Secured Socket (legacy)</em> <em>PeSIT over Secured Socket (legacy &amp; comp)</em> -         </td>
       </tr>
       <tr>
          <td>SSL port         </td>
@@ -172,7 +172,7 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>Key Exchange Algorithms         </td>
-         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
+         <td><p>Enter the Key Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.</p>         </td>
       </tr>
       <tr>
          <td>SSL Key Alias         </td>
@@ -183,11 +183,11 @@ from the drop-down list, for example,
       </tr>
       <tr>
          <td>SSL Protocol         </td>
-         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
+         <td>Enter the used SSL protocol group: <code>SSL</code> or <code>TLS</code> (<code>TLS</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>SSL_TLS</code>.         </td>
       </tr>
       <tr>
          <td>Trust Algorithms         </td>
-         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> running on AIX systems, the default value is <code>IbmX509</code>.         </td>
+         <td>Enter the SSL Trust Algorithm (<code>SunX509</code> by default). Note that with {{< SecureTransport/securetransportname  >}} running on AIX systems, the default value is <code>IbmX509</code>.         </td>
       </tr>
    </tbody>
 </table>

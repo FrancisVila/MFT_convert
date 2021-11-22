@@ -2,7 +2,7 @@
     "title": "Define LDAP user settings for a domain",
     "linkTitle": "Define LDAP user settings for a domain",
     "weight": "330"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses these default values when the LDAP entry does not include the attribute and no mapping to the attribute is enabled in the *Default Attributes List*. For information, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
+}{{< SecureTransport/componentshortname  >}} uses these default values when the LDAP entry does not include the attribute and no mapping to the attribute is enabled in the *Default Attributes List*. For information, see <a href="../../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
 
 1.  If you do not have the *New LDAP Domain* page open, select **Authentication > LDAP Domains** and click the domain name in the Domains List to open the *LDAP Domain* page.
 2.  Under *LDAP User Settings*, complete the following fields:  

@@ -49,7 +49,7 @@ Transport         </th>
 </ul>         </td>
          <td>All         </td>
          <td><p>Direction</p>
-<p>Corresponds to the DXAGENT_TRANSFER_DIRECTION <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.</p>         </td>
+<p>Corresponds to the DXAGENT_TRANSFER_DIRECTION {{< SecureTransport/componentshortname  >}} event environment variable.</p>         </td>
       </tr>
       <tr>
          <td><p>IsServer</p>
@@ -106,10 +106,10 @@ Transport         </th>
 <p>ROUTED</p>         </td>
          <td><p>For PeSIT transfers, corresponds to PeSIT PI4.</p>
 <ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> receiving a file from CFT, the PI4 value is the login name of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> account that receives the file.</li>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uploading a file to a CFT partner, the PI4 value corresponds to the transfer site name that identifies the partner.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} receiving a file from CFT, the PI4 value is the login name of the {{< SecureTransport/componentshortname  >}} account that receives the file.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} uploading a file to a CFT partner, the PI4 value corresponds to the transfer site name that identifies the partner.</li>
 </ul>
-<p>For non-PeSIT transfers, the value of this attribute is the <code>ip:port</code> of the remote partner, the hostname, or the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> login name.</p>
+<p>For non-PeSIT transfers, the value of this attribute is the <code>ip:port</code> of the remote partner, the hostname, or the {{< SecureTransport/componentshortname  >}} login name.</p>
 <p>For ADHOC transfers:</p>
 <ul>
 <li>In case of an incoming ADHOC transfer, the value of this attribute is the account email.</li>
@@ -132,10 +132,10 @@ Transport         </th>
 <p>ROUTED</p>         </td>
          <td><p>For PeSIT transfers, corresponds to PeSIT PI3.</p>
 <ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> receiving a file from CFT, the PI3 parameter value is the name of the transfer site that identifies the partner.</li>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uploading a file to a CFT partner, the PI3 parameter value corresponds to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> account name that’s doing the transfer.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} receiving a file from CFT, the PI3 parameter value is the name of the transfer site that identifies the partner.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} uploading a file to a CFT partner, the PI3 parameter value corresponds to the {{< SecureTransport/componentshortname  >}} account name that’s doing the transfer.</li>
 </ul>
-<p>For non-PeSIT transfers, reports the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> login name of the transfer site owner, the hostname, or the <code>ip:port</code> of the remote partner where <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> pulled the file from.</p>
+<p>For non-PeSIT transfers, reports the {{< SecureTransport/componentshortname  >}} login name of the transfer site owner, the hostname, or the <code>ip:port</code> of the remote partner where {{< SecureTransport/securetransportname  >}} pulled the file from.</p>
 <p>For ADHOC transfers:</p>
 <ul>
 <li>In case of an incoming ADHOC transfer, the value of this attribute is the email of the sender.</li>
@@ -151,7 +151,7 @@ Transport         </th>
          <td><p><span id="Pesit_Store&amp;Forward_PI62"></span>For PeSIT transfers, corresponds to PeSIT PI62 or PI4.</p>
 <ul>
 <li>If PI62 is not present, PI4 is used in both Sentinel and PeSIT.</li>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI62 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI62">Final Destination</a> property of the PeSIT transfer site or to the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Final_Destination">Final Destination</a> property of the Send To Partner step. If both properties are left blank, PI62 is not populated.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} initiating a new Store and Forward transfer, the PI62 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI62">Final Destination</a> property of the PeSIT transfer site or to the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Final_Destination">Final Destination</a> property of the Send To Partner step. If both properties are left blank, PI62 is not populated.</li>
 <li>In the PRESERVE store and forward mode, PI preserves the PI62 value.</li>
 </ul>
 <p>For non-PeSIT transfers, the value of this attribute is the ReceiverId. In case the ReceiverId value is not present, the value of the FinalReceiverId is the <code>ip:port</code> of the Remote Partner or the hostname.</p>         </td>
@@ -165,10 +165,10 @@ Transport         </th>
          <td><p>All</p>         </td>
          <td><p>For PeSIT transfers, corresponds to PeSIT PI61.</p>
 <ul>
-<li>In case of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiating a new Store and Forward transfer, the PI61 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI61">Originator</a> property, <span id="Pesit_Store&amp;Forward_PI61"></span>specified in the PeSIT transfer site settings, or the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Originator">Originator</a> property in the Send To Partner step settings. If both properties are left blank, PI61 is not populated.</li>
+<li>In case of {{< SecureTransport/componentshortname  >}} initiating a new Store and Forward transfer, the PI61 value corresponds either to the <a href="#Pesit_Store&amp;Forward_PI61">Originator</a> property, <span id="Pesit_Store&amp;Forward_PI61"></span>specified in the PeSIT transfer site settings, or the <a href="../../../c_st_advanced_routing/c_st_route_steps/t_st_send_to_partner#AR_SP_Originator">Originator</a> property in the Send To Partner step settings. If both properties are left blank, PI61 is not populated.</li>
 <li>In the PRESERVE store and forward mode, PI preserves the PI61 value.</li>
 </ul>
-<p>For non-PeSIT transfers, the value of this attribute is the login name of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> account which received/sent the file from a Remote Partner. If login name is not present, the value is SenderID or UserID.</p>         </td>
+<p>For non-PeSIT transfers, the value of this attribute is the login name of the {{< SecureTransport/securetransportname  >}} account which received/sent the file from a Remote Partner. If login name is not present, the value is SenderID or UserID.</p>         </td>
       </tr>
       <tr>
          <td><p>UserID</p>
@@ -210,7 +210,7 @@ Transport         </th>
          <td><p>MonitorVersion</p>
 <p><em>string</em></p>         </td>
          <td>25         </td>
-         <td>Version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> in the X.Y.Z format e.g. 5.3.0 or 5.2.1         </td>
+         <td>Version of {{< SecureTransport/componentshortname  >}} in the X.Y.Z format e.g. 5.3.0 or 5.2.1         </td>
          <td>All         </td>
          <td>MonitorVersion         </td>
       </tr>
@@ -218,7 +218,7 @@ Transport         </th>
          <td><p>ProductName</p>
 <p><em>string</em></p>         </td>
          <td>50         </td>
-         <td>The constant “<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>”         </td>
+         <td>The constant “{{< SecureTransport/componentshortname  >}}”         </td>
          <td>All         </td>
          <td>ProductName         </td>
       </tr>
@@ -226,7 +226,7 @@ Transport         </th>
          <td><p>ProductIPAddr</p>
 <p><em>string</em></p>         </td>
          <td>255         </td>
-         <td>IP address assigned to the server hosting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application         </td>
+         <td>IP address assigned to the server hosting the {{< SecureTransport/componentshortname  >}} application         </td>
          <td>All         </td>
          <td>java.net.InetAddress.<br />
 getLocalHost()         </td>
@@ -270,7 +270,7 @@ Transport         </th>
          <td><p>GroupId</p>
 <p><em>string</em></p>         </td>
          <td>80         </td>
-         <td>The name of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> account         </td>
+         <td>The name of the {{< SecureTransport/componentshortname  >}} account         </td>
          <td>All         </td>
          <td>Account name         </td>
       </tr>
@@ -299,7 +299,7 @@ Transport         </th>
          <td>80         </td>
          <td>Application name.         </td>
          <td>All         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application name.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} application name.         </td>
       </tr>
       <tr>
          <td><p>CoreId</p>
@@ -328,7 +328,7 @@ Transport         </th>
 </ul>         </td>
          <td>All         </td>
          <td><p>Fullpath of the filename.</p>
-<p>Corresponds to the DXAGENT_FULLTARGET <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.</p>         </td>
+<p>Corresponds to the DXAGENT_FULLTARGET {{< SecureTransport/componentshortname  >}} event environment variable.</p>         </td>
       </tr>
       <tr>
          <td><p>LocalId</p>
@@ -345,7 +345,7 @@ Transport         </th>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
          <td>Transfer ID.<br />
-Corresponds to the TRANSFER_STATUS_ID <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+Corresponds to the TRANSFER_STATUS_ID {{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
       <tr>
          <td><p>ProtocolFile<br />
@@ -364,7 +364,7 @@ Name</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
          <td>File.<br />
-Corresponds to the <code>DXAGENT_TARGET</code> <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+Corresponds to the <code>DXAGENT_TARGET</code> {{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
       <tr>
          <td><p>ProtocolFile<br />
@@ -382,8 +382,8 @@ Label</p>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
-         <td>When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is a sender, this is configured in the Transfer Profile.
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is a receiver, this value is configured and supplied by the sender.         </td>
+         <td>When {{< SecureTransport/componentshortname  >}} is a sender, this is configured in the Transfer Profile.
+When {{< SecureTransport/componentshortname  >}} is a receiver, this value is configured and supplied by the sender.         </td>
       </tr>
       <tr>
          <td><p>ProtocolId</p>
@@ -413,7 +413,7 @@ Message</p>
 </ul>         </td>
          <td><p>ACKED</p>
 <p>ENDED_TO_ACK</p>         </td>
-         <td>Corresponds to the DXAGENT_TRANSFER_ACK_MESSAGE <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+         <td>Corresponds to the DXAGENT_TRANSFER_ACK_MESSAGE {{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
       <tr>
          <td><p>Protocol<br />
@@ -457,7 +457,7 @@ Parameter2</p>
          <td>255         </td>
          <td><p>Reports the account type:</p>
 <ul>
-<li><strong>User</strong> (meaning that account has been specified in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>’s database).</li>
+<li><strong>User</strong> (meaning that account has been specified in {{< SecureTransport/componentshortname  >}}’s database).</li>
 <li><strong>Template</strong> (meaning that this is a template).</li>
 <li><strong>Service</strong> (Service account).</li>
 </ul>         </td>
@@ -621,7 +621,7 @@ Transport         </th>
 <p>DELETED,</p>
 <p>ACKED,</p>
 <p>ENDED_TO_ACK</p>         </td>
-         <td>Corresponds to <code>DXAGENT_SERVERNAME </code><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+         <td>Corresponds to <code>DXAGENT_SERVERNAME </code>{{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
       <tr>
          <td><p>Protocol</p>
@@ -633,7 +633,7 @@ Transport         </th>
 </ul>         </td>
          <td>All         </td>
          <td><p>Protocol.</p>
-<p>Corresponds to the DXAGENT_PROTOCOL <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.</p>         </td>
+<p>Corresponds to the DXAGENT_PROTOCOL {{< SecureTransport/componentshortname  >}} event environment variable.</p>         </td>
       </tr>
       <tr>
          <td><p>IsSSL</p>
@@ -764,7 +764,7 @@ Number</p>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
-         <td>Corresponds to the DXAGENT_PERSISTED_EVENT_RETRY_COUNT <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+         <td>Corresponds to the DXAGENT_PERSISTED_EVENT_RETRY_COUNT {{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
       <tr>
          <td><p>Request<br />
@@ -786,7 +786,7 @@ Type</p>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> always reports as value for RequestType.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} always reports as value for RequestType.         </td>
       </tr>
       <tr>
          <td><p>Transfer<br />
@@ -808,7 +808,7 @@ Type</p>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> always reports as value for RequestType         </td>
+         <td>{{< SecureTransport/componentshortname  >}} always reports as value for RequestType         </td>
       </tr>
    </tbody>
 </table>
@@ -863,7 +863,7 @@ Transport         </th>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>
 <p>ROUTED</p>         </td>
-         <td>Corresponds to the DXAGENT_TRANSFERRED_BYTES <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event environment variable.         </td>
+         <td>Corresponds to the DXAGENT_TRANSFERRED_BYTES {{< SecureTransport/componentshortname  >}} event environment variable.         </td>
       </tr>
    </tbody>
 </table>
@@ -1057,7 +1057,7 @@ Transport         </th>
          <td><p>SessionTag</p>
 <p><em>string</em></p>         </td>
          <td>255         </td>
-         <td>Represents <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> session ID.
+         <td>Represents {{< SecureTransport/componentshortname  >}} session ID.
 The Session ID could be used to query the server log for a particular session.         </td>
          <td>All         </td>
          <td><p>Session ID</p>         </td>
@@ -1066,7 +1066,7 @@ The Session ID could be used to query the server log for a particular session.  
          <td><p>TransferTag</p>
 <p><em>string</em></p>         </td>
          <td>50         </td>
-         <td><p>Represents <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> transfer status operationIndex.</p>
+         <td><p>Represents {{< SecureTransport/componentshortname  >}} transfer status operationIndex.</p>
 <p>Transfer ID could be used to query the file tracking log for a particular transfer</p>         </td>
          <td>All         </td>
          <td>          </td>
@@ -1100,7 +1100,7 @@ The Session ID could be used to query the server log for a particular session.  
 <p>ENDED_TO_ACK</p>
 <p>INTERRUPTED</p>
 <p>SUSPENDED</p>         </td>
-         <td>Not reported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.         </td>
+         <td>Not reported by {{< SecureTransport/componentshortname  >}}.         </td>
       </tr>
    </tbody>
 </table>

@@ -168,7 +168,7 @@ RECV: System login of the process that runs the SFTP client</p>         </td>
 
 ### Generating common CycleID for end-to-end tracking of SFTP transfers
 
-With transfers occurring across Axway's MFT solutions <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> and Transfer CFT, the CycleID is used for consistent end-to-end reporting to Sentinel. In order to report the common CycleID, you must set the dedicated configuration option: `Ssh.AxwayVendorExtensions.enabled` to `true`. In order to apply this change, you must restart the SSH services and the Transaction Manager (TM) on all Server and Edge instances.
+With transfers occurring across Axway's MFT solutions {{< SecureTransport/securetransportname  >}} and Transfer CFT, the CycleID is used for consistent end-to-end reporting to Sentinel. In order to report the common CycleID, you must set the dedicated configuration option: `Ssh.AxwayVendorExtensions.enabled` to `true`. In order to apply this change, you must restart the SSH services and the Transaction Manager (TM) on all Server and Edge instances.
 
 > **Note:**
 >

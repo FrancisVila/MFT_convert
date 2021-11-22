@@ -2,7 +2,7 @@
     "title": "Manually synchronize SecureTransport Edge servers",
     "linkTitle": "Manually synchronize SecureTransport Edge servers",
     "weight": "150"
-}Use the Administration Tool to synchronize the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge servers. This option is not displayed when the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge server is not configured for synchronization.
+}Use the Administration Tool to synchronize the {{< SecureTransport/componentshortname  >}} Edge servers. This option is not displayed when the {{< SecureTransport/componentshortname  >}} Edge server is not configured for synchronization.
 
 > **Note:**
 >

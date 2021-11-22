@@ -26,7 +26,7 @@
       </tr>
       <tr>
          <td><a href="../ab_register_provider" class="MCXref xref">Register Address Book provider</a>         </td>
-         <td>Every Address Book provider must be packaged in a specific way in order to be registered correctly into <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> system.         </td>
+         <td>Every Address Book provider must be packaged in a specific way in order to be registered correctly into {{< SecureTransport/securetransportname  >}} system.         </td>
       </tr>
    </tbody>
 </table>

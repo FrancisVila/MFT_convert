@@ -2,7 +2,7 @@
     "title": "Manage service accounts",
     "linkTitle": "Manage service accounts",
     "weight": "190"
-}Service accounts are internal accounts used for representing internal systems, as opposed to partner sites that are identified in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> by user accounts.
+}Service accounts are internal accounts used for representing internal systems, as opposed to partner sites that are identified in {{< SecureTransport/componentshortname  >}} by user accounts.
 
 > **Note:**
 >

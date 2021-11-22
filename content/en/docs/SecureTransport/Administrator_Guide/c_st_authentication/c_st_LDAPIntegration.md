@@ -2,15 +2,15 @@
     "title": "LDAP integration",
     "linkTitle": "LDAP integration",
     "weight": "260"
-}You can configure <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> to use Lightweight Directory Access Protocol (LDAP) servers to authenticate users and provide information it uses to set up the user session.
+}You can configure {{< SecureTransport/componentlongname  >}} to use Lightweight Directory Access Protocol (LDAP) servers to authenticate users and provide information it uses to set up the user session.
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> LDAP integration includes:
+The {{< SecureTransport/componentshortname  >}} LDAP integration includes:
 
 -   Support for LDAP versions 2 and 3.
 -   Support for Secure LDAP, also know as LDAP over SSL/TLS or LDAPS.
 -   Search over multiple LDAP domains that provide authentication information and user attributes for different groups of users.
 -   Multiple, redundant LDAP servers in a domain for backup when an LDAP server is down or inaccessible.
--   One or more default LDAP domains that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> searches when a user does not specify a domain name on login.
+-   One or more default LDAP domains that {{< SecureTransport/componentshortname >}} searches when a user does not specify a domain name on login.
 
 > **Note:**
 >

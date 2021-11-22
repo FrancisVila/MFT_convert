@@ -2,7 +2,7 @@
     "title": "Log Entry Maintenance application",
     "linkTitle": "Log Entry Maintenance application",
     "weight": "150"
-}The built-in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application type, Log Entry Maintenance, performs the exclusive function of rotating server log files.
+}The built-in {{< SecureTransport/componentshortname  >}} application type, Log Entry Maintenance, performs the exclusive function of rotating server log files.
 
 The main characteristic features of the Log Entry Maintenance application type are:
 

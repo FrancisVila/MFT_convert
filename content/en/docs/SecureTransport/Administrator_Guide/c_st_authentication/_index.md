@@ -2,9 +2,9 @@
     "title": "Authentication",
     "linkTitle": "Authentication",
     "weight": "110"
-}The following set of topics provides detailed <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> login setting configuration and authentication information for end-users and administrators and LDAP and SiteMinder configuration information:
+}The following set of topics provides detailed {{< SecureTransport/componentshortname  >}} login setting configuration and authentication information for end-users and administrators and LDAP and SiteMinder configuration information:
 
--   <a href="c_st_about_sso" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a> - Describes the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Single Sign-On and Single Logout functionality.
+-   <a href="c_st_about_sso" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a> - Describes the {{< SecureTransport/componentshortname >}} Single Sign-On and Single Logout functionality.
 -   <a href="c_st_sso_configuration" class="MCXref xref">Single Sign-On (SSO) configuration</a> - Provides configuration prerequisites, an overview of the main configuration files, and describes configuring SSO.
 -   <a href="c_st_enable_sso_admin" class="MCXref xref">Enable Single Sign-On (SSO) for administrators</a> - Describes how to enable SSO for administrators.
 -   <a href="c_st_enable_sso_endusers" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a> - Describes how to enable SSO for end-users.
@@ -16,7 +16,7 @@
 -   <a href="c_st_active_directory" class="MCXref xref">Configure Kerberos as an Identity Provider in SecureTransport</a> - Describes Kerberos SSO authentication with Active Directory.
 -   <a href="c_st_login_settings" class="MCXref xref">Login settings</a> - Provides configuration information and instructions for enabling or disabling SSO authentication of end users and administrators, enabling or disabling certificate authentication and client certificate authentication for end users and administrators, enable or disable dual authentication, and set LDAP and SiteMinder authentication levels.
 -   <a href="t_st_siteminderintegrationconfiguration" class="MCXref xref">SiteMinder integration configuration</a> - Provides how-to instructions for configuring the SiteMinder integration.
--   <a href="c_st_ldapintegration" class="MCXref xref">LDAP integration</a> - Describes the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> LDAP integration.
+-   <a href="c_st_ldapintegration" class="MCXref xref">LDAP integration</a> - Describes the {{< SecureTransport/componentshortname >}} LDAP integration.
 -   <a href="c_st_ldap_connections_binds_searches" class="MCXref xref">LDAP connections, binds, and searches</a> - Describes the configuration of LDAP connections, binds, and searches.
 -   <a href="c_st_ldap_logins" class="MCXref xref">LDAP logins</a> - Describes how LDAP logins are used and searched when LDAP is enabled.
 -   <a href="t_st_ldapsettings" class="MCXref xref">LDAP domains</a> - Describes the management and configuration of LDAP domains.

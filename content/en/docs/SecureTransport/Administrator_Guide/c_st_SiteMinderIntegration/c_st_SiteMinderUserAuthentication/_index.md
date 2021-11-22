@@ -2,7 +2,7 @@
     "title": "User authentication",
     "linkTitle": "User authentication",
     "weight": "130"
-}In a SiteMinder environment, a user can access <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> resources using a web client or a command line client. If the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> SiteMinder module is enabled, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses different authentication methods depending on the type of client.
+}In a SiteMinder environment, a user can access {{< SecureTransport/componentshortname  >}} resources using a web client or a command line client. If the {{< SecureTransport/componentshortname  >}} SiteMinder module is enabled, {{< SecureTransport/componentshortname  >}} uses different authentication methods depending on the type of client.
 
 > **Note:**
 >

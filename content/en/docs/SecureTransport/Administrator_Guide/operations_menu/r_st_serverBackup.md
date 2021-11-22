@@ -2,7 +2,7 @@
     "title": "Server backup",
     "linkTitle": "Server backup",
     "weight": "170"
-}To minimize the risk of data loss, perform regular backups of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge data.
+}To minimize the risk of data loss, perform regular backups of the {{< SecureTransport/componentshortname  >}} Server and {{< SecureTransport/componentshortname  >}} Edge data.
 
 When performing a server backup, you must back up the following files and directories in `<FILEDRIVEHOME>`:
 
@@ -14,7 +14,7 @@ When performing a server backup, you must back up the following files and direct
 -   `var/db/mysql/` (AIX only)
 -   `var/db/mariadb/` (for servers using the embedded database)
 
-Include the following files if changes have been made after the initial installation of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+Include the following files if changes have been made after the initial installation of {{< SecureTransport/componentshortname  >}}:
 
 -   `lib/msgs/`
 -   `share/ftdocs/`
@@ -27,9 +27,9 @@ Add the following files to keep existing log files, statistics, and MDN receipts
 -   `var/db/hist/logs/`
 -   `var/db/stats/`
 
-For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server with an external database, back up the database using standard Oracle or Microsoft SQL Server procedures.
+For {{< SecureTransport/componentshortname  >}} Server with an external database, back up the database using standard Oracle or Microsoft SQL Server procedures.
 
-For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server with an embedded database or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, use `<FILEDRIVEHOME>/bin/backup_db` to back up the database tables. The `backup_db Backup_File` command writes the backup data to the file named. You must enter the database password. You can use the `-skiplog` option to prevent the `TransactionStatus` or `TransactionData` tables from being included. To restore the data, use the following command:
+For {{< SecureTransport/componentshortname  >}} Server with an embedded database or {{< SecureTransport/componentshortname  >}} Edge, use `<FILEDRIVEHOME>/bin/backup_db` to back up the database tables. The `backup_db Backup_File` command writes the backup data to the file named. You must enter the database password. You can use the `-skiplog` option to prevent the `TransactionStatus` or `TransactionData` tables from being included. To restore the data, use the following command:
 
 -   for servers with MySQL
 

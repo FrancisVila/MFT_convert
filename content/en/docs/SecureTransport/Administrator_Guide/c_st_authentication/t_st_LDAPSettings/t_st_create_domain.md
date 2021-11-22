@@ -31,7 +31,7 @@
 
 10. Add backup LDAP servers, if any, to the *Servers List*.
 
-11. To change the order <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> tries the servers, click **Reorder**, update the numbers in the **Order** column, and click **Save**.
+11. To change the order {{< SecureTransport/componentshortname >}} tries the servers, click **Reorder**, update the numbers in the **Order** column, and click **Save**.
 
 12. Under *LDAP Servers*, complete the following fields:  
     <table>
@@ -55,17 +55,17 @@
           </tr>
           <tr>
              <td>Verify Certificate Chain         </td>
-             <td>Configure whether <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> implicitly trusts the LDAP servers in this domain or verifies the LDAP server certificates.         </td>
+             <td>Configure whether {{< SecureTransport/componentshortname  >}} implicitly trusts the LDAP servers in this domain or verifies the LDAP server certificates.         </td>
              <td>See <a href="#Secure" class="MCXref xref">Create an LDAP domain</a>.         </td>
           </tr>
           <tr>
              <td>Enable LDAP Referrals         </td>
-             <td>Configure whether <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> allows the LDAP server to refer a request to another LDAP server.         </td>
+             <td>Configure whether {{< SecureTransport/componentshortname  >}} allows the LDAP server to refer a request to another LDAP server.         </td>
              <td>This option is required when the LDAP directory tree is distributed over a group of servers.         </td>
           </tr>
           <tr>
              <td>Enable Anonymous Binds         </td>
-             <td>Configure whether <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses a Bind DN to access to the LDAP server.         </td>
+             <td>Configure whether {{< SecureTransport/componentshortname  >}} uses a Bind DN to access to the LDAP server.         </td>
              <td><p>You can select this option when LDAP servers supports anonymous binding.</p>
     <p>If this option is not selected, the <strong>Bind DN</strong> field is required.</p>         </td>
           </tr>
@@ -82,9 +82,9 @@
           </tr>
           <tr>
              <td>LDAP Common Case         </td>
-             <td><p>Configure whether and how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> changes the case of the user name it receives from the LDAP database.</p>         </td>
+             <td><p>Configure whether and how {{< SecureTransport/componentshortname  >}} changes the case of the user name it receives from the LDAP database.</p>         </td>
              <td><p>None, Lower, or Upper.</p>
-    <p>If the value is Lower or Upper, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> maps the case of all letters in the user name to the case you specify.</p>         </td>
+    <p>If the value is Lower or Upper, {{< SecureTransport/componentshortname  >}} maps the case of all letters in the user name to the case you specify.</p>         </td>
           </tr>
        </tbody>
     </table>

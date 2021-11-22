@@ -10,15 +10,15 @@ or
 
 `${name.variable}`
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the following named variable sets:
+{{< SecureTransport/componentshortname  >}} uses the following named variable sets:
 
--   `${sess['variable']}` – used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> session variables including LDAP
--   `${env['variable']}`, `${stenv['variable']}`, or `${stenv.variable}` – used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> predefined environment variables
--   `${pesit['variable']}` – used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> PeSIT variables described in <a href="../r_st_expressionlanguagepesitvariables" class="MCXref xref">PeSIT variables</a>
+-   `${sess['variable']}` – used with {{< SecureTransport/componentshortname >}} session variables including LDAP
+-   `${env['variable']}`, `${stenv['variable']}`, or `${stenv.variable}` – used with {{< SecureTransport/componentshortname >}} predefined environment variables
+-   `${pesit['variable']}` – used with {{< SecureTransport/componentshortname >}} PeSIT variables described in <a href="../r_st_expressionlanguagepesitvariables" class="MCXref xref">PeSIT variables</a>
 
 LDAP session variables can be used with the `sess` named variable set. You can also develop an agent that contains the session variables you want to use. All session variables must be prefixed with `STSESSION_`.
 
-The `env` named variable set contains the entire environment, including any non- <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variables. Environment variables accessed using `stenv` are preprocessed to remove the `DXAGENT_` prefix, and upper case characters are converted to lower case characters. For example, to use the environment variable `DXAGENT_TARGET`, write the following expression:
+The `env` named variable set contains the entire environment, including any non- {{< SecureTransport/componentshortname  >}}-specific variables. Environment variables accessed using `stenv` are preprocessed to remove the `DXAGENT_` prefix, and upper case characters are converted to lower case characters. For example, to use the environment variable `DXAGENT_TARGET`, write the following expression:
 
 `${env['DXAGENT_TARGET']}`
 
@@ -26,9 +26,9 @@ or use the `stenv` named variable set and access the variable as:
 
 `${stenv['target']} or ${stenv.target}`
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific named variable set examples
+## {{< SecureTransport/componentshortname  >}}-specific named variable set examples
 
-The following table shows examples of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific named variables:
+The following table shows examples of {{< SecureTransport/componentshortname  >}}-specific named variables:
 
 <table>
    <thead>

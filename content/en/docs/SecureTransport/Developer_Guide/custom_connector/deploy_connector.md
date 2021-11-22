@@ -2,9 +2,9 @@
     "title": "Deploy a custom protocol connector",
     "linkTitle": "Deploy a custom protocol connector",
     "weight": "110"
-}In order to configure and deploy a Custom Connector implementation into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, follow these steps:
+}In order to configure and deploy a Custom Connector implementation into {{< SecureTransport/componentshortname  >}} Server, follow these steps:
 
-1.  After implementing Custom Connector and the User Interface for this connector you should add them to a single jar file. For Site SPI version 1.0, you must create a `MANIFEST.MF` file in the jar file that describes the integration points between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and the Custom Connector.  
+1.  After implementing Custom Connector and the User Interface for this connector you should add them to a single jar file. For Site SPI version 1.0, you must create a `MANIFEST.MF` file in the jar file that describes the integration points between {{< SecureTransport/componentshortname >}} and the Custom Connector.  
     The `META-INF/MANIFEST.MF` file must be created with the following properties:  
     <table>
        <thead>
@@ -28,7 +28,7 @@
           </tr>
           <tr>
              <td>Custom-Site         </td>
-             <td>The full name of the class that extends the <code>com.axway.st.plugins.site.CustomSite</code> abstract class and implements the <code>com.axway.st.plugins.site.Connection</code> interface. This is the integration point between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and the Custom Transfer Site.         </td>
+             <td>The full name of the class that extends the <code>com.axway.st.plugins.site.CustomSite</code> abstract class and implements the <code>com.axway.st.plugins.site.Connection</code> interface. This is the integration point between {{< SecureTransport/componentshortname  >}} and the Custom Transfer Site.         </td>
           </tr>
           <tr>
              <td>Class-Path         </td>
@@ -42,14 +42,14 @@
     </table>
 
       
-    This metadata file is used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to register and use the Custom Connector implementation like a regular Transfer Site.  
+    This metadata file is used by {{< SecureTransport/componentshortname >}} to register and use the Custom Connector implementation like a regular Transfer Site.  
     If your Custom Connector implementation depends on third party libraries, you have two implementation approaches:
     -   You can use a fat jar file that stores your classes and the classes from all dependent jars into a one single jar file.
     -   or
 
     <!-- -->
 
-    -   Add a Class-Path attribute to the `MANIFEST.MF` file, in which you should enumerate your dependent jars separated by spaces or tabs. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will add the enumerated libraries to the Custom Connector implementation classpath.
+    -   Add a Class-Path attribute to the `MANIFEST.MF` file, in which you should enumerate your dependent jars separated by spaces or tabs. {{< SecureTransport/componentshortname >}} will add the enumerated libraries to the Custom Connector implementation classpath.
 
     -   For Site SPI v1.1 or higher use instead the `Plugin-Info.yaml` file.  
         The META-INF/Plugin-Info.yaml must be created with the same properties as described above.  
@@ -66,17 +66,17 @@
             Protocol-Label: My Sample Transfer Site (1.1)
             Custom-UI: html/mySite-1-1.html
             Class-Path: MySite/lib/lib1.jar MySite/lib/lib2.jar MySite/lib_1_1/lib3_1_1.jar
-2.  Deploy Custom Connector into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+2.  Deploy Custom Connector into {{< SecureTransport/componentshortname >}}.
 
-When you have produced/created a jar file containing the Custom Connector implementation and a `MANIFEST.MF` file, you should place it into your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. In the installation folder of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.3.6 version and above, you will find the following directory:
+When you have produced/created a jar file containing the Custom Connector implementation and a `MANIFEST.MF` file, you should place it into your {{< SecureTransport/componentshortname  >}} Server. In the installation folder of {{< SecureTransport/componentshortname  >}} 5.3.6 version and above, you will find the following directory:
 
--   `${FILEDRIVE_HOME}/plugins/transferSites`, where `${FILEDRIVE_HOME}` represents <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory.
+-   `${FILEDRIVE_HOME}/plugins/transferSites`, where `${FILEDRIVE_HOME}` represents {{< SecureTransport/componentshortname >}} installation directory.
 
 > **Note:**
 >
 > In a cluster environment, you must add the Custom Connector jar file to all nodes of the cluster.
 
-The Custom Connector jar file should be placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory. This directory is scanned by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> for jar files with the specific `MANIFEST.MF` file describing the integration points between the custom connector and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. For each custom connector, there should be a jar file containing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Pluggable Transfer Site SPI implementation and the `MANIFEST.MF` file. Also, if there are any third party resources that are required by your custom connector implementation and are not included in the Custom Connector jar, they should be placed in a separate directory inside the `${FILEDRIVE_HOME}/plugins/transferSites` directory and be listed in the `MANIFEST.MF` file under Class-Path attribute.
+The Custom Connector jar file should be placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory. This directory is scanned by {{< SecureTransport/componentshortname  >}} for jar files with the specific `MANIFEST.MF` file describing the integration points between the custom connector and the {{< SecureTransport/componentshortname  >}} Server. For each custom connector, there should be a jar file containing the {{< SecureTransport/componentshortname  >}} Pluggable Transfer Site SPI implementation and the `MANIFEST.MF` file. Also, if there are any third party resources that are required by your custom connector implementation and are not included in the Custom Connector jar, they should be placed in a separate directory inside the `${FILEDRIVE_HOME}/plugins/transferSites` directory and be listed in the `MANIFEST.MF` file under Class-Path attribute.
 
 > **Note:**
 >
@@ -91,19 +91,19 @@ Let's assume you have already implemented the simple FTP Custom Connector with a
     Custom-Site: com.axway.st.plugins.site.sdk.ftp.FTPSite
     Class-Path: myftp/lib/sftp.jar
 
-Аdd your Custom Connector implementation jar to the `${FILEDRIVE_HOME}/plugins/transferSites/` directory and the `sftp.jar` file to the `${FILEDRIVE_HOME}/plugins/transferSites/lib/myftp/lib/` directory inside the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory. The final directory structure should look like this:
+Аdd your Custom Connector implementation jar to the `${FILEDRIVE_HOME}/plugins/transferSites/` directory and the `sftp.jar` file to the `${FILEDRIVE_HOME}/plugins/transferSites/lib/myftp/lib/` directory inside the {{< SecureTransport/componentshortname  >}} installation directory. The final directory structure should look like this:
 
 
     ${FILEDRIVE_HOME}/plugins/transferSites/myftp.jar
     ${FILEDRIVE_HOME}/plugins/transferSites/myftp/lib/sftp.jar
 
-After your custom connector jar file, including the third party libraries, is placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory, the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Service should be restarted in order to load and register your Custom Connector implementation as a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Transfer Site.
+After your custom connector jar file, including the third party libraries, is placed in the `${FILEDRIVE_HOME}/plugins/transferSites` directory, the {{< SecureTransport/componentshortname  >}} Administration Service should be restarted in order to load and register your Custom Connector implementation as a {{< SecureTransport/componentshortname  >}} Transfer Site.
 
 > **Note:**
 >
 > When you are deploying your Custom Connector implementation, you should only include third party dependencies used by your implementation. You should not add APIs provided run-time by SecureTransport. This includes the SecureTransport Pluggable Transfer Site SPI, Bean Validation API, and JSR-330 (javax.inject) API.
 
-For more details about implementing a Custom Connector, review the examples included in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Software Development Kit.
+For more details about implementing a Custom Connector, review the examples included in {{< SecureTransport/componentshortname  >}} Software Development Kit.
 
 ## Third-party libraries logging
 
@@ -120,13 +120,13 @@ For example:
 
  
 
-Third-party libraries loggers don't need any additional inclusion of logging libraries like `SLF4J, Log4j or JUL (java.util.logging)`. They will be loaded if needed, like any existing library in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> (`${FILEDRIVE_HOME}/lib/jar`). All <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> libraries will be loaded with priority in case of any duplicated libraries in plug-ins directory.  
+Third-party libraries loggers don't need any additional inclusion of logging libraries like `SLF4J, Log4j or JUL (java.util.logging)`. They will be loaded if needed, like any existing library in {{< SecureTransport/componentshortname  >}} (`${FILEDRIVE_HOME}/lib/jar`). All {{< SecureTransport/componentshortname  >}} libraries will be loaded with priority in case of any duplicated libraries in plug-ins directory.  
 
 For more information about the deployment of custom site connectors, refer to <a href="#" class="MCXref xref selected">Deploy a custom protocol connector</a>.  
 
 ## Expression language support
 
-Expression evaluator service will evaluate expressions that follow the supported expression language (EL). More detailed information about the Expression Language support in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can be found in SecureTransport Administrator’s Guide (*Appendix H: Expression Language*). The following sub-sections is applicable for the expression evaluator service:
+Expression evaluator service will evaluate expressions that follow the supported expression language (EL). More detailed information about the Expression Language support in {{< SecureTransport/componentshortname  >}} can be found in SecureTransport Administrator’s Guide (*Appendix H: Expression Language*). The following sub-sections is applicable for the expression evaluator service:
 
 1.  Expression Language operators
 2.  Predefined variables

@@ -2,7 +2,7 @@
     "title": "Encryption options",
     "linkTitle": "Encryption options",
     "weight": "200"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can encrypt a file before transferring it. You can specify the following options for files you are uploading:
+}{{< SecureTransport/componentshortname  >}} can encrypt a file before transferring it. You can specify the following options for files you are uploading:
 
 <table>
    <thead>
@@ -18,11 +18,11 @@
       </tr>
       <tr>
          <td>Encrypt Using PGP Key         </td>
-         <td>Determines if <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses PGP to encrypt the file and which PGP key it uses.         </td>
+         <td>Determines if {{< SecureTransport/componentshortname  >}} uses PGP to encrypt the file and which PGP key it uses.         </td>
       </tr>
       <tr>
          <td>Sign Using PGP Key         </td>
-         <td>Determines if <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> signs the file using a PGP key and which PGP key it uses.         </td>
+         <td>Determines if {{< SecureTransport/componentshortname  >}} signs the file using a PGP key and which PGP key it uses.         </td>
       </tr>
       <tr>
          <td>Compression         </td>
@@ -32,7 +32,7 @@
       </tr>
       <tr>
          <td>Encode Using ASCII Armor         </td>
-         <td>Determines if <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses ASCII armor encoding. ASCII armor refers to using binary-to-text encoding for plain text data.         </td>
+         <td>Determines if {{< SecureTransport/componentshortname  >}} uses ASCII armor encoding. ASCII armor refers to using binary-to-text encoding for plain text data.         </td>
       </tr>
       <tr>
          <td>Keep Original As         </td>

@@ -4,7 +4,7 @@
     "weight": "130"
 }Single Sign-On (SSO) is a user authentication process that authenticates the user for all the applications they have been given rights to and eliminates further prompts when they switch applications during a particular session. Essentially, it removes the need for your users to log into multiple applications in a particular browser session. Once they log into one system, it exchanges authentication data with another service you have SSO set up with and automatically logs the user in.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports signed authentication response assertions and this is transparent to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as long as correct configuration is supplied. A signed response proves it is sent from an intended Identity Provider. Adding an extra security layer by disabling plain SAML connections is highly recommended, and it ensures confidentiality. SAML profiles are configured by means of SAML bindings.
+{{< SecureTransport/componentshortname  >}} supports signed authentication response assertions and this is transparent to {{< SecureTransport/componentshortname  >}} as long as correct configuration is supplied. A signed response proves it is sent from an intended Identity Provider. Adding an extra security layer by disabling plain SAML connections is highly recommended, and it ensures confidentiality. SAML profiles are configured by means of SAML bindings.
 
 The Single Logout (SLO) profile enables a user to log out of all participating sites in a created session nearly simultaneously. The user may log out globally from any site, whether Service Provider (SP) or Identity Provider (IdP), as determined by respective Web applications. The associated IdP deployment handles all logout requests and responses for participating sites.
 
@@ -28,4 +28,4 @@ Supported protocols:
 
 It also supports user attribute mapping and authentication decisions on attribute maps.
 
-The SSO authentication process is owned and managed by an Identity Provider (IdP). The IdP provides a token authentication object consisting of a user name and a map of attributes. The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> filters and re-maps the attributes and prepares them to be consumed by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The SSO authentication process is owned and managed by an Identity Provider (IdP). The IdP provides a token authentication object consisting of a user name and a map of attributes. The {{< SecureTransport/componentshortname  >}} filters and re-maps the attributes and prepares them to be consumed by {{< SecureTransport/componentshortname  >}}.

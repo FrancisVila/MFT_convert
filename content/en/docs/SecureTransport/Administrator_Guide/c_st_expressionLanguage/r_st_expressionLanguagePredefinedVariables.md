@@ -2,7 +2,7 @@
     "title": "Predefined variables",
     "linkTitle": "Predefined variables",
     "weight": "290"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports the following predefined variables:
+}{{< SecureTransport/componentshortname  >}} supports the following predefined variables:
 
 <table>
    <thead>

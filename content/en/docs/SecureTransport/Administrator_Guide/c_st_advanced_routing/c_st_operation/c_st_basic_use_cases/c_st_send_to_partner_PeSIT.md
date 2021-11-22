@@ -29,8 +29,8 @@ Each incoming file is routed to a remote transfer site over PeSIT and the file i
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create a {{< SecureTransport/securetransportname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Create a PeSIT transfer site to route the file to. For PeSIT transfer site creation details, refer to <a href="../../../../accounts/transfersites/transfersites-pesit#Create" class="MCXref xref">PeSIT transfer sites</a>.
 -   Create a transfer profile that is used for the transfer. For transfer profile configuration details, refer to <a href="../../../../accounts/t_st_transferprofiles" class="MCXref xref">Transfer profiles</a>.
 -   Create a Folder Monitor transfer site that is used to archive the incoming files. For Folder Monitor transfer site configuration details, refer to <a href="../../../../accounts/transfersites/r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>.
@@ -39,7 +39,7 @@ Each incoming file is routed to a remote transfer site over PeSIT and the file i
 
 ## Steps to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Uncheck **Proceed with route execution on step failure**.
     2.  Configure the subscription folder.
     3.  (Optional) Configure the rest of the settings.
@@ -67,8 +67,8 @@ Each incoming file is routed to a remote transfer site over PeSIT and the file i
 
 ## Flow of events
 
-1.  A file is uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-2.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers route.
+1.  A file is uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
+2.  The {{< SecureTransport/advancedrouting >}} application triggers route.
 3.  The uploaded file is routed to the remote PeSIT transfer site and after that is archived to the folder specified in the Folder Monitor transfer site.
 
 > **Note:**

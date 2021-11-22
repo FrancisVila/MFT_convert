@@ -29,8 +29,8 @@ Transform end-of-line characters of each incoming file and publish the file to t
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create a {{< SecureTransport/securetransportname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 
  
 
@@ -38,7 +38,7 @@ Transform end-of-line characters of each incoming file and publish the file to t
 
 ## Step to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  (Optional) Configure the rest of the settings.
     3.  Click **Add** when done.
@@ -68,8 +68,8 @@ Transform end-of-line characters of each incoming file and publish the file to t
 
 ## Flow of events
 
-1.  A file with **\\u0025** end-of-line character and **WE8EBCDIC500** file encoding is uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-2.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers the route.
+1.  A file with **\\u0025** end-of-line character and **WE8EBCDIC500** file encoding is uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
+2.  The {{< SecureTransport/advancedrouting >}} application triggers the route.
 3.  The uploaded file’s end-of-line character is changed to **LF** and the file’s encoding is changed to **US-ASCII**.
 
 > **Note:**

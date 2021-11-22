@@ -2,7 +2,7 @@
     "title": "Incorrect host name and IP address in the host file",
     "linkTitle": "Incorrect host name and IP address in the host file",
     "weight": "270"
-}Verify that the correct IP addresses are in the `hosts` file for each system running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. Look in the hosts file for an entry for each host name with the correct IP address. This file is located in the /`etc` directory on UNIX-based systems. The `hosts` file can be found in the `WINNT\System32\drivers` directory on Windows Server.
+}Verify that the correct IP addresses are in the `hosts` file for each system running {{< SecureTransport/componentshortname  >}}. Look in the hosts file for an entry for each host name with the correct IP address. This file is located in the /`etc` directory on UNIX-based systems. The `hosts` file can be found in the `WINNT\System32\drivers` directory on Windows Server.
 
 Entries in the hosts file have the following format:
 

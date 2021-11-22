@@ -2,11 +2,11 @@
     "title": "Change the certificate keystore password",
     "linkTitle": "Change the certificate keystore password",
     "weight": "150"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> stores all the available certificates for the system in the Certificate Keystore and the database.
+}{{< SecureTransport/componentshortname  >}} stores all the available certificates for the system in the Certificate Keystore and the database.
 
 1.  Select **Setup > Certificates**.
 2.  Click the **Keystore Password** tab.
-3.  Type the old and new passwords, confirming the new one a second time. Leave the **Old Password** field empty if this is the first time you are changing the keystore password and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the default.
+3.  Type the old and new passwords, confirming the new one a second time. Leave the **Old Password** field empty if this is the first time you are changing the keystore password and {{< SecureTransport/componentshortname >}} uses the default.
 4.  Click **Update**.
 
 > **Note:**

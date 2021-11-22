@@ -2,7 +2,7 @@
     "title": "Local server configuration parameters",
     "linkTitle": "Local server configuration parameters",
     "weight": "160"
-}Most of the parameters included in the *Server Configuration* page apply to all servers in the cluster. The parameters that apply to the local <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and are not copied to other servers are marked with a check in the **Local** column.
+}Most of the parameters included in the *Server Configuration* page apply to all servers in the cluster. The parameters that apply to the local {{< SecureTransport/componentshortname  >}} Server and are not copied to other servers are marked with a check in the **Local** column.
 
 **Related topics:**
 

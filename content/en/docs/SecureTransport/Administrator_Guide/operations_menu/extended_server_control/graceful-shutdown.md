@@ -2,7 +2,7 @@
     "title": "Graceful shutdown ",
     "linkTitle": "Graceful shutdown",
     "weight": "160"
-}This topic discusses the concept of performing graceful shutdown of the different <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> components and specifics.
+}This topic discusses the concept of performing graceful shutdown of the different {{< SecureTransport/securetransportname  >}} components and specifics.
 
 <span id="Graceful3"></span>
 
@@ -115,13 +115,13 @@ The option to shut down the Transaction Manager gracefully is also exposed as a 
 
 <span id="Graceful2"></span>
 
-## Graceful shutdown of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server node
+## Graceful shutdown of {{< SecureTransport/componentshortname  >}} Server node
 
 > **Note:**
 >
 > Remember that before you proceed with graceful shutdown initiation, the Monitor Server must be stopped.
 
-Expand the **Actions** drop-down list on top of the extended *Server Control* page and select the **Shutdown Node Gracefully** to initiate a Graceful shutdown of the entire <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server node.
+Expand the **Actions** drop-down list on top of the extended *Server Control* page and select the **Shutdown Node Gracefully** to initiate a Graceful shutdown of the entire {{< SecureTransport/componentshortname  >}} Server node.
 
 This process undergoes three consecutive steps:
 
@@ -133,11 +133,11 @@ This process undergoes three consecutive steps:
 >
 > Make sure that there is no active streaming connection to an Edge server in order to successfully perform TM graceful shutdown.
 
-Each step will be executed after successful completion of the previous one. The extended *Server Control* page will have messages displayed, providing status on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server node components shutdown.
+Each step will be executed after successful completion of the previous one. The extended *Server Control* page will have messages displayed, providing status on {{< SecureTransport/componentshortname  >}} Server node components shutdown.
 
-After completion of step 3, the current <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server will not be processing any transfers until all services are restarted. You must perform these steps manually and no particular order is required.
+After completion of step 3, the current {{< SecureTransport/componentshortname  >}} Server will not be processing any transfers until all services are restarted. You must perform these steps manually and no particular order is required.
 
-The option to shut down the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server node gracefully is also exposed as a REST API resource. For more information, refer to the [Admin API Swagger documentation](http://apidocs.axway.com/swagger-ui/index.html?productname=SecureTransport&productversion=5.4&filename=securetransport-program-server-ws-5.4.0-5-st-ws-admin-docs-v14.json "SecureTransport Admin API Swagger documentation").
+The option to shut down the {{< SecureTransport/componentshortname  >}} Server node gracefully is also exposed as a REST API resource. For more information, refer to the [Admin API Swagger documentation](http://apidocs.axway.com/swagger-ui/index.html?productname=SecureTransport&productversion=5.4&filename=securetransport-program-server-ws-5.4.0-5-st-ws-admin-docs-v14.json "SecureTransport Admin API Swagger documentation").
 
 > **Note:**
 >
@@ -145,13 +145,13 @@ The option to shut down the <span class="mc-variable axway_variables.Component_S
 
 <span id="Graceful2"></span>
 
-## Graceful shutdown of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge node
+## Graceful shutdown of {{< SecureTransport/componentshortname  >}} Edge node
 
 > **Note:**
 >
 > Remember that before you proceed with graceful shutdown initiation, the Monitor Server must be stopped.
 
-Graceful shutdown on Edge is similar to that on <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server. Note that there is no Folder Monitor, Scheduler or Transaction Manager component on Edge; however there is the Proxy server.
+Graceful shutdown on Edge is similar to that on {{< SecureTransport/securetransportname  >}} Server. Note that there is no Folder Monitor, Scheduler or Transaction Manager component on Edge; however there is the Proxy server.
 
 As with Server, expand the **Actions** drop-down list on top of the extended *Server Control* page and select the **Shutdown Node Gracefully**.
 

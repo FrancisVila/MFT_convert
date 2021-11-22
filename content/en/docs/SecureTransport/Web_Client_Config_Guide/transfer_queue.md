@@ -2,7 +2,7 @@
     "title": "Upload settings",
     "linkTitle": "Transfer queue settings",
     "weight": "130"
-}You can manage the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> upload settings using the `transferQueue` property.
+}You can manage the upload settings using the `transferQueue` property.
 
 The following code snippet shows the upload defaults:
 

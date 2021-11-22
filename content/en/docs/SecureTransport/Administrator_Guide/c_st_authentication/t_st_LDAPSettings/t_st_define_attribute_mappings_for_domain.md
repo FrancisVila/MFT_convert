@@ -2,7 +2,7 @@
     "title": "Define attribute mappings for a domain",
     "linkTitle": "Define attribute mappings for a domain",
     "weight": "340"
-}For information about how <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the default attribute mappings, see <a href="../../c_st_ldap_logins" class="MCXref xref">LDAP logins</a>.
+}For information about how {{< SecureTransport/componentshortname  >}} uses the default attribute mappings, see <a href="../../c_st_ldap_logins" class="MCXref xref">LDAP logins</a>.
 
 The session variables available depend on the attribute mappings:
 
@@ -11,10 +11,10 @@ The session variables available depend on the attribute mappings:
 -   If you do not select **Map to Schema** for any custom mappings, all LDAP attributes are mapped to session variables named `LDAP_DIR_` followed by the attribute name.
 -   If you add a custom mapping, only those attributes added with **Map to Schema** selected are mapped to session variables named `LDAP_DIR_` followed by the attribute name.
 
-A multivalued LDAP attribute is mapped to several session variables. To use a multivalued LDAP variable, map it and check the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> session for the names of the session variables.
+A multivalued LDAP attribute is mapped to several session variables. To use a multivalued LDAP variable, map it and check the {{< SecureTransport/componentshortname  >}} session for the names of the session variables.
 
 1.  If you do not have the *New LDAP Domain* page open, select **Authentication > LDAP Domains** and click the domain name in the Domains List to open the *LDAP Domain* page.
-2.  Under *Attributes List*, for each <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attribute that will be mapped from an LDAP attribute, select **Map to Schema** to enable an attribute mapping.
+2.  Under *Attributes List*, for each {{< SecureTransport/componentshortname >}} attribute that will be mapped from an LDAP attribute, select **Map to Schema** to enable an attribute mapping.
 
 You can modify a default attribute mapping.
 
@@ -25,7 +25,7 @@ You can modify a default attribute mapping.
 You can define a mapping for a custom LDAP attribute.
 
 1.  Click **New Attribute**.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> adds a line to the *Attributes List*.
+    {{< SecureTransport/componentshortname >}} adds a line to the *Attributes List*.
 2.  Type the **Description**, **ST Attribute Name**, and **LDAP Attribute Name**.
 3.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the **Edit** column.
 4.  Select **Map to Schema** to enable the mapping.

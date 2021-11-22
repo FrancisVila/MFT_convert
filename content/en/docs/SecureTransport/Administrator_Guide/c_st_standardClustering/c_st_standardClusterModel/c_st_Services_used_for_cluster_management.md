@@ -2,7 +2,7 @@
     "title": "Services used for cluster management",
     "linkTitle": "Services used for cluster management",
     "weight": "140"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> implements the following services to manage and synchronize the cluster and the computers deployed in it.
+}{{< SecureTransport/componentshortname  >}} implements the following services to manage and synchronize the cluster and the computers deployed in it.
 
 The following topics describe the services used for cluster management:
 

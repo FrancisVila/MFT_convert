@@ -2,9 +2,9 @@
     "title": "Web client (HTTP and HTTPS) user authentication",
     "linkTitle": "Web client (HTTP and HTTPS) user authentication",
     "weight": "150"
-}Web clients can log in to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> directly or through the SiteMinder Single Sign-On (SSO) portal. Depending on the SiteMinder configuration, when a web client logs in, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can require a client certificate, which it presents to SiteMinder for authentication.
+}Web clients can log in to {{< SecureTransport/componentshortname  >}} directly or through the SiteMinder Single Sign-On (SSO) portal. Depending on the SiteMinder configuration, when a web client logs in, {{< SecureTransport/componentshortname  >}} can require a client certificate, which it presents to SiteMinder for authentication.
 
-When a web client logs on through the SiteMinder SSO portal, the portal authenticates the user and provides the client with a SiteMinder session cookie. When the client tries to access a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> resource, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> presents the user’s session cookie to SiteMinder for authentication.
+When a web client logs on through the SiteMinder SSO portal, the portal authenticates the user and provides the client with a SiteMinder session cookie. When the client tries to access a {{< SecureTransport/componentshortname  >}} resource, {{< SecureTransport/componentshortname  >}} presents the user’s session cookie to SiteMinder for authentication.
 
 > **Note:**
 >

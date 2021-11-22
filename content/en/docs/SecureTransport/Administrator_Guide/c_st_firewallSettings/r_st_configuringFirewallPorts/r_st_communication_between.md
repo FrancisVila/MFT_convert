@@ -2,7 +2,7 @@
     "title": "Communication between SecureTransport Server and SecureTransport Edge",
     "linkTitle": "Communication between SecureTransport Server and SecureTransport Edge",
     "weight": "300"
-}These port must be open between the private network and the peripheral network (DMZ) for the Transaction Manager Server on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to connect to the protocol servers on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. The protocol is the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> secure streaming protocol.
+}These port must be open between the private network and the peripheral network (DMZ) for the Transaction Manager Server on {{< SecureTransport/componentshortname  >}} Server to connect to the protocol servers on {{< SecureTransport/componentshortname  >}} Edge. The protocol is the {{< SecureTransport/componentshortname  >}} secure streaming protocol.
 
 -   20021 – FTP Server
 -   20022 – SSH Server

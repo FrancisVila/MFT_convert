@@ -2,11 +2,11 @@
     "title": "Implement a user interface",
     "linkTitle": "Implement a user interface",
     "weight": "90"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Transfer Sites can be created and modified through the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST API. In order to create a Pluggable Transfer Site that can be saved and modified by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrators, follow the steps:
+}{{< SecureTransport/componentshortname  >}} Transfer Sites can be created and modified through the {{< SecureTransport/componentshortname  >}} Administration Tool and {{< SecureTransport/componentshortname  >}} REST API. In order to create a Pluggable Transfer Site that can be saved and modified by {{< SecureTransport/componentshortname  >}} administrators, follow the steps:
 
 1\. Implement the interface `com.axway.st.plugins.site.UIBean` from the Pluggable Transfer Site SPI.
 
-The UIBean implementation must be a simple Java bean that describes the custom connector properties which will be saved into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database. These properties describe the connector and, depending on the protocol, they can contain host, port, username, upload folder and so on. They will be visualized in the Administration Tool when an administrator creates an instance of the Pluggable Transfer Site.
+The UIBean implementation must be a simple Java bean that describes the custom connector properties which will be saved into the {{< SecureTransport/componentshortname  >}} database. These properties describe the connector and, depending on the protocol, they can contain host, port, username, upload folder and so on. They will be visualized in the Administration Tool when an administrator creates an instance of the Pluggable Transfer Site.
 
 Below is an example implementation, called `FtpBean`, that demonstrates the creation of an FTP Pluggable Transfer Site.
 
@@ -86,13 +86,13 @@ The UIBean implementation must define accessor methods (get and set methods) for
         /** Holds the certificate id, of the private key to authenticat with.*/
         private String mClientCertificateIdLoginCertificate; 
 
-3\. Define the HTML file that will be loaded by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool on the *Transfer Sites* configuration page. The HTML file allows the administrator to create and save custom connectors to the database.
+3\. Define the HTML file that will be loaded by {{< SecureTransport/componentshortname  >}} Administration Tool on the *Transfer Sites* configuration page. The HTML file allows the administrator to create and save custom connectors to the database.
 
-The HTML file should display UIBean properties and should provide JavaScript functions for loading and saving these properties to the database. The JavaScript functions could be defined as a script inside the HTML file or in a separate JavaScript file. An example HTML file can be found in the example implementation of the Custom connector included in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Software Development Kit.
+The HTML file should display UIBean properties and should provide JavaScript functions for loading and saving these properties to the database. The JavaScript functions could be defined as a script inside the HTML file or in a separate JavaScript file. An example HTML file can be found in the example implementation of the Custom connector included in {{< SecureTransport/componentshortname  >}} Software Development Kit.
 
-You need to follow specific conventions when writing your JavaScript code to enable <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrators to create and save your Custom Transfer Site using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. Your JavaScript code must define the specific functions that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will call to save and load your custom site properties.
+You need to follow specific conventions when writing your JavaScript code to enable {{< SecureTransport/componentshortname  >}} administrators to create and save your Custom Transfer Site using the {{< SecureTransport/componentshortname  >}} Administration Tool. Your JavaScript code must define the specific functions that {{< SecureTransport/componentshortname  >}} will call to save and load your custom site properties.
 
-You must use the `pluginRegister` object, which is the integration point between the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration tool and your JavaScript code. The `pluginRegister` object is a special object that is exposed by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> allowing you to register a custom component that implements predefined load and save functions.
+You must use the `pluginRegister` object, which is the integration point between the {{< SecureTransport/componentshortname  >}} Administration tool and your JavaScript code. The `pluginRegister` object is a special object that is exposed by {{< SecureTransport/componentshortname  >}} allowing you to register a custom component that implements predefined load and save functions.
 
 For instance, your JavaScript code should look like:
 
@@ -110,7 +110,7 @@ For instance, your JavaScript code should look like:
         instance.save = save;
         return Object.seal(instance);
 
-When implementing the `load` function, you must use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST API to retrieve:
+When implementing the `load` function, you must use the {{< SecureTransport/componentshortname  >}} REST API to retrieve:
 
 -   Custom transfer site data from the database
 -   Available network zones
@@ -135,9 +135,9 @@ When implementing the `load` function, you must use the <span class="mc-variable
     } else {...
     }
 
-The custom transfer site is returned by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST API as a key-value map containing all custom site properties as described in the UIBean implementation. After retrieving these properties, they should be populated and displayed in the custom HTML file.
+The custom transfer site is returned by {{< SecureTransport/componentshortname  >}} REST API as a key-value map containing all custom site properties as described in the UIBean implementation. After retrieving these properties, they should be populated and displayed in the custom HTML file.
 
-When implementing the `save` function, you must collect all properties filled by the administrator in the custom HTML file and use a POST REST request to save the properties into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database. When you save custom properties as key-value pairs using POST REST request, the keys should be named exactly the same as the properties of the class that implemented the UIBean interface. If you want to implement validation for the site properties, you should add the validation in the save function. In order to propagate any validation errors, you should use the callback function with the desired error message as an argument:
+When implementing the `save` function, you must collect all properties filled by the administrator in the custom HTML file and use a POST REST request to save the properties into the {{< SecureTransport/componentshortname  >}} database. When you save custom properties as key-value pairs using POST REST request, the keys should be named exactly the same as the properties of the class that implemented the UIBean interface. If you want to implement validation for the site properties, you should add the validation in the save function. In order to propagate any validation errors, you should use the callback function with the desired error message as an argument:
 
 -   `callback(“Custom validation error”);`
 
@@ -145,7 +145,7 @@ If the save action is successful and there are no errors, the last action of the
 
 -   `callback();`
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST API resources
+## {{< SecureTransport/componentshortname  >}} REST API resources
 
 In order to save the custom transfer site, you should initiate an authorized POST REST request to the following resource:
 
@@ -165,6 +165,6 @@ Available network zones can be retrieved by GET REST request to the following re
 
 -   `/api/v2.0/zones`
 
-For more details about implementing the User Interface for the Custom Transfer Site, review the examples included in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Software Development Kit. The SDK can be downloaded from the[<span class="mc-variable axway_variables.support_website variable">Axway Support</span>](http://support.axway.com/) website.
+For more details about implementing the User Interface for the Custom Transfer Site, review the examples included in {{< SecureTransport/componentshortname  >}} Software Development Kit. The SDK can be downloaded from the[{{< SecureTransport/supportwebsite  >}}](http://support.axway.com/) website.
 
-For more information about the resources, refer to Swagger documentation for [<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> API 2.0](http://apidocs.axway.com/swagger-ui-st/admin-20/).
+For more information about the resources, refer to Swagger documentation for [{{< SecureTransport/componentshortname  >}} API 2.0](http://apidocs.axway.com/swagger-ui-st/admin-20/).

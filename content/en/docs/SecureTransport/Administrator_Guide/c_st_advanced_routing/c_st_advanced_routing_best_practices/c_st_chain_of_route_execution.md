@@ -2,7 +2,7 @@
     "title": "Chain of route execution",
     "linkTitle": "Chain of route execution",
     "weight": "250"
-}The following <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> steps are configured:
+}The following {{< SecureTransport/advancedrouting  >}} steps are configured:
 
 -   Route 1:
     -   Transformation 1: Compression

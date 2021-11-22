@@ -16,7 +16,7 @@ where:
 -   `%c` is the Java class name
 -   `%m` is the log message
 
-You might also find Java stack traces in these logs. <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Global Support can use these to determine the cause of a particular error condition.
+You might also find Java stack traces in these logs. {{< SecureTransport/companyname  >}} Global Support can use these to determine the cause of a particular error condition.
 
 The following table log4j configuration files in `<FILEDRIVEHOME>/conf`, the log output they control, and the default destinations.
 
@@ -62,7 +62,7 @@ The following table log4j configuration files in `<FILEDRIVEHOME>/conf`, the log
       </tr>
       <tr>
          <td><code>socks-log4j.xml</code><br />
-(Only on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge)         </td>
+(Only on {{< SecureTransport/componentshortname  >}} Edge)         </td>
          <td>SOCKS5 proxy         </td>
          <td><p>Database</p>         </td>
       </tr>
@@ -74,7 +74,7 @@ The following table log4j configuration files in `<FILEDRIVEHOME>/conf`, the log
       </tr>
       <tr>
          <td><p><code>tm-log4j.xml</code></p>
-<p>(Only on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server)</p>         </td>
+<p>(Only on {{< SecureTransport/componentshortname  >}} Server)</p>         </td>
          <td><p>TM Server</p>
 <p>internal agents</p>         </td>
          <td><p>Database<br />

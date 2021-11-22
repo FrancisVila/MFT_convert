@@ -27,7 +27,7 @@ Then install the less compiler (version 3.9.0), postcss-cli (version 5.0.1), aut
 
 ## Procedure
 
-The application is styled and branded by the following files and folders found in the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> installation folder:
+The application is styled and branded by the following files and folders found in the installation folder:
 
 -   `C/assets/wap.css` - Controls the color theme and the style. It is generated from several .less files delivered in the branding assets archive.
 -   `custom/stwebclient.config.json` - Controls the logos, the text header displayed next to the logo and the disclaimer on the login page.

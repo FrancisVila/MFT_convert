@@ -4,7 +4,7 @@
     "weight": "210"
 }Once your DR site is set up, you must maintain consistency with the production site as described in <a href="../../c_st_largeenterpriseclustermodel/c_st_passive_disaster_recovery#Large_Enterprise_Clustering_2746683174_1047112" class="MCXref xref">Passive disaster recovery</a> so that the data in the DR shared database and the DR shared file system are current.
 
-When you edit a configuration file or a script on an active <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, consider if you need to make the same changes on the corresponding server in the other site.
+When you edit a configuration file or a script on an active {{< SecureTransport/componentshortname  >}} Server or {{< SecureTransport/componentshortname  >}} Edge, consider if you need to make the same changes on the corresponding server in the other site.
 
 After you fail over to the DR cluster, you need to restore your production cluster’s functionality. Before you switch back to your production cluster and return your DR cluster to standby status, you must replicate the data in the DR shared database and the DR shared file system to the production site.
 

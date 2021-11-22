@@ -34,9 +34,9 @@
         >
         > The configured Minimum password age restriction does not apply when a SecureTransport administrator changes the password of another user or administrator account. Also, the policy does not apply when a user's or administrator's password expires or if they are forced to change their passwords. However, this restriction does apply when a SecureTransport administrator changes their own password.
 3.  Click **Apply.**
-4.  Restart the HTTP server on both the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+4.  Restart the HTTP server on both the {{< SecureTransport/componentshortname >}} Server and the {{< SecureTransport/componentshortname >}} Edge.
 
-If you are using a streaming setup and you change the password policy while a user is logged into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, the old password policy is displayed in the Browser Client when a user tries to change the password.
+If you are using a streaming setup and you change the password policy while a user is logged into {{< SecureTransport/componentshortname  >}}, the old password policy is displayed in the Browser Client when a user tries to change the password.
 
 If you are using an Enterprise Cluster and you change the password policy, a TM restart is required on all nodes of the cluster to apply the changes.
 

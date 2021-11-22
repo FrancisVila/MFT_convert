@@ -2,9 +2,9 @@
     "title": "Advanced Routing delegated administrator",
     "linkTitle": "Advanced Routing delegated administrator",
     "weight": "210"
-}The configuration of a delegated administrator for <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> requires creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator role and creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator with the specified administrator settings. The following topics provide the configuration details for creating the role of <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator and assigning the role to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator.
+}The configuration of a delegated administrator for {{< SecureTransport/advancedrouting  >}} requires creating an {{< SecureTransport/advancedrouting  >}} administrator role and creating an {{< SecureTransport/advancedrouting  >}} administrator with the specified administrator settings. The following topics provide the configuration details for creating the role of {{< SecureTransport/advancedrouting  >}} administrator and assigning the role to the {{< SecureTransport/advancedrouting  >}} administrator.
 
-The following topics provide how-to instructions for creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator role and creating an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator:
+The following topics provide how-to instructions for creating an {{< SecureTransport/advancedrouting  >}} administrator role and creating an {{< SecureTransport/advancedrouting  >}} administrator:
 
 -   <a href="#Create_role" class="MCXref xref">Create Advanced Routing administrator role</a>
 -   <a href="#Create_admin" class="MCXref xref">Create Advanced Routing administrator</a>
@@ -20,9 +20,9 @@ The following topics provide how-to instructions for creating an <span class="mc
 
 <span id="Create_role"></span>
 
-## Create <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator role
+## Create {{< SecureTransport/advancedrouting  >}} administrator role
 
-For details on creating administrative roles, refer to <a href="../../../c_st_advancedaccountadministration/c_st_administrativeroles" class="MCXref xref">Administrative roles</a>. The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator role should be created with the same settings as a delegated administrator plus the selection of *Route Packages* as shown in the following table and figure.
+For details on creating administrative roles, refer to <a href="../../../c_st_advancedaccountadministration/c_st_administrativeroles" class="MCXref xref">Administrative roles</a>. The {{< SecureTransport/advancedrouting  >}} administrator role should be created with the same settings as a delegated administrator plus the selection of *Route Packages* as shown in the following table and figure.
 
 <table>
    <thead>
@@ -34,7 +34,7 @@ For details on creating administrative roles, refer to <a href="../../../c_st_ad
    <tbody>
       <tr>
          <td>Role Name:         </td>
-         <td><span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> Administrator         </td>
+         <td>{{< SecureTransport/advancedrouting  >}} Administrator         </td>
       </tr>
       <tr>
          <td>Role Type:         </td>
@@ -80,9 +80,9 @@ For details on creating administrative roles, refer to <a href="../../../c_st_ad
 
 <span id="Create_admin"></span>
 
-## Create <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator
+## Create {{< SecureTransport/advancedrouting  >}} administrator
 
-For details on creating administrators, refer to <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>. An <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> administrator should be created with settings as shown in the following table and figure.
+For details on creating administrators, refer to <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>. An {{< SecureTransport/advancedrouting  >}} administrator should be created with settings as shown in the following table and figure.
 
 > **Note:**
 >
@@ -110,7 +110,7 @@ For details on creating administrators, refer to <a href="../../../c_st_advanced
       </tr>
       <tr>
          <td>Administrative Role:         </td>
-         <td><span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> Administrator         </td>
+         <td>{{< SecureTransport/advancedrouting  >}} Administrator         </td>
       </tr>
       <tr>
          <td>Parent Administrator:         </td>
@@ -121,7 +121,7 @@ For details on creating administrators, refer to <a href="../../../c_st_advanced
          <td>User determined - At least one Business Unit should be assigned         </td>
       </tr>
       <tr>
-         <td><span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span><br />
+         <td>{{< SecureTransport/advancedrouting  >}}<br />
 Administrator Selections         </td>
          <td>Update Users, Business Units, Applications, Route Package Templates, 'External Script' Step         </td>
       </tr>

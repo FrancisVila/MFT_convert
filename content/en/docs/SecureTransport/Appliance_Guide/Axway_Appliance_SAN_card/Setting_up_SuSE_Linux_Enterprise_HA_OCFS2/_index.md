@@ -89,7 +89,7 @@ Edit, or create if not present `/root/.ssh/config`. Add port 10022 as a default 
 
  
 
-The steps in the following topics need to be performed to configure a SUSE Linux Enterprise High Availability (SLEHA) OCFS2 cluster using the optional SAN card on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span><span class="mc-variable axway_variables.Release_Number variable">5.5</span> Virtual Appliance:
+The steps in the following topics need to be performed to configure a SUSE Linux Enterprise High Availability (SLEHA) OCFS2 cluster using the optional SAN card on {{< SecureTransport/componentshortname  >}}{{< SecureTransport/releasenumber  >}} Virtual Appliance:
 
 -   <a href="f_configure_first_node" class="MCXref xref">Setup SLEHA with OCFS2 using multicast on the first node</a> - Provides configuration instructions for setting SLEHA with OCFS2 using multicast on the first node of a cluster.
 -   <a href="f_setup_nth_node" class="MCXref xref">Setup N-th node in a cluster using multicast</a> - Provides configuration instructions for setting up the N-th node in a cluster using mulicast.

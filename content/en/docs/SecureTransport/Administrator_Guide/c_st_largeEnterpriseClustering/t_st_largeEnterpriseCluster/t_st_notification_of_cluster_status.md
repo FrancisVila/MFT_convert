@@ -2,7 +2,7 @@
     "title": "Notification of cluster status",
     "linkTitle": "Notification of cluster status",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can send an email notification when the number of online servers in the cluster falls below a limit that you set. If enabled, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends an email each time it detects a server failure. You can use this notification for the following purposes, among others:
+}{{< SecureTransport/componentshortname  >}} can send an email notification when the number of online servers in the cluster falls below a limit that you set. If enabled, {{< SecureTransport/componentshortname  >}} sends an email each time it detects a server failure. You can use this notification for the following purposes, among others:
 
 -   Set the limit to one less than the number of nodes in the cluster and use the notification to inform you to restore the node that is offline.
 -   Set the limit to one less than the number of nodes required for acceptable performance and use the notification to inform you to evaluate whether to fail over to your standby disaster recovery site.

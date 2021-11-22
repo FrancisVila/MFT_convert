@@ -26,7 +26,7 @@ This topic provides a general procedure for creating a transfer site for an acco
 5.  In the **Site Name** box, enter a unique name for the transfer site.
 6.  The Site Name is unique per account. Two sites could have the same names if they are associated with different accounts.
 7.  Select an **Site Type**. Use this parameter to differentiate between sites that transfer files internally and those that transfer files between partners. Choose from the following:
-    -   **Unspecified** – Default value. All transfer sites created using previous versions of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> have this value.
+    -   **Unspecified** – Default value. All transfer sites created using previous versions of {{< SecureTransport/componentshortname >}} have this value.
     -   **Internal** – Transfers for this site occur within a single organization.
     -   **Partner** – Transfers for this site occur between organizations.
 8.  Select the protocol that the transfer site uses for file transfers. The supported protocols are AS2, FTP(S), HTTP(S), SSH (SFTP and SCP), PeSIT, Connect:Direct, Folder Monitor, System to Human, Generic-HTTP(S), and SharePoint.

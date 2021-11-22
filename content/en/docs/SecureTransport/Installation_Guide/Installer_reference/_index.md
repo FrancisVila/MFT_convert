@@ -6,9 +6,9 @@
 
 ## About Axway Installer
 
-The Axway Installer is an installation program for uniform and consistent installation of Axway products. The installer is used to install, configure, update, and uninstall <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The Axway Installer is an installation program for uniform and consistent installation of Axway products. The installer is used to install, configure, update, and uninstall {{< SecureTransport/componentshortname  >}}.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> uses Axway Installer version 4.10.6 SP7.
+{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} uses Axway Installer version 4.10.6 SP7.
 
 ## Installer modes
 
@@ -81,7 +81,7 @@ The Configure function enables you to change settings that were applied during i
 
 The Update function enables you to apply or remove service packs and patches.
 
-The following sections provide more details on how the installer functions are used with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The following sections provide more details on how the installer functions are used with {{< SecureTransport/componentshortname  >}}.
 
 -   <a href="install" class="MCXref xref">Install product</a>
 -   <a href="update" class="MCXref xref">Update product</a>

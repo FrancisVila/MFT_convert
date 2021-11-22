@@ -4,7 +4,7 @@
     "weight": "180"
 }A subscription provides a functional connection between a user account and an application.
 
-For each subscription, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> creates a subscription folder and stores and manages all files that are transferred or transformed as a result of the application activity. A single application can have subscriptions from multiple accounts and a single account can subscribe to multiple applications. An account can subscribe to new instances of the same application as long as each instance has a unique subscription folder name.
+For each subscription, {{< SecureTransport/componentshortname  >}} creates a subscription folder and stores and manages all files that are transferred or transformed as a result of the application activity. A single application can have subscriptions from multiple accounts and a single account can subscribe to multiple applications. An account can subscribe to new instances of the same application as long as each instance has a unique subscription folder name.
 
 Additional transfer configurations are possible for subscriptions. Use subscriptions to trigger the execution of specific actions, defined in the respective application, when a subscription event occurs, such as an incoming file transfer in the dedicated subscription folder.
 

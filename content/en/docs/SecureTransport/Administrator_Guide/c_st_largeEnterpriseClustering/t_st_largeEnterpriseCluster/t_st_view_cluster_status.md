@@ -7,17 +7,17 @@
 1.  Select **Operations > Cluster Management.**  
     The *Cluster Management* page is displayed.
 2.  In the **Servers** table, check the **Status** column.
-    -   **Online** – The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server is reachable and both the TM and Administration Tool server are running.
-    -   **Offline** – Either the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server is not reachable, the Transaction Manager is not running, or the Administration Tool server is not running.
+    -   **Online** – The {{< SecureTransport/componentshortname >}} Server is reachable and both the TM and Administration Tool server are running.
+    -   **Offline** – Either the {{< SecureTransport/componentshortname >}} Server is not reachable, the Transaction Manager is not running, or the Administration Tool server is not running.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> makes an entry in the server log when a server in the cluster goes offline.
+{{< SecureTransport/componentshortname  >}} makes an entry in the server log when a server in the cluster goes offline.
 
 To refresh the **Status** column, select **Operations &gt; Cluster Management**.
 
-If the status of a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server is Offline, you can check its status in more detail.
+If the status of a {{< SecureTransport/componentshortname  >}} Server is Offline, you can check its status in more detail.
 
 -   Log in to the server using the Administration Tool, select **Operations > Server Control**, and make sure that the TM Server is running.
--   If you cannot connect to the server using the Administration Tool, log in to the computer that hosts the server and make sure that the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and TM server are running.
+-   If you cannot connect to the server using the Administration Tool, log in to the computer that hosts the server and make sure that the {{< SecureTransport/componentshortname >}} Administration Tool and TM server are running.
 
 > **Note:**
 >

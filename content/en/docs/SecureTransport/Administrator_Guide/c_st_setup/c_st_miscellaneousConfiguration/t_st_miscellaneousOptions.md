@@ -104,7 +104,7 @@ To disable reverse DNS lookups for the Administration Tool server, see <a href="
 
 ## Set the session timeout
 
-You can set a session timeout for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> so that users are automatically logged out if they are inactive for the specified duration. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses separate values for the session timeout for the SecureTransport Edge and SecureTransport Server. For example, when logged into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, the Edge session timeout value is applied and when logged into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server, the Server value is applied.
+You can set a session timeout for {{< SecureTransport/componentshortname  >}} so that users are automatically logged out if they are inactive for the specified duration. {{< SecureTransport/componentshortname  >}} uses separate values for the session timeout for the SecureTransport Edge and SecureTransport Server. For example, when logged into the {{< SecureTransport/componentshortname  >}} Edge, the Edge session timeout value is applied and when logged into the {{< SecureTransport/componentshortname  >}} Server, the Server value is applied.
 
 1.  Select **Setup > Miscellaneous** and view the *Miscellaneous Options* pane.
 2.  Enter the number of seconds (60 seconds minimum) in the **Session Timeout** field to specify the session timeout duration.
@@ -114,12 +114,12 @@ You can set a session timeout for <span class="mc-variable axway_variables.Compo
 
 ## Select a default HTML template
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides several different templates that change the look and feel of the web client user interface. The available options include: <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Legacy Client, <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Jelly Ball 9, <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Box and Stripe in Blue, and ST Web Client. If you configure a user account to use the default HTML template, it uses the one you configure here. For more information about the web clients, refer to the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Web Client User’s Guide*.
+{{< SecureTransport/componentshortname  >}} provides several different templates that change the look and feel of the web client user interface. The available options include: {{< SecureTransport/componentshortname  >}} Legacy Client, {{< SecureTransport/companyname  >}} Jelly Ball 9, {{< SecureTransport/companyname  >}} Box and Stripe in Blue, and ST Web Client. If you configure a user account to use the default HTML template, it uses the one you configure here. For more information about the web clients, refer to the *{{< SecureTransport/componentshortname  >}} Web Client User’s Guide*.
 
 ### Select a default HTML template for web client users
 
 1.  Select **Setup > Miscellaneous** and view the *Miscellaneous Options* pane.
-2.  Select one of the templates from the **HTML Template** field. There are four choices that ship with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>: <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Legacy Client, <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Jelly Ball 9, <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Box and Stripe in Blue, and ST Web Client.
+2.  Select one of the templates from the **HTML Template** field. There are four choices that ship with {{< SecureTransport/componentshortname >}}: {{< SecureTransport/componentshortname >}} Legacy Client, {{< SecureTransport/companyname >}} Jelly Ball 9, {{< SecureTransport/companyname >}} Box and Stripe in Blue, and ST Web Client.
 3.  Click **Apply**.
 
 > **Note:**
@@ -128,7 +128,7 @@ You can set a session timeout for <span class="mc-variable axway_variables.Compo
 
 ### Use the HTML templates in a new locale
 
-You can adapt a HTML template to a different locale by copying the existing template files and editing them. You also need to create a file for each locale named `skin.conf` that contains the descriptive information for the HTML Template. The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Legacy Client template resides in `<FILEDRIVEHOME>/share/ftdocs/html/C`. In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, `C` is the default locale.
+You can adapt a HTML template to a different locale by copying the existing template files and editing them. You also need to create a file for each locale named `skin.conf` that contains the descriptive information for the HTML Template. The {{< SecureTransport/componentshortname  >}} Legacy Client template resides in `<FILEDRIVEHOME>/share/ftdocs/html/C`. In {{< SecureTransport/componentshortname  >}}, `C` is the default locale.
 
 This configuration is not applicable to the ST Web Client.
 

@@ -2,7 +2,7 @@
     "title": "Manage private certificates",
     "linkTitle": "Manage private certificates",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses private certificates to log in to remote transfer sites for this account, as well as for decrypting and signing PGP and AS2 data.
+}{{< SecureTransport/componentshortname  >}} uses private certificates to log in to remote transfer sites for this account, as well as for decrypting and signing PGP and AS2 data.
 
 You can view, generate, import and delete private certificates for the active account from the *Private Certificates* page.
 
@@ -40,7 +40,7 @@ Use the following procedure to export the SSH public key of an X509 private cert
 
 ## Generate private certificates
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> generates X509, SSH, and PGP private certificates.
+{{< SecureTransport/componentshortname  >}} generates X509, SSH, and PGP private certificates.
 
 ### Generate an X509 private certificate
 
@@ -78,7 +78,7 @@ Use the following procedure to generate a PGP private certificate.
 
 ## Import a private certificate
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> imports X509, PGP, and SSH private certificates.
+{{< SecureTransport/componentshortname  >}} imports X509, PGP, and SSH private certificates.
 
 <span id="Import3"></span>
 

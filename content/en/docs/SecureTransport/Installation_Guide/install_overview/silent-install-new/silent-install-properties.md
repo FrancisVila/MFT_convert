@@ -5,7 +5,7 @@
 }  
 
 The following table presents some useful configuration properties you can edit in the  
-`Install_SecureTransport_<st-version>.properties` file to perform silent installation of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. <u>Make sure to remove any empty valued properties</u> as leaving these properties blank might adversely affect your silent installation!
+`Install_SecureTransport_<st-version>.properties` file to perform silent installation of {{< SecureTransport/componentshortname  >}}. <u>Make sure to remove any empty valued properties</u> as leaving these properties blank might adversely affect your silent installation!
 
 <table>
          
@@ -39,12 +39,12 @@ The following table presents some useful configuration properties you can edit i
       <tr>
          <td><p>Server</p>
 <p><em>boolean</em></p>         </td>
-         <td>A flag that specifies if you're installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Must be set to <code>false</code> when installing <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edge.         </td>
+         <td>A flag that specifies if you're installing {{< SecureTransport/componentshortname  >}} Server. Must be set to <code>false</code> when installing {{< SecureTransport/securetransportname  >}} Edge.         </td>
       </tr>
       <tr>
          <td><p>Edge</p>
 <p><em>boolean</em></p>         </td>
-         <td>A flag that specifies if you're installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. Must be set to <code>false</code> when installing <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server.         </td>
+         <td>A flag that specifies if you're installing {{< SecureTransport/componentshortname  >}} Edge. Must be set to <code>false</code> when installing {{< SecureTransport/securetransportname  >}} Server.         </td>
       </tr>
       <tr>
          <td><p><code>dbType</code></p>
@@ -55,13 +55,13 @@ The following table presents some useful configuration properties you can edit i
 <li><p><code>useDBLocal</code> for the embedded database (MySQL or Mariadb)</p></li>
 <li><p><code>useOracleExternal</code>, <code>useOracleExternal</code>, useMSSQLExternal, <code>usePostgreSQLExternal</code> for an external database</p></li>
 </ul>
-<p>Must be set to <code>useDBLocal</code> when installing <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Edge.</p>
+<p>Must be set to <code>useDBLocal</code> when installing {{< SecureTransport/securetransportname  >}} Edge.</p>
 <p>For more information, see <a href="#Database" class="MCXref xref">Database-specific configurable properties</a>.</p>         </td>
       </tr>
       <tr>
          <td><p>externalDBUseExistingSchema</p>
 <p><em>boolean</em></p>         </td>
-         <td><p>A flag that specifies if you're using an external database. Not applicable to <span class="mc-variable suite_variables.SecureTransportEdgeName variable">SecureTransport Edge</span> installation.</p>
+         <td><p>A flag that specifies if you're using an external database. Not applicable to {{< SecureTransport/securetransportedgename  >}} installation.</p>
 <p><strong>Important!</strong> In a EC deployment using an external database (Oracle or MSSQL), you must configure this value to <code>false</code> with the first Server node and to <code>true</code> all subsequent Server deployments in your EC.</p>         </td>
       </tr>
       <tr>
@@ -78,13 +78,13 @@ The following table presents some useful configuration properties you can edit i
          <td><p>enableLogRotation</p>
 <p><em>boolean</em></p>
 <p> </p>         </td>
-         <td><p>A flag that specifies if the system should perform automatic backup and purging of log files. When true, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server backups log files, generated on the respective day, and creates a new one for the subsequent day.</p>         </td>
+         <td><p>A flag that specifies if the system should perform automatic backup and purging of log files. When true, {{< SecureTransport/componentshortname  >}} Server backups log files, generated on the respective day, and creates a new one for the subsequent day.</p>         </td>
       </tr>
       <tr>
          <td>SecretFilePath         </td>
          <td><p>The path to the <code>taeh</code> file you copied to this system. If blank, the installer creates a new secret file.</p>
 <ul>
-<li><p>If you are installing the first server in a cluster, you can specify a secret file or have the installer create one. Before you install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on the other cluster nodes, you must copy the secret file to those systems.</p></li>
+<li><p>If you are installing the first server in a cluster, you can specify a secret file or have the installer create one. Before you install {{< SecureTransport/componentshortname  >}} on the other cluster nodes, you must copy the secret file to those systems.</p></li>
 <li><p>If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. See <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.</p></li>
 </ul>         </td>
       </tr>
@@ -130,18 +130,18 @@ The following table presents the database properties you must configure, dependi
          <td><p>Listener port of your embedded database: <code>33060</code> by default</p>         </td>
       </tr>
       <tr>
-         <td><span class="code">internalDBPort.Type</span>
+         <td><code>internalDBPort.Type</code>
 <p><em>enum</em></p>         </td>
          <td><p>A flag identifying the embedded listener port type: set to <code>IPPortOwner</code></p>         </td>
       </tr>
       <tr>
-         <td><span class="code">internalDBPort.Max</span>
+         <td><code>internalDBPort.Max</code>
 <p><em>integer</em></p>         </td>
          <td><p>Upper threshold of embedded port range</p>
 <p><u>example</u>: <code>65535</code></p>         </td>
       </tr>
       <tr>
-         <td><span class="code">internalDBPort.Min</span>
+         <td><code>internalDBPort.Min</code>
 <p><em>integer</em></p>         </td>
          <td><p>Lower threshold of embedded port range</p>
 <p><u>example</u>: <code>1024</code></p>         </td>
@@ -393,7 +393,7 @@ MariaDB only         </td>
          <td>Type of SSL certificate: set this value to <code>File</code>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">externalDBUseSecureConnection</span></p>
+         <td><p><code>externalDBUseSecureConnection</code></p>
 <p><em>boolean</em></p>         </td>
          <td>A flag that specifies whether to use SSL encrypted communication to your external database. Its value must be the same as the one of the <code>mssqlUseSecureConnection</code> property: either <code>true</code> or <code>false</code>         </td>
       </tr>
@@ -503,12 +503,12 @@ MariaDB only         </td>
          <td>Type of SSL certificate: set this value to <code>File</code>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">postgreCertificateCN</span></p>
+         <td><p><code>postgreCertificateCN</code></p>
 <p><em>[string]</em></p>         </td>
          <td>SSL certificate common name         </td>
       </tr>
       <tr>
-         <td><p><span class="code">externalDBUseSecureConnection</span></p>
+         <td><p><code>externalDBUseSecureConnection</code></p>
 <p><em>boolean</em></p>         </td>
          <td>A flag that specifies whether to use SSL encrypted communication to your external database. Its value must be the same as the one of the <code>postgreUseSecureConnection</code> property: either <code>true</code> or <code>false</code>         </td>
       </tr>
@@ -529,11 +529,11 @@ MariaDB only         </td>
 
 <span id="Configur"></span>
 
-## Configurable database parameters for Clustered <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployments
+## Configurable database parameters for Clustered {{< SecureTransport/componentshortname  >}} deployments
 
 Standard Cluster works with an embedded MariaDB database (or MySQL, only on AIX). No additional edits are required.
 
-Enterprise Cluster (EC) deployments offer the use of external databases which adds some additional steps in performing successful silent installation on all nodes. To simplify this process, we can separate the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server deployments apart from the <span class="mc-variable SecureTransport_Variables.st_server_edge variable">SecureTransport Edge</span> deployments. The big difference is in the fact that Server nodes are in EC deployment (using an external database) while Edge nodes are in Standard Cluster deployment (using an embedded database).
+Enterprise Cluster (EC) deployments offer the use of external databases which adds some additional steps in performing successful silent installation on all nodes. To simplify this process, we can separate the {{< SecureTransport/componentshortname  >}} Server deployments apart from the deployments. The big difference is in the fact that Server nodes are in EC deployment (using an external database) while Edge nodes are in Standard Cluster deployment (using an embedded database).
 
 When using external databases (Oracle, MSSQL or PostgreSQL) you must make sure the correct values are added to the respective properties, as listed in the following table:
 

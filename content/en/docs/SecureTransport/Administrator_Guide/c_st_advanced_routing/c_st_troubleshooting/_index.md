@@ -2,7 +2,7 @@
     "title": "Troubleshoot Advanced Routing",
     "linkTitle": "Troubleshoot Advanced Routing",
     "weight": "250"
-}This topic outlines the specific troubleshooting steps for <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> as well as some general troubleshooting approach recommendations.
+}This topic outlines the specific troubleshooting steps for {{< SecureTransport/advancedrouting  >}} as well as some general troubleshooting approach recommendations.
 
 The following troubleshooting procedures are provided:
 

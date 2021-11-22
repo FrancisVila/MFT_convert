@@ -71,7 +71,7 @@ To filter uploads by status, select the desired filter from the **All statuses**
 
 ## Refresh AR trigger file status
 
-When an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> trigger file is retried, it is shown in a Waiting status until all files listed in it are processed. To see if the status of a trigger file has changed:
+When an {{< SecureTransport/advancedrouting  >}} trigger file is retried, it is shown in a Waiting status until all files listed in it are processed. To see if the status of a trigger file has changed:
 
 1.  Select the trigger file.
 2.  Click the **Refresh status** button at the top of the *Uploads Monitor* pane.

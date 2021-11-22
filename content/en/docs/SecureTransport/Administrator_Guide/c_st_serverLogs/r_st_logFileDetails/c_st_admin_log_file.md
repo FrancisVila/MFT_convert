@@ -2,7 +2,7 @@
     "title": "Admin log file",
     "linkTitle": "Admin log file",
     "weight": "310"
-}**audit.log** – This log file contains information on configuration changes made by Java components of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool and database starts and stops. When the configuration changes are logged to the database (the default), failed administrator login attempts and database starts, stops, and configuration changes are still logged to this file.
+}**audit.log** – This log file contains information on configuration changes made by Java components of the {{< SecureTransport/componentshortname  >}} Administration Tool and database starts and stops. When the configuration changes are logged to the database (the default), failed administrator login attempts and database starts, stops, and configuration changes are still logged to this file.
 
 The format and content of this file is controlled by the `<FILEDRIVEHOME>/conf/admin-log4j.xml` file. This file uses the log4j format. By default, the logs are in the following format:
 

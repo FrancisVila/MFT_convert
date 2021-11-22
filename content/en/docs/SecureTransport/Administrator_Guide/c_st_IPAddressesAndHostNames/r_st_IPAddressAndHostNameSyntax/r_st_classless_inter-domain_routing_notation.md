@@ -2,7 +2,7 @@
     "title": "Range of address using  Classless Inter-Domain Routing notation",
     "linkTitle": "Range of address using Classless Inter-Domain Routing notation",
     "weight": "310"
-}Classless Inter-Domain Routing (CIDR) notation specifies an IPv4 or IPv6 address and a number of significant bits separated by a slash (`/`). In other contexts, CIDR notation is used to specify an IP address and a subnet. For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, use CIDR notation to represent a range of IP addresses.
+}Classless Inter-Domain Routing (CIDR) notation specifies an IPv4 or IPv6 address and a number of significant bits separated by a slash (`/`). In other contexts, CIDR notation is used to specify an IP address and a subnet. For {{< SecureTransport/componentshortname  >}}, use CIDR notation to represent a range of IP addresses.
 
 Examples of valid values include the following:
 

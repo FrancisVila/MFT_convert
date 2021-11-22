@@ -5,7 +5,7 @@
 }The transfer related EL expressions are derived from the use case where:
 
 -   A LDAP user has an account template (*template-routes*) which is:
-    -   Subscribed to an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application - *ba* and assigned:
+    -   Subscribed to an {{< SecureTransport/advancedrouting >}} application - *ba* and assigned:
         -   Subscription folder - (*/ba*)
         -   Business unit - (*bu*)
         -   Account home folder - `/home/vusers/bu/user`
@@ -33,47 +33,47 @@ The following table provides the transfer related EL expressions from the use ca
       <tr>
          <td><p>DXAGENT_TARGETPATH</p>         </td>
          <td><p>transfer.targetDirFull</p>         </td>
-         <td><p><span class="code">${parentFolder(transfer.targetDirFull) eq account.home}</span></p>         </td>
+         <td><p><code>${parentFolder(transfer.targetDirFull) eq account.home}</code></p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_TRANSFERRED_BYTES</p>         </td>
          <td><p>transfer.<br />
 transferredBytes</p>         </td>
-         <td><p><span class="code">${transfer.transferredBytes ge 20}</span></p>         </td>
+         <td><p><code>${transfer.transferredBytes ge 20}</code></p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_TRANSFER_STATUS_START_TIME</p>         </td>
          <td><p>transfer.startTime</p>         </td>
-         <td><p><span class="code">${transfer.startTime lt transfer.endTime}</span></p>         </td>
+         <td><p><code>${transfer.startTime lt transfer.endTime}</code></p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_TIMESTAMP_INCOMING_END</p>         </td>
          <td><p>transfer.endTime</p>         </td>
-         <td><p><span class="code">${transfer.endTime gt transfer.startTime}</span></p>         </td>
+         <td><p><code>${transfer.endTime gt transfer.startTime}</code></p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_XFERTYPE</p>         </td>
          <td><p>transfer.xferType</p>         </td>
-         <td><p><span class="code">${transfer.xferType eq "A"}</span></p>
-<p><span class="code">${transfer.xferType eq "I"}</span></p>         </td>
+         <td><p><code>${transfer.xferType eq "A"}</code></p>
+<p><code>${transfer.xferType eq "I"}</code></p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_TARGETDIR</p>         </td>
          <td><p>transfer.targetDir</p>         </td>
-         <td><p><span class="code">${concat(transfer.targetDir.substring(0,1), leadingFolder(session.workDir)) eq transfer.targetDir}</span> - returns true</p>         </td>
+         <td><p><code>${concat(transfer.targetDir.substring(0,1), leadingFolder(session.workDir)) eq transfer.targetDir}</code> - returns true</p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_FULLTARGET</p>         </td>
          <td><p>transfer.targetFull</p>         </td>
-         <td><p><span class="code">${filename(transfer.targetFull).matches('part.*.crt')}</span> - returns true</p>
-<p><span class="code">${extension(transfer.target) eq extension(filename(transfer.targetFull))}</span> - returns true</p>         </td>
+         <td><p><code>${filename(transfer.targetFull).matches('part.*.crt')}</code> - returns true</p>
+<p><code>${extension(transfer.target) eq extension(filename(transfer.targetFull))}</code> - returns true</p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_TARGET</p>         </td>
          <td><p>transfer.target</p>         </td>
-         <td><p><span class="code">${transfer.target.matches('.*.crt') ? 1 : 0}</span>
+         <td><p><code>${transfer.target.matches('.*.crt') ? 1 : 0}</code>
 - will return 1</p>
-<p><span class="code">${extract(basename(transfer.target),'_',1) eq 'partner1'}</span>
+<p><code>${extract(basename(transfer.target),'_',1) eq 'partner1'}</code>
 - will return true</p>
 <p>${basename(transfer.target).replace('(.*)_(.*)', '$2_$1') eq 'certificate_partner')</p>         </td>
       </tr>

@@ -24,11 +24,11 @@ The Decompress step processes files in the following manner:
    <thead>
       <tr>
 <th style="text-align: center;" class="HeadE-Column1-Header1">Process only result from preceding step<br />
-<span style="font-weight: normal;">checkbox status</span>         </th>
+         </th>
 <th style="text-align: center;" class="HeadE-Column1-Header1">Name filter<br />
-<span style="font-weight: normal;">option selected</span>         </th>
+         </th>
 <th style="text-align: center;" class="HeadD-Column1-Header1">Input files<br />
-<span style="font-weight: normal;">result</span>         </th>
+         </th>
       </tr>
    </thead>
    <tbody>
@@ -73,7 +73,7 @@ To use a file name pattern to identify files to decompress:
 
 ## Collision Settings
 
-The Decompress step discards the directory structure of the archive and extracts all files into the same directory. To avoid name collisions, you can instruct <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> how to handle archives containing files with the same name:
+The Decompress step discards the directory structure of the archive and extracts all files into the same directory. To avoid name collisions, you can instruct {{< SecureTransport/componentshortname  >}} how to handle archives containing files with the same name:
 
 The following options are available:
 

@@ -4,7 +4,7 @@
     "weight": "320"
 }**xferlog** – This log file contains information about uploads and downloads for all protocols.
 
-The xferlog file records information about all the AS2, FTP(S), HTTP(S), PeSIT, SFTP, Connect:Direct, and Folder Monitor transfers made with <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and Edge. This information is also stored in the database.
+The xferlog file records information about all the AS2, FTP(S), HTTP(S), PeSIT, SFTP, Connect:Direct, and Folder Monitor transfers made with {{< SecureTransport/componentshortname  >}} Server and Edge. This information is also stored in the database.
 
 Each server entry is composed of a single line of the format shown below. All fields are separated by spaces.
 
@@ -113,7 +113,7 @@ The following is an example of a typical log entry:
 >
 > On Windows, it is not possible to modify existing cron jobs or to use cron to run any jobs other than those SecureTransport jobs documented in these topics. Instead, use the Windows Task Scheduler.
 
-**tools.log** – This log4j-format log file records warnings and error from internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> components. The format and content of this file is controlled by the `<FILEDRIVEHOME>/conf/tools-log4j.xml` file.
+**tools.log** – This log4j-format log file records warnings and error from internal {{< SecureTransport/componentshortname  >}} components. The format and content of this file is controlled by the `<FILEDRIVEHOME>/conf/tools-log4j.xml` file.
 
 For example, importing accounts using command-line tool might produce the following message:
 

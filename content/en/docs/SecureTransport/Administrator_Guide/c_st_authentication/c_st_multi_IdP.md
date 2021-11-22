@@ -2,7 +2,7 @@
     "title": "Multiple Identity Provider configuration",
     "linkTitle": "Multiple Identity Provider configuration",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports the multiple Identity Provider configuration. First, you should configure every Identity Provider. Then, for every Identity provider follow the steps described for administrators and end-users. Refer to <a href="../c_st_enable_sso_admin#Enable" class="MCXref xref">Enable Single Sign-On (SSO) for administrators</a> and <a href="../c_st_enable_sso_endusers#Enable2" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a>.
+}{{< SecureTransport/componentshortname  >}} supports the multiple Identity Provider configuration. First, you should configure every Identity Provider. Then, for every Identity provider follow the steps described for administrators and end-users. Refer to <a href="../c_st_enable_sso_admin#Enable" class="MCXref xref">Enable Single Sign-On (SSO) for administrators</a> and <a href="../c_st_enable_sso_endusers#Enable2" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a>.
 
 > **Note:**
 >
@@ -40,10 +40,6 @@ To configure Identity provider resolution for administrators, open the `sso-admi
 **Query parameter resolution example:**
 
 
-    <QueryParameter name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-    </QueryParameter>
 
 > **Note:**
 >
@@ -57,17 +53,13 @@ In the example above we already have 2 identity providers defined in `sso-admin.
 
 Suppose we have the following request:
 
--   `https://<ST>/?idp_id=shibbolethIdp`, where `<ST>` is the IP of the running <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> instance.
+-   `https://<ST>/?idp_id=shibbolethIdp`, where `<ST>` is the IP of the running {{< SecureTransport/securetransportname >}} instance.
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will choose the Identity Provider with an e`ntityId=’https://st.shibboleth.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
+{{< SecureTransport/securetransportname  >}} will choose the Identity Provider with an e`ntityId=’https://st.shibboleth.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
 
 **Header resolution example:**
 
 
-    <Header name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-    </Header>
 
 > **Note:**
 >
@@ -79,11 +71,11 @@ Suppose we have the following request:
 
 In the example above we already have two Identity Providers defined in the `sso-admin.xml` file.
 
-Suppose we have request to the running <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> instance that contains the following Header:
+Suppose we have request to the running {{< SecureTransport/securetransportname  >}} instance that contains the following Header:
 
 -   `keycloakIdp : https://st.keycloak.axway.int/`
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will choose the Identity Provider with an `entityId= ‘https://st.keycloak.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
+{{< SecureTransport/securetransportname  >}} will choose the Identity Provider with an `entityId= ‘https://st.keycloak.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
 
 ## Identity provider resolution for end-users
 
@@ -92,11 +84,6 @@ To configure Identity provider resolution for end-users, open the `sso-enduser.x
 **Query parameter resolution example:**
 
 
-    <QueryParameter name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-        <Mapping value="kerbIdP" entityId="kerberos" />
-    </QueryParameter>
 
 > **Note:**
 >
@@ -110,18 +97,13 @@ In the example above we already have three Identity Providers defined in `sso-en
 
 Suppose we have the following request:
 
--   `https://<ST>/?idp_id=shibbolethIdp`, where `<ST>` is the IP of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> instance.
+-   `https://<ST>/?idp_id=shibbolethIdp`, where `<ST>` is the IP of the {{< SecureTransport/componentshortname >}} instance.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will choose the Identity provider with an `entityId=’https://st.shibboleth.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
+{{< SecureTransport/componentshortname  >}} will choose the Identity provider with an `entityId=’https://st.shibboleth.axway.int/’`. If no such Identity Provider is found, the login will be effectively rejected.
 
 **Header resolution example:**
 
 
-    <Header name="idp_id">
-        <Mapping value="keycloakIdp" entityId="https://st.keycloak.axway.int/" />
-        <Mapping value="shibbolethIdp" entityId="https://st.shibboleth.axway.int/" />
-        <Mapping value="kerbIdP" entityId="kerberos" />
-    </Header>
 
 > **Note:**
 >
@@ -137,7 +119,7 @@ Suppose we have request to SecureTransport instance that contains the following 
 
 -   `keycloakIdp : https://st.keycloak.axway.int/`
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will choose the Identity Provider with an `entityId= ‘https://st.keycloak.axway.int/’`. If no such Identity provider is found, the login will be effectively rejected.
+{{< SecureTransport/componentshortname  >}} will choose the Identity Provider with an `entityId= ‘https://st.keycloak.axway.int/’`. If no such Identity provider is found, the login will be effectively rejected.
 
 ## Tenant resolution
 

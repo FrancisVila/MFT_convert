@@ -27,7 +27,7 @@ attribute         </th>
 <th class="HeadE-Column1-Header1">Data type         </th>
 <th class="HeadE-Column1-Header1">Length         </th>
 <th class="HeadE-Column1-Header1">Description         </th>
-<th class="HeadD-Column1-Header1">Name in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>         </th>
+<th class="HeadD-Column1-Header1">Name in {{< SecureTransport/componentshortname  >}}         </th>
       </tr>
    </thead>
    <tbody>
@@ -84,7 +84,7 @@ attribute         </th>
 <th class="HeadE-Column1-Header1">Data type         </th>
 <th class="HeadE-Column1-Header1">Length         </th>
 <th class="HeadE-Column1-Header1">Description         </th>
-<th class="HeadD-Column1-Header1">Name in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>         </th>
+<th class="HeadD-Column1-Header1">Name in {{< SecureTransport/componentshortname  >}}         </th>
       </tr>
    </thead>
    <tbody>
@@ -137,7 +137,7 @@ attribute         </th>
 <th class="HeadE-Column1-Header1">Data type         </th>
 <th class="HeadE-Column1-Header1">Length         </th>
 <th class="HeadE-Column1-Header1">Description         </th>
-<th class="HeadD-Column1-Header1">Name in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>         </th>
+<th class="HeadD-Column1-Header1">Name in {{< SecureTransport/componentshortname  >}}         </th>
       </tr>
    </thead>
    <tbody>
@@ -173,7 +173,7 @@ attribute         </th>
 <th class="HeadE-Column1-Header1">Data type         </th>
 <th class="HeadE-Column1-Header1">Length         </th>
 <th class="HeadE-Column1-Header1">Description         </th>
-<th class="HeadD-Column1-Header1">Name in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>         </th>
+<th class="HeadD-Column1-Header1">Name in {{< SecureTransport/componentshortname  >}}         </th>
       </tr>
    </thead>
    <tbody>

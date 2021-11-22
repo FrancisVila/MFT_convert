@@ -19,7 +19,7 @@ Pull files from multiple sources and route the incoming files to multiple partne
 
 ## Prerequisites
 
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
 -   Create two partner accounts (for example, accounts with names **partner1** and **partner2**). For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
     -   Create transfer site in each account to be used as a routing destination to the respective partner.
 
@@ -65,7 +65,7 @@ Pull files from multiple sources and route the incoming files to multiple partne
             3.  Select the transfer site from the selected account to send the file to.
             4.  Click **Save** when done.
     4.  Save the Route Package Template.
-2.  Go to the first local account (**local1**) and create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+2.  Go to the first local account (**local1**) and create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  Select **Automatically Retrieve Files From** checkbox and choose the transfer site to pull files from (the one created as a prerequisite).
     3.  Configure a schedule for pulling the files.
@@ -81,7 +81,7 @@ Pull files from multiple sources and route the incoming files to multiple partne
     4.  **Note:**
         >
         > There’s no need to create routes within the route package as the routes inherited from the Route Package Template are sufficient for the current use case.
-4.  Go to the second local account (**local2**) and create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button.
+4.  Go to the second local account (**local2**) and create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button.
     1.  Configure the subscription folder.
     2.  Select **Automatically Retrieve Files From** checkbox and choose the transfer site to pull files from (the one created as a prerequisite).
     3.  Configure a schedule for pulling the files.
@@ -103,12 +103,12 @@ Pull files from multiple sources and route the incoming files to multiple partne
 ## Flow of events
 
 1.  A scheduled SIT pull is triggered as configured in account **local1’s** subscription.
-2.  The files from the remote site are downloaded in the local subscription folder and the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application is triggered.
+2.  The files from the remote site are downloaded in the local subscription folder and the {{< SecureTransport/advancedrouting >}} application is triggered.
 3.  Files are processed by the two routes configured in the Route Package Template:
     -   The first route PGP encrypts the file with the certificate imported in **partner1** account and routes the file to **partner1**.
     -   The second route PGP encrypts the file with the certificate imported in **partner2** account and routes the file to **partner2**.
 4.  A scheduled SIT pull is triggered as configured in account **local2's** subscription.
-5.  The files from the remote site are downloaded in the local subscription folder and the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application is triggered.
+5.  The files from the remote site are downloaded in the local subscription folder and the {{< SecureTransport/advancedrouting >}} application is triggered.
 6.  Files are processed by the two routes configured in the Route Package Template:
     -   The first route PGP encrypts the file with the certificate imported in **partner1** account and routes the file to **partner1**.
     -   The second route PGP encrypts the file with the certificate imported in **partner2** account and routes the file to **partner2**.

@@ -31,7 +31,7 @@ To create Network Access Lists in Amazon VPC:
 
 When designing the Administration host for your AWS infrastructure, you should use it only for maintenance and administration tasks and avoid opening unnecessary security holes. You need to keep it locked down as much as possible. You could look into hardening your chosen operating system for even tighter security. You should stop your Administration host instances for the duration with no maintenance work and start them when you need access to your servers in AWS in order to minimize the security risks.
 
-Here are the basic steps for creating a bastion host for your AWS infrastructure (see section <span class="span_5">Launch an instance for Administration Host</span>):
+Here are the basic steps for creating a bastion host for your AWS infrastructure (see section ):
 
 -   Launch an EC2 instance.
 -   Apply your OS hardening as required.
@@ -43,7 +43,7 @@ Learn more about the [Linux Bastion Host Architecture](http://docs.aws.amazon.co
 
 Also, see [How to record ssh sessions established through a bastion host](https://aws.amazon.com/blogs/security/how-to-record-ssh-sessions-established-through-a-bastion-host/) topic for closer monitoring over this host.
 
-Security groups are essential for maintaining tight security and play a big part in making this solution work. First, you need to create a security group or update an existing security group that will be used to allow connectivity from the Administration host for your existing private instances (see the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> *Server Security Group* in the *Security* section of the guide). This SG should only accept SSH or RDP inbound requests from your Administration hosts across your Availability Zones. Apply this group to all your private instances that require connectivity.
+Security groups are essential for maintaining tight security and play a big part in making this solution work. First, you need to create a security group or update an existing security group that will be used to allow connectivity from the Administration host for your existing private instances (see the {{< SecureTransport/componentshortname  >}} *Server Security Group* in the *Security* section of the guide). This SG should only accept SSH or RDP inbound requests from your Administration hosts across your Availability Zones. Apply this group to all your private instances that require connectivity.
 
 Next, create a security group to be applied to your Administration host. Inbound and outbound traffic must be restricted at the protocol level as much as possible. The inbound rule base should accept SSH or RDP connections only from specific IP addresses (usually those of your administrators’ work computers). See the *Administration Host Security Group* in the *Security Groups* section of this guide. Your outbound connection should again be restricted to SSH or RDP access to the private instances of your AWS infrastructure. An easy way to do this is to populate the ‘Destination’ field with the ID of the security group you are using for your private instances.
 

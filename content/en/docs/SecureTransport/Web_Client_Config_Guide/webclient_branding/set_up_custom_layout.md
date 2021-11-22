@@ -2,7 +2,7 @@
     "title": "Set up a custom layout",
     "linkTitle": "Set up a custom layout",
     "weight": "110"
-}This feature enables you to add custom content on the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> login page and on the pages logged in users can access.
+}This feature enables you to add custom content on the login page and on the pages logged in users can access.
 
 > **Note:**
 >
@@ -16,9 +16,9 @@
     -   the plugin folder can contain resources like images and fonts, e.g., `/my-layout/mylogo.png`.
     -   the layout name can contain letters, numbers, underscores, and dashes; If the name does not comply with these rules, the layout will be ignored.
 
-3.  When the plugin is ready, add it to <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> by copying its folder to /custom.
+3.  When the plugin is ready, add it to by copying its folder to /custom.
 
-4.  Edit `stwebclient.config.json` to tell <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> to load the plug-in:  
+4.  Edit `stwebclient.config.json` to tell to load the plug-in:  
 
 
         {

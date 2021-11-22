@@ -6,7 +6,7 @@
 
 The DB instance is the basic building block of Amazon RDS and is defined as an isolated database environment in the cloud. A DB instance can contain multiple user-created databases, and you can access it by using the same tools and applications that you use with a stand-alone database instance.
 
-Each DB instance runs a DB engine. For the list of supported database engines in the Amazon RDS environment, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref">Axway and third-party software support</a> in the *<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> <span class="mc-variable axway_variables.Release_Number variable">5.5</span> Administrator guide*.
+Each DB instance runs a DB engine. For the list of supported database engines in the Amazon RDS environment, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref">Axway and third-party software support</a> in the *{{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}} Administrator guide*.
 
 <span id="Create"></span>
 
@@ -112,7 +112,7 @@ You manage your DB engine configuration through the use of parameters in a DB pa
 
 DB parameter groups act as a *container* for engine configuration values that are applied to one or more DB instances.
 
-You cannot modify the parameter settings of a default DB parameter group: you must create your own DB parameter group to change parameter settings from their default value. For more information on the respective database, see <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_Oracle_databases.htm" class="MCXref xref">Requirements for Oracle Databases</a> or <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_PostgreSQL_databases.htm" class="MCXref xref">Requirements for PostgreSQL</a> databases in the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> Installation Guide*.
+You cannot modify the parameter settings of a default DB parameter group: you must create your own DB parameter group to change parameter settings from their default value. For more information on the respective database, see <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_Oracle_databases.htm" class="MCXref xref">Requirements for Oracle Databases</a> or <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_PostgreSQL_databases.htm" class="MCXref xref">Requirements for PostgreSQL</a> databases in the *{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} Installation Guide*.
 
 ### Create a parameter group
 

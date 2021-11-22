@@ -4,7 +4,7 @@
     "weight": "260"
 }Transfer mode for server-initiated transfers is determined by protocol and file content type.
 
-For AS2, transfer mode is always binary. For all other protocols, including FTP(S), HTTP(S), and SFTP, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the content-type of the file name to determine whether a transfer is text (ASCII) or binary (IMAGE).
+For AS2, transfer mode is always binary. For all other protocols, including FTP(S), HTTP(S), and SFTP, {{< SecureTransport/componentshortname  >}} uses the content-type of the file name to determine whether a transfer is text (ASCII) or binary (IMAGE).
 
 If the content type is `text`, the file is transferred as text. If the content-type is not text, the file is transferred as binary.
 

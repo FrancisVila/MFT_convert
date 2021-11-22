@@ -2,7 +2,7 @@
     "title": "Export and import server configuration",
     "linkTitle": "Export and import server configuration",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span><span class="mc-variable axway_variables.Release_Number variable">5.5</span> supports import from the following releases, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. The system configuration can be imported from export files produced by the same <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment only.
+}{{< SecureTransport/componentshortname  >}}{{< SecureTransport/releasenumber  >}} supports import from the following releases, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. The system configuration can be imported from export files produced by the same {{< SecureTransport/componentshortname  >}} deployment only.
 
 > **Note:**
 >
@@ -18,7 +18,7 @@ You can export and import server configuration information in a ZIP file.
 >
 > SecureTransport does not support exporting the server configuration from one Enterprise Cluster (EC) and importing the server configuration into another EC cluster.
 
-Because <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> copies shared server configuration parameters to every node in a cluster upon import, you only import the shared server configuration once for the whole cluster.
+Because {{< SecureTransport/componentshortname  >}} copies shared server configuration parameters to every node in a cluster upon import, you only import the shared server configuration once for the whole cluster.
 
 The compressed `export_configuration.zip` file includes the files from the &lt;FILEDRIVEHOME> directory plus XML files that record system the configuration parameters stored in the database (including those set on the *Server Configuration* page and elsewhere in the Administration Tool), the holiday schedule, the local certificates, certificate signing requests, and trusted CAs.
 
@@ -30,9 +30,9 @@ You can export the server configuration files using the *Import or Export Server
 
 Any administrator with import and export configuration privileges can access the *Import or Export Server Configuration* page to import or export the server configuration information. Any administrator who can access the server can use the command line to import or export server information.
 
-You must supply a password that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to encrypt sensitive information such as private keys and custom attributes during the export process. When you import the server configuration information, you must type the password to import the server configuration files and decrypt the sensitive information.
+You must supply a password that {{< SecureTransport/componentshortname  >}} uses to encrypt sensitive information such as private keys and custom attributes during the export process. When you import the server configuration information, you must type the password to import the server configuration files and decrypt the sensitive information.
 
-The imported files overwrite the existing files, the database is updated with the parameter values from the imported files, the imported files are modified to support changes made to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, and the importer adds any new properties needed for the features introduced in the current version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. At the same time, the importer preserves any custom changes you have made to the imported files, applying them to the current version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The imported files overwrite the existing files, the database is updated with the parameter values from the imported files, the imported files are modified to support changes made to {{< SecureTransport/componentshortname  >}}, and the importer adds any new properties needed for the features introduced in the current version of {{< SecureTransport/componentshortname  >}}. At the same time, the importer preserves any custom changes you have made to the imported files, applying them to the current version of {{< SecureTransport/componentshortname  >}}.
 
 The following topics provide how-to instructions for importing and exporting the server configuration, certificates, and messages:
 
@@ -60,7 +60,7 @@ To export messages defined on the *Limit User Access* page for successful import
 
 ## Export and import Internal CA files
 
-For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> 5.0 and later, the Internal CA certificate is exported with system export and with account export. In both cases, the private key for the CA is not exported. You cannot use an imported Internal CA to sign additional certificates without the correct private key. To preserve the Internal CA private key, configure server export and import to include the private key. Perform the following procedures before you export the system configuration files. For more information on exporting and importing accounts, see <a href="../../../c_st_advancedaccountadministration/c_st_accountimportandexport#Advanced_Accounts_2036285406_1153799" class="MCXref xref">Account export and import</a>. For more information about exporting and importing the Internal CA, see <a href="../../../c_st_setup/c_st_certificates/t_st_internalca#top" class="MCXref xref">Manage the internal CA</a>.
+For {{< SecureTransport/componentshortname  >}} 5.0 and later, the Internal CA certificate is exported with system export and with account export. In both cases, the private key for the CA is not exported. You cannot use an imported Internal CA to sign additional certificates without the correct private key. To preserve the Internal CA private key, configure server export and import to include the private key. Perform the following procedures before you export the system configuration files. For more information on exporting and importing accounts, see <a href="../../../c_st_advancedaccountadministration/c_st_accountimportandexport#Advanced_Accounts_2036285406_1153799" class="MCXref xref">Account export and import</a>. For more information about exporting and importing the Internal CA, see <a href="../../../c_st_setup/c_st_certificates/t_st_internalca#top" class="MCXref xref">Manage the internal CA</a>.
 
 ### Export the Internal CA with the private key
 
@@ -81,9 +81,9 @@ For <span class="mc-variable axway_variables.Component_Short_Name variable">Secu
 
 ## Export server configuration using the Administration Tool
 
-You can export and download server configuration using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. The ZIP file is also automatically backed up on the server as `<FILEDRIVEHOME>/var/tmp/export_configuration.zip`. You cannot specify the file name and location on the server, and the back up file overwrites any existing back up file.
+You can export and download server configuration using the {{< SecureTransport/componentshortname  >}} Administration Tool. The ZIP file is also automatically backed up on the server as `<FILEDRIVEHOME>/var/tmp/export_configuration.zip`. You cannot specify the file name and location on the server, and the back up file overwrites any existing back up file.
 
-When you export the server configuration from the Administration Tool, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the file `<FILEDRIVEHOME>/conf/export.conf` to read the list of configuration files to be exported. In addition, the files in the `<FILEDRIVEHOME>/brules/local/wptdocuments` directory are always included.
+When you export the server configuration from the Administration Tool, {{< SecureTransport/componentshortname  >}} uses the file `<FILEDRIVEHOME>/conf/export.conf` to read the list of configuration files to be exported. In addition, the files in the `<FILEDRIVEHOME>/brules/local/wptdocuments` directory are always included.
 
 You can control the file name and location, and the list of files to be exported by using the command line tool to export your server configuration files. For more information, see <a href="#Export" class="MCXref xref">Export server configuration files from the command line</a>.
 
@@ -104,9 +104,9 @@ You can control the file name and location, and the list of files to be exported
 
 You can export sever configuration information using a command line tool. When you are using the tool to export a server configuration, you must specify the file name and location that contains the exported configuration.
 
-You can also specify which files you want to export by creating a list file with a `.conf` extension. This file contains the list of configuration files you want to export. This is useful when you have customized <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and need to export additional files to those listed in the default export list. The default export list is located in `<FILEDRIVEHOME>/conf/export.conf`. Do not modify this file, but create a file with a new name if you need to make a new export list.
+You can also specify which files you want to export by creating a list file with a `.conf` extension. This file contains the list of configuration files you want to export. This is useful when you have customized {{< SecureTransport/componentshortname  >}} and need to export additional files to those listed in the default export list. The default export list is located in `<FILEDRIVEHOME>/conf/export.conf`. Do not modify this file, but create a file with a new name if you need to make a new export list.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a script called `system_export` that you can run from the command line to export the server configuration information to a ZIP file. The script has the following options:
+{{< SecureTransport/componentshortname  >}} provides a script called `system_export` that you can run from the command line to export the server configuration information to a ZIP file. The script has the following options:
 
 -   `-exf=<export_file>` where `<export_file>` is the file name and location of the ZIP file. You must specify the file name.
 -   `-ex1=<export_list>` where `<export_list>` is the file containing a list of all files to be exported. The `<export_list>` file name is relative to &lt;`FILEDRIVEHOME>`. The default is `conf/export.conf`.
@@ -119,7 +119,7 @@ You can also specify which files you want to export by creating a list file with
 During the export process, you are prompted for an export password. Later, when you import the exported configuration from the command line, you must use the same password for the import process. The following steps illustrate an example sever configuration export:
 
 1.  Change to the `<FILEDRIVEHOME>/bin` directory.  
-    If you installed <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on Windows, you can run the command without changing to the `/bin` directory.
+    If you installed {{< SecureTransport/componentshortname >}} on Windows, you can run the command without changing to the `/bin` directory.
 2.  Type one of the following commands:
     -   `./system_export -exf=<export_file>` for UNIX-based systems
     -   `system_export -exf=<export_file>` for Windows
@@ -143,8 +143,8 @@ You can import server configuration information for a cluster or only the local 
 4.  Type the **Password** to use to encrypt sensitive information in the file. You must use the password specified when the file was exported.
 5.  Select the options:
     1.  Select **Cancel Import on Error** to stop the import process if any error is encountered. This option is selected by default. If the import process is stopped, no changes are made to the server. If you clear this option and the password does not match, the import completes with a warning that information from the zip archive could not be decrypted.
-    2.  Select **Continue on Version Mismatch** to import server configuration from a different version of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
-    3.  Select **Import local configuration data only** to exclude cluster configuration data, for example, when you are importing configuration data into a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server that is in an existing cluster. This option is not available if **Continue on Version Mismatch** is selected.
+    2.  Select **Continue on Version Mismatch** to import server configuration from a different version of {{< SecureTransport/componentshortname >}}.
+    3.  Select **Import local configuration data only** to exclude cluster configuration data, for example, when you are importing configuration data into a {{< SecureTransport/componentshortname >}} Server that is in an existing cluster. This option is not available if **Continue on Version Mismatch** is selected.
 6.  Click **Import**.  
     The *Import Complete* message is displayed and the server configuration import is successful. If you did not select **Import local configuration data only**, the imported cluster configuration data is propagated to all servers in the cluster.
 
@@ -162,7 +162,7 @@ You can import server configuration information for a cluster or only the local 
 
 You can import server configuration information from the command line.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a command named `system_import` that can be run from the command line to import information from the ZIP file. The command requires that the Administration Tool service is running on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server where you run the command.
+{{< SecureTransport/componentshortname  >}} provides a command named `system_import` that can be run from the command line to import information from the ZIP file. The command requires that the Administration Tool service is running on the {{< SecureTransport/componentshortname  >}} server where you run the command.
 
 In a Standard Cluster (SC), run the `system_import` command on the primary server. When the import completes, the updates are automatically synchronized to the other servers in the Standard Cluster or Enterprise Cluster. The script comes with the following options:
 
@@ -176,10 +176,9 @@ In a Standard Cluster (SC), run the `system_import` command on the primary serve
 >
 > If you run system\_import without specifying any options, the help message is displayed.
 
-Change to the `<FILEDRIVEHOME>/bin` directory.  
-If you installed <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on Windows, you can run the command without changing to the `/bin` directory.
-
-Type one of the following commands:
+1.  Change to the `<FILEDRIVEHOME>/bin` directory.  
+    If you installed {{< SecureTransport/componentshortname >}} on Windows, you can run the command without changing to the `/bin` directory.
+2.  Type one of the following commands:
 
 -   `./system_import -exf=<export_file>` for UNIX-based systems  
     `system_import -exf=<export_file>` for Windows
@@ -187,7 +186,7 @@ Type one of the following commands:
 where `<export_file>` is the file name and location of the ZIP file. You must specify the file name.
 
 When prompted, type the password for the ZIP file. You must type the password created when the file was exported.  
-The server configuration information is imported into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+The server configuration information is imported into {{< SecureTransport/componentshortname  >}}.
 
 > **Note:**
 >

@@ -2,7 +2,7 @@
     "title": "Manage protocol server access",
     "linkTitle": "Manage protocol server access",
     "weight": "280"
-}Define any number of rules in the *Admin Access Control* page control access to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. Define any number of rules in the *Server Access Control* page to control access to the FTP and HTTP servers.
+}Define any number of rules in the *Admin Access Control* page control access to the {{< SecureTransport/componentshortname  >}} Administration Tool. Define any number of rules in the *Server Access Control* page to control access to the FTP and HTTP servers.
 
 The following topics provide how-to instructions for managing protocol server access:
 

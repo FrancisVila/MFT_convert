@@ -2,14 +2,14 @@
     "title": "Administration Tool features checklist",
     "linkTitle": "Administration Tool features checklist",
     "weight": "190"
-}Most Administration Tool features are present in <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> Server, but not all of those are available in the Administration Tool for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. The following table lists all available features within the Administration Tool for both <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+}Most Administration Tool features are present in {{< SecureTransport/componentlongname  >}} Server, but not all of those are available in the Administration Tool for {{< SecureTransport/componentshortname  >}} Edge. The following table lists all available features within the Administration Tool for both {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server.
 
 <table>
    <thead>
       <tr>
 <th colspan="2" class="HeadE-Column1-Header1">Administration Tool features         </th>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge         </th>
-<th style="text-align: center;" class="HeadD-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server         </th>
+<th style="text-align: center;" class="HeadE-Column1-Header1">{{< SecureTransport/componentshortname  >}} Edge         </th>
+<th style="text-align: center;" class="HeadD-Column1-Header1">{{< SecureTransport/componentshortname  >}} Server         </th>
       </tr>
    </thead>
    <tbody>
@@ -104,7 +104,7 @@
          <td><img src="/Images/SecureTransport/Checkmark_11x10.png" />         </td>
       </tr>
       <tr>
-         <td> <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel/DI         </td>
+         <td> {{< SecureTransport/companyname  >}} Sentinel/DI         </td>
          <td>—         </td>
          <td><img src="/Images/SecureTransport/Checkmark_11x10.png" />         </td>
       </tr>

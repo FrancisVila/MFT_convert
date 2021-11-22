@@ -2,7 +2,7 @@
     "title": "Modify SSH daemon configuration",
     "linkTitle": "Modify SSH daemon configuration",
     "weight": "130"
-}After starting <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, the SSH daemon runs with its default configuration, specified in the SSHD configuration file (`/etc/ssh/sshd_config`). Administrators with permissions to access to the *Server Control* and *SSH Settings* page (configurable through the [Administrative role settings](../../../c_st_advancedaccountadministration/c_st_administrativeroles/r_st_add_administrative_role)) can modify several settings to alter the behavior of the daemon. Those include:
+}After starting {{< SecureTransport/componentshortname  >}}, the SSH daemon runs with its default configuration, specified in the SSHD configuration file (`/etc/ssh/sshd_config`). Administrators with permissions to access to the *Server Control* and *SSH Settings* page (configurable through the [Administrative role settings](../../../c_st_advancedaccountadministration/c_st_administrativeroles/r_st_add_administrative_role)) can modify several settings to alter the behavior of the daemon. Those include:
 
 -   select the preferred cryptographic provider
 -   limit the maximum number of SSH connections
@@ -27,7 +27,7 @@ In order to change the preferred provider from BouncyCastle to Sun, FIPS mode mu
 
 ### **Limit the Maximum Number of Connections**
 
-Type the maximum number of SSH clients that can simultaneously connect to the SSH server. If the maximum number of connections is reached, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prevents any further connections before the user is authenticated. If you increase the value of **Maximum Number of Connections**, you must also increase the value of `SSH_JAVA_MEM_MAX` in the `<FILEDRIVEHOME>/bin/start_sshd` script.
+Type the maximum number of SSH clients that can simultaneously connect to the SSH server. If the maximum number of connections is reached, {{< SecureTransport/componentshortname  >}} prevents any further connections before the user is authenticated. If you increase the value of **Maximum Number of Connections**, you must also increase the value of `SSH_JAVA_MEM_MAX` in the `<FILEDRIVEHOME>/bin/start_sshd` script.
 
 The script uses the `SSH_JAVA_MEM_MAX` value to set the maximum heap size for the Java Virtual Machine (JVM). The SSH server allocates memory in the heap for each connection (and frees it when the connection is closed). To avoid SSH service interruptions when no memory is available in the Java heap, you must configure `SSH_JAVA_MEM_MAX` to the desired **Maximum Number of Connections** (as defined in the previous step) multiplied by 10,000 Kibibytes. However, in the script file, you must convert this result to Megabytes (10,000 Kibibytes is equivalent to 10.24 Megabytes). For example, 500 concurrent connections would require a value of 500 \* 10,000 KiB = 5,000,000 KiB. This is equivalent to 5120 Megabytes, so enter this in the script file as:
 

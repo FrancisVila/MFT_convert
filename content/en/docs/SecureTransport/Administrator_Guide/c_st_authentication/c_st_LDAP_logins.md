@@ -2,31 +2,30 @@
     "title": "LDAP logins",
     "linkTitle": "LDAP logins",
     "weight": "280"
-}If you configure and enable LDAP, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses it as follows when users log in:
+}If you configure and enable LDAP, {{< SecureTransport/componentshortname  >}} uses it as follows when users log in:
 
-If the user includes a domain name in the login name, *domain\_name*/*user\_name*, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attempts to connect the LDAP servers configured for the named domain. If the first server <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> connect to has record for the user, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> use it. If not, the login fails.
+-   If the user includes a domain name in the login name, *domain\_name*/*user\_name*, {{< SecureTransport/componentshortname >}} attempts to connect the LDAP servers configured for the named domain. If the first server {{< SecureTransport/componentshortname >}} connect to has record for the user, {{< SecureTransport/componentshortname >}} use it. If not, the login fails.
+-   If the user does not include a domain name in the login name, {{< SecureTransport/componentshortname >}} can still find the authentication information and user attributes in the LDAP databases of the default domains in the order on the *LDAP Domains* page. Depending on whether or not LDAP authentication is required, {{< SecureTransport/componentshortname >}} also searches other databases:
 
-If the user does not include a domain name in the login name, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can still find the authentication information and user attributes in the LDAP databases of the default domains in the order on the *LDAP Domains* page. Depending on whether or not LDAP authentication is required, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> also searches other databases:
+1.  If LDAP authentication is optional, {{< SecureTransport/componentshortname >}} searches the {{< SecureTransport/componentshortname >}} database before it searched the LDAP databases in the default domains.
+2.  If the user specified by the login name is not in the {{< SecureTransport/componentshortname >}} database and login name and password match, {{< SecureTransport/componentshortname >}} searches the databases of the LDAP servers configured for the default domains in the order on the *LDAP Domains* page.
+3.  If LDAP authentication is optional and the authentication information is not in any of the databases of the LDAP servers in the default domains, {{< SecureTransport/componentshortname >}} searches the operating system if real users are enabled.
 
-1.  If LDAP authentication is optional, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> searches the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database before it searched the LDAP databases in the default domains.
-2.  If the user specified by the login name is not in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> database and login name and password match, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> searches the databases of the LDAP servers configured for the default domains in the order on the *LDAP Domains* page.
-3.  If LDAP authentication is optional and the authentication information is not in any of the databases of the LDAP servers in the default domains, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> searches the operating system if real users are enabled.
+If {{< SecureTransport/componentshortname  >}} does not find the user name in one of these locations, the login fails.
 
-If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not find the user name in one of these locations, the login fails.
-
-When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> finds an LDAP entry for the user name, it uses the password from the entry to authenticate the user. If authentication fails, the login fails.
+When {{< SecureTransport/componentshortname  >}} finds an LDAP entry for the user name, it uses the password from the entry to authenticate the user. If authentication fails, the login fails.
 
 -   **User ID** (UID) (UNIX-based systems only) – `fdxUid`. This is the numeric value required by the UNIX system to identify the user. This is not the LDAP attribute `UID`, which represents an LDAP unique identifier.
 -   **Group ID** (GID) – `fdxGid`
 -   **Home folder** (HomeDir) – `fdxHomeDir`
 -   **User type** – `fdxUserType`
 -   **User shell** (UNIX-based systems only) – `fdxShell`
--   **System user** (Windows only) – `fdxSysUser`. This is name of a local or domain user of the Windows server. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses this user's credentials to access the Windows files in the session. If this is a real user, you must add the user to a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> password vault before you specify the user as the System User in an LDAP record or as the default system user for a domain. See <a href="../../c_st_advancedaccountadministration/c_st_systemusers/t_st_passwordfiles#Add" class="MCXref xref">Add a user to a password vault</a>.
+-   **System user** (Windows only) – `fdxSysUser`. This is name of a local or domain user of the Windows server. {{< SecureTransport/componentshortname >}} uses this user's credentials to access the Windows files in the session. If this is a real user, you must add the user to a {{< SecureTransport/componentshortname >}} password vault before you specify the user as the System User in an LDAP record or as the default system user for a domain. See <a href="../../c_st_advancedaccountadministration/c_st_systemusers/t_st_passwordfiles#Add" class="MCXref xref">Add a user to a password vault</a>.
 -   **Login by email** – `fdxAuthByEmail`. If this is enabled, the user can login using an email address as well as a user name if the login by email is enabled in the LDAP domain and the email attribute of the LDAP record has the correct value.
 
-If the LDAP record <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> finds does not include some of the user attributes, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses any enabled attributes maps, any enabled user type ranges, any enabled home folder entries, and the configured defaults for the domain to set the attributes. If any required attribute information is not available or not valid, the login fails.
+If the LDAP record {{< SecureTransport/componentshortname  >}} finds does not include some of the user attributes, {{< SecureTransport/componentshortname  >}} uses any enabled attributes maps, any enabled user type ranges, any enabled home folder entries, and the configured defaults for the domain to set the attributes. If any required attribute information is not available or not valid, the login fails.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> performs the following actions to set the user attributes and other required session information:
+{{< SecureTransport/componentshortname  >}} performs the following actions to set the user attributes and other required session information:
 
 1.  Sets all attributes from LDAP record values based on any enabled attribute maps. For configuration, see <a href="../t_st_ldapsettings/t_st_define_attribute_mappings_for_domain#Define" class="MCXref xref">Define attribute mappings for a domain</a>.
 2.  On UNIX-based systems, if the `fdxUserType` attribute is not set and there is an applicable entry in the *User Type Ranges* page, sets the user type based on the value of the user ID. For configuration, see <a href="../t_st_ldapusertype#LDAP_3833293101_1025306" class="MCXref xref">LDAP user type ranges</a>.
@@ -38,10 +37,10 @@ If the LDAP record <span class="mc-variable axway_variables.Component_Short_Name
 
 If, after this process, any required user attributes are not set because there is no enabled attribute map, because the LDAP value for an enabled attribute map is not present in the LDAP record, or because the value was not set by a later step, the login fails.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> real users authenticated using LDAP have the following limitations:
+{{< SecureTransport/componentshortname  >}} real users authenticated using LDAP have the following limitations:
 
 -   They cannot use certificate authentication.
--   They cannot change their passwords using a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> client.
--   You can only subscribe them to an application if you do it in an account template or create a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> account that stores its password in the LDAP record.
+-   They cannot change their passwords using a {{< SecureTransport/componentshortname >}} client.
+-   You can only subscribe them to an application if you do it in an account template or create a {{< SecureTransport/componentshortname >}} account that stores its password in the LDAP record.
 
-To configure Active Directory in a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> LDAP domain, see <a href="../t_st_ldapsettings/c_st_ldap_active_directory_configuration#LDAP" class="MCXref xref">LDAP and Active Directory configuration</a>.
+To configure Active Directory in a {{< SecureTransport/componentshortname  >}} LDAP domain, see <a href="../t_st_ldapsettings/c_st_ldap_active_directory_configuration#LDAP" class="MCXref xref">LDAP and Active Directory configuration</a>.

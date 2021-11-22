@@ -2,7 +2,7 @@
     "title": "Axway and third-party software support",
     "linkTitle": "Axway and third-party software support",
     "weight": "100"
-}This section lists the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> and third-party software supported for the various protocols and integrations.
+}This section lists the {{< SecureTransport/companyname  >}} and third-party software supported for the various protocols and integrations.
 
 <span id="Operatin2"></span>
 
@@ -12,7 +12,7 @@ Minor releases of supported major versions are considered safe to upgrade and ar
 
 Operating systems are supported both on hardware or Type-1 hypervisors. If Axway suspects that the virtualization layer is the root cause of an incident, the customer may be required to contact their virtualization support provider to resolve it.
 
-While <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is expected to function properly in a virtual environment, there may be performance implications which can invalidate typical deployment recommendations.
+While {{< SecureTransport/componentshortname  >}} is expected to function properly in a virtual environment, there may be performance implications which can invalidate typical deployment recommendations.
 
 Only 64-bit operating systems are supported.
 
@@ -114,7 +114,7 @@ The following database engines are supported in the Amazon RDS environment:
 
 ## Browsers
 
-Both the Administration tool and the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> are supported on the latest version of the following browsers:
+Both the Administration tool and the are supported on the latest version of the following browsers:
 
 -   Apple Safari (not supported for Admin UI)
 -   Google Chrome

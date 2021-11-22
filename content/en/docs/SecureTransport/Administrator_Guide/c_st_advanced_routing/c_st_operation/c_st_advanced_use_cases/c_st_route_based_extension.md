@@ -20,8 +20,8 @@ Identify the Routing Destination based on filename following the convention `<ro
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create a <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create a {{< SecureTransport/securetransportname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Create two remote transfer sites (for example, named **partner1** and **partner2**) which are used as routing destinations.
     For remote transfer site creation details, refer to <a href="../../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>.
 
@@ -29,7 +29,7 @@ Identify the Routing Destination based on filename following the convention `<ro
 
 ## Step to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  (Optional) Configure the rest of the settings.
     3.  Click **Add** when done.
@@ -64,12 +64,12 @@ Identify the Routing Destination based on filename following the convention `<ro
 
 ## Flow of events
 
-1.  A file named `partner1_filename.txt` is uploaded to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-2.  <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application is triggered and `partner1` is extracted from the filename.
+1.  A file named `partner1_filename.txt` is uploaded to the {{< SecureTransport/advancedrouting >}} subscription folder.
+2.  {{< SecureTransport/advancedrouting >}} application is triggered and `partner1` is extracted from the filename.
 3.  Route **Partner 1** is triggered. Route **Partner 2** is skipped.
 4.  File is routed to the transfer site **partner1**.
-5.  A file named `partner2_filename.txt` is uploaded to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-6.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application is triggered and `partner2` is extracted from the filename.
+5.  A file named `partner2_filename.txt` is uploaded to the {{< SecureTransport/advancedrouting >}} subscription folder.
+6.  The {{< SecureTransport/advancedrouting >}} application is triggered and `partner2` is extracted from the filename.
 7.  Route **Partner 1** is skipped. Route **Partner 2** is triggered.
 8.  File is routed to the transfer site **partner2**.
 

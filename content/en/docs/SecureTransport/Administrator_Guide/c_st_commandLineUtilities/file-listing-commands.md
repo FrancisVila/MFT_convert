@@ -2,13 +2,13 @@
     "title": "Command line directory or file listing",
     "linkTitle": "Command line directory or file listing",
     "weight": "260"
-}This subsection discusses file listing specifics in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and also supplies examples and usage details.
+}This subsection discusses file listing specifics in {{< SecureTransport/componentshortname  >}} and also supplies examples and usage details.
 
 The `ls -l` command is the standard file/directory listing command that returns all files and directories contained in the directory where you run it. You can also specify a *subdirectory listing*, using `ls -l <directory_name> `or a *file listing*, using `ls -l <file_name>`.
 
 The returned output contains all contained files and directories is in the following format:
 
-<span class="code">\[Permissions\] \[ST\_nlink\] \[UID\] \[GID\] \[File\_Size\] \[Date\] \[File\_Name\]</span>
+`[Permissions] [ST_nlink] [UID] [GID] [File_Size] [Date] [File_Name]`
 
 The following table includes the descriptions and specifics of each output parameter:
 
@@ -21,11 +21,11 @@ The following table includes the descriptions and specifics of each output param
    </thead>
    <tbody>
       <tr>
-         <td><p><span class="code">Permissions</span></p>         </td>
+         <td><p><code>Permissions</code></p>         </td>
          <td>The read-write-execute permissions for the current file.         </td>
       </tr>
       <tr>
-         <td><p><span class="code">ST_nlink</span></p>         </td>
+         <td><p><code>ST_nlink</code></p>         </td>
          <td><p>Represents the number of hard links to the file.</p>
 <p>Output of <code>ls -l &lt;file_name&gt;</code>, returns either as '<code>0</code>' or '<code>?</code>' for the <code>ST_nlink</code> value. This behavior applies to deployments on any supported OS.</p>         </td>
       </tr>

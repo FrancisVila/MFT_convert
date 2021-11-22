@@ -2,7 +2,7 @@
     "title": "Database log files",
     "linkTitle": "Database log files",
     "weight": "290"
-}These log files exist on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge systems and on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server systems that use an embedded (MySQL or MariaDB) database.
+}These log files exist on {{< SecureTransport/componentshortname  >}} Edge systems and on {{< SecureTransport/componentshortname  >}} Server systems that use an embedded (MySQL or MariaDB) database.
 
 **mariadb\_error.log / mysql\_error.log** – This log file contains the messages from the embedded database server. The log file contains information indicating when `mariadbd / mysqld` was started and stopped and also any critical errors that occur while the server is running. For more information on MySQL, refer to the documentation of the error log on the MySQL Developer Zone website.  
 For more information on MariaDB, refer to the official documentation of the error log on the MariaDB website.

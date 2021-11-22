@@ -207,7 +207,7 @@ Edge         </td>
          <td><img src="/Images/SecureTransport/LeftArrow_14x11.png" /><br />
 (in-<br />
 bound)         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool (if access is required through the firewall)         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Administration Tool (if access is required through the firewall)         </td>
       </tr>
       <tr>
          <td>15         </td>
@@ -238,11 +238,11 @@ bound)         </td>
    </tbody>
 </table>
 
-For a streaming deployment with one <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and one <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server there is no load balancer, so substitute the real IP address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge for the IP address of the load balancer in the Group Destination column for rules 1 through 13.
+For a streaming deployment with one {{< SecureTransport/componentshortname  >}} Edge and one {{< SecureTransport/componentshortname  >}} Server there is no load balancer, so substitute the real IP address of the {{< SecureTransport/componentshortname  >}} Edge for the IP address of the load balancer in the Group Destination column for rules 1 through 13.
 
-For outbound AS2 transfers or asynchronous MDN receipts for inbound AS2 transfers, define outbound rules for ports 10080 and 10443. If the AS2 listener is on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and an SOCKS5 proxy is on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge, define these rules on the firewall between the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Otherwise, define these rules on the firewall between the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and the Internet.
+For outbound AS2 transfers or asynchronous MDN receipts for inbound AS2 transfers, define outbound rules for ports 10080 and 10443. If the AS2 listener is on the {{< SecureTransport/componentshortname  >}} Server and an SOCKS5 proxy is on the {{< SecureTransport/componentshortname  >}} Edge, define these rules on the firewall between the {{< SecureTransport/componentshortname  >}} Edge and the {{< SecureTransport/componentshortname  >}} Server. Otherwise, define these rules on the firewall between the {{< SecureTransport/componentshortname  >}} Edge and the Internet.
 
-For internal users to upload or download files to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, they must log into the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server directly using HTTP(S) or FTP(S). So those ports from the secure network to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server must be open. In some installations, access is only through a proxy. In this case secure network requires access to the Proxy server.
+For internal users to upload or download files to {{< SecureTransport/componentshortname  >}}, they must log into the {{< SecureTransport/componentshortname  >}} Server directly using HTTP(S) or FTP(S). So those ports from the secure network to the {{< SecureTransport/componentshortname  >}} Server must be open. In some installations, access is only through a proxy. In this case secure network requires access to the Proxy server.
 
 Both FTP and FTPS use port 20 for the data channel in active mode. If preferred, you can define a passive-port range instead, and set up a similar rule for that range of ports. Both FTP and FTPS use port 21 for the control channel. For more details, see <a href="../../../c_st_troubleshootcommonproblems/t_st_ftpdoesnotworkthroughfirewall/c_st_passive_port_range_is_not_defined_in_firewall#Appendix_Troubleshooting_4259246568_1028083" class="MCXref xref">Passive port range is not defined in the firewall</a>.
 

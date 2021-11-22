@@ -2,7 +2,7 @@
     "title": "Regular expressions",
     "linkTitle": "Regular expressions",
     "weight": "270"
-}This appendix provides information about the syntax for regular expressions supported by <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span>.
+}This appendix provides information about the syntax for regular expressions supported by {{< SecureTransport/componentlongname  >}}.
 
 For matching file names with the glob pattern method, SecureTransport uses `org.apache.oro.text.GlobCompile` class. We can refer to its [GlobCompiler Class javaDoc](https://svn.apache.org/repos/asf/jakarta/oro/tags/oro-2.0.9-dev-1/docs/api/org/apache/oro/text/GlobCompiler.html) which describes the following syntax:
 
@@ -19,7 +19,7 @@ For matching file names with the glob pattern method, SecureTransport uses `org.
 -   `*a*` – matches file names which include any sequence of characters, which include the letter "a".
 -   `\*dir` – matches path names that include the string "dir".
 
-The following topics describe the components of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> regular expressions:
+The following topics describe the components of {{< SecureTransport/componentshortname  >}} regular expressions:
 
 -   <a href="r_st_regularexpressioncharacters" class="MCXref xref">Regular expression characters</a>
 -   <a href="r_st_regularexpressiongeneralcharacterclasses" class="MCXref xref">General character classes</a>

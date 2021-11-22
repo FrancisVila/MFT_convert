@@ -2,7 +2,7 @@
     "title": "Lit/u0435 mode",
     "linkTitle": "Lite mode",
     "weight": "150"
-}Lite mode is a lightweight version of the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span>. It offers all basic functionality you would expect from the Web Client in a simplistic view.
+}Lite mode is a lightweight version of the . It offers all basic functionality you would expect from the Web Client in a simplistic view.
 
 Because of this, certain features and views in the Lite mode are disabled. For example, in Lite mode you can have only All files view, while the Mailbox view is disabled. As a result, the Address book feature is disabled and you cannot access your contacts.
 

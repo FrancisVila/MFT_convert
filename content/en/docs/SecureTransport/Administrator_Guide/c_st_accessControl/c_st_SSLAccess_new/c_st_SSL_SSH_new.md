@@ -6,13 +6,13 @@
 
 For SSH server authentication, a key is assigned to the SSH server. As part of the connection handshake, the SSH client verifies the server key by checking whether the user has successfully connected to the server in the past. If a user is connecting to the server for the first time, the SSH client asks the user to confirm that the SSH server key and accept it before connecting to the server.
 
-Generally, the SSH protocol provides three methods of authenticating clients: keyboard-interactive authentication, password authentication, and public key authentication. All types of client authentication are supported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+Generally, the SSH protocol provides three methods of authenticating clients: keyboard-interactive authentication, password authentication, and public key authentication. All types of client authentication are supported by {{< SecureTransport/componentshortname  >}}.
 
 > **Note:**
 >
 > SSH authentication is based on the public key, while SSL authentication is based on certificates. A certificate includes a public key, but it also includes information about the entity to which the key belongs.
 
-In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, keys are always managed in the form of certificates. Server keys are associated with Local Certificates. For details, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#top" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
+In {{< SecureTransport/componentshortname  >}}, keys are always managed in the form of certificates. Server keys are associated with Local Certificates. For details, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#top" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
 
 You can assign a local server certificate to the SSH server. The key contained in the certificate is used to establish the SSH connection. Similarly SSH client keys are associated with login certificates. For details, see <a href="../../../c_st_setup/c_st_certificates/r_st_certificate_types#SetupMenu_1217491348_1126501" class="MCXref xref">Certificate types</a>.
 

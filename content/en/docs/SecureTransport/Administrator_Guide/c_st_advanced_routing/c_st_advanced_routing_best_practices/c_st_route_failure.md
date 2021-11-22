@@ -2,7 +2,7 @@
     "title": "Route failure",
     "linkTitle": "Route failure",
     "weight": "290"
-}The following <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> routes are configured:
+}The following {{< SecureTransport/advancedrouting  >}} routes are configured:
 
 -   Route 1:
     -   Transformation 1: Decompress

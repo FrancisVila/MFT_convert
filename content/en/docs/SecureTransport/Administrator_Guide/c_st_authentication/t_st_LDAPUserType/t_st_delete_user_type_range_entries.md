@@ -11,6 +11,6 @@
 
 **Related topics:**
 
--   <a href="" class="MCXref xref"><span class="mcFormatColor" style="color: #0073a5;"><em>Create a user type range entry</em> on page 1</span></a>
+-   <a href="" class="MCXref xref"></a>
 -   <a href="../t_st_enable_disable_user_type_range_entries" class="MCXref xref">Enable or disable user type range entries</a>
 -   <a href="../t_st_edit_user_type_range_entry" class="MCXref xref">Edit a user type range entry</a>

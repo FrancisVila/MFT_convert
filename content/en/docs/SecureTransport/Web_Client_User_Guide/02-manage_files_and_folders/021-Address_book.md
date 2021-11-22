@@ -4,7 +4,7 @@
     "weight": "70"
 }The ST Web Client Address Book contains a predefined list of contacts that allows you to share documents with a person or a group. The permissions required to perform tasks related to your address book can vary depending on how it is configured on the server by your system administrator.
 
-For additional information, see the *Address Book configuration settings* section in the <span class="redirect_st_ag" cshid="admin" data-version="5.3.1">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+For additional information, see the *Address Book configuration settings* section in the .
 
 ## Share a folder with Address Book contacts
 

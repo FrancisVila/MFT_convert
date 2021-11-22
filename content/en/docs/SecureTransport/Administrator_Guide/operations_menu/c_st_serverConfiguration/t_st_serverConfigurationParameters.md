@@ -2,7 +2,7 @@
     "title": "View and change server configuration parameters",
     "linkTitle": "View and change server configuration parameters",
     "weight": "170"
-}Many <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server configuration parameters are stored in the database. In a cluster, any change you make to any shared parameter is automatically copied to all nodes in the cluster.
+}Many {{< SecureTransport/componentshortname  >}} server configuration parameters are stored in the database. In a cluster, any change you make to any shared parameter is automatically copied to all nodes in the cluster.
 
 The *Server Configuration* page, accessed by selecting **Operations &gt; Server Configuration**, shows all configuration parameters that are stored in the database. You can view the values of all parameters and you can edit the values of some of them. You set the values of parameters you cannot edit on the *Server Configuration* page using fields on other pages of the Administration Tool.
 
@@ -54,7 +54,7 @@ If a parameter is editable, you can change its value. In many case, the valid va
 1.  In the Edit column, click the Edit icon (![Edit](/Images/SecureTransport/EditIcon_12x13.png)).
 2.  Type the new value in the **Value** column.
 3.  In the Edit column, click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)).  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> saves the value to the database. If the parameter applies to all nodes in the cluster, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> copies it to the other nodes.
+    {{< SecureTransport/componentshortname >}} saves the value to the database. If the parameter applies to all nodes in the cluster, {{< SecureTransport/componentshortname >}} copies it to the other nodes.
 4.  To cancel an edit, click **Go** in the *Search* pane.
 
 > **Note:**

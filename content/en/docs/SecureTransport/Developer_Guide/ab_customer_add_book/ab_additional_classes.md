@@ -2,7 +2,7 @@
     "title": "Additional classes",
     "linkTitle": "Additional classes",
     "weight": "160"
-}This topic includes the additional <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> classes needed to create a new custom provider. The javadoc for the provided classes is part of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> SDK package.
+}This topic includes the additional {{< SecureTransport/securetransportname  >}} classes needed to create a new custom provider. The javadoc for the provided classes is part of the {{< SecureTransport/securetransportname  >}} SDK package.
 
 ## MyAddressBookEntryIteratorImpl class
 

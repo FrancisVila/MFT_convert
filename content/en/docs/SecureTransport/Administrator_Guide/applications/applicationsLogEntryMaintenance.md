@@ -79,8 +79,8 @@ To configure the application to export the Server log records before deletion, u
         > **Note:**
         >
         > The Backup log permission is only required if the database is in Full recovery mode.
-3.  In the **Delete exported files when data is: \_\_\_\_ days old** field, specify the period in days exported files remain in the export directory before they are deleted. If you leave this field empty or specify zero, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not delete the files.
-4.  In the **Number of records per file** field, specify the maximum number of records that can exist in an exported file. When this value is exceeded, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> starts to export the server log entries in a new file.
+3.  In the **Delete exported files when data is: \_\_\_\_ days old** field, specify the period in days exported files remain in the export directory before they are deleted. If you leave this field empty or specify zero, {{< SecureTransport/componentshortname >}} does not delete the files.
+4.  In the **Number of records per file** field, specify the maximum number of records that can exist in an exported file. When this value is exceeded, {{< SecureTransport/componentshortname >}} starts to export the server log entries in a new file.
 
 > **Note:**
 >
@@ -88,7 +88,7 @@ To configure the application to export the Server log records before deletion, u
 
 ### Export from Oracle database
 
-When your server uses an Oracle database, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses a partitioned table for the log entries. Your Oracle DBA can implement data export using Oracle functionality. If export database procedures are not deployed, the **Enable logs export** checkbox is disabled.
+When your server uses an Oracle database, {{< SecureTransport/componentshortname  >}} uses a partitioned table for the log entries. Your Oracle DBA can implement data export using Oracle functionality. If export database procedures are not deployed, the **Enable logs export** checkbox is disabled.
 
 1.  Select the **Enable logs export** check box.
 2.  In the **Export folder** field, specify where the export files to be stored. You must enter an absolute directory path. You must fill in the name of the directory defined in the Oracle database (for example, `ST_DMPDIR`).
@@ -106,9 +106,9 @@ When your server uses an Oracle database, <span class="mc-variable axway_variabl
 
 ### Export from PostgreSQL database
 
-With PostgreSQL, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses partitioned tables for storing log data. During installation, three tables are created for storing the server log data, named *logging\_event*,*logging\_event\_exception*, and *logging\_event\_property*. Each table is partitioned daily.
+With PostgreSQL, {{< SecureTransport/componentshortname  >}} uses partitioned tables for storing log data. During installation, three tables are created for storing the server log data, named *logging\_event*,*logging\_event\_exception*, and *logging\_event\_property*. Each table is partitioned daily.
 
-For exporting records from a PostgreSQL database, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the *pg\_dump* utility that ships with PostgreSQL.
+For exporting records from a PostgreSQL database, {{< SecureTransport/componentshortname  >}} uses the *pg\_dump* utility that ships with PostgreSQL.
 
 Use the following procedure to configure the application to export old server log records before deletion. Note that the database user must be either a superuser or a member of `pg_execute_server_program`.
 

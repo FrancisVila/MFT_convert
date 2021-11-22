@@ -2,9 +2,9 @@
     "title": "Pluggable /u0430uthorization",
     "linkTitle": "Pluggable Authorization",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Pluggable 0uthorization feature provides the option to add custom authorization logic by plugging it to the system. Existing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Access Restrictions will be executed after any custom authorization logic. The FTP protocol is an exception, where the internal restrictions will be applied before the custom logic. Custom authorization will be applied for all protocols on client-initiated transfers.
+}{{< SecureTransport/componentshortname  >}} Pluggable 0uthorization feature provides the option to add custom authorization logic by plugging it to the system. Existing {{< SecureTransport/componentshortname  >}} Access Restrictions will be executed after any custom authorization logic. The FTP protocol is an exception, where the internal restrictions will be applied before the custom logic. Custom authorization will be applied for all protocols on client-initiated transfers.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will be executing any custom authorization on the following operations:
+{{< SecureTransport/componentshortname  >}} will be executing any custom authorization on the following operations:
 
 -   Upload a file
 -   Download a file
@@ -17,9 +17,9 @@
 
 The custom authorization attempt can be either successful or unsuccessful.
 
-In case of success, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will continue executing the set of applied Access Restrictions (if any). In case of authorization failure, the operation will not be executed.
+In case of success, {{< SecureTransport/componentshortname  >}} will continue executing the set of applied Access Restrictions (if any). In case of authorization failure, the operation will not be executed.
 
-Pluggable authorization also supports file filtering capabilities. All plug-in implementations are able to use <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> specific environment data described in the Developer's Guide.
+Pluggable authorization also supports file filtering capabilities. All plug-in implementations are able to use {{< SecureTransport/componentshortname  >}} specific environment data described in the Developer's Guide.
 
 > **Note:**
 >
@@ -43,7 +43,7 @@ In a cluster environment, the plug-in should be deployed on all nodes, and the A
 
 ## Plug-in registration
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> identifies the plug-in by the name of its JAR file. Plug-ins are discovered and registered at the Admin daemon start. Each authorization plug-in is added to the following configuration registry in the **Server configuration** page:
+{{< SecureTransport/componentshortname  >}} identifies the plug-in by the name of its JAR file. Plug-ins are discovered and registered at the Admin daemon start. Each authorization plug-in is added to the following configuration registry in the **Server configuration** page:
 
 `Plugins.Authorization.Registry`
 
@@ -57,7 +57,7 @@ If the plug-in has a custom configuration, it is also added to the server config
 
 ## Plug-in activation
 
-After being registered, the authorization plug-ins are added to the Server Configuration, but they are disabled (have a hash symbol in front of their names). <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> will not automatically activate a newly registered plug-in. To activate a plug-in, remove the # symbol from its name.
+After being registered, the authorization plug-ins are added to the Server Configuration, but they are disabled (have a hash symbol in front of their names). {{< SecureTransport/componentshortname  >}} will not automatically activate a newly registered plug-in. To activate a plug-in, remove the # symbol from its name.
 
 Only one authorization plug-in can be enabled at a time.
 
@@ -76,7 +76,7 @@ Only one authorization plug-in can be enabled at a time.
 2\. Restart the Admin and TM daemons.  
 The plug-in name is then removed from the registry along with its configuration options.
 
-When you uninstall <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, the plug-ins JAR files are also removed.
+When you uninstall {{< SecureTransport/componentshortname  >}}, the plug-ins JAR files are also removed.
 
 ### Redeploy or update a plug-in
 
@@ -116,8 +116,8 @@ The following considerations must be taken into account:
 
 -   Custom authorization plug-ins will be executed for client-initiated transfers only.
 -   Authorization will be executed for all protocols on any supported and applicable operation. Therefore, some protocols may not support particular operations (For example, directory listing) and the plug-in’s implementation will not be executed.
--   For pluggable authorization, server-initiated transfers are out of the scope. However, if performing such transfers on one host only with a deployed plug-in (or in two hosts which both have plug-ins deployed), half of the transfer will be authorized against the plug-in. For one of the parties such transfer always appears (and it is) as a true client-initiated transfer since the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> protocol daemons receive a remote connections and perform user operations as it is in an ordinary client upload/download.
--   Custom authorization will be executed before any internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> upload/download/filesystem restrictions. An exception is the FTP protocol, where the internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> restrictions are evaluated before the custom authorization.
+-   For pluggable authorization, server-initiated transfers are out of the scope. However, if performing such transfers on one host only with a deployed plug-in (or in two hosts which both have plug-ins deployed), half of the transfer will be authorized against the plug-in. For one of the parties such transfer always appears (and it is) as a true client-initiated transfer since the {{< SecureTransport/componentshortname >}} protocol daemons receive a remote connections and perform user operations as it is in an ordinary client upload/download.
+-   Custom authorization will be executed before any internal {{< SecureTransport/componentshortname >}} upload/download/filesystem restrictions. An exception is the FTP protocol, where the internal {{< SecureTransport/componentshortname >}} restrictions are evaluated before the custom authorization.
 -   Advanced Routing transformation steps will not trigger custom authorization.
 -   Publish To Account routing step is excluded from custom authorization.
 -   Send To Partner routing step will be authorized in the receiving party if any custom plug-ins are deployed.

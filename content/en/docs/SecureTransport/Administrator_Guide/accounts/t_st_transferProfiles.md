@@ -45,7 +45,7 @@ Use the following procedure to create a transfer profile.
           </tr>
           <tr>
              <td>Receive Files As         </td>
-             <td><p>Used to name the files received when files are transferred to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.</p>
+             <td><p>Used to name the files received when files are transferred to {{< SecureTransport/componentshortname  >}}.</p>
     <p>Relative to the user’s home folder, so <code>/file</code> refers to a file in the home folder</p>
     <p>Any valid expression including PeSIT expressions.</p>
     <p>For details, see <a href="../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>.</p>         </td>
@@ -56,7 +56,7 @@ Use the following procedure to create a transfer profile.
           </tr>
           <tr>
              <td>All files         </td>
-             <td>If this option is selected, when <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> initiates a download from the PeSIT partner, it gets all files whose names match the pattern. If this option is cleared, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> gets the first file with a matching file name.         </td>
+             <td>If this option is selected, when {{< SecureTransport/componentshortname  >}} initiates a download from the PeSIT partner, it gets all files whose names match the pattern. If this option is cleared, {{< SecureTransport/componentshortname  >}} gets the first file with a matching file name.         </td>
           </tr>
           <tr>
              <td>Transfer Mode         </td>

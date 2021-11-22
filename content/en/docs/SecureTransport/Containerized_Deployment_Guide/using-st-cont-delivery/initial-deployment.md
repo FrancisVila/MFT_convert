@@ -105,7 +105,7 @@
         5.  Comment the Liveness and Readiness probes by placing `#` in front of each respective line.
     8.  Deploy the SecureTransport server - `kubectl create -f st-server-kubernetes.yml` (from the folder where `st-server-kubernetes.yml` file is located)
     9.  Verify that the container is started - `kubectl get pods -n <st-namespace>`.
-    10. After successful start of the SecureTransport Server, log in to the Administration Tool and configure the streaming network zone for all enabled protocols pointing to the SecureTransport Edge load balancer IP/FQDN. For more information on setting up a network zone, see the <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/c_st_networkZones.htm" class="MCXref xref">SecureTransport <span class="mc-variable axway_variables.Component_Version variable">5.5</span> Administrator guide</a>.
+    10. After successful start of the SecureTransport Server, log in to the Administration Tool and configure the streaming network zone for all enabled protocols pointing to the SecureTransport Edge load balancer IP/FQDN. For more information on setting up a network zone, see the <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/c_st_networkZones.htm" class="MCXref xref">SecureTransport {{< SecureTransport/componentversion  >}} Administrator guide</a>.
 6.  After finishing all the configuration remove the comments from the Liveness and readiness checks and apply the changes to the `StatefulSet - kubectl apply -f st-server-kubernetes.yml`.
 
 ## Kubernetes readiness and liveness checks

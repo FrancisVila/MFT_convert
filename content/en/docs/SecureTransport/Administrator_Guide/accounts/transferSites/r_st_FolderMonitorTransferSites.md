@@ -27,7 +27,7 @@ The following table describes the download settings Folder Monitor protocol opti
          <td>Download Folder         </td>
          <td><p>The full path to the folder to which incoming file transfers are saved. You cannot enter spaces-only values in this field.</p>
 <p><strong>Note:</strong> The download folder should not be set to the root (/) folder of the operating system, because that can lead to the corruption of the whole Operating System.</p>
-<p><strong>Note:</strong> <code>${DXAGENT_TRANSFERSAPI_*}</code> expressions are not supported.</p>
+<p><strong>Note:</strong><code>${DXAGENT_TRANSFERSAPI_*}</code> expressions are not supported.</p>
 <p>You can use the following expression to append dates:<br />
 <code>folder_${date("yyyyMMdd")}</code></p>
 <p>The download folder will be evaluated using the current date when the transfer site is being executed. For example <code>folder_20210130</code>.</p>         </td>
@@ -48,7 +48,7 @@ The download pattern will be evaluated using the current date when the transfer 
 Example:
 <code>*_${date("yyyyMMdd")}.txt</code></p></li>
 <li><p>Using it together with <strong>Regular Expression</strong> Pattern Type selected:<br />
-The download pattern will be evaluated using the current date when the transfer site is being executed, for example <code>*[a-z]_20210130.txt</code>. This will match all files starting with any combination of letters from <span class="code">a</span> to <code>z</code> and ending with<span class="code"> _20210130.txt</span>.<br />
+The download pattern will be evaluated using the current date when the transfer site is being executed, for example <code>*[a-z]_20210130.txt</code>. This will match all files starting with any combination of letters from <code>a</code> to <code>z</code> and ending with<code> _20210130.txt</code>.<br />
 Example:
 <code>*[a-z]_${date("yyyyMMdd")}.txt</code></p></li>
 </ul>         </td>
@@ -89,7 +89,7 @@ Example:
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage" class="MCXref xref">Expression Language</a> for information on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
    </tbody>
 </table>
@@ -121,7 +121,7 @@ The following table describes the upload settings Folder Monitor protocol option
       <tr>
          <td>Automatically create upload folder if it doesn't exist         </td>
          <td>Upload Folder will be automatically created if it doesn't exist.
-The automatically created folder will be owned by the user running the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> TM Server process.         </td>
+The automatically created folder will be owned by the user running the {{< SecureTransport/componentshortname  >}} TM Server process.         </td>
       </tr>
       <tr>
          <td>Allow Overwrite         </td>
@@ -155,13 +155,13 @@ The Folder Monitor protocol differs from the other supported protocols in the fo
 -   The paths, specified in the **Upload Folder** and **Download Folder** fields, must be full system paths (not relative paths), such as:  
     `/tmp/folder_name/opt/TMWD/folder_name/`  
 -   The files uploaded/moved into the specified upload folder are owned by the root user of the system.
--   If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is installed as a non-root deployment, the files in upload folder are owned by the user running the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+-   If {{< SecureTransport/componentshortname >}} is installed as a non-root deployment, the files in upload folder are owned by the user running the {{< SecureTransport/componentshortname >}} Server.
 -   If you configure the account to impersonate a user, the impersonated user must have full rights to the directories specified in the Folder Monitor.
 -   If you upload or move a file in the specified upload folder and such a file already exists there, it is overwritten without a prompt.
--   If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is installed as a non-root deployment, the user running the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server must have the necessary permissions to overwrite the file.
+-   If {{< SecureTransport/componentshortname >}} is installed as a non-root deployment, the user running the {{< SecureTransport/componentshortname >}} Server must have the necessary permissions to overwrite the file.
 -   When the Folder Monitor starts to monitor the download folder, the download pattern is applied to all the files in the folder, even if they existed in the download folder before the Folder Monitor began monitoring.
--   If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is installed as a non-root deployment, the user running the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server must have the necessary permissions to write to the upload folder.
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not support placing the download folder and the upload folder under a repository encryption user home folder.
+-   If {{< SecureTransport/componentshortname >}} is installed as a non-root deployment, the user running the {{< SecureTransport/componentshortname >}} Server must have the necessary permissions to write to the upload folder.
+-   {{< SecureTransport/componentshortname >}} does not support placing the download folder and the upload folder under a repository encryption user home folder.
 -   If you create a service account and a Standard Router application that uses a Folder Monitor transfer site, and you specify the same directory for sending and receiving messages, file transfers fail.
 -   A Folder Monitor transfer site can be used to receive messages for only one subscription.
 -   The names of the download folder and the upload folder of a Folder Monitor transfer site cannot contain two or more of the following characters in a sequence: `( ) _ - + = { } ~ ! @ # $ % ^ & ; “ ” ‘ ’`. For example, `folder_name` is supported, but `folder_+name` is not supported.

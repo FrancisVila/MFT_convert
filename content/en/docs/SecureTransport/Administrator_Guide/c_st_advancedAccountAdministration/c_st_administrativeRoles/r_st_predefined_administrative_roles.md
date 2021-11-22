@@ -5,13 +5,13 @@
 }The following administrative roles are predefined:
 
 -   **Master Administrator** – Access to all menus, tabs, and pages of the Administration Tool. Cannot be modified.
--   **Database Administrator** – Access to the *Database Settings* page only. Access to the *Setup Oracle* page is not included when <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is running on the embedded database. Only the `dbsetup` administrator can have this role. Information is maintained in the file system so that `dbsetup` can log in to the Administration Tool when the database is not running. Cannot be modified.
--   **Setup Administrator** – Access through the custom **Configure** menu to pages required to perform the post-installation tasks and setup operations described in the <span class="redirect_st_gs" cshid="gs" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Getting Started Guide*</span>. Cannot be modified.
+-   **Database Administrator** – Access to the *Database Settings* page only. Access to the *Setup Oracle* page is not included when {{< SecureTransport/componentshortname >}} is running on the embedded database. Only the `dbsetup` administrator can have this role. Information is maintained in the file system so that `dbsetup` can log in to the Administration Tool when the database is not running. Cannot be modified.
+-   **Setup Administrator** – Access through the custom **Configure** menu to pages required to perform the post-installation tasks and setup operations described in the . Cannot be modified.
 -   **Account Manager** – Access restricted to the *User Accounts*, **Unlicensed User Accounts*, Service Accounts*, *Templates*, and *Business Units* pages on the **Accounts** menu and all pages on the **Access** menu.
 -   **Application Manager** – Access restricted to the pages on the **Service Accounts** and **Applications** menus.
 -   **Delegated Administrator** – Configurable access to menus and data based on the function the administrator has within an organization. This administrator type is created by a master administrator or a parent delegated administrator.
 
-The following table illustrates the access rights and restrictions of the default restriction levels for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrators. You can modify the access rights for the Account Manager, Application Manager, and Delegated Administrator roles:
+The following table illustrates the access rights and restrictions of the default restriction levels for {{< SecureTransport/componentshortname  >}} administrators. You can modify the access rights for the Account Manager, Application Manager, and Delegated Administrator roles:
 
 <table>
    <thead>
@@ -196,7 +196,7 @@ strator         </th>
       </tr>
       <tr>
          <td>          </td>
-         <td><span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel         </td>
+         <td>{{< SecureTransport/companyname  >}} Sentinel         </td>
          <td><img src="/Images/SecureTransport/Checkmark_11x10.png" />         </td>
          <td>—         </td>
          <td>—         </td>

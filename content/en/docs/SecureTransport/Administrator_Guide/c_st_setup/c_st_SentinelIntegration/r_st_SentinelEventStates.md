@@ -2,13 +2,13 @@
     "title": "Event states",
     "linkTitle": "Event states",
     "weight": "180"
-}An *event state* specifies the current state of a file transfer. You choose the information <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends to Sentinel by selecting the event states to report. For details, see <a href="../t_st_sentinel#top" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>.
+}An *event state* specifies the current state of a file transfer. You choose the information {{< SecureTransport/componentshortname  >}} sends to Sentinel by selecting the event states to report. For details, see <a href="../t_st_sentinel#top" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses three pre-defined Sentinel Tracked Objects to report events:
+{{< SecureTransport/componentshortname  >}} uses three pre-defined Sentinel Tracked Objects to report events:
 
 -   **XFBTransfer** – to report states that occur during file transfers.
 -   **ST\_VAS** (Value-Added Services) – to report states that occur during process other than file transfers.
--   **Heartbeat** – to indicate to Sentinel that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is running and connected.
+-   **Heartbeat** – to indicate to Sentinel that {{< SecureTransport/componentshortname >}} is running and connected.
 
 Every event in the same group about one file transfer is identified using the same *cycle ID*. Sentinel uses the cycle ID to associate the event information in its display.
 
@@ -24,15 +24,15 @@ The following table describes the available event states:
    <tbody>
       <tr>
          <td>ACKED†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent an acknowledgment for a transfer.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has sent an acknowledgment for a transfer.         </td>
       </tr>
       <tr>
          <td>AVAILABLE (ST_VAS)         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application has completed successfully.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} application has completed successfully.         </td>
       </tr>
       <tr>
          <td>AVAILABLE (XFBTransfer)*†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has published a file in a target folder using Publish To Account step.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has published a file in a target folder using Publish To Account step.         </td>
       </tr>
       <tr>
          <td>CANCELED*†         </td>
@@ -40,11 +40,11 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>DECRYPTED         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has performed a successful PGP decryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has performed a successful PGP decryption.         </td>
       </tr>
       <tr>
          <td>DECRYPTING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to decrypt a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to decrypt a file.         </td>
       </tr>
       <tr>
          <td>DELETED         </td>
@@ -52,15 +52,15 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>ENCRYPTED         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has performed a successful PGP encryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has performed a successful PGP encryption.         </td>
       </tr>
       <tr>
          <td>ENCRYPTING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to encrypt a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to encrypt a file.         </td>
       </tr>
       <tr>
          <td>ENDED_TO_ACK†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has received an acknowledgment for a transfer.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has received an acknowledgment for a transfer.         </td>
       </tr>
       <tr>
          <td>ERROR         </td>
@@ -68,7 +68,7 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>FAILED*†         </td>
-         <td>An error has occurred during a file transfer, <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> execution, or while an agent was running.         </td>
+         <td>An error has occurred during a file transfer, {{< SecureTransport/advancedrouting  >}} execution, or while an agent was running.         </td>
       </tr>
       <tr>
          <td>FORWARDED         </td>
@@ -76,7 +76,7 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>FORWARDING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting a routing application (such as Standard Router).         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting a routing application (such as Standard Router).         </td>
       </tr>
       <tr>
          <td>INTERRUPTED†         </td>
@@ -96,11 +96,11 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>POST_PROC/ROUTED†         </td>
-         <td>An <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application has successfully completed.         </td>
+         <td>An {{< SecureTransport/advancedrouting  >}} application has successfully completed.         </td>
       </tr>
       <tr>
          <td>POST_PROC/ROUTING†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting an {{< SecureTransport/advancedrouting  >}} application.         </td>
       </tr>
       <tr>
          <td>PRESERVED         </td>
@@ -108,11 +108,11 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>RECEIVED*†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has successfully received a file by server-initiated pull or client-initiated push.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has successfully received a file by server-initiated pull or client-initiated push.         </td>
       </tr>
       <tr>
          <td>RECEIVING†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to receive a file by server-initiated pull or client-initiated push.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to receive a file by server-initiated pull or client-initiated push.         </td>
       </tr>
       <tr>
          <td>RENAMED         </td>
@@ -120,23 +120,23 @@ The following table describes the available event states:
       </tr>
       <tr>
          <td>ROUTED†         </td>
-         <td>As the intermediate partner in a routed PeSIT transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent a file to the routing destination.         </td>
+         <td>As the intermediate partner in a routed PeSIT transfer, {{< SecureTransport/componentshortname  >}} has sent a file to the routing destination.         </td>
       </tr>
       <tr>
          <td>SENDING†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to send a file by server-initiated push or client-initiated pull.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to send a file by server-initiated push or client-initiated pull.         </td>
       </tr>
       <tr>
          <td>SENT*†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has successfully sent a file by server-initiated push or client-initiated pull.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has successfully sent a file by server-initiated push or client-initiated pull.         </td>
       </tr>
       <tr>
          <td>SUBMITTED†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent a wild card pattern for a server-initiated pull.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has sent a wild card pattern for a server-initiated pull.         </td>
       </tr>
       <tr>
          <td>TO_EXECUTE†         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is ready to start a server-initiated transfer.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is ready to start a server-initiated transfer.         </td>
       </tr>
    </tbody>
 </table>

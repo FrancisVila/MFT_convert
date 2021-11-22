@@ -88,8 +88,8 @@ To export logs from an embedded database or an external Microsoft SQL Server da
     8.  **Note:**
         >
         > The Backup log permission is only required if the database is in Full recovery mode.
-4.  In the **Delete exported files when data is: \_\_\_\_ days old** field, type the period of time (in days) exported files remain in the export directory before they are deleted. If you leave this field empty or specify zero, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not delete the files.
-5.  In the **Number of records per file: \_\_\_\_ thousands** field, specify the maximum number of records (in thousands) that can exist in an exported file. When this value is exceeded, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> starts to export the transfer log entries in a new file.
+4.  In the **Delete exported files when data is: \_\_\_\_ days old** field, type the period of time (in days) exported files remain in the export directory before they are deleted. If you leave this field empty or specify zero, {{< SecureTransport/componentshortname >}} does not delete the files.
+5.  In the **Number of records per file: \_\_\_\_ thousands** field, specify the maximum number of records (in thousands) that can exist in an exported file. When this value is exceeded, {{< SecureTransport/componentshortname >}} starts to export the transfer log entries in a new file.
 
 ### Export from Oracle database
 
@@ -111,9 +111,9 @@ To export logs from an external Oracle database:
 
 ### Export from PostgreSQL database
 
-With Postgre, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses partitioned tables for storing log data. During installation, five tables are created for storing transfer log data, named *subtransmissionstatus*, *transferdata*, *transferdetails*, *transferresubmitdata*, and *transferprotocolcommands*. Each table is partitioned daily.
+With Postgre, {{< SecureTransport/componentshortname  >}} uses partitioned tables for storing log data. During installation, five tables are created for storing transfer log data, named *subtransmissionstatus*, *transferdata*, *transferdetails*, *transferresubmitdata*, and *transferprotocolcommands*. Each table is partitioned daily.
 
-For exporting records from a PostgreSQL database, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses the *pg\_dump* utility that ships with PostgreSQL.
+For exporting records from a PostgreSQL database, {{< SecureTransport/componentshortname  >}} uses the *pg\_dump* utility that ships with PostgreSQL.
 
 Use the following procedure to configure the application to export old transfer log records before deletion. Note that the database user must be either a superuser or a member of `pg_execute_server_program`.
 

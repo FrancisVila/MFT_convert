@@ -2,7 +2,7 @@
     "title": "Security architecture",
     "linkTitle": "Security architecture",
     "weight": "110"
-}Global architecture of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as identified in the Threat Modeling process.
+}Global architecture of {{< SecureTransport/componentshortname  >}} as identified in the Threat Modeling process.
 
 <img src="/Images/SecureTransport/sec_arch.png" class="maxWidth" alt="Global architecture of SecureTransport as identified in the Threat Modeling process." />
 

@@ -2,7 +2,7 @@
     "title": "Exceptional case: absolute path to sandbox folder in EL expressions",
     "linkTitle": "Exceptional case: absolute path to sandbox folder in EL expressions",
     "weight": "300"
-}**Problem summary:** With <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployments on Windows Server, attempts to use a configured absolute path to sandbox location in an EL expression may fail and return an error.
+}**Problem summary:** With {{< SecureTransport/componentshortname  >}} deployments on Windows Server, attempts to use a configured absolute path to sandbox location in an EL expression may fail and return an error.
 
 **Problem details:**
 

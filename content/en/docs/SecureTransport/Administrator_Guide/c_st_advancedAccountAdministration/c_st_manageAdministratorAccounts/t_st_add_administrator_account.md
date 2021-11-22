@@ -2,7 +2,7 @@
     "title": "Add an  administrator account",
     "linkTitle": "Add an administrator account",
     "weight": "180"
-}If you have access to the *Administrators* page, you can define multiple administrators with varied access privileges for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administration. Master administrators and delegated administrators with the **Manage Administrators** privilege have access to the *Administrators* page by default.
+}If you have access to the *Administrators* page, you can define multiple administrators with varied access privileges for {{< SecureTransport/componentshortname  >}} administration. Master administrators and delegated administrators with the **Manage Administrators** privilege have access to the *Administrators* page by default.
 
 1.  Select **Accounts > Administrators**.  
     The *Administrators* page is displayed.

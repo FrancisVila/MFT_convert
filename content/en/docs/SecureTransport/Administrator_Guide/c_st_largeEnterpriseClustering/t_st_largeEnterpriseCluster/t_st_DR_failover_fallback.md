@@ -7,26 +7,26 @@
 When the production site is unable to process file transfers, failover to the disaster recovery site:
 
 1.  If possible, make sure that the disaster recovery site configuration and data is consistent with the production site.
-2.  On every <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge in the production site, use the
+2.  On every {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge in the production site, use the
     `<FILEDRIVEHOME>/bin/stop_all` (or, on Windows, `<FILEDRIVEHOME>\bin\stop_all.com`)
-    command to stop all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes.
-3.  On every <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge in the DR site, use the
+    command to stop all {{< SecureTransport/componentshortname >}} processes.
+3.  On every {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge in the DR site, use the
     `<FILEDRIVEHOME>/bin/start_all` (or, on Windows, `<FILEDRIVEHOME>\bin\start_all.com`)
-    command to start all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes.
-4.  Make any changes to your load balancers or other network infrastructure to direct your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+    command to start all {{< SecureTransport/componentshortname >}} processes.
+4.  Make any changes to your load balancers or other network infrastructure to direct your {{< SecureTransport/componentshortname >}}
     traffic to the disaster recovery site.
 
 When the production site is able to process file transfers, failback:
 
 1.  If possible, make sure that any configuration changes made on the DR site are transferred to the
     production site and make sure that production data is consistent with the disaster recovery site.
-2.  On every <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge in the production site, use the
+2.  On every {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge in the production site, use the
     `<FILEDRIVEHOME>/bin/start_all` (or, on Windows, `<FILEDRIVEHOME>\bin\start_all.com`)
-    command to start all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes.
-3.  On every <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge in the DR site, use the
+    command to start all {{< SecureTransport/componentshortname >}} processes.
+3.  On every {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge in the DR site, use the
     `<FILEDRIVEHOME>/bin/stop_all` (or, on Windows, `<FILEDRIVEHOME>\bin\stop_all.com`)
-    command to stop all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes.
-4.  Make any changes to your load balancers or other network infrastructure to direct your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>
+    command to stop all {{< SecureTransport/componentshortname >}} processes.
+4.  Make any changes to your load balancers or other network infrastructure to direct your {{< SecureTransport/componentshortname >}}
     traffic to the production site.
 
 > **Note:**

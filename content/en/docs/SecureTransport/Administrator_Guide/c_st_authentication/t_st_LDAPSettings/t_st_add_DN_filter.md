@@ -33,7 +33,7 @@ Use the following procedure to add a DN filter.
 1.  If you do not have the *New LDAP Domain* page open, select **Authentication > LDAP Domains** and click the domain name in the Domains List to open the *LDAP Domain* page.
 2.  Under *DN Filter List*, click **New Filter**.  
     A line is added to the *DN Filters List*.
-3.  In the **DN Filter** field, type a regular expression to match against the DN retrieved from the LDAP database. To specify only a portion of a DN, use wild cards. For example, to allow access to users from the organization acme, enter`.*O=acme.*` in this field. For more information about regular expressions supported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>.
+3.  In the **DN Filter** field, type a regular expression to match against the DN retrieved from the LDAP database. To specify only a portion of a DN, use wild cards. For example, to allow access to users from the organization acme, enter`.*O=acme.*` in this field. For more information about regular expressions supported by {{< SecureTransport/componentshortname >}}, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>.
 4.  In the **User Class** field, select a user class to apply the DN filter only to users in that class or asterisk (`*`) to apply the DN filter to all users.
 5.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the **Edit** column.
 

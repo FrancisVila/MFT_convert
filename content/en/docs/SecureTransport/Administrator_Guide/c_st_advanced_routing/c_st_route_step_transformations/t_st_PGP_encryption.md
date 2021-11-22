@@ -100,7 +100,7 @@ If *Proceed with route execution on step failure* is not checked, the processing
 
 The PGP setting can be encrypt and sign, encrypt only, or sign only. If *Encrypt and sign* is selected, the files being processed by the route step are encrypted and signed. If *Encrypt only* is selected, the files being processes by the route step are encrypted but not signed. If *Sign only* is selected, the files being processed by the route step are signed but not encrypted.
 
-By default, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> does not allow you to use the same RSA modulus to both sign and encrypt or verify and decrypt. To allow the use of the same RSA modulus for multiple purposes, add the following Java option in &lt;`FILEDRIVEHOME>/bin/start_tm_console`:
+By default, {{< SecureTransport/securetransportname  >}} does not allow you to use the same RSA modulus to both sign and encrypt or verify and decrypt. To allow the use of the same RSA modulus for multiple purposes, add the following Java option in &lt;`FILEDRIVEHOME>/bin/start_tm_console`:
 
 `-Dorg.bouncycastle.rsa.allow_multi_use=true`
 
@@ -118,7 +118,7 @@ Either an account name or an Expression Language (EL) string can be specified to
 
 The *Select an account* field has auto-completion which shows a list of existing accounts containing the same letter.
 
-Once an account is selected its publicly available PGP certificates are populated in the *Select an account* field. The certificates can be public for all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> accounts, or public for an account assigned to the same Business Unit.
+Once an account is selected its publicly available PGP certificates are populated in the *Select an account* field. The certificates can be public for all {{< SecureTransport/componentshortname  >}} accounts, or public for an account assigned to the same Business Unit.
 
 If an account name is unknown (for example, expression based) its PGP certificates are determined at run time. PGP certificates can be expression based as well.
 
@@ -140,7 +140,7 @@ Either an account name or an EL string can be specified to determine the recipie
 
 The *Select an account* field has auto-completion which shows a list of existing accounts containing the same letter.
 
-Once an account is selected its publicly available PGP certificates are populated in the *Select an account* field. The certificates can be public for all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> accounts, or public for an account assigned to the same Business Unit.
+Once an account is selected its publicly available PGP certificates are populated in the *Select an account* field. The certificates can be public for all {{< SecureTransport/componentshortname  >}} accounts, or public for an account assigned to the same Business Unit.
 
 If an account name is unknown (for example, expression based) its PGP certificates are determined at run time. PGP certificates can be expression based as well.
 

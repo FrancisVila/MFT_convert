@@ -2,7 +2,7 @@
     "title": "Direct cluster workload",
     "linkTitle": "Direct cluster workload",
     "weight": "230"
-}As described in <a href="../../c_st_largeenterpriseclustermodel/c_st_workload_distribution" class="MCXref xref">Workload distribution</a>, an event processor directs events that represent workload tasks to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers in the cluster. Using its default policies, the event processor directs all events associated with an account to the same set of servers. This policy improves the performance of the distributed object cache that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses to avoid database fetches for object references. If all tasks associated with an account are performed by the same set of servers, the object that represents that account and related objects are cached at that server. This improves performance because the cache manager does not need to fetch them from another server.
+}As described in <a href="../../c_st_largeenterpriseclustermodel/c_st_workload_distribution" class="MCXref xref">Workload distribution</a>, an event processor directs events that represent workload tasks to the {{< SecureTransport/componentshortname  >}} Servers in the cluster. Using its default policies, the event processor directs all events associated with an account to the same set of servers. This policy improves the performance of the distributed object cache that {{< SecureTransport/componentshortname  >}} uses to avoid database fetches for object references. If all tasks associated with an account are performed by the same set of servers, the object that represents that account and related objects are cached at that server. This improves performance because the cache manager does not need to fetch them from another server.
 
 In addition to the default account-based event management, event processor policies can direct events to particular servers based on attributes of each event. By default, the event processor uses a round-robin policy to direct events to servers in the set that is processing events for the account, directing each event to the next server in sequence.
 
@@ -26,9 +26,9 @@ The `attributeMatchPolicy` is not used when a node in the cluster is overloaded.
 
 In each case, either the policy identifies a set of servers or, if no servers match, the criteria, a set that includes the whole cluster. The event manager uses the round-robin method and select the next server from the set in sequence. Of course, round-robin distribution does not occur when only one server is selected by the policy.
 
-You can configure a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to process tasks of one or more types by editing a local configuration parameter.
+You can configure a {{< SecureTransport/componentshortname  >}} Server to process tasks of one or more types by editing a local configuration parameter.
 
-1.  Log on to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.
+1.  Log on to the {{< SecureTransport/componentshortname >}} Server.
 2.  Select **Operations > Server Configuration**.  
     The *Server Configuration* page is displayed.
 3.  Search for the local parameter `EventQueue.taskProcessor.attributes`.  
@@ -40,11 +40,11 @@ You can configure a <span class="mc-variable axway_variables.Component_Short_Nam
 
 The distributed Event Manager now prefers the Server for events of the selected types.
 
-If you configure a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to process PGP tasks, you must make other changes on every node of your cluster.
+If you configure a {{< SecureTransport/componentshortname  >}} Server to process PGP tasks, you must make other changes on every node of your cluster.
 
 1.  If your deployment uses NFS to provide the shared file system, you must export the file system with the `sync` and `no_wdelay` options.
 
-2.  Log on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server computer.
+2.  Log on the {{< SecureTransport/componentshortname >}} Server computer.
 
 3.  If your deployment uses NFS to provide the shared file system, change the NFS mount to use the `-o noac,sync` options.
 

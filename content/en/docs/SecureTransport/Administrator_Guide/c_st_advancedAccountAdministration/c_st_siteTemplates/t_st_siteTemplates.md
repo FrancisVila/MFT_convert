@@ -28,7 +28,7 @@ A site template contains the same fields as the corresponding transfer site. Wit
 >
 > You can create multiple site templates, but each site template must have a unique name.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a placeholder parameter you can use when you do not want to hard code values in the fields for the site template. A placeholder parameter is associated only with the site template where it is used. You can, however, specify different placeholder parameters for each site template you create. A placeholder parameter consist of two parts, the placeholder name and an optional default value. The format for entering a placeholder parameter is:
+{{< SecureTransport/componentshortname  >}} provides a placeholder parameter you can use when you do not want to hard code values in the fields for the site template. A placeholder parameter is associated only with the site template where it is used. You can, however, specify different placeholder parameters for each site template you create. A placeholder parameter consist of two parts, the placeholder name and an optional default value. The format for entering a placeholder parameter is:
 
 `%{PlaceholderName|DefaultValue}`
 

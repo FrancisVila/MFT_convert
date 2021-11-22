@@ -22,24 +22,18 @@ The following topics provide how-to instructions for managing filesystem restric
 
 Use the following procedure to add a filesystem restrictions.
 
-Select **Access** **&gt;** **Restrictions**.
-
-Click the **Filesystem** tab.  
-The *Filesystem Restrictions* pane is displayed.
-
-Click **New Entry**. A new line is displayed in the list.
-
-Select an **Action** from the list. For description of the options, see <a href="../#AccessMenu_3475920566_1077119" class="MCXref xref">Filesystem restrictions</a>.
-
-In the **Allowed** field, select **No** to deny the action or **Yes** to allow it.
-
-In the **Class** field, select a user class. Asterisk (`*`) means all users.
-
-In the **Path** field, type the path of the directory for which the restriction applies.  
-Specify the path relative to the file system root for the user. For a real user, the file system root is the operating system root. For a virtual user, the file system root is the user's home directory.  
-On Windows, you must use a POSIX path. Specify drives as `/drives/c` and `/drives/d` instead of `C:\` and `D:\`.  
-You can use UNIX-style wildcard characters to apply restrictions for an entire directory. Path entries must contain both a forward slash and the asterisk wildcard (`/*)` to allow or deny everything. For example, on Windows, to prevent deletion of the contents of the `C:\temp` directory, specify `/drives/C/temp/*` as the path. In this example, specifying `/drives/C/temp` only prevents the directory itself from being deleted, not its contents.  
-With <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> version 5.4, two new parameters are introduced with Filesystem restrictions: `{s}` and `{i}`. These two options are used as prefixes to regular expressions and their purpose is to match the Path in case sensitive (`{s}`)or case insensitive (`{i}`) manner.
+1.  Select **Access** **&gt;** **Restrictions**.
+2.  Click the **Filesystem** tab.  
+    The *Filesystem Restrictions* pane is displayed.
+3.  Click **New Entry**. A new line is displayed in the list.
+4.  Select an **Action** from the list. For description of the options, see <a href="../#AccessMenu_3475920566_1077119" class="MCXref xref">Filesystem restrictions</a>.
+5.  In the **Allowed** field, select **No** to deny the action or **Yes** to allow it.
+6.  In the **Class** field, select a user class. Asterisk (`*`) means all users.
+7.  In the **Path** field, type the path of the directory for which the restriction applies.  
+    Specify the path relative to the file system root for the user. For a real user, the file system root is the operating system root. For a virtual user, the file system root is the user's home directory.  
+    On Windows, you must use a POSIX path. Specify drives as `/drives/c` and `/drives/d` instead of `C:\` and `D:\`.  
+    You can use UNIX-style wildcard characters to apply restrictions for an entire directory. Path entries must contain both a forward slash and the asterisk wildcard (`/*)` to allow or deny everything. For example, on Windows, to prevent deletion of the contents of the `C:\temp` directory, specify `/drives/C/temp/*` as the path. In this example, specifying `/drives/C/temp` only prevents the directory itself from being deleted, not its contents.  
+    With {{< SecureTransport/componentshortname >}} version 5.4, two new parameters are introduced with Filesystem restrictions: `{s}` and `{i}`. These two options are used as prefixes to regular expressions and their purpose is to match the Path in case sensitive (`{s}`)or case insensitive (`{i}`) manner.
 
 -   `{i}` matches Path in an expression in a case-insensitive fashion.  
     Example use: Delete a File action of files that match the expression `{i}/*.xml ` will delete any xml file, regardless of filename extension case: whether it is XML, xml or XmL.  
@@ -47,7 +41,7 @@ With <span class="mc-variable axway_variables.Component_Short_Name variable">Sec
     Example use: Delete a File action of files that match the expression `{s}/*.TXT` will only delete files with TXT extension (uppercase, as defined in the expression) and will not delete files with .txt extension (lowercase, not defined in the expression).
 
 Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the **Edit** column.  
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> adds the new entry at the top of the list. The status of a new entry is set to Disabled.
+{{< SecureTransport/componentshortname  >}} adds the new entry at the top of the list. The status of a new entry is set to Disabled.
 
 > **Note:**
 >

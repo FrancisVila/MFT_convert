@@ -2,7 +2,7 @@
     "title": "Security-related HTTP headers and policies",
     "linkTitle": "Security-related HTTP headers and policies",
     "weight": "150"
-}This topic presents a list of the most important security-related HTTP headers and their dedicated configuration options in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. Setting up these headers in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> server configuration protects you against many common attacks, including cross-site request forgery, cross-site scripting, clickjacking, etc. Some of these options are not enabled by default as they are not always appropriate and should be configured per business case.
+}This topic presents a list of the most important security-related HTTP headers and their dedicated configuration options in {{< SecureTransport/componentshortname  >}}. Setting up these headers in the {{< SecureTransport/componentshortname  >}} server configuration protects you against many common attacks, including cross-site request forgery, cross-site scripting, clickjacking, etc. Some of these options are not enabled by default as they are not always appropriate and should be configured per business case.
 
 > **Note:**
 >
@@ -10,7 +10,7 @@
 
 ### Referer header validation
 
-Referer is an optional request header that contains the address of the source page from which a request is coming. To defend against CSRF attacks, you can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to validate the Referer header in incoming HTTP requests against a whitelist of trusted domains. To enable the Referer validation, specify the acceptable header values in the following configuration options:
+Referer is an optional request header that contains the address of the source page from which a request is coming. To defend against CSRF attacks, you can configure {{< SecureTransport/componentshortname  >}} to validate the Referer header in incoming HTTP requests against a whitelist of trusted domains. To enable the Referer validation, specify the acceptable header values in the following configuration options:
 
 -   `WebServices.Admin.Referer.Whitelist` - whitelist for Admin API web services
 -   `WebServices.Public.Referer.Whitelist` - whitelist for Public API web services
@@ -23,7 +23,7 @@ For more information on each directive and its meaning, see [MDN Web Docs](https
 
 ### CSRF token protection
 
-Using a CSRF token (also known as synchronizer token) is one of the most popular and recommended methods to prevent Cross-site Request Forgery. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has built-in protection: it generates a CSRF token for each active user session and verifies that the token in the received request matches the token stored in the session. By default, the CSRF token protection is disabled. To enable it, set the following options to `true`:
+Using a CSRF token (also known as synchronizer token) is one of the most popular and recommended methods to prevent Cross-site Request Forgery. {{< SecureTransport/componentshortname  >}} has built-in protection: it generates a CSRF token for each active user session and verifies that the token in the received request matches the token stored in the session. By default, the CSRF token protection is disabled. To enable it, set the following options to `true`:
 
 -   `Webservices.Admin.CsrfToken.enabled` for the Administration Tool server
 -   `Webservices.Http.CsrfToken.enabled` for the HTTP server
@@ -32,11 +32,11 @@ When CSRF token protection is enabled, in order to use the REST API while reusin
 
 ### Redirect validation
 
-For additional protection against Open Redirect vulnerabilities, you can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to allow redirection only to a specified list of domains. To enable this feature, specify the domains that you consider trusted in the `Http.RedirectWhiteList` option. You can either list them explicitly or use a regular expression. Adding a domain to the whitelist results in redirects to this domain and its sub-domains being allowed. The default value of the option is `(^/)`, meaning all domains starting with / are allowed. Redirects to domains that are not whitelisted will be rejected with a 403 error message.
+For additional protection against Open Redirect vulnerabilities, you can configure {{< SecureTransport/componentshortname  >}} to allow redirection only to a specified list of domains. To enable this feature, specify the domains that you consider trusted in the `Http.RedirectWhiteList` option. You can either list them explicitly or use a regular expression. Adding a domain to the whitelist results in redirects to this domain and its sub-domains being allowed. The default value of the option is `(^/)`, meaning all domains starting with / are allowed. Redirects to domains that are not whitelisted will be rejected with a 403 error message.
 
 ### Host header validation
 
-Host is a mandatory request header that specifies the domain name of the server to which the request is being sent. To mitigate Host header injection attacks, you can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to check the Host header against a whitelist of permitted domains and reject any requests for unrecognized hosts. To enable this feature, specify a list of acceptable Host header values in the following configuration options:
+Host is a mandatory request header that specifies the domain name of the server to which the request is being sent. To mitigate Host header injection attacks, you can configure {{< SecureTransport/componentshortname  >}} to check the Host header against a whitelist of permitted domains and reject any requests for unrecognized hosts. To enable this feature, specify a list of acceptable Host header values in the following configuration options:
 
 -   `Webservices.Admin.Host.Whitelist` - list of acceptable Host header values for Admin web services.
 -   `Webservices.Public.Host.Whitelist` - list of acceptable Host header values for Public web services.
@@ -79,7 +79,7 @@ Possible values:
 
 ### Cache-Control
 
-This header lets you control the caching of specific web pages. In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, you can define the caching policy for the Administration Tool pages via the `Admin.ControlCaching` server configuration option. It accepts the following values:
+This header lets you control the caching of specific web pages. In {{< SecureTransport/componentshortname  >}}, you can define the caching policy for the Administration Tool pages via the `Admin.ControlCaching` server configuration option. It accepts the following values:
 
 -   `true`– Default; The request cashing is enabled.
 -   `false`– The Cache-Control directive is set to `no-cache, no-store` on all static and non-static requests.
@@ -127,7 +127,7 @@ For more information on each directive, see the [CSP Quick Reference Guide](http
 
 ### Strict-Transport-Security (HSTS)
 
-This header forces the browser to use only secure (HTTPS) connections. To set the HSTS on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, use the following server configuration options:
+This header forces the browser to use only secure (HTTPS) connections. To set the HSTS on {{< SecureTransport/componentshortname  >}}, use the following server configuration options:
 
 -   `Admin.Security.Hsts.enabled` – Enables/disables HSTS for the Administration Tool server. Boolean, the default is `true`.
 -   `Admin.Security.Hsts.max-age` –The max-age directive in the HSTS header for the Administration Tool server, in seconds. The default is `15768000` (6 months).
@@ -139,14 +139,14 @@ This header forces the browser to use only secure (HTTPS) connections. To set th
 
 ### X-Frame-Options
 
-This header provides clickjacking protection by not allowing the loading of a page within a frame or iframe. To configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send the X-Frame-Options header, set the <span class="code">Admin.Security.FrameOptions</span> configuration option to one of the following values:
+This header provides clickjacking protection by not allowing the loading of a page within a frame or iframe. To configure {{< SecureTransport/componentshortname  >}} to send the X-Frame-Options header, set the `Admin.Security.FrameOptions` configuration option to one of the following values:
 
 -   `deny`– The browser will block the resource from loading in a frame.
 -   `sameorigin`– The browser will only load the resource in a frame if the request originated from the same site
 
 ### X-Content-Type-Options
 
-Configuring your server to return the X-Content-Type-Options response header set to <span class="code">nosniff </span>will instruct browsers that support MIME sniffing to use the server-provided Content-Type and not interpret the content as a different content type. Use the following configuration options:
+Configuring your server to return the X-Content-Type-Options response header set to `nosniff `will instruct browsers that support MIME sniffing to use the server-provided Content-Type and not interpret the content as a different content type. Use the following configuration options:
 
 -   `Admin.Security.ContentTypeOptions` for the Administration Tool server
 

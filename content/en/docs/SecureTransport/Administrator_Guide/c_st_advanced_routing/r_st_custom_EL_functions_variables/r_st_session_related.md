@@ -74,7 +74,7 @@
       <tr>
          <td><p>DXAGENT_EDGEID</p>         </td>
          <td><p>session.edgeId</p>         </td>
-         <td><p><code>${session.edgeId}</code> - the identifier of the current <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge. The Edge identification string is set in the protocol server's configuration file(s).</p>         </td>
+         <td><p><code>${session.edgeId}</code> - the identifier of the current {{< SecureTransport/componentshortname  >}} Edge. The Edge identification string is set in the protocol server's configuration file(s).</p>         </td>
       </tr>
       <tr>
          <td><p>DXAGENT_SUBSCRIPTION_FOLDER</p>         </td>

@@ -2,7 +2,7 @@
     "title": "Increase the timeout for large files using server-initiated transfer",
     "linkTitle": "Increase the time-out for large files using server-initiated transfer",
     "weight": "160"
-}When sending 1.5 GB or larger files, the default timeout settings might be too low and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> might throw an exception error. You can increase the timeout settings for the FTP(S) and HTTP(S).
+}When sending 1.5 GB or larger files, the default timeout settings might be too low and {{< SecureTransport/componentshortname  >}} might throw an exception error. You can increase the timeout settings for the FTP(S) and HTTP(S).
 
 1.  Select **Operations > Server Configuration**.  
     The *Server Configuration* page is displayed.

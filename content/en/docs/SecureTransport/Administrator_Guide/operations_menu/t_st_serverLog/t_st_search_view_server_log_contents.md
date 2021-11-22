@@ -27,7 +27,7 @@
         -   WARN
         -   ERROR
         -   FATAL
-    5.  (Optional) Under *Component*, Select the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server component associated with the log entries to display. Choose from the following:
+    5.  (Optional) Under *Component*, Select the {{< SecureTransport/componentshortname >}} Server component associated with the log entries to display. Choose from the following:
         -   TM
         -   AS2D
         -   SSHD
@@ -39,13 +39,13 @@
         -   PESITD
     6.  (Optional) In a clustered deployment, select the **Cluster Node** associated with the log entries to display. The nodes shown are those listed on the *Cluster Management* page. To select more than one node, click **Select Multiple** and selected the nodes from the list.
 3.  (Optional) Click **Advanced Search** to display more fields and specify the following:
-    1.  (Optional) Using the **ST Activity** checkboxes, specify whether to display inbound or outbound <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> activity.
+    1.  (Optional) Using the **ST Activity** checkboxes, specify whether to display inbound or outbound {{< SecureTransport/componentshortname >}} activity.
     2.  (Optional) In the **Message** field, type a string contained in the messages to display.
     3.  (Optional) Use a link in the **Session ID** column to copy a session identifier into the **Session ID** field.
     4.  (Optional) Use a link in the **Transfer ID** column to copy a session identifier into the **Transfer ID** field.
     5.  (Optional) In the **Client** IP address field, type a string contained in the host name or IP address of the client associated with the transfer when the message to display was generated.
-    6.  (Optional) In the **Edge** IP address field, type a string contained in the host name or IP address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge associated with the transfer when the messages to display was generated.
-    7.  (Optional) In the **Server** IP address field, type a string contained in the host name or IP address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server associated with the transfer when the messages to display was generated.
+    6.  (Optional) In the **Edge** IP address field, type a string contained in the host name or IP address of the {{< SecureTransport/componentshortname >}} Edge associated with the transfer when the messages to display was generated.
+    7.  (Optional) In the **Server** IP address field, type a string contained in the host name or IP address of the {{< SecureTransport/componentshortname >}} Server associated with the transfer when the messages to display was generated.
 4.  Click **GO**.  
     The filtered log is displayed.  
     Each log entry includes a time stamp, the log level, the names of the component and thread that logged the entry, the node IP address for a node in a cluster, the log message, and session and transfer identifiers.

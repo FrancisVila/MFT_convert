@@ -25,7 +25,7 @@ The default SSO configuration files are:
 
 ## Single Sign-On (SSO) configuration files overview
 
-The main SSO configuration files (`sso-admin.xml` for administrators and `sso-enduser.xml` for end-users) are considered mandatory for configuring the SSO functionality in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> for the respective components.
+The main SSO configuration files (`sso-admin.xml` for administrators and `sso-enduser.xml` for end-users) are considered mandatory for configuring the SSO functionality in {{< SecureTransport/componentshortname  >}} for the respective components.
 
 For the sample SSO configuration files, refer to <a href="../../r_st_sample_admin" class="MCXref xref">Sample SSO configuration file for administrators</a> and <a href="../../r_st_sample_end-users" class="MCXref xref">Sample SSO configuration file for end-users</a>.
 
@@ -48,7 +48,7 @@ The main SSO configuration file contains the following elements:
     -   `logoutRedirectUri` – Specifies the URI to redirect to the initial logout message generated. In turn that message will be redirected to an Identity Provider. The value must be:
         -   For end-users the required value is `/logoutRedirect`.
         -   For administrators the required value is `/coreadmin`.
-    -   `keystoreInitializer` – Configures key store to use. That key store keeps key-pairs taking part in authentication process. Set `com.axway.st.server.sso.impl.KeyStoreInitializer` as value in order to use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> local key store.
+    -   `keystoreInitializer` – Configures key store to use. That key store keeps key-pairs taking part in authentication process. Set `com.axway.st.server.sso.impl.KeyStoreInitializer` as value in order to use the {{< SecureTransport/componentshortname >}} local key store.
     -   `keyAlias` – Specifies key alias of the private key used to decrypt SAML messages and assertions and to sign SAML messages and assertions.
     -   `sessionIdCookieName` – Sets the name of the cookie to store the SSO session identifier if sessions are managed by the SSO module.
 
@@ -96,13 +96,13 @@ The main SSO configuration file contains the following elements:
 
 ## Accessing Single Sign-On (SSO) attributes
 
-When your SSO login is successful, your Identity Provider will forward a set of user attributes to the requested Service Provider (<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>). The SSO attributes are used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to configure user account instances, agent sessions, and advanced routing attributes.
+When your SSO login is successful, your Identity Provider will forward a set of user attributes to the requested Service Provider ({{< SecureTransport/componentshortname  >}}). The SSO attributes are used by {{< SecureTransport/componentshortname  >}} to configure user account instances, agent sessions, and advanced routing attributes.
 
 > **Note:**
 >
 > Accessing Single Sign-On (SSO) attributes is not possible when using SSO with Kerberos authentication protocol. It is possible only with SAML.
 
-There are several system attributes that are considered important for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and there are custom mappings for the attributes:
+There are several system attributes that are considered important for {{< SecureTransport/componentshortname  >}} and there are custom mappings for the attributes:
 
 <table>
    <thead>
@@ -131,7 +131,7 @@ There are several system attributes that are considered important for <span clas
    </tbody>
 </table>
 
-\*The expected <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> attribute name in order for the attribute to be mapped correctly.
+\*The expected {{< SecureTransport/componentshortname  >}} attribute name in order for the attribute to be mapped correctly.
 
 For more information about the SSO attributes, refer to <a href="../../r_st_sso_filter_mapping" class="MCXref xref">SSO filter mapping</a>.
 

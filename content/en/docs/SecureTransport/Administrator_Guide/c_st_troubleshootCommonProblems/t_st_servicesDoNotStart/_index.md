@@ -2,7 +2,7 @@
     "title": "Servers do not start",
     "linkTitle": "Services do not start",
     "weight": "230"
-}If a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> protocol or TM server does not start, check the following topics to troubleshoot the problem. Make sure you check each item in the order listed.
+}If a {{< SecureTransport/componentshortname  >}} protocol or TM server does not start, check the following topics to troubleshoot the problem. Make sure you check each item in the order listed.
 
 1.  **SSL Certificate** – Verify that the SSL certificate is properly configured for the server.
 2.  **Conflicting Port Numbers** – Verify that the port number assigned to the server is not in use elsewhere.

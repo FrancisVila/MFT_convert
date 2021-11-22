@@ -2,7 +2,7 @@
     "title": "Enterprise Cluster",
     "linkTitle": "Enterprise Cluster",
     "weight": "80"
-}This topic describes the concepts and procedures for deploying active-active clusters and clusters with passive disaster recover (DR) of <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> using Enterprise Clustering. For information about Standard Clustering, see <a href="../c_st_standardclustering#Standard_Clustering_3967700027_1013811" class="MCXref xref">Standard Cluster</a>.
+}This topic describes the concepts and procedures for deploying active-active clusters and clusters with passive disaster recover (DR) of {{< SecureTransport/componentlongname  >}} using Enterprise Clustering. For information about Standard Clustering, see <a href="../c_st_standardclustering#Standard_Clustering_3967700027_1013811" class="MCXref xref">Standard Cluster</a>.
 
 The following topics describe and provide the how-to instructions for managing an Enterprise Cluster (EC):
 

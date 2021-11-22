@@ -4,7 +4,7 @@
     "weight": "120"
 }## SecureTransport Server Security Group
 
-Allow inbound traffic according to the *Firewall rules* section as described in the <span class="span_3"><span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable" style="font-style: italic;">5.5</span> *Administrator's Guide*</span>.
+Allow inbound traffic according to the *Firewall rules* section as described in the .
 
 > **Note:**
 >

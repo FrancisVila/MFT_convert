@@ -4,15 +4,15 @@
     "weight": "70"
 }The SecureTransport Swagger REST API can be integrated into API Manager. Once the Swagger REST API is integrated into API Manager, the Frontend API and its Swagger definition from API Manager can be used to acquire a Java Client on API Gateway.
 
-This topic provides the prerequisites and instructions for integrating <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Swagger REST API into API Manager.
+This topic provides the prerequisites and instructions for integrating {{< SecureTransport/securetransportname  >}} Swagger REST API into API Manager.
 
 ## Prerequisites
 
 The following prerequisites must be met prior to Swagger REST API being integrated in API Manager:
 
--   <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Server must be installed, configured, and running.
-    -   The HTTPS and/or the Admin daemons (for the Client and the Admin APIs respectively) must be configured with certificates with CN - the IP address of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> and no empty fields. API Gateway requires the fields to be completed.
--   API Gateway and API Manager must be installed, configured, and running on a machine other than the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> server machine.
+-   {{< SecureTransport/securetransportname >}} Server must be installed, configured, and running.
+    -   The HTTPS and/or the Admin daemons (for the Client and the Admin APIs respectively) must be configured with certificates with CN - the IP address of the {{< SecureTransport/securetransportname >}} and no empty fields. API Gateway requires the fields to be completed.
+-   API Gateway and API Manager must be installed, configured, and running on a machine other than the {{< SecureTransport/securetransportname >}} server machine.
 
 ## Limitation
 
@@ -66,7 +66,7 @@ The take the following steps to integrate Swagger REST API into API Manager:
         -   *URL:*`https://<st_host>`
         -   *Use for outbound:***Yes**
         -   *Use for inbound:***No**
-        -   This will import the certificate from a daemon in <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> – HTTPS or Admin. This certificate should have CN: IP of the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> and no empty fields. Empty fields will cause run-time internal server errors since API Gateway is sensitive to them.
+        -   This will import the certificate from a daemon in {{< SecureTransport/securetransportname >}} – HTTPS or Admin. This certificate should have CN: IP of the {{< SecureTransport/securetransportname >}} and no empty fields. Empty fields will cause run-time internal server errors since API Gateway is sensitive to them.
 7.  Click **Save**.
 8.  On the **Frontend API** tab, select the alias of new API and then click **Manage selected > Publish**.  
     The Frontend API can only be configured only if not published. To unpublish the Frontend API, select the alias of the new API and then click **Manage selected > Unpublish**.
@@ -85,10 +85,10 @@ A text file containing the Swagger definition in JSON format should start downlo
 
 ## API authentication
 
-This section provides information how to setup basic authentication on the API Gateway for <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>.
+This section provides information how to setup basic authentication on the API Gateway for {{< SecureTransport/securetransportname  >}}.
 
 1.  Navigate to **API Registration > Frontend API >** Select the API to edit **&gt; Outbound**.
-2.  Set *Authentication profile* to **HTTP Basic** and provide a valid <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> username and password.
+2.  Set *Authentication profile* to **HTTP Basic** and provide a valid {{< SecureTransport/securetransportname >}} username and password.
 3.  Navigate to **Inbound** and set *Security* to **HTTP Basic**.
 4.  Navigate to **Client registry > Applications**.
 5.  Create a new application:

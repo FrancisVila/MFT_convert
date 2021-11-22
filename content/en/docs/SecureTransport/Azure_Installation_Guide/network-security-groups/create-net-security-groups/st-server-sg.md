@@ -2,14 +2,14 @@
     "title": "SecureTransport Server Security Group",
     "linkTitle": "SecureTransport Server Security Group",
     "weight": "110"
-}Allow inbound traffic according to the *Firewall rules* section as described in the <span class="span_3"><span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable" style="font-style: italic;">5.5</span> *Administrator's Guide*</span>.
+}Allow inbound traffic according to the *Firewall rules* section as described in the .
 
 > **Note:**
 >
 > Inbound traffic from 8088-8093 range should be allowed for both TCP and UDP protocols from one SecureTransport Server to another (SecureTransport Server Security Group).
 
--   The **Destination** is a comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Private IPs.
--   The **Source** is comma separated list of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge Private IPs.
+-   The **Destination** is a comma separated list of {{< SecureTransport/componentshortname >}} Edge Private IPs.
+-   The **Source** is comma separated list of {{< SecureTransport/componentshortname >}} Edge Private IPs.
 
 <table>
          
@@ -137,4 +137,4 @@
    </tbody>
 </table>
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server nodes communicate via ICMP protocol which is not available for selection as a separate Protocol. If we want to enable it, we must enable the traffic for all protocols which we do not prefer. So, we create two rules that deny all TCP and UDP traffic on all ports with lower priority than the above rules. The rule with the lowest priority allows traffic on all protocols and ports. This means that only the ICMP traffic will be allowed.
+{{< SecureTransport/componentshortname  >}} Server nodes communicate via ICMP protocol which is not available for selection as a separate Protocol. If we want to enable it, we must enable the traffic for all protocols which we do not prefer. So, we create two rules that deny all TCP and UDP traffic on all ports with lower priority than the above rules. The rule with the lowest priority allows traffic on all protocols and ports. This means that only the ICMP traffic will be allowed.

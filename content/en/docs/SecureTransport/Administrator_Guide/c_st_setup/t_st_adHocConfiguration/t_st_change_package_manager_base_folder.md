@@ -4,7 +4,7 @@
     "weight": "160"
 }To change the package manager base folder on a root installation:
 
-1.  Log on to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server as root.
+1.  Log on to the {{< SecureTransport/componentshortname >}} Server as root.
 2.  Stop all SecureTransport protocol servers and services.
 3.  If the new folder is on a network share, so that LDAP users can access the package manager base folder, mount the new network share on which the new package manager base folder is located using the default UID and GID specified in LDAP domain page for those users.
 4.  Copy the package manager base folder to its new location.

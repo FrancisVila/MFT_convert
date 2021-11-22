@@ -2,13 +2,13 @@
     "title": "Advertised ciphers and cipher suites",
     "linkTitle": "Advertised ciphers and cipher suites",
     "weight": "230"
-}In Federal Information Processing Standard (FIPS) transfer mode, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> advertises the following ciphers, cipher suites, or algorithms in the order given. The remote system must use one of them for the file transfer to succeed.
+}In Federal Information Processing Standard (FIPS) transfer mode, {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} advertises the following ciphers, cipher suites, or algorithms in the order given. The remote system must use one of them for the file transfer to succeed.
 
 <span id="FIPS_TLS_csuites"></span>
 
 ### FIPS-compliant TLS cipher suites
 
-In FIPS mode, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports the following ciphers suites for communication over FTPS, HTTPS, AS2, and PeSIT protocols:
+In FIPS mode, {{< SecureTransport/componentshortname  >}} supports the following ciphers suites for communication over FTPS, HTTPS, AS2, and PeSIT protocols:
 
 -   TLS\_AES\_256\_GCM\_SHA384
 -   TLS\_AES\_128\_GCM\_SHA256
@@ -47,7 +47,7 @@ In FIPS mode, <span class="mc-variable axway_variables.Component_Short_Name vari
 
 ### FIPS-compliant ciphers and algorithms for SSH communication
 
-In FIPS mode, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports the following ciphers and algorithms for the SSH daemon and server-initiated transfers:
+In FIPS mode, {{< SecureTransport/componentshortname  >}} supports the following ciphers and algorithms for the SSH daemon and server-initiated transfers:
 
 <span id="Fips_SSh_ciphers"></span>
 

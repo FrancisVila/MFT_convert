@@ -2,7 +2,7 @@
     "title": "Transformed file as the input to the next step",
     "linkTitle": "Transformed file as the input to the next step",
     "weight": "300"
-}The following <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> routes are configured:
+}The following {{< SecureTransport/advancedrouting  >}} routes are configured:
 
 -   Route 1:
     -   Transformation 1: Line Ending where **Rename output files** is not selected

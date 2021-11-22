@@ -2,9 +2,9 @@
     "title": "Expression Language overview",
     "linkTitle": "Expression Language overview",
     "weight": "270"
-}Many features of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> use expressions. The expression language <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses is based on the Sun JSP Expression Language. Only the syntax listed in this appendix is supported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, any other syntax is not guaranteed to function properly.
+}Many features of {{< SecureTransport/componentshortname  >}} use expressions. The expression language {{< SecureTransport/componentshortname  >}} uses is based on the Sun JSP Expression Language. Only the syntax listed in this appendix is supported by {{< SecureTransport/componentshortname  >}}, any other syntax is not guaranteed to function properly.
 
-The following <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> features can use the expression language:
+The following {{< SecureTransport/componentshortname  >}} features can use the expression language:
 
 -   Transfer site post-transmission actions
 -   Subscription post-transmission actions

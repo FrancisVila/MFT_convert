@@ -2,7 +2,7 @@
     "title": "Inherited settings versus Specific settings",
     "linkTitle": "Inherited settings versus Specific settings",
     "weight": "260"
-}The following <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> steps are configured:
+}The following {{< SecureTransport/advancedrouting  >}} steps are configured:
 
 -   Inherited Settings:
     -   Route 1:

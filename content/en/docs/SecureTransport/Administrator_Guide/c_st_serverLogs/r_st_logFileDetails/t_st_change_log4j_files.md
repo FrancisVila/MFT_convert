@@ -6,7 +6,7 @@
 
 ## Configure Log rotation to a file per file-size
 
-In this example, the configuration file is the TM log: `<FILEDRIVEHOME>/conf/tm-log4j.xml`. The example uses `FILEDRIVEHOME` instead of `<FILEDRIVEHOME>` to represent the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory to avoid confusion with the syntactic use of pointed brackets in XML.
+In this example, the configuration file is the TM log: `<FILEDRIVEHOME>/conf/tm-log4j.xml`. The example uses `FILEDRIVEHOME` instead of `<FILEDRIVEHOME>` to represent the {{< SecureTransport/componentshortname  >}} installation directory to avoid confusion with the syntactic use of pointed brackets in XML.
 
 Change:
 
@@ -43,7 +43,7 @@ You can use any of the log4j file appenders.
 
 ## Attach logger to a non-blocking asynchronous appender
 
-In some cases when the log messages are directed to a flat file, the rotation of the file might take a considerable amount of time during which certain <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> processes (including user log-in) are unavailable. This might happen, for example, when rotating a large log to a file which is hosted on a remote location.
+In some cases when the log messages are directed to a flat file, the rotation of the file might take a considerable amount of time during which certain {{< SecureTransport/securetransportname  >}} processes (including user log-in) are unavailable. This might happen, for example, when rotating a large log to a file which is hosted on a remote location.
 
 In this case, you might consider attaching the rotating log to an asynchronous appender which is explicitly defined as not-blocking. To achieve this, use the following sample:
 

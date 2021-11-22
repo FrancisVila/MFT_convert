@@ -2,7 +2,7 @@
     "title": "Receive files using a file services interface protocol",
     "linkTitle": "Receive files using a file services interface protocol",
     "weight": "210"
-}For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to receive files sent by another system using a file services interface protocol, you must set up access to a shared directory, create an application, and subscribe an account to that application.
+}For {{< SecureTransport/componentshortname  >}} to receive files sent by another system using a file services interface protocol, you must set up access to a shared directory, create an application, and subscribe an account to that application.
 
 1.  Determine which shared directory the systems are to use to transfer the files and make it accessible from both systems.
 2.  Perform the procedure in <a href="../../applications/applicationstransferfileservicesinterface#top" class="MCXref xref">File Transfer via File Services Interface application</a>.

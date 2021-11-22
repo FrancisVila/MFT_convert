@@ -32,15 +32,15 @@ extends to the character at index endIndex - 1.</p>
          <td><p>Splits given string to tokens based on a delimiter.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${leadingFolder(path)}</span></p>         </td>
+         <td><p><code>${leadingFolder(path)}</code></p>         </td>
          <td><p>For given directory/file path returns only the leading one.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${parentFolder(path)}</span></p>         </td>
+         <td><p><code>${parentFolder(path)}</code></p>         </td>
          <td><p>For given directory/file path returns parent folder path.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${dayOffset(format, offset)}</span></p>         </td>
+         <td><p><code>${dayOffset(format, offset)}</code></p>         </td>
          <td><p>Returns a date representing today's date with the offset of the days parameter.</p>         </td>
       </tr>
    </tbody>
@@ -48,47 +48,47 @@ extends to the character at index endIndex - 1.</p>
 
  
 
-The following table lists predefined EL variable functions and <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> examples.
+The following table lists predefined EL variable functions and {{< SecureTransport/advancedrouting  >}} examples.
 
 <table>
    <thead>
       <tr>
 <th class="HeadE-Column1-Header1">Syntax         </th>
-<th class="HeadD-Column1-Header1"><span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> Usage         </th>
+<th class="HeadD-Column1-Header1">{{< SecureTransport/advancedrouting  >}} Usage         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
          <td><p><code>${variable.toUpperCase()}</code></p>         </td>
-         <td><p><span class="code">${transfer.target.toUpperCase()}</span></p>         </td>
+         <td><p><code>${transfer.target.toUpperCase()}</code></p>         </td>
       </tr>
       <tr>
          <td><p><code>${variable.toLowerCase()}</code></p>         </td>
-         <td><p><span class="code">${transfer.target.toLowerCase()}</span></p>         </td>
+         <td><p><code>${transfer.target.toLowerCase()}</code></p>         </td>
       </tr>
       <tr>
          <td><p><code>${variable.substring(beginIndex,endIndex)}</code></p>         </td>
-         <td><p><span class="code">${transfer.target.substring(0,5)}</span></p>         </td>
+         <td><p><code>${transfer.target.substring(0,5)}</code></p>         </td>
       </tr>
       <tr>
          <td><p><code>${extract(variable, delimiter, position)}</code></p>         </td>
-         <td><p><span class="code">${extract('payroll_Axway_21457584375.txt', '_', 2)}</span>
+         <td><p><code>${extract('payroll_Axway_21457584375.txt', '_', 2)}</code>
 returns <code>Axway</code></p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${leadingFolder(path)}</span></p>         </td>
-         <td><p><span class="code">${leadingFolder('/opt/TMWD/st51')}</span> - returns <span class="code">'opt'</span></p>
-<p><span class="code">${leadingFolder('/opt')}</span> - returns <span class="code">'opt'</span></p>
-<p><span class="code">${leadingFolder('/')}</span> - returns <span class="code">'/'</span></p>         </td>
+         <td><p><code>${leadingFolder(path)}</code></p>         </td>
+         <td><p><code>${leadingFolder('/opt/TMWD/st51')}</code> - returns <code>'opt'</code></p>
+<p><code>${leadingFolder('/opt')}</code> - returns <code>'opt'</code></p>
+<p><code>${leadingFolder('/')}</code> - returns <code>'/'</code></p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${parentFolder(path)}</span></p>         </td>
-         <td><p><span class="code">${parentFolder(‘/opt/TMWD/st51’)}</span> - returns <code>‘/opt/TMWD’</code></p>
-<p><span class="code">${parentFolder(‘/’)}</span> - returns <span class="code">‘/’</span></p>
-<p><span class="code">${parentFolder(‘/usr/file.txt’)}</span> - returns <span class="code">‘/usr’</span></p>         </td>
+         <td><p><code>${parentFolder(path)}</code></p>         </td>
+         <td><p><code>${parentFolder(‘/opt/TMWD/st51’)}</code> - returns <code>‘/opt/TMWD’</code></p>
+<p><code>${parentFolder(‘/’)}</code> - returns <code>‘/’</code></p>
+<p><code>${parentFolder(‘/usr/file.txt’)}</code> - returns <code>‘/usr’</code></p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">${dayOffset(format, offset)}</span></p>         </td>
+         <td><p><code>${dayOffset(format, offset)}</code></p>         </td>
          <td><p><code>${dayOffset('yyMMdd', '-5')}</code> - returns 10<sup>th</sup> if today is 15<sup>th</sup> of August
 formatted as per the specified format parameter - <code>120810</code>.</p>
 <p><code>${dayOffset('yyMMdd', '+7')}</code> - returns 22<sup>th</sup> if today is 15<sup>th</sup> of August

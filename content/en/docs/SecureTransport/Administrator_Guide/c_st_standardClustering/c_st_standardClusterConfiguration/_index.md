@@ -2,7 +2,7 @@
     "title": "Cluster configuration and setup",
     "linkTitle": "Cluster configuration and setup",
     "weight": "100"
-}Much of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration is stored in the database and synchronized dynamically to all servers in a cluster. Some configuration is stored in files that require manual synchronization. For more information, see the following topics:
+}Much of {{< SecureTransport/componentshortname  >}} configuration is stored in the database and synchronized dynamically to all servers in a cluster. Some configuration is stored in files that require manual synchronization. For more information, see the following topics:
 
 -   <a href="../c_st_managestandardcluster/c_st_standard_cluster_synchronization#Requirem" class="MCXref xref">Requirements for synchronization</a>
 -   <a href="../../operations_menu/c_st_serverconfiguration#ServerMenu_1832073003_1107076" class="MCXref xref">Server configuration</a>

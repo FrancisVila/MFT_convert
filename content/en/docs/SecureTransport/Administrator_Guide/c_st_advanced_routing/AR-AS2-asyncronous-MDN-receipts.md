@@ -14,15 +14,15 @@ For two-way, bi-directional communication between partners, the asynchronous AS2
 
  The asynchronous AS2-MDN receipt is sent in a separate HTTP or HTTPS TCP/IP connection and is similar to an inbound transfer from a partner.
 
-## <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Applications for AS2 transfers
+## {{< SecureTransport/securetransportname  >}} Applications for AS2 transfers
 
-In <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>, the setup that handles AS2 transfers can be an instance of Site Mailbox, the Basic Application or the Advanced Routing application types. A user account must be subscribed to either of these applications to be able to send / receive files over the AS2 protocol.
+In {{< SecureTransport/securetransportname  >}}, the setup that handles AS2 transfers can be an instance of Site Mailbox, the Basic Application or the Advanced Routing application types. A user account must be subscribed to either of these applications to be able to send / receive files over the AS2 protocol.
 
 ## AR uses Route setup for outbound transfers
 
-With Advanced Routing, the configuration for outbound transfers is part of the Routes, not the Subscription. This presents a problem with AS2 transfers and the asynchronous MDN receipts due to the way <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> relates the received receipts to the transfers: via the Subscription.
+With Advanced Routing, the configuration for outbound transfers is part of the Routes, not the Subscription. This presents a problem with AS2 transfers and the asynchronous MDN receipts due to the way {{< SecureTransport/componentshortname  >}} relates the received receipts to the transfers: via the Subscription.
 
-In the cases with e.g. Site Mailbox and Basic Application, the Subscription holds the configuration for the outbound transfers, so when <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> receives a MDN, it can relate to the proper subscription and validate the MDN. With Advanced Routing, however, when a file is sent to partner via AS2 in a Route, and the MDN is returned by the partner, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> is unable to locate the Subscription the MDN belongs to and throws an error:
+In the cases with e.g. Site Mailbox and Basic Application, the Subscription holds the configuration for the outbound transfers, so when {{< SecureTransport/securetransportname  >}} receives a MDN, it can relate to the proper subscription and validate the MDN. With Advanced Routing, however, when a file is sent to partner via AS2 in a Route, and the MDN is returned by the partner, {{< SecureTransport/securetransportname  >}} is unable to locate the Subscription the MDN belongs to and throws an error:
 
 
     org.openas2.partner.PartnershipNotFoundException: AS2 site <AS2-sitename> is not used for sending in any subscription.

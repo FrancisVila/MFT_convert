@@ -2,7 +2,7 @@
     "title": "Add a server to a cluster",
     "linkTitle": "Add a server to a cluster",
     "weight": "160"
-}If a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server uses the cluster shared database schema and shared file system, you can add it to the cluster using the Administration Tool. To connect a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to an existing database schema, see <a href="../../../c_st_setup/c_st_database/t_st_database#top" class="MCXref xref">Migrate from embedded database to external Oracle database</a> or <a href="../../../c_st_setup/c_st_database/t_st_oracle#top" class="MCXref xref">Change the Oracle database configuration</a>.
+}If a {{< SecureTransport/componentshortname  >}} Server uses the cluster shared database schema and shared file system, you can add it to the cluster using the Administration Tool. To connect a {{< SecureTransport/componentshortname  >}} Server to an existing database schema, see <a href="../../../c_st_setup/c_st_database/t_st_database#top" class="MCXref xref">Migrate from embedded database to external Oracle database</a> or <a href="../../../c_st_setup/c_st_database/t_st_oracle#top" class="MCXref xref">Change the Oracle database configuration</a>.
 
 To use IPv6 addresses for communication between servers in an Enterprise Cluster (EC), you must edit the `<FILEDRIVEHOME>/conf/tangosol-coherence-override.xml` file on each server and set the value of the `<address>` element to the IPv6 address of the network interface used for cluster communications. The first lines of the `<cluster-config>` element must be:
 
@@ -11,12 +11,12 @@ To use IPv6 addresses for communication between servers in an Enterprise Cluster
         <unicast-listener>
                   <address>IPv6-address</address>
 
-1.  Make sure that the Administration Tool service and the Transaction Manager server are not running on the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server that you are adding to the cluster.
+1.  Make sure that the Administration Tool service and the Transaction Manager server are not running on the {{< SecureTransport/componentshortname >}} Server that you are adding to the cluster.
 
 2.  Select **Operations > Cluster Management**.  
     The *Cluster Management* page is displayed.
 
-3.  Type either the IP address or the FQDN of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server to add to the cluster in the **Server Address** field in the **Servers** table.
+3.  Type either the IP address or the FQDN of the {{< SecureTransport/componentshortname >}} Server to add to the cluster in the **Server Address** field in the **Servers** table.
 
 4.  Click **Add Server**.  
 
@@ -24,7 +24,7 @@ To use IPv6 addresses for communication between servers in an Enterprise Cluster
     >
     > The Administration Tool does not prevent you from adding the same IP address to the cluster more than one, but this is not a valid operation and the additional entries do not add servers to the cluster.
 
-5.  Start the Administration Tool service on the added <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server. Log on to the Administration Tool and start the TM server and required protocol servers. The feature license defines the maximum number of nodes in an EC. If you attempt to start a TM that exceeds the maximum number of nodes defined in the feature license, the TM will not start or process tasks.
+5.  Start the Administration Tool service on the added {{< SecureTransport/componentshortname >}} Server. Log on to the Administration Tool and start the TM server and required protocol servers. The feature license defines the maximum number of nodes in an EC. If you attempt to start a TM that exceeds the maximum number of nodes defined in the feature license, the TM will not start or process tasks.
 
 > **Note:**
 >

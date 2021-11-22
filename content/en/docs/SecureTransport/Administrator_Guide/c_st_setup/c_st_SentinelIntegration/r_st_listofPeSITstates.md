@@ -28,11 +28,11 @@ For a given transfer, only the following combinations of partner roles are possi
 
 ## Server/Sender transfer states
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> acts as a protocol server.
+{{< SecureTransport/componentshortname  >}} acts as a protocol server.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends a file.
+{{< SecureTransport/componentshortname  >}} sends a file.
 
-Server/Sender corresponds to a CIT Download in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> terminology.
+Server/Sender corresponds to a CIT Download in {{< SecureTransport/componentshortname  >}} terminology.
 
 <table>
    <thead>
@@ -44,15 +44,15 @@ Server/Sender corresponds to a CIT Download in <span class="mc-variable axway_va
    <tbody>
       <tr>
          <td>SENDING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is sending a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is sending a file.         </td>
       </tr>
       <tr>
          <td>SENT         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has sent a file.         </td>
       </tr>
       <tr>
          <td>ENDED_TO_ACK         </td>
-         <td>Indicates that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has received an acknowledgment for the file transfer.         </td>
+         <td>Indicates that {{< SecureTransport/componentshortname  >}} has received an acknowledgment for the file transfer.         </td>
       </tr>
       <tr>
          <td>CANCELED         </td>
@@ -73,11 +73,11 @@ Server/Sender corresponds to a CIT Download in <span class="mc-variable axway_va
 
 ## Server/Receiver transfer states
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> acts as a protocol server.
+{{< SecureTransport/componentshortname  >}} acts as a protocol server.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is receiving a file.
+{{< SecureTransport/componentshortname  >}} is receiving a file.
 
-Server/Receiver corresponds to a CIT Upload in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> terminology.
+Server/Receiver corresponds to a CIT Upload in {{< SecureTransport/componentshortname  >}} terminology.
 
 <table>
    <thead>
@@ -89,11 +89,11 @@ Server/Receiver corresponds to a CIT Upload in <span class="mc-variable axway_va
    <tbody>
       <tr>
          <td>RECEIVING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is receiving a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is receiving a file.         </td>
       </tr>
       <tr>
          <td>RECEIVED         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has received a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has received a file.         </td>
       </tr>
       <tr>
          <td>POST_PPROC         </td>
@@ -101,7 +101,7 @@ Server/Receiver corresponds to a CIT Upload in <span class="mc-variable axway_va
       </tr>
       <tr>
          <td>ACKED         </td>
-         <td>Indicates that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has acknowledged the transfer to the partner.         </td>
+         <td>Indicates that {{< SecureTransport/componentshortname  >}} has acknowledged the transfer to the partner.         </td>
       </tr>
       <tr>
          <td>CANCELED         </td>
@@ -126,11 +126,11 @@ Server/Receiver corresponds to a CIT Upload in <span class="mc-variable axway_va
 
 ## Requester/Receiver transfer states
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> acts as a protocol client.
+{{< SecureTransport/componentshortname  >}} acts as a protocol client.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is receiving a file.
+{{< SecureTransport/componentshortname  >}} is receiving a file.
 
-This corresponds to SIT Pull in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> terminology.
+This corresponds to SIT Pull in {{< SecureTransport/componentshortname  >}} terminology.
 
 <table>
    <thead>
@@ -142,19 +142,19 @@ This corresponds to SIT Pull in <span class="mc-variable axway_variables.Compone
    <tbody>
       <tr>
          <td>TO_EXECUTE         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is about to execute a scheduled job.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is about to execute a scheduled job.         </td>
       </tr>
       <tr>
          <td>RECEIVING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is receiving a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is receiving a file.         </td>
       </tr>
       <tr>
          <td>RECEIVED         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has received a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has received a file.         </td>
       </tr>
       <tr>
          <td>ACKED         </td>
-         <td>Indicates that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has acknowledged the transfer to the partner.         </td>
+         <td>Indicates that {{< SecureTransport/componentshortname  >}} has acknowledged the transfer to the partner.         </td>
       </tr>
       <tr>
          <td>INTERRUPTED         </td>
@@ -175,11 +175,11 @@ This corresponds to SIT Pull in <span class="mc-variable axway_variables.Compone
 
 ## Requester/Sender transfer states
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> acts as a protocol client.
+{{< SecureTransport/componentshortname  >}} acts as a protocol client.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is sending a file.
+{{< SecureTransport/componentshortname  >}} is sending a file.
 
-This corresponds to SIT Push in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> terminology.
+This corresponds to SIT Push in {{< SecureTransport/componentshortname  >}} terminology.
 
 <table>
    <thead>
@@ -191,19 +191,19 @@ This corresponds to SIT Push in <span class="mc-variable axway_variables.Compone
    <tbody>
       <tr>
          <td>TO_EXECUTE         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is about to execute a scheduled job.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is about to execute a scheduled job.         </td>
       </tr>
       <tr>
          <td>SENDING         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is sending a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is sending a file.         </td>
       </tr>
       <tr>
          <td>SENT         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has sent a file.         </td>
       </tr>
       <tr>
          <td>ENDED_TO_ACK         </td>
-         <td>Indicates that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has received an acknowledgment for the file transfer.         </td>
+         <td>Indicates that {{< SecureTransport/componentshortname  >}} has received an acknowledgment for the file transfer.         </td>
       </tr>
       <tr>
          <td>CANCELED         </td>

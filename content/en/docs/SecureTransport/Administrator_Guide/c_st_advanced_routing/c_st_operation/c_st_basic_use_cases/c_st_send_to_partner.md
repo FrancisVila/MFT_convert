@@ -29,8 +29,8 @@ PGP encrypt each incoming file and route the file to a remote transfer site.
 ## Prerequisites
 
 -   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create {{< SecureTransport/securetransportname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
 -   Create a remote transfer site.
     For remote transfer site creation details, refer to <a href="../../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>.
 -   Generate or import a Partner PGP key which is used for encryption. For instructions on generating or importing a partner PGP key, refer to <a href="../../../../accounts/c_st_usercertificates/t_st_usercertificates#Generate" class="MCXref xref">Manage login certificates</a>or <a href="../../../../accounts/c_st_usercertificates/t_st_usercertificates#Import4" class="MCXref xref">Manage login certificates</a>.
@@ -39,7 +39,7 @@ PGP encrypt each incoming file and route the file to a remote transfer site.
 
 ## Step to configure the flow
 
-1.  Create and configure a subscription to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
     1.  Configure the subscription folder.
     2.  (Optional) Configure the rest of the settings.
     3.  Click **Add** when done.
@@ -66,6 +66,6 @@ PGP encrypt each incoming file and route the file to a remote transfer site.
 
 ## Flow of events
 
-1.  A file is uploaded via any protocol to the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> subscription folder.
-2.  The <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application triggers route.
+1.  A file is uploaded via any protocol to the {{< SecureTransport/advancedrouting >}} subscription folder.
+2.  The {{< SecureTransport/advancedrouting >}} application triggers route.
 3.  The uploaded file is encrypted and sent to the remote transfer site.

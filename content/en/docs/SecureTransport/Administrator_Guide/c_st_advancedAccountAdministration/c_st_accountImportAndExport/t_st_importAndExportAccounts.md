@@ -2,7 +2,7 @@
     "title": "Export and import accounts",
     "linkTitle": "Export and import accounts",
     "weight": "190"
-}Use the *Import or Export Accounts* page and command-line utilities to export and import <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> accounts.
+}Use the *Import or Export Accounts* page and command-line utilities to export and import {{< SecureTransport/componentshortname  >}} accounts.
 
 The following topics provide how-to instructions for exporting and importing accounts:
 
@@ -15,7 +15,7 @@ The following topics provide how-to instructions for exporting and importing acc
 
 ## Export accounts using the Administration Tool
 
-You can export accounts using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. When you use the *Import or Export Accounts* page, all the account information on the server is exported. This includes user accounts, service accounts, account templates, certificates, application instances, business units, administrators, administrative roles, site templates, route packages, and route package templates. To export a single account from the Administration Tool, see <a href="../../../accounts/useraccounts/t_st_export_single_user_account" class="MCXref xref">Export a single user account</a>. To control which account information is exported, see <a href="#Export" class="MCXref xref">Export accounts from the command line</a>.
+You can export accounts using the {{< SecureTransport/componentshortname  >}} Administration Tool. When you use the *Import or Export Accounts* page, all the account information on the server is exported. This includes user accounts, service accounts, account templates, certificates, application instances, business units, administrators, administrative roles, site templates, route packages, and route package templates. To export a single account from the Administration Tool, see <a href="../../../accounts/useraccounts/t_st_export_single_user_account" class="MCXref xref">Export a single user account</a>. To control which account information is exported, see <a href="#Export" class="MCXref xref">Export accounts from the command line</a>.
 
 The exported file is written to the `<FILEDRIVEHOME>/var/tmp/export_accounts.xml` file. This file is overwritten every time you export account information.
 
@@ -26,7 +26,7 @@ The exported file is written to the `<FILEDRIVEHOME>/var/tmp/export_accounts.xml
 
 3.  Enter a password in the **Password** field, then type the same password in the **Re-enter Password** field. The password must contain at least eight characters.
 
-4.  Click **Export**. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> creates an export file in `<FILEDRIVEHOME>/var/tmp/export_accounts.xml` and displays a message indicating that the export was successful.
+4.  Click **Export**. {{< SecureTransport/componentshortname >}} creates an export file in `<FILEDRIVEHOME>/var/tmp/export_accounts.xml` and displays a message indicating that the export was successful.
 
 5.  To save the exported account information to a new location, click **Download Exported Accounts**. A dialog box displays prompting you to **Save** or **Open** the XML file.  
 
@@ -177,9 +177,9 @@ You can generate an XML file that contains all the account, global and account c
 
 ## Import accounts using the Administration Tool
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> supports import from the following releases only, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. Accounts can be imported from export files produced by the same or another <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment.
+{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} supports import from the following releases only, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. Accounts can be imported from export files produced by the same or another {{< SecureTransport/componentshortname  >}} deployment.
 
-You can import account information using the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool. The account information is imported as an XML file containing user settings, transfer sites, transfer profiles, account certificates, certificate requests, subscriptions, and route packages. You can also import business units, administrators, administrative roles, site template settings, applications, route package templates, and certificates. You must know the password assigned to the file when it was exported by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. If you are creating an XML file from scratch, you must assign a password to the file.
+You can import account information using the {{< SecureTransport/componentshortname  >}} Administration Tool. The account information is imported as an XML file containing user settings, transfer sites, transfer profiles, account certificates, certificate requests, subscriptions, and route packages. You can also import business units, administrators, administrative roles, site template settings, applications, route package templates, and certificates. You must know the password assigned to the file when it was exported by {{< SecureTransport/componentshortname  >}}. If you are creating an XML file from scratch, you must assign a password to the file.
 
 > **Note:**
 >
@@ -206,9 +206,9 @@ Account import will fail on the first error, and SecureTransport will not attemp
 
 ## Import accounts from the command line
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> supports import from the following releases only, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. Accounts can be imported from export files produced by the same or another <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> deployment.
+{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} supports import from the following releases only, patched to the latest patch or service pack – 5.4, 5.3.6, 5.3.5, 5.3.3, 5.3.1, 5.3.0, and 5.2.1. Accounts can be imported from export files produced by the same or another {{< SecureTransport/componentshortname  >}} deployment.
 
-You can import accounts to move from one platform to another or to create a large number of accounts without creating them one at a time. Using an exported account as a template, you can create a list of new accounts that can be imported into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+You can import accounts to move from one platform to another or to create a large number of accounts without creating them one at a time. Using an exported account as a template, you can create a list of new accounts that can be imported into {{< SecureTransport/componentshortname  >}}.
 
 > **Note:**
 >
@@ -240,7 +240,7 @@ and `FileNameAndPath` is the location and file name of XML file containing the a
 2.  On a UNIX-based system, change to the `<FILEDRIVEHOME>/bin` directory.
 3.  Type the `xml_import` command.
 4.  Type the password for the XML file at the prompt.  
-    The accounts are imported into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+    The accounts are imported into {{< SecureTransport/componentshortname >}}.
 
 > **Note:**
 >

@@ -30,7 +30,7 @@ Use the password settings to control how often an administrator needs to change 
 
 ## Change session settings
 
-Use the session settings to control how long an administrator can be logged into <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> before the session expires and the administrator must log in again.
+Use the session settings to control how long an administrator can be logged into {{< SecureTransport/componentshortname  >}} before the session expires and the administrator must log in again.
 
 1.  Select **Setup > Admin Settings**.
 2.  Type the number of minutes the session stays active. The default setting is 30 minutes.

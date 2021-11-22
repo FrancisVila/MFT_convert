@@ -2,7 +2,7 @@
     "title": "Setup",
     "linkTitle": "Setup",
     "weight": "50"
-}The following set of topics provides detailed <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> configuration and setup information:
+}The following set of topics provides detailed {{< SecureTransport/componentshortname  >}} configuration and setup information:
 
 -   <a href="c_st_certificates" class="MCXref xref">Certificates</a>: types, import and export, generating certificates and certificate signing requests.
 -   <a href="c_st_pgpkey" class="MCXref xref">PGP key encryption and signing</a>
@@ -28,20 +28,20 @@
 -   <a href="t_st_stream_edge_backend" class="MCXref xref">Configure SecureTransport Back End to Edge streaming communication</a>
 -   <a href="" class="MCXref xref">Address Book</a>
 
-## Log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool
+## Log in to the {{< SecureTransport/componentshortname  >}} Administration Tool
 
-To log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool through a web browser, take the following steps. For a list of supported web browsers, see <a href="../overview/r_st_axway_and_third-party_software_support#Introduction_3964627930_1066167" class="MCXref xref">Axway and third-party software support</a>.
+To log in to the {{< SecureTransport/componentshortname  >}} Administration Tool through a web browser, take the following steps. For a list of supported web browsers, see <a href="../overview/r_st_axway_and_third-party_software_support#Introduction_3964627930_1066167" class="MCXref xref">Axway and third-party software support</a>.
 
 1.  Open the web browser.
 2.  Type the URL for the Administration Tool as follows:  
     `https://<host>:port`  
-    where `<host>` is the host name, FQDN or IP of the computer running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and `port` is the administration port number entered during installation. The default port number is 444 for root installations. When <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is installed as non-root, the default port is 8444.
-3.  Following the instructions for your browser, add a certificate exception for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> instance if needed.  
+    where `<host>` is the host name, FQDN or IP of the computer running {{< SecureTransport/componentshortname >}} and `port` is the administration port number entered during installation. The default port number is 444 for root installations. When {{< SecureTransport/componentshortname >}} is installed as non-root, the default port is 8444.
+3.  Following the instructions for your browser, add a certificate exception for the {{< SecureTransport/componentshortname >}} instance if needed.  
     The login page is displayed.
 4.  Type the administrator name and password. The default user name is `admin` and the default password is `admin`.
 5.  Click **Log In**.
 
-If an error occurs when logging into the Administration Tool, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> prompts you to type the name and password again.
+If an error occurs when logging into the Administration Tool, {{< SecureTransport/componentshortname  >}} prompts you to type the name and password again.
 
 > **Note:**
 >

@@ -2,7 +2,7 @@
     "title": "File Maintenance application",
     "linkTitle": "File Maintenance application",
     "weight": "230"
-}In <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span>, you can create a file maintenance policy that deletes files from the account home folder based on a specified retention or expiration period. You can schedule the maintenance and configure notifications to be sent to specific recipients before or/and after the deletion of files.
+}In {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, you can create a file maintenance policy that deletes files from the account home folder based on a specified retention or expiration period. You can schedule the maintenance and configure notifications to be sent to specific recipients before or/and after the deletion of files.
 
 A File Maintenance policy can be set at four levels:
 

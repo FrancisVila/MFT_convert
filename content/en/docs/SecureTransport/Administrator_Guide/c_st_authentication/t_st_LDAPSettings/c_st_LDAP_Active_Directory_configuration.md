@@ -2,10 +2,10 @@
     "title": "LDAP and Active Directory configuration",
     "linkTitle": "LDAP and Active Directory configuration",
     "weight": "430"
-}If you use LDAP with Active Directory, you must consider the following requirements for the LDAP server configuration in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+}If you use LDAP with Active Directory, you must consider the following requirements for the LDAP server configuration in {{< SecureTransport/componentshortname  >}}:
 
 -   Under LDAP Searches:
-    -   Specify a CN value in the **Base DN** field (for example, `cn=users`). The CN value is required for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> LDAP authentication to work, even though the OpenLDAP `ldapsearch` command generically does not require it when run from a command line interface.
+    -   Specify a CN value in the **Base DN** field (for example, `cn=users`). The CN value is required for {{< SecureTransport/componentshortname >}} LDAP authentication to work, even though the OpenLDAP `ldapsearch` command generically does not require it when run from a command line interface.
     -   Select **Common Name (cn)** or **SAM-Account-Name (sAMAccountName)** for the **Search Attribute**. Use the SAM-Account-Name parameter instead of the CN parameter to log in using the Windows domain login name.
 -   TLS is only supported in Windows Server 2003 Active Directory or later.
 -   Disable **Anonymous Binds**.

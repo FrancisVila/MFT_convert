@@ -2,15 +2,15 @@
     "title": "Advanced Routing",
     "linkTitle": "Advanced Routing",
     "weight": "160"
-}This chapter provides detailed information about the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> concepts and procedures. You will learn various instruction on how to create Advanced Routes, subscribe user accounts to <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> applications and assign route package templates to user accounts.
+}This chapter provides detailed information about the {{< SecureTransport/advancedrouting  >}} concepts and procedures. You will learn various instruction on how to create Advanced Routes, subscribe user accounts to {{< SecureTransport/advancedrouting  >}} applications and assign route package templates to user accounts.
 
 In addition to configuration descriptions, you will be able to observe some example basic and advanced use cases.
 
-The final topics of this chapter also contain instructions for <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> best practices and troubleshooting.
+The final topics of this chapter also contain instructions for {{< SecureTransport/advancedrouting  >}} best practices and troubleshooting.
 
-## <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> overview
+## {{< SecureTransport/advancedrouting  >}} overview
 
-Advanced Routing (AR) provides a mechanism for multiple routing and transformation iterations over one or more files. As the name suggests, it allows the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> administrator to create diverse patterns for file transformations and movement (routing) across different partner systems and internal entities. UI-wise, Advanced Routing is a standard SecureTransport *application*: in order to use it, either an account or account template must subscribe to it.
+Advanced Routing (AR) provides a mechanism for multiple routing and transformation iterations over one or more files. As the name suggests, it allows the {{< SecureTransport/componentshortname  >}} administrator to create diverse patterns for file transformations and movement (routing) across different partner systems and internal entities. UI-wise, Advanced Routing is a standard SecureTransport *application*: in order to use it, either an account or account template must subscribe to it.
 
 Advanced Routing (AR) is the most complex application, both in terms of configuration and possible use cases. Using it involves concepts and terminology that are entirely AR-specific. In order to take advantage of these concepts, you must first understand the aspects of AR and the great multitude of file transfer scenarios it covers.
 
@@ -25,13 +25,13 @@ Each transformation or routing is defined as a *step* in a *route*. For example,
 
 **Summary:** Route steps are *definitions for actions* you apply to one or more files in a specific order. A set of route steps forms a route.
 
-<span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> allows you to add more routes if you need to. You decide how many steps you’ll have in each of your routes. Theoretically, your route package can include as many steps as you want; however, it is not recommended to have too many as it might adversely affect performance.
+{{< SecureTransport/advancedrouting  >}} allows you to add more routes if you need to. You decide how many steps you’ll have in each of your routes. Theoretically, your route package can include as many steps as you want; however, it is not recommended to have too many as it might adversely affect performance.
 
 For best UI experience, it is recommended that you understand the terminology introduced with AR.
 
-### <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> glossary of terms
+### {{< SecureTransport/advancedrouting  >}} glossary of terms
 
-The following terms and concepts are introduced with <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span>:
+The following terms and concepts are introduced with {{< SecureTransport/advancedrouting  >}}:
 
 -   **Route and route steps**  
     Advanced Routing provides advanced transformation and routing capabilities to file transfers. Each transformation and movement of files is performed in a *route*. A route is a set of (route) steps which are consecutively executed. The order of step execution is defined in the routes and the eventual processing of steps is triggered by predefined conditions. Only AR file transfers use steps. You can have multiple steps defined in a route. Each step performs either of the two possible actions: file *transformation* or file *routing*.  
@@ -51,7 +51,7 @@ When specific predefined conditions are met, the route kicks off and its steps a
 
 As an administrator, you define the conditions which will trigger transformation and routing processing or both over one or more files. Those conditions or steps are stored in a Route Package or Route Package Template. In order to reuse already defined steps, you must add them to a *Route Package Template*. In contrast, one or more steps which are specific for a particular user can be defined in a *Route Package*.
 
-<span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> processing can be triggered by the following events:
+{{< SecureTransport/advancedrouting  >}} processing can be triggered by the following events:
 
 -   Successful client upload
 -   Failed client upload
@@ -61,7 +61,7 @@ As an administrator, you define the conditions which will trigger transformation
 -   Temporarily failure of a server pull
 -   Failed server pull - Also applies to failed wildcard and individual file pulls
 
-## <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> setup overview
+## {{< SecureTransport/advancedrouting  >}} setup overview
 
 The following list represents the setup stages that a SecureTransport administrator must go through in order to configure an AR instance.
 
@@ -74,9 +74,9 @@ As noted above, you must have an account (or an account template) in order to cr
 
 As you can see, setup itself introduces some AR-specific concepts. The route package template, the route package instance and the route itself are all different forms of the same concept: a reusable configuration that is easily upgradable when necessary. You will better understand their purpose when you learn a bit more about the logic incorporated into each AR flow.
 
-## <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> features
+## {{< SecureTransport/advancedrouting  >}} features
 
-<span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> offers the following features:
+{{< SecureTransport/advancedrouting  >}} offers the following features:
 
 -   Conditioning
     -   Transformation and route execution can be based on file path/name patterns or other environment variables
@@ -97,7 +97,7 @@ As you can see, setup itself introduces some AR-specific concepts. The route pac
 -   Ability to specify and overwrite transformation and routing steps on an account basis
 -   Distributed execution of the routes in a Standard Cluster or Enterprise Cluster
 
-The following topics provide detailed info about different aspects of <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> :
+The following topics provide detailed info about different aspects of {{< SecureTransport/advancedrouting  >}} :
 
 -   <a href="c_st_order_of_configuration" class="MCXref xref">Order of configuration</a>
 -   <a href="c_st_configuration" class="MCXref xref">Configuration</a>

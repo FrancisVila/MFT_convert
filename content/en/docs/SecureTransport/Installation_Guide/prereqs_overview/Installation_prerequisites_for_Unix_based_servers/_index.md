@@ -7,7 +7,7 @@
 -   Make sure the umask is set to 022.
 -   All SecureTransport Servers in a cluster must run on the same operating system. All SecureTransport Edge servers that synchronize configuration must run on the same operating system. However, in a multitier security deployment, the operating system for SecureTransport Server systems can be different from the operating system for the SecureTransport Edge systems.
 -   SecureTransport is a 64-bit application and requires a 64-bit version of the supported operating systems. The embedded MariaDB database runs as a 32-bit process when SecureTransport is installed in an IBM AIX environment. On all the other supported 64-bit operating systems, the embedded MariaDB database runs as a 64-bit process.
--   All <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers in a cluster must use the same installation path, such as `/opt/Axway/SecureTransport`.
+-   All {{< SecureTransport/componentshortname >}} Servers in a cluster must use the same installation path, such as `/opt/Axway/SecureTransport`.
 -   Copy the `taeh` file from the systems running the primary server in a Standard Cluster or the first server in the Enterprise Cluster to the system where you will install the subsequent server.
 -   Set a `TasksMax` value  
     In some cases, the SecureTransport services may not automatically start after reboot on certain Unix-based OS distributions because of a default limit of each task per service configured on the OS side. While this limit may differ across different OSs, this problem may occur with services that handle bigger workloads. The recommended approach is to manually set a `TasksMax` value to a bigger one, for the relevant protocol services and the db service as well. The following example procedure is for the HTTP daemon. Apply that same procedure to the database service, and to all protocol services that handle bigger workloads:  
@@ -25,9 +25,9 @@
 
 ## Minimum UNIX hardware requirements
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> runs on any computer or virtual environment capable of running the supported version of the operating system. The computer or virtual environment requires a functional network connection.
+{{< SecureTransport/componentshortname  >}} runs on any computer or virtual environment capable of running the supported version of the operating system. The computer or virtual environment requires a functional network connection.
 
-The following table provides the minimum hardware requirements needed to install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>:
+The following table provides the minimum hardware requirements needed to install {{< SecureTransport/componentshortname  >}}:
 
 <table>
    <thead>
@@ -66,13 +66,13 @@ The following table provides the minimum hardware requirements needed to install
    </tbody>
 </table>
 
-During <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation, approximately 20 GB of free disk space is temporarily required for the extracted installer and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> files. The files are removed when the installation completes. If the installation fails, you can reclaim the disk space by removing the `/tmp/AxwayTemptimestamp` directory.
+During {{< SecureTransport/componentshortname  >}} installation, approximately 20 GB of free disk space is temporarily required for the extracted installer and {{< SecureTransport/componentshortname  >}} files. The files are removed when the installation completes. If the installation fails, you can reclaim the disk space by removing the `/tmp/AxwayTemptimestamp` directory.
 
-During <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> upgrade, the `/tmp` directory requires an additional 20 GB of free space for a total of approximately 40 GB of free space needed to upgrade. The additional `/tmp` directory space is not required for fresh installations or during normal operations.
+During {{< SecureTransport/componentshortname  >}} upgrade, the `/tmp` directory requires an additional 20 GB of free space for a total of approximately 40 GB of free space needed to upgrade. The additional `/tmp` directory space is not required for fresh installations or during normal operations.
 
 Alternatively, prior the upgrade, the `TEMPORARY_DIR` environment variable, pointing to a directory with sufficient space, can be exported to be used during the installation or upgrade.
 
-To install and run <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, the OS must be able to allocate at least 8 GB of memory to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>. On UNIX-based platforms, you can limit the system resources available using `ulimit` or similar commands.
+To install and run {{< SecureTransport/componentshortname  >}}, the OS must be able to allocate at least 8 GB of memory to {{< SecureTransport/componentshortname  >}}. On UNIX-based platforms, you can limit the system resources available using `ulimit` or similar commands.
 
 > **Note:**
 >
@@ -82,7 +82,7 @@ To install and run <span class="mc-variable axway_variables.Component_Short_Name
 
 ### Viewing memory limits
 
-You can view the memory limitations using the command `ulimit -a`. These limitations need to be adjusted for the `root` user for the installation to run correctly and for the user running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> if a non-root install is done. After installation, only the user running <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> should be able to allocate that much memory.
+You can view the memory limitations using the command `ulimit -a`. These limitations need to be adjusted for the `root` user for the installation to run correctly and for the user running {{< SecureTransport/componentshortname  >}} if a non-root install is done. After installation, only the user running {{< SecureTransport/componentshortname  >}} should be able to allocate that much memory.
 
 <span id="Changing"></span>
 
@@ -106,7 +106,7 @@ To set system resource limits on RHEL:
 
 ## Host name resolution
 
-For <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to run, the host name of the server must resolve to its actual IP address, not the loopback address (127.0.0.1).
+For {{< SecureTransport/componentshortname  >}} to run, the host name of the server must resolve to its actual IP address, not the loopback address (127.0.0.1).
 
 1.  Use `nslookup` to check the IP address for the server.
 2.  If the IP address returned is not the actual IP address of the server, check `/etc/hosts `and remove any entry that maps the host name to the loopback address and check the IP address again.

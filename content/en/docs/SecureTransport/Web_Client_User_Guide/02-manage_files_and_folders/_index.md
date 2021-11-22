@@ -29,7 +29,7 @@ The new folder is created and displayed on the *Your files* panel and a success 
 
 ## Upload files
 
-You upload files to the folders and subfolders you select. You cannot upload folders: instead you must create these folders in the <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> and perform your uploads after that.
+You upload files to the folders and subfolders you select. You cannot upload folders: instead you must create these folders in the and perform your uploads after that.
 
 To upload files to ST Web Client you can either drag and drop the files in *Your Files* or follow the process after clicking the **Upload** button.
 
@@ -58,7 +58,7 @@ You can track the status of the files in the *Uploads* pane. For information on 
 
 ## View and select files and folders
 
-When you have added folders and file content, you can view the tree structure of your <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> space. However, collaborators who share folders with you, also contribute to this structure. For example, the following screen displays a fairly rich structure:
+When you have added folders and file content, you can view the tree structure of your space. However, collaborators who share folders with you, also contribute to this structure. For example, the following screen displays a fairly rich structure:
 
 on the Left panel view you can see that:
 
@@ -71,7 +71,7 @@ on the Left panel view you can see that:
 In the right-hand area you can see:
 
 -   all 6 items in 'Your Files' folder: the 4 folders followed by the 2 files.
--   the timestamp of last modification to each item, plus the size of files. <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> does not display size of subfolders. At the bottom right you can see that the total number of items plus the total size of the two files: 413.52 KB.
+-   the timestamp of last modification to each item, plus the size of files. does not display size of subfolders. At the bottom right you can see that the total number of items plus the total size of the two files: 413.52 KB.
 -   your currently selected folder is /documents: this means that it is on focus for sharing or performing other actions.
 
 ### Select and open folders
@@ -92,9 +92,9 @@ With files it is similar: when you click the file link, you download it. If you 
 >
 > If the Share folders feature is not available, contact your system administrator.
 
-In <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> you share folders and not files alone. In other words: if you want to share a single file, you must put it in a dedicated folder which you will be sharing with others.
+In  you share folders and not files alone. In other words: if you want to share a single file, you must put it in a dedicated folder which you will be sharing with others.
 
-The concept of sharing folders with other <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> users is to authorize users to access files in the folders (or subfolders) you select. Depending on your system configuration, you can share info with Address Book contacts and / or external contacts. Contact your SecureTransport administrator for more info.
+The concept of sharing folders with other users is to authorize users to access files in the folders (or subfolders) you select. Depending on your system configuration, you can share info with Address Book contacts and / or external contacts. Contact your SecureTransport administrator for more info.
 
 The user interface allows you to share one folder at a time. To share a folder:
 

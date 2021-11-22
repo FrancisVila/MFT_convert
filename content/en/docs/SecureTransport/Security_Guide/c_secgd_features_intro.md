@@ -30,7 +30,7 @@ The following secure connections are available:
 
 -   Connections to ICAP servers can be TLS secured.
 
--   Connection to <span class="mc-variable suite_variables.SentinelName variable">Sentinel</span> can be TLS secured.
+-   Connection to {{< SecureTransport/sentinelname >}} can be TLS secured.
 
 -   Connections to external Microsoft MSSQL 2014, Oracle 11g, and Oracle 12c databases are TLS secured.
 
@@ -51,7 +51,7 @@ Certificate management can either be performed internally in the product or usin
 
 ### HSM
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> supports HSM key management of local certificates. Storing any other type of certificates on HSM is not supported. Only the FTP and HTTP protocol servers can be configured with HSM support.
+{{< SecureTransport/componentshortname  >}} supports HSM key management of local certificates. Storing any other type of certificates on HSM is not supported. Only the FTP and HTTP protocol servers can be configured with HSM support.
 
 ### When not using HSM
 
@@ -74,13 +74,13 @@ The following features are available:
 
 ### SiteMinder
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can be integrated into a SiteMinder SSO environment and use SiteMinder to authenticate and authorize all supported client protocols. For more information, refer to the *SiteMinder integration* chapter in the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+{{< SecureTransport/componentshortname  >}} can be integrated into a SiteMinder SSO environment and use SiteMinder to authenticate and authorize all supported client protocols. For more information, refer to the *SiteMinder integration* chapter in the .
 
 <img src="/Images/SecureTransport/SiteMinder_SampleIntegrationModel.png" class="maxWidth" alt="SiteMinder - Sample Integration Model" />
 
 ### LDAP
 
-<span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> can be configured to use Lightweight Directory Access Protocol (LDAP) servers to authenticate users and to set up the user session. For more information, refer to the *LDAP integration* chapter in the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+{{< SecureTransport/securetransportname  >}} can be configured to use Lightweight Directory Access Protocol (LDAP) servers to authenticate users and to set up the user session. For more information, refer to the *LDAP integration* chapter in the .
 
 <span id="Other"></span>
 
@@ -88,6 +88,6 @@ The following features are available:
 
 The following features are available:
 
--   ICAP - For more information, refer to the *ICAP settings* section in the *Setup* chapter of the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
--   Email/SNMP/Sentinel notifications on various events - For more information, refer to the *Manage accounts* chapter in the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
--   DMZ support - For additional information, refer to the *Transaction Manager protocol and proxy server communication section* in the *Setup* chapter of the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+-   ICAP - For more information, refer to the *ICAP settings* section in the *Setup* chapter of the .
+-   Email/SNMP/Sentinel notifications on various events - For more information, refer to the *Manage accounts* chapter in the .
+-   DMZ support - For additional information, refer to the *Transaction Manager protocol and proxy server communication section* in the *Setup* chapter of the .

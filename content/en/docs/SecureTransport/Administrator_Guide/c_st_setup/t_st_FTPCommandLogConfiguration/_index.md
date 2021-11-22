@@ -2,7 +2,7 @@
     "title": "Configure FTP command log",
     "linkTitle": "Configure FTP command log",
     "weight": "200"
-}The <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> command logging feature works as a tracking system. It maintains a log of the commands entered by the users during an FTP session. Command logging is available for the FTP server only. You can use the `Ftp.CommandLogging.File` server configuration parameter to set the location of the command log. By default, the location is `<FILEDRIVEHOME>/var/logs/cmdlog`.
+}The {{< SecureTransport/componentshortname  >}} command logging feature works as a tracking system. It maintains a log of the commands entered by the users during an FTP session. Command logging is available for the FTP server only. You can use the `Ftp.CommandLogging.File` server configuration parameter to set the location of the command log. By default, the location is `<FILEDRIVEHOME>/var/logs/cmdlog`.
 
 Use the *Command Logging* page to view and determine which user classes should have their commands logged. You can restrict this feature by user class, so that the FTP sessions of only certain user classes are logged.
 

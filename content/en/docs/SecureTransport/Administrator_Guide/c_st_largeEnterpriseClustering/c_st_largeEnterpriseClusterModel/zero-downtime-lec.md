@@ -17,7 +17,7 @@ To ensure zero downtime, the following prerequisites must be met:
 -   The active and passive cluster must have identical configuration and deployment.
     -   both must use the same `taeh` file (used by each of the servers in the cluster for authentication and encryption purposes across servers)
     -   both must have the same system configurations and account schemas configured
--   The Load balancer balances traffic between the edges (<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> nodes on Cluster 1) by hostname, resolved by internal DNS server (or hosts file on the Load Balancer host)
+-   The Load balancer balances traffic between the edges ({{< SecureTransport/componentshortname >}} nodes on Cluster 1) by hostname, resolved by internal DNS server (or hosts file on the Load Balancer host)
 -   File storages on both clusters must be in constant sync and file contents must be identical and present at both clusters
 -   The database replication requires that databases on both clusters contain a special set of tables. The following tables **must not be** synced:
     -   `AUDITLOG`
@@ -50,14 +50,14 @@ To ensure zero downtime, the following prerequisites must be met:
 
 Several steps must be executed on the Cluster 1 and Cluster 2 in order to redirect seamlessly traffic redirection from Cluster 1 to Cluster 2:
 
-1.  Stop Monitor Server on all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers and Edges in Cluster 1 (and Cluster 2, if applicable).
+1.  Stop Monitor Server on all {{< SecureTransport/componentshortname >}} Servers and Edges in Cluster 1 (and Cluster 2, if applicable).
 2.  Stop all database replications across Clusters 1 and 2. Do not stop file system replications.
 3.  Redirect the load balancer traffic from Cluster 1 to Cluster 2.
-4.  On Cluster 1, stop the Scheduler and Folder Monitor on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers.
-5.  On Cluster 2, start the Scheduler and Folder Monitor on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers.
-6.  On Cluster 1, stop the protocol servers gracefully on all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers and Edges. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful3" class="MCXref xref">Graceful shutdown of protocol servers</a>.
-7.  On Cluster 1, make sure all protocol servers (on all <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> Servers and Edges) are stopped in order to proceed with stopping the Transaction Manager gracefully. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful" class="MCXref xref">Graceful shutdown of Transaction Manager</a>.
-8.  Stop any remaining services on <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers and Edges in Cluster 1 – admin services, proxy services, etc. Use the `stop_all` console command: `<FILEDRIVEHOME>/bin/stop_all `(or, on Windows, `<FILEDRIVEHOME>\bin\stop_all.com`).
+4.  On Cluster 1, stop the Scheduler and Folder Monitor on {{< SecureTransport/componentshortname >}} Servers.
+5.  On Cluster 2, start the Scheduler and Folder Monitor on {{< SecureTransport/componentshortname >}} Servers.
+6.  On Cluster 1, stop the protocol servers gracefully on all {{< SecureTransport/componentshortname >}} Servers and Edges. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful3" class="MCXref xref">Graceful shutdown of protocol servers</a>.
+7.  On Cluster 1, make sure all protocol servers (on all {{< SecureTransport/securetransportname >}} Servers and Edges) are stopped in order to proceed with stopping the Transaction Manager gracefully. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful" class="MCXref xref">Graceful shutdown of Transaction Manager</a>.
+8.  Stop any remaining services on {{< SecureTransport/componentshortname >}} Servers and Edges in Cluster 1 – admin services, proxy services, etc. Use the `stop_all` console command: `<FILEDRIVEHOME>/bin/stop_all `(or, on Windows, `<FILEDRIVEHOME>\bin\stop_all.com`).
 
 > **Note:**
 >

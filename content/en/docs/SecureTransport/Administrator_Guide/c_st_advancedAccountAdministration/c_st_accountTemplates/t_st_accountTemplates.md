@@ -111,18 +111,18 @@ Use the following procedure to add an account template.
     -   **Challenge** – The ad hoc file recipient receives a link and must answer correctly a challenge question specified by the sender to retrieve the files. The recipient is not enrolled as a user. The ST Web Client option is **Protect attachment link with security question**.
     -   **Existing Account** – Do not enroll ad hoc file recipients. Only existing users can receive files. The ST Web Client option is **Send to existing users only**.
     -   **Enroll Unlicensed** – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes an unlicensed user who can only reply once to the email and retrieve the files. Other user attributes are defined by the enrollment template. The ST Web Client option is **Allow recipients to enroll as new Unlicensed Users**.
-    -   **Enroll Licensed** – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> user with all the attributes specified in the default enrollment template. The ST Web Client option is **Allow recipients to enroll as new Full Licensed Users**.
+    -   **Enroll Licensed** – If the ad hoc file recipient does not have a user account, the recipient must enroll and create an account before retrieving the files. The ad hoc file recipient becomes a {{< SecureTransport/componentshortname >}} user with all the attributes specified in the default enrollment template. The ST Web Client option is **Allow recipients to enroll as new Full Licensed Users**.
 
-13. The **Implicit Enrollment Type** value controls which option ST Web Client selects initially in the *User Access* window and which enrollment type is used by the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins. The choices depend on the enrollment types enabled by the **Delivery Methods** and **Enrollment Types** fields.
+13. The **Implicit Enrollment Type** value controls which option ST Web Client selects initially in the *User Access* window and which enrollment type is used by the {{< SecureTransport/companyname >}} Email Plug-ins. The choices depend on the enrollment types enabled by the **Delivery Methods** and **Enrollment Types** fields.
 
 14. Select **Allow reply to packages** in **Unlicensed Accounts** to allow an unlicensed user associated with this template to reply to emails.
 
 15. Specify **Login Settings**.
-    1.  Select **Allow this account to login by email** to allow the user to log in using with the value of the **Email Contact** field as well as the **Login Name**. A user of one of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins must have **Allow this account to login by email** selected.
-    2.  Select **Allow this account to submit transfers using the ST RESTful API** to enable calls from the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> REST file transfer API authenticated with the credentials from this account. When this option is selected, the account will be allowed to trigger server initiated transfers using the Transfers RESTful API resource and retrieve the tracking information for these transfers.
+    1.  Select **Allow this account to login by email** to allow the user to log in using with the value of the **Email Contact** field as well as the **Login Name**. A user of one of the {{< SecureTransport/companyname >}} Email Plug-ins must have **Allow this account to login by email** selected.
+    2.  Select **Allow this account to submit transfers using the ST RESTful API** to enable calls from the {{< SecureTransport/componentshortname >}} REST file transfer API authenticated with the credentials from this account. When this option is selected, the account will be allowed to trigger server initiated transfers using the Transfers RESTful API resource and retrieve the tracking information for these transfers.
 
 16. Enter a value or expression for the **Email Contact**.  
-    When this email address is the recipient of an ad hoc file transfer email sent from ST Web Client or one of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Email Plug-ins, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> determines that this user is the recipient. If the user is allowed to log in by email, this is the value used in the **User Name** field of the login page.  
+    When this email address is the recipient of an ad hoc file transfer email sent from ST Web Client or one of the {{< SecureTransport/companyname >}} Email Plug-ins, {{< SecureTransport/componentshortname >}} determines that this user is the recipient. If the user is allowed to log in by email, this is the value used in the **User Name** field of the login page.  
 
     > **Note:**
     >
@@ -185,7 +185,7 @@ Use the following procedure to add an account template.
     >
     > Access level is applicable only when Advanced Routing feature is used. For more information see Advanced Routing.
 
-22. Select **Password for enrolled accounts is stored internally** in **AdHoc Settings** to generate the account's password during enrollment. If **Password for enrolled accounts is stored internally** is not selected, no password will be generated and stored in the <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> database. When a new account with external password is enrolled, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> will send out an email notification; but will not send a temporary password.  
+22. Select **Password for enrolled accounts is stored internally** in **AdHoc Settings** to generate the account's password during enrollment. If **Password for enrolled accounts is stored internally** is not selected, no password will be generated and stored in the {{< SecureTransport/securetransportname >}} database. When a new account with external password is enrolled, {{< SecureTransport/securetransportname >}} will send out an email notification; but will not send a temporary password.  
 
     > **Note:**
     >
@@ -326,7 +326,7 @@ For more information, see <a href="../../../accounts/t_st_transferprofiles#Accou
 
 ## Configure routes for an account template
 
-Prior to configuring a route for an account template, the account template should have an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application instance subscription. For account template subscription information, refer to <a href="#Configur" class="MCXref xref">Configure subscriptions for an account template</a> and to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>. Additionally, route package templates must be available for assignment. For information on creating and managing route package templates, refer to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
+Prior to configuring a route for an account template, the account template should have an {{< SecureTransport/advancedrouting  >}} application instance subscription. For account template subscription information, refer to <a href="#Configur" class="MCXref xref">Configure subscriptions for an account template</a> and to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>. Additionally, route package templates must be available for assignment. For information on creating and managing route package templates, refer to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
 
 1.  With the account template open, select **Routes**, select a route package template, and click **Assign Route**.  
     The *Create Route Package* page is displayed. You can navigate to the *Edit Route Package Template* page for the selected route package template by clicking the **Created From** link.
@@ -340,7 +340,7 @@ Prior to configuring a route for an account template, the account template shoul
 3.  (Optional) Enter a **Description**.
 
 4.  In the *Subscriptions* pane:
-    1.  Click **Assign** to assign an available <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application folder to the route.
+    1.  Click **Assign** to assign an available {{< SecureTransport/advancedrouting >}} application folder to the route.
     2.  The Available Subscriptions page is displayed.
     3.  On the *Available Subscriptions* page, select the checkbox for a folder from the *Subscriptions Folder* list and click **OK** to assign a folder to the route.
     4.  The assigned folder is now listed in the *Subscriptions List*.
@@ -662,7 +662,7 @@ Decrypt PGP File:         </td>
       <tr>
          <td>Keep Original:         </td>
          <td><code>1</code>         </td>
-         <td>The value <code>1</code> represents true. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> recognizes the field as being selected.         </td>
+         <td>The value <code>1</code> represents true. {{< SecureTransport/componentshortname  >}} recognizes the field as being selected.         </td>
       </tr>
       <tr>
          <td>As:         </td>

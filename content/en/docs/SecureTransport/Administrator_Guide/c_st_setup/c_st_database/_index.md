@@ -2,7 +2,7 @@
     "title": "Configure your database",
     "linkTitle": "Configure your database",
     "weight": "150"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses a database to store configuration parameters and data, including log data. With Standard Clustering, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server uses an embedded database server. With the Enterprise Clustering (EC) option, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server uses a shared external database. With the external Oracle database, you can direct log data to separate databases. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge always uses an embedded database server.
+}{{< SecureTransport/componentshortname  >}} uses a database to store configuration parameters and data, including log data. With Standard Clustering, {{< SecureTransport/componentshortname  >}} Server uses an embedded database server. With the Enterprise Clustering (EC) option, {{< SecureTransport/componentshortname  >}} Server uses a shared external database. With the external Oracle database, you can direct log data to separate databases. {{< SecureTransport/componentshortname  >}} Edge always uses an embedded database server.
 
 > **Note:**
 >

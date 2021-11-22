@@ -2,11 +2,11 @@
     "title": "Run SecureTransport as a service on UNIX-based platforms after non-root installation",
     "linkTitle": "Run SecureTransport as a service on UNIX-based platforms after non-root installation",
     "weight": "120"
-}During a non-root <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation, the installer cannot set up and configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to run out of `systemctl`. To allow the services to start during system boot, service files and a target file must be created in the appropriate location, and all files must be linked appropriately. This topic describes the process to configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services to start automatically during system boot.
+}During a non-root {{< SecureTransport/componentshortname  >}} installation, the installer cannot set up and configure {{< SecureTransport/componentshortname  >}} to run out of `systemctl`. To allow the services to start during system boot, service files and a target file must be created in the appropriate location, and all files must be linked appropriately. This topic describes the process to configure {{< SecureTransport/componentshortname  >}} services to start automatically during system boot.
 
 1.  Log on as root.
 
-2.  Create a service unit file for each <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> service following the <a href="#Service" class="MCXref xref">Service Unit File Example</a>.
+2.  Create a service unit file for each {{< SecureTransport/securetransportname >}} service following the <a href="#Service" class="MCXref xref">Service Unit File Example</a>.
     Service units must be located in the `<FILEDRIVEHOME>/bin/utils/` directory.  
     1.  Create `securetransport_db.service`
     2.  Create `securetransport_admin.service`
@@ -17,7 +17,7 @@
     7.  Create `securetransport_sshd.service`
     8.  Create `securetransport_tm.service`
 
-3.  In the same directory, create a target unit file `(securetransport.target`) for all <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> services following the <a href="#Target" class="MCXref xref">Target Unit File Example</a>.
+3.  In the same directory, create a target unit file `(securetransport.target`) for all {{< SecureTransport/securetransportname >}} services following the <a href="#Target" class="MCXref xref">Target Unit File Example</a>.
 
 4.  Move or copy the service files and the target file to the `/etc/systemd/system` directory.
 
@@ -30,7 +30,7 @@
 
         # systemctl enable <service_name> 
 
-7.  Enable `securetransport.target` to create the required links and set the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services to start on boot.  
+7.  Enable `securetransport.target` to create the required links and set the {{< SecureTransport/componentshortname >}} services to start on boot.  
 
 
 
@@ -42,7 +42,7 @@
 
         # systemctl daemon-reload
 
-9.  Reboot the system and verify that the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services start as expected.
+9.  Reboot the system and verify that the {{< SecureTransport/componentshortname >}} services start as expected.
 
 <span id="Service"></span>
 

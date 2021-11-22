@@ -2,9 +2,9 @@
     "title": "Standard Cluster model",
     "linkTitle": "Standard Cluster model",
     "weight": "90"
-}As described in <a href="../../overview/c_st_deploy_models#Clusteri" class="MCXref xref">Cluster models</a>, you can use a Standard Cluster (SC) to provide more capacity than a single <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or to provide a passive standby server to take over processing if an active server fails.
+}As described in <a href="../../overview/c_st_deploy_models#Clusteri" class="MCXref xref">Cluster models</a>, you can use a Standard Cluster (SC) to provide more capacity than a single {{< SecureTransport/componentshortname  >}} Server or to provide a passive standby server to take over processing if an active server fails.
 
-Standard Clustering uses an embedded database in each node. This minimizes external dependencies and overhead and reduces the cost of clustering. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> synchronizes most configuration changes on all nodes in the cluster.
+Standard Clustering uses an embedded database in each node. This minimizes external dependencies and overhead and reduces the cost of clustering. {{< SecureTransport/componentshortname  >}} synchronizes most configuration changes on all nodes in the cluster.
 
 You can configure a Standard Cluster as an active/active or active/passive (1:1) cluster. You can deploy a maximum of three servers (nodes) in an active/active Standard Cluster. An active/passive Standard Cluster has one active server and one passive standby server.
 

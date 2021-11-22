@@ -2,7 +2,7 @@
     "title": "Built-in rules packages",
     "linkTitle": "Built-in rules packages",
     "weight": "290"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> ships with several predefined rules packages. These packages contain rules used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as part of the standard functionality of the product. Because these rules and packages are part of the product, it is very important that you do not delete or modify the rules or the rules packages. This topic provides a list of the built-in packages and explains their uses.
+}{{< SecureTransport/componentshortname  >}} ships with several predefined rules packages. These packages contain rules used by {{< SecureTransport/componentshortname  >}} as part of the standard functionality of the product. Because these rules and packages are part of the product, it is very important that you do not delete or modify the rules or the rules packages. This topic provides a list of the built-in packages and explains their uses.
 
 ## Streaming
 
@@ -58,7 +58,7 @@ The rules are required to trigger the application agent.
 
 ## Permission checking
 
-InPermissionCheck represents an implementations of checking file permissions before allowing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> operations to continue.
+InPermissionCheck represents an implementations of checking file permissions before allowing {{< SecureTransport/componentshortname  >}} operations to continue.
 
 InPermissionCheck contains an in-process Java agent. It's efficient and provides basic check based on UID/GID and the file permission flags. For details, see <a href="../../../c_st_accesscontrol#AccessMenu_3475920566_1050860" class="MCXref xref">Access</a>.
 
@@ -66,7 +66,7 @@ InPermissionCheck contains an in-process Java agent. It's efficient and provides
 
 ## Other packages
 
-The following packages handle specific <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> functionality.
+The following packages handle specific {{< SecureTransport/componentshortname  >}} functionality.
 
 The following topics describe the other Transaction Manager rules packages:
 
@@ -111,9 +111,9 @@ For more information, see <a href="../../../applications/applicationsarchivemain
 
 <span id="Sentinel"></span>
 
-### <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel
+### {{< SecureTransport/companyname  >}} Sentinel
 
-This package is enabled by default. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses it to send file transfer and processing events to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel and to call the agent used in a <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel Link Data Maintenance application. For more information about configuring <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send events to Sentinel, see <a href="../../c_st_sentinelintegration#SetupMenu_1217491348_1081088" class="MCXref xref">Integrate Axway Sentinel</a>.
+This package is enabled by default. {{< SecureTransport/componentshortname  >}} uses it to send file transfer and processing events to {{< SecureTransport/companyname  >}} Sentinel and to call the agent used in a {{< SecureTransport/companyname  >}} Sentinel Link Data Maintenance application. For more information about configuring {{< SecureTransport/componentshortname  >}} to send events to Sentinel, see <a href="../../c_st_sentinelintegration#SetupMenu_1217491348_1081088" class="MCXref xref">Integrate Axway Sentinel</a>.
 
 <span id="ConnectD"></span>
 
@@ -125,13 +125,13 @@ Enable this package when you want to create and use a Connect:Direct transfer si
 
 ### FileServicesInterface
 
-This package is used to implement transfers initiated by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> using a file services interface protocol.
+This package is used to implement transfers initiated by {{< SecureTransport/componentshortname  >}} using a file services interface protocol.
 
 <span id="ICAPScan"></span>
 
 ### ICAPScan
 
-This package is used to implement anti-virus or DLP scans initiated by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> using external ICAP servers. The package is disabled by default and must be enabled if ICAP servers are configured.
+This package is used to implement anti-virus or DLP scans initiated by {{< SecureTransport/componentshortname  >}} using external ICAP servers. The package is disabled by default and must be enabled if ICAP servers are configured.
 
 <span id="MDNRecei"></span>
 
@@ -153,7 +153,7 @@ These packages provide the functionality for PeSIT protocol operations, includin
 
 ### PGPTransform
 
-This package handles PGP encryption and decryption when <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> is not used. The package is enabled by default.
+This package handles PGP encryption and decryption when {{< SecureTransport/advancedrouting  >}} is not used. The package is enabled by default.
 
 <span id="Resubmit"></span>
 
@@ -181,7 +181,7 @@ This package implements HTML email notification for file transfers. This package
 
 This package implements SNMP notifications for failed transfers. This package is disabled by default.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> includes support for Simple Network Management Protocol (SNMP) v2 and v3 to help you monitor failed transfers. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> works with SNMP managers such as Hewlett-Packard OpenView Network Node Manager. You can send messages when file transfers fail after retrying the transfer the number of times allotted. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a trap MIB file located at `<FILEDRIVEHOME>/conf/Transfer.mib`.
+{{< SecureTransport/componentshortname  >}} includes support for Simple Network Management Protocol (SNMP) v2 and v3 to help you monitor failed transfers. {{< SecureTransport/componentshortname  >}} works with SNMP managers such as Hewlett-Packard OpenView Network Node Manager. You can send messages when file transfers fail after retrying the transfer the number of times allotted. {{< SecureTransport/componentshortname  >}} provides a trap MIB file located at `<FILEDRIVEHOME>/conf/Transfer.mib`.
 
 1.  Select **Operations > Server Configuration**.  
     The *Server Configuration* page is displayed.

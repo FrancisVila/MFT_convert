@@ -34,7 +34,7 @@ bound)         </td>
    </tbody>
 </table>
 
-Do not define rule 28 for a deployment with no <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge.
+Do not define rule 28 for a deployment with no {{< SecureTransport/componentshortname  >}} Edge.
 
 **Related topics:**
 

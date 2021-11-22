@@ -2,7 +2,7 @@
     "title": "Change how long user account information is cached in memory",
     "linkTitle": "Change how long user account information is cached in memory",
     "weight": "170"
-}You can set how long <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> keeps the user account information cached in memory by editing the `TransactionManager.AccountContextAgent.cacheTimeout` parameter on the *Server Configuration* page. The default value is `900` seconds. Change the value to keep the cached information for a longer or shorter period of time. You can also set it to null or a negative value to not cache the account information. Changes you make to an account do not show up until after the cache is refreshed.
+}You can set how long {{< SecureTransport/componentshortname  >}} keeps the user account information cached in memory by editing the `TransactionManager.AccountContextAgent.cacheTimeout` parameter on the *Server Configuration* page. The default value is `900` seconds. Change the value to keep the cached information for a longer or shorter period of time. You can also set it to null or a negative value to not cache the account information. Changes you make to an account do not show up until after the cache is refreshed.
 
 **Related topics:**
 

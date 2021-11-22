@@ -65,7 +65,7 @@ Use the following procedure to edit an encryption entry.
 
 ## Reorder encryption entries
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> applies the first entry in the *SSL Encryption Entries* that matched the user class of the user. So, for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to use them, you want the more specific entries before the more general entries in the list.
+{{< SecureTransport/componentshortname  >}} applies the first entry in the *SSL Encryption Entries* that matched the user class of the user. So, for {{< SecureTransport/componentshortname  >}} to use them, you want the more specific entries before the more general entries in the list.
 
 1.  Select **Access > Secure Socket Layer**.  
     The *Secure Socket Layer* page is displayed.

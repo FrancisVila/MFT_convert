@@ -20,7 +20,7 @@ The following topics provide how-to instructions for restarting and canceling a 
 
 ## Restart a transfer
 
-If a file transfer fails permanently, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a **Resubmit** button in the **RESUBMIT** column.
+If a file transfer fails permanently, {{< SecureTransport/componentshortname  >}} displays a **Resubmit** button in the **RESUBMIT** column.
 
 1.  Select **Operations > File Tracking**.  
     The *File Tracking* page is displayed.
@@ -32,6 +32,6 @@ After you restart a file transfer, the **Resubmit** button no longer displays an
 
 ## Cancel a transfer
 
-If a server-initiated file transfer fails temporarily and is scheduled for a retry, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a **Cancel** button in the **RESUBMIT** column.
+If a server-initiated file transfer fails temporarily and is scheduled for a retry, {{< SecureTransport/componentshortname  >}} displays a **Cancel** button in the **RESUBMIT** column.
 
 -   To cancel the file transfer retry, click **Cancel**.

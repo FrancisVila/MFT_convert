@@ -6,7 +6,7 @@
 >
 > The following procedure might affect SecureTransport Server performance.
 
-Adjust the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> connection pool settings per the following procedure.
+Adjust the {{< SecureTransport/componentshortname  >}} connection pool settings per the following procedure.
 
 1.  Set the C3P0 connection pools configured in `<FILEDRIVEHOME>/conf/configuration.xml` (set for each component) as follows:  
     `hibernate.c3p0.testConnectionOnCheckout=true`  

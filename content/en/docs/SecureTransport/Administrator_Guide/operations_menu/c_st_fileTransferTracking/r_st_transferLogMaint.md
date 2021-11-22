@@ -2,7 +2,7 @@
     "title": "Transfer Log Maintenance application",
     "linkTitle": "Transfer Log Maintenance application",
     "weight": "160"
-}The built-in <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> application type, Transfer Log Maintenance, maintains the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> transfer log by exporting and cleaning up transfer log entries on a regular basis, following a schedule you define.
+}The built-in {{< SecureTransport/componentshortname  >}} application type, Transfer Log Maintenance, maintains the {{< SecureTransport/componentshortname  >}} transfer log by exporting and cleaning up transfer log entries on a regular basis, following a schedule you define.
 
 A Transfer Log Maintenance type application has the following features:
 

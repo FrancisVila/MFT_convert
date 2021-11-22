@@ -8,7 +8,7 @@
 -   A **Cancel** button you can use to stop the transfer retry attempt.
 -   No button if the transfer is in-progress or if it is an AdHoc mail, AdHoc attachment, CIT download, failed CIT upload, in-progress, retried, PeSIT in Paused state, Publish To Account Advanced Routing step, temporary failed transfers and deleted file log transfer.
 
-When retrying a transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> uses either an archived copy created when the server first received the file or the original file if it is available. If there is no archive for the transfer and the original file is not available resubmit attempt fails.
+When retrying a transfer, {{< SecureTransport/componentshortname  >}} uses either an archived copy created when the server first received the file or the original file if it is available. If there is no archive for the transfer and the original file is not available resubmit attempt fails.
 
 > **Note:**
 >

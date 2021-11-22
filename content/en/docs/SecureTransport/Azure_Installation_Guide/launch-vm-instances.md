@@ -28,9 +28,9 @@ To launch a VM instance, follow these steps:
 5.  Click **OK**.  
     <img src="/Images/SecureTransport/launchRHelcreateVM.PNG" class="maxWidth" />
 
-6.  Choose a Size according to the *Minimum UNIX hardware requirements* in the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable">5.5</span> Installation Guide.
+6.  Choose a Size according to the *Minimum UNIX hardware requirements* in the {{< SecureTransport/componentshortname >}} {{< SecureTransport/componentversion >}} Installation Guide.
 
-    **Note:** <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> in Azure has been verified with *D4S\_V3 Standard* image for all RHEL instances.
+    **Note:** {{< SecureTransport/componentshortname >}} in Azure has been verified with *D4S\_V3 Standard* image for all RHEL instances.
 
 7.  Configure Settings
     -   **High availability:** Select the respective Availability Zone for each VM.

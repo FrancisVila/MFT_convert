@@ -2,10 +2,10 @@
     "title": "Install SecureTransport Server on Unix with an external database",
     "linkTitle": "Install SecureTransport Server on Unix with an external database",
     "weight": "110"
-}Use this procedure to install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on UNIX-based platforms where the installations will use an external database server:
+}Use this procedure to install {{< SecureTransport/componentshortname  >}} on UNIX-based platforms where the installations will use an external database server:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server in an Enterprise Cluster
--   Stand-alone <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server when an external Oracle, PostgreSQL, or Microsoft SQL Server database server is otherwise required
+-   {{< SecureTransport/componentshortname >}} Server in an Enterprise Cluster
+-   Stand-alone {{< SecureTransport/componentshortname >}} Server when an external Oracle, PostgreSQL, or Microsoft SQL Server database server is otherwise required
 
 To use an external database, either in a single or multi-node environment, you need a license for the Enterprise Clustering (EC) option.
 
@@ -15,17 +15,17 @@ To use an external database, either in a single or multi-node environment, you n
 
 Check the pre-installation information and prerequisites before you install.
 
-All the nodes of a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Enterprise Cluster share the same database schema and use the same installation directory and secret (`taeh`) file. The installer creates that schema when you install the first server in the cluster. You can have the installer create the `taeh` file or import an existing file for the first server in the cluster. You must copy and import the `taeh` file to the second and subsequent servers in the cluster before you install. For more information, see <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.
+All the nodes of a {{< SecureTransport/componentshortname  >}} Enterprise Cluster share the same database schema and use the same installation directory and secret (`taeh`) file. The installer creates that schema when you install the first server in the cluster. You can have the installer create the `taeh` file or import an existing file for the first server in the cluster. You must copy and import the `taeh` file to the second and subsequent servers in the cluster before you install. For more information, see <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.
 
 > **Note:**
 >
 > In Enterprise Cluster deployments, all your SecureTransport Server nodes must have the same version as your first installed Server node. Do not attempt to add Server nodes to your cluster if the SecureTransport version does not match the one on already installed nodes.
 
-This procedure assumes that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is not installed on the system. Only one instance of <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server or <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge is supported in a production environment. To upgrade an existing installation, refer to the *<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Upgrade Guide*.
+This procedure assumes that {{< SecureTransport/componentshortname  >}} is not installed on the system. Only one instance of {{< SecureTransport/componentshortname  >}} Server or {{< SecureTransport/componentshortname  >}} Edge is supported in a production environment. To upgrade an existing installation, refer to the *{{< SecureTransport/componentshortname  >}} Upgrade Guide*.
 
-1.  Log in to the system as the user who will run <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>.
+1.  Log in to the system as the user who will run {{< SecureTransport/componentshortname >}}.
 
-2.  Download the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> install package for your operating system:  
+2.  Download the {{< SecureTransport/componentshortname >}} install package for your operating system:  
     `SecureTransport_5.5_Install_<OS>-<processor>_<BuildNumber>.zip`  
     where the placeholders represent the following:
     -   `<OS>` is the operating system: `aix` (for IBM AIX), `linux` (for Linux)
@@ -38,7 +38,7 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
 
         unzip SecureTransport_5.5_Install_<OS>-<processor>_<BuildNumber>.zip
 
-5.  Enter the following command to run the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer:
+5.  Enter the following command to run the {{< SecureTransport/companyname >}} Installer:
 
         ./setup.sh -m console
 
@@ -57,19 +57,19 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
 
 7.  Enter 1 to accept the license agreement. Enter 2 to reject it and cancel the installation.
 
-8.  On the prompt for the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> installer directory:  
+8.  On the prompt for the {{< SecureTransport/companyname >}} installer directory:  
 
     -   To accept the default installation directory, press Enter. The default installation directory for Axway Installer is `/<userHome>/Axway` , where `<userHome>` represents the home directory of the user running the installation.
     -   To change the installation location, enter 1 and then enter the absolute path to your desired installation directory.
 
       
-    In this directory, the Axway installer files are deployed. It is used as the parent directory for the default <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation location which you specify at a later step (10).  
+    In this directory, the Axway installer files are deployed. It is used as the parent directory for the default {{< SecureTransport/componentshortname >}} installation location which you specify at a later step (10).  
 
     > **Note:**
     >
     > SecureTransport should not share the same installer directory with another Axway products.
 
-9.  Choose the installation type. Press Enter to accept the default, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server.  
+9.  Choose the installation type. Press Enter to accept the default, {{< SecureTransport/componentshortname >}} Server.  
 
 
 
@@ -79,7 +79,7 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
         Select the modules you want to install, then type Next to continue the
                                     configuration.
 
-        Axway SecureTransport V5.5:
+        Axway SecureTransport V{{< SecureTransport/releasenumber >}}:
         1 :[x] Server
         2 :[ ] Edge
         3 :[ ] ServerDocker
@@ -92,15 +92,15 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
     >
     > The EdgeDocker and ServerDocker modules are used ONLY in the docker image build process and are not supported for other purposes. For more information, refer to the SecureTransport Containerized Deployment Guide.
 
-10. Specify the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory:  
-    -   To accept the default location, press Enter. The default <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> installation folder is `<AxwayHome>/SecureTransport`, where `<AxwayHome>` is the directory you specified in the previous installation directory step.
-    -   To change the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation location, enter 1 and enter the absolute path to your desired installation directory.  
+10. Specify the {{< SecureTransport/componentshortname >}} installation directory:  
+    -   To accept the default location, press Enter. The default {{< SecureTransport/securetransportname >}} installation folder is `<AxwayHome>/SecureTransport`, where `<AxwayHome>` is the directory you specified in the previous installation directory step.
+    -   To change the {{< SecureTransport/componentshortname >}} installation location, enter 1 and enter the absolute path to your desired installation directory.  
         Consider the following:  
         -   Do not use the directory where you copied the installer files.
-        -   All <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Servers in a cluster must use the same installation directory.
-        -   The name of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory cannot contain space characters, the tab character, or the `~` character. For example, `/root/Axway/STServer` is valid, but `/root/Axway/ST   Server` is not.
+        -   All {{< SecureTransport/componentshortname >}} Servers in a cluster must use the same installation directory.
+        -   The name of the {{< SecureTransport/componentshortname >}} installation directory cannot contain space characters, the tab character, or the `~` character. For example, `/root/Axway/STServer` is valid, but `/root/Axway/ST   Server` is not.
 
-11. On the database selection prompt, select the external database type for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to use.
+11. On the database selection prompt, select the external database type for {{< SecureTransport/componentshortname >}} to use.
 
     > **Note:**
     >
@@ -111,7 +111,7 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
 
     -   **Port** – The number of the port used to access the server or cluster. Defaults: 1521 for Oracle, 1433 for Microsoft SQL Server, 5432 for PostgreSQL.
 
-    -   **Login Name** – The name of the user authorized to create the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> schema and populate it
+    -   **Login Name** – The name of the user authorized to create the {{< SecureTransport/componentshortname >}} schema and populate it
 
     -   **Password** – The password for the user, not displayed.
 
@@ -139,7 +139,7 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
         -   **Use Kerberos configuration file** - When set to `false`, SecureTransport copies the file to the `<FDH>/conf` directory and synchronizes it between the nodes. The file can be updated via the *Use the Server Configuration Files* page.  
             When the option is set to `true`, SecureTransport references the file directly by specified path. In this case, the file is not synchronized between nodes. You specify it per node. SecureTransport automatically reloads the Kerberos configuration when there’s a change in the file.
 
-13. The value for **Use existing database schema** depends on whether you are installing the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on a stand-alone server or the first server of an Enterprise Cluster, or on another clustered server:
+13. The value for **Use existing database schema** depends on whether you are installing the {{< SecureTransport/componentshortname >}} on a stand-alone server or the first server of an Enterprise Cluster, or on another clustered server:
     -   If you are installing the first server in a cluster or a stand-alone server, accept the default so that the installer creates the database schema.
     -   If you are installing the second or a subsequent server in the cluster, set **Use existing database schema** to `true` to use the database schema created when you installed the first server.
 
@@ -147,18 +147,18 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
     When you have entered all the settings, press **Enter** to accept the values.  
     The installer tests the connection to the database. If the installer cannot connect, it displays an error message and you must correct the database settings.
 
-14. When the installer verifies the database connection, it displays the default <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> ports, nightly log rotation, and import secret file configuration:
+14. When the installer verifies the database connection, it displays the default {{< SecureTransport/securetransportname >}} ports, nightly log rotation, and import secret file configuration:
 
 15. Accept or modify the default settings.  
     If you selected **Use existing database schema** for the second or subsequent server in an Enterprise Cluster, the following three fields are not available.
-    -   **SSL Admin UI Port** – The port used to connect to the Administration Tool. When you install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> as a non-root user, the default value for Admin port number is 8444.
+    -   **SSL Admin UI Port** – The port used to connect to the Administration Tool. When you install {{< SecureTransport/componentshortname >}} as a non-root user, the default value for Admin port number is 8444.
     -   **Tomcat Shutdown Port** – The port used to shut down the Tomcat server
 
       
     The following field is always available:
-    -   **Enable Nightly Log Rotation** – Select if you want the system to perform automatic backup and purging of log files on a nightly basis. When this feature is enabled, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server backups log files, generated on the respective day, and creates a new one for the subsequent day. The server takes a back up and creates a new log file at 23:59 or 00:00 hours, depending on the log file type. This option is enabled by default. You can enable or disable the nightly log rotation after installation. For more information, see the <span class="redirect_st_ag" cshid="admin" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administrator's Guide*</span>.
+    -   **Enable Nightly Log Rotation** – Select if you want the system to perform automatic backup and purging of log files on a nightly basis. When this feature is enabled, {{< SecureTransport/componentshortname >}} Server backups log files, generated on the respective day, and creates a new one for the subsequent day. The server takes a back up and creates a new log file at 23:59 or 00:00 hours, depending on the log file type. This option is enabled by default. You can enable or disable the nightly log rotation after installation. For more information, see the .
     -   **Secret File Path** – The path to the secret (`taeh`)file you copied to this system. If you leave it blank, the installer creates a new secret file.
-    -   If you are installing the first server in an Enterprise Cluster, you can specify a secret file or have the installer create one. Before you install <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> on the other cluster nodes, you must copy the secret file to those systems.
+    -   If you are installing the first server in an Enterprise Cluster, you can specify a secret file or have the installer create one. Before you install {{< SecureTransport/componentshortname >}} on the other cluster nodes, you must copy the secret file to those systems.
     -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. For more information, see <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.
     -   **ClusterAuto-Register IP/FQDN** – To automatically register a node in an Enterprise Cluster, specify it by its IP address or FQDN. Otherwise, leave the field empty. You can add a SecureTransport Server to the cluster at a later stage using the Administration Tool. For more information, see <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/large_enterprise_clustering/t_st_add_server_to_cluster.htm" class="MCXref xref">Add a server to a cluster</a>.
 
@@ -173,7 +173,7 @@ This procedure assumes that <span class="mc-variable axway_variables.Component_S
 
 The installer also creates a log file, `<AxwayHome>/install.log`.
 
-After successfully installing <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span>, you must perform a number of post-installation steps, such as applying your <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> licenses, and enabling, configuring, and starting the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> services. For more information, see the <span class="redirect_st_gs" cshid="gs" data-version="5.3.5">*<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Getting Started Guide*</span>.
+After successfully installing {{< SecureTransport/componentshortname  >}}, you must perform a number of post-installation steps, such as applying your {{< SecureTransport/componentshortname  >}} licenses, and enabling, configuring, and starting the {{< SecureTransport/componentshortname  >}} services. For more information, see the .
 
 **Related topics:**
 

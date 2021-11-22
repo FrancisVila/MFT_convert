@@ -5,11 +5,11 @@
 }Use the following procedure to compare audit log entries.
 
 1.  From the menu in the **Time** column, select **Compare with** or **Compare with previous**.
-2.  If you selected **Compare with**, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a *Compare with Another Entry* window.
+2.  If you selected **Compare with**, {{< SecureTransport/componentshortname >}} displays a *Compare with Another Entry* window.
 3.  If previous audit log entries are listed, select one and click **OK**.
 4.  If you selected **Compare with previous** and there is a previous audit log entry for that object, the result is the same as selecting the previous entry in the *Compare with Another Entry* window.  
-    If there is no previous audit log entry for the object, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> displays a message.
-5.  <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> opens an *Audit Log Entry Comparison* window.  
+    If there is no previous audit log entry for the object, {{< SecureTransport/componentshortname >}} displays a message.
+5.  {{< SecureTransport/componentshortname >}} opens an *Audit Log Entry Comparison* window.  
     The *Audit Log Entry Comparison* window lists all attributes and values of the object with one column for each audit log entry. Timestamps in the column headers identify the entries. The older entry is on the left. A colored background indicates attributes with different values.
 
 **Related topics:**

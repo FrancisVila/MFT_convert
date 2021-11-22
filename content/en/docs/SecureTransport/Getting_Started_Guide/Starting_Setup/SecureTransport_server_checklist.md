@@ -2,11 +2,11 @@
     "title": "SecureTransport Server checklists",
     "linkTitle": "SecureTransport Server checklists",
     "weight": "60"
-}This section provides the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server checklists for root and non-root installations.
+}This section provides the {{< SecureTransport/componentshortname  >}} Server checklists for root and non-root installations.
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server root installation checklist
+## {{< SecureTransport/componentshortname  >}} Server root installation checklist
 
-The following items are needed for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server root installation configuration:
+The following items are needed for the {{< SecureTransport/componentshortname  >}} Server root installation configuration:
 
 <table>
    <thead>
@@ -17,15 +17,15 @@ The following items are needed for the <span class="mc-variable axway_variables.
    </thead>
    <tbody>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server IP address         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Server IP address         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Core server license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server         </td>
+         <td>Core server license for {{< SecureTransport/componentshortname  >}} Server         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Server feature license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server         </td>
+         <td>Server feature license for {{< SecureTransport/componentshortname  >}} Server         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -279,9 +279,9 @@ The following items are needed for the <span class="mc-variable axway_variables.
 >
 > If port 22 is the default port for the operating system SSH service on your platform, to avoid conflicts change the port or disable the operating system service or choose a different port for SecureTransport SSH service. The default operating system SSH port for Axway appliances is 10022.
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server non-root installation checklist
+## {{< SecureTransport/componentshortname  >}} Server non-root installation checklist
 
-The following items are needed for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server non-root installation configuration:
+The following items are needed for the {{< SecureTransport/componentshortname  >}} Server non-root installation configuration:
 
 <table>
    <thead>
@@ -292,15 +292,15 @@ The following items are needed for the <span class="mc-variable axway_variables.
    </thead>
    <tbody>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server IP address         </td>
+         <td>{{< SecureTransport/componentshortname  >}} Server IP address         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Core server license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server         </td>
+         <td>Core server license for {{< SecureTransport/componentshortname  >}} Server         </td>
          <td>          </td>
       </tr>
       <tr>
-         <td>Server feature license for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server         </td>
+         <td>Server feature license for {{< SecureTransport/componentshortname  >}} Server         </td>
          <td>          </td>
       </tr>
       <tr>

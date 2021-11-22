@@ -2,7 +2,7 @@
     "title": "Control log fallback from database to file",
     "linkTitle": "Control log fallback from database to file",
     "weight": "350"
-}If the embedded or external database stops accepting log messages, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> directs the messages to `<FILEDRIVEHOME>/var/logs/admin/serverlog-fallback.log`.
+}If the embedded or external database stops accepting log messages, {{< SecureTransport/componentshortname  >}} directs the messages to `<FILEDRIVEHOME>/var/logs/admin/serverlog-fallback.log`.
 
 You can control this behavior by setting the following parameters for each server in `<FILEDRIVEHOME>/conf/configuration.xml`:
 

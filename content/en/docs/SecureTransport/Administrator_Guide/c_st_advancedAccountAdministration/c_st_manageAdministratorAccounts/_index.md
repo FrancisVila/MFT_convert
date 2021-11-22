@@ -39,7 +39,7 @@ For each administrator, you can view the information described in the following 
 <ul>
 <li><strong>Master Administrator</strong> – Access to all menus, tabs and pages of the Administration Tool. Cannot be modified.</li>
 <li><strong>Database Administrator</strong> – Access to the <em>Database Settings</em> page only. Only the <code>dbsetup</code> administrator can have this role. Cannot be modified.</li>
-<li><strong>Setup Administrator</strong> – Access through the custom <strong>Configure</strong> menu to pages required to perform the post-installation tasks and setup operations described in the <span class="redirect_st_gs" data-cshid="gs" data-version="5.3.5"><em><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Getting Started Guide</em></span>. Cannot be modified.</li>
+<li><strong>Setup Administrator</strong> – Access through the custom <strong>Configure</strong> menu to pages required to perform the post-installation tasks and setup operations described in the . Cannot be modified.</li>
 <li><strong>Account Manager</strong> – Access restricted to the <em>User Accounts</em>, <em><em>Unlicensed Users Accounts</em>, Service Accounts</em>, <em>Templates</em>, and <em>Business Units</em> pages on the <strong>Accounts</strong> menu and all pages on the <strong>Access</strong> menu.</li>
 <li><strong>Application Manager</strong> – Access restricted to the pages on the <strong>Service Accounts</strong> and <strong>Applications</strong> menus.</li>
 <li><strong>Delegated Administrator</strong> – Configurable access to menus and data based on the function the administrator has within an organization.</li>

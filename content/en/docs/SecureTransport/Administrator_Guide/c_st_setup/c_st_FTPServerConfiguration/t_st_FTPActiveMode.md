@@ -2,11 +2,11 @@
     "title": "Set up FTP active mode",
     "linkTitle": "Set up FTP active mode",
     "weight": "120"
-}You can configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to use active mode connections for server-initiated transfers over FTP. Use the active mode options to configure the server-initiated transfer agents to initiate these requests. You can specify an active mode base port and a range of ports that can be used for active mode. Make sure the ports are accessible on the firewall.
+}You can configure {{< SecureTransport/componentshortname  >}} to use active mode connections for server-initiated transfers over FTP. Use the active mode options to configure the server-initiated transfer agents to initiate these requests. You can specify an active mode base port and a range of ports that can be used for active mode. Make sure the ports are accessible on the firewall.
 
 The base port represents the first port number you want to assign. The number of ports specifies how many open ports you want to allow. For example, the base port is set to 10000 and the number of ports is set to 1024, active mode connections can use only the ports from 10000 to 11023. The end port should display 11023. Acceptable values are between 1024 and 65535. If the range is not specified, the server randomly selects an unused high port number greater than 1023 for active mode.
 
-Active FTP mode can be used only for internal connections where there is no proxy between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and the remote server. You must select **Enable Active Connection Mode** to use Active FTP in an FTP transfer site.
+Active FTP mode can be used only for internal connections where there is no proxy between {{< SecureTransport/componentshortname  >}} and the remote server. You must select **Enable Active Connection Mode** to use Active FTP in an FTP transfer site.
 
 1.  Select **Setup > FTP Settings** to open the *FTP Settings* page.
 2.  Under *FTP Active Mode*:  

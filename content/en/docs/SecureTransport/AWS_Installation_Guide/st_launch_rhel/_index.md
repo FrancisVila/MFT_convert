@@ -20,7 +20,7 @@ To launch a RHEL instance, follow these steps:
 
 4.  Choose an Amazon Machine Image and select Red Hat Enterprise Linux (HVM), SSD Volume Type - ami-bb9a6bc2 (64 bit) .
 
-5.  Choose an Instance Type according to the *Minimum UNIX hardware requirements* in the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">SecureTransport</span> <span class="mc-variable axway_variables.Component_Version variable" style="font-style: italic;">5.5</span> *Installation Guide*. We recommend a minimum setup of mx3.large with 4 cores & 15GB RAM & 2x40GB SSD.  
+5.  Choose an Instance Type according to the *Minimum UNIX hardware requirements* in the {{< SecureTransport/componentshortname >}} {{< SecureTransport/componentversion >}} *Installation Guide*. We recommend a minimum setup of mx3.large with 4 cores & 15GB RAM & 2x40GB SSD.  
     Learn more about [Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in the AWS documentation.
 
 6.  Configure Instance Details by providing the following options:  

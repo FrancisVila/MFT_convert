@@ -79,7 +79,7 @@ Use the following procedure to enable or disable LDAP.
 3.  Click **Save**.
 4.  Restart the TM Server.
 
-You must create one or more domains before <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can use LDAP to authenticate users. For information on creating LDAP domains, refer to <a href="../t_st_ldapsettings/t_st_create_domain" class="MCXref xref">Create an LDAP domain</a>.
+You must create one or more domains before {{< SecureTransport/componentshortname  >}} can use LDAP to authenticate users. For information on creating LDAP domains, refer to <a href="../t_st_ldapsettings/t_st_create_domain" class="MCXref xref">Create an LDAP domain</a>.
 
 ### Enable or disable SiteMinder
 
@@ -127,7 +127,7 @@ For information, refer to <a href="../pluggable_authentication#Pluggable%20authe
 
 Set the certificate settings to allow administrators to log in by using a client certificate or to use dual authentication with both a certificate and a password. You can enable the ability to login with a client certificate, determine whether the certificate is optional or required, select the certificate issuer, and set the certificate chain limit.
 
-When you want to access the Administration Tool and you have enabled client certificates, you are prompted to select the certificate you are using. Once the certificate is verified, you are logged in unless dual authentication is required. If certificates are optional and you do not select one, the login page is displayed. If <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> cannot verify the certificate, or certificates are required and you did not select one, a connection error displays and you cannot log in.
+When you want to access the Administration Tool and you have enabled client certificates, you are prompted to select the certificate you are using. Once the certificate is verified, you are logged in unless dual authentication is required. If certificates are optional and you do not select one, the login page is displayed. If {{< SecureTransport/componentshortname  >}} cannot verify the certificate, or certificates are required and you did not select one, a connection error displays and you cannot log in.
 
 If you are unable to successfully log in when using a certificate, clear the browser's SSL state, or close the browser and try again with a new browser instance.
 
@@ -143,7 +143,7 @@ If you are unable to successfully log in when using a certificate, clear the bro
 6.  If you select **issuer file or path:**, the following fields are displayed:
     -   A field that you use to specify the location of the certificate PEM-encoded (`.pem`) file or a directory that contains the PEM-encoded files.
     -   You can type either a fully qualified file or path names or a file or path names relative to &lt;`FILEDRIVEHOME>`. Do not put the PEM-encoded files in the keystore directory, `<FILEDRIVEHOME>/lib/certs/issuers`, because the certificates in that directory are regenerated from the database when servers start.
-    -   A **Limit certificate chain depth to** field. Type a number that sets the maximum number of levels for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to go through in validating the certificate up to a trusted root. For example, if you set the chain depth to 1, then only a certificate issued directly by a trusted root is allowed and a certificate issued by an intermediate CA is rejected.
+    -   A **Limit certificate chain depth to** field. Type a number that sets the maximum number of levels for {{< SecureTransport/componentshortname >}} to go through in validating the certificate up to a trusted root. For example, if you set the chain depth to 1, then only a certificate issued directly by a trusted root is allowed and a certificate issued by an intermediate CA is rejected.
 7.  Click **Save**.
 8.  Restart the Administration Tool server using the `stop_admin` and `start_admin` commands. If you are running on Windows, you can also use the **Services** console to restart the `admin` service.
 

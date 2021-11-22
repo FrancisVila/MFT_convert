@@ -2,7 +2,7 @@
     "title": "Routing to multiple transfer sites",
     "linkTitle": "Routing to multiple transfer sites",
     "weight": "310"
-}The following <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> route is configured:
+}The following {{< SecureTransport/advancedrouting  >}} route is configured:
 
 -   Route 1:
     -   Routing 1: Send To Partner where multiple transfer sites belonging to a single account are selected

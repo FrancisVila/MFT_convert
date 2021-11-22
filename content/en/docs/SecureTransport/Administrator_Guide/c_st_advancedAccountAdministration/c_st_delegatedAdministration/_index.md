@@ -2,11 +2,11 @@
     "title": "Delegated administration",
     "linkTitle": "Delegated administration",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> provides a customizable administrator type called a *delegated administrator*. The delegated administrator works with specific user groups referred to as business units. User accounts, service accounts, account templates, unlicensed user accounts, and applications are divided into business unit groups and each user or service account, unlicensed user, and account template is assigned to only one business unit.
+}{{< SecureTransport/componentshortname  >}} provides a customizable administrator type called a *delegated administrator*. The delegated administrator works with specific user groups referred to as business units. User accounts, service accounts, account templates, unlicensed user accounts, and applications are divided into business unit groups and each user or service account, unlicensed user, and account template is assigned to only one business unit.
 
 Each delegated administrator is assigned one or more business units that determine the user accounts, service accounts, unlicensed user accounts, account templates, and applications managed by that administrator. Tracking information is also displayed based on the business unit assigned.
 
-When you log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool as a delegated administrator, you see a subset of the menus and pages normally available. You are allowed to view the file transfer tracking information, accounts, and applications that are assigned to your business unit.
+When you log in to the {{< SecureTransport/componentshortname  >}} Administration Tool as a delegated administrator, you see a subset of the menus and pages normally available. You are allowed to view the file transfer tracking information, accounts, and applications that are assigned to your business unit.
 
 As a delegated administrators with the **Manage Administrators** privilege, you can create other delegated administrators and perform the following actions:
 
@@ -113,7 +113,7 @@ For example, a finance delegated administrator with permission for the finance b
 
 <img src="/Images/SecureTransport/DelegatedAdmin_Example.png" class="maxWidth" alt="Delegated administration hierarchy" />
 
-<span class="autonumber"></span>Example delegated administration hierarchy
+Example delegated administration hierarchy
 
 The following topic describes how to create a delegated administrator:
 

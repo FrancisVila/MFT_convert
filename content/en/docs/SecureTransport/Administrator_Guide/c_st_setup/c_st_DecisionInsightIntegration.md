@@ -2,7 +2,7 @@
     "title": "Integrate Decision Insight",
     "linkTitle": "Integrate Decision Insight",
     "weight": "170"
-}<span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> is a Business Activity Monitoring (BAM) product that collects, aggregates, correlates, and reports events from <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and other products, applications, and systems throughout your infrastructure. <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> is a separate product that you can buy from <span class="mc-variable axway_variables.Company_Name variable">Axway</span> or an authorized partner. Once you license and configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send file transfer and processing events to Decision Insight, data is collected and displayed on a dashboard.
+}{{< SecureTransport/decisioninsightname  >}} is a Business Activity Monitoring (BAM) product that collects, aggregates, correlates, and reports events from {{< SecureTransport/componentshortname  >}} and other products, applications, and systems throughout your infrastructure. {{< SecureTransport/decisioninsightname  >}} is a separate product that you can buy from {{< SecureTransport/companyname  >}} or an authorized partner. Once you license and configure {{< SecureTransport/componentshortname  >}} to send file transfer and processing events to Decision Insight, data is collected and displayed on a dashboard.
 
 > **Note:**
 >
@@ -14,12 +14,12 @@
 
 For addition information please refer to the official confluence page [Embedded Analytics for Secure Transport Home](https://techweb.axway.com/public/display/DOCEAST/)
 
-The following topics provide additional for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> integration:
+The following topics provide additional for the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/decisioninsightname  >}} integration:
 
--   <a href="#Event" class="MCXref xref">Event states</a> - Describes the <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> event states.
--   <a href="#Tracked" class="MCXref xref">Tracked objects</a> - Lists the attributes of the Tracked Objects used to report <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>.
+-   <a href="#Event" class="MCXref xref">Event states</a> - Describes the {{< SecureTransport/decisioninsightname >}} event states.
+-   <a href="#Tracked" class="MCXref xref">Tracked objects</a> - Lists the attributes of the Tracked Objects used to report {{< SecureTransport/componentlongname >}} events to {{< SecureTransport/decisioninsightname >}}.
 -   <a href="#XFB" class="MCXref xref">XFB Transfer tracked objects</a> - Describes the XFB transfer tracked objects.
--   <a href="#Configur" class="MCXref xref">Configure SecureTransport to send events to Decision Insight</a> - Provides how-to instructions for configuring <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>.
+-   <a href="#Configur" class="MCXref xref">Configure SecureTransport to send events to Decision Insight</a> - Provides how-to instructions for configuring {{< SecureTransport/componentshortname >}} to send events to {{< SecureTransport/decisioninsightname >}}.
 
 <span id="Event"></span>
 
@@ -69,11 +69,11 @@ The following event states indicate a post processing action.
    <tbody>
       <tr>
          <td><code>DECRYPTED</code>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has performed a successful PGP decryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has performed a successful PGP decryption.         </td>
       </tr>
       <tr>
          <td><code>DECRYPTING</code>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to decrypt a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to decrypt a file.         </td>
       </tr>
       <tr>
          <td><code>DELETED</code>         </td>
@@ -81,11 +81,11 @@ The following event states indicate a post processing action.
       </tr>
       <tr>
          <td><code>ENCRYPTED</code>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has performed a successful PGP encryption.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} has performed a successful PGP encryption.         </td>
       </tr>
       <tr>
          <td><code>ENCRYPTING</code>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting to encrypt a file.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting to encrypt a file.         </td>
       </tr>
       <tr>
          <td><code>POST_PROC/ARCHIVED</code>         </td>
@@ -105,11 +105,11 @@ The following event states indicate a post processing action.
       </tr>
       <tr>
          <td><p><code>POST_PROC/ROUTED</code></p>         </td>
-         <td>An <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application has successfully completed.         </td>
+         <td>An {{< SecureTransport/advancedrouting  >}} application has successfully completed.         </td>
       </tr>
       <tr>
          <td><code>POST_PROC/ROUTING</code>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> is starting an <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> application.         </td>
+         <td>{{< SecureTransport/componentshortname  >}} is starting an {{< SecureTransport/advancedrouting  >}} application.         </td>
       </tr>
       <tr>
          <td><code>RENAMED</code>         </td>
@@ -117,7 +117,7 @@ The following event states indicate a post processing action.
       </tr>
       <tr>
          <td><code>ROUTED</code>         </td>
-         <td>As the intermediate partner in a routed PeSIT transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has sent a file to the routing destination.         </td>
+         <td>As the intermediate partner in a routed PeSIT transfer, {{< SecureTransport/componentshortname  >}} has sent a file to the routing destination.         </td>
       </tr>
    </tbody>
 </table>
@@ -126,9 +126,9 @@ The following event states indicate a post processing action.
 
 ## Tracked objects
 
-This topic lists the attributes of the Tracked Objects used to <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>. For information on all the of standard attributes, refer to <a href="../c_st_sentinelintegration/r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>.
+This topic lists the attributes of the Tracked Objects used to {{< SecureTransport/componentshortname  >}} events to {{< SecureTransport/decisioninsightname  >}}. For information on all the of standard attributes, refer to <a href="../c_st_sentinelintegration/r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>.
 
-The attributes that <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> uses to build the dashboards are:
+The attributes that {{< SecureTransport/decisioninsightname  >}} uses to build the dashboards are:
 
 <table>
    <thead>
@@ -162,7 +162,7 @@ The attributes that <span class="mc-variable suite_variables.DecisionInsightName
       <tr>
          <td><code>GROUPNAME</code>         </td>
          <td>string         </td>
-         <td><span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> account business unit         </td>
+         <td>{{< SecureTransport/componentlongname  >}} account business unit         </td>
       </tr>
       <tr>
          <td><code>ISALERT</code>         </td>
@@ -202,7 +202,7 @@ The attributes that <span class="mc-variable suite_variables.DecisionInsightName
       <tr>
          <td><code>USERID</code>         </td>
          <td>string         </td>
-         <td><span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> Login Name/Account Name or account name of the account the triggered the <span class="mc-variable my_project_variables.Advanced_Routing variable">Advanced Routing</span> feature         </td>
+         <td>{{< SecureTransport/componentlongname  >}} Login Name/Account Name or account name of the account the triggered the {{< SecureTransport/advancedrouting  >}} feature         </td>
       </tr>
       <tr>
          <td><code>USERPARAMETER1</code>         </td>
@@ -222,36 +222,36 @@ This topic provides the XFB tracked object roles, sender and receivers, producti
 
 ## Configure SecureTransport to send events to Decision Insight
 
-Use the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Administration Tool to configure <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> to send events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>.
+Use the {{< SecureTransport/componentshortname  >}} Administration Tool to configure {{< SecureTransport/componentshortname  >}} to send events to {{< SecureTransport/decisioninsightname  >}}.
 
 The setting applies to all servers in your Enterprise Cluster (EC). Each server must have its own overflow file.
 
-1.  Select **Setup > <span class="mc-variable axway_variables.Company_Name variable" style="mc-tag-and-class: ;">Axway</span> Sentinel/DI** to open the *<span class="mc-variable axway_variables.Company_Name variable">Axway</span> Sentinel/Decision Insights Events* page.
+1.  Select **Setup > {{< SecureTransport/companyname >}} Sentinel/DI** to open the *{{< SecureTransport/companyname >}} Sentinel/Decision Insights Events* page.
 
 2.  Select the check box for **Send Events to Axway Sentinel or Decision Insight Server**.  
-    The rest of the fields on the screen are enabled and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> sends events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> as configured.
+    The rest of the fields on the screen are enabled and {{< SecureTransport/componentshortname >}} sends events to {{< SecureTransport/decisioninsightname >}} as configured.
 
-3.  In the *<span class="mc-variable axway_variables.Company_Name variable" style="mc-tag-and-class: ;">Axway</span> Sentinel/Decision Insight* pane, specify the FQDN or IP address of the <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> server in the **Host** field and a valid TCP port on the server to which events will be sent in the **Port** field.
+3.  In the *{{< SecureTransport/companyname >}} Sentinel/Decision Insight* pane, specify the FQDN or IP address of the {{< SecureTransport/decisioninsightname >}} server in the **Host** field and a valid TCP port on the server to which events will be sent in the **Port** field.
 
-4.  (Optional) Select the check box for **Use Secure Connection** to enable sending the selected event to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> over a secured connection.
+4.  (Optional) Select the check box for **Use Secure Connection** to enable sending the selected event to {{< SecureTransport/decisioninsightname >}} over a secured connection.
 
 5.  (Optional) Select the check box for **Verify Certificate** to enable the SSL certificate verification. The **Verify Certificate** check box is selected by default.
 
-6.  (Optional) Select the check box for **Enable FIPS Transfer Mode** to enable sending events to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> over the secure connection in FIPS transfer mode.  
+6.  (Optional) Select the check box for **Enable FIPS Transfer Mode** to enable sending events to {{< SecureTransport/decisioninsightname >}} over the secure connection in FIPS transfer mode.  
 
     > **Note:**
     >
     > Changes to these settings in Step 3 through Step 6 take effect the next time you restart the Transaction Manager.
 
-7.  (Optional) Click the **Test Connection** button. This test indicates whether the port specified on the <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span> host accepts connections.
+7.  (Optional) Click the **Test Connection** button. This test indicates whether the port specified on the {{< SecureTransport/decisioninsightname >}} host accepts connections.
 
-8.  In the *Events* pane, select the event states to send to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>.  
-    An Event State specifies the current state of a file transfer. If an Event State is not selected to be sent, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> performs the processing represented by the state, but it does not send the event that reports the state to <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>.  
+8.  In the *Events* pane, select the event states to send to {{< SecureTransport/decisioninsightname >}}.  
+    An Event State specifies the current state of a file transfer. If an Event State is not selected to be sent, {{< SecureTransport/componentshortname >}} performs the processing represented by the state, but it does not send the event that reports the state to {{< SecureTransport/decisioninsightname >}}.  
 
     > **Note:**
     >
     > The Event states that indicate transfer start and end must be enabled to build Decision Insight dashboards. Refer to Event states.
 
-9.  In the *Overflow file* pane, specify information about the file to be used to store <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> event data when there is no connection between <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and <span class="mc-variable suite_variables.DecisionInsightName variable">Decision Insight</span>. For more information, refer to <a href="../c_st_sentinelintegration/t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>.
+9.  In the *Overflow file* pane, specify information about the file to be used to store {{< SecureTransport/componentshortname >}} event data when there is no connection between {{< SecureTransport/componentshortname >}} and {{< SecureTransport/decisioninsightname >}}. For more information, refer to <a href="../c_st_sentinelintegration/t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>.
 
 10. Click **Save**.

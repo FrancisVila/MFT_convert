@@ -2,7 +2,7 @@
     "title": "Control the displayed user information",
     "linkTitle": "Control the displayed user information",
     "weight": "160"
-}By default, <span class="mc-variable SecureTransport_Variables.st_web_client variable">ST Web Client</span> displays the name of the logged-in user in the **Welcome** menu located in the upper right corner. As an administrator, you can control whether and what user information is displayed there.
+}By default, displays the name of the logged-in user in the **Welcome** menu located in the upper right corner. As an administrator, you can control whether and what user information is displayed there.
 
 ## Hide user information
 

@@ -60,8 +60,8 @@ Use the following instructions to configure LDAP search settings for the Addres
              <td><p>Enter an LDAP query to specify the selection criteria for Address Book.</p>
     <p>The search behavior depends on the current selection of the <strong>Use only additional search query</strong> checkbox:</p>
     <ul>
-    <li>If selected, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> executes the exact search query entered in the <strong>Additional search query</strong> field.</li>
-    <li>If not selected, <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> applies pre-defined filters that manage the LDAP server responses to the search query, entered in the <strong>Additional search query</strong> field, and executes the final query.</li>
+    <li>If selected, {{< SecureTransport/componentshortname  >}} executes the exact search query entered in the <strong>Additional search query</strong> field.</li>
+    <li>If not selected, {{< SecureTransport/componentshortname  >}} applies pre-defined filters that manage the LDAP server responses to the search query, entered in the <strong>Additional search query</strong> field, and executes the final query.</li>
     </ul>         </td>
              <td><p>Get all user entries with an email attribute and a surname equal to "smith":</p>
     <p><code>&amp;(sn=smith)(objectClass=user)(email=*)</code></p>
@@ -98,7 +98,7 @@ You can modify a default attribute mapping.
 You can define a mapping for a custom Address Book attribute.
 
 1.  Click **New Attribute**.  
-    <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> adds a line to the *Attributes List*.
+    {{< SecureTransport/componentshortname >}} adds a line to the *Attributes List*.
 2.  Type the **Description**, **Entity Attribute Name**, and **LDAP Attribute Name**.
 3.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the **Edit** column.
 4.  Select **Map to Schema** to enable the mapping.

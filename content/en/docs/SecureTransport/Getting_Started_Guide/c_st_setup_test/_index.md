@@ -13,12 +13,12 @@
 
 ## Create test account
 
-The first task to test the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation and initial configuration is to create a test user account.
+The first task to test the {{< SecureTransport/componentshortname  >}} installation and initial configuration is to create a test user account.
 
 1.  Log into the Administration Tool as an administrator.
 2.  Select **Accounts > User Accounts**.
 3.  Click **New Account**.  
-    The *New User Account* page is displayed. The New User Account page shown is from a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> instance running on Windows. The *Real Users* field is the *UID* field for a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> instance running on UNIX.  
+    The *New User Account* page is displayed. The New User Account page shown is from a {{< SecureTransport/componentshortname >}} instance running on Windows. The *Real Users* field is the *UID* field for a {{< SecureTransport/componentshortname >}} instance running on UNIX.  
     <img src="/Images/SecureTransport/testuser_newaccount.png" class="mediumWidth" alt="New User Account" />
 4.  Enter or select the following information.  
     <table>
@@ -187,7 +187,7 @@ The first task to test the <span class="mc-variable axway_variables.Component_Sh
 
 The second task is to access the test account using the ST Web Client.
 
-1.  From your Internet browser, enter the HTTPS address to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation using the IP address of the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation.  
+1.  From your Internet browser, enter the HTTPS address to the {{< SecureTransport/componentshortname >}} installation using the IP address of the {{< SecureTransport/componentshortname >}} installation.  
 
     > **Note:**
     >
@@ -217,7 +217,7 @@ The third task is to transfer a test file.
 
 The fourth and final task is to verify the file transfer.
 
-1.  Log in to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation as an administrator.
+1.  Log in to the {{< SecureTransport/componentshortname >}} installation as an administrator.
 2.  Navigate to **Operations > File Tracking**.
 3.  Verify that the test file was successfully uploaded.  
     <img src="/Images/SecureTransport/filetracking.png" class="maxWidth" alt="File Tracking - Test file verify." />

@@ -2,7 +2,7 @@
     "title": "Transaction Manager",
     "linkTitle": "Transaction Manager",
     "weight": "260"
-}The Transaction Manager is an event-based rules engine that provides <span class="mc-variable axway_variables.Component_Long_Name variable">Axway SecureTransport</span> Server with extensible server-side functionality used for process automation and real-time delivery of data. This topic describes how to use the Transaction Manager to create and manage rules.
+}The Transaction Manager is an event-based rules engine that provides {{< SecureTransport/componentlongname  >}} Server with extensible server-side functionality used for process automation and real-time delivery of data. This topic describes how to use the Transaction Manager to create and manage rules.
 
 > **Note:**
 >

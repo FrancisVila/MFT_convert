@@ -42,7 +42,7 @@
 
 Parentheses can be used in combination with the operators to change precedence.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> evaluates operators using the following precedence order, listed from highest to lowest and left to right:
+{{< SecureTransport/componentshortname  >}} evaluates operators using the following precedence order, listed from highest to lowest and left to right:
 
 -   `[ ] .`
 -   `( )`

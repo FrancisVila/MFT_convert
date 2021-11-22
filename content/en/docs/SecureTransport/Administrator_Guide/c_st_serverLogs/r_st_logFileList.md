@@ -2,11 +2,11 @@
     "title": "Log file list",
     "linkTitle": "Log file list",
     "weight": "250"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> writes to several log files in multiple locations. These files can be used to monitor <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> processes and identify any issues that can occur. Some messages are logged directly to the database and are visible in the *Server Log* page. For more information, see <a href="../../operations_menu/t_st_serverlog#ServerMenu_1832073003_1052443" class="MCXref xref">Server log</a>.
+}{{< SecureTransport/componentshortname  >}} writes to several log files in multiple locations. These files can be used to monitor {{< SecureTransport/componentshortname  >}} processes and identify any issues that can occur. Some messages are logged directly to the database and are visible in the *Server Log* page. For more information, see <a href="../../operations_menu/t_st_serverlog#ServerMenu_1832073003_1052443" class="MCXref xref">Server log</a>.
 
 You can open log files in a text editor to review them and to find specific messages.
 
-The following table describes the log files used by <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> and provides the location and a brief description of each file. Several log files share the same name. When viewing the table, make sure that you note the location of the log file you want to find.
+The following table describes the log files used by {{< SecureTransport/componentshortname  >}} and provides the location and a brief description of each file. Several log files share the same name. When viewing the table, make sure that you note the location of the log file you want to find.
 
 <table>
    <thead>
@@ -51,14 +51,14 @@ The following table describes the log files used by <span class="mc-variable axw
          <td><p><code>mariadb_error.log</code></p>
 <p><code>mysql_error.log</code></p>         </td>
          <td><code>&lt;FILEDRIVEHOME&gt;/var/logs</code>         </td>
-         <td><p>Records information about the embedded database for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server deployments that use an embedded database.</p>
+         <td><p>Records information about the embedded database for {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server deployments that use an embedded database.</p>
 <p>Not used in deployments that use an external database.</p>         </td>
       </tr>
       <tr>
          <td><p><code>mariadb_slow_query.log </code></p>
 <p><code>mysql_slow_query.log</code></p>         </td>
          <td><code>&lt;FILEDRIVEHOME&gt;/var/logs</code>         </td>
-         <td><p>Lists queries that took longer than a given time to execute for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Edge and <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server deployments that use an embedded database. The file name and time limit are configurable in <code>internaldb.conf</code> for MariaDB and MySQL.</p>
+         <td><p>Lists queries that took longer than a given time to execute for {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server deployments that use an embedded database. The file name and time limit are configurable in <code>internaldb.conf</code> for MariaDB and MySQL.</p>
 <p>Not used in deployments that use an external database.</p>         </td>
       </tr>
       <tr>
@@ -79,7 +79,7 @@ The following table describes the log files used by <span class="mc-variable axw
       <tr>
          <td><code>tools.log</code>         </td>
          <td><code>&lt;FILEDRIVEHOME&gt;/var/logs</code>         </td>
-         <td>Records warnings and errors from internal <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> components.         </td>
+         <td>Records warnings and errors from internal {{< SecureTransport/componentshortname  >}} components.         </td>
       </tr>
       <tr>
          <td><code>AxwaySecureTransportAdmin_SecureTransport.log</code>         </td>

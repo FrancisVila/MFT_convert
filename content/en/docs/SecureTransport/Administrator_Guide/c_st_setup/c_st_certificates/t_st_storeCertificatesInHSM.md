@@ -14,7 +14,7 @@ The following topics provide the how-to instructions for storing certificates in
 
 ## Install and configure the HSM
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> maintains a keystore that stores references to the certificates stored in the HSM. Before you configure the HSM, decide on a location for the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> keystore file, for example, `<FILEDRIVEHOME>/lib/certs/hsm.keystore`.
+{{< SecureTransport/componentshortname  >}} maintains a keystore that stores references to the certificates stored in the HSM. Before you configure the HSM, decide on a location for the {{< SecureTransport/componentshortname  >}} keystore file, for example, `<FILEDRIVEHOME>/lib/certs/hsm.keystore`.
 
 1.  Install the nShield hardware.
 2.  Install the nShield software, including the JCA/JCE cryptography service provider (CSP) on the system where the FTP Server and the HTTP Server run. Note the following values:
@@ -34,13 +34,13 @@ This procedure uses the following placeholders:
 -   `<alias>` – the SSL key alias for FTPS or HTTPS, for example `ftpd` or `httpd`
 -   `<cert_file>` is the file name of the PEM-format certificate file, for example, `ftpd.pem` or `httpd.pem`
 -   `<CSR_file>` – the file name of the CSR request file, for example, `ftpd.req` or `httpd.req`
--   `<FILEDRIVEHOME>` – <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory, for example, `/opt/TMWD/SecureTransport`
+-   `<FILEDRIVEHOME>` – {{< SecureTransport/componentshortname >}} installation directory, for example, `/opt/TMWD/SecureTransport`
 -   `<key_size>` – the key size, for example, `1024`, `2048`, `3072`, or `4096`
 -   `<keystore_passphrase>` – the passphrase for the HSM keystore
--   `<keystore_path>` – the path to the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> HSM keystore
+-   `<keystore_path>` – the path to the {{< SecureTransport/componentshortname >}} HSM keystore
 -   `<validity>` – the validity of the certificate in days
 
-1.  Make the <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> installation directory the current working directory using the following command.  
+1.  Make the {{< SecureTransport/componentshortname >}} installation directory the current working directory using the following command.  
 
 
 
@@ -73,7 +73,7 @@ This procedure uses the following placeholders:
             -CA lib/certs/db/ca-crt.pem -CAkey lib/certs/db/ca-key.pem \
             -CAserial lib/certs/db/serial -out <cert_file>
 
-5.  Append the public part of the internal CA to the certificate file using the following command. This is required so that <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> can build the certificate chain.  
+5.  Append the public part of the internal CA to the certificate file using the following command. This is required so that {{< SecureTransport/componentshortname >}} can build the certificate chain.  
 
 
 
@@ -92,16 +92,16 @@ This procedure uses the following placeholders:
 
 ## Use an HSM certificate for FTPS or HTTPS
 
-1.  Specify the HSM for <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> by setting the following server configuration
+1.  Specify the HSM for {{< SecureTransport/componentshortname >}} by setting the following server configuration
     parameters:
     -   Set `Hsm.keystorePath` to the location of the
-        <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> HSM keystore relative to `<FILEDRIVEHOME>`.
+        {{< SecureTransport/componentshortname >}} HSM keystore relative to `<FILEDRIVEHOME>`.
     -   (Optional) Set `Hsm.keystorePassword` to the keystore passphrase.
     -   If you do not store the passphrase as a server configuration parameter, you must enter it each time you start a protocol server that uses an HSM certificate. If you do not type the passphrase in the time allotted, the protocol server does not start.
 2.  Enable HSM for the protocol servers by setting the following server configuration parameters:
     -   Set `Ftp.Hsm.enabled` to `true` to enable HSM for the FTP Server
     -   Set `Http.Hsm.enabled` to `true` to enable HSM for the HTTP Server
-3.  Create a local certificate with the same alias as the HSM certificate you created, for example, `ftpd` or `httpd`. See <a href="../t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>. <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> does not use this certificate, but you must have a certificate with the correct alias to reference the HSM certificate.
+3.  Create a local certificate with the same alias as the HSM certificate you created, for example, `ftpd` or `httpd`. See <a href="../t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>. {{< SecureTransport/componentshortname >}} does not use this certificate, but you must have a certificate with the correct alias to reference the HSM certificate.
 4.  Set the SSL key aliases for the protocol servers. See <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-ftp" class="MCXref xref">Manage the FTP server</a> and <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-http" class="MCXref xref">Manage the HTTP server</a>.
 5.  Restart the protocol servers. See <a href="#Start" class="MCXref xref">Start and stop servers</a>.
 

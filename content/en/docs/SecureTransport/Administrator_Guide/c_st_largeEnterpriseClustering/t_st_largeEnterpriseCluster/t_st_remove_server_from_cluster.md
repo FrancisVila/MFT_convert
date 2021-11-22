@@ -2,14 +2,14 @@
     "title": "Remove a server from a cluster",
     "linkTitle": "Remove a server from a cluster",
     "weight": "170"
-}You can remove a <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> Server from the cluster.
+}You can remove a {{< SecureTransport/componentshortname  >}} Server from the cluster.
 
 1.  Select **Operations > Cluster Management**.  
     The *Cluster Management* page is displayed.
 2.  In the **Servers** table, select the servers to remove from the cluster.
 3.  Click **Remove Server**.  
     The lines for the servers are removed to the **Servers** table and the servers are no longer part of the cluster.
-4.  Stop all <span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> servers and services on the removed systems.
+4.  Stop all {{< SecureTransport/componentshortname >}} servers and services on the removed systems.
 
 The local server configuration setting for the removed server remains in the shared database.
 

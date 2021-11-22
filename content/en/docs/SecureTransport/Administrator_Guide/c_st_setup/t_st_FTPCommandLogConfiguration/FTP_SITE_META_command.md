@@ -2,7 +2,7 @@
     "title": "FTP SITE META command",
     "linkTitle": "FTP SITE META command",
     "weight": "260"
-}<span class="mc-variable axway_variables.Component_Short_Name variable">SecureTransport</span> has added support for a new command - SITE META. The command is part of the already existing SITE commands and provides capabilities to store user-specific information as metadata over the FTP protocol. It does not comply with any RFC documents and has a generic syntax.
+}{{< SecureTransport/componentshortname  >}} has added support for a new command - SITE META. The command is part of the already existing SITE commands and provides capabilities to store user-specific information as metadata over the FTP protocol. It does not comply with any RFC documents and has a generic syntax.
 
 The command accepts input in the format of key - value pairs. The supplied information is stored in the FTP session and is available until the session finishes or times out. For files uploaded during the same session, the provided information will be stored as file metadata attributes. The information can be evaluated at a later point for each file.
 
