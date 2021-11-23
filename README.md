@@ -34,7 +34,7 @@ To try out this repo locally on your computer:
 
      `hugo server`
 
-1. If all went well, the docs should be accessible in 
+1. If all went well, the docs should be accessible in  
 
      [localhost:1313/docs/](localhost:1313/docs/)
 
