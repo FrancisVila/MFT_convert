@@ -18,7 +18,7 @@ To try out this repo locally on your computer:
      (Thisgives instructions for Windows, Linux and IOS. Requires you to have [Chocolatey](https://chocolatey.org/)  or [Scoop](https://scoop.sh/) installed)
 
      - **git**  
-     Of course :-)  
+     Of course :-)   
 
 1.	Clone the repo with the command:
 
