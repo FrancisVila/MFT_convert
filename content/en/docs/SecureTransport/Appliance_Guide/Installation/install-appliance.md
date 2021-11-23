@@ -21,7 +21,7 @@ To make a virtual machine available for use, refer to the Amazon Elastic Compute
 >
 > To connect to SLES on your SecureTransport appliance using SSH, use port 10022. (After you install SecureTransport, you will use port 22 to connect to SecureTransport using SFTP or SCP). You can change the SLES SSH port number after installation by editing /etc/ssh/sshd\_config.
 
-Once you have installed the appliance operating system, you can install SecureTransport in Standalone mode, Standard Cluster, or Enterprise Cluster. For more information, see <a href="../install-st-on-appliance" class="MCXref xref">Install SecureTransport on the appliance</a>.
+Once you have installed the appliance operating system, you can install SecureTransport in Standalone mode, Standard Cluster, or Enterprise Cluster. For more information, see [Install SecureTransport on the appliance](../install-st-on-appliance).
 
--   <a href="../../app_network_config" class="MCXref xref">Configure network settings</a> - Provides how to instructions for setting appliance network configuration parameters.
--   <a href="../../app_network_config#Configur3" class="MCXref xref">Configure the DNS server address, host name, and domain name</a> - Provides how to instructions for configuring the DNS server address and host name.
+-   [Configure network settings](../../app_network_config) - Provides how to instructions for setting appliance network configuration parameters.
+-   [Configure the DNS server address, host name, and domain name](../../app_network_config#Configur3) - Provides how to instructions for configuring the DNS server address and host name.

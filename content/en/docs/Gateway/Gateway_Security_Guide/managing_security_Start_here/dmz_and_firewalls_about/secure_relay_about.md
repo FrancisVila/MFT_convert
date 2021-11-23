@@ -2,7 +2,7 @@
     "title": "About Secure Relay",
     "linkTitle": "About Secure Relay",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [About Secure Relay](#About_Secure_Relay)
 
@@ -49,7 +49,7 @@ Secure Relay is composed of two main components:
 
 The Secure Relay Master Agent (Secure Relay MA) is a Secure Relay component residing with, and fully integrated in, Gateway. All of the processes that support the functioning of Secure Relay MA are automatically included in Gateway on installation.
 
-During installation, the installation program installs Secure Relay related files in the directory <span class="code">&lt;Gateway installation directory>/run\_time/xsr</span>.
+During installation, the installation program installs Secure Relay related files in the directory `<Gateway installation directory>/run_time/xsr`.
 
 After installation, you need to [configure and activate the Secure Relay Master Agent](../working_with_secure_relay#Configuring_Secure_Relay).
 
@@ -130,7 +130,7 @@ It should be noted that securing the Communication channels between Secure Relay
 
 ## Physical connections
 
-The following figure illustrates the physical connections established between the DMZ and the protected zone using the <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> solution.
+The following figure illustrates the physical connections established between the DMZ and the protected zone using the {{< Gateway/securerelayname  >}} solution.
 
 <img src="/Images/Gateway/XSR_ArchiConnections.png" class="maxWidth" />
 
@@ -152,7 +152,7 @@ In the case of FTP, both implicit and explicit termination are now supported by 
 To activate this feature:
 
 -   Set up the TLS profile to use in Secure Relay when [configuring your listening ports](../../../../gateway_userguide_(primary)/configuration_start_here/config_protocols_about/config_sap_parameters) in the Gateway configuration menu, and
--   Select <span style="font-weight: bold;">Transport security in SecureRelay for outgoing connection</span> in the [Remote Site object (Net security tab)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab)
+-   Select **Transport security in SecureRelay for outgoing connection** in the [Remote Site object (Net security tab)](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab)
 
 Delegating the TLS termination to the Secure Relay component may have an impact on the performance of the solution.
 

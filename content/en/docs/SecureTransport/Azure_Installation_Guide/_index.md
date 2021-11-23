@@ -8,23 +8,23 @@ Microsoft Azure lets you provision a logically isolated section of the Azure whe
 
 ## For new users
 
-<a href="intro_overview" class="MCXref xref">Introduction</a>
+[Introduction](intro_overview)
 
-<a href="intro_overview/azure-overview" class="MCXref xref">Overview</a>
+[Overview](intro_overview/azure-overview)
 
-<a href="st-in-azure" class="MCXref xref">SecureTransport in Azure Virtual Network</a>
+[SecureTransport in Azure Virtual Network](st-in-azure)
 
-<a href="create-vnet" class="MCXref xref">Create a Virtual Network</a>
+[Create a Virtual Network](create-vnet)
 
-<a href="network-security-groups/create-net-security-groups" class="MCXref xref">Create Network Security groups</a>
+[Create Network Security groups](network-security-groups/create-net-security-groups)
 
 ## For existing users
 
-<a href="launch-vm-instances" class="MCXref xref">Launch VM instances</a>
+[Launch VM instances](launch-vm-instances)
 
-<a href="launch-adminhost-instance" class="MCXref xref">Launch an instance for the Administration Host</a>
+[Launch an instance for the Administration Host](launch-adminhost-instance)
 
-<a href="st-cluster-setup" class="MCXref xref">Set up Enterprise Cluster with streaming</a>
+[Set up Enterprise Cluster with streaming](st-cluster-setup)
 
 ## Get more help
 

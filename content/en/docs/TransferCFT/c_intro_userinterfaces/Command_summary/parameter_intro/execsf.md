@@ -28,7 +28,7 @@ This name may include the following symbolic variables:
 -   &NIDF
 
 The character ‘&’ designates the char\_symb character defined in
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide* that corresponds with your OS.
+the {{< TransferCFT/componentshortname  >}} *Operations Guide* that corresponds with your OS.
 
 > **Note:**
 >

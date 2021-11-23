@@ -23,4 +23,4 @@ This procedure is an example of the interaction when {{< SecureTransport/compone
 
 The installer displays a progress indicator. It can take several minutes to install {{< SecureTransport/componentshortname  >}}. When the installation is complete, the {{< SecureTransport/componentshortname  >}} Configuration menu is once again displayed.
 
-Once installed, you can <a href="../../app_network_config" class="MCXref xref">Configure network settings</a>.
+Once installed, you can [Configure network settings](../../app_network_config).

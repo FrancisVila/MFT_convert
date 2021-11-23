@@ -30,4 +30,4 @@ The diagram does not illustrate the following network connections that you might
 
 **Related topic:**
 
--   <a href="../t_st_networkzones" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a>
+-   [Manage the communication across Transaction Manager, protocol and proxy servers](../t_st_networkzones)

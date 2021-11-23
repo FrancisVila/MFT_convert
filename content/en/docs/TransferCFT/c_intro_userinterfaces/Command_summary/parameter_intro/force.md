@@ -53,7 +53,7 @@ set in an associated SEND command.
 
 #### CFTRECV, CFTSEND
 
-The following table summarizes <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> processing on a CFTRECV
+The following table summarizes {{< TransferCFT/componentshortname  >}} processing on a CFTRECV
 or CFTSEND object with parameter FORCE set to YES.
 
 Parameters Default value Processing (FORCE = YES)

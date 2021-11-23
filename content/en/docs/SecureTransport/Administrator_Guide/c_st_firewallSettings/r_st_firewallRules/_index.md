@@ -10,11 +10,11 @@
 
 The following topics list the firewall rules:
 
--   <a href="r_st_protocol_rules" class="MCXref xref">Protocol rules</a> - Lists the firewall protocol rules.
--   <a href="r_st_authentication_rules" class="MCXref xref">Authentication rules</a> - Lists the firewall authentication rules.
--   <a href="r_st_administration_rules" class="MCXref xref">Administration rules</a> - Lists the firewall administration rules.
--   <a href="r_st_tm_server_communication_rules" class="MCXref xref">TM server communication rules</a> - Lists the firewall Transaction Manager server communication rules.
--   <a href="r_st_server_transfer_rules" class="MCXref xref">Server transfer rules</a> - Lists the firewall server transfer rules.
--   <a href="r_st_standard_clustering_rules" class="MCXref xref">Standard Cluster rules</a> - Lists the firewall Standard cluster rules.
--   <a href="r_st_large_enterprise_clustering_rules" class="MCXref xref">Enterprise Cluster rules</a> - Lists the firewall Enterprise Cluster rules.
--   <a href="r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a> - Lists the firewall protocol rules for outbound communication from the {{< SecureTransport/componentshortname >}} Edge.
+-   [Protocol rules](r_st_protocol_rules) - Lists the firewall protocol rules.
+-   [Authentication rules](r_st_authentication_rules) - Lists the firewall authentication rules.
+-   [Administration rules](r_st_administration_rules) - Lists the firewall administration rules.
+-   [TM server communication rules](r_st_tm_server_communication_rules) - Lists the firewall Transaction Manager server communication rules.
+-   [Server transfer rules](r_st_server_transfer_rules) - Lists the firewall server transfer rules.
+-   [Standard Cluster rules](r_st_standard_clustering_rules) - Lists the firewall Standard cluster rules.
+-   [Enterprise Cluster rules](r_st_large_enterprise_clustering_rules) - Lists the firewall Enterprise Cluster rules.
+-   [Protocol rules - outbound from SecureTransport Edge](r_st_protocol_rules_outbound) - Lists the firewall protocol rules for outbound communication from the {{< SecureTransport/componentshortname >}} Edge.

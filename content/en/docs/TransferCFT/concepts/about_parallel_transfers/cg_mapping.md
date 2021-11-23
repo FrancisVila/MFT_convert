@@ -18,7 +18,7 @@
          <td><p>Linux and Windows: 2-1000 (<u>128</u>)</p>
 <p>z/OS and IBM i: 2-990 (<u>128</u>)</p>         </td>
          <td>MAXTRANS         </td>
-         <td>The maximum number of simultaneous connections that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> accepts to establish for a network resource.         </td>
+         <td>The maximum number of simultaneous connections that {{< TransferCFT/componentshortname  >}} accepts to establish for a network resource.         </td>
       </tr>
       <tr>
          <td>Connections         </td>

@@ -28,5 +28,5 @@ Use the following procedure to add administrative role.
 
 **Related topics:**
 
--   <a href="../r_st_predefined_administrative_roles" class="MCXref xref">Predefined administrative roles</a>
--   <a href="../r_st_edit_administrative_role" class="MCXref xref">Edit an administrative role</a>
+-   [Predefined administrative roles](../r_st_predefined_administrative_roles)
+-   [Edit an administrative role](../r_st_edit_administrative_role)

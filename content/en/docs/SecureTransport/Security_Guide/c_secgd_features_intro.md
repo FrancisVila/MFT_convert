@@ -4,11 +4,11 @@
     "weight": "70"
 }This product contains the following security features:
 
--   Secure connections, see <a href="#Secure" class="MCXref xref">Secure connections</a>
--   Password management, see <a href="#Password" class="MCXref xref">Password management</a>
--   Certificate management, see <a href="#Certific" class="MCXref xref">Certificate management</a>
--   Identity and access management, see <a href="#Identity" class="MCXref xref">Identity and Access Management</a>
--   Other security features, see <a href="#Other" class="MCXref xref">Other security features</a>
+-   Secure connections, see [Secure connections](#Secure)
+-   Password management, see [Password management](#Password)
+-   Certificate management, see [Certificate management](#Certific)
+-   Identity and access management, see [Identity and Access Management](#Identity)
+-   Other security features, see [Other security features](#Other)
 
 <span id="Secure"></span>
 

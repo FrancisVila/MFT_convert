@@ -2,7 +2,7 @@
     "title": "Extract the Access Management Cache",
     "linkTitle": "Extract the Access Management Cache",
     "weight": "300"
-}If you need to check the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> rights for a specific user, you can use the <span class="code">EXTAMCACHE </span>command to obtain this information.
+}If you need to check the {{< TransferCFT/componentlongname  >}} rights for a specific user, you can use the `EXTAMCACHE `command to obtain this information.
 
 Command syntax: EXTAMCACHE
 
@@ -18,7 +18,7 @@ Command syntax: EXTAMCACHE
    <tbody>
       <tr>
          <td><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fname">FNAME</a>         </td>
-         <td>Selects the Access Management cache file. By default, this is the CFTAM file, which is located in the <span class="code">data </span>folder.         </td>
+         <td>Selects the Access Management cache file. By default, this is the CFTAM file, which is located in the <code>data </code>folder.         </td>
       </tr>
       <tr>
          <td><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/fout">FOUT</a>         </td>
@@ -27,14 +27,14 @@ Command syntax: EXTAMCACHE
       <tr>
          <td><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a>         </td>
          <td><p>Selects the user, or users, for which you want to obtain access rights. By default, the function returns all users.</p>
-<p>You can use the wildcard characters <span class="code">*</span> and <span class="code">?</span> to filter the user names.</p>         </td>
+<p>You can use the wildcard characters <code>*</code> and <code>?</code> to filter the user names.</p>         </td>
       </tr>
    </tbody>
 </table>
 
 Example
 
-The following command extracts the cache file information for all users and their rights to a text file called <span class="code">AMuser.txt</span>.
+The following command extracts the cache file information for all users and their rights to a text file called `AMuser.txt`.
 
 
     CFTUTIL EXTAMCACHE FOUT=AMuser.txt

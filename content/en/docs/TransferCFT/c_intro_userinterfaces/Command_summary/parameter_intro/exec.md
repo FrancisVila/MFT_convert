@@ -69,7 +69,7 @@ the name of the last log file used before switching (current file).
 
 \[EXEC = filename\]    {string 64}
 
-Name of the procedure to be executed when <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches to the
+Name of the procedure to be executed when {{< TransferCFT/componentshortname  >}} switches to the
 other statistical file.
 
 This procedure has access to the symbolic variable &FACCNT which

@@ -8,6 +8,6 @@ If the primary server goes down, a secondary server is promoted to primary and s
 
 **Related topics:**
 
--   <a href="../c_st_active-active_active-passive_clustering" class="MCXref xref">Active/active and active/passive clustering</a>
--   <a href="../c_st_scheduled_tasks" class="MCXref xref">Scheduled tasks</a>
--   <a href="../c_st_services_used_for_cluster_management" class="MCXref xref">Services used for cluster management</a>
+-   [Active/active and active/passive clustering](../c_st_active-active_active-passive_clustering)
+-   [Scheduled tasks](../c_st_scheduled_tasks)
+-   [Services used for cluster management](../c_st_services_used_for_cluster_management)

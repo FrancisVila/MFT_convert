@@ -2,7 +2,7 @@
     "title": "Transfer CFT user interface",
     "linkTitle": "Transfer CFT UI ",
     "weight": "110"
-}<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> features a web browser user interface that you can use to configure, track and manage transfers, and consult the  log. The following sections describe the steps you must perform before you can start using this user interface.
+}{{< TransferCFT/transfercftname  >}} features a web browser user interface that you can use to configure, track and manage transfers, and consult the  log. The following sections describe the steps you must perform before you can start using this user interface.
 
 The Transfer CFT user interface requires secure SSL/TLS communication between the browser and the REST server, and for the REST API option to be enabled. If you performed a custom installation without these options, you must perform the following steps before connecting to the user interface.
 
@@ -27,8 +27,8 @@ Start the Copilot server before connecting as the REST API server.
 
 The user that starts the Copilot server must have write permission for the Transfer CFT CFTCOM, CFTPART, CFTPARM, and CFTPKI data files.
 
-1.  Start the Copilot server: <span class="code">copstart</span>
-2.  In your web browser, enter the URL using the following format: <span class="code">https://&lt;UI\_server\_host>:&lt;RestApi\_port>/cft/ui/</span>  
+1.  Start the Copilot server: `copstart`
+2.  In your web browser, enter the URL using the following format: `https://<UI_server_host>:<RestApi_port>/cft/ui/`  
     Example  
     https://10.128.14.139:1768/cft/ui/
 3.  Enter your username and password (depending on the authentication method set on the server) where the username is limited to 32 characters.  
@@ -59,13 +59,13 @@ The user that starts the Copilot server must have write permission for the Trans
       
     These parameter settings are described in [Install a certificate on the server side](../../admin_intro/manage_copilot#Install).  
 
-4.  Specify the authentication method, as the client must provide credentials (user/password) to the REST server. Set the UCONF the <span class="code">copilot.restapi.authentication\_method</span> parameter.  
+4.  Specify the authentication method, as the client must provide credentials (user/password) to the REST server. Set the UCONF the `copilot.restapi.authentication_method` parameter.  
     Example  
 
 
         CFTUTIL uconfset id=copilot.restapi.authentication_method, value=system
 
-<span class="bold_in_para"><span id="Authentication_methods"></span>Authentication methods</span>
+**<span id="Authentication_methods"></span>Authentication methods**
 
 The supported authentication methods are:
 
@@ -87,16 +87,16 @@ The supported authentication methods are:
 <p>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.</p>
 </blockquote>
 <p><strong>Unix</strong></p>
-<p>You must use <span class="code">cftsu </span>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.</p>
+<p>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.</p>
 <ul>
-<li>Create a group "group1": <span style="font-family: &#39;Courier New&#39;;">groupadd group1</span></li>
-<li>Add user "user1" to group "group1": <span style="font-family: &#39;Courier New&#39;;">usermod -a -G group1 user1</span></li>
+<li>Create a group "group1":</li>
+<li>Add user "user1" to group "group1":</li>
 </ul>
 <p><strong>Windows</strong></p>
 <p>You require a superuser (administrative user account) to create a group and assign a user to a group.</p>
 <ul>
-<li>Create a group "group1": <span style="font-family: &#39;Courier New&#39;;">net localgroup group1 /add</span></li>
-<li>Add user "user1" to group "group1": <span style="font-family: &#39;Courier New&#39;;">net localgroup group1 user1 /add</span></li>
+<li>Create a group "group1":</li>
+<li>Add user "user1" to group "group1":</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong></p>
@@ -106,25 +106,24 @@ The supported authentication methods are:
       <tr>
          <td>Access Management         </td>
          <td>am         </td>
-         <td><p>This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, PassPort AM, or internal AM.</p>         </td>
+         <td><p>This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.</p>         </td>
       </tr>
       <tr>
          <td><p>xfbadm database</p>
 <p>(UNIX and HP NonStop exclusively)</p>         </td>
          <td>xfbadm         </td>
          <td><p>The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).</p>
-<p>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <span class="code">profile </span>from the runtime directory.</p>
+<p>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.</p>
 <ol>
-<li>Create a group "group1" with gid=200:<span style="font-family: &#39;Courier New&#39;;"> xfbadmgrp add -G group1 -p group1_pw -g 200</span></li>
-<li>From the user prompt, to add a user "user1" to group "group1"enter: <span style="font-family: &#39;Courier New&#39;;">xfbadmusr add -l user1 -p user1_pw -u AUTO -g 200</span></li>
+<li>Create a group "group1" with gid=200:</li>
+<li>From the user prompt, to add a user "user1" to group "group1"enter:</li>
 </ol>         </td>
       </tr>
    </tbody>
 </table>
 
-<span class="autonumber"></span><span id="REST"></span>REST API server authentication method
+<span id="REST"></span>REST API server authentication method
 
-<span class="autonumber"></span>
 <img src="/Images/TransferCFT/authentication_copilot_server.png" class="maxWidth" />
 
 > **Note:**
@@ -145,9 +144,9 @@ For security purposes, you must import the CA that corresponds with the server s
 
 When using Central Governance
 
-The REST API server automatically uses the SSL business certificate generated during the registration. This certificate is stored in the internal PKI base and is identified by the Transfer CFT instance ID (UCONF <span class="code">cft.instance\_id</span> parameter). You must import the matching Certificate Authority to your web browser certificate store.
+The REST API server automatically uses the SSL business certificate generated during the registration. This certificate is stored in the internal PKI base and is identified by the Transfer CFT instance ID (UCONF `cft.instance_id` parameter). You must import the matching Certificate Authority to your web browser certificate store.
 
-When you are not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+When you are not using
 
 You must import the Certificate Authority that corresponds with the certificate that you defined previously (Step 3) to your web browser certificate store.
 
@@ -155,7 +154,7 @@ You are now ready to [connect to the user interface](#Connect2). If you encounte
 
 ## Limit the number of failed login attempts
 
-Transfer CFT provides brute force protection for logging on the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
+Transfer CFT provides brute force protection for logging on the {{< TransferCFT/transfercftname  >}} UI, REST API, or Web Services when using either the *system* mode or *xfbadm* mode (UNIX and HP NonStop only) authentication. That is, it limits the number of login failure attempts, where both the user and the password are checked to avoid brute force attacks.
 
 For other authentication methods, such as PassPort and LDAP, no check is made. You must manage that in the Password Policy of those external tools.
 

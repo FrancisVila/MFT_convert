@@ -2,11 +2,11 @@
     "title": "Creating  a directory exit - IBM i",
     "linkTitle": "Creating a directory exit",
     "weight": "300"
-}This page describes a delivered sample that is designed to create an example directory exit. You can use the <span class="code">TCPPARAM </span>configuration sample that is located in <span class="code">CFTPROD/UTIN</span>.
+}This page describes a delivered sample that is designed to create an example directory exit. You can use the `TCPPARAM `configuration sample that is located in `CFTPROD/UTIN`.
 
 Before you start
 
-Before running the directory exit test, you must make a few changes to the <span class="code">(TCPPARAM)</span> file depending on the type of network used. Edit the file using
+Before running the directory exit test, you must make a few changes to the `(TCPPARAM)` file depending on the type of network used. Edit the file using
 your text editor (EDTF for example) as follows.
 
 1.  In the file, locate
@@ -17,7 +17,7 @@ your text editor (EDTF for example) as follows.
     commented as follows:
 4.  Locate the communication properties
     for your site, which appear at the end of the file. When
-    modifying the (<span class="code">TCPPARAM</span>) file, you must also find every occurrence
+    modifying the (`TCPPARAM`) file, you must also find every occurrence
     of the HOST string located in cfttcp-type commands and replace the X character
     strings with your system name or address.
 
@@ -37,48 +37,47 @@ modules. This program is used to check the following:
     of a transfer to a partner known to the directory EXIT but not to Transfer
     CFT
 -   Activation
-    of a transfer to a partner not known to either <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or the directory
+    of a transfer to a partner not known to either {{< TransferCFT/componentshortname >}} or the directory
     EXIT
 
 The *&lt;installdir>/lib* subdirectory contains:
 
--   The<span class="code"> libcftexa.a</span>
-    module required to use the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> directory EXITs
+-   The` libcftexa.a`
+    module required to use the {{< TransferCFT/componentshortname >}} directory EXITs
 
 ## Generating the exit
 
 To generate the sample CFTEXITA application:
 
-1.  Access the <span class="code">&lt;installdir>/runtime/src/exit/ </span>directory.
-2.  Enter the command: <span class="code">gmake</span>
+1.  Access the `<installdir>/runtime/src/exit/ `directory.
+2.  Enter the command: `gmake`
 
 ## Running the test
 
-1.  Access the <span class="code">&lt;installdir>/runtime/conf </span>directory.
-2.  Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> databases
-    using <span class="code">cftinit</span> the configuration file provided
-    and modified for this EXIT:<span class="code"> cft-tcp.conf</span>
-3.  When the<span class="code"> cftinit complete </span>
-    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the <span class="code">cftstart </span>utility: <span class="code">cftstart</span>
-4.  When the<span class="code"> CFTMAIN process
-    ID is xxxxx</span> message is displayed, perform an initial standard transfer
+1.  Access the `<installdir>/runtime/conf `directory.
+2.  Generate the {{< TransferCFT/componentshortname >}} databases
+    using `cftinit` the configuration file provided
+    and modified for this EXIT:` cft-tcp.conf`
+3.  When the` cftinit complete `
+    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility: `cftstart`
+4.  When the` CFTMAIN process   ID is xxxxx` message is displayed, perform an initial standard transfer
     using the command:  
-    <span class="code">CFTUTIL send part=BOSTON, idf=TXT</span>
+    `CFTUTIL send part=BOSTON, idf=TXT`
 5.  Now submit a second transfer
-    to the <span class="code">NCFT\_OK</span> partner:  
-    <span class="code">CFTUTIL send part=NCFT\_OK,idf=TXT</span>
+    to the `NCFT_OK` partner:  
+    `CFTUTIL send part=NCFT_OK,idf=TXT`
 6.  After a few seconds, you can
-    check the transfer state by entering the command: <span class="code">cftcatab</span>
+    check the transfer state by entering the command: `cftcatab`
 7.  The transfer is successful
     because NRPART01 is defined in the DIRECTORY EXIT as being the EXTPTN01
-    non- <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner.
+    non- {{< TransferCFT/componentshortname >}} partner.
 8.  Now submit a third transfer
     to the NCFT\_OK partner:  
-    <span class="code">CFTUTIL send part=NCFT\_NOK,idf=TXT</span>
+    `CFTUTIL send part=NCFT_NOK,idf=TXT`
 9.  After a few seconds, you can
-    check the transfer state by entering the command: <span class="code">cftcatab</span>
+    check the transfer state by entering the command: `cftcatab`
 
 The transfer fails because the password is invalid, even though NRPART02
 is defined in the DIRECTORY EXIT.
 
-1.  Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>: <span class="code">cftstop</span>
+1.  Stop {{< TransferCFT/componentshortname >}}: `cftstop`

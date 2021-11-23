@@ -16,9 +16,9 @@ A text file is uploaded. Route 1 is triggered. Transformation 1 performs a Line 
 
 **Related topics:**
 
--   <a href="../c_st_chain_of_route_execution" class="MCXref xref">Chain of route execution</a>
--   <a href="../c_st_inherited_versus_specific" class="MCXref xref">Inherited settings versus Specific settings</a>
--   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
--   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
--   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>
+-   [Chain of route execution](../c_st_chain_of_route_execution)
+-   [Inherited settings versus Specific settings](../c_st_inherited_versus_specific)
+-   [Skipped transformation](../c_st_skipped_transformation)
+-   [Transformation on multiple files](../c_st_transformation_on_multiple_files)
+-   [Route failure](../c_st_route_failure)
+-   [Routing to multiple transfer sites](../c_st_routing_to_multiple_transfer_sites)

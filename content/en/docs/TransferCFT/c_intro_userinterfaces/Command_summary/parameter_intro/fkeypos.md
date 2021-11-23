@@ -21,14 +21,14 @@ The default value is the value received from the protocol (PI 39) which
 is present if it has been defined by the requester. If this value is absent,
 the default value is then equal to 0.
 
-<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> receives the file in the form of sequential records. The
+{{< TransferCFT/transfercftname  >}} receives the file in the form of sequential records. The
 client can develop a file type EXIT or write an end-of-transfer procedure
 to use this information which can be recovered by the symbolic variable
 &FKEYPOS.
 
 For sender:
 
-<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> sends this information, transported by the protocol in the
+{{< TransferCFT/transfercftname  >}} sends this information, transported by the protocol in the
 PI 39, but does not use it. The indexed file is transferred in the form
 of sequential records.
 

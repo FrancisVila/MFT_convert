@@ -20,13 +20,9 @@ You use this information to communicate with remote partners.
 
 ## Gateway GUI procedure
 
-In the left pane of the Gateway Navigator main window, click to expand the **Partner Management** node.
-
-Right-click the **Trading Partners** sub-node and from the context menu select **New**.
-
-From the context menu, select the type of partner.
-
-View available partner types
+1.  In the left pane of the Gateway Navigator main window, click to expand the **Partner Management** node.
+2.  Right-click the **Trading Partners** sub-node and from the context menu select **New**.
+3.  From the context menu, select the type of partner.
 
 -   SMIME partner
 -   AS1 partner
@@ -86,7 +82,7 @@ This description is included in the displayed list of available Trading Partners
       <tr>
          <td><p>Use dual certificates</p>         </td>
          <td><p>Click this button to toggle between the use of single or dual certificates. The effect of this button varies according to the context:</p>
-<p>If you are creating a <span style="font-weight: bold;font-style: italic;">local</span> partner and you...</p>
+<p>If you are creating a <strong>local</strong> partner and you...</p>
 <ul>
 <li>select <strong>Use dual certificates</strong>:<br />
 A signing certificate is used to sign what is sent, and an encryption certificate is used to decrypt what is received.</li>

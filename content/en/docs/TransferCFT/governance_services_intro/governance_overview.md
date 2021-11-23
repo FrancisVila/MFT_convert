@@ -6,7 +6,7 @@
 
 ## Managed File Transfer services
 
-Managed File Transfer services, using a blend of Axway products, can centralize flow definition and configuration deployment for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> (file transfer) engines.
+Managed File Transfer services, using a blend of Axway products, can centralize flow definition and configuration deployment for {{< TransferCFT/componentlongname  >}} (file transfer) engines.
 
 You can use Central Governance in your MFT architecture to easily create and deploy flows. You then trigger your flows at the system level.
 
@@ -18,13 +18,13 @@ You can use Central Governance in your MFT architecture to easily create and de
 
 ### Additional documentation
 
--   <span class="mc-variable axway_variables.Platform_or_Suite_Long_Name variable">AMPLIFY</span> Supported Platforms
--   <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> documentation
--   <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> documentation
+-   {{< TransferCFT/platformorsuitelongname >}} Supported Platforms
+-   {{< TransferCFT/centralgovernancename >}} documentation
+-   {{< TransferCFT/flowmanager >}} documentation
 
 ## Governance exchanges
 
-The following types of exchanges occur between <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> and the managed Transfer CFTs:
+The following types of exchanges occur between {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}} and the managed Transfer CFTs:
 
 -   Flow management
 -   Certificate management
@@ -35,12 +35,12 @@ See [Exchanges with Central Governance](../cg_postregister) for more information
 
 ## Overview and practical considerations
 
-Begin by planning your MFT architecture and deployment strategy. After installing <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, the following steps occur:
+Begin by planning your MFT architecture and deployment strategy. After installing {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}}, the following steps occur:
 
--   In the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation select the Central Governance connectivity option
+-   In the {{< TransferCFT/componentlongname >}} installation select the Central Governance connectivity option
 -   After installing, start the Transfer CFT Copilot server (the Transfer CFT server can be running, but this is optional)
 -   Registration occurs automatically on Copilot start up
--   From <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> start the Transfer CFT(s)
+-   From {{< TransferCFT/centralgovernancename >}} or {{< TransferCFT/flowmanager >}} start the Transfer CFT(s)
 -   If you migrated or upgraded, you may want to reference the following sections:
     -   [Manually activate Central Governance connectivity](../register_cg)
     -   Parameter mapping between products
@@ -49,14 +49,14 @@ Begin by planning your MFT architecture and deployment strategy. After installi
 
 ## Feature support and management
 
-Transfer CFTs running under <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> can manage or have support for the following features.
+Transfer CFTs running under {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}} can manage or have support for the following features.
 
 <table>
    <thead>
       <tr>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Feature         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> Manage using <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> or <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Supported but not configurable using Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> Manage using {{< TransferCFT/flowmanager  >}} or         </th>
+<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Supported but not configurable using Central Governance or {{< TransferCFT/flowmanager  >}}         </th>
       </tr>
    </thead>
    <tbody>
@@ -174,7 +174,7 @@ Transfer CFTs running under <span class="mc-variable suite_variables.Central_Gov
 
 ## Legacy flows
 
-Legacy flows refer to former flow definitions available in migrated <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> systems. Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> can manage the following use cases:
+Legacy flows refer to former flow definitions available in migrated {{< TransferCFT/componentlongname  >}} systems. Central Governance or {{< TransferCFT/flowmanager  >}} can manage the following use cases:
 
--   Via the Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> user interface, you can add and manage partners, and use send and receive templates for a given Transfer CFT.
--   You can migrate Transfer CFT flow definitions to the Central Governance or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> flow-management process.
+-   Via the Central Governance or {{< TransferCFT/flowmanager >}} user interface, you can add and manage partners, and use send and receive templates for a given Transfer CFT.
+-   You can migrate Transfer CFT flow definitions to the Central Governance or {{< TransferCFT/flowmanager >}} flow-management process.

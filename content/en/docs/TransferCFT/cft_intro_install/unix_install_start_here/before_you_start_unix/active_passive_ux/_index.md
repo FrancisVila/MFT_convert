@@ -13,7 +13,7 @@ Transfer CFT in multi-host architecture requires:
 
 ### License keys
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note:**
 >
@@ -28,7 +28,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as described in <a href="../" class="MCXref xref">Install Transfer CFT</a>.
 
 ### Customize
 
@@ -69,14 +69,14 @@ Central Governance dedicated port of the Transfer CFT UI Server.         </td>
 ## Install
 
 1.  Start the installation.
-2.  Transfer\_CFT\_<span class="mc-variable axway_variables.Release_Number variable">3.9</span>\_Install\_win-x86-64\_BNXXXXXXXX.exe
-3.  ./Transfer\_CFT\_<span class="mc-variable axway_variables.Release_Number variable">3.9</span>\_Install\_&lt;OS>\_&lt;BN>.run
+2.  Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe
+3.  ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 4.  In the Installation Architecture screen, select **Cluster - first host**.
 5.  Complete the installation.
-6.  To add a host to create a multi-host installation, run the install <span class="code">exe/bat</span> again. This time select **Cluster - Additional host**.
+6.  To add a host to create a multi-host installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 ## Silent installation
 
-When installing using a silent file for a multihost installation, in the silent file (initialize.properties) you can use the same other definitions as in the Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> silent files.
+When installing using a silent file for a multihost installation, in the silent file (initialize.properties) you can use the same other definitions as in the Transfer CFT {{< TransferCFT/releasenumber  >}} silent files.
 
  

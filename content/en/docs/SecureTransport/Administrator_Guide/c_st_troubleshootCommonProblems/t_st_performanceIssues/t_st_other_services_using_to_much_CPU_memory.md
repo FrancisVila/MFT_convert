@@ -10,8 +10,8 @@ Because {{< SecureTransport/componentshortname  >}} is a CPU-intensive applicati
 
 **Related topics:**
 
--   <a href="../t_st_evaluate_performance_issues" class="MCXref xref">Evaluate performance issues</a>
--   <a href="../t_st_dns_settings" class="MCXref xref">DNS settings</a>
--   <a href="../t_st_firewall_issues" class="MCXref xref">Firewall issues</a>
--   <a href="../t_st_installation_on_network_drive" class="MCXref xref">Installation on network drive</a>
--   <a href="../t_st_debug_log_output_slows_computer" class="MCXref xref">Debug log output slows computer</a>
+-   [Evaluate performance issues](../t_st_evaluate_performance_issues)
+-   [DNS settings](../t_st_dns_settings)
+-   [Firewall issues](../t_st_firewall_issues)
+-   [Installation on network drive](../t_st_installation_on_network_drive)
+-   [Debug log output slows computer](../t_st_debug_log_output_slows_computer)

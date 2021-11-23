@@ -22,7 +22,7 @@
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -81,7 +81,7 @@
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data type</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in {{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -111,7 +111,7 @@
          <td><p>String.</p>         </td>
          <td><p>20</p>         </td>
          <td><p>Operating system of the application that generated the relevant Tracked Event.</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> target</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} target</p>         </td>
       </tr>
       <tr>
          <td><p>State</p>         </td>
@@ -136,7 +136,7 @@
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -255,7 +255,7 @@ Receiver/Server transfer states
          <td><p>0</p>         </td>
          <td><p>1</p>         </td>
          <td><p>1</p>         </td>
-         <td><p><span class="span_1">Post processing aborted by the application (KEEP command)</span></p>         </td>
+         <td>         </td>
       </tr>
       <tr>
          <td><p>ACK_EXPECTED</p>         </td>
@@ -344,7 +344,7 @@ Sender/Server transfer states
          <td><p>0</p>         </td>
          <td><p>0</p>         </td>
          <td><p>1</p>         </td>
-         <td><p><span class="span_1">File data transmission locally suspended (HALT command)</span></p>         </td>
+         <td>         </td>
       </tr>
       <tr>
          <td><p>INTERRUPTED</p>         </td>
@@ -618,7 +618,7 @@ Sender/Requester transfer states
          <td><p>0</p>         </td>
          <td><p>1</p>         </td>
          <td><p>1</p>         </td>
-         <td><p><span class="span_1">Post-processing aborted by the application (KEEP command)</span></p>         </td>
+         <td>         </td>
       </tr>
       <tr>
          <td><p>ACK_EXPECTED</p>         </td>

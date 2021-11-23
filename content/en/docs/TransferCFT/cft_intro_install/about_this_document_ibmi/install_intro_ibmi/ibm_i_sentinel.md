@@ -2,7 +2,7 @@
     "title": "Manually enable Sentinel ",
     "linkTitle": "Manually enable Sentinel",
     "weight": "240"
-}When using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, the visibility features are managed by <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. Do not modify these parameters when running with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+}When using {{< TransferCFT/centralgovernancename  >}}, the visibility features are managed by {{< TransferCFT/centralgovernancename  >}}. Do not modify these parameters when running with {{< TransferCFT/centralgovernancename  >}}.
 
 ## Sentinel configuration parameters
 
@@ -171,7 +171,7 @@ The following table lists the Sentinel parameters in the unified configuration a
    </tbody>
 </table>
 
-For more information on event messages, refer to the <span class="italic_in_para">Axway Sentinel</span> documentation.
+For more information on event messages, refer to the documentation.
 
 ## About Transfer CFT heartbeat functionality
 
@@ -212,7 +212,7 @@ Each Transfer CFT environment number n (from 1 to 5) has its own corresponding H
    </tbody>
 </table>
 
-<span class="autonumber"></span>Example
+Example
 
 
     uconfset id=sentinel.heartbeat.enable,value=yes

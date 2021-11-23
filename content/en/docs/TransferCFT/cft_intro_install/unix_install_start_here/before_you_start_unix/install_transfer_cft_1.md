@@ -8,7 +8,7 @@
 
 Before executing the scripts in this section, run the change mode command:
 
-chmod +x Transfer\_CFT\_<span class="mc-variable axway_variables.Release_Number variable">3.9</span>\_Install\_&lt;OS>\_&lt;BN>.run
+chmod +x Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&lt;BN>.run
 
 ## Install
 
@@ -47,7 +47,7 @@ Use the following command to install Transfer CFT in silent mode.
       </tr>
       <tr>
          <td>License agreement         </td>
-         <td>Select the check-box "<span class="code">I accept...</span>" to continue with the installation.         </td>
+         <td>Select the check-box "<code>I accept...</code>" to continue with the installation.         </td>
       </tr>
       <tr>
          <td>Installation architecture         </td>
@@ -79,7 +79,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.
       <tr>
          <td>Configuration filename         </td>
          <td><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
-<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <span class="code">initialize </span>command post installation if you opt to create the runtime directory at a later date.)</p>         </td>
+<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)</p>         </td>
       </tr>
       <tr>
          <td>Generate Encryption Key         </td>
@@ -87,7 +87,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.
       </tr>
       <tr>
          <td><p>Ready to install</p>         </td>
-         <td><p>Click <span class="bold_in_para">Next</span>to complete the installation process, or <span class="bold_in_para">Back</span>to review or modify installation options.</p>         </td>
+         <td><p>Click <strong>Next</strong>to complete the installation process, or <strong>Back</strong>to review or modify installation options.</p>         </td>
       </tr>
    </tbody>
 </table>

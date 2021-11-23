@@ -6,8 +6,8 @@
 
 The following topics describe the end-user and administrator login options:
 
--   <a href="#End-user" class="MCXref xref">End-user login options</a>
--   <a href="#Administ" class="MCXref xref">Administrator login options</a>
+-   [End-user login options](#End-user)
+-   [Administrator login options](#Administ)
 
 <span id="End-user"></span>
 
@@ -43,17 +43,17 @@ Use the following procedure to disable or require end-user Single Sign-On (SSO).
 >
 > In order to configure SSO go to: Server Configuration Files edit page.
 
-For information on editing and updating the server configuration files, refer to <a href="../c_st_about_sso#SSO" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a>.
+For information on editing and updating the server configuration files, refer to [Single Sign-On (SSO) and Single Logout (SLO)](../c_st_about_sso#SSO).
 
 ### Pluggable authentication
 
 Shows the Pluggable authentication status and provides a link to the Server Configuration option related with the end-user's available deployed custom plug-ins list.
 
-For information, refer to <a href="../pluggable_authentication#Pluggable%20authentication" class="MCXref xref">Pluggable authentication</a>.
+For information, refer to [Pluggable authentication](../pluggable_authentication#Pluggable%20authentication).
 
 ### End-user password authentication
 
-This option allows you to specify whether the end users need to provide a password in addition to authenticating with a certificate. The *Client Certificate* option can be configured per server. For information, refer to <a href="../../operations_menu/extended_server_control#Pluggable%20authentication" class="MCXref xref">Server control</a>.
+This option allows you to specify whether the end users need to provide a password in addition to authenticating with a certificate. The *Client Certificate* option can be configured per server. For information, refer to [Server control](../../operations_menu/extended_server_control#Pluggable%20authentication).
 
 Use the following procedure to specify password authentication for end-users.
 
@@ -75,11 +75,11 @@ Use the following procedure to enable or disable LDAP.
     **Disabled** - The LDAP will not be used.  
     **Optional** - SecureTransport searches the SecureTransport database before it searches the LDAP databases in the default domains. If no such user is found in SecureTransport and LDAP databases, then the login will be rejected.  
     **Required** - An LDAP user will be required. If no such user exists, the login will be rejected.  
-    For details, see <a href="../c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
+    For details, see [LDAP logins](../c_st_ldap_logins#LDAP).
 3.  Click **Save**.
 4.  Restart the TM Server.
 
-You must create one or more domains before {{< SecureTransport/componentshortname  >}} can use LDAP to authenticate users. For information on creating LDAP domains, refer to <a href="../t_st_ldapsettings/t_st_create_domain" class="MCXref xref">Create an LDAP domain</a>.
+You must create one or more domains before {{< SecureTransport/componentshortname  >}} can use LDAP to authenticate users. For information on creating LDAP domains, refer to [Create an LDAP domain](../t_st_ldapsettings/t_st_create_domain).
 
 ### Enable or disable SiteMinder
 
@@ -92,7 +92,7 @@ Use the following procedure to enable or disable SiteMinder.
     **Optional** - The SiteMinder configuration may be used.
 3.  Click **Save**.
 
-You must configure SiteMinder before you can use SiteMinder to authenticate users. For information on configuring SiteMinder, refer to <a href="../t_st_siteminderintegrationconfiguration" class="MCXref xref">SiteMinder integration configuration</a>.
+You must configure SiteMinder before you can use SiteMinder to authenticate users. For information on configuring SiteMinder, refer to [SiteMinder integration configuration](../t_st_siteminderintegrationconfiguration).
 
 <span id="Administ"></span>
 
@@ -115,13 +115,13 @@ Use the following procedure to enable or disable administrator Single Sign-On (S
 >
 > For more information of how to configure SSO for Administrators, refer to Single Sign-On (SSO) and Single Logout (SLO).
 
-For information on editing and updating the server configuration files, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>.
+For information on editing and updating the server configuration files, refer to [Update configuration files](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationfiles).
 
 ### Pluggable authentication
 
 Shows the Pluggable authentication status and provides link to the Server Configuration option related with the end-user's available deployed custom plug-ins list.
 
-For information, refer to <a href="../pluggable_authentication#Pluggable%20authentication" class="MCXref xref">Pluggable authentication</a>.
+For information, refer to [Pluggable authentication](../pluggable_authentication#Pluggable%20authentication).
 
 ### Configure administrator certificate requirement and level
 
@@ -137,8 +137,8 @@ If you are unable to successfully log in when using a certificate, clear the bro
     The *Client Certificate Settings* pane and the remaining fields are displayed.
 4.  Select either **Optional** or **Required** in the **Client certificates** drop-down menu. If you select **Optional**, administrators do not need a certificate. If you select **Required**, each administrator must have a client certificate set up. If certificates are required, all administrators must be mapped to a certificate, and all users must present a valid trusted certificate to gain access to the login page.
 5.  Select one of the following choices from the **Accept certificates issued by** drop-down menu:
-    -   **internal issuer only** – The certificate must be issued by the internal CA. See <a href="../../c_st_setup/c_st_certificates/t_st_internalca#top" class="MCXref xref">Manage the internal CA</a>.
-    -   **any trusted issuer** – The certificate must be issued by a CA that is trusted by one of the CAs listed as a trusted CA. See <a href="../../c_st_setup/c_st_certificates/t_st_trustedcas#top" class="MCXref xref">Manage trusted CAs</a>.
+    -   **internal issuer only** – The certificate must be issued by the internal CA. See [Manage the internal CA](../../c_st_setup/c_st_certificates/t_st_internalca#top).
+    -   **any trusted issuer** – The certificate must be issued by a CA that is trusted by one of the CAs listed as a trusted CA. See [Manage trusted CAs](../../c_st_setup/c_st_certificates/t_st_trustedcas#top).
     -   **issuer file or path** – The certificate must be issued by a CA whose certificate is in a file you specify.
 6.  If you select **issuer file or path:**, the following fields are displayed:
     -   A field that you use to specify the location of the certificate PEM-encoded (`.pem`) file or a directory that contains the PEM-encoded files.
@@ -147,7 +147,7 @@ If you are unable to successfully log in when using a certificate, clear the bro
 7.  Click **Save**.
 8.  Restart the Administration Tool server using the `stop_admin` and `start_admin` commands. If you are running on Windows, you can also use the **Services** console to restart the `admin` service.
 
-If you choose to use certificates for administrator logins, a **Certificate DN** field displays in the *New Administrator* and *Edit Administrator* pages where you must provide the certificate domain name information. For more information, see <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account#Advanced_Accounts_2036285406_1151399" class="MCXref xref">Add an administrator account</a>.
+If you choose to use certificates for administrator logins, a **Certificate DN** field displays in the *New Administrator* and *Edit Administrator* pages where you must provide the certificate domain name information. For more information, see [Add an administrator account](../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account#Advanced_Accounts_2036285406_1151399).
 
 > **Note:**
 >

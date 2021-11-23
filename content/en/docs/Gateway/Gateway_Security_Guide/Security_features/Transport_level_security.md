@@ -12,8 +12,8 @@ SSL (Secure Socket Layer) / TLS (Transport Layer Security) on incoming and outgo
 
 Most protocols supported in Gateway can be secured using SSL/TLS, but connections are not secured by default. Protocols that can be secured are:
 
--   HTTP <span style="font-family: Wingdings;">à</span> HTTPS
--   FTP <span style="font-family: Wingdings;">à</span> FTPS (implicit or explicit)
+-   HTTP HTTPS
+-   FTP FTPS (implicit or explicit)
 -   EDIINT protocols: AS1, AS2, AS3
 -   RosettaNet
 -   OFTP
@@ -27,7 +27,7 @@ To add SSL/TLS for incoming connections, a server SSL/TLS profile object must be
 -   The client authentication type
 -   The version of TLS to use
 -   The accepted cipher suites – Gateway currently supports only RSA and ECDSA based cipher suites, but the list can be extended in combination with Secure Relay and security termination  
-    **Note:** several cipher suites are marked as “weak”, and cannot be used unless the configuration parameter <span class="code">\[tls\]enable\_weak\_ciphers</span> is set to <span class="code">yes</span>. These cipher suites could be removed in a future version. We recommend against using weak cipher suites.  
+    **Note:** several cipher suites are marked as “weak”, and cannot be used unless the configuration parameter `[tls]enable_weak_ciphers` is set to `yes`. These cipher suites could be removed in a future version. We recommend against using weak cipher suites.  
     For more information regarding the accepted cipher suites, refer to [TLS cipher suites](../../managing_security_start_here/security_start_here/ssl_and_tls_protocols_about/tls_cipher_suites)
 -   Accepted authorities
 -   Certificate for server side authentication (local PKI or PassportPS)
@@ -56,6 +56,6 @@ Security features:
 
 For detailed information please refer to <a href="../" class="MCXref xref">Security features</a>
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

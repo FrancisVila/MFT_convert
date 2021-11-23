@@ -32,10 +32,10 @@ Server         </td>
 
 **Related topics:**
 
--   <a href="../r_st_protocol_rules" class="MCXref xref">Protocol rules</a>
--   <a href="../r_st_authentication_rules" class="MCXref xref">Authentication rules</a>
--   <a href="../r_st_tm_server_communication_rules" class="MCXref xref">TM server communication rules</a>
--   <a href="../r_st_server_transfer_rules" class="MCXref xref">Server transfer rules</a>
--   <a href="../r_st_standard_clustering_rules" class="MCXref xref">Standard Cluster rules</a>
--   <a href="../r_st_large_enterprise_clustering_rules" class="MCXref xref">Enterprise Cluster rules</a>
--   <a href="../r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a>
+-   [Protocol rules](../r_st_protocol_rules)
+-   [Authentication rules](../r_st_authentication_rules)
+-   [TM server communication rules](../r_st_tm_server_communication_rules)
+-   [Server transfer rules](../r_st_server_transfer_rules)
+-   [Standard Cluster rules](../r_st_standard_clustering_rules)
+-   [Enterprise Cluster rules](../r_st_large_enterprise_clustering_rules)
+-   [Protocol rules - outbound from SecureTransport Edge](../r_st_protocol_rules_outbound)

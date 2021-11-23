@@ -39,7 +39,7 @@ The characters following the initial " == " either set certain information for t
     -   A direct TACL procedure execution
     -   This execution type performed by default
     -   This parameter is kept to ensure compatibility with existing batch procedures
--   <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT<span style="color: #b22222;"> == </span>
+-   <span id="CFT^BT^FORCE^ZBAT"></span>== CFT^BT^FORCE^ZBAT
     -   Use NetBatch Interface
     -   To specify a given environment, you can declare it in the first line of the actual procedure. Add the following optional values in the first line of the skeleton procedure, in the order listed. If no values are declared, the [UCONF](#UCONF) default values are used.
         -   NetBatch process
@@ -57,10 +57,10 @@ The characters following the initial " == " either set certain information for t
 
 ### Processing
 
-Regardless of if the procedure is OSS or native, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> creates a temporary file with the following locations and naming conventions:
+1.  Regardless of if the procedure is OSS or native, {{< TransferCFT/componentlongname >}} creates a temporary file with the following locations and naming conventions:
 
--   OSS: The same as on <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> Unix: /tmp/CFTxxxx  
--   Native: On the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> default [subvolume](#subvolumeUD): CTMPnnnn
+-   OSS: The same as on {{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
+-   Native: On the {{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
 
 2> filenames $DATA14.CFT32BUD.\*
 
@@ -68,9 +68,9 @@ Regardless of if the procedure is OSS or native, <span class="mc-variable axway_
 
 CTMP0001 CTMP0002 CTMP0003 CTMP0004
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
+{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
 
-Depending on the type of procedure, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>:
+Depending on the type of procedure, {{< TransferCFT/componentlongname  >}}:
 
 -   Starts the script (OSS)
 -   Starts the TACL direct processing
@@ -106,7 +106,7 @@ The following unified configuration parameters are specific to HP Nonstop.
          <td><p><span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk</p>         </td>
          <td>         </td>
          <td><p>The default working directory for the TACL and NETBATCH scripts.</p>
-<p>The parameter is set with the default value of “<span class="code">&lt;</span><span class="code" data-xmlns="http://www.w3.org/TR/REC-html40">subvolume</span><span class="code">&gt;UD</span>”
+<p>The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>”
 (see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian
 files installation.</p>         </td>
       </tr>

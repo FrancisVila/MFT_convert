@@ -16,5 +16,5 @@ When a web client logs on through the SiteMinder SSO portal, the portal authenti
 
 **Related topics:**
 
--   <a href="../c_st_command_line_client_user_authentication" class="MCXref xref">Command line client (FTP, FTPS, HTTPS, and SSH) user authentication</a>
--   <a href="../c_st_user_access_control" class="MCXref xref">User access control (authorization)</a>
+-   [Command line client (FTP, FTPS, HTTPS, and SSH) user authentication](../c_st_command_line_client_user_authentication)
+-   [User access control (authorization)](../c_st_user_access_control)

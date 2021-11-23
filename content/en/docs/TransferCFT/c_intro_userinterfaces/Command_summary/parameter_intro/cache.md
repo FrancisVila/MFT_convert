@@ -24,7 +24,7 @@ initial value.
 
 #### CFTSSL
 
-**\[CACHE =  <span style="text-decoration: underline;">NO</span>
+**\[CACHE =  
 | YES \]   **
 
 Activate the SSL cache.

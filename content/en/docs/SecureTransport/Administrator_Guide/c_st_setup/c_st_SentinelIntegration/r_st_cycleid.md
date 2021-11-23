@@ -176,12 +176,12 @@ With transfers occurring across Axway's MFT solutions {{< SecureTransport/secure
 
 **Related topics:**
 
--   <a href="../r_st_sentineleventstates" class="MCXref xref">Event states</a>
--   <a href="../r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>
--   <a href="../c_st_aboutxfb_to" class="MCXref xref">About XFB Transfer tracked objects</a>
--   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
--   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
--   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
--   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
--   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
--   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>
+-   [Event states](../r_st_sentineleventstates)
+-   [Axway Sentinel tracked objects](../r_st_sentineltrackedobjects)
+-   [About XFB Transfer tracked objects](../c_st_aboutxfb_to)
+-   [PeSIT protocol](../r_st_pesit_protocol)
+-   [List of PeSIT states](../r_st_listofpesitstates)
+-   [XFB Tracked Object attributes](../r_st_xfb_toattributes)
+-   [Axway Sentinel dashboards]()
+-   [Axway Sentinel requests](../r_st_sentinelrequests)
+-   [Configure SecureTransport to send events to Axway Sentinel](../t_st_sentinel)

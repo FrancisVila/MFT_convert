@@ -23,9 +23,9 @@ If you wish to install Gateway in *cluster* mode, refer to the relevant section:
    </thead>
    <tbody>
       <tr>
-         <td><span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>:<br />
+         <td>{{< Gateway/componentlongname  >}}:<br />
 Modules         </td>
-         <td><p>Make sure the <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> items you want to install are selected:</p>
+         <td><p>Make sure the {{< Gateway/componentlongname  >}} items you want to install are selected:</p>
 <ul>
 <li><strong>Extract Package and update environment</strong></li>
 <li><strong>Access Manager</strong></li>
@@ -48,7 +48,7 @@ Modules         </td>
          <td>Common         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>:<br />
+         <td><p>{{< Gateway/componentlongname  >}}:<br />
 Installation directory</p>         </td>
          <td><p>Specify the directory where you want to install Gateway.</p>
 <p>By default, Gateway is installed in a sub-directory of
@@ -73,11 +73,11 @@ Optional:
          <td>Common         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>:<br />
+         <td><p>{{< Gateway/componentlongname  >}}:<br />
 Configuration</p>         </td>
          <td><p>Enter the following information:</p>
 <ul>
-<li><span style="font-weight: bold;">Local site name</span>: The name that you want
+<li><strong>Local site name</strong>: The name that you want
 to use to refer to your Gateway.</li>
 <li><span style="font-weight: bold;">Key label</span>: Your key label (if you have
 one).</li>

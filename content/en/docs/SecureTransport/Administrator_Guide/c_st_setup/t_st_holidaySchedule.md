@@ -13,7 +13,7 @@ Keep the following items in mind when listing holiday dates:
 -   The Holiday Schedule functionality does not allow for executing a scheduled task on the next working day if the specified date happens to be a holiday – when this occurs, the tasks are not executed.
 -   Weekend days are treated as holidays by default.
 
-For information about creating scheduled transfers, see <a href="../../accounts/c_st_subscriptions/t_st_subscriptions#Schedule" class="MCXref xref">Scheduled downloads and tasks</a> and <a href="../../accounts/c_st_subscriptions/t_st_subscriptions#Set" class="MCXref xref">Set up a scheduled transfer task for a subscription</a>.
+For information about creating scheduled transfers, see [Scheduled downloads and tasks](../../accounts/c_st_subscriptions/t_st_subscriptions#Schedule) and [Set up a scheduled transfer task for a subscription](../../accounts/c_st_subscriptions/t_st_subscriptions#Set).
 
 1.  Click **Setup > Holiday Schedule**.  
     The *Holiday Schedule* page is displayed.

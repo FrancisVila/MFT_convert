@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -94,7 +94,7 @@ CR=&amp;cr CS=&amp;scs</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Problem with sending an internal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message to
+         <td><p>Problem with sending an internal {{< TransferCFT/componentshortname  >}} message to
 a CFTTSSL task.</p>         </td>
       </tr>
    </tbody>
@@ -136,7 +136,7 @@ resource initialization was detected. The message contains the explanation of th
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td>If the error occurs during the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization
+         <td>If the error occurs during the {{< TransferCFT/componentshortname  >}} initialization
 phase, this phase is stopped.
 Otherwise, if the error is related to a file transfer,
 this transfer will not proceed.         </td>

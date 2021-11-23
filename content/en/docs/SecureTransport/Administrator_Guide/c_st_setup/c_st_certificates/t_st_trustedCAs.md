@@ -6,10 +6,10 @@
 
 The following topics provide how-to instructions for managing trusted CAs:
 
--   <a href="#View_trusted" class="MCXref xref">View a trusted CA certificate</a>
--   <a href="#Export_trusted" class="MCXref xref">Export a trusted CA certificate</a>
--   <a href="#Import" class="MCXref xref">Import a trusted CA certificate</a>
--   <a href="#Delete" class="MCXref xref">Delete a trusted CA certificate</a>
+-   [View a trusted CA certificate](#View_trusted)
+-   [Export a trusted CA certificate](#Export_trusted)
+-   [Import a trusted CA certificate](#Import)
+-   [Delete a trusted CA certificate](#Delete)
 
 <span id="View_trusted"></span>
 
@@ -76,11 +76,11 @@ Use the following procedure to delete a trusted CA certificate.
 
 **Related topics:**
 
--   <a href="../r_st_certificate_types" class="MCXref xref">Certificate types</a>
--   <a href="../c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
--   <a href="../t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>
--   <a href="../t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>
--   <a href="../t_st_internalca" class="MCXref xref">Manage the internal CA</a>
--   <a href="../t_st_certificatekeystorepasswordca" class="MCXref xref">Change the certificate keystore password</a>
--   <a href="../r_st_certificatestogenerate" class="MCXref xref">Certificates to generate during initial setup</a>
--   <a href="../t_st_storecertificatesinhsm" class="MCXref xref">Store certificates in a hardware security module</a>
+-   [Certificate types](../r_st_certificate_types)
+-   [Certificate Management page](../c_st_certificate_management_page)
+-   [Repository encryption certificate](../t_st_repository_encryption_certificate)
+-   [Manage local certificates and certificate signing requests](../t_st_localcertificatesandcsrs)
+-   [Manage the internal CA](../t_st_internalca)
+-   [Change the certificate keystore password](../t_st_certificatekeystorepasswordca)
+-   [Certificates to generate during initial setup](../r_st_certificatestogenerate)
+-   [Store certificates in a hardware security module](../t_st_storecertificatesinhsm)

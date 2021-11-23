@@ -11,5 +11,5 @@ You can configure the event processor to distribute events based on their attrib
 
 **Related topics:**
 
--   <a href="../c_st_large_enterprise_cluster_deployment" class="MCXref xref">Enterprise Cluster deployment</a>
--   <a href="../c_st_passive_disaster_recovery" class="MCXref xref">Passive disaster recovery</a>
+-   [Enterprise Cluster deployment](../c_st_large_enterprise_cluster_deployment)
+-   [Passive disaster recovery](../c_st_passive_disaster_recovery)

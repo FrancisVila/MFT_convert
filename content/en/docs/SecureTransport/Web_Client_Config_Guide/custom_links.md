@@ -63,10 +63,10 @@ To enable translations via i18n module, follow the steps:
     **Bad**: "my link", "1stlink", "my-link", "my,link"  
     Sample configuration:  
 
-4.  Setup override for the default translation. Follow the steps as described in <a href="../add_mod_lang" class="MCXref xref">Add and modify languages</a>.  
+4.  Setup override for the default translation. Follow the steps as described in [Add and modify languages](../add_mod_lang).  
     In `custom/locales/en/override.json`, add the previously defined custom links section:
 
-5.  Add a translation for another language - see <a href="../add_mod_lang" class="MCXref xref">Add and modify languages</a>. Use the same section name and keys.  
+5.  Add a translation for another language - see [Add and modify languages](../add_mod_lang). Use the same section name and keys.  
     Modify `custom/locales/<your_locale>/translation.json`:  
 
 The final configuration should look like this:

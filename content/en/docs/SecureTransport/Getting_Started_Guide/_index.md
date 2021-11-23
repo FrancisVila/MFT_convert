@@ -8,31 +8,31 @@
 
 ## For new users
 
-<a href="overview#Introduction_3964627930_1048124" class="MCXref xref">Getting started with SecureTransport</a>
+[Getting started with SecureTransport](overview#Introduction_3964627930_1048124)
 
 ## For existing users
 
-<a href="starting_setup#SetupMenu_1217491348_1125598" class="MCXref xref">Initial configuration</a>
+[Initial configuration](starting_setup#SetupMenu_1217491348_1125598)
 
-<a href="install_licenses" class="MCXref xref">Install licenses</a>
+[Install licenses](install_licenses)
 
-<a href="keystore_password" class="MCXref xref">Change the keystore password</a>
+[Change the keystore password](keystore_password)
 
-<a href="generate_or_import_ca" class="MCXref xref">Generate or import a certificate authority</a>
+[Generate or import a certificate authority](generate_or_import_ca)
 
-<a href="generate_certificates" class="MCXref xref">Generate certificates</a>
+[Generate certificates](generate_certificates)
 
-<a href="database_settings" class="MCXref xref">Database settings</a>
+[Database settings](database_settings)
 
-<a href="set_up_servers" class="MCXref xref">Set up servers</a>
+[Set up servers](set_up_servers)
 
-<a href="exchange_ca_certificates" class="MCXref xref">Exchange CA certificates</a>
+[Exchange CA certificates](exchange_ca_certificates)
 
-<a href="clean_up_the_setup_account" class="MCXref xref">Clean up the setup account</a>
+[Clean up the setup account](clean_up_the_setup_account)
 
-<a href="c_st_setup_test" class="MCXref xref">Setup test</a>
+[Setup test](c_st_setup_test)
 
-<a href="additional_configuration_tasks" class="MCXref xref">Additional configuration tasks</a>
+[Additional configuration tasks](additional_configuration_tasks)
 
 ## Get more help
 

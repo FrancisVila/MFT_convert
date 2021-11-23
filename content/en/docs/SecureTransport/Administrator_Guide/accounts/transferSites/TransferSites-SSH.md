@@ -10,15 +10,15 @@ By default, a server-initiated transfer using SSH and a pattern with a wildcard 
 
 **Topic contents**
 
--   <a href="#Site" class="MCXref xref">Site settings for SSH Transfer sites</a>
-    -   <a href="#Test" class="MCXref xref">Test SSH Connection</a>
-    -   <a href="#List" class="MCXref xref">List the contents of remote folders</a>
--   <a href="#Transfer" class="MCXref xref">Transfer settings for SSH Transfer sites</a>
--   <a href="#Site2" class="MCXref xref">Site login credentials for SSH Transfer sites</a>
--   <a href="#Network" class="MCXref xref">Network settings for SSH Transfer sites</a>
--   <a href="#Post" class="MCXref xref">Post transmission Send options for SSH Transfer sites</a>
--   <a href="#Post2" class="MCXref xref">Post transmission Receive options for SSH Transfer sites</a>
--   <a href="#Advanced" class="MCXref xref">Advanced SSH Settings for SSH Transfer sites</a>
+-   [Site settings for SSH Transfer sites](#Site)
+    -   [Test SSH Connection](#Test)
+    -   [List the contents of remote folders](#List)
+-   [Transfer settings for SSH Transfer sites](#Transfer)
+-   [Site login credentials for SSH Transfer sites](#Site2)
+-   [Network settings for SSH Transfer sites](#Network)
+-   [Post transmission Send options for SSH Transfer sites](#Post)
+-   [Post transmission Receive options for SSH Transfer sites](#Post2)
+-   [Advanced SSH Settings for SSH Transfer sites](#Advanced)
 
 <span id="Site"></span>
 
@@ -39,11 +39,11 @@ The following table describes the site settings options for a SSH protocol tran
       </tr>
       <tr>
          <td>Server         </td>
-         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Port         </td>
-         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Alternative addresses         </td>
@@ -72,7 +72,7 @@ The following table describes the site settings options for a SSH protocol tran
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
       <tr>
          <td>Download Folder         </td>
@@ -84,7 +84,7 @@ The following table describes the site settings options for a SSH protocol tran
       </tr>
       <tr>
          <td>Download Pattern Type         </td>
-         <td>Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
+         <td>Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
       </tr>
       <tr>
          <td>Download Pattern         </td>
@@ -100,7 +100,7 @@ The following table describes the site settings options for a SSH protocol tran
       </tr>
       <tr>
          <td>Allow Overwrite         </td>
-         <td>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing" class="MCXref xref">Advanced Routing</a>.         </td>
+         <td>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing">Advanced Routing</a>.         </td>
       </tr>
       <tr>
          <td>Upload Folder         </td>
@@ -195,7 +195,7 @@ The following table describes the transfer settings options for a SSH protocol 
       </tr>
       <tr>
          <td>Transfer Mode         </td>
-         <td>Specify whether data is transferred as ASCII or binary. You can also choose to have {{< SecureTransport/componentshortname  >}} automatically determine the correct transfer mode. For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers#top" class="MCXref xref">Client-initiated and server-initiated transfers</a>.         </td>
+         <td>Specify whether data is transferred as ASCII or binary. You can also choose to have {{< SecureTransport/componentshortname  >}} automatically determine the correct transfer mode. For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers#top">Client-initiated and server-initiated transfers</a>.         </td>
       </tr>
       <tr>
          <td>Verify Fingerprint for this Site         </td>
@@ -226,7 +226,7 @@ The following table describes the transfer settings options for a SSH protocol 
 <li>FIPS key exchange algorithms – allowed KEX algorithms for server-initiated transfers through this site in FIPS mode. By default, this set is populated with the KEX algorithms as defined in the <code>Ssh.FIPS.SIT.KeyExchangeAlgorithms</code> configuration option.</li>
 <li>FIPS public keys – allowed public keys for server-initiated transfers through this site in FIPS mode. By default, this set is populated with the public keys as defined in the <code>Ssh.FIPS.SIT.PublicKeys</code> configuration option.</li>
 </ul>
-<p>All fields are editable. The supported FIPS ciphers and algorithms from which you can select when adding new ones are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use FIPS-approved ciphers and algorithms supported by {{< SecureTransport/componentshortname  >}}. Otherwise, the transfer will fail.</p>         </td>
+<p>All fields are editable. The supported FIPS ciphers and algorithms from which you can select when adding new ones are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use FIPS-approved ciphers and algorithms supported by {{< SecureTransport/componentshortname  >}}. Otherwise, the transfer will fail.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -250,7 +250,7 @@ The following table describes the site login credentials options for a SSH prot
       </tr>
       <tr>
          <td>User Name         </td>
-         <td>Username used to log in to the SSH server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>Username used to log in to the SSH server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Use Password         </td>
@@ -379,7 +379,7 @@ The following table describes the post transmission receive settings options for
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. see <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. see <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
       <tr>
          <td>On Failure         </td>
@@ -444,13 +444,13 @@ The following table describes the Advanced SSH Settings for a SSH protocol tran
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

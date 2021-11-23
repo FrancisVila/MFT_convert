@@ -8,6 +8,6 @@ You use the *Support Tool Configuration* page to specify the information that th
 
 The following topics describe how to configure, customize, and run the support tool:
 
--   <a href="t_st_configuresupporttool" class="MCXref xref">Configure the support tool</a> - Provides the how-to instructions for configuring the support tool.
--   <a href="t_st_customizesupporttool" class="MCXref xref">Add custom information to the support information file</a> - Describes how to add custom information to the support information file.
--   <a href="t_st_runsupporttool" class="MCXref xref">Run the support tool</a> - Provides the how-to instructions for running the support tool.
+-   [Configure the support tool](t_st_configuresupporttool) - Provides the how-to instructions for configuring the support tool.
+-   [Add custom information to the support information file](t_st_customizesupporttool) - Describes how to add custom information to the support information file.
+-   [Run the support tool](t_st_runsupporttool) - Provides the how-to instructions for running the support tool.

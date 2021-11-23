@@ -10,8 +10,8 @@ Use the *Server Configuration* page to view configuration parameters that are st
 
 The following topics provide additional server configuration information:
 
--   <a href="c_st_editable_server_configuration_parameters" class="MCXref xref">Editable server configuration parameters</a> - Provides how-to instructions on setting editable server configuration parameters.
--   <a href="c_st_local_server_configuration_parameters" class="MCXref xref">Local server configuration parameters</a> - Describes the local server configuration parameters.
--   <a href="t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a> - Provides how-to instructions for viewing and changing server configuration parameters.
--   <a href="t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a> - Provides how-to instructions on updating server configuration files.
--   <a href="t_st_serverconfigurationexportimport" class="MCXref xref">Export and import server configuration</a> - Provides how-to instructions on exporting and importing server configurations.
+-   [Editable server configuration parameters](c_st_editable_server_configuration_parameters) - Provides how-to instructions on setting editable server configuration parameters.
+-   [Local server configuration parameters](c_st_local_server_configuration_parameters) - Describes the local server configuration parameters.
+-   [View and change server configuration parameters](t_st_serverconfigurationparameters) - Provides how-to instructions for viewing and changing server configuration parameters.
+-   [Update configuration files](t_st_serverconfigurationfiles) - Provides how-to instructions on updating server configuration files.
+-   [Export and import server configuration](t_st_serverconfigurationexportimport) - Provides how-to instructions on exporting and importing server configurations.

@@ -8,18 +8,18 @@
 -   When USERCTRL is set to YES, in addition to any user that will start Transfer CFT, you must define read/write rights for files to be **transferred** for any users who will perform transfers.
 -   When createprocessasuser is set to YES, your must define read/write rights for the **configuration** files (e.g. communication file, partner file, and so on).
 
-## <span class="mc-variable suite_variables.UNIX variable">UNIX</span> tasks
+## {{< TransferCFT/unix  >}} tasks
 
-Use the <span class="code">chmod </span>command to define read and write rights.
+Use the `chmod `command to define read and write rights.
 
 ## Windows tasks
 
-You must give each additional <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> user read and write rights as follows:
+You must give each additional {{< TransferCFT/componentlongname  >}} user read and write rights as follows:
 
-1.  Right-click the <span class="bold_in_para"><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></span> program folder.
-2.  Select <span class="bold_in_para">Properties</span>.
-3.  In the <span class="italic_in_para">Properties </span>window, select the <span class="bold_in_para">Security </span>tab.
-4.  In the <span class="italic_in_para" style="font-weight: bold;">Security </span>tab, select the user and grant the user read and write rights. Click **OK**.
+1.  Right-click the **<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>** program folder.
+2.  Select **Properties**.
+3.  In the window, select the **Security** tab.
+4.  In the tab, select the user and grant the user read and write rights. Click **OK**.
 
 ## z/OS tasks
 

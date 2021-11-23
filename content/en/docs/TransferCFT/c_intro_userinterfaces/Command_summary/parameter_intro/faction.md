@@ -10,12 +10,12 @@
 
 #### CFTSEND, SEND
 
-**\[FACTION = {<span style="text-decoration: underline;">NONE</span>
+**\[FACTION = {
 | DELETE | ERASE | ARCHIVE }\]**
 
 Action on the file after a send transfer:
 
--   <span style="font-weight: bold;">NONE</span>: No action on this file on completion
+-   **NONE**: No action on this file on completion
     of the transfer.
 -   <span style="font-weight: bold;">DELETE</span>: Delete the file after transfer. Note the following specificities:
     -   No delete occurs if you are using SELFNAME and the FNAME is set to a directory mask (for example, #dir is deleted, but #dir/\* is ignored).

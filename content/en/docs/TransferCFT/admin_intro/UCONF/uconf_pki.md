@@ -2,12 +2,12 @@
     "title": "UCONF: PKI and PassPort PS options",
     "linkTitle": "PKI and PassPort PS",
     "weight": "300"
-}This topic presents the parameters to set to define <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to PassPort PS server connectivity.  You can define this connectivity in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using
+}This topic presents the parameters to set to define {{< TransferCFT/componentshortname  >}} to PassPort PS server connectivity.  You can define this connectivity in {{< TransferCFT/componentshortname  >}} using
 a command line window.
 
 PassPort PS parameters
 
-To enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to PassPort PS server connectivity, use the UCONFSET
+To enable {{< TransferCFT/componentshortname  >}} to PassPort PS server connectivity, use the UCONFSET
 command to set the following parameters:
 
 
@@ -19,4 +19,4 @@ command to set the following parameters:
     CFTUTL 
      UCONFSET ID= pki.passport.port, value=”xxxx”
 
-Refer to the [UCONF parameters](../uconf_directory) table for information on the <span class="code">pki.passport </span>type parameters.
+Refer to the [UCONF parameters](../uconf_directory) table for information on the `pki.passport `type parameters.

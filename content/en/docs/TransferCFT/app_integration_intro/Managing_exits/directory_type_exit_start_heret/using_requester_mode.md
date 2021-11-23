@@ -4,7 +4,7 @@
     "weight": "390"
 }The communication structure is defined by the interface before
 the user function is called. You must provide, complete, or modify the
-parameters that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> needs to establish network and protocol connections.
+parameters that {{< TransferCFT/componentshortname  >}} needs to establish network and protocol connections.
 
 The initialization function and the user function, if needed, are called
 when connection requests are made, even for network and protocol connection
@@ -179,7 +179,7 @@ given network partner (2) </p>         </td>
 
  
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not know the partner, the following fields are
+When {{< TransferCFT/componentshortname  >}} does not know the partner, the following fields are
 empty:
 
 -   ipart: intermediate
@@ -189,7 +189,7 @@ empty:
 -   addr: remote partner
     address
 
-The <span style="font-weight: bold;">ret1</span> return code field must
+The **ret1** return code field must
 be defined when the user function is returned from.
 
 If there is a connection refusal (return code value of 2), the ret2

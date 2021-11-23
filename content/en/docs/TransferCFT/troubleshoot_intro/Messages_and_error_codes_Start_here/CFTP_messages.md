@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -29,7 +29,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>The &amp;id identifier of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file
+         <td><p>The &amp;id identifier of the {{< TransferCFT/componentshortname  >}} parameter file
 (see the CFTPARM parameter) is not defined.</p>         </td>
       </tr>
       <tr>
@@ -41,7 +41,7 @@ CFT initialization phase is stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check the
 CFTPARM parameter settings (see the CFTPARM parameter), correct and restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -61,7 +61,7 @@ found</p>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>When initializing
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the CFTTRACE &amp;id identifier was not found in the Transfer
+{{< TransferCFT/componentshortname  >}}, the CFTTRACE &amp;id identifier was not found in the Transfer
 CFT parameter file.</p>         </td>
       </tr>
       <tr>
@@ -73,7 +73,7 @@ CFT initialization phase is stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check the
 CFTSYST parameter settings (see the CFTPARM parameter), correct and restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -93,7 +93,7 @@ CFTSYST parameter settings (see the CFTPARM parameter), correct and restart
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTLOG &amp;id identifier was not found in the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+{{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -104,7 +104,7 @@ CFT initialization phase is stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check the
 CFTLOG parameter settings (see the CFTPARM parameter), correct and restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -124,7 +124,7 @@ CFTLOG parameter settings (see the CFTPARM parameter), correct and restart
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTNET &amp;id identifier was not found in the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+{{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -135,7 +135,7 @@ CFT initialization phase is stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check the
 CFTNET parameter settings (see the CFTPARM parameter), correct and restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -155,7 +155,7 @@ CFTNET parameter settings (see the CFTPARM parameter), correct and restart
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTPROT &amp;id identifier was not found in the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+{{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -186,7 +186,7 @@ CFT.</p>         </td>
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTCAT &amp;id identifier was not found in the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+{{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -196,7 +196,7 @@ CFT initialization phase is stopped.</p>         </td>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Check the
-CFTCAT parameter settings (see CFTCAT), correct and restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+CFTCAT parameter settings (see CFTCAT), correct and restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -216,7 +216,7 @@ CFTCAT parameter settings (see CFTCAT), correct and restart <span class="mc-vari
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTCOM &amp;id identifier was not found in the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+{{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -226,7 +226,7 @@ CFT initialization phase is stopped.</p>         </td>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Check the CFTCOM parameter settings (see CFTCOM), correct and
-restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -246,7 +246,7 @@ restart <span class="mc-variable axway_variables.Component_Short_Name variable">
          <td><p>Explanation</p>         </td>
          <td><p>During Transfer
 CFT initialization the CFTNET &amp;id identifier for a given CFTPROT &amp;id
-protocol was not found in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+protocol was not found in the {{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -266,7 +266,7 @@ of authorized protocols and network identifiers (NET=(.,.), PROT=(.,.)
 ) that the number of items in this list does not exceed the maximum authorized
 quota</li>
 </ul>
-<p>Correct and restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+<p>Correct and restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -292,14 +292,14 @@ used for send transfers (CFTSEND parameter) is unknown.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The Transfer
-CFT initialization phase cannot continue correctly and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
+CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is
 aborted.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Check the
 CFTPARM (DEFAULT=.) and CFTSEND parameter settings, correct and restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -325,7 +325,7 @@ used for receive transfers (CFTRECV parameter) is unknown.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The Transfer
-CFT initialization phase cannot continue correctly and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
+CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is
 aborted.</p>         </td>
       </tr>
       <tr>
@@ -386,13 +386,13 @@ parameter in the CFTPARM command, was not found.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The Transfer
-CFT initialization phase cannot continue correctly and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
+CFT initialization phase cannot continue correctly and {{< TransferCFT/componentshortname  >}} is
 aborted.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Check the
-CFTACCNT parameter settings, correct and restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+CFTACCNT parameter settings, correct and restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -423,9 +423,9 @@ memory (insufficient space).</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Reduce the
 number of CFTPROT card identifiers in the CFTPARM &amp;idparm command
-(see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> topics that correspond to your OS to find out the
+(see the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the
 parameter setting limits). After correcting your parameter settings, restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -456,10 +456,10 @@ CFT initialization the CFTNET &amp;idnet card could not be loaded in memory
          <td><p>Action</p>         </td>
          <td><p>Reduce the
 number of CFTNET card identifiers in the CFTPARM &amp;idparm command (see
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> topics that correspond to your OS to find out the parameter
+the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter
 setting limits).</p>
 <p>After correcting
-your parameter settings, restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+your parameter settings, restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -490,10 +490,10 @@ CFT initialization the CFTCOM &amp;idcom card could not be loaded in memory
          <td><p>Action</p>         </td>
          <td><p>Reduce the
 number of CFTCOM card identifiers in the CFTPARM &amp;idparm command (see
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> topics that correspond to your OS to find out the parameter
+the {{< TransferCFT/componentshortname  >}} topics that correspond to your OS to find out the parameter
 setting limits).</p>
 <p>After correcting
-your parameter settings, restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+your parameter settings, restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -654,7 +654,7 @@ Warning         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td>Only CFTNET TCP type protocols are loaded when starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.         </td>
+         <td>Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname  >}}.         </td>
       </tr>
       <tr>
          <td>Action         </td>
@@ -676,7 +676,7 @@ Warning         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td>Only CFTNET TCP type protocols are loaded when starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.         </td>
+         <td>Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname  >}}.         </td>
       </tr>
       <tr>
          <td>Action         </td>

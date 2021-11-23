@@ -10,7 +10,7 @@
 
 **\[RECV = {<u>2</u> | n}\]** {1..9}  MVS
 
-Number of <span style="font-style: italic;">receive any RPL</span> parameters
+Number of *receive any RPL* parameters
 for this resource. In general, the default value should not be changed.
 
  

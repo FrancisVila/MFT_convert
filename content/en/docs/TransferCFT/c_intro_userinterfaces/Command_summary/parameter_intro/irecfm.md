@@ -23,13 +23,13 @@ parameter is forced to V.
    <tbody>
       <tr>
          <td><p>OS400, UNIX</p>         </td>
-         <td><p>The variable format concept is specific to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and is not valid
+         <td><p>The variable format concept is specific to {{< TransferCFT/componentshortname  >}} and is not valid
 for the systems indicated.</p>         </td>
       </tr>
    </tbody>
 </table>
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Operations Guide corresponding to your
+Refer to the {{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your
 OS.
 
 [Return to Command index](../../)

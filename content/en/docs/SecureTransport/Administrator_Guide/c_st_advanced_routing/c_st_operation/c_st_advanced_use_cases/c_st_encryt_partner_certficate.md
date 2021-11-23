@@ -4,10 +4,10 @@
     "weight": "280"
 }The following topics provide the overview, prerequisites, configuration steps, and flow of events for the PGP Encryption and send to multiple partners use case:
 
--   <a href="#Overview" class="MCXref xref">Overview</a>
--   <a href="#Prerequi" class="MCXref xref">Prerequisites</a>
--   <a href="#Steps" class="MCXref xref">Steps to configure the flow</a>
--   <a href="#Flow" class="MCXref xref">Flow of events</a>
+-   [Overview](#Overview)
+-   [Prerequisites](#Prerequi)
+-   [Steps to configure the flow](#Steps)
+-   [Flow of events](#Flow)
 
 <span id="Overview"></span>
 
@@ -19,8 +19,8 @@ Pull files from multiple sources and route the incoming files to multiple partne
 
 ## Prerequisites
 
--   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create two partner accounts (for example, accounts with names **partner1** and **partner2**). For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to [Create Advanced Routing application](../../../c_st_configuration/t_st_create_advanced_routing_application).
+-   Create two partner accounts (for example, accounts with names **partner1** and **partner2**). For user account creation details, refer to [User accounts](../../../../accounts/useraccounts).
     -   Create transfer site in each account to be used as a routing destination to the respective partner.
 
     -   **Note:**
@@ -32,22 +32,22 @@ Pull files from multiple sources and route the incoming files to multiple partne
     -   **Note:**
         >
         > Modify the access level of the certificates to be Public, so these certificates can be used in routes defined outside of this account.
--   Create two local accounts (for example, accounts with name **local1** and **local2**) and transfer sites (for example, named **target1** and **target2**) which are used as source for pulling. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create two local accounts (for example, accounts with name **local1** and **local2**) and transfer sites (for example, named **target1** and **target2**) which are used as source for pulling. For user account creation details, refer to [User accounts](../../../../accounts/useraccounts).
 
 <span id="Steps"></span>
 
 ## Steps to configure the flow
 
-1.  Create a Route Package Template by navigating to **Routes** and clicking **New Route Package Template**. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
+1.  Create a Route Package Template by navigating to **Routes** and clicking **New Route Package Template**. For Route Package Template creation details, refer to [Add Route Package Template](../../../c_st_configuration/t_st_manage_route_package_templates#Add).
     1.  Configure the new Route Package Template’s name and (optionally) description.
-    2.  Create a new route by clicking the **New Route** button. For route configuration details, refer to <a href="../../../c_st_configuration/t_st_manage_routes#New" class="MCXref xref">New Route</a>.
+    2.  Create a new route by clicking the **New Route** button. For route configuration details, refer to [New Route](../../../c_st_configuration/t_st_manage_routes#New).
         1.  Configure the new route’s name (for example, **Partner 1**) and (optionally) description.
-        2.  Add and configure a PGP Encryption step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For PGP Encryption configuration details, refer to <a href="../../../c_st_route_step_transformations/t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a>.
+        2.  Add and configure a PGP Encryption step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For PGP Encryption configuration details, refer to [PGP Encryption](../../../c_st_route_step_transformations/t_st_pgp_encryption).
             1.  Select the **Encrypt only** option.
             2.  Select the first partner account.
             3.  Select the PGP certificate for encryption from that account.
             4.  Click **Save** when done.
-        3.  Add and configure a Send To Partner step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Send To Partner configuration details, refer to <a href="../../../c_st_route_steps/t_st_send_to_partner" class="MCXref xref">Send To Partner</a>.
+        3.  Add and configure a Send To Partner step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Send To Partner configuration details, refer to [Send To Partner](../../../c_st_route_steps/t_st_send_to_partner).
             1.  Uncheck **Proceed with route execution on step failure**.
             2.  Select the first partner account which contains the target transfer site.
             3.  Select the transfer site from the selected account to send the file to.
@@ -65,7 +65,7 @@ Pull files from multiple sources and route the incoming files to multiple partne
             3.  Select the transfer site from the selected account to send the file to.
             4.  Click **Save** when done.
     4.  Save the Route Package Template.
-2.  Go to the first local account (**local1**) and create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+2.  Go to the first local account (**local1**) and create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to [Subscribe to Advanced Routing application](../../../c_st_configuration/t_st_subscribe_advanced_routing_application).
     1.  Configure the subscription folder.
     2.  Select **Automatically Retrieve Files From** checkbox and choose the transfer site to pull files from (the one created as a prerequisite).
     3.  Configure a schedule for pulling the files.
@@ -115,5 +115,5 @@ Pull files from multiple sources and route the incoming files to multiple partne
 
 **Related topics:**
 
--   <a href="../c_st_route_based_extension" class="MCXref xref">Route files based on file name extension</a>
--   <a href="../c_st_decompress_send_to_partner_trigger" class="MCXref xref">Decompress and Send to Partner (trigger file output)</a>
+-   [Route files based on file name extension](../c_st_route_based_extension)
+-   [Decompress and Send to Partner (trigger file output)](../c_st_decompress_send_to_partner_trigger)

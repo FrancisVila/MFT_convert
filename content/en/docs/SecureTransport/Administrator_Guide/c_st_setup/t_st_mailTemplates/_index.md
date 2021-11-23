@@ -2,7 +2,7 @@
     "title": "Mail templates",
     "linkTitle": "Mail templates",
     "weight": "230"
-}Use the *Mail Template Repository* page to manage the email templates used in Human to Human and System to Human file transfers. {{< SecureTransport/componentshortname  >}} uses the mail template selected on the *AdHoc Settings* page to create all notification emails to ad hoc file transfer recipients and senders. To select the mail template, see <a href="../t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>.
+}Use the *Mail Template Repository* page to manage the email templates used in Human to Human and System to Human file transfers. {{< SecureTransport/componentshortname  >}} uses the mail template selected on the *AdHoc Settings* page to create all notification emails to ad hoc file transfer recipients and senders. To select the mail template, see [Configure adhoc file transfers](../t_st_adhocconfiguration#SetupMenu_1217491348_1052091).
 
 {{< SecureTransport/componentshortname  >}} sends the following email notifications to ad hoc file transfer recipients and senders:
 
@@ -59,4 +59,4 @@ Use the following procedure to delete mail templates.
 
  
 
-See next: <a href="c_st_mail_template_commands_variables" class="MCXref xref">Mail template commands and variables</a>
+See next: [Mail template commands and variables](c_st_mail_template_commands_variables)

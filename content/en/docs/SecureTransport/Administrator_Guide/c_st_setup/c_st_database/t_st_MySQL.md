@@ -73,7 +73,7 @@ All services need to be manually restarted before the new certificates are appli
 
 **Related topics:**
 
--   <a href="../t_st_database" class="MCXref xref">Migrate from embedded database to external Oracle database</a>
--   <a href="../t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>
--   <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>
--   <a href="../t_st_sqlserver" class="MCXref xref">Change the external Microsoft SQL Server database</a>
+-   [Migrate from embedded database to external Oracle database](../t_st_database)
+-   [Direct log data to separate Oracle databases](../t_st_separate_databases)
+-   [Change the Oracle database configuration](../t_st_oracle)
+-   [Change the external Microsoft SQL Server database](../t_st_sqlserver)

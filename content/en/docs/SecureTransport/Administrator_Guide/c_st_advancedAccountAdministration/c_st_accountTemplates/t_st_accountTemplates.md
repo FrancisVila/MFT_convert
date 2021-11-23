@@ -6,21 +6,21 @@
 
 The following topics provide example and how-to instructions for managing account templates:
 
--   <a href="#Add" class="MCXref xref">Add an account template</a>
--   <a href="#Enable" class="MCXref xref">Enable an account template</a>
--   <a href="#Disable" class="MCXref xref">Disable an account template</a>
--   <a href="#Certificates" class="MCXref xref">Certificates for an account template</a>
--   <a href="#Configure" class="MCXref xref">Configure transfer sites for an account template</a>
--   <a href="#Configure_transfer" class="MCXref xref">Configure transfer profiles for an account template</a>
--   <a href="#Configure_routes" class="MCXref xref">Configure routes for an account template</a>
--   <a href="#Configur" class="MCXref xref">Configure subscriptions for an account template</a>
--   <a href="#Examples" class="MCXref xref">Examples of expressions in an account template</a>
--   <a href="#Export" class="MCXref xref">Export an account template</a>
+-   [Add an account template](#Add)
+-   [Enable an account template](#Enable)
+-   [Disable an account template](#Disable)
+-   [Certificates for an account template](#Certificates)
+-   [Configure transfer sites for an account template](#Configure)
+-   [Configure transfer profiles for an account template](#Configure_transfer)
+-   [Configure routes for an account template](#Configure_routes)
+-   [Configure subscriptions for an account template](#Configur)
+-   [Examples of expressions in an account template](#Examples)
+-   [Export an account template](#Export)
 
 **Related topics:**
 
--   <a href="../c_st_account_templates_external_users" class="MCXref xref">Account templates and external users</a>
--   <a href="../c_st_account_template_required_values" class="MCXref xref">Account template required values</a>
+-   [Account templates and external users](../c_st_account_templates_external_users)
+-   [Account template required values](../c_st_account_template_required_values)
 
 <span id="Add"></span>
 
@@ -87,9 +87,9 @@ Use the following procedure to add an account template.
     This field determines the file maintenance policy.
 
     -   When **Default** is selected, then the following apply:
-        1.  If the account is assigned to a business unit, it will inherit <a href="" class="MCXref xref">Manage business units</a>.
-        2.  Otherwise, the <a href="../../../applications/applicationsfilemaintenance" class="MCXref xref">File Maintenance application</a> applies.
-    -   When **Custom** is selected, the panel expands with a *Custom settings* pane that allows you to modify the global <a href="../../../applications/applicationsfilemaintenance#Configur" class="MCXref xref">File Maintenance application</a>. The customized policy applies to the accounts assigned to this account template only.
+        1.  If the account is assigned to a business unit, it will inherit [Manage business units]().
+        2.  Otherwise, the [File Maintenance application](../../../applications/applicationsfilemaintenance) applies.
+    -   When **Custom** is selected, the panel expands with a *Custom settings* pane that allows you to modify the global [File Maintenance application](../../../applications/applicationsfilemaintenance#Configur). The customized policy applies to the accounts assigned to this account template only.
     -   When **Disabled** is selected, file maintenance will be disabled for this account.
 
       
@@ -193,7 +193,7 @@ Use the following procedure to add an account template.
 
 23. Enter a value or expression for the text description of the user account in the **Notes** field.
 
-24. Select the **Login Restriction Policy**. The Login Restriction Policy defines rules for allow or deny login to users based on the client IP or host and other conditions. For additional information, refer to <a href="../../../c_st_accesscontrol/c_st_loginrestictions" class="MCXref xref">Login restrictions</a>.  
+24. Select the **Login Restriction Policy**. The Login Restriction Policy defines rules for allow or deny login to users based on the client IP or host and other conditions. For additional information, refer to [Login restrictions](../../../c_st_accesscontrol/c_st_loginrestictions).  
     If a Login Restriction Policy is selected as the global default policy, it will be the inherited default selection for the user account.  
     If a Login Restriction Policy is not selected as the global default policy and the Business Unit has a Login Restriction Policy selected, it will be the inherited default selection for the user account.  
     If neither a global default Login Restriction Policy or a Business Unit Login Restriction Policy is selected, then the policy selected for the users account will be in effect.  
@@ -207,7 +207,7 @@ Use the following procedure to add an account template.
     -   Custom – the panel expands with two additional options for you to configure: **Inbound limit** and **Outbound limit** (both values in kb/s per user)
     -   Disabled – no bandwidth limits are applied to the users assigned to the current account template  
 
-26. To add an attribute, click **Add Attribute**. For additional information on Additional Attributes, refer to <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+26. To add an attribute, click **Add Attribute**. For additional information on Additional Attributes, refer to [Additional attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
     1.  Enter the attribute and value in the **Attribute** and **Value** fields.
 
     2.  **Add Attribute** enables the administrator to add custom properties (Key=Value). Also the administrator will be able to access the custom properties (named Attributes) using in any fields in Advanced Routing.
@@ -284,7 +284,7 @@ You can also disable an already created template.
 
 Like a user account, an account template can have partner certificates and private certificates. It cannot have login certificates.
 
-For more information, see <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701" class="MCXref xref">Manage login certificates</a>.
+For more information, see [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701).
 
 <span id="Configure"></span>
 
@@ -320,13 +320,13 @@ This expression tests the value of `target `and returns `true `if it contains th
 
 An account template can have transfer profiles. You can use expressions in the **Files To Send** and **Receive Files As** fields.
 
-For more information, see <a href="../../../accounts/t_st_transferprofiles#AccountsMenu_2253641766_1248932" class="MCXref xref">Transfer profiles</a>.
+For more information, see [Transfer profiles](../../../accounts/t_st_transferprofiles#AccountsMenu_2253641766_1248932).
 
 <span id="Configure_routes"></span>
 
 ## Configure routes for an account template
 
-Prior to configuring a route for an account template, the account template should have an {{< SecureTransport/advancedrouting  >}} application instance subscription. For account template subscription information, refer to <a href="#Configur" class="MCXref xref">Configure subscriptions for an account template</a> and to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>. Additionally, route package templates must be available for assignment. For information on creating and managing route package templates, refer to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
+Prior to configuring a route for an account template, the account template should have an {{< SecureTransport/advancedrouting  >}} application instance subscription. For account template subscription information, refer to [Configure subscriptions for an account template](#Configur) and to [Subscribe to Advanced Routing application](../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application). Additionally, route package templates must be available for assignment. For information on creating and managing route package templates, refer to [Manage Route Package Templates](../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates).
 
 1.  With the account template open, select **Routes**, select a route package template, and click **Assign Route**.  
     The *Create Route Package* page is displayed. You can navigate to the *Edit Route Package Template* page for the selected route package template by clicking the **Created From** link.
@@ -359,12 +359,12 @@ Prior to configuring a route for an account template, the account template shoul
     1.  Determine the **Execution Rule**. Select either **All Matching Routes** (default) or **First Matching Route**.
     2.  When **All Matching Routes** is selected, all matching Routes are executed. When **First Matching Route** is selected, only the first matching Route is executed.
     3.  Click **New Route**.
-    4.  The *New Route Entry* page is displayed. For Route configuration information, refer to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_routes" class="MCXref xref">Manage Routes</a>.
-    5.  You can also enable, disable, reorder, and delete Routes in the *Specific Settings* pane. For information on enabling, disabling, reordering, or deleting Routes, refer to <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
+    4.  The *New Route Entry* page is displayed. For Route configuration information, refer to [Manage Routes](../../../c_st_advanced_routing/c_st_configuration/t_st_manage_routes).
+    5.  You can also enable, disable, reorder, and delete Routes in the *Specific Settings* pane. For information on enabling, disabling, reordering, or deleting Routes, refer to [Manage Route Package Templates](../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates).
 
 7.  In the *Notifications* pane:
-    1.  Select **Notify following e-mails on route failure** to be notified on route failure and enter a notification email address, a list of mail addresses, or an expression. For additional email configuration information, refer to <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>.
-    2.  Select the **Mail Template** from the menu to be used for route failure notifications. For email template configuration information, refer to <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+    1.  Select **Notify following e-mails on route failure** to be notified on route failure and enter a notification email address, a list of mail addresses, or an expression. For additional email configuration information, refer to [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration).
+    2.  Select the **Mail Template** from the menu to be used for route failure notifications. For email template configuration information, refer to [Mail templates](../../../c_st_setup/t_st_mailtemplates).
     3.  Select **Notify following e-mails on route success** to be notified on route success and enter a notification email address, a list of mail addresses, or an expression.
     4.  Select the **Mail Template** from the menu to be used for route success notifications.
     5.  Select **Notify following e-mails on route triggering** to be notified on route triggering and enter a notification email address, a list of mail addresses, or an expression.
@@ -383,7 +383,7 @@ Prior to configuring a route for an account template, the account template shoul
     If **Overwrite** is selected, the attributes defined in the *Flow Attributes* pane will overwrite any existing attributes for incoming files (for example, files published to this folder from another subscription folder).  
     When **Append** is selected, only the attributes which are not defined for incoming files will be applied. Existing attributes will be preserved.
 3.  In the *Flow/Subscription Attributes* pane:
-    1.  To add an attribute, click **Add Attribute**. For additional information, refer to <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow" class="MCXref xref">Flow and subscription attributes</a>.
+    1.  To add an attribute, click **Add Attribute**. For additional information, refer to [Flow and subscription attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow).
 
     2.  **Add Attribute** enables the administrator to add custom properties (Key=Value). Flow attributes can be used for expression evaluation in Advanced Routing only when the application operates with files. Subscription attributes are bound to the subscription, therefore, they can be used for expression evaluation in all Advanced Routing fields.
 

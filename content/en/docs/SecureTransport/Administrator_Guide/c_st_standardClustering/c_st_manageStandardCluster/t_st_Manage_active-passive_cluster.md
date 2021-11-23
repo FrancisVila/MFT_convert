@@ -15,16 +15,16 @@
 
 The following topics provide how-to instructions for managing an active/passive cluster:
 
--   <a href="#Restore" class="MCXref xref">Restore a server to an active/passive cluster</a>
--   <a href="#Remove" class="MCXref xref">Remove a server from an active/passive cluster</a>
--   <a href="#Manual" class="MCXref xref">Manual failover</a>
+-   [Restore a server to an active/passive cluster](#Restore)
+-   [Remove a server from an active/passive cluster](#Remove)
+-   [Manual failover](#Manual)
 
 <span id="Restore"></span>
 
 ## Restore a server to an active/passive cluster
 
 1.  Start the Administration Tool server and the TM server on the restored computer.
-2.  On the primary server, perform a manual synchronization from the Administration Tool. For instructions, see <a href="../c_st_standard_cluster_synchronization#Synchron" class="MCXref xref">Synchronize the cluster from the primary server</a>.
+2.  On the primary server, perform a manual synchronization from the Administration Tool. For instructions, see [Synchronize the cluster from the primary server](../c_st_standard_cluster_synchronization#Synchron).
 
 > **Note:**
 >
@@ -57,5 +57,5 @@ When the primary server fails in an active/passive cluster with cluster mode set
 
 **Related topics:**
 
--   <a href="../t_st_manage_active-active_cluster" class="MCXref xref">Manage an active/active cluster</a>
--   <a href="../c_st_standard_cluster_synchronization" class="MCXref xref">Standard Cluster synchronization</a>
+-   [Manage an active/active cluster](../t_st_manage_active-active_cluster)
+-   [Standard Cluster synchronization](../c_st_standard_cluster_synchronization)

@@ -18,7 +18,7 @@ size, in bytes.
 This field only applies to the following EXITS:
 
 -   Access/EXEC:
-    -   range {<span style="font-weight: bold;">0 to 1024</span>}
+    -   range {**0 to 1024**}
     -   default value
         <span style="font-weight: bold;">1024</span>
 -   file:

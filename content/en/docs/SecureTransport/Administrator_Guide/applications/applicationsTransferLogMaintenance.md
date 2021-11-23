@@ -4,7 +4,7 @@
     "weight": "320"
 }The Transfer Log Maintenance automatically deletes transfer log records that are older than a specified number of days (30 days by default). You can schedule how often to run this application and configure it to optionally export these records before deletion.
 
-You must enable the `TransferLogMaintApp` rules package in the Transaction Manager before you can use a Transfer Log Maintenance application. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
+You must enable the `TransferLogMaintApp` rules package in the Transaction Manager before you can use a Transfer Log Maintenance application. For more information, see [Manage rules packages](../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable).
 
 > **Note:**
 >
@@ -21,13 +21,13 @@ Use the following procedure to create a Transfer Log Maintenance application.
 
 2.  Select **Transfer Log Maintenance** from the mandatory **Application Type** list.
 
-3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
+3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).  
 
     > **Note:**
     >
     > The application name cannot include any forward slash (/) characters.
 
-4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have created. For details, see <a href="../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756" class="MCXref xref">Business units</a>.  
+4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have created. For details, see [Business units](../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756).  
 
     > **Note:**
     >
@@ -36,15 +36,15 @@ Use the following procedure to create a Transfer Log Maintenance application.
 5.  (Optional) Enter an application **Description**.
 
 6.  In the **Delete transfer log when \_\_\_\_ days old** field, specify how old in days transfer log entries will be when they are deleted. The application computes the age of transfer log entries to midnight of the day it is run. For example, if the value of this field is `1` and the application runs at 4:00 AM., the application deletes entries created before midnight on at the beginning of the previous day. It does not delete entries created between midnight and 4:00 AM. on the previous day. This field is mandatory.  
-    You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.
+    You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).
 
 7.  (For MSSQL only) In the **Delete in-progress transfers that started more than \_\_\_\_ days ago** field, specify a period in days after which the in-progress transfers to be deleted. Consider using the same value for finished and in-progress transfers. Otherwise, the result could be performance degradation a failure to execute the application.
 
-8.  (Optional) Configure the export of the Server log entries before deletion. The procedure differs depending on the database you use. For complete instructions, see <a href="#Configur" class="MCXref xref">Configure transfer log exports</a>
+8.  (Optional) Configure the export of the Server log entries before deletion. The procedure differs depending on the database you use. For complete instructions, see [Configure transfer log exports](#Configur)
 
-9.  (Optional) In the *Schedule* pane, click **Configure** to <a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+9.  (Optional) In the *Schedule* pane, click **Configure** to [Configure a schedule for a maintenance application](#ConfigureMaintSchedule).
 
-10. (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+10. (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 
 11. Click **Create Application**.
 
@@ -128,4 +128,4 @@ Use the following procedure to configure the application to export old transfer 
 6.  Save the application settings.
 
   
-See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow shortcuts to other applications you need to create or configure.
+See parent topic: [Applications](../) and follow shortcuts to other applications you need to create or configure.

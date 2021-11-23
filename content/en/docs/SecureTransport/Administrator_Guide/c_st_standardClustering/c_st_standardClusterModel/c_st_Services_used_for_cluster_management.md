@@ -6,9 +6,9 @@
 
 The following topics describe the services used for cluster management:
 
--   <a href="#Persistent" class="MCXref xref">Persistent Event Queue service</a>
--   <a href="#Account" class="MCXref xref">Account Manager service</a>
--   <a href="#Transfer" class="MCXref xref">Transfer Status Manager service</a>
+-   [Persistent Event Queue service](#Persistent)
+-   [Account Manager service](#Account)
+-   [Transfer Status Manager service](#Transfer)
 
 <span id="Persistent"></span>
 
@@ -46,6 +46,6 @@ The Transfer Status Manager service consolidates the transfer log on the primary
 
 **Related topics:**
 
--   <a href="../c_st_active-active_active-passive_clustering" class="MCXref xref">Active/active and active/passive clustering</a>
--   <a href="../c_st_scheduled_tasks" class="MCXref xref">Scheduled tasks</a>
--   <a href="../c_st_consolidated_log_data_representation" class="MCXref xref">Consolidated log data representation</a>
+-   [Active/active and active/passive clustering](../c_st_active-active_active-passive_clustering)
+-   [Scheduled tasks](../c_st_scheduled_tasks)
+-   [Consolidated log data representation](../c_st_consolidated_log_data_representation)

@@ -4,7 +4,7 @@
     "weight": "120"
 }## Verify your installation
 
-You can check the installation log in the <span class="code">&lt;installation directory>/install.log</span> file. See the installation [troubleshooting section](../troubleshoot_registration) if you encounter problems with starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> or registering with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+You can check the installation log in the `<installation directory>/install.log` file. See the installation [troubleshooting section](../troubleshoot_registration) if you encounter problems with starting {{< TransferCFT/componentlongname  >}} or registering with {{< TransferCFT/centralgovernancename  >}}.
 
 ### Installed directories
 
@@ -19,11 +19,11 @@ During the installation, the Transfer CFT installer creates two files in the ins
 
 ## Standalone installations
 
-If you are not using <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must provide a certificate in order to be able to use the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
+If you are not using {{< TransferCFT/transfercftname  >}} with {{< TransferCFT/centralgovernancename  >}}, you must provide a certificate in order to be able to use the {{< TransferCFT/transfercftname  >}} UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
 
-## Register with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+## Register with {{< TransferCFT/centralgovernancename  >}}
 
-Begin your registration with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> by starting the Copilot server, which launches the registration process.
+Begin your registration with {{< TransferCFT/centralgovernancename  >}} by starting the Copilot server, which launches the registration process.
 
 ### Start the Transfer CFT Copilot server
 
@@ -37,25 +37,25 @@ To start the Copilot server, run the command:
 
 <span id="Verify"></span>
 
-## Verify the Transfer CFT registration with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+## Verify the Transfer CFT registration with {{< TransferCFT/centralgovernancename  >}}
 
-### Log on <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+### Log on {{< TransferCFT/centralgovernancename  >}}
 
-If you have not already done so, log on <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+If you have not already done so, log on {{< TransferCFT/centralgovernancename  >}}.
 
-In <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> from the **Product** page, check the Product List for your installed <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.
+In {{< TransferCFT/centralgovernancename  >}} from the **Product** page, check the Product List for your installed {{< TransferCFT/componentlongname  >}}.
 
-See the Troubleshooting installation section in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span> for tips in case of an error.
+See the Troubleshooting installation section in the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/doctypeuser  >}} for tips in case of an error.
 
 ### Start the Transfer CFT server
 
-To start Transfer CFT from the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> interface, use the following procedure.
+To start Transfer CFT from the {{< TransferCFT/centralgovernancename  >}} interface, use the following procedure.
 
 1.  Click **Products** on the top toolbar to open the page.
 2.  Select the product (Transfer CFT) to start.
 3.  Click Start. When started successfully, the Status column displays **Started**.
 
-### View the log using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+### View the log using
 
 1\. Click the name of the Transfer CFT system on the **Product List** page to open its details page.
 
@@ -71,6 +71,6 @@ The log page is displayed where you can:
 >
 > For details on starting, stopping and viewing the Transfer CFT refer to the Central Governance User Guide.
 
-## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Register with
 
-If you intend to implement <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, please refer to the <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span> *User's Guide &gt; [*Register with* <span class="mc-variable Primary.CG or_UM variable" style="font-style: italic;">Central Governance</span>](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

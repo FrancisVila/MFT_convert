@@ -79,7 +79,7 @@ Before you create the Axway Server object, you must create:
              <td><p>From the drop-down list, select the software
     type: <strong>Gateway</strong></p>
     <p>When you select Gateway, the software automatically
-    adds the Communication tab to the <span style="font-style: italic;">Properties</span> window.</p>         </td>
+    adds the Communication tab to the <em>Properties</em> window.</p>         </td>
           </tr>
           <tr>
              <td><p><span id="Template"></span>Template</p>         </td>
@@ -87,7 +87,7 @@ Before you create the Axway Server object, you must create:
     Server Template. The Axway Server inherits all the properties defined
     for the selected Axway Server Template.</p>
     <p>For more information about templates, refer
-    to the <span style="font-style: italic;">Working with Templates</span> topic in the Axway Composer documentation.</p>         </td>
+    to the <em>Working with Templates</em> topic in the Axway Composer documentation.</p>         </td>
           </tr>
           <tr>
              <td><p><strong>Broadcast parameters</strong></p>
@@ -95,10 +95,10 @@ Before you create the Axway Server object, you must create:
     number of the Broadcast Agent. This agent communicates with the Composer
     Server and sends your configuration to the execution server (the Integrator
     Server).</p>
-    <p>These parameters are required for <span style="font-style: italic;">Send
-    to Server</span> operations.</p>
-    <p>For more information about the <span style="font-style: italic;">Send
-    to Server</span> command, refer to the <span style="font-style: italic;">Sending objects to Production</span> topic in the Axway Composer documentation.</p>         </td>
+    <p>These parameters are required for <em>Send
+    to Server</em> operations.</p>
+    <p>For more information about the <em>Send
+    to Server</em> command, refer to the <em>Sending objects to Production</em> topic in the Axway Composer documentation.</p>         </td>
           </tr>
           <tr>
              <td><p>Agent host</p>         </td>
@@ -114,13 +114,13 @@ Before you create the Axway Server object, you must create:
     This value must be a numeric value.</p>
     <p>The Broadcast Agent port was specified during
     the Integrator Server installation procedure. For information about Broadcast
-    Agent port selection, refer to the documentation of <span style="font-style: italic;">Axway <span class="mc-variable suite_variables.IntegratorName variable">Integrator</span></span>.</p>         </td>
+    Agent port selection, refer to the documentation of <em>Axway <span class="mc-variable suite_variables.IntegratorName variable">Integrator</span></em>.</p>         </td>
           </tr>
        </tbody>
     </table>
 3.  On the **Communication** tab, select the TCP CommNetwork created previously.
 4.  Check, save and close the Axway Server object.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

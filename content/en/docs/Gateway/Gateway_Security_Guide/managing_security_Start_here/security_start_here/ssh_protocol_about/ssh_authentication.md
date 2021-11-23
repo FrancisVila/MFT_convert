@@ -2,7 +2,7 @@
     "title": "SSH authentication",
     "linkTitle": "SSH authentication",
     "weight": "230"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 This topic describes the server and client authentication processes in chronological order.
 
@@ -20,7 +20,7 @@ This topic describes the server and client authentication processes in chronolog
 
 Authentication is the primary function of the SSH protocol. Although the client always initiates the connection, the server authentication occurs first. The server uses an RSA, ECDSA or DSS key or an X.509 certificate for its authentication.
 
-<span style="font-weight: bold;">When Gateway is server:</span>
+**When Gateway is server:**
 
 Gateway uses a parameter from the Authentication Alias section of the SSH Profile selected during the incoming connection. The two options are <span style="font-weight: bold;">Private key alias</span> and <span style="font-weight: bold;">Certificate alias</span>.
 

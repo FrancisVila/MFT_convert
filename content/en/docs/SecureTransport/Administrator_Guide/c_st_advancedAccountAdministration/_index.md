@@ -6,13 +6,13 @@
 
 The following topics describe advanced account administration:
 
--   <a href="c_st_accountimportandexport" class="MCXref xref">Account export and import</a> - Describes account export and import.
--   <a href="c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a> - Describes managing administrator accounts.
--   <a href="c_st_delegatedadministration" class="MCXref xref">Delegated administration</a> - Describes delegated account administration.
--   <a href="c_st_administrativeroles" class="MCXref xref">Administrative roles</a> - Describes administrative roles.
--   <a href="c_st_accounttemplates" class="MCXref xref">Account templates</a> - Describes account templates.
--   <a href="c_st_sitetemplates" class="MCXref xref">Site templates</a> - Describes site templates.
--   <a href="c_st_systemusers" class="MCXref xref">System users</a> - Describes system users.
--   <a href="c_st_businessunits" class="MCXref xref">Business units</a> - Describes business units.
--   <a href="t_st_displayactiveusers" class="MCXref xref">Display active users</a> - Provides how-to instructions for displaying active users.
--   <a href="c_st_clientinitiatedandserverinitiatedtransfers" class="MCXref xref">Client-initiated and server-initiated transfers</a> - Describes client-initiated and server-initiated transfers.
+-   [Account export and import](c_st_accountimportandexport) - Describes account export and import.
+-   [Manage administrator accounts](c_st_manageadministratoraccounts) - Describes managing administrator accounts.
+-   [Delegated administration](c_st_delegatedadministration) - Describes delegated account administration.
+-   [Administrative roles](c_st_administrativeroles) - Describes administrative roles.
+-   [Account templates](c_st_accounttemplates) - Describes account templates.
+-   [Site templates](c_st_sitetemplates) - Describes site templates.
+-   [System users](c_st_systemusers) - Describes system users.
+-   [Business units](c_st_businessunits) - Describes business units.
+-   [Display active users](t_st_displayactiveusers) - Provides how-to instructions for displaying active users.
+-   [Client-initiated and server-initiated transfers](c_st_clientinitiatedandserverinitiatedtransfers) - Describes client-initiated and server-initiated transfers.

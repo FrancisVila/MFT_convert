@@ -2,7 +2,7 @@
     "title": "Synchronous communication return codes",
     "linkTitle": "Synchronous communication return codes",
     "weight": "510"
-}This section describes diagnosing the return code when using synchronous communication with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+}This section describes diagnosing the return code when using synchronous communication with {{< TransferCFT/componentshortname  >}}.
 
 ## How to find the return code
 
@@ -10,7 +10,7 @@ You can retrieve synchronous communication return codes using either a programmi
 
 ### Using a programming interface
 
-In this method the <span class="code">cftau </span>function locates the return code, as shown in the following example:
+In this method the `cftau `function locates the return code, as shown in the following example:
 
 
 
@@ -23,7 +23,7 @@ In this method the <span class="code">cftau </span>function locates the return c
 
 ### Using CFTUTIL
 
-This method uses the internal variable<span class="code">\_CMDRET</span> in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
+This method uses the internal variable`_CMDRET` in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
 
 
 

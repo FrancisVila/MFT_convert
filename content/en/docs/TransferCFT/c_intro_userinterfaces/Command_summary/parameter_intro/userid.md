@@ -18,11 +18,11 @@ Identifier of the transfer owner.
 This parameter is used in server mode
 to define the transfer owner associated with a CFTRECV object, or a CFTSEND
 IMPL = YES object. If this parameter is not defined, its default value
-is the system "userid" of the server <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+is the system "userid" of the server {{< TransferCFT/componentshortname  >}}.
 
 This field can include one or more of the following symbolic variables:
 
--   <span style="font-weight: bold;">&PART</span>:
+-   **&PART**:
     value substituted by the local identifier of the transfer partner (CFTPART
     <span style="font-weight: bold;">id</span>)
 -   <span style="font-weight: bold;">&SUSER</span>:

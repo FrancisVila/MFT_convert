@@ -6,6 +6,6 @@
 
 The following topics provide how-to instructions for enabling bidirectional connections:
 
--   <a href="r_st_checkpoint_firewall" class="MCXref xref">Check Point firewall</a> - Provides how-to instructions for enabling bidirectional connections on a Check Point firewall.
--   <a href="r_st_cisco_pix_firewall" class="MCXref xref">Cisco PIX firewall</a> - Provides how-to instructions for enabling bidirectional connections on a Cisco PIX firewall.
--   <a href="r_st_raptor_firewall" class="MCXref xref">Raptor firewall</a> - Provides how-to instructions for enabling bidirectional connections on a Raptor firewall.
+-   [Check Point firewall](r_st_checkpoint_firewall) - Provides how-to instructions for enabling bidirectional connections on a Check Point firewall.
+-   [Cisco PIX firewall](r_st_cisco_pix_firewall) - Provides how-to instructions for enabling bidirectional connections on a Cisco PIX firewall.
+-   [Raptor firewall](r_st_raptor_firewall) - Provides how-to instructions for enabling bidirectional connections on a Raptor firewall.

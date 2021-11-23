@@ -2,7 +2,7 @@
     "title": "Managing keys",
     "linkTitle": "Managing keys",
     "weight": "200"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Importing a Key](#Importing_a_key)
 
@@ -22,7 +22,7 @@ To import a Key using the GUI:
 
 1.  In the left pane of the GUI main window, click <img src="/Images/Gateway/expand_marker.gif" width="16" height="16" /> to expand the nodes:  
     **Security Management > Transfer Security Management**
-2.  Right-click the <span style="font-weight: bold;">Key</span> sub-node, and then select <span style="font-weight: bold;">Import...</span> from the context menu.  
+2.  Right-click the **Key** sub-node, and then select <span style="font-weight: bold;">Import...</span> from the context menu.  
     Gateway displays the <span style="font-style: italic;">Key management</span> window:
 
 <table>

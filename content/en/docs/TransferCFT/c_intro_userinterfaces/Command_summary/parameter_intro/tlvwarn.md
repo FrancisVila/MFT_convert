@@ -4,14 +4,14 @@
     "weight": "3530"
 }<span id="tlvwarn"></span>
 
-### <span class="mc-variable System.Title variable">tlvwarn</span>
+### 
 
 #### CFTCAT, CFTCOM=FILE
 
 \[ TLVWARN = { 0...100 }
 \]
 
-Command file usage limit before issuing an alert. Overall, the TLV parameters enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to
+Command file usage limit before issuing an alert. Overall, the TLV parameters enable {{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical CAT or COM threshold is reached based on a percentage of the catalog or communication media being filled, where 0% indicates empty and 100% indicates full.
 
 This

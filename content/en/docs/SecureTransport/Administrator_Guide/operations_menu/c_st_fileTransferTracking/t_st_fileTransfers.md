@@ -6,15 +6,15 @@
 
 The following topics provide how-to instructions for restarting and canceling a file transfer:
 
--   <a href="#Restart" class="MCXref xref">Restart a transfer</a>
--   <a href="#Cancel" class="MCXref xref">Cancel a transfer</a>
+-   [Restart a transfer](#Restart)
+-   [Cancel a transfer](#Cancel)
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Resubmit status</a>
--   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
--   <a href="../t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a>
--   <a href="../r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a>
+-   [Resubmit status]()
+-   [Transfer status](../r_st_transfer_status)
+-   [View file transfer information](../t_st_viewfiletransferinfo)
+-   [Transfer Log Maintenance application](../r_st_transferlogmaint)
 
 <span id="Restart"></span>
 

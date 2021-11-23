@@ -6,9 +6,9 @@
 
 The following topics provide the how-to instructions for storing certificates in a hardware security module:
 
--   <a href="#Install" class="MCXref xref">Install and configure the HSM</a>
--   <a href="#Generate" class="MCXref xref">Generate and sign an HSM certificate</a>
--   <a href="#Use" class="MCXref xref">Use an HSM certificate for FTPS or HTTPS</a>
+-   [Install and configure the HSM](#Install)
+-   [Generate and sign an HSM certificate](#Generate)
+-   [Use an HSM certificate for FTPS or HTTPS](#Use)
 
 <span id="Install"></span>
 
@@ -101,19 +101,19 @@ This procedure uses the following placeholders:
 2.  Enable HSM for the protocol servers by setting the following server configuration parameters:
     -   Set `Ftp.Hsm.enabled` to `true` to enable HSM for the FTP Server
     -   Set `Http.Hsm.enabled` to `true` to enable HSM for the HTTP Server
-3.  Create a local certificate with the same alias as the HSM certificate you created, for example, `ftpd` or `httpd`. See <a href="../t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>. {{< SecureTransport/componentshortname >}} does not use this certificate, but you must have a certificate with the correct alias to reference the HSM certificate.
-4.  Set the SSL key aliases for the protocol servers. See <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-ftp" class="MCXref xref">Manage the FTP server</a> and <a href="../../../operations_menu/extended_server_control/ext_servercontrol-add-http" class="MCXref xref">Manage the HTTP server</a>.
-5.  Restart the protocol servers. See <a href="#Start" class="MCXref xref">Start and stop servers</a>.
+3.  Create a local certificate with the same alias as the HSM certificate you created, for example, `ftpd` or `httpd`. See [Generate a self-issued server certificate](../t_st_localcertificatesandcsrs#Generate). {{< SecureTransport/componentshortname >}} does not use this certificate, but you must have a certificate with the correct alias to reference the HSM certificate.
+4.  Set the SSL key aliases for the protocol servers. See [Manage the FTP server](../../../operations_menu/extended_server_control/ext_servercontrol-add-ftp) and [Manage the HTTP server](../../../operations_menu/extended_server_control/ext_servercontrol-add-http).
+5.  Restart the protocol servers. See [Start and stop servers](#Start).
 
  
 
 **Related topics:**
 
--   <a href="../r_st_certificate_types" class="MCXref xref">Certificate types</a>
--   <a href="../c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
--   <a href="../t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>
--   <a href="../t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>
--   <a href="../t_st_trustedcas" class="MCXref xref">Manage trusted CAs</a>
--   <a href="../t_st_internalca" class="MCXref xref">Manage the internal CA</a>
--   <a href="../t_st_certificatekeystorepasswordca" class="MCXref xref">Change the certificate keystore password</a>
--   <a href="../r_st_certificatestogenerate" class="MCXref xref">Certificates to generate during initial setup</a>
+-   [Certificate types](../r_st_certificate_types)
+-   [Certificate Management page](../c_st_certificate_management_page)
+-   [Repository encryption certificate](../t_st_repository_encryption_certificate)
+-   [Manage local certificates and certificate signing requests](../t_st_localcertificatesandcsrs)
+-   [Manage trusted CAs](../t_st_trustedcas)
+-   [Manage the internal CA](../t_st_internalca)
+-   [Change the certificate keystore password](../t_st_certificatekeystorepasswordca)
+-   [Certificates to generate during initial setup](../r_st_certificatestogenerate)

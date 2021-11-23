@@ -11,6 +11,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_create_home_folder_entry" class="MCXref xref">Create a home folder entry</a>
--   <a href="../t_st_enable_disable_home_folder_entries" class="MCXref xref">Enable or disable home folder entries</a>
--   <a href="../t_st_edit_home_folder_entry" class="MCXref xref">Edit a home folder entry</a>
+-   [Create a home folder entry](../t_st_create_home_folder_entry)
+-   [Enable or disable home folder entries](../t_st_enable_disable_home_folder_entries)
+-   [Edit a home folder entry](../t_st_edit_home_folder_entry)

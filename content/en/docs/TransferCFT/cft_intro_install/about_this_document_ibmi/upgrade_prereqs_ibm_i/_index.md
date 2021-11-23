@@ -2,7 +2,7 @@
     "title": "Update, upgrade, or migrate ",
     "linkTitle": "Update, upgrade, or migrate",
     "weight": "190"
-}This section describes how to update, upgrade, or migrate to Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>.
+}This section describes how to update, upgrade, or migrate to Transfer CFT {{< TransferCFT/releasenumber  >}}.
 
 ## About updates
 
@@ -37,12 +37,12 @@ This mode has the following restriction:
 
 ## About manual migrations
 
-The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>, is described in this document.
+The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}}, is described in this document.
 
-The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> is:
+The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}} is:
 
 1.  Export existing information from the previous version. Details vary depending on the existing Transfer CFT version.
-2.  Import the exported information into Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>.
+2.  Import the exported information into Transfer CFT {{< TransferCFT/releasenumber >}}.
 
 This mode has the following advantages:
 
@@ -53,13 +53,13 @@ This mode has the following advantages:
 
 ### Important information before performing an upgrade or migration procedure
 
--   You must update your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to the most recent service pack version.
--   Backup <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> before beginning an upgrade or migration procedure.
+-   You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
+-   Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
 -   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (I.e., you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
--   You require a new license key if you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
+-   You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
 -   For details on how to apply or update a license key, and the new license key location, see the section **Apply a license key**.
 
 > **Note:**
@@ -96,6 +96,6 @@ For example:
 3.  Copy or create your procedures in the CFTEXEC/UTIN file.
 4.  Update the Transfer CFT configuration, meaning all exec values in the TCPPARAM, to use this new library.
 
-## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Register with
 
-If you intend to implement <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, please refer to the <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span> *User's Guide &gt; [*Register with* <span class="mc-variable Primary.CG or_UM variable" style="font-style: italic;">Central Governance</span>](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

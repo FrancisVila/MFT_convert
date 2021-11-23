@@ -21,8 +21,8 @@ Active FTP mode can be used only for internal connections where there is no prox
 
 **Related topics:**
 
--   <a href="../t_st_ftpservermessages" class="MCXref xref">FTP server messages</a>
--   <a href="../t_st_ftppassivemode" class="MCXref xref">Set up FTP passive mode</a>
--   <a href="../r_st_ftpserverlimitations" class="MCXref xref">FTP server limitations</a>
--   <a href="../t_st_improveftpperformance" class="MCXref xref">Improve FTP performance on a multi-homed system</a>
--   <a href="../t_st_increaseftptimeout" class="MCXref xref">Increase the timeout for large files using server-initiated transfer</a>
+-   [FTP server messages](../t_st_ftpservermessages)
+-   [Set up FTP passive mode](../t_st_ftppassivemode)
+-   [FTP server limitations](../r_st_ftpserverlimitations)
+-   [Improve FTP performance on a multi-homed system](../t_st_improveftpperformance)
+-   [Increase the timeout for large files using server-initiated transfer](../t_st_increaseftptimeout)

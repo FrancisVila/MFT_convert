@@ -16,7 +16,7 @@
 
 Partner sign-on password, authorizing a local site access right check.
 
-The remote partner must submit this password to the local <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, during the connection phase. On the remote partner end, you must declare this
+The remote partner must submit this password to the local {{< TransferCFT/componentshortname  >}}, during the connection phase. On the remote partner end, you must declare this
 password as the NSPASSW parameter of the CFTPART object
 used in the transfer.
 

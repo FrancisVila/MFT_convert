@@ -14,4 +14,4 @@ The AS2 standard secures data with S/MIME (Secure/Multipurpose Internet Mail Ext
 
 The following topic provides an overview of the AS2 implementation:
 
--   <a href="c_st_as2overview" class="MCXref xref">AS2 implementation</a> - Provides an overview of the AS2 implementation.
+-   [AS2 implementation](c_st_as2overview) - Provides an overview of the AS2 implementation.

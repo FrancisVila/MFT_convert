@@ -24,8 +24,8 @@
 <p> </p>
 <p><br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Flows </span>&gt; <span class="bold_in_para">Add flow</span>.</p>
-<p>Create a flow named <span class="bold_in_para">multiple_files_flow</span>, and give it the identifier <span class="bold_in_para">flow02</span>.</p>
+         <td><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
+<p>Create a flow named <strong>multiple_files_flow</strong>, and give it the identifier <strong>flow02</strong>.</p>
 <p>Define Store_66 as the Source, and MainOffice as the Target.</p>
 <p><br />
 </p>         </td>
@@ -36,8 +36,8 @@
 <p> </p>         </td>
          <td><p>Enable a multiple files exchange.</p>
 <p> </p>         </td>
-         <td><p>Select the Source, and then <span class="bold_in_para">File properties</span>.</p>
-<p>Under Filename select <span class="bold_in_para">Multiple</span>.</p>
+         <td><p>Select the Source, and then <strong>File properties</strong>.</p>
+<p>Under Filename select <strong>Multiple</strong>.</p>
 <p> </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -46,7 +46,7 @@
 <p> </p>         </td>
          <td><p>Deploy the flow.</p>
 <p> </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Deploy </span>to save and deploy.</p>
+         <td><p>In click <strong>Deploy</strong> to save and deploy.</p>
 <p> </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -57,7 +57,7 @@
          <td><p>Add three files for the exchange.</p>
 <p> </p>
 <p> </p>         </td>
-         <td><p>Create a folder, you can name it <span class="bold_in_para">Store_66</span>, in the Store_66 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="code">runtime/pub </span>directory.</p>
+         <td><p>Create a folder, you can name it <strong>Store_66</strong>, in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime/pub </code>directory.</p>
 <p>Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.</p>
 <p> </p>         </td>
          <td>          </td>
@@ -70,16 +70,15 @@
          <td><p>Execute the SEND command.</p>
 <p> </p>
 <p> </p>         </td>
-         <td>From the source <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command: <span class="code"><br />
-CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</span>
-<p>Remember to replace <span class="code">&lt;instance_target&gt;</span> with the Transfer CFT instance for the target as it displays in your application list.</p>
+         <td>From the source {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code>
+<p>Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.</p>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>6         </td>
          <td>Monitor the transfer status.         </td>
-         <td>In the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> <span class="bold_in_para">Flows </span>tab, click <span class="bold_in_para">Monitoring </span>to check the status of the file exchange.         </td>
+         <td>In the <strong>Flows</strong> tab, click <strong>Monitoring</strong> to check the status of the file exchange.         </td>
          <td><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>

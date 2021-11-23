@@ -6,10 +6,10 @@
 
 The following topics provide how-to instructions for managing virtual groups:
 
--   <a href="#Add" class="MCXref xref">Add a virtual group</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable a virtual group</a>
--   <a href="#Edit" class="MCXref xref">Edit a virtual group</a>
--   <a href="#Delete" class="MCXref xref">Delete a virtual group</a>
+-   [Add a virtual group](#Add)
+-   [Enable or disable a virtual group](#Enable)
+-   [Edit a virtual group](#Edit)
+-   [Delete a virtual group](#Delete)
 
 <span id="Add"></span>
 

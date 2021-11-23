@@ -4,7 +4,7 @@
     "weight": "220"
 }This topic describes bandwidth session concepts. For parameter details, see the topic [About bandwidth control](../).
 
-In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, bandwidth control can occur at the following levels:
+In {{< TransferCFT/componentshortname  >}}, bandwidth control can occur at the following levels:
 
 -   Global
 -   Class

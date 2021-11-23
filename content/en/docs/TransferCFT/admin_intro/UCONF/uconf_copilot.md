@@ -4,11 +4,11 @@
     "weight": "290"
 }UNIX
 
-Refer to the [UCONF parameters](../uconf_directory) table for information on <span class="code">copilot.\*.unix </span>parameters.
+Refer to the [UCONF parameters](../uconf_directory) table for information on `copilot.*.unix `parameters.
 
 Alias management
 
-You can access customized file system directories via the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user interface HTTP server using aliases.
+You can access customized file system directories via the {{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
 
 To add a new alias, access the Unified Configuration uconf and configure the following:
 
@@ -47,14 +47,14 @@ Security for Cop**i**lot GUI
    <tbody>
       <tr>
          <td>copilot.http.onlyssl         </td>
-         <td>Enter Yes to restrict the access of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI with https.         </td>
+         <td>Enter Yes to restrict the access of the {{< TransferCFT/componentshortname  >}} UI with https.         </td>
       </tr>
    </tbody>
 </table>
 
 View available drives
 
-To view available drives from the <span class="bold_in_para">Edit a file</span> icon in the graphical user interface, define the following:
+To view available drives from the **Edit a file** icon in the graphical user interface, define the following:
 
 <table>
    <thead>
@@ -125,7 +125,7 @@ Use this parameter to define the client timeout in minutes. The default value is
 
 Web services
 
-Use this parameter to define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Web Services. See also [Setting up Web Services]().
+Use this parameter to define the {{< TransferCFT/componentshortname  >}} Web Services. See also [Setting up Web Services]().
 
 <table>
    <thead>
@@ -162,12 +162,12 @@ The following tables describe the UCONF parameters that determine the certificat
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
-The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example <span class="code">my\_certificate.pem</span>).
+The certificate type is dictated by the file name extension (.p12, .pkcs12, .der, .pem, for example `my_certificate.pem`).
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
--   <span class="code">copilot.ssl.sslkeyfile=&lt;not set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;set></span>, then the format is PKCS12
--   <span class="code">copilot.ssl.sslkeyfile= &lt;set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;not set></span>, then the format is PEM
+-   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
+-   `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
 <table>
    <thead>
@@ -308,8 +308,8 @@ There are two additional UCONF parameters to use for HTTPS connections:
 <li>47 = RSA_WITH_AES_128_CBC_SHA</li>
 <li>53 = RSA_WITH_AES_256_CBC_SHA</li>
 <li>59 = RSA_WITH_NULL_SHA256</li>
-<li><span class="span_1">60 = RSA_WITH_AES_128_CBC_SHA</span><span class="span_1">2</span><span class="span_1">56</span></li>
-<li><span class="span_1">61 = RSA_WITH_AES_256_CBC_SHA</span><span class="span_1">2</span><span class="span_1">56</span></li>
+<li></li>
+<li></li>
 </ul>         </td>
       </tr>
       <tr>

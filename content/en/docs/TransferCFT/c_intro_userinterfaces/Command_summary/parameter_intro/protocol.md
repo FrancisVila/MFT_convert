@@ -10,8 +10,8 @@
 
 #### CFTNET TYPE = TCP
 
-<span style="font-weight: bold;">PROTOCOL = { '  '
-| SOCKS4| SOCKS5 }</span>
+**PROTOCOL = { '  '
+| SOCKS4| SOCKS5 }**
 
 Defines the remote TCP network resource proxy used to access the second
 network:

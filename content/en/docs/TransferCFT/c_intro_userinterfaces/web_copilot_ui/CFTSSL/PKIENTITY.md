@@ -33,7 +33,7 @@ To define a certificate list, use the PKIENTITY parameters:
       <tr>
          <td>CERTIFICATES<br />
          </td>
-         <td>A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> ignores this ID when loading CFTSSL properties.         </td>
+         <td>A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{< TransferCFT/componentshortname  >}} ignores this ID when loading CFTSSL properties.         </td>
       </tr>
       <tr>
          <td><p>MODE</p>         </td>

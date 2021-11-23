@@ -6,7 +6,7 @@
 
 To configure streaming communications between the Edge and Back End server, take the following steps:
 
-1.  Exchange the Internal CA certificates of the Edge(s) and the Back End(s). To exchange CA certificates of a Back End and Edge, the CA certificate of the Back End should be exported and imported on the Edge and the CA certificate of the Edge should be exported and imported on the Back End. For additional information, refer to <a href="../c_st_certificates/t_st_trustedcas" class="MCXref xref">Manage trusted CAs</a>.
+1.  Exchange the Internal CA certificates of the Edge(s) and the Back End(s). To exchange CA certificates of a Back End and Edge, the CA certificate of the Back End should be exported and imported on the Edge and the CA certificate of the Edge should be exported and imported on the Back End. For additional information, refer to [Manage trusted CAs](../c_st_certificates/t_st_trustedcas).
     1.  On the Back End, select **Setup > Certificates**.
 
     2.  Click the **Trusted CAs** tab.
@@ -38,11 +38,11 @@ To configure streaming communications between the Edge and Back End server, take
       
     **On the Back End:**
 
-2.  Generate a self-issued local certificate server that will only be used for streaming communications. For additional information, refer to <a href="../c_st_certificates/t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>.
+2.  Generate a self-issued local certificate server that will only be used for streaming communications. For additional information, refer to [Generate a self-issued server certificate](../c_st_certificates/t_st_localcertificatesandcsrs#Generate).
 
-3.  Search for and configure the `Streaming.TrustedAliases` parameter with the alias of the CA certificate of the Edge that was imported. For information on searching for configuration parameters, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Search" class="MCXref xref">Search for a parameter</a>. For information on changing configuration parameters, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Change" class="MCXref xref">Change a parameter value</a>.
+3.  Search for and configure the `Streaming.TrustedAliases` parameter with the alias of the CA certificate of the Edge that was imported. For information on searching for configuration parameters, refer to [Search for a parameter](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Search). For information on changing configuration parameters, refer to [Change a parameter value](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Change).
 
-4.  Add a new zone on the Back End for the Edge. For additional network zone configuration information, refer to <a href="../c_st_networkzones/t_st_networkzones#Specify4" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a>  
+4.  Add a new zone on the Back End for the Edge. For additional network zone configuration information, refer to [Manage the communication across Transaction Manager, protocol and proxy servers](../c_st_networkzones/t_st_networkzones#Specify4)  
 
     > **Note:**
     >
@@ -57,9 +57,9 @@ To configure streaming communications between the Edge and Back End server, take
       
     **On the Edge:**
 
-6.  Generate a self-issued local certificate server that will only be used for streaming communications. For additional information, refer to <a href="../c_st_certificates/t_st_localcertificatesandcsrs#Generate" class="MCXref xref">Generate a self-issued server certificate</a>.
+6.  Generate a self-issued local certificate server that will only be used for streaming communications. For additional information, refer to [Generate a self-issued server certificate](../c_st_certificates/t_st_localcertificatesandcsrs#Generate).
 
-7.  Edit the Network Zone node and change the default **localhost** to the IP address of the Edge server itself. To edit the Network Zone node, select the alias of the Network Zone from the *Network Zone List* and then select the Node from the *Node List*. For additional configuration information, refer to <a href="../c_st_networkzones/t_st_networkzones#Create" class="MCXref xref">Create a network zone to define communications with SecureTransport Edge servers</a>.  
+7.  Edit the Network Zone node and change the default **localhost** to the IP address of the Edge server itself. To edit the Network Zone node, select the alias of the Network Zone from the *Network Zone List* and then select the Node from the *Node List*. For additional configuration information, refer to [Create a network zone to define communications with SecureTransport Edge servers](../c_st_networkzones/t_st_networkzones#Create).  
 
     > **Note:**
     >
@@ -67,7 +67,7 @@ To configure streaming communications between the Edge and Back End server, take
 
 8.  Verify that the ports for the services (FTP, HTTP, etc.) are the same and match the ports, configured for the same zone on the Back End. For each protocol, select the alias of the certificate generated in Step 6 for the **SSL Key Alias**.
 
-9.  Search for and configure the `Streaming.TrustedAliases` parameter with the alias of the CA certificate of the Back End that was imported. For information on searching for configuration parameters, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Search" class="MCXref xref">Search for a parameter</a>. For information on changing configuration parameters, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Change" class="MCXref xref">Change a parameter value</a>.
+9.  Search for and configure the `Streaming.TrustedAliases` parameter with the alias of the CA certificate of the Back End that was imported. For information on searching for configuration parameters, refer to [Search for a parameter](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Search). For information on changing configuration parameters, refer to [Change a parameter value](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters#Change).
 
 10. For the streaming communication configuration to take effect, restart all of the services (`stop_all`/`start_all`) on both Back End and the Edge.
 

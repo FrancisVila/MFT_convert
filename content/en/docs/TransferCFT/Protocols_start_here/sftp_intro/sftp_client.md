@@ -2,9 +2,9 @@
     "title": "Configure Transfer CFT as an SFTP client",
     "linkTitle": "Configure the Transfer CFT SFTP client",
     "weight": "170"
-}T<span style="font-weight: normal;">**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**</span>
+}T
 
-To configure a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> SFTP client:
+To configure a {{< TransferCFT/transfercftname  >}} SFTP client:
 
 1.  Define the SFTP protocol.
 2.  Add the server public key in client profile.
@@ -98,7 +98,7 @@ Use  one of the following methods to configure the client password:
 
 <!-- -->
 
--   Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in <span class="code">uconf:cft.server.authentication\_method </span>is used.
+-   Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note:**
 >

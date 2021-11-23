@@ -16,7 +16,7 @@ The following changes are added to the {{< SecureTransport/securetransportname  
    <tbody>
       <tr>
          <td>5.5 October 2020 Update         </td>
-         <td><a href="../custom_connector/custom_protocol" class="MCXref xref">Implement a custom protocol connector</a> updated with SPI v1.8         </td>
+         <td><a href="../custom_connector/custom_protocol">Implement a custom protocol connector</a> updated with SPI v1.8         </td>
       </tr>
    </tbody>
 </table>

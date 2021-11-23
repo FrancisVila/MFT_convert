@@ -2,7 +2,7 @@
     "title": "Access Control Management",
     "linkTitle": "Access Control Management",
     "weight": "120"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 ## About Access Control Management
 
@@ -20,7 +20,7 @@ You can manage user Access Control in Gateway using any of the following methods
       </tr>
       <tr>
          <td><p><a href="users_and_profiles_about">Gateway</a></p>         </td>
-         <td><p>Users are managed by <span style="font-style: italic;">User</span> and <span style="font-style: italic;">Profile</span> objects in Gateway.</p>
+         <td><p>Users are managed by <em>User</em> and <em>Profile</em> objects in Gateway.</p>
 <p>Users must supply their authentication (user ID and password) in their login request.</p>
 <p>Access control is based on object type.</p>
 <p>A user with authorized access to a type of object has the same access to all instances of that object type.</p>         </td>
@@ -31,7 +31,7 @@ You can manage user Access Control in Gateway using any of the following methods
       <tr>
          <td><p><a href="passport_am_about">PassPort AM</a></p>         </td>
          <td><p>Users are managed by Axway PassPort AM.</p>
-<p>Access control is managed centrally for all products of the <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span>.</p>         </td>
+<p>Access control is managed centrally for all products of the {{< Gateway/platformorsuiteshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -44,11 +44,11 @@ User Access Control applies to Gateway objects, whatever the interface used: the
 
 ### Users and Profile objects
 
-The <span style="font-style: italic;">User</span> and <span style="font-style: italic;">Profile</span> objects in Gateway enable you to define user identification and access rights. Typically only Administrators have access to these objects.
+The *User* and *Profile* objects in Gateway enable you to define user identification and access rights. Typically only Administrators have access to these objects.
 
 ##### Users
 
-The <span style="font-style: italic;">User</span> object defines properties for each user:
+The *User* object defines properties for each user:
 
 -   Name and password
 -   Group for the user
@@ -56,7 +56,7 @@ The <span style="font-style: italic;">User</span> object defines properties for 
 
 ##### Profiles
 
-The <span style="font-style: italic;">Profile</span> object defines the type of operations a set of users can perform on each Gateway object. All users associated with the same user Profile have identical access rights. You can define authorization for the following types of operation:
+The *Profile* object defines the type of operations a set of users can perform on each Gateway object. All users associated with the same user Profile have identical access rights. You can define authorization for the following types of operation:
 
 -   Read: retrieve or list objects
 -   Write: create new instance of an object
@@ -114,6 +114,6 @@ Related topics
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

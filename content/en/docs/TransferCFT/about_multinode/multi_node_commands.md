@@ -2,7 +2,7 @@
     "title": "Multi-node commands and management",
     "linkTitle": "Commands and management",
     "weight": "190"
-}This topic describes how to mange <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> nodes, and related actions such as:
+}This topic describes how to mange {{< TransferCFT/componentshortname  >}} nodes, and related actions such as:
 
 -   [Initialize internal data files](#Initiali)
 -   [Start and stop the cluster](#Start)
@@ -70,7 +70,7 @@ Usage
 
 Start all node managers
 
-For each host perform the command: <span class="code">copstart</span>
+For each host perform the command: `copstart`
 
 <span id="Stop"></span>
 
@@ -92,7 +92,7 @@ Usage
 
 Stop all node managers
 
-For each host, run the command: <span class="code">copstop</span>
+For each host, run the command: `copstop`
 
 ### Start a node or all nodes
 
@@ -172,9 +172,9 @@ cft restart \[options\]
 
 Options
 
-The<span class="code"> -n|-node &lt;node\_id> </span>re-starts the node &lt;node\_id>.
+The` -n|-node <node_id>   `re-starts the node &lt;node\_id>.
 
-The <span class="code">-ln|-local\_node</span> re-starts all nodes hosted locally that are running on the host from where the command is performed.
+The `-ln|-local_node` re-starts all nodes hosted locally that are running on the host from where the command is performed.
 
 Usage
 
@@ -196,17 +196,17 @@ All hosted locally nodes are re-started by the node managers.
 
     cft restart –ln
 
-### Stop the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> cluster
+### Stop the {{< TransferCFT/transfercftname  >}} cluster
 
 1.  On the first host:
-    -   To stop all nodes, run: <span class="code">cft stop</span>
-    -   To stop the node manager, run: <span class="code">copstop</span>
-2.  On each additional host, stop the node manager. Run: <span class="code">copstop</span>
+    -   To stop all nodes, run: `cft stop`
+    -   To stop the node manager, run: `copstop`
+2.  On each additional host, stop the node manager. Run: `copstop`
 
-### Start the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> cluster
+### Start the {{< TransferCFT/transfercftname  >}} cluster
 
-1.  On each host, start the node manager. Run: <span class="code">copstart</span>
-2.  On the last host, start all nodes. Run: <span class="code">cft start</span>
+1.  On each host, start the node manager. Run: `copstart`
+2.  On the last host, start all nodes. Run: `cft start`
 
 ## Check the status
 
@@ -216,7 +216,7 @@ All hosted locally nodes are re-started by the node managers.
 
 #### listnode
 
-The CFTUTIL listnode displays the status of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cluster, including information about node managers (Copilots) and nodes.
+The CFTUTIL listnode displays the status of the {{< TransferCFT/componentshortname  >}} cluster, including information about node managers (Copilots) and nodes.
 
 Example
 
@@ -233,7 +233,7 @@ In this example, the four nodes running on four different hosts are displayed.
 
 #### copstatus
 
-The <span class="code">copstatus </span>command checks the Copilot status.
+The `copstatus `command checks the Copilot status.
 
 Syntax
 
@@ -249,7 +249,7 @@ Usage
 
 #### cftping
 
-The <span class="code">cftping </span>command checks the status of one or all enabled nodes. By default, the cftping checks status of all nodes.
+The `cftping `command checks the status of one or all enabled nodes. By default, the cftping checks status of all nodes.
 
 Return values:
 
@@ -263,10 +263,10 @@ cftping \[options\]
 
 Options
 
--   <span class="code">-n|-node &lt;node\_id></span>: checks the status of the node &lt;node\_id>
--   <span class="code">-v</span>: verbose mode
--   <span class="code">-p</span>: shows PID (Process IDs) of all CFTMAIN processes
--   <span class="code">-h</span>: shows the help
+-   `-n|-node <node_id>`: checks the status of the node &lt;node\_id>
+-   `-v`: verbose mode
+-   `-p`: shows PID (Process IDs) of all CFTMAIN processes
+-   `-h`: shows the help
 
 ### Check the log and transfers' status
 
@@ -274,7 +274,7 @@ Options
 
 #### listlog
 
-Use the <span class="code">CFTUTIL listlog</span> command to display the log content, which can be defined according to certain criteria, such as date or node.
+Use the `CFTUTIL listlog` command to display the log content, which can be defined according to certain criteria, such as date or node.
 
 Additionally, you can filter the log according to multiple criteria, or view a log that is merged for several nodes in cluster mode. See [LISTLOG](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listlog).
 
@@ -287,7 +287,7 @@ Additionally, you can filter the log according to multiple criteria, or view a l
 
 #### display/listcat
 
-Use the <span class="code">CFTUTIL display</span> or CFTUTIL listcat to show catalog transfer records. In multi-node, these commands aggregate all catalog internal data files to show catalog transfer records as a unique catalog. See [DISPLAY](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/display_command), [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command).
+Use the `CFTUTIL display` or CFTUTIL listcat to show catalog transfer records. In multi-node, these commands aggregate all catalog internal data files to show catalog transfer records as a unique catalog. See [DISPLAY](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/display_command), [LISTCAT](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command).
 
 <span id="Manage"></span>
 
@@ -350,7 +350,7 @@ Usage on UNIX/Windows
 
 2.  Check that all Transfer CFT nodes and node manager processes are stopped on the host to be removed.
 
-3.  Execute the following command, where &lt;host to remove> is the name of host to remove as referenced in <span class="code">cft.multi\_node.hostnames</span>:  
+3.  Execute the following command, where &lt;host to remove> is the name of host to remove as referenced in `cft.multi_node.hostnames`:  
 
 
         cft remove_host -hostname <host to remove>
@@ -365,7 +365,7 @@ Usage on UNIX/Windows
 
 #### cft add\_node
 
-The cft add\_node command adds a new node to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1) . The internal data files associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate). After adding the new node, you can enable it using the command: <span class="code">cft enable\_node -n x</span>
+The cft add\_node command adds a new node to the {{< TransferCFT/componentshortname  >}} cluster. The number of nodes is incremented (uconf: cft.multi\_node.nodes = N+1) . The internal data files associated with the new node are initialized and the node state is set to DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate). After adding the new node, you can enable it using the command: `cft enable_node -n x`
 
 Syntax
 
@@ -401,7 +401,7 @@ Usage
 
 #### cft disable\_node
 
-The cft disable\_node command disables the node identified by the highest node id in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cluster and only that node.
+The cft disable\_node command disables the node identified by the highest node id in the {{< TransferCFT/componentshortname  >}} cluster and only that node.
 
 -   The node un-registers its listening points from the connection dispatcher so that it no longer receives incoming requests.
 -   Outgoing requests coming from APIs are no longer dispatched to this node.
@@ -425,7 +425,7 @@ Usage
 
 #### cft remove\_node
 
-The cft remove\_node command removes the node identified by the highest node id in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cluster, and only that node. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state). See also, [Disable a node](#Disable).
+The cft remove\_node command removes the node identified by the highest node id in the {{< TransferCFT/componentshortname  >}} cluster, and only that node. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state). See also, [Disable a node](#Disable).
 
 The node number is decremented (uconf: cft.multi\_node.nodes = N-1), and any internal data files associated with the node are removed.
 
@@ -457,6 +457,6 @@ In this example there are two hosts (host A and host B), and two nodes (node\_0 
 2.  The host A node manager re-starts the node\_0 locally.
 3.  Node\_0 and node\_1 run on host B.
 4.  Host A and its node manager are manually re-started.
-5.  From one of the hosts, host A or host B, execute the command:<span class="code"> cft restart –n 0</span>  
+5.  From one of the hosts, host A or host B, execute the command:` cft restart –n 0`  
     See [Restart a node](#Restart) for details.
 6.  The host A node manager restarts the node\_0 locally.

@@ -2,7 +2,7 @@
     "title": "Configuration parameters",
     "linkTitle": "Multi-node configuration parameters",
     "weight": "240"
-}This section presents the **multi-node** parameters and their default values. The column <span class="bold_in_para">Modify </span>indicates a strong recommendation that you should not modify this value if <span class="bold_in_para">No </span>is indicated.
+}This section presents the **multi-node** parameters and their default values. The column **Modify** indicates a strong recommendation that you should not modify this value if **No** is indicated.
 
 <table>
    <thead>
@@ -69,7 +69,7 @@ sharedidt.enable</p>         </td>
          <td><p>cft.multi_node.<br />
 shared.filesystem.type</p>         </td>
          <td><p>Used to select appropriate consistency enforcement strategy.</p>
-<p>If <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is using NFSv4, you must enter the value <span class="code">nfs </span>in lower case.</p>         </td>
+<p>If {{< TransferCFT/componentshortname  >}} is using NFSv4, you must enter the value <code>nfs </code>in lower case.</p>         </td>
          <td><p>unknown</p>         </td>
          <td><p>unknown, posix, nfs, cifs</p>         </td>
          <td>Yes         </td>
@@ -177,7 +177,7 @@ nodes.&lt;node_id&gt;.nodestate</p>         </td>
       <tr>
          <td><p>cft.multi_node.<br />
 nodes.&lt;node_id&gt;.state</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> status</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} status</p>         </td>
          <td><p>STOPPED</p>         </td>
          <td><p>INITIALIZING,</p>
 <p>STARTING, RUNNING, STOPPING, STOPPED,</p>
@@ -219,7 +219,7 @@ nodes.&lt;node_id&gt;.prx_port</p>         </td>
       <tr>
          <td><p>cft.multi_node.<br />
 nodes.&lt;node_id&gt;.disabling</p>         </td>
-         <td><p>Sets flag when disabling <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+         <td><p>Sets flag when disabling {{< TransferCFT/componentshortname  >}}.</p>         </td>
          <td><p>No</p>         </td>
          <td><p>Yes, No</p>         </td>
          <td>No         </td>

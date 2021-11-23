@@ -323,7 +323,7 @@ Run the following command:
 
 6.  Type `commit` to save the changes.
 
-7.  Type `show` to see the configuration. See <a href="../verifiy_cluster" class="MCXref xref">Verify cluster configuration</a>.  
+7.  Type `show` to see the configuration. See [Verify cluster configuration](../verifiy_cluster).  
 
 
 

@@ -706,10 +706,8 @@ The Sender and the Receiver record each transfer only once.         </td>
          <td><p>If the value of the State attribute is:</p>
 <ul>
 <li>SENT: The value of this attribute is local date of the creation of the file on the Sender side.</li>
-<li><span style="font-size: 11; font-family: Calibri; color: #000000">RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.
-</span></li>
-</ul>
-<p><span style="font-size: 11; font-family: Calibri; color: #000000">ITP: transfer request creation date</span></p>         </td>
+<li></li>
+</ul>         </td>
          <td>From FDATE (Catalog)         </td>
          <td>From date_create: date         </td>
          <td>  MLHDATR         </td>
@@ -721,10 +719,8 @@ The Sender and the Receiver record each transfer only once.         </td>
          <td><p>If the value of the State attribute is:</p>
 <ul>
 <li>SENT: The value of this attribute is local time of the creation of the file on the Sender side.</li>
-<li><span style="font-size: 11; font-family: Calibri; color: #000000">RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.
-</span></li>
-</ul>
-<p><span style="font-size: 11; font-family: Calibri; color: #000000">ITP: transfer request creation time.</span></p>         </td>
+<li></li>
+</ul>         </td>
          <td>From FTIME (Catalog)         </td>
          <td>From date_create: time         </td>
          <td>  MLHTIMR         </td>
@@ -1014,7 +1010,7 @@ same values         </td>
          <td><p>TYPEREQ={S|C or M}</p>         </td>
       </tr>
       <tr>
-         <td><span style="font-size: 11; font-family: Calibri; color: #000000">FileOrganization (ITP Core :</span><span style="font-size: 11; font-family: Calibri; color: #000000">FileOrganisation)</span>         </td>
+         <td>         </td>
          <td>String         </td>
          <td>25         </td>
          <td><ul>
@@ -1079,8 +1075,7 @@ same values         </td>
       </tr>
       <tr>
          <td>Transcoding         </td>
-         <td><span style="font-size: 11; font-family: Calibri; color: #000000">Integer
-</span><span style="font-size: 11; font-family: Calibri; color: #000000">(ITP Core : String)</span>         </td>
+         <td>         </td>
          <td>(ITP Core: 25)         </td>
          <td><p>Character code of the transferred data:</p>
 <ul>

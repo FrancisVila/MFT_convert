@@ -8,23 +8,23 @@
 
 ## For new users
 
-<a href="c_secgd_intro" class="MCXref xref">Security introduction</a>
+[Security introduction](c_secgd_intro)
 
 ## For existing users
 
-<a href="c_secgd_sdl" class="MCXref xref">Secure Development Lifecycle</a>
+[Secure Development Lifecycle](c_secgd_sdl)
 
-<a href="c_secgd_cert_intro" class="MCXref xref">Certifications</a>
+[Certifications](c_secgd_cert_intro)
 
-<a href="c_secgd_features_intro" class="MCXref xref">Security features</a>
+[Security features](c_secgd_features_intro)
 
-<a href="c_secgd_iam_intro" class="MCXref xref">Identity and access management</a>
+[Identity and access management](c_secgd_iam_intro)
 
-<a href="c_secgd_config_intro" class="MCXref xref">Configuration</a>
+[Configuration](c_secgd_config_intro)
 
-<a href="c_secgd_bp_intro" class="MCXref xref">Security best practices</a>
+[Security best practices](c_secgd_bp_intro)
 
-<a href="" class="MCXref xref">Ciphers and cipher suites</a>
+[Ciphers and cipher suites]()
 
 ## Get more help
 

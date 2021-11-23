@@ -6,11 +6,11 @@
 
 The following topics provide how-to instructions for managing download restrictions:
 
--   <a href="#Add" class="MCXref xref">Add a download restriction</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable a download restriction</a>
--   <a href="#Edit" class="MCXref xref">Edit a download restriction</a>
--   <a href="#Reorder" class="MCXref xref">Reorder download restrictions</a>
--   <a href="#Delete" class="MCXref xref">Delete a download restriction</a>
+-   [Add a download restriction](#Add)
+-   [Enable or disable a download restriction](#Enable)
+-   [Edit a download restriction](#Edit)
+-   [Reorder download restrictions](#Reorder)
+-   [Delete a download restriction](#Delete)
 
 <span id="Add"></span>
 

@@ -6,8 +6,8 @@
 
 Start the Axway installer using the version appropriate command:
 
--   Versions lower than 4.5:<span class="code"> setupUNIX.sh update</span>
--   Versions higher than 4.5:<span class="code"> update.sh </span>
+-   Versions lower than 4.5:` setupUNIX.sh update`
+-   Versions higher than 4.5:` update.sh `
 
 Follow the screen instructions to display information, and check the:
 

@@ -101,7 +101,7 @@ In PeSIT D CFT profile, PeSIT E or ODETTE protocols, the end of transfer
 procedure can activate the sending to the party of a response message
 intended to inform that the transfer has been correctly completed. At
 the party end, the initial transfer entry changes to the (supplementary)
-<span style="font-weight: bold;">A</span> Acknowledged state.
+**A** Acknowledged state.
 
 The end of receive procedure described in this third example, is used
 to activate this transmission on receiving a file with an identifier (IDF)

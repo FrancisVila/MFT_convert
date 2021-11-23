@@ -50,4 +50,4 @@ Use the following uconf parameters to manage the command-history settings.
 
 ### Modify the command list
 
-The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the <span class="code">cft.readline.history\_fname</span> parameter.
+The file containing the list of commands is a text file that you can edit or remove, and its location is defined in the `cft.readline.history_fname` parameter.

@@ -3,7 +3,7 @@
     "linkTitle": "Unix operations",
     "weight": "160"
 }The elements and tasks required to
-start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> for the first time include:
+start {{< TransferCFT/componentshortname  >}} for the first time include:
 
 -   [Set the environment](#Set)
 -   [Start and stopping Transfer
@@ -17,17 +17,17 @@ start <span class="mc-variable axway_variables.Component_Short_Name variable">Tr
 
 ## Set the environment
 
-After installing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
-, but before starting <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> you should:
+After installing {{< TransferCFT/componentshortname  >}}
+, but before starting {{< TransferCFT/componentshortname  >}} you should:
 
--   Execute the <span class="code">profile</span> in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> runtime directory to define environment
-    variables. Run: <span class="code">‘. ./profile’</span>
+-   Execute the `profile` in the {{< TransferCFT/componentshortname >}} runtime directory to define environment
+    variables. Run: `‘. ./profile’`
 
 -   Create a new set of Transfer
     CFT working files, parameters, partners, catalog, communication file, logs,
-    use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the <span class="code">runtime/conf </span>directory. You can configure these during the product installation, or manually after installation.
+    use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime/conf `directory. You can configure these during the product installation, or manually after installation.
 
--   Use <span class="code">cftinit &lt;configuration\_file></span> > and/or <span class="code">cftupdate</span> to interpret the parameter and
+-   Use `cftinit <configuration_file>` > and/or `cftupdate` to interpret the parameter and
     partner files.  
 
 
@@ -48,8 +48,8 @@ After installing <span class="mc-variable axway_variables.Component_Short_Name v
 
 Sample file details
 
--   <span class="code">cft-tcp.conf</span>: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.)
--   <span class="code">cft-tcp-part.conf</span>: Contains partner definitions (CFTPART, CFTTCP, CFTSSL)
+-   `cft-tcp.conf`: Contains PARM object definitions (PARM, CAT, COM, LOG, ACCNT, PROT, SEND, RECV,...etc.)
+-   `cft-tcp-part.conf`: Contains partner definitions (CFTPART, CFTTCP, CFTSSL)
 
 Delivered partners are:
 
@@ -59,7 +59,7 @@ Delivered partners are:
 
 ## Start and stop commands
 
-The following table lists the commands according to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> version.
+The following table lists the commands according to {{< TransferCFT/componentlongname  >}} version.
 
 <table>
    <thead>
@@ -100,7 +100,7 @@ The following table lists the commands according to <span class="mc-variable axw
 
 ### Start up
 
-You can start Transfer CFT with the <span class="code">cft start </span>utility; see also Transfer CFT Management Utilities.
+You can start Transfer CFT with the `cft start `utility; see also Transfer CFT Management Utilities.
 
 <span id="Shut"></span>
 
@@ -108,8 +108,20 @@ You can start Transfer CFT with the <span class="code">cft start </span>utility;
 
 You can use one of the following methods to shut down Transfer CFT:
 
--   The <span class="code">CFTUTIL </span>utility
--   The <span class="code">cft </span> utility
+-   The `CFTUTIL `utility
+
+<!-- -->
+
+
+
+    CFTUTIL shut fast=no
+    or
+    CFTUTIL shut fast=yes
+
+The `cft ` utility
+
+
+    cft stop
 
 For more information, see the administrative commands in [Manage the Transfer CFT server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/start_stop_cft.htm).
 
@@ -117,4 +129,4 @@ For more information, see the administrative commands in [Manage the Transfer CF
 
 ## Start or stop via a user interface
 
-You can also use either [Central Governance](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CentralGov/operations/t_startCFT.htm) or the Transfer CFT to start or shut down <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>.
+You can also use either [Central Governance](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CentralGov/operations/t_startCFT.htm) or the Transfer CFT to start or shut down {{< TransferCFT/hflongproductname  >}}.

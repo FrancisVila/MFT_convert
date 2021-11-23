@@ -10,15 +10,15 @@
 
 Type of shutdown:
 
--   YES: Immediate shutdown of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+-   YES: Immediate shutdown of {{< TransferCFT/componentshortname >}}.
     All the transfers in process are interrupted and change
     to the D state. No pending transfer is activated.
 
 <!-- -->
 
--   NO: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> completes all the transfers
+-   NO: {{< TransferCFT/componentshortname >}} completes all the transfers
     in process and shuts down. No new transfer is initialized.
--   KILL: Immediate <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> shutdown occurs
+-   KILL: Immediate {{< TransferCFT/componentshortname >}} shutdown occurs
     but without updating the transfer states.
 
 [Return to Command index](../../)

@@ -56,7 +56,7 @@ The following table presents some useful configuration properties you can edit i
 <li><p><code>useOracleExternal</code>, <code>useOracleExternal</code>, useMSSQLExternal, <code>usePostgreSQLExternal</code> for an external database</p></li>
 </ul>
 <p>Must be set to <code>useDBLocal</code> when installing {{< SecureTransport/securetransportname  >}} Edge.</p>
-<p>For more information, see <a href="#Database" class="MCXref xref">Database-specific configurable properties</a>.</p>         </td>
+<p>For more information, see <a href="#Database">Database-specific configurable properties</a>.</p>         </td>
       </tr>
       <tr>
          <td><p>externalDBUseExistingSchema</p>
@@ -85,7 +85,7 @@ The following table presents some useful configuration properties you can edit i
          <td><p>The path to the <code>taeh</code> file you copied to this system. If blank, the installer creates a new secret file.</p>
 <ul>
 <li><p>If you are installing the first server in a cluster, you can specify a secret file or have the installer create one. Before you install {{< SecureTransport/componentshortname  >}} on the other cluster nodes, you must copy the secret file to those systems.</p></li>
-<li><p>If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. See <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.</p></li>
+<li><p>If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. See <a href="../../../prereqs_overview/secret_file">Secret file</a>.</p></li>
 </ul>         </td>
       </tr>
       <tr>
@@ -577,7 +577,7 @@ When using external databases (Oracle, MSSQL or PostgreSQL) you must make sure t
 
 **Related topics**
 
--   <a href="../silent-install-example-mariadb" class="MCXref xref">Example silent installation files: SecureTransport Server with MariaDB database on Windows</a>
--   <a href="../silent-install-cluster-externaldb" class="MCXref xref">Example silent installation files: SecureTransport Server with Oracle database on a Linux cluster</a>
+-   [Example silent installation files: SecureTransport Server with MariaDB database on Windows](../silent-install-example-mariadb)
+-   [Example silent installation files: SecureTransport Server with Oracle database on a Linux cluster](../silent-install-cluster-externaldb)
 
  

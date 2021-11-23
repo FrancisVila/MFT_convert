@@ -18,8 +18,8 @@ The {{< SecureTransport/componentshortname  >}} LDAP integration includes:
 
 The following topics provide LDAP connections, binds, and searches information and logins, agents, domains, home folders, and use type ranges for LDAP:
 
--   <a href="../c_st_ldap_connections_binds_searches" class="MCXref xref">LDAP connections, binds, and searches</a> - Describes LDAP connections, binds, and searches.
--   <a href="../c_st_ldap_logins" class="MCXref xref">LDAP logins</a> - Describes LDAP logins and provides how-to instructions for logging into LDAP.
--   <a href="../t_st_ldapsettings" class="MCXref xref">LDAP domains</a> - Describes the LDAP domains.
--   <a href="../t_st_ldaphomefolders" class="MCXref xref">LDAP home folders</a> - Describes the LDAP home folders.
--   <a href="../t_st_ldapusertype" class="MCXref xref">LDAP user type ranges</a> - Describes the LDAP user type ranges.
+-   [LDAP connections, binds, and searches](../c_st_ldap_connections_binds_searches) - Describes LDAP connections, binds, and searches.
+-   [LDAP logins](../c_st_ldap_logins) - Describes LDAP logins and provides how-to instructions for logging into LDAP.
+-   [LDAP domains](../t_st_ldapsettings) - Describes the LDAP domains.
+-   [LDAP home folders](../t_st_ldaphomefolders) - Describes the LDAP home folders.
+-   [LDAP user type ranges](../t_st_ldapusertype) - Describes the LDAP user type ranges.

@@ -6,7 +6,7 @@
 
 Unlike transfer sites for other transfer protocols, a PeSIT transfer site is also used for transfers initiated by the external PeSIT partner (considered client-initiated by {{< SecureTransport/componentshortname  >}}). Only the **Site Name** is required in that case to define the partnership, so a PeSIT transfer site needs only a **Site Name** if it is not used for transfers initiated by the {{< SecureTransport/componentshortname  >}} server on which it is defined.
 
-For a PeSIT transfer site, the **Site Name** designates the destination for an incoming routed transfer. For more information, see <a href="#Select" class="MCXref xref">Set a PeSIT default transfer site for routing</a>.
+For a PeSIT transfer site, the **Site Name** designates the destination for an incoming routed transfer. For more information, see [Set a PeSIT default transfer site for routing](#Select).
 
 <span id="General"></span>
 
@@ -28,11 +28,11 @@ The following table describes the general options for a PeSIT transfer site.
       </tr>
       <tr>
          <td>Host         </td>
-         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Port         </td>
-         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Alternative addresses         </td>
@@ -61,7 +61,7 @@ The following table describes the general options for a PeSIT transfer site.
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Transfer Settings</strong></p>
@@ -85,7 +85,7 @@ The following table describes the general options for a PeSIT transfer site.
          <td>Enable FIPS Transfer         </td>
          <td><p>Restrict PeSIT to use only FIPS 140-2 Level 1 certified cryptographic libraries. This field is displayed when the <strong>Use TLS/SSL</strong> option is selected.</p>
 <p>When you enable FIPS transfer mode, the panel expands with an additional field that lets you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>Pesit.FIPS.SIT.Ciphers</code> configuration option.</p>
-<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689" class="MCXref xref">FIPS transfer mode</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
+<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689">FIPS transfer mode</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
       </tr>
       <tr>
          <td>Login certificate         </td>
@@ -216,7 +216,7 @@ Scroll down to the bottom of the screen and click the **Show Advanced Settings**
       </tr>
       <tr>
          <td>User Message Send         </td>
-         <td><p>A string sent as PI 99 when the {{< SecureTransport/componentshortname  >}} Server initiates a file transfer to the partner PeSIT server. The field may contain expressions. The tool tip lists valid expressions. If {{< SecureTransport/componentshortname  >}} received the file using PeSIT, it retained the values of all the PeSIT PI codes as metadata and the PeSIT expression language variables contain those values. See also <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>, especially <a href="../../../c_st_expressionlanguage/r_st_expressionlanguagepesitvariables#Appendix_Exp_Lang_Rules_3592148187_1021690" class="MCXref xref">PeSIT variables</a>.</p>
+         <td><p>A string sent as PI 99 when the {{< SecureTransport/componentshortname  >}} Server initiates a file transfer to the partner PeSIT server. The field may contain expressions. The tool tip lists valid expressions. If {{< SecureTransport/componentshortname  >}} received the file using PeSIT, it retained the values of all the PeSIT PI codes as metadata and the PeSIT expression language variables contain those values. See also <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a>, especially <a href="../../../c_st_expressionlanguage/r_st_expressionlanguagepesitvariables#Appendix_Exp_Lang_Rules_3592148187_1021690">PeSIT variables</a>.</p>
 <p>The string that results from the evaluation of the expression must be at most 512 characters long.</p>         </td>
       </tr>
       <tr>
@@ -328,7 +328,7 @@ Advanced SSL settings allow you to define Cipher suites and SSL protocols with 
 
 The following section provides how-to instructions for selecting a default PeSIT transfer site for routing:
 
--   <a href="#Select" class="MCXref xref">Set a PeSIT default transfer site for routing</a>
+-   [Set a PeSIT default transfer site for routing](#Select)
 
 <span id="Select"></span>
 
@@ -351,13 +351,13 @@ When {{< SecureTransport/componentshortname  >}} routes a transferred file to a 
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

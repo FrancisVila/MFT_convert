@@ -55,7 +55,7 @@ used in FNAME except in the case of an implicit SEND command.
 The ‘&’ character used here replaces the char\_symb character specific
 to each operating system .
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-style: italic;">Transfer CFT</span> *Installation and Operations Guide* that
+Refer to the {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
 corresponds to your OS.
 
 ### Reconstitute a filename
@@ -145,7 +145,7 @@ the same as the last notation used in the JCL.
 This section
 provides an example of how to list a directory.
 
-<span class="autonumber"></span>Example of listing a directory
+Example of listing a directory
 
 
     FNAME={dirname | mask}
@@ -169,7 +169,7 @@ the name of a selected file.
 This section
 provides an example of sending a group of files based on a selection.
 
-Where, <span class="code">FNAME={#mask | #dirname}</span>
+Where, `FNAME={#mask | #dirname}`
 
 The name specified can be a generic file name or a directory name.
 

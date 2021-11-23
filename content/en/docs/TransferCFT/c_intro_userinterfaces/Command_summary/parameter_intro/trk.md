@@ -13,8 +13,8 @@
 \[TRK = {<u>"value of TRKSEND/TRKRECV from CFTPARM</u>"
 | ALL | NO | SUMMARY | UNDEFINED}\]
 
-Specifies how much detail <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> provides
-Sentinel about transfers. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sends detail about the
+Specifies how much detail {{< TransferCFT/componentshortname  >}} provides
+Sentinel about transfers. {{< TransferCFT/componentshortname  >}} sends detail about the
 transfers in the form of tracked instances.
 
 The possible values of this parameter include:
@@ -37,8 +37,8 @@ The possible values of this parameter include:
 **\[TRK = { ALL
 | NO | SUMMARY | <u>UNDEFINED</u>}\]**
 
-Specification of how much detail <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> provides Sentinel about transfers
-with a partner. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sends detail about the transfers in the form of tracked
+Specification of how much detail {{< TransferCFT/componentshortname  >}} provides Sentinel about transfers
+with a partner. {{< TransferCFT/componentshortname  >}} sends detail about the transfers in the form of tracked
 instances. The possible values of this parameter include:
 
 -   NO: The monitor

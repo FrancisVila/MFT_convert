@@ -20,11 +20,11 @@
           </tr>
           <tr>
              <td>Default enrollment account template         </td>
-             <td>{{< SecureTransport/componentshortname  >}} uses this account template when enrolling an adhoc file transfer recipient. For information about account templates, see <a href="../../c_st_advancedaccountadministration/c_st_accounttemplates#Advanced_Accounts_2036285406_1088507" class="MCXref xref">Account templates</a>.         </td>
+             <td>{{< SecureTransport/componentshortname  >}} uses this account template when enrolling an adhoc file transfer recipient. For information about account templates, see <a href="../../c_st_advancedaccountadministration/c_st_accounttemplates#Advanced_Accounts_2036285406_1088507">Account templates</a>.         </td>
           </tr>
           <tr>
              <td>Default notification mail template         </td>
-             <td>{{< SecureTransport/componentshortname  >}} uses this mail template to create all notification emails to adhoc file transfer recipients and senders. For more information about mail templates, see <a href="../t_st_mailtemplates#SetupMenu_1217491348_1149202" class="MCXref xref">Mail templates</a>.         </td>
+             <td>{{< SecureTransport/componentshortname  >}} uses this mail template to create all notification emails to adhoc file transfer recipients and senders. For more information about mail templates, see <a href="../t_st_mailtemplates#SetupMenu_1217491348_1149202">Mail templates</a>.         </td>
           </tr>
           <tr>
              <td><span id="DeliveryMethod"></span>Default Package Delivery Method         </td>
@@ -61,7 +61,7 @@
           </tr>
           <tr>
              <td>Package Manager Base Folder         </td>
-             <td>{{< SecureTransport/componentshortname  >}} uses this working folder to process adhoc file transfers. In a cluster, all servers use the same folder, so specify the same location in shared storage. To enable adhoc file transfers, you must specify this folder. For a list of folder that are not allowed, see <a href="../../accounts/useraccounts/c_st_protected_folders_accounts#Protecte" class="MCXref xref">Protected folders and accounts</a>.         </td>
+             <td>{{< SecureTransport/componentshortname  >}} uses this working folder to process adhoc file transfers. In a cluster, all servers use the same folder, so specify the same location in shared storage. To enable adhoc file transfers, you must specify this folder. For a list of folder that are not allowed, see <a href="../../accounts/useraccounts/c_st_protected_folders_accounts#Protecte">Protected folders and accounts</a>.         </td>
           </tr>
           <tr>
              <td>Package Manager System Username<br />
@@ -105,5 +105,5 @@ Two server configuration parameters control handling of human-to-system (H2S) t
 
 The following topics provide how-to instructions for changing the package manager base folder and describe the Package Retention Maintenance application.
 
--   <a href="t_st_change_package_manager_base_folder" class="MCXref xref">Change the package manager base folder</a>
--   <a href="../../applications/applicationspackageretentionmaintenance" class="MCXref xref">Package Retention Maintenance application</a>
+-   [Change the package manager base folder](t_st_change_package_manager_base_folder)
+-   [Package Retention Maintenance application](../../applications/applicationspackageretentionmaintenance)

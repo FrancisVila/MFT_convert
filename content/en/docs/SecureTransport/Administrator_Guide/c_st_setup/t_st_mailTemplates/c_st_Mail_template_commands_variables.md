@@ -6,11 +6,11 @@
 
 The following topics lists the notification type and information variables and provide an email template variable example:
 
--   <a href="#Notification_type" class="MCXref xref">Notification type variables</a>
--   <a href="#Notification_info" class="MCXref xref">Notification information variables</a>
--   <a href="#Addition" class="MCXref xref">Additional attributes</a>
--   <a href="#Flow" class="MCXref xref">Flow and subscription attributes</a>
--   <a href="#Email" class="MCXref xref">Email template variable example</a>
+-   [Notification type variables](#Notification_type)
+-   [Notification information variables](#Notification_info)
+-   [Additional attributes](#Addition)
+-   [Flow and subscription attributes](#Flow)
+-   [Email template variable example](#Email)
 
 <span id="Notification_type"></span>
 
@@ -125,13 +125,13 @@ It is not definitive to which value this expression is going to be evaluated.
 
 Apart from Account and account templates, you can set additional attributes on the following screens in the SecureTransport Administration tool:
 
--   <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>
--   <a href="../../../accounts/t_st_transferprofiles" class="MCXref xref">Transfer profiles</a>
--   <a href="" class="MCXref xref">Manage business units</a>
--   <a href="../../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates" class="MCXref xref">Manage site templates</a>
--   <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
--   <a href="../../../c_st_accesscontrol/c_st_loginrestictions/t_st_manloginrestictions" class="MCXref xref">Manage Login Restriction Policies</a>
--   <a href="../../../applications" class="MCXref xref">Applications</a>
+-   [Transfer sites](../../../accounts/transfersites)
+-   [Transfer profiles](../../../accounts/t_st_transferprofiles)
+-   [Manage business units]()
+-   [Manage site templates](../../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates)
+-   [Manage Route Package Templates](../../../c_st_advanced_routing/c_st_configuration/t_st_manage_route_package_templates)
+-   [Manage Login Restriction Policies](../../../c_st_accesscontrol/c_st_loginrestictions/t_st_manloginrestictions)
+-   [Applications](../../../applications)
     (applicable to all application types)
 
 You cannot use these in email templates and they are not available for use in EL expressions: these cannot be accessed via `userVars`. Everything else is the same: the UI to create, delete and edit attributes; the format and validation rules apply in the same fashion.
@@ -144,16 +144,16 @@ You cannot use these in email templates and they are not available for use in EL
 
 With certificates, there is no UI in the {{< SecureTransport/componentshortname  >}} Administration Tool to create, edit or delete attributes. You can only set to use these with the {{< SecureTransport/componentshortname  >}} admin REST API. See the [Swagger REST API documentation](#http://apidocs.axway.com/swagger-ui-st/admin-20/) for reference. While generally referring to certificates, these attributes are available for:
 
--   <a href="../../c_st_certificates/c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
--   <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates" class="MCXref xref">Manage login certificates</a>
--   <a href="../../../accounts/c_st_usercertificates/manage-user-partner-certificates" class="MCXref xref">Manage partner certificates</a>
--   <a href="../../../accounts/c_st_usercertificates/manage-user-private-certificates" class="MCXref xref">Manage private certificates</a>
+-   [Certificate Management page](../../c_st_certificates/c_st_certificate_management_page)
+-   [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates)
+-   [Manage partner certificates](../../../accounts/c_st_usercertificates/manage-user-partner-certificates)
+-   [Manage private certificates](../../../accounts/c_st_usercertificates/manage-user-private-certificates)
 
 <span id="Flow"></span>
 
 ## Flow and subscription attributes
 
-Flow and subscription attribute user variables (`userVars`) are defined per subscription in the *Flow/Subscription Attributes* pane. See <a href="../../../accounts/c_st_subscriptions/t_st_subscriptions#Subscrib" class="MCXref xref">Subscribe an account to an application</a>.
+Flow and subscription attribute user variables (`userVars`) are defined per subscription in the *Flow/Subscription Attributes* pane. See [Subscribe an account to an application](../../../accounts/c_st_subscriptions/t_st_subscriptions#Subscrib).
 
 To use `userVars` for email notifications, you must create your own mail template and specify the desired value with following expression:
 
@@ -198,7 +198,7 @@ The following example from the default email template uses a variable to select 
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Add, delete, upload or download a mail template</a>
--   <a href="" class="MCXref xref">Download a mail template</a>
--   <a href="" class="MCXref xref">Upload an updated mail template</a>
--   <a href="" class="MCXref xref">Delete mail templates</a>
+-   [Add, delete, upload or download a mail template]()
+-   [Download a mail template]()
+-   [Upload an updated mail template]()
+-   [Delete mail templates]()

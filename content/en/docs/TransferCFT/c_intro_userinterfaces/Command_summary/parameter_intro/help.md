@@ -8,7 +8,7 @@
 
 #### DISPLAY
 
-\[ HELP = { <span style="text-decoration: underline;">NONE</span>
+\[ HELP = {
 | FIELDS | MODELS | COMMAND } \]
 
 Displays help information:

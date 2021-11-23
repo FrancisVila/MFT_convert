@@ -6,7 +6,7 @@
 
 1.  Log on as root.
 
-2.  Create a service unit file for each {{< SecureTransport/securetransportname >}} service following the <a href="#Service" class="MCXref xref">Service Unit File Example</a>.
+2.  Create a service unit file for each {{< SecureTransport/securetransportname >}} service following the [Service Unit File Example](#Service).
     Service units must be located in the `<FILEDRIVEHOME>/bin/utils/` directory.  
     1.  Create `securetransport_db.service`
     2.  Create `securetransport_admin.service`
@@ -17,7 +17,7 @@
     7.  Create `securetransport_sshd.service`
     8.  Create `securetransport_tm.service`
 
-3.  In the same directory, create a target unit file `(securetransport.target`) for all {{< SecureTransport/securetransportname >}} services following the <a href="#Target" class="MCXref xref">Target Unit File Example</a>.
+3.  In the same directory, create a target unit file `(securetransport.target`) for all {{< SecureTransport/securetransportname >}} services following the [Target Unit File Example](#Target).
 
 4.  Move or copy the service files and the target file to the `/etc/systemd/system` directory.
 
@@ -90,5 +90,5 @@
 
 **Related topics:**
 
--   <a href="../installing_securetransport_embedded_db_unix" class="MCXref xref">Install SecureTransport on Unix with the embedded database</a>
--   <a href="../installing_securetransport_server_external_db_unix" class="MCXref xref">Install SecureTransport Server on Unix with an external database</a>
+-   [Install SecureTransport on Unix with the embedded database](../installing_securetransport_embedded_db_unix)
+-   [Install SecureTransport Server on Unix with an external database](../installing_securetransport_server_external_db_unix)

@@ -188,7 +188,7 @@ Implicit indicates that the FTYPE is automatically detected by the OS.
    </tbody>
 </table>
 
-<span class="autonumber"></span>HFS file characteristics
+HFS file characteristics
 
 <table>
    <thead>
@@ -281,7 +281,7 @@ The following table lists the different types of files that can be used accordin
 
 Default FTYPE or FRECFM value
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to <span class="code">undefined</span>, meaning that the transfer in emission takes the value of both the file type and the member content..
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content..
 
 <table>
    <thead>

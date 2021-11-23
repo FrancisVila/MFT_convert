@@ -16,7 +16,7 @@ in case of ambiguity:
 
 The codes are expressed in decimal form.
 
-<span class="autonumber"></span>RECOV - General Network Error Recovery Codes
+RECOV - General Network Error Recovery Codes
 
 <table>
    <thead>

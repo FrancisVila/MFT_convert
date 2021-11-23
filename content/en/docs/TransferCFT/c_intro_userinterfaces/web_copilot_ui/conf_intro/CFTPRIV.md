@@ -66,7 +66,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples <span class="code">PART </span>and <span class="code">ID </span>are properties of the resource being checked. As you can see, you can use parenthesis and logical operators <span class="code">&&</span> (AND) and <span class="code">||</span> (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
 
 

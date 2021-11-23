@@ -2,7 +2,7 @@
     "title": "Generate and manage keys",
     "linkTitle": "Generate and manage keys",
     "weight": "180"
-}T<span style="font-weight: normal;">**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**</span>
+}T
 
 This section describes how to establish secure sessions and generate keys, import etc. in the context of SFTP.
 
@@ -10,7 +10,7 @@ This section describes how to establish secure sessions and generate keys, impor
 
 ## Using PKIKEYGEN to generate and import a key pair
 
-You can use the <span class="code">PKIKEYGEN </span>command to generate a key pair, where it then stores them in the local PKI database.
+You can use the `PKIKEYGEN `command to generate a key pair, where it then stores them in the local PKI database.
 
 
 
@@ -26,7 +26,7 @@ You can use the <span class="code">PKIKEYGEN </span>command to generate a key pa
 
 ### About PKI formats
 
-The SFTP keys are referenced in the PKI database as a <span class="code">Keys </span>identifier.
+The SFTP keys are referenced in the PKI database as a `Keys `identifier.
 
 You can import the following formats in the PKI database:
 
@@ -186,7 +186,7 @@ Import with public.pem format
 
 ## Activate/deactivate a key
 
-Use the <span class="code">ACT/INACT</span> commands to activate or deactivate, respectively.
+Use the `ACT/INACT` commands to activate or deactivate, respectively.
 
 Example
 

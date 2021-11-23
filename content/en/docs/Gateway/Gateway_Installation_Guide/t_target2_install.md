@@ -6,7 +6,7 @@
 
 ## Locating the package
 
-The files you require to configure Axway Gateway for TARGET2 are contained in the <span class="mc-variable axway_variables.Solution_long_name variable">Axway Financial Exchange</span> TARGET2 package. This package is included in the <span class="mc-variable axway_variables.Solution_short_name variable">FEX</span> installation package. Alternatively you can request a copy of the package from your Axway representative.
+The files you require to configure Axway Gateway for TARGET2 are contained in the {{< Gateway/solutionlongname  >}} TARGET2 package. This package is included in the {{< Gateway/solutionshortname  >}} installation package. Alternatively you can request a copy of the package from your Axway representative.
 
 Packages are available for the following platforms:
 
@@ -25,15 +25,15 @@ To install the TARGET2 package you require:
 ## Installing the package
 
 1.  From the installation package, copy the compressed file contained in the directory:  
-    <span class="code">\\Gateway\\run\_time\\qt2\\qt2\_&lt;version>\_&lt;OS>\\Programs</span>
+    `\Gateway\run_time\qt2\qt2_<version>_<OS>\Programs`
 2.  On the machine that supports Gateway, uncompress the file to the Gateway installation directory.  
     If you prefer, you can unpack the package in another location without additional configuration.
 3.  In the installation package, go to the directory:  
-    <span class="code">\\Software\\QT2\\qt2\_&lt;version>\_&lt;OS>\\Patches</span> and install the patch for your platform.
+    `\Software\QT2\qt2_<version>_<OS>\Patches` and install the patch for your platform.
 
 ## Directory structure
 
-After you unpack the package, the <span class="code">qt2</span> folder should contain the following sub-folders and files:
+After you unpack the package, the `qt2` folder should contain the following sub-folders and files:
 
 <table>
    <thead>
@@ -113,6 +113,6 @@ On UNIX platforms, you must give execution rights to the QT2 folder and its cont
 
 chmod -Rf u+x \*…
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

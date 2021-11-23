@@ -4,13 +4,13 @@
     "weight": "270"
 }The file archiving feature enables the archiving and retrieval of files at the global, business unit, and account levels.
 
-The global File Archiving configuration page is found at **Setup &gt; File Archiving**. There you can enable the feature and configure the global archiving policy, the archiving folder, whether or not encryption is required including the encryption certificate, and how long to keep the archived files. To configure the file archiving global configuration, refer to <a href="t_st_file_archiving_conf" class="MCXref xref">File archiving global configuration</a>.
+The global File Archiving configuration page is found at **Setup &gt; File Archiving**. There you can enable the feature and configure the global archiving policy, the archiving folder, whether or not encryption is required including the encryption certificate, and how long to keep the archived files. To configure the file archiving global configuration, refer to [File archiving global configuration](t_st_file_archiving_conf).
 
-The file archiving configuration for each business unit can be inherited from the global file archiving configuration or changed for the current business unit. To configure file archiving for a business unit, refer to <a href="" class="MCXref xref">Manage business units</a>.
+The file archiving configuration for each business unit can be inherited from the global file archiving configuration or changed for the current business unit. To configure file archiving for a business unit, refer to [Manage business units]().
 
-For individual accounts the file archiving policy can be inherited or overwritten. To configure the file archiving policy for an account, refer to <a href="../../accounts" class="MCXref xref">Manage Accounts</a>. File archiving can also be configured for account templates. To configure the file archiving policy for an account template, refer to <a href="../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates" class="MCXref xref">Manage account templates</a>.
+For individual accounts the file archiving policy can be inherited or overwritten. To configure the file archiving policy for an account, refer to [Manage Accounts](../../accounts). File archiving can also be configured for account templates. To configure the file archiving policy for an account template, refer to [Manage account templates](../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates).
 
-To configure the maintenance schedule for the archive folder, refer to <a href="../../applications/applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>.
+To configure the maintenance schedule for the archive folder, refer to [Archive Maintenance application](../../applications/applicationsarchivemaintenance).
 
 > **Note:**
 >

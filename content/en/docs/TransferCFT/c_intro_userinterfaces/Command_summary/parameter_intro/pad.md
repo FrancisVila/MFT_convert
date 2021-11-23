@@ -6,7 +6,7 @@
 
 ### pad
 
-Deprecated in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.5.
+Deprecated in {{< TransferCFT/componentlongname  >}} 3.5.
 
 #### CFTPROT\`
 
@@ -15,7 +15,7 @@ Deprecated in <span class="mc-variable axway_variables.Component_Long_Name varia
 Pesit Specific
 
 Option for the use of CRC (cyclic redundancy checksum). Applicable only
-in requester mode. Default is <span style="font-weight: bold;">No</span>.
+in requester mode. Default is **No**.
 
 <span style="font-weight: bold;">Odette</span>
 

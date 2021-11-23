@@ -2,17 +2,17 @@
     "title": "Overview of SECS online commands",
     "linkTitle": "Overview of SECS online commands",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 Gateway provides two online commands that enable you to manage all Security server configuration elements (Certificates, Security Profiles and Network Profiles):
 
--   <span class="code" style="font-weight: bold;">secadm</span>: to manage security elements
--   <span class="code" style="font-weight: bold;">secdsp</span>: to view and select security elements
+-   `secadm`: to manage security elements
+-   `secdsp`: to view and select security elements
 
 Before you execute these commands, confirm that you have:
 
 -   Set the global environment variables
--   Started Gateway (the <span class="code" style="font-weight: bold;">p\_secs</span> process is running)
+-   Started Gateway (the `p_secs` process is running)
 
 <span id="List_of_secadm_and_secdsp_commands"></span>
 
@@ -27,8 +27,8 @@ Before you execute these commands, confirm that you have:
    <thead>
       <tr>
 <th class="HeadE-Column1-Header1">Object         </th>
-<th class="HeadE-Column1-Header1"><span class="code">secadm</span> commands         </th>
-<th class="HeadD-Column1-Header1"><span class="code">secdsp</span> commands         </th>
+<th class="HeadE-Column1-Header1"><code>secadm</code> commands         </th>
+<th class="HeadD-Column1-Header1"><code>secdsp</code> commands         </th>
       </tr>
    </thead>
    <tbody>
@@ -80,6 +80,6 @@ Before you execute these commands, confirm that you have:
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

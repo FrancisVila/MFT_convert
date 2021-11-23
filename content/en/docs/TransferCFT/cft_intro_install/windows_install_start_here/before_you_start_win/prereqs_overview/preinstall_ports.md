@@ -2,11 +2,11 @@
     "title": "Default ports",
     "linkTitle": "Ports",
     "weight": "180"
-}The following list contains the default <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> port numbers used for installation. You can check in advance that these ports do not conflict with ports used by other applications on the same machine.
+}The following list contains the default {{< TransferCFT/componentshortname  >}} port numbers used for installation. You can check in advance that these ports do not conflict with ports used by other applications on the same machine.
 
 You may need to modify the default port numbers, depending on your configuration.
 
-The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 <table>
    <thead>
@@ -37,7 +37,7 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
          <td>1766         </td>
       </tr>
       <tr>
-         <td>Transfer CFT UI (Copilot) server for <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>         </td>
+         <td>Transfer CFT UI (Copilot) server for {{< TransferCFT/centralgovernancename  >}}         </td>
          <td>1767         </td>
       </tr>
       <tr>
@@ -45,21 +45,21 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
          <td>1768         </td>
       </tr>
       <tr>
-         <td><span class="mc-variable Primary.CG or_UM variable">Central Governance</span>         </td>
+         <td>         </td>
          <td>12553         </td>
       </tr>
       <tr>
-         <td><span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> SSL         </td>
+         <td>{{< TransferCFT/centralgovernancename  >}} SSL         </td>
          <td>12554         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> MA</p>
+         <td><p>{{< TransferCFT/securerelayname  >}} MA</p>
 <p>ma.comm_port</p>         </td>
          <td><p> </p>
 <p>6801</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> RA</p>
+         <td><p>{{< TransferCFT/securerelayname  >}} RA</p>
 <ul>
 <li>ra.comm_port</li>
 <li>ra.admin_port</li>
@@ -78,6 +78,6 @@ Legend:
 -   PeSIT (PESITANY protocol): PeSIT in plain text
 -   SSL: PeSIT protocol over SSL/TLS
 -   COMS: Synchronous transfers
--   Copilot: Provides access to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI server from a user Internet browser
--   Copilot for <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>: Provides secure access for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> (mutual authentication)
--   <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>: Used to connect to Central Governance
+-   Copilot: Provides access to {{< TransferCFT/componentshortname >}} UI server from a user Internet browser
+-   Copilot for {{< TransferCFT/centralgovernancename >}}: Provides secure access for (mutual authentication)
+-   : Used to connect to Central Governance

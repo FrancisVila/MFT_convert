@@ -210,7 +210,7 @@ Command syntax: [DISPLAY](../../../command_summary)
       </tr>
       <tr>
          <td><p>EMPTY</p>         </td>
-         <td><p>Use this parameter to replace the default output of <span style="font-weight: bold;">Empty</span> values, usually empty string values.</p>
+         <td><p>Use this parameter to replace the default output of <strong>Empty</strong> values, usually empty string values.</p>
 <p>The default string <span style="font-weight: bold;">ANY</span>
 means that EMPTY is specified in the model. The default EMPTY used is '-' if it is not defined in the model.</p>         </td>
       </tr>

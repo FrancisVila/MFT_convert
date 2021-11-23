@@ -13,5 +13,5 @@ If your {{< SecureTransport/componentshortname  >}} deployment includes {{< Secu
 
 The following topics describe SSL and SSH authentication and provide how-to instructions for managing SSL access:
 
--   <a href="c_st_ssl_ssh_new" class="MCXref xref">SSL and SSH</a> - Describe SSL and SSH authentication.
--   <a href="t_st_sslaccess_new" class="MCXref xref">Manage SSL access</a> - Provides how-to instructions for managing SSL access.
+-   [SSL and SSH](c_st_ssl_ssh_new) - Describe SSL and SSH authentication.
+-   [Manage SSL access](t_st_sslaccess_new) - Provides how-to instructions for managing SSL access.

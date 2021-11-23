@@ -14,7 +14,7 @@ To compose an email message:
 
 1.  From the *Mailbox* pane, click **Compose**. The *Compose* pane opens.  
     <img src="/Images/SecureTransport/WC_Mailbox_compose.png" class="maxWidth" alt="Web Client screen to compose a message from your mailbox" />
-2.  Enter the email address of the recipient or select a name or group from the Address Book. For details, see <a href="../02-manage_files_and_folders/021-address_book" class="MCXref xref">Address Book</a>.
+2.  Enter the email address of the recipient or select a name or group from the Address Book. For details, see [Address Book](../02-manage_files_and_folders/021-address_book).
 3.  Enter a subject and compose the message.
 4.  (optional) Attach a file. Select **Attach** and select the file or drag a file from your computer and drop it on the *Compose* pane. The name of the file is displayed.
 5.  Select the email expiration time period for message from the **Expiration** drop-down menu.

@@ -8,16 +8,16 @@ The *Server Configuration* page, accessed by selecting **Operations &gt; Server 
 
 The following topics provide how-to instructions for searching, paging through, and changing parameters:
 
--   <a href="#Search" class="MCXref xref">Search for a parameter</a>
--   <a href="#Page" class="MCXref xref">Page through the parameter list</a>
--   <a href="#Change" class="MCXref xref">Change a parameter value</a>
+-   [Search for a parameter](#Search)
+-   [Page through the parameter list](#Page)
+-   [Change a parameter value](#Change)
 
 **Related topics:**
 
--   <a href="../c_st_editable_server_configuration_parameters" class="MCXref xref">Editable server configuration parameters</a>
--   <a href="../c_st_local_server_configuration_parameters" class="MCXref xref">Local server configuration parameters</a>
--   <a href="../t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>
--   <a href="../t_st_serverconfigurationexportimport" class="MCXref xref">Export and import server configuration</a>
+-   [Editable server configuration parameters](../c_st_editable_server_configuration_parameters)
+-   [Local server configuration parameters](../c_st_local_server_configuration_parameters)
+-   [Update configuration files](../t_st_serverconfigurationfiles)
+-   [Export and import server configuration](../t_st_serverconfigurationexportimport)
 
 <span id="Search"></span>
 

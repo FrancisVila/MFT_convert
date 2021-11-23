@@ -29,7 +29,7 @@ For instance, you can create and download a service account file, and then expor
 
     export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/my-key.json
 
-For SSL connections to GCS, libCURL requires a path to the CA certificates bundle to authenticate the peer. You can set this path in the UCONF <span class="code">ssl.certificates.ca\_cert\_bundle</span> parameter if automatic detection fails.
+For SSL connections to GCS, libCURL requires a path to the CA certificates bundle to authenticate the peer. You can set this path in the UCONF `ssl.certificates.ca_cert_bundle` parameter if automatic detection fails.
 
 ## Parameter description
 
@@ -47,8 +47,8 @@ The following table describes Transfer CFT's Google Cloud Storage-related parame
       <tr>
          <td>ssl.certificates.ca_cert_bundle         </td>
          <td>string         </td>
-         <td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <span class="code">/etc/ssl/certs/ca-certificates.crt</span>) or to a directory containing the CA certificates (for example, <span class="code">/etc/ssl/certs/</span>), which are stored individually with their filenames in a hash format.</p>
-<p>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <span class="code">cacert </span>and <span class="code">capath </span>options.</p>
+         <td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
+<p>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.</p>
 <p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>         </td>
       </tr>
    </tbody>
@@ -76,7 +76,7 @@ You must include the following parameters in your Google Cloud Storage [CFTSEND/
          <td>workingdir         </td>
          <td>string         </td>
          <td><p>The workingdir field must start with gs:// and be followed by the bucket name (as used with gsutil):</p>
-<p><span class="code">gs://my-bucket</span></p>         </td>
+<p><code>gs://my-bucket</code></p>         </td>
       </tr>
       <tr>
          <td>wfname         </td>
@@ -134,7 +134,7 @@ After sending a file to the partner, you can check the log for transfer details.
 
 ## Troubleshooting
 
-This section provides information on how to troubleshoot errors that you may encounter when implementing GCS with Transfer CFT. Note that you can troubleshoot both Transfer CFT and GCS using the <span class="code">gsutil </span>tool as outlined below.
+This section provides information on how to troubleshoot errors that you may encounter when implementing GCS with Transfer CFT. Note that you can troubleshoot both Transfer CFT and GCS using the `gsutil `tool as outlined below.
 
 ### Transfer CFT logs and diagnostic codes
 
@@ -142,8 +142,8 @@ When an issue occurs with Google Cloud Storage, a message displays in the CFTLOG
 
 If your credentials were not found:
 
--   Log: <span class="code">CFTF30W GCS error: 2(UNKNOWN) - Could not automatically determine credentials. </span>
--   DIAGC:<span class="code"> 'GCS error: 2(UNKNOWN) - Could not automatically determine credentials. </span>
+-   Log: `CFTF30W GCS error: 2(UNKNOWN) - Could not automatically determine credentials. `
+-   DIAGC:` 'GCS error: 2(UNKNOWN) - Could not automatically determine credentials. `
 
 <!-- -->
 
@@ -151,11 +151,11 @@ If your credentials were not found:
 
 If a file is not available on Google Cloud Storage to SEND:
 
--   DIAGC: <span class="code">'GCS error: 2 (No such file or directory) - 5(NOT\_FOUND) - No such object: my-bucket/FTEST'</span>
+-   DIAGC: `'GCS error: 2 (No such file or directory) - 5(NOT_FOUND) - No such object: my-bucket/FTEST'`
 
 ### GCS CLI
 
-To help resolve errors, you can use the GCS CLI <span class="code">gsutil </span>tool to verify that the system can connect to the GCS storage and check that the user has permission to read the keys in the bucket. Please refer to the Google Cloud documentation at: [cloud.google.com/storage/docs/gsutil](https://cloud.google.com/storage/docs/gsutil).
+To help resolve errors, you can use the GCS CLI `gsutil `tool to verify that the system can connect to the GCS storage and check that the user has permission to read the keys in the bucket. Please refer to the Google Cloud documentation at: [cloud.google.com/storage/docs/gsutil](https://cloud.google.com/storage/docs/gsutil).
 
 ### Example
 

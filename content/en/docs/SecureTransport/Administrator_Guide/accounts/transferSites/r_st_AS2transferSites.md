@@ -6,7 +6,7 @@
 
 Unlike transfer sites for other transfer protocols, an AS2 transfer site is also used for transfers initiated by the remote AS2 site (considered client-initiated by {{< SecureTransport/componentshortname  >}}). Only the fields marked with an asterisk (`*`) as required are needed to define the partnership to enable these transfers.
 
-For detailed information about AS2 transfers, see <a href="../../../c_st_as2transfers#AS2Transfers_2029586111_1037189" class="MCXref xref">AS2 transfers</a>.
+For detailed information about AS2 transfers, see [AS2 transfers](../../../c_st_as2transfers#AS2Transfers_2029586111_1037189).
 
 The following table describes the AS2 protocol options for defining a transfer site.
 
@@ -24,7 +24,7 @@ The following table describes the AS2 protocol options for defining a transfer s
       <tr>
          <td>AS2 Name         </td>
          <td><p>The local partnership name, which the remote AS2 site uses to identify to this {{< SecureTransport/componentshortname  >}} Server. Each AS2 transfer site for a user must have a unique AS2 Name.</p>
-<p>You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
+<p>You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
          <td>Signing Certificate         </td>
@@ -36,18 +36,18 @@ The following table describes the AS2 protocol options for defining a transfer s
       </tr>
       <tr>
          <td>Email         </td>
-         <td>The email address used to receive information from the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The email address used to receive information from the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td><strong>Remote Site Settings</strong>         </td>
       </tr>
       <tr>
          <td>AS2 Name         </td>
-         <td>The remote partnership name, which the {{< SecureTransport/componentshortname  >}} Server uses to identify to the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The remote partnership name, which the {{< SecureTransport/componentshortname  >}} Server uses to identify to the remote AS2 site. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>URL         </td>
-         <td>The URL used to access the remote site. For example, <code>https://as2.example.com:10443</code>,<code>https://172.23.34.45:10443</code>, or <code>https://[FC00:1234:2345:3456::]:10443</code>. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The URL used to access the remote site. For example, <code>https://as2.example.com:10443</code>,<code>https://172.23.34.45:10443</code>, or <code>https://[FC00:1234:2345:3456::]:10443</code>. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Alternative addresses         </td>
@@ -73,13 +73,13 @@ The following table describes the AS2 protocol options for defining a transfer s
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
       <tr>
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict AS2 to use only FIPS 140-2 Level 1 certified cryptographic libraries.</p>
 <p>When you enable FIPS transfer mode, the panel expands with an additional field that lets you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>As2.FIPS.SIT.Ciphers</code> configuration option.</p>
-<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
+<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
       </tr>
       <tr>
          <td>Signing Certificate         </td>
@@ -91,7 +91,7 @@ The following table describes the AS2 protocol options for defining a transfer s
       </tr>
       <tr>
          <td>Email         </td>
-         <td>The email address used to receive information from {{< SecureTransport/componentshortname  >}} Server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The email address used to receive information from {{< SecureTransport/componentshortname  >}} Server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>  Each AS2 transfer site must have a unique combination of {{< SecureTransport/componentshortname  >}} Server AS2 Name and Remote Site AS2 Name.         </td>
@@ -198,7 +198,7 @@ The following table describes the Receive Options for an AS2 transfer site.
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td><p>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.rawsource}</code> which takes the value from the <code>original filename</code> in the AS2 message header. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.</p>         </td>
+         <td><p>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.rawsource}</code> which takes the value from the <code>original filename</code> in the AS2 message header. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.</p>         </td>
       </tr>
       <tr>
          <td>Require SSL Connection         </td>
@@ -250,13 +250,13 @@ The following table describes the Advanced SSL Settings for an AS2 transfer site
 
 **Related topics:**
 
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

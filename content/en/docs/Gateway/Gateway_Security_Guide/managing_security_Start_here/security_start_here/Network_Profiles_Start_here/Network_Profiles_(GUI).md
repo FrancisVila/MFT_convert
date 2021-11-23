@@ -2,7 +2,7 @@
     "title": "Managing Network Profiles",
     "linkTitle": "Managing Network Profiles",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Creating Network Profiles](#Defining_Network_Profiles)
 
@@ -24,7 +24,7 @@ To create a Network profile:
 
 Security Management &gt; Transfer Security Management
 
-1.  Right-click the <span style="font-weight: bold;">Network Profile</span> sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.
+1.  Right-click the **Network Profile** sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.
 
 Gateway displays the <span id="New_Network_Profile_window"></span><span style="font-style: italic;">New Network Profile</span> window.
 

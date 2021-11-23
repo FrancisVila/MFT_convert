@@ -27,7 +27,7 @@ Enter one of the following values:
 
 \[CYCLE = {10 | n}\]   {1..32767}
 
-The cycle parameter forms part of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> definition. This
+The cycle parameter forms part of the {{< TransferCFT/componentshortname  >}} definition. This
 parameter is only available for PeSIT DMZ. Use this parameter to set the
 periodicity for creating a protocol session.
 

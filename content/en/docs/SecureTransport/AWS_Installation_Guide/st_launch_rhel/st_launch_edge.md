@@ -16,4 +16,4 @@ Follow the steps for launching RHEL Instance with the following specifics:
 8.  Specify unique names, so you can easily distinguish between instances.
 9.  Specify the Security Groups.
 
-Assign the instances to the previously created SecureTransport Edge Security Group as described in the [](../../st_create_secgroups)<a href="../../st_create_secgroups" class="MCXref xref">Create Security Groups and Network Access Lists</a> section.
+Assign the instances to the previously created SecureTransport Edge Security Group as described in the [](../../st_create_secgroups)[Create Security Groups and Network Access Lists](../../st_create_secgroups) section.

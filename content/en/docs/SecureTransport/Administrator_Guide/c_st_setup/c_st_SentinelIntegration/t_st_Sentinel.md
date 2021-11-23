@@ -40,7 +40,7 @@ The *{{< SecureTransport/companyname  >}} Sentinel/Decision Insights Events* pag
 7.  (Optional) Select **Send Heartbeat to {{< SecureTransport/companyname >}} Sentinel Every** and set the heartbeat interval to send periodic messages to {{< SecureTransport/companyname >}} Sentinel to tell it that {{< SecureTransport/componentshortname >}} is running and connected. The default interval is 10 seconds.
 
 8.  In the *Events* pane, select the event states to send to Sentinel.  
-    An Event State specifies the current state of a file transfer. If an Event State is not selected to be sent, {{< SecureTransport/componentshortname >}} performs the processing represented by the state, but it does not send the event that reports the state to {{< SecureTransport/companyname >}} Sentinel. For the available states, see <a href="../r_st_sentineleventstates#top" class="MCXref xref">Event states</a>.
+    An Event State specifies the current state of a file transfer. If an Event State is not selected to be sent, {{< SecureTransport/componentshortname >}} performs the processing represented by the state, but it does not send the event that reports the state to {{< SecureTransport/companyname >}} Sentinel. For the available states, see [Event states](../r_st_sentineleventstates#top).
 
 9.  In the *Attribute mapping* pane, click the **Add Mapping** button to create a **Sentinel Attribute Name** and **Value** attribute mapping rule. The attributes can also be updated or deleted.  
     The Mapping Rules columns refer to:
@@ -83,7 +83,7 @@ The *{{< SecureTransport/companyname  >}} Sentinel/Decision Insights Events* pag
           </tr>
           <tr>
              <td>Warning Threshold         </td>
-             <td>Specify a percentage of the maximum file size that, when reached, triggers a warning. The value you enter must be an integer between 1 and 94. When a warning is triggered, an email is sent to the {{< SecureTransport/componentshortname  >}} administrator. The email message is formatted using the standard email template, <code>SentinelOverflowFileWarning.xhtml</code>, located in <code>&lt;FILEDRIVEHOME&gt;/conf/mailer-templates/</code>. The recipient of any warning email is the administrator specified in the <em>FTP/HTTP Startup Password Timeout Configuration</em> pane of the <strong>Setup &gt; Miscellaneous</strong> page. For details, see <a href="../../c_st_miscellaneousconfiguration/t_st_miscellaneousoptions#Set2" class="MCXref xref">Set the administrator’s email</a>.         </td>
+             <td>Specify a percentage of the maximum file size that, when reached, triggers a warning. The value you enter must be an integer between 1 and 94. When a warning is triggered, an email is sent to the {{< SecureTransport/componentshortname  >}} administrator. The email message is formatted using the standard email template, <code>SentinelOverflowFileWarning.xhtml</code>, located in <code>&lt;FILEDRIVEHOME&gt;/conf/mailer-templates/</code>. The recipient of any warning email is the administrator specified in the <em>FTP/HTTP Startup Password Timeout Configuration</em> pane of the <strong>Setup &gt; Miscellaneous</strong> page. For details, see <a href="../../c_st_miscellaneousconfiguration/t_st_miscellaneousoptions#Set2">Set the administrator’s email</a>.         </td>
           </tr>
           <tr>
              <td>When Overflow File Exceeds Maximum Size         </td>
@@ -108,12 +108,12 @@ The *{{< SecureTransport/companyname  >}} Sentinel/Decision Insights Events* pag
 
 **Related topics:**
 
--   <a href="../r_st_sentineleventstates" class="MCXref xref">Event states</a>
--   <a href="../r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>
--   <a href="../c_st_aboutxfb_to" class="MCXref xref">About XFB Transfer tracked objects</a>
--   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
--   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
--   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
--   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
--   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
+-   [Event states](../r_st_sentineleventstates)
+-   [Axway Sentinel tracked objects](../r_st_sentineltrackedobjects)
+-   [About XFB Transfer tracked objects](../c_st_aboutxfb_to)
+-   [PeSIT protocol](../r_st_pesit_protocol)
+-   [List of PeSIT states](../r_st_listofpesitstates)
+-   [XFB Tracked Object attributes](../r_st_xfb_toattributes)
+-   [CycleId calculation](../r_st_cycleid)
+-   [Axway Sentinel dashboards]()
+-   [Axway Sentinel requests](../r_st_sentinelrequests)

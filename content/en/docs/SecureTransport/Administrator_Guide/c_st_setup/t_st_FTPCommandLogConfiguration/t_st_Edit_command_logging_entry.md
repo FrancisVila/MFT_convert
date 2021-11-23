@@ -16,6 +16,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_add_command_logging_entry" class="MCXref xref">Add a command logging entry</a>
--   <a href="../t_st_enable_disable_command_logging_entries" class="MCXref xref">Enable or disable command logging entries</a>
--   <a href="../t_st_delete_command_logging_entries" class="MCXref xref">Delete command logging entries</a>
+-   [Add a command logging entry](../t_st_add_command_logging_entry)
+-   [Enable or disable command logging entries](../t_st_enable_disable_command_logging_entries)
+-   [Delete command logging entries](../t_st_delete_command_logging_entries)

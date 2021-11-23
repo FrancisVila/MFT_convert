@@ -12,7 +12,7 @@ In general, you should base your MAXTRANS on the transfer peak in your daily act
 
 #### Q: What is the maximum number of connections between two Transfer CFTs (UNIX or Windows) if the license is "unlimited"?
 
-**Answer**: On a UNIX or Windows system, with an unlimited license, the maximum number of possible simultaneous connections between the 2 <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>s is 1000.
+**Answer**: On a UNIX or Windows system, with an unlimited license, the maximum number of possible simultaneous connections between the 2 {{< TransferCFT/componentlongname  >}}s is 1000.
 
 > **Note:**
 >
@@ -27,7 +27,7 @@ The Transfer CFT log shows 1000 transfers are authorized, but there are only a 
 
 **Answer** **1**: The "authorized simultaneous transfers" value comes from the license key, while the number of active transfers comes from the parameter MAXTRANS.
 
-**Answer** **2**: You can override the MAXTRANS value when starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> using the following parameter: cft.run.maxtrans (only when using cft start-and-wait)
+**Answer** **2**: You can override the MAXTRANS value when starting {{< TransferCFT/componentlongname  >}} using the following parameter: cft.run.maxtrans (only when using cft start-and-wait)
 
 **Fix**: Check and update the OS specific UCONF value to match the license key limit and appropriate MAXTRANS for simultaneous transfers.
 

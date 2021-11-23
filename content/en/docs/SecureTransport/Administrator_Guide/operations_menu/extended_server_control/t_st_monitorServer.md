@@ -4,7 +4,7 @@
     "weight": "170"
 }In this topic you will learn how to:
 
--   <a href="#Use" class="MCXref xref">Monitor server</a>
+-   [Monitor server](#Use)
 
 The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the {{< SecureTransport/componentshortname  >}} servers are functional or not. If one or more monitored servers are not responding, the monitoring service automatically restarts them. There are few exceptions to this: monitord does not restart a server if the DB server is not running; or if the server is manually stopped by an administrator.
 

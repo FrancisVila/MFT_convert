@@ -10,9 +10,9 @@
 
 ## Configure Single Sign-On (SSO) for administrators
 
-Before configuring SSO for administrators, refer to <a href="../c_st_sso_configuration#Configur" class="MCXref xref">SecureTransport Single Sign-On (SSO) configuration prerequisites</a>.
+Before configuring SSO for administrators, refer to [SecureTransport Single Sign-On (SSO) configuration prerequisites](../c_st_sso_configuration#Configur).
 
-In order to configure SSO functionality for administrators, you need to update the `sso-admin.xml` file and remember that SSO authenticated administrators are only mapped to existing {{< SecureTransport/componentshortname  >}} administrator accounts. For additional information, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account" class="MCXref xref">Add an administrator account</a>.
+In order to configure SSO functionality for administrators, you need to update the `sso-admin.xml` file and remember that SSO authenticated administrators are only mapped to existing {{< SecureTransport/componentshortname  >}} administrator accounts. For additional information, refer to [Add an administrator account](../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts/t_st_add_administrator_account).
 
 > **Note:**
 >
@@ -43,7 +43,7 @@ Configure SSO for administrators using SAML-based Identity Providers:
         -   `metadataUrl` to be `./(name of the SAML-based Identity provider metadata file)`
         -   `entityId` - add the `<EntityDescriptor>` element `entityID` attribute value, from the SAML-based Identity Provider metadata file.
     -   `Mappings` element: Both `<FilterMapping>` and `<RenameMapping>` elements are not applicable for administrators.
-    -   `Features` element: The recommended features are listed in <a href="../../r_st_sample_admin" class="MCXref xref">Sample SSO configuration file for administrators</a>.
+    -   `Features` element: The recommended features are listed in [Sample SSO configuration file for administrators](../../r_st_sample_admin).
 
 3.  Save the `sso-admin.xml` file.
 
@@ -82,4 +82,4 @@ Configure SSO for administrators using SAML-based Identity Providers:
 
 ## Single Sign-On (SSO) administrators configuration
 
-For more information about how to setup the {{< SecureTransport/securetransportname  >}} administrators to use SSO, refer to <a href="../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.
+For more information about how to setup the {{< SecureTransport/securetransportname  >}} administrators to use SSO, refer to [Manage administrator accounts](../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts).

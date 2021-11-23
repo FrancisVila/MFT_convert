@@ -6,5 +6,5 @@
 
 The following topics describe the SiteMinder and {{< SecureTransport/componentshortname  >}} troubleshooting tools:
 
--   <a href="c_st_siteminder_troubleshooting_tools" class="MCXref xref">SiteMinder troubleshooting tools</a> - Describes the SiteMinder troubleshooting tools.
--   <a href="c_st_st_troubleshooting_tools" class="MCXref xref">SecureTransport troubleshooting tools</a> - Describes the {{< SecureTransport/componentshortname >}} troubleshooting tools.
+-   [SiteMinder troubleshooting tools](c_st_siteminder_troubleshooting_tools) - Describes the SiteMinder troubleshooting tools.
+-   [SecureTransport troubleshooting tools](c_st_st_troubleshooting_tools) - Describes the {{< SecureTransport/componentshortname >}} troubleshooting tools.

@@ -46,8 +46,7 @@ default value supported.
 
 #### CFTRECV, RECV
 
-**\[FCODE = {<span style="text-decoration: underline;">depending
-on FTYPE</span> | ASCII | BINARY | EBCDIC}\]   **
+**\[FCODE = { | ASCII | BINARY | EBCDIC}\]   **
 
 **C**ode of the receiver file data (local file encoding).
 
@@ -83,13 +82,13 @@ At each receive transfer:
 -   if
     the data received is in ASCII and the local data is in EBCDIC, or vice-versa,
     translation is always performed: translation according to an external
-    table, or, by default, translation according to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal
+    table, or, by default, translation according to the {{< TransferCFT/componentshortname >}} internal
     table
 -   if
     the data received and the local data have the same code, ASCII or EBCDIC,
     an external table is required to execute a translation
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not have an ASCII/ASCII or EBCDIC/EBCDIC
+{{< TransferCFT/componentshortname  >}} does not have an ASCII/ASCII or EBCDIC/EBCDIC
 internal table. If the data received and/or the local data are binary,
 no translation is performed.
 

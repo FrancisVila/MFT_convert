@@ -24,7 +24,7 @@ Transfer CFT.</p>         </td>
       </tr>
       <tr>
          <td><p><a href="parameter_settings">Defining
-trace in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameters</a></p>         </td>
+trace in {{< TransferCFT/componentshortname  >}} parameters</a></p>         </td>
          <td><p>Describes the Transfer CFT general parameter for a trace.</p>         </td>
       </tr>
       <tr>
@@ -51,7 +51,7 @@ and selecting traced data, and associates a file identifier.</p>         </td>
 
 ## About Transfer CFT traces
 
-Transfer CFT traces are managed by the <span style="font-weight: bold;">A</span>dvanced
+Transfer CFT traces are managed by the **A**dvanced
 <span style="font-weight: bold;">T</span>race <span style="font-weight: bold;">M</span>anager
 (ATM) component.
 

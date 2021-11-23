@@ -45,13 +45,13 @@
 
 ## What is a service file medium
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> medium refers to any data support or local communication
-means used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. A distinction is made between the media:
+{{< TransferCFT/componentshortname  >}} medium refers to any data support or local communication
+means used by {{< TransferCFT/componentshortname  >}}. A distinction is made between the media:
 
 -   Accessed by the
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    {{< TransferCFT/componentshortname >}}
 -   Accessed by the
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> utility
+    {{< TransferCFT/componentshortname >}} utility
 -   Used by the interactive
     functions
 -   Used by the programming
@@ -64,7 +64,7 @@ The following terms are used in this section:
 -   PHYSICAL FILE which
     describes the name and physical location of a file type medium
 -   If the file name
-    begins with a reserved character, designated by <span style="font-weight: bold;">char-file</span> - see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS,
+    begins with a reserved character, designated by **char-file** - see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS,
     this is a logical name interpreted by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 -   CFTIN and CFTOUT
     for standard task input/output

@@ -36,10 +36,10 @@ If the administrator account was created with **Password is stored locally (not 
 
 **Related topics:**
 
--   <a href="../t_st_add_administrator_account" class="MCXref xref">Add an administrator account</a>
--   <a href="../t_st_delete_administrator_account" class="MCXref xref">Delete an administrator account</a>
--   <a href="../t_st_lock_administrator_account" class="MCXref xref">Lock an administrator account</a>
--   <a href="../t_st_unlock_administrator_account" class="MCXref xref">Unlock an administrator account</a>
--   <a href="../t_st_expire_administrator_account_password" class="MCXref xref">Expire an administrator account password</a>
--   <a href="../t_st_reset_expired_administrator_account_password" class="MCXref xref">Reset an expired administrator account password</a>
--   <a href="../t_st_change_administrator_password" class="MCXref xref">Change administrator password</a>
+-   [Add an administrator account](../t_st_add_administrator_account)
+-   [Delete an administrator account](../t_st_delete_administrator_account)
+-   [Lock an administrator account](../t_st_lock_administrator_account)
+-   [Unlock an administrator account](../t_st_unlock_administrator_account)
+-   [Expire an administrator account password](../t_st_expire_administrator_account_password)
+-   [Reset an expired administrator account password](../t_st_reset_expired_administrator_account_password)
+-   [Change administrator password](../t_st_change_administrator_password)

@@ -13,7 +13,7 @@ in relation to each mode.
     server mode, Transfer CFT replies to an incoming connection, re-sent
     by the system communication layers.
 
-For details on using these modes in a Central <span class="mc-variable suite_variables.Governance variable">Unified Flow Management</span> setting, please refer to the Central <span class="mc-variable suite_variables.Governance variable">Unified Flow Management</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>.
+For details on using these modes in a Central {{< TransferCFT/governance  >}} setting, please refer to the Central {{< TransferCFT/governance  >}} {{< TransferCFT/doctypeuser  >}}.
 
 ## Requester mode overview
 
@@ -44,7 +44,7 @@ network and then operates in server mode.
 
 Steps include:
 
-1.  **Receive an incoming call**: <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> receives an incoming connection on the communication system, which could be rejected depending on <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> limitations and/or parameter settings.
+1.  **Receive an incoming call**: {{< TransferCFT/componentlongname >}} receives an incoming connection on the communication system, which could be rejected depending on {{< TransferCFT/componentlongname >}} limitations and/or parameter settings.
 2.  **Exchange protocol information**: When the network connection is established, the partners participate in an exchange
     of messages in accordance with the chosen protocol.
 3.  **Create or select a
@@ -55,12 +55,12 @@ Steps include:
 5.  **Disconnect**: On completion of data transfer, the files are closed, the network connection
     is cut after the expiration of the associated hold timeout.
 
-<span class="autonumber"></span>Example: Sending in requester mode
+Example: Sending in requester mode
 
 <img src="/Images/TransferCFT/temp_session1.png" class="mediumWidth" />
 
-<span class="autonumber"></span> 
+ 
 
-<span class="autonumber"></span>Example: Receiving in requester mode
+Example: Receiving in requester mode
 
 <img src="/Images/TransferCFT/temp_session3.png" class="mediumWidth" />

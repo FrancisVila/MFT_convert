@@ -6,15 +6,15 @@
 
 The following topics provide how-to instructions for managing site templates:
 
--   <a href="#Create" class="MCXref xref">Create a site template</a>
--   <a href="#Search" class="MCXref xref">Search for a site template</a>
--   <a href="#View" class="MCXref xref">View a site template</a>
--   <a href="#Modify" class="MCXref xref">Modify a site template</a>
--   <a href="#Delete" class="MCXref xref">Delete a site template</a>
+-   [Create a site template](#Create)
+-   [Search for a site template](#Search)
+-   [View a site template](#View)
+-   [Modify a site template](#Modify)
+-   [Delete a site template](#Delete)
 
 **Related topic:**
 
--   <a href="../t_st_usesitetemplate" class="MCXref xref">Use a site template to define a transfer site</a>
+-   [Use a site template to define a transfer site](../t_st_usesitetemplate)
 
 <span id="Create"></span>
 
@@ -60,7 +60,7 @@ Placeholder examples:
 3.  Type a site template name in the **Template Name** field.
 4.  Select Connect:Direct or the file services interface protocol from the **Transfer Protocol** list.
 5.  Complete the remaining fields for the transfer protocol you selected.
-6.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+6.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 7.  Click **Add** to save the site template. Click **Cancel** to close the page without saving the site template.
 
 <span id="Search"></span>

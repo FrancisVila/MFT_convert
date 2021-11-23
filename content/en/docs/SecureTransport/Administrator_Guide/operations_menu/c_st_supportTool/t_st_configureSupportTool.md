@@ -14,13 +14,13 @@
 
 The following topics describe the support tool fields and how-to instructions for excluding files:
 
--   <a href="#Fields" class="MCXref xref">Fields</a>
--   <a href="#Exclude" class="MCXref xref">Exclude files</a>
+-   [Fields](#Fields)
+-   [Exclude files](#Exclude)
 
 **Related topics:**
 
--   <a href="../t_st_customizesupporttool" class="MCXref xref">Add custom information to the support information file</a>
--   <a href="../t_st_runsupporttool" class="MCXref xref">Run the support tool</a>
+-   [Add custom information to the support information file](../t_st_customizesupporttool)
+-   [Run the support tool](../t_st_runsupporttool)
 
 <span id="Fields"></span>
 
@@ -43,4 +43,4 @@ This topic includes information about the fields you must complete.
 The support tool does not save the contents of files or folders whose names are listed in the `SupportTool.ExcludeFilesFoldersList` server configuration parameter. By default, the excluded names are `certs` and
 `passwd`.
 
-To add or remove names from the excluded files list, see <a href="../../c_st_serverconfiguration/t_st_serverconfigurationparameters#Change" class="MCXref xref">Change a parameter value</a>.
+To add or remove names from the excluded files list, see [Change a parameter value](../../c_st_serverconfiguration/t_st_serverconfigurationparameters#Change).

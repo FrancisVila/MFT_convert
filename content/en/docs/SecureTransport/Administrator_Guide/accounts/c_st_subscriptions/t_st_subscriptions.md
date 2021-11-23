@@ -6,15 +6,15 @@
 
 The following sections provide how-to instructions for managing subscriptions:
 
--   <a href="#Subscrib" class="MCXref xref">Subscribe an account to an application</a>
--   <a href="#Consider" class="MCXref xref">Considerations for subscriptions and AS2 transfer sites</a>
--   <a href="#Human" class="MCXref xref">Human to System type application</a>
--   <a href="#Schedule" class="MCXref xref">Scheduled downloads and tasks</a>
--   <a href="#Set" class="MCXref xref">Set up a scheduled transfer task for a subscription</a>
--   <a href="#Retrieve" class="MCXref xref">Retrieve files now</a>
--   <a href="#Purge" class="MCXref xref">Purge a subscription folder</a>
--   <a href="#Unsubscribe" class="MCXref xref">Unsubscribe an account from an application</a>
--   <a href="#Unsubscribe2" class="MCXref xref">Unsubscribe an account and delete the subscription folder</a>
+-   [Subscribe an account to an application](#Subscrib)
+-   [Considerations for subscriptions and AS2 transfer sites](#Consider)
+-   [Human to System type application](#Human)
+-   [Scheduled downloads and tasks](#Schedule)
+-   [Set up a scheduled transfer task for a subscription](#Set)
+-   [Retrieve files now](#Retrieve)
+-   [Purge a subscription folder](#Purge)
+-   [Unsubscribe an account from an application](#Unsubscribe)
+-   [Unsubscribe an account and delete the subscription folder](#Unsubscribe2)
 
 <span id="Subscrib"></span>
 
@@ -28,16 +28,16 @@ Before creating a subscription for an account, you must create at least one appl
 
 **Prerequisites**
 
--   Create an application. For details, see <a href="" class="MCXref xref">Manage applications</a>.
--   If the account is to have server-initiated transfers associated with it, you must create at least one transfer site for the account. For details, see <a href="../../transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Transfer sites</a>.
+-   Create an application. For details, see [Manage applications]().
+-   If the account is to have server-initiated transfers associated with it, you must create at least one transfer site for the account. For details, see [Transfer sites](../../transfersites#AccountsMenu_2253641766_1151145).
 
 **Workflow**
 
-1.  <a href="#Select" class="MCXref xref">Select a user account</a>
-2.  <a href="#Configur" class="MCXref xref">Configure general settings</a>
-3.  <a href="#Configur2" class="MCXref xref">Configure files received settings</a>
-4.  <a href="#Configur3" class="MCXref xref">Configure files sent settings</a>
-5.  <a href="#Complete" class="MCXref xref">Complete the subscription</a>
+1.  [Select a user account](#Select)
+2.  [Configure general settings](#Configur)
+3.  [Configure files received settings](#Configur2)
+4.  [Configure files sent settings](#Configur3)
+5.  [Complete the subscription](#Complete)
 
 <span id="Select"></span>
 
@@ -71,7 +71,7 @@ In the *General Settings* pane:
     >
     > Axway does not recommend you to add leading or trailing space intervals to your subscription folder name as you may experience unexpected behavior with different SFTP / FTPS clients (although leading spaces are accepted with certain SFTP clients). You cannot use the following characters in the subscription folder name: \* &lt; > ? " / \\ | :
 
-2.  Select the **Encrypt mode**. Selecting the **Encrypt mode** allows you to configure repository encryption for accounts at the per-subscription level. For additional information, refer to <a href="../../../c_st_setup/c_st_certificates/t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>*.*  
+2.  Select the **Encrypt mode**. Selecting the **Encrypt mode** allows you to configure repository encryption for accounts at the per-subscription level. For additional information, refer to [Repository encryption certificate](../../../c_st_setup/c_st_certificates/t_st_repository_encryption_certificate)*.*  
     Select **Default** to inherit the encryption mode for the subscription folder from the account or the global settings.  
     Select **Enable** to encrypt all files uploaded to the subscription folder.  
     Select **Disable** to upload unencrypted files to the subscription folder.  
@@ -102,7 +102,7 @@ In the *General Settings* pane:
     -   **UserB** and **UserC** can only download unencrypted files from the subscription folder.
 
 3.  If you selected the Standard Router application type, Enter an ID in the **Subscriber ID** field.  
-    When the **Rename submitted files to include Subscriber ID** check box is selected during the application definition, the uploaded file is renamed before it is sent to the internal system. The file is renamed in the format `<ID> <FILE_NAME>` where `<ID>` is the `Subscriber ID` that is specified here for the current Subscription, and `<FILE_NAME>` is original file name. For details, see <a href="../../../applications/applicationsstandardrouter#top" class="MCXref xref">Standard Router application</a>.
+    When the **Rename submitted files to include Subscriber ID** check box is selected during the application definition, the uploaded file is renamed before it is sent to the internal system. The file is renamed in the format `<ID> <FILE_NAME>` where `<ID>` is the `Subscriber ID` that is specified here for the current Subscription, and `<FILE_NAME>` is original file name. For details, see [Standard Router application](../../../applications/applicationsstandardrouter#top).
 
 4.  In the *Flow Settings* pane, select the **Existing flow attributes**.  
     If **Preserve** is selected, the attributes defined in the *Flow Attributes* pane will be applied only for newly received files which do not have associated flow attributes.  
@@ -110,7 +110,7 @@ In the *General Settings* pane:
     When **Append** is selected, only the attributes which are not defined for incoming files will be applied. Existing attributes will be preserved.
 
 5.  In the *Flow/Subscription Attributes* pane:
-    1.  To add an attribute, click **Add Attribute**. For additional information on Flow Attributes, refer to <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow" class="MCXref xref">Flow and subscription attributes</a>.  
+    1.  To add an attribute, click **Add Attribute**. For additional information on Flow Attributes, refer to [Flow and subscription attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow).  
         **Add Attribute** enables the administrator to add custom properties (Key=Value). Their values can be set using Expression Language. Administrators can use flow attributes, session and environment variables that are evaluated at the time a file is transferred through the subscription.  
         Examples:
 
@@ -169,10 +169,10 @@ In the *General Settings* pane:
 
 In the *For Files Received from this Account or its Partners* pane:
 
-1.  To set a schedule for automatic retrieval of the transferred files, select the **Automatically Retrieve Files From** check box and then select the respective transfer site from the drop down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see <a href="../../t_st_transferprofiles#AccountsMenu_2253641766_1248932" class="MCXref xref">Transfer profiles</a>.  
+1.  To set a schedule for automatic retrieval of the transferred files, select the **Automatically Retrieve Files From** check box and then select the respective transfer site from the drop down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see [Transfer profiles](../../t_st_transferprofiles#AccountsMenu_2253641766_1248932).  
     The *Schedule* pane is displayed.  
     A subscription that retrieves files from an AS2 transfer site does not use a schedule. To retrieve files from an AS2 transfer site, see
-    <a href="#Consider" class="MCXref xref">Considerations for subscriptions and AS2 transfer sites</a>.  
+    [Considerations for subscriptions and AS2 transfer sites](#Consider).  
     For a subscription that retrieves files from a Folder Monitor transfer site, to configure scheduled Folder Monitor operation, you must select **Set explicit FolderMonitor Schedule**.
 
 2.  (Optional) Click **Configure** in the *Schedule* pane to set up a future one time event or a recurring schedule.  
@@ -182,15 +182,15 @@ In the *For Files Received from this Account or its Partners* pane:
     >
     > If you configure a schedule and save it after the scheduled start time, the task will not be executed. You must save your configured schedule before the scheduled start time.
 
-3.  Specify the desired schedule. For details, see <a href="#Set" class="MCXref xref">Set up a scheduled transfer task for a subscription</a>.
+3.  Specify the desired schedule. For details, see [Set up a scheduled transfer task for a subscription](#Set).
 
 4.  (Optional) Enter the **Maximum number of parallel transfers**. If you enter a value greater than zero, SecureTransport executes only the specified number of transfers in parallel. If the value is null or zero, the maximum number of parallel transfers is limited by system capacity.  
     The maximum number of parallel transfers limit is applied cluster wide. The limit for files transferred from the client will not be exceeded. Due to limitations in Standard Cluster communication mode, the parallel pulls limit can be exceeded when there are several connections. If you want to force the limit, then the `force.standard.cluster.sit.pulls.sync=true` system property should be added to the `start_tm_console`. Adding the property to the `start_tm_console` has a performance penalty due to increased cluster communication.
 
 5.  (Optional) Click the **Retrieve Files Now** button to immediately trigger a one time file
-    pull. For details, see <a href="#Retrieve" class="MCXref xref">Retrieve files now</a>.
+    pull. For details, see [Retrieve files now](#Retrieve).
 
-6.  (Optional) In the *Post Transmission Settings* pane, set the failure and success options. For details, see <a href="../r_st_post_transmission_actions#AccountsMenu_2253641766_1134276" class="MCXref xref">Post-transmission actions</a>.
+6.  (Optional) In the *Post Transmission Settings* pane, set the failure and success options. For details, see [Post-transmission actions](../r_st_post_transmission_actions#AccountsMenu_2253641766_1134276).
 
 7.  To decrypt the transferred files, select **Decrypt PGP File As** and enter a file name or expression.
 
@@ -217,7 +217,7 @@ In the *For Files Sent to this Account or its Partners* pane:
 
 6.  (Optional) Select **Keep Original As** to move the file to a different folder, rename the file, or both using either hard-coded text or by entering an expression.
 
-7.  (Optional) To set automatic sending of the files, select **Send Files Directly To** and choose one or more transfer sites from the drop-down list. Press either the Shift or Ctrl key while selecting the transfer sites to choose more than one site. All files in the outbox of the subscription folder are automatically sent to the selected transfer sites. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see <a href="../../t_st_transferprofiles#AccountsMenu_2253641766_1248932" class="MCXref xref">Transfer profiles</a>.  
+7.  (Optional) To set automatic sending of the files, select **Send Files Directly To** and choose one or more transfer sites from the drop-down list. Press either the Shift or Ctrl key while selecting the transfer sites to choose more than one site. All files in the outbox of the subscription folder are automatically sent to the selected transfer sites. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see [Transfer profiles](../../t_st_transferprofiles#AccountsMenu_2253641766_1248932).  
 
     > **Note:**
     >
@@ -319,7 +319,7 @@ When you have already subscribed an account to an application, depending on the 
 2.  Click **Subscriptions > Subscribe to &lt;application\_name>**.  
     The *Subscription to &lt;application name>* page is displayed.
 
-3.  Select the **Automatically Retrieve Files From** check box and then select the respective transfer site from the drop down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see <a href="../../t_st_transferprofiles#AccountsMenu_2253641766_1248932" class="MCXref xref">Transfer profiles</a>.  
+3.  Select the **Automatically Retrieve Files From** check box and then select the respective transfer site from the drop down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see [Transfer profiles](../../t_st_transferprofiles#AccountsMenu_2253641766_1248932).  
     The **Retrieve Files Now** button is displayed.
 
 4.  Click **Retrieve Files Now** to immediately trigger a one-time file
@@ -377,5 +377,5 @@ You can remove a subscription and delete the associated subscription folder, inc
 
 **Related topics:**
 
--   <a href="../r_st_encryption_options" class="MCXref xref">Encryption options</a>
--   <a href="../r_st_post_transmission_actions" class="MCXref xref">Post-transmission actions</a>
+-   [Encryption options](../r_st_encryption_options)
+-   [Post-transmission actions](../r_st_post_transmission_actions)

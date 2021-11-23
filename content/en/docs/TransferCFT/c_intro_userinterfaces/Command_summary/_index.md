@@ -2,12 +2,12 @@
     "title": "Transfer CFT command guide and syntax ",
     "linkTitle": "Command guide and parameters",
     "weight": "130"
-}This topic provides a useful list of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands,
+}This topic provides a useful list of {{< TransferCFT/componentshortname  >}} commands,
 syntax, and parameters. For a more detailed description of the Transfer
 CFT commands, refer to the link displayed below each command
 syntax.
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands are presented in alphabetical order in this
+The {{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
 summary. Each
 command is presented with possible parameters and default values.
 
@@ -24,7 +24,7 @@ Syntax
 = string \]
 
 \[ [TYPE](parameter_intro/type)
-= { <span style="text-decoration: underline;">ALL</span>
+= {
 | HOST | CFT } \]
 
 \[ [KEY](parameter_intro/key) = { <u>FIRST</u> | ALL } \]
@@ -40,11 +40,11 @@ Syntax
 ID = identifier
 
 \[ [TYPE](parameter_intro/type)
-= { <span style="text-decoration: underline;">PART</span>
+= {
 | TRK | CRON | FOLDER } \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">BOTH</span>
+= {
 | REQUESTER|
 SERVER } \]
 
@@ -77,23 +77,23 @@ CFTACCNT TYPE = FILE
 = filename \]
 
 \[ [LANGUAGE](parameter_intro/language)
-= { <span style="text-decoration: underline;">COBOL</span>
+= {
 | C } \]
 
 \[ [MAXREC](parameter_intro/maxrec)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
 \[ [SWITCH](parameter_intro/switch)
-= { <span style="text-decoration: underline;">00000000</span>
+= {
 | time } \]
 
 \[ [FORMAT](parameter_intro/format)
-= { <span style="text-decoration: underline;">V23</span>
+= {
 | 23 | V24 | 24} \]
 
  
@@ -113,15 +113,15 @@ CFTACCNT TYPE = SYST
 = string \]
 
 \[ [FORMAT](parameter_intro/format)
-= { <span style="text-decoration: underline;">V23</span>
+= {
 | 23 | V24 | 24} \]
 
 \[ [LANGUAGE](parameter_intro/language)
-= { <span style="text-decoration: underline;">COBOL</span>
+= {
 | C } \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
 [CFTACCNT details](../web_copilot_ui/conf_intro/cftaccnt)
@@ -151,7 +151,7 @@ MODE = REPLACE
 = string \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
 CFTAPPL MODE = DELETE
@@ -163,7 +163,7 @@ CFTAPPL MODE = DELETE
 = string
 
 [DIRECT](parameter_intro/direct)
-= { <span style="text-decoration: underline;">BOTH</span>
+= {
 |  SEND
 | RECV }
 
@@ -174,7 +174,7 @@ CFTAPPL MODE = DELETE
 = string \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
 [CFTAPPL details](../web_copilot_ui/flow_def_intro/cftappl)
@@ -187,13 +187,13 @@ Syntax
 
 FNAME = filename
 
-[ID](parameter_intro/id) = <span style="font-weight: normal;">identifier</span>
+[ID](parameter_intro/id) =
 
 \[ [COMMENT](parameter_intro/comment)
 = string \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
  
@@ -204,16 +204,16 @@ Or
 
 IDF = (identifier | mask, identifier | mask, …)
 
-[ID](parameter_intro/id) = <span style="font-weight: normal;">identifier</span>
+[ID](parameter_intro/id) =
 
 \[ [COMMENT](parameter_intro/comment)
 = string \]
 
 \[ [MODE](parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
-<span style="font-weight: bold;"> </span>
+** **
 
 <span id="CFTCAT"></span>
 

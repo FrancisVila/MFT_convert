@@ -17,8 +17,8 @@ The following changes are added to the {{< SecureTransport/securetransportname  
       <tr>
          <td>5.5 February 2021 Update         </td>
          <td><ul>
-<li><a href="../st_amazon_rds" class="MCXref xref">Amazon RDS</a> updated with instructions for using PostgreSQL database</li>
-<li><a href="../st_amazon_rds/connect-postgre" class="MCXref xref">Connect and configure PostgreSQL</a> topic added</li>
+<li><a href="../st_amazon_rds">Amazon RDS</a> updated with instructions for using PostgreSQL database</li>
+<li><a href="../st_amazon_rds/connect-postgre">Connect and configure PostgreSQL</a> topic added</li>
 </ul>         </td>
       </tr>
    </tbody>

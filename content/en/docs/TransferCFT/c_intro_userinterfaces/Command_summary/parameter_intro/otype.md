@@ -4,7 +4,7 @@
     "weight": "2500"
 }<span id="otype"></span>
 
-### <span class="mc-variable System.Title variable">otype</span>
+### 
 
 #### COPYFILE
 
@@ -13,7 +13,7 @@
 
 **O**utput file type.
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide* corresponding to your
+Refer to the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your
 OS.
 
  

@@ -39,4 +39,4 @@ For {{< SecureTransport/componentshortname  >}} Server with an embedded database
 
 `<FILEDRIVEHOME>/mariadb/bin/mariadb --defaults-file=<FILEDRIVEHOME>/conf/internaldb.conf -ptumbleweed st < Backup_file.sql`
 
-For additional information about export and importing server configuration parameters and files for backup and restore, see <a href="../c_st_serverconfiguration#ServerMenu_1832073003_1107076" class="MCXref xref">Server configuration</a>.
+For additional information about export and importing server configuration parameters and files for backup and restore, see [Server configuration](../c_st_serverconfiguration#ServerMenu_1832073003_1107076).

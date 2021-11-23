@@ -8,22 +8,22 @@ If you have access to the *Route Package Templates* page, you can create, edit, 
 
 The following topics provide how-to instructions for managing Route Package Templates:
 
--   <a href="#Add" class="MCXref xref">Add Route Package Template</a>
--   <a href="#Edit" class="MCXref xref">Edit Route Package Template</a>
--   <a href="#Enable" class="MCXref xref">Enable Route</a>
--   <a href="#Disable" class="MCXref xref">Disable Route</a>
--   <a href="#Reorder" class="MCXref xref">Reorder Routes</a>
--   <a href="#Delete" class="MCXref xref">Delete Route</a>
--   <a href="#Delete_template" class="MCXref xref">Delete Route Package Template</a>
+-   [Add Route Package Template](#Add)
+-   [Edit Route Package Template](#Edit)
+-   [Enable Route](#Enable)
+-   [Disable Route](#Disable)
+-   [Reorder Routes](#Reorder)
+-   [Delete Route](#Delete)
+-   [Delete Route Package Template](#Delete_template)
 
 **Related topics:**
 
--   <a href="../t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a>
--   <a href="../t_st_create_user_accounts" class="MCXref xref">Create user accounts</a>
--   <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>
--   <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>
--   <a href="../t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>
--   <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>
+-   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator)
+-   [Create user accounts](../t_st_create_user_accounts)
+-   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
+-   [Manage Routes](../t_st_manage_routes)
+-   [Subscribe to Advanced Routing application](../t_st_subscribe_advanced_routing_application)
+-   [Assign Route Package Template](../t_st_assign_route_package_template)
 
 <span id="Add"></span>
 
@@ -35,18 +35,18 @@ Use the following procedure to add a Route Package Template.
     The *Route Package Template* page is displayed.
 2.  Click **New Route Package Template**.  
     The *New Route Package Template Entry* page is displayed.
-3.  Enter a unique **Route Package Template Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.
-4.  (Optional) Use the **Left** and **Right** buttons to assign business units to the Route Package Template. The **Business Unit List** contains the names of business units you create. For details, <a href="../../../c_st_advancedaccountadministration/c_st_businessunits" class="MCXref xref">Business units</a>.
+3.  Enter a unique **Route Package Template Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../../accounts/useraccounts/t_st_create_user_account#Spaces).
+4.  (Optional) Use the **Left** and **Right** buttons to assign business units to the Route Package Template. The **Business Unit List** contains the names of business units you create. For details, [Business units](../../../c_st_advancedaccountadministration/c_st_businessunits).
 5.  (Optional) Enter a **Description**.
 6.  Determine the **Execution Rule**. Select either **All Matching Routes** (default) or **First Matching Route**.  
     When **All Matching Routes** is selected, all matching routes are executed. When **First Matching Route** is selected, only the first matching route is executed.
 7.  Click **New Route**.  
-    The *New Route Entry* page is displayed. For route entry configuration information, see <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>.
-8.  (Optional) Have **Additional attributes** with your route package templates: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
-9.  Determine email **Notifications**. As a prerequisite the SMTP settings must be configured by navigating to **Setup > Miscellaneous > SMTP Configuration** in the Administration Tool. For additional SMTP configuration information, see <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>. Additionally, in order to add email notifications the administrator must have access to Mail Templates, otherwise this selection is disabled. Mail Templates access is configurable through the Administrative role settings.
-    See <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.
+    The *New Route Entry* page is displayed. For route entry configuration information, see [Manage Routes](../t_st_manage_routes).
+8.  (Optional) Have **Additional attributes** with your route package templates: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
+9.  Determine email **Notifications**. As a prerequisite the SMTP settings must be configured by navigating to **Setup > Miscellaneous > SMTP Configuration** in the Administration Tool. For additional SMTP configuration information, see [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration). Additionally, in order to add email notifications the administrator must have access to Mail Templates, otherwise this selection is disabled. Mail Templates access is configurable through the Administrative role settings.
+    See [Manage administrator accounts](../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts).
     1.  Select **Notify following e-mails on route failure** to be notified on route failure and enter a notification email address, a list of mail addresses, or an expression.
-    2.  Select the **Mail Template** from the menu to used for route failure notifications. See <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+    2.  Select the **Mail Template** from the menu to used for route failure notifications. See [Mail templates](../../../c_st_setup/t_st_mailtemplates).
     3.  Select **Notify following e-mails on route success** to be notified on route success and enter a notification email address, a list of mail addresses, or an expression
     4.  Select the **Mail Template** from the menu to used for route failure notifications.
     5.  Select **Notify following e-mails on route triggering** to be notified on route triggering and enter a notification email address, a list of mail addresses, or an expression.
@@ -67,7 +67,7 @@ Use the following procedure to edit a Route Package Template.
     The *Route Package Template* page is displayed.
 2.  Click on the name of the Route Package Template to edit in the *Route Package Templates List*.  
     The *Edit Route Package Template Entry* page is displayed.
-3.  Edit the information displayed. To edit a route, click on the name of the Route and see <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>.
+3.  Edit the information displayed. To edit a route, click on the name of the Route and see [Manage Routes](../t_st_manage_routes).
 4.  Click **Save** to apply the changes.
 
 > **Note:**

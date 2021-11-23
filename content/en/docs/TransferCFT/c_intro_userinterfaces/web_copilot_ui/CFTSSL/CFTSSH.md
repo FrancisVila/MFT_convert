@@ -40,7 +40,7 @@ algorithm</li>
 <p>This list is compared with the list proposed by the client
 in order of preference, for the purpose of determining the suite to be
 negotiated.</p>
-<p><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
+<p>{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.</p>
@@ -125,7 +125,7 @@ algorithm</li>
 <p>This list is compared with the list proposed by the client
 in order of preference, for the purpose of determining the suite to be
 negotiated.</p>
-<p><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
+<p>{{< TransferCFT/componentlongname  >}} supports the following: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc, 3des-cbc, blowfish-cbc.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>If the field is empty, the default list is: aes256-ctr, aes192-ctr, aes128-ctr, aes256-cbc, aes192-cbc, aes128-cbc.</p>

@@ -2,7 +2,7 @@
     "title": "logchg",
     "linkTitle": "logchg",
     "weight": "1830"
-}### <span class="mc-variable System.Title variable">logchg</span>
+}### 
 
 #### WLOG
 

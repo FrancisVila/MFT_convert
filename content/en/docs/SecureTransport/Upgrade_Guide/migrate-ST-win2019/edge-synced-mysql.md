@@ -77,7 +77,7 @@ The migration procedure requires you to add your new SecureTransport Edge deploy
 10. Power off the original node on Windows Server 2012 R2.
 11. Change the IP address of the node on Windows Server 2016 to the IP address previously occupied by the node on Windows Server 2012 R2.
 12. Restart all services on the node on Windows Server 2016.
-13. For all secondary nodes, follow steps 1 through 4, make sure the new node meets the <a href="#prereq" class="MCXref xref">Prerequisites for Synchronization</a>, and then follow steps 10 through 12.
+13. For all secondary nodes, follow steps 1 through 4, make sure the new node meets the [Prerequisites for Synchronization](#prereq), and then follow steps 10 through 12.
 14. After each node has been successfully replaced by its corresponding Windows Server 2016 node, uncomment the entries in the `servers` file located in `<FILEDRIVEHOME>\lib\admin\config\` on all nodes.
 15. Restart all services on all nodes.
 16. Synchronize the secondary servers manually from the {{< SecureTransport/componentshortname >}} Administration Tool of the primary server.
@@ -87,8 +87,8 @@ The migration procedure requires you to add your new SecureTransport Edge deploy
 
 **Related topics:**
 
--   <a href="../standalone-mysql" class="MCXref xref">Standalone installation with embedded database</a>
--   <a href="../standalone-ext-db" class="MCXref xref">Standalone with External Database</a>
--   <a href="../standard-cluster-mysql" class="MCXref xref">Standard Cluster environment with embedded database</a>
--   <a href="../lec-ext-db" class="MCXref xref">Enterprise Cluster environment with external database</a>
--   <a href="../edge-mysql" class="MCXref xref">Edge installation with Embedded Database</a>
+-   [Standalone installation with embedded database](../standalone-mysql)
+-   [Standalone with External Database](../standalone-ext-db)
+-   [Standard Cluster environment with embedded database](../standard-cluster-mysql)
+-   [Enterprise Cluster environment with external database](../lec-ext-db)
+-   [Edge installation with Embedded Database](../edge-mysql)

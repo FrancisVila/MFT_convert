@@ -267,7 +267,7 @@ This parameter is a character string, maximum length: 8.
 
 The following example shows how to retrieve a protocol trace. You can use the same steps to perform other types of traces.
 
-1.  Start <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.
+1.  Start {{< TransferCFT/componentlongname >}}.
 
 2.  Use the command utility CFTTRACE to set and start the following trace, for example:
 
@@ -275,7 +275,7 @@ The following example shows how to retrieve a protocol trace. You can use the sa
 
     CFTTRACE STARTTRC ID=T1,TID=TRC0,PTRACE=28
 
-3.  Check that the <span class="code">CFTATMC </span>process is started.
+3.  Check that the `CFTATMC `process is started.
 
 4.  Execute the transfer to trace.
 
@@ -429,7 +429,7 @@ Name of trace file to be fed by traces.
 
 Character string maximum length: 64 characters.
 
-**\[TRCFTYP = <u><span style="text-decoration: none;">{</span>STANDARD</u>
+**\[TRCFTYP = <u>STANDARD</u>
 | CIRCULAR}\]**
 
 Trace file type:

@@ -14,6 +14,6 @@ The partner checks the signature of the document and sends a signed MDN receipt 
 
 The following topics describe the {{< SecureTransport/componentshortname  >}} AS2 implementation:
 
--   <a href="c_st_synchronous_asynchronous_receipts" class="MCXref xref">Synchronous and asynchronous receipts</a> - Describes synchronous and asynchronous receipts.
--   <a href="c_st_as2_application_framework_architecture_workflow" class="MCXref xref">AS2 and application framework: Architecture and workflow</a> - Describes the architecture and workflow of AS2 and the application framework.
--   <a href="c_st_as2_server_setup_overview" class="MCXref xref">SecureTransport AS2 server: Setup overview</a> - Provides an overview of the {{< SecureTransport/componentshortname >}} AS2 server setup.
+-   [Synchronous and asynchronous receipts](c_st_synchronous_asynchronous_receipts) - Describes synchronous and asynchronous receipts.
+-   [AS2 and application framework: Architecture and workflow](c_st_as2_application_framework_architecture_workflow) - Describes the architecture and workflow of AS2 and the application framework.
+-   [SecureTransport AS2 server: Setup overview](c_st_as2_server_setup_overview) - Provides an overview of the {{< SecureTransport/componentshortname >}} AS2 server setup.

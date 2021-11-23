@@ -4,7 +4,7 @@
     "weight": "220"
 }Business users today expect that applications can transfer files sequentially. Additionally, when sending files sequentially (first in/first out), users may want to define a processing phase that the transfer must reach before Transfer CFT begins executing the next transfer. This process in Transfer CFT is known as transfer serialization.
 
-On the sender side, the next file cannot be sent until the previously sent file is written on the disk by the receiving <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>, and a certain phase reached, for example the post-processing is executed. Once this occurs, the sending <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> can then send the next file.
+On the sender side, the next file cannot be sent until the previously sent file is written on the disk by the receiving {{< TransferCFT/hflongproductname  >}}, and a certain phase reached, for example the post-processing is executed. Once this occurs, the sending {{< TransferCFT/hflongproductname  >}} can then send the next file.
 
 Serialization of transfer requests is based on a combination of the request's IDF and PART values. Therefore, if either of these values varies, the IDF or PART, then the request does not belong to the same serialization list.
 

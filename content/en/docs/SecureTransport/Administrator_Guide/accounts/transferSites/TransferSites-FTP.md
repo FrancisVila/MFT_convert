@@ -23,11 +23,11 @@ The following table describes the general options for a FTP(S) transfer site.
       </tr>
       <tr>
          <td>Server         </td>
-         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The host name or IP address of the remote server to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Port         </td>
-         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The port on the remote server to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Alternative addresses         </td>
@@ -56,7 +56,7 @@ The following table describes the general options for a FTP(S) transfer site.
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
       <tr>
          <td>Enable Active Connection Mode         </td>
@@ -78,7 +78,7 @@ The following table describes the general options for a FTP(S) transfer site.
       </tr>
       <tr>
          <td>Allow Overwrite         </td>
-         <td>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing" class="MCXref xref">Advanced Routing</a>.         </td>
+         <td>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing">Advanced Routing</a>.         </td>
       </tr>
       <tr>
          <td>Upload Folder         </td>
@@ -107,7 +107,7 @@ The *Transfer Settings* options allow you to define various transfer settings wi
       <tr>
          <td>Transfer Mode         </td>
          <td><p>Specify whether data is transferred as ASCII or binary. You can also choose to have {{< SecureTransport/componentshortname  >}} automatically determine the correct transfer mode.</p>
-<p>For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
+<p>For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761">Transfer mode for server-initiated transfers</a>.</p>         </td>
       </tr>
       <tr>
          <td>Upload command         </td>
@@ -145,7 +145,7 @@ The *Transfer Settings* options allow you to define various transfer settings wi
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict FTPS to use only FIPS 140-2 Level 1 certified cryptographic libraries. This option is displayed when <strong>Use FTPS</strong> is selected.</p>
 <p>When you enable FIPS transfer mode, the panel expands with an additional field where you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>Ftps.FIPS.SIT.Ciphers</code> configuration option.</p>
-<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
+<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
       </tr>
       <tr>
          <td>SITE command         </td>
@@ -173,7 +173,7 @@ The Site Login Credentials options allow you to define credentials and / or add 
       </tr>
       <tr>
          <td>User Name         </td>
-         <td>The user name to log in to the FTP server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>The user name to log in to the FTP server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Use Password         </td>
@@ -251,7 +251,7 @@ The Receive options subtab allows you to define post transmission actions on fil
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. see <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. see <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
       <tr>
          <td>On Failure         </td>
@@ -333,13 +333,13 @@ This table describes the supported Active/Passive FTP(S) connection modes for c
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

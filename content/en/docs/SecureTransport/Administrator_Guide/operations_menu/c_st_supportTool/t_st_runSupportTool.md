@@ -29,8 +29,8 @@ During execution, the support tool outputs status messages and a final message t
 
 **Related topics:**
 
--   <a href="../t_st_configuresupporttool" class="MCXref xref">Configure the support tool</a>
--   <a href="../t_st_customizesupporttool" class="MCXref xref">Add custom information to the support information file</a>
+-   [Configure the support tool](../t_st_configuresupporttool)
+-   [Add custom information to the support information file](../t_st_customizesupporttool)
 
 ## Run the support tool automatically when the TM runs out of memory
 

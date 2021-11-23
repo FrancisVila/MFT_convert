@@ -39,6 +39,6 @@ Configure user classes on {{< SecureTransport/componentshortname  >}} Server onl
 
 The following topics describe and list the default user classes and custom expressions. The also provide how-to instructions for managing user classes.
 
--   <a href="c_st_default_user_classes" class="MCXref xref">Default user classes</a> - Describes and lists the default user classes.
--   <a href="c_st_custom_expressions" class="MCXref xref">Custom expressions</a> - Lists the user class custom expressions.
--   <a href="t_st_userclasses" class="MCXref xref">Manage user classes</a> - Provides how-to instructions for managing user classes.
+-   [Default user classes](c_st_default_user_classes) - Describes and lists the default user classes.
+-   [Custom expressions](c_st_custom_expressions) - Lists the user class custom expressions.
+-   [Manage user classes](t_st_userclasses) - Provides how-to instructions for managing user classes.

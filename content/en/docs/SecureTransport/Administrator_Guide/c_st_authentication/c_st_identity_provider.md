@@ -17,7 +17,7 @@ The `idpResolverKey` corresponds to the Query Parameter name attribute and can b
 
 The `localIdpId` corresponds to the value in the mapping that will force SecureTransport to not trigger the SSO flow and continue with local authentication. The default value is: `ST_IDP`.
 
-The value of these options is configurable. For more information about how to edit the Server Configuration options, refer to <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>.
+The value of these options is configurable. For more information about how to edit the Server Configuration options, refer to [Update configuration files](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationfiles).
 
 Example for using SecureTransport as a Identity Provider:
 

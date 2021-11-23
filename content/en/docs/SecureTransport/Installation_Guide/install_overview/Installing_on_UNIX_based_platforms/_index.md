@@ -17,6 +17,6 @@ For field values, use the following:
 
 The following topics provide the how to instructions for installing {{< SecureTransport/componentshortname  >}} on UNIX-based platforms:
 
--   <a href="installing_securetransport_embedded_db_unix" class="MCXref xref">Install SecureTransport on Unix with the embedded database</a>
--   <a href="installing_securetransport_server_external_db_unix" class="MCXref xref">Install SecureTransport Server on Unix with an external database</a>
--   <a href="running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>
+-   [Install SecureTransport on Unix with the embedded database](installing_securetransport_embedded_db_unix)
+-   [Install SecureTransport Server on Unix with an external database](installing_securetransport_server_external_db_unix)
+-   [Run SecureTransport as a service on UNIX-based platforms after non-root installation](running_st_as_service_unix)

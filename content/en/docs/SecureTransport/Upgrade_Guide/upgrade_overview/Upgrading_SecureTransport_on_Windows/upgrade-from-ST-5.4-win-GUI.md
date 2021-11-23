@@ -41,5 +41,5 @@ After you upgrade {{< SecureTransport/componentshortname  >}}, complete the requ
 
 **Related topics:**
 
--   <a href="../upgrading_from_st_5.4_win_console" class="MCXref xref">Upgrade from SecureTransport 5.4 using the console</a>
--   <a href="../../../recover-previous-installation-win" class="MCXref xref">Recover your previous SecureTransport installation on Windows</a>
+-   [Upgrade from SecureTransport 5.4 using the console](../upgrading_from_st_5.4_win_console)
+-   [Recover your previous SecureTransport installation on Windows](../../../recover-previous-installation-win)

@@ -56,7 +56,7 @@ You can check the current Kube-DNS TTL by executing the following command severa
 
 ### Set Default Container Memory and Open Files limits
 
-As the SecureTransport processes inside the container run as a non-root user, it is important to make sure that the limits for "Max Open Files" and "Max User Processes" are both set to at least 65536. See the <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Prerequisites_for_non_root_installations.htm" class="MCXref xref">Prerequisites for non-root installations</a> in the *SecureTransport {{< SecureTransport/releasenumber  >}}. Installation guide* for more information.
+As the SecureTransport processes inside the container run as a non-root user, it is important to make sure that the limits for "Max Open Files" and "Max User Processes" are both set to at least 65536. See the [Prerequisites for non-root installations](https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Prerequisites_for_non_root_installations.htm) in the *SecureTransport {{< SecureTransport/releasenumber  >}}. Installation guide* for more information.
 
 In a containerized environment these limits are best configured globally, for all containers, in the Docker Engine configuration file (by default `/etc/docker/daemon.json`).
 
@@ -156,7 +156,7 @@ The generated `taeh` file is passed on startup of the container. The file must b
 
 ## External Database Requirements
 
-The requirements for the External Oracle/MSSQL/PostgreSQL databases are the same as mentioned in the <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Database_installation_prerequisites.htm" class="MCXref xref">Database requirements</a> in the *SecureTransport 5.5 Installation guide* with some database-specific exceptions.
+The requirements for the External Oracle/MSSQL/PostgreSQL databases are the same as mentioned in the [Database requirements](https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Database_installation_prerequisites.htm) in the *SecureTransport 5.5 Installation guide* with some database-specific exceptions.
 
 ### Requirements for Oracle Databases
 
@@ -189,7 +189,7 @@ The "installation procedures" for classic and containerized SecureTransport depl
     -   The Docker Image already contains the SecureTransport binaries (Edge/Server)
     -   The external database initialization is performed during the container startup (only if the database has not been initialized yet). This is why the external database configuration must be supplied to the container when it is deployed.
 
-The external database configuration must be supplied to the container in a file (called `db.conf`). This file follows strict format and must be prepared before deploying the container (more on that in the Initial deployment section). The database password must be encrypted using the secret file, as explained in section <a href="#SecretFile" class="MCXref xref">Secret file</a>.
+The external database configuration must be supplied to the container in a file (called `db.conf`). This file follows strict format and must be prepared before deploying the container (more on that in the Initial deployment section). The database password must be encrypted using the secret file, as explained in section [Secret file](#SecretFile).
 
 #### External database sample configuration files
 
@@ -330,4 +330,4 @@ The options in `database_configuration_components.xm` are supplied in key-value 
 
 Valid components are: `"Database", "Admin", "AS2", "SSHD", "FTPD", "HTTPD", "Tools", "Installer", "Pesit", "TransactionManager", "TransferLog", "ServerLog"`.
 
-*next topic:* <a href="../initial-deployment" class="MCXref xref">Initial deployment</a>
+*next topic:* [Initial deployment](../initial-deployment)

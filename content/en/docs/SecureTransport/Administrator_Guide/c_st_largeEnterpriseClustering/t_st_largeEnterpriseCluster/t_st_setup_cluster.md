@@ -16,7 +16,7 @@
     **Note** The Admin service on the newly installed Server nodes starts after the installation; however it is not operational.  
 5.  Stop the Admin service on each newly-installed {{< SecureTransport/componentshortname >}} node.
 6.  Stop all the protocol servers and services on all nodes except on the first SecureTransport Server. Make sure that only the Administration Tool service is running on that SecureTransport Server.
-7.  Log on to the Administration Tool on the running Server as the `admin` user, and add to the cluster each of the cluster nodes, including the one you are logged on to. For details, see <a href="../t_st_add_server_to_cluster#Large_Enterprise_Clustering_2746683174_1077923" class="MCXref xref">Add a server to a cluster</a>.  
+7.  Log on to the Administration Tool on the running Server as the `admin` user, and add to the cluster each of the cluster nodes, including the one you are logged on to. For details, see [Add a server to a cluster](../t_st_add_server_to_cluster#Large_Enterprise_Clustering_2746683174_1077923).  
     **Note** Do not restart any other SecureTransport Server until it is added to the cluster.  
 8.  Start the Admin service on the newly-installed Secure Transport servers.
 9.  Install the SecureTransport licenses for the newly-installed SecureTransport Servers.  
@@ -41,16 +41,16 @@ You can then proceed with the rest of the configuration setup, for example, perf
 > Tip  
 > You may perform most configuration tasks once on any SecureTransport Server. The configuration is saved in the database and shared across all other SecureTransport Server nodes in the cluster.
 
-For more details on server configuration specifics, see <a href="../../../operations_menu/c_st_serverconfiguration#ServerMenu_1832073003_1107076" class="MCXref xref">Server configuration</a>.
+For more details on server configuration specifics, see [Server configuration](../../../operations_menu/c_st_serverconfiguration#ServerMenu_1832073003_1107076).
 
 **Related topics:**
 
--   <a href="../c_st_cluster_prerequisites" class="MCXref xref">Enterprise Cluster prerequisites</a>
--   <a href="../t_st_add_server_to_cluster" class="MCXref xref">Add a server to a cluster</a>
--   <a href="../t_st_remove_server_from_cluster" class="MCXref xref">Remove a server from a cluster</a>
--   <a href="../t_st_view_cluster_status" class="MCXref xref">View cluster status</a>
--   <a href="../t_st_notification_of_cluster_status" class="MCXref xref">Notification of cluster status</a>
--   <a href="../t_st_setup_disaster_recovery_cluster" class="MCXref xref">Set up a disaster recovery cluster</a>
--   <a href="../t_st_maintain_disaster_recovery_cluster" class="MCXref xref">Maintain a disaster recovery cluster</a>
--   <a href="../t_st_dr_failover_fallback" class="MCXref xref">Disaster recovery failover and fallback</a>
--   <a href="../t_st_direct_cluster_workload" class="MCXref xref">Direct cluster workload</a>
+-   [Enterprise Cluster prerequisites](../c_st_cluster_prerequisites)
+-   [Add a server to a cluster](../t_st_add_server_to_cluster)
+-   [Remove a server from a cluster](../t_st_remove_server_from_cluster)
+-   [View cluster status](../t_st_view_cluster_status)
+-   [Notification of cluster status](../t_st_notification_of_cluster_status)
+-   [Set up a disaster recovery cluster](../t_st_setup_disaster_recovery_cluster)
+-   [Maintain a disaster recovery cluster](../t_st_maintain_disaster_recovery_cluster)
+-   [Disaster recovery failover and fallback](../t_st_dr_failover_fallback)
+-   [Direct cluster workload](../t_st_direct_cluster_workload)

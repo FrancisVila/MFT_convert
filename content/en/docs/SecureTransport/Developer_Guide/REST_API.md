@@ -4,7 +4,7 @@
     "weight": "60"
 }The current version of REST API for {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} is 2.0. It includes new resources and all existing resources (backward compatible), which are still available in the previous versions.
 
-For useful Swagger documents links, refer to <a href="#Useful" class="MCXref xref">Useful URIs</a>.
+For useful Swagger documents links, refer to [Useful URIs](#Useful).
 
 ## Administrative credentials
 

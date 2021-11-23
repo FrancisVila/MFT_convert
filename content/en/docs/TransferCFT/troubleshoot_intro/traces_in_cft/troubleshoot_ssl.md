@@ -6,7 +6,7 @@
 
 ## Activating traces
 
-To enable an SSL trace, add the parameter <span class="code">trace = 255</span> to the control CFTSSL used in the exchange (default trace = 0 => no trace).
+To enable an SSL trace, add the parameter `trace = 255` to the control CFTSSL used in the exchange (default trace = 0 => no trace).
 
 ### Example activating a trace
 

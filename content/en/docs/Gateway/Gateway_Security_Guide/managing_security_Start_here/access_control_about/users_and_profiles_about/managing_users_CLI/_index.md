@@ -2,17 +2,17 @@
     "title": "Working with Users (command line)",
     "linkTitle": "Command line operations",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-<span class="code" style="font-weight: bold;">[peladm create\_user](#peladm_create_user)</span>
+`peladm create_user`
 
-<span class="code" style="font-weight: bold;">[peladm delete\_user](#delete_user)</span>
+`peladm delete_user`
 
-<span class="code" style="font-weight: bold;">[peladm update\_user](#update_user)</span>
+`peladm update_user`
 
-<span class="code" style="font-weight: bold;">[peldsp display\_user](#display_user)</span>
+`peldsp display_user`
 
-<span class="code" style="font-weight: bold;">[peldsp select\_user](#select_user)</span>
+`peldsp select_user`
 
 <span id="peladm_create_user"></span>
 
@@ -22,43 +22,43 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><p>peladm create_user (<span style="font-weight: normal;">-username</span>) [<span style="font-style: italic;font-weight: normal;">-optional parameters</span><span style="font-style: italic;font-weight: normal;">, see below</span>]</p>         </td>
+         <td><p>peladm create_user () [<em>-optional parameters, see below</em>]</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
          <td><p>This command is reserved for administrators only.</p>
 <p>Use this command to create a new user.</p>
-<p>All parameters apart from <span class="code">username</span> are optional.</p>
+<p>All parameters apart from <code>username</code> are optional.</p>
 <p>The Profile that you specify must be defined in the Profile database.</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-username (-un)</span>: Login name for this user</p>         </td>
+<p><code>-username (-un)</code>: Login name for this user</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-profile (-pr)</span>: Access profile name for this user</p>         </td>
+         <td><p><code>-profile (-pr)</code>: Access profile name for this user</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-group (-gr)</span>: Group name for this user</p>         </td>
+         <td><p><code>-group (-gr)</code>: Group name for this user</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-password (-pswd)</span>: Password for this user</p>         </td>
+         <td><p><code>-password (-pswd)</code>: Password for this user</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-comments (-cts)</span>: Enter a free-text description of up to 80 alphanumeric characters</p>         </td>
+         <td><p><code>-comments (-cts)</code>: Enter a free-text description of up to 80 alphanumeric characters</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-expired (-exd)</span>: Enter an expiration date in the format <span style="font-style: italic;">YYYYDDMM HHMMSS</span></p>         </td>
+         <td><p><code>-expired (-exd)</code>: Enter an expiration date in the format <em>YYYYDDMM HHMMSS</em></p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-maxretry (-mxr)</span>: Enter a number between 0 and 999 for the maximum number of connection retries allowed (default = 0)</p>         </td>
+         <td><p><code>-maxretry (-mxr)</code>: Enter a number between 0 and 999 for the maximum number of connection retries allowed (default = 0)</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-administrator (-admin)</span>: Define the user as an administrator or not.</p>
+         <td><p><code>-administrator (-admin)</code>: Define the user as an administrator or not.</p>
 <p>Enter one of the values:</p>
 <ul>
-<li><span style="font-weight: bold;">N</span>: non-administrator users</li>
+<li><strong>N</strong>: non-administrator users</li>
 <li><span style="font-weight: bold;">Y</span>: administrator users (default)</li>
 </ul>         </td>
       </tr>

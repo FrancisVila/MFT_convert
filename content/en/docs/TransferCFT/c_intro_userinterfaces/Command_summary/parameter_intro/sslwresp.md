@@ -8,8 +8,8 @@
 
 #### CFTPARM
 
-<span style="font-weight: bold;">\[SSLWRESP =   {1...32767
-} \]</span>
+**\[SSLWRESP =   {1...32767
+} \]**
 
 The timeout granted to an SSL task to start and return
 its initialization status, which can be any

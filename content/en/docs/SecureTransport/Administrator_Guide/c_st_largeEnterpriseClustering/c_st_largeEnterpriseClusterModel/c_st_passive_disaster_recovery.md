@@ -10,7 +10,7 @@ connection made.
 
 Enterprise Cluster with passive disaster recovery
 
-The diagram does not illustrate the event synchronization among the {{< SecureTransport/componentshortname  >}} Servers in one site or any unproxied connections or connections through HTTP proxy servers from the {{< SecureTransport/componentshortname  >}} Servers to the partner servers. For simplicity, the diagram shows only one connection from a SOCKS5 proxy on a {{< SecureTransport/componentshortname  >}} Edge to a partner server. The SOCKS5 proxies on all the {{< SecureTransport/componentshortname  >}} Edge servers can connect to the partner servers through the firewalls as needed. For an illustration of an unproxied connection and more detail about connections in a streaming deployment and configuration for internal clients and servers, see <a href="#Streamin" class="MCXref xref">Streaming deployment</a>.
+The diagram does not illustrate the event synchronization among the {{< SecureTransport/componentshortname  >}} Servers in one site or any unproxied connections or connections through HTTP proxy servers from the {{< SecureTransport/componentshortname  >}} Servers to the partner servers. For simplicity, the diagram shows only one connection from a SOCKS5 proxy on a {{< SecureTransport/componentshortname  >}} Edge to a partner server. The SOCKS5 proxies on all the {{< SecureTransport/componentshortname  >}} Edge servers can connect to the partner servers through the firewalls as needed. For an illustration of an unproxied connection and more detail about connections in a streaming deployment and configuration for internal clients and servers, see [Streaming deployment](#Streamin).
 
 This deployment architecture uses a redundant Enterprise Cluster and {{< SecureTransport/componentshortname  >}} Edge servers at a separate site to provide passive DR. The DR cluster must provide the functionality of the production cluster with the same number or fewer servers than the production cluster. The SecureTransport Edge servers must also provide the functionality of the production site with the same number or fewer servers than the production site. All the servers must run on the same type of operating systems with the same installation directory, secret file, and configuration as the production servers. The SecureTransport Servers in the DR cluster must also have the same database type and configuration as the production SecureTransport Servers and the shared file system must be mounted under the same path on all SecureTransport Servers.
 
@@ -30,5 +30,5 @@ If you maintain consistency between the production and the DR sites, you can cho
 
 **Related topics:**
 
--   <a href="../c_st_large_enterprise_cluster_deployment" class="MCXref xref">Enterprise Cluster deployment</a>
--   <a href="../c_st_workload_distribution" class="MCXref xref">Workload distribution</a>
+-   [Enterprise Cluster deployment](../c_st_large_enterprise_cluster_deployment)
+-   [Workload distribution](../c_st_workload_distribution)

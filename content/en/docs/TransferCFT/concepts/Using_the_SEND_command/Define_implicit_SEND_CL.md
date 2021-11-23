@@ -37,8 +37,6 @@ files</a>.</p>         </td>
 
 For SEND command details refer to the following syntax:
 
-<span class="MCDropDownHead dropDownHead"><img src="/Images/TransferCFT/transparent.gif" class="MCDropDown_Image_Icon" width="16" height="11" alt="Closed" />Syntax</span>
-
 [TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
 = FILE
 
@@ -74,7 +72,7 @@ For SEND command details refer to the following syntax:
 = date \]
 
 \[ [CYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n }  \]
 
 \[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
@@ -86,7 +84,7 @@ For SEND command details refer to the following syntax:
 = filename \]
 
 \[ [EXECSUB](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsub)
-= { <span style="text-decoration: underline;">LIST</span>
+= {
 | FILE | SUBF } \]
 
 \[ [EXECSUBA](../../../c_intro_userinterfaces/command_summary/parameter_intro/execsuba) = {LIST | FILE | <u>SUBF</u> }\]
@@ -98,7 +96,7 @@ For SEND command details refer to the following syntax:
 = { ‘ ‘ | character } \]
 
 \[ [FACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)
-= { <span style="text-decoration: underline;">NONE</span>
+= {
 | DELETE | ERASE | ARCHIVE } \]
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
@@ -114,7 +112,7 @@ For SEND command details refer to the following syntax:
 = filename \]
 
 \[ [FDISP](../../../c_intro_userinterfaces/command_summary/parameter_intro/fdisp)
-= { <span style="text-decoration: underline;">SHR</span>
+= {
 | OLD | CHECK } \]
 
 \[ [FILTER](../../../c_intro_userinterfaces/command_summary/parameter_intro/filter) = string \]
@@ -122,11 +120,11 @@ For SEND command details refer to the following syntax:
 \[ [FILTERTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/filtertype) = string \]
 
 \[ [FKEYLEN](../../../c_intro_userinterfaces/command_summary/parameter_intro/fkeylen)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [FKEYPOS](../../../c_intro_userinterfaces/command_summary/parameter_intro/fkeypos)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [FLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/flrec)
@@ -140,7 +138,7 @@ For SEND command details refer to the following syntax:
 = { YES | NO }  \]
 
 \[ [FORG](../../../c_intro_userinterfaces/command_summary/parameter_intro/forg)
-= { <span style="text-decoration: underline;">SEQ</span>
+= {
 | DIRECT | INDEXED } \]
 
 \[ [FPAD](../../../c_intro_userinterfaces/command_summary/parameter_intro/fpad) = { <u>' '</u> | character } \]
@@ -165,21 +163,20 @@ For SEND command details refer to the following syntax:
 = identifier \]
 
 \[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
-= { <span style="text-decoration: underline;">99991231</span>
+= {
 | date } \]
 
 \[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
-= { <span style="text-decoration: underline;">23595999</span>
+= {
 | time } \]
 
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
-= { <span style="text-decoration: underline;">current
-system date</span> | date } \]
+= { | date } \]
 
 \[ MAXDURATION = ** **<u>0</u>...32767} \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | time } \]
 
 \[ [NBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/nblksize)
@@ -201,11 +198,11 @@ system date</span> | date } \]
 = string \]
 
 \[ [NKEYLEN](../../../c_intro_userinterfaces/command_summary/parameter_intro/nkeylen)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [NKEYPOS](../../../c_intro_userinterfaces/command_summary/parameter_intro/nkeypos)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n }\]
 
 \[ [NLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/nlrecl)
@@ -214,12 +211,10 @@ system date</span> | date } \]
 \[ [NPAD](../../../c_intro_userinterfaces/command_summary/parameter_intro/npad) = { <u>' '</u> | character } \]
 
 \[ [NRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/nrecfm)
-= { <span style="text-decoration: underline;">‘
-‘</span> | F | U | V } \]
+= { | F | U | V } \]
 
 \[ [NSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/nspace)
-= { <span style="text-decoration: underline;">FSPACE
-value</span> | n } \]
+= { | n } \]
 
 \[ [NTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ntype)
 = { ' ' | character } \]
@@ -240,7 +235,7 @@ value</span> | n } \]
 \[ [POSTMINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/postmintime) = time \]
 
 \[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
-= { <span style="text-decoration: underline;">128</span>
+= {
 | n } \]
 
 \[ [PROT](../../../c_intro_userinterfaces/command_summary/parameter_intro/prot) = identifier \]
@@ -264,18 +259,18 @@ value</span> | n } \]
 = identifier \]
 
 \[ [STATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/state)
-= { <span style="text-decoration: underline;">DISP</span>
+= {
 | HOLD | KEEP } \]
 
 \[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
 \[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
-= { <span style="text-decoration: underline;">DAY</span>
+= {
 | MIN | MONTH } \]
 
 \[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
-= { <span style="text-decoration: underline;">UNDEFINED</span>
+= {
 | ALL | SUMMARY | NO } \]
 
 \[ [WORKINGDIR](../../../c_intro_userinterfaces/command_summary/parameter_intro/workingdir) = string \]
@@ -314,7 +309,7 @@ SEND TYPE = MESSAGE  
 = date \]
 
 \[ [CYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/cycle)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [CYCTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/cyctime)
@@ -332,20 +327,19 @@ SEND TYPE = MESSAGE  
 = identifier \]
 
 \[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
-= { <span style="text-decoration: underline;">99991231</span>
+= {
 | date  }
 \]
 
 \[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
-= { <span style="text-decoration: underline;">23595999</span>
+= {
 | time }  \]
 
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
-= { <span style="text-decoration: underline;">current
-system date</span> | date } \]
+= { | date } \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | time } \]
 
 \[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
@@ -366,18 +360,18 @@ system date</span> | date } \]
 = identifier \]
 
 \[ [STATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/state)
-= { <span style="text-decoration: underline;">DISP</span>
+= {
 | HOLD | KEEP } \]
 
 \[ [SUSER](../../../c_intro_userinterfaces/command_summary/parameter_intro/suser)
 = string \]
 
 \[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
-= { <span style="text-decoration: underline;">DAY</span>
+= {
 | MIN | MONTH } \]
 
 \[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
-= { <span style="text-decoration: underline;">UNDEFINED</span>
+= {
 | ALL | SUMMARY | NO } \]
 
  
@@ -416,19 +410,18 @@ SEND TYPE = REPLY
 = string \]
 
 \[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
-=  { <span style="text-decoration: underline;">99991231</span>
+=  {
 | date } \]
 
 \[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
-= { <span style="text-decoration: underline;">23595999</span>
+= {
 | time } \]
 
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
-= { <span style="text-decoration: underline;">current
-system date</span> | date } \]
+= { | date } \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | time } \]
 
 \[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
@@ -449,11 +442,11 @@ system date</span> | date } \]
 = string \]
 
 \[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
-= { <span style="text-decoration: underline;">DAY</span>
+= {
 | MIN | MONTH } \]
 
 \[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
-= { <span style="text-decoration: underline;">UNDEFINED</span>
+= {
 | ALL | SUMMARY | NO } \]
 
  
@@ -492,19 +485,18 @@ SEND TYPE = NACK
 = string \]
 
 \[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
-=  { <span style="text-decoration: underline;">99991231</span>
+=  {
 | date } \]
 
 \[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
-= { <span style="text-decoration: underline;">23595999</span>
+= {
 | time } \]
 
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
-= { <span style="text-decoration: underline;">current
-system date</span> | date } \]
+= { | date } \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | time } \]
 
 \[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
@@ -525,9 +517,9 @@ system date</span> | date } \]
 = string \]
 
 \[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
-= { <span style="text-decoration: underline;">DAY</span>
+= {
 | MIN | MONTH } \]
 
 \[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
-= { <span style="text-decoration: underline;">UNDEFINED</span>
+= {
 | ALL | SUMMARY | NO } \]

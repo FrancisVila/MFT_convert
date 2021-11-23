@@ -11,7 +11,7 @@ exit for C language as well as COBOL.
 
 If you want to keep an exit that was created in a version of Transfer
 CFT prior to V2.4, you can continue to use the following communication
-structure <span style="font-weight: bold;font-family: 'Courier New', monospace;">exitdU</span>
+structure **exitdU**
 between the interface and the user program:
 
 typedef union      {  

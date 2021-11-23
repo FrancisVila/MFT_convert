@@ -10,6 +10,6 @@
 
 The following topics provide procedures for troubleshooting FTP protocol firewall issues:
 
--   <a href="c_st_firewall_rules_prevent_port_from_opening" class="MCXref xref">Firewall rules prevent the port from opening</a> - Provides procedures for troubleshooting port opening firewall rule issues.
--   <a href="c_st_passive_port_range_is_not_defined_in_firewall" class="MCXref xref">Passive port range is not defined in the firewall</a> - Provides procedures for troubleshooting port definition firewall issues.
--   <a href="c_st_checkpoint_firewall_is_not_configured_for_bidirectional_transfers" class="MCXref xref">Check Point firewall is not configured for bidirectional transfers</a> - Provides procedures for troubleshooting Check Point firewall bidirectional transfer issues.
+-   [Firewall rules prevent the port from opening](c_st_firewall_rules_prevent_port_from_opening) - Provides procedures for troubleshooting port opening firewall rule issues.
+-   [Passive port range is not defined in the firewall](c_st_passive_port_range_is_not_defined_in_firewall) - Provides procedures for troubleshooting port definition firewall issues.
+-   [Check Point firewall is not configured for bidirectional transfers](c_st_checkpoint_firewall_is_not_configured_for_bidirectional_transfers) - Provides procedures for troubleshooting Check Point firewall bidirectional transfer issues.

@@ -8,27 +8,27 @@
 
 ## Topics in this guide
 
-<a href="app_console_menu" class="MCXref xref">Appliance console menu reference</a>
+[Appliance console menu reference](app_console_menu)
 
-<a href="installation" class="MCXref xref">Installation</a>
+[Installation](installation)
 
-<a href="appliancestartup_reboot_shutdown" class="MCXref xref">Reboot or shut down the appliance</a>
+[Reboot or shut down the appliance](appliancestartup_reboot_shutdown)
 
-<a href="config_network_access" class="MCXref xref">Configure your appliance firewall</a>
+[Configure your appliance firewall](config_network_access)
 
-<a href="work_app_psswds" class="MCXref xref">Work with appliance passwords</a>
+[Work with appliance passwords](work_app_psswds)
 
-<a href="configure_linux_audit" class="MCXref xref">Configure Linux audit framework</a>
+[Configure Linux audit framework](configure_linux_audit)
 
-<a href="manage_your_system" class="MCXref xref">Manage your system</a>
+[Manage your system](manage_your_system)
 
-<a href="update-to-st-virt-appliance" class="MCXref xref">Upgrade to SecureTransport 5.5 Virtual Appliance</a>
+[Upgrade to SecureTransport 5.5 Virtual Appliance](update-to-st-virt-appliance)
 
-<a href="update_axway_appliance" class="MCXref xref">Install security updates</a>
+[Install security updates](update_axway_appliance)
 
-<a href="uninstalling_securetransport_using_appliance_console_menu" class="MCXref xref">Uninstall SecureTransport from the appliance</a>
+[Uninstall SecureTransport from the appliance](uninstalling_securetransport_using_appliance_console_menu)
 
-<a href="axway_appliance_san_card" class="MCXref xref">Axway Appliance SAN card</a>
+[Axway Appliance SAN card](axway_appliance_san_card)
 
 ## Get more help
 

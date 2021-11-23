@@ -16,6 +16,6 @@ Information is exported to and imported from an XML file. This file can be edite
 
 The following topics describe the account XML schema and how to edit the account XML schema. They also provide how-to instructions for exporting and importing accounts.
 
--   <a href="c_st_account_xml_schema" class="MCXref xref">Account XML schema</a> - Describes the account XML schema.
--   <a href="c_st_edit_xml_file" class="MCXref xref">Edit an XML file</a> - Describes how to edit an XML file.
--   <a href="t_st_importandexportaccounts" class="MCXref xref">Export and import accounts</a> - Provides how-to instructions for exporting and importing accounts.
+-   [Account XML schema](c_st_account_xml_schema) - Describes the account XML schema.
+-   [Edit an XML file](c_st_edit_xml_file) - Describes how to edit an XML file.
+-   [Export and import accounts](t_st_importandexportaccounts) - Provides how-to instructions for exporting and importing accounts.

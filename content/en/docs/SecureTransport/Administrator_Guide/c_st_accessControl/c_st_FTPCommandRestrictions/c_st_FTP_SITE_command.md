@@ -6,4 +6,4 @@
 
 **Related topic:**
 
--   <a href="../t_st_ftpcommandrestrictions" class="MCXref xref">Manage FTP command restrictions</a>
+-   [Manage FTP command restrictions](../t_st_ftpcommandrestrictions)

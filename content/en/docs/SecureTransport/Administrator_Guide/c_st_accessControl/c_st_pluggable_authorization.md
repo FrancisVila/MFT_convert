@@ -31,7 +31,7 @@ Before your custom plug-in can be configured and used, it must be deployed, regi
 
 ## Plug-in deployment
 
-The custom authorization logic (plug-in) is packaged as .jar file that follows the set of conventions described in the <a href="https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/ab_custom/pluggable_authorization_developer.htm" class="MCXref xref">Developer's Guide</a>.
+The custom authorization logic (plug-in) is packaged as .jar file that follows the set of conventions described in the [Developer's Guide](https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/ab_custom/pluggable_authorization_developer.htm).
 
 To deploy an authorization plug-in, place its JAR file in the `/<st_dir>/plugins/authorization/` directory, and restart the Admin and the TM daemons.
 

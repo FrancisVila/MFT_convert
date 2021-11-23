@@ -14,7 +14,7 @@ The following user attributes are supported:
 -   `fdxUserType` – User type
 -   `fdxShell` – User shell (UNIX-based systems only)
 -   `fdxSysUser` – Name of a local or domain user of the Windows server whose credentials {{< SecureTransport/componentshortname >}} uses to access the Windows files in the session (Windows only)
--   Any custom {{< SecureTransport/componentshortname >}} user attribute defined in the LDAP domain. See <a href="../../../c_st_authentication/t_st_ldapsettings/t_st_define_attribute_mappings_for_domain#Define" class="MCXref xref">Define attribute mappings for a domain</a>.
+-   Any custom {{< SecureTransport/componentshortname >}} user attribute defined in the LDAP domain. See [Define attribute mappings for a domain](../../../c_st_authentication/t_st_ldapsettings/t_st_define_attribute_mappings_for_domain#Define).
 
 ## LDAP specific attributes
 
@@ -140,5 +140,5 @@ The following two expressions return the same result, checking the email address
 
 **Related topics:**
 
--   <a href="../c_st_default_user_classes" class="MCXref xref">Default user classes</a>
--   <a href="../t_st_userclasses" class="MCXref xref">Manage user classes</a>
+-   [Default user classes](../c_st_default_user_classes)
+-   [Manage user classes](../t_st_userclasses)

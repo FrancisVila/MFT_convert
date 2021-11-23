@@ -10,6 +10,6 @@ One frequently deployed firewall is the Check Point FireWall-1 product (VPN-1), 
 
 The following topics provide how-to instructions for enabling bidirectional connections and configuring ports. They also provide descriptions and lists of the firewall rules.
 
--   <a href="r_st_enablebidirectionalconnectionsfirewall" class="MCXref xref">Enable bidirectional connections in a firewall</a> - Provides how-to instructions for enabling bidirectional connections in a firewall.
--   <a href="r_st_configuringfirewallports" class="MCXref xref">Configure firewall ports</a> - Provides how-to instructions for configuring firewall ports.
--   <a href="r_st_firewallrules" class="MCXref xref">Firewall rules</a> - Provides descriptions and lists of the firewall rules.
+-   [Enable bidirectional connections in a firewall](r_st_enablebidirectionalconnectionsfirewall) - Provides how-to instructions for enabling bidirectional connections in a firewall.
+-   [Configure firewall ports](r_st_configuringfirewallports) - Provides how-to instructions for configuring firewall ports.
+-   [Firewall rules](r_st_firewallrules) - Provides descriptions and lists of the firewall rules.

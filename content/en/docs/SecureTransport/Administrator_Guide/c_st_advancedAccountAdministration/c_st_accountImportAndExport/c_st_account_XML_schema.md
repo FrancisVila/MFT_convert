@@ -6,5 +6,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_edit_xml_file" class="MCXref xref">Edit an XML file</a>
--   <a href="../t_st_importandexportaccounts" class="MCXref xref">Export and import accounts</a>
+-   [Edit an XML file](../c_st_edit_xml_file)
+-   [Export and import accounts](../t_st_importandexportaccounts)

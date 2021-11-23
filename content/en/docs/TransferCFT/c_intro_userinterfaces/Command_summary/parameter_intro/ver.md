@@ -6,12 +6,12 @@
 
 ### ver
 
-VER = {<span style="text-decoration: underline;">V23</span>
+VER = {
 | V24}
 
 Optional parameter. Indicates the format for the communication area.
 
--   <span style="font-weight: bold;">V23</span>(Default
+-   **V23**(Default
     value): The communication area between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and user’s exits remains
     the same.
 -   <span style="font-weight: bold;">V24</span>: The communication area takes into

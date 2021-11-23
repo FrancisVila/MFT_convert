@@ -13,6 +13,6 @@
 
 If a USERID is set for a CFTRECV during a homogeneous transfer, the transfer fails if the user does not have rights on the log folder.
 
-<span class="bold_in_para">Fix</span>
+**Fix**
 
 Grant the user the right to execute $CFTDIRLOG to access the directory.

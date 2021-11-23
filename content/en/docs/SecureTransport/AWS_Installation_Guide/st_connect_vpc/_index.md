@@ -12,7 +12,7 @@
 
 ## VPN
 
-A virtual private network (VPN) connection is established to an AWS-managed virtual private gateway (VPG). For more information, see <a href="st_setup_vpn" class="MCXref xref">Set up VPN connection</a>.
+A virtual private network (VPN) connection is established to an AWS-managed virtual private gateway (VPG). For more information, see [Set up VPN connection](st_setup_vpn).
 
 A virtual private gateway is the VPN device on the AWS side of the VPN connection. After you have created your VPN, you can download the IPsec VPN configuration from the Amazon VPC console to configure the firewall or device in your local network that will connect to the VPN.
 

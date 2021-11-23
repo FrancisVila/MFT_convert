@@ -28,7 +28,7 @@ Resubmit only restarts the transfer that is resubmitted. If there is not an acti
 
 **Related topics:**
 
--   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
--   <a href="../t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a>
--   <a href="../t_st_filetransfers" class="MCXref xref">Manage file transfers</a>
--   <a href="../r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a>
+-   [Transfer status](../r_st_transfer_status)
+-   [View file transfer information](../t_st_viewfiletransferinfo)
+-   [Manage file transfers](../t_st_filetransfers)
+-   [Transfer Log Maintenance application](../r_st_transferlogmaint)

@@ -2,9 +2,9 @@
     "title": "Configuring Secure Relay Router Agent parameters",
     "linkTitle": "Configuring Secure Relay Router Agent parameters",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Configuration
+}{{< Gateway/componentlongname  >}}: Configuration
 
-This topic lists the Secure Relay Router Agent parameters that you can modify in the <span style="font-style: italic;">Router Agent parameters</span> window. Gateway opens this window if you click the <span style="font-weight: bold;">Modify</span> button when configuring Secure Relay.
+This topic lists the Secure Relay Router Agent parameters that you can modify in the *Router Agent parameters* window. Gateway opens this window if you click the **Modify** button when configuring Secure Relay.
 
 1.  Complete the fields of the <span style="font-style: italic;">Router Agent parameters</span> window as follows:
 

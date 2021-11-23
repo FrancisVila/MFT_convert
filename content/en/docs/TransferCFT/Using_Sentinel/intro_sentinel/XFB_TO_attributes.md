@@ -13,7 +13,7 @@
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -51,7 +51,7 @@
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -134,7 +134,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -173,7 +173,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -244,7 +244,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -412,7 +412,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -559,7 +559,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -618,7 +618,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -703,7 +703,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -743,7 +743,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -845,7 +845,7 @@ The product that sends the events is identified with the following:
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Length</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Description</p>         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Name in</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<p>{{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>

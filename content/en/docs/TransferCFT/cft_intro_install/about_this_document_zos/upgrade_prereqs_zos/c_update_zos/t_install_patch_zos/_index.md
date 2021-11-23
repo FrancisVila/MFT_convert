@@ -23,7 +23,7 @@ A PTF file results from the fixed formatting (80) of an ADRDSSU-type file contai
 >
 > PTF files are cumulative. A basic Transfer CFT z/OS installation can integrate PTFs. If you use this method, apply the PTFs one at a time.
 
-<span class="autonumber"></span>Libraries taken into account during a DUMP ADRDSSU
+Libraries taken into account during a DUMP ADRDSSU
 
 <table>
    <thead>
@@ -205,7 +205,7 @@ All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT
       </tr>
       <tr>
          <td>A13UXSRR         </td>
-         <td>To restore the Transfer CFT <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> environment from a save file in USS environment.         </td>
+         <td>To restore the Transfer CFT {{< TransferCFT/securerelayname  >}} environment from a save file in USS environment.         </td>
       </tr>
       <tr>
          <td>A13UXSRD         </td>

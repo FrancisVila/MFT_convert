@@ -12,7 +12,7 @@
 | n} \]    ** { 254..32750}
 
 Maximum size of NSDUs being sent (default = 32750). This parameter is negotiated with
-the partner, <span style="font-weight: bold;">rrusize</span> parameter
+the partner, **rrusize** parameter
 if <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the smallest value being adopted as the size of the NSDU
 sent.
 

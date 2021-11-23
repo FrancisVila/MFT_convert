@@ -131,4 +131,4 @@ The following tasks must be completed before installing SecureTransport on SUSE 
     3.  Select **Expert Mode**.
     4.  Select `boot.apparmor` and click **Set/Reset > Disable the service**.
     5.  Click **Finish** to exit the YaST Runlevel tool.
--   <a href="#Increase" class="MCXref xref">Increase the maximum number of file descriptors</a>
+-   [Increase the maximum number of file descriptors](#Increase)

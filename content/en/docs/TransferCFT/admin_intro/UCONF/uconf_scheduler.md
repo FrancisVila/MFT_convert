@@ -2,12 +2,12 @@
     "title": "UCONF: Configuration scheduling",
     "linkTitle": "Configuration scheduling",
     "weight": "330"
-}In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> you can define daily periods where dynamic configuration variables can be changed. For example, you might want to schedule that the value for cft.purge.sx can be modified during the period between 15:30 and 19:30.
+}In {{< TransferCFT/componentshortname  >}} you can define daily periods where dynamic configuration variables can be changed. For example, you might want to schedule that the value for cft.purge.sx can be modified during the period between 15:30 and 19:30.
 
 Steps overview
 
 1.  Access the Unified Configuration using either command line or the UI.
-2.  Create the configuration alias by adding a new alias name to the <span class="code">cft.scheduled\_values</span> list. Do not use spaces or periods (.) in the alias name.
+2.  Create the configuration alias by adding a new alias name to the `cft.scheduled_values` list. Do not use spaces or periods (.) in the alias name.
 3.  Configure the remaining parameters as described in the following table to define the new alias.
 
 <table>
@@ -24,7 +24,7 @@ Steps overview
       </tr>
       <tr>
          <td>cft.scheduled_values.(alias-id).start_time         </td>
-         <td>Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the <span class="italic_in_para">temporary value</span>. See <a href="#Details,%20days">Details</a> below.         </td>
+         <td>Start time using the format MM:HH:DAYS_OF_THE_WEEK. This is the begin time for when a value switches from its existing value to the . See <a href="#Details,%20days">Details</a> below.         </td>
       </tr>
       <tr>
          <td>cft.scheduled_values.(alias-id).delay         </td>
@@ -37,7 +37,7 @@ Steps overview
       </tr>
       <tr>
          <td>cft.scheduled_values.(alias-id).value         </td>
-         <td><p><span class="italic_in_para">Temporary value</span>. This value replaces the existing configuration value for the defined uconf parameter.</p>
+         <td><p>. This value replaces the existing configuration value for the defined uconf parameter.</p>
 <p>To find the existing value, in command line enter:</p>
 <p>CFTUTIL uconfget id=&lt;uconf_parameter&gt;</p>         </td>
       </tr>
@@ -60,11 +60,11 @@ Example
 
 This example defines a schedule where the value of cft.purge.sx can be changed during the period that begins at 15:30 and has a duration of 4 hours on Saturday and Sunday.
 
-1.  Add the new alias name to the <span class="code">scheduled\_values</span> list. This example creates a new alias called <span class="italic_in_para">alias04</span>.
+1.  Add the new alias name to the `scheduled_values` list. This example creates a new alias called .
 
         CFTUTIL uconfset id=cft.scheduled_values,value='"alias01 alias02 alias03 alias04"'
 
-2.  Configure the new alias, <span class="italic_in_para">alias04</span>.
+2.  Configure the new alias, .
 
         CFTUTIL uconfset id=cft.scheduled_values.alias04.start_time,value='”30:15:5,6”'
         CFTUTIL uconfset id=cft.scheduled_values.alias04.delay,value=00:04

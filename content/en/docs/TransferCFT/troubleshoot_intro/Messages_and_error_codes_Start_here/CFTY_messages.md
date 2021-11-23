@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -317,7 +317,7 @@ are given below:</p>
 <ul>
 <li>UNSUPPORTED
 TYPE FIELD: The server requires an authentication type which is not supported
-by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</li>
+by {{< TransferCFT/componentshortname  >}}.</li>
 <li>INVALID
 DN LENGTH: The DN (Distinguished Name) length is invalid</li>
 </ul>         </td>
@@ -417,7 +417,7 @@ System error</li>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Invalid
-message received from another <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task (context is invalid or
+message received from another {{< TransferCFT/componentshortname  >}} task (context is invalid or
 already free).</p>         </td>
       </tr>
       <tr>
@@ -432,7 +432,7 @@ error CR=&amp;cr CS=&amp;scs</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Problem
-with sending an internal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message to the protocol task during
+with sending an internal {{< TransferCFT/componentshortname  >}} message to the protocol task during
 the SSL initialization phase</p>         </td>
       </tr>
       <tr>
@@ -574,7 +574,7 @@ to the remote entity.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
-         <td><p>Call the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> hot line.</p>
+         <td><p>Call the {{< TransferCFT/componentshortname  >}} hot line.</p>
 <p>Analyze the &amp;cr error code (refer to the SSL protocol
 error codes). Contact the product support
 team if necessary.</p>         </td>
@@ -778,7 +778,7 @@ CTX=&amp;ctx on task PID=&amp;pid</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Handshake
-is started for a new client SSL session. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> gives a unique reference
+is started for a new client SSL session. {{< TransferCFT/componentshortname  >}} gives a unique reference
 to it. Using this reference, the session could be tracked.</p>         </td>
       </tr>
    </tbody>
@@ -800,7 +800,7 @@ CTX=&amp;ctx on task PID=&amp;pid</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Handshake
-is started for a new server SSL session. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> gives a unique reference
+is started for a new server SSL session. {{< TransferCFT/componentshortname  >}} gives a unique reference
 to it. Using this reference, the session could be tracked.</p>         </td>
       </tr>
    </tbody>
@@ -914,7 +914,7 @@ connected entity.</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Opening of a secure session without authentication in either
-client or server mode. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation.</p>
+client or server mode. Refer to the {{< TransferCFT/componentshortname  >}} Online documentation.</p>
 <ul>
 <li>&amp;ctx= context SSL</li>
 <li>str = client or server</li>

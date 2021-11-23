@@ -10,7 +10,7 @@
 
 Use the following procedures to configure the IP version, network interface card, boot protocol, default gateway, and static routes.
 
-1.  Connect to the console. See <a href="#" class="MCXref xref">Configure network settings</a> for more information.  
+1.  Connect to the console. See [Configure network settings](#) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **N**, Network Settings. The Network Settings menu is displayed.
 3.  Set the IP version by pressing **4** to select IPv4, or **6** to select IPv6.

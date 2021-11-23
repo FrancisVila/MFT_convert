@@ -8,7 +8,7 @@
 
 #### RECV
 
-NFVER = { <span style="text-decoration: underline;">0</span>
+NFVER = {
 | n }
 
 Version of the transferred file.
@@ -22,7 +22,7 @@ The values represent the following:
 -   n: version -n of
     the file
 
-<span style="font-weight: bold;">Case 2</span>: NFVER is used alone
+**Case 2**: NFVER is used alone
 (closed mode with implicit sending from the sender server end).
 
 FNAME = &PART.&IDF (-&NFVER).

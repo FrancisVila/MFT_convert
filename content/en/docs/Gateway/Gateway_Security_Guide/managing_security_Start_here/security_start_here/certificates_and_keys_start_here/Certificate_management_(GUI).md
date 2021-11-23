@@ -2,7 +2,7 @@
     "title": "Managing certificates",
     "linkTitle": "Managing certificates",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Overview](#Overview)
 
@@ -34,7 +34,7 @@ To import a certificate:
 
 1.  In the left pane of the GUI main window, click <img src="/Images/Gateway/expand_marker.gif" width="16" height="16" /> to expand the nodes:  
     **Security Management > Transfer Security Management**
-2.  Right-click the <span style="font-weight: bold;">Certificate</span> sub-node, and then select <span style="font-weight: bold;">Import...</span> from the context menu.  
+2.  Right-click the **Certificate** sub-node, and then select <span style="font-weight: bold;">Import...</span> from the context menu.  
     Gateway displays the <span style="font-style: italic;">Welcome to the Certificate Import Wizard</span> window.
 3.  Click <span style="font-weight: bold;">Next</span> to continue.  
     Gateway displays the <span style="font-style: italic;">File to import</span> window with these fields:

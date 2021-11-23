@@ -2,11 +2,11 @@
     "title": "Transfer CFT 3.9 User Guide ",
     "linkTitle": "Transfer CFT User Guide",
     "weight": "20"
-}Welcome to the Axway <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">AMPLIFY</span> Transfer CFT documentation. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is the file transfer component in the Axway Managed File Transfer platform, and provides a multi-platform, high-volume, file transfer service. This documentation explains how to install, configure, and manage <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+}Welcome to the Axway {{< TransferCFT/platformorsuiteshortname  >}} Transfer CFT documentation. {{< TransferCFT/componentshortname  >}} is the file transfer component in the Axway Managed File Transfer platform, and provides a multi-platform, high-volume, file transfer service. This documentation explains how to install, configure, and manage {{< TransferCFT/componentshortname  >}}.
 
-You can configure <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> and manage flows using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management, monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
+You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{< TransferCFT/centralgovernancename  >}} or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management, monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
 
-Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span> explains standalone options for users who have not yet activated <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or Flow Manager. Axway encourages <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> users to discover the benefits of centralized management.
+Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated or Flow Manager. Axway encourages {{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
 
 > **Note:**
 >
@@ -18,7 +18,7 @@ Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocType
    <tbody>
       <tr>
          <td><h2 id="for-new-users">For new users</h2>
-<p><a href="overview_intro/about_transfer_cft">About <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></a></p>
+<p><a href="overview_intro/about_transfer_cft">About {{< TransferCFT/componentshortname  >}}</a></p>
 <p><a href="overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a></p>
 <p><a href="c_intro_userinterfaces/about_cftutil">Use command line</a></p>
 <p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
@@ -70,4 +70,4 @@ Additionally, the Transfer CFT <span class="mc-variable suite_variables.DocType
    </tbody>
 </table>
 
-Document version: <span class="mc-variable System.LongDate variable">Wednesday, November 3, 2021</span>
+Document version:

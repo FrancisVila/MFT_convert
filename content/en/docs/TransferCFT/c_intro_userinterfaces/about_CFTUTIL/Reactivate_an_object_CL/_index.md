@@ -63,8 +63,8 @@ Syntax
 
 Where:
 
--   <span style="font-family: 'Courier New';">CFTPART\_ID</span> is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
--   <span style="font-family: 'Courier New';">Mode</span> is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+-   is the identifier for the partner to activate. To activate several partners with a single command, use wildcard characters or meta characters
+-   is the mode to be activated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
 
 Example
 

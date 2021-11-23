@@ -27,7 +27,7 @@ To migrate from Oracle to PostgreSQL:
 3.  Select **Setup > Database Settings > Setup PostgreSQL**.  
     The PostgreSQL setup wizard opens.
 4.  On the *Target database settings* page of the wizard, provide the values necessary to connect to the PostgreSQL database.  
-    1.  Input the standard connection parameters. For a list of database connection parameters, see <a href="../manage_postgre_database" class="MCXref xref">Change PostgreSQL configuration and manage partitioning</a>.
+    1.  Input the standard connection parameters. For a list of database connection parameters, see [Change PostgreSQL configuration and manage partitioning](../manage_postgre_database).
     2.  Specify whether {{< SecureTransport/componentshortname >}} to connect to the database server using SSL. When **Use secure connection** check box is selected, you need to import the public key certificate file.
 5.  Click **Test Connection**.  
     If {{< SecureTransport/componentshortname >}} displays a failure message, correct the network, PostgreSQL, or other error reported and try again.
@@ -50,4 +50,4 @@ To migrate from Oracle to PostgreSQL:
 
 **Related topics:**
 
--   <a href="../manage_postgre_database" class="MCXref xref">Change PostgreSQL configuration and manage partitioning</a>
+-   [Change PostgreSQL configuration and manage partitioning](../manage_postgre_database)

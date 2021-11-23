@@ -15,6 +15,6 @@
 
 **Related topics:**
 
--   <a href="../r_st_communication_between_outside" class="MCXref xref">Communication between the outside and SecureTransport Edge</a>
--   <a href="../r_st_communication_between" class="MCXref xref">Communication between SecureTransport Server and SecureTransport Edge</a>
--   <a href="../r_st_internal_communication" class="MCXref xref">Internal SecureTransport communication</a>
+-   [Communication between the outside and SecureTransport Edge](../r_st_communication_between_outside)
+-   [Communication between SecureTransport Server and SecureTransport Edge](../r_st_communication_between)
+-   [Internal SecureTransport communication](../r_st_internal_communication)

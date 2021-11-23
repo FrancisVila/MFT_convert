@@ -6,9 +6,9 @@
 
 **Related topics:**
 
--   <a href="../t_st_miscellaneousoptions" class="MCXref xref">Miscellaneous options</a>
--   <a href="../t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>
--   <a href="../t_st_ftphttpservershutdownoptions" class="MCXref xref">FTP and HTTP server suspend options</a>
+-   [Miscellaneous options](../t_st_miscellaneousoptions)
+-   [SMTP configuration](../t_st_smtpconfiguration)
+-   [FTP and HTTP server suspend options](../t_st_ftphttpservershutdownoptions)
 
 ## Specify password policy
 

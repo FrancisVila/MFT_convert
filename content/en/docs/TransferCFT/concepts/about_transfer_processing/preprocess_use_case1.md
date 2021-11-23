@@ -22,10 +22,10 @@ Error file to execute when an error leads to the K (killed) PHASESTEP. This valu
 
 After you create the script to be executed when an error occurs, point to the script path.
 
--   Use either <span class="code">CFTUTIL send </span>or<span class="code"> CFTUTIL recv</span>
--   To set the script to execute, enter: <span class="code">exece=&lt;yourscriptfileaddress></span>
+-   Use either `CFTUTIL send `or` CFTUTIL recv`
+-   To set the script to execute, enter: `exece=<yourscriptfileaddress>`
 -   You can set the default behavior in the configuration file using:
-    -   Unix: <span class="code">CFTUTIL @&lt;conffile></span>
-    -   Windows: <span class="code">CFTUTIL #&lt;conffile> </span>
--   Use the parameters <span class="code">DIAGP </span>an <span class="code">DIAGC </span>to specify a customized error that in the DIAGP/DIAGC catalog respectively.
+    -   Unix: `CFTUTIL @<conffile>`
+    -   Windows: `CFTUTIL #<conffile> `
+-   Use the parameters `DIAGP `an `DIAGC `to specify a customized error that in the DIAGP/DIAGC catalog respectively.
 -   Use the command [CFTEXT](../../../c_intro_userinterfaces/about_cftutil/configuring_cft_start_here/cftext_command) to generate a configuration file with current parameters.

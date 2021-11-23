@@ -67,7 +67,7 @@ For a client side SFTP (SSH) connection, proceed as follows:
 
     <!-- -->
 
-    -   For importing certificates use <span class="code">secadm import\_cert </span>command
+    -   For importing certificates use `secadm import_cert `command
 
     <!-- -->
 
@@ -83,7 +83,7 @@ For a client side SFTP (SSH) connection, proceed as follows:
 -   Auto import keys and certificates
     -   During the SSH and SSL/TLS handshake, partner keys and certificates can be auto imported in Gateway store if the security
         profile is configured for auto-import
-    -   Keys and certificates are imported in <span class="code">disabled </span>state and the first handshake attempt fails
+    -   Keys and certificates are imported in `disabled `state and the first handshake attempt fails
     -   Enabling the imported keys and certificates requires user action and should be done only after partner validation
 
 ### Associating keys and certificates to partners
@@ -130,7 +130,7 @@ For securing the Navigator connection to Gateway server, do the following:
 1.  From the server configuration (in Gateway Navigator), select **Connectivity**->**Navigator server** and check the **Use TLS** option.
     Indicate which user certificate to use for the server. The password for accessing the p12 certificate must be stored using the
     PKCS5 standard (see the chapter about <a href="../../security_features/password_management" class="MCXref xref">Password management</a>)
-2.  **Or**, from the command line set <span class="code" xmlns="http://www.w3.org/1999/xhtml">\[cstcp\]TlsActive=’1’</span> , <span class="code" xmlns="http://www.w3.org/1999/xhtml">\[cstcp\]TlsServerCertificateFile</span> and <span class="code" xmlns="http://www.w3.org/1999/xhtml">\[cstcp\]TlsPasswordFile</span> parameters..
+2.  **Or**, from the command line set `[cstcp]TlsActive=’1’` , `[cstcp]TlsServerCertificateFile` and `[cstcp]TlsPasswordFile` parameters..
 3.  When connecting from Navigator and setting up the server connection, check also the **TLS** option and add the appropriate
     certificate for validating the server certificate (the server CA).
 
@@ -164,6 +164,6 @@ and security parameters must be provided.
     For connecting to Passport PS in a secure way, the Passport SSL CA certificate (provided in Gateway installation), a
     user login and a password are necessary.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

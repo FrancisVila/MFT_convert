@@ -151,5 +151,5 @@ Use the following procedure to delete one or more private certificates.
 
 **Related topics:**
 
--   <a href="../t_st_usercertificates" class="MCXref xref">Manage login certificates</a>
--   <a href="../manage-user-partner-certificates" class="MCXref xref">Manage partner certificates</a>
+-   [Manage login certificates](../t_st_usercertificates)
+-   [Manage partner certificates](../manage-user-partner-certificates)

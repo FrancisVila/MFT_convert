@@ -19,7 +19,7 @@ Some of the options are initially hidden. The following table provides detailed 
       <tr>
          <td><strong>Account Name</strong>*
 <p><em>text box</em></p>         </td>
-         <td><p>The name of the account must be unique for the system. If an account already exists with the name you specify, {{< SecureTransport/componentshortname  >}} prompts you to enter another name. This field is mandatory. Account Names cannot contain more than 80 characters. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
+         <td><p>The name of the account must be unique for the system. If an account already exists with the name you specify, {{< SecureTransport/componentshortname  >}} prompts you to enter another name. This field is mandatory. Account Names cannot contain more than 80 characters. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Email Contact</strong>
@@ -122,7 +122,7 @@ and the target folder depth is shallow.</li>
 <li>When <strong>Default</strong> is selected, then the following applies:
 If the account is assigned to a business unit, it will inherit its policy. Otherwise, the global file maintenance policy applies.</li>
 <li>When <strong>Disabled</strong> is selected, File Maintenance is disabled for this account.</li>
-<li>When <strong>Custom</strong> is selected, the panel expands with a <strong>Custom settings</strong> pane that allows you to modify the existing <a href="../../../applications/applicationsfilemaintenance#Configur" class="MCXref xref">File Maintenance application</a>. The customized policy applies to this account only.</li>
+<li>When <strong>Custom</strong> is selected, the panel expands with a <strong>Custom settings</strong> pane that allows you to modify the existing <a href="../../../applications/applicationsfilemaintenance#Configur">File Maintenance application</a>. The customized policy applies to this account only.</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong></p>
@@ -136,7 +136,7 @@ If the account is assigned to a business unit, it will inherit its policy. Other
 <ul>
 <li>When <strong>Default</strong> is selected, then the following applies: If the account is assigned to a business unit, it inherits its policy. Otherwise, the global Account Maintenance policy applies.</li>
 <li>When <strong>Disabled</strong> is selected, then Account Maintenance will be disabled for this account.</li>
-<li>When <strong>Custom</strong> is selected, the panel expands with a <strong>Custom settings</strong> pane that allows you to modify the existing <a href="../../../applications/applicationsaccountmaintenance" class="MCXref xref">Account Maintenance application</a>. The customized policy applies to this account only.</li>
+<li>When <strong>Custom</strong> is selected, the panel expands with a <strong>Custom settings</strong> pane that allows you to modify the existing <a href="../../../applications/applicationsaccountmaintenance">Account Maintenance application</a>. The customized policy applies to this account only.</li>
 </ul>
 <ul>
 <li><p>If a global Account Maintenance policy is not defined, or if this account is assigned to a business unit with the <strong>Allow Account Management policy modifying</strong> check-box option deselected, then you cannot modify the Account Maintenance policy on a user level.</p></li>
@@ -145,7 +145,7 @@ If the account is assigned to a business unit, it will inherit its policy. Other
       <tr>
          <td><p><strong>UID</strong>*</p>
 <p><em>text box</em></p>         </td>
-         <td><p>Type the numeric user ID of the user in the <strong>UID</strong> field. This field is mandatory on UNIX and Linux platforms. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>
+         <td><p>Type the numeric user ID of the user in the <strong>UID</strong> field. This field is mandatory on UNIX and Linux platforms. You cannot enter spaces-only values in this field. For more information, see <a href="#Spaces">Spaces in required fields</a>.</p>
 <p>On Windows platforms, this field is named <strong>Real User</strong> and is optional.</p>         </td>
       </tr>
       <tr>
@@ -244,7 +244,7 @@ For a custom delivery method, select one or more of the allowed enrollment types
 </ul></li>
 <li>This account setting overrides the business unit or global Address Book Policy setting for collaboration.</li>
 </ol>
-<p>For additional Address Book account level configuration information, see <a href="#Address2" class="MCXref xref">Address Book account level configuration</a>.</p>         </td>
+<p>For additional Address Book account level configuration information, see <a href="#Address2">Address Book account level configuration</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Bandwidth Limits Policy</strong>
@@ -265,7 +265,7 @@ For a custom delivery method, select one or more of the allowed enrollment types
          <td>In the <em>Login Settings</em> area: select <strong>Allow this account to log in to {{< SecureTransport/componentshortname  >}} Server</strong> to allow the new account to log in to {{< SecureTransport/componentshortname  >}}. This setting is enabled by default. Disabling the option restricts access of this account to the {{< SecureTransport/componentshortname  >}} Server. If you enable this option, the following options are enabled.
 <ul>
 <li>Enter a <strong>Login Name</strong> for the account. This is the unique name with which the account is identified by the {{< SecureTransport/componentshortname  >}} Server. Login names cannot contain the following characters: +, :, or [. Login Names cannot start with the following character: *.</li>
-<li>Select the <strong>Login Restriction Policy</strong>. The Login Restriction Policy defines rules for allow or deny login to users based on the client IP or host and other conditions. For additional information, see <a href="../../../c_st_accesscontrol/c_st_loginrestictions" class="MCXref xref">Login restrictions</a>.
+<li>Select the <strong>Login Restriction Policy</strong>. The Login Restriction Policy defines rules for allow or deny login to users based on the client IP or host and other conditions. For additional information, see <a href="../../../c_st_accesscontrol/c_st_loginrestictions">Login restrictions</a>.
 <ul>
 <li>If a Login Restriction Policy is selected as the global default policy, it will be the inherited default selection for the user account.</li>
 <li>If a Login Restriction Policy is not selected as the global default policy and the Business Unit has a Login Restriction Policy selected, it will be the inherited default selection for the user account.</li>
@@ -292,7 +292,7 @@ For a custom delivery method, select one or more of the allowed enrollment types
 <li>Enter a <strong>New Password</strong> for the account.</li>
 <li><strong>Re-enter Password</strong> for the account.</li>
 <li>Select <strong>Require user to change password on next login</strong> to require the user to change their password on the next login.</li>
-<li>Select <strong>Require user to set new secret question on next login</strong> to require the user to select and answer a new secret question. When this option is selected, the user must select and answer a new secret question on their next login. For information on configuring the secret question feature, see <a href="../../t_st_password_reset/t_st_secretquestion" class="MCXref xref">Configure a secret question</a>.</li>
+<li>Select <strong>Require user to set new secret question on next login</strong> to require the user to select and answer a new secret question. When this option is selected, the user must select and answer a new secret question on their next login. For information on configuring the secret question feature, see <a href="../../t_st_password_reset/t_st_secretquestion">Configure a secret question</a>.</li>
 <li>Complete the <strong>Require user to change password every X days</strong> field to require the user to change their password every specified number of days. If the number of days is unspecified, the user will not be required to change their password every "X" number of days.</li>
 <li>Complete the <strong>Lock account after X failed login attempts</strong> field to lock the account after the specified number of failed login attempts. If you don't supply a value, the value of the <code>Users.DefaultLockoutLimit</code> configuration option will be applied. If the value is set to 0 [zero], an infinite number of failed login attempts are allowed.</li>
 <li><blockquote>
@@ -312,7 +312,7 @@ For a custom delivery method, select one or more of the allowed enrollment types
          <td><p><span id="addattrib"></span><strong>Add Attribute</strong></p>
 <p><em>group of options</em></p>         </td>
          <td><em>Additional Attributes</em>
-<p>To add an attribute, click <strong>Add Attribute</strong>. For additional information on Additional Attributes, see <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.</p>
+<p>To add an attribute, click <strong>Add Attribute</strong>. For additional information on Additional Attributes, see <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition">Additional attributes</a>.</p>
 <h5 id="add-an-attribute">Add an attribute</h5>
 <ul>
 <li>Click <strong>Add Attribute</strong> to enable input in the <strong>Attribute</strong> and <strong>Value</strong> fields.</li>
@@ -357,20 +357,20 @@ After you add all your changes, click **Save**.
 
 The user account information is saved and displayed in the *Settings* tab of the user account.
 
-Once you have saved the account settings, you can select the **Subscriptions**, **Routes**, **Transfer Sites**, or **Certificates** to further define the new account. For more information, see <a href="../../c_st_subscriptions/t_st_subscriptions#AccountsMenu_2253641766_1247370" class="MCXref xref">Manage subscriptions</a>, <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_manage_routes" class="MCXref xref">Manage Routes</a>, <a href="../../transfersites#AccountsMenu_2253641766_1151145" class="MCXref xref">Transfer sites</a>, and <a href="../../c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701" class="MCXref xref">Manage login certificates</a>.
+Once you have saved the account settings, you can select the **Subscriptions**, **Routes**, **Transfer Sites**, or **Certificates** to further define the new account. For more information, see [Manage subscriptions](../../c_st_subscriptions/t_st_subscriptions#AccountsMenu_2253641766_1247370), [Manage Routes](../../../c_st_advanced_routing/c_st_configuration/t_st_manage_routes), [Transfer sites](../../transfersites#AccountsMenu_2253641766_1151145), and [Manage login certificates](../../c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701).
 
 **Related topics:**
 
--   <a href="../t_st_change_how_long_user_account_information_is_cached" class="MCXref xref">Change how long user account information is cached in memory</a>
--   <a href="../t_st_disable_enable_user_account" class="MCXref xref">Disable or enable a user account</a>
--   <a href="../t_st_lock_unlock_user_account" class="MCXref xref">Lock or unlock a user account</a>
--   <a href="../t_st_manage_user_account_passwords" class="MCXref xref">Manage user account passwords</a>
--   <a href="../t_st_edit_user_account_settings" class="MCXref xref">Edit user account settings</a>
--   <a href="../t_st_delete_user_accounts" class="MCXref xref">Delete user accounts</a>
--   <a href="../t_st_delete_purge_user_account" class="MCXref xref">Delete and purge a user account</a>
--   <a href="../t_st_export_single_user_account" class="MCXref xref">Export a single user account</a>
--   <a href="../t_st_unlicensed_users" class="MCXref xref">Unlicensed users</a>
--   <a href="../c_st_protected_folders_accounts" class="MCXref xref">Protected folders and accounts</a>
+-   [Change how long user account information is cached in memory](../t_st_change_how_long_user_account_information_is_cached)
+-   [Disable or enable a user account](../t_st_disable_enable_user_account)
+-   [Lock or unlock a user account](../t_st_lock_unlock_user_account)
+-   [Manage user account passwords](../t_st_manage_user_account_passwords)
+-   [Edit user account settings](../t_st_edit_user_account_settings)
+-   [Delete user accounts](../t_st_delete_user_accounts)
+-   [Delete and purge a user account](../t_st_delete_purge_user_account)
+-   [Export a single user account](../t_st_export_single_user_account)
+-   [Unlicensed users](../t_st_unlicensed_users)
+-   [Protected folders and accounts](../c_st_protected_folders_accounts)
 
 <span id="Spaces"></span>
 

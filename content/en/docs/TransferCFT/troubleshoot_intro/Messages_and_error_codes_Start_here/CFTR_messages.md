@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -56,7 +56,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>The &amp;cmd
-command cannot be associated with any record in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog
+command cannot be associated with any record in the {{< TransferCFT/componentshortname  >}} catalog
 file (example: deletion of a non-existing record).</p>         </td>
       </tr>
       <tr>
@@ -92,7 +92,7 @@ file (example: deletion of a non-existing record).</p>         </td>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Check the
-description of this parameter in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation,
+description of this parameter in the {{< TransferCFT/componentshortname  >}} Online documentation,
 correct the error and then resubmit the command.</p>         </td>
       </tr>
    </tbody>
@@ -333,7 +333,7 @@ the IDT (&amp;idt) are only defined if it is a SEND or RECV command.</p>
          <td><p>Explanation</p>         </td>
          <td><p>During execution
 of a command (response to a message or transfer for example) the required
-transfer identifier (&amp;idt) was not found in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog.</p>         </td>
+transfer identifier (&amp;idt) was not found in the {{< TransferCFT/componentshortname  >}} catalog.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -363,7 +363,7 @@ found for this request</p>
          <td><p>Explanation</p>         </td>
          <td><p>When processing
 an ACT or INACT command, no transfer in the 'D' state and with DIAGI=430
-for ACT or in the 'C' state for INACT was found in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog
+for ACT or in the 'C' state for INACT was found in the {{< TransferCFT/componentshortname  >}} catalog
 for the partner(s) designated by &amp;part.</p>         </td>
       </tr>
       <tr>
@@ -432,7 +432,7 @@ in command cache”,”not into command cache”</li>
 command:
 <ul>
 <li>&amp;message
-displayed in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> LOG</li>
+displayed in the {{< TransferCFT/componentshortname  >}} LOG</li>
 </ul></li>
 </ul>         </td>
       </tr>
@@ -482,7 +482,7 @@ displayed in the <span class="mc-variable axway_variables.Component_Short_Name v
          <td><p>Displays warning status in the WLOG command.</p>
 <ul>
 <li>&amp;message
-displayed in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> LOG</li>
+displayed in the {{< TransferCFT/componentshortname  >}} LOG</li>
 </ul>         </td>
       </tr>
    </tbody>
@@ -506,7 +506,7 @@ displayed in the <span class="mc-variable axway_variables.Component_Short_Name v
          <td><p>Displays error status in the WLOG command.</p>
 <ul>
 <li>&amp;message
-displayed in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> LOG</li>
+displayed in the {{< TransferCFT/componentshortname  >}} LOG</li>
 </ul>         </td>
       </tr>
    </tbody>

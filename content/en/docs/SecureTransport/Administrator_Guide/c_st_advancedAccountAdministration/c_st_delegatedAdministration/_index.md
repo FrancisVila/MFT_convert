@@ -117,4 +117,4 @@ Example delegated administration hierarchy
 
 The following topic describes how to create a delegated administrator:
 
--   <a href="t_st_create_delegated_administrator" class="MCXref xref">Create a delegated administrator</a> - Provides how-to instructions for creating a delegated administrator.
+-   [Create a delegated administrator](t_st_create_delegated_administrator) - Provides how-to instructions for creating a delegated administrator.

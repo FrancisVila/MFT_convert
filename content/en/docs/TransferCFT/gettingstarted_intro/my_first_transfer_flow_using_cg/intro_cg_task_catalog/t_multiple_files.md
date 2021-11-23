@@ -3,9 +3,9 @@
     "linkTitle": "Enable flows with multiple files",
     "weight": "340"
 }1.  In this simple flow, select the Source.
-2.  Select <span class="bold_in_para">File properties</span>.
-3.  Select <span class="bold_in_para">Multiple files</span>.
+2.  Select **File properties**.
+3.  Select **Multiple files**.
 
 <img src="/Images/TransferCFT/multiple_files.png" class="maxWidth" />
 
-In our example, you make the files <span class="bold_in_para">SALES\_report</span>, <span class="bold_in_para">DAILY\_news</span>, and <span class="bold_in_para">INVENTORY </span>available for an exchange.
+In our example, you make the files **SALES\_report**, **DAILY\_news**, and **INVENTORY** available for an exchange.

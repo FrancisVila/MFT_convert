@@ -142,7 +142,7 @@ parameter for security.</p>         </td>
 = filename \]
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-= { <span style="text-decoration: underline;">0</span>
+= {
 |n } \]
 
 \[ [FSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
@@ -152,7 +152,7 @@ parameter for security.</p>         </td>
 = n \]
 
 \[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= { <span style="text-decoration: underline;">CREATE</span>
+= {
 | REPLACE | DELETE | ERASE } \]
 
  
@@ -170,22 +170,22 @@ parameter for security.</p>         </td>
 = n \]
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-= { <span style="text-decoration: underline;">0</span>
+= {
 |n } \]
 
 \[ [FSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [FSPACEX](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex)
-=  { <span style="text-decoration: underline;">0</span>
+=  {
 | n } \]
 
 \[ [HABFNAME](../../../c_intro_userinterfaces/command_summary/parameter_intro/habfname)
 = filename \]
 
 \[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= { <span style="text-decoration: underline;">CREATE</span>
+= {
 | REPLACE | DELETE | ERASE} \]
 
 \[ NODE = { n | <u>0</u>...16} \] available only when TYPE=CAT
@@ -201,19 +201,19 @@ parameter for security.</p>         </td>
 = filename
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
-= <span style="text-decoration: underline;">0</span>
+=
 | n \]
 
 \[ [FSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace)
-= <span style="text-decoration: underline;">0</span>
+=
 |n \]
 
 \[ [FSPACEX](../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex)
-= <span style="text-decoration: underline;">0</span>
+=
 |n \]
 
 \[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= { <span style="text-decoration: underline;">CREATE</span>
+= {
 | REPLACE | DELETE | ERASE } \]
 
 Example

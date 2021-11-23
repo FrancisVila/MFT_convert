@@ -19,9 +19,9 @@ There are two ways to execute a processing script, either by referencing a templ
 
 ### Executing a template processing script
 
-Using this method, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> then executes this temporary file.
+Using this method, {{< TransferCFT/componentlongname  >}} creates a temporary file based on the template processing script, and replaces all symbolic variables with the corresponding values as they relate to the transfer. For example, if &IDTU is in the script, it is replaced by the actual transfer value. {{< TransferCFT/componentlongname  >}} then executes this temporary file.
 
-For example, to run the <span class="code">myscript.sh</span> script using this method:
+For example, to run the `myscript.sh` script using this method:
 
 
     cftsend id=flow01, exec='exec/myscript.sh'
@@ -74,9 +74,9 @@ Available on Windows and Unix
 
 A second method for executing scripts is to directly run a script. This method allows you to put command arguments directly in the exec parameter itself. However, while you may use symbolic variables in the exec, any symbolic variables contained within the script are not replaced during script execution.
 
-For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: <span class="code">CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands</span>.
+For security reasons, you cannot use this method with the SEND/RECV command's PREEXEC, EXEC or ACKEXEC parameters. Doing so generates an error: `CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands`.
 
-To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "<span class="code">cmd:</span>". For example:
+To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
 
 
     CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
@@ -108,7 +108,7 @@ You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/A
 
 ## Throttle processing
 
-In some cases you may want to limit the number of scripts launched in parallel by <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> to reduce processing bottlenecks. To do so, set the UCONF <span class="code">cft.server.max\_processing\_scripts</span> parameter to a positive integer to enable and control the number of executed processes.
+In some cases you may want to limit the number of scripts launched in parallel by {{< TransferCFT/transfercftname  >}} to reduce processing bottlenecks. To do so, set the UCONF `cft.server.max_processing_scripts` parameter to a positive integer to enable and control the number of executed processes.
 
 > **Note:**
 >
@@ -126,7 +126,7 @@ In some cases you may want to limit the number of scripts launched in parallel b
 
 ### End command
 
-The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with <span class="code">istate=no</span> (default).
+The end command monitors the script completion. Depending on the parameter used (appstate, istate, and diagc) you can, for example, check the progression of the script. The end of processing is marked by a CFTUTIL END with `istate=no` (default).
 
 #### Define istate and appstate
 
@@ -135,7 +135,7 @@ Example
 
     CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 
-The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
 
 Example
 
@@ -177,7 +177,7 @@ Example
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
-Exa<span class="bold_in_para">m</span>ple  
+Exa**m**ple  
 
 
 
@@ -250,7 +250,7 @@ You can change the maxduration for a transfer restart using the maxduration para
       <tr>
          <td>ACKSTATE         </td>
          <td>REQUIRE/IGNORE         </td>
-         <td>Specify if <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> should wait for an ACK/NACK to enter the X phase.         </td>
+         <td>Specify if {{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.         </td>
       </tr>
       <tr>
          <td>POSTSTATE         </td>

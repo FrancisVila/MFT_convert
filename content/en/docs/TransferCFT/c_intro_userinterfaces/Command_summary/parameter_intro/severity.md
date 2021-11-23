@@ -4,7 +4,7 @@
     "weight": "3160"
 }<span id="severity"></span>
 
-### <span class="mc-variable System.Title variable">severity</span>
+### 
 
 [WLOG](../../#WLOG)
 

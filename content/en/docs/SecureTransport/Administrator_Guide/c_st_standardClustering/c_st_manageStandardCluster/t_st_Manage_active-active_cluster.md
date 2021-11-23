@@ -6,15 +6,15 @@
 
 The following topic provide the how-to instructions for managing an active/active cluster:
 
--   <a href="#Monitor" class="MCXref xref">Monitor an active/active cluster</a>
--   <a href="#Add" class="MCXref xref">Add a server to an active/active cluster</a>
--   <a href="#Restore" class="MCXref xref">Restore a server to an active/active cluster</a>
--   <a href="#Remove" class="MCXref xref">Remove a server from an active/active cluster</a>
+-   [Monitor an active/active cluster](#Monitor)
+-   [Add a server to an active/active cluster](#Add)
+-   [Restore a server to an active/active cluster](#Restore)
+-   [Remove a server from an active/active cluster](#Remove)
 
 **Related topics:**
 
--   <a href="../t_st_manage_active-passive_cluster" class="MCXref xref">Manage an active/passive cluster</a>
--   <a href="../c_st_standard_cluster_synchronization" class="MCXref xref">Standard Cluster synchronization</a>
+-   [Manage an active/passive cluster](../t_st_manage_active-passive_cluster)
+-   [Standard Cluster synchronization](../c_st_standard_cluster_synchronization)
 
 <span id="Monitor"></span>
 
@@ -27,7 +27,7 @@ Cluster status is displayed in the Administration Tool.
 
 For each Server in the cluster, the page lists its status (online or offline), its type (primary or secondary), and its host name or IP address. Online status means the server is running and communicating with the cluster. Offline status means the server has been stopped, has failed, or cannot communicate with the cluster.
 
-The **Bounce**, **Bounce All**, and **Synchronize All** buttons do not appear on secondary servers. To bounce a secondary server locally, see <a href="#Reload" class="MCXref xref">Reload server configuration</a>.
+The **Bounce**, **Bounce All**, and **Synchronize All** buttons do not appear on secondary servers. To bounce a secondary server locally, see [Reload server configuration](#Reload).
 
 On a secondary server, the time of the last manual synchronization is reported. The timestamp is also reported in the `cluster_last_sync_timestamp` file located in the `<FILEDRIVEHOME>/var/tmp/cluster_last_sync_timestamp` directory.
 
@@ -55,7 +55,7 @@ By default, the `cluster_state` file is located in `<FILEDRIVEHOME>/var/tmp/clus
 1.  Stop the TM server on all servers in the cluster.
 2.  Add the information about the new server into the `<FILEDRIVEHOME>/lib/admin/config/servers` file on the primary server.
 3.  Copy the `servers` file to the new computer.
-4.  Follow steps 11 through 15 from <a href="../../c_st_standardclusterconfiguration/t_st_setup_active-active_cluster#Standard_Clustering_3967700027_1029540" class="MCXref xref">Set up an active/active cluster</a>.
+4.  Follow steps 11 through 15 from [Set up an active/active cluster](../../c_st_standardclusterconfiguration/t_st_setup_active-active_cluster#Standard_Clustering_3967700027_1029540).
 
 > **Note:**
 >
@@ -66,7 +66,7 @@ By default, the `cluster_state` file is located in `<FILEDRIVEHOME>/var/tmp/clus
 ## Restore a server to an active/active cluster
 
 1.  Start the Administration Tool and TM server on the restored server.
-2.  Perform a manual synchronization from the Administration Tool of the primary server. For instructions, see <a href="../c_st_standard_cluster_synchronization#Synchron" class="MCXref xref">Synchronize the cluster from the primary server</a>.
+2.  Perform a manual synchronization from the Administration Tool of the primary server. For instructions, see [Synchronize the cluster from the primary server](../c_st_standard_cluster_synchronization#Synchron).
 
 > **Note:**
 >
@@ -84,4 +84,4 @@ When you remove a server from an active/active cluster, you can configure it as 
     2.  On the *Server Configuration* page, set the `Cluster.mode` parameter to `disabled`.
 3.  On each of the remaining nodes in the cluster, open the `<FILEDRIVEHOME>/lib/admin/config/servers` file and remove the line of information about the server you are removing from the cluster.
 4.  On each of the remaining nodes in the cluster, start the TM server.
-5.  On the primary server, perform a manual synchronization from the Administration Tool. For instructions, see <a href="../c_st_standard_cluster_synchronization#Synchron" class="MCXref xref">Synchronize the cluster from the primary server</a>.
+5.  On the primary server, perform a manual synchronization from the Administration Tool. For instructions, see [Synchronize the cluster from the primary server](../c_st_standard_cluster_synchronization#Synchron).

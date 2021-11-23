@@ -2,7 +2,7 @@
     "title": "Migrating Transfer CFT  3.2.x, 3.3.2 or 3.4 to 3.9",
     "linkTitle": "Migrating from Transfer CFT 3.2.x or higher",
     "weight": "260"
-}This topic describes how to migrate Transfer CFT 3.2.x, 3.3.2, or 3.4 to version <span class="mc-variable axway_variables.Component_Version variable">3.9</span>. It is divided in 2 sections, the first section describes migration for a single node architecture, and the second section multi-node architecture. Lastly there are instructions explaining what would be needed to migrate from single node architecture to multi node architecture.
+}This topic describes how to migrate Transfer CFT 3.2.x, 3.3.2, or 3.4 to version {{< TransferCFT/componentversion  >}}. It is divided in 2 sections, the first section describes migration for a single node architecture, and the second section multi-node architecture. Lastly there are instructions explaining what would be needed to migrate from single node architecture to multi node architecture.
 
 ## Single node architecture
 
@@ -21,11 +21,11 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
         CFTUTIL CFTEXT type=all, fout=cft-extract.conf
 
-3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> installation.
+3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
-4.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+4.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
-5.  Stop <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> if you have not already done so.
+5.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 
 6.  Import your static configuration objects using the cftinit command. Enter:  
 
@@ -37,13 +37,13 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
 
-3.  Copy all files that are referenced in the pki-extractconf file (INAME OR IKNAME) to the folder where you are going to execute the PKI command on the new version. In the following example, copy ROOT0001 to the new folder in Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>.
+3.  Copy all files that are referenced in the pki-extractconf file (INAME OR IKNAME) to the folder where you are going to execute the PKI command on the new version. In the following example, copy ROOT0001 to the new folder in Transfer CFT {{< TransferCFT/releasenumber >}}.
 
-4.  Load the Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+4.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
-5.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;<span class="code">pki\_database\_filename</span>&gt; with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:
+5.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;`pki_database_filename`&gt; with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:
 
-6.  Import your PKI certificates into Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> using the command PKIUTIL. Replace the &lt;<span class="code">prefix\_character</span>&gt; based on your system, @ for UNIX and # for Windows.  
+6.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;`prefix_character`&gt; based on your system, @ for UNIX and # for Windows.  
     Enter:  
 
 
@@ -58,12 +58,12 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 1.  Load the former Transfer CFT 3.x environment.
 
-2.  Export the catalog using the command <span class="code">CFTMI</span>. Replace the &lt;c<span class="code">atalog\_filename</span> > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
+2.  Export the catalog using the command `CFTMI`. Replace the &lt;c`atalog_filename` > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
 
 
         CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft>, ofname=catalog_output.xml
 
-3.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 4.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
 
@@ -79,7 +79,7 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
         CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_former_cft>, ofname=com_output.xml
 
-3.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 4.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
 
@@ -88,7 +88,7 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 #### Executables and binaries
 
-Remember that you can copy your post-processing scripts directly from the runtime/exec to the new version (<span class="mc-variable axway_variables.Release_Number variable">3.9</span>). When you copy files from the exec folder, be certain to modify any paths that point to the former version (3.x in this case). However, you must rebuild APIs and EXITS (binaries).
+Remember that you can copy your post-processing scripts directly from the runtime/exec to the new version ({{< TransferCFT/releasenumber  >}}). When you copy files from the exec folder, be certain to modify any paths that point to the former version (3.x in this case). However, you must rebuild APIs and EXITS (binaries).
 
 ## Migrate a multi-node to multi-node architecture
 
@@ -107,9 +107,9 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
         CFTUTIL CFTEXT type=all, fout=cft-extract.conf
 
-3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> installation.
+3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
-4.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+4.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 5.  Import your static configuration objects using the cftinit command. Enter:  
 
@@ -129,7 +129,7 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
         PKIUTIL PKIEXT fout=pki-extract.conf
 
-3.  Load the Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+3.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 4.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
 
@@ -139,7 +139,7 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
                                         
                                 
 
-5.  Import your PKI certificates into Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
+5.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
 
 
         PKIUTIL <prefix_character>pki-extract.conf
@@ -159,7 +159,7 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
         CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft_node_<node>>, ofname=catalog_output_<node>.xml
                                         
 
-3.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 4.  Import all catalogs using the command CFTMI for each of them. Use the same node number on both &lt;node> on command. Enter:  
 
@@ -172,13 +172,13 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 2.  Export all communication media files (cftcom and cftcomXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI.  
     For each communication media file, enter:
 3.  For each node, enter:
-4.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+4.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 5.  Import all communication media files using the CFTMI command.  
     For the manager, enter:
-6.  For each node, enter:<span class="code"> </span>
+6.  For each node, enter:` `
 
 ## Single-node to multi-node architecture migration
 
-The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named <span class="code">cftcata </span>in multi-node, import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.
+The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named `cftcata `in multi-node, import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.
 
 Be certain to stop Transfer CFT and the Transfer CFT Copilot server before performing the procedure.

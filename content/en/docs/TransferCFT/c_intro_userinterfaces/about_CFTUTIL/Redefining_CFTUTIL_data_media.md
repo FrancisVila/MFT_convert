@@ -150,7 +150,7 @@ Example 3: MEDIACOM=FILE
 
 Use to select a specific communication file.
 
-If the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
+If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
 
 
 
@@ -168,7 +168,7 @@ Example 4: MEDIACOM=TCPIP
 
 Use to select a TCPIP communication media.
 
-If the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> configuration file refers to a communication file and a TCPIP communication media:
+If the {{< TransferCFT/hflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
 
 
 

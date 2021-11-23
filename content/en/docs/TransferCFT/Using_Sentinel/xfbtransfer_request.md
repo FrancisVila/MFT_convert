@@ -38,9 +38,9 @@ that correspond to an Alert.</p>         </td>
 ## XFBLog request
 
 When you configure Sentinel with Transfer CFT, you can import
-a predefined request for XFBTransfer <span style="font-style: italic;">TransferLog</span>.
+a predefined request for XFBTransfer *TransferLog*.
 This Request retrieves Tracked Instances that describe the contents of
-a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log.
+a {{< TransferCFT/componentshortname  >}} log.
 
 Related topics
 

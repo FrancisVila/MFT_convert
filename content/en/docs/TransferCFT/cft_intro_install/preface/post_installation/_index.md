@@ -2,7 +2,7 @@
     "title": "Post installation",
     "linkTitle": "Post installation",
     "weight": "180"
-}This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> [<span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
+}This chapter describes a series of checks that you should perform to verify your Transfer CFT installation. For more information on performing commands and using CFTUTIL, refer to the *Transfer CFT {{< TransferCFT/releasenumber  >}} [{{< TransferCFT/doctypeuser  >}}](https://docs.axway.com/u/documentation/transfer_cft/index.htm?version=3.2.4)*.
 
 > **Note:**
 >
@@ -12,17 +12,9 @@
 
 ### Check the Transfer CFT server
 
-Load the Transfer CFT profile:
-
-
-    . <installation_directory>/runtime/profile
-
-Verify the Transfer CFT version:
-
-
-    CFTUTIL about
-
-*Optionally*, change the Transfer CFT Guardian process names *if you are performing multiple installations*. Because each Transfer CFT process is assigned a Guardian process name, these names should be globally unique.
+1.  Load the Transfer CFT profile:
+2.  Verify the Transfer CFT version:
+3.  *Optionally*, change the Transfer CFT Guardian process names *if you are performing multiple installations*. Because each Transfer CFT process is assigned a Guardian process name, these names should be globally unique.
 
 -   Use the  [cft.guardian.process\_name\_prefix](../intro_os_features/hp_ns_batch#cft.guardian.process_name_prefix) UCONF parameter as described in the UCONF parameters section.
 -   Be certain to change this parameter's default value if you are running several Transfer CFT installations at the same time.
@@ -37,7 +29,7 @@ Start the Transfer CFT server:
 
     cft start
 
-Verify that the default ports used in <span class="code">$CFTDIRRUNTIME/conf/cft-tcp.conf</span> are available:
+Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are available:
 
 -   1761 (PeSIT Any protocol)
 -   1762 (PeSIT Any protocol with SSL authentication)

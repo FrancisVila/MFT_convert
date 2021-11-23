@@ -2,13 +2,13 @@
     "title": "Delivered templates for z/OS",
     "linkTitle": "Delivered samples for z/OS",
     "weight": "220"
-}This topic lists the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> API templates that are delivered for the z/OS platform. You may decide to use the delivered samples as a basis for integrating APIs, or as a model to create your own. Templates include samples in:
+}This topic lists the {{< TransferCFT/companyname  >}} {{< TransferCFT/componentshortname  >}} API templates that are delivered for the z/OS platform. You may decide to use the delivered samples as a basis for integrating APIs, or as a model to create your own. Templates include samples in:
 
 -   [Assembler language](#Assembl)
 -   [C language](#C)
 -   [COBOL language](#COBOL)
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS templates are located in the installed <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> distribution library.
+The {{< TransferCFT/componentshortname  >}} z/OS templates are located in the installed {{< TransferCFT/componentshortname  >}} distribution library.
 
 <span id="Assembl"></span>
 
@@ -65,7 +65,7 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
 <li>ipcai2_catalog_close-ipcai2_finalize-</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API sample program, listing all catalog content.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API sample program, listing all catalog content.         </td>
       </tr>
       <tr>
          <td><p>CAPI2B</p>         </td>
@@ -85,19 +85,19 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
 <li>ipcai2_finalize</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API sample program, which changes all Terminated transfers to Ended.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API sample program, which changes all Terminated transfers to Ended.         </td>
       </tr>
       <tr>
          <td><p>CAPIC</p>         </td>
          <td>cftai - cftac - cftau         </td>
          <td>OPEN- SELECT - NEXT - MODIFY - CLOSE - SEND -RECV - HALT - START - DELETE         </td>
-         <td>C Sample for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> API.         </td>
+         <td>C Sample for {{< TransferCFT/componentshortname  >}} API.         </td>
       </tr>
       <tr>
          <td><p>CAPISYN</p>         </td>
          <td>cftau         </td>
          <td>COM - SEND - GETXINFO - SWAITCAT         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication sample program using
+         <td>{{< TransferCFT/componentshortname  >}} communication sample program using
 Synchronous Communication media (multiple send commands are possible).         </td>
       </tr>
       <tr>
@@ -147,7 +147,7 @@ Synchronous Communication media (multiple send commands are possible).         <
 <li>ipcai2_finalize</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API template program, which lists all catalog content.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API template program, which lists all catalog content.         </td>
       </tr>
       <tr>
          <td><p>OAPI2AS</p>         </td>
@@ -167,7 +167,7 @@ Synchronous Communication media (multiple send commands are possible).         <
 <li>ipcai2_finalize</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API template program, which lists all of the catalog content.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API template program, which lists all of the catalog content.         </td>
       </tr>
       <tr>
          <td><p>OAPI2B</p>         </td>
@@ -187,7 +187,7 @@ Synchronous Communication media (multiple send commands are possible).         <
 <li>ipcai2_finalize</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API template program, which changes all successful transfers to a completed state.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API template program, which changes all successful transfers to a completed state.         </td>
       </tr>
       <tr>
          <td><p>OAPI2BS</p>         </td>
@@ -207,37 +207,37 @@ Synchronous Communication media (multiple send commands are possible).         <
 <li>ipcai2_finalize-</li>
 <li>ipcai2_get_errno_str</li>
 </ul>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog API template program, which changes all successful transfers to the completed state.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} catalog API template program, which changes all successful transfers to the completed state.         </td>
       </tr>
       <tr>
          <td><p>OAPIC</p>         </td>
          <td>CFTC         </td>
          <td>SEND -RECV - HALT - START - DELETE         </td>
-         <td><p>Issue <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands.</p>         </td>
+         <td><p>Issue {{< TransferCFT/componentshortname  >}} commands.</p>         </td>
       </tr>
       <tr>
          <td><p>OAPICS</p>         </td>
          <td>CFTC         </td>
          <td>SEND -RECV - HALT - START - DELETE         </td>
-         <td>Issue <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands         </td>
+         <td>Issue {{< TransferCFT/componentshortname  >}} commands         </td>
       </tr>
       <tr>
          <td><p>OAPII</p>         </td>
          <td>CFTI         </td>
          <td>OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)         </td>
-         <td><p>List the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog.</p>         </td>
+         <td><p>List the {{< TransferCFT/componentshortname  >}} catalog.</p>         </td>
       </tr>
       <tr>
          <td><p>OAPIIS</p>         </td>
          <td>CFTI         </td>
          <td>OPEN - CLOSE - (SELECT - NEXT) or (SELECT240 - NEXT240)         </td>
-         <td>List the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog.         </td>
+         <td>List the {{< TransferCFT/componentshortname  >}} catalog.         </td>
       </tr>
       <tr>
          <td><p>OAPISYN</p>         </td>
          <td>cftau         </td>
          <td>COM - SEND - GETXINFO - SWAITCAT         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication sample program using
+         <td>{{< TransferCFT/componentshortname  >}} communication sample program using
 the synchronous communication media, where multiple SEND commands are possible.         </td>
       </tr>
       <tr>

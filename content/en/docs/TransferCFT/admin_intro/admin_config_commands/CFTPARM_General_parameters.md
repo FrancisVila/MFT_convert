@@ -2,7 +2,7 @@
     "title": "General  parameters definition",
     "linkTitle": "CFTPARM - General parameters definition ",
     "weight": "270"
-}This topic describes how to define the general <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter, which corresponds to the CFTPARM object
+}This topic describes how to define the general {{< TransferCFT/componentshortname  >}} parameter, which corresponds to the CFTPARM object
 in the command line operations.
 
 [What
@@ -26,7 +26,7 @@ topics
 The CFTPARM object defines general parameters that:
 
 -   Specify the parameters
-    that control <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operations globally
+    that control {{< TransferCFT/componentshortname >}} operations globally
 -   Select the other
     parameter setting commands that are taken into account during execution
 
@@ -37,7 +37,7 @@ Only the associated CFTNET, CFTCOM, and CFTPROT are listed for a given
 PARM. If you modify the corresponding COM, NET, PROT, or CAT parameters
 you have modified that specific PARM.
 
-The parameters that define the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment are:
+The parameters that define the {{< TransferCFT/componentshortname  >}} environment are:
 
 -   Sizing constants
 -   File location
@@ -47,20 +47,20 @@ The parameters that define the <span class="mc-variable axway_variables.Componen
     key
 
 The CFTPARM is an initial configuration object. These parameters are
-set when <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> starts and cannot be modified dynamically. If you
+set when {{< TransferCFT/componentshortname  >}} starts and cannot be modified dynamically. If you
 modify CFTPARM values, the changes are not taken into account until the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped and restarted.
+{{< TransferCFT/componentshortname  >}} is stopped and restarted.
 
 The user generally works with a single CFTPARM object in the parameter
 file. There may, however, be several such commands in this file, a single
-command being selected at the time <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is activated, by specifying as
+command being selected at the time {{< TransferCFT/componentshortname  >}} is activated, by specifying as
 an activation parameter, the value of the identifier ID of the CFTPARM
 command selected.
 
-If this activation parameter is not defined, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+If this activation parameter is not defined, the {{< TransferCFT/componentshortname  >}}
 looks for a command CFTPARM ID = IDPARM0 (number 0).
 
-These parameters are defined at the time <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is started and
+These parameters are defined at the time {{< TransferCFT/componentshortname  >}} is started and
 cannot be modified dynamically.
 
 The *[End

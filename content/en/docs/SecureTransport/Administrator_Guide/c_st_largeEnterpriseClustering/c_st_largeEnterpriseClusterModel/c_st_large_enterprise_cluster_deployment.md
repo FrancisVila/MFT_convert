@@ -12,14 +12,14 @@ connection made.
 
 Enterprise Cluster
 
-The diagram does not illustrate the event synchronization among the {{< SecureTransport/componentshortname  >}} Servers or any unproxied connections or connections through HTTP proxy servers from the {{< SecureTransport/componentshortname  >}} Servers to the partner servers. For an illustration of an unproxied connection and more detail about connections in a streaming deployment and configuration for internal clients and servers, see <a href="#Streamin" class="MCXref xref">Streaming deployment</a>.
+The diagram does not illustrate the event synchronization among the {{< SecureTransport/componentshortname  >}} Servers or any unproxied connections or connections through HTTP proxy servers from the {{< SecureTransport/componentshortname  >}} Servers to the partner servers. For an illustration of an unproxied connection and more detail about connections in a streaming deployment and configuration for internal clients and servers, see [Streaming deployment](#Streamin).
 
-Deploy the number of {{< SecureTransport/componentshortname  >}} Servers and {{< SecureTransport/componentshortname  >}} Edge servers required for your file transfer workload. The connections from the TM Servers on the {{< SecureTransport/componentshortname  >}} Servers to the protocol and SOCKS5 proxy servers on the {{< SecureTransport/componentshortname  >}} Edge servers is many-to-many, so you can design your deployment with consistent or specialized configuration. For more information, see <a href="../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>. Because {{< SecureTransport/componentshortname  >}} Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see <a href="../../../c_st_edge_sync#Edge" class="MCXref xref">SecureTransport Edge synchronization</a>.
+Deploy the number of {{< SecureTransport/componentshortname  >}} Servers and {{< SecureTransport/componentshortname  >}} Edge servers required for your file transfer workload. The connections from the TM Servers on the {{< SecureTransport/componentshortname  >}} Servers to the protocol and SOCKS5 proxy servers on the {{< SecureTransport/componentshortname  >}} Edge servers is many-to-many, so you can design your deployment with consistent or specialized configuration. For more information, see [Communication across Transaction Manager, protocol, and proxy servers](../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202). Because {{< SecureTransport/componentshortname  >}} Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see [SecureTransport Edge synchronization](../../../c_st_edge_sync#Edge).
 
 **Related topics:**
 
--   <a href="../c_st_workload_distribution" class="MCXref xref">Workload distribution</a>
--   <a href="../c_st_passive_disaster_recovery" class="MCXref xref">Passive disaster recovery</a>
+-   [Workload distribution](../c_st_workload_distribution)
+-   [Passive disaster recovery](../c_st_passive_disaster_recovery)
 
 ## Components
 

@@ -10,5 +10,5 @@
 
 The following topics provide detailed route step configuration information:
 
--   <a href="t_st_publish_to_account" class="MCXref xref">Publish To Account</a> - Provides detailed how-to information for configuring a Publish To Account route step.
--   <a href="t_st_send_to_partner" class="MCXref xref">Send To Partner</a> - Provides detailed how-to information for configuring a Send To Partner route step.
+-   [Publish To Account](t_st_publish_to_account) - Provides detailed how-to information for configuring a Publish To Account route step.
+-   [Send To Partner](t_st_send_to_partner) - Provides detailed how-to information for configuring a Send To Partner route step.

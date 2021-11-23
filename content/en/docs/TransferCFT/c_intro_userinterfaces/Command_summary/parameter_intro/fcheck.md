@@ -13,7 +13,7 @@ FCHECK = { NO | YES }
 This parameter enables you to reject an incoming transfer if local file
 attributes don't match the virtual file attributes.
 
--   <span style="font-weight: bold;">NO</span>
+-   **NO**
     (default value) - <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> behavior is unchanged, and no check is
     performed. If the virtual file record length and format do not match the
     FLRECL and FRECFM attributes, the record is truncated or padded.

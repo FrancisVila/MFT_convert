@@ -10,11 +10,11 @@
 
 #### CFTPARM
 
-\[WAITTASK = { <u>10</u> | n }\]   <span style="font-weight: normal;"> {1...1441}</span>
+\[WAITTASK = { <u>10</u> | n }\]   
 
 The inactivity time, in minutes, for a file access task before it is terminated:
 
--   <span style="font-weight: bold;">1</span>: Minimum value
+-   **1**: Minimum value
 -   <span style="font-weight: bold;">10</span>: Waits for 10 minutes after no activity is detected before terminating the task
 -   **1441**: Makes the task permanent
 

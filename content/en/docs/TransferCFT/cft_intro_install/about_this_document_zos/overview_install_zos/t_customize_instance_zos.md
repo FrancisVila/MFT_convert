@@ -40,7 +40,7 @@ When modifying the A03PARM member, adapt any parameters displayed in bold text t
 
 Before you can customize the instance environment, you require a password to generate a key to use for internal encryption. The password you enter must be at least 8 characters long, contain upper and lower case characters as well as numeric and special characters (\*#$!?+-@).
 
-The password is temporarily stored in the '<span class="code">pswfname</span>' file, with the syntax <span class="code">--pass &lt;password></span>, and is then removed after installation. See [pswfname](#pswfname) for details.
+The password is temporarily stored in the '`pswfname`' file, with the syntax `--pass <password>`, and is then removed after installation. See [pswfname](#pswfname) for details.
 
 ### Environment customization
 
@@ -159,15 +159,15 @@ The password is temporarily stored in the '<span class="code">pswfname</span>' f
 
 #### Transfer CFT loadlib management
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
+{{< TransferCFT/componentlongname  >}} z/OS allows you to concatenate two libraries, a user library and the product library. The user library is not mandatory, but is strongly advised, and should be positioned first.
 
 > **Note:**
 >
 >  
 
--   A <span class="code">..USER.LOAD</span> load is created during the installation.
+-   A `..USER.LOAD` load is created during the installation.
 -   If the Transfer CFT LOAD is an APF, the USER load must also be an APF.
--   Set <span class="code">cftuload '&&TARGET".LOAD"'</span> to manage only one LOAD.
+-   Set `cftuload '&&TARGET".LOAD"'` to manage only one LOAD.
 
 <table>
    <thead>
@@ -218,7 +218,7 @@ or $cftload         </td>
          <td><span id="pswfname"></span>pswfname         </td>
          <td>'&amp;&amp;TARGET".UPARM(GENKEY)"'         </td>
          <td><p>The password, required to generate the key for installation, is temporarily stored in the 'pswfname' file (and is removed after installation).</p>
-<p><strong>Syntax</strong>: <span class="code">--pass &lt;password&gt;</span></p>         </td>
+<p><strong>Syntax</strong>: <code>--pass &lt;password&gt;</code></p>         </td>
       </tr>
       <tr>
          <td>keyfname         </td>
@@ -290,7 +290,7 @@ or $cftload         </td>
    </tbody>
 </table>
 
-#### Transfer CFT <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server customization
+#### Transfer CFT {{< TransferCFT/copilotname  >}} server customization
 
 <table>
    <thead>
@@ -304,28 +304,28 @@ or $cftload         </td>
       <tr>
          <td><p>copenable</p>         </td>
          <td>'yes'         </td>
-         <td><p>Enable the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server.</p>         </td>
+         <td><p>Enable the {{< TransferCFT/transfercftname  >}} {{< TransferCFT/copilotname  >}} server.</p>         </td>
       </tr>
       <tr>
          <td><p>copladdr</p>         </td>
          <td>'&amp;&amp;HOSTBYADDR'         </td>
-         <td><p>Transfer CFT <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost)</p>         </td>
+         <td><p>Transfer CFT {{< TransferCFT/copilotname  >}} server TCP/IP address. The key word '&amp;&amp;HOSTBYADDR' is substituted by the result of the REXX function socket ("GETHOSTBYADDR"). (copilot.general.serverhost)</p>         </td>
       </tr>
       <tr>
          <td><p>coplport</p>         </td>
          <td>'1766'         </td>
-         <td><p>Transfer CFT <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> listening port (copilot.general.serverport).</p>         </td>
+         <td><p>Transfer CFT {{< TransferCFT/copilotname  >}} listening port (copilot.general.serverport).</p>         </td>
       </tr>
       <tr>
          <td>coplsslp         </td>
          <td>'1767'         </td>
          <td><p>Copilot server SSL listening port.
-*Mandatory for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> (copilot.general.ssl_serverport).</p>         </td>
+*Mandatory for (copilot.general.ssl_serverport).</p>         </td>
       </tr>
       <tr>
          <td>coppath         </td>
          <td>'/home/AXWAY/CFT32X/inst/cop'         </td>
-         <td>USS directory for Transfer CFT <span class="mc-variable suite_variables.CopilotName variable">Copilot</span> server files. (copilot.http.httprootdir)         </td>
+         <td>USS directory for Transfer CFT {{< TransferCFT/copilotname  >}} server files. (copilot.http.httprootdir)         </td>
       </tr>
       <tr>
          <td>restenable         </td>
@@ -465,7 +465,7 @@ or $cftload         </td>
 
 #### Parameters for RACF (or SAF enabled) control of Transfer CFT
 
-Use these parameters only with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> z/OS security setup described in [Setting up RACF Security]().
+Use these parameters only with the {{< TransferCFT/componentshortname  >}} z/OS security setup described in [Setting up RACF Security]().
 
 <table>
    <thead>
@@ -617,7 +617,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
    </tbody>
 </table>
 
-#### <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+#### 
 
 <table>
    <thead>
@@ -631,12 +631,12 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
       <tr>
          <td>cgenable         </td>
          <td>'no'         </td>
-         <td>Enables exchanges with the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> server. (yes | no)         </td>
+         <td>Enables exchanges with the server. (yes | no)         </td>
       </tr>
       <tr>
          <td>cghost         </td>
          <td>'cghost'         </td>
-         <td><span class="mc-variable Primary.CG or_UM variable">Central Governance</span> server host address.         </td>
+         <td>server host address.         </td>
       </tr>
       <tr>
          <td>cgport         </td>
@@ -646,17 +646,17 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
       <tr>
          <td>cgsecret         </td>
          <td>'cgsecret'         </td>
-         <td><span class="mc-variable Primary.CG or_UM variable">Central Governance</span> shared secret.         </td>
+         <td>shared secret.         </td>
       </tr>
       <tr>
          <td>amsusers         </td>
          <td>'&amp;%userid()'         </td>
-         <td>AM superuser(s) for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.         </td>
+         <td>AM superuser(s) for .         </td>
       </tr>
    </tbody>
 </table>
 
-#### <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>
+#### {{< TransferCFT/securerelayname  >}}
 
 <table>
    <thead>
@@ -670,7 +670,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
       <tr>
          <td>srenable         </td>
          <td>'no'         </td>
-         <td>Enable/disable <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>.         </td>
+         <td>Enable/disable {{< TransferCFT/securerelayname  >}}.         </td>
       </tr>
       <tr>
          <td>srmapath         </td>
@@ -685,7 +685,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
       <tr>
          <td>srmarun         </td>
          <td>'/home/AXWAY/CFT32X/runtime/xsr'         </td>
-         <td>Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.         </td>
+         <td>Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{< TransferCFT/componentshortname  >}}.         </td>
       </tr>
       <tr>
          <td>srmacopo         </td>
@@ -750,8 +750,7 @@ This should match the Identity Provider configuration.         </td>
          <td>' '         </td>
          <td><p>Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).</p>
 <p>If Keycloak is the Identity Provider, this should resemble:
-<span class="code">https://authserver.host/auth/realms/\{realm-name}/protocol/saml.
-authserver_host ' '</span></p>         </td>
+<code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.       authserver_host ' '</code></p>         </td>
          <td>'https://aa.bb.cc.int:8443'         </td>
       </tr>
       <tr>
@@ -839,7 +838,7 @@ You can customize specific prefixes for the following Transfer CFT files.
       <tr>
          <td>pfx_uconf         </td>
          <td>'*'         </td>
-         <td>Uconf runtime file <span style="vertical-align: super;">(1)</span>         </td>
+         <td>Uconf runtime file         </td>
       </tr>
    </tbody>
 </table>
@@ -852,7 +851,7 @@ You can customize specific prefixes for the following Transfer CFT files.
 
 ## Configure the SGINSTAL using UCONF or A12OPTSP
 
-As of <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
+As of {{< TransferCFT/componentlongname  >}} 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
 
 If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
 
@@ -1039,7 +1038,7 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
          <td><ul>
 <li>YES (default value): The catalog is cached in a common dataspace that is shared with the Copilot user interface, the CFTUTIL utility, and so on. This parameter improves catalog reading, especially from the Copilot user interface, when enabled.
 <ul>
-<li><p>If the catalog is full and an extension is created (using either the <span class="code">cft.cftcat.auto_expand_*</span> parameters or <span class="code">RECONFIG TYPE=CAT</span>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.</p></li>
+<li><p>If the catalog is full and an extension is created (using either the <code>cft.cftcat.auto_expand_*</code> parameters or <code>RECONFIG TYPE=CAT</code>), new records are stored in the extension and not in the cache. Accessing records in the extension may negatively impact performance.</p></li>
 <li>Do not use YES when implementing a multi-node architecture.</li>
 </ul></li>
 <li>NO: The catalog is cached in a dataspace, but the dataspace is not shared.</li>
@@ -1150,7 +1149,7 @@ SAF checking applies only if Transfer CFT is running APF authorized.</li>
 <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.</li>
 <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.</li>
 </ul>
-<p>Alternatively, you can set this parameter using: <span class="code">UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</span></p>         </td>
+<p>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code></p>         </td>
       </tr>
    </tbody>
 </table>

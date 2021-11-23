@@ -3,7 +3,7 @@
     "linkTitle": "Management utilities",
     "weight": "180"
 }This section describes Transfer
-CFT UNIX utilities located in the <span class="code">cft/&lt;installdir>/bin/</span>
+CFT UNIX utilities located in the `cft/<installdir>/bin/`
 sub-directory after completing installation.
 
 > **Note:**
@@ -14,7 +14,7 @@ sub-directory after completing installation.
 
 The utilities described here, do not replace the
 basic commands described elsewhere in this document. Their purpose is
-to simplify common tasks performed with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+to simplify common tasks performed with {{< TransferCFT/componentshortname  >}}.
 
 ## Utility descriptions
 
@@ -42,7 +42,7 @@ The following utilities are detailed in this page.
       </tr>
       <tr>
          <td><p><a href="#cftcatal">cftcatal</a>  </p>         </td>
-         <td><p>Utility migrating and/or extending the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog
+         <td><p>Utility migrating and/or extending the {{< TransferCFT/componentshortname  >}} catalog
 file.  </p>         </td>
       </tr>
       <tr>
@@ -72,7 +72,7 @@ file.  </p>         </td>
 
 ## cftinit
 
-*cftinit* is a general <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+*cftinit* is a general {{< TransferCFT/componentshortname  >}}
 initialization utility.
 
 **Syntax**
@@ -82,14 +82,14 @@ cftinit \[&lt;filename> \[&lt;filename>...\]\]
 **Standard use**
 
 *cftinit* is normally used with a single
-parameter, which is the name of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> configuration file.
+parameter, which is the name of the {{< TransferCFT/componentshortname  >}} configuration file.
 
 cftinit my\_config.cft
 
 **Advanced use**
 
 You can include several file names in the command line. Normally, all
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameters are declared in a single file. However, for organizational
+{{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
 reasons, you may wish to separate the configuration into several files
 (for example, a file describing the CFTPART cards and another file containing
 the CFTPARM, CFTLOG cards, and so on).
@@ -104,7 +104,7 @@ cftinit partners.cft the\_rest.cft
     is passed as a parameter, the program requests one or more file names.
 -   If no name is supplied,
     the program stops.
--   When you run <span class="code">cftinit</span>, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for <span class="code">cft.cftcat.default\_size</span> and <span class="code">cft.cftcom.default\_size</span> (these values are expressed as a number of records).
+-   When you run `cftinit`, it creates the catalog and communication files. You can modify the default sizes of these files to suit your requirements by updating the uconf values for `cft.cftcat.default_size` and `cft.cftcom.default_size` (these values are expressed as a number of records).
 
 <span id="cftupdate"></span>
 
@@ -151,7 +151,7 @@ cftutil &lt;command>
 ## cftcatal
 
 You can use the *cftcatal* utility to increase
-the size of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog file without losing information. In a multi-node environment, this action resizes all nodes.
+the size of the {{< TransferCFT/componentshortname  >}} catalog file without losing information. In a multi-node environment, this action resizes all nodes.
 
 **Syntax**
 
@@ -210,7 +210,7 @@ allow you to work in batch mode:
 
 ## xfbadmusr
 
-You can use the <span class="code">xfbadmusr</span>
+You can use the `xfbadmusr`
 utility to create, delete, check, and modify a user with access rights
 to the Transfer CFT Copilot server. It can be used in interactive mode associated with
 a command (add, delete, and so on) or in batch mode, specifying each of
@@ -224,12 +224,12 @@ login name.
 xfbadmusr add \[-l &lt;login>\] \[-p &lt;passwd>\] \[-u
 &lt;UID>\] \[-g &lt;GID>\]
 
-Delete a user. Users in the <span class="code">group </span>file are automatically deleted from all the groups
+Delete a user. Users in the `group `file are automatically deleted from all the groups
 with which they are associated.
 
 xfbadmusr delete \[-l &lt;login>\]
 
-Modify a user. If necessary, modifications are applied automatically to the <span class="code">group </span>file.
+Modify a user. If necessary, modifications are applied automatically to the `group `file.
 
 xfbadmusr modify \[-l &lt;login>\] \[-p &lt;passwd>\] \[-u
 &lt;UID>\] \[-g &lt;GID>\]
@@ -252,8 +252,8 @@ Advanced use
 You can use the following options to make it easier to enter information,
 or to work in batch mode:
 
--   <span style="font-family: 'Courier New', monospace;font-weight: bold;">-l
-    &lt; login ></span>: Login name
+-   **-l
+    &lt; login >**: Login name
 -   <span style="font-weight: bold;font-family: 'Courier New', monospace;">-p
     &lt; passwd ></span>: Password
 -   <span style="font-weight: bold;font-family: 'Courier New', monospace;">-u

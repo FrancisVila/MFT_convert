@@ -4,9 +4,9 @@
     "weight": "120"
 }## Before you start
 
-If you are installing <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> as part of a managed file transfer solution, you may want to check the installation order and ensure that you have reviewed the prerequisites.
+If you are installing {{< TransferCFT/componentlongname  >}} as part of a managed file transfer solution, you may want to check the installation order and ensure that you have reviewed the prerequisites.
 
-If you want to enable <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> during installation, please check that your license includes <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> documentation.
+If you want to enable {{< TransferCFT/centralgovernancename  >}} during installation, please check that your license includes {{< TransferCFT/centralgovernancename  >}} and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}} documentation.
 
 > **Note:**
 >
@@ -14,7 +14,7 @@ If you want to enable <span class="mc-variable suite_variables.Central_Governanc
 
 ### Installation overview
 
-This table presents a high-level overview of the installation process. By default, the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation uses a delivered configuration file called <span class="code">initialize.properties</span> that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
+This table presents a high-level overview of the installation process. By default, the {{< TransferCFT/componentlongname  >}} installation uses a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
 <table>
    <thead>
@@ -42,7 +42,7 @@ This table presents a high-level overview of the installation process. By defaul
          <td>3         </td>
          <td>Customize the properties file         </td>
          <td><p>Some installation parameters are mandatory to run Transfer CFT.</p>
-<p>You can customize the <span class="code">initialize.properties</span> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p>         </td>
+<p>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p>         </td>
          <td><a href="properties_file_win"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>         </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ The following multi-node restrictions apply:
 -   When using COMS, the SEND/RECV commands does not support STATE=HOLD with WSTATE.
 -   You cannot have more than one defined CFTCOM TYPE=FILE object.
 
-When using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> multi node, you cannot manage <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> updates. You are required to manually update the nodes.
+When using with {{< TransferCFT/componentshortname  >}} multi node, you cannot manage {{< TransferCFT/componentshortname  >}} updates. You are required to manually update the nodes.
 
 ### Install functions
 
@@ -84,11 +84,11 @@ You can perform the following installation functions:
 
 ### Installation configuration file
 
-The <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation is based on a delivered configuration file called <span class="code">initialize.properties</span> that provides a series of default values to simplify installation. You can make a copy of this file and customize it prior to running the installation procedure as described in [Customize the initialize.properties file](properties_file_win).
+The {{< TransferCFT/componentlongname  >}} installation is based on a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. You can make a copy of this file and customize it prior to running the installation procedure as described in [Customize the initialize.properties file](properties_file_win).
 
 ### Installation modes
 
-The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical mode you can install, but not operate, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> without customizing certain mandatory values in this file. To run silent mode, you must at least define an installation directory prior to running the unattended installation.
+The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical mode you can install, but not operate, {{< TransferCFT/componentlongname  >}} without customizing certain mandatory values in this file. To run silent mode, you must at least define an installation directory prior to running the unattended installation.
 
 Graphical mode
 
@@ -100,7 +100,7 @@ start /W Transfer\_CFT\_3.6\_Install\_win-x86-64\_BNXXXXXXXX.exe --mode unattend
 
 ### Create or modify the runtime
 
-You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the <span class="code">initialize.properties</span> file. From the &lt;installation\_directory>, run the following:
+You can use the following command to repair the runtime if there was an issue during the installation, or to update values that you have modified in the `initialize.properties` file. From the &lt;installation\_directory>, run the following:
 
 &lt;installation directory> initialize filename
 
@@ -113,7 +113,7 @@ If you want to use symbolic links, the link path must use a slash delimiter as s
 -   Correct:` S:\>mklink /j F:\CFT36m5 F:\CFT36_BN12786077_5`
 -   Incorrect:` S:\>mklink /j F:CFT36m5 F:CFT36_BN12786077_5`
 
-To install Transfer CFT using symbolic links, you must use the silent mode, <span class="code">option '--mode unattended'</span>, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
+To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
 
 > **Note:**
 >

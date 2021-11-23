@@ -7,7 +7,7 @@
 ### id
 
 Identifier. The maximum length for an identifier value-type is 32 characters.
-This affects all <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands.
+This affects all {{< TransferCFT/componentshortname  >}} commands.
 
 <span id="id_CFTAUTH"></span>
 
@@ -112,7 +112,7 @@ Example
 
 CFTMAIN parm1
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is started with the CFTPARM id = parm1. If no value is used,
+{{< TransferCFT/componentshortname  >}} is started with the CFTPARM id = parm1. If no value is used,
 the monitor uses the default value 'IDPARM0'.
 
 <span id="id_CFTPART"></span>
@@ -167,7 +167,7 @@ of DIRECT, FCODE or NCODE are different.
 Local model file identifier (IDF)
 
 The "COMMUT" value for this parameter takes a particular meaning
-for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>: it corresponds to the description of the files received
+for {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
 as an intermediate partner. For the store and forward to be accepted,
 the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.

@@ -2,15 +2,15 @@
     "title": "Axway AMPLIFY architecture",
     "linkTitle": "Axway AMPLIFY architecture",
     "weight": "120"
-}Axway <span class="mc-variable axway_variables.Platform_or_Suite_Long_Name variable">AMPLIFY</span> Managed File Transfer provides a product platform aimed at increasing the
+}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a product platform aimed at increasing the
 efficiency of business processes. This platform enables you to integrate
 the applications in your corporate information system and implement exchanges
-between these applications and external partners. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in combination with other <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products can provide a complete business solution for creating secured, guaranteed
+between these applications and external partners. {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
 exchanges with partners.
 
-## <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products
+## {{< TransferCFT/companyname  >}} products
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can interact with a variety of <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products
+{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products
  to enable
 you to better supervise, track, and analyze your transfer operations.
 Additional products include, but are not limited to, the following:
@@ -21,15 +21,15 @@ Additional products include, but are not limited to, the following:
 -   [SecureRelay](#SecureRelay)
 -   [TrustedFile](#TrustedFile)
 
-<span class="autonumber"></span>Example Axway <span class="mc-variable axway_variables.Platform_or_Suite_Long_Name variable">AMPLIFY</span> MFT implementation
+Example Axway {{< TransferCFT/platformorsuitelongname  >}} MFT implementation
 
 ![](/Images/TransferCFT/tbus_products.png)
 
 <span id="APIgtw"></span>
 
-#### <span class="mc-variable suite_variables.APIServerName variable">API Gateway</span>
+#### {{< TransferCFT/apiservername  >}}
 
-<span class="mc-variable suite_variables.APIServerName variable">API Gateway</span> is a comprehensive platform for managing, delivering, and securing enterprise APIs, applications, and consumers. In this <span class="mc-variable suite_variables.ReferenceImplementation variable">reference solution</span>, it can be used to manage web services and APIs exposed by <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>, or third-party products.
+{{< TransferCFT/apiservername  >}} is a comprehensive platform for managing, delivering, and securing enterprise APIs, applications, and consumers. In this {{< TransferCFT/referenceimplementation  >}}, it can be used to manage web services and APIs exposed by {{< TransferCFT/transfercftname  >}}, {{< TransferCFT/securetransportname  >}}, or third-party products.
 
 <span id="APImanager"></span>
 
@@ -43,9 +43,9 @@ API Manager provides web-based API administration and partner management capabil
 
 API Portal is a self-service portal that enables client application developers to browse and consume APIs for use in their applications, whether they be mobile, social media, web, or traditional applications. API Portal enables engagement with both internal and external application developers to promote APIs for consumption. It enables new go to market channels in the digital economy.
 
-#### <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+#### {{< TransferCFT/centralgovernancename  >}}
 
-For all products, <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> provides IAM and Visibility services through embedded editions of <span class="mc-variable suite_variables.PassPortName variable">PassPort</span> and <span class="mc-variable suite_variables.SentinelName variable">Sentinel</span>, enabling:
+For all products, {{< TransferCFT/centralgovernancename  >}} provides IAM and Visibility services through embedded editions of {{< TransferCFT/passportname  >}} and {{< TransferCFT/sentinelname  >}}, enabling:
 
 -   Global management of user identity and rights, providing a central control point for security enforcement
 -   End-to-end centralized supervision of data flows, consistent with definitions in the repository
@@ -53,9 +53,9 @@ For all products, <span class="mc-variable suite_variables.Central_GovernanceNam
 
 <span id="Central_Governance"></span>
 
-#### <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+#### for {{< TransferCFT/componentshortname  >}}
 
-For <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> also provides product configuration, and flow definition and deployment services.
+For {{< TransferCFT/transfercftname  >}}, {{< TransferCFT/centralgovernancename  >}} also provides product configuration, and flow definition and deployment services.
 
 -   Global data flow repository, providing end-to-end data flow definitions, from business application to infrastructure level
 -   Automatic discovery of products to be managed
@@ -75,15 +75,15 @@ outside of the enterprise network.
 
 ##### SecureTransport
 
-SecureTransport is an enhanced, secure, scalable, and highly available gateway for both system-to system data transfers and ad hoc human transactions. In <span class="mc-variable suite_variables.TransferBusName variable">Managed File Transfer</span>, <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span> serves as a hub to secure and route file transfers between partners, internal applications, and humans.
+SecureTransport is an enhanced, secure, scalable, and highly available gateway for both system-to system data transfers and ad hoc human transactions. In {{< TransferCFT/transferbusname  >}}, {{< TransferCFT/securetransportname  >}} serves as a hub to secure and route file transfers between partners, internal applications, and humans.
 
-##### <span class="mc-variable suite_variables.SecureTransportEdgeName variable">SecureTransport Edge</span>
+##### {{< TransferCFT/securetransportedgename  >}}
 
-Using <span class="mc-variable suite_variables.SecureTransportEdgeName variable">SecureTransport Edge</span>, you can create a multi-tier file exchange infrastructure with multi-protocol managed file transfer, SSL termination, and back-end authorization that streams data across the DMZ to <span class="mc-variable suite_variables.SecureTransportName variable">SecureTransport</span>.
+Using {{< TransferCFT/securetransportedgename  >}}, you can create a multi-tier file exchange infrastructure with multi-protocol managed file transfer, SSL termination, and back-end authorization that streams data across the DMZ to {{< TransferCFT/securetransportname  >}}.
 
 You can deploy multiple Edge gateways in the DMZ for load balancing and performance optimization.
 
-<span class="mc-variable suite_variables.SecureTransportEdgeName variable">SecureTransport Edge</span> also safeguards compliance wit HSOX, GLBA, HIPAA, and other corporate, industry, and government mandates governing the security and privacy of sensitive information.
+{{< TransferCFT/securetransportedgename  >}} also safeguards compliance wit HSOX, GLBA, HIPAA, and other corporate, industry, and government mandates governing the security and privacy of sensitive information.
 
 <span id="SecureRelay"></span>
 

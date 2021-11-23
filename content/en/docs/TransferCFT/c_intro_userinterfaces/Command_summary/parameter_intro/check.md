@@ -8,7 +8,7 @@
 
 #### PKICER
 
-\[check = { <span style="text-decoration: underline;">YES</span>
+\[check = {
 | NO } \]
 
 For PKIUTIL the certificate check during an import.

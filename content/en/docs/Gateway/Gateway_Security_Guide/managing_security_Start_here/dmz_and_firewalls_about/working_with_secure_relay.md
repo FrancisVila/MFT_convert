@@ -2,7 +2,7 @@
     "title": "Working with Secure Relay",
     "linkTitle": "Working with Secure Relay",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Overview](#overview)
 
@@ -39,7 +39,7 @@ You need Java 1.5.0 or higher to operate Secure Relay. This is installed automat
 
 For more information, refer to the:
 
--   <span style="font-style: italic;">Axway Secure Relay Router Agent Administrator's Guide</span>
+-   *Axway Secure Relay Router Agent Administrator's Guide*
 
 <span id="Installing_Secure_Relay_MA"></span>
 
@@ -51,7 +51,7 @@ The Secure Relay Master Agent is automatically installed when you install Gatewa
 
 ## Installing Secure Relay Router Agent
 
-The Secure Relay Router Agent is delivered on the <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span> installation DVD. Use <span class="mc-variable axway_variables.Company_Name variable">Axway</span> <span class="mc-variable suite_variables.InstallerName variable">Installer</span> to install the Secure Relay Router Agent on a machine located in the DMZ, independent of Gateway.
+The Secure Relay Router Agent is delivered on the {{< Gateway/platformorsuiteshortname  >}} installation DVD. Use {{< Gateway/companyname  >}} {{< Gateway/installername  >}} to install the Secure Relay Router Agent on a machine located in the DMZ, independent of Gateway.
 
 <span id="Configuring_Secure_Relay"></span>
 
@@ -59,7 +59,7 @@ The Secure Relay Router Agent is delivered on the <span class="mc-variable axway
 
 Configure and activate Secure Relay in the Gateway configuration menu:
 
-1.  In the left pane of the Gateway GUI, right-click the Gateway server that you want to configure and select <span style="font-weight: bold;">Configure</span>.
+1.  In the left pane of the Gateway GUI, right-click the Gateway server that you want to configure and select **Configure**.
 2.  Select <span style="font-weight: bold;">Connectivity > SecureRelay</span>.
 3.  Complete the [Secure Relay configuration parameters](../../../../gateway_userguide_(primary)/configuration_start_here/config_connectivity_paras#olh_connectivity_Secure_Relay) according to your network requirements.
 4.  Click <span style="font-weight: bold;">Activate</span> to enable Secure Relay.

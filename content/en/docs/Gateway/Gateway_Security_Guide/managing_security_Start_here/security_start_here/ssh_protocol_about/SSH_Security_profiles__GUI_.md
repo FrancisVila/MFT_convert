@@ -2,11 +2,11 @@
     "title": "Managing SSH Security Profiles",
     "linkTitle": "Managing SSH Security Profiles",
     "weight": "220"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 An SSH Security Profile contains all security configuration elements used to establish an SSH connection.
 
-To import an SSH Profile, use the <span class="code" style="font-weight: bold;">[secadm import\_sshprof](../managing_ssh_security_profiles_cli#secadm_import_sshprof)</span> online command.
+To import an SSH Profile, use the `secadm import_sshprof` online command.
 
 <span id="Defining_SSH_Profiles"></span>
 
@@ -17,7 +17,7 @@ To add a new SSH Security Profile to the profile database:
 1.  In the left pane of the GUI main window, click <img src="/Images/Gateway/expand_marker.gif" width="16" height="16" /> to expand the nodes:  
     **Security Management > Transfer Security Management > Security Profile**  
      
-2.  Right-click the <span style="font-weight: bold;">SSH Profile</span> sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.  
+2.  Right-click the **SSH Profile** sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.  
     Gateway displays the <span style="font-style: italic;">New SSH Profile</span> window.  
      
 3.  Complete the fields of the following tabs as described below:

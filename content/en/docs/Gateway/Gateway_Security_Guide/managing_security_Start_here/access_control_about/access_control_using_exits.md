@@ -2,7 +2,7 @@
     "title": "Access control using exits",
     "linkTitle": "Access Control using exits",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Access control mechanisms](#mechanisms)
 
@@ -31,10 +31,10 @@ The user login process involves the following steps.
 
 1.  Gateway calls the exit routine ExitLoginParam() to ask for login username and password.
 2.  From the Gateway Navigator, the user enters the user name and password.
-3.  When Gateway receives the login request, it calls the exit ExitCheckUserLogin() to validate the request. The exit routine returns one of three values: <span style="font-style: italic;">Allowed</span>, <span style="font-style: italic;">Denied</span> or <span style="font-style: italic;">Undefined</span>. If the exit routine returns <span style="font-style: italic;">Undefined</span>, Gateway continues the validation with its own user database definition. The request is accepted if, and only if, all of the following conditions are met:
+3.  When Gateway receives the login request, it calls the exit ExitCheckUserLogin() to validate the request. The exit routine returns one of three values: *Allowed*, *Denied* or *Undefined*. If the exit routine returns *Undefined*, Gateway continues the validation with its own user database definition. The request is accepted if, and only if, all of the following conditions are met:
     -   The user name is defined
     -   The password is not empty and matches the one defined in the User record (the process of matching user name and password is not case-sensitive)
-    -   The user is <span style="font-style: italic;">not</span> disabled and the expiration date is <span style="font-style: italic;">not</span> reached
+    -   The user is *not* disabled and the expiration date is *not* reached
 
 If validation fails, Gateway rejects the user access request. If the user login request is rejected and the maximum consecutive retry count is reached, Gateway disables the user account. An administrator must then re-enable the account.
 
@@ -86,7 +86,7 @@ A protected object is protected from user access for any of the following action
 -   Delete
 -   Admin
 
-When a user attempts to access a protected object for any of the above actions, Gateway calls the exit routine ExitCheckUserAccessByObject() to validate the request. The exit routine returns one of three values: <span style="font-style: italic;">Allowed</span>, <span style="font-style: italic;">Denied</span> or <span style="font-style: italic;">Undefined</span>. If the exit routine returns <span style="font-style: italic;">Undefined</span>, (default action in the supplied sample codes), Gateway continues the validation with its own user database definition.
+When a user attempts to access a protected object for any of the above actions, Gateway calls the exit routine ExitCheckUserAccessByObject() to validate the request. The exit routine returns one of three values: *Allowed*, *Denied* or *Undefined*. If the exit routine returns *Undefined*, (default action in the supplied sample codes), Gateway continues the validation with its own user database definition.
 
 Gateway accepts the request if, and only if, at least one of the following conditions is met:
 
@@ -128,7 +128,7 @@ This user exit returns the required user name, password and new password in the 
       <tr>
          <td>         </td>
          <td><span><strong>Caution  </strong></span>         </td>
-         <td><strong>The</strong> <span style="color: #8b0000;font-weight: bold;">default action in the supplied sample codes are not secure enough for a production environment!</span> <strong>You must customize this routine to meet your precise functional and security needs. Please see the</strong> <em>Security Guide &gt; <a href="/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/Security_best_practices.htm#identified_threats_and_possible_mitigations">Identified threats and possible mitigations</a></em> <strong>section for additional information.</strong><br />
+         <td><strong>The</strong> <strong>default action in the supplied sample codes are not secure enough for a production environment!</strong> <strong>You must customize this routine to meet your precise functional and security needs. Please see the</strong> <em>Security Guide &gt; <a href="/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/Security_best_practices.htm#identified_threats_and_possible_mitigations">Identified threats and possible mitigations</a></em> <strong>section for additional information.</strong><br />
 <br />
          </td>
       </tr>

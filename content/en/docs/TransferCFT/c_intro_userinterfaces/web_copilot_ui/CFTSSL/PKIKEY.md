@@ -8,7 +8,7 @@
 >
 > Some command line  parameters are not available in the user interface.
 
-## About keys in <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
+## About keys in {{< TransferCFT/transfercftname  >}}
 
 A private key is comprised of both a private and public key component. You can use this private key, as it contains two keys, for both the server and the client. However, only the public key portion is used for the client.
 

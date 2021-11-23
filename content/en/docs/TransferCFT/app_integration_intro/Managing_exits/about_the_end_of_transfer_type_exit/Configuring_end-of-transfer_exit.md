@@ -4,7 +4,7 @@
     "weight": "360"
 }This topic describes how to configure the environment for an end-of-transfer
 type exit. Before you submit this EXIT, you must customize the following
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> objects:
+{{< TransferCFT/componentshortname  >}} objects:
 
 -   [Defining
     the CFTEXIT object](#Defining_the_CFTEXIT_object): to describe the EXIT environment and how this
@@ -20,13 +20,13 @@ tasks of all types simultaneously active is limited to a number depending
 on the operating system.
 
 An end-of -tansfer EXIT task is activated in memory before the EXECxx
-submission call is deactivated, following a time-out or <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> shutdown.
+submission call is deactivated, following a time-out or {{< TransferCFT/componentlongname  >}} shutdown.
 
 <span id="Defining_the_CFTEXIT_object"></span>
 
 ## Defining the CFTEXIT object
 
-<span class="bold_in_para">Syntax</span>
+**Syntax**
 
 CFTEXITID = identifier,  
 TYPE = EXEC,  
@@ -59,7 +59,7 @@ related CFTPARM object.</p>         </td>
          <td><p>Indicates the format for the communication area.</p>
 <ul>
 <li>V23 (Default
-value): The communication area between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and user’s exits remains
+value): The communication area between {{< TransferCFT/componentshortname  >}} and user’s exits remains
 the same.</li>
 <li>V24:
 The communication area takes into account the length of the new identifier.</li>
@@ -69,7 +69,7 @@ The communication area takes into account the length of the new identifier.</li>
          <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a></p>         </td>
          <td><p>Language in which the user program is written.</p>
 <p>The possible values are COBOL and C language.</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses this attribute to exchange data with
+<p>{{< TransferCFT/componentshortname  >}} uses this attribute to exchange data with
 the program using the EXIT via the structure best suited to the language
 in which it is implemented.</p>         </td>
       </tr>
@@ -87,9 +87,9 @@ identification of the associated module, it is advised to name it CFTEXIE.</p>  
       <tr>
          <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  </p>         </td>
          <td><p>Size of the working area reserved for the user.</p>
-<p>This area is not used by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> interface. You
+<p>This area is not used by the {{< TransferCFT/componentshortname  >}} interface. You
 can use it to save data required for the processing of the program that
-you have written. This area is de-allocated when the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> interface
+you have written. This area is de-allocated when the {{< TransferCFT/componentshortname  >}} interface
 de-selects the file.</p>         </td>
       </tr>
       <tr>

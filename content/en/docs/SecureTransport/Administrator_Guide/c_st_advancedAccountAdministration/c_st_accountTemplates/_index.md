@@ -10,6 +10,6 @@ Templates can also be assigned a business unit.
 
 The following topics describe how to assign external users to account templates and how to manage account template. They also list the account template required values.
 
--   <a href="c_st_account_templates_external_users" class="MCXref xref">Account templates and external users</a> - Describes how to assign external users to account templates.
--   <a href="c_st_account_template_required_values" class="MCXref xref">Account template required values</a> - Lists the account template required values.
--   <a href="t_st_accounttemplates" class="MCXref xref">Manage account templates</a> - Provide how-to instructions for managing account templates.
+-   [Account templates and external users](c_st_account_templates_external_users) - Describes how to assign external users to account templates.
+-   [Account template required values](c_st_account_template_required_values) - Lists the account template required values.
+-   [Manage account templates](t_st_accounttemplates) - Provide how-to instructions for managing account templates.

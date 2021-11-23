@@ -10,7 +10,7 @@ On Unix platforms, use the following procedure to create a new instance of (STWC
 
 2.  Duplicate the `ric` folder. Choose a short and meaningful name for the duplicated folder, for example, *stwc1*.
 
-3.  Prepare the branding assets you need for the new skin following the instructions in the <a href="../webclient_branding" class="MCXref xref">Branding</a> section. The new instance is styled and branded using the following files located in the folder created in Step 2.  
+3.  Prepare the branding assets you need for the new skin following the instructions in the [Branding](../webclient_branding) section. The new instance is styled and branded using the following files located in the folder created in Step 2.  
     -   `<stwc1>/C/assets/wap.css` - Controls the color theme and the style.
     -   `<stwc1>/custom/stwebclient.config.json` - Controls the logos, the text header displayed next to the logo and the disclaimer on the login page.
 
@@ -59,8 +59,8 @@ On Unix platforms, use the following procedure to create a new instance of (STWC
 
 The HTML template that SecureTransport displays when the user logs in to the can configure it on the following levels:
 
--   <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/accounts/t_st_create_user_account.htm" class="MCXref xref">user account</a>: **User Account Settings > HTML Template
+-   [user account](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/accounts/t_st_create_user_account.htm): **User Account Settings > HTML Template
     drop-down**
--   <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/advanced_account_admin/t_st_accountTemplates.htm" class="MCXref xref">account template</a>: **Account Template Settings > HTML Template
+-   [account template](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/advanced_account_admin/t_st_accountTemplates.htm): **Account Template Settings > HTML Template
     drop-down**
--   <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/advanced_account_admin/t_st_businessUnits.htm#HTML_template_bu" class="MCXref xref">business unit</a>: **Business Units Settings > HTML Template Settings**
+-   [business unit](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/advanced_account_admin/t_st_businessUnits.htm#HTML_template_bu): **Business Units Settings > HTML Template Settings**

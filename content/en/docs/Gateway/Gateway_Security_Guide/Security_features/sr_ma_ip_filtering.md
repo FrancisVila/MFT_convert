@@ -11,7 +11,7 @@ It is possible to filter incoming connections in the DMZ with the help of an IP 
 -   Blacklist – allows everyone access, except for the partners contained in the list
 -   Whitelist – authorize access only to the members in the list
 
-The address that will be checked against the IP list is the remote socket address as seen on the Router Agent side. If an intermediary system which will change the partner's address (for example, a proxy) is present, IP filtering in <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> should not be used.
+The address that will be checked against the IP list is the remote socket address as seen on the Router Agent side. If an intermediary system which will change the partner's address (for example, a proxy) is present, IP filtering in {{< Gateway/securerelayname  >}} should not be used.
 
 The IP list consists of a semi-colon separated group of IP addresses (for example, 10.133.56.14; 10.\*.57.1?; support.axway.com; \*.axway.net; fe80::8923:fec5:91ae:2b3e). The allowed IP address types are:
 
@@ -22,7 +22,7 @@ The IP list consists of a semi-colon separated group of IP addresses (for exampl
 
 ## Dynamic whitelist
 
-Gateway can instruct <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agent to create a list of IP addresses from accepted connections to listen points with Security Termination and Protocol Login. This feature is called the *dynamic whitelist*, in contrast to the *static whitelist* which requires user interaction.
+Gateway can instruct {{< Gateway/securerelayname  >}} Router Agent to create a list of IP addresses from accepted connections to listen points with Security Termination and Protocol Login. This feature is called the *dynamic whitelist*, in contrast to the *static whitelist* which requires user interaction.
 
 -   the dynamic whitelist can only be built in blacklist operation mode. IP addresses are added as soon as the TLS/SSH handshake is performed and authentication is successful. As such, they are added to the list of valid partners.
 -   Filtering using this list will work only in whitelist mode, in parallel with the existing static list for all listen points that have IP filtering switched on.
@@ -49,6 +49,6 @@ Related topics
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

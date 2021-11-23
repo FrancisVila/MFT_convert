@@ -8,15 +8,15 @@
 
 #### **CFTPARM**
 
-**\[TRKSEND = {** **<span style="text-decoration: underline;">UNDEFINED</span>
-|** **ALL | NO | SUMMARY }\]**
+**\[TRKSEND = {**
+**|** **ALL | NO | SUMMARY }\]**
 
 Specifications concerning transfers via CFTSEND for which the [trk](../trk)
 value is not defined.
 
 Select one of the following options:
 
--   <span style="font-weight: bold;font-style: normal;">NO</span> <span style="font-style: normal;">(default value): the monitor never sends
+-   **NO** <span style="font-style: normal;">(default value): the monitor never sends
     Tracked Instances to Sentinel</span>
 -   <span style="font-weight: bold;">ALL</span>: for each step of each transfer
     process, the monitor sends a Tracked Instance to Sentinel

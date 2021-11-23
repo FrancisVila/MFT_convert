@@ -46,7 +46,7 @@
          <td>Catalog check         </td>
          <td>Network checks         </td>
          <td>timeout         </td>
-         <td>Check <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> files         </td>
+         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>Unexpected stop         </td>
@@ -54,7 +54,7 @@
          <td>Catalog check         </td>
          <td>Network checks         </td>
          <td>          </td>
-         <td>Check <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> files         </td>
+         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>Transfer freeze or infinite looping         </td>
@@ -62,7 +62,7 @@
          <td>          </td>
          <td>Network checks         </td>
          <td>Check application         </td>
-         <td>Check <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> files         </td>
+         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>SP and updates         </td>
@@ -78,14 +78,14 @@
          <td>          </td>
          <td>Network checks         </td>
          <td>          </td>
-         <td>Check <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> files         </td>
+         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
    </tbody>
 </table>
 
 \* Axway or third party software.
 
-\*\* <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> internal database.
+\*\* {{< TransferCFT/componentlongname  >}} internal database.
 
 ## Initial checks and actions
 
@@ -93,7 +93,7 @@
 
 -   No space left on the device
     -   Free space
-    -   Check Sentinel connectivity an<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
+    -   Check Sentinel connectivity an{{< TransferCFT/componentshortname >}}d verify the size of the runtime/data/trkapi.buf file, which may be voluminous
 -   Check for problematic file transfers and output, and clean
 -   Check to see if traces are set, which may lead to multiple large files in the "run" directory
 -   Check to see if you have enabled dynamic catalog resizing
@@ -126,5 +126,5 @@ These corrective measures are often system dependent.
 ### Check additional products
 
 -   Check if another product is consuming all of the CPU/memory
--   Check <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> interoperability, such as the <span class="mc-variable Primary.Sentinel variable">Sentinel</span> database
+-   Check interoperability, such as the  database
 -   Scripts or end-of-transfer procedures may indirectly

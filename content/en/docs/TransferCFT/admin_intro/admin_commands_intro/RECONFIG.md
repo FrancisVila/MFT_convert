@@ -9,7 +9,7 @@ Syntax
 RECONFIG
 
 \[ [TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)
-= { <span style="text-decoration: underline;">CRON</span> | UCONF | CAT | FOLDER  | PARMCACHE | AM
+= { | UCONF | CAT | FOLDER  | PARMCACHE | AM
 } \]
 
 CRON
@@ -54,7 +54,7 @@ Use this command if you need to reload the folder objects after a modification. 
 
 PARMCACHE
 
-Use this parameter to clear the cache while Transfer CFT is running. After the command execution, all changes applied to dynamic objects are taken into account, without restarting Transfer CFT. If you have set the UCONF <span class="code">cft.server.parm.cache\_size</span> value to something other than zero (0), this command reloads both the CFTPART and CFTPARM objects. For example:
+Use this parameter to clear the cache while Transfer CFT is running. After the command execution, all changes applied to dynamic objects are taken into account, without restarting Transfer CFT. If you have set the UCONF `cft.server.parm.cache_size` value to something other than zero (0), this command reloads both the CFTPART and CFTPARM objects. For example:
 
 
     CFTUTIL RECONFIG TYPE=PARMCACHE

@@ -8,7 +8,7 @@
 
 #### CFTPROT
 
-\[RCHKW = { <span style="text-decoration: underline;">3</span>
+\[RCHKW = {
 | n }\]
 
 The maximum number of synchronization points, not acquitted, that are

@@ -32,7 +32,7 @@ have the possibility of COMPRESSING files, it is not a MANDATORY REQUIREMENT.
 
 This Compression Option is negotiated as indicated in the figure below.
 
-<span class="autonumber"></span>Compression option negotiation
+Compression option negotiation
 
 <img src="/Images/TransferCFT/Image1692.gif" width="523" height="435" alt="Compression Option is negotiated between the initiator (Requester) ad the acceptor (Server)" />
 
@@ -64,13 +64,13 @@ If it does, Transfer CFT deletes these characters.
 
 #### Structure of the Data Exchanged
 
-<span class="autonumber"></span>Structure of the data exchange buffer
+Structure of the data exchange buffer
 
 <img src="/Images/TransferCFT/Image1693.gif" width="613" height="246" alt="View of structure including the initial Byte, header, and sub-record" />
 
  
 
-<span class="autonumber"></span>HEADER structure
+HEADER structure
 
 <img src="/Images/TransferCFT/Image1694.gif" width="528" height="331" alt="Header structure defining bits 0 through 7, which is the last bit of the record" />
 
@@ -86,7 +86,7 @@ longer indicate the sub-record size, as shown in the above diagram, but
 the number of times a single byte is repeated; the byte in question immediately
 follows the HEADER.
 
-<span class="autonumber"></span>SUBRECORD example
+SUBRECORD example
 
 <img src="/Images/TransferCFT/Image1755.gif" width="492" height="139" />
 

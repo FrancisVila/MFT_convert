@@ -4,10 +4,10 @@
     "weight": "120"
 }In this topic you will learn how to:
 
--   <a href="#Add" class="MCXref xref">Add an AS2 Server</a>
--   <a href="#Start" class="MCXref xref">Start and stop an AS2 server</a>
--   <a href="#Edit" class="MCXref xref">Edit AS2 server settings</a>
--   <a href="#Delete" class="MCXref xref">Delete an AS2 server</a>
+-   [Add an AS2 Server](#Add)
+-   [Start and stop an AS2 server](#Start)
+-   [Edit AS2 server settings](#Edit)
+-   [Delete an AS2 server](#Delete)
 
 AS2 (Applicability Statement 2) is a specification about how to transport data securely and reliably over the Internet. Security is achieved by using digital certificates and encryption. The AS2 specification describes how to exchange business data securely and reliably using HTTP as an underlying transport. The data is packaged using standard MIME content types so you can use XML, EDI, binary data, and any other data describable in MIME. Message security (authentication, confidentiality) is implemented using S/MIME. Message reliability is enabled through the use of MDNs. Nonrepudiation and Nonrepudiation of Receipt are business and legal concepts that build upon the security and reliability components in AS2.
 
@@ -77,7 +77,7 @@ The following table presents all parameters and expected values associated with 
       </tr>
       <tr>
          <td>Enable FIPS         </td>
-         <td>Select to enable <a href="../../../c_st_fipstransfermode" class="MCXref xref">FIPS transfer mode</a> for AS2 connections.
+         <td>Select to enable <a href="../../../c_st_fipstransfermode">FIPS transfer mode</a> for AS2 connections.
 <p>By selecting this option, the <strong>Enabled FIPS Ciphers</strong> field becomes editable.</p>         </td>
       </tr>
       <tr>
@@ -114,7 +114,7 @@ For instructions on how to enable TLSv1.3 protocol support, refer to the {{< Sec
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your AS2 server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default AS2 server, the list of allowed cipher suites in FIPS mode is determined by the <code>As2.FIPS.Listeners.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>
@@ -123,7 +123,7 @@ For instructions on how to enable TLSv1.3 protocol support, refer to the {{< Sec
 
 Once you are finished entering the parameters of your AS2 server, click **Save** to create it; or **Cancel** to discard all changes and return to the *Server Control* page.
 
-For information about more AS2 settings, see <a href="../../../c_st_setup/t_st_as2serverconfiguration#SetupMenu_1217491348_1046982" class="MCXref xref">Configure AS2 server settings</a>.
+For information about more AS2 settings, see [Configure AS2 server settings](../../../c_st_setup/t_st_as2serverconfiguration#SetupMenu_1217491348_1046982).
 
 <span id="Start"></span>
 

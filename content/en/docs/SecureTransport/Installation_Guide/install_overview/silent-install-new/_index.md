@@ -24,7 +24,7 @@ Do not modify anything else in the Axway\_Installer properties file except the `
 
 ## Modify the SecureTransport .properties file
 
-The SecureTransport properties file, `Install_SecureTransport_<st-version>.properties`, is used to feed in the installation parameters, such as the module to install (Edge or Server), the database to use (embedded or external), the type of installation (root or non-root). The file consists of a list of key-value pairs, which are described in the <a href="silent-install-properties" class="MCXref xref">Configurable properties for silent installation</a> topic. It can be edited via any text editor but if you want to change the value of an encrypted property, you must use the Silent file editor tool.
+The SecureTransport properties file, `Install_SecureTransport_<st-version>.properties`, is used to feed in the installation parameters, such as the module to install (Edge or Server), the database to use (embedded or external), the type of installation (root or non-root). The file consists of a list of key-value pairs, which are described in the [Configurable properties for silent installation](silent-install-properties) topic. It can be edited via any text editor but if you want to change the value of an encrypted property, you must use the Silent file editor tool.
 
 The SecureTransport properties file also contains sensitive information, such as passwords, which must be supplied encrypted. The encryption algorithm is defined by the `Format`property, the default is AES128.
 
@@ -87,7 +87,7 @@ If needed, you can edit this file to specify different options for your installa
 
 ## Install {{< SecureTransport/componentshortname  >}} in silent mode
 
-Before you start the silent installation on a cluster node, review the information in <a href="#Silent2" class="MCXref xref">Recommendations for Clustered SecureTransport deployments</a>.
+Before you start the silent installation on a cluster node, review the information in [Recommendations for Clustered SecureTransport deployments](#Silent2).
 
 Follow the instructions to install from a command line using the Installer silent file.
 
@@ -117,7 +117,7 @@ With Standard Cluster, after you perform silent installation on your first node,
 
 `Install_SecureTransport_<st-version>.properties` file for silent installation of all other nodes.
 
-Standard Cluster works with an embedded MariaDB database (or MySQL, only on AIX). No additional edits are required. See <a href="silent-install-properties#MariaDB-" class="MCXref xref">MariaDB- and MySQL-specific configurable properties</a>
+Standard Cluster works with an embedded MariaDB database (or MySQL, only on AIX). No additional edits are required. See [MariaDB- and MySQL-specific configurable properties](silent-install-properties#MariaDB-)
 
 #### Silent installation on Enterprise Cluster nodes
 
@@ -131,6 +131,6 @@ When using external databases (Oracle, MSSQL, or PostgreSQL) you must make sure 
 
 **Related topics:**
 
--   <a href="silent-install-properties" class="MCXref xref">Configurable properties for silent installation</a>
--   <a href="silent-install-example-mariadb" class="MCXref xref">Example silent installation files: SecureTransport Server with MariaDB database on Windows</a>
--   <a href="silent-install-cluster-externaldb" class="MCXref xref">Example silent installation files: SecureTransport Server with Oracle database on a Linux cluster</a>
+-   [Configurable properties for silent installation](silent-install-properties)
+-   [Example silent installation files: SecureTransport Server with MariaDB database on Windows](silent-install-example-mariadb)
+-   [Example silent installation files: SecureTransport Server with Oracle database on a Linux cluster](silent-install-cluster-externaldb)

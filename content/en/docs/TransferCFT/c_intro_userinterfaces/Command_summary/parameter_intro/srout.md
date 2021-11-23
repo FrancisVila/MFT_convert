@@ -8,10 +8,10 @@
 
 #### CFTPROT
 
-\[SROUT = { <span style="text-decoration: underline;">BOTH</span>
+\[SROUT = {
 | NONE | SENDER | RECEIVER }\]
 
-<span style="font-weight: bold;">Requester mode only</span>
+**Requester mode only**
 
 Select the direction of transfers (files or messages) authorized for
 this protocol on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:

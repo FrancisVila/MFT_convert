@@ -10,18 +10,18 @@
 
 The following topics provide how-to instructions for configuring the miscellaneous options:
 
--   <a href="#Set2" class="MCXref xref">Set the administrator’s email</a>
--   <a href="#Set" class="MCXref xref">Set usage monitor options</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable reverse DNS lookups</a>
--   <a href="#Set3" class="MCXref xref">Set the session timeout</a>
--   <a href="#Select" class="MCXref xref">Select a default HTML template</a>
--   <a href="#Limit" class="MCXref xref">Limit FTP login failures</a>
+-   [Set the administrator’s email](#Set2)
+-   [Set usage monitor options](#Set)
+-   [Enable or disable reverse DNS lookups](#Enable)
+-   [Set the session timeout](#Set3)
+-   [Select a default HTML template](#Select)
+-   [Limit FTP login failures](#Limit)
 
 **Related topics:**
 
--   <a href="../t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>
--   <a href="../t_st_ftphttpservershutdownoptions" class="MCXref xref">FTP and HTTP server suspend options</a>
--   <a href="../t_st_passwordpolicy" class="MCXref xref">Password policy</a>
+-   [SMTP configuration](../t_st_smtpconfiguration)
+-   [FTP and HTTP server suspend options](../t_st_ftphttpservershutdownoptions)
+-   [Password policy](../t_st_passwordpolicy)
 
 <span id="Set2"></span>
 
@@ -98,7 +98,7 @@ In cases where the DNS server is under heavy load, this can significantly affect
 2.  In the **Reverse DNS Lookups** field, choose to enable or disable reverse DNS lookups.
 3.  Click **Apply**.
 
-To disable reverse DNS lookups for the Administration Tool server, see <a href="../../../c_st_troubleshootcommonproblems/t_st_performanceissues/t_st_dns_settings" class="MCXref xref">DNS settings</a>.
+To disable reverse DNS lookups for the Administration Tool server, see [DNS settings](../../../c_st_troubleshootcommonproblems/t_st_performanceissues/t_st_dns_settings).
 
 <span id="Set3"></span>
 
@@ -150,7 +150,7 @@ You need to create a locale folder for the files in the following location: `<FI
 ### Modify the HTML files
 
 1.  Edit the copied HTML files. You can translate or modify the files.  
-    For additional information about editing the HTML pages and the default locale, see <a href="../../../operations_menu/c_st_standardbrowserclient#Customiz" class="MCXref xref">Customize a web client</a>.
+    For additional information about editing the HTML pages and the default locale, see [Customize a web client](../../../operations_menu/c_st_standardbrowserclient#Customiz).
 2.  Select **Setup > Miscellaneous** and view the *Miscellaneous Options* pane.
 3.  Select one of the templates from the **HTML Template** field and click **Apply**.
 

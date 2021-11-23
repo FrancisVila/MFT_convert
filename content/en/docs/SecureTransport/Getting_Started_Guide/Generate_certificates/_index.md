@@ -86,7 +86,7 @@ For a {{< SecureTransport/componentshortname  >}} Edge installation, generate th
    </tbody>
 </table>
 
-These certificates can be signed by the internal {{< SecureTransport/componentshortname  >}} CA, generated in the previous setup step. For more information, see <a href="../generate_or_import_ca" class="MCXref xref">Generate or import a certificate authority</a>.
+These certificates can be signed by the internal {{< SecureTransport/componentshortname  >}} CA, generated in the previous setup step. For more information, see [Generate or import a certificate authority](../generate_or_import_ca).
 
 The following procedure is used to generate a self-issued certificate. For information about generating a Certificate Signing Request (CSR), refer to the .
 

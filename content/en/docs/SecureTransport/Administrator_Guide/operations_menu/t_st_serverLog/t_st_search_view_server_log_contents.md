@@ -56,5 +56,5 @@
 
 **Related topics:**
 
--   <a href="../t_st_export_results_server_log_search" class="MCXref xref">Export the results of a server log search</a>
--   <a href="../c_st_log_entry_maintenance_application" class="MCXref xref">Log Entry Maintenance application</a>
+-   [Export the results of a server log search](../t_st_export_results_server_log_search)
+-   [Log Entry Maintenance application](../c_st_log_entry_maintenance_application)

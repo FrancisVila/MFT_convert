@@ -17,7 +17,7 @@
 
 The CFTMAIN JOB is an example of a JCL to start Transfer CFT. Beginning with the CFTMAIN sample, you can create JOBs to meet your operating requirements.
 
-You can perform Transfer CFT commands using the CFTUTIL utility, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user interface, or the console interface.
+You can perform Transfer CFT commands using the CFTUTIL utility, the {{< TransferCFT/componentshortname  >}} user interface, or the console interface.
 
 Start the CFTMAIN JCL in the target.INSTALL library.
 
@@ -39,17 +39,17 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 Enter the operator command:
 
 
-    /P <Transfer CFT Jobname>
+    /P <{{< TransferCFT/componentshortname >}} Jobname>
 
 \- or -
 
 
-    /F <Transfer CFT Jobname>,SHUT FAST=YES
+    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
 
-**Force** <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-weight: bold;">Transfer CFT</span> **shut down**
+**Force** {{< TransferCFT/componentshortname  >}} **shut down**
 
 
-    /F <Transfer CFT Jobname>,SHUT FAST=KILL
+    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL
 
 ### Restart
 
@@ -60,25 +60,25 @@ The following command restarts Transfer CFT outside of a customized JCL. Enter 
 
 ### Status
 
-Use the CFTPING in the target.INSTALL library to ping your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+Use the CFTPING in the target.INSTALL library to ping your {{< TransferCFT/componentshortname  >}}.
 
 <span id="Transfer CFT user interface server"></span>
 
 ## Transfer CFT Copilot server commands
 
-The Transfer CFT Copilot server is a sub component that is mandatory when using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>. Additionally, this server may function as the node manager when using multi-node.
+The Transfer CFT Copilot server is a sub component that is mandatory when using . Additionally, this server may function as the node manager when using multi-node.
 
 ### Starting the Copilot server
 
 COPRUN is an example of a JCL statement that starts the Transfer CFT Copilot server. The server can be started as a Start Task. The Transfer CFT Copilot server STEPLIB, and then JOBLIB should be defined as an APF. If it is not defined as an APF, no RACF check can be performed. This results in no log-on check being available and all requests are done with the user associated with the server JOB.
 
-When the <span class="code">copilot.misc.CreateProcessAsUser</span> variable is set, STEPLIB or JOBLIB can be non-APF. Only a <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>/PassPort user can sign on to Copilot user interface.
+When the `copilot.misc.CreateProcessAsUser` variable is set, STEPLIB or JOBLIB can be non-APF. Only a {{< TransferCFT/centralgovernancename  >}}/PassPort user can sign on to Copilot user interface.
 
 > **Note:**
 >
 > When the ‘cft.mvs.copilot.check\_apf’ uconf variable is set to ‘Yes’, CFTCOPL must be APF authorized to start.
 
-LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
+LOG message: `+CFTI42E Copilot must be APF-authorized.`
 
 > **Note:**
 >
@@ -92,6 +92,6 @@ COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server.
 
 You can use COPSTATU, for example, as the JCL statement to display the Transfer CFT Copilot server status in the current LPAR.
 
-## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Register with
 
-If you intend to implement <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, please refer to the <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span> *User's Guide &gt; [*Register with* <span class="mc-variable Primary.CG or_UM variable" style="font-style: italic;">Central Governance</span>](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

@@ -32,7 +32,7 @@ Use the following command to install Transfer CFT in silent mode.
       </tr>
       <tr>
          <td>License agreement         </td>
-         <td>Select the check-box "<span class="code">I accept...</span>" to continue with the installation.         </td>
+         <td>Select the check-box "<code>I accept...</code>" to continue with the installation.         </td>
       </tr>
       <tr>
          <td>Installation architecture         </td>
@@ -57,7 +57,7 @@ CFT. This is the directory where the Transfer CFT product files are installed. 
       <tr>
          <td>Configuration filename         </td>
          <td><p>Enter the path, or navigate, to the configuration file (initialize.properties file) containing details for the Transfer CFT installation. This file defines settings such as hostname, license key, governance options, and so on.</p>
-<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <span class="code">initialize </span>command post installation if you opt to create the runtime directory at a later date.)</p>         </td>
+<p>If you do not specify a file, you can continue with the installation, but the installation procedure does not create the runtime directory. (Run the <code>initialize </code>command post installation if you opt to create the runtime directory at a later date.)</p>         </td>
       </tr>
       <tr>
          <td>Generate Encryption Key         </td>
@@ -65,10 +65,10 @@ CFT. This is the directory where the Transfer CFT product files are installed. 
       </tr>
       <tr>
          <td><p>Ready to install</p>         </td>
-         <td><p>Click <span class="bold_in_para">Next</span> to complete the installation process, or <span class="bold_in_para">Back</span> to review or modify installation options.</p>         </td>
+         <td><p>Click <strong>Next</strong> to complete the installation process, or <strong>Back</strong> to review or modify installation options.</p>         </td>
       </tr>
       <tr>
-         <td>If you plan to integrate Transfer CFT with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.         </td>
+         <td>If you plan to integrate Transfer CFT with and also plan to use Service mode, please refer to the additional instructions in <a href="../../post_install_transfercft#Service">Service mode set up when using Central Governance</a>.         </td>
       </tr>
       <tr>
          <td>Transfer CFT Server Service         </td>
@@ -76,7 +76,7 @@ CFT. This is the directory where the Transfer CFT product files are installed. 
       </tr>
       <tr>
          <td>Transfer CFT UI Server Service         </td>
-         <td>Enter the Service Mode parameters for the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI.         </td>
+         <td>Enter the Service Mode parameters for the {{< TransferCFT/transfercftname  >}} UI.         </td>
       </tr>
    </tbody>
 </table>

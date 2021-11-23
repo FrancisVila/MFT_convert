@@ -83,8 +83,8 @@ Follow the steps below to replace the original {{< SecureTransport/componentshor
 
 **Related Topics:**
 
--   <a href="../standalone-mysql" class="MCXref xref">Standalone installation with embedded database</a>
--   <a href="../standalone-ext-db" class="MCXref xref">Standalone with External Database</a>
--   <a href="../lec-ext-db" class="MCXref xref">Enterprise Cluster environment with external database</a>
--   <a href="../edge-mysql" class="MCXref xref">Edge installation with Embedded Database</a>
--   <a href="../edge-synced-mysql" class="MCXref xref">Edge installation with Embedded Database when part of a synchronized cluster</a>
+-   [Standalone installation with embedded database](../standalone-mysql)
+-   [Standalone with External Database](../standalone-ext-db)
+-   [Enterprise Cluster environment with external database](../lec-ext-db)
+-   [Edge installation with Embedded Database](../edge-mysql)
+-   [Edge installation with Embedded Database when part of a synchronized cluster](../edge-synced-mysql)

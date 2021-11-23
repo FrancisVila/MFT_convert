@@ -29,7 +29,7 @@ to use this information which can be recovered by the symbolic variable
 
 For a sender:
 
-<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> sends this information, transported by the protocol in the
+{{< TransferCFT/transfercftname  >}} sends this information, transported by the protocol in the
 PI 38, but does not use it. The indexed file is transferred in the form
 of sequential records.
 

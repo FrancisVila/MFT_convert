@@ -17,4 +17,4 @@ Follow the steps for launching RHEL Instance with the following specifics:
 5.  Go to Configure Instance Details and select to enable Auto-assign Public IP (depending on the connectivity you would like to have to this host).
 6.  Add storage – enter a value for storage size sufficient for your needs.
 7.  Add Tags – specify unique names, so you can easily distinguish between instances.
-8.  Security Groups – assign the instance to the previously created Administration Host Security Group as described in the [](../../st_create_secgroups)<a href="../../st_create_secgroups" class="MCXref xref">Create Security Groups and Network Access Lists</a> section.
+8.  Security Groups – assign the instance to the previously created Administration Host Security Group as described in the [](../../st_create_secgroups)[Create Security Groups and Network Access Lists](../../st_create_secgroups) section.

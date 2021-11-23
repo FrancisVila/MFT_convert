@@ -23,7 +23,7 @@ The default cryptographic provider in SecureTransport is BouncyCastle. It is det
 
 In the cases where you do not need FIPS, you can deselect the **Prefer BouncyCastle Crypto provider** checkbox to speed up system performance. By doing so, Sun becomes the preferred provider and BouncyCastle is used as a fallback.
 
-In order to change the preferred provider from BouncyCastle to Sun, FIPS mode must be disabled on all SSH servers, as Sun is not FIPS-compliant. For more information, see <a href="ext_servercontrol-add-ssh" class="MCXref xref">Manage the SSH server</a>.
+In order to change the preferred provider from BouncyCastle to Sun, FIPS mode must be disabled on all SSH servers, as Sun is not FIPS-compliant. For more information, see [Manage the SSH server](ext_servercontrol-add-ssh).
 
 ### **Limit the Maximum Number of Connections**
 
@@ -43,5 +43,5 @@ The SSH daemon can be modified to present a custom banner to the users when they
 
 The following topics shows how to bind SSH and SSHD to the same port number and debug SSH issues:
 
--   <a href="../../../c_st_troubleshootcommonproblems/t_st_bind_ssh_sshd_same_port_number" class="MCXref xref">Bind SSH and SSHD to the same port number</a>
--   <a href="../../../c_st_troubleshootcommonproblems/t_st_debug_ssh_issues" class="MCXref xref">Debug SSH issues</a>
+-   [Bind SSH and SSHD to the same port number](../../../c_st_troubleshootcommonproblems/t_st_bind_ssh_sshd_same_port_number)
+-   [Debug SSH issues](../../../c_st_troubleshootcommonproblems/t_st_debug_ssh_issues)

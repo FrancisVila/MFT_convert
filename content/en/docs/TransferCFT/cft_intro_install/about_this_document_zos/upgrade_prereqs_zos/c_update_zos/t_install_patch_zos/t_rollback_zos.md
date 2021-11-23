@@ -6,11 +6,11 @@
 
 ## Use the A13RBACK
 
-Use the A13RBACK to restore the executable file library, USS Copilot and USS <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> environment. This JCL executes the following three JCLs:
+Use the A13RBACK to restore the executable file library, USS Copilot and USS {{< TransferCFT/securerelayname  >}} environment. This JCL executes the following three JCLs:
 
 -   A13RSTOR: Restores the Transfer CFT Load library.
 -   A13UCOPR: Restores the Transfer CFT USS Copilot environment.
--   A13UXSRR: Restores the Transfer CFT USS <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> environment.
+-   A13UXSRR: Restores the Transfer CFT USS {{< TransferCFT/securerelayname >}} environment.
 
 Before submitting the JOB configure the following JCL in automatic mode:
 
@@ -26,7 +26,7 @@ Before submitting the JOB configure the following JCL in automatic mode:
 
 ..INSTALL(A13UXSRD) &gt;&gt; ID='AUTO'
 
--   Stop Transfer CFT and <span class="mc-variable suite_variables.CopilotName variable">Copilot</span>.
+-   Stop Transfer CFT and {{< TransferCFT/copilotname >}}.
 -   Set the parameter 'ID' with the last six characters of the patch id. For example, 0E0500 for the patch id CF0E0500.
 -   Submit the JCL.
 

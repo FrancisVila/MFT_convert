@@ -6,5 +6,5 @@
 
 The following topics describe real users and provide how-to instructions for managing password files:
 
--   <a href="c_st_real_users" class="MCXref xref">Real users</a> - Describes real system users.
--   <a href="t_st_passwordfiles" class="MCXref xref">Manage password files</a> - Provides how-to instructions for managing password files.
+-   [Real users](c_st_real_users) - Describes real system users.
+-   [Manage password files](t_st_passwordfiles) - Provides how-to instructions for managing password files.

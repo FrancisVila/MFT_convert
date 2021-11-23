@@ -14,12 +14,12 @@
 
 **Related topics:**
 
--   <a href="../t_st_setup_cluster" class="MCXref xref">Set up a cluster</a>
--   <a href="../t_st_add_server_to_cluster" class="MCXref xref">Add a server to a cluster</a>
--   <a href="../t_st_remove_server_from_cluster" class="MCXref xref">Remove a server from a cluster</a>
--   <a href="../t_st_view_cluster_status" class="MCXref xref">View cluster status</a>
--   <a href="../t_st_notification_of_cluster_status" class="MCXref xref">Notification of cluster status</a>
--   <a href="../t_st_setup_disaster_recovery_cluster" class="MCXref xref">Set up a disaster recovery cluster</a>
--   <a href="../t_st_maintain_disaster_recovery_cluster" class="MCXref xref">Maintain a disaster recovery cluster</a>
--   <a href="../t_st_dr_failover_fallback" class="MCXref xref">Disaster recovery failover and fallback</a>
--   <a href="../t_st_direct_cluster_workload" class="MCXref xref">Direct cluster workload</a>
+-   [Set up a cluster](../t_st_setup_cluster)
+-   [Add a server to a cluster](../t_st_add_server_to_cluster)
+-   [Remove a server from a cluster](../t_st_remove_server_from_cluster)
+-   [View cluster status](../t_st_view_cluster_status)
+-   [Notification of cluster status](../t_st_notification_of_cluster_status)
+-   [Set up a disaster recovery cluster](../t_st_setup_disaster_recovery_cluster)
+-   [Maintain a disaster recovery cluster](../t_st_maintain_disaster_recovery_cluster)
+-   [Disaster recovery failover and fallback](../t_st_dr_failover_fallback)
+-   [Direct cluster workload](../t_st_direct_cluster_workload)

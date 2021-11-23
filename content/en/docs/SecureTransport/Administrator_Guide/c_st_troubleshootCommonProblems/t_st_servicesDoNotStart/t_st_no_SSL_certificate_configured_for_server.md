@@ -13,5 +13,5 @@ In a synchronized configuration, the certificate aliases must match on the prima
 
 **Related topics:**
 
--   <a href="../c_st_conflicting_port_numbers" class="MCXref xref">Conflicting port numbers</a>
--   <a href="../c_st_incorrect_host_name_ip_in_host_file" class="MCXref xref">Incorrect host name and IP address in the host file</a>
+-   [Conflicting port numbers](../c_st_conflicting_port_numbers)
+-   [Incorrect host name and IP address in the host file](../c_st_incorrect_host_name_ip_in_host_file)

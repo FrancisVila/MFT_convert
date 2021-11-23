@@ -8,7 +8,7 @@ Use the *Command Logging* page to view and determine which user classes should h
 
 The following topics provide how-to instructions for configuring and managing the FTP command log:
 
--   <a href="t_st_add_command_logging_entry" class="MCXref xref">Add a command logging entry</a> - Provides how-to instructions for adding a command logging entry.
--   <a href="t_st_enable_disable_command_logging_entries" class="MCXref xref">Enable or disable command logging entries</a> - Provides how-to instructions for enabling or disabling command logging entries.
--   <a href="t_st_edit_command_logging_entry" class="MCXref xref">Edit a command logging entry</a> - Provides how-to instructions for editing a command log entry.
--   <a href="t_st_delete_command_logging_entries" class="MCXref xref">Delete command logging entries</a> - Provides how-to instructions for deleting command logging entries.
+-   [Add a command logging entry](t_st_add_command_logging_entry) - Provides how-to instructions for adding a command logging entry.
+-   [Enable or disable command logging entries](t_st_enable_disable_command_logging_entries) - Provides how-to instructions for enabling or disabling command logging entries.
+-   [Edit a command logging entry](t_st_edit_command_logging_entry) - Provides how-to instructions for editing a command log entry.
+-   [Delete command logging entries](t_st_delete_command_logging_entries) - Provides how-to instructions for deleting command logging entries.

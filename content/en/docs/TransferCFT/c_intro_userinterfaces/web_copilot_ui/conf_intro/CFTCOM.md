@@ -52,7 +52,7 @@ Use CFTCOM TCP/IP for synchronous Transfer CFT communication on the local netwo
 
 \[ADDRLIST = (string1..64,string1..64…)\]
 
-The <span class="code">ADDRLIST </span>parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
+The `ADDRLIST `parameter is non-functional in that you can only use TCPIP in local networks for synchronous communication.
 
 \[DISCTS = n\]
 
@@ -193,7 +193,7 @@ the communication file.</p>         </td>
    </tbody>
 </table>
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 TYPE=FILE
 
@@ -209,9 +209,9 @@ TYPE=FILE
 
 <!-- -->
 
--   The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can be inactive at the time
+-   The {{< TransferCFT/componentshortname >}} can be inactive at the time
     the commands assigned to it are issued, to the limit of the file size.
-    Commands are taken into account at the time the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is activated,
+    Commands are taken into account at the time the {{< TransferCFT/componentshortname >}} is activated,
     if a CFTCOM command relative to this communication file has been defined.
     A communication file can be created by the CFTFILE command.
 

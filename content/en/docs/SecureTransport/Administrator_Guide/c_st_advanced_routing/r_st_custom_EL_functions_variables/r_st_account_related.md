@@ -100,13 +100,13 @@
 
 **Related topics:**
 
--   <a href="../r_st_session_related" class="MCXref xref">Session related EL for AR</a>
--   <a href="../r_st_predefined_el_functions" class="MCXref xref">Predefined EL functions for AR</a>
--   <a href="../r_st_ldap_related" class="MCXref xref">LDAP related EL for AR</a>
--   <a href="../r_st_pesit_related" class="MCXref xref">PeSIT related EL for AR</a>
--   <a href="../r_st_routing_related" class="MCXref xref">Routing related EL for AR</a>
--   <a href="../r_st_special_routing_variables" class="MCXref xref">Special routing EL variables for AR</a>
--   <a href="../r_st_stfs_pesit_related" class="MCXref xref">STFS PeSIT related EL for AR</a>
--   <a href="../r_st_transfer_related" class="MCXref xref">Transfer related EL for AR</a>
--   <a href="../r_st_user_related" class="MCXref xref">User related EL for AR</a>
--   <a href="../r_st_http_headers" class="MCXref xref">HTTP headers related EL for AR</a>
+-   [Session related EL for AR](../r_st_session_related)
+-   [Predefined EL functions for AR](../r_st_predefined_el_functions)
+-   [LDAP related EL for AR](../r_st_ldap_related)
+-   [PeSIT related EL for AR](../r_st_pesit_related)
+-   [Routing related EL for AR](../r_st_routing_related)
+-   [Special routing EL variables for AR](../r_st_special_routing_variables)
+-   [STFS PeSIT related EL for AR](../r_st_stfs_pesit_related)
+-   [Transfer related EL for AR](../r_st_transfer_related)
+-   [User related EL for AR](../r_st_user_related)
+-   [HTTP headers related EL for AR](../r_st_http_headers)

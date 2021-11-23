@@ -13,7 +13,7 @@
 The maximum authorized compression for sending a file.
 
 -   rcomp//scomp
-    = <span style="font-weight: bold;">0</span> (no compression)
+    = **0** (no compression)
 -   rcomp//scomp
     = <span style="font-weight: bold;">1</span> (compression of a string of
     blanks)

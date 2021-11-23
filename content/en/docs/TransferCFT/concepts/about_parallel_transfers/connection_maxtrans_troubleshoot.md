@@ -135,7 +135,7 @@ In this example, we have a distribution list with 5 partners, which shows an exa
 
 **Scenario 1**
 
-The transfers are executed quickly, in rapid succession because <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> is not limited by the session. As soon as the first 3 transfers are completed, the 2 remaining are executed immediately.
+The transfers are executed quickly, in rapid succession because {{< TransferCFT/componentlongname  >}} is not limited by the session. As soon as the first 3 transfers are completed, the 2 remaining are executed immediately.
 
 > **Note:**
 >

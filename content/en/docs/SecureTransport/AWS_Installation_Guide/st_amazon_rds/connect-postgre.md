@@ -2,7 +2,7 @@
     "title": "Connect and configure PostgreSQL",
     "linkTitle": "Connect and configure PostgreSQL",
     "weight": "110"
-}Follow these instructions if you will be using PostgreSQL with your {{< SecureTransport/componentshortname  >}} deployment. If you will be using Oracle DB, see <a href="../connect-oracle" class="MCXref xref">Connect and configure Oracle DB</a> .
+}Follow these instructions if you will be using PostgreSQL with your {{< SecureTransport/componentshortname  >}} deployment. If you will be using Oracle DB, see [Connect and configure Oracle DB](../connect-oracle) .
 
 ## Connect to your PostgreSQL database
 

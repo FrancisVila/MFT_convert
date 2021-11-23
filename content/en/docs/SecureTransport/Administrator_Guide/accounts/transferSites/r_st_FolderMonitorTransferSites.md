@@ -37,7 +37,7 @@ The following table describes the download settings Folder Monitor protocol opti
       </tr>
       <tr>
          <td>Pattern Type         </td>
-         <td>Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
+         <td>Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
       </tr>
       <tr>
          <td>Download Pattern         </td>
@@ -74,7 +74,7 @@ Example:
       </tr>
       <tr>
          <td>Download Subfolder Pattern Type         </td>
-         <td>(Displayed only when monitoring subfolders) Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
+         <td>(Displayed only when monitoring subfolders) Select one of two types: <strong>Regular Expression</strong> or <strong>File Globbing</strong>. For regular expression syntax, see <a href="../../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920">Regular expressions</a>. File globbing uses simple wildcards to specify a pattern. A question mark (<code>?</code>) matches any one character. An asterisk (<code>*</code>) matches any number of characters.         </td>
       </tr>
       <tr>
          <td>Download Subfolder Pattern         </td>
@@ -89,7 +89,7 @@ Example:
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
    </tbody>
 </table>
@@ -125,7 +125,7 @@ The automatically created folder will be owned by the user running the {{< Secur
       </tr>
       <tr>
          <td>Allow Overwrite         </td>
-         <td><p>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing" class="MCXref xref">Advanced Routing</a></p>         </td>
+         <td><p>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing">Advanced Routing</a></p>         </td>
       </tr>
       <tr>
          <td><strong>Post Transmission Settings</strong>         </td>
@@ -172,13 +172,13 @@ The Folder Monitor protocol differs from the other supported protocols in the fo
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

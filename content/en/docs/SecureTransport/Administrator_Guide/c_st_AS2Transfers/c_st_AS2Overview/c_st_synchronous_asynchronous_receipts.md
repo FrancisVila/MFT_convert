@@ -16,5 +16,5 @@ AS2 receipt
 
 **Related topics:**
 
--   <a href="../c_st_as2_application_framework_architecture_workflow" class="MCXref xref">AS2 and application framework: Architecture and workflow</a>
--   <a href="../c_st_as2_server_setup_overview" class="MCXref xref">SecureTransport AS2 server: Setup overview</a>
+-   [AS2 and application framework: Architecture and workflow](../c_st_as2_application_framework_architecture_workflow)
+-   [SecureTransport AS2 server: Setup overview](../c_st_as2_server_setup_overview)

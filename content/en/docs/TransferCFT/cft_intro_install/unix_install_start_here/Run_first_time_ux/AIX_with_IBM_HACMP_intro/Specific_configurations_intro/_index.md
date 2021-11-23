@@ -2,7 +2,7 @@
     "title": "Unix-specific  values",
     "linkTitle": "Specific Transfer CFT configurations",
     "weight": "230"
-}This topic summarizes <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> characteristics that differ from
+}This topic summarizes {{< TransferCFT/componentshortname  >}} characteristics that differ from
 other operating systems:
 
 -   specific values
@@ -61,7 +61,7 @@ form </p>         </td>
    <thead>
       <tr>
 <th class="HeadE-Column1-Header1"><p><strong>Objet</strong> </p>         </th>
-<th class="HeadD-Column1-Header1"><p><span style="font-weight: bold;">Default name</span> </p>         </th>
+<th class="HeadD-Column1-Header1"><p><strong>Default name</strong> </p>         </th>
       </tr>
    </thead>
    <tbody>

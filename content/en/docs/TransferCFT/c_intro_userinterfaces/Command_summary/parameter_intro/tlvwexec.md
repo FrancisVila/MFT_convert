@@ -4,14 +4,14 @@
     "weight": "3540"
 }<span id="tlvwexec"></span>
 
-### <span class="mc-variable System.Title variable">tlvwexec</span>
+### 
 
 #### CFTCAT
 
 \[ TLVWEXEC = { str1...64}
 \]
 
-Batch to execute when the TLVWARN is reached. The TLV parameters enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to
+Batch to execute when the TLVWARN is reached. The TLV parameters enable {{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical CAT threshold is reached based on a percentage of the catalog being filled, where 0% indicates empty and 100% indicates full.
 
 This
@@ -31,7 +31,7 @@ alert generates 2 actions:
 \[ TLVWEXEC = { str1...512 }
 \]
 
-Batch to execute when the TLVWARN is reached. The TLV parameters enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to
+Batch to execute when the TLVWARN is reached. The TLV parameters enable {{< TransferCFT/componentshortname  >}} to
 issue alerts when a critical COM threshold is reached based on a percentage of the communication media being filled, where 0% indicates empty and 100% indicates full.
 
 This

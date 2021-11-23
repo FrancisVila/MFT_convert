@@ -16,4 +16,4 @@ Service accounts are defined and managed in the same way as user accounts, with 
 
 The following topic describes how to export a single service account:
 
--   <a href="t_st_export_single_service_account" class="MCXref xref">Export a single service account</a> - Provides how-to instructions for exporting a single service account.
+-   [Export a single service account](t_st_export_single_service_account) - Provides how-to instructions for exporting a single service account.

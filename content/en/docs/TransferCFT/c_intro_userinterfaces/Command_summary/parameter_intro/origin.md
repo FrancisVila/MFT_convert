@@ -8,7 +8,7 @@
 
 ORIGIN = &lt;C> ('CFTUTIL','C','DESIGNER','D','COPILOT','O')
 
-This parameter indicates the origin of an object. You can use this to determine if an object was created or modified using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> (DESIGNER), CFTUTIL, or Copilot.
+This parameter indicates the origin of an object. You can use this to determine if an object was created or modified using (DESIGNER), CFTUTIL, or Copilot.
 
 To view the ORIGIN parameter, for example:
 

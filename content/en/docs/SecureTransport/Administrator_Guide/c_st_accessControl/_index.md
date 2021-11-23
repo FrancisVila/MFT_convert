@@ -10,14 +10,14 @@
 
 The following topics describe the various methods to control access to {{< SecureTransport/componentshortname  >}}:
 
--   <a href="c_st_userclasses" class="MCXref xref">User classes</a> - Describes user classes.
--   <a href="c_st_sslaccess_new" class="MCXref xref">Secure Socket Layer access</a> - Describes Secure Socket Layer access.
--   <a href="c_st_virtualgroups" class="MCXref xref">Virtual groups</a> - Describes virtual groups.
--   <a href="c_st_filesystemrestrictions" class="MCXref xref">Filesystem restrictions</a> - Lists the filesystem restrictions.
--   <a href="c_st_uploadrestrictions" class="MCXref xref">Upload restrictions</a> - Describes the upload restrictions.
--   <a href="c_st_downloadrestrictions" class="MCXref xref">Download restrictions</a> - Describes the download restrictions.
--   <a href="c_st_ftpcommandrestrictions" class="MCXref xref">FTP command restrictions</a> - Describes the FTP command restrictions.
--   <a href="c_st_administrationtoolandprotocolserveraccesscontrol" class="MCXref xref">Protocol server access control</a> - Describes the protocol server access control.
--   <a href="c_st_userlimits" class="MCXref xref">User limits</a> - Describes user limits and how to use user limits.
--   <a href="c_st_userandgroupaccess" class="MCXref xref">User and group access</a> - Describes user and group access.
--   <a href="c_st_loginrestictions" class="MCXref xref">Login restrictions</a> - Describes user login restrictions.
+-   [User classes](c_st_userclasses) - Describes user classes.
+-   [Secure Socket Layer access](c_st_sslaccess_new) - Describes Secure Socket Layer access.
+-   [Virtual groups](c_st_virtualgroups) - Describes virtual groups.
+-   [Filesystem restrictions](c_st_filesystemrestrictions) - Lists the filesystem restrictions.
+-   [Upload restrictions](c_st_uploadrestrictions) - Describes the upload restrictions.
+-   [Download restrictions](c_st_downloadrestrictions) - Describes the download restrictions.
+-   [FTP command restrictions](c_st_ftpcommandrestrictions) - Describes the FTP command restrictions.
+-   [Protocol server access control](c_st_administrationtoolandprotocolserveraccesscontrol) - Describes the protocol server access control.
+-   [User limits](c_st_userlimits) - Describes user limits and how to use user limits.
+-   [User and group access](c_st_userandgroupaccess) - Describes user and group access.
+-   [Login restrictions](c_st_loginrestictions) - Describes user login restrictions.

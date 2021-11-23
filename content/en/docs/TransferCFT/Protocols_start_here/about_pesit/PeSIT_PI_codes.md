@@ -3,7 +3,7 @@
     "linkTitle": "PeSIT PI codes",
     "weight": "160"
 }This topic provides a description for each of the PeSIT parameter identifiers, PI,
-codes used with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+codes used with {{< TransferCFT/componentshortname  >}}.
 
 ## About PeSIT PI codes
 
@@ -22,7 +22,7 @@ Furthermore, each parameter group unit is identified by a numeric code named PGI
 (Parameters Group
 Identifier).
 
-<span class="autonumber"></span>Parameter identifiers (PI) in the message body negotiate the session
+Parameter identifiers (PI) in the message body negotiate the session
 
 ![](/Images/TransferCFT/temp_PI_format.png)
 
@@ -364,7 +364,7 @@ of a transfer.
 In requester mode, this field is
 defined using the PRI parameter of the RECV and CFTRECV
 commands (for a read transfer) or of the SEND and CFTSEND
-commands (for a write transfer). In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, use the Transfer priority parameter.  
+commands (for a write transfer). In , use the Transfer priority parameter.  
 As PeSIT only recognizes three priority levels, the following conversions
 are performed:
 

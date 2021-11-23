@@ -2,9 +2,9 @@
     "title": "About access management exits",
     "linkTitle": "Exit type access management",
     "weight": "180"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> offers an access management exit in the form of a dynamic library. This library implements a set of mandatory functions described in the <span class="code">$CFTINSTALLDIR/inc/exam.h</span> file.
+{{< TransferCFT/componentshortname  >}} offers an access management exit in the form of a dynamic library. This library implements a set of mandatory functions described in the `$CFTINSTALLDIR/inc/exam.h` file.
 
 Functions include:
 
@@ -15,7 +15,7 @@ Functions include:
 -   int exam\_check\_permissions(EXAMPermission \*\*perm\_list)
 -   int exam\_check\_potential\_permissions(EXAMPermission \*\*perm\_list)
 
-To help you get started, an Access Management exit sample is delivered in: <span class="code">$CFTDIRRUNTIME/src/exit/cftexamsmp1.c</span>
+To help you get started, an Access Management exit sample is delivered in: `$CFTDIRRUNTIME/src/exit/cftexamsmp1.c`
 
 For more information, see [Delivered Access Management exit samples](am_samples).
 

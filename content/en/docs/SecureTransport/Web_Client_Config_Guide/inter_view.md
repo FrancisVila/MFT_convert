@@ -9,7 +9,7 @@
 
 The default view can be changed and a view can be disabled.
 
-To modify the view configuration, copy the `views` key from the `C/config/default.config.json` file into the `custom/stwebclient.config.json` file, and edit the custom configuration file as described in <a href="../config_files" class="MCXref xref">Configuration files</a>.
+To modify the view configuration, copy the `views` key from the `C/config/default.config.json` file into the `custom/stwebclient.config.json` file, and edit the custom configuration file as described in [Configuration files](../config_files).
 
 The view configuration is located in the `views` key.
 

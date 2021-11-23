@@ -16,10 +16,10 @@ Select **Setup &gt; TM Settings** to display *TM Settings* page.
 
 The following topics describe managing Transaction Manager rules, rules packages, and agents:
 
--   <a href="c_st_rules" class="MCXref xref">Rules</a>
--   <a href="r_st_builtinrulespackages" class="MCXref xref">Built-in rules packages</a>
--   <a href="t_st_rulespackages" class="MCXref xref">Manage rules packages</a>
--   <a href="t_st_rulespackages#CreateRulesPackage" class="MCXref xref">Create a rules package</a>
--   <a href="t_st_rulespackages#ExportRulesPackage" class="MCXref xref">Export a rules package</a>
--   <a href="t_st_rulespackages#ImportRulesPackage" class="MCXref xref">Import a rules package</a>
--   <a href="t_st_installagent" class="MCXref xref">Install agents or functions</a>
+-   [Rules](c_st_rules)
+-   [Built-in rules packages](r_st_builtinrulespackages)
+-   [Manage rules packages](t_st_rulespackages)
+-   [Create a rules package](t_st_rulespackages#CreateRulesPackage)
+-   [Export a rules package](t_st_rulespackages#ExportRulesPackage)
+-   [Import a rules package](t_st_rulespackages#ImportRulesPackage)
+-   [Install agents or functions](t_st_installagent)

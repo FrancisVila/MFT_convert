@@ -82,7 +82,7 @@ following types of transfers:
 -   Whose activation
     time slot is expired
 -   Which is interrupted,
-    in the <span style="font-weight: bold;">H</span> state (except for particular
+    in the **H** state (except for particular
     cases, see the Transfer CFT *[Codes,
     Diagnostics and Messages](../../../troubleshoot_intro/messages_and_error_codes_start_here)*) or <span style="font-weight: bold;">K</span>
     state

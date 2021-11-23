@@ -21,7 +21,7 @@ File Maintenance is not performed on the following content:
 -   Shared folders not owned by the user
 -   Files in a Shared Folder application subscription folder
 
-Before you create a File Maintenance application, make sure that the `FileMaintenanceApp` rules package is enabled in the Transaction Manager. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
+Before you create a File Maintenance application, make sure that the `FileMaintenanceApp` rules package is enabled in the Transaction Manager. For more information, see [Manage rules packages](../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable).
 
 Use the following procedure to create a File Maintenance application.
 
@@ -30,13 +30,13 @@ Use the following procedure to create a File Maintenance application.
 
 2.  Select **File Maintenance** from the mandatory **Application Type** list.
 
-3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
+3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).  
 
     > **Note:**
     >
     > The application name cannot include any forward slash (/) characters.
 
-4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units to the application. The **Business Unit List** contains the names of the business units you have <a href="../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756" class="MCXref xref">Business units</a>. To create a global policy, do not assign a business unit.  
+4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units to the application. The **Business Unit List** contains the names of the business units you have [Business units](../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756). To create a global policy, do not assign a business unit.  
 
     > **Note:**
     >
@@ -46,7 +46,7 @@ Use the following procedure to create a File Maintenance application.
 
 6.  In the *Purge settings* pane:  
     1.  In the **Delete all files older than** field, specify the number of days files should be retained in the account home folder. This field is mandatory.  
-        You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.
+        You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).
 
     2.  Select the **Only if file name matches pattern** check box and specify a file name pattern to identify files to be deleted.
 
@@ -61,21 +61,21 @@ Use the following procedure to create a File Maintenance application.
 7.  (Optional) In the *Purge notifications* pane, select the notification method and threshold:  
     1.  Select the **Send to Sentinel Alert** check box to enable sending of a *TO\_BE\_DELETED* state to Sentinel. To avoid event redundancy, even if the application is configured to run several times a day, only one *TO\_BE\_DELETED* state will be sent to Sentinel.
     2.  Select **Send email notifications** to enable the sending of email notifications. Then, specify the contents and the recipients of the notification:  
-        -   Select the **Email Template** from the drop-down to be used for the pending file deletion email. For details on configuring email templates, see <a href="../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+        -   Select the **Email Template** from the drop-down to be used for the pending file deletion email. For details on configuring email templates, see [Mail templates](../../c_st_setup/t_st_mailtemplates).
         -   Select the **To account email** to send a pending file deletion notification to the account's email address. The user will receive one email per day containing all files pending for deletion.
         -   Select **To (comma-separated list of emails)** to add a list of email address to which the notification to be sent. The notification will contain all files pending for deletion files per each account. It will be sent upon each execution of the application. This option is not available at the account level.
     3.  In the **Threshold** field, specify the file age, after which a notification to be send. This field is active only after a notification method is selected. The threshold value should be either a positive integer less than the one specified in **Delete all files older than** or a comma-separated list of positive integers.
 
 8.  In the *Deleted files notifications*, select **Send email notifications for deleted files** to enable the sending of an email report on deleted files. Then, specify the contents and the recipients of the notification:  
-    1.  Select the **Email Template** from the menu to be used for file deletion reports. For details on configuring email templates, see <a href="../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+    1.  Select the **Email Template** from the menu to be used for file deletion reports. For details on configuring email templates, see [Mail templates](../../c_st_setup/t_st_mailtemplates).
     2.  Select **To account email** to send a list of the deleted files to the account email. The notification is sent once per day, even if the application is configured to run several times a day. This setting can be overridden at a business unit level only.
     3.  Select **To (comma-separated list of emails)** to add a list of email addresses to which the notification to be sent. A notification is sent upon each execution of the application and contains all the files deleted files per account. This option is not available at the account level.
 
-9.  (Optional) In the *Schedule* pane, click **Configure** to<a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+9.  (Optional) In the *Schedule* pane, click **Configure** to[Configure a schedule for a maintenance application](#ConfigureMaintSchedule).
 
-10. (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+10. (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 
 11. Click **Create Application**.
 
   
-See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow shortcuts to other applications you need to create or configure.
+See parent topic: [Applications](../) and follow shortcuts to other applications you need to create or configure.

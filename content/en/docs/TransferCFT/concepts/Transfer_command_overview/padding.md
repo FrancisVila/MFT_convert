@@ -26,7 +26,7 @@ When using a variable format, FPAD and NPAD define the character to use to unpad
 
 ## Parameters
 
-<span class="code">FPAD = character</span>
+`FPAD = character`
 
 This parameter defines the padding character at the file level.
 
@@ -66,7 +66,7 @@ In the SEND profile (CFTSEND object) specify:
 
     Axway
     Transfer CFT
-    v3.9
+    v
 
 File sent over the network, when nlrecl=20:
 
@@ -88,7 +88,7 @@ Input file when flrecl=20:
 
     Transfer CFT@@@@@@@@
 
-    v3.9@@@@@@@@@@@@@@
+    v@@@@@@@@@@@@@@
 
 File sent over the network:
 
@@ -96,7 +96,7 @@ File sent over the network:
 
     Axway
     Transfer CFT
-    v3.9
+    v
 
 #### Example of padding a variable format file on the receiver side
 
@@ -115,7 +115,7 @@ File received from the network:
 
     Axway
     Transfer CFT
-    v3.9
+    v
 
 **Output file**
 
@@ -123,7 +123,7 @@ File received from the network:
 
     Axway@@@@@@@@@@@@@@@
     Transfer CFT@@@@@@@@
-    v3.9@@@@@@@@@@@@@@
+    v@@@@@@@@@@@@@@
 
 #### Example of unpadding a fixed format file on the receiver side
 
@@ -141,7 +141,7 @@ File received from the network
 
     Axway@@@@@@@@@@@@@@@
     Transfer CFT@@@@@@@@
-    v3.9@@@@@@@@@@@@@@
+    v@@@@@@@@@@@@@@
 
 Output file
 
@@ -149,4 +149,4 @@ Output file
 
     Axway
     Transfer CFT
-    v3.9
+    v

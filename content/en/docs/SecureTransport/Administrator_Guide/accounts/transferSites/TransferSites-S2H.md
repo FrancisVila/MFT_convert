@@ -7,7 +7,7 @@
 A recipient of a notification email retrieves the file based on the security level specified. In some cases, the recipient clicks a link in the notification email to retrieve the file. In other words, the recipient must log in to ST Web Client or one of the {{< SecureTransport/companyname  >}} Email Plug-ins and the user logs in to {{< SecureTransport/componentshortname  >}} to retrieve the files. The notification email is from the email address specified in the **Email Contact** field of the user settings. If the email is not set, the If the security level allows, {{< SecureTransport/componentshortname  >}} enrolls the user, creating an account.
 
 You can use hardcoded values, expressions in the supported expression language, or a
-combination of both to complete the fields indicated by a vertical yellow bar. For more information about expressions, see <a href="../../../c_st_expressionlanguage" class="MCXref xref">Expression Language</a>.
+combination of both to complete the fields indicated by a vertical yellow bar. For more information about expressions, see [Expression Language](../../../c_st_expressionlanguage).
 
 The following table describes the System to Human options for a transfer site.
 
@@ -78,13 +78,13 @@ Days, and Never.         </td>
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [Manage transfer sites](../t_st_transfersites)

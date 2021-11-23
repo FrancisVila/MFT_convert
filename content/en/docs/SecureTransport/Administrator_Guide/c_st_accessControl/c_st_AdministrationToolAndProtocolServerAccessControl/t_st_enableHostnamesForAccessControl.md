@@ -12,13 +12,13 @@ To enable DNS lookups for FTP, HTTP, and SSH servers, use **Reverse DNS Lookups*
 
 The following topics provide how-to instructions for enabling reverse DNS lookups:
 
--   <a href="#Enable_Admin" class="MCXref xref">Enable reverse DNS lookups for the Administration Tool server</a>
--   <a href="#Enable_FTP" class="MCXref xref">Enable reverse DNS lookups for the FTP, HTTP, or SSH server</a>
+-   [Enable reverse DNS lookups for the Administration Tool server](#Enable_Admin)
+-   [Enable reverse DNS lookups for the FTP, HTTP, or SSH server](#Enable_FTP)
 
 **Related topics:**
 
--   <a href="../c_st_access_rule_order" class="MCXref xref">Access rule order</a>
--   <a href="../t_st_administrationtoolandprotocolserveraccess" class="MCXref xref">Manage protocol server access</a>
+-   [Access rule order](../c_st_access_rule_order)
+-   [Manage protocol server access](../t_st_administrationtoolandprotocolserveraccess)
 
 <span id="Enable_Admin"></span>
 

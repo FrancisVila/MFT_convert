@@ -57,8 +57,8 @@ Repeat the same steps for all other {{< SecureTransport/componentshortname  >}} 
 
 **Related Topics:**
 
--   <a href="../standalone-mysql" class="MCXref xref">Standalone installation with embedded database</a>
--   <a href="../standalone-ext-db" class="MCXref xref">Standalone with External Database</a>
--   <a href="../standard-cluster-mysql" class="MCXref xref">Standard Cluster environment with embedded database</a>
--   <a href="../edge-mysql" class="MCXref xref">Edge installation with Embedded Database</a>
--   <a href="../edge-synced-mysql" class="MCXref xref">Edge installation with Embedded Database when part of a synchronized cluster</a>
+-   [Standalone installation with embedded database](../standalone-mysql)
+-   [Standalone with External Database](../standalone-ext-db)
+-   [Standard Cluster environment with embedded database](../standard-cluster-mysql)
+-   [Edge installation with Embedded Database](../edge-mysql)
+-   [Edge installation with Embedded Database when part of a synchronized cluster](../edge-synced-mysql)

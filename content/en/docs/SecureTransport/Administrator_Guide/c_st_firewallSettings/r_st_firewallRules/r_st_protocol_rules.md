@@ -244,7 +244,7 @@ For outbound AS2 transfers or asynchronous MDN receipts for inbound AS2 transfer
 
 For internal users to upload or download files to {{< SecureTransport/componentshortname  >}}, they must log into the {{< SecureTransport/componentshortname  >}} Server directly using HTTP(S) or FTP(S). So those ports from the secure network to the {{< SecureTransport/componentshortname  >}} Server must be open. In some installations, access is only through a proxy. In this case secure network requires access to the Proxy server.
 
-Both FTP and FTPS use port 20 for the data channel in active mode. If preferred, you can define a passive-port range instead, and set up a similar rule for that range of ports. Both FTP and FTPS use port 21 for the control channel. For more details, see <a href="../../../c_st_troubleshootcommonproblems/t_st_ftpdoesnotworkthroughfirewall/c_st_passive_port_range_is_not_defined_in_firewall#Appendix_Troubleshooting_4259246568_1028083" class="MCXref xref">Passive port range is not defined in the firewall</a>.
+Both FTP and FTPS use port 20 for the data channel in active mode. If preferred, you can define a passive-port range instead, and set up a similar rule for that range of ports. Both FTP and FTPS use port 21 for the control channel. For more details, see [Passive port range is not defined in the firewall](../../../c_st_troubleshootcommonproblems/t_st_ftpdoesnotworkthroughfirewall/c_st_passive_port_range_is_not_defined_in_firewall#Appendix_Troubleshooting_4259246568_1028083).
 
 HTTP access is optional. To disable HTTP, do not define rule 4.
 
@@ -252,10 +252,10 @@ If the SMTP server that handles ad hoc file transfer email notifications from ST
 
 **Related topics:**
 
--   <a href="../r_st_authentication_rules" class="MCXref xref">Authentication rules</a>
--   <a href="../r_st_administration_rules" class="MCXref xref">Administration rules</a>
--   <a href="../r_st_tm_server_communication_rules" class="MCXref xref">TM server communication rules</a>
--   <a href="../r_st_server_transfer_rules" class="MCXref xref">Server transfer rules</a>
--   <a href="../r_st_standard_clustering_rules" class="MCXref xref">Standard Cluster rules</a>
--   <a href="../r_st_large_enterprise_clustering_rules" class="MCXref xref">Enterprise Cluster rules</a>
--   <a href="../r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a>
+-   [Authentication rules](../r_st_authentication_rules)
+-   [Administration rules](../r_st_administration_rules)
+-   [TM server communication rules](../r_st_tm_server_communication_rules)
+-   [Server transfer rules](../r_st_server_transfer_rules)
+-   [Standard Cluster rules](../r_st_standard_clustering_rules)
+-   [Enterprise Cluster rules](../r_st_large_enterprise_clustering_rules)
+-   [Protocol rules - outbound from SecureTransport Edge](../r_st_protocol_rules_outbound)

@@ -9,4 +9,4 @@
 > Tip  
 > Existing Transfer CFT users may want to refer to the Transfer CFT to Central Governance parameter mapping in the sections see Flow definition: Target and Flow definition: Source.
 
-<span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

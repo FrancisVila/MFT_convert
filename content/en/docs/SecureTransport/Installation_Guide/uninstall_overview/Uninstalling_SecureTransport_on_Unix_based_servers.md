@@ -91,7 +91,7 @@ If you are uninstalling from the {{< SecureTransport/companyname  >}} appliance,
                                     Uninstalled from <FILEDRIVEHOME>
         -------------------------------------------------------------------
 
-7.  If you were running {{< SecureTransport/componentshortname >}} as a service, as described in <a href="../../install_overview/installing_on_unix_based_platforms/running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>:
+7.  If you were running {{< SecureTransport/componentshortname >}} as a service, as described in [Run SecureTransport as a service on UNIX-based platforms after non-root installation](../../install_overview/installing_on_unix_based_platforms/running_st_as_service_unix):
     -   On AIX:
         1.  Remove `/etc/rc.stransport.`
         2.  Edit `/etc/rc.tcpip` and delete the `[ -f /etc/rc.stransport ] && sh /etc/rc.stransport start` line.

@@ -30,7 +30,7 @@ An application is defined as an instance of a set of workflow called an *applica
 -   **[**Human to System**](applicationsh2s)** – Provides a way to route H2S file transfers.
 -   **[Log Entry Maintenance](applicationslogentrymaintenance)** – Automatically deletes Server log records that are older than a specified number of days, hours or minutes (1 day by default). You can schedule how often to run this application and configure it to optionally export these records prior to deletion.
 -   **[Login Threshold Maintenance](applicationsloginthresholdmaintenance)** – Unlocks accounts locked according to the selected "Lock account after N successful logins" option in the *Account settings* and sends a report to specified email contacts.  
-    See <a href="applicationsloginthresholdmaintenance" class="MCXref xref">Login Threshold Maintenance application</a>.
+    See [Login Threshold Maintenance application](applicationsloginthresholdmaintenance).
 -   **[**Package Retention Maintenance**](applicationspackageretentionmaintenance)** – Deletes expired file packages from ad hoc file transfers.
 -   **[Shared Folder](applicationssharedfolder)** – Provides shared data storage between accounts.
 -   **[**Site Mailbox**](applicationssitemailbox)** – Similar to Basic application, however with dedicated outbox and inbox folders for files transfers using a transfer site. This application is recommended for AS2 transfer sites.
@@ -94,28 +94,28 @@ Before queuing a new task, the server checks if a previous instance of same peri
 
 If the server goes down for some time and restarts, the scheduler does not execute any scheduled tasks missed during the server down time.
 
-For information on scheduling file downloads, see <a href="../accounts/c_st_subscriptions/t_st_subscriptions#Schedule" class="MCXref xref">Scheduled downloads and tasks</a>.
+For information on scheduling file downloads, see [Scheduled downloads and tasks](../accounts/c_st_subscriptions/t_st_subscriptions#Schedule).
 
 ## Create applications
 
 Every application in {{< SecureTransport/componentshortname  >}} must be based on an application type. Currently, {{< SecureTransport/componentshortname  >}} supports multiple application types. Learn how to create applications of each application type:
 
--   <a href="applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
--   <a href="applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
--   <a href="applicationsauditlogmaintenance#top" class="MCXref xref">Audit Log Maintenance application</a>
--   <a href="applicationssentinellinkdatamaintenance" class="MCXref xref">Axway Sentinel Link Data Maintenance application</a>
--   <a href="applicationstransfercft" class="MCXref xref">Axway Transfer CFT application</a>
--   <a href="applicationsbasic" class="MCXref xref">Basic Application</a>
--   <a href="applicationstransferfileservicesinterface" class="MCXref xref">File Transfer via File Services Interface application</a>
--   <a href="applicationsh2s" class="MCXref xref">Human to System application</a>
--   <a href="applicationslogentrymaintenance" class="MCXref xref">Log Entry Maintenance application</a>
--   <a href="applicationsloginthresholdmaintenance" class="MCXref xref">Login Threshold Maintenance application</a>
--   <a href="applicationspackageretentionmaintenance" class="MCXref xref">Package Retention Maintenance application</a>
--   <a href="applicationssharedfolder" class="MCXref xref">Shared Folder application</a>
--   <a href="applicationssitemailbox" class="MCXref xref">Site Mailbox application</a>
--   <a href="applicationsstandardrouter" class="MCXref xref">Standard Router application</a>
--   <a href="applicationstransferlogmaintenance" class="MCXref xref">Transfer Log Maintenance application</a>
--   <a href="applicationsunlicensedacctsmaintenance" class="MCXref xref">Unlicensed Accounts Maintenance application</a>
--   <a href="applicationsfilemaintenance" class="MCXref xref">File Maintenance application</a>
+-   [Archive Maintenance application](applicationsarchivemaintenance)
+-   [Archive Maintenance application](applicationsarchivemaintenance)
+-   [Audit Log Maintenance application](applicationsauditlogmaintenance#top)
+-   [Axway Sentinel Link Data Maintenance application](applicationssentinellinkdatamaintenance)
+-   [Axway Transfer CFT application](applicationstransfercft)
+-   [Basic Application](applicationsbasic)
+-   [File Transfer via File Services Interface application](applicationstransferfileservicesinterface)
+-   [Human to System application](applicationsh2s)
+-   [Log Entry Maintenance application](applicationslogentrymaintenance)
+-   [Login Threshold Maintenance application](applicationsloginthresholdmaintenance)
+-   [Package Retention Maintenance application](applicationspackageretentionmaintenance)
+-   [Shared Folder application](applicationssharedfolder)
+-   [Site Mailbox application](applicationssitemailbox)
+-   [Standard Router application](applicationsstandardrouter)
+-   [Transfer Log Maintenance application](applicationstransferlogmaintenance)
+-   [Unlicensed Accounts Maintenance application](applicationsunlicensedacctsmaintenance)
+-   [File Maintenance application](applicationsfilemaintenance)
 
-For instructions on creating an {{< SecureTransport/advancedrouting  >}} application, see <a href="../c_st_advanced_routing/c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+For instructions on creating an {{< SecureTransport/advancedrouting  >}} application, see [Create Advanced Routing application](../c_st_advanced_routing/c_st_configuration/t_st_create_advanced_routing_application).

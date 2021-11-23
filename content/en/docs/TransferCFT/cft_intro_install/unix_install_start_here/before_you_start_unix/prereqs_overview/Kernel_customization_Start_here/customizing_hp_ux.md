@@ -20,7 +20,7 @@ of the *msgtql* kernel parameter to 8192.
 To customize the message queue:
 
 1.  Log in as the root and enter
-    the <span style="font-family: 'Courier New', monospace;">sam</span> command.
+    the command.
 2.  Select the following sub-menus,
     respectively:
     -   Kernel
@@ -51,11 +51,11 @@ To customize the message queue:
 ## Modify the number of files used by a process
 
 By default, HP-UX allows a process to open only 64 files. To customize
-this information, increase the value of the <span style="font-family: 'Courier New', monospace;">maxfiles</span>
+this information, increase the value of the
 kernel parameter to 1024. To do so:
 
 1.  Log in as the *root* and
-    enter the <span style="font-family: 'Courier New', monospace;">sam</span>
+    enter the
     command.
 2.  Select the following sub-menus:
     -   Kernel
@@ -65,7 +65,7 @@ kernel parameter to 1024. To do so:
 3.  Set the pointer to the *maxfiles*
     parameter.
 4.  Select the *Modify
-    Configurable Parameter* option in the <span style="font-weight: bold;">Actions</span>
+    Configurable Parameter* option in the **Actions**
     menu.
 5.  Enter the new value for this
     parameter.

@@ -17,11 +17,11 @@ You can control this behavior by setting the following parameters for each serve
 
 **Related topics:**
 
--   <a href="../r_st_log4j_files" class="MCXref xref">Log4j files</a>
--   <a href="../c_st_database_log_files" class="MCXref xref">Database log files</a>
--   <a href="../c_st_ftpd_log_file" class="MCXref xref">FTPD log file</a>
--   <a href="../c_st_admin_log_file" class="MCXref xref">Admin log file</a>
--   <a href="../c_st_general_log_files" class="MCXref xref">General log files</a>
--   <a href="../t_st_change_log4j_files" class="MCXref xref">Modify the log4j files</a>
--   <a href="../t_st_redirect_log4j_output_from_database" class="MCXref xref">Redirect log4j output from the database</a>
--   <a href="../t_st_server_log_rotation_scheduling" class="MCXref xref">Server log rotation and monitor scheduling</a>
+-   [Log4j files](../r_st_log4j_files)
+-   [Database log files](../c_st_database_log_files)
+-   [FTPD log file](../c_st_ftpd_log_file)
+-   [Admin log file](../c_st_admin_log_file)
+-   [General log files](../c_st_general_log_files)
+-   [Modify the log4j files](../t_st_change_log4j_files)
+-   [Redirect log4j output from the database](../t_st_redirect_log4j_output_from_database)
+-   [Server log rotation and monitor scheduling](../t_st_server_log_rotation_scheduling)

@@ -5,8 +5,8 @@
 }<span id="Activating_an_exit_command_line"></span>This topic describes the
 CFTEXIT command, used to start an EXIT task.
 
-<span style="color: #800000;font-weight: bold;text-decoration: underline;">Related
-topics</span>
+**Related
+topics**
 
 -   Command syntax
     [CFTEXIT](../../../command_summary#CFTEXIT)

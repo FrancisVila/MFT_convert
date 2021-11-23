@@ -2,7 +2,7 @@
     "title": "Security Server (SECS) architecture",
     "linkTitle": "Security Server",
     "weight": "150"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 TLS/SSL and SSH protocol implementation is divided into three parts:
 
@@ -10,7 +10,7 @@ TLS/SSL and SSH protocol implementation is divided into three parts:
 -   [SSH protocol](../ssh_protocol_about)
 -   Security server
 
-As shown in the illustration below, TLS/SSL and SSH protocols are implemented in the network entity so that they are transparent for application protocols. The independent <span style="font-weight: bold;">Security server</span> (or <span style="font-weight: bold;">SECS</span>) groups the security elements in its database to perform the tasks relating to remote communicating partner mutual authentication (providing/verifying certificates, signing, encrypting/decrypting data). The Security server can operate using an internal manager or external exits.
+As shown in the illustration below, TLS/SSL and SSH protocols are implemented in the network entity so that they are transparent for application protocols. The independent **Security server** (or <span style="font-weight: bold;">SECS</span>) groups the security elements in its database to perform the tasks relating to remote communicating partner mutual authentication (providing/verifying certificates, signing, encrypting/decrypting data). The Security server can operate using an internal manager or external exits.
 
 ### Security Implementation within Gateway
 

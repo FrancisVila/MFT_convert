@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[RETRYM = {<span style="text-decoration: underline;">12</span>
+\[RETRYM = {
 | 0...32767 } \]
 
 Use this field to specify the maximum number of reconnection attempts.

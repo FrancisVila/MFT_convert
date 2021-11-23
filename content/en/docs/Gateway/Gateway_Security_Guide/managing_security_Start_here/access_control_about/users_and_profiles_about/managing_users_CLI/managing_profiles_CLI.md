@@ -2,17 +2,17 @@
     "title": "Working with Profiles (command line)",
     "linkTitle": "Working with Profiles",
     "weight": "200"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-<span class="code" style="font-weight: bold;">[peladm create\_profile](#peladm_create_profile)</span>
+`peladm create_profile`
 
-<span class="code" style="font-weight: bold;">[peladm update\_profile](#peladm_update_profile)</span>
+`peladm update_profile`
 
-<span class="code" style="font-weight: bold;">[peladm delete\_profile](#peladm_delete_profile)</span>
+`peladm delete_profile`
 
-<span class="code" style="font-weight: bold;">[peldsp select\_profile](#peldsp_select_profile)</span>
+`peldsp select_profile`
 
-<span class="code" style="font-weight: bold;">[peldsp display\_profile](#peldsp_display_profile)</span>
+`peldsp display_profile`
 
 <span id="peladm_create_profile"></span>
 
@@ -26,13 +26,13 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><p>peladm create_profile (-profile)<span style="font-weight: normal;"> [optional parameters, see below]</span></p>         </td>
+         <td><p>peladm create_profile (-profile)</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
          <td><p>This command reserved for administrators only.</p>
 <p>Use this command to create a new access Profile.</p>
-<p>Each access parameter can contain any combination of the letters <span style="font-weight: bold;">R</span>, <span style="font-weight: bold;">W</span>, <span style="font-weight: bold;">U</span>, <span style="font-weight: bold;">D</span> and <span style="font-weight: bold;">A</span> as described below. If an access type letter is specified, that type of access is granted. Otherwise it is denied.</p>
+<p>Each access parameter can contain any combination of the letters <strong>R</strong>, <span style="font-weight: bold;">W</span>, <span style="font-weight: bold;">U</span>, <span style="font-weight: bold;">D</span> and <span style="font-weight: bold;">A</span> as described below. If an access type letter is specified, that type of access is granted. Otherwise it is denied.</p>
 <p>All parameters apart from <span class="code">profile</span> are optional.</p>         </td>
       </tr>
       <tr>

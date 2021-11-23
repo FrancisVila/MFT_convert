@@ -29,18 +29,18 @@ The following illustration features 3 Transfer CFTs, where the protocol may be t
 
 ## Restrictions
 
--   You cannot use a distribution list on the relay site when using <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> or <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+-   You cannot use a distribution list on the relay site when using {{< TransferCFT/flowmanager >}} or {{< TransferCFT/centralgovernancename >}}.
 
 <!-- -->
 
--   <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> store and forward mode is only possible from a requester/sender (write transfers only, not read).
+-   {{< TransferCFT/componentlongname >}} store and forward mode is only possible from a requester/sender (write transfers only, not read).
 
 ## Store and forward mode protocols
 
 To route a file transfer, you must identify the partners involved
 in the transfer, the initial sender and final receiver of the transfer.
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports the following protocols for store and forward operations:
+{{< TransferCFT/componentlongname  >}} supports the following protocols for store and forward operations:
 
 -   PeSIT
 -   Odette (OFTP)
@@ -55,11 +55,11 @@ See the SEND TYPE = [MESSAGE](../../using_the_send_command/send_messages_cl) com
 
 ## Using store and forward with Flow Manager
 
-If you are using <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> or <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> to manage your Transfer CFT flows, the store and forward functionality may also be referred to as a relay in the flow. Please refer to the [Transfer CFT store and forward](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/transfer_cft_store_and_forward.html) page in the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>.
+If you are using {{< TransferCFT/flowmanager  >}} or {{< TransferCFT/centralgovernancename  >}} to manage your Transfer CFT flows, the store and forward functionality may also be referred to as a relay in the flow. Please refer to the [Transfer CFT store and forward](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/transfer_cft_store_and_forward.html) page in the {{< TransferCFT/flowmanager  >}} {{< TransferCFT/doctypeuser  >}}.
 
-## Using store and forward with standalone <span class="mc-variable Primary.Transfer_CFT_plural variable">Transfer CFTs</span>
+## Using store and forward with standalone
 
-If you are using <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> without additional governance, you can manage store and forward as described below.
+If you are using {{< TransferCFT/transfercftname  >}} without additional governance, you can manage store and forward as described below.
 
 ### Setting the COMMUT value
 
@@ -69,7 +69,7 @@ is associated with the sending partner that is defined on the store and
 forward site.
 
 Depending on the value of this parameter, the processing performed by
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> on the store and forward site is as follows:
+the {{< TransferCFT/componentshortname  >}} on the store and forward site is as follows:
 
 <table>
    <thead>
@@ -120,7 +120,7 @@ There are two ways for the sender to initiate a store and forward transfer:
 
 <!-- -->
 
--   <span class="code">send part=&lt;FINAL PARTNER>, ipart=&lt;RELAY>,...</span>
+-   `send part=<FINAL PARTNER>, ipart=<RELAY>,...`
 
 <span id="Store_and_forward_sites"></span>
 
@@ -178,7 +178,7 @@ Processing possibilities in the store and forward mode
 
 ### Forced store and forward processing with COMMUT=PART
 
-<span class="bold_in_para">PeSIT protocol only</span>
+**PeSIT protocol only**
 
 You can use the use this option to force a store and forward on an intermediate site without knowing the final partner.
 
@@ -201,9 +201,9 @@ The REPLY command can be sent when the end-of-transfer procedure is executed (E
 
 ### Store and forward processing by a VAN server with COMMUT=SERVER
 
-Once the file is received, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not immediately forward
+Once the file is received, {{< TransferCFT/componentshortname  >}} does not immediately forward
 the file. User processing may first be performed on the file on the Value Added Network (VAN server). In
-particular, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> activates the end of transfer procedure if one is defined.
+particular, {{< TransferCFT/componentshortname  >}} activates the end of transfer procedure if one is defined.
 
 The IDF of the received transfer is deduced from the NIDF sent by the
 sender.

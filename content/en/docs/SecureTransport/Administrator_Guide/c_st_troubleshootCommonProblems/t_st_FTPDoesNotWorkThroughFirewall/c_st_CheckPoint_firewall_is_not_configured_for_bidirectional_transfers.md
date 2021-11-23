@@ -13,5 +13,5 @@ Check Point firewalls need to be configured to use bidirectional transfers. In t
 
 **Related topics:**
 
--   <a href="../c_st_firewall_rules_prevent_port_from_opening" class="MCXref xref">Firewall rules prevent the port from opening</a>
--   <a href="../c_st_passive_port_range_is_not_defined_in_firewall" class="MCXref xref">Passive port range is not defined in the firewall</a>
+-   [Firewall rules prevent the port from opening](../c_st_firewall_rules_prevent_port_from_opening)
+-   [Passive port range is not defined in the firewall](../c_st_passive_port_range_is_not_defined_in_firewall)

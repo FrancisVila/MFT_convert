@@ -14,7 +14,7 @@
 
 The uploaded file triggers Route 1 and Route 2 in the specified order. The execution of Route 1 compresses the original file and routes the transformed (compressed) file to an account for publishing. The execution of Route 2 compresses the original file, PGP encrypts the compressed file, and routes the transformed (compressed and PGP encrypted) file to a partner transfer site.
 
-Each route works with a copy of the original file. During the route execution the copy of the original file is passed from step to step. See <a href="" class="MCXref xref">Transformed file as the input to the next step</a> for more information.
+Each route works with a copy of the original file. During the route execution the copy of the original file is passed from step to step. See [Transformed file as the input to the next step]() for more information.
 
 > **Note:**
 >
@@ -26,9 +26,9 @@ Each route works with a copy of the original file. During the route execution th
 
 **Related topics:**
 
--   <a href="../c_st_inherited_versus_specific" class="MCXref xref">Inherited settings versus Specific settings</a>
--   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
--   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
--   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>
--   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>
+-   [Inherited settings versus Specific settings](../c_st_inherited_versus_specific)
+-   [Skipped transformation](../c_st_skipped_transformation)
+-   [Transformation on multiple files](../c_st_transformation_on_multiple_files)
+-   [Route failure](../c_st_route_failure)
+-   [Transformed file as the input to the next step]()
+-   [Routing to multiple transfer sites](../c_st_routing_to_multiple_transfer_sites)

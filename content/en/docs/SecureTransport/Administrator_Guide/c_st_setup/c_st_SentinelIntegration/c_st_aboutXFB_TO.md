@@ -17,12 +17,12 @@ The attributes contained in a tracked object fall into one of two categories:
 
 **Related topics:**
 
--   <a href="../r_st_sentineleventstates" class="MCXref xref">Event states</a>
--   <a href="../r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>
--   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
--   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
--   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
--   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
--   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
--   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>
+-   [Event states](../r_st_sentineleventstates)
+-   [Axway Sentinel tracked objects](../r_st_sentineltrackedobjects)
+-   [PeSIT protocol](../r_st_pesit_protocol)
+-   [List of PeSIT states](../r_st_listofpesitstates)
+-   [XFB Tracked Object attributes](../r_st_xfb_toattributes)
+-   [CycleId calculation](../r_st_cycleid)
+-   [Axway Sentinel dashboards]()
+-   [Axway Sentinel requests](../r_st_sentinelrequests)
+-   [Configure SecureTransport to send events to Axway Sentinel](../t_st_sentinel)

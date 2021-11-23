@@ -11,8 +11,8 @@
 
 **Related topics:**
 
--   <a href="../t_st_ftpservermessages" class="MCXref xref">FTP server messages</a>
--   <a href="../t_st_ftpactivemode" class="MCXref xref">Set up FTP active mode</a>
--   <a href="../t_st_ftppassivemode" class="MCXref xref">Set up FTP passive mode</a>
--   <a href="../r_st_ftpserverlimitations" class="MCXref xref">FTP server limitations</a>
--   <a href="../t_st_increaseftptimeout" class="MCXref xref">Increase the timeout for large files using server-initiated transfer</a>
+-   [FTP server messages](../t_st_ftpservermessages)
+-   [Set up FTP active mode](../t_st_ftpactivemode)
+-   [Set up FTP passive mode](../t_st_ftppassivemode)
+-   [FTP server limitations](../r_st_ftpserverlimitations)
+-   [Increase the timeout for large files using server-initiated transfer](../t_st_increaseftptimeout)

@@ -12,7 +12,7 @@
 
 The timeout for internal communication between Transfer CFT
 tasks, which can be any
-value from <span style="font-weight: bold;">1</span> to <span style="font-weight: bold;">32767</span> seconds.
+value from **1** to <span style="font-weight: bold;">32767</span> seconds.
 
 Default values per operating system:
 

@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -510,7 +510,7 @@ is set to KEEP.</p>         </td>
          <td><p>Check the Transfer
 <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">CFT parameter
 settings</a>.</p>
-<p>Check the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter settings.</p>         </td>
+<p>Check the {{< TransferCFT/componentshortname  >}} parameter settings.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -572,7 +572,7 @@ declare an implicit send in the Transfer <a href="../../../c_intro_userinterface
 parameter settings</a>.</p>
 <p>Prepare
 a transfer (SEND state=hold) or
-declare an implicit send in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter settings.</p>         </td>
+declare an implicit send in the {{< TransferCFT/componentshortname  >}} parameter settings.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -630,7 +630,7 @@ is set to KEEP.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check the
 <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro">Transfer CFT parameter</a> settings.</p>
-<p>Check the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter setting.</p>         </td>
+<p>Check the {{< TransferCFT/componentshortname  >}} parameter setting.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -1937,7 +1937,7 @@ by the engineers responsible for this file EXIT.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} license keys support either a limited or unlimited number of partners. The transfer is treated as if the partner does not exist.         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -1945,7 +1945,7 @@ by the engineers responsible for this file EXIT.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
-         <td>In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an <span class="mc-variable axway_variables.Company_Name variable">Axway</span> sales representative.         </td>
+         <td>In a command line window, you can enter the command CFTUTIL ABOUT to check the number of partners that your license key authorizes. For additional information on license keys, contact an {{< TransferCFT/companyname  >}} sales representative.         </td>
       </tr>
    </tbody>
 </table>

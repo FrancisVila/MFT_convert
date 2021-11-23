@@ -8,7 +8,7 @@ protocol, the indication appears in brackets.
 In the case of the PeSIT protocol, this code forms part of the "eNNsNN"-type
 PeSIT DIAGP.
 
-<span class="autonumber"></span>Event Codes for all protocols
+Event Codes for all protocols
 
 <table>
    <thead>
@@ -20,11 +20,11 @@ PeSIT DIAGP.
    <tbody>
       <tr>
          <td><p>00</p>         </td>
-         <td><p>VFABORTD - Transfer abort request by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </td>
+         <td><p>VFABORTD - Transfer abort request by {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
          <td><p>01</p>         </td>
-         <td><p>VFCAND - Transfer interrupt request by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </td>
+         <td><p>VFCAND - Transfer interrupt request by {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
          <td><p>02</p>         </td>

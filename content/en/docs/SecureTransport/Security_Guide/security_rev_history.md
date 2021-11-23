@@ -19,23 +19,23 @@ The following changes are added to the {{< SecureTransport/securetransportname  
       <tr>
          <td>5.5 September 2021 Update         </td>
          <td><ul>
-<li><p><a href="../c_secgd_config_intro/enable-tls13" class="MCXref xref">Enable TLSv1.3 protocol support in SecureTransport</a> topic added</p></li>
-<li><p><a href="" class="MCXref xref">Ciphers and cipher suites</a> updated with TLSv1.3 cipher suites</p></li>
+<li><p><a href="../c_secgd_config_intro/enable-tls13">Enable TLSv1.3 protocol support in SecureTransport</a> topic added</p></li>
+<li><p><a href="">Ciphers and cipher suites</a> updated with TLSv1.3 cipher suites</p></li>
 </ul>         </td>
       </tr>
       <tr>
          <td>5.5 June 2021 Update         </td>
-         <td><a href="../c_secgd_config_intro/security_policies" class="MCXref xref">Security-related HTTP headers and policies</a> updated with details on how to enable CSRF token protection         </td>
+         <td><a href="../c_secgd_config_intro/security_policies">Security-related HTTP headers and policies</a> updated with details on how to enable CSRF token protection         </td>
       </tr>
       <tr>
          <td>5.5 January 2021 Update         </td>
-         <td>New topic added: <a href="../c_secgd_config_intro/security_policies" class="MCXref xref">Security-related HTTP headers and policies</a>         </td>
+         <td>New topic added: <a href="../c_secgd_config_intro/security_policies">Security-related HTTP headers and policies</a>         </td>
       </tr>
       <tr>
          <td>5.5 October 2020 Update         </td>
          <td><ul>
-<li><a href="" class="MCXref xref">Ciphers and cipher suites</a> updated</li>
-<li><a href="../c_secgd_config_intro/c_secgd_config_secbydefault" class="MCXref xref">Secure by default configuration</a> updated</li>
+<li><a href="">Ciphers and cipher suites</a> updated</li>
+<li><a href="../c_secgd_config_intro/c_secgd_config_secbydefault">Secure by default configuration</a> updated</li>
 </ul>         </td>
       </tr>
       <tr>

@@ -4,10 +4,10 @@
     "weight": "290"
 }The following topics provide the overview, prerequisites, configuration steps, and flow of events for the Decompress and Send To Partner with trigger file output use case:
 
--   <a href="#Overview" class="MCXref xref">Overview</a>
--   <a href="#Prerequi" class="MCXref xref">Prerequisites</a>
--   <a href="#Steps" class="MCXref xref">Steps to configure the flow:</a>
--   <a href="#Flow" class="MCXref xref">Flow of events</a>
+-   [Overview](#Overview)
+-   [Prerequisites](#Prerequi)
+-   [Steps to configure the flow:](#Steps)
+-   [Flow of events](#Flow)
 
 <span id="Overview"></span>
 
@@ -19,25 +19,25 @@ Decompress incoming archives, send the result files to two remote transfer sites
 
 ## Prerequisites
 
--   Create a Route Package Template. For Route Package Template creation details, refer to <a href="../../../c_st_configuration/t_st_manage_route_package_templates#Add" class="MCXref xref">Add Route Package Template</a>.
--   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to <a href="../../../c_st_configuration/t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
--   Create an {{< SecureTransport/componentshortname >}} user account. For user account creation details, refer to <a href="../../../../accounts/useraccounts" class="MCXref xref">User accounts</a>.
+-   Create a Route Package Template. For Route Package Template creation details, refer to [Add Route Package Template](../../../c_st_configuration/t_st_manage_route_package_templates#Add).
+-   Create an {{< SecureTransport/advancedrouting >}} application instance. For {{< SecureTransport/advancedrouting >}} application instance creation details, refer to [Create Advanced Routing application](../../../c_st_configuration/t_st_create_advanced_routing_application).
+-   Create an {{< SecureTransport/componentshortname >}} user account. For user account creation details, refer to [User accounts](../../../../accounts/useraccounts).
 -   Create remote transfer sites which are used as routing destinations (for example, **Partner 1 (FTP)** and **Partner 2 (HTTP)**).
-    For remote transfer site creation details, refer to <a href="../../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>.
+    For remote transfer site creation details, refer to [Create a transfer site](../../../../accounts/transfersites/t_st_transfersites#Create).
 
 <span id="Steps"></span>
 
 ## Steps to configure the flow:
 
-1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to <a href="../../../c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+1.  Create and configure a subscription to the {{< SecureTransport/advancedrouting >}} application by navigating to the account’s *Subscriptions* tab and clicking the **Subscribe…** button. For {{< SecureTransport/advancedrouting >}} subscription configuration details, refer to [Subscribe to Advanced Routing application](../../../c_st_configuration/t_st_subscribe_advanced_routing_application).
     1.  Configure the subscription folder.
     2.  (Optional) Configure the rest of the settings.
     3.  Click **Add** when done.
-2.  Navigate to the *Routes* tab of the created account and assign a new route package to the account by choosing the created Route Package Template and clicking the **Assign Route** button. For assigning a route configuration details, refer to <a href="../../../c_st_configuration/t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>.
+2.  Navigate to the *Routes* tab of the created account and assign a new route package to the account by choosing the created Route Package Template and clicking the **Assign Route** button. For assigning a route configuration details, refer to [Assign Route Package Template](../../../c_st_configuration/t_st_assign_route_package_template).
 3.  Assign a subscription to the new route package by selecting **Assign** in the *Subscriptions* pane and selecting the subscription created in Step 1.
-4.  Create a new route by clicking the **New Route** button in the *Specific Settings* pane. For route configuration details, refer to <a href="../../../c_st_configuration/t_st_manage_routes#New" class="MCXref xref">New Route</a>.
+4.  Create a new route by clicking the **New Route** button in the *Specific Settings* pane. For route configuration details, refer to [New Route](../../../c_st_configuration/t_st_manage_routes#New).
     1.  Configure the new route’s name and (optionally) description.
-    2.  Add and configure a Decompress step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Decompress configuration details, refer to <a href="../../../c_st_route_step_transformations/t_st_decompress" class="MCXref xref">Decompress</a>.
+    2.  Add and configure a Decompress step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Decompress configuration details, refer to [Decompress](../../../c_st_route_step_transformations/t_st_decompress).
         1.  (Optional) Configure the available options.
 
         2.  Click **Save** when done.
@@ -45,7 +45,7 @@ Decompress incoming archives, send the result files to two remote transfer sites
         3.  **Note:**
             >
             > The Decompress step automatically detects the archive type.
-    3.  Add and configure a Send To Partner step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Send To Partner configuration details, refer to <a href="../../../c_st_route_steps/t_st_send_to_partner" class="MCXref xref">Send To Partner</a>.
+    3.  Add and configure a Send To Partner step by selecting it from the *-- Select Step --* drop-down menu and clicking the **Add Step** button. For Send To Partner configuration details, refer to [Send To Partner](../../../c_st_route_steps/t_st_send_to_partner).
         1.  Uncheck **Proceed with route execution on step failure**.
 
         2.  Select the account which contains the target transfer sites (or select **Use current account**).
@@ -82,5 +82,5 @@ Decompress incoming archives, send the result files to two remote transfer sites
 
 **Related topics:**
 
--   <a href="../c_st_route_based_extension" class="MCXref xref">Route files based on file name extension</a>
--   <a href="../c_st_encryt_partner_certficate" class="MCXref xref">PGP Encryption (partner’s certificate) and send to multiple partners</a>
+-   [Route files based on file name extension](../c_st_route_based_extension)
+-   [PGP Encryption (partner’s certificate) and send to multiple partners](../c_st_encryt_partner_certficate)

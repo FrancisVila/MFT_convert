@@ -92,7 +92,7 @@ Java console<br />
    </tbody>
 </table>
 
-In an Enterprise Cluster (EC), when the database does not accept log messages fast enough and the queue becomes full, the servers listed in the table store their log messages in a buffer file until the database can accept them. See <a href="../t_st_control_log_fallback_from_database_to_file#Control" class="MCXref xref">Control log fallback from database to file</a>.
+In an Enterprise Cluster (EC), when the database does not accept log messages fast enough and the queue becomes full, the servers listed in the table store their log messages in a buffer file until the database can accept them. See [Control log fallback from database to file](../t_st_control_log_fallback_from_database_to_file#Control).
 
 The behavior for each server is controlled by the following parameters in their respective log4j files:
 
@@ -131,11 +131,11 @@ to zero.
 
 **Related topics:**
 
--   <a href="../c_st_database_log_files" class="MCXref xref">Database log files</a>
--   <a href="../c_st_ftpd_log_file" class="MCXref xref">FTPD log file</a>
--   <a href="../c_st_admin_log_file" class="MCXref xref">Admin log file</a>
--   <a href="../c_st_general_log_files" class="MCXref xref">General log files</a>
--   <a href="../t_st_change_log4j_files" class="MCXref xref">Modify the log4j files</a>
--   <a href="../t_st_redirect_log4j_output_from_database" class="MCXref xref">Redirect log4j output from the database</a>
--   <a href="../t_st_control_log_fallback_from_database_to_file" class="MCXref xref">Control log fallback from database to file</a>
--   <a href="../t_st_server_log_rotation_scheduling" class="MCXref xref">Server log rotation and monitor scheduling</a>
+-   [Database log files](../c_st_database_log_files)
+-   [FTPD log file](../c_st_ftpd_log_file)
+-   [Admin log file](../c_st_admin_log_file)
+-   [General log files](../c_st_general_log_files)
+-   [Modify the log4j files](../t_st_change_log4j_files)
+-   [Redirect log4j output from the database](../t_st_redirect_log4j_output_from_database)
+-   [Control log fallback from database to file](../t_st_control_log_fallback_from_database_to_file)
+-   [Server log rotation and monitor scheduling](../t_st_server_log_rotation_scheduling)

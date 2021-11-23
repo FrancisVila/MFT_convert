@@ -2,14 +2,14 @@
     "title": "Troubleshooting installations and upgrades",
     "linkTitle": "Troubleshoot installations and upgrades",
     "weight": "170"
-}This page describes how to locate the various <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> installation logs when troubleshooting, and the files you made want to have ready if you need to contact Axway Support.
+}This page describes how to locate the various {{< TransferCFT/transfercftname  >}} installation logs when troubleshooting, and the files you made want to have ready if you need to contact Axway Support.
 
 If an issue occurs while performing an installation or an upgrade, check for errors in the following places. Perform these steps before attempting to roll back in the case of an upgrade.
 
-1.  If you performed an upgrade from a version prior to v3.6, look for errors in the <span class="code">install.log</span> located in the <span class="code">axway.installer</span> directory.
-2.  Check for errors in the <span class="code">install.log</span> in the <span class="code">CFT</span> directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
-3.  Navigate to the runtime directory and check the <span class="code">.up </span>folder contents.
-4.  Again from the runtime directory, check the <span class="code">copupd </span>folder contents. This folder is only available after performing a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> update or upgrade when using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>. In the <span class="code">copupd </span>folder, navigate to the<span class="code"> log > install</span> file.
+1.  If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log` located in the `axway.installer` directory.
+2.  Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
+3.  Navigate to the runtime directory and check the `.up `folder contents.
+4.  Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a {{< TransferCFT/transfercftname >}} update or upgrade when using {{< TransferCFT/centralgovernancename >}} or {{< TransferCFT/flowmanager >}}. In the `copupd `folder, navigate to the` log > install` file.
 5.  Be ready to supply all of these files to Axway support if you cannot troubleshoot the issue with any errors found in the logs.
 
 ## Transfer CFT Copilot server issues
@@ -17,19 +17,19 @@ If an issue occurs while performing an installation or an upgrade, check for err
 ### Copilot doesn't start
 
 -   Check that the port is not already used by another application.
--   Close all active sessions, use the syntax: <span class="code">copstop -f</span>
--   Check that there are no orphan "<span class="code">cop\*</span>" processes. If there are, manually kill these processes.
+-   Close all active sessions, use the syntax: `copstop -f`
+-   Check that there are no orphan "`cop*`" processes. If there are, manually kill these processes.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server
+{{< TransferCFT/componentshortname  >}} server
 
-### Cannot start my <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+### Cannot start my {{< TransferCFT/componentshortname  >}}
 
--   Check your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log in Central Governance.
--   From the local <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span><span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>.
+-   Check your {{< TransferCFT/componentshortname >}} log in Central Governance.
+-   From the local {{< TransferCFT/componentshortname >}} runtime, try to manually start the server. If you cannot manually start the server, refer to *[Support tools](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/support_tools.htm)* in the {{< TransferCFT/componentlongname >}}{{< TransferCFT/doctypeuser >}}.
 
 ### Runtime directory error
 
-If for whatever reason an installation that uses symbolic links fails, once the silent files have been corrected, you must delete the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> home installation directory to which the symbolic link points. Failing to do so causes the installer to go into upgrade mode.
+If for whatever reason an installation that uses symbolic links fails, once the silent files have been corrected, you must delete the {{< TransferCFT/transfercftname  >}} home installation directory to which the symbolic link points. Failing to do so causes the installer to go into upgrade mode.
 
 Additionally, you cannot perform an installation in a directory if the runtime already exists.
 
@@ -59,11 +59,11 @@ is not writable by the current user
 To resolve this issue, using a different user perform the following commands on all hosts that are involved in the multihost, multi-node installation:
 
 1.  Open an SSH session on the machine and run the following command to change the UID, for example:  
-    <span class="code">sudo usermod -u 1005 ithomas</span>  
-    Where `1005 `is the desired common UID, and <span class="code">ithomas </span>is the user common to all of the UNIX hosts.
+    `sudo usermod -u 1005 ithomas`  
+    Where `1005 `is the desired common UID, and `ithomas `is the user common to all of the UNIX hosts.
 2.  Run the command to change the GID, for example:  
     `sudo groupmod -g 1006 ithomas`  
-    Where <span class="code">1006 </span>is the desired common GID, and <span class="code">ithomas </span>is the group to which the user <span class="code">ithomas </span>belongs.
+    Where `1006 `is the desired common GID, and `ithomas `is the group to which the user `ithomas `belongs.
 
 For more information, please refer to the [NFS](http://nfs.sourceforge.net/nfs-howto/ar01s07.html#pemission_issues) documentation.
 

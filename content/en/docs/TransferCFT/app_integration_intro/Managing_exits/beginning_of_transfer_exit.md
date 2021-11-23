@@ -5,14 +5,14 @@
 }This page describes how to configure the environment for a beginning-of-transfer
 type exit, EXITBOT. This EXIT task lets you set the IDF to use, and is executed only in SERVER mode for CFTRECV (if not the requester), for CFTSEND (HOLD state), or for an implicit SEND.
 
-<span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> delivers both an `exitbot.c` sample to reference, located in the `<install_dir>/runtime/src/exit` folder, and an `exbus.h` header file which defines the API, located in the `<install_dir>/home/inc` folder.
+{{< TransferCFT/transfercftname  >}} delivers both an `exitbot.c` sample to reference, located in the `<install_dir>/runtime/src/exit` folder, and an `exbus.h` header file which defines the API, located in the `<install_dir>/home/inc` folder.
 
 <span id="Transfer_state"></span><span id="Title"></span><span id="Configuring_the_environment__End_of_transfer_exit"></span>
 
 ## Procedure
 
 Before you submit this EXIT, you must customize the following
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> objects:
+{{< TransferCFT/componentshortname  >}} objects:
 
 -   CFTEXIT: This describes the EXIT environment and how this
     EXIT is activated.
@@ -64,7 +64,7 @@ identification of the associated module, we recommend naming it CFTEXIB.</p>    
    </tbody>
 </table>
 
-<span class="bold_in_para">Example </span>
+**Example**
 
 The following example provides a minimum of arguments:
 
@@ -100,7 +100,7 @@ must specify an identifier that points to a CFTEXIT object.</p>         </td>
    </tbody>
 </table>
 
-<span class="bold_in_para">Example </span>
+**Example**
 
 The following example provides a minimum number of arguments for CFTPARM:
 

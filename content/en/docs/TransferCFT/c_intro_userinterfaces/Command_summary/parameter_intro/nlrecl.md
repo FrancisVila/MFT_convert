@@ -34,7 +34,7 @@ to the value of NLRECL:
 -   CODE = ASCII:
     the space character is then equal to x‘20’
 
-ODETTE: For the ODETTE protocol, refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Protocol
+ODETTE: For the ODETTE protocol, refer to the {{< TransferCFT/componentshortname  >}} Protocol
 topics for more information on this parameter.
 
 [Return to Command index](../../)

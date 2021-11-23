@@ -4,9 +4,9 @@
     "weight": "140"
 }The following sections describe the FTP server limitations:
 
--   <a href="#FTP_APPE" class="MCXref xref">FTP APPE command</a>
--   <a href="#FTP_COMB" class="MCXref xref">FTP COMB command</a>
--   <a href="#FTP_client" class="MCXref xref">FTP client configuration</a>
+-   [FTP APPE command](#FTP_APPE)
+-   [FTP COMB command](#FTP_COMB)
+-   [FTP client configuration](#FTP_client)
 
 <span id="FTP_APPE"></span>
 

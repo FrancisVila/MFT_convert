@@ -2,7 +2,7 @@
     "title": "Managing TLS",
     "linkTitle": "Managing TLS",
     "weight": "210"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Accepted authorities list](#Accepted_authorities_list)
 
@@ -42,7 +42,7 @@ When the Security server receives the accepted authorities distinguished names l
 
 #### Server case
 
-The server can send any of the current Security Profile user certificates. If the server can send more than one user certificate, it selects the first certificate in the Security Profile (sprof) <span style="font-weight: bold;">UserCertificate</span> field.
+The server can send any of the current Security Profile user certificates. If the server can send more than one user certificate, it selects the first certificate in the Security Profile (sprof) **UserCertificate** field.
 
 The Security server builds the corresponding certificate chain step by step. For each certificate, it identifies its issuer certificate and so on, until it reaches a root certificate.
 

@@ -23,6 +23,6 @@ Your subscription agreement with Axway requires usage tracking. If you don't ena
 SecureTransport offers two options for usage reporting:
 
 -   *Automatic* for MFT environments using the AMPLIFY Edge Agent  
-    See the [AMPLIFY subscription usage and reporting](https://docs.axway.com/bundle/subusage_en/page/amplify_subscription_usage_and_reporting.html) guide. This guide has information for installing and configuring an agent that collects data from your on-premises product and uploads usage reports to the AMPLIFY platform. See <a href="st-edge_agent" class="MCXref xref">Set up usage reporting</a>.
+    See the [AMPLIFY subscription usage and reporting](https://docs.axway.com/bundle/subusage_en/page/amplify_subscription_usage_and_reporting.html) guide. This guide has information for installing and configuring an agent that collects data from your on-premises product and uploads usage reports to the AMPLIFY platform. See [Set up usage reporting](st-edge_agent).
 -   *Manual* for SecureTransport deployments only  
-    This option is only applicable to environments with SecureTransport only (without Transfer CFT or other MFT products). See <a href="generate_usage_report" class="MCXref xref">Usage and Deployment information</a>.
+    This option is only applicable to environments with SecureTransport only (without Transfer CFT or other MFT products). See [Usage and Deployment information](generate_usage_report).

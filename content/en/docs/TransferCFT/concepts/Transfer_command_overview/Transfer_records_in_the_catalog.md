@@ -14,8 +14,8 @@ records of these transfer commands specify the:
 All transfer requests, either SEND or RECV, are recorded and saved in
 the Transfer CFT transfer CATALOG.
 
-A catalog record, known as a <span style="font-style: italic;">catalog
-entry</span>, is identified by the:
+A catalog record, known as a *catalog
+entry*, is identified by the:
 
 -   Transfer direction:
     Send or Receive

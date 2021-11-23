@@ -27,7 +27,7 @@ This field may contain a list of symbolic variables separated by a period ".". P
 
 You cannot use IDT or IDTU as symbolic variables for DUPLICAT. Duplicate verifications are performed before writing to the catalog (when DACTION=ERROR), but the IDT and IDTU are inserted when the transfer is written to the catalog (after the verification), therefore these variables cannot be used as selection criteria in DUPLICAT.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 DUPLICAT= &PART.&IDF.&IDA.&SAPPL
 

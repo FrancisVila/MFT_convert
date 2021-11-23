@@ -477,7 +477,7 @@ are ignored.</p>         </td>
       </tr>
       <tr>
          <td><p>usrmsg</p>         </td>
-         <td><p>User message, 80 characters, recorded in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>User message, 80 characters, recorded in the {{< TransferCFT/componentshortname  >}}
 LOG file (CFTS18I)</p>
 <p>This message can contain the code returned by the user
 function and other information.</p>         </td>

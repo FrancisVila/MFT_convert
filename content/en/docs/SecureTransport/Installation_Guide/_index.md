@@ -8,15 +8,15 @@
 
 ## For new users
 
-<a href="intro_overview" class="MCXref xref">Introduction</a>
+[Introduction](intro_overview)
 
 ## For existing users
 
-<a href="prereqs_overview" class="MCXref xref">Prerequisites</a>
+[Prerequisites](prereqs_overview)
 
-<a href="install_overview" class="MCXref xref">Install SecureTransport</a>
+[Install SecureTransport](install_overview)
 
-<a href="uninstall_overview" class="MCXref xref">Uninstall</a>
+[Uninstall](uninstall_overview)
 
 ## Get more help
 

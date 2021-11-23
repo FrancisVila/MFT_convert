@@ -12,7 +12,7 @@ You can refer to the [Secure Relay documentation](https://docs.axway.com/bundle/
 
 ## Check Transfer CFT log messages...
 
-If you find the following messages in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> log, you may want to check the **Possible cause**:
+If you find the following messages in the {{< TransferCFT/componentlongname  >}} log, you may want to check the **Possible cause**:
 
 Possible cause: No Router Agent available
 
@@ -34,7 +34,7 @@ Possible cause: Problem related to secure\_relay.ma.ca\_cert\_fname
 
     CFTI09F Init error _ Communication process CFTI10F Init error _ failed to start the Secure Relay Master Agent
 
-<span class="bold_in_para">Possible cause: Firewall or SAP overlap issue</span>
+**Possible cause: Firewall or SAP overlap issue**
 
 The following messages may display indicating a SAP overlap (SAP is already used) or that there is a firewall issue:
 
@@ -48,10 +48,10 @@ The following messages may display indicating a SAP overlap (SAP is already used
 
 Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file
 
-Transfer CFT fails to start and displays a message similar to the following in the<span class="code"> cft.out</span> file:
+Transfer CFT fails to start and displays a message similar to the following in the` cft.out` file:
 
 
 
     Error accessing user certificate keystore file <certificate name> (password might be wrong): java.io.IOException: keystore password was incorrect
 
-To  correct, delete or rename the file referenced by the <span class="code">secure\_relay.ma.cert\_password\_fname</span> parameter (by default, XsrPwd.dat) prior to restarting <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>.
+To  correct, delete or rename the file referenced by the `secure_relay.ma.cert_password_fname` parameter (by default, XsrPwd.dat) prior to restarting {{< TransferCFT/transfercftname  >}}.

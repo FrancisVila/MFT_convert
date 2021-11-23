@@ -2,7 +2,7 @@
     "title": "Migrate to CFTFOLDER folder monitoring",
     "linkTitle": "Migrate to CFTFOLDER folder monitoring",
     "weight": "220"
-}You can use the<span class="bold_in_para"> Folder monitoring migration</span> **utility** to help you migrate from the UCONF method of folder monitoring to the CFTFOLDER method. This procedure may be useful if you have migrated or upgraded from Transfer CFT 3.1.2 to Transfer CFT 3.2.4.
+}You can use the **Folder monitoring migration** **utility** to help you migrate from the UCONF method of folder monitoring to the CFTFOLDER method. This procedure may be useful if you have migrated or upgraded from Transfer CFT 3.1.2 to Transfer CFT 3.2.4.
 
 Reasons to switch to the CFTFOLDER method include:
 
@@ -11,7 +11,7 @@ Reasons to switch to the CFTFOLDER method include:
 
 ## Procedure
 
-Using the <span class="code">cftmifm</span> migration command creates a text file that the CFTUTIL utility can use to migrate the folder definitions, where the CFTFOLDER definitions are an extraction from the UCONF definitions.
+Using the `cftmifm` migration command creates a text file that the CFTUTIL utility can use to migrate the folder definitions, where the CFTFOLDER definitions are an extraction from the UCONF definitions.
 
 You must stop and start, or restart, Transfer CFT for the modifications to be taken into account.
 
@@ -87,15 +87,11 @@ The Transfer CFT migration utility performs the following steps:
 
 The Transfer CFT purge utility performs the following steps:
 
-Builds a list all the folder names defined in uconf.
-
-If a pattern was supplied, restricts the list to nicknames that match this pattern.
-
-Checks that all names have the correct syntax and are all different.
-
-When folders in the list also exist as CFTFOLDER objects in the Transfer CFT configuration, and STATE=ACTIVE, these folders are targeted to be purged.
-
-At this point the purge is performed unless you have specified - s (simulate).
+1.  Builds a list all the folder names defined in uconf.
+2.  If a pattern was supplied, restricts the list to nicknames that match this pattern.
+3.  Checks that all names have the correct syntax and are all different.
+4.  When folders in the list also exist as CFTFOLDER objects in the Transfer CFT configuration, and STATE=ACTIVE, these folders are targeted to be purged.
+5.  At this point the purge is performed unless you have specified - s (simulate).
 
 -   The purge removes all targeted folders from the folder\_monitoring.folders listed in UCONF. As opposed to the migration, this action directly alters the UCONF configuration.
 -   If you are using -s (simulate), the tool only displays folders targeted by the purge.
@@ -109,26 +105,26 @@ Example 1
 Migrate all folders from UCONF to CFTFOLDER objects.
 
 1.  Create CFTFOLDER objects in fm1.cfg file:  
-    <span class="code">cftmifm migrate -o fm1.cfg</span>
+    `cftmifm migrate -o fm1.cfg`
 2.  Save uconf folder configuration:  
-    <span class="code">CFTUTIL CFTEXT type=uconf,id=folder\_monitoring.\*,fout=fm\_uconf\_save.cfg</span>
+    `CFTUTIL CFTEXT type=uconf,id=folder_monitoring.*,fout=fm_uconf_save.cfg`
 3.  Interpret fm1.cfg file:  
-    <span class="code">CFTUTIL config type=input,fname=fm1.cfg</span>
+    `CFTUTIL config type=input,fname=fm1.cfg`
 4.  Purge uconf folder configuration:  
-    <span class="code">cftmifm purge</span>
+    `cftmifm purge`
 
 Example 2
 
 Only migrate specific folders from the UCONF configuration to the CFTFOLDER option, for example, select all logical folders starting with the letter "A".
 
 1.  Create the CFTFOLDER objects in a file called fm2.cfg, for example:  
-    <span class="code">cftmifm migrate -p A\* -o fm2.cfg</span>
+    `cftmifm migrate -p A* -o fm2.cfg`
 2.  Make a backup save of the UCONF folder configuration:  
-    <span class="code">CFTUTIL CFTEXT type=uconf,id=folder\_monitoring.\*,fout=fm\_uconf\_save.cfg</span>
+    `CFTUTIL CFTEXT type=uconf,id=folder_monitoring.*,fout=fm_uconf_save.cfg`
 3.  Interpret the generated fm2.cfg file:  
-    <span class="code">CFTUTIL config type=input,fname=fm2.cfg</span>
+    `CFTUTIL config type=input,fname=fm2.cfg`
 4.  Purge the UCONF folder configuration:  
-    <span class="code">cftmifm purge -p A\*</span>
+    `cftmifm purge -p A*`
 
 ### Examples on an IBM i system
 
@@ -162,21 +158,21 @@ Call the following programs to migrate specific folders from the UCONF configur
 
 Submit the CFTMIFM JCL located in the INSTALL library to migrate from UCONF to CFTFOLDER objects. Next submit the CFTMIFMP JCL, also located in the INSTALL library, to purge the UCONF configuration.
 
-1.  Extracts all folder definitions: <span class="code">cftmifm migrate -p \* -o &lt;temp\_file></span>
+1.  Extracts all folder definitions: `cftmifm migrate -p * -o <temp_file>`
 2.  Print the output.
-3.  Apply the extracted definitions: <span class="code">CFTUTIL config type=input,fname=&lt;temp\_file></span>
-4.  Purges the all existing UCONF folder definitions: <span class="code">cftmifm purge -p \*</span>
+3.  Apply the extracted definitions: `CFTUTIL config type=input,fname=<temp_file>`
+4.  Purges the all existing UCONF folder definitions: `cftmifm purge -p *`
 
 To  migrate or purge using a specific pattern you can modify the CFTMIFM and CFTMIFMP JCLs, otherwise all logical folders are affected.
 
 ### Rollback
 
-A prerequisite to performing a rollback is that you must have made a backup of the UCONF folder configuration prior to having migrated. Using the example above, this is the step: <span class="code">CFTUTIL CFTEXT type=uconf,id=folder\_monitoring.\*,fout=fm\_uconf\_save.cfg</span>
+A prerequisite to performing a rollback is that you must have made a backup of the UCONF folder configuration prior to having migrated. Using the example above, this is the step: `CFTUTIL CFTEXT type=uconf,id=folder_monitoring.*,fout=fm_uconf_save.cfg`
 
-1.  Interpret the backup uconf folder file, for example <span class="code">fm\_uconf\_save.cfg</span>.  
-    <span class="code">CFTUTIL config type=input,fname=fm\_uconf\_save.cfg</span>
+1.  Interpret the backup uconf folder file, for example `fm_uconf_save.cfg`.  
+    `CFTUTIL config type=input,fname=fm_uconf_save.cfg`
 2.  Manually remove all CFTFOLDER objects:  
-    <span class="code">CFTFOLDER ID=&lt;folder>,mode=delete</span>
+    `CFTFOLDER ID=<folder>,mode=delete`
 
 ### Limitations and notes
 
@@ -209,11 +205,11 @@ Parameter mapping and descriptions
          <td>No         </td>
          <td><ul>
 <li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> folder monitoring.</li>
+<li>Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>
 </ul>         </td>
       </tr>
       <tr>
-         <td>ID<span style="color: #dc143c;"> </span>         </td>
+         <td>ID         </td>
          <td>folder_monitoring.folders         </td>
          <td>node         </td>
          <td>None         </td>
@@ -484,8 +480,8 @@ The second one, when present, defines the separator after the timestamp.</p>
 >
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
--   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
--   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |
+-   /
+-   For \\ / : \* ? " &lt; > |
 
 Related topics
 

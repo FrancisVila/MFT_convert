@@ -30,8 +30,8 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <p> </p>
 <p><br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Flows </span>&gt; <span class="bold_in_para">Add flow</span>.</p>
-<p>Create  a flow named <span class="bold_in_para">Broadcast_flow</span>, and give it the identifier <span class="bold_in_para">flow04</span>.</p>
+         <td><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
+<p>Create  a flow named <strong>Broadcast_flow</strong>, and give it the identifier <strong>flow04</strong>.</p>
 <p>In this flow the MainOffice is the Source with the two stores as the Targets.</p>         </td>
          <td><a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -50,7 +50,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <p> </p>         </td>
          <td><p>Deploy the flow.</p>
 <p> </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Deploy </span>to save and deploy the flow.</p>
+         <td><p>In click <strong>Deploy</strong> to save and deploy the flow.</p>
 <p> </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -59,7 +59,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <p> </p>         </td>
          <td><p>Create a file for the flow.</p>
 <p> </p>         </td>
-         <td><p>For this example, copy a file SALES_report to transfer in the Store_66 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span><span class="code"> runtime/pub </span>folder.</p>
+         <td><p>For this example, copy a file SALES_report to transfer in the Store_66 {{< TransferCFT/componentshortname  >}}<code> runtime/pub </code>folder.</p>
 <p> </p>         </td>
          <td>          </td>
       </tr>
@@ -68,15 +68,15 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <p> </p>         </td>
          <td><p>Execute the SEND command.</p>
 <p> </p>         </td>
-         <td><p>From the source <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command:</p>
-<p><span class="code">CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</span></p>
+         <td><p>From the source {{< TransferCFT/componentshortname  >}}, run the following command:</p>
+<p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>6         </td>
          <td>Monitor the file transfer status.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> select the <span class="bold_in_para">Flows </span>tab, and click <span class="bold_in_para">Monitoring</span>.         </td>
+         <td>In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.         </td>
          <td><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -105,7 +105,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
          <td><p>Create a flow.</p>
 <p><br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> define a flow named <span class="bold_in_para">Collect_flow</span>, and give it the identifier <span class="bold_in_para">flow05</span>.</p>
+         <td><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.</p>
 <p>Use the Source as MainOffice and the stores as the Target.<br />
 </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
@@ -133,7 +133,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 <p> </p>         </td>
          <td><p>Deploy the flow.</p>
 <p> </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save and deploy the flow.</p>
+         <td><p>In you can save and deploy the flow.</p>
 <p> </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -142,8 +142,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 <p> </p>         </td>
          <td><p>Run the RECV command.</p>
 <p> </p>         </td>
-         <td>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command: <span class="code"><br />
-</span><span class="code">CFTUTIL RECV PART=DEST_Stores, IDF=flow05</span>
+         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -152,7 +151,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 <p> </p>         </td>
          <td><p>Monitor the file transfer status.</p>
 <p> </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> select the <span class="bold_in_para">Flows </span>tab, and click <span class="bold_in_para">Monitoring</span>.</p>         </td>
+         <td><p>In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.</p>         </td>
          <td><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>

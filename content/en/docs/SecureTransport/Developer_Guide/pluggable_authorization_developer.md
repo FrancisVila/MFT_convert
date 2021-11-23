@@ -227,7 +227,7 @@ It declares the following methods:
 
 ## Using the {{< SecureTransport/securetransportname  >}} SSLContext service
 
-{{< SecureTransport/securetransportname  >}} provides a service for creating `javax.net.ssl.SSLContext` and `javax.net.ssl.SSLSocketFactory` objects using its internal keystore. These objects can be used for setting up secure SSL connections to other applications. This service is identical to the *Certificate service* exposed for *Custom connectors*, see <a href="../custom_connector/custom_protocol#exposed" class="MCXref xref">SecureTransport exposed services</a>.
+{{< SecureTransport/securetransportname  >}} provides a service for creating `javax.net.ssl.SSLContext` and `javax.net.ssl.SSLSocketFactory` objects using its internal keystore. These objects can be used for setting up secure SSL connections to other applications. This service is identical to the *Certificate service* exposed for *Custom connectors*, see [SecureTransport exposed services](../custom_connector/custom_protocol#exposed).
 
 The service interface is called `com.axway.st.plugins.authorization.services.SslContextService` and can be injected in the plug-in’s `CustomAuthorizer` and `CustomFileFilter` class, using the following code:
 
@@ -254,7 +254,7 @@ To use the expression evaluator service, declare а variable with `@Inject` anno
     @Inject
     private ExpressionEvaluatorService mExpressionEvaluatorService;
 
-This service is identical to the Expression Evaluator service exposed for Custom connectors, see <a href="../custom_connector/custom_protocol" class="MCXref xref">Implement a custom protocol connector</a>.
+This service is identical to the Expression Evaluator service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
 ## Enable Logger service with authorization
 

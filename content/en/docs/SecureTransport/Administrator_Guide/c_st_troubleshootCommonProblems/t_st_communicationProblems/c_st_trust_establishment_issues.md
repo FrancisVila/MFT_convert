@@ -8,12 +8,12 @@
     -   Saving the CA certificate for {{< SecureTransport/componentshortname >}} Server to a file on a local system and importing the file to the {{< SecureTransport/componentshortname >}} Edge using the {{< SecureTransport/componentshortname >}} Administration Tool.
     -   Saving the CA certificate for {{< SecureTransport/componentshortname >}} Edge to a file on a local system and importing the file to the {{< SecureTransport/componentshortname >}} Server using the {{< SecureTransport/componentshortname >}} Administration Tool.
 
-To export or import a CA certificate, see <a href="../../../c_st_setup/c_st_certificates/t_st_trustedcas#top" class="MCXref xref">Manage trusted CAs</a>.
+To export or import a CA certificate, see [Manage trusted CAs](../../../c_st_setup/c_st_certificates/t_st_trustedcas#top).
 
 **Related topics:**
 
--   <a href="../c_st_clocks_out_of_sync" class="MCXref xref">Clocks out of sync</a>
--   <a href="../c_st_connectivity" class="MCXref xref">Connectivity</a>
+-   [Clocks out of sync](../c_st_clocks_out_of_sync)
+-   [Connectivity](../c_st_connectivity)
 
 ## Common certificate errors
 

@@ -2,7 +2,7 @@
     "title": "Certificate restrictions",
     "linkTitle": "Certificate restrictions",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Certificate types](#Certificate_types)
 
@@ -20,7 +20,7 @@
 
 ## Certificate types
 
-The <span style="font-weight: bold;">Security server</span> certificate database stores both certificates and private keys used during secure file transfers with TLS/SSL or SSH.
+The **Security server** certificate database stores both certificates and private keys used during secure file transfers with TLS/SSL or SSH.
 
 Certificate Records fall into four categories:
 

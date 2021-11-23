@@ -18,20 +18,20 @@
          <td><code>SourceFileLocation</code>         </td>
          <td>Path to the transferred file         </td>
          <td>Full path name or path relative to <code>RemoteSharePath</code>         </td>
-         <td>See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.         </td>
+         <td>See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250">Location of the transferred file</a>.         </td>
       </tr>
       <tr>
          <td><code>RemoteSharePath</code>         </td>
          <td>Path to the shared directory on the remote system         </td>
          <td>Full path name         </td>
-         <td>Optional. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.         </td>
+         <td>Optional. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250">Location of the transferred file</a>.         </td>
       </tr>
       <tr>
          <td><code>LocalSharePath</code>         </td>
          <td>Path to the shared directory on the {{< SecureTransport/componentshortname  >}} system         </td>
          <td>Full path name         </td>
          <td><p>Optional.</p>
-<p>Optional for transfers to {{< SecureTransport/componentshortname  >}}. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250" class="MCXref xref">Location of the transferred file</a>.</p>         </td>
+<p>Optional for transfers to {{< SecureTransport/componentshortname  >}}. {{< SecureTransport/componentshortname  >}} uses this to determine the location of the transferred file. See <a href="../c_st_location_of_transferred_file#FileServicesInterfaceTransfers_2548184958_1062250">Location of the transferred file</a>.</p>         </td>
       </tr>
       <tr>
          <td><code>CycleID</code>         </td>
@@ -133,4 +133,4 @@ The following is an example of a metadata file:
 
 **Related topic:**
 
--   <a href="../c_st_location_of_transferred_file" class="MCXref xref">Location of the transferred file</a>
+-   [Location of the transferred file](../c_st_location_of_transferred_file)

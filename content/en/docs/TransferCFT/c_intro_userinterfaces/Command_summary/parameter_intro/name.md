@@ -14,8 +14,8 @@ NAME = {<u>CAT</u>
 Name of the component to be queried.
 This parameter can be set to:
 
--   <span class="bold_in_para">CAT</span>: query of the catalog cache
--   <span class="bold_in_para">COMMAND</span>: query of the command cache
+-   **CAT**: query of the catalog cache
+-   **COMMAND**: query of the command cache
 -   CRON
 -   DMZ
 -   STAT

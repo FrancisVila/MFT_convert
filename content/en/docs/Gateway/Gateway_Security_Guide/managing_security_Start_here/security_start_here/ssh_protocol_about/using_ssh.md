@@ -2,7 +2,7 @@
     "title": "Using SSH",
     "linkTitle": "Using SSH",
     "weight": "210"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Installing SSH](#Installing_SSH)
 
@@ -31,7 +31,7 @@ To install SSH processing on Gateway, select the SFTP file transfer protocol in 
    
    <tbody>
       <tr>
-         <td><p><span style="font-weight: bold;">Field</span></p>         </td>
+         <td><p><strong>Field</strong></p>         </td>
          <td><p>Description</p>         </td>
       </tr>
       <tr>

@@ -34,7 +34,7 @@ The application is styled and branded by the following files and folders found i
 
 ## Change the logos, header, and disclaimer
 
-This is done by editing the custom configuration file as described in section <a href="../config_files" class="MCXref xref">Configuration files</a>.
+This is done by editing the custom configuration file as described in section [Configuration files](../config_files).
 
 Copy the “branding” section from `C/config/default.config.json` into `custom/stwebclient.config.json`, and do the modifications as desired.
 

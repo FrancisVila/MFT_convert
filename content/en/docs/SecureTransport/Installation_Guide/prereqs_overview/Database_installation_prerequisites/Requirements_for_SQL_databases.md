@@ -2,7 +2,7 @@
     "title": "Requirements for Microsoft SQL Server databases",
     "linkTitle": "Requirements for Microsoft SQL Server databases",
     "weight": "130"
-}-   For a complete list of supported Microsoft SQL Server versions, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref">Axway and third-party software support</a>.
+}-   For a complete list of supported Microsoft SQL Server versions, refer to [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm).
 
 -   The Microsoft SQL Server collation must be defined as case insensitive (SQL\_Latin1\_General\_CP1\_CI\_AS).
 
@@ -55,5 +55,5 @@ During the installation, you need the following information:
 
 **Related topics:**
 
--   <a href="../requirements_for_oracle_databases" class="MCXref xref">Requirements for Oracle databases</a>
--   <a href="../requirements_for_oracle_databases/data_pump_database_management" class="MCXref xref">Data pump database management system</a>
+-   [Requirements for Oracle databases](../requirements_for_oracle_databases)
+-   [Data pump database management system](../requirements_for_oracle_databases/data_pump_database_management)

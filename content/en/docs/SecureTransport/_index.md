@@ -55,45 +55,45 @@ To download a PDF file, right-click on the respective icon and select **Save lin
 
 ### Release Notes
 
-For information about the changes introduced by latest General Availability version of SecureTransport, check out the <a href="securetransport_releasenotes_allos_en" class="MCXref xref">Axway SecureTransport 5.5 Release Notes</a>
+For information about the changes introduced by latest General Availability version of SecureTransport, check out the [Axway SecureTransport 5.5 Release Notes](securetransport_releasenotes_allos_en)
 
 ### Install, Deploy, Upgrade
 
 Here are some entry points to the documentation for installing and upgrading your SecureTransport server:
 
--   <a href="installation_guide/prereqs_overview" class="MCXref xref">Prerequisites</a>
--   <a href="installation_guide/install_overview/installing_on_unix_based_platforms" class="MCXref xref">UNIX-based platforms</a>
--   <a href="installation_guide/install_overview/installing_on_windows/install_on_windows_with_external_database" class="MCXref xref">Install SecureTransport Server on Windows with an external database</a>
--   <a href="" class="MCXref xref">Silent installation of SecureTransport</a>
+-   [Prerequisites](installation_guide/prereqs_overview)
+-   [UNIX-based platforms](installation_guide/install_overview/installing_on_unix_based_platforms)
+-   [Install SecureTransport Server on Windows with an external database](installation_guide/install_overview/installing_on_windows/install_on_windows_with_external_database)
+-   [Silent installation of SecureTransport]()
 
 You can also install and deploy with AWS, Azure, Docker and Kubernetes:
 
--   <a href="aws_installation_guide/st_in_vpc" class="MCXref xref">SecureTransport in Amazon Virtual Private Cloud</a>
--   <a href="azure_installation_guide/st-in-azure" class="MCXref xref">SecureTransport in Azure Virtual Network</a>
--   <a href="" class="MCXref xref">Introduction to deploying SecureTransport with Docker and Kubernetes</a>
+-   [SecureTransport in Amazon Virtual Private Cloud](aws_installation_guide/st_in_vpc)
+-   [SecureTransport in Azure Virtual Network](azure_installation_guide/st-in-azure)
+-   [Introduction to deploying SecureTransport with Docker and Kubernetes]()
 
 To upgrade an existing installation, start here:
 
--   <a href="upgrade_guide/upgrade_plan" class="MCXref xref">Upgrade planning and preparation</a>
+-   [Upgrade planning and preparation](upgrade_guide/upgrade_plan)
 
 ### The SecureTransport Server
 
 Here are some suggestions for getting information to harness the power of SecureTransport:
 
--   <a href="" class="MCXref xref">Getting started with SecureTransport</a>
--   <a href="" class="MCXref xref">SecureTransport overview</a>
--   <a href="administrator_guide/c_st_setup/c_st_certificates" class="MCXref xref">Certificates</a>
+-   [Getting started with SecureTransport]()
+-   [SecureTransport overview]()
+-   [Certificates](administrator_guide/c_st_setup/c_st_certificates)
 
 If you have an Axway login, you can read about ensuring security:
 
--   <a href="security_guide/c_secgd_intro" class="MCXref xref">Security introduction</a>
+-   [Security introduction](security_guide/c_secgd_intro)
 
 ### The
 
 The ST Web Client is a browser-based interface providing basic secure file transfer and email client capabilities to end users.
 
--   <a href="web_client_user_guide/01-get-started-stwc" class="MCXref xref">Get started with ST Web Client</a>
--   <a href="" class="MCXref xref">Overview of Customization of the ST Web client</a>
+-   [Get started with ST Web Client](web_client_user_guide/01-get-started-stwc)
+-   [Overview of Customization of the ST Web client]()
 
 ## {{< SecureTransport/componentshortname  >}} training on {{< SecureTransport/companyname  >}} University
 

@@ -12,6 +12,6 @@ For each role, you control:
 
 The following topics describe and provide how-to instructions for managing administrative roles:
 
--   <a href="r_st_predefined_administrative_roles" class="MCXref xref">Predefined administrative roles</a> - Lists the predefined administrative roles.
--   <a href="r_st_add_administrative_role" class="MCXref xref">Add an administrative role</a> - Provides how-to instructions for adding an administrative role.
--   <a href="r_st_edit_administrative_role" class="MCXref xref">Edit an administrative role</a> - Provides how-to instructions for editing an administrative role.
+-   [Predefined administrative roles](r_st_predefined_administrative_roles) - Lists the predefined administrative roles.
+-   [Add an administrative role](r_st_add_administrative_role) - Provides how-to instructions for adding an administrative role.
+-   [Edit an administrative role](r_st_edit_administrative_role) - Provides how-to instructions for editing an administrative role.

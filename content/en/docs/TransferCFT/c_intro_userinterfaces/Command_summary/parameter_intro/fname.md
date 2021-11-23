@@ -34,7 +34,7 @@ The number of identifiers in this list is not limited. Build the file
 using the following rules:
 
 -   a record of this
-    file can only contain one <span style="font-weight: bold;">idf</span>
+    file can only contain one **idf**
 -   the size of the
     record is limited to 80 characters
 -   an <span style="font-weight: bold;">idf</span>

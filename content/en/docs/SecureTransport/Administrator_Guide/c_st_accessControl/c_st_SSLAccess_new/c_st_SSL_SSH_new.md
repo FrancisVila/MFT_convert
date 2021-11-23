@@ -12,11 +12,11 @@ Generally, the SSH protocol provides three methods of authenticating clients: ke
 >
 > SSH authentication is based on the public key, while SSL authentication is based on certificates. A certificate includes a public key, but it also includes information about the entity to which the key belongs.
 
-In {{< SecureTransport/componentshortname  >}}, keys are always managed in the form of certificates. Server keys are associated with Local Certificates. For details, see <a href="../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#top" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
+In {{< SecureTransport/componentshortname  >}}, keys are always managed in the form of certificates. Server keys are associated with Local Certificates. For details, see [Manage local certificates and certificate signing requests](../../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs#top).
 
-You can assign a local server certificate to the SSH server. The key contained in the certificate is used to establish the SSH connection. Similarly SSH client keys are associated with login certificates. For details, see <a href="../../../c_st_setup/c_st_certificates/r_st_certificate_types#SetupMenu_1217491348_1126501" class="MCXref xref">Certificate types</a>.
+You can assign a local server certificate to the SSH server. The key contained in the certificate is used to establish the SSH connection. Similarly SSH client keys are associated with login certificates. For details, see [Certificate types](../../../c_st_setup/c_st_certificates/r_st_certificate_types#SetupMenu_1217491348_1126501).
 
-The Secure Socket Layer configuration includes an option to control the use of client certificates in SSL. This option also applies to the use of SSH client keys as described in <a href="../t_st_sslaccess_new#Specify" class="MCXref xref">Manage SSL access</a>.
+The Secure Socket Layer configuration includes an option to control the use of client certificates in SSL. This option also applies to the use of SSH client keys as described in [Manage SSL access](../t_st_sslaccess_new#Specify).
 
 > **Note:**
 >
@@ -24,4 +24,4 @@ The Secure Socket Layer configuration includes an option to control the use of c
 
 **Related topic:**
 
--   <a href="../t_st_sslaccess_new" class="MCXref xref">Manage SSL access</a>
+-   [Manage SSL access](../t_st_sslaccess_new)

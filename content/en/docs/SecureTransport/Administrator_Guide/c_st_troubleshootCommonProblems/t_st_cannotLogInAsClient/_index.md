@@ -16,11 +16,11 @@
 
 The following topics provide procedures for troubleshooting client log in problems:
 
--   <a href="t_st_license_issues" class="MCXref xref">License issues</a> - Provides how-to procedures for troubleshooting license issues.
--   <a href="t_st_connectivity_to_server_failed" class="MCXref xref">Connectivity to server failed</a> - Provides how-to procedures for troubleshooting connectivity issues.
--   <a href="t_st_siteminder_issues" class="MCXref xref">SiteMinder issues</a> - Provides how-to procedures for troubleshooting SiteMinder issues.
--   <a href="c_st_ldap_issues" class="MCXref xref">LDAP issues</a> - Provides how-to procedures for troubleshooting LDAP issues.
--   <a href="c_st_file_system_commands_not_functional" class="MCXref xref">File system commands not functional</a> - Provides how-to procedures for troubleshooting file system command functionality issues.
--   <a href="c_st_cannot_log_edge" class="MCXref xref">Cannot log in to SecureTransport Edge</a> - Provides how-to procedures for troubleshooting {{< SecureTransport/componentshortname >}} Edge log in issues.
--   <a href="c_st_client_certificate_authentication_fails" class="MCXref xref">Client certificate authentication fails</a> - Provides how-to procedures for troubleshooting client certificate authentication issues.
--   <a href="c_st_session_terminates_due_to_csrf_protection" class="MCXref xref">Session terminates due to CSRF protection</a> - Provides how-to procedures for troubleshooting session termination issues due to CSRF protection.
+-   [License issues](t_st_license_issues) - Provides how-to procedures for troubleshooting license issues.
+-   [Connectivity to server failed](t_st_connectivity_to_server_failed) - Provides how-to procedures for troubleshooting connectivity issues.
+-   [SiteMinder issues](t_st_siteminder_issues) - Provides how-to procedures for troubleshooting SiteMinder issues.
+-   [LDAP issues](c_st_ldap_issues) - Provides how-to procedures for troubleshooting LDAP issues.
+-   [File system commands not functional](c_st_file_system_commands_not_functional) - Provides how-to procedures for troubleshooting file system command functionality issues.
+-   [Cannot log in to SecureTransport Edge](c_st_cannot_log_edge) - Provides how-to procedures for troubleshooting {{< SecureTransport/componentshortname >}} Edge log in issues.
+-   [Client certificate authentication fails](c_st_client_certificate_authentication_fails) - Provides how-to procedures for troubleshooting client certificate authentication issues.
+-   [Session terminates due to CSRF protection](c_st_session_terminates_due_to_csrf_protection) - Provides how-to procedures for troubleshooting session termination issues due to CSRF protection.

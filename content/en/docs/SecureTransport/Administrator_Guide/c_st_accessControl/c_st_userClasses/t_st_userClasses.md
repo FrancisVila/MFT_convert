@@ -6,17 +6,17 @@
 
 The following topics provide user class examples and how-to instructions for managing user classes:
 
--   <a href="#Add" class="MCXref xref">Add a user class</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable a user class</a>
--   <a href="#Edit" class="MCXref xref">Edit a user class</a>
--   <a href="#Reorder" class="MCXref xref">Reorder user classes</a>
--   <a href="#Delete" class="MCXref xref">Delete a user class</a>
--   <a href="#User" class="MCXref xref">User class examples</a>
+-   [Add a user class](#Add)
+-   [Enable or disable a user class](#Enable)
+-   [Edit a user class](#Edit)
+-   [Reorder user classes](#Reorder)
+-   [Delete a user class](#Delete)
+-   [User class examples](#User)
 
 **Related topics:**
 
--   <a href="../c_st_default_user_classes" class="MCXref xref">Default user classes</a>
--   <a href="../c_st_custom_expressions" class="MCXref xref">Custom expressions</a>
+-   [Default user classes](../c_st_default_user_classes)
+-   [Custom expressions](../c_st_custom_expressions)
 
 <span id="Add"></span>
 
@@ -38,9 +38,9 @@ Use the following procedure to add a user class.
 6.  In the **User Group** field, enter one of the following:
     -   The name or numerical GID of the group assigned to the user. If all characters are numeric, the value is a GID. Otherwise, it is group name. On Windows, the value can be either the Windows security identifier (SID) of the group or the GID from the `group` file.
     -   An asterisk (`*`) to include users in all groups.
-7.  In the **From Address** field, enter a host name, a host name pattern, an IP address, or subnet specification. For valid values, see <a href="../../../c_st_ipaddressesandhostnames" class="MCXref xref">IP addresses and host names</a>.  
+7.  In the **From Address** field, enter a host name, a host name pattern, an IP address, or subnet specification. For valid values, see [IP addresses and host names](../../../c_st_ipaddressesandhostnames).  
     Only one host name, an IP address, or subnet specification is allowed.
-8.  To define the user class using other user attributes or LDAP attributes, enter a **Custom expression**. See <a href="../c_st_custom_expressions#Custom" class="MCXref xref">Custom expressions</a>.
+8.  To define the user class using other user attributes or LDAP attributes, enter a **Custom expression**. See [Custom expressions](../c_st_custom_expressions#Custom).
 9.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon2_13x13.png)) in the **Edit** column.  
     The status of a new user class is set to Disabled.
 

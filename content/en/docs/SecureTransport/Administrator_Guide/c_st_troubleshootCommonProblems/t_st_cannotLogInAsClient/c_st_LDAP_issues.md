@@ -10,14 +10,14 @@
 -   Check that for each LDAP-based user, the settings allow the user to obtain the UID/GID (UNIX-based systems only), user type, and home directory either from the LDAP directory (using attribute mapping) or through the user defaults. Make sure that the user home directory exists and has the correct permissions. You can set up a login agent for this purpose.
 -   Make sure that you use the correct LDAP Protocol version, and the LDAP server is the same version as the one selected in the {{< SecureTransport/componentshortname >}} Administration Tool on the *LDAP Server* page.
 -   Try using the `ldapsearch` command from the command line. If the command fails, you might have an incorrect search query or insufficient credentials.
--   If you are not using attribute mapping, make sure that the home directory exists in the LDAP User Default and that the entry is enabled. For more information, see <a href="../../../c_st_authentication/c_st_ldap_logins#LDAP" class="MCXref xref">LDAP logins</a>.
+-   If you are not using attribute mapping, make sure that the home directory exists in the LDAP User Default and that the entry is enabled. For more information, see [LDAP logins](../../../c_st_authentication/c_st_ldap_logins#LDAP).
 
 **Related topics:**
 
--   <a href="../t_st_license_issues" class="MCXref xref">License issues</a>
--   <a href="../t_st_connectivity_to_server_failed" class="MCXref xref">Connectivity to server failed</a>
--   <a href="../t_st_siteminder_issues" class="MCXref xref">SiteMinder issues</a>
--   <a href="../c_st_file_system_commands_not_functional" class="MCXref xref">File system commands not functional</a>
--   <a href="../c_st_cannot_log_edge" class="MCXref xref">Cannot log in to SecureTransport Edge</a>
--   <a href="../c_st_client_certificate_authentication_fails" class="MCXref xref">Client certificate authentication fails</a>
--   <a href="../c_st_session_terminates_due_to_csrf_protection" class="MCXref xref">Session terminates due to CSRF protection</a>
+-   [License issues](../t_st_license_issues)
+-   [Connectivity to server failed](../t_st_connectivity_to_server_failed)
+-   [SiteMinder issues](../t_st_siteminder_issues)
+-   [File system commands not functional](../c_st_file_system_commands_not_functional)
+-   [Cannot log in to SecureTransport Edge](../c_st_cannot_log_edge)
+-   [Client certificate authentication fails](../c_st_client_certificate_authentication_fails)
+-   [Session terminates due to CSRF protection](../c_st_session_terminates_due_to_csrf_protection)

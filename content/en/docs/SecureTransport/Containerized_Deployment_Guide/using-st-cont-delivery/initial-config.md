@@ -58,7 +58,7 @@ To successfully implement Passive FTP in a Containerized Deployment, the followi
     -   Must keep an up to date list of available Edge Pods as the K8S StatefulSet scales up or down
     -   Understands the Proxy protocol and performs "Sticky Session" routing based on real client source IP address forwarded by the Reverse Proxy
 
-You can find more information with sample HAProxy and Kubernetes manifest in the <a href="../deployment-prerequisites" class="MCXref xref">Deployment prerequisites</a>.
+You can find more information with sample HAProxy and Kubernetes manifest in the [Deployment prerequisites](../deployment-prerequisites).
 
 ### Configuration in SecureTransport
 
@@ -140,4 +140,4 @@ Note that mounting directory will override the contents of the plugins directory
    </tbody>
 </table>
 
-*next topic:* <a href="../scale-deployment" class="MCXref xref">Scale the deployment</a>
+*next topic:* [Scale the deployment](../scale-deployment)

@@ -10,5 +10,5 @@ If your {{< SecureTransport/componentshortname  >}} deployment includes {{< Secu
 
 The following topics describe the FTP SITE command and the how-to instructions for managing FTP command restrictions:
 
--   <a href="c_st_ftp_site_command" class="MCXref xref">FTP SITE command</a> - Describes the FTP SITE command.
--   <a href="t_st_ftpcommandrestrictions" class="MCXref xref">Manage FTP command restrictions</a> - Provides how-to instructions for managing FTP command restrictions.
+-   [FTP SITE command](c_st_ftp_site_command) - Describes the FTP SITE command.
+-   [Manage FTP command restrictions](t_st_ftpcommandrestrictions) - Provides how-to instructions for managing FTP command restrictions.

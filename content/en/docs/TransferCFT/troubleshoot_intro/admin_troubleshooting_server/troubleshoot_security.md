@@ -189,14 +189,14 @@ A message similar to the following is displayed in the catalog:
 
 ## Unknown CA leads to a failed certificate verification
 
-In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
-When working with multiple <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> versions
+When working with multiple {{< TransferCFT/transfercftname  >}} versions
 
-Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3 and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
+Given the differences in certificate verification described above, you could encounter issues when performing SSL transfers between, for example {{< TransferCFT/transfercftname  >}} 3.1.3 and {{< TransferCFT/transfercftname  >}} 3.4, depending on your configuration. This section presents an example of two Transfer CFTs where:
 
--   CFT1: is server and is a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3
--   CFT2: is client and is a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.4
+-   CFT1: is server and is a {{< TransferCFT/transfercftname >}} 3.1.3
+-   CFT2: is client and is a {{< TransferCFT/transfercftname >}} 3.4
 
 Example
 
@@ -206,7 +206,7 @@ Example
 Results
 
 -   During a simple authentication, CFT1 sends the A/B certificate chain, which CFT2 refuses because it is not complete (CFT2 requires the entire certificate chain).
--   An error occurs: <span class="code">SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR = 48 (Unknown CA: certificate verify failed)</span>
+-   An error occurs: `SSL Handshake local error [HANDSHAKE_FAILURE] CR = 48 (Unknown CA: certificate verify failed)`
 
 Workaround
 
@@ -217,7 +217,7 @@ To remedy this situation, on the client (CFT2 in our example):
 
 When migrating
 
-You should be mindful when migrating from <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> until you import and define the certificate chain as required for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> versions 3.2.x and higher.
+You should be mindful when migrating from {{< TransferCFT/transfercftname  >}} 3.1.3 or lower, that a previous configuration that was operational may not work with higher versions of {{< TransferCFT/transfercftname  >}} until you import and define the certificate chain as required for {{< TransferCFT/transfercftname  >}} versions 3.2.x and higher.
 
 ## Recovery and trace analysis
 
@@ -282,46 +282,10 @@ This section presents two scenarios for establishing a session between client an
 
 Client side traces
 
-PART CFTY19I LOOPSSL1 = SSL = SSL\_LOOP0 customer opening session on task CTX = 200003 pid = 3584  
-Information: Opening a client session with a context for isolating CTX transfer if there are many.
-
-CFTY02Z>&gt; CTX = 200003 **16030100** **3501**0000 3103014D AECAB8AD &gt;.... 5 ... 1 .. M. ... "
-
-CFTY02Z>&gt; CTX = 200003 355E939D EFFE380E 7B5C37C9 18FC993A> 5 ... 7 ..... 8 .....&lt;
-
-CFTY02Z>&gt; CTX = 200003 66A90F82 E271C992 D0972100 000A002F> q. .........&lt; f. ...
-
-Where the header is: 16 03 01 00 35 01
-
-16=> Handshake
-
-0301 => SSL V 3.1
-
-0035 => length of the following message (53 bytes)
-
-01=> message "Client hello" first message sent by the client to establish an SSL connection.
-
-CFTY02Z>&gt; CTX = 200003 ndata () \_ 47 RECEIVED FROM HANDSHAKE DATA NETWORK
-
-CFTY02Z>&gt; CTX = 200003 16030100 2A020000 2603014D AECAB899 &gt;........... M. ... "
-
-CFTY02Z>&gt; CTX = 200003 391A07A0 9B9E37A8 22A2704C CCD0179E> 9 ..... 7 ... ....&lt; pL
-
-CFTY02Z>&gt; CTX = 200003 69124259 8D79970A AC49B900 002F00> i.BY.y. I. .. ....&lt;
-
-16030100 2A02:
-
-02 => The client receives the message Server\_hello.
-
-CFTY02Z>&gt; CTX = 200003 ndata () \_ DATA RECEIVED FROM HANDSHAKE 1458 NETWORK
-
-CFTY02Z>&gt; CTX = 200003 16030105 AD0B0005 A90005A6 0001DD30 &gt;............... 0 &lt;
-
-CFTY02Z>&gt; CTX = 200003 8201D930 03020102 820142A0 02010330> ... B. .. 0 ....... 0 &lt;
-
-CFTY02Z>&gt; CTX = 200003 0D06092A 864886F7 0D010105 0500302B &gt;..... H. ....... 0. "
-
-16030105 AD0B:
+1.  PART CFTY19I LOOPSSL1 = SSL = SSL\_LOOP0 customer opening session on task CTX = 200003 pid = 3584  
+    Information: Opening a client session with a context for isolating CTX transfer if there are many.
+2.  CFTY02Z>&gt; CTX = 200003 ndata () \_ 47 RECEIVED FROM HANDSHAKE DATA NETWORK
+3.  CFTY02Z>&gt; CTX = 200003 ndata () \_ DATA RECEIVED FROM HANDSHAKE 1458 NETWORK
 
 -   0B => message Certificate
 -   The client receives the certificate sent by the server and verifies the authenticity of the certificate:

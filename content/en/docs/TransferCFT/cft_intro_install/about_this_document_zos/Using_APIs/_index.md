@@ -6,7 +6,7 @@
 that use a service. The service is followed by an application program.
 
 Each of these services is described in one of the following sections, which provides an overview
-of the service. Applications can address requests to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> via
+of the service. Applications can address requests to {{< TransferCFT/componentshortname  >}} via
 service call functions:
 
 -   [REST API]()
@@ -24,7 +24,7 @@ services can be called by programs in COBOL or in C language as described in thi
 
 <span id="About_CFT_Services"></span>
 
-## About <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> services
+## About {{< TransferCFT/componentshortname  >}} services
 
 You can query information related to correctly completed transfers.
 This information can be accessed in the communication structure.

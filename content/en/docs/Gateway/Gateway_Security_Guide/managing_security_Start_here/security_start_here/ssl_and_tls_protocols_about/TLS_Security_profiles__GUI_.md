@@ -2,11 +2,11 @@
     "title": "Managing TLS Security Profiles",
     "linkTitle": "Managing TLS Security Profiles",
     "weight": "240"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 A TLS Security Profile contains all the security configuration elements used to establish a TLS connection.
 
-To import a TLS Profile, use the <span class="code" style="font-weight: bold;">[secadm import\_sprof](../managing_tls_security_profiles_cli#secadm_import_sprof)</span> online command.
+To import a TLS Profile, use the `secadm import_sprof` online command.
 
 [Defining TLS Security Profiles](#Defining_TLS_Profiles)
 
@@ -21,7 +21,7 @@ To import a TLS Profile, use the <span class="code" style="font-weight: bold;">[
 To add a new TLS Profile to the profile database:
 
 1.  In the left pane of the GUI main window, click <img src="/Images/Gateway/expand_marker.gif" width="16" height="16" /> to expand the nodes:  
-    <span style="font-weight: bold;">Security Management > Transfer Security Management > Security Profile</span>
+    **Security Management > Transfer Security Management > Security Profile**
 2.  Right-click the <span style="font-weight: bold;">TLS Profile</span> sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.  
     Gateway displays the <span style="font-style: italic;">New TLS Profile</span> window.
 3.  Complete the fields of the following tabs as described below:

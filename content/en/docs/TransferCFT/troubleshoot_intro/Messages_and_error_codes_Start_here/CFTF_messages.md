@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -37,7 +37,7 @@ a file.</p>         </td>
          <td><p>Consequence</p>         </td>
          <td><p>The transfer is not executed. The corresponding entry in the
 catalog is set to the K state if RKERROR=KEEP and the catalog entry is
-deleted by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> if RKERROR=DELETE.</p>         </td>
+deleted by the {{< TransferCFT/componentshortname  >}} if RKERROR=DELETE.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
@@ -94,7 +94,7 @@ again.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td>When you set <span class="code">filenotfound</span> to <span class="code">ignore</span> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).         </td>
+         <td>When you set <code>filenotfound</code> to <code>ignore</code> in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
@@ -475,7 +475,7 @@ WFNAME =) an error was detected: the intermediate file could not be renamed.</p>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The file
-is correctly transferred but an error is reported to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+is correctly transferred but an error is reported to the {{< TransferCFT/componentshortname  >}}
 user.</p>         </td>
       </tr>
    </tbody>

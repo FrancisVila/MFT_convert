@@ -2,9 +2,9 @@
     "title": "PassPort AM persistent cache ",
     "linkTitle": "PassPort AM persistent cache ",
     "weight": "210"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
-When enabled, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> retrieves all permissions from the PassPort AM server and stores this information in the cache. This allows <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to continue to operate using the stored information if the PassPort AM server is non-operational.
+When enabled, {{< TransferCFT/componentshortname  >}} retrieves all permissions from the PassPort AM server and stores this information in the cache. This allows {{< TransferCFT/componentshortname  >}} to continue to operate using the stored information if the PassPort AM server is non-operational.
 
 > **Note:**
 >
@@ -45,7 +45,7 @@ When enabled, <span class="mc-variable axway_variables.Component_Short_Name vari
 
 ## Updating the cache
 
-When Transfer CFT or Copilot is configured to use PassPort AM , it periodically scans for changes in user rights. The changes are then saved in the file defined in <span class="code">am.passport.persistency.fname</span>. These scans occur at regular intervals as defined by the <span class="code">am.passport.persistency.check\_interval</span> parameter.
+When Transfer CFT or Copilot is configured to use PassPort AM , it periodically scans for changes in user rights. The changes are then saved in the file defined in `am.passport.persistency.fname`. These scans occur at regular intervals as defined by the `am.passport.persistency.check_interval` parameter.
 
 -   To force an immediate cache update, you can manually run CFTSXPAM (as described below).
 -   If a user (a non-superuser) is not listed in the cache and tries to start Transfer CFT, Transfer CFT cannot start and displays the [CFTX03W](../../../troubleshoot_intro/messages_and_error_codes_start_here/cftx_messages) error in the log. To fix, you can manually execute CFTSXPAM and restart Transfer CFT.
@@ -54,8 +54,8 @@ When Transfer CFT or Copilot is configured to use PassPort AM , it periodically 
 
 1.  Log on as a Transfer CFT superuser, meaning a user that is defined in `am.passport.superuser`.
 2.  Load the Transfer CFT profile.
-3.  Check that CFTSXPAM is enabled, <span class="code">am.passport.persistency.cftsxpam.enable = yes</span>.
-4.  Execute the command: <span class="code">CFTSXPAM</span>
+3.  Check that CFTSXPAM is enabled, `am.passport.persistency.cftsxpam.enable = yes`.
+4.  Execute the command: `CFTSXPAM`
 
 > **Note:**
 >
@@ -63,7 +63,7 @@ When Transfer CFT or Copilot is configured to use PassPort AM , it periodically 
 
 #### Recommendation
 
-When using LDAP in PassPort or <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for access management, it is highly recommended that you run the CFTSXPAM process offline prior to starting Transfer CFT, or the Transfer CFT Copilot server, if the persistent cache does not exist. Neglecting to do so could result in a significant delay in the first login.
+When using LDAP in PassPort or for access management, it is highly recommended that you run the CFTSXPAM process offline prior to starting Transfer CFT, or the Transfer CFT Copilot server, if the persistent cache does not exist. Neglecting to do so could result in a significant delay in the first login.
 
 > **Note:**
 >

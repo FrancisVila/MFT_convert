@@ -48,5 +48,5 @@ Paths specified in post-transmission options are treated as either relative to t
 
 **Related topics:**
 
--   <a href="../r_st_encryption_options" class="MCXref xref">Encryption options</a>
--   <a href="../t_st_subscriptions" class="MCXref xref">Manage subscriptions</a>
+-   [Encryption options](../r_st_encryption_options)
+-   [Manage subscriptions](../t_st_subscriptions)

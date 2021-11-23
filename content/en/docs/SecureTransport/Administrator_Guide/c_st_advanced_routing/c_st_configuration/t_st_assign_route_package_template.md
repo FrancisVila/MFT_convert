@@ -2,7 +2,7 @@
     "title": "Assign Route Package Template",
     "linkTitle": "Assign Route Package Template",
     "weight": "260"
-}To assign a Route Package Template to a user account or account template, you must create at least one Route Package Template prior to assigning a route to a user account or account template. For configuration details on managing and creating Route Package Templates, refer to <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
+}To assign a Route Package Template to a user account or account template, you must create at least one Route Package Template prior to assigning a route to a user account or account template. For configuration details on managing and creating Route Package Templates, refer to [Manage Route Package Templates](../t_st_manage_route_package_templates).
 
 1.  Select **Accounts > User Accounts**. The *User Accounts* page is displayed.
 
@@ -41,26 +41,26 @@
     1.  Determine the **Execution Rule**. Select either **All Matching Routes** (default) or **First Matching Route**.
     2.  When **All Matching Routes** is selected, all matching Routes are executed. When **First Matching Route** is selected, only the first matching Route is executed.
     3.  Click **New Route**.
-    4.  The *New Route Entry* page is displayed. For Route configuration information, refer to <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>.
-    5.  You can also edit, enable, disable, reorder, and delete Routes in the *Specific Settings* pane. For information on enabling, disabling, reordering, or deleting Routes, refer to <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>.
+    4.  The *New Route Entry* page is displayed. For Route configuration information, refer to [Manage Routes](../t_st_manage_routes).
+    5.  You can also edit, enable, disable, reorder, and delete Routes in the *Specific Settings* pane. For information on enabling, disabling, reordering, or deleting Routes, refer to [Manage Route Package Templates](../t_st_manage_route_package_templates).
 
 10. In the *Notifications* pane:  
-    As a prerequisite the SMTP settings must be configured by navigating to **Setup > Miscellaneous > SMTP Configuration** in the Administration Tool. For additional SMTP configuration information, refer to refer to <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>. Additionally, in order to add email notifications the administrator must have access to Mail Templates, otherwise this selection is disabled. Mail Templates access is configurable through the Administrative role settings.
-    For additional administrative role configuration information, refer to refer to <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.
-    1.  Select **Notify following e-mails on route failure** to be notified on route failure and enter a notification email address, list of addresses, or expression in the field. For additional email configuration information, refer to <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>.
-    2.  Select the **Mail Template** from the menu to used for route failure notifications. For email template configuration information, refer to <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
-    3.  Select **Notify following e-mails on route success** to be notified on route success and enter a notification email address, list of addresses, or expression in the field. For additional email configuration information, refer to <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>.
-    4.  Select the **Mail Template** from the menu to used for route success notifications. For email template configuration information, refer to <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
-    5.  Select **Notify following e-mails on route trigger** to be notified on route trigger and enter a notification email address, mail relay, or SMTP port in the field. For additional email configuration information, refer to <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>.
-    6.  Select the **Mail Template** from the menu to used for route triggering notifications. For email template configuration information, refer to <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+    As a prerequisite the SMTP settings must be configured by navigating to **Setup > Miscellaneous > SMTP Configuration** in the Administration Tool. For additional SMTP configuration information, refer to refer to [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration). Additionally, in order to add email notifications the administrator must have access to Mail Templates, otherwise this selection is disabled. Mail Templates access is configurable through the Administrative role settings.
+    For additional administrative role configuration information, refer to refer to [Manage administrator accounts](../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts).
+    1.  Select **Notify following e-mails on route failure** to be notified on route failure and enter a notification email address, list of addresses, or expression in the field. For additional email configuration information, refer to [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration).
+    2.  Select the **Mail Template** from the menu to used for route failure notifications. For email template configuration information, refer to [Mail templates](../../../c_st_setup/t_st_mailtemplates).
+    3.  Select **Notify following e-mails on route success** to be notified on route success and enter a notification email address, list of addresses, or expression in the field. For additional email configuration information, refer to [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration).
+    4.  Select the **Mail Template** from the menu to used for route success notifications. For email template configuration information, refer to [Mail templates](../../../c_st_setup/t_st_mailtemplates).
+    5.  Select **Notify following e-mails on route trigger** to be notified on route trigger and enter a notification email address, mail relay, or SMTP port in the field. For additional email configuration information, refer to [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration).
+    6.  Select the **Mail Template** from the menu to used for route triggering notifications. For email template configuration information, refer to [Mail templates](../../../c_st_setup/t_st_mailtemplates).
 
 11. Click **Save**.
 
 **Related topics:**
 
--   <a href="../t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a>
--   <a href="../t_st_create_user_accounts" class="MCXref xref">Create user accounts</a>
--   <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>
--   <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
--   <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>
--   <a href="../t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>
+-   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator)
+-   [Create user accounts](../t_st_create_user_accounts)
+-   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
+-   [Manage Route Package Templates](../t_st_manage_route_package_templates)
+-   [Manage Routes](../t_st_manage_routes)
+-   [Subscribe to Advanced Routing application](../t_st_subscribe_advanced_routing_application)

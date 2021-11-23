@@ -15,5 +15,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_account_template_required_values" class="MCXref xref">Account template required values</a>
--   <a href="../t_st_accounttemplates" class="MCXref xref">Manage account templates</a>
+-   [Account template required values](../c_st_account_template_required_values)
+-   [Manage account templates](../t_st_accounttemplates)

@@ -2,7 +2,7 @@
     "title": "Direct cluster workload",
     "linkTitle": "Direct cluster workload",
     "weight": "230"
-}As described in <a href="../../c_st_largeenterpriseclustermodel/c_st_workload_distribution" class="MCXref xref">Workload distribution</a>, an event processor directs events that represent workload tasks to the {{< SecureTransport/componentshortname  >}} Servers in the cluster. Using its default policies, the event processor directs all events associated with an account to the same set of servers. This policy improves the performance of the distributed object cache that {{< SecureTransport/componentshortname  >}} uses to avoid database fetches for object references. If all tasks associated with an account are performed by the same set of servers, the object that represents that account and related objects are cached at that server. This improves performance because the cache manager does not need to fetch them from another server.
+}As described in [Workload distribution](../../c_st_largeenterpriseclustermodel/c_st_workload_distribution), an event processor directs events that represent workload tasks to the {{< SecureTransport/componentshortname  >}} Servers in the cluster. Using its default policies, the event processor directs all events associated with an account to the same set of servers. This policy improves the performance of the distributed object cache that {{< SecureTransport/componentshortname  >}} uses to avoid database fetches for object references. If all tasks associated with an account are performed by the same set of servers, the object that represents that account and related objects are cached at that server. This improves performance because the cache manager does not need to fetch them from another server.
 
 In addition to the default account-based event management, event processor policies can direct events to particular servers based on attributes of each event. By default, the event processor uses a round-robin policy to direct events to servers in the set that is processing events for the account, directing each event to the next server in sequence.
 
@@ -104,12 +104,12 @@ where the environment variable is listed in `EventQueue.submissionConfigurator.a
 
 **Related topics:**
 
--   <a href="../c_st_cluster_prerequisites" class="MCXref xref">Enterprise Cluster prerequisites</a>
--   <a href="../t_st_setup_cluster" class="MCXref xref">Set up a cluster</a>
--   <a href="../t_st_add_server_to_cluster" class="MCXref xref">Add a server to a cluster</a>
--   <a href="../t_st_remove_server_from_cluster" class="MCXref xref">Remove a server from a cluster</a>
--   <a href="../t_st_view_cluster_status" class="MCXref xref">View cluster status</a>
--   <a href="../t_st_notification_of_cluster_status" class="MCXref xref">Notification of cluster status</a>
--   <a href="../t_st_setup_disaster_recovery_cluster" class="MCXref xref">Set up a disaster recovery cluster</a>
--   <a href="../t_st_maintain_disaster_recovery_cluster" class="MCXref xref">Maintain a disaster recovery cluster</a>
--   <a href="../t_st_dr_failover_fallback" class="MCXref xref">Disaster recovery failover and fallback</a>
+-   [Enterprise Cluster prerequisites](../c_st_cluster_prerequisites)
+-   [Set up a cluster](../t_st_setup_cluster)
+-   [Add a server to a cluster](../t_st_add_server_to_cluster)
+-   [Remove a server from a cluster](../t_st_remove_server_from_cluster)
+-   [View cluster status](../t_st_view_cluster_status)
+-   [Notification of cluster status](../t_st_notification_of_cluster_status)
+-   [Set up a disaster recovery cluster](../t_st_setup_disaster_recovery_cluster)
+-   [Maintain a disaster recovery cluster](../t_st_maintain_disaster_recovery_cluster)
+-   [Disaster recovery failover and fallback](../t_st_dr_failover_fallback)

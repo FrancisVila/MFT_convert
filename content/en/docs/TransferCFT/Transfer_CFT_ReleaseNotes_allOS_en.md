@@ -239,7 +239,7 @@ The table below lists the available Transfer CFT 3.8 features according to the v
       <tr>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Functionality         </th>
 <th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt"><p>Central Governance<br />
-<span style="font-size: 8pt;"> or Flow Manager </span></p>         </th>
+</p>         </th>
 <th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 8pt"><p>Transfer CFT user interface<br />
 </p>         </th>
       </tr>

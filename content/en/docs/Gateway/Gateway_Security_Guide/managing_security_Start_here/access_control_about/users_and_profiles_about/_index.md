@@ -2,7 +2,7 @@
     "title": " ",
     "linkTitle": "Users and Profiles",
     "weight": "140"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 # Users and Profiles
 
@@ -16,18 +16,18 @@
 
 [Access to Transfer Requests](#trans_req)
 
-This topic describes the <span style="font-style: italic;">User</span> and <span style="font-style: italic;">Profile</span> objects that Gateway uses to manage Access Control.
+This topic describes the *User* and *Profile* objects that Gateway uses to manage Access Control.
 
 Alternatively you can use:
 
--   [PassPort AM](../passport_am_about) to manage User Access Control for all products of the <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span>.
+-   [PassPort AM](../passport_am_about) to manage User Access Control for all products of the {{< Gateway/platformorsuiteshortname >}}.
 -   [Customizable user exits](../access_control_using_exits) to manage Access Control on Gateway
 
 <span id="users"></span>
 
 ### Users and Profiles
 
-You define each Gateway <span style="font-weight: bold;">User</span> by specifying a unique name, an access password and the name of the Profile object with which the User is associated. All Users, apart from the Administrator, must be associated with a specific Profile. All Users associated with the same Profile have identical rights.
+You define each Gateway **User** by specifying a unique name, an access password and the name of the Profile object with which the User is associated. All Users, apart from the Administrator, must be associated with a specific Profile. All Users associated with the same Profile have identical rights.
 
 Users only have access to their own User records (records bearing their names), unless they are administrators.
 

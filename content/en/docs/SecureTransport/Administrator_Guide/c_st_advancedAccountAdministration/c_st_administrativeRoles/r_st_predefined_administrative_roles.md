@@ -428,5 +428,5 @@ strator         </th>
 
 **Related topics:**
 
--   <a href="../r_st_add_administrative_role" class="MCXref xref">Add an administrative role</a>
--   <a href="../r_st_edit_administrative_role" class="MCXref xref">Edit an administrative role</a>
+-   [Add an administrative role](../r_st_add_administrative_role)
+-   [Edit an administrative role](../r_st_edit_administrative_role)

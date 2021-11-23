@@ -48,7 +48,7 @@ a record is sent or after it is received</li>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><span style="font-weight: bold;">masc</span> </p>         </td>
+         <td><p><strong>masc</strong> </p>         </td>
          <td><p>Mask for selecting stages<br />
 This field comprises 16 bytes; each byte can take the value 0 or 1 and
 is associated with a stage:</p>

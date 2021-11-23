@@ -3,7 +3,7 @@
     "linkTitle": "Typographical conventions",
     "weight": "200"
 }The typographical conventions specify the
-syntax to use in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands, the
+syntax to use in {{< TransferCFT/componentshortname  >}} commands, the
 parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
@@ -113,7 +113,7 @@ parameter is:
     \[ \]
 -   Reserved for transfer
     cases in PeSIT E
-    profile between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s
+    profile between two {{< TransferCFT/componentshortname >}}s
 
 <span id="Parameter_value_notation_conventions"></span>
 
@@ -259,9 +259,9 @@ notations are used in the detailed parameter descriptions.
 
 When using the CFTUTIL HELP command, as shown in the example below, the following rules apply to parameter values:
 
--   If <span class="code">STRING </span>is in upper case, the parameter value is not case sensitive
--   If <span class="code">String </span>is mixed case, the parameter value is case sensitive
--   If <span class="code">STRING or "String"</span>, the parameter value is only case sensitive when enclosed in quotes
+-   If `STRING `is in upper case, the parameter value is not case sensitive
+-   If `String `is mixed case, the parameter value is case sensitive
+-   If `STRING or "String"`, the parameter value is only case sensitive when enclosed in quotes
 
 Example
 
@@ -340,7 +340,7 @@ the compression algorithm </p>         </td>
          <td><p>HHMMSSSS</p>         </td>
       </tr>
       <tr>
-         <td><p>Transfer identifier assigned by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> </p>         </td>
+         <td><p>Transfer identifier assigned by {{< TransferCFT/componentshortname  >}} </p>         </td>
          <td><p>transid </p>         </td>
       </tr>
    </tbody>
@@ -447,7 +447,7 @@ protocol variants, indicated as follows:
       </tr>
       <tr>
          <td><p>PeSIT CFT/CFT</p>         </td>
-         <td><p>PeSIT protocol used between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s</p>         </td>
+         <td><p>PeSIT protocol used between two {{< TransferCFT/componentshortname  >}}s</p>         </td>
       </tr>
    </tbody>
 </table>

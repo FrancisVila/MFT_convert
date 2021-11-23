@@ -3,13 +3,13 @@
     "linkTitle": "MQUERY - Querying a component ",
     "weight": "290"
 }This page describes how to use the <span id="MQUERY_command"></span>MQUERY
-command to query the various <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> components.
+command to query the various {{< TransferCFT/componentshortname  >}} components.
 
 You can use this command to check transfers that should have started but are blocked, check a scheduled job that has not started, or to provide information when troubleshooting performance issues as shown in the examples below.
 
 The MQUERY command sends the requested internal information to display in the log.
 
-CFTUTIL command lets you list the allocation of <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> connections:
+CFTUTIL command lets you list the allocation of {{< TransferCFT/transfercftname  >}} connections:
 
 -   The connections by partners (IN,OUT and reserved in “retry”)
 -   The connections which are taken by protocols awaiting of FPDU.CONNECT (unknown partner)
@@ -46,10 +46,10 @@ OBJECT = SYSTEM
 
 OBJECT = STATS or PROBE
 
-\[ CONTENT = { <span style="text-decoration: underline;">XMLBRIEF</span>
+\[ CONTENT = {
 | XMLFULL | RAW } \]
 
-\[ NAME = { <span style="text-decoration: underline;">CAT</span>
+\[ NAME = {
 | COMMAND | CRON | DMZ| STAT } \]
 
 <table>
@@ -71,7 +71,7 @@ OBJECT = STATS or PROBE
 <ul>
 <li>CAT: Query of the catalog cache</li>
 <li>COMMAND: Query of the command cache</li>
-<li>CRON: Query the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> CRON cache</li>
+<li>CRON: Query the {{< TransferCFT/componentshortname  >}} CRON cache</li>
 <li>DMZ: Query of the DMZ cache</li>
 <li>STAT</li>
 </ul>         </td>

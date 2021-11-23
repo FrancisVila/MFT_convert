@@ -4,11 +4,11 @@
     "weight": "220"
 }This topic describes the roles and states for PeSIT protocol transfers.
 
--   <a href="#Roles" class="MCXref xref">Roles of transfer partners</a>
--   <a href="#Server_sender" class="MCXref xref">Server/Sender transfer states</a>
--   <a href="#Server_receiver" class="MCXref xref">Server/Receiver transfer states</a>
--   <a href="#Requester_receiver" class="MCXref xref">Requester/Receiver transfer states</a>
--   <a href="#Requester_sender" class="MCXref xref">Requester/Sender transfer states</a>
+-   [Roles of transfer partners](#Roles)
+-   [Server/Sender transfer states](#Server_sender)
+-   [Server/Receiver transfer states](#Server_receiver)
+-   [Requester/Receiver transfer states](#Requester_receiver)
+-   [Requester/Sender transfer states](#Requester_sender)
 
 <span id="Roles"></span>
 
@@ -232,12 +232,12 @@ This corresponds to SIT Push in {{< SecureTransport/componentshortname  >}} term
 
 **Related topics:**
 
--   <a href="../r_st_sentineleventstates" class="MCXref xref">Event states</a>
--   <a href="../r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>
--   <a href="../c_st_aboutxfb_to" class="MCXref xref">About XFB Transfer tracked objects</a>
--   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
--   <a href="../r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>
--   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
--   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
--   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>
+-   [Event states](../r_st_sentineleventstates)
+-   [Axway Sentinel tracked objects](../r_st_sentineltrackedobjects)
+-   [About XFB Transfer tracked objects](../c_st_aboutxfb_to)
+-   [PeSIT protocol](../r_st_pesit_protocol)
+-   [XFB Tracked Object attributes](../r_st_xfb_toattributes)
+-   [CycleId calculation](../r_st_cycleid)
+-   [Axway Sentinel dashboards]()
+-   [Axway Sentinel requests](../r_st_sentinelrequests)
+-   [Configure SecureTransport to send events to Axway Sentinel](../t_st_sentinel)

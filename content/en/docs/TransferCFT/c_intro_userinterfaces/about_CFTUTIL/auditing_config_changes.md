@@ -36,7 +36,7 @@ containing:
 -   Return message attribute
 -   Sentinel.xfb.audit
 
-<span class="bold_in_para">Example </span>
+**Example**
 
 /Action=CREATE /Object=CFTSEND /id=ZZ /user=My\_Company\\giovanip /groupid= /owner= /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
 
@@ -159,7 +159,7 @@ is the Update Time for the object         </td>
 
 ## Disable XFB.Log
 
-By default, `sentinel.xfb.log` is set to <span class="code">IEWF </span>(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
+By default, `sentinel.xfb.log` is set to `IEWF `(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
 
 
     CFTUTIL uconfset id=sentinel.xfb.log, value=' '

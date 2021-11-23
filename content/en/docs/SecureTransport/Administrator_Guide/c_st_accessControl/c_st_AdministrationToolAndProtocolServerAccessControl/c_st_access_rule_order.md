@@ -30,5 +30,5 @@ A more general allow rule overrides a more specific deny rule, So to deny access
 
 **Related topics:**
 
--   <a href="../t_st_enablehostnamesforaccesscontrol" class="MCXref xref">Enable host names for access control</a>
--   <a href="../t_st_administrationtoolandprotocolserveraccess" class="MCXref xref">Manage protocol server access</a>
+-   [Enable host names for access control](../t_st_enablehostnamesforaccesscontrol)
+-   [Manage protocol server access](../t_st_administrationtoolandprotocolserveraccess)

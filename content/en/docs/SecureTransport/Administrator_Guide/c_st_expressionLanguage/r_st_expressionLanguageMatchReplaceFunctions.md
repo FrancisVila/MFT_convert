@@ -20,7 +20,7 @@ If the match succeeds, the value is `true`. If it does not, the value is `false`
 >
 > The match operation returns a logical value that can be used with relational or conditional operators.
 
-For more about regular expressions, see <a href="../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920" class="MCXref xref">Regular expressions</a>.
+For more about regular expressions, see [Regular expressions](../../c_st_regularexpressions#Appendix_Reg_Ex_3207565968_1044920).
 
 ## Regular expression examples
 

@@ -10,17 +10,17 @@
 
 The following sections list the XFB tracked object roles, sender and receivers, production identification, and transfer attributes:
 
--   <a href="#Tracked_roles" class="MCXref xref">Tracked object roles</a>
--   <a href="#Tracked_sender_receivers" class="MCXref xref">Tracked object sender and receivers</a>
--   <a href="#Tracked_prod_id" class="MCXref xref">Tracked object product identification</a>
--   <a href="#Tracked_transfer_user" class="MCXref xref">Tracked object transfer users</a>
--   <a href="#Tracked_transfer_id" class="MCXref xref">Tracked object transfer identification</a>
--   <a href="#Tracked_date_time" class="MCXref xref">Tracked object transfer dates and times</a>
--   <a href="#Tracked_protocol" class="MCXref xref">Tracked object transfer protocols</a>
--   <a href="#Tracked_options" class="MCXref xref">Tracked object transfer options</a>
--   <a href="#Tracked_size" class="MCXref xref">Tracked object transfer size</a>
--   <a href="#Tracked_structure" class="MCXref xref">Tracked object transfer structure and content</a>
--   <a href="#Tracked_other" class="MCXref xref">Tracked object other attributes</a>
+-   [Tracked object roles](#Tracked_roles)
+-   [Tracked object sender and receivers](#Tracked_sender_receivers)
+-   [Tracked object product identification](#Tracked_prod_id)
+-   [Tracked object transfer users](#Tracked_transfer_user)
+-   [Tracked object transfer identification](#Tracked_transfer_id)
+-   [Tracked object transfer dates and times](#Tracked_date_time)
+-   [Tracked object transfer protocols](#Tracked_protocol)
+-   [Tracked object transfer options](#Tracked_options)
+-   [Tracked object transfer size](#Tracked_size)
+-   [Tracked object transfer structure and content](#Tracked_structure)
+-   [Tracked object other attributes](#Tracked_other)
 
 <span id="Tracked_roles"></span>
 
@@ -1109,12 +1109,12 @@ The Session ID could be used to query the server log for a particular session.  
 
 **Related topics:**
 
--   <a href="../r_st_sentineleventstates" class="MCXref xref">Event states</a>
--   <a href="../r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>
--   <a href="../c_st_aboutxfb_to" class="MCXref xref">About XFB Transfer tracked objects</a>
--   <a href="../r_st_pesit_protocol" class="MCXref xref">PeSIT protocol</a>
--   <a href="../r_st_listofpesitstates" class="MCXref xref">List of PeSIT states</a>
--   <a href="../r_st_cycleid" class="MCXref xref">CycleId calculation</a>
--   <a href="" class="MCXref xref">Axway Sentinel dashboards</a>
--   <a href="../r_st_sentinelrequests" class="MCXref xref">Axway Sentinel requests</a>
--   <a href="../t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>
+-   [Event states](../r_st_sentineleventstates)
+-   [Axway Sentinel tracked objects](../r_st_sentineltrackedobjects)
+-   [About XFB Transfer tracked objects](../c_st_aboutxfb_to)
+-   [PeSIT protocol](../r_st_pesit_protocol)
+-   [List of PeSIT states](../r_st_listofpesitstates)
+-   [CycleId calculation](../r_st_cycleid)
+-   [Axway Sentinel dashboards]()
+-   [Axway Sentinel requests](../r_st_sentinelrequests)
+-   [Configure SecureTransport to send events to Axway Sentinel](../t_st_sentinel)

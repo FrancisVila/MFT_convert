@@ -10,15 +10,15 @@ The SecureTransport Containerized Deployment Guide describes how to install, dep
 
 ## For new users
 
-<a href="intro_overview" class="MCXref xref">Introduction</a>
+[Introduction](intro_overview)
 
 ## For existing users
 
-<a href="using-st-cont-delivery" class="MCXref xref">Deploy SecureTransport on Kubernetes</a>
+[Deploy SecureTransport on Kubernetes](using-st-cont-delivery)
 
-<a href="using-st-cont-delivery/update-st" class="MCXref xref">Update the deployment</a>
+[Update the deployment](using-st-cont-delivery/update-st)
 
-<a href="k8s-known-issues" class="MCXref xref">Known limitations and deployment specifics</a>
+[Known limitations and deployment specifics](k8s-known-issues)
 
 ## Get more help
 

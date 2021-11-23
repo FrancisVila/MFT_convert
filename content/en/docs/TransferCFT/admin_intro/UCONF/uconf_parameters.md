@@ -13,7 +13,7 @@ and grouped into the following categories:
     parameters](#Work)
 -   [Common parameters](#Common)
 -   [Trace parameters](#Trace)
--   [<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+-   [{{< TransferCFT/componentshortname >}}
     probe configuration](#Transfer2)
 -   [Add a character set: transcoding](#Add)
 -   [Accounting records](#Statisti)
@@ -261,12 +261,12 @@ The following table lists the UCONF identifiers, default values, and former Wind
       <tr>
          <td><p>cft.working_dir  </p>         </td>
          <td><p>$(cft.runtime_dir) </p>         </td>
-         <td><p>Sets the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> work-environment </p>         </td>
+         <td><p>Sets the {{< TransferCFT/componentshortname  >}} work-environment </p>         </td>
       </tr>
       <tr>
          <td><p>cft.idparm </p>         </td>
          <td><p>IDPARM0  </p>         </td>
-         <td><p>Sets the IDPARM to use in Copilot (GUI) and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (optional)  </p>         </td>
+         <td><p>Sets the IDPARM to use in Copilot (GUI) and {{< TransferCFT/componentshortname  >}} (optional)  </p>         </td>
       </tr>
    </tbody>
 </table>
@@ -434,9 +434,9 @@ Win:$CFTLOG(cft.ini) / Unix: _CFTLOG</p>         </td>
 
 <span id="Transfer2"></span>
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> probe configuration
+## {{< TransferCFT/componentshortname  >}} probe configuration
 
-Use the following parameters to define <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> probes.
+Use the following parameters to define {{< TransferCFT/componentshortname  >}} probes.
 
 <table>
    <thead>
@@ -532,7 +532,7 @@ Use the following parameters to define <span class="mc-variable axway_variables.
       <tr>
          <td>cft.cftlog.switch_on_stop         </td>
          <td>No         </td>
-         <td>Dictates if the switch log occurs at <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server shutdown         </td>
+         <td>Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown         </td>
       </tr>
    </tbody>
 </table>
@@ -624,7 +624,7 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 
 ### Startup configuration
 
-PURGE when starting <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is now configurable, with the following options:
+PURGE when starting {{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
 
 <table>
    <thead>
@@ -638,12 +638,12 @@ PURGE when starting <span class="mc-variable axway_variables.Component_Short_Nam
       <tr>
          <td>cft.purge.enable_on_start         </td>
          <td>Yes         </td>
-         <td>Condition if the purge must be run on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> startup.         </td>
+         <td>Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.         </td>
       </tr>
       <tr>
          <td>cft.purge.background_on_start         </td>
          <td>Yes         </td>
-         <td>Condition if the purge must be run on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> startup.         </td>
+         <td>Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.         </td>
       </tr>
       <tr>
          <td>cft.purge.quantity         </td>
@@ -772,7 +772,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
       <tr>
          <td>cft.accnt.enable_extended_byte_fields         </td>
          <td>No         </td>
-         <td><p>For each completed transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).</p>
+         <td><p>For each completed transfer, {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).</p>
 <p>Possible values are:</p>
 <ul>
 <li>No: The FBYTE and NBYTE fields are filled.</li>
@@ -812,7 +812,7 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 <li>Yes= The phase state is fully compatible with the states in versions prior to 3.0.</li>
 <li>No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.</li>
 </ul>
-<p><span class="bold_in_para">Note</span>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>         </td>
+<p><strong>Note</strong>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>         </td>
       </tr>
    </tbody>
 </table>

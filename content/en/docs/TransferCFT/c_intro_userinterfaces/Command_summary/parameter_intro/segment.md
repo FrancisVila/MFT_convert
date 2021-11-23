@@ -25,7 +25,7 @@ This option is not negotiated.
 <!-- -->
 
 -   **YES** (default): "Systematic"
-    segmentation, which is implemented by <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> to complete a "data unit" (NSDU).
+    segmentation, which is implemented by {{< TransferCFT/transfercftname >}} to complete a "data unit" (NSDU).
     This option relates to all record sizes, and is only effective
     if used with the option CONCAT = YES.
 
@@ -34,7 +34,7 @@ a Transfer CFT that supports concatenation of DTF (complete record) and DTFDA
 (start of record), DTFMA (middle of record) or DTFFA (end of record) FPDUs
 in a given data unit (NSDU).
 
-In receiver mode, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> accepts
+In receiver mode, the {{< TransferCFT/componentshortname  >}} accepts
 the FPDUs of segmented records regardless of the local value of the SEGMENT
 parameter.
 

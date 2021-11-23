@@ -2,7 +2,7 @@
     "title": "Gateway Navigator",
     "linkTitle": "Gateway Navigator",
     "weight": "90"
-}<span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span> is a remote GUI that you can use to access <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>. It only runs on Windows platforms.
+}{{< Gateway/prodname  >}} is a remote GUI that you can use to access {{< Gateway/componentlongname  >}}. It only runs on Windows platforms.
 
 > **Note:**
 >
@@ -21,11 +21,11 @@ To configure Gateway Navigator for installation, complete the following procedur
    </thead>
    <tbody>
       <tr>
-         <td><p><span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span>:<br />
+         <td><p>{{< Gateway/prodname  >}}:<br />
 Modules</p>         </td>
-         <td><p>Make sure the <span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span> items you want to install are selected:</p>
+         <td><p>Make sure the {{< Gateway/prodname  >}} items you want to install are selected:</p>
 <ul>
-<li><span style="font-weight: bold;"><span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span></span></li>
+<li><strong><span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span></strong></li>
 <li><span style="font-weight: bold;">Extract Package and update environment</span>
 <ul>
 <li><span style="font-weight: bold;">Shortcut</span></li>

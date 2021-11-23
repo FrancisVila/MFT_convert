@@ -73,7 +73,7 @@ Start the rollback process by uploading the Transfer CFT installation package in
 >
 > The user performing the upgrade requires the same rights as for a regular installation or update (\*JOBCTL, \*SPLCTL, and \*ALLOBJ).
 
-1.  Call the UPGRADE command for your <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>. Applying an UPGRADE of a version older than the version of your <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> rolls it back to this older version, but keeps your configuration.
+1.  Call the UPGRADE command for your {{< TransferCFT/transfercftname >}}. Applying an UPGRADE of a version older than the version of your {{< TransferCFT/transfercftname >}} rolls it back to this older version, but keeps your configuration.
 
 In rollback mode, the UPGRADE command prompt resembles the following screen:
 
@@ -93,7 +93,7 @@ The following fields are mandatory; you should complete as per your system detai
 -   CFTPGM: Enter the name of the library containing the binaries of your Transfer CFT to upgrade.
 -   CFTPROD: Enter the name of the library containing the working files of your Transfer CFT to upgrade.
 -   ROLLBACK: '1': Enables the rollback mode (YES).  
-    ‘2’: Indicates that you are NOT rolling back to a previous <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> version (NO).
+    ‘2’: Indicates that you are NOT rolling back to a previous {{< TransferCFT/transfercftname >}} version (NO).
 -   SAVF: This field only displays when you enter '1' in the ROLLBACK field. In this case, enter the name of the SAVF for the version you want to apply. The default value is the name of SAVF for the version that you downloaded.
 
 > **Note:**
@@ -141,7 +141,7 @@ To roll back to version 3.6 or lower:
 
 1.  Follow the [Upload instructions](#Upload) to upload the rollback version SAVF to a temporary library, for example CFTTMP.
 2.  Restore the SAVF in CFTTMP.
-3.  Repeat the [Upload instructions](#Upload) to upload the most recent <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> version SAVF to a second temporary library, for example CFTTMP2.
+3.  Repeat the [Upload instructions](#Upload) to upload the most recent {{< TransferCFT/transfercftname >}} version SAVF to a second temporary library, for example CFTTMP2.
 4.  Add the CFTTMP2 temporary library in the first position of your library list.
 
 <!-- -->
@@ -163,8 +163,8 @@ To roll back to version 3.6 or lower:
 
 ### Prerequisites
 
--   Save all the CFTPGM and CFTPROD before installing Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span>.
--   Install to upgrade from <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.4, 3.5, 3.6 (3.x) to <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Release_Number variable">3.9</span>.
+-   Save all the CFTPGM and CFTPROD before installing Transfer CFT {{< TransferCFT/releasenumber >}}.
+-   Install to upgrade from {{< TransferCFT/hflongproductname >}} 3.4, 3.5, 3.6 (3.x) to {{< TransferCFT/hflongproductname >}} {{< TransferCFT/releasenumber >}}.
 
 ### Manual procedure
 
@@ -174,7 +174,7 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 
     CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=FROMCAT, ifname=CFTPROD/CAT, ofname=CFTUPGLIB/CAT35’)
 
-    Where <span style="font-family: 'Courier New';">CFTUPGLIB</span> is a temporary backup library.
+    Where is a temporary backup library.
 
 2.  Downgrade from Transfer CFT 3.6 to Transfer CFT 3.x version:
     1.  Rename CFTPGM and CFTPROD.
@@ -185,8 +185,6 @@ Perform the following tasks (we use 3.x in this example step procedure to indica
 4.  Create a new Transfer CFT catalog file.
 
 5.  Import the saved cftcat\_35 to the new Transfer CFT catalog file:
-
-    <span style="font-family: 'Courier New';">CFTMI migr type=cat,direct=tocat,ifname=cftcat\_35,ofname=$CFTCATA</span>
 
 6.  On the IBM i system:
 

@@ -12,4 +12,4 @@ User limits do not apply to protocol servers other than FTP and HTTP.
 
 The following topic describes how to manage user limits:
 
--   <a href="t_st_userlimits" class="MCXref xref">Manage user limits</a> - Provide how-to instructions for managing user limits.
+-   [Manage user limits](t_st_userlimits) - Provide how-to instructions for managing user limits.

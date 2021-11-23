@@ -2,11 +2,11 @@
     "title": "Installation Guide",
     "linkTitle": "Installation Guide",
     "weight": "20"
-}# <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> <span class="mc-variable axway_variables.Component_Version variable">6.17</span> Installation Guide
+}# {{< Gateway/componentshortname  >}} {{< Gateway/componentversion  >}} Installation Guide
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>Installation Guide provides instructions and details for installing and uninstalling <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> on supported UNIX-based platforms and Microsoft Windows.
+The {{< Gateway/componentshortname  >}}Installation Guide provides instructions and details for installing and uninstalling {{< Gateway/componentshortname  >}} on supported UNIX-based platforms and Microsoft Windows.
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> is part of the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> family of managed file transfer (MFT) products. <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> allows organizations to adeptly control and manage the transfer of files inside and outside of the corporate firewall in support of mission-critical business processes, while satisfying policy and regulatory compliance requirements.
+{{< Gateway/componentlongname  >}} is part of the {{< Gateway/companyname  >}} family of managed file transfer (MFT) products. {{< Gateway/componentshortname  >}} allows organizations to adeptly control and manage the transfer of files inside and outside of the corporate firewall in support of mission-critical business processes, while satisfying policy and regulatory compliance requirements.
 
 ## For new users
 
@@ -30,6 +30,6 @@ To learn more about Axway's technologies, check out the offer of free on-line co
 
 Axway also organizes instructor-led classes. For more information, visit [Training and certification](https://www.axway.com/en/services/training-certification).
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

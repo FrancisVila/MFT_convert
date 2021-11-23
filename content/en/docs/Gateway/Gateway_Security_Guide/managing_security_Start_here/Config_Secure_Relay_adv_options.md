@@ -2,9 +2,9 @@
     "title": "Configuring Secure Relay advanced options",
     "linkTitle": "Configuring Secure Relay - advanced options",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Configuration
+}{{< Gateway/componentlongname  >}}: Configuration
 
-This topic lists the Secure Relay parameters that you can modify in the <span style="font-style: italic;">Secure Relay advanced options</span> window. Gateway opens this window if you click the <span style="font-weight: bold;">Advanced...</span> button when configuring Secure Relay.
+This topic lists the Secure Relay parameters that you can modify in the *Secure Relay advanced options* window. Gateway opens this window if you click the **Advanced...** button when configuring Secure Relay.
 
 ## Options in the Secure Relay advanced options window
 

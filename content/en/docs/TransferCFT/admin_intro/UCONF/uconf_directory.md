@@ -12,17 +12,17 @@ If you have trouble viewing the entire table in your browser, click the arrow ic
 
 Parameter attributes in lower case
 
-Some uconf values contain logical\_name parameter attributes as part of the value, for example `aws.credentials.<logical_name>.access_key_id`. When processed, the logical\_name is replaced by the parent value, and is systematically converted to lower case.
+Some uconf values contain logical\_name parameter attributes as part of the value, for example `aws.credentials.<>.access_key_id`. When processed, the logical\_name is replaced by the parent value, and is systematically converted to lower case.
 
-Example when <span class="code">aws.credientials=<span style="color: #b22222;">Test</span></span>
+Example when `aws.credientials=Test`
 
 CFTUTIL listuconf id=aws.credentials.\*
 
-aws.credentials = <span style="color: #b22222;">Test</span>
+aws.credentials =
 
-aws.credentials.<span style="color: #b22222;">test</span>.access\_key\_id =
+aws.credentials..access\_key\_id =
 
-aws.credentials.<span style="color: #b22222;">test</span>.secret\_access\_key = \*\*\*\*\*\*\*\*
+aws.credentials..secret\_access\_key = \*\*\*\*\*\*\*\*
 
 Parameter list
 

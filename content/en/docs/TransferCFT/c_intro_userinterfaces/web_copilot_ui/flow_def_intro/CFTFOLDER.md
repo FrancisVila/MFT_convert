@@ -33,7 +33,7 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
          <td>No         </td>
          <td><ul>
 <li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> folder monitoring.</li>
+<li>Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>
 </ul>         </td>
       </tr>
       <tr>
@@ -270,7 +270,7 @@ The second one, when present, defines the separator after the timestamp.</p>
          <td><a href="../../../command_summary/parameter_intro/userid">USERID</a>         </td>
          <td>String         </td>
          <td>         </td>
-         <td><p><em>Available on UNIX and</em> <span class="mc-variable Primary.for_Windows variable" style="font-style: italic;">Windows</span> <em></em></p>
+         <td><p><em>Available on UNIX and</em> <em></em></p>
 <p>Identifier for a user who can scan a folder. See the section, <a href="../../../../app_integration_intro/intro_folder_monitor/configure_folder_monitoring#Folder2">Folder monitoring using USERCTRL</a>.</p>         </td>
       </tr>
    </tbody>
@@ -280,8 +280,8 @@ The second one, when present, defines the separator after the timestamp.</p>
 >
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
--   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
--   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |
+-   /
+-   For \\ / : \* ? " &lt; > |
 
 Related topics
 

@@ -10,11 +10,11 @@
 
 The following topics provide how-to instructions for managing filesystem restrictions:
 
--   <a href="#Add" class="MCXref xref">Add a filesystem restriction</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable a filesystem restriction</a>
--   <a href="#Edit" class="MCXref xref">Edit a filesystem restriction</a>
--   <a href="#Delete" class="MCXref xref">Delete a filesystem restriction</a>
--   <a href="#Example" class="MCXref xref">Example filesystem restriction</a>
+-   [Add a filesystem restriction](#Add)
+-   [Enable or disable a filesystem restriction](#Enable)
+-   [Edit a filesystem restriction](#Edit)
+-   [Delete a filesystem restriction](#Delete)
+-   [Example filesystem restriction](#Example)
 
 <span id="Add"></span>
 
@@ -26,7 +26,7 @@ Use the following procedure to add a filesystem restrictions.
 2.  Click the **Filesystem** tab.  
     The *Filesystem Restrictions* pane is displayed.
 3.  Click **New Entry**. A new line is displayed in the list.
-4.  Select an **Action** from the list. For description of the options, see <a href="../#AccessMenu_3475920566_1077119" class="MCXref xref">Filesystem restrictions</a>.
+4.  Select an **Action** from the list. For description of the options, see [Filesystem restrictions](../#AccessMenu_3475920566_1077119).
 5.  In the **Allowed** field, select **No** to deny the action or **Yes** to allow it.
 6.  In the **Class** field, select a user class. Asterisk (`*`) means all users.
 7.  In the **Path** field, type the path of the directory for which the restriction applies.  

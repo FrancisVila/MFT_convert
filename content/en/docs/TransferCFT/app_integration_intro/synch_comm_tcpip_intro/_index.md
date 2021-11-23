@@ -10,7 +10,7 @@ An additional benefit of synchronous communication is that you can use it for mo
 
 The alternative to synchronous mode is an asynchronous mode, which places the client data in a communication file where it waits to be picked up by the Transfer CFT server, at which point it is then listed in the catalog.
 
-Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> be started for the client to send data.
+Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that {{< TransferCFT/componentlongname  >}} be started for the client to send data.
 
  
 
@@ -22,7 +22,7 @@ There are two steps to set up synchronous communication in Transfer CFT, configu
 
 ### Configure the server
 
-Use the CFTCOM command to define the synchronous communication settings. In the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>, refer to **Transfer request mode &gt; synchronous**.
+Use the CFTCOM command to define the synchronous communication settings. In the {{< TransferCFT/centralgovernancename  >}} {{< TransferCFT/doctypeuser  >}}, refer to **Transfer request mode &gt; synchronous**.
 
 -   Port: Use the Transfer CFT server port that receives the client commands
 -   Maximum connection: Set the number of incoming connections on the Transfer CFT server
@@ -89,7 +89,7 @@ JPI client configuration consists of using a configuration file (the same elemen
 
 #### Web services
 
-When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format <span class="code">&lt;axw:CFTCOM\_ID>COM0&lt;/axw:CFTCOM\_ID></span> in the SOAP request.
+When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format `<axw:CFTCOM_ID>COM0</axw:CFTCOM_ID>` in the SOAP request.
 
 #### Transfer CFT UI
 

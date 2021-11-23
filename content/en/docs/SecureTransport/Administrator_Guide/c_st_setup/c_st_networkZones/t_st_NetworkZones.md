@@ -10,7 +10,7 @@
 
 **Related topic:**
 
--   <a href="" class="MCXref xref">Streaming deployment</a>
+-   [Streaming deployment]()
 
 ## Specify ports for internal TM server communications
 
@@ -44,7 +44,7 @@ Each network zone can define the communications between the TM Server on a {{< S
 4.  In the **Description** field, enter a description of the network zone to help you understand it purpose and use.
 
 5.  In the **Public URL Prefix** field, enter a prefix for the URLs displayed in notification emails send to ad hoc file transfer recipients.  
-    If a user is assigned to a business unit that references a network zone, emails to that user use the prefix specified in that network zone. If a user is not assigned to a business unit, emails to that user use the prefix specified in the default network zone. See <a href="#Set" class="MCXref xref">Set a default network zone</a>.
+    If a user is assigned to a business unit that references a network zone, emails to that user use the prefix specified in that network zone. If a user is not assigned to a business unit, emails to that user use the prefix specified in the default network zone. See [Set a default network zone](#Set).
 
 6.  In the **SSO Service Provider Entity ID** field, enter the Single Sign-On (SSO) service provider entity ID. If an entity ID is not provided, {{< SecureTransport/componentshortname >}} uses the entity ID under the `<ServiceProvider>` element from the `sso-enduser.xml` file.  
     When Single Sign-On is enabled and a user is successfully signed on to an Identity Provider (IdP), the IdP uses the specified entity ID to identify what network zone to redirect the user to.  
@@ -60,14 +60,14 @@ Each network zone can define the communications between the TM Server on a {{< S
 
 9.  In the **Title** field, enter a title for the node.
 
-10. If this server is part of a DR deployment, select the value for **Deployment Site**. For more information, see <a href="../../../c_st_largeenterpriseclustering/t_st_largeenterprisecluster/t_st_setup_disaster_recovery_cluster" class="MCXref xref">Set up a disaster recovery cluster</a>.
+10. If this server is part of a DR deployment, select the value for **Deployment Site**. For more information, see [Set up a disaster recovery cluster](../../../c_st_largeenterpriseclustering/t_st_largeenterprisecluster/t_st_setup_disaster_recovery_cluster).
 
 11. In the **Notes** field, enter information to help you understand the purpose and use of the node.
 
 12. Under *Streaming Configuration*, select the protocol servers that the TM Server connects to using this node of this network zone.
 
 13. For each enabled protocol server, enter the port for the TM Servers to connect to.  
-    For each {{< SecureTransport/componentshortname >}} Edge server configured under *Addresses*, for a connection to be successful, the {{< SecureTransport/componentshortname >}} Edge server must allow connection from this {{< SecureTransport/componentshortname >}} Server, the `Private` network zone must specify the same port for the protocol server, and the certificate must be trusted. See <a href="#Specify" class="MCXref xref">Specify allowed SecureTransport Servers on SecureTransport Edge</a> and <a href="#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.
+    For each {{< SecureTransport/componentshortname >}} Edge server configured under *Addresses*, for a connection to be successful, the {{< SecureTransport/componentshortname >}} Edge server must allow connection from this {{< SecureTransport/componentshortname >}} Server, the `Private` network zone must specify the same port for the protocol server, and the certificate must be trusted. See [Specify allowed SecureTransport Servers on SecureTransport Edge](#Specify) and [Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge](#Specify2).
 
 14. Under *Addresses*, click **Add Address**.
 
@@ -107,7 +107,7 @@ When you define an AS2, FTP(S), HTTP(S), PeSIT, or SSH transfer site, you can se
 6.  Under *Proxy*, select **Enable Proxy**.
 7.  Select the proxies, **SOCKS5** or **HTTP**, to configure in the node.
 8.  For each selected proxy:
-    1.  Enter the **Port**. The proxy server must listen for connections on this port. For the SOCKS5 proxy on {{< SecureTransport/componentshortname >}} Edge, configure the port for the proxy server on the *Server Control* page. See <a href="" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>. If you use a third-party proxy server, refer to its documentation to configure the port.
+    1.  Enter the **Port**. The proxy server must listen for connections on this port. For the SOCKS5 proxy on {{< SecureTransport/componentshortname >}} Edge, configure the port for the proxy server on the *Server Control* page. See [Manage the Proxy server on SecureTransport Edge](). If you use a third-party proxy server, refer to its documentation to configure the port.
     2.  (Optional) If required by the proxy server, enter a **Username** and, if also required, select **User Password** and enter a **Password**. The SOCKS5 proxy on {{< SecureTransport/componentshortname >}} Edge does not use this authentication.
 9.  For a new node, add the address of the {{< SecureTransport/componentshortname >}} Edge servers that run the SOCKS5 proxies or the addresses of the other proxy servers. If you selected **SOCKS5**, you must use IPv4 addresses. {{< SecureTransport/componentshortname >}} Server selects the servers at these address sequentially (round-robin) when it uses this node for server-initialed transfer.
 10. If DNS is not available on this {{< SecureTransport/componentshortname >}} Server, select **Use the Edge DNS configuration** to resolve transfer site host names and FQDNs using the DNS on the {{< SecureTransport/componentshortname >}} Edge so that {{< SecureTransport/componentshortname >}} can route transfers correctly.
@@ -118,7 +118,7 @@ When you define an AS2, FTP(S), HTTP(S), PeSIT, or SSH transfer site, you can se
 
 ## Set a default network zone
 
-Business units can specify a network zone that defines the public URL for users in that business unit. For details, see <a href="#Create" class="MCXref xref">Create or edit a business unit</a>. AS2, FTP(S), HTTP(S), PeSIT, and SSH transfer sites can specify a network zone that defines the proxy for that site. For details, see <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>. In all cases, you can select **Default** in the business unit or transfer site.
+Business units can specify a network zone that defines the public URL for users in that business unit. For details, see [Create or edit a business unit](#Create). AS2, FTP(S), HTTP(S), PeSIT, and SSH transfer sites can specify a network zone that defines the proxy for that site. For details, see [Transfer sites](../../../accounts/transfersites). In all cases, you can select **Default** in the business unit or transfer site.
 
 The default network zone defines the public URL for users in business units where you selected **Default** and for users who are not in a business unit. The default network zone also defines the proxy for transfer sites where you selected **Default**. If a transfer site selects the default network zone and no default is defined, transfers from that site fail.
 
@@ -143,7 +143,7 @@ Use the `Private` network zone to specify the ports and IP address that the prot
 3.  In the *Node List*, click `Host`.  
     The *Edit Network Zone Node* page is displayed.
 4.  For each enabled protocol server, enter the protocol server listens on for connections from TM Servers.  
-    For a connection to be successful, the {{< SecureTransport/componentshortname >}} Edge server must allow connection from this {{< SecureTransport/componentshortname >}} Server, there must be a network zone on a {{< SecureTransport/componentshortname >}} Server with these same ports configured for the host name or IP address of this {{< SecureTransport/componentshortname >}} Edge server and the certificate must be trusted on the {{< SecureTransport/componentshortname >}} Server. See <a href="#Specify" class="MCXref xref">Specify allowed SecureTransport Servers on SecureTransport Edge</a> and <a href="#Create" class="MCXref xref">Create a network zone to define communications with SecureTransport Edge servers</a>.
+    For a connection to be successful, the {{< SecureTransport/componentshortname >}} Edge server must allow connection from this {{< SecureTransport/componentshortname >}} Server, there must be a network zone on a {{< SecureTransport/componentshortname >}} Server with these same ports configured for the host name or IP address of this {{< SecureTransport/componentshortname >}} Edge server and the certificate must be trusted on the {{< SecureTransport/componentshortname >}} Server. See [Specify allowed SecureTransport Servers on SecureTransport Edge](#Specify) and [Create a network zone to define communications with SecureTransport Edge servers](#Create).
 5.  Under *Addresses*, Click the Edit icon (![Edit](/Images/SecureTransport/EditIcon_12x13.png)) for the `localhost` entry.
 6.  In the **Address** field, enter the IP address of the interface that the servers listen on for connections from TM Servers.
 7.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)).

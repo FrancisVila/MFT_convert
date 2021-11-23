@@ -2,7 +2,7 @@
     "title": "Automatic  catalog expansion",
     "linkTitle": "Automatic  catalog expansion",
     "weight": "300"
-}The<span class="italic_in_para"> auto-expand </span>catalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
+}Thecatalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 ## Overview
 
@@ -15,13 +15,13 @@ If you defined a timer for catalog alerts, TLVCLEAR, once the usage surpasses th
 
 ## Steps
 
-To enable the auto-expand option, with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> running:
+To enable the auto-expand option, with {{< TransferCFT/componentshortname  >}} running:
 
 1.  Set the uconf values for:
     -   cft.cftcat.auto\_expand\_percent
     -   cft.cftcat.auto\_expand\_max\_size
-2.  To activate the new values, run the command: <span class="code">CFTUTIL reconfig type = uconf</span>
-    -   If <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped when setting uconf values, you do not need to execute the <span class="code">reconfig </span>command.
+2.  To activate the new values, run the command: `CFTUTIL reconfig type = uconf`
+    -   If {{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the `reconfig `command.
 
 <table>
    <thead>
@@ -79,7 +79,7 @@ When you reach the TLVWRATE (level=80%), the following messages are sent to the 
 
 The new fill rate is now 80/120 = 66.66%, well below TLVCLEAR, so the alerts stops at next update (the send command in this example).
 
-The message <span class="span_1">CFTC30W Catalog Alert cleared : level=67% ID=CAT0</span> indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140), and the log displays:
 

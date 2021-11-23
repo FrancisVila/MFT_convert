@@ -6,7 +6,7 @@
 
 You require the following before you begin the Transfer CFT installation:
 
--   Download the ESD file from <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+-   Download the ESD file from {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 -   An FTP client that permits the transfer of files to the IBM i host.
 
 > **Note:**
@@ -17,7 +17,7 @@ You require the following before you begin the Transfer CFT installation:
 
 ## Installation and upload overview
 
-To install Transfer CFT <span class="span_1">IBM i</span>:
+To install Transfer CFT :
 
 -   Upload and restore the installation files as described in <a href="upload_ibm_i" class="MCXref xref">Upload and restore the installation files</a>.
 

@@ -12,5 +12,5 @@ For an Enterprise Cluster (EC), the clocks of all servers must be synchronized.
 
 **Related topics:**
 
--   <a href="../c_st_trust_establishment_issues" class="MCXref xref">Trust establishment issues</a>
--   <a href="../c_st_connectivity" class="MCXref xref">Connectivity</a>
+-   [Trust establishment issues](../c_st_trust_establishment_issues)
+-   [Connectivity](../c_st_connectivity)

@@ -2,7 +2,7 @@
     "title": "Installation outline",
     "linkTitle": "Installation outline",
     "weight": "70"
-}The following is a brief outline of the Windows {{< SecureTransport/componentshortname  >}} installation steps. For complete installation details and for appliance and UNIX installation steps, refer to <a href="../../install_overview" class="MCXref xref">Install SecureTransport</a> .
+}The following is a brief outline of the Windows {{< SecureTransport/componentshortname  >}} installation steps. For complete installation details and for appliance and UNIX installation steps, refer to [Install SecureTransport](../../install_overview) .
 
 1.  Download the {{< SecureTransport/componentshortname >}} software package file from [support.axway.com](https://support.axway.com/).
 

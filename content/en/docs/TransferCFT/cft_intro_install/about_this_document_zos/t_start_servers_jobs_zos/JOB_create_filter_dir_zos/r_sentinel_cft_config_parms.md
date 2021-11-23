@@ -265,7 +265,7 @@ The following parameters define communication with the Event Router via XCF. In 
 
 The following table describes the overflow file definition for the Logger file. In this setup:
 
--   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the <span class="mc-variable suite_variables.EventRouterName variable">Event Router</span> and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the <span class="mc-variable suite_variables.EventRouterName variable">Event Router</span>
+-   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/eventroutername >}}
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 <table>

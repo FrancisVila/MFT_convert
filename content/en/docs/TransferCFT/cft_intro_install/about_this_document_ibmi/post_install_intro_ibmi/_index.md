@@ -27,7 +27,7 @@ Other than during installation, which runs the Transfer CFT manager automaticall
 
 ## Create Transfer CFT system object
 
-Now that you have installed your <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
+Now that you have installed your {{< TransferCFT/hflongproductname  >}}, you will want to recreate Transfer CFT objects. Proceed to the Transfer CFT menu and press 4 to access the following options:
 
 1\. Create job queue.
 
@@ -35,7 +35,7 @@ Create a JOBQ object to launch Transfer CFT jobs using the default values.
 
 2\. Create job description.
 
-Create a JOBD object to launch Transfer CFT jobs using the default values. This programs the initial library list and the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> production libraries (CFTPGM and CFTPROD).
+Create a JOBD object to launch Transfer CFT jobs using the default values. This programs the initial library list and the {{< TransferCFT/hflongproductname  >}} production libraries (CFTPGM and CFTPROD).
 
 3\. Create subsystem.
 
@@ -63,7 +63,7 @@ Change the user profile of the current user to specify that the user now uses th
 
 ## Verify your installation
 
-See the installation if you encounter problems with starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.
+See the installation if you encounter problems with starting {{< TransferCFT/componentlongname  >}}.
 
 ### Installed directories
 
@@ -73,6 +73,6 @@ The act of installing Transfer CFT creates a library that contains product binar
 >
 > By default, this library is called CFTPGM.
 
-## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Register with
 
-If you intend to implement <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, please refer to the <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span> *User's Guide &gt; [*Register with* <span class="mc-variable Primary.CG or_UM variable" style="font-style: italic;">Central Governance</span>](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

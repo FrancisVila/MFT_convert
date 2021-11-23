@@ -14,20 +14,20 @@ Enabling this feature makes Axway Integrator perform a signature verification wi
 
 The key used by Gateway for signature validation at routing:
 
-• is the Gateway public key if the signature was manually set into <span class="code">peltrans</span>, in the <span class="code">sigfile</span> option
+• is the Gateway public key if the signature was manually set into `peltrans`, in the `sigfile` option
 
-• is the Integrator public key if the signature was manually set into the model used to route the file, in the <span class="code">sigfile </span>option
+• is the Integrator public key if the signature was manually set into the model used to route the file, in the `sigfile `option
 
 In more detail: if the following conditions are met:
 
--   the global configuration is activated (<span class="code"></span>if <span class="code">payload\_integrity\_option</span> is set to <span class="code">yes</span>)
+-   the global configuration is activated (``if `payload_integrity_option` is set to `yes`)
 -   the necessary parameters are set: Gateway private key, optionally the password of the key, Integrator public key
 
 then after Gateway has received data on SWIFTNet, PeSIT or JMS, it does the following:
 
 -   computes the signature of the payload using SHA256 hash algorithm,
 -   signs in with Gateway private key
--   stores it in the incoming transfer parameters (<span class="code">x\_sigalgo</span>, <span class="code">x\_signature</span>).
+-   stores it in the incoming transfer parameters (`x_sigalgo`, `x_signature`).
 -   if the incoming transfer is routed to Integrator, the signature of the transfer is also sent.
 
 ### Requests submitted locally
@@ -47,8 +47,8 @@ Using the payload security mechanism described in this chapter supposes you have
 
 -   a pair of keys to build/verify signatures, with a public key to perform signature verification on requests submitted by others
 -   local operations, including requests submitted directly in Gateway (via command line or GUI), are performed only with the Gateway key or keys.
--   The option is activated only when <span class="code">payload\_integrity\_option </span>is set to <span class="code">yes</span>. See <a href="opensslexample" class="MCXref xref">Working with Payload integrity</a>
+-   The option is activated only when `payload_integrity_option `is set to `yes`. See <a href="opensslexample" class="MCXref xref">Working with Payload integrity</a>
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

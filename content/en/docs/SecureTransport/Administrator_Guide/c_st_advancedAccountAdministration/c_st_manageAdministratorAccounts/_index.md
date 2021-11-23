@@ -72,11 +72,11 @@ For each administrator, you can view the information described in the following 
 
 The following topics provide how-to instructions for managing administrator accounts:
 
--   <a href="t_st_add_administrator_account" class="MCXref xref">Add an administrator account</a> - Provides how-to instructions for adding an administrator account.
--   <a href="t_st_edit_administrator_account" class="MCXref xref">Edit an administrator account</a> - Provides how-to instructions for editing an administrator account.
--   <a href="t_st_delete_administrator_account" class="MCXref xref">Delete an administrator account</a> - Provides how-to instructions for deleting an administrator account.
--   <a href="t_st_lock_administrator_account" class="MCXref xref">Lock an administrator account</a> - Provides how-to instructions for locking an administrator account.
--   <a href="t_st_unlock_administrator_account" class="MCXref xref">Unlock an administrator account</a> - Provides how-to instructions for unlocking an administrator account.
--   <a href="t_st_expire_administrator_account_password" class="MCXref xref">Expire an administrator account password</a> - Provides how-to instructions for expiring an administrator account password.
--   <a href="t_st_reset_expired_administrator_account_password" class="MCXref xref">Reset an expired administrator account password</a> - Provides how-to instructions for resetting an expired administrator account password.
--   <a href="t_st_change_administrator_password" class="MCXref xref">Change administrator password</a> - Provides how-to instructions for changing administrator password.
+-   [Add an administrator account](t_st_add_administrator_account) - Provides how-to instructions for adding an administrator account.
+-   [Edit an administrator account](t_st_edit_administrator_account) - Provides how-to instructions for editing an administrator account.
+-   [Delete an administrator account](t_st_delete_administrator_account) - Provides how-to instructions for deleting an administrator account.
+-   [Lock an administrator account](t_st_lock_administrator_account) - Provides how-to instructions for locking an administrator account.
+-   [Unlock an administrator account](t_st_unlock_administrator_account) - Provides how-to instructions for unlocking an administrator account.
+-   [Expire an administrator account password](t_st_expire_administrator_account_password) - Provides how-to instructions for expiring an administrator account password.
+-   [Reset an expired administrator account password](t_st_reset_expired_administrator_account_password) - Provides how-to instructions for resetting an expired administrator account password.
+-   [Change administrator password](t_st_change_administrator_password) - Provides how-to instructions for changing administrator password.

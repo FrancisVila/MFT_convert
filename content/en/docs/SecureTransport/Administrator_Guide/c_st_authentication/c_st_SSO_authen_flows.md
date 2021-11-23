@@ -4,10 +4,10 @@
     "weight": "210"
 }The supported Single Sign-on (SSO) and Single Logout (SLO) authentication flows for SecureTransport are:
 
--   <a href="#Service" class="MCXref xref">Service Provider initiated Single Sign-On (SSO) authentication flow</a>
--   <a href="#Identity" class="MCXref xref">Identity Provider initiated Single Sign-On (SSO) authentication flow</a>
--   <a href="#Service2" class="MCXref xref">Service Provider initiated Single Logout (SLO) authentication flow</a>
--   <a href="#Identity2" class="MCXref xref">Identity Provider initiated Single Logout (SLO) authentication flow</a>
+-   [Service Provider initiated Single Sign-On (SSO) authentication flow](#Service)
+-   [Identity Provider initiated Single Sign-On (SSO) authentication flow](#Identity)
+-   [Service Provider initiated Single Logout (SLO) authentication flow](#Service2)
+-   [Identity Provider initiated Single Logout (SLO) authentication flow](#Identity2)
 
 <span id="Service"></span>
 

@@ -2,7 +2,7 @@
     "title": "Access management  reference information ",
     "linkTitle": "Reference: access management mapping",
     "weight": "220"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
 ## Access management mapping in earlier versions
 

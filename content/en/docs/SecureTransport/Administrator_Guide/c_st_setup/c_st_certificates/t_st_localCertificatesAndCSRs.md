@@ -4,19 +4,19 @@
     "weight": "120"
 }Use the *Certificate Management* page to generate local, self-issued server certificates or to generate certificate signing requests. Generated certificates are assigned RSA or DSA keys.
 
-A certificate signing request is an unsigned copy of a certificate that you submit to a CA when requesting a signed certificate. Based on the information in the CSR, the CA creates a new signed certificate for your use. After receiving the signed certificate from the CA, you must import it into {{< SecureTransport/componentshortname  >}}. For details, see <a href="#Import2" class="MCXref xref">Import a new certificate for a pending certificate signing request</a>.
+A certificate signing request is an unsigned copy of a certificate that you submit to a CA when requesting a signed certificate. Based on the information in the CSR, the CA creates a new signed certificate for your use. After receiving the signed certificate from the CA, you must import it into {{< SecureTransport/componentshortname  >}}. For details, see [Import a new certificate for a pending certificate signing request](#Import2).
 
 The following topics describe and provide how-to instructions managing local certificates and certificate signing requests:
 
--   <a href="#View_loc_cert" class="MCXref xref">View local certificates</a>
--   <a href="#Generate" class="MCXref xref">Generate a self-issued server certificate</a>
--   <a href="#Generate_cert_sign" class="MCXref xref">Generate a certificate signing request</a>
--   <a href="#Import2" class="MCXref xref">Import a new certificate for a pending certificate signing request</a>
--   <a href="#Delete_pend_cert_sign" class="MCXref xref">Delete a pending certificate signing request</a>
--   <a href="#Export" class="MCXref xref">Export a local certificate</a>
--   <a href="#Import" class="MCXref xref">Import a local certificate</a>
--   <a href="#Import_SSH" class="MCXref xref">Import an SSH key</a>
--   <a href="#Delete_loc_cert" class="MCXref xref">Delete a local certificate</a>
+-   [View local certificates](#View_loc_cert)
+-   [Generate a self-issued server certificate](#Generate)
+-   [Generate a certificate signing request](#Generate_cert_sign)
+-   [Import a new certificate for a pending certificate signing request](#Import2)
+-   [Delete a pending certificate signing request](#Delete_pend_cert_sign)
+-   [Export a local certificate](#Export)
+-   [Import a local certificate](#Import)
+-   [Import an SSH key](#Import_SSH)
+-   [Delete a local certificate](#Delete_loc_cert)
 
 <span id="View_loc_cert"></span>
 
@@ -187,11 +187,11 @@ Do not delete the certificate with the `admind` alias which is implicitly assign
 
 **Related topics:**
 
--   <a href="../r_st_certificate_types" class="MCXref xref">Certificate types</a>
--   <a href="../c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
--   <a href="../t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>
--   <a href="../t_st_trustedcas" class="MCXref xref">Manage trusted CAs</a>
--   <a href="../t_st_internalca" class="MCXref xref">Manage the internal CA</a>
--   <a href="../t_st_certificatekeystorepasswordca" class="MCXref xref">Change the certificate keystore password</a>
--   <a href="../r_st_certificatestogenerate" class="MCXref xref">Certificates to generate during initial setup</a>
--   <a href="../t_st_storecertificatesinhsm" class="MCXref xref">Store certificates in a hardware security module</a>
+-   [Certificate types](../r_st_certificate_types)
+-   [Certificate Management page](../c_st_certificate_management_page)
+-   [Repository encryption certificate](../t_st_repository_encryption_certificate)
+-   [Manage trusted CAs](../t_st_trustedcas)
+-   [Manage the internal CA](../t_st_internalca)
+-   [Change the certificate keystore password](../t_st_certificatekeystorepasswordca)
+-   [Certificates to generate during initial setup](../r_st_certificatestogenerate)
+-   [Store certificates in a hardware security module](../t_st_storecertificatesinhsm)

@@ -236,5 +236,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_account_xml_schema" class="MCXref xref">Account XML schema</a>
--   <a href="../t_st_importandexportaccounts" class="MCXref xref">Export and import accounts</a>
+-   [Account XML schema](../c_st_account_xml_schema)
+-   [Export and import accounts](../t_st_importandexportaccounts)

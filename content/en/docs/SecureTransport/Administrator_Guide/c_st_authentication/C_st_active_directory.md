@@ -56,7 +56,7 @@ Verify that it contains Kerberos Identity Provider. Example:
 
 ## Configure supported browser authentication
 
-For a list of SecureTransport supported browsers, refer to <a href="../../overview/r_st_axway_and_third-party_software_support#Browsers" class="MCXref xref">Browsers</a>.
+For a list of SecureTransport supported browsers, refer to [Browsers](../../overview/r_st_axway_and_third-party_software_support#Browsers).
 
 To use Kerberos with SecureTransport the browsers will need some fine tuning.
 

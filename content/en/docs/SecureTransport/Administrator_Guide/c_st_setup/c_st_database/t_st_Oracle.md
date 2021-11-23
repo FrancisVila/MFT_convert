@@ -27,7 +27,7 @@ You can also update the database connection parameters and test the connection v
         -   **Password** – The password for the user, not displayed.
         -   **Service Name** – Used to connect to the Oracle server or cluster
     -   **Use Kerberos Authentication**  
-        Check this option to SecureTransport to connect to the Oracle database with Kerberos authentication. For detailed instructions, refer to <a href="../configure-oracle-kerberos" class="MCXref xref">Connect to an Oracle database using Kerberos authentication</a>.  
+        Check this option to SecureTransport to connect to the Oracle database with Kerberos authentication. For detailed instructions, refer to [Connect to an Oracle database using Kerberos authentication](../configure-oracle-kerberos).  
         ![](/Images/SecureTransport/db-oracle-kerberos.png)  
         <img src="/Images/SecureTransport/DBSettings_Kerberos_521x74.png" class="maxWidth" alt="Configuration file path" />  
     -   **Use Proxy Authentication**  
@@ -68,5 +68,5 @@ You can also update the database connection parameters and test the connection v
 
 **Related topics:**
 
--   <a href="../t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>
--   <a href="../migrate_oracle_to_postgre" class="MCXref xref">Migrate from Oracle to PostgreSQL</a>
+-   [Direct log data to separate Oracle databases](../t_st_separate_databases)
+-   [Migrate from Oracle to PostgreSQL](../migrate_oracle_to_postgre)

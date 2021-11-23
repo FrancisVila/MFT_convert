@@ -26,7 +26,7 @@ The compressed `export_configuration.zip` file includes the files from the &lt;F
 >
 > Database settings like port, password, and so forth are not intended to be exported because database settings are node specific.
 
-You can export the server configuration files using the *Import or Export Server Configuration* page or command line utility. Use the command line utility to customize which folders and files will be exported. For more information, see <a href="#Export" class="MCXref xref">Export server configuration files from the command line</a> and <a href="#Import" class="MCXref xref">Import server configuration files from the command line</a>.
+You can export the server configuration files using the *Import or Export Server Configuration* page or command line utility. Use the command line utility to customize which folders and files will be exported. For more information, see [Export server configuration files from the command line](#Export) and [Import server configuration files from the command line](#Import).
 
 Any administrator with import and export configuration privileges can access the *Import or Export Server Configuration* page to import or export the server configuration information. Any administrator who can access the server can use the command line to import or export server information.
 
@@ -36,19 +36,19 @@ The imported files overwrite the existing files, the database is updated with th
 
 The following topics provide how-to instructions for importing and exporting the server configuration, certificates, and messages:
 
--   <a href="#Export_limit" class="MCXref xref">Export user limit messages</a>
--   <a href="#Export_CA" class="MCXref xref">Export and import Internal CA files</a>
--   <a href="#Export_conf" class="MCXref xref">Export server configuration using the Administration Tool</a>
--   <a href="#Export" class="MCXref xref">Export server configuration files from the command line</a>
--   <a href="#Import_conf" class="MCXref xref">Import server configuration files using the Administration Tool</a>
--   <a href="#Import" class="MCXref xref">Import server configuration files from the command line</a>
+-   [Export user limit messages](#Export_limit)
+-   [Export and import Internal CA files](#Export_CA)
+-   [Export server configuration using the Administration Tool](#Export_conf)
+-   [Export server configuration files from the command line](#Export)
+-   [Import server configuration files using the Administration Tool](#Import_conf)
+-   [Import server configuration files from the command line](#Import)
 
 **Related topics:**
 
--   <a href="../c_st_editable_server_configuration_parameters" class="MCXref xref">Editable server configuration parameters</a>
--   <a href="../c_st_local_server_configuration_parameters" class="MCXref xref">Local server configuration parameters</a>
--   <a href="../t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>
--   <a href="../t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>
+-   [Editable server configuration parameters](../c_st_editable_server_configuration_parameters)
+-   [Local server configuration parameters](../c_st_local_server_configuration_parameters)
+-   [View and change server configuration parameters](../t_st_serverconfigurationparameters)
+-   [Update configuration files](../t_st_serverconfigurationfiles)
 
 <span id="Export_limit"></span>
 
@@ -60,7 +60,7 @@ To export messages defined on the *Limit User Access* page for successful import
 
 ## Export and import Internal CA files
 
-For {{< SecureTransport/componentshortname  >}} 5.0 and later, the Internal CA certificate is exported with system export and with account export. In both cases, the private key for the CA is not exported. You cannot use an imported Internal CA to sign additional certificates without the correct private key. To preserve the Internal CA private key, configure server export and import to include the private key. Perform the following procedures before you export the system configuration files. For more information on exporting and importing accounts, see <a href="../../../c_st_advancedaccountadministration/c_st_accountimportandexport#Advanced_Accounts_2036285406_1153799" class="MCXref xref">Account export and import</a>. For more information about exporting and importing the Internal CA, see <a href="../../../c_st_setup/c_st_certificates/t_st_internalca#top" class="MCXref xref">Manage the internal CA</a>.
+For {{< SecureTransport/componentshortname  >}} 5.0 and later, the Internal CA certificate is exported with system export and with account export. In both cases, the private key for the CA is not exported. You cannot use an imported Internal CA to sign additional certificates without the correct private key. To preserve the Internal CA private key, configure server export and import to include the private key. Perform the following procedures before you export the system configuration files. For more information on exporting and importing accounts, see [Account export and import](../../../c_st_advancedaccountadministration/c_st_accountimportandexport#Advanced_Accounts_2036285406_1153799). For more information about exporting and importing the Internal CA, see [Manage the internal CA](../../../c_st_setup/c_st_certificates/t_st_internalca#top).
 
 ### Export the Internal CA with the private key
 
@@ -85,7 +85,7 @@ You can export and download server configuration using the {{< SecureTransport/c
 
 When you export the server configuration from the Administration Tool, {{< SecureTransport/componentshortname  >}} uses the file `<FILEDRIVEHOME>/conf/export.conf` to read the list of configuration files to be exported. In addition, the files in the `<FILEDRIVEHOME>/brules/local/wptdocuments` directory are always included.
 
-You can control the file name and location, and the list of files to be exported by using the command line tool to export your server configuration files. For more information, see <a href="#Export" class="MCXref xref">Export server configuration files from the command line</a>.
+You can control the file name and location, and the list of files to be exported by using the command line tool to export your server configuration files. For more information, see [Export server configuration files from the command line](#Export).
 
 1.  On the *Server Configuration* page, click **Import/Export Server Configuration**.  
     The *Import or Export Server Configuration* page is displayed.

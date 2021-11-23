@@ -270,9 +270,9 @@ _ unknown command</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
-         <td><p>Check the <a href="../../../c_intro_userinterfaces/command_summary">command syntax</a> in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation.
+         <td><p>Check the <a href="../../../c_intro_userinterfaces/command_summary">command syntax</a> in the {{< TransferCFT/componentshortname  >}} Online documentation.
 Correct the error and restart the communication utility.</p>
-<p>Check the command syntax in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation.
+<p>Check the command syntax in the {{< TransferCFT/componentshortname  >}} Online documentation.
 Correct the error and restart the communication utility.</p>         </td>
       </tr>
    </tbody>
@@ -535,7 +535,7 @@ release, copyright and execution start date and time</li>
 <li>Execution report: Information messages indicating the number
 of commands interpreted, the number of errors detected and the execution
 end date and time</li>
-<li>Dynamic modification of a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner state: Part
+<li>Dynamic modification of a {{< TransferCFT/componentshortname  >}} partner state: Part
 = &amp;part : &amp;str1</li>
 </ul>
 <p>The ACT or INACT command has been executed correctly (&amp;str1
@@ -603,10 +603,10 @@ file.</li>
 command (LISTCOM for example) resulted in an error when opening the communication
 file.</li>
 <li>File creation error: An error was detected when creating and
-formatting the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafile (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/
+formatting the {{< TransferCFT/componentshortname  >}} internal datafile (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/
 command).</li>
 <li>File delete error: An error was detected when executing a request
-to delete a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafile (CFTUTIL CFTFILE TYPE= ,MODE=DELETE
+to delete a {{< TransferCFT/componentshortname  >}} internal datafile (CFTUTIL CFTFILE TYPE= ,MODE=DELETE
 command).</li>
 <li>Output file creating error cs=&amp;scs: Execution of the &amp;Cmd
 command (COPYFILE for example) resulted in an error when creating the
@@ -614,18 +614,18 @@ output file.</li>
 <li>Input file opening error cs=&amp;scs: Execution of the &amp;Cmd
 command (COPYFILE for example) resulted in an error when opening the input
 file.</li>
-<li>&amp;id: Partner record already exists: Command execution, e.g. writing information to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner file, resulted in
+<li>&amp;id: Partner record already exists: Command execution, e.g. writing information to the {{< TransferCFT/componentshortname  >}} partner file, resulted in
 an attempt to add a record that already existed in the file (the &amp;Cmd
 command requested is designated by &amp;Id).</li>
 <li>&amp;id: Partner record &amp;str error (&amp;str=writing/reading/selecting):
 Command execution resulted in a write/read/article selection error
 in the file (the &amp;Cmd command requested is designated by &amp;Id).</li>
 <li>&amp;id: Parameter record already exists: Command
-execution, writing information to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file, resulted in
+execution, writing information to the {{< TransferCFT/componentshortname  >}} parameter file, resulted in
 an attempt to add a record that already existed in the file (&amp;Id being
 the command identifier).</li>
 <li>&amp;id: Invalid value for NRPART paramete:r Executing the CFTPART
-command, writing information to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner file, resulted
+command, writing information to the {{< TransferCFT/componentshortname  >}} partner file, resulted
 in an attempt to add a record that already existed in the file (&amp;Id
 being the CFTPART command identifier). In this case, the NRPART parameter
 is already assigned to an existing CFTPART command.</li>
@@ -638,9 +638,9 @@ specified is bijective or create one command for each transfer direction
 (ACT or INACT) resulted in an error. The identifier indicated (ACT ID=&amp;Part)
 does not correspond to an existing partner identifier (CFTPART ID=&amp;Part).</li>
 <li>Media communication is full: A transfer command (SEND or RECV)
-could not be written to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication file. The maximum
+could not be written to the {{< TransferCFT/componentshortname  >}} communication file. The maximum
 number of requests in the communication file that have not yet been processed
-by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> has been reached (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> parameter in the CFTFILE
+by the {{< TransferCFT/componentshortname  >}} has been reached (<a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> parameter in the CFTFILE
 TYPE=COM command).</li>
 <li><p>Incompatible compression parameters: Execution of the COPYFILE
 command resulted in an error when checking the attributes (record length
@@ -657,19 +657,19 @@ in an error during the decompression process.</p>
 <p><a href="../../../admin_intro/admin_commands_intro/copyfile_command" class="MCXref xref">COPYFILE
 - Copy files off-line</a></p></li>
 <li>&amp;id: command not authorized: The command specified by the
-user is not authorized by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> security system (&amp;id being
+user is not authorized by the {{< TransferCFT/componentshortname  >}} security system (&amp;id being
 the command identifier)</li>
 <li>Habilitation opening error: An error was detected when initializing
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> security system; a file required by the system could
+the {{< TransferCFT/componentshortname  >}} security system; a file required by the system could
 not be opened correctly. Check that the initialization file exists and
 is valid (contains the operating rules and indirections pointing to the
 object and action dictionaries) and ensure that the security system dictionary
 files exist.</li>
-<li>Create channel failed: An error was detected when creating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> synchronous communication media. Check that you have enough memory.</li>
-<li>Open channel failed: An error was detected when opening the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> synchronous communication media. Check that the synchronous communication process is launched.</li>
-<li>Channel read error: An error was detected when reading the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> synchronous communication media. Check that the synchronous communication process is launched.</li>
-<li>Channel write error: An error was detected when writing in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> synchronous communication media. Check that the synchronous communication process is launched.</li>
-<li>Close channel failed: An error was detected when closing the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> synchronous communication media. Check that the communication media is not already closed.</li>
+<li>Create channel failed: An error was detected when creating the {{< TransferCFT/componentshortname  >}} synchronous communication media. Check that you have enough memory.</li>
+<li>Open channel failed: An error was detected when opening the {{< TransferCFT/componentshortname  >}} synchronous communication media. Check that the synchronous communication process is launched.</li>
+<li>Channel read error: An error was detected when reading the {{< TransferCFT/componentshortname  >}} synchronous communication media. Check that the synchronous communication process is launched.</li>
+<li>Channel write error: An error was detected when writing in the {{< TransferCFT/componentshortname  >}} synchronous communication media. Check that the synchronous communication process is launched.</li>
+<li>Close channel failed: An error was detected when closing the {{< TransferCFT/componentshortname  >}} synchronous communication media. Check that the communication media is not already closed.</li>
 </ul>         </td>
       </tr>
       <tr>

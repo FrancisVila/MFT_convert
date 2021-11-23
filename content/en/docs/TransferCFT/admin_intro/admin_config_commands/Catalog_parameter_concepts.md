@@ -2,10 +2,7 @@
     "title": "Catalog attributes ",
     "linkTitle": "CFTCAT - Catalog attributes ",
     "weight": "240"
-}<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
-topics</span>
-
--   Command syntax
+}-   Command syntax
     [CFTCAT](../../../c_intro_userinterfaces/command_summary#CFTCAT)
 -   Parameter list
     [CFTCAT](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcat)
@@ -14,7 +11,7 @@ topics</span>
 
 ### About the CFTCAT object
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog displays all <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> transfers in list
+The {{< TransferCFT/componentshortname  >}} catalog displays all {{< TransferCFT/componentshortname  >}} transfers in list
 form. The catalog file contains control data that is associated with transfers.
 A record, that corresponds with a status indicator, exists for each transfer.
 
@@ -29,7 +26,7 @@ but does not disrupt transfers.
 Catalog functions include a method to recover information about the
 CFT that is using the catalog.
 
-For each <span style="font-weight: bold;">PARM</span>, there is one
+For each **PARM**, there is one
 associated CFTCAT.
 
 ### Catalog levels

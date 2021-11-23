@@ -11,7 +11,7 @@
 \[MAXCNX     = { <u>384</u>
 | n} \]      {0...MAXTRANS value up to 2000}
 
-The maximum number of simultaneous connections that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> accepts
+The maximum number of simultaneous connections that {{< TransferCFT/componentshortname  >}} accepts
 to establish on a given network resource.
 
 -   Enter

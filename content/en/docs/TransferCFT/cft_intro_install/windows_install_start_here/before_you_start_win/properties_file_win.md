@@ -2,9 +2,9 @@
     "title": "Customize the initialize.properties file",
     "linkTitle": "3. Customize the initialize.properties file",
     "weight": "150"
-}A common practice is to create a copy of the <span class="code">initialize.properties </span> file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
+}A common practice is to create a copy of the `initialize.properties ` file, which is located in the downloaded installation package. This gives you an initial intact version should you later need it.
 
-Customize the <span class="code">initialize.properties </span> file. Use the table below to help you with parameter settings; note that the <span class="code">CryptoKey\_Password</span> is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
+Customize the `initialize.properties ` file. Use the table below to help you with parameter settings; note that the `CryptoKey_Password` is mandatory. Be sure that if you want to use special characters in a configuration file field, you protect the value by enclosing it in double quotation marks ("").
 
 > **Note:**
 >
@@ -16,7 +16,7 @@ To use the # character in a value, for example, protect the entire string using 
 
 CryptoKey\_Password = "Aedft#439"
 
-If you do not enclose this value in "", the string is interpreted as: <span class="code">CryptoKey\_Password = Aedft</span>
+If you do not enclose this value in "", the string is interpreted as: `CryptoKey_Password = Aedft`
 
 > **Note:**
 >
@@ -37,7 +37,7 @@ If you do not enclose this value in "", the string is interpreted as: <span clas
    </thead>
    <tbody>
       <tr>
-         <td><span class="bold_in_para">Silent installation</span>         </td>
+         <td><strong>Silent installation</strong>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -54,7 +54,7 @@ If you do not enclose this value in "", the string is interpreted as: <span clas
          <td>cft.install_dir         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Basic installation </span>         </td>
+         <td><strong>Basic installation</strong>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -76,7 +76,7 @@ specify a new directory. A runtime directory will be created if it does not alre
       <tr>
          <td>multinode_hostname         </td>
          <td>@automatic         </td>
-         <td><p>When not defined, this field is filled with the hostname of the machine where you are installing <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, whether it is the first host or an additional host.</p>
+         <td><p>When not defined, this field is filled with the hostname of the machine where you are installing {{< TransferCFT/transfercftname  >}}, whether it is the first host or an additional host.</p>
 <p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost".</p>         </td>
          <td>cft.multi_node.hostnames         </td>
       </tr>
@@ -102,7 +102,7 @@ specify a new directory. A runtime directory will be created if it does not alre
          <td>cft.instance_group         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Security configuration</span>         </td>
+         <td><strong>Security configuration</strong>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -126,7 +126,7 @@ specify a new directory. A runtime directory will be created if it does not alre
          <td>crypto.salt_fname         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Runtime configuration</span>         </td>
+         <td><strong>Runtime configuration</strong>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -231,7 +231,7 @@ Only used by the Governance.         </td>
          <td>copilot.ssl.SslCertFile         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Multi-node and Cluster</span>         </td>
+         <td><strong>Multi-node and Cluster</strong>         </td>
       </tr>
       <tr>
          <td>Multinode_Enable         </td>
@@ -264,7 +264,7 @@ balancer to connect to the Transfer CFT Copilot server.</p>         </td>
          <td>cft.multi_node.load_balancer.port         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Central Governance</span>         </td>
+         <td><strong>Central Governance</strong>         </td>
       </tr>
       <tr>
          <td><p>CG_Enable</p>         </td>
@@ -276,35 +276,35 @@ balancer to connect to the Transfer CFT Copilot server.</p>         </td>
          <td>CG_Host         </td>
          <td>          </td>
          <td><p>The Central Governance host address.</p>
-<p>If you enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must complete this field.</p>         </td>
+<p>If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field.</p>         </td>
          <td>cg.host         </td>
       </tr>
       <tr>
          <td><p>CG_Port</p>         </td>
          <td>@default = 12553         </td>
          <td><p>The Central Governance port.</p>
-<p>If you enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must complete this field.</p>         </td>
+<p>If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field.</p>         </td>
          <td>cg.port         </td>
       </tr>
       <tr>
          <td>CG_Mutual_Port         </td>
          <td>@default = 12554         </td>
          <td><p>The Central Governance port for Mutual Authentication.</p>
-<p>If you enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must complete this field.</p>         </td>
+<p>If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field.</p>         </td>
          <td>cg.mutual_auth_port         </td>
       </tr>
       <tr>
          <td>CG_RestAPI_Port         </td>
          <td>@default = 8081         </td>
          <td><p>Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).</p>
-<p>If you enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must complete this field.</p>         </td>
+<p>If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field.</p>         </td>
          <td>cg.restapi_port         </td>
       </tr>
       <tr>
          <td>CG_SharedSecret         </td>
          <td>          </td>
          <td><p>Specify the shared secret, which is needed to register with the Central Governance server.</p>
-<p>If you enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must complete this field.</p>         </td>
+<p>If you enabled {{< TransferCFT/centralgovernancename  >}}, you must complete this field.</p>         </td>
          <td>cg.shared_secret         </td>
       </tr>
       <tr>
@@ -321,13 +321,13 @@ instance.         </td>
          <td>N/A         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Sentinel Connector</span>         </td>
+         <td><strong>Sentinel Connector</strong>         </td>
       </tr>
       <tr>
          <td>Sentinel_Enable         </td>
          <td>@default = No         </td>
          <td><p>Set to Yes to enable Sentinel.</p>
-<p>Do not enable this if you have enabled <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.</p>         </td>
+<p>Do not enable this if you have enabled {{< TransferCFT/centralgovernancename  >}}.</p>         </td>
          <td>sentinel.xfb.enable         </td>
       </tr>
       <tr>
@@ -340,7 +340,7 @@ instance.         </td>
          <td>Sentinel_Port         </td>
          <td>@default= 1305         </td>
          <td><p>Enter the Sentinel port.</p>
-<p>You do not need to define this field if you are registering Transfer CFT with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.</p>         </td>
+<p>You do not need to define this field if you are registering Transfer CFT with {{< TransferCFT/centralgovernancename  >}}.</p>         </td>
          <td>sentinel.trkipport         </td>
       </tr>
       <tr>
@@ -442,7 +442,7 @@ CFTUI_ServicePassword         </td>
          <td>N/A         </td>
       </tr>
       <tr>
-         <td><span class="bold_in_para">Miscellaneous</span>         </td>
+         <td><strong>Miscellaneous</strong>         </td>
       </tr>
       <tr>
          <td>JAVA_BINARY_PATH         </td>
@@ -475,7 +475,7 @@ CFTUI_ServicePassword         </td>
 
 ## Password management
 
-The passwords used in the <span class="code">initialize.properties</span> file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
+The passwords used in the `initialize.properties` file are encrypted in the original file when you run the installation builder. You can then use the original file as a template for future installations. Impacted passwords are prefaced by &lt;CFT\_PASSWORD>, and include the following:
 
 -   CryptoKey\_Password
 -   UI\_DefaultUser\_Password

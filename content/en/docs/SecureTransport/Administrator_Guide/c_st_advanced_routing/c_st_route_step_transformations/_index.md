@@ -6,15 +6,15 @@
 
 The following topics provide detailed transformation configuration information:
 
--   <a href="t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a> - Provides detailed how-to instructions for configuring a PGP Encryption transformation.
--   <a href="t_st_pgp_decryption" class="MCXref xref">PGP Decryption</a> - Provides detailed how-to instructions for configuring a PGP Decryption transformation.
--   <a href="t_st_compress" class="MCXref xref">Compress</a> - Provides detailed how-to instructions for configuring a Compress transformation.
--   <a href="t_st_decompress" class="MCXref xref">Decompress</a> - Provides detailed how-to instructions for configuring a Decompress transformation.
--   <a href="t_st_line_ending" class="MCXref xref">Line Ending</a> - Provides detailed how-to instructions for configuring a Line Ending transformation.
--   <a href="t_st_external_script" class="MCXref xref">External Script</a> - Provides detailed how-to instructions for configuring an External Script transformation.
--   <a href="t_st_charset_conversion" class="MCXref xref">Encoding Conversion</a> - Provides detailed how-to instructions for configuring a Encoding Conversion transformation.
--   <a href="t_st_replace" class="MCXref xref">Characters Replace</a> - Provides detailed how-to instructions for configuring a Characters Replace transformation.
--   <a href="t_st_line_padding" class="MCXref xref">Line Padding</a> - Provides detailed how-to instructions for configuring a Line Padding transformation.
--   <a href="t_st_line_truncating" class="MCXref xref">Line Truncating</a> - Provides detailed how-to instructions for configuring a Line Truncating transformation.
--   <a href="t_st_file_folding" class="MCXref xref">Line Folding</a> - Provides detailed how-to instructions for configuring a Line Folding transformation.
--   <a href="t_st_rename" class="MCXref xref">Rename</a> - Provides detailed how-to instructions for configuring a Rename transformation.
+-   [PGP Encryption](t_st_pgp_encryption) - Provides detailed how-to instructions for configuring a PGP Encryption transformation.
+-   [PGP Decryption](t_st_pgp_decryption) - Provides detailed how-to instructions for configuring a PGP Decryption transformation.
+-   [Compress](t_st_compress) - Provides detailed how-to instructions for configuring a Compress transformation.
+-   [Decompress](t_st_decompress) - Provides detailed how-to instructions for configuring a Decompress transformation.
+-   [Line Ending](t_st_line_ending) - Provides detailed how-to instructions for configuring a Line Ending transformation.
+-   [External Script](t_st_external_script) - Provides detailed how-to instructions for configuring an External Script transformation.
+-   [Encoding Conversion](t_st_charset_conversion) - Provides detailed how-to instructions for configuring a Encoding Conversion transformation.
+-   [Characters Replace](t_st_replace) - Provides detailed how-to instructions for configuring a Characters Replace transformation.
+-   [Line Padding](t_st_line_padding) - Provides detailed how-to instructions for configuring a Line Padding transformation.
+-   [Line Truncating](t_st_line_truncating) - Provides detailed how-to instructions for configuring a Line Truncating transformation.
+-   [Line Folding](t_st_file_folding) - Provides detailed how-to instructions for configuring a Line Folding transformation.
+-   [Rename](t_st_rename) - Provides detailed how-to instructions for configuring a Rename transformation.

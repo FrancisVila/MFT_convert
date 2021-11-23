@@ -14,7 +14,7 @@ or
 
 -   `${sess['variable']}` – used with {{< SecureTransport/componentshortname >}} session variables including LDAP
 -   `${env['variable']}`, `${stenv['variable']}`, or `${stenv.variable}` – used with {{< SecureTransport/componentshortname >}} predefined environment variables
--   `${pesit['variable']}` – used with {{< SecureTransport/componentshortname >}} PeSIT variables described in <a href="../r_st_expressionlanguagepesitvariables" class="MCXref xref">PeSIT variables</a>
+-   `${pesit['variable']}` – used with {{< SecureTransport/componentshortname >}} PeSIT variables described in [PeSIT variables](../r_st_expressionlanguagepesitvariables)
 
 LDAP session variables can be used with the `sess` named variable set. You can also develop an agent that contains the session variables you want to use. All session variables must be prefixed with `STSESSION_`.
 

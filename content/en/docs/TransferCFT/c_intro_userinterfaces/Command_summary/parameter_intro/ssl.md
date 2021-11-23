@@ -14,7 +14,7 @@ The identifier for the CFTSSL object that is used as security profiles.
 
 In requester mode, this value is used as the default security profile.
 
-In server mode, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> refuses to start up if it does not find
+In server mode, {{< TransferCFT/componentshortname  >}} refuses to start up if it does not find
 the CFTSSL object that corresponds to the identifier specified here.
 
 #### CFTPART

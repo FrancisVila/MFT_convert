@@ -223,7 +223,7 @@ Example:
 
 ### Using the {{< SecureTransport/componentshortname  >}} SSLContext service
 
-SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `javax.net.ssl.SSLSocketFactory` objects using its internal keystore. These objects can be used for setting up secure SSL connections to other applications. This service is identical to the *SSLContext service* exposed for *Custom connectors*, see <a href="../custom_connector/custom_protocol#exposed" class="MCXref xref">SecureTransport exposed services</a>.
+SecureTransport provides a service for creating `javax.net.ssl.SSLContext` and `javax.net.ssl.SSLSocketFactory` objects using its internal keystore. These objects can be used for setting up secure SSL connections to other applications. This service is identical to the *SSLContext service* exposed for *Custom connectors*, see [SecureTransport exposed services](../custom_connector/custom_protocol#exposed).
 
 The service interface is called `com.axway.st.plugins.improvedrouting.environment.SSLContextService` and can be used in the process method of the custom advanced routing step using the following code:
 
@@ -246,7 +246,7 @@ These methods have the same behavior as those from the Custom connectors’ `SSL
 
     CertificateService certificateService = producerSettings.getCertificateService();
 
-This service is identical to the Certificate service exposed for Custom connectors, see <a href="../custom_connector/custom_protocol" class="MCXref xref">Implement a custom protocol connector</a>.
+This service is identical to the Certificate service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
 It declares the following methods:
 
@@ -268,7 +268,7 @@ It declares the following methods:
 
 The *LoggingService* interface declares functionality for logging messages and exceptions with a different log level – ERROR, WARN, INFO, DEBUG, etc.
 
-This service is identical to the Logging service exposed for Custom connectors, see <a href="../custom_connector/custom_protocol#exposed" class="MCXref xref">SecureTransport exposed services</a>.
+This service is identical to the Logging service exposed for Custom connectors, see [SecureTransport exposed services](../custom_connector/custom_protocol#exposed).
 
 Examples:
 
@@ -288,7 +288,7 @@ The service interface is called `com.axway.st.plugins.improvedrouting.services.E
 
     ExpressionEvaluatorService loggingService = producerSettings.getExpressionEvaluatorService();
 
-This service is identical to the Expression Evaluator service exposed for Custom connectors, see <a href="../custom_connector/custom_protocol" class="MCXref xref">Implement a custom protocol connector</a>.
+This service is identical to the Expression Evaluator service exposed for Custom connectors, see [Implement a custom protocol connector](../custom_connector/custom_protocol).
 
 Examples:
 

@@ -8,13 +8,13 @@
 
 #### CFTPARM
 
-\[USERCTRL = { <span style="text-decoration: underline;">NO</span>
+\[USERCTRL = {
 | YES }\]
 
 Use this field to define the file access control. You can use the UserCtrl parameter to define access to files under another credential (UserId parameter) other than the user who started Transfer CFT.
 
 -   YES:
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> checks the user access rights on the file to be transferred.
+    {{< TransferCFT/componentshortname >}} checks the user access rights on the file to be transferred.
 -   NO: No check is performed.
 
 > **Note:**

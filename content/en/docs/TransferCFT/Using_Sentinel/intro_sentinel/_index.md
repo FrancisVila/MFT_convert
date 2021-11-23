@@ -4,7 +4,7 @@
     "weight": "200"
 }The XFBTransfer Tracked Object (TO) is the Sentinel structure used to store transfer related events coming from the following Axway products: Transfer CFT, Gateway, Gateway Interchange, SecureTransport, and InterPel.
 
-For each step of each <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> file transfer process, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>generates a Tracked Object instance and sends this to <span class="mc-variable Primary.Sentinel variable">Sentinel</span>. In each TO instance, the State attribute identifies the relevant step of the transfer process.
+For each step of each {{< TransferCFT/componentshortname  >}} file transfer process, {{< TransferCFT/componentshortname  >}}generates a Tracked Object instance and sends this to . In each TO instance, the State attribute identifies the relevant step of the transfer process.
 
 Each file transfer has a unique identifier that consists of a set of parameters that are exchanged at the beginning of the transfer, or parameters that make the transfer unique in the product.  A computation of these parameters creates a unique Sentinel identifier called a CycleID. Linking these CycleIDs together can provide end-to-end monitoring when using a store and forward, or when the Sentinel Universal Agent (UA) is used in an implementation to integrate application processing.
 

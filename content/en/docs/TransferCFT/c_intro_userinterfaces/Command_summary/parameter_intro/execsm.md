@@ -26,7 +26,7 @@ This name may include the following symbolic variables:
 -   &RAPPL, &SAPPL
 
 The character ‘&’ designates the char\_symb character defined in
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide* corresponding to your OS.
+the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS.
 
 > **Note:**
 >

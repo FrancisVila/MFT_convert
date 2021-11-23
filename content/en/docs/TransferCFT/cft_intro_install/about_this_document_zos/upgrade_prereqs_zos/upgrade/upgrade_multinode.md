@@ -12,7 +12,7 @@ You must first perform Steps 1 through 5 as described in the [Upgrade](../) sect
 
 The MIGRCAT procedure migrates one catalog file at a time. The procedure must be modified and executed for each of the nodes.
 
-Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB, NODE, OLDFIL, TMPFIL and NEWFIL, replacing <span style="color: #ff4500;">X</span> with the node number.
+Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB, NODE, OLDFIL, TMPFIL and NEWFIL, replacing with the node number.
 
 
 
@@ -25,15 +25,15 @@ Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB,
     //     SPACE=&SEP&TMPSCAT&SEP,
     //     SER='DK231F',
     //     SPACE=&SEP&TMPSCAT&SEP,
-    //     NODE='X',                  => node id x   
 
-    //     OLDFIL=Source.CATALOG.N0X, => Source CATALOG node 0X       
 
-    //     TMPFIL=Prefix.WORK.CATALOG.N0X,   => Temporary file (size defined by &TMPSCAT)
+    //     , => Source CATALOG node 0X       
 
-    //     NEWFIL=Target.CATALOG.N0X, => Target CATALOG node 0X    
+    //     ,   => Temporary file (size defined by &TMPSCAT)
 
-    //     RECNB=50000,               => Target CATALOG records number (to be customized)
+    //     , => Target CATALOG node 0X    
+
+    //     ,               => Target CATALOG records number (to be customized)
 
     //     DISPFIL=&DISPCAT,
     //     HABFNAME='NO'
@@ -73,7 +73,7 @@ The following steps must be performed for each of the nodes.
 
 Customize the PMIGR2 parameters in the JCL MIGRCOM:
 
-Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace <span style="color: #ff4500;">X</span> with the node number.
+Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace with the node number.
 
 
 
@@ -84,10 +84,10 @@ Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace <span style="colo
     //     OLDEXEC=&OLDEXEC,
     //     SPACE=&SEP&TMPSCOM&SEP,
     //     SER='DK231F',
-    //     OLDFIL=Source.COM.N0X,  => Source COM node 0X         
+    //     OLDFIL=Source.COM.N0,  => Source COM node         
     //     TMPFIL=Prefix.WORK.MCOM.N0X, => Temporary file (size defined by &TMPSCOM)  
-    //     NEWFIL=Target.COM.N0X,  => Target COM node 0X
-    //     RECNB=5000,             => Target COM node 0X records number (to be customized)
+    //     NEWFIL=Target.COM.N0X,  => Target COM node 
+    //     RECNB=5000,             => Target COM node  records number (to be customized)
     //     DISPFIL=&DISPCOM,
     //     HABFNAME='NO'
 

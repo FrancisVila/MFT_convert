@@ -14,16 +14,16 @@ When you switch from the embedded database to an external Oracle database, you m
     <img src="/Images/SecureTransport/migrate-Kerberos.png" class="maxWidth" alt="Setup Oracle - Setup Oracle database." />
 
 4.  On the *Target Database Settings* page of the Oracle wizard, type the values necessary to connect to the external database.  
-    1.  Input the connection parameters. For a list of database connection parameters, see <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>.
+    1.  Input the connection parameters. For a list of database connection parameters, see [Change the Oracle database configuration](../t_st_oracle).
     2.  Specify whether {{< SecureTransport/componentshortname >}} to connect to the database server using SSL. Before you enable the secure connection, the issuers certificates of the database server certificate, should be imported in the Trusted CA certificates store.  
         When **Use secure connection** check box is selected, you need to configure the following:
         -   **Server Certificate DN** (optional) – If the server is successfully authenticated (meaning its certificate is trusted), its DN can be checked. If a value is entered in this field, it will be compared with the server certificate DN. If they do not match, the connection won't be successful.
         -   **Enabled Protocols** - List of enabled protocols. TLSv1 is the default protocol.
         -   **Enabled Cipher Suites** - List of the enabled cipher suites.
-    3.  To configure SecureTransport to connect to the Oracle database using Kerberos authentication, follow the steps described in <a href="../configure-oracle-kerberos" class="MCXref xref">Connect to an Oracle database using Kerberos authentication</a>. When Kerberos authentication is enabled, the **Username** and **Passwords** fields are disabled, as {{< SecureTransport/componentshortname >}} will establish a password-less connection to the database using a ticket-granting (TGT) ticket. This feature requires additional configuration actions to be done on both the SecureTransport and the database server.
+    3.  To configure SecureTransport to connect to the Oracle database using Kerberos authentication, follow the steps described in [Connect to an Oracle database using Kerberos authentication](../configure-oracle-kerberos). When Kerberos authentication is enabled, the **Username** and **Passwords** fields are disabled, as {{< SecureTransport/componentshortname >}} will establish a password-less connection to the database using a ticket-granting (TGT) ticket. This feature requires additional configuration actions to be done on both the SecureTransport and the database server.
     4.  Select the **Use Proxy Authentication** checkbox to connect to the Oracle database through another user. In the **Proxied Username** field, specify the user whose identity and privileges will be assumed by the connecting (proxy) user.
 
-5.  To direct log data to separate external databases, see <a href="../t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>.
+5.  To direct log data to separate external databases, see [Direct log data to separate Oracle databases](../t_st_separate_databases).
 
 6.  Click **Test Connection**.  
     If {{< SecureTransport/componentshortname >}} displays a failure message, correct the network, Oracle, or other error reported and try again.
@@ -59,7 +59,7 @@ When you switch from the embedded database to an external Oracle database, you m
 
 **Related topics:**
 
--   <a href="../t_st_mysql" class="MCXref xref">Change the embedded database configuration</a>
--   <a href="../t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>
--   <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>
--   <a href="../t_st_sqlserver" class="MCXref xref">Change the external Microsoft SQL Server database</a>
+-   [Change the embedded database configuration](../t_st_mysql)
+-   [Direct log data to separate Oracle databases](../t_st_separate_databases)
+-   [Change the Oracle database configuration](../t_st_oracle)
+-   [Change the external Microsoft SQL Server database](../t_st_sqlserver)

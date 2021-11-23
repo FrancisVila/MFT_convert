@@ -6,15 +6,14 @@
 
 ### mode
 
-#### All <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> commands <span style="font-weight: normal;"> </span>
+#### All {{< TransferCFT/componentshortname  >}} commands
 
 \[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
 
 Action to do in the parameter or partner database. This parameter applies
-to all commands that affect <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> databases. Possible values:
+to all commands that affect {{< TransferCFT/componentshortname  >}} databases. Possible values:
 
 -   REPLACE
-    <span style="font-weight: normal;">(Default value)</span>
 -   CREATE
 -   DELETE
 
@@ -78,7 +77,6 @@ The CFTPART command’s STATE parameter is set to:
 Action to do in the PKI database. Possible values:
 
 -   REPLACE
-    <span style="font-weight: normal;">(Default)</span>
 -   CREATE
 -   DELETE
 

@@ -8,7 +8,7 @@
 
 #### CFTSEND, SEND
 
-**\[NFNAME =** <span style="font-weight: bold;">{</span>***filename
+**\[NFNAME ={*filename
 | \*filename*}\]     {string
 512, or string 80 depending on the PeSIT PROF setting}**
 

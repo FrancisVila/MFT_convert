@@ -17,7 +17,7 @@ The maximum number of CAs that you can enter for the ROOTCID parameter of the CF
 To define a certificate list, use the PKIENTITY command with the following parameters:
 
 -   ID: An identifier is a case-insensitive string with a maximum of 32 characters. If the identifier contains spaces, enclose the identifier in single quotes. (*mandatory* *parameter*)
--   CERTIFICATES: A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> ignores this ID when loading CFTSSL properties.  
+-   CERTIFICATES: A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{< TransferCFT/componentshortname >}} ignores this ID when loading CFTSSL properties.  
 -   MODE: An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE)
 -   PKIFNAME: The name of the PKI internal datafile to use. (default = $CFTPKU)
 
@@ -27,14 +27,14 @@ To define a certificate list, use the PKIENTITY command with the following param
 
 **Caution**  The PKIENTITY command neither checks nor manages the existing certificates in the internal PKI internal datafile when creating a new certificates list.
 
-<span class="autonumber"></span>Example
+Example
 
-This example creates a PKIENTITY called <span class="code">new\_entity</span> that has 3 certificates, <span class="code">CA1</span>, <span class="code">CA2</span>, and <span class="code">CA3</span>.
+This example creates a PKIENTITY called `new_entity` that has 3 certificates, `CA1`, `CA2`, and `CA3`.
 
 
     PKIUTIL PKIENTITY id = new_entity, certificates = "(‘CA1’, ‘CA2’, ‘CA3’)"
 
-In the CFTSSL definition that follows, the <span class="code">rootcid </span>parameter has two identifiers. However, you cannot distinguish in this definition if the identifiers correspond to a PKIENTITY or a PKICER object.
+In the CFTSSL definition that follows, the `rootcid `parameter has two identifiers. However, you cannot distinguish in this definition if the identifiers correspond to a PKIENTITY or a PKICER object.
 
 > **Note:**
 >
@@ -49,7 +49,7 @@ In the CFTSSL definition that follows, the <span class="code">rootcid </span>pa
                      verify      = required,
                      mode        = replace       
 
-The next example shows the PKIENTITY command equivalent in the <span class="code">rootcid </span>(that is, the certificates defined earlier in this example).
+The next example shows the PKIENTITY command equivalent in the `rootcid `(that is, the certificates defined earlier in this example).
 
 
     (CFTUTIL) CFTSSL id          = server_name,
@@ -64,7 +64,7 @@ The next example shows the PKIENTITY command equivalent in the <span class="code
 
 The actions described in this section lead to a PKIU26E error. For more information, see [PKIUTIL error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_here/pkiutil_error_codes).
 
--   Inserting a PKIENTITY with MODE = CREATE using an ID that is already in the database. For example, here the ID <span class="code">entity5</span> already exists in the PKI database.
+-   Inserting a PKIENTITY with MODE = CREATE using an ID that is already in the database. For example, here the ID `entity5` already exists in the PKI database.
 
 <!-- -->
 
@@ -72,7 +72,7 @@ The actions described in this section lead to a PKIU26E error. For more informat
     PKIU26E PKIENTITY _ Error ( PKI Record writing error {15008/0} () )
     PKIU00I PKIENTITY _ Failed  (id entity5,certificates=‘CA5',mode=create)
 
--   Deleting a PKIENTITY that is not in the database. In this example, <span class="code">entity6</span> does not exist in the PKI database.
+-   Deleting a PKIENTITY that is not in the database. In this example, `entity6` does not exist in the PKI database.
 
 <!-- -->
 

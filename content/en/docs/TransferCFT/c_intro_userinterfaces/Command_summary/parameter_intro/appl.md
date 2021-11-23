@@ -8,7 +8,7 @@
 
 #### CFTEXT
 
-All <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> application definitions.
+All {{< TransferCFT/componentshortname  >}} application definitions.
 
  
 

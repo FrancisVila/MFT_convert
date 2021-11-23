@@ -2,9 +2,9 @@
     "title": "TLS cipher suites",
     "linkTitle": "TLS cipher suites",
     "weight": "230"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-<span class="mc-variable suite_variables.GatewayName variable">Gateway</span> supports the cipher suites listed in this section. The availability of the ciphers is conditioned by various factors, as shown in the table.
+{{< Gateway/gatewayname  >}} supports the cipher suites listed in this section. The availability of the ciphers is conditioned by various factors, as shown in the table.
 
 <table>
    <thead>
@@ -688,17 +688,17 @@
 
 Comments about the table above:
 
-**D** : Disabled by default in <span class="mc-variable suite_variables.SecureRelayName variable" style="font-style: normal;">Secure Relay</span>
+**D** : Disabled by default in {{< Gateway/securerelayname  >}}
 
 ### Strong ciphers / weak ciphers
 
-By default, on a new installation, only strong ciphers can be selected in TLS profiles. For compatibility reasons, a parameter was added: <span class="code">\[tls\]enable\_weak\_ciphers</span>, which enables all supported ciphers.
+By default, on a new installation, only strong ciphers can be selected in TLS profiles. For compatibility reasons, a parameter was added: `[tls]enable_weak_ciphers`, which enables all supported ciphers.
 
-When <span class="code">enable\_weak\_cipher </span>is set to *yes* and a weak cipher is selected:
+When `enable_weak_cipher `is set to *yes* and a weak cipher is selected:
 
 • a warning message is shown on selection
 
-• it will no longer be available in transfers if the <span class="code">enable\_weak\_cipher </span>option is switched to *no* (a warning message will be shown).
+• it will no longer be available in transfers if the `enable_weak_cipher `option is switched to *no* (a warning message will be shown).
 
 **Ciphers using the MD5 hash algorithm**: the parameter:` [monitor]enable_md5_hash_algorithm` (not recommended) enables ciphers using the MD5 hash algorithm. When `enable_md5_hash_algorithm `is set to *no* and a cipher suite using the MD5 hash algorithm is selected:
 
@@ -726,6 +726,6 @@ Related topics
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

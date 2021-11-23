@@ -15,5 +15,5 @@ If not other user classes are defined, all users are in one of the default user 
 
 **Related topics:**
 
--   <a href="../c_st_custom_expressions" class="MCXref xref">Custom expressions</a>
--   <a href="../t_st_userclasses" class="MCXref xref">Manage user classes</a>
+-   [Custom expressions](../c_st_custom_expressions)
+-   [Manage user classes](../t_st_userclasses)

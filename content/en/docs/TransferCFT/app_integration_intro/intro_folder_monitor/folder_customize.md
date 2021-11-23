@@ -8,7 +8,7 @@ This topic described some of the more advanced parameter settings for Transfer C
 
 You can use the file\_include\_filter or file\_exclude\_filter parameters to define file name patterns to include or exclude files from folder monitoring.
 
-The filter\_type parameter value indicates how the comparison of file names against the patterns occurs. The possible filter\_type parameter values are **STRJCMP**, **WILDMAT**. and <span class="bold_in_para">EREGEX</span>.
+The filter\_type parameter value indicates how the comparison of file names against the patterns occurs. The possible filter\_type parameter values are **STRJCMP**, **WILDMAT**. and **EREGEX**.
 
 ## STRJCMP filter
 
@@ -178,7 +178,7 @@ In POSIX-Extended regular expressions, all characters match themselves meaning t
 
 ## Use case
 
-The EREGEX examples describe how to create multiple exclusions using the <span class="code">INCLUDEFILTER </span>and <span class="code">EXCLUDEFILTER </span>parameters.
+The EREGEX examples describe how to create multiple exclusions using the `INCLUDEFILTER `and `EXCLUDEFILTER `parameters.
 
 ### EREGEX example 1
 

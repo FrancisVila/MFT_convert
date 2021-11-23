@@ -4,7 +4,7 @@
     "weight": "280"
 }{{< SecureTransport/componentshortname  >}} uses a streaming protocol for communication between the protocol servers running on {{< SecureTransport/componentshortname  >}} Edge and the Transaction Manager (TM) server running on {{< SecureTransport/componentshortname  >}} Server. The streaming protocol abstracts all file transfer protocols and unifies and secures this central communication. When you deploy one or more {{< SecureTransport/componentshortname  >}} Edge servers in a peripheral network (DMZ), the deployment is called *streaming* because no file transfer data is stored on the {{< SecureTransport/componentshortname  >}} Edge server. The protocol servers translate the protocol they are serving to the streaming protocol but do not read or write files.
 
-With a streaming deployment, the TM Server connects to the protocol servers on the configured {{< SecureTransport/componentshortname  >}} Edge servers to establish the connections for the streaming protocol, so no process on a {{< SecureTransport/componentshortname  >}} Edge ever makes a connection from the DMZ into the internal secure network. For more information, see <a href="../../overview/c_st_securetransport_edge" class="MCXref xref">SecureTransport Edge</a>. (The TM server and protocol servers running on {{< SecureTransport/componentshortname  >}} Server also use the streaming protocol internally.)
+With a streaming deployment, the TM Server connects to the protocol servers on the configured {{< SecureTransport/componentshortname  >}} Edge servers to establish the connections for the streaming protocol, so no process on a {{< SecureTransport/componentshortname  >}} Edge ever makes a connection from the DMZ into the internal secure network. For more information, see [SecureTransport Edge](../../overview/c_st_securetransport_edge). (The TM server and protocol servers running on {{< SecureTransport/componentshortname  >}} Server also use the streaming protocol internally.)
 
 > **Note:**
 >
@@ -26,5 +26,5 @@ On a {{< SecureTransport/componentshortname  >}} Edge server, there is only one 
 
 The following topics describe the streaming deployment and describe managing the Transaction Manager (TM), protocol, and proxy server communication:
 
--   <a href="" class="MCXref xref">Streaming deployment</a> - Describes {{< SecureTransport/securetransportname >}} streaming deployment.
--   <a href="t_st_networkzones" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a> - Describes managing the Transaction Manager (TM), protocol, and proxy server communication and provides how-to instructions for configuring the Transaction Manager (TM), protocol, and proxy server communication.
+-   [Streaming deployment]() - Describes {{< SecureTransport/securetransportname >}} streaming deployment.
+-   [Manage the communication across Transaction Manager, protocol and proxy servers](t_st_networkzones) - Describes managing the Transaction Manager (TM), protocol, and proxy server communication and provides how-to instructions for configuring the Transaction Manager (TM), protocol, and proxy server communication.

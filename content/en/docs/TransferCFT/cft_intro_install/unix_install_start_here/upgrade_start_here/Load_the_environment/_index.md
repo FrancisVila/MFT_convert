@@ -2,9 +2,9 @@
     "title": "Migration prerequisites",
     "linkTitle": "Perform a manual migration",
     "weight": "200"
-}After performing a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="mc-variable Primary.Transfer_CFT version_long variable">3.9</span> installation, you should update to the most recent service pack.
+}After performing a {{< TransferCFT/componentshortname  >}} installation, you should update to the most recent service pack.
 
-You require a new license key if you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
+You require a new license key if you are migrating from a version 2.x {{< TransferCFT/componentshortname  >}} to a version 3.x.
 
 ## Check the impact of new features
 
@@ -18,13 +18,13 @@ Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Vi
 >
 > If the redistribution package is already installed on your Windows system, there is no need to reinstall.
 
-## Install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span>
+## Install {{< TransferCFT/componentshortname  >}} {{< TransferCFT/componentversion  >}}
 
-Perform a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> installation, as described in the OS-specific installation section.
+Perform a {{< TransferCFT/componentshortname  >}} installation, as described in the OS-specific installation section.
 
 ## Load the environment
 
-Before beginning a standard migration procedure, you must load the old <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment.
+Before beginning a standard migration procedure, you must load the old {{< TransferCFT/componentshortname  >}} environment.
 
 ### Windows procedure
 
@@ -32,7 +32,7 @@ Before beginning a standard migration procedure, you must load the old <span cla
 
 There is no profile file for Transfer CFT 2.4 in Windows.
 
-To execute a command you must be in the correct directory. Therefore, before starting the migration, change the directory to the version-appropriate <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> installation directory.
+To execute a command you must be in the correct directory. Therefore, before starting the migration, change the directory to the version-appropriate {{< TransferCFT/componentshortname  >}} installation directory.
 
 #### Transfer CFT 2.5 and higher
 
@@ -44,10 +44,10 @@ After loading the profile, you can execute commands from anywhere.
 
 #### Transfer CFT 2.4
 
-From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: <span class="code">. ./ENV\_CFT</span>
+From the console, execute the profile file for your version of Transfer CFT, which is by default located in the home directory. Enter: `. ./ENV_CFT`
 
 #### Transfer CFT 2.5 and higher
 
-From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: <span class="code">. ./profile</span>
+From the console, change directory to the Transfer CFT runtime directory and execute the profile file using the command: `. ./profile`
 
 After loading the profile, you can execute commands from anywhere.

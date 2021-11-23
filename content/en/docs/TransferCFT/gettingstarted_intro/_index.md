@@ -2,9 +2,9 @@
     "title": "Getting started",
     "linkTitle": "Getting started",
     "weight": "80"
-}This *Getting started* section provides a high level overview on how to create basic flows and check the flow status. For more information on using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, refer to the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> User's Guide.
+}This *Getting started* section provides a high level overview on how to create basic flows and check the flow status. For more information on using , refer to the User's Guide.
 
-Prior to beginning this section, you installed <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> and your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, and checked that the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s registration with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> is complete. Next you can begin setting up your environment for business use.
+Prior to beginning this section, you installed and your {{< TransferCFT/componentshortname  >}}s, and checked that the {{< TransferCFT/componentshortname  >}}s registration with is complete. Next you can begin setting up your environment for business use.
 
 The following diagram shows the relationship between the activities related to creating a flow. For more information, click the corresponding links below the diagram.
 
@@ -12,7 +12,7 @@ The following diagram shows the relationship between the activities related to c
 
 In this getting started section, you use the following interfaces to configure and then execute your flows.
 
--   <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> UI: This is the UI available after logging on <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> that you use to configure flows and monitor Transfer CFT
+-   {{< TransferCFT/centralgovernancename >}} UI: This is the UI available after logging on {{< TransferCFT/centralgovernancename >}} that you use to configure flows and monitor Transfer CFT
 -   CFTUTIL: Use CFTUTIL, the command line interface for Transfer CFT, to run the transfer commands. The Transfer
     CFT utility is a program which can be activated in batch or interactive
     mode. For information on using CFTUTIL, please refer to [About the CFTUTIL interface](../c_intro_userinterfaces/about_cftutil).

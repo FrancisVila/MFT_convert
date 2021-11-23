@@ -16,19 +16,19 @@
 
 The following topics provide detailed Send To Partner route step configuration information:
 
--   <a href="#File" class="MCXref xref">Input Files</a>
--   <a href="#Proceed" class="MCXref xref">Proceed with route execution on failure</a>
--   <a href="#Transfer" class="MCXref xref">Transfer Settings</a>
--   <a href="#Configur" class="MCXref xref">Configure advanced PeSIT settings</a>
--   <a href="#Overwrit" class="MCXref xref">Overwrite upload folder</a>
--   <a href="#Route" class="MCXref xref">Route files as</a>
--   <a href="#Send" class="MCXref xref">Send trigger file</a>
--   <a href="#Retry" class="MCXref xref">Retry settings</a>
--   <a href="#Post" class="MCXref xref">Post Routing Action</a>
+-   [Input Files](#File)
+-   [Proceed with route execution on failure](#Proceed)
+-   [Transfer Settings](#Transfer)
+-   [Configure advanced PeSIT settings](#Configur)
+-   [Overwrite upload folder](#Overwrit)
+-   [Route files as](#Route)
+-   [Send trigger file](#Send)
+-   [Retry settings](#Retry)
+-   [Post Routing Action](#Post)
 
 **Related topic:**
 
--   <a href="../t_st_publish_to_account" class="MCXref xref">Publish To Account</a>
+-   [Publish To Account](../t_st_publish_to_account)
 
 <span id="File"></span>
 

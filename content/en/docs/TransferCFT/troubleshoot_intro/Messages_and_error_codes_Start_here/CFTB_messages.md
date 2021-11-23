@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -45,7 +45,7 @@ CS=&amp;scs</p>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>In REQUESTER mode, the transfer is refused with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>In REQUESTER mode, the transfer is refused with a {{< TransferCFT/componentshortname  >}}
 122 diagnostic code and a MALLOC protocol diagnostic message.<br />
 In SERVER mode, the incoming call is rejected.</p>
 <p>In this case, as the partner's name is not known, the value
@@ -100,7 +100,7 @@ NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net</p>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The transfer
-is interrupted with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 302 code and a protocol diagnostic
+is interrupted with a {{< TransferCFT/componentshortname  >}} 302 code and a protocol diagnostic
 message indicating the specific error code of the error occurring during
 the send request. This code is expressed in hexadecimal form.</p>         </td>
       </tr>
@@ -140,7 +140,7 @@ CR=&amp;cr CS=&amp;cs</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Problem encountered when sending an internal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>Problem encountered when sending an internal {{< TransferCFT/componentshortname  >}}
 message to the FILE task.</p>         </td>
       </tr>
       <tr>
@@ -196,7 +196,7 @@ NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net</p>
          <td><p>Consequence</p>         </td>
          <td><p>For a general
 -6 code (maximum number of connections reached on the resource), the transfer
-is refused with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 416 diagnostic code and a MAXCNX protocol
+is refused with a {{< TransferCFT/componentshortname  >}} 416 diagnostic code and a MAXCNX protocol
 diagnostic message. The transfer will be retried (minimum time-out equal
 to the WSCAN parameter of the CFTCAT command), without incrementing the
 retry counter.</p>         </td>

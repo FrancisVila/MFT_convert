@@ -28,13 +28,13 @@ the file transfer environment.</p>         </td>
       <tr>
          <td><p><a href="write_transfer_modes">Write
 transfer modes</a></p>         </td>
-         <td><p>Describes the two write transfer modes, <span style="font-style: italic;">Open</span>
-and <span style="font-style: italic;">Closed</span>.</p>         </td>
+         <td><p>Describes the two write transfer modes, <em>Open</em>
+and <em>Closed</em>.</p>         </td>
       </tr>
       <tr>
          <td><p><a href="implicit_transfer_modes">Implicit
 transfer modes</a></p>         </td>
-         <td><p>Describes the two read transfer implicit send modes, <span style="font-style: italic;">Open</span> and <span style="font-style: italic;">Closed</span>.</p>         </td>
+         <td><p>Describes the two read transfer implicit send modes, <em>Open</em> and <em>Closed</em>.</p>         </td>
       </tr>
       <tr>
          <td><p><a href="model_and_physical_file_concepts">Model

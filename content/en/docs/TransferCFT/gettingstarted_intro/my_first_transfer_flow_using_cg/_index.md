@@ -2,7 +2,7 @@
     "title": "My first transfer flow ",
     "linkTitle": "First transfer flow with Central Governance",
     "weight": "110"
-}This topic describes how to create basic <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> transfer flows using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>. Once you understand file transfer flow concepts, you can customize your application integrations and data flows.
+}This topic describes how to create basic {{< TransferCFT/componentshortname  >}} transfer flows using . Once you understand file transfer flow concepts, you can customize your application integrations and data flows.
 
 ## Learn how to...
 
@@ -19,20 +19,20 @@
 
 ## What you will need
 
--   A running <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> system
--   Three started <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s that are registered with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+-   A running {{< TransferCFT/centralgovernancename >}} system
+-   Three started {{< TransferCFT/componentshortname >}}s that are registered with
 -   Three files for exchanges. After creating the files, name them: SALES\_report, DAILY\_news, and INVENTORY
 
 <!-- -->
 
--   Appropriate rights in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for creating flows - refer to the <span class="mc-variable Primary.CG or_UM variable" style="mc-tag-and-class: ;font-style: italic;">Central Governance</span><span class="italic_in_para" style="font-style: italic;"> User's Guide</span> for more information on user rights
+-   Appropriate rights in for creating flows - refer to the  for more information on user rights
 -   Familiarize yourself with the two user interfaces as described in the [Getting started overview](../)
 
 ## Goal
 
 These exercises create the flow types shown in the diagram below.
 
-Notice that the <span class="bold_in_para">NAME </span>of the flow in the Flow List is a user friendly name describing the flow, while the <span class="bold_in_para">IDENTIFIER </span>is the parameter (ID) that you will use in your transfer commands.
+Notice that the **NAME** of the flow in the Flow List is a user friendly name describing the flow, while the **IDENTIFIER** is the parameter (ID) that you will use in your transfer commands.
 
          <img src="/Images/TransferCFT/results_cg_flows.png" class="maxWidth" alt="This diagram lists the five flows to create, which are simple, multiple, implicit, broadcast, and collect." />
 
@@ -44,7 +44,7 @@ Use the **Details** arrows ![](/Images/TransferCFT/mapArrow.png) to get more inf
 
 ### Create applications to use in flows
 
-When you are working in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, you create *applications* that represent your exchange partners. In these exercises we create three applications in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+When you are working in , you create *applications* that represent your exchange partners. In these exercises we create three applications in .
 
 <table>
    <thead>
@@ -58,9 +58,9 @@ When you are working in <span class="mc-variable Primary.CG or_UM variable">Cent
    <tbody>
       <tr>
          <td>1         </td>
-         <td><p>Check your Transfer CFTs in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.<br />
+         <td><p>Check your Transfer CFTs in .<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> select <span class="bold_in_para">Products </span>on the top toolbar to open the <span class="bold_in_para">Product List</span> page and note the host name of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s to use in these exercises.</p>         </td>
+         <td><p>In select <strong>Products</strong> on the top toolbar to open the <strong>Product List</strong> page and note the host name of the {{< TransferCFT/componentshortname  >}}s to use in these exercises.</p>         </td>
          <td><a href="intro_cg_task_catalog/t_view_products_in_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
@@ -71,7 +71,7 @@ When you are working in <span class="mc-variable Primary.CG or_UM variable">Cent
       </tr>
       <tr>
          <td> 
-<p>Notice the association between the application <span class="bold_in_para">Name </span>and the<span class="bold_in_para"> Transfer CFT</span> instance identifier. You will need the Transfer CFT identifier, for example <span class="code">CFTlptxumcft4-01</span> in the example below, to use in your transfer commands.</p>
+<p>Notice the association between the application <strong>Name</strong> and the <strong>Transfer CFT</strong> instance identifier. You will need the Transfer CFT identifier, for example <code>CFTlptxumcft4-01</code> in the example below, to use in your transfer commands.</p>
 <p>Your <strong>Name</strong> list should look like this:</p>
 <p><img src="/Images/TransferCFT/application_list_complete.png" class="maxWidth" alt="Application list in Central Governance showing 3 example applications to use in flows" /></p>
 <p> </p>
@@ -107,7 +107,7 @@ Let's begin by creating a simple flow, and then exchange a file. In this example
          <td>1         </td>
          <td><p>Define a flow.<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> define a flow named Simple_flow and give it the identifier flow01.</p>
+         <td><p>In define a flow named Simple_flow and give it the identifier flow01.</p>
 <p>Use Store_66 as the Source and the MainOffice as the Target.<br />
 Note: You cannot modify the Protocol until you have defined both the Source and Target.</p>         </td>
          <td><a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
@@ -115,19 +115,19 @@ Note: You cannot modify the Protocol until you have defined both the Source and 
       <tr>
          <td>2         </td>
          <td><p>Deploy the flow.</p>         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save now and deploy at a later date, or click Deploy to save and deploy.         </td>
+         <td>In you can save now and deploy at a later date, or click Deploy to save and deploy.         </td>
          <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>3         </td>
          <td>Create a file to exchange.         </td>
-         <td>For this example, create a file named SALES_report, and place it in the Store_66's <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> runtime\pub folder .         </td>
+         <td>For this example, create a file named SALES_report, and place it in the Store_66's {{< TransferCFT/componentshortname  >}} runtime\pub folder .         </td>
          <td><a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>4         </td>
          <td>Run the SEND command.         </td>
-         <td><p>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command:<br />
+         <td><p>In {{< TransferCFT/componentshortname  >}}, run the following command:<br />
 CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report</p>
 <p>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>
 <blockquote>
@@ -140,7 +140,7 @@ The flow Identifier field is equivalent to the Transfer CFT IDF parameter.</p>
       <tr>
          <td>5         </td>
          <td>Monitor the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, check the status of the file exchange.         </td>
+         <td>In , check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -168,7 +168,7 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
          <td>1         </td>
          <td><p>Create a flow.<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> define a flow called <span class="code">flow02 </span>with Store_66 as the Source, and the MainOffice as the Target.<br />
+         <td><p>In define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />
 </p>         </td>
          <td><a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -181,28 +181,27 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
       <tr>
          <td>3         </td>
          <td>Create the files for the exchange.         </td>
-         <td><p>For this example, create a folder called Store_66 in the Store_66 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> <span class="code">runtime\pub\ </span>directory.</p>
-<p>Copy three files to this folder and call them <span class="code">SALES_report</span>, <span class="code">DAILY_news</span>, and <span class="code">INVENTORY</span>.</p>         </td>
+         <td><p>For this example, create a folder called Store_66 in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime\pub\ </code>directory.</p>
+<p>Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>.</p>         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>4         </td>
          <td>Deploy the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save, and deploy later, or save and deploy immediately.         </td>
+         <td>In you can save, and deploy later, or save and deploy immediately.         </td>
          <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>5         </td>
          <td>Run the SEND command.         </td>
-         <td>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command: <span class="code"><br />
-CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</span>
-<p>Remember, replace <span class="code">&lt;instance_MainOffice&gt;</span> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>         </td>
+         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code>
+<p>Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>         </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>6         </td>
          <td>Monitor the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, check the status of the file exchange.         </td>
+         <td>In , check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -230,8 +229,8 @@ You can use the transfer mode to make a file whose content is frequently changin
          <td>1         </td>
          <td><p>Create an implicit flow.<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> define a flow called <span class="code">flow03</span>.</p>
-<p>To enable implicit mode, you select <span class="bold_in_para">Target pulls file</span> in the flow's <span class="italic_in_para">General Information</span> page.</p>
+         <td><p>In define a flow called <code>flow03</code>.</p>
+<p>To enable implicit mode, you select <strong>Target pulls file</strong> in the flow's page.</p>
 <p>Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />
 </p>         </td>
          <td><img src="/Images/TransferCFT/mapArrow.png" />         </td>
@@ -240,27 +239,26 @@ You can use the transfer mode to make a file whose content is frequently changin
          <td>2         </td>
          <td>Define the path to the file location.         </td>
          <td><p>In the File properties of the Source, define the path to the file to be sent.</p>
-<p>In our example, use the TEST file located in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> runtime /pub folder.</p>         </td>
+<p>In our example, use the TEST file located in the {{< TransferCFT/componentshortname  >}} runtime /pub folder.</p>         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>3         </td>
          <td><p>Deploy the flow.</p>         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save and deploy later, or save and deploy.         </td>
+         <td>In you can save and deploy later, or save and deploy.         </td>
          <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>4         </td>
          <td>Run the RECV command.         </td>
-         <td>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command: <span class="code"><br />
-CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</span>
-<p>Remember, replace <span class="code">&lt;instance_Store_89&gt;</span> with the Transfer CFT instance for Store_89 as it displays in the list of applications.</p>         </td>
+         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code>
+<p>Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications.</p>         </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>5         </td>
          <td>Monitor the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, check the status of the file exchange.         </td>
+         <td>In , check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -296,7 +294,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
          <td>1         </td>
          <td><p>Create a flow.<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> define a flow called <span class="code">flow04</span>. In this flow the MainOffice is the Source with the two stores as the Targets.</p>         </td>
+         <td><p>In define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets.</p>         </td>
          <td><a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
@@ -308,26 +306,26 @@ Additionally, you can define what occurs if a partner is unknown, how the script
       <tr>
          <td>3         </td>
          <td>          </td>
-         <td>For this example, copy a file SALES_report to transfer in the Store_66 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> runtime\pub folder.         </td>
+         <td>For this example, copy a file SALES_report to transfer in the Store_66 {{< TransferCFT/componentshortname  >}} runtime\pub folder.         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>4         </td>
          <td><p>Deploy the flow.</p>         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save and deploy at a later date, or both save and deploy now.         </td>
+         <td>In you can save and deploy at a later date, or both save and deploy now.         </td>
          <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>5         </td>
          <td>Run the SEND command.         </td>
-         <td><p>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command:</p>
-<p><span class="code">CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</span></p>         </td>
+         <td><p>In {{< TransferCFT/componentshortname  >}}, run the following command:</p>
+<p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>         </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>6         </td>
          <td>Monitor the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, check the status of the file exchange.         </td>
+         <td>In , check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -355,8 +353,8 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
          <td>1         </td>
          <td><p>Create a flow.<br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> create a flow called <span class="code">flow05 </span>and define the Source as MainOffice and the stores as the Target.<br />
-<span class="bold_in_para">Note</span>: You cannot define the Protocol until you have defined both the Source and Target.</p>         </td>
+         <td><p>In create a flow called <code>flow05 </code>and define the Source as MainOffice and the stores as the Target.<br />
+<strong>Note</strong>: You cannot define the Protocol until you have defined both the Source and Target.</p>         </td>
          <td><a href="intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
@@ -374,20 +372,19 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
       <tr>
          <td>4         </td>
          <td><p>Deploy the flow.</p>         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> you can save and deploy later, or save and deploy.         </td>
+         <td>In you can save and deploy later, or save and deploy.         </td>
          <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>5         </td>
          <td>Run the RECV command.         </td>
-         <td>In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the following command: <span class="code"><br />
-CFTUTIL RECV PART=DEST_Stores, IDF=flow05</span>         </td>
+         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>         </td>
          <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>6         </td>
          <td>Monitor the flow.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, check the status of the file exchange.         </td>
+         <td>In , check the status of the file exchange.         </td>
          <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>
@@ -397,7 +394,7 @@ CFTUTIL RECV PART=DEST_Stores, IDF=flow05</span>         </td>
 
 ## Get more information
 
-Once you understand the basic modes and concepts described in this section, you can add processing, symbolic variables, scripts and more to your transfers using other <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.
+Once you understand the basic modes and concepts described in this section, you can add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.
 
--   For more information on <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, screen details, checking product status, and so on, please refer to the <span class="mc-variable suite_variables.Central_GovernanceName variable" style="font-style: italic;">Central Governance</span> <span class="mc-variable suite_variables.DocTypeUser variable" style="font-style: italic;">User Guide</span>.
--   For a complete listing of Source and Target parameters, refer to the Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> parameter mapping available in the **Central Governance* <span class="mc-variable suite_variables.DocTypeUser variable" style="font-style: italic;">User Guide</span>*.
+-   For more information on {{< TransferCFT/centralgovernancename >}}, screen details, checking product status, and so on, please refer to the {{< TransferCFT/centralgovernancename >}} {{< TransferCFT/doctypeuser >}}.
+-   For a complete listing of Source and Target parameters, refer to the Transfer CFT to parameter mapping available in the **Central Governance* {{< TransferCFT/doctypeuser >}}*.

@@ -2,7 +2,7 @@
     "title": "Redirect log4j output from the database",
     "linkTitle": "Redirect log4j output from the database",
     "weight": "340"
-}As listed in <a href="../r_st_log4j_files#AppServerLogs_558321163_1039127" class="MCXref xref">Log4j files</a>, some log output is directed to both the `xferlog` file and the database.
+}As listed in [Log4j files](../r_st_log4j_files#AppServerLogs_558321163_1039127), some log output is directed to both the `xferlog` file and the database.
 
 If you set any log level to `debug` or `all`, {{< SecureTransport/componentshortname  >}} produces many log messages which can overload the database. Do not log to the database for log level `debug` or `all`.
 
@@ -64,11 +64,11 @@ To:
 
 **Related topics:**
 
--   <a href="../r_st_log4j_files" class="MCXref xref">Log4j files</a>
--   <a href="../c_st_database_log_files" class="MCXref xref">Database log files</a>
--   <a href="../c_st_ftpd_log_file" class="MCXref xref">FTPD log file</a>
--   <a href="../c_st_admin_log_file" class="MCXref xref">Admin log file</a>
--   <a href="../c_st_general_log_files" class="MCXref xref">General log files</a>
--   <a href="../t_st_change_log4j_files" class="MCXref xref">Modify the log4j files</a>
--   <a href="../t_st_control_log_fallback_from_database_to_file" class="MCXref xref">Control log fallback from database to file</a>
--   <a href="../t_st_server_log_rotation_scheduling" class="MCXref xref">Server log rotation and monitor scheduling</a>
+-   [Log4j files](../r_st_log4j_files)
+-   [Database log files](../c_st_database_log_files)
+-   [FTPD log file](../c_st_ftpd_log_file)
+-   [Admin log file](../c_st_admin_log_file)
+-   [General log files](../c_st_general_log_files)
+-   [Modify the log4j files](../t_st_change_log4j_files)
+-   [Control log fallback from database to file](../t_st_control_log_fallback_from_database_to_file)
+-   [Server log rotation and monitor scheduling](../t_st_server_log_rotation_scheduling)

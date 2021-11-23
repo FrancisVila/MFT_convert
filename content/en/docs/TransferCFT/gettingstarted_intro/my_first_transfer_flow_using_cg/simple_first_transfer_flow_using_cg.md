@@ -6,7 +6,7 @@
 
 <img src="/Images/TransferCFT/TransferCFT_Standard_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a file to a Target" />
 
-#### In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+#### In
 
 1.  Define a flow.
     -   Select **Flows** > **Add flow**.
@@ -14,7 +14,7 @@
 
     <!-- -->
 
-    -   Create a flow named `Simple_flow` and give it the identifier <span class="bold_in_para">`flow01`</span>.
+    -   Create a flow named `Simple_flow` and give it the identifier **`flow01`**.
     -   <img src="/Images/TransferCFT/flow02.png" class="maxWidth" />
 
     <!-- -->
@@ -24,14 +24,14 @@
     -   An *application* is the logical representation of a business software application that is the true sender or true receiver in a file exchange. An application can represent a back-end enterprise resource system, such as SAP or PeopleSoft.
 
     -   <img src="/Images/TransferCFT/flow03.png" class="maxWidth" />
-2.  Click <span class="bold_in_para">**Deploy** </span>to save and deploy. [Details](../intro_cg_task_catalog/t_savedeployflow)
+2.  Click ****Deploy**** to save and deploy. [Details](../intro_cg_task_catalog/t_savedeployflow)
 
-#### In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+#### In {{< TransferCFT/componentshortname  >}}
 
-1.  Add a file to exchange. Put a test file, for example <span class="bold_in_para"> SALES\_report</span>, in the Store\_66 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span><span class="code"> runtime/pub</span> folder.
-2.  From the source <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, run the SEND command.
-    -   Remember to replace <span class="code">&lt;instance\_target></span> with your Transfer CFT for the MainOffice target.
+1.  Add a file to exchange. Put a test file, for example **SALES\_report**, in the Store\_66 {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
+2.  From the source {{< TransferCFT/componentshortname >}}, run the SEND command.
+    -   Remember to replace `<instance_target>` with your Transfer CFT for the MainOffice target.
 
     <!-- -->
 
-    -   The flow <span class="bold_in_para">Identifier </span>field is equivalent to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> IDF parameter.
+    -   The flow **Identifier** field is equivalent to the {{< TransferCFT/componentshortname >}} IDF parameter.

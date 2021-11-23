@@ -276,7 +276,7 @@ multiple partners.</li>
       </tr>
       <tr>
          <td>_CAT_TIMEC         </td>
-         <td>TCYCLE parameter value.<span style="color: #ff0000;"> </span>         </td>
+         <td>TCYCLE parameter value.         </td>
       </tr>
       <tr>
          <td>_CAT_TIMED         </td>

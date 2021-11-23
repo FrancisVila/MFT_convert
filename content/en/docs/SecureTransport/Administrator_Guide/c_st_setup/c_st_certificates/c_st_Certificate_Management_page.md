@@ -23,11 +23,11 @@ Use the *Certificate Management* page to perform the following certificate manag
 
 **Related topics:**
 
--   <a href="../r_st_certificate_types" class="MCXref xref">Certificate types</a>
--   <a href="../t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>
--   <a href="../t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>
--   <a href="../t_st_trustedcas" class="MCXref xref">Manage trusted CAs</a>
--   <a href="../t_st_internalca" class="MCXref xref">Manage the internal CA</a>
--   <a href="../t_st_certificatekeystorepasswordca" class="MCXref xref">Change the certificate keystore password</a>
--   <a href="../r_st_certificatestogenerate" class="MCXref xref">Certificates to generate during initial setup</a>
--   <a href="../t_st_storecertificatesinhsm" class="MCXref xref">Store certificates in a hardware security module</a>
+-   [Certificate types](../r_st_certificate_types)
+-   [Repository encryption certificate](../t_st_repository_encryption_certificate)
+-   [Manage local certificates and certificate signing requests](../t_st_localcertificatesandcsrs)
+-   [Manage trusted CAs](../t_st_trustedcas)
+-   [Manage the internal CA](../t_st_internalca)
+-   [Change the certificate keystore password](../t_st_certificatekeystorepasswordca)
+-   [Certificates to generate during initial setup](../r_st_certificatestogenerate)
+-   [Store certificates in a hardware security module](../t_st_storecertificatesinhsm)

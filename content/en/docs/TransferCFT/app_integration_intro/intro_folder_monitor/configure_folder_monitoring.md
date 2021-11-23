@@ -11,7 +11,7 @@
 ## Folder monitoring set up
 
 1.  Activate the folder monitoring option.
-    -   Set uconf parameter folder\_monitoring.enable to <span class="bold_in_para">Yes</span>.
+    -   Set uconf parameter folder\_monitoring.enable to **Yes**.
 2.  Declare your logical directories to monitor.
     -   Add CFTFOLDER objects.
 3.  For each logical directory defined, configure the specific options you want to use for each:
@@ -69,7 +69,7 @@ Parameter descriptions
          <td>No         </td>
          <td><ul>
 <li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> folder monitoring.</li>
+<li>Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>
 </ul>         </td>
       </tr>
       <tr>
@@ -306,7 +306,7 @@ The second one, when present, defines the separator after the timestamp.</p>
          <td><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>         </td>
          <td>String         </td>
          <td>         </td>
-         <td><p><em>Available on UNIX and</em> <span class="mc-variable Primary.for_Windows variable" style="font-style: italic;">Windows</span> <em></em></p>
+         <td><p><em>Available on UNIX and</em> <em></em></p>
 <p>Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.</p>         </td>
       </tr>
    </tbody>
@@ -316,8 +316,8 @@ The second one, when present, defines the separator after the timestamp.</p>
 >
 > \*You cannot use the following characters in the SCANDIR or WORKDIR definition. Additionally you cannot use a comma (,) in the CFTFOLDER SCANDIR or WORKDIR definition.
 
--   <span class="mc-variable Primary.For_unix variable">UNIX</span> /
--   For <span class="mc-variable Primary.for_Windows variable">Windows</span> \\ / : \* ? " &lt; > |
+-   /
+-   For \\ / : \* ? " &lt; > |
 
 ### Parameter settings and actions
 
@@ -334,7 +334,7 @@ For a file to become a candidate to be submitted, the following conditions must 
 
 ## Create or modify a CFTFOLDER object
 
-The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the <span class="code">CFTUTIL RECONFIG type=FOLDER</span> command to check and reload the configuration.
+The act of starting Transfer CFT causes Transfer CFT to check for and reload configuration changes. Alternatively, you can dynamically execute the `CFTUTIL RECONFIG type=FOLDER` command to check and reload the configuration.
 
 Upon reloading, if there are any modified configuration parameters or detected errors in the new configuration, Transfer CFT records these in the log. Additionally, Transfer CFT verifies that the updated configuration is compatible with the contents of the current directories.
 
@@ -342,7 +342,7 @@ In particular, if you change the METHOD parameter from FILE to MOVE without mod
 
 If you create or modify a folder while Transfer CFT is running, you must execute the ACT command to reload the configuration.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 The following command reloads the FM40 configuration.
 
@@ -429,7 +429,7 @@ This section presents an example that consists of configuring 3 directories for 
 The first directory presents the simplest possible configuration, leaving most parameters set to their default values.
 
 -   All of the files in the directory sub-tree are candidates for the SEND submission.
--   The files are sent to a given partner, <span class="code">newyork</span>, using an IDF name of IDFA.
+-   The files are sent to a given partner, `newyork`, using an IDF name of IDFA.
 
 The following commands create the configuration defined for directory A.
 
@@ -471,7 +471,7 @@ The following commands create the required directory B configuration.
     #
     CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir_b/scan', WORKDIR='/home/CFT/fm/dir_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='*.txt'
 
-The files to be sent must be moved to the directory that corresponds to the destination partner name, for example <span class="code">/home/CFT/fm/dir\_b/newyork </span>for the partner named <span class="code">newyork</span>.
+The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork `for the partner named `newyork`.
 
 ### Directory C requirements
 
@@ -506,7 +506,7 @@ The following commands create the described directory C configuration.
     CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir_c/scan', 
     WORKDIR='/home/CFT/fm/dir_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='*.tmp'
 
-The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner <span class="code">newyork </span>and idf <span class="code">idf1</span>.
+The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner `newyork `and idf `idf1`.
 
 <span id="Customiz"></span>
 
@@ -514,7 +514,7 @@ The files to be sent must be moved to the directory that corresponds to the dest
 
 You can customize the transfer related metadata, such as the IDA, PARM, SUSER, etc. using the file name value. This allows folder monitoring to provide a functionality that resembles a SEND command.
 
-For example, you have a file named <span class="code">A0001.appli1.cft.XXX</span> in the <span class="code">scan1 </span>folder, and you have the following two objects in your configuration:
+For example, you have a file named `A0001.appli1.cft.XXX` in the `scan1 `folder, and you have the following two objects in your configuration:
 
 
     CFTFOLDER id=folder1,scandir=scan1,idf=idf1,par=part1,...CFTSEND id=idf1,ida=&%.1froot,sappl="&%.2froot",suser="&%.3froot",...
@@ -551,11 +551,11 @@ The following example describes how to scan a folder, send any new file, and the
 Create the following:
 
 -   A folder to scan, for example: `mkdir myScanFolder`
--   A working folder, for example: <span class="code">mkdir myWorkFolder</span>
+-   A working folder, for example: `mkdir myWorkFolder`
 -   An archive folder, for example: `mkdir myArchiveFolder`
 -   A test file, for example: `myFile.txt`
 -   Folder monitoring must be enabled: `uconfset id=folder_monitoring.enable, value=yes`
--   Stop <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> prior to start the procedure, enter: `cft stop `
+-   Stop {{< TransferCFT/transfercftname >}} prior to start the procedure, enter: `cft stop `
 
 In the **Steps** below, we use the absolute paths, that is, the folders are located in the runtime directory.
 
@@ -573,11 +573,11 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
         ACT type=folder, id=app1
 
-5.  Start Transfer CFT: <span class="code">cft start</span>
+5.  Start Transfer CFT: `cft start`
 
-6.  Put the test file in the <span class="code">runtime/MyScanFolder</span> folder.
+6.  Put the test file in the `runtime/MyScanFolder` folder.
 
-7.  Navigate to the `runtime/MyArchivedFolder` and check that the <span class="code">MyFile.txt</span> is stored there.
+7.  Navigate to the `runtime/MyArchivedFolder` and check that the `MyFile.txt` is stored there.
 
 8.  Check in the log for a message similar to the following:  
 
@@ -605,11 +605,11 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
         ACT type=folder, id=app1
 
-6.  Start Transfer CFT: <span class="code">cft start</span>
+6.  Start Transfer CFT: `cft start`
 
-7.  Put the test file in the <span class="code">runtime/MyScanFolder</span> folder.
+7.  Put the test file in the `runtime/MyScanFolder` folder.
 
-8.  Navigate to the `runtime/MyArchiveFolder` and check that the <span class="code">MyFile.txt</span> is stored there.
+8.  Navigate to the `runtime/MyArchiveFolder` and check that the `MyFile.txt` is stored there.
 
 9.  Check in the log for a message similar to the following:  
 
@@ -634,7 +634,7 @@ The following example demonstrates how to use the [USERCTRL](../../../c_intro_us
 
 2.  Start Transfer CFT with `usercft `as the user.
 
-3.  User1 creates the <span class="code">/home/user1/scandir\_app1</span> and `/home/user1/workdir` folders:  
+3.  User1 creates the `/home/user1/scandir_app1` and `/home/user1/workdir` folders:  
 
 4.  `App1 `writes files to this specific scandir folder, e.g. `/home/user1/scandir_app1`, which belongs to user1. Notice that the usercft user does not have access to`  scandir_app1`.
 
@@ -642,9 +642,9 @@ The following example demonstrates how to use the [USERCTRL](../../../c_intro_us
 
 6.  Activate the CFTFOLDER object:  
 
-7.  Create a file called<span class="code"> Myfile.txt</span>, and copy it to the `/home/user1/scandir_app1` folder.
+7.  Create a file called` Myfile.txt`, and copy it to the `/home/user1/scandir_app1` folder.
 
-<span class="bold_in_para">Results</span>
+**Results**
 
 The  transfer is executed on the behalf of user1. Notice that there is a message indicating that the folder is activated on behalf of the specified user.
 

@@ -15,7 +15,7 @@ To use an external database, either in a single or multi-node environment, you n
 
 Check the pre-installation information and prerequisites before you install.
 
-All the nodes of a {{< SecureTransport/componentshortname  >}} Enterprise Cluster share the same database schema and use the same installation directory and secret (`taeh`) file. The installer creates that schema when you install the first server in the cluster. You can have the installer create the `taeh` file or import an existing file for the first server in the cluster. You must copy and import the `taeh` file to the second and subsequent servers in the cluster before you install. For more information, see <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.
+All the nodes of a {{< SecureTransport/componentshortname  >}} Enterprise Cluster share the same database schema and use the same installation directory and secret (`taeh`) file. The installer creates that schema when you install the first server in the cluster. You can have the installer create the `taeh` file or import an existing file for the first server in the cluster. You must copy and import the `taeh` file to the second and subsequent servers in the cluster before you install. For more information, see [Secret file](../../../prereqs_overview/secret_file).
 
 > **Note:**
 >
@@ -133,7 +133,7 @@ This procedure assumes that {{< SecureTransport/componentshortname  >}} is not i
 
     -   **Use Proxy Authentication** - Set this option to `true` to use the native Oracle proxy authentication feature. You also need to provide the user name of the proxied account.
 
-    -   **Use Kerberos mode** - This option is supported only for Oracle databases. When set to `true`, SecureTransport will connect to the database password-less using Kerberos authentication. Note that the Oracle database server must already be configured for Kerberos. Check the <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/Configure-Oracle-Kerberos.htm#Prerequi" class="MCXref xref">prerequisites</a>. When configuring Kerberos mode:  
+    -   **Use Kerberos mode** - This option is supported only for Oracle databases. When set to `true`, SecureTransport will connect to the database password-less using Kerberos authentication. Note that the Oracle database server must already be configured for Kerberos. Check the [prerequisites](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/Configure-Oracle-Kerberos.htm#Prerequi). When configuring Kerberos mode:  
         -   Do not enter **Password** and **Login name**.
         -   Specify the location of the **Kerberos credentials cache file**.
         -   **Use Kerberos configuration file** - When set to `false`, SecureTransport copies the file to the `<FDH>/conf` directory and synchronizes it between the nodes. The file can be updated via the *Use the Server Configuration Files* page.  
@@ -159,8 +159,8 @@ This procedure assumes that {{< SecureTransport/componentshortname  >}} is not i
     -   **Enable Nightly Log Rotation** – Select if you want the system to perform automatic backup and purging of log files on a nightly basis. When this feature is enabled, {{< SecureTransport/componentshortname >}} Server backups log files, generated on the respective day, and creates a new one for the subsequent day. The server takes a back up and creates a new log file at 23:59 or 00:00 hours, depending on the log file type. This option is enabled by default. You can enable or disable the nightly log rotation after installation. For more information, see the .
     -   **Secret File Path** – The path to the secret (`taeh`)file you copied to this system. If you leave it blank, the installer creates a new secret file.
     -   If you are installing the first server in an Enterprise Cluster, you can specify a secret file or have the installer create one. Before you install {{< SecureTransport/componentshortname >}} on the other cluster nodes, you must copy the secret file to those systems.
-    -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. For more information, see <a href="../../../prereqs_overview/secret_file" class="MCXref xref">Secret file</a>.
-    -   **ClusterAuto-Register IP/FQDN** – To automatically register a node in an Enterprise Cluster, specify it by its IP address or FQDN. Otherwise, leave the field empty. You can add a SecureTransport Server to the cluster at a later stage using the Administration Tool. For more information, see <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/large_enterprise_clustering/t_st_add_server_to_cluster.htm" class="MCXref xref">Add a server to a cluster</a>.
+    -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. For more information, see [Secret file](../../../prereqs_overview/secret_file).
+    -   **ClusterAuto-Register IP/FQDN** – To automatically register a node in an Enterprise Cluster, specify it by its IP address or FQDN. Otherwise, leave the field empty. You can add a SecureTransport Server to the cluster at a later stage using the Administration Tool. For more information, see [Add a server to a cluster](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/large_enterprise_clustering/t_st_add_server_to_cluster.htm).
 
       
     When you have modified these values as required for your installation, press **Enter**.  
@@ -177,5 +177,5 @@ After successfully installing {{< SecureTransport/componentshortname  >}}, you m
 
 **Related topics:**
 
--   <a href="../installing_securetransport_embedded_db_unix" class="MCXref xref">Install SecureTransport on Unix with the embedded database</a>
--   <a href="../running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>
+-   [Install SecureTransport on Unix with the embedded database](../installing_securetransport_embedded_db_unix)
+-   [Run SecureTransport as a service on UNIX-based platforms after non-root installation](../running_st_as_service_unix)

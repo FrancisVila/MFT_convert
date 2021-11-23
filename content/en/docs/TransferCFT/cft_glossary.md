@@ -6,7 +6,7 @@
 
 <span id="Acceptance_by_CFT_"></span>
 
-#### Acceptance by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
+#### Acceptance by {{< TransferCFT/componentshortname  >}}:
 
 Process whereby a transfer request is taken into account by Transfer
 CFT when it is recorded in the catalog.
@@ -43,7 +43,7 @@ authorizations or denials (user-defined in the CFTAUTH command).
 
 <span id="Availability_for_the_monitor_"></span>
 
-#### Availability for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
+#### Availability for {{< TransferCFT/componentshortname  >}}:
 
 Process whereby a request is made available to the monitor when it is
 processed in the communication medium.
@@ -106,7 +106,7 @@ See [IDTU](#IDTU__catalog_identifier__) (catalog identifier).
 #### Catalog sharing:
 
 Option available in some environments, whereby the user can monitor
-several instances of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> via a single catalog file.
+several instances of {{< TransferCFT/componentshortname  >}} via a single catalog file.
 
 <span id="CD__Change_Direction__"></span>
 
@@ -119,7 +119,7 @@ Only the partner in possession of the token can send a file.
 
 #### CFT API:
 
-Programming interface used to integrate <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> into applications
+Programming interface used to integrate {{< TransferCFT/componentshortname  >}} into applications
 developed in either C or COBOL.
 
 <span id="CFTACCNT"></span>
@@ -156,7 +156,7 @@ Command used to set transfer catalog management parameters.
 #### CFTCOM:
 
 Command used to set parameters controlling communications between user
-programs and the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. See also [Communication
+programs and the {{< TransferCFT/componentshortname  >}}. See also [Communication
 medium](#Communication_medium_).
 
 <span id="CFTDEST"></span>
@@ -171,7 +171,7 @@ in the command.
 
 #### CFTFILE:
 
-Command used to create or delete <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files (parameter, partner,
+Command used to create or delete {{< TransferCFT/componentshortname  >}} files (parameter, partner,
 catalog, accounting, log and communication files).
 
 <span id="CFTLOG"></span>
@@ -184,7 +184,7 @@ Command used to set the log file management parameters for the monitor.
 
 #### CFTMAIN:
 
-Main <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task used to schedule transfers. It controls
+Main {{< TransferCFT/componentshortname  >}} task used to schedule transfers. It controls
 transfer execution and authorizations.
 
 <span id="CFTNET"></span>
@@ -233,7 +233,7 @@ and the application-level protocols declared in CFTPROT commands.
 
 #### CFTUTIL:
 
-Batch or line mode tool giving access to all <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> functions
+Batch or line mode tool giving access to all {{< TransferCFT/componentshortname  >}} functions
 and parameters.
 
 <span id="CFTXLATE"></span>
@@ -277,7 +277,7 @@ Command used to declare a monitor and set up the working environment.
 
 #### Commands:
 
-Instructions used in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to configure the monitor and working
+Instructions used in {{< TransferCFT/componentshortname  >}} to configure the monitor and working
 environment and to control the monitor and associated transfers.
 
 <span id="Compression"></span>
@@ -286,7 +286,7 @@ environment and to control the monitor and associated transfers.
 
 The types of compression are:
 
--   <span style="font-weight: bold;">01</span>:
+-   **01**:
     compression of a string of characters (compression of blank characters)
 -   <span style="font-weight: bold;">02</span>:
     horizontal compression (repetitive characters are deleted in the record)

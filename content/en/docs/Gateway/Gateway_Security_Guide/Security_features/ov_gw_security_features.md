@@ -2,7 +2,7 @@
     "title": "Security features in depth",
     "linkTitle": "Security features in depth",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Overview
+}{{< Gateway/componentlongname  >}}: Overview
 
 Gateway includes a set of security features whose principal purpose is to protect the data stored and transferred over your network. This topic introduces basic security concepts and describes security implementation in Gateway.
 
@@ -22,11 +22,11 @@ Although these three concepts are independent, they must be combined to achieve 
 
 ### Privacy
 
-<span style="font-style: italic;">Privacy</span> (also referred to as <span style="font-style: italic;">confidentiality</span>) involves protecting access to data. Privacy prevents third parties from accessing data that is not intended for them. Typically, data is made confidential through <span style="font-style: italic;">encryption</span>.
+*Privacy* (also referred to as *confidentiality*) involves protecting access to data. Privacy prevents third parties from accessing data that is not intended for them. Typically, data is made confidential through *encryption*.
 
 Two cryptographic techniques are often used and combined:
 
--   <span style="font-weight: bold;">Symmetrical encryption</span>: uses a unique key to encrypt and decrypt a message. Both connected parties share a key that they use to encrypt and decrypt data. The task of privately choosing the key before encrypting data is more problematic, since the connected parties share a single key that they cannot easily exchange.
+-   **Symmetrical encryption**: uses a unique key to encrypt and decrypt a message. Both connected parties share a key that they use to encrypt and decrypt data. The task of privately choosing the key before encrypting data is more problematic, since the connected parties share a single key that they cannot easily exchange.
 -   <span style="font-weight: bold;">Asymmetrical encryption</span>: uses a pair of keys, where each key can decrypt messages encrypted using the other key. This technique solves the problem of exchanging the key between connected parties. When two parties want to communicate using this encryption mechanism, each party publishes one of its keys and keeps the other one secret.
 
 SSL or TLS protocols use a symmetric encryption mechanism to encrypt data (DES, triple DES, RC4, and AES). This mechanism generates a key for each session and exchanges this key during the handshake phase. They are transmitted using an asymmetrical encryption mechanism, which is slower but more secure (RSA) than a symmetric encryption mechanism.
@@ -100,11 +100,9 @@ You can use the CGate object to link client access rights to connection authoriz
 
 When a remote user attempts to connect to Gateway via a CGate, the following identification process occurs:
 
-Gateway identifies a CGateGroup that corresponds to the connected user and then scans CGate objects within that group. Since CGates can contain wildcards (\* and ?), this selection is based on a best matching process. Gateway selects the CGate object whose parameters most closely correspond to those taken from the network.
-
-After selecting a CGate object, Gateway checks the protocol-dependent parameters, security parameters, and so on. If these checks fail, Gateway rejects the connection.
-
-Gateway retrieves and merges the CGateGroup hierarchy for the selected CGate, to build a set of the following output parameters:
+1.  Gateway identifies a CGateGroup that corresponds to the connected user and then scans CGate objects within that group. Since CGates can contain wildcards (\* and ?), this selection is based on a best matching process. Gateway selects the CGate object whose parameters most closely correspond to those taken from the network.
+2.  After selecting a CGate object, Gateway checks the protocol-dependent parameters, security parameters, and so on. If these checks fail, Gateway rejects the connection.
+3.  Gateway retrieves and merges the CGateGroup hierarchy for the selected CGate, to build a set of the following output parameters:
 
 -   Protocol-dependent parameters for use while the connection is active
 -   Connected user access rights to the VFD

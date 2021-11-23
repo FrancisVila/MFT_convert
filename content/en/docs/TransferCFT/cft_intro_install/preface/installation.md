@@ -18,7 +18,7 @@ Upload the Transfer CFT package corresponding to the target platform to your mac
 
     Transfer_CFT_3.8_Install_hp_nonstop_oss-ia64-32_BN8580000.zip
 
-Decompress the archive using the <span class="code">unzip </span>command.
+Decompress the archive using the `unzip `command.
 
 **Example**
 
@@ -35,7 +35,7 @@ Depending on your installation, the screen message may differ slightly from the 
      inflating: EULA.txt
      inflating: EULA.html
 
-In the example, Transfer CFT package is unzipped in the <span class="code">Transfer\_CFT\_OtherUnixes\_V3.8</span> directory.
+In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
 
 > **Note:**
 >
@@ -43,7 +43,7 @@ In the example, Transfer CFT package is unzipped in the <span class="code">Trans
 
 ## Add execution rights
 
-Add execution rights to the <span class="code">Transfer\_CFT\_&lt;version>\_&lt;os>-&lt;arch>-&lt;xx>.run</span> package.
+Add execution rights to the `Transfer_CFT_<version>_<os>-<arch>-<xx>.run` package.
 
 Enter:
 
@@ -53,15 +53,15 @@ Enter:
 
 ## Start the installation
 
-Execute the <span class="code">install </span>command to start the Transfer CFT installation procedure, replacing <span class="code">&lt;installation\_directory></span> with the directory where you want to install Transfer CFT.
+Execute the `install `command to start the Transfer CFT installation procedure, replacing `<installation_directory>` with the directory where you want to install Transfer CFT.
 
 For a new installation, this directory should be empty or nonexistent. However, the installation directory can point to an existing installation in order to upgrade it. For more information on performing an upgrade, refer to <a href="" class="MCXref xref">Migrate or upgrade Transfer CFT</a>.
 
 You can use the following additional parameters:
 
--   <span class="code">--cryptokey\_password &lt;password></span>: the <span class="code">cftcrypt </span>requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the <span class="code">cftcrypt </span>password acceptance criteria, and the installation cannot complete unless a valid password is provided.
+-   `--cryptokey_password <password>`: the `cftcrypt `requires a password to generate an encryption key. You can either provide one using this parameter, or interactively enter it during the installation. Either way, the password is checked against the `cftcrypt `password acceptance criteria, and the installation cannot complete unless a valid password is provided.
 -   `<guardian_installation_directory_prefix>` installs the Guardian specific files in its file system space. This parameter is *optional*. It is required only if you want to integrate Transfer CFT with Guardian procedures.
--   <span class="code">--post\_install\_script &lt;fullpathtopinstscript></span> runs a shell script during the installation procedure after the product has been initialized.
+-   `--post_install_script <fullpathtopinstscript>` runs a shell script during the installation procedure after the product has been initialized.
 
 Enter:
 
@@ -70,12 +70,12 @@ Enter:
 
 **Examples**
 
-The following command installs Transfer CFT on the OSS directory /<span class="code">home/cftuser/CFT38</span>. Additionally, the Guardian components are installed using <span class="code">/G/data14/cft38b</span> (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
+The following command installs Transfer CFT on the OSS directory /`home/cftuser/CFT38`. Additionally, the Guardian components are installed using `/G/data14/cft38b` (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
 
 
     /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-32.run install /home/cftuser/CFT38 /G/data14/cft38b
 
-The following command installs Transfer CFT on the OSS directory` /home/cftuser/CFT38`. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
+The following command installs Transfer CFT on the OSS directory` `. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
 
 
     /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-33.run install /home/cftuser/CFT38 --post_install_script ./cft_postinst.sh
@@ -103,7 +103,7 @@ The Transfer CFT installation procedure automatically performs the following:
 
 If you opted to install the Guardian files, several files are created in the Guardian system space. The files' volume and subvolumes depend on the installation prefix that you provided.
 
-For example, <span class="code">/G/data14/cft38b</span> creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
+For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
 
 <table>
    <thead>
@@ -149,13 +149,13 @@ For example, <span class="code">/G/data14/cft38b</span> creates files where the 
 
 ## Enter the Transfer CFT license key
 
-After the installation completes, enter the Transfer CFT license key in the <span class="code">&lt;installation\_directory>/runtime/conf/cft.key</span> file.
+After the installation completes, enter the Transfer CFT license key in the `<installation_directory>/runtime/conf/cft.key` file.
 
 <span id="Install"></span>
 
 ## Install the Guardian specific files
 
-If you ran the installation procedure without providing the parameter <span class="code">&lt;guardian\_installation\_</span>directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
+If you ran the installation procedure without providing the parameter `<guardian_installation_`directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
 
 1.  Load the Transfer CFT profile:
 

@@ -13,7 +13,7 @@ of correctly terminated transfers. See also the parameter list
 Two recording modes are available:
 
 -   Recording data
-    in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files. When the primary file is full, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    in {{< TransferCFT/componentshortname >}} files. When the primary file is full, {{< TransferCFT/componentshortname >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 -   Recording data
@@ -32,12 +32,12 @@ for correctly terminated transfers, that is transfers that are in the
 T or X state. This command is taken into account when the ACCNT parameter
 of the CFTPARM command is defined.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> authorizes only one identifier of the CFTACCNT type.
+{{< TransferCFT/componentshortname  >}} authorizes only one identifier of the CFTACCNT type.
 
 Two recording modes can be used, depending on the system:
 
 -   Recording of data
-    in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files. In this case, the CFTACCNT command defines the names of the files receiving
+    in {{< TransferCFT/componentshortname >}} files. In this case, the CFTACCNT command defines the names of the files receiving
     the data and their management (parameter setting TYPE = FILE). This mode
     is available on ALL SYSTEMS.
 
@@ -49,7 +49,7 @@ Two recording modes can be used, depending on the system:
     mode is only available on z/OS (MVS) systems.
 
 For more information on the TYPE parameter in the statistical recording
-mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> records the information
+mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, {{< TransferCFT/componentshortname  >}} records the information
 contained in the following table.
 
 CFTACCNT list of headings
@@ -201,7 +201,7 @@ CFTACCNT list of headings
          <td>238         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> private parameter (PARM) </p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} private parameter (PARM) </p>         </td>
          <td>1059         </td>
          <td>303         </td>
       </tr>
@@ -276,23 +276,23 @@ in the CFTACCNT object, you must define the following parameters as well.
 -   maxrec
 -   switch
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> statistical
+The {{< TransferCFT/componentshortname  >}} statistical
 file is full when the maximum number of records, the MAXREC parameter,
-is reached. When this happens, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches to an alternate
+is reached. When this happens, the {{< TransferCFT/componentshortname  >}} switches to an alternate
 file and executes the procedure defined by the EXEC parameter.
 
 The SWITCH operating command also allows the operator to manually switch
 the statistical file on request.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> requires at least 1 empty statistical file at the time
+{{< TransferCFT/componentshortname  >}} requires at least 1 empty statistical file at the time
 it is activated. If the first file designated by FNAME is not empty, Transfer
 CFT switches to the second file labeled AFNAME. The procedure associated
 with the switching can regenerate an empty file.
 
-The statistical files must be created before the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is activated.
+The statistical files must be created before the {{< TransferCFT/componentshortname  >}} is activated.
 This operation is performed in the command CFTFILE TYPE = ACCNT.
 
-When you shut down <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, using the SHUT command, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+When you shut down {{< TransferCFT/componentshortname  >}}, using the SHUT command, {{< TransferCFT/componentshortname  >}}
 executes the switching procedure to empty the last statistical file in
 process.
 
@@ -306,7 +306,7 @@ in the CFTACCNT object, you must define the ACCID
 parameter as well.
 
 The CFTACCNT command references
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> application via the utility.
+the {{< TransferCFT/componentshortname  >}} application via the utility.
 
 <table>
          
@@ -322,7 +322,7 @@ the <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
    <tbody>
       <tr>
          <td><p>z/OS (MVS)</p>         </td>
-         <td><p>The ACCID parameter identifying the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> application
+         <td><p>The ACCID parameter identifying the {{< TransferCFT/componentshortname  >}} application
 must be defined.</p>         </td>
       </tr>
    </tbody>
@@ -351,23 +351,23 @@ CFTACCNT TYPE = FILE
 = filename \]
 
 \[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
-= { <span style="text-decoration: underline;">COBOL</span>
+= {
 | C } \]
 
 \[ [MAXREC](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxrec)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]
 
 \[ [SWITCH](../../../c_intro_userinterfaces/command_summary/parameter_intro/switch)
-= { <span style="text-decoration: underline;">00000000</span>
+= {
 | time } \]
 
 \[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
-= { <span style="text-decoration: underline;">V23</span>
+= {
 | 23 | V24 | 24} \]
 
  
@@ -387,13 +387,13 @@ CFTACCNT TYPE = SYST
 = string \]
 
 \[ [FORMAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/format)
-= { <span style="text-decoration: underline;">V23</span>
+= {
 | 23 | V24 | 24} \]
 
 \[ [LANGUAGE](../../../c_intro_userinterfaces/command_summary/parameter_intro/language)
-= { <span style="text-decoration: underline;">COBOL</span>
+= {
 | C } \]
 
 \[ [MODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mode)
-= { <span style="text-decoration: underline;">REPLACE</span>
+= {
 | CREATE | DELETE } \]

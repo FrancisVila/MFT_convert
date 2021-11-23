@@ -18,9 +18,9 @@
 
 ## Configure Single Sign-On (SSO) for end-users
 
-The following configuration steps describe the setup of the single Identity provider. For multiple Identity Provider configuration, refer to <a href="../c_st_multi_idp#Multiple" class="MCXref xref">Multiple Identity Provider configuration</a>.
+The following configuration steps describe the setup of the single Identity provider. For multiple Identity Provider configuration, refer to [Multiple Identity Provider configuration](../c_st_multi_idp#Multiple).
 
-Before configuring SSO for end-users, ensure that all <a href="../c_st_sso_configuration#Configur" class="MCXref xref">SecureTransport Single Sign-On (SSO) configuration prerequisites</a> are met and the Identity provider is configured properly. For a full list of supported Identity providers, refer to <a href="../../overview/r_st_axway_and_third-party_software_support#Single" class="MCXref xref">Single Sign-On (SSO)</a>.
+Before configuring SSO for end-users, ensure that all [SecureTransport Single Sign-On (SSO) configuration prerequisites](../c_st_sso_configuration#Configur) are met and the Identity provider is configured properly. For a full list of supported Identity providers, refer to [Single Sign-On (SSO)](../../overview/r_st_axway_and_third-party_software_support#Single).
 
 In order to configure SSO functionality for end-users, you need to update the `sso-enduser.xml` file and remember that SSO authenticated users are only mapped to existing {{< SecureTransport/componentshortname  >}} [user accounts](../../accounts/useraccounts/t_st_create_user_account) or [account templates](../../c_st_advancedaccountadministration/c_st_accounttemplates) with [user classes](../../c_st_accesscontrol/c_st_userclasses).
 
@@ -41,9 +41,9 @@ To configure SSO for End-users using SAML-based Identity provider:
         -   `metadataUrl` to be `./(name of the SAML-based Identity provider metadata file)`
         -   `entityId` - add the `<EntityDescriptor>` element `entityID` attribute value, from the SAML-based Identity Provider metadata file.
     -   `<Mappings>` element:
-        -   `FilterMapping` - For information on filter mapping, refer to the <a href="../../r_st_sso_filter_mapping" class="MCXref xref">SSO filter mapping</a>.
-        -   `RenameMapping` – For mapping custom attributes from an Identity Provider, refer to <a href="../c_st_sso_configuration#Accessin" class="MCXref xref">Accessing Single Sign-On (SSO) attributes</a>.
-    -   `<Features>` element: The recommended features are listed in <a href="../../r_st_sample_end-users" class="MCXref xref">Sample SSO configuration file for end-users</a>.
+        -   `FilterMapping` - For information on filter mapping, refer to the [SSO filter mapping](../../r_st_sso_filter_mapping).
+        -   `RenameMapping` – For mapping custom attributes from an Identity Provider, refer to [Accessing Single Sign-On (SSO) attributes](../c_st_sso_configuration#Accessin).
+    -   `<Features>` element: The recommended features are listed in [Sample SSO configuration file for end-users](../../r_st_sample_end-users).
 
 3.  Save the `sso-enduser.xml` file.
 
@@ -65,7 +65,7 @@ To configure SSO for End-users using SAML-based Identity provider:
 
 Configure SSO for end-users using Kerberos:
 
-1.  Configure Kerberos as an Identity provider. For the configuration with Kerberos as an Identity Provider, refer to <a href="../c_st_active_directory" class="MCXref xref">Configure Kerberos as an Identity Provider in SecureTransport</a>.
+1.  Configure Kerberos as an Identity provider. For the configuration with Kerberos as an Identity Provider, refer to [Configure Kerberos as an Identity Provider in SecureTransport](../c_st_active_directory).
 
 2.  Open the `sso-enduser.xml` file. The following changes are required:
 
@@ -79,10 +79,10 @@ Configure SSO for end-users using Kerberos:
     -   `entityId` - add the `entityID` attribute value
 
     -   `<Mappings>` element:
-        -   `FilterMapping` – For information on filter mapping, refer to the <a href="../../r_st_sso_filter_mapping" class="MCXref xref">SSO filter mapping</a>.
-        -   `RenameMapping` – For mapping custom attributes from an Identity Provider, refer to <a href="../c_st_sso_configuration#Accessin" class="MCXref xref">Accessing Single Sign-On (SSO) attributes</a>.
+        -   `FilterMapping` – For information on filter mapping, refer to the [SSO filter mapping](../../r_st_sso_filter_mapping).
+        -   `RenameMapping` – For mapping custom attributes from an Identity Provider, refer to [Accessing Single Sign-On (SSO) attributes](../c_st_sso_configuration#Accessin).
 
-    -   `<Features>` element: The recommended features are listed in <a href="../../r_st_sample_end-users" class="MCXref xref">Sample SSO configuration file for end-users</a>.
+    -   `<Features>` element: The recommended features are listed in [Sample SSO configuration file for end-users](../../r_st_sample_end-users).
 
 4.  Save the `sso-enduser.xml` file.
 
@@ -121,4 +121,4 @@ Configure SSO for end-users using Kerberos:
 
 ## Single Sign-On (SSO) account configuration
 
-For more information about how to configure {{< SecureTransport/componentshortname  >}} accounts with SSO, refer to <a href="../../accounts" class="MCXref xref">Manage Accounts</a> and <a href="../../c_st_advancedaccountadministration" class="MCXref xref">Advanced account administration</a>.
+For more information about how to configure {{< SecureTransport/componentshortname  >}} accounts with SSO, refer to [Manage Accounts](../../accounts) and [Advanced account administration](../../c_st_advancedaccountadministration).

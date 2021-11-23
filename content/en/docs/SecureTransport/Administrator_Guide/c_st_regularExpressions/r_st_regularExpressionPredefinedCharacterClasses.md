@@ -147,6 +147,6 @@
    </tbody>
 </table>
 
-\* For regular expressions used with the Transaction Manager rule `~ (match)` operator see LDAP domain DN filter (see <a href="../../c_st_authentication/t_st_ldapsettings/t_st_manage_dn_filters_for_domain#Manage" class="MCXref xref">Manage DN filters for a domain</a>).
+\* For regular expressions used with the Transaction Manager rule `~ (match)` operator see LDAP domain DN filter (see [Manage DN filters for a domain](../../c_st_authentication/t_st_ldapsettings/t_st_manage_dn_filters_for_domain#Manage)).
 
 † For all other regular expressions.

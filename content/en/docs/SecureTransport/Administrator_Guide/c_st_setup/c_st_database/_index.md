@@ -11,12 +11,12 @@
 During installation, you specified the database to use and its parameters. Use the *Database Settings* page to perform the following tasks:
 
 -   Change database parameters:
-    -   <a href="t_st_mysql" class="MCXref xref">Change the embedded database configuration</a>
-    -   <a href="t_st_sqlserver" class="MCXref xref">Change the external Microsoft SQL Server database</a>
-    -   <a href="t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>
-    -   <a href="manage_postgre_database" class="MCXref xref">Change PostgreSQL configuration and manage partitioning</a>
--   <a href="t_st_database" class="MCXref xref">Migrate from embedded database to external Oracle database</a>
--   <a href="t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>
--   <a href="configure-oracle-kerberos" class="MCXref xref">Connect to an Oracle database using Kerberos authentication</a>
--   <a href="t_st_improve_resil" class="MCXref xref">Improve server resiliency in case of Oracle RAC node failure</a>
--   <a href="migrate_oracle_to_postgre" class="MCXref xref">Migrate from Oracle to PostgreSQL</a>
+    -   [Change the embedded database configuration](t_st_mysql)
+    -   [Change the external Microsoft SQL Server database](t_st_sqlserver)
+    -   [Change the Oracle database configuration](t_st_oracle)
+    -   [Change PostgreSQL configuration and manage partitioning](manage_postgre_database)
+-   [Migrate from embedded database to external Oracle database](t_st_database)
+-   [Direct log data to separate Oracle databases](t_st_separate_databases)
+-   [Connect to an Oracle database using Kerberos authentication](configure-oracle-kerberos)
+-   [Improve server resiliency in case of Oracle RAC node failure](t_st_improve_resil)
+-   [Migrate from Oracle to PostgreSQL](migrate_oracle_to_postgre)

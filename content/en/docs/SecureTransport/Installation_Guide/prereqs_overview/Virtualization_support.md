@@ -6,4 +6,4 @@
 
 While {{< SecureTransport/componentlongname  >}} is expected to function properly in a virtual environment, there may be performance implications which can invalidate typical sizing and recommendations for {{< SecureTransport/componentlongname  >}}.
 
-A virtual environment must provide the minimum required virtual hardware. For details, see <a href="#beforeinstallst_3365039947_1090353" class="MCXref xref">Minimum UNIX hardware requirements</a>.
+A virtual environment must provide the minimum required virtual hardware. For details, see [Minimum UNIX hardware requirements](#beforeinstallst_3365039947_1090353).

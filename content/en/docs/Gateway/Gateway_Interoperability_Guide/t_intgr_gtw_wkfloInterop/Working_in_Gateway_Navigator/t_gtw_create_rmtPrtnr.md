@@ -18,13 +18,9 @@ In the Remote Trading Partner object you specify information about the remote tr
 
 ## Gateway GUI procedure
 
-In the left pane of the Gateway Navigator main window, click to expand the **Partner Management** node.
-
-Right-click the **Trading Partners** sub-node and from the context menu select **New**.
-
-From the context menu, select the type of partner.
-
-View available partner types
+1.  In the left pane of the Gateway Navigator main window, click to expand the **Partner Management** node.
+2.  Right-click the **Trading Partners** sub-node and from the context menu select **New**.
+3.  From the context menu, select the type of partner.
 
 -   SMIME partner
 -   AS1 partner
@@ -88,7 +84,7 @@ This description is included in the displayed list of available Trading Partners
 <ul>
 <li>select <strong>Use dual certificates</strong>:<br />
 An encryption certificate is used to encrypt what is sent, and a signing certificate is used to check the signature of what is received.</li>
-<li>do <span style="font-weight: bold;font-style: italic;">not</span> select <strong>Use dual certificates</strong>:<br />
+<li>do <strong>not</strong> select <strong>Use dual certificates</strong>:<br />
 A single certificate is used to encrypt what is sent, and to check the signature of what is received.</li>
 </ul>         </td>
       </tr>

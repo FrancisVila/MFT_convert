@@ -117,14 +117,14 @@ export CFTCLUSTERSND CFTCLUSTERRCV
 1.  Configure the virtual IP of
     the cluster in the cftnet card:
 
-<span style="font-family: 'Courier New', monospace;font-weight: bold;">cftnet    
+**cftnet    
 id     = TCPIP,  
 type     = TCP,  
 call     = inout,  
 host     = 172.17.50.57,     /\*
 virtual IP of the cluster \*/  
 maxcnx     = 3,  
-mode     = replace</span>
+mode     = replace**
 
 1.  Enter the paths to the shared
     system files for the files to be sent or received.

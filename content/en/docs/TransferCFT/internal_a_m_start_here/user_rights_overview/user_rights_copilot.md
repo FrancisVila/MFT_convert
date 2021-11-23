@@ -2,17 +2,17 @@
     "title": "3. Define client user rights ",
     "linkTitle": "3. Define client user rights",
     "weight": "230"
-}This section describes the <span class="code">copilot.misc.createprocessasuser</span> parameter.
+}This section describes the `copilot.misc.createprocessasuser` parameter.
 
-When using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+When using {{< TransferCFT/centralgovernancename  >}}
 
-By default this parameter is set to NO and user authentication is controlled by <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>. Setting this to YES allows system user authentication via a client, such as web services, if there were a Central Governance failure. This setup requires that users be known on both the system and on <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, meaning an LDAP directory.
+By default this parameter is set to NO and user authentication is controlled by . Setting this to YES allows system user authentication via a client, such as web services, if there were a Central Governance failure. This setup requires that users be known on both the system and on , meaning an LDAP directory.
 
 > **Note:**
 >
 > Configuration changes should be managed by Central Governance.
 
-When using standalone <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
+When using standalone {{< TransferCFT/transfercftname  >}}
 
 When set to YES, user authentication is controlled by the system where Transfer CFT is installed and the Transfer CFT Copilot server starts a process under the connected user. Note that the default value is platform specific. When set to NO, actions made on the configuration are done with the user that **started** the Transfer CFT Copilot server.
 
@@ -40,7 +40,7 @@ When set to YES, user authentication is controlled by the system where Transfer 
          <td>z/OS         </td>
          <td><p>This functionality was modified in Transfer CFT 3.2.4 SP1:</p>
 <ul>
-<li>Post-SP1: The default value for <span class="code">createprocessasuser </span>is YES.</li>
+<li>Post-SP1: The default value for <code>createprocessasuser </code>is YES.</li>
 <li>Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>
 </ul>         </td>
       </tr>
@@ -53,8 +53,8 @@ When set to YES, user authentication is controlled by the system where Transfer 
 
 When createprocessasuser is set to YES, you must perform the OS specific tasks as described in the appropriate Installation Guide.
 
--   Refer to the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span> *Installation Guide Unix> Unix operations > Using system users* for detailed instructions.
--   Refer to the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span><span class="mc-variable axway_variables.Component_Version variable">3.9</span> *Installation Guide Windows > Windows operations > Using system users* for detailed instructions.
+-   Refer to the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} *Installation Guide Unix> Unix operations > Using system users* for detailed instructions.
+-   Refer to the {{< TransferCFT/transfercftname >}}{{< TransferCFT/componentversion >}} *Installation Guide Windows > Windows operations > Using system users* for detailed instructions.
 
 Related topics
 

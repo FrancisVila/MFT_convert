@@ -20,4 +20,4 @@
 
 **Related topic:**
 
--   <a href="../../../applications/applicationspackageretentionmaintenance" class="MCXref xref">Package Retention Maintenance application</a>
+-   [Package Retention Maintenance application](../../../applications/applicationspackageretentionmaintenance)

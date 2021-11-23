@@ -34,7 +34,7 @@ If Source is the initiator, in Target side the transfer state is ready and the f
          <td>User id         </td>
          <td>string, max 32, empty by default         </td>
          <td>CFTRECV, userid         </td>
-         <td>Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.         </td>
+         <td>Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{< TransferCFT/componentshortname  >}}.         </td>
       </tr>
       <tr>
          <td>Detect duplicate transfers         </td>
@@ -89,7 +89,7 @@ Executed (X) -&gt; X         </td>
 Ready – The transfer is available and can start immediately.<br />
 Transferring – The transfer is being executed.<br />
 On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br />
-Kept – The transfer was suspended by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or by a user.<br />
+Kept – The transfer was suspended by {{< TransferCFT/componentshortname  >}} or by a user.<br />
 Transferred – The transfer was successfully completed.<br />
 Executed – The transfer was ended by an application or user.         </td>
       </tr>
@@ -121,7 +121,7 @@ Default value: pub\&amp;IDF.&amp;IDTU.&amp;FROOT.RCV         </td>
          <td>Temporary file         </td>
          <td>string max 64         </td>
          <td>CFTRECV, wfname         </td>
-         <td>Specify the name of the temporary file used during the transfer. When the transfer is complete, the temporary file is renamed using the name defined in the Filename field. If you do not specify a value, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> directly creates the file with the name specified in the Filename field.         </td>
+         <td>Specify the name of the temporary file used during the transfer. When the transfer is complete, the temporary file is renamed using the name defined in the Filename field. If you do not specify a value, {{< TransferCFT/componentshortname  >}} directly creates the file with the name specified in the Filename field.         </td>
       </tr>
    </tbody>
 </table>
@@ -274,4 +274,4 @@ Both – Executes the script both for the main request and for each source in th
 
  
 
-<span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

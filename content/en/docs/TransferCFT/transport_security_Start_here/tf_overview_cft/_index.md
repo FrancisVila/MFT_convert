@@ -4,7 +4,7 @@
     "weight": "210"
 }## Encryption concepts
 
-This topic describes how to implement Axway Trusted File encoding. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in conjunction with TrustedFile enables you to send encrypted files in S/MIME, CMS, and OpenPGP format, for increased security for data exchanges. To initiate this additional security, Transfer CFT delivers a set of samples and certificates to implement TrustedFile in your environment. To get started using TrustedFile with Transfer CFT, read the following sections:
+This topic describes how to implement Axway Trusted File encoding. {{< TransferCFT/componentshortname  >}} in conjunction with TrustedFile enables you to send encrypted files in S/MIME, CMS, and OpenPGP format, for increased security for data exchanges. To initiate this additional security, Transfer CFT delivers a set of samples and certificates to implement TrustedFile in your environment. To get started using TrustedFile with Transfer CFT, read the following sections:
 
 -   [Before you start](#Before)
 -   [About the Transfer CFT configuration file](#Transfer)
@@ -15,13 +15,13 @@ The topic [Delivered files and certificates](tf_delivered_files_certficates) des
 
 #### Limitations
 
--   You cannot use <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> to manage <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> functionality with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+-   You cannot use or {{< TransferCFT/flowmanager >}} to manage {{< TransferCFT/trustedfilename >}} functionality with {{< TransferCFT/componentshortname >}}.
 
 <span id="Before"></span>
 
 ## Before you start
 
-In Transfer CFT you use the CFTTF utility, referred to as XPPTF in TrustedFile, to perform secured exchanges. To use this functionality your Transfer CFT key must include the Trusted File option. The Transfer CFT key is located in the file: <span class="code">$CFTDIRRUNTIME/conf/cft.key</span>. If your product key does not include the Trusted File option if you try to execute the CFTTF program, an error will occur and an error message is displayed in the CFTLOG file: <span class="code">CFTR19E XPPCFG\_Error\_#20:\_Invalid\_product\_key</span>.
+In Transfer CFT you use the CFTTF utility, referred to as XPPTF in TrustedFile, to perform secured exchanges. To use this functionality your Transfer CFT key must include the Trusted File option. The Transfer CFT key is located in the file: `$CFTDIRRUNTIME/conf/cft.key`. If your product key does not include the Trusted File option if you try to execute the CFTTF program, an error will occur and an error message is displayed in the CFTLOG file: `CFTR19E XPPCFG_Error_#20:_Invalid_product_key`.
 
 Transfer CFT delivers useable examples that automatically implement TrustedFile in your preprocessing and post processing flow. The next section describes the delivered samples.
 
@@ -29,7 +29,7 @@ Transfer CFT delivers useable examples that automatically implement TrustedFile
 
 ## Understanding the delivered sample configuration file
 
-The Transfer CFT sample configuration file <span class="code">runtime/conf/cft-tf-smp.conf</span> includes the TrustedFile IDF as shown here.
+The Transfer CFT sample configuration file `runtime/conf/cft-tf-smp.conf` includes the TrustedFile IDF as shown here.
 
 -   The delivered procedures are called during the preprocessing phase to encode the file (tf\_cipher.cmd), and delete the encoded file after sending (tf\_delfile.cmd).
 -   The post processing script decodes on the receiving side (tf\_decipher.cmd).
@@ -71,7 +71,7 @@ mode = replace         </td>
 
 ## Defining the unified configuration parameters
 
-The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> functioning. For information on uconf, see [About the Unified Configuration](../../admin_intro/uconf).
+The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable {{< TransferCFT/trustedfilename  >}} functioning. For information on uconf, see [About the Unified Configuration](../../admin_intro/uconf).
 
 <table>
    <thead>
@@ -101,12 +101,12 @@ The Transfer CFT installation process automatically sets the following Transfer
          <td>tf.entitieslocation         </td>
          <td>$HOME/Axway/Transfer_CFT/runtime/conf/tf/entities.xml         </td>
          <td><p>Indicates the TrustedFile configuration path.</p>
-<p>If the <span class="bold_in_para">tf.entitieslocationtype</span> is:</p>
+<p>If the <strong>tf.entitieslocationtype</strong> is:</p>
 <ul>
 <li>Local: Points locally to the entities.xml file by default</li>
 <li>Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:<br />
-&lt;xppServer host="<span class="bold_in_para">pki.passport.hostname</span>"&gt;, &lt;xp3Protocol port="<span class="bold_in_para">pki.passport.port</span>"&gt;<br />
-<span class="bold_in_para">Example</span>: <span class="code">&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</span></li>
+&lt;xppServer host="<strong>pki.passport.hostname</strong>"&gt;, &lt;xp3Protocol port="<strong>pki.passport.port</strong>"&gt;<br />
+<strong>Example</strong>: <code>&lt;xppServer host="172.17.171.202"&gt;, &lt;xp3Protocol port="7000"&gt;</code></li>
 </ul>
 <p>See <a href="../../admin_intro/uconf/uconf_pki">Unified Configuration: PKI PassPort PS</a>.</p>         </td>
       </tr>
@@ -114,7 +114,7 @@ The Transfer CFT installation process automatically sets the following Transfer
          <td>tf.entitieslocationtype         </td>
          <td>local         </td>
          <td><p>Defines the type of TrustedFile configuration.
-The configuration path is defined in <span class="bold_in_para">tf.entitieslocation</span>.</p>
+The configuration path is defined in <strong>tf.entitieslocation</strong>.</p>
 <ul>
 <li>Local: Indicates that Trusted File is configured in standalone mode (locally)</li>
 <li>Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port</li>
@@ -159,7 +159,7 @@ To encode/decode messages using PGP, use the format:
 
 ## Not supported
 
-When using <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> with Transfer CFT, some <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> functionalities are not delivered or available as described in the <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> documentation. These include:
+When using {{< TransferCFT/trustedfilename  >}} with Transfer CFT, some {{< TransferCFT/trustedfilename  >}} functionalities are not delivered or available as described in the {{< TransferCFT/trustedfilename  >}} documentation. These include:
 
 -   Overview: Graphical user interface (not delivered in the package)
 -   Configuration sample: Encoding and decoding files with Java API
@@ -169,4 +169,4 @@ Related topics
 
 -   [SAPPL](../../c_intro_userinterfaces/command_summary/parameter_intro/sappl)
 -   [Delivered files and certificates](tf_delivered_files_certficates)
--   [How to generate a certificate for <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span>](tf_generate_cert)
+-   [How to generate a certificate for {{< TransferCFT/trustedfilename >}}](tf_generate_cert)

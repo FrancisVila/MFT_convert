@@ -148,7 +148,7 @@ The parameters listed above have a different meaning according to their value, e
 -   Setting the parameter value to -1 indicates that the value is ignored, and the CFTCAT setting is used.
 -   Setting the parameter value to a lone integer, or an integer followed by the letter “D” specifies an amount of time in days. Setting the value to an integer followed by the letter “H” or “M” specifies an amount of time in hours or minutes. In each case, the value is converted to the corresponding amount of minutes, and the purge is calculated to within a minute.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 For a transfer created at 10:30 on Monday February 13, for example, if the retention period is '1D', or '24H', or '1440M', it cannot be purged before 10:30 on February 14.
 

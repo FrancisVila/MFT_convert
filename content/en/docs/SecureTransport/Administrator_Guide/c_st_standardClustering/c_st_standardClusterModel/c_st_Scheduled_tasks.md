@@ -8,6 +8,6 @@ In an active/passive cluster, the secondary standby server does not process even
 
 **Related topics:**
 
--   <a href="../c_st_active-active_active-passive_clustering" class="MCXref xref">Active/active and active/passive clustering</a>
--   <a href="../c_st_consolidated_log_data_representation" class="MCXref xref">Consolidated log data representation</a>
--   <a href="../c_st_services_used_for_cluster_management" class="MCXref xref">Services used for cluster management</a>
+-   [Active/active and active/passive clustering](../c_st_active-active_active-passive_clustering)
+-   [Consolidated log data representation](../c_st_consolidated_log_data_representation)
+-   [Services used for cluster management](../c_st_services_used_for_cluster_management)

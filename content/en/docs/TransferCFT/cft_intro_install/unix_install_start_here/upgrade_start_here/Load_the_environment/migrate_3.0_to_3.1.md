@@ -2,7 +2,7 @@
     "title": "Migrating Transfer CFT 3.0.1 or 3.1.x to 3.9",
     "linkTitle": "Migrating from Transfer CFT 3.0.1 or 3.1.x",
     "weight": "250"
-}This topic describes how to migrate Transfer CFT 3.0.1 or 3.1.2 to version <span class="mc-variable axway_variables.Component_Version variable">3.9</span>. It is divided in 2 sections, the first section describes migration for a single node architecture, and the second section multi-node architecture. Lastly there are instructions explaining what would be needed to migrate from single node architecture to multi node architecture.
+}This topic describes how to migrate Transfer CFT 3.0.1 or 3.1.2 to version {{< TransferCFT/componentversion  >}}. It is divided in 2 sections, the first section describes migration for a single node architecture, and the second section multi-node architecture. Lastly there are instructions explaining what would be needed to migrate from single node architecture to multi node architecture.
 
 > **Note:**
 >
@@ -25,11 +25,11 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> installation.
+1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
-2.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+2.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
-3.  Stop <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> if you have not already done so.
+3.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 
 4.  Import your static configuration objects using the cftinit command. Enter:  
 
@@ -41,7 +41,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Load the Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:  
 
@@ -50,7 +50,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Import your PKI certificates into Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows.  
+1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows.  
     Enter:  
 
 
@@ -69,7 +69,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 2.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
 
@@ -87,7 +87,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 2.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
 
@@ -96,7 +96,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 #### Executables and binaries
 
-Remember that you can copy your post-processing scripts directly from the runtime/exec to the new version (<span class="mc-variable axway_variables.Release_Number variable">3.9</span>). When you copy files from the exec folder, be certain to modify any paths that point to the former version (for example, 3.0.1, 3.1.3, or 3.2.x). However, you must rebuild APIs and EXITS (binaries).
+Remember that you can copy your post-processing scripts directly from the runtime/exec to the new version ({{< TransferCFT/releasenumber  >}}). When you copy files from the exec folder, be certain to modify any paths that point to the former version (for example, 3.0.1, 3.1.3, or 3.2.x). However, you must rebuild APIs and EXITS (binaries).
 
 ## Multi-node architecture
 
@@ -115,26 +115,26 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> installation.
+1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
-2.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+2.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 3.  Import your static configuration objects using the cftinit command. Enter:  
 
 ### Migrating PKI certificates
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter: <span class="code">PKIUTIL PKIEXT fout=pki-extract.conf</span>
+2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter: `PKIUTIL PKIEXT fout=pki-extract.conf`
 
 <!-- -->
 
-1.  Load the Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
 
 <!-- -->
 
-1.  Import your PKI certificates into Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
+1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
 
 
         PKIUTIL <prefix_character>pki-extract.conf
@@ -149,7 +149,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 <!-- -->
 
-1.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 2.  Import all catalogs using the command CFTMI for each of them. Use the same node number on both &lt;node> on command. Enter:  
 
@@ -160,12 +160,12 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
 2.  Export all communication media files (cftcom and cftcomXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each communication media file.
-    -   Enter: <span class="code">CFTMI MIGR type=COM, direct=FROMCOM, ifname=&lt;com\_filename\_for\_node\_manager\_on\_former\_cft>, ofname=com\_output.xml</span>
-    -   For each node, enter: <span class="code">CFTMI MIGR type=COM, direct=FROMCOM, ifname=&lt;com\_filename\_for\_node\_&lt;node>\_on\_former\_cft>, ofname=com\_output\_&lt;node>.xml</span>
-3.  Load Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> environment.
+    -   Enter: `CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_for_node_manager_on_former_cft>, ofname=com_output.xml`
+    -   For each node, enter: `CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_for_node_<node>_on_former_cft>, ofname=com_output_<node>.xml`
+3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import all communication media files using command CFTMI for each of them. Use the same node number on both &lt;node> on command.
-    -   Enter: <span class="code">CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=&lt;com\_filename\_for\_node\_manager\_on\_new\_cft> </span>
-    -   For each node, enter: <span class="code">CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput\_&lt;node>.xml, ofname=&lt;com\_filename\_for\_node\_&lt;node>\_on\_new\_cft> </span>
+    -   Enter: `CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_for_node_manager_on_new_cft> `
+    -   For each node, enter: `CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput_<node>.xml, ofname=<com_filename_for_node_<node>_on_new_cft> `
 
 ## Single-node to multi-node architecture migration
 

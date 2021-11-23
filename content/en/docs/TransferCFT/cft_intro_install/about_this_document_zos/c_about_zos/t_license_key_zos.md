@@ -15,7 +15,7 @@ Log in to download or access:
 -   Product announcements
 -   The case center, to open a new case or to track opened cases
 
-You can also access other resources, such as articles in the Knowledge Base, and documentation for all <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products.
+You can also access other resources, such as articles in the Knowledge Base, and documentation for all {{< TransferCFT/companyname  >}} products.
 
 You need to apply a valid license key to Transfer CFT in the following situations:
 
@@ -23,7 +23,7 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 -   A hardware upgrade changes the CPU ID (CPU serial number).
 -   After a year passes, to replace an expired license key.
 -   To ramp up a Transfer CFT Disaster Recovery instance (for example, on a DR LPAR for z/OS systems).
--   If you are migrating from a version 2.x <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to a version 3.x.
+-   If you are migrating from a version 2.x {{< TransferCFT/componentshortname >}} to a version 3.x.
 
 > **Note:**
 >
@@ -31,7 +31,7 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 
 ## Obtain a license key
 
-1.  For a new installation, install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+1.  For a new installation, install {{< TransferCFT/componentshortname >}}.
 2.  After completing the installation, or for an existing installation, use the command **cftutil about** to retrieve your system information. For details see the examples below.
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
     -   For a US key, contact: **`fulfillment@us.axway.com`**

@@ -2,7 +2,7 @@
     "title": "Configuring PassPort AM ",
     "linkTitle": "Configuring PassPort AM",
     "weight": "200"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
 <span id="Procedure PassPort parameters"></span>
 
@@ -10,7 +10,7 @@
 
 To configure the PassPort AM connection, set the UCONF parameters described
 in this section. From
-the <span style="font-weight: bold;">Administration</span> screen in the
+the **Administration** screen in the
 graphical user interface, access the *Unified Configuration* window. Double-click in the <span style="font-weight: normal; font-style: italic;">Unified
 Configuration</span> window to begin editing parameters.
 

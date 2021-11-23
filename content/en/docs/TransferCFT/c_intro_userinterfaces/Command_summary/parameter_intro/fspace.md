@@ -31,7 +31,7 @@ This size usually corresponds to the primary allocation.
 
 #### CFTSEND, SEND
 
-**\[FSPACE = { <span style="text-decoration: underline;">0</span>
+**\[FSPACE = {
 | n } \]**
 
 Size of the file to be sent, in Kbytes (1 Kbyte = 1024 bytes).

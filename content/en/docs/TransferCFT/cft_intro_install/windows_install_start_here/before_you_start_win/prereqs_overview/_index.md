@@ -17,16 +17,15 @@ To install you will perform the following tasks:
 
 ## License keys
 
-Before installing or upgrading, make sure you have obtained a license for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>. Check that the license key is correct for the features and operating system you intend to install. It is not mandatory to enter the license key during the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> installation, but you do require a key to start the product.
+Before installing or upgrading, make sure you have obtained a license for {{< TransferCFT/componentlongname  >}}. Check that the license key is correct for the features and operating system you intend to install. It is not mandatory to enter the license key during the {{< TransferCFT/componentshortname  >}} installation, but you do require a key to start the product.
 
 For information on applying a license key post installation, or if you have a problem with your license key, refer to the appropriate Troubleshooting topic.
 
--   <span style="font-weight: normal;">[Windows: Applying a license key]()</span>
-     
+-    
 
 ### Multi-node license keys
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note:**
 >
@@ -39,7 +38,7 @@ You can use a single key for a multi-node installation, as either:
 
 Additionally, the key must have the cluster option.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in a multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation, and the shared disk ready when starting the Copilot server.
+{{< TransferCFT/componentshortname  >}} in a multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation, and the shared disk ready when starting the Copilot server.
 
 -   *Windows only*: You must map the shared disk to a drive letter.
 -   *Windows only*: The Copilot Service Mode cannot be started as the LocalSystem account.

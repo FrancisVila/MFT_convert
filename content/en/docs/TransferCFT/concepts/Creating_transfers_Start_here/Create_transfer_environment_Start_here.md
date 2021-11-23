@@ -63,7 +63,7 @@ The CFTSEND command is used to specify, for each IDF model file:
 -   The file network
     characteristics: values to be sent to the partner, in protocol parameters,
     to describe the file (a physical filename can even be sent - see the definition
-    of the <span style="font-weight: bold;">Open</span> mode further on).  
+    of the **Open** mode further on).  
       
     The physical characteristics that Transfer CFT is able to locate automatically
     for the local file, can be considered as default values for the corresponding

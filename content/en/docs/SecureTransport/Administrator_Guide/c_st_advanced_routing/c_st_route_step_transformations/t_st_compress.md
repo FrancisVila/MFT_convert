@@ -107,20 +107,20 @@ With ZIP, TAR and JAR, you can use the **Compress all files into a single archiv
 
 -   When not selected, each input file is added to a separate archive. The name of a compressed file is composed of the full name (with the extension) of the input file and the compression algorithm appended as an extension.
 
-Afterward, you can change the name of the output files by adding a <a href="../t_st_rename" class="MCXref xref">Rename</a> transformation step.
+Afterward, you can change the name of the output files by adding a [Rename](../t_st_rename) transformation step.
 
  
 
 **Related topics:**
 
--   <a href="../t_st_decompress" class="MCXref xref">Decompress</a>
--   <a href="../t_st_rename" class="MCXref xref">Rename</a>
--   <a href="../t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a>
--   <a href="../t_st_pgp_decryption" class="MCXref xref">PGP Decryption</a>
--   <a href="../t_st_line_ending" class="MCXref xref">Line Ending</a>
--   <a href="../t_st_external_script" class="MCXref xref">External Script</a>
--   <a href="../t_st_charset_conversion" class="MCXref xref">Encoding Conversion</a>
--   <a href="../t_st_replace" class="MCXref xref">Characters Replace</a>
--   <a href="../t_st_line_padding" class="MCXref xref">Line Padding</a>
--   <a href="../t_st_file_folding" class="MCXref xref">Line Folding</a>
--   <a href="../t_st_line_truncating" class="MCXref xref">Line Truncating</a>
+-   [Decompress](../t_st_decompress)
+-   [Rename](../t_st_rename)
+-   [PGP Encryption](../t_st_pgp_encryption)
+-   [PGP Decryption](../t_st_pgp_decryption)
+-   [Line Ending](../t_st_line_ending)
+-   [External Script](../t_st_external_script)
+-   [Encoding Conversion](../t_st_charset_conversion)
+-   [Characters Replace](../t_st_replace)
+-   [Line Padding](../t_st_line_padding)
+-   [Line Folding](../t_st_file_folding)
+-   [Line Truncating](../t_st_line_truncating)

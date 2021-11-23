@@ -40,7 +40,7 @@ Before you create the Axway Server object, you must create:
     menu.  
     Composer opens the *Axway Server* properties window.
 2.  Complete the **General**
-    tab. Be sure to set the <span style="font-style: italic;">Type</span> field to the value **Integrator**.  
+    tab. Be sure to set the *Type* field to the value **Integrator**.  
     <a href="" class="MCToggler MCTogglerHead MCTogglerHotSpot MCToggler_Open toggler MCTogglerHotSpot_ MCHotSpotImage"><img src="/Images/Gateway/transparent.gif" class="MCToggler_Image_Icon" width="16" height="11" alt="Closed" />View fields</a>
     <table>
        <thead>
@@ -80,7 +80,7 @@ Before you create the Axway Server object, you must create:
              <td><p>Type</p>         </td>
              <td><p>From the drop-down list, select the software
     type: <strong>Integrator</strong>.</p>
-    <p>When you select Integrator, Composer automatically adds the following tabs to the <span style="font-style: italic;">Properties</span>
+    <p>When you select Integrator, Composer automatically adds the following tabs to the <em>Properties</em>
     window:</p>
     <ul>
     <li>Communication</li>
@@ -96,7 +96,7 @@ Before you create the Axway Server object, you must create:
     Server Template. The Axway Server inherits all the properties defined
     for the selected Axway Server Template.</p>
     <p>For more information about templates, refer
-    to the <span style="font-style: italic;">Working with Templates</span> topic in the Axway Composer documentation<span style="font-style: italic;">.</span></p>         </td>
+    to the <em>Working with Templates</em> topic in the Axway Composer documentation<em>.</em></p>         </td>
           </tr>
           <tr>
              <td><p><strong>Broadcast parameters</strong></p>
@@ -104,18 +104,16 @@ Before you create the Axway Server object, you must create:
     number of the Broadcast Agent. This agent communicates with the Composer
     Server and sends your configuration to the execution server (the Integrator
     Server).</p>
-    <p>These parameters are required for <span style="font-style: italic;">Send
-    to Server</span> operations.</p>
-    <p>For more information about the <span style="font-style: italic;">Send
-    to Server</span> command, refer to the <span style="font-style: italic;">Sending
-    objects to Production</span> topic in the Axway Composer documentation<span style="font-style: italic;">.</span></p>         </td>
+    <p>These parameters are required for <em>Send
+    to Server</em> operations.</p>
+    <p>For more information about the <em>Send
+    to Server</em> command, refer to the <em>Sending
+    objects to Production</em> topic in the Axway Composer documentation<em>.</em></p>         </td>
           </tr>
           <tr>
              <td><p>Agent host</p>         </td>
              <td><p>Enter the IP address or host name of the Broadcast
-    Agent. This value must be identical to the host name specified for the CommNetwork for the Host.</p>
-    <p><span style="color: #000000;">You can enter
-    up to 128 alphanumeric characters.</span></p>         </td>
+    Agent. This value must be identical to the host name specified for the CommNetwork for the Host.</p>         </td>
           </tr>
           <tr>
              <td><p>Agent port</p>         </td>
@@ -123,8 +121,8 @@ Before you create the Axway Server object, you must create:
     This value must be a numeric value.</p>
     <p>The Broadcast Agent port was specified during
     the Integrator Server installation procedure. For information about Broadcast
-    Agent port selection, refer to the <span style="font-style: italic;">Integrator
-    Server Installation manual</span> for Windows or UNIX.</p>         </td>
+    Agent port selection, refer to the <em>Integrator
+    Server Installation manual</em> for Windows or UNIX.</p>         </td>
           </tr>
        </tbody>
     </table>
@@ -139,6 +137,6 @@ After you define an Integrator Server object, you need to import the object set 
 
 [View dedicated topic](../t_cmpsr_impt_intgrobjset)
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

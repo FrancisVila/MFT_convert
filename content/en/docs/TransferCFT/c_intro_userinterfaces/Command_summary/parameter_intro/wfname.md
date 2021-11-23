@@ -46,7 +46,7 @@ available at the end of the transfer.
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *"Operations
+to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *"Operations
 Guide"* corresponding to your OS.
 
 You should make sure that the assigned name is unique by adding the &IDTU variable to the filename so
@@ -92,8 +92,7 @@ target machine. Once sent, it is deleted.
 
 Example:
 
-MVS - <span style="font-weight: normal;">IEBCOPY
-procedure for partitioned files (PDSE)</span>
+MVS -
 
 For additional information on the file and its structure, refer to the
 *Installation and Operations Guide* specific to your operating system.
@@ -104,9 +103,7 @@ The file is transferred in the same way as a sequential file.
 
 This process can only be used for:
 
--   t<span style="font-style: normal;">ransfers
-    between systems of the same type (same SYST parameter value in the CFTPART
-    command)</span>
+-   t
 -   the
     following protocol: **PeSIT CFT to CFT**
 
@@ -128,7 +125,7 @@ The following variables may be used to form the WFNAME character string:
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
+to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *Operations Guide*
 corresponding to your OS.
 
 To avoid access conflict problems, be sure that the assigned name is

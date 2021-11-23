@@ -7,7 +7,7 @@
 ## Prerequisites
 
 -   Download the installation package you want to downgrade to, noting that you can only downgrade to a version from which you have previously upgraded. For example, if you upgraded from version 3.4 directly to 3.8, you can only downgrade to version 3.4 and not to an intermediary version 3.6.
--   You must have already upgraded from <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.4 or higher to <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Release_Number variable">3.9</span>
+-   You must have already upgraded from {{< TransferCFT/hflongproductname >}} 3.4 or higher to {{< TransferCFT/hflongproductname >}} {{< TransferCFT/releasenumber >}}
 
 > **Note:**
 >
@@ -19,5 +19,5 @@ Unix and Windows
 
 Execute the following steps:
 
-1.  Run the installation program that corresponds to the version you want to roll back. When prompted, enter the installation directory of the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> instance to roll back.
-2.  Start <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> to verify the procedure and check the version.
+1.  Run the installation program that corresponds to the version you want to roll back. When prompted, enter the installation directory of the {{< TransferCFT/transfercftname >}} instance to roll back.
+2.  Start {{< TransferCFT/transfercftname >}} to verify the procedure and check the version.

@@ -6,22 +6,22 @@
 
 The following topics provide how-to instructions for managing Routes:
 
--   <a href="#New" class="MCXref xref">New Route</a>
--   <a href="#Edit" class="MCXref xref">Edit Route</a>
--   <a href="#Enable" class="MCXref xref">Enable Step</a>
--   <a href="#Disable" class="MCXref xref">Disable Step</a>
--   <a href="#Reorder" class="MCXref xref">Reorder Steps</a>
--   <a href="#Delete" class="MCXref xref">Delete Step</a>
--   <a href="#Delete_route" class="MCXref xref">Delete Route</a>
+-   [New Route](#New)
+-   [Edit Route](#Edit)
+-   [Enable Step](#Enable)
+-   [Disable Step](#Disable)
+-   [Reorder Steps](#Reorder)
+-   [Delete Step](#Delete)
+-   [Delete Route](#Delete_route)
 
 **Related topics:**
 
--   <a href="../t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a>
--   <a href="../t_st_create_user_accounts" class="MCXref xref">Create user accounts</a>
--   <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>
--   <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
--   <a href="../t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>
--   <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>
+-   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator)
+-   [Create user accounts](../t_st_create_user_accounts)
+-   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
+-   [Manage Route Package Templates](../t_st_manage_route_package_templates)
+-   [Subscribe to Advanced Routing application](../t_st_subscribe_advanced_routing_application)
+-   [Assign Route Package Template](../t_st_assign_route_package_template)
 
 <span id="New"></span>
 
@@ -31,7 +31,7 @@ Use the following procedure to create a Route.
 
 1.  From the *Route Package Template Entry* page, click **New Route**.  
     The *New Route Entry* page is displayed.
-2.  Enter a unique **Route Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.
+2.  Enter a unique **Route Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../../accounts/useraccounts/t_st_create_user_account#Spaces).
 3.  (Optional) Enter a **Description**.
 4.  Determine the **Condition**. Select either **Always** (default) or **Expression Language**.  
     When **Always** is selected, the trigger condition is always used. When **Expression Language** is selected, the trigger condition is based on the expression entered in the *Expression Language* field.  
@@ -52,47 +52,47 @@ Use the following procedure to create a Route.
        <tbody>
           <tr>
              <td>PGP Encryption         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_pgp_encryption">PGP Encryption</a>         </td>
           </tr>
           <tr>
              <td>PGP Decryption         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_pgp_decryption" class="MCXref xref">PGP Decryption</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_pgp_decryption">PGP Decryption</a>         </td>
           </tr>
           <tr>
              <td>Compress         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_compress" class="MCXref xref">Compress</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_compress">Compress</a>         </td>
           </tr>
           <tr>
              <td>Decompress         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_decompress" class="MCXref xref">Decompress</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_decompress">Decompress</a>         </td>
           </tr>
           <tr>
              <td>Line Ending         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_line_ending" class="MCXref xref">Line Ending</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_line_ending">Line Ending</a>         </td>
           </tr>
           <tr>
              <td>External Script         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_external_script" class="MCXref xref">External Script</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_external_script">External Script</a>         </td>
           </tr>
           <tr>
              <td>Encoding Conversion         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_charset_conversion" class="MCXref xref">Encoding Conversion</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_charset_conversion">Encoding Conversion</a>         </td>
           </tr>
           <tr>
              <td>Characters Replace         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_replace" class="MCXref xref">Characters Replace</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_replace">Characters Replace</a>         </td>
           </tr>
           <tr>
              <td>Line Padding         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_line_padding" class="MCXref xref">Line Padding</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_line_padding">Line Padding</a>         </td>
           </tr>
           <tr>
              <td>Line Folding         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_file_folding" class="MCXref xref">Line Folding</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_file_folding">Line Folding</a>         </td>
           </tr>
           <tr>
              <td>Line Truncating         </td>
-             <td><a href="../../c_st_route_step_transformations/t_st_line_truncating" class="MCXref xref">Line Truncating</a>         </td>
+             <td><a href="../../c_st_route_step_transformations/t_st_line_truncating">Line Truncating</a>         </td>
           </tr>
        </tbody>
     </table>
@@ -107,22 +107,22 @@ Use the following procedure to create a Route.
        <tbody>
           <tr>
              <td>Publish To Account         </td>
-             <td><a href="../../c_st_route_steps/t_st_publish_to_account" class="MCXref xref">Publish To Account</a>         </td>
+             <td><a href="../../c_st_route_steps/t_st_publish_to_account">Publish To Account</a>         </td>
           </tr>
           <tr>
              <td>Send To Partner         </td>
-             <td><a href="../../c_st_route_steps/t_st_send_to_partner" class="MCXref xref">Send To Partner</a>         </td>
+             <td><a href="../../c_st_route_steps/t_st_send_to_partner">Send To Partner</a>         </td>
           </tr>
        </tbody>
     </table>
 6.  Determine email **Notifications**. In order to add email notifications the administrator must have access to Mail Templates, otherwise this selection is disabled. Mail Templates access is configurable through the Administrative role settings.
-    For additional administrative role configuration information, refer to <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>.
+    For additional administrative role configuration information, refer to [Manage administrator accounts](../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts).
     1.  Select **Notify following e-mails on route failure**. You need to have configured SMTP settings on the **Administration Tool > Setup > Miscellaneous > SMTP Configuration** page (notify email, mail relay and SMTP port). The *Notify following e-mails on route failure* field supports EL and you can enter:
         -   An email address
         -   An expression, for example `ldap.attributes.Mail, ${account.name}, ${account.email}`.
         -   A list of email addresses (delimiters depend on the SMTP server)
-    2.  For additional email configuration information, see <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>.
-    3.  Select the **Mail Template** from the menu to used for route failure notifications. For email template configuration information, see <a href="../../../c_st_setup/t_st_mailtemplates" class="MCXref xref">Mail templates</a>.
+    2.  For additional email configuration information, see [SMTP configuration](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_smtpconfiguration).
+    3.  Select the **Mail Template** from the menu to used for route failure notifications. For email template configuration information, see [Mail templates](../../../c_st_setup/t_st_mailtemplates).
     4.  Select **Notify following e-mails on route success** to be notified on route success and enter a notification email address, mail relay, or SMTP port in the field.
     5.  Select the **Mail Template** from the menu to used for route failure notifications.
     6.  Select **Notify following e-mails on route trigger** to be notified on route trigger and enter a notification email address, mail relay, or SMTP port in the field.
@@ -141,7 +141,7 @@ Use the following procedure to edit a Route.
 
 1.  From the *Route Package Template Entry* page, click on the name of the Route to edit in the *Routes* list.  
     The *Edit Route Entry* page is displayed.
-2.  Edit the information displayed. To edit a Route Step, click on the name of the Route Step and refer to <a href="../../c_st_route_step_transformations" class="MCXref xref">Transformations</a> to edit Transformations and to <a href="../../c_st_route_steps" class="MCXref xref">Route steps</a> to edit Route Steps.
+2.  Edit the information displayed. To edit a Route Step, click on the name of the Route Step and refer to [Transformations](../../c_st_route_step_transformations) to edit Transformations and to [Route steps](../../c_st_route_steps) to edit Route Steps.
 3.  Click **Save** to apply the changes.
 
 > **Note:**

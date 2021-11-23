@@ -4,7 +4,7 @@
     "weight": "100"
 }Starting with {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}}, the Amazon S3 and MS SharePoint connectors are released separately from the GA release. Their latest versions that are compatible with {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} are available for download from [AMPLIFY Repository](https://repository.axway.com/).
 
-For a full list of connectors that are supported with {{< SecureTransport/componentshortname  >}}, see <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref">Axway and third-party software support</a>.
+For a full list of connectors that are supported with {{< SecureTransport/componentshortname  >}}, see [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm).
 
 If you have an Amazon S3 or a SharePoint transfer site configured on your {{< SecureTransport/securetransportname  >}} 5.4 installation, after upgrading to {{< SecureTransport/releasenumber  >}}, you need to update the corresponding connectors.
 

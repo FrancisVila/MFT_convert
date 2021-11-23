@@ -4,7 +4,7 @@
     "weight": "340"
 }This topic describes how to use the LISTLOG command to display the log content according to certain defined criteria, such as date or node. Additionally, you can filter the log depending on multiple criteria, or view a merged log for several nodes in cluster mode.
 
-Command syntax: <span class="code">listlog &lt;filter list></span>
+Command syntax: `listlog <filter list>`
 
 <table>
    <thead>
@@ -43,7 +43,7 @@ Command syntax: <span class="code">listlog &lt;filter list></span>
          <td><p>There are multiple formats to use to define the minimum date for log display.</p>
 <ul>
 <li>Use the format YYMMDD to display logs that happened on or after this date.</li>
-<li>Use  a partial date for a more generic display. For example, <span class="code">1604 </span>displays the log since April 2016.</li>
+<li>Use  a partial date for a more generic display. For example, <code>1604 </code>displays the log since April 2016.</li>
 <li>Use a negative value to display logs for x number of days prior to today. For example, entering -2 displays the log since the day before yesterday, and -0 displays today’s log.</li>
 </ul>         </td>
       </tr>
@@ -63,7 +63,7 @@ Command syntax: <span class="code">listlog &lt;filter list></span>
          <td><p>There are multiple formats to use to define the maximum date for log display.</p>
 <ul>
 <li>Use to display logs that happened on or before this date. Use the format: YYMMDD</li>
-<li>You can also enter a partial date. For example, <span class="code">16 </span>displays the log prior to 2016.</li>
+<li>You can also enter a partial date. For example, <code>16 </code>displays the log prior to 2016.</li>
 <li>A negative value is interpreted as a number of days before today. For example, -1 displays the log till yesterday (included).</li>
 </ul>         </td>
       </tr>
@@ -74,16 +74,16 @@ Command syntax: <span class="code">listlog &lt;filter list></span>
 <li>Logs only happened at this time or after this time during the day. Use the format HHMMSSss.</li>
 <li>A negative value is interpreted as a number of minutes before the current time. For example, -20 displays the log for the last 20 minutes.</li>
 </ul>
-<p><span style="color: #000000;">See also </span><a href="#Time" class="MCXref xref">Time log precision</a><span style="color: #000000;">.</span></p>         </td>
+<p><a href="#Time" class="MCXref xref">Time log precision</a></p>         </td>
       </tr>
       <tr>
          <td>timemax         </td>
          <td>23595999         </td>
          <td><ul>
 <li>Logs only happened at this time or before this time during the day. Use the format HHMMSSss.</li>
-<li><span style="color: #000000;">A negative value is interpreted as a number of minutes before current time. For example , -20 displays the log with the last 20 minutes filtered out.</span></li>
+<li></li>
 </ul>
-<p><span style="color: #000000;">See also </span><a href="#Time" class="MCXref xref">Time log precision</a><span style="color: #000000;">.</span></p>         </td>
+<p><a href="#Time" class="MCXref xref">Time log precision</a></p>         </td>
       </tr>
       <tr>
          <td>pattern         </td>
@@ -157,13 +157,13 @@ Command parameter types
 
 ### Time log precision
 
-By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF <span class="code">cft.cftlog.time\_precision</span> parameter, where:
+By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter, where:
 
 -   1 (default): the time in CFTLOG displays in seconds
 -   10: the time in CFTLOG displays in tenths of seconds
 -   100: the time in CFTLOG displays in hundredths of seconds
 
-If the<span class="code"> cft.cftlog.time\_precision</span> value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 

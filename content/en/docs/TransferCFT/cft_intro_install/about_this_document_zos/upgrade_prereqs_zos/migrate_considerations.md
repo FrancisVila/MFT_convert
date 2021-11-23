@@ -57,7 +57,7 @@ In any case, you must compile and link the exits and API.         </td>
 
 **Recommendations**
 
--   The delivered examples to create the files LOG and ACCOUNT (D40INIT..) have a <span class="code">format=V24</span> definition. Ensure that the FORMAT parameter in the CFTLOG and CFTACCNT commands are consistent.
+-   The delivered examples to create the files LOG and ACCOUNT (D40INIT..) have a `format=V24` definition. Ensure that the FORMAT parameter in the CFTLOG and CFTACCNT commands are consistent.
 -   For Copilot usage, verify that the uconf cft.install\_dir and copilot.HTTP.HttpRootDir parameters are correctly configured - that is, consistent with the variable values in the A03PARM and ..UPARM (COPCFG) file.
 -   As of Transfer CFT 3.1.3:
     -   A new UCONFRUN file was added in JCL/STC/Procedures (CFTMAIN, COPRUN, PCFTUTIL, PCFTUTL, MNRMAIN, MNRMNG). We recommend adding the definition of this file in your JCL containing EXEC PGM=CFTUTIL, and in JCLs that are running Transfer CFT APIs.
@@ -69,6 +69,13 @@ In any case, you must compile and link the exits and API.         </td>
         -   PCFTUTIL and PCFTUTL procedures
 
     -   Integrating these components where possible into your existing JCLs, simplifies migration.
--   As of <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.3.2:
-    -   SGINSTAL is optional and can be replaced by UCONF variables.
-    -   A USER.LOAD library can contain API(s), EXIT(s), and SGINSTAL(optional). If you define a USER.LOAD, you must add this load in STEPLIB/JOBLIB in your JCL or STC, and it must be an APF.
+
+<!-- -->
+
+
+    //UCONFRUN DD DISP=SHR,DSN=&QUAL..UCONFRUN
+
+As of {{< TransferCFT/componentlongname  >}} 3.3.2:
+
+-   SGINSTAL is optional and can be replaced by UCONF variables.
+-   A USER.LOAD library can contain API(s), EXIT(s), and SGINSTAL(optional). If you define a USER.LOAD, you must add this load in STEPLIB/JOBLIB in your JCL or STC, and it must be an APF.

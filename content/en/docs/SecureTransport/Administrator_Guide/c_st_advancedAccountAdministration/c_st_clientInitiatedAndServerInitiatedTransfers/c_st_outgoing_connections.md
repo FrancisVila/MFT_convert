@@ -2,7 +2,7 @@
     "title": "Outgoing connections",
     "linkTitle": "Outgoing connections",
     "weight": "290"
-}You can proxy outgoing connections using a SOCKS5 proxy running on a {{< SecureTransport/componentshortname  >}} Edge or an HTTP proxy. You configure the use of a proxy by defining one or more network zones and making a selection in the transfer site. See <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a> and the procedures for defining AS2, FTP, HTTP, PeSIT, and SSH transfer sites.
+}You can proxy outgoing connections using a SOCKS5 proxy running on a {{< SecureTransport/componentshortname  >}} Edge or an HTTP proxy. You configure the use of a proxy by defining one or more network zones and making a selection in the transfer site. See [Manage the communication across Transaction Manager, protocol and proxy servers](../../../c_st_setup/c_st_networkzones/t_st_networkzones#SetupMenu_1217491348_1149202) and the procedures for defining AS2, FTP, HTTP, PeSIT, and SSH transfer sites.
 
 > **Note:**
 >
@@ -12,10 +12,10 @@ If server-initiated transfers being performed using FTP(S) are passing through t
 
 **Related topics:**
 
--   <a href="../c_st_transfer_mode_for_server-initiated_transfers" class="MCXref xref">Transfer mode for server-initiated transfers</a>
--   <a href="../c_st_transfer_multiple_files" class="MCXref xref">Transfer multiple files</a>
--   <a href="../c_st_configure_retry_parameters_for_server-initiated_transfers" class="MCXref xref">Configure retry parameters for server-initiated transfers</a>
--   <a href="../r_st_authentication" class="MCXref xref">Authentication</a>
--   <a href="../c_st_server_authentication" class="MCXref xref">Server authentication</a>
--   <a href="../c_st_limitations" class="MCXref xref">Limitations</a>
--   <a href="../c_st_encryption_server-initiated_transfers" class="MCXref xref">Encryption and server-initiated transfers</a>
+-   [Transfer mode for server-initiated transfers](../c_st_transfer_mode_for_server-initiated_transfers)
+-   [Transfer multiple files](../c_st_transfer_multiple_files)
+-   [Configure retry parameters for server-initiated transfers](../c_st_configure_retry_parameters_for_server-initiated_transfers)
+-   [Authentication](../r_st_authentication)
+-   [Server authentication](../c_st_server_authentication)
+-   [Limitations](../c_st_limitations)
+-   [Encryption and server-initiated transfers](../c_st_encryption_server-initiated_transfers)

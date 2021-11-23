@@ -6,10 +6,10 @@
 
 The following topics provide how-to instructions for configuring {{< SecureTransport/advancedrouting  >}}:
 
--   <a href="t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a> - Provides how-to instructions for creating an {{< SecureTransport/advancedrouting >}} delegated administrator.
--   <a href="t_st_create_user_accounts" class="MCXref xref">Create user accounts</a> - Provides how-to instructions for creating user accounts.
--   <a href="t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a> - Provides how-to instructions for creating {{< SecureTransport/advancedrouting >}} application.
--   <a href="t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a> - Provides how-to instructions for managing Route Package Templates.
--   <a href="t_st_manage_routes" class="MCXref xref">Manage Routes</a> - Provides how-to instructions for managing Routes.
--   <a href="t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a> - Provides how-to instructions for assigning a Route Package Template.
--   <a href="t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a> - Provides how-to instructions for subscribing to the {{< SecureTransport/advancedrouting >}} application.
+-   [Advanced Routing delegated administrator](t_st_create_delegated_administrator) - Provides how-to instructions for creating an {{< SecureTransport/advancedrouting >}} delegated administrator.
+-   [Create user accounts](t_st_create_user_accounts) - Provides how-to instructions for creating user accounts.
+-   [Create Advanced Routing application](t_st_create_advanced_routing_application) - Provides how-to instructions for creating {{< SecureTransport/advancedrouting >}} application.
+-   [Manage Route Package Templates](t_st_manage_route_package_templates) - Provides how-to instructions for managing Route Package Templates.
+-   [Manage Routes](t_st_manage_routes) - Provides how-to instructions for managing Routes.
+-   [Assign Route Package Template](t_st_assign_route_package_template) - Provides how-to instructions for assigning a Route Package Template.
+-   [Subscribe to Advanced Routing application](t_st_subscribe_advanced_routing_application) - Provides how-to instructions for subscribing to the {{< SecureTransport/advancedrouting >}} application.

@@ -13,8 +13,8 @@
 
 **Related topics:**
 
--   <a href="../t_st_evaluate_performance_issues" class="MCXref xref">Evaluate performance issues</a>
--   <a href="../t_st_dns_settings" class="MCXref xref">DNS settings</a>
--   <a href="../t_st_other_services_using_to_much_cpu_memory" class="MCXref xref">Other services using to much CPU or memory</a>
--   <a href="../t_st_installation_on_network_drive" class="MCXref xref">Installation on network drive</a>
--   <a href="../t_st_debug_log_output_slows_computer" class="MCXref xref">Debug log output slows computer</a>
+-   [Evaluate performance issues](../t_st_evaluate_performance_issues)
+-   [DNS settings](../t_st_dns_settings)
+-   [Other services using to much CPU or memory](../t_st_other_services_using_to_much_cpu_memory)
+-   [Installation on network drive](../t_st_installation_on_network_drive)
+-   [Debug log output slows computer](../t_st_debug_log_output_slows_computer)

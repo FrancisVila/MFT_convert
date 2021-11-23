@@ -2,7 +2,7 @@
     "title": "File archiving global configuration",
     "linkTitle": "File archiving global configuration",
     "weight": "290"
-}The global file archiving configuration provides the inheritable file archiving configuration for users accounts and business units. For additional information on the inheritance of the file archiving configuration, refer to <a href="../" class="MCXref xref">File archiving</a>
+}The global file archiving configuration provides the inheritable file archiving configuration for users accounts and business units. For additional information on the inheritance of the file archiving configuration, refer to [File archiving](../)
 
 To enable and configure the global file archiving configuration:
 
@@ -15,7 +15,7 @@ To enable and configure the global file archiving configuration:
 
     2.  Complete the **Archive folder** field by entering the absolute path to the global archive folder. The folder location can be overridden at Business Unit level.
 
-    3.  (Optional) Determine whether or not to encrypt the global archive folder by selecting **Do not encrypt** or which configured certificate to use for encryption from the *Encryption Certificate* menu. The default is **Do not encrypt**. The chosen certificate can be overridden at Business Unit level. The encryption certificate must be a local x.509 certificate. For information on adding local certificates, refer to <a href="../../c_st_certificates/t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
+    3.  (Optional) Determine whether or not to encrypt the global archive folder by selecting **Do not encrypt** or which configured certificate to use for encryption from the *Encryption Certificate* menu. The default is **Do not encrypt**. The chosen certificate can be overridden at Business Unit level. The encryption certificate must be a local x.509 certificate. For information on adding local certificates, refer to [Manage local certificates and certificate signing requests](../../c_st_certificates/t_st_localcertificatesandcsrs).
 
     4.  **Note:**
         >

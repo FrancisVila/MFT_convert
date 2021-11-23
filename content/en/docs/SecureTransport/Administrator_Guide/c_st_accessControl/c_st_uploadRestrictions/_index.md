@@ -16,4 +16,4 @@ Configure upload restrictions on {{< SecureTransport/componentshortname  >}} Ser
 
 The following topic describes how-to manage upload restrictions:
 
--   <a href="t_st_uploadrestrictions" class="MCXref xref">Manage upload restrictions</a> - Provides how-to instructions for managing upload restrictions.
+-   [Manage upload restrictions](t_st_uploadrestrictions) - Provides how-to instructions for managing upload restrictions.

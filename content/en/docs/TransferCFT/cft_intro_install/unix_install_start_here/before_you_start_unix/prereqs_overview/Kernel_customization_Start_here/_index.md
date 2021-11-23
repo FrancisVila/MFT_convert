@@ -3,14 +3,14 @@
     "linkTitle": "Customize the kernel",
     "weight": "170"
 }Depending on the operating system, some customization may
-be mandatory to ensure that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operates correctly, and to maintain
+be mandatory to ensure that {{< TransferCFT/componentshortname  >}} operates correctly, and to maintain
 the overall system performance levels.
 
-Kernel customization is not mandatory for installation, but is needed to run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+Kernel customization is not mandatory for installation, but is needed to run {{< TransferCFT/componentshortname  >}}.
 
 This section describes the
 kernel parameters that you need to upgrade to ensure that the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operates correctly, and is comprised of the following topics:
+{{< TransferCFT/componentshortname  >}} operates correctly, and is comprised of the following topics:
 
 -   [Why
     customize the kernel?](why_customize_the_kernel_)
@@ -44,7 +44,7 @@ Kernel customization concerns one or more of the following aspects:
     of files used by a process: modification **mandatory**
 
 Depending on the operating system, some customization may
-be mandatory to ensure that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operates correctly, and to maintain
+be mandatory to ensure that {{< TransferCFT/componentshortname  >}} operates correctly, and to maintain
 the overall system performance levels.
 
 Note:
@@ -57,4 +57,4 @@ Note:
     are based on a standard system, which is the default configuration
     used when the operating system was installed. If you have already changed
     a specific setting for another application, the current parameter value
-    must be increased by the one recommended for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+    must be increased by the one recommended for {{< TransferCFT/componentshortname >}}.

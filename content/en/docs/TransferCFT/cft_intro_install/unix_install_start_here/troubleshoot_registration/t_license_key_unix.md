@@ -10,9 +10,9 @@
 
 ## Obtain a license key
 
-1.  Install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. You can install <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> without a license key, and enter the key later.
+1.  Install {{< TransferCFT/componentshortname >}}. You can install {{< TransferCFT/componentshortname >}} without a license key, and enter the key later.
 
-2.  After completing the installation, or for an existing installation, use the command <span class="code" style="font-weight: bold;">cftutil about</span> to retrieve your system information.
+2.  After completing the installation, or for an existing installation, use the command `cftutil about` to retrieve your system information.
 
     > **Note:**
     >
@@ -21,8 +21,8 @@
     > on which Transfer CFT is installed.
 
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: <span class="code">fulfillment@us.axway.com</span>
-    -   For an EMEA or APAC key, contact: <span class="code">product.key@axway.com</span>
+    -   For a US key, contact: `fulfillment@us.axway.com`
+    -   For an EMEA or APAC key, contact: `product.key@axway.com`
 
 4.  Provide the hostname and system information for the installed or updated Transfer CFT.
 
@@ -60,7 +60,7 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 ## About command
 
-Use the CFTUTIL utility to execute the <span class="code" style="font-weight: bold;">about </span>command to find the CPU ID and general system information as demonstrated in this example.
+Use the CFTUTIL utility to execute the `about `command to find the CPU ID and general system information as demonstrated in this example.
 
 
 
@@ -74,4 +74,4 @@ Use the CFTUTIL utility to execute the <span class="code" style="font-weight: b
     * release  = 1
     * distrib  = unknown
 
-In this example, the CPU ID is <span class="bold_in_para"> F8C721F8C721F8C7</span>. Your information, including the cpuid, will differ from the example.
+In this example, the CPU ID is **F8C721F8C721F8C7**. Your information, including the cpuid, will differ from the example.

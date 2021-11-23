@@ -9,8 +9,8 @@
 The PeSIT protocol uses two PIs to carry diagnostic messages: PI 2 and
 PI 29.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is responsible for PI 29, which is valid only in
-version E. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses PI 29 to carry a clearform message describing
+{{< TransferCFT/componentshortname  >}} is responsible for PI 29, which is valid only in
+version E. {{< TransferCFT/componentshortname  >}} uses PI 29 to carry a clearform message describing
 the error. This message is not seen by the user.
 
 ## Diagnostic protocol field format
@@ -24,7 +24,7 @@ fields can be organized in several ways:
 
 H represents a hexadecimal digit.
 
-In general for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, this format represents
+In general for {{< TransferCFT/componentshortname  >}}, this format represents
 an error code specific to the operating system of the host computer and
 only relates to NON network resources (file access, task management, system
 services, etc.).
@@ -84,7 +84,7 @@ the following table.
 For example, DIAGP = "CRE i12" means that a CREATE FPDU
 has been received with an unknown space reservation unit (PI 41).
 
-<span class="autonumber"></span> "XXX
+ "XXX
 iNN" format values
 
 <table>
@@ -213,7 +213,7 @@ event.
 This value should be given to the Technical
 support in the event of unexplained transfer difficulties.
 
-<span class="autonumber"></span>Vxxxxxxx format: possible
+Vxxxxxxx format: possible
 protocol events
 
 <table>
@@ -252,7 +252,7 @@ VLOGRP) </p>         </td>
    </tbody>
 </table>
 
-<span class="autonumber"></span>Error code descriptions
+Error code descriptions
 
 <table>
    <thead>
@@ -734,7 +734,7 @@ VLOGRP) </p>         </td>
       <tr>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PeSIT reason code         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">{{< TransferCFT/componentshortname  >}} internal
 diagnostic         </th>
 <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Service item concerned         </th>
       </tr>
@@ -1137,7 +1137,7 @@ These codes are specific to the ODETTE protocol and correspond to the
 "ODETTE diagnostic code" transmitted by the protocol.
 
 The values of these codes consist of the diagnostic code (two digits)
-to which the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> adds 100 or 200 depending on the protocol phase concerned.
+to which the {{< TransferCFT/componentshortname  >}} adds 100 or 200 depending on the protocol phase concerned.
 
 -   Values between 100 and 199 correspond to the "SFNA" (Start
     File Negative Answer) and "EFNA" (End File Negative Answer)
@@ -1241,13 +1241,13 @@ of communication system)</p>         </td>
          <td><p>210</p>         </td>
          <td><p>Incorrect number of records. The number transported by
 the EFID FPDU does not correspond to the number of received records counted
-by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (F- or V-format files)</p>         </td>
+by the {{< TransferCFT/componentshortname  >}} (F- or V-format files)</p>         </td>
       </tr>
       <tr>
          <td><p>211</p>         </td>
          <td><p>Number of characters incorrect. The number transported
 by the EFID FPDU does not correspond to the number of received characters
-counted by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (T- or U-format files)</p>         </td>
+counted by the {{< TransferCFT/componentshortname  >}} (T- or U-format files)</p>         </td>
       </tr>
    </tbody>
 </table>

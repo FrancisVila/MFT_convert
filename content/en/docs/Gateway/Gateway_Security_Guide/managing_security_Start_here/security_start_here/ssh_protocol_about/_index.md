@@ -2,7 +2,7 @@
     "title": "SSH protocol",
     "linkTitle": "SSH",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [About SSH protocol](#About_SSH_protocol)
 
@@ -20,7 +20,7 @@
 
 ## About SSH protocol
 
-<span style="font-weight: bold;">SSH</span> (<span style="font-weight: bold;">S</span>ecure <span style="font-weight: bold;">Sh</span>ell) was created by SSH Communications Security Inc. ([www.ssh.com](http://www.ssh.com/)) to provide secure login over an insecure network. The SSH2 protocol is being standardized by the Secsh Working Group of the Internet Engineering Task Force (IETF).
+**SSH** (<span style="font-weight: bold;">S</span>ecure <span style="font-weight: bold;">Sh</span>ell) was created by SSH Communications Security Inc. ([www.ssh.com](http://www.ssh.com/)) to provide secure login over an insecure network. The SSH2 protocol is being standardized by the Secsh Working Group of the Internet Engineering Task Force (IETF).
 
 SSH provides the following services:
 

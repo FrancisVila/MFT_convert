@@ -3,8 +3,8 @@
     "linkTitle": "Symbolic variables",
     "weight": "150"
 }<span id="About_symbolic_variables"></span>A symbolic variable represents
-a transfer data item whose value is not known at the time <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
-parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which is the ‘&’ character in this document. However, you should refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Installation Guide* that corresponds to
+a transfer data item whose value is not known at the time {{< TransferCFT/componentshortname  >}}
+parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which is the ‘&’ character in this document. However, you should refer to the {{< TransferCFT/componentshortname  >}} *Installation Guide* that corresponds to
 your OS, in order to determine the special character &lt;char\_symb>
 used on your system.
 
@@ -19,7 +19,7 @@ times: a single CFTSEND command can hence be applied to several files
 by using the symbolic variables in the FNAME parameter. This also makes
 it possible to only have to describe one transfer-related procedure applicable
 to several transfers. The real value of the parameter is substituted for
-the symbolic variable, at the time the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> command or the procedure
+the symbolic variable, at the time the {{< TransferCFT/componentshortname  >}} command or the procedure
 is executed.
 
 <span id="Symbolic_variable_syntax"></span>
@@ -67,7 +67,7 @@ The symbolic variable syntax is as follows:
       </tr>
       <tr>
          <td>          </td>
-         <td><p>These characters can be used in combination, such as <span class="bold_in_para">+:</span> or  <span class="bold_in_para">&gt;+:</span>.     </p>
+         <td><p>These characters can be used in combination, such as <strong>+:</strong> or  <strong>&gt;+:</strong>.     </p>
 <p>See the <a href="#Examples" class="MCXref xref">Example using optional characters</a></p>         </td>
       </tr>
    </tbody>
@@ -82,7 +82,7 @@ The symbolic variable syntax is as follows:
 -   And then a character
     string representing the identifier of the variable to be substituted
 
-The identifiers, recognized by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, which can be used in the
+The identifiers, recognized by {{< TransferCFT/componentshortname  >}}, which can be used in the
 syntax of a symbolic variable are indicated in the *[List of symbolic variables](#List_of_symbolic_variables)*.
 In this section, the ‘VAR’ notation is used to generically designate such
 an identifier.
@@ -171,8 +171,8 @@ You can use the field extraction syntax as follows:
 
 &%&lt;separator>\[&lt;start\_field>\[.\[&lt;end\_field>\]\]VARIABLE
 
-1.  If<span class="code"> start\_field</span> is omitted, the default value is 1.
-2.  If <span class="code">end\_field</span> is omitted, the default value is the last field in the variable.
+1.  If` start_field` is omitted, the default value is 1.
+2.  If `end_field` is omitted, the default value is the last field in the variable.
 3.  If there are 2 consecutive separators, the extracted field between the 2 separators is empty.
 4.  If there is only one number after the separator indicating the value placement, this returns just that token value.
 
@@ -180,10 +180,10 @@ For the following example, see the corresponding syntax:
 
 &&lt;VARIABLE>=S052368\_Z123\_HZUI34\_92\_\_\_TYU
 
-1.  <span class="code">&%\_.2&lt;VARIABLE></span>: separator=\_, start\_field=1 , end\_field=2 (this returns the value <span class="code">S052368\_Z123</span>)
-2.  <span class="code">&%\_3.&lt;VARIABLE></span>: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value <span class="code">HZUI34\_92\_\_\_TYU</span>)
-3.  <span class="code">&%\_5&lt;VARIABLE></span>: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
-4.  <span class="code">&%\_4&lt;VARIABLE></span>: separator=\_, start\_field=4, end\_field=4 (this returns <span class="code">92</span>)
+1.  `&%_.2<VARIABLE>`: separator=\_, start\_field=1 , end\_field=2 (this returns the value `S052368_Z123`)
+2.  `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value `HZUI34_92___TYU`)
+3.  `&%_5<VARIABLE>`: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
+4.  `&%_4<VARIABLE>`: separator=\_, start\_field=4, end\_field=4 (this returns `92`)
 
 You can combine field extraction with the other filtering methods. The full syntax is:
 
@@ -309,7 +309,7 @@ right), is also indicated.
 > The other syntax shown above may also be used, for each of the identifiers
 > listed.
 
-<span class="autonumber"></span>List of symbolic variables
+List of symbolic variables
 
 <table>
    <thead>
@@ -358,13 +358,13 @@ according to the transfer direction) </p>         </td>
          <td>&amp;NSPART         </td>
          <td>24         </td>
          <td>Network identifier by which the
-local <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> identifies itself to its partner         </td>
+local {{< TransferCFT/componentshortname  >}} identifies itself to its partner         </td>
       </tr>
       <tr>
          <td>&amp;NRPART         </td>
          <td>24         </td>
          <td><p>Network identifier by which the
-remote partner identifies itself to the local <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span></p>         </td>
+remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}}</p>         </td>
       </tr>
       <tr>
 <th rowspan="7" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>USER </p>         </th>
@@ -401,7 +401,7 @@ In listcat content=debug this is attribute is MSG         </td>
       <tr>
          <td>&amp;SJOBNAME         </td>
          <td>15         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> job name, can be used in exec and cronjob procedures         </td>
+         <td>{{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures         </td>
       </tr>
       <tr>
 <th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>APPLICATIONS </p>         </th>
@@ -511,7 +511,7 @@ If 4 characters long, the counter is reset to 1 after 9999 </p>         </td>
       <tr>
          <td><p>&amp;PRI </p>         </td>
          <td>3         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> priority for the transfer (0 to 255) </p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} priority for the transfer (0 to 255) </p>         </td>
       </tr>
       <tr>
          <td><p>&amp;QQ </p>         </td>
@@ -854,23 +854,23 @@ site </p>         </td>
       <tr>
          <td><p>&amp;TT </p>         </td>
          <td>10         </td>
-         <td><p>Transmission duration in seconds (TIMES attribute in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog)</p>         </td>
+         <td><p>Transmission duration in seconds (TIMES attribute in the {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
       </tr>
       <tr>
 <th rowspan="3" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%">CONTROL OUTPUT          </th>
          <td><p>&amp;FLOG </p>         </td>
          <td>512         </td>
-         <td><p>Name of last log file used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> </p>         </td>
+         <td><p>Name of last log file used by {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
          <td><p>&amp;FACCNT </p>         </td>
          <td>512         </td>
-         <td><p>Name of last statistics file used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> </p>         </td>
+         <td><p>Name of last statistics file used by {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
          <td><p>&amp;FCAT</p>         </td>
          <td>512         </td>
-         <td><p>Name of catalog used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </td>
+         <td><p>Name of catalog used by {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
 <th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>TRACKING</p>         </th>
@@ -964,17 +964,17 @@ date </p>         </td>
 <p>ENVIRONMENT</p>         </th>
          <td><p>&amp;CFTNAME</p>         </td>
          <td>32         </td>
-         <td><p>Name of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (CFTPARM PART parameter)</p>         </td>
+         <td><p>Name of the {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)</p>         </td>
       </tr>
       <tr>
          <td><p>&amp;CFTEVENT</p>         </td>
          <td>16         </td>
-         <td><p>The type of job submitted by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, see (2) below</p>         </td>
+         <td><p>The type of job submitted by {{< TransferCFT/componentshortname  >}}, see (2) below</p>         </td>
       </tr>
       <tr>
          <td>&amp;SJOBNAME         </td>
          <td>15         </td>
-         <td>The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
+         <td>The {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
       </tr>
       <tr>
          <td>&amp;CFTVERSION         </td>
@@ -1148,7 +1148,7 @@ parameter of the CFTSEND and CFTRECV commands         </td>
       </tr>
       <tr>
          <td>EXIT
-of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> CFTSEND/SEND and CFTRECV/RECV commands         </td>
+of the {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands         </td>
          <td>&amp;IDF         </td>
       </tr>
       <tr>
@@ -1212,7 +1212,7 @@ When a file of this type is received from the ALPHSITE partner on July
 
     RECV PART = ALPHSITE, IDF = PAY
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> creates and writes to a file: PAYALPH.14
+{{< TransferCFT/componentshortname  >}} creates and writes to a file: PAYALPH.14
 
 See the end-of-transfer examples in [Transfer-related
 procedure examples](../../../concepts/about_transfer_processing/procedure_examples).
@@ -1225,15 +1225,15 @@ You can use blacklist characters as a POSIX Regular Extended expression to defin
 
 Defining the blacklist
 
-Use the uconf <span class="code">cft.server.processing\_scripts\_variables\_blacklist</span> parameter to define the character sequence to forbid. We recommend setting this parameter to **\`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
+Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **\`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 
-<span class="bold_in_para">UNIX</span>
+**UNIX**
 
 
     uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\$\(|;|&|\|"
 
 When setting the blacklist values shown above, the forbidden characters are: **\`** and **$(** and **;** and **&** and **|**  
-For example, if <span class="code">&PARM="$(ls)"</span>or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **\`** characters, respectively.
+For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **\`** characters, respectively.
 
 Windows
 
@@ -1242,7 +1242,7 @@ Windows
 
 DIAGI 158
 
-This DIAGI indicates that there was an error while replacing the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> variables.
+This DIAGI indicates that there was an error while replacing the {{< TransferCFT/componentlongname  >}} variables.
 
 Log messages
 

@@ -2,7 +2,7 @@
     "title": "Configure Transfer CFT as an SFTP server",
     "linkTitle": "Configure the Transfer CFT SFTP server",
     "weight": "160"
-}T<span style="font-weight: normal;">**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**</span>
+}T
 
 This section describes how to set up Transfer CFT to use as a server with the SFTP protocol.
 
@@ -55,7 +55,7 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 -   ID: Identifier of the object
 -   DIRECT=SERVER
 -   SRVPRIVKEY: Key Id containing the server private key (RSA) to use with key authentication.
-    -   If SRVPRIVKEY(CFTSSH direct=server) is not set, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> cannot start, and the message displays <span class="code">CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set</span>.
+    -   If SRVPRIVKEY(CFTSSH direct=server) is not set, {{< TransferCFT/componentlongname >}} cannot start, and the message displays `CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set`.
 
 Example
 
@@ -93,7 +93,7 @@ There are two ways for you to configure how the server will check the client pas
 
 <!-- -->
 
--   Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in <span class="code">uconf:cft.server.authentication\_method </span>is used.
+-   Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note:**
 >
@@ -208,12 +208,12 @@ When using **password and key** authentication:
 
 ### Define a default flow model for a partner (IDF)
 
-This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, this is the CFTPART default IDF.
+This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In {{< TransferCFT/transfercftname  >}}, this is the CFTPART default IDF.
 
 
     CFTPART id=partner,IDF=<default_model_for_this_partner>,…
 
-If the remote path is absolute (root directory), <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> uses the root directory as the IDF. In this example, <span class="code">flow01 </span>corresponds to the IDF for this partner.
+If the remote path is absolute (root directory), {{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example, `flow01 `corresponds to the IDF for this partner.
 
 
     put LocalFile01.txt /flow01/RemoteFile01.txt
@@ -225,7 +225,7 @@ of authorized IDFs for send/receive transfers with a defined partner. You can us
 
 For more information, see [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
 
-In the following example, defining a CFTAUTH creates visibility for **flow01** and **flow02** for the <span class="code">user2 </span>client.
+In the following example, defining a CFTAUTH creates visibility for **flow01** and **flow02** for the `user2 `client.
 
 
 
@@ -242,11 +242,11 @@ The view for a third-party software client would resemble the following (where t
 > ![](/Images/TransferCFT/sftp_view_client.png)
 
 If you enter an \* (asterisk),
-all model files (IDFs) can be used. If the provided IDF is not in one of the two lists, the connection is rejected and the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> client returns a DIAGI 411.
+all model files (IDFs) can be used. If the provided IDF is not in one of the two lists, the connection is rejected and the {{< TransferCFT/transfercftname  >}} client returns a DIAGI 411.
 
 See the examples in [SFTP use case examples](../cftssh_example#top).
 
-If the provided IDF does not belong to either the SAUTH or RAUTH list, on the server side, the connection is rejected and the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> client returns a DIAGI 413.
+If the provided IDF does not belong to either the SAUTH or RAUTH list, on the server side, the connection is rejected and the {{< TransferCFT/transfercftname  >}} client returns a DIAGI 413.
 
 > **Note:**
 >
@@ -268,23 +268,23 @@ Server mode key and password authentication using restricted flow models
 
 When Transfer CFT is acting in server mode note the following requirements:
 
--   If the client performs a <span class="code">get </span>command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and a <span class="code">permission denied</span> error occurs.
--   If a third-party SFTP client performs a <span class="code">put </span>command, the Transfer CFT server must use open mode (FNAME= &NFNAME). If you do not have a CFTRECV model, the client cannot perform an upload (put) and a <span class="code">permission denied</span> error occurs.
+-   If the client performs a `get `command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and a `permission denied` error occurs.
+-   If a third-party SFTP client performs a `put `command, the Transfer CFT server must use open mode (FNAME= &NFNAME). If you do not have a CFTRECV model, the client cannot perform an upload (put) and a `permission denied` error occurs.
 
 The root directory for the SFTP connection is the WORKINGDIR defined in the CFTSEND (IMPL=YES) or CFTRECV corresponding to the IDF. If both CFTSEND and CFTRECV are defined for that IDF but with different WORKINGDIR, there is a DIAGI 435 error for the Transfer CFT client, and an SFTP failure with an appropriate error message for other SFTP clients.
 
-If the WORKINGDIR is not defined, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> uses the current directory (commonly the runtime directory).
+If the WORKINGDIR is not defined, {{< TransferCFT/componentlongname  >}} uses the current directory (commonly the runtime directory).
 
 When defining the WORKINGDIR, you can use the following symbolic variables:
 
 -   &USERID: user login
 -   &NRPART: same as &USERID
 -   &PART: partner
--   &HOME: home directory on UNIX, or the user directory on Windows (<span class="code">C:\\Users\\&lt;user></span>)
+-   &HOME: home directory on UNIX, or the user directory on Windows (`C:\Users\<user>`)
 
 Example
 
-In this example, <span class="code">user1 </span>can perform a <span class="code">get </span>or <span class="code">put </span>command using the space (WORKINGDIR) defined for <span class="code">user1</span>.
+In this example, `user1 `can perform a `get `or `put `command using the space (WORKINGDIR) defined for `user1`.
 
 
 

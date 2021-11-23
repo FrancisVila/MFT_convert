@@ -10,7 +10,7 @@ Check task manage and verify that the copilot "copxxx" processes are running (as
 
 <img src="/Images/TransferCFT/copui_process.png" class="mediumWidth" />
 
-In the Transfer CFT installation, access the <span class="code">&lt;install\_directory>/runtime/run</span> folder &gt; and check the following files for errors or failed steps:
+In the Transfer CFT installation, access the `<install_directory>/runtime/run` folder &gt; and check the following files for errors or failed steps:
 
 -   copmsg.out file
 -   copui.trc file
@@ -77,7 +77,7 @@ Check the expiration date and replace as needed.
 
 Access management issue
 
-A connection error message displays in the <span class="code">$CFTDIRRUNTIME/run/copsmng.out</span> file:
+A connection error message displays in the `$CFTDIRRUNTIME/run/copsmng.out` file:
 
 CONNECT action for SERVICE:UI resource not allowed for user: &lt;username>
 
@@ -106,15 +106,15 @@ Commit option
 
 Other issues
 
-If the sends an **404 not found** reply when connecting to the URL, please check that the <span class="code">cftui </span>alias parameters are set in UCONF as follows:
+If the sends an **404 not found** reply when connecting to the URL, please check that the `cftui `alias parameters are set in UCONF as follows:
 
 -   copilot.http.aliases.cftui.alias=/cft/ui
 -   copilot.http.aliases.cftui.path=&lt;installation\_path>/Transfer\_CFT/home/distrib/cftui
 
 Check:
 
--   If the server sends an **invalid credential** reply, check that the UCONF <span class="code">copilot.restapi.authentication\_method</span> and <span class="code">am.type</span> parameters are consistent with the **REST API server authentication method** diagram. Please see <a href="../#Authentication_methods" class="MCXref xref">Authentication methods</a>
--   If the server sends an **insufficient rights** reply, this indicates that access management is enabled (either <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or internal AM) and that you do not have the CONNECT privilege on the SERVICE:UI resource.
+-   If the server sends an **invalid credential** reply, check that the UCONF `copilot.restapi.authentication_method` and `am.type` parameters are consistent with the **REST API server authentication method** diagram. Please see <a href="../#Authentication_methods" class="MCXref xref">Authentication methods</a>
+-   If the server sends an **insufficient rights** reply, this indicates that access management is enabled (either or internal AM) and that you do not have the CONNECT privilege on the SERVICE:UI resource.
 -   If you are using the **predefined filters** and there seem to be missing transfers or messages, it is possible that they are not displaying due to a difference in time between the client and the server. This is because the predefined filters use the client time and not the server time.
 
  

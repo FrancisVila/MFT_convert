@@ -9,7 +9,7 @@
 You can define the list of authorized file identifiers for the CFTAUTH in one of the following two ways:
 
 -   IDF: Use a list of identifiers
-    for the <span style="font-weight: bold;">IDF</span> parameter
+    for the **IDF** parameter
 -   FNAME: Use a path to the file where
     the list is saved for the <span style="font-weight: bold;">FNAME</span>
     parameter

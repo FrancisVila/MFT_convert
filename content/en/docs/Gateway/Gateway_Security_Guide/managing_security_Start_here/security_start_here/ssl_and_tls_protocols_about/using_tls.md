@@ -2,7 +2,7 @@
     "title": "Using TLS",
     "linkTitle": "Using TLS",
     "weight": "220"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Installing TLS](#Installing_TLS)
 
@@ -72,7 +72,7 @@ To use TLS, you must configure the Remote Site to use a TLS network security typ
 
 The three TLS-specific parameters to set in the [Remote Site Net security tab](../../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_net_security_tab) are:
 
--   <span style="font-weight: bold;">Network security option</span> (<span class="code">network\_security\_option</span> or<span class="code"> -nsopt</span>): set to TLS
+-   **Network security option** (<span class="code">network\_security\_option</span> or<span class="code"> -nsopt</span>): set to TLS
 -   <span style="font-weight: bold;">Security Profile for outgoing connection</span> (<span class="code">tls\_sprof\_out</span>): secures the outgoing connection
 -   <span style="font-weight: bold;">Security Profile for incoming connection</span> (<span class="code">tls\_sprof\_in</span>): Incoming connections are first secured by selecting a Security Profile from the best Network Profile that matches the incoming connection parameters. Once the connected Site is known (at file transfer protocol level), a comparison is made between the session security parameters already used (from the network), and those of the session security parameters declared as the incoming Security Profile of the Site. If they do not match, the transfer is aborted and the connection is closed.
 

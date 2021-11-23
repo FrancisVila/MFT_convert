@@ -5,14 +5,14 @@
 }PGP keys are managed from the Administration Tool according to their scope: *local* or *partner*.
 
 -   *Local PGP keys* can be either server-scoped or account-based. To manage server-scoped certificates select **Setup > Certificates** and the *Local Certificates* tab. Account-based certificates are managed from the *Private Certificates* pane of the *Certificates* pane of the *User Account* page. You can use the appropriate page to get detailed information for a particular key, generate a key, delete a key, or export public and private keys.
--   *Partner PGP keys* are also managed by account. You can generate, import, delete, and export account-specific PGP keys. For partner PGP keys, the private key can be exported on certificate creation only. For more information on managing account-based PGP keys, see <a href="../../../accounts/c_st_usercertificates/manage-user-partner-certificates#Import" class="MCXref xref">Use the following procedure to import a partner certificate.</a>
+-   *Partner PGP keys* are also managed by account. You can generate, import, delete, and export account-specific PGP keys. For partner PGP keys, the private key can be exported on certificate creation only. For more information on managing account-based PGP keys, see [Use the following procedure to import a partner certificate.](../../../accounts/c_st_usercertificates/manage-user-partner-certificates#Import)
 
 The following topics provide how-to instructions for managing PGP keys:
 
--   <a href="#Generate" class="MCXref xref">Generate PGP keys</a>
--   <a href="#Export" class="MCXref xref">Export PGP keys</a>
--   <a href="#Import" class="MCXref xref">Import PGP keys</a>
--   <a href="#Local" class="MCXref xref">Local (server) PGP keys management</a>
+-   [Generate PGP keys](#Generate)
+-   [Export PGP keys](#Export)
+-   [Import PGP keys](#Import)
+-   [Local (server) PGP keys management](#Local)
 
 <span id="Generate"></span>
 
@@ -51,12 +51,12 @@ There are three scenarios for importing PGP keys into {{< SecureTransport/compon
 
 ## Local (server) PGP keys management
 
-Local (server) and partner PGP keys are generated, exported, imported, and deleted for a particular account. See <a href="../../../accounts/c_st_usercertificates" class="MCXref xref">User certificates</a>
+Local (server) and partner PGP keys are generated, exported, imported, and deleted for a particular account. See [User certificates](../../../accounts/c_st_usercertificates)
 
  
 
 **Related topic:**
 
--   <a href="../r_st_pgptransfersettingsdependencies" class="MCXref xref">PGP transfer settings dependencies</a>
+-   [PGP transfer settings dependencies](../r_st_pgptransfersettingsdependencies)
 
-<a href="../../../accounts/c_st_usercertificates" class="MCXref xref">User certificates</a>
+[User certificates](../../../accounts/c_st_usercertificates)

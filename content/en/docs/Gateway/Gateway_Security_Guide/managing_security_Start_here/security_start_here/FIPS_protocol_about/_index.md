@@ -34,7 +34,7 @@ If the security-related objects created prior to the activation of the FIPS mode
 
 ### Interoperability with other Axway products
 
-When FIPS mode is enabled, the secure communication between <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> and <span class="mc-variable suite_variables.PassPortName variable">PassPort</span> (AM, PM, PS) is FIPS compliant.
+When FIPS mode is enabled, the secure communication between {{< Gateway/componentshortname  >}} and {{< Gateway/passportname  >}} (AM, PM, PS) is FIPS compliant.
 
 Note: when FIPS mode is enabled, it is recommended to use PassPort PS as a PKI.
 
@@ -48,6 +48,6 @@ Related topics:
 <a href="using_fips" class="MCXref xref">Using FIPS</a>  
 <a href="../ssl_and_tls_protocols_about/tls_cipher_suites" class="MCXref xref">TLS cipher suites</a>
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

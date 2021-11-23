@@ -8,12 +8,12 @@
 
 #### CFTPARM
 
-\[SSLMTASK = <u>8</u> | n \]  <span style="font-weight: normal;"> {1...64}</span>
+\[SSLMTASK = <u>8</u> | n \]  
 
 The maximum number of SSL tasks that can execute simultaneously in a
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+{{< TransferCFT/componentshortname  >}}.
 
--   <span style="font-weight: bold;">8</span>:
+-   **8**:
     default value for all operating systems
 -   <span style="font-weight: bold;">64</span>:
     is the maximum for all operating systems

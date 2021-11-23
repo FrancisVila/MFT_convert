@@ -2,15 +2,15 @@
     "title": " Secure Relay with a multi-node architecture",
     "linkTitle": "Secure Relay with a multi-node architecture",
     "weight": "250"
-}You can install <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
+}You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
 
 This page describes how to configure Transfer CFT in a multi-node architecture to use Secure Relays:
 
--   Install <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> in a multi-node, multi-host architecture
+-   Install {{< TransferCFT/componentlongname >}} in a multi-node, multi-host architecture
 -   Install 2 or more SecureRelay Router Agents (use the same CA and USER certificate as the Master Agent)
 -   Enable Secure Relay and configure Java
 -   Set the listening ports
--   Configure additional <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> objects
+-   Configure additional {{< TransferCFT/componentlongname >}} objects
     -   Network object CFTNET
     -   Protocol object CFTPROT
     -   Partner object CFTPART and CFTTCP
@@ -28,15 +28,15 @@ Follow the installation instructions provided in the [Secure Relay RA Installat
 -   &lt;CACertificate>CA\_for\_RA.der&lt;/CACertificate>
 -   &lt;UserCertificate>USER\_for\_RA.p12&lt;/UserCertificate>
 
-You need these values when you configure the Master Agent in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> configuration, where the user certificate that you use must be signed by <span class="code">CA\_for\_RA</span>. You should use the same CA and USER certificate as for the Master Agent.
+You need these values when you configure the Master Agent in the {{< TransferCFT/componentlongname  >}} configuration, where the user certificate that you use must be signed by `CA_for_RA`. You should use the same CA and USER certificate as for the Master Agent.
 
-## Configure the Router Agents in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>
+## Configure the Router Agents in {{< TransferCFT/componentlongname  >}}
 
-After completing installation, configure the Router Agents in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> configuration.
+After completing installation, configure the Router Agents in the {{< TransferCFT/componentlongname  >}} configuration.
 
-1.  Set the value for the number of Router Agents using the `secure_relay.ra` parameter. <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
+1.  Set the value for the number of Router Agents using the `secure_relay.ra` parameter. {{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 2.  You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
-3.  Configure the host address for each Secure Relay host using <span class="code">secure\_relay.ra.0.host</span>.
+3.  Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
 
 Example of two Router Agent definitions
 
@@ -45,8 +45,8 @@ Example of two Router Agent definitions
     secure_relay.ra      = 2
      
     secure_relay.ra.0.enable = yes
-    secure_relay.ra.0.dmz = DMZ0
-    secure_relay.ra.0.host = @hostF
+    secure_relay.ra.0.dmz = 
+    secure_relay.ra.0.host = 
     secure_relay.ra.0.admin_port = 6810
     secure_relay.ra.0.comm_port = 6811 
     secure_relay.ra.0.nb_data_connections = 5
@@ -54,15 +54,15 @@ Example of two Router Agent definitions
     secure_relay.ra.0.outcall_network_interface =
      
      secure_relay.ra.1.enable = Yes
-    secure_relay.ra.1.dmz = DMZ1
-    secure_relay.ra.1.host = @hostG
+    secure_relay.ra.1.dmz = 
+    secure_relay.ra.1.host = 
     secure_relay.ra.1.admin_port = 6810
     secure_relay.ra.1.comm_port = 6811  
     secure_relay.ra.1.nb_data_connections = 5
     secure_relay.ra.1.data_channel_ciphering = No
     secure_relay.ra.1.outcall_network_interface =
 
-## Configure the Master Agent in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>
+## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
 
@@ -72,7 +72,7 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 
 ## Enable Secure Relay and configure the Java
 
-In <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> from the CFTUTIL prompt, perform the following commands:
+In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
 
 1.  Enable Secure Relay:  
 
@@ -84,7 +84,7 @@ In <span class="mc-variable axway_variables.Component_Long_Name variable">Transf
 
 If you need to set listening ports, for example if you are using a firewall, proceed as follows:
 
-1.  To define the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
+1.  To define the {{< TransferCFT/componentlongname >}} internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
 
 
 
@@ -92,7 +92,7 @@ If you need to set listening ports, for example if you are using a firewall, pro
 
 2.  Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
 For example, if you set the SAP=1761 when you have 4 nodes, Secure Relay opens the ports 1761, 1762, 1763 and 1764.
 
@@ -101,7 +101,7 @@ For example, if you set the SAP=1761 when you have 4 nodes, Secure Relay opens t
     CFTPROT ID=PROT0,SAP=1761,...
     CFTPROT ID=PROT1,SAP=1764,...
 
-In the scenario above if 4 nodes are configured in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
+In the scenario above if 4 nodes are configured in {{< TransferCFT/componentlongname  >}} multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
 
 Additionally, for each node the comm\_port also increments. That is, the `secure_relay.ra.N.comm_port` parameter, where N is an index.
 
@@ -109,11 +109,11 @@ Additionally, for each node the comm\_port also increments. That is, the `secure
 -   N =1: second RA
 -   N = 2: third RA
 
-However, when you define the <span class="code">secure\_relay.ra.N.admin\_port </span>value, where N is an index, the value does not increment according to the number of nodes.
+However, when you define the `secure_relay.ra.N.admin_port  `value, where N is an index, the value does not increment according to the number of nodes.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
-If a multi-node <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> has 4 nodes and the setting `secure_relay.ra.N.comm_port= 6811`, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> opens the ports 6811, 6812, 6813, and 6814.
+If a multi-node {{< TransferCFT/componentlongname  >}} has 4 nodes and the setting `secure_relay.ra.N.comm_port= 6811`, {{< TransferCFT/componentlongname  >}} opens the ports 6811, 6812, 6813, and 6814.
 
 ## Define the environment for SecureRelay
 
@@ -155,9 +155,9 @@ This section describes the CFTPROT object, and how various parameters are relate
 
 -   CFTPROT is related to the CFTNET object through the NET parameter.
 -   The SAP parameter is the listening port that is used on the RA side (using the CFTNET HOST parameter as the network interface).  
-    This value automatically increments by one per node, where the range is <span style="font-family: 'Courier New';">&lt;number of nodes>-1</span>. Therefore, be certain that you do not use the ports in this range for another protocol.
+    This value automatically increments by one per node, where the range is . Therefore, be certain that you do not use the ports in this range for another protocol.
 
-<span class="bold_in_para">Example </span>
+**Example**
 
 This example uses a CFTNET object called NETXSR, and PROTXSR is bound to port 1861 for node 0, and port 1862 for node 1.
 
@@ -216,7 +216,7 @@ If you would like to use a specific SecureRelay with a given partner, set the fo
 1.  Set the listening port, 1555 for our example, for the load balancer (LB).
 2.  Set the back-end server address and port for each host (hostF and hostG).
 
-In our example, we have load balancing with 2 Router Agents, 2 hosts, and 2 <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> nodes. You can see the port numbers increment by one for the second node (as many entries as number of RA x number of nodes).
+In our example, we have load balancing with 2 Router Agents, 2 hosts, and 2 {{< TransferCFT/componentlongname  >}} nodes. You can see the port numbers increment by one for the second node (as many entries as number of RA x number of nodes).
 
 listen cft LB:1555
 

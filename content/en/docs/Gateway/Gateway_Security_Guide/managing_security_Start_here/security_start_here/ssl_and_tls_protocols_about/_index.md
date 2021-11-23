@@ -2,7 +2,7 @@
     "title": "TLS protocol",
     "linkTitle": "TLS",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [About the TLS protocols](#About_SSL_and_TLS_protocols)
 
@@ -38,7 +38,7 @@ These TLS protocol operates between network protocol layers (for example, TCP/IP
 
 TLS is based on four protocols:
 
--   <span style="font-weight: bold;">Handshake Protocol</span>: sets up the client and server session
+-   **Handshake Protocol**: sets up the client and server session
 -   <span style="font-weight: bold;">Change Cipher Spec Protocol</span>: establishes new agreement on the cipher suite used for the session
 -   <span style="font-weight: bold;">Alert Protocol</span>: transmits warning and error messages between client and server
 -   <span style="font-weight: bold;">Record Protocol</span>: comprises the above protocols and the application protocols

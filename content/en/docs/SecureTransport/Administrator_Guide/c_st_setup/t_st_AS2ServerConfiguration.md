@@ -9,7 +9,7 @@
 -   Maximum file sizes for sending and receiving. The default maximum file sizes are 50 megabytes.
 -   Asynchronous Receipt Receiver for HTTP and HTTPS.
 
-For detailed information about AS2 transfers, see <a href="../../c_st_as2transfers" class="MCXref xref">AS2 transfers</a>.
+For detailed information about AS2 transfers, see [AS2 transfers](../../c_st_as2transfers).
 
 ## Configure AS2 transfer settings
 

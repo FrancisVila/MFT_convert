@@ -8,18 +8,18 @@ By default the *Password File List* contains a disabled entry for real users. On
 
 The following topics provide how-to instructions for managing password files and password vaults:
 
--   <a href="#Add_pass" class="MCXref xref">Add password file entry</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable password file entries</a>
--   <a href="#Edit" class="MCXref xref">Edit a password file entry</a>
--   <a href="#Delete" class="MCXref xref">Delete password file entries</a>
--   <a href="#Add" class="MCXref xref">Add a user to a password vault</a>
--   <a href="#Edit_user" class="MCXref xref">Edit a user in a password vault</a>
--   <a href="#Delete_users" class="MCXref xref">Delete users from a password vault</a>
--   <a href="#Purge" class="MCXref xref">Purge a password vault</a>
+-   [Add password file entry](#Add_pass)
+-   [Enable or disable password file entries](#Enable)
+-   [Edit a password file entry](#Edit)
+-   [Delete password file entries](#Delete)
+-   [Add a user to a password vault](#Add)
+-   [Edit a user in a password vault](#Edit_user)
+-   [Delete users from a password vault](#Delete_users)
+-   [Purge a password vault](#Purge)
 
 **Related topic:**
 
--   <a href="../c_st_real_users" class="MCXref xref">Real users</a>
+-   [Real users](../c_st_real_users)
 
 <span id="Add_pass"></span>
 

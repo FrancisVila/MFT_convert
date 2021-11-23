@@ -30,11 +30,11 @@ The following features of {{< SecureTransport/componentshortname  >}} are useful
 
 For information about configuring ad hoc file transfers, see the following topics:
 
--   <a href="../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>
--   <a href="../../accounts/useraccounts/t_st_create_user_account#Unlicens" class="MCXref xref">Create a user account</a>
--   <a href="../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates#Create" class="MCXref xref">Create a site template</a>
--   <a href="#Create" class="MCXref xref">Create or edit a business unit</a>
+-   [Configure adhoc file transfers](../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091)
+-   [Create a user account](../../accounts/useraccounts/t_st_create_user_account#Unlicens)
+-   [Create a site template](../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_sitetemplates#Create)
+-   [Create or edit a business unit](#Create)
 
-For information about configuring H2S file transfers, see <a href="../../accounts/c_st_subscriptions/t_st_subscriptions#Human" class="MCXref xref">Human to System type application</a>.
+For information about configuring H2S file transfers, see [Human to System type application](../../accounts/c_st_subscriptions/t_st_subscriptions#Human).
 
-{{< SecureTransport/componentshortname  >}} also supports system-to-human (S2H) file transfers. S2H file transfers are like other server-initiated file transfers, except the destination is a human, not a system. For example, the {{< SecureTransport/componentshortname  >}} server can upload a large file from another server and send it to an email recipient using an S2H transfer site. The recipient of an S2H file transfer uses the same procedures to retrieve the file as the recipient of an ad hoc H2H file transfer. For more information, see <a href="../../accounts/transfersites/transfersites-s2h#top" class="MCXref xref">System to Human transfer sites</a>.
+{{< SecureTransport/componentshortname  >}} also supports system-to-human (S2H) file transfers. S2H file transfers are like other server-initiated file transfers, except the destination is a human, not a system. For example, the {{< SecureTransport/componentshortname  >}} server can upload a large file from another server and send it to an email recipient using an S2H transfer site. The recipient of an S2H file transfer uses the same procedures to retrieve the file as the recipient of an ad hoc H2H file transfer. For more information, see [System to Human transfer sites](../../accounts/transfersites/transfersites-s2h#top).

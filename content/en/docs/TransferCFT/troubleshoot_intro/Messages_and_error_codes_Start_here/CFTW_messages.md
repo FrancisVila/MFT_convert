@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -191,7 +191,7 @@ set in the associated CFTRECV command.</p>         </td>
          <td><p>Explanation</p>         </td>
          <td><p>Indicates the ID of the CFTSEND or CFTRECV that was actually
 used.</p>
-<p><span class="bold_in_para">Example</span></p>
+<p><strong>Example</strong></p>
 <p>CFTW09I CFTSEND TRTR &lt;IDTU=A0000024 PART=SERVER IDF=TRTR IDT=I0714504 NIDF=TRTR XLATE=CONV1&gt;</p>         </td>
       </tr>
    </tbody>

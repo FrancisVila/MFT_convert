@@ -10,7 +10,7 @@
 
 **\[SPART = *string64*}\]**
 
-Network designation by which the local <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> identifies
+Network designation by which the local {{< TransferCFT/componentshortname  >}} identifies
 itself to its partner.
 
 If the NSPART parameter of the CFTPART OBJECT associated with SEND is

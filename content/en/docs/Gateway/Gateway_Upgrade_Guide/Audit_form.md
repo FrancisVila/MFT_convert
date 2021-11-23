@@ -20,7 +20,7 @@
    </tbody>
 </table>
 
-\(#\) Recover this information using the <span class="code">peladm –Identity </span>command or consult the <span class="code">\*.out</span> files.
+\(#\) Recover this information using the `peladm –Identity `command or consult the `*.out` files.
 
 (\*) Recover this information via the Gateway configuration menu.
 
@@ -55,7 +55,7 @@ Recover the following information via the Gateway configuration menu.
    </tbody>
 </table>
 
-Note that Password derived key file and Password encrypted file can be copied from 6.16.x or can be recreated using <span class="code">pelencpass </span>command.
+Note that Password derived key file and Password encrypted file can be copied from 6.16.x or can be recreated using `pelencpass `command.
 
 ## Protocols
 
@@ -194,15 +194,13 @@ Recover the following information via the Gateway **Configuration** menu.
 
 ## Connectors
 
-Recover the following information via the <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> **Configuration** menu.
+Recover the following information via the {{< Gateway/gatewayname  >}} **Configuration** menu.
 
 <table>
    <tbody>
       <tr>
          <td>Axway Integrator         </td>
-         <td><span style="font-weight: normal;">Address for the Integrator
-server:
-</span>         </td>
+         <td>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -342,8 +340,7 @@ Server CA:         </td>
 <table>
    <tbody>
       <tr>
-         <td><span style="font-weight: normal;">Programs that call the APIs:
-</span>         </td>
+         <td>         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -368,10 +365,10 @@ the Gateway configuration menu)<br />
       <tr>
          <td><p>Specific parameters set in the files</p>
 <ul>
-<li><span class="code">conffile </span></li>
-<li><span class="code">conffile.ini </span><br />
+<li><code>conffile </code></li>
+<li><code>conffile.ini </code><br />
 under Windows)</li>
-<li><span class="code">pelsetup.ini </span></li>
+<li><code>pelsetup.ini </code></li>
 </ul>         </td>
          <td>          </td>
       </tr>
@@ -380,8 +377,8 @@ under Windows)</li>
 
 ## Parameters defined via the Gateway Configuration menu
 
-Parameters defined via the Gateway Configuration menu can be recovered by copying <span class="code">\*.ini</span> files from <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> 6.16.x.
+Parameters defined via the Gateway Configuration menu can be recovered by copying `*.ini` files from {{< Gateway/gatewayname  >}} 6.16.x.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

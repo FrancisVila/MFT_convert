@@ -2,7 +2,7 @@
     "title": "Working with Users",
     "linkTitle": "Working with Users",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Creating a new User object](#creating_user)
 
@@ -26,7 +26,7 @@ To create a new User object:
 
 Security Management &gt; Access Control Management
 
-1.  Right-click the <span style="font-weight: bold;">User</span> sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.
+1.  Right-click the **User** sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.
 
 Gateway displays the <span style="font-style: italic;">New User</span> window.
 

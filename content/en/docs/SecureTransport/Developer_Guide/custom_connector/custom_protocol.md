@@ -493,7 +493,7 @@ For more information, see the documentation for the associated methods.
 
 The logged message appears in the {{< SecureTransport/componentshortname  >}} Server Log. It starts with the following pattern `[TRANSFER_SITE]:[plugin_name OR protocol_name]`.
 
-For more information about the third-party libraries logging, see <a href="" class="MCXref xref">Third-party libraries logging</a>.
+For more information about the third-party libraries logging, see [Third-party libraries logging]().
 
 <span id="Addition"></span>
 
@@ -575,7 +575,7 @@ After evaluation symbols '\\' are returned. Expression escaping is not supported
 
 If you want to load in expression evaluator the evaluation context, use the `loadExpressionService` method and pass the evaluation context. This context will be accessible using the following variable `${['<key>']}` or `${plugin.<key>}`, where `<key>` is existing key from the provided evaluation context. If `<key>` is one word, use `${plugin.<key>}` . Otherwise, use `${plugin['<key>']}`.  
 
-You can use a collection of already built-in functions in expression evaluator. For a full list with examples about the built-in functions, see <a href="" class="MCXref xref">Expression language support</a>.
+You can use a collection of already built-in functions in expression evaluator. For a full list with examples about the built-in functions, see [Expression language support]().
 
 > **Note:**
 >

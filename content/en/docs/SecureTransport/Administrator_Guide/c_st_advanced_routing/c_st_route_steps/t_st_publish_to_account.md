@@ -19,14 +19,14 @@
 
 The following topics provide detailed Publish To Account route step configuration information:
 
--   <a href="#File" class="MCXref xref">Input Files</a>
--   <a href="#Proceed" class="MCXref xref">Proceed with route execution on step failure</a>
--   <a href="#Target" class="MCXref xref">Target Settings</a>
--   <a href="#Post" class="MCXref xref">Post Routing Action</a>
+-   [Input Files](#File)
+-   [Proceed with route execution on step failure](#Proceed)
+-   [Target Settings](#Target)
+-   [Post Routing Action](#Post)
 
 **Related topic:**
 
--   <a href="../t_st_send_to_partner" class="MCXref xref">Send To Partner</a>
+-   [Send To Partner](../t_st_send_to_partner)
 
 <span id="File"></span>
 

@@ -17,5 +17,5 @@ When the data pump disabled, the installer will not deploy the database procedur
 
 **Related topics:**
 
--   <a href="../" class="MCXref xref">Requirements for Oracle databases</a>
--   <a href="../../requirements_for_sql_databases" class="MCXref xref">Requirements for Microsoft SQL Server databases</a>
+-   [Requirements for Oracle databases](../)
+-   [Requirements for Microsoft SQL Server databases](../../requirements_for_sql_databases)

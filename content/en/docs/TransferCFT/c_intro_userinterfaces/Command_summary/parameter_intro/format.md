@@ -10,12 +10,12 @@
 
 #### CFTLOG
 
-\[FORMAT = <span style="text-decoration: underline;">V23</span>
+\[FORMAT =
 | V24 \]
 
 Optional parameter. Indicates the format for log messages.
 
--   <span style="font-weight: bold;">V23 </span>(Default value): The Identifier’s
+-   **V23** (Default value): The Identifier’s
     length is truncated to 8 characters.
 -   <span style="font-weight: bold;">V24</span>: The complete Identifier is displayed.
     The length of the Identifier can be up to 32 characters. Some messages

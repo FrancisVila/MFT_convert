@@ -6,7 +6,7 @@
 
 ## Platforms
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is deployed on the operating systems and browsers listed in this information sheet.
+{{< TransferCFT/componentshortname  >}} is deployed on the operating systems and browsers listed in this information sheet.
 
 ### Operating systems for x64
 
@@ -113,11 +113,11 @@ Available on Linux-x64 and Windows x64
 
 ## Java
 
-If you are implementing either <span class="mc-variable suite_variables.TrustedFileName variable">TrustedFile</span> or <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> with <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, ensure that you have Java JRE 8 installed.
+If you are implementing either {{< TransferCFT/trustedfilename  >}} or {{< TransferCFT/securerelayname  >}} with {{< TransferCFT/transfercftname  >}}, ensure that you have Java JRE 8 installed.
 
 ## Standard defaults
 
-The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 <table>
    <thead>
@@ -148,7 +148,7 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
          <td>1766         </td>
       </tr>
       <tr>
-         <td>Transfer CFT UI (Copilot) server for <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>         </td>
+         <td>Transfer CFT UI (Copilot) server for {{< TransferCFT/centralgovernancename  >}}         </td>
          <td>1767         </td>
       </tr>
       <tr>
@@ -156,21 +156,21 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
          <td>1768         </td>
       </tr>
       <tr>
-         <td><span class="mc-variable Primary.CG or_UM variable">Central Governance</span>         </td>
+         <td>         </td>
          <td>12553         </td>
       </tr>
       <tr>
-         <td><span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> SSL         </td>
+         <td>{{< TransferCFT/centralgovernancename  >}} SSL         </td>
          <td>12554         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> MA</p>
+         <td><p>{{< TransferCFT/securerelayname  >}} MA</p>
 <p>ma.comm_port</p>         </td>
          <td><p> </p>
 <p>6801</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> RA</p>
+         <td><p>{{< TransferCFT/securerelayname  >}} RA</p>
 <ul>
 <li>ra.comm_port</li>
 <li>ra.admin_port</li>

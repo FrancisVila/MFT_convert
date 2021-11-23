@@ -125,9 +125,9 @@ an error has been detected in the source or target identifier in the header</p> 
 
 <span id="CFT_Numeric_codes___OFTP__ODETTE__protocol"></span>
 
-### <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Numeric codes - OFTP (ODETTE) protocol
+### {{< TransferCFT/componentshortname  >}} Numeric codes - OFTP (ODETTE) protocol
 
-These codes, specific to the ODETTE protocol and internal to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>,
+These codes, specific to the ODETTE protocol and internal to the {{< TransferCFT/componentshortname  >}},
 indicate the source of the failure. This code forms the DIAGP protocol diagnostic
 code. Values are expressed in hexadecimal.
 
@@ -207,7 +207,7 @@ negotiated</p>         </td>
       </tr>
       <tr>
          <td><p>0301</p>         </td>
-         <td><p>During the protocol recognition phase the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does
+         <td><p>During the protocol recognition phase the {{< TransferCFT/componentshortname  >}} does
 not receive the expected string: "ODETTE FTP READY"</p>         </td>
       </tr>
       <tr>
@@ -262,7 +262,7 @@ end</p>         </td>
       <tr>
          <td><p>0750</p>         </td>
          <td><p>Internal monitor error: attempt to send a DATA FPDU but
-the "credit" has been completely spent and the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is waiting
+the "credit" has been completely spent and the {{< TransferCFT/componentshortname  >}} is waiting
 for a CDT FPDU</p>         </td>
       </tr>
       <tr>
@@ -338,9 +338,9 @@ for a CDT FPDU</p>         </td>
 
 <span id="CFT_Mnemonic_codes___Odette_protocol"></span>
 
-### <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Mnemonic codes - ODETTE protocol
+### {{< TransferCFT/componentshortname  >}} Mnemonic codes - ODETTE protocol
 
-These codes, specific to the ODETTE protocol and internal to the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>,
+These codes, specific to the ODETTE protocol and internal to the {{< TransferCFT/transfercftname  >}},
 indicate the source of the fault.
 
 This code forms the "XXX HHHH"-type DIAGP protocol diagnostic

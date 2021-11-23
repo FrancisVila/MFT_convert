@@ -8,17 +8,17 @@ This section refers only to non multi-node architecture.
 
 You can use Central Governance to stop, start, check status, and restart a Transfer CFT, or alternatively use the administration commands and scripts provided in this section to manage the application.
 
-When opening a new session to manage your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, you must first set the environmental parameters. See <a href="#Set" class="MCXref xref">Set the Transfer CFT profile</a>.
+When opening a new session to manage your {{< TransferCFT/componentshortname  >}}, you must first set the environmental parameters. See <a href="#Set" class="MCXref xref">Set the Transfer CFT profile</a>.
 
--   [Start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server](#Start)
+-   [Start {{< TransferCFT/componentshortname >}} server](#Start)
     -   Standard start
     -   Force a start after an abnormal stop
     -   Start and suspend interactive mode
--   [Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server](#Stop__server)
+-   [Stop {{< TransferCFT/componentshortname >}} server](#Stop__server)
     -   Standard shutdown
     -   Quick stop
     -   Forced shutdown
--   [Restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>](#Restart_server)
+-   [Restart {{< TransferCFT/componentshortname >}}](#Restart_server)
 -   [Check Transfer CFT status](#Check)
 -   [Purge on Transfer CFT start](#Purge%20on%20Transfer%20CFT%C2%A0start)
 
@@ -39,15 +39,15 @@ When opening a new session to manage your <span class="mc-variable axway_variabl
 
 UNIX only
 
-To simplify the use of <span class="code">cft </span>commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../c_intro_userinterfaces/about_cftutil/autocomplete).
+To simplify the use of `cft `commands, you can use the autocomplete feature when working in interactive mode. See [Autocomplete](../../c_intro_userinterfaces/about_cftutil/autocomplete).
 
 <span id="Start"></span>
 
-## Start the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server
+## Start the {{< TransferCFT/componentshortname  >}} server
 
 <span id="Set"></span>
 
-### Set the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> profile
+### Set the {{< TransferCFT/componentshortname  >}} profile
 
 From your runtime directory prompt type:
 
@@ -96,11 +96,11 @@ Change profile (CHGPRF)
     Job description . . . . . . . . > CFTJOBD Name, *SAME
     Library . . . . . . . . . . . > CFTPROD Name, *LIBL, *CURLIB
 
-### Start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+### Start {{< TransferCFT/componentshortname  >}}
 
 #### Standard start
 
-Use the following command to start <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>after installation or stopping the server.
+Use the following command to start {{< TransferCFT/componentshortname  >}}after installation or stopping the server.
 
 
      cft start
@@ -109,7 +109,7 @@ In Windows only you can also use the Start menu or automatically start the serve
 
 #### Start and suspend interactive mode
 
-This mode launches the server, but freezes the session where you executed this start command. Closing this session automatically stops the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, and if the server is stopped the initiating session is unfrozen.
+This mode launches the server, but freezes the session where you executed this start command. Closing this session automatically stops the {{< TransferCFT/componentshortname  >}}, and if the server is stopped the initiating session is unfrozen.
 
 
 
@@ -117,7 +117,7 @@ This mode launches the server, but freezes the session where you executed this s
 
 #### Force a start after an abnormal stop
 
-If <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> was stopped abnormally, you can force a start using the following command. Notice though that this kills any <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> processes that were not previously stopped.
+If {{< TransferCFT/componentshortname  >}} was stopped abnormally, you can force a start using the following command. Notice though that this kills any {{< TransferCFT/componentshortname  >}} processes that were not previously stopped.
 
 
 
@@ -125,14 +125,14 @@ If <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
 
 <span id="Stop__server"></span>
 
-## Stop the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server
+## Stop the {{< TransferCFT/componentshortname  >}} server
 
 This program shuts down
 Transfer CFT, using either an immediate or delayed shutdown.
 
 #### Standard shutdown
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> completes all the transfers
+{{< TransferCFT/componentshortname  >}} completes all the transfers
 in process and shuts down. No new transfer is initialized.
 
 
@@ -156,7 +156,7 @@ them to D state (available). No pending transfers are activated.
 
 #### Forced  shutdown
 
-Immediate <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> shutdown occurs,
+Immediate {{< TransferCFT/componentshortname  >}} shutdown occurs,
 but without updating the transfer states. No pending transfers are activated.
 
 
@@ -167,7 +167,7 @@ but without updating the transfer states. No pending transfers are activated.
 
 ## Restart the server
 
-To restart the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> server use the following command. The behavior for in progress transfers depends on the setting defined for the FAST parameter (default=NO).
+To restart the {{< TransferCFT/componentshortname  >}} server use the following command. The behavior for in progress transfers depends on the setting defined for the FAST parameter (default=NO).
 
 
     CFTUTIL shut restart=yes
@@ -176,9 +176,9 @@ To restart the <span class="mc-variable axway_variables.Component_Short_Name var
 
 ## Check the system
 
-#### Check the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> status
+#### Check the {{< TransferCFT/componentshortname  >}} status
 
-To check the state of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sever, enter:
+To check the state of the {{< TransferCFT/componentshortname  >}} sever, enter:
 
 
     cft status  
@@ -201,19 +201,19 @@ To configure the Transfer CFT start-up PURGE option, set the uconf values for:
 
 #### Windows menus
 
-From the desktop <span class="bold_in_para">Start</span> menu, select<span class="bold_in_para"> All Programs &gt; Axway Software &gt;Axway &gt; &lt;product> &gt; Stop &lt;product></span>
+From the desktop **Start** menu, select **All Programs &gt; Axway Software &gt;Axway &gt; &lt;product> &gt; Stop &lt;product>**
 
 <span id="Service"></span>
 
 #### Service mode
 
-During installation you can elect to run most <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products as a Windows service, which causes the server to start and stop with the computer. When running a product as a Windows service, the only visual clues of the server status outside of the user interface are the application log files and the Windows computer management window.
+During installation you can elect to run most {{< TransferCFT/companyname  >}} products as a Windows service, which causes the server to start and stop with the computer. When running a product as a Windows service, the only visual clues of the server status outside of the user interface are the application log files and the Windows computer management window.
 
 If you installed the products in Windows service mode, you can start and stop most products with Windows already running as follows:
 
-1.  From the desktop, select <span class="bold_in_para">Start > Settings > Control Panel > Administrative Tools > Services</span>.
+1.  From the desktop, select **Start > Settings > Control Panel > Administrative Tools > Services**.
 2.  Scroll down the Services list and right-click the product.
-3.  From the menu, select <span class="bold_in_para">Start</span>.
+3.  From the menu, select **Start**.
 
 <span id="Multi-node_specific"></span>
 
@@ -243,17 +243,17 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 Enter the operator command:
 
 
-    /P <Transfer CFT Jobname>
+    /P <{{< TransferCFT/componentshortname >}} Jobname>
 
 \- or -
 
 
-    /F <Transfer CFT Jobname>,SHUT FAST=YES
+    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
 
-**Force** <span class="mc-variable axway_variables.Component_Short_Name variable" style="font-weight: bold;">Transfer CFT</span> **shut down**
+**Force** {{< TransferCFT/componentshortname  >}} **shut down**
 
 
-    /F <Transfer CFT Jobname>,SHUT FAST=KILL
+    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL
 
 #### Restart
 
@@ -266,7 +266,7 @@ The following command restarts Transfer CFT outside of a customized JCL. Enter 
 
 #### Perform a ping
 
-Use the CFTPING in the target.INSTALL library to ping your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+Use the CFTPING in the target.INSTALL library to ping your {{< TransferCFT/componentshortname  >}}.
 
 #### Check the Transfer CFT Copilot server status
 

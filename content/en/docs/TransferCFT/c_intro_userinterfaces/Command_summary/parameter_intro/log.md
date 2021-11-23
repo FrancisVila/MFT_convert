@@ -10,10 +10,10 @@
 
 \[LOG      = identifier\]
 
-Identifier for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> event
+Identifier for the {{< TransferCFT/componentshortname  >}} event
 log file description command (CFTLOG).
 
-If this parameter is not defined, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> writes logging
+If this parameter is not defined, {{< TransferCFT/componentshortname  >}} writes logging
 messages to the monitor's standard output.
 
  

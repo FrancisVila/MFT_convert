@@ -10,7 +10,7 @@ It is readable by the user via the Central Governance user interface or the CFTU
 
 You can customize either the rotate or switch procedure to archive and clean out old log files.
 
-On UNIX or Windows platforms the EXEC value is not mandatory, and by default an internal procedure is used. While there are several logging (CFTLOG) parameters that you can manage with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, if you need to modify the EXEC procedure you are required to use CFTUTIL.
+On UNIX or Windows platforms the EXEC value is not mandatory, and by default an internal procedure is used. While there are several logging (CFTLOG) parameters that you can manage with , if you need to modify the EXEC procedure you are required to use CFTUTIL.
 
 The rotate and switch procedures can use the symbolic variables, &FLOG,
 for the name of the log file.
@@ -25,7 +25,7 @@ To enable the internal log rotation procedure, leave the EXEC parameter set to e
 
 #### Use a custom log rotation procedure
 
-To create a custom log rotation procedure, you can use the sample file `rotate.cmd`, which is delivered with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in the &lt;runtime/exec> directory, as a basis for your own procedure.
+To create a custom log rotation procedure, you can use the sample file `rotate.cmd`, which is delivered with {{< TransferCFT/componentshortname  >}} in the &lt;runtime/exec> directory, as a basis for your own procedure.
 
 ### Switch procedure
 
@@ -37,7 +37,7 @@ You can manage the switch procedure using various methods that include, but not 
 
 <!-- -->
 
--   Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+-   Archiving: Transfer CFT log files are stored in the runtime directory, log file names are cftlog-&lt;timestamp> where timestamp is the date and time the switch procedure switch.cmd is triggered by {{< TransferCFT/componentshortname >}}.
 
 > **Note:**
 >
@@ -59,14 +59,14 @@ A file can automatically be switched to another file by means of one of 4 events
     written in the current log file exceeds the limit set by the MAXREC parameter
     or, depending on the OS, the file is full
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
+-   {{< TransferCFT/componentshortname >}} is
     shut down via the SHUT command  
 
     > **Note:**
     >
     > To customize the switch that occurs when Transfer CFT shuts down, modify the UCONF parameter cft.cftlog.switch\_on\_stop=YES (the default value is NO).
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is
+-   {{< TransferCFT/componentshortname >}} is
     activated
 
 #### Limit entries in the log
@@ -75,14 +75,14 @@ For each transfer, there are multiple messages generated. You can significantly 
 
 #### Sending log messages to Sentinel
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sends log messages to Sentinel or Central Governance, you can filter by the level of severity according to its type: warning, error, or fatal error. For example, to send only FATAL errors you could set the following value:
+When {{< TransferCFT/componentshortname  >}} sends log messages to Sentinel or Central Governance, you can filter by the level of severity according to its type: warning, error, or fatal error. For example, to send only FATAL errors you could set the following value:
 
 
     UCONFSET id=sentinel.xfb.log,value=F
 
 ## Creating an exclusion log filter
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can filter log messages according to predefined filters to exclude certain types of messages. To create a filter, customize the following uconf parameters to create the required filter pattern with one or more of the following characteristics:
+{{< TransferCFT/componentshortname  >}} can filter log messages according to predefined filters to exclude certain types of messages. To create a filter, customize the following uconf parameters to create the required filter pattern with one or more of the following characteristics:
 
 -   cft.server.log.exclude\_filters = ID1 ID2 ID3
     -   Space separated list of filter identifiers
@@ -113,7 +113,7 @@ If you need to check the current switch hour for the log, using CFTUTIL enter:
 
     mquery name=command
 
-Then enter the <span class="code">listlog </span>command:
+Then enter the `listlog `command:
 
 
 
@@ -136,12 +136,12 @@ This results in the switch being executed automatically every night at midnight,
 
 -   The `cftlog` file in the `$CFTDIRLOG `folder (runtime/log) that has no extension is the current day's log.
 -   The` cftlog.n` is the log file corresponding to the current day *- n* days. For example, if today is Sunday, `cftlog.2` would be Friday's log file.
--   There are a total of 7 log files in the folder, one for each day, as the <span class="code">backup\_count</span> value is 6 (6 backups plus 1 current).
+-   There are a total of 7 log files in the folder, one for each day, as the `backup_count` value is 6 (6 backups plus 1 current).
 
 ## Configure log to switch only when the current file is full
 
 If you would like to switch the log file only when the maximum number of records is reached, and not automatically switch on starting, set the following:
 
 1.  Using CFTUTIL, set the following uconf values:
-2.  Modify the <span class="code">CFTLOG </span>object by setting the predetermined number of records, the <span class="code">MAXREC </span>parameter. When this value is reached the log is switched.
+2.  Modify the `CFTLOG `object by setting the predetermined number of records, the `MAXREC `parameter. When this value is reached the log is switched.
 3.  Restart after modifying values.

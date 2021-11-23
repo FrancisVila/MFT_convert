@@ -93,6 +93,6 @@ for
 
 ## Improve the file layer service reliability
 
-Setting the uconf c<span class="code">ft.server.transfer.raise\_error\_when\_exec\_not\_found </span>parameter to <span class="code">Yes </span>(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
+Setting the uconf c`ft.server.transfer.raise_error_when_exec_not_found `parameter to `Yes `(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
 
 This parameter is applicable to both post-processing (EXEC and EXECE) and ack-processing (ACKEXEC) procedures.

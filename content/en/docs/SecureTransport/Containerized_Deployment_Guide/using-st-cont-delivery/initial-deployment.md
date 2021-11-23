@@ -11,13 +11,13 @@
 
 ## Deploying SecureTransport Edge
 
-1.  Complete the relevant tasks as described in section <a href="../deployment-prerequisites" class="MCXref xref">Deployment prerequisites</a>.
-2.  Obtain the example configuration by cloning the <a href="https://github.com/Axway/docker-st" class="MCXref xref">SecureTransport GitHub Repo</a>.
-3.  Prepare the external database as described in <a href="../deployment-prerequisites#ExternalDB" class="MCXref xref">External Database Requirements</a>.
+1.  Complete the relevant tasks as described in section [Deployment prerequisites](../deployment-prerequisites).
+2.  Obtain the example configuration by cloning the [SecureTransport GitHub Repo](https://github.com/Axway/docker-st).
+3.  Prepare the external database as described in [External Database Requirements](../deployment-prerequisites#ExternalDB).
 4.  Configure the load balancer:  
     1.  Create Kubernetes namespace using the following command: `kubectl create namespace <namespace>`
     2.  Configuring the client connections load balancer:
-        1.  Modify the `haproxy.cfg` located in `/edge/example-configuration/HaProxy/client/haproxy.cfg`. Set the `<Headless service FQDN of ST server>` to the headless service FQDN of the SecureTransport Edge for all the services that will be used, others must be removed. If FTP is configured, please see secton <a href="../initial-config#ftpPassive" class="MCXref xref">FTP Passive Mode</a>.  
+        1.  Modify the `haproxy.cfg` located in `/edge/example-configuration/HaProxy/client/haproxy.cfg`. Set the `<Headless service FQDN of ST server>` to the headless service FQDN of the SecureTransport Edge for all the services that will be used, others must be removed. If FTP is configured, please see secton [FTP Passive Mode](../initial-config#ftpPassive).  
             Example: `st-edge.<namespace>.svc.cluster.local`
         2.  Modify the `haproxy.yaml` file located in `/edge/example-configuration/HaProxy/client/haproxy.yaml`. Set the `<namespace>` to the namespace created in step 4.a. Set ports for nodePort parameters for the services that will be used, others must be removed.
     3.  Configuring the streaming connections load balancer:
@@ -41,10 +41,10 @@
         3.  On the Linux machine where HaProxy was setup execute the following command `systemctl start haproxy`. It can also be deployed in docker using the following command:  
             `docker run --rm -d -v <folder-containing-haproxy.cfg>:/usr/local/etc/haproxy/ -p <port>:<port> haproxy`
 5.  Prepare the configuration files for SecureTransport Edge:  
-    1.  Create the secret file and encrypted password for the database (see <a href="../deployment-prerequisites#SecretFile" class="MCXref xref">Secret file</a>).
+    1.  Create the secret file and encrypted password for the database (see [Secret file](../deployment-prerequisites#SecretFile)).
     2.  Upload a copy of the `taeh` file a dedicated location, e.g. `edge/runtime/secrets`.
-    3.  Prepare `db.conf` file using the encrypted database password from step 3. and all the database info (see <a href="../deployment-prerequisites#dbConfig" class="MCXref xref">Prepare database configuration file (db.conf)</a>) and upload it to a dedicated location, e.g. `/edge/runtime/secrets/`
-    4.  *Optional step:* - prepare `STStartScriptsConfig` file (see <a href="../deployment-prerequisites#StartScript" class="MCXref xref">Startup scripts configuration options</a>) and upload it a dedicated location, e.g. `/edge/runtime/secrets/`.
+    3.  Prepare `db.conf` file using the encrypted database password from step 3. and all the database info (see [Prepare database configuration file (db.conf)](../deployment-prerequisites#dbConfig)) and upload it to a dedicated location, e.g. `/edge/runtime/secrets/`
+    4.  *Optional step:* - prepare `STStartScriptsConfig` file (see [Startup scripts configuration options](../deployment-prerequisites#StartScript)) and upload it a dedicated location, e.g. `/edge/runtime/secrets/`.
     5.  Prepare SecureTransport feature and core licenses as per your database and put them respectively in `st.license` and `filedrive.license` files and upload them a dedicated location, e.g. `/edge/runtime/secrets/`
     6.  Create Kubernetes secret with the needed files using the command:  
         `kubectl create secret generic st-edge-secret -n <st-namespace> --from-file=./taeh --from-file=./db.conf --from-file=./st.license --from-file=filedrive.license`  
@@ -63,13 +63,13 @@
 
 ## Deploying SecureTransport Server
 
-1.  Complete the relevant tasks as described in section <a href="../deployment-prerequisites" class="MCXref xref">Deployment prerequisites</a>.
+1.  Complete the relevant tasks as described in section [Deployment prerequisites](../deployment-prerequisites).
 2.  Obtain the example configuration by cloning the [SecureTransport GitHub Repo](https://github.com/Axway/docker-st).
-3.  Prepare the <a href="../deployment-prerequisites#ExternalDB" class="MCXref xref">External Database Requirements</a>.
+3.  Prepare the [External Database Requirements](../deployment-prerequisites#ExternalDB).
 4.  Configure the load balancer for Administration Tool and client connections to protocol daemons, if any.
     1.  Create Kubernetes namespace using the following command `kubectl create namespace <namespace>`.
     2.  Configuring the client connections load balancer:
-        1.  Modify the `haproxy.cfg` located in `/server/example-configuration/HaProxy/haproxy.cfg`. Set the `<Headless service FQDN of ST server>` to the headless service FQDN of the SecureTransport server for all the services that will be used, others must be removed. If FTP is configured please see the <a href="../initial-config#ftpPassive" class="MCXref xref">FTP Passive Mode</a> section.  
+        1.  Modify the `haproxy.cfg` located in `/server/example-configuration/HaProxy/haproxy.cfg`. Set the `<Headless service FQDN of ST server>` to the headless service FQDN of the SecureTransport server for all the services that will be used, others must be removed. If FTP is configured please see the [FTP Passive Mode](../initial-config#ftpPassive) section.  
             Example: `st-server.<namespace>.svc.cluster.local`
         2.  Modify the `haproxy.yaml` located in `/server/example-configuration/HaProxy/haproxy.yaml`. Set the `<namespace>` to the namespace created in step 4.a. Set ports for nodePort parameters for the services that will be used, others must be removed.
     3.  Create secret containing the `haproxy.cfg` file for HAProxy:
@@ -86,17 +86,17 @@
         2.  On the Linux machine where HaProxy was setup execute the following command `systemctl` start haproxy. It can also be deployed in docker using the following command:  
             `docker run --rm -d -v <folder-containing-haproxy.cfg>:/usr/local/etc/haproxy/ -p <port>:<port> haproxy`.
 5.  Prepare the configuration files for SecureTransport Server:  
-    1.  Create the secret file and encrypted password for the database (see section <a href="../deployment-prerequisites#SecretFile" class="MCXref xref">Secret file</a>)
+    1.  Create the secret file and encrypted password for the database (see section [Secret file](../deployment-prerequisites#SecretFile))
     2.  Upload a copy of the `taeh` file in a dedicated location, e.g. `/server/runtime/secrets`
-    3.  Prepare `db.conf` file using the encrypted database password from step 3.a and all the database info (see <a href="../deployment-prerequisites#dbConfig" class="MCXref xref">Prepare database configuration file (db.conf)</a>) and upload it to a dedicated location, e.g. `/server/runtime/secrets/`
-    4.  *Optional step:* Prepare the `STStartScriptsConfig` file (see <a href="../deployment-prerequisites#StartScript" class="MCXref xref">Startup scripts configuration options</a>) and upload it to a dedicated location, e.g. `/server/runtime/secrets`
+    3.  Prepare `db.conf` file using the encrypted database password from step 3.a and all the database info (see [Prepare database configuration file (db.conf)](../deployment-prerequisites#dbConfig)) and upload it to a dedicated location, e.g. `/server/runtime/secrets/`
+    4.  *Optional step:* Prepare the `STStartScriptsConfig` file (see [Startup scripts configuration options](../deployment-prerequisites#StartScript)) and upload it to a dedicated location, e.g. `/server/runtime/secrets`
     5.  Prepare SecureTransport feature and core licenses as per your database and put them respectively in the `st.license` and `filedrive.license` files and upload them to a dedicated location, e.g. `/server/runtime/secrets`
     6.  Create Kubernetes secret with the needed files:  
         `kubectl create secret generic st-server-secret -n <st-namespace> --from-file=./taeh --from-file=./db.conf --from-file=./st.license --from-file=filedrive.license`  
         Note that the command should be executed where the files are located (e.g. `runtime/secrets`)  
         If SSL connection to the database is used, the certificate file should be supplied in the Kubernetes secret and add at the end of the command: `--from-file=./<certificate>`  
         **Note** If you are using the start script in the Kubernetes secret as prepared in the optional step, then add at the end of the command: `--from-file=./STStartScriptsConfig`  
-        **Note** If performance tuning is applied, the above mentioned files should be also added to the command `(--from-file=./database_configuration_components.xml --from-file=./hibernate-cache-config.xml --from-file=./scheduler.properties --from-file=./coherence-cache-config-tm.xml)`. See <a href="../deployment-prerequisites#PerfTuning" class="MCXref xref">Performance tuning</a>.
+        **Note** If performance tuning is applied, the above mentioned files should be also added to the command `(--from-file=./database_configuration_components.xml --from-file=./hibernate-cache-config.xml --from-file=./scheduler.properties --from-file=./coherence-cache-config-tm.xml)`. See [Performance tuning](../deployment-prerequisites#PerfTuning).
     7.  Modify the `st-server-kubernetes.yml` located in `/server/example-configuration/Kubernetes/`:
         1.  Replace all occurances of `<namespace>` with the namespace created in 2.b.
         2.  Set the image to `securetransport-server:<tag>`
@@ -105,7 +105,7 @@
         5.  Comment the Liveness and Readiness probes by placing `#` in front of each respective line.
     8.  Deploy the SecureTransport server - `kubectl create -f st-server-kubernetes.yml` (from the folder where `st-server-kubernetes.yml` file is located)
     9.  Verify that the container is started - `kubectl get pods -n <st-namespace>`.
-    10. After successful start of the SecureTransport Server, log in to the Administration Tool and configure the streaming network zone for all enabled protocols pointing to the SecureTransport Edge load balancer IP/FQDN. For more information on setting up a network zone, see the <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/c_st_networkZones.htm" class="MCXref xref">SecureTransport {{< SecureTransport/componentversion  >}} Administrator guide</a>.
+    10. After successful start of the SecureTransport Server, log in to the Administration Tool and configure the streaming network zone for all enabled protocols pointing to the SecureTransport Edge load balancer IP/FQDN. For more information on setting up a network zone, see the [SecureTransport {{< SecureTransport/componentversion >}} Administrator guide](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/setup/c_st_networkZones.htm).
 6.  After finishing all the configuration remove the comments from the Liveness and readiness checks and apply the changes to the `StatefulSet - kubectl apply -f st-server-kubernetes.yml`.
 
 ## Kubernetes readiness and liveness checks
@@ -170,4 +170,4 @@ Graceful shutdown of protocol daemons is supported for SecureTransport Edges, wh
 >
 > During the graceful shutdown of Edge container, the number of containers cannot be increased until the current terminating pod is stopped.
 
-*next topic:* <a href="../initial-config" class="MCXref xref">Configure the deployment</a>
+*next topic:* [Configure the deployment](../initial-config)

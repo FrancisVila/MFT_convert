@@ -126,7 +126,7 @@ algorithm</li>
 </ul>
 <p>This list is submitted to the server which then makes its
 selection, depending on the client's preference.</p>
-<p><span class="autonumber"><span></span></span><span id="Supported_suites"></span>Supported suites</p>
+<p><span id="Supported_suites"></span>Supported suites</p>
 <table>
    <thead>
       <tr>

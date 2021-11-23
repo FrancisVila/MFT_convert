@@ -2,7 +2,7 @@
     "title": "Upload and restore the installation files",
     "linkTitle": "Upload and restore installation files",
     "weight": "180"
-}This section describes the upload and restore options available for Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> for the IBM i platform to perform prior to installation, using FTP and the RSTLIB command.
+}This section describes the upload and restore options available for Transfer CFT {{< TransferCFT/releasenumber  >}} for the IBM i platform to perform prior to installation, using FTP and the RSTLIB command.
 
 Before starting a Transfer CFT session, you must add the value \*none in the initial program call to call a screen menu directly. Otherwise the session cannot start.
 
@@ -12,7 +12,7 @@ Before starting a Transfer CFT session, you must add the value \*none in the ini
 
 Begin the installation process by uploading the Transfer CFT installation package, in binary mode, to the IBM i system:
 
-1.  Log in with the <span class="bold_in_para">CFTINST </span>user.
+1.  Log in with the **CFTINST** user.
 
 2.  Create a temporary library:  
 

@@ -35,13 +35,13 @@ In a Secure Relay / DMZ configuration:
 
 ## Secure Relay architecture
 
-<span class="mc-variable suite_variables.DocNameSUITESupportedPlatforms variable">Axway Supported Platforms</span> Guide is divided into two basic components parts:
+{{< Gateway/docnamesuitesupportedplatforms  >}} Guide is divided into two basic components parts:
 
 -   Secure Relay Master Agent   
-    The <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Master Agent is a component that resides with and is fully integrated in the <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> product. All of the processes that support <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> functions are automatically included in <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> on installation.
--   <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agent   
-    The <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agent is a stand-alone component. You install the <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Router Agent on a machine located in the DMZ, independently of Gateway.
+    The {{< Gateway/securerelayname >}} Master Agent is a component that resides with and is fully integrated in the {{< Gateway/componentshortname >}} product. All of the processes that support {{< Gateway/securerelayname >}} functions are automatically included in {{< Gateway/componentshortname >}} on installation.
+-   {{< Gateway/securerelayname >}} Router Agent   
+    The {{< Gateway/securerelayname >}} Router Agent is a stand-alone component. You install the {{< Gateway/securerelayname >}} Router Agent on a machine located in the DMZ, independently of Gateway.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

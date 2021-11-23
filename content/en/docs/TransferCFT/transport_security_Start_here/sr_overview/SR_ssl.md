@@ -7,9 +7,9 @@
 -   End-to-end SSL: The remote peer communicates with Transfer CFT via Secure Relay (RA) using end-to-end SSL.
 -   SSL termination: The remote peer communicates with Secure Relay (RA) through an SSL channel. In this scenario, the handshake occurs between the remote peer and the Secure Relay RA. The RA retrieves the key and certificate stored in Transfer CFT through the Master Agent (MA) in order to complete the handshake.
 
-The communication between the Master Agent (MA) and <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> occurs over a plain-text channel.
+The communication between the Master Agent (MA) and {{< TransferCFT/componentlongname  >}} occurs over a plain-text channel.
 
-<span class="autonumber"></span>End-to-end SSL compared with SSL termination
+End-to-end SSL compared with SSL termination
 
 ![](/Images/TransferCFT/sr_schema.png)
 
@@ -30,7 +30,7 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
     -   TYPE=TCP
     -   PROTOCOL=SR
 2.  Define the mandatory parameters RECALLHOST, HOST, and SSLTERM.
-    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT when<span style="color: #ff0000;"> </span>Secure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
+    -   RECALLHOST: The host address on which the Master Agent calls Transfer CFT whenSecure Relay receives an incoming call. If Transfer CFT and the Master Agent run of the same host, use the loopback network interface (for example, 127.0.0.1) instead of the public network interface.
     -   HOST: Designates the network interface that is used on the Router Agent side.
     -   SSLTERM: Set this Boolean to NO for end-to-end SSL.
 
@@ -157,12 +157,12 @@ This is an example of the CFTPART and CFTTCP objects configuration, using PESITS
 #### Prerequisites
 
 -   You require an installed Secure Relay Router Agent 2.7.3 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.3 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
--   Your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> license key requires the FIPS option.
+-   Your {{< TransferCFT/componentlongname >}} license key requires the FIPS option.
 
-#### Configure the Master Agent in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>
+#### Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
 
-1.  Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the <span class="code">iaik\_jce-3.16.jar</span> file as `iaik_jce-3.16.unused.`
-2.  Move the <span class="code">entrust-toolkit-8.0.36.jar</span> file from the <span class="code">$CFTDIRINSTALL/distrib/xsr/fips</span> folder to the <span class="code">$CFTDIRINSTALL/distrib/xsr/</span> folder.
+1.  Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar` file as `iaik_jce-3.16.unused.`
+2.  Move the `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
 
 ## SSL termination with Secure Relay
 

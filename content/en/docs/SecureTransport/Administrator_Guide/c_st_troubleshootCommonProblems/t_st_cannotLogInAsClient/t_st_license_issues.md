@@ -8,7 +8,7 @@ To view server licenses:
 
 1.  Open the {{< SecureTransport/componentshortname >}} Administration Tool and select **Setup > Server License**.
 2.  Verify that the license is installed and not expired by checking the **Core Server License** for the FTP and HTTP servers, user accounts, and ad hoc users and the **Features License** for AS2, SSH, and Connect:Direct protocols and the SiteMinder feature.
-3.  If your license has passed the expiration date, contact {{< SecureTransport/companyname >}} Global Support to renew it. For details, see <a href="#top" class="MCXref xref">Get more help</a>.
+3.  If your license has passed the expiration date, contact {{< SecureTransport/companyname >}} Global Support to renew it. For details, see [Get more help](#top).
 
 For each license type, the validity period is given in the **Valid from** and **Valid to** fields. Check the following items if your license is valid.
 
@@ -25,10 +25,10 @@ For each license type, the validity period is given in the **Valid from** and **
 
 **Related topics:**
 
--   <a href="../t_st_connectivity_to_server_failed" class="MCXref xref">Connectivity to server failed</a>
--   <a href="../t_st_siteminder_issues" class="MCXref xref">SiteMinder issues</a>
--   <a href="../c_st_ldap_issues" class="MCXref xref">LDAP issues</a>
--   <a href="../c_st_file_system_commands_not_functional" class="MCXref xref">File system commands not functional</a>
--   <a href="../c_st_cannot_log_edge" class="MCXref xref">Cannot log in to SecureTransport Edge</a>
--   <a href="../c_st_client_certificate_authentication_fails" class="MCXref xref">Client certificate authentication fails</a>
--   <a href="../c_st_session_terminates_due_to_csrf_protection" class="MCXref xref">Session terminates due to CSRF protection</a>
+-   [Connectivity to server failed](../t_st_connectivity_to_server_failed)
+-   [SiteMinder issues](../t_st_siteminder_issues)
+-   [LDAP issues](../c_st_ldap_issues)
+-   [File system commands not functional](../c_st_file_system_commands_not_functional)
+-   [Cannot log in to SecureTransport Edge](../c_st_cannot_log_edge)
+-   [Client certificate authentication fails](../c_st_client_certificate_authentication_fails)
+-   [Session terminates due to CSRF protection](../c_st_session_terminates_due_to_csrf_protection)

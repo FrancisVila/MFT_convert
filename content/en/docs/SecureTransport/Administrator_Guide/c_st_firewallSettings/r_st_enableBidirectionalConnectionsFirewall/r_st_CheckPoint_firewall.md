@@ -17,5 +17,5 @@ As the Check Point documentation states, the FTP\_BASIC protocol type was introd
 
 **Related topics:**
 
--   <a href="../r_st_cisco_pix_firewall" class="MCXref xref">Cisco PIX firewall</a>
--   <a href="../r_st_raptor_firewall" class="MCXref xref">Raptor firewall</a>
+-   [Cisco PIX firewall](../r_st_cisco_pix_firewall)
+-   [Raptor firewall](../r_st_raptor_firewall)

@@ -2,7 +2,7 @@
     "title": "Certificates and keys",
     "linkTitle": "Certificates and Keys",
     "weight": "160"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [About certificates and keys](#About_certificates)
 
@@ -46,7 +46,7 @@ A certificate (more precisely, an X.509 certificate as defined by ISO) is a data
 -   Provides information about the owner
 -   Links the owner to a public key
 
-To ensure that this information is correct, a third party referred to as the <span style="font-style: italic;">Certificate Authority</span>, or <span style="font-style: italic;">CA</span>, signs the whole certificate. In other words, data is hashed and the generated hash is encrypted using an asymmetric algorithm such as DSA or RSA. The CA owns a public/private key pair. It uses its private key to create the certificate signature and makes its public key (required to decrypt the signature) available to anyone through its own certificate.
+To ensure that this information is correct, a third party referred to as the *Certificate Authority*, or *CA*, signs the whole certificate. In other words, data is hashed and the generated hash is encrypted using an asymmetric algorithm such as DSA or RSA. The CA owns a public/private key pair. It uses its private key to create the certificate signature and makes its public key (required to decrypt the signature) available to anyone through its own certificate.
 
 <span id="Certificate_fields"></span>
 
@@ -61,7 +61,7 @@ Every certificate comprises:
 
 ### Data section
 
-The <span style="font-weight: bold;">data section</span> includes the following information:
+The **data section** includes the following information:
 
 <table>
          

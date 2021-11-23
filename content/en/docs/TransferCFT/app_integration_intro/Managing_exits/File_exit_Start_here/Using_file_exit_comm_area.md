@@ -53,7 +53,7 @@ current field </p>         </td>
       </tr>
       <tr>
          <td><p>x</p>         </td>
-         <td><p>This field can be modified by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>This field can be modified by the {{< TransferCFT/componentshortname  >}}
 (before the call) or by the user function (after the call) </p>         </td>
       </tr>
       <tr>
@@ -93,7 +93,7 @@ the stages at which you want to take control by defining the masc parameter.
          <td><p>File access:</p>
 <ul>
 <li>0: controlled
-by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></li>
+by {{< TransferCFT/componentshortname  >}}</li>
 <li>1: controlled
 by the user</li>
 </ul>         </td>
@@ -2189,16 +2189,16 @@ and end of transfer </li>
 
 At the sender end, DIRECT =
 S, the user function is called before the record is sent to the
-remote site, and after the record is read if <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> manages file
+remote site, and after the record is read if {{< TransferCFT/componentshortname  >}} manages file
 accessing. If file accessing is managed by the user function, the latter
 has to read the record and define the ldata field as well as the zdata
-parameter before handing back control to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+parameter before handing back control to {{< TransferCFT/componentshortname  >}}.
 
 At the receiver end, DIRECT = R,
 the user function is called after the record is received, and before the
-record is written if <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> manages file accessing. If file accessing
+record is written if {{< TransferCFT/componentshortname  >}} manages file accessing. If file accessing
 is managed by the user function, the latter has to write the record before
-handing back control to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+handing back control to {{< TransferCFT/componentshortname  >}}.
 
 At this stage (DATA\_TYP) and before the record is sent or after it is
 received, the user function can perform the following operations:
@@ -2234,7 +2234,7 @@ The previous record becomes the last one</li>
 <li>9 = refusal
 and end of transfer</li>
 </ul>
-<p>If file accessing is managed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:</p>
+<p>If file accessing is managed by {{< TransferCFT/componentshortname  >}}:</p>
 <ul>
 <li>1 = record
 modified<br />
@@ -2246,11 +2246,11 @@ or more records inserted<br />
 At the time the first record is inserted, you can save the current
 record in the zwork working area before handing back control to Transfer
 CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined
-by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in the following DATA_TYP stages and the user can continue
+by {{< TransferCFT/componentshortname  >}} in the following DATA_TYP stages and the user can continue
 to insert as many records as required.</li>
 <li>3 = record
 deleted <br />
-On returning from the user function, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> ignores the current
+On returning from the user function, {{< TransferCFT/componentshortname  >}} ignores the current
 record. The record is not sent when in send mode, and not written into
 the file when in receive mode.</li>
 </ul>         </td>
@@ -2274,9 +2274,9 @@ the file when in receive mode.</li>
 
 Records are compressed as a result of a negotiation between the sender
 partner and the receiver partner. At the
-sender end, records are compressed before being sent by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. At the receiver end, the
-records are decompressed by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> immediately after
-they are received. The records <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supplies to the user function
+sender end, records are compressed before being sent by the {{< TransferCFT/componentshortname  >}}. At the receiver end, the
+records are decompressed by the {{< TransferCFT/componentshortname  >}} immediately after
+they are received. The records {{< TransferCFT/componentshortname  >}} supplies to the user function
 are never in compressed form.
 
 The ncomp field designates the compression algorithm used. The default

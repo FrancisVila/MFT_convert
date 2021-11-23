@@ -8,6 +8,6 @@ You cannot install more than one instance of {{< SecureTransport/componentshortn
 
 The following topics provide how to instructions for installing {{< SecureTransport/componentshortname  >}} on Windows platforms:
 
--   <a href="install_to_use_embedded_database" class="MCXref xref">Install SecureTransport on Windows with the embedded database</a>
--   <a href="install_on_windows_with_external_database" class="MCXref xref">Install SecureTransport Server on Windows with an external database</a>
--   <a href="cancel_windows_installation" class="MCXref xref">Cancel the Windows installation</a>
+-   [Install SecureTransport on Windows with the embedded database](install_to_use_embedded_database)
+-   [Install SecureTransport Server on Windows with an external database](install_on_windows_with_external_database)
+-   [Cancel the Windows installation](cancel_windows_installation)

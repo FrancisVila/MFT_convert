@@ -78,8 +78,8 @@ Syntax
 Where:
 
 -   `CFTPART_ID` is the identifier of the partner to deactivate. To deactivate several partners with a single command, use wildcard characters or meta characters.
--   <span style="font-family: 'Courier New';">Mode</span> is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
--   When <span class="code">FORCE </span>is set to <span class="code">YES</span>, stops any transfers in progress involving the deactivated partners.
+-   is the mode to be deactivated, with values: "BOTH" , "B", "REQUESTER", "R" , "SERVER", "S"
+-   When `FORCE `is set to `YES`, stops any transfers in progress involving the deactivated partners.
 
 Example
 
@@ -102,7 +102,7 @@ When a partner is deactivated, transfers awaiting processing are:
 -   Refused in server mode
 
 The state of a transfer request awaiting execution in requester mode
-for a deactivated partner remains <span style="font-weight: bold;">D</span>,
+for a deactivated partner remains **D**,
 with a diagnostic code 430 and a protocol diagnostic INACT.
 
 The state of a transfer request awaiting execution in server mode for

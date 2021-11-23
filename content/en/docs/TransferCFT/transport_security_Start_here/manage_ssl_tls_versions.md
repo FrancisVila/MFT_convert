@@ -2,7 +2,7 @@
     "title": "Managing SSL and TLS versions",
     "linkTitle": "Manage SSL and TLS versions",
     "weight": "180"
-}This section describes how to manage the SSL and TLS versions, and enable compatibility mode if needed. Additionally, it provides details on TLS use with <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.
+}This section describes how to manage the SSL and TLS versions, and enable compatibility mode if needed. Additionally, it provides details on TLS use with {{< TransferCFT/componentlongname  >}}.
 
 ## SSL/TLS parameters
 
@@ -17,7 +17,7 @@ cft.ssl\_version\_min: This UCONF parameter sets the minimum SSL version that Tr
 
 cft.ssl\_version\_max: This UCONF parameter sets the maximum SSL version that Transfer CFT will accept when communicating with another partner, as either client or server. The default value for this parameter is TLS 1.2.
 
-### About <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> SSL connections
+### About {{< TransferCFT/hflongproductname  >}} SSL connections
 
 In Transfer CFT, the SSL/TLS version is proposed by the client and negotiated with the server.
 
@@ -41,7 +41,7 @@ In server mode, the header length is automatically detected for all SSL versions
 
 The Transfer CFT SSL version is by default set to TLS 1.0 when transferring files. To use a higher version of TLS, set the cft.ssl.version\_max parameter to the appropriate version. For example, to use TLS version 1.2 set the UCONF value to cft.ssl.version\_max=tls\_1.2.
 
-However, by default Copilot and <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> use TLS 1.2 for all connections.
+However, by default Copilot and use TLS 1.2 for all connections.
 
 ## Interoperability with Transfer CFT versions lower than 3.2.1
 
@@ -104,7 +104,7 @@ For *SSL 3.0 Protocol Vulnerability and POODLE attack* (CVE-2014-3566) details, 
 
 ## TLS Server Name Indication (SNI)
 
-Server Name Indication (SNI) is an extension of the TLS protocol, and is used to indicate which hostname the client attempts to connect to at the beginning of the handshake process. In Transfer CFT, set the UCONF parameter <span class="code">ssl.extension.enable\_sni </span>to <span class="code">yes </span>to enable SNI for all TLS connections.
+Server Name Indication (SNI) is an extension of the TLS protocol, and is used to indicate which hostname the client attempts to connect to at the beginning of the handshake process. In Transfer CFT, set the UCONF parameter `ssl.extension.enable_sni `to `yes `to enable SNI for all TLS connections.
 
 ## TLS limitation
 

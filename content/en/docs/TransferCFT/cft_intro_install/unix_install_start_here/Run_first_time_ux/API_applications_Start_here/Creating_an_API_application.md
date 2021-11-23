@@ -2,17 +2,17 @@
     "title": "Creating  an API application",
     "linkTitle": "Creating an API application",
     "weight": "210"
-}The example provided below was designed for the <span class="bold_in_para">cft-tcp.conf</span> configuration example located in *&lt;installdir>/runtime/conf/*. For
+}The example provided below was designed for the **cft-tcp.conf** configuration example located in *&lt;installdir>/runtime/conf/*. For
 this example, you should have already customized this file using the method described in *Running
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> for the first time*.
+{{< TransferCFT/componentshortname  >}} for the first time*.
 
 ## Application components
 
 The *&lt;installdir>/runtime/src/capi* subdirectory contains the:
 
 -   Sample source module,
-    called *apixmp1.c*, which interacts with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. This program
-    reads the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog and displays its contents in part or in
+    called *apixmp1.c*, which interacts with {{< TransferCFT/componentshortname >}}. This program
+    reads the {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line
 -   *makefile*
     compilation procedure, which uses the *apixmp1.c* sample source module
@@ -21,13 +21,12 @@ The *&lt;installdir>/runtime/src/capi* subdirectory contains the:
 The *&lt;installdir>/lib* subdirectory contains the:
 
 -   *libcftapi.a*
-    module required to use <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> APIs
+    module required to use {{< TransferCFT/componentshortname >}} APIs
 
 To generate the *APIXMP1* sample program, proceed as follows.
 
 1.  Access the *&lt;installdir>/runtime/src/capi* directory.
-2.  Enter the command:  <span style="font-weight: bold;">
-    <span class="code">make</span></span>
+2.  Enter the command:   **<span class="code">make</span>**
 
 ## Testing the configuration
 

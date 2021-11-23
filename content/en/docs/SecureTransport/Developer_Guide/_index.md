@@ -13,19 +13,19 @@
 
 ## For new users
 
-<a href="overview" class="MCXref xref">Introduction</a>
+[Introduction](overview)
 
-<a href="custom_connector/transfer_sites" class="MCXref xref">What is a Transfer site?</a>
+[What is a Transfer site?](custom_connector/transfer_sites)
 
-<a href="custom_connector/plug_transfer_sites" class="MCXref xref">What is a Pluggable Transfer Site</a>
+[What is a Pluggable Transfer Site](custom_connector/plug_transfer_sites)
 
 ## For existing users
 
-<a href="custom_connector/implement_interface" class="MCXref xref">Implement a user interface</a>
+[Implement a user interface](custom_connector/implement_interface)
 
-<a href="custom_connector/custom_protocol" class="MCXref xref">Implement a custom protocol connector</a>
+[Implement a custom protocol connector](custom_connector/custom_protocol)
 
-<a href="custom_connector/deploy_connector" class="MCXref xref">Deploy a custom protocol connector</a>
+[Deploy a custom protocol connector](custom_connector/deploy_connector)
 
 ## Get more help
 

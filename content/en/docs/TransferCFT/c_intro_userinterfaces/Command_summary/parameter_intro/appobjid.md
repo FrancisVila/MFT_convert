@@ -18,8 +18,8 @@ application events.
 The possible values of this parameter include:
 
 -   XFB.Transfer
-    This tracked object describes <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> file and message transfers
+    This tracked object describes {{< TransferCFT/componentshortname >}} file and message transfers
 -   XFB.Log This
-    tracked object describes the contents of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log files
+    tracked object describes the contents of {{< TransferCFT/componentshortname >}} log files
 
 [Return to Command index](../../)

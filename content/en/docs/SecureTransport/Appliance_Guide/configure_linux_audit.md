@@ -4,7 +4,7 @@
     "weight": "100"
 }Use the following procedure to configure the Linux audit framework. The Linux audit framework is disabled by default.
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **H**, Hardening & Security.
 3.  On the Hardening & Security menu, type **L**, Linux Audit Framework.
@@ -29,7 +29,7 @@
           </tr>
           <tr>
              <td><p>Rules for 'auditctl'</p>         </td>
-             <td><p>Set the audit framework rules. For more information, see <a href="#Configur" class="MCXref xref">Configure audit framework rules</a>.</p>         </td>
+             <td><p>Set the audit framework rules. For more information, see <a href="#Configur">Configure audit framework rules</a>.</p>         </td>
           </tr>
           <tr>
              <td><p>Log File</p>         </td>
@@ -112,7 +112,7 @@ By configuring the Linux audit framework rules, you can specify which system com
 
 Use the following procedure to access the Configuration of Linux Audit Framework (LAF) screen:
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **H**, Hardening & Security.
 3.  On the Hardening & Security menu, type **L**, Linux Audit Framework.

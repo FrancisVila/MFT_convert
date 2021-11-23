@@ -48,7 +48,7 @@ Each line in the log display includes the following information:
 -   Operation - The type of operation that changed the object. The value can be `Create`, `Delete`, `Overwrite`, or `Update`.  
     When you add a user class, it is added as the first user class as shown on the *User Classes* page. The audit log shows an update for each user classes, because adding a class changes the `Order` attribute for every class.
 -   Comment - Additional information added by {{< SecureTransport/componentshortname >}} or the administrator who made the change.
--   All Audit Log actions are reported into the Server Log as audit information messages and administrators can configure the audit messages to be logged into the {{< SecureTransport/securetransportname >}} database or a flat file using standard `log4j` configurations. The audit information messages in the Server Log can be machine read and analyzed, while the messages on the *Audit Log* page require interaction to identify what property has changed. The audit messages in the Server Log can also be filtered by the AUDIT component filter. For additional Server Log information, refer to <a href="../t_st_serverlog" class="MCXref xref">Server log</a>.
+-   All Audit Log actions are reported into the Server Log as audit information messages and administrators can configure the audit messages to be logged into the {{< SecureTransport/securetransportname >}} database or a flat file using standard `log4j` configurations. The audit information messages in the Server Log can be machine read and analyzed, while the messages on the *Audit Log* page require interaction to identify what property has changed. The audit messages in the Server Log can also be filtered by the AUDIT component filter. For additional Server Log information, refer to [Server log](../t_st_serverlog).
 
 The audit information messages are based on the `auditLogEntry` object data. The audit information messages are in the following format:
 
@@ -65,11 +65,11 @@ Where:
 
 The following topics describe managing the audit logs:
 
--   <a href="t_st_search_view_audit_log_contents" class="MCXref xref">Search and view audit log contents</a> - Describes viewing and searching the audit log contents.
--   <a href="t_st_enable_disable_audit_logging" class="MCXref xref">Enable or disable audit logging</a> - Provides how-to instructions on enabling and disabling audit logging.
--   <a href="t_st_export_results_audit_log_search" class="MCXref xref">Export the results of an audit log search</a> - Provides how-to instructions on exporting the results of an audit log search.
--   <a href="t_st_add_edit_audit_log_entry_comment" class="MCXref xref">Add or edit an audit log entry comment</a> - Provides how-to introductions on adding or editing an audit log entry comment.
--   <a href="t_st_display_audit_log_entry_details" class="MCXref xref">Display audit log entry details</a> - Provides how-to instructions on displaying audit log entry details.
--   <a href="t_st_compare_audit_log_entries" class="MCXref xref">Compare audit log entries</a> - Provides how-to instructions on comparing audit log entries.
--   <a href="t_st_link_to_audit_log" class="MCXref xref">Link to the audit log</a> - Describes the {{< SecureTransport/componentshortname >}} Administration Tool links to the audit log.
--   <a href="c_st_audit_log_maintenance_application" class="MCXref xref">Audit Log Maintenance application</a> - Describes the Audit Log Maintenance application.
+-   [Search and view audit log contents](t_st_search_view_audit_log_contents) - Describes viewing and searching the audit log contents.
+-   [Enable or disable audit logging](t_st_enable_disable_audit_logging) - Provides how-to instructions on enabling and disabling audit logging.
+-   [Export the results of an audit log search](t_st_export_results_audit_log_search) - Provides how-to instructions on exporting the results of an audit log search.
+-   [Add or edit an audit log entry comment](t_st_add_edit_audit_log_entry_comment) - Provides how-to introductions on adding or editing an audit log entry comment.
+-   [Display audit log entry details](t_st_display_audit_log_entry_details) - Provides how-to instructions on displaying audit log entry details.
+-   [Compare audit log entries](t_st_compare_audit_log_entries) - Provides how-to instructions on comparing audit log entries.
+-   [Link to the audit log](t_st_link_to_audit_log) - Describes the {{< SecureTransport/componentshortname >}} Administration Tool links to the audit log.
+-   [Audit Log Maintenance application](c_st_audit_log_maintenance_application) - Describes the Audit Log Maintenance application.

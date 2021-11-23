@@ -16,12 +16,12 @@ Set a home folder for each real user to ensure that the user is not logged into 
 
 The following topics describe real users on UNIX and on Windows:
 
--   <a href="#Real_UNIX" class="MCXref xref">Real users on UNIX</a>
--   <a href="#Real_Windows" class="MCXref xref">Real users on Windows</a>
+-   [Real users on UNIX](#Real_UNIX)
+-   [Real users on Windows](#Real_Windows)
 
 **Related topic:**
 
--   <a href="../t_st_passwordfiles" class="MCXref xref">Manage password files</a>
+-   [Manage password files](../t_st_passwordfiles)
 
 <span id="Real_UNIX"></span>
 
@@ -49,4 +49,4 @@ For more information on Windows users, refer to the Microsoft documentation.
 >
 > The specified real user needs to added in a password vault file. For more information, refer to Add a user to a password vault.
 
-When {{< SecureTransport/componentshortname  >}} is running on a Windows platform, the *Password Files* page provides an additional option to specify password vaults. A password vault stores user names and passwords of real users on Windows, is used to mimic virtual users on Windows, and is applicable only for Windows. See <a href="../t_st_passwordfiles#top" class="MCXref xref">Manage password files</a>
+When {{< SecureTransport/componentshortname  >}} is running on a Windows platform, the *Password Files* page provides an additional option to specify password vaults. A password vault stores user names and passwords of real users on Windows, is used to mimic virtual users on Windows, and is applicable only for Windows. See [Manage password files](../t_st_passwordfiles#top)

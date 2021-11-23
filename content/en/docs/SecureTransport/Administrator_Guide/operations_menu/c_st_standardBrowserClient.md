@@ -67,7 +67,7 @@ The following table provides information on the macro strings that are supported
    <tbody>
       <tr>
          <td>FDX_CHANGE_PASSWORD_MSGS         </td>
-         <td>The policy used in changing passwords. It is replaced by one of four FDX Messages (see <a href="#FDX_MESSAGE" class="MCXref xref">FDX_MESSAGE</a>).         </td>
+         <td>The policy used in changing passwords. It is replaced by one of four FDX Messages (see <a href="#FDX_MESSAGE">FDX_MESSAGE</a>).         </td>
          <td>Used only on the <em>Change Passwords</em> page.         </td>
       </tr>
       <tr>
@@ -104,7 +104,7 @@ The following table provides information on the macro strings that are supported
       <tr>
          <td><span id="FDX_LIST_PARENT_DIR"></span>FDX_LIST_PARENT_DIR         </td>
          <td>The directory hierarchy of the current directory.         </td>
-         <td><p>This is an alternative to <a href="#FDX_PARENT_DIR_FUNC" class="MCXref xref">FDX_PARENT_DIR_FUNC</a>, which displays the directory structure as it is displayed in the default template.</p>
+         <td><p>This is an alternative to <a href="#FDX_PARENT_DIR_FUNC">FDX_PARENT_DIR_FUNC</a>, which displays the directory structure as it is displayed in the default template.</p>
 <p>Used on the <em>List</em> page only.</p>         </td>
       </tr>
       <tr>
@@ -116,14 +116,14 @@ The following table provides information on the macro strings that are supported
       <tr>
          <td>FDX_OPTIONS_PARENT_DIR         </td>
          <td>The directory structure of the current directory.         </td>
-         <td><p>An alternative to <a href="#FDX_PARENT_DIR_FUNC" class="MCXref xref">FDX_PARENT_DIR_FUNC</a>, which displays the directory structure as it is displayed in the default template.</p>
+         <td><p>An alternative to <a href="#FDX_PARENT_DIR_FUNC">FDX_PARENT_DIR_FUNC</a>, which displays the directory structure as it is displayed in the default template.</p>
 <p>Used only on the <em>Options</em> page.</p>         </td>
       </tr>
       <tr>
          <td><span id="FDX_PARENT_DIR_FUNC"></span>FDX_PARENT_DIR_FUNC         </td>
          <td><code>ParentDirFunc("DirName", "DirURL")</code>         </td>
          <td><p><em>DirName</em> – the name of parent directory.</p>
-<p><em>DirURL</em> – the name of parent directory which is sent as a URL. This string is an alternative to <a href="#FDX_LIST_PARENT_DIR" class="MCXref xref">FDX_LIST_PARENT_DIR</a>, which can be edited.</p>
+<p><em>DirURL</em> – the name of parent directory which is sent as a URL. This string is an alternative to <a href="#FDX_LIST_PARENT_DIR">FDX_LIST_PARENT_DIR</a>, which can be edited.</p>
 <p>Used in the <em>List</em> and <em>Options</em> pages.</p>         </td>
       </tr>
       <tr>

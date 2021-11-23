@@ -22,9 +22,9 @@ You can also set up passive address rules, which allow the {{< SecureTransport/c
 
 The following sections provide how-to instructions for adding and editing a passive mode address rules and insuring that passive mode sessions are initiated on the correct system:
 
--   <a href="#Add" class="MCXref xref">Add passive mode address rules</a>
--   <a href="#Edit" class="MCXref xref">Edit a passive mode address rule</a>
--   <a href="#Assure" class="MCXref xref">Assure that passive mode sessions are initiated on the correct system</a>
+-   [Add passive mode address rules](#Add)
+-   [Edit a passive mode address rule](#Edit)
+-   [Assure that passive mode sessions are initiated on the correct system](#Assure)
 
 <span id="Add"></span>
 
@@ -57,8 +57,8 @@ When clients open passive mode sessions though a load balancer, a client communi
 
 **Related topics:**
 
--   <a href="../t_st_ftpservermessages" class="MCXref xref">FTP server messages</a>
--   <a href="../t_st_ftpactivemode" class="MCXref xref">Set up FTP active mode</a>
--   <a href="../r_st_ftpserverlimitations" class="MCXref xref">FTP server limitations</a>
--   <a href="../t_st_improveftpperformance" class="MCXref xref">Improve FTP performance on a multi-homed system</a>
--   <a href="../t_st_increaseftptimeout" class="MCXref xref">Increase the timeout for large files using server-initiated transfer</a>
+-   [FTP server messages](../t_st_ftpservermessages)
+-   [Set up FTP active mode](../t_st_ftpactivemode)
+-   [FTP server limitations](../r_st_ftpserverlimitations)
+-   [Improve FTP performance on a multi-homed system](../t_st_improveftpperformance)
+-   [Increase the timeout for large files using server-initiated transfer](../t_st_increaseftptimeout)

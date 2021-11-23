@@ -2,11 +2,11 @@
     "title": "PassPort AM",
     "linkTitle": "PassPort AM",
     "weight": "150"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 ## About PassPort AM
 
-Axway PassPort AM centralizes the management of users for all products of the <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span> platform. If you have installed PassPort AM, you can use it to define all your users and profiles. Gateway can then connect to PassPort AM to check user permissions.
+Axway PassPort AM centralizes the management of users for all products of the {{< Gateway/platformorsuiteshortname  >}} platform. If you have installed PassPort AM, you can use it to define all your users and profiles. Gateway can then connect to PassPort AM to check user permissions.
 
 PassPort AM provides control of:
 
@@ -27,7 +27,7 @@ There are some differences between using Gateway and PassPort AM for managing us
 
 ### Component Security Descriptor (CSD) file
 
-For each <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span> component, PassPort AM uses an XML-format Component Security Descriptor (CSD) file. Each CSD file contains access definitions relating to a specific <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">Axway Platform</span> component.
+For each {{< Gateway/platformorsuiteshortname  >}} component, PassPort AM uses an XML-format Component Security Descriptor (CSD) file. Each CSD file contains access definitions relating to a specific {{< Gateway/platformorsuiteshortname  >}} component.
 
 The CSD file for Gateway contains information about:
 
@@ -202,7 +202,7 @@ The CSD file for Gateway is provided with PassPort AM. After installing Gateway 
    </tbody>
 </table>
 
-<span style="font-weight: bold;">Note:</span> The actions available depend on the resource.
+**Note:** The actions available depend on the resource.
 
 Related topics
 

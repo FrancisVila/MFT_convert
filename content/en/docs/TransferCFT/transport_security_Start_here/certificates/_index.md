@@ -12,7 +12,7 @@ describes security certificates, and the following security concepts:
 
 ## Central Governance certificate management
 
-When using Transfer CFT with Central Governance, certificate management is performed by <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. See [ <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
+When using Transfer CFT with Central Governance, certificate management is performed by {{< TransferCFT/centralgovernancename  >}}. See [ {{< TransferCFT/centralgovernancename  >}} registration concepts](../../governance_services_intro/cg_register_overview) for details on certificates during installation and registration.
 
 ## What is a certificate?
 
@@ -237,6 +237,6 @@ an argument in the PKICER command.
 
 ## Complete CA certificate chains
 
-In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
 For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>

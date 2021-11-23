@@ -2,10 +2,7 @@
     "title": "Communication  media ",
     "linkTitle": "CFTCOM - Communication media ",
     "weight": "250"
-}<span style="color: #800000; font-weight: normal; text-decoration: none;">Related
-topics</span>
-
--   Command syntax
+}-   Command syntax
     [CFTCOM](../../../c_intro_userinterfaces/command_summary#CFTCOM)
 -   Parameter list
     [CFTCOM](../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftcom)
@@ -14,17 +11,17 @@ topics</span>
 
 ## About the communication media CFTCOM
 
-The CFTCOM object defines the communication media used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+The CFTCOM object defines the communication media used by {{< TransferCFT/componentshortname  >}}.
 You can define as many CFTCOM objects as needed. Depending on the system,
 you can set the communication medium to:
 
 -   One or more shared
     files: requests are entered in a file, which is periodically scanned
-    by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    by the {{< TransferCFT/componentshortname >}}
 -   A synchronous communication
     medium supported by the local TCP/IP network (for remote usage, use REST API)
 
-<span style="font-weight: bold;">z/OS</span>: You must define one communication
+**z/OS**: You must define one communication
 file for BATCH/TSO applications and one for CICS applications, if needed.
 
 <span style="font-weight: bold;">Windows</span>: On a LAN, requests

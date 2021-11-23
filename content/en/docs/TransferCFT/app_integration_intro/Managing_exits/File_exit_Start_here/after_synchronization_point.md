@@ -10,14 +10,14 @@
 
 For the receiver, a file type
 EXIT (DIRECT = R) with file accessing managed by the user, the
-user function has to return to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> the value of the synchronization
+user function has to return to {{< TransferCFT/componentshortname  >}} the value of the synchronization
 point, the number of records and the number of bytes written in the file.
 This information is used by the monitor to complete the catalog entry
 and is supplied to the user function during the RESTART\_TYP stage.
 
 At the sender end for a file type
-EXIT (DIRECT = S) or if file accessing is managed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> has all the information required to set a synchronization
+EXIT (DIRECT = S) or if file accessing is managed by {{< TransferCFT/componentshortname  >}}, the
+{{< TransferCFT/componentshortname  >}} has all the information required to set a synchronization
 point.
 
 ### Fields to define
@@ -39,7 +39,7 @@ ok</li>
 <li>9: refusal
 and end of transfer</li>
 </ul>
-<p>If file accessing is managed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:</p>
+<p>If file accessing is managed by {{< TransferCFT/componentshortname  >}}:</p>
 <ul>
 <li>1: record
 modified</li>

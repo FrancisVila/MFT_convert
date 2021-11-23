@@ -83,7 +83,7 @@ Example 4
 
 Use the [content](../../../c_intro_userinterfaces/command_summary/parameter_intro/content) parameter to define output properties:
 
-<span class="code">LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS</span>
+`LISTUCONF CONTENT=EXTRACT|DEBUG|PROPS`
 
 Where:
 
@@ -95,4 +95,4 @@ Example 5
 
 To output the content into a file use with the [FOUT](../../../c_intro_userinterfaces/command_summary/parameter_intro/fout) parameter:
 
-<span class="code">CFTUTIL LISTUCONF FOUT=fname</span>
+`CFTUTIL LISTUCONF FOUT=fname`

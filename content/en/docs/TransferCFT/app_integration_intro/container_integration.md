@@ -4,7 +4,7 @@
     "weight": "200"
 }This page is intended to help you understand the various ways to use Transfer CFT and associated applications in a container environment, providing a high level overview of the possible integration architectures.
 
-You may want to review the two methods  for installing and operating a containerized <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, using either [Docker Compose or Kubernetes with Helm](../../cft_intro_install/install_container).
+You may want to review the two methods  for installing and operating a containerized {{< TransferCFT/transfercftname  >}}, using either [Docker Compose or Kubernetes with Helm](../../cft_intro_install/install_container).
 
 ## Kubernetes concepts
 
@@ -34,30 +34,30 @@ Your producer/consumer application integration with Transfer CFT is based on:
 
 There are 3 possible file storage implementations when you have Transfer CFT as a container along with a producer/consumer application.
 
-#### <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> is the application sidecar
+#### {{< TransferCFT/transfercftname  >}} is the application sidecar
 
-The application and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> run in the same pod but in different containers. Both the data produced/consumed by the application and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> reside on a persistent volume attached to a node where the pod is running. The persistent volume supports ReadWriteOnce access mode and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
+The application and {{< TransferCFT/transfercftname  >}} run in the same pod but in different containers. Both the data produced/consumed by the application and {{< TransferCFT/transfercftname  >}} reside on a persistent volume attached to a node where the pod is running. The persistent volume supports ReadWriteOnce access mode and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
 
-<span class="autonumber"></span>Sidecar architecture                     <img src="/Images/TransferCFT/pod1.png" class="maxWidth" />
+Sidecar architecture                     <img src="/Images/TransferCFT/pod1.png" class="maxWidth" />
 
-#### <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> and the application run on different pods but on the same node
+#### {{< TransferCFT/transfercftname  >}} and the application run on different pods but on the same node
 
-The application and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> run on different pods on the same node. If using a local volume, both pods must run on the same node. Both the data produced and consumed by the application and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> reside on a persistent volume attached to the node where the pods are running. The persistent volume supports ReadWriteOnce access mode, and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
+The application and {{< TransferCFT/transfercftname  >}} run on different pods on the same node. If using a local volume, both pods must run on the same node. Both the data produced and consumed by the application and {{< TransferCFT/transfercftname  >}} reside on a persistent volume attached to the node where the pods are running. The persistent volume supports ReadWriteOnce access mode, and is a local volume (AWS ESB, GCEPersistentDisk, AzureDisk).
 
-<span class="autonumber"></span>Two pods one node architecture            <img src="/Images/TransferCFT/pod2.png" class="maxWidth" />
+Two pods one node architecture            <img src="/Images/TransferCFT/pod2.png" class="maxWidth" />
 
-<span class="autonumber"></span> 
+ 
 
 <span id="__RefHeading___Toc2647_2515630742"></span>
 
-#### <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> and the application run on different nodes
+#### {{< TransferCFT/transfercftname  >}} and the application run on different nodes
 
-The application and <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> run on different nodes both of which support the **ReadWriteMany** access mode, where:
+The application and {{< TransferCFT/transfercftname  >}} run on different nodes both of which support the **ReadWriteMany** access mode, where:
 
 -   The Transfer CFT data resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...).
 -   The data produced and consumed by the application resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...) or cloud storage (AWS S3, GCS). In this implementation, you configure the cloud storage at the flow deployment level, not in the product deployment.
 
-<span class="autonumber"></span>Two pods two nodes architecture                    <img src="/Images/TransferCFT/pod3.png" class="maxWidth" />
+Two pods two nodes architecture                    <img src="/Images/TransferCFT/pod3.png" class="maxWidth" />
 
 <span id="__RefHeading___Toc2649_2515630742"></span>
 

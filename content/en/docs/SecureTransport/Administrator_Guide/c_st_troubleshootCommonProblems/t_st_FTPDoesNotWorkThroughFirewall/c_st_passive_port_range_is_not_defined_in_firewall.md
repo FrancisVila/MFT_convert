@@ -14,5 +14,5 @@ If you are using {{< SecureTransport/companyname  >}} Secure Client, you can use
 
 **Related topics:**
 
--   <a href="../c_st_firewall_rules_prevent_port_from_opening" class="MCXref xref">Firewall rules prevent the port from opening</a>
--   <a href="../c_st_checkpoint_firewall_is_not_configured_for_bidirectional_transfers" class="MCXref xref">Check Point firewall is not configured for bidirectional transfers</a>
+-   [Firewall rules prevent the port from opening](../c_st_firewall_rules_prevent_port_from_opening)
+-   [Check Point firewall is not configured for bidirectional transfers](../c_st_checkpoint_firewall_is_not_configured_for_bidirectional_transfers)

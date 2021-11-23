@@ -14,7 +14,7 @@ PeSIT, OS**
 
 File record format defined in protocol terms:
 
--   <span style="font-weight: bold;">F</span>: fixed
+-   **F**: fixed
 -   <span style="font-weight: bold;">V</span>: variable
 -   <span style="font-weight: bold;">U</span>: undefined
 

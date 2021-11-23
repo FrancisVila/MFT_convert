@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -55,7 +55,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>The stored commands can only be retrieved by restarting <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. First purge the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog (and modify the retention dates, for example).</p>         </td>
+         <td><p>The stored commands can only be retrieved by restarting {{< TransferCFT/componentshortname  >}}. First purge the {{< TransferCFT/componentshortname  >}} catalog (and modify the retention dates, for example).</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -195,7 +195,7 @@ Information         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td><p>Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> startup, or at the time set for the daily purge. For example:</p>
+         <td><p>Possible values for &amp;str are described here. The following messages are displayed when the catalog is purged on {{< TransferCFT/componentshortname  >}} startup, or at the time set for the daily purge. For example:</p>
 <p>When there are no transfers to delete:</p>
 <div class="indentTableNested">
 <p>Purge Started<br />
@@ -218,7 +218,7 @@ Purge deleted=2 treated=2(25) match=100<br />
 Purge deleted=8 treated=8(100) match=100<br />
 Purge Treated.</p>
 </div>
-<p>When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> starts:</p>
+<p>When {{< TransferCFT/componentshortname  >}} starts:</p>
 <div class="indentTableNested">
 <p>If there are no transfers to delete:</p>
 <div class="indentTableNested">
@@ -336,7 +336,7 @@ is followed by the CFTX01W message.</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>This <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message is displayed for each transfer that is deleted when the catalog is purged. Where:</p>
+         <td><p>This {{< TransferCFT/componentshortname  >}} message is displayed for each transfer that is deleted when the catalog is purged. Where:</p>
 <ul>
 <li>&amp;state = transfer status (C/D/H/K/T/X)</li>
 <li>&amp;direct = S (send) / R (recv)</li>
@@ -396,7 +396,7 @@ is followed by the CFTX01W message.</p>
          <td><p>V23 format</p>
 <p>V24 format</p>
 <p>Error</p>         </td>
-         <td><p><span id="CFTC13E"></span>CFTC13E <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog resize (xxxx --&gt; yyyy) reached max before expansion</p>
+         <td><p><span id="CFTC13E"></span>CFTC13E {{< TransferCFT/componentshortname  >}} catalog resize (xxxx --&gt; yyyy) reached max before expansion</p>
 <p>CFTC13I Catalog resize (xxxx --&gt; yyyy) done</p>         </td>
       </tr>
       <tr>
@@ -423,7 +423,7 @@ is followed by the CFTX01W message.</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Set the uconf parameter <span class="code">cft.cftcat.enable_deprecated_blknum=Yes</span> to enable BLKNUM.</p>
+         <td><p>Set the uconf parameter <code>cft.cftcat.enable_deprecated_blknum=Yes</code> to enable BLKNUM.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>Regardless of the cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.</p>
@@ -453,7 +453,7 @@ Catalog Alert fill threshold reached: level=&amp;level , id=CAT0</p>
          <td><p>&amp;level of the catalog space has been used. &amp;level is the amount
 set by the CFTCAT TLVWARN parameter.</p>
 <p>When the critical fill threshold is reached, a message
-is recorded in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log.</p>
+is recorded in the {{< TransferCFT/componentshortname  >}} log.</p>
 <p>A batch in response to the alert, the CFTCAT TLVWEXEC parameter,
 is submitted.</p>         </td>
       </tr>

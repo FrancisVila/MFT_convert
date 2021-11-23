@@ -2,7 +2,7 @@
     "title": "TM server communication rules",
     "linkTitle": "TM server communication rules",
     "weight": "330"
-}Network zones define the server ports that the TM Servers running on {{< SecureTransport/componentshortname  >}} Servers in the secure network connect to on the {{< SecureTransport/componentshortname  >}} Edge servers running in the peripheral network (DMZ). See <a href="../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>.
+}Network zones define the server ports that the TM Servers running on {{< SecureTransport/componentshortname  >}} Servers in the secure network connect to on the {{< SecureTransport/componentshortname  >}} Edge servers running in the peripheral network (DMZ). See [Communication across Transaction Manager, protocol, and proxy servers](../../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202).
 
 <table>
    <thead>
@@ -114,10 +114,10 @@ Note that in SecureTransport Edge deployment, port 20444 (used by the Administra
 
 **Related topics:**
 
--   <a href="../r_st_protocol_rules" class="MCXref xref">Protocol rules</a>
--   <a href="../r_st_authentication_rules" class="MCXref xref">Authentication rules</a>
--   <a href="../r_st_administration_rules" class="MCXref xref">Administration rules</a>
--   <a href="../r_st_server_transfer_rules" class="MCXref xref">Server transfer rules</a>
--   <a href="../r_st_standard_clustering_rules" class="MCXref xref">Standard Cluster rules</a>
--   <a href="../r_st_large_enterprise_clustering_rules" class="MCXref xref">Enterprise Cluster rules</a>
--   <a href="../r_st_protocol_rules_outbound" class="MCXref xref">Protocol rules - outbound from SecureTransport Edge</a>
+-   [Protocol rules](../r_st_protocol_rules)
+-   [Authentication rules](../r_st_authentication_rules)
+-   [Administration rules](../r_st_administration_rules)
+-   [Server transfer rules](../r_st_server_transfer_rules)
+-   [Standard Cluster rules](../r_st_standard_clustering_rules)
+-   [Enterprise Cluster rules](../r_st_large_enterprise_clustering_rules)
+-   [Protocol rules - outbound from SecureTransport Edge](../r_st_protocol_rules_outbound)

@@ -2,36 +2,36 @@
     "title": "Access Management using Flow Manager",
     "linkTitle": "Flow Manager access management ",
     "weight": "150"
-}You can use <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> to define and control Transfer CFT access management as described in the following sections.
+}You can use {{< TransferCFT/flowmanager  >}} to define and control Transfer CFT access management as described in the following sections.
 
 How it works
 
-If you have opted to use the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> access management, after configuring both <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> and <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>:
+If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCFT/transfercftname  >}} access management, after configuring both {{< TransferCFT/transfercftname  >}} and {{< TransferCFT/flowmanager  >}}:
 
-1.  A user logs in via the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI, CFTUTIL, or other.
-2.  A login request is sent to <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
-3.  If the login is successful, <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> returns the list of roles for the user.
+1.  A user logs in via the {{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
+2.  A login request is sent to {{< TransferCFT/flowmanager >}}.
+3.  If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.
 4.  The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
 > **Note:**
 >
 > All role and permission definitions are stored in CFTPARM.
 
-However, if you are an <span class="code">am.superuser</span> user, <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation, this user is automatically added to the UCONF <span class="code">am.superuser</span> parameter's list.
+However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
 
-See also, <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
+See also, {{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
 <img src="/Images/TransferCFT/cg_am.jpg" class="mediumWidth" />
 
 Limitations
 
--   <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> ROLES are stored on <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> in upper case. This means that if you create roles **XXX** and **Xxx** on <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, there is only one ROLE in <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>, which is <span class="code">ID=XXX</span>.
+-   {{< TransferCFT/hflongproductname >}} ROLES are stored on {{< TransferCFT/hflongproductname >}} in upper case. This means that if you create roles **XXX** and **Xxx** on {{< TransferCFT/flowmanager >}}, there is only one ROLE in {{< TransferCFT/hflongproductname >}}, which is `ID=XXX`.
 
 <span id="Using"></span>
 
 ## Using roles and privileges
 
-The <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> method of access management impacts two <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> objects that are defined in the CFTPARM database: roles (CFTROLE) and privileges (CFTPRIV). You assign these roles and privileges in <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, which are then deployed on Transfer CFT.
+The {{< TransferCFT/flowmanager  >}} method of access management impacts two {{< TransferCFT/transfercftname  >}} objects that are defined in the CFTPARM database: roles (CFTROLE) and privileges (CFTPRIV). You assign these roles and privileges in {{< TransferCFT/flowmanager  >}}, which are then deployed on Transfer CFT.
 
 Conversely, you can create roles and privileges locally in Transfer CFT, as you do with other objects.
 
@@ -153,7 +153,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples <span class="code">PART </span>and <span class="code">ID </span>are properties of the resource being checked. As you can see, you can use parenthesis and logical operators <span class="code">&&</span> (AND) and <span class="code">||</span> (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
 
 
 
@@ -445,14 +445,14 @@ In this use case, you assign the user a role that references a privilege having 
 -   ACTIONS = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
 -   CONDITION = ' IDF=="MYIDF" && PART=="MYPART" '
 
-The following is an example of the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> configuration for this use case (the ROLE must exist in <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 
 
-    CFTROLE      ID          = 'TRANSFER-ROLE',
+    CFTROLE      ID          = '',
                  COMMENT     = '',
     /*           ALIASES     = ( ) ,*/
-                 PRIVS       = ( 'PRIV-XFER-SPE',
+                 PRIVS       = ( '',
                                   'PRIV-CONN-INTERFACES',
                                   'CONFIGURATION:CFTCOM_VIEW',
                                   'CONFIGURATION:CFTPARM_VIEW',
@@ -489,7 +489,7 @@ The following is an example of the <span class="mc-variable suite_variables.Tran
                                   'AM:RIGHTS_VIEW_SELF'),
                   MODE        = 'REPLACE'
      
-    CFTPRIV       ID          = 'PRIV-XFER-SPE',
+    CFTPRIV       ID          = '',
                   COMMENT     = 'PRIV limits transfers - no delete condition',
                   RESOURCE    = 'TRANSFER',
                   ACTIONS     = ( 'CREATE',
@@ -512,15 +512,15 @@ In this use case, you assign the user role that refers to a privilege having the
 -   ACTIONS = ( 'CONNECT' ),
 -   CONDITION = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF <span class="code">cft.instance\_group</span> value is set to PRODUCTION, and whose <span class="code">cft.instance\_id</span> value begins with CFT-PROD-ITEM.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
-The following is an example of the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> configuration for this use case (the ROLE must exist in <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 
 
-    CFTROLE      ID          = 'ADMIN_ROLE',
+    CFTROLE      ID          = '',
                   COMMENT     = 'Administrator role for Production Transfer CFT Windows',
-                  PRIVS       = ('PRIV-CONN-INTERFACES',               
+
 
                                   'AM:RIGHTS_VIEW_ALL',
                                   'CONFIGURATION:PKICER_ALL',
@@ -568,7 +568,7 @@ The following is an example of the <span class="mc-variable suite_variables.Tran
                                   'COMMAND:CFTSUPPORT_ALL'),
                   MODE        = 'REPLACE'
      
-    CFTPRIV      ID          = 'PRIV-CONN-INTERFACES',
+    CFTPRIV      ID          = '',
                   COMMENT     = 'PRIV LIMITs the connection for a given Transfer CFT name',
                  RESOURCE    = 'SERVICE:UI',
                  ACTIONS     = ( 'CONNECT'),
@@ -576,4 +576,4 @@ The following is an example of the <span class="mc-variable suite_variables.Tran
                  MODE        = 'REPLACE'
      
 
-A user with this privilege can only connect to a Transfer CFT server whose UCONF <span class="code">cft.instance\_group</span> value is set to <span class="code">PRODUCTION</span>, and whose <span class="code">cft.instance\_id</span> value begins with <span class="code">CFT-PROD-ITEM</span>.
+A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to `PRODUCTION`, and whose `cft.instance_id` value begins with `CFT-PROD-ITEM`.

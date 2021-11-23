@@ -9,8 +9,7 @@
 #### CFTRECV ID= identifier
 
 \[ FACC
-= { <span style="text-decoration: underline;">‘
-‘</span> | character } \]
+= { | character } \]
 
 File access method.
 

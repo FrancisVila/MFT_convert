@@ -2,7 +2,7 @@
     "title": "Working with PassPort AM",
     "linkTitle": "Working with PassPort AM",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Selecting PassPort AM Access Control Management](#selecting)
 
@@ -22,7 +22,7 @@ When PassPort AM is selected, you cannot use Gateway's own user management (via 
 
 ### Modifying the Access Control Management method
 
-If the Access Control Management method is currently <span style="font-style: italic;">None</span>, you can modify it via the Gateway configuration menu.
+If the Access Control Management method is currently *None*, you can modify it via the Gateway configuration menu.
 
 After setting the Access Control Management method to a secure user access (using Passport AM or Gateway), you can no longer change the option unless you have administrator rights in Gateway or the privilege to update the configuration resource in Passport AM.
 
@@ -40,7 +40,7 @@ Before using PassPort AM Access Control Management in Gateway:
 
 For information about PassPort AM, refer to the Axway PassPort AM documentation.
 
-For information about installing <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>, refer to the *<span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> [Installation Guide](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm)*.
+For information about installing {{< Gateway/componentshortname  >}}, refer to the *{{< Gateway/componentshortname  >}} [Installation Guide](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm)*.
 
 <span id="config"></span>
 
@@ -48,7 +48,7 @@ For information about installing <span class="mc-variable axway_variables.Compon
 
 In the Gateway configuration menu:
 
-1.  Select <span style="font-weight: bold;">[Gateway > Connection control](../../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#olh_gateway_connection_control)</span>.
+1.  Select **[Gateway > Connection control](../../../../../gateway_userguide_(primary)/configuration_start_here/config_gateway_paras#olh_gateway_connection_control)**.
 2.  In <span style="font-weight: bold;">User access control</span>, select <span style="font-style: italic;">By PassPort AM</span>.
 3.  Select <span style="font-weight: bold;">[Connectivity > Axway Connectivity > PassPort](../../../../../gateway_userguide_(primary)/configuration_start_here/config_connectors#olh_connectivity_passport)</span>.
 4.  Enter the following information to configure the PassPort AM connection:

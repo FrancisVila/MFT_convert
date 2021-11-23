@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -166,7 +166,7 @@ privileges).</p>         </td>
          <td><p>Explanation</p>         </td>
          <td><p>Modifications have been made to the authorization system,
 but the system has not been regenerated.</p>
-<p>Abnormal behavior may arise when <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is executed.</p>         </td>
+<p>Abnormal behavior may arise when {{< TransferCFT/componentshortname  >}} is executed.</p>         </td>
       </tr>
    </tbody>
 </table>

@@ -8,13 +8,13 @@
 
 ## For new users
 
-<a href="01-get-started-stwc" class="MCXref xref">Get started with ST Web Client</a>
+[Get started with ST Web Client](01-get-started-stwc)
 
 ## For existing users
 
-<a href="02-manage_files_and_folders" class="MCXref xref">Manage files and folders</a>
+[Manage files and folders](02-manage_files_and_folders)
 
-<a href="03-manage_mail" class="MCXref xref">Manage Mailbox</a>
+[Manage Mailbox](03-manage_mail)
 
 ## Quick links to all guides in {{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}}
 

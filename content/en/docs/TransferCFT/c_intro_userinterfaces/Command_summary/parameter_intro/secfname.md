@@ -10,7 +10,7 @@
 
 \[SECFNAME = filename \]
 
-Filename. Name of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal security file.
+Filename. Name of the {{< TransferCFT/componentshortname  >}} internal security file.
 
  
 

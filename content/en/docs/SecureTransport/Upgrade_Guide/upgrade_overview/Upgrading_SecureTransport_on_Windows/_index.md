@@ -8,6 +8,6 @@ Oracle users whose system privileges were granted through a role can update {{< 
 
 The following topics provide instructions for upgrading an existing {{< SecureTransport/securetransportname  >}} installation:
 
--   <a href="upgrading_from_st_5.4_win_console" class="MCXref xref">Upgrade from SecureTransport 5.4 using the console</a> - Provides how-to instructions for upgrading from {{< SecureTransport/componentshortname >}} 5.4 using the console.
--   <a href="upgrade-from-st-5.4-win-gui" class="MCXref xref">Upgrade from SecureTransport 5.4 using the GUI</a> - Provides how-to instructions for upgrading from {{< SecureTransport/componentshortname >}} 5.4 using the GUI.
--   <a href="../../recover-previous-installation-win" class="MCXref xref">Recover your previous SecureTransport installation on Windows</a> - Provides how-to instructions for recovering your previous {{< SecureTransport/componentshortname >}} installation.
+-   [Upgrade from SecureTransport 5.4 using the console](upgrading_from_st_5.4_win_console) - Provides how-to instructions for upgrading from {{< SecureTransport/componentshortname >}} 5.4 using the console.
+-   [Upgrade from SecureTransport 5.4 using the GUI](upgrade-from-st-5.4-win-gui) - Provides how-to instructions for upgrading from {{< SecureTransport/componentshortname >}} 5.4 using the GUI.
+-   [Recover your previous SecureTransport installation on Windows](../../recover-previous-installation-win) - Provides how-to instructions for recovering your previous {{< SecureTransport/componentshortname >}} installation.

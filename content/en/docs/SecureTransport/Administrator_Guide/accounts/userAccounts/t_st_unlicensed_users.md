@@ -8,7 +8,7 @@ Unlicensed users can log in to {{< SecureTransport/componentshortname  >}} using
 
 If the ad hoc human-to-human file transfer specifies enrollment as an unlicensed user or the System to Human transfer site specifies a security level of `Enroll User - Unlicensed`, the recipient becomes an unlicensed user on enrollment.
 
-Create account templates for unlicensed users. Configure the account template that applies to unlicensed users in the business unit or in the **Default enrollment account template** field on the *AdHoc Setting* page. See <a href="../../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates#top" class="MCXref xref">Manage account templates</a>, <a href="#Create" class="MCXref xref">Create or edit a business unit</a>, and <a href="../../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091" class="MCXref xref">Configure adhoc file transfers</a>.
+Create account templates for unlicensed users. Configure the account template that applies to unlicensed users in the business unit or in the **Default enrollment account template** field on the *AdHoc Setting* page. See [Manage account templates](../../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates#top), [Create or edit a business unit](#Create), and [Configure adhoc file transfers](../../../c_st_setup/t_st_adhocconfiguration#SetupMenu_1217491348_1052091).
 
 You can also create an unlicensed user account from the *Unlicensed User Accounts* page.
 
@@ -21,7 +21,7 @@ You can also create an unlicensed user account from the *Unlicensed User Account
     >
     > The Address Book Settings are only displayed if the Address Book feature is enabled (the value of the AddressBook.Enabled configuration option is set to true). For Address Book account level configuration instructions, refer to Address Book account level configuration.
 
-3.  For the common fields, see <a href="../t_st_create_user_account#Unlicens" class="MCXref xref">Create a user account</a>.
+3.  For the common fields, see [Create a user account](../t_st_create_user_account#Unlicens).
 
 4.  Select **Allow reply to packages** to permit the unlicensed user to reply once to a received package.
 
@@ -42,13 +42,13 @@ The other procedures are the same for licensed and unlicensed user accounts.
 
 **Related topics:**
 
--   <a href="../t_st_create_user_account" class="MCXref xref">Create a user account</a>
--   <a href="../t_st_change_how_long_user_account_information_is_cached" class="MCXref xref">Change how long user account information is cached in memory</a>
--   <a href="../t_st_disable_enable_user_account" class="MCXref xref">Disable or enable a user account</a>
--   <a href="../t_st_lock_unlock_user_account" class="MCXref xref">Lock or unlock a user account</a>
--   <a href="../t_st_manage_user_account_passwords" class="MCXref xref">Manage user account passwords</a>
--   <a href="../t_st_edit_user_account_settings" class="MCXref xref">Edit user account settings</a>
--   <a href="../t_st_delete_user_accounts" class="MCXref xref">Delete user accounts</a>
--   <a href="../t_st_delete_purge_user_account" class="MCXref xref">Delete and purge a user account</a>
--   <a href="../t_st_export_single_user_account" class="MCXref xref">Export a single user account</a>
--   <a href="../c_st_protected_folders_accounts" class="MCXref xref">Protected folders and accounts</a>
+-   [Create a user account](../t_st_create_user_account)
+-   [Change how long user account information is cached in memory](../t_st_change_how_long_user_account_information_is_cached)
+-   [Disable or enable a user account](../t_st_disable_enable_user_account)
+-   [Lock or unlock a user account](../t_st_lock_unlock_user_account)
+-   [Manage user account passwords](../t_st_manage_user_account_passwords)
+-   [Edit user account settings](../t_st_edit_user_account_settings)
+-   [Delete user accounts](../t_st_delete_user_accounts)
+-   [Delete and purge a user account](../t_st_delete_purge_user_account)
+-   [Export a single user account](../t_st_export_single_user_account)
+-   [Protected folders and accounts](../c_st_protected_folders_accounts)

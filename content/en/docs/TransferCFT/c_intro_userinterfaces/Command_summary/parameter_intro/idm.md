@@ -8,8 +8,7 @@
 
 #### CFTSEND, SEND
 
-\[IDM = identifier\]  <span style="font-weight: normal;"> {string
-33}</span>
+\[IDM = identifier\]  
 
 Message identifier.
 

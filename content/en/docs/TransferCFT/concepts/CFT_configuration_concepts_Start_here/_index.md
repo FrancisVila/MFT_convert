@@ -2,7 +2,7 @@
     "title": " Transfer CFT configuration concepts: Start here",
     "linkTitle": "Concepts",
     "weight": "130"
-}This section describes <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> configuration concepts topics.
+}This section describes {{< TransferCFT/componentshortname  >}} configuration concepts topics.
 
 <table>
          

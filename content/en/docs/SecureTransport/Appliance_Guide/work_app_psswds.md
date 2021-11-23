@@ -8,9 +8,9 @@
 
 ## Set the appliance password
 
-Use this procedure to set your appliance password. Setting a new password requires that you know the current password and that the new password meets complexity rules. See <a href="#_Toc331683665" class="MCXref xref">Manage the appliance password</a> for information about specifying password complexity rules.
+Use this procedure to set your appliance password. Setting a new password requires that you know the current password and that the new password meets complexity rules. See [Manage the appliance password](#_Toc331683665) for information about specifying password complexity rules.
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **H**, Hardening & Security.
 3.  On the Hardening & Security menu, type **P**, Password Configuration.
@@ -30,7 +30,7 @@ Use this procedure to set your appliance password. Setting a new password requir
 
 Use the following information to help you manage complexity rules for passwords and Appliance Console Menu password protection.
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **H**, Hardening & Security.
 3.  On the Hardening & Security menu, type **P**, Password Configuration.

@@ -2,7 +2,7 @@
     "title": "Requirements for Oracle databases",
     "linkTitle": "Requirements for Oracle databases",
     "weight": "110"
-}-   For a complete list of supported Oracle Database releases, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref"><em>Axway and third-party software support</em></a>.
+}-   For a complete list of supported Oracle Database releases, refer to [*Axway and third-party software support*](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm).
 
 -   To support unicode characters in filenames and directories, the database should use AL32UTF8 encoding.
 
@@ -67,5 +67,5 @@ During the installation, you need the following information:
 
 **Related topics:**
 
--   <a href="data_pump_database_management" class="MCXref xref">Data pump database management system</a>
--   <a href="../requirements_for_sql_databases" class="MCXref xref">Requirements for Microsoft SQL Server databases</a>
+-   [Data pump database management system](data_pump_database_management)
+-   [Requirements for Microsoft SQL Server databases](../requirements_for_sql_databases)

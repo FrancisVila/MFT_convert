@@ -52,7 +52,7 @@ to the partners (default value of the NSPART parameter) </p>         </td>
 
 Local names are limited
 to the local Transfer CFT, and are recognized as identifiers specific
-to the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span>. The parameters describing these names are indicated in
+to the {{< TransferCFT/hflongproductname  >}}. The parameters describing these names are indicated in
 the table below:
 
 Partner local names

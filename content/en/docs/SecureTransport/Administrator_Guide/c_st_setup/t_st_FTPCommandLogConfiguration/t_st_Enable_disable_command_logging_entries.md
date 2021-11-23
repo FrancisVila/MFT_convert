@@ -13,6 +13,6 @@ If a Command Logging is added, but it is disabled; no Protocol Commands will be 
 
 **Related topics:**
 
--   <a href="../t_st_add_command_logging_entry" class="MCXref xref">Add a command logging entry</a>
--   <a href="../t_st_edit_command_logging_entry" class="MCXref xref">Edit a command logging entry</a>
--   <a href="../t_st_delete_command_logging_entries" class="MCXref xref">Delete command logging entries</a>
+-   [Add a command logging entry](../t_st_add_command_logging_entry)
+-   [Edit a command logging entry](../t_st_edit_command_logging_entry)
+-   [Delete command logging entries](../t_st_delete_command_logging_entries)

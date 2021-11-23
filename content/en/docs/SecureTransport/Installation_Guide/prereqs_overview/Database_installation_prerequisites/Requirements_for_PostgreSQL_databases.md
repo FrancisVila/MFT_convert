@@ -2,7 +2,7 @@
     "title": "Requirements for PostgreSQL databases",
     "linkTitle": "Requirements for PostgreSQL databases",
     "weight": "120"
-}For a complete list of supported PostgreSQL versions, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref"><em>Axway and third-party software support</em></a>.
+}For a complete list of supported PostgreSQL versions, refer to [*Axway and third-party software support*](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm).
 
 {{< SecureTransport/componentshortname  >}} can connect to an external PostgreSQL database over a plain or secure connection.
 Starting with SecureTransport 5.5-20201029, the external database server’s certificates that contain `keyUsage` extensions MUST also have the `digitalSignature` indicator enabled. This affects both secure and non-secure connections.
@@ -42,4 +42,4 @@ During the installation, you need the following information:
 
 **Related topics:**
 
--   <a href="../../../install_overview" class="MCXref xref">Install SecureTransport</a>
+-   [Install SecureTransport](../../../install_overview)

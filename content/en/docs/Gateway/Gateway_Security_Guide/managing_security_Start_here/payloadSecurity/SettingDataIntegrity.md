@@ -20,11 +20,11 @@ peluconf set -s integrity private\_key\_dk %location to the derived key file%
 
 peluconf set -s integrity private\_key\_pf %location to the encrypted password file%
 
-The derived key file and the encrypted password file are generated using <span class="code">pelencpass </span>tool.
+The derived key file and the encrypted password file are generated using `pelencpass `tool.
 
 ## Transfer parameters for data integrity
 
-<span class="code">sigfile </span>and <span class="code">sigalgo </span>parameters can be used to manually set the signature of the payload data (necessary mostly for JMS reference mode part). The signature must be generated using Gateway private key. The <span class="code">sigfile </span>parameter references a file containing the signature in binary format.
+`sigfile `and `sigalgo `parameters can be used to manually set the signature of the payload data (necessary mostly for JMS reference mode part). The signature must be generated using Gateway private key. The `sigfile `parameter references a file containing the signature in binary format.
 
 New transfer parameters will be displayed for the incoming transfers, for which the signature of the payload in computed by Gateway on reception:
 
@@ -46,6 +46,6 @@ signature computation { (SHA256withRSA) }\]
 
 Note: if you create a transfer using a model, you must encrypt the payload with Integrator private key. If you route a transfer using a model, the validation of the signature is made using the Integrator private key.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

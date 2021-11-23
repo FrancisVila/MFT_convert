@@ -2,7 +2,7 @@
     "title": "CFTEXT  - Extract file data ",
     "linkTitle": "CFTEXT - Extracting data",
     "weight": "280"
-}You can use the <span id="About_the_CFTEXT_Command"></span><span style="font-weight: bold;">CFTEXT</span>
+}You can use the <span id="About_the_CFTEXT_Command"></span>**CFTEXT**
 object to extract Parameter and Partner file data. CFTEXT generates, as output, a configuration command text used to reconstitute
 the data of these files.
 

@@ -46,7 +46,7 @@ There are two methods of configuration depending on the use case you implement.
 
 In this use case, {{< SecureTransport/componentshortname  >}} sends the usage events to the Edge Agent. Follow this simple procedure to configure usage tracking:
 
-1.  From **Setup > Axway Sentinel/DI**, configure reporting to Edge Agent by following the steps 1-9 as described in <a href="../../c_st_sentinelintegration/t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>. Note that you must use the connection details for Edge Agent and not for Sentinel.
+1.  From **Setup > Axway Sentinel/DI**, configure reporting to Edge Agent by following the steps 1-9 as described in [Configure SecureTransport to send events to Axway Sentinel](../../c_st_sentinelintegration/t_st_sentinel). Note that you must use the connection details for Edge Agent and not for Sentinel.
 2.  Test and save the configuration.
 3.  From **Operations > Server Configuration**:
     1.  Set `StatisticsSummary.AutoReportAdditionalInfo` to `true`. This is needed in order to periodically generate a Sentinel event with usage information on the {{< SecureTransport/componentshortname >}} instance.
@@ -59,7 +59,7 @@ In this use case, {{< SecureTransport/componentshortname  >}} uses the Event Rou
 
 You need an installed Sentinel and Event Router to implement this method. For more information, refer to the latest [Sentinel Event Router User Guide](https://support.axway.com/en/documents/document-details/id/12513).
 
-Note that in this case you must perform the <a href="#UsageTrack" class="MCXref xref">Usage tracking with the Edge Agent</a> , with an important exception: in step 1, you must use the connection details for the Event Router.
+Note that in this case you must perform the [Usage tracking with the Edge Agent](#UsageTrack) , with an important exception: in step 1, you must use the connection details for the Event Router.
 
 #### On the Event Router
 

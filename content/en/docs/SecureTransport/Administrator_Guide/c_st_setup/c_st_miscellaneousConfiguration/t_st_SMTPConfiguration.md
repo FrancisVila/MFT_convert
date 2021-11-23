@@ -18,6 +18,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_miscellaneousoptions" class="MCXref xref">Miscellaneous options</a>
--   <a href="../t_st_ftphttpservershutdownoptions" class="MCXref xref">FTP and HTTP server suspend options</a>
--   <a href="../t_st_passwordpolicy" class="MCXref xref">Password policy</a>
+-   [Miscellaneous options](../t_st_miscellaneousoptions)
+-   [FTP and HTTP server suspend options](../t_st_ftphttpservershutdownoptions)
+-   [Password policy](../t_st_passwordpolicy)

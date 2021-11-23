@@ -4,7 +4,7 @@
     "weight": "210"
 }## About the output file
 
-Transfer CFT <span class="mc-variable axway_variables.Release_Number variable">3.9</span> HP NonStop reassembles all of the Transfer CFT process output in a main file, `runtime/run/cft.out`, whereas version 2.3.2 used either spooler output (one per process) or event messages (EMS).
+Transfer CFT {{< TransferCFT/releasenumber  >}} HP NonStop reassembles all of the Transfer CFT process output in a main file, `runtime/run/cft.out`, whereas version 2.3.2 used either spooler output (one per process) or event messages (EMS).
 
 ## About the system configuration file
 

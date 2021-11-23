@@ -2,7 +2,7 @@
     "title": "Operating Transfer CFT",
     "linkTitle": "Common tasks using menus",
     "weight": "220"
-}From the <span class="italic_in_para">Main Menu</span>, enter the command <span class="code" style="font-weight: bold;">cft</span> and press <span class="bold_in_para">Enter</span> to open the <span class="italic_in_para">Manager Menu</span>.
+}From the , enter the command `cft` and press **Enter** to open the .
 
 Select from:
 
@@ -15,7 +15,7 @@ Select from:
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfer-cft-3.2.x-and-higher"><span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.2.x and higher</h2>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>         </th>
       </tr>
    </thead>
    <tbody>

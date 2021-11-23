@@ -29,7 +29,7 @@ MEDIUM-&gt;128<br />
 HIGH-&gt; 255<br />
 CUSTOM-&gt; integer between 0...255         </td>
          <td>Transfer priorities are equivalent to integer values ranging from 0 (low) to 255 (high).<br />
-When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> reaches the maximum number of transfers allowed, it queues transfers. When an ongoing transfer is finished and a slot is available for a new transfer, the system selects the one with the highest priority.<br />
+When {{< TransferCFT/componentshortname  >}} reaches the maximum number of transfers allowed, it queues transfers. When an ongoing transfer is finished and a slot is available for a new transfer, the system selects the one with the highest priority.<br />
 The same priority is used for the transfer in target side         </td>
       </tr>
       <tr>
@@ -62,7 +62,7 @@ If Target is the initiator, in source side the transfer state is ready and the f
          <td>User id         </td>
          <td>string, max 32, empty by default         </td>
          <td><p>CFTSEND, userid</p>         </td>
-         <td>Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.         </td>
+         <td>Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{< TransferCFT/componentshortname  >}}.         </td>
       </tr>
       <tr>
          <td>Detect duplicate transfers         </td>
@@ -123,7 +123,7 @@ Executed (X) -&gt; X         </td>
 Ready – The transfer is available and can start immediately.<br />
 Transferring – The transfer is being executed.<br />
 On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br />
-Kept – The transfer was suspended by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or by a user.<br />
+Kept – The transfer was suspended by {{< TransferCFT/componentshortname  >}} or by a user.<br />
 Transferred – The transfer was successfully completed.<br />
 Executed – The transfer was ended by an application or user.         </td>
       </tr>
@@ -177,7 +177,7 @@ When specifying a file here, the Path field is also required.         </td>
          <td>string max 64,<br />
 &amp;IDF.&amp;idtu.rcv         </td>
          <td>CFTSEND, wfname         </td>
-         <td>Name of the file that contains the set of files to be transmitted. Archive files are sent between systems that have the same operating system (grouped mode). The archive file is created automatically by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> at the time of the transfer. The file created will be a zip file on Windows systems and a tar file on Linux/UNIX systems. Because Windows systems do not have default compression utilities, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> for Windows includes zip and unzip utilities.         </td>
+         <td>Name of the file that contains the set of files to be transmitted. Archive files are sent between systems that have the same operating system (grouped mode). The archive file is created automatically by {{< TransferCFT/componentshortname  >}} at the time of the transfer. The file created will be a zip file on Windows systems and a tar file on Linux/UNIX systems. Because Windows systems do not have default compression utilities, {{< TransferCFT/componentshortname  >}} for Windows includes zip and unzip utilities.         </td>
       </tr>
       <tr>
          <td>File name sent         </td>
@@ -403,4 +403,4 @@ Both – Executes the script both for the main request and for each target in th
 
  
 
-<span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

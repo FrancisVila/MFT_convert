@@ -8,7 +8,7 @@ Transfer CFT, using either an immediate or delayed shutdown.
 Syntax
 
 \[ [FAST](../../../c_intro_userinterfaces/command_summary/parameter_intro/fast)
-= { <span style="text-decoration: underline;">NO</span>
+= {
 | YES | KILL } \]
 
 \[ [RESTART](../../../c_intro_userinterfaces/command_summary/parameter_intro/restart) = { YES | NO } \]

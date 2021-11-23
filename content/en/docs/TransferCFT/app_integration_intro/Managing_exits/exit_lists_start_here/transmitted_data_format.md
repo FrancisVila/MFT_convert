@@ -27,11 +27,11 @@ Where:
 
 ## Format of sent records
 
-Indicates the file format of the communication area, where values are <u>1</u>, 2 C, T, J, or X (<span class="code">1 </span>is the default).
+Indicates the file format of the communication area, where values are <u>1</u>, 2 C, T, J, or X (`1 `is the default).
 
 Format 1
 
-Displays using the same format as in <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.5 and lower.
+Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 and lower.
 
 -   Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
 -   Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
@@ -310,7 +310,7 @@ Format C: CSV - Comma Separated Value
 
 Each field is separated by a comma.
 
-For example: <span class="code">S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE</span>
+For example: `S,X,X,X,MARTIN,PARIS,BIN,L1111482,2,,128,20191211,11481147,,,,,0,CP NONE`
 
 Format T: TSV - Tab Separated Value
 

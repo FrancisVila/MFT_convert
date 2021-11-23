@@ -124,7 +124,7 @@ Key
 
 Default FTYPE or FRECFM value
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to <span class="code">undefined</span>, meaning that the transfer in emission takes the value of both the file type and the member content.
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following table. These values correspond to `undefined`, meaning that the transfer in emission takes the value of both the file type and the member content.
 
 <table>
    <thead>

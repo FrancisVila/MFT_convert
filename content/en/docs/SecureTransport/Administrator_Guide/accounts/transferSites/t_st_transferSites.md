@@ -6,9 +6,9 @@
 
 The following topics provide how-to instructions for managing transfer sites:
 
--   <a href="#Create" class="MCXref xref">Create a transfer site</a>
--   <a href="#Edit" class="MCXref xref">Edit a transfer site</a>
--   <a href="#Delete" class="MCXref xref">Delete a transfer site</a>
+-   [Create a transfer site](#Create)
+-   [Edit a transfer site](#Edit)
+-   [Delete a transfer site](#Delete)
 
 <span id="Create"></span>
 
@@ -59,13 +59,13 @@ This topic provides a general procedure for creating a transfer site for an acco
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)

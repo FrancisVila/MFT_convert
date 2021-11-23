@@ -12,7 +12,7 @@
 
 The time interval (in minutes) between reconnection attempts.
 
--   <span style="font-weight: bold;">1</span>
+-   **1**
     : default value
 -   any other value
     from <span style="font-weight: bold;">0</span> to <span style="font-weight: bold;">32767</span>

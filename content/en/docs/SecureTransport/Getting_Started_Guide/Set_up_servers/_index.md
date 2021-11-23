@@ -14,7 +14,7 @@ The **Configure &gt; 6-Set Up Servers** page displays the FTP, HTTP, AS2, SSH, P
 
 ## Set the SSL key alias
 
-When you set up FTPS, HTTPS, AS2 (SSL), SSH, or PeSIT, you select a key alias to specify the certificate to use to secure the communications. You create the alias on Setup step 4 - Generate certificates. For more information, see <a href="../generate_certificates" class="MCXref xref">Generate certificates</a>.
+When you set up FTPS, HTTPS, AS2 (SSL), SSH, or PeSIT, you select a key alias to specify the certificate to use to secure the communications. You create the alias on Setup step 4 - Generate certificates. For more information, see [Generate certificates](../generate_certificates).
 
 ## Set the FIPS transfer mode
 

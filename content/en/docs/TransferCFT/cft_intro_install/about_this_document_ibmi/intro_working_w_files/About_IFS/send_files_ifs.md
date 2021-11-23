@@ -56,7 +56,7 @@ When sending a file from the part of an IBM i machine in text mode, the file is 
 
 This section describes how to send a group of files using a send command where there is one transfer per file.
 
-When defining the filename, you must put a &lt;file-symb> character (system-specific) before the FNAME parameter value. <span class="mc-variable Primary.For_OS400 variable">Transfer CFT IBM i</span> environments use the ‘#’ and ‘£’ symbols.
+When defining the filename, you must put a &lt;file-symb> character (system-specific) before the FNAME parameter value. environments use the ‘#’ and ‘£’ symbols.
 
 Use one of the following commands to send a group of files using a generic name:
 

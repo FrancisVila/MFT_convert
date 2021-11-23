@@ -16,6 +16,6 @@ Configure protocol server access control on {{< SecureTransport/componentshortna
 
 The following topics describe access rule ordering and provide how-to instructions for enabling host names for access control and managing protocol server access:
 
--   <a href="c_st_access_rule_order" class="MCXref xref">Access rule order</a> - Describes the access rule order and provides configuration information for access rule ordering.
--   <a href="t_st_enablehostnamesforaccesscontrol" class="MCXref xref">Enable host names for access control</a> - Provides how-to instructions for enabling host names for access control.
--   <a href="t_st_administrationtoolandprotocolserveraccess" class="MCXref xref">Manage protocol server access</a> - Provides how-to instructions for managing protocol server access.
+-   [Access rule order](c_st_access_rule_order) - Describes the access rule order and provides configuration information for access rule ordering.
+-   [Enable host names for access control](t_st_enablehostnamesforaccesscontrol) - Provides how-to instructions for enabling host names for access control.
+-   [Manage protocol server access](t_st_administrationtoolandprotocolserveraccess) - Provides how-to instructions for managing protocol server access.

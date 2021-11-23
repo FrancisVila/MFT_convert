@@ -52,14 +52,14 @@ Usage:
 
 **Example 1**
 
-In a Windows environment, create a new runtime called <span class="code">runtime2</span>:
+In a Windows environment, create a new runtime called `runtime2`:
 
 
     cftruntime c:\AxwayCFT38\Transfer_CFT\home  c:\AxwayCFT36\Transfer_CFT\runtime2
 
 **Example 2**
 
-In a Windows environment, regenerate the <span class="code">cftuconf.dat</span> uconf settings as follows:
+In a Windows environment, regenerate the `cftuconf.dat` uconf settings as follows:
 
 
     cftruntime c:\AxwayCFT38\Transfer_CFT\home  c:\AxwayCFT36\Transfer_CFT\runtime –uconf

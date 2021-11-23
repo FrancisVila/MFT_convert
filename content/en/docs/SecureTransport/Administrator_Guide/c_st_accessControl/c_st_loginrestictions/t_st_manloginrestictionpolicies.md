@@ -4,15 +4,15 @@
     "weight": "300"
 }The following topics provide the instructions for creating and editing Login Restriction Policies. The instructions for adding, editing, enabling, disabling, and deleting policy rules are also provided.
 
--   <a href="#Creating" class="MCXref xref">Create a Login Restriction Policy</a>
--   <a href="#Editing" class="MCXref xref">Edit a Login Restriction Policy</a>
--   <a href="#Adding" class="MCXref xref">Add a policy rule</a>
--   <a href="#Editing2" class="MCXref xref">Edit a policy rule</a>
--   <a href="#Enabling" class="MCXref xref">Enable, disable or delete a policy rule</a>
+-   [Create a Login Restriction Policy](#Creating)
+-   [Edit a Login Restriction Policy](#Editing)
+-   [Add a policy rule](#Adding)
+-   [Edit a policy rule](#Editing2)
+-   [Enable, disable or delete a policy rule](#Enabling)
 
 **Related topic:**
 
--   <a href="../t_st_manloginrestictions" class="MCXref xref">Manage Login Restriction Policies</a>
+-   [Manage Login Restriction Policies](../t_st_manloginrestictions)
 
 <span id="Creating"></span>
 
@@ -33,9 +33,9 @@ Use the following instructions to create a Login Restriction Policy:
 
 5.  (Optional) Enter a **Policy Description**.
 
-6.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+6.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 
-7.  Add Policy Rules to the Login Restriction Policy. See <a href="#Adding" class="MCXref xref">Add a policy rule</a>.  
+7.  Add Policy Rules to the Login Restriction Policy. See [Add a policy rule](#Adding).  
 
     > **Note:**
     >
@@ -52,7 +52,7 @@ Use the following instructions to edit an existing Login Restriction Policy:
 1.  Click on the Policy Name to edit the selected Login Restriction Policy on the *Login Restriction Policies for End Users* page.  
     The *Edit Login Restriction Policy entry* page will be displayed.
 2.  Make the desired edits to the selected Login Restriction Policy.  
-    See <a href="#Creating" class="MCXref xref">Create a Login Restriction Policy</a>.
+    See [Create a Login Restriction Policy](#Creating).
 3.  Click **Save Policy**.
 
 <span id="Adding"></span>
@@ -129,7 +129,7 @@ Use the following instructions to add a policy rule to Login Restriction Policy.
 Use the following instructions to edit a policy rule:
 
 1.  Click the **Edit** (![](/Images/SecureTransport/EditIcon2.png)) icon for the policy rule.
-2.  Make the desired changes to the policy rule. See <a href="#Adding" class="MCXref xref">Add a policy rule</a>.
+2.  Make the desired changes to the policy rule. See [Add a policy rule](#Adding).
 3.  Click the **Save** (![](/Images/SecureTransport/SaveIcon2.png)) icon.
 
 <span id="Enabling"></span>

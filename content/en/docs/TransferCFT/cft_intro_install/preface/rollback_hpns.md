@@ -18,7 +18,7 @@ To perform a version downgrade, you must have already upgraded from Transfer CFT
 
 ### Procedure
 
-1.  Enter the following command to export the Transfer CFT catalog file, perfoming the command from the <span class="code">&lt;installation directory></span>:  
+1.  Enter the following command to export the Transfer CFT catalog file, perfoming the command from the `<installation directory>`:  
 
 
         CFTMI migr type=cat,direct=fromcat,ifname=$CFTCATA,ofname=cftcat_36
@@ -30,7 +30,7 @@ To perform a version downgrade, you must have already upgraded from Transfer CFT
 
         CFTUTIL cftfile type=cat,mode=replace,fname=$CFTCATA,recnb=5000
 
-4.  Import the saved `cftcat_36 `to the catalog file <span class="code">&lt;logical\_filename></span> you created in the previous step.  
+4.  Import the saved `cftcat_36 `to the catalog file `<logical_filename>` you created in the previous step.  
 
 
         CFTMI migr type=cat,direct=tocat,ifname=cftcat_36,ofname=$CFTCATA

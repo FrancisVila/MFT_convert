@@ -6,9 +6,9 @@
 
 When you open the *File Tracking* page, {{< SecureTransport/componentshortname  >}} automatically loads the transfer log entries for the past hour. This behavior is determined by the `FileTracking.InitialLoading.Enabled.Admin` server configuration option. It accepts boolean values; the default value is `true`. To disable the initial auto-loading of log entries on the page, set the configuration option to `false`.
 
-By default, {{< SecureTransport/componentshortname  >}} stores the transfer log entries in the {{< SecureTransport/componentshortname  >}} database. If you have the Enterprise Cluster (EC) option, you can store the transfer log data in a separate Oracle database away from the rest of the {{< SecureTransport/componentshortname  >}} data. See <a href="../../c_st_setup/c_st_database/t_st_separate_databases#top" class="MCXref xref">Direct log data to separate Oracle databases</a>.
+By default, {{< SecureTransport/componentshortname  >}} stores the transfer log entries in the {{< SecureTransport/componentshortname  >}} database. If you have the Enterprise Cluster (EC) option, you can store the transfer log data in a separate Oracle database away from the rest of the {{< SecureTransport/componentshortname  >}} data. See [Direct log data to separate Oracle databases](../../c_st_setup/c_st_database/t_st_separate_databases#top).
 
-To control which transfers are logged, see <a href="../../c_st_setup/t_st_transferlogconfiguration#SetupMenu_1217491348_1147657" class="MCXref xref">Configure transfer log</a>.
+To control which transfers are logged, see [Configure transfer log](../../c_st_setup/t_st_transferlogconfiguration#SetupMenu_1217491348_1147657).
 
 For each transfer listed, the *File Tracking* page displays resubmit status, transfer status, account name, login name, direction of transfer, whether action was taken by the user or server, file name, number of bytes transferred, transfer protocol, start time, and duration.
 
@@ -41,8 +41,8 @@ In the listed cases, no **Resubmit** button is displayed. However, resubmit is n
 
 The following topics provide additional information on viewing and managing file transfer activity:
 
--   <a href="" class="MCXref xref">Resubmit status</a> - Describes the resubmit status.
--   <a href="r_st_transfer_status" class="MCXref xref">Transfer status</a> - Describes the transfer status.
--   <a href="t_st_viewfiletransferinfo" class="MCXref xref">View file transfer information</a> - Describes viewing and searching file transfer information.
--   <a href="t_st_filetransfers" class="MCXref xref">Manage file transfers</a> - Describes managing file transfers and provides how-to instructions for restarting and canceling file transfers.
--   <a href="r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a> - Describes the Transfer Log Maintenance application.
+-   [Resubmit status]() - Describes the resubmit status.
+-   [Transfer status](r_st_transfer_status) - Describes the transfer status.
+-   [View file transfer information](t_st_viewfiletransferinfo) - Describes viewing and searching file transfer information.
+-   [Manage file transfers](t_st_filetransfers) - Describes managing file transfers and provides how-to instructions for restarting and canceling file transfers.
+-   [Transfer Log Maintenance application](r_st_transferlogmaint) - Describes the Transfer Log Maintenance application.

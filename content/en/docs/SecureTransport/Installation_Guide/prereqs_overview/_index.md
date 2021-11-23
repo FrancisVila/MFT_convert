@@ -82,8 +82,8 @@ The following are the system requirements for {{< SecureTransport/componentshort
 
 The following topics provide the {{< SecureTransport/componentshortname  >}} installation prerequisites:
 
--   <a href="virtualization_support" class="MCXref xref">Virtualization support</a>
--   <a href="secret_file" class="MCXref xref">Secret file</a> - prerequisites for {{< SecureTransport/componentshortname >}} Servers and {{< SecureTransport/securetransportname >}} Edges.
--   <a href="database_installation_prerequisites" class="MCXref xref">Database requirements</a>
--   <a href="installation_prerequisites_for_unix_based_servers" class="MCXref xref">General prerequisites for UNIX-based platforms</a>
--   <a href="installation_prerequisites_for_windows" class="MCXref xref">Windows platforms</a>
+-   [Virtualization support](virtualization_support)
+-   [Secret file](secret_file) - prerequisites for {{< SecureTransport/componentshortname >}} Servers and {{< SecureTransport/securetransportname >}} Edges.
+-   [Database requirements](database_installation_prerequisites)
+-   [General prerequisites for UNIX-based platforms](installation_prerequisites_for_unix_based_servers)
+-   [Windows platforms](installation_prerequisites_for_windows)

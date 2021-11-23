@@ -46,7 +46,7 @@ To set up the disclaimer text, follow the steps below:
 
 2.  Put the file in the `custom/locales/en/` folder.
 
-3.  Set up override for the default translation by following the steps as described in <a href="../add_mod_lang" class="MCXref xref">Add and modify languages</a>.  
+3.  Set up override for the default translation by following the steps as described in [Add and modify languages](../add_mod_lang).  
     In `custom/locales/en/override.json`, define the disclaimer section:
 
 The final configuration should look like this:
@@ -67,7 +67,7 @@ Once done, you should see the disclaimer banner on the login page.
 
 ### Add translations for other languages
 
-1.  Modify `custom/locales/<your_locale>/translation.json`. For more information, see <a href="../add_mod_lang" class="MCXref xref">Add and modify languages</a>.
+1.  Modify `custom/locales/<your_locale>/translation.json`. For more information, see [Add and modify languages](../add_mod_lang).
 2.  Translate the disclaimer text and place the file next to `translation.json`.
 
 > **Note:**

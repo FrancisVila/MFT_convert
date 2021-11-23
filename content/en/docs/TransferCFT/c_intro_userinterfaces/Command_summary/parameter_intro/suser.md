@@ -37,7 +37,7 @@ parameter.</p>         </td>
       <tr>
          <td><p><strong><br />
 </strong>PeSIT E CFT/CFT</p>         </td>
-         <td><p>In PeSIT E between 2 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters.</p>         </td>
+         <td><p>In PeSIT E between 2 {{< TransferCFT/componentshortname  >}}s, the SUSER parameter value is transported in the PI 99 if this value is longer than 8 characters.</p>         </td>
       </tr>
    </tbody>
 </table>

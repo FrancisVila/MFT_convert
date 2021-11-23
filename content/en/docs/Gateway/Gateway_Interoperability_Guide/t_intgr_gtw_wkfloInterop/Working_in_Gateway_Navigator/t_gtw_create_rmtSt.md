@@ -186,8 +186,7 @@ address, you can select another communication address from the drop-down
 list.</p>         </td>
       </tr>
       <tr>
-         <td><p>Right pane - X.25 specific fields:<span style="font-weight: normal;"><br />
-</span></p>         </td>
+         <td><p>Right pane - X.25 specific fields:</p>         </td>
       </tr>
       <tr>
          <td><p>Called address</p>         </td>
@@ -238,9 +237,7 @@ this message to specify the target Application.</p>
 </ul>         </td>
       </tr>
       <tr>
-         <td><p>Right pane - TCP/IP specific fields:<span style="font-weight: normal;"><br />
-For more information, refer to Address configuration for Remote
-Sites.</span></p>         </td>
+         <td><p>Right pane - TCP/IP specific fields:</p>         </td>
       </tr>
       <tr>
          <td><p>IP address or machine name</p>         </td>
@@ -264,8 +261,7 @@ either SOCKS4 or HTTPS. This field is available for all protocols.</p>
 <p>Select a Proxy from the drop-down list.</p>         </td>
       </tr>
       <tr>
-         <td><p>Right pane - LU 6.2 specific fields:<span style="font-weight: normal;"><br />
-</span></p>         </td>
+         <td><p>Right pane - LU 6.2 specific fields:</p>         </td>
       </tr>
       <tr>
          <td><p>Destination</p>
@@ -290,7 +286,7 @@ destination.</p>         </td>
       <tr>
          <td><p>Type</p>         </td>
          <td><p>Enter the conversation type. This version of the product
-supports <span style="font-style: italic;">Basic Conversation</span> only.</p>         </td>
+supports <em>Basic Conversation</em> only.</p>         </td>
       </tr>
       <tr>
          <td><p>Mode</p>         </td>
@@ -321,6 +317,6 @@ Complete the **Protocol** tab that is displayed for your selected exchange proto
 
 After completing the fields, click **OK** to accept the values and close the window.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

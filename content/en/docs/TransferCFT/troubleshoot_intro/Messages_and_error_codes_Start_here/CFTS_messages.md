@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -62,7 +62,7 @@ IDT=&amp;idt DIRECT=&amp;direct  &amp;fname not found</p>
 procedure was not found for a given transfer (&amp;idt).</p>
 <p>This procedure
 was requested after a file or message transfer or subsequent to an error
-(see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation, EXEC parameters).</p>         </td>
+(see the {{< TransferCFT/componentshortname  >}} Online documentation, EXEC parameters).</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -106,7 +106,7 @@ EXECxxx parameters).</p>         </td>
          <td><p>Explanation</p>         </td>
          <td><p>An action
 is envisaged at the end of a transfer or in the event of an error (see
-the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation, EXECxxx
+the {{< TransferCFT/componentshortname  >}} Online documentation, EXECxxx
 parameters); the file to be submitted is empty.</p>         </td>
       </tr>
    </tbody>
@@ -181,7 +181,7 @@ at the end of the transfer, the transfer ends normally.</p>         </td>
 that the characteristics of the buffer file are correct (attributes and
 length).</li>
 <li>Check that it
-exists (created or defined logically in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> startup procedure).</li>
+exists (created or defined logically in the {{< TransferCFT/componentshortname  >}} startup procedure).</li>
 <li>Contact Product Support.</li>
 </ul>         </td>
       </tr>
@@ -203,7 +203,7 @@ exists (created or defined logically in the <span class="mc-variable axway_varia
          <td><p>Explanation</p>         </td>
          <td><p>An action
 was requested at the end of a transfer or in the event of an error. This
-action is submitted (see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation,
+action is submitted (see the {{< TransferCFT/componentshortname  >}} Online documentation,
 EXECxxx parameters) through a buffer file (&amp;fname). The space reserved
 for this file proves insufficient.</p>         </td>
       </tr>
@@ -236,7 +236,7 @@ at the end of the transfer, the transfer ends normally.</p>         </td>
 (&amp;fname) could not be executed for a given transfer (&amp;idt).</p>
 <p>This procedure
 was requested at the end of a file or message transfer or in the event
-of an error (see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation
+of an error (see the {{< TransferCFT/componentshortname  >}} Online documentation
 EXECxxx parameters).</p>         </td>
       </tr>
       <tr>
@@ -338,7 +338,7 @@ file</p>
          <td><p>An action
 was requested at the end of a transfer or in the event of an error.</p>
 <p>This action
-is submitted (see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Online documentation,
+is submitted (see the {{< TransferCFT/componentshortname  >}} Online documentation,
 EXECxxx parameters) through a buffer file (&amp;fname). An allocation
 error was detected on this buffer file.</p>         </td>
       </tr>
@@ -353,7 +353,7 @@ at the end of the transfer, the transfer ends normally.</p>         </td>
 <li>Check that the
 characteristics of the buffer file are correct (attributes and length).</li>
 <li>Check that it
-exists (created or defined logically in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> startup procedure).</li>
+exists (created or defined logically in the {{< TransferCFT/componentshortname  >}} startup procedure).</li>
 <li>Contact
 Product Support.</li>
 </ul>         </td>
@@ -405,7 +405,7 @@ CFT messages will be written to the standard output (screen for example).</p>   
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Problem
-receiving an internal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message by the PROTOCOL task.</p>         </td>
+receiving an internal {{< TransferCFT/componentshortname  >}} message by the PROTOCOL task.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -431,7 +431,7 @@ receiving an internal <span class="mc-variable axway_variables.Component_Short_N
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Cannot run the end of transfer exit task. This message follows the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message CFTI01.</p>         </td>
+         <td><p>Cannot run the end of transfer exit task. This message follows the {{< TransferCFT/componentshortname  >}} message CFTI01.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -456,7 +456,7 @@ is not executed. If an end of transfer procedure was defined, it is run.</p>    
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Internal message to <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> giving information on the transfer
+         <td><p>Internal message to {{< TransferCFT/componentshortname  >}} giving information on the transfer
 context killed. The &amp;ctx values specify the context concerned.</p>         </td>
       </tr>
    </tbody>
@@ -476,8 +476,8 @@ context killed. The &amp;ctx values specify the context concerned.</p>         <
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>The exit
-task is run but does not respond to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. This corresponds
-to the initial phase establishing communications between the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and
+task is run but does not respond to the {{< TransferCFT/componentshortname  >}}. This corresponds
+to the initial phase establishing communications between the {{< TransferCFT/componentshortname  >}} and
 the exit task.</p>         </td>
       </tr>
       <tr>
@@ -507,13 +507,13 @@ exit</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Error posting a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message to the exit task during inter-task
+         <td><p>Error posting a {{< TransferCFT/componentshortname  >}} message to the exit task during inter-task
 communications.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>None on the actual transfer (catalog not updated). The exit
-is does not receive any directives from the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+is does not receive any directives from the {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
@@ -688,7 +688,7 @@ the CFTEXIT card.</p>         </td>
          <td><p>Error message specific to the end-of-transfer user exit. The details that display in the message depend on the CFTLOG format (v23 or v24).</p>
 <p><strong>Example</strong></p>
 <p>V24 format:</p>
-<p><span class="code">CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1 IDT=idt &gt;</span></p>
+<p><code>CFTS23E Bad User return code: 4 &lt;IDTU=idtu PART=part1 IDF=idf1  IDT=idt &gt;</code></p>
 <p>V23 format:</p>
 <p>CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt</p>         </td>
       </tr>
@@ -1120,7 +1120,7 @@ CFT log.</li>
 is submitted.</p>
 <ul>
 <li>When
-the alert ceases, a message CFTC30W is recorded in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log.</li>
+the alert ceases, a message CFTC30W is recorded in the {{< TransferCFT/componentshortname  >}} log.</li>
 </ul>
 <p>A batch, which is defined by the CFTCAT TLVCEXEC parameter,
 is submitted.</p>         </td>
@@ -1146,13 +1146,13 @@ or failed on access producing this error.</p>
 <ul>
 <li>When
 the critical fill threshold is reached, a message CFTC29W is recorded
-in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log.
+in the {{< TransferCFT/componentshortname  >}} log.
 <ul>
 <li>The batch, which is defined by the CFTCAT TLVWEXEC
 parameter, is not executed</li>
 </ul></li>
 <li>When
-the alert ceases, a message CFTC30W is recorded in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> log
+the alert ceases, a message CFTC30W is recorded in the {{< TransferCFT/componentshortname  >}} log
 <ul>
 <li>The batch, which is defined by the CFTCAT TLVCEXEC
 parameter, is not executed.</li>
@@ -1247,7 +1247,7 @@ Fatal         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> stops.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} stops.         </td>
       </tr>
       <tr>
          <td>Action         </td>
@@ -1335,11 +1335,11 @@ Fatal         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopping.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} is stopping.         </td>
       </tr>
       <tr>
          <td>Action         </td>
-         <td>If necessary, contact <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">AMPLIFY</span> support.         </td>
+         <td>If necessary, contact {{< TransferCFT/platformorsuiteshortname  >}} support.         </td>
       </tr>
    </tbody>
 </table>
@@ -1357,7 +1357,7 @@ Error         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td>A significant error occurred in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Java task (CFTJRE). The error is detailed in &amp;str.         </td>
+         <td>A significant error occurred in the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The error is detailed in &amp;str.         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
@@ -1365,7 +1365,7 @@ Error         </td>
       </tr>
       <tr>
          <td>Action         </td>
-         <td>If necessary, contact <span class="mc-variable axway_variables.Platform_or_Suite_Short_Name variable">AMPLIFY</span> support.         </td>
+         <td>If necessary, contact {{< TransferCFT/platformorsuiteshortname  >}} support.         </td>
       </tr>
    </tbody>
 </table>
@@ -1383,7 +1383,7 @@ Warning         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td>An anomaly occurred in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Java task (CFTJRE). The anomaly is detailed in &amp;str.         </td>
+         <td>An anomaly occurred in the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The anomaly is detailed in &amp;str.         </td>
       </tr>
    </tbody>
 </table>
@@ -1401,7 +1401,7 @@ Error         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
-         <td>Information message from the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Java task (CFTJRE). The &amp;str value gives additional details.         </td>
+         <td>Information message from the {{< TransferCFT/componentshortname  >}} Java task (CFTJRE). The &amp;str value gives additional details.         </td>
       </tr>
    </tbody>
 </table>
@@ -1423,7 +1423,7 @@ Error         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopping.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} is stopping.         </td>
       </tr>
       <tr>
          <td>Action         </td>
@@ -1468,7 +1468,7 @@ Error         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td>The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> instance does not display the correct status.         </td>
+         <td>The {{< TransferCFT/componentshortname  >}} instance does not display the correct status.         </td>
       </tr>
    </tbody>
 </table>

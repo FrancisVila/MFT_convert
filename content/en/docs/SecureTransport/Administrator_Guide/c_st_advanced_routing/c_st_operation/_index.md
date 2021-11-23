@@ -22,5 +22,5 @@ The advanced use cases are described:
 
 The following topics describes the basic and advanced use cases:
 
--   <a href="c_st_basic_use_cases" class="MCXref xref">Basic use cases</a> - Describes the basic use cases.
--   <a href="c_st_advanced_use_cases" class="MCXref xref">Advanced use cases</a> - Describes the advanced use cases.
+-   [Basic use cases](c_st_basic_use_cases) - Describes the basic use cases.
+-   [Advanced use cases](c_st_advanced_use_cases) - Describes the advanced use cases.

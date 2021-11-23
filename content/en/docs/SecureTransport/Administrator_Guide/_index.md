@@ -8,25 +8,25 @@
 
 ## For new users
 
-<a href="overview" class="MCXref xref">SecureTransport overview</a>
+[SecureTransport overview](overview)
 
 ## For existing users
 
-<a href="c_st_setup" class="MCXref xref">Setup</a>
+[Setup](c_st_setup)
 
-<a href="operations_menu" class="MCXref xref">Operations</a>
+[Operations](operations_menu)
 
-<a href="c_st_standardclustering" class="MCXref xref">Standard Cluster</a>
+[Standard Cluster](c_st_standardclustering)
 
-<a href="c_st_largeenterpriseclustering" class="MCXref xref">Enterprise Cluster</a>
+[Enterprise Cluster](c_st_largeenterpriseclustering)
 
-<a href="c_st_authentication" class="MCXref xref">Authentication</a>
+[Authentication](c_st_authentication)
 
-<a href="accounts" class="MCXref xref">Manage Accounts</a>
+[Manage Accounts](accounts)
 
-<a href="applications" class="MCXref xref">Applications</a>
+[Applications](applications)
 
-<a href="c_st_advanced_routing" class="MCXref xref">Advanced Routing</a>
+[Advanced Routing](c_st_advanced_routing)
 
 ## Get more help
 

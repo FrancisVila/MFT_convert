@@ -2,7 +2,7 @@
     "title": "TCP port management with Firewalls",
     "linkTitle": "TCP port management with Firewalls",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [About TCP port management](#About)
 
@@ -29,7 +29,7 @@ Define multiple listening ports as follows:
 
 If the Gateway host machine is connected to multiple TCP/IP networks, and is assigned more than one IP address, it may need to listen on multiple TCP/IP addresses (that correspond to a list of port numbers).
 
-Gateway enables you to define the list of ports to use for a given TCP/IP address. When you define a Remote Site, you can attribute a main address and three alternative addresses in the <span style="font-weight: bold;">[Network address](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab)</span> tab.
+Gateway enables you to define the list of ports to use for a given TCP/IP address. When you define a Remote Site, you can attribute a main address and three alternative addresses in the **[Network address](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here/managing_remote_sites/remote_site_network_address_tab)** tab.
 
 <span id="Assigning_TCP_origin_ports"></span>
 

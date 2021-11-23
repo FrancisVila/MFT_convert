@@ -15,7 +15,7 @@ It is consequently best to correctly set up the wait time-outs between
 transfers to optimize the use of network resources and avoid performance
 being degraded by the systematic establishing of a protocol connection.
 
-<span class="autonumber"></span>Time-out role
+Time-out role
 
 <img src="/Images/TransferCFT/Timeout_role3.gif" class="maxWidth" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
 
@@ -34,10 +34,10 @@ for the same pair of requester and server identifiers. In particular,
 a requester cannot request a transfer with its partner over a connection
 for which it was initially server.
 
-<span class="autonumber"></span>One-way protocol connection
+One-way protocol connection
 
 <img src="/Images/TransferCFT/One_way_protocol_connection.gif" class="maxWidth" width="714" height="439" alt="One way protocol session connection between requester and server" />
 
-<span class="autonumber"></span>Two-way protocol connection
+Two-way protocol connection
 
 <img src="/Images/TransferCFT/Two_way_protocol_connection.gif" class="maxWidth" width="722" height="372" alt="Two way protocol session connection between requester and server" />

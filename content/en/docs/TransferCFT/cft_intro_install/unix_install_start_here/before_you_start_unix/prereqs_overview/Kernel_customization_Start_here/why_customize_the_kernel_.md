@@ -21,19 +21,19 @@ presents the following related subjects:
 By default, you can only create a global memory segment for a size defined
 in terms of the kernel.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can attempt to create a 32 MB global memory segment. Transfer
+{{< TransferCFT/componentshortname  >}} can attempt to create a 32 MB global memory segment. Transfer
 CFT uses this global memory for data exchanges during the execution of
 various operational tasks. The 32 MB value represents the average size
 necessary to support efficient performance without slowing the system,
 due to memory saturation.
 
 We strongly recommend that you change the kernel configuration, even
-though <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> automatically adapts to the maximum size authorized
+though {{< TransferCFT/componentshortname  >}} automatically adapts to the maximum size authorized
 by the system. The reason for this is that if the memory is insufficient,
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> slows down significantly.
+{{< TransferCFT/componentshortname  >}} slows down significantly.
 
 In some cases, when receiving transfers from high-speed systems via
-TCP, you may notice interlocks preventing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> from running correctly.
+TCP, you may notice interlocks preventing {{< TransferCFT/componentshortname  >}} from running correctly.
 If the capacity of the system cannot support the resulting overload, you
 must reduce the number of concurrent transfers.
 
@@ -48,8 +48,8 @@ to at least 32 MB.
 By default, some UNIX systems allow a maximum of 40 unread messages
 to transit in a message queue.
 
-To guarantee optimum performance levels, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> maximizes its
-use of the message queues. It may be that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> requirements exceed
+To guarantee optimum performance levels, {{< TransferCFT/componentshortname  >}} maximizes its
+use of the message queues. It may be that {{< TransferCFT/componentshortname  >}} requirements exceed
 the system capacity. This is the case particularly over TCP networks,
 when the remote monitor + network configuration allows a throughput exceeding
 the capacities of the local system. This phenomenon becomes even more
@@ -69,13 +69,13 @@ the request is refused. However, when this saturation is due to the network,
 Open Server *waits* for space to be released on the local system
 so that it can continue processing.
 
-When this saturation phenomenon occurs, the remote <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> and network
+When this saturation phenomenon occurs, the remote {{< TransferCFT/hflongproductname  >}} and network
 permit an overall throughput that is too high for the local system, given
-the close link between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and the data transiting on the network,
+the close link between {{< TransferCFT/componentshortname  >}} and the data transiting on the network,
 so this space cannot be released. The phenomenon is even more likely if
 another application is also making intensive use of the network memory.
 
-To ensure <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operation, you must modify the kernel to increase
+To ensure {{< TransferCFT/componentshortname  >}} operation, you must modify the kernel to increase
 the size of the memory allocated to TCP.
 
 <span id="Number_of_files_used_by_a_process"></span>
@@ -85,10 +85,6 @@ the size of the memory allocated to TCP.
 By default, some UNIX systems allow a process to only open 64 files
 at the same time.
 
-If you do not modify this limit, you cannot use <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to its
+If you do not modify this limit, you cannot use {{< TransferCFT/componentshortname  >}} to its
 full potential: 64 concurrent transfers + link channels + listening channels
 + trace channels &gt; 64 open files.
-
-<span style="color: #000000;">To achieve 64 concurrent transfers, you must modify some of the kernel
-properties so that it can open as many files as possible; 1024 is suggested.
-</span>

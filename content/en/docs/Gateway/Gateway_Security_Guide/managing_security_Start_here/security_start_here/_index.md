@@ -2,7 +2,7 @@
     "title": "Transfer Security Management ",
     "linkTitle": "Transfer Security Management",
     "weight": "130"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 Gateway integrates a set of objects that you can use to manage your transfer security requirements.
 
@@ -58,7 +58,7 @@ This topic introduces Gateway profile processes. This book is divided into sub-b
 
 ## How Gateway establishes security
 
-Gateway uses <span style="font-weight: bold;">Network Profile</span> objects to determine whether an incoming connection must be secured. Network Profiles contain matching rules that Gateway applies to the incoming connection parameters (origin address, SAP, and so on). From the Network Profile that best matches the incoming connection, Gateway determines which Security Profile to use that provides all required security elements.
+Gateway uses **Network Profile** objects to determine whether an incoming connection must be secured. Network Profiles contain matching rules that Gateway applies to the incoming connection parameters (origin address, SAP, and so on). From the Network Profile that best matches the incoming connection, Gateway determines which Security Profile to use that provides all required security elements.
 
 The <span style="font-weight: bold;">Security Profile</span>, either TLS or SSH, is used to establish security for both incoming and outgoing connections. The Security Profile is a configuration set that determines which security protocol to use, which encryption method, and so on.
 

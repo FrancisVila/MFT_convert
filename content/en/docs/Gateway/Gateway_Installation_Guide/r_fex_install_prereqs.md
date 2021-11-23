@@ -30,7 +30,7 @@ For supported platforms, refer to the *SWIFTNet documentation*.
 
 To use Perl commands on UNIX, the following software must be installed:
 
--   <span class="mc-variable gateway_variables.PerlVersion variable">Perl version 5.24.0</span> 32-bit build on 32-bit UNIX deliveries or <span class="mc-variable gateway_variables.PerlVersion variable">Perl version 5.24.0</span> 64-bit build on 64-bit UNIX deliveries
+-   {{< Gateway/perlversion >}} 32-bit build on 32-bit UNIX deliveries or {{< Gateway/perlversion >}} 64-bit build on 64-bit UNIX deliveries
 -   C compiler for GIKCMDPL installation
 
 ### Perl commands on Windows
@@ -74,7 +74,7 @@ Java 1.6 (installed automatically by the Axway Installer)
 
 One of the following:
 
--   <span class="mc-variable suite_variables.AxwayDatabaseName variable">Axway Database</span> 4.6
+-   {{< Gateway/axwaydatabasename >}} 4.6
 -   MySQL Server 5.5 or 5.6
 -   Oracle 11g
 
@@ -127,7 +127,7 @@ This is important for AIX platforms as the default utility is not able to handle
       <tr>
          <td>Navigator Server         </td>
          <td>6390         </td>
-         <td><span class="mc-variable axway_variables.prodname.Gateway_Navigator_long variable">Gateway Navigator</span>Server (GUI Server)         </td>
+         <td>{{< Gateway/prodname  >}}Server (GUI Server)         </td>
       </tr>
       <tr>
          <td>RMA         </td>
@@ -139,6 +139,6 @@ This is important for AIX platforms as the default utility is not able to handle
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

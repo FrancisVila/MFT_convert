@@ -14,7 +14,7 @@ You can direct the transfer log data and server log data to the same database or
 3.  Select **Show Advanced Settings**.  
     The settings for the two additional databases are displayed.
 4.  Under *Enterprise Clustering - Oracle External Database - Transfer Log* and *Enterprise Clustering - Oracle External Database - Server Log*, type the values necessary to connect to the external databases. To continue to use the primary database, retain the default values.  
-    For description of the required values, see <a href="../t_st_database#top" class="MCXref xref">Migrate from embedded database to external Oracle database</a>.
+    For description of the required values, see [Migrate from embedded database to external Oracle database](../t_st_database#top).
 5.  For each database, click **Test Connection to Oracle Database**.  
     If {{< SecureTransport/componentshortname >}} displays a failure message, correct the network, Oracle, or other error reported and try again.
 6.  Type the passwords again and click **Save**.  
@@ -27,7 +27,7 @@ You can direct the transfer log data and server log data to the same database or
 
 **Related topics:**
 
--   <a href="../t_st_mysql" class="MCXref xref">Change the embedded database configuration</a>
--   <a href="../t_st_database" class="MCXref xref">Migrate from embedded database to external Oracle database</a>
--   <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>
--   <a href="../t_st_sqlserver" class="MCXref xref">Change the external Microsoft SQL Server database</a>
+-   [Change the embedded database configuration](../t_st_mysql)
+-   [Migrate from embedded database to external Oracle database](../t_st_database)
+-   [Change the Oracle database configuration](../t_st_oracle)
+-   [Change the external Microsoft SQL Server database](../t_st_sqlserver)

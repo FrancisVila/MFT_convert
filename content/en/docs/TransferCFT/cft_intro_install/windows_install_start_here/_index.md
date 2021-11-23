@@ -4,7 +4,7 @@
     "weight": "100"
 }<span id="Specifications_and_Prerequisites_for_CFT_Windows"></span>
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Windows specific operations
+## {{< TransferCFT/componentshortname  >}} Windows specific operations
 
 This section introduces prerequisite information as well as installation and information on operating Transfer CFT in Windows.
 
@@ -13,19 +13,19 @@ This section introduces prerequisite information as well as installation and inf
     functions]()
 -   Programming
     interfaces
--   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+-   {{< TransferCFT/componentshortname >}}
     client/server architecture
 
 The information in the Windows operations section
 may be supplemented, corrected, or even contradicted by the
-<span class="code">README.TXT</span> file or the Release Notes supplied with the product. The <span class="code">README.TXT</span> file and Release Notes take priority in this case.
+`README.TXT` file or the Release Notes supplied with the product. The `README.TXT` file and Release Notes take priority in this case.
 
 <span id="Product_presentation"></span>
 
 ## Product presentation
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can operate both as client and/or as server. The
-number of simultaneous transfers that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can support
+{{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
+number of simultaneous transfers that {{< TransferCFT/componentshortname  >}} can support
 is defined by the license key. It is also limited by the properties of
 the networks used. The TCP/IP network is supported.
 

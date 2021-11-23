@@ -2,7 +2,7 @@
     "title": "Multiple Identity Provider configuration",
     "linkTitle": "Multiple Identity Provider configuration",
     "weight": "170"
-}{{< SecureTransport/componentshortname  >}} supports the multiple Identity Provider configuration. First, you should configure every Identity Provider. Then, for every Identity provider follow the steps described for administrators and end-users. Refer to <a href="../c_st_enable_sso_admin#Enable" class="MCXref xref">Enable Single Sign-On (SSO) for administrators</a> and <a href="../c_st_enable_sso_endusers#Enable2" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a>.
+}{{< SecureTransport/componentshortname  >}} supports the multiple Identity Provider configuration. First, you should configure every Identity Provider. Then, for every Identity provider follow the steps described for administrators and end-users. Refer to [Enable Single Sign-On (SSO) for administrators](../c_st_enable_sso_admin#Enable) and [Enable Single Sign-On (SSO) for end-users](../c_st_enable_sso_endusers#Enable2).
 
 > **Note:**
 >

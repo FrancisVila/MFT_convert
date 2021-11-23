@@ -2,7 +2,7 @@
     "title": "Transfer command basics",
     "linkTitle": "Transfer concepts",
     "weight": "140"
-}The transfer concept topics introduce the various <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> transfer
+}The transfer concept topics introduce the various {{< TransferCFT/componentshortname  >}} transfer
 processes. For general transfer principles, refer to the introductory
 overview section.
 
@@ -83,7 +83,7 @@ The commands associated with the transfers are listed in the table below.
    </tbody>
 </table>
 
-For each command, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> command interface performs the following
+For each command, the {{< TransferCFT/componentshortname  >}} command interface performs the following
 actions:
 
 -   Checks the syntax

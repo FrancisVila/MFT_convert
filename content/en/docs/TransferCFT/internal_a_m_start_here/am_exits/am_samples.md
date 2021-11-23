@@ -2,9 +2,9 @@
     "title": "Delivered Access Management exit samples",
     "linkTitle": "Delivered exit samples",
     "weight": "210"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
-Axway delivers an Access Management exit sample, examsmp1.c, in the <span class="code">&lt;CFTDIRRUNTIME>/src/exit</span> directory.
+Axway delivers an Access Management exit sample, examsmp1.c, in the `<CFTDIRRUNTIME>/src/exit` directory.
 
 ### Services provided by delivered sample
 
@@ -21,8 +21,8 @@ The delivered sample provides two services, authentication and permissions check
    <tbody>
       <tr>
          <td>examsmp1.c         </td>
-         <td>System authentication (<span class="italic_in_para">Windows only</span>)         </td>
-         <td>Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> model         </td>
+         <td>System authentication ()         </td>
+         <td>Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> model         </td>
       </tr>
    </tbody>
 </table>
@@ -31,25 +31,24 @@ The delivered sample provides two services, authentication and permissions check
 
 To build the exit:
 
-Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
+1.  Change the directory to: &lt;CFTDIRRUNTIME>/src/exit
+2.  Run the following command:
 
-Run the following command:
+-   UNIX: `make`
+-   Windows: `nmake -f exit.mak`
 
--   UNIX: <span class="code">make</span>
--   Windows: <span class="code">nmake -f exit.mak</span>
-
-The output is a library located at <span class="code">&lt;CFTDIRRUNTIME>/lib/libcftexam.(so/dll)</span>.
+The output is a library located at `<CFTDIRRUNTIME>/lib/libcftexam.(so/dll)`.
 
 ## Flat file based on flat RBAC 
 
-To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Role Based Access Control</span></a> (Role Based Access Control) located in: <span class="code">&lt;CFTDIRRUNTME>/conf/exam.csv</span>. This file contains a set of permission and user assignments.
+To check users rights, Axway delivers a sample flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> (Role Based Access Control) located in: `<CFTDIRRUNTME>/conf/exam.csv`. This file contains a set of permission and user assignments.
 
 ![Simplied diagram of relationship between users, roles and permissions](/Images/TransferCFT/am_exits_rbac.GIF)
 
 ## Assigning permission
 
 The following line shows how to add a permission to a role:  
-<span class="code">&lt;cmd\_type> &lt;role> &lt;resource> &lt;actions> &lt;policy></span>
+`<cmd_type> <role> <resource> <actions> <policy>`
 
 Where:
 
@@ -116,7 +115,7 @@ All permissions for the ADMIN role except for the resource “TRANSFER”:
 ## Assigning users
 
 The following line shows how to add a user to a role:  
-<span class="code">&lt;cmd\_type> &lt;role> &lt;users></span>
+`<cmd_type> <role> <users>`
 
 <table>
    <thead>
@@ -187,9 +186,9 @@ Predefined roles
    </tbody>
 </table>
 
-The resources and available actions for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> are listed in the PassPort AM CSD file.
+The resources and available actions for {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
 
-After installing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, access the CSD file:
+After installing {{< TransferCFT/componentshortname  >}}, access the CSD file:
 
 &lt;Transfer CFT install directory>/distrib/am/csd\_Transfer\_CFT.xml
 

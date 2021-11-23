@@ -8,24 +8,24 @@
 
 **UNIX/Windows only**
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances over high bandwidth networks.
+The {{< TransferCFT/componentshortname  >}} acceleration feature offers significantly faster transfer rates for large-file transfers, traveling long-distances over high bandwidth networks.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> achieves this transfer acceleration using two methods:
+{{< TransferCFT/componentshortname  >}} achieves this transfer acceleration using two methods:
 
 -   UDT: a UDP-based protocol (User Datagram Protocol)
 -   pTCP: parallel TCP, which uses multiple parallel connections
 
 ### UDT description
 
-UDT is a transport protocol that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
+UDT is a transport protocol that {{< TransferCFT/componentshortname  >}} can use to manage applications over high-speed networks. UDT uses UDP, a lower layer message, to transfer bulk data.
 
 ## Configuring accelerated communication
 
-To enable accelerated communication in CFTUTIL use the unified configuration command <span class="code">UCONFSET</span>.
+To enable accelerated communication in CFTUTIL use the unified configuration command `UCONFSET`.
 
 ### Basic configuration
 
-You can globally enable or disable the acceleration function in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
+You can globally enable or disable the acceleration function in the {{< TransferCFT/componentshortname  >}} unified configuration. Next, indicate the network resources that you want to have accelerated by UDT and pTCP.
 
 #### Parameters
 
@@ -114,11 +114,11 @@ Additional attribute parameters are available for advanced users. The default va
 
 #### UDT parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table <span class="code">acceleration.udt.&lt;logicalID></span>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.udt.<logicalID>`.
 
 #### pTCP parameters
 
-Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table <span class="code">acceleration.ptcp.&lt;logicalID></span>.
+Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) table `acceleration.ptcp.<logicalID>`.
 
 > **Note:**
 >
@@ -128,12 +128,12 @@ Refer to the [UCONF parameters](../../../admin_intro/uconf/uconf_directory) tab
 
 ## pTCP protocol versions
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 3.0.1 SP2 and higher, and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. This newer version of pTCP offers the following advantages:
+{{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, support a more recent version of the pTCP protocol than previously supported by {{< TransferCFT/componentshortname  >}}. This newer version of pTCP offers the following advantages:
 
 -   Multi-node architecture support
 -   Exchange capability with Axway SecureTransport
 
-Note that the new pTCP support is <span class="bold_in_para">not </span>compatible with the previously used version of pTCP. This means that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 3.0.1 SP2 and higher, and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 2.7.1 SP6, <span class="bold_in_para">cannot </span>exchange files with earlier versions of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the pTCP protocol.
+Note that the new pTCP support is **not** compatible with the previously used version of pTCP. This means that {{< TransferCFT/componentshortname  >}} 3.0.1 SP2 and higher, and {{< TransferCFT/componentshortname  >}} 2.7.1 SP6, **cannot** exchange files with earlier versions of {{< TransferCFT/componentshortname  >}} using the pTCP protocol.
 
 For more information on supported platforms and transfer acceleration, refer to Platform-specific functionality.
 

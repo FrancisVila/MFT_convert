@@ -2,29 +2,29 @@
     "title": "Paired Axway Gateways in a DMZ",
     "linkTitle": "Paired Gateways in a DMZ",
     "weight": "180"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-[About paired <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> DMZs](#About_paired_Gateways_in_DMZ)
+[About paired {{< Gateway/componentlongname  >}} DMZs](#About_paired_Gateways_in_DMZ)
 
-[Using paired <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>s in DMZs](#Using_paired_Gateways_in_DMZ)
+[Using paired {{< Gateway/componentlongname  >}}s in DMZs](#Using_paired_Gateways_in_DMZ)
 
-[Transfer scenarios using paired <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>s in the DMZ](#Paired_Gateways_Transfer_Scenarios)
+[Transfer scenarios using paired {{< Gateway/componentlongname  >}}s in the DMZ](#Paired_Gateways_Transfer_Scenarios)
 
 [Managing DMZ-related transfer failures](#Managing_DMZ_related_transfer_failures)
 
 <span id="About_paired_Gateways_in_DMZ"></span>
 
-## About paired <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span> DMZs
+## About paired {{< Gateway/componentlongname  >}} DMZs
 
 To provide secure links between your corporate network applications and file-exchange partners located on the Internet, you can deploy Gateways in a DMZ protected architecture.
 
 For an overview of Gateway DMZ solutions, refer to [Overview: DMZ deployment](../../../../gateway_userguide_(primary)/ov_gateway/ov_dmz_deployment).
 
-You have the option of deploying paired Gateways in a secure DMZ bridge configuration. Alternatively, you can use the [<span class="mc-variable axway_variables.Company_Name variable">Axway</span> <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>](../secure_relay_about) option for DMZ configurations.
+You have the option of deploying paired Gateways in a secure DMZ bridge configuration. Alternatively, you can use the [{{< Gateway/companyname  >}} {{< Gateway/securerelayname  >}}](../secure_relay_about) option for DMZ configurations.
 
 <span id="Using_paired_Gateways_in_DMZ"></span>
 
-## Using paired <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>s in DMZs
+## Using paired {{< Gateway/componentlongname  >}}s in DMZs
 
 ### General considerations
 
@@ -41,7 +41,7 @@ When you create a DMZ by deploying paired Gateways, you configure the Gateways t
 
 #### Private Gateway
 
-A <span style="font-style: italic;">private</span> Gateway contains definitions that enable the applications situated in your corporate network to act as servers and/or clients for exchanges with Internet partners.
+A *private* Gateway contains definitions that enable the applications situated in your corporate network to act as servers and/or clients for exchanges with Internet partners.
 
 You control the identity of intranet applications that connect to the private Gateway via [Remote Site objects](../../../../gateway_userguide_(primary)/managing_partners_start_here/sites_start_here).
 
@@ -51,7 +51,7 @@ On your private Gateway you decrypt incoming files. You can scan decrypted files
 
 #### Public Gateway
 
-A <span style="font-style: italic;">public</span> Gateway contains definitions of all external Internet partners.
+A *public* Gateway contains definitions of all external Internet partners.
 
 In your public Gateway, to control the identities and possible connection attempts of your external Internet partners, you create:
 
@@ -80,7 +80,7 @@ To enable the public Gateway to initiate transfers towards the private Gateway, 
 
 In this case, using the GUI you set the following attributes of the Remote Site object that defines the receiving Site:
 
--   Clear all <span style="font-style: italic;">initiator</span> role check boxes in the <span style="font-weight: bold;">General</span> tab
+-   Clear all *initiator* role check boxes in the **General** tab
 -   Select the <span style="font-style: italic;">Change direction support</span> option of the <span style="font-weight: bold;">PeSIT</span> tab
 -   Enter a polling interval in the <span style="font-weight: bold;">PeSIT</span> tab
 

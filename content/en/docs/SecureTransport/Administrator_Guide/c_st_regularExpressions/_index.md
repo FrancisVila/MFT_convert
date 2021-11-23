@@ -21,10 +21,10 @@ For matching file names with the glob pattern method, SecureTransport uses `org.
 
 The following topics describe the components of {{< SecureTransport/componentshortname  >}} regular expressions:
 
--   <a href="r_st_regularexpressioncharacters" class="MCXref xref">Regular expression characters</a>
--   <a href="r_st_regularexpressiongeneralcharacterclasses" class="MCXref xref">General character classes</a>
--   <a href="r_st_regularexpressionpredefinedcharacterclasses" class="MCXref xref">Predefined character classes</a>
--   <a href="r_st_regularexpressionboundarymatches" class="MCXref xref">Boundary matches</a>
--   <a href="r_st_regularexpressionclosures" class="MCXref xref">Regular expression closures</a>
--   <a href="r_st_regularexpressionlogicalandgroupingoperators" class="MCXref xref">Logical and grouping operators</a>
--   <a href="r_st_regularexpressionbackreferences" class="MCXref xref">Back references</a>
+-   [Regular expression characters](r_st_regularexpressioncharacters)
+-   [General character classes](r_st_regularexpressiongeneralcharacterclasses)
+-   [Predefined character classes](r_st_regularexpressionpredefinedcharacterclasses)
+-   [Boundary matches](r_st_regularexpressionboundarymatches)
+-   [Regular expression closures](r_st_regularexpressionclosures)
+-   [Logical and grouping operators](r_st_regularexpressionlogicalandgroupingoperators)
+-   [Back references](r_st_regularexpressionbackreferences)

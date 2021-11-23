@@ -13,6 +13,6 @@ Ports used for communication outside the firewall (for the servers that you plan
 
 **Related topics:**
 
--   <a href="../r_st_communication_between_outside" class="MCXref xref">Communication between the outside and SecureTransport Edge</a>
--   <a href="../r_st_communication_between" class="MCXref xref">Communication between SecureTransport Server and SecureTransport Edge</a>
--   <a href="../r_st_communication_between_server_internal_network" class="MCXref xref">Communication between SecureTransport Server and an internal network</a>
+-   [Communication between the outside and SecureTransport Edge](../r_st_communication_between_outside)
+-   [Communication between SecureTransport Server and SecureTransport Edge](../r_st_communication_between)
+-   [Communication between SecureTransport Server and an internal network](../r_st_communication_between_server_internal_network)

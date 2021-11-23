@@ -131,3 +131,5 @@ SEND PART=LOOP,IDF=TEST,FNAME=CFTPROD/TEST
     From . . . : CFT 04/02/15 17:12:51
     CFTS20I Communication file row number deleted: 00000033
     From . . . : CFT 04/02/15 17:12:51
+
+LLL

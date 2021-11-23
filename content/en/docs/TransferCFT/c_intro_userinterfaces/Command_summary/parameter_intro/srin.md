@@ -11,7 +11,7 @@
 \[SRIN = { BOTH | NONE | SENDER | RECEIVER
 }\]
 
-<span style="font-weight: bold;">Server mode only</span>
+**Server mode only**
 
 Select the direction of transfers, for either files or messages, authorized
 for this protocol on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:

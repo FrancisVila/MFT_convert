@@ -27,8 +27,8 @@ The value of this parameter is a left aligned 8-character string.
 The destination of these messages may be, according to the system:
 
 -   the
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> "submitter" corresponding to the standard
-    output associated with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (the submittal screen,
+    {{< TransferCFT/componentshortname >}} "submitter" corresponding to the standard
+    output associated with the {{< TransferCFT/componentshortname >}} (the submittal screen,
     for example)  
     The value of the NOTIFY parameter must be then be set to ‘ ’ (8 blank
     characters)
@@ -186,13 +186,13 @@ For the user:
       <tr>
          <td><p>MVS (z/OS)</p>         </td>
          <td><p>Sent by SEND to the specified
-TSO USERID; in this case, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> program
+TSO USERID; in this case, the {{< TransferCFT/componentshortname  >}} program
 must be authorized (APF).</p>         </td>
       </tr>
       <tr>
          <td><p>VMS</p>         </td>
          <td><p>Sent to the "VMS User " designated
-by its VMS name. In this case, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task
+by its VMS name. In this case, the {{< TransferCFT/componentshortname  >}} task
 must have the OPER privilege.</p>         </td>
       </tr>
    </tbody>

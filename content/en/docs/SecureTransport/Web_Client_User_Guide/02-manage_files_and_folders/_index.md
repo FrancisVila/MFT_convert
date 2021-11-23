@@ -52,7 +52,7 @@ To upload files with the **Upload** button, follow the conventional process:
     Press **Ctrl** or **Shift** on your keyboard and with your mouse left-click to select multiple files.
 3.  Click **Open**: your file(s) gets uploaded to the chosen folder.
 
-You can track the status of the files in the *Uploads* pane. For information on how to manage and monitor file uploads, see <a href="022-managing_uploads" class="MCXref xref">Manage uploads</a>.
+You can track the status of the files in the *Uploads* pane. For information on how to manage and monitor file uploads, see [Manage uploads](022-managing_uploads).
 
 <span id="View"></span>
 
@@ -101,7 +101,7 @@ The user interface allows you to share one folder at a time. To share a folder:
 1.  On the *Your files* page, select a folder to share.
 2.  Click **Share**. The *Share* panel is displayed.  
     <img src="/Images/SecureTransport/WC_Share_folder.png" class="maxWidth" alt="ST Web Client Shared window" />
-3.  Enter valid email address or group name in the *People:* field. You can add additional valid user email addresses one at time. You can also select the Address Book to add people or groups. See <a href="021-address_book" class="MCXref xref">Address Book</a>.
+3.  Enter valid email address or group name in the *People:* field. You can add additional valid user email addresses one at time. You can also select the Address Book to add people or groups. See [Address Book](021-address_book).
 4.  (Optional) Select **Allow people to view collaborators** to show a list of collaborators.
 5.  (Optional) Select **Send notification to collaborators** to send email notifications to the collaborators.
 6.  (Optional) Select **Notify me when a file is uploaded** to be notified when a file is uploaded to the shared folder.

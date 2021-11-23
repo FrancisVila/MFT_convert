@@ -9,7 +9,7 @@
 #### CFTEXIT
 
 **\[<span id="PROG1"></span>PROG = {<u>CFTEXIT</u>
-| *string* <span style="font-weight: bold;">(1 …512)</span>}\]**
+| *string* **(1 …512)**}\]**
 
 Enter the name of the executable module that corresponds to the EXIT
 task to activate. This module comprises the interface provided with the

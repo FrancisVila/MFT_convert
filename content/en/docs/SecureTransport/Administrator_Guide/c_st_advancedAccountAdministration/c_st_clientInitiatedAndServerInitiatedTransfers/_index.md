@@ -26,7 +26,7 @@ In addition to the protocols mentioned above, the Folder Monitor can be used for
 -   For outbound transfers, {{< SecureTransport/componentshortname >}} can copy the files to a specified folder.
 -   For inbound transfers, {{< SecureTransport/componentshortname >}} can monitor the folder for newly arrived files and use the event to trigger an application executing specific tasks.
 
-Any server-initiated transfer requires an account to be subscribed to an application based on one of the application types: Standard Router, Site Mailbox, Shared Folder, Basic Application, File Transfer via File Service Interface, Human to System, or {{< SecureTransport/advancedrouting  >}}. For detailed information about application types and applications, see <a href="../../applications" class="MCXref xref">Applications</a>.
+Any server-initiated transfer requires an account to be subscribed to an application based on one of the application types: Standard Router, Site Mailbox, Shared Folder, Basic Application, File Transfer via File Service Interface, Human to System, or {{< SecureTransport/advancedrouting  >}}. For detailed information about application types and applications, see [Applications](../../applications).
 
 > **Note:**
 >
@@ -34,11 +34,11 @@ Any server-initiated transfer requires an account to be subscribed to an applica
 
 The following topics describe managing client-initiated and server-initiated transfers:
 
--   <a href="c_st_transfer_mode_for_server-initiated_transfers" class="MCXref xref">Transfer mode for server-initiated transfers</a> - Describes the transfer mode for server-initiated transfers.
--   <a href="c_st_transfer_multiple_files" class="MCXref xref">Transfer multiple files</a> - Describes transfers of single and multiple files.
--   <a href="c_st_configure_retry_parameters_for_server-initiated_transfers" class="MCXref xref">Configure retry parameters for server-initiated transfers</a> - Describes configuring the retry parameters for server-initiated transfers.
--   <a href="c_st_outgoing_connections" class="MCXref xref">Outgoing connections</a> - Describes the outgoing connections.
--   <a href="r_st_authentication" class="MCXref xref">Authentication</a> - Lists the authentication methods for connecting to a remote site for different protocols.
--   <a href="c_st_server_authentication" class="MCXref xref">Server authentication</a> - Describes server authentication.
--   <a href="c_st_limitations" class="MCXref xref">Limitations</a> - Lists the server‑initiated transfer limitations.
--   <a href="c_st_encryption_server-initiated_transfers" class="MCXref xref">Encryption and server-initiated transfers</a> - Describes using encryption with server-initiated transfers.
+-   [Transfer mode for server-initiated transfers](c_st_transfer_mode_for_server-initiated_transfers) - Describes the transfer mode for server-initiated transfers.
+-   [Transfer multiple files](c_st_transfer_multiple_files) - Describes transfers of single and multiple files.
+-   [Configure retry parameters for server-initiated transfers](c_st_configure_retry_parameters_for_server-initiated_transfers) - Describes configuring the retry parameters for server-initiated transfers.
+-   [Outgoing connections](c_st_outgoing_connections) - Describes the outgoing connections.
+-   [Authentication](r_st_authentication) - Lists the authentication methods for connecting to a remote site for different protocols.
+-   [Server authentication](c_st_server_authentication) - Describes server authentication.
+-   [Limitations](c_st_limitations) - Lists the server‑initiated transfer limitations.
+-   [Encryption and server-initiated transfers](c_st_encryption_server-initiated_transfers) - Describes using encryption with server-initiated transfers.

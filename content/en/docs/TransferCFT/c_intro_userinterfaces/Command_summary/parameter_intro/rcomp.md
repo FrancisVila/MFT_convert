@@ -36,7 +36,7 @@ Default values are:
    </tbody>
 </table>
 
-See also <span style="font-weight: bold;">[scomp](../scomp)</span>.
+See also **[scomp](../scomp)**.
 
 For more information (usable values etc.), refer to the *Compression*
 topic.

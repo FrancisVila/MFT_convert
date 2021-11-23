@@ -14,5 +14,5 @@ Site template properties are the same as those of a transfer site for the same p
 
 The following topics describe how to manage site templates and how to use a site template to define a transfer site:
 
--   <a href="t_st_sitetemplates" class="MCXref xref">Manage site templates</a> - Provides how-to instructions for managing site templates.
--   <a href="t_st_usesitetemplate" class="MCXref xref">Use a site template to define a transfer site</a> - Provides how-to instructions for using a site template to define a transfer site.
+-   [Manage site templates](t_st_sitetemplates) - Provides how-to instructions for managing site templates.
+-   [Use a site template to define a transfer site](t_st_usesitetemplate) - Provides how-to instructions for using a site template to define a transfer site.

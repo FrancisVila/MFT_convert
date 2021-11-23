@@ -72,11 +72,11 @@ The following example creates both a private and public key. You can then export
 
 4.  Locate the KPUBxxxx file, which is in the same folder as the extracted PKI information (KEY\_2048.CFG).
 
-5.  Use the same four digits as in the IKNAME to locate the KPUB file. For example, if the IKNAME is <span style="color: #b22222;">KPRIV1234 </span>the KPUB that you need is <span style="color: #b22222;">KPUB1234</span>.  
+5.  Use the same four digits as in the IKNAME to locate the KPUB file. For example, if the IKNAME is the KPUB that you need is .  
     This public key is in SSH-RSA format and can be used on other SFTP clients.
 
-6.  On the remote <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> import the public key, KPUB1234 in our example, using the PKIKEY command.  
+6.  On the remote {{< TransferCFT/componentlongname >}} import the public key, KPUB1234 in our example, using the PKIKEY command.  
 
 
 
-        PKIUTIL PKIKEY ID=KPUB1234, ikname=KPUB1234, ikform=SSH, MODE=REPLACE
+        PKIUTIL PKIKEY ID=, ikname=, ikform=SSH, MODE=REPLACE

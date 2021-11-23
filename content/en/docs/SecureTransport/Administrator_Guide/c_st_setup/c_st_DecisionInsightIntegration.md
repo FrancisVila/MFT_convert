@@ -16,16 +16,16 @@ For addition information please refer to the official confluence page [Embedded 
 
 The following topics provide additional for the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/decisioninsightname  >}} integration:
 
--   <a href="#Event" class="MCXref xref">Event states</a> - Describes the {{< SecureTransport/decisioninsightname >}} event states.
--   <a href="#Tracked" class="MCXref xref">Tracked objects</a> - Lists the attributes of the Tracked Objects used to report {{< SecureTransport/componentlongname >}} events to {{< SecureTransport/decisioninsightname >}}.
--   <a href="#XFB" class="MCXref xref">XFB Transfer tracked objects</a> - Describes the XFB transfer tracked objects.
--   <a href="#Configur" class="MCXref xref">Configure SecureTransport to send events to Decision Insight</a> - Provides how-to instructions for configuring {{< SecureTransport/componentshortname >}} to send events to {{< SecureTransport/decisioninsightname >}}.
+-   [Event states](#Event) - Describes the {{< SecureTransport/decisioninsightname >}} event states.
+-   [Tracked objects](#Tracked) - Lists the attributes of the Tracked Objects used to report {{< SecureTransport/componentlongname >}} events to {{< SecureTransport/decisioninsightname >}}.
+-   [XFB Transfer tracked objects](#XFB) - Describes the XFB transfer tracked objects.
+-   [Configure SecureTransport to send events to Decision Insight](#Configur) - Provides how-to instructions for configuring {{< SecureTransport/componentshortname >}} to send events to {{< SecureTransport/decisioninsightname >}}.
 
 <span id="Event"></span>
 
 ## Event states
 
-An event state specifies the current state of a file transfer. Every event in the same group about one file transfer is identified using the same cycle ID. For Axway Sentinel events information, refer to <a href="../c_st_sentinelintegration/r_st_sentineleventstates" class="MCXref xref">Event states</a>.
+An event state specifies the current state of a file transfer. Every event in the same group about one file transfer is identified using the same cycle ID. For Axway Sentinel events information, refer to [Event states](../c_st_sentinelintegration/r_st_sentineleventstates).
 
 The following event states indicate a transfer start and end.
 
@@ -126,7 +126,7 @@ The following event states indicate a post processing action.
 
 ## Tracked objects
 
-This topic lists the attributes of the Tracked Objects used to {{< SecureTransport/componentshortname  >}} events to {{< SecureTransport/decisioninsightname  >}}. For information on all the of standard attributes, refer to <a href="../c_st_sentinelintegration/r_st_sentineltrackedobjects" class="MCXref xref">Axway Sentinel tracked objects</a>.
+This topic lists the attributes of the Tracked Objects used to {{< SecureTransport/componentshortname  >}} events to {{< SecureTransport/decisioninsightname  >}}. For information on all the of standard attributes, refer to [Axway Sentinel tracked objects](../c_st_sentinelintegration/r_st_sentineltrackedobjects).
 
 The attributes that {{< SecureTransport/decisioninsightname  >}} uses to build the dashboards are:
 
@@ -216,7 +216,7 @@ The attributes that {{< SecureTransport/decisioninsightname  >}} uses to build t
 
 ## XFB Transfer tracked objects
 
-This topic provides the XFB tracked object roles, sender and receivers, production identification, and transfer attributes. For more information, refer to <a href="../c_st_sentinelintegration/r_st_xfb_toattributes" class="MCXref xref">XFB Tracked Object attributes</a>.
+This topic provides the XFB tracked object roles, sender and receivers, production identification, and transfer attributes. For more information, refer to [XFB Tracked Object attributes](../c_st_sentinelintegration/r_st_xfb_toattributes).
 
 <span id="Configur"></span>
 
@@ -252,6 +252,6 @@ The setting applies to all servers in your Enterprise Cluster (EC). Each server 
     >
     > The Event states that indicate transfer start and end must be enabled to build Decision Insight dashboards. Refer to Event states.
 
-9.  In the *Overflow file* pane, specify information about the file to be used to store {{< SecureTransport/componentshortname >}} event data when there is no connection between {{< SecureTransport/componentshortname >}} and {{< SecureTransport/decisioninsightname >}}. For more information, refer to <a href="../c_st_sentinelintegration/t_st_sentinel" class="MCXref xref">Configure SecureTransport to send events to Axway Sentinel</a>.
+9.  In the *Overflow file* pane, specify information about the file to be used to store {{< SecureTransport/componentshortname >}} event data when there is no connection between {{< SecureTransport/componentshortname >}} and {{< SecureTransport/decisioninsightname >}}. For more information, refer to [Configure SecureTransport to send events to Axway Sentinel](../c_st_sentinelintegration/t_st_sentinel).
 
 10. Click **Save**.

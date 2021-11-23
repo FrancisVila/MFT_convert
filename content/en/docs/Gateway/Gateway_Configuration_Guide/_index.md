@@ -10,35 +10,35 @@
    <tbody>
       <tr>
          <td><p><strong>Options available with AIX systems</strong></p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> for AIX supports COMMUNICATION SERVER 5 SNA LU 6.2 Services through the CPIC programming interface.</p>         </td>
+         <td><p>{{< Gateway/componentshortname  >}} for AIX supports COMMUNICATION SERVER 5 SNA LU 6.2 Services through the CPIC programming interface.</p>         </td>
       </tr>
    </tbody>
 </table>
 
 ## TCP/IP network interface configuration
 
-To work with TCP/IP, <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> requires the following information:
+To work with TCP/IP, {{< Gateway/componentshortname  >}} requires the following information:
 
--   The **local port numbers** where <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> listens in order to receive incoming connections.  
-    You must assign a different port number to each configured file transfer protocol. Make sure that these port numbers are not currently in use, and that no application on the system will try to use them during operation. It is recommended that you select port numbers in the range **5000** to **65000**. Configure the port numbers in the configuration menu and then restart <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>.
+-   The **local port numbers** where {{< Gateway/componentshortname >}} listens in order to receive incoming connections.  
+    You must assign a different port number to each configured file transfer protocol. Make sure that these port numbers are not currently in use, and that no application on the system will try to use them during operation. It is recommended that you select port numbers in the range **5000** to **65000**. Configure the port numbers in the configuration menu and then restart {{< Gateway/componentshortname >}}.
 -   Either a **host name** or **IP address** to use as authoritative host for incoming connections.  
     Use one of the following:
     -   The host name of the local machine
     -   The looped address (localhost or 127.0.0.1)
     -   An empty address
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> Site objects group all parameters that apply to outgoing connections. For each remote machine and each configured file transfer protocol, you must create a Site object where you supply the TCP/IP address and port number that the remote machine expects for that protocol. To create <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> Sites, use either the Windows GUI or the peladm line command.
+{{< Gateway/componentshortname  >}} Site objects group all parameters that apply to outgoing connections. For each remote machine and each configured file transfer protocol, you must create a Site object where you supply the TCP/IP address and port number that the remote machine expects for that protocol. To create {{< Gateway/componentshortname  >}} Sites, use either the Windows GUI or the peladm line command.
 
 ### Example
 
-The following example creates a Site using the command <span class="code">peladm create\_site</span> for a Site in PHSE protocol at dotted IP address <span class="bold_in_para">193.56.234.50</span> and port number <span class="bold_in_para">22001</span>:
+The following example creates a Site using the command `peladm create_site` for a Site in PHSE protocol at dotted IP address **193.56.234.50** and port number **22001**:
 
 
     peladm create_site  -pr PHSE  -a SITE1  -pi SITE1
                             
                         -da 193.56.234.50/22001
 
-You can specify either the host name (when using DNS facilities), or the IP dotted address (such as 193.56.234.50) as the IP destination address fields for Sites to which <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> connects over TCP/IP.
+You can specify either the host name (when using DNS facilities), or the IP dotted address (such as 193.56.234.50) as the IP destination address fields for Sites to which {{< Gateway/componentshortname  >}} connects over TCP/IP.
 
 ## LU 6.2 network interface configuration
 
@@ -48,18 +48,18 @@ You can specify either the host name (when using DNS facilities), or the IP dott
    <tbody>
       <tr>
          <td><p>Hardware and software prerequisites</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> can communicate over LU 6.2 conversations using either SNA SERVER version 3 or COMMUNICATION SERVER version 5 SNA sub-systems.</p>         </td>
+         <td><p>{{< Gateway/componentshortname  >}} can communicate over LU 6.2 conversations using either SNA SERVER version 3 or COMMUNICATION SERVER version 5 SNA sub-systems.</p>         </td>
       </tr>
       <tr>
-         <td><p>Configuring <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> for CS5</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> requires AIX operating system version 5.1 or higher to support COMMUNICATION SERVER 5.</p>         </td>
+         <td><p>Configuring {{< Gateway/componentshortname  >}} for CS5</p>         </td>
+         <td><p>{{< Gateway/componentshortname  >}} requires AIX operating system version 5.1 or higher to support COMMUNICATION SERVER 5.</p>         </td>
       </tr>
    </tbody>
 </table>
 
 ### Configuring SNA connectivity
 
-A complete description of SNA connectivity configuration is beyond the scope of this document. Configurations can vary greatly depending on the topology of the SNA network. You can use the X-motif user interface <span class="bold_in_para">xsnaadmin</span> to configure SNA connectivity on your system.
+A complete description of SNA connectivity configuration is beyond the scope of this document. Configurations can vary greatly depending on the topology of the SNA network. You can use the X-motif user interface **xsnaadmin** to configure SNA connectivity on your system.
 
 To configure SNA connectivity, you define the following SNA configuration items:
 
@@ -99,11 +99,11 @@ To configure SNA connectivity, you define the following SNA configuration items:
    </tbody>
 </table>
 
-These configuration parameters are stored in the <span class="code">/etc/sna/sna\_domn.cfg</span> file.
+These configuration parameters are stored in the `/etc/sna/sna_domn.cfg` file.
 
 For a description of SNA connectivity parameters, refer to the related AIX Communication Server 5 documentation.
 
-The following examples of a sample<span class="code"> sna\_domn.cfg</span> file illustrate some of the parameters involved in the SNA connectivity configuration data.
+The following examples of a sample` sna_domn.cfg` file illustrate some of the parameters involved in the SNA connectivity configuration data.
 
 #### Example of local node configuration
 
@@ -209,7 +209,7 @@ The following examples of a sample<span class="code"> sna\_domn.cfg</span> file 
 
 ### Configuring APPC/CPIC resources
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> uses the CPIC programming Interface to communicate over SNA networks. In CS5, this API is based on the APPC interface. The following APPC resources enable <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> to operate with SNA:
+{{< Gateway/componentshortname  >}} uses the CPIC programming Interface to communicate over SNA networks. In CS5, this API is based on the APPC interface. The following APPC resources enable {{< Gateway/componentshortname  >}} to operate with SNA:
 
 -   Local LU
 -   Partner LU (on remote node)
@@ -220,11 +220,11 @@ The following examples of a sample<span class="code"> sna\_domn.cfg</span> file 
 
 You must define:
 
--   At least one resource of each type (with the possible exception of Remote Node), to allow <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> to operate as both initiator and responder
--   CPIC-side information to allow <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> to initiate connections to a remote machine
--   A transaction program for PeSIT E protocol to allow the SNA sub-system to start the appropriate <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> program on incoming conversations
+-   At least one resource of each type (with the possible exception of Remote Node), to allow {{< Gateway/componentshortname >}} to operate as both initiator and responder
+-   CPIC-side information to allow {{< Gateway/componentshortname >}} to initiate connections to a remote machine
+-   A transaction program for PeSIT E protocol to allow the SNA sub-system to start the appropriate {{< Gateway/componentshortname >}} program on incoming conversations
 
-Use the following menu entries from <span class="bold_in_para">xsnaadmin</span> to configure these items:
+Use the following menu entries from **xsnaadmin** to configure these items:
 
 <table>
    <thead>
@@ -274,28 +274,28 @@ Use the following menu entries from <span class="bold_in_para">xsnaadmin</span> 
    </tbody>
 </table>
 
-Local LU, partner LUs and mode definitions are stored in <span class="code">/etc/sna/sna\_node.cfg</span>.
+Local LU, partner LUs and mode definitions are stored in `/etc/sna/sna_node.cfg`.
 
-Transaction Program definitions are stored in <span class="code">/etc/sna/sna\_tps</span>.
+Transaction Program definitions are stored in `/etc/sna/sna_tps`.
 
-CPIC Side Info profiles are stored in <span class="code">/etc/sna/sna\_domn.cfg</span>.
+CPIC Side Info profiles are stored in `/etc/sna/sna_domn.cfg`.
 
 #### Defining local LU
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> can use a single local LU for both outgoing and incoming conversations. However, this type of configuration is not recommended.
+{{< Gateway/componentshortname  >}} can use a single local LU for both outgoing and incoming conversations. However, this type of configuration is not recommended.
 
-For example, you can define sets of local LUs for <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> as follows:
+For example, you can define sets of local LUs for {{< Gateway/componentshortname  >}} as follows:
 
--   <span class="bold_in_para">LPHE</span>:local LU for both incoming and outgoing conversations
+-   **LPHE**:local LU for both incoming and outgoing conversations
 
 or
 
--   <span class="bold_in_para">LPHEI</span>: local LU for incoming conversations only
--   <span class="bold_in_para">LPHEO</span>: local LU for outgoing conversations only
+-   **LPHEI**: local LU for incoming conversations only
+-   **LPHEO**: local LU for outgoing conversations only
 
 #### Example of local LU definition
 
-This is is an extract from <span class="code">/etc/sna/sna\_node.cfg</span>:
+This is is an extract from `/etc/sna/sna_node.cfg`:
 
 >     [define_local_lu]
 >     lu_alias = PHSEI
@@ -316,11 +316,11 @@ This is is an extract from <span class="code">/etc/sna/sna\_node.cfg</span>:
 
 #### Defining partner LU
 
-You must define a partner LU for each <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> Remote Site. To enable <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> to connect to that Site, you must also create a CPIC side info profile that points to that partner LU. For more information on CPIC side info profile creation, see <a href="#CPIC_side_info_AIX" class="MCXref xref">Defining CPIC side info</a>. When you create a partner LU name, you supply the fully qualified partner LU name.
+You must define a partner LU for each {{< Gateway/componentshortname  >}} Remote Site. To enable {{< Gateway/componentshortname  >}} to connect to that Site, you must also create a CPIC side info profile that points to that partner LU. For more information on CPIC side info profile creation, see <a href="#CPIC_side_info_AIX" class="MCXref xref">Defining CPIC side info</a>. When you create a partner LU name, you supply the fully qualified partner LU name.
 
 #### Example of partner LU definition
 
-This is an extract from <span class="code">/etc/sna/sna\_node.cfg</span>:
+This is an extract from `/etc/sna/sna_node.cfg`:
 
 >     [define_partner_lu]
 >     plu_alias = RS04
@@ -338,7 +338,7 @@ You must define all modes used for LU 6.2 conversations on all nodes intended to
 
 #### Example of mode definition
 
-This is an extract from <span class="code">/etc/sna/sna\_node.cfg</span>:
+This is an extract from `/etc/sna/sna_node.cfg`:
 
 >     [define_mode]
 >     mode_name = PHSEMODE
@@ -359,11 +359,11 @@ This is an extract from <span class="code">/etc/sna/sna\_node.cfg</span>:
 
 #### Defining CPIC side info
 
-You must create a CPIC side info profile for each Remote Site to which <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> may initiate LU 6.2 conversations. Apart from the CPIC side info profile, you must also create the corresponding Site object. You can create these objects in any order, but the CPIC side info profile that addresses a given Remote Site must exist when <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> attempts to connect to this Site.
+You must create a CPIC side info profile for each Remote Site to which {{< Gateway/componentshortname  >}} may initiate LU 6.2 conversations. Apart from the CPIC side info profile, you must also create the corresponding Site object. You can create these objects in any order, but the CPIC side info profile that addresses a given Remote Site must exist when {{< Gateway/componentshortname  >}} attempts to connect to this Site.
 
-The CPIC side info profile contains all information that a CPIC application requires to initiate an LU 6.2 conversation. <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> uses the CPIC side info profile name as an object that fully addresses and qualifies the remote application.
+The CPIC side info profile contains all information that a CPIC application requires to initiate an LU 6.2 conversation. {{< Gateway/componentshortname  >}} uses the CPIC side info profile name as an object that fully addresses and qualifies the remote application.
 
-For this reason, you supply the following information in each CPIC side info profile dedicated to <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>:
+For this reason, you supply the following information in each CPIC side info profile dedicated to {{< Gateway/componentshortname  >}}:
 
 -   Local LU alias
 -   Partner LU name
@@ -372,7 +372,7 @@ For this reason, you supply the following information in each CPIC side info pro
 
 #### Example of CPIC side info definition
 
-This is an extract from <span class="code">/etc/sna/sna\_domn.cfg</span>:
+This is an extract from `/etc/sna/sna_domn.cfg`:
 
 >     [define_cpic_side_info]
 >     sym_dest_name = PHECPICI
@@ -388,19 +388,19 @@ This is an extract from <span class="code">/etc/sna/sna\_domn.cfg</span>:
 
 #### Defining TP (Transaction Program)
 
-For each incoming conversation intended for <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>, the SNA sub-system is expected to start an appropriate <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> application program. You first create a Transaction Program profile for the PeSIT E protocol.
+For each incoming conversation intended for {{< Gateway/componentshortname  >}}, the SNA sub-system is expected to start an appropriate {{< Gateway/componentshortname  >}} application program. You first create a Transaction Program profile for the PeSIT E protocol.
 
 You define Transaction Program profiles as follows:
 
-1.  The USERID and GROUP fields must match the user-id and group-id used to install and start <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>.
+1.  The USERID and GROUP fields must match the user-id and group-id used to install and start {{< Gateway/componentshortname >}}.
 2.  Set the TYPE field to NON-QUEUED.
-3.  Complete the PATH field with the absolute path of the <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> application program that corresponds to the targeted file transfer protocol.
+3.  Complete the PATH field with the absolute path of the {{< Gateway/componentshortname >}} application program that corresponds to the targeted file transfer protocol.
 4.  The ENVIRONMENT field must set APPCTPN to the corresponding TP name.  
     If for example, the TP name is PHECPICR, this field must contain APPCTPN=PHECPICR.
 
 #### Example of Transaction Program definition
 
-This is an extract from <span class="code">/etc/sna/sna\_tps</span>:
+This is an extract from `/etc/sna/sna_tps`:
 
 >     [PHECPICR]
 >     LUALIAS = ""
@@ -413,11 +413,11 @@ This is an extract from <span class="code">/etc/sna/sna\_tps</span>:
 >     PATH = /portage_Gateway/users/portpel/T6342/bin/PHECPICR
 >     ENV = APPCTPN=PHECPICR
 
-### Summary of SNA installation for <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>
+### Summary of SNA installation for {{< Gateway/componentshortname  >}}
 
 #### Configuring and checking SNA system resources
 
-The SNA configuration procedure using the <span class="bold_in_para">xsnaadmin</span> interface is as follows:
+The SNA configuration procedure using the **xsnaadmin** interface is as follows:
 
 1.  Configure SNA connectivity on the local machine:
     -   The node
@@ -425,23 +425,23 @@ The SNA configuration procedure using the <span class="bold_in_para">xsnaadmin</
     -   One link station per remote machine
 2.  Check that you can activate all links. If not, check the SNA log and trace files.  
     The cause may be incorrect configuration on a remote machine.
-3.  Configure the local LUs, partner LUs and possibly remote NODEs that <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> will use.
-4.  Use the appropriate <span class="bold_in_para">xsnaadmin</span> command to establish LU-LU sessions manually.  
+3.  Configure the local LUs, partner LUs and possibly remote NODEs that {{< Gateway/componentshortname >}} will use.
+4.  Use the appropriate **xsnaadmin** command to establish LU-LU sessions manually.  
     Fix any problems on the local and remote machines that may prevent LU-LU sessions from being established.
-5.  Create all other configuration objects that <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> requires (that is, Modes, CPIC Side Information Profile, and Transaction Programs).
+5.  Create all other configuration objects that {{< Gateway/componentshortname >}} requires (that is, Modes, CPIC Side Information Profile, and Transaction Programs).
 
-#### Configuring and checking <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> resources for SNA
+#### Configuring and checking {{< Gateway/componentshortname  >}} resources for SNA
 
-1.  Configure <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> to enable the SNA option for the PeSIT E protocol.
-2.  Stop and then restart <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> using the appropriate commands.
-3.  Create a Remote Site for each remote system that expects to accept SNA conversations initiated by the local <span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>.  
-    This Remote Site contains the corresponding CPIC side info profile name as the destination address field. Create the Remote Site using either the Windows GUI or the <span class="bold_in_para">peladm</span> command.
+1.  Configure {{< Gateway/componentshortname >}} to enable the SNA option for the PeSIT E protocol.
+2.  Stop and then restart {{< Gateway/componentshortname >}} using the appropriate commands.
+3.  Create a Remote Site for each remote system that expects to accept SNA conversations initiated by the local {{< Gateway/componentlongname >}}.  
+    This Remote Site contains the corresponding CPIC side info profile name as the destination address field. Create the Remote Site using either the Windows GUI or the **peladm** command.
 4.  To check each Remote Site configured for SNA/LU 6.2, submit a Transfer Request addressed to that Site.
 
 If a problem occurs that prevents the file transfer from processing normally, enable the trace mode for that Site and set up the trace and log facility in the SNA sub-system. This will produce outputs that may help track the problem.
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

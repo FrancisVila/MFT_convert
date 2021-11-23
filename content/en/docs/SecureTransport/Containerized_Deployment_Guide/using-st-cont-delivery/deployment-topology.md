@@ -43,4 +43,4 @@ Note that there are other ways to configure the SecureTransport Streaming Protoc
 
 ![](/Images/SecureTransport/streaming-protocol.png)
 
-*next topic:* <a href="../deployment-prerequisites" class="MCXref xref">Deployment prerequisites</a>
+*next topic:* [Deployment prerequisites](../deployment-prerequisites)

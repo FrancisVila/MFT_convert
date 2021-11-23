@@ -2,7 +2,7 @@
     "title": "CFTRECV  - Receive templates",
     "linkTitle": "Receive templates - CFTRECV ",
     "weight": "220"
-}This topic describes the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>
+}This topic describes the {{< TransferCFT/transfercftname  >}}
 receive template. You can use the CFTRECV object to:
 
 -   Give the default

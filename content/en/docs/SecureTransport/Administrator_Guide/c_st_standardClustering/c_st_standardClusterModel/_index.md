@@ -2,7 +2,7 @@
     "title": "Standard Cluster model",
     "linkTitle": "Standard Cluster model",
     "weight": "90"
-}As described in <a href="../../overview/c_st_deploy_models#Clusteri" class="MCXref xref">Cluster models</a>, you can use a Standard Cluster (SC) to provide more capacity than a single {{< SecureTransport/componentshortname  >}} Server or to provide a passive standby server to take over processing if an active server fails.
+}As described in [Cluster models](../../overview/c_st_deploy_models#Clusteri), you can use a Standard Cluster (SC) to provide more capacity than a single {{< SecureTransport/componentshortname  >}} Server or to provide a passive standby server to take over processing if an active server fails.
 
 Standard Clustering uses an embedded database in each node. This minimizes external dependencies and overhead and reduces the cost of clustering. {{< SecureTransport/componentshortname  >}} synchronizes most configuration changes on all nodes in the cluster.
 
@@ -12,7 +12,7 @@ One node of a Standard Cluster is distinguished as the *primary server*. The pas
 
 The following topics describe the active/active and active/passive clustering and scheduled tasks, the consolidated log data representation, and the services used for cluster management:
 
--   <a href="c_st_active-active_active-passive_clustering" class="MCXref xref">Active/active and active/passive clustering</a> - Describes active/active and active/passive clustering.
--   <a href="c_st_scheduled_tasks" class="MCXref xref">Scheduled tasks</a> - Describes active/active and active/passive clustering scheduled tasks.
--   <a href="c_st_consolidated_log_data_representation" class="MCXref xref">Consolidated log data representation</a> - Describes the consolidated log data representation.
--   <a href="c_st_services_used_for_cluster_management" class="MCXref xref">Services used for cluster management</a> - Describes the services used for cluster management.
+-   [Active/active and active/passive clustering](c_st_active-active_active-passive_clustering) - Describes active/active and active/passive clustering.
+-   [Scheduled tasks](c_st_scheduled_tasks) - Describes active/active and active/passive clustering scheduled tasks.
+-   [Consolidated log data representation](c_st_consolidated_log_data_representation) - Describes the consolidated log data representation.
+-   [Services used for cluster management](c_st_services_used_for_cluster_management) - Describes the services used for cluster management.

@@ -6,5 +6,5 @@
 
 **Related topics:**
 
--   <a href="../r_st_checkpoint_firewall" class="MCXref xref">Check Point firewall</a>
--   <a href="../r_st_cisco_pix_firewall" class="MCXref xref">Cisco PIX firewall</a>
+-   [Check Point firewall](../r_st_checkpoint_firewall)
+-   [Cisco PIX firewall](../r_st_cisco_pix_firewall)

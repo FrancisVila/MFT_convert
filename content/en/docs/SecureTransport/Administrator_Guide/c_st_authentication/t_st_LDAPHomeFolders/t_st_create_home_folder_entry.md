@@ -17,6 +17,6 @@ The status of the new entry is disabled.
 
 **Related topics:**
 
--   <a href="../t_st_enable_disable_home_folder_entries" class="MCXref xref">Enable or disable home folder entries</a>
--   <a href="../t_st_edit_home_folder_entry" class="MCXref xref">Edit a home folder entry</a>
--   <a href="../t_st_delete_home_folder_entries" class="MCXref xref">Delete home folder entries</a>
+-   [Enable or disable home folder entries](../t_st_enable_disable_home_folder_entries)
+-   [Edit a home folder entry](../t_st_edit_home_folder_entry)
+-   [Delete home folder entries](../t_st_delete_home_folder_entries)

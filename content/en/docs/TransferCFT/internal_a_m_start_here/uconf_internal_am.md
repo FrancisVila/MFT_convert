@@ -2,7 +2,7 @@
     "title": "Internal access management",
     "linkTitle": "Internal access management",
     "weight": "160"
-}This section describes how to configure Internal AM, which is a type of access management that you can use with or without <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> governance.
+}This section describes how to configure Internal AM, which is a type of access management that you can use with or without or {{< TransferCFT/flowmanager  >}} governance.
 
 Internal access management is an out-of-the-box access management based on predefined roles and privileges, and a group internal datafile. Groups and their members are defined in this supplied database. Note however that when using this type of access management, there is no super user and the user who installed and starts the Transfer CFT Copilot server must have Administrator rights. <span id="security_base"></span>
 
@@ -18,7 +18,7 @@ Additionally you can:
 
 -   **Custom**: Create new roles
 
-Please refer to the [*Transfer CFT *<span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">3.9</span> *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the Internal AM use cases page describes three use cases and their configuration.
+Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_36_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. Login is required. Additionally, the Internal AM use cases page describes three use cases and their configuration.
 
 ## Configuring internal access management
 
@@ -26,7 +26,7 @@ Set the specific group database parameter (see the table below for OS specifics
 
 uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm \]
 
-Use the parameters and descriptions in the <span class="bold_in_para">AM Parameters</span> table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
+Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
 <table>
    <thead>
@@ -124,7 +124,7 @@ uconfset id=am.type,value=internal
 
 ## Mapping the group to predefined roles
 
-To use the feature you will need to map the list of groups in the database to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI.
+To use the feature you will need to map the list of groups in the database to the {{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the {{< TransferCFT/componentshortname  >}} UI.
 
 <table>
    <thead>
@@ -159,7 +159,7 @@ To use the feature you will need to map the list of groups in the database to th
 
 ## Creating or modifying roles
 
-In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> user interface or a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to Internal AM use cases for role-based use case scenarios.
+In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to Internal AM use cases for role-based use case scenarios.
 
 > **Note:**
 >
@@ -167,11 +167,11 @@ In addition to the out-of-the box roles, you can create new roles or modify exis
 
 ### Using the configuration file
 
-You can add, remove, or modify roles or privileges in the <span class="code">role-smp.conf</span> sample file delivered in <span class="code">runtime/conf/</span> directory. After adding or modifying a role or privilege, you must interpret the configuration file.
+You can add, remove, or modify roles or privileges in the `role-smp.conf` sample file delivered in `runtime/conf/` directory. After adding or modifying a role or privilege, you must interpret the configuration file.
 
 ### Using the user interface
 
-In the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI, access the General Configuration pane and select either **Privileges** or **Roles**. Options include creating, deleting, modifying, or cloning a role or privilege.
+In the {{< TransferCFT/transfercftname  >}} UI, access the General Configuration pane and select either **Privileges** or **Roles**. Options include creating, deleting, modifying, or cloning a role or privilege.
 
  
 
@@ -250,7 +250,7 @@ If you configure UCONF as follows:
     D am.internal.role.designer =
     D am.internal.role.application =
 
-Modify the <span class="code">conf/roles-smp.conf</span> sample file:
+Modify the `conf/roles-smp.conf` sample file:
 
 
 
@@ -306,7 +306,7 @@ If you configure UCONF as follows:
     ROLE TRANSFER CFT HELPDESK
     ROLE TRANSFER CFT PARTNERMANAGER
 
-Modify the <span class="code">conf/roles-smp.conf</span> sample file:
+Modify the `conf/roles-smp.conf` sample file:
 
 
 

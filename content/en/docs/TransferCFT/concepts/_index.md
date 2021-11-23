@@ -5,9 +5,9 @@
 }## Transfer concepts
 
 This section describes transfers, and how to create and
-manage your transfer operations using <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+manage your transfer operations using {{< TransferCFT/componentshortname  >}}.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can execute both file and message transfers. A transfer
+{{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
 consists of a set of processes that result in the exchange of files between
 computers. In a transfer, one computer is the sender, the other is the
 receiver. The sender and receiver are linked together by a network. A
@@ -17,7 +17,7 @@ file transfer may consist of sending a file, group of files, or a message.
 
 Transfer CFT requires a certain number parameters, such as the protocol, to successfully perform transfers with partners.
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> provides
+{{< TransferCFT/componentshortname  >}} provides
 a set of *objects* that allow you to define these transfer related parameters. Prerequisites to make file transfers between two Transfer CFTs include:
 
 -   A common network, such as TCP
@@ -39,7 +39,7 @@ See also, [Transfer command basics.](transfer_command_overview)
 
 ## Transfer commands
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses two commands for transfer requests:
+{{< TransferCFT/componentshortname  >}} uses two commands for transfer requests:
 
 -   SEND: sends a file or message to a partner
 -   RECV: requests the reception of files from a partner
@@ -102,10 +102,10 @@ These processing operations and default values are indicated in the flow definit
 files respectively.
 
 A CFTSEND or CFTRECV command corresponds to a model
-file. In the absence of these commands for a given transfer, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses the default CFTSEND and CFTRECV command parameters, which are
+file. In the absence of these commands for a given transfer, {{< TransferCFT/componentshortname  >}} uses the default CFTSEND and CFTRECV command parameters, which are
 valid regardless of the IDF.
 
-When using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> with <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, an identifier corresponds to each flow definition. In the absence of this flow identifier, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> uses the flow default value.
+When using with {{< TransferCFT/componentlongname  >}}, an identifier corresponds to each flow definition. In the absence of this flow identifier, {{< TransferCFT/componentlongname  >}} uses the flow default value.
 
 The default command is the command whose file identifier corresponds either to the:
 
@@ -120,7 +120,7 @@ The default command is the command whose file identifier corresponds either to t
 ### Messages: IDM
 
 A message is a character string specified by a SEND command and sent
-by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> as a specific transfer. A message transfer does not make reference to a flow definition (a CFTSEND or CFTRECV command).
+by the {{< TransferCFT/componentshortname  >}} as a specific transfer. A message transfer does not make reference to a flow definition (a CFTSEND or CFTRECV command).
 
  
 
@@ -153,7 +153,7 @@ In this example the partner is PARIS, and the file to send is called REPORT1.
 
 ### Transfer identifiers
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> enables the transferring sequential files, or files seen
+{{< TransferCFT/componentshortname  >}} enables the transferring sequential files, or files seen
 as such. These files can be accessed through one of the operating system
 access methods . See [File locations: Model and physical files](creating_transfers_start_here/model_and_physical_file_concepts).
 
@@ -181,5 +181,5 @@ counter systematically implemented by Transfer CFT.
 
 A transfer can always be uniquely identified locally, regardless of
 the situation - simultaneous transfers, resumption after incidents, and
-so on. When there are several <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s on the same computer, uniqueness
-is guaranteed between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s sharing the same catalog.
+so on. When there are several {{< TransferCFT/componentshortname  >}}s on the same computer, uniqueness
+is guaranteed between two {{< TransferCFT/componentshortname  >}}s sharing the same catalog.

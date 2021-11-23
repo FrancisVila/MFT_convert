@@ -6,5 +6,5 @@
 
 **Related topics:**
 
--   <a href="../r_st_checkpoint_firewall" class="MCXref xref">Check Point firewall</a>
--   <a href="../r_st_raptor_firewall" class="MCXref xref">Raptor firewall</a>
+-   [Check Point firewall](../r_st_checkpoint_firewall)
+-   [Raptor firewall](../r_st_raptor_firewall)

@@ -10,7 +10,7 @@
 
 Use the following procedure to configure a firewall for your appliance.
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **H**, Hardening & Security.
 3.  On the Hardening & Security menu, type **S**, SuSEFirewall Management.

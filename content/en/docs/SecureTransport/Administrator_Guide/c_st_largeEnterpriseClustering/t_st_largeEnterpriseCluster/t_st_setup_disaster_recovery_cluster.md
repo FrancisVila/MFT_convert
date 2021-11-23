@@ -13,7 +13,7 @@
         -   Set `Cluster.EnableDRConfiguration` to `true`.
         -   Make sure that `Cluster.DeploymentSite` is set to `Prod`.
     2.  For each network zone node, make sure the **Deployment Site** field is set to `Prod` so that this node will be used when `Cluster.DeploymentSite` is set to `Prod` and define another node for the DR site with the **Deployment Site** field set to `DR`.
-3.  Deploy a separate cluster that duplicates your production cluster. For information you need when you plan your DR cluster and install the servers, see <a href="../../c_st_largeenterpriseclustermodel/c_st_passive_disaster_recovery" class="MCXref xref">Passive disaster recovery</a>. To initialize the DR site:
+3.  Deploy a separate cluster that duplicates your production cluster. For information you need when you plan your DR cluster and install the servers, see [Passive disaster recovery](../../c_st_largeenterpriseclustermodel/c_st_passive_disaster_recovery). To initialize the DR site:
     1.  Synchronize the database for the DR cluster with database for the production cluster so that configuration is consistent with the production cluster.
     2.  Synchronize the data for the DR cluster with data for the production cluster so that the account home folders and other folders are consistent.
 4.  For each {{< SecureTransport/componentshortname >}} Server in the DR site:
@@ -46,12 +46,12 @@
 
 **Related topics:**
 
--   <a href="../c_st_cluster_prerequisites" class="MCXref xref">Enterprise Cluster prerequisites</a>
--   <a href="../t_st_setup_cluster" class="MCXref xref">Set up a cluster</a>
--   <a href="../t_st_add_server_to_cluster" class="MCXref xref">Add a server to a cluster</a>
--   <a href="../t_st_remove_server_from_cluster" class="MCXref xref">Remove a server from a cluster</a>
--   <a href="../t_st_view_cluster_status" class="MCXref xref">View cluster status</a>
--   <a href="../t_st_notification_of_cluster_status" class="MCXref xref">Notification of cluster status</a>
--   <a href="../t_st_maintain_disaster_recovery_cluster" class="MCXref xref">Maintain a disaster recovery cluster</a>
--   <a href="../t_st_dr_failover_fallback" class="MCXref xref">Disaster recovery failover and fallback</a>
--   <a href="../t_st_direct_cluster_workload" class="MCXref xref">Direct cluster workload</a>
+-   [Enterprise Cluster prerequisites](../c_st_cluster_prerequisites)
+-   [Set up a cluster](../t_st_setup_cluster)
+-   [Add a server to a cluster](../t_st_add_server_to_cluster)
+-   [Remove a server from a cluster](../t_st_remove_server_from_cluster)
+-   [View cluster status](../t_st_view_cluster_status)
+-   [Notification of cluster status](../t_st_notification_of_cluster_status)
+-   [Maintain a disaster recovery cluster](../t_st_maintain_disaster_recovery_cluster)
+-   [Disaster recovery failover and fallback](../t_st_dr_failover_fallback)
+-   [Direct cluster workload](../t_st_direct_cluster_workload)

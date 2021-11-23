@@ -41,14 +41,14 @@ To access and manage the Login Restriction Policies, select **Access &gt; Login 
 
 The following topics provide how-to instructions for managing Login Restriction Policies:
 
--   <a href="#Adding" class="MCXref xref">Add Login Restriction Policies</a>
--   <a href="#Editing" class="MCXref xref">Edit a Login Restriction Policy</a>
--   <a href="#Changing" class="MCXref xref">Change the default Login Restriction Policy</a>
--   <a href="#Deleting" class="MCXref xref">Delete Login Restriction Policies</a>
+-   [Add Login Restriction Policies](#Adding)
+-   [Edit a Login Restriction Policy](#Editing)
+-   [Change the default Login Restriction Policy](#Changing)
+-   [Delete Login Restriction Policies](#Deleting)
 
 **Related topic:**
 
--   <a href="../t_st_manloginrestictionpolicies" class="MCXref xref">Create Login Restriction Policy entries</a>
+-   [Create Login Restriction Policy entries](../t_st_manloginrestictionpolicies)
 
 <span id="Adding"></span>
 
@@ -58,7 +58,7 @@ Use the following instructions to add a new Login Restriction Policy:
 
 1.  Click **New Login Restriction Policy**.  
     The *New Login Restriction Policy entry* page will be displayed.
-2.  Refer to <a href="../t_st_manloginrestictionpolicies#Creating" class="MCXref xref">Create a Login Restriction Policy</a> for instructions on creating a new Login Restriction Policy.
+2.  Refer to [Create a Login Restriction Policy](../t_st_manloginrestictionpolicies#Creating) for instructions on creating a new Login Restriction Policy.
 
 <span id="Editing"></span>
 
@@ -68,7 +68,7 @@ Use the following instructions to edit an existing Login Restriction Policy:
 
 1.  Click on the Policy Name to edit the selected Login Restriction Policy.  
     The *Edit Login Restriction Policy entry* page will be displayed.
-2.  Refer to <a href="../t_st_manloginrestictionpolicies#Editing" class="MCXref xref">Edit a Login Restriction Policy</a> for instructions on editing an existing Login Restriction Policy.
+2.  Refer to [Edit a Login Restriction Policy](../t_st_manloginrestictionpolicies#Editing) for instructions on editing an existing Login Restriction Policy.
 
 <span id="Changing"></span>
 

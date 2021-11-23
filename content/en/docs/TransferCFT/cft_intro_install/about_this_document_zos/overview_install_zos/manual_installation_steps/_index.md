@@ -119,12 +119,12 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
       <tr>
          <td>16         </td>
          <td>CFTCGREG         </td>
-         <td>Register <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>         </td>
+         <td>Register {{< TransferCFT/transfercftname  >}} with         </td>
       </tr>
       <tr>
          <td>17         </td>
          <td>CFTCGPKI         </td>
-         <td>Used to register <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>         </td>
+         <td>Used to register {{< TransferCFT/transfercftname  >}} with         </td>
       </tr>
       <tr>
          <td>18         </td>

@@ -59,7 +59,7 @@ Next, you need to enable the file transfers via Connect:Direct and set the serve
 
 ### Create a Connect:Direct transfer site
 
-In the transfer site definition, select Connect:Direct as Transfer Protocol. For more information, see <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>. To create a Connect:Direct transfer site from a template, see <a href="../../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_usesitetemplate" class="MCXref xref">Use a site template to define a transfer site</a>.
+In the transfer site definition, select Connect:Direct as Transfer Protocol. For more information, see [Manage transfer sites](../t_st_transfersites). To create a Connect:Direct transfer site from a template, see [Use a site template to define a transfer site](../../../c_st_advancedaccountadministration/c_st_sitetemplates/t_st_usesitetemplate).
 
 The following table describes the Connect:Direct protocol options for a transfer site:
 
@@ -73,14 +73,14 @@ The following table describes the Connect:Direct protocol options for a transfer
    <tbody>
       <tr>
          <td>Transfer Mode         </td>
-         <td><p>Sets the file transfer mode. Valid values: ASCII, Binary, and Auto-detect. The default value is Auto-detect, meaning {{< SecureTransport/componentshortname  >}} automatically determines the proper transfer mode based on the file content type. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
+         <td><p>Sets the file transfer mode. Valid values: ASCII, Binary, and Auto-detect. The default value is Auto-detect, meaning {{< SecureTransport/componentshortname  >}} automatically determines the proper transfer mode based on the file content type. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761">Transfer mode for server-initiated transfers</a>.</p>         </td>
       </tr>
       <tr>
          <td><strong>Site Settings</strong>         </td>
       </tr>
       <tr>
          <td>Local server name         </td>
-         <td>Specifies the domain name or IP address of the local server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>Specifies the domain name or IP address of the local server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Local server port         </td>
@@ -143,17 +143,17 @@ To configure a {{< SecureTransport/componentshortname  >}} transfer site to conn
 >
 > The Send Script and Receive Script accept regular expressions. For more information on writing Connect:Direct scripts, refer to the Connect:Direct documentation.
 
-You can use a site template to define a Connect:Direct transfer site. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_sitetemplates#Advanced_Accounts_2036285406_1131467" class="MCXref xref">Site templates</a>.
+You can use a site template to define a Connect:Direct transfer site. For more information, see [Site templates](../../../c_st_advancedaccountadministration/c_st_sitetemplates#Advanced_Accounts_2036285406_1131467).
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

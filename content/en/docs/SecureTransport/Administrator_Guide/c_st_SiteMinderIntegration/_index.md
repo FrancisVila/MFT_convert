@@ -10,10 +10,10 @@
 
 The following topics provide a SiteMinder integration overview and how-to instructions for managing the SiteMinder integration:
 
--   <a href="c_st_siteminderoverview" class="MCXref xref">SiteMinder overview</a> - Provides an overview of the SiteMinder integration with {{< SecureTransport/componentshortname >}}.
--   <a href="c_st_siteminderuserauthentication" class="MCXref xref">User authentication</a> - Describes SiteMinder user authentication.
--   <a href="t_st_siteminderconfiguration" class="MCXref xref">Configure SiteMinder for SecureTransport integration</a> - Provides how-to instructions for configuring the SiteMinder for {{< SecureTransport/componentshortname >}} integration.
--   <a href="t_st_sitemindersecuretransportconfiguration" class="MCXref xref">Configure SiteMinder settings in SecureTransport</a> - Describes the configuration of SiteMinder setting in {{< SecureTransport/componentshortname >}}.
--   <a href="t_st_disablinglogin" class="MCXref xref">Disable the SecureTransport login</a> - Provides the how-to instructions for disabling the {{< SecureTransport/componentshortname >}} login.
--   <a href="t_st_configureclientcertificateauthentication" class="MCXref xref">Configure client certificate authentication settings</a> - Provides how-to instructions for configuring client certificate authentication.
--   <a href="t_st_siteminderintegrationtroubleshooting" class="MCXref xref">Integration troubleshooting</a> - Provides how-to instructions for troubleshooting problems with the SiteMinder integration.
+-   [SiteMinder overview](c_st_siteminderoverview) - Provides an overview of the SiteMinder integration with {{< SecureTransport/componentshortname >}}.
+-   [User authentication](c_st_siteminderuserauthentication) - Describes SiteMinder user authentication.
+-   [Configure SiteMinder for SecureTransport integration](t_st_siteminderconfiguration) - Provides how-to instructions for configuring the SiteMinder for {{< SecureTransport/componentshortname >}} integration.
+-   [Configure SiteMinder settings in SecureTransport](t_st_sitemindersecuretransportconfiguration) - Describes the configuration of SiteMinder setting in {{< SecureTransport/componentshortname >}}.
+-   [Disable the SecureTransport login](t_st_disablinglogin) - Provides the how-to instructions for disabling the {{< SecureTransport/componentshortname >}} login.
+-   [Configure client certificate authentication settings](t_st_configureclientcertificateauthentication) - Provides how-to instructions for configuring client certificate authentication.
+-   [Integration troubleshooting](t_st_siteminderintegrationtroubleshooting) - Provides how-to instructions for troubleshooting problems with the SiteMinder integration.

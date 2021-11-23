@@ -27,7 +27,7 @@
    <tbody>
       <tr>
          <td>Axway Welcome         </td>
-         <td><p>Welcome to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Installer</p>         </td>
+         <td><p>Welcome to {{< Gateway/companyname  >}} Installer</p>         </td>
          <td>Common         </td>
       </tr>
       <tr>
@@ -54,10 +54,10 @@
          <td>Option-dependent         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>:<br />
+         <td><p>{{< Gateway/componentlongname  >}}:<br />
 Installation directory</p>         </td>
          <td><ul>
-<li>Specify the shared directory to store the data shared between the various cluster nodes. By default: <span class="code">Axway_Shared</span>.</li>
+<li>Specify the shared directory to store the data shared between the various cluster nodes. By default: <code>Axway_Shared</code>.</li>
 <li>Specify the directory where you want to install Gateway.<br />
 By default, Gateway is installed in a sub-directory of the Axway installation directory.</li>
 </ul>
@@ -80,11 +80,11 @@ Optional:
          <td>Common         </td>
       </tr>
       <tr>
-         <td><p><span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>:<br />
+         <td><p>{{< Gateway/componentlongname  >}}:<br />
 Configuration</p>         </td>
          <td><p>Enter the following information:</p>
 <ul>
-<li><span style="font-weight: bold;">Local site name</span>: The name that you want
+<li><strong>Local site name</strong>: The name that you want
 to use to refer to your Gateway.</li>
 <li><span style="font-weight: bold;">Key label</span>: Your key label (if you have
 one).</li>

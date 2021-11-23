@@ -396,7 +396,7 @@ password.
 
 ### Error detection - PAD support
 
-Deprecated in <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.5
+Deprecated in {{< TransferCFT/componentlongname  >}} 3.5
 
 Through an asynchronous access PAD (Packet
 Assembler/Disassembler),

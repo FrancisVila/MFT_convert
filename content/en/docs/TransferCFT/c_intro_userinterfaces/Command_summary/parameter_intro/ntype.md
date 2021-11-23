@@ -25,8 +25,7 @@ This parameter is used to designate the partner receiver file type.
       <tr>
          <td><p><strong>PeSIT D CFT profile<br />
 PeSIT E CFT/CFT</strong></p>         </td>
-         <td><p><em><span style="font-style: normal;">Default
-value</span></em></p>
+         <td><p><em></em></p>
 <p>If this parameter is not defined, Transfer
 CFT assigns a default value, as a function of the:</p>
 <ul>

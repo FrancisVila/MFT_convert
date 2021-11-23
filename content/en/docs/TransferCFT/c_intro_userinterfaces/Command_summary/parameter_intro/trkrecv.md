@@ -8,15 +8,15 @@
 
 #### CFTPARM
 
-**\[TRKRECV = {** **<span style="text-decoration: underline;">UNDEFINED</span>
-|** **ALL | NO | SUMMARY }\]**
+**\[TRKRECV = {**
+**|** **ALL | NO | SUMMARY }\]**
 
 Specifications concerning transfers via CFTRECV for which the [trk](../trk)
 value is not defined.
 
 Select one of the following options:
 
--   <span style="font-weight: bold;">NO</span>
+-   **NO**
     (default value): the monitor never sends Tracked Instances to Sentinel.
 -   <span style="font-weight: bold;">ALL</span>:
     for each step of each transfer process, the monitor sends a Tracked Instance

@@ -4,9 +4,9 @@
     "weight": "110"
 }In this topic you will learn how to:
 
--   <a href="#_Toc331683661" class="MCXref xref">Set the clock and time zone</a>
--   <a href="#_Toc331683667" class="MCXref xref">Switch between consoles</a>
--   <a href="#Work" class="MCXref xref">Work with system log files</a>
+-   [Set the clock and time zone](#_Toc331683661)
+-   [Switch between consoles](#_Toc331683667)
+-   [Work with system log files](#Work)
 
 <span id="_Toc331683661"></span>
 
@@ -42,7 +42,7 @@ To switch from one virtual console to another, use the **Alt+Fn** keyboard combi
 
 The Appliance Console Menu provides you with access to system log files.
 
-1.  Connect to the console. See <a href="../appliancestartup_reboot_shutdown#_Ref331672216" class="MCXref xref">Reboot or shut down the appliance</a> for more information.  
+1.  Connect to the console. See [Reboot or shut down the appliance](../appliancestartup_reboot_shutdown#_Ref331672216) for more information.  
     The Appliance Console Menu is displayed.
 2.  On the Appliance Console Menu, type **A**, Appliance Management.
 3.  On the Appliance Management menu, type **L**, System Log Files.

@@ -11,7 +11,7 @@ Use to modify a technical parameter value.
 
     UCONFSET id=PARAMETER-KEY,value=STRING
 
-After modifying a uconf value, you typically must restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
+After modifying a uconf value, you typically must restart {{< TransferCFT/componentshortname  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
 
 Using spaces in a UCONFSET command value
 
@@ -29,7 +29,7 @@ retrieve a single technical parameter value.
 
     UCONFGET id=PARAMETER-KEY
 
-Results: <span class="code">PARAMETER-KEY=PARAMETER-VALUE</span>
+Results: `PARAMETER-KEY=PARAMETER-VALUE`
 
 **UCONFUNSET**
 

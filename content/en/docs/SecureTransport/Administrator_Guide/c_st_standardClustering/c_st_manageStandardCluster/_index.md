@@ -6,6 +6,6 @@
 
 The following topics describe how to manage active/active and active/passive clusters and describe how to perform Standard Cluster (SC) synchronization.
 
--   <a href="t_st_manage_active-active_cluster" class="MCXref xref">Manage an active/active cluster</a> - Describes how to perform management tasks for an active/active cluster setup.
--   <a href="t_st_manage_active-passive_cluster" class="MCXref xref">Manage an active/passive cluster</a> - Describes how to perform management tasks for an active/passive cluster setup.
--   <a href="c_st_standard_cluster_synchronization" class="MCXref xref">Standard Cluster synchronization</a> - Describes how to perform Standard Cluster synchronization.
+-   [Manage an active/active cluster](t_st_manage_active-active_cluster) - Describes how to perform management tasks for an active/active cluster setup.
+-   [Manage an active/passive cluster](t_st_manage_active-passive_cluster) - Describes how to perform management tasks for an active/passive cluster setup.
+-   [Standard Cluster synchronization](c_st_standard_cluster_synchronization) - Describes how to perform Standard Cluster synchronization.

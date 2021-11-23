@@ -4,7 +4,7 @@
     "weight": "240"
 }This section explains the user rights required for system users to [execute files actions,](#Set) which allows a system user to perform all file actions, for example accessing or opening a file. By default, on the sender side the user who initiates the SEND is used, and on the receiver side the USERID specified in the CFTRECV object is used. Additionally this topic describes user rights required to [execute post-transfer procedures.](#Set2)
 
-Before setting user rights, you must define special rights for the account on which <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is running.
+Before setting user rights, you must define special rights for the account on which {{< TransferCFT/componentshortname  >}} is running.
 
 <span id="Set"></span>
 
@@ -36,7 +36,7 @@ The following conventions apply to the table below describing permissions to act
       <tr>
          <td>ALL OS         </td>
          <td>NO         </td>
-         <td>The Transfer CFT user, that is, the account that started <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, performs all file actions. Default value.         </td>
+         <td>The Transfer CFT user, that is, the account that started {{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.         </td>
       </tr>
       <tr>
          <td>YES         </td>
@@ -77,8 +77,8 @@ This feature allows system users to execute end-of-transfer procedures themselve
 
 To enable this feature:
 
-1.  Set <span class="code">cft.server.exec\_as\_user</span> to <span class="code">Yes</span>. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
-2.  Define the CFTRECV <span class="bold_in_para">USERID </span>option.
+1.  Set `cft.server.exec_as_user` to `Yes`. Scripts are then executed as if by the defined in [USERID](../../../c_intro_userinterfaces/command_summary/parameter_intro/userid).
+2.  Define the CFTRECV **USERID **option.
 
 > **Note:**
 >

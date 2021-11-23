@@ -2,7 +2,7 @@
     "title": "Transfer CFT backward compatibility",
     "linkTitle": "Transfer CFT backward compatibility ",
     "weight": "230"
-}In some cases, you may require or prefer backward compatibility. In this case, the <span class="code">uconf:cft.state\_compat</span> and <span class="code">uconf:cft.listcat\_compat</span> parameters can provide the same functionality as in Transfer CFT 2.7.1.
+}In some cases, you may require or prefer backward compatibility. In this case, the `uconf:cft.state_compat` and `uconf:cft.listcat_compat` parameters can provide the same functionality as in Transfer CFT 2.7.1.
 
 The default value (No) sets:
 
@@ -162,7 +162,7 @@ The default value (No) sets:
 <li>Yes= The phase state is fully compatible with the states in versions prior to 3.0.</li>
 <li>No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.</li>
 </ul>
-<p><span class="bold_in_para">Note</span>: Uconf:cft.state_compat also impacts the <a href="../ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>         </td>
+<p><strong>Note</strong>: Uconf:cft.state_compat also impacts the <a href="../ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>         </td>
       </tr>
    </tbody>
 </table>

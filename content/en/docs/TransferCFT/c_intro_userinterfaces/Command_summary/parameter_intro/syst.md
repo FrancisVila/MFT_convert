@@ -12,7 +12,7 @@
 
 Defines the OS for the partner site.
 
-Select the operating system supporting the partner <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+Select the operating system supporting the partner {{< TransferCFT/componentshortname  >}}
 from the list: GCOS7, GCOS8, GUARD, MVS, OS400, UNIX,
 VMS, WINNT.
 

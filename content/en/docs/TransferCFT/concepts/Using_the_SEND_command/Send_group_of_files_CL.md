@@ -66,7 +66,7 @@ If there are N files to be sent, a SEND IDF = ID\_EM, FNAME = #GROUP (or @GROUP)
     entry, which never triggers an actual transfer but is used locally to
     manage the group of files to be sent
     -   This virtual transfer is identified by a DIAGP code set to LIST\_FI,
-        when the catalog is queried. Its state is immediately set to <span style="font-weight: bold;">K</span>
+        when the catalog is queried. Its state is immediately set to **K**
         in the catalog.
     -   The generic entry is set to the <span style="font-weight: bold;">T</span>
         or **X** state when all transfers have been set to <span style="font-weight: bold;">**T** </span>state (or **X** depending on the mode).

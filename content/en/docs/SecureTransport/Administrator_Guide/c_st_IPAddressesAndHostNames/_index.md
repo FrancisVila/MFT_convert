@@ -6,4 +6,4 @@
 
 The following topic lists the IP address and host name syntax formats:
 
--   <a href="r_st_ipaddressandhostnamesyntax" class="MCXref xref">IP address and host name syntax</a> - Lists the IP address and host name syntax formats.
+-   [IP address and host name syntax](r_st_ipaddressandhostnamesyntax) - Lists the IP address and host name syntax formats.

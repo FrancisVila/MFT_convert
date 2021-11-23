@@ -2,7 +2,7 @@
     "title": "Business units",
     "linkTitle": "Business units",
     "weight": "220"
-}Use business units to encapsulate certain information necessary for transfers into a single entity. When you create accounts and templates, you can specify a business unit to represent a particular set of information about the transfer. When you create a delegated administrator, you can specify business units (including users assigned to that business unit) to be managed by the delegated administrator. For more information, see <a href="../c_st_delegatedadministration#Advanced_Accounts_2036285406_1117693" class="MCXref xref">Delegated administration</a>.
+}Use business units to encapsulate certain information necessary for transfers into a single entity. When you create accounts and templates, you can specify a business unit to represent a particular set of information about the transfer. When you create a delegated administrator, you can specify business units (including users assigned to that business unit) to be managed by the delegated administrator. For more information, see [Delegated administration](../c_st_delegatedadministration#Advanced_Accounts_2036285406_1117693).
 
 The information contained in a business unit includes business unit name, base folder, a parent business unit, whether administrators are allowed to modify the base folder or the home folder, and which HTML template to use when users belonging to this business unit log in using the web client.
 
@@ -17,8 +17,8 @@ Use the *Business Units Settings* page to edit settings for a business unit.
 The following topics provide how-to instructions for managing business units:
 
 -   See available business units
--   <a href="#Create" class="MCXref xref">Create or edit a business unit</a>
--   <a href="#Delete" class="MCXref xref">Delete a business unit</a>
+-   [Create or edit a business unit](#Create)
+-   [Delete a business unit](#Delete)
 
 <span id="Display"></span>
 
@@ -72,7 +72,7 @@ Use the following procedure to create or edit a business unit.
 
 8.  In the **Network Zone** field, select the network zone that defines the public URL prefix for users in this business unit.  
     Select **Default** to use the setting in the default network zone, or choose a specific network zone to use the setting defined for that zone  
-    For more information, see <a href="../../c_st_setup/c_st_networkzones/t_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Manage the communication across Transaction Manager, protocol and proxy servers</a>.
+    For more information, see [Manage the communication across Transaction Manager, protocol and proxy servers](../../c_st_setup/c_st_networkzones/t_st_networkzones#SetupMenu_1217491348_1149202).
 
 9.  <span id="HTML_template_bu"></span>In the *HTML Template Settings* pane:  
     1.  From the **HTML Template** drop-down, select the HTML template you want to use for accounts and account templates that belong to this business unit.
@@ -87,27 +87,27 @@ Use the following procedure to create or edit a business unit.
     2.  Select the **Allow Login by Email modifying** check box to allow administrators to change the **Allow this account to login by email** field when editing or creating an account for this business unit.
     3.  Select the **Allow Delivery Method modifying** check box to allow administrators to change the delivery method values when editing or creating an account for this business unit.
     4.  Select the **Delivery Method** . The value controls the options that ST Web Client displays in the *User Access* window.
-        See <a href="../../c_st_setup/t_st_adhocconfiguration#DeliveryMethod" class="MCXref xref">Default Package Delivery Method</a>.
+        See [Default Package Delivery Method](../../c_st_setup/t_st_adhocconfiguration#DeliveryMethod).
     5.  The **Implicit Enrollment Type** value controls which option ST Web Client selects initially in the *User Access* window and which enrollment type is used by the {{< SecureTransport/companyname >}} Email Plug-ins. The choices depend on the enrollment types enabled by the **Delivery Methods** and **Enrollment Types** fields.
     6.  Select the **Enrollment Template** for this business unit. When a user is enrolled based on an ad hoc file transfer from a user in this business unit, the selected account template is used. You specify the default enrollment template on the *AdHoc Settings* page.
-    7.  Select the **Email Notification Template** for this business unit. When a user is enrolled based on an ad hoc file transfer from a user in this business unit, the selected email notification template is used. You specify the <a href="../../c_st_setup/t_st_adhocconfiguration#AdHoc_Settings" class="MCXref xref">Provide the information as described in the following table:</a> on the *AdHoc Settings* page.
+    7.  Select the **Email Notification Template** for this business unit. When a user is enrolled based on an ad hoc file transfer from a user in this business unit, the selected email notification template is used. You specify the [Provide the information as described in the following table:](../../c_st_setup/t_st_adhocconfiguration#AdHoc_Settings) on the *AdHoc Settings* page.
 
 12. In the *Shared Folders Settings* pane, select the **Allow Shared Folders collaboration** check box to allow shared folders collaboration.  
     This option is inherited from the business unit by the children of the business unit. When checked user accounts may collaborate using, creating, and sharing folders based on the following criteria:
     1.  If the user accounts are not in the same BU but they have common ancestor then the business unit setting of the lowest common ancestor is used for deciding if sharing is allowed or not.
     2.  If the user accounts are in one and the same business unit then the shared folder setting of the business unit is used for deciding if sharing is allowed or not.
-    3.  If the user accounts have business units assigned but there is no common ancestor then the global setting is used for deciding if sharing is allowed or not. See <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a> for information on setting global parameters.
-    4.  If the owner account or the collaborator account (or both of them) has no assigned business unit then the global server setting is used for deciding if sharing is allowed or not. See <a href="../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a> for information on setting global parameters.
+    3.  If the user accounts have business units assigned but there is no common ancestor then the global setting is used for deciding if sharing is allowed or not. See [View and change server configuration parameters](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters) for information on setting global parameters.
+    4.  If the owner account or the collaborator account (or both of them) has no assigned business unit then the global server setting is used for deciding if sharing is allowed or not. See [View and change server configuration parameters](../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters) for information on setting global parameters.
 
 13. To enable of disable ICAP servers for a specific Business Unit, select **Enable ICAP scan with server 'servername'**, from the list of all ICAP servers in the **ICAP Settings**, and the specified ICAP server will be enabled for this particular Business Unit.  
     **Note:** Importing Legacy Business Unit Accounts (from any version before 5.4) will not import the Business Unit ICAP server selection/s. They must be manually activated after the import.  
       
-    For ICAP server configuration information, see <a href="../../c_st_setup/t_st_icap_settings" class="MCXref xref">ICAP settings</a>.  
+    For ICAP server configuration information, see [ICAP settings](../../c_st_setup/t_st_icap_settings).  
 
 14. In the *File Archiving Settings* pane:
     1.  Select the **File archiving policy** from the menu.
 
-    2.  -   When **Default** is selected, business unit inherits either its parent’s policy or the <a href="../../c_st_setup/c_st_file_archiving/t_st_file_archiving_conf" class="MCXref xref">File archiving global configuration</a> if it is a top level business unit.
+    2.  -   When **Default** is selected, business unit inherits either its parent’s policy or the [File archiving global configuration](../../c_st_setup/c_st_file_archiving/t_st_file_archiving_conf) if it is a top level business unit.
         -   When **Enabled** is selected, file archiving will be enabled for all accounts from this business unit.
         -   When **Disabled** is selected, file archiving will be disabled for all accounts from this business unit.
 
@@ -115,7 +115,7 @@ Use the following procedure to create or edit a business unit.
         >
         > This option will be disabled if the Enable File Archiving option from the global File Archiving page is turned off.
 
-    4.  Use **Allow File archiving policy modifying** to enable or disable modification of the File Archiving policy <a href="../../accounts/useraccounts/t_st_create_user_account#File_Archiving_account" class="MCXref xref">File archiving policydrop-down list</a>.
+    4.  Use **Allow File archiving policy modifying** to enable or disable modification of the File Archiving policy [File archiving policydrop-down list](../../accounts/useraccounts/t_st_create_user_account#File_Archiving_account).
         -   When **checked**, all the accounts that are assigned to this business unit can have their own file archiving policy.
         -   When **unchecked**, the corresponding option in account settings page will be disabled and accounts will inherit the business unit policy.
 
@@ -127,7 +127,7 @@ Use the following procedure to create or edit a business unit.
         >
         > When you select this option, you must also provide archive folder absolute path. This option will be disabled if the Enable File Archiving option from the global File Archiving page is turned off.
 
-    7.  Select the **Encryption certificate** from the menu. The encryption certificate must be a local x.509 certificate. See <a href="../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
+    7.  Select the **Encryption certificate** from the menu. The encryption certificate must be a local x.509 certificate. See [Manage local certificates and certificate signing requests](../../c_st_setup/c_st_certificates/t_st_localcertificatesandcsrs).
         -   When **Default** is selected, the business unit inherits either its parent’s encryption certificate or the global encryption certificate if it is a top level business unit.
         -   When **Disabled** is selected, archived files for accounts in this business unit won’t be encrypted.
         -   When **Custom** is selected, a dedicated encryption certificate can be selected for this business unit.
@@ -142,8 +142,8 @@ Use the following procedure to create or edit a business unit.
     1.  <span id="Select"></span>Select the **File Maintenance policy** from the menu.
         -   When **Default** is selected, the business unit inherits its parent’s policy. If it's a top level business unit, the global file maintenance policy applies.
         -   When **Disabled** is selected, File Maintenance will be disabled for this business unit.
-        -   When **Custom** is selected, the panel expands with a *Custom settings* pane that allows you to modify the global <a href="../../applications/applicationsfilemaintenance#Configur" class="MCXref xref">File Maintenance application</a>. The customized policy applies to the accounts in this business unit only.
-    2.  Use the **Allow File Maintenance policy modifying:** check box to enable or disable modification of the file maintenance policy at <a href="../../accounts/useraccounts/t_st_create_user_account#FileMaintenance" class="MCXref xref">File Maintenance policydrop-down list</a>.
+        -   When **Custom** is selected, the panel expands with a *Custom settings* pane that allows you to modify the global [File Maintenance application](../../applications/applicationsfilemaintenance#Configur). The customized policy applies to the accounts in this business unit only.
+    2.  Use the **Allow File Maintenance policy modifying:** check box to enable or disable modification of the file maintenance policy at [File Maintenance policydrop-down list](../../accounts/useraccounts/t_st_create_user_account#FileMaintenance).
         -   When checked, all the accounts that are assigned to this business unit can have their own File Maintenance policy.
         -   When unchecked, the corresponding option in the user account settings page is disabled and the accounts inherit their business unit policy.
 
@@ -152,9 +152,9 @@ Use the following procedure to create or edit a business unit.
 
     2.  -   When **Default** is selected, the business unit inherits its parent’s policy. In case of a top level business uni, the global Account Maintenance policy applies.
         -   When **Disabled** is selected, Account Maintenance is disabled for this business unit.
-        -   When **Custom** is selected, the panel expands with a **Custom settings** pane that allows you to modify the existing <a href="../../applications/applicationsaccountmaintenance" class="MCXref xref">Account Maintenance application</a>. The customized policy applies to accounts in this business unit only. Only at Business Unit level, you can select a specific date on which Account Maintenance will be performed for all accounts under this business unit.
+        -   When **Custom** is selected, the panel expands with a **Custom settings** pane that allows you to modify the existing [Account Maintenance application](../../applications/applicationsaccountmaintenance). The customized policy applies to accounts in this business unit only. Only at Business Unit level, you can select a specific date on which Account Maintenance will be performed for all accounts under this business unit.
 
-    3.  Use the **Allow Account Maintenance policy modifying** check box to enable or disable modification of the Account Maintenance policy at <a href="../../accounts/useraccounts/t_st_create_user_account#Account_Maint_User" class="MCXref xref">Account Maintenance policydrop-down list</a>.
+    3.  Use the **Allow Account Maintenance policy modifying** check box to enable or disable modification of the Account Maintenance policy at [Account Maintenance policydrop-down list](../../accounts/useraccounts/t_st_create_user_account#Account_Maint_User).
         -   When checked, all the accounts that are assigned to this business unit can have their own Account Maintenance policy.
         -   When unchecked, the corresponding option in the user account settings page is disabled and the accounts inherit their business unit policy.
 
@@ -176,7 +176,7 @@ Use the following procedure to create or edit a business unit.
         -   When **unchecked**, accounts that use the Address Book policy defined on the business unit level will be allowed to send email packages and share folders only with users that exist in the defined Address Book.
     3.  This business unit setting overrides the global Address Book policy setting for collaboration. This setting can be overridden on the account level if **Allow modifying of the 'Allow Address Book Collaboration' setting** is checked.
     4.  Select **Allow modifying of the Collaboration setting** to enable modifying the **Allow Address Book collaboration** setting at the account level.
-    5.  Select Allow Address Book source settings to enable modifying of the Allow Address Book Policy modification at the account level. See <a href="#Address3" class="MCXref xref">Address Book business unit level configuration</a>.
+    5.  Select Allow Address Book source settings to enable modifying of the Allow Address Book Policy modification at the account level. See [Address Book business unit level configuration](#Address3).
 
 18. In the *Login Restriction Policy* pane:
     1.  Select the **Business Unit Login Restriction Policy** from menu.

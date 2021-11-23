@@ -4,7 +4,7 @@
     "weight": "420"
 }<span id="Internal_diagnostic_codes"></span>
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal diagnostic codes
+## {{< TransferCFT/componentshortname  >}} internal diagnostic codes
 
 Diagnostic codes provide general information on the cause of the error. It
 is independent of the operating system and of the network access method
@@ -28,19 +28,19 @@ the transfer failure:
 
 -   SYS: System error
 -   NET: Error detected
-    by the network layers (<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> layers, manufacturer or network layers)
+    by the network layers ({{< TransferCFT/componentshortname >}} layers, manufacturer or network layers)
 -   PROT: Fault
     detected by the file transfer protocol
 -   FILE: Transferred
     file access error returned by the operating system
 -   DATA: Error
-    accessing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> basic data: parameter, partners, catalog, communication,
+    accessing {{< TransferCFT/componentshortname >}} basic data: parameter, partners, catalog, communication,
     log, statistics and secondary indirection files (lists of partners, files,
     and so on)
 -   PARAM: Transfer
     execution error following a parameter setting error
 -   AUTH: Transfer
-    denied following an authorization check by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    denied following an authorization check by {{< TransferCFT/componentshortname >}}
 -   OVER: The
     transfer cannot be executed because the monitor's resources are saturated
     or a parameter setting limit has been exceeded
@@ -59,7 +59,7 @@ the transfer failure:
 ## Consequence column in diagnostic codes
 
 The Consequence column provides
-information on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> behavior following a transfer failure.
+information on the {{< TransferCFT/componentshortname  >}} behavior following a transfer failure.
 The resulting status of the transfer D, H or K:
 
 -   D: the transfer
@@ -118,7 +118,7 @@ The "No CAT" indication specifies that no
 catalog entry had been created for the transfer when the error occurred.
 The transfer request is rejected.<span id="Internal_diagnostic_codes_table"></span>
 
-<span class="autonumber"></span>DIAGI - Internal diagnostic codes
+DIAGI - Internal diagnostic codes
 table
 
 The following table makes references to DIAGP. For details, please see the [DIAGP section.](../general_protocol_diagnostics)
@@ -356,7 +356,7 @@ a deletion request</p>
       <tr>
          <td><p>123</p>         </td>
          <td><p>FILE - Error setting the pointer to a resynchronization point in the file: the restart point requested by the partner is incorrect.</p>
-<p>This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's <code>updat </code>parameter is greater than 1, the UCONF<span class="code">cft.server.catalog.sync.enable</span> is set to <span class="code">No</span>, or both of these are true) due to an unexpected event such as a process, system, or disk crash.</p>         </td>
+<p>This can occur when the synchronized points are not flushed from the catalog (if the CFTCAT's <code>updat </code>parameter is greater than 1, the UCONF<code>cft.server.catalog.sync.enable</code> is set to <code>No</code>, or both of these are true) due to an unexpected event such as a process, system, or disk crash.</p>         </td>
          <td><p>H status - ABORT, EXECE</p>
 <p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
       </tr>
@@ -592,7 +592,7 @@ a group of files</a></p>
       <tr>
          <td>158         </td>
          <td><p>There was an error while replacing Transfer CFT variables.</p>
-<p>The script referenced by <span class="code">&amp;fname</span> in the CFTS68E message is not executed.</p>         </td>
+<p>The script referenced by <code>&amp;fname</code> in the CFTS68E message is not executed.</p>         </td>
          <td>In the script &amp;fname, modify the variable &lt;var&gt; indicated in the CFTS68E message.         </td>
       </tr>
       <tr>
@@ -776,7 +776,7 @@ connection phase. DIAGP is then set to VNRELI</p>         </td>
          <td><p>D status - RETRY/COMMUT</p>
 <p>Up to "RETRYM" retries are performed for the
 transfer and the access data. If the number of retries reaches the value
-in the RETRYM parameter, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches the access data.</p>
+in the RETRYM parameter, {{< TransferCFT/componentshortname  >}} switches the access data.</p>
 <p>The partner access data for the next retry will relate to the next HOST
 parameter (CFTNET command), or the next PROT parameter (CFTPART command).
 The restart counter is reset to 0.</p>
@@ -992,21 +992,21 @@ the network resource</p>
 <p>The transfer cannot be executed</p>
 <p>DIAGP is then set to MAXCNX</p>         </td>
          <td><p>D status - NEXT</p>
-<p>This status corresponds to a transfer refusal by the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> protocol
+<p>This status corresponds to a transfer refusal by the {{< TransferCFT/componentlongname  >}} protocol
 task, even though the scheduler has not reached the MAXTRANS
 limit.</p>
 <p>This occurs when the protocol task maintains active connections
 after transfers have ended. Please see <a href="../../../concepts/about_parallel_transfers/prevent_network_depletion" class="MCXref xref">Network resource depletion prevention (NRDP)</a>.</p>
 <p> </p>
 <p>WSCAN related behavior</p>
-<p>Technically, the next retry is triggered <strong>wscan</strong> minutes after the previous try. However, sometimes you may have a <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.</p>
+<p>Technically, the next retry is triggered <strong>wscan</strong> minutes after the previous try. However, sometimes you may have a {{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.</p>
 <p> </p>
-<p><em>Unix only</em> - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the <span class="code">cft.out</span>:</p>
+<p><em>Unix only</em> - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the <code>cft.out</code>:</p>
 <blockquote>
 <p>CFTTCPS S_socket : start_soc : bind afunix</p>
 <p>CFTTCPS Invalid argument</p>
 </blockquote>
-<p>If this error occurs, modify the path to the socket in the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <span class="code">cft.unix.stcp.afunix</span> parameter according to the operating system limit as shown below:</p>
+<p>If this error occurs, modify the path to the socket in the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <code>cft.unix.stcp.afunix</code> parameter according to the operating system limit as shown below:</p>
 <ul>
 <li>AIX: 1023</li>
 <li>HP-UX: 92</li>
@@ -1051,11 +1051,11 @@ end</p>         </td>
       </tr>
       <tr>
          <td><p>421</p>         </td>
-         <td><p>1. SYS - Error executing a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>file task</p>         </td>
+         <td><p>1. SYS - Error executing a {{< TransferCFT/transfercftname  >}}file task</p>         </td>
          <td><p>D status - NEXT</p>         </td>
       </tr>
       <tr>
-         <td><p>2. SYS - Error executing a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> EXIT task</p>         </td>
+         <td><p>2. SYS - Error executing a {{< TransferCFT/transfercftname  >}} EXIT task</p>         </td>
          <td><p>K status - ABORT</p>         </td>
       </tr>
       <tr>

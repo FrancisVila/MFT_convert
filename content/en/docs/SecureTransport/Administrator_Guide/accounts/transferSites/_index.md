@@ -39,20 +39,20 @@ A transfer site in {{< SecureTransport/componentshortname  >}} is defined with v
 -   **Use Expression Language** - when checked, all possible checkboxes for boolean properties are switched to text fields. Applicable for Folder Monitor, FTP(S), HTTP(S), SSH (SFTP) and PeSIT Transfer Sites. In these text fields, you can type values or expressions for the required and the optional fields needed to define the transfer site.  
     You can use expressions in the fields indicated by a **vertical yellow bar**.
 -   **Transfer Protocol** – one of the supported protocols: AS2, Connect:Direct, Folder Monitor, FTP(S), HTTP(S), SSH (SFTP), PeSIT, System to Human, or a protocol implemented using the file services interface. The protocol of an existing transfer site cannot be changed.
--   **Additional attributes** – a group of fields that allows you to add (or remove) custom attributes as *attribute:value* pairs to use with your Transfer sites. This functionality is available at the bottom of the page on the *Add Transfer Site* page, regardless of the Transfer site type. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+-   **Additional attributes** – a group of fields that allows you to add (or remove) custom attributes as *attribute:value* pairs to use with your Transfer sites. This functionality is available at the bottom of the page on the *Add Transfer Site* page, regardless of the Transfer site type. See [Additional attributes](../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 -   **Custom properties** – these vary according to the protocol used for the transfer site. For more information about each protocol, see the respective subtopic for each protocol:<span id="transferSites"></span>
-    -   <a href="r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
-    -   <a href="r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
-    -   <a href="r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
-    -   <a href="r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
-    -   <a href="transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
-    -   <a href="transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
-    -   <a href="transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
-    -   <a href="transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
-    -   <a href="transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
-    -   <a href="transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
+    -   [AS2 transfer sites](r_st_as2transfersites)
+    -   [Connect:Direct transfer sites](r_st_connectdirecttransfersites)
+    -   [Folder Monitor transfer sites](r_st_foldermonitortransfersites)
+    -   [File services interface transfer sites](r_st_fileservicesinterfaceprotocoltransfersites)
+    -   [FTP(S) transfer sites](transfersites-ftp)
+    -   [HTTP(S) transfer sites](transfersites-http)
+    -   [PeSIT transfer sites](transfersites-pesit)
+    -   [System to Human transfer sites](transfersites-s2h)
+    -   [SSH transfer sites](transfersites-ssh)
+    -   [Generic HTTP transfer sites](transfersites-generichttp)
 
 **Related topics:**
 
--   <a href="t_st_transfersites" class="MCXref xref">Manage transfer sites</a> - create, edit or delete a transfer site
--   <a href="using_dxagent_transfersapi" class="MCXref xref">Using DXAGENT_TRANSFERSAPI variables in transfer sites</a>
+-   [Manage transfer sites](t_st_transfersites) - create, edit or delete a transfer site
+-   [Using DXAGENT\_TRANSFERSAPI variables in transfer sites](using_dxagent_transfersapi)

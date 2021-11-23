@@ -4,7 +4,7 @@
     "weight": "130"
 }## Preface
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Installation Guide provides instructions for installing and deploying your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+The {{< TransferCFT/componentshortname  >}} Installation Guide provides instructions for installing and deploying your {{< TransferCFT/componentshortname  >}}.
 
 <span id="Installation support format"></span>
 

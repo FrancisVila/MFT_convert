@@ -2,19 +2,19 @@
     "title": "Managing keys (command line)",
     "linkTitle": "Managing keys",
     "weight": "230"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-[<span class="code" style="font-weight: bold;">secadm import\_key</span>](#secadm_import_key)
+[`secadm import_key`](#secadm_import_key)
 
-[<span class="code" style="font-weight: bold;">secadm update\_key</span>](#secadm_update_key)
+[`secadm update_key`](#secadm_update_key)
 
-[<span class="code" style="font-weight: bold;">secadm delete\_key</span>](#secadm_delete_key)
+[`secadm delete_key`](#secadm_delete_key)
 
-[<span class="code" style="font-weight: bold;">secdsp select\_key</span>](#secdsp_select_key)
+[`secdsp select_key`](#secdsp_select_key)
 
-[<span class="code" style="font-weight: bold;">secdsp display\_key</span>](#secdsp_display_key)
+[`secdsp display_key`](#secdsp_display_key)
 
-[<span class="code" style="font-weight: bold;">secdsp status\_key</span>](#secdsp_status_key)
+[`secdsp status_key`](#secdsp_status_key)
 
 <span id="secadm_import_key"></span>
 
@@ -28,7 +28,7 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><p><span class="code" style="font-weight: bold;">secadm import_key {-name} {-file_name} {-file_format}</span> [-algorithm] [-type] [-group] [-state] [-comments]</p>         </td>
+         <td><p><code>secadm import_key {-name} {-file_name} {-file_format}</code> [-algorithm] [-type] [-group] [-state] [-comments]</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
@@ -37,15 +37,15 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-name (-n)</span>: Enter the name of the key you are importing. The name of the key must be unique. (max 31 characters).</p>         </td>
+<p><code>-name (-n)</code>: Enter the name of the key you are importing. The name of the key must be unique. (max 31 characters).</p>         </td>
       </tr>
       <tr>
-         <td><p><span style="font-style: italic;">Mandatory</span></p>
-<p><span class="code">-file_name (-fn)</span>: Enter the name of the file that contains the key to import.</p>         </td>
+         <td><p><em>Mandatory</em></p>
+<p><code>-file_name (-fn)</code>: Enter the name of the file that contains the key to import.</p>         </td>
       </tr>
       <tr>
-         <td><p><span style="font-style: italic;">Mandatory</span></p>
-<p><span class="code">-file_format (-ff)</span>: Enter the Key file encoding.</p>
+         <td><p><em>Mandatory</em></p>
+<p><code>-file_format (-ff)</code>: Enter the Key file encoding.</p>
 <p>Possible values:</p>
 <ul>
 <li>DER</li>
@@ -55,7 +55,7 @@
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-algorithm (-algo)</span>: Enter the Key file algorithm.</p>
+         <td><p><code>-algorithm (-algo)</code>: Enter the Key file algorithm.</p>
 <p>Possible values:</p>
 <ul>
 <li>RSA</li>
@@ -67,7 +67,7 @@
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-type (-t)</span>: Enter the key type.</p>
+         <td><p><code>-type (-t)</code>: Enter the key type.</p>
 <p>Possible values:</p>
 <ul>
 <li>PRIVATE</li>
@@ -75,12 +75,12 @@
 </ul>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-group (-g)</span>: Enter the group of the Key.</p>         </td>
+         <td><p><code>-group (-g)</code>: Enter the group of the Key.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-state (-s)</span>: Enter the operational status of the Key:</p>
+         <td><p><code>-state (-s)</code>: Enter the operational status of the Key:</p>
 <ul>
-<li><span style="font-weight: bold;">E</span> = Enabled</li>
+<li><strong>E</strong> = Enabled</li>
 <li><span style="font-weight: bold;">D</span> = Disabled</li>
 <li><span style="font-weight: bold;">C</span> = To check</li>
 </ul>         </td>

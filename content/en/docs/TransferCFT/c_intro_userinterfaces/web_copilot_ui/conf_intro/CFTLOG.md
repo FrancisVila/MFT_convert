@@ -87,7 +87,7 @@ at midnight.</p>         </td>
    </tbody>
 </table>
 
-<span class="bold_in_para">Example </span>
+**Example**
 
 This command defines the log file names:
 

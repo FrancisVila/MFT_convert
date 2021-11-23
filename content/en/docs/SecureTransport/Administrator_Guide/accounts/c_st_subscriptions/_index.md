@@ -14,6 +14,6 @@ Additional transfer configurations are possible for subscriptions. Use subscript
 
 The following topics describe how to manage subscriptions:
 
--   <a href="r_st_encryption_options" class="MCXref xref">Encryption options</a> - Lists the subscription encryption options.
--   <a href="r_st_post_transmission_actions" class="MCXref xref">Post-transmission actions</a> - Lists the subscription post-transmission actions.
--   <a href="t_st_subscriptions" class="MCXref xref">Manage subscriptions</a> - Provides how-to instructions for managing subscriptions.
+-   [Encryption options](r_st_encryption_options) - Lists the subscription encryption options.
+-   [Post-transmission actions](r_st_post_transmission_actions) - Lists the subscription post-transmission actions.
+-   [Manage subscriptions](t_st_subscriptions) - Provides how-to instructions for managing subscriptions.

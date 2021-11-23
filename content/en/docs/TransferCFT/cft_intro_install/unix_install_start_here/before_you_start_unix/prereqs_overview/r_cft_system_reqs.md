@@ -2,9 +2,9 @@
     "title": "System requirements",
     "linkTitle": "System requirements",
     "weight": "150"
-}The following are the system requirements for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+}The following are the system requirements for {{< TransferCFT/componentshortname  >}}.
 
-## About the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment
+## About the {{< TransferCFT/componentshortname  >}} environment
 
 ### Unix/Linux system prerequisites
 
@@ -15,11 +15,11 @@ Transfer CFT requires that you install the appropriate library for your operatin
 
 ### Supported operating systems and browsers
 
-Refer to the <span class="mc-variable axway_variables.Platform_or_Suite_Long_Name variable">AMPLIFY</span> Supported Platforms guide available on <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+Refer to the {{< TransferCFT/platformorsuitelongname  >}} Supported Platforms guide available on {{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
 ## Disk space and RAM requirements
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> has the following hardware requirements:
+{{< TransferCFT/componentlongname  >}} has the following hardware requirements:
 
 -   Disk space requirement
     -   1.5 to 5 Gigabyte: minimum disk space to allow for future updates, SPs, and continued performance

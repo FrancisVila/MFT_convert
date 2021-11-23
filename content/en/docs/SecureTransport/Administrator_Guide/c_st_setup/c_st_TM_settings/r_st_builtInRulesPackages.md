@@ -60,7 +60,7 @@ The rules are required to trigger the application agent.
 
 InPermissionCheck represents an implementations of checking file permissions before allowing {{< SecureTransport/componentshortname  >}} operations to continue.
 
-InPermissionCheck contains an in-process Java agent. It's efficient and provides basic check based on UID/GID and the file permission flags. For details, see <a href="../../../c_st_accesscontrol#AccessMenu_3475920566_1050860" class="MCXref xref">Access</a>.
+InPermissionCheck contains an in-process Java agent. It's efficient and provides basic check based on UID/GID and the file permission flags. For details, see [Access](../../../c_st_accesscontrol#AccessMenu_3475920566_1050860).
 
 -   InPermissionCheck
 
@@ -70,19 +70,19 @@ The following packages handle specific {{< SecureTransport/componentshortname  >
 
 The following topics describe the other Transaction Manager rules packages:
 
--   <a href="#ArchiveA" class="MCXref xref">ArchiveAgent</a>
--   <a href="#Sentinel" class="MCXref xref">Axway Sentinel</a>
--   <a href="#ConnectD" class="MCXref xref">ConnectDirectTransfer</a>
--   <a href="#FileServ" class="MCXref xref">FileServicesInterface</a>
--   <a href="#ICAPScan" class="MCXref xref">ICAPScan</a>
--   <a href="#MDNRecei" class="MCXref xref">MDNReceipting</a>
--   <a href="#Pesit" class="MCXref xref">Pesit and PesitTransfer</a>
--   <a href="#PGPTrans" class="MCXref xref">PGPTransform</a>
--   <a href="#Resubmit" class="MCXref xref">Resubmit</a>
--   <a href="#SendToSi" class="MCXref xref">SendToSite</a>
--   <a href="#ServerTr" class="MCXref xref">ServerTransferNotify</a>
--   <a href="#SNMPTran" class="MCXref xref">SNMPTransferNotify</a>
--   <a href="#WebServi" class="MCXref xref">WebServicesAPI</a>
+-   [ArchiveAgent](#ArchiveA)
+-   [Axway Sentinel](#Sentinel)
+-   [ConnectDirectTransfer](#ConnectD)
+-   [FileServicesInterface](#FileServ)
+-   [ICAPScan](#ICAPScan)
+-   [MDNReceipting](#MDNRecei)
+-   [Pesit and PesitTransfer](#Pesit)
+-   [PGPTransform](#PGPTrans)
+-   [Resubmit](#Resubmit)
+-   [SendToSite](#SendToSi)
+-   [ServerTransferNotify](#ServerTr)
+-   [SNMPTransferNotify](#SNMPTran)
+-   [WebServicesAPI](#WebServi)
 
 <span id="ArchiveA"></span>
 
@@ -107,19 +107,19 @@ Where:
 -   `login_name` - Login name for the user who performed the transfer.
 -   `relative_path_to_file` - Path to the file relative to the account's home folder.
 
-For more information, see <a href="../../../applications/applicationsarchivemaintenance#top" class="MCXref xref">Archive Maintenance application</a> and <a href="../../c_st_file_archiving/t_st_file_archiving_conf" class="MCXref xref">File archiving global configuration</a> .
+For more information, see [Archive Maintenance application](../../../applications/applicationsarchivemaintenance#top) and [File archiving global configuration](../../c_st_file_archiving/t_st_file_archiving_conf) .
 
 <span id="Sentinel"></span>
 
 ### {{< SecureTransport/companyname  >}} Sentinel
 
-This package is enabled by default. {{< SecureTransport/componentshortname  >}} uses it to send file transfer and processing events to {{< SecureTransport/companyname  >}} Sentinel and to call the agent used in a {{< SecureTransport/companyname  >}} Sentinel Link Data Maintenance application. For more information about configuring {{< SecureTransport/componentshortname  >}} to send events to Sentinel, see <a href="../../c_st_sentinelintegration#SetupMenu_1217491348_1081088" class="MCXref xref">Integrate Axway Sentinel</a>.
+This package is enabled by default. {{< SecureTransport/componentshortname  >}} uses it to send file transfer and processing events to {{< SecureTransport/companyname  >}} Sentinel and to call the agent used in a {{< SecureTransport/companyname  >}} Sentinel Link Data Maintenance application. For more information about configuring {{< SecureTransport/componentshortname  >}} to send events to Sentinel, see [Integrate Axway Sentinel](../../c_st_sentinelintegration#SetupMenu_1217491348_1081088).
 
 <span id="ConnectD"></span>
 
 ### ConnectDirectTransfer
 
-Enable this package when you want to create and use a Connect:Direct transfer site. This package is disabled by default. For more information, see <a href="../../../accounts/transfersites/r_st_connectdirecttransfersites#AccountsMenu_2253641766_1148194" class="MCXref xref">Connect:Direct transfer sites</a>.
+Enable this package when you want to create and use a Connect:Direct transfer site. This package is disabled by default. For more information, see [Connect:Direct transfer sites](../../../accounts/transfersites/r_st_connectdirecttransfersites#AccountsMenu_2253641766_1148194).
 
 <span id="FileServ"></span>
 
@@ -165,15 +165,15 @@ This package contains rules for canceling events. It is enabled by default.
 
 ### SendToSite
 
-Use this package when you want to upload files to a specific site without subscribing an account to an application. This package is disabled by default. This package is used with the **Send Files Directly To** option. For details, see <a href="../../../accounts/c_st_subscriptions/t_st_subscriptions#Subscrib" class="MCXref xref">Subscribe an account to an application</a>.
+Use this package when you want to upload files to a specific site without subscribing an account to an application. This package is disabled by default. This package is used with the **Send Files Directly To** option. For details, see [Subscribe an account to an application](../../../accounts/c_st_subscriptions/t_st_subscriptions#Subscrib).
 
-In order to use `SendToSite` package, enable it and modify its content. For example, by adding a transfer site name as a value to the Site parameter. For details, refer to <a href="../t_st_rulespackages" class="MCXref xref">Manage rules packages</a>.
+In order to use `SendToSite` package, enable it and modify its content. For example, by adding a transfer site name as a value to the Site parameter. For details, refer to [Manage rules packages](../t_st_rulespackages).
 
 <span id="ServerTr"></span>
 
 ### ServerTransferNotify
 
-This package implements HTML email notification for file transfers. This package is disabled by default. For more information, see <a href="../../../c_st_velocityemailnotificationpackage#AppEmailNotify_264165044_1011943" class="MCXref xref">Velocity email notification package</a>.
+This package implements HTML email notification for file transfers. This package is disabled by default. For more information, see [Velocity email notification package](../../../c_st_velocityemailnotificationpackage#AppEmailNotify_264165044_1011943).
 
 <span id="SNMPTran"></span>
 

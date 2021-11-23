@@ -53,7 +53,7 @@ Use the following steps to import the CA certificate from the {{< SecureTranspor
 
 The following topics provide how-to instructions for importing and exporting {{< SecureTransport/securetransportname  >}} Server and Edge CAs:
 
--   <a href="" class="MCXref xref">Export the SecureTransport Server CA certificate</a> - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Server CA certificate.
--   <a href="" class="MCXref xref">Import the SecureTransport Server CA certificate</a> - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Server CA certificate.
--   <a href="" class="MCXref xref">Export the SecureTransport Edge CA certificate</a> - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Edge CA certificate.
--   <a href="" class="MCXref xref">Import the SecureTransport Edge CA certificate</a> - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Edge CA certificate.
+-   [Export the SecureTransport Server CA certificate]() - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Server CA certificate.
+-   [Import the SecureTransport Server CA certificate]() - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Server CA certificate.
+-   [Export the SecureTransport Edge CA certificate]() - Provides how-to instructions for exporting the {{< SecureTransport/componentshortname >}} Edge CA certificate.
+-   [Import the SecureTransport Edge CA certificate]() - Provides how-to instructions for importing the {{< SecureTransport/componentshortname >}} Edge CA certificate.

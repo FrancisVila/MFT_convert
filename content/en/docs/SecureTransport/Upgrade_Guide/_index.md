@@ -8,17 +8,17 @@
 
 ## For new users
 
-<a href="" class="MCXref xref">Introduction</a>
+[Introduction]()
 
 ## For existing users
 
-<a href="upgrade_plan" class="MCXref xref">Upgrade planning and preparation</a>
+[Upgrade planning and preparation](upgrade_plan)
 
-<a href="before_you_upgrade" class="MCXref xref">Pre-upgrade tasks</a>
+[Pre-upgrade tasks](before_you_upgrade)
 
-<a href="upgrade_overview" class="MCXref xref">Upgrade procedures</a>
+[Upgrade procedures](upgrade_overview)
 
-<a href="post-upgrade-tasks" class="MCXref xref">Post-upgrade tasks</a>
+[Post-upgrade tasks](post-upgrade-tasks)
 
 ## Get more help
 

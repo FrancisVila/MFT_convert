@@ -2,7 +2,7 @@
     "title": "Single Sign-On (SSO) configuration",
     "linkTitle": "Single Sign-On (SSO) configuration",
     "weight": "140"
-}Prior configuring SecureTransport to use SSO, install and configure your selected <a href="../../overview/r_st_axway_and_third-party_software_support#Single" class="MCXref xref">Single Sign-On (SSO)</a>.
+}Prior configuring SecureTransport to use SSO, install and configure your selected [Single Sign-On (SSO)](../../overview/r_st_axway_and_third-party_software_support#Single).
 
 > **Note:**
 >
@@ -18,8 +18,8 @@
 
 The default SSO configuration files are:
 
--   `sso-admin.xml` – Configure the SSO for administrator component. For a sample of a `sso-admin.xml` file, refer <a href="../../r_st_sample_admin" class="MCXref xref">Sample SSO configuration file for administrators</a>.
--   `sso-enduser.xml` – Configure the SSO for end-user component. For a sample of a `sso-enduser.xml` file, refer to <a href="../../r_st_sample_end-users" class="MCXref xref">Sample SSO configuration file for end-users</a>.
+-   `sso-admin.xml` – Configure the SSO for administrator component. For a sample of a `sso-admin.xml` file, refer [Sample SSO configuration file for administrators](../../r_st_sample_admin).
+-   `sso-enduser.xml` – Configure the SSO for end-user component. For a sample of a `sso-enduser.xml` file, refer to [Sample SSO configuration file for end-users](../../r_st_sample_end-users).
 -   `krb5-login.conf` – A Kerberos configuration file.
 -   `sample-kerberos.keytab` – A Kerberos `.keytab` file.
 
@@ -27,7 +27,7 @@ The default SSO configuration files are:
 
 The main SSO configuration files (`sso-admin.xml` for administrators and `sso-enduser.xml` for end-users) are considered mandatory for configuring the SSO functionality in {{< SecureTransport/componentshortname  >}} for the respective components.
 
-For the sample SSO configuration files, refer to <a href="../../r_st_sample_admin" class="MCXref xref">Sample SSO configuration file for administrators</a> and <a href="../../r_st_sample_end-users" class="MCXref xref">Sample SSO configuration file for end-users</a>.
+For the sample SSO configuration files, refer to [Sample SSO configuration file for administrators](../../r_st_sample_admin) and [Sample SSO configuration file for end-users](../../r_st_sample_end-users).
 
 The main SSO configuration file contains the following elements:
 
@@ -63,8 +63,8 @@ The main SSO configuration file contains the following elements:
 -   `<Features>` element - The SSO agent can be fine-tuned by using an extra configuration features. In most cases, the values of these features don't have to be modified. The recommended features are:
     -   `<Feature key="secure-cookie" value="true" />` - Configures the session cookie whether to be set with Secure flag. Recommended value is true.
     -   `<Feature key="uid-generator" value="com.axway.st.server.sso.impl.UIDGenerator" />` - Type of unique identifier generator to use to assign ids to SAML messages. The value must be `com.axway.st.server.sso.impl.UIDGenerator`.
-        -   `<IdentityProviderResolution>` - For more information, refer to <a href="../c_st_multi_idp" class="MCXref xref">Multiple Identity Provider configuration</a>.
-        -   `<TenantResolution>` - For more information, refer to <a href="../c_st_multi_idp" class="MCXref xref">Multiple Identity Provider configuration</a>.
+        -   `<IdentityProviderResolution>` - For more information, refer to [Multiple Identity Provider configuration](../c_st_multi_idp).
+        -   `<TenantResolution>` - For more information, refer to [Multiple Identity Provider configuration](../c_st_multi_idp).
 
 -   `<IdentityProviders>` element - Identity provider definitions. Configures various aspects of interaction with Identity Providers. This element is required. The main attributes for this element are:
     -   `entityId` – Sets the unique identifier of the Service Provider. This identifier is sent to the Identity Provider so it can know who is requesting an authentication or a logout. For SAML-based Identity provider add here `<EntityDescriptor>` element `entityID` attribute value, from the Identity provider metadata file.
@@ -75,8 +75,8 @@ The main SSO configuration file contains the following elements:
     -   `userNameAttribute` - Sets the name of the Identity Provider attribute that provides the user name.
 
 -   `<Mappings>` element:
-    -   `<FilterMapping>` - This mapping creates output attributes when a filter matches the input attributes from the Identity Provider. For more information about the Filter Mapping syntax, refer to <a href="../../r_st_sso_filter_mapping" class="MCXref xref">SSO filter mapping</a>.
-    -   `<RenameMapping>` - With this mapping, you can rename an attribute from the Identity Provider, keeping its value. For more information, refer to <a href="#Accessin" class="MCXref xref">Accessing Single Sign-On (SSO) attributes</a>.
+    -   `<FilterMapping>` - This mapping creates output attributes when a filter matches the input attributes from the Identity Provider. For more information about the Filter Mapping syntax, refer to [SSO filter mapping](../../r_st_sso_filter_mapping).
+    -   `<RenameMapping>` - With this mapping, you can rename an attribute from the Identity Provider, keeping its value. For more information, refer to [Accessing Single Sign-On (SSO) attributes](#Accessin).
 
 -   `<Features>` element - Features control specific behavior of SAML message processing. The recommended features are:
     -   `<Feature key="saml-allow-http-connection" value="false"/>` - Allows interaction with the IdP by plain HTTP. Default value is false.
@@ -133,7 +133,7 @@ There are several system attributes that are considered important for {{< Secure
 
 \*The expected {{< SecureTransport/componentshortname  >}} attribute name in order for the attribute to be mapped correctly.
 
-For more information about the SSO attributes, refer to <a href="../../r_st_sso_filter_mapping" class="MCXref xref">SSO filter mapping</a>.
+For more information about the SSO attributes, refer to [SSO filter mapping](../../r_st_sso_filter_mapping).
 
 ## Access the system attributes
 

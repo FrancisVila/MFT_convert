@@ -2,15 +2,15 @@
     "title": "Post registration operations",
     "linkTitle": "Post registration operations ",
     "weight": "200"
-}In addition to registration, there are other types of recurring exchanges that occur between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
+}In addition to registration, there are other types of recurring exchanges that occur between {{< TransferCFT/componentshortname  >}} and or {{< TransferCFT/flowmanager  >}}.
 
 -   Configuration and flow deployment
 -   SSL certificate renewal
--   Product updates (<span class="mc-variable Primary.CG or_UM variable">Central Governance</span> only)
+-   Product updates ( only)
 
 ## Configuration and flow deployment
 
-From <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> you can modify Transfer CFT configuration and create flows. Deploying these pushes these modifications (for example, the equivalent of a uconfset command for a configuration change) to the Transfer CFT.
+From {{< TransferCFT/centralgovernancename  >}} you can modify Transfer CFT configuration and create flows. Deploying these pushes these modifications (for example, the equivalent of a uconfset command for a configuration change) to the Transfer CFT.
 
 <span id="SSL"></span>
 
@@ -24,11 +24,11 @@ Certificate and key renewal can refer to business and/or governance certificates
 
 ### Automatic certificate renewal
 
-When Copilot is started the certificates expiration dates in the PKI base are checked, and a renewal request is scheduled. The request schedule is dependent on the value set in the UCONF parameter <span class="code">cg.renewal\_period, </span>where the default value is 60 days. This represents the number of days before the certificate renewal process occurs relative to the expiration date. Each certificate has a defined expiration date which may differ, and renewal occurs independent of one another.
+When Copilot is started the certificates expiration dates in the PKI base are checked, and a renewal request is scheduled. The request schedule is dependent on the value set in the UCONF parameter `cg.renewal_period, `where the default value is 60 days. This represents the number of days before the certificate renewal process occurs relative to the expiration date. Each certificate has a defined expiration date which may differ, and renewal occurs independent of one another.
 
 Example
 
-If uconf <span class="code">cg.renewal\_period </span>is set to 60 days, the renewal procedure executes 60 days before the certificate expiration.
+If uconf `cg.renewal_period `is set to 60 days, the renewal procedure executes 60 days before the certificate expiration.
 
 ### Manual certificate renewal
 
@@ -56,7 +56,7 @@ Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 
 
 #### Change the private key length
 
-You can configure the key length for either a governance or business certificate from the default value of 2048 to 4096 either when you install <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>, or post-installation if you have a <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> that is already registered with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> or <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
+You can configure the key length for either a governance or business certificate from the default value of 2048 to 4096 either when you install {{< TransferCFT/transfercftname  >}}, or post-installation if you have a {{< TransferCFT/transfercftname  >}} that is already registered with {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}}.
 
 > **Note:**
 >

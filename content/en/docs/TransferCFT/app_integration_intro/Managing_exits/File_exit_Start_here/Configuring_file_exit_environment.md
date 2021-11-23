@@ -2,9 +2,9 @@
     "title": "Configure  the environment",
     "linkTitle": "Configuring the environment",
     "weight": "320"
-}This topic describes how to configure the environment for a <span style="font-style: italic;">file
-type exit</span>. Before you submit an exit, you must customize the following
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> objects:
+}This topic describes how to configure the environment for a *file
+type exit*. Before you submit an exit, you must customize the following
+{{< TransferCFT/componentshortname  >}} objects:
 
 -   CFTSEND: to define
     the parameters associated with the EXIT on sending the file
@@ -27,11 +27,11 @@ type exit</span>. Before you submit an exit, you must customize the following
 
 #### Parameters
 
-**ID = <span style="font-style: italic;">identifier</span>**
+**ID = *identifier***
 
 File identifier.
 
-**EXIT = <span style="font-style: italic;">identifier</span>**
+**EXIT = *identifier***
 
 File type EXIT identifier.
 

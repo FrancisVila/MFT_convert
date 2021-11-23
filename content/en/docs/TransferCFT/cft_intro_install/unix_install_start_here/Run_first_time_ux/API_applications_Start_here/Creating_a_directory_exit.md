@@ -2,7 +2,7 @@
     "title": "Creating  a directory exit",
     "linkTitle": "Creating a directory exit",
     "weight": "230"
-}The following example was designed from a modified version of the <span class="bold_in_para">cft-tcp.conf </span>configuration example, located in <span class="bold_in_para">&lt;installdir>/runtime/conf</span>. For this example, you should have customized
+}The following example was designed from a modified version of the **cft-tcp.conf** configuration example, located in **&lt;installdir>/runtime/conf**. For this example, you should have customized
 at least one of these files, using the instructions in Running Transfer
 CFT for the first time.
 
@@ -70,6 +70,8 @@ command:
 1.  Locate the communication properties
     of your site, which appear at the end of the file.
 
+<!-- -->
+
 -   If you are
     modifying the cft-tcp.conf file, you must also find every occurrence
     of the HOST string located in cfttcp-type commands and replace the X character
@@ -87,7 +89,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
     of a transfer to a partner known to the directory EXIT but not to Transfer
     CFT
 -   Activation
-    of a transfer to a partner not known to either <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or the directory
+    of a transfer to a partner not known to either {{< TransferCFT/componentshortname >}} or the directory
     EXIT
 
 <!-- -->
@@ -98,15 +100,15 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains:
 
 -   The *libcftexa*.*a*
-    module required to use the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> directory EXITs
+    module required to use the {{< TransferCFT/componentshortname >}} directory EXITs
 
 To generate the sample CFTEXITA application, proceed as follows.
 
 1.  Access the *&lt;installdir>/runtime/src/exit/* directory.
 2.  Enter the command:
 
-    <span style="font-family: 'Courier New', monospace;font-weight: bold;">
-make -f mk\_cftexita</span>
+    
+**make -f mk\_cftexita**
 
 ## Running the test
 

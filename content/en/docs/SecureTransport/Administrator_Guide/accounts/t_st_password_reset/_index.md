@@ -56,4 +56,4 @@ The link sent via email will have the following structure: `https://<st_ip>/pass
 
 If the secret question feature is enabled in {{< SecureTransport/componentshortname  >}}, the users must answer a secret question, which they have preciously set, before they can reset their password.
 
-For more information on Secret Question Functionality, see <a href="t_st_secretquestion" class="MCXref xref">Configure a secret question</a>.
+For more information on Secret Question Functionality, see [Configure a secret question](t_st_secretquestion).

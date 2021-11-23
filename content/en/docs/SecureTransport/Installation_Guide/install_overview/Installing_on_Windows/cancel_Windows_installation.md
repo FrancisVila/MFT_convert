@@ -10,5 +10,5 @@
 
 **Related topics:**
 
--   <a href="../install_to_use_embedded_database" class="MCXref xref">Install SecureTransport on Windows with the embedded database</a>
--   <a href="../install_on_windows_with_external_database" class="MCXref xref">Install SecureTransport Server on Windows with an external database</a>
+-   [Install SecureTransport on Windows with the embedded database](../install_to_use_embedded_database)
+-   [Install SecureTransport Server on Windows with an external database](../install_on_windows_with_external_database)

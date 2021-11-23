@@ -16,7 +16,7 @@ For information on user rights, refer to the topic [Defining user rights UNIX]()
 
 ## Installed directories and files
 
-When you install Transfer CFT, the <span class="code">home</span> directory is created and populated under the <span class="code">Transfer\_CFT</span> installation directory. This <span class="code">home </span>directory contains installation libraries, binaries, and templates. Do not store any personal files in the <span class="code">home </span>directory, as they are erased during updates.
+When you install Transfer CFT, the `home` directory is created and populated under the `Transfer_CFT` installation directory. This `home `directory contains installation libraries, binaries, and templates. Do not store any personal files in the `home `directory, as they are erased during updates.
 
 ### Installer-generated files
 
@@ -27,13 +27,13 @@ During the installation, the Transfer CFT installer creates two files in the ins
 
 ## Standalone installations
 
-If you are not using <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must provide a certificate in order to be able to use the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
+If you are not using {{< TransferCFT/transfercftname  >}} with {{< TransferCFT/centralgovernancename  >}}, you must provide a certificate in order to be able to use the {{< TransferCFT/transfercftname  >}} UI. See [Using the web-based browser UI](../../../c_intro_userinterfaces/web_copilot_ui#Connect2) page for details.
 
 <span id="updates"></span>
 
 ## Perform an update
 
-If you need to apply service packs or patches, refer to Update <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+If you need to apply service packs or patches, refer to Update {{< TransferCFT/componentshortname  >}}.
 
 If you have already started Transfer CFT or Copilot, stop these servers prior to performing an update.
 
@@ -49,8 +49,8 @@ if you did not do so during the installation process. If you started Transfer CF
 To add environment variables to your Transfer CFT profile
 edit the following script:
 
--   Windows: <span class="code"> &lt;CFTDIRRUNTIME>\\profile.bat</span>
--   UNIX: <span class="code">./&lt;CFTDIRRUNTIME>/profile</span>
+-   Windows: ` <CFTDIRRUNTIME>\profile.bat`
+-   UNIX: `./<CFTDIRRUNTIME>/profile`
 
 ### UCONF
 
@@ -78,18 +78,17 @@ have a basic configuration. Typically this is created during installation or mig
 
 ### License key
 
-If you did not enter the license key during installation, you can enter it post installation in the cft.key file located in: <span class="code">&lt;CFTDIRRUNTIME>/conf/</span>
+If you did not enter the license key during installation, you can enter it post installation in the cft.key file located in: `<CFTDIRRUNTIME>/conf/`
 
 You can enter a single key or a list of keys in this file. In the configuration default
-file, the variable <span class="code">&lt;$CFTKEY></span> represents the <span class="code">cft.key</span> file.
+file, the variable `<$CFTKEY>` represents the `cft.key` file.
 
-### <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafile and configuration
+### {{< TransferCFT/componentshortname  >}} internal datafile and configuration
 
 Check the values, especially the key value, hostname, and port for TCP,
 in the following file:
 
--   Windows and UNIX: <span class="code">&lt;CFTRUNTIME>/conf/cft-tcp.conf
-    </span>
+-   Windows and UNIX: `<CFTRUNTIME>/conf/cft-tcp.conf  `
 
 Start the Transfer CFT profile and, to create the Transfer CFT
 internal datafile and update the basic configuration, execute:
@@ -114,7 +113,7 @@ To view the Copilot user interface configuration, execute:
 
 To change this configuration, you update the hostname and listening
 port for Transfer CFT UI using CFTUTIL
-<span class="code">uconfset</span>.
+`uconfset`.
 
 **Example**
 
@@ -131,7 +130,7 @@ This option is only available on Windows systems and must be selected during the
 
 ## Start the Transfer CFT Copilot server
 
-If you have implemented <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, starting Copilot launches the registration process. For more information, see the topic <a href="../../../governance_services_intro/cg_register_overview" class="MCXref xref">Registration overview</a>.
+If you have implemented , starting Copilot launches the registration process. For more information, see the topic <a href="../../../governance_services_intro/cg_register_overview" class="MCXref xref">Registration overview</a>.
 
 **Windows**
 
@@ -153,7 +152,7 @@ If you have implemented <span class="mc-variable Primary.CG or_UM variable">Cent
 
 ## Start Transfer CFT
 
-If you have implemented <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, you can start and stop Transfer CFT via the Central <span class="mc-variable suite_variables.Governance variable">Unified Flow Management</span> user interface. Otherwise perform the following command from the Transfer CFT runtime directory.
+If you have implemented , you can start and stop Transfer CFT via the Central {{< TransferCFT/governance  >}} user interface. Otherwise perform the following command from the Transfer CFT runtime directory.
 
 Enter:
 
@@ -162,9 +161,9 @@ Enter:
 
 <span id="Service"></span>
 
-## Service mode set up when using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Service mode set up when using
 
-Since you can start or restart a registered <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> from <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, when using service mode you must set the **CFT UI service** account so that it can start the **CFT service**. Therefore, perform one of the following two tasks:
+Since you can start or restart a registered {{< TransferCFT/componentlongname  >}} from , when using service mode you must set the **CFT UI service** account so that it can start the **CFT service**. Therefore, perform one of the following two tasks:
 
 -   Add the account to the CFT server's **Local Administrator Group**, or
 -   Provide the rights to start the Transfer CFT Service as a non Local Admin user:
@@ -172,6 +171,6 @@ Since you can start or restart a registered <span class="mc-variable axway_varia
     -   Open the process properties and click the **Services** tab. Click the **Permissions** button and add the user or group in the opened window. Then select the permissions that you want to assign (Full Control) and click **OK** to save.
     -   <img src="/Images/TransferCFT/services_rights.png" class="mediumWidth" />
 
-## Register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## Register with
 
-If you intend to implement <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, please refer to the <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span> *User's Guide &gt; [*Register with* <span class="mc-variable Primary.CG or_UM variable" style="font-style: italic;">Central Governance</span>](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

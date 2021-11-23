@@ -13,7 +13,7 @@ The are two delivered JCLs, H81$AMIN and H81$AMSF, to use to implement internal 
 -   H81$AMSF: This JCL activates access management for the group database for the SAF class method
 -   H81$AMIN: This JCL activates access management for the group database for either the system or file method
 
-Alternatively, you can use UCONF to define the internal access management. See the Internal access management information in the Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span> for more information.
+Alternatively, you can use UCONF to define the internal access management. See the Internal access management information in the Transfer CFT {{< TransferCFT/componentversion  >}} {{< TransferCFT/doctypeuser  >}} for more information.
 
 ### Using system as the internal access management
 
@@ -42,7 +42,7 @@ If you defined the previous facilities as UACC(NONE), you must set READ rights e
     PERMIT IRR.RADMIN.RLIST                                  -CLASS(FACILITY) ACCESS(READ)    ID(user)
     PERMIT IRR.RADMIN.SETROPTS.LIST                          -CLASS(FACILITY) ACCESS(READ)    ID(user)
 
-In Transfer CFT, set the <span class="code">group\_database</span> to <span class="code">system</span>.
+In Transfer CFT, set the `group_database` to `system`.
 
 
     UCONFSET ID=am.internal.group_database,value=system
@@ -124,11 +124,11 @@ When the access management method is **SAF class**, each user role is associated
 
 With **file** type access management, you define the mapping between predefined roles and groups in UCONF, and assign the user groups in an external file.
 
-When using this type of access management, the file format must be VB, where the maximum number of <span class="code">lrecl </span>is 1024. Enter the character \* in column 1 to allow comments.
+When using this type of access management, the file format must be VB, where the maximum number of `lrecl `is 1024. Enter the character \* in column 1 to allow comments.
 
 #### User/Group record description
 
-Start with the <span class="code">UserID </span>in column 1 using blanks as separators. For example, to assign users rights, use the format:
+Start with the `UserID `in column 1 using blanks as separators. For example, to assign users rights, use the format:
 
 Format
 
@@ -137,7 +137,7 @@ Format
     USER001 OPERATOR PARTNER .....
     USER002 ADMIN  ..... 
 
-In Transfer CFT, set the <span class="code">group\_database</span> to file and specify the path to the file defined above.
+In Transfer CFT, set the `group_database` to file and specify the path to the file defined above.
 
 
 

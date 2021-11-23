@@ -14,7 +14,7 @@ involved. It is comprised of the following sections:
 
 A file exit task comprises the following two modules:
 
--   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> interface
+-   {{< TransferCFT/componentshortname >}} interface
 -   User program
 
 The interface is written in C language. The main entry point of the

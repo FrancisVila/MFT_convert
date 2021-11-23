@@ -105,7 +105,7 @@ DNs. The remote (client) entity must provide a certificate signed by one
 of these authorities. The following figure indicates the format that the
 cftpkie function must respect when building the list.
 
-<span class="autonumber"></span>CA list format
+CA list format
 
 <img src="/Images/TransferCFT/Image1876.gif" width="469" height="352" alt="Format of the certificate showing the corresponding byte for each element" />
 
@@ -128,7 +128,7 @@ the same as the one described in the GetCAList phase.
 The following figure indicates the format that the cftpkie function
 must respect when building the certificate.
 
-<span class="autonumber"></span>Format of a certificate chain to be sent
+Format of a certificate chain to be sent
 
 <img src="/Images/TransferCFT/Image1877.gif" width="471" height="353" alt="View of bytes for DER encoding" />
 
@@ -230,7 +230,7 @@ It also contains:
 
 The following figure reviews the PKI exit phases for the server mode.
 
-<span class="autonumber"></span>PKI Exit Phases in Server Mode
+PKI Exit Phases in Server Mode
 
 <img src="/Images/TransferCFT/Image1878.gif" width="477" height="358" alt="SSL task execution beginning with a handshake" />
 
@@ -242,7 +242,7 @@ choice is dictated by the security profile (CFTSSL command).
 
 The following figure reviews the PKI exit phases for the client mode.
 
-<span class="autonumber"></span>PKI exit phases in client mode
+PKI exit phases in client mode
 
 <img src="/Images/TransferCFT/Image1879.gif" width="472" height="354" alt="SSL Task execution from handshake to the end of the SSL task" />
 

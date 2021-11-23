@@ -2,7 +2,7 @@
     "title": "About the PassPort CSD",
     "linkTitle": "PassPort AM CSD",
     "weight": "190"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
 The PassPort CSD file provides resources and available actions for Transfer CFT. This CSD file must be accessible on your file system.
 
@@ -43,7 +43,7 @@ Available <span id="CSD description"></span>CSD actions and resources
    </tbody>
 </table>
 
-For more information on customizing the CSD file, refer to the <span class="mc-variable axway_variables.Company_Name variable">Axway</span> PassPort
+For more information on customizing the CSD file, refer to the {{< TransferCFT/companyname  >}} PassPort
 AM documentation available at [support.axway.com]().
 
 Related topics

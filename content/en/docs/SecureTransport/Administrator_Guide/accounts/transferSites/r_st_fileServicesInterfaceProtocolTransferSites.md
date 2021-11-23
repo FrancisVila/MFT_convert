@@ -18,19 +18,19 @@ You can create a file services interface protocol transfer site using a site tem
 
 You cannot edit the values in the **Site Template Setting** or the **Optional Parameters**. When you select a site template, the **Site Template Placeholders** fields get the default values from the template. You can type values for these placeholders referenced in the other fields. Select **Use Default** to always use the current default value from the template if it is updated.
 
-You can use a site template to define a file services interface protocol transfer site. For more information, see <a href="../../../c_st_advancedaccountadministration/c_st_sitetemplates#Advanced_Accounts_2036285406_1131467" class="MCXref xref">Site templates</a>.
+You can use a site template to define a file services interface protocol transfer site. For more information, see [Site templates](../../../c_st_advancedaccountadministration/c_st_sitetemplates#Advanced_Accounts_2036285406_1131467).
 
-For more information about file services interface protocols for receiving files from other systems, see <a href="../../../c_st_fileservicesinterfacetransfers#FileServicesInterfaceTransfers_2548184958_1041296" class="MCXref xref">File services interface transfers</a>.
+For more information about file services interface protocols for receiving files from other systems, see [File services interface transfers](../../../c_st_fileservicesinterfacetransfers#FileServicesInterfaceTransfers_2548184958_1041296).
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

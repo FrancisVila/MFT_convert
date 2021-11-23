@@ -8,13 +8,13 @@ Some basic application framework concepts, relating to the AS2 implementation in
 
 The following topics describe the architecture and workflow of AS2 and the application framework:
 
--   <a href="#Applicat" class="MCXref xref">Application for AS2</a>
--   <a href="#AS2" class="MCXref xref">AS2 site</a>
+-   [Application for AS2](#Applicat)
+-   [AS2 site](#AS2)
 
 **Related topics:**
 
--   <a href="../c_st_synchronous_asynchronous_receipts" class="MCXref xref">Synchronous and asynchronous receipts</a>
--   <a href="../c_st_as2_server_setup_overview" class="MCXref xref">SecureTransport AS2 server: Setup overview</a>
+-   [Synchronous and asynchronous receipts](../c_st_synchronous_asynchronous_receipts)
+-   [SecureTransport AS2 server: Setup overview](../c_st_as2_server_setup_overview)
 
 <span id="Applicat"></span>
 
@@ -39,4 +39,4 @@ The {{< SecureTransport/componentshortname  >}} architecture, implemented by the
 >
 > AS2 site does not support server-initiated inbound transfers (server pull).
 
-For details, see <a href="" class="MCXref xref">Manage applications</a>.
+For details, see [Manage applications]().

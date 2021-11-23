@@ -8,9 +8,9 @@
 
 The upgrade must be made with no routing scheduled.
 
-It is strongly advised to check the routing queue by using the <span class="code">pmqctl </span>command:
+It is strongly advised to check the routing queue by using the `pmqctl `command:
 
-<span class="code">pmqctl info run\_time\\data\\router.pmq</span>
+`pmqctl info run_time\data\router.pmq`
 
 Example output:
 
@@ -40,9 +40,9 @@ end\_index : 4000000
 
 0 records total, 0 bytes total
 
-If both <span class="code">read\_index </span>and <span class="code">write\_index </span>have the same value, then the queue is empty.
+If both `read_index `and `write_index `have the same value, then the queue is empty.
 
-Alternatively use the <span class="code">pmqcheck.sh </span>script. This gives a more readable form of the <span class="code">pmqctl </span>command output:
+Alternatively use the `pmqcheck.sh `script. This gives a more readable form of the `pmqctl `command output:
 
 pmqcheck.sh
 
@@ -54,9 +54,9 @@ R2=66775 W2=66775 E2=4000000 D=0
 
 ## Export Gateway objects
 
-While the existing version of Gateway is running, use the <span class="code">pelbase </span>command to export the objects (Sites, Applications, Models...) to an editable output file (for example, <span class="code">output\_ file</span>).
+While the existing version of Gateway is running, use the `pelbase `command to export the objects (Sites, Applications, Models...) to an editable output file (for example, `output_ file`).
 
-Use the <span class="code">-append</span> parameter to concatenate at the end of the file. When using the <span class="code">-append </span>parameter, the order in which you export the objects is important. Export:
+Use the `-append` parameter to concatenate at the end of the file. When using the `-append `parameter, the order in which you export the objects is important. Export:
 
 -   User Profiles **before** Users
 -   Connection Gate Groups **before** Connection Gates
@@ -69,41 +69,35 @@ When exporting Users, you must be logged in as administrator to export user pass
 
 ### Export command examples
 
--   Export Sites: <span class="code">  
-    pelbase export\_site –f output\_file  
-    </span>
--   Export Applications: <span class="code">  
-    pelbase export\_appli –f output\_file –append</span>
+-   Export Sites: `pelbase export_site –f output_file`
+-   Export Applications: `pelbase export_appli –f output_file –append`
 -   Export Models:  
-    <span class="code">pelbase export\_model –f output\_file –append</span>
--   Export Diffusion Lists: <span class="code">  
-    pelbase export\_list –f output\_file –append</span>
+    `pelbase export_model –f output_file –append`
+-   Export Diffusion Lists: `pelbase export_list –f output_file –append`
 -   Export User Profiles:  
-    <span class="code">pelbase export\_profile –f output\_file –append</span>
+    `pelbase export_profile –f output_file –append`
 -   Export Users:  
-    <span class="code">pelbase export\_user –f output\_file –append</span>
--   Export Connection Gate Groups: <span class="code">  
-    pelbase export\_cgategroup –f output\_file –append</span>
--   Export Connection Gates: <span class="code">  
-    pelbase export\_cgate –f output\_file –append</span>
+    `pelbase export_user –f output_file –append`
+-   Export Connection Gate Groups: `pelbase export_cgategroup –f output_file –append`
+-   Export Connection Gates: `pelbase export_cgate –f output_file –append`
 -   Export Decision Rules:  
-    <span class="code">pelbase export\_decisionrule –f output\_file –append</span>
+    `pelbase export_decisionrule –f output_file –append`
 -   Export Rule Tables:  
-    <span class="code">pelbase export\_ruletable –f output\_file –append</span>
+    `pelbase export_ruletable –f output_file –append`
 -   Export Proxies:  
-    <span class="code">pelbase export\_proxy –f output\_file –append</span>
+    `pelbase export_proxy –f output_file –append`
 -   Export Purge Models:  
-    <span class="code">pelbase export\_purge\_model –f output\_file –append</span>
+    `pelbase export_purge_model –f output_file –append`
 -   Export Property Lists:  
-    <span class="code">pelbase export\_proplist –f output\_file –append</span>
+    `pelbase export_proplist –f output_file –append`
 -   Export Trading Partners:  
-    <span class="code">pelbase export\_tradepart –f output\_file –append</span>
+    `pelbase export_tradepart –f output_file –append`
 -   Export Axway Messaging connectors:  
-    <span class="code">pelbase export\_xmsctor –f output\_file –append</span>
+    `pelbase export_xmsctor –f output_file –append`
 -   Export Super Connection Gate Groups:  
-    <span class="code">pelbase export\_sgategroup –f output\_file –append</span>
+    `pelbase export_sgategroup –f output_file –append`
 -   Export Super Connection Gates:  
-    <span class="code">pelbase export\_sgate –f output\_file –append</span>
+    `pelbase export_sgate –f output_file –append`
 
 The objects that can be exported or imported depend on the version of Gateway, as shown in the following table:
 
@@ -116,103 +110,103 @@ The objects that can be exported or imported depend on the version of Gateway, a
          <td><p>V6.16.1</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Site (</span><span class="code">site</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>site</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Application (</span><span class="code">appli</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>appli</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Model (</span><span class="code">model</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>model</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Diffusion List (</span><span class="code">list</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>list</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">User (</span><span class="code">user</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>user</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">User profile (</span><span class="code">profile</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>profile</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Connection Gate (</span><span class="code">cgate</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>cgate</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p>Connection Gate Group<span class="span_3"> (</span><span class="code">cgategroup</span><span class="span_3">)</span></p>         </td>
+         <td><p>Connection Gate Group<code>cgategroup</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Decision Rule (</span><span class="code">decisionrule</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>decisionrule</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Rule Table (</span><span class="code">ruletable</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>ruletable</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Proxy (</span><span class="code">proxy</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>proxy</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Trading Partner (</span><span class="code">tradepart</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>tradepart</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p>Axway Messaging connector<span class="span_3"> (</span><span class="code">xmsctor</span><span class="span_3">)</span></p>         </td>
+         <td><p>Axway Messaging connector<code>xmsctor</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Property List (</span><span class="code">proplist</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>proplist</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Purge Model (</span><span class="code">purge_model</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>purge_model</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="span_3">Super Connection Gate (</span><span class="code">sgate</span><span class="span_3">)</span></p>         </td>
+         <td><p><code>sgate</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
       </tr>
       <tr>
-         <td><p>Super Connection Gate Group <span class="span_3">(</span><span class="code">sgategroup</span><span class="span_3">)</span></p>         </td>
+         <td><p>Super Connection Gate Group <code>sgategroup</code></p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
          <td><p>√</p>         </td>
@@ -222,27 +216,27 @@ The objects that can be exported or imported depend on the version of Gateway, a
 
 ## Logical sites
 
-It is not recommended to import Logical Sites. Logical Sites are still supported in this version of <span class="mc-variable suite_variables.GatewayName variable">Gateway</span>, but are no longer accessible via the GUI.
+It is not recommended to import Logical Sites. Logical Sites are still supported in this version of {{< Gateway/gatewayname  >}}, but are no longer accessible via the GUI.
 
 ## Export Virtual File Directories (VFD)
 
-While the previous version of <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> is running, export Virtual File Directories to an output file that can be edited (for example, v<span class="code">fd\_output\_file</span>):
+While the previous version of {{< Gateway/gatewayname  >}} is running, export Virtual File Directories to an output file that can be edited (for example, v`fd_output_file`):
 
-<span class="code">vfdbase export –f vfd\_output\_file</span>
+`vfdbase export –f vfd_output_file`
 
 ## Export security objects
 
-While the previous version of <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> is running, export security objects to an output file that can be edited. For example, to export Network Profiles to the file <span class="code">nprof\_output\_file</span>, enter:
+While the previous version of {{< Gateway/gatewayname  >}} is running, export security objects to an output file that can be edited. For example, to export Network Profiles to the file `nprof_output_file`, enter:
 
 secbase export\_netprof –f nprof\_output\_file
 
 You can also export:
 
--   Security Profiles (sprof), using the <span class="code">secbase export\_sprof </span>command
--   SSH Security Profiles (sshprof), using the <span class="code">secbase export\_sshprof </span>command
--   Certificates, using the <span class="code">secbase export\_cert </span>command
--   Keys, using the <span class="code">secbase export\_key </span>command
+-   Security Profiles (sprof), using the `secbase export_sprof `command
+-   SSH Security Profiles (sshprof), using the `secbase export_sshprof `command
+-   Certificates, using the `secbase export_cert `command
+-   Keys, using the `secbase export_key `command
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

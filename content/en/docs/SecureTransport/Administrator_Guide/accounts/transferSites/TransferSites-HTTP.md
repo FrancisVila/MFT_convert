@@ -24,12 +24,12 @@ The following table describes the general options for a HTTP(S) transfer site.
       <tr>
          <td>Host         </td>
          <td><p>Select <strong>Specify partner using hostname (IP address) and port number</strong> to enable this field.</p>
-<p>Enter either the <em>host name</em> or <em>IP address</em> of the remote host to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
+<p>Enter either the <em>host name</em> or <em>IP address</em> of the remote host to connect to for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
          <td>Port         </td>
          <td><p>Select <strong>Specify partner using hostname (IP address) and port number</strong> to enable this field.</p>
-<p>Enter the port number on the remote host to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.</p>         </td>
+<p>Enter the port number on the remote host to be used for file transfers. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.</p>         </td>
       </tr>
       <tr>
          <td>Alternative addresses         </td>
@@ -63,7 +63,7 @@ The following table describes the general options for a HTTP(S) transfer site.
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -101,7 +101,7 @@ The following table describes the general options for a HTTP(S) transfer site.
       </tr>
       <tr>
          <td>Allow Overwrite         </td>
-         <td><p>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing" class="MCXref xref">Advanced Routing</a>.</p>         </td>
+         <td><p>Taken into account when the site is used by the Send To Partner step. If checked the value of "Upload folder" will be overwritten with the value of "Overwrite upload folder". For more details see <a href="../../../c_st_advanced_routing">Advanced Routing</a>.</p>         </td>
       </tr>
       <tr>
          <td>Upload Folder         </td>
@@ -110,7 +110,7 @@ The following table describes the general options for a HTTP(S) transfer site.
       <tr>
          <td>Transfer Mode         </td>
          <td><p>Specify whether data is transferred as ASCII or binary. You can also choose to have {{< SecureTransport/componentshortname  >}} automatically determine the correct transfer mode.</p>
-<p>For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761" class="MCXref xref">Transfer mode for server-initiated transfers</a>.</p>         </td>
+<p>For more information about automatically determining transfer mode, see <a href="../../../c_st_advancedaccountadministration/c_st_clientinitiatedandserverinitiatedtransfers/c_st_transfer_mode_for_server-initiated_transfers#Advanced_Accounts_2036285406_1242761">Transfer mode for server-initiated transfers</a>.</p>         </td>
       </tr>
       <tr>
          <td>Use HTTPS         </td>
@@ -124,7 +124,7 @@ The following table describes the general options for a HTTP(S) transfer site.
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict HTTPS to use only FIPS 140-2 Level 1 certified cryptographic libraries. This field is displayed when <strong>Use HTTPS</strong> is selected.</p>
 <p>When you enable FIPS transfer mode, the panel expands with an additional field that lets you specify the desired set of cipher suites to be used in FIPS mode for server-initiated transfers through this site. By default, this set is populated with the cipher suites as defined in the <code>Https.FIPS.SIT.Ciphers</code> configuration option.</p>
-<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
+<p>You can add or remove cipher suites. The supported FIPS cipher suites from which you can select when adding a new one are listed in <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>. Note that both the sender and the recipient must use supported FIPS ciphers suites. Otherwise, the transfer will fail.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -146,7 +146,7 @@ The following table describes the general options for a HTTP(S) transfer site.
       </tr>
       <tr>
          <td>User Name         </td>
-         <td>Username used to log in to the HTTP server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.         </td>
+         <td>Username used to log in to the HTTP server. You cannot enter spaces-only values in this field. For more information, see <a href="../../useraccounts/t_st_create_user_account#Spaces">Spaces in required fields</a>.         </td>
       </tr>
       <tr>
          <td>Use Password         </td>
@@ -214,7 +214,7 @@ The Receive options subtab allows you to define post transmission actions on fil
       </tr>
       <tr>
          <td>Receive File As         </td>
-         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
+         <td>Select the check box to specify a file name. You can use the expression language to specify the criteria you want to match. The expression uses the criteria provided to create a new file name from the original file name when the transfer is received. You can use the {{< SecureTransport/componentshortname  >}}-specific variable <code>${stenv.site_target}</code> which takes the value from the remote file path. See <a href="../../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a> for information on {{< SecureTransport/componentshortname  >}}-specific variables.         </td>
       </tr>
       <tr>
          <td>On Failure         </td>
@@ -273,13 +273,13 @@ Advanced SSL settings allow you to define Cipher suites and SSL protocols with 
 
 **Related topics:**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-generichttp" class="MCXref xref">Generic HTTP transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [Generic HTTP transfer sites](../transfersites-generichttp)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

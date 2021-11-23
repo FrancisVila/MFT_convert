@@ -4,10 +4,10 @@
     "weight": "150"
 }In this topic you will learn how to:
 
--   <a href="#Add" class="MCXref xref">Add an SSH server</a>
--   <a href="#Start" class="MCXref xref">Start and stop an SSH server</a>
--   <a href="#Edit" class="MCXref xref">Edit SSH server settings</a>
--   <a href="#Delete" class="MCXref xref">Delete an SSH server</a>
+-   [Add an SSH server](#Add)
+-   [Start and stop an SSH server](#Start)
+-   [Edit SSH server settings](#Edit)
+-   [Delete an SSH server](#Delete)
 
 <span id="Add"></span>
 
@@ -86,7 +86,7 @@ from the drop-down list, for example,
       <tr>
          <td><span id="FIPS_KEX"></span>FIPS Exchange Algorithms         </td>
          <td><p>Specify the KEX algorithms to be used with your SSH server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant KEX algorithms supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant KEX algorithms supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default SSH server, the list of allowed KEX algorithms in FIPS mode is determined by the <code>Ssh.FIPS.KeyExchangeAlgorithms</code> configuration option.</p>         </td>
       </tr>
@@ -102,7 +102,7 @@ from the drop-down list, for example,
       <tr>
          <td><span id="FIPS_PK"></span>FIPS Public Keys         </td>
          <td><p>Specify the public key algorithms to be used with your SSH server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant public keys supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant public keys supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default SSH server, the list of allowed public key algorithms in FIPS mode is determined by the <code>Ssh.FIPS.PublicKeys</code> configuration option.</p>         </td>
       </tr>
@@ -113,7 +113,7 @@ from the drop-down list, for example,
       <tr>
          <td><span id="FIPS_MAC"></span>FIPS MAC Algorithms         </td>
          <td><p>Specify the MAC algorithms to be used with your SSH server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant MACs supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant MACs supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default SSH server, the list of allowed MAC algorithms in FIPS mode is determined by the <code>Ssh.FIPS.AllowedMacs</code> configuration option.</p>         </td>
       </tr>
@@ -125,7 +125,7 @@ from the drop-down list, for example,
       <tr>
          <td><span id="FIPS_ciphers"></span>Enabled FIPS Ciphers         </td>
          <td><p>Specify the ciphers to be used with your SSH server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant ciphers supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant ciphers supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default SSH server, the list of allowed public key algorithms in FIPS mode is determined by the <code>Ssh.FIPS.Ciphers</code> configuration option.</p>         </td>
       </tr>

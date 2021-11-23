@@ -29,9 +29,9 @@
 <p> </p>
 <p><br />
 </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Flows </span>&gt; <span class="bold_in_para">Add flow</span>.</p>
-<p>Create a flow named <span class="bold_in_para">implicit_flow</span> and define the identifier as <span class="bold_in_para">flow03</span>.</p>
-<p>To enable implicit mode, select <span class="bold_in_para">Target pulls file</span>.</p>
+         <td><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
+<p>Create a flow named <strong>implicit_flow</strong> and define the identifier as <strong>flow03</strong>.</p>
+<p>To enable implicit mode, select <strong>Target pulls file</strong>.</p>
 <p>Define the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.</p>
 <p><br />
 </p>         </td>
@@ -45,7 +45,7 @@
 <p> </p>
 <p> </p>         </td>
          <td><p>In the File properties of the Source, define the path to the file to be sent.</p>
-<p>You can use, for example, the <span class="code">TEST </span>file located by default in the source <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>'s <span class="code">runtime/pub</span> folder.</p>
+<p>You can use, for example, the <code>TEST </code>file located by default in the source {{< TransferCFT/componentshortname  >}}'s <code>runtime/pub</code> folder.</p>
 <p> </p>         </td>
          <td>          </td>
       </tr>
@@ -54,7 +54,7 @@
 <p> </p>         </td>
          <td><p>Deploy the flow.</p>
 <p> </p>         </td>
-         <td><p>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> click <span class="bold_in_para">Deploy </span>to save and deploy.</p>
+         <td><p>In click <strong>Deploy</strong> to save and deploy.</p>
 <p> </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
@@ -67,16 +67,15 @@
 <p> </p>
 <p> </p>
 <p> </p>         </td>
-         <td>From the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> (MainOffice), run the following command: <span class="code"><br />
-CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</span>
-<p>Remember in our example the source is Store_89, you should replace <span class="code">&lt;instance_source&gt;</span> with the Transfer CFT instance as it appears in your applications.</p>
+         <td>From the {{< TransferCFT/componentshortname  >}} (MainOffice), run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
+<p>Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.</p>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
          <td>5         </td>
          <td>Monitor the file transfer status.         </td>
-         <td>In <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> select the <span class="bold_in_para">Flows </span>tab, and click <span class="bold_in_para">Monitoring</span>.         </td>
+         <td>In select the <strong>Flows</strong> tab, and click <strong>Monitoring</strong>.         </td>
          <td><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
    </tbody>

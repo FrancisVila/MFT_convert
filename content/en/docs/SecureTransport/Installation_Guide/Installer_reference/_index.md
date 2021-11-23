@@ -83,10 +83,10 @@ The Update function enables you to apply or remove service packs and patches.
 
 The following sections provide more details on how the installer functions are used with {{< SecureTransport/componentshortname  >}}.
 
--   <a href="install" class="MCXref xref">Install product</a>
--   <a href="update" class="MCXref xref">Update product</a>
--   <a href="remove" class="MCXref xref">Remove updates</a>
--   <a href="uninstall" class="MCXref xref">Uninstall product</a>
+-   [Install product](install)
+-   [Update product](update)
+-   [Remove updates](remove)
+-   [Uninstall product](uninstall)
 
 ## Display command
 

@@ -6,17 +6,17 @@
 
 The following topics provide how-to instructions for managing protocol server access:
 
--   <a href="#Add" class="MCXref xref">Add an access rule</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable an access rule</a>
--   <a href="#Edit" class="MCXref xref">Edit an access rule</a>
--   <a href="#Delete" class="MCXref xref">Delete an access rule</a>
--   <a href="#Change" class="MCXref xref">Change the order that rules are applied</a>
--   <a href="#Server" class="MCXref xref">Server access rules example</a>
+-   [Add an access rule](#Add)
+-   [Enable or disable an access rule](#Enable)
+-   [Edit an access rule](#Edit)
+-   [Delete an access rule](#Delete)
+-   [Change the order that rules are applied](#Change)
+-   [Server access rules example](#Server)
 
 **Related topics:**
 
--   <a href="../c_st_access_rule_order" class="MCXref xref">Access rule order</a>
--   <a href="../t_st_enablehostnamesforaccesscontrol" class="MCXref xref">Enable host names for access control</a>
+-   [Access rule order](../c_st_access_rule_order)
+-   [Enable host names for access control](../t_st_enablehostnamesforaccesscontrol)
 
 <span id="Add"></span>
 
@@ -31,7 +31,7 @@ Use the following procedure to add an access rule.
 3.  In the **Rule** field, select an access permission. The types of access permissions available are:
     -   Allow Access From
     -   Deny Access From
-4.  In the Address field, enter a host name, an IP address, or a value that represents a range of IP addresses to apply the rule. For valid IP addresses and values for IP address ranges, see <a href="../../../c_st_ipaddressesandhostnames" class="MCXref xref">IP addresses and host names</a>.  
+4.  In the Address field, enter a host name, an IP address, or a value that represents a range of IP addresses to apply the rule. For valid IP addresses and values for IP address ranges, see [IP addresses and host names](../../../c_st_ipaddressesandhostnames).  
     Only one host name, IP address, or IP address range value is allowed. A host name pattern is not valid.
 5.  For a server access rule, select a **User Class**. Asterisk (`*`) means all users.
 6.  Click the Save icon (![Save](/Images/SecureTransport/SaveIcon_13x13.png)) in the **Edit** column.  
@@ -99,4 +99,4 @@ Use the following procedure to change the order that access rules are applied.
 
 ## Server access rules example
 
-The following example uses an IP address pattern to specify a range of IP addresses as described in <a href="../../../c_st_ipaddressesandhostnames" class="MCXref xref">IP addresses and host names</a>. It denies access to all computers except those in the 198.160.123 subnet.
+The following example uses an IP address pattern to specify a range of IP addresses as described in [IP addresses and host names](../../../c_st_ipaddressesandhostnames). It denies access to all computers except those in the 198.160.123 subnet.

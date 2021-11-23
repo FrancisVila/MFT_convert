@@ -4,23 +4,23 @@
     "weight": "100"
 }When using this product, follow these security best practices:
 
--   Always use TLS secured connections; see <a href="#Secure" class="MCXref xref">Secure connections</a>.
--   Don’t use the sample certificates provided with the installation of the product; see <a href="#Sample" class="MCXref xref">Sample certificates</a>.
--   Don’t use self-signed certificates; see <a href="#Self-sig" class="MCXref xref">Self-signed certificates</a>.
--   Maintain a list of users with privileged access; see <a href="#Privileg" class="MCXref xref">Privileged access user list</a>.
--   Limit as much as possible number of Internet access points; see <a href="#Internet" class="MCXref xref">Internet access limitation</a>.
--   Have the correct procedure to upgrade the product; see <a href="#Correct" class="MCXref xref">Correct upgrade procedure</a>.
--   Don’t define generic or anonymous users; see <a href="#Generic" class="MCXref xref">Generic or anonymous users</a>.
--   Be sure to enforce a reasonably strong password policy; see <a href="#Password" class="MCXref xref">Password policy</a>.
--   Make sure default authentication accounts are disabled or deleted; see <a href="#Default" class="MCXref xref">Default authentication account</a>.
--   Always change default passwords after installation; see <a href="#Default2" class="MCXref xref">Default passwords</a>.
--   Limit your remote connections; see <a href="#Remote" class="MCXref xref">Remote connections</a>.
--   {{< SecureTransport/componentshortname >}} supports configurations for logging, audit, and alerting; see <a href="#Logging," class="MCXref xref">Logging, audit, and alerts rules</a>.
--   Protect your sensitive files and databases; see <a href="#Sensitiv" class="MCXref xref">Sensitive files and databases</a>.
--   Use cryptographically strong protocols and ciphers; see <a href="#Use" class="MCXref xref">Use cryptographically strong protocols and ciphers</a>.
--   Use basic authorization and Base64 encoding of username and password; see <a href="#Password2" class="MCXref xref">Password encoding and BASIC authentication</a>.
+-   Always use TLS secured connections; see [Secure connections](#Secure).
+-   Don’t use the sample certificates provided with the installation of the product; see [Sample certificates](#Sample).
+-   Don’t use self-signed certificates; see [Self-signed certificates](#Self-sig).
+-   Maintain a list of users with privileged access; see [Privileged access user list](#Privileg).
+-   Limit as much as possible number of Internet access points; see [Internet access limitation](#Internet).
+-   Have the correct procedure to upgrade the product; see [Correct upgrade procedure](#Correct).
+-   Don’t define generic or anonymous users; see [Generic or anonymous users](#Generic).
+-   Be sure to enforce a reasonably strong password policy; see [Password policy](#Password).
+-   Make sure default authentication accounts are disabled or deleted; see [Default authentication account](#Default).
+-   Always change default passwords after installation; see [Default passwords](#Default2).
+-   Limit your remote connections; see [Remote connections](#Remote).
+-   {{< SecureTransport/componentshortname >}} supports configurations for logging, audit, and alerting; see [Logging, audit, and alerts rules](#Logging,).
+-   Protect your sensitive files and databases; see [Sensitive files and databases](#Sensitiv).
+-   Use cryptographically strong protocols and ciphers; see [Use cryptographically strong protocols and ciphers](#Use).
+-   Use basic authorization and Base64 encoding of username and password; see [Password encoding and BASIC authentication](#Password2).
 -   If you are deploying plug-ins, keep in mind that they may have their security settings.
--   Use External Script routing step with caution; see <a href="#Password2" class="MCXref xref">Password encoding and BASIC authentication</a>.
+-   Use External Script routing step with caution; see [Password encoding and BASIC authentication](#Password2).
 
 <span id="Secure"></span>
 

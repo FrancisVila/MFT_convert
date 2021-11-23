@@ -10,5 +10,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_web_client_user_authentication" class="MCXref xref">Web client (HTTP and HTTPS) user authentication</a>
--   <a href="../c_st_user_access_control" class="MCXref xref">User access control (authorization)</a>
+-   [Web client (HTTP and HTTPS) user authentication](../c_st_web_client_user_authentication)
+-   [User access control (authorization)](../c_st_user_access_control)

@@ -36,6 +36,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a>
--   <a href="../t_st_transfersites#Edit" class="MCXref xref">Edit a transfer site</a>
+-   [Create a transfer site](../t_st_transfersites#Create)
+-   [Edit a transfer site](../t_st_transfersites#Edit)
 -    

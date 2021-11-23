@@ -4,10 +4,10 @@
     "weight": "100"
 }In this topic you will learn how to:
 
--   <a href="#Add" class="MCXref xref">Add an FTP server</a>
--   <a href="#Start" class="MCXref xref">Start and stop a server</a>
--   <a href="#Edit" class="MCXref xref">Edit FTP server settings</a>
--   <a href="#Delete" class="MCXref xref">Delete a FTP server</a>
+-   [Add an FTP server](#Add)
+-   [Start and stop a server](#Start)
+-   [Edit FTP server settings](#Edit)
+-   [Delete a FTP server](#Delete)
 
 <span id="Add"></span>
 
@@ -47,7 +47,7 @@ When uploading files to SecureTransport Server via FTPS, the FTP client is requi
       </tr>
       <tr>
          <td>Enable FIPS         </td>
-         <td>Select to enable <a href="../../../c_st_fipstransfermode" class="MCXref xref">FIPS transfer mode</a> for FTPS connections.
+         <td>Select to enable <a href="../../../c_st_fipstransfermode">FIPS transfer mode</a> for FTPS connections.
 <p>By selecting this option, the <strong>Enabled FIPS Ciphers</strong> field becomes editable.</p>         </td>
       </tr>
       <tr>
@@ -90,12 +90,12 @@ from the drop-down list, for example,
       <tr>
          <td>Enabled Ciphers         </td>
          <td><p>Enter the cipher suites to be used with your FTPS server.</p>
-<p>For more information on cipher suites, refer to the {{< SecureTransport/componentshortname  >}} <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_54_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" class="MCXref xref" title="SecureTransport 5.4 Security guide">{{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} Security guide</a></em>.</p>         </td>
+<p>For more information on cipher suites, refer to the {{< SecureTransport/componentshortname  >}} <em>Cipher suites</em> topic, part of the <em><a href="https://docs.axway.com/bundle/SecureTransport_54_SecurityGuide_allOS_en_HTML5/page/Content/SecurityGuide/STSecurityGuideStartPage.htm" title="SecureTransport 5.4 Security guide">{{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} Security guide</a></em>.</p>         </td>
       </tr>
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your FTP server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default FTP server, the list of allowed cipher suites in FIPS mode is determined by the <code>Ftp.FIPS.Listeners.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>

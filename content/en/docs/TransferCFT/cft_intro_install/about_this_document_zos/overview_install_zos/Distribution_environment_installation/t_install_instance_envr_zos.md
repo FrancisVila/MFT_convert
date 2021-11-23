@@ -2,9 +2,9 @@
     "title": "Create a Transfer CFT instance environment",
     "linkTitle": "Create a Transfer CFT instance ",
     "weight": "190"
-}The concept of a <span class="span_6">target</span> environment has been replaced by what is now referred to as a Transfer CFT <span class="span_6" style="font-style: italic;">instance</span>, or run-time environment. This procedure describes how to install the Transfer CFT<span class="span_2"> </span><span class="span_6">instance</span> environment.
+}The concept of a environment has been replaced by what is now referred to as a Transfer CFT , or run-time environment. This procedure describes how to install the Transfer CFT environment.
 
-If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [<span class="span_6">Customize the instance environment</span>](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
+If during installation you created both the distribution environment and the Transfer CFT instance environment, you may go directly to [](../../t_customize_instance_zos). Otherwise, you must first create your runtime environment.
 
 > **Note:**
 >
@@ -12,7 +12,7 @@ If during installation you created both the distribution environment and the Tra
 
 Prerequisites
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
+{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
 
 Procedure
 

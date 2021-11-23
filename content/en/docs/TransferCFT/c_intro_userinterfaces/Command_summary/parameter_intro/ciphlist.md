@@ -20,7 +20,7 @@ Each value defines three algorithms:
 
 Server
 
-This list is compared with the list proposed by the client in order of preference, however the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> order takes precedence over the server ciphlist.
+This list is compared with the list proposed by the client in order of preference, however the {{< TransferCFT/componentlongname  >}} order takes precedence over the server ciphlist.
 
 Client
 

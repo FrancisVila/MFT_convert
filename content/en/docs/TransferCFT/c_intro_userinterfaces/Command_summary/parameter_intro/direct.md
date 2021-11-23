@@ -8,14 +8,14 @@
 
 #### SUBMIT, DELETE, END, HALT, KEEP, START, CFTXLATE, CFTETB, LISTCAT
 
-\[DIRECT = {<span style="text-decoration: underline;">BOTH</span>
+\[DIRECT = {
 | SEND | RECV} \]
 
 Transfer direction that applies to the table.
 
 The possible values are:
 
--   <span style="font-weight: bold;">BOTH</span> - Both send and receive transfers
+-   **BOTH** - Both send and receive transfers
     are taken into account (default, except for CFTETB)
 -   <span style="font-weight: bold;">RECV</span> - Limits the action to receive
     transfers

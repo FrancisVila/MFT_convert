@@ -98,7 +98,7 @@ The generated JSON report contains the following parameters:
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td><p>Number of <a href="../../../c_st_advancedaccountadministration/t_st_displayactiveusers" class="MCXref xref">Display active users</a> for the day</p>         </td>
+         <td><p>Number of <a href="../../../c_st_advancedaccountadministration/t_st_displayactiveusers">Display active users</a> for the day</p>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -236,7 +236,7 @@ The generated JSON report contains the following parameters:
 <em>(object)</em></li>
 </ul></li>
 </ul>         </td>
-         <td>List of installed <a href="../../../c_st_accesscontrol/c_st_pluggable_authorization#Pluggable_authorization" class="MCXref xref">Pluggable аuthorization</a>.         </td>
+         <td>List of installed <a href="../../../c_st_accesscontrol/c_st_pluggable_authorization#Pluggable_authorization">Pluggable аuthorization</a>.         </td>
       </tr>
       <tr>
          <td><ul>
@@ -245,7 +245,7 @@ The generated JSON report contains the following parameters:
 <em>(object)</em></li>
 </ul></li>
 </ul>         </td>
-         <td>List of installed <a href="../../../c_st_authentication/pluggable_authentication#Pluggable_authentication" class="MCXref xref">Pluggable authentication</a>         </td>
+         <td>List of installed <a href="../../../c_st_authentication/pluggable_authentication#Pluggable_authentication">Pluggable authentication</a>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -254,7 +254,7 @@ The generated JSON report contains the following parameters:
 <em>(object)</em></li>
 </ul></li>
 </ul>         </td>
-         <td>List of installed <a href="https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/transfer_sites/transfer_sites.htm" class="MCXref xref">transfer site plug-ins</a>         </td>
+         <td>List of installed <a href="https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/transfer_sites/transfer_sites.htm">transfer site plug-ins</a>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -263,7 +263,7 @@ The generated JSON report contains the following parameters:
 <em>(object)</em></li>
 </ul></li>
 </ul>         </td>
-         <td>List of installed <a href="https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/ab_custom/Custom_Advanced_Routing_step.htm" class="MCXref xref">Advanced Routing step plug-ins</a>         </td>
+         <td>List of installed <a href="https://docs.axway.com/bundle/SecureTransport_55_DeveloperGuide_allOS_en_HTML5/page/Content/DevelopersGuide/ab_custom/Custom_Advanced_Routing_step.htm">Advanced Routing step plug-ins</a>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -296,7 +296,7 @@ For example, to generate a report for May, the start date should be 1 May, the e
 <li><strong>reportSummary</strong><br />
 <em>(object)</em></li>
 </ul>         </td>
-         <td><p>Usage aggregations for the selected period based on daily <a href="#usage" class="MCXref xref">usage</a> information</p>         </td>
+         <td><p>Usage aggregations for the selected period based on daily <a href="#usage">usage</a> information</p>         </td>
       </tr>
       <tr>
          <td><ul>
@@ -307,7 +307,7 @@ For example, to generate a report for May, the start date should be 1 May, the e
 </ul></li>
 </ul></li>
 </ul>         </td>
-         <td>Maximum number of <a href="../../../c_st_advancedaccountadministration/t_st_displayactiveusers" class="MCXref xref">Display active users</a> for the reporting period         </td>
+         <td>Maximum number of <a href="../../../c_st_advancedaccountadministration/t_st_displayactiveusers">Display active users</a> for the reporting period         </td>
       </tr>
       <tr>
          <td><ul>
@@ -358,6 +358,6 @@ For example, to generate a report for May, the start date should be 1 May, the e
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Disable automatic snapshot updates</a>
--   <a href="" class="MCXref xref">Server usage snapshot by user class</a>
--   <a href="" class="MCXref xref">Server usage details</a>
+-   [Disable automatic snapshot updates]()
+-   [Server usage snapshot by user class]()
+-   [Server usage details]()

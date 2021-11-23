@@ -8,7 +8,7 @@ The *core server license* specifies the number of accounts allowed and the numbe
 
 The FTP and HTTP protocols are included in the core license. For other features, contact your local account executive or supplier.
 
-Contact {{< SecureTransport/companyname  >}} Global Support to obtain text files containing the core server license and the features license for your authorized features. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
+Contact {{< SecureTransport/companyname  >}} Global Support to obtain text files containing the core server license and the features license for your authorized features. For contact information, see [Get more help]().
 
 > **Note:**
 >

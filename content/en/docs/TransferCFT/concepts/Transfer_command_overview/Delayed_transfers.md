@@ -21,7 +21,7 @@ If you are in the preprocessing phase and a script exists:
 Transfer phase:
 
 -   If it is in the
-    <span style="font-weight: bold;">H</span> HOLD state or <span style="font-weight: bold;">K</span>
+    **H** HOLD state or <span style="font-weight: bold;">K</span>
     KEEP state as a result of a transfer error, or an operator command (HALT,
     KEEP, or SEND STATE = HOLD, and so on).
 -   If it is in the

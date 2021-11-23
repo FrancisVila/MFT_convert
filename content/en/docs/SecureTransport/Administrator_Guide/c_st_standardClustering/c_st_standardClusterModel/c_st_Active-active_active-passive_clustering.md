@@ -6,12 +6,12 @@
 
 The following topics describe the active/active and active/passive clusters and processes:
 
--   <a href="#Active/a" class="MCXref xref">Active/active clusters</a>
--   <a href="#Active_passive" class="MCXref xref">Active/passive clusters</a>
--   <a href="#Active_deploy" class="MCXref xref">Active/passive deployment</a>
--   <a href="#Primary" class="MCXref xref">Primary server processes</a>
--   <a href="#Failover" class="MCXref xref">Failover</a>
--   <a href="#Synchron" class="MCXref xref">Synchronization</a>
+-   [Active/active clusters](#Active/a)
+-   [Active/passive clusters](#Active_passive)
+-   [Active/passive deployment](#Active_deploy)
+-   [Primary server processes](#Primary)
+-   [Failover](#Failover)
+-   [Synchronization](#Synchron)
 
 <span id="Active/a"></span>
 
@@ -26,7 +26,7 @@ The main advantages of an active/active cluster are:
 
 However, to prevent performance problems, you must carefully monitor the load on an active/active cluster. An active/active cluster can suffer performance degradation when one server fails unless the remaining servers can handle the total workload for the cluster.
 
-For more information, see <a href="../../c_st_standardclusterconfiguration/t_st_setup_active-active_cluster#Standard_Clustering_3967700027_1029540" class="MCXref xref">Set up an active/active cluster</a>.
+For more information, see [Set up an active/active cluster](../../c_st_standardclusterconfiguration/t_st_setup_active-active_cluster#Standard_Clustering_3967700027_1029540).
 
 <span id="Active_passive"></span>
 
@@ -55,15 +55,15 @@ traffic to it when the primary server is up and running. The Sentinel link data 
 The advantages an active/passive cluster with `passive_legacy` cluster mode are:
 
 -   The cluster includes a fully redundant secondary standby server to handle the cluster workload if the primary server fails.
--   Because events and Sentinel link data are not sent to a standby server with `passive_legacy` cluster mode, it can be in a different location for a disaster recovery (DR) if the network between the sites has required bandwidth and latency. For information on a more general DR solution using Enterprise Clustering, see <a href="../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_passive_disaster_recovery" class="MCXref xref">Passive disaster recovery</a>.
+-   Because events and Sentinel link data are not sent to a standby server with `passive_legacy` cluster mode, it can be in a different location for a disaster recovery (DR) if the network between the sites has required bandwidth and latency. For information on a more general DR solution using Enterprise Clustering, see [Passive disaster recovery](../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_passive_disaster_recovery).
 
-For more information, see <a href="../../c_st_standardclusterconfiguration/t_st_setup_active-passive_cluster" class="MCXref xref">Set up an active/passive cluster</a>.
+For more information, see [Set up an active/passive cluster](../../c_st_standardclusterconfiguration/t_st_setup_active-passive_cluster).
 
 <span id="Active_deploy"></span>
 
 ## Active/passive deployment
 
-The following diagram shows a simple active/passive deployment with `passive` cluster mode and one {{< SecureTransport/componentshortname  >}} Edge server. On failover, the load balancer in the secure network redirects the connections from the internal clients and servers to {{< SecureTransport/componentshortname  >}} Server 2 and the {{< SecureTransport/componentshortname  >}} Edge directs the connection from the partner clients and servers to {{< SecureTransport/componentshortname  >}} Server 2. For a description of the connections, see <a href="" class="MCXref xref">Streaming deployment</a>.
+The following diagram shows a simple active/passive deployment with `passive` cluster mode and one {{< SecureTransport/componentshortname  >}} Edge server. On failover, the load balancer in the secure network redirects the connections from the internal clients and servers to {{< SecureTransport/componentshortname  >}} Server 2 and the {{< SecureTransport/componentshortname  >}} Edge directs the connection from the partner clients and servers to {{< SecureTransport/componentshortname  >}} Server 2. For a description of the connections, see [Streaming deployment]().
 
 <img src="/Images/SecureTransport/STDeployment_ActivePassive.png" class="maxWidth" alt="Active/passive deployment" />
 
@@ -71,9 +71,9 @@ Active/passive deployment
 
 The diagram does not show the shared file system where the user home directories are located.
 
-The diagram does not show any unproxied connections or connections through HTTP proxy servers from the primary active {{< SecureTransport/componentshortname  >}} Server or the secondary passive {{< SecureTransport/componentshortname  >}} Server to the partner servers. For an illustrations of such a connection and more detail about connections in a streaming deployment, see <a href="#Streamin" class="MCXref xref">Streaming deployment</a>.
+The diagram does not show any unproxied connections or connections through HTTP proxy servers from the primary active {{< SecureTransport/componentshortname  >}} Server or the secondary passive {{< SecureTransport/componentshortname  >}} Server to the partner servers. For an illustrations of such a connection and more detail about connections in a streaming deployment, see [Streaming deployment](#Streamin).
 
-To handle your file transfer load or to provide redundancy in case of failure, you can deploy more than one {{< SecureTransport/componentshortname  >}} Edge servers in the DMZ. Because {{< SecureTransport/componentshortname  >}} Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see <a href="../../../c_st_edge_sync#Edge" class="MCXref xref">SecureTransport Edge synchronization</a>. For a deployment diagram showing multiple {{< SecureTransport/componentshortname  >}} Edge server, see <a href="../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_large_enterprise_cluster_deployment" class="MCXref xref">Enterprise Cluster deployment</a>.
+To handle your file transfer load or to provide redundancy in case of failure, you can deploy more than one {{< SecureTransport/componentshortname  >}} Edge servers in the DMZ. Because {{< SecureTransport/componentshortname  >}} Edge servers do not create and handle events, they are not clustered, but they can be configured to synchronize configuration changes. For more information, see [SecureTransport Edge synchronization](../../../c_st_edge_sync#Edge). For a deployment diagram showing multiple {{< SecureTransport/componentshortname  >}} Edge server, see [Enterprise Cluster deployment](../../../c_st_largeenterpriseclustering/c_st_largeenterpriseclustermodel/c_st_large_enterprise_cluster_deployment).
 
 <span id="Primary"></span>
 
@@ -94,13 +94,13 @@ When a server in an active/active cluster fails, two events occur. First, any in
 
 When the primary server fails, one of the secondary servers is promoted to primary and the cluster continues processing messages. The secondary server promoted to primary status is determined by the order in which the server names are listed in the `<FILEDRIVEHOME>/lib/admin/config/servers` configuration file. The server listed just below the primary server in the file is considered the new primary server. When the cluster is synchronized, the state of the servers listed in the file are examined. If the first server in the servers list is online, it is reassigned as the new primary.
 
-You can specify a timeout value that controls how long a secondary server waits before becoming the primary. For details, see <a href="../../c_st_standardclusterconfiguration/t_st_specify_cluster_connection_timeout" class="MCXref xref">Specify the cluster connection timeout</a>.
+You can specify a timeout value that controls how long a secondary server waits before becoming the primary. For details, see [Specify the cluster connection timeout](../../c_st_standardclusterconfiguration/t_st_specify_cluster_connection_timeout).
 
 When a secondary server is promoted to primary, it must run the scheduler and the Folder Monitor service. To enable this, the scheduler configuration on the primary server is replicated on all the other computers in the cluster.
 
 When the active (primary) server fails in an active/passive cluster with cluster mode `passive`, the scheduler and the Folder Monitor service are already running on the passive standby server and failover is automatic. As with an active/active cluster, when the original active node recovers and the cluster is synchronized, the servers return to their original roles.
 
-When the active (primary) server fails in an active/passive cluster with cluster mode `passive_legacy`, you must fail over the cluster to the standby server manually. All queued events and Sentinel link data are lost. For details, see <a href="../../c_st_managestandardcluster/t_st_manage_active-passive_cluster#Manual" class="MCXref xref">Manual failover</a>.
+When the active (primary) server fails in an active/passive cluster with cluster mode `passive_legacy`, you must fail over the cluster to the standby server manually. All queued events and Sentinel link data are lost. For details, see [Manual failover](../../c_st_managestandardcluster/t_st_manage_active-passive_cluster#Manual).
 
 <span id="Synchron"></span>
 
@@ -108,10 +108,10 @@ When the active (primary) server fails in an active/passive cluster with cluster
 
 You can configure the cluster on any server. Most configuration changes are dynamically synchronized with the other servers immediately.
 
-You must use the Administration Tool on the primary server to perform manual synchronization after you perform certain actions. Manual synchronization replaces the cluster configuration on the secondary servers with the configuration from the primary server. Data replicated during synchronization includes database tables, cluster configuration data, and cluster management data. The Administration Tool server also performs manual synchronization each time it starts on the primary server. For more details, see <a href="../../c_st_managestandardcluster/c_st_standard_cluster_synchronization" class="MCXref xref">Standard Cluster synchronization</a>.
+You must use the Administration Tool on the primary server to perform manual synchronization after you perform certain actions. Manual synchronization replaces the cluster configuration on the secondary servers with the configuration from the primary server. Data replicated during synchronization includes database tables, cluster configuration data, and cluster management data. The Administration Tool server also performs manual synchronization each time it starts on the primary server. For more details, see [Standard Cluster synchronization](../../c_st_managestandardcluster/c_st_standard_cluster_synchronization).
 
 **Related topics:**
 
--   <a href="../c_st_scheduled_tasks" class="MCXref xref">Scheduled tasks</a>
--   <a href="../c_st_consolidated_log_data_representation" class="MCXref xref">Consolidated log data representation</a>
--   <a href="../c_st_services_used_for_cluster_management" class="MCXref xref">Services used for cluster management</a>
+-   [Scheduled tasks](../c_st_scheduled_tasks)
+-   [Consolidated log data representation](../c_st_consolidated_log_data_representation)
+-   [Services used for cluster management](../c_st_services_used_for_cluster_management)

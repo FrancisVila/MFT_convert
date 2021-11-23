@@ -15,21 +15,21 @@ Before you upgrade, determine if upgrading is appropriate for your environment a
 -   Evaluate the effort required for this upgrade. You should consider:
     -   Length and impact of product down time
     -   Basic upgrade effort
-    -   Specific actions that might be required due to incompatibilities or limitations. See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a>.
+    -   Specific actions that might be required due to incompatibilities or limitations. See [Upgrade paths and incompatibilities](incompatibilities).
     -   Initial validation and non-regression testing
     -   Upgrading your different operating environments, for example, test, and preproduction
 
 ## Minimum version requirement
 
-To upgrade directly to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, you must have {{< SecureTransport/componentshortname  >}} 5.4 with the latest patch installed. See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> for a complete list of supported upgrade paths.
+To upgrade directly to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}}, you must have {{< SecureTransport/componentshortname  >}} 5.4 with the latest patch installed. See [Upgrade paths and incompatibilities](incompatibilities) for a complete list of supported upgrade paths.
 
 ## Upgrade methods
 
 There is currently one method for upgrading to {{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} from an earlier version:
 
--   Apply an upgrade pack – When you apply the upgrade pack, the upgrade logic auto-detects and configures settings and prepares the upgraded installation for use without any additional configuration. This includes the upgrading of clustered implementations. For upgrade instructions using an upgrade pack, refer to <a href="../upgrade_overview" class="MCXref xref">Upgrade procedures</a>.
+-   Apply an upgrade pack – When you apply the upgrade pack, the upgrade logic auto-detects and configures settings and prepares the upgraded installation for use without any additional configuration. This includes the upgrading of clustered implementations. For upgrade instructions using an upgrade pack, refer to [Upgrade procedures](../upgrade_overview).
 
-See <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a> to learn about incompatibilities between earlier versions of {{< SecureTransport/componentshortname  >}} and this version.
+See [Upgrade paths and incompatibilities](incompatibilities) to learn about incompatibilities between earlier versions of {{< SecureTransport/componentshortname  >}} and this version.
 
 ## Product downtime considerations
 
@@ -44,7 +44,7 @@ Considerations:
 
 Strategies to reduce downtime:
 
--   Review the upgrade prerequisites. Refer to <a href="../before_you_upgrade" class="MCXref xref">Pre-upgrade tasks</a>.
+-   Review the upgrade prerequisites. Refer to [Pre-upgrade tasks](../before_you_upgrade).
 -   Upgrade during a low volume time period.
 
 ## Acquire a license
@@ -53,4 +53,4 @@ A new license is not required when upgrading SecureTransport .
 
 ## Download the upgrade pack
 
-After reviewing <a href="incompatibilities" class="MCXref xref">Upgrade paths and incompatibilities</a>, go to the {{< SecureTransport/companyname  >}} [support site](https://support.axway.com/) and download the upgrade pack for your operating system.
+After reviewing [Upgrade paths and incompatibilities](incompatibilities), go to the {{< SecureTransport/companyname  >}} [support site](https://support.axway.com/) and download the upgrade pack for your operating system.

@@ -8,19 +8,19 @@
 
 ## For new users
 
-<a href="overview" class="MCXref xref">Customization overview</a>
+[Customization overview](overview)
 
-<a href="config_files" class="MCXref xref">Configuration files</a>
+[Configuration files](config_files)
 
 ## For existing users
 
-<a href="enable_disable_fea" class="MCXref xref">Enable and disable features</a>
+[Enable and disable features](enable_disable_fea)
 
-<a href="add_mod_lang" class="MCXref xref">Add and modify languages</a>
+[Add and modify languages](add_mod_lang)
 
-<a href="webclient_branding" class="MCXref xref">Branding</a>
+[Branding](webclient_branding)
 
-<a href="inter_view" class="MCXref xref">Modify the view configuration</a>
+[Modify the view configuration](inter_view)
 
 ## Get more help
 

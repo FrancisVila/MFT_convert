@@ -249,10 +249,10 @@ to the monitor are used.</p>
      and midday      */
 
 The SAUTH parameter is omitted. The partner can then send any IDF to
-the local <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, while it is only authorized to receive
+the local {{< TransferCFT/componentshortname  >}}, while it is only authorized to receive
 the files which have been assigned an IDF included in the RECPAR5 list
 defined by a CFTAUTH object.
 
-As the SYST parameter is not specified, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> considers that its
+As the SYST parameter is not specified, {{< TransferCFT/componentshortname  >}} considers that its
 partner is the same computer. The data code is consequently not converted
 and the file types sent are not translated.

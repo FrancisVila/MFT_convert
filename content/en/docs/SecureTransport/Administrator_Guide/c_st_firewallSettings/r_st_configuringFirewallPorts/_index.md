@@ -8,7 +8,7 @@ The following lists show the ports that {{< SecureTransport/componentshortname  
 
 The following topics list firewall ports that need to be open:
 
--   <a href="r_st_communication_between_outside" class="MCXref xref">Communication between the outside and SecureTransport Edge</a> - Lists the firewall ports that need to be open for communication between the outside and {{< SecureTransport/componentshortname >}} Edge.
--   <a href="r_st_communication_between" class="MCXref xref">Communication between SecureTransport Server and SecureTransport Edge</a> - Lists the firewall ports that need to be open for communication between {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge.
--   <a href="r_st_communication_between_server_internal_network" class="MCXref xref">Communication between SecureTransport Server and an internal network</a> - Lists the firewall ports that need to be open for communication between {{< SecureTransport/componentshortname >}} Server and an internal network.
--   <a href="r_st_internal_communication" class="MCXref xref">Internal SecureTransport communication</a> - Lists the firewall ports that need to be open for internal {{< SecureTransport/componentshortname >}} communication.
+-   [Communication between the outside and SecureTransport Edge](r_st_communication_between_outside) - Lists the firewall ports that need to be open for communication between the outside and {{< SecureTransport/componentshortname >}} Edge.
+-   [Communication between SecureTransport Server and SecureTransport Edge](r_st_communication_between) - Lists the firewall ports that need to be open for communication between {{< SecureTransport/componentshortname >}} Server and {{< SecureTransport/componentshortname >}} Edge.
+-   [Communication between SecureTransport Server and an internal network](r_st_communication_between_server_internal_network) - Lists the firewall ports that need to be open for communication between {{< SecureTransport/componentshortname >}} Server and an internal network.
+-   [Internal SecureTransport communication](r_st_internal_communication) - Lists the firewall ports that need to be open for internal {{< SecureTransport/componentshortname >}} communication.

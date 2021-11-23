@@ -12,5 +12,5 @@ PGP verification is performed using the current time on the computer, not the ti
 
 The following topics describe how to manage the PGP keys and provide the PGP key transfer dependencies:
 
--   <a href="t_st_pgpkey" class="MCXref xref">Manage PGP keys</a>
--   <a href="r_st_pgptransfersettingsdependencies" class="MCXref xref">PGP transfer settings dependencies</a>
+-   [Manage PGP keys](t_st_pgpkey)
+-   [PGP transfer settings dependencies](r_st_pgptransfersettingsdependencies)

@@ -16,4 +16,4 @@ If `RemoteSharePath` is not specified, {{< SecureTransport/componentshortname  >
 
 **Related topic:**
 
--   <a href="../r_st_metadata_file" class="MCXref xref">Metadata file</a>
+-   [Metadata file](../r_st_metadata_file)

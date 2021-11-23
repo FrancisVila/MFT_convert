@@ -2,20 +2,20 @@
     "title": "Register Transfer CFT with Flow Manager",
     "linkTitle": "Register with Flow Manager",
     "weight": "180"
-}This section describes how to register a Transfer CFT instance with either an on premise or SaaS <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>. You can refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/user_guide.html) for Flow Manager details.
+}This section describes how to register a Transfer CFT instance with either an on premise or SaaS {{< TransferCFT/flowmanager  >}}. You can refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/user_guide.html) for Flow Manager details.
 
 ## Prerequisites
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> prerequisites
+{{< TransferCFT/componentlongname  >}} prerequisites
 
 -   An installed Transfer CFT version 3.6 or higher on a compatible platform.
 -   Transfer CFT and Copilot services are stopped.
 
-<span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> **prerequisites**
+{{< TransferCFT/flowmanager  >}} **prerequisites**
 
 -   The shared secret that the Flow Manager administrator generated. Refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/flow_manager_user_guide.html) for details.
 -   If you are implementing a SaaS cloud Flow Manager, you additionally require:
-    -   A Flow Manager Agent capable of interconnecting Flow Manager and your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> instance. Refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/user_guide.html) for details.
+    -   A Flow Manager Agent capable of interconnecting Flow Manager and your {{< TransferCFT/componentlongname >}} instance. Refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/user_guide.html) for details.
     -   Access to an on-demand Flow Manager SaaS environment.
 
 ## Automatically activate connectivity
@@ -26,16 +26,16 @@ The automatic activation is only available on UNIX and Windows platforms and can
 
 ## Manually activate connectivity
 
-This section describes the steps to register your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> with <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>. The procedure is the same for either an on-premise or SaaS <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, with the exception of the two steps described in [Define the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> Agent](#Define).
+This section describes the steps to register your {{< TransferCFT/componentlongname  >}} with {{< TransferCFT/flowmanager  >}}. The procedure is the same for either an on-premise or SaaS {{< TransferCFT/flowmanager  >}}, with the exception of the two steps described in [Define the {{< TransferCFT/flowmanager  >}} Agent](#Define).
 
 All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see UCONF: Central Governance options.
 
-#### Define UCONF parameters used for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> instance identification
+#### Define UCONF parameters used for {{< TransferCFT/componentlongname  >}} instance identification
 
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
 -   The length of the `cft.instance_id` value is limited to 24 characters.
--   The address set in <span class="code">cft.full\_hostname</span> must be reachable from <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> or a Flow Manager Agent (for a SaaS deployment).
+-   The address set in `cft.full_hostname` must be reachable from {{< TransferCFT/flowmanager >}} or a Flow Manager Agent (for a SaaS deployment).
 
 <!-- -->
 
@@ -45,7 +45,7 @@ Set the parameters used to identify a Transfer CFT instance. Follow these guide
     uconfset id=cft.instance_group, value=<cft_instance_group>
     uconfset id=cft.full_hostname, value=<cft_address>
 
-Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> uses to reach the Transfer CFT (<span class="code">copilot.general.ssl\_serverport</span>):
+Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that {{< TransferCFT/flowmanager  >}} uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
 
 
 
@@ -62,9 +62,9 @@ Define the name of the Flow Manager Agent that the Flow Manager must use to conn
 
 Please refer to the [Flow Manager User Guide](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/user_guide.html) for Flow Manager Agent details.
 
-#### Optionally define a proxy server for on-premise <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> communication
+#### Optionally define a proxy server for on-premise {{< TransferCFT/flowmanager  >}} to {{< TransferCFT/componentlongname  >}} communication
 
-To use a proxy server for your on-premise <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> to connect to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, set the following parameters.
+To use a proxy server for your on-premise {{< TransferCFT/flowmanager  >}} to connect to {{< TransferCFT/componentlongname  >}}, set the following parameters.
 
 
 
@@ -73,9 +73,9 @@ To use a proxy server for your on-premise <span class="mc-variable suite_variabl
     uconfset id=cg.proxy.in.login, value= <proxy_login>
     uconfset id=cg.proxy.in.password, value= <proxy_login_password>
 
-#### Optionally define a proxy server for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> to <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> communication
+#### Optionally define a proxy server for {{< TransferCFT/componentlongname  >}} to {{< TransferCFT/flowmanager  >}} communication
 
-To use a proxy server for your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> to connect to <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>, set the following parameters.
+To use a proxy server for your {{< TransferCFT/componentlongname  >}} to connect to {{< TransferCFT/flowmanager  >}}, set the following parameters.
 
 
 
@@ -88,18 +88,18 @@ To use a proxy server for your <span class="mc-variable axway_variables.Componen
 >
 > Transfer CFT can use the Flow Manager Agent as the outgoing HTTP proxy when connecting to the Flow Manager SaaS.
 
-#### Import the root certificate for the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> certificate
+#### Import the root certificate for the {{< TransferCFT/flowmanager  >}} certificate
 
 Before Transfer CFT can register with Flow Manager, the HTTPS root certificate's CA must be known and trusted by the registering Transfer CFT.
 
-1.  Download the HTTPS root certificate's CA, which is used to authenticate <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
+1.  Download the HTTPS root certificate's CA, which is used to authenticate {{< TransferCFT/flowmanager >}}.
 2.  Import this root CA into the PKI database using the PKIUTIL PKICER command.
 3.  Set the `iname `to the root CA path.
-4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> knows which certificate to use to authenticate <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>. Using CFTUTIL:
+4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that {{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate {{< TransferCFT/flowmanager >}}. Using CFTUTIL:
 
-#### Define the parameters used for the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> connection
+#### Define the parameters used for the {{< TransferCFT/flowmanager  >}} connection
 
-Set the following parameters that are used to connect to <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>.
+Set the following parameters that are used to connect to {{< TransferCFT/flowmanager  >}}.
 
 
 
@@ -117,7 +117,7 @@ Set the shared secret that the Flow Manager administrator generated and provided
 
 #### Optionally define the configuration policy for registration
 
-You may want to automatically assign an existing <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> configuration policy during the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
+You may want to automatically assign an existing {{< TransferCFT/flowmanager  >}} configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
 
 
 
@@ -125,7 +125,7 @@ You may want to automatically assign an existing <span class="mc-variable suite_
 
 #### Optionally customize the business certificate Distinguished Name (DN)
 
-You may want to customize the business certificate's Distinguished Name (DN), which is generated during the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> registration or certificate renewal. Set the UCONF parameter cg.certificate.business.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
+You may want to customize the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/flowmanager  >}} registration or certificate renewal. Set the UCONF parameter cg.certificate.business.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
 
 
     uconfset id=cg.certificate.business.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -134,7 +134,7 @@ A best practice is to customize the certificate DN prior to registration. Howeve
 
 #### Optionally customize the governance certificate Distinguished Name (DN)
 
-To override the governance certificate's Distinguished Name (DN), which is generated during the <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span> registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
+To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/flowmanager  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
 
 
     uconfset id=cg.certificate.governance.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -153,7 +153,7 @@ By default Transfer CFT generates a key length of 2048 bits for its Governance 
 
     uconfset id=cg.certificate.business.key_len, value=4096
 
-#### Enable <span class="mc-variable suite_variables.FlowManager variable">Flow Manager</span>
+#### Enable {{< TransferCFT/flowmanager  >}}
 
 To enable connectivity, enter:
 
@@ -172,13 +172,13 @@ Check the list in the output for errors and correct all errors before attempting
 
 ## Register or re-register
 
-Ensure that `cft_registration_id `is reset to <span class="code">-1</span>. Otherwise, reset it as follows:  
+Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
 
 
 
      CFTUTIL uconfunset id=cg.registration_id
 
-Start the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> Copilot to automatically trigger registration. From the Flow Manager UI, check the **Product List** to confirm that the registration was successful.
+Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration. From the Flow Manager UI, check the **Product List** to confirm that the registration was successful.
 
 <span id="Define"></span>
 

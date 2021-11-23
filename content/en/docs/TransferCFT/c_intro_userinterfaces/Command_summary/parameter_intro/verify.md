@@ -4,11 +4,11 @@
     "weight": "3710"
 }<span id="verify"></span>
 
-### <span class="mc-variable System.Title variable">verify</span>
+### 
 
 #### LISTCOM
 
-\[VERIFY = { YES | <span style="text-decoration: underline;">NO</span>
+\[VERIFY = { YES |
 }\]
 
 Request to verify the validity of each record in the file at the time
@@ -16,7 +16,7 @@ it is listed or displayed.
 
 #### CFTTCP
 
-\[VERIFY = {<span style="text-decoration: underline;">0</span>
+\[VERIFY = {
 | n } \]
 
 Option to verify the partner number (DIALNO) on an incoming connection
@@ -26,7 +26,7 @@ If VERIFY = 0 no verification is performed.
 
 #### CFTSSL DIRECT=SERVER
 
-\[VERIFY = { NONE | <span style="text-decoration: underline;">REQUIRED</span>
+\[VERIFY = { NONE |
 | OPTIONAL } \]
 
 -   NONE: Only the server must be authenticated. 
@@ -35,7 +35,7 @@ If VERIFY = 0 no verification is performed.
 
 #### CFTSSL DIRECT=CLIENT
 
-The DIRECT=CLIENT VERIFY options are available as of <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 3.3.2 SP2.
+The DIRECT=CLIENT VERIFY options are available as of {{< TransferCFT/componentlongname  >}} 3.3.2 SP2.
 
 \[VERIFY = { <u>NONE</u> | REQUIRED
 | OPTIONAL | ENFORCED } \]
@@ -48,7 +48,7 @@ The DIRECT=CLIENT VERIFY options are available as of <span class="mc-variable a
 
 Example 1
 
-This example demonstrates the use of the client <span class="code">NONE</span> value.
+This example demonstrates the use of the client `NONE` value.
 
 CFTSSL type=client, verify=none and CFTSSL type=server, verify=none
 
@@ -56,7 +56,7 @@ CFTSSL type=client, verify=none and CFTSSL type=server, verify=none
 
 Example 2
 
-This example demonstrates the use of the client <span class="code">ENFORCED </span>value.
+This example demonstrates the use of the client `ENFORCED `value.
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
 
@@ -66,7 +66,7 @@ CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
 
 Example 3
 
-This example demonstrates a different use of the <span class="code">ENFORCED </span>value. When acting as a client, <span class="code">ENFORCED </span>enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
+This example demonstrates a different use of the `ENFORCED `value. When acting as a client, `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE
 

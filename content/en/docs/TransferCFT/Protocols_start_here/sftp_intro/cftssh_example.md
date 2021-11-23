@@ -2,9 +2,9 @@
     "title": "SFTP use case examples",
     "linkTitle": "SFTP examples",
     "weight": "190"
-}T<span style="font-weight: normal;">**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**</span>
+}T
 
-## <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> acting as a SFTP client
+## {{< TransferCFT/transfercftname  >}} acting as a SFTP client
 
 Put command
 
@@ -41,7 +41,7 @@ Mput command
 
 Mget command
 
-The <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> server must<span style="font-weight: normal;"> </span>be using open mode.
+The {{< TransferCFT/componentlongname  >}} server mustbe using open mode.
 
 
 
@@ -52,7 +52,7 @@ The <span class="mc-variable axway_variables.Component_Long_Name variable">Trans
 
 ## Transfer CFT client with a Transfer CFT server
 
-This example sends an acknowledgment following a file transfer (<span class="code">cft\_flow</span> in the example).
+This example sends an acknowledgment following a file transfer (`cft_flow` in the example).
 
 On the Transfer CFT 1
 
@@ -61,7 +61,7 @@ On the Transfer CFT 1
     CFTPART ID=CFT_2_SFTP,nspart="cft_1_sftp",nspassw=cft_1_sftp,nrpart="cft_2_sftp",nrpassw=cft_2_sftp,sap=<CFT_2_SFTP_PORT>,prot=SFTP
     CFTTCP ID=CFT_2_SFTP,host=<CFT_2_HOST>
 
-On <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> 2
+On {{< TransferCFT/componentlongname  >}} 2
 
 
 
@@ -80,7 +80,7 @@ Execute the acknowledgment from Transfer CFT 2
 
 ### Transfer CFT requester downloading multiple files
 
-This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an <span class="code">mget file\*</span>.
+This example demonstrates receiving multiple files from a Transfer CFT SFTP server and is the equivalent of an `mget file*`.
 
 On the Transfer CFT server
 
@@ -90,13 +90,13 @@ If you do not define the workingdir, the default value is the runtime directory.
 
     cftsend id=groupoffiles,impl=yes,fname=&nfname
 
-On <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> requester
+On {{< TransferCFT/componentlongname  >}} requester
 
 
 
     recv part=app1,idf=groupoffiles,nfname=(@/#)test/file*,file=all
 
-This results in downloading all remote files in the <span class="code">test </span>folder with the path relative to the workingdir.
+This results in downloading all remote files in the `test `folder with the path relative to the workingdir.
 
 ## Transfer CFT client with a SecureTransport server
 
@@ -115,7 +115,7 @@ Server Control: the SSH server is running with **Enable Secure File Transfer Pro
 
     Port=<ST_SFTP_PORT>
 
-Accounts: the Account Name is <span class="code">st\_sftp Active</span> with the Login <span class="code">Name=st\_sftp</span> and <span class="code">Password=st\_sftp</span>
+Accounts: the Account Name is `st_sftp Active` with the Login `Name=st_sftp` and `Password=st_sftp`
 
 
 
@@ -150,9 +150,9 @@ For each of the various clients
 
 The client must log in as USER1 or USER2, in this example, and provide the corresponding private key as required for server connection.
 
-## <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> transcoding when using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+## {{< TransferCFT/componentlongname  >}} transcoding when using
 
-This example uses two <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> applications in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
+This example uses two {{< TransferCFT/componentlongname  >}} applications in , where the Source application is a UNIX machine and the Target is a z/OS system. On these applications, navigate to the indicated sections in the flow definition and define the following parameters to enable the transcoding.
 
 On the Source
 

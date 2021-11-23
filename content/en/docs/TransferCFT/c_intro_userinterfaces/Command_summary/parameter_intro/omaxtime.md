@@ -8,7 +8,7 @@
 
 #### CFTTCP
 
-\[OMAXTIME = { <span style="text-decoration: underline;">23595999</span>
+\[OMAXTIME = {
 | time } \]
 
 The authorized time slot for calls coming over this type of network.
@@ -19,7 +19,7 @@ this type of network.
 
 #### CFTPART
 
-\[OMAXTIME = { <span style="text-decoration: underline;">23595999</span>
+\[OMAXTIME = {
 | time } \]
 
 The maximum time of the authorized time

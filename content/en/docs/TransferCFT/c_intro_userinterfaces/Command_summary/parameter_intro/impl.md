@@ -13,9 +13,9 @@
 
 Implicit send.
 
-When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> operates in sender server mode and there is no SEND
+When {{< TransferCFT/componentshortname  >}} operates in sender server mode and there is no SEND
 command (state=HOLD) entered in the catalog for this file identifier,
-the IMPL parameter set to "YES" allows the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to make available the corresponding file, by automatically generating
+the IMPL parameter set to "YES" allows the {{< TransferCFT/componentshortname  >}} to make available the corresponding file, by automatically generating
 a send request. This makes a file permanently available.
 
 > **Note:**

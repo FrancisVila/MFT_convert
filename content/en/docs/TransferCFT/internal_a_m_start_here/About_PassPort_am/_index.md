@@ -2,18 +2,18 @@
     "title": "About PassPort AM",
     "linkTitle": "PassPort type access management",
     "weight": "170"
-}This section describes how to configure access management when not using <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+}This section describes how to configure access management when not using .
 
 ## Concepts
 
-<span class="mc-variable axway_variables.Company_Name variable">Axway</span> PassPort Access Management centralizes <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> access management. PassPort AM provides:
+{{< TransferCFT/companyname  >}} PassPort Access Management centralizes {{< TransferCFT/componentshortname  >}} access management. PassPort AM provides:
 
 -   Identity and access
-    control for <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products
+    control for {{< TransferCFT/companyname >}} products
 -   Authentication
     via a user/password login
 -   Authorization enabling
-    user access to <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products resources
+    user access to {{< TransferCFT/companyname >}} products resources
 -   Role-based access
     that defines privileges for users
 
@@ -27,11 +27,11 @@ The default roles are as follows:
 -   **Application** allows applications to request and manage transfers, and view the Catalog
 -   **PartnerManager** allows you to manage partners
 
-Please refer to the [*Transfer CFT *<span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">3.9</span> *Security Guide*](https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. (Requires login.)
+Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Security Guide*](https://docs.axway.com/bundle/TransferCFT_38_SecurityGuide_allOS_en_HTML5/page/Content/security_guide/predefined_privileges.htm) for a complete list of privileges and roles. (Requires login.)
 
 ### Tools
 
-To configure the PassPort AM Connector in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, set the uconf
+To configure the PassPort AM Connector in {{< TransferCFT/componentshortname  >}}, set the uconf
 parameters described in [Configuring PassPort AM](configure_passport_am). You can use one of the following tools to set these parameters:
 
 -   CFTUTIL: CFTUTIL

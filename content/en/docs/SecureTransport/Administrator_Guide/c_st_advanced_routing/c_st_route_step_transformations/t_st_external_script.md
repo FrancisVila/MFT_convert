@@ -19,27 +19,27 @@ The External Script transformation step enables adding the execution of external
 
 The following topics provide configuration details for the External Script transformation step:
 
--   <a href="#Proceed" class="MCXref xref">Proceed with route execution on step failure</a>
--   <a href="#Script" class="MCXref xref">Script Settings</a>
--   <a href="#Logging" class="MCXref xref">Logging Settings</a>
--   <a href="#Logging" class="MCXref xref">Logging Settings</a>
+-   [Proceed with route execution on step failure](#Proceed)
+-   [Script Settings](#Script)
+-   [Logging Settings](#Logging)
+-   [Logging Settings](#Logging)
 
 **Related topics:**
 
--   <a href="../t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a>
--   <a href="../t_st_pgp_decryption" class="MCXref xref">PGP Decryption</a>
--   <a href="../t_st_compress" class="MCXref xref">Compress</a>
--   <a href="../t_st_decompress" class="MCXref xref">Decompress</a>
--   <a href="../t_st_line_ending" class="MCXref xref">Line Ending</a>
+-   [PGP Encryption](../t_st_pgp_encryption)
+-   [PGP Decryption](../t_st_pgp_decryption)
+-   [Compress](../t_st_compress)
+-   [Decompress](../t_st_decompress)
+-   [Line Ending](../t_st_line_ending)
 
 <!-- -->
 
--   <a href="../t_st_charset_conversion" class="MCXref xref">Encoding Conversion</a>
--   <a href="../t_st_replace" class="MCXref xref">Characters Replace</a>
--   <a href="../t_st_line_padding" class="MCXref xref">Line Padding</a>
--   <a href="../t_st_file_folding" class="MCXref xref">Line Folding</a>
--   <a href="../t_st_line_truncating" class="MCXref xref">Line Truncating</a>
--   <a href="../t_st_rename" class="MCXref xref">Rename</a>
+-   [Encoding Conversion](../t_st_charset_conversion)
+-   [Characters Replace](../t_st_replace)
+-   [Line Padding](../t_st_line_padding)
+-   [Line Folding](../t_st_file_folding)
+-   [Line Truncating](../t_st_line_truncating)
+-   [Rename](../t_st_rename)
 
 <span id="Proceed"></span>
 

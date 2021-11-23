@@ -26,7 +26,7 @@ This topic describes how to use a proxy and SOCKS, and includes:
 
 ## SOCKS protocol architecture
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supports versions 4 and 5 of the SOCKS protocol. A brief
+{{< TransferCFT/componentshortname  >}} supports versions 4 and 5 of the SOCKS protocol. A brief
 explanation of the SOCKS protocol is provided in this topic.
 
 <img src="/Images/TransferCFT/proxy2_new.png" class="maxWidth" alt="Proxy server is between the client and server where client initiates the Connect Request to proxy" />
@@ -63,7 +63,7 @@ When using SOCKS5, the exchange between client and server consists of:
 
 <span id="Application_in_CFT"></span>
 
-## Using a proxy in <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+## Using a proxy in {{< TransferCFT/componentshortname  >}}
 
 The CFTNET command for a proxy is static. To apply modifications, Transfer
 CFT must be shutdown, the new parameters interpreted (CFTUTIL) and Transfer
@@ -253,7 +253,7 @@ Example
 
 ## Setting up a proxy for Copilot
 
-The proxy implementation for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Copilot is handled directly by the Java Socket class, and uses either the SOCKS V4 or V5 protocol. Note that the HTTP proxy that is used to connect to the Transfer CFT Copilot server for downloading is different from the one used for SOCKS 4 data exchange between Copilot client and server. Therefore, you require 2 proxies:
+The proxy implementation for {{< TransferCFT/componentshortname  >}} Copilot is handled directly by the Java Socket class, and uses either the SOCKS V4 or V5 protocol. Note that the HTTP proxy that is used to connect to the Transfer CFT Copilot server for downloading is different from the one used for SOCKS 4 data exchange between Copilot client and server. Therefore, you require 2 proxies:
 
 -   An HTTP proxy that you set in internet browser
 -   A SOCKS 4 proxy that you set in Copilot
@@ -264,7 +264,7 @@ The step is only required for your first log in through a proxy. Copilot retains
 
 To remove proxy and revert to the standard log in, simply remove the proxy address and port settings in the connection dialog box.
 
-<span class="autonumber"></span>Connect to a product dialog box
+Connect to a product dialog box
 
 <img src="/Images/TransferCFT/copilot_connection_box.png" class="maxWidth" alt="Copilot Connect to a product login screen " />
 

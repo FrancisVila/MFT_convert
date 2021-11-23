@@ -61,19 +61,18 @@ SEND TYPE = NACK
 = string \]
 
 \[ [MAXDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxdate)
-=  { <span style="text-decoration: underline;">99991231</span>
+=  {
 | date } \]
 
 \[ [MAXTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/maxtime)
-= { <span style="text-decoration: underline;">23595999</span>
+= {
 | time } \]
 
 \[ [MINDATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/mindate)
-= { <span style="text-decoration: underline;">current
-system date</span> | date } \]
+= { | date } \]
 
 \[ [MINTIME](../../../c_intro_userinterfaces/command_summary/parameter_intro/mintime)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | time } \]
 
 \[ [PRI](../../../c_intro_userinterfaces/command_summary/parameter_intro/pri)
@@ -94,9 +93,9 @@ system date</span> | date } \]
 = string \]
 
 \[ [TCYCLE](../../../c_intro_userinterfaces/command_summary/parameter_intro/tcycle)
-= { <span style="text-decoration: underline;">DAY</span>
+= {
 | MIN | MONTH } \]
 
 \[ [TRK](../../../c_intro_userinterfaces/command_summary/parameter_intro/trk)
-= { <span style="text-decoration: underline;">UNDEFINED</span>
+= {
 | ALL | SUMMARY | NO } \]

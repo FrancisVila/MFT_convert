@@ -10,11 +10,11 @@
 
 The following topics provide how-to instructions for managing SSL access:
 
--   <a href="#Add" class="MCXref xref">Add an SSL users encryption entry</a>
--   <a href="#Enable_encrypt" class="MCXref xref">Enable or disable an encryption entry</a>
--   <a href="#Edit" class="MCXref xref">Edit an encryption entry</a>
--   <a href="#Reorder" class="MCXref xref">Reorder encryption entries</a>
--   <a href="#Delete" class="MCXref xref">Delete an encryption entry</a>
+-   [Add an SSL users encryption entry](#Add)
+-   [Enable or disable an encryption entry](#Enable_encrypt)
+-   [Edit an encryption entry](#Edit)
+-   [Reorder encryption entries](#Reorder)
+-   [Delete an encryption entry](#Delete)
 
 <span id="Add"></span>
 
@@ -94,4 +94,4 @@ Use the following procedure to delete an encryption entry.
 
 **Related topic:**
 
--   <a href="../c_st_ssl_ssh_new" class="MCXref xref">SSL and SSH</a>
+-   [SSL and SSH](../c_st_ssl_ssh_new)

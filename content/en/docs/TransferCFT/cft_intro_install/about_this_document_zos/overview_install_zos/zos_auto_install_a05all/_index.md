@@ -102,13 +102,13 @@ The A05ALL JCL automatically runs the following members.
       <tr>
          <td>15         </td>
          <td><p>If cgenable=yes:</p>
-<p>Create the Axway <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> Demonstration Root Certificate.</p>         </td>
+<p>Create the Axway Demonstration Root Certificate.</p>         </td>
          <td>CFTCGPKI         </td>
       </tr>
       <tr>
          <td>16         </td>
          <td><p>If cgenable=yes:</p>
-<p>Transfer CFT to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> registration.</p>         </td>
+<p>Transfer CFT to registration.</p>         </td>
          <td>CFTCGREG         </td>
       </tr>
       <tr>

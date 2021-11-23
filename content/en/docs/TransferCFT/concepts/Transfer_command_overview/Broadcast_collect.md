@@ -37,7 +37,7 @@ The broadcasting list can be described by indicating the identifiers
 of the partners in this list, in the PART parameter of the CFTDEST command.
 This limits the number of identifiers.
 
-This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, or CFTPART objects if defined in Transfer CFT.
+This diagram represents a SEND command for "mygroup", which is a collection of applications as defined in , or CFTPART objects if defined in Transfer CFT.
 
 <img src="/Images/TransferCFT/temp_broadcast.png" class="mediumWidth" />
 
@@ -92,7 +92,7 @@ entries in the catalog corresponding to:
     management
 -   Where &lt;file\_symb> is the OS appropriate symbol (# or @)
 
-This virtual transfer is identified by a <span style="font-weight: bold;">DIAGP</span>
+This virtual transfer is identified by a **DIAGP**
 code equal to <span style="font-weight: bold;">DIFFUS</span>, on querying
 the catalog.
 

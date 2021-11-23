@@ -8,6 +8,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_setup_active-active_cluster" class="MCXref xref">Set up an active/active cluster</a>
--   <a href="../t_st_configure_servers_cluste_trust_certificate" class="MCXref xref">Configure servers in a cluster to trust a certificate</a>
--   <a href="../t_st_setup_active-passive_cluster" class="MCXref xref">Set up an active/passive cluster</a>
+-   [Set up an active/active cluster](../t_st_setup_active-active_cluster)
+-   [Configure servers in a cluster to trust a certificate](../t_st_configure_servers_cluste_trust_certificate)
+-   [Set up an active/passive cluster](../t_st_setup_active-passive_cluster)

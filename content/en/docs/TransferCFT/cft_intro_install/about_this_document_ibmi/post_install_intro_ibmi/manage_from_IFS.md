@@ -6,7 +6,7 @@
 
 1.  Log on the iSeries using the Transfer CFT account.
 
-2.  Execute the <span class="code">QSH </span>command.
+2.  Execute the `QSH `command.
 
 3.  Change the directory:
 

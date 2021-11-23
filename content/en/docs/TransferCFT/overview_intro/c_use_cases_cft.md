@@ -2,7 +2,7 @@
     "title": "Implementation architectures",
     "linkTitle": "Implementation architectures",
     "weight": "110"
-}This section describes the general types of implementation when using <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, either with multiple <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s or in conjunction with other <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products.
+}This section describes the general types of implementation when using {{< TransferCFT/componentshortname  >}}, either with multiple {{< TransferCFT/componentshortname  >}}s or in conjunction with other {{< TransferCFT/companyname  >}} products.
 
 -   Distributed A2A transfer exchanges
 -   Centralized A2A transfer exchanges
@@ -11,7 +11,7 @@
 
 ## Distributed A2A transfer exchanges
 
-A distributed exchange implementation is ideal for implementing back-end application exchanges internally within your corporate network. The implementation is based on Transfer CFT and <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+A distributed exchange implementation is ideal for implementing back-end application exchanges internally within your corporate network. The implementation is based on Transfer CFT and .
 
 Use cases include:
 
@@ -22,7 +22,7 @@ Use cases include:
 
 A centralized exchange implementation allows easy integration of new applications and processing flows, while ensuring performance-based, monitored, and secure transactions. All transactions are end-to-end with technical and functional monitoring.
 
-implementation typically meets the needs of the store-to-corporate use case when the data exchanges are confined to the corporate network. The implementation is based on Transfer CFT and <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+implementation typically meets the needs of the store-to-corporate use case when the data exchanges are confined to the corporate network. The implementation is based on Transfer CFT and .
 
 Use cases include:
 

@@ -2,7 +2,7 @@
     "title": "Using Base64 or PEM data ",
     "linkTitle": "Using base64",
     "weight": "310"
-}The <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> PKICER command can use Base64 or PEM data instead of a file in order to, for example, send a certificate and key by REST API.
+}The {{< TransferCFT/transfercftname  >}} PKICER command can use Base64 or PEM data instead of a file in order to, for example, send a certificate and key by REST API.
 
 ## Importing
 

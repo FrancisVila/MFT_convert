@@ -17,7 +17,7 @@ All other security operations must be performed using command lines.
 
 This section describes the functions and components that are used to perform
 security operations, and comprises a set of sub-sections that describe how to configure
-and manage the Transfer CFT security objects as well as use additional <span class="mc-variable axway_variables.Company_Name variable">Axway</span> products to offer security features.
+and manage the Transfer CFT security objects as well as use additional {{< TransferCFT/companyname  >}} products to offer security features.
 
 <table>
    <thead>

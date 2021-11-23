@@ -18,11 +18,11 @@ part2 user2 passwd2
 
 \* \* passwd4
 
-Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf <span class="code">cft.server.authentication\_method</span> parameter.
+Or you can use \_AUTH\_ to indicate authentication method as defined in the uconf `cft.server.authentication_method` parameter.
 
 Example
 
-<span class="code">/home/&USERID/cft\_passw</span>
+`/home/&USERID/cft_passw`
 
 > **Note:**
 >

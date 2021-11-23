@@ -1,8 +1,16 @@
 {
-    "title": "Test for glitches",
+    "title": "Test for glitches x",
     "linkTitle": "Test for glitches",
     "weight": "90"
-}This is a procedure: (in SecureTransport)
+}this should be a note, &gt; in markdown:
+
+> **Note:**
+>
+> This functionality does not apply to LDAP and SSO users.
+
+false link in http://localhost:1313/docs/transfercft/concepts/cft\_configuration\_concepts\_start\_here/default\_receive\_template\_concepts/#About\_the\_default\_CFTRECV\_object
+
+This is a procedure: (in SecureTransport)
 
 To set up <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in Azure Virtual Network, you must pass through the following steps:
 
@@ -97,10 +105,10 @@ AAAA
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Topic</p>         </th>
-<th><p>Contents</p>         </th>
+<th class="BodyE-Column1-Body1" data-bgcolor="#C0C0C0" style="width: 45.851%; padding-right: 10px; padding-left: 10px; background-color: #c0c0c0; border-left-color: #808080; border-left-style: Inset; border-top-color: #808080; border-top-style: Inset; border-right-color: #808080; border-right-style: Inset; border-bottom-color: #808080; border-bottom-style: Inset; border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px" width="45.851%"><p>Topic</p>         </th>
+<th class="BodyD-Column1-Body1" data-bgcolor="#C0C0C0" style="width: 54.149%; padding-right: 10px; padding-left: 10px; background-color: #c0c0c0; border-left-color: #808080; border-left-style: Inset; border-top-color: #808080; border-top-style: Inset; border-right-color: #808080; border-right-style: Inset; border-bottom-color: #808080; border-bottom-style: Inset; border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px" width="54.149%"><p>Contents</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -118,8 +126,10 @@ object, which defines a network identifier for a given partner, and a
 transfer direction, when partners cannot agree on common file identifiers.</p>         </td>
       </tr>
       <tr>
-         <td><p>Default receive template CFTRECV</p>         </td>
-         <td><p>Describes general file reception concepts and details the default CFTRECV template.</p>         </td>
+         <td><p>Default
+receive template CFTRECV</p>         </td>
+         <td><p>Describes general file reception concepts and details the
+default CFTRECV template.</p>         </td>
       </tr>
       <tr>
          <td><p>Default send
@@ -162,11 +172,11 @@ message, where IDS is the reference for the session context.</p>         </td>
  
 
 <table>
-   <th>
+   <thead>
       <tr>
-<th><p>Field</p>         </th>
-<th><p>Type</p>         </th>
-<th><p>Comment</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
+<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -205,10 +215,10 @@ message, where IDS is the reference for the session context.</p>         </td>
          
          
    
-   <th>
+   <thead>
       <tr>
-<th><p>Topic</p>         </th>
-<th><p>Contents</p>         </th>
+<th class="BodyE-Column1-Body1" data-bgcolor="#C0C0C0" style="width: 45.851%; padding-right: 10px; padding-left: 10px; background-color: #c0c0c0; border-left-color: #808080; border-left-style: Inset; border-top-color: #808080; border-top-style: Inset; border-right-color: #808080; border-right-style: Inset; border-bottom-color: #808080; border-bottom-style: Inset; border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px" width="45.851%"><p>Topic</p>         </th>
+<th class="BodyD-Column1-Body1" data-bgcolor="#C0C0C0" style="width: 54.149%; padding-right: 10px; padding-left: 10px; background-color: #c0c0c0; border-left-color: #808080; border-left-style: Inset; border-top-color: #808080; border-top-style: Inset; border-right-color: #808080; border-right-style: Inset; border-bottom-color: #808080; border-bottom-style: Inset; border-left-width: 1px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px" width="54.149%"><p>Contents</p>         </th>
       </tr>
    </thead>
    <tbody>

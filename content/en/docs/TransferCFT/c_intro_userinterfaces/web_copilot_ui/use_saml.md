@@ -2,7 +2,7 @@
     "title": "SSO using SAML",
     "linkTitle": "SSO using SAML",
     "weight": "130"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> supports a web browser single sign-on, SSO, profile that enables users to use the same logging details for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> as other Axway products (for example, Flow Manager), eliminating the need to log in multiple times on different web-based UIs.
+}{{< TransferCFT/componentlongname  >}} supports a web browser single sign-on, SSO, profile that enables users to use the same logging details for {{< TransferCFT/componentlongname  >}} as other Axway products (for example, Flow Manager), eliminating the need to log in multiple times on different web-based UIs.
 
 ## Single sign-on using SAML
 
@@ -14,7 +14,7 @@ The Security Assertion Markup Language, SAML, is an XML-based solution for excha
 
 ### Service Provider
 
-A Service Provider, SP, protects access to requested resources, such as web sites and applications by applying a security policy. For example, the SP blocks all access to an unauthenticated user and routes the request to the Identity Provider. As such, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> acts as an SP.
+A Service Provider, SP, protects access to requested resources, such as web sites and applications by applying a security policy. For example, the SP blocks all access to an unauthenticated user and routes the request to the Identity Provider. As such, {{< TransferCFT/componentlongname  >}} acts as an SP.
 
 ### Identity Provider
 
@@ -31,14 +31,14 @@ A user agent is usually a web browser. The person who uses the browser can be re
 
 ## Prerequisites
 
-To configure and use SAML SSO with <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, you must:
+To configure and use SAML SSO with {{< TransferCFT/componentlongname  >}}, you must:
 
 -   Have a third-party IdP, such as Keycloak, installed and running.
--   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](), or navigate locally in your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> installation to:
+-   Map the user roles between the IdP and Transfer CFT roles ([CFTROLE](../conf_intro/cftrole)). To view the CFTROLES/CFTPRIV sample, click [here](), or navigate locally in your {{< TransferCFT/componentlongname >}} installation to:
     -   distrib/template/conf/roles-smp.conf
     -   runtime/conf/roles-smp.conf
--   If you use <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with Flow Manager, you must manually set the uconf parameter am.type=saml on each <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> after registering.
--   If you use <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, you must manually set the uconf parameter am.type=saml on each <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> and import all <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> roles and privileges (CFTROLE and CFTPRIV, respectively) after registering.
+-   If you use {{< TransferCFT/transfercftname >}} with Flow Manager, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} after registering.
+-   If you use {{< TransferCFT/transfercftname >}} with {{< TransferCFT/centralgovernancename >}}, you must manually set the uconf parameter am.type=saml on each {{< TransferCFT/transfercftname >}} and import all {{< TransferCFT/transfercftname >}} roles and privileges (CFTROLE and CFTPRIV, respectively) after registering.
 
 ## Parameters
 
@@ -46,72 +46,18 @@ This section describes the UCONF parameter settings required for SAML implement
 
 ## Set up SAML 
 
-Configure the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server]().
+1.  Configure the {{< TransferCFT/componentlongname >}} REST API server, as Transfer CFT UI relies on the REST API. See [Configure the REST API server]().
+2.  Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
+    PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
+3.  Set the following UCONF parameters.
+4.  Define the roles that you require for your {{< TransferCFT/componentlongname >}} users. To view the CFTROLES sample, click [here](), and edit using your favorite text editor.
+5.  Start the Copilot server.
+6.  <span id="step6"></span>Export the SAML SP ({{< TransferCFT/componentlongname >}}) metadata.
 
-Insert the IdP certificate, used to sign SAML messages, in the PKI database:  
-PKIUTIL PKICER id=idp, iname=&lt;path to the idp certificate>
-
-Set the following UCONF parameters.
-
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>am.saml.client_id         </td>
-         <td>$(cft.instance_id)         </td>
-         <td>SAML request issuer. This should match the IdP configuration.         </td>
-         <td>ITEM-AX12345_tcrieux         </td>
-      </tr>
-      <tr>
-         <td>am.saml.idp.sign_on_service         </td>
-         <td>-         </td>
-         <td><p>SAML endpoint for AuthnRequest (HTTP-Redirect binding) requests.</p>         </td>
-         <td><p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
-<p>For example: am.saml.idp.sign_on = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p>         </td>
-      </tr>
-      <tr>
-         <td>am.saml.idp.logout_service         </td>
-         <td>$(am.saml.idp.sign_on_service)         </td>
-         <td><p>Endpoint for SAML LogoutRequest (HTTP-Redirect binding) requests.</p>         </td>
-         <td><p>https://authserver.host/auth/realms/{realm-name}/protocol/saml</p>
-<p>For example: am.saml.idp.logout_service = https://slnxcftsyncg.int:8443/auth/realms/synapses/protocol/saml</p>         </td>
-      </tr>
-      <tr>
-         <td>am.saml.idp.cert_id         </td>
-         <td>-         </td>
-         <td>Certificate ID (stored in the internal PKI base), which is used to verify the SAML IdP server's signatures.         </td>
-         <td>idp         </td>
-      </tr>
-      <tr>
-         <td>am.type         </td>
-         <td>-         </td>
-         <td><p>Set the am.type=saml</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>If you set SAML as the access management type, am.type=saml, you must use bearer authentication with REST API.</p>
-</blockquote>         </td>
-         <td>saml         </td>
-      </tr>
-   </tbody>
-</table>
-
-Define the roles that you require for your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> users. To view the CFTROLES sample, click [here](), and edit using your favorite text editor.
-
-Start the Copilot server.
-
-<span id="step6"></span>Export the SAML SP (<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>) metadata.
-
--   From a web browser, enter the URL <span style="font-family: 'Courier New';">https://\[Transfer CFT host\]:\[REST API port\]/saml2/metadata</span> to extract the XML configuration data required to configure your IdP.
+-   From a web browser, enter the URL  to extract the XML configuration data required to configure your IdP.
 -   Save the displayed XML content in a file.
 
-Create your <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> client in the IdP by importing the saved XML file. Remember that you must create a client for each <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.  
+Create your {{< TransferCFT/componentlongname  >}} client in the IdP by importing the saved XML file. Remember that you must create a client for each {{< TransferCFT/componentlongname  >}}.  
 **Note**: If you are using Keycloak, set the **Front Channel Logout** option to **OFF**.
 
 Set up the single logout.  
@@ -122,15 +68,15 @@ When the IdP connects to Transfer CFT using an HTTPS connection, it validates th
 
 ## Test
 
-From a web browser, enter the URL <span style="font-family: 'Courier New';">https://\[Transfer CFT host\]:\[REST API port\]/cft/ui</span> - you are redirected to your IdP and prompted to enter your ID and credentials.
+From a web browser, enter the URL  - you are redirected to your IdP and prompted to enter your ID and credentials.
 
 ## Revoked user rights
 
-If, as a <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> administrator or super user, you revoke the rights of a user who is currently logged in, this user can continue their session until they log out or the token expires, unless you expressly revoke all tokens for this user. This is true for both UI and REST API usage.
+If, as a {{< TransferCFT/componentlongname  >}} administrator or super user, you revoke the rights of a user who is currently logged in, this user can continue their session until they log out or the token expires, unless you expressly revoke all tokens for this user. This is true for both UI and REST API usage.
 
 ## Signed SAML headers
 
-Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
+Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
 
 You can see the [Change the private key length](../../../governance_services_intro/cg_postregister#Change) section for details.
 
@@ -142,4 +88,4 @@ Error from IDP
 
 After performing the "Set up SAML" steps, sometimes the exported SAML SP (Transfer CFT) metadata is incorrect when imported into the IDP (for example Keycloak) generating an error from the IDP.
 
-<span class="bold_in_para">Solution</span>: This issue seems to occur when using Firefox. We recommend that you check using another internet browser, such as Chrome.
+**Solution**: This issue seems to occur when using Firefox. We recommend that you check using another internet browser, such as Chrome.

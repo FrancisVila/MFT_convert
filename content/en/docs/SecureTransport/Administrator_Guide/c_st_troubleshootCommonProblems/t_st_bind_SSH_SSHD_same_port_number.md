@@ -11,4 +11,4 @@
 
 **Related topic:**
 
--   <a href="../t_st_debug_ssh_issues" class="MCXref xref">Debug SSH issues</a>
+-   [Debug SSH issues](../t_st_debug_ssh_issues)

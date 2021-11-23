@@ -6,13 +6,13 @@
 
 The following topics provide how-to instructions for managing FTP command restrictions:
 
--   <a href="#Add" class="MCXref xref">Add an FTP command entry</a>
--   <a href="#Edit" class="MCXref xref">Edit an FTP command entry</a>
--   <a href="#Delete" class="MCXref xref">Delete an FTP command entry</a>
+-   [Add an FTP command entry](#Add)
+-   [Edit an FTP command entry](#Edit)
+-   [Delete an FTP command entry](#Delete)
 
 **Related topic:**
 
--   <a href="../c_st_ftp_site_command" class="MCXref xref">FTP SITE command</a>
+-   [FTP SITE command](../c_st_ftp_site_command)
 
 <span id="Add"></span>
 

@@ -18,8 +18,8 @@ Use the CFTRECV object to:
 
 There is no limit on the number of CFTRECV objects that you can create.
 
-<span style="color: #800000;font-weight: bold;text-decoration: underline;">Related
-topics</span>
+**Related
+topics**
 
 -   Command syntax
     [CFTRECV](../../../command_summary#CFTRECV)

@@ -2,14 +2,14 @@
     "title": "SEND - Send files",
     "linkTitle": "Sending files",
     "weight": "190"
-}The SEND command initiates a send transfer. You can use it to send files, messages, or replies (acknowledgments). You can define the characteristics in the SEND command itself, or in a Central <span class="mc-variable suite_variables.Governance variable">Unified Flow Management</span> flow definition in a template command. Additionally you can use the SEND command for a single partner or a list of partners.
+}The SEND command initiates a send transfer. You can use it to send files, messages, or replies (acknowledgments). You can define the characteristics in the SEND command itself, or in a Central {{< TransferCFT/governance  >}} flow definition in a template command. Additionally you can use the SEND command for a single partner or a list of partners.
 
 ## About sending files
 
 When sending files:
 
 Free parameters
-for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user, such as adding comments to the transfer:
+for the {{< TransferCFT/componentshortname  >}} user, such as adding comments to the transfer:
 
 -   Sent to the
     receiver

@@ -18,9 +18,9 @@ All {{< SecureTransport/componentshortname  >}} Servers in a cluster must run on
 
 {{< SecureTransport/componentshortname  >}} is a 64-bit application.
 
-For a full list of supported Windows-based operating systems and updates, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref"><em>Axway and third-party software support</em></a> .
+For a full list of supported Windows-based operating systems and updates, refer to [*Axway and third-party software support*](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm) .
 
-For virtual platforms, refer to <a href="../virtualization_support#beforeinstallst_3365039947_1107263" class="MCXref xref">Virtualization support</a>.
+For virtual platforms, refer to [Virtualization support](../virtualization_support#beforeinstallst_3365039947_1107263).
 
 ## Minimum Windows hardware requirements
 

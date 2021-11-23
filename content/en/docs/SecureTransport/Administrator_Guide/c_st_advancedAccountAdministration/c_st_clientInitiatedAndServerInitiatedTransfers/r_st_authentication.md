@@ -53,14 +53,14 @@ User name + SSH key         </td>
 >
 > If dual authentication is enabled, the key and password are required. If user classes are specified in Specific user classes, the key and password are required only for the specified classes.
 
-You can configure the user name and password in the proxy configuration in a network zone node. See <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify3" class="MCXref xref">Specify proxy settings in a network zone</a>.
+You can configure the user name and password in the proxy configuration in a network zone node. See [Specify proxy settings in a network zone](../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify3).
 
 **Related topics:**
 
--   <a href="../c_st_transfer_mode_for_server-initiated_transfers" class="MCXref xref">Transfer mode for server-initiated transfers</a>
--   <a href="../c_st_transfer_multiple_files" class="MCXref xref">Transfer multiple files</a>
--   <a href="../c_st_configure_retry_parameters_for_server-initiated_transfers" class="MCXref xref">Configure retry parameters for server-initiated transfers</a>
--   <a href="../c_st_outgoing_connections" class="MCXref xref">Outgoing connections</a>
--   <a href="../c_st_server_authentication" class="MCXref xref">Server authentication</a>
--   <a href="../c_st_limitations" class="MCXref xref">Limitations</a>
--   <a href="../c_st_encryption_server-initiated_transfers" class="MCXref xref">Encryption and server-initiated transfers</a>
+-   [Transfer mode for server-initiated transfers](../c_st_transfer_mode_for_server-initiated_transfers)
+-   [Transfer multiple files](../c_st_transfer_multiple_files)
+-   [Configure retry parameters for server-initiated transfers](../c_st_configure_retry_parameters_for_server-initiated_transfers)
+-   [Outgoing connections](../c_st_outgoing_connections)
+-   [Server authentication](../c_st_server_authentication)
+-   [Limitations](../c_st_limitations)
+-   [Encryption and server-initiated transfers](../c_st_encryption_server-initiated_transfers)

@@ -31,14 +31,14 @@ Servers that are online, but not fully synchronized, are updated with new accoun
 
 The following topics describe the synchronization requirements and what information is synchronized and provide how-to instructions for synchronization:
 
--   <a href="#Requirem" class="MCXref xref">Requirements for synchronization</a>
--   <a href="#What" class="MCXref xref">What information is synchronized</a>
--   <a href="#Synchron" class="MCXref xref">Synchronize the cluster from the primary server</a>
+-   [Requirements for synchronization](#Requirem)
+-   [What information is synchronized](#What)
+-   [Synchronize the cluster from the primary server](#Synchron)
 
 **Related topics:**
 
--   <a href="../t_st_manage_active-active_cluster" class="MCXref xref">Manage an active/active cluster</a>
--   <a href="../t_st_manage_active-passive_cluster" class="MCXref xref">Manage an active/passive cluster</a>
+-   [Manage an active/active cluster](../t_st_manage_active-active_cluster)
+-   [Manage an active/passive cluster](../t_st_manage_active-passive_cluster)
 
 <span id="Requirem"></span>
 

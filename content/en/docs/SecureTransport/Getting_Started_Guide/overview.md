@@ -8,14 +8,14 @@ For a complete description of {{< SecureTransport/componentshortname  >}} featur
 
 The following getting started topics are provided:
 
--   <a href="../starting_setup" class="MCXref xref">Initial configuration</a> - Describes the initial {{< SecureTransport/securetransportname >}} setup and configuration.
--   <a href="../install_licenses" class="MCXref xref">Install licenses</a> - Describes installing the {{< SecureTransport/securetransportname >}} licenses.
--   <a href="../keystore_password" class="MCXref xref">Change the keystore password</a> - Describes the keystore password and provides how-to instructions for changing the keystore password.
--   <a href="../generate_or_import_ca" class="MCXref xref">Generate or import a certificate authority</a> - Describes generating and or importing a certificate authority.
--   <a href="../generate_certificates" class="MCXref xref">Generate certificates</a> - Describes generating certificates.
--   <a href="../database_settings" class="MCXref xref">Database settings</a> - Describes the {{< SecureTransport/securetransportname >}} database settings.
--   <a href="../set_up_servers" class="MCXref xref">Set up servers</a> - Describes setting up servers.
--   <a href="../exchange_ca_certificates" class="MCXref xref">Exchange CA certificates</a> - Describes exchanging CA certificates.
--   <a href="../clean_up_the_setup_account" class="MCXref xref">Clean up the setup account</a> - Provides how-to instructions for cleaning up the setup account.
--   <a href="../c_st_setup_test" class="MCXref xref">Setup test</a> - Provides the procedures for the initial test of the {{< SecureTransport/securetransportname >}} installation and setup.
--   <a href="../additional_configuration_tasks" class="MCXref xref">Additional configuration tasks</a> - Provides a list of additional configuration tasks.
+-   [Initial configuration](../starting_setup) - Describes the initial {{< SecureTransport/securetransportname >}} setup and configuration.
+-   [Install licenses](../install_licenses) - Describes installing the {{< SecureTransport/securetransportname >}} licenses.
+-   [Change the keystore password](../keystore_password) - Describes the keystore password and provides how-to instructions for changing the keystore password.
+-   [Generate or import a certificate authority](../generate_or_import_ca) - Describes generating and or importing a certificate authority.
+-   [Generate certificates](../generate_certificates) - Describes generating certificates.
+-   [Database settings](../database_settings) - Describes the {{< SecureTransport/securetransportname >}} database settings.
+-   [Set up servers](../set_up_servers) - Describes setting up servers.
+-   [Exchange CA certificates](../exchange_ca_certificates) - Describes exchanging CA certificates.
+-   [Clean up the setup account](../clean_up_the_setup_account) - Provides how-to instructions for cleaning up the setup account.
+-   [Setup test](../c_st_setup_test) - Provides the procedures for the initial test of the {{< SecureTransport/securetransportname >}} installation and setup.
+-   [Additional configuration tasks](../additional_configuration_tasks) - Provides a list of additional configuration tasks.

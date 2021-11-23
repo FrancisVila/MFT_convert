@@ -4,8 +4,8 @@
     "weight": "110"
 }FTP server messages are messages displayed to users at the startup of an FTP session. Two types of startup FTP server messages are available:
 
--   <a href="#Create" class="MCXref xref">Create or edit the server connect message</a>
--   <a href="#Create_edit" class="MCXref xref">Create or edit the server ready message</a>
+-   [Create or edit the server connect message](#Create)
+-   [Create or edit the server ready message](#Create_edit)
 
 Users might or might not see FTP server messages, depending on the software they use to connect to {{< SecureTransport/componentshortname  >}}. Most FTP client applications display these messages, but they are not displayed on browser clients. Users downloading a single file by URL from a browser might not see these messages.
 
@@ -35,8 +35,8 @@ Startup messages are displayed while a connection to the server is being establi
 
 **Related topics:**
 
--   <a href="../t_st_ftpactivemode" class="MCXref xref">Set up FTP active mode</a>
--   <a href="../t_st_ftppassivemode" class="MCXref xref">Set up FTP passive mode</a>
--   <a href="../r_st_ftpserverlimitations" class="MCXref xref">FTP server limitations</a>
--   <a href="../t_st_improveftpperformance" class="MCXref xref">Improve FTP performance on a multi-homed system</a>
--   <a href="../t_st_increaseftptimeout" class="MCXref xref">Increase the timeout for large files using server-initiated transfer</a>
+-   [Set up FTP active mode](../t_st_ftpactivemode)
+-   [Set up FTP passive mode](../t_st_ftppassivemode)
+-   [FTP server limitations](../r_st_ftpserverlimitations)
+-   [Improve FTP performance on a multi-homed system](../t_st_improveftpperformance)
+-   [Increase the timeout for large files using server-initiated transfer](../t_st_increaseftptimeout)

@@ -10,11 +10,11 @@
 
 The internal CA can be used to generate server or client certificates. It provides a convenient alternative to using a third-party CA. It is used implicitly in the following cases:
 
--   Generating a local certificate. For detail, see <a href="../t_st_localcertificatesandcsrs#top" class="MCXref xref">Manage local certificates and certificate signing requests</a>.
--   Generating an account certificate. For detail, see <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701" class="MCXref xref">Manage login certificates</a>.
--   Signing imported SSH Keys. For detail, see <a href="../../../accounts/c_st_usercertificates/t_st_usercertificates#Import" class="MCXref xref">Manage login certificates</a>.
+-   Generating a local certificate. For detail, see [Manage local certificates and certificate signing requests](../t_st_localcertificatesandcsrs#top).
+-   Generating an account certificate. For detail, see [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates#AccountsMenu_2253641766_1090701).
+-   Signing imported SSH Keys. For detail, see [Manage login certificates](../../../accounts/c_st_usercertificates/t_st_usercertificates#Import).
 
-The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact {{< SecureTransport/companyname  >}} Global Support for more information. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
+The internal CA key is protected with a password. Any operation that involves use of the internal CA require that password. This password cannot be retrieved if it is lost. Contact {{< SecureTransport/companyname  >}} Global Support for more information. For contact information, see [Get more help]().
 
 In addition to issuing certificates signed by internal CA, {{< SecureTransport/componentshortname  >}} supports a few management operations for the internal CA. These operations include:
 
@@ -29,10 +29,10 @@ In addition to issuing certificates signed by internal CA, {{< SecureTransport/c
 
 The following topics provide how-to instructions for managing the internal CA:
 
--   <a href="#View_internal" class="MCXref xref">View the internal CA</a>
--   <a href="#Generate_internal" class="MCXref xref">Generate an internal CA</a>
--   <a href="#Import_external" class="MCXref xref">Import an external CA</a>
--   <a href="#Export" class="MCXref xref">Export the internal CA</a>
+-   [View the internal CA](#View_internal)
+-   [Generate an internal CA](#Generate_internal)
+-   [Import an external CA](#Import_external)
+-   [Export the internal CA](#Export)
 
 <span id="View_internal"></span>
 
@@ -81,7 +81,7 @@ There are a number of reasons why you might want to generate an internal CA. The
     -   **Country** – the name of the country where the location of the certification is located.
 5.  Click **Generate**.
 
-Generating a new internal CA does not automatically invalidate the certificate issued by the previous CA. When you generate an internal CA, {{< SecureTransport/componentshortname  >}} adds the certificate to the Trusted CAs list under alias `ca`. The previous internal CA certificate is still in the Trusted CAs list under an alias of the form `ca-old-<serialNumber>`. When you do not want to accept certificates issued by the old internal CA, you can delete the `ca-old-<serialNumber>` aliases from the Trusted CAs list. For detail, see <a href="../t_st_trustedcas#Delete" class="MCXref xref">Delete a trusted CA certificate</a>.
+Generating a new internal CA does not automatically invalidate the certificate issued by the previous CA. When you generate an internal CA, {{< SecureTransport/componentshortname  >}} adds the certificate to the Trusted CAs list under alias `ca`. The previous internal CA certificate is still in the Trusted CAs list under an alias of the form `ca-old-<serialNumber>`. When you do not want to accept certificates issued by the old internal CA, you can delete the `ca-old-<serialNumber>` aliases from the Trusted CAs list. For detail, see [Delete a trusted CA certificate](../t_st_trustedcas#Delete).
 
 Once the new internal CA is generated, all certificates generated from that point on are signed by the new internal CA. Unless the new internal CA is added to the list of trusted certificates on the remote host, the host might reject the new certificates. An internal CA can be exported into a file that in turn can be used to add the CA to the list of trusted CAs.
 
@@ -99,9 +99,9 @@ Optionally, you can also import an external certificate. Make sure the certifica
 4.  Click **Import**.  
     {{< SecureTransport/componentshortname >}} reports if the import was successful.
 
-Now, {{< SecureTransport/componentshortname  >}} uses the imported certificate as the internal CA and signs all certificates generated using that CA. To make sure that a remote host accepts those certificates, add the certificate for this CA to the list of trusted certificates on that host. To export the certificate for import on another system, see <a href="#Export" class="MCXref xref">Export the internal CA</a>.
+Now, {{< SecureTransport/componentshortname  >}} uses the imported certificate as the internal CA and signs all certificates generated using that CA. To make sure that a remote host accepts those certificates, add the certificate for this CA to the list of trusted certificates on that host. To export the certificate for import on another system, see [Export the internal CA](#Export).
 
-Generating or importing an internal CA does not automatically invalidate the certificate issued by the previous CA. When you generate or import an internal CA, {{< SecureTransport/componentshortname  >}} adds the certificate to the Trusted CAs list under alias `ca`. The previous internal CA certificate is still in the Trusted CAs list under an alias of the form `ca-old-<serialNumber>`, where `<serialNumber>` is the value of the certificate serialNumber field. When you do not want to accept certificates issued by the old internal CA, you can delete the `ca-old-<serialNumber>` aliases from the Trusted CAs list. For detail, see <a href="../t_st_trustedcas#Delete" class="MCXref xref">Delete a trusted CA certificate</a>.
+Generating or importing an internal CA does not automatically invalidate the certificate issued by the previous CA. When you generate or import an internal CA, {{< SecureTransport/componentshortname  >}} adds the certificate to the Trusted CAs list under alias `ca`. The previous internal CA certificate is still in the Trusted CAs list under an alias of the form `ca-old-<serialNumber>`, where `<serialNumber>` is the value of the certificate serialNumber field. When you do not want to accept certificates issued by the old internal CA, you can delete the `ca-old-<serialNumber>` aliases from the Trusted CAs list. For detail, see [Delete a trusted CA certificate](../t_st_trustedcas#Delete).
 
 Once the internal CA is imported, all certificates generated from that point on are signed by the new internal CA. Unless the new internal CA is added to the list of trusted certificates on the remote host, the host might reject the new certificates. An internal CA can be exported into a file that in turn can be used to add the CA to the list of trusted CAs.
 
@@ -127,11 +127,11 @@ You can export the internal CA public certificate using the Administration Tool.
 
 **Related topics:**
 
--   <a href="../r_st_certificate_types" class="MCXref xref">Certificate types</a>
--   <a href="../c_st_certificate_management_page" class="MCXref xref">Certificate Management page</a>
--   <a href="../t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>
--   <a href="../t_st_localcertificatesandcsrs" class="MCXref xref">Manage local certificates and certificate signing requests</a>
--   <a href="../t_st_trustedcas" class="MCXref xref">Manage trusted CAs</a>
--   <a href="../t_st_certificatekeystorepasswordca" class="MCXref xref">Change the certificate keystore password</a>
--   <a href="../r_st_certificatestogenerate" class="MCXref xref">Certificates to generate during initial setup</a>
--   <a href="../t_st_storecertificatesinhsm" class="MCXref xref">Store certificates in a hardware security module</a>
+-   [Certificate types](../r_st_certificate_types)
+-   [Certificate Management page](../c_st_certificate_management_page)
+-   [Repository encryption certificate](../t_st_repository_encryption_certificate)
+-   [Manage local certificates and certificate signing requests](../t_st_localcertificatesandcsrs)
+-   [Manage trusted CAs](../t_st_trustedcas)
+-   [Change the certificate keystore password](../t_st_certificatekeystorepasswordca)
+-   [Certificates to generate during initial setup](../r_st_certificatestogenerate)
+-   [Store certificates in a hardware security module](../t_st_storecertificatesinhsm)

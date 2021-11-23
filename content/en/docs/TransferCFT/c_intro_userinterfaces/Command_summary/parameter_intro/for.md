@@ -9,20 +9,20 @@
 #### CFTDEST
 
 \[ FOR
-= { <span style="text-decoration: underline;">BOTH</span>
+= {
 | COMMUT |
 LOCAL } \]
 
 Option include:
 
 -   BOTH
-    (default value): On a local <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> with both LOCAL and COMMUT facilities.
+    (default value): On a local {{< TransferCFT/hflongproductname >}} with both LOCAL and COMMUT facilities.
 -   COMMUT:
-    On a local <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> that serves as an intermediate site. <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> receives
+    On a local {{< TransferCFT/hflongproductname >}} that serves as an intermediate site. {{< TransferCFT/hflongproductname >}} receives
     a file or a message whose identifier in the CFTDEST object is set to the
     recipient’s network name. It then broadcasts the file or message to all
     partners in the list.
 -   LOCAL:
-    On a local <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> to send (broadcast) or receive (collect) a file  
+    On a local {{< TransferCFT/hflongproductname >}} to send (broadcast) or receive (collect) a file  
 
 [Return to Command index](../../)

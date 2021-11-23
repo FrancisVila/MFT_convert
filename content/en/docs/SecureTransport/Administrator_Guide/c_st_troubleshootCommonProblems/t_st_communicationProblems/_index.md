@@ -10,6 +10,6 @@
 
 The following topics provide lists of what to check for communication problems:
 
--   <a href="c_st_clocks_out_of_sync" class="MCXref xref">Clocks out of sync</a> - Provides a list of what to check for clocks out of sync issues.
--   <a href="c_st_trust_establishment_issues" class="MCXref xref">Trust establishment issues</a> - Provides a list of what to check for trust establishment issues.
--   <a href="c_st_connectivity" class="MCXref xref">Connectivity</a> - Provides a list of what to check for connectivity issues.
+-   [Clocks out of sync](c_st_clocks_out_of_sync) - Provides a list of what to check for clocks out of sync issues.
+-   [Trust establishment issues](c_st_trust_establishment_issues) - Provides a list of what to check for trust establishment issues.
+-   [Connectivity](c_st_connectivity) - Provides a list of what to check for connectivity issues.

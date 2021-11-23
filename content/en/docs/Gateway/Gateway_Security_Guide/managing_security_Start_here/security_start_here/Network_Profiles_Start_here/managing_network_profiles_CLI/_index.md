@@ -2,26 +2,26 @@
     "title": "Managing Network Profiles (command line) ",
     "linkTitle": "Command line operations",
     "weight": "200"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 #### Commands for creating and managing Network Profiles:
 
--   [<span class="code" style="font-weight: bold;">secadm create\_netprof</span>](#secadm_create_netprof) – Create a Network Profile
--   [<span class="code" style="font-weight: bold;">secadm update\_netprof</span>](#secadm_update_netprof) – Update a Network Profile
--   [<span class="code" style="font-weight: bold;">secadm delete\_netprof</span>](#secadm_delete_netprof) – Delete a Network Profile
+-   [`secadm create_netprof`](#secadm_create_netprof) – Create a Network Profile
+-   [`secadm update_netprof`](#secadm_update_netprof) – Update a Network Profile
+-   [`secadm delete_netprof`](#secadm_delete_netprof) – Delete a Network Profile
 
 #### Commands for displaying Network Profiles:
 
--   [<span class="code" style="font-weight: bold;">secdsp select\_netprof</span>](#secdsp_select_netprof) – Display a selected list of Network Profiles
--   [<span class="code" style="font-weight: bold;">secdsp display\_netprof</span>](#secdsp_display_netprof) – Display the parameters of a Network Profile
--   [<span class="code" style="font-weight: bold;">secdsp status\_netprof</span>](#secdsp_status_netprof) – Display a selected list of Network Profiles with a subset of information for each selected Profile
+-   [`secdsp select_netprof`](#secdsp_select_netprof) – Display a selected list of Network Profiles
+-   [`secdsp display_netprof`](#secdsp_display_netprof) – Display the parameters of a Network Profile
+-   [`secdsp status_netprof`](#secdsp_status_netprof) – Display a selected list of Network Profiles with a subset of information for each selected Profile
 
 <span id="secbase"></span>
 
 #### Commands for exchanging Network Profiles between Gateway installations or Gateway versions:
 
--   [<span class="code" style="font-weight: bold;">secbase export\_netprof</span>](#secbase_export_netprof) – Create an output file containing Network Profile definitions
--   [<span class="code" style="font-weight: bold;">secbase import</span>](#secbase_import) – Import a Network Profile
+-   [`secbase export_netprof`](#secbase_export_netprof) – Create an output file containing Network Profile definitions
+-   [`secbase import`](#secbase_import) – Import a Network Profile
 
 <span id="secadm_create_netprof"></span>
 
@@ -35,7 +35,7 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><p><span class="code"><strong>secadm create_netprof {-nprof_name}</strong> [-security_option] [-comm_type] [-org_address] [-dest_address] [-user_data] [-state] [-sprof_name]</span></p>         </td>
+         <td><p><code>secadm create_netprof {-nprof_name} [-security_option] [-comm_type] [-org_address] [-dest_address] [-user_data] [-state] [-sprof_name]</code></p>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
@@ -44,13 +44,13 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-nprof_name (-npn)</span>: Enter a name for the Network Profile you are creating. The name of the Network Profile must be unique.</p>         </td>
+<p><code>-nprof_name (-npn)</code>: Enter a name for the Network Profile you are creating. The name of the Network Profile must be unique.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-security_option (-sec_opt)</span>: Enter the security option for the Network Profile.</p>
+         <td><p><code>-security_option (-sec_opt)</code>: Enter the security option for the Network Profile.</p>
 <p>Possible values are:</p>
 <ul>
-<li><span style="font-weight: bold;">None</span> (default)</li>
+<li><strong>None</strong> (default)</li>
 <li><span style="font-weight: bold;">TLS</span></li>
 <li><span style="font-weight: bold;">SSH</span></li>
 </ul>         </td>

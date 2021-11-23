@@ -4,7 +4,7 @@
     "weight": "220"
 }## File type
 
-The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to <span style="font-family: 'Courier New';">undefined</span>, which means that the transfer in reception takes the value sent through the network. 
+The behavior of the values ‘’ and ‘ ’, for FTYPE and FRECFM respectively, are not detailed in the following tables. These values correspond to , which means that the transfer in reception takes the value sent through the network. 
 
 File type when the file does not exist
 
@@ -67,7 +67,7 @@ The following table lists the different types of files that can be created on an
 
 File type when the file already exists
 
-The following table describes the <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> behavior when trying to receive data in an existing file on the native side of an IBM i system.
+The following table describes the {{< TransferCFT/hflongproductname  >}} behavior when trying to receive data in an existing file on the native side of an IBM i system.
 
 > **Note:**
 >

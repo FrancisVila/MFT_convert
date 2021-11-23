@@ -2,7 +2,7 @@
     "title": "Scheduling script execution - CFTCRON",
     "linkTitle": "Cron jobs - CFTCRON",
     "weight": "260"
-}The <a href="" class="MCTextPopup popup popupHead">CRONJOB<span class="MCTextPopupBody MCTextPopupBody_Closed needs-pie popupBody" aria-hidden="true"><span class="MCTextPopupArrow"> </span>Job Scheduler</span></a> feature enables Transfer CFT to execute scripts at predetermined
+}The <a href="" class="MCTextPopup popup popupHead">CRONJOB</a> feature enables Transfer CFT to execute scripts at predetermined
 dates and times. An example script, `cron-wlog.cmd`, is delivered in the installed product
 packaging ($CFTDIRRUNTIME/exec on Unix/Windows). You can adapt this example to suit your local requirements.
 
@@ -13,20 +13,42 @@ See [Use processing scripts](../../../../concepts/about_transfer_processing/proc
 This section describes the CRON related commands and parameters.
 
 -   CFTPARM: Each CRONJOB is associated with a CFTPARM via a CRONTABS parameter (environment definition):
+
     -   The CRONTABS parameter of the CFTPARM object refers to the CRONTAB parameter of the CFTCRON objects.
     -   You can have a CRONTAB with the same value for different CFTCRON objects (in the example below, note that CRON1 and CRON4 refer to the same CRONTAB).
     -   **Example**
--   RECONFIG TYPE=CRON
-    -   This sends a notification to Transfer CFT
-        to reload the enabled CRONJOBs. You use this command after modifying a CFTCRON (when either inserting or deleting).
-    -   The RECONFIG command does not reload CFTPARM. If
-        you modify the CFTPARM CRONTABS then you must restart Transfer CFT.
--   MQUERY name=CRON
-    -   Displays the log, which gives the current status of
-        the enabled cronjobs.
--   ACT/INACT type=CRON
-    -   To activate CRON4 in the previous example:
-    -   To inactivate CRON1, enter:
+
+    <!-- -->
+
+        CFTPARM ID=IDPARM0, ..., CRONTABS=(CRONTAB1, CRONTAB2, CRONTAB3)
+        CFTCRON ID=CRON1, CRONTAB=CRONTAB1,STATE=ACTIVE, ...
+        CFTCRON ID=CRON2, CRONTAB=CRONTAB2,STATE=ACTIVE, ...
+        CFTCRON ID=CRON3, CRONTAB=CRONTAB3,STATE=ACTIVE, ...
+        CFTCRON ID=CRON4, CRONTAB=CRONTAB1,STATE=INACTIVE ...
+
+RECONFIG TYPE=CRON
+
+-   This sends a notification to Transfer CFT
+    to reload the enabled CRONJOBs. You use this command after modifying a CFTCRON (when either inserting or deleting).
+-   The RECONFIG command does not reload CFTPARM. If
+    you modify the CFTPARM CRONTABS then you must restart Transfer CFT.
+
+MQUERY name=CRON
+
+-   Displays the log, which gives the current status of
+    the enabled cronjobs.
+
+ACT/INACT type=CRON
+
+-   To activate CRON4 in the previous example:
+
+<!-- -->
+
+    ACT type=CRON, ID=CRON4
+
+To inactivate CRON1, enter:
+
+    INACT type=CRON, ID=CRON1
 
 For CFTCRON command parameter details, see the [Command reference](../../../command_summary).
 
@@ -337,4 +359,4 @@ Identifier</p>         </td>
 Related
 topics
 
--   Command syntax<span style="font-weight: bold;"> </span>[CFTCRON](../../../command_summary#CFTCRON)
+-   Command syntax [CFTCRON](../../../command_summary#CFTCRON)

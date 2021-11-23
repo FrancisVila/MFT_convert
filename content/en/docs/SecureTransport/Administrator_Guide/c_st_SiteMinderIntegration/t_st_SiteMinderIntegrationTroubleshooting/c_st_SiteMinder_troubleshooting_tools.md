@@ -11,4 +11,4 @@ Refer to the SiteMinder documentation for information about these tools.
 
 **Related topic:**
 
--   <a href="../c_st_st_troubleshooting_tools" class="MCXref xref">SecureTransport troubleshooting tools</a>
+-   [SecureTransport troubleshooting tools](../c_st_st_troubleshooting_tools)

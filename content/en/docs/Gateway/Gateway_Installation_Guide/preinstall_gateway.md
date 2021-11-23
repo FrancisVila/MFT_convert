@@ -14,8 +14,8 @@
    <tbody>
       <tr>
          <td><p>Create or identify an existing user account</p>         </td>
-         <td><p>Create a user account, or identify an existing user account. You will use this account to install and manage Gateway.<span style="font-weight: bold;"><br />
-Note:</span> This step is not strictly necessary on Windows.</p>         </td>
+         <td><p>Create a user account, or identify an existing user account. You will use this account to install and manage Gateway.<strong><br />
+Note:</strong> This step is not strictly necessary on Windows.</p>         </td>
       </tr>
       <tr>
          <td><p>Reserve port numbers</p>         </td>

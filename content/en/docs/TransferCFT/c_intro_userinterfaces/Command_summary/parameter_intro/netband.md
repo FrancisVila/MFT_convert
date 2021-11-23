@@ -4,7 +4,7 @@
     "weight": "2140"
 }<span id="netband"></span>
 
-### <span class="mc-variable System.Title variable">netband</span>
+### 
 
 CFTSEND, CFTRECV
 

@@ -4,10 +4,10 @@
     "weight": "400"
 }At the receiver end (DIRECT = R)
 with file accessing managed by the user, the user function has to reposition
-using the information (rpos, frecs and fcars) the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> provides.
+using the information (rpos, frecs and fcars) the {{< TransferCFT/componentshortname  >}} provides.
 
 At the sender end (DIRECT = S) or
-if file accessing is managed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+if file accessing is managed by {{< TransferCFT/componentshortname  >}}, the {{< TransferCFT/componentshortname  >}}
 has all the information it requires for repositioning.
 
 In both cases, you can request the restart of the transfer  from

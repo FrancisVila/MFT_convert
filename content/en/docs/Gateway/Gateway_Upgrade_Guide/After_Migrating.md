@@ -4,13 +4,13 @@
     "weight": "90"
 }## Update password environment variables
 
-After upgrade, check your files (exits, scripts) for usage of the <span class="code">p\_cs\_username</span> and <span class="code">p\_cs\_password</span> environment variables. Update those files, using the new environment variables.
+After upgrade, check your files (exits, scripts) for usage of the `p_cs_username` and `p_cs_password` environment variables. Update those files, using the new environment variables.
 
 In the new version, when access management is enabled, the password used by commands is stored encrypted. This concerns the command line utility, exits, and scripts. The environment variables are now the following:
 
--   administration user: <span class="code">p\_cs\_username</span>
--   decryption key file pathname<span class="code">: p\_cs\_dk\_file</span>
--   encrypted password file pathname: <span class="code">p\_cs\_encpass\_file </span>
+-   administration user: `p_cs_username`
+-   decryption key file pathname`: p_cs_dk_file`
+-   encrypted password file pathname: `p_cs_encpass_file `
 
 (Storing the cleartext password in the environment variable p\_cs\_password is no longer supported.)
 
@@ -24,28 +24,25 @@ For more information regarding password encryption, see *Security guide &gt;* [P
 
 **Important:** after upgrading Gateway from version 6.16.x to 6.17, perform the following steps:
 
-1.  Copy the <span class="code">cstcp\_command </span>parameter from <span class="code">uconfdict1.ini </span>to <span class="code">pelsetup.ini</span>. The parameter values should be:
-    -   UNIX: <span class="code">  
-        ipelapid.sock -tpt CSTCP</span>
-    -   Windows: <span class="code">  
-        /new /hide %p\_home\_ dir%\\bin\\ipelsock.exe -tpt CSTCP</span>
-2.  Copy the <span class="code">notif\_exec\_path </span>parameter from <span class="code">pelsetup.def </span>to <span class="code">conffile</span>. The parameter values should be:
+1.  Copy the `cstcp_command `parameter from `uconfdict1.ini `to `pelsetup.ini`. The parameter values should be:
+    -   UNIX: `ipelapid.sock -tpt CSTCP`
+    -   Windows: `/new /hide %p_home_ dir%\bin\ipelsock.exe -tpt CSTCP`
+2.  Copy the `notif_exec_path `parameter from `pelsetup.def `to `conffile`. The parameter values should be:
     -   UNIX:  
-        <span class="code">$p\_home\_dir/bin/notif</span>
-    -   Windows: <span class="code">  
-        "/new /hide notif.exe"</span>
+        `$p_home_dir/bin/notif`
+    -   Windows: `"/new /hide notif.exe"`
 
-## Update <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>
+## Update {{< Gateway/securerelayname  >}}
 
-If you are using <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> in conjunction with <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> V6.17, it is strongly advised to update to <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span> Version 2.6.4 at least.
+If you are using {{< Gateway/securerelayname  >}} in conjunction with {{< Gateway/gatewayname  >}} V6.17, it is strongly advised to update to {{< Gateway/securerelayname  >}} Version 2.6.4 at least.
 
-If <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> was already configured with <span class="mc-variable suite_variables.SecureRelayName variable">Secure Relay</span>, then <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+If {{< Gateway/gatewayname  >}} was already configured with {{< Gateway/securerelayname  >}}, then {{< Gateway/copyorrecreate  >}}:
 
 -   xsrsaltfile.dat
 -   xsrdkfile.dat
 -   xsrpwd.dat
 
-If <span class="mc-variable suite_variables.PassPortName variable">PassPort</span> termination is used, then <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+If {{< Gateway/passportname  >}} termination is used, then {{< Gateway/copyorrecreate  >}}:
 
 -   pkisaltfile.dat
 -   pkidkfile.dat
@@ -55,17 +52,17 @@ If <span class="mc-variable suite_variables.PassPortName variable">PassPort</spa
 
 ### use\_legacy\_settings
 
-If <span class="code">use\_legacy\_settings </span>was used for <span class="mc-variable suite_variables.PassPortName variable">PassPort</span>, then:
+If `use_legacy_settings `was used for {{< Gateway/passportname  >}}, then:
 
--   For <span class="mc-variable suite_variables.PassPortName variable">PassPort</span> AM configuration: <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+-   For {{< Gateway/passportname >}} AM configuration: {{< Gateway/copyorrecreate >}}:
     -   amloginsalt.dat
     -   amlogindk.dat
     -   amloginpass.dat
--   For PassPort PS configuration: <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+-   For PassPort PS configuration: {{< Gateway/copyorrecreate >}}:
     -   xpploginsalt.dat
     -   xpplogindk.dat
     -   xpploginpass.dat
--   For PassPort PM configuration: <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+-   For PassPort PM configuration: {{< Gateway/copyorrecreate >}}:
     -   tpmloginsalt.dat
     -   tpmlogindk.dat
     -   tpmloginpass.dat
@@ -74,7 +71,7 @@ If <span class="code">use\_legacy\_settings </span>was used for <span class="mc-
 
 Steps to follow if a new passport configuration was used:
 
--   For PassPort AM configuration: copy the following files from <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> 6.16.x, (or recreate the \*.dat files):
+-   For PassPort AM configuration: copy the following files from {{< Gateway/gatewayname >}} 6.16.x, (or recreate the \*.dat files):
     -   passport.p12
     -   PassportCA.crt
     -   ppss.dat
@@ -86,17 +83,17 @@ Steps to follow if a new passport configuration was used:
 
 <!-- -->
 
--   For PassPort PS configuration: <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+-   For PassPort PS configuration: {{< Gateway/copyorrecreate >}}:
     -   pploginsalt.dat
     -   pplogindk.dat
     -   pploginpass.dat
--   For PassPort PM configuration: <span class="mc-variable gateway_variables.copyOrRecreate variable">either recreate the following files, or simply copy them from Gateway version 6.16.x</span>:
+-   For PassPort PM configuration: {{< Gateway/copyorrecreate >}}:
     -   pploginsalt.dat
     -   pplogindk.dat
     -   pploginpass.dat
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

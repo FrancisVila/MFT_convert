@@ -14,7 +14,7 @@
 **Related topics:**
 
 -   <a href="../t_st_ftpservermessages" class="TOCPageNumber MCXref xref xrefTOCPageNumber">FTP server messages</a>
--   <a href="../t_st_ftpactivemode" class="MCXref xref">Set up FTP active mode</a>
--   <a href="../t_st_ftppassivemode" class="MCXref xref">Set up FTP passive mode</a>
--   <a href="../r_st_ftpserverlimitations" class="MCXref xref">FTP server limitations</a>
--   <a href="../t_st_improveftpperformance" class="MCXref xref">Improve FTP performance on a multi-homed system</a>
+-   [Set up FTP active mode](../t_st_ftpactivemode)
+-   [Set up FTP passive mode](../t_st_ftppassivemode)
+-   [FTP server limitations](../r_st_ftpserverlimitations)
+-   [Improve FTP performance on a multi-homed system](../t_st_improveftpperformance)

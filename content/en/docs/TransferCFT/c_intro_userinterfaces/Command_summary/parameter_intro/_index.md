@@ -2,7 +2,7 @@
     "title": "Transfer CFT  parameter index",
     "linkTitle": "Parameter index",
     "weight": "190"
-}All <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameters are listed in alphabetical order. Some parameters have different possible values depending on the object. Parameter
+}All {{< TransferCFT/componentshortname  >}} parameters are listed in alphabetical order. Some parameters have different possible values depending on the object. Parameter
 definitions and values are listed by object name when this applies to
 a parameter.
 
@@ -15,8 +15,7 @@ Example
 
 #### CFTNET  (command where the parameter is used)
 
-<span class="code">\[ACB = {ID value for this CFTNET
-| string}\] </span> ( parameter
+`[ACB = {ID value for this CFTNET   | string}] ` ( parameter
 format, where the underlined value is the default value)
 
 The resource identified to the access method. The default value is defined
@@ -25,12 +24,12 @@ definition)
 
 <span id="CFT_naming_conventions"></span>
 
-## <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> naming conventions
+## {{< TransferCFT/componentshortname  >}} naming conventions
 
 Respect the following conventions when completing values for Transfer
 CFT object fields:
 
--   <span style="font-weight: bold;">Date</span>:
+-   **Date**:
     8-digit string in the YYYYMMDD format
 -   <span style="font-weight: bold;">File
     name</span>: 512 characters comprised of the full path - meaning the drive, path, root, and suffix

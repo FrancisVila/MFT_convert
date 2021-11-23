@@ -2,15 +2,15 @@
     "title": "System requirements",
     "linkTitle": "System requirements",
     "weight": "160"
-}The following are the system requirements for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+}The following are the system requirements for {{< TransferCFT/componentshortname  >}}.
 
 ## Supported operating systems and browsers
 
-Refer to the [<span class="mc-variable axway_variables.Company_Name variable">Axway</span> S*upported Platforms Guide*](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf) for more information.
+Refer to the [{{< TransferCFT/companyname  >}} S*upported Platforms Guide*](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf) for more information.
 
 ## Disk space and RAM requirements
 
-<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> has the following hardware requirements:
+{{< TransferCFT/componentlongname  >}} has the following hardware requirements:
 
 -   Disk space requirement
     -   1.5 to 5 Gigabyte: minimum disk space to allow for future updates, SPs, and continued performance

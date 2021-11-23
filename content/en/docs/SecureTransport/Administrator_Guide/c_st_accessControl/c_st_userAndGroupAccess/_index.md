@@ -12,4 +12,4 @@ If your {{< SecureTransport/componentshortname  >}} deployment includes {{< Secu
 
 The following topic describes how-to manage user and group access:
 
--   <a href="t_st_userandgroupaccess" class="MCXref xref">Manage user and group access</a> - Provides how-to instructions for managing user and group access.
+-   [Manage user and group access](t_st_userandgroupaccess) - Provides how-to instructions for managing user and group access.

@@ -8,10 +8,10 @@
 2.  Copy the certificate file with the CA certificate from the primary server to the secondary server and import the certificate using the *Trusted CAs* page.
 3.  On secondary server, export the CA certificate to a local file using the *Trusted CAs* page.
 4.  Copy the certificate file with the CA certificate from the secondary server to the primary server and import the certificate using the *Trusted CAs* page.
-5.  Bounce both servers. For instructions, see <a href="../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_miscellaneousoptions#Limit" class="MCXref xref">Limit FTP login failures</a>.
+5.  Bounce both servers. For instructions, see [Limit FTP login failures](../../../c_st_setup/c_st_miscellaneousconfiguration/t_st_miscellaneousoptions#Limit).
 
 **Related topics:**
 
--   <a href="../t_st_setup_active-active_cluster" class="MCXref xref">Set up an active/active cluster</a>
--   <a href="../t_st_specify_cluster_connection_timeout" class="MCXref xref">Specify the cluster connection timeout</a>
--   <a href="../t_st_setup_active-passive_cluster" class="MCXref xref">Set up an active/passive cluster</a>
+-   [Set up an active/active cluster](../t_st_setup_active-active_cluster)
+-   [Specify the cluster connection timeout](../t_st_specify_cluster_connection_timeout)
+-   [Set up an active/passive cluster](../t_st_setup_active-passive_cluster)

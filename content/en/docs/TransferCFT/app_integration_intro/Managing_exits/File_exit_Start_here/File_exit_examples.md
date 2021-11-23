@@ -138,6 +138,6 @@ The EXFxmp2 user function:
 -   Replaces the first
     byte of each non empty record with the ‘?’ character
 
-This sample is delivered with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> product.
-Refer to the <span style="font-weight: bold;font-family: 'Courier New', monospace;">exfxmp2.c</span> header
+This sample is delivered with the {{< TransferCFT/componentshortname  >}} product.
+Refer to the **exfxmp2.c** header
 in the delivered samples.

@@ -8,4 +8,4 @@ Configure virtual groups on {{< SecureTransport/componentshortname  >}} Server o
 
 The following topic describes how to manage virtual groups:
 
--   <a href="t_st_virtualgroups" class="MCXref xref">Manage virtual groups</a> - Provides how-to instructions for managing virtual groups.
+-   [Manage virtual groups](t_st_virtualgroups) - Provides how-to instructions for managing virtual groups.

@@ -12,7 +12,7 @@ For OS/400 only
 
 **\[NETPFX = {<u>CF1</u> | *string3*}\]**
 
-Prefix for network objects where value = <span style="font-weight: bold;">string3</span>.
+Prefix for network objects where value = **string3**.
 
 This p400 is going to be executed.refix is used to name the network
 objects created for CFT/OS400 and used by programs, according to specific

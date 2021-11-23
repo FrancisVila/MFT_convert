@@ -8,7 +8,7 @@
 
 The following table defines the DIAGP formats.
 
-<span class="autonumber"></span>DIAGP Formats
+DIAGP Formats
 
 <table>
    <thead>
@@ -65,7 +65,7 @@ value providing information on the type of catalog entry or the status
 of the transfer associated with this entry. Some codes are specific to
 a single protocol.
 
-<span class="autonumber"></span>Specific codes
+Specific codes
 
 <table>
    <thead>
@@ -85,7 +85,7 @@ of a RECV IDF=* command)</p>         </td>
       <tr>
          <td><p>ABORT</p>         </td>
          <td><p> </p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> transfer abort request</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} transfer abort request</p>         </td>
       </tr>
       <tr>
          <td><p>ABORT_I</p>         </td>
@@ -146,7 +146,7 @@ can be caused by the REQUESTER or SERVER partner as compression is negotiated</p
 rate is then displayed. This rate expresses the number of bytes to be
 sent in relation to the number of bytes actually sent. The number of bytes
 to be sent may be different from the number of bytes in the file if the
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> truncates or pads records, depending on the parameter settings</p>         </td>
+{{< TransferCFT/componentshortname  >}} truncates or pads records, depending on the parameter settings</p>         </td>
       </tr>
       <tr>
          <td><p>DAY CYC</p>         </td>
@@ -186,7 +186,7 @@ is incompatible with the file data</p>         </td>
       <tr>
          <td><p>ERR LREC</p>         </td>
          <td><p> </p>         </td>
-         <td><p>Error sending or receiving the file data. <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> detects an
+         <td><p>Error sending or receiving the file data. {{< TransferCFT/componentshortname  >}} detects an
 invalid length for the data read or to be written</p>         </td>
       </tr>
       <tr>
@@ -380,7 +380,7 @@ of the partner's CFTPART command)</p>         </td>
       <tr>
          <td><p>NO PARM</p>         </td>
          <td><p> </p>         </td>
-         <td><p>Error due to incorrect <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter settings</p>         </td>
+         <td><p>Error due to incorrect {{< TransferCFT/componentshortname  >}} parameter settings</p>         </td>
       </tr>
       <tr>
          <td><p>NO PART</p>         </td>
@@ -397,7 +397,7 @@ identifier)</p>         </td>
       <tr>
          <td><p>NO TURN</p>         </td>
          <td><p>ODETTE</p>         </td>
-         <td><p>The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cannot hand over to the partner (CD) as the
+         <td><p>The {{< TransferCFT/componentshortname  >}} cannot hand over to the partner (CD) as the
 partner handed over during the previous exchange</p>         </td>
       </tr>
       <tr>
@@ -432,7 +432,7 @@ request (RECV command) is not authorized</p>         </td>
          <td><p> </p>         </td>
          <td><p>REQUESTER
 partner mismatch with SERVER partner in SIT profile. Strict naming and
-consistency rules are imposed both by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and by the PESIT standard.</p>         </td>
+consistency rules are imposed both by {{< TransferCFT/componentshortname  >}} and by the PESIT standard.</p>         </td>
       </tr>
       <tr>
          <td><p>N_REL_I</p>         </td>
@@ -477,7 +477,7 @@ point)</p>         </td>
       <tr>
          <td><p>RTO</p>         </td>
          <td><p> </p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> time-out during the transfer phase. This time-out
+         <td><p>{{< TransferCFT/componentshortname  >}} time-out during the transfer phase. This time-out
 corresponds to the RTO parameter of the CFTPROT command</p>         </td>
       </tr>
       <tr>
@@ -506,7 +506,7 @@ command)</p>         </td>
       <tr>
          <td><p>SYPOST</p>         </td>
          <td><p> </p>         </td>
-         <td><p>Communication error between <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> and the directory
+         <td><p>Communication error between {{< TransferCFT/componentshortname  >}} and the directory
 EXIT task</p>         </td>
       </tr>
       <tr>
@@ -638,13 +638,12 @@ code, where X represents a character and N a digit:
 -   XXX
     represents the mnemonic code of the received FPDU - PeSIT protocol
     -   For the meaning of this code, refer to the section
-        <span class="italic_in_para">FPDU Mnemonic Codes PeSIT Protocol.</span>
 
 <span id="NNN_HHHH_Type_ODETTE_DIAGP_Codes"></span>
 
 ## "NNN HHHH"-Type ODETTE DIAGP Codes
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> diagnostic codes corresponding to the reception of an FPDU
+{{< TransferCFT/componentshortname  >}} diagnostic codes corresponding to the reception of an FPDU
 with an error diagnostic code. H represents a hexadecimal digit and N
 a digit:
 
@@ -655,16 +654,16 @@ For the meaning of this code, refer to the section
 [Protocol Diagnostic Codes](../protocol_diagnostic_codes).
 
 -   HHHH
-    is a hexadecimal value corresponding to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> numeric code
+    is a hexadecimal value corresponding to the {{< TransferCFT/componentshortname >}} numeric code
     ODETTE protocol
 
-See also<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Numeric Codes ODETTE Protocol.
+See also{{< TransferCFT/componentshortname  >}} Numeric Codes ODETTE Protocol.
 
 <span id="XXX_HHHH_Type_ODETTE_DIAGP_Codes"></span>
 
 ## "XXX HHHH"-Type ODETTE DIAGP Codes
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> diagnostic code identifying an FPDU negotiation or send
+{{< TransferCFT/componentshortname  >}} diagnostic code identifying an FPDU negotiation or send
 error in the ODETTE protocol (where H represents a hexadecimal digit and
 X a letter):
 
@@ -673,11 +672,11 @@ X a letter):
     value describing the origin of the anomaly or phase during which it occurred.
 
 See also,
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Mnemonic Codes ODETTE Protocol.
+{{< TransferCFT/componentshortname  >}} Mnemonic Codes ODETTE Protocol.
 
 -   HHHH
-    is a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> numeric code - ODETTE protocol. This is a hexadecimal
+    is a {{< TransferCFT/componentshortname >}} numeric code - ODETTE protocol. This is a hexadecimal
     value corresponding to the internal protocol code.
 
 See also
-"[<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> ODETTE](../../../protocols_start_here/start_here_odette)"
+"[{{< TransferCFT/componentshortname  >}} ODETTE](../../../protocols_start_here/start_here_odette)"

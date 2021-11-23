@@ -12,6 +12,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_add_transfer_logging_entries" class="MCXref xref">Add transfer logging entries</a>
--   <a href="../t_st_edit_transfer_logging_entries" class="MCXref xref">Edit transfer logging entries</a>
--   <a href="../t_st_delete_transfer_logging_entries" class="MCXref xref">Delete transfer logging entries</a>
+-   [Add transfer logging entries](../t_st_add_transfer_logging_entries)
+-   [Edit transfer logging entries](../t_st_edit_transfer_logging_entries)
+-   [Delete transfer logging entries](../t_st_delete_transfer_logging_entries)

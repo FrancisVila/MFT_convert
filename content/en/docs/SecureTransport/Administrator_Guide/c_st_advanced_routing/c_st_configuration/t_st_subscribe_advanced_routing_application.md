@@ -6,17 +6,17 @@
 
 **Prerequisites**
 
--   Create an {{< SecureTransport/advancedrouting >}} application. For instructions on creating an {{< SecureTransport/advancedrouting >}} application, see <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>.
+-   Create an {{< SecureTransport/advancedrouting >}} application. For instructions on creating an {{< SecureTransport/advancedrouting >}} application, see [Create Advanced Routing application](../t_st_create_advanced_routing_application).
 -   Create at least one transfer site for the selected user account. For instructions on creating a transfer site, see
-    <a href="../../../accounts/transfersites" class="MCXref xref">Transfer sites</a>
--   Assign at least one route to the selected user account. For instructions on assigning a Route Template Package, see <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>.
+    [Transfer sites](../../../accounts/transfersites)
+-   Assign at least one route to the selected user account. For instructions on assigning a Route Template Package, see [Assign Route Package Template](../t_st_assign_route_package_template).
 
 **Workflow**
 
-1.  <a href="#Select" class="MCXref xref">Select a user account</a>
-2.  <a href="#Configur" class="MCXref xref">Configure general settings</a>
-3.  <a href="#Configur2" class="MCXref xref">Configure post transmission actions</a>
-4.  <a href="#Complete" class="MCXref xref">Complete the subscription</a>
+1.  [Select a user account](#Select)
+2.  [Configure general settings](#Configur)
+3.  [Configure post transmission actions](#Configur2)
+4.  [Complete the subscription](#Complete)
 
 <span id="Select"></span>
 
@@ -41,7 +41,7 @@ In the *General Settings* pane:
     >
     > You cannot use the following characters in the subscription folder name: \* &lt; > ? " \\ | :
 
-2.  Select the **Encrypt mode**. Selecting the **Encrypt mode** allows you to configure repository encryption for accounts at the per-subscription level. For additional information, refer to <a href="../../../c_st_setup/c_st_certificates/t_st_repository_encryption_certificate" class="MCXref xref">Repository encryption certificate</a>.  
+2.  Select the **Encrypt mode**. Selecting the **Encrypt mode** allows you to configure repository encryption for accounts at the per-subscription level. For additional information, refer to [Repository encryption certificate](../../../c_st_setup/c_st_certificates/t_st_repository_encryption_certificate).  
     Select **Default** to inherit the encryption mode for the subscription folder from the account or the global settings.  
     Select **Enable** to encrypt all files uploaded to the subscription folder.  
     Select **Disable** to upload unencrypted files to the subscription folder.  
@@ -51,7 +51,7 @@ In the *General Settings* pane:
     > Files that are transferred via Advanced Routing or Standard Routing will be encrypted or not based on the target subscription folder repository encryption setting.
 
       
-    For additional subscription folder repository encryption information, refer to <a href="../../../accounts/c_st_subscriptions/t_st_subscriptions#Configur" class="MCXref xref">Configure general settings</a>.
+    For additional subscription folder repository encryption information, refer to [Configure general settings](../../../accounts/c_st_subscriptions/t_st_subscriptions#Configur).
 
 3.  In the *Flow Settings* pane, select the **Existing flow attributes**.  
     If **Preserve** is selected, the attributes defined in the *Flow Attributes* pane will be applied only to newly received files which do not have associated flow attributes.  
@@ -59,7 +59,7 @@ In the *General Settings* pane:
     When **Append** is selected, only the attributes which are not defined for incoming files will be applied. Existing attributes will be preserved.
 
 4.  In the *Flow/Subscription Attributes* pane:
-    1.  To add a flow or a subscription attribute, click **Add Attribute**. For additional information, refer to <a href="../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow" class="MCXref xref">Flow and subscription attributes</a>.
+    1.  To add a flow or a subscription attribute, click **Add Attribute**. For additional information, refer to [Flow and subscription attributes](../../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Flow).
     2.  **Add Attribute** allows you to add custom properties as Key=Value pairs. Flow attributes can be used for expression evaluation in Advanced Routing only when the application operates with files. Subscription attributes are bound to the subscription, therefore, they can be used for expression evaluation in all Advanced Routing fields.
     3.  Some examples of attributes are:
         <table>
@@ -95,7 +95,7 @@ Configuring the post transformation actions is divided into selecting the post t
 
 In the *For Files Received from this Account or its Partners* pane:
 
-1.  To set a schedule for automatic retrieval of files from a remote server, select the **Automatically Retrieve Files From** check box and then select the transfer site from the drop-down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see <a href="../../../accounts/transfersites#AccountsMenu_2253641766_1248932" class="MCXref xref">Transfer sites</a>.  
+1.  To set a schedule for automatic retrieval of files from a remote server, select the **Automatically Retrieve Files From** check box and then select the transfer site from the drop-down list. If you select a PeSIT transfer site, you can select a **Transfer Profile** from the list or leave the field empty to use the default PeSIT transfer profile. For more information, see [Transfer sites](../../../accounts/transfersites#AccountsMenu_2253641766_1248932).  
     The *Schedule* pane and the **Retrieve Files Now** button are displayed.  
     If subscription retrieves files from a Folder Monitor transfer site, to configure a scheduled Folder Monitor operation, you must select **Set explicit FolderMonitor Schedule**.
 
@@ -220,9 +220,9 @@ To complete the {{< SecureTransport/advancedrouting  >}} subscription, click **A
 
 **Related topics:**
 
--   <a href="../t_st_create_delegated_administrator" class="MCXref xref">Advanced Routing delegated administrator</a>
--   <a href="../t_st_create_user_accounts" class="MCXref xref">Create user accounts</a>
--   <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>
--   <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
--   <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>
--   <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>
+-   [Advanced Routing delegated administrator](../t_st_create_delegated_administrator)
+-   [Create user accounts](../t_st_create_user_accounts)
+-   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
+-   [Manage Route Package Templates](../t_st_manage_route_package_templates)
+-   [Manage Routes](../t_st_manage_routes)
+-   [Assign Route Package Template](../t_st_assign_route_package_template)

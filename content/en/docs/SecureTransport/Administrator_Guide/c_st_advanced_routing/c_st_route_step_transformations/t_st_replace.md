@@ -56,26 +56,26 @@ To add a Characters Replace transformation step to a Route Package Template take
 
 The following topics provide configuration details for the Replace transformation step:
 
--   <a href="#File" class="MCXref xref">Input Files</a>
--   <a href="#Proceed" class="MCXref xref">Proceed with route execution on step failure</a>
--   <a href="#Find/Rep" class="MCXref xref">Find/Replace mode</a>
--   <a href="#Find/Lin" class="MCXref xref">Find/Line strip</a>
--   <a href="#File2" class="MCXref xref">File encoding</a>
--   <a href="#Post" class="MCXref xref">Post transformation action</a>
+-   [Input Files](#File)
+-   [Proceed with route execution on step failure](#Proceed)
+-   [Find/Replace mode](#Find/Rep)
+-   [Find/Line strip](#Find/Lin)
+-   [File encoding](#File2)
+-   [Post transformation action](#Post)
 
 **Related topics:**
 
--   <a href="../t_st_pgp_encryption" class="MCXref xref">PGP Encryption</a>
--   <a href="../t_st_pgp_decryption" class="MCXref xref">PGP Decryption</a>
--   <a href="../t_st_compress" class="MCXref xref">Compress</a>
--   <a href="../t_st_decompress" class="MCXref xref">Decompress</a>
--   <a href="../t_st_line_ending" class="MCXref xref">Line Ending</a>
--   <a href="../t_st_external_script" class="MCXref xref">External Script</a>
--   <a href="../t_st_charset_conversion" class="MCXref xref">Encoding Conversion</a>
--   <a href="../t_st_line_padding" class="MCXref xref">Line Padding</a>
--   <a href="../t_st_file_folding" class="MCXref xref">Line Folding</a>
--   <a href="../t_st_line_truncating" class="MCXref xref">Line Truncating</a>
--   <a href="../t_st_rename" class="MCXref xref">Rename</a>
+-   [PGP Encryption](../t_st_pgp_encryption)
+-   [PGP Decryption](../t_st_pgp_decryption)
+-   [Compress](../t_st_compress)
+-   [Decompress](../t_st_decompress)
+-   [Line Ending](../t_st_line_ending)
+-   [External Script](../t_st_external_script)
+-   [Encoding Conversion](../t_st_charset_conversion)
+-   [Line Padding](../t_st_line_padding)
+-   [Line Folding](../t_st_file_folding)
+-   [Line Truncating](../t_st_line_truncating)
+-   [Rename](../t_st_rename)
 
 <span id="File"></span>
 
@@ -197,4 +197,4 @@ Encoding of the file that will be produced specified by the name of a {{< Secure
 
 ## Post transformation action
 
-The output file names will be the same as the input file names. To change the file names use a Rename transformation step. To configure a Rename transformation step, refer to <a href="../t_st_rename" class="MCXref xref">Rename</a>.
+The output file names will be the same as the input file names. To change the file names use a Rename transformation step. To configure a Rename transformation step, refer to [Rename](../t_st_rename).

@@ -4,7 +4,7 @@
     "weight": "340"
 }This topic describes how to configure the environment for a directory
 type exit. Before you submit a directory type EXIT, you must customize
-the following <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> objects:
+the following {{< TransferCFT/componentshortname  >}} objects:
 
 -   [CFTPROT](#Defining_the_CFTPROT_object)
     defines both the application protocol type and profile
@@ -15,7 +15,7 @@ Each CFTEXIT object corresponds to an EXIT task. The number of EXIT
 tasks of all types simultaneously active is limited to a number depending
 on the operating system.
 
-EXIT type directory tasks are activated in memory when <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+EXIT type directory tasks are activated in memory when {{< TransferCFT/componentshortname  >}}
 is started and de-activated when the monitor is shut down.
 
 <span id="Defining_the_CFTPROT_object"></span>
@@ -96,7 +96,7 @@ the EXITA parameter of the related CFTPROT object.
 Optional parameter. Indicates the format
 for the communication area.
 
--   <span style="font-weight: bold;">V23 </span>(Default value)
+-   **V23** (Default value)
 -   <span style="font-weight: bold;">V24</span>
 
 **\[[LANGUAGE](../../../../c_intro_userinterfaces/command_summary/parameter_intro/language)

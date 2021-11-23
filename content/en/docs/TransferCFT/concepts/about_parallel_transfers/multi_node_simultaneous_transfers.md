@@ -19,15 +19,13 @@ See also <a href="../" class="MCXref xref">Configure simultaneous transfers</a>.
 
 ## Session parameters
 
-You can use the CNXIN, CNXOUT, and CNXINOUT parameters in CFTTCP to define the number of sessions. The formulas in this section apply equally to both a multi-node to multi-node configuration, and to a multi-node to standalone configuration, where the standalone installation has (<span class="code">nb\_nodes=1</span>) and the multi-node has (<span class="code">nb\_nodes=nodes</span>).
+You can use the CNXIN, CNXOUT, and CNXINOUT parameters in CFTTCP to define the number of sessions. The formulas in this section apply equally to both a multi-node to multi-node configuration, and to a multi-node to standalone configuration, where the standalone installation has (`nb_nodes=1`) and the multi-node has (`nb_nodes=nodes`).
 
 In the following example, the formulas calculate optimal values to help you avoid connection errors (such as [DIAGI 418](../../../troubleshoot_intro/messages_and_error_codes_start_here/diagi_diagnostic_codes)):
 
-<span style="font-family: 'Courier New';">CNXIN</span><sub>(local)</sub><span style="font-family: 'Courier New';"> = CNXOUT</span><sub>(remote)</sub><span style="font-family: 'Courier New';"> \* nb\_nodes</span><sub>(remote)</sub>
+<sub>(local)(remote)(remote)</sub>
 
-<span style="font-family: 'Courier New';">CNXOUT<sub>(local)</sub> = CNXIN<sub>(remote)</sub> / nb\_nodes<sub>(local)</sub></span>
-
-<span style="font-family: 'Courier New';">CNXINOUT = CNXIN + CNXOUT</span> (you can use this value to limit resource usage, that is, a value less than the sum of CNXIN + CNXOUT)
+(you can use this value to limit resource usage, that is, a value less than the sum of CNXIN + CNXOUT)
 
 You can reverse the formula for the remote Transfer CFT.
 

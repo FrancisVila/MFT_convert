@@ -8,7 +8,7 @@
 
 #### CFTSSL
 
-<span style="font-weight: bold;">\[ INTERCID = string \]</span>
+**\[ INTERCID = string \]**
 
  
 

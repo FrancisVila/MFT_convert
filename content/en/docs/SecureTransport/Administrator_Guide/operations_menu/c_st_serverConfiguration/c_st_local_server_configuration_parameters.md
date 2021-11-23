@@ -6,7 +6,7 @@
 
 **Related topics:**
 
--   <a href="../c_st_editable_server_configuration_parameters" class="MCXref xref">Editable server configuration parameters</a>
--   <a href="../t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>
--   <a href="../t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>
--   <a href="../t_st_serverconfigurationexportimport" class="MCXref xref">Export and import server configuration</a>
+-   [Editable server configuration parameters](../c_st_editable_server_configuration_parameters)
+-   [View and change server configuration parameters](../t_st_serverconfigurationparameters)
+-   [Update configuration files](../t_st_serverconfigurationfiles)
+-   [Export and import server configuration](../t_st_serverconfigurationexportimport)

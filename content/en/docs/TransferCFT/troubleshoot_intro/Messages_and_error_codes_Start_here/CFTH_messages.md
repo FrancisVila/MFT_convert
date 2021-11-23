@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -34,7 +34,7 @@ CS=&amp;scs</p>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>In REQUESTER mode, the transfer is refused with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>In REQUESTER mode, the transfer is refused with a {{< TransferCFT/componentshortname  >}}
 122 diagnostic code and a MALLOC protocol diagnostic message.</p>
 <p>In SERVER
 mode, the incoming call is rejected. In this case, as the partner's name
@@ -63,7 +63,7 @@ between the PROTOCOL task and the FILE task.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>In REQUESTER mode, the transfer is refused with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+         <td><p>In REQUESTER mode, the transfer is refused with a {{< TransferCFT/componentshortname  >}}
 122 code and a MALLOC protocol diagnostic message.</p>
 <p>In SERVER mode, the incoming call is rejected. In this
 case, as the partner's name is not known, the value UNKNOWN
@@ -90,7 +90,7 @@ Error sending data on network NCR=&amp;ncr NCS=&amp;ncs NET=&amp;net</p>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>The transfer is interrupted with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 302 code
+         <td><p>The transfer is interrupted with a {{< TransferCFT/componentshortname  >}} 302 code
 and a protocol diagnostic message indicating the specific error code of
 the error that occurred during the send request. This code is expressed
 in hexadecimal.</p>         </td>
@@ -223,7 +223,7 @@ CR=&amp;cr CS=&amp;scs</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Problem encountered when sending a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal
+         <td><p>Problem encountered when sending a {{< TransferCFT/componentshortname  >}} internal
 message to the FILE task.</p>         </td>
       </tr>
       <tr>
@@ -275,7 +275,7 @@ error NCR=&amp;ncr NCS=&amp;ncs</p>
          <td><p>Explanation</p>         </td>
          <td><p>Cannot make an outgoing connection request on the network.
 For a general -6 code (maximum number of connections reached on the resource),
-the transfer is refused with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 416 diagnostic code and a
+the transfer is refused with a {{< TransferCFT/componentshortname  >}} 416 diagnostic code and a
 MAXCNX protocol diagnostic message.</p>
 <p>The transfer will be retried (minimum time-out equal to
 the WSCAN parameter of the CFTCAT command), without incrementing the retry
@@ -331,7 +331,7 @@ establishing the network session.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The transfer
-is aborted with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 451 diagnostic code.</p>         </td>
+is aborted with a {{< TransferCFT/componentshortname  >}} 451 diagnostic code.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -778,7 +778,7 @@ CR=&amp;cr CS=&amp;scs</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal synchronization error.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} internal synchronization error.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -800,9 +800,9 @@ CR=&amp;cr CS=&amp;scs</p>
 <ul>
 <li>addr: The caller's IP address</li>
 </ul>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> refuses to open a protocol session following
+<p>{{< TransferCFT/componentshortname  >}} refuses to open a protocol session following
 a request to do so from a partner.</p>
-<p>The message displays the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+<p>The message displays the {{< TransferCFT/componentshortname  >}}
 diagnostic code.</p>         </td>
       </tr>
       <tr>
@@ -826,7 +826,7 @@ the catalog.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> refuses to open a protocol session for internal
+         <td><p>{{< TransferCFT/componentshortname  >}} refuses to open a protocol session for internal
 reasons, following a request to do so from a partner. The event which
 caused this rejection is displayed in the message.</p>         </td>
       </tr>
@@ -1013,7 +1013,7 @@ the session.</p>         </td>
       <tr>
          <td><p>Consequence</p>         </td>
          <td><p>The transfer
-is aborted with a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 730 diagnostic code, a protocol violation.</p>         </td>
+is aborted with a {{< TransferCFT/componentshortname  >}} 730 diagnostic code, a protocol violation.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -1169,12 +1169,12 @@ string:</p>
 <ul>
 <li>Byte count mismatch
 n for n: The number of bytes transferred does not correspond
-to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>-maintained counter</li>
+to the {{< TransferCFT/componentshortname  >}}-maintained counter</li>
 </ul>
 <ul>
 <li>Record count
 mismatch n for n: The number of records transferred does not correspond
-to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>-maintained counter</li>
+to the {{< TransferCFT/componentshortname  >}}-maintained counter</li>
 </ul>
 <ul>
 <li>Mismatch between
@@ -2580,7 +2580,7 @@ reference in the second message is the public transfer reference.</p>         </
 session referred to by the IDS. The IDS is the reference for this particular session context.</p>
 <p>The T field indicates the armed time-out for the CFTPROT parameter:</p>
 <ul>
-<li>disctd – requester mode, <span class="italic_in_para">or</span></li>
+<li>disctd – requester mode,</li>
 <li>discts – server mode</li>
 </ul>         </td>
       </tr>
@@ -2736,10 +2736,10 @@ This message follows message CFTH56I, where the IDS is the session call id.</p>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Support for permanent links in DMZ.</p>
-<p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in DMZ does not give the TURN when there are
+<p>{{< TransferCFT/componentshortname  >}} in DMZ does not give the TURN when there are
 no more files to send, but sends
 an FPDU Control Call to the initiator
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> at regular negotiated intervals to prevent the temporization from expiring.</p>
+{{< TransferCFT/componentshortname  >}} at regular negotiated intervals to prevent the temporization from expiring.</p>
 <ul>
 <li>&amp;ids = Session call id</li>
 <li>&amp;call = interval for the DMZ control call</li>

@@ -10,7 +10,7 @@ When installing a Transfer CFT multi-node architecture in Windows, the user perf
 
 -   Be a domain user who is part of the Administrators group.
 -   Be the same user for all machines.
--   Have all rights (create/modify/delete) to the shared disk on all machines when <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> is installed in a multi-host architecture.
+-   Have all rights (create/modify/delete) to the shared disk on all machines when {{< TransferCFT/componentlongname >}} is installed in a multi-host architecture.
 
 > **Note:**
 >
@@ -38,7 +38,7 @@ Shared directory
 
 This is the path and name of the directory where you want to create a shared directory for the cluster installation. The shared directory is used to store product data files.
 
-*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format<span class="code"> \\\\server\\sharename.</span>
+*Windows only* - When installing a Windows multi-host Transfer CFT architecture, we recommend that you use UNC notation, which defines the path to a shared folder using the format` \\server\sharename.`
 
 > **Note:**
 >
@@ -52,7 +52,7 @@ The path and name of the local directory where you want to install the first clu
 
 ### License keys
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
+{{< TransferCFT/componentshortname  >}} in multi-node architecture requires a shared file system for use of a multi-node architecture on several hosts (active/active). Additionally, the system must be configured prior to the multi-node installation and the shared disk ready when starting the Copilot server.
 
 > **Note:**
 >
@@ -67,7 +67,7 @@ Additionally, the key must have the cluster option.
 
 ### Download and uncompress
 
-Download and unzip the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> install package, as described in <a href="../../../unix_install_start_here/before_you_start_unix" class="MCXref xref">Install Transfer CFT</a>.
+Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as described in <a href="../../../unix_install_start_here/before_you_start_unix" class="MCXref xref">Install Transfer CFT</a>.
 
 ### Customize
 
@@ -116,11 +116,11 @@ balancer to connect to the Transfer CFT Copilot server.</p>         </td>
 ## Installation overview
 
 1.  Start the installation.
-2.  Transfer\_CFT\_<span class="mc-variable axway_variables.Release_Number variable">3.9</span>\_Install\_win-x86-64\_BNXXXXXXXX.exe/bat
-3.  ./Transfer\_CFT\_<span class="mc-variable axway_variables.Release_Number variable">3.9</span>\_Install\_&lt;OS>\_&lt;BN>.run
+2.  Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_win-x86-64\_BNXXXXXXXX.exe/bat
+3.  ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_&lt;OS>\_&lt;BN>.run
 4.  In the Installation Architecture screen, select **Cluster - first host**.
 5.  Complete the installation.
-6.  To add a host to create a multi-host, multi-node installation, run the install <span class="code">exe/bat</span> again. This time select **Cluster - Additional host**.
+6.  To add a host to create a multi-host, multi-node installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
 After installation, but before you can use the cluster installation, you must configure the high-availability operations. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
 
@@ -141,7 +141,7 @@ In the silent file (initialize.properties), you can use the same other definitio
 
 ## Commands
 
-See the [Multi-node commands and management](../../../../about_multinode/multi_node_commands) section for details on using <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> commands and cluster management.
+See the [Multi-node commands and management](../../../../about_multinode/multi_node_commands) section for details on using {{< TransferCFT/transfercftname  >}} commands and cluster management.
 
 ## Troubleshooting
 
@@ -159,4 +159,4 @@ Transfer CFT is a cluster-unaware application. However, you can integrate Transf
 
 ### License key
 
-The Transfer CFT license key refers to a specific machine, and is based on the machine's hostname. To allow Transfer CFT to start on both cluster nodes, you need one license key per node. Enter the two license keys in the <span class="code">%CFTKEY%</span> file located on the shared disk, one key per line.
+The Transfer CFT license key refers to a specific machine, and is based on the machine's hostname. To allow Transfer CFT to start on both cluster nodes, you need one license key per node. Enter the two license keys in the `%CFTKEY%` file located on the shared disk, one key per line.

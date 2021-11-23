@@ -23,9 +23,9 @@ The Inherited Settings have a higher priority than the Specific Settings.
 
 **Related topics:**
 
--   <a href="../c_st_chain_of_route_execution" class="MCXref xref">Chain of route execution</a>
--   <a href="../c_st_skipped_transformation" class="MCXref xref">Skipped transformation</a>
--   <a href="../c_st_transformation_on_multiple_files" class="MCXref xref">Transformation on multiple files</a>
--   <a href="../c_st_route_failure" class="MCXref xref">Route failure</a>
--   <a href="" class="MCXref xref">Transformed file as the input to the next step</a>
--   <a href="../c_st_routing_to_multiple_transfer_sites" class="MCXref xref">Routing to multiple transfer sites</a>
+-   [Chain of route execution](../c_st_chain_of_route_execution)
+-   [Skipped transformation](../c_st_skipped_transformation)
+-   [Transformation on multiple files](../c_st_transformation_on_multiple_files)
+-   [Route failure](../c_st_route_failure)
+-   [Transformed file as the input to the next step]()
+-   [Routing to multiple transfer sites](../c_st_routing_to_multiple_transfer_sites)

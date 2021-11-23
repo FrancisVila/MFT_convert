@@ -2,7 +2,7 @@
     "title": "Sun  cluster service configuration",
     "linkTitle": "Sun cluster service configuration",
     "weight": "260"
-}This topic describes the Transfer CFT Sun cluster service configuration parameters and resource controls. To integrate Transfer CFT with Sun cluster, use the <span class="code">SCRGADM </span>command to
+}This topic describes the Transfer CFT Sun cluster service configuration parameters and resource controls. To integrate Transfer CFT with Sun cluster, use the `SCRGADM `command to
 record and remove resources.
 
 ## About the scrgadm command
@@ -49,7 +49,7 @@ Enter the command:
 
 ### Transfer CFT resources group
 
-All resources are included in the same group, named <span class="code">CFT-rg</span>:
+All resources are included in the same group, named `CFT-rg`:
 
 scrgadm –a –g CFT-rg
 

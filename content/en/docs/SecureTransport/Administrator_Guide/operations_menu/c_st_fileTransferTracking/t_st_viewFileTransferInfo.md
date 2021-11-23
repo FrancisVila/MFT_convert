@@ -4,12 +4,12 @@
     "weight": "140"
 }Use the *File Tracking* page to search for file tracking information and view information about the file transfers.
 
--   <a href="#View" class="MCXref xref">View and export log statistics about transferred files</a>
--   <a href="#Search" class="MCXref xref">Search file tracking information</a>
--   <a href="#View2" class="MCXref xref">View MDN receipt information about a transfer</a>
--   <a href="#View3" class="MCXref xref">View detailed information about a file transfer</a>
--   <a href="#View4" class="MCXref xref">View transfer history of a file</a>
--   <a href="#View5" class="MCXref xref">View detailed information about an AR execution</a>
+-   [View and export log statistics about transferred files](#View)
+-   [Search file tracking information](#Search)
+-   [View MDN receipt information about a transfer](#View2)
+-   [View detailed information about a file transfer](#View3)
+-   [View transfer history of a file](#View4)
+-   [View detailed information about an AR execution](#View5)
 
 <span id="View"></span>
 
@@ -57,7 +57,7 @@ Use the following procedure to view MDN receipt information.
 
 1.  Select **Operations > File Tracking**.  
     The *File Tracking* page is displayed.
-2.  Click the MDN receipt icon for a specific transfer. An MDN receipt icon is displayed only when a receipt for the transfer is available in the system and the transfer was successful. To enable MDN receipts, see <a href="../../../c_st_setup/c_st_certificates/r_st_certificatestogenerate#SetupMenu_1217491348_1023232" class="MCXref xref">Certificates to generate during initial setup</a>.  
+2.  Click the MDN receipt icon for a specific transfer. An MDN receipt icon is displayed only when a receipt for the transfer is available in the system and the transfer was successful. To enable MDN receipts, see [Certificates to generate during initial setup](../../../c_st_setup/c_st_certificates/r_st_certificatestogenerate#SetupMenu_1217491348_1023232).  
     The *MDN Receipt* dialog box is displayed. You can either view the MDN receipt or click **Verify** to view the MDN signature and file integrity check results. Clicking **Close** returns you to the *File Tracking* page.
 
 <span id="View3"></span>
@@ -159,7 +159,7 @@ Use the following procedure to view detailed status information about an advance
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Resubmit status</a>
--   <a href="../r_st_transfer_status" class="MCXref xref">Transfer status</a>
--   <a href="../t_st_filetransfers" class="MCXref xref">Manage file transfers</a>
--   <a href="../r_st_transferlogmaint" class="MCXref xref">Transfer Log Maintenance application</a>
+-   [Resubmit status]()
+-   [Transfer status](../r_st_transfer_status)
+-   [Manage file transfers](../t_st_filetransfers)
+-   [Transfer Log Maintenance application](../r_st_transferlogmaint)

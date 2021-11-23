@@ -12,26 +12,26 @@ README.TXT file or the Release Notes supplied with the product. The README.TXT f
 
 ## Product presentation
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can operate both as client and/or as server. The
-number of simultaneous transfers that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can support
+{{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
+number of simultaneous transfers that {{< TransferCFT/componentshortname  >}} can support
 is defined by the license key. It is also limited by the properties of
 the networks used. The TCP/IP network is supported.
 
-## Installing <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> for Unix
+## Installing {{< TransferCFT/componentshortname  >}} for Unix
 
-The installation section describes prerequisites and how to install, migrate, update and uninstal<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+The installation section describes prerequisites and how to install, migrate, update and uninstal{{< TransferCFT/componentshortname  >}}.
 
 -   [Prerequisites](before_you_start_unix/prereqs_overview)
 -   [Start the installation](../windows_install_start_here/before_you_start_win/install_transfer_cft_1)
 
 ## UNIX operations
 
--   [<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+-   [{{< TransferCFT/componentshortname >}}
     UNIX utilities](run_first_time_ux/use_cft_utilities)
 -   Running
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> for the first time
+    {{< TransferCFT/componentshortname >}} for the first time
 -   [Building
-    <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> API applications](run_first_time_ux/api_applications_start_here)
+    {{< TransferCFT/componentshortname >}} API applications](run_first_time_ux/api_applications_start_here)
 -   [Activating
     security]()
 -   [Specific

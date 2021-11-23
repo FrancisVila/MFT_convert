@@ -8,7 +8,7 @@
 
 #### CFTPARM
 
-fbufsize = \[0 | n \] <span style="font-weight: normal;">  {<u>0</u>...65535}</span>
+fbufsize = \[0 | n \]
 
 Size of CFTTFIL buffer used for interprocess communication, where the default value 0 means it is calculated internally.
 

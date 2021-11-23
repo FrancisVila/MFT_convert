@@ -2,7 +2,7 @@
     "title": "Update Transfer CFT",
     "linkTitle": "Update Transfer CFT",
     "weight": "160"
-}This section describes how to update Transfer CFT with a patch or service pack. You can manually perform the operation, or use <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+}This section describes how to update Transfer CFT with a patch or service pack. You can manually perform the operation, or use {{< TransferCFT/centralgovernancename  >}}.
 
 ## Download the update file
 
@@ -12,20 +12,20 @@ Download product updates from the [Axway support website](https://support.axway.
 
 When you install a service pack, the contents of the home directory are updated, but the runtime directory remains untouched. This is so that your customizations, such as APIs, are not overwritten.
 
-## Use <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> for updates
+## Use for updates
 
-You can easily perform <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> updates and apply Service Packs using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. Please see the Central Governance documentation for details. Because Central Governance can manage all update operations in a centralized fashion (without intervention on the Transfer CFT side), there is no need to stop the product components on the Transfer CFT machine.
+You can easily perform {{< TransferCFT/transfercftname  >}} updates and apply Service Packs using {{< TransferCFT/centralgovernancename  >}}. Please see the Central Governance documentation for details. Because Central Governance can manage all update operations in a centralized fashion (without intervention on the Transfer CFT side), there is no need to stop the product components on the Transfer CFT machine.
 
-Note that from the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> interface you cannot:
+Note that from the interface you cannot:
 
 -   Remove service packs or patches.
--   Update <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>s installed in multi-node/multi-hosts from <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+-   Update {{< TransferCFT/componentlongname >}}s installed in multi-node/multi-hosts from .
 
 <span id="Install"></span>
 
 ## Install a standard update
 
-Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> prior to installing a service pack or patch.
+Stop {{< TransferCFT/componentshortname  >}} prior to installing a service pack or patch.
 
 ### Update in silent mode
 
@@ -46,7 +46,7 @@ Use the following command to update Transfer CFT in text mode:
 
 This section describes uninstalling a patch or service pack.
 
-To uninstall install the previous patch or service pack. For example, to remove Transfer CFT 3.6 SP2, from the Transfer CFT 3.6 SP1 kit, run the installation pointing to the Transfer CFT 3.6 SP2 installation directory. The installer detects and replaces the SP2 content, impacting only the <span class="code">home </span>directory.
+To uninstall install the previous patch or service pack. For example, to remove Transfer CFT 3.6 SP2, from the Transfer CFT 3.6 SP1 kit, run the installation pointing to the Transfer CFT 3.6 SP2 installation directory. The installer detects and replaces the SP2 content, impacting only the `home `directory.
 
 **Example**
 
@@ -54,7 +54,7 @@ To uninstall install the previous patch or service pack. For example, to remove 
 
     ./Transfer_CFT_3.6_SP1_<OS>_<BN>.run --mode text
 
-To verify, from the Transfer CFT &lt;runtime\_dir> run the <span class="code">about </span>command.
+To verify, from the Transfer CFT &lt;runtime\_dir> run the `about `command.
 
 ## Install patches and service packs in a multi-node, multiple host environment
 
@@ -65,9 +65,9 @@ This section describes the procedure to apply a patch or service pack on a multi
 > Transfer CFT clusters can still run while performing an update.
 
 1.  Connect to the first host.
-2.  Stop all nodes running on this host by running the command: <span class="code">copstop</span>  
+2.  Stop all nodes running on this host by running the command: `copstop`  
     Copilot services are stopped, and local nodes are automatically re-started on the other hosts.
-3.  Check that the nodes are re-started by using the command: <span class="code">CFTUTIL listnode</span>
-4.  Install the patch or the service pack as usual using <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> installer as described in [Install a standard update](#Install).
+3.  Check that the nodes are re-started by using the command: `CFTUTIL listnode`
+4.  Install the patch or the service pack as usual using {{< TransferCFT/transfercftname >}} installer as described in [Install a standard update](#Install).
 5.  Start Copilot services.
-6.  Connect to the next host and repeat the procedure starting at of <span class="bold_in_para">Step 2</span> (above).
+6.  Connect to the next host and repeat the procedure starting at of **Step 2** (above).

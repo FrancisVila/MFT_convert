@@ -11,14 +11,14 @@ The server suspend option only applies to the HTTP and FTP servers.
 
 The following topics provide how-to instructions for scheduling server suspensions and immediately suspending the server:
 
--   <a href="#Schedule" class="MCXref xref">Schedule server suspensions</a>
--   <a href="#Shutdown" class="MCXref xref">Suspend now</a>
+-   [Schedule server suspensions](#Schedule)
+-   [Suspend now](#Shutdown)
 
 **Related topics:**
 
--   <a href="../t_st_miscellaneousoptions" class="MCXref xref">Miscellaneous options</a>
--   <a href="../t_st_smtpconfiguration" class="MCXref xref">SMTP configuration</a>
--   <a href="../t_st_passwordpolicy" class="MCXref xref">Password policy</a>
+-   [Miscellaneous options](../t_st_miscellaneousoptions)
+-   [SMTP configuration](../t_st_smtpconfiguration)
+-   [Password policy](../t_st_passwordpolicy)
 
 <span id="Schedule"></span>
 

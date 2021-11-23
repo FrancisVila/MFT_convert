@@ -10,8 +10,8 @@ group name from the GID in the user account.
 
 The following topics provide how-to instructions for managing user and group access:
 
--   <a href="#Add" class="MCXref xref">Add a user or group to the denied list</a>
--   <a href="#Remove" class="MCXref xref">Remove users or groups from the denied list</a>
+-   [Add a user or group to the denied list](#Add)
+-   [Remove users or groups from the denied list](#Remove)
 
 <span id="Add"></span>
 

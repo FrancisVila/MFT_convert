@@ -2,23 +2,23 @@
     "title": "Managing TLS Security Profiles (command line)",
     "linkTitle": "Managing TLS Security Profiles (command line)",
     "weight": "250"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-[<span class="code" style="font-weight: bold;">secadm create\_sprof</span>](#secadm_create_sprof)
+[`secadm create_sprof`](#secadm_create_sprof)
 
-[<span class="code" style="font-weight: bold;">secadm update\_sprof</span>](#secadm_update_sprof)
+[`secadm update_sprof`](#secadm_update_sprof)
 
-[<span class="code" style="font-weight: bold;">secadm import\_sprof</span>](#secadm_import_sprof)
+[`secadm import_sprof`](#secadm_import_sprof)
 
-[<span class="code" style="font-weight: bold;">secadm delete\_sprof</span>](#secadm_delete_sprof)
+[`secadm delete_sprof`](#secadm_delete_sprof)
 
-[<span class="code" style="font-weight: bold;">secdsp display\_sprof</span>](#secdsp_display_sprof)
+[`secdsp display_sprof`](#secdsp_display_sprof)
 
-[<span class="code" style="font-weight: bold;">secdsp select\_sprof</span>](#secdsp_select_sprof)
+[`secdsp select_sprof`](#secdsp_select_sprof)
 
-[<span class="code" style="font-weight: bold;">secdsp status\_sprof</span>](#secdsp_status_sprof)
+[`secdsp status_sprof`](#secdsp_status_sprof)
 
-[<span class="code" style="font-weight: bold;">secbase export\_sprof</span>](#secbase_export_sprof)
+[`secbase export_sprof`](#secbase_export_sprof)
 
 [TLS Profile file format](#TLS_Profile_file_format)
 
@@ -43,7 +43,7 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sprof_name (-spn)</span>: Enter the name of the TLS profile to create.</p>
+<p><code>-sprof_name (-spn)</code>: Enter the name of the TLS profile to create.</p>
 <p><strong>Note</strong>: although specifying the TLS versions is not mandatory, it is highly recommended that you do it. A TLS profile without the accepted TLS versions specified is not usable.</p>
 <p><strong>Note</strong>: to get the complete parameters list, execute the command :<br />
 <strong>secadm create_sprof ?</strong></p>         </td>
@@ -51,7 +51,7 @@
       <tr>
          <td>          </td>
          <td><p>Optional</p>
-<p><span class="code">-sprof_ciph_suites</span> (<span class="code">-spcsu</span>) : enter a comma-separated string list of up to 32 cypher suites to secure the connection.</p>         </td>
+<p><code>-sprof_ciph_suites</code> (<code>-spcsu</code>) : enter a comma-separated string list of up to 32 cypher suites to secure the connection.</p>         </td>
       </tr>
       <tr>
          <td><p><strong>Example</strong></p>         </td>
@@ -83,8 +83,8 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sprof_name (-spn)</span>: Enter the name of the file that contains the TLS Profile to import.</p>
-<p><span style="font-weight: bold;">Note:</span> The name of the TLS Profile cannot be changed.</p>
+<p><code>-sprof_name (-spn)</code>: Enter the name of the file that contains the TLS Profile to import.</p>
+<p><strong>Note:</strong> The name of the TLS Profile cannot be changed.</p>
 <p><span style="font-weight: bold;">Note:</span> To get the complete parameters list, execute the command:<br />
 <span class="code" style="font-weight: bold;">secadm update_sprof ?</span></p>         </td>
       </tr>

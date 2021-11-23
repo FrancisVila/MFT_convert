@@ -4,7 +4,7 @@
     "weight": "310"
 }The Standard Router application provides basic options to automate flows for file transformations, routing and transfers between an account and internal systems.
 
-You must enable the `StandardRouter` rules package in the Transaction Manager before you can use a Standard Router application. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
+You must enable the `StandardRouter` rules package in the Transaction Manager before you can use a Standard Router application. For more information, see [Manage rules packages](../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable).
 
 Use the following procedure to create a Standard Router application.
 
@@ -26,18 +26,18 @@ When a Standard Router application is used, a file integrity check of receipts g
 
 2.  Select **Standard Router** from the mandatory **Application Type** list.
 
-3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
+3.  Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).  
 
     > **Note:**
     >
     > The application name cannot include any forward slash (/) characters.
 
-4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have created. For details, see <a href="../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756" class="MCXref xref">Business units</a>.
+4.  (Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have created. For details, see [Business units](../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756).
 
 5.  (Optional) Enter an application **Description**.
 
 6.  (Optional) Select **Allow Subscribers to Submit files in this Application** to permit incoming file transfers from the subscriber parties to the application. If you enable this option, continue specifying values for the parameters in the pane.
-    1.  In the **Submit folder** field, type the name of the folder where incoming transferred files are submitted via subscriptions. The application only processes files stored in the submit folder. Any files stored outside the submit folder are not routed for transferring. The submit folder is created as a sub-folder of the subscription folder. The subscription folder is specified during the creation of the respective subscription. For details, see <a href="../../accounts/transfersites" class="MCXref xref">Transfer sites</a>.
+    1.  In the **Submit folder** field, type the name of the folder where incoming transferred files are submitted via subscriptions. The application only processes files stored in the submit folder. Any files stored outside the submit folder are not routed for transferring. The submit folder is created as a sub-folder of the subscription folder. The subscription folder is specified during the creation of the respective subscription. For details, see [Transfer sites](../../accounts/transfersites).
     2.  In the **File Submission Settings** group, select the **Require Secure Connection for transfer** option to enable SSL for the incoming transfers.
     3.  In the **File Submission Settings** group, select the **Rename submitted files to include Subscriber ID** option to add a prefix to the file name identifying the sender before it is sent to the internal system. The subscriber ID is specified during the creation of the respective subscription.
     4.  Then, in the **New Filename** field, define the format of the new file name. By default, the file is renamed in the format `<ID> <FILENAME>` where, `<ID>` is the Subscriber ID specified when the subscription is created and `<FILENAME>` is the original name of the transferred file.
@@ -62,27 +62,27 @@ When a Standard Router application is used, a file integrity check of receipts g
     9.  In the **Routing Settings** group, specify a pattern in the **ID Pattern** box to define the ID of the subscriber to whom files are routed. By default, the pattern is `<ID>_<FILENAME>` where, `<ID>` is a regular expression corresponding to the Subscriber ID specified when the subscription is created and `<FILENAME>` is the original name of the transferred file.
     10. The use of the placeholders, `<ID>` and `<FILENAME>,` in the new file name format is mandatory.
 
-8.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+8.  (Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 
 9.  Click **Create Application**.
 
   
-See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow shortcuts to other applications you need to create or configure.
+See parent topic: [Applications](../) and follow shortcuts to other applications you need to create or configure.
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Manage applications</a>
--   <a href="../applicationsarchivemaintenance" class="MCXref xref">Archive Maintenance application</a>
--   <a href="../applicationsauditlogmaintenance" class="MCXref xref">Audit Log Maintenance application</a>
--   <a href="../applicationssentinellinkdatamaintenance" class="MCXref xref">Axway Sentinel Link Data Maintenance application</a>
--   <a href="../applicationstransfercft" class="MCXref xref">Axway Transfer CFT application</a>
--   <a href="../applicationsbasic" class="MCXref xref">Basic Application</a>
--   <a href="../applicationstransferfileservicesinterface" class="MCXref xref">File Transfer via File Services Interface application</a>
--   <a href="../applicationsh2s" class="MCXref xref">Human to System application</a>
--   <a href="../applicationslogentrymaintenance" class="MCXref xref">Log Entry Maintenance application</a>
--   <a href="../applicationsloginthresholdmaintenance" class="MCXref xref">Login Threshold Maintenance application</a>
--   <a href="../applicationspackageretentionmaintenance" class="MCXref xref">Package Retention Maintenance application</a>
--   <a href="../applicationssharedfolder" class="MCXref xref">Shared Folder application</a>
--   <a href="../applicationssitemailbox" class="MCXref xref">Site Mailbox application</a>
--   <a href="../applicationstransferlogmaintenance" class="MCXref xref">Transfer Log Maintenance application</a>
--   <a href="../applicationsunlicensedacctsmaintenance" class="MCXref xref">Unlicensed Accounts Maintenance application</a>
+-   [Manage applications]()
+-   [Archive Maintenance application](../applicationsarchivemaintenance)
+-   [Audit Log Maintenance application](../applicationsauditlogmaintenance)
+-   [Axway Sentinel Link Data Maintenance application](../applicationssentinellinkdatamaintenance)
+-   [Axway Transfer CFT application](../applicationstransfercft)
+-   [Basic Application](../applicationsbasic)
+-   [File Transfer via File Services Interface application](../applicationstransferfileservicesinterface)
+-   [Human to System application](../applicationsh2s)
+-   [Log Entry Maintenance application](../applicationslogentrymaintenance)
+-   [Login Threshold Maintenance application](../applicationsloginthresholdmaintenance)
+-   [Package Retention Maintenance application](../applicationspackageretentionmaintenance)
+-   [Shared Folder application](../applicationssharedfolder)
+-   [Site Mailbox application](../applicationssitemailbox)
+-   [Transfer Log Maintenance application](../applicationstransferlogmaintenance)
+-   [Unlicensed Accounts Maintenance application](../applicationsunlicensedacctsmaintenance)

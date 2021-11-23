@@ -4,7 +4,7 @@
     "weight": "1980"
 }<span id="minlch"></span>
 
-## <span class="mc-variable System.Title variable">minlch</span>
+## 
 
 #### CFTNET
 

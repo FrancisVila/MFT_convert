@@ -4,11 +4,11 @@
     "weight": "2400"
 }<span id="oct"></span>
 
-### <span class="mc-variable System.Title variable">oct</span>
+### 
 
 #### COPYFILE
 
-**<span style="font-weight: bold;">\[</span>**<span style="font-weight: bold;">| C},\] <u>H</u>{ = OCT</span>
+****\[****<span style="font-weight: bold;">| C},\] <u>H</u>{ = OCT</span>
 
 Type of output file data compression:
 

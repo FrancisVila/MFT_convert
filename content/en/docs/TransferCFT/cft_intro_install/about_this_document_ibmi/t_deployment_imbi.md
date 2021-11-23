@@ -2,19 +2,19 @@
     "title": "Create an Express Package",
     "linkTitle": "Create an Express Package",
     "weight": "180"
-}A product deployment package in Transfer CFT is called an Express Package. For the iSeries platform, you can create a deployment package for Transfer CFTs to be used with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, or for standalone Transfer CFTs.
+}A product deployment package in Transfer CFT is called an Express Package. For the iSeries platform, you can create a deployment package for Transfer CFTs to be used with {{< TransferCFT/centralgovernancename  >}}, or for standalone Transfer CFTs.
 
-This section describes how to create a reusable and distributable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> package to simplify and ease the task of installing and configuring <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s on multiple servers of the same architecture.
+This section describes how to create a reusable and distributable {{< TransferCFT/componentshortname  >}} package to simplify and ease the task of installing and configuring {{< TransferCFT/componentshortname  >}}s on multiple servers of the same architecture.
 
 > **Note:**
 >
 > You can only install a Transfer CFT Express Package on the same platform as the one on which it was generated.
 
-## Create a deployment package for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>s used with Central Governance
+## Create a deployment package for {{< TransferCFT/transfercftname  >}}s used with Central Governance
 
 Perform the following steps:
 
-1.  Create a user profile using the command: <span class="code">CRTUSRPRF</span>
+1.  Create a user profile using the command: `CRTUSRPRF`
 
 2.  Create a temporary library, for example:  
 
@@ -52,7 +52,7 @@ Perform the following steps:
 
 1.  Use Central Governance to deploy and configure your Transfer CFTs as needed.
 
-## Create a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> deployment package for standalone usage
+## Create a {{< TransferCFT/componentshortname  >}} deployment package for standalone usage
 
 In this procedure, you must first create a SAVF file that contains all of your necessary configurations for your deployment including:
 
@@ -70,7 +70,7 @@ In this procedure, you must first create a SAVF file that contains all of your n
 
 ### Procedure
 
-On the local machine where you have <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> installed:
+On the local machine where you have {{< TransferCFT/transfercftname  >}} installed:
 
 1.  Create a temporary library that will contain all the items you want to deploy, for example:  
 
@@ -90,7 +90,7 @@ On the local machine where you have <span class="mc-variable suite_variables.Tra
         2.  SAVLIB LIB(CFTCONF) DEV(*SAVF) SAVF(CFTCONF/CFTCONFSVF)
         3.  Get the CFTCONFSVF.savf (in binary mode)
 
-On the other machines, where you want to deploy <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>:
+On the other machines, where you want to deploy {{< TransferCFT/transfercftname  >}}:
 
 1.  Create a temporary library, for example:  
 

@@ -8,7 +8,7 @@
 
 #### CFTPART, CFTTCP
 
-\[IMAXTIME = { <span style="text-decoration: underline;">23595999</span>
+\[IMAXTIME = {
 | time }\]
 
 The maximum time of the authorized time slot for calls coming over this

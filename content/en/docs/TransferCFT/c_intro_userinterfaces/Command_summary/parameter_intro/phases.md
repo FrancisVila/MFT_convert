@@ -8,7 +8,7 @@ SWAITCAT
 
 \[ PHASES = { A | T | Y | Z | <u>X</u> } \]
 
-Where the string <span class="bold_in_para">sizemax= 5</span>.
+Where the string **sizemax= 5**.
 
 Possible values:
 

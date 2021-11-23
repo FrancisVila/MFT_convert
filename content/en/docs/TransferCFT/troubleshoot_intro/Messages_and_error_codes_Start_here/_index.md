@@ -2,19 +2,19 @@
     "title": "Transfer CFT messages  and error codes",
     "linkTitle": "Messages and error codes",
     "weight": "250"
-}This section lists the different types of messages that <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> generates, and corrective actions when applicable. It begins with this section, which describes message formats, severity, and additional conventions used in this documentation.
+}This section lists the different types of messages that {{< TransferCFT/componentlongname  >}} generates, and corrective actions when applicable. It begins with this section, which describes message formats, severity, and additional conventions used in this documentation.
 
 ## Message format
 
 ### Format in the documentation
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> messages provide information on the status of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. Messages have the general format and supporting information:
+{{< TransferCFT/componentshortname  >}} messages provide information on the status of the {{< TransferCFT/componentshortname  >}}. Messages have the general format and supporting information:
 
 <table>
    <thead>
       <tr>
 <th class="HeadE-Column1-Header1"><p>The message severity is displayed</p>         </th>
-<th class="HeadD-Column1-Header1"><p>CFTxxx: the actual message that is displayed on <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></p>         </th>
+<th class="HeadD-Column1-Header1"><p>CFTxxx: the actual message that is displayed on {{< TransferCFT/componentshortname  >}}</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -24,7 +24,7 @@
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p>Description of what happens to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, or lists corrective actions.</p>         </td>
+         <td><p>Description of what happens to the {{< TransferCFT/componentshortname  >}}, or lists corrective actions.</p>         </td>
       </tr>
       <tr>
          <td>Action         </td>
@@ -37,7 +37,7 @@
 
 ### Format in the product
 
-Earlier versions of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> used a different message format
+Earlier versions of {{< TransferCFT/componentshortname  >}} used a different message format
 than the version 3.1.3 and higher. The error messages displayed in this document use the former, or earlier version, format. If your system uses
 the CFTLOG parameter Format = V24,
 the log display is as shown below:
@@ -65,7 +65,7 @@ Messages are written according to the following conventions.
 
 ### Message description
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> messages use the format CFTxnns, for example CFTC01E. The elements that make up the message format are described in the following sections.
+The {{< TransferCFT/componentshortname  >}} messages use the format CFTxnns, for example CFTC01E. The elements that make up the message format are described in the following sections.
 
 Where:
 
@@ -90,7 +90,7 @@ Access to the catalog         </td>
       </tr>
       <tr>
          <td>E         </td>
-         <td>End: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> shutdown phase         </td>
+         <td>End: {{< TransferCFT/componentshortname  >}} shutdown phase         </td>
       </tr>
       <tr>
          <td>F         </td>
@@ -105,7 +105,7 @@ PeSIT protocol, non-SIT profile and CFT profile         </td>
       <tr>
          <td>I         </td>
          <td>Init:
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization phase         </td>
+{{< TransferCFT/componentshortname  >}} initialization phase         </td>
       </tr>
       <tr>
          <td>N         </td>
@@ -119,13 +119,13 @@ Access to parameter files</p>         </td>
       <tr>
          <td>R         </td>
          <td>Request:
-Requests that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> received  from CFTUTIL, applications, or interactive
+Requests that {{< TransferCFT/componentshortname  >}} received  from CFTUTIL, applications, or interactive
 functions         </td>
       </tr>
       <tr>
          <td>S         </td>
          <td>System:
-System interface operations by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>         </td>
+System interface operations by the {{< TransferCFT/componentshortname  >}}         </td>
       </tr>
       <tr>
          <td>T         </td>
@@ -308,7 +308,7 @@ Example: PART, DIRECT</p>         </td>
       </tr>
       <tr>
          <td><p>prot</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> protocol identifier (CFTPROT command)</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} protocol identifier (CFTPROT command)</p>         </td>
       </tr>
       <tr>
          <td><p>pevent</p>         </td>

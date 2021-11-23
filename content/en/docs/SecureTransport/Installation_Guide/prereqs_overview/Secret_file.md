@@ -10,4 +10,4 @@ For the second and subsequent servers of the cluster, you must copy the `taeh` f
 
 When you install {{< SecureTransport/componentshortname  >}} on a second node in a cluster using an appliance, you are prompted for the remote server credentials and location of the secret file. The other server must be an appliance with {{< SecureTransport/componentshortname  >}} installed and an OS-level SSH daemon running.
 
-For details, see <a href="#installation_3205816781_1041633" class="MCXref xref">General prerequisites</a>.
+For details, see [General prerequisites](#installation_3205816781_1041633).

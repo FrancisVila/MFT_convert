@@ -19,11 +19,11 @@ A single user restriction policy can be selected and set as the default policy. 
 
 Refer to the following topics to manage user accounts, account templates, and business units:
 
--   To manage user accounts, refer to <a href="../../accounts/useraccounts" class="MCXref xref">User accounts</a>
--   To manage account templates, refer to <a href="../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates" class="MCXref xref">Manage account templates</a>.
--   To manger business units, refer to <a href="" class="MCXref xref">Manage business units</a>.
+-   To manage user accounts, refer to [User accounts](../../accounts/useraccounts)
+-   To manage account templates, refer to [Manage account templates](../../c_st_advancedaccountadministration/c_st_accounttemplates/t_st_accounttemplates).
+-   To manger business units, refer to [Manage business units]().
 
 Refer to the following topics to manage login restrictions and create login restriction policies:
 
--   To manage Login Restriction Policies, refer to <a href="t_st_manloginrestictions" class="MCXref xref">Manage Login Restriction Policies</a>.
--   To mange Login Restriction Policy entries, refer to <a href="t_st_manloginrestictionpolicies" class="MCXref xref">Create Login Restriction Policy entries</a>.
+-   To manage Login Restriction Policies, refer to [Manage Login Restriction Policies](t_st_manloginrestictions).
+-   To mange Login Restriction Policy entries, refer to [Create Login Restriction Policy entries](t_st_manloginrestictionpolicies).

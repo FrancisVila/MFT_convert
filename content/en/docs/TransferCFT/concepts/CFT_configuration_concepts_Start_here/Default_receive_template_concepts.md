@@ -14,9 +14,6 @@ a file](#Receiving_a_File)
 [About
 the default CFTRECV object](#About_the_default_CFTRECV_object)
 
-<span style="color: #800000; font-weight: normal; text-decoration: none;">Related
-topics</span>
-
 -   Command syntax
     [CFTRECV](../../../c_intro_userinterfaces/command_summary#CFTRECV)
 -   Parameter list
@@ -45,7 +42,7 @@ parameters can be classified into categories:
 -   protection of the
     parameters set: FORCE
 -   free parameters
-    set locally by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user: COMMENT, OPERMSG, DELETE, NOTIFY
+    set locally by the {{< TransferCFT/componentshortname >}} user: COMMENT, OPERMSG, DELETE, NOTIFY
 -   execution control
     parameters:
 
@@ -89,7 +86,7 @@ the corresponding Fxxxxx parameters:
          <td><p>PeSIT E CFT/CFT</p>
 <p>PeSIT D CFT profile </p>         </td>
          <td><p>In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer
-between 2 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s), the default values taken by the FSPACE,
+between 2 {{< TransferCFT/componentshortname  >}}s), the default values taken by the FSPACE,
 FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the
 partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM
 parameters). For open mode operation, the FNAME parameter can also inherit
@@ -133,7 +130,7 @@ command, are used to supplement those indicated in the RECV command as
 required.
 
 Correspondence
-between the RECV file command and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter setting
+between the RECV file command and {{< TransferCFT/componentshortname  >}} parameter setting
 
 <img src="/Images/TransferCFT/Correspondence_between_RECV_and_parameter.gif" width="729" height="440" />
 
@@ -208,7 +205,7 @@ The CFTRECV command is used to specify, for each model file (IDF):
 
 The receiver file name and physical characteristics parameters are taken
 into account at each new receive transfer, at the start of the transfer.
-If <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is creating a new receiver file:
+If {{< TransferCFT/componentshortname  >}} is creating a new receiver file:
 
 -   these parameters,
     if explicitly defined, take precedence over the values extracted (or deduced)
@@ -231,11 +228,11 @@ The following precedence rule applies globally:
     the parameters of CFTRECV take precedence over those of RECV  
     These parameters themselves take precedence over the protocol values
     received which themselves take precedence over any default file characteristics
-    provided for within some systems, independently of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter
+    provided for within some systems, independently of the {{< TransferCFT/componentshortname >}} parameter
     setting.
 -   Where an already
     existing file is reused to receive the data of a new transfer, it is generally
-    not possible to take new file characteristics into account: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>’s
+    not possible to take new file characteristics into account: {{< TransferCFT/componentshortname >}}’s
     "standard" behavior then simply involves checking that the new
     values are compatible with the existing ones.
 -   If data is stored

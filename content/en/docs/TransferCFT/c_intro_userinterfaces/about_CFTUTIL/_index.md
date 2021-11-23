@@ -191,7 +191,7 @@ CFTUTIL can be used in three different modes:
 
 ## Use the help command
 
-The <span class="code">help </span>command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter <span class="code">help </span> to list available commands.
+The `help `command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter `help ` to list available commands.
 
 
 
@@ -205,7 +205,7 @@ The <span class="code">help </span>command enables you to get more information o
     CFTDEST    CFTETB     CFTEXIT    CFTEXT     GETDICT    CFTFILE    CFTIDF
     ....
 
-To get help for a specific command, use <span class="code">cmd=&lt;command></span>:
+To get help for a specific command, use `cmd=<command>`:
 
 
 
@@ -224,7 +224,7 @@ To get help for a specific command, use <span class="code">cmd=&lt;command></spa
 
     ...
 
-To get a parameter description as well as defaults and type of input, add <span class="code">content=detail</span>:
+To get a parameter description as well as defaults and type of input, add `content=detail`:
 
 
 

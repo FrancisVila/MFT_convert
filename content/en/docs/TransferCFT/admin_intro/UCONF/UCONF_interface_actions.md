@@ -13,7 +13,7 @@ values using the User Interface.
 
 To modify a UCONF value using the graphical user interface:
 
-1.  Select the <span style="font-weight: bold;">Administration</span>
+1.  Select the **Administration**
     icon at the top of the left pane.
 2.  In the left pane object manager,
     double click <span style="font-weight: bold;">Configuration Parameters</span>.

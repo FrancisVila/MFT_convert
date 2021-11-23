@@ -21,7 +21,7 @@ Run the UNINSTAL JCL, which:
 >
 > You must manually modify the JCL, by default the distribution environment is not removed (see lines 000018, 000081, and 000082 in the example).
 
-<span class="autonumber"></span>Example
+Example
 
 
 

@@ -2,7 +2,7 @@
     "title": "Working with User Profiles ",
     "linkTitle": "Working with User Profiles",
     "weight": "170"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 [Creating a new User Profile object](#Creating_a_User_Profile_object)
 
@@ -24,7 +24,7 @@ To create a new User Profile object:
 
 1.  In the left pane of the GUI main window, click <img src="/Images/Gateway/expand_marker.gif" width="16" height="16" /> to expand the nodes:  
     **Security Management > Access Control Management**
-2.  Right-click the <span style="font-weight: bold;">Profile</span> sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.  
+2.  Right-click the **Profile** sub-node, and then select <span style="font-weight: bold;">New</span> from the context menu.  
     Gateway displays the <span style="font-style: italic;">New Profile</span> window.
 3.  In the <span style="font-style: italic;">New Profile</span> window:
     -   Enter a unique name for the Profile in the <span style="font-weight: bold;">Name</span> field. You can enter up to 31 alphanumeric characters.

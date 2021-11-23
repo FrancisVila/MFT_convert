@@ -42,7 +42,7 @@ Your password policy:
 The product is delivered with the following default users:
 
 -   User: admin
--   Password: can be chosen at install time. If none provided default password is <span class="code">admin</span>
+-   Password: can be chosen at install time. If none provided default password is `admin`
 
 Your first task after login with this user must be to create your own administrator account and to delete the default one, or at least to change this administrator password.
 
@@ -65,7 +65,7 @@ The file path to the passphrase used for encrypting the mailbox and database obj
 ### Location of files
 
 -   The configuration files are located in $Gateway\_Home/run\_time/etc.
--   The name and location of the encryption key generating files are established when creating them using the <span class="code">pelencpass </span>command.
+-   The name and location of the encryption key generating files are established when creating them using the `pelencpass `command.
 
 ### List of sensitive files
 
@@ -501,6 +501,6 @@ During threat modeling process, several possible threats or weaknesses were iden
     -   Possible mitigations and best practices: CGate and SGate objects can keep the user passwords hashed, but they are not configured to do so by default. It is recommended to activate this option through \[monitor\]disable\_password\_regex='yes' and \[monitor\]cgate\_hashed\_password='yes' configuration parameters.
     -   For the other passwords it is recommended to encrypt the object database files. It is recommended to AES128 encrypt the object database files using \[monitor\]ciphering\_option configuration parameter.
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

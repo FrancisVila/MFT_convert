@@ -13,5 +13,5 @@
     -   **X509 Client Cert and Basic Template** – certificate *and* password authentication
 3.  Create a Realm, selecting the agent and authentication scheme that have been created for {{< SecureTransport/componentshortname >}}.
 4.  Create new rules under the Realm.
-5.  Create a Response that returns the attributes required by the {{< SecureTransport/componentshortname >}} SiteMinder settings. For details, see <a href="../../c_st_authentication/t_st_siteminderintegrationconfiguration#SetupMenu_1217491348_1151043" class="MCXref xref">SiteMinder integration configuration</a>.
+5.  Create a Response that returns the attributes required by the {{< SecureTransport/componentshortname >}} SiteMinder settings. For details, see [SiteMinder integration configuration](../../c_st_authentication/t_st_siteminderintegrationconfiguration#SetupMenu_1217491348_1151043).
 6.  Apply the new rules to the necessary SiteMinder Policy.

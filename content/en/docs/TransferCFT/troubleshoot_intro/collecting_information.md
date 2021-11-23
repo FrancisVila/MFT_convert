@@ -4,11 +4,11 @@
     "weight": "220"
 }Transfer CFT generates messages that provide information about the processes
 and events that occur on the Transfer CFT. These messages are collected and
-stored in a log file. If you are using <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>, in the **Products List** page select the Transfer CFT in question. In the Transfer CFT page, select **Logs** in the right pane to view the Transfer CFT logs.
+stored in a log file. If you are using {{< TransferCFT/centralgovernancename  >}}, in the **Products List** page select the Transfer CFT in question. In the Transfer CFT page, select **Logs** in the right pane to view the Transfer CFT logs.
 
 Transfer CFT also generates messages that provide information about
 the state of a transfer. These messages are collected and stored in a
-catalog file. From the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
+catalog file. From the {{< TransferCFT/centralgovernancename  >}} main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
 
 <span id="How_to_get_information_when_an_error_occurs"></span>
 
@@ -105,13 +105,13 @@ for some time?</p>         </td>
 
 ## Documentation
 
-If an error occurred while running Transfer CFT in Central Governance, you may also want to consult the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> documentation.
+If an error occurred while running Transfer CFT in Central Governance, you may also want to consult the documentation.
 
 Some corrective actions may be operating system specific, so you may also want to refer to:
 
 -   Windows
-    operations in the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>
+    operations in the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} {{< TransferCFT/doctypeuser >}}
 -   UNIX
-    operations in the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span> <span class="mc-variable suite_variables.DocTypeUser variable">User Guide</span>
--   <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span> z/OS Installation and Operation Guide
--   <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Component_Version variable">3.9</span> IBM i Installation and Operation Guide
+    operations in the {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} {{< TransferCFT/doctypeuser >}}
+-   {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} z/OS Installation and Operation Guide
+-   {{< TransferCFT/transfercftname >}} {{< TransferCFT/componentversion >}} IBM i Installation and Operation Guide

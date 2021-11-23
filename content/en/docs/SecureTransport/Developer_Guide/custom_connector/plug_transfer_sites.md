@@ -8,9 +8,9 @@ Generally, a Pluggable Transfer Site is a custom connector that can be plugged i
 
 When creating a custom connector that can be used by {{< SecureTransport/componentshortname  >}} for transferring files, you should generally perform the following steps:
 
-1.  <a href="../implement_interface" class="MCXref xref">Implement a user interface</a>
-2.  <a href="../custom_protocol" class="MCXref xref">Implement a custom protocol connector</a>
-3.  <a href="../deploy_connector" class="MCXref xref">Deploy a custom protocol connector</a>
+1.  [Implement a user interface](../implement_interface)
+2.  [Implement a custom protocol connector](../custom_protocol)
+3.  [Deploy a custom protocol connector](../deploy_connector)
 
 > **Note:**
 >

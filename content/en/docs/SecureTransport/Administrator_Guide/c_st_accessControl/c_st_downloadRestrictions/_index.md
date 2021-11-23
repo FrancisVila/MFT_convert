@@ -12,4 +12,4 @@ Configure download restrictions on {{< SecureTransport/componentshortname  >}} S
 
 The following topic describes how to manage download restrictions:
 
--   <a href="t_st_downloadrestrictions" class="MCXref xref">Manage download restrictions</a> - Provides how-to instructions for managing download restrictions.
+-   [Manage download restrictions](t_st_downloadrestrictions) - Provides how-to instructions for managing download restrictions.

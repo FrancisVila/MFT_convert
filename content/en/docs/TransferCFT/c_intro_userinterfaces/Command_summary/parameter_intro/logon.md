@@ -8,7 +8,7 @@
 
 #### CFTPRO
 
-\[LOGON = { <span style="text-decoration: underline;">YES</span>
+\[LOGON = {
 | NO } \]
 
 Use of the pre-connection phase. Available only in requester mode.

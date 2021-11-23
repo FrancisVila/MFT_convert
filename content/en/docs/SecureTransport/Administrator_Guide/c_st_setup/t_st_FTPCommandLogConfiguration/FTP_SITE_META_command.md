@@ -6,7 +6,7 @@
 
 The command accepts input in the format of key - value pairs. The supplied information is stored in the FTP session and is available until the session finishes or times out. For files uploaded during the same session, the provided information will be stored as file metadata attributes. The information can be evaluated at a later point for each file.
 
-This way, the SITE META input could be used for defining routing rules for server-initiated transfers. For file metadata persistence specifics, see <a href="#Subscrip" class="MCXref xref">Subscription flow attributes and FTP related attributes</a>.
+This way, the SITE META input could be used for defining routing rules for server-initiated transfers. For file metadata persistence specifics, see [Subscription flow attributes and FTP related attributes](#Subscrip).
 
 > **Note:**
 >
@@ -30,7 +30,7 @@ Supplying same key names with different values will result in overwriting the pr
 >
 > The “=” and ‘;’ are considered special symbols: - the semicolon sign (‘;’) is used to delimit the different pairs,- the equals sign (“=”) splits the key name from its value. If using them as part of the payload, escaping is required. They must be preceded by “\\” or \\\\, depending on the manner how FTP clients accept command arguments.
 
-When a file is uploaded using a common session, the commands arguments are stored as part of the file meta information. They are written in an existing namespace - the flow attributes user variables (*userVars*). For more information about flow attributes, see *Flow attributes* section in <a href="../../t_st_mailtemplates/c_st_mail_template_commands_variables" class="MCXref xref">Mail template commands and variables</a>.
+When a file is uploaded using a common session, the commands arguments are stored as part of the file meta information. They are written in an existing namespace - the flow attributes user variables (*userVars*). For more information about flow attributes, see *Flow attributes* section in [Mail template commands and variables](../../t_st_mailtemplates/c_st_mail_template_commands_variables).
 
 The command supports entering keys with empty values:
 
@@ -65,4 +65,4 @@ Key-value pairs from subscription properties and those from FTP SITE META share 
 
 Uploading files in the subscription directory within an FTP session with SITE META commands, the subscription flow attribute settings will always take precedence.
 
-For more information about flow attributes settings, see *Configure general settings* section in <a href="../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>.
+For more information about flow attributes settings, see *Configure general settings* section in [Subscribe to Advanced Routing application](../../../c_st_advanced_routing/c_st_configuration/t_st_subscribe_advanced_routing_application).

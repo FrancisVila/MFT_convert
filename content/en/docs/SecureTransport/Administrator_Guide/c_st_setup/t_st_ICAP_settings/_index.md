@@ -4,7 +4,7 @@
     "weight": "250"
 }The Internet Content Adaptation Protocol (ICAP) settings allow the administrator to configure ICAP engines to be used as part of the {{< SecureTransport/securetransportname  >}} file transfer processes so that data loss prevention (DLP) is achieved and anti-virus (AV) scans are completed. {{< SecureTransport/securetransportname  >}} allows the administrator to use the ICAP connector to set up a {{< SecureTransport/securetransportname  >}} server to scan (with external DLP engine) files and AdHoc messages when delivering them to the recipient folder or mailbox. ICAP server scan is executed when a file is going to be (therefore before it is) delivered.
 
-Prior to configuring ICAP scanning, verify that ICAPScan is enabled. For information on enabling ICAPScan, refer to <a href="../c_st_tm_settings/t_st_rulespackages#EnableRulesPackage" class="MCXref xref">Enable a rules package</a>.
+Prior to configuring ICAP scanning, verify that ICAPScan is enabled. For information on enabling ICAPScan, refer to [Enable a rules package](../c_st_tm_settings/t_st_rulespackages#EnableRulesPackage).
 
 > **Note:**
 >
@@ -74,7 +74,7 @@ Click **Add new ICAP server** to open the *ICAP Server Settings* page with multi
 
 Select **Scan Policy Expression** if you want to perform scanning only under specific circumstances.  
 When you select the **Scan Policy Expression** checkbox, the text box field allows you to use {{< SecureTransport/componentshortname  >}} Expression Language. If both settings are disabled, scanning will always be performed. Sample usage - do not scan if the transfer is taking place over SSH protocol: `${session.protocol ne 'ssh'}`  
-Refer to the <a href="icap_el_vars" class="MCXref xref">ICAP scan policy expression language</a> subtopic for the complete list of available expressions.
+Refer to the [ICAP scan policy expression language](icap_el_vars) subtopic for the complete list of available expressions.
 
 Select **Perform scanning only if there is a partner recipient**.  
 This field enables or disables ICAP scanning for AdHoc messages if at least one of the recipients is external. User type - *internal* or *external*- is controlled by the account setting **Account Type**. Possible values are **Internal** - internal accounts - and **Partner** - external accounts.  

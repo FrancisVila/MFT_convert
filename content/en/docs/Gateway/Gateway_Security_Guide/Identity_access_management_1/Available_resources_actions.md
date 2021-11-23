@@ -275,7 +275,7 @@ Enable/Disable</li>
       </tr>
       <tr>
          <td>Audit Objects         </td>
-         <td>The Audit file contains a trace of actions performed by users on the <span class="mc-variable suite_variables.GatewayName variable">Gateway</span> configuration (global and objects configuration).         </td>
+         <td>The Audit file contains a trace of actions performed by users on the {{< Gateway/gatewayname  >}} configuration (global and objects configuration).         </td>
          <td><ul>
 <li>Read</li>
 <li>Admin</li>
@@ -283,7 +283,7 @@ Enable/Disable</li>
       </tr>
       <tr>
          <td>Configuration         </td>
-         <td><span class="mc-variable suite_variables.GatewayName variable">Gateway</span> configuration objects         </td>
+         <td>{{< Gateway/gatewayname  >}} configuration objects         </td>
          <td><ul>
 <li>Read</li>
 <li>Admin</li>
@@ -294,6 +294,6 @@ Enable/Disable</li>
 
  
 
-Links to documentation set for Axway Gateway <span class="mc-variable axway_variables.Release_Number variable">6.17.3</span>:
+Links to documentation set for Axway Gateway {{< Gateway/releasenumber  >}}:
 
 -   [Installation](/bundle/Gateway_6173_InstallationGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [User](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Unix Configuration](/bundle/Gateway_6173_ConfigurationGuide_UNIX_en_HTML5/page/Content/start_page.htm) -- [Upgrade](/bundle/Gateway_6173_UpgradeGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Interoperability](/bundle/Gateway_6173_InteroperabilityGuide_allOS_en_HTML5/page/Content/start_page.htm) -- [Security](/bundle/Gateway_6173_SecurityGuide_allOS_en_HTML5/page/Content/start_page.htm), requires login -- [Release Notes](/bundle/Gateway_6173_ReleaseNotes_allOS_en_HTML5/page/Content/Gateway_ReleaseNotes_allOS_en.htm)

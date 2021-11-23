@@ -61,7 +61,7 @@ The following are the high-level steps on configuring Kerberos authentication fo
     >
     > Caution   In an Enterprise Cluster setup, execute all the steps on all of theSecureTransport servers.
 
-5.  For more information on configuring fresh installations, refer to the *SecureTransport Installation Guide*. To change the database configuration on existing systems, refer to <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>.
+5.  For more information on configuring fresh installations, refer to the *SecureTransport Installation Guide*. To change the database configuration on existing systems, refer to [Change the Oracle database configuration](../t_st_oracle).
 
 > **Note:**
 >

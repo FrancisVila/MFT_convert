@@ -68,7 +68,7 @@ Used to obtain part or all of the information of a catalog entry.
 
 The possible values are:
 
--   <span style="font-weight: bold;">BRIEF</span>: Displays the most basic, essential information
+-   **BRIEF**: Displays the most basic, essential information
     concerning the selected transfers with one line per transfer
 -   <span style="font-weight: bold;">EXTEND</span>: Displays information concerning
     security, exits and end-of-transfer procedures, as well as the BRIEF type

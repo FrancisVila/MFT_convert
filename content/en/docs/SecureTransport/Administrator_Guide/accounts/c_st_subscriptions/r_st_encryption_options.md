@@ -76,5 +76,5 @@ You can also choose to decrypt encrypted files when you download them. Decryptio
 
 **Related topics:**
 
--   <a href="../r_st_post_transmission_actions" class="MCXref xref">Post-transmission actions</a>
--   <a href="../t_st_subscriptions" class="MCXref xref">Manage subscriptions</a>
+-   [Post-transmission actions](../r_st_post_transmission_actions)
+-   [Manage subscriptions](../t_st_subscriptions)

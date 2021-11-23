@@ -2,17 +2,17 @@
     "title": "Monitor transfers",
     "linkTitle": "Monitor transfers",
     "weight": "320"
-}In the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> interface, select **Flows &gt; Monitoring** to open the Visibility user interface. Click **View\_Flows** to show the list of available searches. For example then, select **View all flows**, then **Execute**.
+}In the interface, select **Flows &gt; Monitoring** to open the Visibility user interface. Click **View\_Flows** to show the list of available searches. For example then, select **View all flows**, then **Execute**.
 
 **Search for a specific file**
 
-Finds all events of the type <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> by the name of the file transferred by the flow.
+Finds all events of the type {{< TransferCFT/componentshortname  >}} by the name of the file transferred by the flow.
 
 Click the browse icon to display a list of file names, and select the file name to filter. Or, enter the name of the file to filter.
 
 **View a given flow**
 
-Finds all events of the type <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> by the identifier of the executed flow.
+Finds all events of the type {{< TransferCFT/componentshortname  >}} by the identifier of the executed flow.
 
 Click the browse icon to display a list of flows, and select the identifier of the flow to filter. Or, enter the identifier of the flow to filter.
 
@@ -28,11 +28,11 @@ Finds flows by source or target application or both.
 
 Click the browse icon to display a list of applications, and select the application to filter. Or, enter the application to filter.
 
-**View all flows for a given** <span class="mc-variable axway_variables.Component_Short_Name variable" style="mc-tag-and-class: strong;">Transfer CFT</span>
+**View all flows for a given** {{< TransferCFT/componentshortname  >}}
 
-Finds flows by source or target <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or both.
+Finds flows by source or target {{< TransferCFT/componentshortname  >}} or both.
 
-Click the browse icon to display a list of <span class="mc-variable Primary.Transfer_CFT_plural variable">Transfer CFTs</span>, and select the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to filter. Or, enter the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to filter.
+Click the browse icon to display a list of , and select the {{< TransferCFT/componentshortname  >}} to filter. Or, enter the {{< TransferCFT/componentshortname  >}} to filter.
 
 **View all flows in error**
 
@@ -46,11 +46,11 @@ Finds all flows in error by source or target application or both.
 
 Click the browse icon to display a list of applications, and select the application to filter. Or, enter the application to filter.
 
-**View all flows in error for a given** <span class="mc-variable axway_variables.Component_Short_Name variable" style="mc-tag-and-class: strong;">Transfer CFT</span>
+**View all flows in error for a given** {{< TransferCFT/componentshortname  >}}
 
-Finds all flows in error by source or target <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> or both.
+Finds all flows in error by source or target {{< TransferCFT/componentshortname  >}} or both.
 
-Click the browse icon to display a list of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, and select the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to filter. Or, enter the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to filter.
+Click the browse icon to display a list of {{< TransferCFT/componentshortname  >}}s, and select the {{< TransferCFT/componentshortname  >}} to filter. Or, enter the {{< TransferCFT/componentshortname  >}} to filter.
 
 **View all high priority flows in error**
 
@@ -76,4 +76,4 @@ Finds all flows in error today.
 
 Click the name of the search to execute it. There are no conditions to specify. The search filters by today's date.
 
-<span class="bold_in_para">&lt;&lt; </span><a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>
+**&lt;&lt;** <a href="../../" class="bold_in_para MCXref xref xrefbold_in_para">My first transfer flow</a>

@@ -52,7 +52,7 @@ And lastly, you can configure:
 
 ## Executing the INSTALL command 
 
-Enter the INSTALL command and press <span class="span_16">PF4</span> to display the Transfer CFT IBM i installation screen.
+Enter the INSTALL command and press to display the Transfer CFT IBM i installation screen.
 
 > **Note:**
 >

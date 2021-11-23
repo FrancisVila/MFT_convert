@@ -6,10 +6,10 @@
 
 The following topics provide how-to instructions for managing user limits:
 
--   <a href="#Add" class="MCXref xref">Add a user limit</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable a user limit</a>
--   <a href="#Edit" class="MCXref xref">Edit a user limit</a>
--   <a href="#Delete" class="MCXref xref">Delete a user limit</a>
+-   [Add a user limit](#Add)
+-   [Enable or disable a user limit](#Enable)
+-   [Edit a user limit](#Edit)
+-   [Delete a user limit](#Delete)
 
 <span id="Add"></span>
 

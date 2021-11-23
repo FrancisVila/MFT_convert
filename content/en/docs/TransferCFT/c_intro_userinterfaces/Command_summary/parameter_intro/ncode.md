@@ -41,7 +41,7 @@ The following values explicitly or implicitly determine the action:
     with an external translation table (see the use of the XLATE parameter)
 -   If NCODE is
     not FCODE, ASCII/EBCDIC or EBCDIC/ASCII translation is always performed,
-    whether by means of an external translation table or the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    whether by means of an external translation table or the {{< TransferCFT/componentshortname >}}
     internal translation table
 
 In the PeSIT protocol Transfer

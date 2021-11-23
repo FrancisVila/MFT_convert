@@ -10,7 +10,7 @@
 
 dnuser='(string1, string2)'
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> syntax
+{{< TransferCFT/componentshortname  >}} syntax
 
 The new syntax is listed here. For continued compatibility, you can still use
 the 2.4.x syntax.

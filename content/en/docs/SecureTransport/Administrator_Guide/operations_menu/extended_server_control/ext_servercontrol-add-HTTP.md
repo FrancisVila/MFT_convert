@@ -4,10 +4,10 @@
     "weight": "110"
 }In this topic you will learn how to:
 
--   <a href="#Add" class="MCXref xref">Add an HTTP server</a>
--   <a href="#Start" class="MCXref xref">Start and stop an HTTP server</a>
--   <a href="#Edit" class="MCXref xref">Edit HTTP server settings</a>
--   <a href="#Delete" class="MCXref xref">Delete an HTTP server</a>
+-   [Add an HTTP server](#Add)
+-   [Start and stop an HTTP server](#Start)
+-   [Edit HTTP server settings](#Edit)
+-   [Delete an HTTP server](#Delete)
 
 <span id="Add"></span>
 
@@ -114,7 +114,7 @@ For instructions on how to enable TLSv1.3 protocol support, refer to the {{< Sec
       <tr>
          <td>Enabled FIPS Ciphers         </td>
          <td><p>Modify the cipher suite set to be used with your HTTP server in FIPS mode.</p>
-<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites" class="MCXref xref">Advertised ciphers and cipher suites</a>.</p>
+<p>By default, this field is populated with all FIPS compliant TLS cipher suites supported by {{< SecureTransport/securetransportname  >}}. For the complete list, see <a href="../../../c_st_fipstransfermode/r_st_required_ciphers_cipher_suites">Advertised ciphers and cipher suites</a>.</p>
 <p>Click the "down arrow" icon on the right to access a drop-down menu with options to select and deselect all items, reset to defaults, and reload the previously saved selection.</p>
 <p>For the default HTTP server, the list of allowed cipher suites in FIPS mode is determined by the <code>Http.FIPS.Ssl.EnabledCipherSuites</code> configuration option.</p>         </td>
       </tr>

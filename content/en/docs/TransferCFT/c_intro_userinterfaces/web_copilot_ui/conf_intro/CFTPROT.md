@@ -214,7 +214,7 @@ the transfer.</p>         </td>
       </tr>
       <tr>
          <td><p><a href="../../../command_summary/parameter_intro/pad">PAD</a> </p>         </td>
-         <td><p><em>Deprecated in</em> <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span><em></em><span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">3.9</span></p>
+         <td><p><em>Deprecated in</em> {{< TransferCFT/componentlongname  >}}<em></em>{{< TransferCFT/releasenumber  >}}</p>
 <p>Option applying "SPECIAL LOGIC" to the data exchange
 buffers.</p>
 <p>This option is negotiated with the partner when the protocol
@@ -424,7 +424,7 @@ regardless of the value of this parameter</li>
       <tr>
          <td><p><a href="../../../command_summary/parameter_intro/pad">PAD</a> </p>
 <p>Only in requester mode CFT profile</p>         </td>
-         <td><p><em>Deprecated in</em> <span class="mc-variable axway_variables.Component_Long_Name variable" style="font-style: italic;">Transfer CFT</span><em></em><span class="mc-variable axway_variables.Release_Number variable" style="font-style: italic;">3.9</span></p>
+         <td><p><em>Deprecated in</em> {{< TransferCFT/componentlongname  >}}<em></em>{{< TransferCFT/releasenumber  >}}</p>
 <p>Use of the CRC (Cyclic Redundancy Checksum).</p>
 <p>This option is not negotiated: in server mode, Transfer
 CFT always adapts itself to the choice of the requesting partner.</p>

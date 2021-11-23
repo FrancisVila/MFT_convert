@@ -6,14 +6,14 @@
 
 The samples are distributed in dedicated subtopics, as follows:
 
--   <a href="#Transfer" class="MCXref xref">Transfer-related expressions</a>
--   <a href="#Session-" class="MCXref xref">Session-related expressions</a>
--   <a href="#LDAP-rel" class="MCXref xref">LDAP-related</a>
--   <a href="#HTTP-rel" class="MCXref xref">HTTP-related expressions</a>
--   <a href="#Flow" class="MCXref xref">Flow attributes expressions</a>
--   <a href="#Account-" class="MCXref xref">Account-related expressions</a>
--   <a href="#User-rel" class="MCXref xref">User-related expressions</a>
--   <a href="#Business" class="MCXref xref">Business Unit-related expressions</a>
+-   [Transfer-related expressions](#Transfer)
+-   [Session-related expressions](#Session-)
+-   [LDAP-related](#LDAP-rel)
+-   [HTTP-related expressions](#HTTP-rel)
+-   [Flow attributes expressions](#Flow)
+-   [Account-related expressions](#Account-)
+-   [User-related expressions](#User-rel)
+-   [Business Unit-related expressions](#Business)
 
 > **Note:**
 >

@@ -34,7 +34,7 @@ The following table lists IPC tuning parameters to consider customizing and reco
       </tr>
       <tr>
          <td>msgmni         </td>
-         <td><p>48 per <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> instance</p>
+         <td><p>48 per {{< TransferCFT/componentlongname  >}} instance</p>
 <p>See <a href="#note_linux">NOTE</a>**</p>         </td>
          <td><p>Maximum number of IPC message queue resources allowed.</p>
 <p>You require as many message queues as processes per Transfer CFT instance (when using multiple instances, multiply the number of instances by the number of Transfer CFT processes).</p>         </td>

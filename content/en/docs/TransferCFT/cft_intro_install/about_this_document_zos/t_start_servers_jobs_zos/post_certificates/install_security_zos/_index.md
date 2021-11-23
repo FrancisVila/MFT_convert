@@ -18,9 +18,9 @@ Transfer CFT software can be installed with or without the security system. In a
 
 Level 2: corresponds to level 1 with an additional program-based control of accesses to CFT files (PADS) (USERCTRL=YES)
 
-### Access management under <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>
+### Access management under
 
-When running under <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, the access management is automatically set to am.type=passport. If you want to use external access management, RACF, you must manually modify this value after registering with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> using the command:
+When running under , the access management is automatically set to am.type=passport. If you want to use external access management, RACF, you must manually modify this value after registering with using the command:
 
 
     CFTUTIL UCONFSET id=am.type, value=internal

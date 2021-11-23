@@ -12,7 +12,7 @@ For z/OS 2.1, you can export JCL variables:
 
 Export Global
 
-Uncomment <span class="code">//\* EXPORT SYMLIST=\* in CFTENV</span> member
+Uncomment `//*     EXPORT SYMLIST=* in CFTENV` member
 
 Or
 
@@ -160,7 +160,7 @@ The maximum number of nested )SELs is 32, where:
 >
 > &lt;&gt; or != or |= or NEQ: different from
 
-<span class="bold_in_para">Examples</span>
+**Examples**
 
 )SEL &P1 = SITE1: includes the following cards if parameter 1 is equal to SITE1
 

@@ -4,7 +4,7 @@
     "weight": "3260"
 }<span id="srchost"></span>
 
-### <span class="mc-variable System.Title variable">srchost</span>
+### 
 
 #### CFTNET
 
@@ -14,7 +14,7 @@ This parameter is used only for outgoing calls on a resource. If
 the value, either the local hostname or IP address, is assigned then that value is used
 to select the interface on which the outgoing call will occur.
 
-<span style="font-weight: bold;">Example</span>:
+**Example**:
 
 CFTPROT ID = PANY, SAP
 = 1761....NET=ANY

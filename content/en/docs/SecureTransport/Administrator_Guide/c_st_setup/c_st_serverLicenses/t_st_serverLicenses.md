@@ -2,7 +2,7 @@
     "title": "Updating SecureTransport licenses",
     "linkTitle": "Update SecureTransport licenses",
     "weight": "220"
-}To obtain the text files that contains the server licenses, contact {{< SecureTransport/companyname  >}} Global Support. For contact information, see <a href="" class="MCXref xref">Get more help</a>.
+}To obtain the text files that contains the server licenses, contact {{< SecureTransport/companyname  >}} Global Support. For contact information, see [Get more help]().
 
 1.  Select **Setup > Server License**.  
     The *Server License* page is displayed.
@@ -17,5 +17,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_account_session_count" class="MCXref xref">Account session count</a>
--   <a href="../c_st_adhoc_user_licenses" class="MCXref xref">Ad hoc user licenses</a>
+-   [Account session count](../c_st_account_session_count)
+-   [Ad hoc user licenses](../c_st_adhoc_user_licenses)

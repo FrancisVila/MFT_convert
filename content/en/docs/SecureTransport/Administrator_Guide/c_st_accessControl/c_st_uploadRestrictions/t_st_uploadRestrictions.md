@@ -6,11 +6,11 @@
 
 The following topics provide how-to instructions for managing upload restrictions:
 
--   <a href="#Add" class="MCXref xref">Add an upload restriction</a>
--   <a href="#Enable" class="MCXref xref">Enable or disable an upload restriction</a>
--   <a href="#Edit" class="MCXref xref">Edit an upload restriction</a>
--   <a href="#Reorder" class="MCXref xref">Reorder upload restrictions</a>
--   <a href="#Reorder" class="MCXref xref">Reorder upload restrictions</a>
+-   [Add an upload restriction](#Add)
+-   [Enable or disable an upload restriction](#Enable)
+-   [Edit an upload restriction](#Edit)
+-   [Reorder upload restrictions](#Reorder)
+-   [Reorder upload restrictions](#Reorder)
 
 <span id="Add"></span>
 

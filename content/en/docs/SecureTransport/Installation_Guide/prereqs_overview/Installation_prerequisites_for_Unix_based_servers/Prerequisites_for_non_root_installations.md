@@ -26,8 +26,8 @@
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Supported UNIX-based operating systems</a>
--   <a href="" class="MCXref xref">Minimum UNIX hardware requirements</a>
--   <a href="" class="MCXref xref">Host name resolution</a>
--   <a href="../requirements_for_specific_operating_systems" class="MCXref xref">Requirements for specific operating systems</a>
--   <a href="" class="MCXref xref">General prerequisites</a>
+-   [Supported UNIX-based operating systems]()
+-   [Minimum UNIX hardware requirements]()
+-   [Host name resolution]()
+-   [Requirements for specific operating systems](../requirements_for_specific_operating_systems)
+-   [General prerequisites]()

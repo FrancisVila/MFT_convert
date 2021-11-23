@@ -16,7 +16,7 @@ An account or a business unit policy takes precedence over the global one. The a
 >
 > The Account Maintenance policy does not apply to unlicensed user accounts. For more information, see Unlicensed Accounts Maintenance application
 
-Before you create an Account Maintenance application, make sure that the `AccountMaintenanceApp` rules package is enabled in the Transaction Manager. For more information, see <a href="../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable" class="MCXref xref">Manage rules packages</a>.
+Before you create an Account Maintenance application, make sure that the `AccountMaintenanceApp` rules package is enabled in the Transaction Manager. For more information, see [Manage rules packages](../transaction_manager/t_st_rulesPackages.htm#EnableRulesPackage#Enable).
 
 Use the following procedure to create an Account Maintenance application.
 
@@ -25,13 +25,13 @@ The *New Application* page is displayed.
 
 Select **Accounts Maintenance** from the mandatory **Application Type** list.
 
-Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see <a href="../../accounts/useraccounts/t_st_create_user_account#Spaces" class="MCXref xref">Spaces in required fields</a>.  
+Enter a unique **Application Name**. You cannot enter spaces-only values in this field. For more information, see [Spaces in required fields](../../accounts/useraccounts/t_st_create_user_account#Spaces).  
 
 > **Note:**
 >
 > The application name cannot include any forward slash (/) characters.
 
-(Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have <a href="../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756" class="MCXref xref">Business units</a>. To create a global policy, do not assign a business unit.  
+(Optional) Use the **Assign** and **Remove** buttons to assign business units for the application. The **Business Unit List** contains the names of business units you have [Business units](../../c_st_advancedaccountadministration/c_st_businessunits#Advanced_Accounts_2036285406_1127756). To create a global policy, do not assign a business unit.  
 
 > **Note:**
 >
@@ -79,11 +79,11 @@ The email certificate notification will be sent to the specified account(s) onc
 
 -   Use **Email Templatе** to select the template for user certificate expiration emails, and specify the notification recipients.
 
-(Optional) In the *Schedule* pane, click **Configure** to<a href="#ConfigureMaintSchedule" class="MCXref xref">Configure a schedule for a maintenance application</a>.
+(Optional) In the *Schedule* pane, click **Configure** to[Configure a schedule for a maintenance application](#ConfigureMaintSchedule).
 
-(Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.
+(Optional) Set **Additional attributes**: you can use the group of fields to add (or remove) custom attributes as *attribute:value* pairs. To add a new attribute: click **Add Attribute**, input entries for the attribute and value pair and click the Save (![](/Images/SecureTransport/SaveIcon.png)) icon to store your input. To remove an attribute: select the corresponding checkbox and click **Delete**. You can also edit either entry (for attribute or value) of an existing attribute. See [Additional attributes](../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition).
 
 Click **Create Application**.
 
   
-See parent topic: <a href="../" class="MCXref xref">Applications</a> and follow shortcuts to other applications you need to create or configure.
+See parent topic: [Applications](../) and follow shortcuts to other applications you need to create or configure.

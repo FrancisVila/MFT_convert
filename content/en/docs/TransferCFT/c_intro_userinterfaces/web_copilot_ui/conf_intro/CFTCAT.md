@@ -141,7 +141,7 @@ updates of the catalog file during a transfer.</p>         </td>
       </tr>
       <tr>
          <td><p><a href="../../../command_summary/parameter_intro/wscan">WSCAN</a> </p>         </td>
-         <td>Enter the frequency (in minutes) with which <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> scans the catalog file when restarting a transfer:
+         <td>Enter the frequency (in minutes) with which {{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer:
 <ul>
 <li>5 (default value)</li>
 <li>1 to 60</li>

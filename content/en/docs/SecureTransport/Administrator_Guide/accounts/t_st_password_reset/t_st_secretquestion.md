@@ -8,11 +8,11 @@ If the secret question feature is enabled and their system administrator require
 
 As a system administrator, you can:
 
--   <a href="#Enable" class="MCXref xref">Enable or disable the secret question feature</a>
--   <a href="#Set_minimum_length" class="MCXref xref">Set minimum length for the Secret question answer</a>
--   <a href="#Set" class="MCXref xref">Set maximum number of answer attempts</a>
--   <a href="#Configur" class="MCXref xref">Configure a list of secret questions</a>
--   <a href="#Require" class="MCXref xref">Require a user to select a new secret question</a>
+-   [Enable or disable the secret question feature](#Enable)
+-   [Set minimum length for the Secret question answer](#Set_minimum_length)
+-   [Set maximum number of answer attempts](#Set)
+-   [Configure a list of secret questions](#Configur)
+-   [Require a user to select a new secret question](#Require)
 
 If an end user forgets their password, they must:
 
@@ -40,7 +40,7 @@ To disable the secret question feature:
 
 Repeat steps 1 through 5, but set the configuration parameter to **false**.
 
-For more information on changing server configuration parameters, refer to <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>.
+For more information on changing server configuration parameters, refer to [View and change server configuration parameters](../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters).
 
 <span id="Set_minimum_length"></span>
 
@@ -68,7 +68,7 @@ To configure the maximum number of answer attempts:
 4.  Enter the desired number of answer attempts in the *Value* field. The default value is **0**.
 5.  Click the **Save** (![](/Images/SecureTransport/SaveIcon2.png)) icon in the *Edit* column.
 
-For more information on changing server configuration parameters, refer to <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>.
+For more information on changing server configuration parameters, refer to [View and change server configuration parameters](../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters).
 
 <span id="Configur"></span>
 
@@ -92,10 +92,10 @@ To configure a list of secret questions:
     -   **What is your dream occupation?**
 5.  Click the **Save** (![](/Images/SecureTransport/SaveIcon2.png)) icon in the *Edit* column.
 
-For more information on changing server configuration parameters, refer to <a href="../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>.
+For more information on changing server configuration parameters, refer to [View and change server configuration parameters](../../../operations_menu/c_st_serverconfiguration/t_st_serverconfigurationparameters).
 
 <span id="Require"></span>
 
 ## Require a user to select a new secret question
 
-To require a user to select and answer a new secret question, edit their user account and select **Require user to set new secret question on next login**. On the next login, the user must select and answer a new secret question before they can access the user interface. For additional information on editing user accounts, refer to <a href="../../useraccounts/t_st_edit_user_account_settings" class="MCXref xref">Edit user account settings</a>.
+To require a user to select and answer a new secret question, edit their user account and select **Require user to set new secret question on next login**. On the next login, the user must select and answer a new secret question before they can access the user interface. For additional information on editing user accounts, refer to [Edit user account settings](../../useraccounts/t_st_edit_user_account_settings).

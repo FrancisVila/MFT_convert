@@ -2,7 +2,7 @@
     "title": "Verify your installation",
     "linkTitle": "Verify your installation",
     "weight": "150"
-}See the installation if you encounter problems when starting <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>.
+}See the installation if you encounter problems when starting {{< TransferCFT/componentlongname  >}}.
 
 ## Installed directories
 

@@ -15,4 +15,4 @@ Follow the steps for launching RHEL Instance with the following specifics:
 6.  Add Tags.
 7.  Specify unique names, so you can easily distinguish between instances.
 8.  Specify the Security Groups.
-9.  Assign all SecureTransport Servers to the previously created Security Group as described in the [](../../st_create_secgroups)<a href="../../st_create_secgroups" class="MCXref xref">Create Security Groups and Network Access Lists</a> section.
+9.  Assign all SecureTransport Servers to the previously created Security Group as described in the [](../../st_create_secgroups)[Create Security Groups and Network Access Lists](../../st_create_secgroups) section.

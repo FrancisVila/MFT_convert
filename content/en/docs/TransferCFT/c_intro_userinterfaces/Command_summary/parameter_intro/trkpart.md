@@ -8,16 +8,16 @@
 
 #### CFTPARM
 
-**\[TRK = { <span style="text-decoration: underline;">UNDEFINED</span>
+**\[TRK = {
 | ALL | NO | SUMMARY }\]**
 
-The default value that specifies how much detail <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> should
+The default value that specifies how much detail {{< TransferCFT/componentshortname  >}} should
 provide Sentinel concerning transfers with a partner who does
 not have a defined [trk](../trk) value.
 
 Select one of the following options:
 
--   <span style="font-weight: bold;">NO</span>: the monitor never sends Tracked
+-   **NO**: the monitor never sends Tracked
     Instances to Sentinel. Default value.
 -   <span style="font-weight: bold;">ALL</span>: for each step of each transfer
     process, the monitor sends a Tracked Instance to Sentinel.

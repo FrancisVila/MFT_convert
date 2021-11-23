@@ -24,15 +24,14 @@ sent by Transfer CFT and a file to be decompressed after being received.
 
 Syntax
 
-[OFN<span class="code">A</span>ME](../../../c_intro_userinterfaces/command_summary/parameter_intro/ofname)
+[OFN`A`ME](../../../c_intro_userinterfaces/command_summary/parameter_intro/ofname)
 = filename
 
 \[ [CREATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/create)
-= { <span style="text-decoration: underline;">‘
-‘</span> | YES | NO } \]
+= { | YES | NO } \]
 
 \[ [IBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/iblksize)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ ICHARSET = string \]
@@ -41,15 +40,15 @@ Syntax
 = { ASCII | EBCDIC } \]
 
 \[ [ICOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/icomp)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | 15 } \]
 
 \[ [ICT](../../../c_intro_userinterfaces/command_summary/parameter_intro/ict)
-=  { <span style="text-decoration: underline;">H</span>
+=  {
 | C } \]
 
 \[ [ILRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/ilrecl)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [IRECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/irecfm)
@@ -68,27 +67,25 @@ Syntax
 = { ASCII | EBCDIC } \]
 
 \[ [OCOMP](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocomp)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | 15 } \]
 
 \[ [OCT](../../../c_intro_userinterfaces/command_summary/parameter_intro/oct)
 = { H | C } \]
 
 \[ [OLRECL](../../../c_intro_userinterfaces/command_summary/parameter_intro/olrecl)
-= { <span style="text-decoration: underline;">0</span>
+= {
 |n } \]
 
 \[ [ORECFM](../../../c_intro_userinterfaces/command_summary/parameter_intro/orecfm)
-= { <span style="text-decoration: underline;">IRECFM
-value</span> | F | V| U } \]
+= { | F | V| U } \]
 
 \[ [OSPACE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ospace)
-= { <span style="text-decoration: underline;">0</span>
+= {
 | n } \]
 
 \[ [OTYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/otype)
-= { <span style="text-decoration: underline;">‘
-‘</span> | character } \]
+= { | character } \]
 
 \[ [XLATE](../../../c_intro_userinterfaces/command_summary/parameter_intro/xlate) = string \]
 

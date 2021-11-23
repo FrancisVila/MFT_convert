@@ -16,7 +16,7 @@ ACCID = n
 
 Accounting system file identifier records.
 
--   <span style="font-weight: bold;">z/OS </span> <span style="font-weight: bold;">Default
+-   **z/OS** <span style="font-weight: bold;">Default
     value: 128.</span>  
     This data is written in SMF. The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> program must be authorized
     (APF).

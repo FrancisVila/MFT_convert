@@ -226,7 +226,7 @@ problem</li>
 <li>255:
 Other cause of connection refusal</li>
 </ul>
-<p>These refusal codes are converted by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> into
+<p>These refusal codes are converted by {{< TransferCFT/componentshortname  >}} into
 internal diagnostic codes.</p>
 <p>In
 server mode, the internal diagnostic codes are converted into
@@ -269,11 +269,11 @@ CFT standard output.</p>         </td>
 type:</p>
 <ul>
 <li>C: normal
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner</li>
+{{< TransferCFT/componentshortname  >}} partner</li>
 <li>D: dynamic
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner</li>
+{{< TransferCFT/componentshortname  >}} partner</li>
 <li>E: non
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner</li>
+{{< TransferCFT/componentshortname  >}} partner</li>
 </ul>         </td>
       </tr>
       <tr>

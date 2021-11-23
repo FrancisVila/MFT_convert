@@ -10,7 +10,7 @@ The *Server Usage Monitor* page presents info with current session and bandwidth
 -   Bandwidth usage by login name - lists server bandwidth consumed by individual user accounts
 -   Server sessions - lists each connection session per user account
 
-You also have the option to <a href="#Autorefresh_ServerUsageMonitor" class="MCXref xref">Auto refresh Server Usage Monitor info</a>, as well as perform a manual refresh of the page.
+You also have the option to [Auto refresh Server Usage Monitor info](#Autorefresh_ServerUsageMonitor), as well as perform a manual refresh of the page.
 
 > **Note:**
 >

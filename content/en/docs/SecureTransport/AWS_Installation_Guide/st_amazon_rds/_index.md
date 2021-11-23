@@ -6,7 +6,7 @@
 
 The DB instance is the basic building block of Amazon RDS and is defined as an isolated database environment in the cloud. A DB instance can contain multiple user-created databases, and you can access it by using the same tools and applications that you use with a stand-alone database instance.
 
-Each DB instance runs a DB engine. For the list of supported database engines in the Amazon RDS environment, refer to <a href="https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm" class="MCXref xref">Axway and third-party software support</a> in the *{{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}} Administrator guide*.
+Each DB instance runs a DB engine. For the list of supported database engines in the Amazon RDS environment, refer to [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm) in the *{{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}} Administrator guide*.
 
 <span id="Create"></span>
 
@@ -59,7 +59,7 @@ If you would like to make an SSL connection to your Oracle DB, you should first 
     -   Choose whether your database to be publicly accessible or no.  
         Select Yes if you want to allow EC2 instances and devices outside the VPC that hosts the DB instance to connect to this DB instance. If you select No, Amazon RDS will not assign a public IP address to the DB instance, and no EC2 instance or devices outside of the VPC will be able to connect. If you select Yes, you must also select one or more VPC security groups that specify which EC2 instances and devices can connect to the DB instance. Learn more about [Amazon RDS VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.Scenarios.html) in the AWS documentation.
     -   Select the Availability Zone from the current region in which you want the DB instance created.
-    -   Select the Database Security Group you created as described in the <a href="#Create" class="MCXref xref">Create database Security Group</a> subtopic.
+    -   Select the Database Security Group you created as described in the [Create database Security Group](#Create) subtopic.
 
       
     <img src="/Images/SecureTransport/db-net-sec.PNG" class="maxWidth" />  
@@ -96,7 +96,7 @@ If you would like to make an SSL connection to your Oracle DB, you should first 
     -   Select **Yes** if you want to allow EC2 instances and devices outside the VPC that hosts the DB instance to connect to this DB instance. If you select **No**, Amazon RDS will not assign a public IP address to the DB instance, and no EC2 instance or devices outside of the VPC will be able to connect. If you select **Yes**, you must also select one or more VPC security groups that specify which EC2 instances and devices can connect to the DB instance. Learn more about [Amazon RDS VPC](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.Scenarios.html) in the AWS documentation.
     -   Select the Availability Zone from the current region in which you want the DB instance created.  
         **Note** For high availability and fault tolerance, we recommend you to create a DB replica in different zones in the previous step.
-    -   Select the Database Security Group you created as described in the <a href="#Create" class="MCXref xref">Create database Security Group</a> subtopic.
+    -   Select the Database Security Group you created as described in the [Create database Security Group](#Create) subtopic.
 
     <img src="/Images/SecureTransport/db-postgre-connectivity.png" title="PostgreSQL connectivity settings" class="maxWidth" alt="PostgreSQL connectivity settings" />
 
@@ -112,7 +112,7 @@ You manage your DB engine configuration through the use of parameters in a DB pa
 
 DB parameter groups act as a *container* for engine configuration values that are applied to one or more DB instances.
 
-You cannot modify the parameter settings of a default DB parameter group: you must create your own DB parameter group to change parameter settings from their default value. For more information on the respective database, see <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_Oracle_databases.htm" class="MCXref xref">Requirements for Oracle Databases</a> or <a href="https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_PostgreSQL_databases.htm" class="MCXref xref">Requirements for PostgreSQL</a> databases in the *{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} Installation Guide*.
+You cannot modify the parameter settings of a default DB parameter group: you must create your own DB parameter group to change parameter settings from their default value. For more information on the respective database, see [Requirements for Oracle Databases](https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_Oracle_databases.htm) or [Requirements for PostgreSQL](https://docs.axway.com/bundle/SecureTransport_55_InstallationGuide_allOS_en_HTML5/page/Content/InstallationGuide/prereqs/Requirements_for_PostgreSQL_databases.htm) databases in the *{{< SecureTransport/componentshortname  >}} {{< SecureTransport/componentversion  >}} Installation Guide*.
 
 ### Create a parameter group
 
@@ -155,6 +155,6 @@ Learn more about [DB Parameter Groups](https://docs.aws.amazon.com/AmazonRDS/lat
 
 **Related topics:**
 
--   <a href="connect-oracle" class="MCXref xref">Connect and configure Oracle DB</a>
--   <a href="connect-postgre" class="MCXref xref">Connect and configure PostgreSQL</a>
--   <a href="rds-aternative" class="MCXref xref">Alternative to RDS service</a>
+-   [Connect and configure Oracle DB](connect-oracle)
+-   [Connect and configure PostgreSQL](connect-postgre)
+-   [Alternative to RDS service](rds-aternative)

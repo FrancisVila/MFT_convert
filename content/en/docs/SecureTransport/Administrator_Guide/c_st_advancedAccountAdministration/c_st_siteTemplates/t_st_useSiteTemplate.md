@@ -4,7 +4,7 @@
     "weight": "230"
 }Use the following procedure to create a transfer site from a template.
 
-1.  Create or edit a Connect:Direct or file services interface protocol site as described in <a href="../../../accounts/transfersites/t_st_transfersites#Create" class="MCXref xref">Create a transfer site</a> or <a href="../../../accounts/transfersites/t_st_transfersites#Edit" class="MCXref xref">Edit a transfer site</a>.
+1.  Create or edit a Connect:Direct or file services interface protocol site as described in [Create a transfer site](../../../accounts/transfersites/t_st_transfersites#Create) or [Edit a transfer site](../../../accounts/transfersites/t_st_transfersites#Edit).
 2.  Select the desired template from the **Site Template** drop-down list.
 3.  If the selected template uses placeholder parameters, they are listed at the bottom of the page under **Site Template Placeholders**.  
     If a default value was provided by the site template, you can modify it for this account.  
@@ -17,4 +17,4 @@
 
 **Related topic:**
 
--   <a href="../t_st_sitetemplates" class="MCXref xref">Manage site templates</a>
+-   [Manage site templates](../t_st_sitetemplates)

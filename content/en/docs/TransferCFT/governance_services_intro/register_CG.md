@@ -2,7 +2,7 @@
     "title": "Register with Central Governance ",
     "linkTitle": "Register with Central Governance",
     "weight": "190"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>s 3.1.3 or higher can register with <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> in one of two ways:
+}{{< TransferCFT/componentlongname  >}}s 3.1.3 or higher can register with in one of two ways:
 
 -   <a href="#Automati" class="MCXref xref">Automatically activate connectivity</a>
 -   <a href="#manually_activate_cg" class="MCXref xref">Manually activate connectivity</a>
@@ -42,7 +42,7 @@ When setting the Central Governance "shared secret" during a Transfer CFT z/OS i
 
 Verify the UCONF setting
 
-Prior to the registration, you must ensure that the JCL CFTMON (<span class="code">copilot.misc.cftstart.enable</span> = <span class="code">Yes</span>) is configured to match the jobname or the STC name used to launch Transfer CFT.
+Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cftstart.enable` = `Yes`) is configured to match the jobname or the STC name used to launch Transfer CFT.
 
 ### Procedure
 
@@ -64,12 +64,12 @@ Unset the UCONF parameters:
 >
 > When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.
 
-#### Define UCONF parameters used for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> instance identification
+#### Define UCONF parameters used for {{< TransferCFT/componentlongname  >}} instance identification
 
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
 -   The length of the `cft.instance_id` value is limited to 24 characters.
--   The address set in <span class="code">cft.full\_hostname</span> must be reachable from <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>.
+-   The address set in `cft.full_hostname` must be reachable from .
 
 <!-- -->
 
@@ -79,16 +79,16 @@ Set the parameters used to identify a Transfer CFT instance. Follow these guide
     uconfset id=cft.instance_group, value=<cft_instance_group>
     uconfset id=cft.full_hostname, value=<cft_address>
 
-Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> uses to reach the Transfer CFT (<span class="code">copilot.general.ssl\_serverport</span>):
+Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
 
 
 
     uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
     uconfset id=cft.multi_node.load_balancer.port,value=<load_balancer_port>
 
-#### Optionally define a proxy server for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> communication
+#### Optionally define a proxy server for to {{< TransferCFT/componentlongname  >}} communication
 
-If you opt to use a proxy server for <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> to connect to <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, set the following parameters.
+If you opt to use a proxy server for to connect to {{< TransferCFT/componentlongname  >}}, set the following parameters.
 
 
 
@@ -97,9 +97,9 @@ If you opt to use a proxy server for <span class="mc-variable Primary.CG or_UM v
     uconfset id=cg.proxy.in.login, value= <proxy_login>
     uconfset id=cg.proxy.in.password, value= <proxy_login_password>
 
-#### Optionally define a proxy server for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> communication
+#### Optionally define a proxy server for {{< TransferCFT/componentlongname  >}} to communication
 
-If you opt to use a proxy server for <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> to connect to <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>, set the following parameters.
+If you opt to use a proxy server for {{< TransferCFT/componentlongname  >}} to connect to , set the following parameters.
 
 
 
@@ -110,14 +110,14 @@ If you opt to use a proxy server for <span class="mc-variable axway_variables.Co
 
 #### Import the root certificate for the Governance CA 
 
-1.  Download the root Governance CA, which is used to authenticate <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+1.  Download the root Governance CA, which is used to authenticate {{< TransferCFT/centralgovernancename >}}.
 2.  Import this root CA into the PKI database using the PKIUTIL PKICER command.
 3.  Set the `iname `to the root CA path.
-4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> knows which certificate to use to authenticate <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. Using CFTUTIL:
+4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that {{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate {{< TransferCFT/centralgovernancename >}}. Using CFTUTIL:
 
-#### Define the parameters used for the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> connection
+#### Define the parameters used for the  connection
 
-Set  the following parameters that are used to connect to <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+Set  the following parameters that are used to connect to {{< TransferCFT/centralgovernancename  >}}.
 
 
 
@@ -132,7 +132,7 @@ Set the shared secret that the Central Governance administrator generated and pr
 
 #### Optionally define the configuration policy for registration
 
-You may want to automatically assign an existing <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> configuration policy during the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
+You may want to automatically assign an existing configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
 
 
 
@@ -140,7 +140,7 @@ You may want to automatically assign an existing <span class="mc-variable Primar
 
 #### Optionally customize the business certificate Distinguished Name (DN)
 
-To override the business certificate's Distinguished Name (DN), which is generated during the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
+To override the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
 
 
     uconfset id=cg.certificate.business.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -149,7 +149,7 @@ A best practice is to customize the certificate DN prior to registration. Howeve
 
 #### Optionally customize the governance certificate Distinguished Name (DN)
 
-To override the governance certificate's Distinguished Name (DN), which is generated during the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
+To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
 
 
     uconfset id=cg.certificate.governance.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
@@ -168,7 +168,7 @@ By default, Transfer CFT generates a key length of 2048 bits for its Governance
 
     uconfset id=cg.certificate.business.key_len, value=4096
 
-#### Enable <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+#### Enable {{< TransferCFT/centralgovernancename  >}}
 
 To enable connectivity, enter:
 
@@ -187,13 +187,13 @@ Check the list in the output for errors and correct all errors before attempting
 
 ## Register or re-register
 
-Ensure that `cft_registration_id `is reset to <span class="code">-1</span>. Otherwise, reset it as follows:  
+Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
 
 
 
      CFTUTIL uconfunset id=cg.registration_id
 
-Start the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> Copilot to automatically trigger registration with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>. From the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span>UI, check the **Product List** to confirm that the registration was successful.
+Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration with {{< TransferCFT/centralgovernancename  >}}. From the UI, check the **Product List** to confirm that the registration was successful.
 
 For troubleshooting issues refer to
 [Troubleshooting: Installation and registration.](../../cft_intro_install/unix_install_start_here/troubleshoot_registration)

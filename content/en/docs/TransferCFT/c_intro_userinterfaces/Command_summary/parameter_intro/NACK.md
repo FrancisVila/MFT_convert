@@ -23,9 +23,9 @@ CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server
 
 This parameter enables or disables the NACK feature in either a partner or protocol definition for a non Transfer CFT product.
 
-To enable the use of NACK when connecting to products other than <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span>, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
+To enable the use of NACK when connecting to products other than {{< TransferCFT/componentlongname  >}}, set the parameter NACK to YES in the CFTPROT or CFTPART objects.
 
-However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: <span class="code"> CFTH13E FPDU Remote reject &lt;PART=STREFSSL DIAGI=909 DIAGP=RCO 301></span>
+However, note that the CFTPART NACK value overrides the CFTPROT NACK value. If however, this product does not support a negative acknowledgment, the following error message displays in the log: ` CFTH13E FPDU Remote reject <PART=STREFSSL DIAGI=909 DIAGP=RCO 301>`
 
 > **Note:**
 >

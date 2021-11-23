@@ -6,7 +6,7 @@
 
 When you open the *Server Log* page, {{< SecureTransport/componentshortname  >}} automatically loads the server log records for the past hour. This behavior is determined by the `ServerLog.InitialLoading.Enabled.Admin` server configuration option. It is available on {{< SecureTransport/componentshortname  >}} Edge and {{< SecureTransport/componentshortname  >}} Server and accepts boolean values. The option is set to `true` by default. To disable the initial auto-loading of log entries on the page, set the option to `false`. When having a large number of logs, you can filter the entries based on one or more criteria to speed up reporting.
 
-By default, the server log entries are stored in the {{< SecureTransport/componentshortname  >}} database. If you have the Enterprise Cluster (EC) option and are using an Oracle database, you can store the server log data in a separate external database from the rest of the {{< SecureTransport/componentshortname  >}} data. See <a href="../../c_st_setup/c_st_database/t_st_separate_databases#top" class="MCXref xref">Direct log data to separate Oracle databases</a>.
+By default, the server log entries are stored in the {{< SecureTransport/componentshortname  >}} database. If you have the Enterprise Cluster (EC) option and are using an Oracle database, you can store the server log data in a separate external database from the rest of the {{< SecureTransport/componentshortname  >}} data. See [Direct log data to separate Oracle databases](../../c_st_setup/c_st_database/t_st_separate_databases#top).
 
 Each line in the log display include the following information:
 
@@ -25,6 +25,6 @@ Also, you can export the filtered log entries to a `.csv` file.
 
 The following topics describe viewing, searching, exporting, and managing server log content:
 
--   <a href="t_st_search_view_server_log_contents" class="MCXref xref">Search and view server log contents</a> - Describes and provides how-to instructions on searching and viewing the server log contents.
--   <a href="t_st_export_results_server_log_search" class="MCXref xref">Export the results of a server log search</a> - Describes and provides how-to instructions on exporting the results of a server log search.
--   <a href="c_st_log_entry_maintenance_application" class="MCXref xref">Log Entry Maintenance application</a> - Describes the Log Entry Maintenance application.
+-   [Search and view server log contents](t_st_search_view_server_log_contents) - Describes and provides how-to instructions on searching and viewing the server log contents.
+-   [Export the results of a server log search](t_st_export_results_server_log_search) - Describes and provides how-to instructions on exporting the results of a server log search.
+-   [Log Entry Maintenance application](c_st_log_entry_maintenance_application) - Describes the Log Entry Maintenance application.

@@ -26,5 +26,5 @@ The following example `<FILEDRIVEHOME>/bin/custom_collect_support_information` s
 
 **Related topics:**
 
--   <a href="../t_st_configuresupporttool" class="MCXref xref">Configure the support tool</a>
--   <a href="../t_st_runsupporttool" class="MCXref xref">Run the support tool</a>
+-   [Configure the support tool](../t_st_configuresupporttool)
+-   [Run the support tool](../t_st_runsupporttool)

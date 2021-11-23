@@ -6,16 +6,16 @@
 
 The following topics provide how-to instructions for exporting and importing accounts:
 
--   <a href="#Export_accounts" class="MCXref xref">Export accounts using the Administration Tool</a>
--   <a href="#Export" class="MCXref xref">Export accounts from the command line</a>
--   <a href="#Import_accounts" class="MCXref xref">Import accounts using the Administration Tool</a>
--   <a href="#Import_accounts_com" class="MCXref xref">Import accounts from the command line</a>
+-   [Export accounts using the Administration Tool](#Export_accounts)
+-   [Export accounts from the command line](#Export)
+-   [Import accounts using the Administration Tool](#Import_accounts)
+-   [Import accounts from the command line](#Import_accounts_com)
 
 <span id="Export_accounts"></span>
 
 ## Export accounts using the Administration Tool
 
-You can export accounts using the {{< SecureTransport/componentshortname  >}} Administration Tool. When you use the *Import or Export Accounts* page, all the account information on the server is exported. This includes user accounts, service accounts, account templates, certificates, application instances, business units, administrators, administrative roles, site templates, route packages, and route package templates. To export a single account from the Administration Tool, see <a href="../../../accounts/useraccounts/t_st_export_single_user_account" class="MCXref xref">Export a single user account</a>. To control which account information is exported, see <a href="#Export" class="MCXref xref">Export accounts from the command line</a>.
+You can export accounts using the {{< SecureTransport/componentshortname  >}} Administration Tool. When you use the *Import or Export Accounts* page, all the account information on the server is exported. This includes user accounts, service accounts, account templates, certificates, application instances, business units, administrators, administrative roles, site templates, route packages, and route package templates. To export a single account from the Administration Tool, see [Export a single user account](../../../accounts/useraccounts/t_st_export_single_user_account). To control which account information is exported, see [Export accounts from the command line](#Export).
 
 The exported file is written to the `<FILEDRIVEHOME>/var/tmp/export_accounts.xml` file. This file is overwritten every time you export account information.
 
@@ -191,7 +191,7 @@ Use the following procedure to import accounts using the Administration tool:
     The *Import or Export Accounts* page is displayed.
 2.  Select **Import Accounts**.
 3.  Type the name of the XML file you are importing in the **File Account** field or click **Browse** and locate the file in your system.  
-    The system automatically validates the XML schema. If the schema is invalid, a warning message is displayed. For more information, see <a href="../c_st_account_xml_schema" class="MCXref xref">Account XML schema</a>.  
+    The system automatically validates the XML schema. If the schema is invalid, a warning message is displayed. For more information, see [Account XML schema](../c_st_account_xml_schema).  
     If the XML document is valid, the import process starts.
 4.  In **Duplicated Accounts**, select **Overwrite** to overwrite the previous account settings or **Skip** to skip such accounts.  
     If an account\_export.xml, containing route templates instantiated by accounts with route packages, is imported with **Skip** option selected, to target SecureTransport Server, already configured with route templates, accounts and route packages, the corresponding imported route templates, accounts and route packages are rejected during the import if there are already objects with the same names in the target SecureTransport Server.
@@ -260,5 +260,5 @@ To store the overwrite information in a different directory not relative to `<FI
 
 **Related topics:**
 
--   <a href="../c_st_account_xml_schema" class="MCXref xref">Account XML schema</a>
--   <a href="../c_st_edit_xml_file" class="MCXref xref">Edit an XML file</a>
+-   [Account XML schema](../c_st_account_xml_schema)
+-   [Edit an XML file](../c_st_edit_xml_file)

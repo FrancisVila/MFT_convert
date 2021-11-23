@@ -26,14 +26,14 @@
          <td>Lower than 3.8         </td>
          <td>3.8 and higher         </td>
          <td><p><span id="parmcache"></span>The default value is now 5000 instead of zero, making the cache feature active by default.</p>
-<p>This means that updates no longer occur dynamically; you can execute <span class="code">RECONFIG </span>type<span class="code">=PARMCACHE </span>or wait for a cache timeout as defined in <span class="code">cft.server.parm.cache_timeout (60 seconds).</span></p>         </td>
+<p>This means that updates no longer occur dynamically; you can execute <code>RECONFIG </code>type<code>=PARMCACHE </code>or wait for a cache timeout as defined in <code>cft.server.parm.cache_timeout (60 seconds).</code></p>         </td>
       </tr>
       <tr>
          <td><p>cft.listcat_compat = No</p>
 <p>cft.state_compat = No</p>         </td>
          <td>Lower than 3.8         </td>
          <td>3.8 and higher         </td>
-         <td><p>Modified the default value for the <span class="code">cft.listcat_compat </span>(lstcompat) and <span class="code"> cft.state_compat </span>(stacompat) parameters from YES to NO.</p>         </td>
+         <td><p>Modified the default value for the <code>cft.listcat_compat </code>(lstcompat) and <code>  cft.state_compat     </code>(stacompat) parameters from YES to NO.</p>         </td>
       </tr>
       <tr>
          <td>Amazon S3         </td>
@@ -89,7 +89,7 @@
 <p><strong>Corrective action</strong></p>
 <ol>
 <li>Install the Redistributable package.</li>
-<li>From the <span class="code">cmd </span>console, load the profile.</li>
+<li>From the <code>cmd </code>console, load the profile.</li>
 <li>Import the runtime data by running the import command to complete the upgrade.</li>
 <li>Check that the script executed correctly.</li>
 </ol>         </td>
@@ -136,9 +136,9 @@ If you have set a value higher than 32 kiB, please decrease it to 32768.</p>
          <td>PKIFNAME         </td>
          <td>3.4 and lower         </td>
          <td>3.5 and higher         </td>
-         <td>You can no longer reference a certificate with the PKIFNAME format (<span class="code">CFTPARM:PKIFNAME=TXT://certificate</span>).
+         <td>You can no longer reference a certificate with the PKIFNAME format (<code>CFTPARM:PKIFNAME=TXT://certificate</code>).
 <p>Previously, when implementing an integrated
-PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="code">PKIFNAME=TXT://certificate</span>). If you were using this kind of file and then migrate, you must manually import all certificates into the PKI database.</p>         </td>
+PKI, the PKIFNAME parameter could indicate a flat-file database (<code>PKIFNAME=TXT://certificate</code>). If you were using this kind of file and then migrate, you must manually import all certificates into the PKI database.</p>         </td>
       </tr>
       <tr>
          <td>CFTCRON         </td>
@@ -155,7 +155,7 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
 <p><strong>Note:</strong></p>
 <p>In earlier versions of Transfer CFT, the PKIPASSW parameter was used for encryption in the multiple PKI commands. This functionality is now replaced by the UCONF crypto.key_fname parameter.</p>
 </blockquote>
-<p><span class="bold_in_para">Impact</span></p>
+<p><strong>Impact</strong></p>
 <p>If you are using PKIEXT to export keys during a manual migration, you must use the same PKIPASSW (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw">PKIPASSW</a>.</p>
 <p>For information on exporting keys, please refer to <a href="../../transport_security_start_here/certificates/pkiutil_cli_intro/pkiext">Using PKIEXT</a>.</p>         </td>
       </tr>
@@ -362,7 +362,7 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td>TLS         </td>
          <td>3.2.x and higher         </td>
          <td><p>not applicable</p>         </td>
-         <td><p>When migrating to 3.2.x or higher, SSL transfers may fail with a DIAGP e105s86 or e75s89 when performing transfers with the versions listed below (with the error occurring on the remote <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span>).</p>
+         <td><p>When migrating to 3.2.x or higher, SSL transfers may fail with a DIAGP e105s86 or e75s89 when performing transfers with the versions listed below (with the error occurring on the remote {{< TransferCFT/transfercftname  >}}).</p>
 <p>Affected versions:</p>
 <ul>
 <li>All 3.1.3 SP7 and lower</li>
@@ -374,9 +374,9 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td>CA certificate chains         </td>
          <td>3.1.3 and lower         </td>
          <td>3.2.2 and higher         </td>
-         <td><p>In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA).</p>
+         <td><p>In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA).</p>
 <p><strong>Impact</strong></p>
-<p>In <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.2.2 and higher, the certificate chain must be complete for a transfer to succeed.</p>
+<p>In {{< TransferCFT/transfercftname  >}} 3.2.2 and higher, the certificate chain must be complete for a transfer to succeed.</p>
 <p>For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a></p>         </td>
       </tr>
       <tr>
@@ -386,14 +386,14 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td><p>When upgrading from 3.1.3 to 3.3.2, first check that the PKIPASSW length value is not greater than 8 characters.</p>
 <p>If the value is 8 or less, you can proceed with the upgrade.</p>
 <p>If the PKIPASSW value in the CFTPARM command is greater than 8 characters, perform the steps in the solution below.</p>
-<p><span class="bold_in_para">Solution </span></p>
+<p><strong>Solution</strong></p>
 <p>Prior to migration you  must truncate the password on the Transfer CFT 3.1.3:</p>
 <ol>
 <li>Export the CFTPARM.<br />
 <code>CFTUTIL cftext type=parm, fout=file_parm.out</code></li>
-<li>Modify the PKIPASSW in the file. For example, if the old value was <span class="code">PKIPASSW=12345678910</span>, replace it with <span class="code">PKIPASSW=12345678.</span></li>
+<li>Modify the PKIPASSW in the file. For example, if the old value was <code>PKIPASSW=12345678910</code>, replace it with <code>PKIPASSW=12345678.</code></li>
 <li>Reimport:<br />
-<span class="code">CFTUTIL config type=input,fname=file_parm.out</span></li>
+<code>CFTUTIL config type=input,fname=file_parm.out</code></li>
 <li>Continue the Transfer CFT 3.3.2 upgrade process.</li>
 </ol>         </td>
       </tr>
@@ -402,7 +402,7 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td><p>3.1.3 or lower</p>         </td>
          <td>3.2.2 and higher         </td>
          <td><p>The Copilot application changed from a Java applet to a Java Web Start program.</p>
-<p><span class="bold_in_para">Impact</span></p>
+<p><strong>Impact</strong></p>
 <p>Copilot requires Java 7 or higher.</p>         </td>
       </tr>
       <tr>
@@ -410,8 +410,8 @@ PKI, the PKIFNAME parameter could indicate a flat-file database (<span class="co
          <td>3.1.3         </td>
          <td>3.2.2 and higher         </td>
          <td><p>Non authentication method was available in 3.1.3 and lower (anonymous TLS connection).</p>
-<p><span class="bold_in_para">Impact</span></p>
-<p>This support has been removed in <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> 3.2.2 and higher.
+<p><strong>Impact</strong></p>
+<p>This support has been removed in {{< TransferCFT/transfercftname  >}} 3.2.2 and higher.
 You must update the ROOTCID parameter.</p>         </td>
       </tr>
       <tr>
@@ -419,7 +419,7 @@ You must update the ROOTCID parameter.</p>         </td>
          <td>3.1.3 or lower         </td>
          <td>3.2.2 and higher         </td>
          <td><p>To comply with security standards, as of Transfer CFT version 3.2.2 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively.</p>
-<p><span class="bold_in_para">Impact</span></p>
+<p><strong>Impact</strong></p>
 <p>This means that if some of your partners use a version of Transfer CFT lower than 3.2.2 that does not support TLS 1.2, and you are using ciphers 59, 60 and 61, which requires TLS 1.2 in version 3.2.2 and higher, you must add another cipher in the cipher list and remove ciphers 59, 60, 61 from the partner's cipher list.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
@@ -432,8 +432,8 @@ You must update the ROOTCID parameter.</p>         </td>
          <td>3.1.3 and higher         </td>
          <td><p>Changed the switch log feature behavior.</p>
 <p>In version 3.0.1 or lower, there were two files that automatically alternated.</p>
-<p><span class="bold_in_para">Impact</span></p>
-<p>In version 3.1.3 and higher if you want to continue this functionality, you must set the alternate log file's uconf value <span class="code">cft.cftlog.afname</span> to the alternate file path (for example, <span class="code">$CFTRUNTIME/log/cftloga</span>).</p>         </td>
+<p><strong>Impact</strong></p>
+<p>In version 3.1.3 and higher if you want to continue this functionality, you must set the alternate log file's uconf value <code>cft.cftlog.afname</code> to the alternate file path (for example, <code>$CFTRUNTIME/log/cftloga</code>).</p>         </td>
       </tr>
       <tr>
          <td>Demo certificates         </td>

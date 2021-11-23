@@ -4,21 +4,21 @@
     "weight": "110"
 }The following set of topics provides detailed {{< SecureTransport/componentshortname  >}} login setting configuration and authentication information for end-users and administrators and LDAP and SiteMinder configuration information:
 
--   <a href="c_st_about_sso" class="MCXref xref">Single Sign-On (SSO) and Single Logout (SLO)</a> - Describes the {{< SecureTransport/componentshortname >}} Single Sign-On and Single Logout functionality.
--   <a href="c_st_sso_configuration" class="MCXref xref">Single Sign-On (SSO) configuration</a> - Provides configuration prerequisites, an overview of the main configuration files, and describes configuring SSO.
--   <a href="c_st_enable_sso_admin" class="MCXref xref">Enable Single Sign-On (SSO) for administrators</a> - Describes how to enable SSO for administrators.
--   <a href="c_st_enable_sso_endusers" class="MCXref xref">Enable Single Sign-On (SSO) for end-users</a> - Describes how to enable SSO for end-users.
--   <a href="c_st_multi_idp" class="MCXref xref">Multiple Identity Provider configuration</a> - Describes configuring multiple Identity Providers.
--   <a href="c_st_ss0_streaming" class="MCXref xref">Configure Single Sign-On (SSO) for streaming</a> - Describes configuring SSO for streaming.
--   <a href="c_st_ss0_cluster" class="MCXref xref">Configure Single Sign-On (SSO) for clusters</a> - Describes configuring SSO for clusters.
--   <a href="c_st_identity_provider" class="MCXref xref">SecureTransport as an Identity Provider</a> - Describes using SecureTransport as an Identity Provider.
--   <a href="c_st_sso_authen_flows" class="MCXref xref">Single Sign-On SSO authentication flows</a> - Describes the SSO and SLO authentication flows.
--   <a href="c_st_active_directory" class="MCXref xref">Configure Kerberos as an Identity Provider in SecureTransport</a> - Describes Kerberos SSO authentication with Active Directory.
--   <a href="c_st_login_settings" class="MCXref xref">Login settings</a> - Provides configuration information and instructions for enabling or disabling SSO authentication of end users and administrators, enabling or disabling certificate authentication and client certificate authentication for end users and administrators, enable or disable dual authentication, and set LDAP and SiteMinder authentication levels.
--   <a href="t_st_siteminderintegrationconfiguration" class="MCXref xref">SiteMinder integration configuration</a> - Provides how-to instructions for configuring the SiteMinder integration.
--   <a href="c_st_ldapintegration" class="MCXref xref">LDAP integration</a> - Describes the {{< SecureTransport/componentshortname >}} LDAP integration.
--   <a href="c_st_ldap_connections_binds_searches" class="MCXref xref">LDAP connections, binds, and searches</a> - Describes the configuration of LDAP connections, binds, and searches.
--   <a href="c_st_ldap_logins" class="MCXref xref">LDAP logins</a> - Describes how LDAP logins are used and searched when LDAP is enabled.
--   <a href="t_st_ldapsettings" class="MCXref xref">LDAP domains</a> - Describes the management and configuration of LDAP domains.
--   <a href="t_st_ldaphomefolders" class="MCXref xref">LDAP home folders</a> - Describes LDAP homes folders and provides LDAP home folder configuration instructions.
--   <a href="t_st_ldapusertype" class="MCXref xref">LDAP user type ranges</a> - Describes the configuration of LDAP user type ranges on UNIX systems.
+-   [Single Sign-On (SSO) and Single Logout (SLO)](c_st_about_sso) - Describes the {{< SecureTransport/componentshortname >}} Single Sign-On and Single Logout functionality.
+-   [Single Sign-On (SSO) configuration](c_st_sso_configuration) - Provides configuration prerequisites, an overview of the main configuration files, and describes configuring SSO.
+-   [Enable Single Sign-On (SSO) for administrators](c_st_enable_sso_admin) - Describes how to enable SSO for administrators.
+-   [Enable Single Sign-On (SSO) for end-users](c_st_enable_sso_endusers) - Describes how to enable SSO for end-users.
+-   [Multiple Identity Provider configuration](c_st_multi_idp) - Describes configuring multiple Identity Providers.
+-   [Configure Single Sign-On (SSO) for streaming](c_st_ss0_streaming) - Describes configuring SSO for streaming.
+-   [Configure Single Sign-On (SSO) for clusters](c_st_ss0_cluster) - Describes configuring SSO for clusters.
+-   [SecureTransport as an Identity Provider](c_st_identity_provider) - Describes using SecureTransport as an Identity Provider.
+-   [Single Sign-On SSO authentication flows](c_st_sso_authen_flows) - Describes the SSO and SLO authentication flows.
+-   [Configure Kerberos as an Identity Provider in SecureTransport](c_st_active_directory) - Describes Kerberos SSO authentication with Active Directory.
+-   [Login settings](c_st_login_settings) - Provides configuration information and instructions for enabling or disabling SSO authentication of end users and administrators, enabling or disabling certificate authentication and client certificate authentication for end users and administrators, enable or disable dual authentication, and set LDAP and SiteMinder authentication levels.
+-   [SiteMinder integration configuration](t_st_siteminderintegrationconfiguration) - Provides how-to instructions for configuring the SiteMinder integration.
+-   [LDAP integration](c_st_ldapintegration) - Describes the {{< SecureTransport/componentshortname >}} LDAP integration.
+-   [LDAP connections, binds, and searches](c_st_ldap_connections_binds_searches) - Describes the configuration of LDAP connections, binds, and searches.
+-   [LDAP logins](c_st_ldap_logins) - Describes how LDAP logins are used and searched when LDAP is enabled.
+-   [LDAP domains](t_st_ldapsettings) - Describes the management and configuration of LDAP domains.
+-   [LDAP home folders](t_st_ldaphomefolders) - Describes LDAP homes folders and provides LDAP home folder configuration instructions.
+-   [LDAP user type ranges](t_st_ldapusertype) - Describes the configuration of LDAP user type ranges on UNIX systems.

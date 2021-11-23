@@ -10,7 +10,7 @@
 
 #### CFTRECV, CFTSEND, RECV, SEND
 
-**\[STATE = { <span style="text-decoration: underline;">DISP</span>
+**\[STATE = {
 | HOLD | KEEP}\]**
 
 Defines the transfer request state:
@@ -53,7 +53,7 @@ Select one of the following transfer states:
 
 State of the partner:
 
--   <span style="font-weight: bold;">ACTIVEBOTH</span> (default)- partner active
+-   **ACTIVEBOTH** (default)- partner active
     in all modes
 -   <span style="font-weight: bold;">ACTIVEREQ</span> - partner active in request
     mode only

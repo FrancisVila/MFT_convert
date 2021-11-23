@@ -8,20 +8,20 @@ There are two categories of processes, those that implement file transfer and re
 
 The following topics describe the file transfer and admin processes:
 
--   <a href="#File" class="MCXref xref">File transfer processes</a>
--   <a href="#Admin" class="MCXref xref">Admin processes</a>
+-   [File transfer processes](#File)
+-   [Admin processes](#Admin)
 
 **Related topics:**
 
--   <a href="" class="MCXref xref">Manage server operations</a>
--   <a href="" class="MCXref xref">Manage the FTP server</a>
--   <a href="" class="MCXref xref">Manage the HTTP server</a>
--   <a href="" class="MCXref xref">Manage the AS2 server</a>
--   <a href="" class="MCXref xref">Manage the SSH server</a>
--   <a href="" class="MCXref xref">Manage the PeSIT server</a>
--   <a href="" class="MCXref xref">Manage the Transaction Manager server</a>
--   <a href="" class="MCXref xref">Manage the Proxy server on SecureTransport Edge</a>
--   <a href="../t_st_monitorserver" class="MCXref xref">Monitor server</a>
+-   [Manage server operations]()
+-   [Manage the FTP server]()
+-   [Manage the HTTP server]()
+-   [Manage the AS2 server]()
+-   [Manage the SSH server]()
+-   [Manage the PeSIT server]()
+-   [Manage the Transaction Manager server]()
+-   [Manage the Proxy server on SecureTransport Edge]()
+-   [Monitor server](../t_st_monitorserver)
 
 <span id="File"></span>
 

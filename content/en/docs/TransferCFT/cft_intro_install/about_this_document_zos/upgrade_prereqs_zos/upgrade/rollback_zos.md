@@ -5,7 +5,7 @@
 }## Prerequisites
 
 -   You must have made a backup of the environment prior to the upgrade you are rolling back.
--   Upgraded from <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> 3.4 or higher to <span class="mc-variable header_footer_variables.hf_long_product_name variable">Transfer CFT</span> <span class="mc-variable axway_variables.Release_Number variable">3.9</span>
+-   Upgraded from {{< TransferCFT/hflongproductname >}} 3.4 or higher to {{< TransferCFT/hflongproductname >}} {{< TransferCFT/releasenumber >}}
 
 ## Procedure
 

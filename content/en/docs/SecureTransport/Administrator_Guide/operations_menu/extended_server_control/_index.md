@@ -2,7 +2,7 @@
     "title": "Server control",
     "linkTitle": "Server Control",
     "weight": "80"
-}**<a href="../" class="MCXref xref">Operations</a> &gt; Server Control**
+}**[Operations](../) &gt; Server Control**
 
 The *Server Control* page is the entry point for {{< SecureTransport/componentshortname  >}} administrators on successful login. Here you view and manage all protocol servers, the TM server and the Monitor server of your system.
 
@@ -10,13 +10,13 @@ Server control is available on both {{< SecureTransport/securetransportname  >}}
 
 In this topic you will learn about:
 
--   <a href="#Server2" class="MCXref xref">Server Control: Protocol servers</a>
--   <a href="#Server6" class="MCXref xref">Server Control: Folder Monitor</a>
--   <a href="#Server7" class="MCXref xref">Server Control: Scheduler</a>
--   <a href="#Server3" class="MCXref xref">Server Control: Transaction Manager server</a>
--   <a href="#Server4" class="MCXref xref">Server Control: Monitor server</a>
--   <a href="#Server" class="MCXref xref">Server status indicators</a>
--   <a href="#Server5" class="MCXref xref">Server Control on SecureTransport Edge</a>
+-   [Server Control: Protocol servers](#Server2)
+-   [Server Control: Folder Monitor](#Server6)
+-   [Server Control: Scheduler](#Server7)
+-   [Server Control: Transaction Manager server](#Server3)
+-   [Server Control: Monitor server](#Server4)
+-   [Server status indicators](#Server)
+-   [Server Control on SecureTransport Edge](#Server5)
 
 <span id="Server2"></span>
 
@@ -33,12 +33,12 @@ For each server, the panel displays current *Status*, basic configuration option
 
 The following topics provide more details on adding and editing server daemons with the respective protocol:
 
--   <a href="ext_servercontrol-add-ftp" class="MCXref xref">Manage the FTP server</a>
--   <a href="ssh-daemon-conf/ext_servercontrol-add-ssh" class="MCXref xref">Manage the SSH server</a>
--   <a href="ext_servercontrol-add-http" class="MCXref xref">Manage the HTTP server</a>
--   <a href="ext_servercontrol-add-as2" class="MCXref xref">Manage the AS2 server</a>
--   <a href="ext_servercontrol-add-pesit" class="MCXref xref">Manage the PeSIT server</a>
--   <a href="advanced-server-config" class="MCXref xref">Advanced protocol server configuration</a>
+-   [Manage the FTP server](ext_servercontrol-add-ftp)
+-   [Manage the SSH server](ssh-daemon-conf/ext_servercontrol-add-ssh)
+-   [Manage the HTTP server](ext_servercontrol-add-http)
+-   [Manage the AS2 server](ext_servercontrol-add-as2)
+-   [Manage the PeSIT server](ext_servercontrol-add-pesit)
+-   [Advanced protocol server configuration](advanced-server-config)
 
 ### Disabling protocol servers
 
@@ -67,7 +67,7 @@ Its dedicated pane allows you to see its *Status* and to *Start* theScheduler (w
 
 The Transaction Manager (TM) server connects to the ports specified in the network zones. Its dedicated pane allows you to see its *Status* and to *Start* the TM (when not running) or *Stop* the TM (when running).
 
-For more information, see <a href="../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202" class="MCXref xref">Communication across Transaction Manager, protocol, and proxy servers</a>.
+For more information, see [Communication across Transaction Manager, protocol, and proxy servers](../../c_st_setup/c_st_networkzones#SetupMenu_1217491348_1149202).
 
 > **Note:**
 >
@@ -79,7 +79,7 @@ For more information, see <a href="../../c_st_setup/c_st_networkzones#SetupMenu_
 
 The Monitor Server uses the `monitord` monitoring service to perform periodical checks and identify if the {{< SecureTransport/componentshortname  >}} servers are functional or not. Its dedicated pane allows you to see its *Status* and to *Start* the TM (when not running) or *Stop* the TM (when running).
 
-For more information, see <a href="t_st_monitorserver" class="MCXref xref">Monitor server</a>.
+For more information, see [Monitor server](t_st_monitorserver).
 
 <span id="Server"></span>
 

@@ -16,7 +16,7 @@ Enabling IPv6 support for applications may have adverse effects on the behavior 
 
 ### Unified configuration settings
 
-To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to <span class="bold_in_para">NO </span>using either the <span class="code">CFTUTIL uconfset</span> command or the UI [Unified configuration](../../admin_intro/uconf) option.
+To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to **NO** using either the `CFTUTIL uconfset` command or the UI [Unified configuration](../../admin_intro/uconf) option.
 
 <table>
    <thead>
@@ -46,15 +46,15 @@ You can also configure IPv6 addresses instead of names in the Transfer CFT conf
 
 ### About name resolution
 
-When <span class="code">ipv6.disable\_connect</span> is set to <span class="bold_in_para">No</span>, a hostname used by Transfer CFT to connect to a host may refer to either an IPv4 or IPv6 address, or a list of addresses of any type.
+When `ipv6.disable_connect` is set to **No**, a hostname used by Transfer CFT to connect to a host may refer to either an IPv4 or IPv6 address, or a list of addresses of any type.
 
-When a name resolution request returns a list of several entries, Transfer CFT tries all entries successively until either the connection succeeds or the list is exhausted. This behavior allows Transfer CFT, in a situation where the name might refer to both IPv4 and IPv6 addresses, to successfully connect to a remote service that is listening for either IPv6 TCP connections <span class="italic_in_para">or</span> IPv4 TCP connections, but not listening for both address types.
+When a name resolution request returns a list of several entries, Transfer CFT tries all entries successively until either the connection succeeds or the list is exhausted. This behavior allows Transfer CFT, in a situation where the name might refer to both IPv4 and IPv6 addresses, to successfully connect to a remote service that is listening for either IPv6 TCP connections IPv4 TCP connections, but not listening for both address types.
 
-When <span class="code">ipv6.disable\_listen</span> is set to <span class="bold_in_para">No</span>, the hostname used by Transfer CFT to listen for incoming connections can refer to an IPv4 address, an IPv6 address, or  a list of addresses of any type. If the name resolution request returns a list with several results, Transfer CFT listens only to the first entry in the list.
+When `ipv6.disable_listen` is set to **No**, the hostname used by Transfer CFT to listen for incoming connections can refer to an IPv4 address, an IPv6 address, or  a list of addresses of any type. If the name resolution request returns a list with several results, Transfer CFT listens only to the first entry in the list.
 
 When the resolution list contains both IPv4 and IPv6 entries, the first entry generally refers to an IPv6 address, although all operating systems are not guaranteed to respond this way. When Transfer CFT listens on an IPv6 address of a network interface, it may or may not also receive IPv4 incoming connections targeting this interface. See [Hybrid dual-stack implementation](#Hybrid%20dual-stack%20implementation).
 
-While you can configure the two IPv6 UCONF parameters independently, it is recommended that you **not** set<span class="code"> ipv6.disable\_listen</span> to <span class="code">No</span>, and <span class="code">ipv6.disable\_connect</span> to <span class="code">Yes</span>.
+While you can configure the two IPv6 UCONF parameters independently, it is recommended that you **not** set` ipv6.disable_listen` to `No`, and `ipv6.disable_connect` to `Yes`.
 
 <span id="host attributes in CFTNET"></span>
 
@@ -93,7 +93,7 @@ In the current version of Transfer CFT, this option is not changed by the softwa
 
 If IPv6 is not properly configured, performance may be affected. Use the following UCONF parameters to regulate numeric host name and service name resolution, and revert to IPv4 functionality if required.
 
-<span class="autonumber"></span>Tuning parameters
+Tuning parameters
 
 <table>
    <thead>
@@ -108,27 +108,27 @@ If IPv6 is not properly configured, performance may be affected. Use the followi
          <td><p>cft.ipv6.set_ai_numerichost</p>         </td>
          <td>Yes         </td>
          <td><ul>
-<li><span class="bold_in_para">Yes</span>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.</li>
-<li><span class="bold_in_para">No</span>: Use DNS requests for all hostnames, including numeric.</li>
+<li><strong>Yes</strong>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.</li>
+<li><strong>No</strong>: Use DNS requests for all hostnames, including numeric.</li>
 </ul>         </td>
       </tr>
       <tr>
          <td>cft.ipv6.set_ai_numericserv         </td>
          <td>Yes         </td>
          <td><ul>
-<li><span class="bold_in_para">Yes</span>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.</li>
-<li><span class="bold_in_para">No</span>: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>
+<li><strong>Yes</strong>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.</li>
+<li><strong>No</strong>: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>
 </ul>         </td>
       </tr>
       <tr>
          <td>cft.ipv6.use_ipv4_legacy_resolver         </td>
          <td>No         </td>
          <td><ul>
-<li><span class="bold_in_para">Yes</span>: Use legacy IPv4 only with the host and
+<li><strong>Yes</strong>: Use legacy IPv4 only with the host and
 service names resolution APIs, gethostbyname() and getservbyname().
 This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation,
 etc.</li>
-<li><span class="bold_in_para">No</span>: Use IPv6 functionality.</li>
+<li><strong>No</strong>: Use IPv6 functionality.</li>
 </ul>         </td>
       </tr>
    </tbody>
@@ -136,9 +136,9 @@ etc.</li>
 
 ### IPv6 support
 
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> provides support for both IPV4 and IPV6.
+{{< TransferCFT/componentshortname  >}} provides support for both IPV4 and IPV6.
 
-<span class="autonumber"></span>Enable IPv6
+Enable IPv6
 
 <table>
    <thead>
@@ -150,11 +150,11 @@ etc.</li>
    <tbody>
       <tr>
          <td><p>ipv6.disable_connect</p>         </td>
-         <td><p><strong>No</strong> indicates that an address or a name used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
+         <td><p><strong>No</strong> indicates that an address or a name used by {{< TransferCFT/componentshortname  >}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
          <td>ipv6.disable_listen         </td>
-         <td><p><strong>No</strong> indicates that an address or name used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
+         <td><p><strong>No</strong> indicates that an address or name used by {{< TransferCFT/componentshortname  >}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
 <p>When using a name, this parameter can refer to a list of addresses, of any type.</p>         </td>
       </tr>
       <tr>
@@ -170,7 +170,7 @@ etc.</li>
 
 ## Reference materials
 
-Transfer CFT <span class="mc-variable axway_variables.Component_Version variable">3.9</span> code changes are based on the following documentation:
+Transfer CFT {{< TransferCFT/componentversion  >}} code changes are based on the following documentation:
 
 -   RFC 3493 *Basic Socket Interface Extensions for IPv6*
 -   IEEE-1003.1-2004 *System Interfaces*

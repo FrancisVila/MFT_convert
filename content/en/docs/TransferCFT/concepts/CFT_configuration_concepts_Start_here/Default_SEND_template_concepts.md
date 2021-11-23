@@ -23,9 +23,6 @@ CFTPARM object.
 
 Certain default template objects cannot be deleted. The template CFTSEND and CFTRECV objects can not be deleted if they are used by another configuration.
 
-<span style="color: #800000; text-decoration: none; font-weight: normal;">Related
-topics</span>
-
 -   Command syntax
     [CFTSEND](../../../c_intro_userinterfaces/command_summary#CFTSEND)
 -   Parameter list
@@ -43,8 +40,7 @@ topics</span>
 CFTSEND commands include parameters controlling the access to the data
 to be sent and the send transfer process.
 
-A CFTSEND command (*default <span style="font-style: normal;">command
-excluded</span>*) controls the sending of the model file with the same
+A CFTSEND command (*default* ) controls the sending of the model file with the same
 identifier (IDF equal to the ID of the CFTSEND command).
 
 This command is taken into account in one or other of the following
@@ -83,7 +79,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
 -   To control
     access to the data to be sent  
     In this case, only the characteristics of the file which do not vary
-    from one transfer to another and which <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cannot locate automatically,
+    from one transfer to another and which {{< TransferCFT/componentshortname >}} cannot locate automatically,
     are generally specified.  
     For example, when the same local physical filename is always associated
     with the model file (IDF), it is logical to specify this name by indicating
@@ -98,7 +94,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
     characteristics: values to be sent to the partner, in protocol parameters,
     to describe the file (a physical filename can even be sent - see open mode).  
       
-    The physical characteristics that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is able to locate automatically
+    The physical characteristics that {{< TransferCFT/componentshortname >}} is able to locate automatically
     for the local file, can be considered as default values for the corresponding
     CFT SEND parameters (example: local record length: FLRECL), parameters
     which themselves consist of default values for the network characteristics
@@ -157,7 +153,7 @@ parameters:
     related (PeSIT D CFT profile or PeSIT E): RUSER, SUSER
 
 Free parameters
-for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user:
+for the {{< TransferCFT/componentshortname  >}} user:
 
 -   Sent to the
     receiver: PARM, SPART
@@ -216,7 +212,7 @@ The example below illustrates the relationships to be established between the us
 and the CFTSEND and CFTPART parameter setting commands.
 
 Correspondence
-between the SEND command (file) and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter setting
+between the SEND command (file) and {{< TransferCFT/componentshortname  >}} parameter setting
 
 If there is no CFTSEND command with an
 identifier ID = FI, the default characteristics indicated in the CFTSEND

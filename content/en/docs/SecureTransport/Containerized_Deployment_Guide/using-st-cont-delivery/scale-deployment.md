@@ -6,7 +6,7 @@
 
 ## SecureTransport Edge automatic discovering mechanism
 
-For better understanding of the automatic discovering of Edges, you can observe that same high-level diagram of the Streaming setup, discussed in the <a href="../deployment-topology" class="MCXref xref">Deployment topology</a> topic.
+For better understanding of the automatic discovering of Edges, you can observe that same high-level diagram of the Streaming setup, discussed in the [Deployment topology](../deployment-topology) topic.
 
 ![](/Images/SecureTransport/streaming-protocol.png)
 
@@ -74,8 +74,8 @@ Fill in your namespace if you have it configured or remove the option if you don
 Executing the command will tell Kubernetes to scale-up nodes one by one. The new instances of EC nodes will be created as they become in ready state in a matter of seconds, but will be functional after their average time to start. The new instances of Edge nodes will be created one by one after each one of them is in ready state.
 
 -   It is recommended to have only one Server StatefulSet in the internal Kubernetes cluster, with multiple Edge StatefulSets (if needed) in the DMZ Kubernetes cluster.
--   Multiple Edges in the {{< SecureTransport/componentshortname >}} configuration are supported only when a separate zone is configured for each Edge. See section <a href="../additional-network-zones" class="MCXref xref">Multiple network zones</a> for further information.
--   Changes in configuration which is dynamically reloaded is not replicated if there more than one Edge. See section <a href="../initial-deployment" class="MCXref xref">Initial deployment</a> for further information.
+-   Multiple Edges in the {{< SecureTransport/componentshortname >}} configuration are supported only when a separate zone is configured for each Edge. See section [Multiple network zones](../additional-network-zones) for further information.
+-   Changes in configuration which is dynamically reloaded is not replicated if there more than one Edge. See section [Initial deployment](../initial-deployment) for further information.
 -   In multiple (more than one) Edge deployments, HTTP, FTP and SSH sessions established on the Edge side cannot be killed via the Server Usage monitor on the SecureTransport Server. The administrator can manipulate via the Server Usage monitor only the local sessions of each SecureTransport Edge.
 
 ## Automatically scale nodes
@@ -96,4 +96,4 @@ In order to stop the autoscaling the following command should be executed.
 
 It is recommended to deploy the HPA (Horizontal Pod Autoscaler) after the desired minimum nodes are deployed, as during startup SecureTransport services use large amount of processing power and iniitially the StatefulSet can be scaled incorrectly.
 
-*next topic:* <a href="../additional-network-zones" class="MCXref xref">Multiple network zones</a>
+*next topic:* [Multiple network zones](../additional-network-zones)

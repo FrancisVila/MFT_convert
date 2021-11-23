@@ -55,4 +55,4 @@ In order to address the requirement for manual/automatic scalability of the cont
 
 For more information, see [Axway and third-party software support](https://docs.axway.com/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5/page/Content/AdministratorsGuide/introduction/r_st_Axway_and_third-party_software_support.htm#database) topic in the {{< SecureTransport/componentshortname  >}} {{< SecureTransport/releasenumber  >}} *Administrator guide*.
 
-*next topic:* <a href="classic-vs-containerized" class="MCXref xref">Containerized deployment specifics</a>
+*next topic:* [Containerized deployment specifics](classic-vs-containerized)

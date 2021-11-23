@@ -14,7 +14,7 @@ After increasing the logging level settings, restart Transaction Manager to appl
 
 **Related topic:**
 
--   <a href="../c_st_siteminder_troubleshooting_tools" class="MCXref xref">SiteMinder troubleshooting tools</a>
+-   [SiteMinder troubleshooting tools](../c_st_siteminder_troubleshooting_tools)
 
 ## Restart Transaction Manager
 

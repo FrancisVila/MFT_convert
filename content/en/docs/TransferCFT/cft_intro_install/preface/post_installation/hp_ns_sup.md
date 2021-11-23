@@ -27,7 +27,7 @@ The differences between the CFTSUP interface and the NonStop mode delivered in T
 
 -   The Transfer CFT server and Transfer CFT Copilot server are both managed in NonStop mode.
 -   The CFTSUP interface replaces the former CFTNSMON and CFTNSHUT commands.
--   Transfer CFT stops and is not restarted unless the reset command is set to<span class="code"> RESTART=YES</span> when you execute the Transfer CFT command <span class="code">CFTUTIL SHUT &lt;...</span>&gt;.
+-   Transfer CFT stops and is not restarted unless the reset command is set to` RESTART=YES` when you execute the Transfer CFT command `CFTUTIL SHUT <...`&gt;.
 
 <span id="Enable"></span>
 
@@ -43,8 +43,8 @@ More information and additional commands are described in the following sections
 
 ### Recommendations
 
--   You can use the <span class="code">cftsup cft start </span>command to start Transfer CFT, which also starts the supervisor. However, this does not mean the NonStop mode is running. To implement the NonStop mode, you must activate <span class="code">cft.guardian.nonstop</span> in the UCONF configuration.
--   If you need to kill the Transfer CFT server, for example, use the <span class="code">cftsup cft kill</span> command to keep the component from restarting.
+-   You can use the `cftsup cft start `command to start Transfer CFT, which also starts the supervisor. However, this does not mean the NonStop mode is running. To implement the NonStop mode, you must activate `cft.guardian.nonstop` in the UCONF configuration.
+-   If you need to kill the Transfer CFT server, for example, use the `cftsup cft kill` command to keep the component from restarting.
 
 <span id="Configur"></span>
 
@@ -97,14 +97,14 @@ The following table lists the UCONF parameters related to the NonStop option con
 
 ### Customize the EMS collector
 
-To use the same collector for the supervisor as for <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> log messages, perform the following steps:
+To use the same collector for the supervisor as for {{< TransferCFT/transfercftname  >}} log messages, perform the following steps:
 
-1.  Set the uconf <span class="code">cft.guardian.collector</span> value to the name of the collector.  
+1.  Set the uconf `cft.guardian.collector` value to the name of the collector.  
 
 
         CFTUTIL uconfset id=cft.guardian.collector,value='$QACOL'
 
-2.  In the Transfer CFT configuration, modify the CFTLOG definition to: <span class="code">NOTIFY=’%uconf:cft.guardian.collector%’. F</span>or example<span class="code">:</span>  
+2.  In the Transfer CFT configuration, modify the CFTLOG definition to: `NOTIFY=’%uconf:cft.guardian.collector%’. F`or example`:`  
 
 
 
@@ -138,12 +138,12 @@ component \[<u>ALL</u> | SUPV | CFT | COPILOT\]
 -   ALL (default): Action applies to all components
 -   SUPV: Watchdog utility
     -   Process is started with the name: prefix added to SUP
-        -   For example: <span class="code">CFTL50I Started the supervisor with process id $</span>**LASUP**
-        -   Prefix = cft.guardian.process\_name\_prefix (the prefix in the example is <span class="code">LA</span>)
+        -   For example: `CFTL50I Started the supervisor with process id $`**LASUP**
+        -   Prefix = cft.guardian.process\_name\_prefix (the prefix in the example is `LA`)
     -   Stops when all components are terminated except if it was started explicitly as standalone process:
-    -   <span style="font-family: 'Courier New';">cftsup SUPV START</span>
+    -   
     -   In this case, it only stops with an explicit stop:
-    -   <span style="font-family: 'Courier New';">cftsup SUPV STOP</span>
+    -   
 -   CFT: Action applies to the Transfer CFT server
 -   COPILOT: Action applies to Transfer CFT Copilot server
 
@@ -161,7 +161,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
 
 ### Messages
 
-<span class="autonumber"></span>Message when starting the supervisor and all components
+Message when starting the supervisor and all components
 
 
 
@@ -171,7 +171,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
     CFTL50I Started Transfer CFT with process id $MDAIN
     CFTL50I Started COPILOT with process id $MDCOP
 
-<span class="autonumber"></span>Message when checking the status
+Message when checking the status
 
 
 
@@ -181,7 +181,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
     CFTL50I CFT ($MDAIN) status Running
     CFTL50I COPILOT ($MDCOP) status Running
 
-<span class="autonumber"></span>Message when performing a stop
+Message when performing a stop
 
 
 
@@ -191,7 +191,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
     CFTL50I Started COPSTOP with process id $MDCST
     CFTL57E Error: Transfer CFT is still active (status=TERMINATING)
 
-<span class="autonumber"></span>Message when the supervisor is not started
+Message when the supervisor is not started
 
 
 
@@ -203,7 +203,7 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
 
 ## Help
 
-From the home directory, enter the <span class="code">help </span>command. For example:
+From the home directory, enter the `help `command. For example:
 
 
 
@@ -213,7 +213,7 @@ From the home directory, enter the <span class="code">help </span>command. For e
     : cftsup ? (or HELP) for a list of the component and actions
     : cftsup Component ?  (HELP) for actions to perform on components
 
-Use <span class="code">command ?</span> to display the parameter list:
+Use `command ?` to display the parameter list:
 
 
     /home/axway/<user>: cftsup "action" ?

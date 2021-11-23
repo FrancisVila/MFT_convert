@@ -48,7 +48,7 @@ You can delegate certificate-issuing responsibilities to subordinate
 CAs. The X.509 standard includes a model for setting up a hierarchy of
 CAs as shown in the following figure.
 
-<span class="autonumber"></span>CA hierarchy
+CA hierarchy
 
 <img src="/Images/TransferCFT/certificates3.gif" width="676" height="434" alt="Relationship between the Root CA and related certificates, such as Asia and Europe" />
 
@@ -83,7 +83,7 @@ root of the hierarchy. A certificate chain is formed that way:
     contains the name (DN) of that certificate's issuer, which is the same
     as the subject name of the next certificate in the chain
 
-<span class="autonumber"></span>Certificate chains
+Certificate chains
 
 <img src="/Images/TransferCFT/certificates2.gif" width="676" height="253" alt="View of Trusted Root CA with some related certificates being Untrusted certificates" />
 
@@ -123,7 +123,7 @@ certificate chain is well formed, valid, properly signed, and trustworthy:
 
 The following figure presents an example of this process.
 
-<span class="autonumber"></span>Verifying a certificate chain
+Verifying a certificate chain
 
 <img src="/Images/TransferCFT/certificate1.gif" width="609" height="350" alt="Validity checks on Untrusted Authorities, where Root CA is a Trusted Authority" />
 

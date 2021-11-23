@@ -2,7 +2,7 @@
     "title": "Transfer CFT: Install, update, upgrade or migrate",
     "linkTitle": "Installation (allOS)",
     "weight": "60"
-}The Transfer CFT installation and migration documentation provides instructions for installing, upgrading, migrating, and deploying your <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, and includes the following information:
+}The Transfer CFT installation and migration documentation provides instructions for installing, upgrading, migrating, and deploying your {{< TransferCFT/componentshortname  >}}, and includes the following information:
 
 -   How to prepare for installation
 -   How to install
@@ -34,7 +34,7 @@ In this version, the following actions are not available:
 
 ## Discontinued support 
 
-Refer to the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> <span class="mc-variable axway_variables.Release_Number variable">3.9</span> Release Notes for changes in supported functionality, networks, protocols, etc.
+Refer to the {{< TransferCFT/transfercftname  >}} {{< TransferCFT/releasenumber  >}} Release Notes for changes in supported functionality, networks, protocols, etc.
 
 <span id="Migratio"></span>
 
@@ -44,7 +44,7 @@ You should be aware of the following features or parameters, which were modified
 
 ### More information
 
--   Additional documentation is available at <span class="mc-variable axway_variables.Company_Name variable">Axway</span> Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
+-   Additional documentation is available at {{< TransferCFT/companyname >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a>.
 
 <!-- -->
 

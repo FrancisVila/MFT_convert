@@ -177,7 +177,7 @@ The MQUERY command displays the current log content, the catalog and cache for 
 #### Parameters
 
 -   OBJECT: Possible values ​​are:
-    -   CACHE: Select to list the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog or command cache.
+    -   CACHE: Select to list the {{< TransferCFT/componentshortname >}} catalog or command cache.
     -   SYSTEM: Lists system information.
 -   CONTENT: Possible values ​​are FUL / BRIEF.
 -   NAME: Possible values ​​are:

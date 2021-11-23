@@ -91,7 +91,7 @@ of the calling partner.
    </tbody>
 </table>
 
-When the user function is called, if the partner name <span style="font-weight: bold;">part</span>
+When the user function is called, if the partner name **part**
 is empty, so that the partner local identifier is unknown to Transfer
 CFT, the only fields that contain valid data (imintime and imintime are
 initialized to "23595999" and "00000000" respectively)

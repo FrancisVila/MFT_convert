@@ -13,5 +13,5 @@
 
 **Related topics:**
 
--   <a href="../r_st_predefined_administrative_roles" class="MCXref xref">Predefined administrative roles</a>
--   <a href="../r_st_add_administrative_role" class="MCXref xref">Add an administrative role</a>
+-   [Predefined administrative roles](../r_st_predefined_administrative_roles)
+-   [Add an administrative role](../r_st_add_administrative_role)

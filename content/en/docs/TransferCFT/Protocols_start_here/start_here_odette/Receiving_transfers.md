@@ -64,7 +64,7 @@ If a record is longer than 2048 , the monitor interrupts the transfer
 with the diagnostic codes: DIAGI=230,
 DIAGP=LDT\_TXT.
 
-If the receiver file type is not defined, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> assigns the value
+If the receiver file type is not defined, {{< TransferCFT/componentshortname  >}} assigns the value
 contained in the table below, according to the receiving system.
 
 <table>
@@ -200,7 +200,7 @@ Note:
     error during the data transfer phase and retrying is forbidden, the transfer
     (requester mode) is restarted from the beginning of the file
 
-<span class="autonumber"></span>Example of receiving all the pending
+Example of receiving all the pending
 files
 
 <img src="/Images/TransferCFT/Image1689.gif" width="551" height="579" alt="Site A receives all pending files from Site B" />

@@ -4,13 +4,13 @@
     "weight": "2380"
 }<span id="ocode"></span>
 
-### <span class="mc-variable System.Title variable">ocode</span>
+### 
 
 #### COPYFILE
 
-**<span style="font-weight: bold;">\[OCODE =
+****\[OCODE =
 {<u>internal code determined by the system</u>
-| ASCII | EBCDIC}\]</span><span style="font-weight: normal;"> </span>**
+| ASCII | EBCDIC}\]**<span style="font-weight: normal;"> </span>**
 
 Output file data code.
 

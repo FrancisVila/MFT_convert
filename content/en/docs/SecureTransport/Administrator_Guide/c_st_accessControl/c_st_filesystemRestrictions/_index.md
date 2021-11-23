@@ -43,4 +43,4 @@ Configure filesystem restrictions on {{< SecureTransport/componentshortname  >}}
 
 The following topic describes how to manage filesystem restrictions:
 
--   <a href="t_st_filesystemrestrictions" class="MCXref xref">Manage filesystem restrictions</a> - Provides how-to instructions for managing filesystem restrictions.
+-   [Manage filesystem restrictions](t_st_filesystemrestrictions) - Provides how-to instructions for managing filesystem restrictions.

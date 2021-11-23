@@ -2,7 +2,7 @@
     "title": "SSH concepts",
     "linkTitle": "SSH concepts",
     "weight": "150"
-}T<span style="font-weight: normal;">**he supported operating systems are listed in the** [Platform features](../../../datasheet) **table.**</span>
+}T
 
 The SSH protocol is an encrypted protocol that uses a client-server model to authenticate two parties and encrypt the data between them.
 

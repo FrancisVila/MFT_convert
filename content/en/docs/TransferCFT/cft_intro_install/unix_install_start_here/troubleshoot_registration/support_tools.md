@@ -37,7 +37,7 @@ To submit a Support request, you can do the following:
 
 ## Using cft\_support
 
-The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called <span class="bold_in_para">cft-support-&lt;date>(.tar.gz|.zip)</span>.
+The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called **cft-support-&lt;date>(.tar.gz|.zip)**.
 
 > **Note:**
 >
@@ -49,13 +49,13 @@ From the Copilot UI, click the ![Debug command icon](/Images/TransferCFT/debug_a
 
 ### Using command line
 
-In command line, enter: <span class="code">cft\_support collect</span> <span class="code">\[options\]</span>
+In command line, enter: `cft_support collect` `[options]`
 
 Options:
 
 -   --help: Display this help and exit.
--   --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter <span class="code">CFTUTIL HELP CMD=LISTCAT</span>, to view available parameters.
--   --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides <span class="code">--cat-filter.</span>
+-   --cat-filter: Filter the CFTUTIL LISTCAT output. See [LISTCAT](../../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listcat_command), or enter `CFTUTIL HELP CMD=LISTCAT`, to view available parameters.
+-   --cat-debug-filter: Filter the CFTUTIL LISTCAT CONTENT=DEBUG output. This option overrides `--cat-filter.`
 -   --no-core-analysis-gdb: Do not use gdb to analyze the cores. *Unix only*
 -   --no-core-analysis-dbx: Do not use dbx to analyze the cores. *Unix only*
 
@@ -85,9 +85,9 @@ Additionally, two options are available for CFTSUPPORT:
 -   `CATFIL('IDTU=A0000001')`: Filters the CFTUTIL LISTCAT output.
 -   `DBGCATFIL('IDTU=A0000002')`: Filters the CFTUTIL LISTCAT CONTENT=DEBUG output.
 
-<span class="bold_in_para">Example</span>
+**Example**
 
-<span class="code" style="font-family: 'Courier New';">CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')</span>
+`CFTSUPPORT IFSPATH('/home/cft/axway/cft/runtime/cftsupport')DBGCATFIL('IDTU=A0000002')`
 
 > **Note:**
 >

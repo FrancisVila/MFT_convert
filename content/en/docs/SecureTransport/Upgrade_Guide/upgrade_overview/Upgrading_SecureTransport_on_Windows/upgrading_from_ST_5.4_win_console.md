@@ -42,4 +42,4 @@ After you upgrade {{< SecureTransport/componentshortname  >}}, complete the requ
 
 **Related topics:**
 
--   <a href="../../../recover-previous-installation-win" class="MCXref xref">Recover your previous SecureTransport installation on Windows</a>
+-   [Recover your previous SecureTransport installation on Windows](../../../recover-previous-installation-win)

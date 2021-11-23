@@ -10,10 +10,10 @@
 
 **\[SWITCH = {<u>00000000</u> | *time*}\]**
 
-Time at which the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+Time at which the {{< TransferCFT/componentshortname  >}}
 automatically switches to the alternate statistical file.
 
--   <span style="font-weight: bold;">000000</span>
+-   **000000**
     (default value)
 -   <span style="font-weight: bold;">any
     other value</span> in the HHMMSS format

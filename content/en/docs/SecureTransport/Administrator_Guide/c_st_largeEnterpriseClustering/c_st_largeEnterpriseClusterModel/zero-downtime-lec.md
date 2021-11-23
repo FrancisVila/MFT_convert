@@ -55,8 +55,8 @@ Several steps must be executed on the Cluster 1 and Cluster 2 in order to redire
 3.  Redirect the load balancer traffic from Cluster 1 to Cluster 2.
 4.  On Cluster 1, stop the Scheduler and Folder Monitor on {{< SecureTransport/componentshortname >}} Servers.
 5.  On Cluster 2, start the Scheduler and Folder Monitor on {{< SecureTransport/componentshortname >}} Servers.
-6.  On Cluster 1, stop the protocol servers gracefully on all {{< SecureTransport/componentshortname >}} Servers and Edges. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful3" class="MCXref xref">Graceful shutdown of protocol servers</a>.
-7.  On Cluster 1, make sure all protocol servers (on all {{< SecureTransport/securetransportname >}} Servers and Edges) are stopped in order to proceed with stopping the Transaction Manager gracefully. For more information, see <a href="../../../operations_menu/extended_server_control/graceful-shutdown#Graceful" class="MCXref xref">Graceful shutdown of Transaction Manager</a>.
+6.  On Cluster 1, stop the protocol servers gracefully on all {{< SecureTransport/componentshortname >}} Servers and Edges. For more information, see [Graceful shutdown of protocol servers](../../../operations_menu/extended_server_control/graceful-shutdown#Graceful3).
+7.  On Cluster 1, make sure all protocol servers (on all {{< SecureTransport/securetransportname >}} Servers and Edges) are stopped in order to proceed with stopping the Transaction Manager gracefully. For more information, see [Graceful shutdown of Transaction Manager](../../../operations_menu/extended_server_control/graceful-shutdown#Graceful).
 8.  Stop any remaining services on {{< SecureTransport/componentshortname >}} Servers and Edges in Cluster 1 – admin services, proxy services, etc. Use the `stop_all` console command: `<FILEDRIVEHOME>/bin/stop_all `(or, on Windows, `<FILEDRIVEHOME>\bin\stop_all.com`).
 
 > **Note:**

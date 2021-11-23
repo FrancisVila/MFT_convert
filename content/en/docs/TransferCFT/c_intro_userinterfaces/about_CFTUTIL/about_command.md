@@ -14,7 +14,7 @@ on which Transfer CFT is installed.
 = string \]
 
 \[ [TYPE](../../command_summary/parameter_intro/type)
-= { <span style="text-decoration: underline;">ALL</span>
+= {
 | HOST | CFT } \]
 
 \[ [KEY](../../command_summary/parameter_intro/key) = { <u>FIRST</u> | ALL } \]
@@ -82,7 +82,7 @@ This command displays the following type of information:
     * release  = Seven Service Pack 1
     * distrib  =
     Axway information :
-    * product           = AMPLIFY Transfer CFT
+    * product           = {{< TransferCFT/platformorsuiteshortname >}} Transfer CFT
     * version           = 3.3.2_SP1.0
     * applied-patches   =
     * forbidden-patches =
@@ -109,9 +109,9 @@ This command displays the following type of information:
 
 UNIX and Windows only
 
-This executable file retrieves system information, for example information needed to request a key. To use <span class="code">cfttell</span>:
+This executable file retrieves system information, for example information needed to request a key. To use `cfttell`:
 
--   Navigate to the<span class="code"> &lt;CFTDIRINSTALL>/bin</span> directory
+-   Navigate to the` <CFTDIRINSTALL>/bin` directory
 -   Run cfttell
 
 Options:

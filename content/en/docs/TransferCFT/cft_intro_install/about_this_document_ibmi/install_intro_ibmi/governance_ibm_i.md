@@ -26,12 +26,12 @@
 The manual procedure consists of the following steps, which are detailed below:
 
 1.  Set the UCONF parameter values for Central Governance.
-2.  Enable <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+2.  Enable {{< TransferCFT/centralgovernancename >}}.
 3.  Start Copilot to register.
 
 #### Set UCONF values
 
-Use the <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span> installation values for the following UCONF settings. <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> uses these values to identify <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+Use the {{< TransferCFT/centralgovernancename  >}} installation values for the following UCONF settings. {{< TransferCFT/transfercftname  >}} uses these values to identify {{< TransferCFT/centralgovernancename  >}}.
 
 -   cg.host
 -   cg.port
@@ -44,7 +44,7 @@ Use the format:
 
     CFTUTIL uconfset id=cg.host, value=<host_value>
 
-#### Enable <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>
+#### Enable {{< TransferCFT/centralgovernancename  >}}
 
 
 
@@ -52,6 +52,6 @@ Use the format:
 
 #### Register
 
-Start the <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> Copilot to trigger an automatic registration with <span class="mc-variable suite_variables.Central_GovernanceName variable">Central Governance</span>.
+Start the {{< TransferCFT/transfercftname  >}} Copilot to trigger an automatic registration with {{< TransferCFT/centralgovernancename  >}}.
 
-You can check in the <span class="mc-variable Primary.CG or_UM variable">Central Governance</span> **Product List** to confirm that the registration was successful.
+You can check in the **Product List** to confirm that the registration was successful.

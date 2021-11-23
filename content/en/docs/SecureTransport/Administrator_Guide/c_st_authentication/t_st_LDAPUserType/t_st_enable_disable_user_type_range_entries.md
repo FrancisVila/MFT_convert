@@ -10,6 +10,6 @@
 
 **Related topics:**
 
--   <a href="" class="MCXref xref"></a>
--   <a href="../t_st_edit_user_type_range_entry" class="MCXref xref">Edit a user type range entry</a>
--   <a href="../t_st_delete_user_type_range_entries" class="MCXref xref">Delete user type range entries</a>
+-   []()
+-   [Edit a user type range entry](../t_st_edit_user_type_range_entry)
+-   [Delete user type range entries](../t_st_delete_user_type_range_entries)

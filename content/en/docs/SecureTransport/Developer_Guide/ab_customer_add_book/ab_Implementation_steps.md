@@ -13,19 +13,19 @@
    </thead>
    <tbody>
       <tr>
-         <td><a href="../ab_provider_class" class="MCXref xref">Create a provider class</a>         </td>
+         <td><a href="../ab_provider_class">Create a provider class</a>         </td>
          <td>Used to hold the main logic for an address book. It is responsible for returning Address Book entries specified by search criteria.         </td>
       </tr>
       <tr>
-         <td><a href="../ab_criterion_class" class="MCXref xref">Create a criteria class</a>         </td>
+         <td><a href="../ab_criterion_class">Create a criteria class</a>         </td>
          <td>Used to define the Address Book search criteria for entries.         </td>
       </tr>
       <tr>
-         <td><a href="../ab_confi_class" class="MCXref xref">Create a configuration class</a>         </td>
+         <td><a href="../ab_confi_class">Create a configuration class</a>         </td>
          <td>Used as the configuration settings for an Address Book.         </td>
       </tr>
       <tr>
-         <td><a href="../ab_register_provider" class="MCXref xref">Register Address Book provider</a>         </td>
+         <td><a href="../ab_register_provider">Register Address Book provider</a>         </td>
          <td>Every Address Book provider must be packaged in a specific way in order to be registered correctly into {{< SecureTransport/securetransportname  >}} system.         </td>
       </tr>
    </tbody>

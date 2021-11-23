@@ -39,7 +39,7 @@ When starting the container, the docker-installer executes normal Docker install
 
     3.  Edit `db.conf `file to point to the new MariaDB service. The db.type property should be changed to 'internaldb'
 
-    4.  Delete and recreate the kubernetes secret created in step 5f of in <a href="../initial-deployment" class="MCXref xref">Initial deployment</a> > Deploying SecureTransport Edge
+    4.  Delete and recreate the kubernetes secret created in step 5f of in [Initial deployment](../initial-deployment) > Deploying SecureTransport Edge
 
     5.  Restart all the containers from the ST Edge statefulset  
           
@@ -57,4 +57,4 @@ In case the update process does not complete successfully, the rollback procedur
 
 **Important!** After applying an update, you can no longer revert to previous versions.
 
-*next topic:* <a href="../../k8s-known-issues" class="MCXref xref">Known limitations and deployment specifics</a>
+*next topic:* [Known limitations and deployment specifics](../../k8s-known-issues)

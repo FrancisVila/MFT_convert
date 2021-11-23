@@ -4,7 +4,7 @@
     "weight": "150"
 }This section outlines the minimum requirements to install Transfer CFT in a z/OS environment.
 
-This chapter describes the system requirements for <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. System requirements can change when <span class="mc-variable axway_variables.Company_Name variable">Axway</span> releases service packs and patches for a product version. Therefore, you may want to refer to the *[<span class="mc-variable suite_variables.DocNameSUITESupportedPlatforms variable">Axway Supported Platforms</span>](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)* document. The document lists the supported operating systems, databases, web servers, and browsers.
+This chapter describes the system requirements for {{< TransferCFT/componentshortname  >}}. System requirements can change when {{< TransferCFT/companyname  >}} releases service packs and patches for a product version. Therefore, you may want to refer to the *[{{< TransferCFT/docnamesuitesupportedplatforms  >}}](https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf)* document. The document lists the supported operating systems, databases, web servers, and browsers.
 
 ## Hardware
 

@@ -10,23 +10,23 @@ Learn more about [Amazon VPC](https://docs.aws.amazon.com/AmazonVPC/latest/UserG
 
 ## For new users
 
-<a href="intro_overview" class="MCXref xref">Introduction</a>
+[Introduction](intro_overview)
 
-<a href="st_in_vpc" class="MCXref xref">SecureTransport in Amazon Virtual Private Cloud</a>
+[SecureTransport in Amazon Virtual Private Cloud](st_in_vpc)
 
-<a href="st_create_vpc" class="MCXref xref">Create a VPC</a>
+[Create a VPC](st_create_vpc)
 
-<a href="st_create_secgroups" class="MCXref xref">Create Security Groups and Network Access Lists</a>
+[Create Security Groups and Network Access Lists](st_create_secgroups)
 
 ## For existing users
 
-<a href="st_amazon_rds" class="MCXref xref">Amazon RDS</a>
+[Amazon RDS](st_amazon_rds)
 
-<a href="st_launch_rhel" class="MCXref xref">Launch RHEL instances</a>
+[Launch RHEL instances](st_launch_rhel)
 
-<a href="st_connect_vpc" class="MCXref xref">Connect to your VPC</a>
+[Connect to your VPC](st_connect_vpc)
 
-<a href="st_enterprise_cluster" class="MCXref xref">Set up Enterprise Cluster with streaming</a>
+[Set up Enterprise Cluster with streaming](st_enterprise_cluster)
 
 ## Get more help
 

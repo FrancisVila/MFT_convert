@@ -2,23 +2,23 @@
     "title": "Managing SSH Security Profiles (command line)",
     "linkTitle": "Managing SSH Security Profiles (command line)",
     "weight": "240"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-[<span class="code" style="font-weight: bold;">secadm create\_sshprof</span>](#secadm_create_sshprof)
+[`secadm create_sshprof`](#secadm_create_sshprof)
 
-[<span class="code" style="font-weight: bold;">secadm update\_sshprof</span>](#secadm_update_sshprof)
+[`secadm update_sshprof`](#secadm_update_sshprof)
 
-[<span class="code" style="font-weight: bold;">secadm import\_sshprof</span>](#secadm_import_sshprof)
+[`secadm import_sshprof`](#secadm_import_sshprof)
 
-[<span class="code" style="font-weight: bold;">secadm delete\_sshprof</span>](#secadm_delete_sshprof)
+[`secadm delete_sshprof`](#secadm_delete_sshprof)
 
-[<span class="code" style="font-weight: bold;">secdsp display\_sshprof</span>](#secdsp_display_sshprof)
+[`secdsp display_sshprof`](#secdsp_display_sshprof)
 
-[<span class="code" style="font-weight: bold;">secdsp select\_sshprof</span>](#secdsp_select_sshprof)
+[`secdsp select_sshprof`](#secdsp_select_sshprof)
 
-[<span class="code" style="font-weight: bold;">secdsp status\_sshprof</span>](#secdsp_status_sshprof)
+[`secdsp status_sshprof`](#secdsp_status_sshprof)
 
-[<span class="code" style="font-weight: bold;">secbase export\_sshprof</span>](#secbase_export_sshprof)
+[`secbase export_sshprof`](#secbase_export_sshprof)
 
 <a href="#secbase_import" class="MCXref xref">Importing an SSH Profile: secbase import</a>
 
@@ -45,16 +45,16 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sshprof_name (-shpn)</span>: Enter the name of the SSH Profile to create.</p>
+<p><code>-sshprof_name (-shpn)</code>: Enter the name of the SSH Profile to create.</p>
 <p>Maximum: 31 characters.</p>
 <p><strong>Notes:</strong></p>
 <ul>
 <li>Although specifying the public key algorithms and the authentication details are not mandatory, it is <strong>highly recommended</strong> that you do so. An SSH profile without the accepted public key algorithms and without the authentication details is not usable.</li>
 <li>To get the complete parameters list, execute the command:<br />
-<span class="code" style="font-weight: bold;">secadm create_sshprof ?</span></li>
+<code>secadm create_sshprof ?</code></li>
 <li>If <code>client_auth_methods </code>has both <code>PASSWORD </code>and <code>PUBLIC_KE</code>Y set:
 <ul>
-<li>if <span class="code">perform_all_auth_method</span> is set to <em>N</em>, the authentication method translates in Password <strong>or</strong> Public key</li>
+<li>if <code>perform_all_auth_method</code> is set to <em>N</em>, the authentication method translates in Password <strong>or</strong> Public key</li>
 <li>if <code>perform_all_auth_method</code> is set to <em>Y</em>, the authentication method translates in Password <strong>and</strong> Public key</li>
 </ul></li>
 </ul>         </td>
@@ -88,7 +88,7 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sshprof_name (-shpn)</span>: Enter the name of the SSH profile to update.</p>
+<p><code>-sshprof_name (-shpn)</code>: Enter the name of the SSH profile to update.</p>
 <p><strong>Note</strong>: the name of the SSH profile cannot be changed.</p>
 <p><strong>Note</strong>: to get the complete parameters list, execute the command:<br />
 <code style="font-weight: bold;">secadm update_sshprof ?</code></p>         </td>
@@ -113,7 +113,7 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><span class="code" style="font-weight: bold;">secadm import_sshprof {-sshprof_file (-shpf)} {-encryption_key_file(-ekf)} {-import_pwd_cleartext}</span>         </td>
+         <td><code>secadm import_sshprof {-sshprof_file (-shpf)} {-encryption_key_file(-ekf)} {-import_pwd_cleartext}</code>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
@@ -122,24 +122,24 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sshprof_file (-shpf)</span>: Enter the name of the file that contains the SSH Profile to import.</p>         </td>
+<p><code>-sshprof_file (-shpf)</code>: Enter the name of the file that contains the SSH Profile to import.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">encryption_key_file</span> (<span class="code">-ekf</span>): Enter the path to the encryption key file to be used to decrypt passwords contained by the object to be imported</p>
+         <td><p><code>encryption_key_file</code> (<code>-ekf</code>): Enter the path to the encryption key file to be used to decrypt passwords contained by the object to be imported</p>
 <p>OR</p>
-<p><span class="code">-import_pwd_cleartext:</span> Specifies a legacy import file containing unencrypted passwords.</p>
+<p><code>-import_pwd_cleartext:</code> Specifies a legacy import file containing unencrypted passwords.</p>
 <p><strong>Notes:</strong></p>
 <ul>
-<li>Only one of the <span class="code">-encryption_key_file</span> or <span class="code">-import_pwd_cleartext</span> options should be used. Using one of the parameter is mandatory.</li>
+<li>Only one of the <code>-encryption_key_file</code> or <code>-import_pwd_cleartext</code> options should be used. Using one of the parameter is mandatory.</li>
 <li>To get the complete parameters list, execute the command <strong>secadm import_sshprof ?</strong></li>
 </ul>         </td>
       </tr>
       <tr>
          <td><p><strong>Example</strong></p>         </td>
-         <td><p>To import an SSH Security Profile contained in the file <span class="code">sshprof_desc_file.txt</span>, enter:</p>
+         <td><p>To import an SSH Security Profile contained in the file <code>sshprof_desc_file.txt</code>, enter:</p>
 <p>secadm import_sshprof  –shpf &lt;sshprof_desc_file.txt&gt; -ekf &lt;decryption_key.dat&gt;</p>
-<p>The Profile is described in the text file provided in the <span class="code" style="font-weight: bold;">-shpf</span> parameter, in this case: <span class="code">&lt;sshprof_desc_file.txt&gt;</span>. All of the Profile parameters are in this file.</p>
-<p>The decryption key is specified in the <span class="code">-ekf</span> parameter. When importing an SSH Security Profile export file containing clear-text passwords, generated with an older version, use the <span class="code">-import_pwd_cleartext </span>parameter instead.</p>         </td>
+<p>The Profile is described in the text file provided in the <code>-shpf</code> parameter, in this case: <code>&lt;sshprof_desc_file.txt&gt;</code>. All of the Profile parameters are in this file.</p>
+<p>The decryption key is specified in the <code>-ekf</code> parameter. When importing an SSH Security Profile export file containing clear-text passwords, generated with an older version, use the <code>-import_pwd_cleartext </code>parameter instead.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -165,14 +165,14 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sshprof_name (-shpn)</span>: Enter the name of the SSH Profile.</p>
+<p><code>-sshprof_name (-shpn)</code>: Enter the name of the SSH Profile.</p>
 <p>Maximum: 31 characters.</p>
 <p><strong>Note</strong>: to get the complete parameters list, execute the command:<br />
 <code style="font-weight: bold;">secadm delete_sshprof ?</code></p>         </td>
       </tr>
       <tr>
          <td><p><strong>Example</strong></p>         </td>
-         <td><p>The following command deletes an SSH Profile named <span style="font-style: italic;">sshprof1</span>:</p>
+         <td><p>The following command deletes an SSH Profile named <em>sshprof1</em>:</p>
 <p>secadm delete_sshprof  -shpn sshprof1</p>         </td>
       </tr>
    </tbody>
@@ -199,7 +199,7 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-sshprof_name (-shpn)</span>: Enter the name of the SSH Profile.</p>
+<p><code>-sshprof_name (-shpn)</code>: Enter the name of the SSH Profile.</p>
 <p>Maximum: 31 characters.</p>
 <p><strong>Note</strong>: to get the complete parameters list, execute the command:<br />
 <code style="font-weight: bold;">secadm display_sshprof ?</code></p>         </td>
@@ -229,7 +229,7 @@
 <p>shp_minutes_Before_New_Keys='60'</p>
 <p>shp_xpp_entity_name = ''</p>
 <p>shp_xpp_entity_password = ''</p>
-<p><span class="code">shp_xpp_object_type='Entity'</span></p>
+<p><code>shp_xpp_object_type='Entity'</code></p>
 <p>shp_xpp_partner_entity_name = ''</p>
 <p>shp_xpp_partner_object_type='Entity'</p>
 <p> </p>
@@ -242,7 +242,7 @@
 <p>shp_subject_name_pattern = ''</p>
 <p>shp_issuer_name_pattern = ''</p>
 <p> </p>
-<p><span style="font-weight: bold;">Note:</span> The format is similar to the description file that you import, except that the fields have the prefix<span class="code"> shp_</span>.</p>         </td>
+<p><strong>Note:</strong> The format is similar to the description file that you import, except that the fields have the prefix<span class="code"> shp_</span>.</p>         </td>
       </tr>
    </tbody>
 </table>

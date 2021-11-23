@@ -54,8 +54,8 @@ You can pre-create partitions in two ways:
 
 **Related topics:**
 
--   <a href="../migrate_oracle_to_postgre" class="MCXref xref">Migrate from Oracle to PostgreSQL</a>
--   <a href="../t_st_mysql" class="MCXref xref">Change the embedded database configuration</a>
--   <a href="../t_st_separate_databases" class="MCXref xref">Direct log data to separate Oracle databases</a>
--   <a href="../t_st_oracle" class="MCXref xref">Change the Oracle database configuration</a>
--   <a href="../t_st_sqlserver" class="MCXref xref">Change the external Microsoft SQL Server database</a>
+-   [Migrate from Oracle to PostgreSQL](../migrate_oracle_to_postgre)
+-   [Change the embedded database configuration](../t_st_mysql)
+-   [Direct log data to separate Oracle databases](../t_st_separate_databases)
+-   [Change the Oracle database configuration](../t_st_oracle)
+-   [Change the external Microsoft SQL Server database](../t_st_sqlserver)

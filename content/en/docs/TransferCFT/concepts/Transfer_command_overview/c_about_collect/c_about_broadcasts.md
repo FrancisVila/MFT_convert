@@ -56,7 +56,7 @@ are then required and sufficient:
     the network name of the broadcasting list indicated by the initial partner
     (SEND PART=ID\_CD)
 -   the CFTDEST object
-    must comply with the syntax imposed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> ([FOR](../../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
+    must comply with the syntax imposed by {{< TransferCFT/componentshortname >}} ([FOR](../../../../c_intro_userinterfaces/command_summary/parameter_intro/for)=COMMUT
     parameter).
 -   the final receivers
     C and D know the initial sender of the file (CFTPART ID=ID\_A,...) and
@@ -75,7 +75,7 @@ forward site**
 ### Broadcasting processes
 
 *On the store and forward site:* on
-effectively transferring the file to be broadcast, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not
+effectively transferring the file to be broadcast, {{< TransferCFT/componentshortname  >}} does not
 activate an end of transfer procedure or an error procedure.
 
 The transfer IDF is set to the value COMMUT: a command CFTRECV ID =

@@ -8,11 +8,11 @@
 
 #### CFTTCP
 
-\[RETRYN = {<span style="text-decoration: underline;">4</span>
+\[RETRYN = {
 | n } \]
 
 Use this field to specify the number of reconnection attempts to make
-with a time interval of <span style="font-weight: bold;">retryw</span>
+with a time interval of **retryw**
 between attempts.
 
 <span style="font-weight: bold;">4</span>: default value

@@ -2,7 +2,7 @@
     "title": "Managing Keys and Certificates in SSH",
     "linkTitle": "Managing Keys and Certificates in SSH",
     "weight": "200"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
 This topic describes how to import and manage partner keys (and certificates).
 
@@ -44,7 +44,7 @@ The partner public keys are stored in the Gateway key database.
 
 A key pair can be either a local key (public and private key parts) or a partner key (public key only). A Gateway database exists for storing the key pairs.
 
-A <span style="font-weight: bold;">KeyPairRecord</span> consists of the following fields:
+A **KeyPairRecord** consists of the following fields:
 
 -   <span style="font-weight: bold;">Alias</span>: unique logical name to identify the key
 -   <span style="font-weight: bold;">Group</span>: group name to organize keys by group

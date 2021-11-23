@@ -12,7 +12,7 @@ Server configuration parameters that you can change have an Edit icon (![Edit](/
 
 **Related topics:**
 
--   <a href="../c_st_local_server_configuration_parameters" class="MCXref xref">Local server configuration parameters</a>
--   <a href="../t_st_serverconfigurationparameters" class="MCXref xref">View and change server configuration parameters</a>
--   <a href="../t_st_serverconfigurationfiles" class="MCXref xref">Update configuration files</a>
--   <a href="../t_st_serverconfigurationexportimport" class="MCXref xref">Export and import server configuration</a>
+-   [Local server configuration parameters](../c_st_local_server_configuration_parameters)
+-   [View and change server configuration parameters](../t_st_serverconfigurationparameters)
+-   [Update configuration files](../t_st_serverconfigurationfiles)
+-   [Export and import server configuration](../t_st_serverconfigurationexportimport)

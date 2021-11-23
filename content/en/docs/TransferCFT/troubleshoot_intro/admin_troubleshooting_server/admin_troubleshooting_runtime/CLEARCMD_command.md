@@ -30,8 +30,8 @@ command to delete a transfer request from the communication file. A log message 
          <td><p>Request number as displayed by the LISTCOM command.</p>
 <p>For example:</p>
 <ul>
-<li><span class="code">INDEX=*</span> Selects all record numbers.</li>
-<li><span class="code">INDEX=12345</span> Selects the record number 12345 in the COM file.</li>
+<li><code>INDEX=*</code> Selects all record numbers.</li>
+<li><code>INDEX=12345</code> Selects the record number 12345 in the COM file.</li>
 </ul>         </td>
       </tr>
       <tr>

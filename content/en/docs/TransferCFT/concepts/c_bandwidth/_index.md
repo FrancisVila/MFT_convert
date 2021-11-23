@@ -52,7 +52,7 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
          <td>This value is used to compute the nominal rate of outgoing data for this class of service. **         </td>
       </tr>
       <tr>
-         <td><p>** Do not configure the parameters <span class="bold_in_para">weight_in</span> and <span class="bold_in_para">weight_out</span> for the class-of-service 0, as they cannot be used in this context. See <a href="#Concepts">Concepts.</a></p>         </td>
+         <td><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong> for the class-of-service 0, as they cannot be used in this context. See <a href="#Concepts">Concepts.</a></p>         </td>
       </tr>
       <tr>
          <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>

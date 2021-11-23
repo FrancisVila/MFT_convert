@@ -7,7 +7,7 @@ type exit.
 
 The interface provides the values used by the communication structure
 before the user function is called. In return, you must supply the parameters
-that <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> requires to update the catalog and, optionally, a comment.
+that {{< TransferCFT/componentshortname  >}} requires to update the catalog and, optionally, a comment.
 
 If the user function pointer initialized in the init function contains
 a non-null value, the initialization and user functions are called whenever
@@ -16,7 +16,7 @@ an end of transfer occurs, whether it is normal or abnormal.
 If the transfer terminates abnormally, only some of the fields are completed.
 The remaining fields are reset to:
 
--   <span style="font-weight: bold;">0</span>
+-   **0**
     in C
 -   <span style="font-weight: bold;">blank</span>
     in COBOL

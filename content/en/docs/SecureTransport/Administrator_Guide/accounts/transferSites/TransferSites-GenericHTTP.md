@@ -14,12 +14,12 @@ The Generic HTTP transfer site can be used with the Basic and {{< SecureTranspor
 
 The following sections describe the Generic HTTP transfer site configuration options, provide basic sample push and pull flow configurations for Generic HTTP transfer sites, and information on the limited expression language supported by Generic HTTP transfer sites:
 
--   <a href="#Configur" class="MCXref xref">Settings for Generic HTTP transfer sites</a>
--   <a href="#List" class="MCXref xref">Sample configuration — List files and download</a>
--   <a href="#Download" class="MCXref xref">Sample configuration — Download file</a>
--   <a href="#Upload" class="MCXref xref">Sample configuration — Upload file</a>
--   <a href="#Push" class="MCXref xref">Sample configuration — Push file to SecureTransport user using Form Authentication</a>
--   <a href="#Supporte" class="MCXref xref">Supported expression language</a>
+-   [Settings for Generic HTTP transfer sites](#Configur)
+-   [Sample configuration — List files and download](#List)
+-   [Sample configuration — Download file](#Download)
+-   [Sample configuration — Upload file](#Upload)
+-   [Sample configuration — Push file to SecureTransport user using Form Authentication](#Push)
+-   [Supported expression language](#Supporte)
 
 <span id="Configur"></span>
 
@@ -27,24 +27,24 @@ The following sections describe the Generic HTTP transfer site configuration opt
 
 The configuration for Generic HTTP transfer site includes the following groups of settings:
 
--   <a href="#Server" class="MCXref xref">Server settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Transfer" class="MCXref xref">Transfer settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#List2" class="MCXref xref">List settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#File" class="MCXref xref">File download settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Receive" class="MCXref xref">Receive actions
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Upload2" class="MCXref xref">Upload settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Send" class="MCXref xref">Send actions
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Login" class="MCXref xref">Login settings
-    for Generic HTTP(S) Transfer sites</a>
--   <a href="#Advanced" class="MCXref xref">Advanced settings
-    for Generic HTTP(S) Transfer sites</a>
+-   [Server settings
+    for Generic HTTP(S) Transfer sites](#Server)
+-   [Transfer settings
+    for Generic HTTP(S) Transfer sites](#Transfer)
+-   [List settings
+    for Generic HTTP(S) Transfer sites](#List2)
+-   [File download settings
+    for Generic HTTP(S) Transfer sites](#File)
+-   [Receive actions
+    for Generic HTTP(S) Transfer sites](#Receive)
+-   [Upload settings
+    for Generic HTTP(S) Transfer sites](#Upload2)
+-   [Send actions
+    for Generic HTTP(S) Transfer sites](#Send)
+-   [Login settings
+    for Generic HTTP(S) Transfer sites](#Login)
+-   [Advanced settings
+    for Generic HTTP(S) Transfer sites](#Advanced)
 
 <span id="Server"></span>
 
@@ -98,7 +98,7 @@ The following table describes the server settings for defining a Generic HTTP tr
 <li>Select <strong>Default</strong> to use the default network zone proxy configuration. If no default network zone is defined, transfers from this transfer site fail.</li>
 <li>Select a specific network zone to use the proxy configuration defined for that zone.</li>
 </ul>
-<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2" class="MCXref xref">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
+<p>For more information, see <a href="../../../c_st_setup/c_st_networkzones/t_st_networkzones#Specify2">Specify TM Server communication ports and IP address for protocol servers on SecureTransport Edge</a>.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -132,7 +132,7 @@ The following table describes the transfer settings for defining a Generic HTTP 
       <tr>
          <td>Enable FIPS Transfer Mode         </td>
          <td><p>Restrict HTTPS to use only FIPS 140-2 Level 1 certified cryptographic libraries. This field is displayed when <strong>Use HTTPS</strong> is selected.</p>
-<p>The sender and the recipient must use the ciphers and ciphers suites listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689" class="MCXref xref">FIPS transfer mode</a>. If the sender and the recipient do not provide the required ciphers and ciphers suites {{< SecureTransport/componentshortname  >}} does not complete the transfer.</p>         </td>
+<p>The sender and the recipient must use the ciphers and ciphers suites listed in <a href="../../../c_st_fipstransfermode#Appendix_FIPS_3980222383_1010689">FIPS transfer mode</a>. If the sender and the recipient do not provide the required ciphers and ciphers suites {{< SecureTransport/componentshortname  >}} does not complete the transfer.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -1445,13 +1445,13 @@ On form authentication, the following environment variables are added:
 
 **Related topics**
 
--   <a href="../r_st_as2transfersites" class="MCXref xref">AS2 transfer sites</a>
--   <a href="../r_st_connectdirecttransfersites" class="MCXref xref">Connect:Direct transfer sites</a>
--   <a href="../r_st_fileservicesinterfaceprotocoltransfersites" class="MCXref xref">File services interface transfer sites</a>
--   <a href="../r_st_foldermonitortransfersites" class="MCXref xref">Folder Monitor transfer sites</a>
--   <a href="../transfersites-ftp" class="MCXref xref">FTP(S) transfer sites</a>
--   <a href="../transfersites-http" class="MCXref xref">HTTP(S) transfer sites</a>
--   <a href="../transfersites-pesit" class="MCXref xref">PeSIT transfer sites</a>
--   <a href="../transfersites-ssh" class="MCXref xref">SSH transfer sites</a>
--   <a href="../transfersites-s2h" class="MCXref xref">System to Human transfer sites</a>
--   <a href="../t_st_transfersites" class="MCXref xref">Manage transfer sites</a>
+-   [AS2 transfer sites](../r_st_as2transfersites)
+-   [Connect:Direct transfer sites](../r_st_connectdirecttransfersites)
+-   [File services interface transfer sites](../r_st_fileservicesinterfaceprotocoltransfersites)
+-   [Folder Monitor transfer sites](../r_st_foldermonitortransfersites)
+-   [FTP(S) transfer sites](../transfersites-ftp)
+-   [HTTP(S) transfer sites](../transfersites-http)
+-   [PeSIT transfer sites](../transfersites-pesit)
+-   [SSH transfer sites](../transfersites-ssh)
+-   [System to Human transfer sites](../transfersites-s2h)
+-   [Manage transfer sites](../t_st_transfersites)

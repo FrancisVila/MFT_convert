@@ -6,23 +6,23 @@
 
 The following topics provide how-to instructions for creating an {{< SecureTransport/advancedrouting  >}} administrator role and creating an {{< SecureTransport/advancedrouting  >}} administrator:
 
--   <a href="#Create_role" class="MCXref xref">Create Advanced Routing administrator role</a>
--   <a href="#Create_admin" class="MCXref xref">Create Advanced Routing administrator</a>
+-   [Create Advanced Routing administrator role](#Create_role)
+-   [Create Advanced Routing administrator](#Create_admin)
 
 **Related topics:**
 
--   <a href="../t_st_create_user_accounts" class="MCXref xref">Create user accounts</a>
--   <a href="../t_st_create_advanced_routing_application" class="MCXref xref">Create Advanced Routing application</a>
--   <a href="../t_st_manage_route_package_templates" class="MCXref xref">Manage Route Package Templates</a>
--   <a href="../t_st_manage_routes" class="MCXref xref">Manage Routes</a>
--   <a href="../t_st_subscribe_advanced_routing_application" class="MCXref xref">Subscribe to Advanced Routing application</a>
--   <a href="../t_st_assign_route_package_template" class="MCXref xref">Assign Route Package Template</a>
+-   [Create user accounts](../t_st_create_user_accounts)
+-   [Create Advanced Routing application](../t_st_create_advanced_routing_application)
+-   [Manage Route Package Templates](../t_st_manage_route_package_templates)
+-   [Manage Routes](../t_st_manage_routes)
+-   [Subscribe to Advanced Routing application](../t_st_subscribe_advanced_routing_application)
+-   [Assign Route Package Template](../t_st_assign_route_package_template)
 
 <span id="Create_role"></span>
 
 ## Create {{< SecureTransport/advancedrouting  >}} administrator role
 
-For details on creating administrative roles, refer to <a href="../../../c_st_advancedaccountadministration/c_st_administrativeroles" class="MCXref xref">Administrative roles</a>. The {{< SecureTransport/advancedrouting  >}} administrator role should be created with the same settings as a delegated administrator plus the selection of *Route Packages* as shown in the following table and figure.
+For details on creating administrative roles, refer to [Administrative roles](../../../c_st_advancedaccountadministration/c_st_administrativeroles). The {{< SecureTransport/advancedrouting  >}} administrator role should be created with the same settings as a delegated administrator plus the selection of *Route Packages* as shown in the following table and figure.
 
 <table>
    <thead>
@@ -82,7 +82,7 @@ For details on creating administrative roles, refer to <a href="../../../c_st_ad
 
 ## Create {{< SecureTransport/advancedrouting  >}} administrator
 
-For details on creating administrators, refer to <a href="../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts" class="MCXref xref">Manage administrator accounts</a>. An {{< SecureTransport/advancedrouting  >}} administrator should be created with settings as shown in the following table and figure.
+For details on creating administrators, refer to [Manage administrator accounts](../../../c_st_advancedaccountadministration/c_st_manageadministratoraccounts). An {{< SecureTransport/advancedrouting  >}} administrator should be created with settings as shown in the following table and figure.
 
 > **Note:**
 >

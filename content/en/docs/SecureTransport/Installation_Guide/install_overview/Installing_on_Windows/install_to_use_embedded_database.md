@@ -72,7 +72,7 @@ During the installation, do not close any console windows that are opened.
     -   **Enable Nightly Log Rotation** – Select if you want the system to perform automatic backup and purging of log files on a nightly basis. When this feature is enabled, {{< SecureTransport/componentshortname >}} Server backups log files, generated on the respective day, and creates a new one for the subsequent day. The server takes a back up and creates a new log file at 23:59 or 00:00 hours, depending on the log file type. This option is enabled by default. You can enable or disable the nightly log rotation after installation - see the for more information.
     -   **Secret File Path**– The path to the `taeh` secret file you copied to this system. If blank, the installer creates a new secret file.
     -   If you are installing the first server in a cluster, you can specify a secret file or have the installer create one. Before you install {{< SecureTransport/componentshortname >}} on the other cluster nodes, you must copy the secret file to those systems.
-    -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. See <a href="../../../prereqs_overview/secret_file#beforeinstallst_3365039947_1107715" class="MCXref xref">Secret file</a>.
+    -   If you are installing the second or a subsequent server in the cluster, you must use the secret file you copied from the first server. See [Secret file](../../../prereqs_overview/secret_file#beforeinstallst_3365039947_1107715).
 
       
     Click **Next** to continue.
@@ -91,5 +91,5 @@ After successfully installing {{< SecureTransport/componentshortname  >}}, you m
 
 **Related topics:**
 
--   <a href="../install_on_windows_with_external_database" class="MCXref xref">Install SecureTransport Server on Windows with an external database</a>
--   <a href="../cancel_windows_installation" class="MCXref xref">Cancel the Windows installation</a>
+-   [Install SecureTransport Server on Windows with an external database](../install_on_windows_with_external_database)
+-   [Cancel the Windows installation](../cancel_windows_installation)

@@ -6,7 +6,7 @@
 
 ### part
 
-Enter the local identifier for the site where <span class="mc-variable suite_variables.TransferCFTName variable">Transfer CFT</span> runs. This
+Enter the local identifier for the site where {{< TransferCFT/transfercftname  >}} runs. This
 parameter is used in the catalog for information purposes only.
 
 #### CFTDEST
@@ -43,7 +43,7 @@ Identifier of the partner(s) for the selected transfers.
 
 The value of this parameter can be:
 
--   <span style="font-weight: bold;">An identifier</span>: the selection only relates
+-   **An identifier**: the selection only relates
     to the transfers performed with this partner
 -   <span style="font-weight: bold;">A mask</span>: the selection relates to the
     transfers with the partners whose identifier corresponds to this mask

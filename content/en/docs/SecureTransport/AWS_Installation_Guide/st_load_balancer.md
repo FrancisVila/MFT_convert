@@ -27,7 +27,7 @@ Follow these steps to create Classic Load Balancer redirecting requests to Secur
     6.  Choose your public subnets from both availability zones.
     7.  Choose "Assign Security Groups" and move to the next phase.  
           
-6.  On the next step "Assign Security Groups"-> go to "Select an existing security group" and choose the security group you prepared previously for your load balancer, described in the <a href="../st_create_secgroups/st_securitygroups" class="MCXref xref">Security Groups</a> section of this guide.  
+6.  On the next step "Assign Security Groups"-> go to "Select an existing security group" and choose the security group you prepared previously for your load balancer, described in the [Security Groups](../st_create_secgroups/st_securitygroups) section of this guide.  
       
     <img src="/Images/SecureTransport/lb-security-group.PNG" class="maxWidth" />
 7.  On the next stage **"Configure Security Settings"** choose certificate for the HTTPS listener - Choose a certificate from ACM (recommended)/Choose a certificate from IAM and leave default values for the rest of the security settings and proceed to the next stage (modify the security settings according to your needs).  

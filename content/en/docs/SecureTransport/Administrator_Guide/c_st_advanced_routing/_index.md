@@ -99,11 +99,11 @@ As you can see, setup itself introduces some AR-specific concepts. The route pac
 
 The following topics provide detailed info about different aspects of {{< SecureTransport/advancedrouting  >}} :
 
--   <a href="c_st_order_of_configuration" class="MCXref xref">Order of configuration</a>
--   <a href="c_st_configuration" class="MCXref xref">Configuration</a>
--   <a href="c_st_route_step_transformations" class="MCXref xref">Transformations</a>
--   <a href="c_st_route_steps" class="MCXref xref">Route steps</a>
--   <a href="c_st_operation" class="MCXref xref">Operation</a>
--   <a href="c_st_advanced_routing_best_practices" class="MCXref xref">Advanced Routing best practices</a>
--   <a href="r_st_custom_el_functions_variables" class="MCXref xref">Custom Expression Language functions and variables</a>
--   <a href="c_st_troubleshooting" class="MCXref xref">Troubleshoot Advanced Routing</a>
+-   [Order of configuration](c_st_order_of_configuration)
+-   [Configuration](c_st_configuration)
+-   [Transformations](c_st_route_step_transformations)
+-   [Route steps](c_st_route_steps)
+-   [Operation](c_st_operation)
+-   [Advanced Routing best practices](c_st_advanced_routing_best_practices)
+-   [Custom Expression Language functions and variables](r_st_custom_el_functions_variables)
+-   [Troubleshoot Advanced Routing](c_st_troubleshooting)

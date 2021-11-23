@@ -117,5 +117,5 @@ For {{< SecureTransport/componentshortname  >}} to run, the host name of the ser
 
 **Related topics:**
 
--   <a href="requirements_for_specific_operating_systems" class="MCXref xref">Requirements for specific operating systems</a>
--   <a href="prerequisites_for_non_root_installations" class="MCXref xref">Prerequisites for non-root installations</a>
+-   [Requirements for specific operating systems](requirements_for_specific_operating_systems)
+-   [Prerequisites for non-root installations](prerequisites_for_non_root_installations)

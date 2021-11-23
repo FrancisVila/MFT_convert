@@ -12,13 +12,13 @@ After a user is authenticated, {{< SecureTransport/componentshortname  >}} sends
 
 The following topics describe the SiteMinder authorization rules and provide an authorization request example:
 
--   <a href="#SiteMinder" class="MCXref xref">SiteMinder authorization rules</a>
--   <a href="#Example" class="MCXref xref">Example authorization request</a>
+-   [SiteMinder authorization rules](#SiteMinder)
+-   [Example authorization request](#Example)
 
 **Related topics:**
 
--   <a href="../c_st_web_client_user_authentication" class="MCXref xref">Web client (HTTP and HTTPS) user authentication</a>
--   <a href="../c_st_command_line_client_user_authentication" class="MCXref xref">Command line client (FTP, FTPS, HTTPS, and SSH) user authentication</a>
+-   [Web client (HTTP and HTTPS) user authentication](../c_st_web_client_user_authentication)
+-   [Command line client (FTP, FTPS, HTTPS, and SSH) user authentication](../c_st_command_line_client_user_authentication)
 
 <span id="SiteMinder"></span>
 
@@ -26,7 +26,7 @@ The following topics describe the SiteMinder authorization rules and provide an 
 
 Configure the SiteMinder authorization rules to accommodate {{< SecureTransport/componentshortname  >}} authorization requests. A {{< SecureTransport/componentshortname  >}} authorization request contains the following elements:
 
--   **Resource Path** – The absolute URI of the resource being accessed by the user. {{< SecureTransport/componentshortname >}} determines the actual file path and uses that file path as the URI. This URI can be modified (section removed or prefix added) based on the **File Storage Root Path** and **SiteMinder Path Prefix** in the {{< SecureTransport/componentshortname >}} SiteMinder settings. (For details, see <a href="../../t_st_sitemindersecuretransportconfiguration#SiteMinder_3654860350_1021080" class="MCXref xref">Configure SiteMinder settings in SecureTransport</a>.) For Windows systems, backslashes (\\) in the file path are replaced with forward slashes (/) before the file path is modified as described above.
+-   **Resource Path** – The absolute URI of the resource being accessed by the user. {{< SecureTransport/componentshortname >}} determines the actual file path and uses that file path as the URI. This URI can be modified (section removed or prefix added) based on the **File Storage Root Path** and **SiteMinder Path Prefix** in the {{< SecureTransport/componentshortname >}} SiteMinder settings. (For details, see [Configure SiteMinder settings in SecureTransport](../../t_st_sitemindersecuretransportconfiguration#SiteMinder_3654860350_1021080).) For Windows systems, backslashes (\\) in the file path are replaced with forward slashes (/) before the file path is modified as described above.
 -   **Command** – Either `GET` or `PUT` depending on whether the user is requesting a read or write operation.
 
 <span id="Example"></span>

@@ -11,5 +11,5 @@
 
 **Related topics:**
 
--   <a href="../c_st_account_session_count" class="MCXref xref">Account session count</a>
--   <a href="../t_st_serverlicenses" class="MCXref xref">Updating SecureTransport licenses</a>
+-   [Account session count](../c_st_account_session_count)
+-   [Updating SecureTransport licenses](../t_st_serverlicenses)

@@ -2,23 +2,23 @@
     "title": "Managing certificates (command line)",
     "linkTitle": "Command line operations",
     "weight": "210"
-}<span class="mc-variable axway_variables.Component_Long_Name variable">Axway Gateway</span>: Managing Security
+}{{< Gateway/componentlongname  >}}: Managing Security
 
-[<span class="code" style="font-weight: bold;">secadm import\_cert</span>](#secadm_import_cert)
+[`secadm import_cert`](#secadm_import_cert)
 
-[<span class="code" style="font-weight: bold;">secadm update\_cert</span>](#secadm_update_cert)
+[`secadm update_cert`](#secadm_update_cert)
 
-[<span class="code" style="font-weight: bold;">secadm delete\_cert</span>](#secadm_delete_cert)
+[`secadm delete_cert`](#secadm_delete_cert)
 
-[<span class="code" style="font-weight: bold;">secbase export cert</span>](#secbase_export_cert)
+[`secbase export cert`](#secbase_export_cert)
 
-[<span class="code" style="font-weight: bold;">secbase export\_cert\_chain</span>](#secbase_export_cert_chain)
+[`secbase export_cert_chain`](#secbase_export_cert_chain)
 
-[<span class="code" style="font-weight: bold;">secdsp select\_cert</span>](#secdsp_select_cert)
+[`secdsp select_cert`](#secdsp_select_cert)
 
-[<span class="code" style="font-weight: bold;">secdsp display\_cert</span>](#secdsp_display_cert)
+[`secdsp display_cert`](#secdsp_display_cert)
 
-[<span class="code" style="font-weight: bold;">secdsp status\_cert</span>](#secdsp_status_cert)
+[`secdsp status_cert`](#secdsp_status_cert)
 
 <span id="secadm_import_cert"></span>
 
@@ -32,7 +32,7 @@
    <tbody>
       <tr>
          <td><p><strong>Syntax</strong></p>         </td>
-         <td><p><span class="code"><strong>secadm import_cert {-certificate_name} {-certificate_file}</strong> [-certificate_group] [-status] [-certificate_file_type] [-pos] [-list_only] [-certificate_type] [-certificate_password] [-private_key_file] [-private_key_file_type] [-private_key_password]</span></p>         </td>
+         <td><p><code>secadm import_cert {-certificate_name} {-certificate_file} [-certificate_group] [-status] [-certificate_file_type] [-pos] [-list_only] [-certificate_type] [-certificate_password] [-private_key_file] [-private_key_file_type] [-private_key_password]</code></p>         </td>
       </tr>
       <tr>
          <td><p><strong>Description</strong></p>         </td>
@@ -41,18 +41,18 @@
       <tr>
          <td><p><strong>Parameters</strong></p>         </td>
          <td><p>Mandatory</p>
-<p><span class="code">-certificate_name (-ctfn)</span>: Enter the name of the certificate to import.</p>
+<p><code>-certificate_name (-ctfn)</code>: Enter the name of the certificate to import.</p>
 <p>Maximum: 31 characters</p>         </td>
       </tr>
       <tr>
          <td><p>Mandatory</p>
-<p><span class="code">-certificate_file (-ctff)</span>: Enter the name of the file that contains the certificate to import.</p>         </td>
+<p><code>-certificate_file (-ctff)</code>: Enter the name of the file that contains the certificate to import.</p>         </td>
       </tr>
       <tr>
-         <td><p><span class="code">-status (-cst)</span>: Enter the Status of the certificate you want to import.</p>
+         <td><p><code>-status (-cst)</code>: Enter the Status of the certificate you want to import.</p>
 <p>Possible values:</p>
 <ul>
-<li><span style="font-weight: bold;">E</span> = Enabled (default)</li>
+<li><strong>E</strong> = Enabled (default)</li>
 <li><span style="font-weight: bold;">D</span> = Disabled</li>
 <li><span style="font-weight: bold;">C</span> = To check</li>
 </ul>         </td>

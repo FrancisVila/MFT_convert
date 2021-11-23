@@ -9,7 +9,7 @@
 #### ABOUT
 
 \[ TYPE
-= { <span style="text-decoration: underline;">ALL</span>
+= {
 | HOST | CFT } \]
 
 Displays
@@ -53,7 +53,7 @@ Type of object to be deactivated.
 TYPE = { FILE
 | TCPIP}
 
-Type of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication medium.
+Type of {{< TransferCFT/componentshortname  >}} communication medium.
 
 This parameter can take the following values:
 
@@ -111,7 +111,7 @@ The type of exit program, as follows:
 This defines the accounting type. CFTACCNT TYPE parameters are:
 
 -   FILE (default value): Data is recorded
-    in the <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> files defined in the fname
+    in the {{< TransferCFT/componentlongname >}} files defined in the fname
     and afname fields.
 -   SYST: Data is recorded in the files
     of the operating system accounting utility. Available
@@ -274,7 +274,7 @@ Defines the parameters to extract.
       </tr>
       <tr>
          <td><p>COM </p>         </td>
-         <td><p>Description of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication methods
+         <td><p>Description of {{< TransferCFT/componentshortname  >}} communication methods
  </p>         </td>
          <td><p>CFTCOM </p>         </td>
       </tr>
@@ -301,7 +301,7 @@ Defines the parameters to extract.
       <tr>
          <td><p>PART </p>         </td>
          <td><p>Partner definition  </p>         </td>
-         <td><p>CFTPART and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> network </p>         </td>
+         <td><p>CFTPART and {{< TransferCFT/componentshortname  >}} network </p>         </td>
       </tr>
       <tr>
          <td><p>PROT </p>         </td>
@@ -345,7 +345,7 @@ ALL | AUTH | CAT | COM | ETB | IDF | LOG | NET |PARM | PROT | RECV | SEND
 | XLATE }
 
 Defines the type of parameters to
-list from the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.
+list from the {{< TransferCFT/componentshortname  >}} parameter file.
 
 TYPE can take the predefined values indicated in the Type table below.
 
@@ -426,12 +426,12 @@ Translation tables are customized by the CFTXLATE object</p>         </td>
       </tr>
       <tr>
          <td><p>CFTFILE</p>         </td>
-         <td><p>Used to create, empty, or delete <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files</p>         </td>
+         <td><p>Used to create, empty, or delete {{< TransferCFT/componentshortname  >}} files</p>         </td>
       </tr>
       <tr>
          <td><p>LISTCAT</p>         </td>
          <td><p>Used to query the information associated with the selected
-transfers, recorded in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog</p>         </td>
+transfers, recorded in the {{< TransferCFT/componentshortname  >}} catalog</p>         </td>
       </tr>
       <tr>
          <td><p>DISPLAY</p>         </td>
@@ -441,7 +441,7 @@ These models are used to format the output</p>         </td>
       </tr>
       <tr>
          <td><p>ABOUT</p>         </td>
-         <td><p>Used to display the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> computer characteristics</p>         </td>
+         <td><p>Used to display the {{< TransferCFT/componentshortname  >}} computer characteristics</p>         </td>
       </tr>
    </tbody>
 </table>

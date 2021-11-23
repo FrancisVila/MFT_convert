@@ -14,7 +14,7 @@ CFTXXX: fixed text message &lt;variables>
 
 CFTLOG FORMAT=\[V23,V24\]
 
-For V23: <span class="code">CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started</span>
+For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
@@ -49,63 +49,63 @@ of a procedure that has its job identifier specified in &amp;str1 and the &amp;s
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Internal <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> execution error.</p>
+         <td><p>Internal {{< TransferCFT/componentshortname  >}} execution error.</p>
 <p>The field "&amp;str" can have the following values:</p>
 <ul>
 <li>CFT
-error &amp;scs:<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> inter-task communication system problem (waiting for
+error &amp;scs:{{< TransferCFT/componentshortname  >}} inter-task communication system problem (waiting for
 the CFTMAIN scheduler task queue)</li>
 </ul>
 <ul>
 <li>CFT
-error _ usage expired:The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user key (CFTPARM KEY) does not authorize
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> execution beyond the expired period</li>
+error _ usage expired:The {{< TransferCFT/componentshortname  >}} user key (CFTPARM KEY) does not authorize
+{{< TransferCFT/componentshortname  >}} execution beyond the expired period</li>
 </ul>
 <ul>
 <li>CFT
-error _ CFT usage not authorized:The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user key (CFTPARM KEY) does not authorize
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> execution on this operating system or computer</li>
+error _ CFT usage not authorized:The {{< TransferCFT/componentshortname  >}} user key (CFTPARM KEY) does not authorize
+{{< TransferCFT/componentshortname  >}} execution on this operating system or computer</li>
 </ul>
 <ul>
 <li>CFT error _ file
-keys not available:  The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user keys are stored in an indirection file
-(CFTPARM KEY parameter); this file cannot be accessed by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></li>
+keys not available:  The {{< TransferCFT/componentshortname  >}} user keys are stored in an indirection file
+(CFTPARM KEY parameter); this file cannot be accessed by {{< TransferCFT/componentshortname  >}}</li>
 </ul>
 <ul>
 <li>CFT error &amp;scs
-_ Common_area allocation failed:Definition of the memory area common to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> tasks
+_ Common_area allocation failed:Definition of the memory area common to the {{< TransferCFT/componentshortname  >}} tasks
 has failed. This can be caused by insufficient memory</li>
 </ul>
 <ul>
 <li>CFT error &amp;scs
-_ Mailbox definition failed: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is unable to link to a mailbox defined by the
+_ Mailbox definition failed: {{< TransferCFT/componentshortname  >}} is unable to link to a mailbox defined by the
 *CFTOM command</li>
 </ul>
 <ul>
 <li>CFT error &amp;scs
-_ CFT semaphore definition failed:<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is unable to define an inter-task communications
+_ CFT semaphore definition failed:{{< TransferCFT/componentshortname  >}} is unable to define an inter-task communications
 queue</li>
 </ul>
 <ul>
 <li>CFT error _ CFTEXIT
-ID=&amp;id missing: A <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task dedicated to file EXITs could not be activated
+ID=&amp;id missing: A {{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated
 (the CFTEXIT command relating to the identifier mentioned (ID) was not
 found)</li>
 </ul>
 <ul>
 <li>CFT error _ Maximum
-process CFTEXIT running reached: A <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task dedicated to file EXITs could not be activated
+process CFTEXIT running reached: A {{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated
 (the maximum number of EXIT processes that can be activated has already
 been reached)</li>
 </ul>
 <ul>
 <li>CFT error &amp;cs
-_ Initializing process CFTEXIT: A <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task dedicated to file EXITs could not be activated
+_ Initializing process CFTEXIT: A {{< TransferCFT/componentshortname  >}} task dedicated to file EXITs could not be activated
 (the maximum number of EXIT processes that can be activated has already
 been reached)</li>
 </ul>
 <ul>
-<li>CFT error _ &amp;Net Network Access Method Option not authorized by license key:The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).</li>
+<li>CFT error _ &amp;Net Network Access Method Option not authorized by license key:The {{< TransferCFT/componentshortname  >}} is NOT authorized to use the optional network access method designated by &amp;Net (TCP/IP).</li>
 </ul>
 <ul>
 <li>CFT error _ SSL Protocol Option not authorized by license key:A protocol defined in the CFTPARM object uses the SSL option, but the SSL option is not available with this license key.</li>
@@ -163,12 +163,12 @@ the error.</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>CFT error &amp;scs
-_ Initializing process CFTTFIL: A <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> task dedicated to transfer file access could
+_ Initializing process CFTTFIL: A {{< TransferCFT/componentshortname  >}} task dedicated to transfer file access could
 not be activated.</p>         </td>
       </tr>
       <tr>
          <td>Consequence         </td>
-         <td><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is not stopped, and transfers are not interrupted.         </td>
+         <td>{{< TransferCFT/componentshortname  >}} is not stopped, and transfers are not interrupted.         </td>
       </tr>
       <tr>
          <td><p>Action</p>         </td>
@@ -192,8 +192,8 @@ file &amp;fname</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when allocating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when allocating the {{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -204,7 +204,7 @@ CFT initialization phase has stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check that
 the file is not already allocated; if it exists, correct the error and
-then restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+then restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -224,8 +224,8 @@ then restart <span class="mc-variable axway_variables.Component_Short_Name varia
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when opening the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter file.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when opening the {{< TransferCFT/componentshortname  >}} parameter file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -235,7 +235,7 @@ CFT initialization phase has stopped.</p>         </td>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Correct
-the error and then restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+the error and then restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -255,8 +255,8 @@ file &amp;fname</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when allocating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner file.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when allocating the {{< TransferCFT/componentshortname  >}} partner file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -267,7 +267,7 @@ CFT initialization phase has stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check that
 the file is not already allocated, correct the error and then restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -287,8 +287,8 @@ file &amp;fname</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when opening the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner file.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when opening the {{< TransferCFT/componentshortname  >}} partner file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -298,7 +298,7 @@ CFT initialization phase has stopped.</p>         </td>
       <tr>
          <td><p>Action</p>         </td>
          <td><p>Correct
-the error and then restart <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+the error and then restart {{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -318,8 +318,8 @@ file &amp;fname</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when allocating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog file.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when allocating the {{< TransferCFT/componentshortname  >}} catalog file.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -330,7 +330,7 @@ CFT initialization phase has stopped.</p>         </td>
          <td><p>Action</p>         </td>
          <td><p>Check that
 the file is not already allocated, correct the error and then restart
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.</p>         </td>
+{{< TransferCFT/componentshortname  >}}.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -348,8 +348,8 @@ the file is not already allocated, correct the error and then restart
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when activating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> protocol process.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when activating the {{< TransferCFT/componentshortname  >}} protocol process.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -377,8 +377,8 @@ CFT Support.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when activating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication process.</p>         </td>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when activating the {{< TransferCFT/componentshortname  >}} communication process.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -406,8 +406,8 @@ CFT Support.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization an error was detected
-when activating the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> message logging process.</p>
+         <td><p>During {{< TransferCFT/componentshortname  >}} initialization an error was detected
+when activating the {{< TransferCFT/componentshortname  >}} message logging process.</p>
 <p>It may be a memory allocation or queue definition type
 system error (or a problem when submitting a message to the queue).</p>         </td>
       </tr>
@@ -437,7 +437,7 @@ CFT initialization phase has stopped.</p>         </td>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Normal end
-of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> logging process initialization.</p>         </td>
+of {{< TransferCFT/componentshortname  >}} logging process initialization.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -456,7 +456,7 @@ of <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Normal end
-of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> protocol process initialization.</p>         </td>
+of {{< TransferCFT/componentshortname  >}} protocol process initialization.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -474,7 +474,7 @@ of <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Normal end of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication task initialization.</p>         </td>
+         <td><p>Normal end of {{< TransferCFT/componentshortname  >}} communication task initialization.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -493,7 +493,7 @@ of <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Normal end
-of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization.</p>         </td>
+of {{< TransferCFT/componentshortname  >}} initialization.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -573,7 +573,7 @@ CFT parameter settings (CFTPROT commands).</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>During the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization phase an error was
+         <td><p>During the {{< TransferCFT/componentshortname  >}} initialization phase an error was
 detected when processing the accounting
 file (CFTACCNT command).</p>         </td>
       </tr>
@@ -602,33 +602,33 @@ CFT initialization phase has stopped.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>This is a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> welcome message describing the computer environment
+         <td><p>This is a {{< TransferCFT/componentshortname  >}} welcome message describing the computer environment
 and the main runtime characteristics, according to the options
 activated by the software key (KEY parameter):</p>
 <ul>
 <li>Usage of this
-product is strictly limited to &amp;cpu_id machine: The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can only be executed on the computer with the
+product is strictly limited to &amp;cpu_id machine: The {{< TransferCFT/componentshortname  >}} can only be executed on the computer with the
 designated CPU</li>
 </ul>
 <ul>
 <li>Usage of this
-product is strictly limited to &amp;label: The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> can only be executed within a specific framework,
+product is strictly limited to &amp;label: The {{< TransferCFT/componentshortname  >}} can only be executed within a specific framework,
 as designated by &amp;label</li>
 </ul>
 <ul>
 <li>Usage of this
-product is strictly limited until &amp;date: The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cannot be executed after the date designated by
+product is strictly limited until &amp;date: The {{< TransferCFT/componentshortname  >}} cannot be executed after the date designated by
 &amp;date</li>
 </ul>
 <ul>
 <li>&amp;Maxtrans
-simultaneous transfer(s) is(are) authorized: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cannot process more than &amp;Maxtrans simultaneous
+simultaneous transfer(s) is(are) authorized: {{< TransferCFT/componentshortname  >}} cannot process more than &amp;Maxtrans simultaneous
 transfers. This value overrides the MAXTRANS parameter in the CFTPARM
 command</li>
 </ul>
 <ul>
 <li>&amp;Net Network
-Access Method Option is authorized: The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is authorized to use the optional network access
+Access Method Option is authorized: The {{< TransferCFT/componentshortname  >}} is authorized to use the optional network access
 method designated by &amp;Net (TCP/IP)
 <ul>
 <li>The information in this message is related to the UCONF setting for server.authentication_method.</li>
@@ -637,11 +637,11 @@ method designated by &amp;Net (TCP/IP)
 </ul>
 <ul>
 <li>&amp;Prot Protocol
-Option is authorized: <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is authorized to use the protocol option designated
+Option is authorized: {{< TransferCFT/componentshortname  >}} is authorized to use the protocol option designated
 by &amp;Prot (Secure PeSIT)</li>
 </ul>
 <p>If an attempt is made to use an unauthorized option, such as a network access method
-or protocol option, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> does not start, and displays a message.<br />
+or protocol option, {{< TransferCFT/componentshortname  >}} does not start, and displays a message.<br />
 Information messages include:</p>
 <div class="indentTable">
 <ul>
@@ -661,7 +661,7 @@ Information messages include:</p>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped during the initialization phase.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} is stopped during the initialization phase.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -705,7 +705,7 @@ Information messages include:</p>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> copyright message.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} copyright message.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -729,7 +729,7 @@ definition failure CR=&amp;cr CS= &amp;scs</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped during its initialization phase.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -751,7 +751,7 @@ definition failure CR=&amp;cr CS= &amp;scs</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped during its initialization phase.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -773,7 +773,7 @@ definition failure CR=&amp;cr CS= &amp;scs</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped during its initialization phase.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -796,7 +796,7 @@ CFT task and the protocol task.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is stopped during its initialization phase.</p>         </td>
+         <td><p>{{< TransferCFT/componentshortname  >}} is stopped during its initialization phase.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -842,7 +842,7 @@ the partner concerned</li>
 <li>idf identifier
 and</li>
 <li>IDT value calculated
-by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span></li>
+by {{< TransferCFT/componentshortname  >}}</li>
 </ul>         </td>
       </tr>
    </tbody>
@@ -864,7 +864,7 @@ by <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
          <td><p>Explanation</p>         </td>
          <td><p>The description of the message &amp;str specifies the activated security options:</p>
 <ul>
-<li>HAB: Normal end of initialization with activation of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> security system</li>
+<li>HAB: Normal end of initialization with activation of the {{< TransferCFT/componentshortname  >}} security system</li>
 <li>SSL: Normal end of initialization with activation of the SSL protocol</li>
 </ul>
 <p>The information in this message is affected by the UCONF setting for access management. For more information, see the am.type parameter and access management options in <a href="../../../internal_a_m_start_here/about_passport_am/unconf_access_management">Access Management and PassPort AM parameters</a>.</p>         </td>
@@ -886,7 +886,7 @@ by <span class="mc-variable axway_variables.Component_Short_Name variable">Trans
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Normal end
-of initialization without activating the Security option (<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+of initialization without activating the Security option ({{< TransferCFT/componentshortname  >}}
 security system and the SSL protocol).</p>         </td>
       </tr>
    </tbody>
@@ -907,7 +907,7 @@ security system and the SSL protocol).</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>When <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> was initialized, a security system open
+         <td><p>When {{< TransferCFT/componentshortname  >}} was initialized, a security system open
 error was detected.</p>         </td>
       </tr>
       <tr>
@@ -1049,7 +1049,7 @@ has stopped.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>Displays information about the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> Heartbeat. Possible states:</p>
+         <td><p>Displays information about the {{< TransferCFT/componentshortname  >}} Heartbeat. Possible states:</p>
 <ul>
 <li>Enable</li>
 <li>Update UCONF parameters</li>
@@ -1144,13 +1144,13 @@ OMVS SEGMENT NOT DEFINED for user=xxxxxx</p>         </td>
          <td>Action         </td>
          <td><p>To obtain a new key:</p>
 <ol>
-<li>For an existing installation, use the command <span class="code" style="font-weight: bold;">cftutil about</span> to retrieve your system information. The <strong>ABOUT</strong> command displays
+<li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The <strong>ABOUT</strong> command displays
 the Transfer CFT product, host, and key information, and characteristics of the platform
 on which Transfer CFT is installed.</li>
 <li>Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
 <ul>
-<li>For a US key, contact: <span class="code">fulfillment@us.axway.com</span></li>
-<li>For an EMEA or APAC key, contact: <span class="code">product.key@axway.com</span></li>
+<li>For a US key, contact: <code>fulfillment@us.axway.com</code></li>
+<li>For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li>
 </ul></li>
 <li>Provide the hostname and system information for the installed or updated Transfer CFT.</li>
 </ol>
@@ -1188,13 +1188,13 @@ on which Transfer CFT is installed.</li>
          <td>Action         </td>
          <td><p>To obtain a new key:</p>
 <ol>
-<li>For an existing installation, use the command <span class="code" style="font-weight: bold;">cftutil about</span> to retrieve your system information. The <strong>ABOUT</strong> command displays
+<li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The <strong>ABOUT</strong> command displays
 the Transfer CFT product, host, and key information, and characteristics of the platform
 on which Transfer CFT is installed.</li>
 <li>Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
 <ul>
-<li>For a US key, contact: <span class="code">fulfillment@us.axway.com</span></li>
-<li>For an EMEA or APAC key, contact: <span class="code">product.key@axway.com</span></li>
+<li>For a US key, contact: <code>fulfillment@us.axway.com</code></li>
+<li>For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li>
 </ul></li>
 <li>Provide the hostname and system information for the installed or updated Transfer CFT.</li>
 </ol>
@@ -1233,13 +1233,13 @@ on which Transfer CFT is installed.</li>
          <td>Action         </td>
          <td><p>To obtain a new key:</p>
 <ol>
-<li>For an existing installation, use the command <span class="code" style="font-weight: bold;">cftutil about</span> to retrieve your system information. The <strong>ABOUT</strong> command displays
+<li>For an existing installation, use the command <code>cftutil about</code> to retrieve your system information. The <strong>ABOUT</strong> command displays
 the Transfer CFT product, host, and key information, and characteristics of the platform
 on which Transfer CFT is installed.</li>
 <li>Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
 <ul>
-<li>For a US key, contact: <span class="code">fulfillment@us.axway.com</span></li>
-<li>For an EMEA or APAC key, contact: <span class="code">product.key@axway.com</span></li>
+<li>For a US key, contact: <code>fulfillment@us.axway.com</code></li>
+<li>For an EMEA or APAC key, contact: <code>product.key@axway.com</code></li>
 </ul></li>
 <li>Provide the hostname and system information for the installed or updated Transfer CFT.</li>
 </ol>

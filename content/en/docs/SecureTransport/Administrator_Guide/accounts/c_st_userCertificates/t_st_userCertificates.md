@@ -37,7 +37,7 @@ Use the following procedure to export a login certificate.
 
 ## Import a login certificate
 
-Before the user attempts to log in using an imported certificate, ensure that the CA referenced in the certificate is include in the trusted CAs for the {{< SecureTransport/componentshortname  >}} server. For details, see <a href="../../../c_st_setup/c_st_certificates/t_st_trustedcas#top" class="MCXref xref">Manage trusted CAs</a>.
+Before the user attempts to log in using an imported certificate, ensure that the CA referenced in the certificate is include in the trusted CAs for the {{< SecureTransport/componentshortname  >}} server. For details, see [Manage trusted CAs](../../../c_st_setup/c_st_certificates/t_st_trustedcas#top).
 
 {{< SecureTransport/componentshortname  >}} generates only X509 login certificates, but you are allowed to import both X509 and SSH Key certificates.
 
@@ -84,5 +84,5 @@ Use the following procedure to delete one or more login certificates.
 
 **Related topics:**
 
--   <a href="../manage-user-partner-certificates" class="MCXref xref">Manage partner certificates</a>
--   <a href="../manage-user-private-certificates" class="MCXref xref">Manage private certificates</a>
+-   [Manage partner certificates](../manage-user-partner-certificates)
+-   [Manage private certificates](../manage-user-private-certificates)

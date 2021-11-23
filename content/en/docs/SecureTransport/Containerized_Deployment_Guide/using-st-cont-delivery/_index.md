@@ -6,10 +6,10 @@
 
 **Related subtopics**
 
--   <a href="deployment-topology" class="MCXref xref">Deployment topology</a>
--   <a href="deployment-prerequisites" class="MCXref xref">Deployment prerequisites</a>
--   <a href="initial-deployment" class="MCXref xref">Initial deployment</a>
--   <a href="initial-config" class="MCXref xref">Configure the deployment</a>
--   <a href="scale-deployment" class="MCXref xref">Scale the deployment</a>
--   <a href="additional-network-zones" class="MCXref xref">Multiple network zones</a>
--   <a href="update-st" class="MCXref xref">Update the deployment</a>
+-   [Deployment topology](deployment-topology)
+-   [Deployment prerequisites](deployment-prerequisites)
+-   [Initial deployment](initial-deployment)
+-   [Configure the deployment](initial-config)
+-   [Scale the deployment](scale-deployment)
+-   [Multiple network zones](additional-network-zones)
+-   [Update the deployment](update-st)

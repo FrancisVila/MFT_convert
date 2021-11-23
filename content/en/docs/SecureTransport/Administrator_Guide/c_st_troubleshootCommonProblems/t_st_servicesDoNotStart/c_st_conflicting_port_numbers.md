@@ -6,5 +6,5 @@
 
 **Related topics:**
 
--   <a href="../t_st_no_ssl_certificate_configured_for_server" class="MCXref xref">No SSL certificate configured for the server</a>
--   <a href="../c_st_incorrect_host_name_ip_in_host_file" class="MCXref xref">Incorrect host name and IP address in the host file</a>
+-   [No SSL certificate configured for the server](../t_st_no_ssl_certificate_configured_for_server)
+-   [Incorrect host name and IP address in the host file](../c_st_incorrect_host_name_ip_in_host_file)

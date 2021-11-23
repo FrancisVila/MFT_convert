@@ -4,20 +4,17 @@
     "weight": "2260"
 }<span id="nopart"></span>
 
-### <span class="mc-variable System.Title variable">nopart</span>
+### 
 
 #### CFTDEST
 
-\[NOPART = {<span style="text-decoration: underline;">abort</span>
+\[NOPART = {
 | continue | ignore }\]
-
-<span style="font-weight: normal;">Do not complete this field if you
-completed the fname field.</span>
 
 Define the actions to perform when a partner in the partner list is
 not found. Options are:
 
--   <span style="font-weight: bold;">abort</span>
+-   **abort**
     (default)
 -   <span style="font-weight: bold;">continue</span>:
     to display an information message and continue processing

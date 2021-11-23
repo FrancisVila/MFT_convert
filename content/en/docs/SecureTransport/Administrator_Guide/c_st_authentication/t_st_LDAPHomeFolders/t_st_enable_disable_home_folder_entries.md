@@ -10,6 +10,6 @@
 
 **Related topics:**
 
--   <a href="../t_st_create_home_folder_entry" class="MCXref xref">Create a home folder entry</a>
--   <a href="../t_st_edit_home_folder_entry" class="MCXref xref">Edit a home folder entry</a>
--   <a href="../t_st_delete_home_folder_entries" class="MCXref xref">Delete home folder entries</a>
+-   [Create a home folder entry](../t_st_create_home_folder_entry)
+-   [Edit a home folder entry](../t_st_edit_home_folder_entry)
+-   [Delete home folder entries](../t_st_delete_home_folder_entries)

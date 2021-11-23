@@ -13,9 +13,9 @@
 
 The following topics provide how-to procedures for evaluating and troubleshooting performance issues:
 
--   <a href="t_st_evaluate_performance_issues" class="MCXref xref">Evaluate performance issues</a> - Provides how-to procedures for evaluating performance issues.
--   <a href="t_st_dns_settings" class="MCXref xref">DNS settings</a> - Provides how-to procedures for troubleshooting DNS settings issues.
--   <a href="t_st_firewall_issues" class="MCXref xref">Firewall issues</a> - Provides how-to procedures for troubleshooting firewall issues.
--   <a href="t_st_other_services_using_to_much_cpu_memory" class="MCXref xref">Other services using to much CPU or memory</a> - Provides how-to procedures for troubleshooting CPU and memory usage issues.
--   <a href="t_st_installation_on_network_drive" class="MCXref xref">Installation on network drive</a> - Provides how-to procedures for troubleshooting drive issues.
--   <a href="t_st_debug_log_output_slows_computer" class="MCXref xref">Debug log output slows computer</a> - Provides how-to procedures for troubleshooting debug log output issues.
+-   [Evaluate performance issues](t_st_evaluate_performance_issues) - Provides how-to procedures for evaluating performance issues.
+-   [DNS settings](t_st_dns_settings) - Provides how-to procedures for troubleshooting DNS settings issues.
+-   [Firewall issues](t_st_firewall_issues) - Provides how-to procedures for troubleshooting firewall issues.
+-   [Other services using to much CPU or memory](t_st_other_services_using_to_much_cpu_memory) - Provides how-to procedures for troubleshooting CPU and memory usage issues.
+-   [Installation on network drive](t_st_installation_on_network_drive) - Provides how-to procedures for troubleshooting drive issues.
+-   [Debug log output slows computer](t_st_debug_log_output_slows_computer) - Provides how-to procedures for troubleshooting debug log output issues.

@@ -18,5 +18,5 @@ Directory path names in an account template are case sensitive.
 
 **Related topics:**
 
--   <a href="../c_st_account_templates_external_users" class="MCXref xref">Account templates and external users</a>
--   <a href="../t_st_accounttemplates" class="MCXref xref">Manage account templates</a>
+-   [Account templates and external users](../c_st_account_templates_external_users)
+-   [Manage account templates](../t_st_accounttemplates)

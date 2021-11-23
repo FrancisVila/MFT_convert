@@ -63,12 +63,12 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 **Client configuration**
 
 
-    CFTPROT id=PESIT, DISCTS=8, DISCTD=8
+    CFTPROT id=PESIT, DISCTS=8, DISCTD=
 
 **Server configuration**
 
 
-    CFTPROT id=PESIT, DISCTS=10, DISCTD=7
+    CFTPROT id=PESIT, DISCTS=, DISCTD=7
 
 > **Note:**
 >
@@ -114,7 +114,7 @@ Use the CFTUTIL ABOUT command to check for the maximum number of allowed trans
     * type                       = DATE
     * expire                     = 2015/11/14
     * sysname                    = linux-x86-64
-    * Nb Transfers               = 64
+    * Nb Transfers               = 
     * Nb CPU                     = 4
     * Nb Partners                = Max
 
@@ -252,7 +252,7 @@ attempts are made.
 Use this parameter to specify the number of reconnection attempts to make
 with a time interval of retryw
 between attempts. When retryn attempts have been
-made without success, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> divides retryn
+made without success, {{< TransferCFT/componentshortname  >}} divides retryn
 by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
 specified retrym.

@@ -37,7 +37,7 @@ Use the following procedure to create a transfer profile.
              <td><p>Used to select the files to send when a partner site downloads.</p>
     <p>Relative to the user’s home folder, so <code>/file</code> refers to a file in the home folder</p>
     <p>Any valid expression including PeSIT expressions</p>
-    <p>For details, see <a href="../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>.</p>         </td>
+    <p>For details, see <a href="../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a>.</p>         </td>
           </tr>
           <tr>
              <td>Acknowledge Transfer         </td>
@@ -48,7 +48,7 @@ Use the following procedure to create a transfer profile.
              <td><p>Used to name the files received when files are transferred to {{< SecureTransport/componentshortname  >}}.</p>
     <p>Relative to the user’s home folder, so <code>/file</code> refers to a file in the home folder</p>
     <p>Any valid expression including PeSIT expressions.</p>
-    <p>For details, see <a href="../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337" class="MCXref xref">Expression Language</a>.</p>         </td>
+    <p>For details, see <a href="../../c_st_expressionlanguage#Appendix_Exp_Lang_Rules_3592148187_1031337">Expression Language</a>.</p>         </td>
           </tr>
           <tr>
              <td>File Label         </td>
@@ -81,7 +81,7 @@ Use the following procedure to create a transfer profile.
           </tr>
           <tr>
              <td>Additional attributes         </td>
-             <td><p>This group of options provides controls for you to add or remove custom attributes as <em>attribute:value</em> pairs with your transfer profile. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition" class="MCXref xref">Additional attributes</a>.</p>
+             <td><p>This group of options provides controls for you to add or remove custom attributes as <em>attribute:value</em> pairs with your transfer profile. See <a href="../../c_st_setup/t_st_mailtemplates/c_st_mail_template_commands_variables#Addition">Additional attributes</a>.</p>
     <h5 id="add-an-attribute">Add an attribute</h5>
     <ul>
     <li>Click <strong>Add Attribute</strong> to enable input in the <strong>Attribute</strong> and <strong>Value</strong> fields.</li>

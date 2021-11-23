@@ -33,9 +33,9 @@ is not the current date.
 
 #### START
 
-**\[MAXTIME = {+<span class="italic_in_para">n</span>}\]**
+**\[MAXTIME = {+}\]**
 
-<span class="code">Maxtime </span>is used in the <span class="code">START </span>command to indicate a relative transfer validity time limit. This means the time that the command is taken into account plus <span class="italic_in_para">n</span> minutes. The <span class="code">maxtime</span> value is between 1 and the number of minutes in a day minus one, (60 x 24) – 1, and must be less than 24 hours.
+`Maxtime `is used in the `START `command to indicate a relative transfer validity time limit. This means the time that the command is taken into account plus minutes. The `maxtime` value is between 1 and the number of minutes in a day minus one, (60 x 24) – 1, and must be less than 24 hours.
 
 Example
 
@@ -44,7 +44,7 @@ Example
 
 Example
 
-<span class="code">MAXTIME = +180</span> means that the maximum time limit for a transfer to be valid is the time from which the command is taken into account plus 180 minutes. The acceptance time for the transfer command must be less than 24 hours.
+`MAXTIME = +180` means that the maximum time limit for a transfer to be valid is the time from which the command is taken into account plus 180 minutes. The acceptance time for the transfer command must be less than 24 hours.
 
 [Return to Command index](../../)
 

@@ -13,7 +13,7 @@
 **A**ction to be taken if a transfer
 aborts due to the receiving file creation error (server mode):
 
--   <span style="font-weight: bold;">KEEP</span>:
+-   **KEEP**:
     the transfer remains in the catalog
 -   <span style="font-weight: bold;">DELETE</span>:
     the transfer is removed from the catalog

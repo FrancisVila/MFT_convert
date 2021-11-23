@@ -22,6 +22,6 @@
 
 The following topics provide how-to instructions for managing user certificates:
 
--   <a href="t_st_usercertificates" class="MCXref xref">Manage login certificates</a>
--   <a href="manage-user-partner-certificates" class="MCXref xref">Manage partner certificates</a>
--   <a href="manage-user-private-certificates" class="MCXref xref">Manage private certificates</a>
+-   [Manage login certificates](t_st_usercertificates)
+-   [Manage partner certificates](manage-user-partner-certificates)
+-   [Manage private certificates](manage-user-private-certificates)

@@ -218,7 +218,7 @@ The information required is:
 -   **SSL Admin UI Port** – The port used to connect to the Administration Tool. When you install {{< SecureTransport/componentshortname >}} as a non-root user, the default value for Admin port number is 8444.
 -   **Tomcat Shutdown Port** – The port used to shut down the Tomcat server
 -   **Enable Nightly Log Rotation** – Select if you want the system to perform automatic backup and purging of log files on a nightly basis. When this feature is enabled, {{< SecureTransport/componentshortname >}} Server backups log files, generated on the respective day, and creates a new one for the subsequent day. The server takes a back up and creates a new log file at 23:59 or 00:00 hours, depending on the log file type. This option is enabled by default. You can enable or disable the nightly log rotation after installation. For more information, see the , Server Log Rotation Scheduling.
--   **Secret File Path** – The path to the secret file you copied from another {{< SecureTransport/securetransportname >}} Server installation to this system, if blank, the installer creates a secret file (See <a href="../../../prereqs_overview/secret_file#beforeinstallst_3365039947_1107715" class="MCXref xref">Secret file</a>.)
+-   **Secret File Path** – The path to the secret file you copied from another {{< SecureTransport/securetransportname >}} Server installation to this system, if blank, the installer creates a secret file (See [Secret file](../../../prereqs_overview/secret_file#beforeinstallst_3365039947_1107715).)
 
   
 When you have modified these values as required for your installation, press Enter.  
@@ -243,5 +243,5 @@ After successfully installing {{< SecureTransport/componentshortname  >}}, you m
 
 **Related topics:**
 
--   <a href="../installing_securetransport_server_external_db_unix" class="MCXref xref">Install SecureTransport Server on Unix with an external database</a>
--   <a href="../running_st_as_service_unix" class="MCXref xref">Run SecureTransport as a service on UNIX-based platforms after non-root installation</a>
+-   [Install SecureTransport Server on Unix with an external database](../installing_securetransport_server_external_db_unix)
+-   [Run SecureTransport as a service on UNIX-based platforms after non-root installation](../running_st_as_service_unix)

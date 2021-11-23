@@ -4,7 +4,7 @@
     "weight": "80"
 }After installing Gateway you can:
 
--   [Integrate PassPort](#integrating_passport). This is mandatory if you chose to use <span class="mc-variable suite_variables.PassPortName variable">PassPort</span> with Gateway.
+-   [Integrate PassPort](#integrating_passport). This is mandatory if you chose to use {{< Gateway/passportname >}} with Gateway.
 -   [Start or stop the server.](#starting_server) In order to configure and work with Gateway.
 -   [Install Gateway Navigator](../install_gateway_navigator): Navigator allows you to control your Gateway servers remotely through a management UI.
 
@@ -14,9 +14,9 @@
 
 ### About
 
-After installing Gateway and <span class="mc-variable suite_variables.PassPortName variable">PassPort</span>, but before starting the Gateway server for the first time:
+After installing Gateway and {{< Gateway/passportname  >}}, but before starting the Gateway server for the first time:
 
--   Set up a user as a Gateway administrator in <span class="mc-variable suite_variables.PassPortName variable">PassPort</span>
+-   Set up a user as a Gateway administrator in {{< Gateway/passportname >}}
 -   Log in as the Gateway administrator
 
 ### Prerequisites
@@ -40,35 +40,35 @@ After installing Gateway and <span class="mc-variable suite_variables.PassPortNa
 
 If RMA is installed:
 
-1.  Import into PassPort AM the Roles defined inside the newly installed file: <span class="code">{ROOTFOLDER of RMA SERVER}/conf/passport/rma\_csd.xml</span>. For detailed information, refer to *Gateway User Guide >* [Importing required data into PassPort](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/Products/RMA/Administration/t_fex_asp_rma_access_ctrl.htm).
+1.  Import into PassPort AM the Roles defined inside the newly installed file: `{ROOTFOLDER of RMA SERVER}/conf/passport/rma_csd.xml`. For detailed information, refer to *Gateway User Guide >* [Importing required data into PassPort](/bundle/Gateway_6173_UsersGuide_allOS_en_HTML5/page/Content/Products/RMA/Administration/t_fex_asp_rma_access_ctrl.htm).
 2.  Inside PassPort AM, as administrator, grant RMA roles to the previously defined user\[s\].
 
 <span id="starting_server"></span>
 
 ## Starting and stopping the server
 
-This section explains how to start and stop after <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> installation and how to check which <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> processes are running. The procedures to follow depend on your operating system:
+This section explains how to start and stop after {{< Gateway/componentshortname  >}} installation and how to check which {{< Gateway/componentshortname  >}} processes are running. The procedures to follow depend on your operating system:
 
 -   [Windows](#Windows)
 -   [UNIX](#UNIX)
 
 <span id="Windows"></span>
 
-### Controlling <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> on Windows
+### Controlling {{< Gateway/componentshortname  >}} on Windows
 
 After installation, you can either [start
-<span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> manually](#Starting_manually), or let it to start
-automatically on system startup if set to do so. To start <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> automatically,
-you must have [installed <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>
+{{< Gateway/componentshortname  >}} manually](#Starting_manually), or let it to start
+automatically on system startup if set to do so. To start {{< Gateway/componentshortname  >}} automatically,
+you must have [installed {{< Gateway/componentshortname  >}}
 as a system service](#Installing_as_system_service).
 
-To start <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>, enter the command: <span class="code">gatestart</span>
+To start {{< Gateway/componentshortname  >}}, enter the command: `gatestart`
 
-To stop <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span>, enter the command: <span class="code">gatestop</span>
+To stop {{< Gateway/componentshortname  >}}, enter the command: `gatestop`
 
-#### Starting and stopping <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> manually
+#### Starting and stopping {{< Gateway/componentshortname  >}} manually
 
-To start and stop <span class="mc-variable axway_variables.Component_Short_Name variable">Gateway</span> manually, use the commands available in the Windows <span style="font-weight: bold;">Start</span> menu or by command line.
+To start and stop {{< Gateway/componentshortname  >}} manually, use the commands available in the Windows **Start** menu or by command line.
 
 <span id="Starting_manually"></span>
 
@@ -169,7 +169,7 @@ option in the Control Panel.
 3.  Select <span style="font-weight: bold;">Administrative
     Tools</span>.
 4.  Select <span style="font-weight: bold;">Services</span>.
-5.  Select the <span style="font-family: Verdana, sans-serif;"><span style="font-family: Calibri;"><span class="code">&lt;service name></span> service</span> (<span style="font-family: Calibri;">for example</span> </span><span style="font-weight: bold;font-family: 'Courier New', monospace;">Axway
+5.  Select the <span style="font-family: Verdana, sans-serif;"><span style="font-family: Calibri;"><span class="code">&lt;service name></span> service</span> (<span style="font-family: Calibri;">for example</span></span><span style="font-weight: bold;font-family: 'Courier New', monospace;">Axway
     Gateway</span><span style="font-family: Verdana, sans-serif;">) <span style="font-family: Calibri;">and</span></span>
     select <span style="font-weight: bold;">Start</span> or <span style="font-weight: bold;">Properties</span>.
 
