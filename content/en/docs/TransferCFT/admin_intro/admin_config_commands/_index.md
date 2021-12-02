@@ -74,6 +74,51 @@ although <span class="mc-variable axway_variables.Component_Short_Name variable"
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 media by type of object and parameter
 
+```
+
+Object
+
+Parameter
+
+File type described
+
+CFTCAT 
+FNAME 
+Catalog file 
+CFTCOM 
+FNAME 
+Communication medium 
+CFTLOG 
+FNAME
+AFNAME 
+Log files 
+CFTACCNT 
+FNAME
+AFNAME 
+Statistics files 
+CFTPARM 
+PARTFNAM 
+Partner file (obsolete for Windows/Unix)
+CFTXLATE 
+FNAME 
+File containing the description of a translation table 
+CFTDEST 
+FNAME 
+File containing a list of partners 
+CFTAUTH 
+FNAME 
+File containing a list of authorized or prohibited IDFs 
+CFTPARM 
+EXEC ... 
+End-of-transfer procedures 
+CFTLOG 
+EXEC 
+Log switching procedure 
+CFTACCNT 
+EXEC 
+Statistics file switching procedure 
+```
+
 Depending on the system, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supports the following communication
 media:
 
@@ -147,7 +192,51 @@ language applications.
 
 #### **Media names by service in COBOL language interface**
 
+```
+
+Service
+
+Command
+
+Parameter
+
+**File type described**
+
+CFTI 
+OPEN 
+D-CAT 
+Catalog file 
+CFTU 
+COM 
+D-COM 
+CFT communication medium 
+```
+
 #### **Media names by service in C language interface**
+
+```
+
+Service
+
+Command
+
+Parameter
+
+File type described
+
+cftai 
+OPEN 
+cat 
+Catalog file 
+cftaix 
+OPEN 
+cat 
+Catalog file 
+cftau 
+COM 
+param 
+<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication medium 
+```
 
 The default names of the media accessed by the programming interface,
 CATALOG file and COMMUNICATION medium, are defined in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS.
@@ -176,6 +265,26 @@ OS.
 The interactive function media are defined by the customization function
 of this component. The table below indicates, for each field, the file
 type described:
+
+```
+
+Field
+
+File type described
+
+Parm 
+Parameter file 
+Part 
+Partner file 
+Cat 
+Catalog files 
+Log1 
+Log files 
+Log2 
+ 
+Com 
+Communication medium 
+```
 
 If this function is not activated, the media accessed are those defined
 at the time the product is installed.

@@ -58,6 +58,12 @@ Enter the INSTALL command and press to display the Transfer CFT IBM i installati
 >
 > Pressing ENTER at this stage performs an install using the default values. You can override any default value, as needed.
 
+```
+INSTALL CFT (INSTALL)
+ 
+Install on an independent ASP. . . . . . . '2' 1:Yes / 2:No
+```
+
 > **Note:**
 >
 > To perform a silent installation, use the CFT Update menu as shown in Perform\_auto\_installation.htm.

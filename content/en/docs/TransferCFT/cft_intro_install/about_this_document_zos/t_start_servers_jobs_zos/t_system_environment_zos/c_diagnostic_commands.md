@@ -86,6 +86,11 @@ The file has the FIXED BLOCKED, LRECL=132 format. You can change the value of t
 
 **Example**
 
+```
+// UTIL EXEC PGM=CFTUTIL,
+// PARM=‘SGTRACE nnn’
+```
+
 SGTRACE nnn must be the first and second parameters of the PARM field.
 
 If the DD SGTRACE card is absent, Transfer CFT OS/390 allocates the file dynamically with SYSOUT = A.
@@ -223,15 +228,54 @@ The ? command enables you to find the status of certain Transfer CFT components.
 
 #### TASK
 
+```
+DTSK01I TASK SUMMARY (SGNUC=001EA000):
+DTSK02I 002BFA20 " L62RCAK" EPA=07602480 OWN=CFTR324 PRIVATE.
+Addr task block, EPA, user name, type-private/ OS
+DTOD03I TOD=16:11:50:155444.
+TOD of the last DISPATCH
+DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
+```
+
 #### FILES
+
+```
+DFIL01I FILE SUMMARY:
+DFIL02I 0022EE90 FIL00007 SOP$CFT.REF.C324.COM UPDATE
+Addr FCB, DDNAME, DSNAME, Access type
+DFIL04I Read=2550 Write=145 TOD=14:01:27:985867 GU SGFVSDIR 240517 B102162Read count, write count, TOD of the last access, operation, module/date/revision
+```
 
 #### ENQ
 
 Follow-up:                                       
 
+```
+DENQ01I ENQ SUMMARY :
+DENQ02I 0725DEA0 "CFTPARM " "90.SOP$CFT.REF.C324.PARM
+" EXC SYSTEM .
+Addr block, QNAME RNAME Type Scope
+DTOD04I TOD=16:11:46:351245 tas=00065900.
+ENQ TODof the list of waiting requesters
+```
+
 #### SCB
 
+```
+DSCB01I SCB SUMMARY: DSCB02I:ADR=002BF520 RF=1BB20069 FL=110000E8 OW=001FEA20(CFTINTV ) PC=0
+ 
+TM=8640001. Addr File, Reference, flags, Creative tasks, Number of posted messages, Waiting time, 1/100ths
+ 
+DTOD03I TOD=12:07:57:156629. TOD of hold
+```
+
 #### APF
+
+```
+CFAU02I JOB "CFTR223 " USERID "CFTR223 " IS APF-AUTH.
+Jobname, Userid RACF, Indication APF ON/OFF
+CARM01I Automatic restart for CFTR223 (STC05479) started, Element="XIDPARM
+```
 
 If APF is ON, the name of the ARM element used is recorded.
 

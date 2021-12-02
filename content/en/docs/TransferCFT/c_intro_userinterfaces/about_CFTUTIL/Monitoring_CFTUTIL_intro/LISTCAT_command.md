@@ -158,6 +158,10 @@ fulfill the selection criteria which may be defined by other parameters.</p>    
 
 Example 1
 
+```
+LISTCAT TYPE = ALL, PART = HQ, STATE = DC
+```
+
 Displays the most important information (CONTENT=BRIEF by default) concerning
 all transfers (TYPE=ALL) sent to or received from (DIRECT=BOTH by default)
 the partner (PART = HQ), the states of which are "Available"
@@ -165,11 +169,19 @@ or "in Process" (STATE=DC).
 
 Example 2
 
+```
+LISTCAT TYPE = FILE, DIRECT = SEND, PART = PARIS5
+```
+
 Displays the most important information (CONTENT=BRIEF by default) concerning
 the file transfers (TYPE=FILE) sent (DIRECT=SEND) to the partner (PART)
 PARIS5, all states included (STATE=\* by default).
 
 <span id="sortby_example"></span>Example 3
+
+```
+LISTCAT SORTBY=IDTU
+```
 
 Displays the records by IDTU. This can be useful because the catalog's compact behavior takes advantage of unused records meaning the IDTU may not display in order.
 

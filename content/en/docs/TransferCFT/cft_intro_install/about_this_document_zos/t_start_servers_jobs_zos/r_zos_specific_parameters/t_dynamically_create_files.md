@@ -117,6 +117,7 @@ Supported keywords and values include:
 **(\*)** For the CFTRECV command (only), you can specify DFSMS parameters in ATTSUSER.
 
 Example 1
+&lt;/p>
 
 To force the creation of the received file in the EAV section of a volume:
 
@@ -131,6 +132,7 @@ CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.
 > The ATTSUSER field is presently not managed by Central Governance.
 
 Example 2
+&lt;/p>
 
 To create a large (greater than 215,000 records) Transfer CFT catalog:
 

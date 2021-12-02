@@ -104,9 +104,20 @@ Provides helps for the available fields for the different elements, or lists the
 The following information is displayed for the CONTENT parameter BRIEF
 value:
 
+```
+ 
+ 
+```
 <span id="CONTENT_BRIEF_Display"></span>
 
 ### CONTENT=BRIEF display (former format, or no model)
+
+```
+ 
+ 
+ 
+ 
+```
 
 Id
 
@@ -148,7 +159,13 @@ CN (Common name) attribute of the certificate signer DN field.
 
 ### CONTENT=FULL display (default display)
 
+```
+```
+
 ### CONTENT=FULL display (former format, or no model)
+
+```
+```
 
 Certificate id
 
@@ -210,7 +227,23 @@ Value of the certificate signer DN field.
 
 You can use the FMODEL parameter to display only certain types of certificates; for example below we want to display the certificates that have the ACT state:
 
+```
+PKIUTIL LISTPKI CONTENT=BRIEF, STATE=ACT
+```
+
 Resulting in:
+
+```
+Id.      Root      Type   State Exp.Date   K   Delivered to Delivered by
+EXPIRED  EXPIRED  ROOT   ACT   01/09/2015 !    4k\_ca 4k\_ca
+EXPIRED  EXPIRED   USER   ACT   01/09/2030 ? x 4k\_user 4k\_ca
+ROOT     ROOT      ROOT   ACT   22/07/2029   2k\_root 2k\_root
+INTER1   ROOT      INTER  ACT   22/07/2029   2k\_l1\_ca 2k\_root
+? USER2  ROOT      USER   ACT  22/07/2029 x  2k\_l3\_user1 2k\_l2\_ca
+USER1    ROOT      USER   ACT  22/07/2029 x  2k\_l2\_user1 2k\_l1\_ca
+USER0    ROOT      USER   ACT  22/07/2029 x  2k\_l1\_user1 2k\_root
+> 7 Certificates selected
+```
 
 Key to indicators and symbols:
 

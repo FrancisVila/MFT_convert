@@ -14,7 +14,24 @@ When exporting data from the PKI database, you can extract the data in Base64 in
 
 For instance, with the following base:
 
+```
+Certificates:
+Id.   Root  iNum  T S C K E          Exp.Date   Delivered to    Delivered by
+------------ ------------ ---- - - - - - ---------- ------------- ------------
+INTER  ROOT        I A x                                22/07/2029   2k\_l1\_ca       2k\_root
+ROOT    ROOT      R A x                  22/07/2029   2k\_root        2k\_root
+USER   ROOT        U A x x                             22/07/2029   2k\_l1\_user1    2k\_root
+Keys:
+Id.                             S K Bits
+-------------------------------- - - ----
+PRIV                            A x 2048
+```
+
 By default, PKIEXT uses INAME/IKNAME to create the PKICER/PKIKEY objects:
+
+```
+PKIUTIL PKIEXT FOUT=FOO.cmd
+```
 
 This exports a `FOO.cmd` file, where additional files are created containing the following data:
 
@@ -26,3 +43,7 @@ This exports a `FOO.cmd` file, where additional files are created containing the
 -   KPUB0004: the PRIV public key in ssh-rsa format
 
 By contrast, the Base64 option uses the IDATA/IKDATA parameters to extract a single `BAR.cmd` file instead of files.
+
+```
+PKIUTIL PKIEXT FOUT=BAR.cmd, BASE64=YES
+```

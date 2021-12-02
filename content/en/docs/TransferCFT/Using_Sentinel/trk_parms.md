@@ -36,9 +36,27 @@ The parameter definitions are taken into account in the order listed below. For 
 
 Enter the following command to get the Transfer CFT CFTTRK details:
 
+```
+cftutil mquery object=SYSTEM
+```
+
 When Sentinel is available, the following messages display in the log:
 
+```
+CFTI24I CFTTRK MQUERY OBJECT=SYSTEM
+CFTI24I CFTTRK Nb max messages = 100
+CFTI24I CFTTRK nb messages = 65
+CFTI24I CFTTRK Sentinel state = connected
+```
+
 If Sentinel is not available, or has been disabled, the following messages display in the log:
+
+```
+CFTI24I CFTTRK MQUERY OBJECT=SYSTEM
+CFTI24I CFTTRK Nb max messages = 100
+CFTI24I CFTTRK nb messages = 102
+CFTI24I CFTTRK Sentinel state = disconnected
+```
 
 ## Command parameters
 

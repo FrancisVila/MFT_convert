@@ -32,10 +32,21 @@ Usage
 
 All internal data files are initialized using provided configuration files.
 
+```
+cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf
+```
+
 Only common internal data files are initialized using provided configuration files.
+
+```
+cftinit –c conf/cft-tcp.conf conf/cft-tcp-part.conf
+```
 
 Specific internal data files for node 2 are initialized (cftcata02, cftcom02, cftlog02).
 
+```
+cftinit –n 2
+```
 <span id="Start"></span>
 
 ## Start and stop the cluster
@@ -56,6 +67,10 @@ copstart
 
 Usage
 
+```
+copstart
+```
+
 Start all node managers
 
 For each host perform the command: `copstart`
@@ -73,6 +88,10 @@ Syntax
 copstop
 
 Usage
+
+```
+copstop
+```
 
 Stop all node managers
 
@@ -100,7 +119,15 @@ Usage
 
 All nodes are started by the node managers.
 
+```
+cft start
+```
+
 Node 0 is started by one of the node managers.
+
+```
+cft start –n 0
+```
 
 ### Stop a node or all nodes
 
@@ -120,8 +147,15 @@ Usage
 
 Stops all nodes.
 
+```
+cft stop
+```
+
 Stops node 0.
 
+```
+cft stop –n 0
+```
 <span id="Restart"></span>
 
 ### Restart a node or all nodes
@@ -148,9 +182,21 @@ Usage
 
 All nodes are re-started by the node managers.
 
+```
+cft restart
+```
+
 Node 0 is re-started by one of the node managers.
 
+```
+cft restart –n 0
+```
+
 All hosted locally nodes are re-started by the node managers.
+
+```
+cft restart –ln
+```
 
 ### Stop the {{< TransferCFT/transfercftname  >}} cluster
 
@@ -178,6 +224,10 @@ Example
 
 Enter:
 
+```
+CFTUTIL listnode
+```
+
 In this example, the four nodes running on four different hosts are displayed.
 
 ![Example screen shot of 4 nodes running on different hosts, per the description in the text.](/Images/TransferCFT/examplelistnode.png "Example screen shot of 4  nodes running on different hosts, per the description in the text.")
@@ -193,6 +243,10 @@ Syntax
 copstatus -v
 
 Usage
+
+```
+copstatus -v
+```
 
 ### Check all nodes' status
 
@@ -227,6 +281,10 @@ Use the `CFTUTIL listlog` command to display the log content, which can be defi
 
 Additionally, you can filter the log according to multiple criteria, or view a log that is merged for several nodes in cluster mode. See [LISTLOG](../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/listlog).
 
+```
+CFTUTIL listlog LINES=-200
+CFTUTIL listlog node=1
+```
 <span id="Multi N Display"></span>
 
 #### display/listcat
@@ -253,7 +311,13 @@ Usage on UNIX/Windows
 2.  Complete the installation.
 3.  On the shared disk where runtime directory is installed, execute the profile.
 4.  Execute the command add\_host:  
+    ```
+    cft add\_host -hostname newhost -host newhost.company.int
+    ```
 5.  Check that new hostname displays when listing the hosts:  
+    ```
+    listuconf id= cft.multi\_node.hostnames.\*
+    ```
 6.  Start Copilot on &lt;hostname>.
 
 Please refer to the OS-appropriate installation guide  for installation program details.
@@ -282,6 +346,9 @@ Usage on UNIX/Windows
 1.  On the host to be removed, execute the profile and then stop the node manager: `copstop`
 2.  Check that all Transfer CFT nodes and node manager processes are stopped on the host to be removed.
 3.  Execute the following command, where &lt;host to remove> is the name of host to remove as referenced in `cft.multi_node.hostnames`:  
+    ```
+    cft remove\_host -hostname <host to remove>
+    ```
 4.  Uninstall binaries from the &lt;host to remove>.
 
 <span id="Manage2"></span>
@@ -300,6 +367,10 @@ cft add\_node
 
 Usage
 
+```
+cft add\_node
+```
+
 ### Enable a node
 
 <span id="Multi N enable disable"></span>
@@ -314,6 +385,9 @@ cft enable\_node -n -&lt;node\_id>
 
 Usage
 
+```
+cft enable\_node -n -<node\_id>
+```
 <span id="Disable"></span>
 
 ### Disable a node
@@ -331,6 +405,10 @@ Syntax
 cft disable\_node -n -&lt;node\_id>
 
 Usage
+
+```
+cft disable\_node -n -<node\_id>
+```
 
 ### Remove a node
 
@@ -354,6 +432,9 @@ cft remove\_node –n &lt;the\_highest\_node\_id>
 
 Usage
 
+```
+cft remove\_node –n 3
+```
 <span id="Rebalanc"></span>
 
 ## Rebalance the cluster after a host failure

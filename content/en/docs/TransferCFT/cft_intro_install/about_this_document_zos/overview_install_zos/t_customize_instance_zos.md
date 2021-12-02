@@ -218,7 +218,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
 | srenable  | 'no'  | Enable/disable {{< TransferCFT/securerelayname  >}}.  |
-| srmapath  | '/home/AXWAY/CFT32X/inst'  |  USS directory for Secure Relay Master Agent (/xsr is automatically added). <blockquote> **Note:**<br/>Read only, you can share the directory with other Transfer CFTs. </blockquote>  |
+| srmapath  | '/home/AXWAY/CFT32X/inst'  |  USS directory for Secure Relay Master Agent (/xsr is automatically added). &lt;/p&gt; <blockquote> **Note:**<br/>Read only, you can share the directory with other Transfer CFTs. </blockquote>  |
 | srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{< TransferCFT/componentshortname  >}}.  |
 | srmacopo  | 'srmacopo'  | Secure Relay Master Agent communication port.  |
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
@@ -275,7 +275,15 @@ Syntax
 
 See the table below for possible keywords and values.
 
+```
+UCONFSET id=cft.mvs.sginstal.<keyword>,value=<value>
+```
+
 Example
+
+```
+UCONFSET id=cft.mvs.sginstal.sdsfopt,value=’monitor’
+```
 
 For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters in the A12OPTSP member.
 
@@ -318,6 +326,18 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 
 When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:
 
+```
+CFTI18I+Installation options (macro SGINSTAL)
+CFTI18I+ Macro date - 05/29/17 15.45 (MM/DD/YY hh.mm) (c)
+CFTI18I+ SHARECAT=NO
+CFTI18I+ TAPE=UPDATE
+CFTI18I+ BLKSIZE=27998
+CFTI18I+ BLKPDS=200
+CFTI18I+ HSMASYNC=YES
+CFTI18I+ ALLPRIM=100,ALLSEC=10,VOLNUM=20,ALLONE=100,ALLNEX=100
+CFTI18I+ …
+```
+
 When Transfer CFT starts, the CFTI18I message and DATE macro display in one of four formats:
 
 1.  CFTI18I and DATE macro - 06/16/17 14.10 (MM/DD/YY hh.mm) (c) SGINSTAL default model.  
@@ -334,6 +354,21 @@ When Transfer CFT starts, the CFTI18I message and DATE macro display in one of 
     A variable of the type cft.mvs.sginstal.xxxx.
 
 To generate parameters from the SGINSTAL executable as UCONF variables:
+
+```
+//\* **STEP 1 : GENERATE**
+//CFTSGIGN EXEC PGM=CFTSGIGN
+//STEPLIB DD DISP=SHR,DSN=&CFTLOAD (LIBRARY contains SGINSTAL)
+//UCONFGEN DD UNIT=SYSDA,DISP=(NEW,PASS),
+// DCB=(RECFM=VB,LRECL=256,BLKSIZE=2560),
+// SPACE=(TRK,(1)),
+// DSN=&&TMP
+//\* **STEP 2 : UPDATE UCONF**
+//UCONF EXEC PCFTUTL,PARM=''
+//CFTIN DD DISP=(OLD,DELETE),
+// DSN=&&TMP
+Delivered JCL INSTALL(MIGRSGI) extract.
+```
 
 Related topics
 

@@ -16,6 +16,16 @@ Any commands between the IF and ENDIF commands are executed if the condition of 
 
 An IF statement can only perform numerical tests. You can combine two tests using a logical AND or OR.
 
+```
+IF NAME = VAR1,
+   VALUE = VALUE1,
+   TYPE = COND1
+   OPER = OPERATOR,
+   ONAME = VAR2,
+   OVALUE = VALUE2,
+   OTYPE = COND2
+```
+
 #### Parameters
 
 -   VAR1:The variable No. 1 whose content is tested with the No. 1 value.
@@ -42,4 +52,22 @@ An IF statement can only perform numerical tests. You can combine two tests usin
 
 Using an IF statement for a single numeric test.
 
+```
+LONG name = COUNTER, INIT = 0
+     IF name = COUNTER, VALUE = 10, type = LES
+      PRINT msg = '%I%'
+     ENDIF
+```
+
 Using IF with an AND condition between two numeric tests.
+
+```
+LONG name = I, INIT = 4
+    IF name = I,VALUE=5,type=LEQ,OPER=AND,ONAME=I,OVALUE=4,OTYPE=GEQ
+     PRINT msg = 'I included between 4 et 5'
+    ENDIF
+```
+
+```
+ 
+```

@@ -28,9 +28,18 @@ The following sections describe the two ways that you can start a node (customiz
 1.  Extract the JCL ..INSTALL(MNRMAIN) information to create a specific STC (for example, CFTSTC).
 2.  In the in stream data set ‘//PARM DD \*’, you customize the start command using the STC name (MNRMON JCL).
 
+```
+set\_ startcmd 's CFTSTC,JOBNAME='jobid
+```
+
 ### JCL
 
 The JCL to be submitted is defined by DDNAME CFTJCL (the JCL MNRMAIN was customized during the installation phase).
+
+```
+//CFTJCL DD DISP=SHR,
+// DSN=&CFTENV..SAMPLE(MNRMAIN)
+```
 
 ### How the JOBNAME is computed
 
@@ -42,11 +51,19 @@ Prefix of jobname delimited by a ‘\*’.
 
 **Example**
 
+```
+set maskjob ‘CFTNOD\*’
+```
+
 Or
 
 Customize set maskjob using any valid REXX sentence.
 
 **Example**
+
+```
+set maskjob strip(substr(USERID(),1,6))'t\*' (6 first characters of userid concatenated with ‘t\*’)
+```
 
 #### Masklist
 
@@ -54,13 +71,29 @@ This is a list of characters allowed to substitute the ‘\*’.
 
 **Example**
 
+```
+set masklist '3456'
+```
+
 Result if maskjob=CFTNOD\*:
+
+```
+CFTNOD3,  CFTNOD4,  CFTNOD5, CFTNOD6
+```
 
 Or
 
 **Example**
 
+```
+set masklist 'ABCD'
+```
+
 Result if maskjob= strip(substr(USERID(),1,6))'t\*' and userid is ‘A123456’:
+
+```
+A12345TA, A12345TB, A12345TC, A12345TD
+```
 
 ### Start the Transfer CFT node manager
 
@@ -77,6 +110,30 @@ Result if maskjob= strip(substr(USERID(),1,6))'t\*' and userid is ‘A123456’:
 
 In addition to the standard log messages when starting a Transfer CFT node, the following display:
 
+```
+CFTI41I OMVS information for user=…..,uid uid=..,gid=0,home=(/home/cft/….)
+CCFT00I Started XFB/CFT number is : 8.
+CCFT04I Available storage for CFT: 24b=08408 …
+```
+
 For each start request an entry is created in the file …MONLOG, for example, when a node is started by STC.
 
+```
+Start request cftmain Jobname=SOZ113T4 25 Jun 2014 at 15:00:49 by Userid=SOP745
+
+-   Plex=PLEX1,Sysname=Z113 ,Version=z/OS 01.13.00 HBB7780
+-   Hostname=z-zos111b,Hostid=10.128.60.15
+-   Started by console command: S SOP7457A,JOBNAME=SOZ113T4
+
+```
+
 For example, when node started by JCL.
+
+```
+Start request cftmain Jobname=SOP745T4 13 Apr 2015 at 16:10:52 by Userid=SOP745
+
+-   Plex=PLEX1,Sysname=Z113 ,Version=z/OS 01.13.00 HBB7780
+-   Hostname=z-zos111b,Hostid=10.128.60.15
+-   Submitted by JCL IKJ56250I JOB SOP745T4(JOB03462) SUBMITTED
+
+```

@@ -23,7 +23,7 @@ You must give each additional {{< TransferCFT/componentlongname  >}} user read a
 
 ## z/OS tasks
 
-See the section on [RACF PERMIT](../../zOS/operator_interface_commands/t_set_%20up_RACF_security.htm#RACF%C2%A0pas) (TSS, etc.) in the Transfer CFT z/OS *Installation and Operations Guide.*
+See the section on [RACF PERMIT](#RACF%C2%A0pas) (TSS, etc.) in the Transfer CFT z/OS *Installation and Operations Guide.*
 
 Related topics
 

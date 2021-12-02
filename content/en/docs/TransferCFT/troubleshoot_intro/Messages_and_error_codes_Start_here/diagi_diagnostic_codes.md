@@ -522,7 +522,8 @@ receive mode for a file with versions or for a transfer requiring deconcatenatio
       <tr>
          <td>145         </td>
          <td><ol>
-<li>The SEND file is outside of the workingdir tree.</li>
+<li>The SEND file is outside of the workingdir tree.
+&lt;/li&gt;</li>
 <li>The temporary SEND file is outside of the workingdir tree.</li>
 </ol>         </td>
          <td><p>K status - ABORT</p>
@@ -530,7 +531,8 @@ receive mode for a file with versions or for a transfer requiring deconcatenatio
       </tr>
       <tr>
          <td>148         </td>
-         <td><p>1. The RECV file is outside of the workingdir tree.</p>
+         <td><p>1. The RECV file is outside of the workingdir tree.
+&lt;/p&gt;</p>
 <p>2. The temporary RECV file is outside of the workingdir tree.</p>         </td>
          <td><p>K status - ABORT</p>
 <p>Check the WORKINGDIR parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> object.</p>         </td>

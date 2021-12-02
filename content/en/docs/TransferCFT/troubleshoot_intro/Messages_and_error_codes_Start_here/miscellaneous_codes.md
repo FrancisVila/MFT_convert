@@ -99,6 +99,42 @@ indicate the source of the fault.
 This code forms the "XXX HHHH"-type DIAGP protocol diagnostic
 code. Values are expressed in mnemonic form.
 
+```
+
+Error code
+
+Description
+
+CDT
+Error during "credit" negotiation
+DAT
+Synchronization problem in "credit" and "data"
+exchanges
+FMT
+Internal FPDU formatting error
+IDF
+Received NIDF incompatible with sent IDF
+Note: only the RECV
+IDF=\* command is valid in ODETTE
+LDT
+Error in the network buffer size negotiation phase
+MSG
+Error when acknowledging the EERP message
+PAD
+Special logic negotiation error
+POS
+Restart point negotiation error
+RST
+Restart option negotiation error
+SFI
+Error during negotiation of a send file parameter (SFID
+FPDU)
+SSI
+Error during negotiation of a session parameter (SSID FPDU)
+VER
+Error in the protocol software release number (at present
+this number is set to 1)
+```
 <span id="FPDU_Mnemonic_codes___PeSIT_protocol"></span>
 
 ### FPDU Mnemonic codes - PeSIT protocol
@@ -106,3 +142,75 @@ code. Values are expressed in mnemonic form.
 This code forms the "XXX NNN" or "XXX iNNN" DIAGP
 protocol diagnostic code in the PeSIT protocol; it represents the XXX
 part. Values are expressed in mnemonic form.
+
+```
+
+Code
+
+FPDU
+
+ABO
+ABORT
+ACF
+Ack CLOSE REMOTE FILE
+ACO
+Ack CONNECT
+ACR
+Ack CREATE
+AID
+Ack IDT
+ADS
+Ack DESELECT
+AMG
+Ack MESSAGE
+AOF
+Ack OPEN REMOTE FILE
+ARD
+Ack READ
+ASE
+Ack SELECT
+ASY
+Ack SYNC
+ATE
+Ack TRANSFER END
+AWR
+Ack WRITE
+CON
+CONNECT
+CRE
+Ack CREATE
+CRF
+CLOSE REMOTE FILE
+DMG
+Start of MESSAGE
+DSE
+DESELECT
+DTE
+DATA TRANSFER END
+DTF
+DATA
+FMG
+End of MESSAGE
+IDT
+TRANSFER INTERRUPT
+MMG
+Middle of MESSAGE
+MSG
+MESSAGE
+ORF
+OPEN REMOTE FILE
+RCO
+Release CONNECT
+RDF
+READ
+RST
+RESTART
+SEL
+SELECT
+SYN
+CHECK
+TFE
+TRANSFER END
+WRI
+WRITE
+```

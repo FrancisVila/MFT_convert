@@ -7,7 +7,7 @@
 The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C10RECV  |  UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.  |
 
@@ -26,7 +26,7 @@ The SMPCNTL data set contains the following model job for the SMP/E PTFs mainten
 Submit the job described in the table below.
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PAPP  | Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.  |
 
@@ -46,7 +46,7 @@ These messages are normal; you can ignore them.
 The following table lists additional sample jobs.
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PREM  | Performs a RESTORE (to remove) for the PTF elements from the target zone.  |
 | $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
@@ -59,7 +59,7 @@ Edit the sample jobs listed in the table below, modifying as necessary.
 The Transfer CFT instance data set INSTALL contains the following model jobs for Transfer CFT SMP/E maintenance.  
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 |  A13SMPE  |  Applies maintenance to the Transfer CFT product instance.  |
 |  A13UCOP  |  Applies maintenance to Copilot.  |

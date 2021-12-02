@@ -44,6 +44,89 @@ The **phasestep** refers to the details that can occur during any given phase:
 >
 > The CFTSTATE in the Transfer CFT catalog corresponds to the transfer state in diagrams and tables.
 
+```
+
+Phase
+
+Phasestep
+
+<span id="State"></span>State
+
+Description
+
+Pre-processing (A)
+Hold (H)
+Pre-processing (A)
+Pre-processing available
+Pre-processing (A)
+Available (D)
+Pre-processing (A)
+Pre-processing is waiting resource to start
+Pre-processing (A)
+Processing (C)
+Pre-processing (A)
+Pre-processing in progress
+Pre-processing (A)
+Killed (K)
+Pre-processing (A)
+Pre-processing is canceled
+Transfer (T)
+Hold (H)
+Hold transfer (H)
+Transfer available (diagi=0) or interrupted (diagi <> 0)
+Transfer (T)
+Available (D)
+Available (D)
+Transfer is waiting on a resource to start
+Transfer (T)
+Processing (C)
+Processing (C)
+Transfer is in progress
+Transfer (T)
+Killed (K)
+Killed (K)
+Transfer is canceled
+Post-processing (Y)
+Hold (H)
+Post-processing (Y)
+Post-processing is interrupted
+Post-processing (Y)
+Exit EOT (E)
+Post-processing (Y)
+Exit in progress
+Post-processing (Y)
+Available (D)
+Post-processing (Y)
+Post-processing is waiting for a resource to start
+Post-processing (Y)
+Processing (C)
+Post-processing (Y)
+Post-processing in progress
+Post-processing (Y)
+Killed (K)
+Post-processing (Y)
+Post-processing is canceled
+Ack (Z)
+Hold (H)
+Ack (Z)
+Transfer request waits for an application acknowledgement before continuing the flow
+Ack (Z)
+Available (D)
+Ack (Z)
+Ack processing is not started
+Ack (Z)
+Processing (C)
+Ack (Z)
+Ack processing in progress
+Ack (Z)
+Killed (K)
+Ack (Z)
+Ack processing is canceled
+Done (X)
+Done (X)
+Done (X)
+Flow finished
+```
 <span id="About"></span>
 
 ## About backward compatibility

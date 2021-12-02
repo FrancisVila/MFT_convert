@@ -75,8 +75,8 @@ There are certain Windows-specific tasks you must perform to enable system user 
 
 The following sections describe how to:
 
--   [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
--   [Define rights before logging on the Copilot server](../../Windows/user_rights_and_interface_win.htm#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before starting the Copilot server (REST API/Transfer CFT UI)](#Define%20rights%20before%20starting%20the%20CFT%C2%A0Navigator%20server)
+-   [Define rights before logging on the Copilot server](#Define%20rights%20before%20logging%20on%20the%20CFT%C2%A0Navigator%20server)
 -   [Define rights before starting](#Define_rights_before_starting_Transfer_CFT)
 -   [Define a domain user](#Define%20domain%20user)
 -   [Define folder rights](#Define)

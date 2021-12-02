@@ -92,6 +92,20 @@ information of a catalog entry.
 
 <span class="bold_in_para">Example</span>
 
+```
+LISTCOM CONTENT =FULL
+ 
+CFTU00I LISTCOM \_ Correct (content=full)
+CFTU00I SEND \_ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)
+CFTU20I Communication file row number used: 00001137 on 20191212 Time 09331119
+CFTU00I RETURN \_ Correct (CODE=0)
+ 
+1 record(s) selected
+0 record(s) cleared
+1500 record(s) in Com file
+1499 record(s) free (99%)
+```
+
 #### LISTPARM, LISTPART
 
 **\[CONTENT =

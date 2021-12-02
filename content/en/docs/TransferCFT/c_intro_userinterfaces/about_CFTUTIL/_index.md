@@ -148,15 +148,23 @@ CFTUTIL can be used in three different modes:
 -   Command mode, for
     example:
 
-<!-- -->
+```
+> CFTUTIL SEND PART=PART1, IDF=IDF1, etc.
+```
 
 -   Batch mode, for
     example:
 
-<!-- -->
+```
+> CFTUTIL #file.smp
+```
 
 -   Interactive line
     mode, for example:
+
+```
+> CFTUTIL \[to start CFTUTIL\]> /END \[to quit CFTUTIL\]
+```
 
 > **Note:**
 >
@@ -166,6 +174,53 @@ CFTUTIL can be used in three different modes:
 
 The `help `command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter `help ` to list available commands.
 
+```
+> CFTUTIL \[to start CFTUTIL\]
+help
+
+HELP SEND LISTCAT DISPLAY DELETE END HALT
+KEEP START RECV SUBMIT ABOUT LISTCOM SHUT
+PURGE SWITCH MQUERY RECONFIG SWAITCAT STEST SGET
+SDISPLAY ACT INACT CFTACCNT CFTAUTH CFTCAT CFTCOM
+CFTDEST CFTETB CFTEXIT CFTEXT GETDICT CFTFILE CFTIDF
+....
+
+```
+
 To get help for a specific command, use `cmd=<command>`:
 
+```
+> **help cmd=CFTSEND** \[name of the command\]
+COMMAND CFTSEND USAGE
+MODE S S 8 <REPLACE>
+'CREATE'
+
+<LOCMBX > S S 65 STRING max\_length=64
+<SYNC > S C 1 <NO> 'YES','NO'
+<TODATE > J N 8 Day
+<TOTIME > H N 8 Hour
+CYCDATE N N 8 Number <0> min=0 max=99991231
+CYCTIME N N 8 Number <0> min=0 max=23595999
+MAXDATE N N 8 Number <99991231> min=0 max=99991231
+
+...
+```
+
 To get a parameter description as well as defaults and type of input, add `content=detail`:
+
+```
+> **help cmd=CFTSEND, content=detail**
+COMMAND CFTSEND USAGE
+MODE STRING max\_length=7 Action to do in the parameter or partner database <REPLACE>
+'CREATE'
+
+<LOCMBX > STRING max\_length=64 Mailbox name
+<SYNC > STRING max\_length=0 Synchronous API <NO> ('YES','NO')
+<TODATE > Date (YYYYMMDD) Date limit for request catch
+<TOTIME > Hour (HH:mm:ss) Time limit for request catch
+CYCDATE Number <0> min=0 max=99991231 Upper final date for activating the first transfer of a cycle
+CYCTIME Number <0> min=0 max=23595999 Cyclic transfer time
+MAXDATE Number <99991231> min=0 max=99991231 Final date for transfer validity
+
+...
+```

@@ -43,7 +43,15 @@ For a file called REPORTS containing the following list:
 
 Windows
 
+```
+CFTUTIL SEND part=tokyo, idf=myfiles, fname=#REPORTS
+```
+
 UNIX
+
+```
+CFTUTIL SEND part=tokyo, idf=myfiles, fname=@REPORTS
+```
 
 The files file1, file2 and file3 will be sent.
 
@@ -110,6 +118,10 @@ For example:
 
 To send a group of generic files, use the command:
 
+```
+SEND FNAME=#*mask* or SEND FNAME=#*dirname*
+```
+
 Where the FNAME parameter is set to one of the following values:
 
 -   A directory name,
@@ -156,6 +168,20 @@ Mandatory parameters for homogeneous sends include:
 Example
 
 An example of a homogeneous send in a Windows environment:
+
+```
+cftsend id = copie,
+fname = #c:\\e\\cft320\\tmp\\a\*,
+wfname = c:\\e\\cft320\\&idtu.snd,
+frecfm = v,
+ftype = b,
+mode = create
+cftrecv id = copie,
+fname = c:\\cft320\\bin\\recv,
+faction = delete,
+wfname = &idtu.rcv,
+ftype = b
+```
 
 #### Heterogeneous send for a group of files
 
@@ -279,6 +305,19 @@ Example
 
 In Windows, an example of a heterogeneous receive:
 
+```
+cftsend id = copie,
+fname = #c:\\e\\cft320\\tmp\\a\*,
+wfname = c:\\e\\cft320\\&idtu.snd,
+frecfm = v,
+ftype = b,
+mode = create
+cftrecv id = copie,
+fname = c:\\cft320\\bin\\recv,
+faction = delete,
+wfname = &idtu.rcv,
+ftype = b
+```
 <span id="Create"></span>
 
 ### Create filters using CFTSEND
@@ -294,13 +333,49 @@ For example, create a filter that includes all .jpg files that are:
 
 For example, a transfer from a Unix platform to Windows, the following filter would include all of the files in "myfolder" that match the pattern described above such as the file IMGP0122.jpg.
 
+```
+ CFTSEND ID = 'findfile',
+ FILTERTYPE = 'EREGEX',
+ FILTER = '^\[0-9a-zA-Z\]+\[0-9\]{4}.jpg'
+...
+ 
+SEND PART = PARIS,
+ IDF = 'findfile',
+ FNAME = '@myfolder/\*'
+...
+```
+
 For example on a z/OS platform, the following filter would include the files AXDSYN.TOOLS.GRPFIL. or GRPFIM. followed by A4 or A5:
+
+```
+CFTSEND ID = 'TREGEX03',
+FILTERTYPE = 'EREGEX',
+FILTER = '^-\[\\.\]+\*\\.-\[^\\.\]+\*\\.GRPFI(L|M).A(4|5)\\.'
+...
+ 
+SEND PART = PARIS,
+IDF = 'TREGEX03',
+FNAME = '#AXDSYN.TOOLS.\*'
+```
 
 The FILTERTYPE can be either STRJCMP or EREGEX, used as described further on in this topic.
 
 #### Homogeneous mode
 
 For example, a transfer between Unix platforms, the following filter would include all of the files in "myfolder" that match the pattern described above such as the file IMGP0122.jpg.
+
+```
+ CFTSEND ID = 'findfile',
+ FILTERTYPE = 'EREGEX',
+ FILTER = '^\[0-9a-zA-Z\]+\[0-9\]{4}.jpg'
+...
+ 
+SEND PART = PARIS,
+ IDF = 'findfile',
+ FNAME = '@myfolder/\*'
+WFNAME = '&idtu.tmp'
+...
+```
 
 ## STRJCMP filter
 

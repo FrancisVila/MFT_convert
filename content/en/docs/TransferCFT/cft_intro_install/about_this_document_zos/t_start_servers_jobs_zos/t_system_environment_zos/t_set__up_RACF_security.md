@@ -102,3 +102,7 @@ We recommend that you:
 -   Give READ access to the BPX.SERVER resource in the RACF FACILITY class.
 
 Example of PERMIT
+
+```
+PERMIT PBX.SERVER CLASS(FACILITY) ID(CFT) ACCESS(READ) ID(COPILOT)
+```

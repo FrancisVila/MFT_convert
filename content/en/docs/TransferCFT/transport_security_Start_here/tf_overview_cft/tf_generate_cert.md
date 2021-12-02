@@ -92,7 +92,15 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 
 To create a self signed certificate:
 
+```
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out XPP\_Sample\_User1.pem -keyout MyKey.key
+```
+
 Export the certificate in PKCS12 format:
+
+```
+openssl pkcs12 -export -out XPP\_Sample\_User1.p12 -inkey MyKey.key -in XPP\_Sample\_User1.pem
+```
 
 ## Use the CFTTF utility to generate your passphrase
 
@@ -112,7 +120,26 @@ OUTPUT: m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
 
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if `XPP_Sample_User1.pem` is in the `/home/cft/runtime/conf/tf/certs/pub` folder, then:
 
+```
+<pkiEntity id="user1\_pub">
+<certificate>
+<format>PEM</format>
+<location>/home/cft/runtime/conf/tf/certs/priv/XPP\_Sample\_User1.p12</location>
+</certificate>
+</pkiEntity>
+```
+
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if `XPP_Sample_User1.p12` is in the `/home/cft/runtime/conf/tf/certs/priv` folder and the password=Axway, then:
+
+```
+<pkiEntity id="user1\_priv">
+<certificate>
+<format>PKCS#12</format>
+<location>/home/cft/runtime/conf/tf/certs/privXPP\_Sample\_User1.p12</location>
+<passPhrase>m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=</passPhrase>
+</certificate>
+</pkiEntity>
+```
 
 ## Update your Trusted File encoding/decoding procedures
 
@@ -121,3 +148,12 @@ You must change the passphrase that corresponds to the private key passphrase ge
 In the examples on this page, we changed the public and private keys for the `user1_pub` and `user1_priv_entity` (the PKCS12 certificate and key, using the password Axway), where the corresponding example passphrase is `m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=.`
 
 As the private key `user1_priv` is referenced in` enfile_cms.xms` file , you must change the passphrase in the `<signature>` section as follows:
+
+```
+<signature requested="yes">
+<signer>
+<signatureAlgorithm>sha1WithRsaEncryption</signatureAlgorithm>
+<pkiEntity id="user1\_priv" password="m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE="></pkiEntity>
+</signer>
+</signature>
+```

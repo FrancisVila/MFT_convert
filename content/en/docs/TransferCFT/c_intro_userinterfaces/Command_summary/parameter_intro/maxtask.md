@@ -33,4 +33,8 @@ The following CFTI18I  message displays in the CFTLOG when Transfer CFT is st
 
 Example
 
+```
+CFTI18I+MAXTRANS=128, MAXTASK=16, TRANTASK=3
+```
+
 [Return to Command index](../../)

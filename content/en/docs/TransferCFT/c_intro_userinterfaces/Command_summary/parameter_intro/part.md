@@ -66,11 +66,24 @@ the user can define this parameter using the symbolic variable PART=&PART.
 This identifier designates:
 
 -   either a partner described by the command:
+    ```
+    CFTPART
+    ID = <PART parameter value>, ...
+     
+    ```
 
 <!-- -->
 
 -   or a list of partners described by
     the command:
+    ```
+    CFTDEST
+    ID = <PART parameter value>,
+     
+     
+    PART = (*identifier, identifier . . .*)
+     
+    ```
 
 #### CFTIDF
 

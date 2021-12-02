@@ -16,6 +16,46 @@ of the calling partner.
 
 ### Partner information fields
 
+```
+
+Field 
+
+Explanation 
+
+ptype 
+Partner type 
+nrpart 
+Remote partner name 
+nrpassw 
+Remote partner password 
+newnrpw 
+Remote partner new password 
+nspart 
+Local name 
+nspassw 
+Local password 
+prot 
+Protocol type 
+prof 
+Profile if PESIT protocol 
+sap 
+Remote Sap (Service Access Point) 
+imaxtime 
+Maximum incoming call time (HHMMSSCC)
+imintime 
+Minimum incoming call time (HHMMSSCC)
+ntype 
+Network type 
+addr 
+Remote partner address 
+udata 
+User data 
+pcvin 
+Incoming reverse charge call
+gfa 
+Closed subscriber group number 
+```
+
 When the user function is called, if the partner name **part**
 is empty, so that the partner local identifier is unknown to Transfer
 CFT, the only fields that contain valid data (imintime and imintime are
@@ -35,6 +75,42 @@ If the return code value is 0 or 1, the user can modify the fields indicated
 in the following System information field table.
 
 ### System information fields
+
+```
+
+Field 
+
+Explanation 
+
+syst 
+System 
+code 
+Code:
+
+-   A: ASCII
+-   E: EBCDIC
+
+open 
+Obsolete parameter
+commut 
+Store and forward indicator 
+nspart 
+Local name 
+nspassw 
+Local password 
+part 
+Partner local identifier 
+group 
+Group identifier 
+sauth 
+File send authorization list identifier 
+rauth 
+File receive authorization list identifier 
+xlate 
+Transcoding table identifier 
+idf 
+Partner file identifier 
+```
 
 If the part field of the communication
 structure is empty on return from the user function, the partner local

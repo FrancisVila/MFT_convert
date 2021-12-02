@@ -46,6 +46,28 @@ See also, [Transfer command basics.](transfer_command_overview)
 
 Additionally, there are basic [transfer control commands](../c_intro_userinterfaces/web_copilot_ui/operations/managing_transfer_states) that you can use to manage a transfer.
 
+```
+
+Command
+
+Action
+
+[DELETE](../admin_intro/admin_commands_intro/delete_command)
+Deletes a catalog entry 
+[HALT]()
+Stops a transfer and sets it to the HOLD state 
+[KEEP]()
+Stops a transfer and sets it to the KEEP state 
+[START]()
+Reactivates a transfer 
+[SUBMIT]()
+Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.
+[END]()
+Declares the processing subsequent to the transfer terminated 
+[RESUME]()
+Retrieves, in the server mode, a blocked send request having
+the hold status
+```
 <span id="Transfer_owners"></span>
 
 ## Identifiers
@@ -86,7 +108,9 @@ by the {{< TransferCFT/componentshortname  >}} as a specific transfer. A message
 
 ![](/Images/TransferCFT/temp_type_data.png)
 
-## Transfer records
+<span id="Transfer_identifier__IDT"></span><span id="Catalog_identifier__IDTU"></span>
+
+## Transfer records &lt;/h2>
 
 All transfer requests, either SEND or RECV, are recorded and saved in
 the Transfer CFT catalog file.
@@ -125,13 +149,9 @@ two additional types of identifiers, besides the IDM and IDF, that can correspon
 -   Catalog
     identifier
 
-<span id="Transfer_identifier__IDT"></span>
-
 #### Transfer identifier: IDT
 
 The transfer identifier is a label associated with each transfer, that is, time stamping. However, the IDT synchronization with the current date and time is lost as soon as Transfer CFT manages more than 6 transfers per minute. This means that Transfer CFTs can have IDTs that differ by up to several months as compared with the current date.
-
-<span id="Catalog_identifier__IDTU"></span>
 
 #### Catalog identifier: IDTU
 

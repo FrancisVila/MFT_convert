@@ -42,6 +42,12 @@ Using CFTUTIL activate the services for both Transfer CFT and Copilot with the 
 
 **Example**
 
+```
+uconfset id=cft.nt.service\_name, value=CFT36
+uconfset id=cft.nt.service\_mode, value=yes
+uconfset id=copilot.nt.service\_name, value=CFT\_Copilot36
+uconfset id=copilot.nt.service\_mode, value=yes
+```
 <span id="Service"></span>
 
 ## 

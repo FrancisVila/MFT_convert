@@ -10,4 +10,13 @@ PassPort PS parameters
 To enable {{< TransferCFT/componentshortname  >}} to PassPort PS server connectivity, use the UCONFSET
 command to set the following parameters:
 
+```
+CFTUTIL
+UCONFSET ID= pki.type, value=”passport”
+CFTUTIL
+UCONFSET ID= pki.passport.hostname, value=”xxxx”
+CFTUTL
+UCONFSET ID= pki.passport.port, value=”xxxx”
+```
+
 Refer to the [UCONF parameters](../uconf_directory) table for information on the `pki.passport `type parameters.

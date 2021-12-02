@@ -12,9 +12,26 @@ You can retrieve synchronous communication return codes using either a programmi
 
 In this method the `cftau `function locates the return code, as shown in the following example:
 
+```
+…
+rc = `cftau `(“SWAITCAT”,” SELECT='IDTU==A000001’”)
+if rc != 0 {
+printf("SWAITCAT NOK RC=%d\\n", rc);
+…
+}
+```
+
 ### Using CFTUTIL
 
 This method uses the internal variable`_CMDRET` in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
+
+```
+SWAITCAT SELECT='IDTU==”A000001”’
+IF NAME = \_CMDRET, VALUE = 0, TYPE = NEQ
+PRINT MSG=”SWAITCAT NOK RC=”
+PRINT MSG=%\_CMDRET%
+ENDIF
+```
 
 Note though that the \_CMDRET value is not the same as the CFTUTIL return code, which could be:
 
@@ -23,6 +40,21 @@ Note though that the \_CMDRET value is not the same as the CFTUTIL return code, 
 -   8: error
 
 In the following example the synchronous communication return code is 82, while the CFTUTIL is 8:
+
+```
+5:\[CFU\] SWAITCAT SELECT='IDTU=="A000001"'
+CFTU25E SWAITCAT \_ Error (SWAITCAT\_NFOUND: select='IDTU=="A000001"' Not Found)
+CFTU00I (SELECT='IDTU=="A000001"')
+6:\[CFU\] PRINT MSG=%\_CMDRET%
+**82**
+CFTU00I PRINT \_ Correct (MSG=82)
+7:\[CFU\] /END
+7:\[CFU\] CFTU00I RETURN \_ Correct (**CODE=8**)
+CFTU20I Number of Command(s) 6
+CFTU20I Number of error(s) 1
+CFTU20I Ending Session on 21/06/2012 Time is 16:06:32
+CFTU20I Session active for 0:01:42
+```
 
 ## Send and receive related errors
 

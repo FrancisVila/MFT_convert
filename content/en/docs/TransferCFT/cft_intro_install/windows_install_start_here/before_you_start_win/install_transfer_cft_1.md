@@ -4,9 +4,17 @@
     "weight": "160"
 }Use the following command to begin the Transfer CFT installation in graphical mode:
 
+```
+`./Transfer_CFT_3.7_<Install>_<OS>_<BN>.exe`
+```
+
 The installation wizard displays. After completing each screen, click **Next** to continue. Click **Cancel** at any time to end the installation setup.
 
 Use the following command to install Transfer CFT in silent mode.
+
+```
+`./Transfer_CFT_3.7_<Install>_<OS>_<BN>.exe --mode unattended --conf-file initialize.properties`
+```
 
 > **Note:**
 >

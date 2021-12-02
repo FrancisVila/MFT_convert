@@ -22,6 +22,69 @@ To view the transfers log:
 
 Available actions to include in the Transfers page include:
 
+```
+
+UI
+
+Parameter details
+
+Description
+
+New
+<a href="../../../../concepts" class="MCXref xref">Managing transfers and partners</a>
+Create a new transfer request
+Clone
+No equivalent parameter
+Copy an existing transfer request
+Restart
+[Restarting
+transfers]()
+Restart transfers in the H or K state in the catalog
+Delete
+[Deleting
+catalog entries](../../../../admin_intro/admin_commands_intro/delete_command)
+Delete one or more catalog entries
+ 
+[Suspending
+transfers]()
+Suspend one or all of the send and/or receive transfers
+with selected partners
+ 
+[Submitting
+an end-of-tranfser]()
+Submit an end-of-transfer procedure for each selected
+transfer
+Halt
+[Halting
+a transfer]()
+Suspend one or all the send and/or receive transfers,
+with the partners selected
+End
+[Declaring
+executed transfers]()
+Declare that all the operations related to the end-of-transfer,
+send and receive, have been executed correctly
+ 
+[Retrieving
+a blocked request]()
+Retrieves, in server mode, a blocked send request that
+has the *hold* status, if the diagnostic codes are not null
+ 
+[Suspending
+a catalog request](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/kstate_command)
+Suspend a transfer in the catalog
+ 
+[Deleting
+a transfer request](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/clearcmd_command)
+Delete a transfer request from the communication file
+Ack
+<a href="../../../../concepts/using_the_send_command/sending_replies" class="MCXref xref">Use the SEND acknowledgement commands</a>
+Send a transfer acknowledgement
+Nack
+<a href="../../../../concepts/using_the_send_command/transfers_neg_ack_pesit" class="MCXref xref">Sending a negative acknowledgement</a>
+Send a notification indicating an error occurred
+```
+
 ## Create transfer requests filters
 
 To create a new transfer request filter or modify an existing filter:

@@ -132,6 +132,13 @@ type is FILE.
 
 TYPE=FILE
 
+```
+CFTCOM ID = IDCOM,
+TYPE = FILE
+NAME = <filename>,
+WSCAN = 120
+```
+
 ### Communication media characteristics
 
 -   For file communication:
@@ -154,3 +161,13 @@ TYPE=FILE
         variables %\_CAT\_IDT% and %\_CAT\_IDTU%.
 
 **Example**
+
+```
+SEND
+PART = PART1
+IDF = TEST1
+ 
+Then...
+LISTCAT
+IDT = %\_CAT\_IDT%
+```

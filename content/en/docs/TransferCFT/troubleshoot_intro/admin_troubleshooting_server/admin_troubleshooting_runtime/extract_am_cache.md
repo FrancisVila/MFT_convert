@@ -20,8 +20,55 @@ Example
 
 The following command extracts the cache file information for all users and their rights to a text file called `AMuser.txt`.
 
+```
+CFTUTIL EXTAMCACHE FOUT=AMuser.txt
+```
+
 Or, to filter on user names containing "admin":
 
+```
+CFTUTIL EXTAMCACHE ID=Admin\*, FOUT=export\_cache
+```
+
 The following is an example output:
+
+```
+Access Management cache, last update at 2018-08-27T06:19:21.882+02:00
+ 
+3 entries found in the Access Management Cache:
+==> Application@Synchrony Has the following privileges:
+CONFIGURATION:CFTPARM VIEW
+TRANSFER                           RESUME
+TRANSFER                           DELETE
+TRANSFER                           CANCEL
+TRANSFER                           SUBMIT
+TRANSFER                           PAUSE
+TRANSFER                           EXECUTE
+TRANSFER                           VIEW
+TRANSFER                           END
+TRANSFER                           CREATE
+CONFIGURATION:CFTRECV              VIEW
+SERVICE:UI                         CONNECT
+CONFIGURATION:CFTSEND              VIEW
+FILTER:CATALOG                     DELETE
+FILTER:CATALOG                     VIEW
+FILTER:CATALOG                     EDIT
+FILTER:CATALOG                     CREATE
+CONFIGURATION:CFTCOM              VIEW
+FILE                                VIEW
+FILTER:LOG                          EDIT
+FILTER:LOG                          DELETE
+FILTER:LOG                          VIEW
+FILTER:LOG                         CREATE
+CONFIGURATION:CFTPART              VIEW
+TRANSFER                           EDITFILE
+TRANSFER                            EDIT
+TRANSFER                            VIEWFILE
+TRANSFER                            DELETEFILE
+CONFIGURATION:CFTLOG                VIEW
+CONFIGURATION:CFTDEST               VIEW
+==> HelpDesk@Synchrony             Has no access
+==> Partner@Synchrony                Has no access
+```
 
  

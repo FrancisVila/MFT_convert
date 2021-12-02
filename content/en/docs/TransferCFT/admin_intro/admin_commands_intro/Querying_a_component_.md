@@ -66,14 +66,61 @@ OBJECT = STATS or PROBE
 
 Use this command to check that transfers are not blocked by, for example, a time\_locked or partner\_locked issues.
 
+```
+MQUERY NAME=CAT,CONTENT=FULL
+listlog
+=========================== TRANSFERS ======================================
+pri minTime minDate reqTime reqDate cat\_blk part
+============================================================================
+Transfers\_Non\_Ready : 0
+Transfers\_Ready : 0 ( 0 Partners )
+Transfers\_Time\_\_Locked : 2 ( 1 Partners )
+128 11:49:12 TODAY 11:49:12 TODAY 1780 PART1
+128 11:49:14 TODAY 11:49:31 TODAY 1781 PART1
+Transfers\_State\_Locked : 0 ( 0 Partners )
+======================== PARTNERS =====================================
+name count state locked diag diagp minTime minDate
+=======================================================================
+Partners : 1
+PART1 2 TLCK 2 302 L 02 045 11:55:38 TODAY
+Partners\_Ready : 0
+Partners\_Time\_\_Locked : 1
+PART1 2 TLCK 2 302 L 02 045 11:55:38 TODAY
+Partners\_State\_Locked : 0
+MQUERY Treated for USER AXWAY\\ls
+```
+
 ### Querying the command cache
 
 Check scheduled internal commands, more specifically the switch and purge commands such as checking the time that the activity occurs.
+
+```
+MQUERY NAME=COMMAND,CONTENT=FULL
+listlog
+CFTI24I \*\*\* 3 COMMAND(S) INTO CACHE
+CFTI24I \*\*\* DATE=28/01/2018 TIME= 18:48:00.00 SWITCH LOG
+CFTI24I \*\*\* DATE=29/01/2018 TIME= 00:05:00.00 PURGE
+CFTI24I \*\*\* DATE=29/01/2018 TIME= 10:57:00.00 SWITCH ACCNT -
+CFTR12I MQUERY Treated for USER userid
+```
 
 ### Displaying internal technical statistics for advanced diagnostic purposes
 
 You can use this command when troubleshooting issues, and provide this output when contacting Axway support. One example is if you encounter an issue with memory usage.
 
+```
+MQUERY OBJECT=STATS
+CFTI24I CFTMAIN CFTMAIN\_TRANSFER\_SERVER\_604800=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CFTI24I CFTMAIN probe.cftmain\_transfers\_activated=0
+CFTI24I CFTMAIN CFTMAIN\_TRANSFERS\_ACTIVATED\_1=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CFTI24I CFTMAIN CFTMAIN\_TRANSFERS\_ACTIVATED\_10=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+```
+
 ### Output raw data to troubleshoot performance
 
 This command provides statistical information, for example to troubleshoot performance issues, when contacting Axway support.
+
+```
+MQUERY OBJECT=PROBE, CONTENT=RAW
+CFTI24I CFTMAIN probe.cftmain\_transfers\_activated=50
+```

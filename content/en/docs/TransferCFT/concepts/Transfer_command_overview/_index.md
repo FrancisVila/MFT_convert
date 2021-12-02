@@ -15,6 +15,12 @@ There are multiple interfaces that you can use to enter Transfer CFT commands, s
 
 You can enter a command using CFTUTIL in a command window from the Transfer CFT runtime directory. For example in a Windows environment:
 
+```
+C:\\Axwaycft313sp1\\Transfer\_CFT\\runtime> profile
+C:\\Axwaycft313sp1\\Transfer\_CFT\\runtime> CFTUTIL  
+1:\[CFU\]
+```
+
 ## Entering parameters
 
 There are two ways to supply parameters for a command:
@@ -30,6 +36,34 @@ There are two ways to supply parameters for a command:
 ## Using basic transfer associated commands
 
 The commands associated with the transfers are listed in the table below.
+
+```
+
+Type
+
+Command
+
+Description
+
+Transfers 
+SEND 
+Send files, messages, or replies (acknowledgments)
+RECV 
+Receive files 
+Actions on transfers 
+[DELETE](../../admin_intro/admin_commands_intro/delete_command)
+Delete catalog entries 
+[HALT]()
+Stop transfers 
+[KEEP]()
+Suspend transfers 
+[START]()
+Restart transfers 
+[SUBMIT]()
+Submit an end-of-transfer procedure
+[END]()
+Declare that flow is finished
+```
 
 For each command, the {{< TransferCFT/componentshortname  >}} command interface performs the following
 actions:

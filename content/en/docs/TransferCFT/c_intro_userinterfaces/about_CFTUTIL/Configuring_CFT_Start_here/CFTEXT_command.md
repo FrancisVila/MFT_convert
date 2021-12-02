@@ -104,15 +104,34 @@ your OS.</p>         </td>
 
 Example 1
 
+```
+CFTEXT
+```
+
 Extraction of all data from the CFTPARM parameter and CFTPART
 partner files.
 
 Example 2
 
+```
+CFTEXT     TYPE    
+=     SEND,
+     ID     =    
+FACT,
+     FPARM     =    
+mycftparm
+```
+
 Extraction of data concerning the model file to be sent
 (CFTSEND command) with an IDF = FACT, from the file mycftparm.
 
 Example 3
+
+```
+CFTEXT
+TYPE = RECV,
+ID = FACT\*
+```
 
 Extraction of the data concerning the model files to be
 received (CFTRECV command) whose IDF value begins with the four letters
@@ -121,6 +140,12 @@ Refer to the Transfer CFT Operations Guide that corresponds with
 your OS.
 
 Example 4
+
+```
+CFTEXT
+TYPE = PART,
+ID = MAGA\*
+```
 
 Extraction of the partner data corresponding to the CFTPART
 commands, the identifier of which begins with the four letters "MAGA".
@@ -131,3 +156,7 @@ Example 5
 
 Transfer
 CFT application definition:
+
+```
+CFTEXT TYPE = APPL,
+```

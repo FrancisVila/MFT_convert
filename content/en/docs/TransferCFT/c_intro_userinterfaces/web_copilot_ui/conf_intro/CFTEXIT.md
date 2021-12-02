@@ -29,9 +29,40 @@ topics**
 Example 1 - Parameter setting for a file
 type EXIT
 
+```
+CFTSEND
+ID = PAY,
+EXIT = IDEXIT
+```
+
  
+
+```
+CFTEXIT
+ID = IDEXIT,
+LANGUAGE = C,
+RESERV = 4000,
+PROG = FILEXEC
+```
 
 Example 2 - Parameter setting for an directory
 type EXIT
 
+```
+CFTPROT
+ID = PSIDTH,
+TYPE = PESIT,
+EXIT = EXAM
  
+```
+
+ 
+
+```
+CFTEXIT
+ID = EXA,
+PARM = SAMPLE,
+LANGUAGE = C,
+PROG = MYEXA,
+TYPE = ACCESS
+```

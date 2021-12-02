@@ -33,6 +33,28 @@ After completing installation, configure the Router Agents in the {{< TransferCF
 
 Example of two Router Agent definitions
 
+```
+secure\_relay.ra = 2
+ 
+secure\_relay.ra.0.enable = yes
+secure\_relay.ra.0.dmz =
+secure\_relay.ra.0.host =
+secure\_relay.ra.0.admin\_port = 6810
+secure\_relay.ra.0.comm\_port = 6811
+secure\_relay.ra.0.nb\_data\_connections = 5
+secure\_relay.ra.0.data\_channel\_ciphering = No
+secure\_relay.ra.0.outcall\_network\_interface =
+ 
+secure\_relay.ra.1.enable = Yes
+secure\_relay.ra.1.dmz =
+secure\_relay.ra.1.host =
+secure\_relay.ra.1.admin\_port = 6810
+secure\_relay.ra.1.comm\_port = 6811
+secure\_relay.ra.1.nb\_data\_connections = 5
+secure\_relay.ra.1.data\_channel\_ciphering = No
+secure\_relay.ra.1.outcall\_network\_interface =
+```
+
 ## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
@@ -46,8 +68,13 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
 
 1.  Enable Secure Relay:  
+    ```
+    UCONFSET id=secure\_relay.enable ,value=yes
+    ```
 2.  Set the full path to Java executable, for example:  
-3.  
+3.  ```
+    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    ```
 
 ## Configure {{< TransferCFT/componentlongname  >}} objects
 
@@ -63,6 +90,16 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
 
 Example
 
+```
+CFTNET ID = NETSR,
+PROTOCOL = SR,
+TYPE = TCP,
+CALL = INOUT,
+CLASS = 1,
+HOST = <e.g. INADDR\_ANY, network\_interface\_used\_by\_Router\_Agent>,
+RECALLHOST = 127.0.0.1, /\*network\_interface\_used\_by\_Transfer\_CFT\*/
+```
+
 ## Create a CFTPROT object
 
 This section describes the CFTPROT object, and how various parameters are related to enabling secure data transmission using Secure Relay.
@@ -74,6 +111,14 @@ This section describes the CFTPROT object, and how various parameters are relate
 
 This example uses a CFTNET object called NETSR.
 
+```
+CFTPROT id = PESITANY,
+net = NETSR,
+sap = 1761,
+Prot=PESIT,
+prof = ANY
+```
+
 ## Create CFTPART and CFTTCP objects
 
 When a partner object refers to a CFTPROT object and a CFTNET object that use Secure Relay, it uses Secure Relay for both incoming and outgoing connections.
@@ -84,6 +129,24 @@ Example
 
 This is an example of the CFTPART and CFTTCP object configuration, using PESITANY.
 
+```
+CFTPART id = PARIS,
+ prot = PESITANY,
+ sap = <remote\_partner\_sap>,
+ nspart = NPHOENIX,
+  nrpart = NPARIS,
+  mode = replace
+ 
+CFTTCP id = PARIS,
+ class = 1, /\* same class as the one used in the CFTNET \*/
+ host = <remote\_partner\_host\_address>,
+ mode = replace
+```
+
 ### Indicate a specific SecureRelay to use
 
 If you would like to use a specific SecureRelay with a given partner, set the following parameter in the CFTPART:
+
+```
+SRDMZ = <UCONF secure\_relay.ra.*n*.dmz value, where n is the number that corresponds to the SecureRelay to use>
+```

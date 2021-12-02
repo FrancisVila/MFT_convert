@@ -58,6 +58,14 @@ You can transfer a given PTF file from either the workstation or the host, in b
 
 The following is an example of commands for the binary transfer of the PTF file from the workstation to the host:
 
+```
+`open hostname `
+userid  
+userpsw 
+binary
+put c:\\mycftpatchs\\patch\_from Axway support website 'distlib.UPLIB(CFxxxxxx)'   
+```
+
 Where:
 
 -   xxxxxx identifies the PTF number
@@ -208,6 +216,10 @@ Usually a patch is applied through a LINK-EDIT. The JCL A13PTFLK is found in the
 
 Before submitting the JOB, specify the LINK EDIT identifier in the EXEC card:
 
+```
+`//APPLY  EXEC PAPPLY,ID=’xxxxxx’`
+```
+
 Where:
 
 -   xxxxxx: patch identifier
@@ -255,6 +267,12 @@ The following three JCLs mange the PTFs for Copilot:
 > All of these operations are displayed in the file distlib.LOG.
 
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:
+
+```
+// SET ID='xxxxxx' (JCL A13UPTFA)
+//DELSAV EXEC PCDELSAV,ID=’xxxxxx’ (JCL A13UPFTD)
+// SET ID='xxxxxx' (JCL A13UPTFR)
+```
 
 ### Updating the unified configuration definitions A13UCONF
 

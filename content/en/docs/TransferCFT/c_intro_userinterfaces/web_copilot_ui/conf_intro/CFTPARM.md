@@ -92,3 +92,26 @@ The CFTCAT, CFTCOM, CFTLOG, CFTACCNT, CFTNET and CFTPROT
 parameter setting objects are not taken into account, during execution,
 unless they were selected through the corresponding parameters: CAT, COM,
 LOG, ACCNT, NET and PROT.
+
+```
+CFTPARM
+CAT = CAT1,
+COM = COM1,
+ID = PARM1,
+KEY = ‘XXXXXXXXXXXXXXXXXXXXX’,
+NET = (),
+PART = identifier,
+PROT = (PESITCFT ),
+BUFSIZE = 4096
+DEFAULT = IDFDEF,
+EXECRE = <filename4>,
+EXECRF = <filename2>,
+EXECSE = <filename3>,
+EXECSF = <filename1>,
+LOG = LOG1,
+MAXTASK = 1,
+MAXTRANS = 4,
+NPART = MYCFT,
+TRANTASK = 1,
+WAITRESP = 500
+```

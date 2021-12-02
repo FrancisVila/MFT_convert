@@ -11,6 +11,73 @@ CFT used the following Access Management setup. This information is provided as 
 
 ### Access Management without PassPort AM
 
+```
+        Appl
+(ID)
+            (control:
+end,halt,keep,start,submit)
+            (create:
+send,recv)
+            (delete:
+delete\_catalog)
+            (read:
+view\_catalog)
+            (modify:
+resume)
+    Command:
+          Shut
+             create
+          Switch\_log,
+             create
+          Switch\_accnt,
+             create
+          Act,
+             create
+          Inact,
+              create
+          Mquery,
+              create
+          Turn,
+              create
+    File
+          File
+(FNAME)
+               (read)
+               (delete)
+    Message:
+           Message
+(IDM,PART,SPART,RPART,MODE)
+                create
+    Operator:
+            ALL\_PART
+(fname)
+                    create,delete,read,modify
+            ALL\_CAT
+(fname)
+                    control(see
+appl), delete, read, modify (resume)
+            ALL\_COM
+(fname)
+                    create,
+read, delete
+    Parameter:
+             CFT
+obj (ID)
+                    create,delete,read,modify
+    Partner:
+             CFT
+obj (ID)
+                    create,delete,read,modify
+     
+    Transfer:
+             Transfer
+(IDF,PART,SPART,RPART,IPART,MODE,FNAME)
+                    create
+             Commut
+(PART,IPART)
+                    create
+```
+
 ## About resources and actions
 
 You can map the environment variables as displayed

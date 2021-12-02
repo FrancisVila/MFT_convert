@@ -10,6 +10,27 @@ Steps overview
 2.  Create the configuration alias by adding a new alias name to the `cft.scheduled_values` list. Do not use spaces or periods (.) in the alias name.
 3.  Configure the remaining parameters as described in the following table to define the new alias.
 
+```
+
+Parameters
+
+Description
+
+cft.scheduled\_values
+List of scheduled aliases. Use a space to separate alias names.
+cft.scheduled\_values.(alias-id).start\_time
+Start time using the format MM:HH:DAYS\_OF\_THE\_WEEK. This is the begin time for when a value switches from its existing value to the . See [Details](#Details,%20days) below.
+cft.scheduled\_values.(alias-id).delay
+Delay using the format MM:HH.
+This is the length of time during which the value can be changed.
+cft.scheduled\_values.(alias-id).id
+The configuration entity id (uconf parameter) that you want to provide scheduling for.
+cft.scheduled\_values.(alias-id).value
+. This value replaces the existing configuration value for the defined uconf parameter.
+To find the existing value, in command line enter:
+CFTUTIL uconfget id=<uconf\_parameter>
+```
+
 <span id="Details, days"></span>Details
 
 DAYS\_OF\_WEEK:
@@ -26,9 +47,16 @@ Example
 
 This example defines a schedule where the value of cft.purge.sx can be changed during the period that begins at 15:30 and has a duration of 4 hours on Saturday and Sunday.
 
-1.  Add the new alias name to the `scheduled_values` list. This example creates a new alias called .
-2.  Configure the new alias, .
-3.  Activate the configuration modification. Enter:
+1.  Add the new alias name to the `scheduled_values` list. This example creates a new alias called . ```
+    CFTUTIL uconfset id=cft.scheduled\_values,value='"alias01 alias02 alias03 alias04"' ```
+2.  Configure the new alias, . ```
+    CFTUTIL uconfset id=cft.scheduled\_values.alias04.start\_time,value='”30:15:5,6”'
+    CFTUTIL uconfset id=cft.scheduled\_values.alias04.delay,value=00:04
+    CFTUTIL uconfset id=cft.scheduled\_values.alias04.id,value= cft.purge.sx
+    CFTUTIL uconfset id=cft.scheduled\_values.alias04.value,value=2
+    ```
+3.  Activate the configuration modification. Enter: ```
+    CFTUTIL reconfig type=UCONF ```
 
 > **Note:**
 >

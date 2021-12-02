@@ -50,10 +50,57 @@ Example
 
 **LISTCAT CONTENT = FULL**
 
+```
+CFTU20I
+CFTU20I CFT Windows
+CFTU20I Version 3.1.2 20140428
+CFTU20I (C) Copyright AXWAY 1989-2014
+CFTU20I ====> Starting Session on 20/03/2015 Time is 11:30:25
+CFTU20I Parameters file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftparm
+CFTU20I Partners file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftpart
+CFTU20I Catalog file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftcata
+CFTU20I
+0 record(s) selected
+10000 record(s) in Catalog file
+10000 record(s) free (100%)
+CFTU00I LISTCAT \_ Correct ()
+CFTU20I Number of Command(s) 1
+CFTU20I Number of error(s) 0
+CFTU20I Ending Session on 20/03/2015 Time is 11:30:26
+CFTU20I Session active for 0:00:00
+```
+
 ### LISTCAT CONTENT = BRIEF, NPART = {identifier | mask}
 
 **LISTCAT CONTENT = BRIEF, NPART = {*identifier*
 | *mask*}**
+
+```
+1          2
+            3
+             4
+               5
+                   6
+                    7
+Date = DD-MM-YYYY, Time = hh:mm
+Partner DTSA File Transfer Diags Parm
+Network Name) Id. Id.                                   CFT
+Prot.
+xxxxxxxxxxxxx xxxx xxxxxx xxxxxx     xxx
+ xxxxxx
+ xxxxxxxxxxxx
+xxxxxxxxxx   xxxx
+  xxxxxx
+  xxxxxx
+      xxx
+ xxxxxx
+  xxxxxxx
+xxxxxxxxx   xxxx
+  xxxxxx
+  xxxxxx
+     xxx
+ xxxxx   xxxxxxxxxxx
+```
 
 The following table contains the comments associated with the various
 headings contained in this example.
@@ -83,6 +130,51 @@ The NPART parameter is not defined.
 
 **LISTCAT CONTENT = BRIEF, PART = {*identifier*
 | *mask*}**
+
+```
+1            2
+            3
+              4
+              5
+                  6
+               7
+           8
+                        9
+Date = DD-MM-YYYY, Time = hh:mm
+Partner DTSA     File
+          Transfer
+              Records
+           Diag
+  Diag
+Applic.
+Ident
+        Ident
+          Transmit
+    Total
+                   Protocol
+  Ident
+xxxxxxx   xxxx
+  xxxxxxxx
+  xxxxxxxx
+ nnnnnnnn
+nnnnnnnn   nnn
+  xxxxxxxx
+  xxxxxxxx
+xxxxxxxx   xxxx
+  xxxxxxxx
+  xxxxxxxx
+ nnnnnnnn
+nnnnnnnn   nnn
+  xxxxxxxx
+  xxxxxxxx
+xxxxxxx   xxxx
+  xxxxxxxx
+  xxxxxxxx
+  nnnnnnnn
+nnnnnnnn   nnn
+  xxxxxxxx
+  xxxxxxxx
+```
 
 The following table contains the comments associated with the various
 headings contained in this figure.

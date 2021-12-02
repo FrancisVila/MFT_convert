@@ -95,6 +95,53 @@ message FPDU.
 FPDU related PI codes and the corresponding
 Transfer CFT values
 
+```
+
+PI
+
+Description
+
+Transfer
+CFT value
+
+3 
+Sending application’s name
+Sending user’s name 
+PI 4 of the acknowledged file creation request 
+4 
+Receiver application name
+Receiver user name 
+PI 4 of the acknowledged file creation request 
+11 
+File type 
+PI 11 of the acknowledged file creation request 
+12 
+File name 
+PI 12 of the acknowledged file creation request 
+13 
+Transfer ident. 
+PI 13 of the acknowledged file creation request 
+14 
+Requested attributes 
+(not set) 
+16 
+Data code 
+(not set) 
+51 
+Creation date
+Creation time 
+PI 51 of the acknowledged file creation request 
+61 
+Initial sender
+PI 62 of the acknowledged file creation request 
+62 
+Final receiver
+PI 61 of the acknowledged file creation request 
+91 
+Message 
+MSG parameter of the SEND command 
+```
+
 Most of the acknowledgement message PI codes are defined using the protocol
 parameters which were specified at the time of the creation request (FPDU
 CONNECT) for the file considered. Transfer CFT holds this information

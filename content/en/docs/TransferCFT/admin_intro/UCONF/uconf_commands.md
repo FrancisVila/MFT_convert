@@ -8,16 +8,28 @@
 
 Use to modify a technical parameter value.
 
+```
+UCONFSET id=PARAMETER-KEY,value=STRING
+```
+
 After modifying a uconf value, you typically must restart {{< TransferCFT/componentshortname  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
 
 Using spaces in a UCONFSET command value
 
 When using CFTUTIL to define a UCONFSET value that contains spaces, the parameter value with spaces must be enclosed by single quotation marks that in turn are within double quotation marks. For example, to define a superuser with spaces use the following format.
 
+```
+CFTUTIL UCONFSET id=am.passport.superuser, value="'A B C D'"
+```
+
 **UCONFGET**
 
 Use to
 retrieve a single technical parameter value.
+
+```
+UCONFGET id=PARAMETER-KEY
+```
 
 Results: `PARAMETER-KEY=PARAMETER-VALUE`
 
@@ -26,6 +38,10 @@ Results: `PARAMETER-KEY=PARAMETER-VALUE`
 Use to
 return a specified parameter to the default value.
 
+```
+UCONFUNSET id=PARAMETER-KEY
+```
+
 > **Note:**
 >
 > Certain uconf values are integrally linked to node type uconf values. If you modify these related values, and then delete the node value, the modified parameters remain in the configuration.
@@ -33,6 +49,10 @@ return a specified parameter to the default value.
 **LISTUCONF**
 
 Use to display multiple technical parameter values.
+
+```
+LISTUCONF id=PARAMETER-KEY-PATTERN,scope=ALL|USER|DEFAULT,content=BRIEF|FULL|DEBUG
+```
 
 RECONFIG TYPE=UCONF
 
@@ -47,4 +67,12 @@ Get more information
 
 To get more information on uconf values, enter the command:
 
+```
+LISTUCONF id=PARAMETER,content=FULL
+```
+
 Example
+
+```
+LISTUCONF id=copilot.general.serverhost,content=FULL
+```

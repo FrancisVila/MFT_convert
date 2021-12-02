@@ -99,6 +99,12 @@ z/OS
 Example of a file with versions. The notation of the version of the file in the SEND stage is
 the same as the last notation used in the JCL.
 
+```
+//ST1 EXEC PGM=USER
+//DD1 DD DSN=FIL(-1)
+//ST4 EXEC PGM=CFTUTIL
+   SEND     FNAME=FIL(-1)
+```
 <span id="Filename__listing_a_directory"></span>
 
 ### Listing a directory: filename
@@ -107,6 +113,10 @@ This section
 provides an example of how to list a directory.
 
 Example of listing a directory
+
+```
+FNAME={dirname | mask}
+```
 
 The name specified can be a generic file name or a directory name. It
 can include:
@@ -164,6 +174,10 @@ a set of files with the same IDF in send mode](../../../concepts/transfer_comman
 This
 section provides an example of sending a group of files, the names of which
 are listed in the specified file:
+
+```
+FNAME=#filename
+```
 
 The specified name is the full name of a physical file, containing the
 list of files to be sent, list of physical file names, with one name per

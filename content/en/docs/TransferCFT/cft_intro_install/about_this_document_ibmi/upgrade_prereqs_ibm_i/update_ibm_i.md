@@ -10,6 +10,15 @@ Use the `CFTUTIL ABOUT` command to display the product information, including th
 
 **Results**
 
+```
+CFT information :
+\* product = CFT/OS400
+\* version = 3.2.4
+\* level = SP0\_P1
+\* upgrade = 8668000
+\* target = os400
+```
+
 ## Update with a service pack
 
 To apply a service pack:
@@ -55,8 +64,25 @@ When you install a service pack, the contents of the home directory are updated,
 
 Module versions impacted by the patch are stored. If the SAVF does not exist, it is created; if it exists, it is cleared.
 
+```
+Install Transfer CFT patch (PATCHER)
+Type choices, press Enter.
+ 
+Program library . . . . . . . . CFTPGM Character value
+SAVF for backup . . . . . . . . PATCHSAV Character value
+```
+
 **Results**
 
 Use the `CFTUTIL ABOUT` command to check the patch level.
 
 Results, for example, after applying SP2\_Patch2:
+
+```
+CFT information :
+\* product = CFT/OS400
+\* version = 3.2.4
+\* level = SP2\_Patch2
+\* upgrade = 8712000
+\* target = os400
+```

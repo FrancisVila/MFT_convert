@@ -19,7 +19,15 @@
 -   Use the  [cft.guardian.process\_name\_prefix](../intro_os_features/hp_ns_batch#cft.guardian.process_name_prefix) UCONF parameter as described in the UCONF parameters section.
 -   Be certain to change this parameter's default value if you are running several Transfer CFT installations at the same time.
 
+```
+CFTUTIL uconfset id=cft.guardian.process\_name\_prefix,value=LB
+```
+
 Start the Transfer CFT server:
+
+```
+cft start
+```
 
 Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are available:
 
@@ -28,15 +36,40 @@ Verify that the default ports used in `$CFTDIRRUNTIME/conf/cft-tcp.conf` are ava
 
 If the ports are not available, modify the port(s) and re-apply the configuration:
 
+```
+cftupdate $CFTDIRRUNTIME/conf/cft-tcp.conf
+```
+
 Check that Transfer CFT server is started:
+
+```
+cftping -v
+cftlog
+```
 
 Perform a transfer:
 
+```
+CFTUTIL SEND PART=PARIS, IDF=TEST
+```
+
 Check the status of the transfer:
+
+```
+CFTUTIL LISTCAT
+```
 
 Stop the Transfer CFT server:
 
+```
+cft stop
+```
+
 Verify that the Transfer CFT server is stopped:
+
+```
+cftping –v
+```
 
 ### Start the Transfer CFT Copilot server
 
@@ -46,6 +79,13 @@ If you intend to use one of the following, configure it now:
 -   Transfer CFT user interface: see [Using the web browser user interface](../../../c_intro_userinterfaces/web_copilot_ui)
 
 After having configured one of these, you can run the Copilot server:
+
+```
+cd <CFTDIRRUNTIME>
+. . /profile
+copstart
+http://MyHostName:1766
+```
 
 If you have activated the Central Governance connectivity, you can [Verify the Transfer CFT registration with Central Governance](../../unix_install_start_here/shared_verify_install#Verify).
 

@@ -52,9 +52,29 @@ After the input or output file in each example a representation depicts the file
 
 In the SEND profile (CFTSEND object) specify:
 
+```
+fcode=ASCII
+frecfm=V
+nrecfm=F
+nlrecl=<desired\_record\_size>
+npad=@
+```
+
 **Input file**
 
+```
+Axway
+Transfer CFT
+v
+```
+
 File sent over the network, when nlrecl=20:
+
+```
+Axway@@@@@@@@@@@@@@@
+Transfer CFT@@@@@@@@
+v3.0.1@@@@@@@@@@@@@@
+```
 
 #### Example of unpadding a fixed format file on the sender side
 
@@ -62,15 +82,46 @@ In SEND profile (CFTSEND object) specify:
 
 Input file when flrecl=20:
 
+```
+Axway@@@@@@@@@@@@@@@
+Transfer CFT@@@@@@@@
+v@@@@@@@@@@@@@@
+```
+
 File sent over the network:
+
+```
+Axway
+Transfer CFT
+v
+```
 
 #### Example of padding a variable format file on the receiver side
 
 In the RECV profile (CFTRECV object) specify:
 
+```
+fcode=ASCII
+frecfm=F
+flrecl=<desired\_record\_size>
+fpad=@
+```
+
 File received from the network:
 
+```
+Axway
+Transfer CFT
+v
+```
+
 **Output file**
+
+```
+Axway@@@@@@@@@@@@@@@
+Transfer CFT@@@@@@@@
+v@@@@@@@@@@@@@@
+```
 
 #### Example of unpadding a fixed format file on the receiver side
 
@@ -84,4 +135,16 @@ fpad=@
 
 File received from the network
 
+```
+Axway@@@@@@@@@@@@@@@
+Transfer CFT@@@@@@@@
+v@@@@@@@@@@@@@@
+```
+
 Output file
+
+```
+Axway
+Transfer CFT
+v
+```

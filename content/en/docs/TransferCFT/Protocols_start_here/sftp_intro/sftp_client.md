@@ -23,15 +23,33 @@ The following parameters are used to define the client's SFTP protocol:
 
 Example
 
+```
+cftprot id = SFTP,
+
+> TYPE = 'SFTP',
+> SSH = 'SSH\_DEFAULT',
+> NET = NET0,
+
+   ...
+```
+
 ## Add the server public key in the client profile
 
 Use the PKIKEY command to add the server public key in the database.
+
+```
+PKIKEY id=SRV\_PUB\_KEY, ikname='serv.pub', ikform=ssh
+```
 
 ## Add the client key in the PKI database (PKIKEYGEN or PKIKEY)
 
 You can use either the PKIKEYGEN command or the PKIKEY command to add the client key in the server database if you are using key authentication (or dual authentication). For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
 
 Example
+
+```
+PKIKEYGEN id=MY\_KEY, keylen=2048
+```
 
 ## Define the SSH client profile (CFTSSH)
 
@@ -44,6 +62,16 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
 -   CLIPRIVKEY: Key Id of the client private key to use with key authentication.
 
 Example
+
+```
+CFTSSH id = SSH\_DEFAULT,
+
+> DIRECT = CLIENT,
+> CLIPRIVKEY = MY\_KEY,
+> SRVPUBKEY = ,
+> ...
+
+```
 
 ## Define the partner (CFTPART) for a flow
 
@@ -78,6 +106,21 @@ Use  one of the following methods to configure the client password:
 >
 > If you do not define NSPASSW, Transfer CFT does not send a password to the server.
 
+```
+CFTPART id = USER1,
+
+> prot = SFTP,
+> sap = 1763,
+> nspart = "user1",
+> nspassw = "TheUser1Password", ...
+
+CFTTCP id = USER1,
+
+> host = <server host>,
+> ...
+
+```
+
 <img src="/Images/TransferCFT/sftp_client.png" class="smallWidth" alt="Client NSPART arrow to Server Login, Cient NSPASSW arrow to server Password" />
 
 <span id="Key"></span>
@@ -95,6 +138,25 @@ This is how the client decides the CLIPRIVKEY to use for the SSH profile:
 
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
+```
+CFTPART id = USER2,
+
+> ssh = SSH\_USER2,
+> sap = 1763,
+> prot = SFTP,
+> nspart = "user2", ...
+
+ 
+CFTTCP id = USER2,
+host = <remote host>, ...
+ 
+CFTSSH id = SSH\_USER2,
+
+> direct = CLIENT,
+> cliprivkey = USER2, ...
+
+```
+
 ### Password and key authentication
 
 When using **password and key** authentication:
@@ -104,7 +166,27 @@ When using **password and key** authentication:
 
 <!-- -->
 
--   
+-   ```
+    CFTPART id = USER3,
+
+    > ssh = USER3,
+    > sap = 1763,
+    > prot = SFTP,
+    > nspart = "user3",
+    > nspassw = "TheUser3Password",...
+
+     
+    CFTTCP id = USER3,
+
+    > host = <remote host>, ...
+
+     
+    CFTSSH id = USER3,
+
+    > direct = CLIENT,
+    > cliprivkey = USER3, ...
+
+    ```
 
 <span id="Transcod"></span>
 

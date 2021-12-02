@@ -64,12 +64,22 @@ Trktname parameter
 
 -   Using a buffer file is strongly encouraged, but not mandatory. If you prefer to not use a buffer file, modify the command UCONFSET as follows:
 
-<!-- -->
+```
+UCONFSET ID=sentinel.TRKTNAME,VALUE=
+```
 
 -   The following message displays in the log when you restart Transfer CFT:
 
+```
+CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1
+```
+
 To connect to the Event Router via XFC, manually modify the commands file to activate the appropriate communication mode and comment commands:
 
+```
+/\* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                  
+     UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp\*/
+```
 <span id="Create_a_LOGGER_type_padding_file (optional)"></span>
 
 ### Create a LOGGER type padding file (optional)
@@ -80,6 +90,15 @@ The new LOGGER file is a DASD-ONLY type file. Use the JCL SN10CLGR, via the IBM 
 
 **Example**
 
+```
+DEFINE LOGSTREAM NAME(sntlgstr)
+DASDONLY(YES)
+LOWOFFLOAD(0)
+LS\_SIZE(180)
+STG\_SIZE(0)
+MAXBUFSIZE(64000)
+```
+
 The keywords that are displayed in bold should be substituted by the JCL A00CUSTO. For more information refer to the IBM documentation on *Setting up a Sysplex*.
 
 #### Use the LOGGER file in a SYSPLEX  
@@ -87,6 +106,21 @@ The keywords that are displayed in bold should be substituted by the JCL A00CUST
 To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
 
 **Example**
+
+```
+The following is an example of a structure definition:
+STRUCTURE NAME(&userstr)
+SIZE(6000)
+INITSIZE(1200)
+REBUILDPERCENT(30)
+PRELIST(FACIL02,FACIL01)
+ 
+The following is an example of a logstream definition:
+DEFINE LOGSTREAM NAME(&LGRID)
+STRUCTNAME(&userstr)
+&Userstr is the structure name
+&LGRID is the logger file name
+```
 
 > **Note:**
 >
@@ -101,6 +135,32 @@ The following table describes the overflow file definition for the Logger file, 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the Event Router and applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through a ER
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
+```
+
+ 
+
+Event Router
+
+TRKUTIL
+
+Transfer CFT 2.7 and later
+
+Configuration file
+
+USEPARIN
+TRKCONF
+UCONF
+
+Logger file
+
+(AGENT)
+api\_file=
+TRKTNAME=
+UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx
+ 
+TRKSHAREDFILE=YES
+UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES
+```
 <span id="Communication with the Event Router"></span>
 
 ###  Communication with the Event Router
@@ -110,6 +170,32 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
 
+```
+
+ 
+
+Event Router
+
+TRKUTIL
+
+Transfer CFT 2.6.x
+
+Configuration file
+USEPARIN
+TRKCONF
+UCONF
+SVC
+(SYSTEM)
+svc\_nb=nnn
+TRKSVC=nnn
+UCONFSET ID=sentinel.TRKSVC,VALUE=nnn
+XCF definition
+(AGENT)queue=
+TRKQUEUE=
+UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx
+TRKTYPE=XCF
+UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF
+```
 <span id="Modify the Transfer CFT start-up procedure"></span>
 
 ### Modify the Transfer CFT start-up procedure
@@ -170,3 +256,4 @@ The CFTHEART JCL sets the unified configuration heartbeat values as follows:
 -   sentinel.trkipaddr = sentinel.server.address
 -   sentinel.trkipport = Sentinel.qlt/auto.port value (default = 1305)
 -   sentinel.xfb.enable = YES
+    &lt;/li>

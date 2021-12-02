@@ -24,11 +24,39 @@ Before INCLUDE MEMBER=CFTENV add directives
 
 Example:
 
+```
+// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+
+> // EXPORT SYSMLIST=\*
+> // INCLUDE MEMBER=CFTENV
+> //CFTSND EXEC PCFTUTIL,PARM='',QUAL=&CFTENV,OUT=&OUT
+> //CFTPARM DD DUMMY to optimize
+> //CFTIN DD \*,SYMBOLS=(CNVTSYS,SUBSLOG)
+> SEND PART=PARIS,IDF=BIN,
+> FNAME=&CFTENV..FTEST,
+> IDA=’&SYSNAME-&ZOSLVL-&SYSCLONE’
+> /\*
+
+```
+
 ## JCL CFTINC (include member)
 
 You can use the CFTINC member in an INCLUDE statement to reference a list of Transfer CFT file allocation statements.
 
 Example:
+
+```
+// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB
+//  INCLUDE MEMBER=CFTENV
+//STREX EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'
+//STEPLIB DD DISP=SHR,DSN=&CFTLOAD
+//SYSPROC DD DISP=SHR,
+//  DSN=MY.SYSPROC
+//SYSTSPRT DD SYSOUT=&OUT
+//SYSTSIN DD DUMMY
+//    SET QUAL=&CFTENV
+//    **INCLUDE MEMBER=CFTINC**
+```
 
 ## PCFTUTIL / PCFTUTL procedures
 
@@ -43,7 +71,25 @@ These procedures are customized during installation phase.
 
 To run a CFTUTIL executable (default), for example:
 
+```
+//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//   INCLUDE MEMBER=CFTENV
+//ABOUT EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',
+//   QUAL=&CFTENV
+```
+
 To run another CFTUTIL executable, for example CFTPKI:
+
+```
+//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//  INCLUDE MEMBER=CFTENV
+//LISPKI EXEC PCFTUTL,PG=CFTPKI,PARM='',
+//  QUAL=&CFTENV
+//MYPKI DD DISP=SHR,DSN=&CFTENV..PKIFILE
+//CFTIN DD \*
+LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL
+/\*
+```
 
 ### Recommendations to ease application migration
 
@@ -208,6 +254,16 @@ To activate the SFTP parameters:
         -   //\* DD DISP=SHR,
         -   //\* DSN=<u>&QUAL</u>..SAMPLE(CFTSFTP)
 
-<!-- -->
+```
+E50PARM
+//PARM EXEC PCFTUTIL,
+// PARM='',
+// QUAL=&CFTENV,OUT=&OUT
+//CFTIN DD DISP=SHR,
+// DSN=&QUAL..SAMPLE(CFTPARM)
+//\*     DD DISP=SHR,
+//\* DSN=&QUAL..SAMPLE(CFTSFTP)
+The underlined parameters are substituted during the submit phase.
+```
 
 1.  Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.

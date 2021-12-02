@@ -34,6 +34,20 @@ Example
 
 Below the CFTFOLDER object uses `CFTFOLD1 `as the scanning directory, and `CFTWRK1 `as the working directory (library).
 
+```
+CFTFOLDER MODE=REPLACE,
+ID=CFTFOLD1,<!\[CDATA\[ \]\]>
+STATE=ACTIVE,
+METHOD=MOVE,
+RESUBMITCHANGES=YES,
+FILEIDLEDELAY=5,
+IDF=BIN,
+PART=PARIS,
+SCANDIR=**CFTFOLD1**,
+WORKDIR=**CFTWRK1**,
+RENAMEMETHOD=TIMESTAMP
+```
+
 ## Timestamp conventions
 
 Files are limited to 10 characters starting with a letter, where the first letter of the moved file is that of the original file. The timestamp comprises the 9 remaining characters and has the pattern YDDDSSSSS (Y: last digit of the year, D: day of the year, S: second in the day).

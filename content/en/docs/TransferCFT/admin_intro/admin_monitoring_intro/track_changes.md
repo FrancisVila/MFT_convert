@@ -23,6 +23,11 @@ server. The configuration change can be:
 
 Using CFTUTIL, for example, define the parameter in UCONFSET as follows:
 
+```
+CFTUTIL UCONFSET ID=sentinel.xfb.audit,
+value=yes
+```
+
 ### Message Track
 
 Message Track is an XML XFBLog message

@@ -90,6 +90,39 @@ system, as applicable, as specified in the table below.
 
 CFTPART SAP - Parameter values
 
+```
+
+Access method 
+
+Size in characters
+(alphanumeric)
+
+Definition and comments 
+
+TCP/IP 
+1 to 15
+ 
+Number of the port on which the monitor partner is listening.
+The value of this number can be:
+
+-   a number
+    in clear corresponding to the real number used by the remote partner at
+    the protocol level of the TCP/IP protocol
+    Authorized numbers: between 1025 and 65535 (not including limit values)
+    Recommended numbers: between: 1761, 1762, 1763, 1764, 1765, 1766, 1767,
+    1768 (1)
+-   the logical
+    name associated with the number used by TCP/IP and configured in the SERVICES
+    file, if this file exists
+    Recommend logical names: cft-0, cft-1, cft-2, cft-3, cft-4,
+    cft-5, cft-6, cft-7 (1)
+
+If the local and remote partner parameter setting commands (CFTPART
+and CFTPROT respectively) use the logical name of the port defined in
+the "SERVICES" database, the consistency of the two bases must
+be ensured 
+```
+
 **(1)** These logical port numbers and
 names have been officially reserved by SOPRA from the IANA (Internet Assigned
 Numbers Authority).

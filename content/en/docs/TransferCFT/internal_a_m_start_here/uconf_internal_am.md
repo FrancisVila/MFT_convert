@@ -85,6 +85,11 @@ In the {{< TransferCFT/transfercftname  >}} UI, access the General Configuration
 
 When using a combination of predefined roles and custom roles that you created in the CFTPARM object, the new roles will override existing roles if they have the same name. For example, if you create two roles in CFTPARM with sames identifiers as predefined roles:
 
+```
+CFTROLE ID='HELPDESK', ...
+CFTROLE ID='APPLICATION', ...
+```
+
 Here, the new HELPDESK and APPLICATION roles override the predefined HELPDESK and APPLICATION roles. However, the predefined ADMIN, PARTNERMANAGER, and DESIGNER roles are still used since you did not create new roles with these same names.
 
 ## Internal access management use cases
@@ -101,9 +106,34 @@ Example 1: Use only predefined roles and privileges
 
 If you configure UCONF as follows:
 
+```
+uconfset id=am.internal.group\_database,value=system         NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
+uconfset id=am.internal.role.admin,value=group1
+uconfset id=am.internal.role.application,value=group2
+uconfset id=am.type,value=internal
+```
+
 To view the results:
 
+```
+listuconf id=am.internal.role.\*
+ 
+U am.internal.role.admin = group1
+D am.internal.role.helpdesk =
+D am.internal.role.partnermanager =
+D am.internal.role.designer =
+U am.internal.role.application = group2
+ 
+listparm type=role,content=brief
+CFTU24W LISTPARM \_ Warning ( Parameters no record selected / file empty)
+```
+
 To check that you are using only predefined roles and privileges, enter:
+
+```
+listparm type=role,content=brief
+CFTU24W LISTPARM \_ Warning ( Parameters no record selected / file empty)
+```
 
 **Results**
 
@@ -114,9 +144,45 @@ Example 2: Custom roles and privileges using only CFTPRIV and CFTROLE objects
 
 If you configure UCONF as follows:
 
+```
+uconfset id=am.internal.group\_database,value=system     NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
+uconfset id=am.type,value=internal
+listuconf id=am.internal.role.\*
+ 
+D am.internal.role.admin =
+D am.internal.role.helpdesk =
+D am.internal.role.partnermanager =
+D am.internal.role.designer =
+D am.internal.role.application =
+```
+
 Modify the `conf/roles-smp.conf` sample file:
 
+```
+CFTROLE ID = 'TRANSFER CFT ADMINISTRATOR',
+COMMENT = 'Enables full management of Transfer CFT.',
+ALIASES = ( 'group1' ),
+PRIVS = ( 'SWITCH ACCOUNTS', ...
+ 
+CFTROLE ID = 'TRANSFER CFT APPLICATION',
+COMMENT = 'Enables applications to send transfers.',
+ALIASES = ( 'group2' ) ,
+PRIVS = ( 'FILE VIEW' ,...
+```
+
 Interpret the modified file:
+
+```
+config type=input,fname=$CFTDIRRUNTIME/conf/roles-smp.conf
+listparm type=role,content=brief
+Type ID Information
+-------- -------------------- ---------------------------------------
+ROLE TRANSFER CFT ADMINISTRATOR Enables full management of Transfer CFT.
+ROLE TRANSFER CFT APPLICATION Enables applications to send transfers.
+ROLE TRANSFER CFT DESIGNER
+ROLE TRANSFER CFT HELPDESK
+ROLE TRANSFER CFT PARTNERMANAGER
+```
 
 **Results**
 
@@ -127,9 +193,47 @@ Example 3: Uses both predefined and customized CFTPRIV and CFTROLE objects
 
 If you configure UCONF as follows:
 
+```
+uconfset id=am.internal.role.admin, value=group1
+listuconf id=am.internal.role.\*
+ 
+U am.internal.role.admin = group1
+D am.internal.role.helpdesk =
+D am.internal.role.partnermanager =
+D am.internal.role.designer =
+U am.internal.role.application =
+listparm type=role,content=brief
+Type ID Information
+-------- -------------------- ---------------------------------------
+ROLE TRANSFER CFT ADMINISTRATOR Enables full management of Transfer CFT.
+ROLE TRANSFER CFT APPLICATION Enables applications to send transfers.
+ROLE TRANSFER CFT DESIGNER
+ROLE TRANSFER CFT HELPDESK
+ROLE TRANSFER CFT PARTNERMANAGER
+```
+
 Modify the `conf/roles-smp.conf` sample file:
 
+```
+CFTROLE ID = 'TRANSFER CFT APPLICATION',
+COMMENT = 'Enables applications to send transfers.',
+ALIASES = ( 'group2' ) ,
+PRIVS = ( 'FILE VIEW' ,...
+```
+
 Interpret the modified file:
+
+```
+config type=input,fname=$CFTDIRRUNTIME/conf/roles-smp.conf
+listparm type=role,content=brief
+Type ID Information
+-------- -------------------- ---------------------------------------
+ROLE TRANSFER CFT ADMINISTRATOR Enables full management of Transfer CFT.
+ROLE TRANSFER CFT APPLICATION Enables applications to send transfers.
+ROLE TRANSFER CFT DESIGNER
+ROLE TRANSFER CFT HELPDESK
+ROLE TRANSFER CFT PARTNERMANAGER
+```
 
 **Results**
 

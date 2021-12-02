@@ -11,6 +11,114 @@ The default value (No) sets:
 
 ![](/Images/TransferCFT/temp_compat.png)
 
+```
+
+Phase
+
+Phasestep
+
+State
+
+Description
+
+Pre-processing (A)
+Hold (H)
+Pre-processing (A)
+Pre-processing available
+Pre-processing (A)
+Available (D)
+Pre-processing (A)
+Pre-processing is waiting on a resource to start
+Pre-processing (A)
+Processing (C)
+Pre-processing (A)
+Pre-processing in progress
+Pre-processing (A)
+Killed (K)
+Pre-processing (A)
+Pre-processing is canceled
+Transfer (T)
+Hold (H)
+Hold (H)
+Transfer available (diagi=0) or interrupted (diagi <> 0)
+Transfer (T)
+Available (D)
+Available (D)
+Transfer is waiting resource to start
+Transfer (T)
+Processing (C)
+Processing (C)
+Transfer is in progress
+Transfer (T)
+Killed (K)
+Killed (K)
+Transfer is canceled
+Post-processing (Y)
+Hold (H)
+Transfer finished (T) or post-processing executed (X)
+Post-processing is interrupted
+Post-processing (Y)
+Exit EOT (E)
+Transfer finished (T) or post-processing executed (X)
+Exit in progress
+Post-processing (Y)
+Available (D)
+Transfer finished (T) or post-processing executed (X)
+Post-processing is waiting resource to start
+Post-processing (Y)
+Processing (C)
+Transfer finished (T) or post-processing executed (X)
+Post-processing in progress
+Post-processing (Y)
+Killed (K)
+Transfer finished (T) or post-processing executed (X)
+Post-processing is canceled
+Ack (Z)
+Hold (H)
+Transfer finished (T) or post-processing executed (X)
+Ack processing is interrupted
+Ack (Z)
+Processing (C)
+Transfer finished (T) or post-processing executed (X)
+Ack processing is not started
+Ack (Z)
+Available (D)
+Transfer finished (T) or post-processing executed (X)
+Ack processing in progress
+Ack (Z)
+Killed (K)
+Transfer finished (T) or post-processing executed (X)
+Ack processing is canceled
+Done (X)
+Done (X)
+Done (T or X)
+Flow finished
+```
 <span id="Compatibility unified configuration parameters"></span>
 
 ## Compatibility parameters in unified configuration
+
+```
+
+Parameter
+
+Default value
+
+Description
+
+Uconf:cft.listcat\_compat
+No
+Defines the LISTCAT display:
+
+-   Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.
+-   No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP.
+
+Uconf:cft.state\_compat
+No
+Defines the transfer states:
+
+-   Yes= The phase state is fully compatible with the states in versions prior to 3.0.
+-   No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.
+
+**Note**: Uconf:cft.state\_compat also impacts the [acknowledgement](../ack_phase) behavior if ackstate is set to ignore.
+```

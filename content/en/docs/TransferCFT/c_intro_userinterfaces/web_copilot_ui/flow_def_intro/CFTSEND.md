@@ -111,6 +111,15 @@ This section provides examples on how to define the CFTSEND template.
 
 ### Implicit send
 
+```
+CFTSEND
+MODE = REPLACE,
+ID = SNDIMPL,     /\* IDF implicit send transfers \*/
+IMPL = YES,
+FCODE = EBCDIC,      /\* EBCDIC data in file \*/
+FNAME = ’JSTATI’     /\* called ... \*/
+```
+
 Only used if:
 
 -   The value of the
@@ -124,13 +133,42 @@ Only used if:
 
 ### Default description of the model file
 
+```
+CFTSEND
+MODE = REPLACE,
+ID = IDFDEF,  /\* default IDF \*/
+IMPL = NO,
+FCODE = ASCII /\* EBCDIC data in file \*/
+```
+
 Corresponds to a send transfer when the SEND command specifies an IDF
 not described by a CFTSEND object. This is the default description of
 the model file to be sent. The CFTPARM object must specify:
+
+```
+CFTPARM DEFAULT = IDFDEF, ...
+```
 
 The SEND command specifies the name of the file to be sent, the FNAME
 parameter.
 
 ### Cyclic send
+
+```
+CFTSEND
+MODE = CREATE,
+ ID = STAT,                   /\* File identifier \*/
+FLRECL = 128, /\* of max length 128 bytes \*/
+FACTION = DELETE /\* Delete after send \*/
+FCODE = ASCII, /\* File coding \*/
+MINDATE = 19920703, /\* From 03/07/92 \*/
+MINTIME = 1000, /\* at 10:00 (Monday) \*/
+MAXDATE = 19921231, /\* Until 31/12/92 \*/
+MAXTIME = 2000, /\* at 20:00 \*/
+CYCLE = 7 /\* Every week \*/
+TCYCLE = DAY, /\* CYCTIME takes the value 1000 \*/
+ CYCDATE = 19920705, /\* Activate possible \*/ /\* first 3 days of \*/ /\* week, before \*/ /\* Wednesday 10:00 \*/
+PARM = ’Day statistic’ /\* Associated parameter.for.\*/ /\*PeSIT CFT profile \*/
+```
 
 Meets a specific cyclic send requirement.

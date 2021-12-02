@@ -27,8 +27,14 @@ After installing {{< TransferCFT/componentshortname  >}}
     use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime/conf `directory. You can configure these during the product installation, or manually after installation.
 -   Use `cftinit <configuration_file>` > and/or `cftupdate` to interpret the parameter and
     partner files.  
-      
+    ```
+    cftinit conf/cft-tcp.conf
+    cftupdate conf/cft-tcp-part.conf
+    ```  
     or  
+    ```
+    cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf
+    ```
 
 > **Note:**
 >

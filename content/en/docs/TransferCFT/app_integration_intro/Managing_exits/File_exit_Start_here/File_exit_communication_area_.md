@@ -111,9 +111,39 @@ to use the format displayed below. The <span style="font-weight: bold;">exitdT</
 communication structure between the interface and the user program is
 defined as follows:
 
+```
+typedef struct {
+union {
+struct {
+/\* Structure for the C language \*/
+/\* ... \*/
+} exC;
+struct {
+/\* Structure for the COBOL language \*/
+/\* ... \*/
+} exnC;
+} exU;
+} exitdT, \*exitdTp;
+```
+
 If you want to create an exit using the V2.4 format <span style="font-weight: bold;">exitdnT</span>
 communication structure between the interface and the user program is
 defined below:
+
+```
+typedef struct {
+union {
+struct {
+/\* Structure for the C language \*/
+/\* ... \*/
+} exC;
+struct {
+/\* Structure for the COBOL language \*/
+/\* ... \*/
+} exnC;
+} exU;
+} exitdnT, \*exitdnTp;
+```
 
 The structures for the C and COBOL languages are described in <span style="font-family: 'Courier New', monospace;font-weight: bold;">exfus.h</span>
 that is delivered with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> .

@@ -53,6 +53,25 @@ Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 Example of CFTROLE in a configuration file:
 
+```
+CFTROLE      ID          = 'Application',
+             COMMENT     = 'My comments',
+             PRIVS       = ( 'SERVICE:UI\_CONNECT',
+                             'MYPRIV1',
+                             'CONFIGURATION:CFTCOM\_VIEW',
+                             'CONFIGURATION:CFTPARM\_VIEW',
+                             'CONFIGURATION:CFTPART\_VIEW',
+                             'CONFIGURATION:CFTDEST\_VIEW',
+                             'CONFIGURATION:CFTSEND\_VIEW',
+                             'CONFIGURATION:CFTRECV\_VIEW',
+                             'CONFIGURATION:CFTLOG\_VIEW',
+                             'FILTER:CATALOG\_ALL',
+                             'FILTER:LOG\_ALL',
+                             'FILE\_VIEW'),
+             ORIGIN      = 'CFTUTIL',
+             MODE        = 'REPLACE'
+```
+
 ### Using CFTPRIV
 
 Privileges give users authorization to access and perform actions in the user interface. Examples of actions include CREATE, DELETE, VIEW, EDIT (use \* to assign all actions).
@@ -69,6 +88,16 @@ Privileges give users authorization to access and perform actions in the user in
 
 Example of CFTPRIV in a configuration file:
 
+```
+CFTPRIV      ID          = 'MYPRIV1',
+            COMMENT     = 'My comment',
+             RESOURCE    = 'TRANSFER',
+             ACTIONS     = ( 'CREATE' , 'DELETE', 'VIEW', 'EDIT', 'CANCEL', 'RESUME',
+                            'PAUSE', 'EXECUTE', 'SUBMIT', 'END' ),
+             CONDITION   = '',
+             ORIGIN      = 'CFTUTIL',
+             MODE        = 'REPLACE'
+```
 <span id="Specifyi"></span>
 
 ### Specifying conditions
@@ -78,6 +107,11 @@ Conditions allow you to assign finer control on resources and actions by specify
 Examples
 
 In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+
+```
+PART=="PARIS" && ID=="IDFDEF"
+(PART=="PARIS" || PART==”NEWYORK”) && ID~="IDF\*"
+```
 
 Comparison operators include:
 
@@ -175,6 +209,61 @@ In this use case, you assign the user a role that references a privilege having 
 
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
+```
+CFTROLE      ID          = '',
+             COMMENT     = '',
+/\*           ALIASES     = ( ) ,\*/
+             PRIVS       = ( '',
+                              'PRIV-CONN-INTERFACES',
+                              'CONFIGURATION:CFTCOM\_VIEW',
+                              'CONFIGURATION:CFTPARM\_VIEW',
+                              'FILTER:CATALOG\_ALL',
+                              'FILTER:LOG\_ALL',
+                              'FILE\_VIEW',
+                              'CONFIGURATION:PKICER\_VIEW',
+                              'CONFIGURATION:PKIENTITY\_VIEW',
+                               'CONFIGURATION:PKIKEY\_VIEW',
+                              'CONFIGURATION:CFTPARM\_VIEW',
+                              'CONFIGURATION:CFTNET\_VIEW',
+                              'CONFIGURATION:CFTPROT\_VIEW',
+                              'CONFIGURATION:CFTSEND\_VIEW',
+                              'CONFIGURATION:CFTSENDI\_VIEW',
+                              'CONFIGURATION:CFTRECV\_VIEW',
+                              'CONFIGURATION:CFTAUTH\_VIEW',
+                              'CONFIGURATION:CFTXLATE\_VIEW',
+                              'CONFIGURATION:CFTLOG\_VIEW',
+                              'CONFIGURATION:CFTCAT\_VIEW',
+                              'CONFIGURATION:CFTCOM\_VIEW',
+                              'CONFIGURATION:CFTACCNT\_VIEW',
+                              'CONFIGURATION:CFTEXIT\_VIEW',
+                              'CONFIGURATION:CFTIDF\_VIEW',
+                              'CONFIGURATION:CFTFOLDER\_VIEW',
+                              'CONFIGURATION:CFTETB\_VIEW',
+                              'CONFIGURATION:CFTAPPL\_VIEW',
+                              'CONFIGURATION:CFTSSL\_VIEW',
+                              'CONFIGURATION:CFTCRON\_VIEW',
+                              'CONFIGURATION:CFTPART\_VIEW',
+                              'CONFIGURATION:CFTDEST\_VIEW',
+                              'CONFIGURATION:CFTTCP\_VIEW',
+                              'CONFIGURATION:CFTUCONF\_VIEW',
+                              'SERVICE:COM\_VIEW',
+                              'AM:RIGHTS\_VIEW\_SELF'),
+              MODE        = 'REPLACE'
+ 
+CFTPRIV       ID          = '',
+              COMMENT     = 'PRIV limits transfers - no delete condition',
+              RESOURCE    = 'TRANSFER',
+              ACTIONS     = ( 'CREATE',
+                              'RESUME',
+                              'VIEW',
+                              'CANCEL',  
+                               'PAUSE',
+                              'EXECUTE'),
+              CONDITION   = ' IDF=="MYIDF" && PART=="MYPART" ',
+              ORIGIN      = 'CFTUTIL',
+              MODE        = 'REPLACE'
+```
+
 ### Add an administrator role
 
 As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and instance group.
@@ -188,5 +277,63 @@ In this use case, you assign the user role that refers to a privilege having the
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+
+```
+CFTROLE      ID          = '',
+              COMMENT     = 'Administrator role for Production Transfer CFT Windows',
+                              'AM:RIGHTS\_VIEW\_ALL',
+                              'CONFIGURATION:PKICER\_ALL',
+                              'CONFIGURATION:PKIENTITY\_ALL',
+                              'CONFIGURATION:PKIKEY\_ALL',
+                              'CONFIGURATION:CFTPARM\_ALL',
+                              'CONFIGURATION:CFTNET\_ALL',
+                              'CONFIGURATION:CFTPROT\_ALL',
+                              'CONFIGURATION:CFTSEND\_ALL',
+                              'CONFIGURATION:CFTSENDI\_ALL',
+                              'CONFIGURATION:CFTRECV\_ALL',
+                              'CONFIGURATION:CFTAUTH\_ALL',
+                              'CONFIGURATION:CFTXLATE\_ALL',
+                              'CONFIGURATION:CFTLOG\_ALL',
+                              'CONFIGURATION:CFTCAT\_ALL',
+                              'CONFIGURATION:CFTCOM\_ALL',
+                               'CONFIGURATION:CFTACCNT\_ALL',
+                              'CONFIGURATION:CFTEXIT\_ALL',
+                              'CONFIGURATION:CFTIDF\_ALL',
+                              'CONFIGURATION:CFTFOLDER\_ALL',
+                              'CONFIGURATION:CFTETB\_ALL',
+                              'CONFIGURATION:CFTAPPL\_ALL',
+                              'CONFIGURATION:CFTSSL\_ALL',
+                              'CONFIGURATION:CFTCRON\_ALL',
+                              'CONFIGURATION:CFTPART\_ALL',
+                               'CONFIGURATION:CFTDEST\_ALL',
+                              'CONFIGURATION:CFTROLE\_ALL',
+                              'CONFIGURATION:CFTPRIV\_ALL',
+                              'CONFIGURATION:CFTTCP\_ALL',
+                               'CONFIGURATION:CFTUCONF\_ALL',
+                              'SERVICE:CATALOG\_PURGE',
+                              'SERVICE:LOG\_SWITCH',
+                              'SERVICE:ACCOUNT\_SWITCH',
+                              'SERVICE:BATCH\_EXECUTE',
+                               'SERVICE:CFTSRV\_ALL',
+                              'SERVICE:COM\_ALL',
+                              'TRANSFER\_ALL',
+                              'FILTER:CATALOG\_ALL',
+                              'FILTER:LOG\_ALL',
+                              'FILE\_ALL',
+                              'URL\_VIEW',
+                              'COMMAND:EXTRACT\_ALL',
+                              'COMMAND:MQUERY\_ALL',
+                              'COMMAND:TURN\_ALL',
+                              'COMMAND:CFTSUPPORT\_ALL'),
+              MODE        = 'REPLACE'
+ 
+CFTPRIV      ID          = '',
+              COMMENT     = 'PRIV LIMITs the connection for a given Transfer CFT name',
+             RESOURCE    = 'SERVICE:UI',
+             ACTIONS     = ( 'CONNECT'),
+             CONDITION   = 'GROUP=="PRODUCTION" && ID~="CFT-PROD-ITEM\*"', 
+             MODE        = 'REPLACE'
+ 
+```
 
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to `PRODUCTION`, and whose `cft.instance_id` value begins with `CFT-PROD-ITEM`.

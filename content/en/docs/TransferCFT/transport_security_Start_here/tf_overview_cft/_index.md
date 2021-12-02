@@ -36,14 +36,83 @@ The Transfer CFT sample configuration file `runtime/conf/cft-tf-smp.conf` includ
 
 Sending
 
+```
+cftsend id = trusted\_file,
+ftype = B,
+fcode = BINARY,
+fname = pub/FTEST,
+EXEC = $CFTDIREXEC/tf/tf\_delfile.cmd,
+PREEXEC = $CFTDIREXEC/tf/tf\_cipher.cmd,
+mode = replace
+```
+
 Receiving
 
+```
+cftrecv id = trusted\_file,
+ftype = B,
+fcode = BINARY,
+fname = $CFTDIRPUB/TF\_&part\_&idtu,
+EXEC = $CFTDIREXEC/tf/tf\_decipher.cmd,
+faction = delete ,
+fdisp = both,
+mode = replace
+```
 <span id="Defining"></span>
 
 ## Defining the unified configuration parameters
 
 The Transfer CFT installation process automatically sets the following Transfer CFT unified configuration parameters to enable {{< TransferCFT/trustedfilename  >}} functioning. For information on uconf, see [About the Unified Configuration](../../admin_intro/uconf).
 
+```
+
+Parameter (uconf)
+
+Default values
+
+Description
+
+tf.proofslocation
+<HOME>/Axway/Transfer\_CFT/runtime/data/tf
+References the absolute path to the directory that the product uses to generate proofs
+tf.proofsenabled
+yes
+Indicates whether proofs are enabled or not. This field takes the value yes or no (yes by default). If the value is set to no, the generation of proofs is deactivated
+tf.messageslocation
+<HOME>/Axway/Transfer\_CFT/home/distrib/tf/english
+Transfer CFT runtime directory
+tf.entitieslocation
+$HOME/Axway/Transfer\_CFT/runtime/conf/tf/entities.xml
+Indicates the TrustedFile configuration path.
+If the **tf.entitieslocationtype** is:
+
+-   Local: Points locally to the entities.xml file by default
+-   Remote: Configures the PassPort PS server host and listening port. Enter the same values that are used in the unified configuration for the following PassPort values:
+    <xppServer host="**pki.passport.hostname**">, <xp3Protocol port="**pki.passport.port**">
+    **Example**: `<xppServer host="172.17.171.202">, <xp3Protocol port="7000">`
+
+See [Unified Configuration: PKI PassPort PS](../../admin_intro/uconf/uconf_pki).
+tf.entitieslocationtype
+local
+Defines the type of TrustedFile configuration.
+The configuration path is defined in **tf.entitieslocation**.
+
+-   Local: Indicates that Trusted File is configured in standalone mode (locally)
+-   Remote: Indicates that Trusted File is configured with PassPort PS using the PassPort PS host and listening port
+
+tf.defaultlocalcharset
+ISO-8859-1
+Default character set for the platform
+tf.transcodingtablelocation
+<HOME>/Axway/Transfer\_CFT/runtime/conf/tf/transcoding.tbl
+Absolute path to the character set conversion reference table
+tf.overwritemode
+enable
+Defines how Axway TrustedFile behaves when it must open an existing plain file, acknowledgement or envelope in write mode. If this element is set to the value yes or enable, Axway TrustedFile overwrites the existing output files. Otherwise, it does not open the files and interrupts the current operation with an error message. Its default value is enable
+tf.enablepasswordcipher
+yes
+Indicates that entities passphrases, either in the entities definition file (entities.xml) or in the operation description file, are stored in a ciphered format.
+```
 <span id="Command"></span>
 
 ## Command example
@@ -54,6 +123,10 @@ use the same security format as your partner (possible values are CMS, PGP, and 
 Example
 
 To encode/decode messages using PGP, use the format:
+
+```
+CFTUTIL send part=loop,idf=trusted\_file, SAPPL=pgp
+```
 
 ## Not supported
 

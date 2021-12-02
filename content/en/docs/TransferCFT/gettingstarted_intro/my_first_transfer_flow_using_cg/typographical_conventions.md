@@ -26,6 +26,15 @@ The description of each command is generally organized in parts:
 
 Example
 
+```
+CFTFILE \[MODE = {CREATE
+| DELETE},\]
+FNAME = filename,
+TYPE = {PARM
+| PART | CAT | LOG | ACCNT
+| COM},
+```
+
 -   Detailed description
     of parameters, in alphabetical order
 
@@ -67,10 +76,22 @@ The information and specifics fields are optional.
 
 Example
 
+```
+COPYFILE
+OFNAME
+= filename
+```
+
 In this command, the OFNAME
 parameter is mandatory. Its value corresponds to a filename.
 
 Example
+
+```
+CFTSEND \[NFNAME =
+filename\]       PeSIT
+E CFT/CFT
+```
 
 In this object, the NFNAME
 parameter is:
@@ -139,6 +160,22 @@ When using the CFTUTIL HELP command, as shown in the example below, the follow
 
 Example
 
+```
+CFTUTIL help cmd=cftsend, content=detail
+ 
+COMMAND CFTSEND USAGE
+ MODE STRING max\_length=7 Action to do in the parameter or partner base <REPLACE>
+ 'CREATE'
+
+   ...
+ PRESTATE **STRING** max\_length=0 The transfer phase step as it enters the A phase < > (' ','DISP','HOLD')
+   ...
+ RAPPL **STRING or "String"** max\_length=48 Identifier of the file receiver application
+  ...
+ RPASSWD **String** max\_length=32 Password for the user who is receiving the file
+
+```
+
 ### Using single quotes and double quotes
 
 The following conventions apply when using double quotes (hereafter referred to as quotes) " " and single quotes ' ' in CFTUTIL commands:
@@ -152,6 +189,9 @@ The following conventions apply when using double quotes (hereafter referred to 
 
 Lastly, to use the quote character in a parameter string you have to repeat it, for example:
 
+```
+PARM = 'xxx,''yyy'',zzz',
+```
 <span id="Parameter_values_concerning_preset_categories"></span>
 
 ### Parameter values for preset categories

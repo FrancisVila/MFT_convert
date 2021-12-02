@@ -60,6 +60,67 @@ language such as C language or Assembler.
 The following table lists all the parameters of the
 initialization function.
 
+```
+
+Parameter
+
+Description
+
+exafref
+Address
+of an (512+1) byte area.
+The
+initialization function can modify this area.
+mode
+Address
+of a one-byte area
+Processing mode:
+
+-   S: call
+    in server mode
+-   R: call
+    in requester mode (Requester)
+
+part
+Address
+of an (32+1) byte area.
+Partner local identifier if this identifier is known to
+<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+parm
+Address
+of an (64+1) byte area.
+This
+area contains the value of the PARM parameter of the CFTEXIT command and
+can be modified by the initialization function.
+language
+Address
+of a one-byte area.
+This area contains the value of the LANGUAGE
+parameter of the CFTEXIT command and can be modified by the initialization
+function.
+function
+Address
+of an area that contains the address of the user function.
+If you want to take
+control, the initialization function must update this area. The mode,
+part, parm and language parameters are initialized by the interface. The
+mode, part and parm parameters can be used to select a function when the
+user has provided several functions.
+The user can use the exaref parameter as required. The
+contents of this parameter are thereafter provided to the user function.
+The (n+1) byte areas contain characters up to n bytes long
+followed by a binary zero.
+Return
+codes
+The possible values are:
+
+-   0: the
+    user wants to take control at one stage at least
+-   1: the
+    user does not want to take control
+
+```
+
 ### Example in C
 
 long **exaini** ( char     \*exaref,  
@@ -82,6 +143,40 @@ typedef long (\*EXA)(char\*,char\*);
 
 ## User Function
 
+```
+
+Parameter
+
+Description
+
+zecom
+ 
+ 
+Address
+of the interface communication area. Also
+known as context table or transfer context, this area is:
+
+-   allocated by the interface for each transfer
+-   updated by the interface before each call
+    of the user function
+-   freed by the interface at the end of the
+    transfer
+
+Some fields of this area can be updated by the user function.
+zgcom
+Address
+of the global communication area (1024 bytes).
+This area is allocated and reset to 0
+by the interface once and for all at the time the EXIT task is activated,
+and then freed by the interface at the time it is de-activated.
+You can use this area to save the information common to
+all the calls of user functions.
+ 
+Return
+codes
+Not used
+```
+
 Example in C
 
 long usrfct (     char
@@ -95,3 +190,21 @@ long usrfct (     char
 ## Interface files
 
 Interface files are listed in the following table.
+
+```
+
+File
+
+Description
+
+EXAUS.H
+File that contains the definition of the interface/user
+program communication structure
+For the interface and the user program 
+EXA.H 
+File for the interface 
+EXA2MN.C 
+Main entry point for the EXIT task 
+EXA2UT.C
+Miscellaneous functions for the interface 
+```

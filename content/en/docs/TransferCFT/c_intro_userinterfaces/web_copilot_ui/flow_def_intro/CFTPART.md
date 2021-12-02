@@ -48,6 +48,40 @@ See also:
 
 ## CFTUTIL example
 
+```
+CFTPART     MODE =    
+CREATE,
+     ID =     PARIS5,    
+/\* Partner identifier      \*/
+     PROT =     PSITCFT,    
+/\* Only one communication protocol
+                                   
+-> see CFTPROT      \*/
+     SAP =     13,          
+/\*      \*/
+     RAUTH =     RECPAR5,    
+/\* The files authorized to be received
+                                     
+--> see CFTAUTH      \*/
+     NRPART =     BULLDPS,    
+/\* Name and password that the     \*/
+     NRPASSW =     44NTS,    
+/\* partner submits at connection time  \*/
+     NSPART =     LOCALCFT,/\*
+Name and password that CFT     \*/
+     NSPASSW =     75P015,   
+/\* submits to the partner on connection \*/
+     IMINTIME =     0700,      /\*
+Only able to call between     \*/
+     IMAXTIME =     0900,        /\*
+7:00 and 9:00     \*/
+     OMINTIME =     1000,          /\*
+May only be called between      \*/
+     OMAXTIME =     1200    
+,          /\* 10:00
+and midday      \*/
+```
+
 The SAUTH parameter is omitted. The partner can then send any IDF to
 the local {{< TransferCFT/componentshortname  >}}, while it is only authorized to receive
 the files which have been assigned an IDF included in the RECPAR5 list

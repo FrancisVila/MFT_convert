@@ -196,6 +196,28 @@ string: ‘F2345’.
 Depending on the format of the associated symbolic variable, the substituted
 values are:
 
+```
+&VAR = ’F2345’
+&3VAR = ’F23’
+&7VAR = ’F2345 ’
+ 
+&.VAR = ’&VAR’ (not substituted)
+&.4VAR = 'F2345'
+&1.VAR = ’F2345’
+&2.VAR = ’2345’
+&5.VAR = ’5’
+&6.VAR = ’’
+ 
+&1.1VAR = ’F’
+&2.1VAR = ’2’
+&5.1VAR = ’5’
+&6.1VAR = ’ ’
+ 
+&1.2VAR = ’F2’
+&2.3VAR = ’234’
+&5.6VAR = ’5 ’ (5 blank characters)
+&6.7VAR = ’ ’ (7 blank characters)
+```
 <span id="Examples"></span>
 
 #### Example using optional characters
@@ -959,7 +981,7 @@ date </p>         </td>
 </table>
 
 (1): These variables are linked to SSL use. For additional information,
-refer to [Managing Transport Security](../../../transport_security_start_here).
+refer to &lt;a href="../../../transport\_security\_start\_here">Managing Transport Security&lt;/a>.&lt;/madcap:conditionaltext>&lt;/p>
 
 (2): EXEC in SEND, EXECSF, EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
 
@@ -1021,8 +1043,16 @@ Symbolic variables can be used:
 A file name can consist of the day’s date and the partner’s name:  the
 description command for the PAY file in reception.
 
+```
+RECV IDF = PAY, FNAME = PAY&4PART.&FDAY
+```
+
 When a file of this type is received from the ALPHSITE partner on July
 14 13:
+
+```
+RECV PART = ALPHSITE, IDF = PAY
+```
 
 {{< TransferCFT/componentshortname  >}} creates and writes to a file: PAYALPH.14
 
@@ -1037,14 +1067,22 @@ You can use blacklist characters as a POSIX Regular Extended expression to defin
 
 Defining the blacklist
 
-Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **\`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
+Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 
 **UNIX**
 
-When setting the blacklist values shown above, the forbidden characters are: **\`** and **$(** and **;** and **&** and **|**  
-For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **\`** characters, respectively.
+```
+uconfset id=cft.server.processing\_scripts\_variables\_blacklist , value= "`|\\$\\(|;|&|\\|"
+```
+
+When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
+For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
 
 Windows
+
+```
+uconfset id=cft.server.processing\_scripts\_variables\_blacklist , value="&"
+```
 
 DIAGI 158
 

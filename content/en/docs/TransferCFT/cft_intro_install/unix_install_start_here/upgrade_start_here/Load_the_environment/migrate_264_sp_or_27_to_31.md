@@ -14,6 +14,9 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1.  Export your static configuration objects using the command CFTUTIL CFTEXT.  
     Enter:  
+    ```
+    CFTUTIL CFTEXT type=all, fout=cft-extract.conf
+    ```
 
 <!-- -->
 
@@ -27,6 +30,8 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 2.  Import your static configuration objects using the cftinit command. Enter:  
+    ```
+3.  `cftinit cft-extract.conf`
 
 ## Migrating PKI certificates
 
@@ -35,6 +40,8 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 <!-- -->
 
 1.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
+    ```
+2.  `PKIUTIL PKIEXT fout=pki-extract.conf`
 
 <!-- -->
 
@@ -52,6 +59,9 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
     `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
 
 1.  Import your PKI certificates into the new Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path:  
+    ```
+    PKIUTIL <prefix\_character><script\_filename>
+    ```
 
 Examples
 
@@ -68,6 +78,9 @@ Windows: `PKIUTIL #pki-extract.conf`
 <!-- -->
 
 1.  Export the catalog using the command CFTMI240:  
+    ```
+    CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.7\_filename>, ofname=catalog\_output.xml
+    ```
 
 <!-- -->
 
@@ -85,6 +98,9 @@ Windows: `PKIUTIL #pki-extract.conf`
 
 Example
 
+```
+```
+
 ### Migrating the communication media files
 
 1.  Load the former Transfer CFT (2.6.4 or 2.7.0) environment.
@@ -92,6 +108,9 @@ Example
 <!-- -->
 
 1.  Export the communication media file using command CFTMI240:  
+    ```
+    CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.7.0\_filename>, ofname=com\_output.xml
+    ```
 
 <!-- -->
 
@@ -108,3 +127,6 @@ Example
 -   Windows: `$CFTCOM`
 
 Example
+
+```
+```

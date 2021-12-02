@@ -17,7 +17,15 @@ type of network used.
 2.  In the edited file, locate
     the *cftprot* command. The following lines are displayed:
 
-<!-- -->
+```
+cftprot
+id      = PeSITCFT,  
+type      = PESIT,
+prof      = CFT,
+...
+/\*\*\* exita      = EXIT\_A, \*\* See Operations Guide \*\*/
+mode      = replace
+```
 
 1.  Delete the comments (delimited
     by /\* at the beginning and \*/ at the end).
@@ -25,11 +33,39 @@ type of network used.
 When the operation is complete, you should obtain
 the following *cftprot* command:
 
+```
+cftprot id      = PeSITCFT,
+type`      = PESIT,`  
+`prof`      = CFT,
+...
+exita= EXIT\_A,
+mode      = replace
+```
+
 1.  Locate the *cftexit* command,
     commented as follows:
 
+```
+CFTEXIT ID      = EXIT\_A,
+PARM = EXAPARM1,
+LANGUAGE = C,
+PROG = 'CFTEXITA',
+TYPE = ACCESS,
+MODE = REPLACE \*\*\*/
+```
+
 You must remove the comments to obtain the following
 command:
+
+```
+CFTEXIT ID     
+= EXIT\_A,
+PARM      = EXAPARM1,
+LANGUAGE      = C,
+PROG      = 'CFTEXITA',
+TYPE      = ACCESS,
+MODE      = REPLACE
+```
 
 1.  Locate the communication properties
     of your site, which appear at the end of the file.

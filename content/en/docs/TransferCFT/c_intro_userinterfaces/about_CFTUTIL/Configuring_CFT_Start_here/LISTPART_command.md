@@ -25,6 +25,14 @@ Example 1
 To view all the contents of the records of the PARTNER
 file:
 
+```
+LISTPART TYPE = ALL
+```
+
 Example 2
 
 To view broadcasting lists:
+
+```
+LISTPART TYPE = DEST
+```

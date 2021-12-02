@@ -36,6 +36,10 @@ The following disk space calculations are the minimum requirements for a test en
 
 Transfer CFT needs to access a random device for its security operations. Since HP NonStop OSS is not equipped with such a device, your system administrator should activate this daemon under SUPER.SUPER user. The start command resembles the following:
 
+```
+/usr/coreutils/sbin/prngd -c /usr/local/etc/prngd/prngd.conf /etc/egd-pool
+```
+
 ### Additional requirements
 
 -   Transfer CFT for HP NonStop Itanium is built on an J-series TNS/E Itanium machine. The operating system Release Version Update (RVU) used is J06.21.

@@ -22,6 +22,10 @@ Level 2: corresponds to level 1 with an additional program-based control of acce
 
 When running under , the access management is automatically set to am.type=passport. If you want to use external access management, RACF, you must manually modify this value after registering with using the command:
 
+```
+CFTUTIL UCONFSET id=am.type, value=internal
+```
+
 ### Installation prerequisites
 
 #### Creating RACF classes
@@ -50,6 +54,23 @@ Once the H83SAFDA job is adapted, use this job to create groups and the Transfer
       
     After adapting the security system values in the A03PARM member, you must execute the A00CUSTO job again.
 
+```
+`**************************************************************`
+`*   New parameters for RACF (or SAF enabled) control of Transfer CFT.`
+`*   These definitions are not used in the base installation.`
+`*   You must read the “Transfer CFT Installing z/OS Security” `
+`*   before changing the following values:`
+`**************************************************************`
+`  grpcft   'grpcft'               CFT administrator SAF group`
+`  grpmon   'grpmon'               CFT monitor SAF group`
+`  grpaprm  'grpaprm'              all parameter access SAF group`
+`  grpfprm  'grpfprm'              PARM and PART access SAF group`
+`  grpdesk  'grpdesk'              CFT help desk SAF group`
+`  grptrf   'grptrf'               CFT transfer SAF group`
+`  userdef  'userdef'              default CFTRECV userid`
+`  safcftcl 'safcftcl'             SAF class for CFT profiles     `
+```
+
 ## Security system installation procedure
 
 When the general resource class (safcftcl) is applied by RACF, the authorized user can begin the installation to implement the minimum (Transfer CFT and RACF) resources required to run the security system. You must perform the installation procedures in the order shown in the following table.
@@ -70,3 +91,15 @@ When the general resource class (safcftcl) is applied by RACF, the authorized us
 
 
 #### Delete security definitions
+
+```
+
+Job
+
+Description
+
+H89SAFDD
+Used to delete the RACF definitions created by the H84SAFDF job.
+H89SAFDS
+Used to delete the RACF definitions created by the H89SAFAS job.
+```

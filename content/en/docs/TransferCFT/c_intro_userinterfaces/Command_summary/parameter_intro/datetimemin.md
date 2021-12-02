@@ -23,6 +23,14 @@ You can use this parameter in combination with <a href="../datetimemax" class="M
 
 Relative example
 
+```
+CFTUTIL display datetimemin=-3H
+```
+
 Absolute example
+
+```
+CFTUTIL listcat datetimemin=2021030420
+```
 
 [Return to Command index](../../)

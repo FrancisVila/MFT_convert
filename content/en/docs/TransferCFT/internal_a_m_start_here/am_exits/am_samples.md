@@ -55,13 +55,34 @@ Examples
 
 All available actions on the resource “CONFIGURATION:CFTPARM”:
 
+```
+PA ADMIN CONFIGURATION:CFTPARM CREATE,DELETE,EDIT,VIEW ACCEPT
+```
+
 or
+
+```
+PA ADMIN CONFIGURATION:CFTPARM \* ACCEPT
+```
 
 All available actions on resources that start with “CONFIGURATION:” for the ADMIN role:
 
+```
+PA ADMIN CONFIGURATION:\* \* ACCEPT
+```
+
 All permissions for the ADMIN role:
 
+```
+PA ADMIN \* \* ACCEPT
+```
+
 All permissions for the ADMIN role except for the resource “TRANSFER”:
+
+```
+PA ADMIN TRANSFER \* REFUSE
+PA ADMIN \* \* ACCEPT
+```
 
 ## Assigning users
 
@@ -77,6 +98,13 @@ The following line shows how to add a user to a role:
 
 
 #### Examples
+
+```
+UA ADMIN admin,user01,user02
+UA DESIGNER user03
+UA HELPDESK user03,user04
+UA APPLICATION user05
+```
 
 ## Predefined roles
 

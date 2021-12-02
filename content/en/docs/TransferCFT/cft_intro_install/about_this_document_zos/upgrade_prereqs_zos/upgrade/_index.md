@@ -196,6 +196,26 @@ Upgrade the STC CFT and Copilot if needed.
 
 If the instance is independent from the distribution environment, customize the DISTLIB, DISTPRF and DISTLVL variables in INSTALL(CFTENV):
 
+```
+// SET DISTLIB=&CFTENV
+// SET DISTPRF= -> &CFTENV without the last qualifier
+// SET DISTLVL= -> last qualifier of &CFTENV
+For example if CFTENV=XX.YY.ZZ
+// SET DISTLIB=&CFTENV or XX.YY.ZZ
+// SET DISTPRF=XX.YY
+// SET DISTLVL=ZZ
+```
+
 For example, if CFTENV=XX.YY.ZZ:
+
+```
+// SET DISTLIB=&CFTENV
+// SET DISTPRF= -> &CFTENV without the last qualifier
+// SET DISTLVL= -> last qualifier of &CFTENV
+For example if CFTENV=XX.YY.ZZ
+// SET DISTLIB=&CFTENV or XX.YY.ZZ
+// SET DISTPRF=XX.YY
+// SET DISTLVL=ZZ
+```
 
 If the instance is linked to a distribution environment, set the DISTLIB, DISTPRF, DISTLVL variables to it.

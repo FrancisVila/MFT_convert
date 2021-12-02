@@ -736,7 +736,7 @@
 | Keyword  | Default  | Description  |
 | --- | --- | --- |
 | srenable  | 'no'  | Enable/disable {{&lt; TransferCFT/securerelayname &gt;}}.  |
-| srmapath  | '/home/AXWAY/CFT32X/inst'  |  USS directory for Secure Relay Master Agent (/xsr is automatically added). <blockquote> **Note:**<br/>Read only, you can share the directory with other Transfer CFTs. </blockquote>  |
+| srmapath  | '/home/AXWAY/CFT32X/inst'  |  USS directory for Secure Relay Master Agent (/xsr is automatically added). &lt;/p&gt; <blockquote> **Note:**<br/>Read only, you can share the directory with other Transfer CFTs. </blockquote>  |
 | srmarun  | '/home/AXWAY/CFT32X/runtime/xsr'  | Runtime directory for Secure Relay Master Agent; one per instance, with Read/Write rights for {{&lt; TransferCFT/componentshortname &gt;}}.  |
 | srmacopo  | 'srmacopo'  | Secure Relay Master Agent communication port.  |
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
@@ -930,9 +930,9 @@
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (trkapi.cfg)  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -1199,7 +1199,7 @@
 ============================== table nb count(88) table converted to MD ========================================
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C10RECV  |  UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.  |
 
@@ -1208,7 +1208,7 @@
 ============================== table nb count(89) table converted to MD ========================================
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PAPP  | Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.  |
 
@@ -1217,7 +1217,7 @@
 ============================== table nb count(90) table converted to MD ========================================
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PREM  | Performs a RESTORE (to remove) for the PTF elements from the target zone.  |
 | $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
@@ -1227,7 +1227,7 @@
 ============================== table nb count(91) table converted to MD ========================================
 
 
-| Member Name  | Description  |
+| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- |
 |  A13SMPE  |  Applies maintenance to the Transfer CFT product instance.  |
 |  A13UCOP  |  Applies maintenance to Copilot.  |
@@ -1354,9 +1354,9 @@
 | UCONF parameter  | Default  |  Former Sentinel parameter<br/>TRKCNF  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (TRKCNF)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (TRKCNF)  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)<br /> /data/trkapi.buf  |  TRKTNAME (TRKCNF)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -2039,7 +2039,7 @@
 ============================== table nb count(158) table converted to MD ========================================
 
 
-| CG parameter  | CG values  | CFTUTIL parameter  | Description  |
+| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Single - &gt; Path  | string max 64  | CFTSEND, fname  | Indicate the single file to be sent.  |
 | Multiple -&gt; Path  | string max 64  | CFTSEND, fname  | If you selected Multiple, the value you enter can be:<br /> A directory name – All the files in this directory will be transferred.<br /> A generic file name, including wildcard characters – Only files that match are transferred. For example, mydirectory/toto*.  |
@@ -2064,7 +2064,7 @@
 ============================== table nb count(160) table converted to MD ========================================
 
 
-| CG parameter  | CG values  | CFTUTIL parameter  | Description  |
+| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, preexec  | Specify the script to be executed before the file is transferred.  |
 | State  | Ready: default,<br /> On hold  | CFTSEND, prestate<br /> Ready -&gt;DISP : default<br /> On hold -&gt; HOLD  | Indicate the status of the transfer on the source. The script is run only if the transfer is in the specified state.<br /> Ready – Indicates that the transfer is available and can start immediately.<br /> On hold – Indicates that the transfer is deferred until a remote receive request is accepted, or until a local START command changes this transfer to the ready state.  |
@@ -2075,7 +2075,7 @@
 ============================== table nb count(161) table converted to MD ========================================
 
 
-| CG parameter  | CG values  | CFTUTIL parameter  | Description  |
+| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exec  | Specify the script to be executed after the file is transferred.  |
 | Apply to group of files  | On main request: Default,<br /> For each file in group,<br /> Both  | CFTSEND, execsub<br /> On main request -&gt; LIST<br /> For each file in group -&gt; FILE<br /> Both -&gt; SUBF  | This field is displayed if you enabled a broadcast list in source transfer properties.<br /> Values – On main request | For each target in the list | Both<br /> On main request – Executes the script only on the main request.<br /> For each target in the list – Executes the script only for each target in the list.<br /> Both – Executes the script both for the main request and for each target in the list.  |
@@ -2086,7 +2086,7 @@
 ============================== table nb count(162) table converted to MD ========================================
 
 
-| CG parameter  | CG values  | CFTUTIL parameter  | Description  |
+| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, ackexec  | Specify the script to be executed after an acknowledgement is received for a sent file.  |
 | State  | Require,<br /> Ignore: default  | CFTSEND, ackstate<br /> Require -&gt; REQUIRE<br /> Ignore -&gt; IGNORE  | Indicate if the transfer must wait for an acknowledgement.<br /> Require – The transfer must wait for an acknowledgement before it can be considered complete.<br /> Ignore – The transfer can be considered complete, even if an acknowledgement is not received.  |
@@ -2098,7 +2098,7 @@
 ============================== table nb count(163) table converted to MD ========================================
 
 
-| CG parameter  | CG values  | CFTUTIL parameter  | Description  |
+| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exece  | Specify the script to be executed after an error occurs during a transfer.  |
 
@@ -4180,7 +4180,7 @@
 | BASE64  |  Export base64 data:<br/> • Yes<br/> • No (default)<br/>When exporting data from the PKI database, you can request Base64 data instead of files. This way, additional files are not created.  |
 |  FOUT  |  Name of the file where the command’s standard output is redirected.<br/>This generated file can then be interpreted directly by PKIUTIL.<br/>If this parameter is not defined, the standard output is displayed.  |
 | [ INUM = {number0...99} ]  | Internal number for the intermediate certificates in an imported chain of certificates (in the PKI database). You can use this option to select a specific intermediate certificate.  |
-| PASSWORD  |  The password length must be between 4 and 64 characters.<br/> • When using a password, PKIEXT exports a certificate/key pair in PKCS#12 format instead of DER (certificate) and KPRIV (key).<br/> • When using a password, PKIEXT exports a key in PKCS#8 format instead of KPRIV.</li>  |
+| PASSWORD  |  The password length must be between 4 and 64 characters.<br/> • When using a password, PKIEXT exports a certificate/key pair in PKCS#12 format instead of DER (certificate) and KPRIV (key). &lt;/li&gt;<br/> • When using a password, PKIEXT exports a key in PKCS#8 format instead of KPRIV. &lt;/li&gt;</li>  |
 | ROOTCID  | The certificate authority ID. See an example usage in <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/rootcid">ROOTCID</a>.  |
 | TYPE  |  This parameter defines the certificate or key type to be extracted.<br/>Possible values:<br/> • ALL: extracts ROOT, INTER, and USER in PKICER, PKIKEY, and PKIENTITY<br/> • USER<br/> • ROOT<br/> • INTER<br/> • ENTITY<br/> • KEY<br/> • CERT: extracts ROOT, INTER, and USER in PKICER</li>  |
 
@@ -4659,14 +4659,14 @@
 | UDT (UNIX/Windows only)  | yes  | yes  |
 | SOCKS  | no  | yes  |
 | Heartbeat  | embedded  | yes  |
-| Interoperability  |   |   |
+| Interoperability &lt;/th&gt;  |   |   |
 | Secure Relay  | no  | yes  |
 | TrustedFile (UNIX/Windows/and z/OS)  | no  |  yes  |
 | PassPort AM  | embedded  | no (*)  |
 | PassPort PS  | no  | yes  |
 | Sentinel  | embedded  | yes  |
 | Composer  | no  | no  |
-| Protocols  |   |   |
+| Protocols &lt;/th&gt;  |   |   |
 | PeSIT  | yes  | yes  |
 | ODETTE  | no  | yes  |
 | SFTP *(UNIX, Windows)*  | no  | yes  |
@@ -6835,9 +6835,9 @@
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (trkapi.cfg)  |
-|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -7034,7 +7034,7 @@
 | ParentCycleid  | String  | 250  | The identifier of the event which is the parent of the current event.  | ParentCycleid  | N/A  | N/A  |
 | CycleId  | String  | 250  | CycleId  | From TRKR (Catalog) symbolic variable &amp;XFRCYCID  | this_cycle_id (not stored)  | MLHTKCID  |
 | InternalCycleId  | String  | 155  | CycleID before hash.  | Not stored  | this_extended_cycle_id (not stored)  | Not stored  |
-| State  | String  | 20  | Transfer state.  |  From: STATE,PHASE,<br/>PHASESTEP,STATED,<br/>DIRECT,DIAGI,FLAF<br/>(Catalog):<br/>"CONSUMED", "SENDING",<br/>"SENT" "RECEIVING",<br/>"RECEIVED", "TO_EXECUTE",<br/>"CANCELED", "DELETED",<br/>"SUSPENDED"<br/>"INTERRUPTED", "CREATED",<br/>"TO_ROUTE","ACKED", "ENDED_TO_ACK",<br/>"AVAILABLE", "ROUTED","NACKED",<br/>"ENDED_TO-NACK",<br/>"PRE_PROC",<br/>"PRE_PROC_ABORT",<br/>"POST_PROC",<br/>"POST_PROC_ABORT", "POST_PROC-ACK", "POST_PROC_ACK_ABORT", "ACK_EXPECTED", "COMPLETED", "DELETED"  |  From state, direction, mode, user_processed, route_state: "CONSUMED", "SENDING", "SENT" "RECEIVING", "RECEIVED", "TO_EXECUTE", "CANCELED", "DELETED", "SUSPENDED" "INTERRUPTED", "CREATED", "TO_ROUTE", "TO_SIGN", "ACKED", "ENDED_TO_ACK", "AVAILABLE", "ROUTED", "ROUTE_FAILED"  | MLHSTATU  |
+| State  | String  | 20  | Transfer state.  |  From: STATE,PHASE,<br/>PHASESTEP,STATED,<br/>DIRECT,DIAGI,FLAF<br/>(Catalog):<br/>"CONSUMED", "SENDING",<br/>"SENT" "RECEIVING",<br/>"RECEIVED", "TO_EXECUTE",<br/>"CANCELED", "DELETED",<br/>"SUSPENDED"<br/>"INTERRUPTED", "CREATED",<br/>"TO_ROUTE","ACKED", "ENDED_TO_ACK",<br/>"AVAILABLE", "ROUTED","NACKED",<br/>"ENDED_TO-NACK",<br/>"PRE_PROC",<br/>"PRE_PROC_ABORT",<br/>"POST_PROC",<br/>"POST_PROC_ABORT", "POST_PROC-ACK", "POST_PROC_ACK_ABORT", "ACK_EXPECTED", "COMPLETED", "DELETED"  |  From state, direction, mode, user_processed, route_state:&lt;/p&gt; "CONSUMED", "SENDING", "SENT" "RECEIVING", "RECEIVED", "TO_EXECUTE", "CANCELED", "DELETED", "SUSPENDED" "INTERRUPTED", "CREATED", "TO_ROUTE", "TO_SIGN", "ACKED", "ENDED_TO_ACK", "AVAILABLE", "ROUTED", "ROUTE_FAILED"  | MLHSTATU  |
 | ReturnCode  | String  | 20  | Last transfer diagnostic.  | From DIAGI and DIAGP (Catalog)  | last_end_diag  | MLHPDTSE + MLHPDCSE  |
 | UserState  | String  | 20  | Transfer user state.  | From APPSTATE (Catalog)  | user_state  | N/A  |
 
@@ -7084,7 +7084,7 @@
 |  Try with a telnet (&lt;host&gt; &lt;sap&gt;) or ftp (&lt;host&gt; &lt;sap&gt;)  |  <li> The remote port is reachable via telnet when you have the following message: "Escape character is '^]'." (Ctrl+$ to escape) <br/> • The remote port is reachable via ftp when you have the following message: Connected to &lt;host&gt; (Ctrl + C to escape) </li>  |
 |  Host and port are reachable but I still have the diagnostic code 302  |   |
 |  Check the diagp error  |  If diagp = R 0 2f2, the remote partner closed the connection due to the following reasons:<br/> • Incompatibility between TCP and pTCP (the remote is configured in pTCP network protocol whereas you are in TCP) <br/> • The cft.server.max_session value is not equal to 0 but is less than the MAXCNX one (in CFTNET object) <br/> • The remote MAXCNX is reached </li>  |
-|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li>Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). <br/> • Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect<br /> HOST value (CFTNET object).yes (the default value)</li> </ol> <li> Try a Transfer CFT packet analyzer such as <a href="https://www.wireshark.org/" class="Hyperlink_1">Wireshark</a> </li>  |
+|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li>Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a class="Hyperlink_1" href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</li> </ol>  |
 |  Still have the diagnostic code 302 and don't understand the diagp  |   |
 | Check the traces  |  Check the contents of the following file:<br/>UNIX: Transfer_CFT/runtime/run folder &gt; cft.out file<br/> • Windows: Transfer_CFT\runtime\run folder &gt; cftnet.trc file </li>  |
 
@@ -8317,7 +8317,7 @@
 ============================== table nb count(561) table converted to MD ========================================
 
 
-| Error Code  | FPDU  | Meaning  |
+| Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -8508,7 +8508,7 @@
 ============================== table nb count(568) table converted to MD ========================================
 
 
-| Action  | Command  |
+| Action &lt;/th&gt;  | Command &lt;/th&gt;  |
 | --- | --- |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  <br/> • TRCFILE<br/> • SETTRC</li>  |
 |  Start information collection:<br/> • Transfer CFT start<br/> • During Transfer CFT operations </li>  |  STARTTRC  |
@@ -8520,7 +8520,7 @@
 ============================== table nb count(569) table converted to MD ========================================
 
 
-|  Trace file definition  | Command  | Parameter  | Description  |
+|  Trace file definition  | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8532,7 +8532,7 @@
 ============================== table nb count(570) table converted to MD ========================================
 
 
-| Starting information collection  | Command used to define the file  | Parameter  | Command to enter  |
+| Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8544,7 +8544,7 @@
 ============================== table nb count(571) table converted to MD ========================================
 
 
-| Action  | Define the file with  | Enter the command  |
+| Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |   |  SETTR  |  STOPTRC  |
@@ -8556,7 +8556,7 @@
 ============================== table nb count(572) table converted to MD ========================================
 
 
-| Action  | Command  |
+| Action &lt;/th&gt;  | Command &lt;/th&gt;  |
 | --- | --- |
 |  Update the general parameters before Transfer CFT start-up  |  CFTPARM  |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  CFTTRACE<br />  |
@@ -8567,7 +8567,7 @@
 ============================== table nb count(573) table converted to MD ========================================
 
 
-|  Trace file definition  | Command  | Parameter  | Description  |
+|  Trace file definition  | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8577,7 +8577,7 @@
 ============================== table nb count(574) table converted to MD ========================================
 
 
-| Starting information collection  | Command used to define the file  | Parameter  | Command to enter  |
+| Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8589,7 +8589,7 @@
 ============================== table nb count(575) table converted to MD ========================================
 
 
-| Action  | Define the file with  | Enter the command  |
+| Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |  Stop collection, close the files and shutdown the process  |  CFTTRACE  |  STOPTRC<br />  |

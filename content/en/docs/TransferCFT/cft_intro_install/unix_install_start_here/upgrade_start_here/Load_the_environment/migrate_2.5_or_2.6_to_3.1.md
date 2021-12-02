@@ -16,7 +16,9 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 1.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:
 
-<!-- -->
+```
+`CFTUTIL CFTEXT type=all, fout=cft-extract.conf`
+```
 
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
@@ -29,6 +31,10 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 2.  Import your static configuration objects using the cftinit command.  
     Enter:
+
+```
+cftinit cft-extract.conf
+```
 
 ### Migrating UCONF parameters
 
@@ -52,13 +58,21 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 1.  For each parameter you select, add a line to the new script file in the format:
 
-<!-- -->
+```
+UCONFSET id=<parameter\_id>, value=<value>
+```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the script file and the CFTUTIL command. Replace the &lt;script\_filename> with the new script file path:
+
+```
+
+`CFTUTIL <prefix_character><script_filename>`
+
+```
 
 Example
 
@@ -110,7 +124,9 @@ Example
 
 1.  Export the catalog using the command CFTMI240.
 
-<!-- -->
+```
+CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.5\_filename>, ofname=catalog\_output.xml
+```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -123,6 +139,10 @@ Example
 
 Example
 
+```
+CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_installation>
+```
+
 ### Migrating the communication media files
 
 1.  Load the former Transfer CFT (2.5 or 2.6) environment.
@@ -131,7 +151,9 @@ Example
 
 1.  Export the communication media file using command CFTMI240:
 
-<!-- -->
+```
+CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.5\_filename>, ofname=com\_output.xml
+```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -146,3 +168,7 @@ Example
 -   Windows: `$CFTCOM`
 
 Example
+
+```
+CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_installation>
+```

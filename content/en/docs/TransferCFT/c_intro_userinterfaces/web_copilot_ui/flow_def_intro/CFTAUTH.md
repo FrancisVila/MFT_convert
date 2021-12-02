@@ -26,6 +26,17 @@ In this example, the local Transfer CFT can only send files with identifiers of 
 identifiers beginning with the 3 letters CHQ to the partner
 IBM1.
 
+```
+CFTPART    ID = IBM1,
+SAUTH = SIBM1
+CFTPART     ID = BULGC8,
+RAUTH = RBULGC8
+CFTAUTH     ID = SIBM1,
+IDF = (APLI1,APLI2,LIST,CHQ\*)
+CFTAUTH      ID = RBULGC8,
+IDF = fil21
+```
+
 Transfer CFT can only receive BULGC8 files with identifiers
 of the idfdef, idf1, idf2, idf3 type from the partner.
 

@@ -11,3 +11,7 @@ This option sequences Transfer CFT commands through to the end of the session.
 **Example**
 
 You can execute all CFTUTIL operations by entering the command as follows:
+
+```
+SEND PART=LOOP,IDF=TEST,FNAME=CFTPROD/FILE1
+```

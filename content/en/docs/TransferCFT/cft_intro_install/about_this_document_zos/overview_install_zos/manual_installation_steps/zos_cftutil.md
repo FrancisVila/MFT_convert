@@ -16,7 +16,23 @@
 
 ### Regular data set defined first
 
+```
+//CFTUTIL EXEC PCFTUTIL,PARM=''
+//CFTIN DD DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
+// DD \*
+ABOUT
+/\*
+```
+
 ### In-stream data set defined first
+
+```
+//CFTUTIL EXEC PCFTUTIL,PARM=''
+//CFTIN DD \*
+ABOUT
+/\*
+//      DD DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
+```
 
 For data set concatenation on Transfer CFT 3.2.4 and higher:
 
@@ -24,6 +40,12 @@ For data set concatenation on Transfer CFT 3.2.4 and higher:
 -   You cannot concatenate PDSs that have different record lengths when RECFM=FB.
 
 ## CFTIN: Working with UNIX files
+
+```
+//CFTUTIL EXEC PCFTUTIL,PARM=''
+//CFTIN DD PATHOPTS=ORDONLY,
+// PATH='/home/user/cft\_cmd.txt'
+```
 
 -   File concatenation does not work.
 -   cft\_cmd.txt is a EBCDIC text file.
@@ -35,6 +57,15 @@ When no command is specified in the JCL PARM parameter, and if the DD CFTIN is n
 -   The CFTUTIL return code is: 8
 -   The following WTO is performed:
 
+```
++CFTUZ1E \*\* CFTIN/VFMIN DD STATEMENT MISSING \*\*
+```
+
 ## CFTPARM dummy
 
 When using the PCFTUTIL procedure and there is no data used from CFTPARM, we recommend specifying DUMMY as the DD CFTPARM to decrease EXCP and CPU consumption, for example in END-TRANSFER procedures.
+
+```
+//CFTUTIL EXEC PCFTUTIL,PARM=''
+//CFTPARM DD DUMMY
+```

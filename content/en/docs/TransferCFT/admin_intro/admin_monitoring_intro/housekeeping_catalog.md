@@ -60,13 +60,41 @@ The example is based on the following settings:
 
 When you reach the TLVWARN (level=80%), the following messages are sent to the log:
 
+```
+12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: **level=80%** ID=CAT0
+12/10/17 17:53:30  CFTC13I Catalog resize (100 --> 120) done
+12/10/17 17:54:16  CFTT17I \_ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
+12/10/17 17:54:16  CFTR12I SEND Treated for USER Nougat  <IDTU=A0000029 PART=PARIS IDF=TXT>
+12/10/17 17:54:16  CFTS20I Communication file row number deleted: 00000252   
+```
+
 The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the alerts stop at the next update.
+
+```
+   12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
+```
 
 The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
 
+```
+12/10/17 18:06:57  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
+12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 144) too much
+12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 140) done
+12/10/17 18:06:57  CFTT17I \_ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092>
+12/10/17 18:06:57  CFTR12I SEND Treated for USER Nougat <IDTU=A000002P PART=PARIS IDF=TXT>
+12/10/17 18:06:57  CFTS20I Communication file row number deleted: 00000269                               
+12/10/17 18:06:57  CFTC30W Catalog Alert cleared : level=69% ID=CAT0
+```
+
 The next time the catalog limit is reached, it can no longer expand. Here, the log displays 210, which is the theoretical number computed by the auto-expand feature, but in reality it is an error (CFTC13E):
+
+```
+12/10/19 15:53:21  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
+12/10/19 15:53:21  **CFTC13E** Catalog resize (140 --> 210) reached max before expansion
+12/10/19 15:53:21  CFTC08I Purge Treated : no record found to delete.
+```
 
 #### Auto-expand option on z/OS
 
@@ -79,6 +107,22 @@ If you are using the `cft.cftcat.auto_expand` parameter in a z/OS environment, r
 The local file transfer internal datafile rules include standard purge rules that you can modify using the catalog command CFTCAT.
 
 There are 6 parameters that manage the purge, depending on the transfer status and direction. For each of the following you can set the number, in days, for the purge to occur. In our example, the purge is set for 10 days.
+
+```
+CFTCAT ID = 'CAT0',
+
+FNAME = '$CFTCATA',
+WSCAN = '1',
+TIMEP = '23595999',
+UPDAT = '1',
+SH = '10',
+ST = '10',
+SX = '10',
+RH = '10',
+RT = '10',
+RX = '10',
+
+```
 
 The first letter indicates the transfer direction (S for SEND or R for receive ).
 
@@ -106,13 +150,25 @@ You can use the unified configuration to perform the same sort of purges as with
 
 For example, set the following where the sx represents 10 days (where a day equals a 24 hour interval) for an executed SEND transfer:
 
+```
+UCONFSET id=cft.purge.sx, value=10D
+```
+
 > **Note:**
 >
 > The amount of time is entered in days (x or xD), in hours (xH) or in minutes (xM). If set to -1, the CFTCAT value is used.
 
 To schedule a periodic purge every 30 minutes:
 
+```
+CFTUTIL uconfset id=cft.purge.periodicity,value=30M
+```
+
 To apply the dynamic configuration parameters change:
+
+```
+CFTUTIL reconfig type=UCONF
+```
 
 For information on the RECONFIG command, please see <a href="../../admin_commands_intro/reconfig" class="MCXref xref">Manage configuration updates - RECONFIG</a>.
 
@@ -120,9 +176,17 @@ For information on the RECONFIG command, please see <a href="../../admin_command
 
 When defining CFTSEND or CFTRECV templates you can set a parameter to purge the records after the transfer completes.
 
+```
+CFTSEND DELETE=YES
+```
+
 #### Purge records with the keep status
 
 Delete all file transfer records in keep status (K) due to a file creation error.
+
+```
+CFTRECV RKERROR=YES
+```
 
 #### Manually delete catalog records
 
@@ -139,11 +203,19 @@ of 20 transfers every 5 seconds.
 
 For example, delete all executed transfers from the catalog.
 
+```
+DELETE STATE=X
+```
+
 #### Manage transfer events sent to Sentinel
 
 A file transfer event is sent as an XFB.Transfer event to the Sentinel server each time the file transfer status is updated.
 
 You can set filters to reduce the number of messages (more than a 50% reduction) sent to Sentinel, for example:
+
+```
+UCONFSET id=sentinel.xfb.transfer,value=SUMMARY
+```
 
 ## Archive Transfer CFT standard output files
 
@@ -151,9 +223,17 @@ All output files are stored in the &lt;runtime/run> directory. Among these are t
 
 However, Transfer CFT processes use a standard output file &lt;runtime/run>/cft.out to log internal system messages. You can define the number of archive files you want to rotate using the command:
 
+```
+UCONFSET id=cft.output.backup\_count,value=n
+```
+
 ## Delete completed transfer files
 
 There are multiple ways to clear out completed transfer files. Let's begin with a simple example of deleting files that have successfully been sent.
+
+```
+CFTSEND ID=CLEANUP,FNAME=<FILENAME>,FACTION=DELETE
+```
 
 If you would additionally like to delete the catalog records, as well as the file after it's transfer (defined according to the transfer state).
 
@@ -161,6 +241,10 @@ If you would additionally like to delete the catalog records, as well as the fil
 -   You can use the DELETE=YES option in conjunction with FDELETE to remove both the file and the record.
 
 For example, to remove both the file and the record when sending a file.
+
+```
+CFTSEND ID=CLEANUP,FNAME=<FILENAME>,DELETE=YES,FDELETE=CDKHTX
+```
 
 > **Note:**
 >

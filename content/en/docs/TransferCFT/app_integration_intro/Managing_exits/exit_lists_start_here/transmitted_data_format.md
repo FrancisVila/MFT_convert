@@ -12,6 +12,12 @@ of the transmitted data.
 
 Example
 
+```
+PARM LRECL = nnnn, FORMAT=X
+SEND STATE = CDHKTX
+RECV STATE = CDHKTX
+```
+
 Where:
 
 -   PARM: General
@@ -97,7 +103,18 @@ Each field is separated by a tab.
 
 Format J: JSON
 
+```
+{`"TRANSFERS"`:\[{`"DIRECT"`:`"S"`,`"STATE"`:`"X"`,`"PHASE"`:`"X"`,`"PHASESTEP"`:`"X"`,`"SPART"`:`"MARTIN"`,`"RPART"`:`"PARIS"`,`"IDF"`:`"ID_EXITL"`,`"IDT"`:`"L1111482"`,`"NBR"`:`"2"`,`"FNAME"`:`"","`PRI`":"`128`","`DATEK`":"`20191211`","`TIMEK`":"`11481147`","`PARM`":"","`SUSER`":"","`RUSER`":"","`COMMENT`":"","`DIAGI`":"`0`","`DIAGP`":"`CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+,{`"DIRECT"`:`"R"`,`"STATE"`:`"X"`,`"PHASE"`:`"X"`,`"PHASESTEP"`:`"X"`,`"SPART"`:`"PARIS"`,`"RPART"`:`"MARTIN"`,`"IDF"`:`"BIN"`,`"IDT"`:`"L1111475"`,`"NBR"`:`"2"`,`"FNAME"`:`"pub\\L1111475_A000002Q.RCV"`,`"PRI"`:`"128"`,`"DATEK"`:`"20191211"`,`"TIMEK"`:`"11475343"`,`"PARM"`:`"My \"`param\`" with quote"`,`"SUSER"`:`"","`RUSER`":"","`COMMENT`":"","`DIAGI`":"`0`","`DIAGP`":"`CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+\], `"TOTAL"`:`"2"`}            
+```
+
 Format X: XML
+
+```
+`<?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  `<TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+`<TOTAL>`2`</TOTAL></CAT>`      
+```
 
 ## Determine the LRECL 
 

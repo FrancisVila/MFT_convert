@@ -42,6 +42,9 @@ on the operating system.
 
 The following example provides a minimum of arguments:
 
+```
+CFTEXIT id=my\_exitbot, type=bot, language=C, prog=$(CFTDIRRUNTIME)/bin/CFTEXIB
+```
 <span id="Defining_the_CFTPARM_object"></span>
 
 ### Defining the CFTPARM object
@@ -73,3 +76,7 @@ must specify an identifier that points to a CFTEXIT object.</p>         </td>
 **Example**
 
 The following example provides a minimum number of arguments for CFTPARM:
+
+```
+cftparm id=IDPARM, exitbot = 'my\_exitbot', ...
+```

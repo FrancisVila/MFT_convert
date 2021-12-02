@@ -68,12 +68,20 @@ CFTUTIL can be used in three different modes:
 -   Command mode, for
     example:
 
-<!-- -->
+```
+> CFTUTIL SEND PART=PART1, IDF=IDF1,
+```
 
 -   Batch mode, for
     example:
 
-<!-- -->
+```
+> CFTUTIL #file.smp
+```
 
 -   Interactive line
     mode, for example:
+
+```
+> CFTUTIL
+```

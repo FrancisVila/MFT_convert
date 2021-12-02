@@ -12,9 +12,9 @@ The following table lists the Sentinel parameters in the unified configuration a
 | UCONF parameter  | Default  |  Former Sentinel parameter<br/>TRKCNF  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (TRKCNF)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (TRKCNF)  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (TRKCNF) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF  |  XFB.Log (TRKCNF) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)<br /> /data/trkapi.buf  |  TRKTNAME (TRKCNF)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -65,3 +65,12 @@ Each Transfer CFT environment number n (from 1 to 5) has its own corresponding H
 
 
 Example
+
+```
+uconfset id=sentinel.heartbeat.enable,value=yes
+uconfset id=sentinel.heartbeat.periodicity,value=300
+uconfset id=sentinel.heartbeat.script,value=CFTPROD/HEARTBEAT
+uconfset id=sentinel.trkipaddr,value=serveur.sentinel.address
+uconfset id=sentinel.trkipport,value=11277
+uconfset id=sentinel.trklocaladdr,value=as400.local.address
+```

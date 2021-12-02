@@ -23,6 +23,10 @@ To stop a server, use the {{< TransferCFT/componentlongname  >}}-specific SRVEND
 
 Both the API01 and API02 samples include the SRVEND service. For example:
 
+```
+API02 $xxAP1 SRVEND
+```
+
 ## Messages exchanges
 
 The message structures are described in DDL and C language:

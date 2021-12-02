@@ -6,6 +6,10 @@
 
 The syntax is:
 
+```
+CHECK CONTENT=<u>BRIEF</u>|FULL, FOUT=FileName
+```
+
 The `CHECK CONTENT=BRIEF` (default) command verifies that:
 
 -   All the referenced objects exist

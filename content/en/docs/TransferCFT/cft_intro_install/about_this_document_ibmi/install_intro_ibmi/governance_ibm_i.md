@@ -14,6 +14,9 @@
 
       
     Use the format:  
+    ```
+    CFTUTIL uconfset id=cft.instance\_id, value=<cft\_id>
+    ```
 
 ## Procedure
 
@@ -34,7 +37,15 @@ Use the {{< TransferCFT/centralgovernancename  >}} installation values for the f
 
 Use the format:
 
+```
+CFTUTIL uconfset id=cg.host, value=<host\_value>
+```
+
 #### Enable {{< TransferCFT/centralgovernancename  >}}
+
+```
+CFTUTIL uconfset id=cg.enable, value=yes
+```
 
 #### Register
 

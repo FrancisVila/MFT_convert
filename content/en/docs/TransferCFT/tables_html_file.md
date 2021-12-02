@@ -1142,13 +1142,15 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <tr >
 <td >2</td>
 <td ><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
-<p>Non-SMP/E installation mode.</p></td>
+<p>Non-SMP/E installation mode.
+&lt;/p&gt;</p></td>
 <td >A12AOPTS</td>
 </tr>
 <tr >
 <td >3</td>
 <td ><p>Link-edit all Transfer CFT modules.</p>
-<p>Non-SMP/E installation mode.</p></td>
+<p>Non-SMP/E installation mode.
+&lt;/p&gt;</p></td>
 <td >B20LINK</td>
 </tr>
 <tr >
@@ -1383,7 +1385,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 </tr>
 <tr >
 <td >8</td>
-<td ><p><a href="t_customize_install_zos.htm#JOB%C2%A0H80EXEC">CFT$SET</a></p>
+<td ><p><a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a></p>
 <p>CFT$SETC </p></td>
 <td ><p>Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.</p>
 <ul>
@@ -1417,8 +1419,8 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 </tr>
 <tr >
 <td >13</td>
-<td ><p><a href="t_configure_optional_features_zos.htm#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
-<p><a href="t_configure_optional_features_zos.htm#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
+<td ><p><a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
+<p><a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
 <p><a href="t_configure_optional_features_zos">D47SYST</a></p></td>
 <td ><p>Select one of the options listed for Step 12:</p>
 <ul>
@@ -4367,14 +4369,26 @@ to the Transfer-related successive phases and actions).</p></td>
 <tr >
 <td colspan="3" ><p>Example 1</p>
 <div>
-
+```
+DELETE        PART = SIE??
+```
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 and receive directions, DIRECT = BOTH by default, for the partners whose
 identifier begins with "SIE" and contains 5 characters in all.</p>
 <p>Example 2</p>
 <div>
-
+```
+DELETE
+PART = HQ,
+ 
+ 
+DIRECT = SEND,
+ 
+ 
+IDF = ACCNT
+ 
+```
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 direction (DIRECT = SEND) of the model file ACCNT to the partner HQ.</p></td>
@@ -4713,11 +4727,11 @@ for some time?</p></td>
 <table  data-cellspacing="0" >
 <thead>
 <tr >
-<th >PeSIT reason code</th>
-<th >Description</th>
+<th >PeSIT reason code&lt;/th&gt;</th>
+<th >Description&lt;/th&gt;</th>
 <th >{{&lt; TransferCFT/componentshortname &gt;}} internal
 diagnostic</th>
-<th >Service item concerned</th>
+<th >Service item concerned&lt;/th&gt;</th>
 </tr>
 </thead>
 <tbody>

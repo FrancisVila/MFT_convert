@@ -14,11 +14,26 @@ Upload the Transfer CFT package corresponding to the target platform to your mac
 
 **Example**
 
+```
+Transfer\_CFT\_3.8\_Install\_hp\_nonstop\_oss-ia64-32\_BN8580000.zip
+```
+
 Decompress the archive using the `unzip `command.
 
 **Example**
 
 Depending on your installation, the screen message may differ slightly from the following example.
+
+```
+/home/cftuser: unzip Transfer\_CFT\_3.8\_Install\_hp\_nonstop\_oss-ia64-32\_BN8
+580000.zip
+Archive:  Transfer\_CFT\_3.8\_Install\_hp\_nonstop\_oss-ia64-33\_BN8580000.zip
+   creating: Transfer\_CFT\_OtherUnixes\_V3.8/
+  inflating: Transfer\_CFT\_OtherUnixes\_V3.8/TransferCFT\_3.8\_hp\_nonstop\_oss-ia
+64-32.run
+inflating: EULA.txt
+inflating: EULA.html
+```
 
 In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
 
@@ -31,6 +46,10 @@ In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixe
 Add execution rights to the `Transfer_CFT_<version>_<os>-<arch>-<xx>.run` package.
 
 Enter:
+
+```
+chmod u+x Transfer\_CFT\_<version>\_<os>-<arch>-<xx>.run
+```
 
 ## Start the installation
 
@@ -46,13 +65,29 @@ You can use the following additional parameters:
 
 Enter:
 
+```
+./Transfer\_CFT\_<version>\_<os> <xx>.run install <installation\_directory> \[<guardian\_installation\_directory\_prefix>\] \[--post\_install\_script <fullpathtopinstscript>\] \[--cryptokey\_password <password>\]
+```
+
 **Examples**
 
 The following command installs Transfer CFT on the OSS directory /`home/cftuser/CFT38`. Additionally, the Guardian components are installed using `/G/data14/cft38b` (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
 
+```
+/home/cftuser/Transfer\_CFT\_OtherUnixes\_V3.8: ./ TransferCFT\_3.8\_hp\_nonstop\_oss-ia 64-32.run install /home/cftuser/CFT38 /G/data14/cft38b
+```
+
 The following command installs Transfer CFT on the OSS directory` `. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
 
+```
+/home/cftuser/Transfer\_CFT\_OtherUnixes\_V3.8: ./ TransferCFT\_3.8\_hp\_nonstop\_oss-ia 64-33.run install /home/cftuser/CFT38 --post\_install\_script ./cft\_postinst.sh
+```
+
 The following command does the same as above, but additionally sets a password that is used to generate an encryption key so that you do not need to enter it interactively.
+
+```
+/home/cftuser/Transfer\_CFT\_OtherUnixes\_V3.8: ./ TransferCFT\_3.8\_hp\_nonstop\_oss-x86-32.run install /home/cftuser/CFT38 --post\_install\_script ./cft\_postinst.sh --cryptokey\_password mypAsswOrd76\*
+```
 
 ### Installation procedure results
 
@@ -98,5 +133,7 @@ If you ran the installation procedure without providing the parameter `<guardian
 
 1.  Load the Transfer CFT profile:
 2.  Install the Guardian files:
-3.  
+3.  ```
+    cftginst.sh --help
+    ```
 4.  Since installing the Guardian files modifies the Transfer CFT profile, you must reload the profile:

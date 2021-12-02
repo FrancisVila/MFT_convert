@@ -7,6 +7,15 @@ certificate database.
 
 Syntax
 
+```
+PKIFILE
+
+\[MODE =  {REPLACE | CREATE | DELETE},\]
+
+FNAME =  string,
+
+```
+
 ## Modifying the local certificate database
 
 

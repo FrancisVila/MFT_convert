@@ -128,6 +128,16 @@ The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The 
 
 Example
 
+```
+CFTNET ID = 'NET0',
+TYPE = 'TCP',
+....
+PROTOCOL = 'SOCKS5',
+USER = 'john',
+PASSWORD = 'foo'
+CFTPROT ID = 'PESITANY\_SOCKS5',
+...
+```
 <span id="Configuration"></span>
 
 ### Configuring a connection
@@ -141,6 +151,31 @@ To configure an outgoing connection through a proxy, user must define the follow
 -   The default port for proxy servers is 1080.
 
 Example
+
+```
+CFTNET ID = 'NET0',
+TYPE = 'TCP',
+CALL = 'INOUT',
+MAXCNX = '128',
+CLASS = '1',
+HOST = 'localhost'
+CFTNET ID = 'NSOCKS5',
+TYPE = 'TCP',
+CALL = 'INOUT',
+MAXCNX = '32',
+CLASS = '2',
+HOST = proxy\_address,
+PORT = proxy\_port,
+INET = 'NET0',
+PROTOCOL = 'SOCKS5',
+USER = 'john',
+PASSWORD = 'foo'
+CFTPROT ID = 'PESITANY\_SOCKS5',
+NET = 'NSOCKS5'
+CFTPART ID = 'PARIS\_NSOCKS5',
+CFTTCP ID = 'PARIS\_ NSOCKS5',
+CLASS = '2',
+```
 
 ### SOCKS references
 

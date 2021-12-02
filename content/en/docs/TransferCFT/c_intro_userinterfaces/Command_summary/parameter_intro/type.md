@@ -140,6 +140,23 @@ TYPE ={ALL | DEST | PART | TCP}
 
 #### Type table
 
+```
+Value 
+Meaning 
+ALL 
+Used to query the general and network characteristics of
+partners
+Parameters of the PARTNER file
+DEST 
+Used to query the parameters configured in the CFTDEST
+command: concern the broadcasting lists 
+PART 
+Used to query the parameters configured in the CFTPART
+command: description of the general data relative to partners 
+TCP
+Used to query the parameters configured in the CFTTCP command:
+TCP/IP network parameters associated with each partner supporting TCP/IP 
+```
 <span id="type_CONFIG"></span>
 
 #### CONFIG
@@ -149,6 +166,22 @@ TYPE = {CAT | COM | INPUT | OUTPUT
 
 Defines the medium concerned.
 
+```
+Value 
+Medium concerned 
+CAT 
+Catalog file 
+COM 
+Communication medium 
+INPUT 
+Command input file 
+OUTPUT 
+Report output file 
+PARM 
+Parameter file 
+PART 
+Partner file 
+```
 <span id="type_SWITCH"></span>
 
 #### SWITCH
@@ -182,6 +215,60 @@ Defines the parameters to extract.
 
 #### Type table
 
+```
+Value 
+Meaning 
+Command
+ALL 
+All the parameter types of the CFTPARM and CFTPART files 
+ 
+ACCNT 
+Description of the statistical files 
+CFTACCNT 
+AUTH 
+List of authorized files 
+CFTAUTH 
+CAT 
+Catalog definition 
+CFTCAT 
+COM 
+Description of {{< TransferCFT/componentshortname >}} communication methods
+ 
+CFTCOM 
+IDF 
+File "network" identifier 
+CFTIDF 
+LOG 
+Log file description 
+CFTLOG 
+NET 
+Network description 
+CFTNET 
+PARM 
+General parameters 
+CFTPARM 
+PART 
+Partner definition  
+CFTPART and {{< TransferCFT/componentshortname >}} network 
+PROT 
+Protocol definition 
+CFTPROT 
+RECV 
+Description of the files to be received 
+CFTRECV 
+SEND 
+Description of the files to be sent 
+CFTSEND 
+XLATE 
+Translation table definition 
+CFTXLATE 
+TCP 
+TCP/IP partner definition 
+CFTTCP 
+UCONF
+Unified configuration
+CFTEXT
+```
 <span id="type_LISTPARM"></span>
 
 #### LISTPARM
@@ -196,6 +283,63 @@ list from the {{< TransferCFT/componentshortname  >}} parameter file.
 TYPE can take the predefined values indicated in the Type table below.
 
 #### Type table
+
+```
+Value 
+Definition 
+ACCNT 
+Used to query statistical file parameters
+These parameters are submitted when CFTACCNT commands are entered 
+ALL 
+Used to query all the parameters indicated in the PARAMETER
+file 
+AUTH 
+Used to query file authorization lists
+These lists are customized by the CFTAUTH commands 
+CAT 
+Used to query catalog parameters
+These parameters are submitted when CFTCAT commands are entered 
+COM 
+Used to query communication media parameters
+These parameters are submitted when CFTCOM commands are entered 
+IDF 
+Used to query file "network" identifiers
+Identifiers are customized by the CFTIDF commands 
+LOG 
+Used to query log file parameters
+These parameters are submitted when CFTLOG commands are entered 
+NET 
+Used to query network characteristic parameters
+These parameters are submitted when CFTNET commands are entered and differ
+according to the type of network configured 
+PARM 
+Used to query general parameters
+These parameters are submitted when CFTPARM commands are entered 
+PROT 
+Used to query protocol parameters
+These parameters are submitted when CFTPROT commands are entered and differ
+according to the protocol configured 
+RECV 
+Used to query the parameters of the files to be received
+These parameters are submitted when CFTRECV commands are entered 
+SEND 
+Used to query the parameters of the files to be sent
+These parameters are submitted when CFTSEND commands are entered 
+XLATE 
+Used to query translation tables
+Translation tables are customized by the CFTXLATE object
+CFTFILE
+Used to create, empty, or delete {{< TransferCFT/componentshortname >}} files
+LISTCAT
+Used to query the information associated with the selected
+transfers, recorded in the {{< TransferCFT/componentshortname >}} catalog
+DISPLAY
+Used to query the information as with the LISTCAT command.
+It uses an external XML file that lists and describes customized models.
+These models are used to format the output
+ABOUT
+Used to display the {{< TransferCFT/componentshortname >}} computer characteristics
+```
 
 #### RECONFIG
 

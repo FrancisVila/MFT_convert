@@ -106,6 +106,10 @@ If the METHOD parameter is set to MOVE:
 1.  The file is moved (by renaming) to the work\_dir in the same relative directory position as its original position in the scan\_dir. By default, an optional timestamp is added to the name of the moved file.
 2.  A command is submitted internally that uses the following pattern:
 
+```
+CFTUTIL SEND=<part>, IDF=<idf>, FNAME=<pathname>
+```
+
 Where:
 
 -   &lt;part> is the partner name as indicated in the configuration.
@@ -118,6 +122,10 @@ The following example demonstrates how the PART name is used for the first direc
 
 -   Original file:     `/dir_c/scan/newyork/idf1/my_file.txt`
 -   Moved file: ` /dir_c/work/newyork/idf1/my_file.20131025.txt`
+
+```
+CFTUTIL SEND part=newyork, idf=idf1, fname=/dir\_c/work/newyork/idf1/my\_file.20131025.txt
+```
 
 #### FILE option
 
@@ -139,6 +147,10 @@ This example uses the partner name in the first directory sub-level, and the IDF
 
 -   Original file:   ` /dir_c/scan/newyork/idf1/my_file.txt`
 -   Metadata file: `/dir_c/work/newyork/idf1/my_file.txt.met`
+
+```
+CFTUTIL SEND part=newyork, idf=idf1, fname=/dir\_c/scan/newyork/idf1/my\_file.txt
+```
 
 Although both methods provide the same level of functionality, the MOVE method (renaming file) is recommended whenever file renaming prior to its submission is acceptable.
 

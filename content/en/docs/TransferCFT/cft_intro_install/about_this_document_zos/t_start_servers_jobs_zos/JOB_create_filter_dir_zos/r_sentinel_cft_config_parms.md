@@ -17,6 +17,36 @@
 
 This table lists the main parameters that you must define in order to communicate with an Event via TCP, and uses TRKTYPE=TCP as the default value.
 
+```
+
+ 
+
+Event Router
+
+TRKUTIL
+
+Transfer CFT
+
+Configuration file
+
+USEPARIN
+TRKCONF
+UCONF
+
+TCP definition
+
+(AGENT)
+queue=”NOQ”
+TRKTYPE=TCP
+UCONFSET ID=sentinel.TRKTYPE,VALUE=TCP
+(TCPSOURCE) sap=nnnn
+TRKIPPORT=nnnn
+UCONFSET ID=sentinel.TRKIPPORT,VALUE=nnnn
+(TCPSOURCE)
+local\_address=
+TRKIPADDR=
+UCONFSET ID=sentinel.TRKIPADDR,VALUE=
+```
 <span id="UCONF parameters for Sentinel interoperability"></span>
 
 ## UCONF parameters for Sentinel interoperability
@@ -29,9 +59,9 @@ The table below lists the UCONF values that are used in Transfer CFT to define S
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (trkapi.cfg)  |
-|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |

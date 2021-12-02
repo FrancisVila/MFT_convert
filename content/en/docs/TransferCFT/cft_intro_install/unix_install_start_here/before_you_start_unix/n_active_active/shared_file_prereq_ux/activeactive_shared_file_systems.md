@@ -82,6 +82,27 @@ NFS implements a weak data consistency called "Close To Open consistency" or `ct
 
 The following table summarizes the recommended NFSv4 mount options. Note that depending on the OS platform, only one of the three locking options should be available.
 
+```
+
+Correct option
+
+Incorrect option
+
+vers=4 (or nfsvers=4)
+not specified or value <= 4
+hard (default)
+"soft" specified
+nointr (not the default)
+"intr" specified
+llock not specified
+"llock" specified
+lock (default)
+"nolock" specified
+local\_lock=none (default)
+any other value specified
+cto (default)
+"nocto" specified
+```
 <span id="Synchronous_versus_asynchronous_option_..15"></span><span id="Synchronous_versus_asynchronous_option"></span>
 
 ### Synchronous versus asynchronous option
@@ -157,17 +178,15 @@ Legend:
 -   Internal data = Transfer CFT runtime files, such as the catalog
 -   Transferable data = Files exchanged using Transfer CFT
 
-<span id="Tuning_NFSv4_locking_for_node_failover_..23"></span><span id="Tuning_NFSv4_locking_for_node_failover"></span><span id="Tuning"></span>
+<span id="Tuning_NFSv4_locking_for_node_failover_..23"></span><span id="Tuning_NFSv4_locking_for_node_failover"></span><span id="Tuning"></span><span id="Perform_a_NAS failover_..24"></span><span id="Perform_a_NAS failover"></span><span id="Perform"></span><span id="Troubleshoot_an_NFS_lock_daemon_issue_with_no_error_message_..25"></span><span id="Troubleshoot_an_NFS_lock_daemon_issue_with_no_error_message"></span><span id="Troubles"></span><span id="Troubleshoot_the_UID_and_GID_..26"></span><span id="Troubleshoot_the_UID_and_GID"></span><span id="Using_AWS EFS_..27"></span><span id="Using_AWS EFS"></span><span id="Using_SMB_CIFS_..28"></span><span id="Using_SMB_CIFS"></span>
 
-### Tuning NFSv4 locking for node failover
+### Tuning NFSv4 locking for node failover &lt;/h3>
 
 The NFSv4 locking lease period affects the Transfer CFT delay required to detect node failovers. The default value for this parameter is typically 90 seconds. On systems where this parameter is tunable, configuring a shorter value can significantly reduce Transfer CFT node failovers.
 
 > **Note:**
 >
 > You should configure the lease time together with the UCONF copilot.node\_manager.watchperiod parameter, noting the restriction that NFS lease time &gt; 2 \* copilot.node\_manager.watchperiod.
-
-<span id="Perform_a_NAS failover_..24"></span><span id="Perform_a_NAS failover"></span><span id="Perform"></span>
 
 ### Perform a NAS failover
 
@@ -176,8 +195,6 @@ When using NAS failover in a multihost-multinode architecture, you must stop the
 1.  Stop the {{< TransferCFT/transfercftname >}} cluster.
 2.  Perform the failover.
 3.  Start the {{< TransferCFT/transfercftname >}} cluster.
-
-<span id="Troubleshoot_an_NFS_lock_daemon_issue_with_no_error_message_..25"></span><span id="Troubleshoot_an_NFS_lock_daemon_issue_with_no_error_message"></span><span id="Troubles"></span>
 
 ### Troubleshoot an NFS lock daemon issue with no error message
 
@@ -191,15 +208,11 @@ Remedy
 
 -   Check that the correct port for the lockd service is open on the firewall (default=4045).
 
-<span id="Troubleshoot_the_UID_and_GID_..26"></span><span id="Troubleshoot_the_UID_and_GID"></span>
-
 ### Troubleshoot the UID and GID
 
 NFS uses UIDs and GIDs for all file permissions. Therefore during installation of a multihost multi-node architecture, the Transfer CFT user must have read and write access to any folder and files created on the other host or hosts. Additionally, all hosts in the implementation should use the same UID number.
 
 For more information, please refer to the [NFS](http://nfs.sourceforge.net/nfs-howto/ar01s07.html#pemission_issues) documentation.
-
-<span id="Using_AWS EFS_..27"></span><span id="Using_AWS EFS"></span>
 
 ## Using AWS EFS
 
@@ -213,8 +226,6 @@ This shared file system has features that impact performance, as compared to a t
 
 -   Distributed systems replicating data  
 -   Processing does not continue until all data is replicated
-
-<span id="Using_SMB_CIFS_..28"></span><span id="Using_SMB_CIFS"></span>
 
 ## Using SMB/CIFS
 

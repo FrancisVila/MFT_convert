@@ -103,9 +103,23 @@ Example 1
 
 Call the following programs to migrate from UCONF to CFTFOLDER objects.
 
+```
+CALL PGM(CFTMIFM) PARM('migrate' '-o' 'CFTPROD/fm1cfg')
+CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder\_monitoring.\*,fout=CFTPROD/fm\_uconf')
+CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm1cfg')
+CALL PGM(CFT324CI/CFTMIFM) PARM('purge')
+```
+
 Example 2
 
 Call the following programs to migrate specific folders from the UCONF configuration to the CFTFOLDER option. For example, select all logical folders starting with the letter "A".
+
+```
+CALL PGM(CFTMIFM) PARM('migrate' '-p' 'A\*' '-o' 'CFTPROD/fm2cfg')
+CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder\_monitoring.\*,fout=CFTPROD/fm\_uconf')
+CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm2cfg')
+CALL PGM(CFTMIFM) PARM('purge' '-p' 'A\*')
+```
 
 ### Examples on a z/OS system
 

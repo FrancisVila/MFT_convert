@@ -87,6 +87,82 @@ has been received with an unknown space reservation unit (PI 41).
  "XXX
 iNN" format values
 
+```
+
+XXX
+</th>
+
+FPDU
+</th>
+
+Definition
+</th>
+
+ABO 
+ABORT  
+Sudden connection interruption 
+ACF 
+AckCRF  
+File closing confirmation 
+ACO 
+ACONNECT 
+Connection confirmation 
+ACR 
+AckCREATE  
+File creation confirmation 
+ADS 
+AckDESELECT 
+File deselect confirmation 
+AMG 
+AckMSG 
+Message confirmation 
+AOF 
+AckORF 
+File opening confirmation 
+ARD 
+AckREAD 
+Read confirmation 
+ASE 
+AckSELECT 
+File selection confirmation 
+ATE 
+AckTRANS.END 
+End of transfer confirmation 
+AWR 
+AckWRITE 
+Write confirmation 
+CON 
+CONNECT 
+Connection request 
+CRE 
+CREATE 
+File creation 
+CRF 
+CRF 
+File closing 
+DMG 
+MSGDM 
+Message start 
+DSE 
+DESELECT 
+File deselect 
+DTE 
+TRANS.END 
+End of transfer 
+IDT 
+IDT 
+Transfer interruption 
+MSG 
+MSG 
+Message transmission 
+RCO 
+RCONNECT 
+Connection refusal 
+SEL 
+SELECT 
+File selection 
+```
+
 -   "Vxxxxxxx"
     format
 
@@ -99,10 +175,31 @@ support in the event of unexplained transfer difficulties.
 Vxxxxxxx format: possible
 protocol events
 
+```
+
+Vxxxxxxx
+
+Definition
+
+"VFxxxxx" 
+File transfer event  (eg: VFCAND)  
+"VLOGxxxx" 
+Event relative to the pre-connection message  (eg:
+VLOGRP) 
+"VNxxxxxx" 
+Network event  (eg: VNRELI) 
+"VRxxxxxx" 
+FPDU reception event  (eg: VRABORT) 
+"VVxxxxxx" 
+Internal event (eg: VVTIMO) 
+"VIxxxxxx" 
+Induced internal event (eg: VIABORT) 
+```
+
 Error code descriptions
 
 
-| Error Code  | FPDU  | Meaning  |
+| Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -203,11 +300,11 @@ Error code descriptions
 <table>
    <thead>
       <tr>
-<th >PeSIT reason code         </th>
-<th >Description         </th>
+<th >PeSIT reason code&lt;/th&gt;         </th>
+<th >Description&lt;/th&gt;         </th>
 <th >{{< TransferCFT/componentshortname  >}} internal
 diagnostic         </th>
-<th >Service item concerned         </th>
+<th >Service item concerned&lt;/th&gt;         </th>
       </tr>
    </thead>
    <tbody>

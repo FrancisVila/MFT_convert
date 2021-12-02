@@ -108,5 +108,38 @@ NFNAME parameter, is an extension specific to Transfer CFT.
 The table below summarizes the parameter values authorized as a function
 of the various functional levels negotiated for the protocol.
 
+```
+
+Functional negotiated v
+
+CFTRECV parameter 
+PeSIT E  
+PeSIT E
++
+Transfer CFT extensions 
+Generic IDF 
+X 
+X 
+NFNAME, NFVER
+(reception in open mode) 
+- 
+X 
+NIDF 
+string14 
+string32
+RAPPL 
+string8 
+string48 
+RUSER 
+string8 
+string28 
+SAPPL 
+string8 
+string48 
+SUSER 
+string8 
+string28 
+```
+
 -    X:  supported
 -   "-":  not supported

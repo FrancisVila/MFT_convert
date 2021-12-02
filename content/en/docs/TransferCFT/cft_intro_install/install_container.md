@@ -37,6 +37,11 @@ Depending on which method you plan to use, follow the corresponding link to the 
 
 Begin by downloading or cloning the Transfer CFT repository. To download, navigate to <https://github.com/Axway/docker-cft> and click **Code** &gt; **Download Zip**. Alternatively, to clone using Git:<span id="gitcontainertest"></span>
 
+```
+git clone <https://github.com/Axway/docker-cft.git>
+cd docker-cft
+```
+
 The repository contains several README.md files that correspond to each sub-module, and a CHANGELOG.md file that describes all changes to the current version.
 
 READMEs

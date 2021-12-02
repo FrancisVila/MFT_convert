@@ -19,6 +19,29 @@ be used to:
 
 The following table describes the commands associated with these actions.
 
+```
+
+Command
+
+Action
+
+[DELETE](../../../admin_intro/admin_commands_intro/delete_command)
+Deletes a catalog entry 
+[HALT]()
+Stops a transfer and sets it to the HOLD state 
+[KEEP]()
+Stops a transfer and sets it to the KEEP state 
+[START]()
+Reactivates a transfer 
+[SUBMIT]()
+Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.
+[END]()
+Declares the processing subsequent to the transfer terminated 
+[RESUME]()
+Retrieves, in the server mode, a blocked send request having
+the hold status
+```
+
 The parameters relative to these commands determine the transfer selection
 criteria, catalog entries, these commands relate to.
 

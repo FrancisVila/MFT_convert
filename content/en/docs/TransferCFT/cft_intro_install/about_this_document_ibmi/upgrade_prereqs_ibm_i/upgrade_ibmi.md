@@ -22,8 +22,16 @@ Before beginning the upgrade procedure:
 -   Check that you can access the Transfer CFT upgrade pack available for download from Axway at [support.axway.com](https://support.axway.com/).
 -   Stop the Transfer CFT server and the Transfer CFT Copilot (UI) server. Enter:
 
+```
+CFTSTOP
+COPSTOP
+```
+
 Optionally, you can use the display command to check the version or product details prior to upgrading.
 
+```
+CFTUTIL about
+```
 <span id="Automati"></span>
 
 ## Automatic upgrade procedure
@@ -36,14 +44,25 @@ Start the UPGRADE process by uploading the Transfer CFT installation package in 
 2.  Create a temporary library: `CRTLIB CFTTMP`
 3.  Create a SAVF file: `CRTSAVF FILE(CFTTMP/CFT37)`
 4.  Upload the installation package to the SAVF in binary mode using FTP:  
+    ```
+    binary
+    cd CFTTMP
+    put Transfer\_CFT\_os400.bin CFT37
+    ```
 
 <!-- -->
 
 1.  Restore the SAVF file in the temporary library:  
+    ```
+    RSTLIB SAVLIB(CFTPG) DEV(\*SAVF) SAVF(CFTTMP/CFT37) OPTION(\*NEW) RSTLIB(CFTTMP)
+    ```
 
 <!-- -->
 
 1.  After restoring the SAVF, you must add the library name in the first position of the library list for the user profile. Execute the command:  
+    ```
+    ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)
+    ```
 
 > **Note:**
 >
@@ -52,6 +71,14 @@ Start the UPGRADE process by uploading the Transfer CFT installation package in 
 ### Executing the UPGRADE command
 
 Enter the UPGRADE command and press F4 to display the Transfer CFT IBM i installation screen.
+
+```
+UPGRADE CFT (UPGRADE)
+Extract lib for the CFT  . . . . CFTEXTLIB      \_\_\_\_\_\_\_\_\_\_
+CFT Program Library  . . . . . . CFTPGM         \_\_\_\_\_\_\_\_\_\_
+CFT Production Library . . . . . CFTPROD        \_\_\_\_\_\_\_\_\_\_
+Are you rolling back? . . . . . .ROLLBACK       '2'      
+```
 
 The following fields are mandatory; you should complete as per your system details:
 
@@ -65,6 +92,10 @@ The following fields are mandatory; you should complete as per your system detai
 ### Check the new version
 
 To check the Transfer CFT version, as well as the license key and system information, enter the command:
+
+```
+CFTUTIL about
+```
 
 ### About the UPGRADE command
 
@@ -83,6 +114,7 @@ As a result, your {{< TransferCFT/transfercftname  >}} binaries are upgraded, bu
 ### Upgrading multi-node installations
 
 The UPGRADE procedure supports multi-node configurations, where your configuration remains strictly the same.
+&lt;/p>
 
 ### About IASP installations
 
@@ -108,28 +140,36 @@ The manual upgrade procedure is similar to the migration procedure.
 2.  Stop Transfer CFT.
 3.  Create a backup library to save your configuration:
 
-<!-- -->
+```
+CRTLIB LIB(CFTUPGLIB)
+```
 
 1.  Export your configuration.
     -   Export your static configuration objects using the command CFTUTIL CFTEXT:
 
-    <!-- -->
-
+    ```
+    CALL PGM(CFTUTIL) PARM(‘CFTEXT’ ‘type=all, fout=CFTUPGLIB/EXTCONF’) ```
     -   Export your PKI certificates using the PKIUTIL PKIEXT command. Enter:
 
-    <!-- -->
-
+    ```
+    CALL PGM(PKIUTIL) PARM(‘PKIEXT’ ‘fout=CFTUPGLIB/EXTPKI’) ```
     -   Export the catalog using the CFTMI command. Enter:
 
-    <!-- -->
-
+    ```
+    CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=FROMCAT, ifname=CFTPROD/CAT, ofname=CFTUPGLIB/EXTCAT’) ```
     -   Export the communication media file using the CFTMI command:
 
-    <!-- -->
-
+    ```
+    CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=COM, direct=FROMCOM, ifname=CFTPROD/COM, ofname=CFTUPGLIB/EXTCOM’) ```
     -   Additionally, you must export any procedures that are specific to your production, sample APIs, exits, and execs to your backup library.
 
 2.  Rename the INSTALL directory, the RUNTIME directory, and the Transfer CFT libraries.
+    ```
+    STRQSH CMD('mv /home/cft/install /home/cft/install\_save')
+    STRQSH CMD('mv /home/cft/runtime /home/cft/runtime\_save')
+    RNMOBJ OBJ(QSYS/CFTPROD) OBJTYPE(\*LIB) NEWOBJ(CFTPRODSAV)
+    RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
+    ```
 
 3.  You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
 
@@ -137,19 +177,25 @@ The manual upgrade procedure is similar to the migration procedure.
 
     -   Import your static configuration objects using the command:
 
-    <!-- -->
+    ```
+    CFTINIT FILES('CFTUPGLIB/EXTCONF') ```
 
     -   Import your PKI certificates using the PKIUTIL command:
 
-    <!-- -->
+    ```
+    CALL PGM(PKIUTIL) PARM('PKIFILE' 'fname=CFTPROD/PKIBASE, mode=CREATE')
+    PKIUTIL LIBRARY(EXTLIB) FILE(EXTPKI) MEMBER(EXTPKI)
+    ```
 
     -   Import the catalog using the CFTMI command:
 
-    <!-- -->
+    ```
+    CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=TOCAT, ifname=CFTUPGLIB/EXTCAT, ofname=CFTPROD/CAT’) ```
 
     -   Import the communication media file using the CFTMI command:
 
-    <!-- -->
+    ```
+    CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=COM, direct=TOCOM, ifname=CFTUPGLIB/EXTCOM, ofname=CFTPROD/COM’) ```
 
     -   Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.
 
@@ -161,6 +207,9 @@ The manual upgrade procedure is similar to the migration procedure.
 
 To check the Transfer CFT version, as well as the license key and system information, enter:
 
+```
+CFTUTIL about
+```
 <span id="Manually2"></span>
 
 ### Manually upgrade a Transfer CFT 2.7.1, 3.0.1, or 3.1.3 multi-node installation
@@ -171,21 +220,23 @@ The multi-node procedure is similar to the single instance upgrade procedure. **
 2.  Stop Transfer CFT IBM i.
 3.  Create a temporary library for your exported configuration:
 
-<!-- -->
+```
+CRTLIB LIB(CFTUPGLIB)
+```
 
 1.  Export your configuration.
     -   Export your static configuration objects using the command:
 
-    <!-- -->
-
+    ```
+    CALL PGM(CFTUTIL) PARM(‘CFTEXT’ ‘type=all, fout=CFTUPGLIB/EXTCONF’) ```
     -   Export your PKI certificates using the PKIUTIL PKIEXT command:
 
-    <!-- -->
-
+    ```
+    CALL PGM(PKIUTIL) PARM(‘PKIEXT’ ‘fout=CFTUPGLIB/EXTPKI’) ```
     -   Export the catalog using the CFTMI command:
 
-    <!-- -->
-
+    ```
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_ former\_cft\_for\_node\_<node>>, ofname=catalog\_output\_<node>.xml ```
     -   Export the communication media file using the command:
         -   For each communication media file, enter:
         -   For each node, enter:
@@ -195,30 +246,40 @@ The multi-node procedure is similar to the single instance upgrade procedure. **
     -   You must also export any procedures that are specific to your production, such as APIs, exits, execs, etc. (Copy your API, exit sources, exec, and specific scripts.)
 2.  Change the hostname for each Transfer CFT.
     Rename the INSTALL and RUNTIME directories, and the Transfer CFT libraries:  
+    ```
+    STRQSH CMD('mv /home/cft/install /home/cft/install\_save')
+    STRQSH CMD('mv /home/cft/runtime /home/cft/runtime\_save')
+    RNMOBJ OBJ(QSYS/CFTPROD) OBJTYPE(\*LIB) NEWOBJ(CFTPRODSAV)
+    RNMOBJ OBJ(QSYS/CFTPGM) OBJTYPE(\*LIB) NEWOBJ(CFTPGMSAV)
+    ```
 3.  You can now install the new Transfer CFT version. See <a href="../../install_intro_ibmi/use_install_command" class="MCXref xref">About the INSTALL command</a>.
 4.  Import the configuration that you saved previously in the temporary directory created in Step 3:
+    ```
+    CFTINIT FILES('CFTUPGLIB/EXTCONF')
+    ```
     -   Import the PKI certificates using the PKIUTIL command:
 
-    <!-- -->
-
+    ```
+    CALL PGM(PKIUTIL) PARM('PKIFILE' 'fname=CFTPROD/PKIBASE, mode=CREATE')
+    PKIUTIL LIBRARY(EXTLIB) FILE(EXTPKI) MEMBER(EXTPKI)
+    ```
     -   Import the catalog using the CFTMI command:
 
-    <!-- -->
-
+    ```
+    CALL PGM(CFTMI) PARM(‘MIGR’ ‘type=CAT, direct=TOCAT, ifname=CFTUPGLIB/EXTCAT, ofname=CFTPROD/CAT’)
+    ```
     -   Import the communication media file using the CFTMI command:
         -   For each communication media file, enter:
         -   For each node, enter:
-
-    -   Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library.
-
-        > **Note:**
-        >
-        > You must recompile these after upgrading.
+    -   Import specific procedures to your production, for example APIs, EXITs, and execs from the CFTUPGLIB backup library. &lt;blockquote>&lt;html>&lt;body>&lt;p>&lt;b>Note:&lt;/b>&lt;/p>&lt;/body>&lt;/html>You must recompile these after upgrading.&lt;/blockquote>&lt;/li>&lt;/ul>&lt;/li>
 
 ### Check the new version
 
 To check the Transfer CFT version, as well as the license key and system information, enter the command:
 
+```
+CFTUTIL about
+```
 <span id="Rolling"></span>
 
 ## 

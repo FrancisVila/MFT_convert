@@ -10,17 +10,37 @@ This functionality is comprised of a delivered configuration and sample script f
 
 **Unix**
 
+```
+CFTUTIL @conf/cft-copyfile.conf
+```
+
 **Windows**
+
+```
+CFTUTIL #conf\\cft-copyfile.conf
+```
 
 **z/OS**
 
+```
+JCL ..INSTALL(CFTCOPYF)
+```
+
 **IBM i**
+
+```
+CFTUTIL PARAM('#CFTPROD/CPYFILE(CPYFCONF)')
+```
 
 The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters, in the CFTTCP and CFTPART definitions respectively, to use two different {{< TransferCFT/componentlongname  >}} instances.
 
 ## Define a request to copy a file
 
 Enter the following command to set up a send request to the COPY\_DST partner:
+
+```
+CFTUTIL send part=COPY\_DST, nfname='destination\_file\_name', parm='source\_file\_name'
+```
 
 Where:
 
@@ -32,6 +52,12 @@ This creates an empty file that is transferred from COPY\_SRC to COPY\_DST. The 
 > **Note:**
 >
 > On a z/OS platform, use the following syntax and prefix the nfname with an asterisk ‘\*’.
+
+```
+send part = 'COPY\_DST',
+   parm = 'my.env.FTEST',
+   nfname = '\*my.env.FTEST.&IDT'
+```
 
 ## How it works
 

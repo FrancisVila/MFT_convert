@@ -58,6 +58,7 @@ and grouped into the following categories:
 ## Packaging parameters
 
 The following table lists the UCONF identifiers, default values, and former Windows and UNIX file values.
+&lt;/p>
 
 
 | ID  | Default  | Windows  | UNIX  |
@@ -277,6 +278,30 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 ## Compatibility
 
+```
+
+Parameter
+
+Default value
+
+Description
+
+Uconf:cft.listcat\_compat
+No
+Defines the LISTCAT display:
+
+-   Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.
+-   No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP.
+
+Uconf:cft.state\_compat
+No
+Defines the transfer states:
+
+-   Yes= The phase state is fully compatible with the states in versions prior to 3.0.
+-   No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.
+
+**Note**: Uconf:cft.state\_compat also impacts the [acknowledgement](../../../concepts/phase_and_phasestep/ack_phase) behavior if ackstate is set to ignore.
+```
 <span id="Deactivate_idf"></span>
 
 ## Deactivate the default IDF

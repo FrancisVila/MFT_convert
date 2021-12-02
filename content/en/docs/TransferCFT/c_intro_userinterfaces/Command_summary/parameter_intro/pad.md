@@ -8,7 +8,7 @@
 
 Deprecated in {{< TransferCFT/componentlongname  >}} 3.5.
 
-#### CFTPROT\`
+#### CFTPROT`
 
 \[PAD = { NO | YES }\]
 

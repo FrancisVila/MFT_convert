@@ -6,6 +6,55 @@
 
 ### Enable IPv6
 
+```
+
+Parameter
+
+Description
+
+ipv6.disable\_connect
+**No** indicates that an address or a name used by {{< TransferCFT/componentshortname >}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.
+ipv6.disable\_listen
+**No** indicates that an address or name used by {{< TransferCFT/componentshortname >}} to listen for incoming connections may be either an IPV4 or an IPV6 address.
+When using a name, this parameter can refer to a list of addresses, of any type.
+
+> **Note:**
+> It is recommended that you do not set ipv6.disable\_listen to No, and ipv6.disable\_connect to Yes.
+
+```
+
 ### Advanced IPv6
 
 Refer to the [UCONF parameters](../uconf_directory) table `ipv6.set_ai_xxx`.
+
+```
+
+Parameter
+
+Default
+
+Description
+
+cft.ipv6.set\_ai\_numerichost
+Yes
+
+-   **Yes**: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.
+-   **No**: Use DNS requests for all hostnames, including numeric.
+
+cft.ipv6.set\_ai\_numericserv
+Yes
+
+-   **Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.
+-   **No**:
+
+cft.ipv6.use\_ipv4\_legacy\_resolver
+No
+
+-   **Yes**: Use legacy IPv4 only host and
+    service names resolution API, namely gethostbyname() and getservbyname().
+    This detects if the performance issue involves new
+    IPv6 specific material as configuration items, new system API implementation,
+    etc.
+-   **No**: Use IPv6 functionality.
+
+```

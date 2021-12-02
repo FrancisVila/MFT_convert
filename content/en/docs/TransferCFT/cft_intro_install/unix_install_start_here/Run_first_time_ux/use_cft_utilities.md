@@ -106,6 +106,12 @@ cftutil &lt;command>
 
 **Use**
 
+```
+% cftutil listcat type=z
+CFTU26E LISTCAT \_ Error (TYPE Bad value for parameter)
+cftutil code 115
+%
+```
 <span id="cftcatal"></span>
 
 ## cftcatal
@@ -225,10 +231,21 @@ or to work in batch mode:
 
 Example
 
+```
+xfbadmusr add -l user1 -p thepassword -u AUTO -g AUTO
+```
+
 To check that the user1 is created, run:
+
+```
+xfbadmusr print
+```
 
 The output should resemble the following:
 
+```
+user1:$6$2clPU2CY..2clPU2$g0cm8rHz8X0Fvu1lz7TUVa2YfpPMkbs03wQWhd5f0IMEWDbCQHK9IumSObNF4voLEM/BlsSdNMlw1k01iPOdv0:106:106:::
+```
 <span id="xvi"></span>
 
 ## xvi

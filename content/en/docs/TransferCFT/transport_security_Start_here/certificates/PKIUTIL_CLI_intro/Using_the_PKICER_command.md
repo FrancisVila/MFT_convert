@@ -20,6 +20,41 @@ can import all their certificates with the same identifier.
 
 Syntax
 
+```
+PKICER
+ID    
+=     string,
+
+\[CHECK    
+=     {YES | NO},\]
+\[COMMENT  
+=     string,\]
+\[IDATA     
+=     string,\]
+\[IFORM    
+=     {PKCS12 | DER | PEM | PKCS7,\]
+\[IKDATA    
+=     {base64/PEM},\]
+\[IKFORM   
+=     {DER | PEM | PKCS8},\]
+\[IKNAME   
+=     string,\]
+\[IKPASSW  
+=   string,\]
+\[INAME    
+=     string,\]
+\[ITYPE    
+=     {ALL | USER | ROOT | INTER},\]
+\[MODE    
+=     {REPLACE | CREATE | DELETE},\]
+\[STATE    
+=     {ACT | INACT},\]
+\[ROOTCID  
+=     string,\]
+\[PKICER    = string,\]
+
+```
+
 Some parameters are available only in command line, as indicated in the table.
 
 

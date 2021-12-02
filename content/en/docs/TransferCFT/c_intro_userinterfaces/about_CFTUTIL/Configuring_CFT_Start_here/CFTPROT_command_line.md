@@ -69,6 +69,87 @@ The [OFTP (ODETTE)](../../../../protocols_start_here/start_here_odette)
 section of the Protocols book contains a detailed explanation of the constraints
 and specifics regarding the use of this particular protocol.
 
+```
+Description
+Use this command to describe the ODETTE transfer protocol.
+Parameters
+[EERP](../../../command_summary/parameter_intro/eerp)
+Used to interpret the value of the ORIGINATOR and DESTINATOR
+fields contained in the EERP message, according to the protocol version.
+The End to End ResPonse service generates a message called
+EERP. This message informs the file sender that the data sent arrived
+correctly.
+The first version of the protocol (1986) specifies that:
+
+-   the ORIGINATOR
+    protocol field corresponds to the file sender
+-   the DESTINATOR
+    protocol field corresponds to the file receiver
+
+The second version (1991) specifies that:
+
+-   the ORIGINATOR
+    protocol field corresponds to the EERP sender (i.e. the file receiver)
+-   the DESTINATOR
+    protocol field corresponds to the EERP receiver (i.e. the file sender)
+
+Note: heck the
+consistency of the customized values from one end to another. If the sender
+and receiver have different versions, it is not possible to acknowledge
+the transfer.
+[PAD](../../../command_summary/parameter_intro/pad) 
+*Deprecated in* {{< TransferCFT/componentlongname >}} {{< TransferCFT/releasenumber >}}
+Option applying "SPECIAL LOGIC" to the data exchange
+buffers.
+This option is negotiated with the partner when the protocol
+session is established (in the SSID FPDU). If the option is set to NO
+for one of the partners, the "special logic" is not applied.
+[RCREDIT](../../../command_summary/parameter_intro/rcredit) 
+Value of the "credit" (expressed as a number
+of "DATA" messages) proposed by Transfer CFT when it is server.
+This value is negotiated with the value proposed by the
+requester (see the SCREDIT parameter) when the protocol session is established.
+[RESYNC](../../../command_summary/parameter_intro/resync) 
+Option for restarting a transfer following an interruption.
+This option is negotiated with the partner when the connection
+is established: if the option is set to NO for one of the partners, transfer
+restarts are not managed.
+[RRUSIZE](../../../command_summary/parameter_intro/rrusize)
+Maximum size of NSDUs (Network Service Data Unit) being
+received.
+This parameter is negotiated with the partner (SRUSIZE
+parameter if Transfer CFT), the smallest value is selected as the size
+of NSDUs sent.
+Refer to the Transfer CFT [Protocol
+topics](../../../../protocols_start_here) to optimize the definition of the value of this parameter.
+[SCREDIT](../../../command_summary/parameter_intro/scredit)
+Value of the "credit" (expressed as a number
+of "DATA" messages) proposed by Transfer CFT when it is the
+requester.
+Transfer CFT is authorized to send a number of "DATA"
+protocol messages equal to the result of the negotiation (performed when
+the protocol session is established), before waiting for a new "credit"
+to be sent by the server.
+[SRUSIZE](../../../command_summary/parameter_intro/srusize)
+Maximum size of NSDUs (Network Service Data Unit) being
+sent.
+This parameter is negotiated with the partner (RRUSIZE
+parameter if Transfer CFT), the smallest value being selected
+as the size of NSDUs sent.
+Refer to the  [Protocol
+topics](../../../../protocols_start_here) to optimize the definition of the value of this parameter.
+MVS connection, the maximum value of SRUSIZE is equal to the value configured in the NCP (or the equivalent) less (-) 6 bytes.
+TCP 
+Processing method used for protocol messages:
+
+-   Transfer
+    CFT: activation of the method specific to Transfer CFT
+-   OFTP:
+    activation of the standard method (RFC 2204)
+
+This parameter applies in both initiator and responder
+modes. 
+```
 <span id="Defining_PeSIT"></span>
 
 ## Defining PeSIT
@@ -101,6 +182,223 @@ parameter.
 For a detailed explanation of the constraints and specifics regarding
 the use of each of these variants, refer to the Transfer CFT [Protocols](../../../../protocols_start_here).
 
+```
+Description
+Use this command to describe the PeSIT transfer protocol.
+Parameters
+[CONCAT](../../../command_summary/parameter_intro/concat)
+Only in sender mode
+Option to concatenate FPDUs (File Protocol Data Units)
+in a given NSDU.
+This option is not negotiated.
+[CTO](../../../command_summary/parameter_intro/cto) 
+Minimum duration (in minutes) of the session, Cycle Time
+Out.
+At the end of a transfer, the wait time-out for a nfew
+transfer is recalculated depending on:
+
+-   the time
+    (hour) for opening the session
+-   the current
+    time
+-   the wait
+    delay before disconnection (DISCTS for the protocol)
+-   the duration
+    of the session (CTO)
+
+The session is liberated if no transfer was initiated by
+the remote partner during the indicated duration.
+[CYCLE](../../../command_summary/parameter_intro/cycle) 
+Periodicity (in minutes) for creation of a protocol
+session:
+
+-   0: PeSIT
+    session open on startup
+-   n: periodicity
+
+[DISCTC](../../../command_summary/parameter_intro/disctc) 
+Wait time-out (in seconds) for the reply FPDU (ACONNECT),
+after the sending of a CONNECT FPDU.
+If the value is 0, the wait time-out is infinite.
+[DISCTR](../../../command_summary/parameter_intro/disctr) 
+Network disconnection wait time-out. Wait time-out (in
+seconds) for the partner site to cut the connection, after sending an
+"abort" request (ABORT FPDU).
+If the value is 0, the wait time-out is infinite.
+[HIDE99](../../../command_summary/parameter_intro/hide99)
+Optional parameter available only to PESIT
+protocol definition (TYPE=PESIT) using the ANY profile (PROFIL=ANY/CFT).
+
+-   NO (Default value): no information inside
+    PI99 (free message PI Code) is hidden
+-   YES: hide private information carried
+    by the protocol (physical local path of the file)
+
+[LOGON](../../../command_summary/parameter_intro/logon)
+Only in requester mode PeSIT E
+Implementation of the pre-connection phase.
+According to the value of this parameter:
+
+-   YES: this phase is implemented. The
+    requester sends a 24-byte EBCDIC message as follows:
+
+-   -   byte
+        1 to 8: ‘PESIT ’ (PeSIT followed by 3 blank characters) (corresponding
+        to the protocol used)
+    -   byte
+        9 to 16: requester identifier (NSPART of CFTPART)
+    -   byte
+        17 to 24: requester password (NSPASSW of CFTPART)
+
+-   NO: this phase is not implemented: the
+    requester does not send a message
+
+Note: The Transfer
+CFT server automatically adapts itself to the choice of the requesting
+partner to send a Logon message or not.
+[MULTART](../../../command_summary/parameter_intro/multart)
+Only in sender mode
+Option to group several records of the file sent in a given
+FPDU (multi-record FPDUs).
+
+-   in
+    sender mode, MULTART = YES is recommended if the partner supports
+    multi-record FPDUs
+
+The value MULTART = YES is PROHIBITED in this profile
+
+-   in
+    receiver mode, the Transfer CFT accepts multi-record FPDUs,
+    regardless of the value of this parameter
+
+[PAD](../../../command_summary/parameter_intro/pad) 
+Only in requester mode CFT profile
+*Deprecated in* {{< TransferCFT/componentlongname >}} {{< TransferCFT/releasenumber >}}
+Use of the CRC (Cyclic Redundancy Checksum).
+This option is not negotiated: in server mode, Transfer
+CFT always adapts itself to the choice of the requesting partner.
+The PAD = YES option is mandatory for an access through
+a PAD.
+[PART](../../../command_summary/parameter_intro/part) 
+List of the partners (maximum of four) for which a PeSIT
+session, where the transactional turn is cyclically opened..
+Inactive partners (result of the command INACT) are not
+taken into account.
+PROF 
+PeSIT D or E protocol profile.
+The profile options are:
+
+-   SIT profile:
+    the PeSIT is then used in the SIT network context.
+    It is the same in PeSIT version D and version E.
+    It provides synchronization point management but does not manage:
+    -   segmentation:
+        the value of the SEGMENT parameter must be set to
+        NO (SEGMENT = NO)
+    -   or
+        multi-records: the value of the MULTART parameter must be set to
+        NO (MULTART = NO)
+
+Note:
+A sender in the PeSIT SIT
+profile cannot segment a record sent in several data FPDUs or group several
+records sent in the same data FPDU
+
+-   or compression:
+    the RCOMP and SCOMP parameters are not applicable
+-   or receive
+    transfer requests
+-   EXTERN
+    profile: corresponds to the "non-SIT" (external to SIT network)
+    standardized definition of the PeSIT version D protocol
+-   CFT profile:
+    the PeSIT version D protocol is used outside the context of the SIT network,
+    the partner also having a Transfer CFT
+
+Its functionality level is greater than the PeSIT D EXTERN
+profile specifications,
+
+-   ANY profile:
+    corresponds to the "non-SIT" (external to SIT network) standardized
+    definition of the PeSIT version E protocol
+
+This profile includes the facilities of the CFT profile,
+as standard.
+Additional facilities are provided between two Transfer
+CFTs, while remaining in conformity with the PeSIT E standard. These facilities
+are based on the use of the PI 99 (free PI).
+
+-   the DMZ
+    profile (DeMilitarized Zone): corresponds to the normalized "hors
+    SIT" definition for the PeSIT protocol, version E E (refer to Managing the Turn)
+
+Note:
+In
+server mode, the PROF parameter can take either the EXTERN,
+CFT or ANY values (corresponding to the "non-SIT" profiles):
+indeed, in server mode, the Transfer CFT automatically adapts
+itself to the non-SIT profile proposed by the requesting partner.
+[RCHKW](../../../command_summary/parameter_intro/rchkw)
+Size of the receive mode synchronization point acknowledgement
+anticipation window, expressed as a number of synchronization points.
+Negotiated with the sender partner.
+RCHKW=0 means that synchronization points are not acknowledged.
+RCHKW=1 is equivalent to operation in half-duplex mode.
+On LU6.2 networks all non-null values will be forced to
+1 during protocol negotiation.
+[RESYNC](../../../command_summary/parameter_intro/resync)
+PeSIT D CFT
+profile, PeSIT D EXTERN profile, PeSIT E
+Dynamic resynchronization of exchanges during transfer
+(without interrupting the data exchange phase).
+This option is negotiated with the partner at the time
+the connection is established: if this option is set to NO for one of
+the partners, dynamic resynchronization is not managed.
+Note:
+The only dynamic resynchronization
+possible between two Transfer CFTs is performed when a CRC error
+is detected (PAD=YES).
+[REVERSE](../../../command_summary/parameter_intro/reverse)
+Only in requester mode  PeSIT
+D CFT profile, PeSIT E
+Option to reuse a connection to perform two transfers in
+different directions one after the other.
+[RPACING](../../../command_summary/parameter_intro/rpacing)
+Value of the interval between synchronization points for
+receive transfers (in Kbytes) (1 Kbyte = 1024 bytes) (see explanations
+of the SPACING parameter).
+This parameter is negotiated with the partner (SPACING
+parameter if Transfer CFT); the smallest value is selected as
+the interval between synchronization points.
+A null value (RPACING = 0) means that synchronization points
+are not set.
+[RRUSIZE](../../../command_summary/parameter_intro/rrusize) 
+Maximum size of NSDUs being received and sent.
+This parameter is negotiated with the partner (SRUSIZE
+parameter if Transfer CFT); the smallest value is selected as
+the size of NSDUs sent.
+Refer to the Transfer CFT [Protocol](../../../../protocols_start_here)
+for more information on this parameter.
+[SCHKW](../../../command_summary/parameter_intro/schkw)
+Size of the send mode acknowledgement anticipation window
+for synchronization points, expressed as a number of synchronization points.
+[SEGMENT](../../../command_summary/parameter_intro/segment)
+Only in sender mode  Profile
+Option to segment file records in several FPDUs.
+[SPACING](../../../command_summary/parameter_intro/spacing) 
+Interval between synchronization points being sent (in
+Kbytes)
+(1 Kbyte = 1 024 bytes).
+[SRUSIZE](../../../command_summary/parameter_intro/srusize)
+Maximum size of NSDUs being received and sent.
+[SSERV](../../../command_summary/parameter_intro/sserv)
+[see
+details](../../../command_summary/parameter_intro/sserv)
+Identifies the service (protocol variant) required for
+the incoming partner.
+Example \[FOR DETAILS: PeSIT
+examples\]
+```
 <span id="SSL_parameter_in_CFTPROT"></span>
 
 ## SSL parameter
@@ -141,6 +439,20 @@ CFTPROT
   
 \[SSL =     identifier,\]
 
+```
+Description
+Use the CFTPROT object to set:
+
+-   Default
+    security profile in requester mode
+-   Security
+    profile in server mode
+
+Parameter
+[SSL](../../../command_summary/parameter_intro/ssl)
+SSL commands Identifier  used
+for security profiles.
+```
 <span id="PeSIT_examples"></span>
 
 ## PeSIT examples
@@ -154,8 +466,57 @@ ID=ACCEPTOR command.
 The time-outs are the default values \[ [Compression](../../../command_summary/parameter_intro/compression)\]. Each FPDU contains a single file
 record (MULTART=NO). There is no on-line compression.
 
+```
+CFTPROT     ID    
+= PSITIN,         
+/\* PSITIN protocol              
+\*/
+     TYPE     = PESIT, PROF=SIT,    
+/\* PeSIT SIT                      \*/
+     NET     = ACCEPTOR,
+     SCOMP     = 0,               
+/\* No compression                    \*/
+     RCOMP     = 0,               
+/\* in SIT profile                    \*/
+     CONCAT     = YES
+```
+
 ### PeSIT D EXTERN profile
+
+```
+CFTPROT     ID    
+= PSITEXT,
+     TYPE     = PESIT,
+     NET     = xx,
+     PROF     = EXTERN,
+     CONCAT     = YES,
+     MULTART     = YES,
+     SEGMENT     = NO
+```
 
 ### PeSIT D CFT profile
 
+```
+PeSIT D CFT profile
+CFTPROT     ID    
+= PSITCFT,
+     TYPE     = PESIT,
+     NET     = yy,
+     PROF     = CFT,
+     CONCAT     = YES,
+     MULTART     = YES,
+     SEGMENT     = YES
+```
+
 ### PeSIT E
+
+```
+CFTPROT     ID    
+= PSITE,
+     TYPE     = PESIT,
+     NET     = zz,
+     PROF     = ANY,
+     CONCAT     = YES,
+     MULTART     = YES,
+     SEGMENT     = YES
+```

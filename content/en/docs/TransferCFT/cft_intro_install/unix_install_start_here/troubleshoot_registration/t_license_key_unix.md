@@ -62,4 +62,16 @@ For example, if you have 2 hosts and 4 nodes, you require 4 keys with at least o
 
 Use the CFTUTIL utility to execute the `about `command to find the CPU ID and general system information as demonstrated in this example.
 
+```
+Host information :
+\* model = 4C
+\* hostname = rs58
+\* cpuid = F8C721F8C721F8C7
+\* sysname = AIX
+\* machine = 00F8C7214C00
+\* version = 7
+\* release = 1
+\* distrib = unknown
+```
+
 In this example, the CPU ID is **F8C721F8C721F8C7**. Your information, including the cpuid, will differ from the example.

@@ -21,3 +21,22 @@ Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
 
 Example of CFTROLE in a configuration file:
+
+```
+CFTROLE      ID          = 'Application',
+             COMMENT     = 'My comments',
+             PRIVS       = ( 'SERVICE:UI\_CONNECT',
+                             'MYPRIV1',
+                             'CONFIGURATION:CFTCOM\_VIEW',
+                             'CONFIGURATION:CFTPARM\_VIEW',
+                             'CONFIGURATION:CFTPART\_VIEW',
+                             'CONFIGURATION:CFTDEST\_VIEW',
+                             'CONFIGURATION:CFTSEND\_VIEW',
+                             'CONFIGURATION:CFTRECV\_VIEW',
+                             'CONFIGURATION:CFTLOG\_VIEW',
+                             'FILTER:CATALOG\_ALL',
+                             'FILTER:LOG\_ALL',
+                             'FILE\_VIEW'),
+             ORIGIN      = 'CFTUTIL',
+             MODE        = 'REPLACE'
+```

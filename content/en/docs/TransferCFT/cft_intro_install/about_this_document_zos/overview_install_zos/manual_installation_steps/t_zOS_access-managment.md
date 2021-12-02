@@ -23,9 +23,30 @@ When the access management type is **system**, you must give the STC userID the 
 
 Define the following facilities for the USERID owner of the STC Copilot CFTMAIN and API batches:
 
+```
+UCONFSET ID=am.internal.group\_database,value=system
+SETROPTS GENERIC(FACILITY)
+RDEFINE FACILITY IRR.RADMIN.\* UACC(READ)
+RDEFINE FACILITY IRR.RADMIN.LISTUSER UACC(READ)
+RDEFINE FACILITY IRR.RADMIN.LISTGRP UACC(READ)
+RDEFINE FACILITY IRR.RADMIN.RLIST UACC(READ)
+RDEFINE FACILITY IRR.RADMIN.SETROPTS.LIST UACC(READ)
+```
+
 If you defined the previous facilities as UACC(NONE), you must set READ rights each Transfer CFT user.
 
+```
+PERMIT IRR.RADMIN.LISTUSER -CLASS(FACILITY) ACCESS(READ) ID(user)
+PERMIT IRR.RADMIN.LISTGRP -CLASS(FACILITY) ACCESS(READ) ID(user)
+PERMIT IRR.RADMIN.RLIST -CLASS(FACILITY) ACCESS(READ) ID(user)
+PERMIT IRR.RADMIN.SETROPTS.LIST -CLASS(FACILITY) ACCESS(READ) ID(user)
+```
+
 In Transfer CFT, set the `group_database` to `system`.
+
+```
+UCONFSET ID=am.internal.group\_database,value=system
+```
 
 ### Using SAF class as the internal access management
 
@@ -43,6 +64,28 @@ When the access management method is **SAF class**, each user role is associated
 | CFT.ROLE.TRANSFER  | am.internal.role.application  | READ  |
 
 
+```
+UCONFSET ID=am.internal.group\_database,value=**safclass**
+UCONFSET ID=am.internal.safclass,value='**Class**' (the class resource must be available)
+ 
+For each ROLE (the following are examples, replace with your own values):
+
+> RDEFINE Class CFT.ROLE.ADMIN UACC(NONE) OWNER(...)
+> RDEFINE Class CFT.ROLE.OPERATOR UACC(NONE) OWNER(...)
+> RDEFINE Class CFT.ROLE.PARTNER UACC(NONE) OWNER(...)
+> RDEFINE Class CFT.ROLE.DESIGNER UACC(NONE) OWNER(...)
+> RDEFINE Class CFT.ROLE.TRANSFER UACC(NONE) OWNER(...)
+
+ 
+Authorize users or groups: (RACF sample)
+
+> PERMIT CFT.ROLE.ADMIN CLASS(Class) ACCESS(READ) ID(USER001)
+> PERMIT CFT.ROLE.TRANSFER CLASS(Class) ACCESS(READ) ID(USER002)
+
+ 
+NOTE: ACCESS must be set to **READ**.
+```
+
 > **Note:**
 >
 > The load libraries must be APF.
@@ -59,4 +102,14 @@ Start with the `UserID `in column 1 using blanks as separators. For example, to 
 
 Format
 
+```
+USER001 OPERATOR PARTNER .....
+USER002 ADMIN ..... 
+```
+
 In Transfer CFT, set the `group_database` to file and specify the path to the file defined above.
+
+```
+UCONFSET ID=am.internal.group\_database,value=file
+UCONFSET ID=am.internal.group\_database.fname,value=filename
+```

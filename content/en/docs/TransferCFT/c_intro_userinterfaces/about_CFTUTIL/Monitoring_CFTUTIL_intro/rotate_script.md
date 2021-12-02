@@ -23,3 +23,21 @@ In either command line or the user interface, set the following:
 
 
 Example
+
+```
+CFTLOG ID = 'LOG0',
+FNAME = '$CFTLOG',
+AFNAME = '$CFTALOG',
+EXEC = 'C:\\Work\\CFT300\\runtime\\exec\\rotate.bat',
+LENGTH = '160',
+OPERMSG = '0',
+MAXREC = '0',
+NOTIFY = ' ',
+SWITCH = '00000000',
+CONTENT = 'FULL',
+NTF = 'NO',
+NTFTYP = 'EF',
+ORIGIN = 'CFTUTIL',
+FORMAT = 'V24',
+MODE = 'REPLACE'
+```

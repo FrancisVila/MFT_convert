@@ -71,6 +71,19 @@ with a partner for a TCP/IP connection.
 
 Example
 
+```
+CFTTCP   MODE     = CREATE, 
+/\* TCP access point  \*/
+ ID   = PARIS5,   /\* to the
+PARIS5 partner     \*/
+  HOST   = SUN3,
+  RETRYM  = 6,   /\* reconnection
+attempt    \*/
+  RETRYN   = 4,          /\*
+parameters     \*/
+  RETRYW   = 2
+```
+
 The PARIS5 partner has a TCP/IP address corresponding to
 the mnemonic SUN3.
 

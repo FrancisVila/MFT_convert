@@ -61,6 +61,17 @@ topics
 
 Example
 
+```
+CFTCAT ID = IDCAT,
+FNAME = filename,
+RH = 7,
+RT  = 3,
+RX = 3,
+SH = 7,
+ST = 3,
+SX = 3
+```
+
 -   Non-terminated send requests (SH state) and interrupted receive
     transfers are automatically purged after seven days (RH state).
 -   Terminated send transfer entries (ST state) and terminated receive

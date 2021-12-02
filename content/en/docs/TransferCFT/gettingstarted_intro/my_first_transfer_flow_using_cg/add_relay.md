@@ -45,4 +45,10 @@ You will need to add a file locally for the transfer exchange and execute the SE
 
     -   The flow **Identifier** field is equivalent to the {{< TransferCFT/componentshortname >}} IDF parameter.
 
+```
+`CFTUTIL SEND part=<instance_target>, idf=flow22, fname=pub/SALES_report`
+ 
+CFTUTIL LISTLOG /to check the status/
+```
+
  

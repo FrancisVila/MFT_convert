@@ -51,3 +51,20 @@ This table lists, for each possible SSL-protocol cryptographic function and Pki.
 ### Crypto configuration information
 
 When {{< TransferCFT/transfercftname  >}} is started, depending on the system configuration, the Transfer CFT log contains the following information:
+
+```
+CFTI18I+Crypto configuration
+CFTI18I+ CPACF Cryptographic assist is set.
+CFTI18I+ The following CP Assist for Cryptographic Function (CPACF)
+CFTI18I+ operations are supported by OpenSSL s390 engine:
+CFTI18I+ SHA-1: No
+CFTI18I+ SHA-256: Yes
+CFTI18I+ SHA-384: Yes
+CFTI18I+ SHA-512: Yes
+CFTI18I+ DES CBC: Yes
+CFTI18I+ TDES CBC: Yes
+CFTI18I+ AES-128 CBC: Yes
+CFTI18I+ AES-256 CBC: Yes
+CFTI18I+ AES-128 GCM: No
+CFTI18I+ AES-256 GCM: No
+```

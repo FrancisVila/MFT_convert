@@ -80,9 +80,44 @@ In this example, the following files are not sent from the specified folder – 
 -   out\*.jbase\_header
 -   out\*.ffs\_db
 
+```
+CFTFOLDER ID = 'E',
+STATE = 'ACTIVE',
+METHOD = 'MOVE',
+RESUBMITCHANGES= 'YES',
+ENABLESUBDIR= 'YES',
+FILEIDLEDELAY= '0',
+IDF = 'IDFDEF',
+PART = 'PARIS',
+SCANDIR = 'e',
+WORKDIR = 'e\_work',
+INTERVAL = '60',
+FILECOUNT = '0',
+FILESIZEMIN = '0',
+FILESIZEMAX = '0',
+FILTERTYPE = 'EREGEX',
+/\* INCLUDEFILTER= '',\*/
+EXCLUDEFILTER= '^out.\*\\.((ffs\_lock)|(jbase\_header)|(ffs\_db))',
+RENAMEMETHOD= 'NONE',
+RENAMESEPARATOR= '.',
+USEFSEVENTS = 'YES',
+MODE = 'REPLACE'
+```
+
 ### EREGEX example 2
 
 Create a filter to include all files that begin with the letter "c" and are followed by any number characters except the ca or cb files.
+
+```
+CFTFOLDER ID = 'F',
+STATE = 'ACTIVE',
+METHOD = 'MOVE',
+....
+FILTERTYPE = 'EREGEX',
+INCLUDEFILTER='^c+' #'^c+'
+EXCLUDEFILTER='(^ca$|^cb$)'
+...
+```
 
 ### EREGEX example 3
 
@@ -92,3 +127,13 @@ Create a filter that includes all .jpg files that are:
 -   Followed by four-digit number
 
 For example, the following filter would include IMGP0122.jpg.
+
+```
+CFTFOLDER ID = 'J',
+STATE = 'ACTIVE',
+METHOD = 'MOVE',
+....
+FILTERTYPE = 'EREGEX',
+INCLUDEFILTER='^\[0-9a-zA-Z\]+\[0-9\]{4}.jpg'
+...
+```

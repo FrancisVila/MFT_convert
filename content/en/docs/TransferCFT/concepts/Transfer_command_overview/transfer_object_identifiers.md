@@ -36,7 +36,8 @@ A CFTSEND and a CFTRECV command may correspond to each model
 file. In the absence of these commands for a given transfer, {{< TransferCFT/componentshortname  >}} uses the default CFTSEND and CFTRECV command parameters, which are
 valid regardless of the IDF.
 
-An identifier corresponds to each flow definition. In the absence of this flow identifier, {{< TransferCFT/componentlongname  >}} uses the flow default value.
+An identifier corresponds to each flow definition. In the absence of this flow identifier, &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> uses the flow default value.
+&lt;/p>
 
 The default command is the command whose file identifier corresponds either to the:
 

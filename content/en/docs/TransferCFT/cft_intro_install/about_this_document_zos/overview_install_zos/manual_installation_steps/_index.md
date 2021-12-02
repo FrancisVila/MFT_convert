@@ -62,7 +62,7 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
       </tr>
       <tr>
          <td>8         </td>
-         <td><p><a href="t_customize_install_zos.htm#JOB%C2%A0H80EXEC">CFT$SET</a></p>
+         <td><p><a href="../zos_auto_install_a05all/t_customize_install_zos#JOB%C2%A0H80EXEC">CFT$SET</a></p>
 <p>CFT$SETC </p>         </td>
          <td><p>Select one of the two options available for this step to set the UCONF variables and create Transfer CFT parameters from a template.</p>
 <ul>
@@ -96,8 +96,8 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
       </tr>
       <tr>
          <td>13         </td>
-         <td><p><a href="t_configure_optional_features_zos.htm#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
-<p><a href="t_configure_optional_features_zos.htm#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
+         <td><p><a href="t_configure_optional_features_zos#Create%20a%20Transfer%20CFT%20PKI%20file%C2%A0D43PKI">D43PKI</a></p>
+<p><a href="t_configure_optional_features_zos#Connect%20with%20PassPort%C2%A0D44PASS">D44PASS</a></p>
 <p><a href="t_configure_optional_features_zos">D47SYST</a></p>         </td>
          <td><p>Select one of the options listed for Step 12:</p>
 <ul>
@@ -237,6 +237,12 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 > The file access rights are Read only for Group and others. Users must have rights to read the file system where the Transfer CFT Copilot USS files are installed. To get the file system name, enter the command: df .
 
 **Example**
+
+```
+/home/AXWAY/CFT<version>/wwwroot/applets: #df .
+Mounted on Filesystem Avail/Total Files Status
+/home/AXWAY (xxxxxx.yyyyy.HFSAXWAY) 235680/1872000 4294927912 Available
+```
 
 Related topics
 

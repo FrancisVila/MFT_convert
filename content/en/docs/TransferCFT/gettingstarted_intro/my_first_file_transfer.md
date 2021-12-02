@@ -25,11 +25,31 @@ The sample file features two default partners, NEWYORK and PARIS. Each of these 
 
 To send a file from PARIS to NEWYORK, run the following command:
 
+```
+CFTUTIL send part=NEWYORK, idf=txt
+```
+
 To check in the Transfer CFT catalog to confirm that the transfer completed successfully, enter:
+
+```
+CFTUTIL listcat
+```
 
 You should see that the default file was sent from NEWYORK to PARIS. There are two entries are displayed, this is due to the fact that you performed a loop transfer using the localhost interface.
 
+```
+Partner  DTSAPP File     Transfer         Records       Diags        Appli.   Appstate.
+                Id.      Id.       Transmit     Total   CFT Protocol Id.
+-------- ------ -------- -------- ---------- ---------- --- -------- -------- ---------
+NEWYORK  SFX XX TXT      J2220582        112        112   0 CP NONE
+PARIS    RFX XX TXT      J2220582        112        112   0 CP NONE
+```
+
 To display exhaustive transfer details, enter the command:
+
+```
+CFTUTIL listcat content=debug
+```
 
 The purpose of the My first file transfer section is to help you feel comfortable with basic {{< TransferCFT/componentshortname  >}} file transfer commands. Once you understand core file transfer concepts, you can delve into the rich array of parameters that allow you to customize your application integrations and data flows. Additional commands and options are available to help you define the monitoring granularity  for your executed transfers.
 
@@ -51,10 +71,78 @@ Let's start by performing the same type of transfer as in the sample configurati
 
  
 
+```
+
+Requester/Sender
+
+Server/Receiver
+
+**Configuration**
+
+1.  Create a partner.
+2.  Create an IDF.
+
+**Runtime**
+
+1.  Run the transfer.
+
+<!-- -->
+
+1.  Check the catalog.
+
+**Configuration**
+
+1.  Create a partner.
+2.  Create an IDF.
+
+**Runtime**
+
+1.  Retrieve the sent file.
+2.  Check the catalog.
+
+```
+
 View an example
+
+```
+**/\*REQUESTER/SENDER\*/**
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
+ 
+CFTTCP
+ID=NEWYORK,
+HOST = @<NEWYORK address>
+ 
+CFTSEND ID=INVOICE,...
+ 
+SEND PART=NEWYORK, IDF=INVOICE
+ 
+LISTCAT
+```
 
  
 
+```
+**/\*SERVER/RECEIVER\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
+ 
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTRECV ID=INVOICE, FNAME=MYFILE
+ 
+LISTCAT
+```
 <span id="Use"></span>
 
 ### Use the explicit mode to get a file
@@ -65,8 +153,79 @@ In explicit mode, an application makes a specific file available for a defined p
 
  
 
+```
+
+Server/Sender
+
+Requester/Receiver
+
+Configuration
+
+1.  Create a partner.
+2.  Create an IDF.
+
+ 
+ 
+Runtime
+
+1.  Make your file available.The send command is set with the ‘state=HOLD’ parameter. The HOLD attribute puts the file in the Transfer CFT catalog, and indicates that it is available for the partner.
+2.  Check the catalog.
+
+Configuration
+
+1.  Create a partner.
+2.  Create an IDF.
+
+ 
+ 
+Runtime
+
+1.  Receive the available file.
+
+<!-- -->
+
+1.  Check the catalog.
+
+```
+
 View an example
 
+```
+**/\*SERVER/SENDER\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<Paris address>
+ 
+CFTSEND ID=INVOICE, IMPL=NO,....
+ 
+SEND PART=PARIS, IDF=INVOICE, STATE=HOLD
+ 
+LISTCAT
+```
+```
+**/\*REQUESTER/RECEIVER\*/**
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
+CFTTCP
+ID=PHOENIX,
+HOST = @<Phoenix address>
+ 
+CFTRECV ID=INVOICE,....
+ 
+RECV PART=PHOENIX, IDF=INVOICE, FNAME=MY\_FILE
+ 
+LISTCAT
+```
 <span id="Receive"></span>
 
 ### Receive multiple files from a partner
@@ -85,6 +244,44 @@ This transfer mode is the same as the previously described explicit mode but pro
 
 View an example
 
+```
+**/\*SERVER/SENDER\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<Paris address>
+ 
+CFTSEND ID=INVOICE, IMPL=NO,....
+ 
+SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE\_1
+SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE\_2
+SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE\_n
+ 
+LISTCAT
+```
+```
+**/\*REQUESTER/RECEIVER\*/**
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
+CFTTCP
+ID=PHOENIX,
+HOST = @<Phoenix address>
+ 
+CFTRECV ID=INVOICE, FNAME=@IDTU.RCV,...
+ 
+RECV PART=PHOENIX, IDF=INVOICE, FILE=ALL
+ 
+LISTCAT
+```
 <span id="Use2"></span>
 
 ### Use the implicit transfer mode
@@ -103,8 +300,44 @@ The implicit transfer mode is often used to make a file whose content is frequen
 
 View an example
 
+```
+**/\*PHOENIX\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<Paris address>
+ 
+CFTSEND ID=ORDER, IMPL=YES, FNAME=FILE\_TO\_SEND....
+ 
+ 
+LISTCAT
+```
+
  
 
+```
+**/\*PARIS\*/**
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
+CFTTCP
+ID=PHOENIX,
+HOST = @<Phoenix address>
+ 
+CFTRECV ID=ORDER,....
+ 
+RECV PART=PHOENIX, IDF=ORDER, FNAME=MY\_FILE
+ 
+LISTCAT
+```
 <span id="Send"></span>
 
 ### Send using open mode
@@ -123,8 +356,46 @@ This mode is similar to the FTP put command. It allows you to define the file na
 
 View an example
 
+```
+**/\*REQUESTER/SENDER\*/**
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
+ 
+CFTTCP
+ID=NEWYORK,
+HOST = @<NEWYORK address>
+ 
+CFTSEND ID=INVOICE,FNAME=FILE\_TO\_SEND, NFNAME=<remote\_location\_pathname>
+ 
+SEND PART=NEWYORK, IDF=INVOICE
+ 
+LISTCAT
+```
+
  
 
+```
+**/\*RECEIVER/SERVER\*/**
+ 
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
+ 
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTRECV ID=INVOICE, FNAME=MYFILE,FNAME=&NFNAME
+ 
+LISTCAT
+```
 <span id="Receive2"></span>
 
 ### Receive using open mode
@@ -143,8 +414,45 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
 
 View an example
 
+```
+**/\*REQUESTER/RECEIVER\*/**
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for NewYork\*/</span>
+NRPART = NEWYORK,
+NSPART = PARIS,
+ 
+CFTTCP
+ID=NEWYORK,
+HOST = @<NEWYORK address>
+ 
+CFTRECV ID=INVOICE, FNAME=<local\_download\_location>
+ 
+RECV PART=NEWYORK, IDF=INVOICE, NFNAME=<remote\_requested\_file>
+ 
+LISTCAT
+```
+
  
 
+```
+**/\*SERVER/SENDER\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Paris\*/</span>
+NRPART = PARIS,
+NSPART = NEWYORK,
+ 
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTSEND ID=INVOICE, IMP=YES,FNAME=&NFNAME
+ 
+LISTCAT
+```
 <span id="Perform3"></span>
 
 ### Perform broadcast and collect operations
@@ -173,9 +481,74 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 View an example
 
+```
+/\*SENDER\*/
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
+CFTTCP
+ID=PHOENIX,
+HOST = @<PHOENIX address>
  
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
+NSPART = PARIS,
+NRPART = NEWYORK,
+CFTTCP
+ID=NEWYORK,
+HOST = @<NEWYORK address>
+ 
+CFTDEST ID=DEST01, PART=NEWYORK, PHOENIX
+ 
+CFTSEND ID=ORDER
+ 
+SEND PART=DEST01, IDF=ORDER
+ 
+LISTCAT
+```
 
  
+
+```
+**/\*RECEIVER 1\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTRECV ID=ORDER,....
+ 
+LISTCAT
+```
+
+ 
+
+```
+**/\*RECEIVER 2\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = NEWYORK,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTRECV ID=ORDER,....
+ 
+LISTCAT
+```
 
 #### Collecting
 
@@ -193,9 +566,78 @@ More information...
 
 View an example
 
+```
+**/\*RECEIVER\*/**
+CFTPART
+ID = PHOENIX,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for Phoenix\*/</span>
+NSPART = PARIS,
+NRPART = PHOENIX,
+CFTTCP
+ID=PHOENIX,
+HOST = @<PHOENIX address>
  
+CFTPART
+ID = NEWYORK,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;"><span style="font-size: 8pt;">/\*</span>remote listening port for New York\*/</span>
+NSPART = PARIS,
+NRPART = NEWYORK,
+CFTTCP
+ID=NEWYORK,
+HOST = @<NEWYORK address>
+ 
+CFTDEST ID=DEST01, PART=NEWYORK, PHOENIX
+ 
+CFTRECV ID=ORDER
+ 
+RECV PART=DEST01, IDF=ORDER, FNAME=<...>&part
+ 
+LISTCAT
+```
 
  
+
+```
+**/\*SENDER 1\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = PHOENIX,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTSEND ID=ORDER,...
+ 
+SEND IDF=ORDER, STATE=HOLD
+ 
+LISTCAT
+```
+
+ 
+
+```
+**/\*SENDER 2\*/**
+CFTPART
+ID = PARIS,
+PROT = PESITANY,
+SAP = 1761, <span style="font-size: 8pt;">/\* remote listening port for Paris \*/</span>
+NSPART = NEWYORK,
+NRPART = PARIS,
+CFTTCP
+ID=PARIS,
+HOST = @<PARIS address>
+ 
+CFTSEND ID=ORDER,...
+ 
+SEND IDF=ORDER, STATE=HOLD
+ 
+LISTCAT
+```
 
 > **Note:**
 >

@@ -38,6 +38,11 @@ From the native command window enter the following to start, for example, CFTUTI
 
 Example
 
+```
+$ YOURCO HOME > volume $DATA14.CFT32AIX
+$DATA14 CFT32AIX 1> **CFTUTIL**
+```
+
 ### Command structure
 
 Transfer CFT Guardian commands, other than CFTUTLX, are comprised of TACL macros (Tandem Advanced Command Language), which call their OSS counterparts. By doing so, these commands offer the same level of functionality in both OSS and Guardian environments.
@@ -52,6 +57,37 @@ Executing a command is done by simply typing its name at the command prompt or c
 
 **Example**
 
+```
+$SAS51 FORD36IX 5> CFTUTIL about
+CFTU20I
+CFTU20I CFT/V3/UHPNONSTOP H06
+CFTU20I Version 3.6 SP0 P0 20200330
+CFTU20I (C) Copyright AXWAY 1989-2020
+CFTU20I ====> Starting Session on 2020/04/08 Time is 06:48:40
+CFTU20I Parameters file :/home/axway/farid/Dev/CFT36/runtime/data/cftparm
+CFTU20I Partners file :/home/axway/farid/Dev/CFT36/runtime/data/cftpart
+CFTU20I Catalog file :/home/axway/farid/Dev/CFT36/runtime/data/cftcata
+CFTU20I
+Product information :
+\* product = AMPLIFY Transfer CFT
+\* version = 3.6
+\* level =
+\* upgrade = 12795000
+\* target = hp\_nonstop\_oss-ia64-32
+Host information :
+\* hostname = NSBLDE4
+\* sysname = NONSTOP\_KERNEL
+\* version = 23
+\* release = J06
+\* model = B
+\* cpuid = XXXXXXXXXXX
+License key information :
+\* idparm = IDPARM0
+\[…\]
+CFTU20I Ending Session on 2020/04/08 Time is 06:48:40
+CFTU20I Session active for 0:00:00
+```
+
 ### Redirect the command output
 
 There are two ways to redirect Transfer CFT Guardian command output.
@@ -59,6 +95,10 @@ There are two ways to redirect Transfer CFT Guardian command output.
 #### Redirect output to an OSS file
 
 This is done by using the standard Unix redirection symbol “>”.
+
+```
+$DATA14 CFT36B 16> CFTUTIL about > /home/axway/user1/cftout.txt
+```
 
 This generates a type 180 OSS unstructured file.
 
@@ -83,6 +123,44 @@ This generates a type 101 Guardian unstructured file.
 -   In the following example, the variable “CFT^UTLOUT” is set before using CFTUTIL.
 -   The command is launched.
 -   The content of the file is then listed, and the variable is unset.
+
+```
+$SAS51 FORD36IX 3> push CFT^UTLOUT
+$SAS51 FORD36IX 4> set variable CFT^UTLOUT $SAS51.FORD36UD.CFTUTL
+$SAS51 FORD36IX 5> CFTUTIL about
+BACKUP PROCESS CREATED IN CPU 3
+$SAS51 FORD36IX 7> fileinfo $SAS51.FORD36UD.\*
+$SAS51.FORD36UD
+CODE EOF LAST MODIFIED OWNER RWEP PExt SExt
+CFTUTL 101 2048 08APR2020 7:19 168,13 NONO 14 42
+$SAS51 FORD36IX 8> fup copy FORD36UD.CFTUTL
+CFTU20I
+CFTU20I CFT/V3/UHPNONSTOP H06
+CFTU20I Version 3.6 SP0 P0 20200330
+CFTU20I (C) Copyright AXWAY 1989-2020
+CFTU20I ====> Starting Session on 2020/04/08 Time is 07:19:10
+\[…\]
+\* type = DATE
+\* expire = 2025/06/10
+\* cpuid =
+\* hostname = NSBLDE4
+\* sysname = hp\_nonstop\_oss-ia64-32
+\* Nb Transfers = Max
+\* Nb CPU = Max
+\* Nb Partners = Max
+\* In/Out Bandwidth = Unlimited
+\* In/Out Transfer activation = Unlimited
+\* Edition = Advanced
+\* Options = ODT WBS SSL XTF FIP ACC BWP CLU SNL CLP
+\* XSR
+CFTU00I ABOUT \_ Correct ()
+CFTU20I Number of Command(s) 1
+CFTU20I Number of error(s) 0
+CFTU20I Ending Session on 2020/04/08 Time is 07:19:10
+CFTU20I Session active for 0:00:00
+49 RECORDS TRANSFERRED
+$SAS51 FORD36IX 9> pop CFT^UTLOUT
+```
 
 ### Tracing command execution
 

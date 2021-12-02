@@ -130,10 +130,21 @@ This command redirects the CFTUTIL output (used for
 querying the LISTPARM or LISTPART commands, for example) to the file with
 the generic &lt;filename>.
 
+```
+CONFIG       TYPE = OUTPUT,
+FNAME = <filename>
+```
+
 Example 2: define filename
 
 Use this command to define the file with the generic
 &lt;filename> as the Transfer CFT communication medium.
+
+```
+CONFIG      TYPE = COM,
+MEDIACOM = FILE
+FNAME = <filename>
+```
 
 Example 3: MEDIACOM=FILE
 
@@ -141,7 +152,17 @@ Use to select a specific communication file.
 
 If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
 
+```
+CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....
+CFTCOM ID=COM1,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom1,...
+CFTCOM ID=COM2,TYPE=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2,...
+```
+
 To select the second communication file in a CFTUTIL session, enter:
+
+```
+CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2
+```
 
 Example 4: MEDIACOM=TCPIP
 
@@ -149,4 +170,14 @@ Use to select a TCPIP communication media.
 
 If the {{< TransferCFT/hflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
 
+```
+CFTPARM ID=IDPARM0, ..., COM=(COM,COMS),....
+CFTCOM ID=COM1,TYPE=FILE,FNAME=\_CFTCOM,...
+CFTCOM ID=COMS,TYPE=TCPIP,PROTOCOL=XHTTP,HOST=localhost,PORT=1763...
+```
+
 To select the TCPIP communication media in a CFTUTIL session, enter:
+
+```
+CONFIG TYPE=COM,MEDIACOM=TCPIP,FNAME=XHTTP://localhost:1763
+```

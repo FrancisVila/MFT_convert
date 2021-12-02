@@ -44,9 +44,25 @@ Depending on your operating system, note the following specific //IGNORE behavio
 
 Use the Transfer CFT mapping and the IGNORE functionality to translate a local text file before sending it, for example from UTF-8 to ISO8859-1:
 
+```
+CFTUTIL SEND PART = NEWYORK,
+  IDF = TEST\_IGNORE,
+ FCHARSET = CFT\_UTF-8,
+  NCHARSET = CFT\_ISO8859-1//IGNORE,
+ FTYPE = T
+```
+
 **Example 2**
 
 Use the Transfer CFT mapping and the IGNORE functionality to translate a received file, for example from UTF-8 to ISO8859-1:
+
+```
+CFTUTIL RECV PART = NEWYORK,
+  IDF = TEST\_IGNORE,
+  FCHARSET = CFT\_ISO8859-1//IGNORE,
+  NCHARSET = CFT\_UTF-8,
+ FTYPE = T
+```
 
 See *Adding a character set: transcoding* (in the general unified configuration parameters) for a complete list of the Transfer CFT default charsets.
 
@@ -95,3 +111,73 @@ When using multibyte encoding for fixed or limited record size files, please pay
 ### CHARSET mapping
 
 The following table shows the CHARSET mapping. Brackets in the UNIX/Windows column indicate platform exceptions.
+
+```
+
+CFT\_ charset
+
+UNIX/Windows
+
+IBM i
+
+CFT\_UTF-8
+UTF-8
+01208
+CFT\_UTF-16
+UTF-16
+01204
+CFT\_UTF-16LE
+UTF-16LE
+\[AIX\] UTF-16le
+ 
+01202
+CFT\_UTF-16BE
+UTF-16BE
+\[AIX\] UTF-16
+\[HPUX\] ucs2
+01200
+CFT\_UTF-32
+UTF-32
+\[HPUX\] UTF-32BE
+01236
+CFT\_UTF-32LE
+UTF-32LE
+01234
+CFT\_UTF-32BE
+UTF-32BE
+\[AIX\] UTF-32
+\[HPUX\] ucs4
+01232
+CFT\_UCS-2
+UCS-2
+\[HPUX\] = UCS-2BE
+N/A
+CFT\_UCS-2LE
+UCS-2LE
+N/A
+CFT\_UCS-2BE
+UCS-2BE
+\[AIX\] UCS-2
+N/A
+CFT\_CP850
+CP850
+\[AIX, MVS (z/OS), VMS\] IBM-850
+00850
+CFT\_BIG5
+BIG5
+\[AIX, HPUX\] big5
+00947
+CFT\_ISO8859-1
+ISO8859-1
+\[HPUX\] iso88591
+00819
+CFT\_ISO8859-15
+ISO8859-15
+\[HPUX\] iso885915
+00923
+CFT\_EBCDIC-FR
+\[UNIX\] EBCDIC-FR
+\[AIX, SUN\] IBM-297
+\[HPUX, Windows\] cp1147
+00297
+```

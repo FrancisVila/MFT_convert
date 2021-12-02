@@ -68,6 +68,10 @@ To generate a passphrase, use the command: `CFTTF -pw [password]`
 
 Example
 
+```
+CFTTF –pw user1OUTPUT: OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
+```
+
 See also [How to generate a certificate for Trusted File](../tf_generate_cert).
 
 <span id="Sample"></span>

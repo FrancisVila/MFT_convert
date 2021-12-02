@@ -45,6 +45,14 @@ Another method involves defining these identifiers in a file (using an fname). T
 of identifiers is then not limited. When using this method, if you change the runtime or import the configuration to a new environment you must remember to copy this file to the new runtime. The name of this file is defined in
 the FNAME parameter of CFTDEST.
 
+```
+     CFTDEST     ID    
+=     <*identifier*>,
+          FNAME    
+=     <*file*>,
+          ...
+```
+
 These two methods are mutually exclusive. The PART parameter cannot
 be used simultaneously with the FNAME parameter in the CFTDEST command.
 
@@ -132,21 +140,29 @@ You can use the following commands as an example to configure a transfer flow fr
 **Step 1**
 
 1.  Partner A sends the list of partners (C1, C2, ...Cn) that you want to broadcast to Partner B:
-2.  
+2.  ```
+    SEND PART=ID\_B, FNAME=LIST\_B,IDF=LIST,... ```
 3.  Partner B receives this list with the command:
-4.  
+4.  ```
+    CFTRECV ID=LIST,..., FNAME=LIST ```
 
 **Step 2**
 
 1.  Partner A sends the file to broadcast to a virtual Partner C:
 
-2.  
+2.  ```
+    SEND PART=ID\_C, FNAME=FILE\_TO\_BROADCAST,... ```
 
 3.  On Partner A perform the following command to reach Partner C virtually via Partner B:
 
-4.  1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
+4.  ```
+    CFTPART ID=ID\_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID\_B ```
+    1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
 
-5.  This results in the FILE\_TO\_BROADCAST being sent to all of the partners in the C list of partners.
+5.  ```
+    CFTDEST ID=C, FNAME=LIST, FOR=COMMUT ```
+
+    This results in the FILE\_TO\_BROADCAST being sent to all of the partners in the C list of partners.
 
 <span id="Collecting"></span>
 
@@ -165,6 +181,9 @@ As in broadcasting, a single reception command is used to collect the
 partner files from a list of partners, CFTDEST object.
 
 The collecting mechanism correspondences are displayed in the following command.
+
+```
+RECV PART=GROUP, IDF=IDF1,... ```
 
 ### Define a collecting partner list
 

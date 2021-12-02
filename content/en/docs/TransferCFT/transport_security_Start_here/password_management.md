@@ -30,13 +30,37 @@ To use one of these other systems, set the `rpasswd/spasswd `to the` keyword _AU
 
 #### Server: static configuration
 
+```
+CFTRECV
+id=idf01,
+ruser=username01,
+rpasswd=password01
+```
+
 #### Client: user command
+
+```
+SEND part=server, idf=idf0, ruser=username01, rpasswd=password01
+```
 
 ### Receiving a file from the server
 
 #### Server: static configuration
 
+```
+CFTSEND
+id=idf01,
+imply=yes,
+fname=file01,
+suser=username01,
+spasswd=password01
+```
+
 #### Client: user command  
+
+```
+RECV part=server, idf=idf01, suser=username01, spasswd=password01
+```
 
 <span id="External"></span>
 
@@ -44,15 +68,39 @@ To use one of these other systems, set the `rpasswd/spasswd `to the` keyword _AU
 
 The file containing the passwords must have the format:
 
+```
+partner01 username01 password01
+partner01 username02 password02
+\* username01 password03
+\* \* password04
+```
+
 ### Sending a file to the server
 
 #### Server: static configuration
 
 ##### Unix
 
+```
+CFTRECV
+id=idf01,
+rpasswd=@passwfile
+```
+
 ##### Windows
 
+```
+Windows
+CFTRECV
+id=idf01,
+rpasswd=#passwfile
+```
+
 #### Client: user command
+
+```
+SEND part=server, idf=idf01, ruser=username01, rpasswd=password01
+```
 
 ### Receiving a file from the server
 
@@ -60,9 +108,29 @@ The file containing the passwords must have the format:
 
 ##### Unix
 
+```
+CFTSEND
+id=idf01,
+imply=yes,
+fname=file01,
+spasswd=@passwfile
+```
+
 ##### Windows
 
+```
+CFTSEND
+id=idf01,
+imply=yes,
+fname=file01,
+spasswd=#passwfile
+```
+
 #### Client: user command
+
+```
+RECV part=server, idf=idf01, suser=username01, spasswd=password01
+```
 
 <span id="System"></span>
 
@@ -96,7 +164,18 @@ The supported authentication methods are:
 
 #### Server: static configuration
 
+```
+CFTRECV
+id=idf01,
+rpasswd=\_AUTH\_
+uconfset id=cft.server.authentication\_method, value=system
+```
+
 #### Client: user command
+
+```
+SEND part=server, idf= idf01, ruser=username01, rpasswd=password01
+```
 
 In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.
 
@@ -104,6 +183,19 @@ In this case, username01/password01 is compared with what is defined in `uconf: 
 
 #### Server: static configuration
 
+```
+CFTSEND
+id=idf01,
+imply=yes,
+fname=file01,
+spasswd=\_AUTH\_
+uconfset id=cft.server.authentication\_method, value=system
+```
+
 #### Client: user command
+
+```
+RECV part=server, idf= idf01, suser=username01, spasswd=password01
+```
 
 In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.

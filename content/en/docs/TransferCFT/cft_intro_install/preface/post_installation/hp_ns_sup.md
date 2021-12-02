@@ -69,7 +69,23 @@ The following table lists the UCONF parameters related to the NonStop option con
 To use the same collector for the supervisor as for {{< TransferCFT/transfercftname  >}} log messages, perform the following steps:
 
 1.  Set the uconf `cft.guardian.collector` value to the name of the collector.  
+    ```
+    CFTUTIL uconfset id=cft.guardian.collector,value='$QACOL'
+    ```
+
 2.  In the Transfer CFT configuration, modify the CFTLOG definition to: `NOTIFY=’%uconf:cft.guardian.collector%’. F`or example`:`  
+    ```
+    CFTLOG ID = 'LOG0',
+
+    > FNAME = '\_CFTLOG',
+    > AFNAME = '\_CFTLOGA',
+    > ...
+    > **NOTIFY = ’%uconf:cft.guardian.collector%’,**
+    > CONTENT = 'FULL',
+    > ...
+
+    ```
+
 3.  Interpret the modified CFTLOG object.
 
 <span id="Syntax"></span>
@@ -112,16 +128,57 @@ Actions \[ START | STOP | STATUS | KILL | SHUT (for Transfer CFT server on
 
 Message when starting the supervisor and all components
 
+```
+cftsup start
+ 
+CFTL50I Started supervisor with process id $MDSUP
+CFTL50I Started Transfer CFT with process id $MDAIN
+CFTL50I Started COPILOT with process id $MDCOP
+```
+
 Message when checking the status
+
+```
+cftsup status
+ 
+CFTL50I SUPV ($MDSUP) status Running
+CFTL50I CFT ($MDAIN) status Running
+CFTL50I COPILOT ($MDCOP) status Running
+```
 
 Message when performing a stop
 
+```
+cftsup stop
+ 
+CFTL50I Processing command
+CFTL50I Started COPSTOP with process id $MDCST
+CFTL57E Error: Transfer CFT is still active (status=TERMINATING)
+```
+
 Message when the supervisor is not started
 
+```
+cftsup supv status
+ 
+CFTL59E Supervisor $MDSUP is not started
+```
 <span id="Help"></span>
 
 ## Help
 
 From the home directory, enter the `help `command. For example:
 
+```
+/home/axway/<user>: cftsup help
+ 
+Syntax: cftsup \[ALL|CFT|COPILOT|SUPV\] Actions \[Options\]
+: cftsup ? (or HELP) for a list of the component and actions
+: cftsup Component ? (HELP) for actions to perform on components
+```
+
 Use `command ?` to display the parameter list:
+
+```
+/home/axway/<user>: cftsup "action" ?
+```

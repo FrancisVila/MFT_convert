@@ -29,7 +29,7 @@ This section describes the CRON related commands and parameters.
     -   To inactivate CRON1, enter:
 
 For CFTCRON command parameter details, see the [Command reference](../../../command_summary).
-
+&lt;/p>
 <span id="CFTCRON_time_syntax"></span>
 
 ## CFTCRON time syntax
@@ -43,7 +43,17 @@ This means that the job is submitted on the minute at 0, 10, 20,
 
 **Example using template processing**
 
+```
+CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC=my\_exec,
+time='m=\*/10'
+```
+
 **Example directly processing (UNIX and Windows)**
+
+```
+CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC='cmd:my\_exec &ID',
+time='m=\*/10'
+```
 
 ### Time syntax
 

@@ -11,7 +11,9 @@
 1.  Log in with the {{< TransferCFT/componentlongname >}} user **CFT**.
 2.  Start Copilot.
 
-<!-- -->
+```
+COPSTART
+```
 
 1.  Check that the Transfer CFT instance appears in Central Governance.
 

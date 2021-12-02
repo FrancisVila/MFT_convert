@@ -77,19 +77,46 @@ When you are using the Event Router to send both usage tracking to the Edge Agen
 1.  Access the `<install_dir>/SentinelEventRouter/conf `directory.
 2.  Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
     1.  Add the Edge Agent as a new target.
-    2.  
+    2.  ```
+        <Target name="EDGEAGENT" defaultXntf="no" defaultXml="no">
+        <Access mode="QLT" addr="<Edge\_Agent\_IP\_address>" port="8002" />
+        </Target>
+        ```
     3.  Define a route to send the `XFBTransfer `Tracked Object to the Edge Agent.
-    4.  
+    4.  ```
+        <Route object="XFBTransfer" default\_Notify="NotifyIf">
+        <Condition notify="NotifyIf" target="EDGEAGENT" if="
+        \[PRODUCTIPADDR\] NOT \_"/>
+        </Route>
+        ```
     5.  Define a route to send the `CYCLELINK `to the Edge Agent.
-    6.  
+    6.  ```
+        <Route object="CYCLELINK" default\_Notify="NotifyIf">
+        <Condition notify="NotifyIf" target="EDGEAGENT" if=" \[PRODUCTIPADDR\] NOT \_"/>
+        </Route>
+        ```
     7.  Define a route to send the `XFBCFTInfo `only to the Edge Agent.
-    8.  
+    8.  ```
+        <Route object="XFBCFTInfo" default\_Notify="NotifyIf"> 
+		   <Condition notify="NotNotifyIf" target="SENTINEL" if="\[PRODUCTIPADDR\] NOT \_"/>
+           <Condition notify="NotifyIf" target="EDGEAGENT" if="\[PRODUCTIPADDR\] NOT \_"/> 
+		</Route> 
+		```
     9.  If you are also implementing SecureTransport, define a route to send the `STXFBINFO `only to the Edge Agent.
-    10. 
+    10. ```
+        <Route object="STXFBINFO" default\_Notify="NotifyIf"> <Condition notify="NotNotifyIf" target="SENTINEL" if="\[PRODUCTIPADDR\] NOT \_"/>
+        <Condition notify="NotifyIf" target="EDGEAGENT" if="\[PRODUCTIPADDR\] NOT \_"/> </Route> ```
 3.  Save the file.
 4.  Restart the Event Router.
 
 Example
+
+```
+<TrkEventRouterCfg>  <TrkXml version="x.x" />    <EventRouter name="DEFAULT">   </EventRouter>     
+<Target name="SENTINEL" defaultXntf="yes" defaultXml="yes">    </Target>    
+<Target name="EDGEAGENT"  defaultXntf="no"  defaultXml="no">       <Access mode="QLT"  addr="<Edge_Agent_IP_address>"  port="8002" />     </Target>     
+<Route object="XFBTransfer" default_Notify="NotifyIf">          <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>    </Route>   <Route object="CYCLELINK" default_Notify="NotifyIf">     <Condition notify="NotifyIf" target="EDGEAGENT" if="[PRODUCTIPADDR] NOT _"/>    </Route>    <Route object="XFBCFTInfo" default_Notify="NotifyIf">         <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>        <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>      </Route>    <Route object="STXFBINFO" default_Notify="NotifyIf">         <Condition notify="NotNotifyIf" target="SENTINEL" if="[PRODUCTIPADDR] NOT _"/>        <Condition notify="NotifyIf"    target="EDGEAGENT"  if="[PRODUCTIPADDR] NOT _"/>     </Route> </TrkEventRouterCfg>
+```
 
 > **Note:**
 >

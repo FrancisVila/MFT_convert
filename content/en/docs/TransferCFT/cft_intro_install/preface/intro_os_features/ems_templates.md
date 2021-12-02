@@ -64,6 +64,17 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 
 In the Transfer CFT configuration:
 
+```
+cftlog id = log0,
+…
+fname= ' log/cftlog',
+afname= ' log/cftalog',
+notify= '$COL',
+opermsg= 240,
+….
+ 
+```
+
 ## Activate event accounting messages
 
 The CFTACCNT object defines the destinations for the statistical data concerning terminated transfers (accounting messages). The possible destinations provided in the fname parameter are:
@@ -74,6 +85,11 @@ The CFTACCNT object defines the destinations for the statistical data concerning
 Once defined, you can activate and link the object to the CFTPARM as shown in the following example.
 
 **Example**
+
+```
+CFTACCNT ID=ACCNT1, TYPE=FILE, FNAME=$COL,...,MODE=REPLACE
+CFTPARM ID=IDPARM0,...,ACCNT=ACCNT1,MODE=REPLACE
+```
 
 ## Transfer CFT EMS
 

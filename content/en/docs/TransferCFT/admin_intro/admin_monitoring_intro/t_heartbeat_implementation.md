@@ -18,3 +18,12 @@ To enable the heartbeat feature, check that the following [unified configuration
 Example
 
 In Windows this would enable the parameter to activate Heartbeat functioning.
+
+```
+cftutil uconfset id=sentinel.xfb.enable, value=yes
+cftutil uconfset id=sentinel.heartbeat.enable, value=yes
+cftutil uconfset id=sentinel.heartbeat.periodicity, value=300
+cftutil uconfset id=sentinel.heartbeat.script, value= %cftdirinstall%\\extras\\sentinel\\MFTheartbeat.bat
+cftutil uconfset id=sentinel.trkipaddr, value=server.sentinel.address
+cftutil uconfset id=sentinel.trkipport, value=11277
+```

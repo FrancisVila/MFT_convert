@@ -45,6 +45,13 @@ If the output file:
     -   For systems handling
         the file record concept: actual size of the output file records
     -   For the systems below not handling this concept:  
+        ```
+        **Windows** 
+        512.
+        **UNIX**
+        512 for text files (OTYPE=T, X or O).
+        4096 for binary or variable files (OTYPE={B | V}).
+        ```
 
  
 

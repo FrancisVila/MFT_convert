@@ -13,3 +13,9 @@ This file must contain the following definition: `CFTUCONF=dd:UCONF `(initialize
 You can modify this file to, for example, obtain traces, set the stack TCP/IP, etc.
 
 When you start Transfer CFT, some parameters are printed in the transfer CFT LOG. For example:
+
+```
+CFTI18I+Environment variables (platform dependant) (DDname:STDENV)
+CFTI18I+ CFTUCONF=dd:UCONF
+CFTI18I+ \_BPXK\_SETIBMOPT\_TRANSPORT=TCPIP
+```

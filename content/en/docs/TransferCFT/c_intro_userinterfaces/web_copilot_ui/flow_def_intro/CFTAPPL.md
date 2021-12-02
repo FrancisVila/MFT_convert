@@ -36,6 +36,20 @@ must exist, irrespective of the LENAPPL value defined in CFTPARM.
 
 ### CFTAPPL syntax
 
+```
+CFTAPPL    
+     \[MODE       =    
+{CREATE | DELETE | REPLACE},\]
+     ID          =    
+identifier,
+     USERID      =    
+identifier,
+     \[GROUPID    =    
+identifier,\]
+     \[DIRECT     =    
+{BOTH | RECV | SEND}\]
+```
+
 ### Parameters
 
 \[DIRECT     = {BOTH
@@ -103,8 +117,6 @@ When privileges are checked, if the value specified is &USERID,
 the variable is replaced with the USERID that created the transfer.
 
  
-
-# <span id="Local_Applications"></span>Local applications
 
 This section describes how to configure access management when not using .
 

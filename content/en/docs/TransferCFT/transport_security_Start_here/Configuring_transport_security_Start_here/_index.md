@@ -62,6 +62,100 @@ concept. A suite is identified by a number and designates one:
 The suites supported by Transfer CFT are described in the following
 table:
 
+```
+
+Suite 
+
+Order used
+
+Authentication 
+
+Confidentiality 
+
+Integrity 
+
+49199 \*\*
+1
+ECDHE + RSA authentication
+AES-128 GCM
+SHA-256
+49200 \*\*
+2
+ECDHE + RSA authentication
+AES-256 GCM
+SHA-384
+49191 \*\*
+3
+ECDHE + RSA authentication
+AES-128
+SHA-256
+49192\*\*
+4
+ECDHE + RSA authentication
+AES-256
+SHA-384
+156 \*\*
+5
+RSA authentication
+AES 128 GCM
+SHA-256
+157 \*\*
+6
+RSA authentication
+AES 256 GCM
+SHA-384
+60\*
+7
+RSA authentication (512, 1024, 2048, or 4096)
+AES-128
+SHA-256
+61\*
+8
+RSA authentication (512, 1024, 2048, or 4096)
+AES-256
+SHA-256
+47
+9
+RSA authentication (512, 1024, 2048, or 4096)
+AES-128
+SHA-1
+53
+10
+RSA authentication (512, 1024, 2048, or 4096)
+AES-256
+SHA-1
+10
+11
+RSA authentication (512, 1024, 2048, or 4096)
+Triple DES
+SHA-1
+5
+12
+RSA authentication (512, 1024, 2048, or 4096)
+RC4
+SHA-1
+4
+13
+RSA authentication (512, 1024, 2048, or 4096)
+RC4
+MD5
+59\*
+14
+RSA authentication (512, 1024, 2048, or 4096)
+None
+SHA-256
+2
+15
+RSA authentication (512, 1024, 2048, or 4096)
+None
+SHA-1
+1
+16
+RSA authentication (512, 1024, 2048, or 4096) 
+None
+MD5
+```
+
 > **Note:**
 >
 > \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.

@@ -49,6 +49,16 @@ topics
 
 TYPE = FILE
 
+```
+CFTACCNT
+ID = ACCNT,
+LANGUAGE = C,
+FNAME = <filename1>,
+AFNAME = <filename2>,
+MAXREC = 1000,
+EXEC = <filename3>
+```
+
 This command defines the recording of statistical data concerning transfers
 in files specific to Transfer CFT. It designates the statistical and alternate
 statistical files (FNAME and AFNAME parameters). Data is recorded in these
@@ -59,6 +69,13 @@ of statistical records equals 1000. The procedure initiated at the time
 switching occurs is located in the file designated by the EXEC parameter.
 
 TYPE = SYST
+
+```
+CFTACCNT
+ID = ACCNT,
+TYPE = SYST,
+ACCID = n       z/OS
+```
 
 This command defines the recording of statistical data
 concerning transfers in operating system accounting utility files, using

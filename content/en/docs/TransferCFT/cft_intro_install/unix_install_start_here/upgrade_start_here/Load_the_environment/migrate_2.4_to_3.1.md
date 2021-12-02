@@ -30,6 +30,10 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 1.  Import your static configuration objects using the cftinit command. Enter:
 
+```
+cftinit cft-extract.conf
+```
+
 ### Migrating trkapi.cfg file parameters
 
 Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
@@ -45,15 +49,57 @@ Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
 
 1.  For each parameter you select, add a UCONF command line to your new script file using the format:
 
+```
+UCONFSET id=<parameter\_id>, value=<value>
+```
+
 Use the parameter mapping between trkapi and UCONF, as listed in the following table, to specify the correct parameter id.
 
 Parameter mapping between the trkapi.cfg file and UCONF
+
+```
+
+Parameter in trkapi.cfg
+
+Parameter names in UCONF
+
+TRACE
+sentinel.trktrace
+TRKGMTDIFF
+sentinel.trkgmtdiff
+TRKIPADDR\_BKUP
+sentinel.trkipaddr\_bkup
+TRKIPPORT
+sentinel.trkipport
+TRKIPPORT\_BKUP
+sentinel.trkipport\_bkup
+TRKLOCALADDR
+sentinel.trklocaladdr
+TRKPRODUCTNAME
+sentinel.trkproductname
+XFB.BufferSize
+sentinel.xfb.buffer\_size
+XFB.Log (UNIX)
+sentinel.xfb.log
+XFBLOG (Windows)
+sentinel.xfb.log
+XFB.Sentinel
+sentinel.xfb.enable
+XFB.Trace
+sentinel.xfb.trace
+XFB.Transfer
+sentinel.xfb.transfer
+```
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace &lt;script\_filename> with the new script file path.
+
+```
+CFTUTIL <prefix\_character><script\_filename>
+```
 
 Example
 
@@ -81,11 +127,65 @@ Use the parameters mapping between copconf and UCONF as listed in the following 
 
 Parameter mapping between copconf file and UCONF
 
+```
+
+Parameter in copconf.ini
+
+Parameter name in UCONF
+
+BatchList
+copilot.batches
+CFTCOM
+copilot.cft.com
+CFTMEDIACOM
+copilot.cft.mediacom
+ChildProcessTimeout
+copilot.misc.childprocesstimeout
+HttpRootDir
+copilot.http.httprootdir
+MinNbProcessReady
+copilot.misc.minnbprocessready
+NbProcessToStart
+copilot.misc.nbprocesstostart
+NBWAITCFTCATA
+copilot.cft.nbwaitcftcata
+ServerHost
+copilot.general.serverhost
+ServerPort
+copilot.general.serverport
+SslCertFile
+copilot.ssl.sslcertfile
+SslCertPassword
+copilot.ssl.sslcertpassword
+SslKeyFile
+copilot.ssl.sslkeyfile
+SslKeyPassword
+copilot.ssl.sslkeypassword
+TcpTimeout
+copilot.misc.tcptimeout
+TIMERWAITCFTCATA
+copilot.cft.timerwaitcftcata
+TrcMaxLen
+copilot.trace.trcmaxlen
+TrcType
+copilot.trace.trctype
+wlogComment
+copilot.batches.wlog.comment
+wlogParams
+copilot.batches.wlog.params
+WsiComplience
+copilot.webservices.wsicomplience
+```
+
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace the &lt;script\_filename> with the new script file path.
+
+```
+CFTUTIL <prefix\_character><script\_filename>
+```
 
 Example
 
@@ -105,7 +205,9 @@ You must be at Transfer CFT 2.4.1 SP5 or higher before performing this procedure
 
 1.  Export your PKI certificates using the command PKIUTIL PKIEXT:
 
-<!-- -->
+```
+PKIUTIL PKIEXT fout=pki-extract.conf
+```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -119,7 +221,15 @@ You must be at Transfer CFT 2.4.1 SP5 or higher before performing this procedure
 
 -   Windows: The absolute path value for the CFTPKU environment variable
 
+```
+PKIUTIL PKIFILE fname=<pki\_database\_filename>, mode='CREATE’
+```
+
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path.
+
+```
+PKIUTIL <prefix\_character><script\_filename>
+```
 
 Example
 
@@ -139,7 +249,9 @@ Example
 
 1.  Export the catalog using the command CFTMI240:
 
-<!-- -->
+```
+CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.4\_filename>, ofname=catalog\_output.xml
+```
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -153,6 +265,10 @@ Example
 
 -   Windows: $CFTCATA
 
+```
+CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_installation>
+```
+
 ### Migrating the communication media files
 
 1.  Load the Transfer CFT V2.4 environment.
@@ -161,7 +277,9 @@ Example
 
 1.  Export the communication media file using command CFTMI240:
 
-<!-- -->
+```
+CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.4\_filename>, ofname=com\_output.xml
+```
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -174,3 +292,7 @@ Example
 <!-- -->
 
 -   Windows: $CFTCOM
+
+```
+CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_installation>
+```

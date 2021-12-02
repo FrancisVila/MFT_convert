@@ -13,6 +13,10 @@
 Name of a file that contains a list
 of files selected for sending, where all of the files must be contained in the same folder.
 
+```
+send part=newyork,idf=test,selfname=selfname.txt,fname=#myfolder
+```
+
 > **Note:**
 >
 > When using FACTION=DELETE with SELFNAME, the FNAME must be a directory (not a mask).

@@ -143,6 +143,24 @@ Where:
 
 #### Rules for interpreting DSNGEN
 
+```
+
+Model
+
+Interpretation
+
+DSNGEN\_
+DSN
+DSNGEN\_\_
+DSN\*
+DSNGEN.\_
+DSN.\*
+DSNGEN\_.\_
+DSN\*.\*
+DSNGEN\_.\_\_
+DSN\*.\*\*
+```
+
 **Example of sending 1 file**
 
 `SEND  ..FTYPE=’1’, FNAME=#A.VSAM.FILE_`
@@ -288,6 +306,22 @@ The SGTRACE 12 fine control option enables the recording of detailed traces in t
 Transfer CFT z/OS calls a single external utility at a given time. Memory use is as follows:
 
 **Memory use**
+
+```
+
+Utility
+
+24 bit memory
+
+31 bit memory
+
+IEBCOPY
+1024K
+0
+ADRDSSU
+2048K
+8192K
+```
 
 The CFTPROT RTO=seconds parameter must contain a value expressed in seconds that is large enough to allow the complete operation by the utility on the receiving side.
 

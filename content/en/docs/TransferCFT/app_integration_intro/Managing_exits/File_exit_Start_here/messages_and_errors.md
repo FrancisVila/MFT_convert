@@ -10,3 +10,20 @@ and error codes](../../../../troubleshoot_intro/messages_and_error_codes_start_h
 
 You can also generate your own messages and error messages via the fields
 indicated in the table below.
+
+```
+
+Field
+
+Description
+
+ret2
+Error message (up to eight characters)
+To be defined in case of transfer refusal (ret1 = 9)
+This message appears in the {{< TransferCFT/componentshortname >}} catalog in the DIAGP (protocol
+diagnosis) field 
+msg 
+Error message (up to 512 characters)
+The user function can define this field at each stage
+This message is redirected to the standard output 
+```

@@ -9,6 +9,25 @@ program in C.
 
 Parameter settings
 
+```
+/\* CFTPARM Card \*/
+cftparm id = idparm0          ,
+       
+exiteot = exe1          ,
+.....
+.....
+```
+
+```
+/\* CFTEXIT Card \*/
+cftexit id = exe1          ,
+     language = c          ,
+     type = exec          ,
+     prog = cftexie         ,
+     parm = exe1          ,
+     mode = replace
+```
+
 Structure in C
 
 Refer to the **exeus.h**

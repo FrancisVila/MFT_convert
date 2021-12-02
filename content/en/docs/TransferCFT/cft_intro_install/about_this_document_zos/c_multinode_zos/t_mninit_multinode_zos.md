@@ -24,6 +24,47 @@ Edit the MNINIT JCL located in the INSTALL Library as described in the following
 >
 > You only perform steps 4 and 8 if you are setting up a multi host multi-node configuration (not for a mono host, multi-node configuration).
 
+```
+
+Step
+
+Task
+
+Command or details                                       
+
+0
+Define file size
+ 
+1
+Activate multi-node
+PARM=’UCONFSET ID=cft.multi\_node.enable,value=yes’
+2
+Define the number of nodes
+PARM=’UCONFSET ID=cft.multi\_node.nodes,value=2’
+3
+Add hostname 1
+PARM=’add\_host –hostname xxxxxxx –host xx.xxx.xx.xx’
+4
+Add hostname 2
+(repeat for additional hosts)
+PARM=’add\_host –hostname yyyyyyy –host yy.yyy.yy.yy’
+5
+Create transfer files for each node
+PARM=’cftinit &EXTPARM’
+CFTIN DD DISP=(NEW,PASS),DSN=&&TMPU,
+SPACE=(TRK,(1)),DCB=(RECFM=VB,LRECL=1024,DSORG=PS)
+6
+Enable node 0
+PARM='enable\_node -n 0'
+7
+Enable node 1 (repeat for additional nodes)
+PARM=’enable\_node –n 1’
+8
+Customize the Copilot server address
+PARM=uconfset
+ID=copilot.GENERAL.ServerHost,value=&COPVIPA'
+```
+
 > **Note:**
 >
 > JCL variables to customize as described in the table above:

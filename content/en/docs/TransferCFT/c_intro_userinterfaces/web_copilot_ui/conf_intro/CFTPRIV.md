@@ -20,6 +20,16 @@ Privileges give users authorization to access and perform actions in the user in
 
 Example of CFTPRIV in a configuration file:
 
+```
+CFTPRIV      ID          = 'MYPRIV1',
+            COMMENT     = 'My comment',
+             RESOURCE    = 'TRANSFER',
+             ACTIONS     = ( 'CREATE' , 'DELETE', 'VIEW', 'EDIT', 'CANCEL', 'RESUME',
+                            'PAUSE', 'EXECUTE', 'SUBMIT', 'END' ),
+             CONDITION   = '',
+             ORIGIN      = 'CFTUTIL',
+             MODE        = 'REPLACE'
+```
 <span id="Specifyi"></span>
 
 ### Specifying conditions
@@ -29,6 +39,11 @@ Conditions allow you to assign finer control on resources and actions by specify
 Examples
 
 In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+
+```
+PART=="PARIS" && ID=="IDFDEF"
+(PART=="PARIS" || PART==”NEWYORK”) && ID~="IDF\*"
+```
 
 Comparison operators include:
 

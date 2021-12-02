@@ -14,9 +14,23 @@ Begin the installation process by uploading the Transfer CFT installation packag
 
 1.  Log in with the **CFTINST** user.
 2.  Create a temporary library:  
+    ```
+    CRTLIB CFTTMP
+    ```
 3.  Create a SAVF file:  
+    ```
+    CRTSAVF FILE(CFTTMP/CFT37)
+    ```
 4.  Upload the installation package to the SAVF in binary mode using FTP:  
+    ```
+    binary
+    cd CFTTMP
+    put Transfer\_CFT\_os400.bin CFT37
+    ```
 
 <!-- -->
 
 1.  Restore the SAVF file:  
+    ```
+    RSTLIB SAVLIB(CFTPG) DEV(\*SAVF) SAVF(CFTTMP/CFT37) OPTION(\*NEW) RSTLIB(CFTTMP)
+    ```

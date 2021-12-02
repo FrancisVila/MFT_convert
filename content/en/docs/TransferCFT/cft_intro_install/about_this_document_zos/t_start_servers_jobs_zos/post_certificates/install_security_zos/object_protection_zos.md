@@ -21,11 +21,26 @@
 
 Depending on the Transfer CFT command and parameter values , the Transfer CFT programs determine the ACTION type and OBJET name, whose properties are obtained from the ACTION (SECACT) and OBJECT (SECOBJ) dictionaries respectively. The VALUE field is set according to information in the file or command. The resource name passed to RACF has the following format:
 
+```
+Object\_Name.Set\_value
+```
+
 Depending on the object definition and the Transfer CFT configuration, RACF receives the following resource names:
+
+```
+CFTPARM.IDPARM0
+      CFTSEND.DEFAULT     
+      CFTRECV.DEFAULT     
+      CFTAPPL.DEFAULT   
+```
 
 ### Resource access control
 
 Commands relating to specific information, CFTPARM for example, generate a single RACF control with the following format:
+
+```
+CFTPARM.IDPARM0    USER(usercmd)  ACCESS(create)
+```
 
 Where:
 
@@ -35,9 +50,20 @@ Where:
 
 Commands relating to generic information, LISTPARM TYPE=ALL for example, generate a RACF control with the following format:
 
+```
+ALL\_PARM.CFTV2.PARM   USER(usercmd)  ACCESS(read)
+```
+
 If the RACF return code is equal to zero, the Transfer CFT program lists all entries in the parameter file (PARM).
 
 If the RACF return code is different from zero, the Transfer CFT program generates the following RACF controls:
+
+```
+CFTPARM.IDPARM0USER(usercmd)    ACCESS(read)
+CFTSEND.DEFAULT      USER(usercmd)    ACCESS(read)
+CFTRECV.DEFAULT     USER(usercmd)    ACCESS(read)
+CFTAPPL.DEFAULT      USER(usercmd)    ACCESS(read)
+```
 
 If the RACF return code is equal to zero, the Transfer CFT program lists the entry.
 
@@ -55,6 +81,13 @@ If users in the grpaprm group are the only ones intended to modify CFTxxx comman
 
 However, if specific authorizations must be granted to some users, declare the definitions in RACF as follows:
 
+```
+RDEFINE safcftcl    CFTRECV.DEFAULT UACC(NONE) OWNER( grpcft )
+PERMIT   CFTRECV.DEFAULT   CLASS( safcftcl )    ACCESS(CONTROL) -
+ID( grpcft   grpaprm   usera   userb   and so on  )
+CONNECT   usera   GROUP( grpfprm ) OWNER( grpcft )
+CONNECT   userb   GROUP( grpfprm ) OWNER( grpcft )
+```
 <span id="Controll2"></span>
 
 #### Control via ALL\_xxx objects
@@ -75,6 +108,14 @@ Only users in the grpdesk group are supposed to execute these commands. The defi
 The SEND, RECV, START, DELETE, HALT, KEEP, END and SUBMIT commands are controlled by the APPL object, and are dependent on the relevant CFTAPPL command ID.
 
 If the following definitions are declared in the PARM file:
+
+```
+CFTPARM ID=IDPARM0,DEFAULT=DEFAULT, …
+CFTSENDID=DEFAULT,IMPL=NO, …
+CFTRECV   ID=DEFAULT,USERID=USRTSO, …
+CFTAPPL   ID=DEFAULT,USERID=&USERID, …
+CFTAPPL   ID=TEXT,USERID=USRTSO2, …
+```
 
 The parameter file CFTAPPL command is used to define the transfer owner. There are two possible scenarios for CFTAPPL, explicit and implicit definitions.
 
@@ -116,14 +157,43 @@ TRANSFER and COMMUT objects are used to check if the transfer owner has the righ
 
 If the following definitions are declared in the PARM file:
 
+```
+CFTPARM ID=IDPARM0,DEFAULT=DEFAULT, …
+CFTSEND   ID=DEFAULT,IMPL=NO, …
+CFTRECV   ID=DEFAULT,USERID=USRTSO, …
+CFTAPPL   ID=DEFAULT,USERID=&USERID, …
+CFTAPPL   ID=TEXT,USERID=USRTSO2, …
+CFTPART   ID=BANK, … 
+```
+
 If the Usrtso1 user, belonging to the GRPTRF group, submits the command:
+
+```
+SEND IDF=TEXT,PART=BANK,FNAME=CFTV2.TEST.CHECK
+```
 
 Then the transfer is rejected unless Usrtso2, the transfer owner, corresponds to an RACF profile of the type:
 
+```
+RDEFINE safcftcl TRANSFER.TEXT.S.BANK.CFTV2.TEST.\*  -
+UACC(NONE) OWNER(GRPCFT)
+PERMIT TRANSFER.TEXT.S.BANK.CFTV2.TEST.\* CLASS(safcftcl) –
+ID(Usrtso2) ACCESS(CONTROL)
+```
+
 In server mode or if the Usrtso1 user submits the following command in requester mode:
+
+```
+RECV IDF=TEXT,PART=BANK,FNAME=CFTV2.TEST.CHECK
+```
 
 The transfer is rejected unless Usrtso2, the transfer owner, corresponds to an RACF profile of the type (in receive mode, the &FNAME variable is ignored if it is in the TRANSFER object definition):
 
+```
+RDEFINE safcftcl TRANSFER.TEXT.R.BANK UACC(NONE) OWNER(GRPCFT)
+PERMIT TRANSFER.TEXT.R.BANK CLASS(safcftcl) –
+ID(Usrtso2) ACCESS(CONTROL)
+```
 <span id="Controll6"></span>
 
 #### Control MESSAGE type transfers
@@ -132,13 +202,39 @@ MESSAGE objects are used to check if the transfer owner has the right to send/re
 
 If the Usrtso1 user submits the command:
 
+```
+SEND IDM=TEXT,TYPE=MESSAGE,PART=BANK,MSG='SEND SUCCESSFUL'
+```
+
 Then the transfer is rejected unless Usrtso2, the transfer owner, corresponds to an RACF profile of the type:
+
+```
+RDEFINE safcftcl MESSAGE.TEXT.S.BANK UACC(NONE) OWNER(GRPCFT)
+PERMIT MESSAGE.TEXT.S.BANK CLASS(safcftcl)-
+ID(Usrtso2) ACCESS(CONTROL)
+```
 
 If the Usrtso1 user submits the command:
 
+```
+RECV IDM=TEXT, TYPE=REPLY, PART=BANK, IDT= C3110510, MSG='ACKNOWLEDGED'
+```
+
 Then the transfer is rejected unless Usrtso2, the transfer owner, corresponds to an RACF profile of the type:
 
+```
+RDEFINE safcftcl MESSAGE.TEXT.S.BANK UACC(NONE) OWNER(GRPCFT)
+PERMIT MESSAGE.TEXT.S.BANK CLASS(safcftcl) –
+ID(Usrtso2 GRPTRF) ACCESS(CONTROL)
+```
+
 The BANK partner Transfer CFT (if authorized) receives the response if the Usrtso3 user owning the transfer with IDT=C3110510 corresponds to an RACF profile type:
+
+```
+RDEFINEsafcftcl MESSAGE.TEXT.R.BANK UACC(NONE) OWNER(GRPCFT)
+PERMIT MESSAGE.TEXT.R.BANK CLASS(safcftcl) –
+ID(Usrtso3) ACCESS(CONTROL)
+```
 
 > **Note:**
 >

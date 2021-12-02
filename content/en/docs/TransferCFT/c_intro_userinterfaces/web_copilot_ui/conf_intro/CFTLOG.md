@@ -36,6 +36,15 @@ topics
 
 This command defines the log file names:
 
+```
+CFTLOG    ID = IDLOG,
+          FNAME = filename1,
+          AFNAME = filename2,
+          SWITCH = 2030,
+          EXEC = procfname,
+          OPERMSG = 240
+```
+
 Automatic switching is scheduled for 20:30. The procedure initiated
 at the time of switching is located in the file named by the EXEC parameter.
 

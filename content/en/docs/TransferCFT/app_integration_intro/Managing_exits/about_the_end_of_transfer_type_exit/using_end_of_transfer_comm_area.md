@@ -33,8 +33,22 @@ CFT <span style="font-weight: bold;">prior</span> to V2.4, you can continue
 to use the following communication structure exitdU between the interface
 and the user program:
 
+```
+typedef union {
+     EXEusC exeC;
+     EXEusO exeO;
+} EXEdU, \*EXEdUp;
+```
+
 To create an exit using the V2.4 format exitdnT communication
 structure between the interface and the user program is defined below:
+
+```
+typedef union {
+     EXEusC exeC;
+     EXEusO exeO;
+} EXEdnU, \*EXEdnUp;
+```
 
 The choice of structure depends on the programming language used:
 

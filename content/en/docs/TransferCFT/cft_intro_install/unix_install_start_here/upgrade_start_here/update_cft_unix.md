@@ -31,9 +31,17 @@ Stop {{< TransferCFT/componentshortname  >}} prior to installing a service pack 
 
 Use the following command to update Transfer CFT in silent mode:
 
+```
+./Transfer\_CFT\_3.6\_<Install/SP/Patch><OS><BN>.run --mode unattended --installdir <installation\_directory>
+```
+
 ### Update in text mode
 
 Use the following command to update Transfer CFT in text mode:
+
+```
+`./Transfer_CFT_3.6_<Install/SP/Patch>_<OS>_<BN>.run --mode text`
+```
 
 ## Uninstall an update
 
@@ -42,6 +50,10 @@ This section describes uninstalling a patch or service pack.
 To uninstall install the previous patch or service pack. For example, to remove Transfer CFT 3.6 SP2, from the Transfer CFT 3.6 SP1 kit, run the installation pointing to the Transfer CFT 3.6 SP2 installation directory. The installer detects and replaces the SP2 content, impacting only the `home `directory.
 
 **Example**
+
+```
+./Transfer\_CFT\_3.6\_SP1\_<OS>\_<BN>.run --mode text
+```
 
 To verify, from the Transfer CFT &lt;runtime\_dir> run the `about `command.
 

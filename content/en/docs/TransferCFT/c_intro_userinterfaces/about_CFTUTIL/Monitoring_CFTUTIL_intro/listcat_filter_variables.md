@@ -10,3 +10,31 @@
 -   \_LISTCAT\_FREE\_P: displays the number of available records as a percentage of the total number of records
 
 **Example**
+
+```
+CFTUTIL
+...
+LISTCAT
+PRINT MSG='NbSelected = %\_LISTCAT\_SELECTED%'
+PRINT MSG='NbTotal = %\_LISTCAT\_CAT%'
+PRINT MSG='NbFree = %\_LISTCAT\_FREE%'
+PRINT MSG='Percent free= %\_LISTCAT\_FREE\_P%'
+ 
+ 
+**Results**
+------------------------------------
+BCLPM SFT XX TGTG E0216242 1 1 0 CP 88%
+BCLPRM RFT XX TGTG E0216242 1 1 0 CP 88%
+2 record(s) selected
+1000 record(s) in Catalog file
+998 record(s) free (99%)
+CFTU00I LISTCAT \_ Correct ()
+NbSelected = 2
+CFTU00I PRINT \_ Correct (MSG='NbSelected = 2')
+NbTotal = 1000
+CFTU00I PRINT \_ Correct (MSG='NbTotal = 1000')
+NbFree = 998
+CFTU00I PRINT \_ Correct (MSG='NbFree = 998')
+Purcent free= 99
+CFTU00I PRINT \_ Correct (MSG='Percent free= 99')
+```

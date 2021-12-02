@@ -77,6 +77,19 @@ Example 1
 
 CFTRECV
 
+```
+MODE = REPLACE,
+ 
+ID = SRCFILES,
+/\* IDF for source files \*/
+FDISP = BOTH
+/\* already exists or not \*/
+FACTION = ERASE,
+/\* if exists erase \*/
+XLATE = ETOA
+/\* with this table  \*/
+```
+
 The set of parameters corresponding to this command is used, during
 a data receive transfer, if the explicit value of the transfer IDF is
 "SRCFILES".  
@@ -89,6 +102,14 @@ file name (open mode for receive transfers).
 Example 2
 
 CFTRECV
+
+```
+MODE = REPLACE,
+ID = IDFDEF, /\* default IDF \*/
+FDISP = BOTH, /\* already exists or not \*/
+FACTION = DELETE, /\* if exists - delete \*/
+FNAME = &IDT /\* file as per IDT value \*/
+```
 
 This command corresponds to the data receive transfer case where the
 identifier (IDF) has no explicit description (CFTRECV object). This is

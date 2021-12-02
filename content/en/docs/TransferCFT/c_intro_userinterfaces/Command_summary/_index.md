@@ -697,13 +697,16 @@ Syntax
 See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional parameter details.
 
 [IDF](parameter_intro/idf) = string
+&lt;/p>
 
 [PART](parameter_intro/part) = string
+&lt;/p>
 
 [SCANDIR](../web_copilot_ui/flow_def_intro/cftfolder#SCANDIR)
-= string
+= string&lt;/p>
 
 [WORKDIR](../web_copilot_ui/flow_def_intro/cftfolder#WORKDIR) = string
+&lt;/p>
 
 \[ ARCHIVEDIR = string \]
 

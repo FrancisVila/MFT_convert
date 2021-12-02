@@ -9,6 +9,10 @@
 
 **Example**
 
+```
+CFTUTIL SEND part=PART, idm=MSG, type=message, msg=’hello’CFTUTIL DISPLAY content=msg, fout=msgfile, direct=recv, idt=IDT
+```
+
 **Result**
 
 The resulting msgfile will contain the message 'hello'.
@@ -19,6 +23,34 @@ The resulting msgfile will contain the message 'hello'.
 
 ### Sending messages
 
+```
+
+Parameters
+
+Description
+
+[IDA](../../../c_intro_userinterfaces/command_summary/parameter_intro/ida) 
+Local transfer identifier assigned by the user or user application.
+[IDM](../../../c_intro_userinterfaces/command_summary/parameter_intro/idm) 
+Message identifier.
+[PART](../../../c_intro_userinterfaces/command_summary/parameter_intro/part) 
+Transfer partner identifier.
+[TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type) =
+MESSAGE
+Characterizes a message send request.
+OPTIONAL PARAMETERS
+for [SEND](../send_command_basics)
+The optional common parameters form the SEND subset, used for sending a message (but not applicable to files).
+```
+
 #### Example
 
 A message using the identifier ANDREW.
+
+```
+SEND
+IDM = ANDREW,
+MSG = ‘ANDREW: call PETER ’,
+PART = HQ,
+TYPE = MESSAGE,
+```

@@ -38,9 +38,9 @@ The following table lists the Sentinel parameters in the unified configuration a
 | Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
 | --- | --- | --- |
 | sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
-|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg)  |
-|  sentinel.xfb.shut  |  0  |  XFB.Shut (trkapi.cfg)  |
-|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.shut  |  0 &lt;/p&gt;  |  XFB.Shut (trkapi.cfg) &lt;/p&gt;  |
+|  sentinel.xfb.log  |  IEWF <blockquote> **Note:**<br/>To disable, set to ' '. </blockquote>  |  XFB.Log (trkapi.cfg) &lt;/p&gt;  |
 |  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
 |  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
 |  sentinel.trklenmsg  |   |  TRKLENMSG  |
@@ -116,6 +116,10 @@ If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT Ev
 
 **Example**
 
+```
+uconfset id=cft.cftlog.time\_precision, value=10
+```
+
 -   1 (default): the time in CFTLOG displays in seconds
 -   10: the time in CFTLOG displays in tenths of seconds
 -   100: the time in CFTLOG displays in hundredths of seconds
@@ -123,3 +127,7 @@ If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT Ev
 If the` cft.cftlog.time_precision` value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
+
+```
+uconfset id=cft.cftlog.time\_precision, value=10
+```

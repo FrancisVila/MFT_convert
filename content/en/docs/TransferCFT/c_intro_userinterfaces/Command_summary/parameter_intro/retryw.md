@@ -21,6 +21,16 @@ When specifying multiple hosts in CFTTCP and PROTs/SAPs in CFTPART, Transfer CFT
 
 For example, if RETRYN is set to 1 and there are two defined hosts and two PROTs/SAPs as shown here:
 
+```
+CFTTCP ...
+HOST = ( 'IP1',
+'IP2'),
+CFTPART ... PROT = ( 'PROT1',
+'PROT2),
+           SAP = ( 'SAP1',
+'SAP2'),
+```
+
 The retry order is as follows:
 
 -   IP1 SAP1 PROT1 (first host, first protocol)

@@ -26,14 +26,47 @@ Example
 
 To display the 10 most recent lines in the log:
 
+```
+CFTUTIL listlog lines=-10
+```
+
 To list the log for nodes 0 through 3, use any one of the following formats:
+
+```
+CFTUTIL listlog node='(0,1,2,3)'
+CFTUTIL listlog node='(00,01,02,03)'
+CFTUTIL listlog node='('0','1','2','3')'
+CFTUTIL listlog node='('00','01','02','03')'
+```
 
 To display the fatal errors since yesterday:
 
+```
+CFTUTIL listlog loglevel=F, datemin=110807 or CFTUTIL listlog loglevel=F, datemin=-1
+```
+
 To display the errors that match the pattern \*TEST\*:
+
+```
+CFTUTIL listlog loglevel=E, pattern="\*TEST\*"
+```
 
 Command parameter types
 
+```
+COMMAND LISTLOG USAGE
+LOGLEVEL D S 12 <I> 'FATAL','ERROR','WARNING','INFORMATION','F','E','W','I'
+LINES N X 4 Number <-100> min=-10000 max=10000
+DATETIMEMIN N N 14 Number <0> min=0 max=99123123595999
+DATETIMEMAX N N 14 Number <99123123595999> min=0 max=99123123595999
+DATEMIN N N 6 Number <0> min=-3660 max=991231
+DATEMAX N N 6 Number <991231> min=-3660 max=991231
+TIMEMIN N N 8 Number <0> min=-1440 max=23595999
+TIMEMAX N N 8 Number <23595999> min=-1440 max=23595999
+PATTERN s S 64 string max\_length=63
+DISPLAYNODEID S N 1 <YES> 'YES','NO'
+NODE S L 2 \*99 STRING LIST max\_length=1 max\_entries=99
+```
 <span id="Time"></span>
 
 ### Time log precision
@@ -47,3 +80,7 @@ By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. 
 If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
+
+```
+uconfset id=cft.cftlog.time\_precision, value=10
+```

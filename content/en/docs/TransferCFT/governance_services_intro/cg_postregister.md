@@ -40,7 +40,15 @@ To force a certificate renewal, execute the following commands. To force an imme
 
 #### Set the following parameter to renew the governance certificate
 
+```
+CFTUTIL UCONFSET id=cg.certificate.governance.renewal\_datetime, value=YYYYMMDDHHMMSS
+```
+
 #### Set the following parameter to renew the business certificate
+
+```
+CFTUTIL UCONFSET id=cg.certificate.business.renewal\_datetime, value=YYYYMMDDHHMMSS
+```
 
 Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 2019, 12:30 has the value 20190807123000.
 
@@ -56,10 +64,16 @@ You can configure the key length for either a governance or business certificate
 > If you modify the key length of the governance certificate and you use access tokens, please refer to the Access Token and Bearer authentication sections for details before proceeding.
 
 1.  Modify the UCONF parameters:  
+    ```
+    CFTUTIL uconfset id=cg.certificate.governance.key\_len, value=4096
+    CFTUTIL uconfset id=cg.certificate.business.key\_len, value=4096
+    ```
 2.  Trigger a certificate renewal, for example by setting the UCONF `cg.certificate.<type>.renewal_datetime` parameter to a date that has passed (example, "20200101000000").
 3.  Perform a Transfer CFT and a Copilot restart.
 4.  To perform a check:  
-      
+    ```
+    PKIUTIL LISTPKI TYPE=USER, CONTENT=FULL | grep "Private Key type"
+    ```  
     The result should be: `Private Key type  RSA      =  4096 bits`
 
 ## Product updates

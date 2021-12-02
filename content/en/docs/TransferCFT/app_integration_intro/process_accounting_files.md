@@ -51,12 +51,53 @@ Perform the following steps if you are running on a z/OS system.
 
 Syntax
 
+```
+EXACCT <install\_dir>/runtime/accnt/cftaccnt
+```
+
 ### Windows example
 
 Syntax
 
+```
+EXACCT <install\_dir>\\home\\distrib\\template\\src\\exit
+```
+
 ### z/OS example
+
+```
+//S1 EXEC PGM=EXACCT,PARM='acount\_file\_name'
+//SYSPRINT DD SYSOUT=\*
+//SYSOUT DD SYSOUT=\*
+```
 
 ## Results
 
 All operating systems should have a resulting file similar to the following:
+
+```
+ACCOUNT FILE
+------------
+Transfer id. IDT
+B2508304
+Direct DIRECT = RECV
+Mode MODE = REQUESTER
+Type TYPE = FILE
+ 
+Item type DIFTYP = SINGLE
+ 
+Logic file identifier IDF = TEST
+Logic file network id NIDF = TEST
+Protocol identifier PROT = PESITSSL
+File Name FNAME =
+\*recv/FTEST
+...
+\*
+ 
+Receiver application RAPPL =
+\*
+Record format FRECFM = U
+length FLRECL = 04096
+File compression NCOMP = 00
+Bytes FCARS = 0000007104
+```

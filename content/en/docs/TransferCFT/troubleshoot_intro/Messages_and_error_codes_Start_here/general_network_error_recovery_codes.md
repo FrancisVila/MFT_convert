@@ -17,3 +17,40 @@ in case of ambiguity:
 The codes are expressed in decimal form.
 
 RECOV - General Network Error Recovery Codes
+
+```
+
+Code
+</th>
+
+Meaning
+</th>
+
+1
+Normal remote end disconnection
+2
+L=1 Local time-out
+L=0 Network time-out
+3
+L=1 Insufficient local resources
+L=0 Protocol procedure error
+4
+No more contexts available
+5
+Incoming connection request while the maximum number of
+sessions (MAXCNX) for this resource has been reached
+9
+Other non-fatal problems
+64
+Invalid call syntax
+67
+Incorrect remote address
+68
+Incorrect local address
+99
+The resources are temporarily unavailable
+128
+Malfunctions on the network
+ 
+Undefined refusal reason
+```

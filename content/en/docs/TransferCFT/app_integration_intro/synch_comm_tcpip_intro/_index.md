@@ -30,9 +30,18 @@ Use the CFTCOM command to define the synchronous communication settings. In the 
 
 **Example**
 
+```
+CFTUTIL CFTCOM ID=COMS, TYPE=TCPIP, HOST=localhost, PORT=1765, PROTOCOL=XHTTP, DISCTS=60
+CFTUTIL uconfset id=cft.server.cftcoms.max\_connection, value=256
+```
+
 If you manually configure synchronous communication in Transfer CFT, remember to add the COMS identifier in the CFTPARM COM parameter.
 
 Resulting LOG message after a Transfer CFT restart
+
+```
+CFTI18I+ TYPE : XHTTP HOST : 127.0.0.1 PORT : 1765
+```
 
 ### Configure the client
 
@@ -44,6 +53,11 @@ On the client side perform one of the following configuration procedures, depend
 
 Start a CFTUTIL session and perform the following commands.
 
+```
+CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=XHTTP://localhost:1765
+<execute requests in same session>
+```
+
 Use a configuration file to define the synchronous communication, where the file should contain at least the following elements:
 
 -   # TCP/IP COMMUNICATION
@@ -53,19 +67,36 @@ Use a configuration file to define the synchronous communication, where the file
 
 Start a CFTUTIL session and perform the following commands.
 
+```
+ CONFIG TYPE=COM, FNAME=<path><config\_file>
+<execute requests in same session>
+```
+
 #### API
 
 The API configuration consists of using a configuration file (the same elements as in a simple client configuration).
 
+```
+cftau ("COM",C=<path><config\_file>);
+```
+
 #### JPI
 
 JPI client configuration consists of using a configuration file (the same elements as in a simple client configuration).
+
+```
+CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config\_file>’
+```
 
 #### Web services
 
 When using web services the default media identifier used is the first once declared in the general CFTPARM object. Additionally, you can override this in the web services XML file by adding the desired COM using the format `<axw:CFTCOM_ID>COM0</axw:CFTCOM_ID>` in the SOAP request.
 
 #### Transfer CFT UI
+
+```
+CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config\_file>’
+```
 
 When using the Transfer CFT UI the first media identifier listed in the server's parameter file (CFTPARM) is used. So for example, if CFTPARM ID = IDPARM0, where COM = (COM0, COM1), the COM0 media is used.
 

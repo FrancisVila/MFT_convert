@@ -16,10 +16,15 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 1.  Load the former Transfer CFT 3.x environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
+    ```
+    CFTUTIL CFTEXT type=all, fout=cft-extract.conf
+    ```
 3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 4.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 5.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 6.  Import your static configuration objects using the cftinit command. Enter:  
+    ```
+7.  cftinit cft-extract.conf
 
 ### Migrating PKI certificates
 
@@ -27,11 +32,16 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
-3.  Copy all files that are referenced in the pki-extractconf file (INAME OR IKNAME) to the folder where you are going to execute the PKI command on the new version. In the following example, copy ROOT0001 to the new folder in Transfer CFT {{< TransferCFT/releasenumber >}}.
-4.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
-5.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;`pki_database_filename`&gt; with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:
-6.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;`prefix_character`&gt; based on your system, @ for UNIX and # for Windows.  
+    ```
+3.  PKIUTIL PKIEXT fout=pki-extract.conf
+4.  Copy all files that are referenced in the pki-extractconf file (INAME OR IKNAME) to the folder where you are going to execute the PKI command on the new version. In the following example, copy ROOT0001 to the new folder in Transfer CFT {{< TransferCFT/releasenumber >}}.
+5.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
+6.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;`pki_database_filename`&gt; with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:
+7.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;`prefix_character`&gt; based on your system, @ for UNIX and # for Windows.  
     Enter:  
+    ```
+    PKIUTIL <prefix\_character>pki-extract.conf
+    ```
 
 ### Migrating the runtime environment
 
@@ -41,15 +51,27 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export the catalog using the command `CFTMI`. Replace the &lt;c`atalog_filename` > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
+    ```
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_former\_cft>, ofname=catalog\_output.xml
+    ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
+    ```
+    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_cft >
+    ```
 
 #### Migrating the communication media files
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX, or $CFTCOM for Windows. Enter:  
+    ```
+    CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com\_filename\_former\_cft>, ofname=com\_output.xml
+    ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
+    ```
+    CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_cft >
+    ```
 
 #### Executables and binaries
 
@@ -67,9 +89,15 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
+    ```
+    CFTUTIL CFTEXT type=all, fout=cft-extract.conf
+    ```
 3.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 4.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 5.  Import your static configuration objects using the cftinit command. Enter:  
+    ```
+    cftinit cft-extract.conf
+    ```
 
 ### Migrating PKI certificates
 
@@ -77,9 +105,18 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
+    ```
+    PKIUTIL PKIEXT fout=pki-extract.conf
+    ```
 3.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
+    ```
+    PKIUTIL PKIFILE fname=<pki\_database\_filename>, mode='CREATE’
+    ```
 5.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
+    ```
+    PKIUTIL <prefix\_character>pki-extract.conf
+    ```
 
 ### Migrating the runtime environment
 
@@ -89,8 +126,14 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export all catalogs (one per node, named as cftcataXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each catalog. Enter:  
+    ```
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_former\_cft\_node\_<node>>, ofname=catalog\_output\_<node>.xml
+    ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import all catalogs using the command CFTMI for each of them. Use the same node number on both &lt;node> on command. Enter:  
+    ```
+    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output\_<node>.xml, ofname=<catalog\_filename\_new\_cft\_node\_<node>>
+    ```
 
 #### Migrating the communication media files
 

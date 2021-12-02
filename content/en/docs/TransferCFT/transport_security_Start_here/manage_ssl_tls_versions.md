@@ -17,7 +17,7 @@ cft.ssl\_version\_min: This UCONF parameter sets the minimum SSL version that Tr
 
 cft.ssl\_version\_max: This UCONF parameter sets the maximum SSL version that Transfer CFT will accept when communicating with another partner, as either client or server. The default value for this parameter is TLS 1.2.
 
-### About {{< TransferCFT/hflongproductname  >}} SSL connections
+### About {{< TransferCFT/hflongproductname  >}} SSL connections &lt;/h3>
 
 In Transfer CFT, the SSL/TLS version is proposed by the client and negotiated with the server.
 

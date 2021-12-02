@@ -19,9 +19,25 @@ Defines the local file encoding.
 
 To translate a local text file before sending it, for example from UTF-8 to UTF-16, using Transfer CFT mapping:
 
+```
+CFTUTIL SEND PART = NEWYORK,
+IDF = TEST\_UTF-8,
+FCHARSET = CFT\_UTF-8,
+NCHARSET = CFT\_UTF-16,
+FTYPE = T
+```
+
 **Example 2**
 
 To translate a local text file before sending it, for example from UTF-8 to UTF-16:
+
+```
+CFTUTIL SEND PART = NEWYORK,
+IDF = TEST\_UTF-8\_2,
+FCHARSET = UTF-8,
+NCHARSET = UTF-16,
+FTYPE = T
+```
 
 See also [ncharset](../ncharset) and *[Using character sets for transcoding](../../../../concepts/transfer_command_overview/use_extended_character_sets).*
 

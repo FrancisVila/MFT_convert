@@ -57,12 +57,21 @@ edit the following script:
 To determine the Transfer CFT variable values list the values using
 the command:
 
+```
+CFTUTIL listuconf
+```
+
 To change or update a value, start the Transfer CFT profile
 and make modifications using either the Transfer CFT Copilot UI or command line UCONF tools. Refer to Transfer
 CFT online
 documentation for details.
 
 For example, to change the user interface port:
+
+```
+CFTUTIL
+uconfset id=copilot.general.serverport,value=1766
+```
 
 ### Configuration
 
@@ -86,17 +95,38 @@ in the following file:
 Start the Transfer CFT profile and, to create the Transfer CFT
 internal datafile and update the basic configuration, execute:
 
+```
+cftinit
+cft-tcp.conf
+```
+
 To update the configuration at a later date, execute:
+
+```
+cftupdate
+cft-tcp.conf
+```
 
 ### User interface configuration
 
 To view the Copilot user interface configuration, execute:
+
+```
+CFTUTIL
+LISTUCONF id=copilot\*
+```
 
 To change this configuration, you update the hostname and listening
 port for Transfer CFT UI using CFTUTIL
 `uconfset`.
 
 **Example**
+
+```
+CFTUTIL
+uconfset id=copilot.general.serverhost, value="127.0.0.1"CFTUTIL
+uconfset id=copilot.general.serverport, value="7000"
+```
 
 ### Configuration for Service Mode
 
@@ -117,6 +147,12 @@ If you have implemented , starting Copilot launches the registration process. Fo
 
 **UNIX**
 
+```
+cd <CFTDIRRUNTIME>
+. . /profile
+copstart
+http://myHostName:1766
+```
 <span id="Start2"></span>
 
 ## Start Transfer CFT
@@ -125,6 +161,9 @@ If you have implemented , you can start and stop Transfer CFT via the Central {{
 
 Enter:
 
+```
+` cft start`
+```
 <span id="Service"></span>
 
 ## Service mode set up when using

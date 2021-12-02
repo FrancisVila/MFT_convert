@@ -16,6 +16,10 @@ Filters the LISTCAT or DISPLAY output.
 
 Example
 
+```
+CFTUTIL listcat part = paris, Serialized = Yes
+```
+
 This example displays all serialized transfer records where the PART\[ner\] is PARIS.
 
 See also, [Serial](../serial) and [Transfer serialization](../../../../app_integration_intro/transfer_serialization).

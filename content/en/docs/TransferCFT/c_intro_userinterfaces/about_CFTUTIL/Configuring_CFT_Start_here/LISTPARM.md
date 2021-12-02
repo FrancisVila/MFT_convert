@@ -22,7 +22,17 @@ the execution report is written on the standard CFTUTIL program output.
 
 Example
 
+```
+LISTPARM       TYPE
+= ALL
+```
+
 Displays all the parameters contained in the PARAMETER file.
+
+```
+LISTPARM         TYPE
+= SEND
+```
 
 Displays the parameters of all the CFTSEND objects configured.
 

@@ -69,12 +69,23 @@ This example uses a relative fname to send a file that is not in the default dir
 
 Server:
 
+```
+CFTRECV id = IDF1, fname = b.txt, WORKINGDIR=/home/user02
+```
+
 Client:
+
+```
+CFTSEND id = IDF1, WORKINGDIR = /home/user01
+```
 
 User01:
 
 The application that is running under the user01 system account sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.
 
+```
+> CFTUTIL send idf=IDF1, part=PART1,fname=a.txt
+```
 <span id="Workingd2"></span>
 
 #### Workingdir and directory tree control
@@ -83,12 +94,23 @@ In this example, the application that is running under the user01 system account
 
 Server:
 
+```
+CFTRECV id = IDF2,fname = b.txt, WORKINGDIR = /home/user02
+```
+
 Client:
+
+```
+CFTSEND id = IDF2, WORKINGDIR = /home/user01/pub
+```
 
 User01:
 
 The application that is running under the user01 system account tries to send the home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.
 
+```
+> CFTUTIL send idf=IDF2, part=PART1, fname=home/user01/priv/a.txt
+```
 <span id="Workingd3"></span>
 
 #### Workingdir using the &HOME symbolic variable (example 1)
@@ -99,12 +121,24 @@ At the end of the transfer, the Transfer CFT server executes a reply.cmd script 
 
 Server:
 
+```
+CFTRECV id = IDF3, fname = &FROOT, exec = exec/reply.cmd,
+        WORKINGDIR = &HOME, userid = &ruser
+```
+
 Client:
+
+```
+CFTSEND  id = IDF3,  WORKINGDIR = &HOME
+```
 
 User01:
 
 The application that is running under the user01 system account sends the 'file\_to\_send' file to the remote partner PART1 using the transfer flow IDF3.
 
+```
+SEND idf = IDF3, part = PART1, fname = 'file\_to\_send', RUSER='"user02"'
+```
 <span id="Workingd4"></span>
 
 #### Workingdir using the &HOME symbolic variable (example 2)
@@ -115,11 +149,23 @@ The file to send is in user01's home directory. The file is received in user02's
 
 Server:
 
+```
+CFTRECV fname = &FROOT, exec = &HOME/exec/reply.cmd, WORKINGDIR = &HOME, userid = &ruser
+```
+
 Client:
+
+```
+CFTSEND id = IDF4, WORKINGDIR = &HOME
+```
 
 User01:
 
 The application that is running under the user01 system account sends the ‘file\_to\_send’ file to the remote partner PART1 using the transfer flow IDF4.
+
+```
+> CFTUTIL send idf = IDF4, part = PART1, fname = 'file\_to\_send', RUSER='"user02"'
+```
 
 ## Using working directory in IBM i and z/OS
 
@@ -165,12 +211,23 @@ The example command sends the file `/home/user01/a.txt`, which on reception is `
 
 Server:
 
+```
+CFTRECV id = IDF1, fname = “b.txt”, WORKINGDIR = “/home/user02”
+```
+
 Client:
+
+```
+CFTSEND id = IDF1, WORKINGDIR = “/home/user01”
+```
 
 User01:
 
 The application sends the a.txt file to the remote partner PART1 using the transfer flow IDF1.
 
+```
+> CFTUTIL send idf = IDF1, part = PART1, fname = “a.txt”
+```
 <span id="Workingd8"></span>
 
 #### Workingdir and HFS directory tree control
@@ -179,10 +236,17 @@ In this example, the application tries to send a file that is outside the workin
 
 Client:
 
+```
+CFTSEND id = IDF2, WORKINGDIR = “/home/user01/pub”
+```
+
 User01:
 
 The application tries to send the /home/user01/priv/a.txt file to the remote partner PART1 using the transfer flow IDF2.
 
+```
+> CFTUTIL send idf = IDF2, part = PART1,fname = “/home/user01/priv/a.txt”
+```
 <span id="Workingd9"></span>
 
 #### Workingdir using the &HOME symbolic variable
@@ -191,11 +255,23 @@ In this example, the file to send is located in user01's HFS home directory. The
 
 Server:
 
+```
+CFTRECV id = IDF3, fname = “&FROOT”, WORKINGDIR = “&HOME”, userid = &RUSER
+```
+
 Client:
+
+```
+CFTSEND id = IDF3, WORKINGDIR = “&HOME”
+```
 
 User01:
 
 The application that is running under the user01 system account sends the file 'a.txt' file to the remote partner PART1 using the transfer flow IDF3.
+
+```
+> CFTUTIL send idf = IDF3, part = PART1, fname = “a.txt”, RUSER = "user02"
+```
 
 ### Data set examples on z/OS
 
@@ -211,12 +287,23 @@ The example command sends the file USER01.SND.FTEST, which on reception is USER0
 
 Server:
 
+```
+CFTRECV id = IDF4, fname = FTEST, WORKINGDIR = USER01.RCV.
+```
+
 Client:
+
+```
+CFTSEND id = IDF4, WORKINGDIR = USER01.SND.
+```
 
 User01:
 
 The application sends the file to the remote partner PART1 using the transfer flow IDF4.
 
+```
+> CFTUTIL send idf = IDF4, part = PART1, fname = FTEST
+```
 <span id="Workingd11"></span>
 
 #### Workingdir using a data set file name and the &USERID symbolic variable
@@ -225,12 +312,23 @@ In this example, the user USER01 sends the file USER01.SND.FTEST, which on recep
 
 Server:
 
+```
+CFTRECV id = IDF5, fname = FTEST, WORKINGDIR = &USERID.RCV., userid = &RUSER
+```
+
 Client:
+
+```
+CFTSEND id = IDF5, WORKINGDIR = &USERID.SND.
+```
 
 User01:
 
 The user USER01 sends the file to the remote partner PART1 using the transfer flow IDF5.
 
+```
+> CFTUTIL send idf = IDF5, part = PART1, fname = FTEST, RUSER = USER02
+```
 <span id="Workingd12"></span>
 
 #### Workingdir using a partitioned data set file name
@@ -239,11 +337,23 @@ The example command sends the file USER01.SND.LIB(TEST), which on reception is U
 
 Server:
 
+```
+CFTRECV id = IDF6, fname = &FROOT, WORKINGDIR = USER01.RCV.LIB
+```
+
 Client:
+
+```
+CFTSEND id = IDF6, WORKINGDIR = USER01.SND.LIB
+```
 
 User01:
 
 The application sends the file to the remote partner PART1 using the transfer flow IDF6.
+
+```
+> CFTUTIL send idf = IDF6, part = PART1, fname = TEST
+```
 
 ### Database (\*MBR and \*FILE) examples on IBM i
 
@@ -258,12 +368,23 @@ The example command sends the file CFTPROD/SND(FTEST), which on reception is CFT
 
 Server:
 
+```
+CFTRECV id = IDF7, fname = FTEST, WORKINGDIR = CFTPROD2/RCV
+```
+
 Client:
+
+```
+CFTSEND id = IDF7, WORKINGDIR = CFTPROD/SND
+```
 
 User01:
 
 The application sends the file to the remote partner PART1 using the transfer flow IDF7.
 
+```
+> CFTUTIL send idf = IDF7, part = PART1, fname = FTEST
+```
 <span id="Workingd14"></span>
 
 #### Workingdir using a \*FILE file name
@@ -272,8 +393,20 @@ The example command sends the file CFTPROD/UTIN(FTEST), which on reception is CF
 
 Server:
 
+```
+CFTRECV id = IDF8, fname = UTIN(FTEST), WORKINGDIR = CFTPROD2
+```
+
 Client:
+
+```
+CFTSEND id = IDF8, WORKINGDIR = CFTPROD
+```
 
 User01:
 
 The application sends the file to the remote partner PART1 using the transfer flow IDF8.
+
+```
+> CFTUTIL send idf = IDF8, part = PART1, fname = UTIN(FTEST)
+```

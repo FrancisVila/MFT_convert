@@ -158,6 +158,11 @@ You can use the use this option to force a store and forward on an intermediate 
 
 On the store and forward site there is a partner definition to receive the incoming connection and a second partner establishes the connection with the following site (also the intermediate or the final site). The link between the partner receiving the connection and the sending partner is established via the following parameter settings:
 
+```
+CFTPART ID=IDRECEPT, COMMUT=PART, IPART=IDEMET,...
+CFTPART ID=IDEMET,...
+```
+
 The initial site establishes the connection with the immediate store and forward site (CFTPART ID=IDNAT, NSPART=NINTNAT, NRPART=NNAT, and so on). The immediate store and forward site receives the connection from the initial site and forces the store and forward (COMMUT=PART) to the indicated partner (IPART=IDDEP).
 
 This process repeats as many times as needed until reaching the final site.
@@ -250,15 +255,57 @@ This example shows a broadcast store and forward from the initiator A to relay B
 
 On the initiating site A, define:
 
+```
+cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl
+cftpart id=b,nspart=a,prot=pesitssl,sap=1762
+cfttcp id=b,host=@B
+```
+
 Set up the intermediate partner B as follows:
+
+```
+cftpart id=a,nspart=b,prot=pesitssl,sap=1762
+cfttcp id=a,host=@A
+ 
+cftpart id=c,nspart=b,prot=pesitssl,sap=1762
+cfttcp id=c,host=@C
+ 
+cftpart id=d,nspart=b,prot=pesitssl,sap=1762
+cfttcp id=d,host=@D
+ 
+cftdest id=cd,part=(c,d),for=commut
+ 
+cftappl id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
+```
 
 Execute the following partner C definition:
 
+```
+cftpart id=b,nspart=c,prot=pesitssl,sap=1762
+cfttcp id=b,host= @B
+cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
+ 
+cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
+```
+
 Execute the following partner D definition:
+
+```
+cftpart id=b,nspart=d,prot=pesitssl,sap=1762
+cfttcp id=b,host=@B
+cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
+ 
+cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
+ 
+```
 
 Testing the use case
 
 From the initiator site A, execute:
+
+```
+send part=cd,idf=broadcast,fname=pub/FTEST
+```
 
 ## Broadcast list acknowledgements
 

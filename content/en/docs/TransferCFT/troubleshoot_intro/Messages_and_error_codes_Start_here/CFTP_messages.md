@@ -186,6 +186,18 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
  
 
+```
+V23 format
+V24 format
+Error
+<span id="CFTP20E"></span>CFTP20E The client CFTSSH &ssh cannot be found for partner &part
+CFTP20E The client CFTSSH &id cannot be found for partner &id
+Explanation
+A client CFTSSH referenced in a CFTPART cannot be found.
+Action
+Add the CFTSSH.
+```
+
  
 
 
@@ -197,11 +209,59 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
  
 
- 
+```
+V23 format
+V24 format
+Error
+<span id="CFTP21E"></span>CFTP21E The client private key &key cannot be loaded from &origin
+CFTP21E The client private key &key cannot be loaded from &origin
+Explanation
+Could not load the private key defined in the CLIPRIVKEY parameter from file (&origin = file) or PKI database (&origin = PKI database).
+Action
+Check if the key has been inserted in the PKI database and that the key name is correct. For a file, check the file name and file format (should be RSA).
+```
 
  
 
+```
+V23 format
+V24 format
+Error
+<span id="CFTP22E"></span>CFTP22E The client public key &key cannot be loaded from &origin
+CFTP22E The client public key &key cannot be loaded from &origin
+Explanation
+Could not load the public key defined in the CLIPRIVKEY parameter from file (&origin = file) or PKI database (&origin = PKI database).
+Action
+Check if the key has been inserted in the PKI database and that the key name is correct. For a file, check the file name and file format (should be RSA).
+```
+
  
+
+```
+V23 format
+V24 format
+Warning
+<span id="CFTP23W"></span>CFTP23W CFTNET &id for CFTPARM &id uses &net network \_ Disabled
+CFTP23W CFTNET &id for CFTPARM &id uses &net network \_ Disabled
+Explanation
+Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
+Action
+Remove the unsupported protocols if you no longer want this message to display.
+```
+
+ 
+
+```
+V23 format
+V24 format
+Warning
+CFTP24W CFTPROT &id uses CFTNET &id \_ Disabled
+CFTP24W CFTPROT &id uses CFTNET &id \_ Disabled
+Explanation
+Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
+Action
+Remove the unsupported protocols if you no longer want this message to display.
+```
 
 
 |  V23 format<br/>V24 format Warning  |  <span id="CFTP24W"></span>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled<br/>CFTP25W CFTCOM &amp;id uses TYPE 'MBX' Disabled  |
@@ -212,4 +272,29 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
  
 
+```
+V23 format
+V24 format
+Error
+<span id="CFTP30F"></span>CFTP30F CFTSSH &ssh for CFTPROT &prot cannot be found
+CFTP30F CFTSSH &id for CFTPROT &id cannot be found
+Explanation
+Cannot find the server CFTSSH referenced in a CFTPROT.
+Action
+Add the CFTSSH.
+```
+
  
+
+```
+V23 format
+V24 format
+Error
+<span id="CFTP30F"></span>
+<span id="CFTP31F"></span>CFTP31F CFTNET &id for CFTPROT &id cannot be found
+CFTP31F CFTNET &id for CFTPROT &id cannot be found
+Explanation
+Cannot find the CFTNET referenced in this CFTPROT.
+Action
+Check the CFTNET referenced in CFTPROT and add the CFTNET if necessary.
+```

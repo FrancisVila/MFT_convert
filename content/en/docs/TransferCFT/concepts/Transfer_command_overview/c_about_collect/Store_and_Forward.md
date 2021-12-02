@@ -25,6 +25,9 @@ To implement a relay in conjunction with :
     -   The name of the final receiver, for example TARGET\_APPLICATION.
     -   The name of the flow, for example TEST\_RELAY.
     -   The file to be transferred, for example `report`.
+
+    ```
+    cftutil send part=target\_application, idf=test\_relay, fname=report ```
 3.  Optionally you can configure target post-processing to automatically send a reply.
 
 > **Note:**
@@ -180,6 +183,10 @@ Configure the final receiver
 Store and forward SEND command
 
 In the SEND command you must specify the final network partner (the NSPART of the final partner) as well as the ID of the first intermediate partner.
+
+```
+CFTUTIL SEND PART=NFINAL, IPART=IDNAT, ...
+```
 
 Forced store and forward
 

@@ -46,6 +46,17 @@ Details
 
 Fmodel structure
 
+```
+<?xml content='ascii'?>
+<CFTDisplayFilter>
+<Fields>
+<Field>
+<Field>
+\[...\]
+</Fields>
+</CFTDisplayFilter>
+```
+
 Attributes for the &lt;CFTDisplayFilter>
 
 
@@ -129,6 +140,11 @@ Example 1
 Displays all the fields described in <span style="font-weight: bold;">listcat</span>
 model concerning all transfers.
 
+```
+DISPLAY     CONTENT
+= listcat
+```
+
 Example 2
 
 Displays all the fields described in 'listcat' model concerning all
@@ -136,8 +152,102 @@ transfers. The COLUMN mode is overridden by the LINE. Moreover, every
 invalid field value is replaced by the string '####', and every empty
 field value is replaced by the string '&lt;empty>'.
 
+```
+DISPLAY    MODE
+= LINE,
+NA
+= '####',
+EMPTY
+= '<empty>'
+```
+
 Example 3
 
 This shows an example of a display model file.
 
+```
+<?xml content='ascii'?>
+<!-- LISTCAT Model : classical CFTUTIL LISTCAT with long
+IDs -->
+<CFTDisplayFilter id           =
+'listcat' title\_align  =
+'right'>
+<Fields>
+<Field id='PART' title='Partner' />
+<Field id='DIRECT' title='Direction' maxlength='1' suffix=''
+/>
+<Field id='TYPE' title='Type' maxlength='1' suffix=''
+/>
+<Field id='STATE' title='State' maxlength='1' suffix=''
+/>     
+<Field id='ACK' title='Ack' maxlength='1'/>
+<Field id='IDF' title='IDF' minlength='4' />
+<Field id='IDT' title='IDT' />
+<Field id='IDTU' title='IDTU' />
+<Field id='BLKNUM' title='BLK' />
+<Field id='NREC' title='Transmited' align='right' />
+<Field id='FREC' title='Total' align='right' />        <Field
+id='MSG'         title='Msg'
+    maxlength='32'
+align='center'/>
+<Field id='DIAGI'     title='Diagi'
+/>
+<Field id='DIAGP'     title='Diagp'
+/>
+<Field id='REQUSER' title='User' />
+<Field id='REQGROUP' title='Group' />
+<Field id='IDA'       title='IDA'
+/> </Fields></CFTDisplayFilter>
+```
+
 The output for this command would resemble the following:
+
+```
+Partner    DTSA
+IDF IDT IDTU  BLK
+Transmited Total  Msg
+ Diagi Diagp
+ User Group
+IDA
+NEWYORK SFT- TEST1  D1217250
+00000001 29  #
+  0
+ CP 29%
+user1 group1 -
+PARIS    RFT-
+TEST1  D1217250
+00000002 30  2
+  2
+   #
+  0
+    CP
+29% -     -
+     -
+PARIS    SFT-
+TEST2  D1217251
+00000003 31  2
+  2
+   #
+  0
+   CP
+29% user1 group1 -
+NEWYORK RFT- TEST2  D1217251
+00000004 32  2
+  2
+   #
+  0
+    CP
+29% -   -
+ -
+PARIS   SMT-
+MESSAGETEST1 D1217261 00000005 33 # # test message 1 0 - user1 group1
+-
+NEWYORK RMT- MESSAGETEST1 D1217261 00000006 34 # # test
+message 1 0 -   -
+ -      -
+NEWYORK SMT- MESSAGETEST2 D1217263 00000007 35 # # test
+message 2 0 - user1 group1 -
+PARIS    RMT-
+MESSAGETEST2 D1217263 00000008 36 # # test message 2 0 -  -
+ -     -
+```

@@ -110,7 +110,22 @@ The JCL ..INSTALL(MIGRUCNF) must be customized to determine UCONF parameters to 
 
 Replace the line:
 
+```
+CFTEXT ID=\*,TYPE=UCONF,FOUT=$EXT
+```
+
 With the list of UCONF parameters to migrate. For example:
+
+```
+CFTEXT ID=cft.mvs.sginstal.\*,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cg.\*,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.multi\_node.\*,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftcat.default\_size,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftcom.default\_size,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftlog.fname.atts,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
+Etc.
+```
 
 1.  Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 

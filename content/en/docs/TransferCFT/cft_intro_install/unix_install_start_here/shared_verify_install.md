@@ -4,7 +4,8 @@
     "weight": "120"
 }## Verify your installation
 
-You can check the installation log in the `<installation directory>/install.log` file. See the installation [troubleshooting section](../troubleshoot_registration) if you encounter problems with starting {{< TransferCFT/componentlongname  >}} or registering with {{< TransferCFT/centralgovernancename  >}}.
+You can check the installation log in the &lt;span class="code">&lt;installation directory>/install.log&lt;/span> file. See the installation&lt;madcap:conditionaltext data-mc-conditions="axway\_conditions.ScreenOnly"> &lt;a href="../troubleshoot\_registration">troubleshooting section&lt;/a>&lt;/madcap:conditionaltext> if you encounter problems with starting &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> or registering with &lt;span class="mc-variable suite\_variables.Central\_GovernanceName variable">Central Governance&lt;/span>.
+&lt;/p>
 
 ### Installed directories
 
@@ -29,8 +30,13 @@ Begin your registration with {{< TransferCFT/centralgovernancename  >}} by start
 
 To set the environment variables from the runtime directory prompt enter:
 
+```
+../profile ```
+
 To start the Copilot server, run the command:
 
+```
+copstart ```
 <span id="Verify"></span>
 
 ## Verify the Transfer CFT registration with {{< TransferCFT/centralgovernancename  >}}

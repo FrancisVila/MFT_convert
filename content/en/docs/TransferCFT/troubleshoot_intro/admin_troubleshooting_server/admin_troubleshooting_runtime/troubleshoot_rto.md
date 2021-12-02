@@ -25,6 +25,10 @@ Various routers may be traversed when going from the local host to the remote ho
 
 You can use the ping command to find the appropriate MTU size. For example, on Windows:
 
+```
+ping <remote address> -l 1472 -f
+```
+
 Where:
 
 -   -l: Sets the size in bytes (1500 - 28)
@@ -56,6 +60,10 @@ Hanging or frozen task, or high CPU usage
 These issues can also cause the timer to expire and induce the 240 RTO. You can check with various commands or system tools for frozen {{< TransferCFT/componentlongname  >}} tasks, or if there is a high CPU consumption.
 
 Execute cft\_support collect, and if necessary force a dump on a specific task in order to collect information. For example, on Unix:
+
+```
+kill -3 <process id>
+```
 
 The solution may be a mix of system tuning and Transfer CFT configuration tuning.
 

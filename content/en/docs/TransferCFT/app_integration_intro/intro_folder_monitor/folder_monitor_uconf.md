@@ -94,7 +94,7 @@ Parameter descriptions
 **Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by {{< TransferCFT/componentshortname  >}}, enter:
 
 CFTUTIL uconfset id= folder\_monitoring.folders, value= "'FM1 FM2 FM3 '"
-
+&lt;/p>
 <span id="How2"></span>
 
 ## How {{< TransferCFT/componentshortname  >}} handles monitored files
@@ -130,8 +130,15 @@ To deactivate compatibility checks of a folder’s new configuration, unset the 
 
 If the folder's logical name is **A**, execute the following command prior to the reconfiguration (or start) command:
 
+```
+CFTUTIL UCONFUNSET id = folder\_monitoring.folders.**A**.control
+```
+
 When you then reconfigure (or start) Transfer CFT, the **A** folder is not checked.
 
+```
+CFTUCONF RECONFIG type=folder
+```
 <span id="Director"></span>
 
 ## Directory configuration examples
@@ -146,6 +153,12 @@ Note that the configuration parameter folder\_monitoring must contain a list wit
 
 For this example, you would execute the following command:
 
+```
+CFTUTIL uconfset id=folder\_monitoring.enable , value='Yes'
+CFTUTIL uconfset id=folder\_monitoring.folders , value= 'A B C'
+\*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.
+```
+
 > **Note:**
 >
 > All of the examples in this section were written for a UNIX platform. Modify to suit your environment accordingly.
@@ -159,6 +172,22 @@ The first directory presents the simplest possible configuration, leaving most p
 
 The following commands create the configuration defined for directory A.
 
+```
+#
+# Create all of the needed directories (UNIX platform example)
+#
+mkdir /home/CFT/fm/dir\_a
+mkdir /home/CFT/fm/dir\_a/scan
+mkdir /home/CFT/fm/dir\_a/work
+#
+# Define the needed Transfer CFT configuration parameters leaving all others set to their default value.
+#
+CFTUTIL uconfset id=folder\_monitoring.folders.A.scan\_dir , value='/home/CFT/fm/dir\_a/scan'
+CFTUTIL uconfset id=folder\_monitoring.folders.A.work\_dir , value='/home/CFT/fm/dir\_a/work'
+CFTUTIL uconfset id=folder\_monitoring.folders.A.part , value='NEWYORK'
+CFTUTIL uconfset id=folder\_monitoring.folders.A.idf , value='IDFA'
+```
+
 #### Directory B requirements
 
 For the second directory, directory B, we want to:
@@ -168,6 +197,29 @@ For the second directory, directory B, we want to:
 -   Send only files suffixed by .txt.
 
 The following commands create the required directory B configuration.
+
+```
+#
+# Create all needed directories (example for UNIX platforms)
+#
+mkdir /home/CFT/fm/dir\_b
+mkdir /home/CFT/fm/dir\_b/scan
+mkdir /home/CFT/fm/dir\_b/work
+mkdir /home/CFT/fm/dir\_b/scan/newyork
+mkdir /home/CFT/fm/dir\_b/scan/berlin
+mkdir /home/CFT/fm/dir\_b/scan/london
+mkdir /home/CFT/fm/dir\_b/scan/rome
+mkdir /home/CFT/fm/dir\_b/scan/brussels
+mkdir /home/CFT/fm/dir\_b/scan/paris
+#
+# Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.
+#
+CFTUTIL uconfset id=folder\_monitoring.folders.B.scan\_dir , value='/home/CFT/fm/dir\_b/scan'
+CFTUTIL uconfset id=folder\_monitoring.folders.B.work\_dir , value='/home/CFT/fm/dir\_b/work'
+CFTUTIL uconfset id=folder\_monitoring.folders.B.part , value='(0)'
+CFTUTIL uconfset id=folder\_monitoring.folders.B.idf , value='TXT'
+CFTUTIL uconfset id=folder\_monitoring.folders.B.file\_include\_filter , value='\*.txt'
+```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork` for the partner named newyork.
 
@@ -184,6 +236,33 @@ For the third directory, directory C, we want to:
 -   Limit the number of send submissions per interval to 4 (file\_count).
 
 The following commands create the described directory C configuration.
+
+```
+#
+# Create all needed directories (example for UNIX platforms)
+#
+mkdir /home/CFT/fm/dir\_c
+mkdir /home/CFT/fm/dir\_c/scan
+mkdir /home/CFT/fm/dir\_c/work
+mkdir /home/CFT/fm/dir\_c/scan/newyork/idf1
+mkdir /home/CFT/fm/dir\_c/scan/newyork/idf2
+mkdir /home/CFT/fm/dir\_c/scan/newyork/idf3
+mkdir /home/CFT/fm/dir\_c/scan/paris/idfa
+mkdir /home/CFT/fm/dir\_c/scan/paris/idfb
+mkdir /home/CFT/fm/dir\_c/scan/paris/idfc
+mkdir /home/CFT/fm/dir\_c/scan/paris/idfd
+#
+# Define all necessary Transfer CFT configuration parameters leaving others set to their default value.
+#
+CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_idle\_delay , value='0'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.idf , value='(1)'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.part , value='(0)'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.scan\_dir , value='/home/CFT/fm/dir\_c/scan'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.work\_dir , value='/home/CFT/fm/dir\_c/work'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.interval , value='10'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_count , value='4'
+CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_exclude\_filter , value='\*.tmp'
+```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner newyork and idf idf1.
 
@@ -208,6 +287,10 @@ See [Supported OS for file-system event monitoring](../#Supporte).
 ### Configure file-system event monitoring
 
 Set the following UCONF parameters as shown below. When you set this option for a specific folder, Transfer CFT immediately treats any events that occur in this folder's SCAN directory.
+
+```
+CFTUTIL uconfset id=folder\_monitoring.folders.MyFolder.use\_file\_system\_events, value=YES
+```
 
 #### Attention
 

@@ -54,6 +54,10 @@ Renewkey options:
 
 Use the following command to generate an encryption key using the provided password. This creates the `--keyfname` and `--saltfname` files, and references them in UCONF.
 
+```
+cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
+```
+
 Encryption parameters in UCONF
 
 
@@ -66,6 +70,10 @@ Encryption parameters in UCONF
 ## Renew the encryption key
 
 To renew an encryption key run the `renewkey` command:
+
+```
+cftcrypt --renewkey --keyfname FILENAME --saltfname FILENAME --oldpass PASSWORD --pass PASSWORD
+```
 
 The command succeeds if the referenced key and salt files exist and the `oldpass `matches the password used to generate the previous key. This command exports the configuration, generates a new encryption key, and imports the configuration.
 
@@ -87,10 +95,26 @@ The cftcrypt tool automatically exports/imports the PKI database when you perfor
 It is highly recommended that you generate an encryption key when you upgrade a Transfer CFT 3.2.4 or lower to Transfer CFT 3.3.2 or higher. For example:
 
 1.  From the {{< TransferCFT/hflongproductname >}} runtime directory, perform the extract to export the configuration.  
+    ```
+    CFTUTIL cftext fout=cft332.cfg
+    ```
 2.  Export the PKI database.  
+    ```
+    PKIUTIL PKIEXT FOUT=PKI.EXT
+    ```
 3.  Generate a new encryption key.  
+    ```
+    cftcrypt --genkey --keyfname data/crypto/cryptkey --saltfname data/crypto/cryptsalt --pass MyPassword1\*
+    ```
 4.  Import the PKI database.  
+    ```
+    PKIUTIL @ PKI.EXT
+    (or PKIUTIL # PKI.EXT depending on your system)
+    ```
 5.  Import the configuration.  
+    ```
+    CFTUTIL config type=input,fname=cft332.cfg
+    ```
 
 > **Note:**
 >

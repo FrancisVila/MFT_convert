@@ -101,14 +101,26 @@ to the Transfer-related successive phases and actions).</p>         </td>
       <tr>
          <td><p>Example 1</p>
 <div>
-
+```
+DELETE        PART = SIE??
+```
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 and receive directions, DIRECT = BOTH by default, for the partners whose
 identifier begins with "SIE" and contains 5 characters in all.</p>
 <p>Example 2</p>
 <div>
-
+```
+DELETE
+PART = HQ,
+ 
+ 
+DIRECT = SEND,
+ 
+ 
+IDF = ACCNT
+ 
+```
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 direction (DIRECT = SEND) of the model file ACCNT to the partner HQ.</p>         </td>

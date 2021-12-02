@@ -19,6 +19,12 @@ System are indicated in the corresponding specific Operations Guide.
 If the input file is compressed (ICOMP not 0), the value of the IRECFM
 parameter is forced to V.
 
+```
+OS400, UNIX
+The variable format concept is specific to {{< TransferCFT/componentshortname >}} and is not valid
+for the systems indicated.
+```
+
 Refer to the {{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your
 OS.
 

@@ -266,6 +266,33 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
 
+```
+
+Operating system
+
+Tested and supported
+
+Not supported
+
+AIX
+GPFS (recommended), NFSv4
+NFSv3, CXFS, VeritasSF
+HP-UX
+NFSv4
+NFSv3, CXFS, VeritasSF
+Linux-x86
+GPFS (recommended), NFSv4, GFS2, AWS EFS
+NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF
+Solaris
+NFSv4
+NFSv3, CXFS, QFS, VeritasSF
+Windows-x86
+SMB/CIFS, GPFS
+CXFS, NFS
+z/OS
+Sharing DASD across Sysplex
+ 
+```
 <span id="Limitations"></span>
 
 ## Limitations

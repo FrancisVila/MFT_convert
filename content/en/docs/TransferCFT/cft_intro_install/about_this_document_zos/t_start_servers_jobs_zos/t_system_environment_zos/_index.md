@@ -113,6 +113,10 @@ Transfer CFT constructs and submits JOBs from any type of file that can be read 
 
 If the last card in the JOB is a JCL card beginning with ‘/\*’ or ‘//’, Transfer CFT adds an additional comment card with the following format:
 
+```
+`//* SUBMITTED BY:jjjjjjjj AT hh:mm:ss, USERID=uuuuuuuu ,CARDS= nnnnnnnn`
+```
+
 Where:
 
 -   jjjjjjjj: Transfer CFT JOBNAME

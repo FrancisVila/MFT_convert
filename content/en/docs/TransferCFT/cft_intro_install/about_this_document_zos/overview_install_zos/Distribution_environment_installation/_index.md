@@ -17,6 +17,14 @@ You can create a Transfer CFT ALIAS in the USER CATALOG if the file names mentio
 
 To define an alias, adapt the parameters in bold to suit your environment. Enter:
 
+```
+`//DEFALIAS EXEC PGM=IDCAMS   `
+`//SYSPRINT DD SYSOUT=sysout`
+`//SYSIN    DD *      `
+`   DEFINE ALIAS(NAME(CFTV2) RELATE(USER.CATALOG))   ...................`
+`/*     `
+```
+
 ## Download the installation library from ESD 
 
 ### Required configuration
@@ -59,6 +67,69 @@ This section describes how to prepare the distribution environment necessary to 
 
 -   Installing the product
 -   Creating the distribution environment
+
+```
+Unix Installation example:
+./setup.sh
+ 
+/home/cft/Transfer\_CFT\_3.3.2\_Install\_mvs\_BN10687000/bin/axwaykit\_linux Version 1.0 ===
+-------------------------------------------------------
+>> Start the configuration installation - Transfer CFT ZOS with /home/cft/Transfer\_CFT\_3.3.2\_Install\_mvs\_BN10687000/bin/axwaykit\_linux on Fri Apr 06 13:40:41 2018
+-------------------------------------------------------
+>Enter the local working directory where you want to save the configuration \[Default:/home/cft/Transfer\_CFT\_3.3.2\_Install\_mvs\_BN10687000/bin\]\[Mandatory\]
+--------------------------------
+>Enter the dataset name for the product installation (4 qualifiers min.)
+\[Default:AXWAY.XFB.D332.CF030000\]\[Mandatory\]
+Number of qualifiers=4
+>Enter File Format ADRDSSU(A) or XMIT(X):
+\[Default:A\]\[Mandatory\]
+ 
+ 
+Installation runtime:
+--------------------------------
+>Enter the dataset name for the runtime environment (as either a value or NO). \[Default:AXWAY.V332\]\[Mandatory\]
+ 
+Mainframe address (for FTP):
+--------------------------------
+>Enter hostname address: \[No default\]\[Mandatory\]
+axway.hostname.mvs
+ 
+>Enter login TSO: \[No default\]\[Mandatory\]
+TSOUSER
+ 
+>Enter password: \[\*\*\*\*\*\*\]\[Mandatory\]
+\*\*\*\*
+ 
+>Enter Y if you want to change the user and password? (Y/N) \[Default:N\]\[Mandatory\]
+\*\*\*\*
+ 
+>Enter Y if you want to change the user and password? (Y/N) \[Default:N\]\[Mandatory\]
+ 
+>Enter Y/N to define if you want submit the JCL(Note: JESINTERFACELEVEL should be set to 2) \[Default:Y\]
+ 
+>Enter the execution class (JCL) \[Default:A\]\[Mandatory\]
+ 
+>Enter the account parameter (JCL) \[Default:()\]
+Configuration summary: ---------------------
+Local parameters ----------------
+Local work PATH : /home/cft/Transfer\_CFT\_3.3.2\_Install\_mvs\_BN10687000/bin
+Installation PATH : /home/cft/Transfer\_CFT\_3.3.2\_Install\_mvs\_BN10687000/bin
+ 
+ 
+Host parameters
+---------------
+Host IP address : axway.hostname.mvs
+User : TSOUSER
+Upload library : AXWAY.XFB.D332.CF030000.UPLIB
+>> this library will be created
+>> member : CFT332A
+Transfer CFT runtime envir.: AXWAY.V332
+JCL to be submitted : J1IDISTA
+jobname : TSOUSERI
+ 
+>Enter Y if you agree with these parameters, or N to Exit installation (Y/N)
+\[No default\]\[Mandatory\]
+```
 
 ## Silent installation
 

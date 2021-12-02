@@ -25,6 +25,24 @@ topics
 
 #### Command parameters
 
+```
+
+Parameters
+
+Description
+
+[CALL](../../../command_summary/parameter_intro/call)
+Call direction possible through this network resource.
+[CLASS](../../../command_summary/parameter_intro/class)
+Logical class for the physical link.
+[ID](../../../command_summary/parameter_intro/id)
+Network resource identifier.
+[MAXCNX ](../../../command_summary/parameter_intro/maxcnx)
+Maximum number of simultaneous connections that Transfer
+CFT will accept to establish on this network resource.
+[TYPE](../../../command_summary/parameter_intro/type) 
+Defines the type of network resource.
+```
 <span id="Defining_TCP_IP__command_line_"></span>
 
 ## Defining TCP/IP
@@ -80,6 +98,21 @@ resource.</p>         </td>
 </table>
 
 Example
+
+```
+CFTNET     MODE   =    
+CREATE,
+     ID          =    
+TCP00,
+     TYPE         =    
+TCP,
+     HOST        =    
+localhost,
+     MAXCNX     =    
+6,
+     CALL       =    
+INOUT
+```
 
 Defines a resource on the "LOCALHOST" node, which corresponds
 to the TCP/IP declaration of the local node. 6 simultaneous connections

@@ -99,6 +99,9 @@ Step 2: Upgrade to Transfer CFT {{< TransferCFT/releasenumber  >}}
 
 1.  Uncompress the Transfer CFT installation kit.
 2.  From the Transfer CFT installation kit, enter:  
+    ```
+    ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_<OS>\_<BN>.run \[<options>\]
+    ```
 3.  Accept the license and the appropriate installation mode (for example, single installation).
 4.  When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
 
@@ -129,3 +132,7 @@ Once you complete an upgrade from 3.7 or lower, you must execute the profile bef
 ### Check the new version
 
 To check the {{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
+
+```
+`CFTUTIL ABOUT`
+```

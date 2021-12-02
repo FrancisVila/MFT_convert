@@ -58,6 +58,83 @@ or CFTSEND object with parameter FORCE set to YES.
 
 Parameters Default value Processing (FORCE = YES)
 
+```
+
+Parameter
+
+Default
+
+Processing when FORCE = YES
+
+EXEC, PARM, SAPPL, RAPPL, SUSER, RUSER, COMMENT, NFNAME,
+EXIT, WFNAME, SELFNAME, NOTIFY, USERID, GROUPID, XLATE, SPART
+Empty string
+If parameter is not set or set to a blank value, it can
+be override for a SEND/RECV command.If parameter is set to a true value,
+it cannot be override for a SEND/RECV command.If parameter is set to <NULL>
+(a new reserved keyword), it cannot be override for a SEND/RECV command.
+It means that parameter is empty
+FNAME
+Empty string
+If parameter is not set, it must be override for a SEND/RECV
+command (otherwise transfer will failed) .If parameter is set to a true
+value, it cannot be override for a SEND/RECV command.
+FCODE, FRECFM, NCODE, NRECFM
+Blank char.
+If parameter is not set, it can be override for a SEND/RECV
+command. If parameter is set to a true value, it cannot be override for
+a SEND/RECV command.
+FTYPE, NTYPE, FACC
+Null char.
+If parameter is not set, it can be override for a SEND/RECV
+command. If parameter is set to a true value, it cannot be override for
+a SEND/RECV command.
+FBLKSIZE, FKEYLEN, FKEYPOS, FLRECL, FSPACE, NBLKSIZE, NKEYLEN,
+NKEYPOS, NLRECL
+Null value
+If parameter is not set or set to a null value, it can
+be override for a SEND/RECV command. If parameter is set to a true value,
+it cannot be override for a SEND/RECV command.
+FORG SEQ
+ 
+Parameter cannot be overridden
+PRI 128
+ 
+Parameter cannot be overridden
+STATE DISP
+ 
+Parameter cannot be overridden
+FACTION NONE
+ 
+Parameter cannot be overridden
+FDISP SHR
+ 
+ 
+NCOMP
+15
+If parameter is not set or set to value 15, it can be override
+for a SEND/RECV command. Otherwise,  it
+cannot be overridden for a SEND/RECV command.
+DELETE
+NO
+Parameter cannot be overridden
+TRK
+U undefined
+Parameter cannot be overridden
+TCYCLECYCLE
+ 
+Parameter cannot be overridden
+DAY0
+ 
+Parameter cannot be overridden
+OPERMSG
+<os dep.>
+Parameter cannot be overridden
+EXECSUB
+LIST
+Parameter cannot be overridden
+```
+
 <span id="INACT_force"></span>
 
 #### INACT, DELETE, END, HALT, KEEP, START, RESUME

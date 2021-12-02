@@ -139,6 +139,7 @@ This function enables you to filter FPDU protocol traces
 by partner.
 
 Example
+&lt;/p>
 
 CFTTRACE STARTTRC ID=ID,TID=TID,PTRACE=16,FILTER=Part
 

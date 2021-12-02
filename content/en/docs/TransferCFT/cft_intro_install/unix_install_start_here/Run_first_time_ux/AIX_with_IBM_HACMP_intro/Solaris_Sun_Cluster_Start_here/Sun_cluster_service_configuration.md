@@ -9,6 +9,41 @@ record and remove resources.
 
 Enter the command:
 
+```
+scrgadm -p\[v\[v\]\] \[-t <Resource\_Type\_name>\]
+\\
+\[-g <Resource\_Group\_name>\] \\
+\[-j <Resource\_name>\]
+scrgadm -a -t <Resource\_Type\_name>
+\[-f <RT\_registration\_file\_path>\] \\
+\[-h RT\_installed\_node\_list\]
+scrgadm -c -t <Resource\_Type\_name>
+-h RT\_installed\_node\_list
+scrgadm -r -t <Resource\_Type\_name>
+scrgadm -a | -c -g <Resource\_Group\_name>
+\[-h RT\_installed\_node\_list\]
+\[-y <property>\]
+scrgadm -r -g <RG\_name>
+scrgadm -a -j <Resource\_name> -t <Resource\_Type\_name>
+\\
+-g <RG\_name> \[-y <property>
+\[-y <property>\]\] \\
+\[-x <property> \[-x <property>\]\]
+scrgadm -c -j <Resource\_name> \[-y
+<property> \[-y <property>\]\] \\
+\[-x <property> -x <property>\]\]
+scrgadm -r -j <Resource\_name>
+scrgadm -a -L -g <LogicalHost\_RG\_Name>
+\[-j <Resource\_name>\] \\
+-l hostname\[,hostname,...\] \[-n nafo@node\[,nafo@node,...\]\]
+\[-y <property> \[-y <property>\]\]
+scrgadm -a -S -g <SharedAddress\_RG\_Name>
+\[-j <Resource\_name>\] \\
+-l hostname\[,hostname,...\] \[-n nafo@node\[,nafo@node,...\]\]
+\\
+\[-X aux\_node\[,aux\_node,...\]\] \[-y <property>
+\[-y <property>\]\]
+```
 <span id="CFT_resources_group"></span>
 
 ### Transfer CFT resources group
@@ -69,6 +104,26 @@ scrgadm
 
 View the command line description
 
+```
+
+Command
+
+Description
+
+-a
+resource addition (add)
+–L
+logical name resource type
+-g CFT-rg
+resources group name
+-j cft-ip
+resource name
+–l cft-ip
+logical name (as defined in /etc/hosts
+in our test)
+-n nafo0@1,nafo0@2
+use of nafo interfaces 1 and 2
+```
 <span id="Shared_file_system"></span>
 
 #### Shared file system
@@ -81,13 +136,69 @@ scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\
 
 View the command line description
 
+```
+
+Command
+
+Description
+
+-a
+resource addition (add)
+-g CFT-rg
+resources group name
+-t SUNW.HAStoragePlus
+GDS resource type
+-j cft-disk
+resource name
+-x FilesystemMountpoints=/global/cft
+mount point
+```
 <span id="Generic_data_service_CFT"></span>
 
 #### Generic data service CFT
 
 The following is the declaration of the GDS for Transfer CFT:
 
+```
+scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \\
+–x Start\_command=/global/cft/cftstartFailover \\
+–x Stop\_command=/global/cft/cftstopFailover \\
+–x Probe\_command=/global/cft/cftprobeFailover \\
+–y Port\_list="1765/tcp,1766/tcp,1767/tcp" \\
+–y Resource\_dependencies=cft-ip,cft-disk
+```
+
 View the command line description
+
+```
+
+Command
+
+Description
+
+-a
+resource addition (add)
+-g CFT-rg
+resources group name
+-t SUNW.gds
+GDS resource type
+-j cft-gds
+resource name
+-x Start\_command= /global/cft/cftstartFailover
+command definition for startup
+-x Stop\_command= /global/cft/cftstopFailover
+command definition for stop
+-x Probe\_command= /global/cft/cftprobeFailover
+command definition for probe
+–y Port\_list=1765/tcp
+verification of the listening ports of Transfer CFT in
+TCP (parameters of the Transfer CFT cftprot cards)
+–y Resource\_dependencies= cft-ip,cft-disk
+You can activate GDX on a node only if the cft-ip and cft-disk
+resources are online. In the event of problems with one of these two resources,
+Sun Custer attempts to restart the faulty resource, or to switch over
+to another node
+```
 
 The default parameters are adequate for the test
 environment.

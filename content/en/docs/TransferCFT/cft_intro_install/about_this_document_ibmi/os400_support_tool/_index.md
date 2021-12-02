@@ -58,3 +58,7 @@ If the generated CFTSUPPORT.tar is too large, you can compress it prior to sendi
 **Example**
 
 In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in `/home/cft/cftsupport/`.
+
+```
+CFTSUPPORT IFSPATH('/home/cft/cftsupport')
+```

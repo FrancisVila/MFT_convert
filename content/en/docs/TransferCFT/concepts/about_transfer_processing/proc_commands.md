@@ -23,9 +23,23 @@ Using this method, {{< TransferCFT/componentlongname  >}} creates a temporary fi
 
 For example, to run the `myscript.sh` script using this method:
 
+```
+cftsend id=flow01, exec='exec/myscript.sh'
+```
+
 Example of a template processing script
 
+```
+CFTUTIL WLOG MSG="execute processing script for the &IDTU transfer "
+CFTUTIL END PART=&PART, IDTU=&IDTU
+```
+
 Example of the corresponding temporary file to execute
+
+```
+CFTUTIL WLOG MSG="execute processing script for the A0000001 transfer "
+CFTUTIL END PART=PART01, IDTU=A0000001
+```
 
 Operating system differences
 
@@ -44,8 +58,7 @@ Depending on the operating system, the temporary file is treated as follows:
     rm $0.err
 
 -   HP NonStop native environment: You must perform the following steps to remove the temporary file:
-    -   #PURGE \[#IN\]
-    -   The same BTPURGE procedure as in the previous version is delivered and can be executed
+    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
 
 -   HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
 
@@ -65,7 +78,15 @@ For security reasons, you cannot use this method with the SEND/RECV command's PR
 
 To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
 
+```
+CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
+```
+
 To call a program, for example CFTUTIL, you can use a similar syntax as shown here:
+
+```
+CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT, direct=SEND"
+```
 
 Limitations Unix only
 
@@ -96,6 +117,10 @@ In some cases you may want to limit the number of scripts launched in parallel b
 > Caution  
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
+```
+uconfset id=`cft.server.max_processing_scripts`, value=64
+```
+
 > **Note:**
 >
 > This parameter does not apply to the execution of transfer error scripts.
@@ -110,13 +135,25 @@ The end command monitors the script completion. Depending on the parameter used 
 
 Example
 
+```
+CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
+```
+
 The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
 
 Example
 
+```
+CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step\_1"CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step\_2"
+```
+
 #### Define DIAGC
 
 To create a more specific comment you can modify the DIAGC. The DIAGC used in preprocessing phase is reset when a transfer begins.
+
+```
+CFTUTIL END part=&PART,idtu=&IDTU,DIAGC="intermediate checkpoint number 1 “
+```
 
 #### Replace variable
 
@@ -124,17 +161,43 @@ In your script you can also update values, for example the FNAME. However, the i
 
 Example
 
+```
+CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW\_FNAME
+...
+.....
+CFTR12I END Treated for USER MY\_CFT : FNAME value was "pub/FTEST" and is now "NEW\_FNAME"
+```
+
 ### Stop
 
 When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
 
 Example
 
+```
+CFTUTIL HALT part=&PART,idtu=&IDTU,DIAGP=”Error 1”,DIAGC=”Connection lost”
+CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found”
+```
+
 ### Restart
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
 Exa**m**ple  
+
+```
+Go to &APPSTATE
+Step 1:
+if OK END part=&part, idtu=&idtu, appstate="step 1", istate=yes
+if not OK KEEP part=&part, idtu=&idtu, appstate="step 1", istate=yes &go to error
+Step 2:
+if OK END part=&part, idtu=&idtu, appstate="step 2", istate=yes
+if not OK KEEP part=&part, idtu=&idtu, appstate="step 2", istate=yes &go to error
+END:
+END part=&part, idtu=&idtu, istate=no & go to eof
+Error:
+WLOG MSG="script error at step &appstate"
+```
 
 ### Define wait time for a restart
 
@@ -143,6 +206,61 @@ You can change the maxduration for a transfer restart using the maxduration para
 ## Command parameters
 
 ### SEND, CFTSEND
+
+```
+
+Command
+
+Parameter
+
+Value
+
+Description
+
+SEND, CFTSEND
+ACKMINDATE
+integer
+From this date on, the acknowledgement exec file can be launched.
+ACKMINTIME
+integer
+From this time on, the acknowledgement exec file can be launched.
+POSTMINDATE
+integer
+From this date on, the post processing exec file can be launched.
+POSTMINTIME
+integer
+From this time on, the post processing exec file can be launched.
+PREMINDATE
+integer
+From this date on, the preprocessing exec file can be launched.
+PREMINTIME
+integer
+From this time on, the preprocessing exec file can be launched.
+ACKEXEC
+string
+The acknowledgement exec file that will be launched after receiving an ACK or NACK.
+ACKSTATE
+REQUIRE/IGNORE
+Specify if <span class="mc-variable axway\_variables.Component\_Short\_Name variable">Transfer CFT</span> should wait for an ACK/NACK to enter the X phase.
+POSTSTATE
+DISP
+The transfer phase step as it enters the Y phase.
+PREEXEC
+string
+The preprocessing exec file.
+PRESTATE
+DISP/HOLD
+The transfer phase step as it enters the A phase.
+EXECSUBPRE
+LIST/SUBF/FILE
+Group of files: execution policy for preprocessing phase.
+EXECSUB
+LIST/SUBF/FILE
+Group of files: execution policy for post-processing phase.
+EXECSUBA
+LIST/SUBF/FILE
+Group of files: execution policy for acknowledgement phase.
+```
 
 ### END
 
@@ -167,8 +285,103 @@ You can change the maxduration for a transfer restart using the maxduration para
 
 ### KEEP
 
+```
+
+Command
+
+Parameter
+
+Value
+
+Description
+
+KEEP
+DIAGP
+string
+Specify a customized error that will be set for DIAGP in the catalog.
+DIAGC
+string
+Specify a customized error that will be set for DIAGC in the catalog.
+PHASE
+char
+The transfer phase at which the command is applied.
+PHASE STEP
+char
+The phase step at which the command is applied.
+```
+
 ### HALT
+
+```
+
+Command
+
+Parameter
+
+Value
+
+Description
+
+HALT
+DIAGP
+string
+Specify a customized error that will be set for DIAGP in the catalog.
+DIAGC
+string
+Specify a customized error that will be set for DIAGC in the catalog.
+PHASE
+char
+The transfer phase at which the command is applied.
+PHASE STEP
+char
+The phase step at which the command is applied.
+```
 
 ### SUBMIT
 
+```
+
+Command
+
+Parameter
+
+Value
+
+Description
+
+SUBMIT
+APPSTATE
+string
+Specify an application state for the
+processing script that will allow a SUBMIT to occur at the correct script step.
+PHASE
+char
+The transfer phase at which the command is applied.
+PHASE STEP
+char
+The phase step at which the command is applied.
+```
+
 ### START
+
+```
+
+Command
+
+Parameter
+
+Value
+
+Description
+
+START
+PHASE
+char
+The transfer phase at which the command is applied.
+MAXDURATION
+integer
+Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.
+PHASE STEP
+char
+The phase step at which the command is applied.
+```

@@ -43,7 +43,18 @@ CFT ACCNT, accounting, the file designated by the CFTACCNT configuration command
 
 In the line-sharing mode, unlike the exclusive mode, Transfer CFT checks the status of the line without implementing it. If the line is not operational, a message is displayed:
 
+```
+From.....:   CFT           06/12/17   15:56:04
+CF1LX021   : This line is out of order.
+```
+
 After it has been implemented manually:
+
+```
+CF1LX021 line implemented.
+From.....:   CFT           06/12/17   15:56:04
+CF1LX021   : Now this line is operational.
+```
 
 All messages stored in the log are described in the {{< TransferCFT/componentversion  >}} sub-book **Messages and Codes**. There are a few exceptions when messages are not stored in the log, for example messages that are self-explanatory and OS related.
 

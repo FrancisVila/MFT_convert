@@ -11,6 +11,23 @@
 The sent file data code. The following table indicates for each OS the
 default value supported.
 
+```
+
+OS
+
+Default
+
+z/OS (MVS)
+EBCDIC 
+IBM i (OS400)
+EBCDIC 
+UNIX 
+ASCII 
+VMS 
+ASCII 
+Windows
+ASCII 
+```
 <span id="fcode_CFTRECV"></span>
 
 #### CFTRECV, RECV

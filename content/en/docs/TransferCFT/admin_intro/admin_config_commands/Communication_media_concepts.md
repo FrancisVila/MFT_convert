@@ -92,3 +92,13 @@ A communication file can be created by the CFTFILE command.
         variables %\_CAT\_IDT% and %\_CAT\_IDTU%.
 
 **Example**
+
+```
+SEND
+PART = PART1
+IDF = TEST1
+ 
+Then...
+LISTCAT
+IDT = %\_CAT\_IDT%
+```

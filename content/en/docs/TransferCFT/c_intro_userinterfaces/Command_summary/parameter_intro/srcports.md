@@ -23,10 +23,22 @@ Examples
 This defines
 3 outgoing port ranges:
 
+```
+SRCPORTS=(6000-6009,6010-6019,6020-6030)
+```
+
 Operating system port selection:
   
 
+```
+SRCPORTS= ()
+```
+
 1 port range
 is still possible
+
+```
+SRCPORTS=(6000-6030)
+```
 
 [Return to Command index](../../)

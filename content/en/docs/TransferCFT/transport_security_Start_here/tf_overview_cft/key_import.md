@@ -22,6 +22,9 @@ You can convert a PGP public Keyring file to one or several X.509certificate(s) 
 When you import a private keyring file containing ElGamal subkey(s), you must provide the PKCS#12 file for signing (as in public keyring import), because the ElGamal keys cannot be used for signing when you create a certificate.
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
+    ```
+    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    ```
 2.  Enter the import command:
 
 -   UNIX: ImportPGPKey.sh
@@ -81,6 +84,9 @@ following file names.
 ### Export procedure
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
+    ```
+    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    ```
 2.  Enter the import command:
 
 -   UNIX: ExportPGPKey.sh

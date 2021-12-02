@@ -31,9 +31,37 @@ See Related topics below for links to more information on these access managemen
 
 1.  Define the unified configuration settings so that you enable authentication yes, and select the method.
 
-<!-- -->
+```
+
+Parameters
+
+Default
+
+Description
+
+cft.server.cftcoms.authentication\_enable
+No
+Authentication for synchronous communication:
+
+-   Yes: Enable password authentication
+-   No: Disable authentication
+
+cft.server.authentication\_method
+None
+Authentication method can be:
+
+-   none: No method defined
+-   system: Operating system
+-   am: PassPort AM or AM exit
+-   xfbadm: [xfbadmusr](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1) utility
+
+```
 
 1.  Define the following parameters.
+
+```
+CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=protocol://host:port, PASSWORD=password
+```
 
 The username/password is then checked for each subsequent request. The username used for the authentication is the user that is currently logged in. api sample
 

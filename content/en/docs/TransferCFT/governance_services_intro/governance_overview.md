@@ -64,14 +64,14 @@ Transfer CFTs running under {{< TransferCFT/centralgovernancename  >}} or {{< Tr
 | UDT (UNIX/Windows only)  | yes  | yes  |
 | SOCKS  | no  | yes  |
 | Heartbeat  | embedded  | yes  |
-| Interoperability  |   |   |
+| Interoperability &lt;/th&gt;  |   |   |
 | Secure Relay  | no  | yes  |
 | TrustedFile (UNIX/Windows/and z/OS)  | no  |  yes  |
 | PassPort AM  | embedded  | no (*)  |
 | PassPort PS  | no  | yes  |
 | Sentinel  | embedded  | yes  |
 | Composer  | no  | no  |
-| Protocols  |   |   |
+| Protocols &lt;/th&gt;  |   |   |
 | PeSIT  | yes  | yes  |
 | ODETTE  | no  | yes  |
 | SFTP *(UNIX, Windows)*  | no  | yes  |

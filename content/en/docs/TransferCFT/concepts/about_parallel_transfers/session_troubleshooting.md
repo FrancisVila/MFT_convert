@@ -34,6 +34,10 @@ For example, if cft.server.max\_session = 3, then MAXCNX is limited to 3 on the 
 
 **Requester output**
 
+```
+CFTT75E connect reject <IDTU=A00000FT PART=SUN35-5 IDF=T1 IDT=D2918351 416 MAXTRANS>
+```
+
 **Server output**
 
 There is no output in this scenario.
@@ -44,8 +48,15 @@ When p (cft.server.max\_session = 3 for example) is less than MAXCNX on the serv
 
 **Server output**
 
+```
+CFTH66E Incoming calls (1) rejected, ERROR=sessions (ctx) in use >= max\_sessions (3|3), PROTOCOL=?
+```
+
 **Requester output**
 
+```
+CFTT75E connect reject <IDTU=A000006O PART=WINZZ-5 IDF=T2 IDT=D2918471 302 R 0 2f2>
+```
 <span id="Example:2"></span>
 
 ### Example: cft.server.max\_session is greater than MAXCNX
@@ -57,6 +68,10 @@ In this example, the MAXCNX value is the limiting factor.
 When cft.server.max\_session is greater than MAXCNX on the requester side the determining value is MAXCNX, meaning that MAXCNX is the limiting value.
 
 **Requester output**
+
+```
+CFTH09E Network connect request local error <PART=SUN35-4 NCR=416 NCS=MAXCNX NET=TCP>
+```
 
 **Server output**
 
@@ -73,6 +88,11 @@ When MAXCNX (3 partner transfers) is reached there is no server indication, only
 There is no message / output on server side.
 
 **Requester output**
+
+```
+CFTH11E Error Opening session <PART=WINZZ-4 EV=VNRELI ST=CN0022>
+CFTT75E connect reject <IDTU=A0000074 PART=WINZZ-4 IDF=T4 IDT=D2919014 302 R 0 2f2>
+```
 
 Related topics
 

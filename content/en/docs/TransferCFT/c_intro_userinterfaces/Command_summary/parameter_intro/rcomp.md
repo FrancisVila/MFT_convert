@@ -17,6 +17,18 @@ A zero value corresponds to no compression (default).
 
 Default values are:
 
+```
+
+Protocol
+
+Default value
+
+PeSIT ANY profile
+0
+ODETTE 
+1 
+```
+
 See also **[scomp](../scomp)**.
 
 For more information (usable values etc.), refer to the *Compression*

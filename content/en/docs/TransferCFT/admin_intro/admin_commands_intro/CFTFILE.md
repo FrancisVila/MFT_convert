@@ -155,3 +155,10 @@ Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 Example
 
 The following command creates a parameter file.
+
+```
+CFTFILE    TYPE
+= PARM,
+MODE = CREATE,
+FNAME = filename
+```

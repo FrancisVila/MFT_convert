@@ -25,13 +25,15 @@ The A05ALL JCL automatically runs the following members.
       <tr>
          <td>2         </td>
          <td><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
-<p>Non-SMP/E installation mode.</p>         </td>
+<p>Non-SMP/E installation mode.
+&lt;/p&gt;</p>         </td>
          <td>A12AOPTS         </td>
       </tr>
       <tr>
          <td>3         </td>
          <td><p>Link-edit all Transfer CFT modules.</p>
-<p>Non-SMP/E installation mode.</p>         </td>
+<p>Non-SMP/E installation mode.
+&lt;/p&gt;</p>         </td>
          <td>B20LINK         </td>
       </tr>
       <tr>

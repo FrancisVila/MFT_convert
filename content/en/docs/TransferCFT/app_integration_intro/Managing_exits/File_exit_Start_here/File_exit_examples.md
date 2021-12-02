@@ -7,6 +7,104 @@ for these exits.
 
 ### File type exit parameter settings
 
+```
+/\*--------------------------------------------------------\*/
+/\* PARAMETER settings for a FILE TYPE EXIT TASK \*/
+/\*--------------------------------------------------------\*/
+/cftsend     id
+      =
+exf1     ,
+              fcode
+   =
+BINARY,
+                      exit
+    =
+exfic    ,
+                      mode
+    =
+replace
+          cftrecv
+    id
+      =
+exf1     ,
+                      fname
+   =
+'&idtu.rcv',
+                      faction
+ = delete,
+                      fcode
+   =
+binary,
+                      mode
+    =
+replace
+          cftsend
+    id
+      =
+exf2     ,
+                      fcode
+   =
+BINARY,
+                      flrecl
+  =
+80 ,
+                      nlrecl
+  =
+80,
+                      frecfm
+  =
+V,
+                      ftype
+   =
+T,
+                      exit
+    =
+exfic    ,
+                      mode
+    =
+replace
+          cftrecv
+    id
+      =
+exf2     ,
+                      fname
+   =
+'&idtu.rcv',
+                      faction
+ = delete,
+                      flrecl
+  =
+80 ,
+                      frecfm
+  =
+V,
+                      ftype
+   =
+T,
+                      mode
+    =
+replace
+          cftexit
+    id
+      =
+exfic,
+                      reserv
+  =
+8192  ,
+                      prog
+    =
+cftexit  ,
+                      language
+= c,
+                      format
+  =
+v24,
+                      waittask
+= 5,
+                      mode
+    =
+replace
+```
 <span id="User_program"></span>
 
 ### User program

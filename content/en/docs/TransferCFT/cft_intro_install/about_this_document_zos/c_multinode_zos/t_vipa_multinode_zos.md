@@ -38,11 +38,19 @@ Define the shareport method.
 
 Example VIPA command to execute:
 
+```
+v tcpip,tcpip,obeyfile,dsn=... UPARM(TCPSHAP1)
+```
+
 Customize the dynamic XCF address (automatic function to declare LPAR).
 
 ..UPARM(TCPDYMX1) DYNAMICXCF
 
 Example VIPA command to execute:
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCPDYMX1)
+```
 
 ### Customize the LPAR2
 
@@ -52,11 +60,19 @@ Define the shareport method.
 
 Example VIPA command to execute:
 
+```
+v tcpip,tcpip,obeyfile,dsn=...V30X.UPARM(TCPSHAP1)
+```
+
 Customize the dynamic XCF address (automatic function to declare LPAR).
 
 ..UPARM(TCPDYMX2) DYNAMICXCF (one for each host)
 
 Example VIPA command to execute:
+
+```
+v tcpip,tcpip,obeyfile,dsn=...V30X.UPARM(TCPDYMX2)
+```
 
 ## Customize the cluster
 
@@ -69,6 +85,10 @@ Customize the cluster as follows:
 ..UPARM(TCVIPDEF) VIPADEFINE (global for all hosts VIPADEFINE mask @DVIPA)
 
 Example VIPA command to execute:
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPDEF)
+```
 
 This means that in the example configuration, the cluster will work with the machines (LPAR1, LPAR2,...) using this one single dynamic address.
 
@@ -98,17 +118,45 @@ The following examples, `WeightedActive `and `RounRobin`, represent two of the p
 
 Example VIPA command to execute:
 
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPWG0)
+```
+
 ..UPARM(TCVIPWG1) Port pesit ssl
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPWG1)
+```
 
 ..UPARM(TCVIPWG2) Port Copilot
 
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPWG2)
+```
+
 ..UPARM(TCVIPWG3) Port Synchronous Communication
+
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPWG3)
+```
 
 ..UPARM(TCVIPWG4) Port Copilot SSL
 
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPWG4)
+```
+
 ..UPARM(TCVIPWG5) Port Copilot REST API server port
 
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPWG5)
+```
+
 ..UPARM(TCVIPWG6) Port SFTP
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPWG6)
+```
 
 **Round robin example**
 
@@ -118,17 +166,45 @@ Example VIPA command to execute:
 
 Example VIPA command to execute:
 
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPRN0)
+```
+
 ..UPARM(TCVIPRN1) Port pesit ssl
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPRN1)
+```
 
 ..UPARM(TCVIPRN2) Port Copilot
 
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPRN2)
+```
+
 ..UPARM(TCVIPRN3) Port Synchronous Communication
+
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPRN3)
+```
 
 ..UPARM(TCVIPRN4) Port Copilot SSL
 
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPRN4)
+```
+
 ..UPARM(TCVIPRN5) Port Copilot REST API server port
 
+```
+v tcpip,tcpip,obeyfile,dsn=….UPARM(TCVIPRN5)
+```
+
 ..UPARM(TCVIPRN6) Port SFTP
+
+```
+v tcpip,tcpip,obeyfile,dsn=...UPARM(TCVIPRN6)
+```
 
 You have now customized the VIPA and submitted the programs.
 

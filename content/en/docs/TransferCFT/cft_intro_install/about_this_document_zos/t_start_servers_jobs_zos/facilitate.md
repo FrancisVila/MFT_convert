@@ -16,9 +16,13 @@ Deployment overview
 The following sections describe how to:
 
 -   [Create a master copy](#Create) (1)
+    &lt;/li>
 -   [Distribute the master copy](#Distribu) (2)
+    &lt;/li>
 -   [Restore the master copy](#Restore) (3)
+    &lt;/li>
 -   [Install the instance](#Install) (4)
+    &lt;/li>
 
 <img src="/Images/TransferCFT/temp_zos_deploy.png" class="maxWidth" />
 
@@ -27,8 +31,11 @@ The following sections describe how to:
 Deploy a patch or service pack
 
 -   [Generate a patch or service pack](#Generate) (1)
+    &lt;/li>
 -   [Transfer the generated patch or service pack](#Transfer) (2)
+    &lt;/li>
 -   [Apply the patch or service pack](#Apply) (3)
+    &lt;/li>
 
 <img src="/Images/TransferCFT/temp_deploy_sp_zos.png" class="maxWidth" />
 
@@ -173,6 +180,11 @@ This creates a remote UPLIB library.
 > Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.
 
 1.  Customize the A33IPTF JCL delivered in the UPLIB library, and transferred by A33GSND:  
+    ```
+    Set JCLLIB using the instance prefix qualifiers.
+    Set the variable ID: Patch ID.
+    Set the variable PUPLIB in accordance with A33GSND.
+    ```
 2.  Submit the JCL.
 
 The instance is now updated.

@@ -13,6 +13,12 @@
 
 CAPTURE command to redirect the screen output to a file.
 
+```
+CAPTURE FNAME = NAME,
+        FACTION = ACTION
+        MASK = NNN
+```
+
 #### Parameters
 
 -   NAME: Character string indicating the name of the output file. This file is a standard text file variable.
@@ -25,11 +31,31 @@ CAPTURE command to redirect the screen output to a file.
 
 #### Example
 
+```
+CHAR name = TRACEFILE, size = 13, init = TRACE
+CAPTURE FNAME = %TRACFILE%, FACTION=APPEND, MASK=128
+```
+
 ### Dump
 
 #### Syntax
 
 The DUMP command displays the contents of a file or a variable.
+
+```
+DUMP NAME = name,
+     FNAME = fname
+     TYPE = t,
+           LRECL = n,
+     RECFM = V/F/U,
+     ORG = SEQ/IND/PAR/DIR,
+     ACC = a,
+     KEYLEN = n,
+     KEYPOS = n,
+     SRECNUM = n,
+     ERECNUM = n,
+     MODE = HEXA/TEXT/OCTAL
+```
 
 #### Parameters
 
@@ -51,3 +77,7 @@ The DUMP command displays the contents of a file or a variable.
 ICMCIA value for the name parameter will display the ​​ICM work area.
 
 #### Example
+
+```
+DUMP FNAME = test
+```

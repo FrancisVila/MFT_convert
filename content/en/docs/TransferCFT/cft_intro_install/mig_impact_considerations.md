@@ -73,7 +73,8 @@
 <p>*3.7 SP1 (patch), 3.3.2 SP8, 3.6 SP3, 3.8</p>         </td>
       </tr>
       <tr>
-         <td>Visual C++ Redistributable Package for Visual Studio 2019         </td>
+         <td>Visual C++ Redistributable Package for Visual Studio 2019
+&lt;/td&gt;         </td>
          <td>3.6 and lower         </td>
          <td>3.7 and higher         </td>
          <td><p>Transfer CFT on Windows requires the <strong>Visual C++ Redistributable Package for Visual Studio 2019</strong> for proper functioning. This provides the necessary library files (DLL) for Transfer CFT.</p>

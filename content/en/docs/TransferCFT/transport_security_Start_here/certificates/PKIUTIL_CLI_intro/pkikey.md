@@ -41,7 +41,15 @@ If you already have keys that you want to use, you can import them as described 
 
 Import with PKCS8 format
 
+```
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
+```
+
 Import with encrypted PEM (PKCS#5) format
+
+```
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
+```
 
 -----BEGIN RSA PRIVATE KEY-----
 
@@ -59,6 +67,10 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 Import with private.rsa format
 
+```
+PKIUTIL PKIKEY ID=PRIVRSA, IKFORM=PEM, IKNAME=./private.rsa, MODE=CREATE
+```
+
 -----BEGIN RSA PRIVATE KEY-----                                 
 
 MIICXwIBAAKBgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH6QMTevV7dllkNHe
@@ -68,6 +80,10 @@ MIICXwIBAAKBgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH6QMTevV7dllkNHe
 -----END RSA PRIVATE KEY-----                                   
 
 Import with public.ssh2 format
+
+```
+PKIUTIL PKIKEY ID=PUBSSH2, IKFORM=SSH, IKNAME=./public.ssh2, MODE=CREATE
+```
 
 ---- BEGIN SSH2 PUBLIC KEY ----                                                     
 
@@ -79,6 +95,10 @@ AAAAB3NzaC1yc2EAAAADAQABAAAAgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH
 
 Import with public.ssh-rsa format
 
+```
+PKIUTIL PKIKEY ID=PUBSSHRSA, IKFORM=SSH, IKNAME=./public.ssh-rsa, MODE=CREATE
+```
+
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAAgQDDUPaQmmgTL90EaFPvzt9u/1AAxdeXKhTuH6QMT...
 
 BW4FzI2WRwuTK5vx4s2AF8+4wy7tKrR8kxHn2qnXB12ICh5/nnt2syjw== = KeyType=RSA Date=2017
@@ -86,6 +106,10 @@ BW4FzI2WRwuTK5vx4s2AF8+4wy7tKrR8kxHn2qnXB12ICh5/nnt2syjw== = KeyType=RSA Date=20
 0612 User=MyUser Comment=This is a free comment
 
 Import with public.pem format
+
+```
+PKIUTIL PKIKEY ID=PUBPEM, IKFORM=PEM, IKNAME=./public.pem, MODE=CREATE
+```
 
 > -----BEGIN PUBLIC KEY-----                                     
 >

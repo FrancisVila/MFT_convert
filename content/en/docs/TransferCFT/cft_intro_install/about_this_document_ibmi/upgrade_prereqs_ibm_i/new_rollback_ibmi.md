@@ -20,8 +20,16 @@ Before beginning the rollback procedure:
 -   Check that you can access the Transfer CFT installation or upgrade packages for download from Axway at [support.axway.com](https://support.axway.com/).
 -   Stop the Transfer CFT server and the Transfer CFT Copilot (UI) server. Enter:
 
+```
+CFTSTOP
+COPSTOP
+```
+
 Optionally, you can use the display command to check the version or product details prior to upgrading.
 
+```
+CFTUTIL about
+```
 <span id="Automati"></span>
 
 ## Automatically roll back
@@ -34,14 +42,25 @@ Start the rollback process by uploading the Transfer CFT installation package in
 2.  Create a temporary library: `CRTLIB CFTTMP`
 3.  Create a SAVF file: `CRTSAVF FILE(CFTTMP/CFT37)`
 4.  Upload the installation package to the SAVF in binary mode using FTP:  
+    ```
+    binary
+    cd CFTTMP
+    put Transfer\_CFT\_os400.bin CFT37
+    ```
 
 <!-- -->
 
 1.  Restore the SAVF file in the temporary library:  
+    ```
+    RSTLIB SAVLIB(CFTPG) DEV(\*SAVF) SAVF(CFTTMP/CFT37) OPTION(\*NEW) RSTLIB(CFTTMP)
+    ```
 
 <!-- -->
 
 1.  After restoring the SAVF, you must add the library name in the first position of the library list for the user profile. Execute the command:  
+    ```
+    ADDLIBLE LIB(CFTTMP) POSITION(\*FIRST)
+    ```
 
 > **Note:**
 >
@@ -50,6 +69,16 @@ Start the rollback process by uploading the Transfer CFT installation package in
 1.  Call the UPGRADE command for your {{< TransferCFT/transfercftname >}}. Applying an UPGRADE of a version older than the version of your {{< TransferCFT/transfercftname >}} rolls it back to this older version, but keeps your configuration.
 
 In rollback mode, the UPGRADE command prompt resembles the following screen:
+
+```
+UPGRADE CFT (UPGRADE)
+Extract lib for the CFT  . . . . CFTEXTLIB      \_\_\_\_\_\_\_\_\_\_
+CFT Program Library  . . . . . . CFTPGM         \_\_\_\_\_\_\_\_\_\_
+CFT Production Library . . . . . CFTPROD        \_\_\_\_\_\_\_\_\_\_
+Are you rolling back? . . . . . .ROLLBACK       '1'   
+Lib of the SAVF  . . . . . . . . LIBSAVF        '\*LIBL'  
+SAVF of the version to apply . . SAVF           CFT37X      
+```
 
 The following fields are mandatory; you should complete as per your system details:
 
@@ -90,10 +119,15 @@ To roll back to version 3.6 or lower:
 3.  Repeat the [Upload instructions](#Upload) to upload the most recent {{< TransferCFT/transfercftname >}} version SAVF to a second temporary library, for example CFTTMP2.
 4.  Add the CFTTMP2 temporary library in the first position of your library list.
 
-<!-- -->
+```
+ADDLIBLE LIB(CFTTMP2) POSITION(\*FIRST)
+```
 
 1.  Call the UPGRADE command, and then press F4 to fill the fields. Remember to enable the rollback mode by changing the ROLLBACK value. The command to execute, again for example for version 3.6, should resemble the following:
 
+```
+UPGRADE CFTEXTLIB(CFTEXTLIB) CFTPGM(CFTPGM) CFTPROD(CFTPROD) ROLLBACK('1') LIBSAVF(CFTTMP) SAVF(CFT36X)  
+```
 <span id="Manually"></span>
 
 ## Manually roll back

@@ -14,11 +14,23 @@ chmod +x Transfer\_CFT\_{{< TransferCFT/releasenumber  >}}\_Install\_&lt;OS>\_&l
 
 Use the following command to begin the Transfer CFT installation in graphical mode:
 
+```
+`./Transfer_CFT_3.7_<Install>_<OS>_<BN>.run`
+```
+
 The installation wizard displays. After completing each screen, click **Next** to continue. Click **Cancel** at any time to end the installation setup.
 
 Use the following command to install Transfer CFT in text mode. The screen text is similar to the graphical mode prompts below.
 
+```
+`./Transfer_CFT_3.7_<Install>_<OS>_<BN>.run --mode text`
+```
+
 Use the following command to install Transfer CFT in silent mode.
+
+```
+`./Transfer_CFT_3.7_<Install>_<OS>_<BN>.run --mode unattended --conf-file initialize.properties`
+```
 
 > **Note:**
 >
