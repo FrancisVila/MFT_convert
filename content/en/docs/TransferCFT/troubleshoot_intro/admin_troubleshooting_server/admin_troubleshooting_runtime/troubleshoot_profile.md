@@ -6,7 +6,4 @@
 
 To fix this issue, you can run the following command :
 
-
-    cftruntime -p $CFTDIRINSTALL $CFTDIRRUNTIME
-
 This command saves the current profile and creates a new one. You can compare the previous profile file with the new one, and keep the file you require.

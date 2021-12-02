@@ -14,30 +14,13 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 >
 > Do NOT customize the distribution environment.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Variables         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CFTV2</p>         </td>
-         <td><p>Prefix of the Transfer CFT instance environment.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISTLIB</p>         </td>
-         <td><p>Three first qualifiers of the distribution environment.</p>
-<p>Example: Axway.XFB.CFT00332</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISTLEV</p>         </td>
-         <td><p>Fourth qualifier of the distribution environment (level of distribution)</p>
-<p>Example: CF030000</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Variables  | Description  |
+| --- | --- |
+|  CFTV2  |  Prefix of the Transfer CFT instance environment.  |
+|  DISTLIB  |  Three first qualifiers of the distribution environment.<br/>Example: Axway.XFB.CFT00332  |
+|  DISTLEV  |  Fourth qualifier of the distribution environment (level of distribution)<br/>Example: CF030000  |
+
 
 You can repeat A00CUSTO several times to customize any parameters that were not customized.
 

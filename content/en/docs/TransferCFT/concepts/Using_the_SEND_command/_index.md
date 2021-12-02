@@ -23,11 +23,6 @@ You can perform a basic SEND command by specifying only the partner. In this ca
 
 In this example, the `store1 `partner values including the `dailysales `(IDF) are used.
 
-
-
-    cftpart id=store1, idf=dailysales
-    send part=store1
-
 > **Note:**
 >
 > When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in Central Governance.
@@ -35,9 +30,6 @@ In this example, the `store1 `partner values including the `dailysales `(IDF) a
 ### Override the model file default values
 
 You can create your own model files to use with an existing partner. When specified in the send command, the new model file overrides the partner and global default model file value.
-
-
-    send part=store1, idf=newmodel
 
 > **Note:**
 >
@@ -47,17 +39,9 @@ You can create your own model files to use with an existing partner. When specif
 
 Using additional send command parameters, such as the file name, you can override values in the model file.
 
-
-    send part=store1, idf=model, fname=newfile
-
 ### Blocking the override functionality
 
 In some cases you may not want to allow the model file values to be overridden. To block the override functionality set the force parameter to yes. In this example, the fname=oldfile and not newfile is used.
-
-
-
-    cftsend id=newmodel1, fname=oldfile.... force=yes
-    send part=store1, idf=newmodel1, fname=newfile
 
 <span id="Use2"></span>
 
@@ -67,17 +51,11 @@ There are several ways for you to provide the file name in the SEND command to 
 
 ### Send a file using only the file name
 
-
-    send part=store1, idf=newmodel, fname=report
-
 ### Send a group of files
 
 #### Send files that are recorded in a list
 
 Use the appropriate indirection character (@ or #) to send all files that are listed in a specified file. Add the indirection character at the beginning of the complete file name, including path as shown in the following syntax.
-
-
-    send part=store1, idf=newmodel, fname=@pub/sourcefiles/list
 
 > **Note:**
 >
@@ -89,15 +67,9 @@ For more information, see <a href="send_group_of_files_cl#Sending_files_designat
 
 You can use mask characters to send groups of files by adding either the ? character to indicate one character, or the \* to indicate multiple characters. Be sure to prefix the file name with the appropriate indirection character.
 
-
-    send part=store1, idf=newmodel, fname=@reports*
-
 #### Reference a folder
 
 Specify the folder name and add the indirection character to send all files that are contained in a folder, where `daily_reports` is a folder.
-
-
-    send part=store1, idf=newmodel, fname=@daily_reports
 
 #### Use selfname
 
@@ -108,9 +80,6 @@ Using the `send `command, include the `selfname `parameter, which is the name of
 **Example**
 
 In this example, the `report_folder` contains the following files A1, A2, A3, B1, and B2, and the `report_limited` file lists A1 and B1.
-
-
-    send part=store1, idf=newmodel, selfname=report_limited, fname=#report_folder
 
 Using the syntax in this example, only the files A1 and B1 are transferred.
 
@@ -124,15 +93,9 @@ This section describes how to send a list of files that are contained in a folde
 
 If you specify only the folder name, this sends a list of the files contained in the folder.
 
-
-    send part=store1, idf=newmodel, fname=folder
-
 #### Use file or folder name plus a mask
 
 Add a mask character to the file or folder name to send a list of the files contained in the folder.
-
-
-    send part=store1, idf=newmodel, fname=folder/reports*
 
 ### How to define the remote file name
 
@@ -140,9 +103,6 @@ Add a mask character to the file or folder name to send a list of the files cont
 
 Use the NFNAME, network file name, to indicate the remote file name to be downloaded on the remote side. This feature is available only in open mode, as described in Read transfer implicit
 send open mode.
-
-
-    send part=store1, idf=newmodel, nfname=remotefile
 
 > **Note:**
 >
@@ -157,48 +117,26 @@ send open mode.
 
 You can use the send command with STATE parameters so that the send occurs once the transfer has a predefined status.
 
-<table>
-   <tbody>
-      <tr>
-         <td>D = disp         </td>
-         <td><p>Transfers are carried out immediately. (default)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H = hold</p>         </td>
-         <td><p>A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>K = keep</p>         </td>
-         <td><p>You can use this status to store several transfers, for example, until all are ready to go. A manual START command would trigger the transfers.</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
+| D = disp  |  Transfers are carried out immediately. (default)  |
+| --- | --- |
+|  H = hold  |  A practical application for this method is to make files available for a partner to download when the partner is ready. This can be started by the START command or a RECV command.  |
+|  K = keep  |  You can use this status to store several transfers, for example, until all are ready to go. A manual START command would trigger the transfers.  |
 
-    send part=store1, idf=newmodel, state=hold
 
 ### Perform a send at a specific time
 
 You can use the mintime and mindate parameters to schedule a transfer for a given date and time. These can be relative or absolute values; for more information see Delayed transfers in <a href="../transfer_command_overview/delayed_transfers" class="MCXref xref">Transfer
 scheduling</a>.
 
-
-    send part=store1, idf=newmodel, mindate= 20150924, mintime=204500
-
 ### How to define a periodic send
 
 You can use the cycle and tcycle parameters to define a periodic send. See <a href="../transfer_command_overview/cyclic_transfer_requests" class="MCXref xref">Cyclic
 transfer requests</a>.
 
-
-    send part=store1, idf=newmodel, cycle=7, tcycle=day
-
 ### Define a send based on a transfer timeout
 
 You can define that beyond a specified time in minutes, the transfer is canceled. See also maxduration.
-
-
-    send part=store1, idf=newmodel, maxduration=10
 
 See also [Transfer
 scheduling](../transfer_command_overview/delayed_transfers).
@@ -212,9 +150,6 @@ scheduling](../transfer_command_overview/delayed_transfers).
 -   Use the group of files syntax
 
 Use the fname and wfname parameters to use this mode, also referred to as homogeneous mode.
-
-
-    send part=store1, idf=endofdayresults, fname=@myfolder/*, wfname=results.zip
 
 See also [WFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/wfname).
 
@@ -230,21 +165,12 @@ For details transfer activities and scheduling, see [Processing execution policy
 
 ### How to trigger pre execution scripts
 
-
-    send part=store1, idf=model, preexec=exec/preexec.cmd
-
 ### How to trigger post execution scripts
-
-
-    send part=store1, idf=model, exec=exec/postexec.cmd
 
 ### How to trigger a script when a transfer fails
 
 See [Transfer
 error procedures](../about_transfer_processing/transfer_related_procedures) for more information.
-
-
-    send part=store1, idf=model, exece=exec/errorexec.cmd
 
 > **Note:**
 >
@@ -256,9 +182,6 @@ error procedures](../about_transfer_processing/transfer_related_procedures) for 
 
 When using visibility features to link an application to a transfer, or to link a transfer to other transfers, you can use the appobjid and the appcycid parameters. These parameters refer to tracked object and the cycle id.
 
-
-    send part=store1, idf=model, appobjid=appliobject, appcycid=Appl1
-
 <span id="Miscella"></span>
 
 ## Miscellaneous send features
@@ -267,33 +190,19 @@ When using visibility features to link an application to a transfer, or to link 
 
 Use the ipart parameter to override either the default or defined routing partner in the partner definition.
 
-
-    send part=store1, idf=model, ipart=siteB
-
 See also [Store and forward](../transfer_command_overview/store_and_forward_mode_routing).
 
 ### How to toggle the protocol used for a send
 
 In the partner definition create a choice of protocols, for example prot=(nossl, ssl), sap=(1761, 1762). Use the PROT parameter with the SEND command to indicate for that particular transfer it should use the specified protocol.
 
-
-    send part=store1, idf=model, prot=ssl
-
 ### How to provide passwords when required by the remote partner
 
 You must provide both the user and corresponding password in send command as defined on the remote partner in the receive file template.
 
-
-    send part=store1, idf=model, ruser=guest, rpasswd=guestpassword
-
 ### Wait for a synchronous transfer to complete before continuing
 
 After configuring the [synchronous communication](../../app_integration_intro/synch_comm_tcpip_intro), add the wstate and wtimeout to the send command.
-
-
-
-    config type=com, mediacom=tcpip, fname=xhttp://localhost:1765
-    send part=store1, idf=model, wstates=TX, wtimeout=120
 
 ### How to send additional information to the remote partner
 
@@ -303,19 +212,9 @@ Use the following parameters to further refine the send command and provide more
 -   sappl, rappl = send information about the applications sending the transfer
 -   suser, ruser = send information related to the transfer users
 
-<!-- -->
-
-
-
-    send part=store1, idf=model, parm='contains all daily reports'
-
 ## Use the archive features
 
 When FACTION=ARCHIVE and ARCHIVEFNAME is set, the source file is moved to the file name specified in the ARCHIVEFNAME parameter when the transfer is completed.
-
-
-
-    send part=store1, idf=model, faction=archive, archivefname=&FNAME_&FDATE_&IDTU
 
 Limitations
 

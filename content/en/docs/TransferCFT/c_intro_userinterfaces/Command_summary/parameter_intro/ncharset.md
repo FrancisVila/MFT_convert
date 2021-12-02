@@ -20,25 +20,9 @@ to encode or decode network data.
 
 To translate a local text file before sending it, for example from UTF-8 to UTF-16 using Transfer CFT mapping:
 
-
-
-    CFTUTIL SEND PART = NEWYORK,
-     IDF = TEST_UTF-8,
-     FCHARSET = CFT_UTF-8,
-     NCHARSET = CFT_UTF-16,
-     FTYPE = T
-
 **Example 2**
 
 To translate a local text file before sending it, for example from UTF-8 to UTF-16:
-
-
-
-    CFTUTIL SEND PART = NEWYORK,
-     IDF = TEST_UTF-8_2,
-     FCHARSET = UTF-8,
-     NCHARSET = UTF-16,
-     FTYPE = T
 
 If an error occurs while trying to transcode a file, this results in a DIAGI=154 (DIAGP=ERRTRCOD).
 

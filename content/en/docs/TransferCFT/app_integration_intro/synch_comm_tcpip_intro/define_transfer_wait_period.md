@@ -56,9 +56,6 @@ command specific errors are:
 Use this parameter allows you to filter on a particular transfer so that you can track its status depending on the other defined parameters. This is a
 mandatory argument for which the value must be enclosed in double quotes.
 
-
-    SWAITCAT select="EXPRESSION"
-
 **Expression**
 
 `Select `is a Boolean expression that identifies one transfer.
@@ -158,10 +155,4 @@ one year (365\*24\*3600 s).
 
 This example selects the first transfer that has the following IDTU.
 
-
-    SWAITCAT select='IDTU=="A00000A"'
-
 The following example filters on transfers having the D state, but completes as soon as the first transfer reaches the TX state (even though there may be more transfers in the D state).
-
-
-    SWAITCAT select='state=="D"',states=TX

@@ -15,12 +15,6 @@ represents the statistical file.
 
 This example automatically executes the switch procedure at noon.
 
-
-    CFTACCNT ID=ACCNT0,TYPE=FILE,EXEC=<switch_procedure>,SWITCH=120000
-
 #### Manual SWITCH 
 
 To manually execute the switch procedure, use the command:
-
-
-    SWITCH TYPE=ACCNT

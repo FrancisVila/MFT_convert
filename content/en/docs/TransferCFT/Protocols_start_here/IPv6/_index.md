@@ -18,27 +18,12 @@ Enabling IPv6 support for applications may have adverse effects on the behavior 
 
 To enable IPv6 name resolution for Transfer CFT, set the following unified configuration parameters to **NO** using either the `CFTUTIL uconfset` command or the UI [Unified configuration](../../admin_intro/uconf) option.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ipv6.disable_connect         </td>
-         <td><u>YES</u> | NO         </td>
-         <td><p>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.</p>         </td>
-      </tr>
-      <tr>
-         <td>ipv6.disable_listen         </td>
-         <td><u>YES</u> | NO         </td>
-         <td>The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| ipv6.disable_connect  | <u>YES</u> | NO  |  The value NO enables IPV6 resolution for hostnames used by Transfer CFT to connect to remote servers.  |
+| ipv6.disable_listen  | <u>YES</u> | NO  | The value NO enables IPV6 resolution for hostnames used by Transfer CFT to listen for incoming connections.  |
+
 
 You can also configure IPv6 addresses instead of names in the Transfer CFT configuration files. As the configuration options only apply to hostname resolution, Transfer CFT will use the IPv6 addresses, regardless of the IPv6 option settings.
 
@@ -95,44 +80,13 @@ If IPv6 is not properly configured, performance may be affected. Use the followi
 
 Tuning parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.ipv6.set_ai_numerichost</p>         </td>
-         <td>Yes         </td>
-         <td><ul>
-<li><strong>Yes</strong>: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.</li>
-<li><strong>No</strong>: Use DNS requests for all hostnames, including numeric.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>cft.ipv6.set_ai_numericserv         </td>
-         <td>Yes         </td>
-         <td><ul>
-<li><strong>Yes</strong>: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.</li>
-<li><strong>No</strong>: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>cft.ipv6.use_ipv4_legacy_resolver         </td>
-         <td>No         </td>
-         <td><ul>
-<li><strong>Yes</strong>: Use legacy IPv4 only with the host and
-service names resolution APIs, gethostbyname() and getservbyname().
-This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation,
-etc.</li>
-<li><strong>No</strong>: Use IPv6 functionality.</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+|  cft.ipv6.set_ai_numerichost  | Yes  |  <li>**Yes**: Use when the host name is numeric to prevent the API system getaddrinfo from performing unnecessary DNS requests for numeric hostnames.<br/> • **No**: Use DNS requests for all hostnames, including numeric.</li>  |
+| cft.ipv6.set_ai_numericserv  | Yes  |  <li>**Yes**: Use when the service name is numeric (port number) to prevent the API system getaddrinfo from performing an unnecessary service name translation.<br/> • **No**: The getaddrinfo system API will perform a service name translation even if unnecessary.</li>  |
+| cft.ipv6.use_ipv4_legacy_resolver  | No  |  <li>**Yes**: Use legacy IPv4 only with the host and service names resolution APIs, gethostbyname() and getservbyname(). This detects if a performance issue involves IPv6 specific elements such as configuration settings, system API implementation, etc.<br/> • **No**: Use IPv6 functionality.</li>  |
+
 
 ### IPv6 support
 
@@ -143,8 +97,8 @@ Enable IPv6
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+<th >Parameter         </th>
+<th >Description         </th>
       </tr>
    </thead>
    <tbody>

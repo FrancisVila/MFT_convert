@@ -33,17 +33,6 @@ Example list of unauthorized IDFs
 
 With CFTAUTH ID = <span style="color: #ff4500;">NOT</span>SIBM1 in the CFTPART definition, and SAUTH = <span style="color: #ff4500;">NOT</span>SIBM1, then the APLI1 and APLI2 IDFs are not transferred to the IBM1 partner. When the CFTAUTH ID is prefixed by `NOT`, note that all other IDFs that are not included in the IDF list are consequently authorized.
 
-
-
-    CFTPART    ID = IBM1,
-    SAUTH = NOTSIBM1
-    CFTPART     ID = BULGC8,
-    RAUTH = RBULGC8
-    CFTAUTH     ID = NOTSIBM1,
-    IDF = (APLI1,APLI2)
-    CFTAUTH      ID = RBULGC8,
-    IDF = fil21
-
 The log then displays the following message: <span class="code">CFTT25E IDF not authorized &lt;PART =% s IDF =% s></span>
 
 ## <span class="mc-variable Primary.CG or_UM variable" style="font-weight: bold;">Central Governance</span> interoperability

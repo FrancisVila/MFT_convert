@@ -14,49 +14,12 @@ See also [CFTLOG](../../../web_copilot_ui/conf_intro/cftlog), the [exec](../../.
 
 In either command line or the user interface, set the following:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.cftlog.fname         </td>
-         <td>$(cft.cftlog.fname)         </td>
-         <td>Replaces the CFTLOG logical name.         </td>
-      </tr>
-      <tr>
-         <td>cft.cftlog.afname         </td>
-         <td>$(cft.cftlog.fname)         </td>
-         <td>Replaces the CFTLOGA logical name.         </td>
-      </tr>
-      <tr>
-         <td>cft.cftlog.backup_count         </td>
-         <td>3         </td>
-         <td>Number of rotate out files.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Value  | Description  |
+| --- | --- | --- |
+| cft.cftlog.fname  | $(cft.cftlog.fname)  | Replaces the CFTLOG logical name.  |
+| cft.cftlog.afname  | $(cft.cftlog.fname)  | Replaces the CFTLOGA logical name.  |
+| cft.cftlog.backup_count  | 3  | Number of rotate out files.  |
+
 
 Example
-
-
-
-    CFTLOG       ID       = 'LOG0',
-    FNAME    = '$CFTLOG',
-    AFNAME   = '$CFTALOG',
-    EXEC     = 'C:\Work\CFT300\runtime\exec\rotate.bat',
-    LENGTH   = '160',
-    OPERMSG  = '0',
-    MAXREC   = '0',
-    NOTIFY   = '        ',
-    SWITCH   = '00000000',
-    CONTENT  = 'FULL',
-    NTF      = 'NO',
-    NTFTYP   = 'EF',
-    ORIGIN   = 'CFTUTIL',
-    FORMAT   = 'V24',
-    MODE     = 'REPLACE'

@@ -15,33 +15,10 @@ This section describes how to create a reusable and distributable {{< TransferCF
 Perform the following steps:
 
 1.  Create a user profile using the command: `CRTUSRPRF`
-
 2.  Create a temporary library, for example:  
-
-
-        CRTLIB CFTTMP
-
 3.  Create a save file (\*SAVF) in the CFTTMP library, for example:  
-
-
-
-        CRTSAVF FILE(CFTTMP/CFT32XL) TEXT('Transfer CFT Distribution save file')
-
 4.  Use FTP in binary mode to send the save file to an iSeries system. Open an FTP session, and enter:  
-
-
-
-        Set Transfer Mode to bin
-        cd CFTTMP
-        put Transfer_CFT_os400.bin CFT32XL
-        quit
-
 5.  Restore the Transfer CFT save file, for example:  
-
-
-
-        RSTLIB SAVLIB(CFTPG) DEV(*SAVF) SAVF(CFTTMP/CFT32XL) RSTLIB(CFTTMP)
-
 6.  Install a Transfer CFT 3.2.4 with Central Governance (you must use this command for all iSeries Transfer CFT deployments).
 
 -   See the example and options described in the INSTALL section and customize to suit your business needs. Details on <a href="../install_intro_ibmi/perform_auto_installation" class="MCXref xref">Silent installation</a>.
@@ -73,56 +50,16 @@ In this procedure, you must first create a SAVF file that contains all of your n
 On the local machine where you have {{< TransferCFT/transfercftname  >}} installed:
 
 1.  Create a temporary library that will contain all the items you want to deploy, for example:  
-
-
-        CRTLIB CFTCONF
-
 2.  Copy all the configuration elements you want to deploy into this library, for example:  
-
-
-        CPYF FROMFILE(CFTPROD/UTIN) TOFILE(CFTCONF/UTIN) FROMMBR(CGPARAM) TOMBR(TCPPARAM)
-
 3.  Create a backup for your library CFTCONF, for example:  
-
-
-
-        1.  CRTSAVF FILE(CFTCONF/CFTCONFSVF)
-        2.  SAVLIB LIB(CFTCONF) DEV(*SAVF) SAVF(CFTCONF/CFTCONFSVF)
-        3.  Get the CFTCONFSVF.savf (in binary mode)
 
 On the other machines, where you want to deploy {{< TransferCFT/transfercftname  >}}:
 
 1.  Create a temporary library, for example:  
-
-
-        CRTLIB CFTTMP
-
 2.  Create two save file (\*SAVF) in the CFTTMP library, for example:  
-
-
-
-        1.  CRTSAVF FILE(CFTTMP/CFT32XL) TEXT('Transfer CFT Distribution')
-        2.  CRTSAVF FILE(CFTTMP/CFTCONFSVF) TEXT('CFT configuration')
-
 3.  Use FTP in binary mode to send the save file to an Iserie system. Open an FTP session, and enter:  
-
-
-
-        Set Transfer Mode to bin
-        cd CFTTMP
-        put Transfer_CFT_os400.bin CFT32XL (SAVF with Transfer CFT)
-        put CFTCONFSVF.savf CFTCONFSVF (SAVF with CFT configuration)
-        quit
-
 4.  Restore the Transfer CFT save file, for example:  
-
-
-        RSTLIB SAVLIB(CFTPG) DEV(*SAVF) SAVF(CFTTMP/CFT32XL) RSTLIB(CFTTMP)
-
 5.  Installing a Transfer CFT 3.2.4 without Central Governance  
-
-
-        INSTALL
 
 > **Note:**
 >
@@ -133,16 +70,7 @@ On the other machines, where you want to deploy {{< TransferCFT/transfercftname 
 > As of Transfer CFT 3.3.2, you can define the user for the Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
 
 1.  Restore the Transfer CFT configuration save file, for example:  
-
-
-        RSTLIB SAVLIB(CFTCONF) DEV(*SAVF) SAVF(CFTTMP/CFTCONFSVF) RSTLIB(CFTPROD)
-
 2.  Apply your configuration to your new environment, for example:  
-
-
-
-        1.  CFTUTIL PARAM('#CFTPROD/<CFTCONF>)
-        2.  PKIUTIL PARAM('#CFTPROD/<PKICONF>')
 
 ## Limitations
 

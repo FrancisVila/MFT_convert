@@ -63,36 +63,13 @@ Two pods two nodes architecture                    <img src=
 
 ####  Architecture versus file storage summary
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Architecture</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Local volume</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Shared volume</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Cloud storage</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Same pod</p>         </td>
-         <td><p>yes</p>         </td>
-         <td><p>yes</p>         </td>
-         <td><p>yes</p>         </td>
-      </tr>
-      <tr>
-         <td><p>2. Two pods on the same node</p>         </td>
-         <td><p>yes</p>         </td>
-         <td><p>yes</p>         </td>
-         <td><p>yes</p>         </td>
-      </tr>
-      <tr>
-         <td><p>3. Two pods regardless of the running node</p>         </td>
-         <td><p>no</p>         </td>
-         <td><p>yes</p>         </td>
-         <td><p>yes</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Architecture  |  Local volume  |  Shared volume  |  Cloud storage  |
+| --- | --- | --- | --- |
+|  1. Same pod  |  yes  |  yes  |  yes  |
+|  2. Two pods on the same node  |  yes  |  yes  |  yes  |
+|  3. Two pods regardless of the running node  |  no  |  yes  |  yes  |
+
 
 ### Transfer triggering
 

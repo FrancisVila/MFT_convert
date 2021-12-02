@@ -34,134 +34,32 @@ topics
 -   Object concepts
     [Catalog attributes](../../../../admin_intro/admin_config_commands/catalog_parameter_concepts)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p>         </td>
-         <td><p>Name identifying the CFTCAT command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/fname">FNAME</a></p>         </td>
-         <td><p>Catalog file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/cache">CACHE</a> </p>         </td>
-         <td><p>Size parameter for the monitor cache memory buffer
-size, containing the transfers waiting for resources.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rh">RH</a></p>         </td>
-         <td><p>Number of days (where a day equals a 24-hour interval) after which the catalog entries of "unterminated"
-receive requests ( H or K state) are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rkerror">RKERROR</a></p>         </td>
-         <td><p>Action to be taken if a transfer aborts during the
-selection phase in server mode.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rt">RT</a> </p>         </td>
-         <td><p>Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated
-receive transfers (RT state) are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/rx">RX</a> </p>         </td>
-         <td><p>Number of days after which the catalog entries of receive
-transfers for which the end of reception procedure is correctly executed
-(RX state) are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td>RY         </td>
-         <td>Number of days after which the catalog entries of receive transfers that are the in post-processing phase (RY state) are automatically purged.         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/sh">SH</a> </p>         </td>
-         <td><p>Number of days (where a day equals a 24-hour interval) after which the catalog entries for
-"unterminated" send requests (H or K state) are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/st">ST</a> </p>         </td>
-         <td><p>Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated
-send transfers (ST state) are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/sx">SX</a></p>         </td>
-         <td><p>Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated
-send transfers, for which the end-of-send transfer procedure was correctly
-executed (SX state), are automatically purged.</p>         </td>
-      </tr>
-      <tr>
-         <td>SY         </td>
-         <td>Number of days (where a day equals a 24-hour interval) after which the catalog entries of send transfers that are in the post-processing phase (SY state), are automatically purged.         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a></p>         </td>
-         <td><p>Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a></p>         </td>
-         <td><p>Batch to execute when the alert ends.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a></p>         </td>
-         <td><p>The minimum amount of time, in seconds, to wait before
-resending an alert.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a></p>         </td>
-         <td><p>Batch to execute when CFTCAT/TLVWARN is reached.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a></p>         </td>
-         <td><p>Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.</p>
-<p>When this
-limit is reached, the CFTCAT/TLVWEXEC is executed.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/timep">TIMEP</a> </p>         </td>
-         <td><p>Daily purge time chosen by the user.</p>
-<p>The user can program an automatic, cyclic catalog purge.
-The default purge time is midnight.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic
-purging is performed (at a selected time or at midnight).</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/updat">UPDAT</a> </p>         </td>
-         <td><p>Number of synchronization points between two consecutive
-updates of the catalog file during a transfer.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/wscan">WSCAN</a> </p>         </td>
-         <td>Enter the frequency (in minutes) with which {{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer:
-<ul>
-<li>5 (default value)</li>
-<li>1 to 60</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+|  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Name identifying the CFTCAT command.  |
+|  <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  |  Catalog file name.  |
+|  <a href="../../../command_summary/parameter_intro/cache">CACHE</a>  |  Size parameter for the monitor cache memory buffer size, containing the transfers waiting for resources.  |
+|  <a href="../../../command_summary/parameter_intro/rh">RH</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of "unterminated" receive requests ( H or K state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/rkerror">RKERROR</a>  |  Action to be taken if a transfer aborts during the selection phase in server mode.  |
+|  <a href="../../../command_summary/parameter_intro/rt">RT</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated receive transfers (RT state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/rx">RX</a>  |  Number of days after which the catalog entries of receive transfers for which the end of reception procedure is correctly executed (RX state) are automatically purged.  |
+| RY  | Number of days after which the catalog entries of receive transfers that are the in post-processing phase (RY state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/sh">SH</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries for "unterminated" send requests (H or K state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/st">ST</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated send transfers (ST state) are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/sx">SX</a>  |  Number of days (where a day equals a 24-hour interval) after which the catalog entries of terminated send transfers, for which the end-of-send transfer procedure was correctly executed (SX state), are automatically purged.  |
+| SY  | Number of days (where a day equals a 24-hour interval) after which the catalog entries of send transfers that are in the post-processing phase (SY state), are automatically purged.  |
+|  <a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a>  |  Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.  |
+|  <a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a>  |  Batch to execute when the alert ends.  |
+|  <a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a>  |  The minimum amount of time, in seconds, to wait before resending an alert.  |
+|  <a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a>  |  Batch to execute when CFTCAT/TLVWARN is reached.  |
+|  <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a>  |  Catalog usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/>When this limit is reached, the CFTCAT/TLVWEXEC is executed.  |
+|  <a href="../../../command_summary/parameter_intro/timep">TIMEP</a>  |  Daily purge time chosen by the user.<br/>The user can program an automatic, cyclic catalog purge. The default purge time is midnight. <blockquote> **Note:**<br/>To completely deactivate purging, set TIMEP = 00000000. Use this option with caution as no automatic purging is performed (at a selected time or at midnight). </blockquote>  |
+|  <a href="../../../command_summary/parameter_intro/updat">UPDAT</a>  |  Number of synchronization points between two consecutive updates of the catalog file during a transfer.  |
+|  <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  | Enter the frequency (in minutes) with which {{< TransferCFT/componentshortname  >}} scans the catalog file when restarting a transfer: <li>5 (default value)<br/> • 1 to 60</li>  |
+
 
 Example
-
-
-
-    CFTCAT ID = IDCAT,
-    FNAME = filename,
-    RH = 7,
-    RT  = 3,
-    RX = 3,
-    SH = 7,
-    ST = 3,
-    SX = 3
 
 -   Non-terminated send requests (SH state) and interrupted receive
     transfers are automatically purged after seven days (RH state).

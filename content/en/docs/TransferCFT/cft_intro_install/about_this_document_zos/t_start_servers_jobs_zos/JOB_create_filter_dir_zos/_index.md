@@ -20,22 +20,3 @@ You will need to enter the directory name twice for the following:
 **Example**
 
 You can use the following example as a reference for creating your directory.  In this example, we used **` /home/COPILOT/runtime/persist`  as the new directory.**
-
-
-
-    //*
-    // SET P='/home/COPILOT/runtime/persist'
-    //*
-    //STP001 EXEC PGM=BPXBATCH,
-    // PARM='SH mkdir -p -m 774 &P'
-    //STDIN DD DUMMY
-    //STDOUT DD SYSOUT=*
-    //STDERR DD SYSOUT=*
-    //*
-    //* Set variable: copilot.general.persistencedir
-    //*
-    //STP002 EXEC PCFTUTIL,PARM='/1=&P'
-    //CFTIN DD *
-    UCONFSET ID=copilot.general.persistencedir,
-    VALUE='%_ARGV1%'
-    /*

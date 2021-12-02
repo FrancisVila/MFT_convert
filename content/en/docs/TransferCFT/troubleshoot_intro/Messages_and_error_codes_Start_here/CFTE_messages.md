@@ -18,38 +18,4 @@ For V23: `CFTT57I PART=&part IDF=&idf IDT=&idt &str transfer started`
 
 For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>`
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTE09I"></span>CFTE09I CFT Stop complete</p>
-<p>CFTE09I CFT stop complete _ &amp;str</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>Transfer
-CFT has been shut down (following an error or request).</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTE09I"></span>CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor</p>
-<p>CFTE11I Node &amp;node state set to DISABLED, Shutting the Monitor</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>Transfer
-CFT is shutting down.</p>         </td>
-      </tr>
-   </tbody>
-</table>

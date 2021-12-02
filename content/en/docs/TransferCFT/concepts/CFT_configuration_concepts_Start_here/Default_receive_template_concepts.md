@@ -80,39 +80,6 @@ the file characteristics communicated by the sender.
 For a given transfer, these protocol values are the DEFAULT values of
 the corresponding Fxxxxx parameters:
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>PeSIT E CFT/CFT</p>
-<p>PeSIT D CFT profile </p>         </td>
-         <td><p>In PeSIT E (CFT to CFT), or PeSIT D CFT profile (transfer
-between 2 {{< TransferCFT/componentshortname  >}}s), the default values taken by the FSPACE,
-FTYPE, FBLKSIZE, FLRECL and FRECFM parameters are the values sent by the
-partner (see the CFTSEND object, NSPACE, NTYPE, NBLKSIZE, NLRECL, NRECFM
-parameters). For open mode operation, the FNAME parameter can also inherit
-the value of the partner NFNAME parameter. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>PeSIT E </p>         </td>
-         <td><p>In PeSIT E, the default values taken by the FKEYLEN and
-FKEYPOS parameters are the values sent by the partner (see the NKEYLEN
-and NKEYPOS parameters of the CFTSEND object). </p>         </td>
-      </tr>
-      <tr>
-         <td><p>PeSIT SIT profile </p>         </td>
-         <td><p>In PeSIT SIT profile, the "file size", "record
-format" and "record length" information items sent by the
-protocol are taken as the default values of the FSPACE, FRECFM, FLRECL
-parameters.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ODETTE </p>         </td>
-         <td><p>In the ODETTE protocol, the default values of the FRECFM,
-FLRECL and FSPACE parameters are deduced from the ODETTE parameters received</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="new_link_receive_templates"></span>For more information, see the [Protocol](../../../protocols_start_here) topics.
 
 <span id="Receiving_a_File"></span>

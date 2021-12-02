@@ -5,48 +5,14 @@
 }<span id="Using_the_start_trace_command"></span>The CFTTRACE utility parameter setting commands, grouped by function, are presented in the
 following table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Action         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Command         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Define the trace file or files:</p>
-<ul>
-<li>Before
-Transfer CFT starts </li>
-<li>During
-Transfer CFT operations </li>
-</ul>         </td>
-         <td><p> </p>
-<ul>
-<li>TRCFILE</li>
-<li>SETTRC</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>Start information collection:</p>
-<ul>
-<li>Transfer
-CFT start</li>
-<li>During
-Transfer CFT operations </li>
-</ul>         </td>
-         <td><p>STARTTRC</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Stop information collection </p>         </td>
-         <td><p>STOPTRC </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Close files and shut down the process </p>         </td>
-         <td><p>SETTRC </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Action  | Command  |
+| --- | --- |
+|  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  <br/> • TRCFILE<br/> • SETTRC</li>  |
+|  Start information collection:<br/> • Transfer CFT start<br/> • During Transfer CFT operations </li>  |  STARTTRC  |
+|  Stop information collection  |  STOPTRC  |
+|  Close files and shut down the process  |  SETTRC  |
+
 
 <span id="Trace_command_overview"></span>
 
@@ -57,126 +23,42 @@ be used for the various trace processes.
 
 ### Define trace files
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Trace file definition</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Before starting<br />
-Transfer CFT </p>         </td>
-         <td><p>CFTPARM </p>         </td>
-         <td><p>TRACE=identifier </p>         </td>
-         <td><p>CFTTRACE command identifier </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>or TRCFILE (1) </p>         </td>
-         <td><p>TYPE=TRACE </p>         </td>
-         <td><p>The defined file is a trace file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>During Transfer CFT operations </p>         </td>
-         <td><p>SETTRC </p>         </td>
-         <td><p>MODE=CREATE or MODIFY </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Trace file definition  | Command  | Parameter  | Description  |
+| --- | --- | --- | --- |
+|  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
+|   |  CFTTRACE  |   |   |
+|   |  or TRCFILE (1)  |  TYPE=TRACE  |  The defined file is a trace file  |
+|  During Transfer CFT operations  |  SETTRC  |  MODE=CREATE or MODIFY  |   |
+
 
 (1): TRCFILE is used in environments
 that do not allow dynamic file definition.
 
 ### Start collecting information
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Starting information collection         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command used to define the
-file         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Command to enter         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>When starting up Transfer CFT </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-         <td><p>START=CFT</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>TRCFILE (1) </p>         </td>
-         <td><p>START=CFT </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-      </tr>
-      <tr>
-         <td><p>During Transfer CFT<br />
-operations </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-         <td><p>START=DELAYED </p>         </td>
-         <td><p>STARTTRC </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>SETTRC </p>         </td>
-         <td><p> </p>         </td>
-         <td><p>STARTTRC </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Starting information collection  | Command used to define the file  | Parameter  | Command to enter  |
+| --- | --- | --- | --- |
+|  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
+|   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
+|  During Transfer CFT<br /> operations  |  CFTTRACE  |  START=DELAYED  |  STARTTRC  |
+|   |  SETTRC  |   |  STARTTRC  |
+
 
 (1): TRCFILE is used in environments
 that do not allow dynamic file definition.
 
 ### Stop collecting - close the file and shutdown the process
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Action         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Define the file with         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Enter the command         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Stop information collection </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-         <td><p>STOPTRC</p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>SETTR </p>         </td>
-         <td><p>STOPTRC </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Stop collection, close the files and shutdown the process </p>         </td>
-         <td><p>CFTTRACE </p>         </td>
-         <td><p>STOPTRC<br />
-and<br />
-SETTRC MODE=DELETE</p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>SETTRC </p>         </td>
-         <td><p>SETTRC MODE=DELETE </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Action  | Define the file with  | Enter the command  |
+| --- | --- | --- |
+|  Stop information collection  |  CFTTRACE  |  STOPTRC  |
+|   |  SETTR  |  STOPTRC  |
+|  Stop collection, close the files and shutdown the process  |  CFTTRACE  |  STOPTRC<br /> and<br /> SETTRC MODE=DELETE  |
+|   |  SETTRC  |  SETTRC MODE=DELETE  |
+
 
 <span id="About"></span>
 

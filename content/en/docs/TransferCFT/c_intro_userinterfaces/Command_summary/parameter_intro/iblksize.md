@@ -19,35 +19,4 @@ the value of the [ilrecl](../ilrecl) parameter.
 The table indicates  if the iblksize parameter
 is used.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>OS </p>         </th>
-<th class="HeadD-Column1-Header1"><p>IBLKSIZE </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>MVS (z/OS)</p>         </td>
-         <td><p>YES </p>         </td>
-      </tr>
-      <tr>
-         <td><p>OS400 </p>         </td>
-         <td><p>YES </p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX </p>         </td>
-         <td><p>NO </p>         </td>
-      </tr>
-      <tr>
-         <td><p>VMS </p>         </td>
-         <td><p>NO </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Windows </p>         </td>
-         <td><p>NO </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 [Return to Command index](../../)

@@ -40,28 +40,6 @@ After completing installation, configure the Router Agents in the {{< TransferCF
 
 Example of two Router Agent definitions
 
-
-
-    secure_relay.ra      = 2
-     
-    secure_relay.ra.0.enable = yes
-    secure_relay.ra.0.dmz = 
-    secure_relay.ra.0.host = 
-    secure_relay.ra.0.admin_port = 6810
-    secure_relay.ra.0.comm_port = 6811 
-    secure_relay.ra.0.nb_data_connections = 5
-    secure_relay.ra.0.data_channel_ciphering = No
-    secure_relay.ra.0.outcall_network_interface =
-     
-     secure_relay.ra.1.enable = Yes
-    secure_relay.ra.1.dmz = 
-    secure_relay.ra.1.host = 
-    secure_relay.ra.1.admin_port = 6810
-    secure_relay.ra.1.comm_port = 6811  
-    secure_relay.ra.1.nb_data_connections = 5
-    secure_relay.ra.1.data_channel_ciphering = No
-    secure_relay.ra.1.outcall_network_interface =
-
 ## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
 
 Configure the following UCONF parameters to enable the Master Agent communication with the Router Agent:
@@ -75,9 +53,7 @@ Configure the following UCONF parameters to enable the Master Agent communicati
 In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the following commands:
 
 1.  Enable Secure Relay:  
-
 2.  Set the full path to Java executable, for example:  
-
 3.  
 
 ## Set the listening ports
@@ -85,21 +61,11 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
 If you need to set listening ports, for example if you are using a firewall, proceed as follows:
 
 1.  To define the {{< TransferCFT/componentlongname >}} internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
-
-
-
-        UCONFSET id=cft.multi_node.listen_port_range,value='33000-33100'
-
 2.  Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
 
 **Example**
 
 For example, if you set the SAP=1761 when you have 4 nodes, Secure Relay opens the ports 1761, 1762, 1763 and 1764.
-
-
-
-    CFTPROT ID=PROT0,SAP=1761,...
-    CFTPROT ID=PROT1,SAP=1764,...
 
 In the scenario above if 4 nodes are configured in {{< TransferCFT/componentlongname  >}} multi-node, then Secure relay will open the listening ports 1761, 1762,1763, 1764 causing an issue for the second defined protocol, PROT1, as it has a SAP=1764.
 
@@ -132,23 +98,6 @@ Example
 
 As no connection dispatcher is used with Secure Relay, the SAP configured in the CFTPROT for SecureRelay is also incremented by the node number.
 
-
-
-    CFTNET ID = NETSR,
-     TYPE = TCP,
-     CALL = INOUT,
-    CALL        = 'INOUT',
-    MAXCNX      = '1000',
-    ORIGIN      = 'CFTUTIL',
-    CLASS       = '2',
-    HOST        = 'INADDR_ANY',
-    SRCPORTS    = ( '5000-65535'),
-    PORT        = '0',
-    PROTOCOL    = 'SR',
-    RECALLHOST  = '127.0.0.1',
-    SSLTERM     = 'NO',
-    MODE        = 'REPLACE'
-
 ### Create a CFTPROT object
 
 This section describes the CFTPROT object, and how various parameters are related to enabling secure data transmission using Secure Relay.
@@ -161,16 +110,6 @@ This section describes the CFTPROT object, and how various parameters are relate
 
 This example uses a CFTNET object called NETXSR, and PROTXSR is bound to port 1861 for node 0, and port 1862 for node 1.
 
-
-
-    CFTPROT ID          = 'PROTXSR'
-    NET         = 'NETXSR',
-    SAP         = '1861', <Transfer CFT increments this for each node, be sure to check for port conflicts>
-    SRIN        = 'BOTH',
-    SROUT       = 'BOTH',
-    TYPE        = 'PESIT',
-    ....
-
 ### Create CFTPART and CFTTCP objects
 
 When a partner object refers to a CFTPROT object and a CFTNET object that use Secure Relay, it uses Secure Relay for both incoming and outgoing connections.
@@ -181,35 +120,9 @@ Example
 
 This is an example of the CFTPART and CFTTCP object configuration.
 
-
-
-    CFTPART id = PARIS,
-
-             prot = PROTXSR,
-
-             sap = <remote_partner_sap>,
-            
-     nspart = NPARIS,
-
-             nrpart = NPHOENIX,
-
-             mode = replace 
-
-     
-    CFTTCP id = PARIS,
-           
-     class = 2, /* this must match and be the same class as the one used in the CFTNET (SecureRelay)*/
-           
-     host = <remote_partner_host_address>,
-           
-     mode = replace
-
 ### Indicate a specific SecureRelay to use
 
 If you would like to use a specific SecureRelay with a given partner, set the following parameter in the CFTPART:
-
-
-    SRDMZ = <UCONF secure_relay.ra.n.dmz value, where n is the number that corresponds to the SecureRelay to use>
 
 ## Configure the load balancer
 

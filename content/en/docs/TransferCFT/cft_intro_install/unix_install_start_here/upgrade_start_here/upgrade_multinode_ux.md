@@ -28,23 +28,11 @@ For details on shared disks, node commands, and other multi-node considerations,
 
 1.  Stop Copilot. This command stops Copilot as well all cftnodes running on that machine.  
 
-
-
-        copstop -f
-
 2.  Connect to the first machine and execute the following command:
 
-3.  
-
-        ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --architecture first_host --installdir <installdir>
-
-     
+3.   
 
 4.  For each additional host, connect to the machine and execute the following command:  
-
-
-
-        ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --architecture additional_host --runtimedir <runtimedir>
 
 -   Use the two following parameters, depending on if this is the first host or an additional host:
     -   `architecture `and `installdir `(first\_host), *or*
@@ -57,31 +45,10 @@ For details on shared disks, node commands, and other multi-node considerations,
 ### Restart the upgraded Transfer CFT multihost multi-node environment
 
 1.  Launch the Transfer CFT profile from the Transfer CFT runtime directory on the shared disk of each machine.  
-
 2.  Check the new version using the following command:  
-
-
-
-        CFTUTIL ABOUT
-
 3.  Start Copilot (start each of the Copilots in the multi-node environment).  
-
-
-
-        copstart
-
 4.  After restarting the Copilots, restart the Transfer CFT server:  
-
-
-
-        cft restart
-
 5.  Check the upgraded Transfer CFT multi-node multihost system.  
-
-
-
-        CFTUTIL listnode
-
     -   All of the Copilots should be started
 
     <!-- -->
@@ -103,10 +70,6 @@ After performing an upgrade, all passwords are cyphered using a hard-coded key. 
 ## Check the new version
 
 To check the {{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
-
-
-
-    CFTUTIL ABOUT
 
 ## Uninstall an upgrade pack
 

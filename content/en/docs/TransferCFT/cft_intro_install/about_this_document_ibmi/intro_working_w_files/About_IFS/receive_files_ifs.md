@@ -10,42 +10,6 @@ The following table lists the different types of files that can be received on a
 >
 > The FRECFM possibilities for all FTYPE are: ‘V’, ‘F’, and ‘ ’ .
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">FTYPE         </th>
-<th class="HeadD-Column1-Header1">Type of sent file         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>‘S’         </td>
-         <td>Text         </td>
-      </tr>
-      <tr>
-         <td>‘D’ , ‘ ’         </td>
-         <td>Text         </td>
-      </tr>
-      <tr>
-         <td>‘E’         </td>
-         <td>Text         </td>
-      </tr>
-      <tr>
-         <td>‘Z’         </td>
-         <td>Binary         </td>
-      </tr>
-      <tr>
-         <td>‘J’         </td>
-         <td><p>Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.</p>
-<p>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>This transfer mode is not available for native side transfers.</p>
-</blockquote>         </td>
-      </tr>
-   </tbody>
-</table>
-
 Key
 
 If your partner sends a PF-SRC file to be received on IFS, the content is slightly different depending on if you use the FTYPE ‘S’ or ‘E’. With the FTYPE ‘E‘, the content of the file is only the original content of the PF-SRC file. When the FTYPE is ‘S’, the content is the original content of the PF-SRC file along with the record character in the header line.

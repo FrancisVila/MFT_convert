@@ -17,43 +17,6 @@
 
 This table lists the main parameters that you must define in order to communicate with an Event via TCP, and uses TRKTYPE=TCP as the default value.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">          </th>
-<th class="HeadE-Column1-Header1">Event Router         </th>
-<th class="HeadE-Column1-Header1">TRKUTIL         </th>
-<th class="HeadD-Column1-Header1">Transfer CFT         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-<th class="BodyE-Column1-Body1">Configuration file         </th>
-         <td>USEPARIN         </td>
-         <td>TRKCONF         </td>
-         <td>UCONF         </td>
-      </tr>
-      <tr>
-<th rowspan="3" class="BodyE-Column1-Body2">TCP definition         </th>
-         <td><p>(AGENT)</p>
-<p>queue=”NOQ”</p>         </td>
-         <td>TRKTYPE=TCP         </td>
-         <td>UCONFSET ID=sentinel.TRKTYPE,VALUE=TCP         </td>
-      </tr>
-      <tr>
-         <td>(TCPSOURCE) sap=nnnn         </td>
-         <td>TRKIPPORT=nnnn         </td>
-         <td>UCONFSET ID=sentinel.TRKIPPORT,VALUE=nnnn         </td>
-      </tr>
-      <tr>
-         <td><p>(TCPSOURCE)</p>
-<p>local_address=</p>         </td>
-         <td>TRKIPADDR=         </td>
-         <td>UCONFSET ID=sentinel.TRKIPADDR,VALUE=         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="UCONF parameters for Sentinel interoperability"></span>
 
 ## UCONF parameters for Sentinel interoperability
@@ -62,153 +25,37 @@ This table lists the main parameters that you must define in order to communicat
 
 The table below lists the UCONF values that are used in Transfer CFT to define Sentinel interoperability. You can set these UCONF values using either the Copilot UI or command line.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unified configuration parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Former Sentinel parameter name</p>
-<p>trkapi.cfg</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>sentinel.xfb.enable         </td>
-         <td>NO         </td>
-         <td>XFB.Sentinel (trkapi.cfg)         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.xfb.transfer</p>         </td>
-         <td><p>ALL</p>         </td>
-         <td><p>XFB.Transfer (trkapi.cfg)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.xfb.shut</p>         </td>
-         <td><p>0</p>         </td>
-         <td><p>XFB.Shut (trkapi.cfg)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.xfb.log</p>         </td>
-         <td><p>IEWF</p>         </td>
-         <td><p>XFB.Log (trkapi.cfg)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktname</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/trkapi.buf  </p>         </td>
-         <td><p>TRKTNAME (trkapi.cfg)  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trksharedfile </p>         </td>
-         <td><p>No  </p>         </td>
-         <td><p>TRKSHAREDFILE  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trklenmsg </p>         </td>
-         <td>         </td>
-         <td><p>TRKLENMSG  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trklocmaxtime </p>         </td>
-         <td><p>300  </p>         </td>
-         <td><p>TRKLOCMAXTIME  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktmode </p>         </td>
-         <td><p>DIFFER</p>         </td>
-         <td><p>TRKTMODE  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktconnretry </p>         </td>
-         <td><p>60</p>         </td>
-         <td><p>TRKTCONNRETRY  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkretrydelay </p>         </td>
-         <td><p>10</p>         </td>
-         <td><p>TRKRETRYDELAY  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkretrynb </p>         </td>
-         <td><p>6</p>         </td>
-         <td><p>TRKRETRYNB  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkdelay </p>         </td>
-         <td><p>10</p>         </td>
-         <td><p>TRKDELAY  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktimeout </p>         </td>
-         <td><p>60</p>         </td>
-         <td><p>TRKTIMEOUT  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkproductname </p>         </td>
-         <td><p>CFT  </p>         </td>
-         <td><p>TRKPRODUCTNAME  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkipaddr </p>         </td>
-         <td><p>sentinel-server-hostname  </p>         </td>
-         <td><p>TRKIPADDR  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkipport </p>         </td>
-         <td><p>1761  </p>         </td>
-         <td><p>TRKIPPORT  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trk_min_port </p>         </td>
-         <td><p>5000  </p>         </td>
-         <td><p>TRK_MIN_PORT  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trk_max_port </p>         </td>
-         <td><p>32000</p>         </td>
-         <td><p>TRK_MAX_PORT  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkipaddr_bkup</p>         </td>
-         <td>         </td>
-         <td><p>TRKIPADDR_BKUP  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkipport_bkup </p>         </td>
-         <td><p>1761  </p>         </td>
-         <td><p>TRKIPPORT_BKUP  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trk_min_port_bkup </p>         </td>
-         <td><p>5000  </p>         </td>
-         <td><p>TRK_MIN_PORT_BKUP  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trk_max_port_bkup </p>         </td>
-         <td><p>32000  </p>         </td>
-         <td><p>TRK_MAX_PORT_BKUP  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktype </p>         </td>
-         <td><p>TCP  </p>         </td>
-         <td><p>TRKTYPE  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trkgmtdiff </p>         </td>
-         <td><p>60  </p>         </td>
-         <td><p>TRKGMTDIFF  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktrcfile </p>         </td>
-         <td><p>$(cft.runtime_dir)/run/sentinel.trc  </p>         </td>
-         <td><p>TRKTRCFILE  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>sentinel.trktrace </p>         </td>
-         <td><p>0  </p>         </td>
-         <td><p>TRKTRACE  </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Unified configuration parameter  | Default value  |  Former Sentinel parameter name<br/>trkapi.cfg  |
+| --- | --- | --- |
+| sentinel.xfb.enable  | NO  | XFB.Sentinel (trkapi.cfg)  |
+|  sentinel.xfb.transfer  |  ALL  |  XFB.Transfer (trkapi.cfg)  |
+|  sentinel.xfb.shut  |  0  |  XFB.Shut (trkapi.cfg)  |
+|  sentinel.xfb.log  |  IEWF  |  XFB.Log (trkapi.cfg)  |
+|  sentinel.trktname  |  $(cft.runtime_dir)/data/trkapi.buf  |  TRKTNAME (trkapi.cfg)  |
+|  sentinel.trksharedfile  |  No  |  TRKSHAREDFILE  |
+|  sentinel.trklenmsg  |   |  TRKLENMSG  |
+|  sentinel.trklocmaxtime  |  300  |  TRKLOCMAXTIME  |
+|  sentinel.trktmode  |  DIFFER  |  TRKTMODE  |
+|  sentinel.trktconnretry  |  60  |  TRKTCONNRETRY  |
+|  sentinel.trkretrydelay  |  10  |  TRKRETRYDELAY  |
+|  sentinel.trkretrynb  |  6  |  TRKRETRYNB  |
+|  sentinel.trkdelay  |  10  |  TRKDELAY  |
+|  sentinel.trktimeout  |  60  |  TRKTIMEOUT  |
+|  sentinel.trkproductname  |  CFT  |  TRKPRODUCTNAME  |
+|  sentinel.trkipaddr  |  sentinel-server-hostname  |  TRKIPADDR  |
+|  sentinel.trkipport  |  1761  |  TRKIPPORT  |
+|  sentinel.trk_min_port  |  5000  |  TRK_MIN_PORT  |
+|  sentinel.trk_max_port  |  32000  |  TRK_MAX_PORT  |
+|  sentinel.trkipaddr_bkup  |   |  TRKIPADDR_BKUP  |
+|  sentinel.trkipport_bkup  |  1761  |  TRKIPPORT_BKUP  |
+|  sentinel.trk_min_port_bkup  |  5000  |  TRK_MIN_PORT_BKUP  |
+|  sentinel.trk_max_port_bkup  |  32000  |  TRK_MAX_PORT_BKUP  |
+|  sentinel.trktype  |  TCP  |  TRKTYPE  |
+|  sentinel.trkgmtdiff  |  60  |  TRKGMTDIFF  |
+|  sentinel.trktrcfile  |  $(cft.runtime_dir)/run/sentinel.trc  |  TRKTRCFILE  |
+|  sentinel.trktrace  |  0  |  TRKTRACE  |
+
 
 <span id="Communication with the Event Router"></span>
 
@@ -221,41 +68,14 @@ The following parameters define communication with the Event Router via XCF. In 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ER         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TRKUTIL         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Transfer CFT         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Configuration file         </td>
-         <td>USEPARIN         </td>
-         <td>TRKCONF         </td>
-         <td>UCONF         </td>
-      </tr>
-      <tr>
-         <td>SVC         </td>
-         <td><p>(SYSTEM)</p>
-<p>svc_nb=nnn</p>         </td>
-         <td>TRKSVC=nnn         </td>
-         <td>UCONFSET ID=sentinel.TRKSVC,VALUE=nnn         </td>
-      </tr>
-      <tr>
-         <td>XCF definition         </td>
-         <td>(AGENT)queue=         </td>
-         <td>TRKQUEUE=         </td>
-         <td>UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx         </td>
-      </tr>
-      <tr>
-         <td>TRKTYPE=XCF         </td>
-         <td>UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | ER  | TRKUTIL  | Transfer CFT  |
+| --- | --- | --- | --- |
+| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
+| SVC  |  (SYSTEM)<br/>svc_nb=nnn  | TRKSVC=nnn  | UCONFSET ID=sentinel.TRKSVC,VALUE=nnn  |
+| XCF definition  | (AGENT)queue=  | TRKQUEUE=  | UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx  |
+| TRKTYPE=XCF  | UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF  |
+
 
 <span id="Overflow file definition"></span>
 
@@ -268,36 +88,13 @@ The following table describes the overflow file definition for the Logger file. 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/eventroutername >}}
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event Router         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TRKUTIL         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Transfer CFT         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Configuration file         </th>
-         <td>USEPARIN         </td>
-         <td>TRKCONF         </td>
-         <td>UCONF         </td>
-      </tr>
-      <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Logger file         </th>
-         <td><p>(AGENT)</p>
-<p>api_file=</p>         </td>
-         <td>TRKTNAME=         </td>
-         <td>UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>TRKSHAREDFILE=YES         </td>
-         <td>UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Event Router  | TRKUTIL  | Transfer CFT  |
+| --- | --- | --- | --- |
+| Configuration file  | USEPARIN  | TRKCONF  | UCONF  |
+| Logger file  |  (AGENT)<br/>api_file=  | TRKTNAME=  | UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx  |
+|   | TRKSHAREDFILE=YES  | UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES  |
+
 
 Related topics
 

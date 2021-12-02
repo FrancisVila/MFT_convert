@@ -73,45 +73,15 @@ Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as 
 
 Create as many copies of the initialize.properties file as you have hosts in the multi-node installation. Customize the *N* initialize.properties file with the following parameters to enable a multi-node installation.
 
-<table>
-   <tbody>
-      <tr>
-         <td>CFT_Full_Hostname         </td>
-         <td><p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.</p>
-<p>When you re installing a cluster, there are two ways to define this parameter:</p>
-<ul>
-<li><p>If you do not set this in the silent file, the install determines it (if the machine is correctly configured)</p></li>
-<li>Set the FQDN for each machine in the cluster, that is, for each host installation</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>Runtimedir         </td>
-         <td>The runtime directory must be in a shared directory.         </td>
-      </tr>
-      <tr>
-         <td>Multinode_Enable         </td>
-         <td><p>Enable the multi-node architecture.</p>
-<p>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.</p>         </td>
-      </tr>
-      <tr>
-         <td>Multinode_Number         </td>
-         <td>Enter the number of nodes.         </td>
-      </tr>
-      <tr>
-         <td>LoadBalancer_Host         </td>
-         <td><p>Specify the host address of the load balancer.</p>
-<p>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
-balancer to connect to the Transfer CFT Copilot server.</p>         </td>
-      </tr>
-      <tr>
-         <td>LoadBalancer_Port         </td>
-         <td>Specify the load balancer port, which is redirected to the
-Central Governance dedicated port of the Transfer CFT UI Server.
-<p>When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load
-balancer to connect to the Transfer CFT Copilot server.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the install determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
+| --- | --- |
+| Runtimedir  | The runtime directory must be in a shared directory.  |
+| Multinode_Enable  |  Enable the multi-node architecture.<br/>To use a multi-node architecture, you must define the multi-node option in the initialize.properties file.  |
+| Multinode_Number  | Enter the number of nodes.  |
+| LoadBalancer_Host  |  Specify the host address of the load balancer.<br/>When using an ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
+| LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server. When using ACTIVE/ACTIVE or ACTIVE/PASSIVE deployment, you require a load balancer to connect to the Transfer CFT Copilot server.  |
+
 
 ## Installation overview
 

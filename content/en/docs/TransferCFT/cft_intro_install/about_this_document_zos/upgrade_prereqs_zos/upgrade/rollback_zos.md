@@ -10,76 +10,8 @@
 ## Procedure
 
 1.  Export all catalogs. Base your export procedure on the following example:  
-
-
-
-        //   EXPORT SYMLIST=(CFTCAT)
-
-        //   SET CFTCAT=current.CFT.CATALOG (to be customized)
-
-        //   SET TMPCAT=CFTWRK.TMPCAT       (to be customized)
-
-        //* -------------------        
-
-        //* Export catalog       
-
-        //* -------------------       
-
-        //EXPCAT  EXEC PGM=CFTMI24B,REGION=32M 
-
-        //STEPLIB  DD  DISP=SHR,DSN=current.CFT.LOAD 
-
-        //TMPCAT   DD  DISP=(,CATLG), 
-
-        //         DSN=&TMPCAT
-
-        //         DCB=(LRECL=4120,RECFM=VB,BLKSIZE=27998), 
-
-        //         SPACE=(CYL,(50,10),RLSE)  (to be customized) 
-                      
-        //CEEDUMP  DD  SYSOUT=*  
-
-        //CFTOUT   DD  SYSOUT=*        
-
-        //CFTIN    DD  DATA,SYMBOLS=(JCLONLY)       
-          MIGR TYPE=CAT,DIRECT=FROMCAT,OFNAME=DD:TMPCAT,    
-               IFNAME='&CFTCAT' 
-          
-        /* 
-
 2.  Perform a version rollback as described in [Upgrade version rollback](#Upgrade) below.
-
 3.  Recreate the catalogs and re-import the catalogs. Base your procedure on the following example:  
-
-
-
-        //   EXPORT SYMLIST=(CFTCAT) 
-                            
-        //   SET CFTCAT=current.CFT.CATALOG (to be customized)
-
-        //   SET TMPCAT=CFTWRK.TMPCAT       (to be customized)
-
-        //* -----------------                            
-
-        //* Import catalog                               
-
-        //* -----------------                            
-
-        //IMPCAT  EXEC PGM=CFTMI24B,REGION=32M           
-
-        //STEPLIB  DD  DISP=SHR,DSN=&LOAD                
-
-        //TMPCAT   DD  DISP=SHR,DSN=&TMPCAT              
-
-        //CEEDUMP  DD  SYSOUT=*                          
-
-        //CFTOUT   DD  SYSOUT=*                          
-
-        //CFTIN    DD  DATA,SYMBOLS=(JCLONLY)            
-          MIGR TYPE=CAT,DIRECT=TOCAT,IFNAME=DD:TMPCAT,   
-               OFNAME='&CFTCAT'                          
-
-        /*                                               
 
 <span id="Upgrade"></span>
 

@@ -10,22 +10,11 @@ Axway delivers an Access Management exit sample, examsmp1.c, in the `<CFTDIRRUNT
 
 The delivered sample provides two services, authentication and permissions checking.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" style="background-color: #dcdcdc">Sample         </th>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" style="background-color: #dcdcdc">Authentication         </th>
-<th class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2" style="background-color: #dcdcdc">Permissions checking         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>examsmp1.c         </td>
-         <td>System authentication ()         </td>
-         <td>Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> model         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Sample  | Authentication  | Permissions checking  |
+| --- | --- | --- |
+| examsmp1.c  | System authentication ()  | Flat file based on flat <a href="" class="MCTextPopup popup popupHead">RBAC</a> model  |
+
 
 ### Building the dynamic library associated with the sample
 
@@ -52,102 +41,42 @@ The following line shows how to add a permission to a role:
 
 Where:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Field         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;cmd_type&gt;         </td>
-         <td>PA for Permission Assignment         </td>
-      </tr>
-      <tr>
-         <td>&lt;role&gt;         </td>
-         <td>The role for which the permission must be assigned         </td>
-      </tr>
-      <tr>
-         <td>&lt;resource&gt;         </td>
-         <td>Name of the resource         </td>
-      </tr>
-      <tr>
-         <td>&lt;actions&gt;         </td>
-         <td>List of actions with each action separated by a comma         </td>
-      </tr>
-      <tr>
-         <td>&lt;policy&gt;         </td>
-         <td>ACCEPT: accept the actions on the resource<br />
-REFUSE: refuse the actions on the resource         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Field  | Description  |
+| --- | --- |
+| &lt;cmd_type&gt;  | PA for Permission Assignment  |
+| &lt;role&gt;  | The role for which the permission must be assigned  |
+| &lt;resource&gt;  | Name of the resource  |
+| &lt;actions&gt;  | List of actions with each action separated by a comma  |
+| &lt;policy&gt;  | ACCEPT: accept the actions on the resource<br /> REFUSE: refuse the actions on the resource  |
+
 
 Examples
 
 All available actions on the resource “CONFIGURATION:CFTPARM”:
 
-
-    PA ADMIN    CONFIGURATION:CFTPARM   CREATE,DELETE,EDIT,VIEW     ACCEPT
-
 or
-
-
-    PA ADMIN    CONFIGURATION:CFTPARM   *                       ACCEPT
 
 All available actions on resources that start with “CONFIGURATION:” for the ADMIN role:
 
-
-    PA ADMIN    CONFIGURATION:*     *                           ACCEPT
-
 All permissions for the ADMIN role:
 
-
-    PA ADMIN    *           *   ACCEPT
-
 All permissions for the ADMIN role except for the resource “TRANSFER”:
-
-
-    PA ADMIN    TRANSFER        *   REFUSE
-    PA ADMIN    *           *   ACCEPT
 
 ## Assigning users
 
 The following line shows how to add a user to a role:  
 `<cmd_type> <role> <users>`
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Field         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;cmd_type&gt;         </td>
-         <td>UA for User Assignment         </td>
-      </tr>
-      <tr>
-         <td>&lt;role&gt;         </td>
-         <td>The role to which users must be assigned         </td>
-      </tr>
-      <tr>
-         <td>&lt;users&gt;         </td>
-         <td>List of users with each user separated by a comma         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Field  | Description  |
+| --- | --- |
+| &lt;cmd_type&gt;  | UA for User Assignment  |
+| &lt;role&gt;  | The role to which users must be assigned  |
+| &lt;users&gt;  | List of users with each user separated by a comma  |
+
 
 #### Examples
-
-
-
-    UA ADMIN    admin,user01,user02 
-    UA DESIGNER user03
-    UA HELPDESK user03,user04
-    UA APPLICATION  user05
 
 ## Predefined roles
 
@@ -155,36 +84,15 @@ You can find some roles defined in &lt;CFTDIRRUNTIME>/conf/exam.csv.
 
 Predefined roles
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Role         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Administrator         </td>
-         <td>Provides full user access         </td>
-      </tr>
-      <tr>
-         <td>Helpdesk         </td>
-         <td>Enables you to view the Catalog and Log         </td>
-      </tr>
-      <tr>
-         <td>Partner Manager         </td>
-         <td>Allows you to manage partners         </td>
-      </tr>
-      <tr>
-         <td>Designer         </td>
-         <td>Allows you to manage application flows         </td>
-      </tr>
-      <tr>
-         <td>Application         </td>
-         <td>Allows applications to request transfers and view the Catalog         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Role  | Description  |
+| --- | --- |
+| Administrator  | Provides full user access  |
+| Helpdesk  | Enables you to view the Catalog and Log  |
+| Partner Manager  | Allows you to manage partners  |
+| Designer  | Allows you to manage application flows  |
+| Application  | Allows applications to request transfers and view the Catalog  |
+
 
 The resources and available actions for {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
 

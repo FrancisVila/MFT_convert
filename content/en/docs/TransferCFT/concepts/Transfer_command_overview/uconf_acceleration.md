@@ -29,37 +29,7 @@ You can globally enable or disable the acceleration function in the {{< Transfer
 
 #### Parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>acceleration.enable         </td>
-         <td>Activate/deactivate the acceleration option.         </td>
-      </tr>
-      <tr>
-         <td>acceleration.udt         </td>
-         <td>UDT default peer definition.         </td>
-      </tr>
-      <tr>
-         <td>acceleration.ptcp         </td>
-         <td>pTCP default peer definition.         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### Example in CFTUTIL
-
-
-    CFTUTIL UCONFSET ID=acceleration.enable, VALUE=yes
-
-    CFTUTIL UCONFSET ID=acceleration.udt   ,    VALUE=NET1
-
-    CFTUTIL UCONFSET ID=acceleration.ptcp  ,   VALUE=NET0 NET_TEST
 
 In this example, all protocols (CFTPROT objects) using NET1 are accelerated by UDT, and those using NET0 and NET\_TEST are accelerated by pTCP.
 
@@ -67,46 +37,7 @@ Network resources that are scheduled to use acceleration functionality should ha
 
 **Example**
 
-
-
-    CFTNET ID=NET0,CLASS=4,...
-
-    CFTNET ID=NET1,CLASS=5,...
-
-     
-
-    CFTPROT ID=PESITANY,TYPE=PESIT,NET=NET1,SAP=1761,...
-
-    CFTPROT ID=PESITSSL,TYPE=PESIT,NET=NET0,SAP=1762,SSL=SSLSERVER,...
-
-     
-    CFTPART ID=PART1,PROT=PESITANY,sap=part1_remote_sap... 
-
-    CFTTCP ID=PART1,host=@part1,CLASS=5,...
-
-     
-    CFTPART ID=PART0,PROT=PESITSSL,sap=part0_remote_sap...
-
-    CFTTCP ID=PART0,host=@part0,CLASS=4,...
-
-     
-    CFTPART ID=PART2,PROT=PESITANY,sap=part2_remote_sap...
-
-    CFTTCP ID=PART2,host=@part2,CLASS=1,...
-
-
-     
-
 **Results**
-
-
-
-    CFTUTIL SEND PART=PART1,IDF=T1 will execute a transfer using "PESIT ANY" protocol and UDT network protocol
-
-    CFTUTIL SEND PART=PART0,IDF=T2 will execute a transfer using "PESIT ANY" protocol with SSL and PTCP network protocol
-
-    CFTUTIL SEND PART=PART2,IDF=T3 will fail with the following message : "CFTT11E PART=PART2 PROT=PESITANY 
-    CLASS=5 _ CFTTCP not found"
 
 ### Advanced configuration parameters
 

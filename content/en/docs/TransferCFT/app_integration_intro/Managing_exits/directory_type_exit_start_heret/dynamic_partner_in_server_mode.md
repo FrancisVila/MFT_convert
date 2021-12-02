@@ -100,9 +100,6 @@ The parameters IMINTIME and IMAXTIME are also checked.
 A file is put at disposal, which means on hold, for a partner by a transfer
 request of the type:
 
-
-    SEND PART = part, IDF = idf, STATE = HOLD
-
 Or an equivalent request via CFTAPI ...
 
 As the dynamic partner is not known to {{< TransferCFT/componentshortname  >}}, the request is

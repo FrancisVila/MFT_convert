@@ -22,86 +22,23 @@ The parameter definitions are taken into account in the order listed below. For 
 >
 > When using Central Governance to manage Transfer CFT, you can only use TRK at the flow level, which corresponds to transfer models, but not for partners and general parameters.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Definition         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">NO         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ALL         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">SUMMARY         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ERROR         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UNDEFINED         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1. Transfer requests (SEND/RECV in requester mode only)         </td>
-         <td>No tracking         </td>
-         <td>Full tracking         </td>
-         <td>First and last         </td>
-         <td>Errors only         </td>
-         <td>Uses the transfer definition         </td>
-      </tr>
-      <tr>
-         <td><p>2. Transfer models (CFTSEND/CFTRECV)</p>         </td>
-         <td><p>No tracking</p>         </td>
-         <td><p>Full tracking</p>         </td>
-         <td><p>First and last</p>         </td>
-         <td>Errors only         </td>
-         <td>Uses the partner definition         </td>
-      </tr>
-      <tr>
-         <td><p>3. Partners</p>         </td>
-         <td><p>No tracking</p>         </td>
-         <td><p>Full tracking</p>         </td>
-         <td>First and last         </td>
-         <td>Errors only         </td>
-         <td>Uses the general parameter definition         </td>
-      </tr>
-      <tr>
-         <td>4. General parameters (CFTPARM)         </td>
-         <td>No tracking         </td>
-         <td>Full tracking         </td>
-         <td>First and last         </td>
-         <td>Errors only         </td>
-         <td>Uses the UCONF definition (sentinel.xfb.transfer)         </td>
-      </tr>
-      <tr>
-         <td>5. UCONF definition         </td>
-         <td><p>No</p>
-<p>tracking</p>         </td>
-         <td>Full tracking         </td>
-         <td>First and last         </td>
-         <td>Errors only         </td>
-         <td>N/A         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Definition  | NO  | ALL  | SUMMARY  | ERROR  | UNDEFINED  |
+| --- | --- | --- | --- | --- | --- |
+| 1. Transfer requests (SEND/RECV in requester mode only)  | No tracking  | Full tracking  | First and last  | Errors only  | Uses the transfer definition  |
+|  2. Transfer models (CFTSEND/CFTRECV)  |  No tracking  |  Full tracking  |  First and last  | Errors only  | Uses the partner definition  |
+|  3. Partners  |  No tracking  |  Full tracking  | First and last  | Errors only  | Uses the general parameter definition  |
+| 4. General parameters (CFTPARM)  | No tracking  | Full tracking  | First and last  | Errors only  | Uses the UCONF definition (sentinel.xfb.transfer)  |
+| 5. UCONF definition  |  No<br/>tracking  | Full tracking  | First and last  | Errors only  | N/A  |
+
 
 ### Check Transfer CFT's Sentinel task (CFTTRK) activity
 
 Enter the following command to get the Transfer CFT CFTTRK details:
 
-
-    cftutil mquery object=SYSTEM
-
 When Sentinel is available, the following messages display in the log:
 
-
-
-    CFTI24I CFTTRK MQUERY OBJECT=SYSTEM
-    CFTI24I CFTTRK Nb max messages = 100
-    CFTI24I CFTTRK nb messages = 65
-    CFTI24I CFTTRK Sentinel state = connected
-
 If Sentinel is not available, or has been disabled, the following messages display in the log:
-
-
-
-    CFTI24I CFTTRK MQUERY OBJECT=SYSTEM
-    CFTI24I CFTTRK Nb max messages = 100
-    CFTI24I CFTTRK nb messages = 102
-    CFTI24I CFTTRK Sentinel state = disconnected
 
 ## Command parameters
 

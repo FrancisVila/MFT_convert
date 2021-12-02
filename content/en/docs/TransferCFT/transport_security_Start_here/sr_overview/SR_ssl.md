@@ -36,18 +36,6 @@ SSL termination in Secure Relay is possible using the internal PKI database. As 
 
 Example
 
-
-
-    CFTNET id = NETSRSSL,
-
-    type = TCP,
-    call = INOUT,
-    class = 2,
-    host = <network_interface_used_by_Router_Agent>,
-    protocol = SR,
-    recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/
-    sslterm = NO
-
 ### Create a CFTPROT object
 
 This section describes the CFTPROT object, and how various parameters are related to enabling secure data transmission using Secure Relay.
@@ -60,19 +48,6 @@ Example
 
 This example uses a CFTNET object called NETSRSSL.
 
-
-
-    CFTPROT id = PESITSSL,
-
-
-            net = NETSRSSL,
-            
-    sap = 1762,
-            
-    ssl = PESITSSL,
-            
-    prof = ANY
-
 ### Create a CFTSSL object
 
 Create a CFTSSL object to supply detailed information to Secure Relay on how the SSL termination should be done. Secure Relay only supports the SSL version TLSV1COMP.
@@ -84,42 +59,7 @@ Example
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
-
-
-    CFTSSL  id = PESITSSL,
-
-
-            version = TLSV1COMP,
-            
-    direct = SERVER,
-            
-    verify = NONE,
-            
-    usercid = AXWMFTUSER,
-            
-    rootcid = AXWMFTCA,
-
-            ciphlist = (47),
-
-            passw = <user_cid_password>
-     NOTE: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password. 
-
-     
-
 Here the CFTSSL object is used for incoming connections (direct=client).
-
-
-
-    CFTSSL  id = PESITSSL,
-
-
-            version = TLSV1COMP,
-            
-    direct = CLIENT,
-            
-            rootcid = AXWMFTCA,
-
-            ciphlist = (47)
 
 ### Create CFTPART and CFTTCP objects
 
@@ -132,25 +72,6 @@ To complete the configuration, create a CFTPART object and a CFTTCP object. In t
 Example
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
-
-
-
-    CFTPART id = PARIS_SSL,
-            
-    prot = PESITSSL,
-            
-    sap = <remote_partner_sap>,
-            
-    nspart = NPARIS_SSL,
-
-            nrpart = NPHOENIX_SSL 
-     
-
-    CFTTCP id = PARIS_SSL,
-           
-    class = 2, /* the same class as the one used in the CFTNET */
-           
-    host = <remote_partner_host_address>
 
 ### How to enable Secure Relay FIPS mode
 
@@ -178,18 +99,6 @@ This is an example of the CFTPART and CFTTCP objects configuration, using PESITS
 
 Example
 
-
-
-    CFTNET id = NETSRSSL,
-
-    type = TCP,
-    call = INOUT,
-    class = 2,
-    host = <network_interface_used_by_Router_Agent>,
-    protocol = SR,
-    recallhost = 127.0.0.1, /*network_interface_used_by_CFT*/
-    sslterm = YES
-
 ### Create a CFTPROT object
 
 This section describes the CFTPROT object, and how various parameters are related to enabling secure data transmission using Secure Relay.
@@ -202,19 +111,6 @@ Example
 
 This example uses a CFTNET object called NETSRSSL.
 
-
-
-    CFTPROT id = PESITSSL,
-
-
-            net = NETSRSSL,
-            
-    sap = 1762,
-            
-    ssl = PESITSSL,
-            
-    prof = ANY
-
 ### Create a CFTSSL object
 
 Create a CFTSSL object to supply detailed information to Secure Relay on how the SSL termination should be done. Secure Relay only supports the SSL version TLSV1COMP.
@@ -226,42 +122,7 @@ Example
 
 Here the CFTSSL object is used for incoming connections (direct=server).
 
-
-
-    CFTSSL  id = PESITSSL,
-
-
-            version = TLSV1COMP,
-            
-    direct = SERVER,
-            
-    verify = NONE,
-            
-    usercid = AXWMFTUSER,
-            
-    rootcid = AXWMFTCA,
-
-            ciphlist = (47),
-
-            passw = <user_cid_password>
-     NOTE: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password. 
-
-     
-
 Here the CFTSSL object is used for incoming connections (direct=client).
-
-
-
-    CFTSSL  id = PESITSSL,
-
-
-            version = TLSV1COMP,
-            
-    direct = CLIENT,
-            
-            rootcid = AXWMFTCA,
-
-            ciphlist = (47)
 
 ### Create CFTPART and CFTTCP objects
 
@@ -274,22 +135,3 @@ To complete the configuration, create a CFTPART object and a CFTTCP object. In t
 Example
 
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
-
-
-
-    CFTPART id = PARIS_SSL,
-            
-    prot = PESITSSL,
-            
-    sap = <remote_partner_sap>,
-            
-    nspart = NPARIS_SSL,
-
-            nrpart = NPHOENIX_SSL 
-     
-
-    CFTTCP id = PARIS_SSL,
-           
-    class = 2, /* the same class as the one used in the CFTNET */
-           
-    host = <remote_partner_host_address>

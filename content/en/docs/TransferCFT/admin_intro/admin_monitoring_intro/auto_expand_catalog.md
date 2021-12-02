@@ -23,33 +23,12 @@ To enable the auto-expand option, with {{< TransferCFT/componentshortname  >}} 
 2.  To activate the new values, run the command: `CFTUTIL reconfig type = uconf`
     -   If {{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the `reconfig `command.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.cftcat.auto_expand_percent         </td>
-         <td>0         </td>
-         <td><p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand.</p>
-<p>The value 0 disables the automatic expansion feature.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Tip  
-We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>cft.cftcat.auto_expand_max_size         </td>
-         <td>1M         </td>
-         <td><p>The maximum number of records for the automatic catalog expansion option.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
+
 
 Related parameters:
 
@@ -69,32 +48,10 @@ The example is based on the following settings:
 
 When you reach the TLVWRATE (level=80%), the following messages are sent to the log:
 
-
-     12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
-     12/10/17 17:53:30  CFTC13I Catalog resize (100 --> 120) done
-     12/10/17 17:54:16  CFTT17I _ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064> 
-     12/10/17 17:54:16  CFTR12I SEND Treated for USER adaumer  <IDTU=A0000029 PART=PARIS IDF=TXT>
-     12/10/17 17:54:16  CFTS20I Communication file row number deleted: 00000252    
-     12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
-
 The new fill rate is now 80/120 = 66.66%, well below TLVCLEAR, so the alerts stops at next update (the send command in this example).
 
 The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140), and the log displays:
 
-
-     12/10/17 18:06:57  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
-     12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 144) too much
-     12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 140) done
-     12/10/17 18:06:57  CFTT17I _ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092> 
-     12/10/17 18:06:57  CFTR12I SEND Treated for USER adaumer  <IDTU=A000002P PART=PARIS IDF=TXT>
-     12/10/17 18:06:57  CFTS20I Communication file row number deleted: 00000269                                
-     12/10/17 18:06:57  CFTC30W Catalog Alert cleared : level=69% ID=CAT0
-
 The next time the catalog limit is reached, it can no longer expand and the log displays:
-
-
-     12/10/19 15:53:21  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
-     12/10/19 15:53:21  CFTC13E Catalog resize (140 --> 210) reached max before expansion
-     12/10/19 15:53:21  CFTC08I Purge Treated : no record found to delete.

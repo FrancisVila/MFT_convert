@@ -30,11 +30,6 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 1.  Import your static configuration objects using the cftinit command. Enter:
 
-<!-- -->
-
-
-    cftinit cft-extract.conf
-
 ### Migrating trkapi.cfg file parameters
 
 Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
@@ -50,89 +45,15 @@ Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
 
 1.  For each parameter you select, add a UCONF command line to your new script file using the format:
 
-<!-- -->
-
-
-    UCONFSET id=<parameter_id>, value=<value>
-
 Use the parameter mapping between trkapi and UCONF, as listed in the following table, to specify the correct parameter id.
 
 Parameter mapping between the trkapi.cfg file and UCONF
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Parameter in trkapi.cfg</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Parameter names in UCONF</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>TRACE</p>         </td>
-         <td><p>sentinel.trktrace</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKGMTDIFF</p>         </td>
-         <td><p>sentinel.trkgmtdiff</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKIPADDR_BKUP</p>         </td>
-         <td><p>sentinel.trkipaddr_bkup</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKIPPORT</p>         </td>
-         <td><p>sentinel.trkipport</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKIPPORT_BKUP</p>         </td>
-         <td><p>sentinel.trkipport_bkup</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKLOCALADDR</p>         </td>
-         <td><p>sentinel.trklocaladdr</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRKPRODUCTNAME</p>         </td>
-         <td><p>sentinel.trkproductname</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFB.BufferSize</p>         </td>
-         <td><p>sentinel.xfb.buffer_size</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFB.Log (UNIX)</p>         </td>
-         <td><p>sentinel.xfb.log</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFBLOG (Windows)</p>         </td>
-         <td><p>sentinel.xfb.log</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFB.Sentinel</p>         </td>
-         <td><p>sentinel.xfb.enable</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFB.Trace</p>         </td>
-         <td><p>sentinel.xfb.trace</p>         </td>
-      </tr>
-      <tr>
-         <td><p>XFB.Transfer</p>         </td>
-         <td><p>sentinel.xfb.transfer</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace &lt;script\_filename> with the new script file path.
-
-<!-- -->
-
-
-
-    CFTUTIL <prefix_character><script_filename>
 
 Example
 
@@ -160,112 +81,11 @@ Use the parameters mapping between copconf and UCONF as listed in the following 
 
 Parameter mapping between copconf file and UCONF
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Parameter in copconf.ini</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Parameter name in UCONF</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>BatchList</p>         </td>
-         <td><p>copilot.batches</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTCOM</p>         </td>
-         <td><p>copilot.cft.com</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTMEDIACOM</p>         </td>
-         <td><p>copilot.cft.mediacom</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ChildProcessTimeout</p>         </td>
-         <td><p>copilot.misc.childprocesstimeout</p>         </td>
-      </tr>
-      <tr>
-         <td><p>HttpRootDir</p>         </td>
-         <td><p>copilot.http.httprootdir</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MinNbProcessReady</p>         </td>
-         <td><p>copilot.misc.minnbprocessready</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NbProcessToStart</p>         </td>
-         <td><p>copilot.misc.nbprocesstostart</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NBWAITCFTCATA</p>         </td>
-         <td><p>copilot.cft.nbwaitcftcata</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ServerHost</p>         </td>
-         <td><p>copilot.general.serverhost</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ServerPort</p>         </td>
-         <td><p>copilot.general.serverport</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SslCertFile</p>         </td>
-         <td><p>copilot.ssl.sslcertfile</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SslCertPassword</p>         </td>
-         <td><p>copilot.ssl.sslcertpassword</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SslKeyFile</p>         </td>
-         <td><p>copilot.ssl.sslkeyfile</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SslKeyPassword</p>         </td>
-         <td><p>copilot.ssl.sslkeypassword</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TcpTimeout</p>         </td>
-         <td><p>copilot.misc.tcptimeout</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TIMERWAITCFTCATA</p>         </td>
-         <td><p>copilot.cft.timerwaitcftcata</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TrcMaxLen</p>         </td>
-         <td><p>copilot.trace.trcmaxlen</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TrcType</p>         </td>
-         <td><p>copilot.trace.trctype</p>         </td>
-      </tr>
-      <tr>
-         <td><p>wlogComment</p>         </td>
-         <td><p>copilot.batches.wlog.comment</p>         </td>
-      </tr>
-      <tr>
-         <td><p>wlogParams</p>         </td>
-         <td><p>copilot.batches.wlog.params</p>         </td>
-      </tr>
-      <tr>
-         <td><p>WsiComplience</p>         </td>
-         <td><p>copilot.webservices.wsicomplience</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace the &lt;script\_filename> with the new script file path.
-
-<!-- -->
-
-
-
-    CFTUTIL <prefix_character><script_filename>
 
 Example
 
@@ -287,10 +107,6 @@ You must be at Transfer CFT 2.4.1 SP5 or higher before performing this procedure
 
 <!-- -->
 
-
-
-    PKIUTIL PKIEXT fout=pki-extract.conf
-
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
@@ -303,19 +119,7 @@ You must be at Transfer CFT 2.4.1 SP5 or higher before performing this procedure
 
 -   Windows: The absolute path value for the CFTPKU environment variable
 
-<!-- -->
-
-
-
-    PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
-
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path.
-
-<!-- -->
-
-
-
-    PKIUTIL <prefix_character><script_filename>
 
 Example
 
@@ -337,10 +141,6 @@ Example
 
 <!-- -->
 
-
-
-    CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.4_filename>, ofname=catalog_output.xml
-
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
@@ -353,12 +153,6 @@ Example
 
 -   Windows: $CFTCATA
 
-<!-- -->
-
-
-
-    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_installation>
-
 ### Migrating the communication media files
 
 1.  Load the Transfer CFT V2.4 environment.
@@ -368,10 +162,6 @@ Example
 1.  Export the communication media file using command CFTMI240:
 
 <!-- -->
-
-
-
-    CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.4_filename>, ofname=com_output.xml
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -384,8 +174,3 @@ Example
 <!-- -->
 
 -   Windows: $CFTCOM
-
-<!-- -->
-
-
-    CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_installation>

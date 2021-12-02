@@ -12,31 +12,6 @@ time in the catalog. Transfer CFT provides the following purge options:
 
 Syntax
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Description         </th>
-<th colspan="2" class="HeadD-Column1-Header1">Use this command to deletes records which have exceeded
-the retention time indicated in the Transfer CFT parameter setting. You
-can set the purge time to meet your requirements and Transfer CFT
-activity.         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/timep">TIMEP</a></p>         </td>
-         <td><p>Purge time selected by the user.</p>
-<p>You can
-deactivate the next purge function by setting TIMEP = 00000000. Use care with this operation due to a risk of catalog overloading with a
-loss of performance, or overflow.</p>
-<p>If the next purge is part of a cycle, see the CFTCAT TIMEP
-parameter, the entire cycle is deleted, and not just the next occurrence
-of this cycle.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Startup"></span>
 
 ## Start-up configuration purge
@@ -61,28 +36,13 @@ The examples provide as a basis for scheduling catalog purges, where the time  
 
 To disable the periodic purge:
 
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=0
-
 To set a purge period of one day:
-
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=1
 
 To set a purge period of 2 days:
 
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=2D
-
 To set a purge period of 3 hours:
 
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=3H
-
 To set a purge period of 120 minutes:
-
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=120M
 
 To define a periodic purge every 30 minutes, where transfers in Hold are kept for two days, configure as follows.
 
@@ -90,33 +50,15 @@ To define a periodic purge every 30 minutes, where transfers in Hold are kept fo
 
 <!-- -->
 
-
-    CFTUTIL uconfset id=cft.purge.rx,value=30M
-    CFTUTIL uconfset id=cft.purge.sx,value=30M
-    CFTUTIL uconfset id=cft.purge.rt,value=30M
-    CFTUTIL uconfset id=cft.purge.st,value=30M
-
 -   To keep H state transfers for 2 days:
 
 <!-- -->
-
-
-    CFTUTIL uconfset id=cft.purge.rh,value=2D
-    CFTUTIL uconfset id=cft.purge.sh,value=2D
 
 -   To schedule a periodic purge every 30 minutes:
 
 <!-- -->
 
-
-    CFTUTIL uconfset id=cft.purge.periodicity,value=30M
-
 -   To apply the dynamic configuration parameters change:
-
-<!-- -->
-
-
-    CFTUTIL reconfig type=UCONF
 
 <span id="Dynamic"></span>
 

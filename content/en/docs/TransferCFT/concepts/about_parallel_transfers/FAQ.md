@@ -22,9 +22,6 @@ In general, you should base your MAXTRANS on the transfer peak in your daily act
 
 The Transfer CFT log shows 1000 transfers are authorized, but there are only a few hundred active:
 
-
-    CFTI18I On 1000 authorized simultaneous transfer(s), 256 is(are) active
-
 **Answer** **1**: The "authorized simultaneous transfers" value comes from the license key, while the number of active transfers comes from the parameter MAXTRANS.
 
 **Answer** **2**: You can override the MAXTRANS value when starting {{< TransferCFT/componentlongname  >}} using the following parameter: cft.run.maxtrans (only when using cft start-and-wait)

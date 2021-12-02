@@ -21,43 +21,15 @@ to configure them:
 -   Data compression
 -   Change direction (CD)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Topic         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Describes...         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="configuring_odette">Configuring OFTP</a></p>         </td>
-         <td><p>The Transfer CFT objects that you
-must configure to use the OFTP (ODETTE) protocol.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="cftpart_parameters">Configuring partners</a></p>         </td>
-         <td><p>The Transfer CFT parameters
-that you must define for a partner when using the OFTP protocol.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="processing_data">Processing data</a></p>         </td>
-         <td><p>The compression functions
-in Transfer CFT when using the OFTP (ODETTE) protocol.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="submitting_a_transfer_request">Submitting
-a transfer request</a></p>         </td>
-         <td><p>The steps that enable
-you to submit a transfer request.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="receiving_transfers">Receiving transfers</a></p>         </td>
-         <td><p>How to configure the OFTP
-(ODETTE) environment you must define the transfer environment in the RECV
-object to receive a request.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Topic  | Describes...  |
+| --- | --- |
+|  <a href="configuring_odette">Configuring OFTP</a>  |  The Transfer CFT objects that you must configure to use the OFTP (ODETTE) protocol.  |
+|  <a href="cftpart_parameters">Configuring partners</a>  |  The Transfer CFT parameters that you must define for a partner when using the OFTP protocol.  |
+|  <a href="processing_data">Processing data</a>  |  The compression functions in Transfer CFT when using the OFTP (ODETTE) protocol.  |
+|  <a href="submitting_a_transfer_request">Submitting a transfer request</a>  |  The steps that enable you to submit a transfer request.  |
+|  <a href="receiving_transfers">Receiving transfers</a>  |  How to configure the OFTP (ODETTE) environment you must define the transfer environment in the RECV object to receive a request.  |
+
 
 <span id="About_OFTP"></span><span id="OFTP__ODETTE__features"></span>
 

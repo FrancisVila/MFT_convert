@@ -53,14 +53,7 @@ From your runtime directory prompt type:
 
 **UNIX**
 
-
-      . ./profile 
-
 **Windows**
-
-
-
-    profile.bat
 
 **IBM i**
 
@@ -74,36 +67,11 @@ Transfer CFT working environment.
 
 Change profile (CHGPRF)
 
-
-
-    Type choices, press Enter.
-     
-    Assistance level . . . . . . . . *SYSVAL *SAME, *SYSVAL, *BASIC...
-    Current library . . . . . . . . *CRTDFT Name, *SAME, *CRTDFT
-    Initial program to call . . . . CFGINLPGM Name, *SAME, *NONE
-    Library . . . . . . . . . . . DOICONFIG Name, *LIBL, *CURLIB
-    Initial menu . . . . . . . . . . MAIN Name, *SAME, *SIGNOFF
-    Library . . . . . . . . . . . QSYS Name, *LIBL, *CURLIB
-    Text 'description' . . . . . . . > '<TRANSFER CFT USER PROFILE>'
-     
-    Additional Parameters
-     
-    Job description . . . . . . . . > CFTJOBD Name, *SAME
-    Library . . . . . . . . . . . > CFTPROD Name, *LIBL, *CURLIB
-     
-    Additional Parameters
-     
-    Job description . . . . . . . . > CFTJOBD Name, *SAME
-    Library . . . . . . . . . . . > CFTPROD Name, *LIBL, *CURLIB
-
 ### Start {{< TransferCFT/componentshortname  >}}
 
 #### Standard start
 
 Use the following command to start {{< TransferCFT/componentshortname  >}}after installation or stopping the server.
-
-
-     cft start
 
 In Windows only you can also use the Start menu or automatically start the server in Service Mode. See <a href="#Windows2" class="MCXref xref">Windows tasks</a>.
 
@@ -111,17 +79,9 @@ In Windows only you can also use the Start menu or automatically start the serve
 
 This mode launches the server, but freezes the session where you executed this start command. Closing this session automatically stops the {{< TransferCFT/componentshortname  >}}, and if the server is stopped the initiating session is unfrozen.
 
-
-
-    cft start-and-wait
-
 #### Force a start after an abnormal stop
 
 If {{< TransferCFT/componentshortname  >}} was stopped abnormally, you can force a start using the following command. Notice though that this kills any {{< TransferCFT/componentshortname  >}} processes that were not previously stopped.
-
-
-
-    cft force-start
 
 <span id="Stop__server"></span>
 
@@ -135,42 +95,23 @@ Transfer CFT, using either an immediate or delayed shutdown.
 {{< TransferCFT/componentshortname  >}} completes all the transfers
 in process and shuts down. No new transfer is initialized.
 
-
-
-    CFTUTIL shut fast=no
-
 #### Quick stop
 
 This method of stopping interrupts transfers in progress and changes
 them to D state (available). No pending transfers are activated.
 
-
-
-    cft stop
-
 -or-
-
-
-
-    CFTUTIL shut fast=yes
 
 #### Forced  shutdown
 
 Immediate {{< TransferCFT/componentshortname  >}} shutdown occurs,
 but without updating the transfer states. No pending transfers are activated.
 
-
-
-    CFTUTIL shut fast=kill
-
 <span id="Restart_server"></span>
 
 ## Restart the server
 
 To restart the {{< TransferCFT/componentshortname  >}} server use the following command. The behavior for in progress transfers depends on the setting defined for the FAST parameter (default=NO).
-
-
-    CFTUTIL shut restart=yes
 
 <span id="Check"></span>
 
@@ -179,9 +120,6 @@ To restart the {{< TransferCFT/componentshortname  >}} server use the following 
 #### Check the {{< TransferCFT/componentshortname  >}} status
 
 To check the state of the {{< TransferCFT/componentshortname  >}} sever, enter:
-
-
-    cft status  
 
 <span id="Purge on Transfer CFT start"></span>
 
@@ -235,32 +173,17 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 
 **Normal stop**
 
-
-    /F <Jobname>,SHUT FAST=NO or SHUT FAST=YES
-
 **Quick stop**
 
 Enter the operator command:
 
-
-    /P <{{< TransferCFT/componentshortname >}} Jobname>
-
 \- or -
 
-
-    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
-
 **Force** {{< TransferCFT/componentshortname  >}} **shut down**
-
-
-    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL
 
 #### Restart
 
 The following command restarts Transfer CFT outside of a customized JCL. Enter the operator command:
-
-
-    /F Jobname,SHUT RESTART=YES
 
 <span id="Perform"></span>
 

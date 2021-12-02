@@ -227,25 +227,12 @@ type. Transfer CFT processes this field in accordance with the specifications
 of the PeSIT protocol and defines it using the TYPE parameter of
 the transfer command:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">TYPE parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>SEND TYPE = MESSAGE,...</p>         </td>
-         <td><p>Outgoing message</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SEND TYPE = REPLY,...</p>         </td>
-         <td><p> PI 11 of the file for which the message conveys the
-acknowledgement</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| TYPE parameter  | Description  |
+| --- | --- |
+|  SEND TYPE = MESSAGE,...  |  Outgoing message  |
+|  SEND TYPE = REPLY,...  |  PI 11 of the file for which the message conveys the acknowledgement  |
+
 
  Transfer
 CFT reserves the 0xFFFD value for subsequent use.
@@ -443,33 +430,14 @@ In requester mode, Transfer CFT opens
 a connection type depending on the SROUT parameter of the CFTPROT
 command:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">SPROUT value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Access level         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>SROUT = SEND </p>         </td>
-         <td><p>Write access</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SROUT = RECV </p>         </td>
-         <td><p>Read access</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SROUT = BOTH </p>         </td>
-         <td><p>Mixed access</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SROUT = NONE </p>         </td>
-         <td><p>Transfer CFT refuses to perform the transfer. This value
-has no protocol reality, since no connection request is sent</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| SPROUT value  | Access level  |
+| --- | --- |
+|  SROUT = SEND  |  Write access  |
+|  SROUT = RECV  |  Read access  |
+|  SROUT = BOTH  |  Mixed access  |
+|  SROUT = NONE  |  Transfer CFT refuses to perform the transfer. This value has no protocol reality, since no connection request is sent  |
+
 
 In server mode, Transfer CFT only
 tolerates sessions in accordance with the value of the SRIN parameter.

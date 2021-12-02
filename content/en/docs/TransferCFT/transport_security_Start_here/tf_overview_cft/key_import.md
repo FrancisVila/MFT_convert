@@ -22,10 +22,6 @@ You can convert a PGP public Keyring file to one or several X.509certificate(s) 
 When you import a private keyring file containing ElGamal subkey(s), you must provide the PKCS#12 file for signing (as in public keyring import), because the ElGamal keys cannot be used for signing when you create a certificate.
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
-
-
-        UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
-
 2.  Enter the import command:
 
 -   UNIX: ImportPGPKey.sh
@@ -33,44 +29,17 @@ When you import a private keyring file containing ElGamal subkey(s), you must pr
 
 There are several options you can add to the command line:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Options         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>-h or -help         </td>
-         <td>Displays the help with all available options.         </td>
-      </tr>
-      <tr>
-         <td>-dn         </td>
-         <td>Subject DN of the generated certificate. If this option is not provided, the default subject DN is CN=PGP.         </td>
-      </tr>
-      <tr>
-         <td>-out         </td>
-         <td><p>Output path of the generated certificate or PKCS#12 file. If this option is not provided, the file is stored in the current directory. It must contain the tailing file separator („\‟ on Windows and „/‟ on UNIX).</p>         </td>
-      </tr>
-      <tr>
-         <td>-passwd         </td>
-         <td>Private key PassPhrase of the secret Keyring located in the input file.         </td>
-      </tr>
-      <tr>
-         <td>-newpasswd         </td>
-         <td>Private key PassPhrase of the generated PKCS#12 file. This option is mandatory for imported secret Keyrings.         </td>
-      </tr>
-      <tr>
-         <td>-pkcs12         </td>
-         <td>PKCS#12 file used to sign the new generated certificate.         </td>
-      </tr>
-      <tr>
-         <td>-passPkcs12         </td>
-         <td>Passphrase of the PKCS#12 file used to sign the new generated certificate.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Options  | Description  |
+| --- | --- |
+| -h or -help  | Displays the help with all available options.  |
+| -dn  | Subject DN of the generated certificate. If this option is not provided, the default subject DN is CN=PGP.  |
+| -out  |  Output path of the generated certificate or PKCS#12 file. If this option is not provided, the file is stored in the current directory. It must contain the tailing file separator („\‟ on Windows and „/‟ on UNIX).  |
+| -passwd  | Private key PassPhrase of the secret Keyring located in the input file.  |
+| -newpasswd  | Private key PassPhrase of the generated PKCS#12 file. This option is mandatory for imported secret Keyrings.  |
+| -pkcs12  | PKCS#12 file used to sign the new generated certificate.  |
+| -passPkcs12  | Passphrase of the PKCS#12 file used to sign the new generated certificate.  |
+
 
 ### Example commands
 
@@ -101,41 +70,17 @@ For the ElGamal keys stored in a PKCS#12 file, it is mandatory to provide a sign
 TrustedFile exports keys and certificates with the
 following file names.
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Key/certificate standard         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Exported file name         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>PGP Public Keyring</p>         </td>
-         <td><p><em>useridpacket</em>_pub.asc</p>         </td>
-      </tr>
-      <tr>
-         <td><p>PGP Secret Keyring and Public Keyring</p>         </td>
-         <td><p><em>useridpacket</em>_sec.asc
-and <em>useridpacket</em>_pub.asc</p>         </td>
-      </tr>
-      <tr>
-         <td><p>X.509 Certificate</p>         </td>
-         <td><p><em>certificate alias.</em><span>der</span></p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           | Key/certificate standard  | Exported file name  |
+ --- | --- | --- |
+|  PGP Public Keyring  |  *useridpacket*_pub.asc  |
+|  PGP Secret Keyring and Public Keyring  |  *useridpacket*_sec.asc and *useridpacket*_pub.asc  |
+|  X.509 Certificate  |  *certificate alias.*<span>der</span>  |
+
 
 ### Export procedure
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
-
-
-        UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
-
 2.  Enter the import command:
 
 -   UNIX: ExportPGPKey.sh
@@ -143,54 +88,19 @@ and <em>useridpacket</em>_pub.asc</p>         </td>
 
 There are several options you can add to the command line:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Option</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>-help | -h</p>         </td>
-         <td><p>Displays the help.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-out</p>         </td>
-         <td><p>Output path (with the trailing path separator). If this option is not provided, the file is stored in the current directory.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-passSecRing</p>         </td>
-         <td><p>PassPhrase of the generated secret Keyring.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-userIdPacket</p>         </td>
-         <td><p>User ID packet of the generated secret Keyring and public Keyring.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-passPkcs12</p>         </td>
-         <td><p>PassPhrase of the PKCS#12 file to be converted.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-secRing</p>         </td>
-         <td><p>With the argument "no", the secret Keyring will not generate.</p>
-<p>Do</p>
-<p>not use this option or use an alternative argument.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-pubRing</p>         </td>
-         <td><p>With the argument "no", the public Keyring will not generate. Do not use this option or use an alternative argument.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-masterPkcs12</p>         </td>
-         <td><p>(only for ElGamal) PKCS#12 file used to sign the new generated certificate.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-masterPassPkcs12</p>         </td>
-         <td><p>(only for ElGamal) Passphrase of the PKCS#12 file used to sign the new generated certificate.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Option  |  Description  |
+| --- | --- |
+|  -help | -h  |  Displays the help.  |
+|  -out  |  Output path (with the trailing path separator). If this option is not provided, the file is stored in the current directory.  |
+|  -passSecRing  |  PassPhrase of the generated secret Keyring.  |
+|  -userIdPacket  |  User ID packet of the generated secret Keyring and public Keyring.  |
+|  -passPkcs12  |  PassPhrase of the PKCS#12 file to be converted.  |
+|  -secRing  |  With the argument "no", the secret Keyring will not generate.<br/>Do<br/>not use this option or use an alternative argument.  |
+|  -pubRing  |  With the argument "no", the public Keyring will not generate. Do not use this option or use an alternative argument.  |
+|  -masterPkcs12  |  (only for ElGamal) PKCS#12 file used to sign the new generated certificate.  |
+|  -masterPassPkcs12  |  (only for ElGamal) Passphrase of the PKCS#12 file used to sign the new generated certificate.  |
+
 
 > **Note:**
 >

@@ -31,44 +31,9 @@ See Related topics below for links to more information on these access managemen
 
 1.  Define the unified configuration settings so that you enable authentication yes, and select the method.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameters         </th>
-<th style="text-align: center;" class="HeadE-Column1-Header1">Default         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.cftcoms.authentication_enable         </td>
-         <td>No         </td>
-         <td><p>Authentication for synchronous communication:</p>
-<ul>
-<li>Yes: Enable password authentication</li>
-<li>No: Disable authentication</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>cft.server.authentication_method         </td>
-         <td>None         </td>
-         <td><p>Authentication method can be:</p>
-<ul>
-<li>none: No method defined</li>
-<li>system: Operating system</li>
-<li>am: PassPort AM or AM exit</li>
-<li>xfbadm: <a href="../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1">xfbadmusr</a> utility</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
-
-1.  Define the following parameters.
-
 <!-- -->
 
-
-    CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=protocol://host:port, PASSWORD=password
+1.  Define the following parameters.
 
 The username/password is then checked for each subsequent request. The username used for the authentication is the user that is currently logged in. api sample
 

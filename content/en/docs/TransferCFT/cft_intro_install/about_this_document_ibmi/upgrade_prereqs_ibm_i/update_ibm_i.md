@@ -10,15 +10,6 @@ Use the `CFTUTIL ABOUT` command to display the product information, including th
 
 **Results**
 
-
-
-    CFT information :
-    * product = CFT/OS400
-    * version = 3.2.4
-    * level   = SP0_P1
-    * upgrade = 8668000
-    * target  = os400
-
 ## Update with a service pack
 
 To apply a service pack:
@@ -32,39 +23,18 @@ To apply a service pack:
 7.  Complete the required fields:
 
 -   In the first field, enter your program library.
+
 -   In the second field, enter your production library.
+
 -   In the third field, enter the name of the SAVF where the backup of your current version is stored.
+
 -   **The SAVF must be in your production library. If there is no SAVF, it is created.**
 
-<!-- -->
+-   Press Enter to continue.
 
+    Use the `CFTUTIL ABOUT` command to check the service pack level.
 
-
-    CFT Update (UPDATE)
-    Type choices, press Enter.
-    Silent Installation . . . . . .  >   1:Yes/2:No
-    CFT Program library  . . . . . .    > CFTPGM Name
-    CFT Production library . . . . . >    CFTPROD Name
-    SAVF name for current version  .     > CFTSAVF Name
-
-Press Enter to continue.
-
-Use the `CFTUTIL ABOUT` command to check the service pack level.
-
-Results, for example, after applying SP4:
-
-
-
-    CFT information :
-    * product = CFT/OS400
-    * version = 3.2.4
-    * level   = SP4
-    * upgrade = 8712000
-    * target  = os400
-
-> **Note:**
->
-> You should keep the save file where the previous version was saved (for example, in CFTSAVF), in case you need to uninstall the service pack.
+    Results, for example, after applying SP4:
 
 > **Note:**
 >
@@ -85,25 +55,8 @@ When you install a service pack, the contents of the home directory are updated,
 
 Module versions impacted by the patch are stored. If the SAVF does not exist, it is created; if it exists, it is cleared.
 
-
-
-    Install Transfer CFT patch (PATCHER)
-    Type choices, press Enter.
-     
-    Program library  . . . . . . . .       CFTPGM        Character value
-    SAVF for backup  . . . . . . . .       PATCHSAV      Character value
-
 **Results**
 
 Use the `CFTUTIL ABOUT` command to check the patch level.
 
 Results, for example, after applying SP2\_Patch2:
-
-
-
-    CFT information :
-    * product = CFT/OS400
-    * version = 3.2.4
-    * level   = SP2_Patch2
-    * upgrade = 8712000
-    * target  = os400

@@ -16,13 +16,7 @@ The `cftinit` command initializes Transfer CFT internal datafiles. If nothing is
 
 **Usage**
 
-
-    EXEC PCFTUTL,PG=CFT,PARM=’CFTINIT &CFTENV..SAMPLE(CFTPARM)’
-
 Common internal datafiles are initialized using provided configuration files.
-
-
-    CFTINIT –N 2
 
 Specific internal datafiles for node 2 are initialized (CATALOG.N02,COM.N02,LOG1.N02,LOG2.N02C).
 
@@ -292,20 +286,3 @@ The CFTUTIL **`listnode `**displays the status of the Transfer CFT cluster, incl
 **Example**
 
 In this example four nodes are running on four different hosts.
-
-
-
-    --------------------------------------------------------------
-    Host z-zos111b       10.128.60.15                 Copilot RUNNING    (SOP700ZN J07928)
-    --------------------------------------------------------------
-       Node id    Node state            CFT state      CFT      JOB           Disabling
-       -------   ---------------   ------------   --------------- -----
-       Node 01   ENABLED_STARTED    RUNNING         SOP700T3 J07936 No
-       Node 02   ENABLED_STARTED    RUNNING        SOP700T4 J07938 No
-    --------------------------------------------------------------
-    Host z-zos19         10.128.60.12                 Copilot RUNNING      (SOP700ZN J09205)
-    ---------------------------------------------------------------
-       Node id    Node state           CFT state      CFT     JOB           Disabling
-       -------   ---------------   ------------   --------------- -------
-       Node 00   ENABLED_STARTED    RUNNING        SOP700T3 J09211 No
-       Node 03   ENABLED_STARTED   RUNNING        SOP700T4 J09214 No

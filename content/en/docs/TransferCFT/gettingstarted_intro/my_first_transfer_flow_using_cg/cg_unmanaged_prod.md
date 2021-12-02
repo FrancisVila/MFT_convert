@@ -31,45 +31,17 @@ The information in this configuration example corresponds to the text used in th
 
 Parameter mapping
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unmanaged product configuration fields         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>CFTTCP HOST         </td>
-         <td>Host in the unmanaged product configuration         </td>
-      </tr>
-      <tr>
-         <td>CFTPART SYST         </td>
-         <td>Operating system         </td>
-      </tr>
-      <tr>
-         <td>CFTPART NRPART         </td>
-         <td>PeSIT Login         </td>
-      </tr>
-      <tr>
-         <td>CFTPART NRPASSW         </td>
-         <td>PeSIT password         </td>
-      </tr>
-      <tr>
-         <td>CFTPART PROT         </td>
-         <td>Mutual authentication (indicates PeSIT SSL)         </td>
-      </tr>
-      <tr>
-         <td>CFTPART SAP          </td>
-         <td>Port         </td>
-      </tr>
-      <tr>
-         <td><p>CFTSSL DIRECT=CLIENT</p>
-<p>ROOTCID corresponding to the ROOT certificate in the Transfer CFT PKI database</p>         </td>
-         <td>Certificate         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer CFT  | Unmanaged product configuration fields  |
+| --- | --- |
+| CFTTCP HOST  | Host in the unmanaged product configuration  |
+| CFTPART SYST  | Operating system  |
+| CFTPART NRPART  | PeSIT Login  |
+| CFTPART NRPASSW  | PeSIT password  |
+| CFTPART PROT  | Mutual authentication (indicates PeSIT SSL)  |
+| CFTPART SAP  | Port  |
+|  CFTSSL DIRECT=CLIENT<br/>ROOTCID corresponding to the ROOT certificate in the Transfer CFT PKI database  | Certificate  |
+
 
 ## Create a communication profile on the source {{< TransferCFT/transfercftname  >}}
 
@@ -86,50 +58,18 @@ In this step you create a communication profile on the source {{< TransferCFT/tr
 
 Parameter mapping
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Communication profile for the Unmanaged product         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>CFTPROT         </td>
-         <td>Protocol name         </td>
-      </tr>
-      <tr>
-         <td>NSPART         </td>
-         <td>Login         </td>
-      </tr>
-      <tr>
-         <td>NSPASSW         </td>
-         <td>Password         </td>
-      </tr>
-      <tr>
-         <td>N/A         </td>
-         <td>Client authentication         </td>
-      </tr>
-      <tr>
-         <td>N/A         </td>
-         <td>Upload         </td>
-      </tr>
-      <tr>
-         <td><p>CFTSSL DIRECT=CLIENT</p>
-<p>USERCID</p>         </td>
-         <td>Private certificate         </td>
-      </tr>
-      <tr>
-         <td>N/A         </td>
-         <td>Password (for P12)         </td>
-      </tr>
-      <tr>
-         <td><p>CFTSSL DIRECT=CLIENT</p>
-<p>ID</p>         </td>
-         <td>SSL security profile         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer CFT  | Communication profile for the Unmanaged product  |
+| --- | --- |
+| CFTPROT  | Protocol name  |
+| NSPART  | Login  |
+| NSPASSW  | Password  |
+| N/A  | Client authentication  |
+| N/A  | Upload  |
+|  CFTSSL DIRECT=CLIENT<br/>USERCID  | Private certificate  |
+| N/A  | Password (for P12)  |
+|  CFTSSL DIRECT=CLIENT<br/>ID  | SSL security profile  |
+
 
 ## Create a flow
 
@@ -155,20 +95,11 @@ Make the following selections, using the default values for all other fields.
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer CFT          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Flow field         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>CFTSEND ID         </td>
-         <td>Flow identifier         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer CFT  | Flow field  |
+| --- | --- |
+| CFTSEND ID  | Flow identifier  |
+
 
 ## Check the flow on {{< TransferCFT/componentlongname  >}}
 

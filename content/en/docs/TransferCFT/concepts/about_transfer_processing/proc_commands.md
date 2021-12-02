@@ -23,22 +23,9 @@ Using this method, {{< TransferCFT/componentlongname  >}} creates a temporary fi
 
 For example, to run the `myscript.sh` script using this method:
 
-
-    cftsend id=flow01, exec='exec/myscript.sh'
-
 Example of a template processing script
 
-
-
-    CFTUTIL WLOG MSG="execute processing script for the &IDTU transfer "
-    CFTUTIL END PART=&PART, IDTU=&IDTU
-
 Example of the corresponding temporary file to execute
-
-
-
-    CFTUTIL WLOG MSG="execute processing script for the A0000001 transfer "
-    CFTUTIL END PART=PART01, IDTU=A0000001
 
 Operating system differences
 
@@ -78,13 +65,7 @@ For security reasons, you cannot use this method with the SEND/RECV command's PR
 
 To implement this method, preface the PREEXEC, EXEC or ACKEXEC value with "`cmd:`". For example:
 
-
-    CFTSEND id=flow01, fname=myfile, exec="cmd:myscript.sh &PART &IDT &IDTU"
-
 To call a program, for example CFTUTIL, you can use a similar syntax as shown here:
-
-
-    CFTSEND id=flow01, fname=myfile, exec="cmd:CFTUTIL end part=&PART, idt=&IDT, direct=SEND"
 
 Limitations Unix only
 
@@ -115,9 +96,6 @@ In some cases you may want to limit the number of scripts launched in parallel b
 > Caution  
 > When using this parameter, every end-of-transfer procedure must notify Transfer CFT once the processing is complete. This can be done either via an END or KEEP command (in the case of an error). Failure to signal that processing is complete means that new procedures cannot start once the cft.server.max\_processing\_scripts value is reached.
 
-
-    uconfset id=cft.server.max_processing_scripts, value=64
-
 > **Note:**
 >
 > This parameter does not apply to the execution of transfer error scripts.
@@ -132,22 +110,13 @@ The end command monitors the script completion. Depending on the parameter used 
 
 Example
 
-
-    CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
-
 The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
 
 Example
 
-
-    CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_1"CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_2"
-
 #### Define DIAGC
 
 To create a more specific comment you can modify the DIAGC. The DIAGC used in preprocessing phase is reset when a transfer begins.
-
-
-    CFTUTIL END part=&PART,idtu=&IDTU,DIAGC="intermediate checkpoint number 1 “
 
 #### Replace variable
 
@@ -155,43 +124,17 @@ In your script you can also update values, for example the FNAME. However, the i
 
 Example
 
-
-
-    CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW_FNAME
-    ...
-    .....
-    CFTR12I END Treated for USER MY_CFT : FNAME value was "pub/FTEST" and is now "NEW_FNAME"
-
 ### Stop
 
 When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
 
 Example
 
-
-
-    CFTUTIL HALT part=&PART,idtu=&IDTU,DIAGP=”Error 1”,DIAGC=”Connection lost”
-    CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found”
-
 ### Restart
 
 In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
 
 Exa**m**ple  
-
-
-
-    Go to &APPSTATE 
-    Step 1: 
-     if OK END part=&part, idtu=&idtu, appstate="step 1", istate=yes
-     if not OK KEEP part=&part, idtu=&idtu, appstate="step 1", istate=yes &go to error
-    Step 2: 
-     if OK END part=&part, idtu=&idtu, appstate="step 2", istate=yes
-     if not OK KEEP part=&part, idtu=&idtu, appstate="step 2", istate=yes &go to error
-    END: 
-     END part=&part, idtu=&idtu, istate=no & go to eof
-    Error: 
-     WLOG MSG="script error at step &appstate" 
 
 ### Define wait time for a restart
 
@@ -201,313 +144,31 @@ You can change the maxduration for a transfer restart using the maxduration para
 
 ### SEND, CFTSEND
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>SEND, CFTSEND         </td>
-         <td>ACKMINDATE         </td>
-         <td>integer         </td>
-         <td>From this date on, the acknowledgement exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>ACKMINTIME         </td>
-         <td>integer         </td>
-         <td>From this time on, the acknowledgement exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>POSTMINDATE         </td>
-         <td>integer         </td>
-         <td>From this date on, the post processing exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>POSTMINTIME         </td>
-         <td>integer         </td>
-         <td>From this time on, the post processing exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>PREMINDATE         </td>
-         <td>integer         </td>
-         <td>From this date on, the preprocessing exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>PREMINTIME         </td>
-         <td>integer         </td>
-         <td>From this time on, the preprocessing exec file can be launched.         </td>
-      </tr>
-      <tr>
-         <td>ACKEXEC         </td>
-         <td>string         </td>
-         <td>The acknowledgement exec file that will be launched after receiving an ACK or NACK.         </td>
-      </tr>
-      <tr>
-         <td>ACKSTATE         </td>
-         <td>REQUIRE/IGNORE         </td>
-         <td>Specify if {{< TransferCFT/componentshortname  >}} should wait for an ACK/NACK to enter the X phase.         </td>
-      </tr>
-      <tr>
-         <td>POSTSTATE         </td>
-         <td>DISP         </td>
-         <td>The transfer phase step as it enters the Y phase.         </td>
-      </tr>
-      <tr>
-         <td>PREEXEC         </td>
-         <td>string         </td>
-         <td>The preprocessing exec file.         </td>
-      </tr>
-      <tr>
-         <td>PRESTATE         </td>
-         <td>DISP/HOLD         </td>
-         <td>The transfer phase step as it enters the A phase.         </td>
-      </tr>
-      <tr>
-         <td>EXECSUBPRE         </td>
-         <td>LIST/SUBF/FILE         </td>
-         <td>Group of files: execution policy for preprocessing phase.         </td>
-      </tr>
-      <tr>
-         <td>EXECSUB         </td>
-         <td>LIST/SUBF/FILE         </td>
-         <td>Group of files: execution policy for post-processing phase.         </td>
-      </tr>
-      <tr>
-         <td>EXECSUBA         </td>
-         <td>LIST/SUBF/FILE         </td>
-         <td>Group of files: execution policy for acknowledgement phase.         </td>
-      </tr>
-   </tbody>
-</table>
-
 ### END
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>END         </td>
-         <td>DIAGC         </td>
-         <td>string         </td>
-         <td>Specify a comment.         </td>
-      </tr>
-      <tr>
-         <td>FNAME         </td>
-         <td>string         </td>
-         <td>Modify the FNAME.         </td>
-      </tr>
-      <tr>
-         <td>NFNAME         </td>
-         <td>string         </td>
-         <td>Modify the NFNAME.         </td>
-      </tr>
-      <tr>
-         <td>SIGFNAME         </td>
-         <td>string         </td>
-         <td>Modify the SIGFNAME.         </td>
-      </tr>
-      <tr>
-         <td>RAPPL         </td>
-         <td>string         </td>
-         <td>Modify the RAPPL.         </td>
-      </tr>
-      <tr>
-         <td>SAPPL         </td>
-         <td>string         </td>
-         <td>Modify the SAPPL.         </td>
-      </tr>
-      <tr>
-         <td>RUSER         </td>
-         <td>string         </td>
-         <td>Modify the RUSER.         </td>
-      </tr>
-      <tr>
-         <td>SUSER         </td>
-         <td>string         </td>
-         <td>Modify the SUSER.         </td>
-      </tr>
-      <tr>
-         <td>RPASSWD         </td>
-         <td>string         </td>
-         <td>Modify the RPASSWD.         </td>
-      </tr>
-      <tr>
-         <td>SPASSWD         </td>
-         <td>string         </td>
-         <td>Modify the SPASSWD.         </td>
-      </tr>
-      <tr>
-         <td>ISTATE         </td>
-         <td>NO/YES         </td>
-         <td><p>Indicates:</p>
-<ul>
-<li>YES: The END command is only a checkpoint.</li>
-<li>NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>PHASE         </td>
-         <td>char         </td>
-         <td>The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>PHASE STEP         </td>
-         <td>char         </td>
-         <td>The phase step at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>APPSTATE         </td>
-         <td>string         </td>
-         <td>Specify an application state for the processing
-script that will help the script to restart at the right step if the
-script is relaunched.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Command  | Parameter  | Value  | Description  |
+| --- | --- | --- | --- |
+| END  | DIAGC  | string  | Specify a comment.  |
+| FNAME  | string  | Modify the FNAME.  |
+| NFNAME  | string  | Modify the NFNAME.  |
+| SIGFNAME  | string  | Modify the SIGFNAME.  |
+| RAPPL  | string  | Modify the RAPPL.  |
+| SAPPL  | string  | Modify the SAPPL.  |
+| RUSER  | string  | Modify the RUSER.  |
+| SUSER  | string  | Modify the SUSER.  |
+| RPASSWD  | string  | Modify the RPASSWD.  |
+| SPASSWD  | string  | Modify the SPASSWD.  |
+| ISTATE  | NO/YES  |  Indicates:<br/> • YES: The END command is only a checkpoint.<br/> • NO (default): This is the final end command indicating that the processing is over. Once the END completes, the transfer enters the next phase.</li>  |
+| PHASE  | char  | The transfer phase at which the command is applied.  |
+| PHASE STEP  | char  | The phase step at which the command is applied.  |
+| APPSTATE  | string  | Specify an application state for the processing script that will help the script to restart at the right step if the script is relaunched.  |
+
 
 ### KEEP
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>KEEP         </td>
-         <td>DIAGP         </td>
-         <td>string         </td>
-         <td>Specify a customized error that will be set for DIAGP in the catalog.         </td>
-      </tr>
-      <tr>
-         <td>DIAGC         </td>
-         <td>string         </td>
-         <td>Specify a customized error that will be set for DIAGC in the catalog.         </td>
-      </tr>
-      <tr>
-         <td>PHASE         </td>
-         <td>char         </td>
-         <td>The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>PHASE STEP         </td>
-         <td>char         </td>
-         <td>The phase step at which the command is applied.         </td>
-      </tr>
-   </tbody>
-</table>
-
 ### HALT
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>HALT         </td>
-         <td>DIAGP         </td>
-         <td>string         </td>
-         <td>Specify a customized error that will be set for DIAGP in the catalog.         </td>
-      </tr>
-      <tr>
-         <td>DIAGC         </td>
-         <td>string         </td>
-         <td>Specify a customized error that will be set for DIAGC in the catalog.         </td>
-      </tr>
-      <tr>
-         <td>PHASE         </td>
-         <td>char         </td>
-         <td>The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>PHASE STEP         </td>
-         <td>char         </td>
-         <td>The phase step at which the command is applied.         </td>
-      </tr>
-   </tbody>
-</table>
 
 ### SUBMIT
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>SUBMIT         </td>
-         <td>APPSTATE         </td>
-         <td>string         </td>
-         <td>Specify an application state for the
-processing script that will allow a SUBMIT to occur at the correct script step.         </td>
-      </tr>
-      <tr>
-         <td>PHASE         </td>
-         <td>char         </td>
-         <td>The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>PHASE STEP         </td>
-         <td>char         </td>
-         <td>The phase step at which the command is applied.         </td>
-      </tr>
-   </tbody>
-</table>
-
 ### START
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>START         </td>
-         <td>PHASE         </td>
-         <td>char         </td>
-         <td>The transfer phase at which the command is applied.         </td>
-      </tr>
-      <tr>
-         <td>MAXDURATION         </td>
-         <td>integer         </td>
-         <td>Restart a transfer that reached its maxduration, time in minutes {<u>0</u>...32767}.         </td>
-      </tr>
-      <tr>
-         <td>PHASE STEP         </td>
-         <td>char         </td>
-         <td>The phase step at which the command is applied.         </td>
-      </tr>
-   </tbody>
-</table>

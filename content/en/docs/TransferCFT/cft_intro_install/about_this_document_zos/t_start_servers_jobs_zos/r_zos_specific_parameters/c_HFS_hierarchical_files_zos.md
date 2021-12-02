@@ -33,9 +33,6 @@ or
 
 To enable recursive processing for a group of files, use the following syntax \*\* (two asterisks). To select all files in all of the folders, for example:
 
-
-    FNAME =/home/qualcft/**
-
 > **Note:**
 >
 > A single asterisk \* only selects the file in the immediate folder.
@@ -103,9 +100,6 @@ Changing the name of an HFS file can only be carried out in the same directory. 
 ### HFS-specific error message
 
 For each HFS file access error, Transfer CFT z/OS displays the CFTHF01E message in the SYSLOG.
-
-
-    CFHF01E:BPX1mod ,RSN=05F1006C,RC=ENOENT (129)No such file or directory 
 
 Where:
 

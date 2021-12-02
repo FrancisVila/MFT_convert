@@ -12,11 +12,6 @@ of the transmitted data.
 
 Example
 
-
-    PARM LRECL = nnnn, FORMAT=X
-    SEND STATE = CDHKTX 
-    RECV STATE = CDHKTX
-
 Where:
 
 -   PARM: General
@@ -36,275 +31,59 @@ Displays using the same format as in {{< TransferCFT/hflongproductname  >}} 3.5 
 -   Format V23: The record is truncated if LRECL&lt;503 or padded with spaces if LRECL>503.
 -   Format V24: The record is truncated if LRECL&lt;1569 or padded with spaces if LRECL>1569.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">V24 length         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">V23 length         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>'L': start of record marker </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>SEND/RECV flag </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>STATE </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Send PARTner </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Receive PARTner </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>IDF file identifier </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>IDT transfer identifier </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>10</p>         </td>
-         <td><p>10 </p>         </td>
-         <td><p>Number of records </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>512</p>         </td>
-         <td><p>64 </p>         </td>
-         <td><p>Filename </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>3 </p>         </td>
-         <td><p>Transfer priority </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Date of submission to catalog</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Time of submission to catalog or time of last modification </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>512</p>         </td>
-         <td><p>80 </p>         </td>
-         <td><p>User PARaMeter </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>28</p>         </td>
-         <td><p>15 </p>         </td>
-         <td><p>Send USER </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>28</p>         </td>
-         <td><p>15 </p>         </td>
-         <td><p>Receive USER </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>4 </p>         </td>
-         <td><p>Local parameter length </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>160</p>         </td>
-         <td><p>160 </p>         </td>
-         <td><p>Local user parameter </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>3 </p>         </td>
-         <td><p>Diagi </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>64</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Diagp </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Total</p>         </td>
-         <td><p>1569</p>         </td>
-         <td><p>503 bytes </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Type  | V24 length  | V23 length  | Description  |
+| --- | --- | --- | --- |
+|  CHAR  |  1  |  1  |  'L': start of record marker  |
+|  CHAR  |  1  |  1  |  SEND/RECV flag  |
+|  CHAR  |  1  |  1  |  STATE  |
+|  CHAR  |  32  |  8  |  Send PARTner  |
+|  CHAR  |  32  |  8  |  Receive PARTner  |
+|  CHAR  |  32  |  8  |  IDF file identifier  |
+|  CHAR  |  8  |  8  |  IDT transfer identifier  |
+|  CHAR  |  10  |  10  |  Number of records  |
+|  CHAR  |  512  |  64  |  Filename  |
+|  CHAR  |  3  |  3  |  Transfer priority  |
+|  CHAR  |  8  |  8  |  Date of submission to catalog  |
+|  CHAR  |  8  |  8  |  Time of submission to catalog or time of last modification  |
+|  CHAR  |  512  |  80  |  User PARaMeter  |
+|  CHAR  |  28  |  15  |  Send USER  |
+|  CHAR  |  28  |  15  |  Receive USER  |
+|  CHAR  |  4  |  4  |  Local parameter length  |
+|  CHAR  |  160  |  160  |  Local user parameter  |
+|  CHAR  |  3  |  3  |  Diagi  |
+|  CHAR  |  64  |  8  |  Diagp  |
+|  Total  |  1569  |  503 bytes  |   |
+
 
 Format 2
 
 The fields are as described in the following table, where the field size depends on the format version (V23 or V24).
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V24 length</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>V23 length</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>'L': start of record marker </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>SEND/RECV flag </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>1 </p>         </td>
-         <td><p>STATE </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>PHASE</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>PHASESTEP</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>64</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Send partner (PART)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>64</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Receive partner (PART)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>IDF file identifier </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>IDT transfer identifier </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>10</p>         </td>
-         <td><p>10 </p>         </td>
-         <td><p>Number of records </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>512</p>         </td>
-         <td><p>64 </p>         </td>
-         <td><p>Filename </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>3 </p>         </td>
-         <td><p>Transfer priority </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Date of submission to catalog</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Time submitted to catalog, or time of last modification </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>512</p>         </td>
-         <td><p>80 </p>         </td>
-         <td><p>User parameter (PARM)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>15 </p>         </td>
-         <td><p>Send USER </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>32</p>         </td>
-         <td><p>15 </p>         </td>
-         <td><p>Receive USER </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>160</p>         </td>
-         <td><p>160 </p>         </td>
-         <td><p>Local user parameter </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>3 </p>         </td>
-         <td><p>Diagi </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CHAR </p>         </td>
-         <td><p>64</p>         </td>
-         <td><p>8 </p>         </td>
-         <td><p>Diagp </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Type  |  V24 length  |  V23 length  |  Description  |
+| --- | --- | --- | --- |
+|  CHAR  |  1  |  1  |  'L': start of record marker  |
+|  CHAR  |  1  |  1  |  SEND/RECV flag  |
+|  CHAR  |  1  |  1  |  STATE  |
+|  CHAR  |  1  |  1  |  PHASE  |
+|  CHAR  |  1  |  1  |  PHASESTEP  |
+|  CHAR  |  64  |  8  |  Send partner (PART)  |
+|  CHAR  |  64  |  8  |  Receive partner (PART)  |
+|  CHAR  |  32  |  8  |  IDF file identifier  |
+|  CHAR  |  8  |  8  |  IDT transfer identifier  |
+|  CHAR  |  10  |  10  |  Number of records  |
+|  CHAR  |  512  |  64  |  Filename  |
+|  CHAR  |  3  |  3  |  Transfer priority  |
+|  CHAR  |  8  |  8  |  Date of submission to catalog  |
+|  CHAR  |  8  |  8  |  Time submitted to catalog, or time of last modification  |
+|  CHAR  |  512  |  80  |  User parameter (PARM)  |
+|  CHAR  |  32  |  15  |  Send USER  |
+|  CHAR  |  32  |  15  |  Receive USER  |
+|  CHAR  |  160  |  160  |  Local user parameter  |
+|  CHAR  |  3  |  3  |  Diagi  |
+|  CHAR  |  64  |  8  |  Diagp  |
+
 
 Format C: CSV - Comma Separated Value
 
@@ -318,17 +97,7 @@ Each field is separated by a tab.
 
 Format J: JSON
 
-
-
-    {"TRANSFERS":[{"DIRECT":"S","STATE":"X","PHASE":"X","PHASESTEP":"X","SPART":"MARTIN","RPART":"PARIS","IDF":"ID_EXITL","IDT":"L1111482","NBR":"2","FNAME":"","PRI":"128","DATEK":"20191211","TIMEK":"11481147","PARM":"","SUSER":"","RUSER":"","COMMENT":"","DIAGI":"0","DIAGP":"CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-    ,{"DIRECT":"R","STATE":"X","PHASE":"X","PHASESTEP":"X","SPART":"PARIS","RPART":"MARTIN","IDF":"BIN","IDT":"L1111475","NBR":"2","FNAME":"pub\\L1111475_A000002Q.RCV","PRI":"128","DATEK":"20191211","TIMEK":"11475343","PARM":"My \"param\" with quote","SUSER":"","RUSER":"","COMMENT":"","DIAGI":"0","DIAGP":"CP NONE"}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-    ], "TOTAL":"2"}            
-
 Format X: XML
-
-
-    <?xml version="1.0" encoding="UTF-8"?><CAT><TRANSFER DIRECT="S" STATE="X" PHASE="X" PHASESTEP="X" SPART="MARTIN" RPART="PARIS" IDF="ID_EXITL" IDT="L1111423" NBR="2" FNAME="" PRI="128" DATEK="20191211" TIMEK="11422580" PARM="" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <TRANSFER DIRECT="R" STATE="X" PHASE="X" PHASESTEP="X" SPART="PARIS" RPART="MARTIN" IDF="BIN" IDT="L1111415" NBR="2" FNAME="pub\L1111415_A000002K.RCV" PRI="128" DATEK="20191211" TIMEK="11415981" PARM="My  &quot;param&quot; with quote" SUSER="" RUSER="" COMMENT="" DIAGI="0" DIAGP="CP NONE"/>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
-    <TOTAL>2</TOTAL></CAT>      
 
 ## Determine the LRECL 
 

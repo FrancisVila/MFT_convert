@@ -71,40 +71,14 @@ forward site.
 Depending on the value of this parameter, the processing performed by
 the {{< TransferCFT/componentshortname  >}} on the store and forward site is as follows:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">COMMUT value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File is sent to partner         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>YES         </td>
-         <td>Yes, immediately         </td>
-         <td>The a file is immediately sent to the intended partner. Default value.         </td>
-      </tr>
-      <tr>
-         <td>NO         </td>
-         <td>No, no file forwarding         </td>
-         <td>The file transfer is refused because the partner is not able to perform the store
-and forward.         </td>
-      </tr>
-      <tr>
-         <td>SERVER         </td>
-         <td>Yes, after processing         </td>
-         <td>Sending the file occurs at the initiative
-of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN
-server</a>.         </td>
-      </tr>
-      <tr>
-         <td>PART         </td>
-         <td>Yes, immediately         </td>
-         <td>This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| COMMUT value  | File is sent to partner  | Details  |
+| --- | --- | --- |
+| YES  | Yes, immediately  | The a file is immediately sent to the intended partner. Default value.  |
+| NO  | No, no file forwarding  | The file transfer is refused because the partner is not able to perform the store and forward.  |
+| SERVER  | Yes, after processing  | Sending the file occurs at the initiative of the store and forward site. This mode is also known as <a href="#VAN_server_Store_and_forward_processing">Store and forward with a VAN server</a>.  |
+| PART  | Yes, immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
+
 
 There are two ways for the sender to initiate a store and forward transfer:
 
@@ -183,11 +157,6 @@ Processing possibilities in the store and forward mode
 You can use the use this option to force a store and forward on an intermediate site without knowing the final partner.
 
 On the store and forward site there is a partner definition to receive the incoming connection and a second partner establishes the connection with the following site (also the intermediate or the final site). The link between the partner receiving the connection and the sending partner is established via the following parameter settings:
-
-
-
-    CFTPART ID=IDRECEPT, COMMUT=PART, IPART=IDEMET,...
-    CFTPART ID=IDEMET,...
 
 The initial site establishes the connection with the immediate store and forward site (CFTPART ID=IDNAT, NSPART=NINTNAT, NRPART=NNAT, and so on). The immediate store and forward site receives the connection from the initial site and forces the store and forward (COMMUT=PART) to the indicated partner (IPART=IDDEP).
 
@@ -281,57 +250,15 @@ This example shows a broadcast store and forward from the initiator A to relay B
 
 On the initiating site A, define:
 
-
-
-    cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl
-    cftpart id=b,nspart=a,prot=pesitssl,sap=1762
-    cfttcp id=b,host=@B
-
 Set up the intermediate partner B as follows:
-
-
-
-    cftpart id=a,nspart=b,prot=pesitssl,sap=1762
-    cfttcp id=a,host=@A
-     
-    cftpart id=c,nspart=b,prot=pesitssl,sap=1762
-    cfttcp id=c,host=@C
-     
-    cftpart id=d,nspart=b,prot=pesitssl,sap=1762
-    cfttcp id=d,host=@D
-     
-    cftdest id=cd,part=(c,d),for=commut
-     
-    cftappl  id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT. 
 
 Execute the following partner C definition:
 
-
-
-    cftpart id=b,nspart=c,prot=pesitssl,sap=1762
-    cfttcp id=b,host= @B
-    cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
-     
-    cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
-
 Execute the following partner D definition:
-
-
-
-    cftpart id=b,nspart=d,prot=pesitssl,sap=1762
-    cfttcp id=b,host=@B
-     cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
-     
-    cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
-     
 
 Testing the use case
 
 From the initiator site A, execute:
-
-
-
-    send part=cd,idf=broadcast,fname=pub/FTEST
 
 ## Broadcast list acknowledgements
 

@@ -12,57 +12,17 @@ Double-click in a window field to begin editing parameters.
 
 Configure the AM exit using the parameters in the following table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Access Management exit parameters         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>am.exit.libpath         </td>
-         <td>          </td>
-         <td>The absolute path of the dynamic library.         </td>
-      </tr>
-      <tr>
-         <td>am.exit.check_login         </td>
-         <td>Yes/No         </td>
-         <td>Indicate if the login must be checked through the AM exit.         </td>
-      </tr>
-      <tr>
-         <td>am.exit.check_permissions         </td>
-         <td>Yes/No         </td>
-         <td>Indicate if permissions must be checked though the AM exit.         </td>
-      </tr>
-      <tr>
-         <td>am.exit.custom.tracelevel.value         </td>
-         <td>Default: 1         </td>
-         <td><p>Trace level where:</p>
-<ul>
-<li>1=ERR</li>
-<li>2=WRN</li>
-<li>3=INF</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>am.exit.custom.rbac_fname.value         </td>
-         <td>          </td>
-         <td>Path to the RBAC flat file used by the Access Management exit sample.         </td>
-      </tr>
-      <tr>
-         <td>am.exit.custom.ldap_host.value         </td>
-         <td>          </td>
-         <td>LDAP server hostname/IP address that is used by the Access Management exit sample.         </td>
-      </tr>
-      <tr>
-         <td>am.exit.custom.ldap_port.value         </td>
-         <td>          </td>
-         <td>LDAP server port that is used by the Access Management exit sample.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Access Management exit parameters  | Value  | Description  |
+| --- | --- | --- |
+| am.exit.libpath  |   | The absolute path of the dynamic library.  |
+| am.exit.check_login  | Yes/No  | Indicate if the login must be checked through the AM exit.  |
+| am.exit.check_permissions  | Yes/No  | Indicate if permissions must be checked though the AM exit.  |
+| am.exit.custom.tracelevel.value  | Default: 1  |  Trace level where:<br/> • 1=ERR<br/> • 2=WRN<br/> • 3=INF</li>  |
+| am.exit.custom.rbac_fname.value  |   | Path to the RBAC flat file used by the Access Management exit sample.  |
+| am.exit.custom.ldap_host.value  |   | LDAP server hostname/IP address that is used by the Access Management exit sample.  |
+| am.exit.custom.ldap_port.value  |   | LDAP server port that is used by the Access Management exit sample.  |
+
 
 > **Note:**
 >

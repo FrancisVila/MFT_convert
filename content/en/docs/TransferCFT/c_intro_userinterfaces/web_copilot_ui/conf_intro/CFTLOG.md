@@ -16,89 +16,25 @@ topics
 -   Object concepts
     Log parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/afname">AFNAME</a> </p>         </td>
-         <td><p>Name
-of the alternate log file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/content">CONTENT</a></p>         </td>
-         <td><p>The messages written in the active LOG file are filtered.
-The possible values are:</p>
-<ul>
-<li>FULL: all the messages
-are printed out</li>
-<li>BRIEF: the following
-messages no longer appear in the LOG</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/exec">EXEC</a></p>         </td>
-         <td><p>Name of the procedure to be executed when switching to
-the other log file. By default this is rotate.cmd/bat.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/fname">FNAME</a></p>         </td>
-         <td><p>Name of the log file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/id">ID</a></p>         </td>
-         <td><p>Identifier of the CFTLOG command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/length">LENGTH</a></p>         </td>
-         <td><p>Size of log file records.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/maxrec">MAXREC</a></p>         </td>
-         <td><p>Number of records written in the log file, from which automatic
-switching will be performed.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/mode">MODE</a></p>         </td>
-         <td><p>Action to do in the parameter or partner base. This parameter
-applies to all commands that affect Transfer CFT bases.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/notify">NOTIFY</a></p>         </td>
-         <td><p>Defines the destination
-of the operator messages selected according to the value of the OPERMSG
-parameter</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a></p>         </td>
-         <td><p>Defines the transfer information message categories intended
-for the operator (all the messages also being written in the log file).</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/switch">SWITCH</a></p>         </td>
-         <td><p>Time at which the Transfer CFT performs an automatic
-switch. When this parameter is not defined, log files are switched daily
-at midnight.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+|  <a href="../../../command_summary/parameter_intro/afname">AFNAME</a>  |  Name of the alternate log file.  |
+|  <a href="../../../command_summary/parameter_intro/content">CONTENT</a>  |  The messages written in the active LOG file are filtered. The possible values are:<br/> • FULL: all the messages are printed out<br/> • BRIEF: the following messages no longer appear in the LOG</li>  |
+|  <a href="../../../command_summary/parameter_intro/exec">EXEC</a>  |  Name of the procedure to be executed when switching to the other log file. By default this is rotate.cmd/bat.  |
+|  <a href="../../../command_summary/parameter_intro/fname">FNAME</a>  |  Name of the log file.  |
+|  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Identifier of the CFTLOG command.  |
+|  <a href="../../../command_summary/parameter_intro/length">LENGTH</a>  |  Size of log file records.  |
+|  <a href="../../../command_summary/parameter_intro/maxrec">MAXREC</a>  |  Number of records written in the log file, from which automatic switching will be performed.  |
+|  <a href="../../../command_summary/parameter_intro/mode">MODE</a>  |  Action to do in the parameter or partner base. This parameter applies to all commands that affect Transfer CFT bases.  |
+|  <a href="../../../command_summary/parameter_intro/notify">NOTIFY</a>  |  Defines the destination of the operator messages selected according to the value of the OPERMSG parameter  |
+|  <a href="../../../command_summary/parameter_intro/opermsg">OPERMSG</a>  |  Defines the transfer information message categories intended for the operator (all the messages also being written in the log file).  |
+|  <a href="../../../command_summary/parameter_intro/switch">SWITCH</a>  |  Time at which the Transfer CFT performs an automatic switch. When this parameter is not defined, log files are switched daily at midnight.  |
+
 
 **Example**
 
 This command defines the log file names:
-
-
-
-    CFTLOG    ID = IDLOG,
-              FNAME = filename1,
-              AFNAME = filename2,
-              SWITCH = 2030,
-              EXEC = procfname,
-              OPERMSG = 240
 
 Automatic switching is scheduled for 20:30. The procedure initiated
 at the time of switching is located in the file named by the EXEC parameter.

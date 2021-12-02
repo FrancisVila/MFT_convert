@@ -30,32 +30,6 @@ Certificate management can be centralized using Axway PassPort. The certificates
 
 **Modifiable parameters**
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Variables</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>pkitype</p>         </td>
-         <td><p>Values: {passport , cft, system}</p>
-<p>[passport]: to manage certificates using PassPort</p>
-<p>[cft]:   to use the Transfer CFT PKI file (default value)</p>
-<p>[system]: PKI 'system' used</p>         </td>
-      </tr>
-      <tr>
-         <td><p>pasaddr</p>         </td>
-         <td><p>PassPort Server address</p>         </td>
-      </tr>
-      <tr>
-         <td><p>pasport</p>         </td>
-         <td><p>PassPort Server port</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="_Toc236186612"></span>
 
 ## Use a SAF based PKI 
@@ -105,28 +79,11 @@ SAF certificate management is based on:
 
 Both the RING and OWNER are passed to the system from the PARM field or ROOTCID/USERCID fields of the CFTSSL definitions. Code CFTSSL using one of the two following methods:
 
-
-
-    CFTSSL         ID= …,
-    ROOTCID = 'certificate authority_1’,
-    USERCID = 'Local user certificate’,
-    PARM=’RING=ring_name,OWNER=userid’
-
 or
-
-
-
-    CFTSSL ID= ...,
-    ROOTCID    = '(certificate authority_1@userid_1@ring_name_1 ,
-    certificate authority_2@userid_2@ring_name_2)',
-    USERCID    = 'Local user certificate@userid@ring_name',
 
 By default the delimiter between the id, the owner, and the ring name is '@' (x’7C’), but you can define a different delimiter using the PARM field of CFTSSL card.
 
 **Example**
-
-
-    PARM='DLM=$'
 
 **Variables description**
 

@@ -6,113 +6,57 @@
 
 {{< TransferCFT/componentlongname  >}} Guardian specific values
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Notation</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Object</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>char_file</p>         </td>
-         <td><p>Prefix for logical names</p>         </td>
-         <td><p>=</p>         </td>
-      </tr>
-      <tr>
-         <td><p>char_mask</p>         </td>
-         <td><p>Wildcard character</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>char_symb</p>         </td>
-         <td><p>Prefix for symbolic variables</p>         </td>
-         <td><p>^</p>         </td>
-      </tr>
-      <tr>
-         <td><p>file_symb</p>         </td>
-         <td><p>Prefix for a file name passed to CFTUTIL as a parameter</p>         </td>
-         <td><p>@</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Notation  |  Object  |  Value  |
+| --- | --- | --- |
+|  char_file  |  Prefix for logical names  |  =  |
+|  char_mask  |  Wildcard character  |  ?  |
+|  char_symb  |  Prefix for symbolic variables  |  ^  |
+|  file_symb  |  Prefix for a file name passed to CFTUTIL as a parameter  |  @  |
+
 
 File properties automatically retrieved for send operations
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Notation</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Object</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>FSPACE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FLRECL</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FBLKSIZE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FRECFM</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FTYPE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Notation  |  Object  |
+| --- | --- |
+|  FSPACE  |  YES  |
+|  FLRECL  |  YES  |
+|  FBLKSIZE  |  YES  |
+|  FRECFM  |  YES  |
+|  FTYPE  |  YES  |
+
 
 FTYPE values and associated implicit FCODE default values for send operations
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>FCODE</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>' '</p>         </td>
-         <td><p>BINARY</p>         </td>
-      </tr>
-      <tr>
-         <td><p>E</p>         </td>
-         <td><p>ASCII</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  FTYPE  |  FCODE  |
+| --- | --- |
+|  ' '  |  BINARY  |
+|  E  |  ASCII  |
+
 
 FTYPE, FRECFM, and FORG combinations for send operations
 
 <table>
    <thead>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
+<th rowspan="2" > 
 <p>Guardian<br />
 type</p>         </th>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
+<th rowspan="2" > 
 <p>Guardian<br />
 code</p>         </th>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> 
+<th rowspan="2" > 
 <p>File type</p>         </th>
-<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Implicit value for...         </th>
+<th colspan="3" >Implicit value for...         </th>
       </tr>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE<br />
+<th ><p>FTYPE<br />
 </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM<br />
+<th ><p>FRECFM<br />
 </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">FORG         </th>
+<th >FORG         </th>
       </tr>
    </thead>
    <tbody>
@@ -177,84 +121,18 @@ code</p>         </th>
 
 FTYPE, FRECFM, and FORG values for receive operations
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FTYPE</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FRECFM</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FORG         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Type</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Guardian Type</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Guardian Code</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>U</p>         </td>
-         <td>          </td>
-         <td><p>Binary stream</p>         </td>
-         <td><p>U</p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-      <tr>
-         <td><p>E</p>         </td>
-         <td><p> </p>         </td>
-         <td>          </td>
-         <td><p>Edit file</p>         </td>
-         <td><p>U</p>         </td>
-         <td><p>101</p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>F</p>         </td>
-         <td>SEQ         </td>
-         <td><p>Fixed sequential</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>V</p>         </td>
-         <td>          </td>
-         <td><p>Sequential, variable emulation</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>1</p>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>F         </td>
-         <td>DIR[2]         </td>
-         <td>Direct fixed         </td>
-         <td>R         </td>
-         <td>0         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>V         </td>
-         <td>DIR [2]         </td>
-         <td>Direct fixed, variable emulation         </td>
-         <td>R         </td>
-         <td>1         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>F         </td>
-         <td>IDX [2]         </td>
-         <td>Fixed indexed sequential         </td>
-         <td>K         </td>
-         <td>0         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>V         </td>
-         <td>IDX [2]         </td>
-         <td>Indexed sequential, variable emulation         </td>
-         <td>K         </td>
-         <td>1         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  FTYPE  |  FRECFM  | FORG  |  File Type  |  Guardian Type  |  Guardian Code  |
+| --- | --- | --- | --- | --- | --- |
+|   |  U  |   |  Binary stream  |  U  |  0  |
+|  E  |   |   |  Edit file  |  U  |  101  |
+|   |  F  | SEQ  |  Fixed sequential  |  E  |  0  |
+|   |  V  |   |  Sequential, variable emulation  |  E  |  1  |
+|   | F  | DIR[2]  | Direct fixed  | R  | 0  |
+|   | V  | DIR [2]  | Direct fixed, variable emulation  | R  | 1  |
+|   | F  | IDX [2]  | Fixed indexed sequential  | K  | 0  |
+|   | V  | IDX [2]  | Indexed sequential, variable emulation  | K  | 1  |
+
 
 > **Note:**
 >

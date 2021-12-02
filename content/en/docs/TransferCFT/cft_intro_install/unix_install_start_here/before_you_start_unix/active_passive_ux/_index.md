@@ -34,37 +34,13 @@ Download and unzip the {{< TransferCFT/transfercftname  >}} install package, as 
 
 Create as many copies of the initialize.properties file as you have hosts in the installation. Customize the *n* initialize.properties file with the following parameters.
 
-<table>
-   <tbody>
-      <tr>
-         <td>CFT_Full_Hostname         </td>
-         <td><p>Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.</p>
-<p>When you re installing a cluster, there are two ways to define this parameter:</p>
-<ul>
-<li><p>If you do not set this in the silent file, the installation determines it (if the machine is correctly configured)</p></li>
-<li>Set the FQDN for each machine in the cluster, that is, for each host installation</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>Runtimedir         </td>
-         <td>The runtime directory must be in a shared directory.         </td>
-      </tr>
-      <tr>
-         <td>LoadBalancer_Host         </td>
-         <td><p>Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>The load
-balancer is used to connect to the Transfer CFT Copilot server.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>LoadBalancer_Port         </td>
-         <td>Specify the load balancer port, which is redirected to the
-Central Governance dedicated port of the Transfer CFT UI Server.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| CFT_Full_Hostname  |  Host Address of the local server: FQDN (Fully Qualified Domain Name) or IP Address.<br/>When you re installing a cluster, there are two ways to define this parameter:<br/> • If you do not set this in the silent file, the installation determines it (if the machine is correctly configured) <br/> • Set the FQDN for each machine in the cluster, that is, for each host installation</li>  |
+| --- | --- |
+| Runtimedir  | The runtime directory must be in a shared directory.  |
+| LoadBalancer_Host  |  Specify the host address of the load balancer, which is the cluster's public IP address in an active/passive deployment. <blockquote> **Note:**<br/>The load balancer is used to connect to the Transfer CFT Copilot server. </blockquote>  |
+| LoadBalancer_Port  | Specify the load balancer port, which is redirected to the Central Governance dedicated port of the Transfer CFT UI Server.  |
+
 
 ## Install
 

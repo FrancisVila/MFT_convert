@@ -16,54 +16,6 @@ Three read commands are available and described in this section:
 
 The BEGSELCA command defines the selection criteria for transfers. The FTEMOIN field sets the name of a file to be used as a control to compare the transferred file with the control file. The compared file is opened with the same file attributes as those found in the catalog.
 
-
-
-    BEGSELCA IDA = STR,
-    DIRECT = STR,
-    IDF = STR,
-    PART = STR,
-    STATE = STR,
-    IDF = STR,
-    NIDF = STR,
-    MSG = STR,
-    SUSER = STR,
-    RUSER = STR,
-    SAPPL = STR,
-    SPART = STR,
-    RAPPL = STR,
-    RPART
-    PARM = STR,
-    STATED = STR,
-    FRECFM = STR,
-    NRECFM = STR,
-    FNAME = STR,
-    NFNAME = STR,
-    DIAGI = STR,
-    DIAGP = STR,
-    FLRECL = STR,
-    NLRECL = STR,
-    FBLKSIZE = STR,
-    NBLKSIZE = STR,
-    USERID = STR,
-    JOBNAME = STR,
-    PROT = STR
-    PRI = STR,
-    NCOMP = STR,
-    FSPACE = STR,
-    NSPACE = STR,
-    NCODE = STR,
-    FCODE = STR,
-    FREC = STR,
-    NREC = STR,
-    FCAR = STR,
-    NCAR = STR,
-    ECAR = STR,
-    FTIME = STR,
-    FDATE = STR,
-    FRECFM = STR
-    NRECFM = STR
-    FTEMOIN = STR
-
 #### Parameters
 
 -   IDA: Character string specifying the selection criteria IDA field.
@@ -130,49 +82,11 @@ The ENDSELCA function finishes the selection reading. This command is imperative
 
 #### Example
 
-
-
-    LONG NAME = VAR, INIT = 0
-    LONG NAME = CMP, INIT = 0
-    CHAR NAME = STRNIL , SIZE = 10, INIT = NIL
-    CHAR NAME = PART , SIZE = 10
-    /* set the variable _ECHO to 0 to exclude messages related to  WHILE and IF */
-    /* to customize the display. */
-    _MOV NAME=_ECHO,VALUE=0
-    BEGSELCA DIRECT=SEND,DIAGI=406
-    PRINT MSG='Partner DTSA File Transfer Diags Appli. '
-    PRINT MSG=' Id. Id. CFT Protocol Id. '
-    PRINT MSG='-------- ---- -------- -------- --- -------- --------'
-    WHILE NAME = VAR, VALUE = 0, TYPE = EQU
-    GETCAT
-    Deleted: 1.3.
-    Deleted: 1.3.1.
-    Deleted: 1.3.
-    Deleted: 1.3.1.
-    Deleted:
-    13
-    _STRCPY NAME=PART, STR=%_CAT_PART%
-    _STRCMP NAME=PART, STR=STRNIL ,RC=CMP
-    IF NAME=CMP, VALUE=0, TYPE=EQU
-    BRKWHILE
-    ENDIF
-    PRINT MSG='%[-8.8]_CAT_PART% %_CAT_DIRECT%%_CAT_TYP%%_CAT_STATE% %[-
-    8.8]_CAT_IDF% %_CAT_IDT% %_CAT_DIAGI% %_CAT_DIAGP% %_CAT_IDA%'
-    ENDWHILE
-    ENDSELCA
-    EXIT
-
 ### MQUERY
 
 #### Syntax
 
 The MQUERY command displays the current log content, the catalog and cache for the Transfer CFT.
-
-
-
-    MQUERY OBJECT = STR,
-           CONTENT = STR,
-           NAME = STR,
 
 #### Parameters
 
@@ -185,26 +99,3 @@ The MQUERY command displays the current log content, the catalog and cache for 
     -   COMMAND: Lists  the command cache.
 
 #### Example
-
-
-
-    MQUERY NAME=CAT,CONTENT=FULL
-    CFTI24I  =========================== TRANSFERS ==================================
-    CFTI24I  pri    minTime    minDate    reqTime    reqDate    cat_blk part
-    CFTI24I  ======================================================================
-    CFTI24I  Transfers_Non_Ready    : 3
-    CFTI24I  128   11:52:27      TODAY   11:50:27      TODAY 180 LOOP
-    CFTI24I  128   12:15:50      TODAY   11:50:50      TODAY 182 LOOP
-    CFTI24I  128   12:40:41      TODAY   11:50:41      TODAY 181 LOOP
-    CFTI24I  Transfers_Ready        : 0 ( 0 Partners )
-    CFTI24I  Transfers_Time__Locked : 0 ( 0 Partners )
-    CFTI24I  Transfers_State_Locked : 0 ( 0 Partners )
-    CFTI24I  ======================== PARTNERS =====================================
-    CFTI24I  name     count state locked diag    diagp    minTime    minDate
-    CFTI24I  ======================================================================
-    CFTI24I  Partners               : 1
-    CFTI24I  LOOP         3  NRDY      0    0
-    CFTI24I  Partners_Ready         : 0
-    CFTI24I  Partners_Time__Locked  : 0
-    CFTI24I  Partners_State_Locked  : 0
-    MQUERY  Treated for USER userid

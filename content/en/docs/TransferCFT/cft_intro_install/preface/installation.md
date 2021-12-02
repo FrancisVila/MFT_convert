@@ -14,26 +14,11 @@ Upload the Transfer CFT package corresponding to the target platform to your mac
 
 **Example**
 
-
-
-    Transfer_CFT_3.8_Install_hp_nonstop_oss-ia64-32_BN8580000.zip
-
 Decompress the archive using the `unzip `command.
 
 **Example**
 
 Depending on your installation, the screen message may differ slightly from the following example.
-
-
-
-     /home/cftuser: unzip Transfer_CFT_3.8_Install_hp_nonstop_oss-ia64-32_BN8
-    580000.zip
-    Archive:  Transfer_CFT_3.8_Install_hp_nonstop_oss-ia64-33_BN8580000.zip
-       creating: Transfer_CFT_OtherUnixes_V3.8/
-      inflating: Transfer_CFT_OtherUnixes_V3.8/TransferCFT_3.8_hp_nonstop_oss-ia
-    64-32.run 
-     inflating: EULA.txt
-     inflating: EULA.html
 
 In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixes_V3.8` directory.
 
@@ -46,10 +31,6 @@ In the example, Transfer CFT package is unzipped in the `Transfer_CFT_OtherUnixe
 Add execution rights to the `Transfer_CFT_<version>_<os>-<arch>-<xx>.run` package.
 
 Enter:
-
-
-
-    chmod u+x Transfer_CFT_<version>_<os>-<arch>-<xx>.run
 
 ## Start the installation
 
@@ -65,25 +46,13 @@ You can use the following additional parameters:
 
 Enter:
 
-
-    ./Transfer_CFT_<version>_<os> <xx>.run install <installation_directory> [<guardian_installation_directory_prefix>] [--post_install_script <fullpathtopinstscript>] [--cryptokey_password <password>]
-
 **Examples**
 
 The following command installs Transfer CFT on the OSS directory /`home/cftuser/CFT38`. Additionally, the Guardian components are installed using `/G/data14/cft38b` (which is an equivalent of `$DATA14.CFT38B`) as a prefix.
 
-
-    /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-32.run install /home/cftuser/CFT38 /G/data14/cft38b
-
 The following command installs Transfer CFT on the OSS directory` `. Additionally, a post installation script `cft_postinst.sh` is run at the end of the installation process.
 
-
-    /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-ia 64-33.run install /home/cftuser/CFT38 --post_install_script ./cft_postinst.sh
-
 The following command does the same as above, but additionally sets a password that is used to generate an encryption key so that you do not need to enter it interactively.
-
-
-    /home/cftuser/Transfer_CFT_OtherUnixes_V3.8: ./ TransferCFT_3.8_hp_nonstop_oss-x86-32.run install /home/cftuser/CFT38 --post_install_script ./cft_postinst.sh --cryptokey_password mypAsswOrd76*
 
 ### Installation procedure results
 
@@ -105,47 +74,17 @@ If you opted to install the Guardian files, several files are created in the Gua
 
 For example, `/G/data14/cft38b` creates files where the volume name is $DATA14, the subvolume names begin with cft38b, and that ends with the values described in the following table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Subvolume         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;subvolume&gt;IE         </td>
-         <td><p>Contains the Transfer CFT samples.</p>
-<p>Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified.</p>         </td>
-      </tr>
-      <tr>
-         <td>&lt;subvolume&gt;IF         </td>
-         <td><p>Contains the EMS dictionary and DDL template files.</p>
-<p>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.</p>         </td>
-      </tr>
-      <tr>
-         <td>&lt;subvolume&gt;IX         </td>
-         <td><p>Transfer CFT executables and procedures.</p>         </td>
-      </tr>
-      <tr>
-         <td>&lt;subvolume&gt;IP         </td>
-         <td>Program samples.         </td>
-      </tr>
-      <tr>
-         <td>&lt;subvolume&gt;IH         </td>
-         <td>Headers.         </td>
-      </tr>
-      <tr>
-         <td><span id="subvolumeUD"></span>&lt;subvolume&gt;UD         </td>
-         <td><p>Default Transfer CFT subvolume.</p>
-<p>This is used when Transfer CFT needs to create a Guardian file.</p>         </td>
-      </tr>
-      <tr>
-         <td>&lt;subvolume&gt;UP         </td>
-         <td>Contains the procedures copied from the installation samples.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Subvolume  | Description  |
+| --- | --- |
+| &lt;subvolume&gt;IE  |  Contains the Transfer CFT samples.<br/>Some of these samples are copied in the user configuration volume &lt;subvolume&gt;UP, where they can be modified.  |
+| &lt;subvolume&gt;IF  |  Contains the EMS dictionary and DDL template files.<br/>CFTPLATE contains the Transfer CFT templates to be concatenated with the system template for an EMS collector. See the XCFTDDL section in <a href="">Event messages</a>, which describes the DDL template.  |
+| &lt;subvolume&gt;IX  |  Transfer CFT executables and procedures.  |
+| &lt;subvolume&gt;IP  | Program samples.  |
+| &lt;subvolume&gt;IH  | Headers.  |
+| <span id="subvolumeUD"></span>&lt;subvolume&gt;UD  |  Default Transfer CFT subvolume.<br/>This is used when Transfer CFT needs to create a Guardian file.  |
+| &lt;subvolume&gt;UP  | Contains the procedures copied from the installation samples.  |
+
 
 ## Enter the Transfer CFT license key
 
@@ -158,10 +97,6 @@ After the installation completes, enter the Transfer CFT license key in the `<in
 If you ran the installation procedure without providing the parameter `<guardian_installation_`directory\_prefix>, the Guardian specific files were not installed. However, you can install these files later by calling the Guardian installation script.
 
 1.  Load the Transfer CFT profile:
-
 2.  Install the Guardian files:
-
 3.  
-        cftginst.sh --help
-
 4.  Since installing the Guardian files modifies the Transfer CFT profile, you must reload the profile:

@@ -29,48 +29,18 @@ on the operating system.
 
 ### Defining the CFTEXIT object
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> </p>
-<p>(Mandatory)</p>         </td>
-         <td><p>Command identifier (32 +1). The value of this identifier
-corresponds to the identifier defined in the EXITBOT parameter of the
-related CFTPARM object.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a></p>         </td>
-         <td><p>Language in which the user program is written. Possible values are COBOL and C language.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  </p>         </td>
-         <td><p>Name of the executable module associated with the EXIT
-task (512 +1). This module is built from the interface provided with Transfer
-CFT linked to the program written by the user. To facilitate
-identification of the associated module, we recommend naming it CFTEXIB.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> </p>
-<p>(Mandatory)</p>         </td>
-         <td><p>Available options include: FILE | ACCESS | EXEC | BOT</p>
-<p>Use BOT for a beginning-of-transfer exit.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Definition  |
+| --- | --- |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> <br/>(Mandatory)  |  Command identifier (32 +1). The value of this identifier corresponds to the identifier defined in the EXITBOT parameter of the related CFTPARM object.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a>  |  Language in which the user program is written. Possible values are COBOL and C language.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  |  Name of the executable module associated with the EXIT task (512 +1). This module is built from the interface provided with Transfer CFT linked to the program written by the user. To facilitate identification of the associated module, we recommend naming it CFTEXIB.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> <br/>(Mandatory)  |  Available options include: FILE | ACCESS | EXEC | BOT<br/>Use BOT for a beginning-of-transfer exit.  |
+
 
 **Example**
 
 The following example provides a minimum of arguments:
-
-
-
-    CFTEXIT id=my_exitbot, type=bot, language=C, prog=$(CFTDIRRUNTIME)/bin/CFTEXIB
 
 <span id="Defining_the_CFTPARM_object"></span>
 
@@ -79,8 +49,8 @@ The following example provides a minimum of arguments:
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
+<th ><p>Parameter</p>         </th>
+<th ><p>Definition</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -103,7 +73,3 @@ must specify an identifier that points to a CFTEXIT object.</p>         </td>
 **Example**
 
 The following example provides a minimum number of arguments for CFTPARM:
-
-
-
-    cftparm id=IDPARM, exitbot = 'my_exitbot', ...

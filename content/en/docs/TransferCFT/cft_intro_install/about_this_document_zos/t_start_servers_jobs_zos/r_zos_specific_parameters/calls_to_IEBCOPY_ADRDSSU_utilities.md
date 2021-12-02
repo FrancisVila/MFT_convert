@@ -143,37 +143,6 @@ Where:
 
 #### Rules for interpreting DSNGEN
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Model         </th>
-<th class="HeadD-Column1-Header1">Interpretation         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>DSNGEN_</p>         </td>
-         <td><p>DSN</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DSNGEN__</p>         </td>
-         <td><p>DSN*</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DSNGEN._</p>         </td>
-         <td><p>DSN.*</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DSNGEN_._</p>         </td>
-         <td><p>DSN*.*</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DSNGEN_.__</p>         </td>
-         <td><p>DSN*.**</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 **Example of sending 1 file**
 
 `SEND  ..FTYPE=’1’, FNAME=#A.VSAM.FILE_`
@@ -319,28 +288,6 @@ The SGTRACE 12 fine control option enables the recording of detailed traces in t
 Transfer CFT z/OS calls a single external utility at a given time. Memory use is as follows:
 
 **Memory use**
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Utility         </th>
-<th class="HeadE-Column1-Header1">24 bit memory         </th>
-<th class="HeadD-Column1-Header1">31 bit memory         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>IEBCOPY</p>         </td>
-         <td><p>1024K</p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ADRDSSU</p>         </td>
-         <td><p>2048K</p>         </td>
-         <td><p>8192K</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 The CFTPROT RTO=seconds parameter must contain a value expressed in seconds that is large enough to allow the complete operation by the utility on the receiving side.
 

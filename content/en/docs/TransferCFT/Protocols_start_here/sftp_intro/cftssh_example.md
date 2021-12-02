@@ -8,47 +8,15 @@
 
 Put command
 
-
-
-    CFTPART id=app1,nspart=login,nspassw=passw,prot=sftp,...
-    CFTTCP  id=app1,host=host
-    send part=app1, idf=flow01, fname=localfiletosend, nfname=remotefile
-
 The equivalent command for SFTP on Linux:
-
-
-
-    sftp login@host
-    sftp> put localfiletosend remotefile
 
 Get command
 
-
-
-    recv part=app1, idf=flow01, fname=localfiletowrite, nfname=remotefile
-     
-    The equivalent command for SFTP:
-    sftp> get remotefile localfiletowrite
-
 Mput command
-
-
-
-    send part=app1,idf=groupoffiles,fname=(@/#)file*
-     
-    The equivalent command for SFTP:
-    sftp> mput file*
 
 Mget command
 
 The {{< TransferCFT/componentlongname  >}} server mustbe using open mode.
-
-
-
-    recv part=app1,idf=groupoffiles,nfname=(@/#)file*,file=all 
-     
-    The equivalent command for SFTP:
-    sftp> mget file*
 
 ## Transfer CFT client with a Transfer CFT server
 
@@ -56,27 +24,11 @@ This example sends an acknowledgment following a file transfer (`cft_flow` in th
 
 On the Transfer CFT 1
 
-
-
-    CFTPART ID=CFT_2_SFTP,nspart="cft_1_sftp",nspassw=cft_1_sftp,nrpart="cft_2_sftp",nrpassw=cft_2_sftp,sap=<CFT_2_SFTP_PORT>,prot=SFTP
-    CFTTCP ID=CFT_2_SFTP,host=<CFT_2_HOST>
-
 On {{< TransferCFT/componentlongname  >}} 2
-
-
-
-    CFTPART ID=CFT_1_SFTP,nspart="cft_2_sftp",nspassw=cft_2_sftp,nrpart="cft_1_sftp",nrpassw=cft_1_sftp,sap=<CFT_1_SFTP_PORT>,prot=SFTP
-    CFTTCP ID=CFT_1_SFTP,host=<CFT_1_HOST>
 
 Execute the send on Transfer CFT 1
 
-
-    send part=CFT_2_SFTP,idf=cft_flow,fname=localfiletosend,nfname=remotefile
-
 Execute the acknowledgment from Transfer CFT 2
-
-
-    send part=CFT_1_SFTP,idm=cft_ack,type=reply, msg=completed, idt=&idt(of the cft_flow)
 
 ### Transfer CFT requester downloading multiple files
 
@@ -86,15 +38,7 @@ On the Transfer CFT server
 
 If you do not define the workingdir, the default value is the runtime directory.
 
-
-
-    cftsend id=groupoffiles,impl=yes,fname=&nfname
-
 On {{< TransferCFT/componentlongname  >}} requester
-
-
-
-    recv part=app1,idf=groupoffiles,nfname=(@/#)test/file*,file=all
 
 This results in downloading all remote files in the `test `folder with the path relative to the workingdir.
 
@@ -102,49 +46,17 @@ This results in downloading all remote files in the `test `folder with the path 
 
 On the Transfer CFT side
 
-
-
-    CFTPART ID=ST_SFTP,nspart="st_sftp",nspassw=st_sftp,sap=<ST_SFTP_PORT>,prot=SFTP
-    CFTTCP ID=ST_SFTP,host=<ST_HOST>
-
 On the SecureTransport
 
 Server Control: the SSH server is running with **Enable Secure File Transfer Protocol (SFTP)**
 
-
-
-    Port=<ST_SFTP_PORT>
-
 Accounts: the Account Name is `st_sftp Active` with the Login `Name=st_sftp` and `Password=st_sftp`
-
-
-
-    send part=ST_SFTP,idf=st_flow,fname=localfiletosend,nfname=remotefile
 
 ## Transfer CFT server with multiple client keys
 
 In this use case, the clients are using the key authentication method where the key is different for each client. This requires a separate partner definition and dedicated SSH profile for each user.
 
 On the Transfer CFT server side
-
-
-
-    For each user define a CFTPART (in this example there are two users USER1 and USER2) as follows:
-     
-    CFTPART ID=USER1,NRPART=USER1,SSH=USER1_SSH,PROT=SFTP,...
-    CFTSSH ID=USER1_SSH,DIRECT=SERVER,CLIPUBKEY=USER1_PUB, ...
-     
-    CFTPART ID=USER2,NRPART=USER2,SSH=USER2_SSH,PROT=SFTP,...
-    CFTSSH ID=USER2_SSH,DIRECT=SERVER,CLIPUBKEY=USER2_PUB,...
-     
-    CFTPROT ID=SFTP,TYPE=SFTP,SSH=SSH_DEFAULT,SAP=1763,...
-     
-    CFTSSH ID=SSH_DEFAULT,SRVPRIVKEY=CFT_SSH_PRIV,CLIPUBKEY='',... (where '' indicates that the key is not set allowing multiple users)
-     
-    To import the USER1_PUB and USER2_PUB keys, use the PKIUTIL command. For example, import the SSH keys as follows, where 'CFT' is the password value you entered in the CFTPARM object:
-    PKIUTIL PKIKEY ID=USER1_PUB, IKNAME=USER1_PUB.KEY, IKFORM=SSH
-    PKIUTIL PKIKEY ID=USER2_PUB, IKNAME=USER2_PUB.KEY, IKFORM=SSH
-     
 
 For each of the various clients
 

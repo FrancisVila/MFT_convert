@@ -19,12 +19,6 @@ type exit*. Before you submit an exit, you must customize the following
 
 #### Syntax
 
-
-    CFTSEND/CFRECV  
-    ID = identifier,
-    EXIT = identifier,
-    ...
-
 #### Parameters
 
 **ID = *identifier***
@@ -44,19 +38,6 @@ et &PART.
 ### Defining the CFTEXIT object
 
 #### Syntax
-
-
-    CFTEXIT 
-    ID = identifier,
-    TYPE = FILE,
-    [FORMAT = { V23 
-     | V24 }]
-    [LANGUAGE = {COBOL | C},]
-    [MODE = {REPLACE | CREATE | DELETE},]
-    [PARM = string,]
-    [PROG = {CFTEXIT | string},]
-    [RESERV = {8192 | n},]
-    [WAITTASK = {1441 | n}]
 
 Related topics
 

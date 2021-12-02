@@ -93,154 +93,25 @@ The started procedure MUST delete the temporary files, regardless of the environ
 
 The following unified configuration parameters are specific to HP Nonstop.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk</p>         </td>
-         <td>         </td>
-         <td><p>The default working directory for the TACL and NETBATCH scripts.</p>
-<p>The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>”
-(see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian
-files installation.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix</p>         </td>
-         <td><p>LA</p>         </td>
-         <td><p>The first two letters of the Guardian process names.</p>
-<p>Each Transfer CFT process is assigned a name using this prefix and a
-suffix, which depends on the executable name.</p>
-<p>For instance, using the default setting, CFTLOG is run with the
-name $LALOG with the Guardian convention (or /G/LALOG with the OSS
-convention).</p>
-<p>If empty, no Guardian process name is given.</p>
-<p>If you plan to run several instances of Transfer CFT at the same time on
-the same machine, you should assign each instance a unique value.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.processor"></span>cft.guardian.processor</p>         </td>
-         <td><p>-1</p>         </td>
-         <td><p>Processor on which Transfer CFT is started.</p>
-<ul>
-<li> 
--1 indicates that Transfer CFT is started on the processor
-from which the start-up command is executed</li>
-<li>Processor number</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor</p>         </td>
-         <td><p>-1</p>         </td>
-         <td><p>Backup processor on which Transfer CFT is started.</p>
-<ul>
-<li>-1 indicates that no processor number is assigned</li>
-<li>Backup processor number</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.priority"></span>cft.guardian.priority</p>         </td>
-         <td><p>-1</p>         </td>
-         <td><p>Guardian execution priority of the CFT processes.</p>
-<ul>
-<li>-1 means that CFT is started with the
-execution priority of the parent process.</li>
-<li>Process priority</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.hometerm"></span>cft.guardian.hometerm</p>         </td>
-         <td>         </td>
-         <td><p>The Guardian home terminal for Transfer CFT processes.</p>
-<ul>
-<li>An empty value means that CFT is started with
-the OSS shell’s home terminal</li>
-<li>The value should be either set using the
-Guardian form ($ZTNT.#PTY4, $TTY), or the OSS form
-(/G/ZTNT/#PTY, /G/TTY)</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tcpip_resolver_name</p>         </td>
-         <td>         </td>
-         <td><p>The TCPIP resolver name for Transfer CFT processes. Equivalent to the Guardian
-DEFINE TCPIP^RESOLVER^NAME.</p>
-If set, the value should be a Unix pathname pointing to an existing resolver file.         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tacl.processor</p>         </td>
-         <td><p>-1</p>         </td>
-         <td><p>Processor on which TACL is started.</p>
-<ul>
-<li>-1 means that TACL is started on same
-processor where Transfer CFT is running</li>
-<li>Processor number</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tacl.backup_processor</p>         </td>
-         <td><p>-1</p>         </td>
-         <td><p>Backup processor on which TACL is started. Valid only if
-different from -1 and from the cft.guardian.tacl.value.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tacl.priority</p>         </td>
-         <td><p>90</p>         </td>
-         <td><p>Priority of a started TACL.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tacl.output</p>         </td>
-         <td><p>'$S.#ABTT'</p>         </td>
-         <td><p>Output destination of the started TACL.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.tacl.home_terminal</p>         </td>
-         <td><p>'$ZHOME'</p>         </td>
-         <td><p>TACL home terminal.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.netbatch.process</p>         </td>
-         <td><p>'$ZBAT'</p>         </td>
-         <td><p>NetBatch process with which you send a request.</p>
-<p>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.netbatch.jobname_prefix</p>         </td>
-         <td><p>'ZBBT'</p>         </td>
-         <td><p>A jobname prefix used to build a jobname having 8 characters, and
-comprised of:</p>
-<ul>
-<li>This prefix</li>
-<li>A suffix that is composed of the last
-characters of the temporary file name</li>
-</ul>
-<p>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="cft.guardian.netbatch.attachment_set"></span>cft.guardian.netbatch.attachment_set</p>         </td>
-         <td><p>'NBASCFTLI'</p>         </td>
-         <td><p>NetBatch attachment-set name.</p>
-<p>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.netbatch.priority</p>         </td>
-         <td><p>90</p>         </td>
-         <td><p>Priority of TACL run started.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.netbatch.selpri</p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>JOB selection priority.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.guardian.netbatch.output</p>         </td>
-         <td><p>'$S.#ABTZ'</p>         </td>
-         <td><p>Output destination of the started TACL.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Default  |  Description  |
+| --- | --- | --- |
+|  <span id="cft.guardian.cftwrk"></span>cft.guardian.cftwrk  |   |  The default working directory for the TACL and NETBATCH scripts.<br/>The parameter is set with the default value of “<code>&lt;</code><code>subvolume</code><code>&gt;UD</code>” (see <a href="#Guardian" class="MCXref xref">Guardian files</a>) during the Guardian files installation.  |
+|  <span id="cft.guardian.process_name_prefix"></span>cft.guardian.process_name_prefix  |  LA  |  The first two letters of the Guardian process names.<br/>Each Transfer CFT process is assigned a name using this prefix and a suffix, which depends on the executable name.<br/>For instance, using the default setting, CFTLOG is run with the name $LALOG with the Guardian convention (or /G/LALOG with the OSS convention).<br/>If empty, no Guardian process name is given.<br/>If you plan to run several instances of Transfer CFT at the same time on the same machine, you should assign each instance a unique value.  |
+|  <span id="cft.guardian.processor"></span>cft.guardian.processor  |  -1  |  Processor on which Transfer CFT is started.<br/> • -1 indicates that Transfer CFT is started on the processor from which the start-up command is executed<br/> • Processor number</li>  |
+|  <span id="cft.guardian.backup_processor"></span>cft.guardian.backup_processor  |  -1  |  Backup processor on which Transfer CFT is started.<br/> • -1 indicates that no processor number is assigned<br/> • Backup processor number</li>  |
+|  <span id="cft.guardian.priority"></span>cft.guardian.priority  |  -1  |  Guardian execution priority of the CFT processes.<br/> • -1 means that CFT is started with the execution priority of the parent process.<br/> • Process priority</li>  |
+|  <span id="cft.guardian.hometerm"></span>cft.guardian.hometerm  |   |  The Guardian home terminal for Transfer CFT processes.<br/> • An empty value means that CFT is started with the OSS shell’s home terminal<br/> • The value should be either set using the Guardian form ($ZTNT.#PTY4, $TTY), or the OSS form (/G/ZTNT/#PTY, /G/TTY)</li>  |
+|  cft.guardian.tcpip_resolver_name  |   |  The TCPIP resolver name for Transfer CFT processes. Equivalent to the Guardian DEFINE TCPIP^RESOLVER^NAME. If set, the value should be a Unix pathname pointing to an existing resolver file.  |
+|  cft.guardian.tacl.processor  |  -1  |  Processor on which TACL is started.<br/> • -1 means that TACL is started on same processor where Transfer CFT is running<br/> • Processor number</li>  |
+|  cft.guardian.tacl.backup_processor  |  -1  |  Backup processor on which TACL is started. Valid only if different from -1 and from the cft.guardian.tacl.value.  |
+|  cft.guardian.tacl.priority  |  90  |  Priority of a started TACL.  |
+|  cft.guardian.tacl.output  |  '$S.#ABTT'  |  Output destination of the started TACL.  |
+|  cft.guardian.tacl.home_terminal  |  '$ZHOME'  |  TACL home terminal.  |
+|  cft.guardian.netbatch.process  |  '$ZBAT'  |  NetBatch process with which you send a request.<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
+|  cft.guardian.netbatch.jobname_prefix  |  'ZBBT'  |  A jobname prefix used to build a jobname having 8 characters, and comprised of:<br/> • This prefix<br/> • A suffix that is composed of the last characters of the temporary file name<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
+|  <span id="cft.guardian.netbatch.attachment_set"></span>cft.guardian.netbatch.attachment_set  |  'NBASCFTLI'  |  NetBatch attachment-set name.<br/>You can override this value in the <a href="#CFT%5EBT%5EFORCE%5EZBAT">first line of a TACL procedure</a>.  |
+|  cft.guardian.netbatch.priority  |  90  |  Priority of TACL run started.  |
+|  cft.guardian.netbatch.selpri  |  4  |  JOB selection priority.  |
+|  cft.guardian.netbatch.output  |  '$S.#ABTZ'  |  Output destination of the started TACL.  |
+

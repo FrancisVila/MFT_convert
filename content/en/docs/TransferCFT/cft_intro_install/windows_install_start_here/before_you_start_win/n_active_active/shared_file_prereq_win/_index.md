@@ -15,36 +15,15 @@ The following table lists the file systems that are supported and tested with Tr
 
 <span id="Supported_fs_win"></span>Supported file systems
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File system         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>AIX         </td>
-         <td>GPFS, NFSv3, NFSv4*         </td>
-      </tr>
-      <tr>
-         <td>HP-UX         </td>
-         <td>NFSv3, NFSv4*         </td>
-      </tr>
-      <tr>
-         <td>Linux-x86         </td>
-         <td><p>GFS2, GPFS, GlusterFS, NFSv3, NFSv4*</p>         </td>
-      </tr>
-      <tr>
-         <td>Solaris         </td>
-         <td>NFSv4*         </td>
-      </tr>
-      <tr>
-         <td>Windows-x86         </td>
-         <td>GPFS, SMB         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Operating system  | File system  |
+| --- | --- |
+| AIX  | GPFS, NFSv3, NFSv4*  |
+| HP-UX  | NFSv3, NFSv4*  |
+| Linux-x86  |  GFS2, GPFS, GlusterFS, NFSv3, NFSv4*  |
+| Solaris  | NFSv4*  |
+| Windows-x86  | GPFS, SMB  |
+
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
 
@@ -60,47 +39,16 @@ You can use any POSIX compliant shared file system for both Transfer CFT data fi
 
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unsupported         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>AIX         </td>
-         <td>GPFS, NFSv4*         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>HP-UX         </td>
-         <td>NFSv4*         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Linux-x86         </td>
-         <td>GPFS, GFS2, NFSv4*, AWS EFS         </td>
-         <td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Solaris         </td>
-         <td>NFSv4*         </td>
-         <td>NFSv3, CXFS, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Windows-x86         </td>
-         <td>SMB/CIFS, GPFS         </td>
-         <td>CXFS, NFS         </td>
-      </tr>
-      <tr>
-         <td>z/OS         </td>
-         <td>Sharing DASD across Sysplex         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+| Operating system  | Supported  | Unsupported  |
+| --- | --- | --- |
+| AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
+| HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
+| Linux-x86  | GPFS, GFS2, NFSv4*, AWS EFS  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
+| z/OS  | Sharing DASD across Sysplex  |   |
+
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
 

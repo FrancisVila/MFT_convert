@@ -23,45 +23,19 @@ Beyond the prerequisites listed above, the installation instructions for each co
 
 Depending on which method you plan to use, follow the corresponding link to the appropriate installation instructions.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Element</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Instructions</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Docker Engine         </td>
-         <td><a href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</a>         </td>
-      </tr>
-      <tr>
-         <td>Docker-Compose         </td>
-         <td><a href="https://docs.docker.com/compose/install/">https://</a><a href="https://docs.docker.com/compose/install/">docs.docker.com/</a><a href="https://docs.docker.com/compose/install/">compose/install/</a>         </td>
-      </tr>
-      <tr>
-         <td>Kubernetes         </td>
-         <td><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">https://kubernetes.io/docs/tasks/tools/install-kubectl/</a>         </td>
-      </tr>
-      <tr>
-         <td>Helm         </td>
-         <td><a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a>         </td>
-      </tr>
-      <tr>
-         <td>Git         </td>
-         <td><p><a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a></p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Element  |  Instructions  |
+| --- | --- |
+| Docker Engine  | <a href="https://docs.docker.com/engine/install/">https://docs.docker.com/engine/install/</a>  |
+| Docker-Compose  | <a href="https://docs.docker.com/compose/install/">https://</a><a href="https://docs.docker.com/compose/install/">docs.docker.com/</a><a href="https://docs.docker.com/compose/install/">compose/install/</a>  |
+| Kubernetes  | <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">https://kubernetes.io/docs/tasks/tools/install-kubectl/</a>  |
+| Helm  | <a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a>  |
+| Git  |  <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">https://git-scm.com/book/en/v2/Getting-Started-Installing-Git</a>  |
+
 
 ## Download the Transfer CFT repository
 
 Begin by downloading or cloning the Transfer CFT repository. To download, navigate to <https://github.com/Axway/docker-cft> and click **Code** &gt; **Download Zip**. Alternatively, to clone using Git:<span id="gitcontainertest"></span>
-
-
-
-    git clone https://github.com/Axway/docker-cft.git
-    cd docker-cft
 
 The repository contains several README.md files that correspond to each sub-module, and a CHANGELOG.md file that describes all changes to the current version.
 

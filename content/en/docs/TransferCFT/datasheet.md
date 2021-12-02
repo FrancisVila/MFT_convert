@@ -60,47 +60,16 @@
 
 ## File systems for multi-node
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Operating system         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Unsupported         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>AIX         </td>
-         <td>GPFS, NFSv4*         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>HP-UX         </td>
-         <td>NFSv4*         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Linux-x86         </td>
-         <td>GPFS, NFSv4*         </td>
-         <td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Solaris         </td>
-         <td>NFSv4*         </td>
-         <td>NFSv3, CXFS, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Windows-x86         </td>
-         <td>SMB/CIFS, GPFS         </td>
-         <td>CXFS, NFS         </td>
-      </tr>
-      <tr>
-         <td>z/OS         </td>
-         <td>Sharing DASD across Sysplex         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+| Operating system  | Supported  | Unsupported  |
+| --- | --- | --- |
+| AIX  | GPFS, NFSv4*  | NFSv3, CXFS, VeritasSF  |
+| HP-UX  | NFSv4*  | NFSv3, CXFS, VeritasSF  |
+| Linux-x86  | GPFS, NFSv4*  | NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF  |
+| Solaris  | NFSv4*  | NFSv3, CXFS, QFS, VeritasSF  |
+| Windows-x86  | SMB/CIFS, GPFS  | CXFS, NFS  |
+| z/OS  | Sharing DASD across Sysplex  |   |
+
 
 \*References to NFSv4 imply any version of NFSv4. All NFSv4 minor versions are supported, for example version 4.2.
 
@@ -119,70 +88,21 @@ If you are implementing either {{< TransferCFT/trustedfilename  >}} or {{< Trans
 
 The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Component         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Port</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>PeSIT         </td>
-         <td>1761         </td>
-      </tr>
-      <tr>
-         <td>SSL         </td>
-         <td>1762         </td>
-      </tr>
-      <tr>
-         <td>SFTP         </td>
-         <td>1763         </td>
-      </tr>
-      <tr>
-         <td>COMS         </td>
-         <td>1765         </td>
-      </tr>
-      <tr>
-         <td>Copilot         </td>
-         <td>1766         </td>
-      </tr>
-      <tr>
-         <td>Transfer CFT UI (Copilot) server for {{< TransferCFT/centralgovernancename  >}}         </td>
-         <td>1767         </td>
-      </tr>
-      <tr>
-         <td>REST API         </td>
-         <td>1768         </td>
-      </tr>
-      <tr>
-         <td>         </td>
-         <td>12553         </td>
-      </tr>
-      <tr>
-         <td>{{< TransferCFT/centralgovernancename  >}} SSL         </td>
-         <td>12554         </td>
-      </tr>
-      <tr>
-         <td><p>{{< TransferCFT/securerelayname  >}} MA</p>
-<p>ma.comm_port</p>         </td>
-         <td><p> </p>
-<p>6801</p>         </td>
-      </tr>
-      <tr>
-         <td><p>{{< TransferCFT/securerelayname  >}} RA</p>
-<ul>
-<li>ra.comm_port</li>
-<li>ra.admin_port</li>
-</ul>         </td>
-         <td><p> </p>
-<ul>
-<li>6811</li>
-<li>6810</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Component  |  Port  |
+| --- | --- |
+| PeSIT  | 1761  |
+| SSL  | 1762  |
+| SFTP  | 1763  |
+| COMS  | 1765  |
+| Copilot  | 1766  |
+| Transfer CFT UI (Copilot) server for {{< TransferCFT/centralgovernancename  >}}  | 1767  |
+| REST API  | 1768  |
+|   | 12553  |
+| {{< TransferCFT/centralgovernancename  >}} SSL  | 12554  |
+|  {{< TransferCFT/securerelayname  >}} MA<br/>ma.comm_port  |  <br/>6801  |
+|  {{< TransferCFT/securerelayname  >}} RA<br/> • ra.comm_port<br/> • ra.admin_port</li>  |  <br/> • 6811<br/> • 6810</li>  |
+
 
 > **Note:**
 >

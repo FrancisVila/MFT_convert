@@ -6,14 +6,23 @@
 
 ## Quick links to all guides in {{< SecureTransport/securetransportname  >}} {{< SecureTransport/releasenumber  >}}
 
-Click on the respective icon under each document to view it as either HTML5 Webhelp: or PDF:
+Click on the respective icon under each document to view it as either HTML5 Webhelp: or PDF:<span class="inline-svg" style="font-size:24px; padding: 10px 0px 18px 0px;">
+    <svg aria-hidden="true" width="20px" height="20px" focusable="false" data-prefix="fab" data-icon="html5" 
+    class="svg-inline--fa fa-html5 fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 384 512" >
+        <path fill="currentColor" 
+        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z">
+        </path>
+    </svg>
+</span>
 
 To download a PDF file, right-click on the respective icon and select **Save link as...** on the menu and then save the document in a location of your choice.
 
- 
+ {{< img src="/media/spf13.jpg" title="Steve Francia" >}}
+{{% fontawesome html5-brands %}}
 
-**Administrator guide**  
-    [](/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5 "SecureTransport 5.5 Admin guide webhelp")            [](/bundle/SecureTransport_55_AdministratorGuide_allOS_en_PDF/raw/resource/enus/SecureTransport_AdministratorGuide_allOS_en.pdf "SecureTransport 5.5 Admin guide PDF")
+**Administrator <span class="fa fa-html5" style="font-size:24px; padding: 10px 0px 18px 0px;">&#160;</span> guide  i< i class='fa fa-html5' >i  i<i class='fa html5-brands'></i>i ggg {{% fontawesome html5-brands %}} **  
+    [<span class="fa fa-file-pdf-o" style="font-size:24px; padding: 10px 0px 18px 0px;">](/bundle/SecureTransport_55_AdministratorGuide_allOS_en_HTML5 "SecureTransport 5.5 Admin guide webhelp")            [ZZ    ZZ](/bundle/SecureTransport_55_AdministratorGuide_allOS_en_PDF/raw/resource/enus/SecureTransport_AdministratorGuide_allOS_en.pdf "SecureTransport 5.5 Admin guide PDF")
 
 **Appliance guide**  
     [](/bundle/SecureTransport_55_ApplianceGuide_allOS_en_HTML5 "SecureTransport 5.5 Appliance guide webhelp")            [](/bundle/SecureTransport_55_ApplianceGuide_allOS_en_PDF/raw/resource/enus/SecureTransport_ApplianceGuide_allOS_en.pdf "SecureTransport 5.5 Appliance guide PDF")

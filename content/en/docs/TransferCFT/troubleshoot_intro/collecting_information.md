@@ -37,8 +37,8 @@ the following table. It can serve as a guideline for gathering information, whic
    
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Step         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Your remarks         </th>
+<th >Step         </th>
+<th >Your remarks         </th>
       </tr>
    </thead>
    <tbody>

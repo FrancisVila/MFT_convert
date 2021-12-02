@@ -66,21 +66,9 @@ Trktname parameter
 
 <!-- -->
 
-
-    UCONFSET ID=sentinel.TRKTNAME,VALUE=
-
 -   The following message displays in the log when you restart Transfer CFT:
 
-<!-- -->
-
-
-    CFTS31W XTRK Warning No Buffer File(LOGGER file)defined Error Code = -1
-
 To connect to the Event Router via XFC, manually modify the commands file to activate the appropriate communication mode and comment commands:
-
-
-    /* UCONFSET ID=sentinel.TRKIPADDR,         VALUE=sntladdr                   
-         UCONFSET ID=sentinel.TRKIPPORT,VALUE=sntlp*/
 
 <span id="Create_a_LOGGER_type_padding_file (optional)"></span>
 
@@ -92,14 +80,6 @@ The new LOGGER file is a DASD-ONLY type file. Use the JCL SN10CLGR, via the IBM 
 
 **Example**
 
-
-    DEFINE LOGSTREAM NAME(sntlgstr)
-    DASDONLY(YES) 
-    LOWOFFLOAD(0) 
-    LS_SIZE(180)
-    STG_SIZE(0) 
-    MAXBUFSIZE(64000)
-
 The keywords that are displayed in bold should be substituted by the JCL A00CUSTO. For more information refer to the IBM documentation on *Setting up a Sysplex*.
 
 #### Use the LOGGER file in a SYSPLEX  
@@ -107,21 +87,6 @@ The keywords that are displayed in bold should be substituted by the JCL A00CUST
 To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
 
 **Example**
-
-
-
-     The following is an example of a structure definition:
-    STRUCTURE NAME(&userstr)
-    SIZE(6000)
-    INITSIZE(1200)
-    REBUILDPERCENT(30)
-    PRELIST(FACIL02,FACIL01)
-     
-     The following is an example of a logstream definition:
-    DEFINE LOGSTREAM NAME(&LGRID)
-    STRUCTNAME(&userstr)
-    &Userstr is the structure name
-    &LGRID is the logger file name
 
 > **Note:**
 >
@@ -136,37 +101,6 @@ The following table describes the overflow file definition for the Logger file, 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the Event Router and applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through a ER
 -   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">          </th>
-<th class="HeadE-Column1-Header1">Event Router         </th>
-<th class="HeadE-Column1-Header1">TRKUTIL         </th>
-<th class="HeadD-Column1-Header1">Transfer CFT 2.7 and later         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-<th class="BodyE-Column1-Body1">Configuration file         </th>
-         <td>USEPARIN         </td>
-         <td>TRKCONF         </td>
-         <td>UCONF         </td>
-      </tr>
-      <tr>
-<th rowspan="2" class="BodyE-Column1-Body2">Logger file         </th>
-         <td><p>(AGENT)</p>
-<p>api_file=</p>         </td>
-         <td>TRKTNAME=         </td>
-         <td>UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>TRKSHAREDFILE=YES         </td>
-         <td>UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Communication with the Event Router"></span>
 
 ###  Communication with the Event Router
@@ -175,42 +109,6 @@ The following parameters define communication with the Event Router via XCF. In 
 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
 -   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">          </th>
-<th class="HeadE-Column1-Header1">Event Router         </th>
-<th class="HeadE-Column1-Header1">TRKUTIL         </th>
-<th class="HeadD-Column1-Header1">Transfer CFT 2.6.x         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Configuration file         </td>
-         <td>USEPARIN         </td>
-         <td>TRKCONF         </td>
-         <td>UCONF         </td>
-      </tr>
-      <tr>
-         <td>SVC         </td>
-         <td><p>(SYSTEM)</p>
-<p>svc_nb=nnn</p>         </td>
-         <td>TRKSVC=nnn         </td>
-         <td>UCONFSET ID=sentinel.TRKSVC,VALUE=nnn         </td>
-      </tr>
-      <tr>
-         <td>XCF definition         </td>
-         <td>(AGENT)queue=         </td>
-         <td>TRKQUEUE=         </td>
-         <td>UCONFSET ID=sentinel.TRKQUEUE,VALUE=xxxx         </td>
-      </tr>
-      <tr>
-         <td>TRKTYPE=XCF         </td>
-         <td>UCONFSET ID=sentinel.TRKTYPE,VALUE=XCF         </td>
-      </tr>
-   </tbody>
-</table>
 
 <span id="Modify the Transfer CFT start-up procedure"></span>
 

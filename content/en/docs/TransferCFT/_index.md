@@ -19,11 +19,11 @@ Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standa
       <tr>
          <td><h2 id="for-new-users">For new users</h2>
 <p><a href="overview_intro/about_transfer_cft">About {{< TransferCFT/componentshortname  >}}</a></p>
-<p><a href="overview_intro/c_cg_concepts" class="hyperlink">What are governance services?</a></p>
+<p><a href="overview_intro/c_cg_concepts" >What are governance services?</a></p>
 <p><a href="c_intro_userinterfaces/about_cftutil">Use command line</a></p>
 <p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
-<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" class="MCXref xref">My first transfer flow</a></p>
-<p><a href="gettingstarted_intro/my_first_file_transfer" class="MCXref xref">My first file transfer (CL)</a></p>
+<p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" >My first transfer flow</a></p>
+<p><a href="gettingstarted_intro/my_first_file_transfer" >My first file transfer (CL)</a></p>
 <p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg">CFTUTIL basics and help</a></p>
 <h2 id="for-existing-users">For existing users</h2>
 <p><a href="app_integration_intro/intro_folder_monitor/configure_folder_monitoring">Configure folder monitoring</a></p>
@@ -50,11 +50,11 @@ Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standa
 <p><a href="https://docs.axway.com/bundle/AccessibilityVPATS_allOS_en_HTML5/page/Content/accessibility.htm">VPAT</a></p>
 <p>Third-Party Licenses (login required) <a href="https://support.axway.com/en/documents/document-details/id/1448127">PDF </a></p>
 <h2 id="additional-resources">Additional resources</h2>
-<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" class="hyperlink">Transfer CFT REST API Swagger</a></p>
-<p><a href="https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf" class="hyperlink">Axway Supported Platforms</a></p>
-<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" class="hyperlink">Axway Flow Manager</a></p>
-<p><a href="https://support.axway.com/" class="hyperlink">Axway Support</a></p>
-<p><a href="https://community.axway.com/s/" class="hyperlink">Axway Community</a></p>
+<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" >Transfer CFT REST API Swagger</a></p>
+<p><a href="https://docs.axway.com/bundle/Axway_Products_SupportedPlatforms_allOS_en/resource/Axway_Products_SupportedPlatforms_allOS_en.pdf" >Axway Supported Platforms</a></p>
+<p><a href="https://apidocs.axway.com/swagger-ui/index.html?productname=transfercft&amp;productversion=3.8&amp;filename=transfercft-swagger-api.json" >Axway Flow Manager</a></p>
+<p><a href="https://support.axway.com/" >Axway Support</a></p>
+<p><a href="https://community.axway.com/s/" >Axway Community</a></p>
 <h2 id="search-tips">Search tips</h2>
 <ul>
 <li>Use filters to narrow searches.</li>

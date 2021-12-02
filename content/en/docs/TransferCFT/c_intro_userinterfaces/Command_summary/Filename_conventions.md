@@ -81,47 +81,14 @@ This name includes a root and a version number. According to the case,
 the relative name is converted into an absolute name in different stages
 as shown in the following table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Version         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Conversion to an absolute name         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CFTSEND </p>         </td>
-         <td><p>0 or -n </p>         </td>
-         <td><p>IMPL=YES </p>         </td>
-         <td><p>at the start of the transfer </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-         <td><p>IMPL=NO </p>         </td>
-         <td><p>when the request is placed in the catalog </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SEND </p>         </td>
-         <td><ul>
-<li>be 0
-or -n</li>
-<li>specific
-case of z/OS (MVS) (1)</li>
-</ul>         </td>
-         <td><p>FNAMEABS=YES </p>         </td>
-         <td><p>when the request is placed in the catalog </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-         <td><p>FNAMEABS=NO </p>         </td>
-         <td><p>at the start of the transfer </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Command  | Version  | Parameter  | Conversion to an absolute name  |
+| --- | --- | --- | --- |
+|  CFTSEND  |  0 or -n  |  IMPL=YES  |  at the start of the transfer  |
+|   |   |  IMPL=NO  |  when the request is placed in the catalog  |
+|  SEND  |  <li>be 0 or -n<br/> • specific case of z/OS (MVS) (1)</li>  |  FNAMEABS=YES  |  when the request is placed in the catalog  |
+|   |   |  FNAMEABS=NO  |  at the start of the transfer  |
+
 
 \(1\) the version number may be 0 or
 - n and the FNAMEABS parameter must be set to YES. A GDG file is rotated
@@ -132,12 +99,6 @@ z/OS
 Example of a file with versions. The notation of the version of the file in the SEND stage is
 the same as the last notation used in the JCL.
 
-
-    //ST1 EXEC PGM=USER
-    //DD1 DD DSN=FIL(-1)
-    //ST4 EXEC PGM=CFTUTIL
-       SEND     FNAME=FIL(-1)
-
 <span id="Filename__listing_a_directory"></span>
 
 ### Listing a directory: filename
@@ -146,9 +107,6 @@ This section
 provides an example of how to list a directory.
 
 Example of listing a directory
-
-
-    FNAME={dirname | mask}
 
 The name specified can be a generic file name or a directory name. It
 can include:
@@ -206,9 +164,6 @@ a set of files with the same IDF in send mode](../../../concepts/transfer_comman
 This
 section provides an example of sending a group of files, the names of which
 are listed in the specified file:
-
-
-    FNAME=#filename
 
 The specified name is the full name of a physical file, containing the
 list of files to be sent, list of physical file names, with one name per

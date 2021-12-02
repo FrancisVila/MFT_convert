@@ -16,49 +16,15 @@ If you want to enable {{< TransferCFT/centralgovernancename  >}} during installa
 
 This table presents a high-level overview of the installation process. By default, the {{< TransferCFT/componentlongname  >}} installation uses a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Step         </th>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Details         </th>
-<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">More info         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td>Complete prerequisites         </td>
-         <td>Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.         </td>
-         <td><a href="prereqs_overview"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Download and unzip         </td>
-         <td>Download the installation package from the support site and unzip.         </td>
-         <td><a href="#Download"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>Customize the properties file         </td>
-         <td><p>Some installation parameters are mandatory to run Transfer CFT.</p>
-<p>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p>         </td>
-         <td><a href="properties_file_win"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>Start the installation         </td>
-         <td>Select the installation mode and run using either the default configuration file or your customized file.         </td>
-         <td><a href="install_transfer_cft_1"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>         </td>
-      </tr>
-      <tr>
-         <td>*         </td>
-         <td>Optional customization         </td>
-         <td>If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Step  | Details  | More info  |
+| --- | --- | --- | --- |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
+| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
+| 3  | Customize the properties file  |  Some installation parameters are mandatory to run Transfer CFT.<br/>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.  | <a href="properties_file_win"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1"><img src="/Images/TransferCFT/severityInformation_alt.gif" /></a>  |
+| *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
+
 
 ### Installation restrictions for multi-node
 

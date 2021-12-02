@@ -95,10 +95,6 @@ A sample of how to generate this exit is located in the `<cft.runtime_dir>/src/e
 You can define only one user function, `cftpkie`, for Transfer
 CFT, with the syntax as follows:
 
-
-    int 
-     cftpkie(struct pkicom *zpki)
-
 The `pkicom `structure is used to exchange data between Transfer CFT and
 the user function. The function must return an integer, which represents
 a general execution code (processing successfully completed by the function,

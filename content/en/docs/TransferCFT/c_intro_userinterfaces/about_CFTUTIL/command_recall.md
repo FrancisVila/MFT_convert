@@ -16,35 +16,13 @@ To retrieve a command you know, begin by typing the first characters of the comm
 
 Use the following uconf parameters to manage the command-history settings.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.readline.history_size</p>         </td>
-         <td><p>500</p>         </td>
-         <td><p>Maximum number of commands that you can store.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.readline.enable</p>         </td>
-         <td><p>Yes</p>         </td>
-         <td><p>Save and retrieve the commands from disk.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.readline.history_fname</p>         </td>
-         <td><ul>
-<li>Win: %APPDATA%\cft\CftutilHistory.txt</li>
-<li>Unix: $(HOME)/.cft_history</li>
-</ul>         </td>
-         <td><p>Name of the file containing the command history.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Default value  |  Description  |
+| --- | --- | --- |
+|  cft.readline.history_size  |  500  |  Maximum number of commands that you can store.  |
+|  cft.readline.enable  |  Yes  |  Save and retrieve the commands from disk.  |
+|  cft.readline.history_fname  |  <li>Win: %APPDATA%\cft\CftutilHistory.txt<br/> • Unix: $(HOME)/.cft_history</li>  |  Name of the file containing the command history.  |
+
 
 <span id="Modify"></span>
 

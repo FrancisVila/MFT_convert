@@ -18,16 +18,7 @@ Begin by checking if the z/OS system already has a Java environment available. {
 To identify if your current system has JZOS available:
 
 1.  Check the system dataset "SYS1.SIEALNKE" for a member JVMLDMxx where xx is the version and release of the Java you are using, for example:  
-
-
-
-        JVMLDM80 for V8.0.6.10 31-bit SDK
-
 2.  Check in the system PROCLIBs for a member JVMPRCxx where xx is the version and release of the Java you are using, for example:  
-
-
-
-        JVMPRC80 for V8.0.6.10 31-bit SDK
 
 If these modules are present, then JZOS is available. If it is not available:
 

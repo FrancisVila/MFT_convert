@@ -45,23 +45,6 @@ If the output file:
     -   For systems handling
         the file record concept: actual size of the output file records
     -   For the systems below not handling this concept:  
-        <table>
-                 
-                 
-                 
-           
-           <tbody>
-              <tr>
-                 <td><p><strong>Windows</strong> </p>         </td>
-                 <td><p>512.</p>         </td>
-              </tr>
-              <tr>
-                 <td><p><strong>UNIX</strong></p>         </td>
-                 <td><p>512 for text files (OTYPE=T, X or O).<br />
-        4096 for binary or variable files (OTYPE={B | V}).</p>         </td>
-              </tr>
-           </tbody>
-        </table>
 
  
 

@@ -458,7 +458,7 @@ to the functional levels negotiated.
 <table>
    <thead>
       <tr>
-<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Negotiated functional level          </th>
+<th colspan="3" >Negotiated functional level          </th>
       </tr>
    </thead>
    <tbody>

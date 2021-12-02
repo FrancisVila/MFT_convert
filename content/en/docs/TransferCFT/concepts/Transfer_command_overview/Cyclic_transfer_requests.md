@@ -35,9 +35,6 @@ values are expressed in the following equation:
 
 The example command creates a cyclic transfer request as shown below:
 
-
-    SEND PART=PARIS, MINDATE=20150703, MINTIME=1000, MAXDATE=20151231, MAXTIME=1000, CYCLE=7, TCYCLE=DAY, CYCDATE=20150705, CYCTIME=1000
-
 -   The request start date and time is July 3, 2015 at 10:00 (MINDATE/MINTIME).
 -   A period of inactivity begins on July 5, 2015 at 10:00 (CYCDATE/CYCTIME).
     -   A child transfer of the cyclic request who's execution begins during the period of activity will complete, even if that time extends into time timeout.
@@ -57,29 +54,6 @@ one of the values indicated in the table below, for the DIAGP field, at
 the time the catalog is queried (LISTCAT CONTENT=BRIEF).
 
 **Generic entry values**
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Diagp value </p>         </th>
-<th class="HeadD-Column1-Header1"><p>Cycle </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>MIN CYC </p>         </td>
-         <td><p>Cycle expressed in minutes </p>         </td>
-      </tr>
-      <tr>
-         <td><p>DAY CYC </p>         </td>
-         <td><p>Cycle expressed in days </p>         </td>
-      </tr>
-      <tr>
-         <td><p>MON CYC </p>         </td>
-         <td><p>Cycle expressed in months </p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 Use the CONTENT=FULL option to view all of the parameters for this cyclic
 request.

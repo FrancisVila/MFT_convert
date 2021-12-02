@@ -27,26 +27,11 @@ The following parameters are used for SFTP protocol:
 
 Example
 
-
-
-    CFTPROT id       = SFTP,
-
-     TYPE = 'SFTP', 
-    SSH = 'SSH_DEFAULT', 
-    SAP = '1763',
-    NET = NET0,
-
-        ...
-
 ## Add the server key in the PKI database (PKIKEYGEN or PKIKEY)
 
 You can use either the PKIKEYGEN command or the PKIKEY command to add the server key in the database. For more information, see <a href="../new_pki_keys_use" class="MCXref xref">Generate and manage keys</a>.
 
 Example
-
-
-
-    PKIKEYGEN id=MY_KEY, keylen=2048
 
 ## Define the SSH server profile (CFTSSH)
 
@@ -58,14 +43,6 @@ This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH
     -   If SRVPRIVKEY(CFTSSH direct=server) is not set, {{< TransferCFT/componentlongname >}} cannot start, and the message displays `CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set`.
 
 Example
-
-
-
-    CFTSSH id = SSH_DEFAULT,
-
-    DIRECT = SERVER,
-    SRVPRIVKEY = MY_KEY,
-    ...
 
 ## Define a partner (CFTPART) for a flow
 
@@ -99,25 +76,6 @@ There are two ways for you to configure how the server will check the client pas
 >
 > If you do not define NRPASSW, there is no password authentication.
 
-
-
-    CFTPART id          = USER1,
-
-
-            prot        = SFTP,
-           
-            
-    nrpart      = "user1",              
-
-            nrpassw     = "TheUser1Password", ...
-
-
-    CFTTCP id          = USER1,
-            
-
-    host        = 127.0.0.1,
-           ...
-
 When using password authentication
 
 -       <img src="/Images/TransferCFT/sftp_server.png" class="smallWidth" alt="Client Login arrow to NRPART, Ciient Password arrow to server NRPASSW" />
@@ -137,37 +95,9 @@ Which CLIPUBKEY is used for the SSH profile is determined as follows:
 
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
-
-
-    CFTPART id          = USER2,
-            
-
-    ssh         = SSH_USER2,
-            
-    prot        = SFTP,
-            
-    nrpart      = "user2", ...
-
-     
-            CFTTCP id          = USER2,
-            
-    host        = 127.0.0.1, ...       
-            
-
-     
-    CFTSSH id         = SSH_USER2,
-            
-
-    direct     = SERVER,
-            
-    clipubkey  = USER2,         ...
-
 > **Note:**
 >
 > Do not forget that you must import the client's public key in the server's database as shown below:
-
-
-    PKIUTIL pkikey id='USER2', ikname='user2.pub', ikform='ssh'
 
 ### Password and key authentication
 
@@ -180,43 +110,11 @@ When using **password and key** authentication:
 
 -   
 
-        CFTPART id          = USER3,
-                
-
-        ssh         = USER3,
-                
-        prot        = SFTP,
-                
-        nrpart      = "user3", 
-        nrpassw = "TheUser3Password",...
-
-         
-                CFTTCP id          = USER3,
-                
-
-        host        = 127.0.0.1, ...       
-                
-
-
-         
-        CFTSSH id         = USER3,
-                
-
-        direct     = SERVER,
-                
-        clipubkey  = USER3,         ...
-
 ### Define a default flow model for a partner (IDF)
 
 This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In {{< TransferCFT/transfercftname  >}}, this is the CFTPART default IDF.
 
-
-    CFTPART id=partner,IDF=<default_model_for_this_partner>,…
-
 If the remote path is absolute (root directory), {{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example, `flow01 `corresponds to the IDF for this partner.
-
-
-    put LocalFile01.txt /flow01/RemoteFile01.txt
 
 ### Define the authorization list for a partner (CFTAUTH)
 
@@ -226,16 +124,6 @@ of authorized IDFs for send/receive transfers with a defined partner. You can us
 For more information, see [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
 
 In the following example, defining a CFTAUTH creates visibility for **flow01** and **flow02** for the `user2 `client.
-
-
-
-    CFTPART ID=user2, IDF=(flow02), NRPART="user2", SAUTH=AUTH2, RAUTH=AUTH2...
-    CFTAUTH ID=auth2, IDF=(flow01,flow02) 
-     
-    CFTSEND IDF=flow01, IMPL=YES, workingdir=flow1_space, fname=&nfname
-     
-    CFTSEND IDF=flow02, IMPL=YES, workingdir=flow2_space, fname=&nfname
-    CFTRECV IDF=flow02, workingdir=user2_space, fname=&nfname
 
 The view for a third-party software client would resemble the following (where the flow identifier displays, but not the physical folder name). Note that in this example, the `workingdir `is relative to the runtime directory.
 
@@ -285,14 +173,6 @@ When defining the WORKINGDIR, you can use the following symbolic variables:
 Example
 
 In this example, `user1 `can perform a `get `or `put `command using the space (WORKINGDIR) defined for `user1`.
-
-
-
-    CFTPART ID=user1, IDF=flow01, NRPART="user1",... 
-     
-    CFTSEND IDF=flow01, IMPL=YES, workingdir=user1_space, fname=&nfname 
-     
-    CFTRECV IDF=flow01, workingdir=user1_space, fname=&nfname
 
 <span id="Transcod"></span>
 

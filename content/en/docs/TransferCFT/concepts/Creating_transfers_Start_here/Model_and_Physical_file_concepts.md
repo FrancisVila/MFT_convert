@@ -447,51 +447,8 @@ generic IDF**
 
 #### Global Receptions
 
-<table>
-         
-         
-         
-   
-   <tbody>
-      <tr>
-         <td><p><strong>ODETTE, PeSIT D CFT profile,
-PeSIT E</strong> </p>         </td>
-         <td><p>Available only with the protocols mentioned above. </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 This mechanism allows the requester to receive all the files pending
 at the server end.
-
-<table>
-   <tbody>
-      <tr>
-         <td><p><strong>ODETTE</strong> </p>         </td>
-         <td><p>Only the following receive command is valid:<br />
-RECV IDF = *<br />
-Although sequencing is at the sender’s initiative, the receiver end catalog
-will contain a record corresponding to the global reception request and
-a record for each reception, in the same way as for the other protocols.
-This command provides the possibility to change direction and hence globally
-receive all the files pending at the remote partner end. </p>         </td>
-      </tr>
-      <tr>
-         <td><p><strong>PeSIT D CFT profile</strong> </p>         </td>
-         <td><p>To activate a reception from a requester {{< TransferCFT/componentshortname  >}} to
-a server monitor, only the following commands are valid:<br />
-RECV IDF = * and RECV IDF = *, FILE = ALL</p>         </td>
-      </tr>
-      <tr>
-         <td><p><strong>PeSIT D CFT profile, PeSIT
-E</strong> </p>         </td>
-         <td><p>Possible between two {{< TransferCFT/componentshortname  >}}s, using one of these
-two protocols.<br />
-Between two CFTs, this is a special case of selective reception, the command
-being RECV IDF = *, FILE = ALL </p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 ### Protection of the model file identifier
 

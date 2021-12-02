@@ -48,8 +48,8 @@ refer to [Transfer control commands](../../../../concepts/transfer_command_overv
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
+<th >Parameter         </th>
+<th ><p>Description</p>         </th>
       </tr>
    </thead>
    <tbody>
@@ -158,9 +158,6 @@ fulfill the selection criteria which may be defined by other parameters.</p>    
 
 Example 1
 
-
-    LISTCAT TYPE = ALL, PART = HQ, STATE = DC
-
 Displays the most important information (CONTENT=BRIEF by default) concerning
 all transfers (TYPE=ALL) sent to or received from (DIRECT=BOTH by default)
 the partner (PART = HQ), the states of which are "Available"
@@ -168,17 +165,11 @@ or "in Process" (STATE=DC).
 
 Example 2
 
-
-    LISTCAT TYPE = FILE, DIRECT = SEND, PART = PARIS5
-
 Displays the most important information (CONTENT=BRIEF by default) concerning
 the file transfers (TYPE=FILE) sent (DIRECT=SEND) to the partner (PART)
 PARIS5, all states included (STATE=\* by default).
 
 <span id="sortby_example"></span>Example 3
-
-
-    LISTCAT SORTBY=IDTU
 
 Displays the records by IDTU. This can be useful because the catalog's compact behavior takes advantage of unused records meaning the IDTU may not display in order.
 
@@ -186,136 +177,32 @@ Displays the records by IDTU. This can be useful because the catalog's compact b
 
 LISTCAT CONTENT = COMMUT
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1 </p>         </td>
-         <td><p>Intermediate transfer (IPART) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>2 </p>         </td>
-         <td><p>State transfer<br />
-The DTSA characters represent:</p>
-<ul>
-<li>Direction
-     =     S/R    
-(Send/Receive)</li>
-<li>Type    
-=     F/M/R     (File/Message/Reply)</li>
-<li>State    
-=     D/C/H/K/T/X     (Disp/Current/Hold/Keep/Terminated/eXecuted)</li>
-<li>Ack    
-=     A     (Acknowledge)</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td><p>3 </p>         </td>
-         <td><p>File network identifier (NFNAME) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>4 </p>         </td>
-         <td><p>Transfer protocol identifier (NIDT) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>5 </p>         </td>
-         <td><p>Local transfer identifier (IDTU) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>6 </p>         </td>
-         <td><p>Transfer CFT internal diagnostic code (DIAGI) </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Heading  | Meaning  |
+| --- | --- |
+|  1  |  Intermediate transfer (IPART)  |
+|  2  |  State transfer<br /> The DTSA characters represent:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  3  |  File network identifier (NFNAME)  |
+|  4  |  Transfer protocol identifier (NIDT)  |
+|  5  |  Local transfer identifier (IDTU)  |
+|  6  |  Transfer CFT internal diagnostic code (DIAGI)  |
+
 
 ## LISTCAT CONTENT = EXTEND
 
 LISTCAT CONTENT = EXTEND 
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Heading         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1 </p>         </td>
-         <td><p>Local partner identifier described in the CFTPART (ID)
-or CFTDEST command (one of the PARTS of the broadcasting list) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>2 </p>         </td>
-         <td><p>Transfer state<br />
-The DTSA characters mean:</p>
-<ul>
-<li>Direction
-     =     S/R    
-(Send/Receive)</li>
-<li>Type    
-=     F/M/R     (File/Message/Reply)</li>
-<li>State    
-=     D/C/H/K/T/X     (Disp/Current/Hold/Keep/Terminated/eXecuted)</li>
-<li>Ack    
-=     A     (Acknowledge)</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td><p>3 </p>         </td>
-         <td><p>File identifier (IDF) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>4 </p>         </td>
-         <td><p>Transfer identifier (IDT) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>5 </p>         </td>
-         <td><p>Identifier of the application associated to the transfer
-(IDA) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>6 </p>         </td>
-         <td><p>Requester ("R") or server ("S") mode </p>         </td>
-      </tr>
-      <tr>
-         <td><p>7 </p>         </td>
-         <td><p>Client security mode ("C") or server ("S")
-mode </p>         </td>
-      </tr>
-      <tr>
-         <td><p>8 </p>         </td>
-         <td><p>Exits used<br />
-The characters FAT represent:</p>
-<ul>
-<li>F: file exit ("x" if present)</li>
-<li>A: directory
-exit ("x" if present)</li>
-<li>T: end
-of transfer exit ("x" if present)</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>9 </p>         </td>
-         <td><p>Use of an end of transfer procedure ("x" if
-present) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>10 </p>         </td>
-         <td><p>Transfer CFT internal diagnostic (DIAGI) </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Heading  | Meaning  |
+| --- | --- |
+|  1  |  Local partner identifier described in the CFTPART (ID) or CFTDEST command (one of the PARTS of the broadcasting list)  |
+|  2  |  Transfer state<br /> The DTSA characters mean:<br/> • Direction = S/R (Send/Receive)<br/> • Type = F/M/R (File/Message/Reply)<br/> • State = D/C/H/K/T/X (Disp/Current/Hold/Keep/Terminated/eXecuted)<br/> • Ack = A (Acknowledge)</li> <blockquote> **Note:**<br/>If the UCONF compatibility option is set to the default value (no), the format is DTSAPP to include Phase and PhaseStep. For more information, see Backward compatibility. </blockquote>  |
+|  3  |  File identifier (IDF)  |
+|  4  |  Transfer identifier (IDT)  |
+|  5  |  Identifier of the application associated to the transfer (IDA)  |
+|  6  |  Requester ("R") or server ("S") mode  |
+|  7  |  Client security mode ("C") or server ("S") mode  |
+|  8  |  Exits used<br /> The characters FAT represent:<br/> • F: file exit ("x" if present)<br/> • A: directory exit ("x" if present)<br/> • T: end of transfer exit ("x" if present)</li>  |
+|  9  |  Use of an end of transfer procedure ("x" if present)  |
+|  10  |  Transfer CFT internal diagnostic (DIAGI)  |
+

@@ -54,12 +54,6 @@ Enabling Central Governance connectivity if you have performed an upgrade replac
 
 Unset the UCONF parameters:
 
-
-
-    uconfunset id=am.type
-    uconfunset id=sentinel.xfb.enable
-    uconfset id=pki.type, value=cft
-
 > **Note:**
 >
 > When running in a z/OS environment you must additionally set the am.passport.superuser with the user that will start the Copilot server.
@@ -71,42 +65,15 @@ Set the parameters used to identify a Transfer CFT instance. Follow these guide
 -   The length of the `cft.instance_id` value is limited to 24 characters.
 -   The address set in `cft.full_hostname` must be reachable from .
 
-<!-- -->
-
-
-
-    uconfset id=cft.instance_id, value=<cft_id>
-    uconfset id=cft.instance_group, value=<cft_instance_group>
-    uconfset id=cft.full_hostname, value=<cft_address>
-
 Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
-
-
-
-    uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
-    uconfset id=cft.multi_node.load_balancer.port,value=<load_balancer_port>
 
 #### Optionally define a proxy server for to {{< TransferCFT/componentlongname  >}} communication
 
 If you opt to use a proxy server for to connect to {{< TransferCFT/componentlongname  >}}, set the following parameters.
 
-
-
-    uconfset id=cg.proxy.in.host, value= <proxy_address>
-    uconfset id=cg.proxy.in.port,value= <proxy_port>
-    uconfset id=cg.proxy.in.login, value= <proxy_login>
-    uconfset id=cg.proxy.in.password, value= <proxy_login_password>
-
 #### Optionally define a proxy server for {{< TransferCFT/componentlongname  >}} to communication
 
 If you opt to use a proxy server for {{< TransferCFT/componentlongname  >}} to connect to , set the following parameters.
-
-
-
-    uconfset id=cg.proxy.out.host, value= <proxy_address>
-    uconfset id=cg.proxy.out.port,value= <proxy_port>
-    uconfset id=cg.proxy.out.login, value= <proxy_login>
-    uconfset id=cg.proxy.out.password, value= <proxy_login_password>
 
 #### Import the root certificate for the Governance CA 
 
@@ -119,40 +86,21 @@ If you opt to use a proxy server for {{< TransferCFT/componentlongname  >}} to c
 
 Set  the following parameters that are used to connect to {{< TransferCFT/centralgovernancename  >}}.
 
-
-
-    uconfset id=cg.host, value=<cg_host_address> 
-    uconfset id=cg.port, value=<cg_port>
-
 Set the shared secret that the Central Governance administrator generated and provided.
-
-
-
-    uconfset id=cg.shared_secret, value=<shared_secret>
 
 #### Optionally define the configuration policy for registration
 
 You may want to automatically assign an existing configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
 
-
-
-    uconfset id=cg.configuration_policy, value=<name_of_policy>
-
 #### Optionally customize the business certificate Distinguished Name (DN)
 
 To override the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
-
-
-    uconfset id=cg.certificate.business.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
 
 A best practice is to customize the certificate DN prior to registration. However, if you are customizing the certificate DN after the Transfer CFT registration, you can force an immediate renewal or wait for the automatic renewal as described in [SSL certificate renewal](../cg_postregister#SSL).
 
 #### Optionally customize the governance certificate Distinguished Name (DN)
 
 To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
-
-
-    uconfset id=cg.certificate.governance.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
 
 A best practice is to customize the certificate DN prior to registration. However, if you are customizing the certificate DN after the Transfer CFT registration, you can force an immediate renewal or wait for the automatic renewal as described in [SSL certificate renewal](../cg_postregister#SSL).
 
@@ -162,36 +110,19 @@ A best practice is to customize the certificate DN prior to registration. Howeve
 
 By default, Transfer CFT generates a key length of 2048 bits for its Governance and Business certificates. Optionally you can modify these values to 4096 bits.
 
-
-
-    uconfset id=cg.certificate.governance.key_len, value=4096
-
-    uconfset id=cg.certificate.business.key_len, value=4096
-
 #### Enable {{< TransferCFT/centralgovernancename  >}}
 
 To enable connectivity, enter:
 
-
-
-    uconfset id=cg.enable, value=yes
-
 #### Perform the check command to validate parameters
 
 Use the CFTUTIL CHECK command to validate the coherence of parameters, partners, and the Transfer CFT PKI database.
-
-
-    CHECK CONTENT=BRIEF|FULL, FOUT=FileName
 
 Check the list in the output for errors and correct all errors before attempting registration. See also, <a href="../../c_intro_userinterfaces/about_cftutil/check_command" class="MCXref xref">Use the check command</a>.
 
 ## Register or re-register
 
 Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
-
-
-
-     CFTUTIL uconfunset id=cg.registration_id
 
 Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration with {{< TransferCFT/centralgovernancename  >}}. From the UI, check the **Product List** to confirm that the registration was successful.
 

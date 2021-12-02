@@ -9,9 +9,9 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Step         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">JCL         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+<th >Step         </th>
+<th >JCL         </th>
+<th >Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -237,11 +237,6 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 > The file access rights are Read only for Group and others. Users must have rights to read the file system where the Transfer CFT Copilot USS files are installed. To get the file system name, enter the command: df .
 
 **Example**
-
-
-    /home/AXWAY/CFT<version>/wwwroot/applets: #df .
-    Mounted on     Filesystem                Avail/Total    Files      Status
-    /home/AXWAY    (xxxxxx.yyyyy.HFSAXWAY)   235680/1872000 4294927912 Available
 
 Related topics
 

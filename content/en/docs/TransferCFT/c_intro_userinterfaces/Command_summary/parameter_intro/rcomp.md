@@ -17,25 +17,6 @@ A zero value corresponds to no compression (default).
 
 Default values are:
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Protocol         </th>
-<th class="HeadD-Column1-Header1">Default value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>PeSIT ANY profile</p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ODETTE </p>         </td>
-         <td><p>1 </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 See also **[scomp](../scomp)**.
 
 For more information (usable values etc.), refer to the *Compression*

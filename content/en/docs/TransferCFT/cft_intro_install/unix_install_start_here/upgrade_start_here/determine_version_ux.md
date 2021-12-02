@@ -19,10 +19,4 @@ Alternatively, you can use the display command to list information about all ins
 -   Run the command from the root installation directory.
 -   When you run this command without parameters, the command lists all installed products and versions, and all applied service packs.
 
-<!-- -->
-
-
-
-    ./display.sh 
-
 Use the name parameter, - n, to display the installation history of a single product.

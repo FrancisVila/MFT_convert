@@ -43,107 +43,31 @@ You can assign users to one or more roles. Typically, users with multiple roles 
 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>id</p>         </td>
-         <td><p>String32</p>         </td>
-         <td><p>Role identifier</p>         </td>
-      </tr>
-      <tr>
-         <td><p>comment</p>         </td>
-         <td><p>String80</p>         </td>
-         <td><p>Comment</p>         </td>
-      </tr>
-      <tr>
-         <td><p>privs[]</p>         </td>
-         <td><p>List of String32</p>         </td>
-         <td><p>List of privileges associated to this role (1 to 128)</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Field  |  Type  |  Comment  |
+| --- | --- | --- |
+|  id  |  String32  |  Role identifier  |
+|  comment  |  String80  |  Comment  |
+|  privs[]  |  List of String32  |  List of privileges associated to this role (1 to 128)  |
+
 
 Example of CFTROLE in a configuration file:
-
-
-
-    CFTROLE      ID          = 'Application',
-                 COMMENT     = 'My comments',
-                 PRIVS       = ( 'SERVICE:UI_CONNECT',
-                                 'MYPRIV1',
-                                 'CONFIGURATION:CFTCOM_VIEW',
-                                 'CONFIGURATION:CFTPARM_VIEW',
-                                 'CONFIGURATION:CFTPART_VIEW',
-                                 'CONFIGURATION:CFTDEST_VIEW',
-                                 'CONFIGURATION:CFTSEND_VIEW',
-                                 'CONFIGURATION:CFTRECV_VIEW',
-                                 'CONFIGURATION:CFTLOG_VIEW',
-                                 'FILTER:CATALOG_ALL',
-                                 'FILTER:LOG_ALL',
-                                 'FILE_VIEW'),
-                 ORIGIN      = 'CFTUTIL',
-                 MODE        = 'REPLACE'
 
 ### Using CFTPRIV
 
 Privileges give users authorization to access and perform actions in the user interface. Examples of actions include CREATE, DELETE, VIEW, EDIT (use \* to assign all actions).
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Field</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Type</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Comment</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>id</p>         </td>
-         <td><p>String32</p>         </td>
-         <td><p>Privilege identifier</p>         </td>
-      </tr>
-      <tr>
-         <td><p>comment</p>         </td>
-         <td><p>String80</p>         </td>
-         <td><p>Comment</p>         </td>
-      </tr>
-      <tr>
-         <td><p>resource</p>         </td>
-         <td><p>String32</p>         </td>
-         <td><p>Resource on which this privilege applies</p>         </td>
-      </tr>
-      <tr>
-         <td><p>actions</p>         </td>
-         <td><p>List of String32</p>         </td>
-         <td><p>Actions authorized on the resource (1 to 16 actions)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>condition</p>         </td>
-         <td><p>String256</p>         </td>
-         <td><p>Condition to check for authorizing (<a href="#Specifyi">see below</a>)</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Field  |  Type  |  Comment  |
+| --- | --- | --- |
+|  id  |  String32  |  Privilege identifier  |
+|  comment  |  String80  |  Comment  |
+|  resource  |  String32  |  Resource on which this privilege applies  |
+|  actions  |  List of String32  |  Actions authorized on the resource (1 to 16 actions)  |
+|  condition  |  String256  |  Condition to check for authorizing (<a href="#Specifyi">see below</a>)  |
+
 
 Example of CFTPRIV in a configuration file:
-
-
-
-    CFTPRIV      ID          = 'MYPRIV1',
-                COMMENT     = 'My comment',
-                 RESOURCE    = 'TRANSFER',
-                 ACTIONS     = ( 'CREATE' , 'DELETE', 'VIEW', 'EDIT', 'CANCEL', 'RESUME', 
-                                'PAUSE', 'EXECUTE', 'SUBMIT', 'END' ),
-                 CONDITION   = '',
-                 ORIGIN      = 'CFTUTIL',
-                 MODE        = 'REPLACE'
 
 <span id="Specifyi"></span>
 
@@ -154,11 +78,6 @@ Conditions allow you to assign finer control on resources and actions by specify
 Examples
 
 In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
-
-
-
-    PART=="PARIS" && ID=="IDFDEF"
-    (PART=="PARIS" || PART==”NEWYORK”) && ID~="IDF*"
 
 Comparison operators include:
 
@@ -175,247 +94,56 @@ Comparison operators include:
 
 The following table is an exhaustive list of all properties for all resources. These properties are available regardless of the action to be checked. However, if a resource has no properties, setting a condition for it has no impact.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Resource</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Actions</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-weight: bold; font-size: 11pt"><p>Properties</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CONFIGURATION:PKICER</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:PKIENTITY</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:PKIKEY</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTPARM</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTNET</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTPROT</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION: CFTSEND</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION: CFTSENDI <sup>(1)</sup></p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION: CFTRECV</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTAUTH</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTXLATE</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTLOG</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTCAT</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTCOM</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTACCNT</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTEXIT</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTIDF</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTFOLDER</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTETB</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTAPPL</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTSSL</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTCRON</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE, RELOAD</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTPART</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT,  ACTIVATE, DEACTIVATE, TURN</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTDEST</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTTCP</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CONFIGURATION:CFTUCONF</p>         </td>
-         <td><p>DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:BATCH <sup>(2)</sup></p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p>ID, FNAME</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:UI <sup>(3)</sup></p>         </td>
-         <td><p>CONNECT</p>         </td>
-         <td><p>TYPE, ID, GROUP</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:BATCH</p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p>ID, FNAME</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:CATALOG</p>         </td>
-         <td><p>PURGE</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:LOG</p>         </td>
-         <td><p>SWITCH</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:ACCOUNT</p>         </td>
-         <td><p>SWITCH</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:CFTSRV</p>         </td>
-         <td><p>STARTUP, SHUTDOWN</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SERVICE:COM</p>         </td>
-         <td><p>DELETE, VIEW</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>COMMAND:EXTRACT</p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>COMMAND:MQUERY</p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>COMMAND:TURN</p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>COMMAND:CFTSUPPORT</p>         </td>
-         <td><p>EXECUTE</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>TRANSFER</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE</p>         </td>
-         <td><p>IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME</p>         </td>
-      </tr>
-      <tr>
-         <td><p>AM:RIGHTS <sup>(4)</sup></p>         </td>
-         <td><p>VIEW_SELF, VIEW_OTHERS</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FILTER:CATALOG</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FILTER:LOG</p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>ID</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FILE <sup>(5)</sup></p>         </td>
-         <td><p>CREATE, DELETE, VIEW, EDIT</p>         </td>
-         <td><p>FNAME</p>         </td>
-      </tr>
-      <tr>
-         <td><p>URL <sup>(6)</sup></p>         </td>
-         <td><p>VIEW</p>         </td>
-         <td><p>URL</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Resource  |  Actions  |  Properties  |
+| --- | --- | --- |
+|  CONFIGURATION:PKICER  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
+|  CONFIGURATION:PKIENTITY  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
+|  CONFIGURATION:PKIKEY  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
+|  CONFIGURATION:CFTPARM  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTNET  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTPROT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION: CFTSEND  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION: CFTSENDI <sup>(1)</sup>  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION: CFTRECV  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTAUTH  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTXLATE  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTLOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTCAT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTCOM  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTACCNT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTEXIT  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTIDF  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTFOLDER  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE  |  ID  |
+|  CONFIGURATION:CFTETB  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTAPPL  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTSSL  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTCRON  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, RELOAD  |  ID  |
+|  CONFIGURATION:CFTPART  |  CREATE, DELETE, VIEW, EDIT, ACTIVATE, DEACTIVATE, TURN  |  ID  |
+|  CONFIGURATION:CFTDEST  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTTCP  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  CONFIGURATION:CFTUCONF  |  DELETE, VIEW, EDIT  |  ID  |
+|   |   |   |
+|  SERVICE:BATCH <sup>(2)</sup>  |  EXECUTE  |  ID, FNAME  |
+|  SERVICE:UI <sup>(3)</sup>  |  CONNECT  |  TYPE, ID, GROUP  |
+|  SERVICE:BATCH  |  EXECUTE  |  ID, FNAME  |
+|  SERVICE:CATALOG  |  PURGE  |   |
+|  SERVICE:LOG  |  SWITCH  |   |
+|  SERVICE:ACCOUNT  |  SWITCH  |   |
+|  SERVICE:CFTSRV  |  STARTUP, SHUTDOWN  |   |
+|  SERVICE:COM  |  DELETE, VIEW  |   |
+|   |   |   |
+|  COMMAND:EXTRACT  |  EXECUTE  |   |
+|  COMMAND:MQUERY  |  EXECUTE  |   |
+|  COMMAND:TURN  |  EXECUTE  |   |
+|  COMMAND:CFTSUPPORT  |  EXECUTE  |   |
+|  TRANSFER  |  CREATE, DELETE, VIEW, EDIT, CANCEL, RESUME, PAUSE, EXECUTE, SUBMIT, END, VIEWIFLE, EDITFILE, DELETEFILE  |  IDAPPL, ID, PART, SPART, RPART, IPART, TYPE, DIRECT, MODE, FNAME, MESSAGE, SUSER, RUSER, SAPPL, RAPPL, NFNAME  |
+|  AM:RIGHTS <sup>(4)</sup>  |  VIEW_SELF, VIEW_OTHERS  |  ID  |
+|  FILTER:CATALOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  FILTER:LOG  |  CREATE, DELETE, VIEW, EDIT  |  ID  |
+|  FILE <sup>(5)</sup>  |  CREATE, DELETE, VIEW, EDIT  |  FNAME  |
+|  URL <sup>(6)</sup>  |  VIEW  |  URL  |
+
 
 1.  Manage implicit SEND object definitions.
 2.  Manage batch files.
@@ -447,61 +175,6 @@ In this use case, you assign the user a role that references a privilege having 
 
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
-
-
-    CFTROLE      ID          = '',
-                 COMMENT     = '',
-    /*           ALIASES     = ( ) ,*/
-                 PRIVS       = ( '',
-                                  'PRIV-CONN-INTERFACES',
-                                  'CONFIGURATION:CFTCOM_VIEW',
-                                  'CONFIGURATION:CFTPARM_VIEW',
-                                  'FILTER:CATALOG_ALL',
-                                  'FILTER:LOG_ALL',
-                                  'FILE_VIEW',
-                                  'CONFIGURATION:PKICER_VIEW',
-                                  'CONFIGURATION:PKIENTITY_VIEW',
-                                   'CONFIGURATION:PKIKEY_VIEW',
-                                  'CONFIGURATION:CFTPARM_VIEW',
-                                  'CONFIGURATION:CFTNET_VIEW',
-                                  'CONFIGURATION:CFTPROT_VIEW',
-                                  'CONFIGURATION:CFTSEND_VIEW',
-                                  'CONFIGURATION:CFTSENDI_VIEW',
-                                  'CONFIGURATION:CFTRECV_VIEW',
-                                  'CONFIGURATION:CFTAUTH_VIEW',
-                                  'CONFIGURATION:CFTXLATE_VIEW',
-                                  'CONFIGURATION:CFTLOG_VIEW',
-                                  'CONFIGURATION:CFTCAT_VIEW',
-                                  'CONFIGURATION:CFTCOM_VIEW',
-                                  'CONFIGURATION:CFTACCNT_VIEW',
-                                  'CONFIGURATION:CFTEXIT_VIEW',
-                                  'CONFIGURATION:CFTIDF_VIEW',
-                                  'CONFIGURATION:CFTFOLDER_VIEW',
-                                  'CONFIGURATION:CFTETB_VIEW',
-                                  'CONFIGURATION:CFTAPPL_VIEW',
-                                  'CONFIGURATION:CFTSSL_VIEW',
-                                  'CONFIGURATION:CFTCRON_VIEW',
-                                  'CONFIGURATION:CFTPART_VIEW',
-                                  'CONFIGURATION:CFTDEST_VIEW',
-                                  'CONFIGURATION:CFTTCP_VIEW',
-                                  'CONFIGURATION:CFTUCONF_VIEW',
-                                  'SERVICE:COM_VIEW',
-                                  'AM:RIGHTS_VIEW_SELF'),
-                  MODE        = 'REPLACE'
-     
-    CFTPRIV       ID          = '',
-                  COMMENT     = 'PRIV limits transfers - no delete condition',
-                  RESOURCE    = 'TRANSFER',
-                  ACTIONS     = ( 'CREATE',
-                                  'RESUME',
-                                  'VIEW',
-                                  'CANCEL',   
-                                   'PAUSE',
-                                  'EXECUTE'),
-                  CONDITION   = ' IDF=="MYIDF" && PART=="MYPART" ',
-                  ORIGIN      = 'CFTUTIL',
-                  MODE        = 'REPLACE'
-
 ### Add an administrator role
 
 As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and instance group.
@@ -515,65 +188,5 @@ In this use case, you assign the user role that refers to a privilege having the
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
 The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
-
-
-
-    CFTROLE      ID          = '',
-                  COMMENT     = 'Administrator role for Production Transfer CFT Windows',
-
-
-                                  'AM:RIGHTS_VIEW_ALL',
-                                  'CONFIGURATION:PKICER_ALL',
-                                  'CONFIGURATION:PKIENTITY_ALL',
-                                  'CONFIGURATION:PKIKEY_ALL',
-                                  'CONFIGURATION:CFTPARM_ALL',
-                                  'CONFIGURATION:CFTNET_ALL',
-                                  'CONFIGURATION:CFTPROT_ALL',
-                                  'CONFIGURATION:CFTSEND_ALL',
-                                  'CONFIGURATION:CFTSENDI_ALL',
-                                  'CONFIGURATION:CFTRECV_ALL',
-                                  'CONFIGURATION:CFTAUTH_ALL',
-                                  'CONFIGURATION:CFTXLATE_ALL',
-                                  'CONFIGURATION:CFTLOG_ALL',
-                                  'CONFIGURATION:CFTCAT_ALL',
-                                  'CONFIGURATION:CFTCOM_ALL',
-                                   'CONFIGURATION:CFTACCNT_ALL',
-                                  'CONFIGURATION:CFTEXIT_ALL',
-                                  'CONFIGURATION:CFTIDF_ALL',
-                                  'CONFIGURATION:CFTFOLDER_ALL',
-                                  'CONFIGURATION:CFTETB_ALL',
-                                  'CONFIGURATION:CFTAPPL_ALL',
-                                  'CONFIGURATION:CFTSSL_ALL',
-                                  'CONFIGURATION:CFTCRON_ALL',
-                                  'CONFIGURATION:CFTPART_ALL',
-                                   'CONFIGURATION:CFTDEST_ALL',
-                                  'CONFIGURATION:CFTROLE_ALL',
-                                  'CONFIGURATION:CFTPRIV_ALL',
-                                  'CONFIGURATION:CFTTCP_ALL',
-                                   'CONFIGURATION:CFTUCONF_ALL',
-                                  'SERVICE:CATALOG_PURGE',
-                                  'SERVICE:LOG_SWITCH',
-                                  'SERVICE:ACCOUNT_SWITCH',
-                                  'SERVICE:BATCH_EXECUTE',
-                                   'SERVICE:CFTSRV_ALL',
-                                  'SERVICE:COM_ALL',
-                                  'TRANSFER_ALL',
-                                  'FILTER:CATALOG_ALL',
-                                  'FILTER:LOG_ALL',
-                                  'FILE_ALL',
-                                  'URL_VIEW',
-                                  'COMMAND:EXTRACT_ALL',
-                                  'COMMAND:MQUERY_ALL',
-                                  'COMMAND:TURN_ALL',
-                                  'COMMAND:CFTSUPPORT_ALL'),
-                  MODE        = 'REPLACE'
-     
-    CFTPRIV      ID          = '',
-                  COMMENT     = 'PRIV LIMITs the connection for a given Transfer CFT name',
-                 RESOURCE    = 'SERVICE:UI',
-                 ACTIONS     = ( 'CONNECT'),
-                 CONDITION   = 'GROUP=="PRODUCTION" && ID~="CFT-PROD-ITEM*"',  
-                 MODE        = 'REPLACE'
-     
 
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to `PRODUCTION`, and whose `cft.instance_id` value begins with `CFT-PROD-ITEM`.

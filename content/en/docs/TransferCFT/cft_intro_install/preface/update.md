@@ -21,11 +21,6 @@ If you are not familiar with the installation procedure, you may want to first r
 -   Example  
     The following example demonstrates a Transfer CFT {{< TransferCFT/releasenumber >}} SP4 installation over an existing product installed in `/home/cftuser/CFT33x`.
 
-<!-- -->
-
-
-    /home/cftuser/Transfer_CFT_OtherUnixes_V3.3.x: ./ TransferCFT_{{< TransferCFT/releasenumber >}}-SP4_hp_nonstop_oss-ia 64-32.run install /home/cftuser/CFT33x
-
 > **Note:**
 >
 >  
@@ -43,8 +38,3 @@ A rollback procedure uninstalls the last installed service pack and reverts Tran
 
 -   Example  
     The following example demonstrates a Transfer CFT 3.5 SP4 rollback for a product installed in `/home/cftuser/CFT33x.`
-
-<!-- -->
-
-
-    /home/cftuser/CFT33x/inst/TransferCFT: ./install.sh rollback

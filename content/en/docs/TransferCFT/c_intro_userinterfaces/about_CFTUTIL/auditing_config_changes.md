@@ -23,10 +23,6 @@ server. The configuration change can be:
 
 Using CFTUTIL, for example, define the parameter in UCONFSET as follows:
 
-
-    CFTUTIL UCONFSET ID=sentinel.xfb.audit, 
-     value=yes
-
 ### Message Track
 
 Message Track is an XML XFBLog message
@@ -44,125 +40,41 @@ containing:
 
 #### Ident attribute details
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTA0nX         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>n=1</p>         </td>
-         <td>CFTPARM
-file         </td>
-      </tr>
-      <tr>
-         <td><p>n=2</p>         </td>
-         <td>CFTPART
-file         </td>
-      </tr>
-      <tr>
-         <td><p>n=3</p>         </td>
-         <td>CFTCAT
-file         </td>
-      </tr>
-      <tr>
-         <td><p>n=4</p>         </td>
-         <td>CFTCOM
-file         </td>
-      </tr>
-      <tr>
-         <td><p>n=5</p>         </td>
-         <td>CFTLOG
-file         </td>
-      </tr>
-      <tr>
-         <td><p>n=6</p>         </td>
-         <td>CFTACCNT
-file         </td>
-      </tr>
-      <tr>
-         <td><p>X=I </p>         </td>
-         <td>Information         </td>
-      </tr>
-      <tr>
-         <td>X=E         </td>
-         <td>Error          </td>
-      </tr>
-   </tbody>
-</table>
+
+| CFTA0nX  | Details  |
+| --- | --- |
+|  n=1  | CFTPARM file  |
+|  n=2  | CFTPART file  |
+|  n=3  | CFTCAT file  |
+|  n=4  | CFTCOM file  |
+|  n=5  | CFTLOG file  |
+|  n=6  | CFTACCNT file  |
+|  X=I  | Information  |
+| X=E  | Error  |
+
 
 <span id="Return message attribute"></span>
 
 #### Return message attribute details
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Attribute         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Action=&amp;act         </td>
-         <td> &amp;act
-is the action on an object (“CREATE” , “MODIFY” , “DELETE”)         </td>
-      </tr>
-      <tr>
-         <td>Object=&amp;obj         </td>
-         <td>&amp;obj is the
-object identifier (type of object for the CFTFILE command)         </td>
-      </tr>
-      <tr>
-         <td>id=&amp;id         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>user=&amp;user         </td>
-         <td> &amp;user
-is the user that modified the object         </td>
-      </tr>
-      <tr>
-         <td>groupid=&amp;group         </td>
-         <td>&amp;group
-is the user group that modified the object         </td>
-      </tr>
-      <tr>
-         <td>owner=&amp;owner         </td>
-         <td>&amp;owner
-is the object owner         </td>
-      </tr>
-      <tr>
-         <td>CrDate=&amp;cdate         </td>
-         <td>&amp;cdate
-is the Creation Date for the object         </td>
-      </tr>
-      <tr>
-         <td>CrTime=&amp;ctime         </td>
-         <td>&amp;ctime
-is the Creation Time for the object         </td>
-      </tr>
-      <tr>
-         <td>UpdDate=&amp;upddate         </td>
-         <td>&amp;upddate
-is the Update Date for the object         </td>
-      </tr>
-      <tr>
-         <td>UpdTime=&amp;updtime         </td>
-         <td>&amp;updtime
-is the Update Time for the object         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Attribute  | Details  |
+| --- | --- |
+| Action=&amp;act  |  &amp;act is the action on an object (“CREATE” , “MODIFY” , “DELETE”)  |
+| Object=&amp;obj  | &amp;obj is the object identifier (type of object for the CFTFILE command)  |
+| id=&amp;id  |   |
+| user=&amp;user  |  &amp;user is the user that modified the object  |
+| groupid=&amp;group  | &amp;group is the user group that modified the object  |
+| owner=&amp;owner  | &amp;owner is the object owner  |
+| CrDate=&amp;cdate  | &amp;cdate is the Creation Date for the object  |
+| CrTime=&amp;ctime  | &amp;ctime is the Creation Time for the object  |
+| UpdDate=&amp;upddate  | &amp;upddate is the Update Date for the object  |
+| UpdTime=&amp;updtime  | &amp;updtime is the Update Time for the object  |
+
 
 ## Disable XFB.Log
 
 By default, `sentinel.xfb.log` is set to `IEWF `(information, error, warning, and fatal), which sends Transfer CFT log information to Sentinel. To disable the XFB.Log, use the uconf utility to set this value to ' '.
-
-
-    CFTUTIL uconfset id=sentinel.xfb.log, value=' '
 
 Related topics
 

@@ -22,24 +22,13 @@ After installing {{< TransferCFT/componentshortname  >}}
 
 -   Execute the `profile` in the {{< TransferCFT/componentshortname >}} runtime directory to define environment
     variables. Run: `‘. ./profile’`
-
 -   Create a new set of Transfer
     CFT working files, parameters, partners, catalog, communication file, logs,
     use the sample configuration files cft-tcp.conf and cft-tcp-part.conf in the `runtime/conf `directory. You can configure these during the product installation, or manually after installation.
-
 -   Use `cftinit <configuration_file>` > and/or `cftupdate` to interpret the parameter and
     partner files.  
-
-
-
-        cftinit  conf/cft-tcp.conf
-        cftupdate conf/cft-tcp-part.conf
-
       
     or  
-
-
-        cftinit conf/cft-tcp.conf conf/cft-tcp-part.conf
 
 > **Note:**
 >
@@ -61,36 +50,15 @@ Delivered partners are:
 
 The following table lists the commands according to {{< TransferCFT/componentlongname  >}} version.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Version 2.7.1 and higher         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Version 2.7.0 and lower         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft start         </td>
-         <td>cftstart         </td>
-      </tr>
-      <tr>
-         <td>cft stop         </td>
-         <td>cftstop         </td>
-      </tr>
-      <tr>
-         <td>cft status         </td>
-         <td>cftstatus         </td>
-      </tr>
-      <tr>
-         <td>cft force-stop         </td>
-         <td>cftstop -kill         </td>
-      </tr>
-      <tr>
-         <td>cft force-stop –kill         </td>
-         <td>cftstop -forcedkill         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Version 2.7.1 and higher  | Version 2.7.0 and lower  |
+| --- | --- |
+| cft start  | cftstart  |
+| cft stop  | cftstop  |
+| cft status  | cftstatus  |
+| cft force-stop  | cftstop -kill  |
+| cft force-stop –kill  | cftstop -forcedkill  |
+
 
 > **Note:**
 >
@@ -109,19 +77,7 @@ You can start Transfer CFT with the `cft start `utility; see also Transfer CFT M
 You can use one of the following methods to shut down Transfer CFT:
 
 -   The `CFTUTIL `utility
-
-<!-- -->
-
-
-
-    CFTUTIL shut fast=no
-    or
-    CFTUTIL shut fast=yes
-
-The `cft ` utility
-
-
-    cft stop
+-   The `cft ` utility
 
 For more information, see the administrative commands in [Manage the Transfer CFT server](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/administration/start_stop_cft.htm).
 

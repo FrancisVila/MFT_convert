@@ -104,70 +104,9 @@ Provides helps for the available fields for the different elements, or lists the
 The following information is displayed for the CONTENT parameter BRIEF
 value:
 
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-     
-
-
-
-
-
-
-
 <span id="CONTENT_BRIEF_Display"></span>
 
 ### CONTENT=BRIEF display (former format, or no model)
-
-
-
-
-     
-
-
-
-
-
-
-
-
-
-
-
-     
-
-
-     
-
-
-
-
-
-
-
-
-     
-
-
-
-
-
-
 
 Id
 
@@ -209,103 +148,7 @@ CN (Common name) attribute of the certificate signer DN field.
 
 ### CONTENT=FULL display (default display)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### CONTENT=FULL display (former format, or no model)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Certificate id
 
@@ -367,22 +210,7 @@ Value of the certificate signer DN field.
 
 You can use the FMODEL parameter to display only certain types of certificates; for example below we want to display the certificates that have the ACT state:
 
-
-    PKIUTIL LISTPKI CONTENT=BRIEF, STATE=ACT
-
 Resulting in:
-
-
-
-    Id.              Root         Type    State Exp.Date       K   Delivered to Delivered by
-    EXPIRED      EXPIRED  ROOT   ACT     01/09/2015 !      4k_ca        4k_ca
-    EXPIRED    EXPIRED   USER    ACT    01/09/2030 ? x 4k_user      4k_ca
-    ROOT            ROOT         ROOT   ACT    22/07/2029       2k_root      2k_root
-    INTER1      ROOT         INTER  ACT    22/07/2029       2k_l1_ca     2k_root
-    ?       USER2  ROOT        USER   ACT    22/07/2029   x  2k_l3_user1  2k_l2_ca
-    USER1     ROOT         USER    ACT    22/07/2029   x  2k_l2_user1  2k_l1_ca
-    USER0       ROOT         USER    ACT    22/07/2029   x  2k_l1_user1  2k_root
-    >      7 Certificates selected
 
 Key to indicators and symbols:
 

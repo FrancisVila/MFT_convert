@@ -95,46 +95,17 @@ parameter.
 This table describes the parameters to define the CFTCOM object when the communication
 type is TCPIP.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/addrlist">ADDRLIST</a></p>         </td>
-         <td><p>This field defines a list of authorized addresses that you can use to
-connect to the communication media.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/host">HOST</a></p>         </td>
-         <td><p>Networking IP address of the local resource.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p>         </td>
-         <td><p>Identifier of the CFTCOM object.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/mode">MODE</a></p>         </td>
-         <td><p>Action to do in the parameter or partner base. This parameter
-applies to all commands that affect CFT bases.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/port">PORT</a></p>         </td>
-         <td><p>Listening port of the network.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/protocol">PROTOCOL</a></p>         </td>
-         <td><p>Defines the remote TCP network resource</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a></p>         </td>
-         <td><p>Transfer CFT communication means.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameters  | Description  |
+| --- | --- |
+|  <a href="../../../command_summary/parameter_intro/addrlist">ADDRLIST</a>  |  This field defines a list of authorized addresses that you can use to connect to the communication media.  |
+|  <a href="../../../command_summary/parameter_intro/host">HOST</a>  |  Networking IP address of the local resource.  |
+|  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Identifier of the CFTCOM object.  |
+|  <a href="../../../command_summary/parameter_intro/mode">MODE</a>  |  Action to do in the parameter or partner base. This parameter applies to all commands that affect CFT bases.  |
+|  <a href="../../../command_summary/parameter_intro/port">PORT</a>  |  Listening port of the network.  |
+|  <a href="../../../command_summary/parameter_intro/protocol">PROTOCOL</a>  |  Defines the remote TCP network resource  |
+|  <a href="../../../command_summary/parameter_intro/type">TYPE</a>  |  Transfer CFT communication means.  |
+
 
 <span id="Defining_CFTCOM_FILE"></span>
 
@@ -143,65 +114,23 @@ applies to all commands that affect CFT bases.</p>         </td>
 This table describes the parameters to define the CFTCOM object when the communication
 type is FILE.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/id">ID</a> </p>         </td>
-         <td><p>Identifier of the CFTCOM command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/mode">MODE</a></p>         </td>
-         <td><p>Action to do in the parameter or partner base. This parameter
-applies to all commands that affect Transfer CFT bases.</p>         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a>         </td>
-         <td>Batch to execute when the alert ends.         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a>         </td>
-         <td><p>Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.</p>         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a>         </td>
-         <td><p>Command file usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.</p>
-<p>Once this limit is reached, the CFTCOM/TLVWEXEC is executed.</p>         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a>         </td>
-         <td>Batch to execute when CFTCOM/TLVWARN is reached.         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a>         </td>
-         <td>The minimum amount of time, in seconds, to wait before resending an alert.         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/type">TYPE</a> </p>         </td>
-         <td><p>Transfer CFT communication means.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../command_summary/parameter_intro/wscan">WSCAN</a></p>         </td>
-         <td><p>The frequency, in seconds, with which the Transfer CFT scans
-the communication file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameters  | Description  |
+| --- | --- |
+|  <a href="../../../command_summary/parameter_intro/id">ID</a>  |  Identifier of the CFTCOM command.  |
+|  <a href="../../../command_summary/parameter_intro/mode">MODE</a>  |  Action to do in the parameter or partner base. This parameter applies to all commands that affect Transfer CFT bases.  |
+| <a href="../../../command_summary/parameter_intro/tlvcexec">TLVCEXEC</a>  | Batch to execute when the alert ends.  |
+| <a href="../../../command_summary/parameter_intro/tlvclear">TLVCLEAR</a>  |  Level below which the alert ceases, as a percentage of filling, where 0% indicates the file is empty and 100% that it is full.  |
+| <a href="../../../command_summary/parameter_intro/tlvwarn">TLVWARN</a>  |  Command file usage limit before issuing an alert, as is a percentage of filling, where 0% indicates the file is empty, and 100% that it is full.<br/>Once this limit is reached, the CFTCOM/TLVWEXEC is executed.  |
+| <a href="../../../command_summary/parameter_intro/tlvwexec">TLVWEXEC</a>  | Batch to execute when CFTCOM/TLVWARN is reached.  |
+| <a href="../../../command_summary/parameter_intro/tlvwrate">TLVWRATE</a>  | The minimum amount of time, in seconds, to wait before resending an alert.  |
+|  <a href="../../../command_summary/parameter_intro/type">TYPE</a>  |  Transfer CFT communication means.  |
+|  <a href="../../../command_summary/parameter_intro/wscan">WSCAN</a>  |  The frequency, in seconds, with which the Transfer CFT scans the communication file.  |
+
 
 **Example**
 
 TYPE=FILE
-
-
-    CFTCOM ID = IDCOM,
-    TYPE = FILE
-    NAME = <filename>,
-    WSCAN = 120
 
 ### Communication media characteristics
 
@@ -225,13 +154,3 @@ TYPE=FILE
         variables %\_CAT\_IDT% and %\_CAT\_IDTU%.
 
 **Example**
-
-
-
-    SEND 
-    PART = PART1
-    IDF = TEST1 
-     
-    Then...
-    LISTCAT 
-    IDT = %_CAT_IDT%

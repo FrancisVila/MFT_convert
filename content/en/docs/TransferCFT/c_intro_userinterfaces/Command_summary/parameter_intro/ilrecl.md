@@ -44,20 +44,6 @@ the file record concept: actual size of the input file records.
 
 For the systems below not handling this concept:
 
-<table>
-         
-         
-         
-   
-   <tbody>
-      <tr>
-         <td><p><strong>UNIX, Windows</strong></p>         </td>
-         <td><p>512 for text files (ITYPE = T, X or O).<br />
-4096 for binary or variables files (ITYPE = {B | V}).</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
 [Return to Command index](../../)

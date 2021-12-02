@@ -38,15 +38,15 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 <table>
    <thead>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Function         </th>
-<th colspan="5" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt">  OS         </th>
+<th rowspan="2"  >Function         </th>
+<th colspan="5"  >  OS         </th>
       </tr>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">Windows         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">UNIX         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">z/OS         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt">IBM i         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt">HP NS         </th>
+<th  >Windows         </th>
+<th  >UNIX         </th>
+<th  >z/OS         </th>
+<th  >IBM i         </th>
+<th  >HP NS         </th>
       </tr>
    </thead>
    <tbody>
@@ -234,54 +234,17 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 
 #### User interface comparison
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Functionality         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt"><p>Central Governance<br />
-</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 8pt"><p>Transfer CFT user interface<br />
-</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Administration</p>         </td>
-         <td>X         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>Configuration         </td>
-         <td>X*         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>Monitor transfers         </td>
-         <td>X         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>Manage transfers         </td>
-         <td>-         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>Monitor the log         </td>
-         <td>X         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>Manage certificates         </td>
-         <td>X         </td>
-         <td>X         </td>
-      </tr>
-      <tr>
-         <td>End-to-end monitoring         </td>
-         <td>X         </td>
-         <td>-         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Functionality  |  Central Governance<br />  |  Transfer CFT user interface<br />  |
+| --- | --- | --- |
+|  Administration  | X  | X  |
+| Configuration  | X*  | X  |
+| Monitor transfers  | X  | X  |
+| Manage transfers  | -  | X  |
+| Monitor the log  | X  | X  |
+| Manage certificates  | X  | X  |
+| End-to-end monitoring  | X  | -  |
+
 
 **Administration**: Start, stop, and restart Transfer CFT.
 
@@ -302,48 +265,6 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 #### Supported file systems for multi-node architecture
 
 The following non-exhaustive table lists shared file systems that have been tested with Transfer CFT.
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Operating system         </th>
-<th class="HeadE-Column1-Header1">Tested and supported         </th>
-<th class="HeadD-Column1-Header1">Not supported         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>AIX         </td>
-         <td>GPFS (recommended), NFSv4         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>HP-UX         </td>
-         <td>NFSv4         </td>
-         <td>NFSv3, CXFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Linux-x86         </td>
-         <td>GPFS (recommended), NFSv4, GFS2, AWS EFS         </td>
-         <td>NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Solaris         </td>
-         <td>NFSv4         </td>
-         <td>NFSv3, CXFS, QFS, VeritasSF         </td>
-      </tr>
-      <tr>
-         <td>Windows-x86         </td>
-         <td>SMB/CIFS, GPFS         </td>
-         <td>CXFS, NFS         </td>
-      </tr>
-      <tr>
-         <td>z/OS         </td>
-         <td>Sharing DASD across Sysplex         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
 
 <span id="Limitations"></span>
 

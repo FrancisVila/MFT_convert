@@ -18,10 +18,6 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 <!-- -->
 
-
-
-    CFTUTIL CFTEXT type=all, fout=cft-extract.conf
-
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
 
 <!-- -->
@@ -33,11 +29,6 @@ Migrate PARM, PART, IDF and other static configuration objects.
 1.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
 2.  Import your static configuration objects using the cftinit command.  
     Enter:
-
-<!-- -->
-
-
-    cftinit cft-extract.conf
 
 ### Migrating UCONF parameters
 
@@ -63,17 +54,11 @@ Migrate PARM, PART, IDF and other static configuration objects.
 
 <!-- -->
 
-
-
-    UCONFSET id=<parameter_id>, value=<value>
-
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
 
 1.  Import the selected UCONF parameters using the script file and the CFTUTIL command. Replace the &lt;script\_filename> with the new script file path:
-
-<!-- -->
 
 Example
 
@@ -127,9 +112,6 @@ Example
 
 <!-- -->
 
-
-    CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.5_filename>, ofname=catalog_output.xml
-
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
 <!-- -->
@@ -141,9 +123,6 @@ Example
 
 Example
 
-
-    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_installation>
-
 ### Migrating the communication media files
 
 1.  Load the former Transfer CFT (2.5 or 2.6) environment.
@@ -153,10 +132,6 @@ Example
 1.  Export the communication media file using command CFTMI240:
 
 <!-- -->
-
-
-
-    CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.5_filename>, ofname=com_output.xml
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
 
@@ -171,6 +146,3 @@ Example
 -   Windows: `$CFTCOM`
 
 Example
-
-
-    CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_installation>

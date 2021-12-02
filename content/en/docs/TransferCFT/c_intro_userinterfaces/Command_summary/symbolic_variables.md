@@ -33,45 +33,17 @@ The symbolic variable syntax is as follows:
 -   Optionally followed
     by the character(s):
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Indicates...         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>+         </td>
-         <td>That the variable toggles to upper case         </td>
-      </tr>
-      <tr>
-         <td>-         </td>
-         <td>That the variable toggles to lower case         </td>
-      </tr>
-      <tr>
-         <td>:         </td>
-         <td>That the right padding of the variable is suppressed         </td>
-      </tr>
-      <tr>
-         <td>&lt;         </td>
-         <td>The left justification of the variable (default value)         </td>
-      </tr>
-      <tr>
-         <td>&gt;         </td>
-         <td>The right justification of the variable         </td>
-      </tr>
-      <tr>
-         <td>%         </td>
-         <td>Indicates use of the <a href="#Separate">separator syntax</a>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td><p>These characters can be used in combination, such as <strong>+:</strong> or  <strong>&gt;+:</strong>.     </p>
-<p>See the <a href="#Examples" class="MCXref xref">Example using optional characters</a></p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Character  | Indicates...  |
+| --- | --- |
+| +  | That the variable toggles to upper case  |
+| -  | That the variable toggles to lower case  |
+| :  | That the right padding of the variable is suppressed  |
+| &lt;  | The left justification of the variable (default value)  |
+| &gt;  | The right justification of the variable  |
+| %  | Indicates use of the <a href="#Separate">separator syntax</a>  |
+|   |  These characters can be used in combination, such as **+:** or **&gt;+:**. <br/>See the <a href="#Examples" class="MCXref xref">Example using optional characters</a>  |
+
 
 -   Optionally followed
     by a character string to be used as a prefix (-string\_prefix)
@@ -224,29 +196,6 @@ string: ‘F2345’.
 Depending on the format of the associated symbolic variable, the substituted
 values are:
 
-
-
-    &VAR = ’F2345’
-    &3VAR = ’F23’
-    &7VAR = ’F2345 ’
-     
-    &.VAR = ’&VAR’ (not substituted)
-    &.4VAR = 'F2345' 
-    &1.VAR = ’F2345’
-    &2.VAR = ’2345’
-    &5.VAR = ’5’
-    &6.VAR = ’’
-     
-    &1.1VAR = ’F’
-    &2.1VAR = ’2’
-    &5.1VAR = ’5’
-    &6.1VAR = ’ ’
-     
-    &1.2VAR = ’F2’
-    &2.3VAR = ’234’
-    &5.6VAR = ’5 ’ (5 blank characters)
-    &6.7VAR = ’ ’ (7 blank characters)
-
 <span id="Examples"></span>
 
 #### Example using optional characters
@@ -314,16 +263,16 @@ List of symbolic variables
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Domain         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbolic variable         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Maximum length         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Corresponding substituted
+<th >Domain         </th>
+<th >Symbolic variable         </th>
+<th  >Maximum length         </th>
+<th >Corresponding substituted
 value         </th>
       </tr>
    </thead>
    <tbody>
       <tr>
-<th rowspan="8" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%">PARTNERS          </th>
+<th rowspan="8"  data-valign="top" width="21%">PARTNERS          </th>
          <td><p>&amp;PART </p>         </td>
          <td>32         </td>
          <td><p>Partner name (ID of CFTPART) </p>         </td>
@@ -367,7 +316,7 @@ local {{< TransferCFT/componentshortname  >}} identifies itself to its partner  
 remote partner identifies itself to the local {{< TransferCFT/componentlongname  >}}</p>         </td>
       </tr>
       <tr>
-<th rowspan="7" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>USER </p>         </th>
+<th rowspan="7"  data-valign="top" width="21%"><p>USER </p>         </th>
          <td><p>&amp;SUSER </p>         </td>
          <td>32         </td>
          <td><p>Sending user name </p>         </td>
@@ -404,7 +353,7 @@ In listcat content=debug this is attribute is MSG         </td>
          <td>{{< TransferCFT/componentshortname  >}} job name, can be used in exec and cronjob procedures         </td>
       </tr>
       <tr>
-<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>APPLICATIONS </p>         </th>
+<th rowspan="5"  data-valign="top" width="21%"><p>APPLICATIONS </p>         </th>
          <td><p>&amp;SAPPL</p>         </td>
          <td><p> </p>
 <p>8</p>
@@ -438,7 +387,7 @@ PeSIT E
          <td><p>PI99 contents (PeSIT E) </p>         </td>
       </tr>
       <tr>
-<th rowspan="22" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>TRANSFER </p>         </th>
+<th rowspan="22"  data-valign="top" width="21%"><p>TRANSFER </p>         </th>
          <td><p>&amp;IDT</p>         </td>
          <td>8         </td>
          <td><p>Transfer identifier </p>         </td>
@@ -558,7 +507,7 @@ REPLY, or NACK</p>
 <p>Requester mode = ‘R’ transfer</p>         </td>
       </tr>
       <tr>
-<th rowspan="33" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>FILE</p>         </th>
+<th rowspan="33"  data-valign="top" width="21%"><p>FILE</p>         </th>
          <td><p>&amp;IDF </p>         </td>
          <td>32         </td>
          <td><p>Model file identifier (logical name)  </p>         </td>
@@ -730,7 +679,7 @@ site </p>         </td>
          <td><p>Suffix associated with file name of the sending file</p>         </td>
       </tr>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>MESSAGES</p>         </th>
+<th rowspan="2"  data-valign="top" width="21%"><p>MESSAGES</p>         </th>
          <td><p>&amp;IDM</p>         </td>
          <td>32         </td>
          <td><p>Message identifier </p>         </td>
@@ -745,7 +694,7 @@ site </p>         </td>
 <p>PeSIT E</p>         </td>
       </tr>
       <tr>
-<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a FILE </p>         </th>
+<th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a FILE </p>         </th>
          <td><p>&amp;FDATE </p>         </td>
          <td>8         </td>
          <td><p>Date associated with the file </p>         </td>
@@ -771,7 +720,7 @@ site </p>         </td>
          <td><p>Day associated with the file </p>         </td>
       </tr>
       <tr>
-<th rowspan="5" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a CATALOG </p>         </th>
+<th rowspan="5"  data-valign="top" width="21%"><p>DATE and TIME associated with a CATALOG </p>         </th>
          <td><p>&amp;CDATE </p>         </td>
          <td>8         </td>
          <td><p>Catalog entry date </p>         </td>
@@ -797,7 +746,7 @@ site </p>         </td>
          <td><p>Catalog entry day </p>         </td>
       </tr>
       <tr>
-<th rowspan="11" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>DATE and TIME associated with a TRANSFER </p>         </th>
+<th rowspan="11"  data-valign="top" width="21%"><p>DATE and TIME associated with a TRANSFER </p>         </th>
          <td><p>&amp;BDATE </p>         </td>
          <td>8         </td>
          <td><p>Transfer start date </p>
@@ -857,7 +806,7 @@ site </p>         </td>
          <td><p>Transmission duration in seconds (TIMES attribute in the {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
       </tr>
       <tr>
-<th rowspan="3" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%">CONTROL OUTPUT          </th>
+<th rowspan="3"  data-valign="top" width="21%">CONTROL OUTPUT          </th>
          <td><p>&amp;FLOG </p>         </td>
          <td>512         </td>
          <td><p>Name of last log file used by {{< TransferCFT/componentshortname  >}} </p>         </td>
@@ -873,7 +822,7 @@ site </p>         </td>
          <td><p>Name of catalog used by {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>TRACKING</p>         </th>
+<th rowspan="2"  data-valign="top" width="21%"><p>TRACKING</p>         </th>
          <td><p>&amp;XFRCYCID </p>         </td>
          <td>250         </td>
          <td><p>Processing cycle identifier (set of tracked instances that
@@ -885,7 +834,7 @@ concern a single transfer) </p>         </td>
          <td><p>Tracked object name </p>         </td>
       </tr>
       <tr>
-<th rowspan="9" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>SSL (1) </p>         </th>
+<th rowspan="9"  data-valign="top" width="21%"><p>SSL (1) </p>         </th>
          <td><p>&amp;SSL</p>         </td>
          <td>1         </td>
          <td><p>Indicates if the session the transfer was carried out on
@@ -938,7 +887,7 @@ presented by the remote partner was recorded </p>
 <p>This is the same as the CFTSSL CERFNAME parameter value</p>         </td>
       </tr>
       <tr>
-<th rowspan="4" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>SYSTEM </p>         </th>
+<th rowspan="4"  data-valign="top" width="21%"><p>SYSTEM </p>         </th>
          <td><p>&amp;SYSDATE </p>         </td>
          <td>8         </td>
          <td><p>System date </p>         </td>
@@ -960,7 +909,7 @@ date </p>         </td>
          <td><p>Day of the week (Sunday = 0, 6 = Saturday)</p>         </td>
       </tr>
       <tr>
-<th rowspan="9" class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2" data-valign="top" width="21%"><p>CAT/ ACCOUNT </p>
+<th rowspan="9"  data-valign="top" width="21%"><p>CAT/ ACCOUNT </p>
 <p>ENVIRONMENT</p>         </th>
          <td><p>&amp;CFTNAME</p>         </td>
          <td>32         </td>
@@ -1051,166 +1000,29 @@ Symbolic variables can be used:
 -   In the processing
     operations defined by the user in the procedures associated with the transfers
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Symbolic variables         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands         </td>
-         <td><ul>
-<li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br />
-</li>
-<li>&amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br />
-</li>
-<li>&amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br />
-</li>
-<li>&amp;SUSER, &amp;RUSER<br />
-</li>
-<li>&amp;SAPPL, &amp;RAPPL<br />
-</li>
-<li>&amp;IDF, &amp;PARM, &amp;IDA<br />
-</li>
-<li>&amp;NIDF<br />
-</li>
-<li>&amp;NFNAME (only for FNAME and WFNAME)<br />
-</li>
-<li>&amp;IDT (only the FNAME and WFNAME parameters when you receive a file)<br />
-</li>
-<li>&amp;SYSQQ</li>
-<li>&amp;WORKINGDIR</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands</p>
-<p>EXECRE,
-EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command</p>         </td>
-         <td><ul>
-<li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID</li>
-<li>&amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY</li>
-<li>&amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY</li>
-<li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY</li>
-<li>&amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY</li>
-<li>&amp;COMMENT</li>
-<li>&amp;SUSER, &amp;RUSER<br />
-</li>
-<li>&amp;SAPPL, &amp;RAPPL<br />
-</li>
-<li>&amp;PARM, &amp;MSG, &amp;PI99<br />
-</li>
-<li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br />
-</li>
-<li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br />
-</li>
-<li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br />
-</li>
-<li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br />
-</li>
-<li>&amp;BLKNUM<br />
-</li>
-<li>&amp;CFTEVENT, &amp;CFTNAME</li>
-<li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li>
-<li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li>
-<li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li>
-<li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport
-security symbolic variables</a>)</li>
-<li>&amp;XLATE</li>
-<li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li>
-<li>&amp;PRI</li>
-<li>&amp;XFRCYCID, &amp;XFROBJID</li>
-<li>&amp;EXITFREE</li>
-<li>&amp;JOBNAME, &amp;NCHARSET</li>
-<li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li>
-<li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>You cannot use the variables designated by asterisk (*) in procedures
-associated with the EXEC* parameters relative to message transfers.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>EXEC for CFTACCNT or CFTLOG         </td>
-         <td>&amp;FACCNT, &amp;FLOG         </td>
-      </tr>
-      <tr>
-         <td>TLVCEXEC, TLVWEXEC for CFTCAT         </td>
-         <td>&amp;FCAT         </td>
-      </tr>
-      <tr>
-         <td>USERID
-parameter of the CFTSEND and CFTRECV commands         </td>
-         <td>&amp;RUSER,
-&amp;SUSER, &amp;PART         </td>
-      </tr>
-      <tr>
-         <td>EXIT
-of the {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands         </td>
-         <td>&amp;IDF         </td>
-      </tr>
-      <tr>
-         <td>FNAME parameter
-of CFTDEST         </td>
-         <td><ul>
-<li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br />
-</li>
-<li>&amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br />
-</li>
-<li>&amp;SUSER, &amp;RUSER<br />
-</li>
-<li>&amp;SAPPL, &amp;RAPPL<br />
-</li>
-<li>&amp;IDF, &amp;PARM, &amp;IDA<br />
-</li>
-<li>&amp;NIDF<br />
-</li>
-<li>&amp;NFNAME, &amp;NFVER</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>The name of the
-identifier of the IDF parameter of the CFTPROT command         </td>
-         <td><ul>
-<li>&amp;NIDF</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>The IDA parameter of SEND and CFTSEND         </td>
-         <td><ul>
-<li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>SUSER and RUSER parameters of SEND and CFTSEND         </td>
-         <td><ul>
-<li>&amp;USERID, &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>PARM, SAPPL, RAPPL parameters of SEND and CFTSEND         </td>
-         <td><ul>
-<li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Symbolic variables  |
+| --- | --- |
+| WFNAME, NFNAME, FNAME for the CFTSEND/SEND and CFTRECV/RECV commands  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> <br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br /> <br/> • &amp;SPART, &amp;RPART, &amp;PART, &amp;NPART, &amp;GROUP<br /> <br/> • &amp;SUSER, &amp;RUSER<br /> <br/> • &amp;SAPPL, &amp;RAPPL<br /> <br/> • &amp;IDF, &amp;PARM, &amp;IDA<br /> <br/> • &amp;NIDF<br /> <br/> • &amp;NFNAME (only for FNAME and WFNAME)<br /> <br/> • &amp;IDT (only the FNAME and WFNAME parameters when you receive a file)<br /> <br/> • &amp;SYSQQ<br/> • &amp;WORKINGDIR</li>  |
+|  EXEC, EXECE, PREEXEC for the CFTSEND/SEND and CFTRECV/RECV commands<br/>EXECRE, EXECSE, EXECRF, EXECSF, EXECSFA, EXECSM, EXECRM, EXECSMA for CFTPARM command  |  <li>&amp;SPART, &amp;RPART, &amp;PART, &amp;GROUP, &amp;NRPART, &amp;NSPART, &amp;USERID,&amp;GROUPID<br/> • &amp;BDATE, &amp;BTIME, &amp;BYEAR, &amp;BMONTH, &amp;BDAY<br/> • &amp;CDATE, &amp;CTIME, &amp;CYEAR, &amp;CMONTH, &amp;CDAY<br/> • &amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br/> • &amp;EDATE, &amp;ETIME, &amp;EYEAR, &amp;EMONTH, &amp;EDAY<br/> • &amp;COMMENT<br/> • &amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;PARM, &amp;MSG, &amp;PI99<br /> </li> <li>&amp;DIAGI, &amp;DIAGP, &amp;DIAGC<br /> </li> <li>&amp;FNAME*, &amp;UNIT*, &amp;UNITC*, &amp;NFNAME*, &amp;NFVER*, &amp;FDB*, &amp;SELFNAME*, &amp;FUNITC*, &amp;FUNIT*, &amp;FPATH*, &amp;FROOT*, &amp;SFNAME*, &amp;WORKINGDIR*, &amp;HOME*<br /> </li> <li>&amp;IDF*, &amp;PIDTU, &amp;IDTU, &amp;IDT, &amp;NIDT, &amp;NIDF*, &amp;IDA, &amp;IDM, &amp;NSUB, &amp;PATH*, &amp;ROOT*, &amp;SUF*<br /> </li> <li>&amp;FCODE, &amp;NCODE, &amp;fcharset, &amp;ncharset<br /> </li> <li>&amp;BLKNUM<br /> </li> <li>&amp;CFTEVENT, &amp;CFTNAME</li> <li>&amp;FMCL, &amp;MODE, &amp;TRTYPE</li> <li>&amp;FBLKSIZE*, &amp;FKEYLEN*, &amp;FKEYPOS*, &amp;NKEYLEN*, &amp;NKEYPOS*, &amp;FLRECL*, &amp;FORG*, &amp;FRECFM*, &amp;FSPACE*, &amp;FTYPE*</li> <li>&amp;NBR*, &amp;NBC*, &amp;NBT*, &amp;TT, &amp;QQ, &amp;COMP, &amp;NOTIFY, &amp;SYSQQ</li> <li>&amp;SSLAUTH, &amp;SSLCIPH, &amp;SSLMODE, &amp;SSLPROF, &amp;SSLPARM, &amp;SSLRMCN, &amp;SSLRMCA, &amp;SSLUSER, &amp;SSLCFNA, &amp;SSL (See <a href="#Transport_security_symbolic_variables">Transport security symbolic variables</a>)</li> <li>&amp;XLATE</li> <li>&amp;SYSDATE, &amp;SYSTIME, &amp;SYSDAY</li> <li>&amp;PRI</li> <li>&amp;XFRCYCID, &amp;XFROBJID</li> <li>&amp;EXITFREE</li> <li>&amp;JOBNAME, &amp;NCHARSET</li> <li>&amp;APPSTATE, &amp;PHASESTEP, &amp;PHASE</li> <li>&amp;<a href="../parameter_intro/sourceappl">SOURCEAPPL</a>, &amp;<a href="../parameter_intro/targetappl">TARGETAPPL</a></li> <blockquote> **Note:**<br/>You cannot use the variables designated by asterisk (*) in procedures associated with the EXEC* parameters relative to message transfers. </blockquote>  |
+| EXEC for CFTACCNT or CFTLOG  | &amp;FACCNT, &amp;FLOG  |
+| TLVCEXEC, TLVWEXEC for CFTCAT  | &amp;FCAT  |
+| USERID parameter of the CFTSEND and CFTRECV commands  | &amp;RUSER, &amp;SUSER, &amp;PART  |
+| EXIT of the {{< TransferCFT/componentshortname  >}} CFTSEND/SEND and CFTRECV/RECV commands  | &amp;IDF  |
+| FNAME parameter of CFTDEST  |  <li>&amp;FDATE, &amp;FTIME, &amp;FYEAR, &amp;FMONTH, &amp;FDAY<br /> </li> <li>&amp;PART, &amp;RPART, &amp;SPART, &amp;NPART, &amp;GROUP<br /> </li> <li>&amp;SUSER, &amp;RUSER<br /> </li> <li>&amp;SAPPL, &amp;RAPPL<br /> </li> <li>&amp;IDF, &amp;PARM, &amp;IDA<br /> </li> <li>&amp;NIDF<br /> </li> <li>&amp;NFNAME, &amp;NFVER</li>  |
+| The name of the identifier of the IDF parameter of the CFTPROT command  |  <li>&amp;NIDF</li>  |
+| The IDA parameter of SEND and CFTSEND  |  <li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME</li>  |
+| SUSER and RUSER parameters of SEND and CFTSEND  |  <li>&amp;USERID, &amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET</li>  |
+| PARM, SAPPL, RAPPL parameters of SEND and CFTSEND  |  <li>&amp;FNAME, &amp;FUNITC, &amp;FUNIT, &amp;FPATH, &amp;FROOT, &amp;FSUF, &amp;NFNAME, &amp;PART, &amp;IDA, &amp;IDF, &amp;IDTU, &amp;IDT, &amp;IDM, &amp;COMMENT, &amp;SYSDATE, &amp;SYSTIME, &amp;FCHARSET, &amp;NCHARSET</li>  |
+
 
 **Example**
 
 A file name can consist of the day’s date and the partner’s name:  the
 description command for the PAY file in reception.
 
-
-    RECV IDF = PAY, FNAME = PAY&4PART.&FDAY
-
 When a file of this type is received from the ALPHSITE partner on July
 14 13:
-
-
-    RECV PART = ALPHSITE, IDF = PAY
 
 {{< TransferCFT/componentshortname  >}} creates and writes to a file: PAYALPH.14
 
@@ -1229,16 +1041,10 @@ Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to d
 
 **UNIX**
 
-
-    uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\$\(|;|&|\|"
-
 When setting the blacklist values shown above, the forbidden characters are: **\`** and **$(** and **;** and **&** and **|**  
 For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **\`** characters, respectively.
 
 Windows
-
-
-    uconfset id=cft.server.processing_scripts_variables_blacklist , value="&"
 
 DIAGI 158
 
@@ -1260,74 +1066,17 @@ so on. These variables indicate whether transport security is used, and if
 so, the session parameters such as the authentication mode, suite negotiated
 and certificates used.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbolic variable         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>&amp;SSL </p>         </td>
-         <td><p>Indicates whether security was implemented (1 =
-yes, 0 = no) for the session in which the transfer was performed. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLMODE </p>         </td>
-         <td><p>Direction of the SSL session in which the transfer was
-performed.</p>
-<p>C signifies client and
-S signifies server. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLAUTH </p>         </td>
-         <td><p>Authentication mode of the SSL session in which the transfer
-was performed.</p>
-<ul>
-<li>S
-signifies that only the server was authenticated.</li>
-<li>B
-signifies that the client and server were authenticated.</li>
-<li>A
-signifies that the anonymous mode  has
-been implemented. </li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLCIPH </p>         </td>
-         <td><p>Suite negotiated for the SSL session.</p>
-<p>This suite is set to one of the values from the suites
-supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47). </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLPROF </p>         </td>
-         <td><p>Identifier of the CFTSSL command used to negotiate the
-session parameters. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLPARM </p>         </td>
-         <td><p>Value of the PARM parameter in the CFTSSL command used
-to negotiate the session parameters. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLRMCA </p>         </td>
-         <td><p>Certificate identifier of the authority that signed the
-certificate presented by the remote partner. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLRMCN </p>         </td>
-         <td><p>Remote user certificate CN field. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLUSER </p>         </td>
-         <td><p>Identifier of the user certificate used locally for authentication
-by the remote partner. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;SSLCFNAM </p>         </td>
-         <td><p>Physical name of the file in which the certificate chain
-presented by the remote partner was recorded. This is the same as the CFTSSL CERFNAME parameter value.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Symbolic variable  | Description  |
+| --- | --- |
+|  &amp;SSL  |  Indicates whether security was implemented (1 = yes, 0 = no) for the session in which the transfer was performed.  |
+|  &amp;SSLMODE  |  Direction of the SSL session in which the transfer was performed.<br/>C signifies client and S signifies server.  |
+|  &amp;SSLAUTH  |  Authentication mode of the SSL session in which the transfer was performed.<br/> • S signifies that only the server was authenticated.<br/> • B signifies that the client and server were authenticated.<br/> • A signifies that the anonymous mode has been implemented. </li>  |
+|  &amp;SSLCIPH  |  Suite negotiated for the SSL session.<br/>This suite is set to one of the values from the suites supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47).  |
+|  &amp;SSLPROF  |  Identifier of the CFTSSL command used to negotiate the session parameters.  |
+|  &amp;SSLPARM  |  Value of the PARM parameter in the CFTSSL command used to negotiate the session parameters.  |
+|  &amp;SSLRMCA  |  Certificate identifier of the authority that signed the certificate presented by the remote partner.  |
+|  &amp;SSLRMCN  |  Remote user certificate CN field.  |
+|  &amp;SSLUSER  |  Identifier of the user certificate used locally for authentication by the remote partner.  |
+|  &amp;SSLCFNAM  |  Physical name of the file in which the certificate chain presented by the remote partner was recorded. This is the same as the CFTSSL CERFNAME parameter value.  |
+

@@ -87,123 +87,6 @@ has been received with an unknown space reservation unit (PI 41).
  "XXX
 iNN" format values
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">XXX         </th>
-<th class="HeadE-Column1-Header1">FPDU         </th>
-<th class="HeadD-Column1-Header1">Definition         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>ABO </p>         </td>
-         <td><p>ABORT  </p>         </td>
-         <td><p>Sudden connection interruption </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ACF </p>         </td>
-         <td><p>AckCRF  </p>         </td>
-         <td><p>File closing confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ACO </p>         </td>
-         <td><p>ACONNECT </p>         </td>
-         <td><p>Connection confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ACR </p>         </td>
-         <td><p>AckCREATE  </p>         </td>
-         <td><p>File creation confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ADS </p>         </td>
-         <td><p>AckDESELECT </p>         </td>
-         <td><p>File deselect confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>AMG </p>         </td>
-         <td><p>AckMSG </p>         </td>
-         <td><p>Message confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>AOF </p>         </td>
-         <td><p>AckORF </p>         </td>
-         <td><p>File opening confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ARD </p>         </td>
-         <td><p>AckREAD </p>         </td>
-         <td><p>Read confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ASE </p>         </td>
-         <td><p>AckSELECT </p>         </td>
-         <td><p>File selection confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ATE </p>         </td>
-         <td><p>AckTRANS.END </p>         </td>
-         <td><p>End of transfer confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>AWR </p>         </td>
-         <td><p>AckWRITE </p>         </td>
-         <td><p>Write confirmation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CON </p>         </td>
-         <td><p>CONNECT </p>         </td>
-         <td><p>Connection request </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CRE </p>         </td>
-         <td><p>CREATE </p>         </td>
-         <td><p>File creation </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CRF </p>         </td>
-         <td><p>CRF </p>         </td>
-         <td><p>File closing </p>         </td>
-      </tr>
-      <tr>
-         <td><p>DMG </p>         </td>
-         <td><p>MSGDM </p>         </td>
-         <td><p>Message start </p>         </td>
-      </tr>
-      <tr>
-         <td><p>DSE </p>         </td>
-         <td><p>DESELECT </p>         </td>
-         <td><p>File deselect </p>         </td>
-      </tr>
-      <tr>
-         <td><p>DTE </p>         </td>
-         <td><p>TRANS.END </p>         </td>
-         <td><p>End of transfer </p>         </td>
-      </tr>
-      <tr>
-         <td><p>IDT </p>         </td>
-         <td><p>IDT </p>         </td>
-         <td><p>Transfer interruption </p>         </td>
-      </tr>
-      <tr>
-         <td><p>MSG </p>         </td>
-         <td><p>MSG </p>         </td>
-         <td><p>Message transmission </p>         </td>
-      </tr>
-      <tr>
-         <td><p>RCO </p>         </td>
-         <td><p>RCONNECT </p>         </td>
-         <td><p>Connection refusal </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SEL </p>         </td>
-         <td><p>SELECT </p>         </td>
-         <td><p>File selection </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 -   "Vxxxxxxx"
     format
 
@@ -216,527 +99,115 @@ support in the event of unexplained transfer difficulties.
 Vxxxxxxx format: possible
 protocol events
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Vxxxxxxx         </th>
-<th class="HeadD-Column1-Header1">Definition         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>"VFxxxxx" </p>         </td>
-         <td><p>File transfer event  (eg: VFCAND)  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>"VLOGxxxx" </p>         </td>
-         <td><p>Event relative to the pre-connection message  (eg:
-VLOGRP) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>"VNxxxxxx" </p>         </td>
-         <td><p>Network event  (eg: VNRELI) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>"VRxxxxxx" </p>         </td>
-         <td><p>FPDU reception event  (eg: VRABORT) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>"VVxxxxxx" </p>         </td>
-         <td><p>Internal event (eg: VVTIMO) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>"VIxxxxxx" </p>         </td>
-         <td><p>Induced internal event (eg: VIABORT) </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 Error code descriptions
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error Code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FPDU         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>100</p>         </td>
-         <td><p>RESYNC</p>         </td>
-         <td><p>Transmission error (invalid CRC)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>139</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Invalid file attributes</p>         </td>
-      </tr>
-      <tr>
-         <td><p>200</p>         </td>
-         <td><p>AckCREATE AckSELECT</p>         </td>
-         <td><p>Insufficient file characteristics (insufficient file parameters)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>201</p>         </td>
-         <td><p>AckCREATE AckSELECT</p>         </td>
-         <td><p>System resources currently insufficient</p>         </td>
-      </tr>
-      <tr>
-         <td><p>202</p>         </td>
-         <td><p>AckCREATE AckSELECT</p>         </td>
-         <td><p>User resources currently insufficient</p>         </td>
-      </tr>
-      <tr>
-         <td><p>203</p>         </td>
-         <td><p>AckCREATE AckSELECT</p>         </td>
-         <td><p>Non-priority transfer</p>         </td>
-      </tr>
-      <tr>
-         <td><p>204</p>         </td>
-         <td><p>AckCREATE</p>         </td>
-         <td><p>File already exists</p>         </td>
-      </tr>
-      <tr>
-         <td><p>205</p>         </td>
-         <td><p>AckSELECT</p>         </td>
-         <td><p>File does not exist</p>         </td>
-      </tr>
-      <tr>
-         <td><p>206</p>         </td>
-         <td><p>AckCREATE</p>         </td>
-         <td><p>Available disk space smaller than file size</p>         </td>
-      </tr>
-      <tr>
-         <td><p>207</p>         </td>
-         <td><p>AckSELECT</p>         </td>
-         <td><p>File in use</p>         </td>
-      </tr>
-      <tr>
-         <td><p>209</p>         </td>
-         <td><p>AckMSG</p>         </td>
-         <td><p>Message type not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>210</p>         </td>
-         <td><p>AckORF</p>         </td>
-         <td><p>Negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>211</p>         </td>
-         <td><p>AckORF</p>         </td>
-         <td><p>Cannot open file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>212</p>         </td>
-         <td><p>AckCRF</p>         </td>
-         <td><p>Cannot close file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>213</p>         </td>
-         <td><p>IDT AckWRITE</p>         </td>
-         <td><p>Fatal file input/output error</p>         </td>
-      </tr>
-      <tr>
-         <td><p>214</p>         </td>
-         <td><p>AckREAD</p>         </td>
-         <td><p>Restart point negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>215</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Error specific to the system</p>         </td>
-      </tr>
-      <tr>
-         <td><p>216</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Operator-requested premature abort</p>         </td>
-      </tr>
-      <tr>
-         <td><p>217</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Too many synchronization points without acknowledgment</p>         </td>
-      </tr>
-      <tr>
-         <td><p>218</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Cannot re-synchronize</p>         </td>
-      </tr>
-      <tr>
-         <td><p>219</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>File space exceeded</p>         </td>
-      </tr>
-      <tr>
-         <td><p>220</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Record length greater than that declared</p>         </td>
-      </tr>
-      <tr>
-         <td><p>221</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Time-out</p>         </td>
-      </tr>
-      <tr>
-         <td><p>222</p>         </td>
-         <td><p>IDT</p>         </td>
-         <td><p>Too much data without synchronization point</p>         </td>
-      </tr>
-      <tr>
-         <td><p>223</p>         </td>
-         <td><p>AckTRANSFER.</p>
-<p>END AckDESELECT</p>         </td>
-         <td><p>Abnormal end of transfer</p>         </td>
-      </tr>
-      <tr>
-         <td><p>224</p>         </td>
-         <td><p>AckTRANSFER.END</p>         </td>
-         <td><p>Declared file size smaller than actual size</p>         </td>
-      </tr>
-      <tr>
-         <td><p>226</p>         </td>
-         <td><p>AckCREATE AckSELECT</p>         </td>
-         <td><p>Transfer denied</p>         </td>
-      </tr>
-      <tr>
-         <td><p>228</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>File type not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>229</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>File type incompatible with transfer direction</p>         </td>
-      </tr>
-      <tr>
-         <td><p>230</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>File type incompatible with application</p>         </td>
-      </tr>
-      <tr>
-         <td><p>231</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer number not unique</p>         </td>
-      </tr>
-      <tr>
-         <td><p>232</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Coding incompatible with file type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>233</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Restart context not available</p>         </td>
-      </tr>
-      <tr>
-         <td><p>234</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Data entity size inconsistent with record</p>         </td>
-      </tr>
-      <tr>
-         <td><p>235</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Record format incompatible with file type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>236</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Record length incompatible with file type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>237</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Incorrect client identifier</p>         </td>
-      </tr>
-      <tr>
-         <td><p>238</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Non-authorized client</p>         </td>
-      </tr>
-      <tr>
-         <td><p>239</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Non-authorized client / requester / file type combination</p>         </td>
-      </tr>
-      <tr>
-         <td><p>240</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Client not authorized on this server</p>         </td>
-      </tr>
-      <tr>
-         <td><p>241</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Bank not authorized on this server</p>         </td>
-      </tr>
-      <tr>
-         <td><p>242</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Old password invalid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>243</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>New password invalid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>245</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Incorrect file length</p>         </td>
-      </tr>
-      <tr>
-         <td><p>246</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>No file of this type for this client</p>         </td>
-      </tr>
-      <tr>
-         <td><p>247</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>No file of this type on this server</p>         </td>
-      </tr>
-      <tr>
-         <td><p>248</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Identification type not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>249</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Nominative reference not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>250</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>File already transferred</p>         </td>
-      </tr>
-      <tr>
-         <td><p>251</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Reference type not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>252</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Start date too old</p>         </td>
-      </tr>
-      <tr>
-         <td><p>253</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Incorrect date(s)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>254</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>File service closed</p>         </td>
-      </tr>
-      <tr>
-         <td><p>299</p>         </td>
-         <td><p>All acknowledgment FPDUs</p>         </td>
-         <td><p>Other fatal errors</p>         </td>
-      </tr>
-      <tr>
-         <td><p>300</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>Congestion of local communication system</p>         </td>
-      </tr>
-      <tr>
-         <td><p>301</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>Identification of called party unknown</p>         </td>
-      </tr>
-      <tr>
-         <td><p>302</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>Called party not attached to a Service Access Point (SAP)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>303</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>Maximum number of connections reached</p>         </td>
-      </tr>
-      <tr>
-         <td><p>304</p>         </td>
-         <td><p>RelCONNECT AckCREATE AckSELECT ABORT</p>         </td>
-         <td><p>Non-authorized requester identification</p>         </td>
-      </tr>
-      <tr>
-         <td><p>305</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>SELECT negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>306</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>RESYN negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>307</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>SYNC negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>308</p>         </td>
-         <td><p>RelCONNECT</p>         </td>
-         <td><p>Version number not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>309</p>         </td>
-         <td><p>RelCONNECT ABORT</p>         </td>
-         <td><p>Too many connections already in progress</p>         </td>
-      </tr>
-      <tr>
-         <td><p>310</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Network incident</p>         </td>
-      </tr>
-      <tr>
-         <td><p>311</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Remote PeSIT protocol error</p>         </td>
-      </tr>
-      <tr>
-         <td><p>312</p>         </td>
-         <td><p>RelCONNECT (if partner inactive) ABORT/RELEASE</p>         </td>
-         <td><p>Shutdown of service requested by the user</p>         </td>
-      </tr>
-      <tr>
-         <td><p>313</p>         </td>
-         <td><p>ABORT/RELEASE</p>         </td>
-         <td><p>Connection closed due to inactivity</p>         </td>
-      </tr>
-      <tr>
-         <td><p>314</p>         </td>
-         <td><p>ABORT/RELEASE</p>         </td>
-         <td><p>Unused connection closed to open a new connection</p>         </td>
-      </tr>
-      <tr>
-         <td><p>315</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Negotiation failure</p>         </td>
-      </tr>
-      <tr>
-         <td><p>316</p>         </td>
-         <td><p>ABORT/RELEASE</p>         </td>
-         <td><p>Connection closed by the administrator</p>         </td>
-      </tr>
-      <tr>
-         <td><p>317</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Connection time-out</p>         </td>
-      </tr>
-      <tr>
-         <td><p>318</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Mandatory PI missing or invalid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>319</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Incorrect number of records or bytes</p>         </td>
-      </tr>
-      <tr>
-         <td><p>320</p>         </td>
-         <td><p>ABORT</p>         </td>
-         <td><p>Excessive number of re-synchronizations</p>         </td>
-      </tr>
-      <tr>
-         <td><p>321</p>         </td>
-         <td><p>RelCONNECT AckCREATE AckSELECT</p>         </td>
-         <td><p>Call backup number</p>         </td>
-      </tr>
-      <tr>
-         <td><p>322</p>         </td>
-         <td><p>RelCONNECT AckCREATE AckSELECT</p>         </td>
-         <td><p>Call back later</p>         </td>
-      </tr>
-      <tr>
-         <td><p>323</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Incompatible CRC / connection mode</p>         </td>
-      </tr>
-      <tr>
-         <td><p>324</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Incorrect requester identifier</p>         </td>
-      </tr>
-      <tr>
-         <td><p>325</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Old password invalid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>326</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>New password invalid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>327</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Receive access temporarily closed</p>         </td>
-      </tr>
-      <tr>
-         <td><p>328</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Receive access not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>329</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Send access temporarily closed</p>         </td>
-      </tr>
-      <tr>
-         <td><p>330</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Send access not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>331</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Excessive time-out value</p>         </td>
-      </tr>
-      <tr>
-         <td><p>332</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Write not negotiated</p>         </td>
-      </tr>
-      <tr>
-         <td><p>333</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Read not negotiated</p>         </td>
-      </tr>
-      <tr>
-         <td><p>334</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Reverse charging refused</p>         </td>
-      </tr>
-      <tr>
-         <td><p>335</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Invalid calling party number</p>         </td>
-      </tr>
-      <tr>
-         <td><p>336</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Server date and time refused</p>         </td>
-      </tr>
-      <tr>
-         <td><p>399</p>         </td>
-         <td><p>All ABORT acknowledgment FPDUs</p>         </td>
-         <td><p>Other fatal errors</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Error Code  | FPDU  | Meaning  |
+| --- | --- | --- |
+|  100  |  RESYNC  |  Transmission error (invalid CRC)  |
+|  139  |   |  Invalid file attributes  |
+|  200  |  AckCREATE AckSELECT  |  Insufficient file characteristics (insufficient file parameters)  |
+|  201  |  AckCREATE AckSELECT  |  System resources currently insufficient  |
+|  202  |  AckCREATE AckSELECT  |  User resources currently insufficient  |
+|  203  |  AckCREATE AckSELECT  |  Non-priority transfer  |
+|  204  |  AckCREATE  |  File already exists  |
+|  205  |  AckSELECT  |  File does not exist  |
+|  206  |  AckCREATE  |  Available disk space smaller than file size  |
+|  207  |  AckSELECT  |  File in use  |
+|  209  |  AckMSG  |  Message type not supported  |
+|  210  |  AckORF  |  Negotiation failure  |
+|  211  |  AckORF  |  Cannot open file  |
+|  212  |  AckCRF  |  Cannot close file  |
+|  213  |  IDT AckWRITE  |  Fatal file input/output error  |
+|  214  |  AckREAD  |  Restart point negotiation failure  |
+|  215  |  IDT  |  Error specific to the system  |
+|  216  |  IDT  |  Operator-requested premature abort  |
+|  217  |  IDT  |  Too many synchronization points without acknowledgment  |
+|  218  |  IDT  |  Cannot re-synchronize  |
+|  219  |  IDT  |  File space exceeded  |
+|  220  |  IDT  |  Record length greater than that declared  |
+|  221  |  IDT  |  Time-out  |
+|  222  |  IDT  |  Too much data without synchronization point  |
+|  223  |  AckTRANSFER.<br/>END AckDESELECT  |  Abnormal end of transfer  |
+|  224  |  AckTRANSFER.END  |  Declared file size smaller than actual size  |
+|  226  |  AckCREATE AckSELECT  |  Transfer denied  |
+|  228  |   |  File type not supported  |
+|  229  |   |  File type incompatible with transfer direction  |
+|  230  |   |  File type incompatible with application  |
+|  231  |   |  Transfer number not unique  |
+|  232  |   |  Coding incompatible with file type  |
+|  233  |   |  Restart context not available  |
+|  234  |   |  Data entity size inconsistent with record  |
+|  235  |   |  Record format incompatible with file type  |
+|  236  |   |  Record length incompatible with file type  |
+|  237  |   |  Incorrect client identifier  |
+|  238  |   |  Non-authorized client  |
+|  239  |   |  Non-authorized client / requester / file type combination  |
+|  240  |   |  Client not authorized on this server  |
+|  241  |   |  Bank not authorized on this server  |
+|  242  |   |  Old password invalid  |
+|  243  |   |  New password invalid  |
+|  245  |   |  Incorrect file length  |
+|  246  |   |  No file of this type for this client  |
+|  247  |   |  No file of this type on this server  |
+|  248  |   |  Identification type not supported  |
+|  249  |   |  Nominative reference not supported  |
+|  250  |   |  File already transferred  |
+|  251  |   |  Reference type not supported  |
+|  252  |   |  Start date too old  |
+|  253  |   |  Incorrect date(s)  |
+|  254  |   |  File service closed  |
+|  299  |  All acknowledgment FPDUs  |  Other fatal errors  |
+|  300  |  RelCONNECT  |  Congestion of local communication system  |
+|  301  |  RelCONNECT  |  Identification of called party unknown  |
+|  302  |  RelCONNECT  |  Called party not attached to a Service Access Point (SAP)  |
+|  303  |  RelCONNECT  |  Maximum number of connections reached  |
+|  304  |  RelCONNECT AckCREATE AckSELECT ABORT  |  Non-authorized requester identification  |
+|  305  |  RelCONNECT  |  SELECT negotiation failure  |
+|  306  |  RelCONNECT  |  RESYN negotiation failure  |
+|  307  |  RelCONNECT  |  SYNC negotiation failure  |
+|  308  |  RelCONNECT  |  Version number not supported  |
+|  309  |  RelCONNECT ABORT  |  Too many connections already in progress  |
+|  310  |  ABORT  |  Network incident  |
+|  311  |  ABORT  |  Remote PeSIT protocol error  |
+|  312  |  RelCONNECT (if partner inactive) ABORT/RELEASE  |  Shutdown of service requested by the user  |
+|  313  |  ABORT/RELEASE  |  Connection closed due to inactivity  |
+|  314  |  ABORT/RELEASE  |  Unused connection closed to open a new connection  |
+|  315  |  ABORT  |  Negotiation failure  |
+|  316  |  ABORT/RELEASE  |  Connection closed by the administrator  |
+|  317  |  ABORT  |  Connection time-out  |
+|  318  |  ABORT  |  Mandatory PI missing or invalid  |
+|  319  |  ABORT  |  Incorrect number of records or bytes  |
+|  320  |  ABORT  |  Excessive number of re-synchronizations  |
+|  321  |  RelCONNECT AckCREATE AckSELECT  |  Call backup number  |
+|  322  |  RelCONNECT AckCREATE AckSELECT  |  Call back later  |
+|  323  |   |  Incompatible CRC / connection mode  |
+|  324  |   |  Incorrect requester identifier  |
+|  325  |   |  Old password invalid  |
+|  326  |   |  New password invalid  |
+|  327  |   |  Receive access temporarily closed  |
+|  328  |   |  Receive access not supported  |
+|  329  |   |  Send access temporarily closed  |
+|  330  |   |  Send access not supported  |
+|  331  |   |  Excessive time-out value  |
+|  332  |   |  Write not negotiated  |
+|  333  |   |  Read not negotiated  |
+|  334  |   |  Reverse charging refused  |
+|  335  |   |  Invalid calling party number  |
+|  336  |   |  Server date and time refused  |
+|  399  |  All ABORT acknowledgment FPDUs  |  Other fatal errors  |
+
 
 ### PeSIT reason code
 
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PeSIT reason code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">{{< TransferCFT/componentshortname  >}} internal
+<th >PeSIT reason code         </th>
+<th >Description         </th>
+<th >{{< TransferCFT/componentshortname  >}} internal
 diagnostic         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Service item concerned         </th>
+<th >Service item concerned         </th>
       </tr>
    </thead>
    <tbody>
@@ -1147,107 +618,29 @@ to which the {{< TransferCFT/componentshortname  >}} adds 100 or 200 depending o
 -   This code forms the "NNN NNNN"-type DIAGP protocol diagnostic
     code. Values are expressed in decimal.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Error code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>101</p>         </td>
-         <td><p>File does not exist</p>         </td>
-      </tr>
-      <tr>
-         <td><p>102</p>         </td>
-         <td><p>Target site does not exist for the file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>103</p>         </td>
-         <td><p>Source site does not exist for the file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>104</p>         </td>
-         <td><p>File format not supported</p>         </td>
-      </tr>
-      <tr>
-         <td><p>105</p>         </td>
-         <td><p>Record length error (length not supported)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>106</p>         </td>
-         <td><p>File too big</p>         </td>
-      </tr>
-      <tr>
-         <td><p>110</p>         </td>
-         <td><p>Invalid number of records</p>         </td>
-      </tr>
-      <tr>
-         <td><p>111</p>         </td>
-         <td><p>Invalid number of characters</p>         </td>
-      </tr>
-      <tr>
-         <td><p>112</p>         </td>
-         <td><p>Fatal file input/output error (file access method problem)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>113</p>         </td>
-         <td><p>File already exists</p>         </td>
-      </tr>
-      <tr>
-         <td><p>199</p>         </td>
-         <td><p>Non-referenced errors</p>         </td>
-      </tr>
-      <tr>
-         <td><p>201</p>         </td>
-         <td><p>NSDU (Network System Data Unit) not recognized (faulty
-header)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>202</p>         </td>
-         <td><p>Protocol error (reception of a invalid NSDU)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>203</p>         </td>
-         <td><p>Requestee identification not known</p>         </td>
-      </tr>
-      <tr>
-         <td><p>204</p>         </td>
-         <td><p>Requester identifier not authorized or password incorrect</p>         </td>
-      </tr>
-      <tr>
-         <td><p>205</p>         </td>
-         <td><p>Congestion of local communication system (sudden shutdown
-of communication system)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>206</p>         </td>
-         <td><p>FPDU received with missing parameter or unexpected value</p>         </td>
-      </tr>
-      <tr>
-         <td><p>207</p>         </td>
-         <td><p>Invalid NSDU size received</p>         </td>
-      </tr>
-      <tr>
-         <td><p>208</p>         </td>
-         <td><p>User resources currently insufficient</p>         </td>
-      </tr>
-      <tr>
-         <td><p>209</p>         </td>
-         <td><p>End of time-out</p>         </td>
-      </tr>
-      <tr>
-         <td><p>210</p>         </td>
-         <td><p>Incorrect number of records. The number transported by
-the EFID FPDU does not correspond to the number of received records counted
-by the {{< TransferCFT/componentshortname  >}} (F- or V-format files)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>211</p>         </td>
-         <td><p>Number of characters incorrect. The number transported
-by the EFID FPDU does not correspond to the number of received characters
-counted by the {{< TransferCFT/componentshortname  >}} (T- or U-format files)</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Error code  | Description  |
+| --- | --- |
+|  101  |  File does not exist  |
+|  102  |  Target site does not exist for the file  |
+|  103  |  Source site does not exist for the file  |
+|  104  |  File format not supported  |
+|  105  |  Record length error (length not supported)  |
+|  106  |  File too big  |
+|  110  |  Invalid number of records  |
+|  111  |  Invalid number of characters  |
+|  112  |  Fatal file input/output error (file access method problem)  |
+|  113  |  File already exists  |
+|  199  |  Non-referenced errors  |
+|  201  |  NSDU (Network System Data Unit) not recognized (faulty header)  |
+|  202  |  Protocol error (reception of a invalid NSDU)  |
+|  203  |  Requestee identification not known  |
+|  204  |  Requester identifier not authorized or password incorrect  |
+|  205  |  Congestion of local communication system (sudden shutdown of communication system)  |
+|  206  |  FPDU received with missing parameter or unexpected value  |
+|  207  |  Invalid NSDU size received  |
+|  208  |  User resources currently insufficient  |
+|  209  |  End of time-out  |
+|  210  |  Incorrect number of records. The number transported by the EFID FPDU does not correspond to the number of received records counted by the {{< TransferCFT/componentshortname  >}} (F- or V-format files)  |
+|  211  |  Number of characters incorrect. The number transported by the EFID FPDU does not correspond to the number of received characters counted by the {{< TransferCFT/componentshortname  >}} (T- or U-format files)  |
+

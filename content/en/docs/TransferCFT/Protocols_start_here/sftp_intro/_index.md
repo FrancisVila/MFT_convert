@@ -91,9 +91,6 @@ Transfer CFT supports the use of Amazon S3 for SFTP file transfers. Configure a
 
 To add a `workingdir `sub-folder, use the format:
 
-
-    WORKINGDIR  = 's3://cft-test-ci.eu-west-3/pub/share',
-
 <span id="Limitati"></span>
 
 ## Limitations

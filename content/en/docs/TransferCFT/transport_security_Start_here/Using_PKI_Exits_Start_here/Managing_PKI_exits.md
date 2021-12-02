@@ -149,14 +149,6 @@ to disconnection.
 Examples of the main error codes are shown below and are followed by
 the decimal value in parenthesis:
 
-
-    handshake_failure(40)          bad_certificate(42)          unsupported_certificate(43)
-    certificate_revoked(44)          certificate_expired(45)          certificate_unknown(46)
-    illegal_parameter     (47)          unknown_ca(48)          access_denied(49)
-    decode_error(50)               
-     decrypt_error(51)          export_restriction(60)
-    insufficient_security(71)          internal_error(80)          user_canceled(90)
-
 <span id="Encrypting_with_the_private_key"></span>
 
 ## Encrypting with the private key

@@ -28,53 +28,23 @@ Conventions for Transfer CFT with Trusted File content includes:
 
 Unix scripts
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Script         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.cmd         </td>
-         <td>Trusted File deciphering script         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmd         </td>
-         <td>Trusted File ciphering script         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd         </td>
-         <td>End of transfer procedure to delete the sent ciphered file         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Script  | Description  |
+| --- | --- |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.cmd  | Trusted File deciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.cmd  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.cmd  | End of transfer procedure to delete the sent ciphered file  |
+
 
 Windows scripts
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Script         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.bat         </td>
-         <td>Trusted File deciphering script         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.bat         </td>
-         <td>Trusted File ciphering script         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.bat         </td>
-         <td>End of transfer procedure to delete the sent ciphered file         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Script  | Description  |
+| --- | --- |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_decipher.bat  | Trusted File deciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_cipher.bat  | Trusted File ciphering script  |
+| &lt;CFTDIRRUNTIME&gt;/exec/tf_delfile.bat  | End of transfer procedure to delete the sent ciphered file  |
+
 
 <span id="Trusted"></span>
 
@@ -98,9 +68,6 @@ To generate a passphrase, use the command: `CFTTF -pw [password]`
 
 Example
 
-
-    CFTTF –pw user1OUTPUT:  OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
-
 See also [How to generate a certificate for Trusted File](../tf_generate_cert).
 
 <span id="Sample"></span>
@@ -111,71 +78,29 @@ The following files refer to “user1” and “user2”, which are used in the 
 
 Sample file descriptions
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>encfile_cms.xml         </td>
-         <td>Sample file used for encoding CMS format         </td>
-      </tr>
-      <tr>
-         <td>encfile_pgp.xml         </td>
-         <td>Sample file used for encoding PGP format         </td>
-      </tr>
-      <tr>
-         <td>encfile_smime.xml         </td>
-         <td>Sample file used for encoding S/MIME format         </td>
-      </tr>
-      <tr>
-         <td>decfile_cms.xml         </td>
-         <td>Sample file used decoding CMS format         </td>
-      </tr>
-      <tr>
-         <td>decfile_pgp.xml         </td>
-         <td>Sample file used for decoding PGP format         </td>
-      </tr>
-      <tr>
-         <td>decfile_smime.xml         </td>
-         <td>Sample file used for decoding S/MIME format         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File  | Description  |
+| --- | --- |
+| encfile_cms.xml  | Sample file used for encoding CMS format  |
+| encfile_pgp.xml  | Sample file used for encoding PGP format  |
+| encfile_smime.xml  | Sample file used for encoding S/MIME format  |
+| decfile_cms.xml  | Sample file used decoding CMS format  |
+| decfile_pgp.xml  | Sample file used for decoding PGP format  |
+| decfile_smime.xml  | Sample file used for decoding S/MIME format  |
+
 
 ## Sample certificates
 
 The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Certificate         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser1.p12         </td>
-         <td>Private delivered “user1” certificate         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser2.p12         </td>
-         <td>Private delivered “user2” certificate         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem         </td>
-         <td>Public delivered “user1” certificate         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem         </td>
-         <td>Public delivered “user2” certificate         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Certificate  | Description  |
+| --- | --- |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser1.p12  | Private delivered “user1” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/priv/xppuser2.p12  | Private delivered “user2” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser1.pem  | Public delivered “user1” certificate  |
+| &lt;CFTDIRRUNTIME&gt;/conf/tf/certs/pub/xppuser2.pem  | Public delivered “user2” certificate  |
+
 
 <span id="Messages"></span>
 
@@ -203,29 +128,11 @@ Refer to the for details, available on [support.axway.com](https://support.axway
 
 The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all available transcoding tables.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Table         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>&lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl         </td>
-         <td>Converts Latin ASCII to French EBCDIC         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_etoa.tbl         </td>
-         <td>Converts French EBCDIC to Latin ASCII         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_atoe.tbl         </td>
-         <td>Converts  IBM-PC850 to French EBCDIC         </td>
-      </tr>
-      <tr>
-         <td>&lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_etoa.tbl         </td>
-         <td>Converts French EBCDIC to IBM-PC850         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Table  | Description  |
+| --- | --- |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_atoe.tbl  | Converts Latin ASCII to French EBCDIC  |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/iso_etoa.tbl  | Converts French EBCDIC to Latin ASCII  |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_atoe.tbl  | Converts IBM-PC850 to French EBCDIC  |
+| &lt;CFTDIRINSTALL&gt;/distrib/tf/tables/std_etoa.tbl  | Converts French EBCDIC to IBM-PC850  |
+

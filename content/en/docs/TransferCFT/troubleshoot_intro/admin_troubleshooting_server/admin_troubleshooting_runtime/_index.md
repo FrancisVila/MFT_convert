@@ -16,8 +16,8 @@
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Issue         </th>
-<th colspan="5" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Typical causes         </th>
+<th >Issue         </th>
+<th colspan="5" >Typical causes         </th>
       </tr>
    </thead>
    <tbody>

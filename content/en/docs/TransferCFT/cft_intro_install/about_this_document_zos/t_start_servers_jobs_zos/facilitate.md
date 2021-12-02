@@ -173,13 +173,6 @@ This creates a remote UPLIB library.
 > Save the Transfer CFT LOAD, as well as the Copilot USS environment prior to applying a patch.
 
 1.  Customize the A33IPTF JCL delivered in the UPLIB library, and transferred by A33GSND:  
-
-
-
-        Set JCLLIB using the instance prefix qualifiers.
-        Set the variable ID: Patch ID.
-        Set the variable PUPLIB in accordance with A33GSND.
-
 2.  Submit the JCL.
 
 The instance is now updated.

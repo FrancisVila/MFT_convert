@@ -14,159 +14,30 @@ The tables in this section provide information about the files and allocation re
 
 ## Distribution environment file formats and requirements
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Info         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Allocation in cylinders         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>INSTALL</p>         </td>
-         <td><p>Installation and exploitation</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>10</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLE</p>         </td>
-         <td><p>Sample JCLs, and Transfer CFT sample parameters</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>2</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEO</p>         </td>
-         <td><p>COBOL samples (Exit and API)</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>2</p>         </td>
-      </tr>
-      <tr>
-         <td>COPY         </td>
-         <td><p>Copy book (Cobol)</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>2         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEC</p>         </td>
-         <td><p>C samples (Exit and API)</p>
-<p>PO – VB – 255</p>
-DSNTYPE=LIBRARY         </td>
-         <td><p>2</p>         </td>
-      </tr>
-      <tr>
-         <td>H         </td>
-         <td><p>C headers</p>
-<p>PO – VB – 255</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>2         </td>
-      </tr>
-      <tr>
-         <td>SAMPLEA         </td>
-         <td><p>ASM samples (Exit and API)</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>2         </td>
-      </tr>
-      <tr>
-         <td><p>OBJ</p>         </td>
-         <td><p>Object modules</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>
-<p>(NON-SMP/E INSTALLATION)</p>         </td>
-         <td><p>100</p>         </td>
-      </tr>
-      <tr>
-         <td><p>PFTOBJ</p>         </td>
-         <td><p>Patched object modules</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>
-<p>(NON-SMP/E INSTALLATION)</p>         </td>
-         <td><p>300</p>         </td>
-      </tr>
-      <tr>
-         <td>LOAD         </td>
-         <td>Transfer CFT load modules
-(SMP/E INSTALLATION)         </td>
-         <td>120         </td>
-      </tr>
-      <tr>
-         <td><p>DOC</p>         </td>
-         <td><p>Readme (patch or service pack)</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>10</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CNTL</p>         </td>
-         <td><p>Link edit control cards</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>3</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MAC</p>         </td>
-         <td><p>ASM macro</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>2</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SCR</p>         </td>
-         <td><p>UI components (Copilot, Secure Relay) and patches</p>
-<p>PO –VB – 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>500</p>         </td>
-      </tr>
-      <tr>
-         <td><p>UPLIB</p>         </td>
-         <td><p>Upload library for the product, service packs, and patches</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>100</p>         </td>
-      </tr>
-      <tr>
-         <td><p>LOG</p>         </td>
-         <td><p>Installation log</p>
-<p>PS – VB – 255</p>
-<p>DSNTYPE=LIBRARY</p>
-<p>(NON-SMP/E INSTALLATION)</p>         </td>
-         <td><p>1</p>         </td>
-      </tr>
-      <tr>
-         <td><p>UPARM</p>         </td>
-         <td><p>Configuration parameters</p>
-<p>PO – VB – 255</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>2</p>         </td>
-      </tr>
-      <tr>
-         <td>EXEC         </td>
-         <td><p>Transfer CFT procedures</p>
-<p>PO – FB 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>2         </td>
-      </tr>
-      <tr>
-         <td>XMLLIB         </td>
-         <td><p>XML components (CSD, etc.)</p>
-<p>PO – VB - 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>2         </td>
-      </tr>
-      <tr>
-         <td>PKIMSG         </td>
-         <td><p>Trusted File messages</p>
-<p>PO – FB - 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>1         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File  | Info  | Allocation in cylinders  |
+| --- | --- | --- |
+|  INSTALL  |  Installation and exploitation<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  |  10  |
+|  SAMPLE  |  Sample JCLs, and Transfer CFT sample parameters<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  |  2  |
+|  SAMPLEO  |  COBOL samples (Exit and API)<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  |  2  |
+| COPY  |  Copy book (Cobol)<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  | 2  |
+|  SAMPLEC  |  C samples (Exit and API)<br/>PO – VB – 255 DSNTYPE=LIBRARY  |  2  |
+| H  |  C headers<br/>PO – VB – 255<br/>DSNTYPE=LIBRARY  | 2  |
+| SAMPLEA  |  ASM samples (Exit and API)<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  | 2  |
+|  OBJ  |  Object modules<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY<br/>(NON-SMP/E INSTALLATION)  |  100  |
+|  PFTOBJ  |  Patched object modules PO – FB – 80 DSNTYPE=LIBRARY (NON-SMP/E INSTALLATION)  |  300  |
+| LOAD  | Transfer CFT load modules (SMP/E INSTALLATION)  | 120  |
+|  DOC  |  Readme (patch or service pack) PO – FB – 80 DSNTYPE=LIBRARY  |  10  |
+|  CNTL  |  Link edit control cards PO – FB – 80 DSNTYPE=LIBRARY  |  3  |
+|  MAC  |  ASM macro PO – FB – 80 DSNTYPE=LIBRARY  |  2  |
+|  SCR  |  UI components (Copilot, Secure Relay) and patches PO –VB – 4090 DSNTYPE=LIBRARY  |  500  |
+|  UPLIB  |  Upload library for the product, service packs, and patches PO – FB – 80 DSNTYPE=LIBRARY  |  100  |
+|  LOG  |  Installation log PS – VB – 255 DSNTYPE=LIBRARY (NON-SMP/E INSTALLATION)  |  1  |
+|  UPARM  |  Configuration parameters PO – VB – 255 DSNTYPE=LIBRARY  |  2  |
+| EXEC  |  Transfer CFT procedures PO – FB 80 DSNTYPE=LIBRARY  | 2  |
+| XMLLIB  |  XML components (CSD, etc.) PO – VB - 4090 DSNTYPE=LIBRARY  | 2  |
+| PKIMSG  |  Trusted File messages PO – FB - 4090 DSNTYPE=LIBRARY  | 1  |
+
 
 <span id="Instance"></span><span id="kanchor71"></span>
 
@@ -174,167 +45,35 @@ DSNTYPE=LIBRARY         </td>
 
 The following allocations are required per {{< TransferCFT/componentshortname  >}}.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p><strong>File</strong></p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p><strong>Environment</strong></p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p><strong>Allocation</strong></p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>INSTALL</p>         </td>
-         <td><p>PO – FB – 80</p>
-<p>DSNTYPE=PDS</p>         </td>
-         <td><p>SPACE = (3120,(600,225,40) )</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLE</p>         </td>
-         <td><p>PO – FB – 80</p>
-<p>DSNTYPE=PDS</p>         </td>
-         <td><p>SPACE = (27920,(100,100,30))</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEO</p>         </td>
-         <td><p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>SPACE = (27920,(100,100,-))</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEC</p>         </td>
-         <td><p>PO – VB - 255</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>SPACE = (27920,(100,100,-))</p>         </td>
-      </tr>
-      <tr>
-         <td>SAMPLEA         </td>
-         <td>PO – FB - 80
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE = (27920,(100,100,-))         </td>
-      </tr>
-      <tr>
-         <td><p>cftroot/wwwroot</p>         </td>
-         <td><p>ZFS directory</p>
-<p>(Copilot)</p>         </td>
-         <td><p>25 Mega</p>         </td>
-      </tr>
-      <tr>
-         <td><p>EXEC</p>         </td>
-         <td><p>PO – FB – 80</p>
-<p>DSNTYPE=PDS</p>         </td>
-         <td><p>SPACE = (3120,(195,195,30))</p>         </td>
-      </tr>
-      <tr>
-         <td>XSR         </td>
-         <td><p>ZFS directory</p>
-<p>(Secure Relay)</p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>XMLLIB</p>         </td>
-         <td><p>PO – VB – 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>SPACE = (27998,(100,50,-))</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CERTIF</p>         </td>
-         <td><p>PO – VB – 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE = (27998,(10,5,-))         </td>
-      </tr>
-      <tr>
-         <td><p>LOAD</p>         </td>
-         <td><p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>SPACE  = (CYL,(120,50,-))</p>         </td>
-      </tr>
-      <tr>
-         <td><span id="USER.load"></span>USER.LOAD         </td>
-         <td>DSNTYPE=LIBRARY         </td>
-         <td>SPACE = (CYL,(50,20,-))         </td>
-      </tr>
-      <tr>
-         <td><p>UCONF</p>         </td>
-         <td><p>Runtime configuration parameters</p>
-<p>PS – VB - 2048</p>         </td>
-         <td><p>SPACE = (TRK,(5,2))</p>         </td>
-      </tr>
-      <tr>
-         <td>UCONFRUN         </td>
-         <td><p>Runtime configuration parameters</p>
-<p>PS – VB – 2048</p>         </td>
-         <td>SPACE=(TRK,(5,2))         </td>
-      </tr>
-      <tr>
-         <td>USER.OBJ         </td>
-         <td><p>API and exits objects</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE=(3200,(200,100,-))         </td>
-      </tr>
-      <tr>
-         <td><p>UPARM</p>         </td>
-         <td><p>PO – VB - 255</p>
-<p>DSNTYPE=PDS</p>         </td>
-         <td><p>SPACE = (TRK,(5,5,20))</p>         </td>
-      </tr>
-      <tr>
-         <td><p>PKIMSG</p>         </td>
-         <td><p>PO – VB - 4090</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td><p>SPACE=(TRK,(1,1,-))</p>         </td>
-      </tr>
-      <tr>
-         <td>XLATE         </td>
-         <td><p>PO – FB - 256</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE=(TRK,(5,5,-))         </td>
-      </tr>
-      <tr>
-         <td>FTEST         </td>
-         <td><p>Test file</p>
-<p>PS – VB – 84</p>         </td>
-         <td>SPACE = (TRK,(1,1))         </td>
-      </tr>
-      <tr>
-         <td>INCDLL         </td>
-         <td><p>SYSDEFSD – Link-edit IMPORT control statements</p>
-<p>PO – FB – 80</p>
-<p>DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE = (TRK,(50,10,-))         </td>
-      </tr>
-      <tr>
-         <td>MONLOG         </td>
-         <td><p>Started Transfer CFT server log for multi-node</p>
-<p>PS – VB – 255</p>         </td>
-         <td>SPACE = (TRK,(20,10))         </td>
-      </tr>
-      <tr>
-         <td>UPLOAD         </td>
-         <td><p>Upload library used by Central Governance</p>
-<p>PO – FB – 80
-DSNTYPE=LIBRARY</p>         </td>
-         <td>SPACE = (TRK,(20,10))         </td>
-      </tr>
-      <tr>
-         <td>LOG         </td>
-         <td>Installation LOG
-PS – VB - 255         </td>
-         <td>SPACE =
-(TRK,(10,50))         </td>
-      </tr>
-      <tr>
-         <td>CRYPKEY         </td>
-         <td>File name containing the private key that enciphers data         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>CRYPSALT         </td>
-         <td>File name containing the salt used to create the private key         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+|  **File**  |  **Environment**  |  **Allocation**  |
+| --- | --- | --- |
+|  INSTALL  |  PO – FB – 80<br/>DSNTYPE=PDS  |  SPACE = (3120,(600,225,40) )  |
+|  SAMPLE  |  PO – FB – 80<br/>DSNTYPE=PDS  |  SPACE = (27920,(100,100,30))  |
+|  SAMPLEO  |  PO – FB – 80<br/>DSNTYPE=LIBRARY  |  SPACE = (27920,(100,100,-))  |
+|  SAMPLEC  |  PO – VB - 255<br/>DSNTYPE=LIBRARY  |  SPACE = (27920,(100,100,-))  |
+| SAMPLEA  | PO – FB - 80 DSNTYPE=LIBRARY  | SPACE = (27920,(100,100,-))  |
+|  cftroot/wwwroot  |  ZFS directory<br/>(Copilot)  |  25 Mega  |
+|  EXEC  |  PO – FB – 80<br/>DSNTYPE=PDS  |  SPACE = (3120,(195,195,30))  |
+| XSR  |  ZFS directory<br/>(Secure Relay)  |   |
+|  XMLLIB  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  |  SPACE = (27998,(100,50,-))  |
+|  CERTIF  |  PO – VB – 4090<br/>DSNTYPE=LIBRARY  | SPACE = (27998,(10,5,-))  |
+|  LOAD  |  DSNTYPE=LIBRARY  |  SPACE = (CYL,(120,50,-))  |
+| <span id="USER.load"></span>USER.LOAD  | DSNTYPE=LIBRARY  | SPACE = (CYL,(50,20,-))  |
+|  UCONF  |  Runtime configuration parameters<br/>PS – VB - 2048  |  SPACE = (TRK,(5,2))  |
+| UCONFRUN  |  Runtime configuration parameters<br/>PS – VB – 2048  | SPACE=(TRK,(5,2))  |
+| USER.OBJ  |  API and exits objects<br/>PO – FB – 80<br/>DSNTYPE=LIBRARY  | SPACE=(3200,(200,100,-))  |
+|  UPARM  |  PO – VB - 255<br/>DSNTYPE=PDS  |  SPACE = (TRK,(5,5,20))  |
+|  PKIMSG  |  PO – VB - 4090<br/>DSNTYPE=LIBRARY  |  SPACE=(TRK,(1,1,-))  |
+| XLATE  |  PO – FB - 256<br/>DSNTYPE=LIBRARY  | SPACE=(TRK,(5,5,-))  |
+| FTEST  |  Test file PS – VB – 84  | SPACE = (TRK,(1,1))  |
+| INCDLL  |  SYSDEFSD – Link-edit IMPORT control statements PO – FB – 80 DSNTYPE=LIBRARY  | SPACE = (TRK,(50,10,-))  |
+| MONLOG  |  Started Transfer CFT server log for multi-node PS – VB – 255  | SPACE = (TRK,(20,10))  |
+| UPLOAD  |  Upload library used by Central Governance PO – FB – 80 DSNTYPE=LIBRARY  | SPACE = (TRK,(20,10))  |
+| LOG  | Installation LOG PS – VB - 255  | SPACE = (TRK,(10,50))  |
+| CRYPKEY  | File name containing the private key that enciphers data  |   |
+| CRYPSALT  | File name containing the salt used to create the private key  |   |
+
 
 > **Note:**
 >

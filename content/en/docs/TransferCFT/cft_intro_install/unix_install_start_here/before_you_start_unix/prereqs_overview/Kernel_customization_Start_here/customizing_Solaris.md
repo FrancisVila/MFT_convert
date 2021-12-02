@@ -19,29 +19,6 @@
 
 While most of the corresponding parameter default values are suitable for normal {{< TransferCFT/componentshortname  >}} functioning, three of these parameter values must have at least the following minimum values:
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Resource control         </th>
-<th style="text-align: center;" class="HeadD-Column1-Header1">{{< TransferCFT/componentshortname  >}} minimum value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>project.max-shm-memory         </td>
-         <td>33554432         </td>
-      </tr>
-      <tr>
-         <td>process.max-msg-messages         </td>
-         <td>8192         </td>
-      </tr>
-      <tr>
-         <td>process.max-file-descriptor         </td>
-         <td>1024         </td>
-      </tr>
-   </tbody>
-</table>
-
 This means that you must modify the corresponding resource controls to meet the requirements of the project associated with the user account that {{< TransferCFT/componentshortname  >}} will run under.
 
 <span id="Selectin"></span>
@@ -60,19 +37,10 @@ For the following command examples, we use "cft\_project" as the name of the pro
 
 The following command sets this value to 32 MB:
 
-
-    projmod -s -K "project.max-shm-memory=(privileed,33554432,deny) cft_project
-
 #### Change the maximum number of messages
 
 The following command sets this value to 8192:
 
-
-    projmod -s -K "process.max-msg-messages=(privileged,8192, deny) cft_project
-
 #### Change the maximum number of open files per process
 
 The following command assigns a value of 1024 to this parameter:
-
-
-    projmod -s -K "process.max-file-descriptor(privileged,1024, deny) cft_project

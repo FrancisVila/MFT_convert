@@ -14,24 +14,6 @@ This use case demonstrates how to replace a variable in a file, and then zip the
 
 3.  Create and display your sample script `cat myexec.sh:`
 
-        ! /bin/sh
-        if [ "&APPSTATE" = "" ]; then
-        CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="0%"
-        fi
-        if [ "&APPSTATE" = "0%" -o "&APPSTATE" = "" ]; then
-        tmpfile=&FNAME_&PART
-        sed s/_user_/&PART/g <&FNAME >$tmpfile
-        CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="50%",fname=$tmpfile
-        else
-        tmpfile=&FNAME
-        fi
-        if [ "&APPSTATE" = "50%" -o "&APPSTATE" = "0%" -o "&APPSTATE" = "" ]; then
-        outputfile=$tmpfile.tgz
-        tar zcvf $outputfile $tmpfile
-        CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="100%",fname=$outputfile
-        rm $tmpfile
-        fi
-
 4.  Execute the following command, where `preexec `points to your script:
 
     CFTUTIL send part=paris,idf=test,fname=$CFTDIRRUNTIME/Hello,preexec=$CFTDIRRUNTIME/myexec.sh

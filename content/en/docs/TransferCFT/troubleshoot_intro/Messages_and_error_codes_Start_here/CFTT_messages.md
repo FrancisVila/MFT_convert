@@ -1562,23 +1562,6 @@ support team if necessary.</p>         </td>
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT50E"></span>CFTT50E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Duplicate transfer with IDTU=</p>
-<p>CFTT50E _ Duplicate transfer with IDTU=&amp;idtu &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>A duplicate transfer occurred. IDTU=&amp;idtu is the previously performed transfer.</p>
-<p>For more information, see the <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/duplicat">DUPLICAT</a> field details.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
 <table>
@@ -1978,30 +1961,6 @@ by the engineers responsible for this file EXIT.</p>         </td>
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT69E"></span>CFTT69E PART=&amp;part IDF=&amp;idf IDT=&amp;idt _ Unexpected YE phase/phasestep at restart, converting E to H</p>
-<p>CFTT69E _ Unexpected YE phase/phasestep at restart, converting E to H IDTU=&amp;idtu, PART=&amp;part, IDF=&amp;idf, IDT=&amp;idt</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td>If Transfer CFT was stopped abruptly during the post-processing phase, when you restart Transfer CFT you cannot manage these transfers (YE phase/phasestep).         </td>
-      </tr>
-      <tr>
-         <td><p>Consequence</p>         </td>
-         <td>The corresponding transfer entry in the catalog now switches to the H phasestep instead of the previous E phasestep.         </td>
-      </tr>
-      <tr>
-         <td><p>Action</p>         </td>
-         <td>You can continue to manage the affected transfer (those in H phasestep).         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
 <table>
@@ -2396,32 +2355,6 @@ is interrupted. The corresponding catalog entry is put on HOLD.</p>         </td
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT81E"></span>CFTT81E PART=&amp;part IDF=&amp;idf IDT=&amp;idt remote
-close reject &amp;diagi ,&amp;diagp</p>
-<p>CFTT81E remote close reject &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt &amp;diagi ,&amp;diagp&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>The file could not be closed.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Consequence</p>         </td>
-         <td><p>The transfer
-is interrupted. The corresponding catalog entry is put on HOLD.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Action</p>         </td>
-         <td><p>Correct the error and try again.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
 <table>
@@ -2454,50 +2387,7 @@ is interrupted and the corresponding catalog entry is set to KEEP.</p>         <
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT82W"></span>CFTT82W PART=&amp;part IDF=&amp;idf IDT=&amp;idt transfer aborted (file not found ignored) &amp;diagi ,&amp;diagp</p>
-<p>CFTT82W transfer aborted (file not found ignored) &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt &amp;diagi ,&amp;diagp&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>File not found error was detected.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Consequence</p>         </td>
-         <td><p>The transfer ignore the file not found problem and pass to X phase.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Action</p>         </td>
-         <td><p>Ignore the error.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTT83I"></span>CFTT83I PART=&amp;part IDF=&amp;idf IDT=&amp;idt change
-direction(CD) for request</p>
-<p>CFTT83I change direction(CD) for request &lt;IDTU=&amp;idtu PART=&amp;part [IDF=&amp;idf | IDM=&amp;idm] IDT=&amp;idt&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>This message is only displayed for the ODETTE protocol and a
-RECV command. It indicates that the remote partner has accepted its turn
-to transmit.</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
  
 
@@ -2561,97 +2451,9 @@ has been received by the partner &amp;part, where IDS is the reference for the 
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTT88I"></span>CFTT88I+IDT=&amp;idt WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION=&amp;time</p>
-<p>CFTT88I+&lt;IDTU=&amp;idtu WORKINGDIR=&amp;workingdir FNAME=&amp;fname NBC=&amp;n DURATION==&amp;time&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>This message completes the message CFTT54I.</p>
-<p>The following fields indicated:</p>
-<ul>
-<li>WORKINGDIR: if the WORKINGDIR is not defined, this field is empty</li>
-<li>fname: name of the file sent</li>
-<li>n: number of bytes in the file</li>
-<li>time: transfer duration in seconds</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTT89I"></span>CFTT89I PART=&amp;part IDF=&amp;idf IDT=&amp;idt Faction
-on FNAME=&amp;fname : &amp;str+"deleted" or "erased"</p>
-<p>CFTT89I Faction on FNAME=&amp;fname : &amp;str+"deleted" or "erased" &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>Delete or erase message for a file after using the FACTION parameter in a transfer command (either SEND or RECV).</p>
-<p>The file is either erased or
-deleted (FACTION=ERASE or FACTION=DELETE) at the end of the transfer.</p>         </td>
-      </tr>
-      <tr>
-         <td>Information         </td>
-         <td>CFTT89I Faction on FNAME=&amp;srcfile as &amp;archivefile &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;         </td>
-      </tr>
-      <tr>
-         <td>Explanation         </td>
-         <td><p>Archive message for a file after using the FACTION parameter in a transfer command (either SEND or RECV).</p>
-<p>The file is archived (FACTION=ARCHIVE) at the end of the transfer.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Warning</p>         </td>
-         <td><p><span id="CFTT90W"></span>CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname
-: erase failed cs</p>
-<p>CFTT90W IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : erase failed &amp;scs</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>At the end of a transfer, if the parameter FACTION=ERASE
-cannot be carried out (for example, if the file is already used by another
-user) the transfer moves to the T
-state.  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Warning</p>         </td>
-         <td><p>CFTT90W
-IDF=&amp;idf IDT=&amp;idt Faction on FNAME=&amp;fname : delete failed
-cs</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>At the end of a transfer, if the parameter FACTION=DELETE
-cannot be carried out (for example, if the file is already used by another
-user) the transfer moves to the T
-state.  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Action</p>         </td>
-         <td><p>Delete or erase the file manually.</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
  
 
@@ -2673,23 +2475,6 @@ TURN, the session is closed by the requester without message. The IDS is the ref
       <tr>
          <td><p>Action</p>         </td>
          <td><p>This message is edited on LOG file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Information</p>         </td>
-         <td><p><span id="CFTT93W"></span> CFTT92I IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt</p>
-<p>CFTT92I &lt;IDTU=&amp;idtu CTX=&amp;ctx IDT=&amp;idt&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Explanation</p>         </td>
-         <td><p>Additional message for message CFTT57I, and is displayed only if ATM traces are activated.</p>
-<p>CTX=&amp;ctx provides the protocol context associated with the transfer.</p>         </td>
       </tr>
    </tbody>
 </table>
@@ -2735,77 +2520,8 @@ Information         </td>
 
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-Error         </td>
-         <td><p><span id="CFTT95E"></span>CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idtf DIAGI=&amp;diagi&gt;</p>
-<p>CFTT95E Incorrect user or password &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt DIAGI=&amp;diagi&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td>Explanation         </td>
-         <td>Cannot connect to the SFTP server because the user name or password is incorrect.         </td>
-      </tr>
-      <tr>
-         <td>Action         </td>
-         <td>Correct the user name or password.         </td>
-      </tr>
-   </tbody>
-</table>
-
  
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-Information         </td>
-         <td><p><span id="CFTT96I"></span> CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt;</p>
-<p>CFTT96I &amp;str transfer restarted &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt POS=&amp;pos IDS=&amp;ids&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td>Explanation         </td>
-         <td>The requester (&amp;str = requester) or the server (&amp;str = server) has restarted the transfer.
-&amp;pos is the file position during restart.         </td>
-      </tr>
-   </tbody>
-</table>
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT97E"></span>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands",</p>
-<p>CFTT97E cmd prefix not allowed in procedure execution for SEND and RECV commands</p>         </td>
-      </tr>
-      <tr>
-         <td>Explanation         </td>
-         <td>         </td>
-      </tr>
-   </tbody>
-</table>
-
  
-
-<table>
-   <tbody>
-      <tr>
-         <td><p>V23 format</p>
-<p>V24 format</p>
-<p>Error</p>         </td>
-         <td><p><span id="CFTT98W"></span>CFTT98W PART=%-8.8s IDF=%-8.8s IDT=%.8s Rename ignored because WFNAME equals FNAME,</p>
-<p>CFTT98W Rename ignored because WFNAME equals FNAME &lt;IDTU=%.8s PART=%s IDF=%s IDT=%.8s&gt;</p>         </td>
-      </tr>
-      <tr>
-         <td>Explanation         </td>
-         <td>The configuration has the same <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/wfname">WFNAME</a> as the RECV FNAME and so the renaming is ignored.         </td>
-      </tr>
-   </tbody>
-</table>
 
  

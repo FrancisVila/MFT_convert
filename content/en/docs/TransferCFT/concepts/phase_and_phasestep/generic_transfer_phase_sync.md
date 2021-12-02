@@ -6,192 +6,42 @@
 
 The table below shows a generic transfer A0000001, in the phase **A** along with its children A0000002 through A000000n.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
-<p>Pre-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
-<p>Transfer</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
-<p>Post-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
-<p>Ack-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
-<p>Done</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><strong>A0000001</strong>         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>A0000002         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>A0000003         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>A0000004         </td>
-         <td>         </td>
-         <td>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td>A0000005         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>A000000n         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+|  A<br/>Pre-processing  |  T<br/>Transfer  |  Y<br/>Post-processing  |  Z<br/>Ack-processing  |  X<br/>Done  |
+| --- | --- | --- | --- | --- |
+| **A0000001**  |   |   |   |   |
+| A0000002  |   |   |   |   |
+| A0000003  |   |   |   |   |
+| A0000004  |   |   |   |   |
+| A0000005  |   |   |   |   |
+| A000000n  |   |   |   |   |
+
 
 The child transfers begin to pass through the preprocessing, transfer, and post-processing phases.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
-<p>Pre-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
-<p>Transfer</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
-<p>Post-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
-<p>Ack-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
-<p>Done</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><strong>A0000001</strong>         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>A0000002         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>A0000003         </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>A0000004         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>A0000005         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td><strong>A000000n</strong>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  A<br/>Pre-processing  |  T<br/>Transfer  |  Y<br/>Post-processing  |  Z<br/>Ack-processing  |  X<br/>Done  |
+| --- | --- | --- | --- | --- |
+| **A0000001**  |   |   |   |   |
+| A0000002  |   |   |   |   |
+|   |   | A0000003  |   |   |
+|   | A0000004  |   |   |   |
+|   |   |   | A0000005  |   |
+|   |   |   |   | **A000000n**  |
+
 
 The generic transfer, however, must wait for its last child transfer to move to the next phase and then immediately follows its phases.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>A</p>
-<p>Pre-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>T</p>
-<p>Transfer</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Y</p>
-<p>Post-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 9pt"><p>Z</p>
-<p>Ack-processing</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 9pt"><p>X</p>
-<p>Done</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>          </td>
-         <td><strong>A0000001</strong>         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>A0000002         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>A0000003         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td><p>A0000004</p>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>A0000005         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-         <td><strong>A000000n</strong>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  A<br/>Pre-processing  |  T<br/>Transfer  |  Y<br/>Post-processing  |  Z<br/>Ack-processing  |  X<br/>Done  |
+| --- | --- | --- | --- | --- |
+|   | **A0000001**  |   |   |   |
+|   | A0000002  |   |   |   |
+|   |   |   |   | A0000003  |
+|   |   |   |   |  A0000004  |
+|   |   |   |   | A0000005  |
+|   |   |   |   | **A000000n**  |
+
 
 **Results**
 

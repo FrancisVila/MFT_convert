@@ -38,28 +38,13 @@ Again, there are 2 product packaging formats in the **`Components\Transfer_CFT_V
 
 **<span id="kanchor14"></span>Installation directory contents**
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin</p>         </td>
-         <td><p>Product</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt</p>         </td>
-         <td><p>JCL that creates the distribution environment</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt</p>         </td>
-         <td><p>JCL that creates the instance environment</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File  | Description  |
+| --- | --- |
+|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;.bin  |  Product  |
+|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J1IDIST.txt  |  JCL that creates the distribution environment  |
+|  Transfer_CFT_&lt;version&gt;_mvs_&lt;format&gt;_J2IICFT.txt  |  JCL that creates the instance environment  |
+
 
 <span id="kanchor15"></span>
 
@@ -91,60 +76,15 @@ The Transfer CFT z/OS components include:
 
 ## Special characters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unix         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">z/OS         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">IBM i         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>char_file         </td>
-         <td><p>Logical name prefix</p>         </td>
-         <td>$         </td>
-         <td>_         </td>
-         <td>$         </td>
-         <td>+         </td>
-      </tr>
-      <tr>
-         <td>char_mask         </td>
-         <td>Wildcard character         </td>
-         <td>?         </td>
-         <td>?         </td>
-         <td>?         </td>
-         <td>?         </td>
-      </tr>
-      <tr>
-         <td>char_unit         </td>
-         <td>Separator character (volume)         </td>
-         <td>%         </td>
-         <td>\01         </td>
-         <td>%         </td>
-         <td>;         </td>
-      </tr>
-      <tr>
-         <td>char_symb         </td>
-         <td>Symbolic variable prefix         </td>
-         <td>&amp;         </td>
-         <td>&amp;         </td>
-         <td>&amp;         </td>
-         <td>?         </td>
-      </tr>
-      <tr>
-         <td>file_symb         </td>
-         <td>Character introducing a file name passed to CFTUTIL as a parameter         </td>
-         <td>#         </td>
-         <td>@         </td>
-         <td>#         </td>
-         <td>#         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Description  | Windows  | Unix  | z/OS  | IBM i  |
+| --- | --- | --- | --- | --- | --- |
+| char_file  |  Logical name prefix  | $  | _  | $  | +  |
+| char_mask  | Wildcard character  | ?  | ?  | ?  | ?  |
+| char_unit  | Separator character (volume)  | %  | \01  | %  | ;  |
+| char_symb  | Symbolic variable prefix  | &amp;  | &amp;  | &amp;  | ?  |
+| file_symb  | Character introducing a file name passed to CFTUTIL as a parameter  | #  | @  | #  | #  |
+
 
 Related topics
 

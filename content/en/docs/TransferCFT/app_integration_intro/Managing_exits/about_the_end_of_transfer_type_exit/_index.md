@@ -39,38 +39,13 @@ rule depends on the final state of the catalog entry returned by the EXIT.
 The following
 table shows the transfer possible changes of state.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Change of state </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>End of transfer procedure
-submitted </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>H to K </p>         </td>
-         <td><p>Abnormal end of transfer procedure </p>         </td>
-      </tr>
-      <tr>
-         <td><p>K to H </p>         </td>
-         <td><p>Abnormal end of transfer procedure </p>         </td>
-      </tr>
-      <tr>
-         <td><p>T to X </p>         </td>
-         <td><p>No call </p>         </td>
-      </tr>
-      <tr>
-         <td><p>H to D </p>         </td>
-         <td><p>No call </p>         </td>
-      </tr>
-      <tr>
-         <td><p>K to D </p>         </td>
-         <td><p>No call </p>         </td>
-      </tr>
-      <tr>
-         <td><p>T to T </p>         </td>
-         <td><p>Normal end of transfer procedure </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Change of state  |  End of transfer procedure submitted  |
+| --- | --- |
+|  H to K  |  Abnormal end of transfer procedure  |
+|  K to H  |  Abnormal end of transfer procedure  |
+|  T to X  |  No call  |
+|  H to D  |  No call  |
+|  K to D  |  No call  |
+|  T to T  |  Normal end of transfer procedure  |
+

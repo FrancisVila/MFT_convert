@@ -51,122 +51,31 @@ Begin by planning your MFT architecture and deployment strategy. After installi
 
 Transfer CFTs running under {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}} can manage or have support for the following features.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Feature         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"> Manage using {{< TransferCFT/flowmanager  >}} or         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Supported but not configurable using Central Governance or {{< TransferCFT/flowmanager  >}}         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Folder monitoring         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Multi-node architecture         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">CRONJOB         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Exits         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Network and protocol features         </th>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">IPv6         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">pTCP (UNIX/Windows only)         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">UDT (UNIX/Windows only)         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">SOCKS         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Heartbeat         </th>
-         <td>embedded         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Interoperability         </th>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Secure Relay         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">TrustedFile (UNIX/Windows/and z/OS)         </th>
-         <td>no         </td>
-         <td><p>yes</p>         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">PassPort AM         </th>
-         <td>embedded         </td>
-         <td>no (*)         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">PassPort PS         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Sentinel         </th>
-         <td>embedded         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">Composer         </th>
-         <td>no         </td>
-         <td>no         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyD-Column1-Body2">Protocols         </th>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">PeSIT         </th>
-         <td>yes         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">ODETTE         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-BodyE-Column1-Body2">SFTP <em>(UNIX, Windows)</em>         </th>
-         <td>no         </td>
-         <td>yes         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Feature  |  Manage using {{< TransferCFT/flowmanager  >}} or  | Supported but not configurable using Central Governance or {{< TransferCFT/flowmanager  >}}  |
+| --- | --- | --- |
+| Folder monitoring  | yes  | yes  |
+| Multi-node architecture  | no  | yes  |
+| CRONJOB  | yes  | yes  |
+| Exits  | no  | yes  |
+| Network and protocol features  |   |   |
+| IPv6  | yes  | yes  |
+| pTCP (UNIX/Windows only)  | yes  | yes  |
+| UDT (UNIX/Windows only)  | yes  | yes  |
+| SOCKS  | no  | yes  |
+| Heartbeat  | embedded  | yes  |
+| Interoperability  |   |   |
+| Secure Relay  | no  | yes  |
+| TrustedFile (UNIX/Windows/and z/OS)  | no  |  yes  |
+| PassPort AM  | embedded  | no (*)  |
+| PassPort PS  | no  | yes  |
+| Sentinel  | embedded  | yes  |
+| Composer  | no  | no  |
+| Protocols  |   |   |
+| PeSIT  | yes  | yes  |
+| ODETTE  | no  | yes  |
+| SFTP *(UNIX, Windows)*  | no  | yes  |
+
 
 \* If you perform a migration or upgrade from a previous version, you must migrate your PassPort AM.
 

@@ -27,9 +27,6 @@ Where:
 
 In a UNIX environment, regenerate the uconf settings as follows:
 
-
-    cftruntime --uconf /home/Transfer_CFT/home /home/Transfer_CFT/runtime
-
 **Windows syntax**
 
 cftruntime &lt;cft-install-dir> &lt;cft-runtime-dir> \[-profile|-n &lt;name>|-uconf|-inst\]
@@ -54,12 +51,6 @@ Usage:
 
 In a Windows environment, create a new runtime called `runtime2`:
 
-
-    cftruntime c:\AxwayCFT38\Transfer_CFT\home  c:\AxwayCFT36\Transfer_CFT\runtime2
-
 **Example 2**
 
 In a Windows environment, regenerate the `cftuconf.dat` uconf settings as follows:
-
-
-    cftruntime c:\AxwayCFT38\Transfer_CFT\home  c:\AxwayCFT36\Transfer_CFT\runtime –uconf

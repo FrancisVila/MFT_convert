@@ -27,45 +27,16 @@ cftmifm migrate | purge
 
 Options
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Option         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>-s         </td>
-         <td>Simulate. No action is taken, simply displays all actions that should be taken.         </td>
-      </tr>
-      <tr>
-         <td>-f         </td>
-         <td><p>Force. Ignores detected errors.</p>
-<p>By default, processing is canceled when error conditions are encountered.</p>
-<p>When the -f option is set, only fatal errors prevent processing.</p>         </td>
-      </tr>
-      <tr>
-         <td>-p         </td>
-         <td><p>Pattern. The folder selection pattern.</p>
-<p>Searches for corresponding folder candidates, allowing you to specify a subset of the folders that must be processed.</p>
-<p>The pattern syntax is the same as the STRJCMP filter type used by CFTFOLDER.</p>         </td>
-      </tr>
-      <tr>
-         <td>-t         </td>
-         <td>Level. The trace level from 0..4. The lower the level, the fewer the messages that are displayed. The default value is 1.         </td>
-      </tr>
-      <tr>
-         <td>-w         </td>
-         <td>Width. The maximum line width for displayed screen messages, between 80..500, where the default is 130.         </td>
-      </tr>
-      <tr>
-         <td>-o         </td>
-         <td>Fname. The output file for the CFTFOLDER object containing the definitions required for migration.
-To create the migrated folders in Transfer CFT configuration, you must interpret the generated output file using CFTUTIL.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Option  | Description  |
+| --- | --- |
+| -s  | Simulate. No action is taken, simply displays all actions that should be taken.  |
+| -f  |  Force. Ignores detected errors.<br/>By default, processing is canceled when error conditions are encountered.<br/>When the -f option is set, only fatal errors prevent processing.  |
+| -p  |  Pattern. The folder selection pattern.<br/>Searches for corresponding folder candidates, allowing you to specify a subset of the folders that must be processed.<br/>The pattern syntax is the same as the STRJCMP filter type used by CFTFOLDER.  |
+| -t  | Level. The trace level from 0..4. The lower the level, the fewer the messages that are displayed. The default value is 1.  |
+| -w  | Width. The maximum line width for displayed screen messages, between 80..500, where the default is 130.  |
+| -o  | Fname. The output file for the CFTFOLDER object containing the definitions required for migration. To create the migrated folders in Transfer CFT configuration, you must interpret the generated output file using CFTUTIL.  |
+
 
 > **Note:**
 
@@ -132,27 +103,9 @@ Example 1
 
 Call the following programs to migrate from UCONF to CFTFOLDER objects.
 
-
-
-    CALL PGM(CFTMIFM) PARM('migrate' '-o' 'CFTPROD/fm1cfg')
-
-    CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder_monitoring.*,fout=CFTPROD/fm_uconf') 
-
-    CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm1cfg') 
-
-    CALL PGM(CFT324CI/CFTMIFM) PARM('purge')
-
 Example 2
 
 Call the following programs to migrate specific folders from the UCONF configuration to the CFTFOLDER option. For example, select all logical folders starting with the letter "A".
-
-
-
-    CALL PGM(CFTMIFM) PARM('migrate' '-p' 'A*' '-o' 'CFTPROD/fm2cfg')
-
-    CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder_monitoring.*,fout=CFTPROD/fm_uconf') 
-    CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm2cfg') 
-    CALL PGM(CFTMIFM) PARM('purge' '-p' 'A*')
 
 ### Examples on a z/OS system
 
@@ -183,298 +136,33 @@ A prerequisite to performing a rollback is that you must have made a backup of t
 
 Parameter mapping and descriptions
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>
-<p>UCONF</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default  </p>
-<p>CFTFOLDER</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>same as in UCONF</p>         </td>
-         <td>folder_monitoring.enable         </td>
-         <td>Boolean         </td>
-         <td>No         </td>
-         <td>No         </td>
-         <td><ul>
-<li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>ID         </td>
-         <td>folder_monitoring.folders         </td>
-         <td>node         </td>
-         <td>None         </td>
-         <td>None         </td>
-         <td><p>Add the logical folders to monitor (list of logical identifiers).</p>
-<p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
-If you have more than one Folder to monitor, use a space between each logical value.</p>
-<p>See the <strong>Comment***</strong> below this table for additional information.</p>         </td>
-      </tr>
-      <tr>
-         <td>STATE         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.enable</p>         </td>
-         <td>Boolean         </td>
-         <td>Yes         </td>
-         <td>Active         </td>
-         <td><p>Enables a scan of the folder.</p>
-<p>Note: NO = NOACTIVE.</p>         </td>
-      </tr>
-      <tr>
-         <td>SCANDIR         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.scan_dir</p>         </td>
-         <td>string         </td>
-         <td>None         </td>
-         <td>None         </td>
-         <td><p>Absolute path name of the top level directory to scan.</p>
-<p>This directory must exist before restarting Transfer CFT.</p>
-<p>*See NOTE.</p>         </td>
-      </tr>
-      <tr>
-         <td>WORKDIR         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.work_dir</p>         </td>
-         <td>string         </td>
-         <td>None         </td>
-         <td>None         </td>
-         <td><p>Absolute path name of the top level directory available for file state information. Do not use the same name as you are using for the corresponding SCANDIR.</p>
-<ul>
-<li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
-<li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Caution  
-  Never delete any .met files.</p>
-</blockquote>
-<p>*See NOTE.</p>         </td>
-      </tr>
-      <tr>
-         <td>ENABLESUBDIR         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.enable_subdir</p>         </td>
-         <td>Boolean         </td>
-         <td>Yes         </td>
-         <td>Yes         </td>
-         <td><p>Values:</p>
-<ul>
-<li>Yes: The entire scan_dir sub-directory tree is monitored.</li>
-<li>No: No scan is performed.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>METHOD         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.method</p>         </td>
-         <td>enum         </td>
-         <td>MOVE         </td>
-         <td>MOVE         </td>
-         <td><p>Values:</p>
-<ul>
-<li>MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.</li>
-<li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>FILEIDLEDELAY         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_idle_delay</p>         </td>
-         <td>integer         </td>
-         <td>5         </td>
-         <td>5         </td>
-         <td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.         </td>
-      </tr>
-      <tr>
-         <td>IDF         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.idf</p>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>""         </td>
-         <td><p>The IDF name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>PART         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.part</p>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>""         </td>
-         <td><p>The PART name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>INTERVAL         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.interval</p>         </td>
-         <td>int         </td>
-         <td>60         </td>
-         <td>60         </td>
-         <td>The interval between two scans of the directory files in seconds.         </td>
-      </tr>
-      <tr>
-         <td>FILECOUNT         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_count</p>         </td>
-         <td>int         </td>
-         <td>-1         </td>
-         <td>0         </td>
-         <td><p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p>         </td>
-      </tr>
-      <tr>
-         <td>FILESIZEMIN         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_size_min</p>         </td>
-         <td>int         </td>
-         <td>-1         </td>
-         <td>0         </td>
-         <td>Files shorter than this value, in bytes, are not candidates for submission.
-<p>Using the default value indicates that there is no lower limit on the file size.</p>         </td>
-      </tr>
-      <tr>
-         <td>FILESIZEMAX         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_size_max</p>         </td>
-         <td>int         </td>
-         <td>-1         </td>
-         <td>0         </td>
-         <td>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.         </td>
-      </tr>
-      <tr>
-         <td>INCLUDEFILTER         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_include_filter</p>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>""         </td>
-         <td>If this parameter is defined, only files whose names match this pattern are monitored.         </td>
-      </tr>
-      <tr>
-         <td>EXCLUDEFILTER         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.file_exclude_filter</p>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>""         </td>
-         <td>If this parameter is defined, files whose names match this pattern are not monitored.         </td>
-      </tr>
-      <tr>
-         <td>RESUBMITCHANGED         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.resubmit_changed_file</p>         </td>
-         <td>Boolean         </td>
-         <td>Yes         </td>
-         <td>Yes         </td>
-         <td><p>This parameter has no effect when the configured method is MOVE.</p>
-<p>When the method parameter value is set to FILE:</p>
-<ul>
-<li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
-<li>No: Files are not resubmitted, regardless of changes.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>FILTERTYPE         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.filter_type</p>         </td>
-         <td>enum         </td>
-         <td>WILDMAT         </td>
-         <td>WILDMAT         </td>
-         <td><p>Defines the pattern matching algorithm to use for file name filtering.
-Values:</p>
-<ul>
-<li>STRJCMP: The Transfer CFT pattern matching algorithm.</li>
-<li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong></li>
-</ul>
-<p>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.</p>         </td>
-      </tr>
-      <tr>
-         <td>RENAMEMETHOD         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.renaming_method</p>         </td>
-         <td>Enum         </td>
-         <td>TIMESTAMP         </td>
-         <td>TIMESTAMP         </td>
-         <td><p>This parameter applies only to the MOVE method.</p>
-<ul>
-<li>NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.</li>
-<li>TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li>
-</ul>
-For example, using timestamp_separators=".":
-<ul>
-<li>myfile is renamed myfile.20131025</li>
-<li>myfile.txt is renamed myfile.20131025.txt</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>RENAMESEPARATOR         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.renaming_separators</p>         </td>
-         <td>string         </td>
-         <td>          </td>
-         <td>          </td>
-         <td><p>This parameter only applies to the MOVE method.
-It must contain at most 2 characters from among the following:</p>
-<p>.[]()i_-</p>
-<p>The first character defines the separator before the timestamp.
-The second one, when present, defines the separator after the timestamp.</p>
-<p>For example, using timestamp_separators "[]":
-- myfile is renamed myfile.[20131025]
-- myfile.txt is renamed myfile.[20131025].txt</p>         </td>
-      </tr>
-      <tr>
-         <td>N/A in this version         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.control</p>         </td>
-         <td>string         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>Metadata used to control user changes.         </td>
-      </tr>
-      <tr>
-         <td><p>USEFSEVENTS</p>
-<p> </p>         </td>
-         <td><p>folder_monitoring.folders.</p>
-<p>&lt;logical_name&gt;.</p>
-<p>use_file_system_events</p>
-<p><a href="../folder_monitor_uconf#File-sys">More information</a></p>         </td>
-         <td>Boolean         </td>
-         <td>No         </td>
-         <td>No         </td>
-         <td>Set to YES to enable the file system events monitoring service to detect newly available files.         </td>
-      </tr>
-      <tr>
-         <td>USERID         </td>
-         <td>N/A         </td>
-         <td>N/A         </td>
-         <td>N/A         </td>
-         <td>N/A         </td>
-         <td>This feature is not available in UCONF folder monitoring.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | UCONF  | Type  |  Default<br/>UCONF  |  Default <br/>CFTFOLDER  | Description  |
+| --- | --- | --- | --- | --- | --- |
+|  same as in UCONF  | folder_monitoring.enable  | Boolean  | No  | No  |  <li>No: No folder monitoring occurs.<br/> • Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>  |
+| ID  | folder_monitoring.folders  | node  | None  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.<br/>See the **Comment***** below this table for additional information.  |
+| STATE  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable  | Boolean  | Yes  | Active  |  Enables a scan of the folder.<br/>Note: NO = NOACTIVE.  |
+| SCANDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.scan_dir  | string  | None  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting Transfer CFT.<br/>*See NOTE.  |
+| WORKDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.work_dir  | string  | None  | None  |  Absolute path name of the top level directory available for file state information. Do not use the same name as you are using for the corresponding SCANDIR.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See NOTE.  |
+| ENABLESUBDIR  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.enable_subdir  | Boolean  | Yes  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
+| METHOD  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.method  | enum  | MOVE  | MOVE  |  Values:<br/> • MOVE: Files are moved (by renaming), to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>  |
+| FILEIDLEDELAY  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.file_idle_delay  | integer  | 5  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
+| IDF  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.idf  | string  | ""  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
+| PART  |  folder_monitoring.folders.<br/>&lt;logical_name&gt;.part  | string  | ""  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li>  |
+| INTERVAL  |  folder_monitoring.folders. &lt;logical_name&gt;.interval  | int  | 60  | 60  | The interval between two scans of the directory files in seconds.  |
+| FILECOUNT  |  folder_monitoring.folders. &lt;logical_name&gt;.file_count  | int  | -1  | 0  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
+| FILESIZEMIN  |  folder_monitoring.folders. &lt;logical_name&gt;.file_size_min  | int  | -1  | 0  | Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
+| FILESIZEMAX  |  folder_monitoring.folders. &lt;logical_name&gt;.file_size_max  | int  | -1  | 0  | Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
+| INCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
+| EXCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
+| RESUBMITCHANGED  |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
+| RENAMEMETHOD  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
+| RENAMESEPARATOR  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+| N/A in this version  |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   |   | Metadata used to control user changes.  |
+|  USEFSEVENTS  |  folder_monitoring.folders. &lt;logical_name&gt;. use_file_system_events <a href="../folder_monitor_uconf#File-sys">More information</a>  | Boolean  | No  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
+| USERID  | N/A  | N/A  | N/A  | N/A  | This feature is not available in UCONF folder monitoring.  |
+
 
 > **Note:**
 >

@@ -43,13 +43,7 @@ For a file called REPORTS containing the following list:
 
 Windows
 
-
-    CFTUTIL SEND part=tokyo, idf=myfiles, fname=#REPORTS
-
 UNIX
-
-
-    CFTUTIL SEND part=tokyo, idf=myfiles, fname=@REPORTS
 
 The files file1, file2 and file3 will be sent.
 
@@ -116,9 +110,6 @@ For example:
 
 To send a group of generic files, use the command:
 
-
-    SEND FNAME=#mask or SEND FNAME=#dirname
-
 Where the FNAME parameter is set to one of the following values:
 
 -   A directory name,
@@ -152,66 +143,19 @@ Mandatory parameters for homogeneous sends include:
     the file resulting from the concatenation is the file that is sent.
 -   SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when CFTPART command's SYST value is the same as the local operating system.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Platform         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UNIX-like environment         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Native         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>UNIX         </td>
-         <td>Available         </td>
-         <td>Available         </td>
-      </tr>
-      <tr>
-         <td>Windows         </td>
-         <td>Not supported         </td>
-         <td>Available         </td>
-      </tr>
-      <tr>
-         <td>z/OS         </td>
-         <td>Not supported         </td>
-         <td>Available         </td>
-      </tr>
-      <tr>
-         <td>IBM i         </td>
-         <td>Not supported         </td>
-         <td>Not supported         </td>
-      </tr>
-      <tr>
-         <td>HP Nonstop         </td>
-         <td>Available         </td>
-         <td>Not supported         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Platform  | UNIX-like environment  | Native  |
+| --- | --- | --- |
+| UNIX  | Available  | Available  |
+| Windows  | Not supported  | Available  |
+| z/OS  | Not supported  | Available  |
+| IBM i  | Not supported  | Not supported  |
+| HP Nonstop  | Available  | Not supported  |
+
 
 Example
 
 An example of a homogeneous send in a Windows environment:
-
-
-
-    cftsend id      = copie, 
-            
-    fname   = #c:\e\cft320\tmp\a*, 
-            
-    wfname  = c:\e\cft320\&idtu.snd, 
-            
-    frecfm  = v, 
-            ftype   = b, 
-    mode    = create 
-
-    cftrecv id      = copie, 
-    fname   = c:\cft320\bin\recv, 
-            
-    faction = delete, 
-            
-    wfname  = &idtu.rcv, 
-    ftype   = b 
 
 #### Heterogeneous send for a group of files
 
@@ -238,27 +182,11 @@ To force heterogeneous mode:
 
 Unix/Windows
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.force_heterogeneous_mode         </td>
-         <td>No         </td>
-         <td><p>Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.</p>
-<p>Possible values:</p>
-<ul>
-<li>Yes: Force heterogeneous mode exchanges (override homogeneous mode)</li>
-<li>No: Standard heterogeneous and homogeneous functioning</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.server.force_heterogeneous_mode  | No  |  Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.<br/>Possible values:<br/> • Yes: Force heterogeneous mode exchanges (override homogeneous mode)<br/> • No: Standard heterogeneous and homogeneous functioning</li>  |
+
 
 #### Sending to a remote site in homogeneous mode
 
@@ -351,26 +279,6 @@ Example
 
 In Windows, an example of a heterogeneous receive:
 
-
-
-    cftsend id      = copie, 
-            
-    fname   = #c:\e\cft320\tmp\a*, 
-            
-    wfname  = c:\e\cft320\&idtu.snd, 
-            
-    frecfm  = v, 
-            ftype   = b, 
-    mode    = create 
-
-    cftrecv id      = copie, 
-    fname   = c:\cft320\bin\recv, 
-            
-    faction = delete, 
-            
-    wfname  = &idtu.rcv, 
-    ftype   = b 
-
 <span id="Create"></span>
 
 ### Create filters using CFTSEND
@@ -386,30 +294,7 @@ For example, create a filter that includes all .jpg files that are:
 
 For example, a transfer from a Unix platform to Windows, the following filter would include all of the files in "myfolder" that match the pattern described above such as the file IMGP0122.jpg.
 
-
-
-      CFTSEND ID = 'findfile',
-     FILTERTYPE = 'EREGEX',
-     FILTER = '^[0-9a-zA-Z]+[0-9]{4}.jpg'
-    ...
-     
-    SEND PART = PARIS,
-     IDF = 'findfile',
-     FNAME = '@myfolder/*'
-    ...
-
 For example on a z/OS platform, the following filter would include the files AXDSYN.TOOLS.GRPFIL. or GRPFIM. followed by A4 or A5:
-
-
-
-    CFTSEND ID = 'TREGEX03',
-    FILTERTYPE = 'EREGEX',
-    FILTER = '^-[\.]+*\.-[^\.]+*\.GRPFI(L|M).A(4|5)\.'
-    ...
-     
-    SEND PART = PARIS,
-    IDF = 'TREGEX03',
-    FNAME = '#AXDSYN.TOOLS.*'
 
 The FILTERTYPE can be either STRJCMP or EREGEX, used as described further on in this topic.
 
@@ -417,44 +302,16 @@ The FILTERTYPE can be either STRJCMP or EREGEX, used as described further on in 
 
 For example, a transfer between Unix platforms, the following filter would include all of the files in "myfolder" that match the pattern described above such as the file IMGP0122.jpg.
 
-
-
-      CFTSEND ID = 'findfile',
-     FILTERTYPE = 'EREGEX',
-     FILTER = '^[0-9a-zA-Z]+[0-9]{4}.jpg'
-    ...
-     
-    SEND PART = PARIS,
-     IDF = 'findfile',
-     FNAME = '@myfolder/*'
-     WFNAME = '&idtu.tmp'
-    ...
-
 ## STRJCMP filter
 
 A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Character         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>*         </td>
-         <td>Indicates any sequence of zero or more characters.         </td>
-         <td>The filter "*.dat" selects any file name that has the extension ".dat".         </td>
-      </tr>
-      <tr>
-         <td>?         </td>
-         <td>Indicates any single character.         </td>
-         <td>The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Character  | Description  | Example  |
+| --- | --- | --- |
+| *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
+| ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
+
 
 ## EREGEX filter
 
@@ -462,72 +319,21 @@ EREGEX (extended regular expressions) is the use of special characters and strin
 
 In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Symbol         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Indicates         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Example         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>.         </td>
-         <td>Any character except newline (line break)         </td>
-         <td><em>a.c</em> matches abc         </td>
-      </tr>
-      <tr>
-         <td>[ ]         </td>
-         <td>Or         </td>
-         <td><em>[def]</em> means d or e or f         </td>
-      </tr>
-      <tr>
-         <td>{}         </td>
-         <td>Exactly         </td>
-         <td><em>{3}</em> means exactly three         </td>
-      </tr>
-      <tr>
-         <td>()         </td>
-         <td>Capture group         </td>
-         <td><em>pand(ora|467)</em> matches pandora OR pand467         </td>
-      </tr>
-      <tr>
-         <td>*         </td>
-         <td>0 or more occurrences of the preceding element         </td>
-         <td><p><em>ab*c</em> matches ac, abc, abbc, abbbc, and so on</p>         </td>
-      </tr>
-      <tr>
-         <td>+         </td>
-         <td>1 or more occurrences of the preceding element         </td>
-         <td><em>ab+c</em> matches abc, abbc, abbbc, and so on, but not ac         </td>
-      </tr>
-      <tr>
-         <td>?         </td>
-         <td>Zero or one occurrence of the preceding element         </td>
-         <td><em>plurals?</em> matches plural         </td>
-      </tr>
-      <tr>
-         <td>|         </td>
-         <td>Alternation (matches either the right side or the left) / OR operand         </td>
-         <td><em>ab|cd|ef</em> matches ab or cd or ef         </td>
-      </tr>
-      <tr>
-         <td>^         </td>
-         <td>Start of a string         </td>
-         <td><em>^a</em> matches any file that starts with an a         </td>
-      </tr>
-      <tr>
-         <td>[^ ...]         </td>
-         <td>Any single character that is <strong>not</strong> in the class         </td>
-         <td><em>[^/]*</em> matches zero or more occurrences of any character that is not a forward-slash, such as http://         </td>
-      </tr>
-      <tr>
-         <td>$         </td>
-         <td>End of string         </td>
-         <td><em>.*? the end$</em> matches this is the end         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Symbol  | Indicates  | Example  |
+| --- | --- | --- |
+| .  | Any character except newline (line break)  | *a.c* matches abc  |
+| [ ]  | Or  | *[def]* means d or e or f  |
+| {}  | Exactly  | *{3}* means exactly three  |
+| ()  | Capture group  | *pand(ora|467)* matches pandora OR pand467  |
+| *  | 0 or more occurrences of the preceding element  |  *ab*c* matches ac, abc, abbc, abbbc, and so on  |
+| +  | 1 or more occurrences of the preceding element  | *ab+c* matches abc, abbc, abbbc, and so on, but not ac  |
+| ?  | Zero or one occurrence of the preceding element  | *plurals?* matches plural  |
+| |  | Alternation (matches either the right side or the left) / OR operand  | *ab|cd|ef* matches ab or cd or ef  |
+| ^  | Start of a string  | *^a* matches any file that starts with an a  |
+| [^ ...]  | Any single character that is **not** in the class  | *[^/]** matches zero or more occurrences of any character that is not a forward-slash, such as http://  |
+| $  | End of string  | *.*? the end$* matches this is the end  |
+
 
 > **Note:**
 >
@@ -550,74 +356,20 @@ Catalog details
 
 Simplified catalog view when set to CONTINUE
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer type         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">IDTU         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PIDTU         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Phasestep         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Diagi         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Parent         </td>
-         <td>1         </td>
-         <td>          </td>
-         <td>H         </td>
-         <td>0         </td>
-      </tr>
-      <tr>
-         <td>Child         </td>
-         <td>2         </td>
-         <td>1         </td>
-         <td>K         </td>
-         <td>110         </td>
-      </tr>
-      <tr>
-         <td>Child         </td>
-         <td>3         </td>
-         <td>1         </td>
-         <td>C         </td>
-         <td>0         </td>
-      </tr>
-      <tr>
-         <td>Child         </td>
-         <td>N         </td>
-         <td>1         </td>
-         <td>C         </td>
-         <td>0         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer type  | IDTU  | PIDTU  | Phasestep  | Diagi  |
+| --- | --- | --- | --- | --- |
+| Parent  | 1  |   | H  | 0  |
+| Child  | 2  | 1  | K  | 110  |
+| Child  | 3  | 1  | C  | 0  |
+| Child  | N  | 1  | C  | 0  |
+
 
 Simplified catalog view when set to ABORT
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transfer type         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">IDTU         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">PIDTU         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Phasestep         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Diagi         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Parent         </td>
-         <td>1         </td>
-         <td>          </td>
-         <td>H         </td>
-         <td>200         </td>
-      </tr>
-      <tr>
-         <td>Child         </td>
-         <td>2         </td>
-         <td>1         </td>
-         <td>K         </td>
-         <td>132         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer type  | IDTU  | PIDTU  | Phasestep  | Diagi  |
+| --- | --- | --- | --- | --- |
+| Parent  | 1  |   | H  | 200  |
+| Child  | 2  | 1  | K  | 132  |
+

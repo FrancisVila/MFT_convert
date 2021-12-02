@@ -8,132 +8,6 @@
 
 {{< TransferCFT/componentlongname  >}} supports the cipher suites listed below, and prioritizes them as displayed in the **Order used** column (the {{< TransferCFT/componentlongname  >}} order overrides your cipher suite order). The order, between two approximate levels of security, favors the cipher suite that provides a better level of performance.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Suite </p>         </th>
-<th style="text-align: center;" class="HeadE-Column1-Header1"><p>Order used</p>         </th>
-<th class="HeadE-Column1-Header1"><p>Authentication </p>         </th>
-<th class="HeadE-Column1-Header1"><p>Confidentiality </p>         </th>
-<th class="HeadD-Column1-Header1"><p>Integrity </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>49199 **         </td>
-         <td>1         </td>
-         <td>ECDHE + RSA authentication         </td>
-         <td>AES-128 GCM         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>49200 **         </td>
-         <td>2         </td>
-         <td>ECDHE + RSA authentication         </td>
-         <td>AES-256 GCM         </td>
-         <td>SHA-384         </td>
-      </tr>
-      <tr>
-         <td>49191 **         </td>
-         <td>3         </td>
-         <td><p>ECDHE + RSA authentication</p>         </td>
-         <td>AES-128         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>49192**         </td>
-         <td>4         </td>
-         <td>ECDHE + RSA authentication         </td>
-         <td>AES-256         </td>
-         <td>SHA-384         </td>
-      </tr>
-      <tr>
-         <td>156 **         </td>
-         <td>5         </td>
-         <td>RSA authentication         </td>
-         <td>AES 128 GCM         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>157 **         </td>
-         <td>6         </td>
-         <td>RSA authentication         </td>
-         <td>AES 256 GCM         </td>
-         <td>SHA-384         </td>
-      </tr>
-      <tr>
-         <td>60*         </td>
-         <td>7         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>AES-128         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>61*         </td>
-         <td>8         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>AES-256         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>47         </td>
-         <td>9         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>AES-128         </td>
-         <td>SHA-1         </td>
-      </tr>
-      <tr>
-         <td>53         </td>
-         <td>10         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>AES-256         </td>
-         <td>SHA-1         </td>
-      </tr>
-      <tr>
-         <td>10         </td>
-         <td>11         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>Triple DES         </td>
-         <td>SHA-1         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>12         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>RC4         </td>
-         <td>SHA-1         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>13         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>RC4         </td>
-         <td>MD5         </td>
-      </tr>
-      <tr>
-         <td>59*         </td>
-         <td>14         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>None         </td>
-         <td>SHA-256         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>15         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)         </td>
-         <td>None         </td>
-         <td>SHA-1         </td>
-      </tr>
-      <tr>
-         <td>1         </td>
-         <td>16         </td>
-         <td>RSA authentication (512, 1024, 2048, or 4096)          </td>
-         <td>None         </td>
-         <td>MD5         </td>
-      </tr>
-   </tbody>
-</table>
-
 > **Note:**
 >
 > \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
@@ -157,33 +31,12 @@ This section describes how to specify the cipher suites for governance or when T
 
 <span id="cipher_suites"></span>You can use these UCONF parameters to define the cipher suites:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Possible values         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ssl.ciphersuites         </td>
-         <td>Defines the cipher suite to be used between the Transfer CFT connectors.         </td>
-         <td>int_list         </td>
-         <td>See the table below         </td>
-         <td>49200, 49199, 156, 157, 60, 61, 47, 53         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.sslciphersuites</p>         </td>
-         <td><p>Defines the cipher suite to be used between the Transfer CFT UI client and UI server.</p>         </td>
-         <td>int_list         </td>
-         <td>See the table below         </td>
-         <td>$(ssl.ciphersuites)         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  | Type  | Possible values  | Default value  |
+| --- | --- | --- | --- | --- |
+| ssl.ciphersuites  | Defines the cipher suite to be used between the Transfer CFT connectors.  | int_list  | See the table below  | 49200, 49199, 156, 157, 60, 61, 47, 53  |
+|  copilot.ssl.sslciphersuites  |  Defines the cipher suite to be used between the Transfer CFT UI client and UI server.  | int_list  | See the table below  | $(ssl.ciphersuites)  |
+
 
 <span id="Perfect"></span>
 

@@ -92,70 +92,6 @@ signature section as described below.
 
 #### Certificate file description
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Certificate field </p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Version </p>         </td>
-         <td><p>The version of the encoded certificate value for X509v3
-is 2. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Serial Number </p>         </td>
-         <td><p>An integer assigned by the CA. The issuer name and serial
-number must identify a unique certificate. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Issuer Signature Algorithm </p>         </td>
-         <td><p>The signature algorithm identifier used by the CA to sign
-the certificate (e.g., RSA with SHA-1). </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Issuer Distinguished Name</p>         </td>
-         <td><p>The DN of the entity who has signed and issued the certificate. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Validity Period </p>         </td>
-         <td><p>The dates on which the certificate becomes valid and on
-which the certificate ceases to be valid.  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Subject Distinguished Name </p>         </td>
-         <td><p>The entity associated with the public key stored in the
-subject's public key field. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Subject Public Key Information </p>         </td>
-         <td><p>The public key and identifier algorithm with which the
-key is used. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Issuer Unique Identifier (optional) </p>         </td>
-         <td><p>To prevent the reuse of issuer name over time, a unique
-identifier is assigned to the CA. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Subject Unique Identifier (optional) </p>         </td>
-         <td><p>To prevent the reuse of subject name over time, a unique
-identifier is assigned to the CA. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Extensions (optional) </p>         </td>
-         <td><p>Extensions are additional information about the certificate.
-Extensions consist of three fields: type, criticality, and value. Type
-field is the ASN.1type of the data (for example, text string, numerical, date).
-The criticality flag is either critical or non-critical. If PKI client
-application cannot process a critical extension, the certificate will
-be rejected. The actual value is the value associated with the extension. </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### Signature description
 
 The signature provides the following information:
@@ -170,51 +106,6 @@ Example
 
 This displays the data and signature sections of a certificate in human-readable
 format:
-
-
-    Certificate:
-    Data:
-    Version: v3 (0x2)
-    Serial Number: 3 (0x3)
-    Signature Algorithm: PKCS #1 MD5 With RSA Encryption
-    Issuer: OU=Axway Certificate Authority, O=Axway, C=US
-    Validity:
-    Not Before: Fri Oct 17 18:36:25 2018
-    Not After: Sun Oct 17 18:36:25 2021
-    Subject: CN=Albert Dupont, OU=Marketing, O=Axway, C=US
-    Subject Public Key Info:
-    Algorithm: PKCS #1 RSA Encryption
-    Public Key:
-    Modulus:
-    00:ca:fa:79:98:8f:19:f8:d7:de:e4:49:80:48:e6:2a:2a:86:
-    ed:27:40:4d:86:b3:05:c0:01:bb:50:15:c9:de:dc:85:19:22:
-    43:7d:45:6d:71:4e:17:3d:f0:36:4b:5b:7f:a8:51:a3:a1:00:
-    98:ce:7f:47:50:2c:93:36:7c:01:6e:cb:89:06:41:72:b5:e9:
-    73:49:38:76:ef:b6:8f:ac:49:bb:63:0f:9b:ff:16:2a:e3:0e:
-    9d:3b:af:ce:9a:3e:48:65:de:96:61:d5:0a:11:2a:a2:80:b0:
-    7d:d8:99:cb:0c:99:34:c9:ab:25:06:a8:31:ad:8c:4b:aa:54:
-    91:f4:15
-    Public Exponent: 65537 (0x10001)
-    Extensions:
-    Identifier: Certificate Type
-    Critical: no
-    Certified Usage:
-    SSL Client
-    Identifier: Authority Key Identifier
-    Critical: no
-    Key Identifier:
-    f2:f2:06:59:90:18:47:51:f5:89:33:5a:31:7a:e6:5c:fb:36:
-    26:c9
-    Signature:
-    Algorithm: PKCS #1 MD5 With RSA Encryption
-    Signature:
-    6d:23:af:f3:d3:b6:7a:df:90:df:cd:7e:18:6c:01:69:8e:54:65:fc:06:
-    30:43:34:d1:63:1f:06:7d:c3:40:a8:2a:82:c1:a4:83:2a:fb:2e:8f:fb:
-    f0:6d:ff:75:a3:78:f7:52:47:46:62:97:1d:d9:c6:11:0a:02:a2:e0:cc:
-    2a:75:6c:8b:b6:9b:87:00:7d:7c:84:76:79:ba:f8:b4:d2:62:58:c3:c5:
-    b6:c1:43:ac:63:44:42:fd:af:c8:0f:2f:38:85:6d:d6:59:e8:41:42:a5:
-    4a:e5:26:38:ff:32:78:a1:38:f1:ed:dc:0d:31:d1:b0:6d:67:e9:46:a8:
-    dd:c4
 
 <span id="Database_protection"></span>
 

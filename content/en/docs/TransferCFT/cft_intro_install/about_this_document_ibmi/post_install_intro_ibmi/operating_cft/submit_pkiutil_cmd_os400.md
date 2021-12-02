@@ -26,43 +26,13 @@ To use the PKIUTIL utility:
 
 This option allows you to use the keyboard to enter and execute PKIUTIL commands.
 
-
-
-    PKIU20I                                                                     
-       
-    PKIU20I PKI                                                                 
-       
-    PKIU20I Version 3.2.4 2017/02/02 
-
-     PKIU20I (C) Copyright AXWAY 1989-2017
-    PKIU20I ====> Starting Session on 03/03/2017 Time is 16:20:37               
-       
-    PKIU20I 
-     
-                                                                        
-                                                                                   
-     ===> LISTPKI  
-
 ## Create a database
 
 Use the following commands, in order, to create a database:
 
-
-    PKIFILE MODE=CREATE, FNAME= 'CFTPROD/PKIBASE'
-
  
 
-
-
-    PKICER ID=NEWCA, MODE=CREATE, PKIFNAME=CFTPROD/PKIBASE, ITYPE=ROOT,
-    INAME=CFTPROD/AXWRCA, IFORM=DER, STATE=ACT
-
  
-
-
-
-    PKICER ID=NEWUSER,MODE=CREATE, PKIFNAME=CFTPROD/PKIBASE, INAME=CFTPROD/MFTUSRCA, IKNAME=CFTPROD/MFTUSRCAK, ITYPE=USER,
-     IKPASSW=user, STATE=ACT, ROOTCID=NEWCA, IKFORM=DER
 
 ### List PKI Internal datafiles contents
 
@@ -70,18 +40,3 @@ Use the following commands, in order, to create a database:
 2.  Press ENTER to execute the command.
 
 A correct execution displays the following messages:
-
-
-
-    > LISTPKI
-    1:¬PKU|
-    Date = 03/03/2017 Time = 16:24:43
-    PKI Fname =
-     
-    Id.     Root   T S C K E   Exp.Date   Delivered to   Delivered by
-    ------- -----  - - - - -  ---------- ------------- ---------------
-    CAXMP CAXMP   R A x      19/12/2017 CA SAMPLE FOR CA SAMPLE FOR CLIENT 
-    CAXMP         U A x x    18/12/2017 CLIENT SAMPLE CA SAMPLE FOR SERVER 
-    CAXMP         U A x x    18/12/2017 SERVER SAMPLE CA SAMPLE 
-     
-    PKIU00I LISTPKI _ Correct ()

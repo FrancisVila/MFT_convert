@@ -32,36 +32,13 @@ And the corresponding catalog entry  would include the DIAGI=416 and DIAGP=MAXC
 
 ## How to configure
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.nrdp.enable         </td>
-         <td>boolean         </td>
-         <td>No         </td>
-         <td>Enable the prevention of network resource depletion.         </td>
-      </tr>
-      <tr>
-         <td>cft.server.nrdp.conn_retry_delay_min         </td>
-         <td>int         </td>
-         <td>1         </td>
-         <td>Connection retry delay minimum in seconds when a network resource depletion is detected.         </td>
-      </tr>
-      <tr>
-         <td><p>cft.server.nrdp.conn_retry_delay_max</p>         </td>
-         <td>int         </td>
-         <td>5         </td>
-         <td>Connection retry delay maximum in seconds when a network resource depletion is detected.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| UCONF value  | Type  | Default  | Description  |
+| --- | --- | --- | --- |
+| cft.server.nrdp.enable  | boolean  | No  | Enable the prevention of network resource depletion.  |
+| cft.server.nrdp.conn_retry_delay_min  | int  | 1  | Connection retry delay minimum in seconds when a network resource depletion is detected.  |
+|  cft.server.nrdp.conn_retry_delay_max  | int  | 5  | Connection retry delay maximum in seconds when a network resource depletion is detected.  |
+
 
 ### Parameter usage
 

@@ -54,38 +54,18 @@ Renewkey options:
 
 Use the following command to generate an encryption key using the provided password. This creates the `--keyfname` and `--saltfname` files, and references them in UCONF.
 
-
-
-    cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD
-
 Encryption parameters in UCONF
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>crypto.key_fname         </td>
-         <td><p>The path to the encryption key, which is required at {{< TransferCFT/componentlongname  >}} runtime.</p>
-<p>If this parameter is not set (empty), at runtime {{< TransferCFT/hflongproductname  >}} uses a hard-coded key and operates as in {{< TransferCFT/hflongproductname  >}} 3.2.4.</p>         </td>
-      </tr>
-      <tr>
-         <td>crypto.salt_fname         </td>
-         <td>The path to the salt file, which is required to renew the key.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+| crypto.key_fname  |  The path to the encryption key, which is required at {{< TransferCFT/componentlongname  >}} runtime.<br/>If this parameter is not set (empty), at runtime {{< TransferCFT/hflongproductname  >}} uses a hard-coded key and operates as in {{< TransferCFT/hflongproductname  >}} 3.2.4.  |
+| crypto.salt_fname  | The path to the salt file, which is required to renew the key.  |
+
 
 ## Renew the encryption key
 
 To renew an encryption key run the `renewkey` command:
-
-
-    cftcrypt --renewkey --keyfname FILENAME --saltfname FILENAME --oldpass PASSWORD --pass PASSWORD 
 
 The command succeeds if the referenced key and salt files exist and the `oldpass `matches the password used to generate the previous key. This command exports the configuration, generates a new encryption key, and imports the configuration.
 
@@ -107,16 +87,9 @@ The cftcrypt tool automatically exports/imports the PKI database when you perfor
 It is highly recommended that you generate an encryption key when you upgrade a Transfer CFT 3.2.4 or lower to Transfer CFT 3.3.2 or higher. For example:
 
 1.  From the {{< TransferCFT/hflongproductname >}} runtime directory, perform the extract to export the configuration.  
-
 2.  Export the PKI database.  
-
-
-        PKIUTIL PKIEXT FOUT=PKI.EXT
-
 3.  Generate a new encryption key.  
-
 4.  Import the PKI database.  
-
 5.  Import the configuration.  
 
 > **Note:**

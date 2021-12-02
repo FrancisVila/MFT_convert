@@ -123,36 +123,15 @@ as displayed in the table below. The value SROUT is the transfer direction
 proposed by site A, and SRIN is the transfer direction determined by site
 B.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>If...</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Then the final values are...</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>SROUT = BOTH and SRIN = SENDER</p>         </td>
-         <td><p>SROUT = RECEIVER and SRIN = SENDER</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SROUT = BOTH and SRIN = RECEIVER</p>         </td>
-         <td><p>SROUT = SENDER and SRIN = RECEIVER</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SRIN = BOTH and SROUT = SENDER</p>         </td>
-         <td><p>SROUT = SENDER and SRIN = RECEIVER</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SRIN = BOTH and SROUT = RECEIVER</p>         </td>
-         <td><p>SROUT = RECEIVER and SRIN = SENDER</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SRIN  = BOTH and SROUT = BOTH</p>         </td>
-         <td><p>SROUT = BOTH and SRIN = BOTH</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  If...  |  Then the final values are...  |
+| --- | --- |
+|  SROUT = BOTH and SRIN = SENDER  |  SROUT = RECEIVER and SRIN = SENDER  |
+|  SROUT = BOTH and SRIN = RECEIVER  |  SROUT = SENDER and SRIN = RECEIVER  |
+|  SRIN = BOTH and SROUT = SENDER  |  SROUT = SENDER and SRIN = RECEIVER  |
+|  SRIN = BOTH and SROUT = RECEIVER  |  SROUT = RECEIVER and SRIN = SENDER  |
+|  SRIN = BOTH and SROUT = BOTH  |  SROUT = BOTH and SRIN = BOTH  |
+
 
 The [SRIN](../../../c_intro_userinterfaces/command_summary/parameter_intro/srin) parameter,
 present in the Start Session IDentification, serves as a basis for negotiation

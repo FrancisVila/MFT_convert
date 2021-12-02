@@ -98,14 +98,8 @@ Step 2: Upgrade to Transfer CFT {{< TransferCFT/releasenumber  >}}
 > This operation removes the old Axway Installer and all its content, so no rollback is available. You should backup the content of your installation directory if you want to have the option of undoing this operation.
 
 1.  Uncompress the Transfer CFT installation kit.
-
 2.  From the Transfer CFT installation kit, enter:  
-
-
-        ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run [<options>]
-
 3.  Accept the license and the appropriate installation mode (for example, single installation).
-
 4.  When prompted for the installation directory, enter the path to the existing Transfer CFT installation directory.
 
 Available options
@@ -135,7 +129,3 @@ Once you complete an upgrade from 3.7 or lower, you must execute the profile bef
 ### Check the new version
 
 To check the {{< TransferCFT/componentshortname  >}} version, as well as the license key and system information, enter the command:
-
-
-
-    CFTUTIL ABOUT

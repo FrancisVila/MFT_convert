@@ -13,9 +13,6 @@
 
 <!-- -->
 
-
-    COPSTART
-
 1.  Check that the Transfer CFT instance appears in Central Governance.
 
 You can now operate your Transfer CFT instance with the **CFT** user.

@@ -20,28 +20,12 @@ In this syntax:
     each environment. Refer to the Transfer CFT Operating Guide that corresponds
     to your OS
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>OS</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p> file_symb</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Windows</p>         </td>
-         <td><p>#</p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX</p>         </td>
-         <td><p> @</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           |  OS  |  file_symb  |
+ --- | --- | --- |
+|  Windows  |  #  |
+|  UNIX  |  @  |
+
 
 -   file\_in is a file
     containing the Transfer CFT commands

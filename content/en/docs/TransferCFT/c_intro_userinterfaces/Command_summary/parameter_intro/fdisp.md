@@ -57,51 +57,16 @@ The following table shows the combined effect of the FDISP and FACTION parameter
 >
 > There no impact on FDISP when used in combination with RENAME or RETRYRENAME.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FDISP         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTRECV, FACTION         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Comments         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>both         </td>
-         <td>delete         </td>
-         <td>If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).         </td>
-      </tr>
-      <tr>
-         <td>both         </td>
-         <td>erase         </td>
-         <td>If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).         </td>
-      </tr>
-      <tr>
-         <td>both         </td>
-         <td>verify         </td>
-         <td>If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.         </td>
-      </tr>
-      <tr>
-         <td>new         </td>
-         <td>verify         </td>
-         <td>If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).         </td>
-      </tr>
-      <tr>
-         <td>old         </td>
-         <td>delete         </td>
-         <td>If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).         </td>
-      </tr>
-      <tr>
-         <td>old         </td>
-         <td>erase         </td>
-         <td>If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).         </td>
-      </tr>
-      <tr>
-         <td>old         </td>
-         <td>verify         </td>
-         <td>If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| CFTRECV, FDISP  | CFTRECV, FACTION  | Comments  |
+| --- | --- | --- |
+| both  | delete  | If no file exists, the file is created. If file exists it is deleted and recreated (regardless of if it is empty or not).  |
+| both  | erase  | If no file exists, the file is created. If file exists it is overwritten (no matter if it is empty or not).  |
+| both  | verify  | If no file exists, the file is created. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
+| new  | verify  | If no file exists, the file is created. If file exists the transfer is aborted (regardless of if it is empty or not).  |
+| old  | delete  | If no file exists, the transfer is aborted. If file exists the file is deleted and recreated (regardless of if it is empty or not).  |
+| old  | erase  | If no file exists, the transfer is aborted. If file exists the file is overwritten (regardless of if it is empty or not).  |
+| old  | verify  | If no file exists, the transfer is aborted. If file exists and it is not empty, the transfer is aborted. If file exists but it is empty, the file is overwritten.  |
+
 
 [Return to Command index](../../)

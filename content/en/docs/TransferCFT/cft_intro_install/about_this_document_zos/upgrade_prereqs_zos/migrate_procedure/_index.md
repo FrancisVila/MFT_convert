@@ -18,64 +18,22 @@ The following table lists and describes the MIGR\* members used in a Transfer CF
 
 Migration Job Control Language (JCL) Statements
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Purpose</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>MIGR$SET</p>         </td>
-         <td><p>JCL variables to customize</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRCAT</p>         </td>
-         <td><p>Migrate the catalog file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRCOM</p>         </td>
-         <td><p>Migrate the communication file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPARM</p>         </td>
-         <td><p>Migrate the Managed File Transfer parameters file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPART</p>         </td>
-         <td><p>Migrate the Managed File Transfer partners file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPKI1</p>         </td>
-         <td><p>Export the keys and certificates</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPKI2</p>         </td>
-         <td><p>Import the keys and certificates</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPTIN</p>         </td>
-         <td><p>Sample - Include JCL called by MIGRPART</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPTCL</p>         </td>
-         <td><p>Sample - CLIST updates partners extract file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPMIN</p>         </td>
-         <td><p>Sample - Include JCL called by MIGRPARM</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MIGRPMCL</p>         </td>
-         <td><p>Sample - CLIST updates parameters extract file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>PMIGR2</p>         </td>
-         <td><p>Common procedure to migrate PARM, PART, CATALOG and communication media file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Member name  |  Purpose  |
+| --- | --- |
+|  MIGR$SET  |  JCL variables to customize  |
+|  MIGRCAT  |  Migrate the catalog file  |
+|  MIGRCOM  |  Migrate the communication file  |
+|  MIGRPARM  |  Migrate the Managed File Transfer parameters file  |
+|  MIGRPART  |  Migrate the Managed File Transfer partners file  |
+|  MIGRPKI1  |  Export the keys and certificates  |
+|  MIGRPKI2  |  Import the keys and certificates  |
+|  MIGRPTIN  |  Sample - Include JCL called by MIGRPART  |
+|  MIGRPTCL  |  Sample - CLIST updates partners extract file  |
+|  MIGRPMIN  |  Sample - Include JCL called by MIGRPARM  |
+|  MIGRPMCL  |  Sample - CLIST updates parameters extract file  |
+|  PMIGR2  |  Common procedure to migrate PARM, PART, CATALOG and communication media file.  |
+
 
 The MIGR$$$ file is located in the target.INSTALL library, and contains information about the JCL required for a Transfer CFT z/OS migration. Among the delivered JCL, MIGR$SET is used to customize variables used in the migration procedure. See the Migration Job Control Language (JCL) Statements table below for a description of the JCL and members to use.
 
@@ -97,55 +55,17 @@ This section describes how to migrate the various configuration elements in a no
 
 The following variables can be set in MIGR$SET file or/and in the PMIGR2 parameters.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>OLDEXEC</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Executable library for the Transfer CFT version (source) to migrate.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>OLDPARM</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PARM source file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NEWPARM</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PARM target file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISPPARM</p>         </td>
-         <td><p>‘R’</p>         </td>
-         <td><p>'R' for replace, 'A' for ADD:</p>
-<p>‘R’ = Creates or recreates the Transfer CFT PARM file.</p>
-<p>‘A’ = Only creates the Transfer CFT PARM file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPPARM</p>         </td>
-         <td><p>&amp;CFTENV..MPARM</p>         </td>
-         <td><p>Work file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPSPARM</p>         </td>
-         <td><p>'CYL,(10,2)'</p>         </td>
-         <td><p>Size allocation for work file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CUSTOMPM</p>         </td>
-         <td><p>DUMMYJ</p>
-<p>(No customization)</p>         </td>
-         <td><p>Include member to customize parameters extract file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Variable  |  Default value  |  Definition  |
+| --- | --- | --- |
+|  OLDEXEC  |   |  Executable library for the Transfer CFT version (source) to migrate.  |
+|  OLDPARM  |   |  Transfer CFT PARM source file name.  |
+|  NEWPARM  |   |  Transfer CFT PARM target file name.  |
+|  DISPPARM  |  ‘R’  |  'R' for replace, 'A' for ADD:<br/>‘R’ = Creates or recreates the Transfer CFT PARM file.<br/>‘A’ = Only creates the Transfer CFT PARM file.  |
+|  TMPPARM  |  &amp;CFTENV..MPARM  |  Work file name.  |
+|  TMPSPARM  |  'CYL,(10,2)'  |  Size allocation for work file.  |
+|  CUSTOMPM  |  DUMMYJ<br/>(No customization)  |  Include member to customize parameters extract file.  |
+
 
 Submit the procedure ..INSTALL(MIGRPARM)
 
@@ -153,76 +73,27 @@ Submit the procedure ..INSTALL(MIGRPARM)
 
 The following variables can be set in MIGR$SET file or/and in the PMIGR2 parameters.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>OLDPART</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PART source file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NEWPART</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PART target file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISPPART</p>         </td>
-         <td><p>'R'</p>         </td>
-         <td><p>'R' for replace, 'A' for ADD:</p>
-<p>‘R’ = Create or recreate Transfer CFT PART file.</p>
-<p>‘A’ = Only creates the Transfer CFT PART file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPPART</p>         </td>
-         <td><p>&amp;CFTENV..MPARM</p>         </td>
-         <td><p>Work file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPSPART</p>         </td>
-         <td><p>'CYL,(30,5)'</p>         </td>
-         <td><p>Size allocation for work file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CUSTOMPT</p>         </td>
-         <td><p>DUMMYJ</p>
-<p>(No customization)</p>         </td>
-         <td><p>Include member to customize partners extract file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Variable  |  Default value  |  Definition  |
+| --- | --- | --- |
+|  OLDPART  |   |  Transfer CFT PART source file name.  |
+|  NEWPART  |   |  Transfer CFT PART target file name.  |
+|  DISPPART  |  'R'  |  'R' for replace, 'A' for ADD:<br/>‘R’ = Create or recreate Transfer CFT PART file.<br/>‘A’ = Only creates the Transfer CFT PART file.  |
+|  TMPPART  |  &amp;CFTENV..MPARM  |  Work file name.  |
+|  TMPSPART  |  'CYL,(30,5)'  |  Size allocation for work file.  |
+|  CUSTOMPT  |  DUMMYJ<br/>(No customization)  |  Include member to customize partners extract file.  |
+
 
 Submit the procedure ..INSTALL(MIGRPART)
 
 1.  Migrate the PKI file (MIGRPKIx).
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>OLDPKI</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PKI source file name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NEWPKI</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT PKItarget file name.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Variable  |  Default value  |  Definition  |
+| --- | --- | --- |
+|  OLDPKI  |   |  Transfer CFT PKI source file name  |
+|  NEWPKI  |   |  Transfer CFT PKItarget file name.  |
+
 
 If the target version is lower than 3.4:
 
@@ -239,74 +110,23 @@ The JCL ..INSTALL(MIGRUCNF) must be customized to determine UCONF parameters to 
 
 Replace the line:
 
-
-    CFTEXT ID=*,TYPE=UCONF,FOUT=$EXT
-
 With the list of UCONF parameters to migrate. For example:
-
-
-    CFTEXT ID=cft.mvs.sginstal.*,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cg.*,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cft.multi_node.*,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cft.cftcat.default_size,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cft.cftcom.default_size,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cft.cftlog.fname.atts,TYPE=UCONF,FOUT=$EXT
-    CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
-    Etc.
 
 1.  Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
 You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 parameters:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>OLDEXEC</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Executable library of the Transfer CFT version to migrate.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>OLDCAT</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT CATALOG source file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NEWCAT</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT CATALOG target file name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISPCAT</p>         </td>
-         <td><p>‘R’</p>         </td>
-         <td><p>'R' for replace, 'A' for ADD:</p>
-<p>‘R’ = Create or recreate CFT CATALOG file</p>
-<p>‘A’ = Will only create a Transfer CFT CATALOG file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>RECNBCAT</p>         </td>
-         <td><p>50000</p>         </td>
-         <td><p>Size in records if Catalog must be created.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPCAT</p>         </td>
-         <td><p>&amp;CFTENV..MCAT</p>         </td>
-         <td><p>Work file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPSCAT</p>         </td>
-         <td><p>'CYL,(50,10)'</p>         </td>
-         <td><p>Size allocation for work file.</p>
-<p>Use 3 cylinders for every 1000 transfers to be migrated.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Variable  |  Default value  |  Definition  |
+| --- | --- | --- |
+|  OLDEXEC  |   |  Executable library of the Transfer CFT version to migrate.  |
+|  OLDCAT  |   |  Transfer CFT CATALOG source file name.  |
+|  NEWCAT  |   |  Transfer CFT CATALOG target file name  |
+|  DISPCAT  |  ‘R’  |  'R' for replace, 'A' for ADD:<br/>‘R’ = Create or recreate CFT CATALOG file<br/>‘A’ = Will only create a Transfer CFT CATALOG file.  |
+|  RECNBCAT  |  50000  |  Size in records if Catalog must be created.  |
+|  TMPCAT  |  &amp;CFTENV..MCAT  |  Work file name.  |
+|  TMPSCAT  |  'CYL,(50,10)'  |  Size allocation for work file.<br/>Use 3 cylinders for every 1000 transfers to be migrated.  |
+
 
 re ..INSTALL(MIGRCAT).
 
@@ -314,53 +134,16 @@ re ..INSTALL(MIGRCAT).
 
 You can set the following variables in the MIGR$SET file or/and in the PMIGR2 parameters:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Variable</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>OLDEXEC</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Executable library of the Transfer CFT version to migrate.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>OLDCOM</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT communication source file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NEWCOM</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Transfer CFT communication target file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DISPCOM</p>         </td>
-         <td><p>‘R’</p>         </td>
-         <td><p>'R' for replace, 'A' for ADD:</p>
-<p>‘R’ = Create or recreate a Transfer CFT communication file.</p>
-<p>‘A’ = Will only create a Transfer CFT communication file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>RECNBCOM</p>         </td>
-         <td><p>5000</p>         </td>
-         <td><p>Size in records if communication file must be created.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPCOM</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>Work file name.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TMPSCOM</p>         </td>
-         <td><p>'CYL,(10,10)'</p>         </td>
-         <td><p>Size allocation for work file.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Variable  |  Default value  |  Definition  |
+| --- | --- | --- |
+|  OLDEXEC  |   |  Executable library of the Transfer CFT version to migrate.  |
+|  OLDCOM  |   |  Transfer CFT communication source file name.  |
+|  NEWCOM  |   |  Transfer CFT communication target file name.  |
+|  DISPCOM  |  ‘R’  |  'R' for replace, 'A' for ADD:<br/>‘R’ = Create or recreate a Transfer CFT communication file.<br/>‘A’ = Will only create a Transfer CFT communication file.  |
+|  RECNBCOM  |  5000  |  Size in records if communication file must be created.  |
+|  TMPCOM  |   |  Work file name.  |
+|  TMPSCOM  |  'CYL,(10,10)'  |  Size allocation for work file.  |
+
 
 Submit the procedure ..INSTALL(MIGRCOM).

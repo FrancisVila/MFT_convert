@@ -11,19 +11,7 @@ errors were detected.
 If the initial sender does not support this function, as for example in earlier versions of Transfer CFT, the final partner does not transmit the
 negative acknowledgement and the Transfer CFT log file displays:
 
-
-    CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server
-
 **Example**
-
-
-
-    cftutil send 
-    type=nack,
-    part=&part,
-    idm=nack,
-    msg=recu,
-    idt=&idt
 
 **Syntax**
 

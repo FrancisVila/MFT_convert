@@ -25,28 +25,11 @@ The sample file features two default partners, NEWYORK and PARIS. Each of these 
 
 To send a file from PARIS to NEWYORK, run the following command:
 
-
-    CFTUTIL send part=NEWYORK, idf=txt
-
 To check in the Transfer CFT catalog to confirm that the transfer completed successfully, enter:
-
-
-    CFTUTIL listcat
 
 You should see that the default file was sent from NEWYORK to PARIS. There are two entries are displayed, this is due to the fact that you performed a loop transfer using the localhost interface.
 
-
-
-    Partner  DTSAPP File     Transfer         Records       Diags        Appli.   Appstate.
-                    Id.      Id.       Transmit     Total   CFT Protocol Id.
-    -------- ------ -------- -------- ---------- ---------- --- -------- -------- ---------
-    NEWYORK  SFX XX TXT      J2220582        112        112   0 CP NONE
-    PARIS    RFX XX TXT      J2220582        112        112   0 CP NONE
-
 To display exhaustive transfer details, enter the command:
-
-
-    CFTUTIL listcat content=debug
 
 The purpose of the My first file transfer section is to help you feel comfortable with basic {{< TransferCFT/componentshortname  >}} file transfer commands. Once you understand core file transfer concepts, you can delve into the rich array of parameters that allow you to customize your application integrations and data flows. Additional commands and options are available to help you define the monitoring granularity  for your executed transfers.
 
@@ -68,84 +51,9 @@ Let's start by performing the same type of transfer as in the sample configurati
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Requester/Sender         </th>
-<th class="HeadD-Column1-Header1">Server/Receiver         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><strong>Configuration</strong></p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p><strong>Runtime</strong></p>
-<ol start="3">
-<li>Run the transfer.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog.</li>
-</ol>         </td>
-         <td><p><strong>Configuration</strong></p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p><strong>Runtime</strong></p>
-<ol start="3">
-<li>Retrieve the sent file.</li>
-<li>Check the catalog.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
-
 View an example
 
-
-
-    /*REQUESTER/SENDER*/
-
-    CFTPART 
-         ID =     NEWYORK,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NRPART =     NEWYORK, 
-         NSPART =     PARIS,
-     
-    CFTTCP 
-    ID=NEWYORK,
-    HOST = @<NEWYORK address>
-     
-    CFTSEND ID=INVOICE,...
-     
-    SEND PART=NEWYORK, IDF=INVOICE
-     
-    LISTCAT
-
  
-
-
-
-    /*SERVER/RECEIVER*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =         1761, 
-    NRPART =     PARIS, 
-         NSPART =     NEWYORK,
-     
-    CFTTCP 
-    ID=PARIS,
-    HOST = @<PARIS address>
-     
-    CFTRECV ID=INVOICE, FNAME=MYFILE
-     
-    LISTCAT
 
 <span id="Use"></span>
 
@@ -157,87 +65,7 @@ In explicit mode, an application makes a specific file available for a defined p
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Server/Sender         </th>
-<th class="HeadD-Column1-Header1">Requester/Receiver         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p> </p>
-<p> </p>
-<p>Runtime</p>
-<ol start="3">
-<li><p>Make your file available.</p>
-<p>The send command is set with the ‘state=HOLD’ parameter. The HOLD attribute puts the file in the Transfer CFT catalog, and indicates that it is available for the partner.</p></li>
-<li>Check the catalog.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p> </p>
-<p> </p>
-<p>Runtime</p>
-<ol start="3">
-<li>Receive the available file.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
-
 View an example
-
-
-
-    /*SERVER/SENDER*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PHOENIX, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<Paris address>
-     
-    CFTSEND ID=INVOICE, IMPL=NO,....
-     
-    SEND PART=PARIS, IDF=INVOICE, STATE=HOLD 
-     
-    LISTCAT 
-
-
-
-    /*REQUESTER/RECEIVER*/
-
-    CFTPART     
-         ID =     PHOENIX,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     PHOENIX,
-    CFTTCP 
-    ID=PHOENIX, 
-    HOST = @<Phoenix address> 
-     
-    CFTRECV ID=INVOICE,....
-     
-    RECV PART=PHOENIX, IDF=INVOICE, FNAME=MY_FILE
-     
-    LISTCAT
 
 <span id="Receive"></span>
 
@@ -249,89 +77,13 @@ This transfer mode is the same as the previously described explicit mode but pro
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Sender         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Requester/Receiver</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>Make a file available SEND part=PARIS, idf=INVOICE, state=HOLD.</li>
-<li>Repeat with another file.</li>
-<li>Repeat again with a third file. This ‘HOLD’ attribute puts the files in the Transfer CFT catalog and makes them available for the partner.</li>
-</ol>
-<ol start="6">
-<li>Check the catalog for 1 entry per transfer. A generic entry is set.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>Receive all of the available files:<br />
-RECV part=PHOENIX, idf=INVOICE, file=ALL.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog for 1 entry per transfer. A generic entry is set.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Server/Sender  |  Requester/Receiver  |
+| --- | --- |
+|  Configuration <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Make a file available SEND part=PARIS, idf=INVOICE, state=HOLD.<br/> • Repeat with another file.<br/> • Repeat again with a third file. This ‘HOLD’ attribute puts the files in the Transfer CFT catalog and makes them available for the partner.</li> </ol> <ol start="6"> <li>Check the catalog for 1 entry per transfer. A generic entry is set.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Receive all of the available files:<br /> RECV part=PHOENIX, idf=INVOICE, file=ALL.</li> </ol> <ol start="4"> <li>Check the catalog for 1 entry per transfer. A generic entry is set.</li> </ol>  |
+
 
 View an example
-
-
-
-    /*SERVER/SENDER*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PHOENIX, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<Paris address>
-     
-    CFTSEND ID=INVOICE, IMPL=NO,....
-     
-    SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_1
-    SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_2
-    SEND PART=PARIS, IDF=INVOICE, STATE=HOLD, FNAME=FILE_n
-     
-    LISTCAT 
-
-
-
-    /*REQUESTER/RECEIVER*/
-
-    CFTPART     
-         ID =     PHOENIX,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     PHOENIX,
-    CFTTCP 
-    ID=PHOENIX, 
-    HOST = @<Phoenix address> 
-     
-    CFTRECV ID=INVOICE, FNAME=@IDTU.RCV,...
-     
-    RECV PART=PHOENIX, IDF=INVOICE, FILE=ALL
-     
-    LISTCAT
 
 <span id="Use2"></span>
 
@@ -343,83 +95,15 @@ The implicit transfer mode is often used to make a file whose content is frequen
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Sender         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Requester/Receiver         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Conf</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF where impl=yes.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>The CFTSEND is set with ‘impl=yes’.</li>
-<li>Check the catalog.</li>
-</ol>         </td>
-         <td><p>Conf</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an IDF.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>Receive the file.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Server/Sender  | Requester/Receiver  |
+| --- | --- |
+|  Conf <ol> <li>Create a partner.<br/> • Create an IDF where impl=yes.</li> </ol> Runtime <ol start="3"> <li>The CFTSEND is set with ‘impl=yes’.<br/> • Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an IDF.</li> </ol> Runtime <ol start="3"> <li>Receive the file.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |
+
 
 View an example
 
-
-
-    /*PHOENIX*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PHOENIX, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<Paris address>
-     
-    CFTSEND ID=ORDER, IMPL=YES, FNAME=FILE_TO_SEND....
-     
-     
-    LISTCAT 
-
  
-
-
-
-    /*PARIS*/
-
-    CFTPART     
-         ID =     PHOENIX,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     PHOENIX,
-    CFTTCP 
-    ID=PHOENIX, 
-    HOST = @<Phoenix address> 
-     
-    CFTRECV ID=ORDER,....
-     
-    RECV PART=PHOENIX, IDF=ORDER, FNAME=MY_FILE
-     
-    LISTCAT
 
 <span id="Send"></span>
 
@@ -431,86 +115,15 @@ This mode is similar to the FTP put command. It allows you to define the file na
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Requester/Sender         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Receiver         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Conf</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>Run the transfer.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog.</li>
-</ol>         </td>
-         <td><p>Conf</p>
-<ol>
-<li>Create a partner.</li>
-<li><p>Create an CFTRECV fname=&amp;nfname…</p>
-<p>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode.</p></li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.</li>
-<li>Check the catalog.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Requester/Sender  | Server/Receiver  |
+| --- | --- |
+|  Conf <ol> <li>Create a partner.<br/> • Create a CFTSEND with fname=&lt;FILE_TO_SEND&gt;, nfname=cft/filpub/fic.txt …</li> </ol> Runtime <ol start="3"> <li>Run the transfer.</li> </ol> <ol start="4"> <li>Check the catalog.</li> </ol>  |  Conf <ol> <li>Create a partner.<br/> • Create an CFTRECV fname=&amp;nfname…<br/>The syntax ‘fname=&amp;nfname’ means that the receiver allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file has been stored in the path defined by the client/sender, in this example: cft/filpub/fic.txt.<br/> • Check the catalog.</li> </ol>  |
+
 
 View an example
 
-
-
-    /*REQUESTER/SENDER*/ 
-
-    CFTPART 
-         ID =     NEWYORK,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NRPART =     NEWYORK, 
-         NSPART =     PARIS,
-     
-    CFTTCP 
-    ID=NEWYORK,
-    HOST = @<NEWYORK address>
-     
-    CFTSEND ID=INVOICE,FNAME=FILE_TO_SEND, NFNAME=<remote_location_pathname>
-     
-    SEND PART=NEWYORK, IDF=INVOICE
-     
-    LISTCAT
-
  
-
-
-
-    /*RECEIVER/SERVER*/
-
-     
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =         1761, 
-    NRPART =     PARIS, 
-         NSPART =     NEWYORK,
-     
-    CFTTCP 
-    ID=PARIS,
-    HOST = @<PARIS address>
-     
-    CFTRECV ID=INVOICE, FNAME=MYFILE,FNAME=&NFNAME
-     
-    LISTCAT
 
 <span id="Receive2"></span>
 
@@ -522,87 +135,15 @@ This mode is similar to FTP get command. It allows the receiver to get a file fr
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Requester/Receiver</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Sender         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li>Create an CFTRECV that defines the fname.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li>
-</ol>
-<ol start="4">
-<li>The file retrieved is stored in the fname location.</li>
-<li>Check the catalog.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a partner.</li>
-<li><p>Create an CFTSEND where impl=yes, fname=&amp;nfname.</p>
-<p>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode.</p></li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li>
-</ol>
-<ol start="4">
-<li>Verify the catalog</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Requester/Receiver  | Server/Sender  |
+| --- | --- |
+|  Configuration <ol> <li>Create a partner.<br/> • Create an CFTRECV that defines the fname.</li> </ol> Runtime <ol start="3"> <li>Request the file stored on the remote server. Run the command: CFTUTIL RECV… nfname=&lt;remote_requested_file&gt;.</li> </ol> <ol start="4"> <li>The file retrieved is stored in the fname location.<br/> • Check the catalog.</li> </ol>  |  Configuration <ol> <li>Create a partner.<br/> • Create an CFTSEND where impl=yes, fname=&amp;nfname.<br/>The syntax ‘fname=&amp;nfname’ means that the server/sender allows the open mode. </li> </ol> Runtime <ol start="3"> <li>The file stored locally in &lt;remote_requested_file&gt; is sent to the client.</li> </ol> <ol start="4"> <li>Verify the catalog</li> </ol>  |
+
 
 View an example
 
-
-
-    /*REQUESTER/RECEIVER*/ 
-    CFTPART 
-         ID =     NEWYORK,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NRPART =     NEWYORK, 
-         NSPART =     PARIS,
-     
-    CFTTCP 
-    ID=NEWYORK,
-    HOST = @<NEWYORK address>
-     
-    CFTRECV ID=INVOICE, FNAME=<local_download_location>
-     
-    RECV PART=NEWYORK, IDF=INVOICE, NFNAME=<remote_requested_file>
-     
-    LISTCAT
-
  
-
-
-
-    /*SERVER/SENDER*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =         1761, 
-    NRPART =     PARIS, 
-         NSPART =     NEWYORK,
-     
-    CFTTCP 
-    ID=PARIS,
-    HOST = @<PARIS address>
-     
-    CFTSEND ID=INVOICE, IMP=YES,FNAME=&NFNAME
-     
-    LISTCAT
 
 <span id="Perform3"></span>
 
@@ -624,133 +165,17 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Requester/Sender         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server/Receiver – PHOENIX         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Server/Receiver – NEWYORK         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a first partner NEWYORK.</li>
-<li>Create a second partner PHOENIX.</li>
-<li>Create a broadcast list that contains both part1 and part2.</li>
-<li>Create a CFTSEND.</li>
-</ol>
-<p>Runtime</p>
-<ol start="5">
-<li>Using one command, send a file to the broadcast list.</li>
-<li>The file is sent to both partners at the same time.</li>
-</ol>
-<ol start="7">
-<li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a first partner.</li>
-<li>Create an CFTRECV.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>The first partner receives the file.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog, there should be get one entry for this partner.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a second partner.</li>
-<li>Create an CFTRECV.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>The second partner receives the file.</li>
-</ol>
-<ol start="4">
-<li>Check the catalog, there should be get one entry for this partner.</li>
-</ol>
-<p> </p>
-<p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Requester/Sender  | Server/Receiver – PHOENIX  | Server/Receiver – NEWYORK  |
+| --- | --- | --- |
+|  Configuration <ol> <li>Create a first partner NEWYORK.<br/> • Create a second partner PHOENIX.<br/> • Create a broadcast list that contains both part1 and part2.<br/> • Create a CFTSEND.</li> </ol> Runtime <ol start="5"> <li>Using one command, send a file to the broadcast list.<br/> • The file is sent to both partners at the same time.</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create a first partner.<br/> • Create an CFTRECV.</li> </ol> Runtime <ol start="3"> <li>The first partner receives the file.</li> </ol> <ol start="4"> <li>Check the catalog, there should be get one entry for this partner.</li> </ol>  |  Configuration <ol> <li>Create a second partner.<br/> • Create an CFTRECV.</li> </ol> Runtime <ol start="3"> <li>The second partner receives the file.</li> </ol> <ol start="4"> <li>Check the catalog, there should be get one entry for this partner.</li> </ol> <br/>  |
+
 
 View an example
 
-
-
-    /*SENDER*/ 
-    CFTPART     
-         ID =     PHOENIX,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     PHOENIX,
-    CFTTCP 
-    ID=PHOENIX, 
-    HOST = @<PHOENIX address>
-     
-    CFTPART     
-         ID =     NEWYORK,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     NEWYORK,
-    CFTTCP 
-    ID=NEWYORK, 
-    HOST = @<NEWYORK address>
-     
-    CFTDEST ID=DEST01, PART=NEWYORK, PHOENIX
-     
-    CFTSEND ID=ORDER
-     
-    SEND PART=DEST01, IDF=ORDER
-     
-    LISTCAT 
-
  
 
-
-
-    /*RECEIVER 1*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PHOENIX, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<PARIS address> 
-     
-    CFTRECV ID=ORDER,....
-     
-    LISTCAT
-
  
-
-
-
-    /*RECEIVER 2*/
-
-    CFTPART     
-         ID =     PARIS, 
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     NEWYORK, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<PARIS address> 
-     
-    CFTRECV ID=ORDER,....
-     
-    LISTCAT
 
 #### Collecting
 
@@ -760,144 +185,17 @@ More information...
 
 ![In this example, the Receiver Paris site collects or receives a dedicated file from multiple partners](/Images/TransferCFT/2013_g_TransferCFT_Collect1.png)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Client/Receiver         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Server/Sender</p>
-<p>PHOENIX</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Server/Sender</p>
-<p>NEW YORK</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a first partner.</li>
-<li>Create a second partner.</li>
-<li>Create a collect list containing both NEW YORK and PHOENIX.</li>
-<li>Create a CFTRECV.</li>
-</ol>
-<p>Runtime</p>
-<ol start="5">
-<li>Using a single command, receive a file from both (all) partners using the defined collect list.</li>
-</ol>
-<ol start="6">
-<li>Both files are received from both partners at the same time</li>
-</ol>
-<ol start="7">
-<li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create this partner.</li>
-<li>Create an CFTSEND.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>This partner makes a file available for the client SEND state=HOLD.</li>
-</ol>
-<ol start="4">
-<li>The first partner sends the file.</li>
-</ol>
-<ol start="5">
-<li>Check the catalog, there should be one entry.</li>
-</ol>         </td>
-         <td><p>Configuration</p>
-<ol>
-<li>Create a this partner.</li>
-<li>Create an CFTSEND.</li>
-</ol>
-<p>Runtime</p>
-<ol start="3">
-<li>This partner makes a file available for the client SEND state=HOLD.</li>
-</ol>
-<ol start="4">
-<li>The second partner sends the file.</li>
-<li>Check the catalog, there should be one entry.</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Client/Receiver  |  Server/Sender<br/>PHOENIX  |  Server/Sender<br/>NEW YORK  |
+| --- | --- | --- |
+|  Configuration <ol> <li>Create a first partner.<br/> • Create a second partner.<br/> • Create a collect list containing both NEW YORK and PHOENIX.<br/> • Create a CFTRECV.</li> </ol> Runtime <ol start="5"> <li>Using a single command, receive a file from both (all) partners using the defined collect list.</li> </ol> <ol start="6"> <li>Both files are received from both partners at the same time</li> </ol> <ol start="7"> <li>Check the catalog. You should have 3 entries in the catalog, one generic entry and one entry per partner.</li> </ol>  |  Configuration <ol> <li>Create this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The first partner sends the file.</li> </ol> <ol start="5"> <li>Check the catalog, there should be one entry.</li> </ol>  |  Configuration <ol> <li>Create a this partner.<br/> • Create an CFTSEND.</li> </ol> Runtime <ol start="3"> <li>This partner makes a file available for the client SEND state=HOLD.</li> </ol> <ol start="4"> <li>The second partner sends the file.<br/> • Check the catalog, there should be one entry.</li> </ol>  |
+
 
 View an example
 
-
-
-    /*RECEIVER*/ 
-
-    CFTPART     
-         ID =     PHOENIX,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     PHOENIX,
-    CFTTCP 
-    ID=PHOENIX, 
-    HOST = @<PHOENIX address>
-     
-    CFTPART     
-         ID =     NEWYORK,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PARIS, 
-         NRPART =     NEWYORK,
-    CFTTCP 
-    ID=NEWYORK, 
-    HOST = @<NEWYORK address>
-     
-    CFTDEST ID=DEST01, PART=NEWYORK, PHOENIX
-     
-    CFTRECV ID=ORDER
-     
-    RECV PART=DEST01, IDF=ORDER, FNAME=<...>&part
-     
-    LISTCAT 
-
  
 
-
-
-    /*SENDER 1*/
-
-    CFTPART     
-         ID =     PARIS,      
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     PHOENIX, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<PARIS address> 
-     
-    CFTSEND ID=ORDER,...
-     
-    SEND IDF=ORDER, STATE=HOLD
-     
-    LISTCAT
-
  
-
-
-
-    /*SENDER 2*/
-
-    CFTPART     
-         ID =     PARIS, 
-    PROT =     PESITANY, 
-         SAP =     1761, 
-    NSPART =     NEWYORK, 
-         NRPART =     PARIS,
-    CFTTCP 
-    ID=PARIS, 
-    HOST = @<PARIS address> 
-     
-    CFTSEND ID=ORDER,...
-     
-    SEND IDF=ORDER, STATE=HOLD
-     
-    LISTCAT
 
 > **Note:**
 >

@@ -8,108 +8,33 @@ To assist Axway Customer Support, the CFTSUPPORT command collects useful informa
 
 Collected information for the Transfer CFT platform includes these different CFTPROD/SUPOUT file members:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Comment         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ABOUT         </td>
-         <td>About information         </td>
-      </tr>
-      <tr>
-         <td>ALOG         </td>
-         <td>Cftlog file         </td>
-      </tr>
-      <tr>
-         <td>CFTOUTQ         </td>
-         <td>List the Transfer CFT Out Queue messages         </td>
-      </tr>
-      <tr>
-         <td>CFTEXT         </td>
-         <td>CFT parameter extract         </td>
-      </tr>
-      <tr>
-         <td>CFTOUT         </td>
-         <td>CFT jobs outputs         </td>
-      </tr>
-      <tr>
-         <td>COPJLOG.CSV         </td>
-         <td>Primary Copilot QPJOBLOGs         </td>
-      </tr>
-      <tr>
-         <td>COPJLOG2.CSV         </td>
-         <td>Secondary Copilot QPJOBLOGs         </td>
-      </tr>
-      <tr>
-         <td>COPOUT         </td>
-         <td>Copilot jobs outputs         </td>
-      </tr>
-      <tr>
-         <td>COPTRC         </td>
-         <td>Copilot traces         </td>
-      </tr>
-      <tr>
-         <td>JLOG.CSV         </td>
-         <td>Primary CFT QPJOBLOGs         </td>
-      </tr>
-      <tr>
-         <td>JLOG2.CSV         </td>
-         <td>Secondary CFT QPJOBLOGs         </td>
-      </tr>
-      <tr>
-         <td>LISTCAT         </td>
-         <td>Brief listcat         </td>
-      </tr>
-      <tr>
-         <td>LISTCATD         </td>
-         <td>Debug listcat         </td>
-      </tr>
-      <tr>
-         <td>LISTCATF         </td>
-         <td>Full listcat         </td>
-      </tr>
-      <tr>
-         <td>LISTCOM         </td>
-         <td>listcom         </td>
-      </tr>
-      <tr>
-         <td>LISTNODE         </td>
-         <td>Listnode         </td>
-      </tr>
-      <tr>
-         <td>LISTPKI         </td>
-         <td>Listpki output         </td>
-      </tr>
-      <tr>
-         <td>LISTPKID         </td>
-         <td>Listpki debug output         </td>
-      </tr>
-      <tr>
-         <td>LISTPKIF         </td>
-         <td>Listpki full output         </td>
-      </tr>
-      <tr>
-         <td>LISTUCONF         </td>
-         <td>Listuconf output         </td>
-      </tr>
-      <tr>
-         <td>LOG         </td>
-         <td>Cftlog file         </td>
-      </tr>
-      <tr>
-         <td>SAVFOUTQ.bin         </td>
-         <td>Back up the Transfer CFT Out Queue (in *SAVF format)         </td>
-      </tr>
-      <tr>
-         <td>WRKACTJOB         </td>
-         <td>List system activity         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File  | Comment  |
+| --- | --- |
+| ABOUT  | About information  |
+| ALOG  | Cftlog file  |
+| CFTOUTQ  | List the Transfer CFT Out Queue messages  |
+| CFTEXT  | CFT parameter extract  |
+| CFTOUT  | CFT jobs outputs  |
+| COPJLOG.CSV  | Primary Copilot QPJOBLOGs  |
+| COPJLOG2.CSV  | Secondary Copilot QPJOBLOGs  |
+| COPOUT  | Copilot jobs outputs  |
+| COPTRC  | Copilot traces  |
+| JLOG.CSV  | Primary CFT QPJOBLOGs  |
+| JLOG2.CSV  | Secondary CFT QPJOBLOGs  |
+| LISTCAT  | Brief listcat  |
+| LISTCATD  | Debug listcat  |
+| LISTCATF  | Full listcat  |
+| LISTCOM  | listcom  |
+| LISTNODE  | Listnode  |
+| LISTPKI  | Listpki output  |
+| LISTPKID  | Listpki debug output  |
+| LISTPKIF  | Listpki full output  |
+| LISTUCONF  | Listuconf output  |
+| LOG  | Cftlog file  |
+| SAVFOUTQ.bin  | Back up the Transfer CFT Out Queue (in *SAVF format)  |
+| WRKACTJOB  | List system activity  |
+
 
 ## Using the CFTSUPPORT command
 
@@ -133,6 +58,3 @@ If the generated CFTSUPPORT.tar is too large, you can compress it prior to sendi
 **Example**
 
 In the following example, the command creates the CFTSUPPORT.tar and SAVFOUTQ.bin files in `/home/cft/cftsupport/`.
-
-
-    CFTSUPPORT IFSPATH('/home/cft/cftsupport')

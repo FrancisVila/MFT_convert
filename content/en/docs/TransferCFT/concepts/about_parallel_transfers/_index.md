@@ -39,9 +39,6 @@ The MAXCNX parameter determines the maximum number of connections for a network 
 
 If there are two CFTNET objects defined as follows, the maximum number of simultaneous connections for this Transfer CFT instance is 30, 10 connections for NET0 and 20 for NET1.
 
-
-    CFTNET id=NET0, maxcnx=10CFTNET id=NET1, maxcnx=20
-
 ### Session
 
 A session is a conversation between two partners. The session occurs at the protocol level and executes over a network connection. A session is established at a certain point in time and then is later disconnected.
@@ -62,13 +59,7 @@ In Transfer CFT, the timeout (session persistence) is defined by DISCTS in serv
 
 **Client configuration**
 
-
-    CFTPROT id=PESIT, DISCTS=8, DISCTD=
-
 **Server configuration**
-
-
-    CFTPROT id=PESIT, DISCTS=, DISCTD=7
 
 > **Note:**
 >
@@ -86,9 +77,6 @@ The MAXTRANS parameter defines the maximum number of simultaneous transfers. Th
 
 **CFTPARM object**
 
-
-    CFTPARM ID=IDPARM0,MAXTRANS=n, ...
-
 In general, you should base your MAXTRANS on the transfer peak in your daily activity.
 
 Related UCONF values:
@@ -104,20 +92,6 @@ Your license key is another factor that affects the maximum value that you can u
 
 Use the CFTUTIL ABOUT command to check for the maximum number of allowed transfers as determined by your key. The value "64" is the authorized limit in the following example.
 
-
-
-    CFTUTIL about
-    Key information :
-    * idparm                     = IDPARM0
-    * key                        = XXXX
-    *
-    * type                       = DATE
-    * expire                     = 2015/11/14
-    * sysname                    = linux-x86-64
-    * Nb Transfers               = 
-    * Nb CPU                     = 4
-    * Nb Partners                = Max
-
 To view the number of active transfers in Transfer CFT, check this message which displays when starting Transfer CFT:
 
 CFTI18I+On 999 authorized simultaneous transfer(s), 100 is(are) active
@@ -129,9 +103,6 @@ To increase the license key limit contact your Axway sales representative, or vi
 **CFTPARM object**
 
 This parameter controls the number of CFTTFIL processes that can run. Since more processes use more machine memory, remember when increasing MAXTASK to take available resources into account. See also [MAXTASK values.](../../c_intro_userinterfaces/command_summary/parameter_intro/maxtask)
-
-
-    CFTPARM ID=IDPARM0,MAXTASK=n, ...
 
 > **Note:**
 >
@@ -145,16 +116,9 @@ This parameter defines the number of transfers managed per task, and operates si
 
 The MAXTASK value multiplied by the TRANTASK value should be less than or equal to MAXTRANS.
 
-
-    CFTPARM ID=IDPARM0,TRANTASK=n, ...
-
 ##### Example
 
 The following parameter values can create a maximum of 2 file access tasks. Transfers 1 through 4 are assigned to the first task, and the next transfer triggers a new file access task that handles transfers 5-8 (as there are four transfers for each task). Any additional transfers are balanced between the two existing tasks. (This means that all new concurrent transfers are put on hold until resources become available.)
-
-
-    MAXTRANS = 14,MAXTASK = 2,
-    TRANTASK = 4,
 
 #### WSCAN scheduling parameter
 
@@ -184,17 +148,11 @@ This parameter defines the maximum number of sessions for incoming connections.
 
 The value should be less than or equal to the MAXCNX and MAXTRANS values.
 
-
-    CFTTCP  ID    =<partner1_id>, HOST=<partner1_URL>, CNXIN=n, ...
-
 #### CNXOUT
 
 **CFTTCP object**
 
 This parameter defines the maximum number of sessions for outgoing connections.
-
-
-    CFTTCP ID    =<partner1_id>, HOST=<partner1_URL>, CNXOUT=n, ...
 
 #### CNXINOUT
 
@@ -202,35 +160,17 @@ This parameter defines the maximum number of sessions for outgoing connections.
 
 This refers to the maximum number of communication sessions (less than or equal to the MAXCNX and MAXTRANS values). This is the total number of both incoming and outgoing sessions. In the following example the number of sessions that you can open at the same time is 4; it is not the sum of CNXIN and CNXOUT but rather an additional limitation.
 
-
-    CFTTCP ID    =<partner1_id>, HOST=<partner1_URL>, CNXIN=2, CNXOUT=3, CNXINOUT=4, ...
-
 ### Recommendations
 
 When using a stand alone Transfer CFT to another stand alone Transfer CFT (or other PeSIT application), the recommendations for a heavily loaded configuration should remain symmetrical.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Stand alone         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Stand alone         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CNXOUT=(Partner's CNXIN)</p>         </td>
-         <td>CNXIN = (Partner’s CNXOUT)         </td>
-      </tr>
-      <tr>
-         <td><p>CNXIN=(Partner’s CNXOUT)</p>         </td>
-         <td>CNXOUT=(Partner’s CNXIN)         </td>
-      </tr>
-      <tr>
-         <td><p>CNXINOUT=CNXIN+CNXOUT</p>         </td>
-         <td>CNXINOUT=CNXIN+CNXOUT         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Stand alone  | Stand alone  |
+| --- | --- |
+|  CNXOUT=(Partner's CNXIN)  | CNXIN = (Partner’s CNXOUT)  |
+|  CNXIN=(Partner’s CNXOUT)  | CNXOUT=(Partner’s CNXIN)  |
+|  CNXINOUT=CNXIN+CNXOUT  | CNXINOUT=CNXIN+CNXOUT  |
+
 
 #### RETRYW scheduling parameter
 

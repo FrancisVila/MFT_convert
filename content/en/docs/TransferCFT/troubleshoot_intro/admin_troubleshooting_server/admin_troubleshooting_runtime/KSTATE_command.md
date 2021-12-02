@@ -13,30 +13,10 @@ the command, the phasestep is set to <span style="font-weight: bold;">K</span>.
 The command generates a WLOG command which reports the event in the
 LOG file.
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idf">IDF</a></p>         </td>
-         <td><p>Model file identifier.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idtu">IDTU</a></p>         </td>
-         <td><p>Local transfer counter identifier.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a></p>
-<p>(Mandatory)</p>         </td>
-         <td><p>Identifier of the partner.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           | Parameter  | Description  |
+ --- | --- | --- |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idf">IDF</a>  |  Model file identifier.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/idtu">IDTU</a>  |  Local transfer counter identifier.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/part">PART</a><br/>(Mandatory)  |  Identifier of the partner.  |
+

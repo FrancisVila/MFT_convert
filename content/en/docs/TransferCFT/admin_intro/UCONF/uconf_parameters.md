@@ -24,105 +24,34 @@ and grouped into the following categories:
 
 ## Identifier parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.uconf.default_fname </p>         </td>
-         <td><p>$(cft.install_dir)/distrib/conf/cftuconf-common.dat
- </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.instance_fname  </p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftuconf.dat  </p>         </td>
-      </tr>
-      <tr>
-         <td>cft.uconf.runtime_fname         </td>
-         <td>$(cft.runtime_dir)/data/cftuconf-run.dat         </td>
-      </tr>
-   </tbody>
-</table>
+
+| UCONF  | Default  |
+| --- | --- |
+|  cft.uconf.default_fname  |  $(cft.install_dir)/distrib/conf/cftuconf-common.dat  |
+|  cft.uconf.instance_fname  |  $(cft.runtime_dir)/data/cftuconf.dat  |
+| cft.uconf.runtime_fname  | $(cft.runtime_dir)/data/cftuconf-run.dat  |
+
 
 <span id="Instance"></span>
 
 ## Instance parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.runtime_dir</p>         </td>
-         <td><p>(dir)</p>         </td>
-         <td><p> $(CFTDIRRUNTIME)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.install_dir</p>         </td>
-         <td><p>(dir)</p>         </td>
-         <td><p> $(CFTDIRINSTALL)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.working_dir</p>         </td>
-         <td><p>(dir)</p>         </td>
-         <td><p>$(cft.runtime_dir)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.common_fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p> $(cft.install_dir)/distrib/conf/cftuconf-common.ini</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.system_fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.install_dir)/distrib/conf/cftuconf-system.ini</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.run.msg</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.run.pid</p>         </td>
-         <td><p>38016</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.run.progress</p>         </td>
-         <td><p>100</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.run.state</p>         </td>
-         <td><p>RUNNING</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.run.client_socket</p>         </td>
-         <td><p>740</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.run.manager_pid </p>         </td>
-         <td><p>44920</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.run.notification_port  </p>         </td>
-         <td><p>2953</p>         </td>
-         <td><p>New</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Default  | Former value  |
+| --- | --- | --- |
+|  cft.runtime_dir  |  (dir)  |  $(CFTDIRRUNTIME)  |
+|  cft.install_dir  |  (dir)  |  $(CFTDIRINSTALL)  |
+|  cft.working_dir  |  (dir)  |  $(cft.runtime_dir)  |
+|  cft.uconf.common_fname  |  (fname)  |  $(cft.install_dir)/distrib/conf/cftuconf-common.ini  |
+|  cft.uconf.system_fname  |  (fname)  |  $(cft.install_dir)/distrib/conf/cftuconf-system.ini  |
+|  cft.run.msg  |   |  New  |
+|  cft.run.pid  |  38016  |  New  |
+|  cft.run.progress  |  100  |  New  |
+|  cft.run.state  |  RUNNING  |  New  |
+|  copilot.run.client_socket  |  740  |  New  |
+|  copilot.run.manager_pid  |  44920  |  New  |
+|  copilot.run.notification_port  |  2953  |  New  |
+
 
 <span id="Packagin"></span>
 
@@ -130,146 +59,38 @@ and grouped into the following categories:
 
 The following table lists the UCONF identifiers, default values, and former Windows and UNIX file values.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UNIX         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.runtime_dir </p>         </td>
-         <td><p>$(CFTDIRRUNTIME)  </p>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.install_dir </p>         </td>
-         <td><p>$(CFTDIRINSTALL)  </p>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td>cft.synchrony_dir         </td>
-         <td>          </td>
-         <td>          </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcat.fname</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftcata  </p>         </td>
-         <td><p>$CFTCATA(cft.ini) </p>         </td>
-         <td><p>_CFTCATA </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcat.default_size </p>         </td>
-         <td><p>10000  </p>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcom.default_size </p>         </td>
-         <td><p>1000  </p>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.fname </p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftparm </p>         </td>
-         <td><p>$CFTPARM  </p>         </td>
-         <td><p>_CFTPARM  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.partfname </p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftpart </p>         </td>
-         <td><p>$CFTPART  </p>         </td>
-         <td><p>_CFTPART  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.pkifname </p>         </td>
-         <td><p>$(cft.runtime_dir)/conf/pki/pkibase  </p>         </td>
-         <td><p>$CFTPKU </p>         </td>
-         <td><p>_CFTPKU  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.habfname  </p>         </td>
-         <td><p>$(cft.runtime_dir)/sec.ini  </p>         </td>
-         <td><p>$CFTHINI  </p>         </td>
-         <td><p>_CFTHINI  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.secparm </p>         </td>
-         <td><p>$(cft.runtime_dir)/data/secparm  </p>         </td>
-         <td><p>$CFTHPARM  </p>         </td>
-         <td><p>_CFTHPARM  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.keyfname </p>         </td>
-         <td><p>$(cft.runtime_dir)/conf/cft.key  </p>         </td>
-         <td>         </td>
-         <td>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcom.fname </p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftcom  </p>         </td>
-         <td><p>$CFTCOM  </p>         </td>
-         <td><p>_CFTCOM  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftlog.fname </p>         </td>
-         <td><p>$(cft.runtime_dir)/log/cftlog  </p>         </td>
-         <td><p>$CFTLOG  </p>         </td>
-         <td><p>_CFTLOG  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftlog.afname &gt; </p>         </td>
-         <td><p>$(cft.runtime_dir)/log/cftalog  </p>         </td>
-         <td><p>$CFTALOG  </p>         </td>
-         <td><p>_CFTALOG  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftaccnt.fname </p>         </td>
-         <td><p>$(cft.runtime_dir)/log/cftaccnt  </p>         </td>
-         <td><p>$CFTACCNT  </p>         </td>
-         <td><p>_CFTACNT  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftaccnt.afname </p>         </td>
-         <td><p>$(cft.runtime_dir)/accnt/cftaccnt  </p>         </td>
-         <td><p>$CFTAACCN  </p>         </td>
-         <td><p>_CFTACNTA  </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Default  | Windows  | UNIX  |
+| --- | --- | --- | --- |
+|  cft.runtime_dir  |  $(CFTDIRRUNTIME)  |   |   |
+|  cft.install_dir  |  $(CFTDIRINSTALL)  |   |   |
+| cft.synchrony_dir  |   |   |   |
+|  cft.cftcat.fname  |  $(cft.runtime_dir)/data/cftcata  |  $CFTCATA(cft.ini)  |  _CFTCATA  |
+|  cft.cftcat.default_size  |  10000  |   |   |
+|  cft.cftcom.default_size  |  1000  |   |   |
+|  cft.cftparm.fname  |  $(cft.runtime_dir)/data/cftparm  |  $CFTPARM  |  _CFTPARM  |
+|  cft.cftparm.partfname  |  $(cft.runtime_dir)/data/cftpart  |  $CFTPART  |  _CFTPART  |
+|  cft.cftparm.pkifname  |  $(cft.runtime_dir)/conf/pki/pkibase  |  $CFTPKU  |  _CFTPKU  |
+|  cft.cftparm.habfname  |  $(cft.runtime_dir)/sec.ini  |  $CFTHINI  |  _CFTHINI  |
+|  cft.cftparm.secparm  |  $(cft.runtime_dir)/data/secparm  |  $CFTHPARM  |  _CFTHPARM  |
+|  cft.cftparm.keyfname  |  $(cft.runtime_dir)/conf/cft.key  |   |   |
+|  cft.cftcom.fname  |  $(cft.runtime_dir)/data/cftcom  |  $CFTCOM  |  _CFTCOM  |
+|  cft.cftlog.fname  |  $(cft.runtime_dir)/log/cftlog  |  $CFTLOG  |  _CFTLOG  |
+|  cft.cftlog.afname &gt;  |  $(cft.runtime_dir)/log/cftalog  |  $CFTALOG  |  _CFTALOG  |
+|  cft.cftaccnt.fname  |  $(cft.runtime_dir)/log/cftaccnt  |  $CFTACCNT  |  _CFTACNT  |
+|  cft.cftaccnt.afname  |  $(cft.runtime_dir)/accnt/cftaccnt  |  $CFTAACCN  |  _CFTACNTA  |
+
 
 <span id="Work"></span>
 
 ## Work environment parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.working_dir  </p>         </td>
-         <td><p>$(cft.runtime_dir) </p>         </td>
-         <td><p>Sets the {{< TransferCFT/componentshortname  >}} work-environment </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.idparm </p>         </td>
-         <td><p>IDPARM0  </p>         </td>
-         <td><p>Sets the IDPARM to use in Copilot (GUI) and {{< TransferCFT/componentshortname  >}} (optional)  </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Default  | Description  |
+| --- | --- | --- |
+|  cft.working_dir  |  $(cft.runtime_dir)  |  Sets the {{< TransferCFT/componentshortname  >}} work-environment  |
+|  cft.idparm  |  IDPARM0  |  Sets the IDPARM to use in Copilot (GUI) and {{< TransferCFT/componentshortname  >}} (optional)  |
+
 
 <span id="Common"></span>
 
@@ -277,160 +98,44 @@ The following table lists the UCONF identifiers, default values, and former Wind
 
 Values for ID where the type is Common.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.uconf.shared_fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftuconf-shared.ini  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.shared_fname_bak</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.uconf.shared_fname).bak</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.instance_fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftuconf.ini</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.instance_fname_bak</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.uconf.instance_fname)_bak</p>         </td>
-      </tr>
-      <tr>
-         <td>cft.uconf.runtime_fname         </td>
-         <td>(fname)         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.lock_fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/run/uconf.lck</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.lock_delay_ms</p>         </td>
-         <td><p>(int)</p>         </td>
-         <td><p>100</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.uconf.lock_retry</p>         </td>
-         <td><p> (int)</p>         </td>
-         <td><p>20</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.idparm </p>         </td>
-         <td><p>(identifier)</p>         </td>
-         <td><p>IDPARM0 New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcat.fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftcata Win:$CFTCATA(cft.ini) / Unix: _CFTCATA</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcat.default_size  </p>         </td>
-         <td><p>(int)</p>         </td>
-         <td><p>10000</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.fname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftparm Win:$CFTPARM(cft.ini) / Unix: _CFTPARM</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftparm.partfname</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftpart Win:$CFTPART(cft.ini) / Unix: _CFTPART</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcom.fname</p>         </td>
-         <td><p>fname</p>         </td>
-         <td><p>$(cft.runtime_dir)/data/cftcom Win:$CFTCOM(cft.ini) / Unix: _CFTCOM</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftcom.default_size</p>         </td>
-         <td><p>(int)</p>         </td>
-         <td><p>1000</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftlog.fname </p>         </td>
-         <td><p>fname</p>         </td>
-         <td><p> $(cft.runtime_dir)/log/cftlog
-Win:$CFTLOG(cft.ini) / Unix: _CFTLOG</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftlog.afname</p>         </td>
-         <td><p>fname</p>         </td>
-         <td><p>$(cft.runtime_dir)/log/cftalog Win:$CFTALOG(cft.ini) / Unix: _CFTLOG</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftaccnt.fname </p>         </td>
-         <td><p> fname</p>         </td>
-         <td><p>$(cft.runtime_dir)/log/cftaccnt Win:$CFTACCNT(cft.ini) / Unix: _CFTACNT</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.cftaccnt.afname  </p>         </td>
-         <td><p>fname</p>         </td>
-         <td><p>$(cft.runtime_dir)/accnt/cftaccnt Win:$CFTAACCN(cft.ini) / Unix: _CFTACNTA</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.server.maxtrans</p>         </td>
-         <td><p> (int)</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.server.delayed_update</p>         </td>
-         <td><p> (int)</p>         </td>
-         <td><p>1</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Default  | Former value  |
+| --- | --- | --- |
+|  cft.uconf.shared_fname  |  (fname)  |  $(cft.runtime_dir)/data/cftuconf-shared.ini  |
+|  cft.uconf.shared_fname_bak  |  (fname)  |  $(cft.uconf.shared_fname).bak  |
+|  cft.uconf.instance_fname  |  (fname)  |  $(cft.runtime_dir)/data/cftuconf.ini  |
+|  cft.uconf.instance_fname_bak  |  (fname)  |  $(cft.uconf.instance_fname)_bak  |
+| cft.uconf.runtime_fname  | (fname)  |   |
+|  cft.uconf.lock_fname  |  (fname)  |  $(cft.runtime_dir)/run/uconf.lck  |
+|  cft.uconf.lock_delay_ms  |  (int)  |  100  |
+|  cft.uconf.lock_retry  |  (int)  |  20  |
+|  cft.idparm  |  (identifier)  |  IDPARM0 New  |
+|  cft.cftcat.fname  |  (fname)  |  $(cft.runtime_dir)/data/cftcata Win:$CFTCATA(cft.ini) / Unix: _CFTCATA  |
+|  cft.cftcat.default_size  |  (int)  |  10000  |
+|  cft.cftparm.fname  |  (fname)  |  $(cft.runtime_dir)/data/cftparm Win:$CFTPARM(cft.ini) / Unix: _CFTPARM  |
+|  cft.cftparm.partfname  |  (fname)  |  $(cft.runtime_dir)/data/cftpart Win:$CFTPART(cft.ini) / Unix: _CFTPART  |
+|  cft.cftcom.fname  |  fname  |  $(cft.runtime_dir)/data/cftcom Win:$CFTCOM(cft.ini) / Unix: _CFTCOM  |
+|  cft.cftcom.default_size  |  (int)  |  1000  |
+|  cft.cftlog.fname  |  fname  |  $(cft.runtime_dir)/log/cftlog Win:$CFTLOG(cft.ini) / Unix: _CFTLOG  |
+|  cft.cftlog.afname  |  fname  |  $(cft.runtime_dir)/log/cftalog Win:$CFTALOG(cft.ini) / Unix: _CFTLOG  |
+|  cft.cftaccnt.fname  |  fname  |  $(cft.runtime_dir)/log/cftaccnt Win:$CFTACCNT(cft.ini) / Unix: _CFTACNT  |
+|  cft.cftaccnt.afname  |  fname  |  $(cft.runtime_dir)/accnt/cftaccnt Win:$CFTAACCN(cft.ini) / Unix: _CFTACNTA  |
+|  cft.server.maxtrans  |  (int)  |   |
+|  cft.server.delayed_update  |  (int)  |  1  |
+
 
 <span id="Trace"></span>
 
 ## Trace parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Former value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>trace.xtrace.default_fname
-  </p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>$(cft.runtime_dir)/traces/cft.trc New</p>         </td>
-      </tr>
-      <tr>
-         <td><p>trace.xtrace.default_level</p>         </td>
-         <td><p>(fname)</p>         </td>
-         <td><p>New parameter</p>         </td>
-      </tr>
-      <tr>
-         <td><p>trace.net.level</p>         </td>
-         <td><p>(int)</p>         </td>
-         <td><p>New parameter</p>         </td>
-      </tr>
-      <tr>
-         <td><p>trace.file.level</p>         </td>
-         <td><p>(int)</p>         </td>
-         <td><p>New parameter</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Default  | Former value  |
+| --- | --- | --- |
+|  trace.xtrace.default_fname  |  (fname)  |  $(cft.runtime_dir)/traces/cft.trc New  |
+|  trace.xtrace.default_level  |  (fname)  |  New parameter  |
+|  trace.net.level  |  (int)  |  New parameter  |
+|  trace.file.level  |  (int)  |  New parameter  |
+
 
 <span id="Transfer2"></span>
 
@@ -438,187 +143,70 @@ Win:$CFTLOG(cft.ini) / Unix: _CFTLOG</p>         </td>
 
 Use the following parameters to define {{< TransferCFT/componentshortname  >}} probes.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.probes.history_size</p>         </td>
-         <td><p>Number of samples kept in the memory for each time class</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.probes.time_classes</p>         </td>
-         <td><p>Sorted list of time classes in milliseconds</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Description  |
+| --- | --- |
+|  cft.probes.history_size  |  Number of samples kept in the memory for each time class  |
+|  cft.probes.time_classes  |  Sorted list of time classes in milliseconds  |
+
 
 <span id="Add"></span>
 
 ## Add a character set: transcoding
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">ID         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.cft_charsets</p>         </td>
-         <td><p>Add a character set id to the existing list of charsets.</p>
-<p>The default charsets are:</p>
-<ul>
-<li>CFT_UTF-8</li>
-<li>CFT_UTF-16</li>
-<li>CFT_UTF-16LE</li>
-<li>CFT_UTF-16BE</li>
-<li>CFT_UTF-32</li>
-<li>CFT_UTF-32LE</li>
-<li>CFT_UTF-32BE</li>
-<li>CFT_UCS-2</li>
-<li>CFT_UCS-2LE</li>
-<li>CFT_UCS-2BE</li>
-<li>CFT_BIG5</li>
-<li>CFT_CP850</li>
-<li>CFT_ISO8859-1</li>
-<li>CFT_ISO8859-15</li>
-<li>CFT_EBCDIC-FR</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>cft.charsets.value.CUSTOM_CHARSET_ID.iconv_map         </td>
-         <td><p>Customize the charset that you created.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| ID  | Description  |
+| --- | --- |
+|  cft.cft_charsets  |  Add a character set id to the existing list of charsets.<br/>The default charsets are:<br/> • CFT_UTF-8<br/> • CFT_UTF-16<br/> • CFT_UTF-16LE<br/> • CFT_UTF-16BE<br/> • CFT_UTF-32<br/> • CFT_UTF-32LE<br/> • CFT_UTF-32BE<br/> • CFT_UCS-2<br/> • CFT_UCS-2LE<br/> • CFT_UCS-2BE<br/> • CFT_BIG5<br/> • CFT_CP850<br/> • CFT_ISO8859-1<br/> • CFT_ISO8859-15<br/> • CFT_EBCDIC-FR</li>  |
+| cft.charsets.value.CUSTOM_CHARSET_ID.iconv_map  |  Customize the charset that you created.  |
+
 
 ## Start log and catalog parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.startup.catalog         </td>
-         <td>Yes         </td>
-         <td>Display/hide catalog at start up.         </td>
-      </tr>
-      <tr>
-         <td>copilot.startup.catalog.filter         </td>
-         <td>Errors         </td>
-         <td>Filter to use for the catalog display on start up.         </td>
-      </tr>
-      <tr>
-         <td>copilot.startup.log         </td>
-         <td>Yes         </td>
-         <td>Display/hide log at start up.         </td>
-      </tr>
-      <tr>
-         <td>copilot.startup.log.filter         </td>
-         <td>None         </td>
-         <td>Filter to use for the log display on start up.         </td>
-      </tr>
-      <tr>
-         <td>cft.cftlog.switch_on_stop         </td>
-         <td>No         </td>
-         <td>Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| copilot.startup.catalog  | Yes  | Display/hide catalog at start up.  |
+| copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
+| copilot.startup.log  | Yes  | Display/hide log at start up.  |
+| copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
+| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown  |
+
 
 ## Automatically expand the catalog
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.cftcat.auto_expand_percent         </td>
-         <td>0         </td>
-         <td><p>This value indicates the factor increase, as a percentage, that the catalog will automatically expand.</p>
-<p>The value 0 disables the automatic expansion feature.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Tip  
-We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>cft.cftcat.auto_expand_max_size         </td>
-         <td>1M         </td>
-         <td><p>The maximum number of records for the automatic catalog expansion option.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.cftcat.auto_expand_percent  | 0  |  This value indicates the factor increase, as a percentage, that the catalog will automatically expand.<br/>The value 0 disables the automatic expansion feature. <blockquote> **Note:**<br/>Tip We recommend that you set this to a relatively high value, at least 50. When repeatedly expanded, the catalog's internal structure may become fragmented and, consequently, catalog access less efficient. </blockquote>  |
+| cft.cftcat.auto_expand_max_size  | 1M  |  The maximum number of records for the automatic catalog expansion option.  |
+
 
 See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_catalog).
 
 ## Parallel transfers
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>uconf:cft.server.maxtrans         </td>
-         <td>Modifies the number of parallel transfers. See <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/trantask">trantask</a>.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+| uconf:cft.server.maxtrans  | Modifies the number of parallel transfers. See <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/trantask">trantask</a>.  |
+
 
 ## Retrieve subdirectories
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>uconf:cft.dirdepth=Yes         </td>
-         <td>Enables retrieving subdirectories.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+| uconf:cft.dirdepth=Yes  | Enables retrieving subdirectories.  |
+
 
 ## Synchronous connections
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>uconf: cft.server.cftcoms.max_connection         </td>
-         <td>Defines the number of connections for CFTCOMS.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+| uconf: cft.server.cftcoms.max_connection  | Defines the number of connections for CFTCOMS.  |
+
 
 ## Purge
 
@@ -626,105 +214,39 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 
 PURGE when starting {{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.purge.enable_on_start         </td>
-         <td>Yes         </td>
-         <td>Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.background_on_start         </td>
-         <td>Yes         </td>
-         <td>Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.quantity         </td>
-         <td>10         </td>
-         <td>Number of transfers to delete at once step (only for background).         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.periodicity         </td>
-         <td>0         </td>
-         <td>Amount of time between each automatic purge.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.purge.enable_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.background_on_start  | Yes  | Condition if the purge must be run on {{< TransferCFT/componentshortname  >}} startup.  |
+| cft.purge.quantity  | 10  | Number of transfers to delete at once step (only for background).  |
+| cft.purge.periodicity  | 0  | Amount of time between each automatic purge.  |
+
 
 ### Dynamically purge catalog
 
 These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.purge.rx         </td>
-         <td>-1         </td>
-         <td>requester state eXecuted         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.sx         </td>
-         <td>-1         </td>
-         <td>server state eXecuted         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.rt         </td>
-         <td>-1         </td>
-         <td>requester state Terminated         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.st         </td>
-         <td>-1         </td>
-         <td>server state Terminated         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.rh         </td>
-         <td>-1         </td>
-         <td>requester sate Hold         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.sh         </td>
-         <td>-1         </td>
-         <td>server state Hold         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.purge.rx  | -1  | requester state eXecuted  |
+| cft.purge.sx  | -1  | server state eXecuted  |
+| cft.purge.rt  | -1  | requester state Terminated  |
+| cft.purge.st  | -1  | server state Terminated  |
+| cft.purge.rh  | -1  | requester sate Hold  |
+| cft.purge.sh  | -1  | server state Hold  |
+
 
 See also, [Purging the catalog](../../admin_commands_intro/purge_catalog), Transfer states and [LISTCAT.](../../../c_intro_userinterfaces/about_cftutil/monitoring_cftutil_intro/brief_catalog_listing)
 
 ## Customizable network sessions
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.max_session         </td>
-         <td>0         </td>
-         <td><p>Use this setting to overwrite the default maximum number of network sessions.</p>
-<p>The default value 0 doubles the maxtrans value.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.server.max_session  | 0  |  Use this setting to overwrite the default maximum number of network sessions.<br/>The default value 0 doubles the maxtrans value.  |
+
 
 <span id="Transfer"></span>
 
@@ -735,87 +257,25 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 -   For a SEND command the IDFDEF is used if  available, before searching for the CFTPART value.
 -   For a RECV command with an asterisk "\*" the sender provides the IDF.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.default_idf.enable         </td>
-         <td>Yes         </td>
-         <td><p>Possible values are:</p>
-<ul>
-<li>Yes: Indicates that a default file identifier is used when the transfer request IDF is not defined in a CFTRECV or CFTSEND command.</li>
-<li>No: Disables the default IDF functionality of no required IDF.If you execute a command without an IDF or using an IDF that does not exist, or using the default IDF defined in CFTPARM (DEFAULT), the commands fails.</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.default_idf.enable  | Yes  |  Possible values are:<br/> • Yes: Indicates that a default file identifier is used when the transfer request IDF is not defined in a CFTRECV or CFTSEND command.<br/> • No: Disables the default IDF functionality of no required IDF.If you execute a command without an IDF or using an IDF that does not exist, or using the default IDF defined in CFTPARM (DEFAULT), the commands fails.</li>  |
+
 
 <span id="Statisti"></span>
 
 ## Accounting records
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.accnt.enable_extended_byte_fields         </td>
-         <td>No         </td>
-         <td><p>For each completed transfer, {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).</p>
-<p>Possible values are:</p>
-<ul>
-<li>No: The FBYTE and NBYTE fields are filled.</li>
-<li>Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.accnt.enable_extended_byte_fields  | No  |  For each completed transfer, {{< TransferCFT/componentshortname  >}} can record the number of characters in the file (FBYTE) and the number of characters sent over the line (NBYTE).<br/>Possible values are:<br/> • No: The FBYTE and NBYTE fields are filled.<br/> • Yes: The FBYTE_EXTENDED and NBYTE_EXTENDED fields are filled (length=15), and FBYTE and NBYTE are empty (either 0 or blank depending on the CFTACCNT LANG parameter setting).</li>  |
+
 
 <span id="Compatib"></span>
 
 ## Compatibility
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Default value         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Uconf:cft.listcat_compat         </td>
-         <td>No         </td>
-         <td><p>Defines the LISTCAT display:</p>
-<ul>
-<li>Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.</li>
-<li>No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>Uconf:cft.state_compat         </td>
-         <td>No         </td>
-         <td><p>Defines the transfer states:</p>
-<ul>
-<li>Yes= The phase state is fully compatible with the states in versions prior to 3.0.</li>
-<li>No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.</li>
-</ul>
-<p><strong>Note</strong>: Uconf:cft.state_compat also impacts the <a href="../../../concepts/phase_and_phasestep/ack_phase">acknowledgement</a> behavior if ackstate is set to ignore.</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 <span id="Deactivate_idf"></span>
 
@@ -823,23 +283,8 @@ This parameter lets you use the SEND or RECV command without requiring an [IDF](
 
 You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.default_idf.enable         </td>
-         <td>Yes         </td>
-         <td><p>Bool</p>
-<p>Yes / No</p>         </td>
-         <td><p>Enable the default IDF to use when the transfer request IDF is not explicitly defined by a CFTRECV or CFTSEND command.</p>
-<p>DIAGI=434</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Type  | Description  |
+| --- | --- | --- | --- |
+| cft.default_idf.enable  | Yes  |  Bool<br/>Yes / No  |  Enable the default IDF to use when the transfer request IDF is not explicitly defined by a CFTRECV or CFTSEND command.<br/>DIAGI=434  |
+

@@ -46,8 +46,6 @@ Transfer CFT z/OS cannot transfer the following files:
 
 Transfer CFT z/OS uses the following coding to handle files:
 
-    FNAME=VOLUME%UNIT%NAME1.NAME2.NAMEX
-
 Where:
 
 -   VOLUME has the following characteristics:
@@ -87,12 +85,6 @@ Where:
 
 **Example**
 
-    CFTVOL%%FILENAME
-    %3390%FILENAME
-    %%FILENAME
-    FILENAME
-    /path/file.extension
-
 > **Note:**
 >
 > The two % signs are mandatory only if the VOLUME parameter or the UNIT parameter has been specified.
@@ -111,19 +103,11 @@ Example 
 
 A DSNAME or a string to request that a file be sent:
 
-    SEND FNAME=‘CFT.SEND.FILE’
-
 Search the catalog for the file:
-
-    SEND FNAME=‘CFTRES%3480%CFT.SEND.FILE’
 
 Look for the file on the volume CFTRES, unit 3480:
 
-    SEND FNAME=‘%3480%CFT.SEND.FILE’
-
 Look for the file in the catalog (unit type imposed):
-
-    SEND FNAME=‘CFTRES%%CFT.SEND.FILE’
 
 Look for the file on the disk CFTRES:
 
@@ -131,19 +115,11 @@ Using parameters ‘VOLUME’ and/or ‘UNIT’ may conflict with DF/SMS file ma
 
 t:
 
-    SEND FNAME=‘CFT.SEND.FILE(MEMBER)’
-
 t:
-
-    CFTPARM PARTFNAM=$CFTPART 
 
 This file is indicated in the JCL that starts Transfer CFT, by:
 
-     //CFTPART DD DISP=SHR,DSN=... ,
-
 Or under TSO:
-
-    ALLOC FI(CFTPART) SHR DA(’...’) .
 
 Transfer CFT and the associated utilities set aside the use of “DD names” beginning with ‘FIL’ for dynamic allocations.
 
@@ -168,11 +144,7 @@ An alternate way to specify full-length DF/SMS parameters is described in [DF/SM
 
 Transfer CFT z/OS uses the following coding to refer to a DDNAME declared in the JCL:
 
-    FNAME=$DDNAME
-
 Example
-
-    FNAME=$CFTCAT
 
 <span id="Coding PDS filenames"></span>
 
@@ -198,9 +170,6 @@ Transfer CFT z/OS handles PDS files one member at a time. Transfer CFT z/OS proc
 
 A PDS file is coded as:
 
-    FNAME=NAME1.NAMEX(MEMBER)
-            
-
 Delivered template:
 
 -   `..SAMPLE(CFTPDS)`
@@ -210,12 +179,6 @@ Delivered template:
 ## Code GDG filenames
 
 A GDG filename is coded as:
-
-    FNAME=NAME1.NAMEX(0)
-    FNAME=NAME1.NAMEX(-n)
-            
-    FNAME=NAME1.NAMEX(+n)
-                
 
 > **Note:**
 >

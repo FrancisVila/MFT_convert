@@ -108,99 +108,25 @@ Transfer CFT puts the transfer on hold (K status). The operator must manually re
 
 The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The only difference between the parameters used for SOCKS 4 and 5 is the PASSWORD parameter.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><strong>ID</strong></p>         </td>
-         <td>STRING max_length=32         </td>
-         <td><p>Network resource identifier.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CALL</p>         </td>
-         <td>STRING max_length=0         </td>
-         <td><p>Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CLASS</p>         </td>
-         <td>Number &lt;1&gt; min=0 max=64         </td>
-         <td><p>Logical class for the physical link.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MAXCNX </p>         </td>
-         <td>Number &lt;32&gt; min=1 max=2000         </td>
-         <td><p>Maximum number of simultaneous connections that Transfer
-CFT accepts to establish on this network resource.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>TYPE </p>         </td>
-         <td>TCP         </td>
-         <td><p>Defines the type of network resource.</p>         </td>
-      </tr>
-      <tr>
-         <td>BUFLEN         </td>
-         <td>Number &lt;0&gt; min=32 max=32766         </td>
-         <td>Size of buffers.         </td>
-      </tr>
-      <tr>
-         <td>COMMENT         </td>
-         <td>STRING max_length=80         </td>
-         <td>Free comment.         </td>
-      </tr>
-      <tr>
-         <td>ORIGIN         </td>
-         <td>STRING max_length=0         </td>
-         <td>Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.         </td>
-      </tr>
-      <tr>
-         <td><strong>INET</strong>         </td>
-         <td>STRING max_length=32         </td>
-         <td>Identifier of the CFTNET command defining access to the first network         </td>
-      </tr>
-      <tr>
-         <td><strong>HOST</strong>         </td>
-         <td>String max_length=64         </td>
-         <td>Resource address         </td>
-      </tr>
-      <tr>
-         <td><strong>PORT</strong>         </td>
-         <td>Number &lt;0&gt; min=1 max=65535         </td>
-         <td>Listening port of the proxy/proxies in the first network         </td>
-      </tr>
-      <tr>
-         <td>USER         </td>
-         <td>String max_length=32         </td>
-         <td>User name transmitted in the connection request addressed to the proxy         </td>
-      </tr>
-      <tr>
-         <td>PASSWORD         </td>
-         <td>String max_length=32         </td>
-         <td><p><em>SOCKS 5 only</em></p>
-<p>User password transmitted in the connection request addressed to the proxy.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameters  | Value  | Description  |
+| --- | --- | --- |
+|  **ID**  | STRING max_length=32  |  Network resource identifier.  |
+|  CALL  | STRING max_length=0  |  Call direction possible through this network resource. ('<u>INOUT</u>','OUT','IN')  |
+|  CLASS  | Number &lt;1&gt; min=0 max=64  |  Logical class for the physical link.  |
+|  MAXCNX  | Number &lt;32&gt; min=1 max=2000  |  Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource.  |
+|  TYPE  | TCP  |  Defines the type of network resource.  |
+| BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
+| COMMENT  | STRING max_length=80  | Free comment.  |
+| ORIGIN  | STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| **INET**  | STRING max_length=32  | Identifier of the CFTNET command defining access to the first network  |
+| **HOST**  | String max_length=64  | Resource address  |
+| **PORT**  | Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
+| USER  | String max_length=32  | User name transmitted in the connection request addressed to the proxy  |
+| PASSWORD  | String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
+
 
 Example
-
-
-
-    CFTNET   ID       = 'NET0',
-    TYPE     = 'TCP',
-
-    ....
-    PROTOCOL = 'SOCKS5',
-    USER     = 'john',
-    PASSWORD = 'foo'
-
-    CFTPROT  ID       = 'PESITANY_SOCKS5',
-    ...
 
 <span id="Configuration"></span>
 
@@ -215,34 +141,6 @@ To configure an outgoing connection through a proxy, user must define the follow
 -   The default port for proxy servers is 1080.
 
 Example
-
-
-
-    CFTNET   ID       = 'NET0',
-    TYPE     = 'TCP',
-    CALL     = 'INOUT',
-    MAXCNX   = '128',
-    CLASS    = '1',
-    HOST     = 'localhost'
-
-    CFTNET   ID       = 'NSOCKS5',
-    TYPE     = 'TCP',
-    CALL     = 'INOUT',
-    MAXCNX   = '32',
-    CLASS    = '2',
-    HOST     = proxy_address,
-    PORT     = proxy_port,
-    INET     = 'NET0',
-    PROTOCOL = 'SOCKS5',
-    USER     = 'john',
-    PASSWORD = 'foo'
-
-    CFTPROT  ID       = 'PESITANY_SOCKS5',
-    NET      = 'NSOCKS5'
-
-    CFTPART      ID       = 'PARIS_NSOCKS5',
-    CFTTCP       ID       = 'PARIS_ NSOCKS5',
-    CLASS  = '2',
 
 ### SOCKS references
 

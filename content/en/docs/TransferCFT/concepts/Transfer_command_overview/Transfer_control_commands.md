@@ -19,46 +19,6 @@ be used to:
 
 The following table describes the commands associated with these actions.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadD-Column1-Header1">Action         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../admin_intro/admin_commands_intro/delete_command">DELETE</a></p>         </td>
-         <td><p>Deletes a catalog entry </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">HALT</a></p>         </td>
-         <td><p>Stops a transfer and sets it to the HOLD state </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">KEEP</a></p>         </td>
-         <td><p>Stops a transfer and sets it to the KEEP state </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">START</a></p>         </td>
-         <td><p>Reactivates a transfer </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">SUBMIT</a></p>         </td>
-         <td>Runs a preprocessing, a post-processing or an acknowledgment processing procedure according to the current phase of the transfer request.         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">END</a></p>         </td>
-         <td><p>Declares the processing subsequent to the transfer terminated </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="">RESUME</a></p>         </td>
-         <td><p>Retrieves, in the server mode, a blocked send request having
-the hold status</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 The parameters relative to these commands determine the transfer selection
 criteria, catalog entries, these commands relate to.
 

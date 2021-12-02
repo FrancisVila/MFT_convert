@@ -25,23 +25,11 @@ in the following table.
 
 Default values are:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Protocol          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Default value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>PeSIT ANY profile</p>         </td>
-         <td><p>60</p>         </td>
-      </tr>
-      <tr>
-         <td><p>ODETTE </p>         </td>
-         <td><p>65 </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Protocol  | Default value  |
+| --- | --- |
+|  PeSIT ANY profile  |  60  |
+|  ODETTE  |  65  |
+
 
 [Return to Command index](../../)

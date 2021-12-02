@@ -10,38 +10,14 @@ When enabled, {{< TransferCFT/componentshortname  >}} retrieves all permissions 
 >
 > The user/password login are not stored in the cache. This means that if the PassPort server is down, you cannot connect to Copilot, Transfer CFT REST APIs, or the Transfer CFT UI.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameters         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>am.passport.persistency.enable         </td>
-         <td>Yes         </td>
-         <td><p>Enables persistent support for PassPort AM.</p>         </td>
-      </tr>
-      <tr>
-         <td>am.passport.persistency.fname         </td>
-         <td>$(cft.runtime_dir)/data/CFTAM         </td>
-         <td>Persistent cache file name for PassPort AM.         </td>
-      </tr>
-      <tr>
-         <td>am.passport.persistency.check_interval         </td>
-         <td>600         </td>
-         <td><p>Interval in seconds between two checks of access management updates.</p>
-<p>See also the information concerning CFTSXPAM or copsxpam below.</p>         </td>
-      </tr>
-      <tr>
-         <td>am.passport.persistency.cftsxpam.enable         </td>
-         <td>Yes         </td>
-         <td>Enable the CFTSXPAM process, which updates the PassPort AM cache.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameters  | Default  | Description  |
+| --- | --- | --- |
+| am.passport.persistency.enable  | Yes  |  Enables persistent support for PassPort AM.  |
+| am.passport.persistency.fname  | $(cft.runtime_dir)/data/CFTAM  | Persistent cache file name for PassPort AM.  |
+| am.passport.persistency.check_interval  | 600  |  Interval in seconds between two checks of access management updates.<br/>See also the information concerning CFTSXPAM or copsxpam below.  |
+| am.passport.persistency.cftsxpam.enable  | Yes  | Enable the CFTSXPAM process, which updates the PassPort AM cache.  |
+
 
 ## Updating the cache
 

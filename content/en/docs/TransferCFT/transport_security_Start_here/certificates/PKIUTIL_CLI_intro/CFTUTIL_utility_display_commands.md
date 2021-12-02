@@ -41,69 +41,16 @@ The following table contains comments on the new sections.
 
 Section definitions for LISTCAT CONTENT=FULL
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Section         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1 </p>         </td>
-         <td><p>SSL session direction used for the transfer.</p>
-<p>C signifies client and
-S signifies server. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>2 </p>         </td>
-         <td><p>SSL session authentication mode used for the transfer.</p>
-<ul>
-<li>S
-signifies that only the server was authenticated.</li>
-<li>B
-signifies that the client and server were authenticated.</li>
-<li>A
-signifies that the anonymous mode has been implemented. </li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>3 </p>         </td>
-         <td><p>Suite negotiated for the SSL session.</p>
-<p>This suite is set to one of the values from the suites
-supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47). </p>         </td>
-      </tr>
-      <tr>
-         <td><p>4 </p>         </td>
-         <td><p>Identifier of the CFTSSL command used to negotiate the
-session parameters. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>5 </p>         </td>
-         <td><p>Certificate identifier of the authority that signed the
-certificate presented by the remote partner. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>6 </p>         </td>
-         <td><p>32-character remote user certificate CN (Common Name)
-field.</p>
-<p>If the certificate CN length exceeds 32 characters, it
-is truncated. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>7 </p>         </td>
-         <td><p>Identifier of the user certificate used locally for authentication
-by the remote partner. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>8 </p>         </td>
-         <td><p>Physical name of the file in which the certificate presented
-by the remote partner was recorded. </p>         </td>
-      </tr>
-      <tr>
-         <td><p>9 </p>         </td>
-         <td><p>Value of the PARM parameter in the CFTSSL command used
-to negotiate the session parameters. </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Section  | Description  |
+| --- | --- |
+|  1  |  SSL session direction used for the transfer.<br/>C signifies client and S signifies server.  |
+|  2  |  SSL session authentication mode used for the transfer.<br/> • S signifies that only the server was authenticated.<br/> • B signifies that the client and server were authenticated.<br/> • A signifies that the anonymous mode has been implemented. </li>  |
+|  3  |  Suite negotiated for the SSL session.<br/>This suite is set to one of the values from the suites supported by Transfer CFT (1, 2, 4, 5, 9, 10 or 47).  |
+|  4  |  Identifier of the CFTSSL command used to negotiate the session parameters.  |
+|  5  |  Certificate identifier of the authority that signed the certificate presented by the remote partner.  |
+|  6  |  32-character remote user certificate CN (Common Name) field.<br/>If the certificate CN length exceeds 32 characters, it is truncated.  |
+|  7  |  Identifier of the user certificate used locally for authentication by the remote partner.  |
+|  8  |  Physical name of the file in which the certificate presented by the remote partner was recorded.  |
+|  9  |  Value of the PARM parameter in the CFTSSL command used to negotiate the session parameters.  |
+

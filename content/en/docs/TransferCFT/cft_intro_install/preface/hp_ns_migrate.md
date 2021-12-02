@@ -55,71 +55,6 @@ Transfer CFT 2.3.2 is based on a CFGSYS configuration file. While you cannot use
 
 System configuration file example
 
-
-    KW     Type    Volume.Subvolume
-    CFTWRK  default $DATA00.CFT232UD
-
-
-     KW   AP  CPU PNL SMS  MMS TERM    IN       COL  SWAPF    MEAS  CPUBACKUP
-    CFTAPP 1  0   5  9600 600 $STTI  $STTI    $0   FSWAP01   Y     1
-    CFTAPP 2  1   X  0    0   default default  $0   none     X     X
-    CFTAPP 3  0   5  0    0   default default  $0   none     X     X
-    CFTAPP 4  0   X  0    0   default default  $0   none     X     X
-
-
-    KW      AP  LMS  ID       PN     PRI CPU  OBJECT                  OUT
-    CFTTASK 1  3200 CFTMAIN  $LAMGr  150  X   $DATA00.CFT232X.CFTMGRx   $s.#amgr
-    CFTTASK 1    30 CFTLOG   $LALoG  150  X   $DATA00.CFT232X.CFTLOGx   $s.#alog
-    CFTTASK 1    30 CFTTCOM  $LACoM  150  X   $DATA00.CFT232X.CFTCOMX   $s.#acom
-    […]
-
-
-    KW       OP       TERM
-    CFTTERM  OPLOG    $0
-    CFTTERM  OP000001 $S.#OPOUT
-    CFTTERM  OP000002 $S.#OPOUT
-    CFTTERM  OP000003 $TRM3.#A
-
-
-    KW      DEF       VAL     
-    CFTDEF  CFGSYS    $DATA00.moncfg.CFGSYS
-    CFTDEF  TRKCNF    $DATA00.moncfg.CONFSENT
-    CFTDEF  CFTXFB    $DATA00.moncfg.CONFIUI
-    CFTDEF  CFTPARM   $DATA00.monfiles.FPARM
-    CFTDEF  CFTPART   $DATA00.monfiles.FPART
-    CFTDEF  CFTCATA   $DATA00.monfiles.FCAT
-    CFTDEF  CFTCOM    $DATA00.monfiles.FCOM
-    CFTDEF  CFTLOG    $DATA00.monfiles.FLOG
-    CFTDEF  CFTLOGA   $DATA00.monfiles.FLOGA
-    CFTDEF  CFTACCNT  $DATA00.monfiles.FACCNT
-    CFTDEF  CFTACCNTA $DATA00.monfiles.FACCNTA
-    CFTDEF  CFTPKU    $DATA00.monfiles.PKIBASE
-    CFTDEF  CFTHICNF  $DATA00.monfiles.SECCNF
-    CFTDEF  CFTHINI   $DATA00.moncfg.SECINI
-    CFTDEF  CFTHPARM  $DATA00.monfiles.SECPARM
-    CFTDEF  CFTHACT   $DATA00.monfiles.SECFRACT
-    CFTDEF  CFTHOBJ   $DATA00.monfiles.SECFROBJ
-
-
-    KW     MANAGER   NB-ATTACH-SET
-    CFTBT    TACL     NBASCFTLI
-
-
-    KW       PARM                  VAL
-    TCPPARM  TCPIP^HOST^FILE       $SYSTEM.ZTCPIP.HOSTS
-    TCPPARM  TCPIP^PROCESS^NAME    $ZTC0
-    TCPPARM  TCPIP^HOST^FILE^2     $SYSTEM.ZTCPIP.HOSTS
-    TCPPARM  TCPIP^PROCESS^NAME^2  $ZTC0
-
-
-    KW       PARM                  VAL
-    X25PARM  X25^CNX^TIME^OUT       40
-
-
-     KW       PARM                  VAL
-    NONSTOP^RESTART^DELAY           20
-    NONSTOP^PLIST^TEMP^FILE         $DATA00.montemp.PTMPLIST
-
 #### Equivalents in Transfer CFT {{< TransferCFT/releasenumber  >}}
 
 -   <span id="CFTWRK"></span>CFTWRK:
@@ -159,42 +94,15 @@ Extracted data
 
 The auto-import directory contains the following:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Directory         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cftcat.xml         </td>
-         <td>          </td>
-         <td>Catalog file         </td>
-      </tr>
-      <tr>
-         <td>cftcom.xml         </td>
-         <td>          </td>
-         <td>Communication media         </td>
-      </tr>
-      <tr>
-         <td>cftconf.cfg         </td>
-         <td>          </td>
-         <td>The general Transfer CFT configuration, which is applied to the new installation (contained in CFTPARM/CFTPART internal datafiles)         </td>
-      </tr>
-      <tr>
-         <td>cftpki.cfg         </td>
-         <td>          </td>
-         <td>The PKI configuration that is applied to the new installation         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>PKI directory         </td>
-         <td>The extracted SSL certificates         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File  | Directory  | Description  |
+| --- | --- | --- |
+| cftcat.xml  |   | Catalog file  |
+| cftcom.xml  |   | Communication media  |
+| cftconf.cfg  |   | The general Transfer CFT configuration, which is applied to the new installation (contained in CFTPARM/CFTPART internal datafiles)  |
+| cftpki.cfg  |   | The PKI configuration that is applied to the new installation  |
+|   | PKI directory  | The extracted SSL certificates  |
+
 
 ## Client exits and applications
 

@@ -49,10 +49,10 @@ When you are working in , you create *applications* that represent your exchange
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
+<th >          </th>
+<th >Task         </th>
+<th >Description         </th>
+<th >Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -73,7 +73,7 @@ When you are working in , you create *applications* that represent your exchange
          <td> 
 <p>Notice the association between the application <strong>Name</strong> and the <strong>Transfer CFT</strong> instance identifier. You will need the Transfer CFT identifier, for example <code>CFTlptxumcft4-01</code> in the example below, to use in your transfer commands.</p>
 <p>Your <strong>Name</strong> list should look like this:</p>
-<p><img src="/Images/TransferCFT/application_list_complete.png" class="maxWidth" alt="Application list in Central Governance showing 3 example applications to use in flows" /></p>
+<p><img src="/Images/TransferCFT/application_list_complete.png"  alt="Application list in Central Governance showing 3 example applications to use in flows" /></p>
 <p> </p>
 <blockquote>
 <p><strong>Note:</strong></p>
@@ -93,58 +93,15 @@ Let's begin by creating a simple flow, and then exchange a file. In this example
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Define a flow.<br />
-</p>         </td>
-         <td><p>In define a flow named Simple_flow and give it the identifier flow01.</p>
-<p>Use Store_66 as the Source and the MainOffice as the Target.<br />
-Note: You cannot modify the Protocol until you have defined both the Source and Target.</p>         </td>
-         <td><a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td><p>Deploy the flow.</p>         </td>
-         <td>In you can save now and deploy at a later date, or click Deploy to save and deploy.         </td>
-         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>Create a file to exchange.         </td>
-         <td>For this example, create a file named SALES_report, and place it in the Store_66's {{< TransferCFT/componentshortname  >}} runtime\pub folder .         </td>
-         <td><a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>Run the SEND command.         </td>
-         <td><p>In {{< TransferCFT/componentshortname  >}}, run the following command:<br />
-CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report</p>
-<p>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Tip  
-The flow Identifier field is equivalent to the Transfer CFT IDF parameter.</p>
-</blockquote>         </td>
-         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>Monitor the flow.         </td>
-         <td>In , check the status of the file exchange.         </td>
-         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1  |  Define a flow.<br />  |  In define a flow named Simple_flow and give it the identifier flow01.<br/>Use Store_66 as the Source and the MainOffice as the Target.<br /> Note: You cannot modify the Protocol until you have defined both the Source and Target.  | <a href="intro_cg_task_catalog/t_defineflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  |  Deploy the flow.  | In you can save now and deploy at a later date, or click Deploy to save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  | Create a file to exchange.  | For this example, create a file named SALES_report, and place it in the Store_66's {{< TransferCFT/componentshortname  >}} runtime\pub folder .  | <a href="intro_cg_task_catalog/t_create_sample_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the SEND command.  |  In {{< TransferCFT/componentshortname  >}}, run the following command:<br /> CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow01, fname=pub\SALES_report<br/>Remember, replace &lt;instance_MainOffice&gt; with the Transfer CFT instance for the MainOffice as it displays in the list of applications. <blockquote> **Note:**<br/>Tip The flow Identifier field is equivalent to the Transfer CFT IDF parameter. </blockquote>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+
 
 <span id="Send_multiple_files_to_application"></span>
 
@@ -154,58 +111,16 @@ This flow sends multiple files to a defined application. So a Store\_66 applicat
 
 <img src="/Images/TransferCFT/multiple_send_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a multiple files to a Target" />
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Create a flow.<br />
-</p>         </td>
-         <td><p>In define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />
-</p>         </td>
-         <td><a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td><p>Enable multiple files for the exchange.</p>         </td>
-         <td><p>Select the Source, and then File properties. Enable Multiple files.</p>         </td>
-         <td><a href="intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>Create the files for the exchange.         </td>
-         <td><p>For this example, create a folder called Store_66 in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime\pub\ </code>directory.</p>
-<p>Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>.</p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>Deploy the flow.         </td>
-         <td>In you can save, and deploy later, or save and deploy immediately.         </td>
-         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>Run the SEND command.         </td>
-         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code>
-<p>Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.</p>         </td>
-         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>6         </td>
-         <td>Monitor the flow.         </td>
-         <td>In , check the status of the file exchange.         </td>
-         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1  |  Create a flow.<br />  |  In define a flow called <code>flow02 </code>with Store_66 as the Source, and the MainOffice as the Target.<br />  | <a href="intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  |  Enable multiple files for the exchange.  |  Select the Source, and then File properties. Enable Multiple files.  | <a href="intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  | Create the files for the exchange.  |  For this example, create a folder called Store_66 in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime\pub\ </code>directory.<br/>Copy three files to this folder and call them <code>SALES_report</code>, <code>DAILY_news</code>, and <code>INVENTORY</code>.  |   |
+| 4  | Deploy the flow.  | In you can save, and deploy later, or save and deploy immediately.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  | In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_MainOffice&gt;, idf=flow02, fname=#pub\Store_66\*</code> Remember, replace <code>&lt;instance_MainOffice&gt;</code> with the Transfer CFT instance for the MainOffice as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+
 
 <span id="Create_implicit_mode_flow"></span>
 
@@ -215,54 +130,15 @@ You can use the transfer mode to make a file whose content is frequently changin
 
 <img src="/Images/TransferCFT/CFT_w_CG_Implicit_mode.png" class="maxWidth" alt="Simplified diagram of a Target Transfer CFT requesting a file from the Source" />
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Create an implicit flow.<br />
-</p>         </td>
-         <td><p>In define a flow called <code>flow03</code>.</p>
-<p>To enable implicit mode, you select <strong>Target pulls file</strong> in the flow's page.</p>
-<p>Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />
-</p>         </td>
-         <td><img src="/Images/TransferCFT/mapArrow.png" />         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Define the path to the file location.         </td>
-         <td><p>In the File properties of the Source, define the path to the file to be sent.</p>
-<p>In our example, use the TEST file located in the {{< TransferCFT/componentshortname  >}} runtime /pub folder.</p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td><p>Deploy the flow.</p>         </td>
-         <td>In you can save and deploy later, or save and deploy.         </td>
-         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>Run the RECV command.         </td>
-         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code>
-<p>Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications.</p>         </td>
-         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>Monitor the flow.         </td>
-         <td>In , check the status of the file exchange.         </td>
-         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1  |  Create an implicit flow.<br />  |  In define a flow called <code>flow03</code>.<br/>To enable implicit mode, you select **Target pulls file** in the flow's page.<br/>Continue to define the flow with the MainOffice as the Target, which will pull the file, and Store_89 as the file Source.<br />  | <img src="/Images/TransferCFT/mapArrow.png" />  |
+| 2  | Define the path to the file location.  |  In the File properties of the Source, define the path to the file to be sent.<br/>In our example, use the TEST file located in the {{< TransferCFT/componentshortname  >}} runtime /pub folder.  |   |
+| 3  |  Deploy the flow.  | In you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  | Run the RECV command.  | In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=&lt;instance_Store_89&gt;, IDF=flow03</code> Remember, replace <code>&lt;instance_Store_89&gt;</code> with the Transfer CFT instance for Store_89 as it displays in the list of applications.  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+
 
 <span id="Broadcast_and_collect_using_cg"></span>
 
@@ -280,56 +156,16 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 ![Simplified diagram of a Source Transfer CFT sending a file to multiple Targets](/Images/TransferCFT/TransferCFT_Broadcast_w_CG.png)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Create a flow.<br />
-</p>         </td>
-         <td><p>In define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets.</p>         </td>
-         <td><a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Enable broadcasting mode.         </td>
-         <td>In the Source Transfer properties, enable Broadcast list.         </td>
-         <td><a href="intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>          </td>
-         <td>For this example, copy a file SALES_report to transfer in the Store_66 {{< TransferCFT/componentshortname  >}} runtime\pub folder.         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td><p>Deploy the flow.</p>         </td>
-         <td>In you can save and deploy at a later date, or both save and deploy now.         </td>
-         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>Run the SEND command.         </td>
-         <td><p>In {{< TransferCFT/componentshortname  >}}, run the following command:</p>
-<p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>         </td>
-         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>6         </td>
-         <td>Monitor the flow.         </td>
-         <td>In , check the status of the file exchange.         </td>
-         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1  |  Create a flow.<br />  |  In define a flow called <code>flow04</code>. In this flow the MainOffice is the Source with the two stores as the Targets.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  | Enable broadcasting mode.  | In the Source Transfer properties, enable Broadcast list.  | <a href="intro_cg_task_catalog/t_defineflow_broadcast#enable_broadcast_cg"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  |   | For this example, copy a file SALES_report to transfer in the Store_66 {{< TransferCFT/componentshortname  >}} runtime\pub folder.  |   |
+| 4  |  Deploy the flow.  | In you can save and deploy at a later date, or both save and deploy now.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the SEND command.  |  In {{< TransferCFT/componentshortname  >}}, run the following command:<br/><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+
 
 #### Collecting
 
@@ -339,56 +175,16 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Task         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Create a flow.<br />
-</p>         </td>
-         <td><p>In create a flow called <code>flow05 </code>and define the Source as MainOffice and the stores as the Target.<br />
-<strong>Note</strong>: You cannot define the Protocol until you have defined both the Source and Target.</p>         </td>
-         <td><a href="intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Enable collect mode.         </td>
-         <td>In the Collect_flow definition, modify to Target pulls file.         </td>
-         <td><a href="intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>Define the path to the Target file for each store.         </td>
-         <td>In the Target (each store) select File properties. In Path field, enter the path to the file to send.         </td>
-         <td><a href="intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td><p>Deploy the flow.</p>         </td>
-         <td>In you can save and deploy later, or save and deploy.         </td>
-         <td><a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>Run the RECV command.         </td>
-         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>         </td>
-         <td><a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>6         </td>
-         <td>Monitor the flow.         </td>
-         <td>In , check the status of the file exchange.         </td>
-         <td><a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+| 1  |  Create a flow.<br />  |  In create a flow called <code>flow05 </code>and define the Source as MainOffice and the stores as the Target.<br /> **Note**: You cannot define the Protocol until you have defined both the Source and Target.  | <a href="intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 2  | Enable collect mode.  | In the Collect_flow definition, modify to Target pulls file.  | <a href="intro_cg_task_catalog/t_defineflow_collect"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 3  | Define the path to the Target file for each store.  | In the Target (each store) select File properties. In Path field, enter the path to the file to send.  | <a href="intro_cg_task_catalog/t_collect_target_properties"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 4  |  Deploy the flow.  | In you can save and deploy later, or save and deploy.  | <a href="intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 5  | Run the RECV command.  | In {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>  | <a href="../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the flow.  | In , check the status of the file exchange.  | <a href="intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+
 
 <span id="Get"></span>
 

@@ -167,120 +167,29 @@ converted as follows:
 The table below summarizes the parameter values authorized according
 to the functional levels negotiated for the protocol.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>CFTSEND or SEND parameter </p>         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PeSIT E  </p>         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>PeSIT E</p>
-<p>+</p>
-<p>Transfer CFT extensions </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>FDATE/FTIME </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NBLKSIZE </p>         </td>
-         <td><p>- </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NCODE </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NCOMP </p>         </td>
-         <td><p>0, 2, 8, 10<br />
-(dft: 10) </p>         </td>
-         <td><p>0..15<br />
-(dft: 15) </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NFNAME (transmission in open mode) </p>         </td>
-         <td><p>X (3) </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NIDF</p>         </td>
-         <td><p>string14 </p>         </td>
-         <td><p>string28 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NLRECL </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NKEYLEN </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NKEYPOS </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NORG</p>         </td>
-         <td><p>X  </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NRECFM </p>         </td>
-         <td><p>F, V </p>         </td>
-         <td><p>F, V, U </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NSPACE </p>         </td>
-         <td><p>X </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>NTYPE </p>         </td>
-         <td><p>- </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>PARM</p>         </td>
-         <td><p>- </p>         </td>
-         <td><p>X </p>         </td>
-      </tr>
-      <tr>
-         <td><p>PRI  </p>         </td>
-         <td><p>low &lt; 128<br />
-average = 128<br />
-high &gt; 128 </p>         </td>
-         <td><p>low &lt; 128<br />
-average = 128<br />
-high &gt; 128 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>RAPPL </p>         </td>
-         <td><p>string8 </p>         </td>
-         <td><p>string48 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>RUSER </p>         </td>
-         <td><p>string8 </p>         </td>
-         <td><p>string32</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAPPL</p>         </td>
-         <td><p>string8 </p>         </td>
-         <td><p>string48 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>SUSER </p>         </td>
-         <td><p>string8 </p>         </td>
-         <td><p>string32</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  CFTSEND or SEND parameter  |  PeSIT E  |  PeSIT E<br/>+<br/>Transfer CFT extensions  |
+| --- | --- | --- |
+|  FDATE/FTIME  |  X  |  X  |
+|  NBLKSIZE  |  -  |  X  |
+|  NCODE  |  X  |  X  |
+|  NCOMP  |  0, 2, 8, 10<br /> (dft: 10)  |  0..15<br /> (dft: 15)  |
+|  NFNAME (transmission in open mode)  |  X (3)  |  X  |
+|  NIDF  |  string14  |  string28  |
+|  NLRECL  |  X  |  X  |
+|  NKEYLEN  |  X  |  X  |
+|  NKEYPOS  |  X  |  X  |
+|  NORG  |  X  |  X  |
+|  NRECFM  |  F, V  |  F, V, U  |
+|  NSPACE  |  X  |  X  |
+|  NTYPE  |  -  |  X  |
+|  PARM  |  -  |  X  |
+|  PRI  |  low &lt; 128<br /> average = 128<br /> high &gt; 128  |  low &lt; 128<br /> average = 128<br /> high &gt; 128  |
+|  RAPPL  |  string8  |  string48  |
+|  RUSER  |  string8  |  string32  |
+|  SAPPL  |  string8  |  string48  |
+|  SUSER  |  string8  |  string32  |
+
 
 -   X:  parameter
     used without restriction for protocol exchanges.

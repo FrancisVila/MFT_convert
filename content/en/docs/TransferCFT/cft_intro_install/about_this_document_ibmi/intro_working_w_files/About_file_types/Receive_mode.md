@@ -13,13 +13,13 @@ The following table lists the different types of files that can be created on an
 <table>
    <thead>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FRECFM         </th>
-<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Created file         </th>
+<th rowspan="2" >FTYPE         </th>
+<th rowspan="2" >FRECFM         </th>
+<th colspan="2" >Created file         </th>
       </tr>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Max record length         </th>
+<th >Type         </th>
+<th >Max record length         </th>
       </tr>
    </thead>
    <tbody>
@@ -76,16 +76,16 @@ The following table describes the {{< TransferCFT/hflongproductname  >}} behavio
 <table>
    <thead>
       <tr>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">  FTYPE         </th>
-<th rowspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">  FRECFM         </th>
-<th style="text-align: center;" colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Existing file         </th>
+<th rowspan="2" >  FTYPE         </th>
+<th rowspan="2" >  FRECFM         </th>
+<th  colspan="3" >Existing file         </th>
       </tr>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PF-DTA</p>
+<th ><p>PF-DTA</p>
 <p>Record length / member header</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>PF-SRC</p>
+<th ><p>PF-SRC</p>
 <p>Record length / member header</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Overwriting on a SAVF</p>
+<th ><p>Overwriting on a SAVF</p>
 <p>with FACTION=ERASE</p>         </th>
       </tr>
    </thead>

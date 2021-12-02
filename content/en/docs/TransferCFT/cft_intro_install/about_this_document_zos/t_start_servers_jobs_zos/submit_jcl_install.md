@@ -52,15 +52,6 @@ Index:
 
 You can customize some list or extraction options before running this JOB. For example:
 
-
-
-    SET OLISTCAT='BRIEF'            LISTCAT content OPTION
-
-    SET OLISTCAT=’DEBUG,IDTU=A0000001’ for a specific transfer
-    SET OLISTCOM='ACTIVE'           LISTCOM content OPTION
-
-    SET OCFTEXT='BRIEF'             CFTEXT  content OPTION
-
 Axway support may request additional information, such as:
 
 -   The complete JOB(s) execution sysout.

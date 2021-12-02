@@ -15,9 +15,6 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 1.  Export your static configuration objects using the command CFTUTIL CFTEXT.  
     Enter:  
 
-
-        CFTUTIL CFTEXT type=all, fout=cft-extract.conf
-
 <!-- -->
 
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
@@ -29,7 +26,6 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 <!-- -->
 
 1.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
-
 2.  Import your static configuration objects using the cftinit command. Enter:  
 
 ## Migrating PKI certificates
@@ -57,9 +53,6 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1.  Import your PKI certificates into the new Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path:  
 
-
-        PKIUTIL <prefix_character><script_filename>
-
 Examples
 
 UNIX: `PKIUTIL @pki-extract.conf`
@@ -75,10 +68,6 @@ Windows: `PKIUTIL #pki-extract.conf`
 <!-- -->
 
 1.  Export the catalog using the command CFTMI240:  
-
-
-
-        CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.7_filename>, ofname=catalog_output.xml
 
 <!-- -->
 
@@ -96,7 +85,6 @@ Windows: `PKIUTIL #pki-extract.conf`
 
 Example
 
-
 ### Migrating the communication media files
 
 1.  Load the former Transfer CFT (2.6.4 or 2.7.0) environment.
@@ -104,9 +92,6 @@ Example
 <!-- -->
 
 1.  Export the communication media file using command CFTMI240:  
-
-
-        CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.7.0_filename>, ofname=com_output.xml
 
 <!-- -->
 
@@ -123,5 +108,3 @@ Example
 -   Windows: `$CFTCOM`
 
 Example
-
-

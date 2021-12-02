@@ -23,51 +23,18 @@ The codes are expressed in hexadecimal.
 
 TCP/IP Reason codes
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>00</p>         </td>
-         <td><p>Connection request rejected by the network or break caused
-by the remote partner</p>         </td>
-      </tr>
-      <tr>
-         <td><p>01</p>         </td>
-         <td><p>Time-out for a connection request. The called party is
-probably not connected to the network.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>02</p>         </td>
-         <td><p>Insufficient resources (other than memory)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>03</p>         </td>
-         <td><p>Insufficient memory</p>         </td>
-      </tr>
-      <tr>
-         <td><p>04</p>         </td>
-         <td><p>The network access point reference passed to the connection
-is not valid</p>         </td>
-      </tr>
-      <tr>
-         <td><p>08</p>         </td>
-         <td><p>Invalid parameter in TCP request sent</p>         </td>
-      </tr>
-      <tr>
-         <td><p>09</p>         </td>
-         <td><p>Other cause of rejection</p>         </td>
-      </tr>
-      <tr>
-         <td><p>43</p>         </td>
-         <td><p>Invalid local or remote address</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Code  | Description  |
+| --- | --- |
+|  00  |  Connection request rejected by the network or break caused by the remote partner  |
+|  01  |  Time-out for a connection request. The called party is probably not connected to the network.  |
+|  02  |  Insufficient resources (other than memory)  |
+|  03  |  Insufficient memory  |
+|  04  |  The network access point reference passed to the connection is not valid  |
+|  08  |  Invalid parameter in TCP request sent  |
+|  09  |  Other cause of rejection  |
+|  43  |  Invalid local or remote address  |
+
 
 <span id="DIAGN___TCP_IIP_Diagnostic_Codes"></span>
 

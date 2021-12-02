@@ -13,28 +13,10 @@ Before starting a Transfer CFT session, you must add the value \*none in the ini
 Begin the installation process by uploading the Transfer CFT installation package, in binary mode, to the IBM i system:
 
 1.  Log in with the **CFTINST** user.
-
 2.  Create a temporary library:  
-
-
-        CRTLIB CFTTMP
-
 3.  Create a SAVF file:  
-
-
-        CRTSAVF FILE(CFTTMP/CFT37)
-
 4.  Upload the installation package to the SAVF in binary mode using FTP:  
-
-
-
-        binary
-        cd CFTTMP
-        put Transfer_CFT_os400.bin CFT37
 
 <!-- -->
 
 1.  Restore the SAVF file:  
-
-
-        RSTLIB SAVLIB(CFTPG) DEV(*SAVF) SAVF(CFTTMP/CFT37) OPTION(*NEW) RSTLIB(CFTTMP)

@@ -21,12 +21,6 @@ You can use this parameter in combination with <a href="../datetimemin" class="M
 
 Relative example
 
-
-    CFTUTIL display datetimemax=-2H
-
 Absolute example
-
-
-    CFTUTIL listcat datetimemax=2021030323
 
 [Return to Command index](../../)

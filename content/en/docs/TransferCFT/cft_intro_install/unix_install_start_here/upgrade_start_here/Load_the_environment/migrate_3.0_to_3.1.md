@@ -17,82 +17,51 @@
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.x environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
-
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
-
-
-        CFTUTIL CFTEXT type=all, fout=cft-extract.conf
 
 <!-- -->
 
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
-
 2.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 3.  Stop {{< TransferCFT/hflongproductname >}} if you have not already done so.
-
 4.  Import your static configuration objects using the cftinit command. Enter:  
 
 ### Migrating PKI certificates
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-
 2.  Export your PKI certificates using the command PKIUTIL PKIEXT. Enter:  
 
 <!-- -->
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value: $CFTPKU for UNIX, the absolute path value for the CFTPKU for Windows. Enter:  
-
-
-        PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
 
 <!-- -->
 
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows.  
     Enter:  
 
-
-        PKIUTIL <prefix_character>pki-extract.conf
-
 ### Migrating the runtime environment
 
 #### Migrating the catalog
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-
 2.  Export the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
-
-
-        CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft>, ofname=catalog_output.xml
 
 <!-- -->
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 2.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
-
-
-        CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_cft >
 
 #### Migrating the communication media files
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-
 2.  Export the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX, or $CFTCOM for Windows. Enter:  
-
-
-        CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_former_cft>, ofname=com_output.xml
 
 <!-- -->
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 2.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
-
-
-        CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_cft >
 
 #### Executables and binaries
 
@@ -107,18 +76,12 @@ Remember that you can copy your post-processing scripts directly from the runtim
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
-
-
-        CFTUTIL CFTEXT type=all, fout=cft-extract.conf
 
 <!-- -->
 
 1.  Open the extract configuration files, cft-extract.conf, and update the file paths with those of the new Transfer CFT {{< TransferCFT/componentversion >}} installation.
-
 2.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 3.  Import your static configuration objects using the cftinit command. Enter:  
 
 ### Migrating PKI certificates
@@ -129,32 +92,23 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 <!-- -->
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
 
 <!-- -->
 
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
 
-
-        PKIUTIL <prefix_character>pki-extract.conf
-
 ### Migrating the runtime environment
 
 #### Migrating the catalog
 
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
-
 2.  Export all catalogs (one per node, named as cftcataXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each catalog. Enter:  
 
 <!-- -->
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
-
 2.  Import all catalogs using the command CFTMI for each of them. Use the same node number on both &lt;node> on command. Enter:  
-
-
-        CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output_<node>.xml, ofname=<catalog_filename_new_cft><node>
 
 #### Migrating the communication media files
 

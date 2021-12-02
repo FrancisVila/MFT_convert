@@ -12,36 +12,15 @@ After installing Transfer CFT, access the CSD file at:
 
 Available <span id="CSD description"></span>CSD actions and resources
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type of information         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Context</p>         </td>
-         <td><p>Context range is limited to date and time.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Resources</p>         </td>
-         <td><p>Resources are limited to MESSAGES, BASE, and SERVER.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Actions</p>         </td>
-         <td><p>Customize the actions that can be made on each resource.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Privileges</p>         </td>
-         <td><p>Customize the rights to perform one or more actions on a resource.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Roles</p>         </td>
-         <td><p>Customize the sets of privileges assigned to each role.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Type of information  | Description  |
+| --- | --- |
+|  Context  |  Context range is limited to date and time.  |
+|  Resources  |  Resources are limited to MESSAGES, BASE, and SERVER.  |
+|  Actions  |  Customize the actions that can be made on each resource.  |
+|  Privileges  |  Customize the rights to perform one or more actions on a resource.  |
+|  Roles  |  Customize the sets of privileges assigned to each role.  |
+
 
 For more information on customizing the CSD file, refer to the {{< TransferCFT/companyname  >}} PassPort
 AM documentation available at [support.axway.com]().

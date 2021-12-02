@@ -39,71 +39,18 @@ TYPE = EXEC,
 \[RESERV = string \]  
 \[WAITTASK = {1441 | n}\]
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> </p>
-<p>(Mandatory)</p>         </td>
-         <td><p>Command identifier (32 +1). The value of this identifier
-corresponds to the identifier defined in the EXITEOT parameter of the
-related CFTPARM object.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a></p>         </td>
-         <td><p>Indicates the format for the communication area.</p>
-<ul>
-<li>V23 (Default
-value): The communication area between {{< TransferCFT/componentshortname  >}} and user’s exits remains
-the same.</li>
-<li>V24:
-The communication area takes into account the length of the new identifier.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a></p>         </td>
-         <td><p>Language in which the user program is written.</p>
-<p>The possible values are COBOL and C language.</p>
-<p>{{< TransferCFT/componentshortname  >}} uses this attribute to exchange data with
-the program using the EXIT via the structure best suited to the language
-in which it is implemented.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm">PARM</a> </p>         </td>
-         <td><p>Free user field (64 +1).</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  </p>         </td>
-         <td><p>Name of the executable module associated with the EXIT
-task (512 +1). This module is built from the interface provided with Transfer
-CFT linked to the program written by the user. In order to facilitate
-identification of the associated module, it is advised to name it CFTEXIE.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  </p>         </td>
-         <td><p>Size of the working area reserved for the user.</p>
-<p>This area is not used by the {{< TransferCFT/componentshortname  >}} interface. You
-can use it to save data required for the processing of the program that
-you have written. This area is de-allocated when the {{< TransferCFT/componentshortname  >}} interface
-de-selects the file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> </p>
-<p>(Mandatory)</p>         </td>
-         <td><p>EXEC</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/waittask">WAITTASK</a>  </p>         </td>
-         <td><p>Time during which a file access task is inactive (in minutes)
-before being shut down</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Definition  |
+| --- | --- |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a> <br/>(Mandatory)  |  Command identifier (32 +1). The value of this identifier corresponds to the identifier defined in the EXITEOT parameter of the related CFTPARM object.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/format">FORMAT</a>  |  Indicates the format for the communication area.<br/> • V23 (Default value): The communication area between {{< TransferCFT/componentshortname  >}} and user’s exits remains the same.<br/> • V24: The communication area takes into account the length of the new identifier.</li>  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/language">LANGUAGE</a>  |  Language in which the user program is written.<br/>The possible values are COBOL and C language.<br/>{{< TransferCFT/componentshortname  >}} uses this attribute to exchange data with the program using the EXIT via the structure best suited to the language in which it is implemented.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/parm">PARM</a>  |  Free user field (64 +1).  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/prog">PROG</a>  |  Name of the executable module associated with the EXIT task (512 +1). This module is built from the interface provided with Transfer CFT linked to the program written by the user. In order to facilitate identification of the associated module, it is advised to name it CFTEXIE.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/reserv">RESERV</a>  |  Size of the working area reserved for the user.<br/>This area is not used by the {{< TransferCFT/componentshortname  >}} interface. You can use it to save data required for the processing of the program that you have written. This area is de-allocated when the {{< TransferCFT/componentshortname  >}} interface de-selects the file.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> <br/>(Mandatory)  |  EXEC  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/waittask">WAITTASK</a>  |  Time during which a file access task is inactive (in minutes) before being shut down  |
+
 
 <span id="Defining_the_CFTPARM_object"></span>
 
@@ -116,25 +63,11 @@ ID = identifier,
 \[EXITEOT = identifier,\]  
 ....
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Definition</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a></p>
-<p>(Mandatory)</p>         </td>
-         <td><p>CFTPARM object identifier.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/exiteot">EXITEOT</a> </p>         </td>
-         <td><p>EXIT identifier. To activate an end-of-transfer EXIT, you
-must specify an identifier that points to a CFTEXIT object.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Definition  |
+| --- | --- |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/id">ID</a><br/>(Mandatory)  |  CFTPARM object identifier.  |
+|  <a href="../../../../c_intro_userinterfaces/command_summary/parameter_intro/exiteot">EXITEOT</a>  |  EXIT identifier. To activate an end-of-transfer EXIT, you must specify an identifier that points to a CFTEXIT object.  |
+
 
  

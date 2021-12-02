@@ -18,36 +18,14 @@ The MAXTASK value multiplied by the TRANTASK value should be less than or equal 
 
 The following table indicates the maximum value supported for each system, where 3 is the default for all systems.
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Operating system </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Maximum value </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Windows</p>         </td>
-         <td><p>1000</p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX/HP Nonstop</p>         </td>
-         <td><p>64</p>         </td>
-      </tr>
-      <tr>
-         <td><p>z/OS (MVS)</p>         </td>
-         <td><p>64</p>         </td>
-      </tr>
-      <tr>
-         <td><p>IBM i (OS400)</p>         </td>
-         <td><p>64</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           |  Operating system  |  Maximum value  |
+ --- | --- | --- |
+|  Windows  |  1000  |
+|  UNIX/HP Nonstop  |  64  |
+|  z/OS (MVS)  |  64  |
+|  IBM i (OS400)  |  64  |
+
 
 **Example**
 

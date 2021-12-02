@@ -164,32 +164,13 @@ You can define the filename either in the:
 -   The CFTRECV
     object (recommended)
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>To receive...</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Enter...</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>a file</p>         </td>
-         <td><p>a complete physical file name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>a version of a file</p>         </td>
-         <td><p>a file name with a root and a version number</p>         </td>
-      </tr>
-      <tr>
-         <td><p>a group of concatenated files</p>         </td>
-         <td><p>a directory name</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           |  To receive...  |  Enter...  |
+ --- | --- | --- |
+|  a file  |  a complete physical file name  |
+|  a version of a file  |  a file name with a root and a version number  |
+|  a group of concatenated files  |  a directory name  |
+
 
 *When using the complete
 filename*
@@ -235,15 +216,6 @@ The ‘&’ character here replaces the char\_symb character specific
 to each operating system. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
 corresponding to your OS.
 
-
-
-    PeSIT E CFT/CFT
-
-
-    The &FUNIT, &FUNITC, &FPATH, &FROOT and 
-     &FSUF variables are used so that the FNAME parameter gives the 
-     full "path" pointing to the file to be written.
-
 Specific case using &NFNAME symbolic
 variable    
 
@@ -274,19 +246,6 @@ by FNAME.
 > related to the operating system. On IBM systems, for example,
 > the type of unit must not appear in the name of the FNAME file.
 
-
-
-    PeSIT E CFT/CFT profile
-
-
-    Receiving a group of copied/concatenated files. This 
-     name must correspond to a directory name if a copy/concatenation 
-     operation is performed when the files are sent (transfer of a group 
-     of files between systems of the same type).
-    The data received is stored in the temporary file specified 
-     in the WFNAME  parameter. The files are then deconcatenated in the 
-     directory specified by FNAME.
-
 <span id="fname CFTSEND__CFTRECV__CFTISEND"></span>
 
 #### CFTSEND, SEND
@@ -311,33 +270,15 @@ The following examples use a UNIX syntax, modify accordingly for your environmen
 
 FNAME=filename where the FNAME is expressed as an absolute name:
 
-
-    FNAME= '/home/cft/runtime/pub/FTEST'
-
 <span class="code">FNAME = filename</span> where the FNAME is expressed in relative name from runtime folder:
-
-
-    FNAME = 'pub/FTEST' 
 
 FNAME=dirname which transfers a file that contains the list of all files in the dirname folder (pub in this example), but not the actual files:
 
-
-    FNAME= '/home/cft/runtime/pub'  or FNAME= 'pub' 
-
 FNAME=&lt;file-symb>filename which transfers all the files referenced in the list file:
-
-
-    FNAME= '@/home/cft/runtime/pub/list'
 
 FNAME=&lt;file-symb>mask  which transfers all the files that correspond to the mask criteria:
 
-
-    FNAME= '@/home/cft/runtime/pub/F*'
-
 FNAME=&lt;file-symb>dirname which transfers all the files in dirname folder:
-
-
-    FNAME= '@/home/cft/runtime/pub'
 
 <span id="fname_CFTLOG"></span>
 

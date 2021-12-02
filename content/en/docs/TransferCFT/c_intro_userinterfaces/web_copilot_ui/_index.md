@@ -39,88 +39,25 @@ The user that starts the Copilot server must have write permission for the Trans
 ## Configure the REST API server
 
 1.  Enable the Copilot REST API if you did not do so during installation.  
-
-
-        CFTUTIL uconfset id=copilot.restapi.enable, value=yes
-
 2.  Optionally, you can change the REST API server port as follows (default 1768):  
-
-
-        CFTUTIL uconfset id=copilot.restapi.serverport, value=<new port>
-
 3.  You require a secure SSL/TLS communication between the client (REST or browser) and the REST server. When using Central Governance, the REST API server automatically uses the SSL business certificate generated during the [registration](../../governance_services_intro/cg_register_overview); there is no need to perform this step. This certificate is stored in the internal PKI base and is identified by the Transfer CFT instance ID (uconf:cft.instance\_id).  
     Otherwise, use UCONF to set the following Copilot parameters to configure the SSL certificate.  
-
-
-
-        CFTUTIL uconfset id=copilot.ssl.SslCertFile, value=<ssl pkcs12 certificate for copilot>
-        CFTUTIL uconfset id=copilot.ssl.SslCertPassword, value=<ssl pkcs12 certificate password>
-
       
     These parameter settings are described in [Install a certificate on the server side](../../admin_intro/manage_copilot#Install).  
-
 4.  Specify the authentication method, as the client must provide credentials (user/password) to the REST server. Set the UCONF the `copilot.restapi.authentication_method` parameter.  
     Example  
-
-
-        CFTUTIL uconfset id=copilot.restapi.authentication_method, value=system
 
 **<span id="Authentication_methods"></span>Authentication methods**
 
 The supported authentication methods are:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Authentication method         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">copilot.restapi.authentication_method         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Operating System         </td>
-         <td>system         </td>
-         <td><p>The user/password is checked against the operating system.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.</p>
-</blockquote>
-<p><strong>Unix</strong></p>
-<p>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.</p>
-<ul>
-<li>Create a group "group1":</li>
-<li>Add user "user1" to group "group1":</li>
-</ul>
-<p><strong>Windows</strong></p>
-<p>You require a superuser (administrative user account) to create a group and assign a user to a group.</p>
-<ul>
-<li>Create a group "group1":</li>
-<li>Add user "user1" to group "group1":</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>For a user belonging to a domain, use: domain\user1 instead of user1</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>Access Management         </td>
-         <td>am         </td>
-         <td><p>This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>xfbadm database</p>
-<p>(UNIX and HP NonStop exclusively)</p>         </td>
-         <td>xfbadm         </td>
-         <td><p>The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).</p>
-<p>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.</p>
-<ol>
-<li>Create a group "group1" with gid=200:</li>
-<li>From the user prompt, to add a user "user1" to group "group1"enter:</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Authentication method  | copilot.restapi.authentication_method  | Details  |
+| --- | --- | --- |
+| Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
+| Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.  |
+|  xfbadm database<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+
 
 <span id="REST"></span>REST API server authentication method
 

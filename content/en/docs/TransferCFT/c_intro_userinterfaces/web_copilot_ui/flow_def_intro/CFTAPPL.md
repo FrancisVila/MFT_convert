@@ -36,19 +36,6 @@ must exist, irrespective of the LENAPPL value defined in CFTPARM.
 
 ### CFTAPPL syntax
 
-
-    CFTAPPL    
-         [MODE       =     
-     {CREATE | DELETE | REPLACE},]
-         ID          =     
-     identifier,
-         USERID      =     
-     identifier,
-         [GROUPID    =     
-     identifier,]
-         [DIRECT     =     
-     {BOTH | RECV | SEND}]
-
 ### Parameters
 
 \[DIRECT     = {BOTH

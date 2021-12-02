@@ -190,15 +190,7 @@ The values of these parameters can be defined either:
 
 ### Example 1
 
-
-
-    SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXDATE=+10
-
 The request is valid for up to 10 days, beginning at the time of the catalog entry.
-
-
-
-    SEND PART=PART,IDF=IDFA,FNAME=FILEA, MAXTIME=+30
 
 The request is valid today, for half an hour, beginning at the time of the catalog entry.
 
@@ -206,13 +198,6 @@ When the time slot exceeds a day, the value of MAXDATE is always greater
 than the value of MINDATE.
 
 ### Example 2
-
-
-
-    MINDATE = 20151224
-    MINTIME = 1800
-    MAXDATE = 20160101
-    MAXTIME = 0900
 
 The transfer can be activated between December 24, 2015 at 6 pm and January
 1, 2016 at 9 am.
@@ -226,12 +211,6 @@ than the value of MAXTIME.
 
 ### Example 3
 
-
-    MINDATE = 20151224
-    MINTIME = 0900
-    MAXDATE = 20151224
-    MAXTIME = 1800
-
 The transfer can be activated on December 24, 2015 between 9 am and 6 pm.
 
 If you want to specify a time slot that spans into the next day, set the value of MINTIME to later
@@ -240,18 +219,7 @@ the first day. It is not necessary to define the MAXDATE value, as Transfer CFT 
 
 ### Example 4
 
-
-    MINDATE = 20151224
-    MINTIME = 2200
-    MAXDATE = 20151225
-    MAXTIME = 0500
-
 is equivalent to:
-
-
-    MINDATE = 20151224
-    MINTIME = 2200
-    MAXTIME = 0500
 
 The transfer can be activated between December 24, 2015 at 10 pm and December
 25, 2015 at 5 am.
@@ -273,16 +241,7 @@ of:
 
 ### Example 5
 
-
-
-    MINTIME = 2200
-    MAXTIME = 2300 (MAXDATE and MINDATE not defined)
-
 The transfer can be activated today between 10 pm and 11 pm.
-
-
-    MINTIME = 2200
-    MAXTIME = 0500 (MAXDATE and MINDATE not defined)
 
 The transfer can be activated between today at 10 pm and tomorrow at 5
 am.

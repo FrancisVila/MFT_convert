@@ -23,27 +23,12 @@ The following conventions apply to the table below describing permissions to act
     >
     > When referring to USERID, the same rules apply when using the optional GROUPID parameter.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Operating</p>
-<p>System</p>         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>USERCTRL</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ALL OS         </td>
-         <td>NO         </td>
-         <td>The Transfer CFT user, that is, the account that started {{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.         </td>
-      </tr>
-      <tr>
-         <td>YES         </td>
-         <td>The USERID performs all file actions.         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Operating<br/>System  |  USERCTRL  |  Description  |
+| --- | --- | --- |
+| ALL OS  | NO  | The Transfer CFT user, that is, the account that started {{< TransferCFT/componentlongname  >}}, performs all file actions. Default value.  |
+| YES  | The USERID performs all file actions.  |
+
 
 1.  Set the CFTPARM USERCTRL option to YES (enabled).
 2.  Set the USERID for CFTRECV, for example domain\\user on Windows.

@@ -8,33 +8,6 @@ must have authorization to make a file available. In the implicit mode,
 IMPL parameter is set to yes, which enables a file to be available for
 transfer without a specific request for that file.
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>Description</p>         </td>
-         <td><p>Use this command to make a file available for transfer
-without it being explicitly requested.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Parameters</p>         </td>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/impl">IMPL</a> </p>         </td>
-         <td><p>The implicit send makes a file available. Select from:</p>
-<ul>
-<li>YES</li>
-<li>NO</li>
-</ul>
-<p>This parameter
-must
-be set to NO for the default model
-file description.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>For other SEND parameters refer to <a href="../send_command_basics">Sending
-files</a>.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 For SEND command details refer to the following syntax:
 
 [TYPE](../../../c_intro_userinterfaces/command_summary/parameter_intro/type)

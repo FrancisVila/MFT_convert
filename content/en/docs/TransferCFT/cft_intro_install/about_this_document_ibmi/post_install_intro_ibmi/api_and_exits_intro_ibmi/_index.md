@@ -30,32 +30,14 @@ create the following applications:
 The development kit used to integrate the {{< TransferCFT/componentshortname  >}} APIs is divided
 into several directories that include the CFTPGM library, which contains all library modules necessary for APIs and exits. These library modules are required to use the corresponding function:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Module (in C language)         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Required to use Transfer CFT...         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>libapisrv1.srvpgm and librdrovrf.srvpgm         </td>
-         <td>APIs         </td>
-      </tr>
-      <tr>
-         <td>libcftexa.srvpgm         </td>
-         <td>Directory EXITs         </td>
-      </tr>
-      <tr>
-         <td>libcftexf.srvpgm         </td>
-         <td>File EXITs         </td>
-      </tr>
-      <tr>
-         <td>libcftexe.srvpgm         </td>
-         <td>End-of-transfer EXITs         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Module (in C language)  | Required to use Transfer CFT...  |
+| --- | --- |
+| libapisrv1.srvpgm and librdrovrf.srvpgm  | APIs  |
+| libcftexa.srvpgm  | Directory EXITs  |
+| libcftexf.srvpgm  | File EXITs  |
+| libcftexe.srvpgm  | End-of-transfer EXITs  |
+
 
 To generate a user application based on the {{< TransferCFT/componentshortname  >}} APIs and use
 the file exit function, you must link the following with the `libapisrv1.srvpgm` and `libcftexe.srvpgm` libraries:

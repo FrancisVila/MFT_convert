@@ -24,38 +24,6 @@ system, C compiler and associated tools.
 This book is comprised of the following topics which describe how to
 create an API application.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Topic         </th>
-<th class="HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="creating_an_api_application">Creating an API
-application</a></p>         </td>
-         <td><p>Describes the procedure to create an API application in
-{{< TransferCFT/componentshortname  >}} UNIX.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="creating_an_exit_file">Creating an exit file</a></p>         </td>
-         <td><p>Describes how to create an exit file for {{< TransferCFT/componentshortname  >}} UNIX.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="creating_a_directory_exit">Creating a directory
-exit</a></p>         </td>
-         <td><p>Describes how to create a directory exit in {{< TransferCFT/componentshortname  >}}
-UNIX.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Creating an accounting
-exit</p>         </td>
-         <td><p>Describes how to create an accounting exit in UNIX.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Development_kit_contents"></span>
 
 ## Development kit contents

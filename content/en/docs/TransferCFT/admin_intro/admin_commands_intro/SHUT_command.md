@@ -12,30 +12,3 @@ Syntax
 | YES | KILL } \]
 
 \[ [RESTART](../../../c_intro_userinterfaces/command_summary/parameter_intro/restart) = { YES | NO } \]
-
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Use this command to request the Transfer CFT immediate
-or delayed shutdown.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fast">FAST</a> </p>         </td>
-         <td><p>Type of shutdown.</p>         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/restart">RESTART</a>         </td>
-         <td>Manages restart.         </td>
-      </tr>
-   </tbody>
-</table>

@@ -32,72 +32,11 @@ Begin by creating a translation table file, and modify as needed. You can use th
 
 1.  Create a file as shown in the following example, containing hexadecimal characters from 00 to FF.
 
-<!-- -->
-
-
-
-    00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F   
-    10 11 12 13 14 15 16 17 - 18 19 1A 1B 1C 1D 1E 1F   
-    20 21 22 23 24 25 26 27 - 28 29 2A 2B 2C 2D 2E 2F   
-    30 31 32 33 34 35 36 37 - 38 39 3A 3B 3C 3D 3E 3F   
-    40 41 42 43 44 45 46 47 - 48 49 4A 4B 4C 4D 4E 4F   
-    50 51 52 53 54 55 56 57 - 58 59 5A 5B 5C 5D 5E 5F   
-    60 61 62 63 64 65 66 67 - 68 69 6A 6B 6C 6D 6E 6F   
-    70 71 72 73 74 75 76 77 - 78 79 7A 7B 7C 7D 7E 7F   
-    80 81 82 83 84 85 86 87 - 88 89 8A 8B 8C 8D 8E 8F   
-    90 91 92 93 94 95 96 97 - 98 99 9A 9B 9C 9D 9E 9F 
-    A0 A1 A2 A3 A4 A5 A6 A7 - A8 A9 AA AB AC AD AE AF   
-    B0 B1 B2 B3 B4 B5 B6 B7 - B8 B9 BA BB BC BD BE BF   
-    C0 C1 C2 C3 C4 C5 C6 C7 - C8 C9 CA CB CC CD CE CF   
-    D0 D1 D2 D3 D4 D5 D6 D7 - D8 D9 DA DB DC DD DE DF 
-    E0 E1 E2 E3 E4 E5 E6 E7 - E8 E9 EA EB EC ED EE EF   
-    F0 F1 F2 F3 F4 F5 F6 F7 - F8 F9 FA FB FC FD FE FF   
-
 You can use the following `CFTXLATE `command to generate an ASCII CP437 to EBCDIC CP1047 translation table.
-
-
-    CFTXLATE ID=CP437TOCP1047,FCODE=ASCII,NCODE=EBCDIC,DIRECT=BOTH,TABLE=00010203372D2E2F1605250B0C0D0E0F-
-    10111213B6B5322618191C27071D1E1F-
-    405A7F7B5B6C507D4D5D5C4E6B604B61-
-    F0F1F2F3F4F5F6F7F8F97A5E4C7E6E6F-
-    7CC1C2C3C4C5C6C7C8C9D1D2D3D4D5D6-
-    D7D8D9E2E3E4E5E6E7E8E9ADE0BD5F6D-
-    79818283848586878889919293949596-
-    979899A2A3A4A5A6A7A8A9C04FD0A13F-
-    68DC5142434447485253545756586367-
-    719C9ECBCCCDDBDDDFECFC4AB1B2BFFF-
-    4555CEDE49699A9BABAFB0B8B7AA8A8B-
-    2B2C092128656264B438313433708024-
-    22172906202A46661A35083936303A9F-
-    8CAC7273740A757677231514046A783B-
-    EE59EBEDCFEFA08EAEFEFBFD8DBABCBE-
-    CA8F1BB93C3DE19D90BBB3DAFAEA3E41
 
 In the Transfer CFT UI or Swagger REST API, you can use the format:
 
-
-     CFTXLATE ID=CP437TOCP1047,FCODE=ASCII,NCODE=EBCDIC,DIRECT=BOTH,TABLE=00010203372D2E2F1605250B0C0D0E0F-
-    00010203372D2E2F1605250B0C0D0E0F10111213B6B5322618191C27071D1E1F405A7F7B5B6C507D4D5D5C4E6B604B61F0F1F2F3F4F5F6F7F8F97A5E4C7E6E6F7CC1C2C3C4C5C6C7C8C9D1D2D3D4D5D6D7D8D9E2E3E4E5E6E7E8E9ADE0BD5F6D79818283848586878889919293949596979899A2A3A4A5A6A7A8A9C04FD0A13F68DC5142434447485253545756586367719C9ECBCCCDDBDDDFECFC4AB1B2BFFF4555CEDE49699A9BABAFB0B8B7AA8A8B2B2C092128656264B43831343370802422172906202A46661A35083936303A9F8CAC7273740A757677231514046A783BEE59EBEDCFEFA08EAEFEFBFD8DBABCBECA8F1BB93C3DE19D90BBB3DAFAEA3E41
-
 Or alternatively, you can use the following `CFTXLATE `command to generate a ASCII CP850 to EBCDIC CP1047 translation table.
-
-
-    CFTXLATE ID=CP850T0CP1047,FCODE=ASCII,NCODE=EBCDIC,DIRECT=BOTH,TABLE=00010203372D2E2F1605250B0C0D0E0F-
-    10111213B6B5322618191C27071D1E1F-
-    405A7F7B5B6C507D4D5D5C4E6B604B61-
-    F0F1F2F3F4F5F6F7F8F97A5E4C7E6E6F-
-    7CC1C2C3C4C5C6C7C8C9D1D2D3D4D5D6-
-    D7D8D9E2E3E4E5E6E7E8E9ADE0BD5F6D-
-    79818283848586878889919293949596-
-    979899A2A3A4A5A6A7A8A9C04FD0A13F-
-    68DC5142434447485253545756586367-
-    719C9ECBCCCDDBDDDFECFC4AB1B2BFFF-
-    4555CEDE49699A9BABAFB0B8B7AA8A8B-
-    2B2C092128656264B438313433708024-
-    22172906202A46661A35083936303A9F-
-    8CAC7273740A757677231514046A783B-
-    EE59EBEDCFEFA08EAEFEFBFD8DBABCBE-
-    CA8F1BB93C3DE19D90BBB3DAFAEA3E41
 
 <span id="Use2"></span>
 
@@ -174,20 +113,11 @@ to delete a default translation table.
 
 Create the following new object, which you can use instead of the default in file transfers. In this example, for a given partner you want to use explicitly this translation table.
 
-
-    cftxlate id=new, fcode=ebcdic, ncode=ascii, direct=both, mode=create, fname=cp1047tocp437
-
 If you created a translation table that maps ASCII to ASCII, for example, remember to set both the ncode and fcode to ASCII.
-
-
-    cftxlate id=new, fcode=ascii, ncode=ascii, direct=both, mode=create, fname=cp850tocp437
 
 ### Override default CFTXLATE
 
 Create the following objects one for each translation direction. These new objects override the default translation table.
-
-
-    cftxlate id=bin, fcode=ebcdic, ncode=ascii, direct=both, mode=create, fname=cp1047tocp437cftxlate id=bin, fcode=ascii, ncode=ebcidic, direct=both, mode=create, fname=cp437tocp1047
 
 ### Execute the transfer command
 
@@ -195,13 +125,7 @@ Translation tables are used if FCODE and NCODE are not set to BINARY. When sendi
 
 In the following example, the translation table that is specified by the xlate parameter is used instead of the default translation table.
 
-
-    send part=paris, idf=myflow, xlate=cp437tocp1047, fcode=ascii, ncode=ebcdic
-
 However in the following example the default translation tables are used, provided the send template model does not include an xlate definition.
-
-
-    send part=paris,idf=myflow,  fcode=ascii, ncode=ebcdic
 
 A translation table is used if one of the following conditions are met, in the
 order of priority indicated:
@@ -246,549 +170,43 @@ The following tables provide basic mapping printable hexadecimal characters for 
 
 #### Printable hexadecimal EBCDIC (CP1047)
 
-<table>
-   <tbody>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>0</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>2</p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>5</p>         </td>
-         <td><p>6</p>         </td>
-         <td><p>7</p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>9</p>         </td>
-         <td><p>A</p>         </td>
-         <td><p>B</p>         </td>
-         <td><p>C</p>         </td>
-         <td><p>D</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>F</p>         </td>
-      </tr>
-      <tr>
-         <td><p>4</p>         </td>
-         <td><p> </p>         </td>
-         <td><p> </p>         </td>
-         <td><p>ƒ</p>         </td>
-         <td><p>„</p>         </td>
-         <td><p>…</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>†</p>         </td>
-         <td><p>‡</p>         </td>
-         <td><p>¤</p>         </td>
-         <td><p>›</p>         </td>
-         <td><p>.</p>         </td>
-         <td><p>&lt;</p>         </td>
-         <td><p>(</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>|</p>         </td>
-      </tr>
-      <tr>
-         <td><p>5</p>         </td>
-         <td><p>&amp;</p>         </td>
-         <td><p>‚</p>         </td>
-         <td><p>ˆ</p>         </td>
-         <td><p>‰</p>         </td>
-         <td><p>Š</p>         </td>
-         <td><p>¡</p>         </td>
-         <td><p>Œ</p>         </td>
-         <td><p>‹</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>á</p>         </td>
-         <td><p>!</p>         </td>
-         <td><p>$</p>         </td>
-         <td><p>*</p>         </td>
-         <td><p>)</p>         </td>
-         <td><p>;</p>         </td>
-         <td><p>^</p>         </td>
-      </tr>
-      <tr>
-         <td><p>6</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>/</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>Ž</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>€</p>         </td>
-         <td><p>¥</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>","</p>         </td>
-         <td><p>%</p>         </td>
-         <td><p>_</p>         </td>
-         <td><p>&gt;</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>7</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>`</p>         </td>
-         <td><p>:</p>         </td>
-         <td><p>#</p>         </td>
-         <td><p>@</p>         </td>
-         <td><p>'</p>         </td>
-         <td><p>=</p>         </td>
-         <td><p>""""</p>         </td>
-      </tr>
-      <tr>
-         <td><p>8</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>a</p>         </td>
-         <td><p>b</p>         </td>
-         <td><p>c</p>         </td>
-         <td><p>d</p>         </td>
-         <td><p>e</p>         </td>
-         <td><p>f</p>         </td>
-         <td><p>g</p>         </td>
-         <td><p>h</p>         </td>
-         <td><p>i</p>         </td>
-         <td><p>®</p>         </td>
-         <td><p>¯</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>ñ</p>         </td>
-      </tr>
-      <tr>
-         <td><p>9</p>         </td>
-         <td><p>ø</p>         </td>
-         <td><p>j</p>         </td>
-         <td><p>k</p>         </td>
-         <td><p>l</p>         </td>
-         <td><p>m</p>         </td>
-         <td><p>n</p>         </td>
-         <td><p>o</p>         </td>
-         <td><p>p</p>         </td>
-         <td><p>q</p>         </td>
-         <td><p>r</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>§</p>         </td>
-         <td><p>‘</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>’</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>A</p>         </td>
-         <td><p>æ</p>         </td>
-         <td><p>~</p>         </td>
-         <td><p>s</p>         </td>
-         <td><p>t</p>         </td>
-         <td><p>u</p>         </td>
-         <td><p>v</p>         </td>
-         <td><p>w</p>         </td>
-         <td><p>x</p>         </td>
-         <td><p>y</p>         </td>
-         <td><p>z</p>         </td>
-         <td><p>­</p>         </td>
-         <td><p>¨</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>[</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>B</p>         </td>
-         <td><p>ª</p>         </td>
-         <td><p>œ</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>ú</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>¬</p>         </td>
-         <td><p>«</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>]</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>C</p>         </td>
-         <td><p>{</p>         </td>
-         <td><p>A</p>         </td>
-         <td><p>B</p>         </td>
-         <td><p>C</p>         </td>
-         <td><p>D</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>F</p>         </td>
-         <td><p>G</p>         </td>
-         <td><p>H</p>         </td>
-         <td><p>I</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>“</p>         </td>
-         <td><p>”</p>         </td>
-         <td><p>•</p>         </td>
-         <td><p>¢</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>D</p>         </td>
-         <td><p>}</p>         </td>
-         <td><p>J</p>         </td>
-         <td><p>K</p>         </td>
-         <td><p>L</p>         </td>
-         <td><p>M</p>         </td>
-         <td><p>N</p>         </td>
-         <td><p>O</p>         </td>
-         <td><p>P</p>         </td>
-         <td><p>Q</p>         </td>
-         <td><p>R</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>–</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>—</p>         </td>
-         <td><p>£</p>         </td>
-         <td><p>˜</p>         </td>
-      </tr>
-      <tr>
-         <td><p>E</p>         </td>
-         <td><p>\</p>         </td>
-         <td><p>ö</p>         </td>
-         <td><p>S</p>         </td>
-         <td><p>T</p>         </td>
-         <td><p>U</p>         </td>
-         <td><p>V</p>         </td>
-         <td><p>W</p>         </td>
-         <td><p>X</p>         </td>
-         <td><p>Y</p>         </td>
-         <td><p>Z</p>         </td>
-         <td><p>ý</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>™</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>F</p>         </td>
-         <td><p>0</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>2</p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>5</p>         </td>
-         <td><p>6</p>         </td>
-         <td><p>7</p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>9</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>š</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p>?</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  4  |   |   |  ƒ  |  „  |  …  |   |  ?  |  †  |  ‡  |  ¤  |  ›  |  .  |  &lt;  |  (  |  +  |  |  |
+|  5  |  &amp;  |  ‚  |  ˆ  |  ‰  |  Š  |  ¡  |  Œ  |  ‹  |  ?  |  á  |  !  |  $  |  *  |  )  |  ;  |  ^  |
+|  6  |  -  |  /  |  ?  |  Ž  |  ?  |  ?  |  ?  |  ?  |  €  |  ¥  |  ?  |  ","  |  %  |  _  |  &gt;  |  ?  |
+|  7  |  ?  |  ?  |  ?  |  ?  |  ?  |  ?  |  ?  |  ?  |  ?  |  `  |  :  |  #  |  @  |  '  |  =  |  """"  |
+|  8  |  ?  |  a  |  b  |  c  |  d  |  e  |  f  |  g  |  h  |  i  |  ®  |  ¯  |  ?  |  ?  |  ?  |  ñ  |
+|  9  |  ø  |  j  |  k  |  l  |  m  |  n  |  o  |  p  |  q  |  r  |  ¦  |  §  |  ‘  |  ?  |  ’  |  ?  |
+|  A  |  æ  |  ~  |  s  |  t  |  u  |  v  |  w  |  x  |  y  |  z  |  ­  |  ¨  |  ?  |  [  |  ?  |  ?  |
+|  B  |  ª  |  œ  |  ?  |  ú  |  ?  |  ?  |  ?  |  ¬  |  «  |  ?  |  ?  |  ?  |  ?  |  ]  |  ?  |  ?  |
+|  C  |  {  |  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  -  |  “  |  ”  |  •  |  ¢  |  ?  |
+|  D  |  }  |  J  |  K  |  L  |  M  |  N  |  O  |  P  |  Q  |  R  |  ?  |  –  |  ?  |  —  |  £  |  ˜  |
+|  E  |  \  |  ö  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  ý  |  ?  |  ™  |  ?  |  ?  |  ?  |
+|  F  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  ?  |  ?  |  š  |  ?  |  ?  |   |
+
 
 #### Printable hexadecimal ASCII (CP437)
 
-<table>
-   <tbody>
-      <tr>
-         <td><p> </p>         </td>
-         <td><p>0</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>2</p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>5</p>         </td>
-         <td><p>6</p>         </td>
-         <td><p>7</p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>9</p>         </td>
-         <td><p>A</p>         </td>
-         <td><p>B</p>         </td>
-         <td><p>C</p>         </td>
-         <td><p>D</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>F</p>         </td>
-      </tr>
-      <tr>
-         <td><p>2</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>!</p>         </td>
-         <td><p>"</p>         </td>
-         <td><p>#</p>         </td>
-         <td><p>$</p>         </td>
-         <td><p>%</p>         </td>
-         <td><p>&amp;</p>         </td>
-         <td><p>'</p>         </td>
-         <td><p>(</p>         </td>
-         <td><p>)</p>         </td>
-         <td><p>*</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>,</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>.</p>         </td>
-         <td><p>/</p>         </td>
-      </tr>
-      <tr>
-         <td><p>3</p>         </td>
-         <td><p>0</p>         </td>
-         <td><p>1</p>         </td>
-         <td><p>2</p>         </td>
-         <td><p>3</p>         </td>
-         <td><p>4</p>         </td>
-         <td><p>5</p>         </td>
-         <td><p>6</p>         </td>
-         <td><p>7</p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>9</p>         </td>
-         <td><p>:</p>         </td>
-         <td><p>;</p>         </td>
-         <td><p>&lt;</p>         </td>
-         <td><p>=</p>         </td>
-         <td><p>&gt;</p>         </td>
-         <td><p>?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>4</p>         </td>
-         <td><p>@</p>         </td>
-         <td><p>A</p>         </td>
-         <td><p>B</p>         </td>
-         <td><p>C</p>         </td>
-         <td><p>D</p>         </td>
-         <td><p>E</p>         </td>
-         <td><p>F</p>         </td>
-         <td><p>G</p>         </td>
-         <td><p>H</p>         </td>
-         <td><p>I</p>         </td>
-         <td><p>J</p>         </td>
-         <td><p>K</p>         </td>
-         <td><p>L</p>         </td>
-         <td><p>M</p>         </td>
-         <td><p>N</p>         </td>
-         <td><p>O</p>         </td>
-      </tr>
-      <tr>
-         <td><p>5</p>         </td>
-         <td><p>P</p>         </td>
-         <td><p>Q</p>         </td>
-         <td><p>R</p>         </td>
-         <td><p>S</p>         </td>
-         <td><p>T</p>         </td>
-         <td><p>U</p>         </td>
-         <td><p>V</p>         </td>
-         <td><p>W</p>         </td>
-         <td><p>X</p>         </td>
-         <td><p>Y</p>         </td>
-         <td><p>Z</p>         </td>
-         <td><p>[</p>         </td>
-         <td><p>\</p>         </td>
-         <td><p>]</p>         </td>
-         <td><p>^</p>         </td>
-         <td><p>_</p>         </td>
-      </tr>
-      <tr>
-         <td><p>6</p>         </td>
-         <td><p>`</p>         </td>
-         <td><p>a</p>         </td>
-         <td><p>b</p>         </td>
-         <td><p>c</p>         </td>
-         <td><p>d</p>         </td>
-         <td><p>e</p>         </td>
-         <td><p>f</p>         </td>
-         <td><p>g</p>         </td>
-         <td><p>h</p>         </td>
-         <td><p>i</p>         </td>
-         <td><p>j</p>         </td>
-         <td><p>k</p>         </td>
-         <td><p>l</p>         </td>
-         <td><p>m</p>         </td>
-         <td><p>n</p>         </td>
-         <td><p>o</p>         </td>
-      </tr>
-      <tr>
-         <td><p>7</p>         </td>
-         <td><p>p</p>         </td>
-         <td><p>q</p>         </td>
-         <td><p>r</p>         </td>
-         <td><p>s</p>         </td>
-         <td><p>t</p>         </td>
-         <td><p>u</p>         </td>
-         <td><p>v</p>         </td>
-         <td><p>w</p>         </td>
-         <td><p>x</p>         </td>
-         <td><p>y</p>         </td>
-         <td><p>z</p>         </td>
-         <td><p>{</p>         </td>
-         <td><p>|</p>         </td>
-         <td><p>}</p>         </td>
-         <td><p>~</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>8</p>         </td>
-         <td><p>Ç</p>         </td>
-         <td><p>ü</p>         </td>
-         <td><p>é</p>         </td>
-         <td><p>â</p>         </td>
-         <td><p>ä</p>         </td>
-         <td><p>à</p>         </td>
-         <td><p>å</p>         </td>
-         <td><p>ç</p>         </td>
-         <td><p>ê</p>         </td>
-         <td><p>ë</p>         </td>
-         <td><p>è</p>         </td>
-         <td><p>ï</p>         </td>
-         <td><p>î</p>         </td>
-         <td><p>ì</p>         </td>
-         <td><p>Ä</p>         </td>
-         <td><p>Å</p>         </td>
-      </tr>
-      <tr>
-         <td><p>9</p>         </td>
-         <td><p>É</p>         </td>
-         <td><p>æ</p>         </td>
-         <td><p>Æ</p>         </td>
-         <td><p>ô</p>         </td>
-         <td><p>ö</p>         </td>
-         <td><p>ò</p>         </td>
-         <td><p>û</p>         </td>
-         <td><p>ù</p>         </td>
-         <td><p>ÿ</p>         </td>
-         <td><p>Ö</p>         </td>
-         <td><p>Ü</p>         </td>
-         <td><p>¢</p>         </td>
-         <td><p>£</p>         </td>
-         <td><p>¥</p>         </td>
-         <td><p>P</p>         </td>
-         <td><p>ƒ</p>         </td>
-      </tr>
-      <tr>
-         <td><p>A</p>         </td>
-         <td><p>á</p>         </td>
-         <td><p>í</p>         </td>
-         <td><p>ó</p>         </td>
-         <td><p>ú</p>         </td>
-         <td><p>ñ</p>         </td>
-         <td><p>Ñ</p>         </td>
-         <td><p>ª</p>         </td>
-         <td><p>º</p>         </td>
-         <td><p>¿</p>         </td>
-         <td><p>¬</p>         </td>
-         <td><p>¬</p>         </td>
-         <td><p>½</p>         </td>
-         <td><p>¼</p>         </td>
-         <td><p>¡</p>         </td>
-         <td><p>«</p>         </td>
-         <td><p>»</p>         </td>
-      </tr>
-      <tr>
-         <td><p>B</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-      </tr>
-      <tr>
-         <td><p>C</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>-</p>         </td>
-      </tr>
-      <tr>
-         <td><p>D</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>-</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>+</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>_</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p>¯</p>         </td>
-      </tr>
-      <tr>
-         <td><p>E</p>         </td>
-         <td><p>a</p>         </td>
-         <td><p>ß</p>         </td>
-         <td><p>G</p>         </td>
-         <td><p>p</p>         </td>
-         <td><p>S</p>         </td>
-         <td><p>s</p>         </td>
-         <td><p>µ</p>         </td>
-         <td><p>t</p>         </td>
-         <td><p>F</p>         </td>
-         <td><p>T</p>         </td>
-         <td><p>O</p>         </td>
-         <td><p>d</p>         </td>
-         <td><p>8</p>         </td>
-         <td><p>f</p>         </td>
-         <td><p>e</p>         </td>
-         <td><p>n</p>         </td>
-      </tr>
-      <tr>
-         <td><p>F</p>         </td>
-         <td><p>=</p>         </td>
-         <td><p>±</p>         </td>
-         <td><p>=</p>         </td>
-         <td><p>=</p>         </td>
-         <td><p>(</p>         </td>
-         <td><p>)</p>         </td>
-         <td><p>÷</p>         </td>
-         <td><p>˜</p>         </td>
-         <td><p>°</p>         </td>
-         <td><p>·</p>         </td>
-         <td><p>·</p>         </td>
-         <td><p>v</p>         </td>
-         <td><p>n</p>         </td>
-         <td><p>²</p>         </td>
-         <td><p>¦</p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  A  |  B  |  C  |  D  |  E  |  F  |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|  2  |   |  !  |  "  |  #  |  $  |  %  |  &amp;  |  '  |  (  |  )  |  *  |  +  |  ,  |  -  |  .  |  /  |
+|  3  |  0  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  :  |  ;  |  &lt;  |  =  |  &gt;  |  ?  |
+|  4  |  @  |  A  |  B  |  C  |  D  |  E  |  F  |  G  |  H  |  I  |  J  |  K  |  L  |  M  |  N  |  O  |
+|  5  |  P  |  Q  |  R  |  S  |  T  |  U  |  V  |  W  |  X  |  Y  |  Z  |  [  |  \  |  ]  |  ^  |  _  |
+|  6  |  `  |  a  |  b  |  c  |  d  |  e  |  f  |  g  |  h  |  i  |  j  |  k  |  l  |  m  |  n  |  o  |
+|  7  |  p  |  q  |  r  |  s  |  t  |  u  |  v  |  w  |  x  |  y  |  z  |  {  |  |  |  }  |  ~  |   |
+|  8  |  Ç  |  ü  |  é  |  â  |  ä  |  à  |  å  |  ç  |  ê  |  ë  |  è  |  ï  |  î  |  ì  |  Ä  |  Å  |
+|  9  |  É  |  æ  |  Æ  |  ô  |  ö  |  ò  |  û  |  ù  |  ÿ  |  Ö  |  Ü  |  ¢  |  £  |  ¥  |  P  |  ƒ  |
+|  A  |  á  |  í  |  ó  |  ú  |  ñ  |  Ñ  |  ª  |  º  |  ¿  |  ¬  |  ¬  |  ½  |  ¼  |  ¡  |  «  |  »  |
+|  B  |  ¦  |  ¦  |  ¦  |  ¦  |  ¦  |  ¦  |  ¦  |  +  |  +  |  ¦  |  ¦  |  +  |  +  |  +  |  +  |  +  |
+|  C  |  +  |  -  |  -  |  +  |  -  |  +  |  ¦  |  ¦  |  +  |  +  |  -  |  -  |  ¦  |  -  |  +  |  -  |
+|  D  |  -  |  -  |  -  |  +  |  +  |  +  |  +  |  +  |  +  |  +  |  +  |  ¦  |  _  |  ¦  |  ¦  |  ¯  |
+|  E  |  a  |  ß  |  G  |  p  |  S  |  s  |  µ  |  t  |  F  |  T  |  O  |  d  |  8  |  f  |  e  |  n  |
+|  F  |  =  |  ±  |  =  |  =  |  (  |  )  |  ÷  |  ˜  |  °  |  ·  |  ·  |  v  |  n  |  ²  |  ¦  |   |
+
 
 <span id="Translat"></span>
 

@@ -47,9 +47,6 @@ You can manage the switch procedure using various methods that include, but not 
 
 To manually execute the log procedure, use the command:
 
-
-    SWITCH TYPE=LOG
-
 A file can automatically be switched to another file by means of one of 4 events:
 
 -   a daily schedule
@@ -77,9 +74,6 @@ For each transfer, there are multiple messages generated. You can significantly 
 
 When {{< TransferCFT/componentshortname  >}} sends log messages to Sentinel or Central Governance, you can filter by the level of severity according to its type: warning, error, or fatal error. For example, to send only FATAL errors you could set the following value:
 
-
-    UCONFSET id=sentinel.xfb.log,value=F
-
 ## Creating an exclusion log filter
 
 {{< TransferCFT/componentshortname  >}} can filter log messages according to predefined filters to exclude certain types of messages. To create a filter, customize the following uconf parameters to create the required filter pattern with one or more of the following characteristics:
@@ -94,14 +88,6 @@ When {{< TransferCFT/componentshortname  >}} sends log messages to Sentinel or C
 
 **Example**
 
-
-    CFTUTIL UCONFSET ID =cft.server.log.exclude_filters,
-    VALUE =cron_heartbeat
-    CFTUTIL UCONFSET ID =cft.server.log.exclude_filters.cron_heartbeat.pattern,
-    VALUE =CFTS37*ID=HEARTBEAT*
-    CFTUTIL UCONFSET ID =cft.server.log.exclude_filters.cron_heartbeat.comment,
-    VALUE ="Excludes from the log all cronjob messages concerning the ID HEARTBEAT"
-
 ## Create a daily log file rotation
 
 Available on Unix, Windows, and iSeries environments
@@ -110,27 +96,12 @@ This section describes how to create daily, rolling log files that are not impac
 
 If you need to check the current switch hour for the log, using CFTUTIL enter:
 
-
-    mquery name=command
-
 Then enter the `listlog `command:
-
-
-
-    listlog
-    ...
-    CFTI24I  *** DATE=DD/MM/YYYY TIME= 00:00:00.00 SWITCH LOG
 
 ### Configure the log file switch
 
 1.  If not already done, set the CFTLOG object's `SWITCH `parameter to the default value so that the rotation occurs at midnight. The MAXREC parameter should also be set to its default so that there is  no file rotation if the maximum records is reached.
 2.  Using CFTUTIL, set the following uconf values:
-
-<!-- -->
-
-
-    uconfset id=cft.cftlog.switch_on_start,value=Nouconfset id=cft.cftlog.backup_count, value=6
-    uconfset id=cft.cftlog.switch_on_stop, value=No
 
 This results in the switch being executed automatically every night at midnight, giving you a single daily log file (unless you execute another switch command), where:
 

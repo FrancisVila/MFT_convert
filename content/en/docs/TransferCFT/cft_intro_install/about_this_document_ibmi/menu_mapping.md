@@ -2,159 +2,32 @@
     "title": "Appendix B: Menu mapping",
     "linkTitle": "Appendix B: Menu mapping",
     "weight": "220"
-}<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><span id="_Toc429559254"></span>
-<h2 id="transfercftcomponentlongname-2.7.1">{{< TransferCFT/componentlongname  >}} 2.7.1</h2>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Customization   </p>
-<p>    1. CFT parameters                     </p>
-<p>        1. Source member modifications </p>
-<p>        2. Interpret selected member   </p>
-<p>        3. Work with examples          </p>
-<p>    2. Set up CFTUCONF configuration file </p>
-<p>    3. SSL security parameters            </p>
-<p>        1. Modify SSL configuration file   </p>
-<p>        2. Interpret SSL configuration file</p>
-<p>        3. Start PKIUTIL session           </p>
-<p>    4. Authorization rights parameters    </p>
-<p>        1. Modify Authorization rights configuration file       </p>
-<p>        2. Interpret Authorization rights configuration file    </p>
-<p>        3. Start SECUTIL session                                </p>
-<p>2. Operation "CFTUTIL"  </p>
-<p>    1. Display catalogue - LISTCAT  TYPE=ALL  </p>
-<p>    2. Display partners - LISTPART TYPE=ALL  </p>
-<p>    3. Display parameters - LISTPARM TYPE=ALL  </p>
-<p>    4. All CFT Commands                           </p>
-<p>    5. Interpret selected member                  </p>
-<p>    6. Start CFT monitor                          </p>
-<p>    7. Stop CFT monitor - SHUT                 </p>
-<p>3. COPILOT Server commands</p>
-<p>    1. Start COPILOT Server</p>
-<p>    2. Stop  COPILOT Server</p>         </td>
-      </tr>
-   </tbody>
-</table>
+}
+| <span id="_Toc429559254"></span> <h2 id="transfercftcomponentlongname-2.7.1">{{< TransferCFT/componentlongname  >}} 2.7.1</h2>  |
+| --- |
+|  1. Customization <br/> 1. CFT parameters <br/> 1. Source member modifications <br/> 2. Interpret selected member <br/> 3. Work with examples <br/> 2. Set up CFTUCONF configuration file <br/> 3. SSL security parameters <br/> 1. Modify SSL configuration file <br/> 2. Interpret SSL configuration file<br/> 3. Start PKIUTIL session <br/> 4. Authorization rights parameters <br/> 1. Modify Authorization rights configuration file <br/> 2. Interpret Authorization rights configuration file <br/> 3. Start SECUTIL session <br/>2. Operation "CFTUTIL" <br/> 1. Display catalogue - LISTCAT TYPE=ALL <br/> 2. Display partners - LISTPART TYPE=ALL 3. Display parameters - LISTPARM TYPE=ALL 4. All CFT Commands 5. Interpret selected member 6. Start CFT monitor 7. Stop CFT monitor - SHUT 3. COPILOT Server commands 1. Start COPILOT Server 2. Stop COPILOT Server  |
+
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><span id="_Toc429559255"></span>
-<h2 id="transfercftcomponentlongname-3.0.1">{{< TransferCFT/componentlongname  >}} 3.0.1</h2>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Customization</p>
-<p>    1. CFT parameters</p>
-<p>        1. Source member modifications</p>
-<p>        2. Interpret selected member  </p>
-<p>    2. Internal PKI database    </p>
-<p>        1. Modify SSL configuration file  </p>
-<p>        2. Interpret SSL configuration file</p>
-<p>    3. Internal Access Management</p>
-<p>        1. Modify Internal Access Management file   </p>
-<p>        2. Interpret Internal Access Management file</p>
-<p>        3. Start SECUTIL session  </p>
-<p>2. CFT Operations</p>
-<p>    1. Display catalog - LISTCAT  TYPE=ALL  </p>
-<p>    2. Display partners - LISTPART TYPE=ALL  </p>
-<p>    3. Display parameters - LISTPARM TYPE=ALL  </p>
-<p>    4. CFTUTIL                                    </p>
-<p>    5. PKIUTIL                                    </p>
-<p>    6. Interpret selected member                  </p>
-<p>    7. Start UI Server                            </p>
-<p>    8. Stop UI server                             </p>
-<p>    9. Start CFT monitor                          </p>
-<p>    10. Stop CFT monitor - SHUT </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| <span id="_Toc429559255"></span> <h2 id="transfercftcomponentlongname-3.0.1">{{< TransferCFT/componentlongname  >}} 3.0.1</h2>  |
+| --- |
+|  1. Customization<br/> 1. CFT parameters<br/> 1. Source member modifications<br/> 2. Interpret selected member <br/> 2. Internal PKI database <br/> 1. Modify SSL configuration file <br/> 2. Interpret SSL configuration file<br/> 3. Internal Access Management<br/> 1. Modify Internal Access Management file <br/> 2. Interpret Internal Access Management file<br/> 3. Start SECUTIL session <br/>2. CFT Operations<br/> 1. Display catalog - LISTCAT TYPE=ALL <br/> 2. Display partners - LISTPART TYPE=ALL <br/> 3. Display parameters - LISTPARM TYPE=ALL <br/> 4. CFTUTIL <br/> 5. PKIUTIL 6. Interpret selected member 7. Start UI Server 8. Stop UI server 9. Start CFT monitor 10. Stop CFT monitor - SHUT  |
+
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfercftcomponentlongname-3.1.3-sp4">{{< TransferCFT/componentlongname  >}} 3.1.3 SP4</h2>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Common Transfer CFT commands </p>
-<p>1.  Start Copilot            </p>
-<p>2.  Stop Copilot             </p>
-<p>3.  Start CFT       </p>
-<p>4.  Stop CFT        </p>
-<p>5.  CFTUTIL operations       </p>
-<p>6.  Interpret source member  </p>
-<p>7.  Manage configuration File</p>
-<p>1.  Edit configuration file     </p>
-<p>2.  Interpret configuration file</p>
-<p>2.  Security commands  </p>
-<p>1.  Edit Security configuration file</p>
-<p>2.  Interpret Security configuration</p>
-<p>3.  PKIUTIL operation                         </p>
-<p>3.  Administration commands </p>
-<p>1.  Reinitialize Transfer CFT parameters</p>
-<p>2.  Submit Transfer CFT support request      </p>
-<p>4.  Create system objects</p>
-<p>1.  Create job queue         </p>
-<p>2.  Create job description   </p>
-<p>3.  Create subsystem         </p>
-<p>4.  Add job-queue entry      </p>
-<p>5.  Create class             </p>
-<p>6.  Add routing entry        </p>
-<p>7.  Add communication entry  </p>
-<p>8.  Change profile                   </p>
-<p>Note: A highlighted menu item indicates there is a sub-menu.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| <h2 id="transfercftcomponentlongname-3.1.3-sp4">{{< TransferCFT/componentlongname  >}} 3.1.3 SP4</h2>  |
+| --- |
+|  1. Common Transfer CFT commands <br/>1. Start Copilot <br/>2. Stop Copilot <br/>3. Start CFT <br/>4. Stop CFT <br/>5. CFTUTIL operations <br/>6. Interpret source member <br/>7. Manage configuration File<br/>1. Edit configuration file <br/>2. Interpret configuration file<br/>2. Security commands <br/>1. Edit Security configuration file<br/>2. Interpret Security configuration<br/>3. PKIUTIL operation <br/>3. Administration commands <br/>1. Reinitialize Transfer CFT parameters<br/>2. Submit Transfer CFT support request 4. Create system objects 1. Create job queue 2. Create job description 3. Create subsystem 4. Add job-queue entry 5. Create class 6. Add routing entry 7. Add communication entry 8. Change profile Note: A highlighted menu item indicates there is a sub-menu.  |
+
 
  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Common Transfer CFT commands </p>
-<p>1.  Start Copilot            </p>
-<p>2.  Stop Copilot             </p>
-<p>3.  Start Transfer CFT       </p>
-<p>4.  Stop Transfer CFT        </p>
-<p>5.  CFTUTIL operations         </p>
-<p>6.  Manage configuration File</p>
-<p>1.  Edit configuration file     </p>
-<p>2.  Interpret configuration file</p>
-<p>2.  Security commands  </p>
-<p>1.  Edit Security configuration file</p>
-<p>2.  Interpret Security configuration</p>
-<p>3.  PKIUTIL operation                         </p>
-<p>3.  Administration commands </p>
-<p>1.  Reinitialize Transfer CFT parameters</p>
-<p>2.  Submit Transfer CFT support request      </p>
-<p>4.  Create system objects</p>
-<p>1.  Create job queue         </p>
-<p>2.  Create job description   </p>
-<p>3.  Create subsystem         </p>
-<p>4.  Add job-queue entry      </p>
-<p>5.  Create class             </p>
-<p>6.  Add routing entry        </p>
-<p>7.  Add communication entry  </p>
-<p>8.  Change profile                   </p>
-<p> </p>
-<p>Note: A highlighted menu item indicates there is a sub menu.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| <h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>  |
+| --- |
+|  1. Common Transfer CFT commands <br/>1. Start Copilot <br/>2. Stop Copilot <br/>3. Start Transfer CFT <br/>4. Stop Transfer CFT <br/>5. CFTUTIL operations <br/>6. Manage configuration File<br/>1. Edit configuration file <br/>2. Interpret configuration file<br/>2. Security commands <br/>1. Edit Security configuration file<br/>2. Interpret Security configuration<br/>3. PKIUTIL operation <br/>3. Administration commands <br/>1. Reinitialize Transfer CFT parameters<br/>2. Submit Transfer CFT support request <br/>4. Create system objects 1. Create job queue 2. Create job description 3. Create subsystem 4. Add job-queue entry 5. Create class 6. Add routing entry 7. Add communication entry 8. Change profile Note: A highlighted menu item indicates there is a sub menu.  |
+

@@ -59,19 +59,7 @@ Additionally, the key must have the cluster option.
 
 Enter the license key in the following format.
 
-
-
-    CFTPARM    ID       = IDPARM0 ,
-    …
-    KEY      =  #%ENVCFT%.UPARM(PRODKEY),
-
-    …
-
 Access the &lt;TARGET>.INSTALL library, and run the JCL called **CFTABOUT**. Near the bottom of the CFTABOUT output, the **`cpuid `line is displayed.**  
-
-
-
-    * cpuid   = 000000000ABC1234
 
 In this example, you would provide the CPU ID **000000000ABC1234**.
 

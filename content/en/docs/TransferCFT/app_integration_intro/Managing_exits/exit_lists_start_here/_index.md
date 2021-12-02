@@ -29,20 +29,6 @@ No specific parameter setting.
 
 Server sender site
 
-
-    CFTSEND  ID 
-     = IDFexit,
-    IMPL = YES,
-    EXIT = IDExitList
-
-
-    CFTEXIT  ID 
-     = IDExitList,
-    LANGUAGE = C,
-    PARM = FileName,
-    RESERV = 16384,
-    PROG = FileExe
-
 > **Note:**
 >
 > We recommend that you use the value 16384 for the RESERV
@@ -82,11 +68,6 @@ request. When you make a file reception request, use the CFTSEND object
 identifier that is associated with the Exit list as the IDF.
 
 Example
-
-
-    CFTUTILRECV     PART 
-     = &part,
-    IDF = IDFexit
 
 The server:
 

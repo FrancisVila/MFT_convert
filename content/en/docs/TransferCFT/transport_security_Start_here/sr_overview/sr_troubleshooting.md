@@ -16,42 +16,18 @@ If you find the following messages in the {{< TransferCFT/componentlongname  >}}
 
 Possible cause: No Router Agent available
 
-
-
-    CFTS63F Secure Relay fatal error _ Secure Relay register error 2 (Error sending listen request to RA DMZ0: CFTS63F+com.axway.xsr.agent.master.context.router.RouterAgentContextException: MPX channel is currently not available) 
-
 Possible cause: Java not set
 
-
-
-    CFTS63F Secure Relay fatal error _ Java binary file not found: 
-    CFTS63F Secure Relay fatal error _ Please set uconf:cft.jre.java_binary_path parameter 
-    CFTI10F Init error _ failed to start the Secure Relay Master Agent CFTS63F Secure Relay fatal error _ (13) Permission denied (in UNIX environments)
-
 Possible cause: Problem related to secure\_relay.ma.ca\_cert\_fname
-
-
-
-    CFTI09F Init error _ Communication process CFTI10F Init error _ failed to start the Secure Relay Master Agent
 
 **Possible cause: Firewall or SAP overlap issue**
 
 The following messages may display indicating a SAP overlap (SAP is already used) or that there is a firewall issue:
-
-
-
-    CFTCFTS63F Secure Relay fatal error _ Secure Relay register error 2 (Error sending listen request to RA DMZ0:
-    CFTS63F+com.axway.xsr.agent.master.context.router.RouterAgentContextException: MPX channel is currently not available)
-    CFTI22F CFTPROT=PESIT Register request failure CS=00000098
 
 ## Transfer CFT and the Master Agent fail to start
 
 Possible cause: After changing the MA certificate, the secure\_relay.ma.cert\_fname parameter points to an invalid file
 
 Transfer CFT fails to start and displays a message similar to the following in the` cft.out` file:
-
-
-
-    Error accessing user certificate keystore file <certificate name> (password might be wrong): java.io.IOException: keystore password was incorrect
 
 To  correct, delete or rename the file referenced by the `secure_relay.ma.cert_password_fname` parameter (by default, XsrPwd.dat) prior to restarting {{< TransferCFT/transfercftname  >}}.

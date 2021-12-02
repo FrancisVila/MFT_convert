@@ -22,9 +22,6 @@ Level 2: corresponds to level 1 with an additional program-based control of acce
 
 When running under , the access management is automatically set to am.type=passport. If you want to use external access management, RACF, you must manually modify this value after registering with using the command:
 
-
-    CFTUTIL UCONFSET id=am.type, value=internal
-
 ### Installation prerequisites
 
 #### Creating RACF classes
@@ -53,104 +50,23 @@ Once the H83SAFDA job is adapted, use this job to create groups and the Transfer
       
     After adapting the security system values in the A03PARM member, you must execute the A00CUSTO job again.
 
-<!-- -->
-
-
-
-    **************************************************************
-
-    *   New parameters for RACF (or SAF enabled) control of Transfer CFT.
-
-    *   These definitions are not used in the base installation.
-
-    *   You must read the “Transfer CFT Installing z/OS Security” 
-
-    *   before changing the following values:
-
-    **************************************************************
-
-      grpcft   'grpcft'               CFT administrator SAF group
-
-      grpmon   'grpmon'               CFT monitor SAF group
-
-      grpaprm  'grpaprm'              all parameter access SAF group
-
-      grpfprm  'grpfprm'              PARM and PART access SAF group
-
-      grpdesk  'grpdesk'              CFT help desk SAF group
-
-      grptrf   'grptrf'               CFT transfer SAF group
-
-      userdef  'userdef'              default CFTRECV userid
-
-      safcftcl 'safcftcl'             SAF class for CFT profiles     
-
 ## Security system installation procedure
 
 When the general resource class (safcftcl) is applied by RACF, the authorized user can begin the installation to implement the minimum (Transfer CFT and RACF) resources required to run the security system. You must perform the installation procedures in the order shown in the following table.
 
 #### Security system installation procedures
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Job</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Installation procedure</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>H84SAFDF</p>         </td>
-         <td><p>Creates RACF general resource CFT profiles</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H85SAFPR</p>         </td>
-         <td><p>Executes RACF PERMIT commands</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H86SAFCR</p>         </td>
-         <td><p>Creates the LOADMAIN library and SECINI file</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H87SECEN</p>         </td>
-         <td><p>Creates dictionaries, actions and objects</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H88INIT</p>         </td>
-         <td><p>Creates CFT files with the security system enabled (replacing D40INIT)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H88PARM</p>         </td>
-         <td><p>Edits the parameter file (adds CFTAPPL)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H89SAFAS</p>         </td>
-         <td><p>Creates CFT file protection profiles with PADS (upgrades from security level 1 to level 2)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H89SAFAU</p>         </td>
-         <td><p>Sample allowing certain users to modify parameters and/or perform transfers</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Job  |  Installation procedure  |
+| --- | --- |
+|  H84SAFDF  |  Creates RACF general resource CFT profiles  |
+|  H85SAFPR  |  Executes RACF PERMIT commands  |
+|  H86SAFCR  |  Creates the LOADMAIN library and SECINI file  |
+|  H87SECEN  |  Creates dictionaries, actions and objects  |
+|  H88INIT  |  Creates CFT files with the security system enabled (replacing D40INIT)  |
+|  H88PARM  |  Edits the parameter file (adds CFTAPPL)  |
+|  H89SAFAS  |  Creates CFT file protection profiles with PADS (upgrades from security level 1 to level 2)  |
+|  H89SAFAU  |  Sample allowing certain users to modify parameters and/or perform transfers  |
+
 
 #### Delete security definitions
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Job</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>H89SAFDD</p>         </td>
-         <td><p>Used to delete the RACF definitions created by the H84SAFDF job.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>H89SAFDS</p>         </td>
-         <td><p>Used to delete the RACF definitions created by the H89SAFAS job.</p>         </td>
-      </tr>
-   </tbody>
-</table>

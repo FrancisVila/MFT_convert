@@ -16,32 +16,13 @@ Select **Products** on the top toolbar to open the **Product List** page.
 
 Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Transfer CFT          </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1" style="font-size: 8pt">Host         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1" style="font-size: 8pt">Application name         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>{{< TransferCFT/componentshortname  >}} 1         </td>
-         <td>&lt; hostname 1&gt;         </td>
-         <td>MainOffice         </td>
-      </tr>
-      <tr>
-         <td>{{< TransferCFT/componentshortname  >}} 2         </td>
-         <td>&lt; hostname 2&gt;         </td>
-         <td>Store_66         </td>
-      </tr>
-      <tr>
-         <td>{{< TransferCFT/componentshortname  >}} 1         </td>
-         <td>&lt; hostname 3&gt;         </td>
-         <td>Store_89         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Transfer CFT  | Host  | Application name  |
+| --- | --- | --- |
+| {{< TransferCFT/componentshortname  >}} 1  | &lt; hostname 1&gt;  | MainOffice  |
+| {{< TransferCFT/componentshortname  >}} 2  | &lt; hostname 2&gt;  | Store_66  |
+| {{< TransferCFT/componentshortname  >}} 1  | &lt; hostname 3&gt;  | Store_89  |
+
 
 ### Add an application
 

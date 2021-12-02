@@ -9,42 +9,6 @@ record and remove resources.
 
 Enter the command:
 
-
-
-    scrgadm -p[v[v]] [-t <Resource_Type_name>] 
-     \
-    [-g <Resource_Group_name>] \
-    [-j <Resource_name>]
-    scrgadm -a -t <Resource_Type_name> 
-     [-f <RT_registration_file_path>] \
-    [-h RT_installed_node_list]
-    scrgadm -c -t <Resource_Type_name> 
-     -h RT_installed_node_list
-    scrgadm -r -t <Resource_Type_name>
-    scrgadm -a | -c -g <Resource_Group_name> 
-     [-h RT_installed_node_list]
-    [-y <property>]
-    scrgadm -r -g <RG_name>
-    scrgadm -a -j <Resource_name> -t <Resource_Type_name> 
-     \
-    -g <RG_name> [-y <property> 
-     [-y <property>]] \
-    [-x <property> [-x <property>]]
-    scrgadm -c -j <Resource_name> [-y 
-     <property> [-y <property>]] \
-    [-x <property> -x <property>]]
-    scrgadm -r -j <Resource_name>
-    scrgadm -a -L -g <LogicalHost_RG_Name> 
-     [-j <Resource_name>] \
-    -l hostname[,hostname,...] [-n nafo@node[,nafo@node,...]]
-    [-y <property> [-y <property>]]
-    scrgadm -a -S -g <SharedAddress_RG_Name> 
-     [-j <Resource_name>] \
-    -l hostname[,hostname,...] [-n nafo@node[,nafo@node,...]] 
-     \
-    [-X aux_node[,aux_node,...]] [-y <property> 
-     [-y <property>]]
-
 <span id="CFT_resources_group"></span>
 
 ### Transfer CFT resources group
@@ -59,24 +23,12 @@ cluster.
 
 View the command line description
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Command</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>-a</p>         </td>
-         <td><p>resource addition (add)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-g CFT-rg</p>         </td>
-         <td><p>resources group name</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Command  |  Description  |
+| --- | --- |
+|  -a  |  resource addition (add)  |
+|  -g CFT-rg  |  resources group name  |
+
 
 <span id="CFT_resources"></span>
 
@@ -117,42 +69,6 @@ scrgadm
 
 View the command line description
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>-a</p>         </td>
-         <td><p>resource addition (add)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>–L</p>         </td>
-         <td><p>logical name resource type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-g CFT-rg</p>         </td>
-         <td><p>resources group name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-j cft-ip</p>         </td>
-         <td><p>resource name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>–l cft-ip</p>         </td>
-         <td><p>logical name (as defined in /etc/hosts
-in our test)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-n nafo0@1,nafo0@2</p>         </td>
-         <td><p>use of nafo interfaces 1 and 2</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Shared_file_system"></span>
 
 #### Shared file system
@@ -165,103 +81,13 @@ scrgadm –a –g CFT-rg –t SUNM.HAStoragePlus –j cft-disk \\
 
 View the command line description
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>-a</p>         </td>
-         <td><p>resource addition (add)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-g CFT-rg</p>         </td>
-         <td><p>resources group name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-t SUNW.HAStoragePlus</p>         </td>
-         <td><p>GDS resource type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-j cft-disk</p>         </td>
-         <td><p>resource name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-x FilesystemMountpoints=/global/cft</p>         </td>
-         <td><p>mount point</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Generic_data_service_CFT"></span>
 
 #### Generic data service CFT
 
 The following is the declaration of the GDS for Transfer CFT:
 
-
-    scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \
-    –x Start_command=/global/cft/cftstartFailover \
-    –x Stop_command=/global/cft/cftstopFailover \
-    –x Probe_command=/global/cft/cftprobeFailover \
-    –y Port_list="1765/tcp,1766/tcp,1767/tcp" \
-    –y Resource_dependencies=cft-ip,cft-disk
-
 View the command line description
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1"><p>Command</p>         </th>
-<th class="HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>-a</p>         </td>
-         <td><p>resource addition (add)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-g CFT-rg</p>         </td>
-         <td><p>resources group name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-t SUNW.gds</p>         </td>
-         <td><p>GDS resource type</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-j cft-gds</p>         </td>
-         <td><p>resource name</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-x Start_command= /global/cft/cftstartFailover</p>         </td>
-         <td><p>command definition for startup</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-x Stop_command= /global/cft/cftstopFailover</p>         </td>
-         <td><p>command definition for stop</p>         </td>
-      </tr>
-      <tr>
-         <td><p>-x Probe_command= /global/cft/cftprobeFailover</p>         </td>
-         <td><p>command definition for probe</p>         </td>
-      </tr>
-      <tr>
-         <td><p>–y Port_list=1765/tcp</p>         </td>
-         <td><p>verification of the listening ports of Transfer CFT in
-TCP (parameters of the Transfer CFT cftprot cards)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>–y Resource_dependencies= cft-ip,cft-disk</p>         </td>
-         <td><p>You can activate GDX on a node only if the cft-ip and cft-disk
-resources are online. In the event of problems with one of these two resources,
-Sun Custer attempts to restart the faulty resource, or to switch over
-to another node</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 The default parameters are adequate for the test
 environment.

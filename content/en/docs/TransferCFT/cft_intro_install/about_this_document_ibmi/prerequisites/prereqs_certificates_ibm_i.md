@@ -19,9 +19,6 @@ Example
 
 In this example, assume that your certificate `2k_l1_user1_key.pem` size is 1,191 bytes. Before uploading this certificate to the IBM i server, you would need to create a file with a record length of 1,191 bytes, as follows:
 
-
-    CRTPF FILE(YOURLIB/PEM_CERT) RCDLEN(1191)
-
 You can use FTP, for example, to then upload `2k_l1_user1_key.pem` to `YOURLIB/PEM_CERT`.
 
 -   You must transfer PEM certificates in ASCII mode
@@ -43,14 +40,6 @@ On the Unix/Windows machine:
 
 For example:
 
-
-
-    FTP open <HOST>
-    cd CFTPROD
-    ascii
-    put USER.pem    USERPEM
-    put USERK.pem    USERKPEM
-
 > **Note:**
 >
 > If you have multiple certificates, repeat the process for each.
@@ -61,21 +50,6 @@ For example:
 
 Use FTP to upload the certificate file (in binary mode) to the iSeries machine. For example:
 
-
-
-    FTP OPEN <HOST>
-    cd CFTPROD
-    binary
-    put USER.P12 USERP12
-
 #### DER
 
 Use FTP to upload the certificate and key files (in binary mode) to the iSeries machine. For example:
-
-
-
-    FTP open <HOST>
-    cd CFTPROD
-    binary
-    put USER.der   USERDER
-    put USERK.der   USERKDER

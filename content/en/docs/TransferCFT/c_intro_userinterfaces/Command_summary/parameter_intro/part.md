@@ -66,44 +66,11 @@ the user can define this parameter using the symbolic variable PART=&PART.
 This identifier designates:
 
 -   either a partner described by the command:
-    <table>
-             
-             
-             
-             
-       
-       <tbody>
-          <tr>
-             <td><p>CFTPART</p>         </td>
-             <td><p>ID = &lt;PART parameter value&gt;, ...</p>         </td>
-             <td><p> </p>         </td>
-          </tr>
-       </tbody>
-    </table>
 
 <!-- -->
 
 -   or a list of partners described by
     the command:
-    <table>
-             
-             
-             
-             
-       
-       <tbody>
-          <tr>
-             <td><p>CFTDEST</p>         </td>
-             <td><p>ID = &lt;PART parameter value&gt;,</p>         </td>
-             <td><p> </p>         </td>
-          </tr>
-          <tr>
-             <td><p> </p>         </td>
-             <td><p>PART = (<em>identifier, identifier . . .</em>)</p>         </td>
-             <td><p> </p>         </td>
-          </tr>
-       </tbody>
-    </table>
 
 #### CFTIDF
 

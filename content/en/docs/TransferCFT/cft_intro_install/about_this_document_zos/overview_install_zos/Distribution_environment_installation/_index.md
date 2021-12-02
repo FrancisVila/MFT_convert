@@ -17,13 +17,6 @@ You can create a Transfer CFT ALIAS in the USER CATALOG if the file names mentio
 
 To define an alias, adapt the parameters in bold to suit your environment. Enter:
 
-
-    //DEFALIAS EXEC PGM=IDCAMS   
-    //SYSPRINT DD SYSOUT=sysout
-    //SYSIN    DD *      
-       DEFINE ALIAS(NAME(CFTV2) RELATE(USER.CATALOG))   ...................
-    /*     
-
 ## Download the installation library from ESD 
 
 ### Required configuration
@@ -67,171 +60,31 @@ This section describes how to prepare the distribution environment necessary to 
 -   Installing the product
 -   Creating the distribution environment
 
-<!-- -->
-
-
-
-    Unix Installation example:
-
-    ./setup.sh 
-
-     
-    /home/cft/Transfer_CFT_3.3.2_Install_mvs_BN10687000/bin/axwaykit_linux Version 1.0 ===
-    -------------------------------------------------------
-    >> Start the configuration installation - Transfer CFT ZOS with /home/cft/Transfer_CFT_3.3.2_Install_mvs_BN10687000/bin/axwaykit_linux on Fri Apr 06 13:40:41 2018
-    -------------------------------------------------------
-    >Enter the local working directory where you want to save the configuration [Default:/home/cft/Transfer_CFT_3.3.2_Install_mvs_BN10687000/bin][Mandatory]
-
-    --------------------------------
-
-    >Enter the dataset name for the product installation (4 qualifiers min.)
-    [Default:AXWAY.XFB.D332.CF030000][Mandatory]
-    Number of qualifiers=4
-    >Enter File Format ADRDSSU(A) or XMIT(X):
-    [Default:A][Mandatory]
-     
-     
-    Installation runtime:
-    --------------------------------
-    >Enter the dataset name for the runtime environment (as either a value or NO). [Default:AXWAY.V332][Mandatory]
-     
-    Mainframe address (for FTP):
-    --------------------------------
-    >Enter hostname address: [No default][Mandatory]
-    axway.hostname.mvs
-     
-    >Enter login TSO: [No default][Mandatory]
-    TSOUSER
-     
-    >Enter password: [******][Mandatory]
-    ****
-     
-    >Enter Y if you want to change the user and password? (Y/N) [Default:N][Mandatory]
-    ****
-     
-    >Enter Y if you want to change the user and password? (Y/N) [Default:N][Mandatory]
-     
-    >Enter Y/N to define if you want submit the JCL(Note: JESINTERFACELEVEL should be set to 2) [Default:Y]
-     
-    >Enter the execution class (JCL) [Default:A][Mandatory]
-     
-    >Enter the account parameter (JCL) [Default:()]
-    Configuration summary: ---------------------
-    Local parameters ----------------
-    Local work PATH : /home/cft/Transfer_CFT_3.3.2_Install_mvs_BN10687000/bin 
-    Installation PATH : /home/cft/Transfer_CFT_3.3.2_Install_mvs_BN10687000/bin
-     
-     
-    Host parameters
-    ---------------
-    Host IP address : axway.hostname.mvs
-    User : TSOUSER
-    Upload library : AXWAY.XFB.D332.CF030000.UPLIB
-    >> this library will be created
-    >> member : CFT332A
-    Transfer CFT runtime envir.: AXWAY.V332
-    JCL to be submitted : J1IDISTA
-    jobname : TSOUSERI
-     
-    >Enter Y if you agree with these parameters, or N to Exit installation (Y/N)
-    [No default][Mandatory]
-
 ## Silent installation
 
 Silent mode enables you to perform an installation or configuration in a non-interactive mode. You do not have to enter any parameters in the console. To use this mode, you must install the product or run the installer program and perform the configuration until just before you execute setup.sh or setup.bat.
 
 Before you start the silent installation you must update the silent\_install.conf installation file located in the install directory.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>&amp;cftinstall</p>         </td>
-         <td>AXWAY.XFB.D332         </td>
-         <td>Library prefix qualifiers for distribution environment         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;distlev</p>         </td>
-         <td>CF030000         </td>
-         <td>Distribution prefix level         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;hostuplib</p>         </td>
-         <td><p>AXWAY.XFB.D332.CF030000.UPLIB</p>         </td>
-         <td>Library prefix to upload product         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;cftruntime</p>         </td>
-         <td>AXWAY.V332         </td>
-         <td>Library for the runtime creation of the target environment         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;patch</p>         </td>
-         <td>N/A         </td>
-         <td>Information about last patch applied         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;format</p>         </td>
-         <td>A         </td>
-         <td><p>Type of restoration product:</p>
-<ul>
-<li>A (ADRDSSU)</li>
-<li>X (XMIT)</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;hostname</p>         </td>
-         <td>N/A         </td>
-         <td>z/OS hostname         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;user</p>         </td>
-         <td>N/A         </td>
-         <td>z/OS user         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;password</p>         </td>
-         <td>N/A         </td>
-         <td>z/OS password         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;installvol</p>         </td>
-         <td>N/A         </td>
-         <td>Volume Serial for distribution environment         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;runtimevol</p>         </td>
-         <td>N/A         </td>
-         <td>Volume Serial for runtime environment         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;account</p>         </td>
-         <td>()         </td>
-         <td>Accounting         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;class</p>         </td>
-         <td>A         </td>
-         <td>Class         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;unit</p>         </td>
-         <td>3390         </td>
-         <td>Unit         </td>
-      </tr>
-      <tr>
-         <td><p>&amp;submit</p>         </td>
-         <td>Y         </td>
-         <td>Submit JCL for the runtime creation         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Value  | Default value  | Description  |
+| --- | --- | --- |
+|  &amp;cftinstall  | AXWAY.XFB.D332  | Library prefix qualifiers for distribution environment  |
+|  &amp;distlev  | CF030000  | Distribution prefix level  |
+|  &amp;hostuplib  |  AXWAY.XFB.D332.CF030000.UPLIB  | Library prefix to upload product  |
+|  &amp;cftruntime  | AXWAY.V332  | Library for the runtime creation of the target environment  |
+|  &amp;patch  | N/A  | Information about last patch applied  |
+|  &amp;format  | A  |  Type of restoration product:<br/> • A (ADRDSSU)<br/> • X (XMIT)</li>  |
+|  &amp;hostname  | N/A  | z/OS hostname  |
+|  &amp;user  | N/A  | z/OS user  |
+|  &amp;password  | N/A  | z/OS password  |
+|  &amp;installvol  | N/A  | Volume Serial for distribution environment  |
+|  &amp;runtimevol  | N/A  | Volume Serial for runtime environment  |
+|  &amp;account  | ()  | Accounting  |
+|  &amp;class  | A  | Class  |
+|  &amp;unit  | 3390  | Unit  |
+|  &amp;submit  | Y  | Submit JCL for the runtime creation  |
+
 
 Once you have configured and saved the file for silent installation, run the following command to start the installation:
 

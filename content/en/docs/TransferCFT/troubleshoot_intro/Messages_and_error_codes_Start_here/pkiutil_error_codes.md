@@ -7,197 +7,45 @@
 
 PKIUTIL error codes
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Code         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Contains         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Meaning         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>15001 </p>         </td>
-         <td><p>Command not authorized </p>         </td>
-         <td><p>The user is not authorized to use this command </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15003  </p>         </td>
-         <td><p>PKI file opening error </p>         </td>
-         <td><p>Error opening the file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15004  </p>         </td>
-         <td><p>PKI invalid file opening mode </p>         </td>
-         <td><p>Error opening the file with the request mode </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15005 </p>         </td>
-         <td><p>PKI internal error </p>         </td>
-         <td><p>Type of record unknown </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15006  </p>         </td>
-         <td><p>PKI record already exist </p>         </td>
-         <td><p>The record already exists </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15007  </p>         </td>
-         <td><p>PKI invalid parameter </p>         </td>
-         <td><p>Incorrect value for one of the fields in the command </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15008  </p>         </td>
-         <td><p>PKI Record writing error </p>         </td>
-         <td><p>Error writing to the file  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15009  </p>         </td>
-         <td><p>Not enough memory to proceed this command </p>         </td>
-         <td><p>Memory allocation error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15010  </p>         </td>
-         <td><p>Command OK </p>         </td>
-         <td><p>Record complete </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15011  </p>         </td>
-         <td><p>No record found </p>         </td>
-         <td><p>Record cannot be found </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15012  </p>         </td>
-         <td><p>PKI record reading error </p>         </td>
-         <td><p>Error reading the file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15013  </p>         </td>
-         <td><p>PKI file end </p>         </td>
-         <td><p>End of file reached </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15014  </p>         </td>
-         <td><p>PKI Record suppression error </p>         </td>
-         <td><p>Error deleting a record </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15015  </p>         </td>
-         <td><p>Certificate or Key reading error </p>         </td>
-         <td><p>Error opening a file to be imported (key or certificate)
- </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15016  </p>         </td>
-         <td><p>Authorization failed </p>         </td>
-         <td><p>Authorization problem  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15017  </p>         </td>
-         <td><p>PKI record not found  </p>         </td>
-         <td><p>Internal datafile empty </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15018  </p>         </td>
-         <td><p>Certificate Length too long </p>         </td>
-         <td><p>Certificate size too large </p>         </td>
-      </tr>
-      <tr>
-         <td>15019         </td>
-         <td>Error creating extract file fout         </td>
-         <td>Creation of the extract file fout failed         </td>
-      </tr>
-      <tr>
-         <td>15020         </td>
-         <td>Error extracting a PKI certificate         </td>
-         <td>Creation of the file containing the certificate failed         </td>
-      </tr>
-      <tr>
-         <td><p>15021  </p>         </td>
-         <td><p>PKI internal error </p>         </td>
-         <td><p>Internal error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15022  </p>         </td>
-         <td><p>PKI file integrity error </p>         </td>
-         <td><p>Certificate internal datafile integrity error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15024  </p>         </td>
-         <td><p>Habilitation opening error </p>         </td>
-         <td><p>Error initializing the security system </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15025  </p>         </td>
-         <td><p>Parsing error on Certificate or Key </p>         </td>
-         <td><p>Certificate or key interpretation error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15026  </p>         </td>
-         <td><p>PKI decipher error </p>         </td>
-         <td><p>Error decrypting the certificate or key </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15027  </p>         </td>
-         <td><p>PKI cipher error </p>         </td>
-         <td><p>Encryption error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15028  </p>         </td>
-         <td><p>PKI decipher error </p>         </td>
-         <td><p>Decryption error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15029  </p>         </td>
-         <td><p>PKI sealing (MD5) error </p>         </td>
-         <td><p>MD5 sealing error </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15030  </p>         </td>
-         <td><p>PKI key file reading error </p>         </td>
-         <td><p>Error reading the password file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15031  </p>         </td>
-         <td><p>IKNAME or INAME parameter mandatory </p>         </td>
-         <td><p>iname or ikname parameter mandatory </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15032  </p>         </td>
-         <td><p>PKI record type error </p>         </td>
-         <td><p>Certificate type unknown  </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15034  </p>         </td>
-         <td><p>Private and Public key incompatible </p>         </td>
-         <td><p>Public and private keys incompatible </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15035  </p>         </td>
-         <td><p>CA Certificate not found </p>         </td>
-         <td><p>Root authority certificate cannot be found </p>         </td>
-      </tr>
-      <tr>
-         <td><p>15036  </p>         </td>
-         <td><p>Signature check failed </p>         </td>
-         <td><p>Signature invalid </p>         </td>
-      </tr>
-      <tr>
-         <td>15038         </td>
-         <td>PKI record conflict: existing entity         </td>
-         <td>Cannot insert/modify the certificate (User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database         </td>
-      </tr>
-      <tr>
-         <td>15039         </td>
-         <td>PKI record conflict: existing certificate         </td>
-         <td>Cannot insert/modify the entity, because there is already a certificate using the same ID in the PKI database         </td>
-      </tr>
-      <tr>
-         <td><p>15099  </p>         </td>
-         <td><p>Format not yet supported </p>         </td>
-         <td><p>Certificate type not supported </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Code  | Contains  | Meaning  |
+| --- | --- | --- |
+|  15001  |  Command not authorized  |  The user is not authorized to use this command  |
+|  15003  |  PKI file opening error  |  Error opening the file  |
+|  15004  |  PKI invalid file opening mode  |  Error opening the file with the request mode  |
+|  15005  |  PKI internal error  |  Type of record unknown  |
+|  15006  |  PKI record already exist  |  The record already exists  |
+|  15007  |  PKI invalid parameter  |  Incorrect value for one of the fields in the command  |
+|  15008  |  PKI Record writing error  |  Error writing to the file  |
+|  15009  |  Not enough memory to proceed this command  |  Memory allocation error  |
+|  15010  |  Command OK  |  Record complete  |
+|  15011  |  No record found  |  Record cannot be found  |
+|  15012  |  PKI record reading error  |  Error reading the file  |
+|  15013  |  PKI file end  |  End of file reached  |
+|  15014  |  PKI Record suppression error  |  Error deleting a record  |
+|  15015  |  Certificate or Key reading error  |  Error opening a file to be imported (key or certificate)  |
+|  15016  |  Authorization failed  |  Authorization problem  |
+|  15017  |  PKI record not found  |  Internal datafile empty  |
+|  15018  |  Certificate Length too long  |  Certificate size too large  |
+| 15019  | Error creating extract file fout  | Creation of the extract file fout failed  |
+| 15020  | Error extracting a PKI certificate  | Creation of the file containing the certificate failed  |
+|  15021  |  PKI internal error  |  Internal error  |
+|  15022  |  PKI file integrity error  |  Certificate internal datafile integrity error  |
+|  15024  |  Habilitation opening error  |  Error initializing the security system  |
+|  15025  |  Parsing error on Certificate or Key  |  Certificate or key interpretation error  |
+|  15026  |  PKI decipher error  |  Error decrypting the certificate or key  |
+|  15027  |  PKI cipher error  |  Encryption error  |
+|  15028  |  PKI decipher error  |  Decryption error  |
+|  15029  |  PKI sealing (MD5) error  |  MD5 sealing error  |
+|  15030  |  PKI key file reading error  |  Error reading the password file  |
+|  15031  |  IKNAME or INAME parameter mandatory  |  iname or ikname parameter mandatory  |
+|  15032  |  PKI record type error  |  Certificate type unknown  |
+|  15034  |  Private and Public key incompatible  |  Public and private keys incompatible  |
+|  15035  |  CA Certificate not found  |  Root authority certificate cannot be found  |
+|  15036  |  Signature check failed  |  Signature invalid  |
+| 15038  | PKI record conflict: existing entity  | Cannot insert/modify the certificate (User, Root, Inter, or Other type), because there is already an entity using the same ID in the PKI database  |
+| 15039  | PKI record conflict: existing certificate  | Cannot insert/modify the entity, because there is already a certificate using the same ID in the PKI database  |
+|  15099  |  Format not yet supported  |  Certificate type not supported  |
+
 
  

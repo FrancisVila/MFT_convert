@@ -11,37 +11,14 @@ defines the interaction between two PeSIT end users.
 
 Four types of service primitives implement this interaction:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Primitive         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Notation         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Request</p>         </td>
-         <td><p>REQ</p>         </td>
-         <td><p>Request a given service</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Indication</p>         </td>
-         <td><p>IND</p>         </td>
-         <td><p>Notify the arrival of a service request</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Response</p>         </td>
-         <td><p>RSP</p>         </td>
-         <td><p>Answer a request</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Confirmation</p>         </td>
-         <td><p>CNF</p>         </td>
-         <td><p>Confirm the arrival of a response to a previous request</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Primitive  | Notation  | Description  |
+| --- | --- | --- |
+|  Request  |  REQ  |  Request a given service  |
+|  Indication  |  IND  |  Notify the arrival of a service request  |
+|  Response  |  RSP  |  Answer a request  |
+|  Confirmation  |  CNF  |  Confirm the arrival of a response to a previous request  |
+
 
 At the very minimum, a service involves a request submitted by a user
 and its corresponding indication to the partner. Some services also require
@@ -59,7 +36,7 @@ between Initiator and Responder during file transmission.
 <table>
    <thead>
       <tr>
-<th colspan="4" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Sending a file         </th>
+<th colspan="4" >Sending a file         </th>
       </tr>
    </thead>
    <tbody>
@@ -296,7 +273,7 @@ between Initiator and Responder during file reception.
 <table>
    <thead>
       <tr>
-<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Receiving a file         </th>
+<th colspan="3" >Receiving a file         </th>
       </tr>
    </thead>
    <tbody>
@@ -461,7 +438,7 @@ between Initiator and Responder during message transmission.
 <table>
    <thead>
       <tr>
-<th colspan="3" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Sending a message         </th>
+<th colspan="3" >Sending a message         </th>
       </tr>
    </thead>
    <tbody>

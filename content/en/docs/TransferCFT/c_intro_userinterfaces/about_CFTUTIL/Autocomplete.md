@@ -34,64 +34,22 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
 
 The CFTUTIL utility uses the following keys as shortcuts when entering a command.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Key</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Action</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Left Arrow</p>         </td>
-         <td><p>Move the cursor one character to the left.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Right Arrow</p>         </td>
-         <td><p>Move the cursor one character to the right.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Ctrl + Left Arrow</p>         </td>
-         <td><p>Move the cursor one word to the left.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Ctrl + Right Arrow</p>         </td>
-         <td><p>Move the cursor one word to the right.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Home</p>         </td>
-         <td><p>Move the cursor to the first character of the command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>End</p>         </td>
-         <td><p>Move the cursor after the last character of the command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Del</p>         </td>
-         <td><p>Remove the character at the cursor position.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Backspace</p>         </td>
-         <td><p>Remove the character before the cursor.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Insert</p>         </td>
-         <td><p>Switch between insertion and replace mode.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Escape</p>         </td>
-         <td><p>Erase the command (Windows only).</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Enter</p>         </td>
-         <td><p>Submit the command.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Ctrl + C</p>         </td>
-         <td><p>CFTUTIL hard exit (not recommended).</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Key  |  Action  |
+| --- | --- |
+|  Left Arrow  |  Move the cursor one character to the left.  |
+|  Right Arrow  |  Move the cursor one character to the right.  |
+|  Ctrl + Left Arrow  |  Move the cursor one word to the left.  |
+|  Ctrl + Right Arrow  |  Move the cursor one word to the right.  |
+|  Home  |  Move the cursor to the first character of the command.  |
+|  End  |  Move the cursor after the last character of the command.  |
+|  Del  |  Remove the character at the cursor position.  |
+|  Backspace  |  Remove the character before the cursor.  |
+|  Insert  |  Switch between insertion and replace mode.  |
+|  Escape  |  Erase the command (Windows only).  |
+|  Enter  |  Submit the command.  |
+|  Ctrl + C  |  CFTUTIL hard exit (not recommended).  |
+
 
 <span id="Auto-com"></span>
 
@@ -133,9 +91,6 @@ To display UCONF parameters, from `ID=` the autocomplete works by completing cat
 The CFTUTIL `CHECK `command validates the coherence of parameters, partners, and the Transfer CFT PKI database.
 
 The syntax is:
-
-
-    CHECK CONTENT=BRIEF|FULL, FOUT=FileName
 
 The `CHECK CONTENT=BRIEF` (default) command verifies that:
 
@@ -182,35 +137,13 @@ To retrieve a command you know, begin by typing the first characters of the comm
 
 Use the following uconf parameters to manage the command-history settings.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default value</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cft.readline.history_size</p>         </td>
-         <td><p>500</p>         </td>
-         <td><p>Maximum number of commands that you can store.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.readline.enable</p>         </td>
-         <td><p>Yes</p>         </td>
-         <td><p>Save and retrieve the commands from disk.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>cft.readline.history_fname</p>         </td>
-         <td><ul>
-<li>Win: %APPDATA%\cft\CftutilHistory.txt</li>
-<li>Unix: $(HOME)/.cft_history</li>
-</ul>         </td>
-         <td><p>Name of the file containing the command history.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Default value  |  Description  |
+| --- | --- | --- |
+|  cft.readline.history_size  |  500  |  Maximum number of commands that you can store.  |
+|  cft.readline.enable  |  Yes  |  Save and retrieve the commands from disk.  |
+|  cft.readline.history_fname  |  <li>Win: %APPDATA%\cft\CftutilHistory.txt<br/> • Unix: $(HOME)/.cft_history</li>  |  Name of the file containing the command history.  |
+
 
 <span id="Modify"></span>
 

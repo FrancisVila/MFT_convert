@@ -82,45 +82,6 @@ NFS implements a weak data consistency called "Close To Open consistency" or `ct
 
 The following table summarizes the recommended NFSv4 mount options. Note that depending on the OS platform, only one of the three locking options should be available.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Correct option         </th>
-<th class="HeadD-Column1-Header1">Incorrect option         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>vers=4 (or nfsvers=4)         </td>
-         <td>not specified or value &lt;= 4         </td>
-      </tr>
-      <tr>
-         <td>hard (default)         </td>
-         <td>"soft" specified         </td>
-      </tr>
-      <tr>
-         <td>nointr (not the default)         </td>
-         <td>"intr" specified         </td>
-      </tr>
-      <tr>
-         <td>llock not specified         </td>
-         <td>"llock" specified         </td>
-      </tr>
-      <tr>
-         <td>lock (default)         </td>
-         <td>"nolock" specified         </td>
-      </tr>
-      <tr>
-         <td>local_lock=none (default)         </td>
-         <td>any other value specified         </td>
-      </tr>
-      <tr>
-         <td>cto (default)         </td>
-         <td>"nocto" specified         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="Synchronous_versus_asynchronous_option_..15"></span><span id="Synchronous_versus_asynchronous_option"></span>
 
 ### Synchronous versus asynchronous option
@@ -179,48 +140,14 @@ Enables replies to requests only after the changes have been committed to stable
 
 #### Synchronous / asynchronous option impact
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Client         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Server         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Internal data         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Transferable data         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Performance         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Sync         </td>
-         <td>Sync         </td>
-         <td>1         </td>
-         <td>1         </td>
-         <td>Low         </td>
-      </tr>
-      <tr>
-         <td>Sync         </td>
-         <td>Async         </td>
-         <td>2 (secure the NFS server)         </td>
-         <td>2 (secure the NFS server)         </td>
-         <td>Medium         </td>
-      </tr>
-      <tr>
-         <td>Async         </td>
-         <td>Sync         </td>
-         <td>1 (if cft.server.catalog.<br />
-sync.enable=Yes)         </td>
-         <td>1 (when using sync points)         </td>
-         <td>Medium - high         </td>
-      </tr>
-      <tr>
-         <td>Async         </td>
-         <td>Async         </td>
-         <td>3         </td>
-         <td>3         </td>
-         <td>High         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Client  | Server  | Internal data  | Transferable data  | Performance  |
+| --- | --- | --- | --- | --- |
+| Sync  | Sync  | 1  | 1  | Low  |
+| Sync  | Async  | 2 (secure the NFS server)  | 2 (secure the NFS server)  | Medium  |
+| Async  | Sync  | 1 (if cft.server.catalog.<br /> sync.enable=Yes)  | 1 (when using sync points)  | Medium - high  |
+| Async  | Async  | 3  | 3  | High  |
+
 
 Legend:
 

@@ -18,57 +18,18 @@ messages are also written in the log file. This is a subset of the {{< TransferC
 defined by the algebraic sum of the values indicated in the following
 table.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Message category         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Type         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1 </p>         </td>
-         <td><p>Operating information messages </p>         </td>
-         <td><p>I </p>         </td>
-      </tr>
-      <tr>
-         <td><p>2 </p>         </td>
-         <td><p>System information messages </p>         </td>
-         <td><p>I </p>         </td>
-      </tr>
-      <tr>
-         <td><p>4 </p>         </td>
-         <td><p>Operating warning messages </p>         </td>
-         <td><p>W </p>         </td>
-      </tr>
-      <tr>
-         <td><p>8 </p>         </td>
-         <td><p>System warning messages </p>         </td>
-         <td><p>W </p>         </td>
-      </tr>
-      <tr>
-         <td><p>16 </p>         </td>
-         <td><p>Operating error messages </p>         </td>
-         <td><p>E </p>         </td>
-      </tr>
-      <tr>
-         <td><p>32 </p>         </td>
-         <td><p>System error messages </p>         </td>
-         <td><p>E </p>         </td>
-      </tr>
-      <tr>
-         <td><p>64 </p>         </td>
-         <td><p>Operating fatal error messages </p>         </td>
-         <td><p>F </p>         </td>
-      </tr>
-      <tr>
-         <td><p>128 </p>         </td>
-         <td><p>System fatal error messages </p>         </td>
-         <td><p>F </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Value  | Message category  | Type  |
+| --- | --- | --- |
+|  1  |  Operating information messages  |  I  |
+|  2  |  System information messages  |  I  |
+|  4  |  Operating warning messages  |  W  |
+|  8  |  System warning messages  |  W  |
+|  16  |  Operating error messages  |  E  |
+|  32  |  System error messages  |  E  |
+|  64  |  Operating fatal error messages  |  F  |
+|  128  |  System fatal error messages  |  F  |
+
 
 The I, W, E, F types correspond to the type of message indicated in
 the log file. Refer to the {{< TransferCFT/componentshortname  >}} <a href="../../../../troubleshoot_intro/messages_and_error_codes_start_here" class="MCXref xref">Transfer CFT messages
@@ -79,31 +40,13 @@ The value "0" means that no message is sent to the operator.
 The following table indicates, for each system, the default values of
 the OPERMSG parameter.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>OS </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value for OPERMSG </p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>MVS (z/OS)</p>         </td>
-         <td><p>0 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>OS400 </p>         </td>
-         <td><p>0 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX </p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Windows</p>         </td>
-         <td><p>0</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  OS  |  Default value for OPERMSG  |
+| --- | --- |
+|  MVS (z/OS)  |  0  |
+|  OS400  |  0  |
+|  UNIX  |  0  |
+|  Windows  |  0  |
+
 
 [Return to Command index](../../)

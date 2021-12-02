@@ -11,9 +11,9 @@ The A05ALL JCL automatically runs the following members.
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Step         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Member         </th>
+<th >Step         </th>
+<th >Description         </th>
+<th >Member         </th>
       </tr>
    </thead>
    <tbody>

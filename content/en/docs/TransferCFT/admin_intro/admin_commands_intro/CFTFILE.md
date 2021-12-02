@@ -38,95 +38,31 @@ FNAME, the name of the file
 to be deleted, and TYPE, the
 type of the file to be deleted.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">OS         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>IBM i</p>         </td>
-         <td><p>The CFTFILE command is incorporated in Transfer CFT IBM i
-Manager. It can, however, be activated directly in the log file switching
-procedures. See the example supplied in the B_EXECLOG member.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| OS  | Description  |
+| --- | --- |
+|  IBM i  |  The CFTFILE command is incorporated in Transfer CFT IBM i Manager. It can, however, be activated directly in the log file switching procedures. See the example supplied in the B_EXECLOG member.  |
+
 
 You can use the [CFTCATAL](../../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities) utility to resize the catalog. In a multi-node environment, this action resizes all nodes.
 
 Use the CFTFILE command to create (MODE = CREATE) empty or delete (MODE
 = DELETE) Transfer CFT files.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize">FBLKSIZE</a></p>
-<p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize">see table</a></p>         </td>
-         <td><p>Defines the block size of the file to be created (in bytes).</p>
-<p>Depends on the TYPE/OS</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fname">FNAME</a> </p>         </td>
-         <td><p>Name of the file the command applies to.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace">FSPACE</a></p>
-<p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace">see
-table</a></p>         </td>
-         <td><p>Primary allocation of the file to be created, expressed
-in K bytes (1024).</p>
-<p>Depends on the TYPE/OS</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex">FSPACEX</a></p>
-<p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex">see table</a></p>         </td>
-         <td><p>Secondary allocation of the file to be created, expressed
-in K bytes (1024).</p>
-<p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/habfname">HABFNAME</a></p>         </td>
-         <td><p>Name of the security system initialization file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>LOCK</p>
-<p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a>
-= COM</p>         </td>
-         <td><p>Name of the lock file created in parallel with the communication
-file and used to manage file access conflicts.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a></p>         </td>
-         <td><p>Action requested on the file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>NODE</p>         </td>
-         <td><p>Node identifier.</p>
-<p>Available when TYPE=CAT</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> </p>
-<p>TYPE = {COM | CAT}</p>         </td>
-         <td><p>Number of records in the file.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> =
-{ACCNT | CAT | COM | LOG | PARM (PARMA) | PART}</p>         </td>
-         <td><p>Type of file concerned by the command.</p>
-<p>When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME
-parameter for security.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize">FBLKSIZE</a><br/><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize">see table</a>  |  Defines the block size of the file to be created (in bytes).<br/>Depends on the TYPE/OS  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fname">FNAME</a>  |  Name of the file the command applies to.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace">FSPACE</a><br/><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspace">see table</a>  |  Primary allocation of the file to be created, expressed in K bytes (1024).<br/>Depends on the TYPE/OS  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex">FSPACEX</a><br/><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/fspacex">see table</a>  |  Secondary allocation of the file to be created, expressed in K bytes (1024).<br/>  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/habfname">HABFNAME</a>  |  Name of the security system initialization file.  |
+|  LOCK<br/><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = COM  |  Name of the lock file created in parallel with the communication file and used to manage file access conflicts.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/mode">MODE</a>  |  Action requested on the file.  |
+|  NODE  |  Node identifier.<br/>Available when TYPE=CAT  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/recnb">RECNB</a> <br/>TYPE = {COM | CAT}  |  Number of records in the file.  |
+|  <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/type">TYPE</a> = {ACCNT | CAT | COM | LOG | PARM (PARMA) | PART}  |  Type of file concerned by the command.<br/>When TYPE = CAT, COM, PARM or PART, you can use the HABFNAME parameter for security.  |
+
 
 **Syntax**
 
@@ -219,9 +155,3 @@ parameter for security.</p>         </td>
 Example
 
 The following command creates a parameter file.
-
-
-    CFTFILE    TYPE 
-     = PARM,
-    MODE = CREATE,
-    FNAME = filename

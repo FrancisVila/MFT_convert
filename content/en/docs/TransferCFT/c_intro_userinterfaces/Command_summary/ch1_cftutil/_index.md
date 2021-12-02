@@ -17,9 +17,6 @@ An internal command or application consists of the following:
 
 The general command syntax is:
 
-
-    <list_of_arguments>
-
 An argument consists of the following elements:
 
 -   A keyword that is unique for the command, and which identifies a parameter (id).
@@ -27,22 +24,9 @@ An argument consists of the following elements:
 
 The syntax of an argument is:
 
-
-    <id> = <value>
-
 Separate two arguments by a, (comma). The command syntax becomes:
 
-
-
-    [<id> = <value>,] *<id> = <value>
-     The expression in brackets is repeated.
-
 The syntax for a parameter value results from the parameter type. A parameter can accept more than one value at a time. Set the multiple values in brackets and separate the values by a , (comma).
-
-
-
-    <id> = ([<value>,] * <value>)
-     The expression in brackets is repeated.
 
 ### Parameter type
 
@@ -63,46 +47,25 @@ Demarcation is required when the value should contain blanks or commas. A charac
 -   /ooo o represents an octal character. For example, in ASCII, the character A (code 65) can be written /101. A blank is written /040.
 -   /xhh h is a hexadecimal character. For example, in ASCII, the character A (code 65) is written /x41.
 
-
-
-    id = 'VALUE WITH BLANKS'
-    id = 'V/x41LUE WITH BL/101NKS'
-
 These two expressions are equivalent.
 
 To enter the characters ' (apostrophe) or / (slash), precede these with the / character. This results respectively in / 'and / /.
-
-
-
-    id = 'J /' APOSTROPHE '
 
 ### Hexadecimal
 
 A value may consist of any character hexadecimal (0-9, A-F, a-f).
 
-
-    id = 0123456789ABCDEFabcdef
-
 ### Numeric
 
 A value may consist of any numeric character (0-9).
-
-
-    id = 0123456789
 
 ### Binary
 
 A value may consist of any binary character (0-1).
 
-
-    id = 0110010100
-
 ### Select
 
 The value must belong to a predefined list such as, a parameter whose possible values ​​are 'YES' or 'NO'.
-
-
-    id = YES
 
 ## Analyzing the source text
 

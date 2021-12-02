@@ -31,48 +31,9 @@ This example demonstrates 3 waiting transfer requests, which execute sequentiall
 
 The DONE (X) phase is reached when the post-processing has completed, or once the transfer is finished if no post-processing exists.
 
-
-
-    SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=A
-    SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=B
-    SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=C
-     
-    Results 
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-    CFTT58I Requester transfer ended     <IDTU=<tr> PART=PARIS IDF=BIN 
-     CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
-     
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-    CFTT58I Requester transfer ended     <IDTU=<tr> PART=PARIS IDF=B 
-     CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
-     
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-    CFTT58I Requester transfer ended     <IDTU=  <tr> PART=PARIS IDF=BIN
-     CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
-
 **Example 2**
 
 In this example, a serialized transfer can start as soon as the post-processing of the preceding transfer begins, as opposed to waiting for it to complete as in Example 1.
-
-
-
-    SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=A
-    SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=B
-    SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=C
-     
-    Results 
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-    CFTT58I Requester transfer ended     <IDTU=<tr> PART=PARIS IDF=BIN 
-     
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-     CFTR12I END [for transfer A] Treated for USER <my user> <PART=PARIS IDF=BIN  >
-    CFTT58I Requester transfer ended     <IDTU=<tr> PART=PARIS IDF=B 
-     
-    CFTT57I Requester transfer started   <IDTU=<tr> PART=PARIS IDF=BIN 
-     CFTR12I END [for transfer B] Treated for USER <my user> <PART=PARIS IDF=BIN  >
-    CFTT58I Requester transfer ended     <IDTU=  <tr> PART=PARIS IDF=BIN
-     
-     CFTR12I END [for transfer C] Treated for USER <my user> <PART=PARIS IDF=BIN  >
 
 > **Note:**
 >
@@ -84,28 +45,6 @@ In this example, serialized transfers between a Transfer CFT and a remote PeSIT 
 
 -   The first transfer recorded in the catalog executes first, in this example transfer A.
 -   The DONE (X) phase is reached once transfer A is acknowledged.
-
-<!-- -->
-
-
-
-    SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=A, ACKSTATE=REQUIRE
-    SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=B, ACKSTATE=REQUIRE
-    SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=C, ACKSTATE=REQUIRE
-     
-    Results
-
-    CFTT57I Requester transfer started <IDTU=<tr> PART=RS43 IDF=BIN
-    CFTT58I Requester transfer ended <IDTU=<tr> PART=RS43 IDF=BIN
-    CFTT59I Server    reply    transferred <IDT=<IDT transfer A> PART=RS43 IDM=BIN
-     
-    CFTT57I Requester transfer started <IDTU=<tr> PART=RS43 IDF=BIN
-    CFTT58I Requester transfer ended <IDTU=<tr> PART=RS43 IDF=B
-    CFTT59I Server    reply    transferred <IDT=<IDT transfer B> PART=RS43 IDM=BIN
-     
-    CFTT57I Requester transfer started <IDTU=<tr> PART=RS43 IDF=BIN
-    CFTT58I Requester transfer ended <IDTU= <tr> PART=RS43 IDF=BIN
-    CFTT59I Server    reply    transferred <IDT=<IDT transfer C> PART=RS43 IDM=BIN
 
 ### Using serialization in multi-node architecture
 

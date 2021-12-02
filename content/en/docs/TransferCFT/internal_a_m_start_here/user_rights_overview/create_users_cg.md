@@ -20,61 +20,14 @@ For users that have not yet implemented {{< TransferCFT/centralgovernancename  >
 
 The following parameters are now managed in {{< TransferCFT/centralgovernancename  >}}. This table maps the existing {{< TransferCFT/componentlongname  >}} defaults and values.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG field         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG values         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CFTUTIL parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>User for file
-access         </td>
-         <td><u>Transfer CFT system
-account</u> | USERID
-variable         </td>
-         <td>CFTPARM - USERCTRL = <u>NO</u> |
-YES         </td>
-         <td>Specifies the account that is used to
-read/write transferred files.         </td>
-      </tr>
-      <tr>
-         <td>User for
-script
-execution         </td>
-         <td><u>Transfer CFT system
-account</u> | USERID
-variable         </td>
-         <td>UCONF - cft.server.exec_as_
-user =  <u>NO</u> | YES         </td>
-         <td>Specifies the account that is used to
-execute scripts.
-This parameter is not supported on
-Transfer CFTs running on z/OS and IBM i
-systems.         </td>
-      </tr>
-      <tr>
-         <td>Check permission
-for transfer
-execution         </td>
-         <td>YES | <u>NO</u>         </td>
-         <td>am.passport.userctrl.check_
-permissions_on_transfer_
-execution         </td>
-         <td>Checks whether the user has
-permissions to execute transfers.         </td>
-      </tr>
-      <tr>
-         <td>Create process as user         </td>
-         <td>YES | <u>NO</u>         </td>
-         <td>copilot.misc.createprocessasuser         </td>
-         <td>Specifies whether Transfer CFT Copilot user must have system rights.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| CG field  | CG values  | CFTUTIL parameter  | Description  |
+| --- | --- | --- | --- |
+| User for file access  | <u>Transfer CFT system account</u> | USERID variable  | CFTPARM - USERCTRL = <u>NO</u> | YES  | Specifies the account that is used to read/write transferred files.  |
+| User for script execution  | <u>Transfer CFT system account</u> | USERID variable  | UCONF - cft.server.exec_as_ user = <u>NO</u> | YES  | Specifies the account that is used to execute scripts. This parameter is not supported on Transfer CFTs running on z/OS and IBM i systems.  |
+| Check permission for transfer execution  | YES | <u>NO</u>  | am.passport.userctrl.check_ permissions_on_transfer_ execution  | Checks whether the user has permissions to execute transfers.  |
+| Create process as user  | YES | <u>NO</u>  | copilot.misc.createprocessasuser  | Specifies whether Transfer CFT Copilot user must have system rights.  |
+
 
 Related topics
 

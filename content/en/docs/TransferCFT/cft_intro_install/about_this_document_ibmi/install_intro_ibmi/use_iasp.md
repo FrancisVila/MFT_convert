@@ -13,21 +13,8 @@ In a single system environment, you can take an independent ASP offline independ
 You can use the following commands to manage IASP:
 
 -   To start or stop an IASP, use the command:  
-
-
-        WRKDEVD
-
 -   To activate an environment, use the command:  
-
-
-
-        SETASPGRP (ex: ‘SETASPGRP ASPGRP(IASP1)’)
-
 -   To disable an environment, use the command:  
-
-
-
-        SETASPGRP ASPGRP(*NONE)
 
 ## Use an IASP in a Transfer CFT environment
 

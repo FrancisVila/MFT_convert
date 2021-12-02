@@ -39,57 +39,15 @@ This example shows a broadcast store and forward from the initiator A to relay B
 
 On the initiating site A, define:
 
-
-
-    cftpart id=cd, nspart=a, ipart=b, omintime=0, omaxtime=0,prot=pesitssl
-    cftpart id=b,nspart=a,prot=pesitssl,sap=1762
-    cfttcp id=b,host=@B
-
 Set up the intermediate partner B as follows:
-
-
-
-    cftpart id=a,nspart=b,prot=pesitssl,sap=1762
-    cfttcp id=a,host=@A
-     
-    cftpart id=c,nspart=b,prot=pesitssl,sap=31762
-    cfttcp id=c,host=@C
-     
-    cftpart id=d,nspart=b,prot=pesitssl,sap=1762
-    cfttcp id=d,host=@D
-     
-    cftdest id=cd,part=(c,d),for=commut
-     
-    cftappl  id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT. 
 
 Execute the following partner C definition:
 
-
-
-    cftpart id=b,nspart=c,prot=pesitssl,sap=1762
-    cfttcp id=b,host= @B
-    cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
-     
-    cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
-
 Execute the following partner D definition:
-
-
-
-    cftpart id=b,nspart=d,prot=pesitssl,sap=1762
-    cfttcp id=b,host=@B
-     cftrecv id=broadcast,fname=pub/broadcast.rcv,faction=delete
-     
-    cftpart id=a,nspart=c, ipart=b, omintime=0, omaxtime=0,prot=pesitssl,sap=1762
-     
 
 Testing the use case
 
 From the initiator site A, execute:
-
-
-
-    send part=cd,idf=broadcast,fname=pub/FTEST
 
 ## Broadcast list acknowledgements
 

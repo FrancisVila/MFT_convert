@@ -29,10 +29,10 @@ If you do not enclose this value in "", the string is interpreted as: `CryptoKey
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Automatic or default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">UCONF          </th>
+<th >Parameter         </th>
+<th >Automatic or default         </th>
+<th >Description         </th>
+<th >UCONF          </th>
       </tr>
    </thead>
    <tbody>

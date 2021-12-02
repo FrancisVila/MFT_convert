@@ -6,20 +6,11 @@
 
 The data set SMPCNTL contains the following model job for receiving SMP/E PTFs.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>$C10RECV         </td>
-         <td><p>UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Member Name  | Description  |
+| --- | --- |
+| $C10RECV  |  UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.  |
+
 
 1.  Create a new USS subdirectory to receive the maintenance package. The name and path are defined in the $C10RECV JCL (FROMNTS is the new package subdirectory, and SMPNTS DD PATH designates the path prefix).
 2.  Use FTP in binary mode to download the pax.Z archive file of the appropriate PTF to this new package subdirectory. The name of the pax.Z archive file is defined in the $C10RECV JCL (STEP UNPAX: pax command).
@@ -34,20 +25,11 @@ The SMPCNTL data set contains the following model job for the SMP/E PTFs mainten
 
 Submit the job described in the table below.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>$C30PAPP         </td>
-         <td>Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Member Name  | Description  |
+| --- | --- |
+| $C30PAPP  | Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.  |
+
 
 If the $C30PAPP return code is a zero or a 4, edit $C30PAPP, remove the CHECK command, and resubmit the job.
 
@@ -63,24 +45,12 @@ These messages are normal; you can ignore them.
 
 The following table lists additional sample jobs.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>$C30PREM         </td>
-         <td>Performs a RESTORE (to remove) for the PTF elements from the target zone.         </td>
-      </tr>
-      <tr>
-         <td>$C60PACC         </td>
-         <td>Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Member Name  | Description  |
+| --- | --- |
+| $C30PREM  | Performs a RESTORE (to remove) for the PTF elements from the target zone.  |
+| $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
+
 
 ## Update the Transfer CFT instance with the maintenance identifier
 
@@ -88,25 +58,10 @@ Edit the sample jobs listed in the table below, modifying as necessary.
 
 The Transfer CFT instance data set INSTALL contains the following model jobs for Transfer CFT SMP/E maintenance.  
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Member Name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>A13SMPE</p>         </td>
-         <td><p>Applies maintenance to the Transfer CFT product instance.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>A13UCOP</p>         </td>
-         <td><p>Applies maintenance to Copilot.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>A13UXSR</p>         </td>
-         <td><p>Applies maintenance to the Secure Relay Master Agent.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Member Name  | Description  |
+| --- | --- |
+|  A13SMPE  |  Applies maintenance to the Transfer CFT product instance.  |
+|  A13UCOP  |  Applies maintenance to Copilot.  |
+|  A13UXSR  |  Applies maintenance to the Secure Relay Master Agent.  |
+

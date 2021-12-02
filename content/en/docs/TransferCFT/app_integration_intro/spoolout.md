@@ -14,45 +14,14 @@ To enable the renaming option for a given flow (CFTRECV) set FACTION to RETRYRE
 
 **Example**
 
-
-    CFTRECV ID=SPOOLOUT, WFNAME=pub/&IDTU.TMP,
-    FNAME=pub/MYFILE,
-    FACTION=RETRYRENAME
-
 Use the following uconf parameters to customize the retry mechanism.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Value         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.transfer.rrename.retry_delay         </td>
-         <td>60 seconds         </td>
-         <td>1-65535         </td>
-         <td><p>Delay in seconds between two retries for renaming.</p>
-<p>If the file is not successfully renamed after the first retry_delay, the time is compounded so that the next retry occurs at the retry time added to the number of tries multiplied by the retry value.</p>
-<p>The time of the next retry = D + D * (R-1)</p>
-<p>Where:</p>
-<ul>
-<li>D is the retry_delay</li>
-<li>R is the number of retries</li>
-</ul>
-<p>For example, if the file is not renamed after 60 seconds (default value), the next retry occurs in 120 seconds, and the following one in 180 seconds, etc.</p>         </td>
-      </tr>
-      <tr>
-         <td>cft.server.transfer.rrename.max_retries         </td>
-         <td>10         </td>
-         <td>1-65535         </td>
-         <td>Maximum number of retries.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Value  | Description  |
+| --- | --- | --- | --- |
+| cft.server.transfer.rrename.retry_delay  | 60 seconds  | 1-65535  |  Delay in seconds between two retries for renaming.<br/>If the file is not successfully renamed after the first retry_delay, the time is compounded so that the next retry occurs at the retry time added to the number of tries multiplied by the retry value.<br/>The time of the next retry = D + D * (R-1)<br/>Where:<br/> • D is the retry_delay<br/> • R is the number of retries<br/>For example, if the file is not renamed after 60 seconds (default value), the next retry occurs in 120 seconds, and the following one in 180 seconds, etc.  |
+| cft.server.transfer.rrename.max_retries  | 10  | 1-65535  | Maximum number of retries.  |
+
 
 ### Monitoring
 
@@ -99,61 +68,19 @@ This example combines the use of the serialization with the rename/retry mechani
 
 Create a sender side model:
 
-
-    CFTSEND id=DailyReports, serial=X, ackstate=require 
-
 Create a receiver side model:
-
-
-    CFTRECV id=DailyReport, faction=retryrename, wfname=pub/&idtu.tmp, fname=pub/MyReport, exec=exec/
-    myreport.cmd 
 
 #### Define post-processing
 
 Post-processing should include an acknowledgement so that the next queued transfer request is triggered. Additionally, your post-processing script can include, for example, a message to indicate that the file has been received and renamed, and is ready to be consumed by the target application.
 
-
-
-    end part=&part,idt=&idt,istate=yes,diagc='READY TO CONSUME' 
-    send part=&part,idm=ACK,idt=&idt,type=reply,msg='&fname ready to consume by target application'
-    ...[at this point the file is consumed by the target application]...
-    end part=&part,idt=&idt,istate=no,diagc='FILE CONSUMED'
-
 #### Enter command to send files
-
-
-
-    send part=paris, idf=dailyreport, ida=report1 
-    send part=paris, idf=dailyreport, ida=report2
-    send part=paris, idf=dailyreport, ida=report3
 
 #### Check output files
 
 Sender side
 
-
-
-    17/01/26 18:01:43.31  CFTR12I SEND Treated for USER \dupont  <IDTU=A000002C PART=PARIS IDF=DAILYREPORT>
-    17/01/26 18:01:43.37  CFTR12I SEND Treated for USER \dupont  <IDTU=A000002D PART=PARIS IDF=DAILYREPORT>
-    17/01/26 18:01:43.37  CFTR12I SEND Treated for USER \dupont  <IDTU=A000002E PART=PARIS IDF=DAILYREPORT>
-    17/01/26 18:01:43.43  CFTT57I Requester transfer started   <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014 >
-    17/01/26 18:01:43.43  CFTT58I Requester transfer ended     <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014>
-    17/01/26 18:01:44.38  CFTT59I Server    reply    transferred <IDTU=00000000 PART=PARIS IDM=DAILYREPORT IDT=A2618014>
-    17/01/26 18:01:44.40  CFTT57I Requester transfer started   <IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 >
-    ... (etc. for each transfer)
-
 Receiver side
-
-
-
-    17/01/26 18:01:43.43  CFTT57I Server    transfer started   <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 >
-    17/01/26 18:01:43.43  CFTT58I Server    transfer ended     <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014>
-    17/01/26 18:01:43.43  CFTT88I+<IDTU=A000002C WORKINGDIR= WFNAME=pub/FTEST NBC=7104>
-    17/01/27 18:01:43.43  CFTF33I Rename to FNAME=pub/myreport done <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT= A2618014>
-    17/01/26 18:01:43.45  CFTS03I _ exec/myreport.cmd executed <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014> (0.013008 sec)
-    17/01/26 18:01:44.37  CFTR12I END Treated for USER \dupont : DIAGC value was "" and is now "READY TO CONSUME"
-    17/01/26 18:01:44.38  CFTH60I reply  transferred <PART=NEWYORK IDS=00005 IDM=DAILYREPORT NIDT=2618014>
-    17/01/26 18:01:44.40  CFTT57I Server    transfer started   <IDTU=A000002H PART=NEWYORK IDF=DAILYREPORT IDT=A2618015 >
 
 ## Troubleshooting
 

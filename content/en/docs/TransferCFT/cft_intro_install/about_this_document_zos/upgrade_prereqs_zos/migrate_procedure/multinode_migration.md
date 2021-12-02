@@ -10,31 +10,6 @@ The MIGRCAT procedure migrates one catalog file at a time. The procedure must be
 
 Customize the PMIGR2 step of the JCL MIGRCAT as follows, where you define RECNB, NODE, OLDFIL, TMPFIL and NEWFIL, replacing with the node number.
 
-
-
-    //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
-
-    //     OUT=&OUT,
-    //     UNIT=&CFTUNIT,
-    //     CFTLOAD=&CFTLOAD,
-    //     OLDEXEC=&OLDEXEC,
-    //     SPACE=&SEP&TMPSCAT&SEP,
-    //     SER='DK231F',
-    //     SPACE=&SEP&TMPSCAT&SEP,
-
-
-    //     , => Source CATALOG node 0X       
-
-    //     ,   => Temporary file (size defined by &TMPSCAT)
-
-    //     , => Target CATALOG node 0X    
-
-    //     ,               => Target CATALOG records number (to be customized)
-
-    //     DISPFIL=&DISPCAT,
-    //     HABFNAME='NO'
-     
-
 Submit the procedure `..INSTALL(MIGRCAT)`
 
 ## Migrate the communication media files
@@ -44,22 +19,6 @@ The MIGRCOM procedure migrates one media file at a time. The procedure must ther
 ### Migrate the main communication media file
 
 Customize the PMIGR2 step of the MIGRCOM procedure and set the variables RECNB, OLDFIL, TMPFIL and NEWFIL as follows:
-
-
-
-    //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
-    //     OUT=&OUT, 
-    //     UNIT=&CFTUNIT,
-    //     CFTLOAD=&CFTLOAD, 
-    //     OLDEXEC=&OLDEXEC,
-    //     SPACE=&SEP&TMPSCOM&SEP, 
-    //     SER='DK231F', 
-    //     OLDFIL=Source.COM,   => Source MAIN COM 
-    //     TMPFIL=Prefix.WORK.COM,     => Temporary file (size defined by &TMPSCOM)
-    //     NEWFIL=Target.COM,   => Target MAIN COM  
-    //     RECNB=5000,          => Target MAIN COM records number (to be customized)
-    //     DISPFIL=&DISPCOM,
-    //     HABFNAME='NO'
 
 Submit the procedure ..INSTALL(MIGRCOM).
 
@@ -71,22 +30,6 @@ Customize the PMIGR2 parameters in the JCL MIGRCOM:
 
 Define the variables RECNB, OLDFIL, TMPFIL and NEWFIL. Replace with the node number.
 
-
-
-    //PMIGR2  EXEC PMIGR2,XEXPORT=&XEXPORT,
-    //     OUT=&OUT,
-    //     UNIT=&CFTUNIT,
-    //     CFTLOAD=&CFTLOAD,
-    //     OLDEXEC=&OLDEXEC,
-    //     SPACE=&SEP&TMPSCOM&SEP,
-    //     SER='DK231F',
-    //     OLDFIL=Source.COM.N0,  => Source COM node         
-    //     TMPFIL=Prefix.WORK.MCOM.N0X, => Temporary file (size defined by &TMPSCOM)  
-    //     NEWFIL=Target.COM.N0X,  => Target COM node 
-    //     RECNB=5000,             => Target COM node  records number (to be customized)
-    //     DISPFIL=&DISPCOM,
-    //     HABFNAME='NO'
-
 Submit the procedure ..INSTALL(MIGRCOM).
 
 ## Customize the JCL ..INSTALL (MNRMON)
@@ -96,6 +39,3 @@ Set the Transfer CFT submission option, by STC or JCL, as for the source instan
 ## Customize the procedure ..INSTALL(PCFTUTIL)and INCLUDE(CFTINC)
 
 Comment the following lines:
-
-
-    //*CFTCAT   DD  DISP=SHR,//*             DSN=&QUAL..CATALOG

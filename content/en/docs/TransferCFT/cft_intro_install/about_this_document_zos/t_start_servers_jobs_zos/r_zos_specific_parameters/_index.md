@@ -15,90 +15,30 @@ File characteristics that are found automatically for sending are listed in the 
 
 **File characteristics**
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Found automatically for sending         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>FSPACE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FLRECL</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FBLKSIZE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FRECFM</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>FTYPE</p>         </td>
-         <td><p>YES</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Found automatically for sending  |
+| --- | --- |
+|  FSPACE  |  YES  |
+|  FLRECL  |  YES  |
+|  FBLKSIZE  |  YES  |
+|  FRECFM  |  YES  |
+|  FTYPE  |  YES  |
+
 
 **FTYPE and FRECFM combinations for sending**
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type of file to be sent         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Implicit value of FTYPE         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Implicit value of FRECFMz         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Disk sequential files</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>F/V/U</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Members of PDS files (1 transfer per member)</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>F/V/U</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Designated version of a file in GDG</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>F/V/U</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Multivolume disk file</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>F/V/U</p>         </td>
-      </tr>
-      <tr>
-         <td><p>VSAM KSDS or ESDS file</p>         </td>
-         <td><p> </p>         </td>
-         <td><p>F/V</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Print file with ASA jump codes (z/OS to z/OS)</p>         </td>
-         <td><p>A</p>         </td>
-         <td><p>F/V/U</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Print file with machine jump codes (z/OS to z/OS)</p>         </td>
-         <td><p>M</p>         </td>
-         <td><p>F/V</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Spanned variable format file (z/OS to z/OS)</p>         </td>
-         <td><p>S</p>         </td>
-         <td><p>V</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Type of file to be sent  | Implicit value of FTYPE  | Implicit value of FRECFMz  |
+| --- | --- | --- |
+|  Disk sequential files  |   |  F/V/U  |
+|  Members of PDS files (1 transfer per member)  |   |  F/V/U  |
+|  Designated version of a file in GDG  |   |  F/V/U  |
+|  Multivolume disk file  |   |  F/V/U  |
+|  VSAM KSDS or ESDS file  |   |  F/V  |
+|  Print file with ASA jump codes (z/OS to z/OS)  |  A  |  F/V/U  |
+|  Print file with machine jump codes (z/OS to z/OS)  |  M  |  F/V  |
+|  Spanned variable format file (z/OS to z/OS)  |  S  |  V  |
+
 
 > **Note:**
 >
@@ -111,10 +51,10 @@ The PDS files copied by IEBCOPY are also received in the ‘U’ format, which i
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FORG         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FTYPE         </th>
-<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">FRECFM         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">  Type of receive file         </th>
+<th >FORG         </th>
+<th >FTYPE         </th>
+<th colspan="2" >FRECFM         </th>
+<th >  Type of receive file         </th>
       </tr>
    </thead>
    <tbody>

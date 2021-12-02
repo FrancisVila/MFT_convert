@@ -30,36 +30,13 @@ To use one of these other systems, set the `rpasswd/spasswd `to the` keyword _AU
 
 #### Server: static configuration
 
-
-
-    CFTRECV
-    id=idf01,
-    ruser=username01,
-    rpasswd=password01
-
 #### Client: user command
-
-
-
-    SEND part=server, idf=idf0, ruser=username01, rpasswd=password01
 
 ### Receiving a file from the server
 
 #### Server: static configuration
 
-
-
-    CFTSEND
-    id=idf01,
-    imply=yes,
-    fname=file01,
-    suser=username01,
-    spasswd=password01
-
 #### Client: user command  
-
-
-    RECV part=server, idf=idf01, suser=username01, spasswd=password01
 
 <span id="External"></span>
 
@@ -67,39 +44,15 @@ To use one of these other systems, set the `rpasswd/spasswd `to the` keyword _AU
 
 The file containing the passwords must have the format:
 
-
-
-    partner01 username01 password01
-    partner01 username02 password02
-    *         username01 password03
-    *         *          password04
-
 ### Sending a file to the server
 
 #### Server: static configuration
 
 ##### Unix
 
-
-
-    CFTRECV
-    id=idf01,
-    rpasswd=@passwfile
-
 ##### Windows
 
-
-
-    Windows
-    CFTRECV
-    id=idf01,
-    rpasswd=#passwfile
-
 #### Client: user command
-
-
-
-    SEND part=server, idf=idf01, ruser=username01, rpasswd=password01
 
 ### Receiving a file from the server
 
@@ -107,28 +60,9 @@ The file containing the passwords must have the format:
 
 ##### Unix
 
-
-
-    CFTSEND
-    id=idf01,
-    imply=yes,
-    fname=file01,
-    spasswd=@passwfile
-
 ##### Windows
 
-
-
-    CFTSEND
-    id=idf01,
-    imply=yes,
-    fname=file01,
-    spasswd=#passwfile
-
 #### Client: user command
-
-
-    RECV part=server, idf=idf01, suser=username01, spasswd=password01
 
 <span id="System"></span>
 
@@ -138,58 +72,13 @@ In addition to RPASSWD and SPASSWD you must specified the authentication method 
 
 The supported authentication methods are:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Authentication method         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">copilot.restapi.authentication_method         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Operating System         </td>
-         <td>system         </td>
-         <td><p>The user/password is checked against the operating system.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option.</p>
-</blockquote>
-<p><strong>Unix</strong></p>
-<p>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.</p>
-<ul>
-<li>Create a group "group1":</li>
-<li>Add user "user1" to group "group1":</li>
-</ul>
-<p><strong>Windows</strong></p>
-<p>You require a superuser (administrative user account) to create a group and assign a user to a group.</p>
-<ul>
-<li>Create a group "group1":</li>
-<li>Add user "user1" to group "group1":</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>For a user belonging to a domain, use: domain\user1 instead of user1</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>Access Management         </td>
-         <td>am         </td>
-         <td><p>This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>xfbadm database</p>
-<p>(UNIX and HP NonStop exclusively)</p>         </td>
-         <td>xfbadm         </td>
-         <td><p>The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).</p>
-<p>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory.</p>
-<ol>
-<li>Create a group "group1" with gid=200:</li>
-<li>From the user prompt, to add a user "user1" to group "group1"enter:</li>
-</ol>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Authentication method  | copilot.restapi.authentication_method  | Details  |
+| --- | --- | --- |
+| Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
+| Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.  |
+|  xfbadm database<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+
 
 <span id="REST"></span>REST API server authentication method
 
@@ -207,17 +96,7 @@ The supported authentication methods are:
 
 #### Server: static configuration
 
-
-
-    CFTRECV
-    id=idf01,
-    rpasswd=_AUTH_
-    uconfset id=cft.server.authentication_method, value=system
-
 #### Client: user command
-
-
-    SEND part=server, idf= idf01, ruser=username01, rpasswd=password01
 
 In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.
 
@@ -225,18 +104,6 @@ In this case, username01/password01 is compared with what is defined in `uconf: 
 
 #### Server: static configuration
 
-
-
-    CFTSEND
-    id=idf01,
-    imply=yes,
-    fname=file01,
-    spasswd=_AUTH_
-    uconfset id=cft.server.authentication_method, value=system
-
 #### Client: user command
-
-
-    RECV part=server, idf= idf01, suser=username01, spasswd=password01
 
 In this case, username01/password01 is compared with what is defined in `uconf: cft.server.authentication_method`.

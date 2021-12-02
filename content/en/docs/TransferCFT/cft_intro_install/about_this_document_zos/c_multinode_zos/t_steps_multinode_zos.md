@@ -22,40 +22,6 @@ The process consists of customizing the z/OS specific programs and members, chec
 >
 > To execute the multi-node customization you require administrator rights.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="HeadE-Column1-Header1" style="font-weight: bold; font-style: italic">Step         </th>
-<th style="text-align: left;" class="HeadD-Column1-Header1" style="font-weight: bold; font-style: italic">Task         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td><p>Customize <a href="../t_vipa_multinode_zos">VIPA</a> programs and execute the customized members, including the following tasks.</p>
-<p>For each LPAR:</p>
-<ul>
-<li>Enable the port sharing (to execute on each LPAR) - Share Listening port: (protocol port (e.g. PESIT and port PESIT SSL))</li>
-<li>Identified all ports (protocol ports) to share on the LPAR</li>
-<li>Define the LPAR dynamic XCF address (DYNAMICXCF)</li>
-</ul>
-<p>On the first LPAR</p>
-<ul>
-<li>Define the cluster address (VIPA)</li>
-<li>Define the port balancing between the LPAR</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Customize <a href="../t_mninit_multinode_zos">MNINIT</a>.         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td><p><a href="../t_submit_mninit_zos">Execute</a> the customized MNINIT.</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 > **Note:**
 >
 > Depending on the type of installation you are performing, a Transfer CFT CATALOG file may be created during installation. Additionally, files having the format CATALOG.Nxx (where Nxx represents the node identifier) are created by the MNINIT JCL. The CATALOG file without a suffix is not used, so you can delete this file (the one without the .Nxx suffix). We recommend that you comment the //CFTCAT DD cards in the JCL and procedures. For example, comment the cards in the PCFTUTIL procedure and CFTINC member.

@@ -17,43 +17,15 @@
 
 Transfer CFT delivers a sample source written in C language called `exacct.c` as well as a compilation procedure, which is system dependent:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">System         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File location         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Build command         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>UNIX         </td>
-         <td>&lt;install_dir&gt;/home/distrib/template/src/exit         </td>
-         <td>makefile         </td>
-      </tr>
-      <tr>
-         <td>Windows         </td>
-         <td>&lt;install_dir&gt;\home\distrib\template\src\exit         </td>
-         <td>exit.mak         </td>
-      </tr>
-      <tr>
-         <td>z/OS         </td>
-         <td>Distrib..SAMPLEC(EXACCT)         </td>
-         <td><p>Compilation: Runtime..INSTALL(I91APICP)</p>
-<p>Link-edit: Runtime..INSTALL(I92APILK)</p>         </td>
-      </tr>
-      <tr>
-         <td>IBM i (IFS)         </td>
-         <td>&lt;install_dir&gt;/home/distrib/template/src/exit         </td>
-         <td>gmake         </td>
-      </tr>
-      <tr>
-         <td>HP NonStop         </td>
-         <td>&lt;install_dir&gt;/home/distrib/template/src/exit         </td>
-         <td>makefile         </td>
-      </tr>
-   </tbody>
-</table>
+
+| System  | File location  | Build command  |
+| --- | --- | --- |
+| UNIX  | &lt;install_dir&gt;/home/distrib/template/src/exit  | makefile  |
+| Windows  | &lt;install_dir&gt;\home\distrib\template\src\exit  | exit.mak  |
+| z/OS  | Distrib..SAMPLEC(EXACCT)  |  Compilation: Runtime..INSTALL(I91APICP)<br/>Link-edit: Runtime..INSTALL(I92APILK)  |
+| IBM i (IFS)  | &lt;install_dir&gt;/home/distrib/template/src/exit  | gmake  |
+| HP NonStop  | &lt;install_dir&gt;/home/distrib/template/src/exit  | makefile  |
+
 
 ## Executing the sample file
 
@@ -79,72 +51,12 @@ Perform the following steps if you are running on a z/OS system.
 
 Syntax
 
-
-     EXACCT <install_dir>/runtime/accnt/cftaccnt
-
 ### Windows example
 
 Syntax
 
-
-     EXACCT <install_dir>\home\distrib\template\src\exit 
-
 ### z/OS example
-
-
-
-    //S1 EXEC PGM=EXACCT,PARM='acount_file_name'
-    //SYSPRINT DD SYSOUT=*
-    //SYSOUT DD SYSOUT=*
 
 ## Results
 
 All operating systems should have a resulting file similar to the following:
-
-
-
-     ACCOUNT FILE
-
-    ------------
-
-    Transfer id. IDT
-
-    B2508304
-
-    Direct DIRECT = RECV
-
-    Mode MODE = REQUESTER
-
-    Type TYPE = FILE
-
-     
-
-    Item type DIFTYP = SINGLE
-
-     
-    Logic file identifier IDF = TEST
-
-    Logic file network id NIDF = TEST
-
-    Protocol identifier PROT = PESITSSL
-
-    File Name FNAME =
-
-    *recv/FTEST
-
-    ...
-
-    *
-
-     
-    Receiver application RAPPL =
-
-    *
-
-    Record format FRECFM = U
-
-    length FLRECL = 04096
-
-    File compression NCOMP = 00
-
-    Bytes FCARS = 0000007104

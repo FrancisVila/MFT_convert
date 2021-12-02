@@ -63,18 +63,9 @@ Examples
 
 Only collect information for a given transfer:
 
-
-    cft_support collect --cat-filter="IDTU=A0000001"
-
 Collect information for all transfers in error for a given partner:
 
-
-    cft_support collect --cat-filter="DIAGI=ERROR, PART=PARIS"
-
 Collect transfer information related to a given IDF for all transfers in a brief LISTCAT, and only those transfers in error in a debug LISTCAT:
-
-
-    cft_support collect --cat-filter="IDF=BIN" --cat-debug-filter="IDF=BIN, DIAGI=ERROR"
 
 #### IBM i
 

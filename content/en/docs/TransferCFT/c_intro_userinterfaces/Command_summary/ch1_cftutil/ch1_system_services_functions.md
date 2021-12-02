@@ -23,11 +23,6 @@
 
 The \_DATE function returns the current system date.
 
-
-
-    _Date PARM = VDATE,
-          RC = lrc
-
 #### Values
 
 -   VDATE: Name of a variable of type CHAR, minimum length 8, which receives in return the current system date. Enter the value in upper case.
@@ -41,24 +36,11 @@ A positive value of the runtime code expresses the number of days since the begi
 
 #### Example
 
-
-
-    CHAR    name=DATE,size=8
-    LONG    name=RCL
-    _Date   parm=DATE=,rc=RCL
-    PRINT   msg='Today's date is %DATE%'
-    PRINT   msg='The number of days is: %RCL%'
-
 ### Function \_Time
 
 #### Syntax
 
 The \_Time function returns the current system time.
-
-
-
-    _Time   PARM    = VTIME,
-          RC    = lrc
 
 #### Values
 
@@ -73,24 +55,11 @@ A positive value of the runtime code expresses the number of hundredths of secon
 
 #### Example
 
-
-
-    CHAR name = TIME, size = 8
-    LONG name = RCL
-    _time Parm = TIME = rc = RCL
-    PRINT msg = 'The current time is% TIME%'
-    PRINT msg = 'Number of hundredths elapsed:%% RCL
-
 ### Function \_DatTim
 
 #### Syntax
 
 The \_DatTim function returns the current system date and current.
-
-
-
-    _DatTim PARM = VDATTIM,
-            RC = lrc
 
 #### Values
 
@@ -105,24 +74,11 @@ A zero value indicates that the runtime code execution \_DatTim function correct
 
 #### Example
 
-
-
-    CHAR    name = DATETIME, size = 16
-    LONG    name = RCL
-    _DatTim parm = DATETIME, rc = RCL
-    PRINT   msg = 'The current time is %DATETIME[8]%'
-
 ### Function \_DtSplit
 
 #### Syntax
 
 The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and hour chain.
-
-
-
-    . _DtSplit DATIME = date_time,
-               DATE = date,
-               TIME = time
 
 #### Parameters
 
@@ -132,26 +88,11 @@ The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and 
 
 #### Example
 
-
-
-    CHAR    name = DTSTART, size = 16
-    CHAR    name = DATE_START, size = 8
-    CHAR    name = TIME_START,size = 8
-    _DTSPLIT    DATIME = DTSTART, DATE = DATE_START, TIME = TIME_START
-    PRINT   msg = 'The date is %DATE_START%'
-    PRINT   msg = 'The time is %TIME_START%'
-
 ### Function \_DtMerge
 
 #### Syntax
 
 The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chain and an hour chain.
-
-
-
-    _DtMerge DATIME = date_time,
-               DATE = date,
-               TIME = time
 
 #### Values
 
@@ -161,28 +102,11 @@ The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chai
 
 #### Example
 
-
-
-    CHAR        name = DTDEBUT, size = 16
-
-    CHAR        name = DATE, size = 8, init = 19930101
-
-    CHAR        name = HOUR,size = 8, init = 12000000
-
-    _DTMERGE    DATIME = DTDEBUT, DATE = DATE_DEBUT, HOUR = HOUR_START     
-    PRINT       msg = 'The date is %DTDEBUT%'
-
 ### Function \_DtAdd
 
 #### Syntax
 
 The \_DtAdd function calculates a new date-time string by adding a date-time number one second.
-
-
-
-    _DtAdd FROMDT = date_time_src,
-    TODT = date_time_dest,
-    SEC = second
 
 #### Values
 
@@ -192,31 +116,11 @@ The \_DtAdd function calculates a new date-time string by adding a date-time num
 
 #### Example
 
-
-
-    CHAR    name = DT_DEBUT, size = 16
-
-    LONG    name = DUREE
-
-    CHAR    name = DT_FIN, size = 16
-
-    _DTADD  FROMDT = DT_DEBUT, TODT = DT_FIN,SEC = DUREE
-
-    PRINT   msg = 'La date-heure de début est %DT_DEBUT%'
-
-    PRINT   msg = 'La date-heure de fin est %DT_FIN%'
-
 ### Function \_DtDiff
 
 #### Syntax
 
 The \_DtDiff function calculates the difference in hundredths of a second between two date/times.
-
-
-
-    _DtDiff FROMDT = date_time1,
-    TODT = date_time2,
-    SEC = hundredth_of_seconds
 
 #### Values
 
@@ -225,18 +129,6 @@ The \_DtDiff function calculates the difference in hundredths of a second betwee
 -   hundredth\_of\_seconds: name of a variable of type LONG which will be stored in the difference-date-time1 date\_heure2. This difference is calculated in hundredth of seconds.
 
 #### Examples
-
-
-
-    CHAR    name = DT_START, size = 16
-
-    CHAR    name = DT_END, size = 16
-
-    LONG    name = DURATION
-
-    _DTDIFF FROMDT = DT_END, TODT = DT_START, SEC = DURATION
-
-    PRINT   msg = 'The length of the session is %duration% seconds'
 
 ### Function \_User
 
@@ -247,11 +139,6 @@ The \_user function returns the name of current user.
 > **Note:**
 >
 > The PARM parameter must be entered in upper case.
-
-
-
-    PARM = _user VUSER,
-    RC = lrc
 
 #### Values
 
@@ -264,16 +151,6 @@ A value of zero means the runtime code execution \_user function correctly. A ne
 
 #### Examples
 
-
-
-    CHAR    name=USERNAME,size=16
-
-    LONG    name=RCL
-
-    _User   parm=USERNAME,rc=RCL
-
-    PRINT    msg='The current user is %USERNAME%'
-
 ### Function \_Job
 
 #### Syntax
@@ -283,11 +160,6 @@ The \_Job function returns the name of the current process with the operating sy
 > **Note:**
 >
 > The PARM parameter must be entered in upper case.
-
-
-
-    _Job PARM = VJOB,
-    RC = lrc
 
 #### Values
 
@@ -300,26 +172,11 @@ A value of zero means the runtime code execution \_Job function correctly. A neg
 
 #### Example
 
-
-
-    CHAR    JOBNAME,size=16
-
-    LONG    name=RCL
-
-    _Job    parm=JOBNAME=,rc=RCL
-
-    PRINT    msg='Processus courant %JOBNAME%'
-
 ### Function \_SmSleep
 
 #### Syntax
 
 The \_SmSleep function puts the current process in standby.
-
-
-
-    _DatTim PARM = vsleep,
-    RC = lrc
 
 #### Values
 
@@ -333,11 +190,3 @@ The duration of the standby is expressed in seconds.
 A zero value indicates that the runtime code execution \_SmSleep functions correctly. A negative value signals an issue.
 
 #### Example
-
-
-
-    LONG    name=LSLEEP,INIT=200
-
-    LONG    name=RCL
-
-    _SmSleep    parm=%LSLEEP%,rc=RCL    /* Standby 2 seconds */

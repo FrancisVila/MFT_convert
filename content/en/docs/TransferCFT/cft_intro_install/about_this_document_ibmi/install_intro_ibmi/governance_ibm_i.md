@@ -7,19 +7,13 @@
 ## Prerequisites
 
 1.  Stop Transfer CFT and Copilot if running.
-
 2.  Ensure that all UCONF values used to identify a Transfer CFT instance are defined. These parameters include:
-
     -   cft.full\_hostname
     -   cft.instance\_id
     -   cft.instance\_group
 
       
     Use the format:  
-
-
-
-        CFTUTIL uconfset id=cft.instance_id, value=<cft_id>
 
 ## Procedure
 
@@ -40,15 +34,7 @@ Use the {{< TransferCFT/centralgovernancename  >}} installation values for the f
 
 Use the format:
 
-
-
-    CFTUTIL uconfset id=cg.host, value=<host_value>
-
 #### Enable {{< TransferCFT/centralgovernancename  >}}
-
-
-
-    CFTUTIL uconfset id=cg.enable, value=yes
 
 #### Register
 

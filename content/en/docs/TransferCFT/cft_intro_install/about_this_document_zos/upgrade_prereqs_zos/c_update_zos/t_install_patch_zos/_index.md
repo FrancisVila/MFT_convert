@@ -25,80 +25,26 @@ A PTF file results from the fixed formatting (80) of an ADRDSSU-type file contai
 
 Libraries taken into account during a DUMP ADRDSSU
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Libraries         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Contents         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>INSTALL</p>         </td>
-         <td><p>Update the installation JCLs</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLE</p>         </td>
-         <td><p>Update the SAMPLES</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEO</p>         </td>
-         <td><p>Update the COBOL samples</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SAMPLEC</p>         </td>
-         <td><p>Update the C samples</p>         </td>
-      </tr>
-      <tr>
-         <td>SAMPLEA         </td>
-         <td>Update the ASM samples         </td>
-      </tr>
-      <tr>
-         <td><p>PFTOBJ</p>         </td>
-         <td><p>Update OBJECT modules</p>         </td>
-      </tr>
-      <tr>
-         <td><p>DOC</p>         </td>
-         <td><p>Update documentation</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CNTL</p>         </td>
-         <td><p>Control files</p>         </td>
-      </tr>
-      <tr>
-         <td><p>MAC</p>         </td>
-         <td><p>Macros</p>         </td>
-      </tr>
-      <tr>
-         <td><p>SCR</p>         </td>
-         <td><p>Update components for interactive functions, messages, sample SSL</p>         </td>
-      </tr>
-      <tr>
-         <td><p>UPARM</p>         </td>
-         <td><p>Update unified configuration parameters definition.</p>         </td>
-      </tr>
-      <tr>
-         <td>OBJ         </td>
-         <td>Update NEW OBJECT modules.         </td>
-      </tr>
-      <tr>
-         <td>COPY         </td>
-         <td>Update Cobol copybook.         </td>
-      </tr>
-      <tr>
-         <td>H         </td>
-         <td>Update ‘header’ C.         </td>
-      </tr>
-      <tr>
-         <td>XMLLIB         </td>
-         <td>Update XML components.         </td>
-      </tr>
-      <tr>
-         <td>EXEC         </td>
-         <td>Update Transfer CFT procedures.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Libraries  | Contents  |
+| --- | --- |
+|  INSTALL  |  Update the installation JCLs  |
+|  SAMPLE  |  Update the SAMPLES  |
+|  SAMPLEO  |  Update the COBOL samples  |
+|  SAMPLEC  |  Update the C samples  |
+| SAMPLEA  | Update the ASM samples  |
+|  PFTOBJ  |  Update OBJECT modules  |
+|  DOC  |  Update documentation  |
+|  CNTL  |  Control files  |
+|  MAC  |  Macros  |
+|  SCR  |  Update components for interactive functions, messages, sample SSL  |
+|  UPARM  |  Update unified configuration parameters definition.  |
+| OBJ  | Update NEW OBJECT modules.  |
+| COPY  | Update Cobol copybook.  |
+| H  | Update ‘header’ C.  |
+| XMLLIB  | Update XML components.  |
+| EXEC  | Update Transfer CFT procedures.  |
+
 
 <span id="Transfer the PTF file to the host machine"></span>
 
@@ -111,17 +57,6 @@ You can transfer a given PTF file from either the workstation or the host, in b
 ### Transfer file using FTP
 
 The following is an example of commands for the binary transfer of the PTF file from the workstation to the host:
-
-
-    open hostname 
-    userid  
-                            
-    userpsw 
-                            
-    binary 
-                            
-    put c:\mycftpatchs\patch_from Axway support website 'distlib.UPLIB(CFxxxxxx)'   
-                            
 
 Where:
 
@@ -148,8 +83,8 @@ All of the A13\* JCLs are used to update or apply a Service Pack to Transfer CFT
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">JCL         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+<th >JCL         </th>
+<th >Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -273,9 +208,6 @@ Usually a patch is applied through a LINK-EDIT. The JCL A13PTFLK is found in the
 
 Before submitting the JOB, specify the LINK EDIT identifier in the EXEC card:
 
-
-    //APPLY  EXEC PAPPLY,ID=’xxxxxx’
-
 Where:
 
 -   xxxxxx: patch identifier
@@ -323,12 +255,6 @@ The following three JCLs mange the PTFs for Copilot:
 > All of these operations are displayed in the file distlib.LOG.
 
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:
-
-
-
-    //   SET ID='xxxxxx'  (JCL A13UPTFA)
-    //DELSAV EXEC PCDELSAV,ID=’xxxxxx’ (JCL A13UPFTD)
-    //   SET ID='xxxxxx'  (JCL A13UPTFR)
 
 ### Updating the unified configuration definitions A13UCONF
 

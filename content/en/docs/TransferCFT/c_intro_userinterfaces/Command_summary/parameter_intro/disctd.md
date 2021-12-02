@@ -24,23 +24,11 @@ indicated in the table below.
 
 Default values are:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Protocol </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>PeSIT ANY profile</p>         </td>
-         <td><p>10 </p>         </td>
-      </tr>
-      <tr>
-         <td><p>ODETTE </p>         </td>
-         <td><p>20 </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Protocol  |  Default value  |
+| --- | --- |
+|  PeSIT ANY profile  |  10  |
+|  ODETTE  |  20  |
+
 
 [Return to Command index](../../)

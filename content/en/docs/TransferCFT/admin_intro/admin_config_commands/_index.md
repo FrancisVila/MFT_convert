@@ -4,44 +4,17 @@
     "weight": "210"
 }The topics in this section describe how to use command line operations to administer Transfer CFT configuration options, and is comprised of the following:
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><a href="cftaccnt_concepts">CFTACCNT</a>         </td>
-         <td>Recording mode for statistical data         </td>
-      </tr>
-      <tr>
-         <td><a href="catalog_parameter_concepts">CFTCAT</a>         </td>
-         <td>Catalog attributes         </td>
-      </tr>
-      <tr>
-         <td><a href="communication_media_concepts">CFTCOM</a>         </td>
-         <td>Communication media         </td>
-      </tr>
-      <tr>
-         <td><a href="../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog">CFTLOG</a>         </td>
-         <td>Transfer log files         </td>
-      </tr>
-      <tr>
-         <td><a href="network_resource_concepts">CFTNET</a>         </td>
-         <td>Network resources         </td>
-      </tr>
-      <tr>
-         <td><a href="cftparm_general_parameters">CFTPARM</a>         </td>
-         <td>General parameters definition         </td>
-      </tr>
-      <tr>
-         <td><a href="transfer_protocol_concepts">CFTPROT</a>         </td>
-         <td>Transfer protocol         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Command  | Description  |
+| --- | --- |
+| <a href="cftaccnt_concepts">CFTACCNT</a>  | Recording mode for statistical data  |
+| <a href="catalog_parameter_concepts">CFTCAT</a>  | Catalog attributes  |
+| <a href="communication_media_concepts">CFTCOM</a>  | Communication media  |
+| <a href="../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftlog">CFTLOG</a>  | Transfer log files  |
+| <a href="network_resource_concepts">CFTNET</a>  | Network resources  |
+| <a href="cftparm_general_parameters">CFTPARM</a>  | General parameters definition  |
+| <a href="transfer_protocol_concepts">CFTPROT</a>  | Transfer protocol  |
+
 
 ## What is a service file medium
 
@@ -101,75 +74,6 @@ although <span class="mc-variable axway_variables.Component_Short_Name variable"
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 media by type of object and parameter
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Object         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">File type described         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CFTCAT </p>         </td>
-         <td><p>FNAME </p>         </td>
-         <td><p>Catalog file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTCOM </p>         </td>
-         <td><p>FNAME </p>         </td>
-         <td><p>Communication medium </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTLOG </p>         </td>
-         <td><p>FNAME<br />
-AFNAME </p>         </td>
-         <td><p>Log files </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTACCNT </p>         </td>
-         <td><p>FNAME<br />
-AFNAME </p>         </td>
-         <td><p>Statistics files </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTPARM </p>         </td>
-         <td><p>PARTFNAM </p>         </td>
-         <td><p>Partner file (obsolete for Windows/Unix)</p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTXLATE </p>         </td>
-         <td><p>FNAME </p>         </td>
-         <td><p>File containing the description of a translation table </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTDEST </p>         </td>
-         <td><p>FNAME </p>         </td>
-         <td><p>File containing a list of partners </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTAUTH </p>         </td>
-         <td><p>FNAME </p>         </td>
-         <td><p>File containing a list of authorized or prohibited IDFs </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTPARM </p>         </td>
-         <td><p>EXEC ... </p>         </td>
-         <td><p>End-of-transfer procedures </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTLOG </p>         </td>
-         <td><p>EXEC </p>         </td>
-         <td><p>Log switching procedure </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTACCNT </p>         </td>
-         <td><p>EXEC </p>         </td>
-         <td><p>Statistics file switching procedure </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 Depending on the system, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supports the following communication
 media:
 
@@ -194,45 +98,16 @@ to your OS.
 Use the CFTUTIL utility command CONFIG to set the names of the media
 it accesses, as presented in the table:
 
-<table>
-         
-         
-         
-   
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>CONFIG command</p>
-<p>TYPE parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File type described         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>PARM </p>         </td>
-         <td><p>Parameter file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>PART </p>         </td>
-         <td><p>Partner file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CAT </p>         </td>
-         <td><p>Catalog file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>COM </p>         </td>
-         <td><p>Communication medium </p>         </td>
-      </tr>
-      <tr>
-         <td><p>INPUT </p>         </td>
-         <td><p>Input data medium </p>         </td>
-      </tr>
-      <tr>
-         <td><p>OUTPUT </p>         </td>
-         <td><p>Output data medium </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           |  CONFIG command<br/>TYPE parameter  | File type described  |
+ --- | --- | --- |
+|  PARM  |  Parameter file  |
+|  PART  |  Partner file  |
+|  CAT  |  Catalog file  |
+|  COM  |  Communication medium  |
+|  INPUT  |  Input data medium  |
+|  OUTPUT  |  Output data medium  |
+
 
 By default, in the absence of the CONFIG command, the media accessed
 by the utility are defined in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide*
@@ -272,63 +147,7 @@ language applications.
 
 #### **Media names by service in COBOL language interface**
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Service         </th>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1"><strong>File type described</strong>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>CFTI </p>         </td>
-         <td><p>OPEN </p>         </td>
-         <td><p>D-CAT </p>         </td>
-         <td><p>Catalog file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>CFTU </p>         </td>
-         <td><p>COM </p>         </td>
-         <td><p>D-COM </p>         </td>
-         <td><p>CFT communication medium </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### **Media names by service in C language interface**
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Service         </th>
-<th class="HeadE-Column1-Header1">Command         </th>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">File type described         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>cftai </p>         </td>
-         <td><p>OPEN </p>         </td>
-         <td><p>cat </p>         </td>
-         <td><p>Catalog file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cftaix </p>         </td>
-         <td><p>OPEN </p>         </td>
-         <td><p>cat </p>         </td>
-         <td><p>Catalog file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>cftau </p>         </td>
-         <td><p>COM </p>         </td>
-         <td><p>param </p>         </td>
-         <td><p><span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication medium </p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 The default names of the media accessed by the programming interface,
 CATALOG file and COMMUNICATION medium, are defined in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS.
@@ -357,41 +176,6 @@ OS.
 The interactive function media are defined by the customization function
 of this component. The table below indicates, for each field, the file
 type described:
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Field         </th>
-<th class="HeadD-Column1-Header1">File type described         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Parm </p>         </td>
-         <td><p>Parameter file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Part </p>         </td>
-         <td><p>Partner file </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Cat </p>         </td>
-         <td><p>Catalog files </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Log1 </p>         </td>
-         <td><p>Log files </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Log2 </p>         </td>
-         <td><p> </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Com </p>         </td>
-         <td><p>Communication medium </p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 If this function is not activated, the media accessed are those defined
 at the time the product is installed.

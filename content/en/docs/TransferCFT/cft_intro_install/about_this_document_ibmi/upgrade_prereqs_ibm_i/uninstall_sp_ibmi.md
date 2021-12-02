@@ -11,18 +11,6 @@ Follow these steps to uninstall a service pack:
 1.  Stop Transfer CFT and Copilot.
 2.  Call the UNINSTALL command, press F4, and complete the following fields:
 
-<!-- -->
-
-
-
-    CFT Uninstall (UNINSTALL)
-     
-    Type choices, press Enter.
-    Silent installation  . . . . . .   '2'                  1:Yes/2:No
-    CFT Program library  .   .   .   .  .  .   CFTPGM    Name
-    CFT Production library .   .   .   .  .   CFTPROD  Name
-    SAVF name of previous version  .   SPXSAV      Name
-
 -   Where:
     -   Parameter 1: Name of your program library
     -   Parameter 2: Name of your production library
@@ -41,6 +29,3 @@ When you apply a patch, a backup of your previous version is saved in a `SAVF `o
 If you need to uninstall a patch, please restore the previous SAVF to your **CFT program library** (`PATCHSAV` by default).
 
 Example
-
-
-    RSTOBJ OBJ(*ALL) SAVLIB(CFTPGM) DEV(*SAVF) OBJTYPE(*ALL) SAVF(CFTPGM/PATCHSAV) OPTION(*ALL) RSTLIB(CFTPGM)

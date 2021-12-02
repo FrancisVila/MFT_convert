@@ -31,32 +31,17 @@ The following are commands that you can use to stop Transfer CFT outside of a c
 
 **Normal stop**
 
-
-    /F <Jobname>,SHUT FAST=NO or SHUT FAST=YES
-
 **Quick stop**
 
 Enter the operator command:
 
-
-    /P <{{< TransferCFT/componentshortname >}} Jobname>
-
 \- or -
 
-
-    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=YES
-
 **Force** {{< TransferCFT/componentshortname  >}} **shut down**
-
-
-    /F <{{< TransferCFT/componentshortname >}} Jobname>,SHUT FAST=KILL
 
 ### Restart
 
 The following command restarts Transfer CFT outside of a customized JCL. Enter the operator command:
-
-
-    /F Jobname,SHUT RESTART=YES
 
 ### Status
 

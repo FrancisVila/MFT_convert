@@ -11,37 +11,6 @@
 The sent file data code. The following table indicates for each OS the
 default value supported.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">OS         </th>
-<th class="HeadD-Column1-Header1">Default         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>z/OS (MVS)</p>         </td>
-         <td><p>EBCDIC </p>         </td>
-      </tr>
-      <tr>
-         <td><p>IBM i (OS400)</p>         </td>
-         <td><p>EBCDIC </p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX </p>         </td>
-         <td><p>ASCII </p>         </td>
-      </tr>
-      <tr>
-         <td><p>VMS </p>         </td>
-         <td><p>ASCII </p>         </td>
-      </tr>
-      <tr>
-         <td><p>Windows</p>         </td>
-         <td><p>ASCII </p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 <span id="fcode_CFTRECV"></span>
 
 #### CFTRECV, RECV

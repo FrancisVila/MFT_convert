@@ -19,6 +19,3 @@ Possible values:
 -   (<u>X</u>) Done: End condition when all of the previous phases are completed (default)
 
 Example
-
-
-    swaitcat select='(IDTU=="%_CAT_IDTU%")',timeout=30,phases=y,phasesteps=ch

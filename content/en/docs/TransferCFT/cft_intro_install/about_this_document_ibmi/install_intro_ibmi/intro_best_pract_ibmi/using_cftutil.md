@@ -12,17 +12,9 @@ Examples
 
     Enter the selection or command at the prompt.
 
-        > CFTUTIL
-
 -   Enter the command `LISTCAT `and press ENTER to confirm.
 
-        1:Input :
-        > LISTCAT   
-
 -   Enter the command` /end `and press ENTER to exit CFTUTIL.
-
-        1:Input :
-        > /END  
 
 ## Files and individual parameters
 
@@ -36,18 +28,8 @@ CFTUTIL PARAM(‘command’ ‘parameter=value, parameter=value,..’)
 
 **Examples**
 
-
-
-    CFTUTIL PARAM('LISTCAT’ ‘TYPE=ALL')
-    CFTUTIL PARAM('LISTCAT’ ‘CONTENT=DEBUG,DIRECT=SEND')CFTUTIL PARAM('SEND’ ‘PART=LOOP,IDF=TEST')
-    CFTUTIL PARAM('LISTPARM’ ‘TYPE=RECV')
-
 ### File passed as a parameter
 
 The following command runs the CFTUTIL utility, which reads the commands to be executed in the `scen.cft` file and displays the results.
 
 Example
-
-
-
-    CFTUTIL PARAM('#CFTPROD/UTIN(SCRIPT)')

@@ -25,66 +25,29 @@ Transfer CFT uses the Application Default Credentials (ADC) library to handle au
 
 For instance, you can create and download a service account file, and then export the key:
 
-
-
-    export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/my-key.json
-
 For SSL connections to GCS, libCURL requires a path to the CA certificates bundle to authenticate the peer. You can set this path in the UCONF `ssl.certificates.ca_cert_bundle` parameter if automatic detection fails.
 
 ## Parameter description
 
 The following table describes Transfer CFT's Google Cloud Storage-related parameters.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ssl.certificates.ca_cert_bundle         </td>
-         <td>string         </td>
-         <td><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
-<p>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.</p>
-<p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Type  | Description  |
+| --- | --- | --- |
+| ssl.certificates.ca_cert_bundle  | string  |  Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.<br/>Please refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.<br/>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (download from <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).  |
+
 
 ## Creating send and receive definitions
 
 You must include the following parameters in your Google Cloud Storage [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter<span id="storageaccount"></span>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>fname         </td>
-         <td>string         </td>
-         <td>Corresponds to the Google Cloud Storage object name.         </td>
-      </tr>
-      <tr>
-         <td>workingdir         </td>
-         <td>string         </td>
-         <td><p>The workingdir field must start with gs:// and be followed by the bucket name (as used with gsutil):</p>
-<p><code>gs://my-bucket</code></p>         </td>
-      </tr>
-      <tr>
-         <td>wfname         </td>
-         <td>string         </td>
-         <td><p>In the CFTRECV command, this specifies the temporary object that is used to upload chunks of the file. The file is then concatenated to the value defined in the FNAME parameter.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter<span id="storageaccount"></span>  | Type  | Description  |
+| --- | --- | --- |
+| fname  | string  | Corresponds to the Google Cloud Storage object name.  |
+| workingdir  | string  |  The workingdir field must start with gs:// and be followed by the bucket name (as used with gsutil):<br/><code>gs://my-bucket</code>  |
+| wfname  | string  |  In the CFTRECV command, this specifies the temporary object that is used to upload chunks of the file. The file is then concatenated to the value defined in the FNAME parameter.  |
+
 
 ## Use case examples
 
@@ -92,15 +55,7 @@ You must include the following parameters in your Google Cloud Storage [CFTSEND/
 
 Export the credentials:
 
-
-
-    export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/my-key.json
-
 In UCONF, set the GCS certificate path for the receiving Transfer CFT (only required if automatic detection fails):
-
-
-
-    uconfset ssl.certificates.ca_cert_bundle, value='<path to CA bundle>'
 
 ### The Transfer CFT stores a received file on GCS
 
@@ -109,10 +64,6 @@ Transfer CFT  receives a file from a partner over the PeSIT protocol and stores
 <img src="/Images/TransferCFT/gcs_1.png" class="maxWidth" />
 
 Configure the CFTRECV object to write to the GCS:
-
-
-
-    CFTRECV id=GCS_WRITE, fname=pub/&IDF.&IDTU.RCV, wfname=tmp/&IDF.&IDTU.RCV, workingdir=gs://my_bucket
 
 After the partner sends a file, you can check the log for transfer details.
 
@@ -123,12 +74,6 @@ Here, Transfer CFT reads a file from GCS and sends it over PeSIT to a partner.
 <img src="/Images/TransferCFT/gcs_2.png" class="maxWidth" />
 
 Create the CFTSEND template, and send a file that GCS to a Transfer CFT partner.
-
-
-
-    CFTSEND id=GCS_READ, workingdir=gs://my_bucket
-
-    SEND PART=PARIS, IDF=GCS_READ, FNAME=pub/FTEST
 
 After sending a file to the partner, you can check the log for transfer details.
 
@@ -160,7 +105,3 @@ To help resolve errors, you can use the GCS CLI `gsutil `tool to verify that the
 ### Example
 
 To list objects in a bucket on GCS:
-
-
-
-    gsutil ls gs://my-bucket

@@ -6,186 +6,36 @@
 
 ## Single node deployment
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Usage         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Process         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configurable         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configuration Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Network Interface         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Listening port for file transfer protocol         </td>
-         <td>CFTTCPS         </td>
-         <td>Yes         </td>
-         <td>CFTPROT:SAP         </td>
-         <td>See CFTNET:HOST         </td>
-      </tr>
-      <tr>
-         <td>Listening port for Synchronous Communication Media         </td>
-         <td>CFTTCOMS         </td>
-         <td>Yes         </td>
-         <td>CFTCOM:PORT         </td>
-         <td>See CFTCOM:HOST         </td>
-      </tr>
-      <tr>
-         <td>Inter-process communication         </td>
-         <td>CFTPRX         </td>
-         <td>No         </td>
-         <td>N/A: port provided by the operating system         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Copilot inter-process communication         </td>
-         <td>copsmng         </td>
-         <td>No         </td>
-         <td>N/A: port provided by the operating system         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server         </td>
-         <td>copui         </td>
-         <td>Yes         </td>
-         <td>copilot.general.serverport          </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server for Central Governance / Flow Manager         </td>
-         <td>copui         </td>
-         <td>Yes         </td>
-         <td>copilot.general.ssl_serverport          </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server inter-process communication         </td>
-         <td>copsproc         </td>
-         <td>No         </td>
-         <td>N/A: port provided by the operating system         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Copilot REST API Web server         </td>
-         <td>coprests         </td>
-         <td>Yes         </td>
-         <td>copilot.restapi.serverport         </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Secure Relay Master Agent         </td>
-         <td>masteragent.jar         </td>
-         <td>Yes         </td>
-         <td>secure_relay.ma.comm_port         </td>
-         <td>secure_relay.ma.host         </td>
-      </tr>
-      <tr>
-         <td>Secure Relay heartbeat service         </td>
-         <td>CFTPRX         </td>
-         <td>Yes         </td>
-         <td>secure_relay.ma.heartbeat_service.port         </td>
-         <td>secure_relay.ma.heartbeat_service.host         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
+| --- | --- | --- | --- | --- |
+| Listening port for file transfer protocol  | CFTTCPS  | Yes  | CFTPROT:SAP  | See CFTNET:HOST  |
+| Listening port for Synchronous Communication Media  | CFTTCOMS  | Yes  | CFTCOM:PORT  | See CFTCOM:HOST  |
+| Inter-process communication  | CFTPRX  | No  | N/A: port provided by the operating system  | 127.0.0.1  |
+| Copilot inter-process communication  | copsmng  | No  | N/A: port provided by the operating system  | 127.0.0.1  |
+| Copilot Web server  | copui  | Yes  | copilot.general.serverport  | copilot.general.serverhost  |
+| Copilot Web server for Central Governance / Flow Manager  | copui  | Yes  | copilot.general.ssl_serverport  | copilot.general.serverhost  |
+| Copilot Web server inter-process communication  | copsproc  | No  | N/A: port provided by the operating system  | 127.0.0.1  |
+| Copilot REST API Web server  | coprests  | Yes  | copilot.restapi.serverport  | copilot.general.serverhost  |
+| Secure Relay Master Agent  | masteragent.jar  | Yes  | secure_relay.ma.comm_port  | secure_relay.ma.host  |
+| Secure Relay heartbeat service  | CFTPRX  | Yes  | secure_relay.ma.heartbeat_service.port  | secure_relay.ma.heartbeat_service.host  |
+
 
 ## Multi-node deployment
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Usage         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Process         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configurable         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Configuration Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Network Interface         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Listening port for Synchronous Communication Media         </td>
-         <td>copcoms         </td>
-         <td>Yes         </td>
-         <td>CFTCOM:PORT         </td>
-         <td>See CFTCOM:HOST         </td>
-      </tr>
-      <tr>
-         <td>Listening port for Synchronous Communication Media         </td>
-         <td>CFTTCOMS         </td>
-         <td>Yes         </td>
-         <td>cft.multi_node.listen_port_range         </td>
-         <td>0.0.0.0         </td>
-      </tr>
-      <tr>
-         <td>Inter-node communication for transfer recovery         </td>
-         <td>CFTPRX         </td>
-         <td>Yes         </td>
-         <td>cft.multi_node.listen_port_range         </td>
-         <td>0.0.0.0         </td>
-      </tr>
-      <tr>
-         <td>Copilot inter-process communication         </td>
-         <td>copsmng         </td>
-         <td>No         </td>
-         <td>N/A: port provided by the operating system         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server         </td>
-         <td>copui         </td>
-         <td>Yes         </td>
-         <td>copilot.general.serverport          </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server for Central Governance / Flow Manager         </td>
-         <td>copui         </td>
-         <td>Yes         </td>
-         <td>copilot.general.ssl_serverport          </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Copilot Web server inter-process communication         </td>
-         <td>copsproc         </td>
-         <td>No         </td>
-         <td>N/A: port provided by the operating system         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Copilot REST API Web server         </td>
-         <td>coprests         </td>
-         <td>Yes         </td>
-         <td>copilot.restapi.serverport         </td>
-         <td>copilot.general.serverhost         </td>
-      </tr>
-      <tr>
-         <td>Node manager inter-process communication         </td>
-         <td>copnman         </td>
-         <td>Yes         </td>
-         <td>cft.multi_node.listen_port_range         </td>
-         <td>0.0.0.0         </td>
-      </tr>
-      <tr>
-         <td>Connection Dispatcher local port (Windows, z/OS only)         </td>
-         <td>copcod         </td>
-         <td>Yes         </td>
-         <td>copilot.connection_dispatcher.local_port         </td>
-         <td>127.0.0.1         </td>
-      </tr>
-      <tr>
-         <td>Secure Relay Master Agent         </td>
-         <td>masteragent.jar         </td>
-         <td>Yes         </td>
-         <td>secure_relay.ma.comm_port + node_number         </td>
-         <td>secure_relay.ma.host         </td>
-      </tr>
-      <tr>
-         <td>Secure Relay heartbeat service         </td>
-         <td>CFTPRX         </td>
-         <td>Yes         </td>
-         <td>secure_relay.ma.heartbeat_service.port         </td>
-         <td>secure_relay.ma.heartbeat_service.host         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Usage  | Process  | Configurable  | Configuration Parameter  | Network Interface  |
+| --- | --- | --- | --- | --- |
+| Listening port for Synchronous Communication Media  | copcoms  | Yes  | CFTCOM:PORT  | See CFTCOM:HOST  |
+| Listening port for Synchronous Communication Media  | CFTTCOMS  | Yes  | cft.multi_node.listen_port_range  | 0.0.0.0  |
+| Inter-node communication for transfer recovery  | CFTPRX  | Yes  | cft.multi_node.listen_port_range  | 0.0.0.0  |
+| Copilot inter-process communication  | copsmng  | No  | N/A: port provided by the operating system  | 127.0.0.1  |
+| Copilot Web server  | copui  | Yes  | copilot.general.serverport  | copilot.general.serverhost  |
+| Copilot Web server for Central Governance / Flow Manager  | copui  | Yes  | copilot.general.ssl_serverport  | copilot.general.serverhost  |
+| Copilot Web server inter-process communication  | copsproc  | No  | N/A: port provided by the operating system  | 127.0.0.1  |
+| Copilot REST API Web server  | coprests  | Yes  | copilot.restapi.serverport  | copilot.general.serverhost  |
+| Node manager inter-process communication  | copnman  | Yes  | cft.multi_node.listen_port_range  | 0.0.0.0  |
+| Connection Dispatcher local port (Windows, z/OS only)  | copcod  | Yes  | copilot.connection_dispatcher.local_port  | 127.0.0.1  |
+| Secure Relay Master Agent  | masteragent.jar  | Yes  | secure_relay.ma.comm_port + node_number  | secure_relay.ma.host  |
+| Secure Relay heartbeat service  | CFTPRX  | Yes  | secure_relay.ma.heartbeat_service.port  | secure_relay.ma.heartbeat_service.host  |
+

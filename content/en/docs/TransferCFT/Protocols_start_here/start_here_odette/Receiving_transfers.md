@@ -67,28 +67,13 @@ DIAGP=LDT\_TXT.
 If the receiver file type is not defined, {{< TransferCFT/componentshortname  >}} assigns the value
 contained in the table below, according to the receiving system.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Receiving system         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">FTYPE default         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>z/OS (MVS)</p>         </td>
-         <td><p>‘ ’ </p>         </td>
-      </tr>
-      <tr>
-         <td><p>IBM i (OS400)</p>         </td>
-         <td><p>E </p>         </td>
-      </tr>
-      <tr>
-         <td><p>UNIX </p>         </td>
-         <td><p>T </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Receiving system  | FTYPE default  |
+| --- | --- |
+|  z/OS (MVS)  |  ‘ ’  |
+|  IBM i (OS400)  |  E  |
+|  UNIX  |  T  |
+
 
 If the FRECFM and FLRECL parameters are not defined or imposed , data
 are saved, by default, in a file of variable format , with a maximum record

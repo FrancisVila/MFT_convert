@@ -22,17 +22,6 @@ If your MAXCNX is lower than MAXTRANS and you have more transfers than MAXCNX, a
 
 Transfers having a MAXCNX DIAG are rescheduled in WSCAN minutes (CFTCAT object). In WSCAN minutes, if the session is active, the transfer is not activated. In this case, the transfer waits another WSCAN minutes until the session is inactive, at which point it is activated. The session still remains active during DISCTD or DISCTS (on the remote partner) seconds after a transfer is completed.
 
-
-
-    Partner     DTSAPP  File                         Diags        
-    -------- ------ -------- -------- 
-    DESTSUN  SFH TH TEST2    F1517083          0          0   0 DIFFUS
-    SUN35-1  SFT XX TEST2    F1517084         14         14   0 CP NONE
-    SUN35-2  SFT XX TEST2    F1517085         14         14   0 CP NONE
-    SUN35-3  SFT XX TEST2    F1517090         14         14   0 CP NONE
-    SUN35-4  SFT XX TEST2    F1517091         14         14   0 CP NONE
-    SUN35-5  SFD TD TEST2    F1517092          0          0 416 MAXCNX
-
 <span id="Session"></span>
 
 ### Session persistence
@@ -109,55 +98,16 @@ In addition to simply looking at the maximum number of sessions, connections, an
 
 The following table shows the impact on scheduling once Transfer CFT reaches a file transfer parameter limit.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Reached limit for the ...         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">DIAGI - DIAGP         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Reschedules...         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Conditions to be executed..         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Local MAXTRANS         </td>
-         <td>0         </td>
-         <td>Immediately after a transfer is completed         </td>
-         <td>A transfer slot is available on the local site         </td>
-      </tr>
-      <tr>
-         <td>Remote MAXTRANS         </td>
-         <td>916-RCO 201         </td>
-         <td>In WSCAN minutes(CFTCAT)         </td>
-         <td>When a session is available on the remote site         </td>
-      </tr>
-      <tr>
-         <td>Local MAXCNX         </td>
-         <td>416-MAXCNX         </td>
-         <td>In WSCAN minutes (CFTCAT)         </td>
-         <td>When a session is available on the local site         </td>
-      </tr>
-      <tr>
-         <td>Remote MAXCNX         </td>
-         <td>302-R 0 2F2         </td>
-         <td>In RETRYW minutes (CFTTCP)         </td>
-         <td>When a session is available on the remote site         </td>
-      </tr>
-      <tr>
-         <td><p>Local CNXINOUT or CNXOUT</p>         </td>
-         <td>418-MAXCV         </td>
-         <td>Immediately after a transfer with the partner is completed         </td>
-         <td>When a transfer slot for this partner is available locally         </td>
-      </tr>
-      <tr>
-         <td><p>Remote CNXIN</p>
-<p>or CNXINOUT</p>         </td>
-         <td>916-RCO 309         </td>
-         <td>Immediately after a transfer with the partner is completed         </td>
-         <td>When a transfer slot for this partner is available on the remote site         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Reached limit for the ...  | DIAGI - DIAGP  | Reschedules...  | Conditions to be executed..  |
+| --- | --- | --- | --- |
+| Local MAXTRANS  | 0  | Immediately after a transfer is completed  | A transfer slot is available on the local site  |
+| Remote MAXTRANS  | 916-RCO 201  | In WSCAN minutes(CFTCAT)  | When a session is available on the remote site  |
+| Local MAXCNX  | 416-MAXCNX  | In WSCAN minutes (CFTCAT)  | When a session is available on the local site  |
+| Remote MAXCNX  | 302-R 0 2F2  | In RETRYW minutes (CFTTCP)  | When a session is available on the remote site  |
+|  Local CNXINOUT or CNXOUT  | 418-MAXCV  | Immediately after a transfer with the partner is completed  | When a transfer slot for this partner is available locally  |
+|  Remote CNXIN<br/>or CNXINOUT  | 916-RCO 309  | Immediately after a transfer with the partner is completed  | When a transfer slot for this partner is available on the remote site  |
+
 
 ### Scheduling issues
 

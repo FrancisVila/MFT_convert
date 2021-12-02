@@ -18,17 +18,6 @@ Workarounds include:
 -   Run the` .run` with a user who has the necessary rights, for example `sudo`.
 -   Create a temporary `/home` directory on an unprotected disk:
 
-<!-- -->
-
-
-
-    sudo mkdir /instcft
-
-    sudo chown <user>:<user> /instcft
-
-    export HOME=/instcft (unprotected disk)
-    ./Transfer_CFT_3.7_Install_linux-x86-64_BN13015241.run --mode unattended 
-
 ## 
 
 <span id="Troubles"></span>
@@ -62,9 +51,6 @@ This is a Certificate Signing Request / CSR failure because the {{< TransferCFT/
 ### Generic registration issue with Central Governance or Flow Manager
 
 You can use the CFTUTIL CHECK command to validate the coherence of parameters, partners, and the Transfer CFT PKI database.
-
-
-    CHECK CONTENT=BRIEF|FULL, FOUT=FileName
 
 See also, <a href="../../../c_intro_userinterfaces/about_cftutil/check_command" class="MCXref xref">Use the check command</a>.
 

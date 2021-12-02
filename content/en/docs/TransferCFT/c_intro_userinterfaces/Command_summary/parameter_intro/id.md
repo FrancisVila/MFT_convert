@@ -65,37 +65,14 @@ Command identifier (32 characters).
 The value of the identifier corresponds with the identifier in the related
 commands listed below.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">EXIT type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Command         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Parameter         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Directory         </td>
-         <td><p>CFTPROT</p>         </td>
-         <td><p>EXITA </p>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td><p> </p>         </td>
-         <td><p>EXIT </p>         </td>
-      </tr>
-      <tr>
-         <td>File          </td>
-         <td><p>CFTSEND, SEND, CFTRECV, RECV </p>         </td>
-         <td><p>EXIT </p>         </td>
-      </tr>
-      <tr>
-         <td>End of transfer         </td>
-         <td><p>CFTPARM </p>         </td>
-         <td><p>EXITEOT </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| EXIT type  | Command  | Parameter  |
+| --- | --- | --- |
+| Directory  |  CFTPROT  |  EXITA  |
+|   |   |  EXIT  |
+| File  |  CFTSEND, SEND, CFTRECV, RECV  |  EXIT  |
+| End of transfer  |  CFTPARM  |  EXITEOT  |
+
 
 <span id="id_CFTPARM"></span>
 
@@ -172,21 +149,10 @@ as an intermediate partner. For the store and forward to be accepted,
 the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
 
-<table>
-         
-         
-         
-   
-   <tbody>
-      <tr>
-         <td><p><strong>PeSIT SIT profile</strong></p>         </td>
-         <td><p>For
-the PeSIT SIT profile, the model file identifier is subjected to the format
-constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols:
-PeSIT</a>.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+           |  **PeSIT SIT profile**  |  For the PeSIT SIT profile, the model file identifier is subjected to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+ --- | --- | --- |
+
 
 <span id="id_CFTSEND"></span>
 
@@ -198,16 +164,10 @@ PeSIT</a>.</p>         </td>
 Local
 identifier of the model file (IDF) to be sent.
 
-<table>
-   <tbody>
-      <tr>
-         <td><p>PeSIT SIT profile</p>         </td>
-         <td><p>In the PeSIT protocol with the SIT profile, the model file
-identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols:
-PeSIT</a>.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  PeSIT SIT profile  |  In the PeSIT protocol with the SIT profile, the model file identifier is subject to the format constraint (Fnnnnn). See <a href="../../../../protocols_start_here/about_pesit">Protocols: PeSIT</a>.  |
+| --- | --- |
+
 
 <span id="Network_id"></span>
 

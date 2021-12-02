@@ -29,50 +29,15 @@ This section presents example user types, and describes the actions that they ca
 
 These scenarios are based on a single {{< TransferCFT/hflongproductname  >}}, **Machine1** in our examples, that is managed by .
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">User type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">CG role(s)         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Machine1 user         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">File access         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Monitoring Assistant</p>         </td>
-         <td><p>Help Desk</p>
-<p>for Transfer CFT</p>         </td>
-         <td>Not defined         </td>
-         <td>N/A         </td>
-      </tr>
-      <tr>
-         <td>Operator         </td>
-         <td>IT Manager for CG         </td>
-         <td>Defined         </td>
-         <td><p>All permissions on runtime files, but does not have access to other user's working directories</p>         </td>
-      </tr>
-      <tr>
-         <td>Partner Manager         </td>
-         <td>CG Admin         </td>
-         <td>Not defined         </td>
-         <td>No privileges on the physical files         </td>
-      </tr>
-      <tr>
-         <td>Flow Manager         </td>
-         <td><p>Middleware</p>
-<p>Manager for CG, and Application for Transfer CFT</p>         </td>
-         <td>Defined         </td>
-         <td>Rights on Machine1, and his own working directory         </td>
-      </tr>
-      <tr>
-         <td>Superuser         </td>
-         <td>N/A         </td>
-         <td>Defined         </td>
-         <td>Rights on all runtime files on Machine1, but no rights on user's working directories         </td>
-      </tr>
-   </tbody>
-</table>
+
+| User type  | CG role(s)  | Machine1 user  | File access  |
+| --- | --- | --- | --- |
+|  Monitoring Assistant  |  Help Desk<br/>for Transfer CFT  | Not defined  | N/A  |
+| Operator  | IT Manager for CG  | Defined  |  All permissions on runtime files, but does not have access to other user's working directories  |
+| Partner Manager  | CG Admin  | Not defined  | No privileges on the physical files  |
+| Flow Manager  |  Middleware<br/>Manager for CG, and Application for Transfer CFT  | Defined  | Rights on Machine1, and his own working directory  |
+| Superuser  | N/A  | Defined  | Rights on all runtime files on Machine1, but no rights on user's working directories  |
+
 
 Remember that these are examples and your system users, assigned roles, and file rights will vary.
 

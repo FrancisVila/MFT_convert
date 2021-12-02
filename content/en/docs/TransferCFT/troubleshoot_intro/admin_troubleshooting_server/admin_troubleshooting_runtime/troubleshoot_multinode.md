@@ -17,14 +17,6 @@ How to fix
 Reconfigure the host address as follows:
 
 1.  Stop the Transfer CFT instance.
-
 2.  Identify the host with the incorrect host address.
-
 3.  Remove the host using the command:
-
-        cft remove_host -hostname <hostname>
-
 4.  Add the host with the correct host address:  
-
-
-        cft add_host -hostname <hostname> -host <host_address>

@@ -18,79 +18,29 @@ For general information on how an application obtains event messages from a subs
 
 All messages have the following tokens:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Token         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ZSPI-TKN-SSID         </td>
-         <td><p>The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual.</p>         </td>
-      </tr>
-      <tr>
-         <td>ZEMS-TKN-EVENTNUMBER         </td>
-         <td><p>The event number, as described in the EMS Manual. Its value is one of the values described in the table below.</p>         </td>
-      </tr>
-      <tr>
-         <td>XCF2_TKN_SUBJ         </td>
-         <td><p>The message subject for which the values are described in the Event messages table below.</p>         </td>
-      </tr>
-      <tr>
-         <td>XCF2_TKN_MSG         </td>
-         <td><p>The message text.</p>
-<p>For details about Transfer CFT LOG messages, see the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}}  <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.</p>
-<p>The accounting messages are binary coded data, and are described in the exacct.h header.</p>         </td>
-      </tr>
-      <tr>
-         <td>ZEMS_TKN_EMPHASIS         </td>
-         <td>If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Token  | Description  |
+| --- | --- |
+| ZSPI-TKN-SSID  |  The Transfer CFT subsystem ID, whose value is XCF2_VAL_EXTERNAL_SSID. This token is described in the SPI Programming Manual.  |
+| ZEMS-TKN-EVENTNUMBER  |  The event number, as described in the EMS Manual. Its value is one of the values described in the table below.  |
+| XCF2_TKN_SUBJ  |  The message subject for which the values are described in the Event messages table below.  |
+| XCF2_TKN_MSG  |  The message text.<br/>For details about Transfer CFT LOG messages, see the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} <a href="https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Troubleshooting/Messages_and_Codes/Messages_and_error_codes_Start_here_1.htm">Messages and error codes</a> documentation.<br/>The accounting messages are binary coded data, and are described in the exacct.h header.  |
+| ZEMS_TKN_EMPHASIS  | If the value is ZSPI-VAL-TRUE, the event being reported is considered critical. This is the case for ERROR and FATAL log events as well as process errors when using the NonStop mode.  |
+
 
 Event messages
 
 The following table shows the relationship between the event, the subject, and the message type.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Event number         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">EMS subject         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Event type         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>4         </td>
-         <td>CFT INFO LOG         </td>
-         <td>Log information message         </td>
-      </tr>
-      <tr>
-         <td>5         </td>
-         <td>CFT WARN LOG         </td>
-         <td>Log warning message         </td>
-      </tr>
-      <tr>
-         <td>6         </td>
-         <td>CFT ERR LOG         </td>
-         <td>Log error message         </td>
-      </tr>
-      <tr>
-         <td>7         </td>
-         <td>CFT FAIL LOG         </td>
-         <td>Log failure message         </td>
-      </tr>
-      <tr>
-         <td>8         </td>
-         <td>CFT ACCOUNT         </td>
-         <td>Account         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Event number  | EMS subject  | Event type  |
+| --- | --- | --- |
+| 4  | CFT INFO LOG  | Log information message  |
+| 5  | CFT WARN LOG  | Log warning message  |
+| 6  | CFT ERR LOG  | Log error message  |
+| 7  | CFT FAIL LOG  | Log failure message  |
+| 8  | CFT ACCOUNT  | Account  |
+
 
 ## Activate event log messages
 
@@ -114,17 +64,6 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 
 In the Transfer CFT configuration:
 
-
-
-    cftlog id        = log0,
-    …
-    fname= ' log/cftlog',
-    afname= ' log/cftalog',
-    notify= '$COL',
-    opermsg= 240,
-    ….
-     
-
 ## Activate event accounting messages
 
 The CFTACCNT object defines the destinations for the statistical data concerning terminated transfers (accounting messages). The possible destinations provided in the fname parameter are:
@@ -135,11 +74,6 @@ The CFTACCNT object defines the destinations for the statistical data concerning
 Once defined, you can activate and link the object to the CFTPARM as shown in the following example.
 
 **Example**
-
-
-
-    CFTACCNT ID=ACCNT1, TYPE=FILE, FNAME=$COL,...,MODE=REPLACE
-    CFTPARM ID=IDPARM0,...,ACCNT=ACCNT1,MODE=REPLACE
 
 ## Transfer CFT EMS
 

@@ -52,265 +52,35 @@ Use the following CFTFOLDER parameters to configure folder monitoring for each 
 
 Parameter descriptions
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><span id="Paramete"></span>Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default  </p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>same as in UCONF</p>
-<p>&lt;folder_monitoring.enable&gt;</p>         </td>
-         <td>Boolean         </td>
-         <td>No         </td>
-         <td><ul>
-<li>No: No folder monitoring occurs.</li>
-<li>Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p>ID</p>
-<p><em><em>Mandatory</em></em></p>         </td>
-         <td>node         </td>
-         <td>None         </td>
-         <td><p>Add the logical folders to monitor (list of logical identifiers).</p>
-<p>You should provide a unique name to identify the set of configuration parameters corresponding to this directory.
-If you have more than one Folder to monitor, use a space between each logical value.</p>         </td>
-      </tr>
-      <tr>
-         <td>STATE         </td>
-         <td>Boolean         </td>
-         <td>Active         </td>
-         <td><p>Enables a scan of the folder.</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>NO = NOACTIVE.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td><p>SCANDIR</p>
-<em>Mandatory</em>         </td>
-         <td>string         </td>
-         <td>None         </td>
-         <td><p>Absolute path name of the top level directory to scan.</p>
-<p>This directory must exist before restarting Transfer CFT.</p>
-<p>*See <a href="#char_note">NOTE</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td><p>WORKDIR</p>
-<em>Mandatory</em>         </td>
-         <td>string         </td>
-         <td>None         </td>
-         <td><p>Absolute path name of the top level directory available for file state information.</p>
-<ul>
-<li>If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.</li>
-<li>If you are using the FILE method, the .met files are stored in the work_dir.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Caution  
-  Never delete any .met files.</p>
-</blockquote>
-<p>*See <a href="#char_note">NOTE</a>.</p>         </td>
-      </tr>
-      <tr>
-         <td>ENABLESUBDIR         </td>
-         <td>Boolean         </td>
-         <td>Yes         </td>
-         <td><p>Values:</p>
-<ul>
-<li>Yes: The entire scan_dir sub-directory tree is monitored.</li>
-<li>No: No scan is performed.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><span id="METHOD"></span>METHOD         </td>
-         <td>enum         </td>
-         <td>MOVE         </td>
-         <td><p>Values:</p>
-<ul>
-<li>MOVE: Files are moved to the work_dir prior to being submitted.</li>
-<li>FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory.</p>
-</blockquote>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type.</p>
-</blockquote>
-<p>Please see the <a href="../#Limitati">Limitations</a> for multi-host system recommendations.</p>         </td>
-      </tr>
-      <tr>
-         <td>ARCHIVEDIR         </td>
-         <td>String         </td>
-         <td>          </td>
-         <td>Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.         </td>
-      </tr>
-      <tr>
-         <td>FILEIDLEDELAY         </td>
-         <td>integer         </td>
-         <td>5         </td>
-         <td>If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.         </td>
-      </tr>
-      <tr>
-         <td>GROUPID         </td>
-         <td>String         </td>
-         <td>          </td>
-         <td>Complementary information for the USERID. Maximum length 32 characters.         </td>
-      </tr>
-      <tr>
-         <td><p>IDF</p>
-<p><em>Mandatory</em></p>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td><p>The IDF name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td><p>PART</p>
-<em>Mandatory</em>         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td><p>The PART name to use in the SEND command. Use one of the following:</p>
-<ul>
-<li>A fixed name.</li>
-<li>"(0)": The name of the first directory sub-level is used.</li>
-<li>"(1)": The name of the second directory sub-level is used.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>INTERVAL         </td>
-         <td>int         </td>
-         <td>60         </td>
-         <td>The interval between two scans of the directory files in seconds.         </td>
-      </tr>
-      <tr>
-         <td>FILECOUNT         </td>
-         <td>int         </td>
-         <td>0         </td>
-         <td><p>Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.</p>         </td>
-      </tr>
-      <tr>
-         <td>FILESIZEMIN         </td>
-         <td>int         </td>
-         <td>0         </td>
-         <td><p>Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.</p>         </td>
-      </tr>
-      <tr>
-         <td>FILESIZEMAX         </td>
-         <td>int         </td>
-         <td>0         </td>
-         <td><p>Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.</p>         </td>
-      </tr>
-      <tr>
-         <td>INCLUDEFILTER         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>If this parameter is defined, only files whose names match this pattern are monitored.         </td>
-      </tr>
-      <tr>
-         <td>EXCLUDEFILTER         </td>
-         <td>string         </td>
-         <td>""         </td>
-         <td>If this parameter is defined, files whose names match this pattern are not monitored.         </td>
-      </tr>
-      <tr>
-         <td>RESUBMITCHANGED         </td>
-         <td>Boolean         </td>
-         <td>Yes         </td>
-         <td><p>This parameter has no effect when the configured method is MOVE.</p>
-<p>When the method parameter value is set to FILE:</p>
-<ul>
-<li>Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.</li>
-<li>No: Files are not resubmitted, regardless of changes.</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>FILTERTYPE         </td>
-         <td>enum         </td>
-         <td>WILDMAT         </td>
-         <td><p>Defines the pattern matching algorithm to use for file name filtering.</p>
-<p>Values:</p>
-<ul>
-<li>STRJCMP: The Transfer CFT pattern matching algorithm.</li>
-<li>WILDMAT: A well known public domain algorithm, and is the default. <strong>Unix/Windows only</strong></li>
-<li>EREGEX:  Extended regular expression syntax.</li>
-</ul>
-<p>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.</p>         </td>
-      </tr>
-      <tr>
-         <td>RENAMEMETHOD         </td>
-         <td>Enum         </td>
-         <td>TIMESTAMP         </td>
-         <td><p>This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</p>
-For example, using timestamp_separators=".":
-<ul>
-<li>myfile is renamed myfile.20131025</li>
-<li>myfile.txt is renamed myfile.20131025.txt</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Unset the default value and use " " to MOVE without adding a timestamp.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>RENAMESEPARATOR         </td>
-         <td>string         </td>
-         <td><p>"."</p>         </td>
-         <td><p>This parameter only applies to the MOVE method.</p>
-<p>You can use no more than two characters from among the following:</p>
-<p>.[]()_-</p>
-<p>The first character defines the separator before the timestamp.
-The second one, when present, defines the separator after the timestamp.</p>
-<p>For example, using timestamp_separators "[]":
-- myfile is renamed myfile.[20131025]
-- myfile.txt is renamed myfile.[20131025].txt</p>         </td>
-      </tr>
-      <tr>
-         <td>N/A in this version         </td>
-         <td>string         </td>
-         <td>          </td>
-         <td>Metadata used to control user changes.         </td>
-      </tr>
-      <tr>
-         <td><p>USEFSEVENTS</p>
-<p> </p>
-<p><a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#Enable">More information</a></p>         </td>
-         <td>Boolean         </td>
-         <td>No         </td>
-         <td>Set to YES to enable the file system events monitoring service to detect newly available files.         </td>
-      </tr>
-      <tr>
-         <td><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>         </td>
-         <td>String         </td>
-         <td>         </td>
-         <td><p><em>Available on UNIX and</em> <em></em></p>
-<p>Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| <span id="Paramete"></span>Parameter  | Type  |  Default  | Description  |
+| --- | --- | --- | --- |
+|  same as in UCONF<br/>&lt;folder_monitoring.enable&gt;  | Boolean  | No  |  <li>No: No folder monitoring occurs.<br/> • Yes: Enable {{< TransferCFT/componentshortname  >}} folder monitoring.</li>  |
+|  ID<br/>**Mandatory**  | node  | None  |  Add the logical folders to monitor (list of logical identifiers).<br/>You should provide a unique name to identify the set of configuration parameters corresponding to this directory. If you have more than one Folder to monitor, use a space between each logical value.  |
+| STATE  | Boolean  | Active  |  Enables a scan of the folder. <blockquote> **Note:**<br/>NO = NOACTIVE. </blockquote>  |
+|  SCANDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory to scan.<br/>This directory must exist before restarting Transfer CFT.<br/>*See <a href="#char_note">NOTE</a>.  |
+|  WORKDIR *Mandatory*  | string  | None  |  Absolute path name of the top level directory available for file state information.<br/> • If you are using the MOVE method, files that are ready to be submitted are available in the work_dir.<br/> • If you are using the FILE method, the .met files are stored in the work_dir.</li> <blockquote> **Note:**<br/>Caution Never delete any .met files. </blockquote> *See <a href="#char_note">NOTE</a>.  |
+| ENABLESUBDIR  | Boolean  | Yes  |  Values:<br/> • Yes: The entire scan_dir sub-directory tree is monitored.<br/> • No: No scan is performed.</li>  |
+| <span id="METHOD"></span>METHOD  | enum  | MOVE  |  Values:<br/> • MOVE: Files are moved to the work_dir prior to being submitted.<br/> • FILE: Files are left in the scan_dir, and a state file with the same name is created in work_dir prior to submitting the file.</li> <blockquote> **Note:**<br/>Before changing the method from FILE to MOVE, you should remove all files (metadata .met files) located in the associated working directory. </blockquote> <blockquote> **Note:**<br/>Changing the method from MOVE to FILE, deletes all files located in the associated working directory. Therefore, we recommend removing all files from the scan and working directory before changing the METHOD type. </blockquote> Please see the <a href="../#Limitati">Limitations</a> for multi-host system recommendations.  |
+| ARCHIVEDIR  | String  |   | Archive directory where a source file is moved to after a successful transfer. This means the source file is moved from the WORKDIR for METHOD=MOVE or SCANDIR for METHOD=FILE to the ARCHIVEDIR.  |
+| FILEIDLEDELAY  | integer  | 5  | If the state of a file has not changed within this delay in seconds, the file becomes a candidate for submission.  |
+| GROUPID  | String  |   | Complementary information for the USERID. Maximum length 32 characters.  |
+|  IDF<br/>*Mandatory*  | string  | ""  |  The IDF name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+|  PART *Mandatory*  | string  | ""  |  The PART name to use in the SEND command. Use one of the following:<br/> • A fixed name.<br/> • "(0)": The name of the first directory sub-level is used.<br/> • "(1)": The name of the second directory sub-level is used.</li> <blockquote> **Note:**<br/>In the Directory C example/home/CFT/fr/dir_c/scan/newyork/idf1, the (0) represents newyork, and (1) represents idf1. </blockquote>  |
+| INTERVAL  | int  | 60  | The interval between two scans of the directory files in seconds.  |
+| FILECOUNT  | int  | 0  |  Maximum number of file submissions for each scan. Using the default value indicates that there is no maximum.  |
+| FILESIZEMIN  | int  | 0  |  Files shorter than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no lower limit on the file size.  |
+| FILESIZEMAX  | int  | 0  |  Files larger than this value, in bytes, are not candidates for submission. Using the default value indicates that there is no upper limit on the file size.  |
+| INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
+| EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
+| RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
+| RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
+| N/A in this version  | string  |   | Metadata used to control user changes.  |
+|  USEFSEVENTS <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder#Enable">More information</a>  | Boolean  | No  | Set to YES to enable the file system events monitoring service to detect newly available files.  |
+| <a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/userid">USERID</a>  | String  |   |  *Available on UNIX and* ** Identifier for a user who can scan a folder. See the section, <a href="#Folder2">Folder monitoring using USERCTRL</a>.  |
+
 
 > **Note:**
 >
@@ -346,9 +116,6 @@ If you create or modify a folder while Transfer CFT is running, you must execute
 
 The following command reloads the FM40 configuration.
 
-
-    ACT ID=FM40, type=FOLDER 
-
 <span id="Enable"></span>
 
 ## Enable the file-system event monitoring
@@ -360,9 +127,6 @@ Available on Linux/Windows only
 See [Supported OS for file-system event monitoring](../#Supporte).
 
 To enable file-system event monitoring modify as follows:
-
-
-    CFTFOLDER ID=<myfolderobject>, USEFSEVENTS=YES, ...
 
 #### Attention
 
@@ -379,23 +143,11 @@ We recommended that you only use file-system event monitoring when immediate att
 
 To turn the file-system event monitoring off for a given folder object, use the command:
 
-
-     INACT TYPE=FOLDER,ID=<myfolderobject>
-
 To turn on the file-system event monitoring for a given folder object, use the command:
-
-
-     ACT TYPE=FOLDER,ID=<myfolderobject>
 
 To view all of the CFTFOLDER objects, use the command:
 
-
-     LISTPARM TYPE=FOLDER
-
 To extract the folder objects, use the command:
-
-
-     CFTEXT TYPE=FOLDER
 
 ## Remove or change a folder
 
@@ -406,11 +158,6 @@ If Transfer CFT is running and you create or change a folder or multiple folders
 ### Delete a folder
 
 Prior to deleting a folder object, check that it is inactive. You can execute INACT on this folder if unsure.
-
-
-
-    INACT TYPE=FOLDER, ID=<myfolder>
-    CFTFOLDER ID=<myfolder>, MODE=DELETE
 
 > **Note:**
 >
@@ -433,17 +180,6 @@ The first directory presents the simplest possible configuration, leaving most p
 
 The following commands create the configuration defined for directory A.
 
-
-
-    #
-    # Create all of the needed directories (UNIX platform example)
-    #
-    mkdir /home/CFT/fm/dir_a
-    mkdir /home/CFT/fm/dir_a/scan
-    mkdir /home/CFT/fm/dir_a/work
-    #
-    CFTUTIL CFTFOLDER ID=A, SCANDIR='/home/CFT/fm/dir_a/scan',  WORKDIR='/home/CFT/fm/dir_a/work', PART='NEWYORK', IDF='IDFA'
-
 ### Directory B requirements
 
 For the second directory, directory B, we want to:
@@ -453,23 +189,6 @@ For the second directory, directory B, we want to:
 -   Send only files suffixed by .txt.
 
 The following commands create the required directory B configuration.
-
-
-
-    #
-    # Create all needed directories (example for UNIX platforms)
-    #
-    mkdir /home/CFT/fm/dir_b
-    mkdir /home/CFT/fm/dir_b/scan
-    mkdir /home/CFT/fm/dir_b/work
-    mkdir /home/CFT/fm/dir_b/scan/newyork
-    mkdir /home/CFT/fm/dir_b/scan/berlin
-    mkdir /home/CFT/fm/dir_b/scan/london
-    mkdir /home/CFT/fm/dir_b/scan/rome
-    mkdir /home/CFT/fm/dir_b/scan/brussels
-    mkdir /home/CFT/fm/dir_b/scan/paris
-    #
-    CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir_b/scan', WORKDIR='/home/CFT/fm/dir_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='*.txt'
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork `for the partner named `newyork`.
 
@@ -487,25 +206,6 @@ For directory C we want to:
 
 The following commands create the described directory C configuration.
 
-
-
-    #
-    # Create all needed directories (example for UNIX platforms)
-    #
-    mkdir /home/CFT/fm/dir_c
-    mkdir /home/CFT/fm/dir_c/scan
-    mkdir /home/CFT/fm/dir_c/work
-    mkdir /home/CFT/fm/dir_c/scan/newyork/idf1
-    mkdir /home/CFT/fm/dir_c/scan/newyork/idf2
-    mkdir /home/CFT/fm/dir_c/scan/newyork/idf3
-    mkdir /home/CFT/fm/dir_c/scan/paris/idfa
-    mkdir /home/CFT/fm/dir_c/scan/paris/idfb
-    mkdir /home/CFT/fm/dir_c/scan/paris/idfc
-    mkdir /home/CFT/fm/dir_c/scan/paris/idfd
-    #
-    CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir_c/scan', 
-    WORKDIR='/home/CFT/fm/dir_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='*.tmp'
-
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner `newyork `and idf `idf1`.
 
 <span id="Customiz"></span>
@@ -516,13 +216,7 @@ You can customize the transfer related metadata, such as the IDA, PARM, SUSER, e
 
 For example, you have a file named `A0001.appli1.cft.XXX` in the `scan1 `folder, and you have the following two objects in your configuration:
 
-
-    CFTFOLDER id=folder1,scandir=scan1,idf=idf1,par=part1,...CFTSEND id=idf1,ida=&%.1froot,sappl="&%.2froot",suser="&%.3froot",...
-
 Consequently, Transfer CFT automatically creates a request based on the above syntax:
-
-
-    SEND part=part1,idf=idf1,ida=A0001,sappl="appli1",suser="cft"
 
 -   For more information on how to effectively use separators with symbolic variables, please see [Separate fields in symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables#Separate)
 -   For more information on the various symbolic variables to use in CFTSEND with CFTFOLDER, see [List of symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables#List_of_symbolic_variables)
@@ -562,28 +256,13 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 ### Archive with no file renaming afterward
 
 1.  Create the CFTFOLDER object.  
-
 2.  
-
-        cftfolder id=app1, PART=paris, idf=myfile, scandir=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchiveFolder,method=move,interval=1,fileidledelay=0
-
 3.  Activate the new CFTFOLDER object:  
-
 4.  
-
-        ACT type=folder, id=app1
-
 5.  Start Transfer CFT: `cft start`
-
 6.  Put the test file in the `runtime/MyScanFolder` folder.
-
 7.  Navigate to the `runtime/MyArchivedFolder` and check that the `MyFile.txt` is stored there.
-
 8.  Check in the log for a message similar to the following:  
-
-
-
-        CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchivedFolder\MyFile.txt <IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185>
 
 ### Archive and rename in the archive folder
 
@@ -591,19 +270,11 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 2.  
 
-        cftfolder id=app1, PART=paris, idf=MyFile, SCANDIR=MyScanFolder, workdir=MyWorkFolder, renamemethod=none, archivedir=MyArchivedFolder,method=move,interval=1,fileidledelay=0
-
 3.  Create a SEND model using `archivefname`. In this example the transfer's IDTU is appended on the filename:
-
-
-
-        CFTSEND id=MYFILE, archivefname=&FROOT&(-.)FSUF_&IDTU, faction=ARCHIVE
 
 4.  Activate the new CFTFOLDER object:  
 
 5.  
-
-        ACT type=folder, id=app1
 
 6.  Start Transfer CFT: `cft start`
 
@@ -612,10 +283,6 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 8.  Navigate to the `runtime/MyArchiveFolder` and check that the `MyFile.txt` is stored there.
 
 9.  Check in the log for a message similar to the following:  
-
-
-
-        CFTT89I Faction on FNAME=MyWorkFolder\MyFile.txt archived as MyArchiveFolder\MyFile.txt_A000000F <IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185>
 
 <span id="Folder2"></span>
 
@@ -628,26 +295,13 @@ The following example demonstrates how to use the [USERCTRL](../../../c_intro_us
 > USEFSEVENTS=YES is not supported on UNIX systems in this use case.
 
 1.  Enable USERCTRL in the CFTPARM command:  
-
-
-        CFTPARM ID=IDPARM0,…,USERCTRL=YES
-
 2.  Start Transfer CFT with `usercft `as the user.
-
 3.  User1 creates the `/home/user1/scandir_app1` and `/home/user1/workdir` folders:  
-
 4.  `App1 `writes files to this specific scandir folder, e.g. `/home/user1/scandir_app1`, which belongs to user1. Notice that the usercft user does not have access to`  scandir_app1`.
-
 5.  From CFTUTIL, create a CFTFOLDER:  
-
 6.  Activate the CFTFOLDER object:  
-
 7.  Create a file called` Myfile.txt`, and copy it to the `/home/user1/scandir_app1` folder.
 
 **Results**
 
 The  transfer is executed on the behalf of user1. Notice that there is a message indicating that the folder is activated on behalf of the specified user.
-
-
-    CFTR20I folder "/home/user1/scandir_app1" registered as nickname <APP1>
-    CFTR20I on behalf of "user1" user

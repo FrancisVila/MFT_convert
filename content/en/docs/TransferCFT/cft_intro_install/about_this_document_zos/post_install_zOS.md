@@ -11,45 +11,16 @@ Once you install the product, the following subdirectories are available:
 -   Bin: Contains the installation procedures. This directory is unique to Axway. This directory also contains trace files after installation.
 -   Install: Contains the Transfer CFT product and the configuration file for silent installation.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">File Name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>silent_install.conf         </td>
-         <td>File to customize for silent installation.         </td>
-      </tr>
-      <tr>
-         <td>Transfer_CFT_mvs_adrdssu.bin         </td>
-         <td>Compressed Transfer CFT files in ADRDSSU format.
-<p>Name: distlib.UPLIB(CFT332A)</p>         </td>
-      </tr>
-      <tr>
-         <td>Transfer_CFT_mvs_xmit.bin         </td>
-         <td><p>Transfer CFT files in double XMIT format.</p>
-<p>Name: distlib.UPLIB(CFT332X)</p>         </td>
-      </tr>
-      <tr>
-         <td>Transfer_CFT_mvs_adrdssu_J1IDIST.txt         </td>
-         <td><p>JCL that executes the extraction (next step).</p>
-<p>Name: distlib.UPLIB(J1IDISTA)</p>         </td>
-      </tr>
-      <tr>
-         <td>Transfer_CFT_mvs_xmit_J1IDIST.txt         </td>
-         <td><p>JCL that executes the extraction (next step).</p>
-<p>Name: distlib.UPLIB(J1IDISTX)</p>         </td>
-      </tr>
-      <tr>
-         <td>Transfer_CFT_mvs_J2IICFT.txt         </td>
-         <td><p>JCL that installs Transfer CFT instance environment.</p>
-<p>Name: distlib.UPLIB(J2IICFT)mode</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| File Name  | Description  |
+| --- | --- |
+| silent_install.conf  | File to customize for silent installation.  |
+| Transfer_CFT_mvs_adrdssu.bin  | Compressed Transfer CFT files in ADRDSSU format. Name: distlib.UPLIB(CFT332A)  |
+| Transfer_CFT_mvs_xmit.bin  |  Transfer CFT files in double XMIT format.<br/>Name: distlib.UPLIB(CFT332X)  |
+| Transfer_CFT_mvs_adrdssu_J1IDIST.txt  |  JCL that executes the extraction (next step).<br/>Name: distlib.UPLIB(J1IDISTA)  |
+| Transfer_CFT_mvs_xmit_J1IDIST.txt  |  JCL that executes the extraction (next step).<br/>Name: distlib.UPLIB(J1IDISTX)  |
+| Transfer_CFT_mvs_J2IICFT.txt  |  JCL that installs Transfer CFT instance environment.<br/>Name: distlib.UPLIB(J2IICFT)mode  |
+
 
 > **Note:**
 >

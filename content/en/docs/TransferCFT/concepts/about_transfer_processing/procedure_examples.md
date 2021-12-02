@@ -25,25 +25,6 @@ Example
 If the IDF of the file sent is PAY and if EXECSF = SF&IDF.CMD, the
 name of the file associated with this procedure is:
 
-
-    SFPAY.CMD.REM
-    REM
-    REM
-    --------------------------------------------------------
-    REM EXAMPLE OF A PROCEDURE SUBMITTED BY CFT AT THE END
-    REM OF FILE TRANSMISSION
-    REM
-    REM This procedure declares that the current transfer
-    REM changes to the X state.
-    REM
-    REM LIST OF SYMBOLIC VARIABLES
-    REM
-    REM PART &PART PARTNER NAME
-    REM IDT &IDT TRANSFER IDENTIFIER
-    REM
-    REM ---------------------------------------------------
-    CFTUTIL END PART=&PART,IDT=&IDT
-
 <span id="Submitting_an_end_of_receive_procedure"></span>
 
 #### Submitting an end of receive procedure
@@ -60,38 +41,9 @@ Example
 If EXECRF = RF&IDF.CMD, the name of the file associated with this
 procedure is: RFPAY.CMD.
 
-
-    REM
-    REM
-    --------------------------------------------------------
-    REM
-    REM EXAMPLE OF A PROCEDURE SUBMITTED BY CFT AT THE END
-    REM OF FILE RECEPTION
-    REM This procedure executes the MYPROG program, passing
-    REM the following symbolic variables as parameters:
-    REM LIST OF SYMBOLIC VARIABLES
-    REM
-    REM PART &PART PARTNER NAME
-    REM IDF &IDF FILE IDENTIFIER
-    REM IDT &IDT TRANSFER IDENTIFIER
-    REM EDATE &EDATE END OF TRANSFER DATE
-    REM ETIME &ETIME END OF TRANSFER TIME
-    REM FNAME &FNAME NAME OF FILE RECEIVED
-    REM
-    REM
-    REM ----------------------------------------------------
-    MYPROG &PART &IDF &IDT &EDATE &ETIME &FNAME
-
 If the transfer came from the SITEA partner, with a transfer IDT of
 A0112102, and if the execution of this procedure is interrupted before
 being completed, the user can re-activate it by the following command:
-
-
-    CFTUTIL SUBMIT
-         PART     =     
-     SITEA,
-         IDT     =     
-     A0112102
 
 <span id="Sending_a_response_message"></span>
 
@@ -114,23 +66,3 @@ Example
 
 If EXECRF = RM&IDF.CMD, the name of the file associated with this
 procedure is: RMPAY.CMD.
-
-
-    REM
-    REM
-    ------------------------------------------------------
-    REM
-    REM EXAMPLE OF A PROCEDURE SUBMITTED BY CFT AT THE END
-    REM FILE RECEPTION
-    REM
-    REM This procedure allows an acknowledgement message
-    REM to be sent at the end of file reception
-    REM
-    REM LIST OF SYMBOLIC VARIABLES
-    REM
-    REM PART &PART PARTNER NAME
-    REM IDT &IDT TRANSFER IDENTIFIER
-    REM
-    REM ---------------------------------------------------
-    CFTUTIL SEND TYPE=REPLY, PART=&PART, IDM=MES1, IDT=&idt,
-    MSG=’File PAY received’

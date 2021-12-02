@@ -16,8 +16,8 @@ of 20 transfers every 5 seconds.
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Use this command to delete one or more catalog entries.         </th>
+<th >Description         </th>
+<th colspan="2" >Use this command to delete one or more catalog entries.         </th>
       </tr>
    </thead>
    <tbody>
@@ -101,37 +101,14 @@ to the Transfer-related successive phases and actions).</p>         </td>
       <tr>
          <td><p>Example 1</p>
 <div>
-<pre><code>
-DELETE        PART = SIE??
-</code></pre>
+
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 and receive directions, DIRECT = BOTH by default, for the partners whose
 identifier begins with "SIE" and contains 5 characters in all.</p>
 <p>Example 2</p>
 <div>
-<pre><code>
 
-DELETE
-
-PART = HQ,
-
- 
-
-
- 
-
-DIRECT = SEND,
-
- 
-
-
- 
-
-IDF = ACCNT
-
- 
-</code></pre>
 </div>
 <p>This command deletes all transfers, IDT = * by default, in the send
 direction (DIRECT = SEND) of the model file ACCNT to the partner HQ.</p>         </td>

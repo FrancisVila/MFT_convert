@@ -23,15 +23,9 @@ An installed Transfer CFT that acts as the server, and FileZilla (or similar) to
 
 Generate the server's public/private key pair using the `pkikeygen `utility, which automatically puts the key pair in the PKI database (CFTPKU).
 
-
-    PKIUTIL pkikeygen id=SRV_PRIV_KEY, keylen=2048
-
 ### 2. Interpret the predefined SFTP template
 
 From the runtime directory, interpret the `cft-sftp.conf` template (click [here]() to view the template). Remember, Transfer CFT and the Transfer CFT Copilot server must be stopped.
-
-
-    cftinit conf/cft-sftp.conf
 
 This example uses the most basic type of authentication. However, the `cft-sftp.conf` template includes examples of multiple types of authentication, as described in detail in [SSH concepts](../sftp_keys_concepts).
 
@@ -66,42 +60,3 @@ Drag and drop files to `FLOW01 `or `FLOW02 `to perform file transfers.
 <img src="/Images/TransferCFT/fz_client.png" class="mediumWidth" />
 
 You can check the Transfer CFT log for details.
-
-
-
-    00 19/03/26 10:42:52  CFTY51I SSH server session established CTX=32000 PROT=SFTP Version=SSH2
-    Cipher in=aes256-ctr Cipher out=aes256-ctr Key
-    00 19/03/26 10:42:52  CFTY51I+exchange=curve25519-sha256@libssh.org hmac in=hmac-sha2-256
-    hmac out=hmac-sha2-256
-    00 19/03/26 10:42:52  CFTT70I The user user1 is connecting with method Password
-    00 19/03/26 10:42:52  CFTY53I SFTP server session established CTX=32000 PROT=SFTP Version=3
-    Authentication=Password CFT Client=No
-    00 19/03/26 10:42:52  CFTH56I SFTP Server    session opened <PART=USER1 IDS=32000
-    HOST=127.0.0.1>
-    00 19/03/26 10:43:08  CFTY51I SSH server session established CTX=33000 PROT=SFTP Version=SSH2
-    Cipher in=aes256-ctr Cipher out=aes256-ctr Key
-    00 19/03/26 10:43:08  CFTY51I+exchange=curve25519-sha256@libssh.org hmac in=hmac-sha2-256
-    hmac out=hmac-sha2-256
-    00 19/03/26 10:43:08  CFTT70I The user user1 is connecting with method Password
-    00 19/03/26 10:43:08  CFTY53I SFTP server session established CTX=33000 PROT=SFTP Version=3
-    Authentication=Password CFT Client=No
-    00 19/03/26 10:43:08  CFTH56I SFTP Server    session opened <PART=USER1 IDS=33000
-    HOST=127.0.0.1>
-    00 19/03/26 10:43:08  CFTW09I CFTRECV FLOW01 <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430 NIDF=FLOW01>
-    00 19/03/26 10:43:08  CFTT53I Server    file created       <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430>
-    00 19/03/26 10:43:08  CFTT55I Server    file opened        <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430>
-    00 19/03/26 10:43:08  CFTT57I Server    transfer started   <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430 IDS=33000>
-    00 19/03/26 10:43:08  CFTT58I Server    transfer ended     <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430 IDS=33000>
-    00 19/03/26 10:43:08  CFTT58I Transfer deselected          <PART=USER1 IDS=33000 IDF=FLOW01
-    IDT=C2610430>
-    00 19/03/26 10:43:08  CFTT56I Server    file closed        <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430>
-    00 19/03/26 10:43:08  CFTT54I Server    file deselected    <IDTU=A0000001 PART=USER1 IDF=FLOW01
-    IDT=C2610430>
-    00 19/03/26 10:43:08  CFTT88I+<IDTU=A0000001 WORKINGDIR=sftp/user1/flow01
-    FNAME=FLOW01/stdio NBC=147998 DURATION=0s>

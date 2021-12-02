@@ -6,21 +6,11 @@
 
 The Transfer CFT software has a SYSMOD FMID (Function Module ID) that identifies the software and its release number. For example, FMID TCF0300 identifies the Transfer CFT 3.3.2 release.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>FMID</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Format</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>TCF0100</p>         </td>
-         <td><ul>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  FMID  |  Format  |
+| --- | --- |
+|  TCF0100  |   |
+
 
 ## Upload the SMP/E package to the mainframe
 
@@ -28,35 +18,14 @@ The Transfer CFT software has a SYSMOD FMID (Function Module ID) that identifie
 2.  Run the setup.bat (Windows) or setup.sh (Unix).
 3.  Enter the following parameters in the console. Upon completion you require an FTP client.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Question</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Default value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Dataset name for the product SMPE samples</p>         </td>
-         <td><p>AXWAY.SMPE.CFT332.SMPCNTL</p>         </td>
-      </tr>
-      <tr>
-         <td><p>USS SMP/E Network Temporary Store</p>         </td>
-         <td><p>/home/AXWAY/smpnts</p>         </td>
-      </tr>
-      <tr>
-         <td><p>USS package subdirectory</p>         </td>
-         <td><p>CFT332</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Hostname mainframe address</p>
-<p>Login user</p>
-<p>Login password</p>         </td>
-         <td><p> </p>
-<p> </p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Question  |  Default value  |
+| --- | --- |
+|  Dataset name for the product SMPE samples  |  AXWAY.SMPE.CFT332.SMPCNTL  |
+|  USS SMP/E Network Temporary Store  |  /home/AXWAY/smpnts  |
+|  USS package subdirectory  |  CFT332  |
+|  Hostname mainframe address<br/>Login user<br/>Login password  |  <br/>  |
+
 
 -   The setup procedure allocates the destination library dataset (default is AXWAY.SMPE.CFT332.SMPCNTL),  
     with the attributes recfm=fb,lrecl=80,blksize=27920,space=(cyl,(1,5)).
@@ -74,263 +43,87 @@ You can run the setup procedure in silent mode, `setup –s`. In this case, you 
 The user ID you use must have read access to the SAF facility class resources GIM.CMD.command and GIM.PGM.program, for example PERMIT GIM.\* CLASS(FACILITY) ID(user ID) ACCESS(READ).
 
 1.  Edit the sample jobs in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ&, and the optional device &UNIT& and volume &VOLUME&.  
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>$C01DCSI</p>         </td>
-             <td><p>Allocate the SMP/E CSI, and the operational and work data sets used by SMP/E.</p>         </td>
-          </tr>
-          <tr>
-             <td><p>$C02DZON</p>         </td>
-             <td><p>Define the SMP/E distribution and target zones.</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Member Name  |  Description  |
+| --- | --- |
+|  $C01DCSI  |  Allocate the SMP/E CSI, and the operational and work data sets used by SMP/E.  |
+|  $C02DZON  |  Define the SMP/E distribution and target zones.  |
+
 2.  Submit the jobs in the order listed.
 
 ## Receive the Transfer CFT SMP/E product
 
 1.  Edit the sample job listed in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ&.  
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>$C10RECV</p>         </td>
-             <td><p>UNPAX the archive package and RECEIVE the FMIDs functions.</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Member name  |  Description  |
+| --- | --- |
+|  $C10RECV  |  UNPAX the archive package and RECEIVE the FMIDs functions.  |
+
 2.  Submit the job.  
     The following data sets (approximately 300 cylinders) are created and suffixed by their corresponding FMID identifier (TCF0nnn) and RELFILEs number (Fn).  
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Number</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data Set Suffix</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>  1</p>         </td>
-             <td><p>TCF0nnn.F1</p>         </td>
-             <td><p>HFS pax files</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  2</p>         </td>
-             <td><p>TCF0nnn.F2</p>         </td>
-             <td><p>Transfer CFT XML files</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  3</p>         </td>
-             <td><p>TCF0nnn.F3</p>         </td>
-             <td><p>Transfer CFT exec procedures </p>         </td>
-          </tr>
-          <tr>
-             <td><p>  4</p>         </td>
-             <td><p>TCF0nnn.F4</p>         </td>
-             <td><p>Transfer CFT JCLs</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  5</p>         </td>
-             <td><p>TCF0nnn.F5</p>         </td>
-             <td><p>Trusted File messages</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  6</p>         </td>
-             <td><p>TCF0nnn.F6</p>         </td>
-             <td><p>Transfer CFT parameter and JCL samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  7</p>         </td>
-             <td><p>TCF0nnn.F7</p>         </td>
-             <td><p>Transfer CFT general parameters</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  8</p>         </td>
-             <td><p>TCF0nnn.F8</p>         </td>
-             <td><p>Link-edit maps</p>         </td>
-          </tr>
-          <tr>
-             <td><p>  9</p>         </td>
-             <td><p>TCF0nnn.F9</p>         </td>
-             <td><p>Transfer CFT load modules</p>         </td>
-          </tr>
-          <tr>
-             <td><p>10</p>         </td>
-             <td><p>TCF0nnn.F10</p>         </td>
-             <td><p>Copy COBOL</p>         </td>
-          </tr>
-          <tr>
-             <td><p>11</p>         </td>
-             <td><p>TCF0nnn.F11</p>         </td>
-             <td><p>H headers</p>         </td>
-          </tr>
-          <tr>
-             <td><p>12</p>         </td>
-             <td><p>TCF0nnn.F12</p>         </td>
-             <td><p>Assembler macros</p>         </td>
-          </tr>
-          <tr>
-             <td><p>13</p>         </td>
-             <td><p>TCF0nnn.F13</p>         </td>
-             <td><p>Assembler samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>14</p>         </td>
-             <td><p>TCF0nnn.F14</p>         </td>
-             <td><p>C samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>15</p>         </td>
-             <td><p>TCF0nnn.F15</p>         </td>
-             <td><p>COBOL samples</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  File Number  |  Data Set Suffix  |  Description  |
+| --- | --- | --- |
+|  1  |  TCF0nnn.F1  |  HFS pax files  |
+|  2  |  TCF0nnn.F2  |  Transfer CFT XML files  |
+|  3  |  TCF0nnn.F3  |  Transfer CFT exec procedures  |
+|  4  |  TCF0nnn.F4  |  Transfer CFT JCLs  |
+|  5  |  TCF0nnn.F5  |  Trusted File messages  |
+|  6  |  TCF0nnn.F6  |  Transfer CFT parameter and JCL samples  |
+|  7  |  TCF0nnn.F7  |  Transfer CFT general parameters  |
+|  8  |  TCF0nnn.F8  |  Link-edit maps  |
+|  9  |  TCF0nnn.F9  |  Transfer CFT load modules  |
+|  10  |  TCF0nnn.F10  |  Copy COBOL  |
+|  11  |  TCF0nnn.F11  |  H headers  |
+|  12  |  TCF0nnn.F12  |  Assembler macros  |
+|  13  |  TCF0nnn.F13  |  Assembler samples  |
+|  14  |  TCF0nnn.F14  |  C samples  |
+|  15  |  TCF0nnn.F15  |  COBOL samples  |
+
 
 ## Install the target libraries with SMP/E
 
 1.  Edit the sample jobs that are listed in the following table, modifying as necessary; supply a valid JOB JCL card statement, select and modify the dataset qualifier &HLQ& and the optional device &UNIT& and volume &VOLUME&.  
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member name</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>$C20ALLT</p>         </td>
-             <td><p>Allocate the Target libraries.</p>         </td>
-          </tr>
-          <tr>
-             <td><p>$C30FAPP</p>         </td>
-             <td><p>Perform an APPLY (with the CHECK operand) to install the SYSMOD functions in the target zone and libraries.</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Member name  |  Description  |
+| --- | --- |
+|  $C20ALLT  |  Allocate the Target libraries.  |
+|  $C30FAPP  |  Perform an APPLY (with the CHECK operand) to install the SYSMOD functions in the target zone and libraries.  |
+
 
 2.  Submit the jobs in the order listed.  
     If the $C30FAPP return code equals zero, edit $C30FAPP, remove the CHECK command, and resubmit the job.  
     The $C20ALLT job creates, and the $C30FAPP job updates, the following data sets (approximately 300 cylinders).  
 
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Data Set Suffix</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File Type</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>CF0nnnnn.SCR          </p>         </td>
-             <td><p>PDSE / VB</p>         </td>
-             <td><p>HFS pax files</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.XMLLIB         </p>         </td>
-             <td><p>PDSE / VB</p>         </td>
-             <td><p>Transfer CFT XML files</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.EXEC        </p>         </td>
-             <td><p>PDS / FB</p>         </td>
-             <td><p>Transfer CFT exec procedures </p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.INSTALL  </p>         </td>
-             <td><p>PDS / FB</p>         </td>
-             <td><p>Transfer CFT JCLs</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.PKIMSG  </p>         </td>
-             <td><p>PDSE / VB</p>         </td>
-             <td><p>Trusted Files messages</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.SAMPLE  </p>         </td>
-             <td><p>PDS / FB</p>         </td>
-             <td><p>Transfer CFT parameter and JCL samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.UPARM    </p>         </td>
-             <td><p>PDS / VB</p>         </td>
-             <td><p>Transfer CFT general parameters</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.CNTL         </p>         </td>
-             <td><p>PDSE/ FB</p>         </td>
-             <td><p>Link-edit maps</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.LOAD          </p>         </td>
-             <td><p>PDSE / U</p>         </td>
-             <td><p>Transfer CFT load modules</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.COPY       </p>         </td>
-             <td><p>PDSE/ FB</p>         </td>
-             <td><p>Copy COBOL</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.H               </p>         </td>
-             <td><p>PDSE / VB</p>         </td>
-             <td><p>H headers</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.MAC          </p>         </td>
-             <td><p>PDSE / FB</p>         </td>
-             <td><p>Assembler macros</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.SAMPLEA </p>         </td>
-             <td><p>PDSE / FB</p>         </td>
-             <td><p>Assembler samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.SAMPLEC </p>         </td>
-             <td><p>PDSE / VB</p>         </td>
-             <td><p>C samples</p>         </td>
-          </tr>
-          <tr>
-             <td><p>CF0nnnnn.SAMPLEO </p>         </td>
-             <td><p>PDSE / FB</p>         </td>
-             <td><p>COBOL samples</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Data Set Suffix  |  File Type  |  Description  |
+| --- | --- | --- |
+|  CF0nnnnn.SCR  |  PDSE / VB  |  HFS pax files  |
+|  CF0nnnnn.XMLLIB  |  PDSE / VB  |  Transfer CFT XML files  |
+|  CF0nnnnn.EXEC  |  PDS / FB  |  Transfer CFT exec procedures  |
+|  CF0nnnnn.INSTALL  |  PDS / FB  |  Transfer CFT JCLs  |
+|  CF0nnnnn.PKIMSG  |  PDSE / VB  |  Trusted Files messages  |
+|  CF0nnnnn.SAMPLE  |  PDS / FB  |  Transfer CFT parameter and JCL samples  |
+|  CF0nnnnn.UPARM  |  PDS / VB  |  Transfer CFT general parameters  |
+|  CF0nnnnn.CNTL  |  PDSE/ FB  |  Link-edit maps  |
+|  CF0nnnnn.LOAD  |  PDSE / U  |  Transfer CFT load modules  |
+|  CF0nnnnn.COPY  |  PDSE/ FB  |  Copy COBOL  |
+|  CF0nnnnn.H  |  PDSE / VB  |  H headers  |
+|  CF0nnnnn.MAC  |  PDSE / FB  |  Assembler macros  |
+|  CF0nnnnn.SAMPLEA  |  PDSE / FB  |  Assembler samples  |
+|  CF0nnnnn.SAMPLEC  |  PDSE / VB  |  C samples  |
+|  CF0nnnnn.SAMPLEO  |  PDSE / FB  |  COBOL samples  |
+
 
     ## Create the Transfer CFT instance files
 
     Edit the sample job listed below, modifying as necessary: supply a valid JOB JCL card statement, choose and modify the dataset qualifier &HLQ& of the SMP/E target libraries, and select the appropriate Transfer CFT instance qualifier &CFT& and Transfer CFT instance device &UNIT& and volume &VOLUME&.
 
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>$C40ICFT</p>         </td>
-             <td><p>Creates the Transfer CFT instance files.</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Member Name  |  Description  |
+| --- | --- |
+|  $C40ICFT  |  Creates the Transfer CFT instance files.  |
+
 
     Submit the job.
 
@@ -342,25 +135,10 @@ The user ID you use must have read access to the SAF facility class resources GI
 
     The following table lists additional sample jobs.
 
-    <table>
-       <thead>
-          <tr>
-    <th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Member Name</p>         </th>
-    <th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Description</p>         </th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr>
-             <td><p>$C10REJT</p>         </td>
-             <td><p>Performs a REJECT of the SYSMODs in the SMP/E global zone.</p>         </td>
-          </tr>
-          <tr>
-             <td><p>$C50ALLD</p>         </td>
-             <td><p>Allocates the distribution libraries.</p>         </td>
-          </tr>
-          <tr>
-             <td><p>$C60FACC</p>         </td>
-             <td><p>Performs an ACCEPT (with the CHECK operand) the SYSMOD functions in the distribution zone and libraries.</p>         </td>
-          </tr>
-       </tbody>
-    </table>
+    
+|  Member Name  |  Description  |
+| --- | --- |
+|  $C10REJT  |  Performs a REJECT of the SYSMODs in the SMP/E global zone.  |
+|  $C50ALLD  |  Allocates the distribution libraries.  |
+|  $C60FACC  |  Performs an ACCEPT (with the CHECK operand) the SYSMOD functions in the distribution zone and libraries.  |
+

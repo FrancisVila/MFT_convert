@@ -94,140 +94,39 @@ The client and server security profiles must be mutually authenticated. However,
 
 or {{< TransferCFT/flowmanager  >}} sends the updated configuration to {{< TransferCFT/componentshortname  >}}. The following are the {{< TransferCFT/componentshortname  >}} parameters updated in this process. However, you can overwrite certain default values by assigning an existing policy at registration. Please see, below for details.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>am.passport.cg.organization         </td>
-         <td><p>Org</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>You must restart both Transfer CFT and Copilot following a change to this parameter.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>am.passport.domain         </td>
-         <td><p>CG</p>         </td>
-      </tr>
-      <tr>
-         <td>am.passport.hostname         </td>
-         <td>&lt; host name &gt;         </td>
-      </tr>
-      <tr>
-         <td>am.passport.instance_id         </td>
-         <td>$(cft.instance_group).$(cft.instance_id)         </td>
-      </tr>
-      <tr>
-         <td>am.passport.port         </td>
-         <td>6666         </td>
-      </tr>
-      <tr>
-         <td>am.passport.use_ssl         </td>
-         <td>Yes         </td>
-      </tr>
-      <tr>
-         <td>am.passport.userctrl.check_permissions_on_transfer_execution         </td>
-         <td>No         </td>
-      </tr>
-      <tr>
-         <td>am.type         </td>
-         <td>passport         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.rt         </td>
-         <td>10D         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.rx         </td>
-         <td>10D         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.st         </td>
-         <td>10D         </td>
-      </tr>
-      <tr>
-         <td>cft.purge.sx         </td>
-         <td>10D         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos         </td>
-         <td>4         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.0.max_rate_in         </td>
-         <td>-1         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.0.max_rate_out         </td>
-         <td>-1         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.1.weight_in         </td>
-         <td>80         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.1.weight_out         </td>
-         <td>80         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.2.weight_in         </td>
-         <td>15         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.2.weight_out         </td>
-         <td>15         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.3.weight_in         </td>
-         <td>5         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.cos.3.weight_out         </td>
-         <td>5         </td>
-      </tr>
-      <tr>
-         <td>cft.server.bandwitdth.enable         </td>
-         <td>No         </td>
-      </tr>
-      <tr>
-         <td>cg.mutual_auth_port         </td>
-         <td>&lt;secured communications port&gt;         </td>
-      </tr>
-      <tr>
-         <td>copilot.misc.createprocessasuser         </td>
-         <td>No         </td>
-      </tr>
-      <tr>
-         <td>pki.type         </td>
-         <td><p>cft</p>
-<blockquote>
-<p><strong>Note:</strong></p>
-<p>Except when using a SAF-based PKI Transfer CFT, in which case system is the value.</p>
-</blockquote>         </td>
-      </tr>
-      <tr>
-         <td>sentinel.trkipaddr         </td>
-         <td>&lt;Sentinel – Front-end host &gt;         </td>
-      </tr>
-      <tr>
-         <td>sentinel.trkipport         </td>
-         <td>&lt;Sentinel - Font-end port&gt;         </td>
-      </tr>
-      <tr>
-         <td>sentinel.xfb.enable         </td>
-         <td>Yes         </td>
-      </tr>
-      <tr>
-         <td>sentinel.xfb.use_ssl         </td>
-         <td>Yes         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Value  |
+| --- | --- |
+| am.passport.cg.organization  |  Org <blockquote> **Note:**<br/>You must restart both Transfer CFT and Copilot following a change to this parameter. </blockquote>  |
+| am.passport.domain  |  CG  |
+| am.passport.hostname  | &lt; host name &gt;  |
+| am.passport.instance_id  | $(cft.instance_group).$(cft.instance_id)  |
+| am.passport.port  | 6666  |
+| am.passport.use_ssl  | Yes  |
+| am.passport.userctrl.check_permissions_on_transfer_execution  | No  |
+| am.type  | passport  |
+| cft.purge.rt  | 10D  |
+| cft.purge.rx  | 10D  |
+| cft.purge.st  | 10D  |
+| cft.purge.sx  | 10D  |
+| cft.server.bandwitdth.cos  | 4  |
+| cft.server.bandwitdth.cos.0.max_rate_in  | -1  |
+| cft.server.bandwitdth.cos.0.max_rate_out  | -1  |
+| cft.server.bandwitdth.cos.1.weight_in  | 80  |
+| cft.server.bandwitdth.cos.1.weight_out  | 80  |
+| cft.server.bandwitdth.cos.2.weight_in  | 15  |
+| cft.server.bandwitdth.cos.2.weight_out  | 15  |
+| cft.server.bandwitdth.cos.3.weight_in  | 5  |
+| cft.server.bandwitdth.cos.3.weight_out  | 5  |
+| cft.server.bandwitdth.enable  | No  |
+| cg.mutual_auth_port  | &lt;secured communications port&gt;  |
+| copilot.misc.createprocessasuser  | No  |
+| pki.type  |  cft <blockquote> **Note:**<br/>Except when using a SAF-based PKI Transfer CFT, in which case system is the value. </blockquote>  |
+| sentinel.trkipaddr  | &lt;Sentinel – Front-end host &gt;  |
+| sentinel.trkipport  | &lt;Sentinel - Font-end port&gt;  |
+| sentinel.xfb.enable  | Yes  |
+| sentinel.xfb.use_ssl  | Yes  |
+
 
 ### {{< TransferCFT/componentshortname  >}} instance id
 

@@ -6,80 +6,13 @@
 
 <img src="/Images/TransferCFT/TransferCFT_Multiple_send_w_CG.png" class="maxWidth" />
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: center;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Task         </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1</p>
-<p> </p>
-<p> </p>         </td>
-         <td><p>Create a flow.</p>
-<p> </p>
-<p><br />
-</p>         </td>
-         <td><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
-<p>Create a flow named <strong>multiple_files_flow</strong>, and give it the identifier <strong>flow02</strong>.</p>
-<p>Define Store_66 as the Source, and MainOffice as the Target.</p>
-<p><br />
-</p>         </td>
-         <td><a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td><p>2</p>
-<p> </p>         </td>
-         <td><p>Enable a multiple files exchange.</p>
-<p> </p>         </td>
-         <td><p>Select the Source, and then <strong>File properties</strong>.</p>
-<p>Under Filename select <strong>Multiple</strong>.</p>
-<p> </p>         </td>
-         <td><a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td><p>3</p>
-<p> </p>         </td>
-         <td><p>Deploy the flow.</p>
-<p> </p>         </td>
-         <td><p>In click <strong>Deploy</strong> to save and deploy.</p>
-<p> </p>         </td>
-         <td><a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td><p>4</p>
-<p> </p>
-<p> </p>         </td>
-         <td><p>Add three files for the exchange.</p>
-<p> </p>
-<p> </p>         </td>
-         <td><p>Create a folder, you can name it <strong>Store_66</strong>, in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime/pub </code>directory.</p>
-<p>Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.</p>
-<p> </p>         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td><p>5</p>
-<p> </p>
-<p> </p>
-<p> </p>         </td>
-         <td><p>Execute the SEND command.</p>
-<p> </p>
-<p> </p>         </td>
-         <td>From the source {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code>
-<p>Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.</p>
-<p> </p>         </td>
-         <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-      <tr>
-         <td>6         </td>
-         <td>Monitor the transfer status.         </td>
-         <td>In the <strong>Flows</strong> tab, click <strong>Monitoring</strong> to check the status of the file exchange.         </td>
-         <td><a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Task  | Description  | Details  |
+| --- | --- | --- | --- |
+|  1<br/> <br/>  |  Create a flow.<br/> <br/><br />  |  In click **Flows** &gt; **Add flow**.<br/>Create a flow named **multiple_files_flow**, and give it the identifier **flow02**.<br/>Define Store_66 as the Source, and MainOffice as the Target.<br/><br />  | <a href="../intro_cg_task_catalog/t_multiple_filesflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  2<br/>  |  Enable a multiple files exchange.<br/>  |  Select the Source, and then **File properties**.<br/>Under Filename select **Multiple**.<br/>  | <a href="../intro_cg_task_catalog/t_multiple_files"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  3<br/>  |  Deploy the flow.<br/>  |  In click **Deploy** to save and deploy.<br/>  | <a href="../intro_cg_task_catalog/t_savedeployflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+|  4<br/> <br/>  |  Add three files for the exchange.  |  Create a folder, you can name it **Store_66**, in the Store_66 {{< TransferCFT/componentshortname  >}} <code>runtime/pub </code>directory. Copy three test files to this folder, for example SALES_report, DAILY_news, and INVENTORY.  |   |
+|  5  |  Execute the SEND command.  | From the source {{< TransferCFT/componentshortname  >}}, run the following command: <code>CFTUTIL SEND part=&lt;instance_target&gt;, idf=flow02, fname=#pub/Store_66/*</code> Remember to replace <code>&lt;instance_target&gt;</code> with the Transfer CFT instance for the target as it displays in your application list.  | <a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+| 6  | Monitor the transfer status.  | In the **Flows** tab, click **Monitoring** to check the status of the file exchange.  | <a href="../intro_cg_task_catalog/c_flow_monitoring"><img src="/Images/TransferCFT/mapArrow.png" /></a>  |
+

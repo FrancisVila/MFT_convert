@@ -33,21 +33,9 @@ Examples
 
 Use the CFTUTIL utility to execute the ABOUT command to find the CPU ID.
 
-
-    CFTUTIL PARAM(ABOUT) 
-     Host information :
-     * model = 525 * 
-     = 10A16B2
-
 In this example, you would provide the CPU ID .
 
 Use the display system value command to get the serial number, known as QSRLNBR:
-
-
-    DSPSYSVAL SYSVAL(QSRLNBR)
-    System value . . . . . : QSRLNBR
-    Description . . . . . : System serial number
-    : 06890AP
 
 In this example, you would provide the CPU ID` 06890AP`.
 

@@ -19,19 +19,7 @@
 ## Setup procedure
 
 1.  For SSL connections to S3 storage, libCURL requires a path to the CA certificates bundle to authenticate the peer. Set this path in the UCONF `ssl.certificates.ca_cert_bundle` parameter.
-
 2.  Access keys are used for the AWS credentials, so each user accessing S3 services must have an account allowing access to S3 services. Define the users and access key information in UCONF. For example:  
-
-
-
-        CFTUTIL uconfset id=aws.credentials, value="account1 account2"
-        CFTUTIL uconfset id=aws.credentials.account1.access_key_id, value="20_characters_string"
-        CFTUTIL uconfset id=aws.credentials.account1.secret_access_key, value="40_characters_string"
-        CFTUTIL uconfset id=aws.credentials.account2.access_key_id, value="20_characters_string"
-        CFTUTIL uconfset id=aws.credentials.account2.secret_access_key, value="40_characters_string"
-         
-        To check, enter:
-        CFTUTIL listuconf id=aws.credentials*
 
 ## Parameter descriptions
 
@@ -40,9 +28,9 @@ The following table describes Transfer CFT's Amazon S3-related parameters.
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+<th >Parameter         </th>
+<th >Type         </th>
+<th >Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -161,74 +149,19 @@ If you did not define a `storageaccount `value in the CFTSEND/CFTRECV objects, w
 
 You can enter your access key pair information in this file using the following format:
 
-
-
-    [default]
-    access_key_id = YOUR_KEY
-    secret_access_key = YOUR_SECRET
-
 ## Creating send and receive definitions
 
 You must include the following parameters in your [CFTSEND/CFTRECV](../../c_intro_userinterfaces/command_summary) definitions for S3 storage:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter<span id="storageaccount"></span>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>fname         </td>
-         <td>string (key)         </td>
-         <td>The fname field corresponds to the S3 services key.         </td>
-      </tr>
-      <tr>
-         <td>workingdir         </td>
-         <td>string         </td>
-         <td><p>There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:</p>
-<ul>
-<li><code>s3://bucket.region</code><br />
 
-<ul>
-<li>the bucket name</li>
-<li>a period (.)</li>
-<li>the region</li>
-</ul></li>
-<li><code>s3://http[s]://endpoint[:port]/bucket</code><br />
+| Parameter<span id="storageaccount"></span>  | Type  | Description  |
+| --- | --- | --- |
+| fname  | string (key)  | The fname field corresponds to the S3 services key.  |
+| workingdir  | string  |  There are two supported formats. For either, the workingdir field must start with <code>s3://</code> and be followed by the designated items in the order listed:<br/> • <code>s3://bucket.region</code><br /> <li>the bucket name<br/> • a period (.)<br/> • the region</li> <br/> • <code>s3://http[s]://endpoint[:port]/bucket</code><br /> <li>http:// or https:// for secure communication<br/> • the endpoint, which can be an IP address or the server's hostname<br/> • a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)<br/> • a slash (/)<br/> • the bucket name</li> </li>  |
+| storageaccount  | string  | Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.  |
 
-<ul>
-<li>http:// or https:// for secure communication</li>
-<li>the endpoint, which can be an IP address or the server's hostname</li>
-<li>a colon (:) and port (if not using the default of 80 for HTTP, 443 for HTTPS)</li>
-<li>a slash (/)</li>
-<li>the bucket name</li>
-</ul></li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>storageaccount         </td>
-         <td>string         </td>
-         <td>Points to the access key identifier(s) and the access key secret(s) stored in UCONF. See also <a href="../../c_intro_userinterfaces/command_summary/parameter_intro/storageaccount">storageaccount</a>.         </td>
-      </tr>
-   </tbody>
-</table>
 
 You can use the following example as a basis for configuring a CFTSEND and CFTRECV:
-
-
-
-    CFTSEND id = S3_READ,
-     fname = pub/FTEST,
-     workingdir = s3://my-cft-test.eu-west-1,
-     storageaccount=account1
-     
-    CFTRECV id = S3_WRITE,
-     fname = pub/&IDF.&IDTU.RCV,
-    workingdir = s3://https://s3.eu-west-1.amazonaws.com/my-cft-test,
-     storageaccount=account2
 
 <span id="Using"></span>
 
@@ -239,12 +172,6 @@ To enhance the use of {{< TransferCFT/componentlongname  >}} in large AWS deplo
 No configuration is required on {{< TransferCFT/componentlongname  >}}, you can simply point the CFTSEND or CFTRECV WORKINGDIR field to the desired S3 endpoint and leave the STORAGEACCOUNT definition empty.
 
 **Example**
-
-
-
-    CFTRECV id = S3_WRITE_EC2,
-    fname = pub/&IDF.&IDTU.RCV,
-    workingdir = s3://my-cft-test.eu-west-1
 
 Transfer CFT supports mixing an IAM role from an IAM instance profile with multiple IAM users who have their own access keys.
 
@@ -280,19 +207,7 @@ In this use case, Transfer CFT  receives a file from a partner over the PeSIT o
 
 In UCONF, set the S3 credentials for the receiving Transfer CFT:
 
-
-
-    uconfset id=aws.credentials, value='<ceph_user>'
-
-    uconfset id=aws.credentials.ceph_user.access_key_id,     value=<key_id>
-
-    uconfset id=aws.credentials.ceph_user.secret_access_key, value=<access_key>
-
 Configure the CFTRECV object to write to the S3 storage:
-
-
-
-    CFTRECV id=CEPH_WRITE, fname=pub/&IDF.&IDTU.RCV, workingdir=s3://http://radosgw_address.net:7480/my_bucket, storageaccount=<ceph_user>
 
 After the partner sends a file, you can check the log for transfer details.
 
@@ -304,18 +219,7 @@ In this use case, Transfer CFT reads a file from S3 and sends it over PeSIT or S
 
 Configure the UCONF credentials for the Ceph Object Storage if you have not already done so:
 
-
-
-    uconfset id=aws.credentials, value='<ceph_user>'
-
-    uconfset id=aws.credentials.ceph_user.access_key_id,    value=<key_id>
-
-    uconfset id=aws.credentials.ceph_user.secret_access_key, value=<access_key>
-
 Create the CFTSEND template, and send a file that is stored on S3 to a Transfer CFT partner.
-
-
-    CFTSEND id=ceph_send, workingdir=s3://http://radosgw_address.net:7480/<my_bucket>, storageaccount=<ceph_user>send part=paris,idf=ceph_send,fname=pub/FTEST
 
 After sending a file to the partner, you can check the log for transfer details.
 
@@ -323,25 +227,11 @@ After sending a file to the partner, you can check the log for transfer details.
 
 <span id="globally_encrypt"></span>You can activate file encryption when uploading files using either the sse-s3 or sse-kms encryption type. Use CFTUTIL and the command as follows:
 
-
-
-    uconfset id=aws.credentials.<storageaccount>.encryption_type, value='sse-s3'
-
 When using sse-kms, you must additionally enter your key identifier:
-
-
-
-    uconfset id=aws.credentials.<storageaccount>.encryption_type, value='sse-kms'
-
-    uconfset id=aws.credentials.h<storageaccount>.encryption_key_id, value=<key_id>
 
 ### Set the ACL policy
 
 You can set the Access Control List (ACL) policy for files that you upload to AWS S3 as follows:
-
-
-
-    uconfset id=aws.credentials.<storageaccount>.acl, value='<ACL policy>'
 
 ## Limitation details
 
@@ -371,14 +261,6 @@ This error may occur for one of the following reasons:
 
 <!-- -->
 
-
-    ping s3-<region>.amazonaws.com
-
-Example
-
-
-    ping  s3-eu-west-1.amazonaws.com
-
 -   On Linux, the SSL certificates auto-detection failed. Use the UCONF `ssl.certificates.ca_cert_bundle` parameter to point to current certificates.
 -   The region is invalid for the bucket. Ensure that the `workingdir `parameter of the send/recv command is valid.
 
@@ -398,18 +280,6 @@ To help resolve errors, you can use the AWS CLI tool to verify that the system c
 
 To list objects in a bucket on Amazon S3:
 
-
-
-    aws --region eu-west-1 s3api list-objects --bucket my-cft-test
-
 To list objects in a Ceph storage:
 
-
-
-    aws --endpoint-url http://radosgw_address.net:7480 s3api list-objects --bucket my_bucket
-
 To create a bucket:
-
-
-
-    aws --endpoint-url http://radosgw_address.net:7480 s3api create-bucket --bucket my_bucket

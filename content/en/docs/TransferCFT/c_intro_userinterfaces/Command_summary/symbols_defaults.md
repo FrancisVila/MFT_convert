@@ -13,132 +13,24 @@ CFT that are specific to each operating system and comprises:
 
 ## Specific symbols
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Windows         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Unix         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">z/OS         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">IBM i         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Logical name prefix</p>
-<p>If the file name begins with this character, this is a logical name interpreted by Transfer CFT.</p>         </td>
-         <td>$         </td>
-         <td>$ or _         </td>
-         <td><p>x'5B'</p>
-<p>285 = £</p>
-<p>297 = $</p>         </td>
-         <td><p>x'4E'</p>
-<p>285 = +</p>
-<p>297 = +</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Wildcard character</p>
-<p>When using the STRJCMP method, a single character that must be an exact match with a character and is used in masks for groups of files and folder monitoring.</p>         </td>
-         <td>?         </td>
-         <td>?         </td>
-         <td><p>x' 6F</p>
-<p>285 = ?</p>
-<p>297 = ?</p>         </td>
-         <td><p>x'6F'</p>
-<p>285 = ?</p>
-<p>297 = ?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Separator character (volume)</p>
-<p>For example, a file name can be represented as follows: &lt;unit&gt;&lt;Separator&gt;&lt;unitc&gt;&lt;Separator&gt;&lt;path&gt;&lt;root&gt;&lt;suf&gt;</p>
-<p>In a z/OS environment: UNIT%UNITC%PATH.ROOT.SUF</p>         </td>
-         <td>none         </td>
-         <td>none         </td>
-         <td><p>x' 6C'</p>
-<p>285 = %</p>
-<p>297 = %</p>         </td>
-         <td><p>x '5E'</p>
-<p>285 = ;</p>
-<p>297 = ;</p>         </td>
-      </tr>
-      <tr>
-         <td>Symbolic variable prefix         </td>
-         <td>&amp;         </td>
-         <td>&amp;         </td>
-         <td><p>x'50'</p>
-<p>285 = &amp;</p>
-<p>297 = &amp;</p>         </td>
-         <td><p>x'6F'</p>
-<p>285 = ?</p>
-<p>297 = ?</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Indirection file name prefix</p>
-<p>Used in a group of files or for an indirection file.</p>
-<p>For example, FNAME=&lt;Indirection prefix&gt;file name</p>         </td>
-         <td>#         </td>
-         <td>@         </td>
-         <td><p>x'7B’</p>
-<p>285 = #</p>
-<p>297 = £</p>         </td>
-         <td><p>x'B1'</p>
-<p>285 = [</p>
-<p>297 = #</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created.</p>
-<p>On Windows, for example, FNAME=pub\+dir1\dir2\ftest</p>         </td>
-         <td>+         </td>
-         <td>+         </td>
-         <td><p>+</p>
-<p>Limited to USS files</p>         </td>
-         <td><p>+</p>
-<p>Limited to HFS files</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Description  | Windows  | Unix  | z/OS  | IBM i  |
+| --- | --- | --- | --- | --- |
+|  Logical name prefix<br/>If the file name begins with this character, this is a logical name interpreted by Transfer CFT.  | $  | $ or _  |  x'5B'<br/>285 = £<br/>297 = $  |  x'4E'<br/>285 = +<br/>297 = +  |
+|  Wildcard character<br/>When using the STRJCMP method, a single character that must be an exact match with a character and is used in masks for groups of files and folder monitoring.  | ?  | ?  |  x' 6F<br/>285 = ?<br/>297 = ?  |  x'6F'<br/>285 = ?<br/>297 = ?  |
+|  Separator character (volume)<br/>For example, a file name can be represented as follows: &lt;unit&gt;&lt;Separator&gt;&lt;unitc&gt;&lt;Separator&gt;&lt;path&gt;&lt;root&gt;&lt;suf&gt;<br/>In a z/OS environment: UNIT%UNITC%PATH.ROOT.SUF  | none  | none  |  x' 6C'<br/>285 = %<br/>297 = %  |  x '5E'<br/>285 = ;<br/>297 = ;  |
+| Symbolic variable prefix  | &amp;  | &amp;  |  x'50' 285 = &amp; 297 = &amp;  |  x'6F' 285 = ? 297 = ?  |
+|  Indirection file name prefix Used in a group of files or for an indirection file. For example, FNAME=&lt;Indirection prefix&gt;file name  | #  | @  |  x'7B’ 285 = # 297 = £  |  x'B1' 285 = [ 297 = #  |
+|  Character introducing the path name of the FNAME parameter (CFTRECV) from which a tree structure is created. On Windows, for example, FNAME=pub\+dir1\dir2\ftest  | +  | +  |  + Limited to USS files  |  + Limited to HFS files  |
+
 
 ## Default files used by CFTUTIL
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>File</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Default</p>
-<p>Windows</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Unix</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>z/OS</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>IBM i</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>Parameters file </p>         </td>
-         <td><p>$CFTPARM </p>         </td>
-         <td><p>$CFTPARM</p>         </td>
-         <td><p> $CFTPARM</p>         </td>
-         <td><p> +CFTPARM</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Partners file </p>         </td>
-         <td><p>$CFTPART </p>         </td>
-         <td><p> $CFTPART</p>         </td>
-         <td><p> $CFTPART</p>         </td>
-         <td><p> +CFTPART</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Catalog file </p>         </td>
-         <td><p>$CFTCATA</p>         </td>
-         <td><p> $CFTCATA</p>         </td>
-         <td><p> $CFTCAT</p>         </td>
-         <td><p> +CFTCAT</p>         </td>
-      </tr>
-      <tr>
-         <td><p>Communication file </p>         </td>
-         <td><p>$CFTCOM  </p>         </td>
-         <td><p> $CFTCOM</p>         </td>
-         <td><p> $CFTCOM</p>         </td>
-         <td><p> +CFTCOM</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  File  |  Default<br/>Windows  |  Unix  |  z/OS  |  IBM i  |
+| --- | --- | --- | --- | --- |
+|  Parameters file  |  $CFTPARM  |  $CFTPARM  |  $CFTPARM  |  +CFTPARM  |
+|  Partners file  |  $CFTPART  |  $CFTPART  |  $CFTPART  |  +CFTPART  |
+|  Catalog file  |  $CFTCATA  |  $CFTCATA  |  $CFTCAT  |  +CFTCAT  |
+|  Communication file  |  $CFTCOM  |  $CFTCOM  |  $CFTCOM  |  +CFTCOM  |
+

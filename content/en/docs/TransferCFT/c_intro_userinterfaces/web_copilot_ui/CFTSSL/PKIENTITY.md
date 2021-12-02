@@ -18,33 +18,14 @@ The maximum number of CAs that you can enter for the ROOTCID parameter of the CF
 
 To define a certificate list, use the PKIENTITY parameters:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ID         </td>
-         <td>An identifier is a case-insensitive string with a maximum of 32 characters. If the identifier contains spaces, enclose the identifier in single quotes. (<em>mandatoryparameter</em>)         </td>
-      </tr>
-      <tr>
-         <td>CERTIFICATES<br />
-         </td>
-         <td>A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{< TransferCFT/componentshortname  >}} ignores this ID when loading CFTSSL properties.         </td>
-      </tr>
-      <tr>
-         <td><p>MODE</p>         </td>
-         <td><p>An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE)</p>         </td>
-      </tr>
-      <tr>
-         <td>PKIFNAME         </td>
-         <td>The name of the PKI internal datafile to use. (default = $CFTPKU) <em>only in command line</em>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Description  |
+| --- | --- |
+| ID  | An identifier is a case-insensitive string with a maximum of 32 characters. If the identifier contains spaces, enclose the identifier in single quotes. (*mandatoryparameter*)  |
+| CERTIFICATES<br />  | A list of up to 100 certificate IDs. Each ID is a case-insensitive string with a maximum of 32 characters. There is no check other than syntax when you insert this parameter, so if you use an ID in the CERTIFICATES list that is the same as a PKIENTITY object ID {{< TransferCFT/componentshortname  >}} ignores this ID when loading CFTSSL properties.  |
+|  MODE  |  An action on the certificate, CREATE, REPLACE, or DELETE. (default = REPLACE)  |
+| PKIFNAME  | The name of the PKI internal datafile to use. (default = $CFTPKU) *only in command line*  |
+
 
 > **Note:**
 >

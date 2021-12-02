@@ -19,50 +19,16 @@ This section describes the functions and components that are used to perform
 security operations, and comprises a set of sub-sections that describe how to configure
 and manage the Transfer CFT security objects as well as use additional {{< TransferCFT/companyname  >}} products to offer security features.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Topics/sections         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p><a href="transport_security_concepts_start_here">Transport
-security concepts</a></p>         </td>
-         <td><p>Describes transfer security concepts that are referred
-to further in this document, as well as how these security functions work.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="configuring_transport_security_start_here#CFT_Configuration">Configuring
-transport security</a></p>         </td>
-         <td><p>Explains how to use line commands to configure the Transfer
-CFT to manage the SSL and TLS protocols.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="certificates#Managing%20certificates:%20Start%20here">Managing
-certificates</a></p>         </td>
-         <td><p>Explains how to use either the UI or line commands to
-manage security certificates.</p>         </td>
-      </tr>
-      <tr>
-         <td><p><a href="using_pki_exits_start_here#Using_PKI_exits__Start_here">Using
-PKI exits</a></p>         </td>
-         <td><p>Describes the rules for implementing a PKI exit.</p>         </td>
-      </tr>
-      <tr>
-         <td>Using PassPort PS         </td>
-         <td>Describes the parameters used for Transfer CFT to PassPort PS server connectivity, and how to optionally implement SSL, or a clear connection, for increased security.         </td>
-      </tr>
-      <tr>
-         <td><a href="tf_overview_cft">Using Trusted File for encoding</a>         </td>
-         <td>Describes how to implement Axway Trusted File encoding.         </td>
-      </tr>
-      <tr>
-         <td><a href="sr_overview">Using SecureRelay</a>         </td>
-         <td>Describes the Axway Secure Relay integration with Transfer CFT.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Topics/sections  | Description  |
+| --- | --- |
+|  <a href="transport_security_concepts_start_here">Transport security concepts</a>  |  Describes transfer security concepts that are referred to further in this document, as well as how these security functions work.  |
+|  <a href="configuring_transport_security_start_here#CFT_Configuration">Configuring transport security</a>  |  Explains how to use line commands to configure the Transfer CFT to manage the SSL and TLS protocols.  |
+|  <a href="certificates#Managing%20certificates:%20Start%20here">Managing certificates</a>  |  Explains how to use either the UI or line commands to manage security certificates.  |
+|  <a href="using_pki_exits_start_here#Using_PKI_exits__Start_here">Using PKI exits</a>  |  Describes the rules for implementing a PKI exit.  |
+| Using PassPort PS  | Describes the parameters used for Transfer CFT to PassPort PS server connectivity, and how to optionally implement SSL, or a clear connection, for increased security.  |
+| <a href="tf_overview_cft">Using Trusted File for encoding</a>  | Describes how to implement Axway Trusted File encoding.  |
+| <a href="sr_overview">Using SecureRelay</a>  | Describes the Axway Secure Relay integration with Transfer CFT.  |
+
 
  

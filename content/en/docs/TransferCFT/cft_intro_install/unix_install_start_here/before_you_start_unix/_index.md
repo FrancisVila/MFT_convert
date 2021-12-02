@@ -12,55 +12,16 @@ If you want to enable {{< TransferCFT/centralgovernancename  >}} during installa
 
 This table presents a high-level overview of the installation process. By default, the {{< TransferCFT/componentlongname  >}} installation uses a delivered configuration file called `initialize.properties` that provides a series of default values to simplify installation. It is important that you understand the difference between customizing this file before or after running the installer prior to starting the process.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">          </th>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Step         </th>
-<th class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Details         </th>
-<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">More info         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>1         </td>
-         <td>Complete prerequisites         </td>
-         <td>Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.         </td>
-         <td><a href="prereqs_overview" class="MCXref xref">Prerequisites</a>         </td>
-      </tr>
-      <tr>
-         <td>2         </td>
-         <td>Download and unzip         </td>
-         <td>Download the installation package from the support site and unzip.         </td>
-         <td><a href="#Download" class="MCXref xref">Install Transfer CFT</a>         </td>
-      </tr>
-      <tr>
-         <td>3         </td>
-         <td>Customize the properties file         </td>
-         <td><p>Some installation parameters are mandatory to run Transfer CFT.</p>
-<p>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.</p>         </td>
-         <td><a href="new_install_ux" class="MCXref xref">Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>         </td>
-      </tr>
-      <tr>
-         <td>          </td>
-         <td>Run chmod         </td>
-         <td>Make the file executable.         </td>
-         <td><a href="install_transfer_cft_1#Make" class="MCXref xref">Make the file executable</a>         </td>
-      </tr>
-      <tr>
-         <td>4         </td>
-         <td>Start the installation         </td>
-         <td>Select the installation mode and run using either the default configuration file or your customized file.         </td>
-         <td><a href="install_transfer_cft_1" class="MCXref xref">Start the installation</a>         </td>
-      </tr>
-      <tr>
-         <td>*         </td>
-         <td>Optional customization         </td>
-         <td>If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.         </td>
-         <td>          </td>
-      </tr>
-   </tbody>
-</table>
+
+|   | Step  | Details  | More info  |
+| --- | --- | --- | --- |
+| 1  | Complete prerequisites  | Check and fulfill prerequisites such as obtaining a key or system-specific prerequisites.  | <a href="prereqs_overview" class="MCXref xref">Prerequisites</a>  |
+| 2  | Download and unzip  | Download the installation package from the support site and unzip.  | <a href="#Download" class="MCXref xref">Install Transfer CFT</a>  |
+| 3  | Customize the properties file  |  Some installation parameters are mandatory to run Transfer CFT.<br/>You can customize the <code>initialize.properties</code> file before the install, use your own file, or use the unmodified default file, but you cannot start Transfer CFT until the mandatory values are set.  | <a href="new_install_ux" class="MCXref xref">Customize the initialize.properties file</a> <a href="../../windows_install_start_here/before_you_start_win/properties_file_win"></a>  |
+|   | Run chmod  | Make the file executable.  | <a href="install_transfer_cft_1#Make" class="MCXref xref">Make the file executable</a>  |
+| 4  | Start the installation  | Select the installation mode and run using either the default configuration file or your customized file.  | <a href="install_transfer_cft_1" class="MCXref xref">Start the installation</a>  |
+| *  | Optional customization  | If you used the default configuration file, you must customize the Transfer CFT settings before starting the product.  |   |
+
 
 ### Installation restrictions for multi-node
 

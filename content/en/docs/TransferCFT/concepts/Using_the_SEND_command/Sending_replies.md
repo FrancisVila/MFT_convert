@@ -36,19 +36,7 @@ errors were detected.
 If the initial sender does not support this function, as for example in earlier versions of Transfer CFT, the final partner does not transmit the
 negative acknowledgement and the Transfer CFT log file displays:
 
-
-    CFTT93W PART=XFB1 IDS=00008 Negative ack not supported by server
-
 **Example**
-
-
-
-    cftutil send 
-    type=nack,
-    part=&part,
-    idm=nack,
-    msg=recu,
-    idt=&idt
 
 <table>
          
@@ -58,8 +46,8 @@ negative acknowledgement and the Transfer CFT log file displays:
    
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th colspan="2" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Use this command to initiates the sending of a message
+<th >Description         </th>
+<th colspan="2" >Use this command to initiates the sending of a message
 of a particular type. This message is a reply to a previous transfer from
 the partner.         </th>
       </tr>

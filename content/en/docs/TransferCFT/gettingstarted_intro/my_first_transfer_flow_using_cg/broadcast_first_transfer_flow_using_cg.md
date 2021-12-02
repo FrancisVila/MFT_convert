@@ -17,9 +17,9 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <table>
    <thead>
       <tr>
-<th style="text-align: left;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
+<th  colspan="2" >  Task         </th>
+<th  >Description         </th>
+<th  >Details         </th>
       </tr>
    </thead>
    <tbody>
@@ -93,9 +93,9 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
+<th  colspan="2" >  Task         </th>
+<th  >Description         </th>
+<th >Details         </th>
       </tr>
    </thead>
    <tbody>

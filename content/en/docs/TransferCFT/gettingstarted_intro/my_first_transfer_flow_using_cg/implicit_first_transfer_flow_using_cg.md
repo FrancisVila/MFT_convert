@@ -13,9 +13,9 @@
 <table>
    <thead>
       <tr>
-<th style="text-align: center;" colspan="2" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">  Task         </th>
-<th style="text-align: left;" class="TableStyle-SynchTaskMap-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTaskMap-HeadD-Column1-Header1">Details         </th>
+<th  colspan="2" >  Task         </th>
+<th  >Description         </th>
+<th >Details         </th>
       </tr>
    </thead>
    <tbody>

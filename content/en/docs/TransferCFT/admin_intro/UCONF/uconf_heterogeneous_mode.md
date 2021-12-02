@@ -13,27 +13,11 @@ To force heterogeneous mode:
 
 Unix/Windows
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>cft.server.force_heterogeneous_mode         </td>
-         <td>No         </td>
-         <td><p>Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.</p>
-<p>Possible values:</p>
-<ul>
-<li>Yes: Force heterogeneous mode exchanges (override homogeneous mode)</li>
-<li>No: Standard heterogeneous and homogeneous functioning</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| cft.server.force_heterogeneous_mode  | No  |  Force heterogeneous mode for group file transfers. This parameter replaces the deprecated environment variable: CFTSFMCPY.<br/>Possible values:<br/> • Yes: Force heterogeneous mode exchanges (override homogeneous mode)<br/> • No: Standard heterogeneous and homogeneous functioning</li>  |
+
 
 Related topics
 

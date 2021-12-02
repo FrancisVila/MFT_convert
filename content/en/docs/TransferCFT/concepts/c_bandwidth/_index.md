@@ -35,9 +35,9 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
 <table>
    <thead>
       <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
+<th >Parameter         </th>
+<th >Default         </th>
+<th >Description         </th>
       </tr>
    </thead>
    <tbody>
@@ -95,56 +95,22 @@ class number zero.         </td>
 
 ### Global parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>uconf:cft.server.bandwidth.enable         </td>
-         <td>No         </td>
-         <td>Enable bandwidth control feature         </td>
-      </tr>
-      <tr>
-         <td>uconf:cft.server.bandwidth.cos_server_default         </td>
-         <td>0         </td>
-         <td>Set default class-of-service in server mode         </td>
-      </tr>
-      <tr>
-         <td>uconf:cft.server.bandwidth.cos_requester_default         </td>
-         <td>0         </td>
-         <td>Set default class-of-service in requester mode         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| uconf:cft.server.bandwidth.enable  | No  | Enable bandwidth control feature  |
+| uconf:cft.server.bandwidth.cos_server_default  | 0  | Set default class-of-service in server mode  |
+| uconf:cft.server.bandwidth.cos_requester_default  | 0  | Set default class-of-service in requester mode  |
+
 
 ### Expert level global parameters
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Parameter         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Default         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>uconf:cft.server.bandwidth.delay         </td>
-         <td>1s         </td>
-         <td>Bandwidth control granularity (this value is expressed in microseconds, so for example 1s = 1000000 ms).         </td>
-      </tr>
-      <tr>
-         <td>uconf:cft.server.bandwidth.smoothing_factor         </td>
-         <td>3         </td>
-         <td>The bandwidth smoothing parameter optimizes resources to flatten, or smooth, bandwidth usage. Values range from 1 to 10, where 1 is the smoothest and 10 may result in irregular bandwidth usage.         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Parameter  | Default  | Description  |
+| --- | --- | --- |
+| uconf:cft.server.bandwidth.delay  | 1s  | Bandwidth control granularity (this value is expressed in microseconds, so for example 1s = 1000000 ms).  |
+| uconf:cft.server.bandwidth.smoothing_factor  | 3  | The bandwidth smoothing parameter optimizes resources to flatten, or smooth, bandwidth usage. Values range from 1 to 10, where 1 is the smoothest and 10 may result in irregular bandwidth usage.  |
+
 
 <span id="Concepts"></span>
 

@@ -38,16 +38,4 @@ To apply the license key, enter the Transfer CFT key in the indirection file, wh
 
 Use the CFTUTIL utility to execute the `about `command to find the CPU ID and general system information as demonstrated in this example.
 
-
-
-    Host information :
-    * model    =
-    * hostname = Cgnac1
-    * cpuid    = XXXXXXXXXXX
-    * sysname  = NONSTOP_KERNEL
-    * machine  = NSX-D
-    * version  = 02
-    * release  = L18
-    * distrib  = unknown
-
 The CPUID is fixed, and as demonstrated in this example is typically **XXXXXXXXXXX**.

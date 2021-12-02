@@ -29,11 +29,7 @@ Begin your registration with {{< TransferCFT/centralgovernancename  >}} by start
 
 To set the environment variables from the runtime directory prompt enter:
 
-    ../profile
-
 To start the Copilot server, run the command:
-
-    copstart
 
 <span id="Verify"></span>
 

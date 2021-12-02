@@ -23,29 +23,9 @@ When the access management type is **system**, you must give the STC userID the 
 
 Define the following facilities for the USERID owner of the STC Copilot CFTMAIN and API batches:
 
-
-
-    UCONFSET ID=am.internal.group_database,value=system
-    SETROPTS GENERIC(FACILITY)
-    RDEFINE  FACILITY IRR.RADMIN.*             UACC(READ)
-    RDEFINE  FACILITY IRR.RADMIN.LISTUSER      UACC(READ)
-    RDEFINE  FACILITY IRR.RADMIN.LISTGRP       UACC(READ)
-    RDEFINE  FACILITY IRR.RADMIN.RLIST         UACC(READ)
-    RDEFINE  FACILITY IRR.RADMIN.SETROPTS.LIST UACC(READ)
-
 If you defined the previous facilities as UACC(NONE), you must set READ rights each Transfer CFT user.
 
-
-
-    PERMIT IRR.RADMIN.LISTUSER                               -CLASS(FACILITY) ACCESS(READ)    ID(user)
-    PERMIT IRR.RADMIN.LISTGRP                                -CLASS(FACILITY) ACCESS(READ)    ID(user)
-    PERMIT IRR.RADMIN.RLIST                                  -CLASS(FACILITY) ACCESS(READ)    ID(user)
-    PERMIT IRR.RADMIN.SETROPTS.LIST                          -CLASS(FACILITY) ACCESS(READ)    ID(user)
-
 In Transfer CFT, set the `group_database` to `system`.
-
-
-    UCONFSET ID=am.internal.group_database,value=system
 
 ### Using SAF class as the internal access management
 
@@ -53,68 +33,15 @@ With the **SAF class** method of access management, you define the mapping betwe
 
 When the access management method is **SAF class**, each user role is associated with a security resource (RACF, TSS, ACF2). You can set the name of the resource in the corresponding UCONF variable using the user norms in the table below.
 
-<table>
-   <thead>
-      <tr>
-<th style="text-align: left;" class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Example resource name         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">UCONF variable/role         </th>
-<th style="text-align: center;" class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Access to resource         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>CFT.ROLE.ADMIN         </td>
-         <td>am.internal.role.admin         </td>
-         <td>READ         </td>
-      </tr>
-      <tr>
-         <td>CFT.ROLE.OPERATOR         </td>
-         <td>am.internal.role.helpdesk         </td>
-         <td>READ         </td>
-      </tr>
-      <tr>
-         <td>CFT.ROLE.PARTNER         </td>
-         <td>am.internal.role.partnermanager         </td>
-         <td>READ         </td>
-      </tr>
-      <tr>
-         <td>CFT.ROLE.DESIGNER         </td>
-         <td>am.internal.role.designer         </td>
-         <td>READ         </td>
-      </tr>
-      <tr>
-         <td>CFT.ROLE.TRANSFER         </td>
-         <td>am.internal.role.application         </td>
-         <td>READ         </td>
-      </tr>
-   </tbody>
-</table>
 
+| Example resource name  | UCONF variable/role  | Access to resource  |
+| --- | --- | --- |
+| CFT.ROLE.ADMIN  | am.internal.role.admin  | READ  |
+| CFT.ROLE.OPERATOR  | am.internal.role.helpdesk  | READ  |
+| CFT.ROLE.PARTNER  | am.internal.role.partnermanager  | READ  |
+| CFT.ROLE.DESIGNER  | am.internal.role.designer  | READ  |
+| CFT.ROLE.TRANSFER  | am.internal.role.application  | READ  |
 
-
-    UCONFSET ID=am.internal.group_database,value=safclass
-    UCONFSET ID=am.internal.safclass,value='Class' (the class resource must be available)
-     
-    For each ROLE (the following are  examples, replace with your own values):
-
-
-    RDEFINE Class CFT.ROLE.ADMIN UACC(NONE) OWNER(...)
-    RDEFINE Class CFT.ROLE.OPERATOR UACC(NONE) OWNER(...)
-    RDEFINE Class CFT.ROLE.PARTNER UACC(NONE) OWNER(...)
-    RDEFINE Class CFT.ROLE.DESIGNER UACC(NONE) OWNER(...)
-    RDEFINE Class CFT.ROLE.TRANSFER UACC(NONE) OWNER(...)
-
-
-     
-    Authorize users or groups: (RACF sample)
-
-
-    PERMIT CFT.ROLE.ADMIN CLASS(Class) ACCESS(READ) ID(USER001)
-    PERMIT CFT.ROLE.TRANSFER CLASS(Class) ACCESS(READ) ID(USER002)
-
-
-     
-    NOTE: ACCESS must be set to READ.
 
 > **Note:**
 >
@@ -132,14 +59,4 @@ Start with the `UserID `in column 1 using blanks as separators. For example, to 
 
 Format
 
-
-
-    USER001 OPERATOR PARTNER .....
-    USER002 ADMIN  ..... 
-
 In Transfer CFT, set the `group_database` to file and specify the path to the file defined above.
-
-
-
-    UCONFSET ID=am.internal.group_database,value=file
-    UCONFSET ID=am.internal.group_database.fname,value=filename

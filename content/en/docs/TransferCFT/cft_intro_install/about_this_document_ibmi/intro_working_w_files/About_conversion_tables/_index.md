@@ -47,35 +47,3 @@ The CFTPROD/tabaseb.x binary file is created: it constitutes the conversion tabl
 ## Configuration sample
 
 The following is a full Transfer CFT configuration sample for a Windows system, which is a typical and frequent scenario.
-
-
-
-    Transfer CFT IBM i configuration
-    CFTXLATE MODE=REPLACE,
-             ID=TABASEB,
-             DIRECT=RECV,
-             FNAME=CFTPROD/TABASEB.X
-    CFTXLATE MODE=REPLACE,
-             ID=TABEBAS,
-             DIRECT=SEND,
-             FNAME=CFTPROD/TABEBAS.X
-     
-    CFTSEND MODE=REPLACE, ID=……..,
-             XLATE=TABEBAS,
-              …………………….
-     
-    CFTRECV MODE=REPLACE, ID=………, 
-             XLATE=TABASEB,
-              …………………….
-     
-     
-    Transfer CFT WIN/NT configuration
-    ============
-     
-    cftrecv  id       = …………,
-            fcode    = binary,  /* to avoid needing conversion */
-             …………………
-     
-    cftsend  id       = …………,
-            fcode    = binary,  /* to avoid needing conversion */
-             ………………….

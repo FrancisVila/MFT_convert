@@ -11,85 +11,20 @@ events and errors that occur on Transfer CFT. This topic describes the XFBLog at
 
 The XFBLog includes the following attributes.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Attribute         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Description         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Length         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>ApplicationName         </td>
-         <td><p>Application name</p>
-<p>CFT: PART (CFTPARM)</p>         </td>
-         <td>Variable string         </td>
-         <td>40         </td>
-      </tr>
-      <tr>
-         <td>CodeMsg         </td>
-         <td>Message code         </td>
-         <td>Variable string         </td>
-         <td>10         </td>
-      </tr>
-      <tr>
-         <td>IdentMsg         </td>
-         <td>Message identifier CFTxYYz         </td>
-         <td>Variable string         </td>
-         <td>10         </td>
-      </tr>
-      <tr>
-         <td>Monitor         </td>
-         <td>Hardcoded value to: XFB         </td>
-         <td>Variable string         </td>
-         <td>10         </td>
-      </tr>
-      <tr>
-         <td>Product         </td>
-         <td>Product name:         </td>
-         <td>Variable string         </td>
-         <td>10         </td>
-      </tr>
-      <tr>
-         <td>RecDate         </td>
-         <td>Recorded date in local log file         </td>
-         <td>Date         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>RecTime         </td>
-         <td>Recorded time in local log file         </td>
-         <td>Time         </td>
-         <td>          </td>
-      </tr>
-      <tr>
-         <td>SeverityClass         </td>
-         <td><p>Severity class:</p>
-<p>ES – System Error</p>
-<p>EC – Component Error</p>
-<p>EM – Message Error</p>
-<p>AV – Error and Warning</p>
-<p>IG – General Information</p>
-<p>IP – Program Information</p>         </td>
-         <td>Variable string         </td>
-         <td>10         </td>
-      </tr>
-      <tr>
-         <td>SessionTag         </td>
-         <td>Session tag         </td>
-         <td>Variable string         </td>
-         <td>20         </td>
-      </tr>
-      <tr>
-         <td>TransferTag         </td>
-         <td>Transfer tag         </td>
-         <td>Variable string         </td>
-         <td>20         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Attribute  | Description  | Type  | Length  |
+| --- | --- | --- | --- |
+| ApplicationName  |  Application name<br/>CFT: PART (CFTPARM)  | Variable string  | 40  |
+| CodeMsg  | Message code  | Variable string  | 10  |
+| IdentMsg  | Message identifier CFTxYYz  | Variable string  | 10  |
+| Monitor  | Hardcoded value to: XFB  | Variable string  | 10  |
+| Product  | Product name:  | Variable string  | 10  |
+| RecDate  | Recorded date in local log file  | Date  |   |
+| RecTime  | Recorded time in local log file  | Time  |   |
+| SeverityClass  |  Severity class:<br/>ES – System Error<br/>EC – Component Error<br/>EM – Message Error<br/>AV – Error and Warning<br/>IG – General Information<br/>IP – Program Information  | Variable string  | 10  |
+| SessionTag  | Session tag  | Variable string  | 20  |
+| TransferTag  | Transfer tag  | Variable string  | 20  |
+
 
 Related topics
 

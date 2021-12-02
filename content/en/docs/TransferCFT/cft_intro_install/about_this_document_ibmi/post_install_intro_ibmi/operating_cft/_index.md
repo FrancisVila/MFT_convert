@@ -12,43 +12,10 @@ Select from:
 4.  Create Transfer CFT system objects
 5.  Multi-node commands (only available if multi-node is enabled)
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>1. Common CFT commands </p>
-<p>1.  Start Copilot            </p>
-<p>2.  Stop Copilot             </p>
-<p>3.  Start Transfer CFT       </p>
-<p>4.  Stop Transfer CFT        </p>
-<p>5.  CFTUTIL operations          </p>
-<p>6.  Manage configuration File</p>
-<p>1.  Edit configuration file     </p>
-<p>2.  Interpret configuration file</p>
-<p>2.  Security commands  </p>
-<p>1.  Edit Security configuration file</p>
-<p>2.  Interpret Security configuration</p>
-<p>3.  PKIUTIL operation                         </p>
-<p>3.  Administration commands </p>
-<p>1.  Reinitialize Transfer CFT parameters</p>
-<p>2.  Submit Transfer CFT support request      </p>
-<p>4.  Create system objects</p>
-<p>1.  Create job queue         </p>
-<p>2.  Create job description   </p>
-<p>3.  Create subsystem         </p>
-<p>4.  Add job-queue entry      </p>
-<p>5.  Create class             </p>
-<p>6.  Add routing entry        </p>
-<p>7.  Add communication entry  </p>
-<p>8.  Change profile                   </p>
-<p> </p>
-<p>Note: A highlighted menu item indicates there is a sub-menu.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+| <h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>  |
+| --- |
+|  1. Common CFT commands <br/>1. Start Copilot <br/>2. Stop Copilot <br/>3. Start Transfer CFT <br/>4. Stop Transfer CFT <br/>5. CFTUTIL operations <br/>6. Manage configuration File<br/>1. Edit configuration file <br/>2. Interpret configuration file<br/>2. Security commands <br/>1. Edit Security configuration file<br/>2. Interpret Security configuration<br/>3. PKIUTIL operation <br/>3. Administration commands <br/>1. Reinitialize Transfer CFT parameters<br/>2. Submit Transfer CFT support request <br/>4. Create system objects 1. Create job queue 2. Create job description 3. Create subsystem 4. Add job-queue entry 5. Create class 6. Add routing entry 7. Add communication entry 8. Change profile Note: A highlighted menu item indicates there is a sub-menu.  |
+
 
 If you have worked with earlier versions of Transfer CFT IBM i, you can compare menu options in <a href="../../menu_mapping" class="MCXref xref">Appendix B: Menu mapping</a>.

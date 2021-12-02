@@ -12,23 +12,11 @@ This page describes how to start/stop and check the status of the Transfer CFT C
 
 To start the Copilot server, run the command:
 
-
-    copstart
-
 To stop the Copilot server, run the command:
-
-
-    copstop
 
 To stop the Copilot server and force connections to close, run:
 
-
-    copstop -f
-
 To kill all Copilot server processes, run:
-
-
-    copstop -kill
 
 > **Note:**
 >
@@ -40,25 +28,9 @@ To kill all Copilot server processes, run:
 
 To check the Copilot status, enter:
 
-
-    copstatus
-
 The `copstatus `return code is 0 when Copilot is running, and 1 when Copilot is stopped.
 
 Additional `copstatus `commands include:
-
-
-
-    copstatus [-p] [-v] [-h|--help]
-            
-
-     -p           print copsmng pid if copilot is started
-
-
-            -v           print status message
-            
-
-     -h|--help    copstatus help
 
 ## Windows menus
 
@@ -128,28 +100,6 @@ Execute: `COPSTOP `
 The following table lists the UCONF identifiers
 and the default values for the {{< TransferCFT/componentshortname  >}} UI (Copilot) server.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">ID         </th>
-<th style="text-align: center;" class="HeadE-Column1-Header1">Default         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>copilot.general.serverport</p>         </td>
-         <td><p>1766 </p>         </td>
-         <td>Copilot server listening port.         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.general.serverhost  </p>         </td>
-         <td><p>0.0.0.0 </p>         </td>
-         <td>TCP Transfer CFT Copilot server address, where 0.0.0.0 indicates that you want the Transfer CFT UI to listen on all network interfaces if your machine has more than one.         </td>
-      </tr>
-   </tbody>
-</table>
-
 UNIX
 
 Refer to the [UCONF parameters](../uconf/uconf_directory) table for information on `copilot.*.unix `parameters.
@@ -160,208 +110,25 @@ You can access customized file system directories via the {{< TransferCFT/compon
 
 To add a new alias, access the Unified Configuration and configure the following:
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">ID         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.http.aliases         </td>
-         <td>List of enabled alias-id         </td>
-      </tr>
-      <tr>
-         <td>copilot.http.aliases.(alias-id) alias         </td>
-         <td>Name of the alias         </td>
-      </tr>
-      <tr>
-         <td>copilot.http.aliases.(alias-id).path         </td>
-         <td>Path that replaces the alias in the URL         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### View available drives
 
 To view available drives from the **Edit a file** icon in the graphical user interface, define the following:
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Options         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.nt.rootdrives         </td>
-         <td>@REMOVABLE_DRIVES         </td>
-         <td>To view removable drives such as a USB key, CD, and so on.         </td>
-      </tr>
-      <tr>
-         <td>@LOCAL_DRIVES         </td>
-         <td>To view hard drives.         </td>
-      </tr>
-      <tr>
-         <td>@NET_DRIVES         </td>
-         <td>To view network drives.         </td>
-      </tr>
-   </tbody>
-</table>
 
 #### Client keep-alive
 
 Use this parameter to define the keep-alive interval in seconds for a client session. By default, this occurs every 60 seconds.
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">Value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.misc.client_keep_alive_delay         </td>
-         <td><p>Enter an integer for the delay in seconds.</p>
-<p>60 = default</p>
-<p>0 = no keep-alive</p>         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### Client timeout
 
 Use this parameter to define the client timeout in minutes. By default, the timeout is 30 minutes.
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadD-Column1-Header1">Value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.misc.ClientTimeout         </td>
-         <td><p>Enter an integer for the timeout in minutes.</p>
-<ul>
-<li>30 = default timeout of 30 minutes</li>
-<li>0 = 60 minute timeout for the Transfer CFT UI (token)</li>
-<li>0 = no timeout for the deprecated Copilot UI</li>
-</ul>         </td>
-      </tr>
-   </tbody>
-</table>
 
 #### Web services
 
 Use these parameter to define the {{< TransferCFT/componentshortname  >}} Web Services. See also [Setting up Web Services]().
 
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Value         </th>
-<th class="HeadD-Column1-Header1">Former value         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.webservices.wsicomplience         </td>
-         <td>(bool) No         </td>
-         <td>[WEBSERVICES] WsiComplience         </td>
-      </tr>
-      <tr>
-         <td>copilot.webservices.upload_directory         </td>
-         <td>(dir) $(cft.runtime_dir)/conf/ws_upload         </td>
-         <td>NA         </td>
-      </tr>
-   </tbody>
-</table>
-
 #### REST API server
 
 Use these parameter to configure the REST API server. See also [Transfer CFT REST API concepts]().
-
-<table>
-   <thead>
-      <tr>
-<th class="HeadE-Column1-Header1">Parameter         </th>
-<th class="HeadE-Column1-Header1">Type         </th>
-<th class="HeadE-Column1-Header1">Default         </th>
-<th class="HeadD-Column1-Header1">Description         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>copilot.restapi.enable         </td>
-         <td>bool         </td>
-         <td>No         </td>
-         <td><p>Enable/disable the REST API service:</p>
-<ul>
-<li>Yes: enable</li>
-<li>No: disable</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.serverport         </td>
-         <td>int         </td>
-         <td>1768         </td>
-         <td><p>REST API server port.</p>         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.authentication_method         </td>
-         <td>string         </td>
-         <td><p>system (Windows)</p>
-<p>xfbadm (UNIX)</p>         </td>
-         <td><p>Defines authentication method.</p>
-<p> </p>
-<p>See also, <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1">xfbadmusr utilitiy.</a></p>         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.nb_workers         </td>
-         <td>int         </td>
-         <td>4         </td>
-         <td>Number of activated workers that process the REST API requests.         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.maxclient         </td>
-         <td>int         </td>
-         <td>256         </td>
-         <td>Number of client connections handled per REST worker.         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.coms_id         </td>
-         <td>string         </td>
-         <td>coms         </td>
-         <td><p>The TCPIP CFTCOM object identifier used by the REST API server to communicate with the Transfer CFT server.</p>
-<p>Leave empty to use
-the COM file instead.</p>         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.catalog.retry_delay         </td>
-         <td>int         </td>
-         <td>5         </td>
-         <td><ul>
-<li>The delay between retries
-in seconds. The Transfer CFT Copilot server checks the request status in catalog every retry_delay seconds.</li>
-<li>The delay between retries
-in seconds. The Transfer CFT Copilot server checks the request status in catalog every retry_delay seconds.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td>copilot.restapi.catalog.retry_timeout         </td>
-         <td>int         </td>
-         <td>30         </td>
-         <td><p>The default value of the <a href="#Manage">apiTimeout</a> parameter as defined in the request URL.</p>
-<p>Available exclusively for POST requests.</p>         </td>
-      </tr>
-   </tbody>
-</table>
 
 <span id="Configur"></span>
 
@@ -406,134 +173,53 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 -   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
 -   `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Supported format         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1">Type         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1">Extension         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td>Certificate         </td>
-         <td>PKCS#12         </td>
-         <td>p12, pfx, pkcs12         </td>
-      </tr>
-      <tr>
-         <td>PEM         </td>
-         <td>pem         </td>
-      </tr>
-      <tr>
-         <td>DER         </td>
-         <td>der         </td>
-      </tr>
-      <tr>
-         <td>Private key         </td>
-         <td>PEM         </td>
-         <td>pem         </td>
-      </tr>
-      <tr>
-         <td>DER         </td>
-         <td>der         </td>
-      </tr>
-      <tr>
-         <td>PKCS#8         </td>
-         <td>key,
-pem         </td>
-      </tr>
-   </tbody>
-</table>
+
+| Supported format  | Type  | Extension  |
+| --- | --- | --- |
+| Certificate  | PKCS#12  | p12, pfx, pkcs12  |
+| PEM  | pem  |
+| DER  | der  |
+| Private key  | PEM  | pem  |
+| DER  | der  |
+| PKCS#8  | key, pem  |
+
 
 How to define a PKCS#12 certificate
 
 This example uses a single PKCS#12 certificate where you only require the file name and password.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>copilot.ssl.SslCertFile</p>         </td>
-         <td><p>conf/pki/&lt;my_certificate&gt;.p12</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslCertPassword</p>         </td>
-         <td><p>Certificate password</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslKeyFile</p>         </td>
-         <td><p>Not used</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslKeyPassword</p>         </td>
-         <td><p>Not used</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Value  |
+| --- | --- |
+|  copilot.ssl.SslCertFile  |  conf/pki/&lt;my_certificate&gt;.p12  |
+|  copilot.ssl.SslCertPassword  |  Certificate password  |
+|  copilot.ssl.SslKeyFile  |  Not used  |
+|  copilot.ssl.SslKeyPassword  |  Not used  |
+
 
 How to define a DER or PEM certificate
 
 This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>copilot.ssl.SslCertFile</p>         </td>
-         <td><p>conf/pki /&lt;my_certificate&gt;.der <em>or</em> .pem</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslCertPassword</p>         </td>
-         <td><p>Not used</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslKeyFile</p>         </td>
-         <td><p>conf/pki /&lt;my_key&gt;.der <em>or</em> .pem</p>         </td>
-      </tr>
-      <tr>
-         <td><p>copilot.ssl.SslKeyPassword</p>         </td>
-         <td><p>Key password, which is mandatory if the key file is encrypted PKCS#8</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Value  |
+| --- | --- |
+|  copilot.ssl.SslCertFile  |  conf/pki /&lt;my_certificate&gt;.der *or* .pem  |
+|  copilot.ssl.SslCertPassword  |  Not used  |
+|  copilot.ssl.SslKeyFile  |  conf/pki /&lt;my_key&gt;.der *or* .pem  |
+|  copilot.ssl.SslKeyPassword  |  Key password, which is mandatory if the key file is encrypted PKCS#8  |
+
 
 #### Additional HTTPS parameters
 
 There are two additional UCONF parameters to use for HTTPS connections:
 
-<table>
-   <thead>
-      <tr>
-<th class="TableStyle-SynchTableStyle_interop-HeadE-Column1-Header1"><p>Parameter</p>         </th>
-<th class="TableStyle-SynchTableStyle_interop-HeadD-Column1-Header1"><p>Value</p>         </th>
-      </tr>
-   </thead>
-   <tbody>
-      <tr>
-         <td><p>copilot.http.onlyssl</p>         </td>
-         <td><ul>
-<li>No: Default value.</li>
-<li>Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only.</li>
-</ul>         </td>
-      </tr>
-      <tr>
-         <td><p><span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites</p>
-<p> </p>         </td>
-         <td><p>A comma separated list of cipher suites accepted by the Transfer CFT Copilot server, for example: “47, 10, 9, 2”.</p>
-<p>See the <a href="../../transport_security_start_here/manage_cipher_suites#cipher_suites">Supported cipher suites</a> for details.</p>         </td>
-      </tr>
-   </tbody>
-</table>
+
+|  Parameter  |  Value  |
+| --- | --- |
+|  copilot.http.onlyssl  |  <li>No: Default value.<br/> • Yes: Restricts access to the Transfer CFT Copilot server to HTTPS secured connections only.</li>  |
+|  <span id="copilot.ssl.SslCipherSuites"></span>copilot.ssl.SslCipherSuites<br/>  |  A comma separated list of cipher suites accepted by the Transfer CFT Copilot server, for example: “47, 10, 9, 2”.<br/>See the <a href="../../transport_security_start_here/manage_cipher_suites#cipher_suites">Supported cipher suites</a> for details.  |
+
 
 ### Install a certificate on the client side
 
@@ -564,12 +250,3 @@ Alternative method
 The Java keystore is a file located at` ~/jre/lib/security/cacerts`. The default password for this keystore is “changeit”.
 
 Use the keytool command as follows to import the` <my_root_certificate>.der `certificate into the Java keystore:
-
-
-
-
-       -trustcacerts
-       -alias AXWMFTCA
-
-
-       -storepass changeit
