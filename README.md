@@ -2,19 +2,41 @@
 
 This is a trial for publishing SecureTransport docs with markdown, and also other MFT products. It is branched off the Axway-Open-Docs initiative.
 
-## How to clone
+## How to clone and launch on your PC
 
 To try out this repo locally on your computer:
 
-1.  clone it with the command:
+1.	Prerequisites: you will need
 
-     `git clone https://github.com/FrancisVila/MFT_convert --recursive
+	- **nodejs**      
+     `node -v` to know whether you already have it.  
+     If not, [https://nodejs.org/en/download/](https://nodejs.org/en/download/) 
 
-1. Then go to the `MFT_convert/` folder and launch, 
+     - **hugo**  
+     `hugo --help` to know whether you already have it.  
+     If not, https://gohugo.io/getting-started/installing/  
+     (Thisgives instructions for Windows, Linux and IOS. Requires you to have [Chocolatey](https://chocolatey.org/)  or [Scoop](https://scoop.sh/) installed)
 
-     `hugo server
+     - **git**  
+     Of course :-)   
 
-1. You will see an error message(s) about compiling scss, and other dependencies; the message gives info on how to install those
+1.	Clone the repo with the command:
+
+     `git clone https://github.com/FrancisVila/MFT_convert --recursive`  
+     If that does not work, contact me for authorization (fvila@axway.com)
+	 
+1.  Then go to the `MFT_convert/` folder, and update the node_modules
+
+     `cd MFT_convert`  
+     `npm i`
+
+1. Still in `MFT_convert/`, launch the Hugo server 
+
+     `hugo server`
+
+1. If all went well, the docs should be accessible in  
+
+     [localhost:1313/docs/](localhost:1313/docs/)
 
 
 ## Contribute
@@ -23,8 +45,8 @@ We welcome your contributions! To get started, go to <https://axway-open-docs.ne
 
 Before you start contributing, please read the [contribution guidelines](https://axway-open-docs.netlify.com/docs/contribution_guidelines/).
 
-## Old
+## Some more info
 
-Axway-Open-Docs is a docs-as-code implementation for Axway documentation. It is built using [Hugo](https://gohugo.io/) static site generator with the [Google Docsy](https://github.com/google/docsy) theme. The site is deployed on Netlify at <https://axway-open-docs.netlify.com/>
+This is a docs-as-code implementation for Axway documentation. It is built using [Hugo](https://gohugo.io/) static site generator with the [Google Docsy](https://github.com/google/docsy) theme. The site is deployed on Netlify at <https://axway-open-docs.netlify.com/>
 
 This repository contains all files for building and deploying the site. The Markdown files for the documentation are stored at `/content/en/docs`.
