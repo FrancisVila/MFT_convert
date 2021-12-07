@@ -7,7 +7,7 @@
 Class-of-service defines a common set of parameters for all network session established under it, such as :
 
 -   Weight: An integer value used to compute the global bandwidth rate that this class of service can use (for details, see 'Nominal data rate').
--   Rate: The global bandwidth rate that this class of service can use. The value is computed by the product from the 'weights' configured for the class of services.
+-   Rate:  The global bandwidth rate that this class of service can use. The value is computed by the product from the 'weights' configured for the class of services.
 -   Max-rate: The maximum bandwidth rate that this class of service can use when borrowing
 -   Session-rate: The maximum bandwidth rate that a network session can use under that class of service
 
@@ -15,7 +15,7 @@ All rates, either configured as rates or computed from weights, represent a numb
 
 > **Note:**
 >
-> In Central Governance see the Bandwidth Allocation section on the product configuration page, and Bandwidth Allocation in the Transfer Properties of the flow definition, for supported bandwidth features and details.
+> In Central Governance see the Bandwidth Allocation section on the product configuration page, and Bandwidth Allocation in the Transfer Properties of the flow definition,  for  supported bandwidth features and details.
 
 ## Parameters
 
@@ -52,7 +52,7 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
          <td>This value is used to compute the nominal rate of outgoing data for this class of service. **         </td>
       </tr>
       <tr>
-         <td><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong> for the class-of-service 0, as they cannot be used in this context. See <a href="#Concepts">Concepts.</a></p>         </td>
+         <td><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong>  for the class-of-service 0, as they cannot be used in this context. See  <a href="#Concepts">Concepts.</a></p>         </td>
       </tr>
       <tr>
          <td>uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out         </td>
@@ -85,10 +85,10 @@ Transfers are assigned to a specific class of bandwidth through the **COS** fiel
          <td>User comment that describes the class-of-service         </td>
       </tr>
       <tr>
-         <td>uconf:cft.server.bandwidth.cos         </td>
+         <td>uconf:cft.server.bandwidth.cos             </td>
          <td>1         </td>
          <td>Total number of class-of-services including the
-class number zero.         </td>
+                                     class number zero.         </td>
       </tr>
    </tbody>
 </table>
@@ -114,7 +114,7 @@ class number zero.         </td>
 
 <span id="Concepts"></span>
 
-## Class-of-service concepts
+## Class-of-service  concepts
 
 -   The class of service “0” is directly or indirectly the parent of all others.
 -   A rate (max\_rate, ...) or weight (weight\_in, weight\_out) that is not configured or set to -1 indicates an unlimited rate.
@@ -131,7 +131,7 @@ class number zero.         </td>
 
 Typically a class-of-service does not use more than its own rate. However when a class-of-service is not used (has no active sessions), class-of-service siblings can borrow available bandwidth up to their own max-rate. This is referred to as passive borrowing. The bandwidth is obtained proportionally to its own rate against siblings:
 
--   Rate-borrowed = (sum(sibling-rate) - sum(active-sibling-rate)) \*rate/sum(active-sibling-rate) + rate
+-   Rate-borrowed = (sum(sibling-rate) - sum(active-sibling-rate)) \*rate/sum(active-sibling-rate)  + rate
 
 ## Class-of-service prioritization
 
@@ -147,7 +147,7 @@ When defining a class-of-service it is recommended that you configure as follows
 
 -   Server mode: the configured default class-of-service is a "leaf"
 -   Requester mode: the configured default class-of-service is a "leaf"
--   File transfers: a "leaf" class-of-service is used
+-   File transfers:  a "leaf" class-of-service is used
 
 ### Nominal data rate
 
@@ -175,7 +175,7 @@ When defining a class-of-service it is recommended that you configure as follows
 
 -   Server mode: the configured default class-of-service is a "leaf"
 -   Requester mode: the configured default class-of-service is a "leaf"
--   File transfers: a "leaf" class-of-service is used
+-   File transfers:  a "leaf" class-of-service is used
 
 Related topics
 

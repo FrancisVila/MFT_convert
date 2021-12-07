@@ -16,7 +16,7 @@ Execute the JOB:
 1.  Adapt the customization parameters in the [A03PARM](#Modifying_A03PARM) member.
 2.  Submit the JOB.
 3.  Quit both EDIT and the library.
-4.  Wait for the JOB to execute.
+4.  Wait for  the JOB to execute.
 
 When you modify the A03PARM member, respect the following keyword conventions:
 
@@ -32,15 +32,15 @@ Before submitting JCL A00CUSTO to customize the **Target.INSTALL** library JCL, 
 
 **<span id="Keyword descriptions zOS JCL "></span>Keyword descriptions**
 
-When modifying the A03PARM member, adapt any parameters displayed in bold text to suit your environment. If you used the installer to install, the starred (\*) parameters are already customized.
+When modifying the A03PARM member, adapt any parameters   displayed in bold text to suit your environment. If you used the installer to install, the starred (\*) parameters are already customized.
 
 <span id="Password"></span>
 
 ### Password encryption (CFTGNKEY)
 
-Before you can customize the instance environment, you require a password to generate a key to use for internal encryption. The password you enter must be at least 8 characters long, contain upper and lower case characters as well as numeric and special characters (\*#$!?+-@).
+Before you can customize the instance environment, you require a password to generate a key to use for internal encryption. The password you enter must  be at least 8 characters long,  contain upper and lower case characters as well as numeric and special characters (\*#$!?+-@).
 
-The password is temporarily stored in the '`pswfname`' file, with the syntax `--pass <password>`, and is then removed after installation. See [pswfname](#pswfname) for details.
+The password is temporarily stored in the '`pswfname`' file, with the syntax   `--pass <password>`, and is then removed after installation. See [pswfname](#pswfname) for details.
 
 ### Environment customization
 
@@ -60,9 +60,9 @@ The password is temporarily stored in the '`pswfname`' file, with the syntax `--
 |  isppfx  | 'ISP'  |  ISPF libraries prefix.  |
 |  asmcmp  | 'ASMA90'  |  High Level Assembler.  |
 |  lcobol  | 'IGY'  |  COBOL data set prefix that is used in JCL I91APICP.  |
-| acmp  | 'yes'  | Compile/link ASM EXITs and APIs.  |
-| cobcmp  | 'yes'  | Compile/link COBOL EXITs and APIs.  |
-| ccmp  | 'yes'  | Compile/link C EXITs and APIs.  |
+| acmp  | 'yes'  |  Compile/link ASM EXITs and APIs.  |
+| cobcmp  |  'yes'  |  Compile/link COBOL EXITs and APIs.  |
+| ccmp  |  'yes'  | Compile/link C EXITs and APIs.  |
 |  cftvol  | 'volsert'  |  Name of the volume for Transfer CFT z/OS file creation **(*)**.  |
 |  cftunit  | '3390'  |  Disk unit type.  |
 |  cftv2  | '&amp;&amp;TARGET'  |  Transfer CFT z/OS file creation alias **(*)**.  |
@@ -104,7 +104,7 @@ The password is temporarily stored in the '`pswfname`' file, with the syntax `--
 | pesitssl  | '1762'  | Protocol PeSIT SSL port.  |
 | sftpprot  | '1763'  | Protocol SFTP port.  |
 |  apisp  | '1765'  |  Synchronous API TCP/IP port (The address is 127.0.0.1 in* ..SAMPLE(CFTPARM) cftcom).  |
-| idparm  | 'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
+| idparm  |  'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
 | cftinst  | '&amp;%"Z11"$pesitany'  |  The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/>If Composer is enabled, the naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/>The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/>"Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'.  |
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
@@ -224,7 +224,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
 | srraadpo  | '6810'  | Secure Relay Router Agent administration port.  |
 | srracopo  | '6811'  | Secure Relay Router Agent communication port, with one port per Transfer CFT instance.  |
-| srrasap  | 'srrasap'  | Transfer CFT/Secure Relay configuration listening port on Router Agent side.  |
+| srrasap  | 'srrasap'  |  Transfer CFT/Secure Relay configuration listening port on Router Agent side.  |
 | srrassap  | 'srrassap'  | SSL listening port on Router Agent side.  |
 
 
@@ -235,7 +235,7 @@ If you modify the following values, you must un-comment them in the JCL \* CFT$S
 | --- | --- | --- | --- |
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
-| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
+| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
 | saml_idp_signonservice  | ' '  |  Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_signonservice ' '  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_logoutservice  | ' '  |  Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_logoutservice ' '  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
@@ -267,9 +267,9 @@ You can customize specific prefixes for the following Transfer CFT files.
 
 ## Configure the SGINSTAL using UCONF or A12OPTSP
 
-As of {{< TransferCFT/componentlongname  >}} 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
+As of  {{< TransferCFT/componentlongname  >}} 3.2.4 SP2, you are no longer required to submit the JOB A12OPTS to generate the SGINSTAL executable in the LOAD library or the USER.LOAD.
 
-If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL, etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
+If the executable is not present in the LOAD library, the default values are used in the executables of Transfer CFT: CFTMAIN, CFTCOPL, CFTUTIL,  etc. Additionally, you can configure the SGINSTAL macro parameters as UCONF variables.
 
 Syntax
 
@@ -285,7 +285,7 @@ Example
 UCONFSET id=cft.mvs.sginstal.sdsfopt,value=’monitor’
 ```
 
-For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters in the A12OPTSP member.
+For continued compatibility, you can generate the Transfer CFT z/OS options tables. You can modify the parameters  in the A12OPTSP member.
 
 
 | Parameters that can be used as the &lt;keyword&gt;=&lt;value&gt;  | Description  |
@@ -296,8 +296,8 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 | [ALLPRIM = {100 | n}]{1…255}  | The % factor applied to the primary allocation computed to create a single volume file.  |
 | [ALLSEC = {10 | n}]{1…255}  | The % of the primary space used as the secondary allocation when creating a single volume file.  |
 | [VOLNUM = {20 | n}]{1…127}  | The maximum number of volumes in a multi-volume allocation.  |
-| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file.<br/>Use extreme care when changing this parameter.  |
-| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file.<br/>Use extreme care when changing this parameter.  |
+| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file. <br/>Use extreme care when changing this parameter.  |
+| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file. <br/>Use extreme care when changing this parameter.  |
 | [DSNTYPE = { <u>NONE</u> | EXTPREF/EXTREQ/LARGE}  | Values other than NONE (default value) are added to create DF/SMS managed EXTENDED or LARGE files. You can also control the DSNTYPE via DF/SMS customization.  |
 |  [BLKPDS = {150 | n}]{1…32760}  |  Number of PDS blocks allocated while creating a partitioned file by Transfer CFT.  |
 |  [DESC = { Value of the DESCRIPTOR CODE field of the WTO | n} ]  |  The left bit corresponds to 1. The right bit corresponds to 16.  |
@@ -317,7 +317,7 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 |  [TRACE = { <u>128</u> | n}] {4…16383}  |  Transfer CFT internal trace size (in Kb).  |
 |  [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}]  |  <li>NOTSUP: Forbids access to tape files for all Transfer CFT programs.</li> <li>UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.</li> <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.</li> <blockquote> **Note:** The delivered sample uses the value ‘TAPE=OUTPUT’. </blockquote>  |
 |  [TSOEDIT = { <u>NO</u> | YES}]  |  File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.</li> <li>NO: Input files are read without changes from CFTUTIL.</li> <blockquote> **Note:** The delivered sample uses the value ‘TSOEDIT=YES’. </blockquote>  |
-| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.</li> <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
+| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS. </li> <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
 
 
 > **Note:**
@@ -327,15 +327,15 @@ For continued compatibility, you can generate the Transfer CFT z/OS options tabl
 When you start Transfer CFT, all parameters are printed in the transfer CFT LOG, for example:
 
 ```
-CFTI18I+Installation options (macro SGINSTAL)
-CFTI18I+ Macro date - 05/29/17 15.45 (MM/DD/YY hh.mm) (c)
-CFTI18I+ SHARECAT=NO
-CFTI18I+ TAPE=UPDATE
-CFTI18I+ BLKSIZE=27998
-CFTI18I+ BLKPDS=200
-CFTI18I+ HSMASYNC=YES
-CFTI18I+ ALLPRIM=100,ALLSEC=10,VOLNUM=20,ALLONE=100,ALLNEX=100
-CFTI18I+ …
+CFTI18I+Installation options (macro SGINSTAL)              
+CFTI18I+   Macro date - 05/29/17 15.45  (MM/DD/YY hh.mm) (c)
+CFTI18I+   SHARECAT=NO                                      
+CFTI18I+   TAPE=UPDATE                                      
+CFTI18I+   BLKSIZE=27998                                    
+CFTI18I+   BLKPDS=200                                      
+CFTI18I+   HSMASYNC=YES
+CFTI18I+   ALLPRIM=100,ALLSEC=10,VOLNUM=20,ALLONE=100,ALLNEX=100
+CFTI18I+   …
 ```
 
 When Transfer CFT starts, the CFTI18I message and DATE macro display in one of four formats:
@@ -343,7 +343,7 @@ When Transfer CFT starts, the CFTI18I message and DATE macro display in one of 
 1.  CFTI18I and DATE macro - 06/16/17 14.10 (MM/DD/YY hh.mm) (c) SGINSTAL default model.  
     The SGINSTAL executable does not exist.  
     This was not configured with the cft.mvs.sginstal.xxxx variables.
-2.  CFTI18I and DATE macro - 06/05/17 15.30 (MM/DD/YY hh.mm) (c) SGINSTAL load.  
+2.  CFTI18I and DATE macro  - 06/05/17 15.30 (MM/DD/YY hh.mm) (c) SGINSTAL load.  
     The SGINSTAL executable exists.  
     This was not configured with the cft.mvs.sginstal.xxxx variables.
 3.  CFTI18I and DATE macro - 06/16/17 14.10 (MM/DD/YY hh.mm) (c) SGINSTAL default model modified by UCONF.  
@@ -358,15 +358,15 @@ To generate parameters from the SGINSTAL executable as UCONF variables:
 ```
 //\* **STEP 1 : GENERATE**
 //CFTSGIGN EXEC PGM=CFTSGIGN
-//STEPLIB DD DISP=SHR,DSN=&CFTLOAD (LIBRARY contains SGINSTAL)
-//UCONFGEN DD UNIT=SYSDA,DISP=(NEW,PASS),
-// DCB=(RECFM=VB,LRECL=256,BLKSIZE=2560),
-// SPACE=(TRK,(1)),
-// DSN=&&TMP
+//STEPLIB   DD  DISP=SHR,DSN=&CFTLOAD     (LIBRARY contains SGINSTAL)
+//UCONFGEN  DD  UNIT=SYSDA,DISP=(NEW,PASS),
+//          DCB=(RECFM=VB,LRECL=256,BLKSIZE=2560),
+//          SPACE=(TRK,(1)),
+//          DSN=&&TMP
 //\* **STEP 2 : UPDATE UCONF**
-//UCONF EXEC PCFTUTL,PARM=''
-//CFTIN DD DISP=(OLD,DELETE),
-// DSN=&&TMP
+//UCONF    EXEC PCFTUTL,PARM=''
+//CFTIN     DD  DISP=(OLD,DELETE),
+//          DSN=&&TMP
 Delivered JCL INSTALL(MIGRSGI) extract.
 ```
 

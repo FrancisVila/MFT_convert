@@ -18,8 +18,8 @@
 
 ```
 //CFTUTIL EXEC PCFTUTIL,PARM=''
-//CFTIN DD DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
-// DD \*
+//CFTIN    DD  DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
+//         DD  \*
 ABOUT
 /\*
 ```
@@ -28,10 +28,10 @@ ABOUT
 
 ```
 //CFTUTIL EXEC PCFTUTIL,PARM=''
-//CFTIN DD \*
+//CFTIN    DD  \*
 ABOUT
 /\*
-//      DD DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
+//      DD  DISP=SHR,DSN=MY.FB80.PARM(CMDUTI)
 ```
 
 For data set concatenation on Transfer CFT 3.2.4 and higher:
@@ -43,8 +43,8 @@ For data set concatenation on Transfer CFT 3.2.4 and higher:
 
 ```
 //CFTUTIL EXEC PCFTUTIL,PARM=''
-//CFTIN DD PATHOPTS=ORDONLY,
-// PATH='/home/user/cft\_cmd.txt'
+//CFTIN    DD  PATHOPTS=ORDONLY,
+//    PATH='/home/user/cft_cmd.txt'
 ```
 
 -   File concatenation does not work.
@@ -63,9 +63,9 @@ When no command is specified in the JCL PARM parameter, and if the DD CFTIN is n
 
 ## CFTPARM dummy
 
-When using the PCFTUTIL procedure and there is no data used from CFTPARM, we recommend specifying DUMMY as the DD CFTPARM to decrease EXCP and CPU consumption, for example in END-TRANSFER procedures.
+When using the PCFTUTIL procedure  and there is no data used from  CFTPARM, we   recommend specifying DUMMY as the DD CFTPARM to decrease EXCP and CPU consumption, for example in END-TRANSFER procedures.
 
 ```
 //CFTUTIL EXEC PCFTUTIL,PARM=''
-//CFTPARM DD DUMMY
+//CFTPARM  DD  DUMMY
 ```

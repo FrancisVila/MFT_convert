@@ -25,15 +25,15 @@ This is the procedure to manage Transfer CFT and to configure multi-node. Add
 the following action(s) to manage your product:
 
 -   START
--   STOP
+-     STOP
 -   RESTART
--   ADD\_NODE
--   REMOVE\_NODE
--   ADD\_HOST
--   REMOVE\_HOST
--   REMOVE\_NODE
--   ENABLE\_NODE
--   DISABLE\_NODE
+-   ADD_NODE
+-   REMOVE_NODE
+-   ADD_HOST
+-   REMOVE_HOST
+-   REMOVE_NODE
+-   ENABLE_NODE
+-   DISABLE_NODE
 
 > **Note:**
 > CFTMN is the equivalent of cft script for UNIX or
@@ -61,7 +61,7 @@ COPSTOPM
 COPSTOP
 STOPCOPL
 COPSTOP
-BACKGROUND\_C
+BACKGROUND_C
 BACKGROUND
 SNDCFTF
 CFTUTIL (See **Example 1**)

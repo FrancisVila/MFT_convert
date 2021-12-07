@@ -6,7 +6,7 @@
 
 A *distribution* environment is created during the product retrieval phase of the installation. This distribution environment contains the transferred files that provide the product contents, as well as any installed upgrades.
 
-The Transfer CFT *instance* is the environment that the user configures for operational use, and is created from the distribution environment. File sizes in the user target environment are defined in the JCL J2IICFT. This JCL is defined twice - in the UPLIB library, and in the INSTALL library of the distribution environment.
+The Transfer CFT *instance* is the environment that the user configures for operational use, and is created from the distribution environment. File sizes in the user target environment are defined in the JCL J2IICFT. This JCL is defined twice - in the UPLIB library, and in the INSTALL  library of the distribution environment.
 
 The tables in this section provide information about the files and allocation requirements for the distribution and instance environments. Note that an ESD installation requires an additional 1100 disk cylinders (3390 disk) of space.
 

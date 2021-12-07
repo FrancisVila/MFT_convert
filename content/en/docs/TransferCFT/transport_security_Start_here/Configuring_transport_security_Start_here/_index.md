@@ -115,45 +115,69 @@ RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-256
 47
+                        
 9
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 AES-128
+                        
 SHA-1
+                        
 53
 10
 RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-1
 10
+                        
 11
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 Triple DES
+                        
 SHA-1
+                        
 5
+                        
 12
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 SHA-1
+                        
 4
+                        
 13
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 MD5
+                        
 59\*
 14
 RSA authentication (512, 1024, 2048, or 4096)
 None
 SHA-256
 2
+                        
 15
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 None
+                        
 SHA-1
+                        
 1
+                        
 16
 RSA authentication (512, 1024, 2048, or 4096) 
+                        
 None
+                        
 MD5
+                        
 ```
 
 > **Note:**

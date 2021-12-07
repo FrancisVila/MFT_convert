@@ -18,7 +18,7 @@
 
 ## Configure folder monitoring using UCONF
 
-For each monitored directory you must provide a unique name to identify the set of configuration parameters corresponding to this directory. This enables you to individually configure each directory to be monitored.
+For each monitored directory you must provide a unique name to identify the set of configuration parameters corresponding to this directory. This enables you to  individually configure each directory to be monitored.
 
 ### Step overview
 
@@ -26,7 +26,7 @@ For each monitored directory you must provide a unique name to identify the set 
     -   Set uconf parameter folder\_monitoring.enable to Yes.
 2.  Declare your logical directories to monitor.
     -   Add to your uconf parameter folder\_monitoring.folders 1 logical name by root directory you want to monitor.
-3.  For each logical directory defined, configure the specific options you want to use for each:
+3.  For each logical directory defined,  configure the specific options you want to use for each:
     -   File management method
 
     <!-- -->
@@ -77,7 +77,7 @@ Parameter descriptions
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   | Metadata used to control user changes.  |
@@ -91,10 +91,10 @@ Parameter descriptions
 -   /
 -   For \\ / : \* ? " &lt; > |
 
-**Comment\*\*\***: You can use CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and FM3 are 3 logical folders to be managed by {{< TransferCFT/componentshortname  >}}, enter:
+**Comment\*\*\***: You can use  CFTUTIL to create the list of folders &lt;logical\_names>. When using CFTUTIL, be careful to correctly enter the command. For example, where FM1, FM2 and  FM3 are 3 logical folders to be managed by {{< TransferCFT/componentshortname  >}}, enter:
 
 CFTUTIL uconfset id= folder\_monitoring.folders, value= "'FM1 FM2 FM3 '"
-&lt;/p>
+        &lt;/p>
 <span id="How2"></span>
 
 ## How {{< TransferCFT/componentshortname  >}} handles monitored files
@@ -131,7 +131,7 @@ To deactivate compatibility checks of a folder’s new configuration, unset the 
 If the folder's logical name is **A**, execute the following command prior to the reconfiguration (or start) command:
 
 ```
-CFTUTIL UCONFUNSET id = folder\_monitoring.folders.**A**.control
+CFTUTIL UCONFUNSET id = folder_monitoring.folders.**A**.control
 ```
 
 When you then reconfigure (or start) Transfer CFT, the **A** folder is not checked.
@@ -151,11 +151,11 @@ Note that the configuration parameter folder\_monitoring must contain a list wit
 >
 > In all of the examples in this topic, you must enter CFTUTIL in upper case.
 
-For this example, you would execute the following command:
+For this example,  you would execute the following command:
 
 ```
-CFTUTIL uconfset id=folder\_monitoring.enable , value='Yes'
-CFTUTIL uconfset id=folder\_monitoring.folders , value= 'A B C'
+CFTUTIL uconfset id=folder_monitoring.enable , value='Yes'
+CFTUTIL uconfset id=folder_monitoring.folders , value= 'A B C'
 \*Note that the "' '"characters are used to protect the spaces between each folder monitoring nodes declarations.
 ```
 
@@ -168,7 +168,7 @@ CFTUTIL uconfset id=folder\_monitoring.folders , value= 'A B C'
 The first directory presents the simplest possible configuration, leaving most parameters set to their default values.
 
 -   All of the files in the directory sub-tree are candidates for the SEND submission.
--   The files are sent to a given partner, newyork, using an IDF name of IDFA.
+-   The files are sent to a given partner,  newyork, using an IDF name of IDFA.
 
 The following commands create the configuration defined for directory A.
 
@@ -176,16 +176,16 @@ The following commands create the configuration defined for directory A.
 #
 # Create all of the needed directories (UNIX platform example)
 #
-mkdir /home/CFT/fm/dir\_a
-mkdir /home/CFT/fm/dir\_a/scan
-mkdir /home/CFT/fm/dir\_a/work
+mkdir /home/CFT/fm/dir_a
+mkdir /home/CFT/fm/dir_a/scan
+mkdir /home/CFT/fm/dir_a/work
 #
-# Define the needed Transfer CFT configuration parameters leaving all others set to their default value.
+# Define  the needed Transfer CFT configuration parameters leaving all others set to their default value.
 #
-CFTUTIL uconfset id=folder\_monitoring.folders.A.scan\_dir , value='/home/CFT/fm/dir\_a/scan'
-CFTUTIL uconfset id=folder\_monitoring.folders.A.work\_dir , value='/home/CFT/fm/dir\_a/work'
-CFTUTIL uconfset id=folder\_monitoring.folders.A.part , value='NEWYORK'
-CFTUTIL uconfset id=folder\_monitoring.folders.A.idf , value='IDFA'
+CFTUTIL uconfset id=folder_monitoring.folders.A.scan_dir , value='/home/CFT/fm/dir_a/scan'
+CFTUTIL uconfset id=folder_monitoring.folders.A.work_dir , value='/home/CFT/fm/dir_a/work'
+CFTUTIL uconfset id=folder_monitoring.folders.A.part , value='NEWYORK'
+CFTUTIL uconfset id=folder_monitoring.folders.A.idf , value='IDFA'
 ```
 
 #### Directory B requirements
@@ -202,23 +202,23 @@ The following commands create the required directory B configuration.
 #
 # Create all needed directories (example for UNIX platforms)
 #
-mkdir /home/CFT/fm/dir\_b
-mkdir /home/CFT/fm/dir\_b/scan
-mkdir /home/CFT/fm/dir\_b/work
-mkdir /home/CFT/fm/dir\_b/scan/newyork
-mkdir /home/CFT/fm/dir\_b/scan/berlin
-mkdir /home/CFT/fm/dir\_b/scan/london
-mkdir /home/CFT/fm/dir\_b/scan/rome
-mkdir /home/CFT/fm/dir\_b/scan/brussels
-mkdir /home/CFT/fm/dir\_b/scan/paris
+mkdir /home/CFT/fm/dir_b
+mkdir /home/CFT/fm/dir_b/scan
+mkdir /home/CFT/fm/dir_b/work
+mkdir /home/CFT/fm/dir_b/scan/newyork
+mkdir /home/CFT/fm/dir_b/scan/berlin
+mkdir /home/CFT/fm/dir_b/scan/london
+mkdir /home/CFT/fm/dir_b/scan/rome
+mkdir /home/CFT/fm/dir_b/scan/brussels
+mkdir /home/CFT/fm/dir_b/scan/paris
 #
 # Define all of the needed Transfer CFT configuration parameters, while leaving the others set to their default value.
 #
-CFTUTIL uconfset id=folder\_monitoring.folders.B.scan\_dir , value='/home/CFT/fm/dir\_b/scan'
-CFTUTIL uconfset id=folder\_monitoring.folders.B.work\_dir , value='/home/CFT/fm/dir\_b/work'
-CFTUTIL uconfset id=folder\_monitoring.folders.B.part , value='(0)'
-CFTUTIL uconfset id=folder\_monitoring.folders.B.idf , value='TXT'
-CFTUTIL uconfset id=folder\_monitoring.folders.B.file\_include\_filter , value='\*.txt'
+CFTUTIL uconfset id=folder_monitoring.folders.B.scan_dir , value='/home/CFT/fm/dir_b/scan'
+CFTUTIL uconfset id=folder_monitoring.folders.B.work_dir , value='/home/CFT/fm/dir_b/work'
+CFTUTIL uconfset id=folder_monitoring.folders.B.part , value='(0)'
+CFTUTIL uconfset id=folder_monitoring.folders.B.idf , value='TXT'
+CFTUTIL uconfset id=folder_monitoring.folders.B.file_include_filter , value='\*.txt'
 ```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork` for the partner named newyork.
@@ -228,40 +228,40 @@ The files to be sent must be moved to the directory that corresponds to the dest
 For the third directory, directory C, we want to:
 
 -   Be able to send files to multiple partners, newyork and paris.
--   Use idf1, idf2, or idf3 as the newyork partner IDF.
+-   Use idf1, idf2, or idf3  as the newyork partner IDF.
 -   Use idfa, idfb, idfc, or idfd as the paris partner IDF.
 -   Not send files suffixed by .tmp.
 -   Automatically move the files to be sent to the scan\_dir, so the file\_idle\_delay parameter value is set to zero.
--   Submit files within a delay of approximately 10 seconds (interval).
+-   Submit files  within a delay of approximately 10 seconds (interval).
 -   Limit the number of send submissions per interval to 4 (file\_count).
 
-The following commands create the described directory C configuration.
+The following  commands create the described directory C configuration.
 
 ```
 #
 # Create all needed directories (example for UNIX platforms)
 #
-mkdir /home/CFT/fm/dir\_c
-mkdir /home/CFT/fm/dir\_c/scan
-mkdir /home/CFT/fm/dir\_c/work
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf1
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf2
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf3
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfa
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfb
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfc
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfd
+mkdir /home/CFT/fm/dir_c
+mkdir /home/CFT/fm/dir_c/scan
+mkdir /home/CFT/fm/dir_c/work
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf1
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf2
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf3
+mkdir /home/CFT/fm/dir_c/scan/paris/idfa
+mkdir /home/CFT/fm/dir_c/scan/paris/idfb
+mkdir /home/CFT/fm/dir_c/scan/paris/idfc
+mkdir /home/CFT/fm/dir_c/scan/paris/idfd
 #
 # Define all necessary Transfer CFT configuration parameters leaving others set to their default value.
 #
-CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_idle\_delay , value='0'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.idf , value='(1)'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.part , value='(0)'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.scan\_dir , value='/home/CFT/fm/dir\_c/scan'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.work\_dir , value='/home/CFT/fm/dir\_c/work'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.interval , value='10'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_count , value='4'
-CFTUTIL uconfset id=folder\_monitoring.folders.C.file\_exclude\_filter , value='\*.tmp'
+CFTUTIL uconfset id=folder_monitoring.folders.C.file_idle_delay , value='0'
+CFTUTIL uconfset id=folder_monitoring.folders.C.idf , value='(1)'
+CFTUTIL uconfset id=folder_monitoring.folders.C.part , value='(0)'
+CFTUTIL uconfset id=folder_monitoring.folders.C.scan_dir , value='/home/CFT/fm/dir_c/scan'
+CFTUTIL uconfset id=folder_monitoring.folders.C.work_dir , value='/home/CFT/fm/dir_c/work'
+CFTUTIL uconfset id=folder_monitoring.folders.C.interval , value='10'
+CFTUTIL uconfset id=folder_monitoring.folders.C.file_count , value='4'
+CFTUTIL uconfset id=folder_monitoring.folders.C.file_exclude_filter , value='\*.tmp'
 ```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner newyork and idf idf1.
@@ -289,7 +289,7 @@ See [Supported OS for file-system event monitoring](../#Supporte).
 Set the following UCONF parameters as shown below. When you set this option for a specific folder, Transfer CFT immediately treats any events that occur in this folder's SCAN directory.
 
 ```
-CFTUTIL uconfset id=folder\_monitoring.folders.MyFolder.use\_file\_system\_events, value=YES
+CFTUTIL uconfset id=folder_monitoring.folders.MyFolder.use_file_system_events, value=YES
 ```
 
 #### Attention

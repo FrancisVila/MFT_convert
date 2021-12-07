@@ -4,9 +4,9 @@
     "weight": "3150"
 }### serialized
 
-#### LISTCAT,  DISPLAY
+#### LISTCAT,   DISPLAY  
 
-\[SERIALIZED ={ <u>All</u> | Yes | No } \]
+\[SERIALIZED ={ <u>All</u> | Yes |  No } \]
 
 Filters the LISTCAT or DISPLAY output.
 

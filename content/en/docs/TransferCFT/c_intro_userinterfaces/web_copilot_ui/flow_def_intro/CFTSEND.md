@@ -87,7 +87,7 @@ topics
 In the sender server with implicit send operating mode, the use
 of the FNAME parameter is mandatory in CFTSEND.
 
-In sender requesteror sender server mode with a hold for sending request, the filename can
+In sender requesteror  sender server mode with a hold for sending request, the filename can
 be defined in the send transfer request (SEND command or CFTAPI call)
 rather than in the CFTSEND object. Click on the links in the following
 table for examples and details.

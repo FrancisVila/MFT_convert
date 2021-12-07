@@ -99,7 +99,7 @@ If the target version is lower than 3.4:
 
 -   Submit the procedure ..INSTALL(MIGRPKI) (export + import)
 
-If the target version is 3.4 or higher:
+If the target version is  3.4 or higher:
 
 -   Submit the procedures ..INSTALL(MIGRPKI1) (export)
 -   Submit the procedures ..INSTALL(MIGRPKI2) (import)
@@ -119,9 +119,9 @@ With the list of UCONF parameters to migrate. For example:
 ```
 CFTEXT ID=cft.mvs.sginstal.\*,TYPE=UCONF,FOUT=$EXT
 CFTEXT ID=cg.\*,TYPE=UCONF,FOUT=$EXT
-CFTEXT ID=cft.multi\_node.\*,TYPE=UCONF,FOUT=$EXT
-CFTEXT ID=cft.cftcat.default\_size,TYPE=UCONF,FOUT=$EXT
-CFTEXT ID=cft.cftcom.default\_size,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.multi_node.\*,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftcat.default_size,TYPE=UCONF,FOUT=$EXT
+CFTEXT ID=cft.cftcom.default_size,TYPE=UCONF,FOUT=$EXT
 CFTEXT ID=cft.cftlog.fname.atts,TYPE=UCONF,FOUT=$EXT
 CFTEXT ID=cft.cftaccnt.fname.atts,TYPE=UCONF,FOUT=$EXT
 Etc.
@@ -129,7 +129,7 @@ Etc.
 
 1.  Migrate the CATALOG file (MIGRCAT) for a non multi-node environment.
 
-You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 parameters:
+You can set the following variables  in the MIGR$SET file and (or) in the PMIGR2 parameters:
 
 
 |  Variable  |  Default value  |  Definition  |
@@ -145,9 +145,9 @@ You can set the following variables in the MIGR$SET file and (or) in the PMIGR2 
 
 re ..INSTALL(MIGRCAT).
 
-1.  Migrate the communication media file(s) (MIGRCOM)for a non mutli-node environment.
+1.  Migrate the communication media file(s) (MIGRCOM)for a  non mutli-node environment.
 
-You can set the following variables in the MIGR$SET file or/and in the PMIGR2 parameters:
+You can set the following variables  in the MIGR$SET file or/and in the PMIGR2 parameters:
 
 
 |  Variable  |  Default value  |  Definition  |

@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTR",
     "linkTitle": "CFTR messages",
     "weight": "350"
-}This topic lists the CFTRxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTRxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -219,7 +219,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
  
 
 
-|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command<br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
+|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command <br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
 | --- | --- |
 |  Explanation  |  This message traces who has cleared what and with which command.  |
 

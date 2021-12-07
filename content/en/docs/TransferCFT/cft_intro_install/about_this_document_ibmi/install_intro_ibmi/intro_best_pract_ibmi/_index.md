@@ -11,4 +11,4 @@
 -   [Using CFTUTIL  specific commands](using_cftutil)
 -   [Using the support tool](../../os400_support_tool)
 
-In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
+In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i  may be used interchangeably.

@@ -16,8 +16,8 @@ To limit the global bandwidth for all incoming and outgoing connections to, for 
 
 ```
 uconf:cft.server.bandwidth.enable=yes
-uconf:cft.server.bandwidth.cos.0.max\_rate\_in=100
-uconf:cft.server.bandwidth.cos.0.max\_rate\_out=100
+uconf:cft.server.bandwidth.cos.0.max_rate_in=100
+uconf:cft.server.bandwidth.cos.0.max_rate_out=100
 ```
 <span id="Control"></span>
 
@@ -26,12 +26,12 @@ uconf:cft.server.bandwidth.cos.0.max\_rate\_out=100
 ```
 uconf:cft.server.bandwidth.enable=yes
 uconf:cft.server.bandwidth.cos=4
-uconf:cft.server.bandwidth.cos.1.weight\_in=80
-uconf:cft.server.bandwidth.cos.1.weight\_out=80
-uconf:cft.server.bandwidth.cos.2.weight\_in=15
-uconf:cft.server.bandwidth.cos.2.weight\_out=15
-uconf:cft.server.bandwidth.cos.3.weight\_in=5
-uconf:cft.server.bandwidth.cos.3.weight\_out=5
+uconf:cft.server.bandwidth.cos.1.weight_in=80
+uconf:cft.server.bandwidth.cos.1.weight_out=80
+uconf:cft.server.bandwidth.cos.2.weight_in=15
+uconf:cft.server.bandwidth.cos.2.weight_out=15
+uconf:cft.server.bandwidth.cos.3.weight_in=5
+uconf:cft.server.bandwidth.cos.3.weight_out=5
 ```
 
 ## Control the bandwidth depending on the profile
@@ -41,14 +41,14 @@ Limit the bandwidth on COS1 to 100, COS2 to 50 KB, and COS3 to 25. Note that you
 ```
 uconf:cft.server.bandwidth.enable=yes
 uconf:cft.server.bandwidth.cos=4
-uconf:cft.server.bandwidth.cos.0.max\_rate\_in=-1
-uconf:cft.server.bandwidth.cos.0.max\_rate\_out=-1
-uconf:cft.server.bandwidth.cos.1.max\_rate\_in=100
-uconf:cft.server.bandwidth.cos.1.max\_rate\_out=100
-uconf:cft.server.bandwidth.cos.2.max\_rate\_in=50
-uconf:cft.server.bandwidth.cos.2.max\_rate\_out=50
-uconf:cft.server.bandwidth.cos.3.max\_rate\_in=25
-uconf:cft.server.bandwidth.cos.3.max\_rate\_out=25
+uconf:cft.server.bandwidth.cos.0.max_rate_in=-1
+uconf:cft.server.bandwidth.cos.0.max_rate_out=-1
+uconf:cft.server.bandwidth.cos.1.max_rate_in=100
+uconf:cft.server.bandwidth.cos.1.max_rate_out=100
+uconf:cft.server.bandwidth.cos.2.max_rate_in=50
+uconf:cft.server.bandwidth.cos.2.max_rate_out=50
+uconf:cft.server.bandwidth.cos.3.max_rate_in=25
+uconf:cft.server.bandwidth.cos.3.max_rate_out=25
 ```
 ```
 CFTSEND id=PROF1, COS=1,…

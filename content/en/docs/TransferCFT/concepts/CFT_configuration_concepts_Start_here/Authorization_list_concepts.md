@@ -31,7 +31,7 @@ To create a list of excluded IDFs, you simply prefix the authorization object (
 
 Example list of unauthorized IDFs
 
-With CFTAUTH ID = <span style="color: #ff4500;">NOT</span>SIBM1 in the CFTPART definition, and SAUTH = <span style="color: #ff4500;">NOT</span>SIBM1, then the APLI1 and APLI2 IDFs are not transferred to the IBM1 partner. When the CFTAUTH ID is prefixed by `NOT`, note that all other IDFs that are not included in the IDF list are consequently authorized.
+With CFTAUTH ID = <span style="color: #ff4500;">NOT</span>SIBM1 in the CFTPART definition, and SAUTH = <span style="color: #ff4500;">NOT</span>SIBM1, then the APLI1 and APLI2 IDFs are not transferred to the IBM1 partner. When the CFTAUTH ID is prefixed by `NOT`,  note that all other IDFs that are not included in the IDF list are consequently authorized.
 
 ```
 CFTPART    ID = IBM1,

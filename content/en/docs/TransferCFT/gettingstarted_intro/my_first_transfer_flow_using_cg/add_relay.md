@@ -2,7 +2,7 @@
     "title": "Add a relay (store and forward)",
     "linkTitle": "Add a relay (store and forward)",
     "weight": "180"
-}This page describes how to use a relay in a SEND/RECV operation. You can use a SEND/RECV to perform a transfer with a single partner via an intermediate machine, or relay, using the store and forward mode. Additionally, you can combine the store and forward mode with broadcasting when using the SEND command.
+}This page describes how to use a relay in a  SEND/RECV operation. You can use a SEND/RECV to perform a transfer with a single partner via an intermediate machine, or relay, using the store and forward mode. Additionally, you can combine the store and forward mode with broadcasting when using the SEND command.
 
 ## On
 
@@ -21,7 +21,7 @@
     Use the other default values, and remember that the flow identifier is the IDF on Transfer CFT.  
     ![](/Images/TransferCFT/flow5.png)
 
-5.  Select **Target? > Add target**. Then click to choose the target {{< TransferCFT/componentlongname >}}. Select `MainOffice `and then click **Select as target**.
+5.  Select **Target? > Add target**. Then click to choose the target {{< TransferCFT/componentlongname >}}. Select  `MainOffice `and then click **Select as target**.
 
 6.  Click **Relay** then click **Edit relay**. Select the relay, and confirm by clicking **Select as relay**.  
     ![](/Images/TransferCFT/flow8.png)
@@ -38,7 +38,7 @@
 You will need to add a file locally for the transfer exchange and execute the SEND command.
 
 1.  Put a test file, for example **SALES\_report**, in the Store\_66 {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
-2.  From the source {{< TransferCFT/componentshortname >}}, run the SEND command. Remember:
+2.  From the source {{< TransferCFT/componentshortname >}},   run the  SEND command. Remember:
     -   Replace `<instance_target>` with your Transfer CFT for the `MainOffice `target.
 
     <!-- -->

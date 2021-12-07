@@ -19,7 +19,7 @@ Time-out role
 
 <img src="/Images/TransferCFT/Timeout_role3.gif" class="maxWidth" width="730" height="439" alt="Protocol session time out role betweeen a requester and server " />
 
-#### PeSIT CFT/CFT
+#### PeSIT  CFT/CFT
 
 The following two diagrams show how the REVERSE command is used to concatenate
 transfers in different directions over the same protocol connection. This

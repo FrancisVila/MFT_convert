@@ -10,7 +10,7 @@
 
 ### QUERY
 
-The QUERY command checks the catalog for the first record that matches the indicated criteria in the defined order. Once a record that matches is found, the catalog variables are filled with the predefined values. See the section [Predefined Variables](ch2_predefined_varaibles).
+The QUERY command checks the catalog for the first record that matches the indicated criteria  in the defined order. Once a record that matches is found,  the catalog variables are filled with the predefined values. See the section [Predefined Variables](ch2_predefined_varaibles).
 
 #### Syntax
 
@@ -37,7 +37,7 @@ QUERY IDA = STR,
 -   STATE: Character string specifying the criteria for the STATE field.
 -   NIDF: Character string specifying the criteria for the NIDF field.
 -   NAME: The name of the variable that will be filled by the catalog field value specified in FIELD.
--   FIELD: Character string for the catalog field to read information for the NAME variable. Field names include IDT, STATE, and TIMES.
+-   FIELD: Character string for the  catalog field to read information for the NAME variable. Field names include IDT, STATE, and TIMES.
 -   TYPE: String with a possible value of \*, FILE, MSG, REPLY, or NACK.
 
 #### Example
@@ -50,7 +50,7 @@ NAME=IDT,FIELD=IDT
 
 ### WAITCAT
 
-The WAITCAT command scans the catalog searching for a record that corresponds to the criteria specified in the command parameters. If a record matches the selected criteria, the result is a return code of 0. If there are no matches, the result is a non-zero return code. The return code is stored in the predefined variable \_CMDRET.
+The WAITCAT command scans the catalog searching for a record that corresponds to the criteria specified in the command parameters. If a record matches the selected criteria, the result is a return code of 0. If there are no matches, the  result is a  non-zero return code. The return code is stored in the predefined variable \_CMDRET.
 
 You can specify a maximum wait time as well as a scanning range for the catalog.
 
@@ -71,7 +71,7 @@ WAITCAT IDA = STR,
         NBCHKPT = NNN,
         DIAGP = STR,
         DIAGI = STR
-       IDTU = STR
+       IDTU  = STR
        PHASE = STR
        PHASESTEP = STR
 ```
@@ -84,14 +84,14 @@ WAITCAT IDA = STR,
 -   IDT: Character string specifying the criteria for the IDT field.
 -   PART: Character string specifying the criteria for the SHARE field.
 -   STATE: Character string specifying the selection criteria for the STATE field.
--   NIDF : Character string specifying the selection criteria for the NIDF field.
--   TYPE: Character string specifying the selection criteria for the TYPE field.
--   MAXTIME: Character string specifying maximum waiting time as HHMMSSCC.
+-   NIDF :  Character string specifying the selection criteria for the NIDF field.
+-   TYPE:  Character string specifying the selection criteria for the TYPE field.
+-   MAXTIME: Character string  specifying maximum waiting time as HHMMSSCC.
 -   SCANTIME: The catalog scan interval in seconds.
 -   DURING: The maximum delay to wait in seconds.
 -   NBCHKPT: The criteria to indicate the number of synchronization points in the catalog.
--   DIAGP: Character string specifying the criteria for the DIAGP.
--   DIAGI: Character string specifying the criteria for the DIAGI.
+-   DIAGP: Character string  specifying the criteria for the DIAGP.
+-   DIAGI: Character string  specifying the criteria for the DIAGI.
 -   IDTU: Character string.
 -   PHASE: Character string.
 -   PHASESTEP: Character string.
@@ -101,7 +101,7 @@ WAITCAT IDA = STR,
 ```
 WAITCAT PART = PSITC001, DIRECT = RECV, DURING = 30,
 SCANTIME = 1
-PRINT MSG='The return code for WAIT is : %\_CMDRET%'
+PRINT MSG='The return code for WAIT is : %_CMDRET%'
 ```
 
 ### TEST
@@ -171,7 +171,7 @@ TEST IDA = STR,
 -   IDA: Character string specifying the selection criteria for the IDA field.
 -   DIRECT: Character string specifying the selection criteria for the DIRECT field.
 -   IDF: Character string specifying the selection criteria for the IDF field.
--   PART: Character string specifying the selection criteria for the PART field.
+-   PART: Character string specifying the selection criteria for the PART  field.
 -   STATE: Character string specifying the selection criteria for the STATE field.
 -   IDF: Character string specifying the selection criteria for the IDF field.
 -   NIDF: Character string specifying the selection criteria for the NIDF field.
@@ -222,5 +222,5 @@ TEST IDA = STR,
 
 ```
 TEST PART = PSITC001, DIRECT = RECV,
-PRINT MSG='The test return code is: %\_CMDRET%'
+PRINT MSG='The test return code is: %_CMDRET%'
 ```

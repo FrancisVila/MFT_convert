@@ -23,7 +23,7 @@ When you import a private keyring file containing ElGamal subkey(s), you must pr
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
     ```
-    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
 2.  Enter the import command:
 
@@ -85,7 +85,7 @@ following file names.
 
 1.  Use CFTUTIL to set the full path to Java executable`:`  
     ```
-    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
 2.  Enter the import command:
 
@@ -110,7 +110,7 @@ There are several options you can add to the command line:
 
 > **Note:**
 >
-> The following options are required: -userIdPacket and -passSecRing. By default (without -secRing or -pubRing options), the feature exports Public Keyring and Secret Keyring.If you do not need to export the Secret Keyring, add - secRing no to the command line.If you do not need to export the Public Keyring, add - pubRing no to the command line.
+> The following options are required: -userIdPacket and -passSecRing. By default (without -secRing or -pubRing options), the feature exports Public Keyring and Secret Keyring.If you do not need to export the Secret Keyring, add - secRing no to the command line.If you do not need to export the Public Keyring, add  - pubRing no to the command line.
 
 ### Example commands
 

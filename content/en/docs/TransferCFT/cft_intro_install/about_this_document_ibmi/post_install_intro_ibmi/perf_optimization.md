@@ -4,7 +4,7 @@
     "weight": "250"
 }This section describes how to modify the subsystems in which {{< TransferCFT/componentlongname  >}} is running to optimize the {{< TransferCFT/componentlongname  >}} performance.
 
-The initial subsystem that {{< TransferCFT/componentlongname  >}} uses is created with a 2 GB pool size, and a maximum of 64 active threads. However it is not the maximum number of threads that impacts performance, but rather the number of threads that can use the processor. For this reason, we recommend that you modify this value for improved performance.
+The initial subsystem that {{< TransferCFT/componentlongname  >}} uses is created with a 2 GB pool size, and a maximum of 64 active threads. However it is not the maximum number of threads that impacts performance, but rather the number of threads that can use the processor. For this reason, we recommend  that you modify this value for improved performance.
 
 ## Prerequisites
 

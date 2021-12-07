@@ -19,7 +19,7 @@
 
 ### User roles
 
-The default roles are as follows:
+The default  roles are as follows:
 
 -   **Administrator** provides full user access
 -   **Helpdesk** enables you to view the Catalog and Log

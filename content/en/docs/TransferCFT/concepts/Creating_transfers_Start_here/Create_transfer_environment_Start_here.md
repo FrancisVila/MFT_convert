@@ -94,7 +94,7 @@ The CFTSEND command is used to specify, for each IDF model file:
     taken on the data handled by the monitor during the transfer: translation,
     compression
 -   Action performed
-    by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> on the file sent, after the transfer
+    by the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> on the file sent, after the transfer
 -   Call to a procedure
     to be executed on completion of the transfer, etc
 -   Miscellaneous parameters
@@ -126,7 +126,7 @@ following categories:
 <!-- -->
 
 -   Free parameters
-    for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user:
+    for the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user:
     -   Sent to the
         receiver: PARM, SAPPL
     -   For local use:

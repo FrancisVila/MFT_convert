@@ -13,7 +13,7 @@ A Transfer CFT can be assigned up to nine servers that are named using the conve
 
 These servers use a standard inter-process message exchange mechanism.
 
-For more information on how to use Transfer CFT API services, refer to the *Transfer CFT {{< TransferCFT/hfversion  >}}{{< TransferCFT/doctypeuser  >}}*. An additional {{< TransferCFT/componentlongname  >}} API service called SRVEND is provided for Transfer CFT Guardian, which requests a server shutdown.
+For more information on how to use Transfer CFT API services, refer to the *Transfer CFT {{< TransferCFT/hfversion  >}}{{< TransferCFT/doctypeuser  >}}*. An additional {{< TransferCFT/componentlongname  >}} API service called SRVEND is provided for Transfer CFT  Guardian, which requests a server shutdown.
 
 ## Managing the API servers
 
@@ -29,7 +29,7 @@ API02 $xxAP1 SRVEND
 
 ## Messages exchanges
 
-The message structures are described in DDL and C language:
+The message structures are described in DDL and C language:  
 
 -   The C files is derived from the DDL file
 -   Both the DDL and C header files are located in `$volume.<subvolume>IH`

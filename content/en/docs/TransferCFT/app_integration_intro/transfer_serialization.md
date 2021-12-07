@@ -2,11 +2,11 @@
     "title": "Transfer serialization",
     "linkTitle": "Transfer serialization",
     "weight": "220"
-}Business users today expect that applications can transfer files sequentially. Additionally, when sending files sequentially (first in/first out), users may want to define a processing phase that the transfer must reach before Transfer CFT begins executing the next transfer. This process in Transfer CFT is known as transfer serialization.
+}Business users today expect that applications can transfer files  sequentially. Additionally, when sending files sequentially  (first in/first out), users may want to define a processing phase that the transfer must reach before Transfer CFT begins executing the next transfer. This process in Transfer CFT is known as transfer serialization.
 
 On the sender side, the next file cannot be sent until the previously sent file is written on the disk by the receiving {{< TransferCFT/hflongproductname  >}}, and a certain phase reached, for example the post-processing is executed. Once this occurs, the sending {{< TransferCFT/hflongproductname  >}} can then send the next file.
 
-Serialization of transfer requests is based on a combination of the request's IDF and PART values. Therefore, if either of these values varies, the IDF or PART, then the request does not belong to the same serialization list.
+Serialization of transfer requests is based on a combination of the request's IDF and PART values. Therefore,  if either of these values varies, the IDF or PART, then the request does not belong to the same serialization list.
 
 Additional serialization rules:
 
@@ -37,17 +37,17 @@ SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=B
 SEND PART=PARIS, IDF=BIN, SERIAL=X, IDA=C
  
 **Results**
-CFTT57I Requester transfer started <IDTU=<transfer A> PART=PARIS IDF=BIN
-CFTT58I Requester transfer ended <IDTU=<transfer A> PART=PARIS IDF=BIN
-CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN >
+CFTT57I Requester transfer started   <IDTU=<transfer A> PART=PARIS IDF=BIN
+CFTT58I Requester transfer ended     <IDTU=<transfer A> PART=PARIS IDF=BIN
+CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
  
-CFTT57I Requester transfer started <IDTU=<transfer B> PART=PARIS IDF=BIN
-CFTT58I Requester transfer ended <IDTU=<transfer B> PART=PARIS IDF=B
-CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN >
+CFTT57I Requester transfer started   <IDTU=<transfer B> PART=PARIS IDF=BIN
+CFTT58I Requester transfer ended     <IDTU=<transfer B> PART=PARIS IDF=B
+CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
  
-CFTT57I Requester transfer started <IDTU=<transfer C> PART=PARIS IDF=BIN
-CFTT58I Requester transfer ended <IDTU= <transfer C> PART=PARIS IDF=BIN
-CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN >
+CFTT57I Requester transfer started   <IDTU=<transfer C> PART=PARIS IDF=BIN
+CFTT58I Requester transfer ended     <IDTU=  <transfer C> PART=PARIS IDF=BIN
+CFTR12I END Treated for USER <my user> <PART=PARIS IDF=BIN  >
 ```
 
 **Example 2**
@@ -60,18 +60,18 @@ SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=B
 SEND PART=PARIS, IDF=BIN, SERIAL=Y, IDA=C
  
 **Results**
-CFTT57I Requester transfer started <IDTU=<transfer A> PART=PARIS IDF=BIN
-CFTT58I Requester transfer ended <IDTU=<transfer A> PART=PARIS IDF=BIN
+CFTT57I Requester transfer started   <IDTU=<transfer A> PART=PARIS IDF=BIN
+CFTT58I Requester transfer ended     <IDTU=<transfer A> PART=PARIS IDF=BIN
  
-CFTT57I Requester transfer started <IDTU=<transfer B> PART=PARIS IDF=BIN
-CFTR12I END \[for transfer A\] Treated for USER <my user> <PART=PARIS IDF=BIN >
-CFTT58I Requester transfer ended <IDTU=<transfer B> PART=PARIS IDF=B
+CFTT57I Requester transfer started   <IDTU=<transfer B> PART=PARIS IDF=BIN
+CFTR12I END [for transfer A] Treated for USER <my user> <PART=PARIS IDF=BIN  >
+CFTT58I Requester transfer ended     <IDTU=<transfer B> PART=PARIS IDF=B
  
-CFTT57I Requester transfer started <IDTU=<transfer C> PART=PARIS IDF=BIN
-CFTR12I END \[for transfer B\] Treated for USER <my user> <PART=PARIS IDF=BIN >
-CFTT58I Requester transfer ended <IDTU= <transfer C> PART=PARIS IDF=BIN
+CFTT57I Requester transfer started   <IDTU=<transfer C> PART=PARIS IDF=BIN
+CFTR12I END [for transfer B] Treated for USER <my user> <PART=PARIS IDF=BIN  >
+CFTT58I Requester transfer ended     <IDTU=  <transfer C> PART=PARIS IDF=BIN
  
-CFTR12I END \[for transfer C\] Treated for USER <my user> <PART=PARIS IDF=BIN >
+CFTR12I END [for transfer C] Treated for USER <my user> <PART=PARIS IDF=BIN  >
 ```
 
 > **Note:**
@@ -93,17 +93,17 @@ SEND PART=RS43, IDF=BIN, SERIAL=X, IDA=C, ACKSTATE=REQUIRE
 **Results**
 CFTT57I Requester transfer started <IDTU=<transfer A> PART=RS43 IDF=BIN
 CFTT58I Requester transfer ended <IDTU=<transfer A> PART=RS43 IDF=BIN
-CFTT59I Server reply transferred <IDT=<IDT transfer A> PART=RS43 IDM=BIN
+CFTT59I Server    reply    transferred <IDT=<IDT transfer A> PART=RS43 IDM=BIN
  
 CFTT57I Requester transfer started <IDTU=<transfer B> PART=RS43 IDF=BIN
 CFTT58I Requester transfer ended <IDTU=<transfer B> PART=RS43 IDF=B
-CFTT59I Server reply transferred <IDT=<IDT transfer B> PART=RS43 IDM=BIN
+CFTT59I Server    reply    transferred <IDT=<IDT transfer B> PART=RS43 IDM=BIN
  
 CFTT57I Requester transfer started <IDTU=<transfer C> PART=RS43 IDF=BIN
 CFTT58I Requester transfer ended <IDTU= <transfer C> PART=RS43 IDF=BIN
-CFTT59I Server reply transferred <IDT=<IDT transfer C> PART=RS43 IDM=BIN
+CFTT59I Server    reply    transferred <IDT=<IDT transfer C> PART=RS43 IDM=BIN
 ```
 
 ### Using serialization in multi-node architecture
 
-Serialization works in a multi-node environment only if the Communication Media File dispatching policy is partner aligned. To do this, set the uconf parameter `cft.multi_node.cftcom.dispatcher_policy` to` node_affinity`. and set `state=HOLD` when you execute transfer commands.
+Serialization works in a multi-node environment only if the Communication Media File dispatching policy is partner aligned. To do this, set the uconf parameter `cft.multi_node.cftcom.dispatcher_policy` to` node_affinity`. and set `state=HOLD` when you execute  transfer commands.

@@ -8,7 +8,7 @@ Refer to the [UCONF parameters](../uconf_directory) table for information on `c
 
 Alias management
 
-You can access customized file system directories via the {{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
+You can access customized file system directories via the  {{< TransferCFT/componentshortname  >}} user interface HTTP server using aliases.
 
 To add a new alias, access the Unified Configuration uconf and configure the following:
 
@@ -78,9 +78,9 @@ This section describes how to install the certificates that are required to enab
 -   Install a certificate on the server side
 -   Install a certificate on the client side
 
-### Install a certificate on the server side
+### Install a certificate  on the server side
 
-The following tables describe the UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
+The following tables describe the  UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
@@ -88,7 +88,7 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
--   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then the format is PKCS12
+-   `copilot.ssl.sslkeyfile=<not set>` and `copilot.ssl.sslcertpassword=<set>`, then  the format is PKCS12
 -   `copilot.ssl.sslkeyfile= <set>` and `copilot.ssl.sslcertpassword=<not set>`, then the format is PEM
 
 
@@ -117,7 +117,7 @@ This example uses a single PKCS#12 certificate where you only require the file n
 
 How to define a DER or PEM certificate
 
-This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
+This example uses  a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
 
 |  Parameter  |  Value  |

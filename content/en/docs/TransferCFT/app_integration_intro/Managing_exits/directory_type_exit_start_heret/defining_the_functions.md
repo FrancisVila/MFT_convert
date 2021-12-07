@@ -6,7 +6,7 @@
 A directory EXIT task comprises two modules:
 
 -   The interface supplied
-    with {{< TransferCFT/componentshortname >}}
+    with  {{< TransferCFT/componentshortname >}}
 -   The user program
 
 The interface is written in C language. The main entry point of the
@@ -35,7 +35,7 @@ A directory EXIT task:
     function **exaini** function in server mode, when a connection is indicated,
     or in requester mode, when a connection request is made. If this function
     returns a 0 code, the **usrfct** function
-    is called. If not, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> considers that the user does not want
+    is called. If not,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> considers that the user does not want
     to take control
 
 <span id="Initialization_Function"></span>
@@ -85,7 +85,7 @@ part
 Address
 of an (32+1) byte area.
 Partner local identifier if this identifier is known to
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
+  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>.
 parm
 Address
 of an (64+1) byte area.

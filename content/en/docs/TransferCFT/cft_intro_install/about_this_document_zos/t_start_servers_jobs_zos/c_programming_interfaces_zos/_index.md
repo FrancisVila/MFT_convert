@@ -2,11 +2,11 @@
     "title": "Programming interfaces",
     "linkTitle": "Build APIs and exits",
     "weight": "250"
-}This section describes the Transfer CFT batch programming interfaces for Transfer CFT.
+}This section describes the Transfer CFT  batch programming interfaces for Transfer CFT.
 
 ## Transfer CFT APIs in a z/OS environment
 
-Transfer CFT APIs are described in the sub-book [Using APIs](../../using_apis). This programming interface can be accessed in the Assembler, COBOL and C programming languages.
+Transfer CFT APIs are described in the sub-book [Using APIs](../../using_apis). This programming interface can be accessed in the Assembler, COBOL and C programming languages.  
 
 Transfer CFT APIs use the DLL mode exclusively, with samples located in the following libraries:
 
@@ -58,14 +58,14 @@ Samples are located in the CFTV2.SAMPLEA, SAMPLEO, or SAMPLEC files.
 
 This section describes the special use of COBOL compiled with the DYNAM option.
 
-The DYNAM compile option is incompatible with the DLL option. To be able to use the CFT APIs, an interface (called 'OAPIFC') is provided. You must only call this interface one time, and return function pointers corresponding to DLL API entry points.
+The DYNAM compile option is incompatible with the DLL option. To be able to use the CFT APIs, an interface (called 'OAPIFC') is provided. You must only call this interface  one time, and return function pointers corresponding to DLL API entry points.
 
 Implementation
 
 1.  In the working storage section, add the copy book OCFTAPD2.
 2.  In the procedure division, call the module 'OAPIFC' once:
 
-if (ipc-loaded = zero) then
+if   (ipc-loaded = zero) then
 
 call 'OAPIFC' using ipc-par end-call
 
@@ -93,15 +93,15 @@ In this case cftu, cfti, and cftc are defined as pointer functions (see OCFTAPD2
     CBL DYNAM,RENT,DATA(31),NODLL,PGMNAME(LONGMIXED)
 -   Link-edit model:  
     Example OAPIWS sample:  
-    INCLUDE USER(OAPIWS)  
-    MODE AMODE(31)  
-    MODE RMODE(ANY)  
-    NAME OAPIWS(R)
+    INCLUDE  USER(OAPIWS)  
+    MODE     AMODE(31)  
+    MODE     RMODE(ANY)  
+    NAME     OAPIWS(R)
 
 1.  To run the sample OAPIWS , use INSTALL(I93APIRN) and replace:  
-    //OAPIW EXEC CFTAPI,PROG=OAPIW,APIP='SEND PART=PARIS,IDF=TXT'  
+    //OAPIW   EXEC CFTAPI,PROG=OAPIW,APIP='SEND PART=PARIS,IDF=TXT'  
     By  
-    //OAPIWS EXEC CFTAPI,PROG=OAPIWS,APIP='SEND PART=PARIS,IDF=TXT'
+    //OAPIWS   EXEC CFTAPI,PROG=OAPIWS,APIP='SEND PART=PARIS,IDF=TXT'
 
 #### C
 
@@ -125,7 +125,7 @@ In this case cftu, cfti, and cftc are defined as pointer functions (see OCFTAPD2
 
 #### C Headers – API-C
 
--   CFTAPI (CAPIUST): Selection area description, returned catalog area description, and so on
+-   CFTAPI (CAPIUST):  Selection area description,  returned catalog area description, and so on
 
 <!-- -->
 

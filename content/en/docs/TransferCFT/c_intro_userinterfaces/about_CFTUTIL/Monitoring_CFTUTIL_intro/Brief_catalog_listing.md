@@ -41,7 +41,7 @@ is defined as full. Each field displayed is identified by a number
 which references the associated comment. The display differs according
 to the CONTENT and NPART parameters.
 
-See also [Listing catalog contents](../listcat_command).
+See also   [Listing catalog contents](../listcat_command).
 
 For DIAGI and DIAGP refer to: [Codes,
 Diagnostics and Messages](../../../../troubleshoot_intro/messages_and_error_codes_start_here) .
@@ -56,18 +56,18 @@ CFTU20I CFT Windows
 CFTU20I Version 3.1.2 20140428
 CFTU20I (C) Copyright AXWAY 1989-2014
 CFTU20I ====> Starting Session on 20/03/2015 Time is 11:30:25
-CFTU20I Parameters file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftparm
-CFTU20I Partners file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftpart
-CFTU20I Catalog file :C:\\Axway\\Transfer\_CFT\\runtime\\data\\cftcata
+CFTU20I Parameters file    :C:\\Axway\\Transfer_CFT\\runtime\\data\\cftparm
+CFTU20I Partners file      :C:\\Axway\\Transfer_CFT\\runtime\\data\\cftpart
+CFTU20I Catalog file       :C:\\Axway\\Transfer_CFT\\runtime\\data\\cftcata
 CFTU20I
 0 record(s) selected
 10000 record(s) in Catalog file
 10000 record(s) free (100%)
-CFTU00I LISTCAT \_ Correct ()
+CFTU00I LISTCAT  _ Correct ()
 CFTU20I Number of Command(s) 1
-CFTU20I Number of error(s) 0
-CFTU20I Ending Session on 20/03/2015 Time is 11:30:26
-CFTU20I Session active for 0:00:00
+CFTU20I Number of error(s)   0
+CFTU20I Ending   Session on 20/03/2015 Time is 11:30:26
+CFTU20I Session active for  0:00:00
 ```
 
 ### LISTCAT CONTENT = BRIEF, NPART = {identifier | mask}
@@ -120,7 +120,7 @@ comments**
 |  7  |  PARM field<br /> This field is 24 characters long and may be truncated as required  |
 
 
-**(1) (2)**: Refer to
+**(1) (2)**: Refer to  
 *[Codes
 Diagnostics and Messages](../../../../troubleshoot_intro/messages_and_error_codes_start_here)*.
 
@@ -193,5 +193,5 @@ headings contained in this figure.
 |  9  |  Identifier of the application (IDA) associated with this transfer  |
 
 
- **(1) (2)**: See *[Codes
+ **(1) (2)**: See   *[Codes
 Diagnostics and Messages](../../../../troubleshoot_intro/messages_and_error_codes_start_here)*.

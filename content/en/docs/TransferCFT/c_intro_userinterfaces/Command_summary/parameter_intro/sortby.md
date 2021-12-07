@@ -16,7 +16,7 @@ For example, to sort using a partner name and identifier, enter:
 
 `CFTUTIL DISPLAY SORTBY=(PART,IDF)`
 
-Additionally, you can add a prefix to the sorting criteria to indicate the order of the returned content. Use the plus symbol (`+)` for ascending or the minus symbol (`-`) descending order, where the default value is +.
+Additionally, you can add a prefix to the sorting criteria to indicate the order of the returned content. Use the plus symbol (`+)` for ascending  or the minus symbol (`-`) descending order, where the default value is +.
 
 For example:
 
@@ -36,6 +36,6 @@ CFTUTIL DISPLAY SORTBY=(-DATEK,-TIMEK)
 
 Sorts the LISTCAT command information in an alphabetical/alphanumberic order, where the maximum length is 32, and the number of entries is limited to 10.
 
-Records are immediately available after a catalog item is deleted, which may affect the order of the IDTU in the catalog. To view the catalog by IDTU, please see the [LISTCAT SORTBY](../../../about_cftutil/monitoring_cftutil_intro/listcat_command#sortby_example) example.
+Records are immediately available after a catalog item is deleted, which may affect the order of the IDTU in the catalog. To view the catalog by  IDTU, please see the [LISTCAT SORTBY](../../../about_cftutil/monitoring_cftutil_intro/listcat_command#sortby_example) example.
 
 [Return to Command index](../../)

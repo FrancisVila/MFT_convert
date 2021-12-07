@@ -7,6 +7,6 @@
 1.  Enter: `CALL `and press **F4.**
 2.  In the **Program** field, enter the name of binary (`CFTUTIL `in the example).
 3.  In the **Library** field, enter your program library (`*LIBL`by default, `CFTPROD ` in the example).
-4.  In the **Parameters** field you can enter an argument. CFTUTIL requires at least one argument (`CFTEXT `in the example).
+4.  In the **Parameters** field you can enter an argument.  CFTUTIL requires at least one argument (`CFTEXT `in the example).
 
  

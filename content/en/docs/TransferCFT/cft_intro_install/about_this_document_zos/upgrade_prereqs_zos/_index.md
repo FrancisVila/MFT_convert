@@ -31,7 +31,7 @@ This procedure involves a change in product version and the replacement of binar
 
 -   You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
 -   Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
--   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (Meaning you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
+-   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT  and the UI server. (Meaning you must stop all cluster nodes  as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
@@ -40,4 +40,4 @@ This procedure involves a change in product version and the replacement of binar
 
 > **Note:**
 >
-> You require as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
+> You require  as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.

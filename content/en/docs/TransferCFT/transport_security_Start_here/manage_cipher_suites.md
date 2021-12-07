@@ -2,11 +2,11 @@
     "title": "Manage cipher suites",
     "linkTitle": "Manage cipher suites",
     "weight": "190"
-}This section describes how to define the cipher suites that can be used for secure file transfers, governance exchanges (, Sentinel, etc.), and when Transfer CFT is server (for example, when acting as an API server).
+}This section describes how to define  the cipher suites that can be used for secure file transfers, governance exchanges (, Sentinel, etc.), and when Transfer CFT is server (for example, when acting as an API server).
 
 ## Supported cipher suites
 
-{{< TransferCFT/componentlongname  >}} supports the cipher suites listed below, and prioritizes them as displayed in the **Order used** column (the {{< TransferCFT/componentlongname  >}} order overrides your cipher suite order). The order, between two approximate levels of security, favors the cipher suite that provides a better level of performance.
+{{< TransferCFT/componentlongname  >}} supports the  cipher suites listed below, and prioritizes them as displayed in the **Order used** column (the {{< TransferCFT/componentlongname  >}} order overrides your cipher suite order). The order, between two approximate levels of security, favors the cipher suite that provides a better level of performance.
 
 ```
 
@@ -61,45 +61,69 @@ RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-256
 47
+                        
 9
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 AES-128
+                        
 SHA-1
+                        
 53
 10
 RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-1
 10
+                        
 11
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 Triple DES
+                        
 SHA-1
+                        
 5
+                        
 12
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 SHA-1
+                        
 4
+                        
 13
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 MD5
+                        
 59\*
 14
 RSA authentication (512, 1024, 2048, or 4096)
 None
 SHA-256
 2
+                        
 15
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 None
+                        
 SHA-1
+                        
 1
+                        
 16
 RSA authentication (512, 1024, 2048, or 4096) 
+                        
 None
+                        
 MD5
+                        
 ```
 
 > **Note:**

@@ -14,13 +14,16 @@ To view the ORIGIN parameter, for example:
 
 ```
 CFTUTIL cftext id=test, content=brief
-CFTSEND ID = 'TEST',
-IMPL = 'NO',
-STATE = 'DISP',
-CYCLE = '0',
-...
-**ORIGIN = 'CFTUTIL',**
+CFTSEND      ID          = 'TEST',
+              
+IMPL        = 'NO',
+              
+STATE       = 'DISP',
+              CYCLE       = '0',
+              ...
+**ORIGIN      = 'CFTUTIL',**
 MAXDURATION = '0',
+              
 ...
-MODE = 'REPLACE'
+              MODE        = 'REPLACE'
 ```

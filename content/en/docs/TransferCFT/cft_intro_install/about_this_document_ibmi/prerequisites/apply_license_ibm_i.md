@@ -17,16 +17,16 @@
 1.  For a new installation, install {{< TransferCFT/componentshortname >}}.
 2.  After completing the installation, or for an existing installation, use the command **cftutil about** to retrieve your system information. For details see the examples below.
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: **`fulfillment@us.axway.com`**
+    -   For a US key, contact:  **`fulfillment@us.axway.com`**
     -   For an EMEA or APAC key, contact: **`product.key@axway.com`**
-4.  Provide the hostname where Transfer CFT is to be installed or updated.
-5.  Provide the list of characters in the CPU ID.
+4.  Provide the hostname  where Transfer CFT is to be installed or updated.
+5.  Provide the list of characters in the  CPU ID.
 
 ### Apply a license key
 
 Apply the license key(s) that you received from the Axway Fulfillment team as follows:
 
--   Navigate to the CFTPROD library, and edit the 'KEY' file.
+-   Navigate to the CFTPROD  library, and edit the 'KEY' file.
 -   Edit the CFTPROD/KEY(KEY) member by entering (writing in) your key.
 
 Examples

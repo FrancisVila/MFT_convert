@@ -32,7 +32,7 @@ To create exits with Assembler, access the following files:
 -   distlib.CNTL(LINKEXDL):
     -   Imports functions for a LINK-EDIT DLL.
 -   distlib.CNTL (LINRDXGn):
-    -   Transfer CFT modules for various Transfer CFT exits. The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
+    -   Transfer CFT modules for various Transfer CFT exits.  The value for ‘n’ may vary from 0 to 9. Use the naming conventions in the following table.
 
  
 
@@ -66,7 +66,7 @@ To create exits with C, access the following files:
 
     -   The main entry point, ‘`callexig*`’, is exported and is called by the Transfer CFT EXIT loader.
     -   The `init `function, where the name is free, and samples use the EXAINI, EXEINI, EXFINI and EXBINI names. The `init `function returns the Transfer CFT EXIT run function address.
-    -   The `run `function, where the name is free, and samples use the EXAXMP1, EXEXMP1, EXFXMP1, and EXBXMP1 names.
+    -   The `run `function, where the name is free, and samples use the EXAXMP1, EXEXMP1, EXFXMP1, and EXBXMP1  names.
     -   Exits must be compiled with the options: LANG(EXTENDED), RENT, DLL, LONGNAME.
     -   An example of a call to Transfer CFT APIs within an exit is provided in the CEXEDLL sample.
 

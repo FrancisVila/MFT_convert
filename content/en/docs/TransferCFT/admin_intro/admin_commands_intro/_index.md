@@ -11,7 +11,7 @@ setting commands and operating commands.
 
 ## Overview
 
-All Transfer CFT actions are controlled
+All Transfer CFT  actions are controlled
 by a series of Transfer CFT commands. CFTUTIL makes it possible to create the working environment and configure
 the Transfer CFT application, performing the following operations:
 
@@ -40,7 +40,7 @@ command topic, refer to the [Command index](../../c_intro_userinterfaces/command
 
 ### Command syntax
 
-For each command, CFTUTIL checks the command syntax and enters the command. Refer to *[Typographical
+For each command, CFTUTIL checks the command syntax and enters the command. Refer to  *[Typographical
 conventions](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)* for the Transfer CFT command syntax conventions used in this document.
 
 <span id="CFTUTIL_commands"></span>

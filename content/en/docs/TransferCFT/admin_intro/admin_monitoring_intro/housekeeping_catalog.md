@@ -10,9 +10,9 @@ This section describes how to manage the log, catalog, and output files to keep 
 
 Transfer CFT records all file transfers in its local database, the catalog. The size of the Catalog is defined to store a maximum number of file transfer records.
 
-### Automatic catalog expansion
+### Automatic  catalog expansion
 
-Thecatalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
+Thecatalog option lets you  enlarge the catalog by a preset percentage when  an alert  is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 #### Overview
 
@@ -20,12 +20,12 @@ Once the catalog exceeds the minimum alert level, it can be expanded to the amou
 
 If you defined a limit for catalog alerts, TLVCLEAR, once the usage surpasses the allotted value one of the following occurs:
 
--   The catalog is expanded and a message sent to the log, but no script is executed
--   The catalog is expanded, a message is sent to the log, and the TLVCEXEC script executes.
+-   The catalog is expanded and a message  sent to the log, but no script is executed
+-   The catalog is expanded, a message  is sent to the log, and the TLVCEXEC script executes.
 
 #### Steps
 
-To enable the auto-expand option, with {{< TransferCFT/componentshortname  >}} running:
+To enable the auto-expand option, with  {{< TransferCFT/componentshortname  >}} running:
 
 1.  Set the uconf values for:
     -   cft.cftcat.auto\_expand\_percent
@@ -63,7 +63,7 @@ When you reach the TLVWARN (level=80%), the following messages are sent to the l
 ```
 12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: **level=80%** ID=CAT0
 12/10/17 17:53:30  CFTC13I Catalog resize (100 --> 120) done
-12/10/17 17:54:16  CFTT17I \_ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
+12/10/17 17:54:16  CFTT17I _ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
 12/10/17 17:54:16  CFTR12I SEND Treated for USER Nougat  <IDTU=A0000029 PART=PARIS IDF=TXT>
 12/10/17 17:54:16  CFTS20I Communication file row number deleted: 00000252   
 ```
@@ -74,7 +74,7 @@ The new fill rate is now 80/120 = ~67%, which is below TLVCLEAR (70), so the ale
    12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
 ```
 
-The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+The message indicates that the catalog is sufficient.  If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140). If you exceed the limit the following log messages display:
 
@@ -82,7 +82,7 @@ The catalog continues to fill until it reaches 80%. Expanding 20% more would res
 12/10/17 18:06:57  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
 12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 144) too much
 12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 140) done
-12/10/17 18:06:57  CFTT17I \_ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092>
+12/10/17 18:06:57  CFTT17I _ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092>
 12/10/17 18:06:57  CFTR12I SEND Treated for USER Nougat <IDTU=A000002P PART=PARIS IDF=TXT>
 12/10/17 18:06:57  CFTS20I Communication file row number deleted: 00000269                               
 12/10/17 18:06:57  CFTC30W Catalog Alert cleared : level=69% ID=CAT0
@@ -109,18 +109,25 @@ The local file transfer internal datafile rules include standard purge rules tha
 There are 6 parameters that manage the purge, depending on the transfer status and direction. For each of the following you can set the number, in days, for the purge to occur. In our example, the purge is set for 10 days.
 
 ```
-CFTCAT ID = 'CAT0',
+CFTCAT       ID          = 'CAT0',
+            
 
-FNAME = '$CFTCATA',
-WSCAN = '1',
-TIMEP = '23595999',
-UPDAT = '1',
-SH = '10',
-ST = '10',
-SX = '10',
-RH = '10',
-RT = '10',
-RX = '10',
+FNAME       = '$CFTCATA',
+             WSCAN       = '1',
+            
+TIMEP       = '23595999',
+             UPDAT       = '1',
+             SH          = '10',
+            
+ST          = '10',
+            
+SX          = '10',
+            
+RH          = '10',
+            
+RT          = '10',
+            
+RX          = '10',
 
 ```
 
@@ -130,13 +137,13 @@ The second letter refers to the state (CFTSTATE).
 
 **Normal mode**
 
--   \(H\) Transfer phase and hold phasestep, or Transfer phase and kill phasestep
+-   \(H\) Transfer phase and hold  phasestep, or Transfer phase and kill phasestep
 -   \(T\) Ack phase and all phasesteps
 -   \(X\) Done phase and Done phasestep
 
 > **Note:**
 >
-> Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state to (X).
+> Transfers in phase (Y) and phasestep (D) are not purged when purging the catalog. To purge these records, you must execute an END command that modifies the state  to (X).
 
 **Compatibility mode**
 
@@ -177,7 +184,8 @@ For information on the RECONFIG command, please see <a href="../../admin_command
 When defining CFTSEND or CFTRECV templates you can set a parameter to purge the records after the transfer completes.
 
 ```
-CFTSEND DELETE=YES
+CFTSEND       DELETE=YES
+            
 ```
 
 #### Purge records with the keep status
@@ -185,7 +193,8 @@ CFTSEND DELETE=YES
 Delete all file transfer records in keep status (K) due to a file creation error.
 
 ```
-CFTRECV RKERROR=YES
+CFTRECV       RKERROR=YES
+            
 ```
 
 #### Manually delete catalog records
@@ -204,7 +213,8 @@ of 20 transfers every 5 seconds.
 For example, delete all executed transfers from the catalog.
 
 ```
-DELETE STATE=X
+DELETE      STATE=X
+            
 ```
 
 #### Manage transfer events sent to Sentinel
@@ -224,7 +234,7 @@ All output files are stored in the &lt;runtime/run> directory. Among these are t
 However, Transfer CFT processes use a standard output file &lt;runtime/run>/cft.out to log internal system messages. You can define the number of archive files you want to rotate using the command:
 
 ```
-UCONFSET id=cft.output.backup\_count,value=n
+UCONFSET id=cft.output.backup_count,value=n
 ```
 
 ## Delete completed transfer files

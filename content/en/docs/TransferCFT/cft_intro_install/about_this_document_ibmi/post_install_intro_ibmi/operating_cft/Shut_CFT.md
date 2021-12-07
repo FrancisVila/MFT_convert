@@ -8,7 +8,7 @@ The following shutdown messages are displayed:
 
 ```
 CFTU20I
-CFTU00I SHUT \_ Correct ( FAST=YES)
+CFTU00I SHUT _ Correct ( FAST=YES)
 CFTU20I Communication file row number used: 00000022 on 20130329 Time 1612460
 2
 CFTU20I Number of Command(s) 1

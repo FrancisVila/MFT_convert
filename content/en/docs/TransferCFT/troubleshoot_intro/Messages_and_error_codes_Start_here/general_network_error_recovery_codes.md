@@ -20,11 +20,11 @@ RECOV - General Network Error Recovery Codes
 
 ```
 
-Code
-</th>
+                            Code
+                        </th>
 
-Meaning
-</th>
+                            Meaning
+                        </th>
 
 1
 Normal remote end disconnection

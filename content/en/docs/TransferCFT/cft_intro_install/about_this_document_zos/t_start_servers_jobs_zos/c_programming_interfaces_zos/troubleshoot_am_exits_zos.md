@@ -4,9 +4,9 @@
     "weight": "310"
 }## Common mistakes
 
-&gt; ICH409I 282-014 ABEND DURING RACHECK PROCESSING
+    > ICH409I 282-014 ABEND DURING RACHECK PROCESSING
 
--> invalid access value (if value &lt;&gt; 2 & 4 & 8)
+           -> invalid access value (if value &lt;&gt; 2 & 4 & 8)
 
 ### Administrator
 
@@ -180,13 +180,13 @@ The following examples are performed using CFTUTIL.
 
 UCONFSET ID=am.exit.custom.rbac\_fname.value,
 
-value=permits.definition.file
+      value=permits.definition.file
 
 UCONFSET ID=am.exit.custom.safclass.value,value=CORPCFT1
 
 UCONFSET ID=am.type,value=EXIT
 
-UCONFSET ID=am.exit.check\_login,value=NO /\* or YES \*/
+UCONFSET ID=am.exit.check\_login,value=NO   /\* or YES \*/
 
 ### Example definitions
 
@@ -200,10 +200,10 @@ Define CONNECT 2
 
 ### Create a 'RACF' profile
 
---- RDEFINE CORPCFT1 UI.\*\* UACC(NONE) OWNER(......)
+---  RDEFINE CORPCFT1 UI.\*\* UACC(NONE) OWNER(......)
 
 ### Give permissions to group(s) or user(s) ID(...)
 
---- PERMIT UI.\*\* CLASS(CORPCFT1) ACCESS(READ) -
+---  PERMIT UI.\*\*  CLASS(CORPCFT1) ACCESS(READ) -
 
-ID(... ...)
+        ID(... ...)

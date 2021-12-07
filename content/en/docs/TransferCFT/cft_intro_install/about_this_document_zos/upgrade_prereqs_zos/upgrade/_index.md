@@ -149,7 +149,7 @@ Copy the following JCLs from the new instance to the target instance to upgrade:
 4.  Set A03PARM.
     -   If A03PARM was upgraded, you must customize this file.
     -   If A03PARM is not upgraded, the new missing parameters will have the compatible value.
-5.  Customize and submit A00CUSTO JCL:
+5.  Customize and submit A00CUSTO JCL:  
     -   SET CFTV2 = XX.YY.ZZ Instance prefix
     -   SET DISTLIB = XX.YY Distribution prefix
     -   SET DISTLEV = ZZ Distribution suffix (latest level of CFTV2)
@@ -177,7 +177,7 @@ Customize MIGR$SET:
 
 > **Note:**
 >
-> The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each node.
+> The MIGRCAT procedure migrates the catalog files, one catalog file at a time. You must modify and execute this procedure for each  node.
 
 > **Note:**
 >
@@ -198,24 +198,24 @@ If the instance is independent from the distribution environment, customize the 
 
 ```
 // SET DISTLIB=&CFTENV
-// SET DISTPRF= -> &CFTENV without the last qualifier
+// SET DISTPRF= -> &CFTENV without the last qualifier      
 // SET DISTLVL= -> last qualifier of &CFTENV
 For example if CFTENV=XX.YY.ZZ
 // SET DISTLIB=&CFTENV or XX.YY.ZZ
-// SET DISTPRF=XX.YY
-// SET DISTLVL=ZZ
+// SET DISTPRF=XX.YY      
+// SET DISTLVL=ZZ  
 ```
 
 For example, if CFTENV=XX.YY.ZZ:
 
 ```
 // SET DISTLIB=&CFTENV
-// SET DISTPRF= -> &CFTENV without the last qualifier
+// SET DISTPRF= -> &CFTENV without the last qualifier      
 // SET DISTLVL= -> last qualifier of &CFTENV
 For example if CFTENV=XX.YY.ZZ
 // SET DISTLIB=&CFTENV or XX.YY.ZZ
-// SET DISTPRF=XX.YY
-// SET DISTLVL=ZZ
+// SET DISTPRF=XX.YY      
+// SET DISTLVL=ZZ  
 ```
 
 If the instance is linked to a distribution environment, set the DISTLIB, DISTPRF, DISTLVL variables to it.

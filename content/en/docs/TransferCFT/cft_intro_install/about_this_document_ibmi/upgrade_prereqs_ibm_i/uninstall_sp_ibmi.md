@@ -4,7 +4,7 @@
     "weight": "220"
 }## Uninstall a service pack
 
-When you apply a service pack, a backup of your previous version is saved in a SAVF object (named, for example, SPXSAV). This SAVF is located in your production library. You can use the UNINSTALL command, delivered in the program library, to uninstall a service pack and roll back to the previous version.
+When you apply a service pack, a backup of your previous version is saved in a SAVF object (named, for example, SPXSAV). This SAVF is located in your production library. You can use the UNINSTALL command, delivered in the program library, to uninstall a service pack and roll back to the previous version.  
 
 Follow these steps to uninstall a service pack:
 
@@ -15,10 +15,10 @@ Follow these steps to uninstall a service pack:
 CFT Uninstall (UNINSTALL)
  
 Type choices, press Enter.
-Silent installation . . . . . . '**2**'         1:Yes/2:No
-CFT Program library . . . . . . CFTPGM Name
-CFT Production library . . . . . CFTPROD Name
-SAVF name of previous version . SPXSAV Name
+Silent installation  . . . . . .   '**2**'                  1:Yes/2:No
+CFT Program library  .   .   .   .  .  .   CFTPGM    Name
+CFT Production library .   .   .   .  .   CFTPROD  Name
+SAVF name of previous version  .   SPXSAV      Name
 ```
 
 -   Where:

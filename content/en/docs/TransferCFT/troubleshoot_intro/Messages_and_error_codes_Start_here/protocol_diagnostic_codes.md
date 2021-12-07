@@ -89,14 +89,14 @@ iNN" format values
 
 ```
 
-XXX
-</th>
+                            XXX
+                        </th>
 
-FPDU
-</th>
+                            FPDU
+                        </th>
 
-Definition
-</th>
+                            Definition
+                        </th>
 
 ABO 
 ABORT  
@@ -199,7 +199,7 @@ Induced internal event (eg: VIABORT) 
 Error code descriptions
 
 
-| Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
+|  Error Code &lt;/th&gt;  |  FPDU &lt;/th&gt;  |  Meaning &lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -300,11 +300,11 @@ Error code descriptions
 <table>
    <thead>
       <tr>
-<th >PeSIT reason code&lt;/th&gt;         </th>
-<th >Description&lt;/th&gt;         </th>
+<th >                            PeSIT reason code&lt;/th&gt;         </th>
+<th >                            Description&lt;/th&gt;         </th>
 <th >{{< TransferCFT/componentshortname  >}} internal
 diagnostic         </th>
-<th >Service item concerned&lt;/th&gt;         </th>
+<th >                            Service item concerned&lt;/th&gt;         </th>
       </tr>
    </thead>
    <tbody>

@@ -14,9 +14,9 @@ Use the `CFTUTIL ABOUT` command to display the product information, including th
 CFT information :
 \* product = CFT/OS400
 \* version = 3.2.4
-\* level = SP0\_P1
+\* level   = SP0_P1
 \* upgrade = 8668000
-\* target = os400
+\* target  = os400
 ```
 
 ## Update with a service pack
@@ -68,8 +68,8 @@ Module versions impacted by the patch are stored. If the SAVF does not exist, it
 Install Transfer CFT patch (PATCHER)
 Type choices, press Enter.
  
-Program library . . . . . . . . CFTPGM Character value
-SAVF for backup . . . . . . . . PATCHSAV Character value
+Program library  . . . . . . . .       CFTPGM        Character value
+SAVF for backup  . . . . . . . .       PATCHSAV      Character value
 ```
 
 **Results**
@@ -82,7 +82,7 @@ Results, for example, after applying SP2\_Patch2:
 CFT information :
 \* product = CFT/OS400
 \* version = 3.2.4
-\* level = SP2\_Patch2
+\* level   = SP2_Patch2
 \* upgrade = 8712000
-\* target = os400
+\* target  = os400
 ```

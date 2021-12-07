@@ -23,7 +23,7 @@ below.
 
 ### Model files: IDF
 
-Depending on the type of data to be sent, a model file identifier is assigned to each transfer, for example
+Depending on the type of data to be sent,  a model file identifier is assigned to each transfer, for example
 IDF = INVOICES. Processing operations and default values for transfer
 parameters and data file description parameters can be associated with
 a model file identifier.
@@ -32,12 +32,12 @@ These processing operations and default values are indicated in the flow definit
 CFTSEND and CFTRECV parameter setting commands, for sending and receiving
 files respectively.
 
-A CFTSEND and a CFTRECV command may correspond to each model
+            A CFTSEND and a CFTRECV command may correspond to each model
 file. In the absence of these commands for a given transfer, {{< TransferCFT/componentshortname  >}} uses the default CFTSEND and CFTRECV command parameters, which are
 valid regardless of the IDF.
 
-An identifier corresponds to each flow definition. In the absence of this flow identifier, &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> uses the flow default value.
-&lt;/p>
+            An identifier corresponds to each flow definition. In the absence of this flow identifier, &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> uses the flow default value.
+        &lt;/p>
 
 The default command is the command whose file identifier corresponds either to the:
 

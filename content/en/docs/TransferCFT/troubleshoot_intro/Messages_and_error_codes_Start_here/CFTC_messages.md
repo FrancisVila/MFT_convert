@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTC",
     "linkTitle": "CFTC messages",
     "weight": "280"
-}This topic lists the CFTC (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTC  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -22,12 +22,12 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 V23 format
 V24 format
 Warning
-<span id="CFTC01W"></span>CFTC01W CFT catalog storage is short n record(s) free 
-CFTC01W CFT catalog storage is short n record(s) free 
+<span id="CFTC01W"></span>CFTC01W CFT catalog storage is  short n record(s) free 
+CFTC01W CFT catalog storage is  short n record(s) free 
 Explanation
-Catalog storage is short n record(s) free.
+Catalog storage is  short n record(s) free.
 Consequence
-The catalog is nearly full - there are only n records free. Consider modifications to free up space.
+The  catalog is nearly full - there are only n records free. Consider modifications  to free up space.
 ```
 
  
@@ -39,9 +39,9 @@ Error
 <span id="CFTC01E"></span>CFTC01E CFT catalog storage is full  
 CFTC01E CFT catalog storage is full
 Explanation
-The catalog storage is full. A command SHUT FAST=KILL is executed.
+The catalog storage is  full. A command SHUT FAST=KILL is executed.
 Consequence
-The stored commands can only be retrieved by restarting {{< TransferCFT/componentshortname >}}. First purge the {{< TransferCFT/componentshortname >}} catalog (and modify the retention dates, for example).
+The  stored commands can only be retrieved by restarting {{< TransferCFT/componentshortname >}}. First purge  the {{< TransferCFT/componentshortname >}} catalog (and modify the retention dates, for example).
 ```
 
  
@@ -50,15 +50,15 @@ The stored commands can only be retrieved by restarting {{< TransferCFT/componen
 V23 format
 V24 format
 Warning
-<span id="CFTC03W"></span>CFTC03W PART=&part IDF=&idf IDT=&idt \_
+<span id="CFTC03W"></span>CFTC03W PART=&part IDF=&idf IDT=&idt _
 Running out of time (HHMMSSCC)
-CFTC03W Transfer Running out of time <IDTU=&idtu PART=&part IDF=&idf IDT=&idt \[sgt=HHMMSSCC\]
+CFTC03W Transfer Running out of time <IDTU=&idtu PART=&part IDF=&idf IDT=&idt [sgt=HHMMSSCC]
 Explanation
 The transfer start time is outside the interval authorized by
 the &part partner.
 Consequence
 The next transfer retry will take place at the specified time
-\[HHMMSSCC\].
+[HHMMSSCC].
 ```
 
  
@@ -68,8 +68,8 @@ V23 format
 V24 format
 Warning
 <span id="CFTC04W"></span>CFTC04W PART=&part  IDF=&idf IDT=&idt
-\_ State C delete forbidden
-CFTC04W \_ State C delete forbidden <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
+_ State C delete forbidden
+CFTC04W _ State C delete forbidden <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
 Explanation
 A DELETE command was executed on a catalog request (in the C
 state), but this operation is not allowed.
@@ -83,9 +83,9 @@ The catalog entry could not be deleted.
 V23 format
 V24 format
 Warning
-<span id="CFTC05W"></span>CFTC05W PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt \_ Delete
+<span id="CFTC05W"></span>CFTC05W PART=&part [IDF=&idf | IDM=&idm] IDT=&idt _ Delete
 failed
-CFTC05W \_ Delete failed <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt
+CFTC05W _ Delete failed <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt
 Explanation
 A DELETE command was executed on a catalog request (in a state
 other than C or D), but it failed as a result of a catalog access error.
@@ -101,9 +101,9 @@ CFTT21E message may be displayed before this message.
 V23 format
 V24 format
 Error
-<span id="CFTC06E"></span>CFTC06E PART=&part IDF=&idf IDT=&idt \_
+<span id="CFTC06E"></span>CFTC06E PART=&part IDF=&idf IDT=&idt _
 Update failed
-CFTC06E \_ Update failed <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
+CFTC06E _ Update failed <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
 A Transfer
 CFT catalog access error was detected when executing commands, such as
@@ -119,9 +119,9 @@ The CFTT21E message is displayed prior to this message.
 V23 format
 V24 format
 Information
-<span id="CFTC07I"></span>CFTC07I PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt
+<span id="CFTC07I"></span>CFTC07I PART=&part [IDF=&idf | IDM=&idm]IDT=&idt
 STATE=&state - Deleted
-CFTC07I Transfer Deleted <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt STATE=&state DIRECT=&direct
+CFTC07I Transfer Deleted <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt STATE=&state DIRECT=&direct
 Explanation
 A Transfer
 CFT catalog entry for partner &part, with identifier &idf, idt
@@ -162,7 +162,7 @@ V24 format
 Information
 <span id="CFTC10I"></span>CFTC10I PART=&part IDF or IDM=&idf STATE=&state
 MODE=&mode : &cmd not executed
-CFTC10I PART=&part \[IDF=&idf | IDM=&idm\] STATE=&state MODE=&mode : &cmd not executed
+CFTC10I PART=&part [IDF=&idf | IDM=&idm] STATE=&state MODE=&mode : &cmd not executed
 Explanation
 The security system does not allow this user to execute this
 command on the catalog.
@@ -178,12 +178,12 @@ V24 format
 Information
 <span id="CFTC11I"></span>CFTC11I PART=&part IDM=&idf IDT=&idt :
 SEND REPLY not executed
-CFTC11I Command not executed <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt : Cmd=&cmd
+CFTC11I Command not executed <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt : Cmd=&cmd
 Explanation
 The security system does not allow the user to execute this
 command on the catalog.
 Consequence
-The command is ignored.
+The command is ignored.  
 
 > **Note:**
 > This message
@@ -197,19 +197,19 @@ The command is ignored.
 V23 format
 V24 format
 Information
-<span id="CFTC12I"></span>CFTC12I PART=&part STATE=&state DIRECT=&direct TYPE=&type SENTINEL\_STATE=&trkstate Deleted
-CFTC12I IDTU=&idtu PART=&part STATE=&state PHASE=&phase PHASESTEP=&phasestep DIRECT=&direct TYPE=&type SENTINEL\_STATE=&trkstate Deleted
+<span id="CFTC12I"></span>CFTC12I PART=&part  STATE=&state DIRECT=&direct TYPE=&type SENTINEL_STATE=&trkstate Deleted
+CFTC12I IDTU=&idtu PART=&part STATE=&state PHASE=&phase PHASESTEP=&phasestep DIRECT=&direct TYPE=&type SENTINEL_STATE=&trkstate Deleted
 Explanation
-This {{< TransferCFT/componentshortname >}} message is displayed for each transfer that is deleted when the catalog is purged. Where:
+This {{< TransferCFT/componentshortname >}} message is displayed  for each transfer that is deleted when the catalog is purged. Where:
 
 -   &state = transfer status (C/D/H/K/T/X)
 -   &direct = S (send) / R (recv)
 -   &type = F (file) / M (message)
--   &trkstate = Sentinel state
+-   &trkstate = Sentinel  state
 
 Possible values are:
 
--   TO\_EXECUTE
+-   TO_EXECUTE
 -   SUSPENDED
 -   RECEIVING
 -   SENDING
@@ -222,7 +222,7 @@ Possible values are:
 -   NACKED
 
 Consequence
-The command is ignored.
+The command is ignored.  
 ```
 
  
@@ -265,7 +265,7 @@ Explanation
 Set the uconf parameter `cft.cftcat.enable_deprecated_blknum=Yes` to enable BLKNUM.
 
 > **Note:**
-> Regardless of the cft.cftcat.enable\_deprecated\_blknum parameter setting, BLKNUM is disabled in a multi-node configuration (uconf:cft.multi\_node.enable=Yes), and this message is displayed.
+> Regardless of the  cft.cftcat.enable_deprecated_blknum parameter setting, BLKNUM  is disabled in a multi-node configuration (uconf:cft.multi_node.enable=Yes), and this message is displayed.
 
 Consequence
 The command is ignored.
@@ -281,7 +281,7 @@ Warning
 Catalog Alert fill threshold reached: level=&level , id=CAT0
 CFTC29W Catalog Alert fill threshold reached: level=&level ID=&id
 Explanation
-&level of the catalog space has been used. &level is the amount
+&level  of the catalog space has been used. &level  is the amount
 set by the CFTCAT TLVWARN parameter.
 When the critical fill threshold is reached, a message
 is recorded in the {{< TransferCFT/componentshortname >}} log.

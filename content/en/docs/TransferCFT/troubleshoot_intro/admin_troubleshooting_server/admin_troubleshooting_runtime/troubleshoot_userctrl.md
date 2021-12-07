@@ -6,7 +6,7 @@
 
 ```
 CFTF03E local file deselect error 00000008
-CFTF30W SFM\_COPY : invalid file name OR other error IDTU= IDF=
+CFTF30W SFM_COPY : invalid file name OR other error IDTU= IDF=
 CFTF30W+IDT=
 CFTF30W+U=expl F=<temporary filename> <IDTU=
 ```

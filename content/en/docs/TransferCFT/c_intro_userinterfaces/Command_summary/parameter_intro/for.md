@@ -23,6 +23,6 @@ Option include:
     recipient’s network name. It then broadcasts the file or message to all
     partners in the list.
 -   LOCAL:
-    On a local {{< TransferCFT/hflongproductname >}} to send (broadcast) or receive (collect) a file  
+    On a local {{< TransferCFT/hflongproductname >}} to send (broadcast) or receive (collect) a file   
 
 [Return to Command index](../../)

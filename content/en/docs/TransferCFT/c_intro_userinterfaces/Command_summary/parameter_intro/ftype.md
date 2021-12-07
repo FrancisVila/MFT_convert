@@ -12,11 +12,11 @@
 
 \[ FTYPE = { c } \]  OS-specific
 
-The file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
+The  file type. Some FTYPE parameter values are OS specific. Refer to the Transfer CFT OS-specific documentation for more information.
 
 > **Note:**
 >
-> When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be the CRLF (x0Dx0A) or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
+> When using the SFTP protocol and FTYPE = T, O, X, J or F, the file is considered a text file and there is no specific treatment according to the value. This means that the newline character (EOL character) can be  the CRLF (x0Dx0A)  or LF (x0A) on Windows, or LF (x0A) on UNIX systems.
 
 UNIX<span id="UNIX_ftype"></span>
 
@@ -92,7 +92,7 @@ The following table lists the different types of files that can be used accordin
 
 > **Note:**
 >
-> Bold values indicate a recommended combination. For example, FTYPE=D and FRECFM=V, are the recommended settings for PF-DTA files with variable data.
+> Bold  values indicate a recommended combination. For example, FTYPE=D and FRECFM=V, are the recommended settings for PF-DTA files with variable data.
 
 
 |  FTYPE  |  FRECFM  |  Supported files and data organizations (if applicable).  |
@@ -126,11 +126,11 @@ The following table lists the different types of files that can be used accordin
 
 | FTYPE  | FRECFM  | Type of file  |
 | --- | --- | --- |
-| ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
-| ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
+|  ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
+|  ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
 
 
 > **Note:**

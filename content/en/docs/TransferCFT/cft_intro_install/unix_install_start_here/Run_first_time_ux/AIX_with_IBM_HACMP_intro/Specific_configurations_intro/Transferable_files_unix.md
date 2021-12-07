@@ -6,7 +6,7 @@
 topic describes the Transfer
 CFT parameters that are specific to UNIX concerning the characteristics of a transferable file.
 
--   Characteristics of files automatically detected (or not) on transmission
+-   Characteristics of files automatically detected  (or not) on transmission
 -   FTYPE and FCODE values implicitly
     associated during transmission
 -   FTYPE and FRECFM values on receipt
@@ -45,11 +45,11 @@ NO
 | J  | ASCII  |  Stream text<br/>Using stream text (J) allows a text type file to be sent that contains records that exceed 32 KB. As opposed to text type (FTYPE=T), stream text does not add an EOL sequence (LF or CRLF) to the received file.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file.  |
 
 
-FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.
+FTYPE = J refers to stream text. The stream text type allows sending a text file that contains records  that are larger than 32 KB. Unlike classical text types (T, O, X) the stream text type does not add an EOL sequence (LF or CRLF) at the end of the received file.
 
 > **Note:**
 >
-> FTYPE J is available in Transfer CFT Transfer CFT 3.0.1 SP7 (UNIX and Windows) and higher.
+> FTYPE J  is available in Transfer CFT Transfer CFT 3.0.1 SP7 (UNIX and Windows) and higher.
 
 #### FTYPE and FRECFM values on receipt
 

@@ -12,14 +12,17 @@ Examples
 
     Enter the selection or command at the prompt.
 
-    ``` > CFTUTIL ```
-
--   Enter the command `LISTCAT `and press ENTER to confirm. ```
-    1:Input : > LISTCAT
+    ``` > CFTUTIL
     ```
 
--   Enter the command` /end `and press ENTER to exit CFTUTIL. ```
-    1:Input : > /END
+-   Enter the command `LISTCAT `and press ENTER to confirm.
+    ```
+    1:Input : > LISTCAT  
+    ```
+
+-   Enter the command` /end `and press ENTER to exit CFTUTIL.
+    ```
+    1:Input : > /END  
     ```
 
 ## Files and individual parameters

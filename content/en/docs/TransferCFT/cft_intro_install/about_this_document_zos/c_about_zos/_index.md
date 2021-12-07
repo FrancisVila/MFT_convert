@@ -12,14 +12,14 @@ The {{< TransferCFT/componentshortname  >}} Installation Guide provides instruct
 
 The minimum z/OS version depends on the JES:
 
--   If you use the JES2 component, then you require z/OS 2.1 or higher
--   If you use the JES3 component, then you require z/OS 2.2 or higher
+-   If  you use the JES2 component, then you require z/OS 2.1 or higher
+-   If  you use the JES3 component, then you require z/OS 2.2 or higher
 
 <span id="Installation support format"></span>
 
 ## Version format
 
-To accommodate changing product versions, we use the convention &lt;version> in place of the actual version number in samples and lists.
+To accommodate changing product versions, we use the convention &lt;version>  in place of the actual version number in samples and lists.
 
 For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version> would be ZOS/CFT/3.3.x.
 
@@ -27,7 +27,7 @@ For example if your Transfer CFT is version 3.3.x, the file ZOS/CFT/&lt;version>
 
 ## Delivery - distribution method
 
-Axway delivers Transfer CFT z/OS on the support site: [support.axway.com](https://support.axway.com/). To download the packages from Axway support, you require a user ID and password.
+Axway delivers Transfer CFT z/OS on  the support site: [support.axway.com](https://support.axway.com/). To download the packages from Axway support, you require a user ID and password.
 
 There are three Transfer CFT packages available on the Axway support site - 2 packages for the standard Transfer CFT installation method (which differ only in file format, ADRDSSU or XMIT), and additionally the SMP/E Transfer CFT installation package.
 
@@ -66,7 +66,7 @@ The Transfer CFT z/OS components include:
     -   CFTPRX: Proxy task
     -   CFTAPI: Interface for user batch programming
     -   CFTSFTP: Main SFTP task, with POSIX runtime option set to ON
-    -   Threads (BPXPTATT) are started one by one and are permanent (unlike TFIL tasks)
+    -   Threads (BPXPTATT) are started one by one  and are permanent (unlike TFIL tasks)
 -   Other major components:
     -   CFTPKI: Management utility for internal datafile security
     -   CFTCOPL: Transfer CFT UI server

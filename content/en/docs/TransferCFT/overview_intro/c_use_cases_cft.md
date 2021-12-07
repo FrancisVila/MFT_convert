@@ -2,7 +2,7 @@
     "title": "Implementation architectures",
     "linkTitle": "Implementation architectures",
     "weight": "110"
-}This section describes the general types of implementation when using {{< TransferCFT/componentshortname  >}}, either with multiple {{< TransferCFT/componentshortname  >}}s or in conjunction with other {{< TransferCFT/companyname  >}} products.
+}This section describes the general types of implementation  when using {{< TransferCFT/componentshortname  >}}, either with multiple {{< TransferCFT/componentshortname  >}}s or in conjunction with other {{< TransferCFT/companyname  >}} products.
 
 -   Distributed A2A transfer exchanges
 -   Centralized A2A transfer exchanges

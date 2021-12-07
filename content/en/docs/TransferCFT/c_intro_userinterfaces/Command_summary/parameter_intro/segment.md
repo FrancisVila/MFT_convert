@@ -34,7 +34,7 @@ a Transfer CFT that supports concatenation of DTF (complete record) and DTFDA
 (start of record), DTFMA (middle of record) or DTFFA (end of record) FPDUs
 in a given data unit (NSDU).
 
-In receiver mode, the {{< TransferCFT/componentshortname  >}} accepts
+In receiver mode, the  {{< TransferCFT/componentshortname  >}} accepts
 the FPDUs of segmented records regardless of the local value of the SEGMENT
 parameter.
 

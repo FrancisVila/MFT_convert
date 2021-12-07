@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages:  CFTF",
     "linkTitle": "CFTF messages",
     "weight": "300"
-}This topic lists the CFTFxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the  CFTFxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -23,8 +23,8 @@ V23 format
 V24 format
 Error
 <span id="CFTF01E"></span>CFTF01E PART=&part IDF=&idf IDT=&idt local
-file \[&fname\] creation error &diagi
-CFTF01E local file \[&fname\] creation error &scs <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
+file [&fname] creation error &diagi
+CFTF01E local file [&fname] creation error &scs <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
 Explanation
 During a transfer request a local error was detected when creating
 a file.
@@ -68,7 +68,7 @@ CFTF02W local file selection error (file not found ignored) &scs <IDTU=&idtu PAR
 Explanation
 During a transfer request, a local error was detected when selecting a file.
 Consequence
-When you set `filenotfound` to `ignore` in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).
+When  you set `filenotfound` to `ignore` in the transfer request, the transfer is executed, the file is ignored, and the corresponding catalog entry is terminated (completed).
 Action
 You can ignore the message.
 ```
@@ -141,7 +141,7 @@ V24 format
 Error
 <span id="CFTF06E"></span>CFTF06E PART=&part IDF=&idf IDT=&idt local
 file note error &scs
-CFTF06E local file note error &scs <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
+                    CFTF06E local file note error &scs <IDTU=&idtu PART=&part IDF=&idf IDT=&idt
 Explanation
 During a transfer a local error was detected when recording
 the current position in the file.
@@ -392,8 +392,8 @@ the DIAGC zones are displayed:
 
 Where &diagc could be:
 
--   SFM\_ALLOC: file not found
--   SFM\_ALLOC: CFTSU socket: connection refused (this occurs when USERCTRL is set to yes, but the user does not have read-file privileges - *Unix only*)
+-   SFM_ALLOC: file not found
+-   SFM_ALLOC: CFTSU socket: connection refused (this occurs when USERCTRL is set to yes, but the user does not have read-file privileges - *Unix only*)
 -   HTTP 403: when using AWS the DNS connection was refused
 
 ActionIf the connection was refused for AWS, check that the server DNS is correctly configured. See the [Amazon 3 (ASW) troubleshooting](../../../app_integration_intro/amazon_s3) section.
@@ -429,7 +429,7 @@ transfer direction.
 V23 format
 V24 format
 Error
-<span id="CFTF32E"></span>CFTF32E PART=&part IDF=&idf IDT=&idt \_ Maximum number of rename retries reached
+<span id="CFTF32E"></span>CFTF32E PART=&part IDF=&idf IDT=&idt _ Maximum number of rename retries reached
 CFTF32E Maximum number of rename retries reached <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
 Maximum number of rename retries reached <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>.
@@ -445,10 +445,11 @@ See also [Post-transfer file renaming](../../../app_integration_intro/spoolout).
 V23 format
 V24 format
 Information
-<span id="CFTF33I"></span>CFTF33I PART=&part IDF=&idf IDT=&idt \_ Rename to FNAME=&FNAME done
+<span id="CFTF33I"></span>CFTF33I PART=&part IDF=&idf IDT=&idt _ Rename to FNAME=&FNAME done
 CFTF33I Rename to FNAME=&fname done <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
-The file was renamed, when using RETRYRENAME, and any post-processing or exits are executed. ```
+The file was renamed, when using RETRYRENAME, and  any post-processing or exits are executed.
+```
 
  
 
@@ -456,7 +457,7 @@ The file was renamed, when using RETRYRENAME, and any post-processing or exits a
 V23 format
 V24 format
 Error
-<span id="CFTF34E"></span>CFTF34E PART=&part IDF=&idf IDT=&idt \_ WFNAME=&wfname not found
+<span id="CFTF34E"></span>CFTF34E PART=&part IDF=&idf IDT=&idt _ WFNAME=&wfname not found
 CFTF34E WFNAME=&fname not found <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
 The rename operation failed because the file referenced by &wfname cannot be accessed (or does not exist).ActionCheck that the wfname exists on the receiver side.
@@ -472,11 +473,12 @@ The rename operation failed because the file referenced by &wfname cannot be acc
 V23 format
 V24 format
 Information
-<span id="CFTF35W"></span>CFTF35W PART=&part IDF=&idf IDT=&idt Rename to FNAME=&fname failed, will be retried at &datetime
+<span id="CFTF35W"></span>CFTF35W  PART=&part IDF=&idf IDT=&idt Rename to FNAME=&fname failed, will be retried at &datetime
 CFTF35W Rename to FNAME=&fname failed, will be retried at &datetime <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
 Could not rename the temporary file to &fname because the file referenced by &fname already exists.
-Transfer CFT will try again at &datetime. ```
+Transfer CFT will try again at &datetime.
+```
 
  
 
@@ -485,7 +487,8 @@ V23 format
 V24 format
 Error<span id="CFTF38E"></span>CFTF38E The file or directory &fname can't be renamed into &newfname for reason code &reason
 CFTF38E The file or directory &fname can't be renamed into &newfname for reason code &reason
-ExplanationCannot rename the file or directory.ActionCheck the reason code and make the appropriate action if possible. ```
+ExplanationCannot rename the file or directory.ActionCheck the reason code and make the appropriate action if possible.
+```
 
  
 
@@ -494,7 +497,8 @@ V23 format
 V24 format
 Error<span id="CFTF39E"></span>CFTF39E Missing NFNAME when executing RECV <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 CFTF39E Missing NFNAME when executing RECV <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
-ExplanationThe NFNAME parameter was empty or missing when executing a RECV command.ActionAdd the NFNAME parameter in your RECV command. ```
+ExplanationThe NFNAME parameter was empty or missing when executing a RECV command.ActionAdd the NFNAME parameter in your RECV command.
+```
 
  
 
@@ -541,7 +545,7 @@ Error
 CFTF43E The directory &fname can't be removed for reason code &reason
 Explanation
 Cannot remove the directory.
-ActionCheck the reason code and take the appropriate action if possible.
+ActionCheck the reason  code and take the appropriate action if possible.
 ```
 
  
@@ -553,7 +557,8 @@ Information
 <span id="CFTF43E"></span>CFTF44E The directory &fname has been created
 CFTF44I The directory &fname has been created
 Explanation
-Created a directory per a SFTP client request. ```
+Created a directory per a SFTP client request.
+```
 
  
 
@@ -562,7 +567,8 @@ V23 format
 V24 format
 Information<span id="CFTF44I"></span>CFTF44I The directory &fname has been created
 CFTF44I The directory &fname has been created
-ExplanationA directory has been created as requested by a SFTP client. ```
+ExplanationA directory has been created as requested by a SFTP client.
+```
 
  
 
@@ -575,7 +581,8 @@ Error<span id="CFTF46E"></span>CFTF46E Defined filename not inside WORKINGDIR <I
 CFTF46E Defined filename not inside WORKINGDIR <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 CFTF46E+&fname <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 CFTF46E+&fname <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
-ExplanationThe selected file must be in the configured WORKINDIR.ActionSelect another file or change or remove the WORKINGDIR. ```
+ExplanationThe selected file must be in the configured WORKINDIR.ActionSelect another file or change or remove the WORKINGDIR.
+```
 
  
 
@@ -584,7 +591,8 @@ V23 format
 V24 format
 Information<span id="CFTF47I"></span>CFTF47I The file rights of &fname have been set to &frights
 CFTF47I The file rights of &fname have been set to &frights
-ExplanationFile rights were changed as requested by an SFTP client. The format of rights is the UNIX format, for example 666. ```
+ExplanationFile rights were changed as requested by an SFTP client. The format of rights is the UNIX format, for example 666.
+```
 
  
 
@@ -593,7 +601,8 @@ V23 format
 V24 format
 Information<span id="CFTF48I"></span>CFTF48I The file time of &fname has been set to &time
 CFTF48I The file time of &fname has been set to &time
-ExplanationThe file time was changed as requested by an SFTP client. ```
+ExplanationThe file time was changed as requested by an SFTP client.
+```
 
  
 
@@ -605,7 +614,8 @@ Error
 CFTF49E The file properties of &fname can't be changed for reason code &reason
 Explanation
 Cannot change the rights or time of a file.Action
-Check the reason code and make the appropriate action if possible. ```
+Check the reason code and make the appropriate action if possible.
+```
 
  
 
@@ -614,7 +624,8 @@ V23 format
 V24 format
 Information<span id="CFTF50I"></span>CFTF50I The file or directory &fname has been renamed into &newfname
 CFTF50I The file or directory &fname has been renamed into &newfname
-ExplanationA file or directory has been renamed as requested by a SFTP client. ```
+ExplanationA file or directory has been renamed as requested by a SFTP client.
+```
 
  
 
@@ -624,7 +635,8 @@ V24 format
 Warning<span id="CFTF51W"></span>CFTF51W The file &fname can't been archived into &archivefname for reason code &reason
 CFTF51W The &fname file can't be archived as &newfname due to reason code &reason
 ExplanationCould not move the file at the end of the transfer.
-Check ARCHIVEDIR and ARCHIVEFNAME. ```
+Check ARCHIVEDIR and ARCHIVEFNAME.
+```
 
 ```
 V23 format

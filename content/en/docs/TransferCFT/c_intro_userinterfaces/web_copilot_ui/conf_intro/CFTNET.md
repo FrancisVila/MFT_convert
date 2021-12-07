@@ -168,5 +168,5 @@ via another network.
 |  <a href="../../../command_summary/parameter_intro/user">USER</a>  |  User name transmitted in the connection request addressed to the proxy.<br/>This parameter is case-sensitive. By default, it is set to the value of the user name in which Transfer CFT is being run.  |
 
 
-For an example and proxy details, see [Transfers via
+For an example and proxy  details, see [Transfers via
 a Proxy and SOCKS protocol](../../../../protocols_start_here/ipv6/use_proxy_and_socks_protocol).

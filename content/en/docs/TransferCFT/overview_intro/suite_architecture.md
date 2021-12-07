@@ -2,22 +2,22 @@
     "title": "Axway AMPLIFY architecture",
     "linkTitle": "Axway AMPLIFY architecture",
     "weight": "120"
-}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a product platform aimed at increasing the
+}Axway {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer provides a  product platform aimed at increasing the
 efficiency of business processes. This platform enables you to integrate
 the applications in your corporate information system and implement exchanges
-between these applications and external partners. {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
+between these applications and external partners.  {{< TransferCFT/componentshortname  >}} in combination with other {{< TransferCFT/companyname  >}} products can provide a complete business solution for creating secured, guaranteed
 exchanges with partners.
 
-## {{< TransferCFT/companyname  >}} products
+## {{< TransferCFT/companyname  >}} products  
 
-{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products
+{{< TransferCFT/componentshortname  >}} can interact with a variety of {{< TransferCFT/companyname  >}} products  
  to enable
 you to better supervise, track, and analyze your transfer operations.
 Additional products include, but are not limited to, the following:
 
 -   [API portal](#APIportal), [API Gateway](#APIgtw), [API Manager](#APImanager)
 -   [Central Governance](#Central_Governance)
--   Communication gateways: [Gateway, Secure Transport](#Gateway)
+-   Communication gateways: [Gateway,  Secure Transport](#Gateway)
 -   [SecureRelay](#SecureRelay)
 -   [TrustedFile](#TrustedFile)
 

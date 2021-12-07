@@ -3,8 +3,8 @@
     "linkTitle": "Symbolic variables",
     "weight": "150"
 }<span id="About_symbolic_variables"></span>A symbolic variable represents
-a transfer data item whose value is not known at the time {{< TransferCFT/componentshortname  >}}
-parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which is the ‘&’ character in this document. However, you should refer to the {{< TransferCFT/componentshortname  >}} *Installation Guide* that corresponds to
+a transfer data item whose value is not known at the time  {{< TransferCFT/componentshortname  >}}
+parameters are set, but only at the time the transfer is executed. Additionally, the symbolic variable is prefaced by a special character, which  is the ‘&’ character in this document. However, you should refer to the  {{< TransferCFT/componentshortname  >}} *Installation Guide* that corresponds to
 your OS, in order to determine the special character &lt;char\_symb>
 used on your system.
 
@@ -19,7 +19,7 @@ times: a single CFTSEND command can hence be applied to several files
 by using the symbolic variables in the FNAME parameter. This also makes
 it possible to only have to describe one transfer-related procedure applicable
 to several transfers. The real value of the parameter is substituted for
-the symbolic variable, at the time the {{< TransferCFT/componentshortname  >}} command or the procedure
+the symbolic variable, at the time the  {{< TransferCFT/componentshortname  >}} command or the procedure
 is executed.
 
 <span id="Symbolic_variable_syntax"></span>
@@ -54,7 +54,7 @@ The symbolic variable syntax is as follows:
 -   And then a character
     string representing the identifier of the variable to be substituted
 
-The identifiers, recognized by {{< TransferCFT/componentshortname  >}}, which can be used in the
+The identifiers, recognized by  {{< TransferCFT/componentshortname  >}}, which can be used in the
 syntax of a symbolic variable are indicated in the *[List of symbolic variables](#List_of_symbolic_variables)*.
 In this section, the ‘VAR’ notation is used to generically designate such
 an identifier.
@@ -153,7 +153,7 @@ For the following example, see the corresponding syntax:
 &&lt;VARIABLE>=S052368\_Z123\_HZUI34\_92\_\_\_TYU
 
 1.  `&%_.2<VARIABLE>`: separator=\_, start\_field=1 , end\_field=2 (this returns the value `S052368_Z123`)
-2.  `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field (this returns the value `HZUI34_92___TYU`)
+2.  `&%_3.<VARIABLE>`: separator=\_ , start\_field=3, end\_field=last\_field  (this returns the value `HZUI34_92___TYU`)
 3.  `&%_5<VARIABLE>`: separator=\_, start\_field=5, end\_field=5 (this returns ' ')
 4.  `&%_4<VARIABLE>`: separator=\_, start\_field=4, end\_field=4 (this returns `92`)
 
@@ -183,7 +183,7 @@ This allows identifiers of length less than p to be selected, for example.
 >
 > &.VAR is substituted as &VAR. The &lt;char\_symb> concatenated
 > with a point is substituted as &lt;char\_symb>. The rule applies even
-> if VAR is not an identifier known to Transfer CFT. For example, for the
+> if VAR is not an identifier known to  Transfer CFT. For example, for the
 > formats &.VAR (&0.VAR, &0.0VAR or &.0VAR), the value substituted
 > is not the effective value of the identifier ‘VAR’ but the literal string
 > &VAR.
@@ -260,11 +260,11 @@ Given the syntax FNAME=&(-PREF)(+SUF)(=DUMMY)PARM,
 
 #### Example of breaking down files names
 
-Break down the name of the file to send using the symbolic variables &FUNIT , &FUNITC , &FPATH , &FROOT , &FSUF (applied to
+Break down the name of the  file to send using the symbolic variables &FUNIT , &FUNITC , &FPATH , &FROOT , &FSUF (applied to
 
 the SFNAME).
 
-Break down the name of the received file using the symbolic variables &UNIT, &UNITC, &PATH , &ROOT, &SUF (applied to the FNAME).
+Break down the name of the  received file using the symbolic variables &UNIT, &UNITC, &PATH , &ROOT, &SUF (applied to the FNAME).
 
 <span id="List_of_symbolic_variables"></span>
 
@@ -329,7 +329,7 @@ according to the transfer direction) </p>         </td>
          <td>&amp;NSPART         </td>
          <td>24         </td>
          <td>Network identifier by which the
-local {{< TransferCFT/componentshortname  >}} identifies itself to its partner         </td>
+local  {{< TransferCFT/componentshortname  >}} identifies itself to its partner         </td>
       </tr>
       <tr>
          <td>&amp;NRPART         </td>
@@ -443,7 +443,7 @@ PeSIT E
          <td>&amp;APPSTATE         </td>
          <td>32         </td>
          <td>State step for the processing
-script to restart if relaunched         </td>
+script to restart  if relaunched         </td>
       </tr>
       <tr>
          <td><p>&amp;NSUB </p>         </td>
@@ -513,7 +513,7 @@ REPLY, or NACK</p>
          <td><p>Code for the data sent over the network </p>         </td>
       </tr>
       <tr>
-         <td>&amp;EXITFREE         </td>
+         <td>&amp;EXITFREE               </td>
          <td>64         </td>
          <td>Free communication area between multiple exits         </td>
       </tr>
@@ -526,7 +526,7 @@ REPLY, or NACK</p>
          <td>&amp;MODE         </td>
          <td>1         </td>
          <td><p>Server mode = ‘S’ transfer</p>
-<p>Requester mode = ‘R’ transfer</p>         </td>
+<p>Requester mode =     ‘R’ transfer</p>         </td>
       </tr>
       <tr>
 <th rowspan="33"  data-valign="top" width="21%"><p>FILE</p>         </th>
@@ -585,12 +585,12 @@ site </p>         </td>
       <tr>
          <td>&amp;FCHARSET         </td>
          <td>32         </td>
-         <td>Local file encoding         </td>
+         <td>Local file  encoding         </td>
       </tr>
       <tr>
          <td>&amp;NCHARSET         </td>
          <td>32         </td>
-         <td>Destination file encoding for network data         </td>
+         <td>Destination file encoding for network  data         </td>
       </tr>
       <tr>
          <td>&amp;WORKINGDIR         </td>
@@ -825,23 +825,23 @@ site </p>         </td>
       <tr>
          <td><p>&amp;TT </p>         </td>
          <td>10         </td>
-         <td><p>Transmission duration in seconds (TIMES attribute in the {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
+         <td><p>Transmission duration in seconds (TIMES attribute in the  {{< TransferCFT/componentshortname  >}} catalog)</p>         </td>
       </tr>
       <tr>
 <th rowspan="3"  data-valign="top" width="21%">CONTROL OUTPUT          </th>
          <td><p>&amp;FLOG </p>         </td>
          <td>512         </td>
-         <td><p>Name of last log file used by {{< TransferCFT/componentshortname  >}} </p>         </td>
+         <td><p>Name of last log file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
          <td><p>&amp;FACCNT </p>         </td>
          <td>512         </td>
-         <td><p>Name of last statistics file used by {{< TransferCFT/componentshortname  >}} </p>         </td>
+         <td><p>Name of last statistics file used by  {{< TransferCFT/componentshortname  >}} </p>         </td>
       </tr>
       <tr>
          <td><p>&amp;FCAT</p>         </td>
          <td>512         </td>
-         <td><p>Name of catalog used by {{< TransferCFT/componentshortname  >}}</p>         </td>
+         <td><p>Name of catalog used by  {{< TransferCFT/componentshortname  >}}</p>         </td>
       </tr>
       <tr>
 <th rowspan="2"  data-valign="top" width="21%"><p>TRACKING</p>         </th>
@@ -935,17 +935,17 @@ date </p>         </td>
 <p>ENVIRONMENT</p>         </th>
          <td><p>&amp;CFTNAME</p>         </td>
          <td>32         </td>
-         <td><p>Name of the {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)</p>         </td>
+         <td><p>Name of the  {{< TransferCFT/componentshortname  >}} (CFTPARM PART parameter)</p>         </td>
       </tr>
       <tr>
          <td><p>&amp;CFTEVENT</p>         </td>
          <td>16         </td>
-         <td><p>The type of job submitted by {{< TransferCFT/componentshortname  >}}, see (2) below</p>         </td>
+         <td><p>The type of job submitted by  {{< TransferCFT/componentshortname  >}}, see (2) below</p>         </td>
       </tr>
       <tr>
          <td>&amp;SJOBNAME         </td>
          <td>15         </td>
-         <td>The {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
+         <td>The  {{< TransferCFT/componentshortname  >}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)         </td>
       </tr>
       <tr>
          <td>&amp;CFTVERSION         </td>
@@ -965,25 +965,25 @@ date </p>         </td>
       <tr>
          <td>&amp;CFTTARGET         </td>
          <td>16         </td>
-         <td>The Transfer CFT platform with additional details required for a support ticket, for example         </td>
+         <td>The  Transfer CFT platform with additional details required for a support ticket, for example         </td>
       </tr>
       <tr>
          <td>&amp;CFTHOSTOS         </td>
          <td>64         </td>
-         <td>The Transfer CFT hostname         </td>
+         <td>The  Transfer CFT hostname         </td>
       </tr>
       <tr>
          <td>&amp;CFTHOSTMACHINE         </td>
          <td>64         </td>
-         <td>The machine processor name where Transfer CFT is running         </td>
+         <td>The  machine processor name where Transfer CFT is running         </td>
       </tr>
    </tbody>
 </table>
 
 (1): These variables are linked to SSL use. For additional information,
-refer to &lt;a href="../../../transport\_security\_start\_here">Managing Transport Security&lt;/a>.&lt;/madcap:conditionaltext>&lt;/p>
+        refer to &lt;a href="../../../transport\_security\_start\_here">Managing Transport Security&lt;/a>.&lt;/madcap:conditionaltext>&lt;/p>
 
-(2): EXEC in SEND, EXECSF, EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
+(2): EXEC in SEND, EXECSF,  EXECSM, EXEC in RECV, EXECRF, EXECRM, EXECE, EXECSE, EXECRE, EXECA, EXECSFA, EXECSMA, PREEXEC, EXITEOT, EXECSUB, EXECSUBA, EXECSUBPRE
 
 > **Note:**
 >
@@ -1067,21 +1067,21 @@ You can use blacklist characters as a POSIX Regular Extended expression to defin
 
 Defining the blacklist
 
-Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid. We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
+Use the uconf `cft.server.processing_scripts_variables_blacklist` parameter to define the character sequence to forbid.  We recommend setting this parameter to **`|\\$\\(|;|&|\\|** for UNIX, and **"&"** for Windows.
 
 **UNIX**
 
 ```
-uconfset id=cft.server.processing\_scripts\_variables\_blacklist , value= "`|\\$\\(|;|&|\\|"
+uconfset id=cft.server.processing_scripts_variables_blacklist , value= "`|\\$\\(|;|&|\\|"
 ```
 
-When setting the blacklist values shown above, the forbidden characters are: **`** and **$(** and **;** and **&** and **|**  
-For example, if `&PARM="$(ls)"`or if `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
+When setting the blacklist values shown above, the forbidden characters are: **`** and  **$(** and **;** and **&** and **|**  
+For example, if `&PARM="$(ls)"`or if  `` &PARM="`ls`" ``, then the EXEC is not executed because of the **$(** or the **`** characters, respectively.
 
 Windows
 
 ```
-uconfset id=cft.server.processing\_scripts\_variables\_blacklist , value="&"
+uconfset id=cft.server.processing_scripts_variables_blacklist , value="&"
 ```
 
 DIAGI 158

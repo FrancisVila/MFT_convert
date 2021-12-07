@@ -12,7 +12,7 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 
 > **Note:**
 >
-> Do NOT customize the distribution environment.
+> Do            NOT customize the distribution environment.
 
 
 | Variables  | Description  |
@@ -22,7 +22,7 @@ The A00CUSTO JOB customizes the installation files. The customization is done di
 |  DISTLEV  |  Fourth qualifier of the distribution environment (level of distribution)<br/>Example: CF030000  |
 
 
-You can repeat A00CUSTO several times to customize any parameters that were not customized.
+You can repeat A00CUSTO several times to customize any  parameters that were not customized.
 
 ## Advanced parameters
 
@@ -34,7 +34,7 @@ The parameters can be modified in the A12OPTSP member. For more information, ref
 
 After completing the initial A00CUSTO customization, you can use the JCL A04RPLAY to repeat this process. This JCL recopies the members from distribution environment to the target environment (including the INSTALL, EXEC, UPARM and SAMPLE libraries).
 
-Once the JOB is complete, update the A03PARM file in the target environment and resubmit the JCL A00CUSTO.
+Once the JOB is complete, update the A03PARM file in the target environment  and resubmit the JCL A00CUSTO.
 
 Related topics
 

@@ -2,7 +2,7 @@
     "title": "Diagnostic commands ",
     "linkTitle": "Diagnostic commands",
     "weight": "260"
-}The diagnostic commands search for operating errors that occur in Transfer CFT, and should be used under Axway customer support supervision. The commands syntax usage are described in the following sections.
+}The diagnostic commands  search for operating errors that occur in Transfer CFT, and should be used under Axway customer support supervision. The commands syntax  usage  are described in the following sections.
 
 ## Diagnostic command descriptions
 
@@ -68,7 +68,7 @@ The SGTRACE command allows for a dynamic modification of the default option defi
 
 #### Using the SGTRACE file
 
-The SGTRACE file opens automatically when Transfer CFT initializes, and the trace is marked as logically active if the opening is correct. The trace value used is the one defined in the SGINSTAL MACRO installation step (A12OPTS).
+The SGTRACE file opens automatically when Transfer CFT initializes, and the trace is marked as logically active if the opening is correct. The trace value  used is the one defined in the SGINSTAL MACRO  installation step (A12OPTS).
 
 Events are recorded if the following conditions are satisfied:
 
@@ -88,7 +88,7 @@ The file has the FIXED BLOCKED, LRECL=132 format. You can change the value of t
 
 ```
 // UTIL EXEC PGM=CFTUTIL,
-// PARM=‘SGTRACE nnn’
+//     PARM=‘SGTRACE nnn’
 ```
 
 SGTRACE nnn must be the first and second parameters of the PARM field.
@@ -155,7 +155,7 @@ The cache command is used to control the Transfer CFT catalog cache. There are t
 > -   Nbr : the numbers of users sharing this cache, valid only with COMMON status
 > -   Nbds : the number of dataspace used.
 
--   CACHE LOAD: to force the complete load of the Transfer CFT catalog into the cache. Use extreme care with his command! At end of processing, messages DDIS30I to DDIS32I are displayed.
+-   CACHE LOAD: to force the complete load of the Transfer CFT catalog into the cache. Use extreme care with his command!  At end of processing, messages DDIS30I to DDIS32I are displayed.
 
 ## The ? command
 
@@ -230,11 +230,11 @@ The ? command enables you to find the status of certain Transfer CFT components.
 
 ```
 DTSK01I TASK SUMMARY (SGNUC=001EA000):
-DTSK02I 002BFA20 " L62RCAK" EPA=07602480 OWN=CFTR324 PRIVATE.
+DTSK02I 002BFA20 " L62RCAK" EPA=07602480 OWN=CFTR324  PRIVATE.
 Addr task block, EPA, user name, type-private/ OS
 DTOD03I TOD=16:11:50:155444.
 TOD of the last DISPATCH
-DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
+DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223.   OS Task
 ```
 
 #### FILES
@@ -243,7 +243,7 @@ DTSK03I 0022F000 "CFTTPRO " EPA=00000000 TCB=006F6388 OWN=CFTR223. OS Task
 DFIL01I FILE SUMMARY:
 DFIL02I 0022EE90 FIL00007 SOP$CFT.REF.C324.COM UPDATE
 Addr FCB, DDNAME, DSNAME, Access type
-DFIL04I Read=2550 Write=145 TOD=14:01:27:985867 GU SGFVSDIR 240517 B102162Read count, write count, TOD of the last access, operation, module/date/revision
+DFIL04I Read=2550 Write=145 TOD=14:01:27:985867 GU  SGFVSDIR 240517 B102162Read count, write count, TOD of the last access, operation, module/date/revision
 ```
 
 #### ENQ
@@ -262,11 +262,11 @@ ENQ TODof the list of waiting requesters
 #### SCB
 
 ```
-DSCB01I SCB SUMMARY: DSCB02I:ADR=002BF520 RF=1BB20069 FL=110000E8 OW=001FEA20(CFTINTV ) PC=0
+DSCB01I SCB SUMMARY:                                                   DSCB02I:ADR=002BF520 RF=1BB20069 FL=110000E8 OW=001FEA20(CFTINTV ) PC=0
  
-TM=8640001. Addr File, Reference, flags, Creative tasks, Number of posted messages, Waiting time, 1/100ths
+TM=8640001.                                                             Addr File, Reference, flags, Creative tasks, Number of posted messages, Waiting time, 1/100ths
  
-DTOD03I TOD=12:07:57:156629. TOD of hold
+DTOD03I TOD=12:07:57:156629.                                            TOD of hold
 ```
 
 #### APF
@@ -279,7 +279,7 @@ CARM01I Automatic restart for CFTR223 (STC05479) started, Element="XIDPARM
 
 If APF is ON, the name of the ARM element used is recorded.
 
-#### MEM
+####   MEM
 
 Real space used by CFT 0116BEA0 freed on pages 0003A160 allocated below 002B6000 freed below 0000C7A0
 

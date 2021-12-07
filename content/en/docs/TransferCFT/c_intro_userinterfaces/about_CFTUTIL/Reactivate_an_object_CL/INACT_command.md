@@ -36,7 +36,7 @@ Using CFTUTIL you can perform the following commands.
 Syntax
 
 ```
-INACT TYPE=PART,ID=<CFTPART\_ID>,MODE=<mode>,FORCE=<NO | YES>
+INACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>,FORCE=<NO | YES>
 ```
 
 Where:
@@ -57,7 +57,7 @@ Returning the following output:
 
 ```
 CFTU20I Part=PARIS : ACTIVEBOTH -> ACTIVESERV
-CFTU00I INACT \_ Correct (TYPE=PART,ID=PARIS,MODE=REQUESTER)
+CFTU00I INACT _ Correct (TYPE=PART,ID=PARIS,MODE=REQUESTER)
 ```
 
 When a partner is deactivated, transfers awaiting processing are:
@@ -93,7 +93,7 @@ All notifications to Sentinel are suspended.
 Syntax
 
 ```
-INACT TYPE=CRON,ID=<CFTCRON\_ID>
+INACT TYPE=CRON,ID=<CFTCRON_ID>
 ```
 
 Where `CFTCRON_ID` is the identifier of the CRON object to deactivate. To deactivate several CRON objects with a single command, use wildcard characters or meta characters.
@@ -110,7 +110,7 @@ Returning the following output:
 
 ```
 CFTU20I Cronjob=CRON1 : ACTIVE -> NOACTIVE
-CFTU00I INACT \_ Correct (id=cron1,type=cron)
+CFTU00I INACT _ Correct (id=cron1,type=cron)
 ```
 
 ### Deactivate folder object
@@ -118,7 +118,7 @@ CFTU00I INACT \_ Correct (id=cron1,type=cron)
 Syntax
 
 ```
-INACT TYPE=FOLDER,ID=<CFTFOLDER\_ID>
+INACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
 ```
 
 Where `CFTFOLDER_ID` is the identifier of the folder object to deactivate. To deactivate several folder objects with a single command, use wildcard characters or meta characters.
@@ -135,5 +135,5 @@ Returning the following output:
 
 ```
 CFTU20I Folder=USER1 : ACTIVE -> NOACTIVE
-CFTU00I INACT \_ Correct (TYPE=FOLDER,ID=USER1)
+CFTU00I INACT _ Correct (TYPE=FOLDER,ID=USER1)
 ```

@@ -26,14 +26,14 @@ Refer to *Transfer CFT User Guide* for a complete list of Transfer CFT variable
 
 ### Decision rules
 
-If the first line of the skeleton procedure begins with one of the following characters, it is a TACL procedure.
+If the first line of the skeleton procedure begins with one  of the following characters, it is a TACL procedure.
 
 -   ==
 -   ?
 -   #FRAME
 -   #PUSH
 
-The characters following the initial " == " either set certain information for the TACL procedure or determine if the procedure is sent to the NetBatch interface for processing.
+The characters following the initial " == " either  set certain information for the TACL procedure or  determine if the procedure is sent to the NetBatch interface for processing.
 
 -   == CFT^BT^FORCE^TACL ==
     -   A direct TACL procedure execution
@@ -59,22 +59,22 @@ The characters following the initial " == " either set certain information for t
 
 1.  Regardless of if the procedure is OSS or native, {{< TransferCFT/componentlongname >}} creates a temporary file with the following locations and naming conventions:
 
--   OSS: The same as on {{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
+-   OSS: The  same as on {{< TransferCFT/componentlongname >}} Unix: /tmp/CFTxxxx  
 -   Native: On the {{< TransferCFT/componentlongname >}} default [subvolume](#subvolumeUD): CTMPnnnn
 
 2> filenames $DATA14.CFT32BUD.\*
 
           $DATA14.CFT32BUD
 
-CTMP0001 CTMP0002 CTMP0003 CTMP0004
+CTMP0001  CTMP0002  CTMP0003  CTMP0004
 
-{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names, etc.).
+{{< TransferCFT/componentlongname  >}} copies the skeleton in the temporary file, replacing variables with their real values (transfer information, file names,  etc.).
 
 Depending on the type of procedure, {{< TransferCFT/componentlongname  >}}:
 
 -   Starts the script (OSS)
 -   Starts the TACL direct processing
--   Puts the temporary file in NetBatch for execution
+-   Puts  the temporary file in NetBatch for execution
 
 ### Delete temporary files
 

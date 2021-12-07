@@ -29,17 +29,17 @@ KEYLEN
 Length of the generated key
 MODE
 CREATE, REPLACE an existing PKIKEY
-Action on the database
+Action on the database  
 ```
 
 Procedure
 
-The following example creates both a private and public key. You can then export the public key to a remote Transfer CFT, or to another product that is using SFTP.
+The following example creates both a private and public key. You can then export  the public key to a remote Transfer CFT, or to another product that is using SFTP.
 
 1.  Use PKIKEYGEN to generate the key pair.  
     ```
     PKIUTIL PKIKEYGEN
-    ID=KEY\_2048,
+    ID=KEY_2048,
     PKIFNAME=$CFTPKU,
     STATE=ACT,
     KEYLEN=2048,
@@ -48,7 +48,7 @@ The following example creates both a private and public key. You can then export
     ```
 2.  Export the SSH key from the Transfer CFT PKI database. See also [PKIEXT](../pkiext).  
     ```
-    PKIUTIL PKIEXT FOUT=KEY\_2048.CFG, ID=KEY\_2048, TYPE=KEY
+    PKIUTIL PKIEXT FOUT=KEY_2048.CFG, ID=KEY_2048, TYPE=KEY
     ```
 3.  Note the IKNAME value (KPRIVxxxx where xxxx is 4 numeric values) found in the KEY\_2048.CFG file.
 4.  Locate the KPUBxxxx file, which is in the same folder as the extracted PKI information (KEY\_2048.CFG).

@@ -29,7 +29,7 @@ system.
 |  IBM i  |  64  |
 
 
-The following CFTI18I  message displays in the CFTLOG when Transfer CFT is started so that you can view the actual MAXTRANS, MAXTASK, TRANTASK values.
+The following CFTI18I  message displays in the CFTLOG when Transfer CFT is started so that you can  view the actual MAXTRANS, MAXTASK, TRANTASK values.
 
 Example
 

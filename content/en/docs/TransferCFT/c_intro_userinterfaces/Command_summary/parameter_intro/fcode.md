@@ -68,7 +68,7 @@ At each receive transfer:
 -   if
     the data received is in ASCII and the local data is in EBCDIC, or vice-versa,
     translation is always performed: translation according to an external
-    table, or, by default, translation according to the {{< TransferCFT/componentshortname >}} internal
+    table, or, by default, translation according to the  {{< TransferCFT/componentshortname >}} internal
     table
 -   if
     the data received and the local data have the same code, ASCII or EBCDIC,

@@ -88,7 +88,7 @@ To implement this mode:
     FNAME parameter of the CFTRECV command must be the symbolic variable &NFNAME
 
 This symbolic variable is replaced by the file name sent by the sender/requester.
-For the definition of symbolic variables, see [Symbolic
+For the definition of symbolic variables, see  [Symbolic
 variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables).
 
 The physical location of the file to be sent by the sender/requester
@@ -172,7 +172,7 @@ in PeSIT E protocol, for example).
 ### Read transfer open mode
 
 **PeSIT D CFT profile, PeSIT E** This
-mode is possible between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s using one of these
+mode is possible between two  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s using one of these
 protocols.
 
 In locked for sending mode, the open mode allows a sender/server to

@@ -26,7 +26,7 @@ Transfer CFT uses the Application Default Credentials (ADC) library to handle au
 For instance, you can create and download a service account file, and then export the key:
 
 ```
-export GOOGLE\_APPLICATION\_CREDENTIALS=~/Downloads/my-key.json
+export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/my-key.json
 ```
 
 For SSL connections to GCS, libCURL requires a path to the CA certificates bundle to authenticate the peer. You can set this path in the UCONF `ssl.certificates.ca_cert_bundle` parameter if automatic detection fails.
@@ -60,25 +60,25 @@ You must include the following parameters in your Google Cloud Storage [CFTSEND/
 Export the credentials:
 
 ```
-export GOOGLE\_APPLICATION\_CREDENTIALS=~/Downloads/my-key.json
+export GOOGLE_APPLICATION_CREDENTIALS=~/Downloads/my-key.json
 ```
 
 In UCONF, set the GCS certificate path for the receiving Transfer CFT (only required if automatic detection fails):
 
 ```
-uconfset ssl.certificates.ca\_cert\_bundle, value='<path to CA bundle>'
+uconfset ssl.certificates.ca_cert_bundle, value='<path to CA bundle>'
 ```
 
 ### The Transfer CFT stores a received file on GCS
 
-Transfer CFT  receives a file from a partner over the PeSIT protocol and stores it on Google Cloud Storage.
+Transfer CFT  receives a file  from a partner over the PeSIT protocol and stores it on Google Cloud Storage.
 
 <img src="/Images/TransferCFT/gcs_1.png" class="maxWidth" />
 
 Configure the CFTRECV object to write to the GCS:
 
 ```
-CFTRECV id=GCS\_WRITE, fname=pub/&IDF.&IDTU.RCV, wfname=tmp/&IDF.&IDTU.RCV, workingdir=gs://my\_bucket
+CFTRECV id=GCS_WRITE, fname=pub/&IDF.&IDTU.RCV, wfname=tmp/&IDF.&IDTU.RCV, workingdir=gs://my_bucket
 ```
 
 After the partner sends a file, you can check the log for transfer details.
@@ -92,8 +92,8 @@ Here, Transfer CFT reads a file from GCS and sends it over PeSIT to a partner.
 Create the CFTSEND template, and send a file that GCS to a Transfer CFT partner.
 
 ```
-CFTSEND id=GCS\_READ, workingdir=gs://my\_bucket
-SEND PART=PARIS, IDF=GCS\_READ, FNAME=pub/FTEST
+CFTSEND id=GCS_READ, workingdir=gs://my_bucket
+SEND PART=PARIS, IDF=GCS_READ, FNAME=pub/FTEST
 ```
 
 After sending a file to the partner, you can check the log for transfer details.

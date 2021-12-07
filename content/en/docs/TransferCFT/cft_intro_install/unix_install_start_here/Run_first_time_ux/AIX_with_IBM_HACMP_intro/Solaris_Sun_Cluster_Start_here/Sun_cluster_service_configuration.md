@@ -10,39 +10,39 @@ record and remove resources.
 Enter the command:
 
 ```
-scrgadm -p\[v\[v\]\] \[-t <Resource\_Type\_name>\]
+scrgadm -p[v[v]] [-t <Resource_Type_name>]
 \\
-\[-g <Resource\_Group\_name>\] \\
-\[-j <Resource\_name>\]
-scrgadm -a -t <Resource\_Type\_name>
-\[-f <RT\_registration\_file\_path>\] \\
-\[-h RT\_installed\_node\_list\]
-scrgadm -c -t <Resource\_Type\_name>
--h RT\_installed\_node\_list
-scrgadm -r -t <Resource\_Type\_name>
-scrgadm -a | -c -g <Resource\_Group\_name>
-\[-h RT\_installed\_node\_list\]
-\[-y <property>\]
-scrgadm -r -g <RG\_name>
-scrgadm -a -j <Resource\_name> -t <Resource\_Type\_name>
+[-g <Resource_Group_name>] \\
+[-j <Resource_name>]
+scrgadm -a -t <Resource_Type_name>
+[-f <RT_registration_file_path>] \\
+[-h RT_installed_node_list]
+scrgadm -c -t <Resource_Type_name>
+-h RT_installed_node_list
+scrgadm -r -t <Resource_Type_name>
+scrgadm -a | -c -g <Resource_Group_name>
+[-h RT_installed_node_list]
+[-y <property>]
+scrgadm -r -g <RG_name>
+scrgadm -a -j <Resource_name> -t <Resource_Type_name>
 \\
--g <RG\_name> \[-y <property>
-\[-y <property>\]\] \\
-\[-x <property> \[-x <property>\]\]
-scrgadm -c -j <Resource\_name> \[-y
-<property> \[-y <property>\]\] \\
-\[-x <property> -x <property>\]\]
-scrgadm -r -j <Resource\_name>
-scrgadm -a -L -g <LogicalHost\_RG\_Name>
-\[-j <Resource\_name>\] \\
--l hostname\[,hostname,...\] \[-n nafo@node\[,nafo@node,...\]\]
-\[-y <property> \[-y <property>\]\]
-scrgadm -a -S -g <SharedAddress\_RG\_Name>
-\[-j <Resource\_name>\] \\
--l hostname\[,hostname,...\] \[-n nafo@node\[,nafo@node,...\]\]
+-g <RG_name> [-y <property>
+[-y <property>]] \\
+[-x <property> [-x <property>]]
+scrgadm -c -j <Resource_name> [-y
+<property> [-y <property>]] \\
+[-x <property> -x <property>]]
+scrgadm -r -j <Resource_name>
+scrgadm -a -L -g <LogicalHost_RG_Name>
+[-j <Resource_name>] \\
+-l hostname[,hostname,...] [-n nafo@node[,nafo@node,...]]
+[-y <property> [-y <property>]]
+scrgadm -a -S -g <SharedAddress_RG_Name>
+[-j <Resource_name>] \\
+-l hostname[,hostname,...] [-n nafo@node[,nafo@node,...]]
 \\
-\[-X aux\_node\[,aux\_node,...\]\] \[-y <property>
-\[-y <property>\]\]
+[-X aux_node[,aux_node,...]] [-y <property>
+[-y <property>]]
 ```
 <span id="CFT_resources_group"></span>
 
@@ -161,11 +161,11 @@ The following is the declaration of the GDS for Transfer CFT:
 
 ```
 scrgadm –a –g CFT-rg –t SUNW.gds –j cft-gds \\
-–x Start\_command=/global/cft/cftstartFailover \\
-–x Stop\_command=/global/cft/cftstopFailover \\
-–x Probe\_command=/global/cft/cftprobeFailover \\
-–y Port\_list="1765/tcp,1766/tcp,1767/tcp" \\
-–y Resource\_dependencies=cft-ip,cft-disk
+–x Start_command=/global/cft/cftstartFailover \\
+–x Stop_command=/global/cft/cftstopFailover \\
+–x Probe_command=/global/cft/cftprobeFailover \\
+–y Port_list="1765/tcp,1766/tcp,1767/tcp" \\
+–y Resource_dependencies=cft-ip,cft-disk
 ```
 
 View the command line description
@@ -184,21 +184,21 @@ resources group name
 GDS resource type
 -j cft-gds
 resource name
--x Start\_command= /global/cft/cftstartFailover
+-x Start_command= /global/cft/cftstartFailover
 command definition for startup
--x Stop\_command= /global/cft/cftstopFailover
+-x Stop_command= /global/cft/cftstopFailover
 command definition for stop
--x Probe\_command= /global/cft/cftprobeFailover
+-x Probe_command= /global/cft/cftprobeFailover
 command definition for probe
-–y Port\_list=1765/tcp
+–y Port_list=1765/tcp
 verification of the listening ports of Transfer CFT in
 TCP (parameters of the Transfer CFT cftprot cards)
-–y Resource\_dependencies= cft-ip,cft-disk
+–y Resource_dependencies= cft-ip,cft-disk
 You can activate GDX on a node only if the cft-ip and cft-disk
 resources are online. In the event of problems with one of these two resources,
 Sun Custer attempts to restart the faulty resource, or to switch over
 to another node
 ```
 
-The default parameters are adequate for the test
+The default parameters are adequate for the  test
 environment.

@@ -24,7 +24,7 @@ A migration means that an initial Transfer CFT is installed in a directory that 
 
 This mode has the following advantages:
 
--   The new installation occurs in a new location, and the existing configuration in the existing Transfer CFT environment is not affected.
+-   The new installation occurs in a new location, and the existing configuration in the existing Transfer CFT environment  is not affected.
 -   You can choose to use either of the versions, if needed, in case of an issue with one of the installations.
 
 > **Note:**
@@ -37,7 +37,7 @@ This mode has the following restriction:
 
 ## About manual migrations
 
-The manual migration procedure, used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}}, is described in this document.
+The manual migration procedure,  used to migrate an existing Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}}, is  described in this document.
 
 The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT {{< TransferCFT/releasenumber  >}} is:
 
@@ -55,7 +55,7 @@ This mode has the following advantages:
 
 -   You must update your {{< TransferCFT/componentshortname >}} to the most recent service pack version.
 -   Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
--   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server. (I.e., you must stop all cluster nodes as a database migration occurs when performing an upgrade.)
+-   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT  and the UI server. (I.e., you must stop all cluster nodes  as a database migration occurs when performing an upgrade.)
 
 ### About license keys
 
@@ -64,7 +64,7 @@ This mode has the following advantages:
 
 > **Note:**
 >
-> You require as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
+> You require  as many keys as instances of Transfer CFT running at same time. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
 ## Prior to upgrading with a service pack
 
@@ -98,4 +98,4 @@ For example:
 
 ## Register with
 
-If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

@@ -8,7 +8,7 @@ This section refers only to non multi-node architecture.
 
 You can use Central Governance to stop, start, check status, and restart a Transfer CFT, or alternatively use the administration commands and scripts provided in this section to manage the application.
 
-When opening a new session to manage your {{< TransferCFT/componentshortname  >}}, you must first set the environmental parameters. See <a href="#Set" class="MCXref xref">Set the Transfer CFT profile</a>.
+When opening a new session  to manage your {{< TransferCFT/componentshortname  >}}, you must first set the environmental parameters. See <a href="#Set" class="MCXref xref">Set the Transfer CFT profile</a>.
 
 -   [Start {{< TransferCFT/componentshortname >}} server](#Start)
     -   Standard start
@@ -33,7 +33,7 @@ When opening a new session to manage your {{< TransferCFT/componentshortname  >}
 
 > **Note:**
 >
-> The commands listed in this section apply generally to all supported platforms for this version, except for Transfer CFT z/OS. For more information, please refer to the OS-specific Installation Guide.
+> The commands listed in this section  apply generally to all supported platforms for this version, except for Transfer CFT z/OS. For more information, please refer to the OS-specific Installation Guide.
 
 ### Autocomplete command
 
@@ -99,7 +99,7 @@ Library . . . . . . . . . . . > CFTPROD Name, \*LIBL, \*CURLIB
 
 ### Start {{< TransferCFT/componentshortname  >}}
 
-#### Standard start
+#### Standard  start
 
 Use the following command to start {{< TransferCFT/componentshortname  >}}after installation or stopping the server.
 
@@ -131,7 +131,7 @@ cft force-start
 This program shuts down
 Transfer CFT, using either an immediate or delayed shutdown.
 
-#### Standard shutdown
+#### Standard  shutdown
 
 {{< TransferCFT/componentshortname  >}} completes all the transfers
 in process and shuts down. No new transfer is initialized.
@@ -157,7 +157,7 @@ CFTUTIL shut fast=yes
 
 #### Forced  shutdown
 
-Immediate {{< TransferCFT/componentshortname  >}} shutdown occurs,
+Immediate  {{< TransferCFT/componentshortname  >}} shutdown occurs,
 but without updating the transfer states. No pending transfers are activated.
 
 ```
@@ -181,7 +181,7 @@ CFTUTIL shut restart=yes
 To check the state of the {{< TransferCFT/componentshortname  >}} sever, enter:
 
 ```
-cft status
+cft status  
 ```
 <span id="Purge on Transfer CFT start"></span>
 
@@ -190,7 +190,7 @@ cft status
 To configure the Transfer CFT start-up PURGE option, set the uconf values for:
 
 -   cft.purge.enable\_on\_start: Defines if purge should run when starting Transfer CFT
--   cft.purge.background\_on\_start: Defines if purging on start-up occurs in the background
+-   cft.purge.background\_on\_start: Defines if  purging on start-up occurs in the background
 -   cft.purge.quantity: Defines the number of transfers to delete in a step (only applicable for background purging)
 
 <span id="Windows2"></span>
@@ -201,7 +201,7 @@ To configure the Transfer CFT start-up PURGE option, set the uconf values for:
 
 #### Windows menus
 
-From the desktop **Start** menu, select **All Programs &gt; Axway Software &gt;Axway &gt; &lt;product> &gt; Stop &lt;product>**
+From the desktop             **Start** menu, select**  All Programs &gt; Axway Software &gt;Axway &gt; &lt;product> &gt; Stop &lt;product>**
 
 <span id="Service"></span>
 
@@ -211,7 +211,7 @@ During installation you can elect to run most {{< TransferCFT/companyname  >}} p
 
 If you installed the products in Windows service mode, you can start and stop most products with Windows already running as follows:
 
-1.  From the desktop, select **Start > Settings > Control Panel > Administrative Tools > Services**.
+1.  From the desktop, select   **Start > Settings > Control Panel > Administrative Tools > Services**.
 2.  Scroll down the Services list and right-click the product.
 3.  From the menu, select **Start**.
 
@@ -227,7 +227,7 @@ To view all commands for multi-node architecture, go to the topic [Multi-node co
 
 #### Start
 
-Start the CFTMAIN JCL in the target.INSTALL library.
+Start the CFTMAIN JCL in the  target.INSTALL library.
 
 #### Stop
 
@@ -274,6 +274,6 @@ Use the CFTPING in the target.INSTALL library to ping your {{< TransferCFT/com
 
 #### Check the Transfer CFT Copilot server status
 
-You can use COPSTATU, for example, as the JCL statement to display the Copilot server status in the current LPAR.
+You can use COPSTATU, for example, as the JCL statement to display the Copilot server  status in the current LPAR.
 
  

@@ -11,7 +11,7 @@
 
 ### About the CFTCAT object
 
-The {{< TransferCFT/componentshortname  >}} catalog displays all {{< TransferCFT/componentshortname  >}} transfers in list
+The  {{< TransferCFT/componentshortname  >}} catalog displays all  {{< TransferCFT/componentshortname  >}} transfers in list
 form. The catalog file contains control data that is associated with transfers.
 A record, that corresponds with a status indicator, exists for each transfer.
 
@@ -31,7 +31,7 @@ associated CFTCAT.
 
 ### Catalog levels
 
-Catalog levels enable <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to issue alerts
+Catalog levels enable  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> to issue alerts
 when a critical fill threshold, the [TLVWARN](../../../c_intro_userinterfaces/command_summary/parameter_intro/tlvwarn)
 parameter Threshold Limit Value Warning, for the catalog file is reached.
 This alert triggers:

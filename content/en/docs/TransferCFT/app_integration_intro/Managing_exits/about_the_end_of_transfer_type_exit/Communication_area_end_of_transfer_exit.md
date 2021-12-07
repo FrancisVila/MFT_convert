@@ -292,7 +292,7 @@ If the value of the parameter is N (NONE), any changes to parameters that
 have been requested, for example, modifications made to the comment field,
 are ignored.
 usrmsg
-User message, 80 characters, recorded in the {{< TransferCFT/componentshortname >}}
+User message, 80 characters, recorded in the  {{< TransferCFT/componentshortname >}}
 LOG file (CFTS18I)
 This message can contain the code returned by the user
 function and other information.

@@ -33,11 +33,11 @@ operations:
 
 ### Defining trace files
 
-You can activate one or more trace acquisition processes to supply one or more trace files. Additionally, you can define the trace file using one of two methods:
+You can activate one or more trace acquisition processes to supply one or more trace files. Additionally, you can define the trace file using one of  two methods:
 
 -   CFTUTIL - use the CFTTRACE command, which is taken into account
     when Transfer CFT is started
--   CFTTRACE utility - use the SETTRC command, dynamically sending to the Transfer CFT communication medium. You can perform the SETTRC command before starting Transfer
+-   CFTTRACE utility - use the SETTRC command, dynamically sending to the Transfer CFT communication medium. You can perform the SETTRC command  before starting Transfer
     CFT.
 
 The word *process* is not used here as a synonym for task. There is at
@@ -62,9 +62,9 @@ process.
 To start information collection:
 
 -   When Transfer CFT starts up,
-    enter the CFTTRACE START parameter (START=CFT).
+      enter the CFTTRACE START parameter (START=CFT).
 -   During Transfer CFT operations,
-    enter a STARTTRC command.
+      enter a STARTTRC command.
 
 Information collection is managed by a trace server
 task, which makes it possible to resolve trace file access conflict problems.
@@ -139,7 +139,7 @@ This function enables you to filter FPDU protocol traces
 by partner.
 
 Example
-&lt;/p>
+        &lt;/p>
 
 CFTTRACE STARTTRC ID=ID,TID=TID,PTRACE=16,FILTER=Part
 

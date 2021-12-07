@@ -21,7 +21,7 @@ The possible values are:
     are printed out including STAT
 -   BRIEF: The following
     messages do not appear in the LOG (these are messages of the "system
-    information" category - see the CFTLOG [OPERMSG](../opermsg) parameter):  
+    information" category - see the  CFTLOG [OPERMSG](../opermsg) parameter):  
     CFTR12I &cmd Treated  
     CFTC07I PART=&part IDF=&idf IDT=&idt State=&state Deleted
 -   Requester mode:  
@@ -77,7 +77,7 @@ The possible values are:
 -   <span style="font-weight: bold;">FULL</span>: Displays complete information concerning
     each transfer
 -   <span style="font-weight: bold;">DEBUG</span>: Displays the most complete output with additional information beyond the FULL content
--   **BLKNUM**: Displays the same information as BRIEF, but the **Appli id** and **Appstate** columns are replaced by the **blknum** column
+-   **BLKNUM**: Displays the same information as BRIEF, but  the **Appli id** and **Appstate** columns  are replaced by the **blknum** column
 
 #### LISTCOM
 
@@ -95,10 +95,10 @@ information of a catalog entry.
 ```
 LISTCOM CONTENT =FULL
  
-CFTU00I LISTCOM \_ Correct (content=full)
-CFTU00I SEND \_ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)
+CFTU00I LISTCOM  _ Correct (content=full)
+CFTU00I SEND     _ Correct (part=paris,idf=txt,fname=pche.dv.mvtx4)
 CFTU20I Communication file row number used: 00001137 on 20191212 Time 09331119
-CFTU00I RETURN \_ Correct (CODE=0)
+CFTU00I RETURN   _ Correct (CODE=0)
  
 1 record(s) selected
 0 record(s) cleared
@@ -158,6 +158,6 @@ Indicates the amount of information to display. Here, the options are listed in 
     concerning the UCONF value (the set value and if this is a user or default value)
 -   EXTRACT: Outputs information in format that you can directly enter in CFTUTIL
 -   FULL: Displays values, descriptions, and most other parameter details
--   DEBUG: Most exhaustive level of information (including some internal flags/information)
+-   DEBUG: Most exhaustive level of information  (including some internal flags/information)
 
 [Return to Command index](../../)

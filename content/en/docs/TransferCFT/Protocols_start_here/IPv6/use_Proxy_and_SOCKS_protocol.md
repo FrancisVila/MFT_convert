@@ -19,7 +19,7 @@ This topic describes how to use a proxy and SOCKS, and includes:
     -   [Configuring a connection](#Configuration)
     -   [Error
         codes](#Error_codes)
-    -   SOCKS references
+    -   SOCKS references  
 -   [Setting up a proxy for Copilot](#Setting)
 
 <span id="SOCKS"></span>
@@ -29,7 +29,7 @@ This topic describes how to use a proxy and SOCKS, and includes:
 {{< TransferCFT/componentshortname  >}} supports versions 4 and 5 of the SOCKS protocol. A brief
 explanation of the SOCKS protocol is provided in this topic.
 
-<img src="/Images/TransferCFT/proxy2_new.png" class="maxWidth" alt="Proxy server is between the client and server where client initiates the Connect Request to proxy" />
+<img src="/Images/TransferCFT/proxy2_new.png" class="maxWidth" alt="Proxy server is between the client  and server where client initiates the Connect Request to proxy" />
 
 <span id="Connection"></span>
 
@@ -59,7 +59,7 @@ When using SOCKS5, the exchange between client and server consists of:
 1.  The client and server negotiate an authentication method for the client. The client sends a list of methods it supports and the server responds to indicate which method it has chosen. The only method supported by Transfer CFT is username/password.
 2.  The client authenticates itself using its username/password. The sever response code indicates if the authentication was successful or not. If authentication is refused, the server immediately closes the connection.
 3.  The client sends a connection request to the proxy, specifying the remote server IP address or host name and its port number.
-4.  The proxy checks the connection request and either executes or rejects it. A response is sent to the client, indicating the request was successful or not. Once the connection is correctly established between the proxy and server, the client and the server are connected via the proxy and can perform transparent data inter exchanges (PeSIT, and so on). If the connection if refused, the server immediately closes the connection.
+4.  The proxy checks the connection request and either executes or rejects it. A response is sent to the client, indicating the request was successful or not. Once the connection is correctly established between the proxy and server, the client and the server are connected via the proxy and can perform transparent data inter exchanges (PeSIT, and so on).  If the connection if refused, the server immediately closes the connection.
 
 <span id="Application_in_CFT"></span>
 
@@ -98,7 +98,7 @@ transfer timeout and number of attempts will depend on the CFTTCP command RETRYW
 and RETRYM parameters defining the network characteristics of the remote
 partner.
 
--   92 and 93
+-   92  and 93
     for SOCKS4
 -   Error code != 5 and > 0 for SOCKS5
 
@@ -117,32 +117,32 @@ The following tables lists common parameters for either SOCKS 4 or SOCKS 5. The 
 |  MAXCNX  | Number &lt;32&gt; min=1 max=2000  |  Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource.  |
 |  TYPE  | TCP  |  Defines the type of network resource.  |
 | BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
-| COMMENT  | STRING max_length=80  | Free comment.  |
-| ORIGIN  | STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
-| **INET**  | STRING max_length=32  | Identifier of the CFTNET command defining access to the first network  |
-| **HOST**  | String max_length=64  | Resource address  |
-| **PORT**  | Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
+| COMMENT  | STRING max_length=80  |  Free comment.  |
+| ORIGIN  |  STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| **INET**  | STRING max_length=32  |  Identifier of the CFTNET command defining access to the first network  |
+| **HOST**  |  String max_length=64  | Resource address  |
+| **PORT**  |  Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
 | USER  | String max_length=32  | User name transmitted in the connection request addressed to the proxy  |
-| PASSWORD  | String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
+| PASSWORD  |  String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
 
 
 Example
 
 ```
-CFTNET ID = 'NET0',
-TYPE = 'TCP',
+CFTNET   ID       = 'NET0',
+TYPE     = 'TCP',
 ....
 PROTOCOL = 'SOCKS5',
-USER = 'john',
+USER     = 'john',
 PASSWORD = 'foo'
-CFTPROT ID = 'PESITANY\_SOCKS5',
+CFTPROT  ID       = 'PESITANY_SOCKS5',
 ...
 ```
 <span id="Configuration"></span>
 
 ### Configuring a connection
 
-To configure an outgoing connection through a proxy, user must define the following objects. The numbers referenced here are taken from the example below.
+To configure an outgoing connection through a proxy, user must define the following objects. The numbers referenced here are taken from the example below.        
 
 -   A network resource with the class 1 (NET0 in the example).
 -   A network resource with the class 2 (NSOCKS5 in the example) and inet parameter = NET0. This net also contains SOCKS proxy host, port, username and password.
@@ -153,28 +153,28 @@ To configure an outgoing connection through a proxy, user must define the follow
 Example
 
 ```
-CFTNET ID = 'NET0',
-TYPE = 'TCP',
-CALL = 'INOUT',
-MAXCNX = '128',
-CLASS = '1',
-HOST = 'localhost'
-CFTNET ID = 'NSOCKS5',
-TYPE = 'TCP',
-CALL = 'INOUT',
-MAXCNX = '32',
-CLASS = '2',
-HOST = proxy\_address,
-PORT = proxy\_port,
-INET = 'NET0',
+CFTNET   ID       = 'NET0',
+TYPE     = 'TCP',
+CALL     = 'INOUT',
+MAXCNX   = '128',
+CLASS    = '1',
+HOST     = 'localhost'
+CFTNET   ID       = 'NSOCKS5',
+TYPE     = 'TCP',
+CALL     = 'INOUT',
+MAXCNX   = '32',
+CLASS    = '2',
+HOST     = proxy_address,
+PORT     = proxy_port,
+INET     = 'NET0',
 PROTOCOL = 'SOCKS5',
-USER = 'john',
+USER     = 'john',
 PASSWORD = 'foo'
-CFTPROT ID = 'PESITANY\_SOCKS5',
-NET = 'NSOCKS5'
-CFTPART ID = 'PARIS\_NSOCKS5',
-CFTTCP ID = 'PARIS\_ NSOCKS5',
-CLASS = '2',
+CFTPROT  ID       = 'PESITANY_SOCKS5',
+NET      = 'NSOCKS5'
+CFTPART      ID       = 'PARIS_NSOCKS5',
+CFTTCP       ID       = 'PARIS_ NSOCKS5',
+CLASS  = '2',
 ```
 
 ### SOCKS references
@@ -186,14 +186,14 @@ CLASS = '2',
 
 ## Setting up a proxy for Copilot
 
-The proxy implementation for {{< TransferCFT/componentshortname  >}} Copilot is handled directly by the Java Socket class, and uses either the SOCKS V4 or V5 protocol. Note that the HTTP proxy that is used to connect to the Transfer CFT Copilot server for downloading is different from the one used for SOCKS 4 data exchange between Copilot client and server. Therefore, you require 2 proxies:
+The proxy implementation for {{< TransferCFT/componentshortname  >}} Copilot  is handled directly by the Java Socket class, and uses either the SOCKS V4 or V5 protocol. Note that the HTTP proxy that is used to connect to the Transfer CFT Copilot server for downloading is different from the one used for SOCKS 4 data exchange between Copilot client and server. Therefore, you require  2 proxies:
 
 -   An HTTP proxy that you set in internet browser
 -   A SOCKS 4 proxy that you set in Copilot
 
 Since the Copilot log in screen in a browser window does not provide a way to enter proxy settings, you must force the **Connect to a product** dialog box to display by entering faulty credentials in the Copilot log in screen. Once this connection dialog box displays, you can then set the proxy address and port.
 
-The step is only required for your first log in through a proxy. Copilot retains the proxy address and port settings for subsequent connections.
+The step is only required for your first log in through a proxy. Copilot retains the  proxy address and port settings for subsequent connections.
 
 To remove proxy and revert to the standard log in, simply remove the proxy address and port settings in the connection dialog box.
 

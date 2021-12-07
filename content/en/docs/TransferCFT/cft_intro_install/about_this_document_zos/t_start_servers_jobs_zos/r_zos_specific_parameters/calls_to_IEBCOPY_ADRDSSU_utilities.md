@@ -70,7 +70,7 @@ An IEBCOPY call enables the transfer to all members, or to a selected group of m
 
 *Or*
 
-SEND ..FNAME=#MY.LOAD.LIBRARY(\*),
+SEND  ..FNAME=#MY.LOAD.LIBRARY(\*),
 
 WFNAME=TEMP.FILE.&PART.&IDTU
 
@@ -149,15 +149,15 @@ Model
 
 Interpretation
 
-DSNGEN\_
+DSNGEN_
 DSN
-DSNGEN\_\_
+DSNGEN__
 DSN\*
-DSNGEN.\_
+DSNGEN._
 DSN.\*
-DSNGEN\_.\_
+DSNGEN_._
 DSN\*.\*
-DSNGEN\_.\_\_
+DSNGEN_.__
 DSN\*.\*\*
 ```
 

@@ -12,7 +12,7 @@ Parameters to regulate monitoring can have one of the following values:
 -   UNDEFINED: undefined value
 -   ERROR: all unsuccessful transfers (where the state can be Canceled, Suspended, or Interrupted - as described in <a href="../intro_sentinel/pesit_prot_sentinel" class="MCXref xref">XFBTransfer system attributes</a>)
 
-For a transfer command, if Sentinel monitoring is implemented, these parameters are analyzed in the following order: transfer command, transfer definition, partner definition, general parameter (CFTPARM), and lastly the UCONF parameter definition(sentinel.xfb.transfer). If the uconf is not defined, you can set it using the command `CFTUTIL uconfset id=sentinel.xfb.transfer`.
+For a transfer command, if Sentinel monitoring is implemented, these parameters are analyzed in the following order: transfer command, transfer definition, partner definition, general parameter (CFTPARM), and lastly the UCONF  parameter definition(sentinel.xfb.transfer). If the uconf is not defined, you can set it using the command `CFTUTIL uconfset id=sentinel.xfb.transfer`.
 
 Parameters to regulate level of monitoring messages
 
@@ -49,7 +49,7 @@ CFTI24I CFTTRK nb messages = 65
 CFTI24I CFTTRK Sentinel state = connected
 ```
 
-If Sentinel is not available, or has been disabled, the following messages display in the log:
+If Sentinel is not available, or has been disabled,  the following messages display in the log:
 
 ```
 CFTI24I CFTTRK MQUERY OBJECT=SYSTEM
@@ -83,7 +83,7 @@ CFTSEND/CFTRECV
 TRK =
 { UNDEFINED | ALL | SUMMARY | NO | ERROR }
 
-An optional parameter having TRKSEND/TRKRECV as the default values. Enables tracking for the file model (IDF).
+An optional parameter having  TRKSEND/TRKRECV as the default values. Enables tracking for the file model (IDF).
 
 CFTPART
 

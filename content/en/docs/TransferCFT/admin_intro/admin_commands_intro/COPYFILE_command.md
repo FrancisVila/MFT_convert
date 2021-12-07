@@ -11,7 +11,7 @@ to copy a sequential file performing the following operations:
 <!-- -->
 
 -   ASCII/EBCDIC translation
-    and vice versa: the translation is performed with Transfer CFT’s
+    and vice versa: the  translation is performed with Transfer CFT’s
     internal tables
 
 <!-- -->
@@ -34,7 +34,7 @@ Syntax
 = {
 | n } \]
 
-\[ ICHARSET = string \]
+\[ ICHARSET = string  \]
 
 \[ [ICODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/icode)
 = { ASCII | EBCDIC } \]
@@ -61,7 +61,7 @@ Syntax
 = { 0 |n  }
 \]
 
-\[ OCHARSET = string \]
+\[ OCHARSET = string  \]
 
 \[ [OCODE](../../../c_intro_userinterfaces/command_summary/parameter_intro/ocode)
 = { ASCII | EBCDIC } \]

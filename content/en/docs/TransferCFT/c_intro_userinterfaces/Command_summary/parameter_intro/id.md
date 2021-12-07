@@ -7,7 +7,7 @@
 ### id
 
 Identifier. The maximum length for an identifier value-type is 32 characters.
-This affects all {{< TransferCFT/componentshortname  >}} commands.
+This affects all  {{< TransferCFT/componentshortname  >}} commands.
 
 <span id="id_CFTAUTH"></span>
 
@@ -144,7 +144,7 @@ of DIRECT, FCODE or NCODE are different.
 Local model file identifier (IDF)
 
 The "COMMUT" value for this parameter takes a particular meaning
-for {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
+for  {{< TransferCFT/componentshortname  >}}: it corresponds to the description of the files received
 as an intermediate partner. For the store and forward to be accepted,
 the command (CFTRECV ID = COMMUT) has to be customized explicitly on the
 store and forward site. If not, the store and forward is refused.
@@ -175,7 +175,7 @@ identifier of the model file (IDF) to be sent.
 
 Network resource identifier.
 
-#### CFTACCNT, CFTCOM, CFTIDF, CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL, CFTEXT, LISTPARM, LISTPART
+#### CFTACCNT, CFTCOM, CFTIDF,  CFTNET, CFTTCP, CFTTRACE, CFTAPPL, CFTSSL,  CFTEXT, LISTPARM, LISTPART
 
 \[ID = identifier \]
 

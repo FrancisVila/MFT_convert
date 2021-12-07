@@ -8,7 +8,7 @@ CFTSEND, CFTRECV
 
 \[DUPLICAT = { string 512 } \]
 
-This customizable parameter is used in detecting duplicate transfers. If you are performing a file transfer in and the file already exists, DUPLICAT recognizes the repeated pattern for a transfer. If this happens, the new transfer is rejected with a K status and DIAG = 432, DIAGP = DUPLICAT.
+This customizable parameter is used in detecting duplicate transfers. If you are performing a file transfer in  and the file already exists, DUPLICAT recognizes the repeated pattern for a transfer. If this happens, the new transfer is rejected with a K status and DIAG = 432, DIAGP = DUPLICAT.
 
 In *requester* mode, if the transfer is sent using synchronous API, the [DACTION](../daction) parameter is taken into account.
 

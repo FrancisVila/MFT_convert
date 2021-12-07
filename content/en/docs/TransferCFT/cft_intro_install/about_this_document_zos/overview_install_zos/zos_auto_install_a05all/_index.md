@@ -26,14 +26,14 @@ The A05ALL JCL automatically runs the following members.
          <td>2         </td>
          <td><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
 <p>Non-SMP/E installation mode.
-&lt;/p&gt;</p>         </td>
+                        &lt;/p&gt;</p>         </td>
          <td>A12AOPTS         </td>
       </tr>
       <tr>
          <td>3         </td>
          <td><p>Link-edit all Transfer CFT modules.</p>
 <p>Non-SMP/E installation mode.
-&lt;/p&gt;</p>         </td>
+                        &lt;/p&gt;</p>         </td>
          <td>B20LINK         </td>
       </tr>
       <tr>
@@ -50,12 +50,12 @@ The A05ALL JCL automatically runs the following members.
 <ul>
 <li>Sets the uconf variables:
 <ul>
-<li>cft.runtime_dir</li>
-<li>cft.listcat_compat</li>
-<li>cft.state_compat</li>
+<li>          cft.runtime_dir</li>
+<li>          cft.listcat_compat</li>
+<li>          cft.state_compat</li>
 </ul></li>
 <li>Generates the SAMPLE(CFTPARM) parameter sample from the SAMPLE(ZCFTPARM) template</li>
-<li>Generates the SFTP SAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
+<li>Generates the SFTP  SAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
 </ul>         </td>
          <td>CFT$SET         </td>
       </tr>
@@ -70,7 +70,7 @@ The A05ALL JCL automatically runs the following members.
       </tr>
       <tr>
          <td>6         </td>
-         <td><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file), account).</p>         </td>
+         <td><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file),       account).</p>         </td>
          <td>D40INIT         </td>
       </tr>
       <tr>
@@ -94,33 +94,33 @@ The A05ALL JCL automatically runs the following members.
       </tr>
       <tr>
          <td>11         </td>
-         <td><p>If pkitype=system: Enable the PKI system.</p>         </td>
+         <td><p>If pkitype=system:   Enable the PKI system.                          </p>         </td>
          <td>D47SYST         </td>
       </tr>
       <tr>
-         <td>  Central Governance         </td>
+         <td>   Central Governance         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>15         </td>
          <td><p>If cgenable=yes:</p>
-<p>Create the Axway Demonstration Root Certificate.</p>         </td>
+<p>       Create the Axway Demonstration Root Certificate.</p>         </td>
          <td>CFTCGPKI         </td>
       </tr>
       <tr>
          <td>16         </td>
          <td><p>If cgenable=yes:</p>
-<p>Transfer CFT to registration.</p>         </td>
+<p>         Transfer CFT to registration.                          </p>         </td>
          <td>CFTCGREG         </td>
       </tr>
       <tr>
-         <td>  Sentinel         </td>
+         <td>   Sentinel         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>20         </td>
          <td>If snenable = yes:
-<p>Sentinel parameters are activated (TCP configuration).</p>
+<p>         Sentinel parameters are activated (TCP configuration).</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>This JCL does not create Sentinel tracker logstream.</p>
@@ -134,7 +134,7 @@ The A05ALL JCL automatically runs the following members.
          <td>SN10CLGR         </td>
       </tr>
       <tr>
-         <td>  Copilot         </td>
+         <td>   Copilot         </td>
          <td>          </td>
       </tr>
       <tr>
@@ -155,25 +155,25 @@ The A05ALL JCL automatically runs the following members.
          <td>RESTCFG         </td>
       </tr>
       <tr>
-         <td>  Secure Relay         </td>
+         <td>   Secure Relay         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>40         </td>
          <td><p>If Secure Relay is enabled:</p>
-<p>Install on USS environment, the files for Secure Relay Master Agent.</p>         </td>
+<p>         Install on USS environment, the files for Secure Relay Master Agent.</p>         </td>
          <td>XSRA010         </td>
       </tr>
       <tr>
          <td>41         </td>
          <td><p>If Secure Relay enabled:</p>
-<p>Create the runtime directory for the Transfer CFT Secure Relay Master Agent.</p>         </td>
+<p>         Create the runtime directory for the Transfer CFT          Secure Relay Master Agent.</p>         </td>
          <td>XSRA015         </td>
       </tr>
       <tr>
          <td>42         </td>
          <td><p>If Secure Relay is enabled:</p>
-<p>Updating Secure Relay parameters (UCONF)</p>         </td>
+<p>         Updating Secure Relay parameters (UCONF)</p>         </td>
          <td>XSRA020         </td>
       </tr>
       <tr>
@@ -182,13 +182,13 @@ The A05ALL JCL automatically runs the following members.
          <td>CFTSAML         </td>
       </tr>
       <tr>
-         <td>  Optional steps         </td>
+         <td>   Optional steps         </td>
          <td>          </td>
       </tr>
       <tr>
          <td>50         </td>
          <td><p>Exits and API(s) samples compilation (ASM, C and COBOL).</p>
-<p>For COBOL, C: variable LNGPRFX must be customized (I91APICP).</p>         </td>
+<p>      For COBOL, C: variable LNGPRFX must be customized (I91APICP).</p>         </td>
          <td>I91APICP         </td>
       </tr>
       <tr>

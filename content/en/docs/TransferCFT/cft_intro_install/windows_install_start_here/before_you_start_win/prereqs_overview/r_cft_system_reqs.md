@@ -19,7 +19,7 @@ Refer to the [{{< TransferCFT/companyname  >}} S*upported Platforms Guide*](http
 
 ## Windows operating system prerequisites
 
-Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vc_redist.x64.exe` prior to installing or upgrading Transfer CFT.
+Transfer CFT on Windows  requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning.  This provides the necessary library files (DLL) for Transfer CFT. You must install `vc_redist.x64.exe` prior to installing or upgrading Transfer CFT.
 
 > **Note:**
 >

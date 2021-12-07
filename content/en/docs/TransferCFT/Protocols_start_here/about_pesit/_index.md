@@ -143,7 +143,7 @@ Message
 transfer which enables the transmission of application messages of arbitrary
 length, or end-to-end response acknowledgment messages.
 
-This operation enables items of relatively small information to be exchanged between the partners. A message is accompanied by a minimum of service information and may, for example, be used to acknowledge the correct processing of a received file. Transfer CFT enables you to transmit 512-character user messages (between two {{< TransferCFT/componentshortname  >}}s the limit is 4096 characters).
+This operation enables items of relatively small information to be exchanged between the partners. A message is accompanied by a minimum of service information and may, for example, be used to acknowledge the correct processing of a received file.  Transfer CFT enables you to transmit 512-character user messages (between two {{< TransferCFT/componentshortname  >}}s the limit is 4096 characters).
 
 Additionally, {{< TransferCFT/componentshortname  >}} provides negative acknowledgment capabilities.
 

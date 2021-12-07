@@ -18,7 +18,7 @@ Identifier of the transfer owner.
 This parameter is used in server mode
 to define the transfer owner associated with a CFTRECV object, or a CFTSEND
 IMPL = YES object. If this parameter is not defined, its default value
-is the system "userid" of the server {{< TransferCFT/componentshortname  >}}.
+is the system "userid" of the server  {{< TransferCFT/componentshortname  >}}.
 
 This field can include one or more of the following symbolic variables:
 
@@ -26,10 +26,10 @@ This field can include one or more of the following symbolic variables:
     value substituted by the local identifier of the transfer partner (CFTPART
     <span style="font-weight: bold;">id</span>)
 -   <span style="font-weight: bold;">&SUSER</span>:
-    value substituted by the SUSER parameter sent between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s (PeSIT D CFT profile and PeSIT E protocols)
+    value substituted by the SUSER parameter sent between two  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s (PeSIT D CFT profile and PeSIT E protocols)
 -   &<span style="font-weight: bold;">RUSER</span>:
     value substituted by the <span style="font-weight: bold;">ruser</span>
-    parameter sent between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s (PeSIT D CFT profile
+    parameter sent between two  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s (PeSIT D CFT profile
     and PeSIT E protocols)
 
 > **Note:**
@@ -46,7 +46,7 @@ Windows
 
 z/OS (MVS)
 
-The USERID value is used to perform the CRONJOB job submission.
+The USERID value is used  to perform the CRONJOB job submission.
 
 All other platforms
 

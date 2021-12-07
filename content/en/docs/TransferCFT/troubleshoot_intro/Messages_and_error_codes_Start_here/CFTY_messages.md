@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTY",
     "linkTitle": "CFTY messages",
     "weight": "400"
-}This topic lists the CFTYxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTYxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -22,9 +22,9 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 V23 format
 V24 format
 Information
-<span id="CFTY03E"></span>CFTY03E PID=&pid System error \[&string\] CR=&cr
+<span id="CFTY03E"></span>CFTY03E PID=&pid System error [&string] CR=&cr
 CS=&cs
-CFTY03E PID=&pid System error \[&string\] CR=&cr
+CFTY03E PID=&pid System error [&string] CR=&cr
 CS=&cs
 Explanation
 A new SSL task cannot initialize its working environment. According
@@ -35,16 +35,16 @@ V23 format
 V24 format
 Information
 CFTY03E
-PID=&pid System error \[MMALLOC\] CR=&cr CS=&cs
+PID=&pid System error [MMALLOC] CR=&cr CS=&cs
 CFTY03E
-PID=&pid System error \[MMALLOC\] CR=&cr CS=&cs
+PID=&pid System error [MMALLOC] CR=&cr CS=&cs
 Explanation
 Dynamic memory allocation failure.
 V23 format
 V24 format
 Information
-CFTY03E PID=&pid System error \[SYDEF\] CR=&cr CS=&cs
-CFTY03E PID=&pid System error \[SYDEF\] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYDEF] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYDEF] CR=&cr CS=&cs
 Explanation
 Task semaphore creation failure:
 
@@ -58,8 +58,8 @@ Task semaphore creation failure:
 V23 format
 V24 format
 Information
-CFTY03E PID=&pid System error \[SYPOST\] CR=&cr CS=&cs
-CFTY03E PID=&pid System error \[SYPOST\] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYPOST] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYPOST] CR=&cr CS=&cs
 Explanation
 Semaphore write failure:
 
@@ -75,8 +75,8 @@ Semaphore write failure:
 V23 format
 V24 format
 Information
-CFTY03E PID=&pid System error \[SYWAIT\] CR=&cr CS=&cs
-CFTY03E PID=&pid System error \[SYWAIT\] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYWAIT] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [SYWAIT] CR=&cr CS=&cs
 Explanation
 Semaphore read failure:
 
@@ -90,8 +90,8 @@ Semaphore read failure:
 V23 format
 V24 format
 Information
-CFTY03E PID=&pid System error \[CTXDEF\] CR=&cr CS=&cs
-CFTY03E PID=&pid System error \[CTXDEF\] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [CTXDEF] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [CTXDEF] CR=&cr CS=&cs
 Explanation
 SSL session context manager creation failure:
 
@@ -103,8 +103,8 @@ SSL session context manager creation failure:
 V23 format
 V24 format
 Information
-CFTY03E PID=&pid System error \[STARTPKI\] CR=&cr CS=&cs
-CFTY03E PID=&pid System error \[STARTPKI\] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [STARTPKI] CR=&cr CS=&cs
+CFTY03E PID=&pid System error [STARTPKI] CR=&cr CS=&cs
 Explanation
 PKI internal
 error. The CS code is in the form « PKII nnn » for a Transfer
@@ -119,9 +119,9 @@ V23 format
 V24 format
 Information
 <span id="CFTY04E"></span>CFTY04E PID=&pid PKIFNAME=&string Internal PKI
-error \[&string\] CR=&cr
+error [&string] CR=&cr
 CS=&cs CFTY04E PID=&pid PKIFNAME=&string Internal PKI
-error \[&string\] CR=&cr CS=&cs
+error [&string] CR=&cr CS=&cs
 Explanation
 A new SSL
 task cannot read the index file of the local certificate data base.
@@ -133,9 +133,9 @@ V23 format
 V24 format
 Information
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[FMALLOC\] CR=&cr CS=&cs
+[FMALLOC] CR=&cr CS=&cs
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[FMALLOC\] CR=&cr CS=&cs
+[FMALLOC] CR=&cr CS=&cs
 Explanation
 File allocation failure:
 
@@ -154,9 +154,9 @@ V23 format
 V24 format
 Information
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[DMOPEN\] CR=&cr CS=&cs
+[DMOPEN] CR=&cr CS=&cs
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[DMOPEN\] CR=&cr CS=&cs
+[DMOPEN] CR=&cr CS=&cs
 Explanation
 File open failure:
 
@@ -178,9 +178,9 @@ V23 format
 V24 format
 Information
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[DMGN\] CR=&cr CS=&cs
+[DMGN] CR=&cr CS=&cs
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[DMGN\] CR=&cr CS=&cs
+[DMGN] CR=&cr CS=&cs
 Explanation
 File read failure:
 
@@ -190,9 +190,9 @@ V23 format
 V24 format
 Information
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[HPUT\] CR=&cr CS=&cs
+[HPUT] CR=&cr CS=&cs
 CFTY04E PID=&pid PKIFNAME=&string Internal PKI error
-\[HPUT\] CR=&cr CS=&cs
+[HPUT] CR=&cr CS=&cs
 Explanation
 File loading error:
 
@@ -208,19 +208,19 @@ V23 format
 V24 format
 Information
 <span id="CFTY05E"></span>CFTY05E PID=&pid PKIFNAME=&file Syntax error
-\_ &string
+_ &string
 CFTY05E PID=&pid PKIFNAME=&file Syntax error
-\_ &string
+_ &string
 Explanation
 The index file of the local certificate data base is not valid.
 This file name is set by default in the CFTPARM object.
 Depending on the error's origin, the message could be one of the following:
 
 -   MISSING
-    SECTION=TrustedCas: the file doesn’t contain a \[TrustedCas\] section. This
+    SECTION=TrustedCas: the file doesn’t contain a [TrustedCas] section. This
     section is used to declare certificate authorities (CA)
 -   SECTION=TrustedCas
-    IS EMPTY: \[TrustedCas\] section is empty
+    IS EMPTY: [TrustedCas] section is empty
 -   BAD
     VALUE LINE=linenumber: Invalid syntax for a certificate or private key
     statement. The line number in the file is displayed
@@ -242,9 +242,9 @@ V23 format
 V24 format
 Information
 <span id="CFTY06E"></span>CFTY06E CTX=&ctx Certificate Request Message error
-\_ &string
+_ &string
 CFTY06E CTX=&ctx Certificate Request Message error
-\_ &string
+_ &string
 Explanation
 SSL handshake error: a request certificate message, sent by
 the server, is invalid. According to the error origin, various reasons
@@ -262,9 +262,9 @@ is aborted. An alert is sent to the server.
 V23 format
 V24 format
 Information
-<span id="CFTY07E"></span>CFTY07E CTX=&ctx System error \[&string\] CR=&cr
+<span id="CFTY07E"></span>CFTY07E CTX=&ctx System error [&string] CR=&cr
 CS=&cs
-CFTY07E CTX=&ctx System error \[&string\] CR=&cr
+CFTY07E CTX=&ctx System error [&string] CR=&cr
 CS=&cs
 Explanation
 SSL handshake error. According to the error origin, various
@@ -275,8 +275,8 @@ to the remote entity.
 V23 format
 V24 format
 Information
-CFTY07E CTX=&ctx System error \[MMALLOC\] CR=&cr CS=&cs
-CFTY07E CTX=&ctx System error \[MMALLOC\] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [MMALLOC] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [MMALLOC] CR=&cr CS=&cs
 Explanation
 Dynamic memory allocation failure.
 Result
@@ -287,8 +287,8 @@ the network session is cleared.
 V23 format
 V24 format
 Information
-CFTY07E CTX=&ctx System error \[SYPOST\] CR=&cr CS=&cs
-CFTY07E CTX=&ctx System error \[SYPOST\] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [SYPOST] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [SYPOST] CR=&cr CS=&cs
 Explanation
 Semaphore write failure:
 
@@ -312,8 +312,8 @@ Semaphore write failure:
 V23 format
 V24 format
 Information
-CFTY07E CTX=&ctx System error \[CTXALLOC\] CR=&cr CS=&cs
-CFTY07E CTX=&ctx System error \[CTXALLOC\] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [CTXALLOC] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [CTXALLOC] CR=&cr CS=&cs
 Explanation
 Memory allocation error for a new SSL session context:
 
@@ -326,8 +326,8 @@ Memory allocation error for a new SSL session context:
 V23 format
 V24 format
 Information
-CFTY07E CTX=&ctx System error \[CTXCHK\] CR=&cr CS=&cs
-CFTY07E CTX=&ctx System error \[CTXCHK\] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [CTXCHK] CR=&cr CS=&cs
+CFTY07E CTX=&ctx System error [CTXCHK] CR=&cr CS=&cs
 Explanation
 Invalid
 message received from another {{< TransferCFT/componentshortname >}} task (context is invalid or
@@ -427,9 +427,9 @@ protocol are displayed.
 V23 format
 V24 format
 Information
-<span id="CFTY13E"></span>CFTY13E CTX=&ctx SSL Handshake local error \[&string\]
+<span id="CFTY13E"></span>CFTY13E CTX=&ctx SSL Handshake local error [&string]
 CR=&cr
-CFTY13E CTX=&ctx SSL Handshake local error \[&string\]
+CFTY13E CTX=&ctx SSL Handshake local error [&string]
 CR=&cr
 Explanation
 SSL session handshake failure.
@@ -510,93 +510,93 @@ Explanation
 Internal error on calling up the internal PKI. The "&str"
 field can have the following values:
 
--   PKI\_NOT\_TREATED
+-   PKI_NOT_TREATED
     : PKI function not treated
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_BAD
+-   PKI_ERR_CERT_BAD
     : Incorrect certificate (format error)
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_UNSUPPORTED
+-   PKI_ERR_CERT_UNSUPPORTED
     : Certificate not supported
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_REVOKED
+-   PKI_ERR_CERT_REVOKED
     : Certificate revoked
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_EXPIRED
+-   PKI_ERR_CERT_EXPIRED
     : Certificate expired
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_UNKNOWN
+-   PKI_ERR_CERT_UNKNOWN
     : Certificate unknown
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_NOT\_VALID
+-   PKI_ERR_CERT_NOT_VALID
     : Certificate not valid
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_BAD\_SIGN
+-   PKI_ERR_CERT_BAD_SIGN
     : Integrity error (incorrect signature)
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_BAD\_HASH
+-   PKI_ERR_CERT_BAD_HASH
     : Integrity error (hash code  incorrect)
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_BAD\_CA
+-   PKI_ERR_CERT_BAD_CA
     :Certification organism certificate invalid
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_ALGO\_UNSUPPORTED
+-   PKI_ERR_CERT_ALGO_UNSUPPORTED
     : Unsupported ciphering algorithm
 
 <!-- -->
 
--   PKI\_ERR\_CERT\_NOT\_FOUND
+-   PKI_ERR_CERT_NOT_FOUND
     : User certificate not found
 
 <!-- -->
 
--   PKI\_ERR\_CA\_NOT\_FOUND
+-   PKI_ERR_CA_NOT_FOUND
     : Certification organism certificate not found
 
 <!-- -->
 
--   PKI\_ERR\_BAD\_KEY
+-   PKI_ERR_BAD_KEY
     : Invalid ciphering key
 
 <!-- -->
 
--   PKI\_ERR\_BUF\_TOO\_SHORT
+-   PKI_ERR_BUF_TOO_SHORT
      : Memory buffer size too small
 
 <!-- -->
 
--   PKI\_ERR\_SYS
+-   PKI_ERR_SYS
      : Internal error linked to the system (memory
     allotment, system function, and so on)
 
 <!-- -->
 
--   PKI\_ERR\_PARM
+-   PKI_ERR_PARM
     : Ciphering parameter invalid
 
 <!-- -->
 
--   PKI\_ERR\_OTHERS
+-   PKI_ERR_OTHERS
     : Other error (authentication, ciphering, integrity,
     and so on)
 
@@ -744,8 +744,8 @@ value and contact the product support team if necessary.
 V23 format
 V24 format
 Information
-<span id="CFTY30E"></span>CFTY30E CTX=&ctx SSL Handshake remote error \[&string\] CR=&cr
-CFTY30E CTX=&ctx SSL Handshake remote error \[&string\] CR=&cr
+<span id="CFTY30E"></span>CFTY30E CTX=&ctx SSL Handshake remote error [&string] CR=&cr
+CFTY30E CTX=&ctx SSL Handshake remote error [&string] CR=&cr
 Explanation
 SSL session handshake failure. An alert has been received from the remote peer.
 Consequence
@@ -760,11 +760,11 @@ Analyze the &cr error code (refer to the SSL protocol error codes). Also check t
 V23 format
 V24 format
 Information
-<span id="CFTY41E"></span>CFTY41E CFTCTX=<session\_reference>, xpp call <PassportPS\_API\_function>: error \[<PassportPS\_API\_function\_returncode>\]
-CFTY41E CFTCTX=<session\_reference>, xpp call <PassportPS\_API\_function>: error \[<PassportPS\_API\_function\_returncode>\]
+<span id="CFTY41E"></span>CFTY41E CFTCTX=<session_reference>, xpp call <PassportPS_API_function>: error [<PassportPS_API_function_returncode>]
+CFTY41E CFTCTX=<session_reference>, xpp call <PassportPS_API_function>: error [<PassportPS_API_function_returncode>]
 Explanation
 An error occurred during an exchange or connection with the PassPort PS server.
-<PassportPS\_API\_function> and <PassportPS\_API\_function\_returncode> identify the function in error and provide the return code for the function.
+<PassportPS_API_function> and <PassportPS_API_function_returncode> identify the function in error and provide the return code for the function.
 ```
 
  
@@ -773,9 +773,9 @@ An error occurred during an exchange or connection with the PassPort PS server.
 V23 format
 V24 format
 Information
-<span id="CFTY44E"></span>CFTY44E CFTCTX=<session\_reference>, long err msg : \[<PassportPS\_API\_error\_code>\]
+<span id="CFTY44E"></span>CFTY44E CFTCTX=<session_reference>, long err msg : [<PassportPS_API_error_code>]
 Explanation
-An error occurred during an exchange or connection with the PassPort PS server. The <PassportPS\_API\_error\_code> describes the error.
+An error occurred during an exchange or connection with the PassPort PS server. The <PassportPS_API_error_code>  describes the error.
 ```
 
  
@@ -784,9 +784,9 @@ An error occurred during an exchange or connection with the PassPort PS server. 
 V23 format
 V24 format
 Information
-<span id="CFTY45E"></span>CFTY45E CFTCTX=<session\_reference>, <PassportPS\_API\_error\_message>
+<span id="CFTY45E"></span>CFTY45E CFTCTX=<session_reference>, <PassportPS_API_error_message>
 Explanation
-An error occurred during an exchange or connection with the PassPort PS server. The <PassportPS\_API\_error\_message> describes the error.
+An error occurred during an exchange or connection with the PassPort PS server. The <PassportPS_API_error_message> describes the error.
 ```
 
  

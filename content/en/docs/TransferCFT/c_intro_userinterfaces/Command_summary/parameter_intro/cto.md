@@ -26,7 +26,7 @@ partner during the indicated duration.
 
 PeSIT E
 
-CTO = {1|n} {1….32767}
+CTO  =  {1|n} {1….32767}
 
  
 

@@ -5,10 +5,10 @@
 }The function expression syntax is modeled on the following, while still respecting basic command rules:
 
 -   A unique keyword that identifies the function (id\_func). This keyword is always preceded by the character \_ (underscore).
--   Two invariable identifier parameters: PARM and RC. The PARM parameter specifies the function call, and RC provides an execution report.
+-   Two invariable identifier parameters: PARM and RC. The PARM parameter specifies the function call, and RC provides an  execution report.
 
 ```
-<id\_func> PARM = (\[<value>,\] \* <value>), RC = <value>
+<id_func> PARM = ([<value>,] \* <value>), RC = <value>
 The expression in square brackets is repeated.
 ```
 
@@ -52,7 +52,7 @@ General functions include:
 The \_RAND function generates a random number between a lower limit and an upper limit.
 
 ```
-\_RAND PARM = (VAR, Valmin, ValMax)
+_RAND PARM = (VAR, Valmin, ValMax)
 ```
 
 #### Parameters
@@ -65,18 +65,18 @@ The \_RAND function generates a random number between a lower limit and an upper
 
 ```
 LONG name = DRAW
-\_RAND parm = (DRAW, 1, 49)
-\_PRINT msg = 'The drawing for the first number for the LOTTERY is %DRAW%'
+_RAND parm = (DRAW, 1, 49)
+_PRINT msg = 'The drawing for the first number for the LOTTERY is %DRAW%'
 ```
 
-### Function \_MEMSET
+### Function  \_MEMSET
 
 #### Syntax
 
 The \_MEMSET function fills a string with a character.
 
 ```
-\_MEMSET PARM = (VAR, CODE, LG)
+_MEMSET PARM = (VAR, CODE, LG)
 ```
 
 #### Parameters
@@ -91,17 +91,17 @@ Enter the parameter value in upper case.
 
 ```
 CHAR name = BUFFER , size=16
-\_MEMSET parm = (BUFFER, 32,16)
+_MEMSET parm = (BUFFER, 32,16)
 ```
 
-### Function \_MEMCPY
+### Function  \_MEMCPY
 
 #### Syntax
 
 The \_MEMCPY function copies a string to a source destination string.
 
 ```
-\_MEMCPY PARM = (VAR, STR, LG)
+_MEMCPY PARM = (VAR, STR, LG)
 ```
 
 #### Parameters
@@ -117,17 +117,17 @@ Enter the parameter value in upper case.
 ```
 CHAR name = BUFFER , size=16
 CHAR name = STR , size=16, init = 'Line of 16 CAR'
-\_MEMCPY parm = (BUFFER, STR,16)
+_MEMCPY parm = (BUFFER, STR,16)
 ```
 
-### Function \_STRCPY
+### Function  \_STRCPY
 
 #### Syntax
 
 The \_Strcpy function copies a string to a CHAR variable.
 
 ```
-\_STRCPY NAME = VAR,
+_STRCPY NAME = VAR,
 STR = CHAIN,
 ```
 
@@ -141,7 +141,7 @@ STR = CHAIN,
 ```
 CHAR name = STRING1, size = 16
 CHAR name = STRING2, size = 16, init = 'ABCDEF'
-\_STRCPY name = STRING1, STR = %STRING2%
+_STRCPY name = STRING1, STR = %STRING2%
 ```
 
 ### Function \_STRCMP
@@ -151,14 +151,14 @@ CHAR name = STRING2, size = 16, init = 'ABCDEF'
 The \_STRCMP function compares two strings.
 
 ```
-\_STRCMP NAME = VAR1,
+_STRCMP NAME = VAR1,
 STR = VAR2,
 RC = CMP
 ```
 
 #### Parameters
 
--   VAR1: The name of the first CHAR variable to compare.
+-   VAR1: The name of the first  CHAR variable to compare.
 -   VAR2: The name of the second CHAR variable to compare.
 -   CMP: Name variable of type LONG which will store the result of the comparison of VAR1 VAR2 with. If the strings are identical CMP = 0 if the strings are different CMP = 1.
 
@@ -168,7 +168,7 @@ RC = CMP
 CHAR name = STRING1, size = 16, init = 'CDEFGH'
 CHAR name = STRING2, size = 16, init = 'ABCDEF'
 LONG name = CMP
-\_STRCMP name = STRING1, STR = STRING2, RC = CMP
+_STRCMP name = STRING1, STR = STRING2, RC = CMP
 ```
 
 At the end of this test, variable CMP is 1.

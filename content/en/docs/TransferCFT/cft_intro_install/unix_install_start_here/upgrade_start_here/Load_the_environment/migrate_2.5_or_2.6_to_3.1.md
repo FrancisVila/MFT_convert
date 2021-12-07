@@ -2,7 +2,7 @@
     "title": "Migrate from Transfer CFT 2.5 or 2.6 to 3.9",
     "linkTitle": "Migrating from Transfer CFT 2.5 or 2.6.x",
     "weight": "230"
-}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must have installed your new {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
+}This topic describes how to migrate Transfer CFT 2.5 or 2.6 to version {{< TransferCFT/componentversion  >}}.  Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must  have installed your new   {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
 
 ## Migrate the configuration
 
@@ -10,7 +10,7 @@
 
 Migrate PARM, PART, IDF and other static configuration objects.
 
-1.  Load the former Transfer CFT (2.5 or 2.6) environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1.  Load the former Transfer CFT (2.5 or 2.6) environment.  See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 
 <!-- -->
 
@@ -59,7 +59,7 @@ cftinit cft-extract.conf
 1.  For each parameter you select, add a line to the new script file in the format:
 
 ```
-UCONFSET id=<parameter\_id>, value=<value>
+UCONFSET id=<parameter_id>, value=<value>
 ```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
@@ -125,7 +125,7 @@ Example
 1.  Export the catalog using the command CFTMI240.
 
 ```
-CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.5\_filename>, ofname=catalog\_output.xml
+CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.5_filename>, ofname=catalog_output.xml
 ```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
@@ -140,7 +140,7 @@ CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.5\_filename>, ofname=
 Example
 
 ```
-CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_installation>
+CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_installation>
 ```
 
 ### Migrating the communication media files
@@ -152,7 +152,7 @@ CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_
 1.  Export the communication media file using command CFTMI240:
 
 ```
-CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.5\_filename>, ofname=com\_output.xml
+CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.5_filename>, ofname=com_output.xml
 ```
 
 1.  Load the new Transfer CFT {{< TransferCFT/componentversion >}} environment.
@@ -170,5 +170,5 @@ CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.5\_filename>, ofname=com\
 Example
 
 ```
-CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_installation>
+CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_installation>
 ```

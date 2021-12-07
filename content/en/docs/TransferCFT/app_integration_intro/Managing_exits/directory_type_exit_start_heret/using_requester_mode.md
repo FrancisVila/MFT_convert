@@ -4,7 +4,7 @@
     "weight": "390"
 }The communication structure is defined by the interface before
 the user function is called. You must provide, complete, or modify the
-parameters that {{< TransferCFT/componentshortname  >}} needs to establish network and protocol connections.
+parameters that  {{< TransferCFT/componentshortname  >}} needs to establish network and protocol connections.
 
 The initialization function and the user function, if needed, are called
 when connection requests are made, even for network and protocol connection
@@ -105,7 +105,7 @@ Free Area between all EXITs
 ```
  
 
-When {{< TransferCFT/componentshortname  >}} does not know the partner, the following fields are
+When  {{< TransferCFT/componentshortname  >}} does not know the partner, the following fields are
 empty:
 
 -   ipart: intermediate
@@ -120,12 +120,12 @@ be defined when the user function is returned from.
 
 If there is a connection refusal (return code value of 2), the ret2
 field may be defined to make the cause of the refusal appear in the DIAGI
-field of the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog.
+field of the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> catalog.
 
 The content of the diag field appears with the appropriate error message
 if the return code is not 0 and 1.
 
-If the msg field is defined, its content is sent to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+If the msg field is defined, its content is sent to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 standard output.
 
 If the return code value is 0 or 1, you can modify all the fields
@@ -144,11 +144,11 @@ If this field:
 
 -   is empty
     when the user function is returned from, the partner local identifier
-    "UNDEFPTN" appears in the catalog and on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard
+    "UNDEFPTN" appears in the catalog and on the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> standard
     output.
 -   has been
-    modified and if the new identifier is located in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner
-    base, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the
+    modified and if the new identifier is located in the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner
+    base,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the
     diag field to "PTNEXIST"
 -   has been
     modified, during any network or protocol connection attempts that may
@@ -167,10 +167,10 @@ The idnet, prot and prof fields are connected to the CFTPROT
 command identifier (idprot). If the idprot field is modified, the new
 value must correspond to a CFTPROT command ( <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> updates the fields
 that are associated with it)
-If not, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the
+If not,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> sets the ret1 field to 9 (processing error) and the
 diag field to "NOPROT".
  
-The protl field indicates the list of <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter
+The protl field indicates the list of  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> parameter
 setting protocols. 
 nspart, nspassw, sap and addr 
 If the nspart (and nspassw as applicable), sap and addr
@@ -209,12 +209,12 @@ be used to assign a new address to the remote partner
 This counter is reset to zero each time the remote partner address is changed.
 If the currty value reaches the maxrty value, Transfer
 CFT attempts to go on to the next backup address.
-If there are no further backup addresses, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts to go on
+If there are no further backup addresses,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts to go on
 to the next backup protocol. If there are no further backup protocols,
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts to perform a backup store and forward
+  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts to perform a backup store and forward
 With the directory type EXIT task in requester mode, and
 one and only one protocol and a single address associated with a partner,
-<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts the backup store and forward. If the intermediate
+  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> attempts the backup store and forward. If the intermediate
 partner does not exist, the transfer changes to the K state.
 maxrtyp and currtyp 
 During protocol connection attempts, the currtyp value

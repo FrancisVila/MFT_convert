@@ -4,7 +4,7 @@
     "weight": "240"
 }To define to enable Sentinel to Transfer CFT interoperability, refer to:
 
--   [](#Communication%20with%20the%20Event%20Router)[Communication with an Event via TCP all platforms](#Communication%20with%20an%20Event%20via%20TCP) 
+-   [](#Communication%20with%20the%20Event%20Router)[Communication with an Event via TCP  all platforms](#Communication%20with%20an%20Event%20via%20TCP) 
 -   [UCONF parameters for Sentinel interoperability all platforms](#UCONF%20parameters%20for%20Sentinel%20interoperability)
 -   [Communication with the Event Router](#Communication%20with%20the%20Event%20Router) [for z/OS](#Communication%20with%20the%20Event%20Router)   
 -   [Overflow file definition for z/OS](#Overflow%20file%20definition) 
@@ -43,7 +43,7 @@ UCONFSET ID=sentinel.TRKTYPE,VALUE=TCP
 TRKIPPORT=nnnn
 UCONFSET ID=sentinel.TRKIPPORT,VALUE=nnnn
 (TCPSOURCE)
-local\_address=
+local_address=
 TRKIPADDR=
 UCONFSET ID=sentinel.TRKIPADDR,VALUE=
 ```
@@ -96,7 +96,7 @@ The table below lists the UCONF values that are used in Transfer CFT to define S
 The following parameters define communication with the Event Router via XCF. In this setup:
 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
--   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
+-   The XCF group is   PELISCOP by default. You can modify this default by setting queue = “member group”
 
 
 |   | ER  | TRKUTIL  | Transfer CFT  |
@@ -116,7 +116,7 @@ The following parameters define communication with the Event Router via XCF. In 
 The following table describes the overflow file definition for the Logger file. In this setup:
 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the {{< TransferCFT/eventroutername >}} and other applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through the {{< TransferCFT/eventroutername >}}
--   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
+-   The log structure is ONLY used to define  a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 
 |   | Event Router  | TRKUTIL  | Transfer CFT  |

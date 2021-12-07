@@ -2,7 +2,7 @@
     "title": "Using  the PKICER command",
     "linkTitle": "Using PKICER",
     "weight": "240"
-}Use the PKICER command to:
+}Use the PKICER command  to:
 
 -   Import,
     delete or update a root or intermediate certificate authority in the local
@@ -25,33 +25,33 @@ PKICER
 ID    
 =     string,
 
-\[CHECK    
-=     {YES | NO},\]
-\[COMMENT  
-=     string,\]
-\[IDATA     
-=     string,\]
-\[IFORM    
-=     {PKCS12 | DER | PEM | PKCS7,\]
-\[IKDATA    
-=     {base64/PEM},\]
-\[IKFORM   
-=     {DER | PEM | PKCS8},\]
-\[IKNAME   
-=     string,\]
-\[IKPASSW  
-=   string,\]
-\[INAME    
-=     string,\]
-\[ITYPE    
-=     {ALL | USER | ROOT | INTER},\]
-\[MODE    
-=     {REPLACE | CREATE | DELETE},\]
-\[STATE    
-=     {ACT | INACT},\]
-\[ROOTCID  
-=     string,\]
-\[PKICER    = string,\]
+[CHECK    
+=     {YES | NO},]
+[COMMENT  
+=     string,]
+[IDATA     
+=     string,]
+[IFORM    
+=     {PKCS12 | DER | PEM | PKCS7,]
+[IKDATA    
+=     {base64/PEM},]
+[IKFORM   
+=     {DER | PEM | PKCS8},]
+[IKNAME   
+=     string,]
+[IKPASSW  
+=   string,]
+[INAME    
+=     string,]
+[ITYPE    
+=     {ALL | USER | ROOT | INTER},]
+[MODE    
+=     {REPLACE | CREATE | DELETE},]
+[STATE    
+=     {ACT | INACT},]
+[ROOTCID  
+=     string,]
+[PKICER    = string,]
 
 ```
 

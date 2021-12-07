@@ -17,7 +17,7 @@ cftruntime \[-h|--help|-p|--profile|-n &lt;name>|--uconf|--inst\] &lt;cft-instal
 Where:
 
 -   -p --profile : Regenerates the profile file
--   -n &lt;name> : Regenerates the profile file with &lt;name> of your choice
+-   -n &lt;name>    : Regenerates the profile file with &lt;name> of your choice
 -   --uconf: Regenerates the uconf file.
 -   -h --help: Displays this help.
 -   --runtime: Creates a new runtime environment.
@@ -28,7 +28,7 @@ Where:
 In a UNIX environment, regenerate the uconf settings as follows:
 
 ```
-cftruntime --uconf /home/Transfer\_CFT/home /home/Transfer\_CFT/runtime
+cftruntime --uconf /home/Transfer_CFT/home /home/Transfer_CFT/runtime
 ```
 
 **Windows syntax**
@@ -42,7 +42,7 @@ Where:
 
 Usage:
 
--   -profile: Creates a new profile.bat and backs up the old one.
+-   -profile: Creates a new profile.bat  and backs up the old one.
 -   -name: Creates a new profile with the &lt;name> of your choice.
 -   -uconf: Regenerates the uconf file.
 -   -inst: Creates the initial runtime environment, which is used exclusively by the Installer.
@@ -56,7 +56,7 @@ Usage:
 In a Windows environment, create a new runtime called `runtime2`:
 
 ```
-cftruntime c:\\AxwayCFT38\\Transfer\_CFT\\home c:\\AxwayCFT36\\Transfer\_CFT\\runtime2
+cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home  c:\\AxwayCFT36\\Transfer_CFT\\runtime2
 ```
 
 **Example 2**
@@ -64,5 +64,5 @@ cftruntime c:\\AxwayCFT38\\Transfer\_CFT\\home c:\\AxwayCFT36\\Transfer\_CFT\\ru
 In a Windows environment, regenerate the `cftuconf.dat` uconf settings as follows:
 
 ```
-cftruntime c:\\AxwayCFT38\\Transfer\_CFT\\home c:\\AxwayCFT36\\Transfer\_CFT\\runtime –uconf
+cftruntime c:\\AxwayCFT38\\Transfer_CFT\\home  c:\\AxwayCFT36\\Transfer_CFT\\runtime –uconf
 ```

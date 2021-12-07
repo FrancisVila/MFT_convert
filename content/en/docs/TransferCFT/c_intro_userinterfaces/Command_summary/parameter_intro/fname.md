@@ -156,7 +156,7 @@ In the receiver server configuration, the use of this parameter
 is mandatory.
 
 In the *receiver requester* configuration, the filename may be
-defined in the RECV command or in the CFTRECV object, though preferably in CFTRECV.
+defined in the RECV command or in the CFTRECV  object, though preferably in CFTRECV.
 
 You can define the filename either in the:
 
@@ -179,11 +179,11 @@ The complete path name includes the names of directories, or any other
 organization specific to the environment concerned, used to group files:
 library, catalog, PDSE, etc.
 
-Normally, the folder referenced in <span class="code">fname </span> parameter should exist or the transfer fails. However, depending on your environment, you may use a special character that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf char\_directory for more information.
+Normally, the folder referenced in <span class="code">fname </span> parameter should exist or the transfer fails. However, depending on your environment, you may use a special character  that can be set with the cft.char\_directory\_protect to implicitly create part of a path structure. An OS specific character delimits the path to be created (intermediate directories), where the names of the sub-directories appearing to the right of the character are created. Please see the uconf char\_directory for more information.
 
 **Example**
 
-The tree structure is created after the plus special character (<span style="color: #b22222; font-weight: bold;">+</span>):
+The   tree structure is created after the plus special character (<span style="color: #b22222; font-weight: bold;">+</span>):
 
 `FNAME=’/home/cft/runtime/myapp/+user1/files/&idtu.rcv`
 
@@ -213,7 +213,7 @@ The following variables may be used to form the FNAME character string:
 -   &NCHARSET,&FCHARSET
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
+to each operating system. Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
 corresponding to your OS.
 
 ```
@@ -273,7 +273,7 @@ directory specified by FNAME.
 
 > **Note:**
 >
-> here the &lt;file-symb> character is specific to each system (for example # on Windows and @ on UNIX environments).
+> here  the &lt;file-symb> character is specific to each system (for example # on Windows and @ on UNIX environments).
 
 Name of the local file, directory, indirection file, selection mask
 or selection directory to be sent. The maximum length of a filename value-type
@@ -297,10 +297,10 @@ FNAME= '/home/cft/runtime/pub/FTEST'
 FNAME = 'pub/FTEST'
 ```
 
-FNAME=dirname which transfers a file that contains the list of all files in the dirname folder (pub in this example), but not the actual files:
+FNAME=dirname  which  transfers a file that contains the list of all files in the dirname folder (pub in this example), but not the actual files:
 
 ```
-FNAME= '/home/cft/runtime/pub' or FNAME= 'pub'
+FNAME= '/home/cft/runtime/pub'  or FNAME= 'pub'
 ```
 
 FNAME=&lt;file-symb>filename which transfers all the files referenced in the list file:

@@ -11,7 +11,7 @@
 
 > **Note:**
 >
-> On Unix systems, do not set the profile prior to upgrading. If you are in a session and the profile is set, exit the bash session before running the upgrade.
+> On Unix systems, do not set the profile prior to upgrading. If you are in a session and the profile is set,  exit the bash session before running the upgrade.
 
 ## Procedure
 

@@ -19,17 +19,17 @@ end,halt,keep,start,submit)
             (create:
 send,recv)
             (delete:
-delete\_catalog)
+delete_catalog)
             (read:
-view\_catalog)
+view_catalog)
             (modify:
 resume)
     Command:
           Shut
              create
-          Switch\_log,
+          Switch_log,
              create
-          Switch\_accnt,
+          Switch_accnt,
              create
           Act,
              create
@@ -49,14 +49,14 @@ resume)
 (IDM,PART,SPART,RPART,MODE)
                 create
     Operator:
-            ALL\_PART
+            ALL_PART
 (fname)
                     create,delete,read,modify
-            ALL\_CAT
+            ALL_CAT
 (fname)
                     control(see
 appl), delete, read, modify (resume)
-            ALL\_COM
+            ALL_COM
 (fname)
                     create,
 read, delete

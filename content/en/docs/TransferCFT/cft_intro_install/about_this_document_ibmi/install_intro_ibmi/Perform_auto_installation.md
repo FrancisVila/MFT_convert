@@ -4,11 +4,11 @@
     "weight": "200"
 }1.  Log in with the **CFTINST** user (with \*ALLOBJ special authority).
 2.  Select `1`.
-3.  Install Transfer CFT. The following example installs Transfer CFT with the Central Governance option:
+3.  Install Transfer CFT. The following example installs Transfer CFT  with the Central Governance option:
 
 ## Register with Central Governance
 
-1.  Log in with the {{< TransferCFT/componentlongname >}} user **CFT**.
+1.  Log in with  the {{< TransferCFT/componentlongname >}} user **CFT**.
 2.  Start Copilot.
 
 ```

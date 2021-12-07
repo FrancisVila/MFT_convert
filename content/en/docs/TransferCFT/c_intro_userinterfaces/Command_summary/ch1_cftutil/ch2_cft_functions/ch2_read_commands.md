@@ -7,7 +7,7 @@
 Three read commands are available and described in this section:
 
 -   BEGSELCA: Establishes the selection criteria.
--   GETCAT: Reads a transfer if it meets the BEGSELCA selection criteria.
+-   GETCAT: Reads a transfer if it meets the BEGSELCA  selection criteria.
 -   ENDSELCA: Ends the command series.
 
 ### BEGSELCA command
@@ -66,21 +66,21 @@ FTEMOIN = STR
 
 #### Parameters
 
--   IDA: Character string specifying the selection criteria IDA field.
--   DIRECT: Character string specifying the selection criteria DIRECT field.
--   IDF: Character string specifying the selection criteria IDF field.
--   PART: Character string specifying the selection criteria SHARE field.
--   STATE: Character string specifying the selection criteria STATE field.
--   IDF: Character string specifying the selection criteria IDF field.
+-   IDA: Character string  specifying the selection criteria IDA field.
+-   DIRECT: Character string  specifying the selection criteria DIRECT field.
+-   IDF: Character string  specifying the selection criteria IDF field.
+-   PART: Character string  specifying the selection criteria SHARE field.
+-   STATE: Character string  specifying the selection criteria STATE field.
+-   IDF: Character string  specifying the selection criteria IDF field.
 -   NIDF: Character string specifying the selection criteria NIDF field.
--   MSG: Character string specifying the selection criteria MSG field.
+-   MSG: Character string  specifying the selection criteria MSG field.
 -   SUSER: Character string specifying the selection criteria SUSER field.
 -   RUSER: Character string specifying the selection criteria RUSER field.
 -   SAPPL: Character string specifying the selection criteria Sappl field.
 -   SPART: Character string specifying the selection criteria SPART field.
 -   RAPPL: Character string specifying the selection criteria RAPPL field.
 -   RPART: Character string specifying the selection criteria RPART field.
--   PARM: Character string specifying the criteria for selecting the PARM field.
+-   PARM: Character string  specifying the criteria for selecting the PARM field.
 -   STATED: Character string specifying the selection criteria field STATED field
 -   FRECFM: Character string specifying the selection criteria field FRECFM field
 -   NRECFM: Character string specifying the selection criteria field NRECFM field
@@ -106,8 +106,8 @@ FTEMOIN = STR
 -   FCAR: Character string specifying the selection criteria for the FCAR
 -   NCAR: Character string specifying the selection criteria for the NCAR
 -   ECAR: Character string specifying the selection criteria for the ECAR
--   FTIME Character string specifying the selection criteria for the FDATE
--   FDATE Character string specifying the selection criteria for the FTIME
+-   FTIME  Character string specifying the selection criteria for the FDATE
+-   FDATE  Character string specifying the selection criteria for the FTIME
 -   FRECFM character identifying the value of the parameter F/V/U
 -   NRECFM character identifying the value of the parameter F/V/U
 -   FTEMOIN: String specifying the name of the comparison file.
@@ -116,9 +116,9 @@ FTEMOIN = STR
 
 #### Syntax
 
-No parameters are supplied for this command. The GETCAT function searches the catalog record corresponding to the selection criteria indicated by the BEGSELCA command parameters. If a record matches the criteria, predefined variables are initialized and can be exploited.
+No parameters are supplied for this command. The GETCAT function searches the catalog record corresponding to the selection criteria indicated by the  BEGSELCA command parameters. If a record matches the criteria, predefined variables are initialized and can be exploited.
 
-The predefined variable \_CMDRET is always 0 for OK, and cannot be tested to see if the read was successful or not. In cases where there are additional transfers that meets the criteria, the variables \_CAT\_PART, and \_CAT\_IDT \_CAT\_IDTU have the keyword value of NIL.
+The predefined variable \_CMDRET  is always 0 for OK, and cannot be tested to see if the read was successful or not. In cases where there are additional transfers that meets the criteria, the variables \_CAT\_PART, and \_CAT\_IDT \_CAT\_IDTU have the keyword value of NIL.
 
 This enables you to compare the value of the partner string NIL to see if the read action is complete. See the ENDSELCA example in the following section.
 
@@ -135,9 +135,9 @@ LONG NAME = VAR, INIT = 0
 LONG NAME = CMP, INIT = 0
 CHAR NAME = STRNIL , SIZE = 10, INIT = NIL
 CHAR NAME = PART , SIZE = 10
-/\* set the variable \_ECHO to 0 to exclude messages related to WHILE and IF \*/
+/\* set the variable _ECHO to 0 to exclude messages related to  WHILE and IF \*/
 /\* to customize the display. \*/
-\_MOV NAME=\_ECHO,VALUE=0
+_MOV NAME=_ECHO,VALUE=0
 BEGSELCA DIRECT=SEND,DIAGI=406
 PRINT MSG='Partner DTSA File Transfer Diags Appli. '
 PRINT MSG=' Id. Id. CFT Protocol Id. '
@@ -150,13 +150,13 @@ Deleted: 1.3.
 Deleted: 1.3.1.
 Deleted:
 13
-\_STRCPY NAME=PART, STR=%\_CAT\_PART%
-\_STRCMP NAME=PART, STR=STRNIL ,RC=CMP
+_STRCPY NAME=PART, STR=%_CAT_PART%
+_STRCMP NAME=PART, STR=STRNIL ,RC=CMP
 IF NAME=CMP, VALUE=0, TYPE=EQU
 BRKWHILE
 ENDIF
-PRINT MSG='%\[-8.8\]\_CAT\_PART% %\_CAT\_DIRECT%%\_CAT\_TYP%%\_CAT\_STATE% %\[-
-8.8\]\_CAT\_IDF% %\_CAT\_IDT% %\_CAT\_DIAGI% %\_CAT\_DIAGP% %\_CAT\_IDA%'
+PRINT MSG='%[-8.8]_CAT_PART% %_CAT_DIRECT%%_CAT_TYP%%_CAT_STATE% %[-
+8.8]_CAT_IDF% %_CAT_IDT% %_CAT_DIAGI% %_CAT_DIAGP% %_CAT_IDA%'
 ENDWHILE
 ENDSELCA
 EXIT
@@ -182,29 +182,29 @@ MQUERY OBJECT = STR,
 -   CONTENT: Possible values ​​are FUL / BRIEF.
 -   NAME: Possible values ​​are:
     -   CAT: Lists  the catalog cache.
-    -   COMMAND: Lists  the command cache.
+    -   COMMAND: Lists  the  command cache.
 
 #### Example
 
 ```
 MQUERY NAME=CAT,CONTENT=FULL
-CFTI24I =========================== TRANSFERS ==================================
-CFTI24I pri minTime minDate reqTime reqDate cat\_blk part
-CFTI24I ======================================================================
-CFTI24I Transfers\_Non\_Ready : 3
-CFTI24I 128 11:52:27 TODAY 11:50:27 TODAY 180 LOOP
-CFTI24I 128 12:15:50 TODAY 11:50:50 TODAY 182 LOOP
-CFTI24I 128 12:40:41 TODAY 11:50:41 TODAY 181 LOOP
-CFTI24I Transfers\_Ready : 0 ( 0 Partners )
-CFTI24I Transfers\_Time\_\_Locked : 0 ( 0 Partners )
-CFTI24I Transfers\_State\_Locked : 0 ( 0 Partners )
-CFTI24I ======================== PARTNERS =====================================
-CFTI24I name count state locked diag diagp minTime minDate
-CFTI24I ======================================================================
-CFTI24I Partners : 1
-CFTI24I LOOP 3 NRDY 0 0
-CFTI24I Partners\_Ready : 0
-CFTI24I Partners\_Time\_\_Locked : 0
-CFTI24I Partners\_State\_Locked : 0
-MQUERY Treated for USER userid
+CFTI24I  =========================== TRANSFERS ==================================
+CFTI24I  pri    minTime    minDate    reqTime    reqDate    cat_blk part
+CFTI24I  ======================================================================
+CFTI24I  Transfers_Non_Ready    : 3
+CFTI24I  128   11:52:27      TODAY   11:50:27      TODAY 180 LOOP
+CFTI24I  128   12:15:50      TODAY   11:50:50      TODAY 182 LOOP
+CFTI24I  128   12:40:41      TODAY   11:50:41      TODAY 181 LOOP
+CFTI24I  Transfers_Ready        : 0 ( 0 Partners )
+CFTI24I  Transfers_Time__Locked : 0 ( 0 Partners )
+CFTI24I  Transfers_State_Locked : 0 ( 0 Partners )
+CFTI24I  ======================== PARTNERS =====================================
+CFTI24I  name     count state locked diag    diagp    minTime    minDate
+CFTI24I  ======================================================================
+CFTI24I  Partners               : 1
+CFTI24I  LOOP         3  NRDY      0    0
+CFTI24I  Partners_Ready         : 0
+CFTI24I  Partners_Time__Locked  : 0
+CFTI24I  Partners_State_Locked  : 0
+MQUERY  Treated for USER userid
 ```

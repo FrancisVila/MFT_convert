@@ -49,15 +49,15 @@ The retry and rename (R) option falls between the (T) and (Y) phase.
 
 ## Queuing
 
-If you have several transfers with RETRYRENAME set for the same FNAME in a single flow, the transfers are queued based on their date/time of the end-of-transfer (DATEE, TIMEE).
+If  you have several transfers with RETRYRENAME set for the same FNAME in a single flow, the transfers are queued based on their date/time of the end-of-transfer (DATEE, TIMEE).
 
 ## Example of spooling and renaming files
 
 This example combines the use of the serialization with the rename/retry mechanism to ensure a spooling of file transfers without overwriting an un-consumed file at the destination.
 
--   Our user defines a transfer flow, for example `DailyReport,`based on a transfer state (acknowledgement) using the serialization option.
+-   Our user defines  a transfer flow, for example `DailyReport,`based on a transfer state (acknowledgement) using the serialization option.
 -   Several applications generate files that use the same flow, `DailyReport`; these file transfer requests are queued.
--   The source Transfer CFT for the flow executes the first file transfer request, `Report1`.  
+-   The  source Transfer CFT for the flow executes the first file transfer request, `Report1`.  
 -   The target Transfer CFT receives `Report1`.
 -   Post-processing makes the file available to a target application, and immediately sends an acknowledgment to the source. This enables the next file transfer in the queue to be executed.
 -   Upon receiving the acknowledgement, the source Transfer CFT executes the next transfer request. However:
@@ -66,7 +66,7 @@ This example combines the use of the serialization with the rename/retry mechani
 >
 > <!-- -->
 >
-> -   If the file still exists on the target Transfer CFT, then the next new file transfer (`Report2`) enters a retry cycle while it waits for the previous file to be deleted (moved/copied).
+> -   If the file still exists on the target Transfer CFT, then the next new  file transfer (`Report2`) enters a retry cycle while it waits for the previous file to be deleted (moved/copied).
 
 ### Example configuration
 
@@ -87,12 +87,12 @@ myreport.cmd
 
 #### Define post-processing
 
-Post-processing should include an acknowledgement so that the next queued transfer request is triggered. Additionally, your post-processing script can include, for example, a message to indicate that the file has been received and renamed, and is ready to be consumed by the target application.
+Post-processing should include an acknowledgement so that the next queued transfer request is triggered. Additionally, your post-processing script can  include, for example, a message to indicate that the file has been received and renamed, and is ready to be consumed by the target application.  
 
 ```
 end part=&part,idt=&idt,istate=yes,diagc='READY TO CONSUME'
 send part=&part,idm=ACK,idt=&idt,type=reply,msg='&fname ready to consume by target application'
-...\[at this point the file is consumed by the target application\]...
+...[at this point the file is consumed by the target application]...
 end part=&part,idt=&idt,istate=no,diagc='FILE CONSUMED'
 ```
 
@@ -109,27 +109,27 @@ send part=paris, idf=dailyreport, ida=report3
 Sender side
 
 ```
-17/01/26 18:01:43.31 CFTR12I SEND Treated for USER \\dupont <IDTU=A000002C PART=PARIS IDF=DAILYREPORT>
-17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \\dupont <IDTU=A000002D PART=PARIS IDF=DAILYREPORT>
-17/01/26 18:01:43.37 CFTR12I SEND Treated for USER \\dupont <IDTU=A000002E PART=PARIS IDF=DAILYREPORT>
-17/01/26 18:01:43.43 CFTT57I Requester transfer started <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014 >
-17/01/26 18:01:43.43 CFTT58I Requester transfer ended <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014>
-17/01/26 18:01:44.38 CFTT59I Server reply transferred <IDTU=00000000 PART=PARIS IDM=DAILYREPORT IDT=A2618014>
-17/01/26 18:01:44.40 CFTT57I Requester transfer started <IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 >
+17/01/26 18:01:43.31  CFTR12I SEND Treated for USER \\dupont  <IDTU=A000002C PART=PARIS IDF=DAILYREPORT>
+17/01/26 18:01:43.37  CFTR12I SEND Treated for USER \\dupont  <IDTU=A000002D PART=PARIS IDF=DAILYREPORT>
+17/01/26 18:01:43.37  CFTR12I SEND Treated for USER \\dupont  <IDTU=A000002E PART=PARIS IDF=DAILYREPORT>
+17/01/26 18:01:43.43  CFTT57I Requester transfer started   <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014 >
+17/01/26 18:01:43.43  CFTT58I Requester transfer ended     <IDTU=A000002C PART=PARIS IDF=DAILYREPORT IDT=A2618014>
+17/01/26 18:01:44.38  CFTT59I Server    reply    transferred <IDTU=00000000 PART=PARIS IDM=DAILYREPORT IDT=A2618014>
+17/01/26 18:01:44.40  CFTT57I Requester transfer started   <IDTU=A000002D PART=PARIS IDF=DAILYREPORT IDT=A2618015 >
 ... (etc. for each transfer)
 ```
 
 Receiver side
 
 ```
-17/01/26 18:01:43.43 CFTT57I Server transfer started <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 >
-17/01/26 18:01:43.43 CFTT58I Server transfer ended <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014>
-17/01/26 18:01:43.43 CFTT88I+<IDTU=A000002C WORKINGDIR= WFNAME=pub/FTEST NBC=7104>
-17/01/27 18:01:43.43 CFTF33I Rename to FNAME=pub/myreport done <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT= A2618014>
-17/01/26 18:01:43.45 CFTS03I \_ exec/myreport.cmd executed <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014> (0.013008 sec)
-17/01/26 18:01:44.37 CFTR12I END Treated for USER \\dupont : DIAGC value was "" and is now "READY TO CONSUME"
-17/01/26 18:01:44.38 CFTH60I reply transferred <PART=NEWYORK IDS=00005 IDM=DAILYREPORT NIDT=2618014>
-17/01/26 18:01:44.40 CFTT57I Server transfer started <IDTU=A000002H PART=NEWYORK IDF=DAILYREPORT IDT=A2618015 >
+17/01/26 18:01:43.43  CFTT57I Server    transfer started   <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014 >
+17/01/26 18:01:43.43  CFTT58I Server    transfer ended     <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014>
+17/01/26 18:01:43.43  CFTT88I+<IDTU=A000002C WORKINGDIR= WFNAME=pub/FTEST NBC=7104>
+17/01/27 18:01:43.43  CFTF33I Rename to FNAME=pub/myreport done <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT= A2618014>
+17/01/26 18:01:43.45  CFTS03I _ exec/myreport.cmd executed <IDTU=A000002F PART=NEWYORK IDF=DAILYREPORT IDT=A2618014> (0.013008 sec)
+17/01/26 18:01:44.37  CFTR12I END Treated for USER \\dupont : DIAGC value was "" and is now "READY TO CONSUME"
+17/01/26 18:01:44.38  CFTH60I reply  transferred <PART=NEWYORK IDS=00005 IDM=DAILYREPORT NIDT=2618014>
+17/01/26 18:01:44.40  CFTT57I Server    transfer started   <IDTU=A000002H PART=NEWYORK IDF=DAILYREPORT IDT=A2618015 >
 ```
 
 ## Troubleshooting

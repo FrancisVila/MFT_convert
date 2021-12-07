@@ -15,7 +15,7 @@ The characteristics of a receive transfer request can be specified in the RECV c
 When receiving files you can define parameters related to the following categories.
 
 Free parameters
-for the {{< TransferCFT/componentshortname  >}} user, such as adding comments to the transfer:
+for the  {{< TransferCFT/componentshortname  >}} user, such as adding comments to the transfer:
 
 -   Sent to the
     sender

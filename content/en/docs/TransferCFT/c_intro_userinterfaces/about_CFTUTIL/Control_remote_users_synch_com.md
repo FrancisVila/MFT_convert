@@ -39,14 +39,14 @@ Default
 
 Description
 
-cft.server.cftcoms.authentication\_enable
+cft.server.cftcoms.authentication_enable
 No
 Authentication for synchronous communication:
 
 -   Yes: Enable password authentication
 -   No: Disable authentication
 
-cft.server.authentication\_method
+cft.server.authentication_method
 None
 Authentication method can be:
 

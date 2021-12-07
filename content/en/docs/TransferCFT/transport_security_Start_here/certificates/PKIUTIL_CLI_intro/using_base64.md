@@ -16,15 +16,15 @@ For instance, with the following base:
 
 ```
 Certificates:
-Id.   Root  iNum  T S C K E          Exp.Date   Delivered to    Delivered by
+Id.            Root          iNum  T S C K E          Exp.Date     Delivered to     Delivered by
 ------------ ------------ ---- - - - - - ---------- ------------- ------------
-INTER  ROOT        I A x                                22/07/2029   2k\_l1\_ca       2k\_root
-ROOT    ROOT      R A x                  22/07/2029   2k\_root        2k\_root
-USER   ROOT        U A x x                             22/07/2029   2k\_l1\_user1    2k\_root
+INTER         ROOT                  I A x                                    22/07/2029   2k_l1_ca           2k_root
+ROOT            ROOT                 R A x                     22/07/2029   2k_root              2k_root
+USER         ROOT                     U A x x                               22/07/2029   2k_l1_user1      2k_root
 Keys:
-Id.                             S K Bits
+Id.                                                          S K Bits
 -------------------------------- - - ----
-PRIV                            A x 2048
+PRIV                                                       A x 2048
 ```
 
 By default, PKIEXT uses INAME/IKNAME to create the PKICER/PKIKEY objects:

@@ -89,7 +89,7 @@ parameter (default value).</p>         </td>
       </tr>
       <tr>
          <td><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/scope">SCOPE</a>         </td>
-         <td>Scope &lt;PARENT&gt; ('PARENT','ALL','CHILDREN')         </td>
+         <td>Scope &lt;PARENT&gt;  ('PARENT','ALL','CHILDREN')         </td>
       </tr>
       <tr>
          <td><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a> </p>         </td>

@@ -10,14 +10,14 @@ To enable the heartbeat feature, check that the following [unified configuration
 
 -   **sentinel.heartbeat.enable = YES**
 -   sentinel.heartbeat.periodicity = 300
--   sentinel.heartbeat.script = the installed value points to the script by default
--   **sentinel.xfb.enable = YES**
--   sentinel.trkipaddr = sentinel.server.address
--   sentinel.trkipport = Sentinel.qlt/auto.port value (default = 1305)  
+-   sentinel.heartbeat.script =  the installed  value points to the script by default
+-   **sentinel.xfb.enable  = YES**
+-   sentinel.trkipaddr                  = sentinel.server.address
+-   sentinel.trkipport          = Sentinel.qlt/auto.port value (default = 1305)  
 
 Example
 
-In Windows this would enable the parameter to activate Heartbeat functioning.
+In Windows  this would enable the parameter to activate Heartbeat functioning.
 
 ```
 cftutil uconfset id=sentinel.xfb.enable, value=yes

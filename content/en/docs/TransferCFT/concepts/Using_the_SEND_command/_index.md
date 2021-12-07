@@ -21,7 +21,7 @@ This section describes how to use the SEND command to perform a file transfer. I
 
 You can perform a basic SEND command by specifying only the partner. In this case, the IDF (model file) in the partner definition is used by default. If the partner definition does not include an IDF, the global default model file value is used.
 
-In this example, the `store1 `partner values including the `dailysales `(IDF) are used.
+In this example,  the `store1 `partner values including the `dailysales `(IDF) are used.
 
 ```
 cftpart id=store1, idf=dailysales
@@ -32,7 +32,7 @@ send part=store1
 >
 > When using Central Governance, be sure to use a SEND command syntax that includes an IDF corresponding to a flow created in Central Governance.
 
-### Override the model file default values
+### Override the  model file default values
 
 You can create your own model files to use with an existing partner. When specified in the send command, the new model file overrides the partner and global default model file value.
 
@@ -46,7 +46,7 @@ send part=store1, idf=newmodel
 
 ### Override the model file values
 
-Using additional send command parameters, such as the file name, you can override values in the model file.
+Using additional send command parameters, such as the file name, you can override values in the model file.  
 
 ```
 send part=store1, idf=model, fname=newfile
@@ -54,7 +54,7 @@ send part=store1, idf=model, fname=newfile
 
 ### Blocking the override functionality
 
-In some cases you may not want to allow the model file values to be overridden. To block the override functionality set the force parameter to yes. In this example, the fname=oldfile and not newfile is used.
+In some cases you may not want to allow the model file  values to be overridden. To block the override functionality set the force parameter to yes. In this example, the fname=oldfile and not newfile is used.
 
 ```
 cftsend id=newmodel1, fname=oldfile.... force=yes
@@ -101,26 +101,26 @@ send part=store1, idf=newmodel, fname=@reports\*
 Specify the folder name and add the indirection character to send all files that are contained in a folder, where `daily_reports` is a folder.
 
 ```
-send part=store1, idf=newmodel, fname=@daily\_reports
+send part=store1, idf=newmodel, fname=@daily_reports
 ```
 
 #### Use selfname
 
 You can use the `selfname `option to send only certain files from a given folder to a particular partner. Begin by creating a file that lists the specific files to send, where you use only the relative name.
 
-Using the `send `command, include the `selfname `parameter, which is the name of the file you created. You then use the name of the folder containing the files (preceded by the indirection character) as the `fname`.
+Using the `send `command, include the  `selfname `parameter, which is the name of the file you created. You then use the name of the folder containing the files (preceded by the indirection character) as the `fname`.
 
 **Example**
 
 In this example, the `report_folder` contains the following files A1, A2, A3, B1, and B2, and the `report_limited` file lists A1 and B1.
 
 ```
-send part=store1, idf=newmodel, selfname=report\_limited, fname=#report\_folder
+send part=store1, idf=newmodel, selfname=report_limited, fname=#report_folder
 ```
 
 Using the syntax in this example, only the files A1 and B1 are transferred.
 
-See [SELFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/selfname).
+  See [SELFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/selfname).
 
 ### Send a list of the folder contents
 
@@ -221,7 +221,7 @@ send part=store1, idf=endofdayresults, fname=@myfolder/\*, wfname=results.zip
 ```
 
 See also [WFNAME](../../c_intro_userinterfaces/command_summary/parameter_intro/wfname).
-&lt;/p>
+        &lt;/p>
 
 > **Note:**
 >
@@ -299,7 +299,7 @@ send part=store1, idf=model, ruser=guest, rpasswd=guestpassword
 
 ### Wait for a synchronous transfer to complete before continuing
 
-After configuring the [synchronous communication](../../app_integration_intro/synch_comm_tcpip_intro), add the wstate and wtimeout to the send command.
+After configuring the  [synchronous communication](../../app_integration_intro/synch_comm_tcpip_intro), add the wstate and wtimeout to the send command.
 
 ```
 config type=com, mediacom=tcpip, fname=xhttp://localhost:1765
@@ -311,7 +311,7 @@ send part=store1, idf=model, wstates=TX, wtimeout=120
 Use the following parameters to further refine the send command and provide more information to the remote partner concerning a transfer
 
 -   parm = a free parameter that allows you to add information to send with your transfer (512 characters)
--   sappl, rappl = send information about the applications sending the transfer
+-   sappl, rappl = send information about the applications  sending the transfer
 -   suser, ruser = send information related to the transfer users
 
 ```
@@ -323,7 +323,7 @@ send part=store1, idf=model, parm='contains all daily reports'
 When FACTION=ARCHIVE and ARCHIVEFNAME is set, the source file is moved to the file name specified in the ARCHIVEFNAME parameter when the transfer is completed.
 
 ```
-send part=store1, idf=model, faction=archive, archivefname=&FNAME\_&FDATE\_&IDTU
+send part=store1, idf=model, faction=archive, archivefname=&FNAME_&FDATE_&IDTU
 ```
 
 Limitations

@@ -20,7 +20,7 @@ Use this field to define the file access control. You can use the UserCtrl param
 > **Note:**
 >
 > Caution  
-> Windows only - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO, you cannot access files on a local or remote disk under another account.
+> Windows only - You cannot use a UNC or mapped drive (as opposed to files on a local disk) when USERCTRL=YES. Note though that even when USERCTRL=NO,  you cannot access files on a local or remote disk under another account.
 
 -   For details in UNIX, please see <a href="#Manually" class="MCXref xref">Enable the file user rights (USERCTRL)</a>
 -   For details in Windows, please see <a href="#Enable3" class="MCXref xref">Enable the file user rights (USERCTRL)</a>

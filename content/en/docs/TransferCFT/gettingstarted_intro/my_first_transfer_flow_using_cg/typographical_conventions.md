@@ -3,7 +3,7 @@
     "linkTitle": "Typographical conventions",
     "weight": "200"
 }The typographical conventions specify the
-syntax to use in {{< TransferCFT/componentshortname  >}} commands, the
+syntax to use in  {{< TransferCFT/componentshortname  >}} commands, the
 parameters and their values. These rules apply equally for any additional
 parameter information, or information pertaining to the operating system
 or the transfer protocols.
@@ -27,8 +27,8 @@ The description of each command is generally organized in parts:
 Example
 
 ```
-CFTFILE \[MODE = {CREATE
-| DELETE},\]
+CFTFILE [MODE = {CREATE
+| DELETE},]
 FNAME = filename,
 TYPE = {PARM
 | PART | CAT | LOG | ACCNT
@@ -88,8 +88,8 @@ parameter is mandatory. Its value corresponds to a filename.
 Example
 
 ```
-CFTSEND \[NFNAME =
-filename\]       PeSIT
+CFTSEND [NFNAME =
+filename]       PeSIT
 E CFT/CFT
 ```
 
@@ -103,7 +103,7 @@ parameter is:
     \[ \]
 -   Reserved for transfer
     cases in PeSIT E
-    profile between two {{< TransferCFT/componentshortname >}}s
+    profile between two  {{< TransferCFT/componentshortname >}}s
 
 <span id="Parameter_value_notation_conventions"></span>
 
@@ -164,15 +164,15 @@ Example
 CFTUTIL help cmd=cftsend, content=detail
  
 COMMAND CFTSEND USAGE
- MODE STRING max\_length=7 Action to do in the parameter or partner base <REPLACE>
+ MODE              STRING max_length=7                           Action to do in the parameter or partner base <REPLACE>
  'CREATE'
 
    ...
- PRESTATE **STRING** max\_length=0 The transfer phase step as it enters the A phase < > (' ','DISP','HOLD')
+ PRESTATE          **STRING** max_length=0                           The transfer phase step as it enters the A phase < >  (' ','DISP','HOLD')
    ...
- RAPPL **STRING or "String"** max\_length=48 Identifier of the file receiver application
+ RAPPL             **STRING or "String"** max_length=48              Identifier of the file receiver application
   ...
- RPASSWD **String** max\_length=32 Password for the user who is receiving the file
+ RPASSWD           **String** max_length=32                          Password for the user who is receiving the file
 
 ```
 
@@ -219,7 +219,7 @@ In the parameter syntax listings, values that are OS specific indicated
 as follows: OS
 
 Example: ACCID
-= n                              OS
+=  n                              OS
 
 In the detailed description of a parameter, the operating system(s)
 for which this parameter is pertinent is (are) indicated in detail, for
@@ -228,13 +228,13 @@ the operating system concerned.
 Example: ACCID
 =n           
                            
-MVS
+  MVS
 
 The default value of a parameter may differ from one system to another;
 this is indicated as follows: Dft: OS
 
 Example: \[FCODE    
-= {BINARY | EBCDIC | ASCII}          Dft:
+=  {BINARY | EBCDIC | ASCII}          Dft:
 OS
 
 <span id="Protocol_dependent_parameters"></span>
@@ -249,7 +249,7 @@ Example
 \[NSPACE    
 = n,\]               PROTOCOL
 
-In the parameter description, the protocol concerned is
+In the  parameter description, the protocol concerned is
 indicated explicitly. This notation is used, for example, in the following
 cases:
 
@@ -268,7 +268,7 @@ Example
 \[NSPASSW = string\]  
 string8     
 PeSIT  
-string8       ODETTE  
+string8       ODETTE        
 string22
 
 The default value of a parameter may differ from one protocol to another;

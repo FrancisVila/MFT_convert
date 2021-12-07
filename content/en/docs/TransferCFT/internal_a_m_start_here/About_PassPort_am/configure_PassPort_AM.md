@@ -11,7 +11,7 @@
 To configure the PassPort AM connection, set the UCONF parameters described
 in this section. From
 the **Administration** screen in the
-graphical user interface, access the *Unified Configuration* window. Double-click in the <span style="font-weight: normal; font-style: italic;">Unified
+graphical user interface,  access the *Unified Configuration* window. Double-click in the <span style="font-weight: normal; font-style: italic;">Unified
 Configuration</span> window to begin editing parameters.
 
 1.  Define the connection to the PassPort AM server using the UCONF parameters in the following tables. You must define the parameters in the order listed.

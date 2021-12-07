@@ -75,37 +75,37 @@ Variable
 UserID
 Action
 START
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
 Control
 HALT
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
 Control
 KEEP
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
 Control
 END
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
 Control
 SUBMIT
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
 Control
 DELETE
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
@@ -139,14 +139,14 @@ Cmduser
 Create
  
 SWITCH LOG
-SWT\_LOG
+SWT_LOG
 cmdecls
  
 Cmduser
 Create
  
 SWITCH  ACCOUNT
-SWT\_ACNT
+SWT_ACNT
 cmdecls
  
 Cmduser

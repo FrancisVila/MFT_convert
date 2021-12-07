@@ -40,9 +40,9 @@ Others who may find parts of this guide useful include network or systems admini
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
--   {{< TransferCFT/componentshortname >}} Release Notes
+-   {{< TransferCFT/componentshortname >}}   Release Notes
 -   {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
 
 ## Support services
 
-The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.
+The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit  [support.axway.com](https://support.axway.com/) and click **Contact Axway Support**.

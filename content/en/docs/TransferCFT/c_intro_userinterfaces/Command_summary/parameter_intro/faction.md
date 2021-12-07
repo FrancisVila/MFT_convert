@@ -48,12 +48,12 @@ Action on a file before a receive transfer except when using RENAME or RETRYRENA
 If a receiver file with the same name already exists, <span class="mc-variable axway_variables.Component_Long_Name variable">Transfer CFT</span> performs
 one of the following actions:
 
--   <span style="font-weight: bold;">VERIFY</span>: checks that the file is empty before the transfer occurs
+-   <span style="font-weight: bold;">VERIFY</span>:  checks that the file is empty before the transfer occurs
 -   <span style="font-weight: bold;">DELETE</span>:
     deletes the file before the transfer occurs
 -   <span style="font-weight: bold;">ERASE</span>:
     erases the contents of the file before the transfer occurs
--   **RENAME**: replaces the existing FNAME file after the transfer completes by renaming the WFNAME file (*Unix only*)
+-   **RENAME**:  replaces the existing FNAME file after the transfer completes by renaming the WFNAME file (*Unix only*)
 -   **RETRYRENAME**: Renames the file on transfer completion in the post-processing phase, and includes a configurable retry mechanism. See also [Post-transfer file renaming](../../../../app_integration_intro/spoolout).
 
 Requirements when using RENAME or RETRYRENAME:

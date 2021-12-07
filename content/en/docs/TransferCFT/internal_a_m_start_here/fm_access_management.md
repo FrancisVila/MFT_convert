@@ -10,14 +10,14 @@ If you have opted to use the {{< TransferCFT/flowmanager  >}} for {{< TransferCF
 
 1.  A user logs in via the {{< TransferCFT/transfercftname >}} UI, CFTUTIL, or other.
 2.  A login request is sent to {{< TransferCFT/flowmanager >}}.
-3.  If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.
+3.  If the login is successful, {{< TransferCFT/flowmanager >}} returns the list of roles for the user.  
 4.  The user login is complete. Transfer CFT then stores these roles in the cache and applies them accordingly. The information about this user is stored in the cache and is only updated when a new login is performed.
 
 > **Note:**
 >
 > All role and permission definitions are stored in CFTPARM.
 
-However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
+However, if you are an `am.superuser` user, {{< TransferCFT/transfercftname  >}} does not check your access  for resources, and permissions are granted unconditionally. Additionally, it is useful to note that if you define a service account  during {{< TransferCFT/componentlongname  >}} installation, this user is automatically added to the UCONF `am.superuser` parameter's list.
 
 See also, {{< TransferCFT/flowmanager  >}} *Security Guide &gt;*[Predefined roles](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_roles.html) and [Predefined privileges](https://docs.axway.com/bundle/FlowManager_20_allOS_en_HTML5/page/predefined_privileges.html) (requires account login).
 
@@ -37,9 +37,9 @@ Conversely, you can create roles and privileges locally in Transfer CFT, as you 
 
 ### Using CFTROLE
 
-A role is a general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
+A role is a  general profile that can be associated with a user. A role is based on one or more privileges, and a privilege is based on a resource. There are two types of roles: predefined and user-defined. Predefined roles are available by default to assign to users.
 
-You can assign users to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
+You can assign users  to one or more roles. Typically, users with multiple roles have more privileges than users with fewer roles.
 
 Examples of roles can be ADMINISTRATOR, PARTNER MANAGER, IT MANAGER, and so on.
 
@@ -56,18 +56,18 @@ Example of CFTROLE in a configuration file:
 ```
 CFTROLE      ID          = 'Application',
              COMMENT     = 'My comments',
-             PRIVS       = ( 'SERVICE:UI\_CONNECT',
+             PRIVS       = ( 'SERVICE:UI_CONNECT',
                              'MYPRIV1',
-                             'CONFIGURATION:CFTCOM\_VIEW',
-                             'CONFIGURATION:CFTPARM\_VIEW',
-                             'CONFIGURATION:CFTPART\_VIEW',
-                             'CONFIGURATION:CFTDEST\_VIEW',
-                             'CONFIGURATION:CFTSEND\_VIEW',
-                             'CONFIGURATION:CFTRECV\_VIEW',
-                             'CONFIGURATION:CFTLOG\_VIEW',
-                             'FILTER:CATALOG\_ALL',
-                             'FILTER:LOG\_ALL',
-                             'FILE\_VIEW'),
+                             'CONFIGURATION:CFTCOM_VIEW',
+                             'CONFIGURATION:CFTPARM_VIEW',
+                             'CONFIGURATION:CFTPART_VIEW',
+                             'CONFIGURATION:CFTDEST_VIEW',
+                             'CONFIGURATION:CFTSEND_VIEW',
+                             'CONFIGURATION:CFTRECV_VIEW',
+                             'CONFIGURATION:CFTLOG_VIEW',
+                             'FILTER:CATALOG_ALL',
+                             'FILTER:LOG_ALL',
+                             'FILE_VIEW'),
              ORIGIN      = 'CFTUTIL',
              MODE        = 'REPLACE'
 ```
@@ -106,7 +106,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators  `&&` (AND) and `||` (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"
@@ -124,7 +124,7 @@ Comparison operators include:
 -   &lt;= : inferior or equal to
 -   &gt;= :superior or equal to
 
-### Resource properties in privileges
+### Resource properties  in privileges
 
 The following table is an exhaustive list of all properties for all resources. These properties are available regardless of the action to be checked. However, if a resource has no properties, setting a condition for it has no impact.
 
@@ -192,7 +192,7 @@ The following table is an exhaustive list of all properties for all resources. T
 
 As an Administrator, you want to authorize a user to work only with a given partner and a specific IDF.
 
-This user can preform the following operations only with an IDF name equal to "MYIDF" and the PART name equal to "MYPART":
+This user can preform the following operations  only with an IDF name equal to "MYIDF" and the PART name equal to "MYPART":
 
 -   View transfers (LISTCAT and DISPLAY)
 -   Create transfers
@@ -201,13 +201,13 @@ This user can preform the following operations only with an IDF name equal to "M
 -   Resume transfers
 -   Execute transfers
 
-In this use case, you assign the user a role that references a privilege having these characteristics:
+In this use case, you assign the user  a role that references  a privilege having these characteristics:
 
--   RESOURCE = 'TRANSFER',
--   ACTIONS = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
--   CONDITION = ' IDF=="MYIDF" && PART=="MYPART" '
+-   RESOURCE  = 'TRANSFER',
+-   ACTIONS    = ( ‘VIEW’, ‘CREATE’, ‘DELETE’, ‘CANCEL', 'RESUME', ‘EXECUTE’ ),
+-   CONDITION  = ' IDF=="MYIDF" && PART=="MYPART" '
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration  for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = '',
@@ -215,39 +215,39 @@ CFTROLE      ID          = '',
 /\*           ALIASES     = ( ) ,\*/
              PRIVS       = ( '',
                               'PRIV-CONN-INTERFACES',
-                              'CONFIGURATION:CFTCOM\_VIEW',
-                              'CONFIGURATION:CFTPARM\_VIEW',
-                              'FILTER:CATALOG\_ALL',
-                              'FILTER:LOG\_ALL',
-                              'FILE\_VIEW',
-                              'CONFIGURATION:PKICER\_VIEW',
-                              'CONFIGURATION:PKIENTITY\_VIEW',
-                               'CONFIGURATION:PKIKEY\_VIEW',
-                              'CONFIGURATION:CFTPARM\_VIEW',
-                              'CONFIGURATION:CFTNET\_VIEW',
-                              'CONFIGURATION:CFTPROT\_VIEW',
-                              'CONFIGURATION:CFTSEND\_VIEW',
-                              'CONFIGURATION:CFTSENDI\_VIEW',
-                              'CONFIGURATION:CFTRECV\_VIEW',
-                              'CONFIGURATION:CFTAUTH\_VIEW',
-                              'CONFIGURATION:CFTXLATE\_VIEW',
-                              'CONFIGURATION:CFTLOG\_VIEW',
-                              'CONFIGURATION:CFTCAT\_VIEW',
-                              'CONFIGURATION:CFTCOM\_VIEW',
-                              'CONFIGURATION:CFTACCNT\_VIEW',
-                              'CONFIGURATION:CFTEXIT\_VIEW',
-                              'CONFIGURATION:CFTIDF\_VIEW',
-                              'CONFIGURATION:CFTFOLDER\_VIEW',
-                              'CONFIGURATION:CFTETB\_VIEW',
-                              'CONFIGURATION:CFTAPPL\_VIEW',
-                              'CONFIGURATION:CFTSSL\_VIEW',
-                              'CONFIGURATION:CFTCRON\_VIEW',
-                              'CONFIGURATION:CFTPART\_VIEW',
-                              'CONFIGURATION:CFTDEST\_VIEW',
-                              'CONFIGURATION:CFTTCP\_VIEW',
-                              'CONFIGURATION:CFTUCONF\_VIEW',
-                              'SERVICE:COM\_VIEW',
-                              'AM:RIGHTS\_VIEW\_SELF'),
+                              'CONFIGURATION:CFTCOM_VIEW',
+                              'CONFIGURATION:CFTPARM_VIEW',
+                              'FILTER:CATALOG_ALL',
+                              'FILTER:LOG_ALL',
+                              'FILE_VIEW',
+                              'CONFIGURATION:PKICER_VIEW',
+                              'CONFIGURATION:PKIENTITY_VIEW',
+                               'CONFIGURATION:PKIKEY_VIEW',
+                              'CONFIGURATION:CFTPARM_VIEW',
+                              'CONFIGURATION:CFTNET_VIEW',
+                              'CONFIGURATION:CFTPROT_VIEW',
+                              'CONFIGURATION:CFTSEND_VIEW',
+                              'CONFIGURATION:CFTSENDI_VIEW',
+                              'CONFIGURATION:CFTRECV_VIEW',
+                              'CONFIGURATION:CFTAUTH_VIEW',
+                              'CONFIGURATION:CFTXLATE_VIEW',
+                              'CONFIGURATION:CFTLOG_VIEW',
+                              'CONFIGURATION:CFTCAT_VIEW',
+                              'CONFIGURATION:CFTCOM_VIEW',
+                              'CONFIGURATION:CFTACCNT_VIEW',
+                              'CONFIGURATION:CFTEXIT_VIEW',
+                              'CONFIGURATION:CFTIDF_VIEW',
+                              'CONFIGURATION:CFTFOLDER_VIEW',
+                              'CONFIGURATION:CFTETB_VIEW',
+                              'CONFIGURATION:CFTAPPL_VIEW',
+                              'CONFIGURATION:CFTSSL_VIEW',
+                              'CONFIGURATION:CFTCRON_VIEW',
+                              'CONFIGURATION:CFTPART_VIEW',
+                              'CONFIGURATION:CFTDEST_VIEW',
+                              'CONFIGURATION:CFTTCP_VIEW',
+                              'CONFIGURATION:CFTUCONF_VIEW',
+                              'SERVICE:COM_VIEW',
+                              'AM:RIGHTS_VIEW_SELF'),
               MODE        = 'REPLACE'
  
 CFTPRIV       ID          = '',
@@ -266,65 +266,65 @@ CFTPRIV       ID          = '',
 
 ### Add an administrator role
 
-As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and instance group.
+As an administrator, you want to assign a role equivalent to classic 'Administrator' role to a user, but I would like to restrict access in the UI (Copilot or CFTUI) to a given Transfer CFT Name or a Group of Transfer CFTs, based on the Transfer CFT instance ID and  instance group.
 
 In this use case, you assign the user role that refers to a privilege having these characteristics:
 
--   RESOURCE = SERVICE:UI,
--   ACTIONS = ( 'CONNECT' ),
--   CONDITION = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
+-   RESOURCE  = SERVICE:UI,
+-   ACTIONS    = ( 'CONNECT'  ),
+-   CONDITION  = ' GROUP=="PRODUCTION" && ID~=''CFT-PROD-ITEM\*'' '
 
 A user with this privilege can only connect to a Transfer CFT server whose UCONF `cft.instance_group` value is set to PRODUCTION, and whose `cft.instance_id` value begins with CFT-PROD-ITEM.
 
-The following is an example of the {{< TransferCFT/transfercftname  >}} configuration for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
+The following is an example of the {{< TransferCFT/transfercftname  >}} configuration  for this use case (the ROLE must exist in {{< TransferCFT/flowmanager  >}}, and be available for required users):
 
 ```
 CFTROLE      ID          = '',
               COMMENT     = 'Administrator role for Production Transfer CFT Windows',
-                              'AM:RIGHTS\_VIEW\_ALL',
-                              'CONFIGURATION:PKICER\_ALL',
-                              'CONFIGURATION:PKIENTITY\_ALL',
-                              'CONFIGURATION:PKIKEY\_ALL',
-                              'CONFIGURATION:CFTPARM\_ALL',
-                              'CONFIGURATION:CFTNET\_ALL',
-                              'CONFIGURATION:CFTPROT\_ALL',
-                              'CONFIGURATION:CFTSEND\_ALL',
-                              'CONFIGURATION:CFTSENDI\_ALL',
-                              'CONFIGURATION:CFTRECV\_ALL',
-                              'CONFIGURATION:CFTAUTH\_ALL',
-                              'CONFIGURATION:CFTXLATE\_ALL',
-                              'CONFIGURATION:CFTLOG\_ALL',
-                              'CONFIGURATION:CFTCAT\_ALL',
-                              'CONFIGURATION:CFTCOM\_ALL',
-                               'CONFIGURATION:CFTACCNT\_ALL',
-                              'CONFIGURATION:CFTEXIT\_ALL',
-                              'CONFIGURATION:CFTIDF\_ALL',
-                              'CONFIGURATION:CFTFOLDER\_ALL',
-                              'CONFIGURATION:CFTETB\_ALL',
-                              'CONFIGURATION:CFTAPPL\_ALL',
-                              'CONFIGURATION:CFTSSL\_ALL',
-                              'CONFIGURATION:CFTCRON\_ALL',
-                              'CONFIGURATION:CFTPART\_ALL',
-                               'CONFIGURATION:CFTDEST\_ALL',
-                              'CONFIGURATION:CFTROLE\_ALL',
-                              'CONFIGURATION:CFTPRIV\_ALL',
-                              'CONFIGURATION:CFTTCP\_ALL',
-                               'CONFIGURATION:CFTUCONF\_ALL',
-                              'SERVICE:CATALOG\_PURGE',
-                              'SERVICE:LOG\_SWITCH',
-                              'SERVICE:ACCOUNT\_SWITCH',
-                              'SERVICE:BATCH\_EXECUTE',
-                               'SERVICE:CFTSRV\_ALL',
-                              'SERVICE:COM\_ALL',
-                              'TRANSFER\_ALL',
-                              'FILTER:CATALOG\_ALL',
-                              'FILTER:LOG\_ALL',
-                              'FILE\_ALL',
-                              'URL\_VIEW',
-                              'COMMAND:EXTRACT\_ALL',
-                              'COMMAND:MQUERY\_ALL',
-                              'COMMAND:TURN\_ALL',
-                              'COMMAND:CFTSUPPORT\_ALL'),
+                              'AM:RIGHTS_VIEW_ALL',
+                              'CONFIGURATION:PKICER_ALL',
+                              'CONFIGURATION:PKIENTITY_ALL',
+                              'CONFIGURATION:PKIKEY_ALL',
+                              'CONFIGURATION:CFTPARM_ALL',
+                              'CONFIGURATION:CFTNET_ALL',
+                              'CONFIGURATION:CFTPROT_ALL',
+                              'CONFIGURATION:CFTSEND_ALL',
+                              'CONFIGURATION:CFTSENDI_ALL',
+                              'CONFIGURATION:CFTRECV_ALL',
+                              'CONFIGURATION:CFTAUTH_ALL',
+                              'CONFIGURATION:CFTXLATE_ALL',
+                              'CONFIGURATION:CFTLOG_ALL',
+                              'CONFIGURATION:CFTCAT_ALL',
+                              'CONFIGURATION:CFTCOM_ALL',
+                               'CONFIGURATION:CFTACCNT_ALL',
+                              'CONFIGURATION:CFTEXIT_ALL',
+                              'CONFIGURATION:CFTIDF_ALL',
+                              'CONFIGURATION:CFTFOLDER_ALL',
+                              'CONFIGURATION:CFTETB_ALL',
+                              'CONFIGURATION:CFTAPPL_ALL',
+                              'CONFIGURATION:CFTSSL_ALL',
+                              'CONFIGURATION:CFTCRON_ALL',
+                              'CONFIGURATION:CFTPART_ALL',
+                               'CONFIGURATION:CFTDEST_ALL',
+                              'CONFIGURATION:CFTROLE_ALL',
+                              'CONFIGURATION:CFTPRIV_ALL',
+                              'CONFIGURATION:CFTTCP_ALL',
+                               'CONFIGURATION:CFTUCONF_ALL',
+                              'SERVICE:CATALOG_PURGE',
+                              'SERVICE:LOG_SWITCH',
+                              'SERVICE:ACCOUNT_SWITCH',
+                              'SERVICE:BATCH_EXECUTE',
+                               'SERVICE:CFTSRV_ALL',
+                              'SERVICE:COM_ALL',
+                              'TRANSFER_ALL',
+                              'FILTER:CATALOG_ALL',
+                              'FILTER:LOG_ALL',
+                              'FILE_ALL',
+                              'URL_VIEW',
+                              'COMMAND:EXTRACT_ALL',
+                              'COMMAND:MQUERY_ALL',
+                              'COMMAND:TURN_ALL',
+                              'COMMAND:CFTSUPPORT_ALL'),
               MODE        = 'REPLACE'
  
 CFTPRIV      ID          = '',

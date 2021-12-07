@@ -72,7 +72,7 @@ Parameter
 
 Explanation
 
-ex\_name
+ex_name
 Address
 of an (512+1) byte area.
 The
@@ -120,7 +120,7 @@ The possible values are:
 ### Example in C
 
 ```
-long **exfini** ( char     \*ex\_name,
+long **exfini** ( char     \*ex_name,
           char    
 \*idf,
           char    

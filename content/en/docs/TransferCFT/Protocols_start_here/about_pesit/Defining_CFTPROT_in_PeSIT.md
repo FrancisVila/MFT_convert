@@ -62,7 +62,7 @@ has been exceeded.
 The DISCTC parameter corresponds to the wait time-out for a response
 to the protocol connection request (FPDU CONNECT).
 
-The DISCTR parameter corresponds to thenetwork disconnection wait
+The DISCTR parameter corresponds to thenetwork disconnection  wait
 time-out of the PeSIT standard. Once the local Transfer CFT has
 sent an abrupt protocol interruption (ABORT FPDU), the partner has this
 time limit to break the network connection. Beyond this time, the local
@@ -72,9 +72,9 @@ Transfer CFT itself sends the network disconnection request.
 
 ### Defining the transfer direction
 
-PeSIT E, CFT/CFT
+PeSIT E,  CFT/CFT
 
-The Transfer CFT extensions together with the E version functionality, provide the possibility
+The Transfer CFT extensions together with the  E version functionality, provide the possibility
 to perform a succession of read and write transfers over the same logical
 connection. The option of reusing a protocol connection to concatenate
 transfers in different directions is defined by the REVERSE parameter.

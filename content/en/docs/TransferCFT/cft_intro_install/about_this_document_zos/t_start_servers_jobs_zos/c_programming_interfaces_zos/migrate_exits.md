@@ -7,11 +7,11 @@
 **Considerations prior to migrating**
 
 -   Is the exit still valid? Could you instead replace it with a new Transfer CFT processing procedure?
--   Is the exit written in assembler? If so, would it be better to use a more accessible language, such as C?
+-   Is the exit written in assembler? If so,  would it be better to use a more accessible language, such as C?
 
 ## Preparation
 
-Use the examples supplied in distribution libraries as a basis for your migration. Each example provides recommendations for compilation and link-edits, as well as adequate settings for CFTEXIT. The body of the exit should not be affected; the updates concern the encapsulation of the entire exit's Prologue and Epilogue (especially in assembler).
+Use the examples supplied in distribution libraries as a basis for your migration. Each example provides recommendations for compilation and link-edits, as well as adequate settings for CFTEXIT. The body of the exit should not be affected; the updates concern the encapsulation of the entire exit's Prologue and Epilogue   (especially in assembler).
 
 > **Note:**
 >

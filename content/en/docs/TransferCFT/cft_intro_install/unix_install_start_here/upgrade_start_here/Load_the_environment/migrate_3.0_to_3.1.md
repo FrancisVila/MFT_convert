@@ -6,7 +6,7 @@
 
 > **Note:**
 >
-> When migrating from 3.0.1 to 3.3.x, you must install SP10 P6 on all Transfer CFTs 3.0.1 that inter-operate with any Transfer CFTs 3.3.x prior to migrating.
+> When migrating from 3.0.1  to 3.3.x,  you must install SP10 P6 on all Transfer CFTs 3.0.1 that inter-operate with any Transfer CFTs 3.3.x prior to migrating.
 
 ## Single node architecture
 
@@ -16,7 +16,7 @@
 
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1.  Load former Transfer CFT 3.0.1 or 3.1.x environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1.  Load former Transfer CFT 3.0.1 or 3.1.x environment.  See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
     ```
     CFTUTIL CFTEXT type=all, fout=cft-extract.conf
@@ -61,7 +61,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
 2.  Export the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_former\_cft>, ofname=catalog\_output.xml
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft>, ofname=catalog_output.xml
     ```
 
 <!-- -->
@@ -69,7 +69,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 2.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_cft >
+    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_cft >
     ```
 
 #### Migrating the communication media files
@@ -77,7 +77,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1.  Load former Transfer CFT 3.0.1 or 3.1.2 environment.
 2.  Export the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX, or $CFTCOM for Windows. Enter:  
     ```
-    CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com\_filename\_former\_cft>, ofname=com\_output.xml
+    CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_former_cft>, ofname=com_output.xml
     ```
 
 <!-- -->
@@ -85,7 +85,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 2.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
     ```
-    CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_cft >
+    CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_cft >
     ```
 
 #### Executables and binaries
@@ -122,7 +122,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 <!-- -->
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
-2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace <pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
+2.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace <pki_database_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
     ```
 3.  `PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’`
 
@@ -130,7 +130,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
     ```
-    PKIUTIL <prefix\_character>pki-extract.conf
+    PKIUTIL <prefix_character>pki-extract.conf
     ```
 
 ### Migrating the runtime environment
@@ -163,4 +163,4 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 
 ## Single-node to multi-node architecture migration
 
-The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named cftcata in multi-node, import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.
+The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named cftcata in multi-node,  import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.

@@ -37,7 +37,7 @@ To submit a Support request, you can do the following:
 
 ## Using cft\_support
 
-The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called **cft-support-&lt;date>(.tar.gz|.zip)**.
+The cft\_support tool collects all of the needed information from the customer's Transfer CFT installation  environment, including the static configuration (PARM/PART), Unified Configuration parameters (UCONF), catalog information, communication media file status (CFTCOM), log files, execution environment (variables), disk space, and so on. This information is then packaged into a archive file called **cft-support-&lt;date>(.tar.gz|.zip)**.
 
 > **Note:**
 >
@@ -47,7 +47,7 @@ The cft\_support tool collects all of the needed information from the customer's
 
 From the Copilot UI, click the ![Debug command icon](/Images/TransferCFT/debug_alt.gif)debug icon. The report is saved in the Transfer CFT runtime directory, after which you are prompted to download the report to your desktop.
 
-### Using command line
+### Using  command line
 
 In command line, enter: `cft_support collect` `[options]`
 
@@ -81,7 +81,7 @@ Collect transfer information related to a given IDF for all transfers in a brief
 
 #### IBM i
 
-The CFTSUPPORT command executes a program located in CFTPGM. This program generates a tar file in the IFS environment that includes information that is necessary for Axway support.
+The CFTSUPPORT command executes a program located in CFTPGM. This program generates a tar file in the IFS environment that includes  information that is necessary for Axway support.
 
 Additionally, two options are available for CFTSUPPORT:
 

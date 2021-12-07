@@ -17,7 +17,7 @@ Functions include:
 
 To help you get started, an Access Management exit sample is delivered in: `$CFTDIRRUNTIME/src/exit/cftexamsmp1.c`
 
-For more information, see [Delivered Access Management exit samples](am_samples).
+For more information, see   [Delivered Access Management exit samples](am_samples).
 
 Related topics
 

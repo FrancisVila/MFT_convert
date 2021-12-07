@@ -4,7 +4,7 @@
     "weight": "110"
 }## Before you start
 
-If you are installing {{< TransferCFT/componentlongname  >}} as part of a managed file transfer solution, you may want to check the installation order and prerequisites. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}} documentation.
+If you are installing {{< TransferCFT/componentlongname  >}} as part of a managed file transfer solution, you may want to check the installation order and prerequisites. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}}  documentation.
 
 If you want to enable {{< TransferCFT/centralgovernancename  >}} during installation, please check that your license includes {{< TransferCFT/centralgovernancename  >}} and that you have the required information, such as the shared secret, to activate connectivity.
 
@@ -77,11 +77,11 @@ You can use the following command to repair the runtime if there was an issue du
 
 ### Using symbolic links
 
-To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
+To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file    (do not use parameters in the command line except the conf-file).
 
 > **Note:**
 >
-> If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
+> If  an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Get help
 

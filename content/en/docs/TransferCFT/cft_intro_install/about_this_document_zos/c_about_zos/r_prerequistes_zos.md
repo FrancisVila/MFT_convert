@@ -14,7 +14,7 @@ You can install Transfer CFT using an IBM supported version of z/OS. Transfer CF
 
 ### Input/output units
 
-Sufficient disk space is required for the Transfer CFT object modules, procedures, and examples.
+Sufficient disk space is required for the Transfer CFT object modules, procedures, and examples.                
 
 ## Software
 
@@ -55,7 +55,7 @@ You must define the OpenMVS (OMVS) segment for each user if they need to access 
 
 ## SMP/E grant user resource permissions
 
-When performing an SMP/E installation, the user performing the installation requires READ access on the RACF CSFSERV CLASS. If the SMP/E CFT JCL "$C10RECV" executes in error,  the user does not have the correct access rights and the following message displays:
+When performing an SMP/E installation, the user performing the installation requires READ access on the RACF CSFSERV CLASS. If the SMP/E CFT JCL "$C10RECV"  executes in error,  the user does not have the correct access rights  and the following message displays:
 
 GIM43501S \*\* THE CALL TO THE CSNBOWH SERVICE FAILED WHEN PROCESSING xxxx.SMPMCS.pax.Z. THE RETURN CODE WAS '00000008'X AND THE REASON CODE WAS '00003E80'X.
 

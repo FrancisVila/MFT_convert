@@ -4,7 +4,7 @@
     "weight": "220"
 }## Manually install or modify installation
 
-The following JCLs are contained in the INSTALL library. Execute the JCLs in the order listed in the following table.
+The following JCLs are contained in the INSTALL library. Execute the JCLs in the order  listed in the following table.
 
 <table>
    <thead>
@@ -26,7 +26,7 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
       <tr>
          <td>2         </td>
          <td><p><a href="../installation_parameters_to_customize">A00CUSTO</a></p>         </td>
-         <td><p>Customize JOBs installation</p>         </td>
+         <td><p>Customize  JOBs installation</p>         </td>
       </tr>
       <tr>
          <td>3         </td>
@@ -40,7 +40,7 @@ The following JCLs are contained in the INSTALL library. Execute the JCLs in the
 <p><em>Optional step</em></p>         </td>
       </tr>
       <tr>
-         <td>After performing Steps 1 -4, you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.         </td>
+         <td>After performing  Steps 1 -4,  you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.         </td>
       </tr>
       <tr>
          <td>5         </td>
@@ -240,8 +240,8 @@ You can use the JCL COPA010 to set up the Transfer CFT Copilot files in USS.
 
 ```
 /home/AXWAY/CFT<version>/wwwroot/applets: #df .
-Mounted on Filesystem Avail/Total Files Status
-/home/AXWAY (xxxxxx.yyyyy.HFSAXWAY) 235680/1872000 4294927912 Available
+Mounted on     Filesystem                Avail/Total    Files      Status
+/home/AXWAY    (xxxxxx.yyyyy.HFSAXWAY)   235680/1872000 4294927912 Available
 ```
 
 Related topics

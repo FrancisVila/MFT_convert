@@ -60,7 +60,7 @@ SAM files are created by SVC99(DYNALLOC). The main options for creating SAM file
 
 DETAILS: z/OS/ESA SPL - Dynamic allocation
 
-This default value can conflict with the installation options or EXITS, and the DF/SMS options.
+This default value can  conflict with the installation options or EXITS, and the DF/SMS options.
 
 The VSAM files are created by dynamic calls to IDCAMS. In this case, the parameter VOLUME is mandatory, unless DF/SMS assumes a default value.
 
@@ -105,7 +105,7 @@ Transfer CFT z/OS creates files compatible with DF/SMS, where:
 
 <!-- -->
 
--   The ACS ROUTINES, in certain cases, must be adapted to the Transfer CFT operating mode
+-   The ACS ROUTINES,  in certain cases, must be adapted to the Transfer CFT operating mode
 
 ## Submit JOBs 
 
@@ -114,7 +114,7 @@ Transfer CFT constructs and submits JOBs from any type of file that can be read 
 If the last card in the JOB is a JCL card beginning with ‘/\*’ or ‘//’, Transfer CFT adds an additional comment card with the following format:
 
 ```
-`//* SUBMITTED BY:jjjjjjjj AT hh:mm:ss, USERID=uuuuuuuu ,CARDS= nnnnnnnn`
+//\* SUBMITTED BY:jjjjjjjj AT hh:mm:ss, USERID=uuuuuuuu ,CARDS= nnnnnnnn
 ```
 
 Where:
@@ -146,6 +146,6 @@ Transfer CFT supports the CFTUTIL SHUT RESTART=YES command. First, a SHUT FAST=Y
 Transfer CFT supports the CFTUTIL RECONFIG TYPE=CAT command, expanding the currently opened catalog with the following limits:
 
 -   Addition of EXTENTS to the current catalog is limited to the initial volume, and its available space.
--   A catalog smaller than 215,000 records (the RECNB parameter of the CFTFILE command (physical records total 248 970), a VSAM file smaller than 4 GBs that cannot be expanded over 4 GBs if it was not defined as VSAM-extended. In this case, you must create a new catalog in VSAM-extended format, and copy the old one to it using the Transfer CFT utility.
+-   A catalog smaller than 215,000 records (the RECNB parameter of the CFTFILE command (physical records  total 248 970), a VSAM file smaller than 4 GBs that cannot be expanded over 4 GBs if it was not defined as VSAM-extended. In this case, you must create a new catalog in VSAM-extended format, and copy the old one to it using the Transfer CFT utility.
 -   Users connected to the catalog must disconnect/reconnect to access the newly created records.
 -   The catalog cache is not expanded, and access to the newly created records will be slower. An ordered SHUTDOWN is suggested to recover the full Transfer CFT performances.

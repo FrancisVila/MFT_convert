@@ -6,7 +6,7 @@
 
 If an issue occurs while performing an installation or an upgrade, check for errors in the following places. Perform these steps before attempting to roll back in the case of an upgrade.
 
-1.  If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log` located in the `axway.installer` directory.
+1.  If you performed an upgrade from a version prior to v3.6, look for errors in the `install.log`  located in the `axway.installer` directory.
 2.  Check for errors in the `install.log` in the `CFT` directory (if this is a new installation or you upgraded from a version that did not use the Axway installer).
 3.  Navigate to the runtime directory and check the `.up `folder contents.
 4.  Again from the runtime directory, check the `copupd `folder contents. This folder is only available after performing a {{< TransferCFT/transfercftname >}} update or upgrade when using {{< TransferCFT/centralgovernancename >}} or {{< TransferCFT/flowmanager >}}. In the `copupd `folder, navigate to the` log > install` file.

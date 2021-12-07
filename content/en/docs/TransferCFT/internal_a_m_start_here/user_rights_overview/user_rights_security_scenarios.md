@@ -2,7 +2,7 @@
     "title": "User rights and privileges use cases",
     "linkTitle": "User rights and privileges use cases",
     "weight": "250"
-}This topic describes how you can add mounting levels of security to your Transfer CFT environment, and features 4 typical user types. In all but the first example, no added security, the user types are defined by Central Governance roles. By adding file and user controls you can add increasing security controls.
+}This topic describes how you can add mounting levels of security to your Transfer CFT  environment, and features 4 typical user types. In all but the first example, no added security, the user types are defined by Central Governance roles. By adding file and user controls you can add increasing security controls.
 
 For more information on roles and privileges in Central Governance, refer to the *Central Governance User Guide*.
 
@@ -19,7 +19,7 @@ In this section:
 
 ## Use case with no security applied
 
-In this use case, there is no security enabled either in Transfer CFT or Central Governance (`am.type=none`). However, normally when using Central Governance with Transfer CFT the default value is set to `am.type=passport`. This results in no control over the transfer owner.
+In this use case, there is no security enabled either in Transfer CFT or Central Governance (`am.type=none`).  However, normally when using Central Governance with Transfer CFT the default value is set to `am.type=passport`. This results in no control over the transfer owner.
 
 <span id="User"></span>
 
@@ -27,7 +27,7 @@ In this use case, there is no security enabled either in Transfer CFT or Central
 
 This section presents example user types, and describes the actions that they can perform given the Central Governance roles and systems rights. Machine1 represents a system with an installed Transfer CFT and user directories.
 
-These scenarios are based on a single {{< TransferCFT/hflongproductname  >}}, **Machine1** in our examples, that is managed by .
+These scenarios are based on a single {{< TransferCFT/hflongproductname  >}},  **Machine1** in our examples, that is managed by .
 
 
 | User type  | CG role(s)  | Machine1 user  | File access  |
@@ -54,11 +54,11 @@ In this security scenario, the central governance roles are the exclusive defini
 > **Note:**
 >
 > Tip  
-> The transfer owner in this scenario is the user that started Transfer CFT. All actions are done by the user that started the Copilot server, pending rights given by the Central Governance roles. This applies to all of the registered Central Governance users. The superuser however can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.
+> The transfer owner in this scenario is the user that started Transfer CFT. All actions are done by the user that started the Copilot server,  pending rights given by the Central Governance roles. This applies to all of the registered Central Governance users. The superuser however  can perform actions only by using CFTUTIL, but not via the Transfer CFT UI.
 
 #### Monitoring Assistant
 
-The help desk cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.
+The help desk cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.  
 
 -   Perform monitoring: YES, but only via a Transfer CFT client (not using Central Governance visibility services)
 -   Submit a transfer: NO
@@ -108,13 +108,13 @@ The following scenario consists of a single {{< TransferCFT/hflongproductname  >
 
 > **Note:**
 >
-> Reminder, when copilot.misc.createprocessasuser=no, the user may be known by Central Governance, though not necessarily known by Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.
+> Reminder, when copilot.misc.createprocessasuser=no, the user may be known by Central Governance, though not necessarily known by Machine1. All actions in  Transfer CFT client are done as if the user was the user who started   server.
 
 USERCTRL is set to YES and file rights are assigned to each specific type of user. Rights depend on user/role type (limitation).
 
 #### Monitoring Assistant
 
-Help desk alone cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.
+Help desk alone cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.  
 
 -   Perform monitoring: YES, but only via a Transfer CFT client (not using CG visibility services)
 -   Submit a transfer: NO
@@ -158,20 +158,20 @@ Using CFTUTIL this user can perform configuration actions and transfers, but can
 
 > **Note:**
 >
-> When copilot.misc.createprocessasuser=no, the user may be known on Central Governance, but not necessarily known on Machine1. All actions in Transfer CFT client are done as if the user was the user who started server.
+> When copilot.misc.createprocessasuser=no, the user may be known on Central Governance, but not necessarily known on Machine1. All actions in  Transfer CFT client are done as if the user was the user who started   server.
 
 <span id="Security3"></span>
 
 ## Security controlled by copilot.misc.createprocessasuser
 
-On top of the previous security steps, additionally you have set copilot.misc.createprocessasuser to YES.
+On top of the previous security steps, additionally you have set copilot.misc.createprocessasuser  to YES.
 
 -   The log in connection is a system check and not a CG check
 -   All actions on files that Copilot can access are performed on behalf of the user connected to Copilot
 
 #### Monitoring Assistant
 
-Help desk alone cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.
+Help desk alone cannot monitor Transfer CFT through Central Governance if they have no other role assigned to them.  
 
 -   Perform monitoring: NO, this user is not defined on Machine1
 -   Submit a transfer: NO

@@ -25,7 +25,7 @@ The automatic activation is only available on UNIX and Windows platforms, and ca
 
 **All OS**<span id="Manual"></span>
 
-This section describes how to manually modify the Transfer CFT configuration to enable Central Governance connectivity in command line if you did not do so during installation.
+This section describes how to  manually modify the Transfer CFT configuration to enable Central Governance connectivity in command line if you did not do so during installation.
 
 All commands in this section are performed using CFTUTIL unless stated otherwise.
 
@@ -46,7 +46,7 @@ Prior to the registration, you must ensure that the JCL CFTMON (`copilot.misc.cf
 
 ### Procedure
 
-All commands in this section are performed using CFTUTIL unless stated otherwise. For details on the UCONF parameters referenced in this section, please see UCONF: Central Governance options.
+All commands in this section are performed using CFTUTIL unless stated otherwise. For details on  the UCONF parameters referenced in this section, please see UCONF: Central Governance options.
 
 #### Disable previously used connectors
 
@@ -68,90 +68,90 @@ uconfset id=pki.type, value=cft
 
 Set the parameters used to identify a Transfer CFT instance. Follow these guidelines, otherwise the registration will fail:
 
--   The length of the `cft.instance_id` value is limited to 24 characters.
+-   The length of the `cft.instance_id`  value is limited to 24 characters.
 -   The address set in `cft.full_hostname` must be reachable from .
 
 ```
-uconfset id=cft.instance\_id, value=<cft\_id>
-uconfset id=cft.instance\_group, value=<cft\_instance\_group>
-uconfset id=cft.full\_hostname, value=<cft\_address>
+uconfset id=cft.instance_id, value=<cft_id>
+uconfset id=cft.instance_group, value=<cft_instance_group>
+uconfset id=cft.full_hostname, value=<cft_address>
 ```
 
 Additionally, if running in a multi-host/multi-node environment, you must set the load balancer address(FQDN or IP address) and port that uses to reach the Transfer CFT (`copilot.general.ssl_serverport`):
 
 ```
-uconfset id=cft.multi\_node.load\_balancer.host, value=<load\_balancer\_address>
+uconfset id=cft.multi_node.load_balancer.host, value=<load_balancer_address>
 uconfset id=`cft.multi_node.load_balancer.port,value=<load_balancer_port>`
 ```
 
 #### Optionally define a proxy server for to {{< TransferCFT/componentlongname  >}} communication
 
-If you opt to use a proxy server for to connect to {{< TransferCFT/componentlongname  >}}, set the following parameters.
+If you opt to use a proxy server for to connect to {{< TransferCFT/componentlongname  >}}, set the following  parameters.
 
 ```
-uconfset id=cg.proxy.in.host, value= <proxy\_address>
+uconfset id=cg.proxy.in.host, value= <proxy_address>
 uconfset id=cg.proxy.in.port`,value= <proxy_port>`
-uconfset id=cg.proxy.in.login, value= <proxy\_login>
+uconfset id=cg.proxy.in.login, value= <proxy_login>
 uconfset id=`cg.proxy.in.password, value= <proxy_login_password>`
 ```
 
 #### Optionally define a proxy server for {{< TransferCFT/componentlongname  >}} to communication
 
-If you opt to use a proxy server for {{< TransferCFT/componentlongname  >}} to connect to , set the following parameters.
+If you opt to use a proxy server for  {{< TransferCFT/componentlongname  >}} to connect to , set the following  parameters.
 
 ```
-uconfset id=cg.proxy.out.host, value= <proxy\_address>
-uconfset id=cg.proxy.out.port,value= <proxy\_port>
-uconfset id=cg.proxy.out.login, value= <proxy\_login>
-uconfset id=cg.proxy.out.password, value= <proxy\_login\_password>
+uconfset id=cg.proxy.out.host, value= <proxy_address>
+uconfset id=cg.proxy.out.port,value= <proxy_port>
+uconfset id=cg.proxy.out.login, value= <proxy_login>
+uconfset id=cg.proxy.out.password, value= <proxy_login_password>
 ```
 
 #### Import the root certificate for the Governance CA 
 
-1.  Download the root Governance CA, which is used to authenticate {{< TransferCFT/centralgovernancename >}}.
-2.  Import this root CA into the PKI database using the PKIUTIL PKICER command.
+1.  Download the root Governance CA, which is used to authenticate  {{< TransferCFT/centralgovernancename >}}.
+2.  Import this root CA  into the PKI database using the PKIUTIL PKICER command.
 3.  Set the `iname `to the root CA path.
-4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that {{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate {{< TransferCFT/centralgovernancename >}}. Using CFTUTIL:
+4.  Define the UCONF variable `cg.ca_cert_id`, which must correspond with the value you set in the previous step. It is required so that {{< TransferCFT/transfercftname >}} knows which certificate to use to authenticate  {{< TransferCFT/centralgovernancename >}}. Using CFTUTIL:
 
 #### Define the parameters used for the  connection
 
 Set  the following parameters that are used to connect to {{< TransferCFT/centralgovernancename  >}}.
 
 ```
-uconfset id=cg.host, value=<cg\_host\_address>
-uconfset id=cg.port, value=<cg\_port>
+uconfset id=cg.host, value=<cg_host_address>
+uconfset id=cg.port, value=<cg_port>
 ```
 
 Set the shared secret that the Central Governance administrator generated and provided.
 
 ```
-uconfset id=cg.shared\_secret, value=<shared\_secret>
+uconfset id=cg.shared_secret, value=<shared_secret>
 ```
 
 #### Optionally define the configuration policy for registration
 
-You may want to automatically assign an existing configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy` to the name of the desired policy.
+You may want to automatically assign an existing configuration policy during the {{< TransferCFT/componentlongname  >}} registration. To do so, set the UCONF parameter `cg.configuration_policy`  to the name of the desired policy.
 
 ```
-uconfset id=cg.configuration\_policy, value=<name\_of\_policy>
+uconfset id=cg.configuration_policy, value=<name_of_policy>
 ```
 
 #### Optionally customize the business certificate Distinguished Name (DN)
 
-To override the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
+To override the business certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal,  set the UCONF parameter cg.certificate.business.csr\_dn to th e custom value. The default is O=Axway,OU=MFT,CN=%uconf:cft.full\_hostname%. Remember to separate tokens by a comma.
 
 ```
-uconfset id=cg.certificate.business.csr\_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full\_hostname%'
+uconfset id=cg.certificate.business.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
 ```
 
 A best practice is to customize the certificate DN prior to registration. However, if you are customizing the certificate DN after the Transfer CFT registration, you can force an immediate renewal or wait for the automatic renewal as described in [SSL certificate renewal](../cg_postregister#SSL).
 
 #### Optionally customize the governance certificate Distinguished Name (DN)
 
-To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal, set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
+To override the governance certificate's Distinguished Name (DN), which is generated during the {{< TransferCFT/centralgovernancename  >}} registration or certificate renewal,  set the UCONF parameter cg.certificate.governance.csr\_dn to the custom value. The default is O=Axway,OU=MFT,CN=&lt;Transfer CFT $(cft.instance\_id)>. Remember to separate tokens by a comma.
 
 ```
-uconfset id=cg.certificate.governance.csr\_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full\_hostname%'
+uconfset id=cg.certificate.governance.csr_dn, value='O=MyCompany,OU=MFT,CN=%uconf:cft.full_hostname%'
 ```
 
 A best practice is to customize the certificate DN prior to registration. However, if you are customizing the certificate DN after the Transfer CFT registration, you can force an immediate renewal or wait for the automatic renewal as described in [SSL certificate renewal](../cg_postregister#SSL).
@@ -163,8 +163,8 @@ A best practice is to customize the certificate DN prior to registration. Howeve
 By default, Transfer CFT generates a key length of 2048 bits for its Governance and Business certificates. Optionally you can modify these values to 4096 bits.
 
 ```
-uconfset id=cg.certificate.governance.key\_len, value=4096
-uconfset id=cg.certificate.business.key\_len, value=4096
+uconfset id=cg.certificate.governance.key_len, value=4096
+uconfset id=cg.certificate.business.key_len, value=4096
 ```
 
 #### Enable {{< TransferCFT/centralgovernancename  >}}
@@ -190,10 +190,10 @@ Check the list in the output for errors and correct all errors before attempting
 Ensure that `cft_registration_id `is reset to `-1`. Otherwise, reset it as follows:  
 
 ```
-CFTUTIL uconfunset id=cg.registration\_id
+CFTUTIL uconfunset id=cg.registration_id
 ```
 
-Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger registration with {{< TransferCFT/centralgovernancename  >}}. From the UI, check the **Product List** to confirm that the registration was successful.
+Start the {{< TransferCFT/transfercftname  >}} Copilot to automatically trigger  registration with {{< TransferCFT/centralgovernancename  >}}. From the  UI, check the **Product List** to confirm that the registration was successful.
 
 For troubleshooting issues refer to
 [Troubleshooting: Installation and registration.](../../cft_intro_install/unix_install_start_here/troubleshoot_registration)

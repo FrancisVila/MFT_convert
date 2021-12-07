@@ -2,7 +2,7 @@
     "title": "Transfer CFT backward compatibility",
     "linkTitle": "Transfer CFT backward compatibility ",
     "weight": "230"
-}In some cases, you may require or prefer backward compatibility. In this case, the `uconf:cft.state_compat` and `uconf:cft.listcat_compat` parameters can provide the same functionality as in Transfer CFT 2.7.1.
+}In some cases, you may require or prefer backward compatibility. In this case,  the `uconf:cft.state_compat` and `uconf:cft.listcat_compat` parameters can provide the same functionality as in Transfer CFT 2.7.1.
 
 The default value (No) sets:
 
@@ -44,7 +44,7 @@ Transfer available (diagi=0) or interrupted (diagi <> 0)
 Transfer (T)
 Available (D)
 Available (D)
-Transfer is waiting resource to start
+Transfer  is waiting resource to start
 Transfer (T)
 Processing (C)
 Processing (C)
@@ -64,7 +64,7 @@ Exit in progress
 Post-processing (Y)
 Available (D)
 Transfer finished (T) or post-processing executed (X)
-Post-processing is waiting resource to start
+Post-processing  is waiting resource to start
 Post-processing (Y)
 Processing (C)
 Transfer finished (T) or post-processing executed (X)
@@ -106,19 +106,19 @@ Default value
 
 Description
 
-Uconf:cft.listcat\_compat
+Uconf:cft.listcat_compat
 No
 Defines the LISTCAT display:
 
 -   Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.
 -   No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP.
 
-Uconf:cft.state\_compat
+Uconf:cft.state_compat
 No
 Defines the transfer states:
 
 -   Yes= The phase state is fully compatible with the states in versions prior to 3.0.
 -   No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.
 
-**Note**: Uconf:cft.state\_compat also impacts the [acknowledgement](../ack_phase) behavior if ackstate is set to ignore.
+**Note**: Uconf:cft.state_compat also impacts the [acknowledgement](../ack_phase) behavior if ackstate is set to ignore.
 ```

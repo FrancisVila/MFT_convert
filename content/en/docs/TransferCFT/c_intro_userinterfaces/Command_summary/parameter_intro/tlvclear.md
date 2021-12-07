@@ -11,8 +11,8 @@
 \[ TLVCLEAR = { 0...100
 } \]
 
-Fill level below which an alert ceases. This value is a percentage of filling, where 0% indicates the file is empty and 100% that it is full. Overall, the TLV parameters enable {{< TransferCFT/componentshortname  >}} to
-issue alerts when a critical CAT or COM threshold is reached.
+Fill level below which an alert ceases. This value is  a percentage of filling, where 0% indicates the file is empty and 100% that it is full. Overall, the TLV parameters enable  {{< TransferCFT/componentshortname  >}} to
+issue alerts when a critical CAT  or COM threshold is reached.
 
 This
 alert generates 2 actions:

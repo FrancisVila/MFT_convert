@@ -4,7 +4,7 @@
     "weight": "260"
 }## Specific parameters for z/OS
 
-This section describes the parameters and values that are specific to Transfer CFT z/OS and information about:
+This section describes the parameters and values that are specific to Transfer CFT z/OS and  information about:
 
 -   Transferable files
 -   Filename coding

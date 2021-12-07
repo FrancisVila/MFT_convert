@@ -22,7 +22,7 @@
 Depending on the Transfer CFT command and parameter values , the Transfer CFT programs determine the ACTION type and OBJET name, whose properties are obtained from the ACTION (SECACT) and OBJECT (SECOBJ) dictionaries respectively. The VALUE field is set according to information in the file or command. The resource name passed to RACF has the following format:
 
 ```
-Object\_Name.Set\_value
+Object_Name.Set_value
 ```
 
 Depending on the object definition and the Transfer CFT configuration, RACF receives the following resource names:
@@ -51,7 +51,7 @@ Where:
 Commands relating to generic information, LISTPARM TYPE=ALL for example, generate a RACF control with the following format:
 
 ```
-ALL\_PARM.CFTV2.PARM   USER(usercmd)  ACCESS(read)
+ALL_PARM.CFTV2.PARM   USER(usercmd)  ACCESS(read)
 ```
 
 If the RACF return code is equal to zero, the Transfer CFT program lists all entries in the parameter file (PARM).

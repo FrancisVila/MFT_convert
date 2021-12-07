@@ -17,7 +17,7 @@ If the user specifies end-of-transfer procedures (EXECSF and EXECRF
 parameters of CFTPARM), the catalog entries are only deleted after these
 procedures are executed.
 
-If file store and forward is requested (via the {{< TransferCFT/componentshortname  >}} parameter
+If file store and forward is requested (via the  {{< TransferCFT/componentshortname  >}} parameter
 setting), none of the catalog entries, associated with terminated transfers,
 are deleted.
 

@@ -27,7 +27,7 @@ Perform the following steps:
     ```
     Set Transfer Mode to bin
     cd CFTTMP
-    put Transfer\_CFT\_os400.bin CFT32XL
+    put Transfer_CFT_os400.bin CFT32XL
     quit
     ```
 5.  Restore the Transfer CFT save file, for example:  
@@ -40,11 +40,11 @@ Perform the following steps:
 
 > **Note:**
 >
-> If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.
+> If you want to add or modify the installation parameters, you must run the INSTALL command after selecting F4. Answer the prompted questions  to configure the product for your production. At the end of your first installation, press F9 to execute the recall command. This command must be used for all your deployments.
 
 1.  Use Central Governance to deploy and configure your Transfer CFTs as needed.
 
-## Create a {{< TransferCFT/componentshortname  >}} deployment package for standalone usage
+## Create a  {{< TransferCFT/componentshortname  >}} deployment package for standalone usage
 
 In this procedure, you must first create a SAVF file that contains all of your necessary configurations for your deployment including:
 
@@ -68,7 +68,7 @@ On the local machine where you have {{< TransferCFT/transfercftname  >}} install
     ```
     CRTLIB CFTCONF
     ```
-2.  Copy all the configuration elements you want to deploy into this library, for example:  
+2.  Copy  all the configuration elements you want to deploy into this library, for example:  
     ```
     CPYF FROMFILE(CFTPROD/UTIN) TOFILE(CFTCONF/UTIN) FROMMBR(CGPARAM) TOMBR(TCPPARAM)
     ```
@@ -89,7 +89,7 @@ On the other machines, where you want to deploy {{< TransferCFT/transfercftname 
     ```
     Set Transfer Mode to bin
     cd CFTTMP
-    put Transfer\_CFT\_os400.bin CFT32XL (SAVF with Transfer CFT)
+    put Transfer_CFT_os400.bin CFT32XL (SAVF with Transfer CFT)
     put CFTCONFSVF.savf CFTCONFSVF (SAVF with CFT configuration)
     quit
     ```
@@ -108,7 +108,7 @@ On the other machines, where you want to deploy {{< TransferCFT/transfercftname 
 
 > **Note:**
 >
-> As of Transfer CFT 3.3.2, you can define the user for the Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
+> As of Transfer CFT 3.3.2, you can define the user for the  Transfer CFT installation. This user can be different from the current user. From the INSTALL command, select F4 (Prompt) and modify the USERINST value. This user must exist on the machine; if it does not, you can use the CRTUSRPRF command to create it.
 
 1.  Restore the Transfer CFT configuration save file, for example:  
     ```

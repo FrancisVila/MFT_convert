@@ -5,11 +5,11 @@
 }The <span id="DISPLAY"></span>DISPLAY
 command is an enhanced version of the LISTCAT command and displays
 the catalog transfer field values. The output can be organized
-by columns when the mode is column,
+by columns when the mode is        column,
 or by lines when the mode is line.
 
 Display uses an external
-XML file that lists and describes the format for customized models. This means the Display command can call an XML document as a fmodel parameter.
+XML file that lists and describes the format for customized models. This means the Display command can call an XML document  as a fmodel parameter.
 
 In column mode, an adjustable title bar is displayed at the top of
 the catalog content to improve readability. In line mode, every line is presented horizontally
@@ -20,7 +20,7 @@ as prefix, suffix, length, and alignment. The line output can also be customized
 DISPLAY uses the same parameters as the [LISTCAT](../listcat_command) command and, with the exception of the CONTENT parameter, all common parameters use the
 same semantics. However,
 there are certain parameters that are applicable only for the DISPLAY
-command, as described later in this topic.
+command, as described later in  this topic.
 
 The use of the DISPLAY command overrides all other global model
 options. Parameters that are affected by this command are MODE, NA and
@@ -32,13 +32,13 @@ See also, [LISTCAT/DISPLAY - Statistical variables](../listcat_filter_variables)
 
 The XML formatting must comply with certain conventions:
 
--   The file must begin with the header: &lt;?xml content='ascii'?>
+-   The file must begin with the header:  &lt;?xml content='ascii'?>
 -   Every tag &lt;tag> must be closed &lt;/tag>
 -   Using a tag in the format &lt;tag/> is accepted but not recommended and should be empty
 
 For more information, refer to an XML standards reference such as <http://www.w3.org/TR/REC-xml/>. Additionally, you can reference the sample template delivered with your Transfer CFT, which is located in the OS-specific distribution package:
 
--   UNIX, Windows: DSPCNF.XML in runtime/conf
+-   UNIX, Windows: DSPCNF.XML  in runtime/conf
 -   z/OS (MVS): distlib.XMLLIB(DSPCNF) and instance.XMLLIB(DSPCNF)
 -   IBM i (OS/400): CFTPGM1/DSPCNF
 
@@ -52,24 +52,24 @@ Fmodel structure
 <Fields>
 <Field>
 <Field>
-\[...\]
+[...]
 </Fields>
 </CFTDisplayFilter>
 ```
 
-Attributes for the &lt;CFTDisplayFilter>
+Attributes for the &lt;CFTDisplayFilter>  
 
 
 | Parameter  | Description  |
 | --- | --- |
 | id='string'  | Model ID, call within the DISPLAY command with the content parameter  |
 | mode = 'column | line'  | Output orientation (line or column)  |
-| title_size = '-1 | NUM'  | Title size, only in column mode (undefined or number)  |
+| title_size = '-1 | NUM'  |  Title size, only in column mode (undefined or number)  |
 | title_align = 'left | center | right'  | Title alignment (column mode only)  |
 | line_prefix = '&lt;LF&gt;|STR'  | Prefix in line mode (empty or string)  |
 | line_suffix = '| STR'  | Suffix in line mode (empty or string)  |
 | default_prefix = '| STR'  | Default prefix (empty or string)  |
-| default_suffix = ' | STR'  | Default suffix ('' in column mode and 'Line Feed' in line mode) (empty or string)  |
+| default_suffix = ' | STR'  |  Default suffix ('' in column mode and 'Line Feed' in line mode) (empty or string)  |
 | default_empty = '| STR'  | Default String if empty (empty or string)  |
 | default_na = '| STR'  | Default String if not applicable (empty or string)  |
 
@@ -86,7 +86,7 @@ Each &lt;Field> tag has the following attributes:
 | id  | This parameter is mandatory and should be the same as the listcat id parameter  |
 | title  | Title of the column / line.  |
 | maxlength : -1 | NUM  | Max length: -1 means no maxlength  |
-| minlength : -1 | NUM  | Min length: -1 means no minlength  |
+| minlength : -1 | NUM  |  Min length: -1 means no minlength  |
 | prefix =' | STR'  | Prefix (empty or string)  |
 | suffix =' | STR'  | Suffix (empty or string)  |
 | align = left | center | right  | Field alignment  |
@@ -170,7 +170,7 @@ This shows an example of a display model file.
 <!-- LISTCAT Model : classical CFTUTIL LISTCAT with long
 IDs -->
 <CFTDisplayFilter id           =
-'listcat' title\_align  =
+'listcat' title_align  =
 'right'>
 <Fields>
 <Field id='PART' title='Partner' />

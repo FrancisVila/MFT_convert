@@ -13,13 +13,13 @@
 
 Maximum size of NSDUs being sent (default = 32750). This parameter is negotiated with
 the partner, **rrusize** parameter
-if <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the smallest value being adopted as the size of the NSDU
+if  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>, the smallest value being adopted as the size of the NSDU
 sent.
 
 To transfer a record longer than SRUSIZE - 6, the segmentation operation
 is implemented.
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *[*Protocols sections*](../../../../protocols_start_here)*
+Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *[*Protocols sections*](../../../../protocols_start_here)*
 to learn more about optimizing these values.
 
 [Return to Command index](../../)

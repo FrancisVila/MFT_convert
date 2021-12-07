@@ -6,7 +6,7 @@
 
 ### scope
 
-#### KEEP, HALT, DELETE, END, START, RESUME
+#### KEEP, HALT, DELETE, END,  START, RESUME
 
 \[SCOPE = { <u>PARENT</u> | CHILDREN | ALL } \]
 

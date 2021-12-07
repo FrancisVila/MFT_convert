@@ -2,7 +2,7 @@
     "title": "Working directory",
     "linkTitle": "Working directory",
     "weight": "290"
-}This section describes how to specify a working directory to use other than the default (runtime) directory for file transfer flows.
+}This section describes how to  specify a working directory to use other than the default (runtime) directory  for file transfer flows.
 
 Information is presented by platform:
 
@@ -137,7 +137,7 @@ User01:
 The application that is running under the user01 system account sends the 'file\_to\_send' file to the remote partner PART1 using the transfer flow IDF3.
 
 ```
-SEND idf = IDF3, part = PART1, fname = 'file\_to\_send', RUSER='"user02"'
+SEND idf = IDF3, part = PART1, fname = 'file_to_send', RUSER='"user02"'
 ```
 <span id="Workingd4"></span>
 
@@ -164,7 +164,7 @@ User01:
 The application that is running under the user01 system account sends the ‘file\_to\_send’ file to the remote partner PART1 using the transfer flow IDF4.
 
 ```
-> CFTUTIL send idf = IDF4, part = PART1, fname = 'file\_to\_send', RUSER='"user02"'
+> CFTUTIL send idf = IDF4, part = PART1, fname = 'file_to_send', RUSER='"user02"'
 ```
 
 ## Using working directory in IBM i and z/OS
@@ -174,17 +174,17 @@ In IBM i and z/OS environments, the working directory feature lets you specify e
 Three scenarios are possible on these platforms:
 
 -   UNIX file system  
-    -   If a WORKINGDIR Unix file system is defined, it should be either fully qualified (‘/home/user01’ for example) or include the symbolic variable &HOME (z/OS) or ?HOME (IBM i).  
-    -   For example, if the working directory parameter equals &HOME or ?HOME, the working directory is the home directory for the user ID on z/OS or on IBM i.
+    -   If a WORKINGDIR Unix file system  is defined, it should be either fully qualified (‘/home/user01’ for example) or include the symbolic variable &HOME (z/OS) or ?HOME (IBM i).  
+    -   For example, if the working directory parameter  equals  &HOME or ?HOME, the working directory is the home directory for the user ID on z/OS or on IBM i.
 -   Data set on z/OS  
     WORKINGDIR z/OS data set the syntax is as follows:  
     -   If the segment name ends with a period, for example ‘USER01.PROD.’, then the workingdir refers simply to the data set.  
     -   If the segment name does not end with a final period, for example ‘USER01.PROD.FILE’, then the workingdir refers to a partitioned data set.  
-    -   We advise you to include the symbolic variable &USERID in the working directory. For example, if the working directory parameter is ‘&USERID.’, the working directory is the user ID followed by a period.
+    -   We advise you to include the symbolic variable &USERID in the working directory. For example, if the working directory parameter is  ‘&USERID.’, the working directory is the user ID followed by a period.
 -   Database on IBM i  
     WORKINGDIR IBM i syntax is as follows:
     -   If there is a slash character (/) in the working directory, it refers to a member of a database file. For example WORKINGDIR= PROD/NEWFILE, FNAME=MEMBER creates PROD/NEWFILE(MEMBER).
-    -   Otherwise, if there is no slash, it refers to a database file. For example WORKINGDIR= PROD, FNAME=FILE creates PROD/FILE.  
+    -   Otherwise, if there is no slash, it refers to a database file.  For example WORKINGDIR= PROD, FNAME=FILE creates PROD/FILE.  
 
 ### Conventions and recommendations
 
@@ -192,7 +192,7 @@ Note the following Transfer CFT z/OS or IBM i conventions and recommendations:
 
 -   Transfer CFT does not authorize sending or receiving Unix file system files that are outside of the designated working directory tree.
 -   The maximum size for a complete Unix file name is 512 characters, 44 characters for a z/OS data set name, and 33 characters for a IBM i database file. This value includes the total length of the working directory added to any relative values.
--   The &PATH or &FPATH symbolic variables will contain the WORKINGDIR value.
+-   The  &PATH or &FPATH symbolic variables will contain the WORKINGDIR value.
 -   You can only refer to processing scripts that are on native file systems.
 
 ## Examples on IBM i and z/OS
@@ -327,7 +327,7 @@ User01:
 The user USER01 sends the file to the remote partner PART1 using the transfer flow IDF5.
 
 ```
-> CFTUTIL send idf = IDF5, part = PART1, fname = FTEST, RUSER = USER02
+> CFTUTIL send idf = IDF5, part = PART1, fname = FTEST,  RUSER = USER02
 ```
 <span id="Workingd12"></span>
 

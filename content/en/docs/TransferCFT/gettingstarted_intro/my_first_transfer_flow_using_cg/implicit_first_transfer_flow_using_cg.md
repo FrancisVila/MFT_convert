@@ -67,7 +67,7 @@
 <p> </p>
 <p> </p>
 <p> </p>         </td>
-         <td>From the {{< TransferCFT/componentshortname  >}} (MainOffice), run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
+         <td>From the  {{< TransferCFT/componentshortname  >}} (MainOffice),  run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
 <p>Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.</p>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>

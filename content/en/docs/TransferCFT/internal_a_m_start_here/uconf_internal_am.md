@@ -24,9 +24,9 @@ Please refer to the [*Transfer CFT *{{< TransferCFT/releasenumber  >}} *Securit
 
 Set the specific group database parameter (see the table below for OS specifics) using CFTUTIL:
 
-uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm \]
+uconfset id=am.internal.group\_database,value=\[ system | safClass | file | xfbadm  \]
 
-Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize the internal access management roles. For example, to assign the administrator role to the "admin" group:
+Use the parameters and descriptions in the **AM Parameters** table (just below Step 3) to help you customize  the internal access management roles. For example, to assign the administrator role to the "admin" group:
 
 
 | AM Parameters  | Default  | Description  |
@@ -51,7 +51,7 @@ uconfset id=am.type,value=internal
 
 ## Mapping the group to predefined roles
 
-To use the feature you will need to map the list of groups in the database to the {{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the {{< TransferCFT/componentshortname  >}} UI.
+To use the feature you will need to map the list of groups in the database to the  {{< TransferCFT/componentshortname  >}} predefined roles. Use the following information as a basis for your mapping. You can enter these values either using command line or in the  {{< TransferCFT/componentshortname  >}} UI.
 
 
 | Parameter  | Means the user in this group will have the role...  |
@@ -65,7 +65,7 @@ To use the feature you will need to map the list of groups in the database to th
 
 ## Creating or modifying roles
 
-In addition to the out-of-the box roles, you can create new roles or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to Internal AM use cases for role-based use case scenarios.
+In addition to the out-of-the box roles, you can create new roles  or modify existing roles using either the {{< TransferCFT/transfercftname  >}} user interface or a {{< TransferCFT/transfercftname  >}} configuration file. You can use new or modified roles on their own or in combination with predefined roles. Please refer to  Internal AM use cases for role-based use case scenarios.
 
 > **Note:**
 >
@@ -90,14 +90,14 @@ CFTROLE ID='HELPDESK', ...
 CFTROLE ID='APPLICATION', ...
 ```
 
-Here, the new HELPDESK and APPLICATION roles override the predefined HELPDESK and APPLICATION roles. However, the predefined ADMIN, PARTNERMANAGER, and DESIGNER roles are still used since you did not create new roles with these same names.
+Here, the new HELPDESK and APPLICATION roles override the predefined  HELPDESK and APPLICATION roles. However, the predefined ADMIN, PARTNERMANAGER, and DESIGNER roles are still used since you did not create new roles with these same names.
 
 ## Internal access management use cases
 
 This section describes three configuration scenarios when using <a href="#" class="selected">internal access management</a> with roles and privileges. Use cases include:
 
 -   Predefined roles and privileges without the CFTPRIV and CFTROLE objects
--   Customized roles and privileges with the CFTPRIV and CFTROLE objects
+-   Customized roles and privileges  with the CFTPRIV and CFTROLE objects
 -   Mixed-use of both predefined and custom CFTPRIV and CFTROLE objects
 
 In each scenario, there is a **user1** that belongs to **group1** and a **user2** that belongs to **group2**.
@@ -107,7 +107,7 @@ Example 1: Use only predefined roles and privileges
 If you configure UCONF as follows:
 
 ```
-uconfset id=am.internal.group\_database,value=system         NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
+uconfset id=am.internal.group_database,value=system         NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
 uconfset id=am.internal.role.admin,value=group1
 uconfset id=am.internal.role.application,value=group2
 uconfset id=am.type,value=internal
@@ -125,14 +125,14 @@ D am.internal.role.designer =
 U am.internal.role.application = group2
  
 listparm type=role,content=brief
-CFTU24W LISTPARM \_ Warning ( Parameters no record selected / file empty)
+CFTU24W LISTPARM _ Warning ( Parameters no record selected / file empty)
 ```
 
 To check that you are using only predefined roles and privileges, enter:
 
 ```
 listparm type=role,content=brief
-CFTU24W LISTPARM \_ Warning ( Parameters no record selected / file empty)
+CFTU24W LISTPARM _ Warning ( Parameters no record selected / file empty)
 ```
 
 **Results**
@@ -140,12 +140,12 @@ CFTU24W LISTPARM \_ Warning ( Parameters no record selected / file empty)
 -   User1 has the predefined Transfer CFT Administrator role
 -   User2 has the predefined Transfer CFT Application role
 
-Example 2: Custom roles and privileges using only CFTPRIV and CFTROLE objects
+Example 2: Custom roles and privileges  using only CFTPRIV and CFTROLE objects
 
 If you configure UCONF as follows:
 
 ```
-uconfset id=am.internal.group\_database,value=system     NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
+uconfset id=am.internal.group_database,value=system     NOTE: system (Unix,Windows), xfbadm (Unix,HP NonStop)
 uconfset id=am.type,value=internal
 listuconf id=am.internal.role.\*
  

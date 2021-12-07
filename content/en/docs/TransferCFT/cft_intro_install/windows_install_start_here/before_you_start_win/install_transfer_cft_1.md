@@ -54,7 +54,7 @@ Use the following command to install Transfer CFT in silent mode.
       <tr>
          <td>Installation Directory         </td>
          <td>Specify the directory where you want to install Transfer
-CFT. This is the directory where the Transfer CFT product files are installed.         </td>
+CFT. This is the directory where the Transfer CFT product files  are installed.         </td>
       </tr>
       <tr>
          <td>Configuration filename         </td>

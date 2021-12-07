@@ -2,7 +2,7 @@
     "title": "Define environment variables file",
     "linkTitle": "Environment variables file",
     "weight": "190"
-}You must define the environment variables in the `..UPARM (CNFENV)` file with the DDname `STDENV`.
+}You must define the environment variables  in the `..UPARM (CNFENV)` file with the DDname `STDENV`.
 
 > **Note:**
 >
@@ -16,6 +16,6 @@ When you start Transfer CFT, some parameters are printed in the transfer CFT LOG
 
 ```
 CFTI18I+Environment variables (platform dependant) (DDname:STDENV)
-CFTI18I+ CFTUCONF=dd:UCONF
-CFTI18I+ \_BPXK\_SETIBMOPT\_TRANSPORT=TCPIP
+CFTI18I+   CFTUCONF=dd:UCONF
+CFTI18I+   _BPXK_SETIBMOPT_TRANSPORT=TCPIP
 ```

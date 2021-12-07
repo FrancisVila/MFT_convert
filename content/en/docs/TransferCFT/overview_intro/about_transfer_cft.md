@@ -2,9 +2,9 @@
     "title": "About Transfer CFT",
     "linkTitle": "About Transfer CFT",
     "weight": "90"
-}{{< TransferCFT/companyname  >}} {{< TransferCFT/platformorsuiteshortname  >}} {{< TransferCFT/componentshortname  >}} is a powerful data controller that provides file exchange services between disparate hardware and software platforms using open protocols, within or beyond the boundaries of your enterprise. Transfer CFT, part of the {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer product offerings, delivers non-intrusive, high-volume file-transfer services as a standalone system or implemented as part of an MFT solution.
+}{{< TransferCFT/companyname  >}} {{< TransferCFT/platformorsuiteshortname  >}} {{< TransferCFT/componentshortname  >}} is  a powerful data controller that provides file exchange services between disparate hardware and software platforms using open protocols, within or beyond the boundaries of your enterprise. Transfer CFT, part of the {{< TransferCFT/platformorsuitelongname  >}} Managed File Transfer product offerings, delivers non-intrusive, high-volume file-transfer services as a standalone system or implemented as part of an MFT solution.
 
-To create successful data flows within an enterprise, organizations require a guaranteed level of security, tracking, and data flow management. {{< TransferCFT/componentshortname  >}}'s additional value comes from providing the following services that allow for monitored, secure business interactions:
+To create successful data flows within an enterprise, organizations require a guaranteed level of security, tracking, and data flow management.  {{< TransferCFT/componentshortname  >}}'s additional value comes from providing the following services that allow for monitored, secure business interactions:
 
 -   Performs cross-platform transfers
 -   Manages large volumes of files with support for varying file types
@@ -35,9 +35,9 @@ High-level view of Transfer CFT in an enterprise architecture
 
 ### Transfer types and modes
 
-Additional flexibility and value come from the various types of transfer modes that you can use with {{< TransferCFT/componentshortname  >}}. Within each mode, there are a variety of transfer types:
+Additional flexibility and value come from the various  types of transfer modes that you can use with {{< TransferCFT/componentshortname  >}}. Within each mode, there are a variety of transfer types:
 
--   Centralized mode or peer-to-peer, client-server based
+-   Centralized mode or peer-to-peer,  client-server based
 -   Distribution mode
     -   One to one
     -   Broadcasting (1 to N)
@@ -53,7 +53,7 @@ Additional flexibility and value come from the various types of transfer modes t
 -   Access rights on logical objects
 -   Support for common standards and protocols, as such as LDAP, X.509, PKI (Public Key Infrastructure)
 -   Data is secured both at rest and in motion
--   Ability to add a DMZ component (software proxy)
+-   Ability to add a DMZ component  (software proxy)
 
 ### Event-oriented automation and integration
 

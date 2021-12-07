@@ -89,7 +89,7 @@ For SEND command details refer to the following syntax:
 
 \[ [FACTION](../../../c_intro_userinterfaces/command_summary/parameter_intro/faction)
 = {
-| DELETE | ERASE | ARCHIVE } \]
+| DELETE | ERASE |  ARCHIVE } \]
 
 \[ [FBLKSIZE](../../../c_intro_userinterfaces/command_summary/parameter_intro/fblksize)
 = n \]

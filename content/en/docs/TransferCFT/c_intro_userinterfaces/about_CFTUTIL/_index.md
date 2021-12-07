@@ -11,7 +11,7 @@ setting commands and operating commands.
 
 ## Overview
 
-All Transfer CFT actions are controlled
+All Transfer CFT  actions are controlled
 by a series of Transfer CFT commands. For a complete listing of all Transfer
 CFT commands, a description of their function, and a link to the specific
 command topic, refer to the [Command index](../command_summary).
@@ -163,7 +163,7 @@ CFTUTIL can be used in three different modes:
     mode, for example:
 
 ```
-> CFTUTIL \[to start CFTUTIL\]> /END \[to quit CFTUTIL\]
+> CFTUTIL [to start CFTUTIL]> /END [to quit CFTUTIL]
 ```
 
 > **Note:**
@@ -175,14 +175,14 @@ CFTUTIL can be used in three different modes:
 The `help `command enables you to get more information on a command and its parameters when using CFTUTIL. To use, enter `help ` to list available commands.
 
 ```
-> CFTUTIL \[to start CFTUTIL\]
+> CFTUTIL [to start CFTUTIL]
 help
 
-HELP SEND LISTCAT DISPLAY DELETE END HALT
-KEEP START RECV SUBMIT ABOUT LISTCOM SHUT
-PURGE SWITCH MQUERY RECONFIG SWAITCAT STEST SGET
-SDISPLAY ACT INACT CFTACCNT CFTAUTH CFTCAT CFTCOM
-CFTDEST CFTETB CFTEXIT CFTEXT GETDICT CFTFILE CFTIDF
+HELP       SEND       LISTCAT    DISPLAY    DELETE     END        HALT
+KEEP       START      RECV       SUBMIT     ABOUT      LISTCOM    SHUT
+PURGE      SWITCH     MQUERY     RECONFIG   SWAITCAT   STEST      SGET
+SDISPLAY   ACT        INACT      CFTACCNT   CFTAUTH    CFTCAT     CFTCOM
+CFTDEST    CFTETB     CFTEXIT    CFTEXT     GETDICT    CFTFILE    CFTIDF
 ....
 
 ```
@@ -190,18 +190,18 @@ CFTDEST CFTETB CFTEXIT CFTEXT GETDICT CFTFILE CFTIDF
 To get help for a specific command, use `cmd=<command>`:
 
 ```
-> **help cmd=CFTSEND** \[name of the command\]
+> **help cmd=CFTSEND** [name of the command]
 COMMAND CFTSEND USAGE
-MODE S S 8 <REPLACE>
+MODE              S S 8      <REPLACE>
 'CREATE'
 
-<LOCMBX > S S 65 STRING max\_length=64
-<SYNC > S C 1 <NO> 'YES','NO'
-<TODATE > J N 8 Day
-<TOTIME > H N 8 Hour
-CYCDATE N N 8 Number <0> min=0 max=99991231
-CYCTIME N N 8 Number <0> min=0 max=23595999
-MAXDATE N N 8 Number <99991231> min=0 max=99991231
+<LOCMBX          > S S 65     STRING max_length=64
+<SYNC            > S C 1      <NO> 'YES','NO'
+<TODATE          > J N 8      Day
+<TOTIME          > H N 8      Hour
+CYCDATE           N N 8      Number <0> min=0 max=99991231
+CYCTIME           N N 8      Number <0> min=0 max=23595999
+MAXDATE           N N 8      Number <99991231> min=0 max=99991231
 
 ...
 ```
@@ -211,16 +211,16 @@ To get a parameter description as well as defaults and type of input, add `conte
 ```
 > **help cmd=CFTSEND, content=detail**
 COMMAND CFTSEND USAGE
-MODE STRING max\_length=7 Action to do in the parameter or partner database <REPLACE>
+MODE              STRING max_length=7                           Action to do in the parameter or partner database <REPLACE>
 'CREATE'
 
-<LOCMBX > STRING max\_length=64 Mailbox name
-<SYNC > STRING max\_length=0 Synchronous API <NO> ('YES','NO')
-<TODATE > Date (YYYYMMDD) Date limit for request catch
-<TOTIME > Hour (HH:mm:ss) Time limit for request catch
-CYCDATE Number <0> min=0 max=99991231 Upper final date for activating the first transfer of a cycle
-CYCTIME Number <0> min=0 max=23595999 Cyclic transfer time
-MAXDATE Number <99991231> min=0 max=99991231 Final date for transfer validity
+<LOCMBX          > STRING max_length=64                          Mailbox name
+<SYNC            > STRING max_length=0                           Synchronous API <NO>  ('YES','NO')
+<TODATE          > Date (YYYYMMDD)                               Date limit for request catch
+<TOTIME          > Hour (HH:mm:ss)                               Time limit for request catch
+CYCDATE           Number <0> min=0 max=99991231                 Upper final date for activating the first transfer of a cycle
+CYCTIME           Number <0> min=0 max=23595999                 Cyclic transfer time
+MAXDATE           Number <99991231> min=0 max=99991231          Final date for transfer validity
 
 ...
 ```

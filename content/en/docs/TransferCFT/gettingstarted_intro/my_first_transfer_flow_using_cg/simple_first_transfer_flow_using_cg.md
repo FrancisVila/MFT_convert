@@ -2,7 +2,7 @@
     "title": "Create a flow and transfer a file",
     "linkTitle": "Create a flow and transfer a file",
     "weight": "140"
-}Let's begin by creating a simple flow, and then exchange a file. In this example, Store\_66 sends a daily SALES\_report to the MainOffice.
+}Let's begin by creating a simple flow,  and then exchange a file. In this example, Store\_66  sends a daily SALES\_report to the MainOffice.
 
 <img src="/Images/TransferCFT/TransferCFT_Standard_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a file to a Target" />
 
@@ -14,7 +14,7 @@
 
     <!-- -->
 
-    -   Create a flow named `Simple_flow` and give it the identifier **`flow01`**.
+    -   Create a flow named `Simple_flow` and give it the identifier  **`flow01`**.
     -   <img src="/Images/TransferCFT/flow02.png" class="maxWidth" />
 
     <!-- -->
@@ -29,7 +29,7 @@
 #### In {{< TransferCFT/componentshortname  >}}
 
 1.  Add a file to exchange. Put a test file, for example **SALES\_report**, in the Store\_66 {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
-2.  From the source {{< TransferCFT/componentshortname >}}, run the SEND command.
+2.  From the source {{< TransferCFT/componentshortname >}},   run the  SEND command.
     -   Remember to replace `<instance_target>` with your Transfer CFT for the MainOffice target.
 
     <!-- -->

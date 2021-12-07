@@ -13,7 +13,7 @@ Begin by checking if the z/OS system already has a Java environment available. {
 1.  Select, download, and install the appropriate Java SDK for your environment.
 2.  Check if the JZOS Batch Launcher is installed in your environment.
     -   JZOS is a set of tools that enhances the ability for z/OS Java applications to run in a traditional batch environment and/or access z/OS system services.
-    -   The function consists of a load module and a sample start proc put into an appropriate PROCLIB.
+    -   The function consists of  a load module and a sample start proc put into an appropriate PROCLIB.
 
 To identify if your current system has JZOS available:
 

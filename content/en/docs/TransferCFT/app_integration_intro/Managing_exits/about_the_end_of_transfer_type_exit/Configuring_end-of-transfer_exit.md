@@ -4,7 +4,7 @@
     "weight": "360"
 }This topic describes how to configure the environment for an end-of-transfer
 type exit. Before you submit this EXIT, you must customize the following
-{{< TransferCFT/componentshortname  >}} objects:
+  {{< TransferCFT/componentshortname  >}} objects:
 
 -   [Defining
     the CFTEXIT object](#Defining_the_CFTEXIT_object): to describe the EXIT environment and how this

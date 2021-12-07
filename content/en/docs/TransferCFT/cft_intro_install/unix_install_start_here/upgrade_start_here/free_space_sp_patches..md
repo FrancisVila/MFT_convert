@@ -2,7 +2,7 @@
     "title": "How to free disk space from service packs",
     "linkTitle": "How to free disk space from updates",
     "weight": "210"
-}This topic describes how to reclaim disk space that is taken up by Service Packs and updates applied to Transfer CFT over time.  
+}This topic describes how to reclaim disk space that is taken up by Service Packs and updates  applied to Transfer CFT over time.  
 
 ## Use the purge command
 
@@ -13,10 +13,10 @@ Use the purge command followed by the appropriate options to removed accumulated
 
 Syntax
 
-purge \[-h | --help\] | \[-k | --keep\] \[number\] \[-p | --pretend\]  
+purge \[-h | --help\] | \[-k | --keep\] \[number\]  \[-p | --pretend\]  
 
 -   UNIX:` purge.sh`
--   Windows: `purge64.exe `or `purge32.exe` (from a command line window)  
+-   Windows:  `purge64.exe `or `purge32.exe`  (from a command line window)  
 
 Where:  
 
@@ -29,13 +29,13 @@ Examples
 Keep only the last backup, meaning you can remove the current patch or SP.
 
 ```
-<Transfer\_CFT\_install\_dir>/purge.sh -k 1
+<Transfer_CFT_install_dir>/purge.sh -k 1  
 ```
 
 Remove all backups, meaning that you cannot remove the current patch or SP.
 
 ```
-<Transfer\_CFT\_install\_dir>/purge.sh -k 0
+<Transfer_CFT_install_dir>/purge.sh -k 0
 ```
 
 &lt;Options> include:
@@ -45,5 +45,5 @@ Remove all backups, meaning that you cannot remove the current patch or SP.
 Example
 
 ```
-<Transfer\_CFT\_install\_dir>/purge.sh -k 1 -d
+<Transfer_CFT_install_dir>/purge.sh -k 1 -d
 ```

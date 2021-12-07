@@ -24,7 +24,7 @@ with the remote site is correctly established.
 
 Option to manage the restart.
 
--   Yes: Perform a restart
+-   Yes:  Perform a restart
 -   No: No restart following shut down
 
 [Return to Command index](../../)

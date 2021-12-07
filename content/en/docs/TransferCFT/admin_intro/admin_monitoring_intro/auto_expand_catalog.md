@@ -2,7 +2,7 @@
     "title": "Automatic  catalog expansion",
     "linkTitle": "Automatic  catalog expansion",
     "weight": "300"
-}Thecatalog option lets you enlarge the catalog by a preset percentage when an alert is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
+}Thecatalog option lets you  enlarge the catalog by a preset percentage when  an alert  is sent that the catalog is reaching its threshold. Additionally you can indicate a script to execute if this expanded limit is exceeded.
 
 ## Overview
 
@@ -10,18 +10,18 @@ Once the catalog exceeds the minimum alert level, it can be expanded to the amou
 
 If you defined a timer for catalog alerts, TLVCLEAR, once the usage surpasses the allotted time value one of the following occurs:
 
--   The catalog is expanded and a message sent to the log, but no script is executed
--   The catalog is expanded, a message is sent to the log, and the TLVCEXEC script executes.
+-   The catalog is expanded and a message  sent to the log, but no script is executed
+-   The catalog is expanded, a message  is sent to the log, and the TLVCEXEC script executes.
 
 ## Steps
 
-To enable the auto-expand option, with {{< TransferCFT/componentshortname  >}} running:
+To enable the auto-expand option, with  {{< TransferCFT/componentshortname  >}} running:
 
 1.  Set the uconf values for:
     -   cft.cftcat.auto\_expand\_percent
     -   cft.cftcat.auto\_expand\_max\_size
 2.  To activate the new values, run the command: `CFTUTIL reconfig type = uconf`
-    -   If {{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the `reconfig `command.
+    -   If  {{< TransferCFT/componentshortname >}} is stopped when setting uconf values, you do not need to execute the `reconfig `command.
 
 
 | Parameter  | Default  | Description  |
@@ -51,7 +51,7 @@ When you reach the TLVWRATE (level=80%), the following messages are sent to the 
 ```
 12/10/17 17:53:30  CFTC29W Catalog Alert fill threshold reached: **level=80%** ID=CAT0
 12/10/17 17:53:30  CFTC13I Catalog resize (100 --> 120) done
-12/10/17 17:54:16  CFTT17I \_ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
+12/10/17 17:54:16  CFTT17I _ STATE=HOLD <IDTU=A0000029 PART=PARIS IDF=TXT IDT=J1718064>
 12/10/17 17:54:16  CFTR12I SEND Treated for USER adaumer  <IDTU=A0000029 PART=PARIS IDF=TXT>
 12/10/17 17:54:16  CFTS20I Communication file row number deleted: 00000252   
 12/10/17 17:54:16  CFTC30W Catalog Alert cleared : level=67% ID=CAT0
@@ -59,7 +59,7 @@ When you reach the TLVWRATE (level=80%), the following messages are sent to the 
 
 The new fill rate is now 80/120 = 66.66%, well below TLVCLEAR, so the alerts stops at next update (the send command in this example).
 
-The message indicates that the catalog is sufficient. If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
+The message indicates that the catalog is sufficient.  If it were not, the catalog would be extended again at next alert in TLVWRATE seconds.
 
 The catalog continues to fill until it reaches 80%. Expanding 20% more would resize the catalog to 144 records, which exceeds the limit (140), and the log displays:
 
@@ -67,7 +67,7 @@ The catalog continues to fill until it reaches 80%. Expanding 20% more would res
 12/10/17 18:06:57  CFTC29W Catalog Alert fill threshold reached: level=80% ID=CAT0
 12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 144) too much
 12/10/17 18:06:57  CFTC13I Catalog resize (120 --> 140) done
-12/10/17 18:06:57  CFTT17I \_ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092>
+12/10/17 18:06:57  CFTT17I _ STATE=HOLD <IDTU=A000002P PART=PARIS IDF=TXT IDT=J1718092>
 12/10/17 18:06:57  CFTR12I SEND Treated for USER adaumer  <IDTU=A000002P PART=PARIS IDF=TXT>
 12/10/17 18:06:57  CFTS20I Communication file row number deleted: 00000269                               
 12/10/17 18:06:57  CFTC30W Catalog Alert cleared : level=69% ID=CAT0

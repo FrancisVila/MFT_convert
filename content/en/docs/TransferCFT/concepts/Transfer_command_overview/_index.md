@@ -2,11 +2,11 @@
     "title": "Transfer command basics",
     "linkTitle": "Transfer concepts",
     "weight": "140"
-}The transfer concept topics introduce the various {{< TransferCFT/componentshortname  >}} transfer
+}The transfer concept topics introduce the various  {{< TransferCFT/componentshortname  >}} transfer
 processes. For general transfer principles, refer to the introductory
 overview section.
 
-The transfer commands are
+The  transfer commands are
 divided in categories depending on their function.
 
 ## Entering a command
@@ -16,9 +16,9 @@ There are multiple interfaces that you can use to enter Transfer CFT commands, s
 You can enter a command using CFTUTIL in a command window from the Transfer CFT runtime directory. For example in a Windows environment:
 
 ```
-C:\\Axwaycft313sp1\\Transfer\_CFT\\runtime> profile
-C:\\Axwaycft313sp1\\Transfer\_CFT\\runtime> CFTUTIL  
-1:\[CFU\]
+C:\\Axwaycft313sp1\\Transfer_CFT\\runtime> profile
+C:\\Axwaycft313sp1\\Transfer_CFT\\runtime> CFTUTIL  
+1:[CFU]
 ```
 
 ## Entering parameters
@@ -65,7 +65,7 @@ Submit an end-of-transfer procedure
 Declare that flow is finished
 ```
 
-For each command, the {{< TransferCFT/componentshortname  >}} command interface performs the following
+For each command, the  {{< TransferCFT/componentshortname  >}} command interface performs the following
 actions:
 
 -   Checks the syntax

@@ -41,12 +41,12 @@ of the PeSIT version D protocol.
 
 **CFT profile**: The
 PeSIT version D protocol is used outside the context of the SIT network,
-the partner also having a {{< TransferCFT/componentshortname  >}}. Its functionality level is greater than the PeSIT
+the partner also having a  {{< TransferCFT/componentshortname  >}}. Its functionality level is greater than the PeSIT
 D EXTERN profile specifications.
 
 **ANY profile**: Corresponds
 to the “non-SIT” (external to SIT network) standardized definition of
-the PeSIT version E protocol. This profile includes {{< TransferCFT/componentshortname  >}} profile facilities
+the PeSIT version E protocol. This profile includes  {{< TransferCFT/componentshortname  >}} profile facilities
 as standard.
 
 Additional facilities are provided between two Transfer
@@ -57,7 +57,7 @@ These facilities are based on the use of the PI 99 (free PI).
 >
 > In server mode, the PROF parameter
 > can take either the EXTERN, CFT, or ANY values (corresponding to the “non-SIT”
-> profiles): indeed, in server mode, the Transfer CFT automatically
+> profiles): indeed, in server mode, the  Transfer CFT automatically
 > adapts itself to the “non-SIT” profile proposed by the requesting partner.
 
 [Return to Command index](../../)

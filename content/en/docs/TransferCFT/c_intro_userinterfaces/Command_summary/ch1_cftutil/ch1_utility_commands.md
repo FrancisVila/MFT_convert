@@ -70,11 +70,11 @@ DUMP NAME = name,
     -   Erecnum: The registration number from which the display is stopped.
     -   Keypos: The key position in the record (only one organization indexed).
     -   Keylen: The key length (only for an indexed organization).
-    -   Type: File type for one character. The file type is system-dependent.
+    -   Type: File type for one character. The file type is  system-dependent.
 
 #### Features
 
-ICMCIA value for the name parameter will display the ​​ICM work area.
+ICMCIA value for the name parameter will display the ​​ICM  work area.
 
 #### Example
 

@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTP",
     "linkTitle": "CFTP messages",
     "weight": "340"
-}This topic lists the CFTPxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTPxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -216,7 +216,7 @@ Error
 <span id="CFTP21E"></span>CFTP21E The client private key &key cannot be loaded from &origin
 CFTP21E The client private key &key cannot be loaded from &origin
 Explanation
-Could not load the private key defined in the CLIPRIVKEY parameter from file (&origin = file) or PKI database (&origin = PKI database).
+Could not load the private key defined in the CLIPRIVKEY  parameter from file (&origin = file) or PKI database (&origin = PKI database).
 Action
 Check if the key has been inserted in the PKI database and that the key name is correct. For a file, check the file name and file format (should be RSA).
 ```
@@ -230,7 +230,7 @@ Error
 <span id="CFTP22E"></span>CFTP22E The client public key &key cannot be loaded from &origin
 CFTP22E The client public key &key cannot be loaded from &origin
 Explanation
-Could not load the public key defined in the CLIPRIVKEY parameter from file (&origin = file) or PKI database (&origin = PKI database).
+Could not load the public key defined in the CLIPRIVKEY  parameter from file (&origin = file) or PKI database (&origin = PKI database).
 Action
 Check if the key has been inserted in the PKI database and that the key name is correct. For a file, check the file name and file format (should be RSA).
 ```
@@ -241,10 +241,10 @@ Check if the key has been inserted in the PKI database and that the key name is 
 V23 format
 V24 format
 Warning
-<span id="CFTP23W"></span>CFTP23W CFTNET &id for CFTPARM &id uses &net network \_ Disabled
-CFTP23W CFTNET &id for CFTPARM &id uses &net network \_ Disabled
+<span id="CFTP23W"></span>CFTP23W CFTNET &id for CFTPARM &id uses &net network _ Disabled
+CFTP23W CFTNET &id for CFTPARM &id uses &net network _ Disabled
 Explanation
-Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
+Only CFTNET  TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
 Action
 Remove the unsupported protocols if you no longer want this message to display.
 ```
@@ -255,10 +255,10 @@ Remove the unsupported protocols if you no longer want this message to display.
 V23 format
 V24 format
 Warning
-CFTP24W CFTPROT &id uses CFTNET &id \_ Disabled
-CFTP24W CFTPROT &id uses CFTNET &id \_ Disabled
+CFTP24W CFTPROT &id uses CFTNET &id _ Disabled
+CFTP24W CFTPROT &id uses CFTNET &id _ Disabled
 Explanation
-Only CFTNET TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
+Only CFTNET  TCP type protocols are loaded when starting {{< TransferCFT/componentlongname >}}.
 Action
 Remove the unsupported protocols if you no longer want this message to display.
 ```

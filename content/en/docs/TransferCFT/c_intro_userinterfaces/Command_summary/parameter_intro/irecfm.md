@@ -21,11 +21,11 @@ parameter is forced to V.
 
 ```
 OS400, UNIX
-The variable format concept is specific to {{< TransferCFT/componentshortname >}} and is not valid
+The variable format concept is specific to  {{< TransferCFT/componentshortname >}} and is not valid
 for the systems indicated.
 ```
 
-Refer to the {{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your
+Refer to the  {{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your
 OS.
 
 [Return to Command index](../../)

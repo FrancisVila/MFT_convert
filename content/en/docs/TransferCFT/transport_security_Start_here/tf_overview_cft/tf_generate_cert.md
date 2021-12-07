@@ -16,7 +16,7 @@ To generate certificates, for example using the XCA utility (X Certificate and K
     -   Select: **New Certificate**
 
 3.  Select the **Source** tab.
-    -   In the **Signature algorithm** field, select **MD5**.
+    -   In  the **Signature algorithm** field, select **MD5**.
 
 4.  Select the **Subject** tab.
     -   Complete the fields for your certificate.
@@ -93,13 +93,13 @@ To generate certificates, for example using the XCA utility (X Certificate and K
 To create a self signed certificate:
 
 ```
-openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out XPP\_Sample\_User1.pem -keyout MyKey.key
+openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out XPP_Sample_User1.pem -keyout MyKey.key
 ```
 
 Export the certificate in PKCS12 format:
 
 ```
-openssl pkcs12 -export -out XPP\_Sample\_User1.p12 -inkey MyKey.key -in XPP\_Sample\_User1.pem
+openssl pkcs12 -export -out XPP_Sample_User1.p12 -inkey MyKey.key -in XPP_Sample_User1.pem
 ```
 
 ## Use the CFTTF utility to generate your passphrase
@@ -114,17 +114,17 @@ Example
 
 CFTTF –pw Axway
 
-OUTPUT: m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
+OUTPUT:   m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=
 
 ## Update the entity.xml file
 
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if `XPP_Sample_User1.pem` is in the `/home/cft/runtime/conf/tf/certs/pub` folder, then:
 
 ```
-<pkiEntity id="user1\_pub">
+<pkiEntity id="user1_pub">
 <certificate>
 <format>PEM</format>
-<location>/home/cft/runtime/conf/tf/certs/priv/XPP\_Sample\_User1.p12</location>
+<location>/home/cft/runtime/conf/tf/certs/priv/XPP_Sample_User1.p12</location>
 </certificate>
 </pkiEntity>
 ```
@@ -132,10 +132,10 @@ In  the delivered entity.xml file, update the location in the user1\_pub entity
 In  the delivered entity.xml file, update the location in the user1\_pub entity. For example, if `XPP_Sample_User1.p12` is in the `/home/cft/runtime/conf/tf/certs/priv` folder and the password=Axway, then:
 
 ```
-<pkiEntity id="user1\_priv">
+<pkiEntity id="user1_priv">
 <certificate>
 <format>PKCS#12</format>
-<location>/home/cft/runtime/conf/tf/certs/privXPP\_Sample\_User1.p12</location>
+<location>/home/cft/runtime/conf/tf/certs/privXPP_Sample_User1.p12</location>
 <passPhrase>m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE=</passPhrase>
 </certificate>
 </pkiEntity>
@@ -153,7 +153,7 @@ As the private key `user1_priv` is referenced in` enfile_cms.xms` file , you mus
 <signature requested="yes">
 <signer>
 <signatureAlgorithm>sha1WithRsaEncryption</signatureAlgorithm>
-<pkiEntity id="user1\_priv" password="m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE="></pkiEntity>
+<pkiEntity id="user1_priv" password="m8ZWaOMdkj70UzJZD+wv8gSsi1ycSTEJ5c0H6SH6dLE="></pkiEntity>
 </signer>
 </signature>
 ```

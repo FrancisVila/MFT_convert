@@ -19,17 +19,19 @@ Example
 CFTSEND
  
 //LIB    JCLLIB ORDER=(cftv2.INSTALL)
+                    
 //      INCLUDE MEMBER=cftenv
+                    
 //CFTSEND  EXEC PCFTUTIL,PARM='/1=&CFTENV',
 //         QUAL=&CFTENV,OUT=&OUT
 //CFTIN    DD \*
    SEND PART=LOOP,IDF=SAMPLE,
-           FNAME=%\_ARGV1%.FTEST
+           FNAME=%_ARGV1%.FTEST
 /\*
  
 The parameters shown in bold are substituted during the customization phase.
 CFTUTIL parameters:
-/1= Transfer CFT prefix environment \[%\_ARGV1%\]
+/1= Transfer CFT prefix environment [%_ARGV1%]
 This JCL contains others templates, such as:
 • Transfer a pds member.
 • Transfer files from a files list.
@@ -56,10 +58,10 @@ CFTSENDS
    CONFIG TYPE=COM,FNAME=$CFTTCP
  
    SEND PART=LOOP,IDF=SAMPLE,
-      FNAME=%\_ARGV1%.FTEST
+      FNAME=%_ARGV1%.FTEST
 The parameters shown in bold are substituted during the customization phase
 CFTUTIL parameters:
-/1= Transfer CFT prefix environment \[%\_ARGV1%\]
+/1= Transfer CFT prefix environment [%_ARGV1%]
 ```
 <span id="CFTSENDM request deposit in XMEM mailbox"></span>
 

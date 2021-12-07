@@ -3,7 +3,7 @@
     "linkTitle": "CFTNET - Network resources ",
     "weight": "260"
 }The
-*Network resources* object corresponds to the CFTNET object in the command line operations.
+*Network resources* object  corresponds to the CFTNET object in the command line operations.  
 
 -   Command syntax
     [CFTNET](../../../c_intro_userinterfaces/command_summary#CFTNET)
@@ -17,17 +17,17 @@
 The local network resources object:
 
 -   Defines a network
-    resource which, for the {{< TransferCFT/componentshortname >}}, is an entity through which connections
+    resource which, for the  {{< TransferCFT/componentshortname >}}, is an entity through which connections
     can be established
 -   Supplies the Transfer
     CFT with a number of items of information which are required to access
-    the network of the type indicated, TCP/IP and so on, through
+    the network of the type indicated,  TCP/IP and so on, through
     a resource
 
 This object includes:
 
 -   Parameters used
-    to manage the {{< TransferCFT/componentshortname >}} internal facilities: control of connection
+    to manage the  {{< TransferCFT/componentshortname >}} internal facilities: control of connection
     establishing mechanisms for example
 -   Parameters describing
     the network environment characteristics defined by the local operating
@@ -55,7 +55,7 @@ The TYPE parameter takes the value TCP/IP.
 
 The check for the maximum number of CFTNET objects managed, performed
 during the parameter updating phase, may differ in certain environments
-from the check performed during {{< TransferCFT/componentshortname  >}} execution. When Transfer
+from the check performed during  {{< TransferCFT/componentshortname  >}} execution. When Transfer
 CFT detects an excessive number of CFTNET objects, the following message
 appears: 
 
@@ -64,7 +64,7 @@ appears: 
 ## How does the CFTNET object work?
 
 CFTNET is the network local resource declaration. It is used to define
-{{< TransferCFT/componentshortname  >}} network resources. CFTNET also supplies the {{< TransferCFT/componentshortname  >}}
+  {{< TransferCFT/componentshortname  >}} network resources. CFTNET also supplies the  {{< TransferCFT/componentshortname  >}}
 with information required to access the required network for the type
 indicated.
 
@@ -72,7 +72,7 @@ The CFTNET objects define the network parameters for partners in a given
 group. This information includes:
 
 -   Network
-    location of the {{< TransferCFT/componentshortname >}} partner
+    location of the  {{< TransferCFT/componentshortname >}} partner
 -   Time slots
     for calls on the network
 -   Connection
@@ -90,7 +90,7 @@ with the following definitions and links.
 These links enable relationships between:
 
 -   The resources
-    which can be used by {{< TransferCFT/componentshortname >}}
+    which can be used by  {{< TransferCFT/componentshortname >}}
 
 Each of these resources is defined by a CFTNET command.
 The associated identifier - ID parameter - has the same value as the one

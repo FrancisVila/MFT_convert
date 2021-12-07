@@ -83,16 +83,16 @@ It is first called at each step described previously and:
 
 Unix/Windows only
 
-A Transfer CFT PKI exit is called through a C function called `cftpkie`. How the PKI exit is processed by Transfer CFT then depends on the operating system.
+A Transfer CFT  PKI exit is called through a C function called `cftpkie`. How the PKI exit is processed by Transfer CFT then depends on the operating system.
 
 To define a PKI exit, generate a DLL and set the following UCONF parameters:
 
 -   Set `pki.type` = `exit`
 -   Specify `pki.exit.libpath` as the path to the dynamic load library
 
-A sample of how to generate this exit is located in the `<cft.runtime_dir>/src/exit` directory. You can invoke a makefile to generate this DLL (among other things) from the `cftpkie.c` source file located in the same directory. Before calling this makefile, load the Transfer CFT profile.
+A sample of how to generate this exit is located in the `<cft.runtime_dir>/src/exit` directory. You can invoke a makefile  to generate this DLL (among other things) from the `cftpkie.c` source file located in the same directory. Before calling this makefile, load the Transfer CFT profile.
 
-You can define only one user function, `cftpkie`, for Transfer
+You can define only one user function, `cftpkie`,  for Transfer
 CFT, with the syntax as follows:
 
 ```

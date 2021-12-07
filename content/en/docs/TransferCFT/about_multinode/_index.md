@@ -2,7 +2,7 @@
     "title": "Multi-node architecture",
     "linkTitle": "Multi-node architecture",
     "weight": "170"
-}This topic describes the {{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
+}This topic describes the  {{< TransferCFT/componentshortname  >}} multi-node feature, which provides you with horizontal scalability and high availability for failovers. Following a brief review of terms, this topic describes:
 
 -   Active/Active clusters
 -   Active/Passive clusters
@@ -11,11 +11,11 @@
 
 Terminology
 
-The {{< TransferCFT/componentshortname  >}} active-active architecture is based on hosts, nodes, and a shared file system.
+The  {{< TransferCFT/componentshortname  >}} active-active architecture is based on hosts, nodes, and a shared file system.
 
-*What is a host?* A host refers to a physical or virtual server located behind a load balancer, or other DNS mechanism. A server can host zero or multiple nodes. {{< TransferCFT/componentshortname  >}} itself does not manage the round robin or other load balancing mechanisms.
+*What is a host?* A host refers to a physical or virtual server located behind a load balancer, or other DNS mechanism. A server can host zero or multiple nodes.  {{< TransferCFT/componentshortname  >}} itself does not manage the round robin or other load balancing mechanisms.      
 
-*What is a node?* A node is a {{< TransferCFT/componentshortname  >}} runtime running on a host. Multiple nodes are called a {{< TransferCFT/componentshortname  >}} cluster, which can run on one or multiple hosts.
+*What is a node?* A node is a  {{< TransferCFT/componentshortname  >}} runtime running on a host. Multiple nodes are called a  {{< TransferCFT/componentshortname  >}} cluster, which can run on one or multiple hosts.
 
 *What is a shared file system?* A shared file system is a file system resource that is shared by several hosts.
 
@@ -24,7 +24,7 @@ The {{< TransferCFT/componentshortname  >}} active-active architecture is based 
 The Transfer CFT active/active architecture, multi-node with multi-host functionality, includes:
 
 -   Scalability to overcome node transfer and session restrictions (for example, the maximum number of simultaneous transfers per node).
--   Automatic node restart after a host failure allowing another host to take over.
+-   Automatic node restart  after a host failure allowing another host to take over.
 -   Rolling updates (patch and service pack) to provide continuous availability.
 
 These services provide more than a balance of the total load among nodes, in active/active if one host goes down the other hosts recuperates the entire load.
@@ -50,7 +50,7 @@ The active/passive architecture requires a shared file system.
 
 -   Only one active host with only one runtime
 -   Available on all {{< TransferCFT/transfercftname >}} versions
--   Supported platforms: Windows Server with MSCS , Linux, Solaris, AIX /HACMP, and IBM i
+-   Supported  platforms: Windows Server with MSCS , Linux, Solaris, AIX /HACMP, and IBM i
 
 ## Multi-node architecture
 
@@ -83,7 +83,7 @@ All runtime data are stored on a shared file system.
 The following internal datafiles are shared between nodes:
 
 -   Parameter internal datafiles (CFTPARM)
--   Partners internal datafiles (CFTPART)
+-   Partners  internal datafiles (CFTPART)
 -   Unified configuration (UCONF)
 -   PKI base (CFTPKU)
 -   Main communication media file (CFTCOM)
@@ -108,7 +108,7 @@ The following internal datafiles are node specific, and the filename is flagged 
 There are two possibilities when a node manager detects a node failure:
 
 -   If it is a **local** node failover, the node manager automatically attempts to restart the node on the local server.
--   If it is a **remote** node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager restarts the node on the local server.
+-   If it is a  **remote** node failover, the node manager waits for the remote node manager (if it is still active) to restart the node. If the remote node manager does not restart the node  before the timeout, the local node manager  restarts the node on the local server.
 
 After the node is restarted, whether local or remote, it completes all transfer requests that were active when the failure occurred.
 
@@ -122,7 +122,7 @@ Possible scenarios include:
 
 -   If another node has the catalog record, the node retrieves it and performs the transfer.
 -   If no nodes have the record, an error is returned.
--   If any one of the nodes does not respond, the requesting node continues to retry all nodes until the session's timeout. Once the timeout is reached, the node ends the connection. After this, the remote partner retries the request according to its retry parameters.
+-   If any one of the nodes does not respond, the requesting node continues to retry all nodes until  the session's timeout. Once the timeout is reached, the node ends the connection. After this, the remote partner retries the request according to its retry parameters.
 
 If a node fails during the transfer recovery process, the catalog record is locked in both catalogs until both nodes are available for recovery.
 
@@ -132,13 +132,13 @@ In a multi-node architecture there is one primary communication file, and then a
 
 How does communication between the primary file and secondary files occur?
 
-The dispatcher (CFTMCOM) process controls the relationship between the primary COM file and the specific secondary COM files.
+The dispatcher (CFTMCOM) process   controls the relationship between the primary COM file and the specific secondary COM files.
 
 What happens in the case of a communication breakdown?
 
 No breakdown occurs because there is no communication between the nodes. If the dispatcher fails, another active node takes over as the dispatcher.
 
-When and how is the transfer request removed from the communication file?
+When and how is the transfer request removed from the  communication file?
 
 -   It is removed from the primary communication file once the dispatcher has written it to the secondary communication file.
 -   It is then removed from the secondary file once CFTMAIN has processed the transfer request.

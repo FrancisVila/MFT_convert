@@ -58,7 +58,7 @@ and grouped into the following categories:
 ## Packaging parameters
 
 The following table lists the UCONF identifiers, default values, and former Windows and UNIX file values.
-&lt;/p>
+                &lt;/p>
 
 
 | ID  | Default  | Windows  | UNIX  |
@@ -142,7 +142,7 @@ Values for ID where the type is Common.
 
 ## {{< TransferCFT/componentshortname  >}} probe configuration
 
-Use the following parameters to define {{< TransferCFT/componentshortname  >}} probes.
+Use the following parameters to define  {{< TransferCFT/componentshortname  >}} probes.
 
 
 | ID  | Description  |
@@ -171,7 +171,7 @@ Use the following parameters to define {{< TransferCFT/componentshortname  >}} p
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  |  Dictates if the switch log occurs at {{< TransferCFT/componentshortname  >}} server shutdown  |
 
 
 ## Automatically expand the catalog
@@ -213,7 +213,7 @@ See also [Automatic catalog expansion](../../admin_monitoring_intro/auto_expand_
 
 ### Startup configuration
 
-PURGE when starting {{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
+PURGE when starting  {{< TransferCFT/componentshortname  >}} is now configurable, with the following options:
 
 
 | Parameter  | Default  | Description  |
@@ -226,7 +226,7 @@ PURGE when starting {{< TransferCFT/componentshortname  >}} is now configurable,
 
 ### Dynamically purge catalog
 
-These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.
+These parameters modify the amount of time to keep transfers in catalog before purging, without directly modifying the CFTCAT object. For each parameter, enter an integer for the amount of time, optionally followed by the letter D, H, or M to indicate day, hour, or minute respectively. See the example section [Purging the catalog](../../admin_commands_intro/purge_catalog) for details. If you enter the default value, the value defined in CFTCAT configuration is used.      
 
 
 | Parameter  | Default  | Description  |
@@ -286,27 +286,27 @@ Default value
 
 Description
 
-Uconf:cft.listcat\_compat
+Uconf:cft.listcat_compat
 No
 Defines the LISTCAT display:
 
 -   Yes = Display using the former product format, which does not include the new columns. The format in LISTCAT is DTSA.
 -   No= Display using the product version 3.0 and higher catalog format. The format in LISTCAT is DTSASPP.
 
-Uconf:cft.state\_compat
+Uconf:cft.state_compat
 No
 Defines the transfer states:
 
 -   Yes= The phase state is fully compatible with the states in versions prior to 3.0.
 -   No = The state reflects the phase used in Transfer CFT 3.0 and higher. This uses phase instead of the former states, except during the Transfer phase, when the former state is the same as the phase step.
 
-**Note**: Uconf:cft.state\_compat also impacts the [acknowledgement](../../../concepts/phase_and_phasestep/ack_phase) behavior if ackstate is set to ignore.
+**Note**: Uconf:cft.state_compat also impacts the [acknowledgement](../../../concepts/phase_and_phasestep/ack_phase) behavior if ackstate is set to ignore.
 ```
 <span id="Deactivate_idf"></span>
 
 ## Deactivate the default IDF
 
-You can deactivate the default use of the IDF value for the CFTSEND and CFTRECV commands.
+You can deactivate the default use of the IDF value for the  CFTSEND and CFTRECV commands.
 
 
 | Parameter  | Default  | Type  | Description  |

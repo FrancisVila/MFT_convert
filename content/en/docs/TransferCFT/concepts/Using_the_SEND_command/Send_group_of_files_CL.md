@@ -3,7 +3,7 @@
     "linkTitle": "Sending a group of files",
     "weight": "200"
 }You can use the FNAME parameter in a SEND command, when prefixed with the &lt;file\_symb>
-indirection character, to trigger SEND operations that correspond to:
+indirection character,  to trigger SEND operations that correspond to:
 
 -   A list of file names in an indirection file (SEND FNAME = #LIST for example) in heterogeneous mode only
 -   A series of files indicated by a generic name (SEND
@@ -147,13 +147,13 @@ These procedure types are described in detail further on in this topic.
 #### Homogeneous send for a group of files
 
 A homogeneous send occurs between two Transfer CFT that run on the same operating
-system. This transfer procedure concatenates at the site sending the group of files and de-concatenates upon reception.
+system. This transfer procedure concatenates at the site sending the group of files  and de-concatenates  upon reception.
 
 Mandatory parameters for homogeneous sends include:
 
 -   WFNAME: Determines transmission and reception in homogeneous sends, because
     the file resulting from the concatenation is the file that is sent.
--   SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when CFTPART command's SYST value is the same as the local operating system.
+-   SYST: Defined for a remote partner, where the default value is the local operating system. Homogeneous transfers are only possible when  CFTPART command's SYST value is the same as the local operating system.
 
 
 | Platform  | UNIX-like environment  | Native  |
@@ -170,17 +170,22 @@ Example
 An example of a homogeneous send in a Windows environment:
 
 ```
-cftsend id = copie,
-fname = #c:\\e\\cft320\\tmp\\a\*,
-wfname = c:\\e\\cft320\\&idtu.snd,
-frecfm = v,
-ftype = b,
-mode = create
-cftrecv id = copie,
-fname = c:\\cft320\\bin\\recv,
+cftsend id      = copie,
+        
+fname   = #c:\\e\\cft320\\tmp\\a\*,
+        
+wfname  = c:\\e\\cft320\\&idtu.snd,
+        
+frecfm  = v,
+        ftype   = b,
+mode    = create
+cftrecv id      = copie,
+fname   = c:\\cft320\\bin\\recv,
+        
 faction = delete,
-wfname = &idtu.rcv,
-ftype = b
+        
+wfname  = &idtu.rcv,
+ftype   = b
 ```
 
 #### Heterogeneous send for a group of files
@@ -197,7 +202,7 @@ Unix: fname =@directory/\*
 
 #### Force heterogeneous mode for a group of files
 
-In <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter<span class="code"> cft.server.force\_heterogeneous\_mode</span> allows you to do this, effectively disabling homogeneous mode even if the partner is configured for homogeneous exchanges.
+In  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> both homogeneous and heterogeneous mode are enabled by default. However, you may want to ensure that groups of files are transferred using only the heterogeneous mode. The UCONF configuration parameter<span class="code"> cft.server.force\_heterogeneous\_mode</span> allows you to do this,  effectively disabling  homogeneous mode even if the partner is configured for homogeneous exchanges.  
 
 For more information on sending groups of files and heterogeneous mode exchanges, see <a href="#" class="selected">Sending a group of files</a>.
 
@@ -306,17 +311,22 @@ Example
 In Windows, an example of a heterogeneous receive:
 
 ```
-cftsend id = copie,
-fname = #c:\\e\\cft320\\tmp\\a\*,
-wfname = c:\\e\\cft320\\&idtu.snd,
-frecfm = v,
-ftype = b,
-mode = create
-cftrecv id = copie,
-fname = c:\\cft320\\bin\\recv,
+cftsend id      = copie,
+        
+fname   = #c:\\e\\cft320\\tmp\\a\*,
+        
+wfname  = c:\\e\\cft320\\&idtu.snd,
+        
+frecfm  = v,
+        ftype   = b,
+mode    = create
+cftrecv id      = copie,
+fname   = c:\\cft320\\bin\\recv,
+        
 faction = delete,
-wfname = &idtu.rcv,
-ftype = b
+        
+wfname  = &idtu.rcv,
+ftype   = b
 ```
 <span id="Create"></span>
 
@@ -336,7 +346,7 @@ For example, a transfer from a Unix platform to Windows, the following filter wo
 ```
  CFTSEND ID = 'findfile',
  FILTERTYPE = 'EREGEX',
- FILTER = '^\[0-9a-zA-Z\]+\[0-9\]{4}.jpg'
+ FILTER = '^[0-9a-zA-Z]+[0-9]{4}.jpg'
 ...
  
 SEND PART = PARIS,
@@ -350,7 +360,7 @@ For example on a z/OS platform, the following filter would include the files AXD
 ```
 CFTSEND ID = 'TREGEX03',
 FILTERTYPE = 'EREGEX',
-FILTER = '^-\[\\.\]+\*\\.-\[^\\.\]+\*\\.GRPFI(L|M).A(4|5)\\.'
+FILTER = '^-[\\.]+\*\\.-[^\\.]+\*\\.GRPFI(L|M).A(4|5)\\.'
 ...
  
 SEND PART = PARIS,
@@ -367,7 +377,7 @@ For example, a transfer between Unix platforms, the following filter would inclu
 ```
  CFTSEND ID = 'findfile',
  FILTERTYPE = 'EREGEX',
- FILTER = '^\[0-9a-zA-Z\]+\[0-9\]{4}.jpg'
+ FILTER = '^[0-9a-zA-Z]+[0-9]{4}.jpg'
 ...
  
 SEND PART = PARIS,
@@ -379,7 +389,7 @@ WFNAME = '&idtu.tmp'
 
 ## STRJCMP filter
 
-A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted as follows:
+A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the question mark (?) characters. The STRJCMP filter characters are interpreted  as follows:
 
 
 | Character  | Description  | Example  |
@@ -392,7 +402,7 @@ A STRJCMP pattern-matching filter can contain the asterisk (\*) and/or the ques
 
 EREGEX (extended regular expressions) is the use of special characters and strings to define a search pattern. In Transfer CFT, you can use these search patterns to create filters.
 
-In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
+In POSIX-Extended regular expressions, all characters match themselves meaning they match a sub-string anywhere inside the string to be searched. For example *abc*, matches  abc123, 123abc, and 123abcxyz. Some symbols are exceptions though; commonly used symbols and example usages are listed in the following table.
 
 
 | Symbol  | Indicates  | Example  |
@@ -425,7 +435,7 @@ To avoid this you can use the CFTPARM parameter SNDINDFILEERR to define the poli
 Parameter values:
 
 -   CONTINUE (default): Keep the existing behavior, which creates as many transfer requests as there are lines in the input file.
--   ABORT: If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200, and no other child requests are created.
+-   ABORT:  If the input file line is not a file, this gives the current transfer the status K diagi 132 diagp SNDINDFI, the generic transfer status is K diagi 200,  and no other child requests are created.
 
 Catalog details
 

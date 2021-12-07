@@ -10,7 +10,7 @@ the ACT command to reactivate:
 -   CRON object (CFTCRON)
 -   Folder object (CFTFOLDER)
 
-Command guide: [ACT](../../command_summary#ACT)
+Command  guide: [ACT](../../command_summary#ACT)
 
 
 |  Parameter  |  Description  |
@@ -29,7 +29,7 @@ Using CFTUTIL you can perform the following commands.
 Syntax
 
 ```
-ACT TYPE=PART,ID=<CFTPART\_ID>,MODE=<mode>
+ACT TYPE=PART,ID=<CFTPART_ID>,MODE=<mode>
 ```
 
 Where:
@@ -49,7 +49,7 @@ Returning the following output:
 
 ```
 CFTU20I Part=PARIS : NOACTIVE -> ACTIVEBOTH
-CFTU00I ACT \_ Correct (TYPE=PART,ID=PARIS)
+CFTU00I ACT _ Correct (TYPE=PART,ID=PARIS)
 ```
 
 You can choose to reactivate in either requester or server mode, or
@@ -79,7 +79,7 @@ All notifications to Sentinel are reactivated. However, the UCONF` sentinel.xfb.
 Syntax
 
 ```
-ACT TYPE=CRON,ID=<CFTCRON\_ID>
+ACT TYPE=CRON,ID=<CFTCRON_ID>
 ```
 
 Where `CFTCRON_ID` is the identifier of the CRON object to activate. To activate several CRON objects with a single command, use wildcard characters or meta characters.
@@ -96,7 +96,7 @@ Returning the following output:
 
 ```
 CFTU20I Cronjob=CRON1 : NOACTIVE -> ACTIVE
-CFTU00I ACT \_ Correct (TYPE=CRON,ID=CRON1)
+CFTU00I ACT _ Correct (TYPE=CRON,ID=CRON1)
 ```
 
 ### Activate a folder object
@@ -104,7 +104,7 @@ CFTU00I ACT \_ Correct (TYPE=CRON,ID=CRON1)
 Syntax
 
 ```
-ACT TYPE=FOLDER,ID=<CFTFOLDER\_ID>
+ACT TYPE=FOLDER,ID=<CFTFOLDER_ID>
 ```
 
 Where `CFTFOLDER_ID` is the identifier to the folder object to activate. To activate several folder objects with a single command, use wildcard characters or meta characters.
@@ -121,7 +121,7 @@ Returning the following output:
 
 ```
 CFTU20I Folder=USER1 : NOACTIVE -> ACTIVE
-CFTU00I ACT \_ Correct (type=folder,id=user1)
+CFTU00I ACT _ Correct (type=folder,id=user1)
 ```
 
 The UCONF` folder_monitoring.enable` parameter must be set to `Yes`, otherwise the folder is not activated even if the state is active.

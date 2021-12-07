@@ -55,22 +55,22 @@ Refer to the programming examples, RPG COPY clauses, and procedures, which are s
 
 ## Creating an API application
 
-The `TCPPARAM` configuration sample is located in `CFTPROD/UTIN`.
+The  `TCPPARAM`  configuration sample is located in `CFTPROD/UTIN`.
 
 ## Application components
 
 The `<installdir>/runtime/src/capi `subdirectory contains the:
 
 -   Sample source module,
-    called `apixmp1.c,` which interacts with {{< TransferCFT/componentshortname >}}. This program
-    reads the {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
+    called `apixmp1.c,` which interacts with  {{< TransferCFT/componentshortname >}}. This program
+    reads the  {{< TransferCFT/componentshortname >}} catalog and displays its contents in part or in
     full, depending on the restrictions set in the command line.
 -   `makefile`
     compilation procedure, which uses the` apixmp1.c `sample source module
     to generate the APIXMPI executable file.
 
 The `CFTPGM `library subdirectory contains the `libapisrv1.srvpgm`
-module required to use {{< TransferCFT/componentshortname  >}} APIs.
+module required to use  {{< TransferCFT/componentshortname  >}} APIs.
 
 ## Generating the application
 
@@ -84,11 +84,11 @@ To generate the *APIXMP1* sample program:
 To test the configuration:
 
 1.  Connect to the IBM session with your Transfer CFT user.
-2.  Generate the {{< TransferCFT/componentshortname >}} internal datafiles
+2.  Generate the  {{< TransferCFT/componentshortname >}} internal datafiles
     using `cftinit` with the configuration file:  
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
 3.  When the` cftinit complete`
-    message is displayed, run {{< TransferCFT/componentshortname >}} using the command:  
+    message is displayed, run  {{< TransferCFT/componentshortname >}} using the command:  
     cftstart
 4.  When the `CFTMAIN process   ID is xxxxx `message is displayed, perform a transfer:  
     CALL PGM(CFTUTIL) PARM(SEND 'part=boston,idf=txt')
@@ -108,6 +108,6 @@ The result should correspond to the catalog contents:
 > PART=BOSTON ,IDT=&lt;dynamic identifier>,IDF=TXT  
 > APIXMP1 \_ 2 record(s) found
 
-Stop {{< TransferCFT/componentshortname  >}}:
+Stop  {{< TransferCFT/componentshortname  >}}:
 
      cftstop

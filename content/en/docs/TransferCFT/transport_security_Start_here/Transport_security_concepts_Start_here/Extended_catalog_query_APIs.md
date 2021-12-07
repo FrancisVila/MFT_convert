@@ -20,13 +20,13 @@ These fields are as follows:
 ```
 char cMode ;             /\* Session mode (client/server) \*/
 char cAuthPolicy ;       /\* Session auth (server/both) \*/
-char sCipher\[3+1\] ;      /\* Session cipher suite \*/
-char sParm\[64+1\] ;       /\* Profile free parameter \*/
-char sRemoteCn\[32+1\];    /\* CN of remote user certificate \*/
-char sRemoteCaId\[8+1\];   /\* CA alias of remote user certificate \*/
-char sUserCId\[8+1\];      /\* Local user certificate alias \*/
-char sCertFname\[64+1\];   /\* File including remote DER certificate \*/
-char sProf\[8+1\] ;        /\* SSL profile ID \*/
+char sCipher[3+1] ;      /\* Session cipher suite \*/
+char sParm[64+1] ;       /\* Profile free parameter \*/
+char sRemoteCn[32+1];    /\* CN of remote user certificate \*/
+char sRemoteCaId[8+1];   /\* CA alias of remote user certificate \*/
+char sUserCId[8+1];      /\* Local user certificate alias \*/
+char sCertFname[64+1];   /\* File including remote DER certificate \*/
+char sProf[8+1] ;        /\* SSL profile ID \*/
 ```
 
 The following table describes the new fields declared in the structure

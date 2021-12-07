@@ -137,6 +137,6 @@ The EXFxmp2 user function:
 -   Replaces the first
     byte of each non empty record with the ‘?’ character
 
-This sample is delivered with the {{< TransferCFT/componentshortname  >}} product.
+This sample is delivered with the  {{< TransferCFT/componentshortname  >}} product.
 Refer to the **exfxmp2.c** header
 in the delivered samples.

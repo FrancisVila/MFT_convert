@@ -2,7 +2,7 @@
     "title": "Processing  accounting files",
     "linkTitle": "Processing accounting files",
     "weight": "240"
-}You can write the statistical data for successful transfers to a file by defining the CFTACCNT type=file command as described in [Recording mode for statistical data](../../admin_intro/admin_config_commands/cftaccnt_concepts). You can then extract this data to use with other applications. The extracted data is available in C language for all platforms and in COBOL for z/OS and IBM i systems.
+}You can write the statistical data for successful transfers to a file by defining  the CFTACCNT type=file command as described in [Recording mode for statistical data](../../admin_intro/admin_config_commands/cftaccnt_concepts). You can then extract this data  to use with other applications. The extracted data is available in C language for all platforms and  in COBOL for z/OS and IBM i systems.
 
 ## Delivered files
 
@@ -11,7 +11,7 @@
 {{< TransferCFT/transfercftname  >}} provides an include file, `cftcnt.h`, that provides the account file record structure to be used by the program. Depending on the operating system, the file is located in:
 
 -   UNIX, Windows, HP NonStop, and IBM i (IFS): &lt;installdir>/home/inc
--   z/OS: Distrib..H (CFTCNT)
+-   z/OS:  Distrib..H (CFTCNT)
 
 ### Sample source
 
@@ -52,7 +52,7 @@ Perform the following steps if you are running on a z/OS system.
 Syntax
 
 ```
-EXACCT <install\_dir>/runtime/accnt/cftaccnt
+EXACCT <install_dir>/runtime/accnt/cftaccnt
 ```
 
 ### Windows example
@@ -60,13 +60,13 @@ EXACCT <install\_dir>/runtime/accnt/cftaccnt
 Syntax
 
 ```
-EXACCT <install\_dir>\\home\\distrib\\template\\src\\exit
+EXACCT <install_dir>\\home\\distrib\\template\\src\\exit
 ```
 
 ### z/OS example
 
 ```
-//S1 EXEC PGM=EXACCT,PARM='acount\_file\_name'
+//S1 EXEC PGM=EXACCT,PARM='acount_file_name'
 //SYSPRINT DD SYSOUT=\*
 //SYSOUT DD SYSOUT=\*
 ```

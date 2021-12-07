@@ -5,7 +5,7 @@
 }## Transfer concepts
 
 This section describes transfers, and how to create and
-manage your transfer operations using {{< TransferCFT/componentshortname  >}}.
+manage your transfer operations using {{< TransferCFT/componentshortname  >}}.  
 
 {{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
 consists of a set of processes that result in the exchange of files between
@@ -18,7 +18,7 @@ file transfer may consist of sending a file, group of files, or a message.
 Transfer CFT requires a certain number parameters, such as the protocol, to successfully perform transfers with partners.
 
 {{< TransferCFT/componentshortname  >}} provides
-a set of *objects* that allow you to define these transfer related parameters. Prerequisites to make file transfers between two Transfer CFTs include:
+a set of *objects* that allow you to define these transfer  related parameters. Prerequisites to make file transfers between two Transfer CFTs include:
 
 -   A common network, such as TCP
 -   A common protocol, such as PeSIT ANY
@@ -74,7 +74,7 @@ the hold status
 
 ### Model files: IDF
 
-Depending on the type of data to be sent, a model file identifier is assigned to each transfer, for example
+Depending on the type of data to be sent,  a model file identifier is assigned to each transfer, for example
 IDF = INVOICES. Processing operations and default values for transfer
 parameters and data file description parameters can be associated with
 a model file identifier.
@@ -110,7 +110,7 @@ by the {{< TransferCFT/componentshortname  >}} as a specific transfer. A message
 
 <span id="Transfer_identifier__IDT"></span><span id="Catalog_identifier__IDTU"></span>
 
-## Transfer records &lt;/h2>
+## Transfer  records         &lt;/h2>
 
 All transfer requests, either SEND or RECV, are recorded and saved in
 the Transfer CFT catalog file.
@@ -151,7 +151,7 @@ two additional types of identifiers, besides the IDM and IDF, that can correspon
 
 #### Transfer identifier: IDT
 
-The transfer identifier is a label associated with each transfer, that is, time stamping. However, the IDT synchronization with the current date and time is lost as soon as Transfer CFT manages more than 6 transfers per minute. This means that Transfer CFTs can have IDTs that differ by up to several months as compared with the current date.
+The transfer identifier is a label associated with each transfer, that is, time stamping. However, the IDT synchronization with the current date and time is lost as soon as Transfer CFT manages more than 6 transfers per minute. This means that  Transfer CFTs can have IDTs that differ by up to several months as compared with the current date.
 
 #### Catalog identifier: IDTU
 

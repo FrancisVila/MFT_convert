@@ -10,21 +10,21 @@
 
 \[WAITRESP = {1...32767} \]
 
-The timeout for internal communication between Transfer CFT
+The timeout  for internal communication between Transfer CFT
 tasks, which can be any
 value from **1** to <span style="font-weight: bold;">32767</span> seconds.
 
 Default values per operating system:
 
--   60: Windows
--   100: UNIX
--   600: z/OS (MVS)
--   1000: OS/400 (IBM i)
+-   60:  Windows
+-   100:  UNIX
+-   600:  z/OS (MVS)
+-   1000:  OS/400 (IBM i)
 
 This parameter is used for a synchronous exchange of requests between
 two monitor tasks during the initialization phase. After <span style="font-weight: bold;">waitresp</span>
 seconds without reply, the timeout is interrupted. A CFTS09 message is
-written in the log and the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization stops.
+written in the log and the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> initialization stops.
 
  
 

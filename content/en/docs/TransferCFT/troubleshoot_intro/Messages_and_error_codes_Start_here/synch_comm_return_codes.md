@@ -2,15 +2,15 @@
     "title": "Synchronous communication return codes",
     "linkTitle": "Synchronous communication return codes",
     "weight": "510"
-}This section describes diagnosing the return code when using synchronous communication with {{< TransferCFT/componentshortname  >}}.
+}This section describes diagnosing the  return code  when using synchronous communication with {{< TransferCFT/componentshortname  >}}.
 
 ## How to find the return code
 
-You can retrieve synchronous communication return codes using either a programming interface, such as CAPI, or CFTUTIL.
+You can retrieve synchronous communication return codes using either  a programming interface, such as CAPI, or CFTUTIL.
 
 ### Using a programming interface
 
-In this method the `cftau `function locates the return code, as shown in the following example:
+In this method  the `cftau `function locates the return code, as shown in the following example:
 
 ```
 …
@@ -23,17 +23,17 @@ printf("SWAITCAT NOK RC=%d\\n", rc);
 
 ### Using CFTUTIL
 
-This method uses the internal variable`_CMDRET` in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
+This method uses the  internal variable`_CMDRET`  in the SEND, RECV, or SWAITCAT commands to retrieve the return code. You can create a script similar to the following example:
 
 ```
 SWAITCAT SELECT='IDTU==”A000001”’
-IF NAME = \_CMDRET, VALUE = 0, TYPE = NEQ
+IF NAME = _CMDRET, VALUE = 0, TYPE = NEQ
 PRINT MSG=”SWAITCAT NOK RC=”
-PRINT MSG=%\_CMDRET%
+PRINT MSG=%_CMDRET%
 ENDIF
 ```
 
-Note though that the \_CMDRET value is not the same as the CFTUTIL return code, which could be:
+Note though that the \_CMDRET value is not  the same as the CFTUTIL return code, which could be:
 
 -   0: no error
 -   4: warning
@@ -42,18 +42,18 @@ Note though that the \_CMDRET value is not the same as the CFTUTIL return code, 
 In the following example the synchronous communication return code is 82, while the CFTUTIL is 8:
 
 ```
-5:\[CFU\] SWAITCAT SELECT='IDTU=="A000001"'
-CFTU25E SWAITCAT \_ Error (SWAITCAT\_NFOUND: select='IDTU=="A000001"' Not Found)
-CFTU00I (SELECT='IDTU=="A000001"')
-6:\[CFU\] PRINT MSG=%\_CMDRET%
+5:[CFU] SWAITCAT SELECT='IDTU=="A000001"'
+CFTU25E SWAITCAT _ Error (SWAITCAT_NFOUND: select='IDTU=="A000001"' Not Found)
+CFTU00I                    (SELECT='IDTU=="A000001"')
+6:[CFU] PRINT MSG=%_CMDRET%
 **82**
-CFTU00I PRINT \_ Correct (MSG=82)
-7:\[CFU\] /END
-7:\[CFU\] CFTU00I RETURN \_ Correct (**CODE=8**)
+CFTU00I PRINT    _ Correct (MSG=82)
+7:[CFU] /END
+7:[CFU] CFTU00I RETURN   _ Correct (**CODE=8**)
 CFTU20I Number of Command(s) 6
-CFTU20I Number of error(s) 1
-CFTU20I Ending Session on 21/06/2012 Time is 16:06:32
-CFTU20I Session active for 0:01:42
+CFTU20I Number of error(s)   1
+CFTU20I Ending   Session on 21/06/2012 Time is 16:06:32
+CFTU20I Session active for  0:01:42
 ```
 
 ## Send and receive related errors
@@ -77,7 +77,7 @@ For the return codes 70 through 79, the error occurred in the SEND or RECV trans
 
 ## SWAITCAT related errors
 
-For the return codes 80 through 87, the error is related to the SWAITCAT command. Refer to the SWAITCAT [Concepts]() or [Examples](../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks) sections for more information.
+For the return codes 80 through 87, the error is related to the SWAITCAT command. Refer to the SWAITCAT [Concepts]() or [Examples](../../../app_integration_intro/synch_comm_tcpip_intro/sync_transfer_request_tasks) sections for more information.  
 
 
 | RC  | Error  | Description  | Action  |

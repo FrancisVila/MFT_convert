@@ -2,15 +2,15 @@
     "title": "Upgrade a Transfer CFT multi-node installation",
     "linkTitle": "Upgrade a multi-node installation",
     "weight": "180"
-}This section describes how to upgrade from a Transfer CFT 3.1.3, 3.2.x, 3.3.2, or 3.4 multi-node, multihost installation to Transfer CFT {{< TransferCFT/releasenumber  >}}.
+}This section describes how to upgrade from a Transfer CFT 3.1.3, 3.2.x,  3.3.2, or 3.4 multi-node, multihost installation to Transfer CFT {{< TransferCFT/releasenumber  >}}.
 
-As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package to perform an upgrade procedure as described in the sections below.
+As of {{< TransferCFT/componentlongname  >}} 3.4 there is no separate upgrade package, you use the installation package  to perform an upgrade procedure as described in the sections below.
 
 <span id="Before"></span>
 
 ## Before you start
 
-Before beginning the upgrade procedure, download the Transfer CFT installation kit available at [support.axway.com](https://support.axway.com/).
+Before beginning the upgrade procedure, download the Transfer CFT installation kit  available at [support.axway.com](https://support.axway.com/).
 
 > **Note:**
 >
@@ -34,14 +34,14 @@ For details on shared disks, node commands, and other multi-node considerations,
 2.  Connect to the first machine and execute the following command:
 
 3.  ```
-    ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_<OS>\_<BN>.run --architecture first\_host --installdir <installdir>
+    ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --architecture first_host --installdir <installdir>
     ```
 
      
 
 4.  For each additional host, connect to the machine and execute the following command:  
     ```
-    ./Transfer\_CFT\_{{< TransferCFT/releasenumber >}}\_Install\_<OS>\_<BN>.run --architecture additional\_host --runtimedir <runtimedir>
+    ./Transfer_CFT_{{< TransferCFT/releasenumber >}}_Install_<OS>_<BN>.run --architecture additional_host --runtimedir <runtimedir>
     ```
 
 -   Use the two following parameters, depending on if this is the first host or an additional host:
@@ -50,14 +50,14 @@ For details on shared disks, node commands, and other multi-node considerations,
 -   Where:
     -   --architecture &lt;architecture>: Installation architecture (first\_host or additional\_host).
     -   --installdir &lt;installdir>: For a legacy upgrade, this is the directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (first\_host).
-    -   --runtimedir &lt;runtimedir>: For a legacy upgrade, this is the shared data directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (additional\_host).
+    -   --runtimedir &lt;runtimedir>:  For a legacy upgrade, this is the shared data directory where the Axway Installer was installed. When this parameter is assigned, it overwrites any reference in the configuration file (additional\_host).
 
 ### Restart the upgraded Transfer CFT multihost multi-node environment
 
 1.  Launch the Transfer CFT profile from the Transfer CFT runtime directory on the shared disk of each machine.  
     ```
-    cd /<shared\_disk>/<CFTdir>/Transfer\_CFT/runtime
-    . ./profile
+    cd /<shared_disk>/<CFTdir>/Transfer_CFT/runtime
+    .  ./profile
     ```
 2.  Check the new version using the following command:  
     ```
@@ -81,15 +81,15 @@ For details on shared disks, node commands, and other multi-node considerations,
 
     -   All of the Transfer CFT nodes must be started
 
-Your Transfer CFT {{< TransferCFT/releasenumber  >}} exec scripts are now operational. However, you must rebuild your APIs and Exits. Once Transfer CFT has been upgraded on a host you can start that instance, there is no need to wait until Transfer CFT is upgraded on every host.
+Your Transfer CFT {{< TransferCFT/releasenumber  >}}  exec scripts  are now operational. However, you must rebuild your APIs and Exits. Once Transfer CFT has been upgraded on a host you can start that instance, there is no need to wait until Transfer CFT is upgraded on every host.
 
-## Managing multi-node
+## Managing  multi-node
 
 For details on shared disks, node commands, and other multi-node considerations, refer to the *Transfer CFT {{< TransferCFT/releasenumber  >}} User Guide &gt; *Manage multi-node architecture**.
 
 ## Post upgrade
 
-After completing the upgrade procedure, your Transfer CFT {{< TransferCFT/componentversion  >}}, exec scripts are operational. However, you must rebuild your programs that use APIs and exits.
+After completing the upgrade procedure, your Transfer CFT {{< TransferCFT/componentversion  >}}, exec scripts are operational. However, you must rebuild your programs that use  APIs and exits.
 
 After performing an upgrade, all passwords are cyphered using a hard-coded key. We recommend that you generate an encryption key as described in [Generate an encryption](https://docs.axway.com/bundle/TransferCFT_38_UsersGuide_allOS_en_HTML5/page/Content/Security/cipher_key.htm).
 

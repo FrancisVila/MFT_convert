@@ -23,7 +23,7 @@ CFTUTIL #conf\\cft-copyfile.conf
 **z/OS**
 
 ```
-JCL ..INSTALL(CFTCOPYF)
+JCL    ..INSTALL(CFTCOPYF)
 ```
 
 **IBM i**
@@ -32,14 +32,14 @@ JCL ..INSTALL(CFTCOPYF)
 CFTUTIL PARAM('#CFTPROD/CPYFILE(CPYFCONF)')
 ```
 
-The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters, in the CFTTCP and CFTPART definitions respectively, to use two different {{< TransferCFT/componentlongname  >}} instances.
+The configuration file contains two defined partners, COPY\_SRC and COPY\_DST, and a flow called COPYFILE. In the delivered sample configuration file both partners are local, but you can modify the HOST and SAP parameters,  in the CFTTCP and CFTPART definitions respectively, to use two different  {{< TransferCFT/componentlongname  >}}  instances.
 
 ## Define a request to copy a file
 
 Enter the following command to set up a send request to the COPY\_DST partner:
 
 ```
-CFTUTIL send part=COPY\_DST, nfname='destination\_file\_name', parm='source\_file\_name'
+CFTUTIL send part=COPY_DST, nfname='destination_file_name', parm='source_file_name'
 ```
 
 Where:
@@ -54,9 +54,12 @@ This creates an empty file that is transferred from COPY\_SRC to COPY\_DST. The 
 > On a z/OS platform, use the following syntax and prefix the nfname with an asterisk ‘\*’.
 
 ```
-send part = 'COPY\_DST',
-   parm = 'my.env.FTEST',
-   nfname = '\*my.env.FTEST.&IDT'
+send part     = 'COPY_DST',            
+                
+   parm     = 'my.env.FTEST',
+   nfname   = '\*my.env.FTEST.&IDT'
+                
+                
 ```
 
 ## How it works
@@ -65,13 +68,13 @@ send part = 'COPY\_DST',
 
 On the sender side, an end-of-transfer script (exec/copyfile-snd.cmd) executes to update the information in the catalog, so that the fname parameter displays the parameter value used in the send command.
 
-On the receiver side, an end-of-transfer script (exec/copyfile-rcv.cmd) executes to copy the file, write a log message, and update the catalog entries based on the copy results.
+On the receiver side, an end-of-transfer script (exec/copyfile-rcv.cmd) executes  to copy the file, write a log message, and update the catalog entries based on the copy results.
 
 The same concepts apply for all OS, but there is a different syntax depending on the platform.
 
 **z/OS**
 
--   ..EXEC(COPYFILS)
+-       ..EXEC(COPYFILS)
 -   ..EXEC(COPYFILR)
 
 **IBM i**
@@ -81,7 +84,7 @@ The same concepts apply for all OS, but there is a different syntax depending on
 
 ### Copied file transfer details
 
-When you view the transfer record for a copied file, either in the catalog or in {{< TransferCFT/centralgovernancename  >}}, only certain transfer details display. For the actual copied file, only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
+When you view the transfer record for a copied file, either in the  catalog or in {{< TransferCFT/centralgovernancename  >}}, only certain transfer details display. For the actual copied file,  only the FNAMEs, that is the source filename in the sent transfer and the destination filename on reception, are displayed. Other parameters related to the copied file, such as FLRECL, FRECS, FSPACE, and so on, are not available.
 
 > **Note:**
 >
@@ -93,4 +96,4 @@ The copy command used in the sample script is a system copy command that you can
 
 -   Unix: `cp`
 -   Windows: `copy `
--   IBM i and z/OS : `CFTUTIL/COPYFILE` command (valid for sequential or HFS files on z/OS systems)
+-   IBM i and z/OS : `CFTUTIL/COPYFILE` command (valid for sequential  or  HFS files on z/OS systems)

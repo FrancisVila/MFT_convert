@@ -28,10 +28,10 @@ The following parameters are used for SFTP protocol:
 Example
 
 ```
-CFTPROT id = SFTP,
+CFTPROT id       = SFTP,
 
 > TYPE = 'SFTP',
-> SSH = 'SSH\_DEFAULT',
+> SSH = 'SSH_DEFAULT',
 > SAP = '1763',
 > NET = NET0,
 
@@ -45,25 +45,25 @@ You can use either the PKIKEYGEN command or the PKIKEY command to add the serve
 Example
 
 ```
-PKIKEYGEN id=MY\_KEY, keylen=2048
+PKIKEYGEN id=MY_KEY, keylen=2048
 ```
 
 ## Define the SSH server profile (CFTSSH)
 
-This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in server mode.
+This section  you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in server mode.
 
 -   ID: Identifier of the object
 -   DIRECT=SERVER
--   SRVPRIVKEY: Key Id containing the server private key (RSA) to use with key authentication.
+-   SRVPRIVKEY: Key Id  containing the server private key (RSA) to use with key authentication.
     -   If SRVPRIVKEY(CFTSSH direct=server) is not set, {{< TransferCFT/componentlongname >}} cannot start, and the message displays `CFTN05E SFTP bind() failed: ECDSA, DSA, or RSA host key file must be set`.
 
 Example
 
 ```
-CFTSSH id = SSH\_DEFAULT,
+CFTSSH id = SSH_DEFAULT,
 
 > DIRECT = SERVER,
-> SRVPRIVKEY = MY\_KEY,
+> SRVPRIVKEY = MY_KEY,
 > ...
 
 ```
@@ -94,23 +94,26 @@ There are two ways for you to configure how the server will check the client pas
 
 <!-- -->
 
--   Uconf definition: When NRPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
+-   Uconf definition: When NRPASSW=\_AUTH\_, authentication is  specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note:**
 >
 > If you do not define NRPASSW, there is no password authentication.
 
 ```
-CFTPART id = USER1,
+CFTPART id          = USER1,
 
-> prot = SFTP,
-> nrpart = "user1",
-> nrpassw = "TheUser1Password", ...
+>         prot        = SFTP,
+>       
+>         
+> nrpart      = "user1",              
+>         nrpassw     = "TheUser1Password", ...
 
-CFTTCP id = USER1,
+CFTTCP id          = USER1,
+        
 
-> host = 127.0.0.1,
-> ...
+> host        = 127.0.0.1,
+>        ...
 
 ```
 
@@ -134,20 +137,27 @@ Which CLIPUBKEY is used for the SSH profile is determined as follows:
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
 ```
-CFTPART id = USER2,
+CFTPART id          = USER2,
+        
 
-> ssh = SSH\_USER2,
-> prot = SFTP,
-> nrpart = "user2", ...
+> ssh         = SSH_USER2,
+>         
+> prot        = SFTP,
+>         
+> nrpart      = "user2", ...
 
  
-CFTTCP id = USER2,
-host = 127.0.0.1, ...
+        CFTTCP id          = USER2,
+        
+host        = 127.0.0.1, ...      
+        
  
-CFTSSH id = SSH\_USER2,
+CFTSSH id         = SSH_USER2,
+        
 
-> direct = SERVER,
-> clipubkey = USER2, ...
+> direct     = SERVER,
+>         
+> clipubkey  = USER2,         ...
 
 ```
 
@@ -169,35 +179,42 @@ When using **password and key** authentication:
 <!-- -->
 
 -   ```
-    CFTPART id = USER3,
+    CFTPART id          = USER3,
+            
 
-    > ssh = USER3,
-    > prot = SFTP,
-    > nrpart = "user3",
+    > ssh         = USER3,
+    >         
+    > prot        = SFTP,
+    >         
+    > nrpart      = "user3",
     > nrpassw = "TheUser3Password",...
 
      
-    CFTTCP id = USER3,
+            CFTTCP id          = USER3,
+            
 
-    > host = 127.0.0.1, ...
+    > host        = 127.0.0.1, ...      
+    >         
 
      
-    CFTSSH id = USER3,
+    CFTSSH id         = USER3,
+            
 
-    > direct = SERVER,
-    > clipubkey = USER3, ...
+    > direct     = SERVER,
+    >         
+    > clipubkey  = USER3,         ...
 
     ```
 
 ### Define a default flow model for a partner (IDF)
 
-This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In {{< TransferCFT/transfercftname  >}}, this is the CFTPART default IDF.
+This section describes how to specify a default flow model identifier (IDF) to use if a client does not provide a flow name. In {{< TransferCFT/transfercftname  >}}, this is the CFTPART default  IDF.
 
 ```
-CFTPART id=partner,IDF=<default\_model\_for\_this\_partner>,…
+CFTPART id=partner,IDF=<default_model_for_this_partner>,…
 ```
 
-If the remote path is absolute (root directory), {{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example, `flow01 `corresponds to the IDF for this partner.
+If the remote path is absolute (root directory), {{< TransferCFT/transfercftname  >}} uses the root directory as the IDF. In this example,  `flow01 `corresponds to the IDF for this partner.
 
 ```
 put LocalFile01.txt /flow01/RemoteFile01.txt
@@ -206,7 +223,7 @@ put LocalFile01.txt /flow01/RemoteFile01.txt
 ### Define the authorization list for a partner (CFTAUTH)
 
 In the CFTAUTH command, the IDF parameter designates a list
-of authorized IDFs for send/receive transfers with a defined partner. You can use these parameters to limit the visibility for a given user, when in server mode, to a logical representation of available flows. The SAUTH/RAUTH in the partner definition refers back to the CFTAUTH ID.
+of authorized IDFs for send/receive transfers with a defined partner. You can use these parameters to limit the visibility for a given user, when in server mode,  to a logical representation of available flows. The SAUTH/RAUTH in the partner definition refers back to the CFTAUTH ID.
 
 For more information, see [CFTAUTH](../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftauth).
 
@@ -216,18 +233,18 @@ In the following example, defining a CFTAUTH creates visibility for **flow01** a
 CFTPART ID=user2, IDF=(flow02), NRPART="user2", SAUTH=AUTH2, RAUTH=AUTH2...
 CFTAUTH ID=auth2, IDF=(flow01,flow02)
  
-CFTSEND IDF=flow01, IMPL=YES, workingdir=flow1\_space, fname=&nfname
+CFTSEND IDF=flow01, IMPL=YES, workingdir=flow1_space, fname=&nfname
  
-CFTSEND IDF=flow02, IMPL=YES, workingdir=flow2\_space, fname=&nfname
-CFTRECV IDF=flow02, workingdir=user2\_space, fname=&nfname
+CFTSEND IDF=flow02, IMPL=YES, workingdir=flow2_space, fname=&nfname
+CFTRECV IDF=flow02, workingdir=user2_space, fname=&nfname
 ```
 
-The view for a third-party software client would resemble the following (where the flow identifier displays, but not the physical folder name). Note that in this example, the `workingdir `is relative to the runtime directory.
+The view for a third-party software client would resemble the following (where the flow identifier displays, but not the physical folder name). Note that in this example,  the `workingdir `is relative to the runtime directory.
 
 > ![](/Images/TransferCFT/sftp_view_client.png)
 
 If you enter an \* (asterisk),
-all model files (IDFs) can be used. If the provided IDF is not in one of the two lists, the connection is rejected and the {{< TransferCFT/transfercftname  >}} client returns a DIAGI 411.
+all model files (IDFs) can be used.  If the provided IDF is not in one of the two lists, the connection is rejected and the {{< TransferCFT/transfercftname  >}} client returns a DIAGI 411.
 
 See the examples in [SFTP use case examples](../cftssh_example#top).
 
@@ -253,7 +270,7 @@ Server mode key and password authentication using restricted flow models
 
 When Transfer CFT is acting in server mode note the following requirements:
 
--   If the client performs a `get `command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and a `permission denied` error occurs.
+-   If the client performs a `get `command, the Transfer CFT must use implicit mode (CFTSEND IMPL=YES) on the server side. If you do not have a model having IMPL=YES, the client cannot perform a download (get) and  a `permission denied` error occurs.
 -   If a third-party SFTP client performs a `put `command, the Transfer CFT server must use open mode (FNAME= &NFNAME). If you do not have a CFTRECV model, the client cannot perform an upload (put) and a `permission denied` error occurs.
 
 The root directory for the SFTP connection is the WORKINGDIR defined in the CFTSEND (IMPL=YES) or CFTRECV corresponding to the IDF. If both CFTSEND and CFTRECV are defined for that IDF but with different WORKINGDIR, there is a DIAGI 435 error for the Transfer CFT client, and an SFTP failure with an appropriate error message for other SFTP clients.
@@ -274,9 +291,9 @@ In this example, `user1 `can perform a `get `or `put `command using the space (W
 ```
 CFTPART ID=user1, IDF=flow01, NRPART="user1",...
  
-CFTSEND IDF=flow01, IMPL=YES, workingdir=user1\_space, fname=&nfname
+CFTSEND IDF=flow01, IMPL=YES, workingdir=user1_space, fname=&nfname
  
-CFTRECV IDF=flow01, workingdir=user1\_space, fname=&nfname
+CFTRECV IDF=flow01, workingdir=user1_space, fname=&nfname
 ```
 <span id="Transcod"></span>
 
@@ -284,7 +301,7 @@ CFTRECV IDF=flow01, workingdir=user1\_space, fname=&nfname
 
 You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where transcoding is performed if FCODE differs from NCODE, or if FCHARSET differs from NCHARSET. The FCHARSET/NCHARSET parameters, however, take precedence over FCODE/NCODE if both are defined. Additionally:
 
--   The charset and transferred file code are exchanged between the requester and server for two Transfer CFTs.
+-   The charset and  transferred file code are exchanged between the requester and server for two Transfer CFTs.
 -   A transfer restart is forbidden if the FCHARSET/NCHARSET conversion is done at the server level.
 -   The NCODE parameter is available in CFTRECV as with CFTSEND.
 

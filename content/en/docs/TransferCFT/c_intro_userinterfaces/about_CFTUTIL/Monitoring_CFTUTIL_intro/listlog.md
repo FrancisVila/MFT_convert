@@ -55,32 +55,32 @@ Command parameter types
 
 ```
 COMMAND LISTLOG USAGE
-LOGLEVEL D S 12 <I> 'FATAL','ERROR','WARNING','INFORMATION','F','E','W','I'
-LINES N X 4 Number <-100> min=-10000 max=10000
-DATETIMEMIN N N 14 Number <0> min=0 max=99123123595999
-DATETIMEMAX N N 14 Number <99123123595999> min=0 max=99123123595999
-DATEMIN N N 6 Number <0> min=-3660 max=991231
-DATEMAX N N 6 Number <991231> min=-3660 max=991231
-TIMEMIN N N 8 Number <0> min=-1440 max=23595999
-TIMEMAX N N 8 Number <23595999> min=-1440 max=23595999
-PATTERN s S 64 string max\_length=63
-DISPLAYNODEID S N 1 <YES> 'YES','NO'
-NODE S L 2 \*99 STRING LIST max\_length=1 max\_entries=99
+LOGLEVEL          D S 12     <I> 'FATAL','ERROR','WARNING','INFORMATION','F','E','W','I'
+LINES             N X 4      Number <-100> min=-10000 max=10000
+DATETIMEMIN       N N 14     Number <0> min=0 max=99123123595999
+DATETIMEMAX       N N 14     Number <99123123595999> min=0 max=99123123595999
+DATEMIN           N N 6      Number <0> min=-3660 max=991231
+DATEMAX           N N 6      Number <991231> min=-3660 max=991231
+TIMEMIN           N N 8      Number <0> min=-1440 max=23595999
+TIMEMAX           N N 8      Number <23595999> min=-1440 max=23595999
+PATTERN           s S 64     string max_length=63
+DISPLAYNODEID     S N 1      <YES> 'YES','NO'
+NODE              S L 2 \*99  STRING LIST max_length=1 max_entries=99
 ```
 <span id="Time"></span>
 
 ### Time log precision
 
-By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter, where:
+By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter,  where:
 
--   1 (default): the time in CFTLOG displays in seconds
--   10: the time in CFTLOG displays in tenths of seconds
--   100: the time in CFTLOG displays in hundredths of seconds
+-   1 (default): the time in CFTLOG  displays in seconds
+-   10: the time in CFTLOG  displays in tenths of seconds
+-   100:  the time in CFTLOG displays in hundredths of seconds
 
-If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the` cft.cftlog.time_precision` value is greater than 1, the  Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 
 ```
-uconfset id=cft.cftlog.time\_precision, value=10
+uconfset id=cft.cftlog.time_precision, value=10
 ```

@@ -47,43 +47,43 @@ identifier,
      DIRECT =    
 CLIENT,
 
-     \[USERCID =    
-identifier,\]
+     [USERCID =    
+identifier,]
 
      CIPHLIST =    
 (num, num, ..),
 
-     \[ROOTCID =    
-(identifier, identifier,..),\]
+     [ROOTCID =    
+(identifier, identifier,..),]
 
-     \[DEPTH =    
-{10 |num},\]
+     [DEPTH =    
+{10 |num},]
 
-     \[VERSION =    
-{TLSV1 | SSLV3},\]
+     [VERSION =    
+{TLSV1 | SSLV3},]
 
-     \[PARM =    
-string,\]
+     [PARM =    
+string,]
 
-     \[DNUSER =    
-(string, string,..),\]
+     [DNUSER =    
+(string, string,..),]
 
-     \[DNISSUER =    
-(string, string,..),\]
+     [DNISSUER =    
+(string, string,..),]
 
-     \[CERFNAME =    
-string,\]
+     [CERFNAME =    
+string,]
 
-     \[MODE =    
-{REPLACE | CREATE | DELETE},\]
+     [MODE =    
+{REPLACE | CREATE | DELETE},]
 
-     \[ORIGIN        = string,\]
-     \[TRACE         = num,\]
-\[VERIFY = { ENFORCED | NONE (NOTE: SAME AS OPTIONAL | REQUIRED) }, \]
+     [ORIGIN        = string,]
+     [TRACE         = num,]
+[VERIFY = { ENFORCED |  NONE (NOTE: SAME AS OPTIONAL | REQUIRED) }, ]
 Description
 Use this command to describes a security profile.
 Parameters
-\[CERFNAME = string1..64\]
+[CERFNAME = string1..64]
 File name root in which the remote user chain of certificates
 is recorded.
 If this parameter is set and the remote partner is authenticated,
@@ -159,45 +159,69 @@ RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-256
 47
+                        
 9
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 AES-128
+                        
 SHA-1
+                        
 53
 10
 RSA authentication (512, 1024, 2048, or 4096)
 AES-256
 SHA-1
 10
+                        
 11
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 Triple DES
+                        
 SHA-1
+                        
 5
+                        
 12
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 SHA-1
+                        
 4
+                        
 13
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 RC4
+                        
 MD5
+                        
 59\*
 14
 RSA authentication (512, 1024, 2048, or 4096)
 None
 SHA-256
 2
+                        
 15
 RSA authentication (512, 1024, 2048, or 4096)
+                        
 None
+                        
 SHA-1
+                        
 1
+                        
 16
 RSA authentication (512, 1024, 2048, or 4096) 
+                        
 None
+                        
 MD5
+                        
 
 > **Note:**
 > \* To comply with security standards, as of Transfer CFT version 3.2.0 the use of the cipher suites 59, 60, and 61 is restricted to TLS 1.2 exclusively. This means that you cannot negotiate a session with another partner (monitor) that is using a TLS version lower than 1.2 with these cipher suites.
@@ -205,7 +229,7 @@ MD5
 > **Note:**
 > \*\* These cipher suites are only available for Transfer CFT 3.2.2 and higher and are restricted to use with TLS 1.2.
 
-\[DEPTH = {10 | num}\]
+[DEPTH = {10 | num}]
 Maximum number of intermediate authorities authorized for
 the remote certificate.
 This optional parameter has a numeric value between 0 and
@@ -214,7 +238,7 @@ This optional parameter has a numeric value between 0 and
 root authority are accepted.
 DIRECT = CLIENT
 Security profile for the client mode.
-\[DNISSUER = string1..512\]
+[DNISSUER = string1..512]
 List of values to be checked in the DN of the entity that directly issued the remote certificate.
 Strings are limited to 512 bytes each. A check is
 performed as follows:
@@ -228,7 +252,7 @@ performed as follows:
 
 Note that the different attributes of the dnuser or dnissuer
 string are separated by the '/' character.
-\[DNUSER = string1..512\]
+[DNUSER = string1..512]
 List of values to be checked in the remote certificate DN.
 Strings are limited to 512 bytes each. A check is
 performed as follows:
@@ -244,24 +268,24 @@ Note that the different attributes of the dnuser or dnissuer
 string are separated by the '/' character.
 ID = identifier
 Security profile identifier.
-\[MODE = {REPLACE
-| CREATE | DELETE}\]
+[MODE = {REPLACE
+| CREATE | DELETE}]
 Action for the command. For DELETE mode, the command is
 deleted from the PARAMETERS database; only the ID and DIRECT parameters
 are required.
-\[ORIGIN = string \]
+[ORIGIN = string ]
 This parameter indicates the origin of an object.
 PASSW
 string
 The parameter is the PassPort entity password for a user's certificate (the password that corresponds with the USERCID). This parameter enables PassPort connectivity.
-\[PARM = string1..64\]
+[PARM = string1..64]
 Freeform parameter associated with the security profile.
 This local data item is not used by the SSL protocol. It
 can be reused as a symbolic variable in an end of transfer procedure (&SSLPARM).
 It is also passed to the end of transfer, directory or file exits.
-\[ROOTCID = (identifier,
-identifier, ...)\]
-List of certificate authorities. This list can reference a maximum of 10 identifiers in the local certificate database.
+[ROOTCID = (identifier,
+identifier, ...)]
+List of certificate authorities. This list can reference a maximum of 10 identifiers  in the local certificate database.
 In client mode, this list is used to check the server
 certificate. Only certificates signed by one of the authorities in the
 ROOTCID parameter are accepted.
@@ -269,9 +293,9 @@ ROOTCID parameter are accepted.
 > **Note:**
 > To use more than 10 identifiers, you can refer to the PKIENTITY information.
 
-\[TRACE = number \]
+[TRACE = number ]
 SSL trace level.
-\[USERCID = identifier\]
+[USERCID = identifier]
 Local user certificate. Within the context of the Transfer
 CFT integrated PKI, this identifier
 refers to the identifier of a user certificate in the database.
@@ -283,7 +307,7 @@ The &USERID and &PART symbolic variables are accepted.
 These variables are then substituted with the name of the transfer owner
 (refer to the CFTAPPL, CFTSEND and CFTRECV commands) and the local identifier
 of the transfer partner respectively.
-\[VERSION = {TLSV1 | SSLV3 | TLSV1COMP | SSLV3COMP}\]
+[VERSION = {TLSV1 | SSLV3 | TLSV1COMP | SSLV3COMP}]
 Session version.
 Transfer CFT supports:
 
@@ -303,7 +327,7 @@ Limitation: The header length policy in the protocol header is only available fo
 VERIFY
 Sets the authentication mode requirement.
 
--   ENFORCED: Ensures client authentication with the server. The transfer fails if the server does not ask for the client certificate during the handshake.
+-   ENFORCED:  Ensures client  authentication with the server. The transfer fails if the server does not ask for the client certificate during the handshake.
 -   OPTIONAL and REQUIRED: The same as NONE (enabling backward compatibility), but should not be used.
 -   NONE: No authentication required.
 
@@ -313,28 +337,41 @@ Sets the authentication mode requirement.
 
 ```
 Syntax
-`CFTSSL`
-`     ID                 =     identifier,`
-`     DIRECT          =       SERVER,`
-`     [USERCID          =       identifier,]`
-`     CIPHLIST          =       (num, num, ..),`
-`     [VERIFY          =       { REQUIRED | OPTIONAL | NONE},]`
-`     [ROOTCID          =       (identifier, identifier,..),]`
-`     [DEPTH          =       {10,num},]`
-`     [VERSION          =       {TLSV1 | SSLV3},]`
-`     [PARM          =       string,]`
-      \[ORIGIN        =     string,\]
-      \[TRACE         =     num,\]
-`     [DNUSER          =       (string, string,..),]`
-`     [DNISSUER     =       (string, string,..),]`
-`     [CERFNAME     =       string,]`
-`     [MODE          =       {REPLACE | CREATE | DELETE},]`
+CFTSSL
+     ID              
+=     identifier,
+     DIRECT          =    
+SERVER,
+     [USERCID          =    
+identifier,]
+     CIPHLIST          =    
+(num, num, ..),
+     [VERIFY          =    
+{ <u>REQUIRED</u> | OPTIONAL | NONE},]
+     [ROOTCID          =    
+(identifier, identifier,..),]
+     [DEPTH          =    
+{10,num},]
+     [VERSION          =    
+{TLSV1 | SSLV3},]
+     [PARM          =    
+string,]
+      [ORIGIN        =     string,]
+      [TRACE         =     num,]
+     [DNUSER          =    
+(string, string,..),]
+     [DNISSUER     =    
+(string, string,..),]
+     [CERFNAME     =    
+string,]
+     [MODE          =    
+{REPLACE | CREATE | DELETE},]
 Description
 Use this command to describes a security profile.
 Parameters
 ID = identifier
 Identifier of the security profile.
-\[CERFNAME = string1..64\]
+[CERFNAME = string1..64]
 File name root used to record the remote user chain of
 certificates.
 If this parameter is set and the remote partner is authenticated,
@@ -359,8 +396,8 @@ Each value defines three algorithms:
 This list is compared with the list proposed by the client
 in order of preference, for the purpose of determining the suite to be
 negotiated.
-\[DEPTH = {10
-| num}\]
+[DEPTH = {10
+| num}]
 Maximum number of intermediate authorities authorized for
 the remote certificate.
 This optional parameter has a numerical value between 0
@@ -369,7 +406,7 @@ are accepted. 1 signifies that only certificates that are self-signed
 or signed by a recognized root authority are accepted.
 DIRECT = SERVER
 The security profile is applicable in the server mode.
-\[DNISSUER = string1...512\]
+[DNISSUER = string1...512]
 Strings that are limited to 512 bytes each. A check is
 performed as follows:
 
@@ -382,7 +419,7 @@ performed as follows:
 
 Note that the different attributes of the dnuser or dnissuer
 string are separated by the '/' character.
-\[DNUSER = string1..512\]
+[DNUSER = string1..512]
 Strings that are limited to 512 bytes each. A check is
 performed as follows:
 
@@ -395,20 +432,20 @@ performed as follows:
 
 Note that the different attributes of the dnuser or dnissuer
 string are separated by the '/' character.
-\[MODE = {REPLACE |
-CREATE | DELETE}\]
+[MODE = {REPLACE |
+CREATE | DELETE}]
 Action for the command. For DELETE mode, the command is
 deleted from the PARAMETERS database; only the ID and DIRECT parameters
 are required.
-\[ORIGIN = string \]
+[ORIGIN = string ]
 This parameter indicates the origin of an object.
-\[PARM = string1..64\]
+[PARM = string1..64]
 Freeform parameter associated with the security profile.
 This local data item is not used by the SSL protocol. It
 can be reused as a symbolic variable in an end of transfer procedure (&SSLPARM).
 It is also passed to the end of transfer, directory or file exits.
-\[ROOTCID = (identifier,
-identifier, ...)\]
+[ROOTCID = (identifier,
+identifier, ...)]
 List of the certificate authorities. This list references
 identifiers in the local certificate database.
 This list has two functions:
@@ -420,11 +457,11 @@ This list has two functions:
     server is supplied
 
 > **Note:**
-> To use more than 10 identifiers, refer to the PKIENTITY information.
+> To use more than 10 identifiers,  refer to the PKIENTITY information.
 
-\[TRACE = number \]
+[TRACE = number ]
 SSL trace level.
-\[USERCID = identifier\]
+[USERCID = identifier]
 Reference of a user certificate in the local certificate
 database. The purpose of this identifier is to select a user certificate
 for authentication by the client.
@@ -460,7 +497,7 @@ a server CFTSSL command).
     certificate is tolerated by the server. 
 -   NONE : Only the server must be authenticated. 
 
-\[VERSION = {TLSV1 | SSLV3 | TLSV1COMP | SSLV3COMP}\]
+[VERSION = {TLSV1 | SSLV3 | TLSV1COMP | SSLV3COMP}]
 SSL session version.
 Client mode
 In Client mode (DIRECT=CLIENT), TLSV1COMP or SSLV3COMP set the header length in NSDU to enable compatibility with other products.

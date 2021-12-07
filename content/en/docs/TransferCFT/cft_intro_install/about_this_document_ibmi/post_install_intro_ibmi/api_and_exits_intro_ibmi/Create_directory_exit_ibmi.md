@@ -12,7 +12,7 @@ your text editor (EDTF for example) as follows.
 1.  In the file, locate
     the *cftprot* command. The following lines are displayed:
 2.  Delete the comments (delimited
-    by /\* at the beginning and \*/ at the end). The *cftprot* command should resemble the following:
+    by /\* at the beginning and \*/ at the end). The  *cftprot* command should resemble the following:
 3.  Locate the *cftexit* command,
     commented as follows:
 4.  Locate the communication properties
@@ -37,13 +37,13 @@ modules. This program is used to check the following:
     of a transfer to a partner known to the directory EXIT but not to Transfer
     CFT
 -   Activation
-    of a transfer to a partner not known to either {{< TransferCFT/componentshortname >}} or the directory
+    of a transfer to a partner not known to either  {{< TransferCFT/componentshortname >}} or the directory
     EXIT
 
 The *&lt;installdir>/lib* subdirectory contains:
 
 -   The` libcftexa.a`
-    module required to use the {{< TransferCFT/componentshortname >}} directory EXITs
+    module required to use the  {{< TransferCFT/componentshortname >}} directory EXITs
 
 ## Generating the exit
 
@@ -55,11 +55,11 @@ To generate the sample CFTEXITA application:
 ## Running the test
 
 1.  Access the `<installdir>/runtime/conf `directory.
-2.  Generate the {{< TransferCFT/componentshortname >}} databases
-    using `cftinit` the configuration file provided
+2.  Generate the  {{< TransferCFT/componentshortname >}} databases
+    using `cftinit`  the configuration file provided
     and modified for this EXIT:` cft-tcp.conf`
 3.  When the` cftinit complete `
-    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility: `cftstart`
+    message is displayed, run  {{< TransferCFT/componentshortname >}} using the `cftstart `utility: `cftstart`
 4.  When the` CFTMAIN process   ID is xxxxx` message is displayed, perform an initial standard transfer
     using the command:  
     `CFTUTIL send part=BOSTON, idf=TXT`
@@ -80,4 +80,4 @@ To generate the sample CFTEXITA application:
 The transfer fails because the password is invalid, even though NRPART02
 is defined in the DIRECTORY EXIT.
 
-1.  Stop {{< TransferCFT/componentshortname >}}: `cftstop`
+1.  Stop  {{< TransferCFT/componentshortname >}}: `cftstop`

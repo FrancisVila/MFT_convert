@@ -14,7 +14,7 @@ For general information on how an application obtains event messages from a subs
 
 ## Event messages format
 
-{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, {{< TransferCFT/componentlongname  >}} version {{< TransferCFT/releasenumber  >}} only has one defined sub-system.
+{{< TransferCFT/componentlongname  >}} Guardian events were also available in the previous 2.3 version, with the main difference being that each {{< TransferCFT/componentlongname  >}} process was defined as a sub system. In contrast, {{< TransferCFT/componentlongname  >}} version {{< TransferCFT/releasenumber  >}}  only has one defined sub-system.
 
 All messages have the following tokens:
 
@@ -49,7 +49,7 @@ The CFTLOG object defines the Transfer CFT log file declarations. The name of th
 -   A file: The files are created using a CFTUTIL command, as described in Transfer CFT Environment.
 -   Collector: Specifies the name of the collector to which log messages are written.
 
-You can use the NOTIFY parameter of the CFTLOG object to combine the two destinations so that they refer to a Collector.
+You can use the NOTIFY parameter of the CFTLOG object to combine the two destinations so that they  refer to a Collector.
 
 -   NOTIFY: Name of the collector.
 -   OPERMSG: Allows you to filter the type of messages to be sent.
@@ -65,7 +65,7 @@ You can use the NOTIFY parameter of the CFTLOG object to combine the two destina
 In the Transfer CFT configuration:
 
 ```
-cftlog id = log0,
+cftlog id        = log0,
 …
 fname= ' log/cftlog',
 afname= ' log/cftalog',
@@ -82,7 +82,7 @@ The CFTACCNT object defines the destinations for the statistical data concerning
 -   A file: The files are created using a CFTUTIL command as described in Transfer CFT Environment.
 -   Collector: Specifies the name of the collector to which account messages are written.
 
-Once defined, you can activate and link the object to the CFTPARM as shown in the following example.
+Once defined, you can activate and link the object  to the CFTPARM as shown in the following example.
 
 **Example**
 

@@ -6,7 +6,7 @@
 
 To create new systems users:
 
-1.  In , create your users and assign the appropriate roles and privileges as described in the {{< TransferCFT/centralgovernancename >}} {{< TransferCFT/doctypeuser >}}.  
+1.  In , create your users  and assign the appropriate roles and privileges as described in the {{< TransferCFT/centralgovernancename >}} {{< TransferCFT/doctypeuser >}}.  
     For example, create the system users Flow Manager, Partner Manager, and Monitoring Assistant.
 2.  Define the user rights for actions on files (USERCTRL) for these same new users for the local system where Transfer CFT is installed.
 

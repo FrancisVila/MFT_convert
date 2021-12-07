@@ -6,11 +6,11 @@
 
 If you are installing {{< TransferCFT/componentlongname  >}} as part of a managed file transfer solution, you may want to check the installation order and ensure that you have reviewed the prerequisites.
 
-If you want to enable {{< TransferCFT/centralgovernancename  >}} during installation, please check that your license includes {{< TransferCFT/centralgovernancename  >}} and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}} documentation.
+If you want to enable {{< TransferCFT/centralgovernancename  >}} during installation, please check that your license includes {{< TransferCFT/centralgovernancename  >}} and that you have the required information, such as the shared secret, to activate connectivity. For more information, please refer to the {{< TransferCFT/centralgovernancename  >}}  documentation.
 
 > **Note:**
 >
-> In this section, replace &lt;OS> with your operating system and &lt;BN> with the build number, for example, Transfer\_CFT\_3.7\_Install\_win-x86-64\_BN12548232.exe.
+> In this section, replace &lt;OS> with your operating system and &lt;BN> with the build number, for example,  Transfer\_CFT\_3.7\_Install\_win-x86-64\_BN12548232.exe.
 
 ### Installation overview
 
@@ -54,7 +54,7 @@ The {{< TransferCFT/componentlongname  >}} installation is based on a delivered 
 
 ### Installation modes
 
-The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical mode you can install, but not operate, {{< TransferCFT/componentlongname  >}} without customizing certain mandatory values in this file. To run silent mode, you must at least define an installation directory prior to running the unattended installation.
+The following installation modes use the delivered initialize.properties file as the default configuration file. In graphical  mode you can install, but not operate, {{< TransferCFT/componentlongname  >}} without customizing certain mandatory values in this file. To run silent mode, you must at least define an installation directory prior to running the unattended installation.
 
 Graphical mode
 
@@ -79,11 +79,11 @@ If you want to use symbolic links, the link path must use a slash delimiter as s
 -   Correct:` S:\>mklink /j F:\CFT36m5 F:\CFT36_BN12786077_5`
 -   Incorrect:` S:\>mklink /j F:CFT36m5 F:CFT36_BN12786077_5`
 
-To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file (do not use parameters in the command line except the conf-file).
+To install Transfer CFT using symbolic links, you must use the silent mode, `option '--mode unattended'`, and assign all parameters using only the configuration file    (do not use parameters in the command line except the conf-file).
 
 > **Note:**
 >
-> If an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
+> If  an installation that uses symbolic links fails, once you have corrected the silent files, you must delete the Transfer CFT home installation directory, to which the symbolic link points, prior to retrying the installation.
 
 ### Run as administrator
 

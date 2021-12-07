@@ -3,7 +3,7 @@
     "linkTitle": "Transfers",
     "weight": "170"
 }This section describes transfers, and how to create and
-manage your transfer operations using {{< TransferCFT/componentshortname  >}}.
+manage your transfer operations using {{< TransferCFT/componentshortname  >}}.  
 
 {{< TransferCFT/componentshortname  >}} can execute both file and message transfers. A transfer
 consists of a set of processes that result in the exchange of files between
@@ -78,14 +78,14 @@ Suspend a transfer in the catalog
 a transfer request](../../../../troubleshoot_intro/admin_troubleshooting_server/admin_troubleshooting_runtime/clearcmd_command)
 Delete a transfer request from the communication file
 Ack
-<a href="../../../../concepts/using_the_send_command/sending_replies" class="MCXref xref">Use the SEND acknowledgement commands</a>
+<a href="../../../../concepts/using_the_send_command/sending_replies" class="MCXref xref">Use the SEND acknowledgement commands  </a>
 Send a transfer acknowledgement
 Nack
 <a href="../../../../concepts/using_the_send_command/transfers_neg_ack_pesit" class="MCXref xref">Sending a negative acknowledgement</a>
 Send a notification indicating an error occurred
 ```
 
-## Create transfer requests filters
+## Create  transfer requests filters
 
 To create a new transfer request filter or modify an existing filter:
 
@@ -114,7 +114,7 @@ Optionally you can select a **Layout** in the drop-down menu to use a customized
 
 > **Note:**
 >
-> These page customizations are defined in the CFTUIPREF object.
+> These page customizations are defined in the CFTUIPREF object.  
 
 ## Troubleshooting transfer filters
 

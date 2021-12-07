@@ -24,7 +24,7 @@ file:
 
 \[WSCAN = {5 | n}\]  {1..60}
 
-Enter the frequency (in minutes) with which Transfer CFT scans the catalog file when restarting a transfer:
+Enter the frequency (in minutes) with which Transfer CFT scans the catalog file when  restarting a transfer:
 
 -   5 (default value)
 -   1 to 60

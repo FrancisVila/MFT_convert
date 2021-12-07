@@ -42,7 +42,7 @@ In the Secure Relay parameters table below:
 
 -   The letter N is used in parameter names.
 -   Parameters that appear in Master Agent configuration file are displayed in bold.
--   For an array, use the notation format **secure\_relay.ra.N.parameter**, where is between and .
+-   For an array, use the notation  format **secure\_relay.ra.N.parameter**, where is between and .
 
 
 |  Parameter  |  Type  |  Default  |  Comment  |
@@ -62,9 +62,9 @@ In the Secure Relay parameters table below:
 The `srdmz` parameter in the CFTPART command allows you to specify a dedicated DMZ for outgoing connections.
 
 ```
-secure\_relay.ra = n (number of Router Agents)
-secure\_relay.ra.<i>.dmz = DMZ<i> (for each Router Agent, i = 0 to n-1)
-secure\_relay.ra.<i>.host = @hostSR<i> (for each Router Agent, i = 0 to n-1)
+secure_relay.ra      =  n  (number of Router Agents)
+secure_relay.ra.<i>.dmz = DMZ<i>   (for each Router Agent, i = 0 to n-1)
+secure_relay.ra.<i>.host = @hostSR<i> (for each Router Agent, i = 0 to n-1)
  
-CFTPART id=part,nspart=myself,srdmz=DMZ<i> (where i is the Router Agents to be used for the outgoing connection)
+CFTPART id=part,nspart=myself,srdmz=DMZ<i>   (where i is the Router Agents to be used for the outgoing connection)
 ```

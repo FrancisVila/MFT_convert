@@ -48,7 +48,7 @@ For more information on event messages, refer to the documentation.
 
 When the Transfer CFT heartbeat function is activated, it sends the attributes to the Axway Sentinel server via TRKUTIL.
 
-For more information on tracked objects, refer to the Axway Sentinel User's Guide.
+For more information on  tracked objects, refer to the  Axway Sentinel User's Guide.
 
 ### Sentinel Heartbeat implementation parameters
 

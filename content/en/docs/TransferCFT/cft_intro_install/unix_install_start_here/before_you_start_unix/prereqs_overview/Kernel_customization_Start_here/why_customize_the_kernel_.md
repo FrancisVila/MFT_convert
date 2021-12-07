@@ -28,12 +28,12 @@ necessary to support efficient performance without slowing the system,
 due to memory saturation.
 
 We strongly recommend that you change the kernel configuration, even
-though {{< TransferCFT/componentshortname  >}} automatically adapts to the maximum size authorized
+though  {{< TransferCFT/componentshortname  >}} automatically adapts to the maximum size authorized
 by the system. The reason for this is that if the memory is insufficient,
-{{< TransferCFT/componentshortname  >}} slows down significantly.
+  {{< TransferCFT/componentshortname  >}} slows down significantly.
 
 In some cases, when receiving transfers from high-speed systems via
-TCP, you may notice interlocks preventing {{< TransferCFT/componentshortname  >}} from running correctly.
+TCP, you may notice interlocks preventing  {{< TransferCFT/componentshortname  >}} from running correctly.
 If the capacity of the system cannot support the resulting overload, you
 must reduce the number of concurrent transfers.
 
@@ -48,8 +48,8 @@ to at least 32 MB.
 By default, some UNIX systems allow a maximum of 40 unread messages
 to transit in a message queue.
 
-To guarantee optimum performance levels, {{< TransferCFT/componentshortname  >}} maximizes its
-use of the message queues. It may be that {{< TransferCFT/componentshortname  >}} requirements exceed
+To guarantee optimum performance levels,  {{< TransferCFT/componentshortname  >}} maximizes its
+use of the message queues. It may be that  {{< TransferCFT/componentshortname  >}} requirements exceed
 the system capacity. This is the case particularly over TCP networks,
 when the remote monitor + network configuration allows a throughput exceeding
 the capacities of the local system. This phenomenon becomes even more
@@ -71,11 +71,11 @@ so that it can continue processing.
 
 When this saturation phenomenon occurs, the remote {{< TransferCFT/hflongproductname  >}} and network
 permit an overall throughput that is too high for the local system, given
-the close link between {{< TransferCFT/componentshortname  >}} and the data transiting on the network,
+the close link between  {{< TransferCFT/componentshortname  >}} and the data transiting on the network,
 so this space cannot be released. The phenomenon is even more likely if
 another application is also making intensive use of the network memory.
 
-To ensure {{< TransferCFT/componentshortname  >}} operation, you must modify the kernel to increase
+To ensure  {{< TransferCFT/componentshortname  >}} operation, you must modify the kernel to increase
 the size of the memory allocated to TCP.
 
 <span id="Number_of_files_used_by_a_process"></span>
@@ -85,6 +85,6 @@ the size of the memory allocated to TCP.
 By default, some UNIX systems allow a process to only open 64 files
 at the same time.
 
-If you do not modify this limit, you cannot use {{< TransferCFT/componentshortname  >}} to its
+If you do not modify this limit, you cannot use  {{< TransferCFT/componentshortname  >}} to its
 full potential: 64 concurrent transfers + link channels + listening channels
 + trace channels &gt; 64 open files.

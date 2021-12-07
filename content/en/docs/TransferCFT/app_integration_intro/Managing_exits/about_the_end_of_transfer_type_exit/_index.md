@@ -15,7 +15,7 @@ of whether or not the transfer is completed.
 
 ### Transfer state
 
-The user program can also ask the {{< TransferCFT/componentshortname  >}} to modify the
+The user program can also ask the  {{< TransferCFT/componentshortname  >}} to modify the
 transfer state (UPDATE) or to delete the catalog record (DELETE).
 
 The following changes of state are authorized in the event of an UPDATE:
@@ -31,7 +31,7 @@ call ends.
 
 When the EXIT task is called without any request for change to the related
 catalog entry’s state, the end-of-transfer procedure is submitted according
-to standard {{< TransferCFT/componentshortname  >}} rules.
+to standard  {{< TransferCFT/componentshortname  >}} rules.
 
 When the EXIT task initiates a change of state, the procedure submission
 rule depends on the final state of the catalog entry returned by the EXIT.

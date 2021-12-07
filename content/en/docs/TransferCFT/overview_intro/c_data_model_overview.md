@@ -2,7 +2,7 @@
     "title": "Data models and partners",
     "linkTitle": "About data models and partners ",
     "weight": "170"
-}The purpose of {{< TransferCFT/componentshortname  >}} is to exchange and
+}The purpose of  {{< TransferCFT/componentshortname  >}} is to exchange and
 manage files transfers, meaning a file
 exchange between two or more computers.
 
@@ -21,7 +21,7 @@ Prior to creating new data flows with {{< TransferCFT/componentshortname  >}}, y
 
 ## What is a {{< TransferCFT/componentshortname  >}} partner?
 
-In {{< TransferCFT/componentshortname  >}} a partner is
+In  {{< TransferCFT/componentshortname  >}} a partner is
 a logical entity such as a bank, a government agency, or trading partner, which can
 be the origin or destination of a data exchange, and corresponds
 to a remote file transfer controller.
@@ -44,12 +44,12 @@ The CFTPART/CFTTCP commands describe the following required characteristics of e
 
 #### Associated parameters
 
-For each partner definition some of the parameters in the partner description
-refer to the local environment, while others refer to the remote environment. This means that each partner definition consists of a mix of parameters, some of which relate expressly to your remote partner, and others that are specific to your local environment.
+For each partner definition some of the parameters in the partner description  
+refer to the local environment, while others refer to the remote environment. This means that each partner definition consists of a mix of  parameters,  some of which relate expressly to your remote partner, and others that are specific to your local environment.
 
 #### Basic definition
 
-The partial list of parameters described in this section are required for a new partner, but the default values for most other parameters typically are sufficient for a new user.
+The partial list of parameters described in this section are required for a new partner, but  the default values for most other parameters typically are sufficient for a new user.
 
 You can use the CFTPART command to create, modify, or delete a partner. Within the CFTPART command, you define the following parameters:
 
@@ -77,7 +77,7 @@ For your network connection, CFTTCP, you should define the:
 -   OFTP
     (ODETTE)
 
-For each protocol used, there are corresponding values for the
+For each protocol used, there are corresponding  values for the
 parameters controlling the size of messages, the compression
 of data, the possibility of resuming a transfer after an incident, etc.
 
@@ -85,7 +85,7 @@ of data, the possibility of resuming a transfer after an incident, etc.
 
 Transferring files consists of defining characteristics for partners and your flows. The previous section provided details on basic partner parameters and concepts. This section defines the concepts you will need in order to create data flows.
 
-There are 4 {{< TransferCFT/componentshortname  >}} modes that relate to data transfer. Two modes relate to uploading or downloading data, and the other two relate to who instigates the flow. We'll begin by discussing who begins the data flow conversation.
+There are 4  {{< TransferCFT/componentshortname  >}} modes that relate to data transfer. Two modes relate to uploading or downloading data, and the other two relate to who instigates the flow. We'll begin by discussing who begins the data flow conversation.
 
 -   **Requester mode**: This is the partner that initiates the connection. It is important to note that is the beginningof theconnection and not the start of a transfer. The requester waits for the server (remote partner) to accept the connection. They can then mutually identify, and depending on the definition, exchange data transfer attributes.
 -   **Server mode**: This partner is available for transfer requests coming from the network. If it recognizes the partner and protocol, it can accept and proceed with recording the request in the catalog.
@@ -106,7 +106,7 @@ Every file transfer requires a model as part of the data flow definition. By def
 
 ## File transfer concepts
 
-Most of the tasks that {{< TransferCFT/componentshortname  >}} performs
+Most of the tasks that  {{< TransferCFT/componentshortname  >}} performs
 involve configuring and executing file transfers, as well as processing
 information if necessary.
 
@@ -114,8 +114,8 @@ information if necessary.
 
 {{< TransferCFT/componentshortname  >}} provides models for sending and receiving data:
 
--   CFTSEND: Defines the model for sending transfers
--   CFTRECV: Defines the model for receiving transfers
+-   CFTSEND: Defines the model  for sending transfers
+-   CFTRECV: Defines the model  for receiving transfers
 
 From there you can use SEND and RECV commands to perform file and message transfers, using default settings or new object definitions.
 
@@ -126,15 +126,15 @@ From there you can use SEND and RECV commands to perform file and message trans
 
 ### {{< TransferCFT/componentshortname  >}} to application communication
 
-This paragraph overviews how communication between {{< TransferCFT/componentshortname  >}} and applications occurs.
+This paragraph overviews how communication between  {{< TransferCFT/componentshortname  >}} and applications occurs.
 
 Application to
-{{< TransferCFT/componentshortname  >}}:
+  {{< TransferCFT/componentshortname  >}}:
 
 -   Requests
     submitted through the programming interface
 -   Requests
-    submitted through the {{< TransferCFT/componentshortname >}} utility or GUI
+    submitted through the  {{< TransferCFT/componentshortname >}} utility or GUI
 
 {{< TransferCFT/componentshortname  >}} to application:
 

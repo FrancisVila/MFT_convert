@@ -222,7 +222,7 @@ The table below lists the available Transfer CFT 3.8 features according to the v
       <tr>
          <td><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
 <p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
-<p><sup>3</sup>Enabled for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
+<p><sup>3</sup>Enabled   for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
 <p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
 <p><sup>5</sup>Available on AIX, HPUX ia64, Linux, Solaris, Windows</p>
 <p><sup>6</sup>For UNIX type files only</p>         </td>
@@ -246,7 +246,7 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 | End-to-end monitoring  | X  | -  |
 
 
-**Administration**: Start, stop, and restart Transfer CFT.
+**Administration**: Start, stop,  and restart Transfer CFT.
 
 **Configuration**: Create configuration objects including partner definitions, transfer templates, protocols, and security profiles.
 
@@ -254,11 +254,11 @@ The table below lists the available Transfer CFT 3.8 features according to the v
 
 **Manage transfers**: Create, manage, and delete transfer requests.
 
-**Monitor the log**: View log file.
+**Monitor the log**: View  log file.
 
 **Manage certificates**: View and import certificates.
 
-**End-to-end monitoring**: View a transfer process, from start to finish, along with all participants (sender, receiver, and intermediate participants).
+**End-to-end monitoring**: View  a transfer process, from start to finish, along with all participants (sender, receiver, and intermediate participants).
 
 \* You can perform some, but not all, configuration tasks (you can manage partner definitions and transfer templates).
 
@@ -282,13 +282,13 @@ NFSv4
 NFSv3, CXFS, VeritasSF
 Linux-x86
 GPFS (recommended), NFSv4, GFS2, AWS EFS
-NFSv3, CXFS, ACFS, OCFSv1, OCFSv2, QFS, VeritasSF
+NFSv3, CXFS,  ACFS, OCFSv1, OCFSv2, QFS, VeritasSF
 Solaris
 NFSv4
 NFSv3, CXFS, QFS, VeritasSF
 Windows-x86
 SMB/CIFS, GPFS
-CXFS, NFS
+CXFS,  NFS
 z/OS
 Sharing DASD across Sysplex
  
@@ -312,7 +312,7 @@ Sharing DASD across Sysplex
 
 ### Windows
 
-Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning. This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
+Transfer CFT on Windows  requires the **Visual C++ Redistributable Package for Visual Studio 2019** for proper functioning.  This provides the necessary library files (DLL) for Transfer CFT. You must install `vcredist_x64.exe` prior to installing or upgrading Transfer CFT.
 
 > **Note:**
 >
@@ -320,7 +320,7 @@ Transfer CFT on Windows requires the **Visual C++ Redistributable Package for Vi
 
 ### Secure Relay
 
-Transfer CFT delivers an embedded Secure Relay MA 2.7.3. You must then additionally install the Secure Relay RA 2.7.3. Please refer to the *Secure Relay* [Installation Guide](https://docs.axway.com/bundle/SecureRelay_273_InstallationGuide_allOS_en_HTML5/page/Content/AxwayStartPageRA_install.htm) for details.
+Transfer CFT  delivers an embedded Secure Relay MA 2.7.3. You must then additionally install the Secure Relay RA 2.7.3. Please refer to the *Secure Relay* [Installation Guide](https://docs.axway.com/bundle/SecureRelay_273_InstallationGuide_allOS_en_HTML5/page/Content/AxwayStartPageRA_install.htm) for details.
 
 <span id="Deprecat"></span>
 
@@ -410,7 +410,7 @@ OS specific
 
 Platform support
 
-Axway no longer delivers 32-bit versions of Transfer CFT, but does offer an automatic migration from an existing 32-bit version to Transfer CFT 3.4 64-bit on 64-bit OS.
+Axway no longer delivers  32-bit versions of Transfer CFT, but does offer an automatic migration from an existing 32-bit version to  Transfer CFT 3.4 64-bit on 64-bit OS.
 
 ### Discontinued in Transfer CFT 3.1.3 and higher
 
@@ -438,8 +438,8 @@ For more information about Transfer CFT, refer to:
 
 -   Transfer CFT 3.8 User Guide
 -   Transfer CFT 3.8 Security Guide
--   Transfer CFT 3.8 UNIX Installation and Operations Guide
--   Transfer CFT 3.8 Windows Installation and Operations Guide
+-   Transfer CFT 3.8 UNIX Installation  and Operations Guide
+-   Transfer CFT 3.8 Windows Installation  and Operations Guide
 -   Transfer CFT 3.8 z/OS Installation and Operations Guide
 -   Transfer CFT 3.8 IBM i Installation and Operations Guide
 -   Transfer CFT 3.8 HP NonStop Installation and Operations Guide

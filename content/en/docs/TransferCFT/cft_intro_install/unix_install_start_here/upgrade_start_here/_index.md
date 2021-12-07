@@ -4,7 +4,7 @@
     "weight": "130"
 }This section is designed to assist administrators or users who are tasked with updating {{< TransferCFT/transfercftname  >}}, or upgrading or migrating from an existing {{< TransferCFT/componentshortname  >}} version to {{< TransferCFT/componentshortname  >}} {{< TransferCFT/componentversion  >}}.
 
-## Updates versus upgrade or migrate
+## Updates versus  upgrade or migrate
 
 ### About updates
 
@@ -12,7 +12,7 @@ An update brings Transfer CFT up-to-date with a patch or service pack offering f
 
 ### About upgrades
 
-An upgrade is the process of updating to a newer, enhanced version of the software. For example, you can upgrade Transfer CFT 3.1.3 to Transfer CFT {{< TransferCFT/releasenumber  >}}. See [Upgrading Transfer CFT](upgrade_intro_ux).
+An upgrade is the process of updating to a newer, enhanced version of the software. For example, you can upgrade Transfer CFT 3.1.3  to Transfer CFT {{< TransferCFT/releasenumber  >}}. See [Upgrading Transfer CFT](upgrade_intro_ux).
 
 As of {{< TransferCFT/componentlongname  >}} 3.4, Axway simplifies the upgrade procedure by allowing you to use the installation package to upgrade from a previous version.
 
@@ -20,7 +20,7 @@ Upgrading, as compared to migration, has the following advantages:
 
 -   Allows you to update in the same location
 -   You can perform this automatically using the Installer, and you can revert to previous state if needed
--   Scripts and APIs remain intact and only require a recompilation for the APIs
+-   Scripts and APIs remain intact and only require  a recompilation for the APIs
 
 > **Note:**
 >
@@ -38,7 +38,7 @@ A migration means that an initial {{< TransferCFT/componentshortname  >}} is ins
 >
 > When migrating from a previous version of Transfer CFT, be sure to check the Release Notes for new as well as deprecated features and supported platforms for that release.
 
-The general procedure for migrating from a previous version of Transfer CFT to Transfer CFT {{< TransferCFT/componentversion  >}} is as follows:
+The general procedure for migrating from a previous version of Transfer CFT  to Transfer CFT {{< TransferCFT/componentversion  >}} is as follows:
 
 1.  Export existing information from the previous version. Details vary depending on the existing Transfer CFT version.
 2.  Install {{< TransferCFT/transfercftname >}} 3.8.
@@ -46,13 +46,13 @@ The general procedure for migrating from a previous version of Transfer CFT to T
 
 ## Register with
 
-If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
 
-## Update or upgrade using
+## Update or upgrade using  
 
-Central Governance simplifies the management of Transfer CFT and provides identity and access management, certificate security services, monitoring, alerting, and web dashboard services. If you are using {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} with , you can use the information in [Activate Central {{< TransferCFT/governance  >}} connectivity](../../../governance_services_intro/register_cg) to configure and register with .
+Central Governance simplifies the management of Transfer CFT and provides identity and access management, certificate security services,  monitoring, alerting, and web dashboard services. If you are using {{< TransferCFT/componentlongname  >}} {{< TransferCFT/releasenumber  >}} with , you can use the information in [Activate Central {{< TransferCFT/governance  >}} connectivity](../../../governance_services_intro/register_cg) to configure and register with .
 
-Central governance allows you to update to the latest Transfer CFT Service Pack or patch, or use the installation package to upgrade {{< TransferCFT/componentlongname  >}} (as of {{< TransferCFT/componentlongname  >}} 3.2.4) to a new {{< TransferCFT/componentlongname  >}} version. However, you cannot migrate Transfer CFT using .
+Central governance allows you to update to the latest Transfer CFT Service Pack or patch, or use the installation package to upgrade {{< TransferCFT/componentlongname  >}} (as of {{< TransferCFT/componentlongname  >}} 3.2.4)  to a new {{< TransferCFT/componentlongname  >}} version. However, you cannot migrate Transfer CFT using .
 
 > **Note:**
 >
@@ -66,7 +66,7 @@ Important information before performing an upgrade or install auto-import proced
 -   For {{< TransferCFT/componentlongname >}} versions lower than 3.4, upgrade the {{< TransferCFT/companyname >}} Installer to (or higher) prior to upgrading your {{< TransferCFT/componentshortname >}} .
 -   If needed, you can uninstall an Upgrade. Doing so rolls back to the previous version before the upgrade, but all transfers and configuration modifications that were performed since the upgrade are lost.
 -   Backup {{< TransferCFT/componentshortname >}} before beginning an upgrade or migration procedure.
--   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT and the UI server.
+-   Before beginning the upgrade or migration procedure stop the existing version of Transfer CFT  and the UI server.
 
 ### More information
 

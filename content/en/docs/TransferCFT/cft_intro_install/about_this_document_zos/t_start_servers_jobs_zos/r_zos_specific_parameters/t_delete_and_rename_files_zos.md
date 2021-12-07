@@ -8,7 +8,7 @@
 
 ## About files
 
-When renaming a file, Transfer CFT z/OS only releases the unused space if authorized to do so (APF), and if the file is allocated on a single volume. All files deleted by Transfer CFT are removed from the catalog.
+When renaming a file, Transfer CFT z/OS only releases the unused space if authorized to do so (APF), and if the file is allocated on a single volume. All files  deleted by Transfer CFT are removed from the catalog.
 
 -   SAM files are deleted/renamed by CAMLST
 
@@ -44,7 +44,7 @@ File sharing characteristics include:
 
 ### GRS multi-system protection
 
-Transfer CFT uses QNAME CFTSHARE to protect various resources. QNAME CFTSHARE must be propagated in all members of a GRS configuration. This is the only QNAME to be propagated.
+Transfer CFT uses  QNAME CFTSHARE to protect various resources. QNAME CFTSHARE must be propagated in all members of a GRS configuration. This is the only QNAME to be propagated.
 
 Transfer CFT uses the following other QNAMEs:
 

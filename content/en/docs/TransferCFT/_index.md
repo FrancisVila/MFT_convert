@@ -2,9 +2,9 @@
     "title": "Transfer CFT 3.9 User Guide ",
     "linkTitle": "Transfer CFT User Guide",
     "weight": "20"
-}Welcome to the Axway {{< TransferCFT/platformorsuiteshortname  >}} Transfer CFT documentation. {{< TransferCFT/componentshortname  >}} is the file transfer component in the Axway Managed File Transfer platform, and provides a multi-platform, high-volume, file transfer service. This documentation explains how to install, configure, and manage {{< TransferCFT/componentshortname  >}}.
+}Welcome to the Axway {{< TransferCFT/platformorsuiteshortname  >}}  Transfer CFT documentation. {{< TransferCFT/componentshortname  >}} is the file transfer component in the Axway   Managed File Transfer platform, and provides  a multi-platform, high-volume, file  transfer service. This documentation explains how to install, configure, and manage {{< TransferCFT/componentshortname  >}}.
 
-You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{< TransferCFT/centralgovernancename  >}} or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management, monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
+You can configure {{< TransferCFT/transfercftname  >}} and manage flows using {{< TransferCFT/centralgovernancename  >}} or Flow Manager. These governance products simplify Transfer CFT usage, and provide services such as identity and access management, certificate management,  monitoring, alerting, and a web dashboard. For more information, visit [www.axway.com](http://www.axway.com/).
 
 Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standalone options for users who have not yet activated or Flow Manager. Axway encourages {{< TransferCFT/componentlongname  >}} users to discover the benefits of centralized management.
 
@@ -20,7 +20,7 @@ Additionally, the Transfer CFT {{< TransferCFT/doctypeuser  >}} explains standa
          <td><h2 id="for-new-users">For new users</h2>
 <p><a href="overview_intro/about_transfer_cft">About {{< TransferCFT/componentshortname  >}}</a></p>
 <p><a href="overview_intro/c_cg_concepts" >What are governance services?</a></p>
-<p><a href="c_intro_userinterfaces/about_cftutil">Use command line</a></p>
+<p><a href="c_intro_userinterfaces/about_cftutil">Use  command line</a></p>
 <p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
 <p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" >My first transfer flow</a></p>
 <p><a href="gettingstarted_intro/my_first_file_transfer" >My first file transfer (CL)</a></p>

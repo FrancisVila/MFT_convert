@@ -10,11 +10,11 @@ This section describes how to establish secure sessions and generate keys, impor
 
 ## Using PKIKEYGEN to generate and import a key pair
 
-You can use the `PKIKEYGEN `command to generate a key pair, where it then stores them in the local PKI database.
+You can use the `PKIKEYGEN `command to generate a key pair, where it then stores  them in the local PKI database.
 
 ```
 PKIUTIL PKIKEYGEN
-ID=KEY\_2048,
+ID=KEY_2048,
 PKIFNAME=$CFTPKU,
 STATE=ACT,
 KEYLEN=2048,
@@ -43,7 +43,7 @@ You can import the following formats in the PKI database:
 
 Restrictions
 
--   Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing or importing them.
+-   Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing  or importing them.
 -   Transfer CFT does not support private keys with passphrases.
 -   Transfer CFT supports the RSA digital signature algorithm; however, ECDSA and DSA are not supported.
 
@@ -75,13 +75,13 @@ If you already have keys that you want to use, you can import them as described 
 Import with PKCS8 format
 
 ```
-PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
 ```
 
 Import with encrypted PEM (PKCS#5) format
 
 ```
-PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
 ```
 
 -----BEGIN RSA PRIVATE KEY-----
@@ -96,7 +96,7 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 > **Note:**
 >
-> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
+> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key,  convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format
 
@@ -162,33 +162,38 @@ Use the LISTPKI command to list available keys:
 
 ```
 >**LISTPKI**
-Keys:
-Id. S K Bits
+  Keys:
+  Id.              S K Bits
+  
 ---------------- - - ----
-CFT\_SSH\_PRIV A x 2048
-CFT\_SSH\_PUB A 2048
+  
+CFT_SSH_PRIV     A x 2048
+  
+CFT_SSH_PUB      A   2048
  
-PKIU00I LISTPKI \_ Correct ()
+PKIU00I LISTPKI  _ Correct ()
 ```
 
 Example
 
-This example demonstrates key deactivation where **I** indicates \[INACT\] and **A** indicates \[ACT\].
+This example demonstrates key deactivation where  **I** indicates \[INACT\] and **A** indicates \[ACT\].
 
 ```
 >listpki
-Keys:
-Id. S K Bits
------------
-CFT\_SSH\_PRIV **A** x 2048
-CFT\_SSH\_PUB   **A**     2048
+  Keys:
+  Id.              S K Bits
+  -----------
+  CFT_SSH_PRIV     **A** x 2048
+  
+CFT_SSH_PUB        **A**      2048
  
 >inact type=key
  
 >listpki
-Keys:
-Id. S K Bits
------------
-CFT\_SSH\_PRIV **I** x 2048
-CFT\_SSH\_PUB   **I**     2048
+  Keys:
+  Id.              S K Bits
+  -----------
+  CFT_SSH_PRIV     **I** x 2048
+  
+CFT_SSH_PUB        **I**       2048
 ```

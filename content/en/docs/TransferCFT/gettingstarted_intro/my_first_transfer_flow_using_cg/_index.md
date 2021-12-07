@@ -2,7 +2,7 @@
     "title": "My first transfer flow ",
     "linkTitle": "First transfer flow with Central Governance",
     "weight": "110"
-}This topic describes how to create basic {{< TransferCFT/componentshortname  >}} transfer flows using . Once you understand file transfer flow concepts, you can customize your application integrations and data flows.
+}This topic describes how to create basic {{< TransferCFT/componentshortname  >}} transfer flows using . Once you understand file transfer flow concepts, you can  customize your application integrations and data flows.
 
 ## Learn how to...
 
@@ -34,7 +34,7 @@ These exercises create the flow types shown in the diagram below.
 
 Notice that the **NAME** of the flow in the Flow List is a user friendly name describing the flow, while the **IDENTIFIER** is the parameter (ID) that you will use in your transfer commands.
 
-         <img src="/Images/TransferCFT/results_cg_flows.png" class="maxWidth" alt="This diagram lists the five flows to create, which are simple, multiple, implicit, broadcast, and collect." />
+         <img src="/Images/TransferCFT/results_cg_flows.png" class="maxWidth" alt="This diagram lists the five flows to create, which are  simple, multiple, implicit, broadcast, and collect." />
 
 ## Procedure overview
 
@@ -87,7 +87,7 @@ When you are working in , you create *applications* that represent your exchange
 
 ### Create and deploy a basic flow
 
-Let's begin by creating a simple flow, and then exchange a file. In this example, Store\_66 (server/sender) sends a daily SALES\_report to the MainOffice (requester/receiver).
+Let's begin by creating a simple flow,  and then exchange a file. In this example, Store\_66 (server/sender) sends a daily SALES\_report to the MainOffice (requester/receiver).
 
 <img src="/Images/TransferCFT/TransferCFT_Standard_w_cg.png" class="maxWidth" alt="Simplified diagram of a Source Transfer CFT sending a file to a Target" />
 
@@ -169,7 +169,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 #### Collecting
 
-Collecting files is the inverse of using a broadcast list. In the collect transfer mode you can receive a dedicated file from multiple partners (P*n*). This allows the receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
+Collecting files is the inverse of using a broadcast list.  In the collect transfer mode you can receive  a dedicated file from multiple partners (P*n*). This allows the  receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
 
 ![Simplified diagram of a Target Transfer CFT receiving files from multiple sources](/Images/TransferCFT/TransferCFT_Collect_w_CG.png)
 
@@ -190,7 +190,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 
 ## Get more information
 
-Once you understand the basic modes and concepts described in this section, you can add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents high-level transfer processing concepts, transfer mode details, and procedural topics.
+Once you understand the basic modes and concepts described in this section, you can add processing, symbolic variables, scripts and more to your transfers using other {{< TransferCFT/componentshortname  >}} options and features. See the dedicated sections in this document for details on customizing your transfer flows. A good place to start is [Transfer Concepts](../../concepts/transfer_command_overview), which presents  high-level transfer processing concepts, transfer mode details, and procedural topics.
 
 -   For more information on {{< TransferCFT/centralgovernancename >}}, screen details, checking product status, and so on, please refer to the {{< TransferCFT/centralgovernancename >}} {{< TransferCFT/doctypeuser >}}.
--   For a complete listing of Source and Target parameters, refer to the Transfer CFT to parameter mapping available in the **Central Governance* {{< TransferCFT/doctypeuser >}}*.
+-   For a complete listing of Source and Target parameters,  refer to the Transfer CFT to parameter mapping available in  the **Central Governance* {{< TransferCFT/doctypeuser >}}*.

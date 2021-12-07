@@ -13,7 +13,7 @@ of correctly terminated transfers. See also the parameter list
 Two recording modes are available:
 
 -   Recording data
-    in {{< TransferCFT/componentshortname >}} files. When the primary file is full, {{< TransferCFT/componentshortname >}}
+    in  {{< TransferCFT/componentshortname >}} files. When the primary file is full,  {{< TransferCFT/componentshortname >}}
     switches to an alternate file. This mode is available on all operating
     systems.
 -   Recording data
@@ -37,7 +37,7 @@ of the CFTPARM command is defined.
 Two recording modes can be used, depending on the system:
 
 -   Recording of data
-    in {{< TransferCFT/componentshortname >}} files. In this case, the CFTACCNT command defines the names of the files receiving
+    in  {{< TransferCFT/componentshortname >}} files. In this case, the CFTACCNT command defines the names of the files receiving
     the data and their management (parameter setting TYPE = FILE). This mode
     is available on ALL SYSTEMS.
 
@@ -46,10 +46,10 @@ Two recording modes can be used, depending on the system:
 -   Recording of data
     in the files of the accounting utility of the operating system in question
     parameter setting TYPE = SYST. This
-    mode is only available on z/OS (MVS) systems.
+    mode is only available on  z/OS (MVS) systems.
 
 For more information on the TYPE parameter in the statistical recording
-mode, see [Recording mode TYPE](#Recordin). For each terminated transfer, {{< TransferCFT/componentshortname  >}} records the information
+mode, see [Recording mode TYPE](#Recordin). For each terminated transfer,  {{< TransferCFT/componentshortname  >}} records the information
 contained in the following table.
 
 CFTACCNT list of headings
@@ -136,7 +136,7 @@ On line data compression rate 
 File record maximum size (FLRECL) 
 536
 228
-File (FRECFM) 
+File  (FRECFM) 
 542
 234
 Protocol compression code (NCOMP) 
@@ -157,10 +157,10 @@ Receiver application identifier (RAPPL) 
 Partner group (GROUP) 
 1670
 482 (\*)
-Number of characters in the file (FBYTE\_EXTENDED)
+Number of characters in the file (FBYTE_EXTENDED)
 1703
  
-Number of characters sent over the line (NBYTE\_EXTENDED)
+Number of characters sent over the line (NBYTE_EXTENDED)
 1719
  
 Logic file network identifier (NIDF)
@@ -175,7 +175,7 @@ Total
 z/OS: 482
 ```
 
-(\*) z/OS: For format V23 the partner group is not included in account structure. The total length is 482.
+(\*) z/OS:  For format V23 the partner group is not included in account structure. The total length is 482.
 
 To use the account file in an application, you must refer to the header file that is delivered in the Transfer CFT runtime directory as either a cftcnt.h (C language for all platforms) or cftcnt.cop (COBOL on z/OS and IBM i) file.
 
@@ -202,9 +202,9 @@ in the CFTACCNT object, you must define the following parameters as well.
 -   maxrec
 -   switch
 
-The {{< TransferCFT/componentshortname  >}} statistical
+The  {{< TransferCFT/componentshortname  >}} statistical
 file is full when the maximum number of records, the MAXREC parameter,
-is reached. When this happens, the {{< TransferCFT/componentshortname  >}} switches to an alternate
+is reached. When this happens, the  {{< TransferCFT/componentshortname  >}} switches to an alternate
 file and executes the procedure defined by the EXEC parameter.
 
 The SWITCH operating command also allows the operator to manually switch
@@ -215,10 +215,10 @@ it is activated. If the first file designated by FNAME is not empty, Transfer
 CFT switches to the second file labeled AFNAME. The procedure associated
 with the switching can regenerate an empty file.
 
-The statistical files must be created before the {{< TransferCFT/componentshortname  >}} is activated.
+The statistical files must be created before the  {{< TransferCFT/componentshortname  >}} is activated.
 This operation is performed in the command CFTFILE TYPE = ACCNT.
 
-When you shut down {{< TransferCFT/componentshortname  >}}, using the SHUT command, {{< TransferCFT/componentshortname  >}}
+When you shut down  {{< TransferCFT/componentshortname  >}}, using the SHUT command,  {{< TransferCFT/componentshortname  >}}
 executes the switching procedure to empty the last statistical file in
 process.
 
@@ -232,7 +232,7 @@ in the CFTACCNT object, you must define the ACCID
 parameter as well.
 
 The CFTACCNT command references
-the {{< TransferCFT/componentshortname  >}} application via the utility.
+the  {{< TransferCFT/componentshortname  >}} application via the utility.
 
 ```
 
@@ -241,7 +241,7 @@ Protocol
 Details
 
 z/OS (MVS)
-The ACCID parameter identifying the {{< TransferCFT/componentshortname >}} application
+The ACCID parameter identifying the  {{< TransferCFT/componentshortname >}} application
 must be defined.
 ```
 

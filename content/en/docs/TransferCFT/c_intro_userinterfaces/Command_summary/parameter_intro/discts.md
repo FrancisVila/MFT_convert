@@ -11,7 +11,7 @@
 \[DISCTS =
 { <u>see the table</u> | n} \] {0..3600}  
 
-The synchronous connection time as managed by {{< TransferCFT/componentshortname  >}}. If {{< TransferCFT/componentshortname  >}} does not receive requests to communicate in discts (the number of seconds), {{< TransferCFT/componentshortname  >}} closes the session.
+The synchronous connection time as managed by  {{< TransferCFT/componentshortname  >}}. If  {{< TransferCFT/componentshortname  >}} does not receive requests to communicate in discts (the number of seconds),  {{< TransferCFT/componentshortname  >}} closes the session.
 
 The session established for a transfer remains active for DISCTS seconds
 after the completion of this transfer. If at the end of this timeout,

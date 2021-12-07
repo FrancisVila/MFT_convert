@@ -19,14 +19,14 @@ side involved in a file transfer, the sender and the receiver, manages
 translations between real computer files and the virtual files transferred
 by the protocol.
 
-The {{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
+The  {{< TransferCFT/componentshortname  >}} sender maps the virtual file attributes according to the SEND,
 CFTSEND cards and the physical file attributes. For example, if the FLRECL
 attribute is not set in the SEND/CFTSEND cards, the logical record length
 of the local file is used to set the logical record length of the virtual
 file (on a platform where logical record length of a local file has no
 meaning, such as UNIX or Windows, the arbitrary value of 512 is used).
 
-The {{< TransferCFT/componentshortname  >}}
+The  {{< TransferCFT/componentshortname  >}}
 receiver maps the physical file attributes according to the RECV,
 CFTRECV and the virtual file attributes. For example, if the FLRECL attribute
 is set the logical record length of the local file will be the FLRECL

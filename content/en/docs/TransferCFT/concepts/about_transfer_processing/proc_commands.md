@@ -2,7 +2,7 @@
     "title": "Use processing scripts",
     "linkTitle": "Standard use of processing commands",
     "weight": "180"
-}There are 4 stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these, Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
+}There are 4  stages where you can configure processing - preprocessing, post-processing, ack processing, and for a transfer error. For these,  Transfer CFT provides global definitions in the static configuration that are used by default. However, you can override the default scripts, in the CFTSEND, SEND, CFTRECV and RECV commands, using the following parameters:
 
 -   `Preexec`: for preprocessing
 -   `Exec`: for post-processing
@@ -43,7 +43,7 @@ CFTUTIL END PART=PART01, IDTU=A0000001
 
 Operating system differences
 
-Depending on the operating system, the temporary file is treated as follows:
+Depending on the operating system, the  temporary file is treated as follows:
 
 -   Windows: The temporary file is automatically deleted.
 
@@ -58,7 +58,7 @@ Depending on the operating system, the temporary file is treated as follows:
     rm $0.err
 
 -   HP NonStop native environment: You must perform the following steps to remove the temporary file:
-    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
+                    &lt;ul>&lt;li>#PURGE \[#IN\]&lt;/li>&lt;li>The same BTPURGE procedure as in the previous version is delivered and can be executed&lt;/li>&lt;span class="code">RUN &lt;subvolume>UP.BTPURGE \[#DEFAULTS\]&lt;/span>&lt;/ul>&lt;/li>
 
 -   HP NonStop OSS environment: You must add the following lines at the end of the template processing script:
 
@@ -68,7 +68,7 @@ Depending on the operating system, the temporary file is treated as follows:
 
 <span id="Directly"></span>
 
-### Directly executing a program or a processing script
+### Directly executing a  program or a processing script
 
 Available on Windows and Unix
 
@@ -90,7 +90,7 @@ CFTSEND id=flow01, fname=myfile, exec="cmd:**CFTUTIL** end part=&PART, idt=&IDT
 
 Limitations Unix only
 
-If a command is incorrect and cannot be executed, the transfer remains in the phasestep C. Possible reasons for this include:
+If a command is incorrect and cannot be executed,  the transfer remains in the phasestep C. Possible reasons for this include:
 
 -   The command file name is too long
 -   The command file name does not point to a regular file
@@ -106,7 +106,7 @@ If a command is incorrect and cannot be executed, the transfer remains in the ph
 
 ## Schedule processing
 
-You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/Ackmintime parameters to schedule script processing activity. Additionally you can use prestate=Hold to wait for a START to start pre-processing.
+You can use the Premindate/Premintime, Postmindate/Postmintime, and Ackmindate/Ackmintime parameters to schedule script processing activity.  Additionally you can use prestate=Hold to wait for a START to start pre-processing.
 
 ## Throttle processing
 
@@ -139,12 +139,12 @@ Example
 CFTUTIL end part=&PART,idtu=&IDTU,istate=no,appstate="completed"
 ```
 
-The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script in {{< TransferCFT/componentshortname  >}}.
+The command CFTUTIL END can be use to set checkpoints in the script execution using the istate=yes (istate is an intermediate state) and APPSTATE value. Doing so allows you to see the step running the script  in   {{< TransferCFT/componentshortname  >}}.
 
 Example
 
 ```
-CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step\_1"CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step\_2"
+CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_1"CFTUTIL end part=&PART,idtu=&IDTU,istate=yes,appstate="step_2"
 ```
 
 #### Define DIAGC
@@ -162,15 +162,15 @@ In your script you can also update values, for example the FNAME. However, the i
 Example
 
 ```
-CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW\_FNAME
+CFTUTIL end part=&PART,idtu=&IDTU,FNAME=NEW_FNAME
 ...
 .....
-CFTR12I END Treated for USER MY\_CFT : FNAME value was "pub/FTEST" and is now "NEW\_FNAME"
+CFTR12I END Treated for USER MY_CFT : FNAME value was "pub/FTEST" and is now "NEW_FNAME"
 ```
 
 ### Stop
 
-When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it executes specific actions depending on the DIAGP and DIAGC that you defined.
+When you execute a CFTUTIL HALT or CFTUTIL KEEP, you can set the DIAGP and DIAGC so that when you restart the script it  executes specific actions depending on the DIAGP and DIAGC that you defined.
 
 Example
 
@@ -181,7 +181,7 @@ CFTUTIL KEEP part=&PART,idtu=&IDTU,DIAGP=”Error 404”,DIAGC=”File not found
 
 ### Restart
 
-In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which runs from the checkpoint that you set.
+In your script, you can handle restart from intermediate steps checking the &APPSTATE value. So if the script fails for any reason, you can run a CFTUTIL HALT or CFTUTIL keep then using a CFTUTIL SUBMIT you can restart your script, which  runs from the checkpoint that you set.
 
 Exa**m**ple  
 
@@ -220,16 +220,16 @@ Description
 SEND, CFTSEND
 ACKMINDATE
 integer
-From this date on, the acknowledgement exec file can be launched.
+       From this date on, the acknowledgement exec file can be launched.
 ACKMINTIME
 integer
-From this time on, the acknowledgement exec file can be launched.
+                                      From this time on, the acknowledgement exec file can be launched.
 POSTMINDATE
 integer
 From this date on, the post processing exec file can be launched.
 POSTMINTIME
 integer
-From this time on, the post processing exec file can be launched.
+From this time  on, the post processing exec file can be launched.
 PREMINDATE
 integer
 From this date on, the preprocessing exec file can be launched.
@@ -241,7 +241,7 @@ string
 The acknowledgement exec file that will be launched after receiving an ACK or NACK.
 ACKSTATE
 REQUIRE/IGNORE
-Specify if <span class="mc-variable axway\_variables.Component\_Short\_Name variable">Transfer CFT</span> should wait for an ACK/NACK to enter the X phase.
+          Specify if  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> should wait for an ACK/NACK to enter the X phase.
 POSTSTATE
 DISP
 The transfer phase step as it enters the Y phase.
@@ -296,10 +296,10 @@ Value
 Description
 
 KEEP
-DIAGP
+DIAGP            
 string
 Specify a customized error that will be set for DIAGP in the catalog.
-DIAGC
+DIAGC            
 string
 Specify a customized error that will be set for DIAGC in the catalog.
 PHASE
@@ -350,7 +350,7 @@ Value
 Description
 
 SUBMIT
-APPSTATE
+APPSTATE          
 string
 Specify an application state for the
 processing script that will allow a SUBMIT to occur at the correct script step.

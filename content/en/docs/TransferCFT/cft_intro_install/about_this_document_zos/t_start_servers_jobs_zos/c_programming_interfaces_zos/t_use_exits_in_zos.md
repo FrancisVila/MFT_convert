@@ -30,7 +30,7 @@ Transfer CFT provides the following types exits:
 
 -   End-of-transfer (\*)=E
 
-(\*) In the following descriptions, the ‘\*’ character refers to the four exits, and is replaced with one of the four characters (A, E, F, or B) as applicable.
+(\*) In the following descriptions, the ‘\*’ character refers to the four exits, and is replaced with one of the four characters (A, E,  F, or B) as applicable.
 
 An exit is a program comprising 3 parts:
 
@@ -92,15 +92,15 @@ The first 32 bytes (SGTRACE=512) or the whole parameter field (SGTRACE=544) subm
 Example of a Transfer CFT diagnosis:
 
 ```
-`SGAB00E: Jobname Stepname SITMOS   Date Time Version`
-`ABEND = 84sssuuu ,   PSW =xxxxxxxx xxxxxxxx ,  EPA  =xxxxxxxx`
-`SGAB01E: REG 0-7 =xxxxxxxx .......`
-`SGAB02E: REG 8-15=xxxxxxxx ......`
-`SGAB03E:   SGNUC =xxxxxxxx , TRACE =xxxxxxxx ...`
-`SGAB08E: INSTRUCTIONS :    xxxxxxxx:-6           xxxxxxx`
-`SGAB08E: ** USER EXIT ABEND DETECTED ** L=l EPA= x NAME=Mod`
-`SGAB30E: xxxxxxxx CFTEXInn TCB:  Tcbaddr SGNUC: xxx EPA : Epa`
-`SGAB09E: TASK-AC =CFTEXInn , KCB =xx , PRV =xx ,SGSAVE =xxSAVE = Saveaddr MODULE = EXITASK  date Version  EPA= xx RET= xx`
+SGAB00E: Jobname Stepname SITMOS   Date Time Version
+ABEND = 84sssuuu ,   PSW =xxxxxxxx xxxxxxxx ,  EPA  =xxxxxxxx
+SGAB01E: REG 0-7 =xxxxxxxx .......
+SGAB02E: REG 8-15=xxxxxxxx ......
+SGAB03E:   SGNUC =xxxxxxxx , TRACE =xxxxxxxx ...
+SGAB08E: INSTRUCTIONS :    xxxxxxxx:-6           xxxxxxx
+SGAB08E: \*\* USER EXIT ABEND DETECTED \*\* L=l EPA= x NAME=Mod
+SGAB30E: xxxxxxxx CFTEXInn TCB:  Tcbaddr SGNUC: xxx EPA : Epa
+SGAB09E: TASK-AC =CFTEXInn , KCB =xx , PRV =xx ,SGSAVE =xxSAVE = Saveaddr MODULE = EXITASK  date Version  EPA= xx RET= xx
 ```
 
 Additionally, the following are valid for the example:

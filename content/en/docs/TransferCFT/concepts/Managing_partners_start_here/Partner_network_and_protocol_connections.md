@@ -74,7 +74,7 @@ next paragraph.
 ### Application connection SAP
 
 Transfer CFT can authorize several application protocols per partner
-(PeSIT, ODETTE). A requester Transfer CFT must consequently address:
+(PeSIT,  ODETTE). A requester Transfer CFT must consequently address:
 
 -   A computer: network
     address
@@ -88,7 +88,7 @@ Points (SAP). Each SAP is associated with one and only one Transfer CFT
 protocol; so, from the SAP value presented with the connection request,
 Transfer CFT can determine the protocol that it has to use.
 
-This general statement,
+This general statement,  
 must be made according to the network access methods used.
 
 More specifically:
@@ -114,7 +114,7 @@ More specifically:
         parameters that the server Transfer CFT previously defined for it, during
         the initialization phase
 
-Example of the protocol recognition
+Example of the protocol recognition  
 in TCP
 
 This figure illustrates TCP example of the protocol recognition

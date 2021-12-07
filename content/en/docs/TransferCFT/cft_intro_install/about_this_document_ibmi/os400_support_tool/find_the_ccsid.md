@@ -2,11 +2,11 @@
     "title": "Determine or change the CCSID",
     "linkTitle": "Determine or change the CCSID ",
     "weight": "250"
-}A coded character set identifier (CCSID) is a value that allows you to define a specific page code for your IBM i system. This value can be defined in your system, user profile, or subsystem. The value 65535 is an IBM i specific value that enables automatic resolution by the system.
+}A coded character set identifier (CCSID) is a value that allows you to define a specific page code for your IBM i system. This value can be defined in your system,  user profile, or subsystem. The value 65535 is an IBM i specific value that enables automatic resolution by the system.
 
-You should pay particular attention to this value as it may impact {{< TransferCFT/transfercftname  >}} depending on the language installed on the system. Note that Axway uses CCSID 37 when generating the product.
+You should pay particular attention to this value as it may  impact {{< TransferCFT/transfercftname  >}} depending on the language installed on the system. Note that Axway uses CCSID 37 when generating the product.
 
-If you want to know the CCSID used in your current environment or if you want to change it, perform the following steps:
+If you want to know the CCSID used in your current environment or if you want to change it,  perform the following steps:
 
 1.  Connect with the Transfer CFT profile.
 2.  Start {{< TransferCFT/transfercftname >}}: `CFTSTART`

@@ -6,7 +6,7 @@
 
 > **Note:**
 >
-> When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for server or client mode.
+> When using the SFTP protocol, the CFTSSH definition contains the SSH connection parameters for  server or client mode.
 
 ## Server
 
@@ -51,11 +51,11 @@ Example 1
 This example demonstrates an SSH default profile that has no client key authentication (CLIPUBKEY is not defined). The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The SRVPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
 ```
-CFTSSH ID = 'SSH\_DEFAULT',
- DIRECT = 'SERVER',
- SRVPRIVKEY = 'SSH\_PRIV\_KEY',
+CFTSSH        ID          = 'SSH_DEFAULT',
+ DIRECT      = 'SERVER',
+ SRVPRIVKEY     = 'SSH_PRIV_KEY',
 ...
- MODE = 'REPLACE'
+ MODE        = 'REPLACE'
 ```
 
 Example 2
@@ -67,11 +67,11 @@ Example 3
 The server private key is referenced by the SRVPRIVKEY parameter (SSH\_PRIV\_KEY in the example). The value is also a key identifier that corresponds to a key stored in the local PKI database.
 
 ```
-CFTSSH ID = 'SSH\_DEFAULT',
- DIRECT = 'SERVER',
- SRVPRIVKEY = 'SSH\_PRIV\_KEY',
-  CLIPUBKEY = 'SSH\_PUB\_KEY',
- MODE = 'REPLACE'
+CFTSSH        ID          = 'SSH_DEFAULT',
+ DIRECT      = 'SERVER',
+ SRVPRIVKEY     = 'SSH_PRIV_KEY',
+  CLIPUBKEY      = 'SSH_PUB_KEY',
+ MODE        = 'REPLACE'
 ```
 
 Example 4
@@ -79,9 +79,9 @@ Example 4
 This example demonstrates an SSH default profile with no server key authentication (SRVPUBKEY is not defined), but where there is no client key authentication (CLIPRIVKEY is not defined).
 
 ```
-CFTSSH ID = 'SSH\_DEFAULT',
- DIRECT = 'CLIENT',
-  MODE = 'REPLACE'
+CFTSSH        ID          = 'SSH_DEFAULT',
+ DIRECT      = 'CLIENT',
+  MODE        = 'REPLACE'
 ```
 
 Example 5
@@ -89,10 +89,10 @@ Example 5
 This example demonstrates an SSH default profile with server key authentication (SRVPUBKEY is defined), but where there is no client key authentication (CLIPRIVKEY is not defined). The server public key is referenced by the SRVPUBKEY parameter (SSH\_PUB\_KEY in the example). The SRVPUBKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
 ```
-CFTSSH ID = 'SSH\_DEFAULT',
-  DIRECT = 'CLIENT',
- SRVPUBKEY = 'SSH\_PUB\_KEY',
-  MODE = 'REPLACE'
+CFTSSH        ID          = 'SSH_DEFAULT',
+  DIRECT      = 'CLIENT',
+ SRVPUBKEY     = 'SSH_PUB_KEY',
+  MODE        = 'REPLACE'
 ```
 
 Example 6
@@ -103,9 +103,9 @@ This example demonstrates an SSH default profile with server key authentication 
 -   The client private key is referenced by the CLIPRIVKEY parameter (SSH\_PRIV\_KEY in this example). The CLIPRIVKEY value is a key identifier that corresponds to a key stored in the local PKI database.
 
 ```
-CFTSSH ID = 'SSH\_DEFAULT',
-DIRECT = 'CLIENT',
-SRVPUBKEY = 'SSH\_PUB\_KEY',
-CLIPRIVKEY = 'SSH\_PRIV\_KEY',
-MODE = 'REPLACE'
+CFTSSH        ID          = 'SSH_DEFAULT',
+DIRECT      = 'CLIENT',
+SRVPUBKEY     = 'SSH_PUB_KEY',
+CLIPRIVKEY    = 'SSH_PRIV_KEY',
+MODE        = 'REPLACE'
 ```

@@ -4,7 +4,7 @@
     "weight": "200"
 }This page is intended to help you understand the various ways to use Transfer CFT and associated applications in a container environment, providing a high level overview of the possible integration architectures.
 
-You may want to review the two methods  for installing and operating a containerized {{< TransferCFT/transfercftname  >}}, using either [Docker Compose or Kubernetes with Helm](../../cft_intro_install/install_container).
+You may want to review the two methods  for installing and operating a containerized {{< TransferCFT/transfercftname  >}}, using either  [Docker Compose or Kubernetes with Helm](../../cft_intro_install/install_container).
 
 ## Kubernetes concepts
 
@@ -18,13 +18,13 @@ Pods
 
 Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
 
-A Pod is a group of one or more containers, with shared storage/network resources, and a specification for how to run the containers. A Pod's contents are always co-located and co-scheduled, and run in a shared context. A Pod models an application-specific "logical host": it contains one or more application containers that are relatively tightly coupled. In non-cloud contexts, applications executed on the same physical or virtual machine are analogous to cloud applications executed on the same logical host.
+A Pod  is a group of one or more containers, with shared storage/network resources, and a specification for how to run the containers. A Pod's contents are always co-located and co-scheduled, and run in a shared context. A Pod models an application-specific "logical host": it contains one or more application containers that are relatively tightly coupled. In non-cloud contexts, applications executed on the same physical or virtual machine are analogous to cloud applications executed on the same logical host.
 
 Definitions are provided by Kubernetes at: [https://kubernetes.io/docs/concepts](https://kubernetes.io/docs/concepts/)
 
 ## Producer/consumer application integration
 
-Your producer/consumer application integration with Transfer CFT is based on:
+Your  producer/consumer application integration with Transfer CFT is based on:
 
 -   File storage: Where and how files transferred by Transfer CFT are shared with the application
 -   Transfer triggering: How the application triggers a transfer request
@@ -32,7 +32,7 @@ Your producer/consumer application integration with Transfer CFT is based on:
 
 ### File storage
 
-There are 3 possible file storage implementations when you have Transfer CFT as a container along with a producer/consumer application.
+There are 3 possible file storage implementations when you have Transfer CFT as a container along with a  producer/consumer application.
 
 #### {{< TransferCFT/transfercftname  >}} is the application sidecar
 
@@ -55,7 +55,7 @@ Two pods one node architecture            <img src="/Images/TransferC
 The application and {{< TransferCFT/transfercftname  >}} run on different nodes both of which support the **ReadWriteMany** access mode, where:
 
 -   The Transfer CFT data resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...).
--   The data produced and consumed by the application resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...) or cloud storage (AWS S3, GCS). In this implementation, you configure the cloud storage at the flow deployment level, not in the product deployment.
+-   The data produced and consumed by the application resides on a persistent volume that can be a shared volume (Ceph, GlusterFS, NFS, ...) or cloud storage (AWS S3, GCS). In this implementation, you configure the cloud storage   at the flow deployment level, not in the product deployment.
 
 Two pods two nodes architecture                    <img src="/Images/TransferCFT/pod3.png" class="maxWidth" />
 

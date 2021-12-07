@@ -17,16 +17,16 @@ To troubleshoot:
 
 ### No matching client certificate for SSL server
 
-The customer receives a "certificate\_request" type message, but it is empty. Transfer CFT cannot correctly respond to this message, and an error is generated.
+The customer receives a  "certificate\_request" type message, but it is empty. Transfer CFT cannot correctly respond to this message, and an error is generated.
 
 Client side
 
 In the catalog a 260 PKI 040 diagnostic displays, and in the log a message similar to the following is displayed:
 
 ```
-CFTY13E CTX=200006 SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR=40 (Handshake failure)
+CFTY13E CTX=200006 SSL Handshake local error [HANDSHAKE_FAILURE] CR=40 (Handshake failure)
 CFTH11E Error Opening session <PART=HPX18SSL EV=VVTIMO ST=SUP01>
-CFTT75E connect reject <IDTU=A00000BL PART=HPX18SSL IDF=SSL IDT=A2217045 260 PKI 040>
+CFTT75E connect reject                    <IDTU=A00000BL PART=HPX18SSL IDF=SSL      IDT=A2217045 260 PKI 040>
 ```
 
 Server side
@@ -34,7 +34,7 @@ Server side
 No diagnostic displays in catalog, but in the log a message similar to the following:
 
 ```
-CFTY13E CTX=200006 SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR=40 (Handshake failure)
+CFTY13E CTX=200006 SSL Handshake local error [HANDSHAKE_FAILURE] CR=40 (Handshake failure)
 ```
 
 When using mutual authentication, the client does not have a certificate to provide to the remote SSL server . For example, the client has no user certificate corresponding to one of the CAs provided by the server.
@@ -49,8 +49,8 @@ When using mutual authentication, the client does not have a certificate to prov
 Handshake error on the server because there is no shared cipher. You should check the CFTSSL direct=server configuration and verify that the USERCID parameter is set to a valid certificate identifier.
 
 ```
-CFTY13E CTX=210004 SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR=40 (Handshake failure: no shared cipher)
-CFTY30E CTX=200003 SSL Handshake remote error \[HANDSHAKE\_FAILURE\] CR=40 (Handshake failure: sslv3 alert handshake failure)
+CFTY13E CTX=210004 SSL Handshake local error [HANDSHAKE_FAILURE] CR=40 (Handshake failure: no shared cipher)
+CFTY30E CTX=200003 SSL Handshake remote error [HANDSHAKE_FAILURE] CR=40 (Handshake failure: sslv3 alert handshake failure)
 ```
 
 ### Incorrect certificate format
@@ -60,29 +60,29 @@ In this log excerpt, there is an error "CR = 40" corresponding to a failure duri
 This error may be related to the mode of insertion of client certificate, which is PEM format and not a certificate in DER.
 
 ```
-CFTR12I RECV Treated for USER admin <IDTU=A00002EN PART=SEID IDF=D\_615M>
-Session parameters CFTT13I <IDTU=A00002EN PART=SEID IDF=D\_615M IDT=J0615002 \_ PROT=PROTSSL1 SAP=6335 HOST= 212.11.19.28>
+CFTR12I RECV Treated for USER admin <IDTU=A00002EN PART=SEID IDF=D_615M>
+Session parameters CFTT13I <IDTU=A00002EN PART=SEID IDF=D_615M IDT=J0615002 _ PROT=PROTSSL1 SAP=6335 HOST= 212.11.19.28>
 CFTY19I PART = SEID = SSL Client SSLPROT1 opening session CTX = 20000c on task PID = 82928
 CTX = 20000c CFTY21I Remote Server Certificate Accepted rootID = ROOTSEID
 CTX = 20000c CFTY23I Client certificate ID = MUTESTCA rootID = ROOTSEID
-CTX = 20000c CFTY13E SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR = 40
+CTX = 20000c CFTY13E SSL Handshake local error [HANDSHAKE_FAILURE] CR = 40
 CFTH11E Error Opening session <PART=SEID EV=VVTIMO ST=SUP01>
-CFTT75E connect reject <IDTU=A00002EN PART=SEID IDF=D\_615M IDT=J0615002 260 TLSDOWN>
+CFTT75E connect reject <IDTU=A00002EN PART=SEID IDF=D_615M IDT=J0615002 260 TLSDOWN>
 ```
 
 > **Note:**
 >
 > Tip  
-> A conversion of the certificate format is required.
+> A conversion of the certificate format  is required.
 
 #### No private key
 
-This failure occurs during the handshake phase, and is related to using a user certificate that does not include the private key needed for encryption.
+This  failure occurs during the handshake phase, and is related to using a user certificate that does not include the private key needed for encryption.
 
 ```
-PART ARVAL CFTY19I = SSL = SSL\_ARVAL customer opening session on task CTX = 200003 pid = 23630
+PART ARVAL CFTY19I = SSL = SSL_ARVAL customer opening session on task CTX = 200003 pid = 23630
 CFTY21I CTX = 200003 Remote Server Certificate Accepted rootID = VERISIGNROOT
-CFTY13E CTX = 200003 SSL Handshake local error \[HANDSHAKE\_FAILURE\] CR = 40
+CFTY13E CTX = 200003 SSL Handshake local error [HANDSHAKE_FAILURE] CR = 40
 CFTH11E Error Opening session <PART=ARVAL EV=VVTIMO ST=SUP01>
 CFTT75E connect reject <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423 260 TLSDOWN>
 Requester CFTT56I file closed <IDTU=A000001R PART=ARVAL IDF=GEDTEST IDT=D2015423>
@@ -103,9 +103,9 @@ PKIPASSW is a password that is used to encrypt the private keys in the local PKI
 These two parameters must be the same so that Transfer CFT can use the certificates in the database. If not, you may experience error messages similar to the following:
 
 ```
-CFTY02Z>> CTX = 210004 SSLact () \_ 7 SENDING DATA ALERT
+CFTY02Z>> CTX = 210004 SSLact () _ 7 SENDING DATA ALERT
 CFTY02Z>> CTX = 15030100 210 004 020 233 >...... 3 <
-CFTY02Z>> CTX = 210004 cftpki () = \_ PHASE EndSession
+CFTY02Z>> CTX = 210004 cftpki () = _ PHASE EndSession
 ```
 
 #### Protocol is not correctly configured
@@ -127,25 +127,25 @@ In this scenario, two Transfer CFT’s have no cipher suite in common. The ciphe
 Client side
 
 ```
-CFTY13E CTX = 100003 SSL Handshake local error \[INSUFFICIENT\_SECURITY\] CR = 71
+CFTY13E CTX = 100003 SSL Handshake local error [INSUFFICIENT_SECURITY] CR = 71
 ```
 
 Server side
 
 ```
-CFTY13E CTX = 110004 SSL Handshake local error \[close\_notify\] CR = 0
+CFTY13E CTX = 110004 SSL Handshake local error [close_notify] CR = 0
 ```
 
 Check the 'ciphlist' setting in your definition CFTSSL.
 
 ### Unknown server certificate
 
-In this scenario, the client does not recognize or accept the server's certificate (the server must be authenticated).
+In this scenario, the client does not recognize  or accept the server's certificate (the server must be authenticated).
 
 ```
 CTX = 2100e9 CFTY25I HOST = remote address 172.31.250.35
 CTX = 2100e9 CFTY24I Server certificate ID = XMCA rootID = XMCA
-CTX = 2100e9 CFTY13E SSL Handshake local error \[UNKNOWN\_CA\] CR = 48
+CTX = 2100e9 CFTY13E SSL Handshake local error [UNKNOWN_CA] CR = 48
 CTX = 2000e8 CFTY11I PART = SSL = GEM SSLG Closing SSL client session
 PART CFTH61I GEM = IDS = 00232 PESIT Requester closed session
 ```
@@ -162,33 +162,33 @@ CTX = 22057f CFTY25I HOST = 172.31.24.119 remote address
 CFTY12I CTX = 20057d = PROT = IPSSLN SSLIPN SSL server SSL session Closing
 CFTY12I CTX = PROT = 21057th SSLIPN SSL = server SSL session Closing IPSSLN
 CFTY12I CTX = PROT = 22057f SSLIPNSSL = IPSSLN server SSL session Closing
-CFTN04E Synchronization error (release indication) SSLTID \_ = 25886740 CS = CR =- 1 CtxRef NULL
+CFTN04E Synchronization error (release indication) SSLTID _ = 25886740 CS = CR =- 1 CtxRef NULL
 ```
 
 ## TLS V1 and SSL V3 compatibility issues
 
-It is recommended that you set the server to use TLSV1COMP. However, in Transfer CFT you cannot manually set the specific TLS version. If you set the CFTSSL object VERSION parameter to TLSV1 or TLSV1COMP, in client mode Transfer CFT introduces itself in TLS 1.2. The SSL communication is then performed using highest TLS version supported by the remote partner as defined by the TLS RFC.
+It is recommended that you set the server to use TLSV1COMP. However, in Transfer CFT you cannot manually set the specific TLS version. If you set the CFTSSL object VERSION parameter to TLSV1 or TLSV1COMP,  in client mode Transfer CFT introduces itself in TLS 1.2. The SSL communication is then performed using highest TLS version supported by the remote partner as defined by the TLS RFC.
 
 When Transfer CFT is the client there are two possible scenarios that may lead to errors. When Transfer CFT is the server, it negotiates the TLS version and so no issue occurs.
 
 If the client is configured for new compatibility mode and server is using the old, or the reverse, the log messages resemble the following.
 
 ```
-CFTY13E CTX=200008 SSL Handshake local error \[TLSPARSE\] CR=1 (SSL\_ERROR\_ZERO\_RETURN(6): NULL(err=0))
-CFTH11E Error Opening session <PART=ST\_QAPS EV=VVTIMO ST=CN0022>
-CFTT75E connect reject <IDTU=A0000009 PART=ST\_QAPS IDF=ST\_QA\_AP IDT=A2716390 260 TLSPARSE>
+CFTY13E CTX=200008 SSL Handshake local error [TLSPARSE] CR=1 (SSL_ERROR_ZERO_RETURN(6): NULL(err=0))
+CFTH11E Error Opening session <PART=ST_QAPS EV=VVTIMO ST=CN0022>
+CFTT75E connect reject                    <IDTU=A0000009 PART=ST_QAPS IDF=ST_QA_AP IDT=A2716390 260 TLSPARSE>
 ```
 
 A message similar to the following is displayed in the catalog:
 
 ```
-ST\_QAPS SFK TK ST\_QA\_AP A2716390 0 0 260 TLSPARSE
+ST_QAPS  SFK TK ST_QA_AP A2716390          0          0 260 TLSPARSE
 ```
 <span id="Unknown"></span>
 
 ## Unknown CA leads to a failed certificate verification
 
-In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer  even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
 When working with multiple {{< TransferCFT/transfercftname  >}} versions
 
@@ -199,8 +199,8 @@ Given the differences in certificate verification described above, you could enc
 
 Example
 
--   CFT1: The server authenticates itself using the user certificate A. The certificate A is signed by the intermediate certificate B, which is signed by C. CFT1 imported the A certificate as the user and the B certificate as the root in its local database, meaning that the C certificate is not in the local database.
--   CFT2: The client imported the B certificate as a root locally, the SSL config direct= client, rootcid=B.
+-   CFT1: The server authenticates itself using the user certificate A. The certificate A is signed by the intermediate certificate B, which is signed by C. CFT1 imported the  A certificate as the user and the B certificate as the root in its local database, meaning that the C certificate is not in the local database.
+-   CFT2: The client imported the B certificate as a root locally, the SSL config direct= client,  rootcid=B.
 
 Results
 
@@ -245,7 +245,7 @@ To analyze an SSL frame, check the log file and read the first 6 bytes of the SS
 
 Content type Version
 
-Major version l Minor version Fragment length Type message
+Major version     l   Minor version Fragment length Type message
 
 Where:
 
@@ -260,15 +260,15 @@ Where:
 
 ### Handshake frame alert
 
--   0x01 client\_hello 0x01 warning
--   0x02 server\_hello 0x02 fatal
--   0x0B certificate
--   0x0C server\_key\_exchange
--   0x0D certificate\_request
--   0x0E server\_hello\_done
--   0x0F certificate\_verify
--   0x10 client\_key\_exchange
--   0x14 finished
+-   0x01   client\_hello 0x01   warning
+-   0x02   server\_hello 0x02   fatal
+-   0x0B  certificate
+-   0x0C  server\_key\_exchange
+-   0x0D  certificate\_request
+-   0x0E   server\_hello\_done
+-   0x0F   certificate\_verify
+-   0x10   client\_key\_exchange
+-   0x14   finished
 
 ## Authentication types
 
@@ -418,7 +418,7 @@ The client begins to receive data from the server.
 
 CTX = 210004 = PROT = SSLPESIT PESITSSL SSL server session ESTABLISHED CIPHER AUTH = 47 = BOTH
 
-Operation "handshake" was successfully completed with an SSL connection established for a server by double authentication and encryption selected: 47.
+Operation "handshake" was successfully completed with an SSL connection established for  a server by double authentication and encryption selected: 47.
 
 1.  CFTY02Z>&gt; CTX ndata = 210004 () 53 \_ APPLICATION DATA RECEIVED FROM NETWORK
 

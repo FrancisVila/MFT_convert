@@ -12,11 +12,11 @@ Use to modify a technical parameter value.
 UCONFSET id=PARAMETER-KEY,value=STRING
 ```
 
-After modifying a uconf value, you typically must restart {{< TransferCFT/componentshortname  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart. You can check the parameter flag to see if reconfig is an option for that particular parameter.
+After modifying a uconf value, you typically must restart {{< TransferCFT/componentshortname  >}}. When the parameter flag is set to reconfig (=reconfig), you can use the reconfig command instead of a restart.  You can check the parameter flag to see if reconfig is an option for that particular parameter.
 
 Using spaces in a UCONFSET command value
 
-When using CFTUTIL to define a UCONFSET value that contains spaces, the parameter value with spaces must be enclosed by single quotation marks that in turn are within double quotation marks. For example, to define a superuser with spaces use the following format.
+When using CFTUTIL to define a UCONFSET value that contains spaces,  the parameter value with spaces must be enclosed by single quotation marks that in turn are within double quotation marks. For example, to define a superuser with spaces use the following format.
 
 ```
 CFTUTIL UCONFSET id=am.passport.superuser, value="'A B C D'"

@@ -14,20 +14,20 @@ Use the A13RBACK to restore the executable file library, USS Copilot and USS {
 
 Before submitting the JOB configure the following JCL in automatic mode:
 
-..INSTALL(A13RSTOR) &gt;&gt; ID='AUTO'
+..INSTALL(A13RSTOR)   &gt;&gt; ID='AUTO'
 
-..INSTALL(A13SDEL) &gt;&gt; ID='AUTO'
+..INSTALL(A13SDEL)    >&gt; ID='AUTO'
 
-..INSTALL(A13UCOPR) &gt;&gt; ID='AUTO'
+..INSTALL(A13UCOPR)   &gt;&gt; ID='AUTO'
 
-..INSTALL(A13UCOPD) &gt;&gt; ID='AUTO'
+..INSTALL(A13UCOPD)   &gt;&gt; ID='AUTO'
 
-..INSTALL(A13UXSRR) &gt;&gt; ID='AUTO'
+..INSTALL(A13UXSRR)   &gt;&gt; ID='AUTO'
 
-..INSTALL(A13UXSRD) &gt;&gt; ID='AUTO'
+..INSTALL(A13UXSRD)   &gt;&gt; ID='AUTO'
 
 -   Stop Transfer CFT and {{< TransferCFT/copilotname >}}.
--   Set the parameter 'ID' with the last six characters of the patch id. For example, 0E0500 for the patch id CF0E0500.
+-   Set the parameter 'ID' with the last six characters of the patch id. For example,  0E0500 for the patch id CF0E0500.
 -   Submit the JCL.
 
 > **Note:**

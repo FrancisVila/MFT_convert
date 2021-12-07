@@ -64,7 +64,7 @@ State of the partner:
 #### PKICER (PKIUTIL tool)
 
 State is the status of an imported certificate.
-If activated, it can be used by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. Options are:
+If activated, it can be used by  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>. Options are:
 
 -   Act - activated
 -   Inact - deactivated

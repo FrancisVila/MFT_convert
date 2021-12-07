@@ -10,7 +10,7 @@
 
 \[SECFNAME = filename \]
 
-Filename. Name of the {{< TransferCFT/componentshortname  >}} internal security file.
+Filename. Name of the  {{< TransferCFT/componentshortname  >}} internal security file.
 
  
 

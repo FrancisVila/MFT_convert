@@ -40,7 +40,7 @@ The DIRECT=CLIENT VERIFY options are available as of {{< TransferCFT/componentl
 \[VERIFY = { <u>NONE</u> | REQUIRED
 | OPTIONAL | ENFORCED } \]
 
--   ENFORCED: Ensures client authentication with the server. During the handshake, if the server does not ask for the client certificate, then the transfer fails.
+-   ENFORCED:  Ensures client  authentication with the server. During the handshake, if the server does not ask for the client certificate, then the transfer fails.
 -   OPTIONAL and REQUIRED: The same as NONE (for backward compatibility), but should not be used.
 -   NONE: Only the server must be authenticated.
 
@@ -66,7 +66,7 @@ CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=required
 
 Example 3
 
-This example demonstrates a different use of the `ENFORCED `value. When acting as a client, `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
+This example demonstrates a different use of the `ENFORCED `value. When acting as a client,  `ENFORCED `enables Transfer CFT to cancel a transfer if the server does not require the client authentication. Here, the transfer fails with diagi 260 due to the fact that the client requires authentication:
 
 CFTSSL type=client, verify=ENFORCED and CFTSSL type=server, verify=NONE
 

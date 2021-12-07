@@ -4,7 +4,7 @@
     "weight": "320"
 }This topic describes how to configure the environment for a *file
 type exit*. Before you submit an exit, you must customize the following
-{{< TransferCFT/componentshortname  >}} objects:
+  {{< TransferCFT/componentshortname  >}} objects:
 
 -   CFTSEND: to define
     the parameters associated with the EXIT on sending the file
@@ -50,14 +50,14 @@ et &PART.
 CFTEXIT 
 ID = identifier,
 TYPE = FILE,
-\[FORMAT = { V23
-| V24 }\]
-\[LANGUAGE = {COBOL | C},\]
-\[MODE = {REPLACE | CREATE | DELETE},\]
-\[PARM = string,\]
-\[PROG = {CFTEXIT | string},\]
-\[RESERV = {8192 | n},\]
-\[WAITTASK = {1441 | n}\]
+[FORMAT = { V23
+| V24 }]
+[LANGUAGE = {COBOL | C},]
+[MODE = {REPLACE | CREATE | DELETE},]
+[PARM = string,]
+[PROG = {CFTEXIT | string},]
+[RESERV = {8192 | n},]
+[WAITTASK = {1441 | n}]
 ```
 
 Related topics

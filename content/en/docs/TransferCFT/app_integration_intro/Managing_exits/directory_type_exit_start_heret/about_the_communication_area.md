@@ -172,7 +172,7 @@ of connection refusal if the return code value is 2
 -   255:
     Other cause of connection refusal
 
-These refusal codes are converted by {{< TransferCFT/componentshortname >}} into
+These refusal codes are converted by  {{< TransferCFT/componentshortname >}} into
 internal diagnostic codes.
 In
 server mode, the internal diagnostic codes are converted into
@@ -205,11 +205,11 @@ Partner
 type:
 
 -   C: normal
-    {{< TransferCFT/componentshortname >}} partner
+      {{< TransferCFT/componentshortname >}} partner
 -   D: dynamic
-    {{< TransferCFT/componentshortname >}} partner
+      {{< TransferCFT/componentshortname >}} partner
 -   E: non
-    {{< TransferCFT/componentshortname >}} partner
+      {{< TransferCFT/componentshortname >}} partner
 
 part
 Partner

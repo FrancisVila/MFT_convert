@@ -61,9 +61,9 @@ Create your {{< TransferCFT/componentlongname  >}} client in the IdP by importin
 **Note**: If you are using Keycloak, set the **Front Channel Logout** option to **OFF**.
 
 Set up the single logout.  
-When the IdP connects to Transfer CFT using an HTTPS connection, it validates the Transfer CFT’s certificate to ensure it is connecting to a trusted server. This is necessary in order to prevent man-in-the-middle attacks.
+When the IdP connects to Transfer CFT using an HTTPS connection, it validates the Transfer CFT’s certificate  to ensure it is connecting to a trusted server. This is necessary in order to prevent man-in-the-middle attacks.
 
--   Put the Transfer CFT certificate, or the CA that signed the certificate, in the truststore used by the IdP.
+-   Put the Transfer CFT certificate, or the CA that signed the certificate,  in the truststore used by the IdP.
 -   Refer the specific IdP documentation for more information. For Keycloak details, go to [www.keycloak.org/docs/latest/server\_installation/index.html](https://www.keycloak.org/docs/latest/server_installation/index.html#_truststore).
 
 ## Test
@@ -76,11 +76,11 @@ If, as a {{< TransferCFT/componentlongname  >}} administrator or super user, you
 
 ## Signed SAML headers
 
-Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`. If this parameter is not set, but or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens and SAML exchanges with the SAML IDP no longer work.
+Access tokens and SAML headers are signed using the key associated with the certificates referenced by `copilot.ssl.sslcertfile`.  If this parameter is not set, but or FM is enabled, the governance certificate is used. If you change the certificate that is referenced in `copilot.ssl.sslcertfile` or you modify the   `cg.certificate.governance.key_len `value, the impact is that the corresponding private key changes. This means that once the new key is generated, access tokens   and SAML exchanges with the SAML IDP no longer work.
 
 You can see the [Change the private key length](../../../governance_services_intro/cg_postregister#Change) section for details.
 
-If you change the private key, you must repeat the steps 6 - 8 as described [above](#step6).
+If you change the private key, you must repeat the steps  6 - 8 as described [above](#step6).
 
 ## Troubleshooting
 

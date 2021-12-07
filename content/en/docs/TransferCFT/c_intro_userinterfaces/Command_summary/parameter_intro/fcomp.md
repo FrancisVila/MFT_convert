@@ -10,7 +10,7 @@
 
 \[FCOMP = {0 | 15}\]
 
-Defines the data compression in the receiver's logical file.
+Defines the data compression  in the receiver's logical file.
 
 -   0: no compression
 

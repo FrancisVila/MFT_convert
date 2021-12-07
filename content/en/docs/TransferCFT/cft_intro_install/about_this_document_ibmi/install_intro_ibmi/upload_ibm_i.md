@@ -10,7 +10,7 @@ Before starting a Transfer CFT session, you must add the value \*none in the ini
 >
 > CFTPGM is the standard name for the programs library.
 
-Begin the installation process by uploading the Transfer CFT installation package, in binary mode, to the IBM i system:
+Begin the installation process by uploading the Transfer CFT  installation package, in binary mode, to the IBM i system:
 
 1.  Log in with the **CFTINST** user.
 2.  Create a temporary library:  
@@ -25,7 +25,7 @@ Begin the installation process by uploading the Transfer CFT installation packag
     ```
     binary
     cd CFTTMP
-    put Transfer\_CFT\_os400.bin CFT37
+    put Transfer_CFT_os400.bin CFT37
     ```
 
 <!-- -->

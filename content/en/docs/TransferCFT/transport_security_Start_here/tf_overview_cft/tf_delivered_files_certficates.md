@@ -58,7 +58,7 @@ passPhrase: For PKCS#12 files, the password required to access the file.
 
  
 
-General Usage: CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation entitiesLocation\]
+General  Usage:  CFTTF -pcfg conffile \[-plain plainFilename\] \[-entitiesLocation entitiesLocation\]
 
 \[-envelope envelopeName\] \[-plainFileCharset plainCharset\] \[-plainEncCharset encCharset\]
 
@@ -69,7 +69,7 @@ To generate a passphrase, use the command: `CFTTF -pw [password]`
 Example
 
 ```
-CFTTF –pw user1OUTPUT: OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
+CFTTF –pw user1OUTPUT:  OGrplhngkBLeiazMyPkAdcLnd5jlNOnMoGYKaI2WfAw=
 ```
 
 See also [How to generate a certificate for Trusted File](../tf_generate_cert).
@@ -112,7 +112,7 @@ The following certificates are located in: &lt;CFTDIRRUNTIME>/conf/tf/.
 
 The following messages are used by Trusted File, and are located in: `$CFTDIRINSTALL/distrib/tf/english/`**.** Each file contains a set of error message associated with the type of encoding used.
 
--   xasn.msg
+-   xasn.msg      
 -   xp3.msg
 -   xpppki.msg
 -   pgp.msg
@@ -130,7 +130,7 @@ Refer to the for details, available on [support.axway.com](https://support.axway
 
 ## Transcoding table
 
-The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all available transcoding tables.
+The `<CFTDIRRUNTIME>/conf/tf/transcoding.tbl` file contains all  available transcoding tables.
 
 
 | Table  | Description  |

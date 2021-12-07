@@ -2,7 +2,7 @@
     "title": "Use the NonStop mode ",
     "linkTitle": "Use the NonStop mode",
     "weight": "200"
-}Transfer CFT HP NonStop provides a start-process supervisor (CFTSUP) that can restart the Transfer CFT server or UI server in case of an unexpected stop. This section presents the following NonStop information:
+}Transfer CFT HP NonStop provides a start-process supervisor (CFTSUP) that can restart the Transfer CFT server or UI server in case of an unexpected stop. This section presents the following NonStop  information:
 
 -   [Overview](#Overview): describes the non-stop feature and compares it with the NonStop functionality delivered in previous versions
 -   [Enable](#Enable): how to activate the non-stop mode
@@ -75,14 +75,15 @@ To use the same collector for the supervisor as for {{< TransferCFT/transfercftn
 
 2.  In the Transfer CFT configuration, modify the CFTLOG definition to: `NOTIFY=’%uconf:cft.guardian.collector%’. F`or example`:`  
     ```
-    CFTLOG ID = 'LOG0',
+    CFTLOG       ID          = 'LOG0',
+                  
 
-    > FNAME = '\_CFTLOG',
-    > AFNAME = '\_CFTLOGA',
+    > FNAME       = '_CFTLOG',
+    >               AFNAME      = '_CFTLOGA',
     > ...
-    > **NOTIFY = ’%uconf:cft.guardian.collector%’,**
-    > CONTENT = 'FULL',
-    > ...
+    > **NOTIFY      =  ’%uconf:cft.guardian.collector%’,**
+    >               CONTENT     = 'FULL',
+    >               ...
 
     ```
 
@@ -172,9 +173,9 @@ From the home directory, enter the `help `command. For example:
 ```
 /home/axway/<user>: cftsup help
  
-Syntax: cftsup \[ALL|CFT|COPILOT|SUPV\] Actions \[Options\]
+Syntax: cftsup [ALL|CFT|COPILOT|SUPV] Actions [Options]
 : cftsup ? (or HELP) for a list of the component and actions
-: cftsup Component ? (HELP) for actions to perform on components
+: cftsup Component ?  (HELP) for actions to perform on components
 ```
 
 Use `command ?` to display the parameter list:

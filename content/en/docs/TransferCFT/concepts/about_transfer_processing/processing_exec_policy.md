@@ -12,7 +12,7 @@
 
 ## Broadcast request
 
-The EXECPRE, EXEC and EXECA parameters of the CFTDEST object define the execution policy for pre-processing, post-processing and acknowledgement processing procedures, respectively, for a broadcast request.
+The EXECPRE, EXEC and EXECA parameters of the CFTDEST object define the execution policy for pre-processing, post-processing and acknowledgement processing procedures, respectively,  for a broadcast request.
 
 -   EXECPRE: execution policy for a PREEXEC script
 -   EXEC: execution policy for EXEC and EXECE scripts
@@ -93,6 +93,6 @@ for
 
 ## Improve the file layer service reliability
 
-Setting the uconf c`ft.server.transfer.raise_error_when_exec_not_found `parameter to `Yes `(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
+Setting the uconf c`ft.server.transfer.raise_error_when_exec_not_found `parameter  to `Yes `(default) raises an error if the defined procedure script is not found, which improves the file layer service reliability.
 
 This parameter is applicable to both post-processing (EXEC and EXECE) and ack-processing (ACKEXEC) procedures.

@@ -8,7 +8,7 @@ If you have not done so already, begin by performing a standard Transfer CFT z/
 
 If you create a multi-node, mulit-host installation, and the USS Environment for Transfer CFT is not shared between all the hosts, you must install a separate USS Environment on each host. To do this, execute the member COPA010, in the INSTALL library, on each host that is not shared.
 
-If an APF mode is defined on one of the hosts, then you must configure the APF mode for every host.
+If  an APF mode is defined on one of the hosts, then you must configure the APF mode for every host.
 
 **After installing**
 
@@ -44,7 +44,7 @@ On the first LPAR
 2
 Customize [MNINIT](../t_mninit_multinode_zos).
 3
-[Execute](../t_submit_mninit_zos) the customized MNINIT.
+[Execute](../t_submit_mninit_zos)  the customized MNINIT.
 ```
 
 > **Note:**

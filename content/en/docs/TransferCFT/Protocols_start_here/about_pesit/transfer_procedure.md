@@ -104,7 +104,7 @@ command.
 ### PeSIT E
 
 Caution:
-In the E version of the PeSIT protocol, the IDT
+In the E version  of the PeSIT protocol, the IDT
 is not the transfer identifier used by the protocol (PI 13). Indeed, the
 IDT is represented as 8 alphanumerical characters whereas PI 13 is a binary
 value stored as 3 bytes at the most. The PI 13 identifier, which is used
@@ -197,5 +197,5 @@ request:
     negative acknowledgement (FPDU AckCREATE) with a protocol diagnostic with
     a value of 214 (negotiation failure at retry point).
 
-For protocol fields PI 11,
+For  protocol fields PI 11,
 12 and 13 details refer to [PeSIT PI codes](../pesit_pi_codes).

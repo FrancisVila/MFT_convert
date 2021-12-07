@@ -145,7 +145,7 @@ WSCAN = 120
 
 <!-- -->
 
--   The {{< TransferCFT/componentshortname >}} can be inactive at the time
+-   The  {{< TransferCFT/componentshortname >}} can be inactive at the time
     the commands assigned to it are issued, to the limit of the file size.
     Commands are taken into account at the time the {{< TransferCFT/componentshortname >}} is activated,
     if a CFTCOM command relative to this communication file has been defined.
@@ -169,5 +169,5 @@ IDF = TEST1
  
 Then...
 LISTCAT
-IDT = %\_CAT\_IDT%
+IDT = %_CAT_IDT%
 ```

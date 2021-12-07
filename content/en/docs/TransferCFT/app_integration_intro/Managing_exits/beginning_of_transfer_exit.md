@@ -3,7 +3,7 @@
     "linkTitle": "Beginning-of-transfer exit",
     "weight": "310"
 }This page describes how to configure the environment for a beginning-of-transfer
-type exit, EXITBOT. This EXIT task lets you set the IDF to use, and is executed only in SERVER mode for CFTRECV (if not the requester), for CFTSEND (HOLD state), or for an implicit SEND.
+type exit, EXITBOT. This  EXIT task lets you set the IDF to use, and is executed only in SERVER mode for CFTRECV (if not the requester), for CFTSEND (HOLD state), or for an implicit SEND.
 
 {{< TransferCFT/transfercftname  >}} delivers both an `exitbot.c` sample to reference, located in the `<install_dir>/runtime/src/exit` folder, and an `exbus.h` header file which defines the API, located in the `<install_dir>/home/inc` folder.
 
@@ -12,9 +12,9 @@ type exit, EXITBOT. This EXIT task lets you set the IDF to use, and is executed 
 ## Procedure
 
 Before you submit this EXIT, you must customize the following
-{{< TransferCFT/componentshortname  >}} objects:
+  {{< TransferCFT/componentshortname  >}} objects:
 
--   CFTEXIT: This describes the EXIT environment and how this
+-   CFTEXIT:  This describes the EXIT environment and how this
     EXIT is activated.
 
 <!-- -->
@@ -43,7 +43,7 @@ on the operating system.
 The following example provides a minimum of arguments:
 
 ```
-CFTEXIT id=my\_exitbot, type=bot, language=C, prog=$(CFTDIRRUNTIME)/bin/CFTEXIB
+CFTEXIT id=my_exitbot, type=bot, language=C, prog=$(CFTDIRRUNTIME)/bin/CFTEXIB
 ```
 <span id="Defining_the_CFTPARM_object"></span>
 
@@ -78,5 +78,5 @@ must specify an identifier that points to a CFTEXIT object.</p>         </td>
 The following example provides a minimum number of arguments for CFTPARM:
 
 ```
-cftparm id=IDPARM, exitbot = 'my\_exitbot', ...
+cftparm id=IDPARM, exitbot = 'my_exitbot', ...
 ```

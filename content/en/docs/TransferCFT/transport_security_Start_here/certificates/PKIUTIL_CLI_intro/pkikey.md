@@ -31,7 +31,7 @@ The PKIKEY command is similar to the PKICER command. Parameters include:
 
 ### Restrictions
 
--   Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing or importing them.
+-   Transfer CFT does not support keys that contain comments, regardless of if you are directly referencing  or importing them.
 -   Transfer CFT does not support private keys with passphrases.
 -   Transfer CFT supports the RSA digital signature algorithm; however, ECDSA and DSA are not supported.
 
@@ -42,13 +42,13 @@ If you already have keys that you want to use, you can import them as described 
 Import with PKCS8 format
 
 ```
-PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PKCS8,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pk8,MODE=CREATE
 ```
 
 Import with encrypted PEM (PKCS#5) format
 
 ```
-PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My\_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
+PKIUTIL PKIKEY ID=PRIVATE,COMMENT="My_note",IKFORM=PEM,IKPASSW="MyPassw", IKNAME=./conf/pki/private.pem,MODE=CREATE
 ```
 
 -----BEGIN RSA PRIVATE KEY-----
@@ -63,7 +63,7 @@ DEK-Info: AES-128-CBC,9E18D04529594FB617BC471F9958C8A7
 
 > **Note:**
 >
-> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key, convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
+> If a PEM encrypted key is generated using OpenSSL with FIPS, for example with "ssh-keygen", you cannot import it into Transfer CFT. To use this key,  convert it to PKCS#8 using the command: openssl pkcs8 -topk8 -v2 aes128 -in &lt;key> -out &lt;key.pk8>
 
 Import with private.rsa format
 

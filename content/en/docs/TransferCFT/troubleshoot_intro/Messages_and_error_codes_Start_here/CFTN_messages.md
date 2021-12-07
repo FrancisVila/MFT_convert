@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTN",
     "linkTitle": "CFTN messages",
     "weight": "330"
-}This topic lists the CFTNxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTNxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -66,7 +66,7 @@ V24 format
 Error
 <span id="CFTN04E"></span>CFTN04E Synchronization error (&str) SSLTID=&pid 
 CR=&cr CS=&scs
-CFTN04E Synchronization error (&str) SSLTID=&pid \_ CR= &cr CS=&cs
+CFTN04E Synchronization error (&str) SSLTID=&pid _ CR= &cr CS=&cs
 Explanation
 Problem with sending an internal {{< TransferCFT/componentshortname >}} message to
 a CFTTSSL task.
@@ -97,14 +97,14 @@ A TCP/IP error related to file transfer operations or
 resource initialization was detected. The message contains the explanation of the error in plain text.
 Consequence
 If the error occurs during the {{< TransferCFT/componentshortname >}} initialization
-phase, this phase is stopped.
-Otherwise, if the error is related to a file transfer,
-this transfer will not proceed.
+                      phase, this phase is stopped.
+                      Otherwise, if the error is related to a file transfer,
+                      this transfer will not proceed.
 Action
 For an error occurring during the initialization phase, check
-the CFTNET definitions.
-For an error involving a file transfer, check the
-CFTPART definitions.
+                      the CFTNET definitions.
+                      For an error involving a file transfer, check the
+                      CFTPART definitions.
 ```
 
  
@@ -186,7 +186,7 @@ V23 format
 V24 format
 Error
 CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process
-CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process
+CFTN12E Connection failed, we have reached the limit of file descriptors in CFTSFTP process                    
 Explanation
 The client connection failed because you reached the file descriptors limit in the CFTSFTP process.
 ```

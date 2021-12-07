@@ -21,13 +21,14 @@ When implementing a {{< TransferCFT/transfercftname  >}} relay in {{< TransferCF
 To implement a relay in conjunction with :
 
 1.  Create the flow as described in the [Central Governance User Guide](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/AxwayStartPage.htm).
-2.  In the SEND command include at a minimum:
+2.  In the SEND command  include at a minimum:
     -   The name of the final receiver, for example TARGET\_APPLICATION.
     -   The name of the flow, for example TEST\_RELAY.
     -   The file to be transferred, for example `report`.
 
     ```
-    cftutil send part=target\_application, idf=test\_relay, fname=report ```
+    cftutil send part=target_application, idf=test_relay, fname=report
+    ```
 3.  Optionally you can configure target post-processing to automatically send a reply.
 
 > **Note:**
@@ -37,7 +38,7 @@ To implement a relay in conjunction with :
 
 > **Note:**
 >
-> When viewing the final transfer in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.
+> When viewing the final transfer  in the CG View Cycle Graph, you see the number of Transfer CFTs involved minus 1.
 
 <span id="Store2"></span>
 
@@ -50,7 +51,7 @@ The following sections describe various store and forward options when using sta
 ### Intentional store and forward
 
 The following descriptions correspond with the
-parameter setting example in the
+  parameter setting example in the
 figure below.
 
 Configure the sender
@@ -82,7 +83,7 @@ Configure the following for the final receiver (Site C):
 >
 > If the initial sender A is not
 > required to establish any direct physical connection with the final receiver
-> C, then the command CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
+> C, then the command  CFTTCP ID=ID\_C has no impact. Similarly, there is no need to set CFTTCP ID=ID\_A
 > for the final receiver C.
 
 Intentional store and forward
@@ -98,7 +99,7 @@ to establish the routing. For the store and forward site to be in VAN mode, you
 and forward parameters as follows: `CFTPART ID=ID_A,COMMUT=SERVER,...`
 
 The following descriptions correspond with the
-parameter setting example in the
+  parameter setting example in the
 figure below.
 
 Configure the sender
@@ -109,7 +110,7 @@ Configure the following for the initial sender (Site A):
 -   Define the first relay.
 -   Make a reference to the first relay with IPART=&lt;relay> in the final receiver partner definition.
 
-Configure the relay
+Configure the  relay
 
 Configure the following for the store and forward (Site B):
 
@@ -118,7 +119,7 @@ Configure the following for the store and forward (Site B):
 -   Define a procedure to execute and reference in the CFTPARM (in this example).
     -   In the store and forward example below, the procedure identified by `myproc `
         includes the following command on completion of processing: `CFTUTIL SEND PART= &RPART, SPART= &SPART, FNAME= &FNAME, IDF=   &IDF`
-    -   When the symbolic variables are replaced: `CFTUTIL SEND PART=ID_C,SPART=ID_A,FNAME=frecv, IDF=test`
+    -   When the  symbolic variables are replaced: `CFTUTIL SEND PART=ID_C,SPART=ID_A,FNAME=frecv, IDF=test`
 
 Configure the receiver
 
@@ -143,7 +144,7 @@ used on an intermediate site to force the store and forward mode to another
 site without knowing the final partner.
 
 The following descriptions correspond with the
-parameter setting example in the
+  parameter setting example in the
 figure below.
 
 Configure the sender
@@ -159,7 +160,7 @@ Configure the following for the store and forward Intermediate Site 1:
 
 <!-- -->
 
--   In the CFTPART for the sender site, make a reference to the second relay using the IPART=&lt;Site 2>.
+-   In the CFTPART for the sender site,  make a reference to the second relay using the IPART=&lt;Site 2>.
 
 Configure the second relay
 
@@ -167,7 +168,7 @@ Configure the following for the store and forward Intermediate Site 2:
 
 -   Define both the first relay (Intermediate Site 1) and the receiver partner definitions (CFTPARTs).
 -   Set COMMUT=PART.
--   In the CFTPART for the first relay (Intermediate Site 1), make a reference to the final site.
+-   In the CFTPART for the first relay (Intermediate Site 1),  make a reference to the final site.
 
 Configure the final receiver
 

@@ -15,7 +15,7 @@ Log in to download or access:
 -   Product announcements
 -   The case center, to open a new case or to track opened cases
 
-You can also access other resources, such as articles in the Knowledge Base, and documentation for all {{< TransferCFT/companyname  >}} products.
+You can also access other resources, such as articles in the Knowledge Base,  and documentation for all {{< TransferCFT/companyname  >}} products.
 
 You need to apply a valid license key to Transfer CFT in the following situations:
 
@@ -27,17 +27,17 @@ You need to apply a valid license key to Transfer CFT in the following situatio
 
 > **Note:**
 >
-> You require as many keys as instances of Transfer CFT running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
+> You require  as many keys as instances of Transfer CFT running at same time, including when running in multi-node. For example, two Transfer CFT instances cannot run at the same time, on the same server, using the same license key.
 
-## Obtain a license key
+## Obtain  a license key
 
 1.  For a new installation, install {{< TransferCFT/componentshortname >}}.
 2.  After completing the installation, or for an existing installation, use the command **cftutil about** to retrieve your system information. For details see the examples below.
 3.  Contact the Axway Fulfillment team at the appropriate email address to obtain a valid key.
-    -   For a US key, contact: **`fulfillment@us.axway.com`**
+    -   For a US key, contact:  **`fulfillment@us.axway.com`**
     -   For an EMEA or APAC key, contact: **`product.key@axway.com`**
-4.  Provide the hostname where Transfer CFT is to be installed or updated.
-5.  Provide the list of characters in the CPU ID.
+4.  Provide the hostname  where Transfer CFT is to be installed or updated.
+5.  Provide the list of characters in the  CPU ID.
 
 <span id="Apply"></span>
 
@@ -48,7 +48,7 @@ To apply the license key from the Axway Fulfillment team, enter the key(s) in th
 -   The file can contain one or multiple license keys, but there must be one key per line.
 -   On start up the first valid key is used.
 
-Transfer CFT in multi-node architecture can use a single key for a multi-node installation; as either:
+Transfer CFT in multi-node architecture can use a single key for  a multi-node installation; as either:
 
 -   The hostname must not be defined for the key, or
 -   The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
@@ -60,16 +60,16 @@ Additionally, the key must have the cluster option.
 Enter the license key in the following format.
 
 ```
-CFTPARM ID = IDPARM0 ,
+CFTPARM    ID       = IDPARM0 ,
 …
-KEY = #%ENVCFT%.UPARM(PRODKEY),
+KEY      =  #%ENVCFT%.UPARM(PRODKEY),
 …
 ```
 
 Access the &lt;TARGET>.INSTALL library, and run the JCL called **CFTABOUT**. Near the bottom of the CFTABOUT output, the **`cpuid `line is displayed.**  
 
 ```
-\* cpuid = 000000000ABC1234
+\* cpuid   = 000000000ABC1234
 ```
 
 In this example, you would provide the CPU ID **000000000ABC1234**.

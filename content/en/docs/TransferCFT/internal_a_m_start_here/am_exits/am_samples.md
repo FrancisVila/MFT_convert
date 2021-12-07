@@ -62,13 +62,13 @@ PA ADMIN CONFIGURATION:CFTPARM CREATE,DELETE,EDIT,VIEW ACCEPT
 or
 
 ```
-PA ADMIN CONFIGURATION:CFTPARM \* ACCEPT
+PA ADMIN CONFIGURATION:CFTPARM \*                 ACCEPT
 ```
 
 All available actions on resources that start with “CONFIGURATION:” for the ADMIN role:
 
 ```
-PA ADMIN CONFIGURATION:\* \* ACCEPT
+PA ADMIN CONFIGURATION:\* \*                         ACCEPT
 ```
 
 All permissions for the ADMIN role:
@@ -122,9 +122,9 @@ Predefined roles
 | Application  | Allows applications to request transfers and view the Catalog  |
 
 
-The resources and available actions for {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
+The resources and available actions for  {{< TransferCFT/componentshortname  >}} are listed in the PassPort AM CSD file.
 
-After installing {{< TransferCFT/componentshortname  >}}, access the CSD file:
+After installing  {{< TransferCFT/componentshortname  >}}, access the CSD file:
 
 &lt;Transfer CFT install directory>/distrib/am/csd\_Transfer\_CFT.xml
 

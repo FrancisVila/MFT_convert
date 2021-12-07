@@ -11,7 +11,7 @@ request sender.
 
 If the security system is active, at least one default CFTAPPL command
 must exist for each transfer direction. The identifier used by this command
-is the default value defined in the general parameters. [\[CFTPARM\]](../../../../admin_intro/admin_config_commands/cftparm_general_parameters)
+is the default value defined in the general parameters.  [\[CFTPARM\]](../../../../admin_intro/admin_config_commands/cftparm_general_parameters)
 
 Identifiers with the same prefixes can be grouped together in a single
 CFTAPPL command.
@@ -38,16 +38,16 @@ must exist, irrespective of the LENAPPL value defined in CFTPARM.
 
 ```
 CFTAPPL    
-     \[MODE       =    
-{CREATE | DELETE | REPLACE},\]
+     [MODE       =    
+{CREATE | DELETE | REPLACE},]
      ID          =    
 identifier,
      USERID      =    
 identifier,
-     \[GROUPID    =    
-identifier,\]
-     \[DIRECT     =    
-{BOTH | RECV | SEND}\]
+     [GROUPID    =    
+identifier,]
+     [DIRECT     =    
+{BOTH | RECV | SEND}]
 ```
 
 ### Parameters

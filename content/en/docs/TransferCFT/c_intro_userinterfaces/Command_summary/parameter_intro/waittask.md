@@ -18,7 +18,7 @@ The inactivity time, in minutes, for a file access task before it is terminated:
 -   <span style="font-weight: bold;">10</span>: Waits for 10 minutes after no activity is detected before terminating the task
 -   **1441**: Makes the task permanent
 
-<span style="font-weight: bold;">z/OS: </span>The recommended value is **waittask=5**. This value ensures that existing tasks are reused when possible, and can reduce CPU consumption under heavy transfer loads. When the value is set to 1, unused tasks are eliminated as quickly as possible.
+<span style="font-weight: bold;">z/OS: </span>The recommended value is **waittask=5**. This value ensures that existing tasks are reused when possible,   and can reduce CPU consumption under heavy transfer loads. When the value is set to 1, unused tasks are eliminated as quickly as possible.
 
 <span id="waittask_CFTEXIT"></span>
 

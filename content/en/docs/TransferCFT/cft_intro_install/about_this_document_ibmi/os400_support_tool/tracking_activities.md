@@ -56,6 +56,6 @@ From.....:   CFT           06/12/17   15:56:04
 CF1LX021   : Now this line is operational.
 ```
 
-All messages stored in the log are described in the {{< TransferCFT/componentversion  >}} sub-book **Messages and Codes**. There are a few exceptions when messages are not stored in the log, for example messages that are self-explanatory and OS related.
+All messages stored in the log are described in the {{< TransferCFT/componentversion  >}}  sub-book  **Messages and Codes**. There are a few exceptions when messages are not stored in the log, for example messages that are self-explanatory and OS related.
 
 For more information, refer to the Transfer CFT User Guide.

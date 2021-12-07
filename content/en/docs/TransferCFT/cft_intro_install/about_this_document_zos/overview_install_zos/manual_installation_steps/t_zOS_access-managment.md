@@ -17,35 +17,35 @@ Alternatively, you can use UCONF to define the internal access management. See 
 
 ### Using system as the internal access management
 
-With **system** access management, you define the mapping between predefined roles and groups in UCONF, and the user groups assignment in RACF.
+With **system** access management, you define the mapping between predefined roles and groups  in UCONF, and the user groups assignment  in RACF.
 
-When the access management type is **system**, you must give the STC userID the SPECIAL attribute AUDITOR to be able to read the RACF user profiles.
+When the access management type is **system**, you must give the STC userID  the SPECIAL attribute AUDITOR to be able to read the RACF user profiles.
 
 Define the following facilities for the USERID owner of the STC Copilot CFTMAIN and API batches:
 
 ```
-UCONFSET ID=am.internal.group\_database,value=system
+UCONFSET ID=am.internal.group_database,value=system
 SETROPTS GENERIC(FACILITY)
-RDEFINE FACILITY IRR.RADMIN.\* UACC(READ)
-RDEFINE FACILITY IRR.RADMIN.LISTUSER UACC(READ)
-RDEFINE FACILITY IRR.RADMIN.LISTGRP UACC(READ)
-RDEFINE FACILITY IRR.RADMIN.RLIST UACC(READ)
-RDEFINE FACILITY IRR.RADMIN.SETROPTS.LIST UACC(READ)
+RDEFINE  FACILITY IRR.RADMIN.\*             UACC(READ)
+RDEFINE  FACILITY IRR.RADMIN.LISTUSER      UACC(READ)
+RDEFINE  FACILITY IRR.RADMIN.LISTGRP       UACC(READ)
+RDEFINE  FACILITY IRR.RADMIN.RLIST         UACC(READ)
+RDEFINE  FACILITY IRR.RADMIN.SETROPTS.LIST UACC(READ)
 ```
 
-If you defined the previous facilities as UACC(NONE), you must set READ rights each Transfer CFT user.
+If you defined the previous facilities  as UACC(NONE), you must set READ rights each Transfer CFT user.
 
 ```
-PERMIT IRR.RADMIN.LISTUSER -CLASS(FACILITY) ACCESS(READ) ID(user)
-PERMIT IRR.RADMIN.LISTGRP -CLASS(FACILITY) ACCESS(READ) ID(user)
-PERMIT IRR.RADMIN.RLIST -CLASS(FACILITY) ACCESS(READ) ID(user)
-PERMIT IRR.RADMIN.SETROPTS.LIST -CLASS(FACILITY) ACCESS(READ) ID(user)
+PERMIT IRR.RADMIN.LISTUSER                               -CLASS(FACILITY) ACCESS(READ)    ID(user)
+PERMIT IRR.RADMIN.LISTGRP                                -CLASS(FACILITY) ACCESS(READ)    ID(user)
+PERMIT IRR.RADMIN.RLIST                                  -CLASS(FACILITY) ACCESS(READ)    ID(user)
+PERMIT IRR.RADMIN.SETROPTS.LIST                          -CLASS(FACILITY) ACCESS(READ)    ID(user)
 ```
 
 In Transfer CFT, set the `group_database` to `system`.
 
 ```
-UCONFSET ID=am.internal.group\_database,value=system
+UCONFSET ID=am.internal.group_database,value=system
 ```
 
 ### Using SAF class as the internal access management
@@ -65,10 +65,10 @@ When the access management method is **SAF class**, each user role is associated
 
 
 ```
-UCONFSET ID=am.internal.group\_database,value=**safclass**
+UCONFSET ID=am.internal.group_database,value=**safclass**
 UCONFSET ID=am.internal.safclass,value='**Class**' (the class resource must be available)
  
-For each ROLE (the following are examples, replace with your own values):
+For each ROLE (the following are  examples, replace with your own values):
 
 > RDEFINE Class CFT.ROLE.ADMIN UACC(NONE) OWNER(...)
 > RDEFINE Class CFT.ROLE.OPERATOR UACC(NONE) OWNER(...)
@@ -92,9 +92,9 @@ NOTE: ACCESS must be set to **READ**.
 
 ### Using file as the internal access management
 
-With **file** type access management, you define the mapping between predefined roles and groups in UCONF, and assign the user groups in an external file.
+With **file** type access management, you define the mapping between predefined roles and groups in UCONF, and assign the user groups  in an external file.
 
-When using this type of access management, the file format must be VB, where the maximum number of `lrecl `is 1024. Enter the character \* in column 1 to allow comments.
+When using this type of access management, the file format must be VB, where the maximum number of `lrecl `is 1024. Enter the character \*  in column 1 to allow comments.
 
 #### User/Group record description
 
@@ -104,12 +104,12 @@ Format
 
 ```
 USER001 OPERATOR PARTNER .....
-USER002 ADMIN ..... 
+USER002 ADMIN  ..... 
 ```
 
 In Transfer CFT, set the `group_database` to file and specify the path to the file defined above.
 
 ```
-UCONFSET ID=am.internal.group\_database,value=file
-UCONFSET ID=am.internal.group\_database.fname,value=filename
+UCONFSET ID=am.internal.group_database,value=file
+UCONFSET ID=am.internal.group_database.fname,value=filename
 ```

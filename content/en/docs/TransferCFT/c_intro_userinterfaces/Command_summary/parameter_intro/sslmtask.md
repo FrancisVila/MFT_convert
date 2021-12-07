@@ -11,7 +11,7 @@
 \[SSLMTASK = <u>8</u> | n \]  
 
 The maximum number of SSL tasks that can execute simultaneously in a
-{{< TransferCFT/componentshortname  >}}.
+  {{< TransferCFT/componentshortname  >}}.
 
 -   **8**:
     default value for all operating systems

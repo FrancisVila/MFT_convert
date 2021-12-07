@@ -146,7 +146,7 @@ struct {
 ```
 
 The structures for the C and COBOL languages are described in <span style="font-family: 'Courier New', monospace;font-weight: bold;">exfus.h</span>
-that is delivered with <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> .
+that is delivered with  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> .
 
 ### COBOL language structure
 
@@ -155,4 +155,4 @@ interfacing rules.
 
 The communication structure between the interface and the user program
 is defined in the <span style="font-weight: bold;font-family: 'Courier New', monospace;">exfus.cop</span>
-file that is delivered with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> product.
+file that is delivered with the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> product.

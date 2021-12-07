@@ -2,33 +2,33 @@
     "title": "Manage the Transfer CFT Copilot server",
     "linkTitle": "Manage the Transfer CFT UI server",
     "weight": "190"
-}The Transfer CFT Copilot server provides a number of functions that support the following services: the Transfer CFT UI, REST API services, web services, multi-host/multi-node architectures, and Central Governance.
+}The Transfer CFT Copilot server provides a number of functions that support the following services: the Transfer CFT UI,  REST API services, web services, multi-host/multi-node architectures, and Central Governance.
 
 This page describes how to start/stop and check the status of the Transfer CFT Copilot server.
 
 <span id="Start_/_stop_Copilot"></span>
 
-## Start and stop the Copilot server
+## Start and stop the  Copilot server
 
-To start the Copilot server, run the command:
+To start the  Copilot server, run the command:
 
 ```
 copstart
 ```
 
-To stop the Copilot server, run the command:
+To stop the  Copilot server,  run the command:
 
 ```
 copstop
 ```
 
-To stop the Copilot server and force connections to close, run:
+To stop the  Copilot server and force connections to close,  run:
 
 ```
 copstop -f
 ```
 
-To kill all Copilot server processes, run:
+To kill all  Copilot server processes,  run:
 
 ```
 copstop -kill
@@ -53,7 +53,7 @@ The `copstatus `return code is 0 when Copilot is running, and 1 when Copilot is 
 Additional `copstatus `commands include:
 
 ```
-```` copstatus [-p] [-v] [-h|--help]         </span>   -p           print copsmng pid if copilot is started          -v           print status message         </span>   -h|--help    copstatus help             ``` ````
+```` copstatus [-p] [-v] [-h|--help]         </span>   -p           print copsmng pid if copilot is started          -v           print status message         </span>   -h|--help    copstatus help     ``` ````
 
 ## Windows menus
 
@@ -79,11 +79,11 @@ LOG message: <span class="code">+CFTI42E Copilot must be APF-authorized.</span>
 
 > **Note:**
 >
-> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
+> CFTCOPL must be APF authorized to start if the UCONF cft.mvs.copilot.check\_apf variable is set to Yes. Otherwise, the  Transfer CFT log displays CFTI42E Copilot must be APF-authorized.
 
 #### Stop
 
-COPSTOP is an example of the JCL stop statement for the Transfer CFT UI server. You can also stop the Transfer CFT UI server using the operator command pause (/P jobname) for the server-associated task.
+COPSTOP is an example of the JCL stop statement for the  Transfer CFT UI server. You can also stop the Transfer CFT UI server using the operator command pause (/P jobname) for the server-associated task.
 
 ### IBM i
 
@@ -121,7 +121,7 @@ Execute: <span class="code">COPSTOP </span>
 ### General Copilot server parameters
 
 The following table lists the UCONF identifiers
-and the default values for the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI (Copilot) server.
+and the default values for the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> UI (Copilot) server.
 
 ```
 
@@ -136,7 +136,7 @@ copilot.general.serverport
 Copilot server listening port.
 copilot.general.serverhost  
 0.0.0.0 
-TCP Transfer CFT Copilot server address, where 0.0.0.0 indicates that you want the Transfer CFT UI to listen on all network interfaces if your machine has more than one.
+TCP Transfer CFT Copilot server address, where 0.0.0.0  indicates that you want the Transfer CFT UI to listen on all network interfaces if your machine has more than one.
 ```
 
 UNIX
@@ -145,7 +145,7 @@ Refer to the [UCONF parameters](../uconf/uconf_directory) table for information
 
 #### Alias management
 
-You can access customized file system directories via the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user interface HTTP server using aliases.
+You can access customized file system directories via the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> user interface HTTP server using aliases.
 
 To add a new alias, access the Unified Configuration and configure the following:
 
@@ -176,11 +176,11 @@ Options
 Description
 
 copilot.nt.rootdrives
-@REMOVABLE\_DRIVES
+@REMOVABLE_DRIVES
 To view removable drives such as a USB key, CD, and so on.
-@LOCAL\_DRIVES
+@LOCAL_DRIVES
 To view hard drives.
-@NET\_DRIVES
+@NET_DRIVES
 To view network drives.
 ```
 
@@ -194,7 +194,7 @@ Parameter
 
 Value
 
-copilot.misc.client\_keep\_alive\_delay
+copilot.misc.client_keep_alive_delay
 Enter an integer for the delay in seconds.
 60 = default
 0 = no keep-alive
@@ -214,7 +214,7 @@ copilot.misc.ClientTimeout
 Enter an integer for the timeout in minutes.
 
 -   30 = default timeout of 30 minutes
--   0 = 60 minute timeout for the Transfer CFT UI (token)
+-   0 =  60 minute timeout for the Transfer CFT UI (token)
 -   0 = no timeout for the deprecated Copilot UI
 
 ```
@@ -231,11 +231,11 @@ Value
 
 Former value
 
-copilot.webservices.wsicomplience
+copilot.webservices.wsicomplience  
 (bool) No
-\[WEBSERVICES\] WsiComplience
-copilot.webservices.upload\_directory
-(dir) $(cft.runtime\_dir)/conf/ws\_upload
+[WEBSERVICES] WsiComplience
+copilot.webservices.upload_directory  
+(dir) $(cft.runtime_dir)/conf/ws_upload
 NA
 ```
 
@@ -265,14 +265,14 @@ copilot.restapi.serverport
 int
 1768
 REST API server port.
-copilot.restapi.authentication\_method
+copilot.restapi.authentication_method
 string
 system (Windows)
 xfbadm (UNIX)
 Defines authentication method.
  
 See also, [xfbadmusr utilitiy.](../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities#xfbadmusr1)
-copilot.restapi.nb\_workers
+copilot.restapi.nb_workers
 int
 4
 Number of activated workers that process the REST API requests.
@@ -280,22 +280,22 @@ copilot.restapi.maxclient
 int
 256
 Number of client connections handled per REST worker.
-copilot.restapi.coms\_id
+copilot.restapi.coms_id
 string
 coms
 The TCPIP CFTCOM object identifier used by the REST API server to communicate with the Transfer CFT server.
 Leave empty to use
 the COM file instead.
-copilot.restapi.catalog.retry\_delay
+copilot.restapi.catalog.retry_delay
 int
 5
 
 -   The delay between retries
-    in seconds. The Transfer CFT Copilot server checks the request status in catalog every retry\_delay seconds.
+    in seconds. The Transfer CFT Copilot server checks the request status  in catalog every retry_delay seconds.
 -   The delay between retries
-    in seconds. The Transfer CFT Copilot server checks the request status in catalog every retry\_delay seconds.
+    in seconds. The Transfer CFT Copilot server checks the request status  in catalog every retry_delay seconds.
 
-copilot.restapi.catalog.retry\_timeout
+copilot.restapi.catalog.retry_timeout
 int
 30
 The default value of the [apiTimeout](#Manage) parameter as defined in the request URL.
@@ -327,13 +327,13 @@ The basic steps are:
 
 #### When using Central Governance
 
-The Transfer CFT Copilot server uses the certificate that was created by Central Governance during the product registration. This certificate is stored in Transfer CFT PKI database and the certificate id is the value of the UCONF <span class="code">cft.instance\_id </span>parameter. This means that there is no action required to install a certificate.
+The Transfer CFT Copilot server uses the  certificate that was created by Central Governance during the product registration. This certificate is stored in Transfer CFT PKI database and the certificate id is the value of the UCONF <span class="code">cft.instance\_id </span>parameter. This means that there is no action required to install a certificate.
 
 However, to override the default behavior use the procedure described below in *When using Transfer CFT without governance*.
 
 #### When using Transfer CFT without governance
 
-The following tables describe the UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
+The following tables describe the  UCONF parameters that determine the certificates used by the Transfer CFT UI server to authenticate itself.
 
 You can use the following certificate and private key formats, where the format of the certificate may differ from that of the key.
 
@@ -341,7 +341,7 @@ The certificate type is dictated by the file name extension (.p12, .pkcs12, .der
 
 *For native files in a z/OS or IBM i environment*, if the format cannot be determined (the file suffix used as the extension), Transfer CFT derives the value from these uconf settings:
 
--   <span class="code">copilot.ssl.sslkeyfile=&lt;not set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;set></span>, then the format is PKCS12
+-   <span class="code">copilot.ssl.sslkeyfile=&lt;not set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;set></span>, then  the format is PKCS12
 -   <span class="code">copilot.ssl.sslkeyfile= &lt;set></span> and <span class="code">copilot.ssl.sslcertpassword=&lt;not set></span>, then the format is PEM
 
 
@@ -370,7 +370,7 @@ This example uses a single PKCS#12 certificate where you only require the file n
 
 How to define a DER or PEM certificate
 
-This example uses a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
+This example uses  a DER(or PEM) certificate with the private key in a separate DER file, where you define the key as well as the certificate.
 
 
 |  Parameter  |  Value  |
@@ -426,6 +426,6 @@ Use the keytool command as follows to import the<span class="code"> &lt;my\_root
 <span class="span_2">keytool </span><span class="span_2">–</span><span class="span_2">importcert</span>
    -trustcacerts
    -alias AXWMFTCA
-<span class="span_2">   -file <my\_root\_certificate></span><span class="span_2">.der</span>
+<span class="span_2">   -file <my_root_certificate></span><span class="span_2">.der</span>
    -storepass changeit<span class="span_2">-keystore </span><span class="span_2"><keystore></span>
 ```

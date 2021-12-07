@@ -14,7 +14,7 @@
 
 **UNIX only**
 
-To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for `CFTUTIL`, `PKIUTIL`, and the `cft` commands. This feature intuitively provides commands and available parameters along with a brief description. Additionally, for certain parameters Bash autocompletion proposes a list of possible parameter values, either static or dynamic, depending on the parameter.
+To simplify the use of Transfer CFT commands, you can use the bash autocompletion feature when working in interactive mode. Bash autocompletion is valid for `CFTUTIL`, `PKIUTIL`, and the `cft` commands. This feature intuitively provides commands and  available parameters along with a brief description. Additionally, for certain  parameters Bash autocompletion proposes a list of possible parameter values, either  static or dynamic, depending on the parameter.
 
 -   <a href="#Special" class="MCXref xref">Keyboard shortcuts</a>
     -   <a href="#Auto-com" class="MCXref xref">Use the Bash autocompletion keys</a>
@@ -22,7 +22,7 @@ To simplify the use of Transfer CFT commands, you can use the bash autocompletio
 
 > **Note:**
 >
-> Bash autocompletion does not display if you enter a command directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
+> Bash autocompletion does not display if you enter a command  directly after the CFTUTIL keyword. For example, no commands are suggested if you type: CFTUTIL SEND
 
 > **Note:**
 >
@@ -55,11 +55,11 @@ The CFTUTIL utility uses the following keys as shortcuts when entering a comman
 
 ### Use the Bash autocompletion keys
 
-You can use the **Tab** and **Shift + Tab** keys to display and scroll through available commands, parameters, and values. If you are not familiar with available commands, begin by pressing **Tab** at the `CFTUTIL `prompt; the first command, SEND, displays along with a brief description.
+You can use the **Tab** and **Shift + Tab** keys to display and scroll through available commands, parameters, and values. If you are not familiar with available commands, begin by pressing **Tab** at the `CFTUTIL `prompt; the first command, SEND, displays along with a brief description.  
 
 ![](/Images/TransferCFT/Auto_completion_in_CFTUTIL.png)
 
--   Press **Tab** again to display the next available command, RECV. The command list displays commands in order of importance and typical usage. Continue to press **Tab** until the command that you want displays. To reverse the order, use **Shift** + **Tab**.
+-   Press **Tab** again to display the next available command, RECV. The command list displays commands in order of importance and typical usage. Continue to press **Tab** until the command that you want displays.  To reverse the order, use **Shift** + **Tab**.
 
 ![](/Images/TransferCFT/Auto_completion_in_CFTUTIL_1.png)
 
@@ -127,13 +127,13 @@ Here, the `-check` option is equivalent to running `CFTUTIL CHECK `at the end of
 
 ## Using the previous/next shortcut
 
-You can use the **Up/Down Arrow** keys as a shortcut to recall the previous or next command.
+You can use the **Up/Down Arrow** keys as a shortcut to recall the  previous or next command.
 
 <span id="Partial"></span>
 
 ## Partial word recognition
 
-To retrieve a command you know, begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
+To retrieve a command you know,  begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
 
 <span id="Command-"></span>
 

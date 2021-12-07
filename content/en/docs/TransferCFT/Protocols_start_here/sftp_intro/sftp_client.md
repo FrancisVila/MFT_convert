@@ -24,10 +24,10 @@ The following parameters are used to define the client's SFTP protocol:
 Example
 
 ```
-cftprot id = SFTP,
+cftprot id       = SFTP,
 
 > TYPE = 'SFTP',
-> SSH = 'SSH\_DEFAULT',
+> SSH = 'SSH_DEFAULT',
 > NET = NET0,
 
    ...
@@ -38,7 +38,7 @@ cftprot id = SFTP,
 Use the PKIKEY command to add the server public key in the database.
 
 ```
-PKIKEY id=SRV\_PUB\_KEY, ikname='serv.pub', ikform=ssh
+PKIKEY id=SRV_PUB_KEY, ikname='serv.pub', ikform=ssh
 ```
 
 ## Add the client key in the PKI database (PKIKEYGEN or PKIKEY)
@@ -48,26 +48,26 @@ You can use either the PKIKEYGEN command or the PKIKEY command to add the clien
 Example
 
 ```
-PKIKEYGEN id=MY\_KEY, keylen=2048
+PKIKEYGEN id=MY_KEY, keylen=2048
 ```
 
 ## Define the SSH client profile (CFTSSH)
 
-This section you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in client mode. For more information, please see [Define CFTSSH](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)
+This section  you use CFTSSH to define a SSH profile in Transfer CFT. The CFTSSH definition contains the SSH parameter connection for SFTP in client mode. For more information, please see [Define CFTSSH](../../../c_intro_userinterfaces/web_copilot_ui/cftssl/cftssh)
 (SFTP).
 
 -   ID: Identifier of the object
 -   DIRECT=CLIENT
 -   SRVPUBKEY=Identifier of the key used to authenticate the server
--   CLIPRIVKEY: Key Id of the client private key to use with key authentication.
+-   CLIPRIVKEY: Key Id of the client private key  to use with key authentication.
 
 Example
 
 ```
-CFTSSH id = SSH\_DEFAULT,
+CFTSSH id = SSH_DEFAULT,
 
 > DIRECT = CLIENT,
-> CLIPRIVKEY = MY\_KEY,
+> CLIPRIVKEY = MY_KEY,
 > SRVPUBKEY = ,
 > ...
 
@@ -94,30 +94,32 @@ Select the appropriate type of authentication to use from the options listed in 
 
 ### Password authentication
 
-Use  one of the following methods to configure the client password:
+Use  one of the following methods to configure  the client password:
 
 -   Clear text: When NSPASSW=&lt;the user password>, the client password is in clear text.
 
 <!-- -->
 
--   Uconf definition: When NSPASSW=\_AUTH\_, authentication is specified in `uconf:cft.server.authentication_method `is used.
+-   Uconf definition: When NSPASSW=\_AUTH\_, authentication is  specified in `uconf:cft.server.authentication_method `is used.
 
 > **Note:**
 >
 > If you do not define NSPASSW, Transfer CFT does not send a password to the server.
 
 ```
-CFTPART id = USER1,
+CFTPART id          = USER1,
 
-> prot = SFTP,
-> sap = 1763,
-> nspart = "user1",
-> nspassw = "TheUser1Password", ...
+>         prot        = SFTP,
+> sap = 1763,    
+>         
+> nspart      = "user1",              
+>         nspassw     = "TheUser1Password", ...
 
-CFTTCP id = USER1,
+CFTTCP id          = USER1,
+        
 
-> host = <server host>,
-> ...
+> host        = <server host>,
+>        ...
 
 ```
 
@@ -139,21 +141,28 @@ This is how the client decides the CLIPRIVKEY to use for the SSH profile:
 This example illustrates a specific SSH profile (SSH\_USER2 below).
 
 ```
-CFTPART id = USER2,
+CFTPART id          = USER2,
+        
 
-> ssh = SSH\_USER2,
+> ssh         = SSH_USER2,
 > sap = 1763,
-> prot = SFTP,
-> nspart = "user2", ...
+>         
+> prot        = SFTP,
+>         
+> nspart      = "user2", ...
 
  
-CFTTCP id = USER2,
-host = <remote host>, ...
+        CFTTCP id          = USER2,
+        
+host        = <remote host>, ...      
+        
  
-CFTSSH id = SSH\_USER2,
+CFTSSH id         = SSH_USER2,
+        
 
-> direct = CLIENT,
-> cliprivkey = USER2, ...
+> direct     = CLIENT,
+>         
+> cliprivkey  = USER2,         ...
 
 ```
 
@@ -167,24 +176,30 @@ When using **password and key** authentication:
 <!-- -->
 
 -   ```
-    CFTPART id = USER3,
+    CFTPART id          = USER3,
+            
 
-    > ssh = USER3,
-    > sap = 1763,
-    > prot = SFTP,
-    > nspart = "user3",
+    > ssh         = USER3,
+    > sap = 1763,      
+    > prot        = SFTP,
+    >         
+    > nspart      = "user3",
     > nspassw = "TheUser3Password",...
 
      
-    CFTTCP id = USER3,
+            CFTTCP id          = USER3,
+            
 
-    > host = <remote host>, ...
+    > host        = <remote host>, ...      
+    >         
 
      
-    CFTSSH id = USER3,
+    CFTSSH id         = USER3,
+            
 
-    > direct = CLIENT,
-    > cliprivkey = USER3, ...
+    > direct     = CLIENT,
+    >         
+    > cliprivkey  = USER3,         ...
 
     ```
 
@@ -194,7 +209,7 @@ When using **password and key** authentication:
 
 You can configure the conversion using FCHARSET/NCHARSET or FCODE/NCODE, where transcoding is performed if FCODE differs from NCODE, or if FCHARSET differs from NCHARSET. The FCHARSET/NCHARSET parameters, however, take precedence over FCODE/NCODE if both are defined. Additionally:
 
--   The charset and transferred file code are exchanged between the requester and server for two Transfer CFTs.
+-   The charset and  transferred file code are exchanged between the requester and server for two Transfer CFTs.
 -   A transfer restart is forbidden if the FCHARSET/NCHARSET conversion is done at the server level.
 -   The NCODE parameter is available in CFTRECV as with CFTSEND.
 

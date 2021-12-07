@@ -10,7 +10,7 @@ Use the JCL INSTALL(CFTCATDY). There is no need to stop Transfer CFT or Copilot 
 
 Modify the `recnb `parameter (the new number of records), in the `reconfig `command, to the new target catalog size.
 
-For more general information on expanding the catalog, you can refer to the section *Housekeeping for catalog and output files* in the *Transfer CFT User Guide.*
+For more general information on expanding the catalog, you can refer to the section *Housekeeping for  catalog and output files* in the *Transfer CFT User Guide.*
 
 ## Static mode
 
@@ -19,29 +19,36 @@ For more general information on expanding the catalog, you can refer to the sect
 3.  Modify the JCL INSTALL(CFTCATAL):
 
 -   RECNB is the new CATALOG size in number of records
--   TMPSPACE 'CYL,(50,10)' is the size of the temporary file
+-   TMPSPACE 'CYL,(50,10)'             is the size of the temporary file
 
 > **Note:**
 >
 > If the Transfer CFT HABILITATION is activated:
 
--   In the CFTFILE TYPE=CAT, MODE=CREATE command, add the HABFNAME parameter with the SECINI file (created by the JCL H86SAFCR).
+-     In the CFTFILE TYPE=CAT, MODE=CREATE command, add the HABFNAME parameter with the SECINI file (created by the JCL H86SAFCR).
 -   In the SISYN : CREATE.CFTIN, comment the sequence code (1), and uncomment the sequence code (3) as follows:  
     ```
     //CREATE.CFTIN DD \*,DLM='XX'
     /\* CREATE CATALOG \*/
     /\* (1) CATALOG (No Transfer CFT HABILITATION) \*/
-    /\* CFTFILE MODE = CREATE,TYPE=CAT,
-    FNAME = %\_ARGV3%%%%\_ARGV1%,
-    RECNB = %\_ARGV2% \*/
+    /\* CFTFILE MODE  =  CREATE,TYPE=CAT,
+                  
+            FNAME =  %_ARGV3%%%%_ARGV1%,            
+            
+    RECNB =  %_ARGV2%         \*/
 
     /\* or (3) CATALOG (when Transfer CFT HABILITATION is active) \*/
-      CFTFILE MODE = CREATE,TYPE=CAT,
-    FNAME = %\_ARGV3%%%%\_ARGV1%,
-    HABFNAME = %\_ARGV4%,
-    RECNB = %\_ARGV2%
+                                                                
+      
+      CFTFILE MODE     = CREATE,TYPE=CAT,                        
+              
+    FNAME    = %_ARGV3%%%%_ARGV1%,                      
+              
+    HABFNAME = %_ARGV4%,                                
+              
+    RECNB    = %_ARGV2%                                
 
-    XX
+    XX                                                    
     ```
 
 1.  Start the INSTALL(CFTCATAL).
@@ -63,18 +70,18 @@ If you are using a multi-node architecture, use this static mode procedure.
 //CREATE.CFTIN DD \*,DLM='XX'
 /\* CREATE CATALOG \*/
 /\* (1) CATALOG (No Transfer CFT HABILITATION) \*/
-/\* CFTFILE MODE = CREATE,TYPE=CAT,
+/\* CFTFILE MODE  =  CREATE,TYPE=CAT,
 
-FNAME = %\_ARGV3%%%%\_ARGV1%,
-RECNB = %\_ARGV2% \*/
+FNAME =  %_ARGV3%%%%_ARGV1%,
+RECNB =  %_ARGV2%         \*/
 
 /\* or (2) CATALOG MULTI-NODES (No Transfer CFT HABILITATION) \*/
-CFTFILE MODE = CREATE,TYPE=CAT,
+CFTFILE MODE  =  CREATE,TYPE=CAT,
 
-FNAME = %\_ARGV3%%%%\_ARGV1%,
-NODE = %\_ARGV5%,
-RECNB = %\_ARGV2%
+FNAME =  %_ARGV3%%%%_ARGV1%,
+NODE  =  %_ARGV5%,
+RECNB =  %_ARGV2%
 
 ```
 
-1.  Submit this procedure as many times as there are nodes.
+1.  Submit this procedure  as many times as there are nodes.

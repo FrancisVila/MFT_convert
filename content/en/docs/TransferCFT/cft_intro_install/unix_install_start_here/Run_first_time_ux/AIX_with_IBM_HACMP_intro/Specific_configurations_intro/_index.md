@@ -2,7 +2,7 @@
     "title": "Unix-specific  values",
     "linkTitle": "Specific Transfer CFT configurations",
     "weight": "230"
-}This topic summarizes {{< TransferCFT/componentshortname  >}} characteristics that differ from
+}This topic summarizes  {{< TransferCFT/componentshortname  >}} characteristics that differ from
 other operating systems:
 
 -   specific values
@@ -19,23 +19,23 @@ Object
 
 Value
 
-char\_file 
+char_file 
 Prefix to logical names 
-\_ (underlined) 
-char\_mask 
+_ (underlined) 
+char_mask 
 Wild card character 
 ? 
-char\_unit 
+char_unit 
 Separator (volume) 
 none 
-char\_symb 
+char_symb 
 Prefix to symbolic variables 
 & 
-char\_directory 
+char_directory 
 Character introduced in the path name of the FNAME parameter
 (CFTRECV) from which a tree structure can be created 
 + 
-file\_symb 
+file_symb 
 Character introducing a file name sent to CFTUTIL in parameter
 form 
 @ 
@@ -50,17 +50,17 @@ form 
 **Default name** 
 
 Parameters file 
-\_CFTPARM 
+_CFTPARM 
 Partners file 
-\_CFTPART 
+_CFTPART 
 Catalogc file 
-\_CFTCATA 
+_CFTCATA 
 Log file 
-\_CFTLOG 
+_CFTLOG 
 Communication media 
-\_CFTCOM  
+_CFTCOM  
 statistics file 
-\_CFTACNT 
+_CFTACNT 
 Preferred media 
 File 
 ```

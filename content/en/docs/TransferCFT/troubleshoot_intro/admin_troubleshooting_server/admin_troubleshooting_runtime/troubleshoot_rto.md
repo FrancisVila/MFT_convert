@@ -4,7 +4,7 @@
     "weight": "390"
 }Issue: An error occurs with a 240 or 740 RTO
 
-This error may occur when a transfer CFT timeout occurs between the select and deselect file steps during the transfer phase.
+This error may occur when a transfer CFT timeout occurs  between the select and deselect file steps during the transfer phase.
 
 A timer, which is set in the CFTPROT command RTO parameter, is triggered for each step of the transfer phase. If the timer limit is reached, the transfer is interrupted and the resulting status of the transfer is D. You can still execute the transfer, though, using the RETRY mechanism.
 
@@ -53,13 +53,13 @@ The solution:
 
 This can cause the timer to expire and induces the 240 RTO diagnostic. Check that no core dump is detected and execute a cft\_support collect before stopping Transfer CFT, or before killing the {{< TransferCFT/componentlongname  >}} processes if that's necessary.
 
-Restart Transfer CFT. The transfer in 240 RTO status is normally restarted, but if the problem still persists cancel the transfer causing the problem and restart Transfer CFT.
+Restart Transfer CFT. The transfer in 240 RTO status is normally restarted, but if the problem still persists cancel the transfer causing the problem  and restart Transfer CFT.
 
 Hanging or frozen task, or high CPU usage
 
 These issues can also cause the timer to expire and induce the 240 RTO. You can check with various commands or system tools for frozen {{< TransferCFT/componentlongname  >}} tasks, or if there is a high CPU consumption.
 
-Execute cft\_support collect, and if necessary force a dump on a specific task in order to collect information. For example, on Unix:
+Execute cft\_support collect, and if necessary  force a dump on a specific task in order to collect information. For example, on Unix:
 
 ```
 kill -3 <process id>

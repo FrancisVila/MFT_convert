@@ -101,7 +101,7 @@ parameter is an informational item that appears in the catalog.</span>**
 **\[PART = *= *string64**\]**
 
 **<span style="font-weight: normal;">Local
-identifier, identifying the site on which <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is executed.  </span>**
+identifier, identifying the site on which  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> is executed.  </span>**
 
 **<span style="font-weight: normal;">The
 same value as the CFTPART ID parameter value.</span>**

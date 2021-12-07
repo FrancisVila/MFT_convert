@@ -6,7 +6,7 @@
 dates and times. An example script, `cron-wlog.cmd`, is delivered in the installed product
 packaging ($CFTDIRRUNTIME/exec on Unix/Windows). You can adapt this example to suit your local requirements.
 
-See [Use processing scripts](../../../../concepts/about_transfer_processing/proc_commands) for details on script processing execution methods.
+See [Use processing scripts](../../../../concepts/about_transfer_processing/proc_commands) for details on  script processing execution methods.
 
 ## CRON commands and parameters
 
@@ -17,7 +17,7 @@ This section describes the CRON related commands and parameters.
     -   You can have a CRONTAB with the same value for different CFTCRON objects (in the example below, note that CRON1 and CRON4 refer to the same CRONTAB).
     -   **Example**
 -   RECONFIG TYPE=CRON
-    -   This sends a notification to Transfer CFT
+    -   This sends a notification to Transfer CFT  
         to reload the enabled CRONJOBs. You use this command after modifying a CFTCRON (when either inserting or deleting).
     -   The RECONFIG command does not reload CFTPARM. If
         you modify the CFTPARM CRONTABS then you must restart Transfer CFT.
@@ -28,8 +28,8 @@ This section describes the CRON related commands and parameters.
     -   To activate CRON4 in the previous example:
     -   To inactivate CRON1, enter:
 
-For CFTCRON command parameter details, see the [Command reference](../../../command_summary).
-&lt;/p>
+For  CFTCRON command parameter details, see the [Command reference](../../../command_summary).
+        &lt;/p>
 <span id="CFTCRON_time_syntax"></span>
 
 ## CFTCRON time syntax
@@ -44,14 +44,14 @@ This means that the job is submitted on the minute at 0, 10, 20,
 **Example using template processing**
 
 ```
-CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC=my\_exec,
+CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC=my_exec,
 time='m=\*/10'
 ```
 
 **Example directly processing (UNIX and Windows)**
 
 ```
-CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC='cmd:my\_exec &ID',
+CFTUTIL CFTCRON id=CRON1, crontab=CRONTAB1, EXEC='cmd:my_exec &ID',
 time='m=\*/10'
 ```
 

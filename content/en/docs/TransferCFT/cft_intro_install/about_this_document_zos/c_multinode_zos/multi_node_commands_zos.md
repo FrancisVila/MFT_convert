@@ -44,7 +44,7 @@ EXEC PGM=CFTCOPL
 
 ..INSTALL(MNRMNG)
 
-The files such as COM, CATALOG, or LOG are not assigned in the JCL.
+The files such as COM, CATALOG, or LOG are not assigned in the  JCL.
 
 ## copstop
 
@@ -193,7 +193,7 @@ EXEC PCFTUTL,PG=CFT,PARM=’add\_node’
 
 The cft remove\_node command removes the node identified by the higher node id in the Transfer CFT cluster. To remove a node, the node state must be both DISABLED (uconf:cft.multi\_node.nodes.&lt;node\_id>.nodestate) and STOPPED (uconf:cft.multi\_node.nodes.&lt;node\_id>.state).
 
-The node number is decremented (uconf: cft.multi\_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
+The node number  is decremented (uconf: cft.multi\_node.nodes = N+1) , and any internal datafiles associated with the node are removed.
 
 **Syntax**
 
@@ -297,17 +297,17 @@ In this example four nodes are running on four different hosts.
 
 ```
 --------------------------------------------------------------
-Host z-zos111b 10.128.60.15 Copilot RUNNING (SOP700ZN J07928)
+Host z-zos111b       10.128.60.15                 Copilot RUNNING    (SOP700ZN J07928)
 --------------------------------------------------------------
-   Node id  Node state     CFT state CFT      JOB   Disabling
-   ------- --------------- ------------ --------------- -----
-   Node 01 ENABLED\_STARTED  RUNNING  SOP700T3 J07936 No
-   Node 02 ENABLED\_STARTED   RUNNING SOP700T4 J07938 No
+   Node id    Node state            CFT state      CFT      JOB           Disabling
+   -------   ---------------   ------------   --------------- -----
+   Node 01   ENABLED_STARTED    RUNNING         SOP700T3 J07936 No
+   Node 02   ENABLED_STARTED    RUNNING        SOP700T4 J07938 No
 --------------------------------------------------------------
-Host z-zos19 10.128.60.12 Copilot RUNNING (SOP700ZN J09205)
+Host z-zos19         10.128.60.12                 Copilot RUNNING      (SOP700ZN J09205)
 ---------------------------------------------------------------
-   Node id   Node state    CFT state CFT     JOB   Disabling
-   ------- --------------- ------------ --------------- -------
-   Node 00 ENABLED\_STARTED  RUNNING SOP700T3 J09211 No
-   Node 03 ENABLED\_STARTED RUNNING SOP700T4 J09214 No
+   Node id    Node state           CFT state      CFT     JOB           Disabling
+   -------   ---------------   ------------   --------------- -------
+   Node 00   ENABLED_STARTED    RUNNING        SOP700T3 J09211 No
+   Node 03   ENABLED_STARTED   RUNNING        SOP700T4 J09214 No
 ```

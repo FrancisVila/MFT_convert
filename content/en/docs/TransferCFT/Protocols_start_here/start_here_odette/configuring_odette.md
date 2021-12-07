@@ -39,7 +39,7 @@ session, set the RESYNC parameter to YES.
     catalog), the transfer is resumed from the last synchronization point
     acknowledged during the previous attempt.
 -   If RESYNC = NO, no attempt is made in the session to restart interrupted
-    transfers, and the `CFTT71E PART=<part> IDF=<idf> IDT=<idt> remote creation reject 123` message displays in the CFTLOG file.
+    transfers, and the  `CFTT71E PART=<part> IDF=<idf> IDT=<idt> remote creation reject 123` message displays in the CFTLOG file.
 
 <span id="Read_time_out"></span>
 

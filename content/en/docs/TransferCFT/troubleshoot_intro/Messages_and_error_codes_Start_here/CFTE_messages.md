@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages:  CFTE ",
     "linkTitle": "CFTE messages",
     "weight": "290"
-}This topic lists the CFTExx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTExx   (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -23,7 +23,7 @@ V23 format
 V24 format
 Information
 <span id="CFTE09I"></span>CFTE09I CFT Stop complete
-CFTE09I CFT stop complete \_ &str
+CFTE09I CFT stop complete _ &str
 Explanation
 Transfer
 CFT has been shut down (following an error or request).

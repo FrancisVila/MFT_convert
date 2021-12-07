@@ -17,7 +17,7 @@ server. The configuration change can be:
 
 > **Note:**
 >
-> To enable the configuration change audit, set the Sentinel parameter value to uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
+> To enable the configuration change audit, set the Sentinel parameter value  to  uconf:sentinel.xfb.audit=yes in the unified configuration (UCONF).
 
 **Example**
 
@@ -30,7 +30,7 @@ value=yes
 
 ### Message Track
 
-Message Track is an XML XFBLog message
+Message Track is an XML  XFBLog message
 containing:
 
 -   Ident attribute
@@ -39,7 +39,7 @@ containing:
 
 **Example**
 
-/Action=CREATE /Object=CFTSEND /id=ZZ /user=My\_Company\\giovanip /groupid= /owner= /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
+/Action=CREATE /Object=CFTSEND /id=ZZ /user=My\_Company\\giovanip /groupid= /owner=      /CrDate=20191204 /CrTime=17471640 /UpdDate=20191204 /UpdTime=17471640
 
 <span id="Ident attribute"></span>
 

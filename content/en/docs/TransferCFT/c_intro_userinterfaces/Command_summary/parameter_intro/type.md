@@ -51,9 +51,9 @@ Type of object to be deactivated.
 #### CFTCOM
 
 TYPE = { FILE
-| TCPIP}
+|  TCPIP}
 
-Type of {{< TransferCFT/componentshortname  >}} communication medium.
+Type of  {{< TransferCFT/componentshortname  >}} communication medium.
 
 This parameter can take the following values:
 
@@ -121,7 +121,7 @@ This defines the accounting type. CFTACCNT TYPE parameters are:
 
 #### CFTPROT
 
-\[TYPE = {PeSIT | ODETTE  }\]
+\[TYPE = {PeSIT |  ODETTE  }\]
 
 Type
 of transfer protocol.
@@ -134,7 +134,7 @@ of transfer protocol.
 
 #### LISTPART
 
-TYPE ={ALL | DEST | PART | TCP}
+TYPE ={ALL | DEST |  PART  | TCP}
 
 <span id="Type_table1"></span>
 
@@ -232,7 +232,7 @@ CAT 
 Catalog definition 
 CFTCAT 
 COM 
-Description of {{< TransferCFT/componentshortname >}} communication methods
+Description of  {{< TransferCFT/componentshortname >}} communication methods
  
 CFTCOM 
 IDF 
@@ -249,7 +249,7 @@ General parameters 
 CFTPARM 
 PART 
 Partner definition  
-CFTPART and {{< TransferCFT/componentshortname >}} network 
+CFTPART and  {{< TransferCFT/componentshortname >}} network 
 PROT 
 Protocol definition 
 CFTPROT 
@@ -278,7 +278,7 @@ ALL | AUTH | CAT | COM | ETB | IDF | LOG | NET |PARM | PROT | RECV | SEND
 | XLATE }
 
 Defines the type of parameters to
-list from the {{< TransferCFT/componentshortname  >}} parameter file.
+list from the  {{< TransferCFT/componentshortname  >}} parameter file.
 
 TYPE can take the predefined values indicated in the Type table below.
 
@@ -329,16 +329,16 @@ XLATE 
 Used to query translation tables
 Translation tables are customized by the CFTXLATE object
 CFTFILE
-Used to create, empty, or delete {{< TransferCFT/componentshortname >}} files
+Used to create, empty, or delete  {{< TransferCFT/componentshortname >}} files
 LISTCAT
 Used to query the information associated with the selected
-transfers, recorded in the {{< TransferCFT/componentshortname >}} catalog
+transfers, recorded in the  {{< TransferCFT/componentshortname >}} catalog
 DISPLAY
 Used to query the information as with the LISTCAT command.
 It uses an external XML file that lists and describes customized models.
 These models are used to format the output
 ABOUT
-Used to display the {{< TransferCFT/componentshortname >}} computer characteristics
+Used to display the  {{< TransferCFT/componentshortname >}} computer characteristics
 ```
 
 #### RECONFIG

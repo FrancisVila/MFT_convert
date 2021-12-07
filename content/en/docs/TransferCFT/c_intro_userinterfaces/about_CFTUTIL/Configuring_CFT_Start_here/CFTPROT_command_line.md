@@ -4,7 +4,7 @@
     "weight": "290"
 }The following table lists the parameters which are common to all protocols.The CFTPROT TYPE = xxx commands are explained in the tables following the general parameters.
 
-For network resources of the asynchronous type (not SAP), there
+For network resources of the  asynchronous type (not SAP), there
 cannot be more than one CFTPROT object per CFTNET object.
 
 Related
@@ -396,8 +396,8 @@ Maximum size of NSDUs being received and sent.
 details](../../../command_summary/parameter_intro/sserv)
 Identifies the service (protocol variant) required for
 the incoming partner.
-Example \[FOR DETAILS: PeSIT
-examples\]
+Example [FOR DETAILS: PeSIT
+examples]
 ```
 <span id="SSL_parameter_in_CFTPROT"></span>
 
@@ -463,7 +463,7 @@ PeSIT protocol, SIT profile, associated
 with the data exchange protocol and network resources defined by the CFTNET
 ID=ACCEPTOR command.
 
-The time-outs are the default values \[ [Compression](../../../command_summary/parameter_intro/compression)\]. Each FPDU contains a single file
+The time-outs are the default values \[    [Compression](../../../command_summary/parameter_intro/compression)\]. Each FPDU contains a single file
 record (MULTART=NO). There is no on-line compression.
 
 ```

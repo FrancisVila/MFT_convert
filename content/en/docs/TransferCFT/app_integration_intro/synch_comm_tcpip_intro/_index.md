@@ -10,7 +10,7 @@ An additional benefit of synchronous communication is that you can use it for mo
 
 The alternative to synchronous mode is an asynchronous mode, which places the client data in a communication file where it waits to be picked up by the Transfer CFT server, at which point it is then listed in the catalog.
 
-Another difference between modes is that unlike synchronous mode, asynchronous mode does not require that {{< TransferCFT/componentlongname  >}} be started for the client to send data.
+Another difference between modes is that unlike synchronous mode,  asynchronous mode does not require that {{< TransferCFT/componentlongname  >}}  be started for the client to send data.
 
  
 
@@ -32,7 +32,7 @@ Use the CFTCOM command to define the synchronous communication settings. In the 
 
 ```
 CFTUTIL CFTCOM ID=COMS, TYPE=TCPIP, HOST=localhost, PORT=1765, PROTOCOL=XHTTP, DISCTS=60
-CFTUTIL uconfset id=cft.server.cftcoms.max\_connection, value=256
+CFTUTIL uconfset id=cft.server.cftcoms.max_connection, value=256
 ```
 
 If you manually configure synchronous communication in Transfer CFT, remember to add the COMS identifier in the CFTPARM COM parameter.
@@ -40,12 +40,12 @@ If you manually configure synchronous communication in Transfer CFT, remember to
 Resulting LOG message after a Transfer CFT restart
 
 ```
-CFTI18I+ TYPE : XHTTP HOST : 127.0.0.1 PORT : 1765
+CFTI18I+   TYPE : XHTTP   HOST  : 127.0.0.1  PORT : 1765
 ```
 
-### Configure the client
+### Configure the  client
 
-On the client side perform one of the following configuration procedures, depending on the type of client you are using.
+On the client side perform one of the following  configuration procedures, depending on the type of client you are using.  
 
 **Example**
 
@@ -54,21 +54,21 @@ On the client side perform one of the following configuration procedures, depend
 Start a CFTUTIL session and perform the following commands.
 
 ```
-CONFIG TYPE=COM, MEDIACOM=TCPIP, FNAME=XHTTP://localhost:1765
+CONFIG  TYPE=COM, MEDIACOM=TCPIP, FNAME=XHTTP://localhost:1765
 <execute requests in same session>
 ```
 
 Use a configuration file to define the synchronous communication, where the file should contain at least the following elements:
 
 -   # TCP/IP COMMUNICATION
--   TYPE =TCP
--   NAME =xhttp://localhost:1765
+-   TYPE    =TCP
+-   NAME   =xhttp://localhost:1765
 -   TIMEOUT = 600
 
 Start a CFTUTIL session and perform the following commands.
 
 ```
- CONFIG TYPE=COM, FNAME=<path><config\_file>
+ CONFIG  TYPE=COM,  FNAME=<path><config_file>
 <execute requests in same session>
 ```
 
@@ -77,7 +77,7 @@ Start a CFTUTIL session and perform the following commands.
 The API configuration consists of using a configuration file (the same elements as in a simple client configuration).
 
 ```
-cftau ("COM",C=<path><config\_file>);
+cftau ("COM",C=<path><config_file>);
 ```
 
 #### JPI
@@ -85,7 +85,7 @@ cftau ("COM",C=<path><config\_file>);
 JPI client configuration consists of using a configuration file (the same elements as in a simple client configuration).
 
 ```
-CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config\_file>’
+CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config_file>’
 ```
 
 #### Web services
@@ -95,10 +95,10 @@ When using web services the default media identifier used is the first once decl
 #### Transfer CFT UI
 
 ```
-CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config\_file>’
+CFTUTIL uconfset id=copilot.cft.com, value=’C=<path><config_file>’
 ```
 
-When using the Transfer CFT UI the first media identifier listed in the server's parameter file (CFTPARM) is used. So for example, if CFTPARM ID = IDPARM0, where COM = (COM0, COM1), the COM0 media is used.
+When using the Transfer CFT UI the first media identifier listed in the server's parameter file (CFTPARM) is used. So for example, if CFTPARM ID = IDPARM0, where COM = (COM0, COM1), the COM0 media is  used.
 
 ## Using SWAITCAT
 

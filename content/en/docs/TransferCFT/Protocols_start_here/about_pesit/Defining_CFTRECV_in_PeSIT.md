@@ -102,7 +102,7 @@ could not be found”.
 
 ### PeSIT E CFT/CFT
 
-The reception in open mode, characterized by the
+The reception in open mode,  characterized by the
 NFNAME parameter, is an extension specific to Transfer CFT.
 
 The table below summarizes the parameter values authorized as a function

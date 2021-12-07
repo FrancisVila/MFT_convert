@@ -6,7 +6,7 @@
 
 The following table lists the parameters which are common to all protocols. The CFTPROT TYPE = xxx commands are explained in the tables following the general parameters.
 
-For network resources of the asynchronous type (not SAP), there
+For network resources of the  asynchronous type (not SAP), there
 cannot be more than one CFTPROT object per CFTNET object.
 
 Related
@@ -310,7 +310,7 @@ PeSIT D or E protocol profile.
 The profile options are:
 
 -   EXTERN
-    profile: corresponds to the
+    profile: corresponds to the  
     standardized definition of the PeSIT version D protocol
 -   CFT profile:
     the PeSIT version D protocol,
@@ -320,7 +320,7 @@ Its functionality level is greater than the PeSIT D EXTERN
 profile specifications,
 
 -   ANY profile:
-    corresponds to the standardized
+    corresponds to the  standardized
     definition of the PeSIT version E protocol
 
 This profile includes the facilities of the CFT profile,
@@ -330,14 +330,14 @@ CFTs, while remaining in conformity with the PeSIT E standard. These facilities
 are based on the use of the PI 99 (free PI).
 
 -   the DMZ
-    profile (DeMilitarized Zone): corresponds to the normalized definition for the PeSIT protocol, version E E (refer to Managing the Turn)
+    profile (DeMilitarized Zone): corresponds to the normalized  definition for the PeSIT protocol, version E E (refer to Managing the Turn)
 
 Note:
 In
 server mode, the PROF parameter can take either the EXTERN,
 CFT or ANY values:
 indeed, in server mode, the Transfer CFT automatically adapts
-itself to the profile proposed by the requesting partner.
+itself to the  profile proposed by the requesting partner.
 [RCHKW](../../../command_summary/parameter_intro/rchkw)
 Size of the receive mode synchronization point acknowledgement
 anticipation window, expressed as a number of synchronization points.
@@ -394,8 +394,8 @@ Maximum size of NSDUs being received and sent.
 [SSERV](../../../command_summary/parameter_intro/sserv)
 Identifies the service (protocol variant) required for
 the incoming partner.
-Example \[FOR DETAILS: PeSIT
-examples\]
+Example [FOR DETAILS: PeSIT
+examples]
 ```
 <span id="SSL_parameter_in_CFTPROT"></span>
 
@@ -469,9 +469,9 @@ The time-outs are the default values. Each FPDU contains a single file
 record (MULTART=NO).
 
 ```
-CFTPROT ID = PSITE, /\* PSITE protocol \*/
-TYPE = PESIT, PROF=ANY, /\* PeSIT E \*/
-NET = ACCEPTOR,
+CFTPROT     ID     = PSITE,          /\* PSITE protocol               \*/
+TYPE    = PESIT, PROF=ANY,     /\* PeSIT  E                     \*/
+NET     = ACCEPTOR,
 MULTART = NO,
-CONCAT = YES
+CONCAT  = YES
 ```

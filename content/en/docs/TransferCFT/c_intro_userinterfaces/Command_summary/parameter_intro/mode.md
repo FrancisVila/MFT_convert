@@ -6,12 +6,12 @@
 
 ### mode
 
-#### All {{< TransferCFT/componentshortname  >}} commands
+#### All  {{< TransferCFT/componentshortname  >}} commands
 
 \[MODE = { <u>REPLACE</u> | CREATE | DELETE }\]
 
 Action to do in the parameter or partner database. This parameter applies
-to all commands that affect {{< TransferCFT/componentshortname  >}} databases. Possible values:
+to all commands that affect  {{< TransferCFT/componentshortname  >}} databases. Possible values:
 
 -   REPLACE
 -   CREATE
@@ -20,14 +20,14 @@ to all commands that affect {{< TransferCFT/componentshortname  >}} databases. P
 > **Note:**
 >
 > Applicable for CFTACCNT, CFTAUTH, CFTCAT, CFTCOM, CFTDEST, CFTEXIT, CFTFILE, CFTIDF,
-> CFTLOG, CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
-> CFTTCP, CFTTRACE, CFTXLATE.
+> CFTLOG,  CFTNET, CFTPARM, CFTPART, CFTPROT, CFTRECV, CFTSEND,
+> CFTTCP, CFTTRACE,  CFTXLATE.
 
 #### DISPLAY
 
 \[MODE = { ANY | COLUMN | LINE } \]
 
--   ANY / COLUMN: Displays in a column format
+-   ANY / COLUMN: Displays in a  column format
 -   Line: Displays in a more horizontal and spaced format
 
  
@@ -37,7 +37,7 @@ to all commands that affect {{< TransferCFT/componentshortname  >}} databases. P
 \[MODE = { START | CREATE | ACT | INACT }
 \]
 
--   INACT: temporarily stops automated calls to a given site
+-   INACT:  temporarily stops automated calls to a given site
 -   ACT: reactivates automated calls after the INACT command
 -   START: manually triggers a single connection for changing direction
 -   CREATE: triggers an automatic, cyclic TURN

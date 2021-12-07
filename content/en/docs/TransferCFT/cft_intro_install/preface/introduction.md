@@ -19,11 +19,11 @@ The NonStop OS basically consists of a Guardian layer, which is a lower level of
 
 ## Delivered components
 
-Axway delivers the Transfer CFT product for NonStop OS as an electronic software download, which is available from the Axway support site at [support.axway.com](http://www.support.axway.com/).
+Axway delivers the Transfer CFT product for NonStop OS  as  an electronic software download, which is available from the Axway support site at [support.axway.com](http://www.support.axway.com/).
 
 ## Prerequisites
 
-Perform any prerequisites operations using the user account intended for the Transfer CFT installation in the OSS environment.
+Perform any prerequisites operations   using the user account intended for the Transfer CFT installation in the OSS environment.
 
 ### Disk space requirements
 

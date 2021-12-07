@@ -4,7 +4,7 @@
     "weight": "120"
 }T
 
-The SSH File Transfer Protocol (SFTP) is a protocol that transfers files over an encrypted SSH channel. {{< TransferCFT/transfercftname  >}} supports the SFTP versions 3, 4, 5 and 6 for both client and server functionality.
+The SSH File Transfer Protocol (SFTP) is a protocol that transfers files over an encrypted SSH channel. {{< TransferCFT/transfercftname  >}} supports the  SFTP versions 3, 4, 5 and 6 for both client and server functionality.
 
 The following sections describe the Transfer CFT SFTP feature:
 
@@ -39,7 +39,7 @@ The Transfer CFT in client mode supports the following SFTP commands:
 
 ## Supported features    
 
-The Transfer CFT SFTP implementation supports these features:
+The Transfer CFT SFTP implementation supports these  features:
 
 -   Text/binary file transfer
 -   Group of files in heterogeneous mode (`mput, mget`)
@@ -48,7 +48,7 @@ The Transfer CFT SFTP implementation supports these features:
 -   SSH compression
 -   Bandwidth control in client mode
 -   Authentication with the user password
--   Authentication with an SSH key
+-   Authentication with  an SSH key
 -   Dual authentication with user password and SSH key
 -   Amazon S3
 
@@ -56,7 +56,7 @@ The Transfer CFT SFTP implementation supports these features:
 
 ## Use cases
 
-You can use SFTP with {{< TransferCFT/transfercftname  >}}, other Axway products, and third-party products, to connect file transfer networks.
+You can use SFTP with {{< TransferCFT/transfercftname  >}}, other Axway products, and  third-party products, to connect file transfer networks.
 
 Use case 1: Connecting networks
 
@@ -66,7 +66,7 @@ Transfer CFT can integrate with non-PeSIT based file transfer networks, as a s
 
 Use case 2: Application to application file transfers
 
-Alternatively, you can implement Transfer CFT with SFTP in application to application flow scenarios. Transfer CFT can transfer files between applications using PeSIT or SFTP, as either a client or a server.
+Alternatively, you can implement Transfer CFT with SFTP in application to application flow scenarios.  Transfer CFT can transfer files between applications using PeSIT or SFTP, as either a client or a server.
 
 > <img src="/Images/TransferCFT/sftp_arch2.jpg" class="maxWidth" />
 
@@ -74,7 +74,7 @@ Alternatively, you can implement Transfer CFT with SFTP in application to appli
 
 ## Configuration template
 
-{{< TransferCFT/transfercftname  >}} provides a basic SFTP configuration template. Click [here]() to view the template.
+{{< TransferCFT/transfercftname  >}} provides a basic SFTP configuration template. Click [here]()  to view the template.
 
 ## Restart a transfer
 
@@ -92,7 +92,7 @@ Transfer CFT supports the use of Amazon S3 for SFTP file transfers. Configure a
 To add a `workingdir `sub-folder, use the format:
 
 ```
-WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',
+WORKINGDIR  = 's3://cft-test-ci.eu-west-3/pub/share',
 ```
 <span id="Limitati"></span>
 
@@ -103,7 +103,7 @@ WORKINGDIR = 's3://cft-test-ci.eu-west-3/pub/share',
 -   You cannot use Copilot to create CFTSSH objects.
 -   When using Secure Relay with Transfer CFT for SFTP exchanges, SSH termination is not supported.
 -   Transfer CFT supports the RSA digital signature algorithm; however, ECDSA and DSA are not supported.
--   512-bit RSA keys are not supported. Use at least a 1024-bit key for RSA.
+-   512-bit RSA keys   are not supported. Use at least a 1024-bit key for RSA.
 -   *Windows* - You cannot modify the files rights (chmod) from the SFTP client when using Transfer CFT Windows as the SFTP server.
 -   *z/OS* - Only z/OS UNIX files are processed.
 -   *HP NonStop* - Only UNIX files are processed, not native files.
@@ -123,8 +123,8 @@ The character conversion in text mode can be done at the requester or server lev
 SFTP version variations
 
 -   SFTP 3 and lower: There is no flag to open a file in text mode, so the text mode is selected through the IDF's FTYPE parameter. The newline conversion can be specified on the client side.
--   SFTP 4 and higher: The client indicates if the transfer is done in binary or text mode. This overrides the IDF's FTYPE parameter. The newline conversion is done on the client side to accommodate the server requirement.
+-   SFTP  4 and higher: The client indicates if the transfer is done in binary or text mode. This overrides the IDF's FTYPE parameter. The newline conversion is done on the client side to accommodate the server requirement.
 
-See also, [Configure the SFTP server &gt; Transcoding parameters](sftp_server#Transcod) and [Configure the SFTP client &gt; Transcoding parameters](sftp_client#Transcod).
+See also, [Configure the SFTP server &gt; Transcoding parameters](sftp_server#Transcod) and [Configure the SFTP client  > Transcoding parameters](sftp_client#Transcod).
 
  

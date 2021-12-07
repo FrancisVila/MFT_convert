@@ -32,7 +32,7 @@ This name may include the following symbolic variables:
 -   &NIDF
 
 The character ‘&’ designates the char\_symb character defined in
-the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS. 
+the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your OS. 
 
 > **Note:**
 >

@@ -2,7 +2,7 @@
     "title": "Migrating from Transfer CFT 2.4 to 3.9",
     "linkTitle": "Migrating from Transfer CFT 2.4.x",
     "weight": "220"
-}This topic describes how to migrate from Transfer CFT 2.4 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must have installed your new {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
+}This topic describes how to migrate from Transfer CFT 2.4 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must  have installed your new   {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
 
 ## Migrating the configuration
 
@@ -10,7 +10,7 @@
 
 Migrate PARM, PART, IDF and other static configuration objects.
 
-1.  Load the Transfer CFT 2.4 environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1.  Load the Transfer CFT 2.4 environment.  See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 
 <!-- -->
 
@@ -50,7 +50,7 @@ Migrate the parameters from the Transfer CFT 2.4 trkapi.cfg file.
 1.  For each parameter you select, add a UCONF command line to your new script file using the format:
 
 ```
-UCONFSET id=<parameter\_id>, value=<value>
+UCONFSET id=<parameter_id>, value=<value>
 ```
 
 Use the parameter mapping between trkapi and UCONF, as listed in the following table, to specify the correct parameter id.
@@ -67,18 +67,18 @@ TRACE
 sentinel.trktrace
 TRKGMTDIFF
 sentinel.trkgmtdiff
-TRKIPADDR\_BKUP
-sentinel.trkipaddr\_bkup
+TRKIPADDR_BKUP
+sentinel.trkipaddr_bkup
 TRKIPPORT
 sentinel.trkipport
-TRKIPPORT\_BKUP
-sentinel.trkipport\_bkup
+TRKIPPORT_BKUP
+sentinel.trkipport_bkup
 TRKLOCALADDR
 sentinel.trklocaladdr
 TRKPRODUCTNAME
 sentinel.trkproductname
 XFB.BufferSize
-sentinel.xfb.buffer\_size
+sentinel.xfb.buffer_size
 XFB.Log (UNIX)
 sentinel.xfb.log
 XFBLOG (Windows)
@@ -98,7 +98,7 @@ sentinel.xfb.transfer
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace &lt;script\_filename> with the new script file path.
 
 ```
-CFTUTIL <prefix\_character><script\_filename>
+CFTUTIL <prefix_character><script_filename>
 ```
 
 Example
@@ -184,7 +184,7 @@ copilot.webservices.wsicomplience
 1.  Import the selected UCONF parameters using the command CFTUTIL. Replace the &lt;script\_filename> with the new script file path.
 
 ```
-CFTUTIL <prefix\_character><script\_filename>
+CFTUTIL <prefix_character><script_filename>
 ```
 
 Example
@@ -222,13 +222,13 @@ PKIUTIL PKIEXT fout=pki-extract.conf
 -   Windows: The absolute path value for the CFTPKU environment variable
 
 ```
-PKIUTIL PKIFILE fname=<pki\_database\_filename>, mode='CREATE’
+PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
 ```
 
 1.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path.
 
 ```
-PKIUTIL <prefix\_character><script\_filename>
+PKIUTIL <prefix_character><script_filename>
 ```
 
 Example
@@ -250,7 +250,7 @@ Example
 1.  Export the catalog using the command CFTMI240:
 
 ```
-CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.4\_filename>, ofname=catalog\_output.xml
+CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.4_filename>, ofname=catalog_output.xml
 ```
 
 1.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
@@ -266,7 +266,7 @@ CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.4\_filename>, ofname=
 -   Windows: $CFTCATA
 
 ```
-CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_installation>
+CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_installation>
 ```
 
 ### Migrating the communication media files
@@ -278,7 +278,7 @@ CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_
 1.  Export the communication media file using command CFTMI240:
 
 ```
-CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.4\_filename>, ofname=com\_output.xml
+CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.4_filename>, ofname=com_output.xml
 ```
 
 1.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
@@ -294,5 +294,5 @@ CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.4\_filename>, ofname=com\
 -   Windows: $CFTCOM
 
 ```
-CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_installation>
+CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_installation>
 ```

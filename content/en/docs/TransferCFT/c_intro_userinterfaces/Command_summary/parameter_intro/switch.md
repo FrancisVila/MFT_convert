@@ -10,7 +10,7 @@
 
 **\[SWITCH = {<u>00000000</u> | *time*}\]**
 
-Time at which the {{< TransferCFT/componentshortname  >}}
+Time at which the  {{< TransferCFT/componentshortname  >}}  
 automatically switches to the alternate statistical file.
 
 -   **000000**
@@ -18,7 +18,7 @@ automatically switches to the alternate statistical file.
 -   <span style="font-weight: bold;">any
     other value</span> in the HHMMSS format
 
-When this parameter is not defined, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches statistical
+When this parameter is not defined,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> switches statistical
 files daily at midnight.
 
 #### CFTLOG

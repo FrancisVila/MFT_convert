@@ -8,7 +8,7 @@ SWAITCAT
 
 \[ PHASESTEPS = { D | H | C | K | <u>X</u> | T | E } \]
 
-Where the string **sizemax=7** and the default is X.
+Where the string  **sizemax=7** and the default is X.
 
 During processing, the phasesteps can be:
 

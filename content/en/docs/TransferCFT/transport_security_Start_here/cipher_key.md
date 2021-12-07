@@ -42,17 +42,17 @@ Renewkey options:
 
 -   pkitmp: Temporary file where the PKI configuration is stored.
 -   pkipref : Prefix for certificates temporary files (z/OS only, on all other systems the non modifiable `cftcrtmp ` value is the prefix, for example, an exported certificate could have a name such as "cftcrtmpROOT0001").
--   noremove: Do not remove the temporary file; you can use this to keep track of what has been exported.
--   nopki:  Do not export/import the PKI base.
+-   noremove: Do not remove the temporary file; you can use this  to keep track of what has been exported.
+-   nopki:       Do not export/import the PKI base.
 -   pass: Password.
 -   oldpass: Old password.
 -   tmpfname: Temporary file where the Transfer CFT configuration is stored.
 
 > **Note:**
 >
-> Passwords must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
+> Passwords  must contain at least 8 characters, lower case, upper case, numeric and special characters(\*#$!?+-@).
 
-Use the following command to generate an encryption key using the provided password. This creates the `--keyfname` and `--saltfname` files, and references them in UCONF.
+Use the following command to generate an encryption key using the provided password. This creates the  `--keyfname` and `--saltfname` files, and references them in UCONF.
 
 ```
 cftcrypt --genkey --keyfname FILENAME --saltfname FILENAME --pass PASSWORD

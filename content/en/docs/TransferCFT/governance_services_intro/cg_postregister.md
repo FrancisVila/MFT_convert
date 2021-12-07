@@ -16,7 +16,7 @@ From {{< TransferCFT/centralgovernancename  >}} you can modify Transfer CFT con
 
 ## SSL certificate renewal
 
-Certificate and key renewal can refer to business and/or governance certificates. The request is initiated by the Copilot.
+Certificate and key renewal can refer to business and/or governance certificates. The request is initiated by the  Copilot.
 
 > **Note:**
 >
@@ -41,16 +41,16 @@ To force a certificate renewal, execute the following commands. To force an imme
 #### Set the following parameter to renew the governance certificate
 
 ```
-CFTUTIL UCONFSET id=cg.certificate.governance.renewal\_datetime, value=YYYYMMDDHHMMSS
+CFTUTIL UCONFSET id=cg.certificate.governance.renewal_datetime, value=YYYYMMDDHHMMSS
 ```
 
 #### Set the following parameter to renew the business certificate
 
 ```
-CFTUTIL UCONFSET id=cg.certificate.business.renewal\_datetime, value=YYYYMMDDHHMMSS
+CFTUTIL UCONFSET id=cg.certificate.business.renewal_datetime, value=YYYYMMDDHHMMSS
 ```
 
-Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 2019, 12:30 has the value 20190807123000.
+Where YYYYMMDDHHMMSS is the date and time of the renewal. For example, August 7 2019, 12:30 has the value  20190807123000.
 
 <span id="Change"></span>
 
@@ -61,12 +61,12 @@ You can configure the key length for either a governance or business certificate
 > **Note:**
 >
 > Caution  
-> If you modify the key length of the governance certificate and you use access tokens, please refer to the Access Token and Bearer authentication sections for details before proceeding.
+> If you modify the key length  of the governance certificate and you use access tokens,  please refer to the Access Token and Bearer authentication sections for details before proceeding.
 
 1.  Modify the UCONF parameters:  
     ```
-    CFTUTIL uconfset id=cg.certificate.governance.key\_len, value=4096
-    CFTUTIL uconfset id=cg.certificate.business.key\_len, value=4096
+    CFTUTIL uconfset id=cg.certificate.governance.key_len, value=4096
+    CFTUTIL uconfset id=cg.certificate.business.key_len, value=4096
     ```
 2.  Trigger a certificate renewal, for example by setting the UCONF `cg.certificate.<type>.renewal_datetime` parameter to a date that has passed (example, "20200101000000").
 3.  Perform a Transfer CFT and a Copilot restart.
@@ -78,7 +78,7 @@ You can configure the key length for either a governance or business certificate
 
 ## Product updates
 
-Central Governance can apply updates, including service packs, patches, and version upgrades, remotely to registered Transfer CFTs. Download the update package from the [Axway support website](https://support.axway.com/), and upload it to Central Governance. Please refer to [Manage product updates](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/updates/t_update_crud.htm) for details.
+Central Governance can apply updates, including service packs, patches, and version upgrades, remotely to registered Transfer CFTs. Download the update package  from the [Axway support website](https://support.axway.com/), and upload it to Central Governance. Please refer to [Manage product updates](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/updates/t_update_crud.htm) for details.
 
 > **Note:**
 >

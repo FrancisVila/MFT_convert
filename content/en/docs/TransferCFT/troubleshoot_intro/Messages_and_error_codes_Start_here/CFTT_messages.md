@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTT ",
     "linkTitle": "CFTT messages",
     "weight": "370"
-}This topic lists the CFTTxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTTxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -726,14 +726,14 @@ access error was detected (input/output error for example).</p>         </td>
          <td><p>V23 format</p>
 <p>V24 format</p>
 <p>Error</p>         </td>
-         <td><p><span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part IDF=&amp;idf IDT=&amp;idt_ &amp;str</p>
-<p>CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt; &amp;str</p>         </td>
+         <td><p><span id="CFTT22E"></span>CFTT22E &amp;str PART=&amp;part  IDF=&amp;idf IDT=&amp;idt_ &amp;str</p>
+<p>CFTT22E _&amp;str &lt;IDTU=&amp;idtu PART=&amp;part  IDF=&amp;idf IDT=&amp;idt&gt; &amp;str</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>Connection refused due to user authentication failure (rpasswd, spasswd error).</p>
 <p>The  &amp;str provides additional information.</p>
-<p>For more information, see Password management.</p>         </td>
+<p>For more information, see  Password management.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -1157,7 +1157,7 @@ ERASE file &amp;fname Failed &amp;str</p>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>A DELETE command is executed on a catalog request (in receive
-mode and in a non-terminated state).K or H</p>
+mode and in a non-terminated  state).K or H</p>
 <p>The purge of the received file that corresponds with this
 request could not be carried out:</p>
 <ul>
@@ -1243,7 +1243,7 @@ and is under the end of transfer procedure.</li>
 <p>V24 format</p>
 <p>Information</p>         </td>
          <td><p><span id="CFTT38I"></span>CFTT38I PART=&amp;part _ Dynamic partner: &amp;npart</p>
-<p>CFTT38I _Dynamic partner: &amp;npart &lt; PART=&amp;part DIAG=&amp;diag&gt;</p>         </td>
+<p>CFTT38I _Dynamic partner: &amp;npart &lt; PART=&amp;part  DIAG=&amp;diag&gt;</p>         </td>
       </tr>
       <tr>
          <td><p>Information</p>         </td>
@@ -1264,7 +1264,7 @@ the &amp;npart dynamic partner creation mechanism is triggered.</p>         </td
 <p>Error</p>         </td>
          <td><p><span id="CFTT39E"></span>CFTT39E PART=&amp;part DIAG=&amp;diag _ Access Exit
 Connect Reject</p>
-<p>CFTT39E _ Access Exit
+<p>CFTT39E  _ Access Exit
 Connect Reject &lt;PART=&amp;part DIAG=&amp;diag&gt;</p>         </td>
       </tr>
       <tr>
@@ -1290,7 +1290,7 @@ contains the field in the communication structure updated by the EXIT.</p>      
 <p>Error</p>         </td>
          <td><p><span id="CFTT40E"></span>CFTT40E PART=&amp;part DIAG=&amp;diag _ Access Exit
 Error</p>
-<p>CFTT40E _ Access Exit
+<p>CFTT40E  _ Access Exit
 Error &lt;PART=&amp;part DIAG=&amp;diag&gt;</p>         </td>
       </tr>
       <tr>
@@ -1332,7 +1332,7 @@ codes: 134, 423.</p>         </td>
 <p>V24 format</p>
 <p>Error</p>         </td>
          <td><p><span id="CFTT44E"></span>CFTT44E PART=&amp;part IDF=&amp;idf _ &amp;str directory &amp;file</p>
-<p>CFTT44E _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt;</p>         </td>
+<p>CFTT44E  _ &amp;str directory &amp;file &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf&gt;</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
@@ -1390,7 +1390,7 @@ in the directory, all transfers preceding the error are triggered.</p>         <
 <p>V24 format</p>
 <p>Error</p>         </td>
          <td><p><span id="CFTT45E"></span></p>
-<p>CFTT45E PART=&amp;part _ Partner switching IPART=&amp;ipart not found</p>
+<p>CFTT45E PART=&amp;part  _ Partner switching IPART=&amp;ipart not found</p>
 <p>CFTT45E _ Partner switching not found &lt;PART=&amp;part IPART=&amp;ipart&gt;</p>         </td>
       </tr>
       <tr>
@@ -1414,8 +1414,8 @@ in the directory, all transfers preceding the error are triggered.</p>         <
 <p>Warning</p>         </td>
          <td><p><span id="CFTT46W"></span>CFTT46W PART=&amp;part ,IDF=&amp;idf ,IDT=&amp;idt _
 Part inactive: mode &amp;str</p>
-<p>CFTT46W _
-Part inactive: mode &amp;str &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;</p>         </td>
+<p>CFTT46W  _
+Part inactive: mode &amp;str  &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt&gt;</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
@@ -1441,7 +1441,7 @@ requester or</li>
 <p>Error</p>         </td>
          <td><p><span id="CFTT47E"></span>CFTT47E PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;id
 _ Cannot find SSL security profil</p>
-<p>CFTT47E
+<p>CFTT47E  
 _ Cannot find SSL security profil &lt;IDTU=&amp;idtu PART=&amp;part IDF=&amp;idf IDT=&amp;idt PROTOCOL=&amp;prot&gt;</p>         </td>
       </tr>
       <tr>
@@ -1521,8 +1521,8 @@ because the security profile was not found. For more information on SSL definit
 <p>Error</p>         </td>
          <td><p><span id="CFTT48E"></span>CFTT48E PART=&amp;part SSL=&amp;id _ Server
 Session rejected reason=&amp;reason</p>
-<p>CFTT48E _ Server
-Session rejected reason=&amp;reason &lt;PART=&amp;part SSL=&amp;ssl&gt;</p>         </td>
+<p>CFTT48E  _ Server
+Session rejected reason=&amp;reason  &lt;PART=&amp;part SSL=&amp;ssl&gt;</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
@@ -1566,11 +1566,11 @@ support team if necessary.</p>         </td>
 V23 format
 V24 format
 Error
-<span id="CFTT50E"></span>CFTT50E PART=&part IDF=&idf IDT=&idt \_ Duplicate transfer with IDTU=
-CFTT50E \_ Duplicate transfer with IDTU=&idtu <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
+<span id="CFTT50E"></span>CFTT50E PART=&part IDF=&idf IDT=&idt _ Duplicate transfer with IDTU=
+CFTT50E _ Duplicate transfer with IDTU=&idtu <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
 A duplicate transfer occurred. IDTU=&idtu is the previously performed transfer.
-For more information, see the [DUPLICAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/duplicat) field details.
+For more information, see the   [DUPLICAT](../../../c_intro_userinterfaces/command_summary/parameter_intro/duplicat) field details.
 ```
 
  
@@ -1879,7 +1879,7 @@ by the engineers responsible for this file EXIT.</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
-         <td><p>The default IDF functionality is disabled for the command.</p>         </td>
+         <td><p>The default IDF functionality is disabled for the  command.</p>         </td>
       </tr>
       <tr>
          <td><p>Consequence</p>         </td>
@@ -1976,8 +1976,8 @@ by the engineers responsible for this file EXIT.</p>         </td>
 V23 format
 V24 format
 Error
-<span id="CFTT69E"></span>CFTT69E PART=&part IDF=&idf IDT=&idt \_ Unexpected YE phase/phasestep at restart, converting E to H
-CFTT69E \_ Unexpected YE phase/phasestep at restart, converting E to H IDTU=&idtu, PART=&part, IDF=&idf, IDT=&idt
+<span id="CFTT69E"></span>CFTT69E PART=&part IDF=&idf IDT=&idt _ Unexpected YE phase/phasestep at restart, converting E to H
+CFTT69E _ Unexpected YE phase/phasestep at restart, converting E to H IDTU=&idtu, PART=&part, IDF=&idf, IDT=&idt
 Explanation
 If Transfer CFT was stopped abruptly during the post-processing phase, when you restart Transfer CFT you cannot manage these transfers (YE phase/phasestep).
 Consequence
@@ -1995,7 +1995,7 @@ You can continue to manage the affected transfer (those in H phasestep).
 <p>V24 format</p>
 Information         </td>
          <td><p><span id="CFTT70I"></span>CFTT70I The user &amp;user is connecting with method &amp;method</p>
-<p>CFTT70I The user &amp;user is connecting with method &amp;method</p>         </td>
+<p>CFTT70I The user &amp;user is connecting with method &amp;method            </p>         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
@@ -2011,7 +2011,7 @@ Information         </td>
 <p>V24 format</p>
 Error         </td>
          <td><p><span id="CFTT70E"></span>CFTT70E The user &amp;user is not allowed to connect to the server</p>
-<p>CFTT70E The user &amp;user is not allowed to connect to the server</p>         </td>
+<p>CFTT70E The user &amp;user is not allowed to connect to the server            </p>         </td>
       </tr>
       <tr>
          <td>Explanation         </td>
@@ -2221,9 +2221,9 @@ and try to correct it.</p>         </td>
          <td><p>V23 format</p>
 <p>V24 format</p>
 <p>Error</p>         </td>
-         <td><p>CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;</p>
-<p>CFTT75E Incorrect user or password &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;
-&lt;/p&gt;</p>         </td>
+         <td><p>CFTT75E Incorrect user or password   &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;</p>
+<p>CFTT75E Incorrect user or password   &lt;IDTU=&amp;idtuPART=&amp;part IDF=&amp;idf IDT=&amp;idf DIAGI=&amp;diagi&gt;
+                   &lt;/p&gt;</p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
@@ -2434,7 +2434,7 @@ V23 format
 V24 format
 Error
 <span id="CFTT82W"></span>CFTT82W PART=&part IDF=&idf IDT=&idt transfer aborted (file not found ignored) &diagi ,&diagp
-CFTT82W transfer aborted (file not found ignored) <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt &diagi ,&diagp>
+CFTT82W transfer aborted (file not found ignored) <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt &diagi ,&diagp>
 Explanation
 File not found error was detected.
 Consequence
@@ -2451,7 +2451,7 @@ V24 format
 Information
 <span id="CFTT83I"></span>CFTT83I PART=&part IDF=&idf IDT=&idt change
 direction(CD) for request
-CFTT83I change direction(CD) for request <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt>
+CFTT83I change direction(CD) for request <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt>
 Explanation
 This message is only displayed for the ODETTE protocol and a
 RECV command. It indicates that the remote partner has accepted its turn
@@ -2547,9 +2547,9 @@ Information
 on FNAME=&fname : &str+"deleted" or "erased"
 CFTT89I Faction on FNAME=&fname : &str+"deleted" or "erased" <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
-Delete or erase message for a file after using the FACTION parameter in a transfer command (either SEND or RECV).
+Delete or erase message for a file after using the FACTION parameter  in a transfer command (either SEND or RECV).
 The file is either erased or
-deleted (FACTION=ERASE or FACTION=DELETE) at the end of the transfer.
+deleted (FACTION=ERASE or FACTION=DELETE)  at the end of the transfer.
 Information
 CFTT89I Faction on FNAME=&srcfile as &archivefile <IDTU=&idtu PART=&part IDF=&idf IDT=&idt>
 Explanation
@@ -2628,12 +2628,12 @@ CTX=&ctx provides the protocol context associated with the transfer.
 <p>V24 format</p>
 <p>Warning</p>         </td>
          <td><p><span id="CFTT93W"></span>CFTT93W PART=&amp;part IDS=&amp;ids Negative ack not supported</p>
-<p>CFTT93W Negative ack not supported PART=&amp;part IDS=&amp;ids</p>         </td>
+<p>CFTT93W Negative ack not supported PART=&amp;part IDS=&amp;ids  </p>         </td>
       </tr>
       <tr>
          <td><p>Explanation</p>         </td>
          <td><p>The  final
-partner signals to the initial file sender that application errors
+partner signals to the initial file sender  that application errors
 were detected. This occurs via a negative acknowledgments sent in a PeSIT Hors SIT
 message, where IDS is the reference for the session context.</p>         </td>
       </tr>
@@ -2664,8 +2664,8 @@ Information         </td>
 V23 format
 V24 format
 Error
-<span id="CFTT95E"></span>CFTT95E Incorrect user or password <IDTU=&idtu PART=&part IDF=&idf IDT=&idtf DIAGI=&diagi>
-CFTT95E Incorrect user or password <IDTU=&idtu PART=&part IDF=&idf IDT=&idt DIAGI=&diagi>
+<span id="CFTT95E"></span>CFTT95E Incorrect user or password   <IDTU=&idtu PART=&part IDF=&idf IDT=&idtf DIAGI=&diagi>
+CFTT95E Incorrect user or password <IDTU=&idtu PART=&part IDF=&idf IDT=&idt DIAGI=&diagi>                
 Explanation
 Cannot connect to the SFTP server because the user name or password is incorrect.
 Action
@@ -2678,8 +2678,8 @@ Correct the user name or password.
 V23 format
 V24 format
 Information
-<span id="CFTT96I"></span> CFTT96I &str transfer restarted <IDTU=&idtu PART=&part IDF=&idf IDT=&idt POS=&pos IDS=&ids>
-CFTT96I &str transfer restarted <IDTU=&idtu PART=&part IDF=&idf IDT=&idt POS=&pos IDS=&ids>
+<span id="CFTT96I"></span>   CFTT96I &str transfer restarted <IDTU=&idtu PART=&part IDF=&idf IDT=&idt POS=&pos IDS=&ids>
+CFTT96I &str transfer restarted <IDTU=&idtu PART=&part IDF=&idf IDT=&idt POS=&pos IDS=&ids>                
 Explanation
 The requester (&str = requester) or the server (&str = server) has restarted the transfer.
 &pos is the file position during restart.

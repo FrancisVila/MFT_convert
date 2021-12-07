@@ -9,12 +9,12 @@ sub-directory after completing installation.
 > **Note:**
 >
 > In this section, the term
-> Transfer CFT designates the Transfer
+>   Transfer CFT designates the Transfer
 > CFT software package on UNIX platforms.
 
-The utilities described here, do not replace the
+The  utilities described here, do not replace the
 basic commands described elsewhere in this document. Their purpose is
-to simplify common tasks performed with {{< TransferCFT/componentshortname  >}}.
+to simplify common tasks performed with  {{< TransferCFT/componentshortname  >}}.
 
 ## Utility descriptions
 
@@ -38,7 +38,7 @@ The following utilities are detailed in this page.
 
 ## cftinit
 
-*cftinit* is a general {{< TransferCFT/componentshortname  >}}
+*cftinit* is a general  {{< TransferCFT/componentshortname  >}}
 initialization utility.
 
 **Syntax**
@@ -48,14 +48,14 @@ cftinit \[&lt;filename> \[&lt;filename>...\]\]
 **Standard use**
 
 *cftinit* is normally used with a single
-parameter, which is the name of the {{< TransferCFT/componentshortname  >}} configuration file.
+parameter, which is the name of the  {{< TransferCFT/componentshortname  >}} configuration file.
 
 cftinit my\_config.cft
 
 **Advanced use**
 
-You can include several file names in the command line. Normally, all
-{{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
+You can include several file names  in the command line. Normally, all
+  {{< TransferCFT/componentshortname  >}} parameters are declared in a single file. However, for organizational
 reasons, you may wish to separate the configuration into several files
 (for example, a file describing the CFTPART cards and another file containing
 the CFTPARM, CFTLOG cards, and so on).
@@ -108,7 +108,7 @@ cftutil &lt;command>
 
 ```
 % cftutil listcat type=z
-CFTU26E LISTCAT \_ Error (TYPE Bad value for parameter)
+CFTU26E LISTCAT _ Error (TYPE Bad value for parameter)
 cftutil code 115
 %
 ```
@@ -117,7 +117,7 @@ cftutil code 115
 ## cftcatal
 
 You can use the *cftcatal* utility to increase
-the size of the {{< TransferCFT/componentshortname  >}} catalog file without losing information. In a multi-node environment, this action resizes all nodes.
+the size of the  {{< TransferCFT/componentshortname  >}} catalog file without losing  information.  In a multi-node environment, this action resizes all nodes.
 
 **Syntax**
 
@@ -177,7 +177,7 @@ allow you to work in batch mode:
 ## xfbadmusr
 
 You can use the `xfbadmusr`
-utility to create, delete, check, and modify a user with access rights
+utility  to create, delete, check, and modify a user with access rights
 to the Transfer CFT Copilot server. It can be used in interactive mode associated with
 a command (add, delete, and so on) or in batch mode, specifying each of
 the required commands (-G group -p passwd, and so on).
@@ -215,8 +215,8 @@ xfbadmusr add | delete | modify | print | check | help
 
 Advanced use
 
-You can use the following options to make it easier to enter information,
-or to work in batch mode:
+You can use the following options  to make it easier to enter information,
+or to  work in batch mode:
 
 -   **-l
     &lt; login >**: Login name
@@ -282,7 +282,7 @@ The following options can be used with *xvi*:
 
 ## Conversion tables
 
-By default, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses internal tables to convert ASCII characters
+By default,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> uses internal tables to convert ASCII characters
 to EBCDIC and vice versa. They are based on the ASCII character set as
 defined on PC/DOS systems.
 

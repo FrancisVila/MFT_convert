@@ -26,7 +26,7 @@ This field only applies to the following EXITS:
     -   default value
         <span style="font-weight: bold;">8192</span>
 
-This area is not used by the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> interface. You can use it
+This area is not used by the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> interface. You can use it
 to save the information that you consider necessary for the processing
 relative to your program.
 

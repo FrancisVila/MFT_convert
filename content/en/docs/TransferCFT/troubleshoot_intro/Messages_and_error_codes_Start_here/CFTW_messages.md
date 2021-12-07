@@ -2,7 +2,7 @@
     "title": " Transfer CFT messages: CFTW",
     "linkTitle": "CFTW messages",
     "weight": "380"
-}This topic lists the CFTWxx and CFTXxx messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the  CFTWxx and CFTXxx  messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -53,9 +53,9 @@ in the associated CFTSEND command.
 V23 format
 V24 format
 Warning
-<span id="CFTW03W"></span>CFTW03W \_ Send command: Unauthorized usage of IDF =
+<span id="CFTW03W"></span>CFTW03W _ Send command: Unauthorized usage of IDF =
 &idf
-CFTW03W \_ Send Command : Unauthorized usage on IDF = &id
+CFTW03W _ Send Command : Unauthorized usage on IDF = &id
 Explanation
 The &idf IDF is not authorized for the SEND command. Check your software key restrictions.
 ```
@@ -66,9 +66,9 @@ The &idf IDF is not authorized for the SEND command. Check your software key res
 V23 format
 V24 format
 Warning
-<span id="CFTW04W"></span>CFTW04W \_ Recv command: Unauthorized usage on IDF =
+<span id="CFTW04W"></span>CFTW04W _ Recv command: Unauthorized usage on IDF =
 &idf
-CFTW04W \_ Recv Command : Unauthorized usage on IDF = &id
+CFTW04W _ Recv Command : Unauthorized usage on IDF = &id
 Explanation
 The &idf IDF is not authorized for the RECV command. See
 the restrictions concerning the value of your software key.
@@ -85,7 +85,7 @@ unknown, WFNAME not defined in SEND
 CFTW05W PART=&part IDF=&idf Temporary file unknown, WFNAME not defined in SEND
 Explanation
 The WFNAME was not set in the CFTSEND command when preparing
-a transfer requiring additional processing
+a transfer requiring additional processing  
 and sending a group of files.
 Action
 Modify the parameter settings using a different IDF for this
@@ -98,9 +98,9 @@ type of transfer.
 V23 format
 V24 format
 Warning
-<span id="CFTW07W"></span>CFTW07W PART=&part IDF = &idf \_ SELFNAME not
+<span id="CFTW07W"></span>CFTW07W PART=&part IDF = &idf _ SELFNAME not
 authorized for COPY
-CFTW07W PART=&par IDF=&idf \_ SELFNAME not authorized for COPY\\n
+CFTW07W PART=&par IDF=&idf _ SELFNAME not authorized for COPY\\n
 Explanation
 You cannot use a selection file when implementing additional
 processing prior to a transfer (IEBCOPY with MVS for example).

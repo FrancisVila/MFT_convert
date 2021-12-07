@@ -13,7 +13,7 @@
 
 Odette protocol
 
-Value of the credit proposed by the {{< TransferCFT/componentshortname  >}} when it is server.
+Value of the credit proposed by the  {{< TransferCFT/componentshortname  >}} when it is server.
 Enter a value between 1 and 999. The Default value is **4**.
 
 This value is negotiated with the value proposed by the requester (see

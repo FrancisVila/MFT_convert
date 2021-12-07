@@ -8,7 +8,7 @@
 -   Phasestep: Within each phase there is a phase step, which is either a process or a step.
 -   Diag: Diagnostic codes provide a explanation of the source of the error detected or the refusal.
 -   {{< TransferCFT/componentshortname >}} state: The {{< TransferCFT/componentshortname >}} status as displayed in the catalog.
--   Compatibility state: The {{< TransferCFT/componentshortname >}} status as displayed in the catalog when using the backward compatibility mode.
+-   Compatibility state:  The {{< TransferCFT/componentshortname >}} status as displayed in the catalog when using the backward compatibility mode.
 -   Sentinel state: The state attribute identifies the step of the transfer process.
 
 For details on Sentinel states, see XFBTransfer Tracked Objects.
@@ -28,7 +28,7 @@ Phasestep
 Transfer CFT State
 
 Transfer CFT Compatible State (uconf:
-cft.state\_compat=Yes)
+cft.state_compat=Yes)
 
 Diagi
 
@@ -38,7 +38,7 @@ Sentinel
 State
 
 Compatible Sentinel State (uconf:
-cft.state\_compat=Yes)
+cft.state_compat=Yes)
 
 Pre-processing
 A
@@ -47,7 +47,7 @@ A
 A
 0
  
-PRE\_PROC
+PRE_PROC
 AVAILABLE
  
 A
@@ -56,8 +56,8 @@ A
 A
  
  
-PRE\_PROC
-TO\_EXECUTE
+PRE_PROC
+TO_EXECUTE
  
 A
 C
@@ -65,8 +65,8 @@ A
 A
  
  
-PRE\_PROC
-TO\_EXECUTE
+PRE_PROC
+TO_EXECUTE
  
 A
 K
@@ -74,7 +74,7 @@ A
 A
 121
  
-PRE\_PROC\_ABORT
+PRE_PROC_ABORT
 CANCELED
  
  
@@ -101,8 +101,8 @@ D
 D
  
  
-TO\_EXECUTE
-TO\_EXECUTE
+TO_EXECUTE
+TO_EXECUTE
  
 T
 D
@@ -164,7 +164,7 @@ Y
 T/X
  
  
-POST\_PROC
+POST_PROC
 SENT/RECEIVED
  
 Y
@@ -173,7 +173,7 @@ Y
 T/X
  
  
-POST\_PROC
+POST_PROC
 SENT/RECEIVED
  
 Y
@@ -182,7 +182,7 @@ Y
 T/X
  
  
-POST\_PROC
+POST_PROC
 SENT/RECEIVED
  
 Y
@@ -191,7 +191,7 @@ Y
 T/X
  
  
-POST\_PROC
+POST_PROC
 SENT/RECEIVED
  
 Y
@@ -200,7 +200,7 @@ Y
 T/X
  
 A
-POST\_PROC
+POST_PROC
 ENDED-TO-ACK/ACKED
  
 Y
@@ -209,7 +209,7 @@ Y
 T/X
  
 N
-POST\_PROC
+POST_PROC
 ENDED-TO-NACK/NACKED
  
 Y
@@ -218,7 +218,7 @@ Y
 T/X
  
  
-POST\_PROC\_ABORT
+POST_PROC_ABORT
 SENT/RECEIVED
  
 Y
@@ -227,7 +227,7 @@ Y
 T/X
  
 A
-POST\_PROC\_ABORT
+POST_PROC_ABORT
 ENDED-TO-ACK/ACKED
  
 Y
@@ -236,7 +236,7 @@ Y
 T/X
  
 N
-POST\_PROC\_ABORT
+POST_PROC_ABORT
 ENDED-TO-NACK/NACKED
  
  
@@ -254,7 +254,7 @@ Z
 T/X
  
  
-ACK\_EXPECTED
+ACK_EXPECTED
 SENT/RECEIVED
  
 Z
@@ -263,7 +263,7 @@ Z
 T/X
  
  
-POST\_PROC\_ACK
+POST_PROC_ACK
 SENT/RECEIVED
  
 Z
@@ -290,7 +290,7 @@ Z
 T/X
  
  
-POST\_PROC\_ACK
+POST_PROC_ACK
 SENT/RECEIVED
  
 Z
@@ -299,7 +299,7 @@ Z
 T/X
  
 A
-POST\_PROC\_ACK
+POST_PROC_ACK
 ENDED-TO-ACK/ACKED
  
 Z
@@ -308,7 +308,7 @@ Z
 T/X
  
 N
-POST\_PROC\_ACK
+POST_PROC_ACK
 ENDED-TO-NACK/NACKED
  
 Z
@@ -317,7 +317,7 @@ Z
 T/X
  
  
-POST\_PROC\_ACK\_ABORT
+POST_PROC_ACK_ABORT
 SENT/RECEIVED
  
 Z
@@ -326,7 +326,7 @@ Z
 T/X
  
 A
-POST\_PROC\_ACK\_ABORT
+POST_PROC_ACK_ABORT
 ENDED-TO-ACK/ACKED
  
 Z
@@ -335,7 +335,7 @@ Z
 T/X
  
 N
-POST\_PROC\_ACK\_ABORT
+POST_PROC_ACK_ABORT
 ENDED-TO-NACK/NACKED
  
  

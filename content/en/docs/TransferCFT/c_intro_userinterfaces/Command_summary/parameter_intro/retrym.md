@@ -24,7 +24,7 @@ attempts are made.
 
 When specifying multiple hosts in CFTTCP and PROTs/SAPs in CFTPART, Transfer CFT first retries the host and then the PROT/SAP.
 
-For example, if RETRYN is set to 1 and there are two defined hosts and two PROTs/SAPs as shown here:
+For example, if RETRYN is set to 1 and there are two defined hosts  and two PROTs/SAPs as shown here:
 
 ```
 CFTTCP ...

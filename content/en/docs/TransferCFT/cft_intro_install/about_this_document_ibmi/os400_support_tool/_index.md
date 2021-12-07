@@ -51,9 +51,9 @@ You can use Transfer CFT IBM i command line to execute the command:
 
 > **Note:**
 >
-> Alternatively, from the CFT menu select 3. Administration commands then 2. Submit CFT support request.
+> Alternatively, from the CFT menu select 3. Administration commands then 2.  Submit CFT support request.
 
-If the generated CFTSUPPORT.tar is too large, you can compress it prior to sending it to Axway support.
+If the generated CFTSUPPORT.tar  is too large, you can compress it prior to sending it to Axway support.
 
 **Example**
 

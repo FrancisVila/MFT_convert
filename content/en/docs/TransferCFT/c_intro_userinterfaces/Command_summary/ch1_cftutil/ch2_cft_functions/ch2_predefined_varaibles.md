@@ -4,10 +4,10 @@
     "weight": "280"
 }A number of variables are predefined in CFTUTIL for the catalog fields. These variables can be used in all of the batch programming commands.
 
-Each variable begins with the underscore character \_. For example, to display the IDTU value of a transfer, specify:
+Each  variable begins with the underscore character \_. For example, to display the  IDTU value of a transfer, specify:
 
 ```
-PRINT MSG='Transfer IDTU value: %\_CAT\_IDTU%'
+PRINT MSG='Transfer IDTU value: %_CAT_IDTU%'
 ```
 
 ```
@@ -16,161 +16,161 @@ Variable
 
 Description
 
-\_CAT\_CFTV
+_CAT_CFTV
 Catalog version.
-\_CAT\_COMMENT
+_CAT_COMMENT
 Comment associated with the IDF.
-\_CAT\_DATEB
+_CAT_DATEB
 Transfer start date.
-\_CAT\_DATEC
+_CAT_DATEC
 IDF cycledate value.
-\_CAT\_DATED
+_CAT_DATED
 Transfer filing date.
-\_CAT\_DATED
+_CAT_DATED
 End of transfer date.
-\_CAT\_DATEK
+_CAT_DATEK
 Date of last writing.
-\_CAT\_DATEM
+_CAT_DATEM
 Value of the IDF MINDATE parameter.
-\_CAT\_DATEMAX
+_CAT_DATEMAX
 Value of the IDF MAXDATE parameter.
-\_CAT\_DEST
+_CAT_DEST
 CFTDEST command identifier.
-\_CAT\_DIAGC
+_CAT_DIAGC
 Additional diagnostic value.
-\_CAT\_DIAGI
+_CAT_DIAGI
 Internal diagnostic value.
-\_CAT\_DIAGP
+_CAT_DIAGP
 Diagnostic protocol value.
-\_CAT\_DIFTYP
+_CAT_DIFTYP
 Broadcast type:
 
 -   L for broadcasting to
     multiple partners.
 -   N for sending to a single partner.
 
-\_CAT\_DIRECT
+_CAT_DIRECT
 Transfer direction.
-\_CAT\_EXEC
+_CAT_EXEC
 IDF procedure name.
-\_CAT\_FACTION
+_CAT_FACTION
 FACTION parameter value.
-\_CAT\_FCOMP
+_CAT_FCOMP
 FCOMP parameter value.
-\_CAT\_FDISP
+_CAT_FDISP
 FDISP parameter value.
-\_CAT\_FILTYP
+_CAT_FILTYP
 File type:
 
 -   L for file list.
 -   N for normal file.
 
-\_CAT\_FLAG
+_CAT_FLAG
 Indicates if the transfer mode is REQUESTER or SERVER.
-\_CAT\_FNAME
+_CAT_FNAME
 Name of file to be transferred.
-\_CAT\_FTNAME
+_CAT_FTNAME
 Temporary file name.
-\_CAT\_GROUP
+_CAT_GROUP
 Name of the group initiating the request.
-\_CAT\_GROUPID
-Name of the group that the transfer owner belongs to.
-\_CAT\_IDA
+_CAT_GROUPID
+Name of the group that the transfer owner  belongs to.
+_CAT_IDA
 Application identifier.
-\_CAT\_IDEXIT
+_CAT_IDEXIT
 CFTEXIT command file type identifier.
-\_CAT\_IDEXITA
+_CAT_IDEXITA
 CFTEXIT command directory type identifier.
-\_CAT\_IDEXITE
+_CAT_IDEXITE
 CFTEXIT command ETEBAC3 type identifier.
-\_CAT\_IDF
+_CAT_IDF
 Identifier associated with the IDF.
-\_CAT\_IDR
+_CAT_IDR
 IDR value.
-\_CAT\_IDT
+_CAT_IDT
 PROTC value.
-\_CAT\_IDTD
+_CAT_IDTD
 IDT value.
-\_CAT\_IDTU
+_CAT_IDTU
 IDTU value.
-\_CAT\_IPART
+_CAT_IPART
 Channel partner value.
-\_CAT\_JOBNAME
+_CAT_JOBNAME
 Name of the task for which the transfer was created.
-\_CAT\_NCOMP
+_CAT_NCOMP
 Network compression value.
-\_CAT\_NFNAME
+_CAT_NFNAME
 Network filename.
-\_CAT\_NIDF
+_CAT_NIDF
 Network IDF value.
-\_CAT\_NPART
+_CAT_NPART
 Connection partner value.
-\_CAT\_ORIGIN
+_CAT_ORIGIN
 Origin of owner of the transfer.
-\_CAT\_PARM
+_CAT_PARM
 PARM parameter value.
-\_CAT\_PART
+_CAT_PART
 PART value.
-\_CAT\_PIDF
+_CAT_PIDF
 The previous value of the file ID.
-\_CAT\_PRI
+_CAT_PRI
 Transfer priority.
-\_CAT\_PROT
+_CAT_PROT
 Associated CFTPROT identifier.
-\_CAT\_PROTC
+_CAT_PROTC
 PROTC value.
-\_CAT\_RAPPL
+_CAT_RAPPL
 RAPPL parameter value.
-\_CAT\_RELANCE
+_CAT_RELANCE
 Indicates if there was a restart or not.
-\_CAT\_REQGROUP
+_CAT_REQGROUP
 Value of the initiator group for the command.
-\_CAT\_REQUSER
+_CAT_REQUSER
 Value of the user initiating the command.
-\_CAT\_RPART
+_CAT_RPART
 File receiving partner.
-\_CAT\_RUSER
+_CAT_RUSER
 RUSER parameter value.
-\_CAT\_SAPPL
+_CAT_SAPPL
 SAPPL parameter value.
-\_CAT\_SGD
+_CAT_SGD
 Date
-\_CAT\_SGT
+_CAT_SGT
 Time
-\_CAT\_SPART
+_CAT_SPART
 SPART parameter value.
-\_CAT\_STATE
+_CAT_STATE
 State of the local transfer.
-\_CAT\_STATED
+_CAT_STATED
 State of the remote transfer.
-\_CAT\_SUSER
+_CAT_SUSER
 SUSER parameter value.
-\_CAT\_TCYCLE
+_CAT_TCYCLE
 TCYCLE parameter value.
-\_CAT\_TIMEB
+_CAT_TIMEB
 Transfer start time.
-\_CAT\_TIMEC
+_CAT_TIMEC
 TCYCLE parameter value.
-\_CAT\_TIMED
+_CAT_TIMED
 Creation time of the transfer.
-\_CAT\_TIMEE
+_CAT_TIMEE
 Transfer end time.
-\_CAT\_TIMEK
+_CAT_TIMEK
 Time of last writing.
-\_CAT\_TIMEM
+_CAT_TIMEM
 MINTIME parameter value.
-\_CAT\_TIMEMAX
+_CAT_TIMEMAX
 MAXTIME parameter value.
-\_CAT\_TIMMAXC
+_CAT_TIMMAXC
 Maximum time for a call.
-\_CAT\_TIMMC
+_CAT_TIMMC
 Minimum time for a call.
-\_CAT\_TYP
+_CAT_TYP
 Transfer type.
-\_CAT\_USERID
+_CAT_USERID
 Transfer owner.
-\_CAT\_XLATE
+_CAT_XLATE
 Associated CFTXLATE identifier card.
-\_CAT\_FDBNAME
+_CAT_FDBNAME
 VFM name used for transfer.
 ```

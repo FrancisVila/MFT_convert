@@ -2,13 +2,13 @@
     "title": "Use the previous/next command ",
     "linkTitle": "Use previous/next command ",
     "weight": "190"
-}You can use the **Up/Down Arrow** keys as a shortcut to recall the previous or next command.
+}You can use the **Up/Down Arrow** keys as a shortcut to recall the  previous or next command.
 
 <span id="Partial"></span>
 
 ## Partial word recognition
 
-To retrieve a command you know, begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
+To retrieve a command you know,  begin by typing the first characters of the command. CFTUTIL returns only the commands starting with those characters. For example type LI and press **Tab**, the commands LISTCAT, LISTLOG, LISTCOM display. You can then use the **Up/Down Arrow** keys to scroll the list.
 
 <span id="Command-"></span>
 

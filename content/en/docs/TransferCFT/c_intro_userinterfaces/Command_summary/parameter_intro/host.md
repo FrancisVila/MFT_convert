@@ -10,7 +10,7 @@
 
 \[HOST = string64\]
 
-Networking IP address of the local resource. If you are defining a proxy, you may only enter one proxy host/port per CFTNET object.
+Networking IP address of the local resource. If you are defining a proxy, you may only enter one proxy host/port  per CFTNET object.
 
 You can enter up to 512 alphanumeric characters an address, which
 can be either:

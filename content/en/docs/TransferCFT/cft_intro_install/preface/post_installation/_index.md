@@ -17,10 +17,10 @@
 3.  *Optionally*, change the Transfer CFT Guardian process names *if you are performing multiple installations*. Because each Transfer CFT process is assigned a Guardian process name, these names should be globally unique.
 
 -   Use the  [cft.guardian.process\_name\_prefix](../intro_os_features/hp_ns_batch#cft.guardian.process_name_prefix) UCONF parameter as described in the UCONF parameters section.
--   Be certain to change this parameter's default value if you are running several Transfer CFT installations at the same time.
+-   Be certain to change this parameter's default value if you are running several Transfer CFT installations  at the same time.
 
 ```
-CFTUTIL uconfset id=cft.guardian.process\_name\_prefix,value=LB
+CFTUTIL uconfset id=cft.guardian.process_name_prefix,value=LB
 ```
 
 Start the Transfer CFT server:
@@ -38,6 +38,7 @@ If the ports are not available, modify the port(s) and re-apply the configuratio
 
 ```
 cftupdate $CFTDIRRUNTIME/conf/cft-tcp.conf
+                        
 ```
 
 Check that Transfer CFT server is started:

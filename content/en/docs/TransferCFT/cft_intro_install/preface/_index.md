@@ -4,7 +4,7 @@
     "weight": "130"
 }## Preface
 
-This document describes how to install Transfer CFT in a HP NonStop OSS environment.
+This document describes how to install Transfer CFT  in a HP NonStop OSS environment.
 
 ## About {{< TransferCFT/componentlongname  >}}
 
@@ -29,13 +29,13 @@ Others who may find parts of this guide useful include network or systems admini
 
 This guide explains how to perform a full installation of {{< TransferCFT/componentlongname  >}}. It also describes how to:
 
-**Introduction** – Describes any prerequisite software or requirements.
+**Introduction** – Describes  any prerequisite software or requirements.
 
 **Install** – Describes how to perform a complete install as well as apply a service pack.
 
 **Post installation** – Provides instructions on how to check if the installation was successful and set up {{< TransferCFT/componentshortname  >}}. Additionally it describes any tasks to perform before the administrator can log on to the product for initial configuration.
 
-**Migrate** – Involves a change in product version and involves a configuration change (migrate partner and parameter files).
+**Migrate** – Involves a change in product version and  involves a configuration change (migrate partner and parameter files).
 
 **Uninstall** – Describes how you can uninstall {{< TransferCFT/componentshortname  >}}.
 
@@ -43,7 +43,7 @@ This guide explains how to perform a full installation of {{< TransferCFT/compon
 
 Transfer CFT provides a complete set of documentation, covering all aspects of using the product. These documents include the following:
 
--   {{< TransferCFT/componentshortname >}} Release Notes
+-   {{< TransferCFT/componentshortname >}}   Release Notes
 -   {{< TransferCFT/platformorsuitelongname >}} Supported Platforms Guide
 
 > **Note:**
@@ -52,4 +52,4 @@ Transfer CFT provides a complete set of documentation, covering all aspects of u
 
 ## Support services
 
-The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit {{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.
+The {{< TransferCFT/companyname  >}} Global Support team provides worldwide 24 x 7 support, subject to validation of your license agreement. Email <support@axway.com> or, for your local support telephone number, visit  {{< TransferCFT/companyname  >}} Support at <a href="https://support.axway.com/" class="hyperlink">https://support.axway.com</a> and click **Contact Axway Support**.

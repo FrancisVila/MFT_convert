@@ -39,7 +39,7 @@ Transfer partner identifier.
 MESSAGE
 Characterizes a message send request.
 OPTIONAL PARAMETERS
-for [SEND](../send_command_basics)
+for  [SEND](../send_command_basics)
 The optional common parameters form the SEND subset, used for sending a message (but not applicable to files).
 ```
 

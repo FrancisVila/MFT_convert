@@ -14,7 +14,7 @@ The following characters are system-restricted characters:
 
 > **Note:**
 >
-> You can use the $ character on UNIX systems as an environment variable. To have a file created when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
+> You can use the $ character on UNIX systems as an environment variable. To have a file created  when the name includes one or more $ characters (without resolving the environment variable), see the UCONF cft.unix.throw\_error\_on\_envvar\_not\_found variable.
 
 ## Naming the local file to be sent FNAME=filename
 
@@ -55,7 +55,7 @@ used in FNAME except in the case of an implicit SEND command.
 The ‘&’ character used here replaces the char\_symb character specific
 to each operating system .
 
-Refer to the {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
+Refer to the  {{< TransferCFT/componentshortname  >}} *Installation and Operations Guide* that
 corresponds to your OS.
 
 ### Reconstitute a filename
@@ -192,13 +192,13 @@ is used.
 
 > **Note:**
 >
-> Refer to the table of platform-specific characters that corresponds to your operating system.
+> Refer to the table of platform-specific characters  that corresponds to your operating system.
 
 A catalog entry is created for each file. Each file is transferred in
 the same way as any other file.
 
 For more information, see [Broadcasting: Sending
-a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).
+a set of files with the same IDF in send mode](../../../concepts/transfer_command_overview/broadcast_collect).    
 
 Additionally, when sending a group of files:
 

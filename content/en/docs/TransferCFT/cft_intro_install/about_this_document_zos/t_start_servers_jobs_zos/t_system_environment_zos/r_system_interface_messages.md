@@ -12,7 +12,7 @@
 
 > **Note:**
 >
-> Certain OS specific messages that are auto-documented, CFDMnnx, CARMnnx, CCFTnnx, CFRNnnx, CFCAnnx, and CFTInnx, may not be detailed in this document. These messages are considered self-explanatory.
+> Certain OS specific messages that are auto-documented, CFDMnnx,  CARMnnx, CCFTnnx, CFRNnnx, CFCAnnx, and CFTInnx, may not be detailed in this document. These messages are considered self-explanatory.
 
 ## System interface message definitions
 

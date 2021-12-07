@@ -44,7 +44,7 @@ scswitch -F -g resource\_grp\[,...\]
 scstat \[-DWgnpqi\] \[-v\[v\]\]
 \[-h &lt;host>\]
 
-The following sections describe the commands necessary
+The following sections  describe the commands necessary
 to monitor, start, stop and switchover services. Refer to the Sun documentation
 and the "man" pages for additional details.
 

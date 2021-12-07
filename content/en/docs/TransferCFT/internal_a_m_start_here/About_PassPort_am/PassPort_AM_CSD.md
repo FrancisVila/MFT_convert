@@ -4,7 +4,7 @@
     "weight": "190"
 }This section describes how to configure access management when not using .
 
-The PassPort CSD file provides resources and available actions for Transfer CFT. This CSD file must be accessible on your file system.
+The PassPort CSD file provides resources and available actions for Transfer CFT. This CSD file  must be accessible on your file system.
 
 After installing Transfer CFT, access the CSD file at:
 

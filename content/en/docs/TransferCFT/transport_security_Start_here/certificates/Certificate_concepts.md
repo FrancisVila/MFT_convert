@@ -214,8 +214,8 @@ A commonly used file extension is pem.
 TLS certificates require the following key usages:
 
 -   A TLS CA certificate must have the **Certificate sign** key usage
--   A TLS server certificate must have the **Key encipherment** key usage
--   A TLS client certificate must have the **Digital signature** key usage
+-   A TLS server certificate  must have the **Key encipherment** key usage
+-   A TLS client certificate  must have the **Digital signature** key usage
 
 Where:
 

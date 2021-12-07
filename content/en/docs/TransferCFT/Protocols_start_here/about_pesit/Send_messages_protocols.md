@@ -5,12 +5,12 @@
 }This topic describes the concepts related to sending messages using
 PeSIT and Transfer CFT profiles.
 
--   Send free message as a new transfer: SEND TYPE=MESSAGE (for PeSIT and SFTP (only CFT/CFT) protocols)
--   Send positive acknowledgement as a response to a completed transfer: SEND TYPE=REPLY (for PeSIT , OFTP, and SFTP (CFT/CFT) protocols)
--   Send negative acknowledgement as a response to a completed transfer: SEND TYPE=NACK (for PeSIT (CFT/CFT) and SFTP (CFT/CFT) protocols)
+-   Send free message as a new transfer: SEND TYPE=MESSAGE   (for PeSIT and SFTP  (only CFT/CFT) protocols)
+-   Send positive acknowledgement  as a response to a completed transfer: SEND TYPE=REPLY (for PeSIT , OFTP, and SFTP (CFT/CFT) protocols)
+-   Send negative acknowledgement as a response to a completed transfer:  SEND TYPE=NACK  (for PeSIT (CFT/CFT) and SFTP (CFT/CFT) protocols)
 
 Two SEND command examples are provided
-below.
+  below.
 
 <span id="Sending_messages_in_PeSIT"></span>
 

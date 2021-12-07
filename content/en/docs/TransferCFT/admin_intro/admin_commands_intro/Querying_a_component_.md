@@ -9,11 +9,11 @@ You can use this command to check transfers that should have started but are blo
 
 The MQUERY command sends the requested internal information to display in the log.
 
-CFTUTIL command lets you list the allocation of {{< TransferCFT/transfercftname  >}} connections:
+CFTUTIL command lets you  list  the allocation of {{< TransferCFT/transfercftname  >}} connections:
 
 -   The connections by partners (IN,OUT and reserved in “retry”)
 -   The connections which are taken by protocols awaiting of FPDU.CONNECT (unknown partner)
--   The available connections
+-   The  available connections
 
 Global information:
 
@@ -30,7 +30,7 @@ Partner information is the same as global information but detailed for each part
 
 OBJECT = <u>CACHE</u>
 
-\[ CONTENT = { BRIEF | FULL | STAT } \]
+\[ CONTENT  = { BRIEF | FULL | STAT } \]
 
 \[ NAME = { CAT | COMMAND | CRON | DMZ | STAT } \]
 
@@ -38,7 +38,7 @@ OBJECT = <u>CACHE</u>
 
 OBJECT = SYSTEM
 
-\[ CONTENT = { BRIEF | FULL | STAT } \]
+\[ CONTENT  = { BRIEF | FULL | STAT } \]
 
 \[ NAME = { CFTMAIN | CFTTRK | CFTTFIL | CFTCOM | CFTTPRO | CFTEXIT | CFTPRX | CFTDSCAN } \]
 
@@ -46,7 +46,7 @@ OBJECT = SYSTEM
 
 OBJECT = STATS or PROBE
 
-\[ CONTENT = {
+\[  CONTENT = {
 | XMLFULL | RAW } \]
 
 \[ NAME = {
@@ -64,29 +64,29 @@ OBJECT = STATS or PROBE
 
 #### Querying the catalog cache
 
-Use this command to check that transfers are not blocked by, for example, a time\_locked or partner\_locked issues.
+Use this command to check that transfers are not blocked by, for example,  a time\_locked or partner\_locked issues.
 
 ```
 MQUERY NAME=CAT,CONTENT=FULL
 listlog
 =========================== TRANSFERS ======================================
-pri minTime minDate reqTime reqDate cat\_blk part
+pri    minTime    minDate    reqTime    reqDate    cat_blk part
 ============================================================================
-Transfers\_Non\_Ready : 0
-Transfers\_Ready : 0 ( 0 Partners )
-Transfers\_Time\_\_Locked : 2 ( 1 Partners )
-128 11:49:12 TODAY 11:49:12 TODAY 1780 PART1
-128 11:49:14 TODAY 11:49:31 TODAY 1781 PART1
-Transfers\_State\_Locked : 0 ( 0 Partners )
+Transfers_Non_Ready    : 0
+Transfers_Ready        : 0 ( 0 Partners )
+Transfers_Time__Locked : 2 ( 1 Partners )
+128   11:49:12      TODAY   11:49:12      TODAY 1780 PART1
+128   11:49:14      TODAY   11:49:31      TODAY 1781 PART1
+Transfers_State_Locked : 0 ( 0 Partners )
 ======================== PARTNERS =====================================
-name count state locked diag diagp minTime minDate
+name     count state locked diag    diagp    minTime    minDate
 =======================================================================
-Partners : 1
-PART1 2 TLCK 2 302 L 02 045 11:55:38 TODAY
-Partners\_Ready : 0
-Partners\_Time\_\_Locked : 1
-PART1 2 TLCK 2 302 L 02 045 11:55:38 TODAY
-Partners\_State\_Locked : 0
+Partners               : 1
+PART1      2  TLCK      2  302 L 02 045   11:55:38      TODAY
+Partners_Ready         : 0
+Partners_Time__Locked  : 1
+PART1     2  TLCK      2  302 L 02 045   11:55:38      TODAY
+Partners_State_Locked  : 0
 MQUERY Treated for USER AXWAY\\ls
 ```
 
@@ -97,23 +97,23 @@ Check scheduled internal commands, more specifically the switch and purge comman
 ```
 MQUERY NAME=COMMAND,CONTENT=FULL
 listlog
-CFTI24I \*\*\* 3 COMMAND(S) INTO CACHE
-CFTI24I \*\*\* DATE=28/01/2018 TIME= 18:48:00.00 SWITCH LOG
-CFTI24I \*\*\* DATE=29/01/2018 TIME= 00:05:00.00 PURGE
-CFTI24I \*\*\* DATE=29/01/2018 TIME= 10:57:00.00 SWITCH ACCNT -
-CFTR12I MQUERY Treated for USER userid
+CFTI24I  \*\*\* 3 COMMAND(S) INTO CACHE
+CFTI24I  \*\*\* DATE=28/01/2018 TIME= 18:48:00.00 SWITCH LOG
+CFTI24I  \*\*\* DATE=29/01/2018 TIME= 00:05:00.00 PURGE
+CFTI24I  \*\*\* DATE=29/01/2018 TIME= 10:57:00.00 SWITCH ACCNT -
+CFTR12I MQUERY  Treated for USER userid
 ```
 
-### Displaying internal technical statistics for advanced diagnostic purposes
+### Displaying  internal technical statistics for advanced diagnostic purposes
 
-You can use this command when troubleshooting issues, and provide this output when contacting Axway support. One example is if you encounter an issue with memory usage.
+You can use this command  when troubleshooting issues, and provide this output when contacting Axway support. One example is if you encounter an issue with memory usage.
 
 ```
 MQUERY OBJECT=STATS
-CFTI24I CFTMAIN CFTMAIN\_TRANSFER\_SERVER\_604800=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-CFTI24I CFTMAIN probe.cftmain\_transfers\_activated=0
-CFTI24I CFTMAIN CFTMAIN\_TRANSFERS\_ACTIVATED\_1=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-CFTI24I CFTMAIN CFTMAIN\_TRANSFERS\_ACTIVATED\_10=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CFTI24I CFTMAIN CFTMAIN_TRANSFER_SERVER_604800=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CFTI24I CFTMAIN probe.cftmain_transfers_activated=0
+CFTI24I CFTMAIN CFTMAIN_TRANSFERS_ACTIVATED_1=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+CFTI24I CFTMAIN CFTMAIN_TRANSFERS_ACTIVATED_10=0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ```
 
 ### Output raw data to troubleshoot performance
@@ -122,5 +122,5 @@ This command provides statistical information, for example to troubleshoot perfo
 
 ```
 MQUERY OBJECT=PROBE, CONTENT=RAW
-CFTI24I CFTMAIN probe.cftmain\_transfers\_activated=50
+CFTI24I CFTMAIN probe.cftmain_transfers_activated=50
 ```

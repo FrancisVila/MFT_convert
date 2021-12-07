@@ -2,7 +2,7 @@
     "title": "CFTPRIV",
     "linkTitle": "Privileges - CFTPRIV",
     "weight": "260"
-}Use this procedure to view a list of privileges and descriptions and perform related tasks in the user interface. See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
+}Use this procedure to view a list of  privileges and descriptions and perform related tasks in the user interface.  See also <a href="../../../../internal_a_m_start_here/fm_access_management" class="MCXref xref">Access Management using Flow Manager</a>
 
 ### Using CFTPRIV
 
@@ -38,7 +38,7 @@ Conditions allow you to assign finer control on resources and actions by specify
 
 Examples
 
-In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators `&&` (AND) and `||` (OR).
+In these examples `PART `and `ID `are properties of the resource being checked. As you can see, you can use parenthesis and logical operators  `&&` (AND) and `||` (OR).
 
 ```
 PART=="PARIS" && ID=="IDFDEF"

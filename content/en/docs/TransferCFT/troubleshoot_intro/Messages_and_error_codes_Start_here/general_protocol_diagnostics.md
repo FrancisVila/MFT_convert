@@ -12,11 +12,11 @@ DIAGP Formats
 
 ```
 
-Format
-</th>
+                            Format
+                        </th>
 
-Meaning
-</th>
+                            Meaning
+                        </th>
 
 XXXXXXXX
 Mnemonic code
@@ -56,14 +56,14 @@ Protocol
 
 Meaning
 
-ABOI\_CD
+ABOI_CD
 ODETTE
 CD send following reception of an ABORT indication (case
 of a RECV IDF=\* command)
 ABORT
  
 {{< TransferCFT/componentshortname >}} transfer abort request
-ABORT\_I
+ABORT_I
 ODETTE
 ABORT caused by the protocol engine, following detection
 of an error
@@ -74,15 +74,15 @@ Call not made within the authorized call period (see OMINTIME/OMAXTIME
 CATUPDT
  
 Catalog update error (at sync point)
-CD\_ODT
+CD_ODT
 ODETTE
 (information) Indication of a "generic" entry
 for file reception
-CLOSE\_RN
+CLOSE_RN
 ODETTE
 Reception of a "negative CLOSE RESP" interaction
 from the file access task: error closing the file sent
-CREA\_RN
+CREA_RN
 ODETTE
 Reception of a "negative CREATE RESP" interaction
 from the file access task: error creating the receive file
@@ -112,11 +112,11 @@ DIFFUS
  
 Indication of a "generic" entry for file broadcasting.
 This entry does not correspond to an actual transfer
-DSEL\_CN
+DSEL_CN
 ODETTE
 Reception of a "negative DSELECT RESP" interaction
 from the file access task: error deselecting the sent file
-END\_TFIL
+END_TFIL
 ODETTE
 Sending of a "RELEASE IND" interaction to the
 file access task in order to stop the task (information)
@@ -131,16 +131,16 @@ ERR LREC
  
 Error sending or receiving the file data. {{< TransferCFT/componentshortname >}} detects an
 invalid length for the data read or to be written
-ERR\_NCAR
+ERR_NCAR
  
 Error in the number of characters sent
-ERR\_NREC
+ERR_NREC
  
 Error in the number of records
 ERRPROT
  
 Protocol error when switching directions
-ERR\_UFMT
+ERR_UFMT
 ODETTE
 Internal error when deformatting the received FPDU
 EVT
@@ -165,7 +165,7 @@ Waiting for a response from the directory EXIT task
 EXIT
  
 EXIT task initialization problem
-FCON\_RN
+FCON_RN
 ODETTE
 Session parameter negotiation error, implying a connection
 rejection
@@ -182,10 +182,10 @@ Transfer refused due to partner inactivity
 INV XFER
  
 Message transfer unauthorized with this protocol
-LDT\_TXT
+LDT_TXT
  
 Rusize is greater than MAXRUSIZE in "T"
-LIST\_FI
+LIST_FI
  
 Indication of a "generic" entry for the file
 list. This entry does not correspond to an actual transfer.
@@ -199,7 +199,7 @@ The number of connection(s) for the resource (MAXCNX parameter
 of the CFTNET command) has already been reached
 MAXCV
  
-The number of connection(s) for the partner has already been reached
+The number of connection(s) for the partner  has already been reached
 MAXRETRY
  
 Maximum number of retries exceeded (see the RETRY\* parameters)
@@ -225,10 +225,10 @@ MON CYC
  
 Indication of a "generic" entry for cyclic transfers
 (months). This entry does not correspond to an actual transfer.
-MSG\_NOAU
+MSG_NOAU
  
 EERP send not authorized
-MSG\_RN
+MSG_RN
 ODETTE
 The EERP message has not been acknowledged by the partner
 MYSELF
@@ -280,7 +280,7 @@ NOSELECT
  
 With the PeSIT protocol, SIT profile, the file selection
 request (RECV command) is not authorized
-NO\_FILE
+NO_FILE
 ODETTE
 There are no more files to be sent (information)
 NPART
@@ -288,7 +288,7 @@ NPART
 REQUESTER
 partner mismatch with SERVER partner in SIT profile. Strict naming and
 consistency rules are imposed both by {{< TransferCFT/componentshortname >}} and by the PESIT standard.
-N\_REL\_I
+N_REL_I
 ODETTE
 Reception of a network outage indication
 OPER
@@ -318,7 +318,7 @@ RTO
  
 {{< TransferCFT/componentshortname >}} time-out during the transfer phase. This time-out
 corresponds to the RTO parameter of the CFTPROT command
-R\_PASSW
+R_PASSW
 ODETTE
 The password given by the partner does not correspond to
 the parameter settings (CFTPART command).
@@ -346,7 +346,7 @@ TIMEOUT
 Monitoring time-out during the connection phase, due particularly
 to a missing response to a pre-connection (LOGON) string or a CONNECT
 FPDU. With the SIT profile, there is no pre-connection phase
-TSK\_EXIT
+TSK_EXIT
  
 Error initializing a file EXIT task.
 VRESID
@@ -400,7 +400,7 @@ specific to the network or system access software.
 
 They are the "CS" or "NCS" codes.
 
-Refer to
+Refer to  
 the manufacturer's documentation (system code or network codes, depending
 on the type of occurrence).
 

@@ -9,7 +9,7 @@
 <td><h2 id="for-new-users">For new users</h2>
 <p><a href="overview_intro/about_transfer_cft">About {{&lt; TransferCFT/componentshortname &gt;}}</a></p>
 <p><a href="overview_intro/c_cg_concepts" >What are governance services?</a></p>
-<p><a href="c_intro_userinterfaces/about_cftutil">Use command line</a></p>
+<p><a href="c_intro_userinterfaces/about_cftutil">Use  command line</a></p>
 <p><a href="admin_intro/start_stop_cft">Basic administrative tasks</a></p>
 <p><a href="gettingstarted_intro/my_first_transfer_flow_using_cg" >My first transfer flow</a></p>
 <p><a href="gettingstarted_intro/my_first_file_transfer" >My first file transfer (CL)</a></p>
@@ -249,7 +249,7 @@
 <tr  data-mc-conditions="">
 <td colspan="6"  ><p><sup>1</sup>Enabled for all UNIX except SCO, UnixWare, IRIX, Tru64.</p>
 <p><sup>2</sup> Enabled only for Linux-x86-32, Linux-x86-64, Linux-ia64-64.</p>
-<p><sup>3</sup>Enabled for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
+<p><sup>3</sup>Enabled   for versions 3.0.1 to 3.3.2 on Windows 32-bit systems. As of Transfer CFT 3.4, Trusted File is supported on Windows 64-bit systems.</p>
 <p><sup>4</sup>Limited to USS (z/OS) and IFS (IBM i) systems. On IBM i, native files folder monitoring is available for Transfer CFT 3.3.2 SP2 and higher.</p>
 <p><sup>5</sup>Available on AIX, HPUX ia64, Linux, Solaris, Windows</p>
 <p><sup>6</sup>For UNIX type files only</p></td>
@@ -312,13 +312,13 @@ specify a new directory. A runtime directory will be created if it does not alre
 <td >multinode_hostname</td>
 <td >@automatic</td>
 <td ><p>When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.</p>
-<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost".</p></td>
+<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net"  would be shortened to "myhost".</p></td>
 <td >cft.multi_node.hostnames</td>
 </tr>
 <tr >
 <td >multinode_host_address</td>
 <td >@automatic</td>
-<td ><p>If you do not specify a value, the machine's FQDN address is used.</p>
+<td ><p>If you do not specify a value, the machine's FQDN address is  used.</p>
 <p>Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network.</p></td>
 <td >cft.multi_node.hostnames.&lt;hostname&gt;.host</td>
 </tr>
@@ -350,7 +350,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 </tr>
 <tr >
 <td ><p>CryptoKey_Key_File</p></td>
-<td >@default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
+<td >  @default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
 <td >Location that stores the generated key file.</td>
 <td >crypto.key_fname     </td>
 </tr>
@@ -367,7 +367,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 <tr >
 <td ><p>Key</p></td>
 <td > </td>
-<td ><p>Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.</p>
+<td ><p>  Key for Transfer CFT. The key is stored in the $CFTDIRRUNTIME/conf/cft.key.</p>
 <p>Without the key you can install, but not start the product.</p></td>
 <td > </td>
 </tr>
@@ -408,7 +408,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 <td >@default = 1766</td>
 <td ><p>Sets the port number for the Transfer CFT Copilot server that listens for</p>
 <p>incoming unsecured and secured (SSL) connections.</p>
-<p>The same port number is used for the Graphical User Interface and Webservices</p>
+<p>The same port number is used for the Graphical User Interface  and Webservices</p>
 <p>with or without SSL.</p></td>
 <td >copilot.general.serverport</td>
 </tr>
@@ -476,7 +476,7 @@ Only used by the Governance.</td>
 <td >cft.multi_node.enable</td>
 </tr>
 <tr >
-<td >Multinode_Number</td>
+<td >Multinode_Number  </td>
 <td >@default = 2</td>
 <td >Enter the number of nodes.</td>
 <td >cft.multi_node.nodes</td>
@@ -502,7 +502,7 @@ balancer to connect to the Transfer CFT Copilot server.</td>
 <td colspan="4" ><strong>Central Governance</strong></td>
 </tr>
 <tr >
-<td ><p>CG_Enable</p></td>
+<td ><p>   CG_Enable</p></td>
 <td ><p>@default = No</p></td>
 <td >Enter Yes to enable Central Governance connectivity.</td>
 <td >cg.enable</td>
@@ -518,7 +518,7 @@ balancer to connect to the Transfer CFT Copilot server.</td>
 <td ><p>CG_Port</p></td>
 <td >@default = 12553</td>
 <td ><p>Central Governance port.</p>
-<p>When CG is enabled, this cannot be empty.</p></td>
+<p>  When CG is enabled, this cannot be empty.</p></td>
 <td >cg.port</td>
 </tr>
 <tr >
@@ -530,7 +530,7 @@ balancer to connect to the Transfer CFT Copilot server.</td>
 </tr>
 <tr >
 <td >CG_RestAPI_Port</td>
-<td >@default = 8081</td>
+<td >@default  = 8081</td>
 <td ><p>Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).</p>
 <p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
 <td >cg.restapi_port</td>
@@ -543,7 +543,7 @@ balancer to connect to the Transfer CFT Copilot server.</td>
 <td >cg.shared_secret</td>
 </tr>
 <tr >
-<td >CG_ConfigurationPolicy</td>
+<td >CG_ConfigurationPolicy  </td>
 <td > </td>
 <td >Specify Central Governance configuration policy to apply on the Transfer CFT
 instance.</td>
@@ -671,13 +671,13 @@ specify a new directory. A runtime directory will be created if it does not alre
 <td >multinode_hostname</td>
 <td >@automatic</td>
 <td ><p>When not defined, this field is filled with the hostname of the machine where you are installing {{&lt; TransferCFT/transfercftname &gt;}}, whether it is the first host or an additional host.</p>
-<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net" would be shortened to "myhost".</p></td>
+<p>If the hostname contains a "." period, the value used consists of the name of the host preceding the first period. For example, "myhost.fqdn.net"  would be shortened to "myhost".</p></td>
 <td >cft.multi_node.hostnames</td>
 </tr>
 <tr >
 <td >multinode_host_address</td>
 <td >@automatic</td>
-<td ><p>If you do not specify a value, the machine's FQDN address is used.</p>
+<td ><p>If you do not specify a value, the machine's FQDN address is  used.</p>
 <p>Note that if there is an error in the machine's configuration, the value taken could be incorrect. Be sure to check that you can ping the address, and that it is the value for the cluster network.</p></td>
 <td >cft.multi_node.hostnames.&lt;hostname&gt;.host</td>
 </tr>
@@ -709,7 +709,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 </tr>
 <tr >
 <td ><p>CryptoKey_Key_File</p></td>
-<td >@default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
+<td >  @default = $CFTDIRRUNTIME/data/crypto/crypkey</td>
 <td >Location that stores the generated key file.</td>
 <td >crypto.key_fname     </td>
 </tr>
@@ -726,7 +726,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 <tr >
 <td ><p>Key</p></td>
 <td > </td>
-<td ><p>Enter the license key for the Transfer CFT product.</p>
+<td ><p>  Enter the license key for the Transfer CFT product.</p>
 <p>The key is stored in the $CFTDIRRUNTIME/conf/cft.key.</p>
 <p><em>Without the key you can install, but not start the product.</em></p></td>
 <td > </td>
@@ -768,7 +768,7 @@ specify a new directory. A runtime directory will be created if it does not alre
 <td >@default = 1766</td>
 <td ><p>Sets the port number for the Transfer CFT Copilot server that listens for</p>
 <p>incoming unsecured and secured (SSL) connections.</p>
-<p>The same port number is used for the Graphical User Interface and Web Services</p>
+<p>The same port number is used for the Graphical User Interface  and Web Services</p>
 <p>with or without SSL.</p></td>
 <td >copilot.general.serverport</td>
 </tr>
@@ -835,7 +835,7 @@ Only used by the Governance.</td>
 <td >cft.multi_node.enable</td>
 </tr>
 <tr >
-<td >Multinode_Number</td>
+<td >Multinode_Number  </td>
 <td >@default = 2</td>
 <td >Enter the number of nodes.</td>
 <td >cft.multi_node.nodes</td>
@@ -861,7 +861,7 @@ balancer to connect to the Transfer CFT Copilot server.</p></td>
 <td colspan="4" ><strong>Central Governance</strong></td>
 </tr>
 <tr >
-<td ><p>CG_Enable</p></td>
+<td ><p>   CG_Enable</p></td>
 <td ><p>@default = No</p></td>
 <td >Enter Yes to enable Central Governance connectivity.</td>
 <td >cg.enable</td>
@@ -889,7 +889,7 @@ balancer to connect to the Transfer CFT Copilot server.</p></td>
 </tr>
 <tr >
 <td >CG_RestAPI_Port</td>
-<td >@default = 8081</td>
+<td >@default  = 8081</td>
 <td ><p>Specify the port to use to communicate with Central Governance's REST API (this port is only used when am.type=cg).</p>
 <p>If you enabled {{&lt; TransferCFT/centralgovernancename &gt;}}, you must complete this field.</p></td>
 <td >cg.restapi_port</td>
@@ -902,7 +902,7 @@ balancer to connect to the Transfer CFT Copilot server.</p></td>
 <td >cg.shared_secret</td>
 </tr>
 <tr >
-<td >CG_ConfigurationPolicy</td>
+<td >CG_ConfigurationPolicy  </td>
 <td > </td>
 <td >Specify Central Governance configuration policy to apply to the Transfer CFT
 instance.</td>
@@ -1013,7 +1013,7 @@ CFTUI_ServiceDisplayName</td>
 <td ><p>@default= Transfer_CFT_UI</p>
 <p>@default= AMPLIFY Transfer CFT UI</p></td>
 <td ><p>Transfer CFT UI Server Service name.</p>
-<p>You cannot have spaces in the CFTUI_ServiceName.</p></td>
+<p>You cannot have spaces in the  CFTUI_ServiceName.</p></td>
 <td >copilot.nt.service_name</td>
 </tr>
 <tr >
@@ -1093,7 +1093,7 @@ CFTUI_ServicePassword</td>
 <tr >
 <td >Installation Directory</td>
 <td >Specify the directory where you want to install Transfer
-CFT. This is the directory where the Transfer CFT product files are installed.</td>
+CFT. This is the directory where the Transfer CFT product files  are installed.</td>
 </tr>
 <tr >
 <td >Configuration filename</td>
@@ -1143,14 +1143,14 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <td >2</td>
 <td ><p>Assemble and link-edit SGINSTAL for Transfer CFT z/OS options.</p>
 <p>Non-SMP/E installation mode.
-&lt;/p&gt;</p></td>
+                        &lt;/p&gt;</p></td>
 <td >A12AOPTS</td>
 </tr>
 <tr >
 <td >3</td>
 <td ><p>Link-edit all Transfer CFT modules.</p>
 <p>Non-SMP/E installation mode.
-&lt;/p&gt;</p></td>
+                        &lt;/p&gt;</p></td>
 <td >B20LINK</td>
 </tr>
 <tr >
@@ -1167,12 +1167,12 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <ul>
 <li>Sets the uconf variables:
 <ul>
-<li>cft.runtime_dir</li>
-<li>cft.listcat_compat</li>
-<li>cft.state_compat</li>
+<li>          cft.runtime_dir</li>
+<li>          cft.listcat_compat</li>
+<li>          cft.state_compat</li>
 </ul></li>
 <li>Generates the SAMPLE(CFTPARM) parameter sample from the SAMPLE(ZCFTPARM) template</li>
-<li>Generates the SFTP SAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
+<li>Generates the SFTP  SAMPLE(CFTSFTP) parameter sample from the  SAMPLE(ZCFTSFTP) template</li>
 </ul></td>
 <td >CFT$SET</td>
 </tr>
@@ -1187,7 +1187,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 </tr>
 <tr >
 <td >6</td>
-<td ><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file), account).</p></td>
+<td ><p>Create Transfer CFT files (Parm, Part, Catalog, Com(file),       account).</p></td>
 <td >D40INIT</td>
 </tr>
 <tr >
@@ -1211,33 +1211,33 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 </tr>
 <tr >
 <td >11</td>
-<td ><p>If pkitype=system: Enable the PKI system.</p></td>
+<td ><p>If pkitype=system:   Enable the PKI system.                          </p></td>
 <td >D47SYST</td>
 </tr>
 <tr >
-<td colspan="2" >  Central Governance</td>
+<td colspan="2" >   Central Governance</td>
 <td > </td>
 </tr>
 <tr >
 <td >15</td>
 <td ><p>If cgenable=yes:</p>
-<p>Create the Axway Demonstration Root Certificate.</p></td>
+<p>       Create the Axway Demonstration Root Certificate.</p></td>
 <td >CFTCGPKI</td>
 </tr>
 <tr >
 <td >16</td>
 <td ><p>If cgenable=yes:</p>
-<p>Transfer CFT to registration.</p></td>
+<p>         Transfer CFT to registration.                          </p></td>
 <td >CFTCGREG</td>
 </tr>
 <tr >
-<td colspan="2" >  Sentinel</td>
+<td colspan="2" >   Sentinel</td>
 <td > </td>
 </tr>
 <tr >
 <td >20</td>
 <td >If snenable = yes:
-<p>Sentinel parameters are activated (TCP configuration).</p>
+<p>         Sentinel parameters are activated (TCP configuration).</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>This JCL does not create Sentinel tracker logstream.</p>
@@ -1251,7 +1251,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <td >SN10CLGR</td>
 </tr>
 <tr >
-<td colspan="2" >  Copilot</td>
+<td colspan="2" >   Copilot</td>
 <td > </td>
 </tr>
 <tr >
@@ -1272,25 +1272,25 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <td >RESTCFG</td>
 </tr>
 <tr >
-<td colspan="2" >  Secure Relay</td>
+<td colspan="2" >   Secure Relay</td>
 <td > </td>
 </tr>
 <tr >
 <td >40</td>
 <td ><p>If Secure Relay is enabled:</p>
-<p>Install on USS environment, the files for Secure Relay Master Agent.</p></td>
+<p>         Install on USS environment, the files for Secure Relay Master Agent.</p></td>
 <td >XSRA010</td>
 </tr>
 <tr >
 <td >41</td>
 <td ><p>If Secure Relay enabled:</p>
-<p>Create the runtime directory for the Transfer CFT Secure Relay Master Agent.</p></td>
+<p>         Create the runtime directory for the Transfer CFT          Secure Relay Master Agent.</p></td>
 <td >XSRA015</td>
 </tr>
 <tr >
 <td >42</td>
 <td ><p>If Secure Relay is enabled:</p>
-<p>Updating Secure Relay parameters (UCONF)</p></td>
+<p>         Updating Secure Relay parameters (UCONF)</p></td>
 <td >XSRA020</td>
 </tr>
 <tr >
@@ -1299,13 +1299,13 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <td >CFTSAML</td>
 </tr>
 <tr >
-<td colspan="2" >  Optional steps</td>
+<td colspan="2" >   Optional steps</td>
 <td > </td>
 </tr>
 <tr >
 <td >50</td>
 <td ><p>Exits and API(s) samples compilation (ASM, C and COBOL).</p>
-<p>For COBOL, C: variable LNGPRFX must be customized (I91APICP).</p></td>
+<p>      For COBOL, C: variable LNGPRFX must be customized (I91APICP).</p></td>
 <td >I91APICP</td>
 </tr>
 <tr >
@@ -1349,7 +1349,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <tr >
 <td >2</td>
 <td ><p><a href="../installation_parameters_to_customize">A00CUSTO</a></p></td>
-<td ><p>Customize JOBs installation</p></td>
+<td ><p>Customize  JOBs installation</p></td>
 </tr>
 <tr >
 <td >3</td>
@@ -1363,7 +1363,7 @@ CFT. This is the directory where the Transfer CFT product files are installed.<
 <p><em>Optional step</em></p></td>
 </tr>
 <tr >
-<td colspan="3" >After performing Steps 1 -4, you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.</td>
+<td colspan="3" >After performing  Steps 1 -4,  you can either continue with the following step-by-step instructions, or start the JOB A05ALL, which uses the customized settings in the A03PARM file to run.</td>
 </tr>
 <tr >
 <td >5</td>
@@ -1869,7 +1869,7 @@ code</p></th>
 <td ><p> </p></td>
 <td ><p>Fixed indexed sequential</p></td>
 <td ><p>' '</p></td>
-<td ><p>F [1]</p></td>
+<td ><p>F  [1]</p></td>
 <td >IDX</td>
 </tr>
 </tbody>
@@ -1975,7 +1975,7 @@ code</p></th>
 <p> </p>
 <p> </p>
 <p> </p></td>
-<td  >From the {{&lt; TransferCFT/componentshortname &gt;}} (MainOffice), run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
+<td  >From the  {{&lt; TransferCFT/componentshortname &gt;}} (MainOffice),  run the following command: <code>CFTUTIL RECV PART=&lt;instance_source&gt;, IDF=flow03</code>
 <p>Remember in our example the source is Store_89, you should replace <code>&lt;instance_source&gt;</code> with the Transfer CFT instance as it appears in your applications.</p>
 <p> </p></td>
 <td ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
@@ -2010,7 +2010,7 @@ code</p></th>
 </p></td>
 <td  ><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
 <p>Create  a flow named <strong>Broadcast_flow</strong>, and give it the identifier <strong>flow04</strong>.</p>
-<p>In this flow the MainOffice is the Source with the two stores as the Targets.</p></td>
+<p>In this flow the  MainOffice is the Source with the two stores as the Targets.</p></td>
 <td  ><a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
 </tr>
 <tr >
@@ -2046,7 +2046,7 @@ code</p></th>
 <p> </p></td>
 <td  ><p>Execute the SEND command.</p>
 <p> </p></td>
-<td  ><p>From the source {{&lt; TransferCFT/componentshortname &gt;}}, run the following command:</p>
+<td  ><p>From the source {{&lt; TransferCFT/componentshortname &gt;}},  run the following command:</p>
 <p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>
 <p> </p></td>
 <td  ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
@@ -2078,7 +2078,7 @@ code</p></th>
 <td  ><p>Create a flow.</p>
 <p><br />
 </p></td>
-<td  ><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.</p>
+<td  ><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.  </p>
 <p>Use the Source as MainOffice and the stores as the Target.<br />
 </p></td>
 <td ><a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
@@ -2115,7 +2115,7 @@ code</p></th>
 <p> </p></td>
 <td  ><p>Run the RECV command.</p>
 <p> </p></td>
-<td  >In {{&lt; TransferCFT/componentshortname &gt;}}, run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
+<td  >In {{&lt; TransferCFT/componentshortname &gt;}},  run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
 <p> </p></td>
 <td ><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a></td>
 </tr>
@@ -2515,7 +2515,7 @@ entry.</p></td>
 </tr>
 <tr >
 <td ><a href="../../../command_summary/parameter_intro/datetimemax">DATETIMEMAX</a></td>
-<td >Use to display catalog transfers that happened on or before this end date and time according to the transfer record creation (DATEK, TIMEK).</td>
+<td >Use to display catalog transfers that happened  on or before this end date and time according to the transfer record creation (DATEK, TIMEK).</td>
 </tr>
 <tr >
 <td ><a href="../../../command_summary/parameter_intro/datetimemin">DATETIMEMIN</a></td>
@@ -2655,7 +2655,7 @@ according to the transfer direction) </p></td>
 <td  data-valign="top" width="26%">&amp;NSPART</td>
 <td  >24</td>
 <td  data-valign="top">Network identifier by which the
-local {{&lt; TransferCFT/componentshortname &gt;}} identifies itself to its partner</td>
+local  {{&lt; TransferCFT/componentshortname &gt;}} identifies itself to its partner</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;NRPART</td>
@@ -2769,7 +2769,7 @@ PeSIT E
 <td  data-valign="top" width="26%">&amp;APPSTATE</td>
 <td  >32</td>
 <td  data-valign="top">State step for the processing
-script to restart if relaunched</td>
+script to restart  if relaunched</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%"><p>&amp;NSUB </p></td>
@@ -2839,7 +2839,7 @@ REPLY, or NACK</p>
 <td  data-valign="top"><p>Code for the data sent over the network </p></td>
 </tr>
 <tr  data-valign="middle">
-<td  data-valign="top" width="26%">&amp;EXITFREE</td>
+<td  data-valign="top" width="26%">&amp;EXITFREE      </td>
 <td  >64</td>
 <td  data-valign="top">Free communication area between multiple exits</td>
 </tr>
@@ -2852,7 +2852,7 @@ REPLY, or NACK</p>
 <td  data-valign="top" width="26%">&amp;MODE</td>
 <td  >1</td>
 <td  data-valign="top"><p>Server mode = ‘S’ transfer</p>
-<p>Requester mode = ‘R’ transfer</p></td>
+<p>Requester mode =     ‘R’ transfer</p></td>
 </tr>
 <tr  data-valign="middle">
 <th rowspan="33"  data-valign="top" width="21%"><p>FILE</p></th>
@@ -2911,12 +2911,12 @@ site </p></td>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;FCHARSET</td>
 <td  >32</td>
-<td  data-valign="top">Local file encoding</td>
+<td  data-valign="top">Local file  encoding</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;NCHARSET</td>
 <td  >32</td>
-<td  data-valign="top">Destination file encoding for network data</td>
+<td  data-valign="top">Destination file encoding for network  data</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;WORKINGDIR</td>
@@ -3151,23 +3151,23 @@ site </p></td>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%"><p>&amp;TT </p></td>
 <td  >10</td>
-<td  data-valign="top"><p>Transmission duration in seconds (TIMES attribute in the {{&lt; TransferCFT/componentshortname &gt;}} catalog)</p></td>
+<td  data-valign="top"><p>Transmission duration in seconds (TIMES attribute in the  {{&lt; TransferCFT/componentshortname &gt;}} catalog)</p></td>
 </tr>
 <tr  data-valign="middle">
 <th rowspan="3"  data-valign="top" width="21%">CONTROL OUTPUT </th>
 <td  data-valign="top" width="26%"><p>&amp;FLOG </p></td>
 <td  >512</td>
-<td  data-valign="top"><p>Name of last log file used by {{&lt; TransferCFT/componentshortname &gt;}} </p></td>
+<td  data-valign="top"><p>Name of last log file used by  {{&lt; TransferCFT/componentshortname &gt;}} </p></td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%"><p>&amp;FACCNT </p></td>
 <td  >512</td>
-<td  data-valign="top"><p>Name of last statistics file used by {{&lt; TransferCFT/componentshortname &gt;}} </p></td>
+<td  data-valign="top"><p>Name of last statistics file used by  {{&lt; TransferCFT/componentshortname &gt;}} </p></td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%"><p>&amp;FCAT</p></td>
 <td  >512</td>
-<td  data-valign="top"><p>Name of catalog used by {{&lt; TransferCFT/componentshortname &gt;}}</p></td>
+<td  data-valign="top"><p>Name of catalog used by  {{&lt; TransferCFT/componentshortname &gt;}}</p></td>
 </tr>
 <tr  data-valign="middle">
 <th rowspan="2"  data-valign="top" width="21%"><p>TRACKING</p></th>
@@ -3261,17 +3261,17 @@ date </p></td>
 <p>ENVIRONMENT</p></th>
 <td  data-valign="top" width="26%"><p>&amp;CFTNAME</p></td>
 <td  >32</td>
-<td  data-valign="top"><p>Name of the {{&lt; TransferCFT/componentshortname &gt;}} (CFTPARM PART parameter)</p></td>
+<td  data-valign="top"><p>Name of the  {{&lt; TransferCFT/componentshortname &gt;}} (CFTPARM PART parameter)</p></td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%"><p>&amp;CFTEVENT</p></td>
 <td  >16</td>
-<td  data-valign="top"><p>The type of job submitted by {{&lt; TransferCFT/componentshortname &gt;}}, see (2) below</p></td>
+<td  data-valign="top"><p>The type of job submitted by  {{&lt; TransferCFT/componentshortname &gt;}}, see (2) below</p></td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;SJOBNAME</td>
 <td  >15</td>
-<td  data-valign="top">The {{&lt; TransferCFT/componentshortname &gt;}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)</td>
+<td  data-valign="top">The  {{&lt; TransferCFT/componentshortname &gt;}} jobname, which is the name of the job submitting the cronjob or exec procedure (z/OS)</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;CFTVERSION</td>
@@ -3291,17 +3291,17 @@ date </p></td>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;CFTTARGET</td>
 <td  >16</td>
-<td  data-valign="top">The Transfer CFT platform with additional details required for a support ticket, for example</td>
+<td  data-valign="top">The  Transfer CFT platform with additional details required for a support ticket, for example</td>
 </tr>
 <tr  data-valign="middle">
 <td  data-valign="top" width="26%">&amp;CFTHOSTOS</td>
 <td  >64</td>
-<td  data-valign="top">The Transfer CFT hostname</td>
+<td  data-valign="top">The  Transfer CFT hostname</td>
 </tr>
 <tr  data-valign="middle">
 <td >&amp;CFTHOSTMACHINE</td>
 <td   data-valign="top" width="26%">64</td>
-<td  >The machine processor name where Transfer CFT is running</td>
+<td  >The  machine processor name where Transfer CFT is running</td>
 </tr>
 </tbody>
 </table>
@@ -3900,11 +3900,11 @@ cft-6, cft-7 <strong>(1)</strong></li>
 <tbody>
 <tr >
 <td ><p>ipv6.disable_connect</p></td>
-<td ><p><strong>No</strong> indicates that an address or a name used by {{&lt; TransferCFT/componentshortname &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
+<td ><p><strong>No</strong> indicates that an address or a name used by  {{&lt; TransferCFT/componentshortname &gt;}} to connect to a host may be either an IPV4 or an IPV6 address. When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
 </tr>
 <tr >
 <td >ipv6.disable_listen</td>
-<td ><p><strong>No</strong> indicates that an address or name used by {{&lt; TransferCFT/componentshortname &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
+<td ><p><strong>No</strong> indicates that an address or name used by  {{&lt; TransferCFT/componentshortname &gt;}} to listen for incoming connections may be either an IPV4 or an IPV6 address.</p>
 <p>When using a name, this parameter can refer to a list of addresses, of any type.</p></td>
 </tr>
 <tr >
@@ -4045,7 +4045,7 @@ REPLY</strong></p></td>
 <td >This value is used to compute the nominal rate of outgoing data for this class of service. **</td>
 </tr>
 <tr >
-<td colspan="3" ><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong> for the class-of-service 0, as they cannot be used in this context. See <a href="#Concepts">Concepts.</a></p></td>
+<td colspan="3" ><p>** Do not configure the parameters <strong>weight_in</strong> and <strong>weight_out</strong>  for the class-of-service 0, as they cannot be used in this context. See  <a href="#Concepts">Concepts.</a></p></td>
 </tr>
 <tr >
 <td >uconf:cft.server.bandwidth.cos.&lt;cos-num&gt;.max_rate_out</td>
@@ -4078,10 +4078,10 @@ REPLY</strong></p></td>
 <td >User comment that describes the class-of-service</td>
 </tr>
 <tr >
-<td >uconf:cft.server.bandwidth.cos</td>
+<td >uconf:cft.server.bandwidth.cos    </td>
 <td  >1</td>
 <td >Total number of class-of-services including the
-class number zero.</td>
+                                     class number zero.</td>
 </tr>
 </tbody>
 </table>
@@ -4093,7 +4093,7 @@ class number zero.</td>
 <tbody>
 <tr  data-valign="top">
 <td  width="22.124%"><p>Description</p></td>
-<td colspan="2"  width="77.876%"><p>Use the ACT and INACT commands to activate or deactivate
+<td colspan="2"  width="77.876%"><p>Use the ACT and INACT commands  to activate or deactivate
 one or more certificates in the local database. If a root
 or intermediate authority certificate is deactivated, all dependent certificates
 (user or intermediate authorities) are automatically deactivated.</p>
@@ -4145,13 +4145,13 @@ In this case, the ID and ROOTCID parameters have the same value.</p></td>
 <tr >
 <td >ssl.certificates.ca_cert_bundle</td>
 <td >string</td>
-<td ><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
+<td ><p>Path to the CA certificate bundle. This path can point to either a file containing the CA certificates (for example, <code>/etc/ssl/certs/ca-certificates.crt</code>) or to a directory containing the CA certificates  (for example, <code>/etc/ssl/certs/</code>), which are stored individually with their filenames in a hash format.</p>
 <p>You can refer to the <a href="https://curl.haxx.se/docs/manpage.html#--cacert">cURL man page</a> for information on the <code>cacert </code>and <code>capath </code>options.</p>
 <blockquote>
 <p><strong>Note:</strong></p>
 <p>You can set this parameter on UNIX systems, however it is not applicable on Windows.</p>
 </blockquote>
-<p>If the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p></td>
+<p>If  the certificate bundle is not available on your system, you can download it from: <a href="https://curl.haxx.se/docs/caextract.html">curl.haxx.se/docs/caextract.html</a> (see <a href="https://curl.haxx.se/ca/cacert.pem">cacert.pem</a>).</p></td>
 </tr>
 <tr >
 <td colspan="3" ><p><strong>Credentials</strong></p>
@@ -4179,7 +4179,7 @@ In this case, the ID and ROOTCID parameters have the same value.</p></td>
 <td >aws.credentials.&lt;storageaccount&gt;.region</td>
 <td >string</td>
 <td ><p>Region to use; this value overrides the parsing of the WORKINGDIR and the config/env settings.</p>
-<p>When using the endpoint format for WORKINGDIR, you can use this parameter to set the AWS Signature Version 4 region to something other than the default (us-east-1).</p></td>
+<p>When using the endpoint format for WORKINGDIR, you can use this parameter to set the  AWS Signature Version 4 region to something other than the default (us-east-1).</p></td>
 </tr>
 <tr >
 <td colspan="3" ><p><strong>Server-side encryption</strong></p>
@@ -4194,12 +4194,12 @@ In this case, the ID and ROOTCID parameters have the same value.</p></td>
 <li>sse-s3: Server-side encryption with AES 256</li>
 <li>sse-kms: Server-side encryption with Key Management Service</li>
 </ul>
-<p>See the <a href="#globally_encrypt">example</a> for details on encrypting files.</p></td>
+<p>See the <a href="#globally_encrypt">example</a> for details on encrypting  files.</p></td>
 </tr>
 <tr >
 <td >aws.credentials.&lt;storageaccount&gt;.encryption_key_id</td>
 <td >string</td>
-<td ><p>Key identifier for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p></td>
+<td ><p>Key identifier  for SSE-KMS encryption use; you must provide the full ID of the encryption key for the server.</p></td>
 </tr>
 <tr >
 <td colspan="3" ><p><strong>Access Control List</strong></p>
@@ -4357,7 +4357,7 @@ parameter (default value).</p></td>
 </tr>
 <tr >
 <td ><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/scope">SCOPE</a></td>
-<td >Scope &lt;PARENT&gt; ('PARENT','ALL','CHILDREN')</td>
+<td >Scope &lt;PARENT&gt;  ('PARENT','ALL','CHILDREN')</td>
 </tr>
 <tr >
 <td ><p><a href="../../../c_intro_userinterfaces/command_summary/parameter_intro/state">STATE</a> </p></td>
@@ -4684,7 +4684,7 @@ for some time?</p></td>
 <td >Catalog check</td>
 <td >Network checks</td>
 <td >timeout</td>
-<td >Check {{&lt; TransferCFT/componentlongname &gt;}} files</td>
+<td >Check  {{&lt; TransferCFT/componentlongname &gt;}} files</td>
 </tr>
 <tr >
 <td >Unexpected stop</td>
@@ -4692,7 +4692,7 @@ for some time?</p></td>
 <td >Catalog check</td>
 <td >Network checks</td>
 <td > </td>
-<td >Check {{&lt; TransferCFT/componentlongname &gt;}} files</td>
+<td >Check  {{&lt; TransferCFT/componentlongname &gt;}} files</td>
 </tr>
 <tr >
 <td >Transfer freeze or infinite looping</td>
@@ -4700,7 +4700,7 @@ for some time?</p></td>
 <td > </td>
 <td >Network checks</td>
 <td >Check application</td>
-<td >Check {{&lt; TransferCFT/componentlongname &gt;}} files</td>
+<td >Check  {{&lt; TransferCFT/componentlongname &gt;}} files</td>
 </tr>
 <tr >
 <td >SP and updates</td>
@@ -4716,7 +4716,7 @@ for some time?</p></td>
 <td > </td>
 <td >Network checks</td>
 <td > </td>
-<td >Check {{&lt; TransferCFT/componentlongname &gt;}} files</td>
+<td >Check  {{&lt; TransferCFT/componentlongname &gt;}} files</td>
 </tr>
 </tbody>
 </table>
@@ -4727,11 +4727,11 @@ for some time?</p></td>
 <table  data-cellspacing="0" >
 <thead>
 <tr >
-<th >PeSIT reason code&lt;/th&gt;</th>
-<th >Description&lt;/th&gt;</th>
+<th >                            PeSIT reason code&lt;/th&gt;</th>
+<th >                            Description&lt;/th&gt;</th>
 <th >{{&lt; TransferCFT/componentshortname &gt;}} internal
 diagnostic</th>
-<th >Service item concerned&lt;/th&gt;</th>
+<th >                            Service item concerned&lt;/th&gt;</th>
 </tr>
 </thead>
 <tbody>

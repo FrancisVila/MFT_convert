@@ -9,7 +9,7 @@
 \_FMSUB Function starts the execution of a batch file without waiting for the end of the execution of it.
 
 ```
-\_FMSUB PARM = (FILENAME)
+_FMSUB PARM = (FILENAME)
 RC = lrc
 ```
 
@@ -23,7 +23,7 @@ RC = lrc
 #### Examples
 
 ```
-CHAR NAME = FILE\_CMD, SIZE = 13, INIT = CONFIG.CMD
+CHAR NAME = FILE_CMD, SIZE = 13, INIT = CONFIG.CMD
 LONG NAME = RSC
-\_FMSUB PARM = (%FILE\_CMD%), RC = LRC
+_FMSUB PARM = (%FILE_CMD%), RC = LRC
 ```

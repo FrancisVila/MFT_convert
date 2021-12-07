@@ -6,7 +6,7 @@
 
 HFS files are managed either by applications that work in an UNIX/OMVS environment, or by applications that use the <a href="" class="MCTextPopup popup popupHead">USS</a>, such as the management and access interface.
 
-Transfer CFT only accepts the complete name from the root directory. All file name components are separated by the ‘/’ character. The complete name is limited to 248 characters.
+Transfer CFT only accepts the complete name from the root directory. All file name components  are separated by the ‘/’ character. The complete name is limited to 248 characters.
 
 The z/OS file characteristics, such as format (RECFM), record size (LRECL), and block size (BLKSIZE) are meaningless for an HFS file. However, Transfer CFT uses these characteristics as a basis for ensuring the data management and the transmission of file characteristics towards the receiver for a transfer. As a result, parameter settings must take these characteristics into account when characteristics are conveyed between heterogeneous partners.
 
@@ -61,7 +61,7 @@ The values allocated to TYPE are:
 <!-- -->
 
 -   J: stream text
-    -   Enables sending a text file that contains records that are larger than 32 KB
+    -   Enables sending a text file that contains records  that are larger than 32 KB
 
 If the parameter is not present, the binary file type becomes the default type.
 
@@ -106,7 +106,7 @@ Changing the name of an HFS file can only be carried out in the same directory. 
 For each HFS file access error, Transfer CFT z/OS displays the CFTHF01E message in the SYSLOG.
 
 ```
-`CFHF01E:BPX1mod ,RSN=05F1006C,RC=ENOENT (129)No such file or directory `
+CFHF01E:BPX1mod ,RSN=05F1006C,RC=ENOENT (129)No such file or directory
 ```
 
 Where:

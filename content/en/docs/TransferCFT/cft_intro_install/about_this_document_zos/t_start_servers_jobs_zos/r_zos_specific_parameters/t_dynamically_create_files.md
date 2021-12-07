@@ -40,7 +40,7 @@ This mechanism is called automatically when:
 
 -   File creation fails because of lack of space or request for more than 65535 tracks in a NON EXTENDED FORMAT volume
 -   The VOLUME parameter is not completed
-    -   You can deactivate this device when this parameter is present and set. The maximum number of volumes, 20 by default, is customizable in the JOB A12OPTS VOLNUM= .
+    -   You can deactivate this device when  this parameter is present and set. The maximum number of volumes, 20 by default, is customizable in the JOB A12OPTS VOLNUM= .
 
 DYNALLOC is called up to VOLNUM= additional times with:
 
@@ -58,12 +58,12 @@ To request the creation of a multi-volume file, use ‘fname=’%+nnn%DSNAME’,
 
 #### About large file support functionality
 
-Transfer CFT supports the DF/SMS features introduced by IBM for z/OS environments. Additionally, the extended format files and the DFSMS BLOCKTOKENSIZE=LARGE option are automatically managed by Transfer CFT. The JCL parameter DSNTYPE=EXTPREF, indicating a preference for an extended format, can be added when applicable and supported. The EATTR parameter introduced with z/OS 1.11 is also supported.
+Transfer CFT  supports the DF/SMS features introduced by IBM for z/OS  environments. Additionally, the extended format files and the DFSMS BLOCKTOKENSIZE=LARGE option are automatically managed by Transfer CFT. The JCL parameter DSNTYPE=EXTPREF, indicating a preference for an extended format, can be added when applicable and supported.  The EATTR parameter introduced with z/OS 1.11 is also supported.
 
 Overall large file support in Transfer CFT z/OS includes:
 
 -   A maximum record size for storing USS text files of 32,756 bytes, and a maximum number of records for a USS text file of 2\*\*31.
--   The number of volumes for a file is 255. The maximum supported file size is 54 gigabytes, or 4 terabytes per EAV volume, times 255 volumes. Nevertheless, the maximum file size is limited to 4 terabytes.
+-   The number of volumes for a file is 255. The maximum supported file size is  54 gigabytes, or 4 terabytes per EAV volume, times 255 volumes. Nevertheless, the maximum file size is limited to 4 terabytes.
 -   The maximum catalog size is 328,000 saved entries for a non SMS managed volume, 5,000,000 entries for an SMS managed volume, or 10,000,000 with EATTR=OPT.
 -   Support for the DFSMS BLOCKTOKENSIZE=LARGE parameter, which was introduced with z/OS 1.7.
 -   Support for VSAM files larger than 4 gigabytes.
@@ -80,7 +80,7 @@ SGINSTAL option provides a global default value for DSNTYPE. For more informatio
 
 In two specific cases certain DFSMS parameters can be specified when creating a file, using one of the following:
 
--   CFTRECV WFNAME=’value’ **(\*)**
+-   CFTRECV WFNAME=’value’  **(\*)**
 -   CFTFILE FNAME=’value’
 
 Where 'value' is in the format:
@@ -99,7 +99,7 @@ Supported keywords and values include:
 
 -   DATACLAS=class
 -   DSNTYPE=BASIC/EXTPREF/EXTREQ/LARGE - to override a predefined value in the SGINSTAL option
--   EATTR=OPT - valid only with z/OS 1.11 and higher, otherwise it is discarded
+-   EATTR=OPT -  valid only with z/OS 1.11 and higher, otherwise it is discarded
 -   MGMTCLAS=class
 -   STORCLAS=class
 -   RETPD=nnnn
@@ -114,10 +114,10 @@ Supported keywords and values include:
 > -   Expiration dates 99365 and 99366 are considered “never-scratch” dates.
 > -   For expiration dates of January 1, 2000 and later, you MUST use the EXPDT=yyyyddd format.
 
-**(\*)** For the CFTRECV command (only), you can specify DFSMS parameters in ATTSUSER.
+**(\*)**  For the CFTRECV command (only), you can specify DFSMS parameters in ATTSUSER.
 
 Example 1
-&lt;/p>
+        &lt;/p>
 
 To force the creation of the received file in the EAV section of a volume:
 
@@ -132,7 +132,7 @@ CFTRECV FNAME=A.GDG(+1),ATTSUSER=’DSNTYPE=EXTREQ,EATTR=OPT’, WFNAME=’WORK.
 > The ATTSUSER field is presently not managed by Central Governance.
 
 Example 2
-&lt;/p>
+        &lt;/p>
 
 To create a large (greater than 215,000 records) Transfer CFT catalog:
 

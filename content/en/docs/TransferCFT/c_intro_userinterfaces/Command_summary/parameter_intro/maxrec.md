@@ -24,7 +24,7 @@ Maximum number of records written in the
 log file.
 
 -   When this value is reached, automatic switching is performed.
--   If MAXREC=0 (default), no automatic switching occurs relative to the
+-   If MAXREC=0 (default), no automatic switching occurs  relative to the
     number of records in the file.
 
 [Return to Command index](../../)

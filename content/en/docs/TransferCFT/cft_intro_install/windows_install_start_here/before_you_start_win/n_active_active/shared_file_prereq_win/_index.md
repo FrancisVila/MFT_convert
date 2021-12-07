@@ -4,7 +4,7 @@
     "weight": "190"
 }This section provides general information concerning the prerequisites for shared file systems for the following types of files used with {{< TransferCFT/transfercftname  >}} in a UNIX environment.
 
--   Transfer CFT data files: This refers to all files managed by {{< TransferCFT/transfercftname >}} other than transferable application files (including database files), which are stored in the {{< TransferCFT/transfercftname >}} runtime directory.
+-   Transfer CFT data files: This refers to all files managed by {{< TransferCFT/transfercftname >}} other than  transferable application files (including database files), which are stored in the {{< TransferCFT/transfercftname >}} runtime directory.
 -   Transferable application files: This refers to the files transferred by Transfer CFT.
 
 ## Standalone installation
@@ -54,6 +54,6 @@ The following non-exhaustive table lists shared file systems that have been test
 
 #### {{< TransferCFT/transfercftname  >}} transferable application files
 
-You can use any POSIX compliant shared file system for transferable application files.
+You can use any POSIX compliant shared file system for   transferable application files.
 
 Please see the [Supported file systems](#Supported_fs_win) in the Standalone installation section.

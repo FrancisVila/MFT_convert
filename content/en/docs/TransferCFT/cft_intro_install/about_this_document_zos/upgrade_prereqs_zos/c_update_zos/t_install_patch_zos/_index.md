@@ -17,7 +17,7 @@ Information includes:
 
 ## Install update libraries
 
-A PTF file results from the fixed formatting (80) of an ADRDSSU-type file containing the update libraries. The PTF format is used by all delivery and distribution modes. The PTF files are available at [support.axway.com](http://support.axway.com/).
+A PTF file results from the fixed formatting (80) of an ADRDSSU-type file containing the update libraries. The PTF format is used by all delivery and distribution modes. The PTF files are available at               [support.axway.com](http://support.axway.com/).
 
 > **Note:**
 >
@@ -59,11 +59,15 @@ You can transfer a given PTF file from either the workstation or the host, in b
 The following is an example of commands for the binary transfer of the PTF file from the workstation to the host:
 
 ```
-`open hostname `
+open hostname 
 userid  
+                        
 userpsw 
+                        
 binary
-put c:\\mycftpatchs\\patch\_from Axway support website 'distlib.UPLIB(CFxxxxxx)'   
+                        
+put c:\\mycftpatchs\\patch_from Axway support website 'distlib.UPLIB(CFxxxxxx)'   
+                        
 ```
 
 Where:
@@ -206,7 +210,7 @@ This JOB takes place in several stages:
 >
 > This operation is displayed in the file distlib.LOG.
 
-For more information, you can consult the patch documentation located in the distlib.DOC library and named DCxxxxxx (xxxxxx are the patch identifiers). These documents describe known incidents, corrections and PTF specifics (exits, and so on). Additionally the library, PTFINFO member, lists all corrected incidents.
+For more information, you can consult the patch documentation located in the distlib.DOC library and named DCxxxxxx  (xxxxxx are the patch identifiers). These documents describe known incidents, corrections and  PTF specifics (exits, and so on). Additionally the library, PTFINFO member, lists all corrected incidents.
 
 <span id="Apply a PTF using A13PTFLK"></span>
 
@@ -217,7 +221,7 @@ Usually a patch is applied through a LINK-EDIT. The JCL A13PTFLK is found in the
 Before submitting the JOB, specify the LINK EDIT identifier in the EXEC card:
 
 ```
-`//APPLY  EXEC PAPPLY,ID=’xxxxxx’`
+//APPLY  EXEC PAPPLY,ID=’xxxxxx’
 ```
 
 Where:
@@ -269,28 +273,28 @@ The following three JCLs mange the PTFs for Copilot:
 Before submitting the JCL, modify the value associated with the ID=, where xxxxxx is the identifier of the PTF to apply:
 
 ```
-// SET ID='xxxxxx' (JCL A13UPTFA)
+//   SET ID='xxxxxx'  (JCL A13UPTFA)
 //DELSAV EXEC PCDELSAV,ID=’xxxxxx’ (JCL A13UPFTD)
-// SET ID='xxxxxx' (JCL A13UPTFR)
+//   SET ID='xxxxxx'  (JCL A13UPTFR)
 ```
 
-### Updating the unified configuration definitions A13UCONF
+### Updating the unified configuration definitions  A13UCONF
 
 This JOB updates the member DEFAULT in target.UPARM.
 
 ## Automatically applying fixes A13AUTO
 
-The use of this JCL is optional. It allows you to submit JOB 'A13\*', which runs as described in the patch readme (Distlib..doc(..)). Check the information concerning the application of the patch or service pack's in the associated readme.
+The use of this JCL is optional. It allows you to submit JOB 'A13\*', which runs as described in the patch readme  (Distlib..doc(..)). Check the information  concerning the application of the patch or service pack's in the associated readme.
 
-You must configure the following JCLs in automatic mode.
+You must configure the following JCLs  in automatic mode.
 
-> ..INSTALL(A13PTFLD) &gt;&gt; ID='AUTO'
+> ..INSTALL(A13PTFLD)   &gt;&gt; ID='AUTO'
 >
-> ..INSTALL(A13PTFLK) &gt;&gt; ID='AUTO'
+> ..INSTALL(A13PTFLK)   &gt;&gt; ID='AUTO'
 >
-> ..INSTALL(A13UCOPA) &gt;&gt; ID='AUTO' or ID='NONE'
+> ..INSTALL(A13UCOPA)   &gt;&gt; ID='AUTO'  or ID='NONE'
 >
-> ..INSTALL(A13UXSRA) &gt;&gt; ID='AUTO' or ID='NONE'
+> ..INSTALL(A13UXSRA)   &gt;&gt; ID='AUTO'  or ID='NONE'
 
 If ID='NONE', this JCL is not submitted.
 

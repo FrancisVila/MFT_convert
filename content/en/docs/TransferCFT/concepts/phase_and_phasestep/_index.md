@@ -2,7 +2,7 @@
     "title": "About phase and phasestep",
     "linkTitle": "Transfer workflow",
     "weight": "150"
-}{{< TransferCFT/componentshortname  >}} provides a complete processing workflow that includes file preprocessing, transfer processing, post processing script execution and acknowledgement. As  of {{< TransferCFT/componentshortname  >}} 3.0 processing features have evolved, replacing the former **state** with the Phase/Phase step pair, to improve the visibility of a flow. The processing phase shows where you are in your transfer. Within each phase there is a phase step, which can be either a process or a step.
+}{{< TransferCFT/componentshortname  >}} provides a complete processing workflow that includes file preprocessing, transfer processing, post processing script execution and acknowledgement. As  of  {{< TransferCFT/componentshortname  >}} 3.0 processing features have evolved, replacing the former **state** with the Phase/Phase step pair, to improve the visibility of a flow. The processing phase shows where you are in your transfer. Within each phase there is a phase step, which can be either a process or a step.
 
 This topic presents processing **concepts**, step overviews in the following sections:
 
@@ -33,7 +33,7 @@ The **phasestep** refers to the details that can occur during any given phase:
 
 -   \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
 -   \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
--   \(C\) Processing/Current: The Phase processing is being executed.
+-   \(C\) Processing/Current: The  Phase processing is being executed.
 -   \(K\) Keep: The Phase processing is stopped.
 -   \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
 -   \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../app_integration_intro/managing_exits/about_the_end_of_transfer_type_exit).
@@ -81,7 +81,7 @@ Transfer is waiting on a resource to start
 Transfer (T)
 Processing (C)
 Processing (C)
-Transfer is in progress
+Transfer  is in progress
 Transfer (T)
 Killed (K)
 Killed (K)
@@ -96,15 +96,15 @@ Post-processing (Y)
 Exit in progress
 Post-processing (Y)
 Available (D)
-Post-processing (Y)
-Post-processing is waiting for a resource to start
+Post-processing  (Y)
+Post-processing  is waiting for a resource to start
 Post-processing (Y)
 Processing (C)
-Post-processing (Y)
+Post-processing  (Y)
 Post-processing in progress
 Post-processing (Y)
 Killed (K)
-Post-processing (Y)
+Post-processing   (Y)
 Post-processing is canceled
 Ack (Z)
 Hold (H)
@@ -112,7 +112,7 @@ Ack (Z)
 Transfer request waits for an application acknowledgement before continuing the flow
 Ack (Z)
 Available (D)
-Ack (Z)
+Ack  (Z)
 Ack processing is not started
 Ack (Z)
 Processing (C)
@@ -120,7 +120,7 @@ Ack (Z)
 Ack processing in progress
 Ack (Z)
 Killed (K)
-Ack (Z)
+Ack  (Z)
 Ack processing is canceled
 Done (X)
 Done (X)

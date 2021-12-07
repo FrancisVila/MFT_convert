@@ -16,7 +16,7 @@ is indicated in the label.
 DIAGI codes with a value between 001 and 499 indicate a local issue; values
 between 501 and 999 correspond to a fault reported by the partner.
 
-This means that when you troubleshooting, if the DIAGI code is greater than 500 it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote problem corresponding to DIAG 416 (Maximum number of transfers reached).
+This means that when you troubleshooting, if the DIAGI code is greater than 500 it refers to a remote  issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote  problem corresponding to DIAG 416 (Maximum number of transfers reached).
 
 <span id="Event_column_in_diagnostic_codes"></span>
 
@@ -155,7 +155,7 @@ memory</p>         </td>
       </tr>
       <tr>
          <td>004         </td>
-         <td>MQCONN         </td>
+         <td>MQCONN           </td>
          <td>          </td>
       </tr>
       <tr>
@@ -388,7 +388,7 @@ a deletion request</p>
       <tr>
          <td><p>3. FILE - Error accessing the send file (allocating
 or opening), subsequent to a file erase request (FACTION = ERASE)</p>         </td>
-         <td><p>H status - ABORT, EXECE unless there is an
+         <td><p>H status - ABORT, EXECE  unless there is an
 allocation error in sender server mode</p>
 <p>This may require a trace. Please see <a href="../../traces_in_cft" class="MCXref xref">How to use ATM traces</a>.</p>         </td>
       </tr>
@@ -523,7 +523,7 @@ receive mode for a file with versions or for a transfer requiring deconcatenatio
          <td>145         </td>
          <td><ol>
 <li>The SEND file is outside of the workingdir tree.
-&lt;/li&gt;</li>
+           &lt;/li&gt;</li>
 <li>The temporary SEND file is outside of the workingdir tree.</li>
 </ol>         </td>
          <td><p>K status - ABORT</p>
@@ -532,14 +532,14 @@ receive mode for a file with versions or for a transfer requiring deconcatenatio
       <tr>
          <td>148         </td>
          <td><p>1. The RECV file is outside of the workingdir tree.
-&lt;/p&gt;</p>
+           &lt;/p&gt;</p>
 <p>2. The temporary RECV file is outside of the workingdir tree.</p>         </td>
          <td><p>K status - ABORT</p>
 <p>Check the WORKINGDIR parameter in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftrecv">CFTRECV</a> object.</p>         </td>
       </tr>
       <tr>
          <td><p>150</p>         </td>
-         <td><p>PARAM - Could not access a file. This error may be due to one of several issues, for example the directory is empty, or the file's name does not correspond to an applied filter.</p>         </td>
+         <td><p>PARAM - Could not access a file. This error may be due to one of several issues, for example the directory is empty, or  the file's name does not correspond to an applied filter.</p>         </td>
          <td><p>State K - ABORT. If the directory does not exist, no transfers
 are triggered and only the generic request remains in the catalog. If
 an error is detected when reading the directory, the transfers generated
@@ -594,8 +594,8 @@ a group of files</a></p>
       <tr>
          <td>158         </td>
          <td><p>There was an error while replacing Transfer CFT variables.</p>
-<p>The script referenced by <code>&amp;fname</code> in the CFTS68E message is not executed.</p>         </td>
-         <td>In the script &amp;fname, modify the variable &lt;var&gt; indicated in the CFTS68E message.         </td>
+<p>The script referenced by <code>&amp;fname</code> in the CFTS68E   message is not executed.</p>         </td>
+         <td>In the script &amp;fname, modify  the variable &lt;var&gt; indicated in  the CFTS68E message.         </td>
       </tr>
       <tr>
          <td><p>160</p>         </td>
@@ -707,12 +707,12 @@ The following protocols do not support message send operations: PESIT SIT, PESIT
       </tr>
       <tr>
          <td>243         </td>
-         <td>Network connection time-out         </td>
+         <td>Network connection time-out                 </td>
          <td>          </td>
       </tr>
       <tr>
          <td>244         </td>
-         <td>Pre-connection time-out         </td>
+         <td>Pre-connection time-out                     </td>
          <td>          </td>
       </tr>
       <tr>
@@ -810,14 +810,14 @@ it</p>         </td>
       </tr>
       <tr>
          <td><p>351</p>         </td>
-         <td><p>The remote requester is not authorized to use the transfer.
+         <td><p>The remote  requester is not authorized to use the transfer.
 The transfer was in the H state. The monitor is running in the server/sender
 mode</p>         </td>
          <td><p>State H</p>         </td>
       </tr>
       <tr>
          <td><p>352</p>         </td>
-         <td><p>The remote requester is not authorized to create a transfer.
+         <td><p>The remote  requester is not authorized to create a transfer.
 The monitor is running in the server/sender mode and the transfer was
 to be created via a CFTSEND IMPL=YES</p>         </td>
          <td><p>State H</p>         </td>
@@ -847,7 +847,7 @@ command)</p>         </td>
          <td><p>No CAT</p>
 <p>The diagi = 403 is displayed only in the cftlog file</p>
 <p>CFTH22E NPART=PARTSSL rejected DIAGI=403 &lt;HOST=@IP_address&gt;</p>
-<p>On the requester the transfer status is D with diagi = 909 and the diagp = RCO 301, therefore the transfer is retried up to RETRYM times.</p>
+<p>On the requester the transfer status is D with diagi = 909 and the diagp = RCO 301, therefore  the transfer is retried up to RETRYM times.</p>
 <p> </p>         </td>
       </tr>
       <tr>
@@ -920,7 +920,7 @@ intervention (partner definition and transfer retry). The end of transfer proced
          <td><p>410</p>         </td>
          <td><p>PARAM - Unknown CFTPROT command</p>         </td>
          <td><p>K status - ABORT</p>
-<p>Check that the PROT value in the <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart">CFTPART</a> matches an active protocol PROT parameter of <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> object.</p>         </td>
+<p>Check that the PROT value in the  <a href="../../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftpart">CFTPART</a> matches an active protocol PROT parameter of <a href="../../../c_intro_userinterfaces/web_copilot_ui/conf_intro/cftparm">CFTPARM</a> object.</p>         </td>
       </tr>
       <tr>
          <td><p>411</p>         </td>
@@ -947,7 +947,7 @@ the end of transfer procedure will not be executed</p>         </td>
          <td><p>As the
 file could not be accessed, there is no change in the status or in the catalog DIAGI.</p>
 <p>The  CFTT21E should display in the log and contain GCS and GCR information that may be helpful for Axway support to diagnos the issue.</p>
-<p>For example, this type of error could be caused by a corrupted catalog. If so, you could import and export the records to repair this.</p>         </td>
+<p>For example, this type of error could be caused by  a corrupted catalog. If so, you could import and export the records to repair this.</p>         </td>
       </tr>
       <tr>
          <td><p>413</p>         </td>
@@ -1003,12 +1003,12 @@ after transfers have ended. Please see <a href="../../../concepts/about_parallel
 <p>WSCAN related behavior</p>
 <p>Technically, the next retry is triggered <strong>wscan</strong> minutes after the previous try. However, sometimes you may have a {{< TransferCFT/componentlongname  >}} log where the 416 diagnostic codes are not evenly distributed (by the same time intervals). This may occur if the scheduling task believes resources are available and schedules a retry, but in reality the resource is taken.</p>
 <p> </p>
-<p><em>Unix only</em> - If the runtime path is too long, a diag 416 issue occurs and a message similar to the following displays in the <code>cft.out</code>:</p>
+<p><em>Unix only</em> - If the runtime path is too long,  a diag 416 issue occurs and a message similar to the following displays in the <code>cft.out</code>:</p>
 <blockquote>
 <p>CFTTCPS S_socket : start_soc : bind afunix</p>
 <p>CFTTCPS Invalid argument</p>
 </blockquote>
-<p>If this error occurs, modify the path to the socket in the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <code>cft.unix.stcp.afunix</code> parameter according to the operating system limit as shown below:</p>
+<p>If this error occurs, modify the path to the socket  in the <a href="../../../admin_intro/uconf/uconf_directory">UCONF</a> <code>cft.unix.stcp.afunix</code> parameter according to the operating system limit as shown below:</p>
 <ul>
 <li>AIX: 1023</li>
 <li>HP-UX: 92</li>
@@ -1096,7 +1096,7 @@ and compare it to the host value in the CFTTCP object; the check is done on the 
          <td><p>431</p>         </td>
          <td><p>USER (Security) - CFTAPPL card is absent</p>         </td>
          <td><p>No CAT</p>
-<p>Transfer is not started and there is no entry in the catalog. Additionally, the diagi is displayed only in cftlog file.</p>         </td>
+<p>Transfer is not started and  there is no entry in the catalog. Additionally, the diagi is displayed only in cftlog file.</p>         </td>
       </tr>
       <tr>
          <td>432         </td>
@@ -1110,14 +1110,14 @@ and compare it to the host value in the CFTTCP object; the check is done on the 
       </tr>
       <tr>
          <td>434         </td>
-         <td>AUTH - File identifier (default IDF) is not authorized         </td>
+         <td>AUTH - File identifier (default IDF) is not authorized           </td>
          <td><p>K status - ABORT</p>
 <p>When cft.default_idf.enable = Yes , the default IDF is not authorized.</p>         </td>
       </tr>
       <tr>
          <td>435         </td>
          <td>WORKDIR         </td>
-         <td><p>The CFTSEND and CFTRECV models with the same ID have different working directories defined.</p>
+         <td><p>The  CFTSEND and CFTRECV models with the same ID have different working directories defined.</p>
 <p>SFTP issue. Check the workingdir value for both the CFTSEND id=&lt;ID&gt; with IMPL=YES and CFTRECV  id=&lt;ID&gt;.</p>         </td>
       </tr>
       <tr>
@@ -1215,76 +1215,76 @@ confirmation FPDU</p>         </td>
       <tr>
          <td><p>Codes with a value between 001 and 499 indicate a local issue; values
 between 501 and 999 correspond to a fault reported by the partner.</p>
-<p>Therefore when troubleshooting if the code is greater than 500 it refers to a remote issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote problem corresponding to DIAG 416 (maximum number of transfers reached).</p>         </td>
+<p>Therefore when troubleshooting if the code is greater than 500 it refers to a remote  issue. To find the actual DIAG, subtract 500 from the displayed code. If the DIAG is 916, for example, the issue is a remote  problem corresponding to DIAG 416 (maximum number of transfers reached).</p>         </td>
       </tr>
       <tr>
          <td>500         </td>
-         <td>Constant to add to a remote code         </td>
+         <td>Constant to add to a remote  code         </td>
          <td>          </td>
       </tr>
       <tr>
          <td><p>600</p>         </td>
-         <td><p>FILE - (PeSIT) (Odette) Transfer aborted by the remote
+         <td><p>FILE - (PeSIT) (Odette) Transfer aborted by the remote  
 end: file input/output error - PeSIT / Odette code: See <a href="../general_protocol_diagnostics">DIAGP.</a></p>         </td>
          <td><p>H status- ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>604</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: file
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
 opening error</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>605</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: file
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
 closing error</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>610</p>         </td>
          <td><p>FILE - (PeSIT) (Odette) Transfer aborted by the
-remote end: the file to be read does not exist</p>         </td>
+remote  end: the file to be read does not exist</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>611</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: insufficient
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: insufficient
 space to create the file</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>613</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: the
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: the
 file to be created already exists</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>614</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: file
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
 space full</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>620</p>         </td>
-         <td><p>PROT - (PeSIT) Transfer aborted by the remote end: counter
+         <td><p>PROT - (PeSIT) Transfer aborted by the remote  end: counter
 control error</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>621</p>         </td>
-         <td><p>PROT - (PeSIT) Transfer aborted by the remote end: interruption
+         <td><p>PROT - (PeSIT) Transfer aborted by the remote  end: interruption
 by the operator</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>626</p>         </td>
-         <td><p>PROT - (PeSIT) (Odette) Transfer aborted by the remote
+         <td><p>PROT - (PeSIT) (Odette) Transfer aborted by the remote  
 end: error in record length</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>635</p>         </td>
-         <td><p>FILE - (PeSIT) Transfer aborted by the remote end: file
+         <td><p>FILE - (PeSIT) Transfer aborted by the remote  end: file
 access conflict</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
@@ -1297,20 +1297,20 @@ access conflict</p>         </td>
          <td><p>660</p>         </td>
          <td><p>REC (PeSIT) - Error 660, ASE
 205 on the requester side</p>         </td>
-         <td><p>H state - Transfer aborted by the remote end: no outstanding
+         <td><p>H state - Transfer aborted by the remote  end: no outstanding
 transfer</p>         </td>
       </tr>
       <tr>
          <td><p>720</p>         </td>
-         <td><p>1. PROT - (PeSIT) Protocol abort by the remote end:
+         <td><p>1. PROT - (PeSIT) Protocol abort by the remote  end:
 incorrect FPDU (transmission error)</p>
-<p>2. PROT - (Odette) Protocol abort by the remote end:
+<p>2. PROT - (Odette) Protocol abort by the remote  end:
 negotiation error</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>722</p>         </td>
-         <td><p>PROT - (PeSIT) Protocol abort by the remote end: missing
+         <td><p>PROT - (PeSIT) Protocol abort by the remote  end: missing
 PI</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
@@ -1324,25 +1324,25 @@ due to protocol error - PeSIT code: See <a href="../general_protocol_diagnostics
       </tr>
       <tr>
          <td><p>740</p>         </td>
-         <td><p>NET - (PeSIT) Transfer aborted by the remote end: time-out
+         <td><p>NET - (PeSIT) Transfer aborted by the remote  end: time-out
 - PeSIT code: 317</p>         </td>
          <td><p>D status - RETRY</p>         </td>
       </tr>
       <tr>
          <td><p>850</p>         </td>
-         <td><p>PROT - (PeSIT) Protocol rejection by the remote end: authorization
+         <td><p>PROT - (PeSIT) Protocol rejection by the remote  end: authorization
 problem</p>         </td>
          <td><p>H Status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>904</p>         </td>
-         <td><p>PROT - (PeSIT) Protocol rejection by the remote end: transfer
+         <td><p>PROT - (PeSIT) Protocol rejection by the remote  end: transfer
 denied (open mode, authorizations for example)</p>         </td>
          <td><p>H status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>909</p>         </td>
-         <td><p>PROT - (PeSIT only) Protocol rejection by the remote end:
+         <td><p>PROT - (PeSIT only) Protocol rejection by the remote  end:
 requester identifier unknown</p>         </td>
          <td><p>D status - RESTART</p>         </td>
       </tr>
@@ -1360,14 +1360,14 @@ at the partner end (MAXTRANS parameter)</p>         </td>
       </tr>
       <tr>
          <td><p>920</p>         </td>
-         <td><p>PROT - (PeSIT) Protocol rejection by the remote end: on
+         <td><p>PROT - (PeSIT) Protocol rejection by the remote  end: on
 reception of a REPLY-type message, the partner does not find the transfer
 concerned by this reply in its catalog</p>         </td>
          <td><p>D status - RESTART</p>         </td>
       </tr>
       <tr>
          <td><p>925</p>         </td>
-         <td><p>Call collect refused by the remote system</p>         </td>
+         <td><p>Call collect refused by the remote  system</p>         </td>
          <td><p>No CAT</p>         </td>
       </tr>
       <tr>
@@ -1382,18 +1382,18 @@ concerned by this reply in its catalog</p>         </td>
       </tr>
       <tr>
          <td>933         </td>
-         <td>Error in password management parameter RPASSWD or SPASSWD: non-authorized requester identification         </td>
+         <td>Error in  password management parameter RPASSWD or SPASSWD: non-authorized requester identification         </td>
          <td>          </td>
       </tr>
       <tr>
          <td><p>963</p>         </td>
-         <td><p>PROT - Protocol pre-connection phase rejected by the remote
+         <td><p>PROT - Protocol pre-connection phase rejected by the remote  
 end (PeSIT LOGON): LOGON string rejected</p>         </td>
          <td><p>K status - ABORT, EXECE</p>         </td>
       </tr>
       <tr>
          <td><p>970</p>         </td>
-         <td><p>PROT - Protocol pre-connection phase rejected by the remote
+         <td><p>PROT - Protocol pre-connection phase rejected by the remote  
 end (PeSIT LOGON): password expired</p>         </td>
          <td><p>K status - ABORT, EXECE</p>         </td>
       </tr>

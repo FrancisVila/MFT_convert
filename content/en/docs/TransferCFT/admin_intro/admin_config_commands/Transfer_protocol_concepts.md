@@ -28,7 +28,7 @@ use, must be supported by the local Transfer CFT and the partner Transfer CFT.
 Use the CFTPROT object to:
 
 -   Select a protocol,
-    either PeSIT or Odette, and a way of using this protocol, such
+    either PeSIT or Odette,  and a way of using this protocol, such
     as with or without compression, with or without restart possibility, and
     so on
 -   Specify certain

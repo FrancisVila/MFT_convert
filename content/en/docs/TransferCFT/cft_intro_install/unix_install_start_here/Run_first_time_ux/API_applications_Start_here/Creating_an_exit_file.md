@@ -3,7 +3,7 @@
     "linkTitle": "Creating an exit file",
     "weight": "220"
 }The example described in this topic was designed to operate using the **cft-tcp.conf** configuration example located in **&lt;installdir>/runtime/conf**.
-For this example, you should have already customized the
+For this example, you should have already customized  the
 file using the instructions in *Running Transfer
 CFT for the First Time*.
 
@@ -35,7 +35,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains the:
 
 -   *libcftexf.a*
-    module; this library allows you to use the {{< TransferCFT/componentshortname >}} file EXITs
+    module; this library allows you to use the  {{< TransferCFT/componentshortname >}} file EXITs
 
 To generate the sample CFTEXITF application, proceed as follows:
 
@@ -49,13 +49,13 @@ To generate the sample CFTEXITF application, proceed as follows:
 
 1.  Access the *&lt;installdir>/runtime/conf/* directory.
 
-2.  Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafiles
+2.  Generate the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> internal datafiles
     using the *cftinit* utility with the configuration file:
 
     cftinit <span class="bold_in_para">cft-tcp.conf</span>
 
 3.  When the *cftinit complete*
-    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the cftstart utility:
+    message is displayed, run  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the cftstart utility:
 
     cftstart
 
@@ -69,7 +69,7 @@ To generate the sample CFTEXITF application, proceed as follows:
 
     cftcatab  
 
-6.  Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstop*
+6.  Stop  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstop*
     utility:
 
     cftstop

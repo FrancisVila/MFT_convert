@@ -10,7 +10,7 @@
 
 #### CFTSEND, SEND
 
-\[NCODE = { '\_' | ASCII
+\[NCODE = {   '\_' | ASCII
 | BINARY | EBCDIC}\]
 
 PeSIT
@@ -41,24 +41,24 @@ The following values explicitly or implicitly determine the action:
     with an external translation table (see the use of the XLATE parameter)
 -   If NCODE is
     not FCODE, ASCII/EBCDIC or EBCDIC/ASCII translation is always performed,
-    whether by means of an external translation table or the {{< TransferCFT/componentshortname >}}
+    whether by means of an external translation table or the  {{< TransferCFT/componentshortname >}}
     internal translation table
 
-In the PeSIT protocol Transfer
+In the PeSIT protocol  Transfer
 CFT can send a "data code" protocol parameter (an indicator);
 this parameter then corresponds to NCODE.
 
 SFTP
 
-The network data code for sending transfers. The default ' ' indicates BINARY (no transcoding).
+The network data code for sending transfers. The default  ' ' indicates BINARY  (no transcoding).
 
 The following values explicitly or implicitly determine the action:
 
 -   If FCODE or NCODE
     is equal to BINARY, no translation is performed
 -   If NCODE is equal to FCODE, no ASCII/ASCII or EBCDIC/EBCDIC translation is performed
--   If NCODE is not equal FCODE **and FTYPE = T, X, O or J**, ASCII/EBCDIC or EBCDIC/ASCII translation is performed using either an external translation table or the internal Transfer CFT translation table
-    -   FTYPE = T (End of Line CRLF on Windows, LF on Unix)
+-   If NCODE is not equal FCODE **and FTYPE = T, X, O or J**, ASCII/EBCDIC or EBCDIC/ASCII translation is  performed using either an external translation table or the  internal Transfer CFT translation table
+    -   FTYPE = T   (End of Line CRLF on Windows, LF on Unix)
     -   FTYPE = X (End of line = LF)
     -   FTYPE = O (End of line = CRLF)
     -   FTYPE = J (Stream Text)
@@ -74,15 +74,15 @@ For further information, refer to *[Protocols](../../../../protocols_start_here)
 
 SFTP only
 
-The network data code when receiving transfers. The default ' ' indicates BINARY (no transcoding).
+The network data code when receiving transfers. The default  ' ' indicates BINARY  (no transcoding).
 
 The following values explicitly or implicitly determine the action:
 
 -   If FCODE or NCODE
     is equal to BINARY, no translation is performed
 -   If NCODE is equal to FCODE, no ASCII/ASCII or EBCDIC/EBCDIC translation is performed
--   If NCODE is not equal FCODE **and FTYPE = T, X, O or J**, ASCII/EBCDIC or EBCDIC/ASCII translation is performed using either an external translation table or the internal Transfer CFT translation table
-    -   FTYPE = T (End of Line CRLF on Windows, LF on Unix)
+-   If NCODE is not equal FCODE **and FTYPE = T, X, O or J**, ASCII/EBCDIC or EBCDIC/ASCII translation is  performed using either an external translation table or the  internal Transfer CFT translation table
+    -   FTYPE = T   (End of Line CRLF on Windows, LF on Unix)
     -   FTYPE = X (End of line = LF)
     -   FTYPE = O (End of line = CRLF)
     -   FTYPE = J (Stream Text)

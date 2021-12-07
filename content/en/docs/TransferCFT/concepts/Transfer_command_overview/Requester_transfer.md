@@ -39,7 +39,7 @@ It sends messages through the commands:
 
 In the catalog, a transfer request made with the parameter STATE=HOLD
 is marked with an H (Hold) state.
-This transfer cannot be activated by Transfer CFT without operator action
+This transfer cannot be activated by Transfer CFT  without operator action
 (START command) or without a request from the remote partner. For more
 information refer to Activating a transfer below.
 
@@ -52,8 +52,8 @@ rights permit. The transfer may be refused in certain cases.
 
 ### Activating a transfer
 
-Transfer CFT scans the catalog at regular intervals to activate pending
-transfers, entries in the D state. For each of these entries, Transfer CFT
+Transfer CFT   scans the catalog at regular intervals to activate pending
+transfers, entries in the D state. For each of these entries,  Transfer CFT  
 determines whether it can be activated as a function of the parameter
 setting, and selects the exchange protocol in the CFTPROT object.
 
@@ -61,7 +61,7 @@ The transfer may be held if, for example:
 
 -   Partner access
     is inhibited by time slots, parameters of the \*MINTIME/\*MAXTIME type in
-    the commands CFTPART, etc.
+    the commands CFTPART,  etc.
 -   The maximum number
     of simultaneous transfers is exceeded
 
@@ -91,7 +91,7 @@ In these cases, the entries change to the H (Hold) or K (Keep) state.
 
 ### Connecting to the network
 
-When Transfer CFT has the resources for an At Disposal (D) transfer,
+When  Transfer CFT   has the resources for an At Disposal (D) transfer,
 it attempts to make the connection to the communication system attached
 to the partner of this transfer.
 

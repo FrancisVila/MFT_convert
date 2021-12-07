@@ -8,9 +8,9 @@
 
 ### Types of commands 
 
-The z/OS operator interface for Transfer CFT supports two types of commands:
+The z/OS operator interface for Transfer CFT  supports two types of commands:
 
--   The Transfer CFT commands described the
+-   The Transfer CFT commands described the    
 
 <!-- -->
 
@@ -22,11 +22,11 @@ The Transfer CFT operator interface for z/OS supplies the following responses:
 
 -   SGOP02I Command Complete dd/mm/yyyy, hh:mm:ss User=xxxxxx
     -   The command is processed without error.
--   SGOP03E Command error,RC=xxxxxxxx
+-   SGOP03E  Command error,RC=xxxxxxxx
     -   The command ends with the return code xx.
 -   SGCM05E Unknown Transfer CFT command...
     -   Transfer CFT does not recognize the command.
--   SGCM03E Command ignored
+-   SGCM03E  Command ignored
     -   The command is not processed.
 
 Related topics

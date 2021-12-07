@@ -2,7 +2,7 @@
     "title": "Troubleshoot the user interface",
     "linkTitle": "Troubleshoot the user interface",
     "weight": "190"
-}The Copilot server is running, but cannot connect to the user interface
+}The Copilot server is running, but  cannot connect to the user interface
 
 After a successful installation you can start the Transfer CFT Copilot server, but cannot connect to the user interface. Check the following:
 
@@ -19,13 +19,13 @@ Type of messages can include:
 
 **Certificate issues**:
 
-copsrestw\[10986\] CFT.REST.API \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:457)
+copsrestw\[10986\]     CFT.REST.API   \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:457)
 
-copsrestw\[10986\] CFT.REST.API \[0\] \* Error: copilot.ssl.SslKeyFile is not set
+copsrestw\[10986\]     CFT.REST.API   \[0\] \* Error: copilot.ssl.SslKeyFile is not set
 
-copsrestw\[10986\] CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
+copsrestw\[10986\]     CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
 
-copsrestw\[10986\] CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf parameters
+copsrestw\[10986\]     CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf parameters
 
 Check:
 
@@ -35,13 +35,13 @@ If using a certificate that requires a private key, ensure that you have provide
 
 **Incorrect path or name**:
 
-00000007 copsrestw\[11468\] CFT.REST.API \[0\] \* Can't parse Certificate file /home/cftqa64/CFT/CFTQAuser.p12
+00000007 copsrestw\[11468\]     CFT.REST.API   \[0\] \* Can't parse Certificate file /home/cftqa64/CFT/CFTQAuser.p12
 
-00000008 copsrestw\[11468\] CFT.REST.API \[0\] \* ===> Failed to open certificate file: fname=/home/cftqa64/CFT/CFTQAuser.p12, size=0, errno=2.
+00000008 copsrestw\[11468\]     CFT.REST.API   \[0\] \* ===> Failed to open certificate file: fname=/home/cftqa64/CFT/CFTQAuser.p12, size=0, errno=2.
 
-00000009 copsrestw\[11468\] CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
+00000009 copsrestw\[11468\]     CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
 
-00000010 copsrestw\[11468\] CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf parameters
+00000010 copsrestw\[11468\]     CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf parameters
 
 Check:
 
@@ -49,29 +49,29 @@ An error in the name or path to the certificate (in UNIX also check for case se
 
 **Password issues**:
 
-00000006 copsrestw\[12013\] CFT.REST.API \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:396)
+00000006 copsrestw\[12013\]     CFT.REST.API   \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:396)
 
-00000007 copsrestw\[12013\] CFT.REST.API \[0\] \* Can't parse Certificate file /home/cftqa64/CFT/CFTQAUSER.p12
+00000007 copsrestw\[12013\]     CFT.REST.API   \[0\] \* Can't parse Certificate file /home/cftqa64/CFT/CFTQAUSER.p12
 
-00000008 copsrestw\[12013\] CFT.REST.API \[0\] \* ===> PKCS12 parse error: error:23076071:PKCS12 routines:PKCS12\_parse:mac verify failure.
+00000008 copsrestw\[12013\]     CFT.REST.API   \[0\] \* ===> PKCS12 parse error: error:23076071:PKCS12 routines:PKCS12\_parse:mac verify failure.
 
-00000009 copsrestw\[12013\] CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
+00000009 copsrestw\[12013\]     CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
 
-00000010 copsrestw\[12013\] CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf pa
+00000010 copsrestw\[12013\]     CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf pa
 
 Check that the password is correct for the used certificate.
 
 **Certificate has expired**:
 
-00000006 copsrestw\[14805\] CFT.REST.API \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:396)
+00000006 copsrestw\[14805\]     CFT.REST.API   \[0\] TRACE From restsslw\_get\_config\_from\_uconf (restsslw.c:396)
 
-00000007 copsrestw\[14805\] CFT.REST.API \[0\] \* Can't parse Certificate file /home/cftqa64/cft36/runtime/XPP\_Sample\_User1.p12
+00000007 copsrestw\[14805\]     CFT.REST.API   \[0\] \* Can't parse Certificate file /home/cftqa64/cft36/runtime/XPP\_Sample\_User1.p12
 
-\+ 2020/06/11 18:09:19.048918 00000008 copsrestw\[14805\] CFT.REST.API \[0\] \* ===> PKCS12 parse error: error:23076071:PKCS12 routines:PKCS12\_parse:mac verify failure.
+\+ 2020/06/11 18:09:19.048918 00000008 copsrestw\[14805\]     CFT.REST.API   \[0\] \* ===> PKCS12 parse error: error:23076071:PKCS12 routines:PKCS12\_parse:mac verify failure.
 
-00000009 copsrestw\[14805\] CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
+00000009 copsrestw\[14805\]     CFT.REST.APITCP\[0\] TRACE From rest\_worker\_server\_grab\_cb\_dispatch (restwrk.c:2163)
 
-00000010 copsrestw\[14805\] CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf pa
+00000010 copsrestw\[14805\]     CFT.REST.APITCP\[0\] \* Warning could not get Secure Configuration. Please check CG registration or copilot.ssl.\* uconf pa
 
 Check the expiration date and replace as needed.
 

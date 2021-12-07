@@ -12,7 +12,7 @@
 >
 > See Shared file system prerequisites for details.
 
-You can use a single key for a multi-node installation, as either:
+You can use a single key for  a multi-node installation, as either:
 
 -   The hostname must not be defined for the key, or
 -   The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance

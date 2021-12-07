@@ -15,10 +15,10 @@ to communicate with this partner.
 
 The maximum number of protocols supported is 4.
 
-For simultaneous transfers with this partner, {{< TransferCFT/componentshortname  >}} requires all the transfers to be performed according to the same protocol.
+For simultaneous transfers with this partner,  {{< TransferCFT/componentshortname  >}} requires all the transfers to be performed according to the same protocol.
 
 The value of the PROT parameter may include "wildcard" characters
-(mask). This syntax is only used in server mode. This means that the {{< TransferCFT/componentshortname  >}}
+(mask). This syntax is only used in server mode. This means that the  {{< TransferCFT/componentshortname  >}}
 will accept any protocol, the identifier of which corresponds to the generic
 value thereby defined.
 
@@ -31,7 +31,7 @@ Example 2
 PROT = (prot1 , prot?)
 
 The ‘?’ character designates the char\_mask character defined in the
-{{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your operating system.
+  {{< TransferCFT/componentshortname  >}} Operations Guide corresponding to your operating system.
 
 *In requester mode*: only the prot1
 protocol is used.

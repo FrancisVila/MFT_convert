@@ -6,7 +6,7 @@
 
 ## Download the update file
 
-Download product updates from the [Axway support website](https://support.axway.com/) to the machine you where you want to perform the update. Please note that the update file is a zip file. Do not unzip this file.
+Download product updates from the [Axway support website](https://support.axway.com/)  to the machine you where you want to perform the update. Please note that the update file is a zip file. Do not unzip this file.
 
 ## Impacted directories when updating a product
 
@@ -32,7 +32,7 @@ Stop {{< TransferCFT/componentshortname  >}} prior to installing a service pack 
 Use the following command to update Transfer CFT in silent mode:
 
 ```
-./Transfer\_CFT\_3.6\_<Install/SP/Patch><OS><BN>.run --mode unattended --installdir <installation\_directory>
+./Transfer_CFT_3.6_<Install/SP/Patch><OS><BN>.run --mode unattended --installdir <installation_directory>
 ```
 
 ### Update in text mode
@@ -52,7 +52,7 @@ To uninstall install the previous patch or service pack. For example, to remove 
 **Example**
 
 ```
-./Transfer\_CFT\_3.6\_SP1\_<OS>\_<BN>.run --mode text
+./Transfer_CFT_3.6_SP1_<OS>_<BN>.run --mode text
 ```
 
 To verify, from the Transfer CFT &lt;runtime\_dir> run the `about `command.
@@ -68,7 +68,7 @@ This section describes the procedure to apply a patch or service pack on a multi
 1.  Connect to the first host.
 2.  Stop all nodes running on this host by running the command: `copstop`  
     Copilot services are stopped, and local nodes are automatically re-started on the other hosts.
-3.  Check that the nodes are re-started by using the command: `CFTUTIL listnode`
+3.  Check that the nodes are re-started by using  the command: `CFTUTIL listnode`
 4.  Install the patch or the service pack as usual using {{< TransferCFT/transfercftname >}} installer as described in [Install a standard update](#Install).
 5.  Start Copilot services.
 6.  Connect to the next host and repeat the procedure starting at of **Step 2** (above).

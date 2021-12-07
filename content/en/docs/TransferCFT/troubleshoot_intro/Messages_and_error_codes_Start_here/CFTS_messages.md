@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTS",
     "linkTitle": "CFTS messages",
     "weight": "360"
-}This topic lists the CFTSxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTSxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -22,8 +22,8 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 V23 format
 V24 format
 Warning
-<span id="CFTS01W"></span>CFTS01W Synch. response time-out \_ Waitresp increased to &ns (&str)
-CFTS01W Synch. response time-out \_ Waitresp increased to &ns (&str)
+<span id="CFTS01W"></span>CFTS01W Synch. response time-out _ Waitresp increased to &ns (&str)
+CFTS01W Synch. response time-out _ Waitresp increased to &ns (&str)
 Explanation
 The message placed in a synchronous queue has received no response
 (time limit has expired).
@@ -42,9 +42,9 @@ Another attempt will be made.
 V23 format
 V24 format
 Error
-<span id="CFTS02E"></span>CFTS02E PART=&part \[IDF=&idf | IDM=&idm\]
+<span id="CFTS02E"></span>CFTS02E PART=&part [IDF=&idf | IDM=&idm]
 IDT=&idt DIRECT=&direct  &fname not found
-CFTS02E \_ &fname not found <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt DIRECT=&direct>
+CFTS02E _ &fname not found <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt DIRECT=&direct>
 Explanation
 The &fname
 procedure was not found for a given transfer (&idt).
@@ -59,9 +59,9 @@ was requested after a file or message transfer or subsequent to an error
 V23 format
 V24 format
 Information
-<span id="CFTS03I"></span>CFTS03I PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt
-\_ &fname submitted
-CFTS03I \_ &fname submitted<IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt> (&n sec)
+<span id="CFTS03I"></span>CFTS03I PART=&part [IDF=&idf | IDM=&idm]IDT=&idt
+_ &fname submitted
+CFTS03I _ &fname submitted<IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt> (&n sec)
 Explanation
 The procedure
 (&fname) was submitted for a given transfer (&idt).
@@ -92,9 +92,9 @@ parameters); the file to be submitted is empty.
 V23 format
 V24 format
 Error
-<span id="CFTS05E"></span>CFTS05E Error code &scs \_ Trying to
+<span id="CFTS05E"></span>CFTS05E Error code &scs _ Trying to
 access &str
-CFTS05E Error code &scs \_ Trying to access &str
+CFTS05E Error code &scs _ Trying to access &str
 Explanation
 An access error was detected on a file.
 This file (&fname) corresponds to an action requested
@@ -118,9 +118,9 @@ correct (attributes and length) and inform Product Support if necessary.
 V23 format
 V24 format
 Error
-<span id="CFTS06E"></span>CFTS06E Error code &scs \_ Trying to access temporary
+<span id="CFTS06E"></span>CFTS06E Error code &scs _ Trying to access temporary
 file
-CFTS06E Error code &scs \_ Trying to access temporary file
+CFTS06E Error code &scs _ Trying to access temporary file
 Explanation
 An action
 was requested at the end of a transfer or in the event of an error. This
@@ -169,8 +169,8 @@ Increase the file size, inform Product Support.
 V23 format
 V24 format
 Error
-<span id="CFTS08E"></span>CFTS08E Error code &scs \_ Executing temporary file
-CFTS08E Error code &scs \_ Executing temporary file
+<span id="CFTS08E"></span>CFTS08E Error code &scs _ Executing temporary file
+CFTS08E Error code &scs _ Executing temporary file
 Explanation
 The procedure
 (&fname) could not be executed for a given transfer (&idt).
@@ -191,9 +191,9 @@ Analyze the &scs code and inform Product Support if necessary.
 V23 format
 V24 format
 Error
-<span id="CFTS10E"></span>CFTS10E File communication task error (&str1) \_
+<span id="CFTS10E"></span>CFTS10E File communication task error (&str1) _
 &str2
-CFTS10E File communication task error (&str1) \_ &str2
+CFTS10E File communication task error (&str1) _ &str2
 Explanation
 Following a synchronous message queue time-out, the communication
 task aborted.
@@ -229,9 +229,9 @@ Axway Support.
 V23 format
 V24 format
 Error
-<span id="CFTS11E"></span>CFTS11E Allocation error \_ Trying to access temporary
+<span id="CFTS11E"></span>CFTS11E Allocation error _ Trying to access temporary
 file
-CFTS11E Allocation error \_ Trying to access temporary file
+CFTS11E Allocation error _ Trying to access temporary file
 Explanation
 An action
 was requested at the end of a transfer or in the event of an error.
@@ -259,9 +259,9 @@ Action
 V23 format
 V24 format
 Warning
-<span id="CFTS12W"></span>CFTS12W Error code &scs \_ CFT write messages to
+<span id="CFTS12W"></span>CFTS12W Error code &scs _ CFT write messages to
 output stream
-CFTS12W Error code &scs \_ CFT write messages to output stream
+CFTS12W Error code &scs _ CFT write messages to output stream
 Explanation
 The Transfer
 CFT logging process can no longer write messages in the log file(s) (problem
@@ -279,8 +279,8 @@ Analyze the &scs code and inform Product Support if necessary.
 V23 format
 V24 format
 Error
-<span id="CFTS13E"></span>CFTS13E Semaphore failure &cs\_CFTTPRO aborted
-CFTS13E Semaphore failure &cs\_CFTTPRO aborted
+<span id="CFTS13E"></span>CFTS13E Semaphore failure &cs_CFTTPRO aborted
+CFTS13E Semaphore failure &cs_CFTTPRO aborted
 Explanation
 Problem
 receiving an internal {{< TransferCFT/componentshortname >}} message by the PROTOCOL task.
@@ -324,8 +324,8 @@ context killed. The &ctx values specify the context concerned.
 V23 format
 V24 format
 Error
-<span id="CFTS16E"></span>CFTS16E Synch. response time-out\_End transfer exit
-CFTS16E Synch. response time-out \_ End of transfer exit
+<span id="CFTS16E"></span>CFTS16E Synch. response time-out_End transfer exit
+CFTS16E Synch. response time-out _ End of transfer exit
 Explanation
 The exit
 task is run but does not respond to the {{< TransferCFT/componentshortname >}}. This corresponds
@@ -345,9 +345,9 @@ Inform Product Support.
 V23 format
 V24 format
 Error
-<span id="CFTS17E"></span>CFTS17E Error code &scs \_ Trying to access End transfer
+<span id="CFTS17E"></span>CFTS17E Error code &scs _ Trying to access End transfer
 exit
-CFTS17E Error code &scs \_ Trying to access End of transfer exit
+CFTS17E Error code &scs _ Trying to access End of transfer exit
 Explanation
 Error posting a {{< TransferCFT/componentshortname >}} message to the exit task during inter-task
 communications.
@@ -364,8 +364,8 @@ Inform Product Support.
 V23 format
 V24 format
 Error
-<span id="CFTS18W"></span><span id="CFTS18E"></span>CFTS18E PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt \_ Catalog record Update Error: &scs
-CFTS18E \_ Catalog Update Error: &scs <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt>
+<span id="CFTS18W"></span><span id="CFTS18E"></span>CFTS18E PART=&part [IDF=&idf | IDM=&idm] IDT=&idt _ Catalog record Update Error: &scs
+CFTS18E _ Catalog Update Error: &scs <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt>
 Explanation
 Transfer CFT catalog update issue with error code = &scs.
 Consequence
@@ -378,9 +378,9 @@ The transfer record is not updated.
 V23 format
 V24 format
 Warning
-<span id="CFTS18W"></span>CFTS18W PART=&part \[IDF=&idf | IDM=&idm\]
-IDT=&idt \_ Catalog record label
-CFTS18W \_ Catalog record &label <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt>
+<span id="CFTS18W"></span>CFTS18W PART=&part [IDF=&idf | IDM=&idm]
+IDT=&idt _ Catalog record label
+CFTS18W _ Catalog record &label <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt>
 Explanation
 Label
 equals "State not updated x -> y" (x = current state,
@@ -399,9 +399,9 @@ Inform Product Support.
 V23 format
 V24 format
 Information
-<span id="CFTS19I"></span>CFTS19I PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt
-\_ Catalog record label
-CFTS19I \_ Catalog record &str <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt>
+<span id="CFTS19I"></span>CFTS19I PART=&part [IDF=&idf | IDM=&idm]IDT=&idt
+_ Catalog record label
+CFTS19I _ Catalog record &str <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt>
 Explanation
 Information
 message label equals "updated x to y"  (x = current
@@ -420,7 +420,7 @@ CFTS20I &str", &str = Communication file row number deleted: nnnnnnnn
 or File communication task INIT (&n,WSCAN=&wscan,RET=&ret)
 Explanation
 Communication file related message where the 8 digits (n) represent the record number.
-If the jobname is set in the catalog, then the information <JOBNAME=PID> (all platforms except z/OS) or <JOBNAME=jobname jobid> (z/OS platforms) displays in the message in place of (&str).
+If the jobname is set in the catalog, then the information <JOBNAME=PID> (all platforms except z/OS) or <JOBNAME=jobname jobid> (z/OS platforms) displays in the message in place of (&str).  
 ```
 
  
@@ -429,9 +429,9 @@ If the jobname is set in the catalog, then the information <JOBNAME=PID> (all pl
 V23 format
 V24 format
 Information
-<span id="CFTS21I"></span>CFTS21I PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt
+<span id="CFTS21I"></span>CFTS21I PART=&part [IDF=&idf | IDM=&idm]IDT=&idt
 Exit request ID=&id
-CFTS21I Exit request ID=&id <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt>
+CFTS21I Exit request ID=&id <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt>
 Explanation
 Information message prior to sending information to the end
 of transfer exit.
@@ -463,9 +463,9 @@ V23 format
 V24 format
 Error
 <span id="CFTS23E"></span>CFTS23E Bad user return code <details>
-CFTS23E &str PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt ", &str = Bad End transfer exit version : &ver / &ver
+CFTS23E &str PART=&part [IDF=&idf | IDM=&idm] IDT=&idt ", &str = Bad End transfer exit version : &ver / &ver
 or
-CFTS23E &str <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt >") Invalid state transit '&state'->'&state' or Unknown state &state
+CFTS23E &str <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt >") Invalid state transit '&state'->'&state' or Unknown state &state
 or
 Unknown action &action or Bad User return code : &scs
 Explanation
@@ -474,7 +474,7 @@ Error message specific to the end-of-transfer user exit. The details that displa
 V24 format:
 `CFTS23E Bad User return code: 4 <IDTU=idtu PART=part1 IDF=idf1  IDT=idt >`
 V23 format:
-CFTS23E Bad User return code : 4 PART=part1 IDF=idf1 IDT=idt
+CFTS23E Bad User return code : 4 PART=part1    IDF=idf1      IDT=idt
 Consequence
 None.
 ```
@@ -516,7 +516,7 @@ synchronous communication task can be stopped or continued (and either Terminati
 &str).
 Action
 Notify Technical Support, if necessary. Furnish the complete
-message as well as the synchronous
+message as well as the  synchronous
 communication media parameters.
 ```
 
@@ -526,8 +526,8 @@ communication media parameters.
 V23 format
 V24 format
 Information
-<span id="CFTS29I"></span>CFTS29I Cannot acces XTRK task \_ &str
-CFTS29I Cannot acces XTRK task \_ &str
+<span id="CFTS29I"></span>CFTS29I Cannot acces XTRK task _ &str
+CFTS29I Cannot acces XTRK task _ &str
 Explanation
 Problem in communication with the Sentinel monitoring task.
 Action
@@ -707,11 +707,11 @@ V23 format
 V24 format
 Information
  
-<span id="CFTS37I"></span>CFTS37I CRONJOB ID=&idcron, CRONTAB=&cronname &exec executed, NEXT=&date
+<span id="CFTS37I"></span>CFTS37I CRONJOB ID=&idcron, CRONTAB=&cronname  &exec executed, NEXT=&date
 CFTS37I CRONJOB: ID=&idcron, CRONTAB=&cronname ACT DONE
 CFTS37I CRONJOB: RECONFIG type=CRON DONE
 Explanation
-Job defined by &exec is executed correctly; the next submit is indicated in NEXT=date time.
+Job defined by &exec is executed correctly; the next submit  is indicated  in NEXT=date time.
 ```
 
 [ ](../cfti_messages)
@@ -766,15 +766,15 @@ Fatal
 <span id="CFTS40F"></span>CFTS40F CFTACCNT FORMAT=(V23/V24) not available for &fname
 CFTS40F CFTACCNT FORMAT=(V23|V24) not available for &fname
 Explanation
-An error occurred in the FORMAT=V23/V24 (V23 default) parameter of CFTFILE TYPE=ACCNT. When using the V23 format, the saved description (for ACCOUNT files) is the same as in previous versions. However when using the V24 format, the length for saving is 2048, and  the saved description takes into account the new longer field lengths.
+An error occurred in the FORMAT=V23/V24 (V23 default) parameter of CFTFILE  TYPE=ACCNT. When using the V23 format, the saved description (for ACCOUNT  files) is the same as in previous versions. However when using the V24  format, the length for saving is 2048, and  the saved description takes into  account the new longer field lengths.
 
 > **Note:**
-> The FORMAT parameter for the CFTACCNT command must be the same setting as for CFTFILE TYPE=ACCNT. If not, a message displays in the LOG and Transfer CFT doesnot start.
+> The FORMAT parameter for the  CFTACCNT command must be the same setting as for CFTFILE TYPE=ACCNT. If not,  a message displays in the LOG and Transfer CFT doesnot start.
 
-The message is either:
-   CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT    
-   CFTS40F CFTACCNT FORMAT=V23 not available for CFT.ACCNT
-Followed by the message: CFTI17F Init error \_ Account file .CFT.ACCNT
+The message is  either:
+   CFTS40F CFTACCNT FORMAT=V24 not available for CFT.ACCNT      
+   CFTS40F CFTACCNT FORMAT=V23 not available for CFT.ACCNT  
+Followed by the message: CFTI17F Init error _ Account file .CFT.ACCNT
 
 ```
 
@@ -880,8 +880,8 @@ The message is ignored.
 V23 format
 V24 format
 Fatal
-<span id="CFTS46F"></span>CFTS46F CFTPRX error \_ &str
-CFTS46F CFTPRX error \_ &str
+<span id="CFTS46F"></span>CFTS46F CFTPRX error _ &str
+CFTS46F CFTPRX error _ &str
 Explanation
 A fatal error occurred in the proxy task (CFTPRX). The error details are in &str.
 Consequence
@@ -896,8 +896,8 @@ If necessary, contact Axway support.
 V23 format
 V24 format
 Error
-<span id="CFTS47E"></span>CFTS47E CFTPRX error \_ &str
-CFTS47E CFTPRX error \_ &str
+<span id="CFTS47E"></span>CFTS47E CFTPRX error _ &str
+CFTS47E CFTPRX error _ &str
 Explanation
 A significant error occurred in the proxy task (CFTPRX). The error is detailed in &str.
 Consequence
@@ -912,8 +912,8 @@ If necessary, contact Axway support.
 V23 format
 V24 format
 Warning
-<span id="CFTS48W"></span>CFTS48W CFTPRX \_ &str
-CFTS48W CFTPRX \_ &str
+<span id="CFTS48W"></span>CFTS48W CFTPRX _ &str
+CFTS48W CFTPRX _ &str
 Explanation
 An anomaly occurred in the proxy task (CFTPRX). The anomaly details are in &str.
 ```
@@ -924,8 +924,8 @@ An anomaly occurred in the proxy task (CFTPRX). The anomaly details are in &str.
 V23 format
 V24 format
 Information
-<span id="CFTS49I"></span>CFTS49I CFTPRX \_ &str
-CFTS49I CFTPRX \_ &str
+<span id="CFTS49I"></span>CFTS49I CFTPRX _ &str
+CFTS49I CFTPRX _ &str
 Explanation
 Information message from the Proxy task (CFTPRX). The &str value gives additional details.
 ```
@@ -936,8 +936,8 @@ Information message from the Proxy task (CFTPRX). The &str value gives additiona
 V23 format
 V24 format
 Fatal
-<span id="CFTS50F"></span>CFTS50F CFTJRE error \_ &str
-CFTS50F CFTJRE error \_ &str
+<span id="CFTS50F"></span>CFTS50F CFTJRE error _ &str
+CFTS50F CFTJRE error _ &str
 Explanation
 A fatal error occurred when starting the CFT Java task (CFTJRE). The error is detailed in &str.
 Consequence
@@ -952,8 +952,8 @@ If necessary, contact {{< TransferCFT/platformorsuiteshortname >}} support.
 V23 format
 V24 format
 Error
-<span id="CFTS51E"></span>CFTS51E CFTJRE error \_ &str
-CFTS51E CFTJRE error \_ &str
+<span id="CFTS51E"></span>CFTS51E CFTJRE error _ &str
+CFTS51E CFTJRE error _ &str
 Explanation
 A significant error occurred in the {{< TransferCFT/componentshortname >}} Java task (CFTJRE). The error is detailed in &str.
 Consequence
@@ -968,8 +968,8 @@ If necessary, contact {{< TransferCFT/platformorsuiteshortname >}} support.
 V23 format
 V24 format
 Warning
-<span id="CFTS52W"></span>CFTS52W CFTJRE \_ &str
-CFTS52W CFTJRE \_ &str
+<span id="CFTS52W"></span>CFTS52W CFTJRE _ &str
+CFTS52W CFTJRE _ &str
 Explanation
 An anomaly occurred in the {{< TransferCFT/componentshortname >}} Java task (CFTJRE). The anomaly is detailed in &str.
 ```
@@ -980,8 +980,8 @@ An anomaly occurred in the {{< TransferCFT/componentshortname >}} Java task (CFT
 V23 format
 V24 format
 Error
-<span id="CFTS53I"></span>CFTS53I CFTJRE \_ &str
-CFTS53I CFTJRE \_ &str
+<span id="CFTS53I"></span>CFTS53I CFTJRE _ &str
+CFTS53I CFTJRE _ &str
 Explanation
 Information message from the {{< TransferCFT/componentshortname >}} Java task (CFTJRE). The &str value gives additional details.
 ```
@@ -1020,13 +1020,13 @@ Information message from the Accelerator task (CFTACC). the &str value gives mor
 V23 format
 V24 format
 Error
-<span id="CFTS56E"></span>CFTS56E Central Governance error (<error\_code>) <error\_msg>
+<span id="CFTS56E"></span>CFTS56E Central Governance  error (<error_code>) <error_msg>
 CFTS56E Central Governance &str", &str = &type error (send): (&code) &message
 CFTS56E Central Governance &str", &str = &type error (recv): (&code) &message
 Explanation
-An error occurred when executing a <request> on Central Governance.
+An error occurred when executing  a <request> on Central Governance.
 Consequence
-The {{< TransferCFT/componentshortname >}} instance does not display the correct status.
+The {{< TransferCFT/componentshortname >}} instance  does not display the correct status.
 ```
 
  
@@ -1036,14 +1036,14 @@ V23 format
  
 V24 format
 Warning
-<span id="CFTS57W"></span>CFTS57W Synchronous communication \_ Authentication ignored - authentication\_enable=yes but authentication\_method=&auth\_method
-CFTS57W Synchronous communication \_ Authentication ignored - authentication\_enable=yes but authentication\_method=&auth\_method
+<span id="CFTS57W"></span>CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&auth_method
+CFTS57W Synchronous communication _ Authentication ignored - authentication_enable=yes but authentication_method=&auth_method
 Explanation
 Possible scenarios include:
 
--   Authentication\_enable=yes but authentication\_method=noneIn the unified configuration authentication is enabled, but no mode is defined: uconf: cft.server.cftcoms.authentication\_enable=yes
-    uconf: cft.server.authentication\_method=none
--   User=user01 Group=group01 provided a password but authentication\_enable=noIn the CONFIG command the PASSWORD parameter is set, but in the unified configuration it is disabled: uconf:cft.server.cftcoms.authentication\_enable=no
+-   Authentication_enable=yes but authentication_method=noneIn the unified configuration authentication is enabled, but no mode is defined: uconf: cft.server.cftcoms.authentication_enable=yes
+    uconf: cft.server.authentication_method=none
+-   User=user01 Group=group01 provided a password but authentication_enable=noIn the CONFIG command the PASSWORD parameter is set, but in the unified configuration it is disabled: uconf:cft.server.cftcoms.authentication_enable=no
 
 ```
 
@@ -1053,8 +1053,8 @@ Possible scenarios include:
 V23 format
 V24 format
 Error
-<span id="CFTS59E"></span>CFTS59E Multi-node error \_ &str
-CFTS58F Multi-node error \_ &str
+<span id="CFTS59E"></span>CFTS59E Multi-node error _ &str
+CFTS58F Multi-node error _ &str
 Explanation
 An important error occurred during the transfer recovery. The error is detailed in &str.
 Consequence
@@ -1067,8 +1067,8 @@ Contact the support team if necessary.
 V23 format
 V24 format
 Warning
-<span id="CFTS60W"></span>CFTS60W Multi-node \_ &str
-CFTS60W Multi-node \_ &str
+<span id="CFTS60W"></span>CFTS60W Multi-node _ &str
+CFTS60W Multi-node _ &str
 Explanation
 An anomaly occurred during the transfer recovery. The anomaly is detailed in &str.
 ```
@@ -1079,8 +1079,8 @@ An anomaly occurred during the transfer recovery. The anomaly is detailed in &st
 V23 format
 V24 format
 Information
-<span id="CFTS61I"></span>CFTS61I Multi-node \_ &str
-CFTS61I Multi-node \_ &str
+<span id="CFTS61I"></span>CFTS61I Multi-node _ &str
+CFTS61I Multi-node _ &str
 Explanation
 Displays information about the multi-node transfer recovery phase. The &str value provides additional details.
 ```
@@ -1109,8 +1109,8 @@ Where:
 V23 format
 V24 format
 Fatal
-<span id="CFTS63F"></span>CFTS63F Secure Relay fatal error \_ &str
-CFTS63F Secure Relay fatal error \_ &str
+<span id="CFTS63F"></span>CFTS63F Secure Relay fatal error _ &str
+CFTS63F Secure Relay fatal error _ &str
 Explanation
 Fatal error detected. &str indicates the reason
 Secure Relay Master agent is stopped.
@@ -1125,8 +1125,8 @@ Check the configuration depending on the reason and restart Transfer CFT.
 V23 format
 V24 format
 Information
-<span id="CFTS64I"></span>CFTS64I Secure Relay \_ &str
-CFTS64I Secure Relay \_ &str
+<span id="CFTS64I"></span>CFTS64I Secure Relay _ &str
+CFTS64I Secure Relay _ &str
 Explanation
 Secure relay information message : &str= Router agent &n is enabled but has no host or ports.
 ```
@@ -1135,10 +1135,10 @@ Secure relay information message : &str= Router agent &n is enabled but has no h
 V23 format
 V24 format
 Warning
-<span id="CFTS64I"></span><span id="CFTS65W"></span>CFTS65W Unable to launch another script for 60s due to the cft.server.max\_processing\_scripts limit
-CFTS65W Unable to launch another script for 60s due to the cft.server.max\_processing\_scripts limit
+<span id="CFTS64I"></span><span id="CFTS65W"></span>CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit
+CFTS65W Unable to launch another script for 60s due to the cft.server.max_processing_scripts limit
 Explanation
-The total number of transfers in the AC, YC and ZC state has reached the `cft.server.max_scripts` limit and has not decreased for 60s.
+The total number of transfers in the AC, YC and ZC state has reached the cft.server.max_scripts limit and has not decreased for 60s.
 Consequence
 A script has been waiting to be launched for at least 60s.
 Action
@@ -1151,10 +1151,10 @@ Check that there is an END command in the EXEC scripts.
 V23 format
 V24 format
 Error
-<span id="CFTS64I"></span><span id="CFTS66E"></span>CFTS66E TFIL error \_ &str", &str = Regular expression &mask parsing error or List generation error &scs
-CFTS66E TFIL error \_ &str
+<span id="CFTS64I"></span><span id="CFTS66E"></span>CFTS66E TFIL error _ &str", &str = Regular expression &mask parsing error or List generation error &scs
+CFTS66E TFIL error _ &str
 Explanation
-The regular expression (REGEX) &mask configured in fname (SEND or CFTSEND) can not be parsed with error &scs
+The regular expression (REGEX) &mask  configured in fname (SEND or CFTSEND) can not be parsed  with error &scs
 Consequence.
 Where;
 
@@ -1185,8 +1185,8 @@ The **<var>** variable contains blacklisted characters.
 V23 format
 V24 format
 Error
-<span id="CFTS68E"></span>CFTS68E PART=&part \[IDF=&idf | IDM=&idm\]IDT=&idt \_ &fname not executed
-CFTS68E \_ &fname not executed <IDTU=&idtu PART=&part \[IDF=&idf | IDM=&idm\] IDT=&idt DIRECT=&direct>
+<span id="CFTS68E"></span>CFTS68E PART=&part [IDF=&idf | IDM=&idm]IDT=&idt _ &fname not executed
+CFTS68E _ &fname not executed <IDTU=&idtu PART=&part [IDF=&idf | IDM=&idm] IDT=&idt DIRECT=&direct>
 Explanation
 The **&fname** script was not executed because a variable contained blacklisted characters. The file was nonetheless created, and may contain some data.
 ```
@@ -1242,7 +1242,7 @@ V23 format
 V24 format
 Error
 <span id="CFTS74E"></span>CFTS74E Command file Alert exec &fname &str"
-CFTS74E Command file Alert exec &fname &str"
+CFTS74E  Command file Alert exec &fname &str"
 Explanation
 The &FNAME procedure for a command file alert was not found or failed on access, producing this error.
 

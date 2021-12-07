@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTB",
     "linkTitle": "CFTAB messages",
     "weight": "270"
-}This topic lists the CFTBxx messages and provides a type, a description, and when applicable a consequence and corrective action.
+}This topic lists the  CFTBxx  messages and provides a type,  a description, and when applicable a consequence and corrective action.
 
 **Message format**
 
@@ -20,7 +20,7 @@ For V24: `CFTT57I &str transfer started   <IDTU=&idtu PART=&part IDF=&idf IDT=&i
 
 ### Auto documented messages
 
-Certain auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F, are not fully detailed as they are considered self-explanatory. The CFTAnnx messages refer to the acceleration feature on all platforms that support acceleration.
+Certain   auto-documented messages, for example CFTA01I, CFTA02W, CFTA03E, CFTA04F, are not fully detailed as they are considered self-explanatory. The CFTAnnx messages refer to the acceleration feature on all platforms that support acceleration.
 
 -   CFTA01, CFTLOG\_SYS\_INFOR "CFTA01I &str"
 -   CFTA02, CFTLOG\_SYS\_WARNI "CFTA02W &str"

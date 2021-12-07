@@ -27,7 +27,7 @@ Axway Installer supports installation on a Red Hat 6 platform however:
 
 *For HP-UX ia64 and HP-UX PA-RISC*
 
-HP-UX Password Hashing Infrastructure, PHI, enables the use of SHA512-based algorithms for user password hashes (rather than DES). This package is required for Transfer CFT, as it is more secure and provides a new function, crypt2(), for user control.
+HP-UX Password Hashing Infrastructure, PHI, enables the use of  SHA512-based algorithms for user password hashes (rather than DES). This package is required for Transfer CFT, as it is more secure and provides a new function, crypt2(),  for user control.
 
 For more information, refer to [HP-UX Password Hashing Infrastructure Release Notes](https://support.hpe.com/hpsc/doc/public/display?docId=emr_na-c02038049).
 

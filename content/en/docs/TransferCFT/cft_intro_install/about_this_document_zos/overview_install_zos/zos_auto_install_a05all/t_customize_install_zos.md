@@ -18,20 +18,20 @@ Or
 
 Before INCLUDE MEMBER=CFTENV add directives
 
-// EXPORT SYSMLIST=\*
+//     EXPORT SYSMLIST=\*
 
-// INCLUDE MEMBER=CFTENV
+//     INCLUDE MEMBER=CFTENV
 
 Example:
 
 ```
-// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
 
-> // EXPORT SYSMLIST=\*
-> // INCLUDE MEMBER=CFTENV
-> //CFTSND EXEC PCFTUTIL,PARM='',QUAL=&CFTENV,OUT=&OUT
-> //CFTPARM DD DUMMY to optimize
-> //CFTIN DD \*,SYMBOLS=(CNVTSYS,SUBSLOG)
+> //     EXPORT SYSMLIST=\*
+> //     INCLUDE MEMBER=CFTENV
+> //CFTSND   EXEC PCFTUTIL,PARM='',QUAL=&CFTENV,OUT=&OUT
+> //CFTPARM   DD  DUMMY    to optimize
+> //CFTIN     DD  \*,SYMBOLS=(CNVTSYS,SUBSLOG)
 > SEND PART=PARIS,IDF=BIN,
 > FNAME=&CFTENV..FTEST,
 > IDA=’&SYSNAME-&ZOSLVL-&SYSCLONE’
@@ -46,16 +46,16 @@ You can use the CFTINC member in an INCLUDE statement to reference a list of Tra
 Example:
 
 ```
-// LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB
-//  INCLUDE MEMBER=CFTENV
-//STREX EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'
+// LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB
+//       INCLUDE MEMBER=CFTENV
+//STREX  EXEC PGM=IKJEFT01,REGION=32M,PARM='%REX4CFT'
 //STEPLIB DD DISP=SHR,DSN=&CFTLOAD
-//SYSPROC DD DISP=SHR,
-//  DSN=MY.SYSPROC
-//SYSTSPRT DD SYSOUT=&OUT
-//SYSTSIN DD DUMMY
-//    SET QUAL=&CFTENV
-//    **INCLUDE MEMBER=CFTINC**
+//SYSPROC  DD  DISP=SHR,
+//          DSN=MY.SYSPROC
+//SYSTSPRT DD  SYSOUT=&OUT
+//SYSTSIN  DD  DUMMY
+//       SET QUAL=&CFTENV
+//         **INCLUDE MEMBER=CFTINC**
 ```
 
 ## PCFTUTIL / PCFTUTL procedures
@@ -72,21 +72,21 @@ These procedures are customized during installation phase.
 To run a CFTUTIL executable (default), for example:
 
 ```
-//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
-//   INCLUDE MEMBER=CFTENV
-//ABOUT EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',
-//   QUAL=&CFTENV
+//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//        INCLUDE MEMBER=CFTENV
+//ABOUT    EXEC PCFTUTL,PARM='ABOUT TYPE=CFT',
+//          QUAL=&CFTENV
 ```
 
 To run another CFTUTIL executable, for example CFTPKI:
 
 ```
-//LIB JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
-//  INCLUDE MEMBER=CFTENV
-//LISPKI EXEC PCFTUTL,PG=CFTPKI,PARM='',
-//  QUAL=&CFTENV
-//MYPKI DD DISP=SHR,DSN=&CFTENV..PKIFILE
-//CFTIN DD \*
+//LIB    JCLLIB ORDER=(MY.CFTPROD.PROCLIB)
+//       INCLUDE MEMBER=CFTENV
+//LISPKI   EXEC PCFTUTL,PG=CFTPKI,PARM='',
+//          QUAL=&CFTENV
+//MYPKI    DD  DISP=SHR,DSN=&CFTENV..PKIFILE
+//CFTIN    DD  \*
 LISTPKI PKIFNAME = $MYPKI,CONTENT=FULL
 /\*
 ```
@@ -124,7 +124,7 @@ The target.EXEC library contains an example of Transfer CFT procedures:
 -   TFCIPH: Transfer CFT Preprocessing script for TrustedFile
 -   TFDCIPH: Transfer CFT End of transfer script for TrustedFile
 -   TFDELFIL: Transfer CFT Send exec script for TrustedFile
--   CA7POST: Indicates to CA7 that the creation of a data set has completed
+-   CA7POST:          Indicates to CA7 that the creation of a data set has completed
 -   COPYFILR and COPYFILS: templates that use the COPYFILE command
 -   CRONSTAR: Sample of the JCL that is submitted at Transfer CFT STARTUP
 -   CRONSHUT: Sample of the JCL that is submitted at Transfer CFT shutdown
@@ -149,7 +149,7 @@ The maximum number of nested )SELs is 32, where:
 -   argument = constant, variable in the &xxx format
 -   op = condition operator
 
-> = EQU or EQ: equal to
+> =  EQU or EQ: equal to
 
 > &gt; or GT: greater than
 >
@@ -193,13 +193,13 @@ List of updated variables:
 -   samples.pesitssl\_sap.value
 -   samples.coms\_port.value
 
-You can run the JCL multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.
+You can run the JCL  multiple times, once to create the member .. SAMPLE (CFTPARM), which the procedure does not modify.
 
 <span id="D40INIT"></span>
 
 ## Format Transfer CFT work files <span id="kanchor40"></span>D40INIT
 
-The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB, adapt the following points to the requirements of the operating service:
+  The JOB D40INIT prepares the Transfer CFT z/OS files. Before submitting this JOB,  adapt the following points to the requirements of the operating service:
 
 -   File names (if the default values in the samples are not usable)
     -   By default file names are defined in JCL INCLUDE=CFTENV
@@ -263,7 +263,7 @@ E50PARM
 // DSN=&QUAL..SAMPLE(CFTPARM)
 //\*     DD DISP=SHR,
 //\* DSN=&QUAL..SAMPLE(CFTSFTP)
-The underlined parameters are substituted during the submit phase.
+The underlined parameters  are substituted during the submit phase.
 ```
 
 1.  Use the JCL SAMPLE(PKIKEY) as an example for handling keys required for SFTP.

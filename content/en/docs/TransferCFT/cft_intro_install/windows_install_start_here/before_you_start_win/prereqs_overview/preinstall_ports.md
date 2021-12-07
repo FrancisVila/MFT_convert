@@ -6,7 +6,7 @@
 
 You may need to modify the default port numbers, depending on your configuration.
 
-The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the  TCP ports 1761-1768  for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 
 | Component  |  Port  |

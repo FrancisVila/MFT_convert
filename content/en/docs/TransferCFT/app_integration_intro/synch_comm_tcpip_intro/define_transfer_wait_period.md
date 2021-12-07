@@ -2,7 +2,7 @@
     "title": "Wait for the catalog value to reach a state - SWAITCAT",
     "linkTitle": "Wait for catalog value to reach a state - SWAITCAT",
     "weight": "270"
-}The SWAITCAT command enables a client to wait until
+}The SWAITCAT command enables a client  to wait until
 a given transfer reaches a particular predefined phase, phasestep, or state before acting.
 
 Command syntax:
@@ -24,7 +24,7 @@ The SWAITCAT command enables you to perform the following functions:
     functioning
 
 SWAITCAT uses synchronous communication for notification when a predefined
-phase, phasestep or state is reached. Or, conversely, it can notify CFTUTIL if the
+phase, phasestep or state is reached. Or, conversely, it can notify CFTUTIL  if the
 phase, phasestep, or state
 is not reached (K or H phasestep).
 
@@ -76,7 +76,7 @@ CAT\_ID OP VALUE && CAT\_ID OP VALUE
 
 CAT\_ID OP VALUE || CAT\_ID OP VALUE
 
-Possible values for CAT\_ID, which filters on the current state:
+Possible values  for CAT\_ID, which filters on the current state:
 
 -   IDTU
 -   IDT
@@ -124,7 +124,7 @@ The Phasesteps parameter is a string that can be composed of D, H, C, K, X, E an
 
 -   \(D\) At disposal: The processing of the Phase is ready to be executed; it is ready to go.
 -   \(H\) Hold: The processing of the Phase is on hold and waiting for an action to be executed.
--   \(C\) Processing/Current: The Phase processing is being executed.
+-   \(C\) Processing/Current: The  Phase processing is being executed.
 -   \(R\) Retry: Retries renaming the file using the `FACTION retryrename `value.
 -   \(X\) Done: This phase step only exists for the Done phase, once all previous phases are complete.
 -   \(E\) Exit EOT: This phase step only exists for the Post-processing phase, to signal an [end-of-transfer exit](../../managing_exits/about_the_end_of_transfer_type_exit).

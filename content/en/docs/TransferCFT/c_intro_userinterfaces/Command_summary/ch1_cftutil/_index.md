@@ -18,7 +18,7 @@ An internal command or application consists of the following:
 The general command syntax is:
 
 ```
-<list\_of\_arguments>
+<list_of_arguments>
 ```
 
 An argument consists of the following elements:
@@ -32,17 +32,17 @@ The syntax of an argument is:
 <id> = <value>
 ```
 
-Separate two arguments by a, (comma). The command syntax becomes:
+Separate two arguments  by a, (comma). The command syntax becomes:
 
 ```
-\[<id> = <value>,\] \*<id> = <value>
+[<id> = <value>,] \*<id> = <value>
 The expression in brackets is repeated.
 ```
 
-The syntax for a parameter value results from the parameter type. A parameter can accept more than one value at a time. Set the multiple values in brackets and separate the values by a , (comma).
+The syntax for a parameter value  results from the parameter type. A parameter can accept more than one value at a time. Set the multiple values in brackets and separate the values by a , (comma).
 
 ```
-<id> = (\[<value>,\] \* <value>)
+<id> = ([<value>,] \* <value>)
 The expression in brackets is repeated.
 ```
 
@@ -112,7 +112,7 @@ id = YES
 
 ## Analyzing the source text
 
-A source language is comprised of he following elements:
+A  source language is comprised of he following elements:
 
 -   syntax
 -   semantics
@@ -126,6 +126,6 @@ The core of the shell is limited to parsing the source text. Language processing
 
 The purpose of the lexical analysis is to transform the source text to make it easier for the parser to handle. Lexical analysis can, for example, signal the use of unnecessary blanks, comments, and the delineation of simple syntax units.
 
-The parser is designed to recognize whether the proposed text belongs to the language. Semantic errors, which refers to those that relate to what the text means, are only detected at runtime.
+The parser is designed to recognize whether the proposed text belongs to the language.  Semantic errors,  which refers to those that relate to what the text means, are only detected at runtime.
 
-Conversely, parsing the source text creates a coded representation that is easier to handle, as it is more suited to a programming language. This coded representation is similar to the C language structure (text object).
+Conversely, parsing the source text creates a coded representation that is easier to handle, as it is more suited to a programming language. This coded representation is similar to the C language structure  (text object).

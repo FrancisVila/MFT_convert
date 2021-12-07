@@ -6,7 +6,7 @@
 
 ```
 Error
-<span id="CFTU00I"></span>CFTU00I: &Cmd \_
+<span id="CFTU00I"></span>CFTU00I: &Cmd _
 Correct (&str)
 Information
 The &Cmd command is executed correctly. The &str
@@ -81,7 +81,7 @@ inform Product Support if necessary.
 ```
 Error
 <span id="CFTU05E"></span>CFTU05E: &Cmd Failed
-\_ Unexpected end of file (command)
+_ Unexpected end of file (command)
 Explanation
 The end of the file was reached before the end of the command
 (the last character of the command line may be a comma).
@@ -113,7 +113,7 @@ restart the communication utility.
 ```
 Error
 <span id="CFTU07E"></span>CFTU07E: &Cmd Failed
-\_ unexpected end of file (comments)
+_ unexpected end of file (comments)
 Explanation
 The end of the file was reached before the end of the command
 (a comment inside the command may not be closed).
@@ -129,7 +129,7 @@ restart the communication utility.
 ```
 Error
 <span id="CFTU08E"></span>CFTU08E: &Cmd Failed
-\_ missing parenthesis
+_ missing parenthesis
 Explanation
 An opening or closing parenthesis is missing in the command
 syntax.
@@ -145,7 +145,7 @@ the communication utility.
 ```
 Error
 <span id="CFTU09E"></span>CFTU09E: &Cmd Failed
-\_ command size too large
+_ command size too large
 Explanation
 The length of the command name is greater than 8.
 Consequence
@@ -160,7 +160,7 @@ the communication utility.
 ```
 Error
 <span id="CFTU10E"></span>CFTU10E: &Cmd Failed
-\_ unknown command
+_ unknown command
 Explanation
 The command is unknown.
 Consequence
@@ -177,7 +177,7 @@ Correct the error and restart the communication utility.
 ```
 Error
 <span id="CFTU11E"></span>CFTU11E: &Cmd Failed
-\_ keyword &Keyw too large
+_ keyword &Keyw too large
 Explanation
 The length of the &Keyw keyword is greater than 8.
 Consequence
@@ -196,7 +196,7 @@ utility.
 ```
 Error
 <span id="CFTU12E"></span>CFTU12E: &Cmd Failed
-\_ illegal separator for keyword &Keyw
+_ illegal separator for keyword &Keyw
 Explanation
 A parameter separator in the &Cmd command is invalid.
 Consequence
@@ -210,7 +210,7 @@ Check the command syntax being sure that the separator is a comma. Correct the e
 
 ```
 Error
-<span id="CFTU13E"></span>CFTU13E: &Cmd Failed\_missing
+<span id="CFTU13E"></span>CFTU13E: &Cmd Failed_missing
 quote
 Explanation
 A closing quote (') is missing in the value assigned to
@@ -227,7 +227,7 @@ restart the communication utility.
 ```
 Error
 <span id="CFTU14E"></span>CFTU14E: &Cmd Failed
-\_ too many keywords
+_ too many keywords
 Explanation
 There are too many keywords for this command.
 Consequence
@@ -244,7 +244,7 @@ the communication utility.
 ```
 Error
 <span id="CFTU15E"></span>CFTU15E: &Cmd Failed
-\_ keyword &Keyw unknown or duplicate
+_ keyword &Keyw unknown or duplicate
 Explanation
 The &Keyw keyword is unknown or appears twice in the
 command.
@@ -262,7 +262,7 @@ the communication utility.
 ```
 Error
 <span id="CFTU16E"></span>CFTU16E: &Cmd Failed
-\_ keyword &Keyw missing
+_ keyword &Keyw missing
 Explanation
 The &Keyw keyword, which is mandatory for the command,
 is missing.
@@ -278,7 +278,7 @@ the communication utility.
 ```
 Error
 <span id="CFTU17E"></span>CFTU17E: &Cmd Failed
-\_ keyword &Keyw value out of bounds
+_ keyword &Keyw value out of bounds
 Explanation
 The &Keyw keyword of the &Cmd command is numeric
 and its value has exceeded the authorized limits.
@@ -294,7 +294,7 @@ error and then restart the communication utility.
 ```
 Error
 <span id="CFTU18E"></span>CFTU18E: &Cmd Failed
-\_ invalid value for keyword &Keyw
+_ invalid value for keyword &Keyw
 Explanation
 The value of the &Keyw keyword of the &Cmd command
 is not authorized (numeric value for an alphabetic parameter for example).
@@ -312,7 +312,7 @@ error and then restart the communication utility.
 ```
 Error
 <span id="CFTU19E"></span>CFTU19E: CFTDEST Failed
-\_ keywords FNAME and &str are mutually exclusive
+_ keywords FNAME and &str are mutually exclusive
 Explanation
 If &str=PART
 The components of a broadcast list can either be described
@@ -362,7 +362,7 @@ a partner:
 
 ```
 Error
-<span id="CFTU24W"></span>CFTU24W : &Cmd \_
+<span id="CFTU24W"></span>CFTU24W : &Cmd _
 Warning (&str)
 Explanation
 A CFTUTIL command was correctly interpreted but no information
@@ -377,7 +377,7 @@ found). 
 
 ```
 Error
-<span id="CFTU26E"></span>CFTU26E : &Cmd \_
+<span id="CFTU26E"></span>CFTU26E : &Cmd _
 Error (&str)
 Explanation
 When executing the command, an error was detected. The
@@ -395,7 +395,7 @@ following list is not exhaustive, as the &str field is relatively self-explanato
     command (LISTCOM for example) resulted in an error when opening the communication
     file.
 -   File creation error: An error was detected when creating and
-    formatting the {{< TransferCFT/componentshortname >}} internal datafile (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/
+    formatting the {{< TransferCFT/componentshortname >}} internal datafile  (CFTUTIL CFTFILE TYPE=CAT/LOG/PARM/PART/
     command).
 -   File delete error: An error was detected when executing a request
     to delete a {{< TransferCFT/componentshortname >}} internal datafile (CFTUTIL CFTFILE TYPE= ,MODE=DELETE
@@ -472,7 +472,7 @@ if it is set and, if necessary, inform Product Support.
 ```
 Error
 <span id="CFTU30E"></span>CFTU30E : &Cmd Failed
-\_ Unable to create file &Fname
+_ Unable to create file &Fname
 Explanation
 Execution of the &Cmd command resulted in an error
 during the file create process.

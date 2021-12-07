@@ -11,7 +11,7 @@
 **\[TRK = {
 | ALL | NO | SUMMARY }\]**
 
-The default value that specifies how much detail {{< TransferCFT/componentshortname  >}} should
+The default value that specifies how much detail  {{< TransferCFT/componentshortname  >}} should
 provide Sentinel concerning transfers with a partner who does
 not have a defined [trk](../trk) value.
 

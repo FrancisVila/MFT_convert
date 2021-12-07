@@ -37,7 +37,7 @@ CFTAUTH      ID = RBULGC8,
 IDF = fil21
 ```
 
-Transfer CFT can only receive BULGC8 files with identifiers
+Transfer CFT can only receive  BULGC8 files with identifiers
 of the idfdef, idf1, idf2, idf3 type from the partner.
 
 Where the fil21 file contains:

@@ -38,9 +38,9 @@ Description
 
 pkitype
 Values: {passport , cft, system}
-\[passport\]: to manage certificates using PassPort
-\[cft\]:   to use the Transfer CFT PKI file (default value)
-\[system\]: PKI 'system' used
+[passport]: to manage certificates using PassPort
+[cft]:   to use the Transfer CFT PKI file (default value)
+[system]: PKI 'system' used
 pasaddr
 PassPort Server address
 pasport
@@ -97,18 +97,18 @@ Both the RING and OWNER are passed to the system from the PARM field or ROOTCID/
 
 ```
 CFTSSL         ID= …,
-ROOTCID = 'certificate authority\_1’,
+ROOTCID = 'certificate authority_1’,
 USERCID = 'Local user certificate’,
-PARM=’RING=ring\_name,OWNER=userid’
+PARM=’RING=ring_name,OWNER=userid’
 ```
 
 or
 
 ```
 CFTSSL ID= ...,
-ROOTCID = '(certificate authority\_1@userid\_1@ring\_name\_1 ,
-certificate authority\_2@userid\_2@ring\_name\_2)',
-USERCID = 'Local user certificate@userid@ring\_name',
+ROOTCID    = '(certificate authority_1@userid_1@ring_name_1 ,
+certificate authority_2@userid_2@ring_name_2)',
+USERCID    = 'Local user certificate@userid@ring_name',
 ```
 
 By default the delimiter between the id, the owner, and the ring name is '@' (x’7C’), but you can define a different delimiter using the PARM field of CFTSSL card.

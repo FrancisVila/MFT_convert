@@ -2,7 +2,7 @@
     "title": "Configure exchanges that use SSL",
     "linkTitle": "Configure exchanges that use SSL",
     "weight": "260"
-}There are two ways to configure Transfer CFT with Secure Relay using the TLS protocol:
+}There are two ways to configure Transfer CFT with  Secure Relay using the TLS protocol:
 
 -   End-to-end SSL: The remote peer communicates with Transfer CFT via Secure Relay (RA) using end-to-end SSL.
 -   SSL termination: The remote peer communicates with Secure Relay (RA) through an SSL channel. In this scenario, the handshake occurs between the remote peer and the Secure Relay RA. The RA retrieves the key and certificate stored in Transfer CFT through the Master Agent (MA) in order to complete the handshake.
@@ -42,9 +42,9 @@ CFTNET id = NETSRSSL,
 type = TCP,
 call = INOUT,
 class = 2,
-host = <network\_interface\_used\_by\_Router\_Agent>,
+host = <network_interface_used_by_Router_Agent>,
 protocol = SR,
-recallhost = 127.0.0.1, /\*network\_interface\_used\_by\_CFT\*/
+recallhost = 127.0.0.1, /\*network_interface_used_by_CFT\*/
 sslterm = NO
 
 ```
@@ -64,9 +64,12 @@ This example uses a CFTNET object called NETSRSSL.
 ```
 CFTPROT id = PESITSSL,
 
-net = NETSRSSL,
+        net = NETSRSSL,
+        
 sap = 1762,
+        
 ssl = PESITSSL,
+        
 prof = ANY
 
 ```
@@ -83,15 +86,19 @@ Example
 Here the CFTSSL object is used for incoming connections (direct=server).
 
 ```
-CFTSSL id = PESITSSL,
+CFTSSL  id = PESITSSL,
 
-version = TLSV1COMP,
+        version = TLSV1COMP,
+        
 direct = SERVER,
+        
 verify = NONE,
+        
 usercid = AXWMFTUSER,
+        
 rootcid = AXWMFTCA,
-ciphlist = (47),
-passw = <user\_cid\_password>
+        ciphlist = (47),
+        passw = <user_cid_password>
 **NOTE**: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
 
  
@@ -100,12 +107,14 @@ passw = <user\_cid\_password>
 Here the CFTSSL object is used for incoming connections (direct=client).
 
 ```
-CFTSSL id = PESITSSL,
+CFTSSL  id = PESITSSL,
 
-version = TLSV1COMP,
+        version = TLSV1COMP,
+        
 direct = CLIENT,
-rootcid = AXWMFTCA,
-ciphlist = (47)
+        
+        rootcid = AXWMFTCA,
+        ciphlist = (47)
 
 ```
 
@@ -122,28 +131,33 @@ Example
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
 ```
-CFTPART id = PARIS\_SSL,
+CFTPART id = PARIS_SSL,
+        
 prot = PESITSSL,
-sap = <remote\_partner\_sap>,
-nspart = NPARIS\_SSL,
-nrpart = NPHOENIX\_SSL
+        
+sap = <remote_partner_sap>,
+        
+nspart = NPARIS_SSL,
+        nrpart = NPHOENIX_SSL
  
-CFTTCP id = PARIS\_SSL,
+CFTTCP id = PARIS_SSL,
+      
 class = 2, /\* the same class as the one used in the CFTNET \*/
-host = <remote\_partner\_host\_address>
+      
+host = <remote_partner_host_address>
 ```
 
 ### How to enable Secure Relay FIPS mode
 
 #### Prerequisites
 
--   You require an installed Secure Relay Router Agent 2.7.3 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.3 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
+-   You require an installed Secure Relay Router Agent  2.7.3 that has a license for FIPS mode. Please refer to the *Secure Relay Router Agent 2.7.3 documentation* at [docs.axway.com](https://docs.axway.com/bundle) for more information.
 -   Your {{< TransferCFT/componentlongname >}} license key requires the FIPS option.
 
 #### Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
 
-1.  Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar` file as `iaik_jce-3.16.unused.`
-2.  Move the `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
+1.  Go to the in the` $CFTDIRINSTALL/distrib/xsr/` folder, and rename the `iaik_jce-3.16.jar`  file as `iaik_jce-3.16.unused.`
+2.  Move the  `entrust-toolkit-8.0.36.jar` file from the `$CFTDIRINSTALL/distrib/xsr/fips` folder to the `$CFTDIRINSTALL/distrib/xsr/` folder.
 
 ## SSL termination with Secure Relay
 
@@ -165,9 +179,9 @@ CFTNET id = NETSRSSL,
 type = TCP,
 call = INOUT,
 class = 2,
-host = <network\_interface\_used\_by\_Router\_Agent>,
+host = <network_interface_used_by_Router_Agent>,
 protocol = SR,
-recallhost = 127.0.0.1, /\*network\_interface\_used\_by\_CFT\*/
+recallhost = 127.0.0.1, /\*network_interface_used_by_CFT\*/
 sslterm = YES
 
 ```
@@ -187,9 +201,12 @@ This example uses a CFTNET object called NETSRSSL.
 ```
 CFTPROT id = PESITSSL,
 
-net = NETSRSSL,
+        net = NETSRSSL,
+        
 sap = 1762,
+        
 ssl = PESITSSL,
+        
 prof = ANY
 
 ```
@@ -206,15 +223,19 @@ Example
 Here the CFTSSL object is used for incoming connections (direct=server).
 
 ```
-CFTSSL id = PESITSSL,
+CFTSSL  id = PESITSSL,
 
-version = TLSV1COMP,
+        version = TLSV1COMP,
+        
 direct = SERVER,
+        
 verify = NONE,
+        
 usercid = AXWMFTUSER,
+        
 rootcid = AXWMFTCA,
-ciphlist = (47),
-passw = <user\_cid\_password>
+        ciphlist = (47),
+        passw = <user_cid_password>
 **NOTE**: You must enter a value in this field even if you are using "pki.type=cft", which normally does not require a password.
 
  
@@ -223,12 +244,14 @@ passw = <user\_cid\_password>
 Here the CFTSSL object is used for incoming connections (direct=client).
 
 ```
-CFTSSL id = PESITSSL,
+CFTSSL  id = PESITSSL,
 
-version = TLSV1COMP,
+        version = TLSV1COMP,
+        
 direct = CLIENT,
-rootcid = AXWMFTCA,
-ciphlist = (47)
+        
+        rootcid = AXWMFTCA,
+        ciphlist = (47)
 
 ```
 
@@ -245,13 +268,18 @@ Example
 This is an example of the CFTPART and CFTTCP objects configuration, using PESITSSL.
 
 ```
-CFTPART id = PARIS\_SSL,
+CFTPART id = PARIS_SSL,
+        
 prot = PESITSSL,
-sap = <remote\_partner\_sap>,
-nspart = NPARIS\_SSL,
-nrpart = NPHOENIX\_SSL
+        
+sap = <remote_partner_sap>,
+        
+nspart = NPARIS_SSL,
+        nrpart = NPHOENIX_SSL
  
-CFTTCP id = PARIS\_SSL,
+CFTTCP id = PARIS_SSL,
+      
 class = 2, /\* the same class as the one used in the CFTNET \*/
-host = <remote\_partner\_host\_address>
+      
+host = <remote_partner_host_address>
 ```

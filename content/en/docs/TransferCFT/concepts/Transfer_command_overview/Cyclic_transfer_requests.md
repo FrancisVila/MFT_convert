@@ -7,7 +7,7 @@ request is a periodic, repeated transfer request. The period, the time
 between 2 transfer activation cycles, is defined by the CYCLE and TCYCLE parameters.
 
 -   CYCLE: Numeric value for TCYCLE.
--   TCYCLE: The type of period, expressed in minutes (MIN), days (DAY), or months (MONTH).
+-   TCYCLE: The type of period, expressed  in minutes (MIN), days (DAY), or months (MONTH).
 
 ## Defining the cycle time frame
 
@@ -16,7 +16,7 @@ and MAXDATE/MAXTIME parameters, and corresponds to the global time during
 which the transfers are periodically repeated.
 
 The time slot for activating each basic transfer is defined by the MINDATE/MINTIME
-and CYCDATE/CYCTIME parameters, where:
+and CYCDATE/CYCTIME parameters,  where:
 
 -   CYCDATE: End date for activating
     a transfer in a cycle, where the value is recalculated for each new cycle.
@@ -26,14 +26,14 @@ and CYCDATE/CYCTIME parameters, where:
 >
 > The CYCDATE/CYCTIME is equivalent to the MAXDATE/MAXTIME for a request. If the request is not executed before the date/time, then the request is not executed (times out).
 
-The start time/date and cycle duration
+The start  time/date and cycle duration
 values are expressed in the following equation:
 
 `CYCLE * TCYCLE >= (CYCDATE,CYCTIME) - (MINDATE,MINTIME)`
 
 **Example**
 
-The example command creates a cyclic transfer request as shown below:
+The example command creates a cyclic transfer request as  shown below:
 
 ```
 SEND PART=PARIS, MINDATE=20150703, MINTIME=1000, MAXDATE=20151231, MAXTIME=1000, CYCLE=7, TCYCLE=DAY, CYCDATE=20150705, CYCTIME=1000
@@ -50,7 +50,7 @@ SEND PART=PARIS, MINDATE=20150703, MINTIME=1000, MAXDATE=20151231, MAXTIME=1000,
 
 A cyclic transfer request results in the creation of a generic virtual
 transfer entry for the actual transfers. This generic entry is maintained in the
-transfer catalog and gives rise, for each new cycle, to a real transfer. The generic entry is purged at the end of the last
+transfer catalog and gives rise, for each new cycle, to a  real transfer. The generic entry is purged at the end of the last
 cycle, when MAXDATE is exceeded.
 
 A generic entry is characterized by

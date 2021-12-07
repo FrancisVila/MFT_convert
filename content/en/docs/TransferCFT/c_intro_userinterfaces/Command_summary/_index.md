@@ -2,12 +2,12 @@
     "title": "Transfer CFT command guide and syntax ",
     "linkTitle": "Command guide and parameters",
     "weight": "130"
-}This topic provides a useful list of {{< TransferCFT/componentshortname  >}} commands,
+}This topic provides a useful list of  {{< TransferCFT/componentshortname  >}} commands,
 syntax, and parameters. For a more detailed description of the Transfer
-CFT commands, refer to the link displayed below each command
+CFT commands, refer to the link displayed below each  command
 syntax.
 
-The {{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
+The  {{< TransferCFT/componentshortname  >}} commands are presented in alphabetical order in this
 summary. Each
 command is presented with possible parameters and default values.
 
@@ -295,7 +295,7 @@ Syntax
 
 <span id="CFTCOM"></span>
 
-#### CFTCOM: Defines parameters related to the communication between applications and <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+#### CFTCOM: Defines parameters related to the communication between applications and  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 
 Syntax
 
@@ -370,7 +370,7 @@ media](../../admin_intro/admin_config_commands/communication_media_concepts)
 
 <span id="CFTCRON"></span>
 
-#### CFTCRON: Define <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cron jobs
+#### CFTCRON: Define  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> cron jobs
 
 Syntax
 
@@ -382,7 +382,7 @@ ID = identifier
 [EXEC](parameter_intro/exec)
 = filename
 
-[EXECPOLICY](parameter_intro/execpolicy) = \[ <u>INSTANCE</u> |ALLNODES \]
+[EXECPOLICY](parameter_intro/execpolicy)        = \[ <u>INSTANCE</u> |ALLNODES \]
 
 [TIME](parameter_intro/time)
 = { string | @shutdown | @startup } <span style="font-weight: bold;">\[FOR
@@ -533,7 +533,7 @@ Syntax
 = identifier
 
 [TYPE](parameter_intro/type)
-= { FILE | ACCESS | EXEC | BOT }
+= { FILE | ACCESS |  EXEC | BOT }
 
 \[ [COMMENT](parameter_intro/comment)
 = string \]
@@ -578,8 +578,8 @@ Syntax
 
 \[ [TYPE](parameter_intro/type)
 = { <span style="text-decoration: underline;">ALL</span>
-| ACCNT | APPL | AUTH | CAT | COM | CRON | DEST | EXIT | IDF | LOG
-| NET | PARM | PART | PROT | RECV | SEND | SSL | TCP | XLATE } \]
+| ACCNT | APPL | AUTH | CAT | COM | CRON | DEST |  EXIT | IDF | LOG
+|  NET | PARM | PART | PROT | RECV | SEND | SSL |  TCP |  XLATE } \]
 
 \[ [CONTENT](parameter_intro/content) = { <u>FULL</u> | BRIEF } \]
 
@@ -601,7 +601,7 @@ configuration](../about_cftutil/configuring_cft_start_here/cftext_command)
 
 <span id="CFTFILE"></span>
 
-#### CFTFILE: Create or delete <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files
+#### CFTFILE: Create or delete  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> files
 
 Syntax
 
@@ -697,16 +697,16 @@ Syntax
 See [CFTFOLDER](../web_copilot_ui/flow_def_intro/cftfolder) for additional parameter details.
 
 [IDF](parameter_intro/idf) = string
-&lt;/p>
+        &lt;/p>
 
 [PART](parameter_intro/part) = string
-&lt;/p>
+        &lt;/p>
 
 [SCANDIR](../web_copilot_ui/flow_def_intro/cftfolder#SCANDIR)
-= string&lt;/p>
+        = string&lt;/p>
 
 [WORKDIR](../web_copilot_ui/flow_def_intro/cftfolder#WORKDIR) = string
-&lt;/p>
+        &lt;/p>
 
 \[ ARCHIVEDIR = string \]
 
@@ -873,9 +873,9 @@ Syntax
 
 \[ [PORT](parameter_intro/port) = {0 ...65535 } \]
 
-\[ [SRCHOST](parameter_intro/srchost) = { string } \]
+\[ [SRCHOST](parameter_intro/srchost)    = { string } \]
 
-\[ SSLTERM { YES | <u>NO</u> } \]
+\[ SSLTERM           { YES | <u>NO</u> } \]
 
 #### PROTOCOL = GENERIC
 
@@ -960,7 +960,7 @@ resources](../../admin_intro/admin_config_commands/network_resource_concepts)
 
 <span id="CFTPARM"></span>
 
-#### CFTPARM: General <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment parameters
+#### CFTPARM: General  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> environment parameters
 
 Syntax
 
@@ -1211,8 +1211,8 @@ Syntax
 
 \[ [SYST](parameter_intro/syst)
 = { ‘<span style="text-decoration: underline;">
-‘</span> | GCOS7 | GCOS8 | GUARD | MVS | OS400 |
-UNIX | VM | VMS | VSE | WINNT | BS2000 } \]
+‘</span> | GCOS7 | GCOS8 | GUARD |  MVS |  OS400 |
+UNIX | VM | VMS |  VSE | WINNT | BS2000 } \]
 
 \[ [TRK](parameter_intro/trk)
 = { <span style="text-decoration: underline;">UNDEFINED</span>
@@ -1394,7 +1394,7 @@ CFTPROT TYPE = PESIT
 | n } \]
 
 \[ [RCOMP](parameter_intro/rcomp)
-= { <u>0</u>
+= { <u>0</u>  
 | 15 } \]
 
 \[ [RESTART](parameter_intro/restart)
@@ -2006,7 +2006,7 @@ Syntax
 
 \[ [FACTION](parameter_intro/faction)
 = { <span style="text-decoration: underline;">‘
-‘</span> | DELETE | ERASE | RENAME | VERIFY } \]
+‘</span> | DELETE | ERASE |  RENAME | VERIFY  } \]
 
 \[ [FBLKSIZE](parameter_intro/fblksize)
 = { <span style="text-decoration: underline;">0</span>
@@ -2137,7 +2137,7 @@ Syntax
 
 \[ [SERIAL](parameter_intro/serial) = { <u>' '</u> | Y | Z | X } \]
 
-\[ [SOURCEAPPL](parameter_intro/sourceappl) = string \]
+\[ [SOURCEAPPL](parameter_intro/sourceappl) =  string \]
 
 \[ [SPASSWD](parameter_intro/spasswd) = string \]
 
@@ -2240,7 +2240,7 @@ Syntax
 = { <span style="text-decoration: underline;">SHR</span>
 | OLD | CHECK } \]
 
-\[ FILENOTFOUND = { <u>ABORT</u> | IGNORE } \]
+\[ FILENOTFOUND =  { <u>ABORT</u> | IGNORE } \]
 
 \[ [FILTER](parameter_intro/filter) = string \]
 
@@ -2399,7 +2399,7 @@ n } \]
 
 \[ [SPASSWD](parameter_intro/spasswd) = string \]
 
-\[ [SOURCEAPPL](parameter_intro/sourceappl) = string \]
+\[ [SOURCEAPPL](parameter_intro/sourceappl) =  string \]
 
 \[ [STATE](parameter_intro/state)
 = { <span style="text-decoration: underline;">DISP</span>
@@ -2916,28 +2916,28 @@ Syntax
 
 Syntax
 
-\[ [APPCYCID](parameter_intro/appcycid)
+\[ [APPCYCID](parameter_intro/appcycid)  
 = string \]
 
-\[ [APPOBJID](parameter_intro/appobjid)
+\[ [APPOBJID](parameter_intro/appobjid)  
 = string \]
 
-\[ APPSTATE
+\[ APPSTATE  
 = string \]
 
-\[ [SAPPL](parameter_intro/sappl)
+\[ [SAPPL](parameter_intro/sappl)  
 = string \]
 
-\[ [RUSER](parameter_intro/ruser)
+\[ [RUSER](parameter_intro/ruser)  
 = string \]
 
-\[ [SUSER](parameter_intro/suser)
+\[ [SUSER](parameter_intro/suser)  
 = string \]
 
-\[ [RPASSWD](parameter_intro/rpassw)
+\[ [RPASSWD](parameter_intro/rpassw)  
 = string \]
 
-\[ [SPASSWD](parameter_intro/spasswd)
+\[ [SPASSWD](parameter_intro/spasswd)  
 = string \]
 
 \[ [BLKNUM](parameter_intro/blknum)
@@ -2954,7 +2954,7 @@ Syntax
 = { <span style="text-decoration: underline;">NO</span>
 | YES } \]
 
-\[ [FNAME](parameter_intro/fname)
+\[ [FNAME](parameter_intro/fname)  
 = string \]
 
 \[ [IDA](parameter_intro/ida)
@@ -2972,7 +2972,7 @@ Syntax
 
 \[ ISTATE = { YES | <u>NO</u> } \]
 
-\[ ISTATE
+\[ ISTATE  
 = string \]
 
 \[ KDATE
@@ -2983,10 +2983,10 @@ Syntax
 = { <span style="text-decoration: underline;">0</span>
 | n } \]
 
-\[ [NFNAME](parameter_intro/nfname)
+\[ [NFNAME](parameter_intro/nfname)  
 = string \]
 
-\[ [PARM](parameter_intro/parm)
+\[ [PARM](parameter_intro/parm)  
 = string \]
 
 \[ PHASE = string \]
@@ -2995,15 +2995,15 @@ Syntax
 
 \[ [PRI](parameter_intro/pri) Number { 0 - <u>256</u> } \]
 
-\[ [RAPPL](parameter_intro/rappl)
+\[ [RAPPL](parameter_intro/rappl)  
 = string \]
 
 \[ [SCOPE](parameter_intro/scope) = string \]
 
-\[ [SIGFNAME](parameter_intro/sigfname)
+\[ [SIGFNAME](parameter_intro/sigfname)  
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](parameter_intro/state)  = string \]
 
 [END details]()
 
@@ -3042,7 +3042,7 @@ Syntax
 \[ [IDTU](parameter_intro/idtu)
 = string  \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](parameter_intro/state)  = string \]
 
 \[ KDATE
 = { <span style="text-decoration: underline;">0</span>
@@ -3252,9 +3252,9 @@ Syntax
 
 \[ LINES = { -10000 | <u>-20</u> | 10000 } \]
 
-\[ [DATEMAX](parameter_intro/datemin_datemax) = { 0 | <u>991231</u> } \]
+\[ [DATEMAX](parameter_intro/datemin_datemax) =  { 0 | <u>991231</u> } \]
 
-\[ [DATEMIN](parameter_intro/datemin_datemax) = { <u>0</u> | 991231 } \]
+\[ [DATEMIN](parameter_intro/datemin_datemax)           = { <u>0</u> | 991231 } \]
 
 \[ [DATETIMEMAX](parameter_intro/datetimemax) = { 0 | <u>99123123595999</u> } \]
 
@@ -3262,11 +3262,11 @@ Syntax
 
 \[ TIMEMIN = { <u>0</u>| 23595999 } \]
 
-\[ TIMEMAX = { 0 | <u>23595999</u> } \]
+\[ TIMEMAX           = { 0 | <u>23595999</u> } \]
 
-\[ PATTERN = string \]
+\[ PATTERN           =     string \]
 
-\[ DISPLAYNODEID = { <u>YES</u> | NO } \]
+\[ DISPLAYNODEID     = { <u>YES</u> | NO } \]
 
 \[ NODE = string \]
 
@@ -3280,7 +3280,7 @@ No parameters
 
 <span id="LISTPARM"></span>
 
-#### LISTPARM: Display <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner details
+#### LISTPARM: Display  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> partner details
 
 Syntax
 
@@ -3318,7 +3318,7 @@ Syntax
 
 \[ [TYPE](parameter_intro/type)
 = { <span style="text-decoration: underline;">ALL</span>
-| DEST | PART | TCP | } \]
+| DEST |  PART |  TCP | } \]
 
 [LISTPART details](../about_cftutil/configuring_cft_start_here/listpart_command)
 
@@ -3394,7 +3394,7 @@ Syntax
 Syntax
 
 \[ [TYPE](parameter_intro/type)
-= { <span style="text-decoration: underline;">CRON</span> | UCONF | CAT | FOLDER | PARMCACHE | AM
+= { <span style="text-decoration: underline;">CRON</span> | UCONF | CAT |  FOLDER | PARMCACHE | AM
 } \]
 
  [Manage configuration updates](../../admin_intro/admin_commands_intro/reconfig)
@@ -3638,7 +3638,7 @@ Syntax
 \[ [IDTU](parameter_intro/idtu)
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](parameter_intro/state)  = string \]
 
 \[ KDATE
 = { <span style="text-decoration: underline;">0</span>
@@ -3724,7 +3724,7 @@ Syntax
 
 \[ [FACTION](parameter_intro/faction)
 = { <span style="text-decoration: underline;">NONE</span>
-| DELETE | ERASE | ARCHIVE } \]
+| DELETE | ERASE |  ARCHIVE } \]
 
 \[ [FBLKSIZE](parameter_intro/fblksize)
 = n \]
@@ -4161,7 +4161,7 @@ system date</span> | date } \]
 
 <span id="SHUT"></span>
 
-#### SHUT: Shut down <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 
+#### SHUT: Shut down  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> 
 
 Syntax
 
@@ -4209,7 +4209,7 @@ Syntax
 
 \[ MAXDURATION = ** **{<u>0</u>...32767} \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](parameter_intro/state)  = string \]
 
 \[ KDATE
 = { <span style="text-decoration: underline;">0</span>
@@ -4262,7 +4262,7 @@ string \]
 \[ [IDTU](parameter_intro/idtu)
 = string \]
 
-\[ [STATE](parameter_intro/state) = string \]
+\[ [STATE](parameter_intro/state)  = string \]
 
 \[ KDATE
 = { <span style="text-decoration: underline;">0</span>
@@ -4421,11 +4421,11 @@ general conventions.
 -   , A comma separates
     a list of parameter values
 
-For more information, see [TYPOGRAPHICAL CONVENTIONS.](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)
+For more information, see  [TYPOGRAPHICAL CONVENTIONS.](../../gettingstarted_intro/my_first_transfer_flow_using_cg/typographical_conventions)
 
 ### Symbolic variables
 
-The following symbolic variable syntaxes are valid in a <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+The following symbolic variable syntaxes are valid in a  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 environment:
 
 -   &VAR
@@ -4495,7 +4495,7 @@ to [Filename conventions](filename_conventions).
 
 ## Using UCONF
 
-In order to merge functioning for all platforms, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> features a configuration interface that provides product uniformity
+In order to merge functioning for all platforms,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> features a configuration interface that provides product uniformity
 regardless of platform differences.
 
 The basic CFTUTIL services provided are:

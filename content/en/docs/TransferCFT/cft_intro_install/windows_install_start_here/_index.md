@@ -17,7 +17,7 @@ This section introduces prerequisite information as well as installation and inf
     client/server architecture
 
 The information in the Windows operations section
-may be supplemented, corrected, or even contradicted by the
+may be  supplemented, corrected, or even contradicted by the
 `README.TXT` file or the Release Notes supplied with the product. The `README.TXT` file and Release Notes take priority in this case.
 
 <span id="Product_presentation"></span>
@@ -25,9 +25,9 @@ may be supplemented, corrected, or even contradicted by the
 ## Product presentation
 
 {{< TransferCFT/componentshortname  >}} can operate both as client and/or as server. The
-number of simultaneous transfers that {{< TransferCFT/componentshortname  >}} can support
+number of simultaneous transfers that  {{< TransferCFT/componentshortname  >}} can support
 is defined by the license key. It is also limited by the properties of
-the networks used. The TCP/IP network is supported.
+the networks used. The TCP/IP  network is supported.
 
 ## Installation schematic overview
 

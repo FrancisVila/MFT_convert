@@ -266,14 +266,14 @@ UCONF(UPDATE)
  
  
 CFTEXT
-ALL\_PARM
+ALL_PARM
 opercls
 &FNAME
 Cmduser
 Read
 PARM(READ)
  
-ALL\_PART
+ALL_PART
 opercls
 &FNAME
 Cmduser
@@ -281,7 +281,7 @@ Read
 PART(READ)
  
 LISTCAT
-ALL\_CAT
+ALL_CAT
 opercls
 &FNAME
 Cmduser
@@ -289,7 +289,7 @@ Read
 CATLG(READ)
  
 LISTPARM
-ALL\_PARM
+ALL_PARM
 opercls
 &FNAME
 Cmduser
@@ -297,7 +297,7 @@ Read
 PARM(READ)
  
 LISTPART
-ALL\_PART
+ALL_PART
 opercls
 &FNAME
 Cmduser
@@ -305,7 +305,7 @@ Read
 PART(READ)
  
 LISTCOM
-ALL\_COM
+ALL_COM
 opercls
 &FNAME
 Cmduser
@@ -328,7 +328,7 @@ Cmduser
 Create
 PART(UPDATE)
  
-ALL\_PART
+ALL_PART
 opercls
 &FNAME
 Cmduser
@@ -347,7 +347,7 @@ Cmduser
 Create
 PART(UPDATE)
  
-ALL\_PART
+ALL_PART
 opercls
 &FNAME
 Cmduser

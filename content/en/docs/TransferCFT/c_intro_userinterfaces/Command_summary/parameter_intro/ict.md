@@ -8,7 +8,7 @@
 
 Type of input file data compression:
 
--   C: {{< TransferCFT/componentshortname >}} to {{< TransferCFT/componentshortname >}}
+-   C:  {{< TransferCFT/componentshortname >}} to  {{< TransferCFT/componentshortname >}}
     compression
 -   H: PeSIT non-SIT
     compression

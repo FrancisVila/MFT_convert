@@ -28,7 +28,7 @@ This parameter value is case sensitive in CFTUTIL commands if you enclose the v
     permitted by the protocol. Only a check of the maximum size of 48 characters
     is performed.
 
-PeSIT E or PeSIT E between two {{< TransferCFT/componentshortname  >}}s
+PeSIT E or PeSIT E between two  {{< TransferCFT/componentshortname  >}}s
 
 In standard PeSIT E standard or PeSIT E CFT/CFT, the responder/sender
 partner can send and control this field.
@@ -38,6 +38,6 @@ length is limited by the eight-character standard. The PI 04 contains
 this value concatenated with the value of the **ruser**
 field.
 
-In PeSIT E between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, the value of the SUSER parameter is transported in the PI 99, while the value defined in the PI 03 is truncated to 8 characters.
+In PeSIT E between two  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, the value of the SUSER parameter is  transported in the PI 99, while the value defined in the PI 03 is truncated to 8 characters.
 
 [Return to Command index](../../)

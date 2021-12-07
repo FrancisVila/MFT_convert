@@ -24,7 +24,7 @@
 The \_DATE function returns the current system date.
 
 ```
-\_Date PARM = VDATE,
+_Date PARM = VDATE,
       RC = lrc
 ```
 
@@ -44,19 +44,19 @@ A positive value of the runtime code expresses the number of days since the begi
 ```
 CHAR name=DATE,size=8
 LONG name=RCL
-\_Date parm=DATE=,rc=RCL
+_Date parm=DATE=,rc=RCL
 PRINT msg='Today's date is %DATE%'
 PRINT msg='The number of days is: %RCL%'
 ```
 
-### Function \_Time
+### Function  \_Time
 
 #### Syntax
 
 The \_Time function returns the current system time.
 
 ```
-\_Time PARM = VTIME,
+_Time PARM = VTIME,
       RC = lrc
 ```
 
@@ -69,14 +69,14 @@ The \_Time function returns the current system time.
 
 The time is expressed as HHMMSSCC, where HH represents the hours, MM minutes, SS seconds, and CC is hundredths of a second. For example, 13105933 means 13 hours 10 minutes 59 seconds and 33 hundredths.
 
-A positive value of the runtime code expresses the number of hundredths of seconds since the beginning of the day. A negative value reflects a problem in the \_Time function execution.
+A positive value of the runtime code expresses the number of hundredths of seconds since the beginning of the day. A negative value reflects a problem in the  \_Time function execution.
 
 #### Example
 
 ```
 CHAR name = TIME, size = 8
 LONG name = RCL
-\_time Parm = TIME = rc = RCL
+_time Parm = TIME = rc = RCL
 PRINT msg = 'The current time is% TIME%'
 PRINT msg = 'Number of hundredths elapsed:%% RCL
 ```
@@ -88,7 +88,7 @@ PRINT msg = 'Number of hundredths elapsed:%% RCL
 The \_DatTim function returns the current system date and current.
 
 ```
-\_DatTim PARM = VDATTIM,
+_DatTim PARM = VDATTIM,
         RC = lrc
 ```
 
@@ -108,8 +108,8 @@ A zero value indicates that the runtime code execution \_DatTim function correct
 ```
 CHAR name = DATETIME, size = 16
 LONG name = RCL
-\_DatTim parm = DATETIME, rc = RCL
-PRINT msg = 'The current time is %DATETIME\[8\]%'
+_DatTim parm = DATETIME, rc = RCL
+PRINT msg = 'The current time is %DATETIME[8]%'
 ```
 
 ### Function \_DtSplit
@@ -119,7 +119,7 @@ PRINT msg = 'The current time is %DATETIME\[8\]%'
 The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and hour chain.
 
 ```
-. \_DtSplit DATIME = date\_time,
+. _DtSplit DATIME = date_time,
            DATE = date,
            TIME = time
 ```
@@ -134,21 +134,21 @@ The \_DtSplit function breaks a datetime string into an YYYYMMDDHHMMSS date and 
 
 ```
 CHAR name = DTSTART, size = 16
-CHAR name = DATE\_START, size = 8
-CHAR name = TIME\_START,size = 8
-\_DTSPLIT DATIME = DTSTART, DATE = DATE\_START, TIME = TIME\_START
-PRINT msg = 'The date is %DATE\_START%'
-PRINT msg = 'The time is %TIME\_START%'
+CHAR name = DATE_START, size = 8
+CHAR name = TIME_START,size = 8
+_DTSPLIT DATIME = DTSTART, DATE = DATE_START, TIME = TIME_START
+PRINT msg = 'The date is %DATE_START%'
+PRINT msg = 'The time is %TIME_START%'
 ```
 
 ### Function \_DtMerge
 
 #### Syntax
 
-The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chain and an hour chain.
+The \_DtMerge function builds a date-time string  YYYYMMDDHHMMSS from a date chain and an hour chain.
 
 ```
-\_DtMerge DATIME = date\_time,
+_DtMerge DATIME = date_time,
            DATE = date,
            TIME = time
 ```
@@ -165,7 +165,7 @@ The \_DtMerge function builds a date-time string YYYYMMDDHHMMSS from a date chai
 CHAR name = DTDEBUT, size = 16
 CHAR name = DATE, size = 8, init = 19930101
 CHAR name = HOUR,size = 8, init = 12000000
-\_DTMERGE DATIME = DTDEBUT, DATE = DATE\_DEBUT, HOUR = HOUR\_START
+_DTMERGE DATIME = DTDEBUT, DATE = DATE_DEBUT, HOUR = HOUR_START    
 PRINT msg = 'The date is %DTDEBUT%'
 ```
 
@@ -176,8 +176,8 @@ PRINT msg = 'The date is %DTDEBUT%'
 The \_DtAdd function calculates a new date-time string by adding a date-time number one second.
 
 ```
-\_DtAdd FROMDT = date\_time\_src,
-TODT = date\_time\_dest,
+_DtAdd FROMDT = date_time_src,
+TODT = date_time_dest,
 SEC = second
 ```
 
@@ -190,12 +190,12 @@ SEC = second
 #### Example
 
 ```
-CHAR name = DT\_DEBUT, size = 16
+CHAR name = DT_DEBUT, size = 16
 LONG name = DUREE
-CHAR name = DT\_FIN, size = 16
-\_DTADD FROMDT = DT\_DEBUT, TODT = DT\_FIN,SEC = DUREE
-PRINT msg = 'La date-heure de début est %DT\_DEBUT%'
-PRINT msg = 'La date-heure de fin est %DT\_FIN%'
+CHAR name = DT_FIN, size = 16
+_DTADD FROMDT = DT_DEBUT, TODT = DT_FIN,SEC = DUREE
+PRINT msg = 'La date-heure de début est %DT_DEBUT%'
+PRINT msg = 'La date-heure de fin est %DT_FIN%'
 ```
 
 ### Function \_DtDiff
@@ -205,9 +205,9 @@ PRINT msg = 'La date-heure de fin est %DT\_FIN%'
 The \_DtDiff function calculates the difference in hundredths of a second between two date/times.
 
 ```
-\_DtDiff FROMDT = date\_time1,
-TODT = date\_time2,
-SEC = hundredth\_of\_seconds
+_DtDiff FROMDT = date_time1,
+TODT = date_time2,
+SEC = hundredth_of_seconds
 ```
 
 #### Values
@@ -219,10 +219,10 @@ SEC = hundredth\_of\_seconds
 #### Examples
 
 ```
-CHAR name = DT\_START, size = 16
-CHAR name = DT\_END, size = 16
+CHAR name = DT_START, size = 16
+CHAR name = DT_END, size = 16
 LONG name = DURATION
-\_DTDIFF FROMDT = DT\_END, TODT = DT\_START, SEC = DURATION
+_DTDIFF FROMDT = DT_END, TODT = DT_START, SEC = DURATION
 PRINT msg = 'The length of the session is %duration% seconds'
 ```
 
@@ -237,7 +237,7 @@ The \_user function returns the name of current user.
 > The PARM parameter must be entered in upper case.
 
 ```
-PARM = \_user VUSER,
+PARM = _user VUSER,
 RC = lrc
 ```
 
@@ -255,7 +255,7 @@ A value of zero means the runtime code execution \_user function correctly. A ne
 ```
 CHAR name=USERNAME,size=16
 LONG name=RCL
-\_User parm=USERNAME,rc=RCL
+_User parm=USERNAME,rc=RCL
 PRINT msg='The current user is %USERNAME%'
 ```
 
@@ -270,7 +270,7 @@ The \_Job function returns the name of the current process with the operating sy
 > The PARM parameter must be entered in upper case.
 
 ```
-\_Job PARM = VJOB,
+_Job PARM = VJOB,
 RC = lrc
 ```
 
@@ -288,7 +288,7 @@ A value of zero means the runtime code execution \_Job function correctly. A neg
 ```
 CHAR JOBNAME,size=16
 LONG name=RCL
-\_Job parm=JOBNAME=,rc=RCL
+_Job parm=JOBNAME=,rc=RCL
 PRINT msg='Processus courant %JOBNAME%'
 ```
 
@@ -299,7 +299,7 @@ PRINT msg='Processus courant %JOBNAME%'
 The \_SmSleep function puts the current process in standby.
 
 ```
-\_DatTim PARM = vsleep,
+_DatTim PARM = vsleep,
 RC = lrc
 ```
 
@@ -319,5 +319,5 @@ A zero value indicates that the runtime code execution \_SmSleep functions corre
 ```
 LONG name=LSLEEP,INIT=200
 LONG name=RCL
-\_SmSleep parm=%LSLEEP%,rc=RCL /\* Standby 2 seconds \*/
+_SmSleep parm=%LSLEEP%,rc=RCL /\* Standby 2 seconds \*/
 ```

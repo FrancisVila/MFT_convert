@@ -23,7 +23,7 @@ This section describes the underlying concepts for folder monitoring with Transf
 
 **Checking the state of a monitored file**
 
-For each monitored file, {{< TransferCFT/componentshortname  >}} tracks the file size and the date of its last modification. These two pieces of information constitute the **state** of the file. If the state does not change within a certain delay in seconds, the file is considered to be available to submit for transfer. A delay of zero seconds indicates that the files are immediately ready for submission.
+For each monitored file, {{< TransferCFT/componentshortname  >}} tracks the file size and the date of its last modification. These two pieces of information constitute the **state** of the file. If the state does not change within a certain delay in  seconds, the file is considered to be available to submit for transfer. A delay of zero seconds indicates that the files are immediately ready for submission.
 
 **Folder monitoring directories**
 
@@ -31,16 +31,16 @@ For each directory to be monitored by Transfer CFT, the scan\_dir, there must be
 
 **Tracking files**
 
-To track scan\_dir files that have been submitted, Transfer CFT can either:
+To track   scan\_dir files that have been submitted, Transfer CFT can either:
 
--   Move these files to the work\_dir (by renaming) prior to submitting them. This is called the MOVE method in Transfer CFT.
+-   Move  these files to the work\_dir (by renaming) prior to submitting them. This is called the MOVE method in Transfer CFT.
 -   Leave these files in place and create another file with the same name, which contains metadata, in the work\_dir prior to submitting the transfer. This is called the FILE method in Transfer CFT.
 
 See [Configuring file tracking options](#Configur2).
 
 **SEND parameters**
 
-In addition to the file path, the [IDF](../../c_intro_userinterfaces/command_summary/parameter_intro/idf) and [PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part) name parameters are supplied in the SEND command. You can set these as fixed parameter values, or extract them from the first or second sub-directory names. {{< TransferCFT/componentshortname  >}} then automatically creates the corresponding sub-directories in the work\_dir directory tree, as needed.
+In addition to the file path, the [IDF](../../c_intro_userinterfaces/command_summary/parameter_intro/idf) and [PART](../../c_intro_userinterfaces/command_summary/parameter_intro/part) name parameters are supplied in the SEND command. You can set these as fixed parameter values, or extract them from the first or second sub-directory names. {{< TransferCFT/componentshortname  >}} then automatically creates  the corresponding sub-directories in the work\_dir directory tree, as needed.
 
 <span id="Prerequisites_foldermonitoring"></span>
 
@@ -90,7 +90,7 @@ There are two ways to implement Transfer CFT folder monitoring, either using UCO
 
 Two parameters define the timing for files that are managed by Transfer CFT folder monitoring. See the [parameter definition](../../c_intro_userinterfaces/web_copilot_ui/flow_def_intro/cftfolder) table for details.
 
--   File idle delay: This defines the period in which the file becomes a candidate for submission if the state of a file has not changed within this delay (FILEIDLEDELAY).
+-   File idle delay: This defines the period in which  the file becomes a candidate for submission if the state of a file has not changed within this delay (FILEIDLEDELAY).
 -   Interval: The interval between two scans of the directory files in seconds (INTERVAL).
 
 <span id="Configur2"></span>
@@ -104,7 +104,7 @@ Submitting the SEND command occurs differently depending on if the METHOD parame
 If the METHOD parameter is set to MOVE:
 
 1.  The file is moved (by renaming) to the work\_dir in the same relative directory position as its original position in the scan\_dir. By default, an optional timestamp is added to the name of the moved file.
-2.  A command is submitted internally that uses the following pattern:
+2.  A command  is submitted internally that uses the following pattern:
 
 ```
 CFTUTIL SEND=<part>, IDF=<idf>, FNAME=<pathname>
@@ -112,24 +112,24 @@ CFTUTIL SEND=<part>, IDF=<idf>, FNAME=<pathname>
 
 Where:
 
--   &lt;part> is the partner name as indicated in the configuration.
--   &lt;idf> is the idf name as indicated in the configuration.
--   &lt;pathname> is the absolute pathname of the file in the work\_dir directory.
+-   &lt;part>      is the partner name as indicated in the configuration.
+-   &lt;idf>       is the idf name as indicated in the configuration.
+-   &lt;pathname>  is the absolute pathname of the file in the work\_dir directory.
 
 Command that is submitted for a new file
 
 The following example demonstrates how the PART name is used for the first directory sub-level, and the IDF name for the second level sub-directory.
 
 -   Original file:     `/dir_c/scan/newyork/idf1/my_file.txt`
--   Moved file: ` /dir_c/work/newyork/idf1/my_file.20131025.txt`
+-   Moved  file: ` /dir_c/work/newyork/idf1/my_file.20131025.txt`
 
 ```
-CFTUTIL SEND part=newyork, idf=idf1, fname=/dir\_c/work/newyork/idf1/my\_file.20131025.txt
+CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/work/newyork/idf1/my_file.20131025.txt
 ```
 
 #### FILE option
 
-When the METHOD parameter is set to FILE, the original file is not renamed. However, to prevent the file from being sent again when {{< TransferCFT/componentshortname  >}} is restarted, and to keep track of persistent information about the file, a new file is created in the work\_dir directory. This new file contains metadata about the file that {{< TransferCFT/componentshortname  >}} has generate.
+When the METHOD parameter is set to FILE, the original file is not renamed. However, to prevent the file from being sent again when {{< TransferCFT/componentshortname  >}} is restarted, and to keep track of persistent information about the file, a new file is created in the work\_dir directory. This new file contains  metadata about the file that {{< TransferCFT/componentshortname  >}} has generate.
 
 Submitting the SEND command occurs as follows:
 
@@ -137,7 +137,7 @@ Submitting the SEND command occurs as follows:
 
     > **Note:**
     >
-    > Caution  Do NOT delete the .met files as they are internal Transfer CFT files. In order to delete the .met files, you must delete the associated files in the SCAN directory (Transfer CFT must be running).
+    > Caution  Do NOT delete the .met files  as they are internal Transfer CFT files. In order to delete the .met files, you must delete the associated files in the SCAN directory (Transfer CFT must be running).
 
 2.  The same CFTUTIL command as is used in the MOVE method is submitted internally, but with an fname corresponding to the original file in the scan\_dir.
 
@@ -146,20 +146,20 @@ The following command is submitted for a new file
 This example uses the partner name in the first directory sub-level, and the IDF name in the second.
 
 -   Original file:   ` /dir_c/scan/newyork/idf1/my_file.txt`
--   Metadata file: `/dir_c/work/newyork/idf1/my_file.txt.met`
+-   Metadata      file:  `/dir_c/work/newyork/idf1/my_file.txt.met`
 
 ```
-CFTUTIL SEND part=newyork, idf=idf1, fname=/dir\_c/scan/newyork/idf1/my\_file.txt
+CFTUTIL SEND part=newyork, idf=idf1, fname=/dir_c/scan/newyork/idf1/my_file.txt
 ```
 
-Although both methods provide the same level of functionality, the MOVE method (renaming file) is recommended whenever file renaming prior to its submission is acceptable.
+Although both methods provide the same level of functionality,  the MOVE method (renaming file) is recommended whenever file renaming  prior to its submission is acceptable.
 
 The FILE  method has some drawbacks that the MOVE method does not, especially related to performance. FILE method limitations include:
 
 -   For each file to send, a second file (the .met file) is created.
 -   Since all of the files remain in the directory, the directory to be scanned may contain a large number of files.
 -   All of the .met files must be checked by {{< TransferCFT/componentshortname >}} at start up.
--   {{< TransferCFT/componentshortname >}} cannot differentiate between when a file has been purged and replaced by a new one, or if this same file has just been modified.
+-   {{< TransferCFT/componentshortname >}} cannot  differentiate between when a file has been purged and replaced by a new one, or if this same file has just been modified.
 
 Related topics
 

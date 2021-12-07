@@ -2,7 +2,7 @@
     "title": "Add applications to use in flows",
     "linkTitle": "Add applications to use in flows",
     "weight": "130"
-}When you are working in you create *applications* to use in flows. Therefore, if your products did not create applications upon registering, you must create at least two applications to use in your flows.
+}When you are working in you create *applications* to use in flows. Therefore, if your products did not create applications upon registering,  you must create at least two applications to use in your flows.
 
 In this section you create three applications in to represent the `MainOffice`, `Store_66`, and `Store_89`.
 
@@ -14,7 +14,7 @@ Select **Products** on the top toolbar to open the **Product List** page.
 
 <img src="/Images/TransferCFT/gettingstarted1.png" class="mediumWidth" />
 
-Copy the host name for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
+Copy the host name  for each of the three Transfer CFTs that you will use in these exercises, for example copy them into a table as shown here.
 
 
 | Transfer CFT  | Host  | Application name  |

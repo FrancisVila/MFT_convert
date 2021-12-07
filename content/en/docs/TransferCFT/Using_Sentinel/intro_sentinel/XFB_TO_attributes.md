@@ -99,18 +99,18 @@ The product that sends the events is identified with the following:
 |  EndDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/>These dates are expressed in dd.mm.yyyy format.  |  DATEE  |
 |  EndTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/>These times are expressed in hh:mn:ss format.  |  TIMEE  |
 |  RequestCreationDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.</li>  |  DATEK  |
-|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.</li>  |  TIMEK  |
+|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side. </li>  |  TIMEK  |
 |  TransmissionDuration  |  Integer  |  -  |  Transfer duration, expressed in seconds.  |  TIMES  |
 
 
-## Transfer protocols
+## Transfer protocols  
 
 
 |  Sentinel<br/>attribute  |  Data type  |  Length  |  Description  |  Name in<br/>{{< TransferCFT/componentshortname  >}}  |
 | --- | --- | --- | --- | --- |
-|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol)</li>  |  Protocol  |
+|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E) <br/> • PSIT_HS_D (PeSIT, version D) <br/> • ODT (ODETTE File Transfer Protocol) </li>  |  Protocol  |
 |  IsSSL  |  String  |  1  |  <li>1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer.</li>  |  SSLMODE  |
-|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates.</li>  |  SSLAUTH  |
+|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates. </li>  |  SSLAUTH  |
 |  SSLCypher  |  String  |  2  |  The cipher suite that the Server and the Requester used during the SSL/TLS session.  |  SSLCIPH  |
 
 
@@ -144,7 +144,7 @@ The product that sends the events is identified with the following:
 | --- | --- | --- | --- | --- |
 |  CommandType  |  String  |  1  |  <li>F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack</li>  |  TYPE  |
 |  FileOrganization  |  String  |  25  |  <li>org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access.</li>  |  FORG  |
-|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file.<br/> • J, T, O, X: The transferred file is a text file.</li>  |  FTYPE  |
+|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file. <br/> • J, T, O, X: The transferred file is a text file. </li>  |  FTYPE  |
 |  RecordNumber  |  Integer  |   |  Number of record in the file. This size is expressed in bytes. <blockquote> **Note:**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  FREC  |
 |  RecordFormat  |  String  |  64  |  <li>F: fixed - The transferred data contains fixed-length records.<br/> • V: variable - The transferred data contains variable-length records.<br/> • U: undefined - The structure of the transferred data is unknown.</li>  |  FRECFM  |
 |  RecordSize  |  Integer  |   |  <li>If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> • If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes.</li>  |  FLRECL  |

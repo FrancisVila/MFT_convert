@@ -28,7 +28,7 @@
 
 ## About user descriptions
 
-In order to modify Transfer CFT files for configuration purposes, transfers, and so on, you must be authorized to access the following:
+In order to modify Transfer CFT files for configuration purposes, transfers, and so on, you must  be authorized to access  the following:
 
 -   The file (in read or write mode)
 

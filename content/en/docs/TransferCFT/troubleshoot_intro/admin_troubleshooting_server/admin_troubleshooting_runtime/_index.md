@@ -46,7 +46,7 @@
          <td>Catalog check         </td>
          <td>Network checks         </td>
          <td>timeout         </td>
-         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
+         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>Unexpected stop         </td>
@@ -54,7 +54,7 @@
          <td>Catalog check         </td>
          <td>Network checks         </td>
          <td>          </td>
-         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
+         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>Transfer freeze or infinite looping         </td>
@@ -62,7 +62,7 @@
          <td>          </td>
          <td>Network checks         </td>
          <td>Check application         </td>
-         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
+         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
       <tr>
          <td>SP and updates         </td>
@@ -78,7 +78,7 @@
          <td>          </td>
          <td>Network checks         </td>
          <td>          </td>
-         <td>Check {{< TransferCFT/componentlongname  >}} files         </td>
+         <td>Check  {{< TransferCFT/componentlongname  >}} files         </td>
       </tr>
    </tbody>
 </table>
@@ -100,7 +100,7 @@
 
 ### Catalog check
 
-When the catalog is full stops and you cannot restart it without a correction action to reduce the size of the catalog. Note that this does not necessarily mean that the disk is full.
+When the catalog is full  stops and you cannot restart it without a correction action to reduce the size of the catalog. Note that this does not necessarily mean that the disk is full.
 
 -   See the [Catalog housekeeping](../../../admin_intro/admin_monitoring_intro/housekeeping_catalog) section
 -   Backup your catalog and export the existing catalog

@@ -32,7 +32,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 </p>         </td>
          <td><p>In click <strong>Flows</strong> &gt; <strong>Add flow</strong>.</p>
 <p>Create  a flow named <strong>Broadcast_flow</strong>, and give it the identifier <strong>flow04</strong>.</p>
-<p>In this flow the MainOffice is the Source with the two stores as the Targets.</p>         </td>
+<p>In this flow the  MainOffice is the Source with the two stores as the Targets.</p>         </td>
          <td><a href="../intro_cg_task_catalog/t_defineflow_broadcast"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>
       <tr>
@@ -68,7 +68,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 <p> </p>         </td>
          <td><p>Execute the SEND command.</p>
 <p> </p>         </td>
-         <td><p>From the source {{< TransferCFT/componentshortname  >}}, run the following command:</p>
+         <td><p>From the source {{< TransferCFT/componentshortname  >}},  run the following command:</p>
 <p><code>CFTUTIL SEND PART=DEST_stores, IDF=flow04, FNAME=pub/SALES_report</code></p>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
@@ -84,7 +84,7 @@ Additionally, you can define what occurs if a partner is unknown, how the script
 
 ## Collect
 
-Collecting files is the inverse of using a broadcast list. In the collect transfer mode you can receive a dedicated file from multiple partners (P*n*). This allows the receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
+Collecting files is the inverse of using a broadcast list.  In the collect transfer mode you can receive  a dedicated file from multiple partners (P*n*). This allows the  receiver, or flow initiator, to receive a file from all defined partners using a single request command. More information...
 
 ![Simplified diagram of a Target Transfer CFT receiving files from multiple sources](/Images/TransferCFT/TransferCFT_Collect_w_CG.png)
 
@@ -105,7 +105,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
          <td><p>Create a flow.</p>
 <p><br />
 </p>         </td>
-         <td><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.</p>
+         <td><p>In define a flow named <strong>Collect_flow</strong>, and give it the identifier <strong>flow05</strong>.  </p>
 <p>Use the Source as MainOffice and the stores as the Target.<br />
 </p>         </td>
          <td><a href="../intro_cg_task_catalog/t_define_simpleflow"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
@@ -142,7 +142,7 @@ Collecting files is the inverse of using a broadcast list. In the collect transf
 <p> </p>         </td>
          <td><p>Run the RECV command.</p>
 <p> </p>         </td>
-         <td>In {{< TransferCFT/componentshortname  >}}, run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
+         <td>In {{< TransferCFT/componentshortname  >}},  run the following command: <code></code><code>CFTUTIL RECV PART=DEST_Stores, IDF=flow05</code>
 <p> </p>         </td>
          <td><a href="../../../c_intro_userinterfaces/about_cftutil"><img src="/Images/TransferCFT/mapArrow.png" /></a>         </td>
       </tr>

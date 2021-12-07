@@ -5,7 +5,7 @@
 }This section describes the prerequisites for Transfer CFT IBM i and covers:
 
 -   Hardware environment
--   Software environment
+-   Software environment  
 
 ## Hardware prerequisites
 

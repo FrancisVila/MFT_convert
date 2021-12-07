@@ -2,7 +2,7 @@
     "title": "Network resource depletion prevention (NRDP)",
     "linkTitle": "Network resource depletion prevention (NRDP)",
     "weight": "280"
-}Configuring more network connection than simultaneous file transfers is not always enough to ensure that the MAXTRANS transfers can proceed simultaneously at any given time.
+}Configuring more   network connection than simultaneous     file transfers is not always enough to ensure that the  MAXTRANS transfers can proceed simultaneously at any given time.
 
 The principal reasons for this are:
 
@@ -16,13 +16,13 @@ Consequently
 
 -   Due to reasons 1 and 2, the number of sessions is at least equal to the number of simultaneous transfers.
 -   Due to reason 3, there can be intervals of time where sessions with no active transfer exists. Let's call such sessions "idle" sessions. This sometimes leads to a number of sessions greater than the number of transfers.
--   Due to reason 4, it is advisable to use sessions for more that a single transfer when possible. To enable this sort of reuse, sessions are not terminated immediately after a transfer ends but instead after a configurable delay. These idle sessions can then be reused for subsequent transfers. This can lead to a number of established sessions that is significantly larger than the number of active transfers when the number of idle sessions is high.
+-   Due to reason 4, it is advisable to use sessions for more that a single transfer when possible. To enable this sort of reuse, sessions are not terminated immediately after a transfer ends but instead   after a configurable delay. These idle sessions can then be reused for subsequent transfers. This can lead to a number of established sessions that is significantly larger than the number of active transfers when the number of idle sessions is high.
 
-When the network resource depletion prevention (NRDP) feature is enabled ([below](#How)), Transfer CFT detects the situations where existing idle sessions may prevent new transfers that require new sessions from being started. In such situations, as a precaution Transfer CFT gently closes these idle sessions in order to allow the new transfers to be started quickly.
+When the network resource depletion prevention (NRDP) feature is enabled ([below](#How)), Transfer CFT detects the situations where existing idle sessions may prevent new transfers that require new sessions from being started. In such situations, as a precaution Transfer CFT gently closes  these idle sessions in order to allow the new transfers to be started quickly.
 
-This feature is only effective when you frequently reach the number of simultaneous connections (MAXCNX) while the actual number of transfers is less than the MAXTRANS. In this case, CFTN09E log messages can flood the log and the Transfer CFT behavior may be adversely affected.
+This feature is only effective when you frequently reach the number of simultaneous connections (MAXCNX) while the actual number of transfers is less than the MAXTRANS. In this case, CFTN09E log messages can flood the log and the Transfer CFT behavior  may be adversely affected.
 
-Example error message
+Example  error message
 
 CFTH09E Network connect request local error &lt;PART=PARIS0457 NCR=416 NCS=MAXCNX NET=TCP>
 
@@ -42,9 +42,9 @@ And the corresponding catalog entry  would include the DIAGI=416 and DIAGP=MAXC
 
 ### Parameter usage
 
-The NRDP feature only applies to the TCP/IP network, and requires the configuration of a CFTNET object for a given class that allows OUTGOING, or both OUTGOING and INCOMING, connections where MAXCNX &gt;= MAXTRANS.
+The NRDP feature only applies to the TCP/IP network, and requires  the configuration of a CFTNET object for a given class that allows OUTGOING, or both OUTGOING and INCOMING, connections where MAXCNX &gt;= MAXTRANS.
 
--   A MAXCNX value significantly larger than MAXTRANS can be advantageous, especially if the number of INCOMING connections is high.
+-   A  MAXCNX value significantly larger than MAXTRANS can be advantageous, especially if the number of INCOMING connections is high.
 -   A MAXCNX value 10% to 20% larger than MAXTRANS should be adequate in most situations.
 
 ### Log messages

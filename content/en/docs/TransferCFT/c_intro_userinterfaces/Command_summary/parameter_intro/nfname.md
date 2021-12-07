@@ -81,7 +81,7 @@ The following variables may be used to form the NFNAME character string:
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system (refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
+to each operating system (refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> *Operations Guide*
 corresponding to your OS).
 
 [Return to Command index](../../)

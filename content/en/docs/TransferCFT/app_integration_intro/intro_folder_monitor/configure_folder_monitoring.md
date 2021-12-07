@@ -14,7 +14,7 @@
     -   Set uconf parameter folder\_monitoring.enable to **Yes**.
 2.  Declare your logical directories to monitor.
     -   Add CFTFOLDER objects.
-3.  For each logical directory defined, configure the specific options you want to use for each:
+3.  For each logical directory defined,  configure the specific options you want to use for each:
     -   File management method
 
     <!-- -->
@@ -74,7 +74,7 @@ Parameter descriptions
 | INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 | RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
 | RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
 | RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
@@ -110,7 +110,7 @@ Upon reloading, if there are any modified configuration parameters or detected e
 
 In particular, if you change the METHOD parameter from FILE to MOVE without modifying the scan\_dir and work\_dir parameters, and if the work\_dir directory is not empty, Transfer CFT displays an error message in the log and will not monitor the corresponding directory.
 
-If you create or modify a folder while Transfer CFT is running, you must execute the ACT command to reload the configuration.
+If you create or modify a folder while Transfer CFT is running, you must execute the  ACT command to reload the configuration.
 
 **Example**
 
@@ -154,7 +154,7 @@ To turn the file-system event monitoring off for a given folder object, use the 
 INACT TYPE=FOLDER,ID=<myfolderobject>
 ```
 
-To turn on the file-system event monitoring for a given folder object, use the command:
+To turn on the file-system event monitoring  for a given folder object, use the command:
 
 ```
 ACT TYPE=FOLDER,ID=<myfolderobject>
@@ -176,7 +176,7 @@ CFTEXT TYPE=FOLDER
 
 ### Change a folder
 
-If Transfer CFT is running and you create or change a folder or multiple folders, you can execute RECONFIG TYPE=FOLDER so that all changes are taken into account.
+If Transfer CFT is running and you create or change a folder or multiple folders,  you can execute RECONFIG TYPE=FOLDER so that all changes are taken into account.
 
 ### Delete a folder
 
@@ -189,7 +189,7 @@ CFTFOLDER ID=<myfolder>, MODE=DELETE
 
 > **Note:**
 >
-> If you delete an active folder object while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.
+> If you delete an active folder object  while Transfer CFT is running without first deactivating the folder (INACT), you must execute a RECONFIG TYPE=FOLDER. If you do not, the folder remains active.
 
 ## Directory configuration examples
 
@@ -204,7 +204,7 @@ This section presents an example that consists of configuring 3 directories for 
 The first directory presents the simplest possible configuration, leaving most parameters set to their default values.
 
 -   All of the files in the directory sub-tree are candidates for the SEND submission.
--   The files are sent to a given partner, `newyork`, using an IDF name of IDFA.
+-   The files are sent to a given partner,  `newyork`, using an IDF name of IDFA.
 
 The following commands create the configuration defined for directory A.
 
@@ -212,11 +212,11 @@ The following commands create the configuration defined for directory A.
 #
 # Create all of the needed directories (UNIX platform example)
 #
-mkdir /home/CFT/fm/dir\_a
-mkdir /home/CFT/fm/dir\_a/scan
-mkdir /home/CFT/fm/dir\_a/work
+mkdir /home/CFT/fm/dir_a
+mkdir /home/CFT/fm/dir_a/scan
+mkdir /home/CFT/fm/dir_a/work
 #
-CFTUTIL CFTFOLDER ID=A, SCANDIR='/home/CFT/fm/dir\_a/scan', WORKDIR='/home/CFT/fm/dir\_a/work', PART='NEWYORK', IDF='IDFA'
+CFTUTIL CFTFOLDER ID=A, SCANDIR='/home/CFT/fm/dir_a/scan',  WORKDIR='/home/CFT/fm/dir_a/work', PART='NEWYORK', IDF='IDFA'
 ```
 
 ### Directory B requirements
@@ -233,52 +233,52 @@ The following commands create the required directory B configuration.
 #
 # Create all needed directories (example for UNIX platforms)
 #
-mkdir /home/CFT/fm/dir\_b
-mkdir /home/CFT/fm/dir\_b/scan
-mkdir /home/CFT/fm/dir\_b/work
-mkdir /home/CFT/fm/dir\_b/scan/newyork
-mkdir /home/CFT/fm/dir\_b/scan/berlin
-mkdir /home/CFT/fm/dir\_b/scan/london
-mkdir /home/CFT/fm/dir\_b/scan/rome
-mkdir /home/CFT/fm/dir\_b/scan/brussels
-mkdir /home/CFT/fm/dir\_b/scan/paris
+mkdir /home/CFT/fm/dir_b
+mkdir /home/CFT/fm/dir_b/scan
+mkdir /home/CFT/fm/dir_b/work
+mkdir /home/CFT/fm/dir_b/scan/newyork
+mkdir /home/CFT/fm/dir_b/scan/berlin
+mkdir /home/CFT/fm/dir_b/scan/london
+mkdir /home/CFT/fm/dir_b/scan/rome
+mkdir /home/CFT/fm/dir_b/scan/brussels
+mkdir /home/CFT/fm/dir_b/scan/paris
 #
-CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir\_b/scan', WORKDIR='/home/CFT/fm/dir\_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='\*.txt'
+CFTUTIL CFTFOLDER ID=B, SCANDIR='/home/CFT/fm/dir_b/scan', WORKDIR='/home/CFT/fm/dir_b/work', PART='(0)', IDF='TXT', INCLUDEFILTER='\*.txt'
 ```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner name, for example `/home/CFT/fm/dir_b/newyork `for the partner named `newyork`.
 
 ### Directory C requirements
 
-For directory C we want to:
+For  directory C we want to:
 
 -   Send files to multiple partners, newyork and paris.
--   Use idf1, idf2, or idf3 as the newyork partner IDF.
+-   Use idf1, idf2, or idf3  as the newyork partner IDF.
 -   Use idfa, idfb, idfc, or idfd as the paris partner IDF.
 -   Not send files suffixed by .tmp.
 -   Automatically move the files to be sent to the SCANDIR, so the FILEIDLEDELAY parameter value is set to zero.
--   Submit files within a delay of approximately 10 seconds (INTERVAL).
+-   Submit files  within a delay of approximately 10 seconds (INTERVAL).
 -   Limit the number of send submissions per interval to 4 (FILECOUNT).
 
-The following commands create the described directory C configuration.
+The following  commands create the described directory C configuration.
 
 ```
 #<span id="#example_for_description"></span>
 # Create all needed directories (example for UNIX platforms)
 #
-mkdir /home/CFT/fm/dir\_c
-mkdir /home/CFT/fm/dir\_c/scan
-mkdir /home/CFT/fm/dir\_c/work
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf1
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf2
-mkdir /home/CFT/fm/dir\_c/scan/newyork/idf3
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfa
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfb
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfc
-mkdir /home/CFT/fm/dir\_c/scan/paris/idfd
+mkdir /home/CFT/fm/dir_c
+mkdir /home/CFT/fm/dir_c/scan
+mkdir /home/CFT/fm/dir_c/work
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf1
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf2
+mkdir /home/CFT/fm/dir_c/scan/newyork/idf3
+mkdir /home/CFT/fm/dir_c/scan/paris/idfa
+mkdir /home/CFT/fm/dir_c/scan/paris/idfb
+mkdir /home/CFT/fm/dir_c/scan/paris/idfc
+mkdir /home/CFT/fm/dir_c/scan/paris/idfd
 #
-CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir\_c/scan',
-WORKDIR='/home/CFT/fm/dir\_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='\*.tmp'
+CFTUTIL CFTFOLDER ID=C, FILEIDLEDELAY='0', PART='(0)', IDF='(1)', SCANDIR='/home/CFT/fm/dir_c/scan',
+WORKDIR='/home/CFT/fm/dir_c/work', INTERVAL='10', FILECOUNT='4', FILEEXCLUDEFILTER='\*.tmp'
 ```
 
 The files to be sent must be moved to the directory that corresponds to the destination partner and idf names, for example /home/CFT/fm/dir\_c/newyork/idf1 for the partner `newyork `and idf `idf1`.
@@ -289,19 +289,19 @@ The files to be sent must be moved to the directory that corresponds to the dest
 
 You can customize the transfer related metadata, such as the IDA, PARM, SUSER, etc. using the file name value. This allows folder monitoring to provide a functionality that resembles a SEND command.
 
-For example, you have a file named `A0001.appli1.cft.XXX` in the `scan1 `folder, and you have the following two objects in your configuration:
+For example, you have a file named `A0001.appli1.cft.XXX`  in the `scan1 `folder, and you have the following two objects in your configuration:
 
 ```
 CFTFOLDER id=folder1,scandir=scan1,idf=idf1,par=part1,...CFTSEND id=idf1,ida=&%.1froot,sappl="&%.2froot",suser="&%.3froot",...
 ```
 
-Consequently, Transfer CFT automatically creates a request based on the above syntax:
+Consequently, Transfer CFT automatically creates a request  based on the  above syntax:
 
 ```
 SEND part=part1,idf=idf1,ida=A0001,sappl="appli1",suser="cft"
 ```
 
--   For more information on how to effectively use separators with symbolic variables, please see [Separate fields in symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables#Separate)
+-   For more information on  how to effectively use separators with symbolic variables, please see [Separate fields in symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables#Separate)
 -   For more information on the various symbolic variables to use in CFTSEND with CFTFOLDER, see [List of symbolic variables.](../../../c_intro_userinterfaces/command_summary/symbolic_variables#List_of_symbolic_variables)
 
 ## Archiving with folder monitoring
@@ -317,7 +317,7 @@ Archiving is a way to store files after they have been moved from the scanned fo
 
 ### Use case scenario
 
-The following example describes how to scan a folder, send any new file, and then store a backup of the file. Additionally, the scenario provides instructions on how to then rename the transferred file as it is stored in the backup folder.
+The following example describes how to scan a folder, send any new file, and then store a backup of the file. Additionally, the scenario provides instructions on how to  then rename the transferred file as it is stored in the backup folder.
 
 > **Note:**
 >
@@ -365,7 +365,7 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 3.  Create a SEND model using `archivefname`. In this example the transfer's IDTU is appended on the filename:
 
     ```
-    CFTSEND id=MYFILE, archivefname=&FROOT&(-.)FSUF\_&IDTU, faction=ARCHIVE
+    CFTSEND id=MYFILE, archivefname=&FROOT&(-.)FSUF_&IDTU, faction=ARCHIVE
     ```
 
 4.  Activate the new CFTFOLDER object:  
@@ -382,7 +382,7 @@ In the **Steps** below, we use the absolute paths, that is, the folders are loca
 
 9.  Check in the log for a message similar to the following:  
     ```
-    CFTT89I Faction on FNAME=MyWorkFolder\\MyFile.txt archived as MyArchiveFolder\\MyFile.txt\_A000000F <IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185>
+    CFTT89I Faction on FNAME=MyWorkFolder\\MyFile.txt archived as MyArchiveFolder\\MyFile.txt_A000000F <IDTU=A000000F PART=PARIS IDF=MYFILE IDT=C1918185>
     ```
 
 <span id="Folder2"></span>
@@ -399,16 +399,16 @@ The following example demonstrates how to use the [USERCTRL](../../../c_intro_us
     ```
     CFTPARM ID=IDPARM0,…,USERCTRL=YES
     ```
-2.  Start Transfer CFT with `usercft `as the user.
-3.  User1 creates the `/home/user1/scandir_app1` and `/home/user1/workdir` folders:  
+2.  Start Transfer CFT  with `usercft `as the user.
+3.  User1 creates the `/home/user1/scandir_app1`   and `/home/user1/workdir` folders:  
     ```
-    mkdir /home/user1/scandir\_app1
+    mkdir /home/user1/scandir_app1
     mkdir /home/user1/workdir
     ```
-4.  `App1 `writes files to this specific scandir folder, e.g. `/home/user1/scandir_app1`, which belongs to user1. Notice that the usercft user does not have access to`  scandir_app1`.
+4.  `App1 `writes files to this specific scandir folder, e.g. `/home/user1/scandir_app1`,  which belongs to user1.  Notice that the usercft user does not have access to`  scandir_app1`.
 5.  From CFTUTIL, create a CFTFOLDER:  
     ```
-    cftfolder id=app1, PART=paris, idf=app1, SCANDIR=/home/user1/scandir\_app1 ,userid=user1, workdir=/home/user1/workdir, method=move, interval=10,fileidledelay=0
+    cftfolder id=app1, PART=paris, idf=app1, SCANDIR=/home/user1/scandir_app1  ,userid=user1, workdir=/home/user1/workdir, method=move, interval=10,fileidledelay=0
     ```
 6.  Activate the CFTFOLDER object:  
     ```
@@ -421,6 +421,6 @@ The following example demonstrates how to use the [USERCTRL](../../../c_intro_us
 The  transfer is executed on the behalf of user1. Notice that there is a message indicating that the folder is activated on behalf of the specified user.
 
 ```
-CFTR20I folder "/home/user1/scandir\_app1" registered as nickname <APP1>
+CFTR20I folder "/home/user1/scandir_app1" registered as nickname <APP1>
 CFTR20I on behalf of "user1" user
 ```

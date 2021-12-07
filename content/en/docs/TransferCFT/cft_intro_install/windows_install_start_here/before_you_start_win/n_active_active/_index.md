@@ -20,9 +20,9 @@ When installing a Transfer CFT multi-node architecture in Windows, the user perf
 
 A cluster installation of Transfer CFT with multi-node (HA):
 
--   Install Transfer CFT and enable the multi-node architecture.
+-   Install Transfer CFT  and enable the multi-node architecture.
 -   Installation procedure must be executed on each host:
-    -   The first host installation sets the Shared directory, the &lt;Transfer\_CFT Shared> directory and all of the Transfer CFT configurations.
+    -   The first host installation  sets the Shared directory, the &lt;Transfer\_CFT Shared> directory and all of the Transfer CFT configurations.
     -   During each hosts installation (meaning additional nodes), you are prompted to specify the shared directory.
 -   Transfer CFT binaries are installed on several hosts and runtime files are installed on a shared file system.
 -   Only runtime files are shared.
@@ -58,7 +58,7 @@ The path and name of the local directory where you want to install the first clu
 >
 > See Shared file system prerequisites for details.
 
-You can use a single key for a multi-node installation, as either:
+You can use a single key for  a multi-node installation, as either:
 
 -   The hostname must not be defined for the key, or
 -   The hostname defined for the key matches the hostname of one of the hosts that composes the multi-node instance
@@ -92,7 +92,7 @@ Create as many copies of the initialize.properties file as you have hosts in the
 5.  Complete the installation.
 6.  To add a host to create a multi-host, multi-node installation, run the install `exe/bat` again. This time select **Cluster - Additional host**.
 
-After installation, but before you can use the cluster installation, you must configure the high-availability operations. The procedure for cluster configuration varies depending on the platform on which the cluster is installed.
+After installation, but before you can use the cluster installation, you must configure the  high-availability operations. The procedure for cluster configuration varies depending on the  platform on which the cluster is installed.
 
 ## Silent installation
 

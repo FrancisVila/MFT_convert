@@ -6,7 +6,7 @@
 
 1.  Enter general information about the data flow, such as a name.
 2.  Select the source as the initiator of the flow.
-3.  Select Source and click Edit. For this example, define **MainOffice** as the **Source.**
+3.  Select Source and click Edit. For this example, define **MainOffice  **as the **Source.**
 4.  Select multiple targets. In this example, add both and **Store\_66** and **Store\_89** as **Targets**.  
     The source is the owner of the data being transferred. The target is the receiver of the exchange.
 5.  Click **Save**.

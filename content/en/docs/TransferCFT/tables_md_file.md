@@ -582,9 +582,9 @@
 |  isppfx  | 'ISP'  |  ISPF libraries prefix.  |
 |  asmcmp  | 'ASMA90'  |  High Level Assembler.  |
 |  lcobol  | 'IGY'  |  COBOL data set prefix that is used in JCL I91APICP.  |
-| acmp  | 'yes'  | Compile/link ASM EXITs and APIs.  |
-| cobcmp  | 'yes'  | Compile/link COBOL EXITs and APIs.  |
-| ccmp  | 'yes'  | Compile/link C EXITs and APIs.  |
+| acmp  | 'yes'  |  Compile/link ASM EXITs and APIs.  |
+| cobcmp  |  'yes'  |  Compile/link COBOL EXITs and APIs.  |
+| ccmp  |  'yes'  | Compile/link C EXITs and APIs.  |
 |  cftvol  | 'volsert'  |  Name of the volume for Transfer CFT z/OS file creation **(*)**.  |
 |  cftunit  | '3390'  |  Disk unit type.  |
 |  cftv2  | '&amp;&amp;TARGET'  |  Transfer CFT z/OS file creation alias **(*)**.  |
@@ -618,7 +618,7 @@
 | pesitssl  | '1762'  | Protocol PeSIT SSL port.  |
 | sftpprot  | '1763'  | Protocol SFTP port.  |
 |  apisp  | '1765'  |  Synchronous API TCP/IP port (The address is 127.0.0.1 in* ..SAMPLE(CFTPARM) cftcom).  |
-| idparm  | 'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
+| idparm  |  'IDPARM0'  |  CFTPARM identifier: (cft.idparm).<br/> • This parameter is set during installation.<br/> • JCL CFTMAIN uses this parameter, where MNRMAIN (PARM=).</li>  |
 | cftinst  | '&amp;%"Z11"$pesitany'  |  The Transfer CFT instance ID, CFTPARM partner (value size &lt;= 24). This value identifies the Transfer CFT and must be unique (cft.instance_id).<br/>If Composer is enabled, the naming conventions differs:<br/> • Value size &lt;= 8<br/> • First alphabetic character<br/> • Naming convention: the same as the PDS’s member<br/>The sentence '&amp;%Mvsvar("SYSNAME")" "$pesitany' is replaced with the result of the REXX function Mvsvar("SYSNAME")" concatenated with the value of the previously customized pesitany field.<br/>"Z11" represents the z/OS partition’s name. For example, $pesitany corresponds to the value assigned to keyword 'pesitany'.  |
 | cftgroup  | 'Production.zos'  |  Transfer CFT instance GROUP  |
 
@@ -742,7 +742,7 @@
 | srrahost  | 'srrahost'  | Secure Relay Router Agent host.  |
 | srraadpo  | '6810'  | Secure Relay Router Agent administration port.  |
 | srracopo  | '6811'  | Secure Relay Router Agent communication port, with one port per Transfer CFT instance.  |
-| srrasap  | 'srrasap'  | Transfer CFT/Secure Relay configuration listening port on Router Agent side.  |
+| srrasap  | 'srrasap'  |  Transfer CFT/Secure Relay configuration listening port on Router Agent side.  |
 | srrassap  | 'srrassap'  | SSL listening port on Router Agent side.  |
 
 
@@ -754,7 +754,7 @@
 | --- | --- | --- | --- |
 | saml_enable  | no  | Enable SAML as the authentication method for this Transfer CFT (the UCONF am.type=saml).  |   |
 | saml_client_id  | '$(cft.instance_id)'  | Specify the Client_ID value to use as issuer for SAML requests. This should match the Identity Provider configuration.  |   |
-| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
+| authserver_host  | ' '  |  Specify the SAML endpoint for AuthnRequest (HTTP-Redirect binding).<br/> If Keycloak is the Identity Provider, this should resemble: <code>https://authserver.host/auth/realms/\{realm-name}/protocol/saml. authserver_host ' '</code>  | 'https://aa.bb.cc.int:8443'  |
 | saml_idp_signonservice  | ' '  |  Specify the SAML endpoint for SignonRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_signonservice ' '  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_logoutservice  | ' '  |  Specify the endpoint for SAML LogoutRequest (HTTP-Redirect binding).<br/>If Keycloak is the Identity Provider, this should resemble:<br/>https://authserver.host/auth/realms/\{realm-name}/protocol/saml.<br/>saml_idp_logoutservice ' '  | '/auth/realms/synapses/protocol/saml'  |
 | saml_idp_certificate_path  | ' '  | Specify the path to the certificate that verifies the SAML Identity Provider server's signatures. This certificate is stored in the internal PKI database.  |   |
@@ -789,8 +789,8 @@
 | [ALLPRIM = {100 | n}]{1…255}  | The % factor applied to the primary allocation computed to create a single volume file.  |
 | [ALLSEC = {10 | n}]{1…255}  | The % of the primary space used as the secondary allocation when creating a single volume file.  |
 | [VOLNUM = {20 | n}]{1…127}  | The maximum number of volumes in a multi-volume allocation.  |
-| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file.<br/>Use extreme care when changing this parameter.  |
-| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file.<br/>Use extreme care when changing this parameter.  |
+| [ALLONE = {100 | n}]{1…255}  |  The % factor applied to the primary allocation computed to create a multi-volume file. <br/>Use extreme care when changing this parameter.  |
+| [ALLNEXT= {100 | n}]{1…255}  |  The % factor applied to the secondary allocation when creating a multi-volume file. <br/>Use extreme care when changing this parameter.  |
 | [DSNTYPE = { <u>NONE</u> | EXTPREF/EXTREQ/LARGE}  | Values other than NONE (default value) are added to create DF/SMS managed EXTENDED or LARGE files. You can also control the DSNTYPE via DF/SMS customization.  |
 |  [BLKPDS = {150 | n}]{1…32760}  |  Number of PDS blocks allocated while creating a partitioned file by Transfer CFT.  |
 |  [DESC = { Value of the DESCRIPTOR CODE field of the WTO | n} ]  |  The left bit corresponds to 1. The right bit corresponds to 16.  |
@@ -810,7 +810,7 @@
 |  [TRACE = { <u>128</u> | n}] {4…16383}  |  Transfer CFT internal trace size (in Kb).  |
 |  [TAPE = {NOTSUP | <u>UPDATE</u> | OUTPUT}]  |  <li>NOTSUP: Forbids access to tape files for all Transfer CFT programs.</li> <li>UPDATE: Default. Enables writing of tape files protected by means of a retaining date or tape library management software.</li> <li>OUPUT: The transfer fails in ABDEND 713 if the tape is write-protected by tape library management software, or an expiration date.</li> <blockquote> **Note:** The delivered sample uses the value ‘TAPE=OUTPUT’. </blockquote>  |
 |  [TSOEDIT = { <u>NO</u> | YES}]  |  File support with sequence number in columns 73 to 80:<br/> • YES: If the ISPF editor with the ‘NUMBER ON’ option creates them, then the input files read by CFTUTIL can contain an eight-digit sequence number in columns 73 to 80. This sequence number is then ignored by Transfer CFT z/OS.</li> <li>NO: Input files are read without changes from CFTUTIL.</li> <blockquote> **Note:** The delivered sample uses the value ‘TSOEDIT=YES’. </blockquote>  |
-| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS.</li> <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
+| [VSAMSUFS = { <u>SHORT</u> | LONG }]  |  <li>SHORT: VSAM component suffixes are created with .D for KSDS and ESDS, and .I for KSDS. </li> <li>LONG: VSAM component suffixes are created with .DATA for KSDS and ESDS, and .INDEX for KSDS.<br/>Alternatively, you can set this parameter using: <code>UCONFSET ID=cft.mvs.sginstal.vsamsufs,value=x</code>  |
 
 
 
@@ -1199,7 +1199,7 @@
 ============================== table nb count(88) table converted to MD ========================================
 
 
-| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- |
 | $C10RECV  |  UNPAX the Maintenance archive package and RECEIVE the Maintenance Pack.  |
 
@@ -1208,7 +1208,7 @@
 ============================== table nb count(89) table converted to MD ========================================
 
 
-| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PAPP  | Performs an APPLY (with the CHECK operand) to install the PTFs in the target zone and libraries.  |
 
@@ -1217,7 +1217,7 @@
 ============================== table nb count(90) table converted to MD ========================================
 
 
-| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- |
 | $C30PREM  | Performs a RESTORE (to remove) for the PTF elements from the target zone.  |
 | $C60PACC  | Performs an ACCEPT (with the CHECK operand) of the PTFs in the distribution zone and libraries.  |
@@ -1227,7 +1227,7 @@
 ============================== table nb count(91) table converted to MD ========================================
 
 
-| Member Name &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Member Name &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- |
 |  A13SMPE  |  Applies maintenance to the Transfer CFT product instance.  |
 |  A13UCOP  |  Applies maintenance to Copilot.  |
@@ -2029,7 +2029,7 @@
 | User id  | string, max 32, empty by default  |  CFTSEND, userid  | Identifier of the transfer owner. If this parameter is not defined, its default value is the system "userid" of the {{&lt; TransferCFT/componentshortname &gt;}}.  |
 | Detect duplicate transfers  | string max 512, empty by default  | CFTSEND, duplicat  | This field is used in detecting duplicate transfers and may contain a list of symbolic variables separated by a period ".".  |
 | Compress file  | Yes: default,<br /> No  | CFTSEND, comp<br /> <br /> Yes → 15<br /> No → 0  | Indicates whether files are compressed before they are transferred.<br /> Same value will be used for the compression on target side  |
-| On file modification  | Continue transfer: default,<br /> Stop transfer  | CFTSEND , fdisp<br /> Continue transfer -&gt; SHR<br /> Stop transfer-&gt; CHECK  | Available only in source side.<br /> Specify what happens if files are modified during the transfer.  |
+| On file modification  | Continue transfer: default, <br /> Stop transfer  | CFTSEND , fdisp<br /> Continue transfer -&gt; SHR<br /> Stop transfer-&gt; CHECK  | Available only in source side.<br /> Specify what happens if files are modified during the transfer.  |
 | Action after transfer  | Delete file ,<br /> Delete file content,<br /> None: default  | CFTSEND, faction<br /> <br /> Delete file -&gt; Delete<br /> Delete file content -&gt; Erase<br /> None-&gt; None: default  | Specifies what happens to the file in source side when the transfer is complete.<br /> Delete file – Deletes the file.<br /> Delete file content – Removes the contents of the file but leaves the "end of file" mark at the beginning of the file.<br /> None – No action is performed on the file.  |
 | Delete file on purge  | Ready (D) ,<br /> Transferring (C), On Hold (H),<br /> Kept (K), Transferred (T), Executed (X) default: no selection  | CFTSEND, fdelete<br /> <br /> Ready (D) -&gt;D<br /> Transferring (C) -&gt; C<br /> On Hold (H) -&gt; H<br /> Kept (K) -&gt; K<br /> Transferred (T) -&gt; T<br /> Executed (X) -&gt; X  | Indicates the transfer states of files that will be deleted when you remove the associated transfers from the transfer list or when you purge the transfer list. You can select any combination of statuses. If you do not select anything, files are not deleted even when the associated transfers are removed from the transfer list.<br /> Ready – The transfer is available and can start immediately.<br /> Transferring – The transfer is being executed.<br /> On hold – The transfer was interrupted due to an error, such as a network failure, or by a user.<br /> Kept – The transfer was suspended by {{&lt; TransferCFT/componentshortname &gt;}} or by a user.<br /> Transferred – The transfer was successfully completed.<br /> Executed – The transfer was ended by an application or user.  |
 | Additional information  | string max 512, empty by default  | CFTSEND, parm  | Use this field for any information you want to provide.  |
@@ -2039,7 +2039,7 @@
 ============================== table nb count(158) table converted to MD ========================================
 
 
-| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Single - &gt; Path  | string max 64  | CFTSEND, fname  | Indicate the single file to be sent.  |
 | Multiple -&gt; Path  | string max 64  | CFTSEND, fname  | If you selected Multiple, the value you enter can be:<br /> A directory name – All the files in this directory will be transferred.<br /> A generic file name, including wildcard characters – Only files that match are transferred. For example, mydirectory/toto*.  |
@@ -2064,7 +2064,7 @@
 ============================== table nb count(160) table converted to MD ========================================
 
 
-| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, preexec  | Specify the script to be executed before the file is transferred.  |
 | State  | Ready: default,<br /> On hold  | CFTSEND, prestate<br /> Ready -&gt;DISP : default<br /> On hold -&gt; HOLD  | Indicate the status of the transfer on the source. The script is run only if the transfer is in the specified state.<br /> Ready – Indicates that the transfer is available and can start immediately.<br /> On hold – Indicates that the transfer is deferred until a remote receive request is accepted, or until a local START command changes this transfer to the ready state.  |
@@ -2075,7 +2075,7 @@
 ============================== table nb count(161) table converted to MD ========================================
 
 
-| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exec  | Specify the script to be executed after the file is transferred.  |
 | Apply to group of files  | On main request: Default,<br /> For each file in group,<br /> Both  | CFTSEND, execsub<br /> On main request -&gt; LIST<br /> For each file in group -&gt; FILE<br /> Both -&gt; SUBF  | This field is displayed if you enabled a broadcast list in source transfer properties.<br /> Values – On main request | For each target in the list | Both<br /> On main request – Executes the script only on the main request.<br /> For each target in the list – Executes the script only for each target in the list.<br /> Both – Executes the script both for the main request and for each target in the list.  |
@@ -2086,7 +2086,7 @@
 ============================== table nb count(162) table converted to MD ========================================
 
 
-| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, ackexec  | Specify the script to be executed after an acknowledgement is received for a sent file.  |
 | State  | Require,<br /> Ignore: default  | CFTSEND, ackstate<br /> Require -&gt; REQUIRE<br /> Ignore -&gt; IGNORE  | Indicate if the transfer must wait for an acknowledgement.<br /> Require – The transfer must wait for an acknowledgement before it can be considered complete.<br /> Ignore – The transfer can be considered complete, even if an acknowledgement is not received.  |
@@ -2098,7 +2098,7 @@
 ============================== table nb count(163) table converted to MD ========================================
 
 
-| CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
+|  CG parameter &lt;/th&gt;  | CG values  | CFTUTIL parameter  | Description  |
 | --- | --- | --- | --- |
 | Script -&gt; Filename  | if Custom, Filename field: string of max 512c  | CFTSEND, exece  | Specify the script to be executed after an error occurs during a transfer.  |
 
@@ -2178,7 +2178,7 @@
 | --- | --- | --- |
 | Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
 | Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM.  |
-|  xfbadm database<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+|  xfbadm database <br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
 
 
 
@@ -2695,7 +2695,7 @@
 | INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 | RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../../../../app_integration_intro/intro_folder_monitor/folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../../../../app_integration_intro/intro_folder_monitor/folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
 | RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
 | RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
@@ -3050,12 +3050,12 @@
 | --- | --- |
 | id='string'  | Model ID, call within the DISPLAY command with the content parameter  |
 | mode = 'column | line'  | Output orientation (line or column)  |
-| title_size = '-1 | NUM'  | Title size, only in column mode (undefined or number)  |
+| title_size = '-1 | NUM'  |  Title size, only in column mode (undefined or number)  |
 | title_align = 'left | center | right'  | Title alignment (column mode only)  |
 | line_prefix = '&lt;LF&gt;|STR'  | Prefix in line mode (empty or string)  |
 | line_suffix = '| STR'  | Suffix in line mode (empty or string)  |
 | default_prefix = '| STR'  | Default prefix (empty or string)  |
-| default_suffix = ' | STR'  | Default suffix ('' in column mode and 'Line Feed' in line mode) (empty or string)  |
+| default_suffix = ' | STR'  |  Default suffix ('' in column mode and 'Line Feed' in line mode) (empty or string)  |
 | default_empty = '| STR'  | Default String if empty (empty or string)  |
 | default_na = '| STR'  | Default String if not applicable (empty or string)  |
 
@@ -3069,7 +3069,7 @@
 | id  | This parameter is mandatory and should be the same as the listcat id parameter  |
 | title  | Title of the column / line.  |
 | maxlength : -1 | NUM  | Max length: -1 means no maxlength  |
-| minlength : -1 | NUM  | Min length: -1 means no minlength  |
+| minlength : -1 | NUM  |  Min length: -1 means no minlength  |
 | prefix =' | STR'  | Prefix (empty or string)  |
 | suffix =' | STR'  | Suffix (empty or string)  |
 | align = left | center | right  | Field alignment  |
@@ -3497,11 +3497,11 @@
 
 | FTYPE  | FRECFM  | Type of file  |
 | --- | --- | --- |
-| ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
-| ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
-| ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
+|  ‘S’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘D’ , ‘ ’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘E’  | ‘V’, ‘F’, ‘ ’  | Text  |
+|  ‘Z’  | ‘V’, ‘F’, ‘ ’  | Binary  |
+|  ‘J’  | ‘V’, ‘F’, ‘ ’  |  Stream text is an alternative way to transfer a text file. Every line of a file must end with an LF or CR/LF. However, during a transfer the CR/LF are changed to LFs. This enables a quicker reading, and a faster transfer.<br/>When using stream text (FTYPE=J), the sender and the receiver must both have the FTYPE set to J. Setting only the sender or receiver to FTYPE=J results in unexpected content for the transferred file. <blockquote> **Note:**<br/>This transfer mode is not available for native side transfers. </blockquote>  |
 
 
 
@@ -3786,13 +3786,13 @@
 |  MAXCNX  | Number &lt;32&gt; min=1 max=2000  |  Maximum number of simultaneous connections that Transfer CFT accepts to establish on this network resource.  |
 |  TYPE  | TCP  |  Defines the type of network resource.  |
 | BUFLEN  | Number &lt;0&gt; min=32 max=32766  | Size of buffers.  |
-| COMMENT  | STRING max_length=80  | Free comment.  |
-| ORIGIN  | STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
-| **INET**  | STRING max_length=32  | Identifier of the CFTNET command defining access to the first network  |
-| **HOST**  | String max_length=64  | Resource address  |
-| **PORT**  | Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
+| COMMENT  | STRING max_length=80  |  Free comment.  |
+| ORIGIN  |  STRING max_length=0  | Values include 'CFTUTIL','<u>C</u>','DESIGNER','D','COPILOT','O'.  |
+| **INET**  | STRING max_length=32  |  Identifier of the CFTNET command defining access to the first network  |
+| **HOST**  |  String max_length=64  | Resource address  |
+| **PORT**  |  Number &lt;0&gt; min=1 max=65535  | Listening port of the proxy/proxies in the first network  |
 | USER  | String max_length=32  | User name transmitted in the connection request addressed to the proxy  |
-| PASSWORD  | String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
+| PASSWORD  |  String max_length=32  |  *SOCKS 5 only*<br/>User password transmitted in the connection request addressed to the proxy.  |
 
 
 
@@ -4368,7 +4368,7 @@
 | --- | --- | --- |
 | Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
 | Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{&lt; TransferCFT/flowmanager &gt;}}, PassPort AM, or internal AM.  |
-|  xfbadm database<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+|  xfbadm database <br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
 
 
 
@@ -4617,7 +4617,7 @@
 |  Unix  | NO  |
 |  Windows  | YES  |
 | IBM i  | YES  |
-| z/OS  |  This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>  |
+|  z/OS  |  This functionality was modified in Transfer CFT 3.2.4 SP1:<br/> • Post-SP1: The default value for <code>createprocessasuser </code>is YES.<br/> • Pre-SP1: There is no definable value. The equivalent of <code>createprocessasuser </code>depends on the use of APF. If JOBLIB is not defined as an APF, it is the equivalent of NO. If defined, this is the equivalent of YES.</li>  |
 
 
 
@@ -4734,7 +4734,7 @@
 | INCLUDEFILTER  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 | RESUBMITCHANGED  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE.<br/>When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:**<br/>The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+| FILTERTYPE  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering.<br/>Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/> • EREGEX: Extended regular expression syntax.<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
 | RENAMEMETHOD  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method. When set to TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'. For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li> <blockquote> **Note:**<br/>Unset the default value and use " " to MOVE without adding a timestamp. </blockquote>  |
 | RENAMESEPARATOR  | string  |  "."  |  This parameter only applies to the MOVE method. You can use no more than two characters from among the following: .[]()_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  | string  |   | Metadata used to control user changes.  |
@@ -4761,10 +4761,10 @@
 | *  | Indicates any sequence of zero or more characters.  | The filter "*.dat" selects any file name that has the extension ".dat".  |
 | ?  | Indicates any single character.  | The filter "T*.???" selects any file name starting with a 'T' and having an extension of exactly three characters.  |
 | \x  | Indicates that when x is a special character, x is interpreted as a normal character.  | This is generally used to invalidate the meaning of the * and ? characters.  |
-| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9]<br/>indicates any decimal digit.  |
+| [x...y]  | Indicates a single character set defined by "x...y".  |  The filter [0-9] <br/>indicates any decimal digit.  |
 | -  |  Indicates a range of characters. However, the minus character (or hyphen) has no special meaning if it is either the first or the last character in the set.  | The filter [0-9a-zA-Z] indicates any alphanumeric character (in English).  |
 | ]  | Has no special meaning if it is the first character in the set.  |   |
-| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9]<br/>indicates any character that is not a decimal digit.<br/>The filter [^]-] indicates any character other than a closed bracket or minus sign.  |
+| [^x...y]  | Indicates any character other than those specified in the set "x...y".  |  The filter [^0-9] <br/>indicates any character that is not a decimal digit.<br/>The filter [^]-] indicates any character other than a closed bracket or minus sign.  |
 | *.[tT][xX][tT]  | Indicates any string terminated by .TXT regardless of the case.  |   |
 
 
@@ -4824,7 +4824,7 @@
 | INCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 | RESUBMITCHANGED  |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
+| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
 | RENAMEMETHOD  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
 | RENAMESEPARATOR  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   |   | Metadata used to control user changes.  |
@@ -4855,7 +4855,7 @@
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
+|  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="../folder_customize#Defining">Create inclusion and exclusion filters</a> for details.  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP: A timestamp having the format YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   | Metadata used to control user changes.  |
@@ -6083,7 +6083,7 @@
 | copilot.startup.catalog.filter  | Errors  | Filter to use for the catalog display on start up.  |
 | copilot.startup.log  | Yes  | Display/hide log at start up.  |
 | copilot.startup.log.filter  | None  | Filter to use for the log display on start up.  |
-| cft.cftlog.switch_on_stop  | No  | Dictates if the switch log occurs at {{&lt; TransferCFT/componentshortname &gt;}} server shutdown  |
+| cft.cftlog.switch_on_stop  | No  |  Dictates if the switch log occurs at {{&lt; TransferCFT/componentshortname &gt;}} server shutdown  |
 
 
 
@@ -6680,7 +6680,7 @@
 |  EndDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the date on which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the date on which the Receiver stopped receiving the transfer.<br/>These dates are expressed in dd.mm.yyyy format.  |  DATEE  |
 |  EndTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is the local time at which the Sender stopped sending the transfer.<br/> • RECEIVED: The value of this attribute is the local time at which the Receiver stopped receiving the transfer.<br/>These times are expressed in hh:mn:ss format.  |  TIMEE  |
 |  RequestCreationDate  |  Date  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local date of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the date of the creation of the file on the Sender side.</li>  |  DATEK  |
-|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side.</li>  |  TIMEK  |
+|  RequestCreationTime  |  Time  |  -  |  If the value of the State attribute is:<br/> • SENT: The value of this attribute is local time of the creation of the file on the Sender side.<br/> • RECEIVED: The value of this attribute is the time of the creation of the file on the Sender side. </li>  |  TIMEK  |
 |  TransmissionDuration  |  Integer  |  -  |  Transfer duration, expressed in seconds.  |  TIMES  |
 
 
@@ -6690,9 +6690,9 @@
 
 |  Sentinel<br/>attribute  |  Data type  |  Length  |  Description  |  Name in<br/>{{&lt; TransferCFT/componentshortname &gt;}}  |
 | --- | --- | --- | --- | --- |
-|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E)<br/> • PSIT_HS_D (PeSIT, version D)<br/> • ODT (ODETTE File Transfer Protocol)</li>  |  Protocol  |
+|  Protocol  |  String  |  25  |  Name of the protocol that operates at the Protocol Layer of the transfer. Possible values:<br/> • CFT (PeSIT, version CFT)<br/> • PSIT_HS_E (PeSIT, version E) <br/> • PSIT_HS_D (PeSIT, version D) <br/> • ODT (ODETTE File Transfer Protocol) </li>  |  Protocol  |
 |  IsSSL  |  String  |  1  |  <li>1: SSL/TLS used for the transfer.<br/> • 0: SSL/TLS not used for the transfer.</li>  |  SSLMODE  |
-|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates.</li>  |  SSLAUTH  |
+|  SSLAuth  |  String  |  1  |  <li>S: The Server sent X.509 certificates to the Requester.<br/> • B: Both the Server and the Requester sent X.509 certificates to each other.<br/> • N: Neither the Server nor the Requester sent X.509 certificates. </li>  |  SSLAUTH  |
 |  SSLCypher  |  String  |  2  |  The cipher suite that the Server and the Requester used during the SSL/TLS session.  |  SSLCIPH  |
 
 
@@ -6729,7 +6729,7 @@
 | --- | --- | --- | --- | --- |
 |  CommandType  |  String  |  1  |  <li>F: File transfer<br/> • M: Message transfer<br/> • A: Message reply<br/> • N: Message nack</li>  |  TYPE  |
 |  FileOrganization  |  String  |  25  |  <li>org_sequential: The transferred data is not indexed.<br/> • indexed: The transferred data is indexed.<br/> • direct: The transferred data is assigned relative access.</li>  |  FORG  |
-|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file.<br/> • J, T, O, X: The transferred file is a text file.</li>  |  FTYPE  |
+|  FileType  |  String  |  60  |  <li>B: The transferred file is a binary file. <br/> • J, T, O, X: The transferred file is a text file. </li>  |  FTYPE  |
 |  RecordNumber  |  Integer  |   |  Number of record in the file. This size is expressed in bytes. <blockquote> **Note:**<br/>For PeSIT, this value sent is crosschecked by both the sender and receiver. </blockquote>  |  FREC  |
 |  RecordFormat  |  String  |  64  |  <li>F: fixed - The transferred data contains fixed-length records.<br/> • V: variable - The transferred data contains variable-length records.<br/> • U: undefined - The structure of the transferred data is unknown.</li>  |  FRECFM  |
 |  RecordSize  |  Integer  |   |  <li>If the value of RecordFormat attribute is fixed, the value of this attribute is the size of all records in the transferred file, expressed in bytes.<br/> • If the value of RecordFormat is variable or undefined, the value of this attribute is the size of the largest record in the transferred file, expressed in bytes.</li>  |  FLRECL  |
@@ -7084,7 +7084,7 @@
 |  Try with a telnet (&lt;host&gt; &lt;sap&gt;) or ftp (&lt;host&gt; &lt;sap&gt;)  |  <li> The remote port is reachable via telnet when you have the following message: "Escape character is '^]'." (Ctrl+$ to escape) <br/> • The remote port is reachable via ftp when you have the following message: Connected to &lt;host&gt; (Ctrl + C to escape) </li>  |
 |  Host and port are reachable but I still have the diagnostic code 302  |   |
 |  Check the diagp error  |  If diagp = R 0 2f2, the remote partner closed the connection due to the following reasons:<br/> • Incompatibility between TCP and pTCP (the remote is configured in pTCP network protocol whereas you are in TCP) <br/> • The cft.server.max_session value is not equal to 0 but is less than the MAXCNX one (in CFTNET object) <br/> • The remote MAXCNX is reached </li>  |
-|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li>Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a class="Hyperlink_1" href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</li> </ol>  |
+|   |  If diagp = R 01 280 or R 00 280, the timeout was reached because of:<br/> • A network issue (router, firewall, or other application...) <br/> • An incompatibility in the IP protocol version: </li> <ol> <li> Check that locally and remotely all is configured with the same IP version (IPV4 , IPV6). &lt;/li&gt;&lt;li value="2"&gt;Check the following uconf values: cft.ipv6.disable_listen cft.ipv6.disable_connect &lt;br/&gt;HOST value (CFTNET object).yes (the default value) &lt;/li&gt;&lt;/ol&gt; &lt;ul&gt;&lt;li&gt;&lt;p&gt;Try a Transfer CFT packet analyzer such as &lt;a class="Hyperlink_1" href="https://www.wireshark.org/"&gt;Wireshark&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;</li> </ol>  |
 |  Still have the diagnostic code 302 and don't understand the diagp  |   |
 | Check the traces  |  Check the contents of the following file:<br/>UNIX: Transfer_CFT/runtime/run folder &gt; cft.out file<br/> • Windows: Transfer_CFT\runtime\run folder &gt; cftnet.trc file </li>  |
 
@@ -8030,7 +8030,7 @@
 ============================== table nb count(556) table converted to MD ========================================
 
 
-|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command<br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
+|  V23 format<br/>V24 format<br/>Information  |  CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command <br/>CFTR23I On &amp;time UserId=&amp;userid, JobName=&amp;jobname ran the command &amp;command  |
 | --- | --- |
 |  Explanation  |  This message traces who has cleared what and with which command.  |
 
@@ -8317,7 +8317,7 @@
 ============================== table nb count(561) table converted to MD ========================================
 
 
-| Error Code &lt;/th&gt;  | FPDU &lt;/th&gt;  | Meaning &lt;/th&gt;  |
+|  Error Code &lt;/th&gt;  |  FPDU &lt;/th&gt;  |  Meaning &lt;/th&gt;  |
 | --- | --- | --- |
 |  100  |  RESYNC  |  Transmission error (invalid CRC)  |
 |  139  |   |  Invalid file attributes  |
@@ -8508,7 +8508,7 @@
 ============================== table nb count(568) table converted to MD ========================================
 
 
-| Action &lt;/th&gt;  | Command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Command &lt;/th&gt;  |
 | --- | --- |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  <br/> • TRCFILE<br/> • SETTRC</li>  |
 |  Start information collection:<br/> • Transfer CFT start<br/> • During Transfer CFT operations </li>  |  STARTTRC  |
@@ -8520,7 +8520,7 @@
 ============================== table nb count(569) table converted to MD ========================================
 
 
-|  Trace file definition  | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Trace file definition  |  Command &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8532,7 +8532,7 @@
 ============================== table nb count(570) table converted to MD ========================================
 
 
-| Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
+|  Starting information collection &lt;/th&gt;  |  Command used to define the file &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Command to enter &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8544,7 +8544,7 @@
 ============================== table nb count(571) table converted to MD ========================================
 
 
-| Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Define the file with &lt;/th&gt;  |  Enter the command &lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |   |  SETTR  |  STOPTRC  |
@@ -8556,7 +8556,7 @@
 ============================== table nb count(572) table converted to MD ========================================
 
 
-| Action &lt;/th&gt;  | Command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Command &lt;/th&gt;  |
 | --- | --- |
 |  Update the general parameters before Transfer CFT start-up  |  CFTPARM  |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  CFTTRACE<br />  |
@@ -8567,7 +8567,7 @@
 ============================== table nb count(573) table converted to MD ========================================
 
 
-|  Trace file definition  | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Trace file definition  |  Command &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -8577,7 +8577,7 @@
 ============================== table nb count(574) table converted to MD ========================================
 
 
-| Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
+|  Starting information collection &lt;/th&gt;  |  Command used to define the file &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Command to enter &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -8589,7 +8589,7 @@
 ============================== table nb count(575) table converted to MD ========================================
 
 
-| Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Define the file with &lt;/th&gt;  |  Enter the command &lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |  Stop collection, close the files and shutdown the process  |  CFTTRACE  |  STOPTRC<br />  |

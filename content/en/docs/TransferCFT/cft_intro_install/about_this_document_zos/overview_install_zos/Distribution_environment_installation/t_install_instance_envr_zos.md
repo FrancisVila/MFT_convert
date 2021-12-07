@@ -8,11 +8,11 @@ If during installation you created both the distribution environment and the Tra
 
 > **Note:**
 >
-> You require an installed Distribution environment before you can install the instance environment. See Distribution environment installation.
+> You require an installed Distribution environment before you can install the instance environment. See              Distribution environment installation.
 
 Prerequisites
 
-{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment), SCEELIB and SCEECPP, which are used in the (B20 LINK) link step.
+{{< TransferCFT/componentlongname  >}} requires two additional libraries LE (Language Environment),  SCEELIB and SCEECPP, which are used in the  (B20 LINK) link step.
 
 Procedure
 

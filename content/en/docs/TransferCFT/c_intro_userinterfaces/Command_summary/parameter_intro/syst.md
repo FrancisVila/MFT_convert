@@ -12,9 +12,9 @@
 
 Defines the OS for the partner site.
 
-Select the operating system supporting the partner {{< TransferCFT/componentshortname  >}}
-from the list: GCOS7, GCOS8, GUARD, MVS, OS400, UNIX,
-VMS, WINNT.
+Select the operating system supporting the partner  {{< TransferCFT/componentshortname  >}}
+from the list: GCOS7, GCOS8, GUARD,  MVS, OS400, UNIX,
+  VMS, WINNT.
 
  
 

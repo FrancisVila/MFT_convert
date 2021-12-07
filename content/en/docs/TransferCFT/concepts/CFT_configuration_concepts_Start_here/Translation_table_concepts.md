@@ -2,8 +2,8 @@
     "title": "Define translation tables",
     "linkTitle": "Conversion tables CFTXLATE",
     "weight": "190"
-}This topic describes the Transfer CFT translation table concept and how to use the corresponding CFTXLATE object to manage machine language translation. You can create and use a translation table between 2 computers each
-using a different alphabet. Each table is built using a file containing a unique 256-character
+}This topic describes the Transfer CFT translation table concept and how to use the corresponding CFTXLATE object to manage machine language translation. You can create and use a translation table  between 2 computers each
+using a different alphabet. Each table is built using a file  containing a unique 256-character
 record, where through its position and value each character defines
 the correspondence between two alphabets.
 
@@ -23,32 +23,32 @@ proceeds, or OFF LINE to any file using the COPYFILE command.
 
 ## Default translation tables
 
-By default, {{< TransferCFT/componentshortname  >}} provides 4 internal ASCII/EBCDIC translation
-tables, two for each transfer direction. These tables are bijective. These correspond loosely to translation between code pages EBCDIC 1047 and ASCII 437, with some small differences.
+By default,  {{< TransferCFT/componentshortname  >}} provides 4 internal ASCII/EBCDIC translation
+tables, two for each transfer direction. These tables are bijective. These correspond loosely to translation between code pages EBCDIC 1047 and ASCII 437, with some small differences.  
 
 ## Create a new translation table
 
-Begin by creating a translation table file, and modify as needed. You can use the [OS specific delivered tool](#Use2) to help with this task. Or use the following procedure:
+Begin by creating a translation table file, and modify as needed.   You can use the [OS specific delivered tool](#Use2) to help with this task. Or use the following procedure:
 
 1.  Create a file as shown in the following example, containing hexadecimal characters from 00 to FF.
 
 ```
-00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F
-10 11 12 13 14 15 16 17 - 18 19 1A 1B 1C 1D 1E 1F
-20 21 22 23 24 25 26 27 - 28 29 2A 2B 2C 2D 2E 2F
-30 31 32 33 34 35 36 37 - 38 39 3A 3B 3C 3D 3E 3F
-40 41 42 43 44 45 46 47 - 48 49 4A 4B 4C 4D 4E 4F
-50 51 52 53 54 55 56 57 - 58 59 5A 5B 5C 5D 5E 5F
-60 61 62 63 64 65 66 67 - 68 69 6A 6B 6C 6D 6E 6F
-70 71 72 73 74 75 76 77 - 78 79 7A 7B 7C 7D 7E 7F
-80 81 82 83 84 85 86 87 - 88 89 8A 8B 8C 8D 8E 8F
+00 01 02 03 04 05 06 07 - 08 09 0A 0B 0C 0D 0E 0F  
+10 11 12 13 14 15 16 17 - 18 19 1A 1B 1C 1D 1E 1F  
+20 21 22 23 24 25 26 27 - 28 29 2A 2B 2C 2D 2E 2F  
+30 31 32 33 34 35 36 37 - 38 39 3A 3B 3C 3D 3E 3F  
+40 41 42 43 44 45 46 47 - 48 49 4A 4B 4C 4D 4E 4F  
+50 51 52 53 54 55 56 57 - 58 59 5A 5B 5C 5D 5E 5F  
+60 61 62 63 64 65 66 67 - 68 69 6A 6B 6C 6D 6E 6F  
+70 71 72 73 74 75 76 77 - 78 79 7A 7B 7C 7D 7E 7F  
+80 81 82 83 84 85 86 87 - 88 89 8A 8B 8C 8D 8E 8F  
 90 91 92 93 94 95 96 97 - 98 99 9A 9B 9C 9D 9E 9F
-A0 A1 A2 A3 A4 A5 A6 A7 - A8 A9 AA AB AC AD AE AF
-B0 B1 B2 B3 B4 B5 B6 B7 - B8 B9 BA BB BC BD BE BF
-C0 C1 C2 C3 C4 C5 C6 C7 - C8 C9 CA CB CC CD CE CF
+A0 A1 A2 A3 A4 A5 A6 A7 - A8 A9 AA AB AC AD AE AF  
+B0 B1 B2 B3 B4 B5 B6 B7 - B8 B9 BA BB BC BD BE BF  
+C0 C1 C2 C3 C4 C5 C6 C7 - C8 C9 CA CB CC CD CE CF  
 D0 D1 D2 D3 D4 D5 D6 D7 - D8 D9 DA DB DC DD DE DF
-E0 E1 E2 E3 E4 E5 E6 E7 - E8 E9 EA EB EC ED EE EF
-F0 F1 F2 F3 F4 F5 F6 F7 - F8 F9 FA FB FC FD FE FF
+E0 E1 E2 E3 E4 E5 E6 E7 - E8 E9 EA EB EC ED EE EF  
+F0 F1 F2 F3 F4 F5 F6 F7 - F8 F9 FA FB FC FD FE FF  
 ```
 
 You can use the following `CFTXLATE `command to generate an ASCII CP437 to EBCDIC CP1047 translation table.
@@ -105,13 +105,13 @@ CA8F1BB93C3DE19D90BBB3DAFAEA3E41
 
 Transfer CFT is delivered with a platform specific tool to help you create an XLATE table.
 
--   Mainframes - A JCL is provided to help with creating both local and remote tables. Refer to the CFTXLATE member in the installation library.
+-   Mainframes - A JCL  is provided to help with creating both local and remote tables. Refer to the CFTXLATE member in the installation library.
 
 -   UNIX/Windows - Use the Axway delivered <a href="" class="MCTextPopup popup popupHead">xvi utility</a> located in the `home/bin` folder.
 
     xvi syntax
 
-    xvi \[-d | -a | -e | -l &lt;file> \] &lt;table>
+    xvi \[-d | -a | -e | -l &lt;file>  \] &lt;table>
 
     **Standard use**
 
@@ -121,7 +121,7 @@ Transfer CFT is delivered with a platform specific tool to help you create an XL
 
     -d: displays a valid existing table in ASCII
 
-    -a: creates a &lt;table> to convert from ASCII to EBCDIC (if CFTXLATE command table exists, it is overwritten)
+    -a: creates a &lt;table>  to convert from ASCII to EBCDIC (if CFTXLATE command table exists, it is overwritten)
 
     -e: creates a &lt;table> to convert from EBCDIC to ASCII (if CFTXLATE command table exists, it is overwritten)
 
@@ -141,7 +141,7 @@ the target alphabet.
 
 ## Define a translation and execute a transfer
 
-Use the CFTXLATE object to define translation tables between 2 alphabets. A definition includes:
+Use the  CFTXLATE object to define translation tables between 2 alphabets. A definition includes:
 
 -   Transfer direction (DIRECT: SEND, RECV, or BOTH)
 -   File data code
@@ -156,13 +156,13 @@ of the send translation table (FCODE to NCODE) and if DIRECT = RECV (or
 
 > **Note:**
 >
-> If FCODE or NCODE are BINARY no translation
+> If FCODE or NCODE are  BINARY no translation
 > takes place.
 
 The identifier
 of these tables is the value of the DEFAULT parameter of the CFTPARM command.
 It is, however, possible to replace, modify or delete these internal tables
-by CFTXLATE commands having this identifier. When {{< TransferCFT/componentshortname  >}} does not find an associated table for these 4 transfer
+by CFTXLATE commands having this identifier. When  {{< TransferCFT/componentshortname  >}} does not find an associated table for these 4 transfer
 criteria, it looks for the default table (value of the DEFAULT
 parameter of the CFTPARM command, for the XLATE parameter).
 
@@ -194,7 +194,7 @@ cftxlate id=bin, fcode=ebcdic, ncode=ascii, direct=both, mode=create, fname=cp10
 
 ### Execute the transfer command
 
-Translation tables are used if FCODE and NCODE are not set to BINARY. When sending a file, Transfer CFT translates FCODE to NCODE. When receiving a file, Transfer CFT translates from NCODE to FCODE.
+Translation tables are used  if FCODE and NCODE are not set to BINARY. When sending a file, Transfer CFT translates FCODE to NCODE. When receiving a file, Transfer CFT translates from NCODE to FCODE.
 
 In the following example, the translation table that is specified by the xlate parameter is used instead of the default translation table.
 
@@ -205,7 +205,7 @@ send part=paris, idf=myflow, xlate=cp437tocp1047, fcode=ascii, ncode=ebcdic
 However in the following example the default translation tables are used, provided the send template model does not include an xlate definition.
 
 ```
-send part=paris,idf=myflow, fcode=ascii, ncode=ebcdic
+send part=paris,idf=myflow,  fcode=ascii, ncode=ebcdic
 ```
 
 A translation table is used if one of the following conditions are met, in the
@@ -218,7 +218,7 @@ order of priority indicated:
     has been indicated in the CFTPART command  
     (CFTPART XLATE = identifier)
 -   the table identifier
-    is the default identifier of the {{< TransferCFT/componentshortname >}}  
+    is the default identifier of the  {{< TransferCFT/componentshortname >}}  
     (CFTPARM DEFAULT = identifier)
 
 And if all the following conditions are met:
@@ -243,7 +243,7 @@ And if all the following conditions are met:
 
 ## Code pages and translation tables
 
-The following tables provide basic mapping printable hexadecimal characters for translation as a reference.
+The following tables provide basic mapping  printable hexadecimal characters for translation as a reference.
 
 <span id="Code"></span>
 
@@ -293,7 +293,7 @@ The following tables provide basic mapping printable hexadecimal characters for 
 
 ### Translation tables
 
-This section demonstrates how the translation table works. In a translation table, the "s" character takes the value "t":
+This section demonstrates how the translation table works. In a  translation table, the "s" character takes the value "t":
 
 -   "s" is
     the value of the character of the "source" alphabet

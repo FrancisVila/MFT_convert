@@ -10,10 +10,10 @@
 
 \[LOG      = identifier\]
 
-Identifier for the {{< TransferCFT/componentshortname  >}} event
+Identifier for the  {{< TransferCFT/componentshortname  >}} event
 log file description command (CFTLOG).
 
-If this parameter is not defined, {{< TransferCFT/componentshortname  >}} writes logging
+If this parameter is not defined,  {{< TransferCFT/componentshortname  >}}  writes logging
 messages to the monitor's standard output.
 
  

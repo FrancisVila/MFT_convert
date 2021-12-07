@@ -25,7 +25,7 @@ The behavior for this phase is fully dependent on the ackstate.
 There are two possibilities for ackstate:
 
 -   Require:
-    -   If an Acknowledgement is received during the post processing, it waits until the end of the post-processing to move to the Acknowledgement phase (Z) and launch the ackexec/execsfa/execsma with phasestep (C) if needed. When this completes, it goes to the Done phase.
+    -   If  an Acknowledgement is received during the post processing, it waits until the end of the post-processing to move to the Acknowledgement phase (Z) and launch the ackexec/execsfa/execsma with phasestep (C) if needed. When this completes, it goes to the Done phase.
     -   If no Acknowledgement is received at the end of the post-processing, or if there is no post processing, it remains in the Acknowledgement (Z) phase with a phasestep of (H). As soon as the acknowledgement is received/sent, its launches the ackexec/execsfa/execsma with phasestep (C) if needed. When they finish, it moves to the Done phase.
 
 <!-- -->

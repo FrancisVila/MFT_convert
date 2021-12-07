@@ -19,7 +19,7 @@ Identifier of the user who is receiving the file.
 This parameter value is case sensitive in CFTUTIL commands if you enclose the value in " " quotes.
 
 The server/sender
-partner sends and controls this parameter, where:
+partner  sends and controls this parameter, where:
 
 
 |  PeSIT E standard  |  In standard PeSIT E, the RUSER parameter value is transported in the PI 04, but its length is limited to 8-characters. Therefore, the PI 04 contains the concatenated value along with the value of the RAPPL parameter.  |
@@ -29,7 +29,7 @@ partner sends and controls this parameter, where:
 
 > **Note:**
 >
-> You can use the RUSER and SUSER fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See SUSER.
+> You can use the RUSER and SUSER  fields when performing a catalog search. Additionally these fields are integrated into the catalog index. See SUSER.
 
 See PeSIT extension PI codes for information on PI codes.
 

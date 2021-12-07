@@ -70,12 +70,12 @@ If this file does not exist or does not have the correct syntax, you are notifie
 By using this syntax, you can dynamically modify the communication media
 since the file is analyzed at each new transfer request.
 
-You use the CONFIG command to change the Transfer CFT
+You use the CONFIG command  to change the Transfer CFT
 communication medium (MEDIACOM parameter). The media that can be used for a given system and the default communication
 medium associated with this system. <a href="../../../admin_intro/admin_config_commands/communication_media_concepts" class="MCXref xref">Communication
 media</a>
 
-**Command syntax**: [CONFIG](../../command_summary#CONFIG)
+**Command syntax**:  [CONFIG](../../command_summary#CONFIG)
 
 <table>
    <tbody>
@@ -137,7 +137,7 @@ FNAME = <filename>
 
 Example 2: define filename
 
-Use this command to define the file with the generic
+Use this command  to define the file with the generic
 &lt;filename> as the Transfer CFT communication medium.
 
 ```
@@ -150,7 +150,7 @@ Example 3: MEDIACOM=FILE
 
 Use to select a specific communication file.
 
-If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example cftcom1 and cftcom2:
+If the {{< TransferCFT/hflongproductname  >}} configuration file refers to 2 communication files, for example  cftcom1 and cftcom2:
 
 ```
 CFTPARM ID=IDPARM0, ..., COM=(COM1,COM2),....
@@ -166,13 +166,13 @@ CONFIG TYPE=COM,MEDIACOM=FILE,FNAME=$CFTDIRRUNTIME/data/cftcom2
 
 Example 4: MEDIACOM=TCPIP
 
-Use to select a TCPIP communication media.
+Use to select   a TCPIP communication media.
 
 If the {{< TransferCFT/hflongproductname  >}} configuration file refers to a communication file and a TCPIP communication media:
 
 ```
 CFTPARM ID=IDPARM0, ..., COM=(COM,COMS),....
-CFTCOM ID=COM1,TYPE=FILE,FNAME=\_CFTCOM,...
+CFTCOM ID=COM1,TYPE=FILE,FNAME=_CFTCOM,...
 CFTCOM ID=COMS,TYPE=TCPIP,PROTOCOL=XHTTP,HOST=localhost,PORT=1763...
 ```
 

@@ -49,7 +49,7 @@ Transfer CFT may refuse the transfer if:
 -   The number of connections
     with this partner is exceeded
 -   A directory type
-    EXIT generates a refusal
+    EXIT  generates a refusal
 -   Negotiation is
     impossible
 
@@ -84,7 +84,7 @@ with the existing entry.
 There is no catalog entry corresponding to this transfer
 and one is then created.
 
-The Transfer CFT may refuse the transfer,
+The Transfer CFT  may refuse the transfer,
 in the following cases in particular:
 
 -   The partner

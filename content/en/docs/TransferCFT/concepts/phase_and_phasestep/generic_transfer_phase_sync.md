@@ -4,7 +4,7 @@
     "weight": "220"
 }A generic transfer cannot progress to the next phase until the last of its children has passed to the following phase.
 
-The table below shows a generic transfer A0000001, in the phase **A** along with its children A0000002 through A000000n.
+The table below shows a generic transfer A0000001, in the  phase **A** along with its children A0000002 through A000000n.
 
 
 |  A<br/>Pre-processing  |  T<br/>Transfer  |  Y<br/>Post-processing  |  Z<br/>Ack-processing  |  X<br/>Done  |
@@ -30,7 +30,7 @@ The child transfers begin to pass through the preprocessing, transfer, and post-
 |   |   |   |   | **A000000n**  |
 
 
-The generic transfer, however, must wait for its last child transfer to move to the next phase and then immediately follows its phases.
+The generic transfer, however, must wait for its last child transfer to move to the next phase and then  immediately follows its phases.
 
 
 |  A<br/>Pre-processing  |  T<br/>Transfer  |  Y<br/>Post-processing  |  Z<br/>Ack-processing  |  X<br/>Done  |

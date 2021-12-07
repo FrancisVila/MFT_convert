@@ -23,8 +23,8 @@ The information in this configuration example corresponds to the text used in th
 2.  Enter a **Name** &lt;UP name> and the **Host** &lt;UP host> for this product.
 3.  For the **Type**, select **Custom** in the drop-down menu.
 4.  Select the environment in the **Operating systems** field.
-5.  In the **Protocol** section, enter the **PeSIT login** &lt;UP PeSIT login>and password &lt;UP PeSIT password>. Confirm password.
-6.  In the **TCP** subsection, select PeSIT / **Mutual authentication** and add the pesitssl listening **port** &lt;UP PeSIT port in> for the unmanaged product.
+5.  In the **Protocol** section, enter the  **PeSIT login** &lt;UP PeSIT login>and password  &lt;UP PeSIT password>. Confirm password.
+6.  In the **TCP** subsection, select PeSIT / **Mutual authentication** and add the pesitssl listening **port** &lt;UP PeSIT port in> for the unmanaged product.  
 7.  Browse to the root certificate to use &lt;UP root certificate>, and upload. The certificate can have the CER, CRT, or PEM format, or be a public certificate chain in the P7B file format.  
     You can use the **Display** button to check the certificate details.
 8.  Use all other defaults and click **Save unmanaged product**.
@@ -88,7 +88,7 @@ Make the following selections, using the default values for all other fields.
     -   Enter a value for the Flow identifier. Record this identifier as a reference if you want to check the flow configuration on your {{< TransferCFT/componentlongname >}}.
     -   Mutual authentication.
     -   Select Show Transfer CFT communication profiles and select the communication profile that you created.
-4.  Select **Target**, then **Unmanaged products**.  
+4.  Select **Target**,  then **Unmanaged products**.  
     Click **Edit** product and then from the list, click to select your product.
 5.  Click **Select as target** to confirm.
 6.  Click **Save**, then click **Deploy**.
@@ -107,8 +107,8 @@ On the registered Transfer CFT, check to confirm that the flow and partner were 
 
 Then create a new transfer using the unmanaged product and the flow identifier you defined in .
 
-1.  Add a file to exchange. For example put a file called **report001**, in the {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
-2.  From the source {{< TransferCFT/componentshortname >}}, run the SEND command.
+1.  Add a file to exchange. For example put a file called **report001**, in the  {{< TransferCFT/componentshortname >}}` runtime/pub` folder.
+2.  From the source {{< TransferCFT/componentshortname >}},   run the  SEND command.
     -   Remember to replace `<instance_target>` with your unmanaged product (target).
 
     <!-- -->

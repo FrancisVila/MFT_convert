@@ -48,7 +48,7 @@ length is limited by the eight-character standard. The PI 03 contains
 this value concatenated with the value of the **suser**
 field.
 
-In PeSIT E between two <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, the value of this SUSER parameter is transported in the PI 99, the value defined in the PI 03 being truncated to 8 characters.
+In PeSIT E between two  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>s, the value of this SUSER parameter is  transported in the PI 99, the value defined in the PI 03 being truncated to 8 characters.
 
 [Return to Command index](../../)
 

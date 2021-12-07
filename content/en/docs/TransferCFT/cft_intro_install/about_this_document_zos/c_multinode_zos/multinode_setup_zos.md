@@ -8,7 +8,7 @@
 
 ### Start all node managers
 
-For each host submit the JCL: **` MNRMNG`**
+For each host  submit the JCL: **` MNRMNG`**
 
 ### Start all nodes
 
@@ -36,7 +36,7 @@ The node 2 is created. The cluster is composed of three nodes: node 0, node 1 an
 
 > **Note:**
 >
-> When adding a node, you must add the corresponding new license for that node in a license-key file ..UPARM(PRODKEY) by default.
+> When adding a node, you must add the corresponding new license for that node in a  license-key file  ..UPARM(PRODKEY) by default.
 
 ### Enable a node
 
@@ -62,7 +62,7 @@ The node runs as long as its catalog is not empty. Once the catalog is empty, th
 
 ### Remove the last node
 
-After fencing and stopping the *last node*, you can remove it.
+After fencing and stopping the *last node*, you can remove it.  
 
 Enter:**`  remove_node –n <node_id> (JCL MNREMOVE)`**
 
@@ -74,11 +74,11 @@ Once the failed node manager is running again, you can rebalance the cluster by 
 
 In this example there are two hosts (host00 and host01), and two nodes (node00 and node01). Node00 is running on host00, and node01 is running on host01.
 
-1.  Host00 and node00 experience a failover.
+1.  Host00  and node00 experience a failover.
 2.  The host01 node manager re-starts the node00 locally.
 3.  Node00 and node01 run on host01.
-4.  Host00 and its node manager are manually re-started.
+4.  Host00 and its node manager are  manually re-started.
 5.  From one of the Transfer CFT cluster hosts, host00 or host01, execute the command:**` restart –n 0 (JCL MNRESTAR)`**
-6.  The host00 node manager restarts the node00 locally.
+6.  The host00 node manager  restarts the node00 locally.
 
-**Step results**: Node00 is running on host00, and node01 running on host01.
+**Step results**: Node00 is  running on host00, and node01 running on host01.

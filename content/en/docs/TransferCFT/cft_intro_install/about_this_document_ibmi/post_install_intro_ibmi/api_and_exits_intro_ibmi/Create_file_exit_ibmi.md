@@ -15,7 +15,7 @@ You require the ICC and GMAKE utilities for IBM i platforms:
 
 The `<installdir>/runtime/src/exit/` subdirectory contains:
 
--   The `exfxmp1.c` sample source module with its associated `exfus.h` include file. This program
+-   The `exfxmp1.c` sample source module with its associated  `exfus.h` include file. This program
     demonstrates the various user functions:
     -   ALLOC\_TYP:
         the EXIT allocates the file
@@ -30,8 +30,8 @@ The `<installdir>/runtime/src/exit/` subdirectory contains:
     compilation procedure, which uses `exfxmp2.c` to generate the CFTEXITF
     program
 
-The CFTPGM library contains the `libcftexf.srvpgm`
-module. This library allows you to use the {{< TransferCFT/componentshortname  >}} file EXITs.
+The CFTPGM library  contains the `libcftexf.srvpgm`
+module. This library allows you to use the  {{< TransferCFT/componentshortname  >}} file EXITs.
 
 ## Generating the exit
 
@@ -44,13 +44,13 @@ To generate the sample CFTEXITF application:
 
 1.  Connect to the IBM session with your Transfer CFT user.
 
-2.  Generate the {{< TransferCFT/componentshortname >}} internal datafiles
+2.  Generate the  {{< TransferCFT/componentshortname >}} internal datafiles
     using the `cftinit `utility with the configuration file:
 
     CALL PGM(CFTINIT) PARM('CFTPROD/UTIN(TCPPARAM)')
 
 3.  When the `cftinit complete`
-    message is displayed, run {{< TransferCFT/componentshortname >}} using the `cftstart `utility:
+    message is displayed, run  {{< TransferCFT/componentshortname >}} using the `cftstart `utility:
 
     cftstart
 
@@ -63,7 +63,7 @@ To generate the sample CFTEXITF application:
 
     CALL PGM(CFTUTIL) PARM(LISTCAT)  
 
-6.  Stop {{< TransferCFT/componentshortname >}} using the `cftstop`
+6.  Stop  {{< TransferCFT/componentshortname >}} using the `cftstop`
     utility:
 
     cftstop

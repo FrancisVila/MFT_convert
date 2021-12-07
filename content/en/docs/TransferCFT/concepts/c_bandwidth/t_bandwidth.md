@@ -2,9 +2,9 @@
     "title": "Managing bandwidth sessions",
     "linkTitle": "Managing bandwidth sessions",
     "weight": "220"
-}This topic describes bandwidth session concepts. For parameter details, see the topic [About bandwidth control](../).
+}This topic describes  bandwidth session concepts. For parameter details, see the topic [About bandwidth control](../).
 
-In {{< TransferCFT/componentshortname  >}}, bandwidth control can occur at the following levels:
+In  {{< TransferCFT/componentshortname  >}}, bandwidth  control can occur at the following levels:
 
 -   Global
 -   Class
@@ -16,7 +16,7 @@ The use of minimal dynamic control implies that:
 -   Netbands can be reconfigured dynamically
 -   Partners can change netbands, but the new class only applies to new transfers
 
-Every session, as shown here, is linked to a partner. Partner are linked to a netband, which can optionally link to a parent netband.
+Every session, as shown here, is linked to a partner. Partner are linked to a netband, which can optionally link  to a parent netband.
 
 -   n= netband
 -   p = partner
@@ -24,7 +24,7 @@ Every session, as shown here, is linked to a partner. Partner are linked to a ne
 
 ![](/Images/TransferCFT/image.png)
 
-Within a class (netband, partner, session), the bandwidth is shared evenly, and is proportionate to its relative rate. This ensures fairness between sessions for a partner, between partners in a netband, and between netbands in a netband. The following rules apply:
+Within a class (netband, partner, session), the bandwidth is shared evenly, and is proportionate to its relative rate. This ensures fairness  between sessions for a partner, between partners in a netband, and between netbands in a netband. The following rules apply:
 
 -   A maximum rate can be specified for a partner, session, or netband level
 -   Every session and partner in a given bandwidth class (netband) have the same properties: rate, max-rate (in/out)

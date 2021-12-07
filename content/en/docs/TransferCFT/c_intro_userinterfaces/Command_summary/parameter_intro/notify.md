@@ -8,7 +8,7 @@
 
 #### CFTLOG, CFTSEND, **<span id="notify_CFTRECV"></span>**CFTRECV, SEND, RECV
 
-NOTIFY = {string see
+NOTIFY = {string  see
 below}
 
 Defines the destination of the operator
@@ -27,8 +27,8 @@ The value of this parameter is a left aligned 8-character string.
 The destination of these messages may be, according to the system:
 
 -   the
-    {{< TransferCFT/componentshortname >}} "submitter" corresponding to the standard
-    output associated with the {{< TransferCFT/componentshortname >}} (the submittal screen,
+      {{< TransferCFT/componentshortname >}} "submitter" corresponding to the standard
+    output associated with the  {{< TransferCFT/componentshortname >}} (the submittal screen,
     for example)  
     The value of the NOTIFY parameter must be then be set to ‘ ’ (8 blank
     characters)
@@ -147,11 +147,11 @@ Messages are...
 
 MVS (z/OS)
 Sent by SEND to the specified
-TSO USERID; in this case, the {{< TransferCFT/componentshortname >}} program
+TSO USERID; in this case, the  {{< TransferCFT/componentshortname >}} program
 must be authorized (APF).
 VMS
 Sent to the "VMS User " designated
-by its VMS name. In this case, the {{< TransferCFT/componentshortname >}} task
+by its VMS name. In this case, the  {{< TransferCFT/componentshortname >}}  task
 must have the OPER privilege.
 ```
 

@@ -5,7 +5,7 @@
 }The CFTFILE command is used to create, replace, or delete Transfer CFT
 files. These initial files define the most basic parameters for the Transfer
 CFT. You can further define the Transfer CFT settings after the initial
-start, but Transfer CFT must have this CFTFILE as a minimum
+start, but Transfer CFT must  have this CFTFILE as a minimum
 configuration.
 
 You can only create the initial environment in the CFTUTIL command line

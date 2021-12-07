@@ -4,7 +4,7 @@
     "weight": "170"
 }This topic describes the {{< TransferCFT/componentshortname  >}} to or {{< TransferCFT/flowmanager  >}} registration process.
 
-There are several types of exchanges that occur between or {{< TransferCFT/flowmanager  >}} and {{< TransferCFT/componentshortname  >}}. The first exchange is registration, which begins when Copilot initiates a request to connect with or {{< TransferCFT/flowmanager  >}}.
+There are several types of exchanges that occur between or {{< TransferCFT/flowmanager  >}} and {{< TransferCFT/componentshortname  >}}. The first exchange is registration, which begins when  Copilot initiates a request to connect with   or {{< TransferCFT/flowmanager  >}}.
 
 The registration is performed on a SSL connection using simple authentication. Further exchanges - the heartbeat, and certificate renewal - are performed on a SSL connection using mutual authentication.
 
@@ -20,26 +20,26 @@ Registration exchange overview (the same for either or {{< TransferCFT/flowmanag
 
 This section describes the general steps that occurs during the registration process, and the impact on the configuration.
 
-Starting Copilot after installation begins the connection and registration process with or {{< TransferCFT/flowmanager  >}}.
+Starting  Copilot after installation begins the connection and registration process with   or {{< TransferCFT/flowmanager  >}}.
 
 > **Note:**
 >
-> Transfer CFT requires the Central Governance or Flow Manager shared secret to register. See the Central Governance or Flow Manager documentation for details.
+> Transfer CFT requires the Central Governance  or Flow Manager shared secret to register. See the Central Governance  or Flow Manager documentation for details.
 
-1\. Copilot connects to Central Governance or {{< TransferCFT/flowmanager  >}} and submits its registration.
+1\. Copilot connects to Central Governance  or {{< TransferCFT/flowmanager  >}} and submits its registration.
 
--   Copilot sends a registration request through a simple authenticated SSL connection and submits its registration. Copilot authenticates the Central Governance or {{< TransferCFT/flowmanager >}} server using the CA certificate pointing by the uconf:cg.ca\_cert\_id parameter. The registration request contains:
+-   Copilot sends a registration request through a simple authenticated SSL connection and submits its registration. Copilot authenticates the Central Governance  or {{< TransferCFT/flowmanager >}} server using the CA certificate pointing by the uconf:cg.ca\_cert\_id parameter. The registration request contains:
 
     -   Information about the {{< TransferCFT/componentshortname >}} instance, including its instance name, host, port and version.
     -   Two Certificate Signing Requests (CSRs) for to process.
 
     > **Note:**
     >
-    > If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs this intermediate certificate in the Transfer CFT PKI database.
+    > If you use an intermediate certificate as a governance CA certificate, you must add the root CA certificate that signs  this intermediate certificate in the Transfer CFT PKI database.
 
-2\. or {{< TransferCFT/flowmanager  >}} sends the SSL certificates to {{< TransferCFT/componentshortname  >}}.
+2\.   or {{< TransferCFT/flowmanager  >}} sends the SSL certificates to {{< TransferCFT/componentshortname  >}}.
 
-Central Governance or {{< TransferCFT/flowmanager  >}} processes the CSRs and returns two SSL certificates, one dedicated to governance exchanges and the other one dedicated to business exchanges (used for securing file transfers between the registering {{< TransferCFT/componentshortname  >}} and all other {{< TransferCFT/solutionshortname  >}}s).
+Central Governance  or {{< TransferCFT/flowmanager  >}} processes the CSRs and returns two SSL certificates, one dedicated to governance exchanges and the other one dedicated to business exchanges (used for securing file transfers between the registering {{< TransferCFT/componentshortname  >}} and all other {{< TransferCFT/solutionshortname  >}}s).
 
 Both certificates are stored in the internal PKI base using the following identifiers:
 
@@ -50,13 +50,13 @@ Both certificates are stored in the internal PKI base using the following identi
 
 4\. The Transfer CFT configuration is updated and returned to Transfer CFT.
 
-During the registration process or {{< TransferCFT/flowmanager  >}} receives the current configuration of {{< TransferCFT/componentshortname  >}} and changes it accordingly to their own rules.
+During the registration process   or {{< TransferCFT/flowmanager  >}} receives the current configuration of {{< TransferCFT/componentshortname  >}} and changes it accordingly to their own rules.
 
-Registration completes with Transfer CFT appearing in the or {{< TransferCFT/flowmanager  >}} product list with the status of "Started" or "Stopped".
+Registration completes with Transfer CFT appearing in the   or {{< TransferCFT/flowmanager  >}} product list with the status of "Started" or "Stopped".
 
 ## Configuration updates
 
-During the registration process Central Governance or {{< TransferCFT/flowmanager  >}} receives the original Transfer CFT configuration and updates it so that Transfer CFT is configured to:
+During the registration process Central Governance  or {{< TransferCFT/flowmanager  >}} receives the original Transfer CFT configuration and updates it so that         Transfer CFT is configured to:
 
 -   Connect to using the Central Governance mutual authentication port
 -   Use Central Governance for access management
@@ -65,12 +65,12 @@ During the registration process Central Governance or {{< TransferCFT/flowmanage
 
 These changes create two security profiles (CFTSSL) for Transfer CFT, one client and one server, named SSL\_DEFAULT.
 
-Completing the registration process, or {{< TransferCFT/flowmanager  >}} gets the current configuration of {{< TransferCFT/componentshortname  >}} and changes it.
+Completing the registration process,   or {{< TransferCFT/flowmanager  >}} gets the current configuration of {{< TransferCFT/componentshortname  >}} and changes it.
 
 -   {{< TransferCFT/componentshortname >}} is configured to use the {{< TransferCFT/passportname >}} service for access management.
 -   {{< TransferCFT/componentshortname >}} is configured to use the for transfer monitoring. For Transfer CFT 3.2.2 and higher, a secured connection is used.
 
-These changes create two security profiles (CFTSSL) on the {{< TransferCFT/componentshortname  >}} (except when using a SAF-based PKI {{< TransferCFT/componentshortname  >}}). The profiles are named SSL\_DEFAULT; one profile is of type client and one is of type server. Their SSL version is TLSV1COMP. The configured cipher list is CIPHLIST= ('53','47') for {{< TransferCFT/componentshortname  >}} 3.1.2 and 3.1.3. The values represent the following cipher suites:
+These changes  create two security profiles (CFTSSL) on the {{< TransferCFT/componentshortname  >}} (except when using a SAF-based PKI {{< TransferCFT/componentshortname  >}}). The profiles are named SSL\_DEFAULT; one profile is of type client and one is of type server. Their SSL version is TLSV1COMP. The configured cipher list is CIPHLIST=  ('53','47') for {{< TransferCFT/componentshortname  >}} 3.1.2 and 3.1.3. The values represent the following cipher suites:
 
 The values represent the following cipher suites:
 
@@ -82,7 +82,7 @@ For Transfer CFT 3.2.2 and higher, the configured cipher list is CIPHLIST= ('492
 -   49200: TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384
 -   49199: TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256
 -   49192: TLS\_ECDHE\_RSA\_WITH\_AES\_256\_CBC\_SHA384
--   49191: TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256
+-   49191:  TLS\_ECDHE\_RSA\_WITH\_AES\_128\_CBC\_SHA256
 -   157: TLS\_RSA\_WITH\_AES\_256\_GCM\_SHA384
 -   156: TLS\_RSA\_WITH\_AES\_128\_GCM\_SHA256
 -   61: TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA256
@@ -92,7 +92,7 @@ For Transfer CFT 3.2.2 and higher, the configured cipher list is CIPHLIST= ('492
 
 The client and server security profiles must be mutually authenticated. However, by default, a registered {{< TransferCFT/componentshortname  >}} does not have a protocol with a security profile. You must edit the {{< TransferCFT/componentshortname  >}} configuration to support protocols with mutual authentication.
 
-or {{< TransferCFT/flowmanager  >}} sends the updated configuration to {{< TransferCFT/componentshortname  >}}. The following are the {{< TransferCFT/componentshortname  >}} parameters updated in this process. However, you can overwrite certain default values by assigning an existing policy at registration. Please see, below for details.
+  or {{< TransferCFT/flowmanager  >}} sends the updated configuration to {{< TransferCFT/componentshortname  >}}. The following are the {{< TransferCFT/componentshortname  >}} parameters updated in this process. However, you can overwrite certain default values by assigning an existing policy at registration. Please see,  below for details.
 
 
 | Parameter  | Value  |
@@ -130,7 +130,7 @@ or {{< TransferCFT/flowmanager  >}} sends the updated configuration to {{< Trans
 
 ### {{< TransferCFT/componentshortname  >}} instance id
 
-When you register {{< TransferCFT/componentshortname  >}} with {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}}, {{< TransferCFT/centralgovernancename  >}} or {{< TransferCFT/flowmanager  >}} sets the CFTPARM PART parameter to the same value as the {{< TransferCFT/transfercftname  >}} installation instance ID. Having a different value may impact transfer monitoring.
+When you register {{< TransferCFT/componentshortname  >}} with {{< TransferCFT/centralgovernancename  >}}  or {{< TransferCFT/flowmanager  >}}, {{< TransferCFT/centralgovernancename  >}}  or {{< TransferCFT/flowmanager  >}} sets the CFTPARM PART parameter  to the same value  as the {{< TransferCFT/transfercftname  >}} installation instance ID. Having a different value may impact transfer monitoring.
 
 ### Network definitions
 

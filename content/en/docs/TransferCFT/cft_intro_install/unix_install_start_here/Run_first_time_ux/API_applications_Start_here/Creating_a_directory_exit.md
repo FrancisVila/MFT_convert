@@ -23,7 +23,7 @@ id      = PeSITCFT,
 type      = PESIT,
 prof      = CFT,
 ...
-/\*\*\* exita      = EXIT\_A, \*\* See Operations Guide \*\*/
+/\*\*\* exita      = EXIT_A, \*\* See Operations Guide \*\*/
 mode      = replace
 ```
 
@@ -38,7 +38,7 @@ cftprot id      = PeSITCFT,
 type`      = PESIT,`  
 `prof`      = CFT,
 ...
-exita= EXIT\_A,
+exita= EXIT_A,
 mode      = replace
 ```
 
@@ -46,7 +46,7 @@ mode      = replace
     commented as follows:
 
 ```
-CFTEXIT ID      = EXIT\_A,
+CFTEXIT ID      = EXIT_A,
 PARM = EXAPARM1,
 LANGUAGE = C,
 PROG = 'CFTEXITA',
@@ -59,7 +59,7 @@ command:
 
 ```
 CFTEXIT ID     
-= EXIT\_A,
+= EXIT_A,
 PARM      = EXAPARM1,
 LANGUAGE      = C,
 PROG      = 'CFTEXITA',
@@ -83,13 +83,13 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 
 -   A sample source
     module, called *exaxmpm.c*, with its associated include file (*exaus.h*),
-    and an additional file called *exaxmpp.h*  
+    and an additional file called  *exaxmpp.h*  
     This program is used to check the following features:
 -   Activation
     of a transfer to a partner known to the directory EXIT but not to Transfer
     CFT
 -   Activation
-    of a transfer to a partner not known to either {{< TransferCFT/componentshortname >}} or the directory
+    of a transfer to a partner not known to either  {{< TransferCFT/componentshortname >}} or the directory
     EXIT
 
 <!-- -->
@@ -100,7 +100,7 @@ The *&lt;installdir>/runtime/src/exit/* subdirectory contains:
 The *&lt;installdir>/lib* subdirectory contains:
 
 -   The *libcftexa*.*a*
-    module required to use the {{< TransferCFT/componentshortname >}} directory EXITs
+    module required to use the  {{< TransferCFT/componentshortname >}} directory EXITs
 
 To generate the sample CFTEXITA application, proceed as follows.
 
@@ -113,11 +113,11 @@ To generate the sample CFTEXITA application, proceed as follows.
 ## Running the test
 
 1.  Access the *&lt;installdir>/runtime/conf* directory.
-2.  Generate the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> databases
-    using *cftinit* the configuration file provided
+2.  Generate the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> databases
+    using *cftinit*  the configuration file provided
     and modified for this EXIT:<span class="code"> cft-tcp.conf</span>
 3.  When the *cftinit complete*
-    message is displayed, run <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstart* utility: <span class="code">cftstart</span>
+    message is displayed, run  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> using the *cftstart* utility: <span class="code">cftstart</span>
 4.  When the *CFTMAIN process
     ID is xxxxx* message is displayed, perform an initial standard transfer
     using the command:  
@@ -143,6 +143,6 @@ cftcatab
 The transfer fails because the password is invalid, even though NRPART02
 is defined in the DIRECTORY EXIT.
 
-1.  Stop <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
+1.  Stop  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
 
 cftstop

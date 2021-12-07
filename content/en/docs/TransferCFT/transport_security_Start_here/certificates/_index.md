@@ -149,7 +149,15 @@ This displays the data and signature sections of a certificate in human-readable
 format:
 
 ```
-`Certificate: Data: Version: v3 (0x2) Serial Number: 3 (0x3) Signature Algorithm: PKCS #1 MD5 With RSA Encryption Issuer: OU=Axway Certificate Authority, O=Axway, C=US Validity: Not Before: Fri Oct 17 18:36:25 2018 Not After: Sun Oct 17 18:36:25 2021`
+Certificate:
+Data:
+Version: v3 (0x2)
+Serial Number: 3 (0x3)
+Signature Algorithm: PKCS #1 MD5 With RSA Encryption
+Issuer: OU=Axway Certificate Authority, O=Axway, C=US
+Validity:
+Not Before: Fri Oct 17 18:36:25 2018
+Not After: Sun Oct 17 18:36:25 `2021`
 Subject: CN=Albert Dupont, OU=Marketing, O=Axway, C=US
 Subject Public Key Info:
 Algorithm: PKCS #1 RSA Encryption
@@ -206,6 +214,6 @@ an argument in the PKICER command.
 
 ## Complete CA certificate chains
 
-In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
+In {{< TransferCFT/transfercftname  >}} 3.1.3 and lower, you can perform a SSL transfer  even if the certificate chain is not complete (not signed by a ROOT CA). However, for {{< TransferCFT/transfercftname  >}} 3.2.0 and higher, the certificate chain must be complete for a transfer to succeed.
 
 For more information, see <a href="../../troubleshoot_intro/admin_troubleshooting_server/troubleshoot_security#Unknown" class="MCXref xref">Unknown CA leads to a failed certificate verification</a>

@@ -10,7 +10,7 @@
     -   Enter a unique name for the application.  
     -   Specify the system that hosts the application, a host name or an IP address.
     -   Enter the name of the {{< TransferCFT/componentshortname >}}.
-    -   If {{< TransferCFT/componentshortname >}} is installed on the same host as the application,Central Governance will detect the matching Transfer CFT instance. You can change this value if you want to associate this application with a different {{< TransferCFT/componentshortname >}}.
+    -   If  {{< TransferCFT/componentshortname >}} is installed on the same host as the application,Central Governance will detect the matching Transfer CFT instance. You can change this value if you want to associate this application with a different {{< TransferCFT/componentshortname >}}.
 4.  Click Save application to add it.
 
 For these exercises repeat the steps and create 3 applications, MainOffice, Store\_66, and Store\_89.

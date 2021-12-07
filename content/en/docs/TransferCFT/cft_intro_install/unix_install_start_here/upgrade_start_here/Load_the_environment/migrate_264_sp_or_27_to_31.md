@@ -2,13 +2,13 @@
     "title": "Migrating Transfer CFT 2.6.4 SP2 or 2.7 to 3.9",
     "linkTitle": "Migrating from Transfer CFT 2.6.4-SP2 or 2.7",
     "weight": "240"
-}This topic describes how to migrate Transfer CFT 2.6.4 SP2, or higher, or 2.7 to version {{< TransferCFT/componentversion  >}}. Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must have installed your new {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
+}This topic describes how to migrate Transfer CFT 2.6.4 SP2, or higher, or 2.7 to version {{< TransferCFT/componentversion  >}}.  Before starting this migration procedure, review the prerequisites and information on [loading the environment](../). Additionally, you must  have installed your new   {{< TransferCFT/componentshortname  >}} {{< TransferCFT/releasenumber  >}} and applied the most recent service pack.
 
 ## Migrating the main configuration and UCONF parameters
 
 You can migrate the PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1.  Load the former Transfer CFT environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1.  Load the former Transfer CFT  environment.  See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 
 <!-- -->
 
@@ -60,7 +60,7 @@ You can migrate the PARM, PART, IDF, other static configuration objects and UCON
 
 1.  Import your PKI certificates into the new Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;script\_filename> with the new script file path:  
     ```
-    PKIUTIL <prefix\_character><script\_filename>
+    PKIUTIL <prefix_character><script_filename>
     ```
 
 Examples
@@ -79,7 +79,7 @@ Windows: `PKIUTIL #pki-extract.conf`
 
 1.  Export the catalog using the command CFTMI240:  
     ```
-    CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_2.7\_filename>, ofname=catalog\_output.xml
+    CFTMI240 MIGR type=CAT, direct=FROMCAT, ifname=<catalog_2.7_filename>, ofname=catalog_output.xml
     ```
 
 <!-- -->
@@ -109,7 +109,7 @@ Example
 
 1.  Export the communication media file using command CFTMI240:  
     ```
-    CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com\_2.7.0\_filename>, ofname=com\_output.xml
+    CFTMI240 MIGR type=COM, direct=FROMCOM, ifname=<com_2.7.0_filename>, ofname=com_output.xml
     ```
 
 <!-- -->

@@ -6,7 +6,7 @@
 
 SWAITCAT
 
-\[ PHASES = { A | T | Y | Z | <u>X</u> } \]
+\[ PHASES =  { A | T | Y | Z | <u>X</u> }  \]
 
 Where the string **sizemax= 5**.
 
@@ -21,5 +21,5 @@ Possible values:
 Example
 
 ```
-swaitcat select='(IDTU=="%\_CAT\_IDTU%")',timeout=30,phases=y,phasesteps=ch
+swaitcat select='(IDTU=="%_CAT_IDTU%")',timeout=30,phases=y,phasesteps=ch
 ```

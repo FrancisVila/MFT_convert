@@ -47,9 +47,9 @@ CFTNET id=NET0, maxcnx=10CFTNET id=NET1, maxcnx=20
 
 A session is a conversation between two partners. The session occurs at the protocol level and executes over a network connection. A session is established at a certain point in time and then is later disconnected.
 
-An established session is either active or inactive. An active session means that a transfer is using it. An inactive session remains established during a wait timeout; this is referred to as *session persistence*. After the timed-out session is closed, its associated connection is automatically closed.
+An established session is either active or inactive. An active session means that a transfer is using it. An inactive session remains established during a wait timeout; this is referred to as *session persistence*.  After the timed-out session is closed, its associated connection is automatically closed.
 
-You can also set the maximum number of simultaneous sessions using the UCONF parameter `cft.server.max_session`. The default value is 0  and the maximum number of supported simultaneous transfer is 2000 (2 x 1000).
+You can also set the maximum number of simultaneous sessions  using the UCONF parameter `cft.server.max_session`. The default value is 0  and the maximum number of supported simultaneous transfer is 2000 (2 x 1000).
 
 > **Note:**
 >
@@ -104,29 +104,29 @@ Related UCONF values:
 
 ### License key
 
-Your license key is another factor that affects the maximum value that you can use for MAXTRANS.
+Your license key is another factor that affects  the maximum value that you can use for MAXTRANS.
 
 Use the CFTUTIL ABOUT command to check for the maximum number of allowed transfers as determined by your key. The value "64" is the authorized limit in the following example.
 
 ```
 CFTUTIL about
 Key information :
-\* idparm = IDPARM0
-\* key = XXXX
+\* idparm                     = IDPARM0
+\* key                        = XXXX
 \*
-\* type = DATE
-\* expire = 2015/11/14
-\* sysname = linux-x86-64
-\* Nb Transfers =
-\* Nb CPU = 4
-\* Nb Partners = Max
+\* type                       = DATE
+\* expire                     = 2015/11/14
+\* sysname                    = linux-x86-64
+\* Nb Transfers               =
+\* Nb CPU                     = 4
+\* Nb Partners                = Max
 ```
 
 To view the number of active transfers in Transfer CFT, check this message which displays when starting Transfer CFT:
 
 CFTI18I+On 999 authorized simultaneous transfer(s), 100 is(are) active
 
-To increase the license key limit contact your Axway sales representative, or visit [away.com](https://www.axway.com/) to find your regional representative.
+To increase the license key limit contact your Axway sales representative, or visit [away.com](https://www.axway.com/) to find  your regional representative.
 
 #### MAXTASK
 
@@ -167,7 +167,7 @@ TRANTASK = 4,
 
 **CFTCAT object**
 
-This parameter defines the frequency, in minutes, with which Transfer CFT scans the catalog file when restarting a transfer. That is, WSCAN reschedules transfers that have a remote MAXTRANS or local MAXCNX diagnostic. The default value is 5, but we recommend setting this value to 1.
+This parameter defines the frequency, in minutes, with which Transfer CFT scans the catalog file when  restarting a transfer. That is, WSCAN reschedules transfers that have a remote MAXTRANS or local MAXCNX diagnostic. The default value is 5, but we recommend setting this value to 1.
 
 > **Note:**
 >
@@ -192,7 +192,7 @@ This parameter defines the maximum number of sessions for incoming connections.
 The value should be less than or equal to the MAXCNX and MAXTRANS values.
 
 ```
-CFTTCP ID =<partner1\_id>, HOST=<partner1\_URL>, CNXIN=n, ...
+CFTTCP  ID    =<partner1_id>, HOST=<partner1_URL>, CNXIN=n, ...
 ```
 
 #### CNXOUT
@@ -202,17 +202,17 @@ CFTTCP ID =<partner1\_id>, HOST=<partner1\_URL>, CNXIN=n, ...
 This parameter defines the maximum number of sessions for outgoing connections.
 
 ```
-CFTTCP ID =<partner1\_id>, HOST=<partner1\_URL>, CNXOUT=n, ...
+CFTTCP ID    =<partner1_id>, HOST=<partner1_URL>, CNXOUT=n, ...
 ```
 
 #### CNXINOUT
 
 **CFTTCP object**
 
-This refers to the maximum number of communication sessions (less than or equal to the MAXCNX and MAXTRANS values). This is the total number of both incoming and outgoing sessions. In the following example the number of sessions that you can open at the same time is 4; it is not the sum of CNXIN and CNXOUT but rather an additional limitation.
+This refers to the maximum number of communication sessions (less than or equal to the MAXCNX and MAXTRANS values). This is the total number of both incoming and outgoing sessions. In the following example the number of sessions that you can open at the same time is 4;  it is not the sum of CNXIN and CNXOUT but rather an additional limitation.
 
 ```
-CFTTCP ID =<partner1\_id>, HOST=<partner1\_URL>, CNXIN=2, CNXOUT=3, CNXINOUT=4, ...
+CFTTCP ID    =<partner1_id>, HOST=<partner1_URL>, CNXIN=2, CNXOUT=3, CNXINOUT=4, ...
 ```
 
 ### Recommendations
@@ -231,7 +231,7 @@ When using a stand alone Transfer CFT to another stand alone Transfer CFT (or ot
 
 **CFTTCP object**
 
-This parameter defines the retry period following a network interruption. This is one of 3 parameters that control the retry policy for rescheduling following a network connection interruption. The RETRYW value is an approximate time in order to avoid all blocked transfers being rescheduled at the same time overloading the system.
+This parameter defines the retry period following a network interruption. This is one of 3 parameters that control the retry policy for rescheduling following a network connection interruption. The  RETRYW value is an approximate time in order to avoid all blocked transfers being rescheduled at the same time overloading the system.
 
 > **Note:**
 >
@@ -247,7 +247,7 @@ attempts are made.
 Use this parameter to specify the number of reconnection attempts to make
 with a time interval of retryw
 between attempts. When retryn attempts have been
-made without success, {{< TransferCFT/componentshortname  >}} divides retryn
+made without success,  {{< TransferCFT/componentshortname  >}} divides retryn
 by two and multiplies retryw by
 two and then begins the sequence again up to the total number of times
 specified retrym.
@@ -255,4 +255,4 @@ specified retrym.
 Related topics
 
 -   [Client and server recommendations](maxtrans_use_cases)
--   [Scenarios and outputs](session_troubleshooting)
+-   [Scenarios and  outputs](session_troubleshooting)

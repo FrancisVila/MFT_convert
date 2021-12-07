@@ -6,7 +6,7 @@
 
 ## Prerequisite
 
-You must first perform Steps 1 through 5 as described in the [Upgrade](../) section to the target instance.
+You must first perform Steps 1 through 5 as described in the [Upgrade](../) section  to the target instance.
 
 ## Upgrade the CATALOG files (MIGRCAT)
 
@@ -95,5 +95,5 @@ Set the Transfer CFT submission option, by STC or JCL, as for the source instan
 Comment the following lines:
 
 ```
-//\*CFTCAT DD DISP=SHR,//\* DSN=&QUAL..CATALOG
+//\*CFTCAT   DD  DISP=SHR,//\*             DSN=&QUAL..CATALOG
 ```

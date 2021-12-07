@@ -7,7 +7,7 @@ type exit.
 
 The interface provides the values used by the communication structure
 before the user function is called. In return, you must supply the parameters
-that {{< TransferCFT/componentshortname  >}} requires to update the catalog and, optionally, a comment.
+that  {{< TransferCFT/componentshortname  >}} requires to update the catalog and, optionally, a comment.
 
 If the user function pointer initialized in the init function contains
 a non-null value, the initialization and user functions are called whenever

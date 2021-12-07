@@ -4,8 +4,8 @@
     "weight": "120"
 }## Verify your installation
 
-You can check the installation log in the &lt;span class="code">&lt;installation directory>/install.log&lt;/span> file. See the installation&lt;madcap:conditionaltext data-mc-conditions="axway\_conditions.ScreenOnly"> &lt;a href="../troubleshoot\_registration">troubleshooting section&lt;/a>&lt;/madcap:conditionaltext> if you encounter problems with starting &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> or registering with &lt;span class="mc-variable suite\_variables.Central\_GovernanceName variable">Central Governance&lt;/span>.
-&lt;/p>
+            You can check the installation log  in the &lt;span class="code">&lt;installation directory>/install.log&lt;/span> file. See the installation&lt;madcap:conditionaltext data-mc-conditions="axway\_conditions.ScreenOnly"> &lt;a href="../troubleshoot\_registration">troubleshooting section&lt;/a>&lt;/madcap:conditionaltext>  if you encounter problems with starting &lt;span class="mc-variable axway\_variables.Component\_Long\_Name variable">Transfer CFT&lt;/span> or registering with &lt;span class="mc-variable suite\_variables.Central\_GovernanceName variable">Central Governance&lt;/span>.
+        &lt;/p>
 
 ### Installed directories
 
@@ -26,17 +26,19 @@ If you are not using {{< TransferCFT/transfercftname  >}} with {{< TransferCFT/c
 
 Begin your registration with {{< TransferCFT/centralgovernancename  >}} by starting the Copilot server, which launches the registration process.
 
-### Start the Transfer CFT Copilot server
+### Start  the Transfer CFT Copilot server
 
 To set the environment variables from the runtime directory prompt enter:
 
 ```
-../profile ```
+../profile
+```
 
 To start the Copilot server, run the command:
 
 ```
-copstart ```
+copstart
+```
 <span id="Verify"></span>
 
 ## Verify the Transfer CFT registration with {{< TransferCFT/centralgovernancename  >}}
@@ -45,7 +47,7 @@ copstart ```
 
 If you have not already done so, log on {{< TransferCFT/centralgovernancename  >}}.
 
-In {{< TransferCFT/centralgovernancename  >}} from the **Product** page, check the Product List for your installed {{< TransferCFT/componentlongname  >}}.
+In  {{< TransferCFT/centralgovernancename  >}} from the **Product** page, check the Product List for your installed {{< TransferCFT/componentlongname  >}}.
 
 See the Troubleshooting installation section in the {{< TransferCFT/componentlongname  >}} {{< TransferCFT/doctypeuser  >}} for tips in case of an error.
 
@@ -75,4 +77,4 @@ The log page is displayed where you can:
 
 ## Register with
 
-If you intend to implement , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.
+If you intend to implement  , please refer to the {{< TransferCFT/componentlongname  >}} *User's Guide &gt; [*Register with*](https://docs.axway.com/bundle/TransferCFT_36_UsersGuide_allOS_en_HTML5/page/Content/cft_installation/migrate/register_CG.htm)* page for registration details.

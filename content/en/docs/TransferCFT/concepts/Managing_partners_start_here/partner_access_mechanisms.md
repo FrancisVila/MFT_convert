@@ -2,7 +2,7 @@
     "title": "Partner  access mechanisms ",
     "linkTitle": "Partner access mechanisms",
     "weight": "230"
-}A SEND/RECV transfer command can perform one or more transfers with:
+}A SEND/RECV transfer command  can perform one or more transfers with:
 
 A single partner
 via a direct connection
@@ -27,7 +27,7 @@ Send transfers (SEND command) can also:
 
 ### Direct transfer - partner recognition
 
-The {{< TransferCFT/componentshortname  >}} mechanisms to be used to connect a requester to a server
+The  {{< TransferCFT/componentshortname  >}} mechanisms to be used to connect a requester to a server
 are:
 
 -   Network and protocol
@@ -35,13 +35,13 @@ are:
 -   Application connection -
     the SAP
 
-The {{< TransferCFT/componentshortname  >}} reciprocal recognition mechanism is then defined.
+The  {{< TransferCFT/componentshortname  >}} reciprocal recognition mechanism is then defined.
 
 This mechanism is based on the names of each of the parties involved.
 To optimize use of the parameter setting possibilities, the following
 is indicated:
 
--   The {{< TransferCFT/componentshortname >}}
+-   The  {{< TransferCFT/componentshortname >}}
     parameters defining the names of the parties involved
 -   The recognition
     mechanism itself, based on the network names

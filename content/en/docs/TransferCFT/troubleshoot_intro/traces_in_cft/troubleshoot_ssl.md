@@ -26,11 +26,11 @@ TRACE = 255
 
 To analyze an SSL frame, read the first 6 bytes:
 
-1 8 24 40 48
+1 8 24   40 48
 
 Content type Version
 
-Major version l Minor version Fragment length Type message
+Major version     l   Minor version Fragment length Type message
 
 Where:
 
@@ -45,23 +45,23 @@ Where:
 
 ### Handshake frame alert
 
-0x01 client\_hello 0x01 warning
+0x01   client\_hello 0x01   warning
 
-0x02 server\_hello 0x02 fatal
+0x02   server\_hello 0x02   fatal
 
-0x0B certificate
+0x0B  certificate
 
-0x0C server\_key\_exchange
+0x0C  server\_key\_exchange
 
-0x0D certificate\_request
+0x0D  certificate\_request
 
-0x0E server\_hello\_done
+0x0E   server\_hello\_done
 
-0x0F certificate\_verify
+0x0F   certificate\_verify
 
-0x10 client\_key\_exchange
+0x10   client\_key\_exchange
 
-0x14 finished
+0x14   finished
 
 ## Authentication types
 
@@ -412,7 +412,7 @@ CFTY02Z>&gt; CTX = 14030100 210 004 0101 &gt;......&lt;
 
 CTX = 210004 = PROT = SSLPESIT PESITSSL SSL server session ESTABLISHED CIPHER AUTH = 47 = BOTH
 
-Operation "handshake" was successfully completed with an SSL connection established for a server by double authentication and encryption selected: 47.
+Operation "handshake" was successfully completed with an SSL connection established for  a server by double authentication and encryption selected: 47.
 
 13\. CFTY02Z>&gt; CTX ndata = 210004 () 53 \_ APPLICATION DATA RECEIVED FROM NETWORK
 

@@ -55,20 +55,20 @@ Once the H83SAFDA job is adapted, use this job to create groups and the Transfer
     After adapting the security system values in the A03PARM member, you must execute the A00CUSTO job again.
 
 ```
-`**************************************************************`
-`*   New parameters for RACF (or SAF enabled) control of Transfer CFT.`
-`*   These definitions are not used in the base installation.`
-`*   You must read the “Transfer CFT Installing z/OS Security” `
-`*   before changing the following values:`
-`**************************************************************`
-`  grpcft   'grpcft'               CFT administrator SAF group`
-`  grpmon   'grpmon'               CFT monitor SAF group`
-`  grpaprm  'grpaprm'              all parameter access SAF group`
-`  grpfprm  'grpfprm'              PARM and PART access SAF group`
-`  grpdesk  'grpdesk'              CFT help desk SAF group`
-`  grptrf   'grptrf'               CFT transfer SAF group`
-`  userdef  'userdef'              default CFTRECV userid`
-`  safcftcl 'safcftcl'             SAF class for CFT profiles     `
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+\*   New parameters for RACF (or SAF enabled) control of Transfer CFT.
+\*   These definitions are not used in the base installation.
+\*   You must read the “Transfer CFT Installing z/OS Security”
+\*   before changing the following values:
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*
+  grpcft   'grpcft'               CFT administrator SAF group
+  grpmon   'grpmon'               CFT monitor SAF group
+  grpaprm  'grpaprm'              all parameter access SAF group
+  grpfprm  'grpfprm'              PARM and PART access SAF group
+  grpdesk  'grpdesk'              CFT help desk SAF group
+  grptrf   'grptrf'               CFT transfer SAF group
+  userdef  'userdef'              default CFTRECV userid
+  safcftcl 'safcftcl'             SAF class for CFT profiles    
 ```
 
 ## Security system installation procedure

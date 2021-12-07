@@ -10,7 +10,7 @@ Select from:
 2.  Security commands
 3.  Administration commands
 4.  Create Transfer CFT system objects
-5.  Multi-node commands (only available if multi-node is enabled)
+5.  Multi-node commands  (only available if multi-node is enabled)
 
 
 | <h2 id="transfercftcomponentlongname-3.2.x-and-higher">{{< TransferCFT/componentlongname  >}} 3.2.x and higher</h2>  |

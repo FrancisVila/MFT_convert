@@ -27,7 +27,7 @@ File properties automatically retrieved for send operations
 |  FTYPE  |  YES  |
 
 
-FTYPE values and associated implicit FCODE default values for send operations
+FTYPE  values and associated implicit FCODE default values for send operations
 
 
 |  FTYPE  |  FCODE  |
@@ -105,7 +105,7 @@ code</p>         </th>
          <td><p> </p>         </td>
          <td><p>Fixed indexed sequential</p>         </td>
          <td><p>' '</p>         </td>
-         <td><p>F [1]</p>         </td>
+         <td><p>F  [1]</p>         </td>
          <td>IDX         </td>
       </tr>
    </tbody>
@@ -140,7 +140,7 @@ FTYPE, FRECFM, and FORG values for receive operations
 
 > **Note:**
 >
-> \[2\] Read the file organization from the network, explicitly set FORG to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
+> \[2\] Read the file organization from the network, explicitly set FORG  to FORG= ‘ ‘. Otherwise, FORG is always sequential (FORG = SEQ).
 
 ## Platform specific parameters and values
 
@@ -154,7 +154,7 @@ Forces the file CODE attribute. This value should be consistent with the file st
 
 **Example**: `ATTSUSER    = 'FCODE=180'`
 
-The received file is created with 180 as the code.
+The received file is created with  180 as the code.
 
 FORMAT
 

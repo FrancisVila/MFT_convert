@@ -11,7 +11,7 @@
 \[MAXCNX     = { <u>384</u>
 | n} \]      {0...MAXTRANS value up to 2000}
 
-The maximum number of simultaneous connections that {{< TransferCFT/componentshortname  >}} accepts
+The maximum number of simultaneous connections that  {{< TransferCFT/componentshortname  >}} accepts
 to establish on a given network resource.
 
 -   Enter
@@ -22,6 +22,6 @@ to establish on a given network resource.
 
 > **Note:**
 >
-> On Unix systems, setting the MAXCNX value to higher than 1020 has no impact.
+> On Unix systems, setting the MAXCNX value to higher than 1020  has no impact.
 
 [Return to Command index](../../)

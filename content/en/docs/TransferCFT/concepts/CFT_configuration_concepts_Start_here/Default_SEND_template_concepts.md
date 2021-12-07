@@ -79,7 +79,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
 -   To control
     access to the data to be sent  
     In this case, only the characteristics of the file which do not vary
-    from one transfer to another and which {{< TransferCFT/componentshortname >}} cannot locate automatically,
+    from one transfer to another and which  {{< TransferCFT/componentshortname >}} cannot locate automatically,
     are generally specified.  
     For example, when the same local physical filename is always associated
     with the model file (IDF), it is logical to specify this name by indicating
@@ -94,7 +94,7 @@ The CFTSEND command is used to specify, for each model file (IDF):
     characteristics: values to be sent to the partner, in protocol parameters,
     to describe the file (a physical filename can even be sent - see open mode).  
       
-    The physical characteristics that {{< TransferCFT/componentshortname >}} is able to locate automatically
+    The physical characteristics that  {{< TransferCFT/componentshortname >}} is able to locate automatically
     for the local file, can be considered as default values for the corresponding
     CFT SEND parameters (example: local record length: FLRECL), parameters
     which themselves consist of default values for the network characteristics
@@ -153,7 +153,7 @@ parameters:
     related (PeSIT D CFT profile or PeSIT E): RUSER, SUSER
 
 Free parameters
-for the {{< TransferCFT/componentshortname  >}} user:
+for the  {{< TransferCFT/componentshortname  >}} user:
 
 -   Sent to the
     receiver: PARM, SPART
@@ -212,7 +212,7 @@ The example below illustrates the relationships to be established between the us
 and the CFTSEND and CFTPART parameter setting commands.
 
 Correspondence
-between the SEND command (file) and {{< TransferCFT/componentshortname  >}} parameter setting
+between the SEND command (file) and  {{< TransferCFT/componentshortname  >}} parameter setting
 
 If there is no CFTSEND command with an
 identifier ID = FI, the default characteristics indicated in the CFTSEND

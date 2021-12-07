@@ -46,7 +46,7 @@ available at the end of the transfer.
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *"Operations
+to each operating system. Refer to the  {{< TransferCFT/componentshortname  >}} *"Operations
 Guide"* corresponding to your OS.
 
 You should make sure that the assigned name is unique by adding the &IDTU variable to the filename so
@@ -115,7 +115,7 @@ The following variables may be used to form the WFNAME character string:
     &BTIME, &BYEAR, &BMONTH, &BDAY
 
 The ‘&’ character here replaces the char\_symb character specific
-to each operating system. Refer to the {{< TransferCFT/componentshortname  >}} *Operations Guide*
+to each operating system. Refer to the  {{< TransferCFT/componentshortname  >}} *Operations Guide*
 corresponding to your OS.
 
 To avoid access conflict problems, be sure that the assigned name is

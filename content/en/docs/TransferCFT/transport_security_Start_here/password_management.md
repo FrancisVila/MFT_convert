@@ -37,7 +37,7 @@ ruser=username01,
 rpasswd=password01
 ```
 
-#### Client: user command
+#### Client:  user command
 
 ```
 SEND part=server, idf=idf0, ruser=username01, rpasswd=password01
@@ -45,7 +45,7 @@ SEND part=server, idf=idf0, ruser=username01, rpasswd=password01
 
 ### Receiving a file from the server
 
-#### Server: static configuration
+#### Server:  static configuration
 
 ```
 CFTSEND
@@ -71,8 +71,8 @@ The file containing the passwords must have the format:
 ```
 partner01 username01 password01
 partner01 username02 password02
-\* username01 password03
-\* \* password04
+\*         username01 password03
+\*         \*          password04
 ```
 
 ### Sending a file to the server
@@ -145,7 +145,7 @@ The supported authentication methods are:
 | --- | --- | --- |
 | Operating System  | system  |  The user/password is checked against the operating system. <blockquote> **Note:**<br/>We strongly recommend that you set copilot.misc.createprocessasuser=yes when using the system option. </blockquote> **Unix**<br/>You must use <code>cftsu </code>to create users as a superuser is required (sudo or root privilege) to create a group and assign a user to a group. Refer to <a href="" class="MCXref xref">Using system users - UNIX</a> for details.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":<br/>**Windows**<br/>You require a superuser (administrative user account) to create a group and assign a user to a group.<br/> • Create a group "group1":<br/> • Add user "user1" to group "group1":</li> <blockquote> **Note:**<br/>For a user belonging to a domain, use: domain\user1 instead of user1 </blockquote>  |
 | Access Management  | am  |  This methods uses an indirection towards the Access Management system. The user/password is checked by the configured access management system: {{< TransferCFT/flowmanager  >}}, PassPort AM, or internal AM.  |
-|  xfbadm database<br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
+|  xfbadm database <br/>(UNIX and HP NonStop exclusively)  | xfbadm  |  The user/password is checked using the xfbadm base (see the <a href="../../cft_intro_install/unix_install_start_here/run_first_time_ux/use_cft_utilities">xfbadmusr and xfbadmgrp utilities</a>).<br/>A user that can execute xfbadmusr/xfbadmgrp utilities can create users and groups after executing the <code>profile </code>from the runtime directory. <ol> <li>Create a group "group1" with gid=200:<br/> • From the user prompt, to add a user "user1" to group "group1"enter:</li> </ol>  |
 
 
 <span id="REST"></span>REST API server authentication method
@@ -158,17 +158,17 @@ The supported authentication methods are:
 
 > **Note:**
 >
-> 2\. If copilot.restapi.authentication\_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = xbfadm.
+> 2.  If copilot.restapi.authentication\_method = xbfadm, then your access management type must be set to either am.type= none, or both am.type=internal and am.internal.group\_database = xbfadm.
 
-### Sending a file to the server
+### Sending a file  to the server
 
 #### Server: static configuration
 
 ```
 CFTRECV
 id=idf01,
-rpasswd=\_AUTH\_
-uconfset id=cft.server.authentication\_method, value=system
+rpasswd=_AUTH_
+uconfset id=cft.server.authentication_method, value=system
 ```
 
 #### Client: user command
@@ -188,8 +188,8 @@ CFTSEND
 id=idf01,
 imply=yes,
 fname=file01,
-spasswd=\_AUTH\_
-uconfset id=cft.server.authentication\_method, value=system
+spasswd=_AUTH_
+uconfset id=cft.server.authentication_method, value=system
 ```
 
 #### Client: user command

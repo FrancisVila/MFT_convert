@@ -14,7 +14,7 @@ Stop Transfer CFT and the Copilot server before starting the migration.
 
 Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters as follows:
 
-1.  Load the former Transfer CFT 3.x environment. See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
+1.  Load the former Transfer CFT 3.x environment.  See the <a href="../" class="MCXref xref">Migration prerequisites</a> for details.
 2.  Export your static configuration objects using the command CFTUTIL CFTEXT. Enter:  
     ```
     CFTUTIL CFTEXT type=all, fout=cft-extract.conf
@@ -40,7 +40,8 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 7.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;`prefix_character`&gt; based on your system, @ for UNIX and # for Windows.  
     Enter:  
     ```
-    PKIUTIL <prefix\_character>pki-extract.conf
+    PKIUTIL <prefix_character>pki-extract.conf
+                                
     ```
 
 ### Migrating the runtime environment
@@ -52,12 +53,12 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export the catalog using the command `CFTMI`. Replace the &lt;c`atalog_filename` > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_former\_cft>, ofname=catalog\_output.xml
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft>, ofname=catalog_output.xml
     ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import the catalog using the command CFTMI. Replace the &lt;catalog\_filename > with the corresponding environment variable, \_CFTCATA for UNIX or $CFTCATA for Windows. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output.xml, ofname=<catalog\_filename\_new\_cft >
+    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output.xml, ofname=<catalog_filename_new_cft >
     ```
 
 #### Migrating the communication media files
@@ -65,12 +66,12 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX, or $CFTCOM for Windows. Enter:  
     ```
-    CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com\_filename\_former\_cft>, ofname=com\_output.xml
+    CFTMI MIGR type=COM, direct=FROMCOM, ifname=<com_filename_former_cft>, ofname=com_output.xml
     ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import the communication media file using command CFTMI. Replace the &lt;com\_filename > with the corresponding environment variable, \_CFTCOM for UNIX or $CFTCOM for Windows. Enter:  
     ```
-    CFTMI MIGR type=COM, direct=TOCOM, ifname=com\_ouput.xml, ofname=<com\_filename\_new\_cft >
+    CFTMI MIGR type=COM, direct=TOCOM, ifname=com_ouput.xml, ofname=<com_filename_new_cft >
     ```
 
 #### Executables and binaries
@@ -97,6 +98,7 @@ Migrate PARM, PART, IDF, other static configuration objects and UCONF parameters
 5.  Import your static configuration objects using the cftinit command. Enter:  
     ```
     cftinit cft-extract.conf
+                                    
     ```
 
 ### Migrating PKI certificates
@@ -111,11 +113,13 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 3.  Load the Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Create a new PKI internal datafile using the command PKIUTIL PKIFILE. Replace &lt;pki\_database\_filename> with the appropriate value, $CFTPKU for UNIX or the absolute path value for the CFTPKU for Windows. Enter:  
     ```
-    PKIUTIL PKIFILE fname=<pki\_database\_filename>, mode='CREATE’
+                                PKIUTIL PKIFILE fname=<pki_database_filename>, mode='CREATE’
+                                    
+                            
     ```
 5.  Import your PKI certificates into Transfer CFT {{< TransferCFT/componentversion >}} using the command PKIUTIL. Replace the &lt;prefix\_character> based on your system, @ for UNIX and # for Windows. Enter:  
     ```
-    PKIUTIL <prefix\_character>pki-extract.conf
+    PKIUTIL <prefix_character>pki-extract.conf
     ```
 
 ### Migrating the runtime environment
@@ -127,12 +131,13 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 1.  Load the former Transfer CFT 3.x environment.
 2.  Export all catalogs (one per node, named as cftcataXX, where XX is the node number with range from 00 to &lt;number of nodes - 1>) using the command CFTMI. For each catalog. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog\_filename\_former\_cft\_node\_<node>>, ofname=catalog\_output\_<node>.xml
+    CFTMI MIGR type=CAT, direct=FROMCAT, ifname=<catalog_filename_former_cft_node_<node>>, ofname=catalog_output_<node>.xml
+                                    
     ```
 3.  Load Transfer CFT {{< TransferCFT/componentversion >}} environment.
 4.  Import all catalogs using the command CFTMI for each of them. Use the same node number on both &lt;node> on command. Enter:  
     ```
-    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog\_output\_<node>.xml, ofname=<catalog\_filename\_new\_cft\_node\_<node>>
+    CFTMI MIGR type=CAT, direct=TOCAT, ifname=catalog_output_<node>.xml, ofname=<catalog_filename_new_cft_node_<node>>
     ```
 
 #### Migrating the communication media files
@@ -148,6 +153,6 @@ Stop Transfer CFT and the Transfer CFT Copilot server before starting.
 
 ## Single-node to multi-node architecture migration
 
-The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named `cftcata `in multi-node, import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.
+The only difference between migrating from single node to multi-node architecture and migrating from single-node to single-node architecture is the catalog migration step. Since there is no catalog named `cftcata `in multi-node,  import the catalog exported from single-node architecture to the catalog of any of the nodes in the multi-node architecture.
 
 Be certain to stop Transfer CFT and the Transfer CFT Copilot server before performing the procedure.

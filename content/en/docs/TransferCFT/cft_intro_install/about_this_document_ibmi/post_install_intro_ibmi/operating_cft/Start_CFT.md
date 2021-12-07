@@ -10,7 +10,7 @@ Start CFT Monitor - Subsystem CFTSBS is started
 From . . . : CFT 04/02/15 17:04:59
 CFTS33I CFTLOG current file before switch :CFTPROD/LOG1
 From . . . : CFT 04/02/15 17:04:59
-CFTS34I+CFTLOG executed switch proc : \*LIBL/CFTSRC(B\_EXECLOG)
+CFTS34I+CFTLOG executed switch proc : \*LIBL/CFTSRC(B_EXECLOG)
 From . . . : CFT 04/02/15 17:04:59
 CFTS35I+CFTLOG current file after switch :CFTPROD/ALOG1
 From . . . : CFT 04/02/15 17:04:59
@@ -102,25 +102,25 @@ CFTI18I+SSL Protocol Option is authorized
 From . . . : CFT 04/02/15 17:05:05
 CFTI18I+
 From . . . : CFT 04/02/15 17:05:05
-CFTI26I+Init complete \_ Security not active
+CFTI26I+Init complete _ Security not active
 From . . . : CFT 04/02/15 17:05:05
-CFTI28I+Init complete \_
+CFTI28I+Init complete _
 From . . . : CFT 04/02/13 17:05:05
 CFTI18I+ FNAME : CFTCAT
 From . . . : CFT 04/02/15 17:05:05
-CFTI11I+Init complete \_ Logger process ¬ID=IDLOG0|
+CFTI11I+Init complete _ Logger process ¬ID=IDLOG0|
 From . . . : CFT 04/02/15 17:05:05
 CFTI18I+ FNAME : CFTPROD/LOG1
 From . . . : CFT 04/02/13 17:05:05
 CFTI18I+ AFNAME : CFTPROD/ALOG1
 From . . . : CFT 04/02/15 17:05:05
-CFTI13I+Init complete \_ Communication process ¬ID=IDCOM0|
+CFTI13I+Init complete _ Communication process ¬ID=IDCOM0|
 From . . . : CFT 04/02/15 17:05:05
 CFTI18I+ TYPE : File FNAME : +CFTCOM
 From . . . : CFT 04/02/15 17:05:05
-CFTI12I+Init complete \_ Protocol process
+CFTI12I+Init complete _ Protocol process
 From . . . : CFT 04/02/15 17:05:05
-CFTI14I+CFT init complete \_ CFT400
+CFTI14I+CFT init complete _ CFT400
 From . . . : CFT 04/02/15 17:05:05
 CFTC08I Purge Treated : no record found to delete.
 From . . . : CFT 04/02/15 17:05:05

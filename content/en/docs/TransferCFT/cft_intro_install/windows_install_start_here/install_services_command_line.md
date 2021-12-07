@@ -2,7 +2,7 @@
     "title": "Install services in command line",
     "linkTitle": "Install services in command line",
     "weight": "140"
-}After adding a Windows service in command line, the default system user is the user that started the service. To define a specific user, you must edit the service properties in the Services page.
+}After adding a Windows service  in command line,  the default system user  is the user that started the service. To define a specific user, you must edit the service properties  in the Services page.
 
 > **Note:**
 >
@@ -43,10 +43,10 @@ Using CFTUTIL activate the services for both Transfer CFT and Copilot with the 
 **Example**
 
 ```
-uconfset id=cft.nt.service\_name, value=CFT36
-uconfset id=cft.nt.service\_mode, value=yes
-uconfset id=copilot.nt.service\_name, value=CFT\_Copilot36
-uconfset id=copilot.nt.service\_mode, value=yes
+uconfset id=cft.nt.service_name, value=CFT36
+uconfset id=cft.nt.service_mode, value=yes
+uconfset id=copilot.nt.service_name, value=CFT_Copilot36
+uconfset id=copilot.nt.service_mode, value=yes
 ```
 <span id="Service"></span>
 

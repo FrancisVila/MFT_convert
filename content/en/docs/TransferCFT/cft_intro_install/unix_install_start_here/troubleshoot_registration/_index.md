@@ -2,7 +2,7 @@
     "title": "Troubleshoot  installation and registration",
     "linkTitle": "Troubleshooting",
     "weight": "150"
-}This section lists some possible post-installation issues along with corresponding corrective actions when applicable. If corrective actions do not remedy the issue, check the **Support tools** section for more information, or contact support at [support.axway.com](https://support.axway.com/).
+}This section lists some possible post-installation issues along with corresponding corrective actions when applicable. If corrective actions do not remedy the issue, check the **Support tools** section  for more information, or contact support at [support.axway.com](https://support.axway.com/).
 
 ## Transfer CFT installation
 
@@ -22,7 +22,7 @@ Workarounds include:
 sudo mkdir /instcft
 sudo chown <user>:<user> /instcft
 export HOME=/instcft (unprotected disk)
-./Transfer\_CFT\_3.7\_Install\_linux-x86-64\_BN13015241.run --mode unattended
+./Transfer_CFT_3.7_Install_linux-x86-64_BN13015241.run --mode unattended
 ```
 
 ## 
@@ -33,11 +33,11 @@ export HOME=/instcft (unprotected disk)
 
 If Copilot starts, but the Transfer CFT either does not display in the **Product List** or registers in error:
 
--   Verify the Central Governance IP address (or FQDN) used in the Transfer CFT configuration.
--   On the computer running Transfer CFT, check that you can reach Central Governance at the IP address used in the Transfer CFT configuration.
--   Check that the Transfer CFT appears in the Central Governance logs. If not, typically this is because the Transfer CFT is unable contact Central Governance.
+-   Verify the Central Governance IP address (or FQDN)  used in the Transfer CFT configuration.
+-   On the computer running Transfer CFT, check that you can reach Central Governance  at the IP address used in the Transfer CFT configuration.
+-   Check that the Transfer CFT appears in the Central Governance logs. If  not,  typically this is because the Transfer CFT is unable contact Central Governance.
 -   In check **Administration > Services** to ensure that Central Governance is correctly started.
--   Verify the shared secret for Central Governance used in the Transfer CFT configuration.
+-   Verify the shared secret for Central Governance  used in the Transfer CFT configuration.
 
 > **Note:**
 >
@@ -53,7 +53,7 @@ XFBCOPT S99015 navigatorNotifSend: Central Governance: sending self-registration
 
 Handshake failed (1) SSL\_ERROR\_SSL(1) - error:14090086:SSL routines: ssl3\_get\_server\_certificate:certificate verify failed
 
-This is a Certificate Signing Request / CSR failure because the {{< TransferCFT/transfercftname  >}} truststore does not contain the {{< TransferCFT/centralgovernancename  >}} root &gt;CA certificate. Perform the steps described in [If CAs change after Transfer CFT registration](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CFT/cft_registration/t_change_cft_ca.htm).
+This is  a Certificate Signing Request / CSR failure because the {{< TransferCFT/transfercftname  >}} truststore does not contain the {{< TransferCFT/centralgovernancename  >}} root &gt;CA certificate. Perform the steps described in [If CAs change after Transfer CFT registration](https://docs.axway.com/bundle/CentralGovernance_113_UsersGuide_allOS_en_HTML5/page/Content/CFT/cft_registration/t_change_cft_ca.htm).
 
 ### Generic registration issue with Central Governance or Flow Manager
 
@@ -69,7 +69,7 @@ See also, <a href="../../../c_intro_userinterfaces/about_cftutil/check_command" 
 
 While trying to troubleshoot a non-working registration, you may find there are not enough http traces to diagnose connection issues.
 
-To have more request details between {{< TransferCFT/centralgovernancename  >}} and {{< TransferCFT/transfercftname  >}} registration or between heartbeats, set the $\_JAVA\_OPTIONS environment variables as shown below (on UNIX in this example).
+To have more request details  between {{< TransferCFT/centralgovernancename  >}} and {{< TransferCFT/transfercftname  >}} registration or between heartbeats, set the  $\_JAVA\_OPTIONS environment variables as shown below (on UNIX in this example).
 
 1.  Requests from {{< TransferCFT/centralgovernancename >}} to {{< TransferCFT/transfercftname >}} (call to web services):  
     `export _JAVA_OPTIONS=$_JAVA_OPTIONS" -Dorg.apache.commons.logging.Log=org.apache.commons.logging.impl.SimpleLog"`  
@@ -104,12 +104,12 @@ Transfer CFT cannot register in Central Governance when installing Copilot in s
 When Central Governance sends the SSL certificates to {{< TransferCFT/componentshortname  >}}, the UCONF `cg.registration_id parameter` is set to a positive integer. If an error occurs, the registration process ends in error. To repeat the registration, perform the following steps:
 
 1.  Stop {{< TransferCFT/componentshortname >}}.
-2.  Stop Copilot.
+2.  Stop  Copilot.
 3.  Set the UCONF `cg.registration_id` to its default value (-1) using the unset command:
 4.  Start the Copilot. Copilot starts the registration process.
 
 **More information**
 
-For more information on , refer to the documentation.
+For more information on  , refer to the documentation.
 
 All interoperability parameters are configured with uconf value settings. For more information, refer to the topic UCONF parameters.

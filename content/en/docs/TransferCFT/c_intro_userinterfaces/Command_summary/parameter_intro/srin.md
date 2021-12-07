@@ -14,7 +14,7 @@
 **Server mode only**
 
 Select the direction of transfers, for either files or messages, authorized
-for this protocol on the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
+for this protocol on the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
 
 -   <span style="font-weight: bold;">SENDER</span>: send transfers only
 -   <span style="font-weight: bold;">RECEIVER</span>: receive transfers only

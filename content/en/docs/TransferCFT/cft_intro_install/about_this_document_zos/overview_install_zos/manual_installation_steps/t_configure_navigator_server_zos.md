@@ -12,7 +12,7 @@ The COPA020 JCL must be submitted in order to take into account the configuratio
 
 > **Note:**
 >
-> The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see Transfer CFT file migration).
+> The parameters file linked to the UI configuration for Transfer CFT V2.4.x can be partially migrated to the unified configuration file (see      Transfer CFT file migration).
 
 Related topics
 

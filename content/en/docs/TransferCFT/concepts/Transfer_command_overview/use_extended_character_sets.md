@@ -2,7 +2,7 @@
     "title": "Use extended character sets",
     "linkTitle": "Using extended character sets ",
     "weight": "330"
-}Character transcoding (using extended character sets) defines how data are encoded during the transfer process. This is important when transferring files that do not have the same coding requirements on the sending and receiving systems.
+}Character transcoding (using extended character sets) defines how data are encoded during the transfer process.  This is important when transferring files that do not have the same coding requirements on the sending and receiving systems.
 
 ## What is extended transcoding?
 
@@ -32,7 +32,7 @@ For example, if you define an NCHARSET as CFT\_ISO8859-1, the parameter is trans
 
 ### Using the //IGNORE functionality
 
-In some cases you may want to disregard characters either in a file to be sent, or in a file to be received. You can use the //IGNORE functionality to disregard characters that you do not want to be present in the target.
+In some cases you may want to disregard characters either in a file to be sent, or in a file to be received. You can use the //IGNORE functionality to  disregard characters  that you do not want to be present in the target.
 
 Depending on your operating system, note the following specific //IGNORE behavior:
 
@@ -46,9 +46,9 @@ Use the Transfer CFT mapping and the IGNORE functionality to translate a local t
 
 ```
 CFTUTIL SEND PART = NEWYORK,
-  IDF = TEST\_IGNORE,
- FCHARSET = CFT\_UTF-8,
-  NCHARSET = CFT\_ISO8859-1//IGNORE,
+  IDF = TEST_IGNORE,
+ FCHARSET = CFT_UTF-8,
+  NCHARSET = CFT_ISO8859-1//IGNORE,
  FTYPE = T
 ```
 
@@ -58,9 +58,9 @@ Use the Transfer CFT mapping and the IGNORE functionality to translate a receive
 
 ```
 CFTUTIL RECV PART = NEWYORK,
-  IDF = TEST\_IGNORE,
-  FCHARSET = CFT\_ISO8859-1//IGNORE,
-  NCHARSET = CFT\_UTF-8,
+  IDF = TEST_IGNORE,
+  FCHARSET = CFT_ISO8859-1//IGNORE,
+  NCHARSET = CFT_UTF-8,
  FTYPE = T
 ```
 
@@ -104,7 +104,7 @@ When using multibyte encoding for fixed or limited record size files, please pay
     the pad character. The pad character is a blank for a text file, and a
     zero for binary files.
 -   Errors when using binary files are more likely (with the exception of single-byte encoding).
--   When using FTYPE=J (stream text), an interrupted transfer restarts at the beginning of the transfer, not at the last synchronization point.
+-   When using FTYPE=J (stream text), an interrupted transfer  restarts at the beginning of the transfer, not at the last synchronization point.
 
 <span id="CHARSET"></span>
 
@@ -114,70 +114,70 @@ The following table shows the CHARSET mapping. Brackets in the UNIX/Windows col
 
 ```
 
-CFT\_ charset
+CFT_ charset
 
 UNIX/Windows
 
 IBM i
 
-CFT\_UTF-8
+CFT_UTF-8
 UTF-8
 01208
-CFT\_UTF-16
+CFT_UTF-16
 UTF-16
 01204
-CFT\_UTF-16LE
+CFT_UTF-16LE
 UTF-16LE
-\[AIX\] UTF-16le
+[AIX] UTF-16le
  
 01202
-CFT\_UTF-16BE
+CFT_UTF-16BE
 UTF-16BE
-\[AIX\] UTF-16
-\[HPUX\] ucs2
+[AIX]  UTF-16
+[HPUX]  ucs2
 01200
-CFT\_UTF-32
+CFT_UTF-32
 UTF-32
-\[HPUX\] UTF-32BE
+[HPUX]  UTF-32BE
 01236
-CFT\_UTF-32LE
+CFT_UTF-32LE
 UTF-32LE
 01234
-CFT\_UTF-32BE
+CFT_UTF-32BE
 UTF-32BE
-\[AIX\] UTF-32
-\[HPUX\] ucs4
+[AIX]  UTF-32
+[HPUX]  ucs4
 01232
-CFT\_UCS-2
+CFT_UCS-2
 UCS-2
-\[HPUX\] = UCS-2BE
+[HPUX] = UCS-2BE
 N/A
-CFT\_UCS-2LE
+CFT_UCS-2LE
 UCS-2LE
 N/A
-CFT\_UCS-2BE
+CFT_UCS-2BE
 UCS-2BE
-\[AIX\] UCS-2
+[AIX]  UCS-2
 N/A
-CFT\_CP850
+CFT_CP850
 CP850
-\[AIX, MVS (z/OS), VMS\] IBM-850
+[AIX, MVS (z/OS), VMS]  IBM-850
 00850
-CFT\_BIG5
+CFT_BIG5
 BIG5
-\[AIX, HPUX\] big5
+[AIX, HPUX]  big5
 00947
-CFT\_ISO8859-1
+CFT_ISO8859-1
 ISO8859-1
-\[HPUX\] iso88591
+[HPUX]  iso88591
 00819
-CFT\_ISO8859-15
+CFT_ISO8859-15
 ISO8859-15
-\[HPUX\] iso885915
+[HPUX]  iso885915
 00923
-CFT\_EBCDIC-FR
-\[UNIX\] EBCDIC-FR
-\[AIX, SUN\] IBM-297
-\[HPUX, Windows\] cp1147
+CFT_EBCDIC-FR
+[UNIX]  EBCDIC-FR
+[AIX, SUN]  IBM-297
+[HPUX, Windows]  cp1147
 00297
 ```

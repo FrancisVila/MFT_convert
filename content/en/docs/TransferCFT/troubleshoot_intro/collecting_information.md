@@ -8,13 +8,13 @@ stored in a log file. If you are using {{< TransferCFT/centralgovernancename  >}
 
 Transfer CFT also generates messages that provide information about
 the state of a transfer. These messages are collected and stored in a
-catalog file. From the {{< TransferCFT/centralgovernancename  >}} main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
+catalog file. From the  {{< TransferCFT/centralgovernancename  >}} main menu, select **Flow** &gt; **Monitoring** &gt; and then the type of View, for example **View all flows in error for a given application**.
 
 <span id="How_to_get_information_when_an_error_occurs"></span>
 
 ## Getting information when an error occurs
 
-All Transfer CFT error messages and diagnostics are listed in the section
+All Transfer CFT error messages and diagnostics are listed in the section  
 [Messages
 and error codes](../messages_and_error_codes_start_here). If an error occurs in Transfer CFT that you cannot
 correct using the diagnostic information provided there, see
@@ -23,7 +23,7 @@ correct using the diagnostic information provided there, see
 As you go through the questions in **Performing checks**, note your responses. If you need to submit
 a Support request this information can help you to save time.
 
-<a href="#Finding_OS_specific_relevant_information" class="MCXref xref">Documentation</a> lists related documentation that you may want to consult.
+<a href="#Finding_OS_specific_relevant_information" class="MCXref xref">Documentation</a>   lists related documentation that you may want to consult.
 
 ## Performing checks
 

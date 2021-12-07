@@ -7,15 +7,15 @@ codes used with {{< TransferCFT/componentshortname  >}}.
 
 ## About PeSIT PI codes
 
-During the file transfer phase, as seen in How PeSIT works, messages called FPDU (File
+During the file transfer phase, as seen in How PeSIT works,  messages called FPDU (File
 transfer Protocol Data
-Units) are exchanged between partners. Each FPDU comprises a
+Units) are exchanged between partners.  Each FPDU comprises a
 header (six bytes) that specifies the type of data transferred. The body of the FPDUs comprises a series of parameter identifiers (PI) used to specify
 and negotiate all the transfer elements.
 
 ![](/Images/TransferCFT/temp_fpdu.png)
 
-Each parameter PI has an assigned a number and value per the PeSIT protocol
+Each parameter  PI  has an assigned a number and value per the PeSIT protocol
 specifications. These PI codes are used for the session negotiation between partners.
 
 Furthermore, each parameter group unit is identified by a numeric code named PGI
@@ -204,10 +204,10 @@ on the type of access to the protocol connection (see PI22).
 
 If a connection is required
 with a mixed type of access, Transfer CFT negotiates the smallest
-value of the **Data transferred between sync points**(S/RPACING) parameters of the of the protocol object (CFTPROT).
+value of the **Data transferred between sync points**(S/RPACING) parameters of the  of the protocol object (CFTPROT).
 
 In server mode, Transfer CFT cannot increase the value proposed by the
-requester partner. The **Acknowledgement window size** parameters negotiate in the same way as the synchronization
+requester partner. The  **Acknowledgement window size**  parameters negotiate in the same way as the synchronization
 interval (S/RCHKW of the protocol object (CFTPROT)).
 
 <span id="PI_11_File_type_PeSIT_E"></span>
@@ -276,7 +276,7 @@ in particular, it must be the same as the one used during the initial
 transfer.
 
 When sending an acknowledgement
-(SEND TYPE = REPLY, ...), this field contains the PI 13
+(SEND  TYPE = REPLY, ...), this field contains the PI 13
 of the file transfer acknowledged.
 
 <span id="PI_14_Requested_attributes"></span>
@@ -488,7 +488,7 @@ with the specifications of the PeSIT protocol.
 ### PI 31 Article format
 
 This parameter specifies the file article format. It is defined using
-the NRECFM parameter of the SEND command, or specify the **Record format** in the send template (CFTSEND).  
+the NRECFM parameter of the  SEND command, or specify the **Record format** in the send template (CFTSEND).  
 The following conversions are performed:
 
 -   NRECFM = F    
@@ -527,7 +527,7 @@ This field can be used to associate a symbolic name to a transferred
 file.
 
 In sending mode, Transfer CFT defines
-this field using the **File name sent** parameter of the of the send template (CFTSEND), or the (NFNAME) of the SEND command, to designate the name of the file on the receiver
+this field using the **File name sent** parameter of the  of the send template (CFTSEND), or the (NFNAME) of the SEND command, to designate the name of the file on the receiver
 site.
 
 In reception mode, Transfer CFT recovers

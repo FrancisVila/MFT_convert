@@ -5,7 +5,7 @@
 }The Transfer CFT installation and migration documentation provides instructions for installing, upgrading, migrating, and deploying your {{< TransferCFT/componentshortname  >}}, and includes the following information:
 
 -   How to prepare for installation
--   How to install
+-   How to  install
 -   How to install in command line
 -   How to install in various installation architectures
 -   Known limitations
@@ -40,7 +40,7 @@ Refer to the {{< TransferCFT/transfercftname  >}} {{< TransferCFT/releasenumber 
 
 ## Migration or upgrade impact and considerations
 
-You should be aware of the following features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a> .
+You should be aware of the following  features or parameters, which were modified since their inception, and how these changes may impact your upgrade or migration. Please see, <a href="mig_impact_considerations" class="MCXref xref">Migration or upgrade impact and considerations</a> .
 
 ### More information
 

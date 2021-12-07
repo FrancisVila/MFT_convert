@@ -6,7 +6,7 @@
 
 ### imaxtime
 
-#### CFTPART, CFTTCP
+#### CFTPART,  CFTTCP
 
 \[IMAXTIME = {
 | time }\]

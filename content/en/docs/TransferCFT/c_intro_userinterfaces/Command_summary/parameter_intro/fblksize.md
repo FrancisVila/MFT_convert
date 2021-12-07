@@ -97,7 +97,7 @@ is not defined, its value is set as follows: 
     (default value: 19069), or FLRECL if FLRECL is greater than this constant
 -   For variable
     format files: this value equals the constant (related to the track length)
-    defined on installation of the {{< TransferCFT/componentshortname >}} in a z/OS environment
+    defined on installation of the  {{< TransferCFT/componentshortname >}} in a z/OS environment
     (default value: 19065), or to FLRECL + 4 if FLRECL is greater than this
     constant
 -   For undefined
@@ -113,7 +113,7 @@ is not defined, its value is set as follows: 
 
 Block size of file to be sent.
 
-Typically you do not need to define this parameter as {{< TransferCFT/componentshortname  >}} is
+Typically you do not need to define this parameter as  {{< TransferCFT/componentshortname  >}} is
 able to locate the value for the file to be sent. This real value is then
 taken into account when activating the transfer.
 

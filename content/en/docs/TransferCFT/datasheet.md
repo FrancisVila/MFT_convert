@@ -6,7 +6,7 @@
 
 ## Platforms
 
-{{< TransferCFT/componentshortname  >}} is deployed on the operating systems and browsers listed in this information sheet.
+{{< TransferCFT/componentshortname  >}} is deployed on the  operating systems and browsers listed in this information sheet.
 
 ### Operating systems for x64
 
@@ -14,11 +14,11 @@
 -   Debian 7, 8, 9
 -   Oracle Linux 6, 7
 -   Oracle Solaris 10, 11
--   Red Hat Enterprise Linux 6, 7, 8
+-   Red Hat Enterprise Linux  6, 7, 8
 -   SUSE Linux Enterprise Server 11, 12, 15
 -   Ubuntu 16.04, 18.04, 20.04
--   Windows 10
--   Windows Server 2012, 2012 R2, 2016, 2019
+-   Windows  10
+-   Windows Server  2012, 2012 R2, 2016, 2019
 
 ### Operating systems for Z
 
@@ -28,7 +28,7 @@
 
 ### Operating systems for Power
 
--   IBM AIX 7.1, 7.2
+-   IBM AIX  7.1, 7.2
 
 ### Operating systems for SPARC
 
@@ -86,7 +86,7 @@ If you are implementing either {{< TransferCFT/trustedfilename  >}} or {{< Trans
 
 ## Standard defaults
 
-The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
+The Internet Assigned Numbers Authority (IANA) reserves the  TCP ports 1761-1768  for {{< TransferCFT/componentshortname  >}}. For more information, refer to: [www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&page=31).
 
 
 | Component  |  Port  |
@@ -106,7 +106,7 @@ The Internet Assigned Numbers Authority (IANA) reserves the TCP ports 1761-1768 
 
 > **Note:**
 >
-> In this document, the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
+> In this document,  the terms Transfer CFT OS/400 and Transfer CFT IBM i may be used interchangeably.
 
 ## Third party licenses
 

@@ -46,7 +46,7 @@ PKIUTIL PKIEXT FOUT=PKI.EXT,TYPE=ROOT,ID=MYCERT
 The following command exports `MY_CERT`, which is an existing user certificate, in PKCS12 format by adding a password `Mypassword`.
 
 ```
-PKIUTIL PKIEXT ID=MY\_CERT, FOUT=PKI.CONF, PASSWORD=Mypassword
+PKIUTIL PKIEXT ID=MY_CERT, FOUT=PKI.CONF, PASSWORD=Mypassword
 ```
 
 After exporting the certificate, open the` PKI.CONF` file, where the INAME is the name of the exported PKCS12 certificate (and the password equal to `Mypassword`).
@@ -61,15 +61,15 @@ Which results in a single `BAR.cmd` command file.
 
 ## Exporting an SSH public key for SFTP
 
-When using SFTP, you can export the public key in an SSH\_RSA format to share with software other than Transfer CFT. To perform an extract, you must have originally imported the key with the same PKIPASSW as used in the CFTPARM object. If not, the export returns a key in KPRIV format instead of SSH\_RSA format (which is usable only by Transfer CFT).
+When using SFTP, you can export the public key  in an SSH\_RSA format to share with software other than Transfer CFT. To  perform an extract, you must have originally imported the key with the same PKIPASSW as used in the CFTPARM object. If not, the  export returns a key in KPRIV format instead of SSH\_RSA format (which is usable only by Transfer CFT).
 
 ## Importing and exporting keys
 
-You can use PKIEXT to export keys from the local database. To perform an extract, you must use the same PKIPASSW (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM [PKIPASSW](../../../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw).
+You can use PKIEXT to export keys from the local database.  To  perform an extract, you must use the  same PKIPASSW  (CFTPARM object) as was originally used to import the key. Using the same logic, to re-import a key that you extracted using PKIEXT, you require the same CFTPARM [PKIPASSW](../../../../c_intro_userinterfaces/command_summary/parameter_intro/pkipassw).
 
 Due to native OS encoding (for example, ASCII on Linux and EBCDIC on z/OS), when you export a key to a different operating system the decode operation may fail even when both systems are using the same password.
 
-Use the correct encoding and put the PKIPASSW in a file, for example, the ASCII string "`password`" on an EBCDIC system. Then point the CFTPARM PKIPASSW to this file, for example` PKIPASSW=#|@/path/to/pkipass_file`. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
+Use the correct encoding and put the PKIPASSW  in a file, for example, the ASCII string "`password`" on an EBCDIC system. Then point the CFTPARM PKIPASSW  to this file, for example` PKIPASSW=#|@/path/to/pkipass_file`. The PKIPASSW is consequently read with the correct encoding, and the file is correctly deciphered.
 
 > **Note:**
 >

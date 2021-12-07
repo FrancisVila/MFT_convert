@@ -3,7 +3,7 @@
     "linkTitle": "Store and forward modes",
     "weight": "270"
 }The store and forward mode enables you to route files from one computer
-to another via one or more intermediate relays (computers or communication sites). For example, when sending a file from computer A to computer C, where A and C are either not directly connected or have a connection problem, the file is routed via computer B.
+to another via one or more intermediate relays (computers or communication sites).  For example, when sending a file from computer A to computer C, where A and C are either not directly connected or have a connection problem, the file is routed via computer B.
 
 In the same way, a file to be sent to clients that are dependent on
 the final receiver may transmit via intermediate systems and be sent on. This transfer is accomplished using the same protocol from one end to
@@ -11,7 +11,7 @@ another.
 
 > **Note:**
 >
-> This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway products as the intermediary site.
+> This document describes the relay process as it relates to Transfer CFT. You can perform relay transfers using other Axway  products as the intermediary site.
 
 > **Note:**
 >
@@ -50,7 +50,7 @@ in write mode only, for sender requester mode.
 
 These protocols manage the acknowledgement messages following
 the reception of a file. See the SEND TYPE = [REPLY](../../using_the_send_command/sending_replies) command. The PeSIT
-profile protocol also manages the sending of messages.
+  profile protocol also manages the sending of messages.
 See the SEND TYPE = [MESSAGE](../../using_the_send_command/send_messages_cl) command.
 
 ## Using store and forward with Flow Manager
@@ -80,17 +80,17 @@ the {{< TransferCFT/componentshortname  >}} on the store and forward site is as 
 | PART  | Yes, immediately  | This forced store and forward occurs in server mode. If the recipient that is defined in the IPART parameter is not the final recipient, the received file is immediately sent on to the target partner.  |
 
 
-There are two ways for the sender to initiate a store and forward transfer:
+There are two ways for the sender  to initiate a store and forward transfer:
 
--   Define the final partner in the sender's configuration and use only the partner in the SEND command. Using this method, the final partner definition includes both the relay  (IPART) and has the OMINTIME and OMAXTIME values set to 0.  
+-   Define the final partner  in the sender's configuration and use only the partner  in the SEND command. Using this method, the final partner definition includes both the relay  (IPART) and has the OMINTIME and OMAXTIME values set to 0.  
 
-    cftpart id=&lt;FINAL PARTNER>, ipart=&lt;RELAY>, omintime=0, omaxtime=0,...
+    cftpart id=&lt;FINAL PARTNER>,  ipart=&lt;RELAY>, omintime=0, omaxtime=0,...
 
     send part=&lt;FINAL PARTNER>,...
 
 <!-- -->
 
--   Do not define the final partner in the sender's configuration. Using this method, you declare the final partner (ID) and the relay (IPART) when you execute the SEND command.
+-   Do not define the final partner  in the sender's configuration. Using this method, you declare the  final partner (ID) and the relay (IPART) when you execute the SEND command.
 
 <!-- -->
 
@@ -144,7 +144,7 @@ The following actions apply to the final recipient site:
 
 On completion of transfer,
 or in the event of error, Transfer CFT offers the possibility of executing
-procedures. You can use the typical [symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables) for these types of procedures.
+procedures. You can use the typical  [symbolic variables](../../../c_intro_userinterfaces/command_summary/symbolic_variables) for these types of procedures.
 
 Processing possibilities in the store and forward mode
 
@@ -154,7 +154,7 @@ Processing possibilities in the store and forward mode
 
 **PeSIT protocol only**
 
-You can use the use this option to force a store and forward on an intermediate site without knowing the final partner.
+You can use the use this option to force a store and forward on an intermediate site  without knowing the final partner.
 
 On the store and forward site there is a partner definition to receive the incoming connection and a second partner establishes the connection with the following site (also the intermediate or the final site). The link between the partner receiving the connection and the sending partner is established via the following parameter settings:
 
@@ -232,9 +232,9 @@ To broadcast a file from a store and forward site:
 
 On the store and forward site, Transfer CFT does not activate an end of transfer procedure (or error) when the file transfer of the file to be broadcast is performed. The transfer IDF is set to COMMUT, where the CFTRECV ID=COMMUT must be defined on the site as the transfer is saved in the catalog with this file identifier.
 
-If the transferred data code (NCODE) differs from the store and forward site's data code (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
+If the transferred data code (NCODE) differs from the store and forward site's data code  (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
 
-When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
+When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure  associated with this generic transfer.
 
 > **Note:**
 >
@@ -251,7 +251,7 @@ The usual symbolic variables for these types of procedures may be used (see the 
 
 ### Example
 
-This example shows a broadcast store and forward from the initiator A to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
+This example shows a broadcast store and forward from the initiator A  to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
 
 On the initiating site A, define:
 
@@ -275,7 +275,7 @@ cfttcp id=d,host=@D
  
 cftdest id=cd,part=(c,d),for=commut
  
-cftappl id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
+cftappl  id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 ```
 
 Execute the following partner C definition:

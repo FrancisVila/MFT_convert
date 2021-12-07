@@ -2,7 +2,7 @@
     "title": "How to install Transfer CFT in a container",
     "linkTitle": "How to install Transfer CFT in a container",
     "weight": "140"
-}There are two methods  for installing and operating a containerized {{< TransferCFT/transfercftname  >}}, use either Docker Compose or Kubernetes with Helm. This page describes prerequisites and installation instructions needed to help you install Transfer CFT in a container.
+}There are two methods  for installing and operating a containerized {{< TransferCFT/transfercftname  >}}, use either  Docker Compose or Kubernetes with Helm. This page describes prerequisites and installation instructions needed to help you install Transfer CFT in a container.
 
 The information in this page may be supplemented, corrected, or even contradicted by the README.md file supplied with the product, in which case the README.md file takes precedence.
 

@@ -46,7 +46,7 @@ current field 
 =
 This field keeps the value taken in the previous stage 
 x
-This field can be modified by the {{< TransferCFT/componentshortname >}}
+This field can be modified by the  {{< TransferCFT/componentshortname >}}  
 (before the call) or by the user function (after the call) 
 \*
 This field can be defined by the user function 
@@ -77,7 +77,7 @@ access
 File access:
 
 -   0: controlled
-    by {{< TransferCFT/componentshortname >}}
+    by  {{< TransferCFT/componentshortname >}}
 -   1: controlled
     by the user
 
@@ -1581,16 +1581,16 @@ XferObjectId
 
 At the sender end, DIRECT =
 S, the user function is called before the record is sent to the
-remote site, and after the record is read if {{< TransferCFT/componentshortname  >}} manages file
+remote site, and after the record is read if  {{< TransferCFT/componentshortname  >}} manages file
 accessing. If file accessing is managed by the user function, the latter
 has to read the record and define the ldata field as well as the zdata
-parameter before handing back control to {{< TransferCFT/componentshortname  >}}.
+parameter before handing back control to  {{< TransferCFT/componentshortname  >}}.
 
 At the receiver end, DIRECT = R,
 the user function is called after the record is received, and before the
-record is written if {{< TransferCFT/componentshortname  >}} manages file accessing. If file accessing
+record is written if  {{< TransferCFT/componentshortname  >}} manages file accessing. If file accessing
 is managed by the user function, the latter has to write the record before
-handing back control to {{< TransferCFT/componentshortname  >}}.
+handing back control to  {{< TransferCFT/componentshortname  >}}.
 
 At this stage (DATA\_TYP) and before the record is sent or after it is
 received, the user function can perform the following operations:
@@ -1623,7 +1623,7 @@ Return code:
 -   9 = refusal
     and end of transfer
 
-If file accessing is managed by {{< TransferCFT/componentshortname >}}:
+If file accessing is managed by  {{< TransferCFT/componentshortname >}}:
 
 -   1 = record
     modified
@@ -1635,11 +1635,11 @@ If file accessing is managed by {{< TransferCFT/componentshortname >}}:
     At the time the first record is inserted, you can save the current
     record in the zwork working area before handing back control to Transfer
     CFT. In the insertion mode (as long as ret1 = 2), the zdata is not defined
-    by {{< TransferCFT/componentshortname >}} in the following DATA\_TYP stages and the user can continue
+    by  {{< TransferCFT/componentshortname >}} in the following DATA_TYP stages and the user can continue
     to insert as many records as required.
 -   3 = record
     deleted 
-    On returning from the user function, {{< TransferCFT/componentshortname >}} ignores the current
+    On returning from the user function,  {{< TransferCFT/componentshortname >}} ignores the current
     record. The record is not sent when in send mode, and not written into
     the file when in receive mode.
 
@@ -1655,9 +1655,9 @@ Record length (in bytes) 
 
 Records are compressed as a result of a negotiation between the sender
 partner and the receiver partner. At the
-sender end, records are compressed before being sent by the {{< TransferCFT/componentshortname  >}}. At the receiver end, the
-records are decompressed by the {{< TransferCFT/componentshortname  >}} immediately after
-they are received. The records {{< TransferCFT/componentshortname  >}} supplies to the user function
+sender end, records are compressed before being sent by the  {{< TransferCFT/componentshortname  >}}. At the receiver end, the
+records are decompressed by the  {{< TransferCFT/componentshortname  >}} immediately after
+they are received. The records  {{< TransferCFT/componentshortname  >}} supplies to the user function
 are never in compressed form.
 
 The ncomp field designates the compression algorithm used. The default

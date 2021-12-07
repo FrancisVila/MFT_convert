@@ -16,15 +16,15 @@
 | <a href="transfer_protocol_concepts">CFTPROT</a>  | Transfer protocol  |
 
 
-## What is a service file medium
+## What is a   service file medium
 
 {{< TransferCFT/componentshortname  >}} medium refers to any data support or local communication
-means used by {{< TransferCFT/componentshortname  >}}. A distinction is made between the media:
+means used by  {{< TransferCFT/componentshortname  >}}. A distinction is made between the media:
 
 -   Accessed by the
-    {{< TransferCFT/componentshortname >}}
+      {{< TransferCFT/componentshortname >}}
 -   Accessed by the
-    {{< TransferCFT/componentshortname >}} utility
+      {{< TransferCFT/componentshortname >}} utility
 -   Used by the interactive
     functions
 -   Used by the programming
@@ -37,17 +37,17 @@ The following terms are used in this section:
 -   PHYSICAL FILE which
     describes the name and physical location of a file type medium
 -   If the file name
-    begins with a reserved character, designated by **char-file** - see the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS,
-    this is a logical name interpreted by <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
+    begins with a reserved character, designated by **char-file** - see the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS,
+    this is a logical name interpreted by  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 -   CFTIN and CFTOUT
     for standard task input/output
 -   TCP synchronous
     medium to designate a communication channel
 
-The <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> medium names can be set up for the:
+The  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> medium names can be set up for the:
 
 -   Programming interface
-    (catalog name, communication medium name with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>):
+    (catalog name, communication medium name with the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>):
     by the OPEN and COM services
 -   <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>:
     CFTPARM, CFTCOM, CFTCAT, CFTLOG, CFTACCNT objects (the name of the Parameter
@@ -56,20 +56,20 @@ The <span class="mc-variable axway_variables.Component_Short_Name variable">Tran
     CONFIG command
 -   Interactive functions:
     the customization function is used to set the names of the Parameter,
-    Partner, Catalog and Log files, and the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication medium
+    Partner, Catalog and Log files, and the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> communication medium
 
 <span id="CFT_monitor_media"></span>
 
 ### <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> media files
 
 You cannot change the name of the <span style="font-style: italic;">parameter
-file</span>. It constitutes the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> anchor point containing all the data
+file</span>. It constitutes the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> anchor point containing all the data
 defined by the parameter setting, and in particular the names of the other
 files and media. However, you can establish a correspondence between this
 logical name and a physical name in the flow of CFT activation commands.
 
-The names of the other <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> media are defined by parameter setting,
-although <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> has default values.
+The names of the other  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> media are defined by parameter setting,
+although  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> has default values.
 
 <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>
 media by type of object and parameter
@@ -119,7 +119,7 @@ EXEC 
 Statistics file switching procedure 
 ```
 
-Depending on the system, <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supports the following communication
+Depending on the system,  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> supports the following communication
 media:
 
 -   Direct organization
@@ -133,7 +133,7 @@ For a communication medium based on TCP/IP:
 -   Configuration file
     name
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding
+Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding
 to your OS.
 
 <span id="Utility_media__CFTUTIL"></span>
@@ -155,14 +155,14 @@ it accesses, as presented in the table:
 
 
 By default, in the absence of the CONFIG command, the media accessed
-by the utility are defined in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide*
+by the utility are defined in the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide*
 corresponding to your OS.
 
 Depending on the operating system, the media names may be physical files
-or logical files. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding
+or logical files. Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding
 to your OS.
 
-Depending on the system, the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> utility supports the following
+Depending on the system, the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> utility supports the following
 communication media:
 
 -   Direct organization
@@ -239,7 +239,7 @@ param 
 ```
 
 The default names of the media accessed by the programming interface,
-CATALOG file and COMMUNICATION medium, are defined in the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS.
+CATALOG file and COMMUNICATION medium, are defined in the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your OS.
 
 Depending on the system, the programming interface supports the following
 communication media:
@@ -255,7 +255,7 @@ And in the case of a communication medium based on TCP/IP
 -   Configuration file
     name
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your
+Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your
 OS.
 
 <span id="Interactive_function_media"></span>
@@ -303,5 +303,5 @@ For a communication medium based on TCP/IP:
 -   Configuration file
     name
 
-Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your
+Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>*Operations Guide* corresponding to your
 OS.

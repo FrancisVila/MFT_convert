@@ -69,7 +69,7 @@ the catalog that corresponds to:
 This virtual transfer is identified by a DIAGP code equal to DIFFUS,
 on querying the catalog. It is in the K state.
 
-The associated post processing procedure is only executed when
+The associated post processing procedure  is only executed when
 all the transfers are correctly completed (DIFFUS entry changes to the
 T or X state, depending on the compat mode).
 
@@ -81,7 +81,7 @@ T or X state, depending on the compat mode).
 The post processing procedure in the case of an error is executed for each transfer in the same
 way as for normal transfers.
 
-To broadcast a group of P files if N partners are involved, a SEND PART =
+To broadcast a group of P files  if N partners are involved, a SEND PART =
 DEST, IDF = ID\_EM, FNAME = &lt;file\_symb>GROUP command generates N (P+1) +1 transfer
 entries in the catalog corresponding to:
 
@@ -141,26 +141,31 @@ You can use the following commands as an example to configure a transfer flow fr
 
 1.  Partner A sends the list of partners (C1, C2, ...Cn) that you want to broadcast to Partner B:
 2.  ```
-    SEND PART=ID\_B, FNAME=LIST\_B,IDF=LIST,... ```
+    SEND PART=ID_B, FNAME=LIST_B,IDF=LIST,...
+    ```
 3.  Partner B receives this list with the command:
 4.  ```
-    CFTRECV ID=LIST,..., FNAME=LIST ```
+    CFTRECV ID=LIST,..., FNAME=LIST
+    ```
 
 **Step 2**
 
 1.  Partner A sends the file to broadcast to a virtual Partner C:
 
 2.  ```
-    SEND PART=ID\_C, FNAME=FILE\_TO\_BROADCAST,... ```
+    SEND PART=ID_C, FNAME=FILE_TO_BROADCAST,...
+    ```
 
 3.  On Partner A perform the following command to reach Partner C virtually via Partner B:
 
 4.  ```
-    CFTPART ID=ID\_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID\_B ```
-    1.  Partner B receives the FILE\_TO\_BROADCAST and sends it on to Partner C (where C is a broadcast list).
+    CFTPART ID=ID_C,..., OMINTIME=O, OMAXTIME=0, IPART=ID_B
+    ```
+    1.  Partner B receives the FILE\_TO\_BROADCAST and  sends it on to Partner C (where C is a broadcast list).
 
 5.  ```
-    CFTDEST ID=C, FNAME=LIST, FOR=COMMUT ```
+    CFTDEST ID=C, FNAME=LIST, FOR=COMMUT
+    ```
 
     This results in the FILE\_TO\_BROADCAST being sent to all of the partners in the C list of partners.
 
@@ -183,7 +188,8 @@ partner files from a list of partners, CFTDEST object.
 The collecting mechanism correspondences are displayed in the following command.
 
 ```
-RECV PART=GROUP, IDF=IDF1,... ```
+RECV PART=GROUP, IDF=IDF1,...
+```
 
 ### Define a collecting partner list
 
@@ -208,7 +214,7 @@ transfers are correctly completed.
 
 ### End-of-send procedure
 
-When all transfers are completed, the end of transfer procedure is executed on the generic transfer.
+When all transfers are completed,  the end of transfer procedure is executed on the generic transfer.
 
 There are three possible actions when transfers complete depending on the [EXEC](../../../c_intro_userinterfaces/command_summary/parameter_intro/exec) parameter setting, DEST, PART, CHILDREN.
 

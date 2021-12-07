@@ -16,7 +16,7 @@ CFTUTIL parameter setting commands, grouped by function, are presented in the
 following table.
 
 
-| Action &lt;/th&gt;  | Command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Command &lt;/th&gt;  |
 | --- | --- |
 |  Update the general parameters before Transfer CFT start-up  |  CFTPARM  |
 |  Define the trace file or files:<br/> • Before Transfer CFT starts <br/> • During Transfer CFT operations </li>  |  CFTTRACE<br />  |
@@ -33,7 +33,7 @@ be used for the various trace processes.
 #### Defining trace files
 
 
-|  Trace file definition  | Command &lt;/th&gt;  | Parameter &lt;/th&gt;  | Description &lt;/th&gt;  |
+|  Trace file definition  |  Command &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Description &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  Before starting<br /> Transfer CFT  |  CFTPARM  |  TRACE=identifier  |  CFTTRACE command identifier  |
 |   |  CFTTRACE  |   |   |
@@ -45,7 +45,7 @@ that do not allow dynamic file definition.
 #### Start collecting information
 
 
-| Starting information collection &lt;/th&gt;  | Command used to define the file &lt;/th&gt;  | Parameter &lt;/th&gt;  | Command to enter &lt;/th&gt;  |
+|  Starting information collection &lt;/th&gt;  |  Command used to define the file &lt;/th&gt;  |  Parameter &lt;/th&gt;  |  Command to enter &lt;/th&gt;  |
 | --- | --- | --- | --- |
 |  When starting up Transfer CFT  |  CFTTRACE  |  START=CFT  |   |
 |   |  TRCFILE (1)  |  START=CFT  |  CFTTRACE  |
@@ -59,7 +59,7 @@ that do not allow dynamic file definition.
 #### Stop collecting - close the file and shutdown the process
 
 
-| Action &lt;/th&gt;  | Define the file with &lt;/th&gt;  | Enter the command &lt;/th&gt;  |
+|  Action &lt;/th&gt;  |  Define the file with &lt;/th&gt;  |  Enter the command &lt;/th&gt;  |
 | --- | --- | --- |
 |  Stop information collection  |  CFTTRACE  |  STOPTRC  |
 |  Stop collection, close the files and shutdown the process  |  CFTTRACE  |  STOPTRC<br />  |
@@ -71,20 +71,20 @@ that do not allow dynamic file definition.
 
 ```
 CFTTRACE 
-\[XTRACE = {<u>0</u> | 0..7},\]
+[XTRACE = {<u>0</u> | 0..7},]
 ID = *identifier*,
-\[TRCFNAM = <u>" "</u> | *filename*,\]
-\[TRCFTYP = {<u>STANDARD</u> | CIRCULAR},\]
-\[TRCLREC = n,\]
-\[TRCNREC = n,\]
-\[MODE = {<u>CREATE</u> | REPLACE | DELETE},\]
+[TRCFNAM = <u>" "</u> | *filename*,]
+[TRCFTYP = {<u>STANDARD</u> | CIRCULAR},]
+[TRCLREC = n,]
+[TRCNREC = n,]
+[MODE = {<u>CREATE</u> | REPLACE | DELETE},]
 START = {<u>CFT</u> | DELAYED}
 ```
 
 ### Parameters
 
 \[FTRACE = {0
-| 0..15}\]
+| 0..15}\]  
 
 **ID = identifier**
 

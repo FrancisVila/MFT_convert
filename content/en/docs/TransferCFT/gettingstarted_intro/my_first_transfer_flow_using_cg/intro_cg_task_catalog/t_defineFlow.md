@@ -11,7 +11,7 @@ In the **Flow List** page click **Add flow** and perform the following steps:
 1.  Select **General information** and complete the fields. The following fields are mandatory (\* denotes mandatory):
     -   Name: Enter a user friendly name, for example **Simple flow**
     -   Identifier: Enter the id that will be used in the transfer commands, for example **flow01** (Transfer CFT IDF)
-2.  In the left panel, select **Source** and click **Edit**. The source is the owner of the data being transferred.
+2.  In the left panel, select **Source** and click **Edit**.  The source is the owner of the data being transferred.
 3.  Select **Target** and click **Edit**. The target is the receiver of the exchange.
 4.  Optionally, select Protocol and define. You cannot define a protocol until you have defined both the source and target.
 5.  Save the flow, or save and deploy the flow.

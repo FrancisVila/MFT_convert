@@ -38,12 +38,12 @@ Depending on the programming language used, the structure chosen is:
     an interface with a user program written in COBOL
 
 The exausC and the exausO structures are described in exfus.h that is
-delivered with the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> product.
+delivered with the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> product.
 
 <span id="Structure_in_COBOL"></span>
 
 ### Structure in COBOL
 
 If the user program is written in COBOL, the C-COBOL interfacing rules
-must be complied with. Refer to the <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> delivered samples defined
+must be complied with. Refer to the  <span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span> delivered samples defined
 in <span style="font-weight: bold;font-family: 'Courier New', monospace;">exaus.cop</span>.

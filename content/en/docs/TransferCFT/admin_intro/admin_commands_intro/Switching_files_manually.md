@@ -6,7 +6,7 @@
 
 #### Automatic SWITCH 
 
-You can customize the switch procedure depending on your production needs. The symbolic variable &FACCNT
+You can customize the switch procedure  depending on your production needs. The symbolic variable &FACCNT
 represents the statistical file.
 
 > **Note:**
@@ -16,7 +16,7 @@ represents the statistical file.
 This example automatically executes the switch procedure at noon.
 
 ```
-CFTACCNT ID=ACCNT0,TYPE=FILE,EXEC=<switch\_procedure>,SWITCH=120000
+CFTACCNT ID=ACCNT0,TYPE=FILE,EXEC=<switch_procedure>,SWITCH=120000
 ```
 
 #### Manual SWITCH 

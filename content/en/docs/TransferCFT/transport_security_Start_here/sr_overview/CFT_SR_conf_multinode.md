@@ -4,7 +4,7 @@
     "weight": "250"
 }You can install {{< TransferCFT/componentlongname  >}} in an active/active architecture where you add multiple SecureRelay Router Agents behind a load balancer. The architecture could resemble the diagrams in the [Example architectures](#Examples) section of this page.
 
-This page describes how to configure Transfer CFT in a multi-node architecture to use Secure Relays:
+This page describes how to  configure  Transfer CFT  in a multi-node architecture to use Secure Relays:
 
 -   Install {{< TransferCFT/componentlongname >}} in a multi-node, multi-host architecture
 -   Install 2 or more SecureRelay Router Agents (use the same CA and USER certificate as the Master Agent)
@@ -23,7 +23,7 @@ Follow the server-side load balancer instructions to install and configure the 
 
 ## Secure Relay Router Agent installation
 
-Follow the installation instructions provided in the [Secure Relay RA Installation Guide](https://docs.axway.com/bundle/SecureRelay_271_InstallationGuide_allOS_en_PDF/resource/SecureRelayRA_InstallationGuide_allOS_en_PDF.pdf). During installation, it is essential that you configure the Router Agent CA and user certificate as follows to enable secure communication between the Master Agent and Router Agent:
+Follow the installation instructions provided in  the [Secure Relay RA Installation Guide](https://docs.axway.com/bundle/SecureRelay_271_InstallationGuide_allOS_en_PDF/resource/SecureRelayRA_InstallationGuide_allOS_en_PDF.pdf). During installation, it is essential that you configure the Router Agent CA and user certificate as follows  to enable secure communication between the Master Agent and Router Agent:
 
 -   &lt;CACertificate>CA\_for\_RA.der&lt;/CACertificate>
 -   &lt;UserCertificate>USER\_for\_RA.p12&lt;/UserCertificate>
@@ -32,34 +32,34 @@ You need these values when you configure the Master Agent in the {{< TransferCF
 
 ## Configure the Router Agents in {{< TransferCFT/componentlongname  >}}
 
-After completing installation, configure the Router Agents in the {{< TransferCFT/componentlongname  >}} configuration.
+After completing installation,  configure the Router Agents in the {{< TransferCFT/componentlongname  >}} configuration.
 
-1.  Set the value for the number of Router Agents using the `secure_relay.ra` parameter. {{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
+1.  Set the value for the number of  Router Agents using the  `secure_relay.ra` parameter. {{< TransferCFT/componentlongname >}} generates a set of `secure_relay.ra.n.*` parameters, where the number, *n*, corresponds to the number of Router Agents you defined in this parameter.
 2.  You can use the default values for most fields, but you must customize the` secure_relay.ra.0.dmz` parameter. This value must be unique; for example, you can increment the DMZ0 value by one for each Router Agent so that the  second Router Agent has the value` secure_relay.ra.0.dmz = DMZ1`.
 3.  Configure the host address for each Secure Relay host using `secure_relay.ra.0.host`.
 
 Example of two Router Agent definitions
 
 ```
-secure\_relay.ra = 2
+secure_relay.ra      = 2
  
-secure\_relay.ra.0.enable = yes
-secure\_relay.ra.0.dmz =
-secure\_relay.ra.0.host =
-secure\_relay.ra.0.admin\_port = 6810
-secure\_relay.ra.0.comm\_port = 6811
-secure\_relay.ra.0.nb\_data\_connections = 5
-secure\_relay.ra.0.data\_channel\_ciphering = No
-secure\_relay.ra.0.outcall\_network\_interface =
+secure_relay.ra.0.enable = yes
+secure_relay.ra.0.dmz =
+secure_relay.ra.0.host =
+secure_relay.ra.0.admin_port = 6810
+secure_relay.ra.0.comm_port = 6811
+secure_relay.ra.0.nb_data_connections = 5
+secure_relay.ra.0.data_channel_ciphering = No
+secure_relay.ra.0.outcall_network_interface =
  
-secure\_relay.ra.1.enable = Yes
-secure\_relay.ra.1.dmz =
-secure\_relay.ra.1.host =
-secure\_relay.ra.1.admin\_port = 6810
-secure\_relay.ra.1.comm\_port = 6811
-secure\_relay.ra.1.nb\_data\_connections = 5
-secure\_relay.ra.1.data\_channel\_ciphering = No
-secure\_relay.ra.1.outcall\_network\_interface =
+secure_relay.ra.1.enable = Yes
+secure_relay.ra.1.dmz =
+secure_relay.ra.1.host =
+secure_relay.ra.1.admin_port = 6810
+secure_relay.ra.1.comm_port = 6811  
+secure_relay.ra.1.nb_data_connections = 5
+secure_relay.ra.1.data_channel_ciphering = No
+secure_relay.ra.1.outcall_network_interface =
 ```
 
 ## Configure the Master Agent in {{< TransferCFT/componentlongname  >}}
@@ -76,22 +76,22 @@ In {{< TransferCFT/componentlongname  >}} from the CFTUTIL prompt, perform the 
 
 1.  Enable Secure Relay:  
     ```
-    UCONFSET id=secure\_relay.enable ,value=yes
+    UCONFSET id=secure_relay.enable ,value=yes
     ```
 2.  Set the full path to Java executable, for example:  
 3.  ```
-    UCONFSET id=cft.jre.java\_binary\_path ,value=/bin/java
+    UCONFSET id=cft.jre.java_binary_path ,value=/bin/java
     ```
 
 ## Set the listening ports
 
 If you need to set listening ports, for example if you are using a firewall, proceed as follows:
 
-1.  To define the {{< TransferCFT/componentlongname >}} internal listening points for inter-node communication, select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
+1.  To define the {{< TransferCFT/componentlongname >}} internal listening points for inter-node communication,   select a port-range using the UCONF `cft.multi_node.listen_port_range` parameter. For example:  
     ```
-    UCONFSET id=cft.multi\_node.listen\_port\_range,value='33000-33100'
+    UCONFSET id=cft.multi_node.listen_port_range,value='33000-33100'
     ```
-2.  Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
+2.  Define the protocol listening ports for Secure Relay, which correspond to the SAP values in the CFTPROT  object. For each node this value  increments by one port number. Therefore, when configuring the CFTPROT object ensure that there is no  listening port overlap.
 
 **Example**
 
@@ -137,17 +137,17 @@ As no connection dispatcher is used with Secure Relay, the SAP configured in the
 CFTNET ID = NETSR,
 TYPE = TCP,
 CALL = INOUT,
-CALL = 'INOUT',
-MAXCNX = '1000',
-ORIGIN = 'CFTUTIL',
-CLASS = '2',
-HOST = 'INADDR\_ANY',
-SRCPORTS = ( '5000-65535'),
-PORT = '0',
-PROTOCOL = 'SR',
-RECALLHOST = '127.0.0.1',
-SSLTERM = 'NO',
-MODE = 'REPLACE'
+CALL        = 'INOUT',
+MAXCNX      = '1000',
+ORIGIN      = 'CFTUTIL',
+CLASS       = '2',
+HOST        = 'INADDR_ANY',
+SRCPORTS    = ( '5000-65535'),
+PORT        = '0',
+PROTOCOL    = 'SR',
+RECALLHOST  = '127.0.0.1',
+SSLTERM     = 'NO',
+MODE        = 'REPLACE'
 ```
 
 ### Create a CFTPROT object
@@ -163,12 +163,12 @@ This section describes the CFTPROT object, and how various parameters are relate
 This example uses a CFTNET object called NETXSR, and PROTXSR is bound to port 1861 for node 0, and port 1862 for node 1.
 
 ```
-CFTPROT ID = 'PROTXSR'
-NET = 'NETXSR',
-SAP = '1861', <Transfer CFT increments this for each node, be sure to check for port conflicts>
-SRIN = 'BOTH',
-SROUT = 'BOTH',
-TYPE = 'PESIT',
+CFTPROT ID          = 'PROTXSR'
+NET         = 'NETXSR',
+SAP         = '1861', <Transfer CFT increments this for each node, be sure to check for port conflicts>
+SRIN        = 'BOTH',
+SROUT       = 'BOTH',
+TYPE        = 'PESIT',
 ....
 ```
 
@@ -184,15 +184,19 @@ This is an example of the CFTPART and CFTTCP object configuration.
 
 ```
 CFTPART id = PARIS,
- prot = PROTXSR,
- sap = <remote\_partner\_sap>,
+         prot = PROTXSR,
+         sap = <remote_partner_sap>,
+        
  nspart = NPARIS,
-  nrpart = NPHOENIX,
-  mode = replace
+         nrpart = NPHOENIX,
+         mode = replace
  
 CFTTCP id = PARIS,
+      
  class = 2, /\* this must match and be the same class as the one used in the CFTNET (SecureRelay)\*/
- host = <remote\_partner\_host\_address>,
+      
+ host = <remote_partner_host_address>,
+      
  mode = replace
 ```
 
@@ -201,7 +205,7 @@ CFTTCP id = PARIS,
 If you would like to use a specific SecureRelay with a given partner, set the following parameter in the CFTPART:
 
 ```
-SRDMZ = <UCONF secure\_relay.ra.*n*.dmz value, where n is the number that corresponds to the SecureRelay to use>
+SRDMZ = <UCONF secure_relay.ra.*n*.dmz value, where n is the number that corresponds to the SecureRelay to use>
 ```
 
 ## Configure the load balancer

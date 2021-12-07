@@ -116,31 +116,36 @@ Example 
 A DSNAME or a string to request that a file be sent:
 
 ```
-SEND FNAME=‘CFT.SEND.FILE’ ```
+SEND FNAME=‘CFT.SEND.FILE’
+```
 
 Search the catalog for the file:
 
 ```
-SEND FNAME=‘CFTRES%3480%CFT.SEND.FILE’ ```
+SEND FNAME=‘CFTRES%3480%CFT.SEND.FILE’
+```
 
 Look for the file on the volume CFTRES, unit 3480:
 
 ```
-SEND FNAME=‘%3480%CFT.SEND.FILE’ ```
+SEND FNAME=‘%3480%CFT.SEND.FILE’
+```
 
-Look for the file in the catalog (unit type imposed):
+Look for the file  in the catalog (unit type imposed):
 
 ```
-SEND FNAME=‘CFTRES%%CFT.SEND.FILE’ ```
+SEND FNAME=‘CFTRES%%CFT.SEND.FILE’
+```
 
 Look for the file on the disk CFTRES:
 
-Using parameters ‘VOLUME’ and/or ‘UNIT’ may conflict with DF/SMS file management.
+Using parameters ‘VOLUME’ and/or ‘UNIT’ may  conflict with DF/SMS file management.
 
 t:
 
 ```
-SEND FNAME=‘CFT.SEND.FILE(MEMBER)’ ```
+SEND FNAME=‘CFT.SEND.FILE(MEMBER)’
+```
 
 t:
 
@@ -218,6 +223,7 @@ A PDS file is coded as:
 
 ```
 FNAME=NAME1.NAMEX(MEMBER)
+        
 ```
 
 Delivered template:
@@ -233,7 +239,9 @@ A GDG filename is coded as:
 ```
 FNAME=NAME1.NAMEX(0)
 FNAME=NAME1.NAMEX(-n)
+        
 FNAME=NAME1.NAMEX(+n)
+            
 ```
 
 > **Note:**

@@ -2,7 +2,7 @@
     "title": "Transfer CFT messages: CFTH",
     "linkTitle": "CFTH messages",
     "weight": "310"
-}This topic lists the CFTHxx (CFT xnnx) messages and provides the type, a description, consequence, and corrective actions when applicable.
+}This topic lists the CFTHxx  (CFT xnnx) messages and provides the type,  a description, consequence, and corrective actions when applicable.
 
 **Message format**
 
@@ -891,7 +891,7 @@ CFTH29E Invalid FPDU RC=&rc Incoming call address= &str <PART=&part>
 Explanation
 An inconsistent FPDU has been received. The RC code enables
 the error found to be defined more specifically: this code is identical
-to the one included in the PDU\_iNN protocol diagnostic message.
+to the one included in the PDU_iNN protocol diagnostic message.
 Consequence
 The transfer is aborted.
 ```
@@ -2288,7 +2288,7 @@ Information
 CFTH59I message transferred PART=&part IDS=&ids IDM=&idm NIDT=&idt
 Explanation
 A message
-transfer was carried out in the PeSIT as referenced by the IDS field, where the IDS refers to this specific session context.
+transfer was carried out in the PeSIT as referenced by the IDS field,  where the IDS refers to this specific session context.
 The displayed
 reference in the second message is the public transfer reference.
 ```
@@ -2299,8 +2299,8 @@ reference in the second message is the public transfer reference.
 V23 format
 V24 format
 Information
-<span id="CFTH60I"></span>CFTH60I PART=&part IDS=&ids IDM=&idm NIDT=&idt \[Reply | Nack\] transferred
-CFTH60I \[Reply | Nack\] transferred PART=&part IDS=&ids IDM=&idm NIDT=&idt
+<span id="CFTH60I"></span>CFTH60I PART=&part IDS=&ids IDM=&idm NIDT=&idt [Reply | Nack] transferred
+CFTH60I [Reply | Nack] transferred  PART=&part IDS=&ids IDM=&idm NIDT=&idt
 Explanation
 An acknowledgement
 type transfer message was carried out in the PeSIT session, where
@@ -2315,10 +2315,10 @@ reference in the second message is the public transfer reference.
 V23 format
 V24 format
 Information
-<span id="CFTH61I"></span>CFTH61I PART=&part IDS=&ids \["Requester"|"Server"\] &ref session closed &prot
-CFTH61I &prot \["Requester"|"Server"\] session closed <PART=&part IDS=&ids> &prot
+<span id="CFTH61I"></span>CFTH61I PART=&part IDS=&ids ["Requester"|"Server"] &ref session closed &prot
+CFTH61I &prot ["Requester"|"Server"] session closed <PART=&part IDS=&ids> &prot
 Explanation
-An & prot session in either Requester or Server mode was closed, where &prot = PeSIT, ODETTE, or SFTP.
+An & prot session in either Requester or Server mode was closed, where  &prot = PeSIT, ODETTE, or SFTP.
 And:
 
 -   &part: the partner identifier involved in the session
@@ -2388,7 +2388,7 @@ CFTH65I PESIT DMZ permanent session control call=&n <PART=&part IDS=&ids >
 Explanation
 Support for permanent links in DMZ.
 {{< TransferCFT/componentshortname >}} in DMZ does not give the TURN when there are
-no more files to send, but sends
+no  more files to send, but sends
 an FPDU Control Call to the initiator
 {{< TransferCFT/componentshortname >}} at regular negotiated intervals to prevent the temporization from expiring.
 

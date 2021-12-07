@@ -29,7 +29,7 @@ of the transfer. This allows a procedure to be associated with a model file iden
 (IDF), instead of including the symbolic variable &IDF at the level
 of the EXECSF or EXECRF parameter of CFTPARM.
 
-The symbolic variables possible in filename
+The symbolic variables  possible in filename
 and in the associated procedure, or set of associated procedures, are
 the same as the ones authorized for the end-of-transfer procedures referred
 to in CFTPARM. See [Symbolic variables](../../symbolic_variables).
@@ -41,7 +41,7 @@ to in CFTPARM. See [Symbolic variables](../../symbolic_variables).
     -   If the file does
         not exist, an error message is generated and no processing is executed on completion of the transfer (even
         if the EXECSF parameter of the CFTPARM command is defined).
-    -   If EXEC is set to \_NONE\_, then no processing is executed even if there is a defined EXECSF or EXECRF.
+    -   If EXEC is set to \_NONE\_, then no processing is executed even if  there is a defined EXECSF or EXECRF.
 -   If this EXEC parameter is not defined, the EXECSF or EXECRF parameter
     of the CFTPARM command is taken into account.
 
@@ -69,7 +69,7 @@ the name of the last log file used before switching (current file).
 
 \[EXEC = filename\]    {string 64}
 
-Name of the procedure to be executed when {{< TransferCFT/componentshortname  >}} switches to the
+Name of the procedure to be executed when  {{< TransferCFT/componentshortname  >}} switches to the
 other statistical file.
 
 This procedure has access to the symbolic variable &FACCNT which
@@ -81,7 +81,7 @@ contains the name of the last statistical file used before switching.
 
 **\[EXEC = { <u>DEST</u> | PART | CHILDREN }\]**
 
-The end-of-transfer procedure submit
+The  end-of-transfer procedure submit
 mode.
 
 -   DEST: When a transfer is terminated, an end-of-transfer procedure is submitted for all generic transfers (parent). The symbolic variables are substituted on the fly. For example, the &PART variable is substituted with the CFTDEST command identifier for the generic, and the partner identifier for each transfer on the list.
@@ -92,7 +92,7 @@ mode.
 
 <!-- -->
 
--   CHILDREN: The end-of transfer procedure is submitted for each terminated transfer in the group of transfers (children), but not for the generic (parent) catalog entry.
+-   CHILDREN: The end-of transfer procedure is submitted for each terminated transfer in the group of transfers (children), but  not for the generic (parent) catalog entry.
 
 #### SUBMIT
 

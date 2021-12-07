@@ -13,7 +13,7 @@
 
 **O**utput file type.
 
-Refer to the {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your
+Refer to the  {{< TransferCFT/componentshortname  >}} *Operations Guide* corresponding to your
 OS.
 
  

@@ -17,11 +17,11 @@ You must stop and start, or restart, Transfer CFT for the modifications to be ta
 
 ### Migration command
 
-The folder migration utility is supplied as an executable file, and displays help text when invoked without arguments or options.
+The folder migration utility is supplied as an executable file, and displays  help text when invoked without arguments or options.
 
 Actions
 
-Two actions are available, you can extract the folder definitions to migrate, or purge the UCONF folder definitions after migrating.
+Two  actions are available, you can extract the folder definitions to migrate, or  purge the UCONF folder definitions after migrating.
 
 cftmifm migrate | purge
 
@@ -64,7 +64,7 @@ The Transfer CFT purge utility performs the following steps:
 4.  When folders in the list also exist as CFTFOLDER objects in the Transfer CFT configuration, and STATE=ACTIVE, these folders are targeted to be purged.
 5.  At this point the purge is performed unless you have specified - s (simulate).
 
--   The purge removes all targeted folders from the folder\_monitoring.folders listed in UCONF. As opposed to the migration, this action directly alters the UCONF configuration.
+-   The purge removes all targeted folders  from the folder\_monitoring.folders listed in UCONF. As opposed to the migration, this action directly alters the UCONF configuration.
 -   If you are using -s (simulate), the tool only displays folders targeted by the purge.
 
 ## Examples of how to use the migrate and purge commands
@@ -81,12 +81,12 @@ Migrate all folders from UCONF to CFTFOLDER objects.
     `CFTUTIL CFTEXT type=uconf,id=folder_monitoring.*,fout=fm_uconf_save.cfg`
 3.  Interpret fm1.cfg file:  
     `CFTUTIL config type=input,fname=fm1.cfg`
-4.  Purge uconf folder configuration:  
+4.  Purge  uconf folder configuration:  
     `cftmifm purge`
 
 Example 2
 
-Only migrate specific folders from the UCONF configuration to the CFTFOLDER option, for example, select all logical folders starting with the letter "A".
+Only migrate specific folders from the UCONF configuration to  the CFTFOLDER option, for example, select all logical folders starting with the letter "A".
 
 1.  Create the CFTFOLDER objects in a file called fm2.cfg, for example:  
     `cftmifm migrate -p A* -o fm2.cfg`
@@ -94,7 +94,7 @@ Only migrate specific folders from the UCONF configuration to the CFTFOLDER opt
     `CFTUTIL CFTEXT type=uconf,id=folder_monitoring.*,fout=fm_uconf_save.cfg`
 3.  Interpret the generated fm2.cfg file:  
     `CFTUTIL config type=input,fname=fm2.cfg`
-4.  Purge the UCONF folder configuration:  
+4.  Purge  the UCONF folder configuration:  
     `cftmifm purge -p A*`
 
 ### Examples on an IBM i system
@@ -105,18 +105,18 @@ Call the following programs to migrate from UCONF to CFTFOLDER objects.
 
 ```
 CALL PGM(CFTMIFM) PARM('migrate' '-o' 'CFTPROD/fm1cfg')
-CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder\_monitoring.\*,fout=CFTPROD/fm\_uconf')
+CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder_monitoring.\*,fout=CFTPROD/fm_uconf')
 CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm1cfg')
 CALL PGM(CFT324CI/CFTMIFM) PARM('purge')
 ```
 
 Example 2
 
-Call the following programs to migrate specific folders from the UCONF configuration to the CFTFOLDER option. For example, select all logical folders starting with the letter "A".
+Call the following programs to migrate specific folders from the UCONF configuration to  the CFTFOLDER option. For example, select all logical folders starting with the letter "A".
 
 ```
 CALL PGM(CFTMIFM) PARM('migrate' '-p' 'A\*' '-o' 'CFTPROD/fm2cfg')
-CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder\_monitoring.\*,fout=CFTPROD/fm\_uconf')
+CALL PGM(CFTUTIL) PARM(CFTEXT 'type=uconf,id=folder_monitoring.\*,fout=CFTPROD/fm_uconf')
 CALL PGM(CFTUTIL) PARM(CONFIG 'type=input,fname=fm2cfg')
 CALL PGM(CFTMIFM) PARM('purge' '-p' 'A\*')
 ```
@@ -138,7 +138,7 @@ A prerequisite to performing a rollback is that you must have made a backup of t
 
 1.  Interpret the backup uconf folder file, for example `fm_uconf_save.cfg`.  
     `CFTUTIL config type=input,fname=fm_uconf_save.cfg`
-2.  Manually remove all CFTFOLDER objects:  
+2.  Manually remove  all CFTFOLDER objects:  
     `CFTFOLDER ID=<folder>,mode=delete`
 
 ### Limitations and notes
@@ -170,7 +170,7 @@ Parameter mapping and descriptions
 | INCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_include_filter  | string  | ""  | ""  | If this parameter is defined, only files whose names match this pattern are monitored.  |
 | EXCLUDEFILTER  |  folder_monitoring.folders. &lt;logical_name&gt;.file_exclude_filter  | string  | ""  | ""  | If this parameter is defined, files whose names match this pattern are not monitored.  |
 | RESUBMITCHANGED  |  folder_monitoring.folders. &lt;logical_name&gt;.resubmit_changed_file  | Boolean  | Yes  | Yes  |  This parameter has no effect when the configured method is MOVE. When the method parameter value is set to FILE:<br/> • Yes: When the state of a previously submitted file is seen as having changed, the file is submitted again.<br/> • No: Files are not resubmitted, regardless of changes.</li> <blockquote> **Note:** The file is resubmitted after any change regardless of if the modification is a small change, or purging and replacing the file with another file having the same name. </blockquote>  |
-| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values:<br/> • STRJCMP: The Transfer CFT pattern matching algorithm.<br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
+| FILTERTYPE  |  folder_monitoring.folders. &lt;logical_name&gt;.filter_type  | enum  | WILDMAT  | WILDMAT  |  Defines the pattern matching algorithm to use for file name filtering. Values: <br/> • STRJCMP: The Transfer CFT pattern matching algorithm. <br/> • WILDMAT: A well known public domain algorithm, and is the default. **Unix/Windows only**<br/>See <a href="#Defining">Create inclusion and exclusion filters</a> for details.  |
 | RENAMEMETHOD  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_method  | Enum  | TIMESTAMP  | TIMESTAMP  |  This parameter applies only to the MOVE method.<br/> • NONE or " ": The filename is unchanged (no timestamp is added). If the file already exists in the work directory, the MOVE process fails.<br/> • TIMESTAMP, a timestamp of the pattern YYYYMMDDHHMMSS is added at the end of the name of the renamed file but before the last '.'.</li> For example, using timestamp_separators=".": <li>myfile is renamed myfile.20131025<br/> • myfile.txt is renamed myfile.20131025.txt</li>  |
 | RENAMESEPARATOR  |  folder_monitoring.folders. &lt;logical_name&gt;.renaming_separators  | string  |   |   |  This parameter only applies to the MOVE method. It must contain at most 2 characters from among the following: .[]()i_- The first character defines the separator before the timestamp. The second one, when present, defines the separator after the timestamp. For example, using timestamp_separators "[]": - myfile is renamed myfile.[20131025] - myfile.txt is renamed myfile.[20131025].txt  |
 | N/A in this version  |  folder_monitoring.folders. &lt;logical_name&gt;.control  | string  |   |   | Metadata used to control user changes.  |

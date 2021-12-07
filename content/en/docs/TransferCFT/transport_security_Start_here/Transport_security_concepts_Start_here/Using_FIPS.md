@@ -4,9 +4,9 @@
     "weight": "180"
 }## Concepts
 
-Transfer CFT supports the use of a FIPS-compliant library. FIPS, Federal Information Processing Standard 140-2, is a standard that describes US Federal government requirements for certain IT products.
+Transfer CFT supports the use of a FIPS-compliant library. FIPS, Federal Information Processing Standard 140-2, is a standard that  describes US Federal government requirements for certain IT products.
 
-Requirements include a cryptographic module used in a security system to protect unclassified information in an IT system.
+Requirements include a  cryptographic module used in a security system to protect unclassified  information in an IT system.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ Copilot SSL connection to Central Governance does not work when FIPS is enabled
 
 This issue occurs because the private key is encrypted using triple DES (by default). However, the certificate is encrypted using 40-bit RC2, which is not an approved FIPS algorithm. To remedy:
 
-> In OpenSSL use the `pkcs12 -descert` option to encrypt the PKCS12 certificate to triple DES (RC2-40). For example:
+> In OpenSSL use the `pkcs12 -descert` option to  encrypt the PKCS12 certificate to triple DES (RC2-40). For example:
 >
 > ```
 > pkcs12-export -in <your server cert>.pem -inkey <your server key>.pem -out mycert.p12 -descert

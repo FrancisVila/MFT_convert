@@ -44,7 +44,7 @@ If the Event Router is not set up, you must create a LOGGER type file using the 
 
 <span id="Set the Sentinel parameters  A00CUSTO"></span>
 
-### Set the Sentinel parameters A00CUSTO
+### Set the Sentinel parameters  A00CUSTO
 
 You can set the Sentinel parameters in the unified configuration. If the Sentinel parameters are already customized, skip this section. Otherwise, customization parameters are located in the parameter file A03PARM of the installation library (sntlocad, sntladd, sntlp, sntlqueue, sntlgstr).
 
@@ -94,8 +94,8 @@ The new LOGGER file is a DASD-ONLY type file. Use the JCL SN10CLGR, via the IBM 
 DEFINE LOGSTREAM NAME(sntlgstr)
 DASDONLY(YES)
 LOWOFFLOAD(0)
-LS\_SIZE(180)
-STG\_SIZE(0)
+LS_SIZE(180)
+STG_SIZE(0)
 MAXBUFSIZE(64000)
 ```
 
@@ -103,7 +103,7 @@ The keywords that are displayed in bold should be substituted by the JCL A00CUST
 
 #### Use the LOGGER file in a SYSPLEX  
 
-To create an overflow file (LOGGER) that is available for all SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
+To create an overflow file (LOGGER) that is available for all  SYSPLEX partitions, in the Coupling Facility Resource Manager (CFRM) add the following structure (`&userstr`) to the coupling data set.
 
 **Example**
 
@@ -133,7 +133,7 @@ STRUCTNAME(&userstr)
 The following table describes the overflow file definition for the Logger file, where:
 
 -   TRKSHAREDFILE=YES is MANDATORY when the logger file is shared between the Event Router and applications. Set this to NO if the applications are sending messages directly to the Sentinel server without going through a ER
--   The log structure is ONLY used to define a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
+-   The log structure is ONLY used to define  a logger file shared between the partitions of the SYSPLEX, and is NOT referenced in any parameters
 
 ```
 
@@ -154,7 +154,7 @@ UCONF
 Logger file
 
 (AGENT)
-api\_file=
+api_file=
 TRKTNAME=
 UCONFSET ID=sentinel.TRKTNAME, VALUE=xxxx.xxxx.xxx
  
@@ -168,7 +168,7 @@ UCONFSET ID=sentinel.TRKSHAREDFILE,VALUE=YES
 The following parameters define communication with the Event Router via XCF. In this setup:
 
 -   The XCF definition (queue=xxxx) is the XCF member name representing the ER server
--   The XCF group is PELISCOP by default. You can modify this default by setting queue = “member group”
+-   The XCF group is   PELISCOP by default. You can modify this default by setting queue = “member group”
 
 ```
 
@@ -186,7 +186,7 @@ TRKCONF
 UCONF
 SVC
 (SYSTEM)
-svc\_nb=nnn
+svc_nb=nnn
 TRKSVC=nnn
 UCONFSET ID=sentinel.TRKSVC,VALUE=nnn
 XCF definition
@@ -255,5 +255,5 @@ The CFTHEART JCL sets the unified configuration heartbeat values as follows:
 -   sentinel.heartbeat.script = &lt;install\_dir>/extras/sentinel/MFTheartbeat.\*
 -   sentinel.trkipaddr = sentinel.server.address
 -   sentinel.trkipport = Sentinel.qlt/auto.port value (default = 1305)
--   sentinel.xfb.enable = YES
-    &lt;/li>
+-                   sentinel.xfb.enable = YES
+                &lt;/li>

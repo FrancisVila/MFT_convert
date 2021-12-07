@@ -14,7 +14,7 @@ Use the `chmod `command to define read and write rights.
 
 ## Windows tasks
 
-You must give each additional {{< TransferCFT/componentlongname  >}} user read and write rights as follows:
+You must give each additional {{< TransferCFT/componentlongname  >}} user read and write rights  as follows:
 
 1.  Right-click the **<span class="mc-variable axway_variables.Component_Short_Name variable">Transfer CFT</span>** program folder.
 2.  Select **Properties**.

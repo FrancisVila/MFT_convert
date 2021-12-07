@@ -14,10 +14,10 @@ You must define certain elements in the product configuration if you want to use
 
 To use the PKIUTIL utility:
 
-1.  Access the Transfer CFT &lt;span class="italic\_in\_para">Main Menu&lt;/span> screen. In the Main Menu enter the command &lt;span class="code">cft&lt;/span> and press &lt;span class="bold\_in\_para">Enter&lt;/span> to open the &lt;span class="italic\_in\_para">Manager Menu&lt;/span>.
-    &lt;/li>
-2.  Select **option** **2. Security commands**. Then select option **2. Interpret Security configuration** and enter the member you want to interpret. By default this is the PKIBASE member in the UTIN file in CFTPROD library.
-3.  To edit the security configuration file selection option 2. Security commands then option 1. Edit Security configuration file and enter the member you want to edit. By default it is the PKIBASE member in the UTIN file in CFTPROD library.
+1.                  Access the Transfer CFT &lt;span class="italic\_in\_para">Main Menu&lt;/span> screen. In the Main Menu enter the command &lt;span class="code">cft&lt;/span> and press &lt;span class="bold\_in\_para">Enter&lt;/span> to open the &lt;span class="italic\_in\_para">Manager Menu&lt;/span>.
+                &lt;/li>
+2.  Select **option** **2. Security commands**. Then select option **2.  Interpret Security configuration** and enter the member you want to interpret. By default this is the PKIBASE member in the UTIN file in CFTPROD library.
+3.  To edit the security configuration file selection option 2.  Security commands   then option 1.  Edit Security configuration file and enter the member you want to edit. By default it is the PKIBASE member in the UTIN file in CFTPROD library.
 
 ## Submitting PKIUTIL commands
 
@@ -26,14 +26,19 @@ To use the PKIUTIL utility:
 This option allows you to use the keyboard to enter and execute PKIUTIL commands.
 
 ```
-PKIU20I
-PKIU20I PKI
+PKIU20I                                                                    
+  
+PKIU20I PKI                                                                
+  
 PKIU20I Version 3.2.4 2017/02/02
 PKIU20I (C) Copyright AXWAY 1989-2017
-PKIU20I ====> Starting Session on 03/03/2017 Time is 16:20:37
+PKIU20I ====> Starting Session on 03/03/2017 Time is 16:20:37              
+  
 PKIU20I
  
-===> LISTPKI
+                                                                    
+                                                                              
+===> LISTPKI  
 ```
 
 ## Create a database
@@ -77,5 +82,5 @@ CAXMP CAXMP   R A x      19/12/2017 CA SAMPLE FOR CA SAMPLE FOR CLIENT
 CAXMP         U A x x    18/12/2017 CLIENT SAMPLE CA SAMPLE FOR SERVER
 CAXMP         U A x x    18/12/2017 SERVER SAMPLE CA SAMPLE
  
-PKIU00I LISTPKI \_ Correct ()
+PKIU00I LISTPKI _ Correct ()
 ```

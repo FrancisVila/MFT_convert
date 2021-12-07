@@ -64,7 +64,7 @@ entry.</p>         </td>
       </tr>
       <tr>
          <td><a href="../../../command_summary/parameter_intro/datetimemax">DATETIMEMAX</a>         </td>
-         <td>Use to display catalog transfers that happened on or before this end date and time according to the transfer record creation (DATEK, TIMEK).         </td>
+         <td>Use to display catalog transfers that happened  on or before this end date and time according to the transfer record creation (DATEK, TIMEK).         </td>
       </tr>
       <tr>
          <td><a href="../../../command_summary/parameter_intro/datetimemin">DATETIMEMIN</a>         </td>

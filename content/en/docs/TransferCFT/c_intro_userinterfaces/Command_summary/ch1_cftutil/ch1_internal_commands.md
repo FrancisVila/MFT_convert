@@ -13,7 +13,7 @@ When describing a command in the following sections, the mandatory parameters ap
 
 ## Data processing
 
-A data item is a form of coded information. It is referenced by a keyword, which must be unique for all of the data. To improve the readability of the source text, the characters \_ (underscore) and $ (dollar) can be used in the keyword.
+A data item is a form of coded information. It is referenced by a keyword, which must be unique for all of the data. To improve the readability of the source text, the characters \_ (underscore) and $ (dollar) can be used in the  keyword.
 
 Variables are globally visible. Once a variable is defined, it is available even if it nested in command files.
 
@@ -49,7 +49,7 @@ CHAR NAME = NAME,
 
 ### Features
 
-Variable names are not case sensitive, and you cannot the characters . (dot) and \[ (left bracket) in a name. This restriction comes from redefined data notation (see REDEFINE command) or the principle of substitution data.
+Variable names are not case sensitive, and you cannot  the characters . (dot) and \[ (left bracket)  in a name. This restriction comes from redefined data notation (see REDEFINE command) or the principle of substitution data.
 
 -   The initial default values ​​(in the absence of parameter INIT) types INT and LONG are 0.
 -   For the data type CHAR, the size must be less than or equal to 256 to be initialized. This limitation comes from the size of the INIT parameter .
@@ -118,7 +118,7 @@ PRINT  MSG = '%STRING%'
 All digital data processing commands (integer and long integer) have a syntax modeled on the following:
 
 ```
-id\_cmd NAME = keyword,
+id_cmd NAME = keyword,
       VALUE = value
 ```
 
@@ -134,8 +134,8 @@ The \_MOV command assigns a value to a variable of type integer or long integer.
 ```
 INT     name=INT1
 INT     name=INT2, init=0
-\_MOV    name=INT1,value=10         / \*Assigns 10 to INT1\* /
-\_MOV    name=INT2,value=%INT1%     / \*Assigns INT2 to INT1\* /
+_MOV    name=INT1,value=10         / \*Assigns 10 to INT1\* /
+_MOV    name=INT2,value=%INT1%     / \*Assigns INT2 to INT1\* /
 ```
 
 ### Command \_ADD
@@ -145,8 +145,8 @@ The \_ADD command adds a value to a variable content.
 ```
 INT name=INT1,init=0
 INT name=INT2,init=0
-\_ADD name=INT1,value=10        /\* Adds 10 to INT1 \*/
-\_ADD name=INT2,value=%INT1%    /\* Assigns INT2 to INT1\* /
+_ADD name=INT1,value=10        /\* Adds 10 to INT1 \*/
+_ADD name=INT2,value=%INT1%    /\* Assigns INT2 to INT1\* /
 ```
 
 ### Command \_SUB
@@ -156,8 +156,8 @@ The \_SUB command subtracts a value of a variable.
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_SUB name=INT1,value=10 /\* Subtracts 10 from INT1 \*/
-\_SUB name=INT2,value=%INT1% /\* Subtracts INT1 from INT2 (results in INT2) \*/
+_SUB name=INT1,value=10 /\* Subtracts 10 from INT1 \*/
+_SUB name=INT2,value=%INT1% /\* Subtracts INT1 from INT2 (results in INT2) \*/
 ```
 
 ### Command \_MUL
@@ -167,9 +167,9 @@ The \_MUL command multiplies the contents of a variable with a value.
 ```
 INT name=INT1,init=1
 INT name=INT2,init=1000
-\_MUL name=INT1,value=%INT1% /\* Squares the INT1 value \*/
-\_MUL name=INT1,value=10 /\* Multiply INT1 by 10 \*/
-\_MUL name=INT2,value=%INT1% /\* Multiplies INT2 by INT1 (result in INT2\*) /
+_MUL name=INT1,value=%INT1% /\* Squares the INT1 value \*/
+_MUL name=INT1,value=10 /\* Multiply INT1 by 10  \*/
+_MUL name=INT2,value=%INT1% /\* Multiplies INT2 by INT1 (result in INT2\*) /
 ```
 
 If a variable exceeds its the maximum possible value for that variable, the result is unpredictable and also system dependent. In general though, the result is the multiplication of the variable.
@@ -181,8 +181,8 @@ The \_DIV command divides by the variable value.
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_DIV name=INT1,value=10 /\* Divide INT1 by 10 \*/
-\_DIV name=INT2,value=%INT1% /\* Divide INT2 by INT1 (results in INT2) \*/
+_DIV name=INT1,value=10 /\* Divide INT1 by 10  \*/
+_DIV name=INT2,value=%INT1% /\* Divide INT2 by INT1   (results in INT2) \*/
 ```
 
 Division by 0 is not allowed. The value assigned to the variable is the quotient of the division (it cannot be null).
@@ -194,8 +194,8 @@ The command computes the modulus \_MOD of a variable with respect to a value. Th
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_MOD name=INT1,value=10 /\* INT1 modulus of 10 \*/
-\_MOD name=INT2,value=%INT1% /\* INT2 modulus of INT1 (results in INT2) \*/
+_MOD name=INT1,value=10 /\* INT1 modulus of 10  \*/
+_MOD name=INT2,value=%INT1% /\* INT2 modulus of INT1   (results in INT2) \*/
 ```
 
 ### Command \_AND
@@ -205,8 +205,8 @@ The \_AND command performs a logical AND between the contents of a variable and 
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_AND name=INT1,value=10 /\* INT1 and 10 \*/
-\_AND name=INT2,value=%INT1% /\* INT2 and INT1 (results in INT2) \*/
+_AND name=INT1,value=10 /\* INT1 and 10   \*/
+_AND name=INT2,value=%INT1% /\* INT2 and INT1    (results in INT2) \*/
 ```
 
 ### Command \_OR
@@ -216,8 +216,8 @@ The \_OR command performs a logical OR operation between the contents of a varia
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_OR name=INT1,value=10 /\* INT1 or 10 \*/
-\_OR name=INT2,value=%INT1% /\* INT2 or INT1 (results in INT2) \*/
+_OR name=INT1,value=10 /\* INT1 or 10   \*/
+_OR name=INT2,value=%INT1% /\* INT2 or INT1    (results in INT2) \*/
 ```
 
 ### Command \_NAND
@@ -227,8 +227,8 @@ The \_NAND command performs a NAND logic between the contents of a variable and 
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_NAND name=INT1,value=10 /\* INT1 nand 10 \*/
-\_NAND name=INT2,value=%INT1% /\* INT2 nand INT1 (results in INT2) \*/
+_NAND name=INT1,value=10 /\* INT1 nand 10   \*/
+_NAND name=INT2,value=%INT1% /\* INT2 nand INT1    (results in INT2) \*/
 ```
 
 ### Command \_XOR
@@ -238,6 +238,6 @@ The \_XOR command performs a logical XOR operation between the contents of a var
 ```
 INT name=INT1,init=100
 INT name=INT2,init=1000
-\_XOR name=INT1,value=10 /\* INT1 xor 10 \*/
-\_XOR name=INT2,value=%INT1% /\* INT2 xor INT1 (results in INT2) \*/
+_XOR name=INT1,value=10 /\* INT1 xor 10   \*/
+_XOR name=INT2,value=%INT1% /\* INT2 xor  INT1    (results in INT2) \*/
 ```

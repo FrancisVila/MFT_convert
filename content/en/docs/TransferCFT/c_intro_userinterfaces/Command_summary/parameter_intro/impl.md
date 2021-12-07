@@ -13,9 +13,9 @@
 
 Implicit send.
 
-When {{< TransferCFT/componentshortname  >}} operates in sender server mode and there is no SEND
+When  {{< TransferCFT/componentshortname  >}} operates in sender server mode and there is no SEND
 command (state=HOLD) entered in the catalog for this file identifier,
-the IMPL parameter set to "YES" allows the {{< TransferCFT/componentshortname  >}} to make available the corresponding file, by automatically generating
+the IMPL parameter set to "YES" allows the  {{< TransferCFT/componentshortname  >}} to make available the corresponding file, by automatically generating
 a send request. This makes a file permanently available.
 
 > **Note:**
@@ -23,7 +23,7 @@ a send request. This makes a file permanently available.
 > Caution  
 > If the RECV command specifies an IDF in “identifier” form (no mask) and if the corresponding model files, at the server end, are declared in implicit send mode (IMPL = YES), the option FILE = ALL initiates an uninterrupted repetition of the transfer, concerning the first file waiting to be sent.
 
-For the default model file,
+For  the default model file,  
 set this parameter to NO. You can define two
 CFTSEND objects with the same ID, with impl
 = NO for one and impl = YES

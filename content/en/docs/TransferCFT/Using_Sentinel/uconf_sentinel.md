@@ -13,18 +13,18 @@
     -   cft.ipv6.disable\_connect
     -   See <a href="../../admin_intro/uconf/uconf_directory" class="MCXref xref">UCONF parameters</a> for parameter details.
 -   sentinel.trktname: The path to the overflow file, where the maximum number of messages that the overflow file can store is equal to sentinel.xfb.buffer\_size (not sentinel.trktmaxmsg).
--   `sentinel.trktmaxmsg`: *Obsolete*. The maximum number of messages in the `sentinel.trktname` overflow file is defined by the sentinel.xfb.buffer\_size.
+-   `sentinel.trktmaxmsg`: *Obsolete*. The maximum number of messages in the `sentinel.trktname` overflow file  is defined by the sentinel.xfb.buffer\_size.
 
 ## Overflow file
 
-You can define an overflow file to store Sentinel events if the Sentinel server is not available, for example due to network issues or because the server is stopped. If Sentinel tracking is enabled but the server is not available, the message "CFTS30I XTRK Information Sentinel Connection failed" displays in the log. When the Sentinel connection is available again, the next event triggers the sending of previously-stored events.
+You can define an overflow file to store Sentinel events if the Sentinel server is not available, for example due to network issues or because the server is stopped.  If Sentinel tracking is enabled but the server is not available, the message "CFTS30I XTRK Information Sentinel Connection failed" displays in the log. When the Sentinel connection is available again, the next event  triggers the sending of previously-stored events.
 
 Use the following uconf parameters to configure the name and size of the overflow file:
 
 -   sentinel.trktname: The path to the overflow file.
 -   sentinel.xfb.buffer\_size: The maximum number of messages that the overflow file can store. Once the maximum value is reached, messages are no longer sent to Sentinel and:
-    -   If `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
-    -   If `sentinel.xfb.shut` is set to 0, Transfer CFT continues to run.
+    -   If   `sentinel.xfb.shut` is set to any value other than 0, Transfer CFT stops.
+    -   If  `sentinel.xfb.shut` is set to 0,  Transfer CFT continues to run.
 
 > **Note:**
 >
@@ -96,7 +96,7 @@ The following table lists the parameters that you can set in the unified configu
 
 The mode that Transfer CFT uses to send messages to the Sentinel Server. The possible values of this parameter include:
 
--   Immediat: When a connection to the Sentinel Server is established, Transfer CFT sends the messages that are saved in the overload file; it then sends new messages arriving from the application. If a connection does not exist, it attempts a connection to the Sentinel Server upon reception of each new message from the application.  
+-   Immediat:  When a connection to the Sentinel Server is established, Transfer CFT sends the messages that are saved in the overload file; it then sends new messages arriving from the application. If a connection does not exist, it attempts a connection to the Sentinel Server upon reception of each new message from the application.  
     For MVS, the messages in the overflow file are not automatically sent on connection.
 
 <!-- -->
@@ -106,28 +106,28 @@ The mode that Transfer CFT uses to send messages to the Sentinel Server. The pos
 
 ## Sentinel EventTime
 
-By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter, where:
+By default, the data sent to Sentinel as the EventTime has the format HH:MM:SS. To add milliseconds to the format, HH:MM:SS.sss, set the Transfer CFT UCONF `cft.cftlog.time_precision` parameter,  where:
 
--   1 (default): the time in CFTLOG displays in seconds
--   10: the time in CFTLOG displays in tenths of seconds
--   100: the time in CFTLOG displays in hundredths of seconds
+-   1 (default): the time in CFTLOG  displays in seconds
+-   10: the time in CFTLOG  displays in tenths of seconds
+-   100:  the time in CFTLOG displays in hundredths of seconds
 
-If the` cft.cftlog.time_precision` value is greater than 1, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
-
-**Example**
-
-```
-uconfset id=cft.cftlog.time\_precision, value=10
-```
-
--   1 (default): the time in CFTLOG displays in seconds
--   10: the time in CFTLOG displays in tenths of seconds
--   100: the time in CFTLOG displays in hundredths of seconds
-
-If the` cft.cftlog.time_precision` value is greater than 9, the Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+If the` cft.cftlog.time_precision` value is greater than 1, the  Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
 
 **Example**
 
 ```
-uconfset id=cft.cftlog.time\_precision, value=10
+uconfset id=cft.cftlog.time_precision, value=10
+```
+
+-   1 (default): the time in CFTLOG  displays in seconds
+-   10: the time in CFTLOG  displays in tenths of seconds
+-   100:  the time in CFTLOG displays in hundredths of seconds
+
+If the` cft.cftlog.time_precision` value is greater than 9, the  Transfer CFT EventTime message sent to Sentinel has the HH:MM:SS.dh0 format.
+
+**Example**
+
+```
+uconfset id=cft.cftlog.time_precision, value=10
 ```

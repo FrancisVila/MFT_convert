@@ -16,9 +16,9 @@ To broadcast a file from a store and forward site:
 
 On the store and forward site, Transfer CFT does not activate an end of transfer procedure (or error) when the file transfer of the file to be broadcast is performed. The transfer IDF is set to COMMUT, where the CFTRECV ID=COMMUT must be defined on the site as the transfer is saved in the catalog with this file identifier.
 
-If the transferred data code (NCODE) differs from the store and forward site's data code (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
+If the transferred data code (NCODE) differs from the store and forward site's data code  (for example, NCODE = EBCDIC and ASCII internal code on the store and forward computer), the data is not translated on the store and forward computer (in “store and forward” mode, the data is only translated “end to end” and not “next computer to next computer”).
 
-When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure associated with this generic transfer.
+When all the transfers have been correctly completed, the generic transfer (virtual) associated with the broadcast (entry designated in the catalog by a “DIAGP” code equal to “DIFFUS”) changes to the T state. Transfer CFT then activates any end of transfer procedure  associated with this generic transfer.
 
 > **Note:**
 >
@@ -35,7 +35,7 @@ The usual symbolic variables for these types of procedures may be used (see the 
 
 #### Example
 
-This example shows a broadcast store and forward from the initiator A to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
+This example shows a broadcast store and forward from the initiator A  to relay B on to multiple partners C and D. We will use @A, @B, @C and @D to represent their respective host addresses.
 
 On the initiating site A, define:
 
@@ -59,7 +59,7 @@ cfttcp id=d,host=@D
  
 cftdest id=cd,part=(c,d),for=commut
  
-cftappl id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
+cftappl  id=commut,userid=&userid,groupid=&groupid NOTE: If you are using access management, you must define the CFTAPPL with the ID=COMMUT.
 ```
 
 Execute the following partner C definition:
