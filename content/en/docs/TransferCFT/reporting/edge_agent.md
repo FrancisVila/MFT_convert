@@ -72,7 +72,7 @@ When you are using the Event Router to send both usage tracking to the Edge Agen
 
 > **Note:**
 >
-> The default target  is called SENTINEL in the steps below.
+> The default target  is called SENTINEL in the steps below QQQ.
 
 1.  Access the `<install_dir>/SentinelEventRouter/conf `directory.
 2.  Edit the `target.xml` file to route the usage information to Sentinel and the Edge Agent (`EDGEAGENT`).
